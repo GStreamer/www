@@ -15,13 +15,13 @@
 <a HREF="&site;/documentation/">Documentation page</a>. We suggest to read
 the manual and the slides to get a general overview and to get you started.</p>
                                                                                 
-<p>Developers are welcome to:</p>
+<p>New developers are welcome to:</p>
 <ul>
+<li>Work on any item from our <a href="../tasks">tasklist</a>.</li>
 <li>Contribute to the core library.</li>
 <li>Write plugins for GStreamer.</li>
 <li>Write applications using GStreamer.</li>
-<li>Help us with the editor and gstplay.</li>
-<li>Write all kinds of cool bonobo components.</li>
+<li>Help us with the gst-editor or gst-player.</li>
 <li>Write a lot of <a href="&site;/bindings/">language bindings</a>.</li>
 <li>Contribute to the documentation.</li>
 <li>Build test cases.</li>

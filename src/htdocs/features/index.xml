@@ -10,7 +10,7 @@
   <title>GStreamer: features</title>
   <body>
 <h2>Multiplatform</h2>
-<p>GStreamer has been ported to a wide range of operating systems, processors and compilers. This include but are not limited to Linux on i86,PPC, ARM using GCC. Solaris on x86 and SPARCi using both GCC and Forte, MacOSX, Microsoft Windows using MS Visual Developer and IBM OS/400.</p>
+<p>GStreamer has been ported to a wide range of operating systems, processors and compilers. This include but are not limited to Linux on i86,PPC, ARM using GCC. Solaris on x86 and SPARC using both GCC and Forte, MacOSX, Microsoft Windows using MS Visual Developer and IBM OS/400.</p>
 
 <h2>Comprehensive Core Library</h2>
 <ul>

@@ -170,25 +170,21 @@ Currently, the following classes are either fully or partially implemented:
     <id>guile</id>
     <name>Guile</name>
     <status>
-The bindings are still under development and not yet released.
-<!--See the <a href="&site;/modules/gst-guile.html">gst-guile</a> module.-->
+The bindings are part of the gnome-guile package
     </status>
 <body>
 <p>
 The GStreamer API <a
-href="http://www.gnu.org/software/guile/guile.html">Guile</a> bindings are still
+href="http://home.gna.org/guile-gnome/">Guile</a> bindings are still
 under development, but are already quite usable.
 </p>
 </body>
 
     <news>
       <item>
-        <date>18 Sept 2003</date>
+        <date>02 Nov 2004</date>
         <text>
-I'm trying to get out a 0.1.0 release sometime soon, bear with me. In the
-meantime the code in CVS should be functional at all times. Please please
-please let me know of any bugs you find, and be sure to say which version
-of GStreamer you are using (0.6 or 0.7). Thanks.
+Check out the GNOME-Guile page for details about the Guile bindings to GStreamer.
       </text>
       </item>
     </news>
@@ -209,7 +205,7 @@ The bindings are still under development and not yet released.
     </status>
 <body>
 <p>
-The GStreamer API <a href="http://java.sun.com/">Java</a> bindings are still under development.
+The GStreamer API <a href="http://java.sun.com/">Java</a> bindings are still under development. The prelimenary bindings can be found in the <a href="http://freedesktop.org/cgi-bin/viewcvs.cgi/gstreamer/gst-java/">gst-java</a> module in CVS.
 </p>
 </body>
   </binding>

@@ -38,48 +38,10 @@
   Any questions about this task should be sent to the gnome-media mailing list.
       </notes>
       <see>
-        <person>Ted</person>
-      </see>
-    </task>
-    
-  <task name="accessiblemixer">
-      <title>Make mixer accessible</title>
-      <description>
-  	The new gst-mixer - GNOME Volume control - in GNOME media needs to be accessible.</description>
-  
-      <why>
-  	The new GStreamer based mixer is a big step forward in many ways to the old one, but we really need to make sure the UI doesn't regress in regards to accessiblity. The old mixer code is still in CVS and should provide a good example on how to do it. A great task for someone who wants to learn the basics of implementing accessibility.
-      </why>
-  
-      <how>
-  	Look at the code of the old mixer in the gmix directory in gnome-media. Implement similar accessiblity additions in gst-mixer based on this.</how>
-  
-      <where>
-        <code id="gnome-media/gmix">
-          <name>Old gmix</name>
-          <description>The code to port to gst-mixer</description>
-        </code>
-        <code id="gnome-media-gst-mixer">
-	<name>New GNOME gst mixer</name>
-	<description>The new GStreamer based mixer interface</description>
-	</code>
-      </where>
-  
-      <difficulty>
-        EASY - Not that much codes that needs writing
-      </difficulty>
-      <submit>
-        Patch should be made against gnome-media CVS and sent the gnome-multimedia mailing list.
-      </submit>
-      <notes>
-  Any questions about this task should be sent to the gnome-media mailing list.
-      </notes>
-      <see>
-        <person>Ted</person>
         <person>Ronald</person>
       </see>
     </task>
-  
+    
   <task name="propdocs">
       <title>Create online docs for Profile manager</title>
       <description>

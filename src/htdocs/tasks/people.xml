@@ -38,14 +38,6 @@
         <role>GStreamer Developer</role>
       </person>
   
-      <person name="Ted">
-        <realname>Ted Gould</realname>
-        <email>ted (at) gould (dot) cx</email>
-        <irc>irc.gimp.org, #gnome</irc>
-        <nick>Ted</nick>
-        <role>Gnome Developer</role>
-      </person>
-  
       <person name="Anders">
         <realname>Anders Carlson</realname>
         <email>andersca (at) gnome (dot) org</email>

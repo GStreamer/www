@@ -6,46 +6,6 @@
 
   <tasks title="List of GStreamer tasks">
 
-  <task name="media-info-0.7">
-    <title>Make media-info work with the 0.7.x tagging stuff</title>
-    <description>
-During 0.7, tag handling has been rewritten.  media-info needs to
-be fixed to be able to extract tags using the new interface.
-    </description>
-
-    <why>
-The new tagging code is more flexible, and the old one has been deprecated.
-Fixing media-info will also fix problems with nautilus-media in GNOME.
-    </why>
-
-    <how>
-The tag extraction code is used in gst-launch.
-media-info has a stateful parser.  The state where it looks for metadata
-needs to be changed to use the new tagging interface.
-You can verify if it works by running media-info-test on tagged audio files.
-    </how>
-
-    <where>
-       <code id="gst-media-info">
-        <name>GStreamer media-info</name>
-        <description>The library to fix</description>
-      </code>
-      <code id="gst-launch">
-        <name>gst-launch</name>
-        <description>
-Application containing tag extraction code.
-        </description>
-      </code>
-    </where>
-    <difficulty>
-      MEDIUM - tag extraction is stable but new and not documented yet.
-    </difficulty>
-    <see>
-      <person>Thomas</person>
-      <person>Benjamin</person>
-    </see>
-  </task>
-
 <task name="686basicomega">
     <title>Make basicomega scheduler work with i686 glibc</title>
     <description>
