@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins</module>
+  <module-fancy>GStreamer Plugins</module-fancy>
+  <name>Take You On</name>
+  <version>0.8.5</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release
+in the 0.8.x stable series of the GStreamer Plugins.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
+</p>
+<p>
+This module contains plugins providing media encoding and decoding,
+conversion, effects, and other elements that provide actual media
+handling functionality to the core.  You need the GStreamer core module
+to make them work.  The versions do not need to match exactly, as long
+as all of them are in the 0.8.x series.
+</p>
+<p>
+The FFmpeg-based decoder element has been moved to its own module.  If you
+want support for a lot of popular video formats, you need to install this
+module along with the GStreamer Core and Plugins.  An FFmpeg-based colorspace
+element has been added to the Plugins however.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+
+    <feature>New translation in this release: Oriya</feature>
+
+    <feature>Translations: af az cs en_GB hu nl or sq sr sv uk</feature>
+
+    <feature>licensing corrections</feature>
+
+    <feature>new element: mngdec</feature>
+
+    <feature>pixel aspect ratio conversion fixes</feature>
+    <feature>64 bit fixes</feature>
+    <feature>NEW_MEDIA fixes</feature>
+    <feature>ogm support added</feature>
+
+    <feature>matroska fixes</feature>
+    <feature>playbin fixes</feature>
+    <feature>alsamixer fixes</feature>
+    <feature>gnomevfssrc fixes</feature>
+    <feature>ogg fixes</feature>
+    <feature>multifdsink fixes</feature>
+    <feature>multifilesink fixes</feature>
+    <feature>qtdemux fixes</feature>
+    <feature>avidemux fixes</feature>
+    <feature>asfdemux fixes</feature>
+    <feature>wavenc fixes</feature>
+    <feature>flac fixes</feature>
+    <feature>fli/flx fixes</feature>
+    <feature>mpeg fixes</feature>
+    <feature>speex now actually works</feature>
+
+  </features>
+
+  <applications>
+<p>
+The GConf settings have moved to a versioned location and can now be found
+under /system/gstreamer/0.8.  Applications should use the gconf library,
+as provided by gstreamer-gconf-0.8.pc, to access the default settings.
+</p>
+  </applications>
+  <contributors>
+	<person>Arwed v. Merkatz</person>
+	<person>Balamurali Viswanathan</person>
+	<person>Benjamin Otte</person>
+	<person>Brian Cameron</person>
+	<person>Christian Schaller</person>
+	<person>Christophe Fergeau</person>
+	<person>David Schleef</person>
+	<person>Francis Labonte</person>
+	<person>Gora Mohanty</person>
+	<person>Iain Holmes</person>
+	<person>Jan Schmidt</person>
+	<person>Johan Dahlin</person>
+	<person>Julien Moutte</person>
+	<person>Martin Eikermann</person>
+	<person>Ronald Bultje</person>
+	<person>Scott Wheeler</person>
+	<person>Sebastien Cote</person>
+	<person>Stephane Loeuillet</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Wim Taymans</person>
+	<person>Zaheer Abbas Merali</person>
+  </contributors>
+  <bugs>
+    <bug>
+      <id>121809</id>
+      <summary>[Solaris] Not able to record</summary>
+    </bug>
+    <bug>
+      <id>130682</id>
+      <summary>[alsasink] fails to negotiate with audio decoders</summary>
+    </bug>
+    <bug>
+      <id>135407</id>
+      <summary>[xviddec] shows green frames when decoding packed bitstre...</summary>
+    </bug>
+    <bug>
+      <id>140432</id>
+      <summary>Osssink and alsasink broken on nforce2 (intel8x0) soundcard</summary>
+    </bug>
+    <bug>
+      <id>140897</id>
+      <summary>Incorrect segment duration in files created with matroska...</summary>
+    </bug>
+    <bug>
+      <id>140898</id>
+      <summary>No writing application specified in matroska files create...</summary>
+    </bug>
+    <bug>
+      <id>141554</id>
+      <summary>vorbis in matroska files makes the vorbisdec plugin segfault</summary>
+    </bug>
+    <bug>
+      <id>144091</id>
+      <summary>[Solaris] audio mixer element</summary>
+    </bug>
+    <bug>
+      <id>144616</id>
+      <summary>Infinite loop in wavparse.</summary>
+    </bug>
+    <bug>
+      <id>148711</id>
+      <summary>typefind function for TTA audio files</summary>
+    </bug>
+    <bug>
+      <id>148950</id>
+      <summary>matroskademux doesn't set buffer duration</summary>
+    </bug>
+    <bug>
+      <id>148951</id>
+      <summary>matroskademux misses the tta codec in its codec list</summary>
+    </bug>
+    <bug>
+      <id>151232</id>
+      <summary>[lame] doesn't build with lame-3.90</summary>
+    </bug>
+    <bug>
+      <id>151236</id>
+      <summary>[v4l] compile failure</summary>
+    </bug>
+    <bug>
+      <id>151410</id>
+      <summary>Memory leaks in multifdsink</summary>
+    </bug>
+    <bug>
+      <id>151462</id>
+      <summary>theora plugin Makefile broken</summary>
+    </bug>
+    <bug>
+      <id>151877</id>
+      <summary>[PATCH] Fix bad casts in ximagesink.c</summary>
+    </bug>
+    <bug>
+      <id>151879</id>
+      <summary>[PATCH] fix bad pointer casts in xvimagesink.c</summary>
+    </bug>
+    <bug>
+      <id>151881</id>
+      <summary>[PATCH] Fix format strings for amd64 in seek.c</summary>
+    </bug>
+    <bug>
+      <id>151882</id>
+      <summary>[PATCH] Fix format string warnings in spider_seek.c</summary>
+    </bug>
+    <bug>
+      <id>151883</id>
+      <summary>[PATCH] fix cdplayer.c warnings on amd64</summary>
+    </bug>
+    <bug>
+      <id>151884</id>
+      <summary>[PATCH] Fix format string warnings in cdparanoia.c</summary>
+    </bug>
+    <bug>
+      <id>151886</id>
+      <summary>[PATCH] Fix format string warnings in vorbisfile.c</summary>
+    </bug>
+    <bug>
+      <id>151887</id>
+      <summary>[PATCH] Fix format string warnings in player.c</summary>
+    </bug>
+    <bug>
+      <id>152102</id>
+      <summary>wavenc leaks events</summary>
+    </bug>
+    <bug>
+      <id>152341</id>
+      <summary>patch for ivorbis compile failure</summary>
+    </bug>
+    <bug>
+      <id>154301</id>
+      <summary>typefind and rmdemux don't use the same mime type for rea...</summary>
+    </bug>
+  </bugs>
+</release>
