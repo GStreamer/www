@@ -62,22 +62,11 @@ there are currentl no released packages.
 on x86. Users are encouraged to try different platforms and report the
 extent of their success.</p>
  
-<h2>Examples</h2>
+<h2>Documentation and Examples</h2>
  
-<p>There is currently no documentation for Gst#. Developers are encouraged
-to explore the generated bindings' source code for insight into how they
-work. A few examples provided in the <tt>samples/</tt> directory of
-the Gst# distribution are made available here for completeness:</p>
-                                                                                
-<h3>C#</h3>
-<ul>
-<li><a href="http://www.atoker.com/mmp/GstPlayer.cs">GStreamer Player</a></li>
-</ul>
-                                                                                
-<h3>Visual Basic .NET</h3>
-<ul>
-<li><a href="http://www.atoker.com/mmp/GstPlayer.vb">GStreamer Player</a></li>
-</ul>
+<p>Gst# includes monodoc documentation, although it is currently very
+incomplete. A couple of examples are provided in the <tt>sample/</tt>
+directory of the Gst# distribution.</p>
                                                                                 
 <h2>Applications</h2>
                                                                                 
