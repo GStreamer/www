@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python</module-fancy>
+  <name>Of all the gin joints in all the towns in all the world, she walks into mine</name>
+  <version>0.7.94</version>
+
+  <intro>
+<p>
+This is the 0.7.94 release of the GStreamer Python bindings.
+It should be used with the 0.8.x series of GStreamer and GStreamer Plugins.
+</p>
+<p>
+This release contains a fairly big amount of improvements of the previous release.
+It requires PyGTK 2.4.0 and Python 2.3.
+</p>
+  </intro>
+  <features>
+    <feature>Memory leaks plugged and bugs fixes</feature>
+  </features>
+  <maintainers>
+    <person>Johan Dahlin</person>
+  </maintainers>
+</release>
