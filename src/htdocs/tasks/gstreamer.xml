@@ -94,6 +94,11 @@
         list to be somewhat up-to-date from time to time. You may want to
         improve the element/plugin descriptions once you've found that they
         are really quite lousy (they are), but that's a later concern.
+        <br/>
+        Note that the <application>GStreamer</application> website is written
+        in XML, not HTML. Thus, make sure that whatever method you use to
+        generate the tables outputs XML files compatible with the rest of
+        the website so that it's an integral part of the website.
       </how>
       <where>
         <code id="website">
