@@ -4,7 +4,7 @@ built_pages = \
 	0.7.92.html 0.7.92 \
 	0.7.93.html 0.7.93 \
 	0.7.94.html 0.7.94 \
-	0.8.0.html 0.8.0
+	0.8.0.html 0.8.0 \
 	0.8.1.html 0.8.1
 
 style = ../releases.xsl
