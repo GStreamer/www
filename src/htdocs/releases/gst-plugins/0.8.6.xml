@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins</module>
+  <module-fancy>GStreamer Plugins</module-fancy>
+  <name>PRELIMINARY</name>
+  <version>0.8.6</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release
+in the 0.8.x stable series of the GStreamer Plugins.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
+</p>
+<p>
+This module contains plugins providing media encoding and decoding,
+conversion, effects, and other elements that provide actual media
+handling functionality to the core.  You need the GStreamer core module
+to make them work.  The versions do not need to match exactly, as long
+as all of them are in the 0.8.x series.
+</p>
+<p>
+The FFmpeg-based decoder element has been moved to its own module.  If you
+want support for a lot of popular video formats, you need to install this
+module along with the GStreamer Core and Plugins.  An FFmpeg-based colorspace
+element has been added to the Plugins however.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+
+    <feature>New translation in this release: </feature>
+
+    <feature>Translations: af az cs en_GB hu nl or sq sr sv uk</feature>
+  </features>
+
+  <applications>
+<p>
+The GConf settings have moved to a versioned location and can now be found
+under /system/gstreamer/0.8.  Applications should use the gconf library,
+as provided by gstreamer-gconf-0.8.pc, to access the default settings.
+</p>
+  </applications>
+  <contributors>
+<!--
+	<person>Arwed v. Merkatz</person>
+	<person>Balamurali Viswanathan</person>
+	<person>Benjamin Otte</person>
+	<person>Brian Cameron</person>
+	<person>Christian Schaller</person>
+	<person>Christophe Fergeau</person>
+	<person>David Schleef</person>
+	<person>Francis Labonte</person>
+	<person>Gora Mohanty</person>
+	<person>Iain Holmes</person>
+	<person>Jan Schmidt</person>
+	<person>Johan Dahlin</person>
+	<person>Julien Moutte</person>
+	<person>Martin Eikermann</person>
+	<person>Nathan Robertson</person>
+	<person>Phil Blundell</person>
+	<person>Ronald Bultje</person>
+	<person>Scott Wheeler</person>
+	<person>Sebastien Cote</person>
+	<person>Stephane Loeuillet</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Wim Taymans</person>
+	<person>Zaheer Abbas Merali</person>
+-->
+  </contributors>
+
+  <api>
+    <additions>
+      <item>A new v4lsrc property, autoprobe-fps, has been added.</item>
+    </additions>
+<!--
+    <depreciations>
+    </depreciations>
+-->
+  </api>
+
+  <bugs>
+  </bugs>
+
+</release>

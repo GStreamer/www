@@ -30,6 +30,7 @@ do
   do
     echo "Generating yum repository for $BASEDIR/$yum/$dir"
     cd $ABSBASEDIR/$yum/$dir
-    yum-arch -q .
+    yum-arch -q . 2> /dev/null
+    createrepo .
   done
 done
