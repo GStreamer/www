@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE xml
 [
+  <!ENTITY % gst-entities SYSTEM "../entities.gst">
+  %gst-entities;
   <!ENTITY % site-entities SYSTEM "../entities.site">
   %site-entities;
 ]>
@@ -17,8 +19,8 @@ and core elements.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>0.6.5</stable>
-      <devel>0.7.5</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
   </module>
 

@@ -33,7 +33,7 @@
          </xsl:if>
      </xsl:for-each>
            <tr>
-            <td>Click for <a href="news/news.php">even older news</a>...</td>
+            <td>Click for <a href="news/">even older news</a>...</td>
            </tr>
 
   </table>
