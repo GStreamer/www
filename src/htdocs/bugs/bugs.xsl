@@ -31,6 +31,20 @@ http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value
 <td valign="top">
 <table border="1">
 <tr><td><xsl:value-of select="@id" /></td></tr>
+
+<!-- blocker bugs for this component -->
+<tr>
+  <td>
+    <xsl:element name="a">
+      <xsl:attribute name="href">
+http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value-of select="component" />&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;bug_severity=blocker&amp;form_name=query
+      </xsl:attribute>
+blocker
+    </xsl:element>
+  </td>
+</tr>
+
+
 <!-- unresolved bugs for this component -->
 <tr>
   <td>
