@@ -142,7 +142,7 @@ as provided by gstreamer-gconf-0.8.pc, to access the default settings.
     </bug>
     <bug>
       <id>151122</id>
-      <summary>doesn't work</summary>
+      <summary>playing a m4a-file using &quot; spider &quot; doesn't work</summary>
     </bug>
     <bug>
       <id>152750</id>
@@ -166,7 +166,7 @@ as provided by gstreamer-gconf-0.8.pc, to access the default settings.
     </bug>
     <bug>
       <id>154834</id>
-      <summary>0</summary>
+      <summary>[dvdreadsrc] immediate EOS when specifying a title &gt; 0</summary>
     </bug>
     <bug>
       <id>154903</id>
@@ -250,7 +250,7 @@ as provided by gstreamer-gconf-0.8.pc, to access the default settings.
     </bug>
     <bug>
       <id>158125</id>
-      <summary>...</summary>
+      <summary>gstreamer apps have serious issues with 0.8.5.2 plugins &amp; ...</summary>
     </bug>
     <bug>
       <id>158221</id>

@@ -1,5 +1,13 @@
 2004-11-25  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* bin/bugzilla:
+	  fix script to handle entities
+	* bin/www-update:
+	* src/htdocs/releases/gst-plugins/0.8.6.xml:
+	  repaste bugs
+
+2004-11-25  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/releases/gst-plugins/0.8.6.xml:
 	  new plugins release
 

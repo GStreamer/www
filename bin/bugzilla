@@ -14,7 +14,7 @@ import HTMLParser
 
 URL = 'http://bugzilla.gnome.org/buglist.cgi?product=%s&component=%s&target_milestone=%s'
 
-reg = re.compile('<TR.*id=(\d+)".*summary>(.*)<\/td')
+# reg = re.compile('<TR.*id=(\d+)".*summary>(.*)<\/td')
 
 HEADER = '  <bugs>'
 ITEM = """    <bug>
@@ -29,6 +29,9 @@ components = {
 
 default_product = "GStreamer"
 
+TD_ID = 1
+TD_SUMMARY = 7
+
 # Horrible, don't look here
 class HP(HTMLParser.HTMLParser):
     def __init__(self):
@@ -37,14 +40,21 @@ class HP(HTMLParser.HTMLParser):
         self.td = 0
         self.bugs = []
         self.bugno = 0
-        self.descr = 0
+        self.descr = ""
+
     def handle_starttag(self, tag, data):
         if tag == 'tr':
             self.tr = 1
             return
+        # count td's
         elif self.tr and tag == 'td':
             self.td += 1
 
+    # all &gt; refs are handled through this method; append them to self.descr
+    def handle_entityref(self, name):
+        self.descr += " &%s; " % name
+
+    # can be called more than once for one td
     def handle_data(self, data):
         if not self.tr:
             return
@@ -52,13 +62,21 @@ class HP(HTMLParser.HTMLParser):
         if not data:
             return
         
-        if self.td == 1:
+	#print self.td, self.tr, repr(data)
+
+	# clear self.descr if we're not in the correct td
+	if self.td != TD_SUMMARY:
+	    self.descr = ""
+
+        # check what td it is in
+        if self.td == TD_ID:
             try:
                 self.bugno = int(data)
             except ValueError:
                 self.bugno = 0
-        elif self.td == 7:
-            self.descr = data
+        elif self.td == TD_SUMMARY:
+            # the summary td
+            self.descr += data
         
     def handle_endtag(self, tag):
         if tag == 'tr':
@@ -67,6 +85,7 @@ class HP(HTMLParser.HTMLParser):
             if self.bugno != 0:
                 self.bugs.append((self.bugno, self.descr))
                 self.bugno = 0
+
 def main(args):
     if len(args) < 3:
         print 'Usage: %s component milestone [product]' % args[0]
