@@ -92,7 +92,7 @@
       <code name="vorbistagg">
 	<description>Vorbisdec C file with vorbis tag implementation</description>
 	<cvs>GStreamer CVS</cvs>
-	<path>gst-plugins/ext/vorbis/vorbisfile.c</path>
+	<path>gst-plugins/ext/vorbis/vorbisdec.c</path>
       </code>
       <code name="basicomega">
 	<description>Basicomega C file.</description>

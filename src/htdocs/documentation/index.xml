@@ -53,7 +53,7 @@
  <td><a href="&site;/data/doc/gstreamer/devel/pwg/pwg.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/devel/pwg/pwg.pdf">PDF</a></td>
  -->
- <td><a href="&site;/data/doc/gstreamer/stable/pwg/html/index.html">HTML</a></td>
+ <td><!-- <a href="&site;/data/doc/gstreamer/stable/pwg/html/index.html">HTML</a>--></td>
  <td><a href="&site;/data/doc/gstreamer/stable/pwg/pwg.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/stable/pwg/pwg.pdf">PDF</a></td>
 </tr>
