@@ -5,10 +5,11 @@
   %site-entities;
 ]>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                version="1.0">
+<xsl:stylesheet
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    version="1.0">
 
-<xsl:output method="xml"/>
+<xsl:output method="xml" indent="yes"/>
 
 <xsl:template match="news">
 <rdf:RDF
@@ -51,7 +52,8 @@
     <title><xsl:value-of select="title"/></title>
     <link>&site;/news/</link>
     <dc:date><xsl:value-of select="$w3cdtf"/></dc:date>
-    <content:encoded><xsl:value-of select="content"/></content:encoded>
+    <content:encoded>
+      <xsl:text disable-output-escaping="yes">&lt;</xsl:text>![CDATA[<xsl:copy-of select="content/*"/>]]<xsl:text disable-output-escaping="yes">&gt;</xsl:text></content:encoded>
   </item>
 </xsl:for-each>
 </rdf:RDF>
