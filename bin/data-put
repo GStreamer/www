@@ -6,4 +6,4 @@ then
 fi
 
 rsync -arv -e ssh data pdx.freedesktop.org:/home/projects/gstreamer/www
-rsync -arv -e ssh --delete data/pkg pdx.freedesktop.org:/home/projects/gstreamer/www/data
+rsync -arv -e ssh data/pkg pdx.freedesktop.org:/home/projects/gstreamer/www/data
