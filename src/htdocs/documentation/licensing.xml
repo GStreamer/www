@@ -30,7 +30,8 @@ in order to understand how GStreamer works in a licensing context.
 <p>
 
 For more information on licensing you can check out our
-<a href="licensingfaq.html">licensing and patents FAQ</a>.</p>
+<a href="%site;/data/doc/gstreamer/head/faq/html/chapter-legal.html">
+legal FAQ</a>.</p>
 
 <h2>Licensing of code contributed to GStreamer itself</h2>
 <p>GStreamer is a plugin-based framework licensed under the LGPL. The
@@ -142,7 +143,7 @@ exception clause and thus code can be shared more freely.
 <p>
 I have above outlined the practical reasons for why the GStreamer community
 suggest you allow non-free plugins to be used with your applications. We feel
-that in the multimedia arenai, the free software community is still not strong
+that in the multimedia arena, the free software community is still not strong
 enough to set the agenda and that blocking non-free plugins to be used in our
 infrastructure hurts us more than it hurts the patent owners and their ilk.
 </p>

@@ -1,3 +1,3 @@
-built_pages = index.html licensing.html licensingfaq.html
+built_pages = index.html licensing.html
 
 include $(top_srcdir)/html.make
