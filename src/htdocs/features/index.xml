@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: features</title>
+  <body>
+
+<h2>Comprehensive Core Library</h2>
+<ul>
+<li>Graph-based structure allows arbitrary pipeline construction</li>
+<li>Based on <a
+href="http://developer.gnome.org/doc/API/2.0/gobject/index.html">GLib
+2.0</a> object model for object-oriented design and inheritance</li>
+<li>Small core library of less than 150KB, about 10 K lines of code</li>
+<li>Pluggable scheduling system capable of dealing with most pipeline
+structures</li>
+<li>Multi-threaded pipelines are trivial and transparent to construct</li>
+<li>Clean and simple <a href="docs/current/gstreamer/">API</a> for both
+plugin and application developers</li>
+<li>Extremely lightweight data passing means very high performance/low latency</li>
+<li>Complete <a href="docs/current/gstreamer/gstreamer-GstInfo.html">debugging
+system</a> for both core and plugin/app developers</li>
+<li>Clocking to ensure global inter-stream synchronization</li>
+</ul>
+
+<h2>Intelligent Plugin Architecture</h2>
+<ul>
+<li><a href="docs/current/gstreamer/gstreamer-GstPlugin.html">Dynamically loaded</a>
+plugins provide elements and media types, demand-loaded via an XML registry,
+similar to ld.so.cache</li>
+<li><a href="docs/current/manual/ch05.html">Element interface</a>
+handles all known types of sources, filters, sinks</li>
+<li><a href="docs/current/manual/ch07s02.html">Capabilities
+system</a> allows verification of element compatibility using MIME types and
+media-specific properties</li>
+<li><a href="docs/current/gstreamer/GstAutoplug.html">Autoplugging</a> uses
+capabilities system to complete complex paths automatically</li>
+<li>Pipelines can be saved to <a
+href="docs/current/manual/pt05.html">XML</a> and loaded back to working
+state</li>
+<li>Resource friendly plugins don't waste RAM</li>
+</ul>
+
+<h2>Extensive Development Tools</h2>
+<ul>
+<li><a href="apps/gst-editor/">Graphical editor</a> allows pipelines to be
+built quickly, run, and saved as XML</li>
+<li><a href="docs/current/manual/ch26s02.html">Command-line tool</a> enables even
+quicker prototyping and testing, similar to ecasound</li>
+<li><a href="apps/gst-player/">GStreamer media player</a> capable of 
+playing any media type for which plugins exist</li>
+<li>All tools written as libraries to allow easy reuse</li>
+<li>Complete <a href="docs/">API documentation</a>, partial
+<a href="docs/current/manual/">manual</a> and 
+<a href="docs/current/pwg/">plugin writer's guides</a></li>
+<li>Large selection of test programs and example code</li>
+<li>Large selection of <a href="status/">included plugins</a></li>
+<li>Access to GStreamer API with <a href="bindings/">various programming languages</a></li>
+</ul>
+
+<p>GSreamer is rapidly approaching a stable API. There are still a number of
+items on our TODO lists - for more info, check out our <a
+href="status/">status</a>.</p>
+
+  </body>
+</page>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: developers</title>
+  <body>
+
+<h1>Developer Information</h1>
+
+<p>Much documentation and some introductory slides are to be found on the
+<a HREF="../docs/">Documentation page</a>. We suggest to read
+the manual and the slides to get a general overview and to get you started.</p>
+                                                                                
+<p>Developers are welcome to:</p>
+<ul>
+<li>Contribute to the core library.</li>
+<li>Write plugins for GStreamer.</li>
+<li>Write applications using GStreamer.</li>
+<li>Help us with the editor and gstplay.</li>
+<li>Write all kinds of cool bonobo components.</li>
+<li>Write a lot of <a href="../bindings">language bindings</a>.</li>
+<li>Contribute to the documentation.</li>
+<li>Build test cases.</li>
+</ul>
+
+<!-- FIXME: dotplan back in action or not ? -->
+
+<p>The developers tend to live in IRC on <A
+HREF="http://www.freenode.net/">Freenode</A>, in #gstreamer.  You
+can use irc.freenode.net to get there if you want.
+</p>
+                                                                                
+<H1>CVS access</H1>
+                                                                                
+<h2>Anonymous CVS Access</h2>
+<p>
+This project's freedesktop.org CVS repository can be checked out through anonymous CVS with the following instruction set. The module you wish to check out must be specified as the modulename. When prompted for a password for anonymous, simply press the Enter key. To determine the names of the modules created by this project, you may examine their CVS repository via the <A HREF="http://freedesktop.org/cgi-bin/viewcvs.cgi/gstreamer/">provided web-based CVS repository viewer</A>.
+</p>
+<p>
+<pre>
+cvs -d:pserver:anoncvs@pdx.freedesktop.org:/cvs/gstreamer co modulename
+</pre>
+</p>
+<p>
+Updates from within the module's directory do not need the -d parameter.
+<br/>
+NOTE: UNIX file and directory names are case sensitive. The path to the project CVSROOT must be specified using lowercase characters (i.e. /cvsroot/gstreamer)
+</p>
+<h2>Developer CVS Access via SSH</h2>
+<p>
+Only project developers can access the CVS tree via this method. A SSH client must be installed on your client machine. Substitute modulename and developername with the proper values. Enter your site password when prompted.
+<br/>
+Developers may also make use of shared SSH keys for authentication.
+<br/>
+<pre>
+export CVS_RSH=ssh
+cvs -z3 -d:ext:developername@cvs.freedesktop.org:/cvs/gstreamer co modulename
+</pre>
+<br/>
+NOTE: UNIX file and directory names are case sensitive. The path to the project CVSROOT must be specified using lowercase characters (i.e. /cvsroot/gstreamer)
+<br/>
+Local CVS policies and a list of tags and branches is <A
+HREF="cvs.php">also available</A>.
+<br/>
+Developers will be added to the project for write access as necessary.  For all
+other changes, please contact the <A HREF="../contact/lists.php">gstreamer-devellist</A> with a patch (<code>cvs diff -u</code>).</p>
+
+<H1>Language Bindings</H1>
+                                                                                
+<p>The GStreamer API can be accessed from <a href="../bindings">various programming languages</a> in addition to the native C API.</p>
+
+  </body>
+</page>

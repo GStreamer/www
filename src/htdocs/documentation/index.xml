@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+  <!ENTITY % gst-entities SYSTEM "../entities.gst">
+  %gst-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: Documentation</title>
+  <body>
+
+<table width="100%" border="1">
+<tr>
+ <th>document</th>
+ <th colspan="3">stable &gst-version-stable;</th>
+ <th colspan="3">HEAD</th>
+</tr>
+<tr>
+ <td>Application Development Manual (Read this first)</td>
+ <td>[<a href="&site;/data/doc/gstreamer/stable/manual/html/index.html">HTML</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/stable/manual/manual.ps">PostScript</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/stable/manual/manual.pdf">PDF</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/head/manual/html/index.html">HTML</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/head/manual/manual.ps">PostScript</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/head/manual/manual.pdf">PDF</a> ]</td>
+</tr>
+<tr>
+ <td>Frequently Asked Questions</td>
+ <td colspan="3"></td>
+ <td>[<a href="&site;/data/doc/gstreamer/head/faq/html/index.html">HTML</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/head/faq/faq.ps">PostScript</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/head/faq/faq.pdf">PDF</a> ]</td>
+</tr>
+<tr>
+ <td>Plugin Writer's Guide (Unfinished)</td>
+ <td>[<a href="&site;/data/doc/gstreamer/stable/pwg/html/index.html">HTML</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/stable/pwg/pwg.ps">PostScript</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/stable/pwg/pwg.pdf">PDF</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/head/pwg/html/index.html">HTML</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/head/pwg/pwg.ps">PostScript</a> ]</td>
+ <td>[<a href="&site;/data/doc/gstreamer/head/pwg/pwg.pdf">PDF</a> ]</td>
+</tr>
+<tr>
+ <td>API Reference</td>
+ <td colspan="3">[<a href="&site;/data/doc/gstreamer/stable/gst/html/">HTML</a>]</td>
+ <td colspan="3">[<a href="&site;/data/doc/gstreamer/head/gst/html/">HTML</a>]</td>
+</tr>
+<tr>
+ <td>Extension Library API Reference</td>
+ <td colspan="3">[<a href="&site;/data/doc/gstreamer/stable/gst-libs/html/">HTML</a>]</td>
+ <td colspan="3">[<a href="&site;/data/doc/gstreamer/head/gst-libs/html/">HTML</a>]</td>
+</tr>
+</table>
+
+  </body>
+</page>

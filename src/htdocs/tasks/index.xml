@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="tasks.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: Tasks</title>
+  <body>
+In the spirit of the <a href="http://www.gnome.org/bounties">GNOME bounties</a>,
+but with a lot less money in the bank, we decided to create a list of tasks.
+If you're a developer who wants to get started using GStreamer and needs
+a well-defined task to take on, look no further.  All of these tasks have
+enough comments and links to ease you into a small part of the codebase.
+<br/>
+If you would like to work on integration between GNOME and GStreamer, check our
+<a href="gnome.html">GNOME tasklist</a>.  If you just want to work on
+GStreamer, check our <a href="gstreamer.html">GStreamer tasklist</a>.
+  </body>
+  <tasks title="Tasks">
+  </tasks>
+</page>
