@@ -12,7 +12,6 @@ htaccess = \
 	releases/gst-plugins/.htaccess \
 	releases/gst-ffmpeg/.htaccess \
 	data/pkg/.htaccess \
-	data/src/.htaccess \
 	tasks/.htaccess
 
 
