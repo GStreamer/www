@@ -31,7 +31,7 @@ It is, however, parallel installable with the 0.6.x series.
     <feature>Reworked error notification with translated error messages and additional debug information for developer feedback</feature>
     <feature>Updated Dutch and French translations</feature>
     <feature>Reworked clocking</feature>
-    <feature>Audio sinks synhronize to timestamps</feature>
+    <feature>Audio sinks synchronize to timestamps</feature>
     <feature>Added marshal and enum headers for libraries</feature>
     <feature>New Ogg demuxer</feature>
     <feature>New Theora decoder</feature>
