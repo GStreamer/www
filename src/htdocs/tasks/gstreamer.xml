@@ -46,42 +46,6 @@ Application containing tag extraction code.
     </see>
   </task>
     
-  <task name="tagquicktime">
-    <title>Add tagging support for Quicktime</title>
-    <description>
-    GStreamer 0.7/0.8 introduce a new system for handling metadata in mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
-    </description>
-
-    <why>
-    GStreamer wants to allow seamless conversion of media files. The new tagging system will preserve tagging information when converting the media files if it is implemented in both the media formats in question.
-    </why>
-    <where>
-      <code id="tag.h">
-        <name>Tagging header file</name>
-        <description>Header file for tag implementation</description>
-      </code>
-      <code id="vorbistag">
-        <name>Vorbis tagging implementation</name>
-        <description>code file with Vorbis tag implementation</description>
-      </code>
-    </where>
-    <how>
-Look at the Ogg Vorbis and Mp3 plugins to see how it is done and do the
-same for Quicktime.
-<A HREF="http://developer.apple.com/documentation/quicktime/QTFF/QTFFChap2/chapter_3_section_2.html#//apple_ref/doc/uid/DontLinkBookID_78-CH204-TPXREF101">
-Apple Developer docs for Quicktime tags.</A>
-Unless you write a Quicktime muxer so is tag writing not possible for Quicktime currently.
-    </how>
-
-    <difficulty>
-MEDIUM - tag extraction is stable but new and not documented yet.
-    </difficulty>
-    <see>
-      <person>Ronald</person>
-      <person>Benjamin</person>
-    </see>
-  </task>
-
   <task name="tagasf">
     <title>Add tagging support for ASF</title>
     <description>
@@ -113,41 +77,6 @@ tag extraction possible to implement at this point in time.
       </code>
     </where>
     <difficulty>
-MEDIUM - tag extraction is stable but new and not documented yet.
-    </difficulty>
-    <see>
-      <person>Ronald</person>
-      <person>Benjamin</person>
-    </see>
-  </task>
-
-  <task name="tagmatroska">
-    <title>Add tagging support for Matroska</title>
-    <description>
-GStreamer 0.7/0.8 introduces a new system for handling metadata in
-mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
-    </description>
-
-    <why>
-GStreamer wants to allow seamless conversion of media files. The new
-tagging system will preserve tagging information when converting the
-media files if it is implemented in both the media formats in question.
-    </why>
-
-    <how>
-Information on the Matroska tagging format on <A HREF="http://matroska.corecodec.org/technical/specs/tagging/index.html">the Matroska specs page</A>.
-    </how>
-    <where>
-      <code id="tag.h">
-        <name>Tagging header file</name>
-        <description>Header file for tag implementation</description>
-      </code>
-      <code id="vorbistag">
-        <name>Vorbis tagging implementation</name>
-        <description>code file with Vorbis tagg implementation</description>
-      </code>
-   </where>
-   <difficulty>
 MEDIUM - tag extraction is stable but new and not documented yet.
     </difficulty>
     <see>
