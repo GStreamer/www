@@ -30,7 +30,6 @@ as the core, as long as they are in the 0.8.x series.
 
     <feature>important thread fix for playback</feature>
     <feature>typefind fix</feature>
-    <feature>API docs improvement</feature>
   </features>
 
   <applications>
@@ -43,7 +42,6 @@ GNOME applications including sound-juicer, totem and RhythmBox.
 
   <contributors>
 	<person>Wim Taymans</person>
-	<person>Stefan Kost</person>
   </contributors>
 
 </release>
