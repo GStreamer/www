@@ -198,7 +198,7 @@ GStreamer python bindings.
     </description>
     <maintainer>Johan Dahlin</maintainer>
     <versions>
-      <devel>0.7.93</devel>
+      <stable>0.8.1</stable>
     </versions>
   </module>
 
