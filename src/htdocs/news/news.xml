@@ -825,7 +825,7 @@ or download the
     <date>2004-03-05 11:02</date>
     <title>GStreamer Plugins 0.6.5 "EOS" released</title>
     <content>
-<p>
+
 The GStreamer team is proud to announce another release of the
 GStreamer Plugins 0.6.x stable series.
 
@@ -841,6 +841,34 @@ or download the
 </p>
     </content>
   </item>
+
+  <item>
+    <date>2004-03-09 19:50</date>
+    <title>GStreamer 0.7.6 "Almost" and GStreamer Plugins 0.7.6 "There" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce another release of the
+GStreamer 0.7 development series.
+This release is a Release Candidate for the final 0.8.0 release due next week,
+so please give it your utmost testing effort.
+</p>
+<p>
+For GStreamer 0.7.6, check out
+<a href="&site;/releases/gstreamer/0.7.6.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.7.6.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.7.6.tar.bz2">tar.bz2</a> archive.
+</p>
+<p>
+For GStreamer Plugins 0.7.6, check out
+<a href="&site;/releases/gst-plugins/0.7.6.html">release notes</a>
+or download the
+<a href="&site;/src/gst-plugins/gst-plugins-0.7.6.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-plugins/gst-plugins-0.7.6.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
 
 
 </news>
