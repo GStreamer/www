@@ -188,8 +188,8 @@ calling setrlimit(RLIMIT_STACK,rlim_struct_for_2M).
 So what might be happening is too many (more than 8) elements are being
 put into the main thread and it's trying to use memory that doesn't
 belong to it.Note also that the STACK_SIZE macro in cothreads.c and the 
-STACK_SIZE macro in gstthread.c depend on each other.
-Just keep in mind the saying about the worth of free advice :-)
+STACK_SIZE macro in gstthread.c depend on each other.<br/>
+Just keep in mind the saying about the worth of free advice :-)"
     </how>
     <where>
       <code id="basicomega">
