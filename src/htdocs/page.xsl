@@ -37,6 +37,7 @@
     <link rel="stylesheet" type="text/css"
           href="&site;/gstreamer.css" title="default" />
     <link rel="shortcut icon" href="&site;/images/favicon.png" />
+    <link rel="icon" type="image/png" href="i&site;/images/favicon.png" />
     <title><xsl:value-of select="$title" /></title>
   </head>
   <body bgcolor="#FFFFFF" text="#000000"
