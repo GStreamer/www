@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python</module-fancy>
+  <name>Play it, Sam. Play "As Time Goes By"</name>
+  <version>0.8.0</version>
+
+  <intro>
+<p>
+This is the 0.8.0 release of the GStreamer Python bindings.
+It should be used with the 0.8.x series of GStreamer and GStreamer Plugins.
+</p>
+<p>
+This is the first stable 0.8.0 gst-python release, it's now considered
+stable and ready to be used in production. It's already being used by
+serveral applications.
+</p>
+  </intro>
+  <features>
+    <feature>Locale safe initializaion</feature>
+    <feature>Build fixes</feature>
+  </features>
+  <maintainers>
+    <person>Johan Dahlin</person>
+    <person>Thomas Vander Stichele</person>
+  </maintainers>
+</release>

@@ -1345,4 +1345,23 @@ or download the
 </p>
     </content>
   </item>
+
+  <item>
+    <date>2004-11-15 15:08</date>
+    <title>gst-python 0.8.0: Play it, Sam. Play "As Time Goes By" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce the first stable release of the Python
+bindings targetting the 0.8.x series of GStreamer. 
+</p>
+<p>
+Check out the
+<a href="&site;/releases/gst-python/0.8.0.html">release notes</a>
+or download the
+<a href="&site;/src/gst-python/gst-python-0.8.0.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-python/gst-python-0.8.0.tar.bz2">tar.bz2</a>archive.
+</p>
+    </content>
+  </item>
+
 </news>
