@@ -250,7 +250,7 @@ Corporation</A> for making Mozstreamer.</p>
 rebroadcasting <A href="http://cjsw.com/">CJSW</A>, a Calgary radio
 station, using GStreamer.  He's got a radio receiver attached to an
 SBLive!, using gstreamer-launch to encode and send the audio to an
-icecast server. <b>Update</b> here's an <A href="http://gstreamer.net/media/gstreamer-benow.mp3">mp3 clip</A> (warning: mpg123 has a cow) and
+icecast server. <b>Update</b> here's an <A href="http://gstreamer.freedesktop.org/media/small/benow.mp3">mp3 clip</A> (warning: mpg123 has a cow) and
 <A href="http://gstreamer.net/media/gstreamer-shoutout2.mp3">another</A> of the cast, complete with mention of GStreamer &lt;g&gt;</p>
 
 
@@ -261,7 +261,7 @@ icecast server. <b>Update</b> here's an <A href="http://gstreamer.net/media/gstr
 
   <item>  <date>2001-12-09 08:58</date>
   
-    <content>We have just put up an article/log of a discussion between Bill Haneman and Wim Taymans on the subject of Multimedia and Accessibility. You can find it <A HREF="http://www.gstreamer.net/docs/gstaccess.php">here</A>. Interesting reading if you want to know more about making multimedia apps accessible.
+    <content>We have just put up an article/log of a discussion between Bill Haneman and Wim Taymans on the subject of Multimedia and Accessibility. You can find it <A HREF="#DEAD-LINK-http://www.gstreamer.net/docs/gstaccess.php">here</A>. Interesting reading if you want to know more about making multimedia apps accessible.
     </content>
     <title>Accessibility and Multimedia</title>
   </item>
@@ -269,7 +269,7 @@ icecast server. <b>Update</b> here's an <A href="http://gstreamer.net/media/gstr
 
   <item>  <date>2001-12-12 15:43</date>
   
-    <content>After nearly six months of development, the GStreamer team is extremely pleased to announce version 0.3.0. Links to source tarballs and binary packages can be found <A href="/releases/0.3.0/">here</A>; you might want to read the <A href="/releases/0.3.0/notice.php">release notes</A> while you're waiting for it to download.
+    <content>After nearly six months of development, the GStreamer team is extremely pleased to announce version 0.3.0. Links to source tarballs and binary packages can be found <A href="#DEAD-LINK-/releases/0.3.0/">here</A>; you might want to read the <A href="#DEAD-LINK-/releases/0.3.0/notice.php">release notes</A> while you're waiting for it to download.
     </content>
     <title>GStreamer 0.3.0 "Most Eventful Ever" Released</title>
   </item>
@@ -277,7 +277,7 @@ icecast server. <b>Update</b> here's an <A href="http://gstreamer.net/media/gstr
 
   <item>  <date>2002-01-08 12:10</date>
   
-    <content>After weeks of heavy development the GStreamer team is very happy to announce GStreamer 0.3.1. Lots of great stuff in this release so please check it out. You find the full <A HREF="http://www.gstreamer.net/releases/0.3.1/notice.php">release notes here</A>. And <A HREF="http://www.gstreamer.net/releases/0.3.1/">download instructions here</A>.
+    <content>After weeks of heavy development the GStreamer team is very happy to announce GStreamer 0.3.1. Lots of great stuff in this release so please check it out. You find the full <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.3.1/notice.php">release notes here</A>. And <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.3.1/">download instructions here</A>.
     </content>
     <title>GStreamer 0.3.1 released</title>
   </item>
@@ -302,7 +302,7 @@ icecast server. <b>Update</b> here's an <A href="http://gstreamer.net/media/gstr
 
   <item>  <date>2002-03-10 06:13</date>
   
-    <content>The 0.3.3 release of GStreamer is now available codename 'GUADEC By Foot'. As usuall we have full set of <A HREF="http://www.gstreamer.net/releases/0.3.3/notice.php">release notes</A> available and <A HREF="http://www.gstreamer.net/releases/0.3.3/">a page with download and build instructions</A>. Enjoy! 
+    <content>The 0.3.3 release of GStreamer is now available codename 'GUADEC By Foot'. As usuall we have full set of <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.3.3/notice.php">release notes</A> available and <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.3.3/">a page with download and build instructions</A>. Enjoy! 
     </content>
     <title>GStreamer 0.3.3 Released</title>
   </item>
@@ -340,7 +340,7 @@ From left to right : Leon (MAS), Ronald (BBB), Wim (wtay), Thomas (thomasvs), Er
   <item>  <date>2002-04-18 13:00</date>
   
     <content>Once more the GStreamer team is here with a new and exciting release. Fewer bugs, more documentation and some new plugins.
-Check out the full release notes and download instructions <A href="http://www.gstreamer.net/releases/0.3.4/">here</A>
+Check out the full release notes and download instructions <A href="#DEAD-LINK-http://www.gstreamer.net/releases/0.3.4/">here</A>
     </content>
     <title>Gstreamer 0.3.4 released</title>
   </item>
@@ -350,14 +350,14 @@ Check out the full release notes and download instructions <A href="http://www.g
   
     <content><A href="http://effectv.sourceforge.net/">EffecTV</A> is a cool project which allows you to add real-time effects to a video stream captured from a v4l-device.  Combining this with GStreamer allows you to use any effecTV plugin in any pipeline.  This can easily let you do really nice things.  Here's an example.
 <p>
-Starting from <A href="http://gstreamer.net/media/AlienSong.mpg">Alien Song</A>, we first run the pipeline
-<PRE>gst-launch gnomevfssrc location="http://gstreamer.net/media/AlienSong.mpg" ! mpegdemux video_%02d! <BR/>{ queue ! mpeg2dec ! colorspace ! agingTV ! colorspace ! <BR/> mpeg2enc ! disksink location=alien-age.mpg }</PRE> to re-encode the movie with the agingTV effect.  This is the <A href="http://gstreamer.net/media/alien-age.mpg">result</A>.
+Starting from <A href="http://gstreamer.freedesktop.org/media/medium/alien.mpg">Alien Song</A>, we first run the pipeline
+<PRE>gst-launch gnomevfssrc location="http://gstreamer.freedesktop.org/media/medium/alien.mpg" ! mpegdemux video_%02d! <BR/>{ queue ! mpeg2dec ! colorspace ! agingTV ! colorspace ! <BR/> mpeg2enc ! disksink location=alien-age.mpg }</PRE> to re-encode the movie with the agingTV effect.  This is the <A href="http://gstreamer.net/media/alien-age.mpg">result</A>.
 </p><p>
 Next, we re-encode the same video using the edgeTV plug-in :
-<PRE>gst-launch gnomevfssrc location="http://gstreamer.net/media/AlienSong.mpg" ! mpegdemux video_%02d! <BR/>{ queue ! mpeg2dec ! colorspace ! edgeTV ! colorspace ! <BR/> mpeg2enc ! disksink location=alien-edge.mpg }</PRE>
+<PRE>gst-launch gnomevfssrc location="http://gstreamer.freedesktop.org/media/medium/alien.mpg" ! mpegdemux video_%02d! <BR/>{ queue ! mpeg2dec ! colorspace ! edgeTV ! colorspace ! <BR/> mpeg2enc ! disksink location=alien-edge.mpg }</PRE>
 This is the <A href="http://gstreamer.net/media/alien-edge.mpg">result.</A>
 </p><p>Finally, we add the effects; we create an aged version of the edgy version.  This is where GStreamer really shines; in effectv you have to use loopback v4l devices.
-<PRE>gst-launch gnomevfssrc location="http://gstreamer.net/media/AlienSong.mpg" ! mpegdemux video_%02d! <BR/> { queue ! mpeg2dec ! colorspace ! edgeTV ! <BR/> agingTV ! colorspace ! mpeg2enc ! disksink location=alien-edge-age.mpg }</PRE>
+<PRE>gst-launch gnomevfssrc location="http://gstreamer.freedesktop.org/media/medium/alien.mpg" ! mpegdemux video_%02d! <BR/> { queue ! mpeg2dec ! colorspace ! edgeTV ! <BR/> agingTV ! colorspace ! mpeg2enc ! disksink location=alien-edge-age.mpg }</PRE>
 And here's the <A href="http://gstreamer.net/media/alien-edge-age.mpg">result.</A>
 </p><p>
 We hope to work with the effecTV authors to provide a convenient library which will allow easy access to these great effects.
@@ -400,7 +400,7 @@ GStreamer based applications can now have world class seek support. Seek enable 
 
   <item>  <date>2002-07-05 16:27</date>
   
-    <content>In our effort to change your lifes forever we are happy to announce GStreamer 0.4.0 'Desperately Seeking Sexiness' ready for public consumption. Lots of important fixes and additions in this release so be sure to check out our <A HREF="http://www.gstreamer.net/releases/0.4.0/notice.php">release notes</A>. Full download instructions and information about our new RPM for Red Carpet and apt-get you find <A HREF="http://www.gstreamer.net/releases/0.4.0/">here</A>.
+    <content>In our effort to change your lifes forever we are happy to announce GStreamer 0.4.0 'Desperately Seeking Sexiness' ready for public consumption. Lots of important fixes and additions in this release so be sure to check out our <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.4.0/notice.php">release notes</A>. Full download instructions and information about our new RPM for Red Carpet and apt-get you find <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.4.0/">here</A>.
     </content>
     <title>GStreamer 0.4.0 released</title>
   </item>
@@ -501,7 +501,7 @@ a manually re-ordered pipeline window to show the structure
   <item>  <date>2002-09-22 05:33</date>
   
     <content>The GStreamer revolution continues with the announcement of
-GStreamer 0.4.1. This release has focused on fixing bugs and stabilizing the current feature set. This has lead to much more polished experience for developers and users alike. There are some new features however like experimental Flash support and iRaidio metadata support. <A HREF="http://www.gstreamer.net/releases/0.4.1/">Check the release page for download information</A> and remember to read the <A HREF="http://www.gstreamer.net/releases/0.4.1/notice.php">release notes</A>.
+GStreamer 0.4.1. This release has focused on fixing bugs and stabilizing the current feature set. This has lead to much more polished experience for developers and users alike. There are some new features however like experimental Flash support and iRaidio metadata support. <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.4.1/">Check the release page for download information</A> and remember to read the <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.4.1/notice.php">release notes</A>.
     </content>
     <title>GStreamer 0.4.1 is available</title>
   </item>
@@ -510,7 +510,7 @@ GStreamer 0.4.1. This release has focused on fixing bugs and stabilizing the cur
   <item>  <date>2002-09-28 14:17</date>
   
     <content>The GStreamer teams very own media-player, Gst-Player, has a new release out today to go with our recently released GStreamer release. Gst-player 0.4.1 has many new nice features like improved GNOME 2 integration, Nautilus view, improved error handling and more. Check the release notes for 
-all the details and download instructions. You find it <A HREF="http://www.gstreamer.net/releases/gst-player/0.4.1/">all here</A>.
+all the details and download instructions. You find it <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/gst-player/0.4.1/">all here</A>.
     </content>
     <title>Gst-Player 0.4.1 released</title>
   </item>
@@ -545,7 +545,7 @@ So if you are interested in these kind of applications make sure to visit <A HRE
 
   <item>  <date>2002-11-01 08:10</date>
   
-    <content>The GStreamer team is proud to announce version 0.4.2 of the GStreamer Multimedia Framework. This release contains many bugfixes and feature additions including new wav encoder and libshout2 plugin. As usuall we have a detailed <A HREF="http://www.gstreamer.net/releases/0.4.2/notice.php">release note</A> and <A HREF="http://www.gstreamer.net/releases/0.4.2/">download instructions</A>. 
+    <content>The GStreamer team is proud to announce version 0.4.2 of the GStreamer Multimedia Framework. This release contains many bugfixes and feature additions including new wav encoder and libshout2 plugin. As usuall we have a detailed <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.4.2/notice.php">release note</A> and <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.4.2/">download instructions</A>. 
     </content>
     <title>GStreamer 0.4.2 releleased!</title>
   </item>
@@ -571,8 +571,8 @@ So if you are interested in these kind of applications make sure to visit <A HRE
   <item>  <date>2002-12-10 12:32</date>
   
     <content>The GStreamer team is proud to announce our latest development
-release. Lots of work has gone into this one and things are really starting to flesh out. Full details can be found in the detailed <A href="http://www.gstreamer.net/releases/0.5.0/notice.php">release 
-notes</A>. And download instructions on the <A HREF="http://www.gstreamer.net/releases/0.5.0/">0.5.0 release homepage</A>
+release. Lots of work has gone into this one and things are really starting to flesh out. Full details can be found in the detailed <A href="#DEAD-LINK-http://www.gstreamer.net/releases/0.5.0/notice.php">release 
+notes</A>. And download instructions on the <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.5.0/">0.5.0 release homepage</A>
     </content>
     <title>GStreamer "Private Dancer" 0.5.0</title>
   </item>
@@ -580,7 +580,7 @@ notes</A>. And download instructions on the <A HREF="http://www.gstreamer.net/re
 
   <item>  <date>2002-12-19 14:38</date>
   
-    <content>Zeeshan Ali has put up a how-to explaining how he made a video Wall using GStreamer. So read the <A HREF="http://www.gstreamer.net/docs/video-wall-howto.html">how-to</A>
+    <content>Zeeshan Ali has put up a how-to explaining how he made a video Wall using GStreamer. So read the <A HREF="http://gstreamer.freedesktop.org/apps/videowhale.html">how-to</A>
 and <A HREF="http://www.gstreamer.net/apps/vw/">see the pictures</A>.
     </content>
     <title>Video Wall How-To</title>
@@ -589,7 +589,7 @@ and <A HREF="http://www.gstreamer.net/apps/vw/">see the pictures</A>.
 
   <item>  <date>2003-01-07 09:11</date>
   
-    <content>Once more we catch the world unprepared by released a new version of GStreamer. Version 0.5.1 contains many bugfixes and little improvements. New features include our threadless scheduler 'opt' and the new ffmpeg based plugin. Full details on the <A HREF="http://www.gstreamer.net/releases/0.5.1/">0.5.1 information page</A>. There is also a set of <A HREF="http://www.gstreamer.net/releases/0.5.1/notice.php">0.5.1 release notes</A>.
+    <content>Once more we catch the world unprepared by released a new version of GStreamer. Version 0.5.1 contains many bugfixes and little improvements. New features include our threadless scheduler 'opt' and the new ffmpeg based plugin. Full details on the <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.5.1/">0.5.1 information page</A>. There is also a set of <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.5.1/notice.php">0.5.1 release notes</A>.
     </content>
     <title>GStreamer 0.5.1</title>
   </item>
@@ -597,7 +597,7 @@ and <A HREF="http://www.gstreamer.net/apps/vw/">see the pictures</A>.
 
   <item>  <date>2003-01-22 11:08</date>
   
-    <content>The GStreamer team has another release ready to satisfy your multimedia needs. This is a to be considered a release candidate in preparation for our 0.6.0 release later this week. Due to the constant pressure from the GNOME release team to make this release we found a suitable code name. You find <A HREF="http://www.gstreamer.net/releases/0.5.2/">download info</A> and <A href="http://www.gstreamer.net/releases/0.5.2/notice.php">release notes</A> as ususal.
+    <content>The GStreamer team has another release ready to satisfy your multimedia needs. This is a to be considered a release candidate in preparation for our 0.6.0 release later this week. Due to the constant pressure from the GNOME release team to make this release we found a suitable code name. You find <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.5.2/">download info</A> and <A href="#DEAD-LINK-http://www.gstreamer.net/releases/0.5.2/notice.php">release notes</A> as ususal.
     </content>
     <title>GStreamer 0.5.2 released</title>
   </item>
@@ -605,7 +605,7 @@ and <A HREF="http://www.gstreamer.net/apps/vw/">see the pictures</A>.
 
   <item>  <date>2003-02-01 19:03</date>
   
-    <content>The long wait is over. The first ABI stable GStreamer release is now available for download. This release series will be maintained in parallel with our development series until we release 1.0. Check out the <A HREF="http://www.gstreamer.net/releases/0.6.0/">release homepage</A> for more information.
+    <content>The long wait is over. The first ABI stable GStreamer release is now available for download. This release series will be maintained in parallel with our development series until we release 1.0. Check out the <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.6.0/">release homepage</A> for more information.
     </content>
     <title>GStreamer 0.6.0 released</title>
   </item>
@@ -621,7 +621,7 @@ and <A HREF="http://www.gstreamer.net/apps/vw/">see the pictures</A>.
 
   <item>  <date>2003-02-21 14:25</date>
   
-    <content>A major new release of the GStreamer Media player is available. This release features a huge GUI update and lot better stability. You find details and download instructions on the <A HREF="http://www.gstreamer.net/releases/gst-player/0.5.0/">release page</A>.
+    <content>A major new release of the GStreamer Media player is available. This release features a huge GUI update and lot better stability. You find details and download instructions on the <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/gst-player/0.5.0/">release page</A>.
     </content>
     <title>Gst-player 0.5.0 released</title>
   </item>
@@ -629,7 +629,7 @@ and <A HREF="http://www.gstreamer.net/apps/vw/">see the pictures</A>.
 
   <item>  <date>2003-02-22 16:02</date>
   
-    <content>The online GStreamer documentation has just been updated to cover the 0.6 release series. Full API docs, a manual and plugin writers guide available for your reading pleasure at <A HREF="http://www.gstreamer.net/docs/">the GStreamer documentation page</A>.
+    <content>The online GStreamer documentation has just been updated to cover the 0.6 release series. Full API docs, a manual and plugin writers guide available for your reading pleasure at <A HREF="http://gstreamer.freedesktop.org/documentation/">the GStreamer documentation page</A>.
     </content>
     <title>GStreamer documentation updated</title>
   </item>
@@ -637,7 +637,7 @@ and <A HREF="http://www.gstreamer.net/apps/vw/">see the pictures</A>.
 
   <item>  <date>2003-03-17 23:46</date>
   
-    <content>We have a new release of the Gst-editor which works with the 0.6.x stable series of GStreamer. So check out the <A HREF="http://www.gstreamer.net/releases/gst-editor/0.5.0/">Gst-editor
+    <content>We have a new release of the Gst-editor which works with the 0.6.x stable series of GStreamer. So check out the <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/gst-editor/0.5.0/">Gst-editor
 release page</A> to find out where to get the goods.
     </content>
     <title>Gst-Editor with new Release!</title>
@@ -646,7 +646,7 @@ release page</A> to find out where to get the goods.
 
   <item>  <date>2003-04-18 17:08</date>
   
-    <content>We've released a new version that is API and ABI compatible with 0.6.0. This release features major bugfixes in all areas. For details and download instructions, see the <a href="http://www.gstreamer.net/releases/0.6.1/">Release Page</a>.
+    <content>We've released a new version that is API and ABI compatible with 0.6.0. This release features major bugfixes in all areas. For details and download instructions, see the <a href="#DEAD-LINK-http://www.gstreamer.net/releases/0.6.1/">Release Page</a>.
     </content>
     <title>GStreamer 0.6.1 released</title>
   </item>
@@ -654,7 +654,7 @@ release page</A> to find out where to get the goods.
 
   <item>  <date>2003-04-23 11:48</date>
   
-    <content>The 0.5.1 release of Gst-Player is now available. Lots of cleanups and new stuff in this release. For instance we now support visualization when playing music and drag and drop form Nautilus. More information on gst-player <A HREF="http://www.gstreamer.net/releases/gst-player/0.5.1/">release note page</A>.
+    <content>The 0.5.1 release of Gst-Player is now available. Lots of cleanups and new stuff in this release. For instance we now support visualization when playing music and drag and drop form Nautilus. More information on gst-player <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/gst-player/0.5.1/">release note page</A>.
     </content>
     <title>Gst-Player 0.5.1 released</title>
   </item>
@@ -663,7 +663,7 @@ release page</A> to find out where to get the goods.
   <item>  <date>2003-06-09 16:43</date>
   
     <content>This new release on the stable branch features a lot of bugfixes.
-<A href="http://gstreamer.net/releases/0.6.2">Read the release notice and start downloading</A>.
+<A href="#DEAD-LINK-http://gstreamer.net/releases/0.6.2">Read the release notice and start downloading</A>.
     </content>
     <title>GStreamer 0.6.2 "Wild Rover" is OUT</title>
   </item>
@@ -671,7 +671,7 @@ release page</A> to find out where to get the goods.
 
   <item>  <date>2003-08-27 12:05</date>
   
-    <content>A new smashing release of the GStreamer stable branch is out fixing the bugs you have reported in regards to Rhythmbox and Sound Juicer. Get it while its hot at <A HREF="http://gstreamer.net/releases/0.6.3/">the 0.6.3 release page</A>. Make also sure to read our <A HREF="http://gstreamer.net/releases/0.6.3/notice.php">release notes</A>.
+    <content>A new smashing release of the GStreamer stable branch is out fixing the bugs you have reported in regards to Rhythmbox and Sound Juicer. Get it while its hot at <A HREF="#DEAD-LINK-http://gstreamer.net/releases/0.6.3/">the 0.6.3 release page</A>. Make also sure to read our <A HREF="#DEAD-LINK-http://gstreamer.net/releases/0.6.3/notice.php">release notes</A>.
     </content>
     <title>GStreamer 0.6.3 available</title>
   </item>
@@ -679,7 +679,7 @@ release page</A> to find out where to get the goods.
 
   <item>  <date>2003-09-14 05:32</date>
   
-    <content>We have a new release of our media player application for your  testing pleasure. New for this release is support for video effects and many bug fixes. Check out our <A HREF="http://www.gstreamer.net/releases/gst-player/0.6.0/">release page</A> for the details. Source packages available, rpms and debs hopefully online soon.
+    <content>We have a new release of our media player application for your  testing pleasure. New for this release is support for video effects and many bug fixes. Check out our <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/gst-player/0.6.0/">release page</A> for the details. Source packages available, rpms and debs hopefully online soon.
     </content>
     <title>Gst-Player 0.6.0 released</title>
   </item>
@@ -687,7 +687,7 @@ release page</A> to find out where to get the goods.
 
   <item>  <date>2003-10-14 06:34</date>
   
-    <content>The GStreamer team is very happy to announce the release GStreamer 0.6.4. -the latest update in our ABI stable 0.6.x release series.  There are many small and minor fixes in this release to enhance your multimedia pleasure. Full details are on our <A HREF="http://www.gstreamer.net/releases/0.6.4/">download and release note page</A>.
+    <content>The GStreamer team is very happy to announce the release GStreamer 0.6.4. -the latest update in our ABI stable 0.6.x release series.  There are many small and minor fixes in this release to enhance your multimedia pleasure. Full details are on our <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.6.4/">download and release note page</A>.
 
 In related news, Scott Wheeler has made Suse packages of GStreamer which you can use with his very cool Juk music player and manager for KDE. You'll find Scott's packages also listed in the <A HREF="http://www.gstreamer.net/download/">download section</A>.
 
@@ -698,8 +698,8 @@ In related news, Scott Wheeler has made Suse packages of GStreamer which you can
 
   <item>  <date>2003-10-22 14:07</date>
   
-    <content>The time has finally come. The first release in our new series of development releases is available. Tons of improvements in this new series so be sure to check out the <A HREF="http://www.gstreamer.net/releases/0.7.1/notice.php">release 
-notes</A> and <A HREF="http://www.gstreamer.net/releases/0.7.1/">main download page</A>.
+    <content>The time has finally come. The first release in our new series of development releases is available. Tons of improvements in this new series so be sure to check out the <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.7.1/notice.php">release 
+notes</A> and <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.7.1/">main download page</A>.
     </content>
     <title>GStreamer 0.7.1</title>
   </item>
@@ -707,7 +707,7 @@ notes</A> and <A HREF="http://www.gstreamer.net/releases/0.7.1/">main download p
 
   <item>  <date>2003-11-26 13:03</date>
   
-    <content>It is time for a new release from the GStreamer development branch. 0.7.2 takes us a big step closer to 0.8 and introduces a lot of nice new plugins and features, like AAC and MVA support. Check of the <A HREF="http://www.gstreamer.net/releases/0.7.2/notice.php">release notes</A> for details. And then grab the tarballs at the <A HREF="http://www.gstreamer.net/releases/0.7.2/">0.7.2 download page</A>.
+    <content>It is time for a new release from the GStreamer development branch. 0.7.2 takes us a big step closer to 0.8 and introduces a lot of nice new plugins and features, like AAC and MVA support. Check of the <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.7.2/notice.php">release notes</A> for details. And then grab the tarballs at the <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.7.2/">0.7.2 download page</A>.
     </content>
     <title>GStreamer 0.7.2 Released</title>
   </item>
@@ -715,7 +715,7 @@ notes</A> and <A HREF="http://www.gstreamer.net/releases/0.7.1/">main download p
 
   <item>  <date>2003-12-20 04:57</date>
   
-    <content>The league of extraordinary gentlemen is proud to announce another release of the GStreamer 0.7 development series. A lot of work has gone into this release to fix up bugs in current plugins and core. Check out our <A HREF="http://www.gstreamer.net/releases/0.7.3/notice.php">release notes</A> and grab the tarballs from our <A HREF="http://www.gstreamer.net/releases/0.7.3">download page</A>
+    <content>The league of extraordinary gentlemen is proud to announce another release of the GStreamer 0.7 development series. A lot of work has gone into this release to fix up bugs in current plugins and core. Check out our <A HREF="http://gstreamer.freedesktop.org/releases/gstreamer/0.7.3.html">release notes</A> and grab the tarballs from our <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.7.3">download page</A>
     </content>
     <title>GStreamer 0.7.3 released</title>
   </item>
@@ -723,7 +723,7 @@ notes</A> and <A HREF="http://www.gstreamer.net/releases/0.7.1/">main download p
 
   <item>  <date>2003-12-21 13:49</date>
   
-    <content>In order to send out a strong signal that we are serious about our cross-desktop commitment and to get improved CVS services we are moving our CVS repository to freedesktop.org. We hope that this move will be an positive milestone in our continued development. For details for how to access freedesktop CVS check out the information in our <A HREF="../dev">developers</A> page.
+    <content>In order to send out a strong signal that we are serious about our cross-desktop commitment and to get improved CVS services we are moving our CVS repository to freedesktop.org. We hope that this move will be an positive milestone in our continued development. For details for how to access freedesktop CVS check out the information in our <A HREF="&site;/dev">developers</A> page.
     </content>
     <title>GStreamer moves to Freedesktop.org</title>
   </item>
