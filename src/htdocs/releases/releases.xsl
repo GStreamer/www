@@ -34,6 +34,22 @@
     </ul>
   </xsl:template>
 
+  <!-- this template displays the bugs fixed -->
+  <xsl:template match="bugs">
+    <h2>Bugs fixed in this release</h2>
+    <ul>
+    <xsl:for-each select="bug">
+      <li>
+        <xsl:call-template name="hyperlink">
+          <xsl:with-param name="href">http://bugzilla.gnome.org/show_bug.cgi?id=<xsl:value-of select="id" /></xsl:with-param>
+  <xsl:with-param name="text"><xsl:value-of select="id" /></xsl:with-param>
+</xsl:call-template>
+        : <xsl:value-of select="summary" />
+      </li>
+    </xsl:for-each>
+    </ul>
+  </xsl:template>
+
  
   <!-- this template displays the contributors -->
   <xsl:template match="contributors">
@@ -80,11 +96,12 @@ Release notes for
 
         <xsl:apply-templates select="features" />
         <xsl:apply-templates select="issues" />
+        <xsl:apply-templates select="bugs" />
 
 <h2>Download</h2>
 You find source releases of <xsl:copy-of select="module" /> in the
 <xsl:call-template name="hyperlink">
-  <xsl:with-param name="href">&site;/src/<xsl:value-of select="module" />/</xsl:with-param>
+  <xsl:with-param name="href">&realsite;/src/<xsl:value-of select="module" />/</xsl:with-param>
   <xsl:with-param name="text"><xsl:value-of select="module" /> download directory</xsl:with-param>
 </xsl:call-template>.
 
@@ -93,7 +110,7 @@ You find source releases of <xsl:copy-of select="module" /> in the
 <h2>GStreamer Homepage</h2>
 
 More details can be found on the project's website,
-<a href="&site;">&site;</a>.
+<a href="&realsite;">&realsite;</a>.
 
 <h2>Support and Bugs</h2>
 
