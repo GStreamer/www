@@ -1,0 +1,238 @@
+<?xml-stylesheet href="tasks.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: Tasks</title>
+  <body>
+  </body>
+  
+  <tasks title="List of GNOME-related tasks">
+    
+  <task name="cdplayer">
+      <title>Port GNOME-CD player to GStreamer</title>
+      <description>
+  	The Audio-CD player in GNOME media needs to be ported to use GStreamer.
+      </description>
+  
+      <why>
+  	It should help cut back on the amount of code in gnome-media making it easier to maintain. It also helps further the goal of only maintaining such code in one place in the GNOME stack. All fixes made in regards to Audio cd playback in GStreamer due to gnome-cd will also help any other GStreamer using application that wants to do audio-cd playback.
+      </why>
+  
+      <how>
+  	There are multiple plugins in GStreamer that can read audiocd's. The most correct to use is probably the one called 'cdplayer'. A big and important part of this task is to make sure the port doesn't cause any regressions, so make sure that if there are some architectures supported in the CD player that these gets ported over to the cdplayer GStreamer plugin.
+      </how>
+  
+      <where>
+        <code id="gnome-media">
+          <name>gnome-media</name>
+          <description>The code to port to GStreamer</description>
+        </code>
+        
+      </where>
+  
+      <difficulty>
+        MEDIUM - The port of the GUI is probably rather trivial. But the need to port over support for non-linux architectures and also make sure the cdplayer plugin is fully working with latest GStreamer makes the task a bit more advanced.
+      </difficulty>
+      <submit>
+        Patch should be made against gnome-media CVS and sent the gnome-multimedia mailing list.
+      </submit>
+      <notes>
+  Any questions about this task should be sent to the gnome-media mailing list.
+      </notes>
+      <see>
+        <person>Ted</person>
+      </see>
+    </task>
+    
+  <task name="accessiblemixer">
+      <title>Make mixer accessible</title>
+      <description>
+  	The new gst-mixer - GNOME Volume control - in GNOME media needs to be accessible.</description>
+  
+      <why>
+  	The new GStreamer based mixer is a big step formward in many ways to the old one, but we really need to make sure the UI doesn't regress in regards to accessiblity. The old mixer code is still in CVS and should provide a good example on how to do it. A great task for someone who wants to learn the basics of implementing accessibility.
+      </why>
+  
+      <how>
+  	Look at the code of the old mixer in the gmix directory in gnome-media. Implement similar accessiblity additions in gst-mixer based on this.</how>
+  
+      <where>
+        <code id="gnome-media/gmix">
+          <name>gmix</name>
+          <description>The code to port to gst-mixer</description>
+        </code>
+        
+      </where>
+  
+      <difficulty>
+        EASY - Not that much codes that needs writing
+      </difficulty>
+      <submit>
+        Patch should be made against gnome-media CVS and sent the gnome-multimedia mailing list.
+      </submit>
+      <notes>
+  Any questions about this task should be sent to the gnome-media mailing list.
+      </notes>
+      <see>
+        <person>Ted</person>
+        <person>Ronald</person>
+      </see>
+    </task>
+  
+  <task name="propdocs">
+      <title>Create online docs for Profile manager</title>
+      <description>
+  	There is a new tool for setting values for audio encoding bitrates as such called gnome-audio-profiles-properties. This tools is meant to be called from relevant applications. But it needs to have its own online docs added</description>
+  
+      <why>
+  	All GNOME applications should have online documentation and this being a poweruser feature definetly needs it.
+      </why>
+  
+      <how>
+  	Look at gnome-sound-recorder or any other GNOME module with online docs to see how they are done. You should also look over the GNOME Documentation project for information on how to do this.</how>
+  
+      <where>
+        <code id="gnome-media/grecord">
+          <name>grecord</name>
+          <description>The code of gnome-sound-recorder which can serve as an example</description>
+        </code>
+        
+      </where>
+  
+      <difficulty>
+        EASY - Many examples to look at.
+      </difficulty>
+      <submit>
+        Patch should be made against gnome-media CVS and sent it ot the gnome-multimedia mailing list.
+      </submit>
+      <notes>
+  Any questions about this task should be sent to the gnome-media mailing list.
+      </notes>
+      <see>
+        <person>Ted Gould</person>
+      </see>
+    </task>
+  
+    <task name="juicerprofiles">
+      <title>Integrate audio profiles and sound-juicer</title>
+      <description>
+  	Switch Sound juicer to use the new shared audio quality gconf keys and add a menu entry in sound juicer to call the audio-profiles.
+  	</description>
+  
+      <why>
+  	We have a new shared sub-system for taking care of sound quality when recording/encoding audio. Sound-Juicer as our main showcase application for ripping cd's would be a great application to support this both since it is exactly the kind of application it is meant for, but also since Sound-Juicer then could server as documentation for other programs.
+      </why>
+  
+      <how>
+  	Look at the gnome-audio-profiles code in gnome-media. You find it in the 'profiles' directory.</how>
+  
+      <where>
+        <code id="gnome-media/profiles">
+          <name>profiles</name>
+          <description>The code of the audio profile code</description>
+        </code>
+        
+      </where>
+  
+      <difficulty>
+        MEDIUM - Fairly simple code, but no examples to look at.
+      </difficulty>
+      <submit>
+        Patch should be made against gnome-media CVS and sent it ot the gnome-multimedia mailing list.
+      </submit>
+      <notes>
+  Any questions about this task should be sent to the gnome-media mailing list.
+      </notes>
+      <see>
+        <person>Thomas</person>
+      </see>
+    </task>
+  
+    <task name="recorderprofiles">
+      <title>Integrate audio profiles and gnome-sound-recorder</title>
+      <description>
+  	Switch gnome-sound-recorder to use the new shared audio quality gconf keys and add a menu entry in sound juicer to call the audio-profiles.
+  	</description>
+  
+      <why>
+  	We have a new shared sub-system for taking care of sound quality when recording/encoding audio. Having both Sound-Juicer and GNOME Sound recorder use it is important in regards to make sure it gets used everywhere relevant.
+      </why>
+  
+      <how>
+  	Look at the gnome-audio-profiles code in gnome-media. You find it in the 'profiles' directory.</how>
+  
+      <where>
+        <code id="gnome-media/profiles">
+          <name>profiles</name>
+          <description>The code of the audio profile code</description>
+        </code>
+        
+      </where>
+  
+      <difficulty>
+        MEDIUM - Fairly simple code, but no examples to look at.
+      </difficulty>
+      <submit>
+        Patch should be made against gnome-media CVS and sent it ot the gnome-multimedia mailing list.
+      </submit>
+      <notes>
+  Any questions about this task should be sent to the gnome-media mailing list.
+      </notes>
+      <see>
+        <person>Thomas</person>
+      </see>
+    </task>
+  
+    <task name="libgnomeimy">
+      <title>Update and merge libgnome GStreamer patches</title>
+      <description>
+  	There where a couple of patches made long ago that migrates libgnome to use GStreamer for audio playback. These patches should be cleaned up (use GStreamer directly) and verified to work with GStreamer 0.7/0.8.
+  	</description>
+  
+      <why>
+  	As we are now moving to really take advantage of GStreamer in the GNOME technology stack it is natural to also move libgnome to GStreamer.</why>
+  
+      <how>
+  	Patches can be found in these two GNOME bugzilla entries <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82340">82340</A> and <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82341">82341</A>.</how>
+  
+      <difficulty>
+        MEDIUM - Fairly simple code, but at a very high impact place in the toolchain.
+      </difficulty>
+      <submit>
+        Patch should be made against libgnome and libgnomeui CVS and sent to the gnome-desktop mailing list.
+      </submit>
+      <notes>
+  Any questions about this task should be sent to the gnome-media mailing list.
+      </notes>
+      <see>
+        <person>Thomas</person>
+        <person>Anders</person>
+      </see>
+    </task>
+   
+   <task name="mediacaching">
+      <title>Design and implemente media info caching</title>
+      <description>
+  	We want a system similar to the image thumbnail standard on freedesktop.org for caching metadata. That way every application do not need to cache this for themselves.
+  	</description>
+  
+      <why>
+  	That way every application do not need to cache this for themselves.</why>
+  
+      <how>
+  	Look at the <A HREF="http://triq.net/~jens/thumbnail-spec/index.html">thumbnail standard</A> for some design ideas.</how>
+  
+      <difficulty>
+        HARD - Needs good design and implementation skills, along with patience with working with large groups of people.
+      </difficulty>
+      <submit>
+        Proposal should be sent to freedesktop. Implementation patches to relevant modules.
+      </submit>
+      <notes>
+  Any questions about this task should be sent to the gnome-media mailing list.
+      </notes>
+      <see>
+        <person>Thomas</person>
+      </see>
+    </task>
+  
+  </tasks>
+</page>

@@ -1,0 +1,138 @@
+<?xml-stylesheet href="tasks.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: Tasks</title>
+  <body>
+  </body>
+
+  <tasks title="List of GStreamer tasks">
+
+  <task name="media-info-0.7">
+    <title>Make media-info work with the 0.7.x tagging stuff</title>
+    <description>
+During 0.7, tag handling has been rewritten.  media-info needs to
+be fixed to be able to extract tags using the new interface.
+    </description>
+
+    <why>
+The new tagging code is more flexible, and the old one has been deprecated.
+Fixing media-info will also fix problems with nautilus-media in GNOME.
+    </why>
+
+    <how>
+The tag extraction code is used in gst-launch.
+media-info has a stateful parser.  The state where it looks for metadata
+needs to be changed to use the new tagging interface.
+You can verify if it works by running media-info-test on tagged audio files.
+    </how>
+
+    <where>
+       <code id="gst-media-info">
+        <name>GStreamer media-info</name>
+        <description>The library to fix</description>
+      </code>
+      <code id="gst-launch">
+        <name>gst-launch</name>
+        <description>
+Application containing tag extraction code.
+        </description>
+      </code>
+    </where>
+    <difficulty>
+      MEDIUM - tag extraction is stable but new and not documented yet.
+    </difficulty>
+    <see>
+      <person>Thomas</person>
+      <person>Benjamin</person>
+    </see>
+  </task>
+    
+  <task name="tagquicktime">
+    <title>Add tagging support for Quicktime</title>
+    <description>
+	GStreamer 0.7/0.8 introduce a new system for handling metadata in mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
+    </description>
+
+    <why>
+	GStreamer wants to allow seamless conversion of media files. The new tagging system will preserve tagging information when converting the media files if it is implemented in both the media formats in question.
+    </why>
+
+    <how>
+	Look at the Ogg Vorbis and Mp3 plugins to see how it is done and do the same for Quicktime. <A HREF="http://developer.apple.com/documentation/quicktime/QTFF/QTFFChap2/chapter_3_section_2.html#//apple_ref/doc/uid/DontLinkBookID_78-CH204-TPXREF101">Apple Developer docs for Quicktime tags</A>
+    </how>
+
+   <difficulty>
+      MEDIUM - tag extraction is stable but new and not documented yet.
+    </difficulty>
+    <see>
+      <person>Ronald</person>
+      <person>Benjamin</person>
+    </see>
+  </task>
+  <task name="tagasf">
+    <title>Add tagging support for ASF</title>
+    <description>
+	GStreamer 0.7/0.8 introduce a new system for handling metadata in mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
+    </description>
+
+    <why>
+	GStreamer wants to allow seamless conversion of media files. The new tagging system will preserve tagging information when converting the media files if it is implemented in both the media formats in question.
+    </why>
+
+    <how>
+	Information on ASF tagging can be found <A HREF="http://download.microsoft.com/download/winmediatech40/Doc/1.0/WIN98MeXP/EN-US/ASF_Specification_v.1.0.exe">in this microsoft download</A>. It is a .exe file but you can just unzip it to get the .doc file. It loads fine in Abiword.
+    </how>
+
+   <difficulty>
+      MEDIUM - tag extraction is stable but new and not documented yet.
+    </difficulty>
+    <see>
+      <person>Ronald</person>
+      <person>Benjamin</person>
+    </see>
+  </task>
+
+  <task name="tagmatroska">
+    <title>Add tagging support for Matroska</title>
+    <description>
+	GStreamer 0.7/0.8 introduce a new system for handling metadata in mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
+    </description>
+
+    <why>
+	GStreamer wants to allow seamless conversion of media files. The new tagging system will preserve tagging information when converting the media files if it is implemented in both the media formats in question.
+    </why>
+
+    <how>
+	Information on the Matroska tagging format on <A HREF="http://matroska.corecodec.org/technical/specs/tagging/index.html">the Matroska specs page</A>.</how>
+
+   <difficulty>
+      MEDIUM - tag extraction is stable but new and not documented yet.
+    </difficulty>
+    <see>
+      <person>Ronald</person>
+      <person>Benjamin</person>
+    </see>
+  </task>
+
+<task name="686basicomega">
+    <title>Make basicomega scheduler work with i686 glibc</title>
+    <description>
+	One of the fastest schedulers we have is the one called basicomega. Unfortunatly we have been bared from using it as the default for quite a while because it segfaults when you use a version of glibc that has been compiled with -march=686. This means that the standard glibc used with major distributions like Mandrake and Red Hat cause this scheduler to crash.
+	</description>
+
+    <why>
+	Context switching is one of the tasks the scheduler does most. And the faster the better. For many heavy applications being able to use this scheduler would be a great boon.</why>
+
+    <how>
+	If we knew we would have fixed it long ago ourselves.</how>
+
+   <difficulty>
+      Friggin HARD - Demands detailed knowledge of how glibc internals work and compiler optimizations.
+    </difficulty>
+    <see>
+      <person>Andy</person>
+      <person>David</person>
+    </see>
+  </task>
+</tasks>
+</page>
+
