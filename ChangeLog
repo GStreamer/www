@@ -1,23 +1,28 @@
+2005-04-01  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
+
+	* src/htdocs/tasks/gnome.xml:
+	  Remove Totem subtitle selection task since that's completed.
+
 2005-03-26  Stefan Kost  <ensonic@users.sf.net>
 
 	* src/htdocs/download/index.xml:
-    people should try gentoo forums first before comming to gst-irc
+	  people should try gentoo forums first before comming to gst-irc
 
 2005-03-26  Stefan Kost  <ensonic@users.sf.net>
 
 	* src/htdocs/bindings/bindings.xsl:
 	* src/htdocs/bugs/bugs.xsl:
-    another litle finetuning of the tables
+	  another litle finetuning of the tables
 
 2005-03-26  Stefan Kost  <ensonic@users.sf.net>
 
 	* TODO:
-    little update
+	  little update
 	* src/htdocs/download/index.xml:
-    added gentoo as a distribution with good gstreamer support
+	  added gentoo as a distribution with good gstreamer support
 	* src/htdocs/documentation/index.xml:
 	* src/htdocs/modules/modules.xsl:
-    a litle finetuning of the tables on modules and docu-pages
+	  a litle finetuning of the tables on modules and docu-pages
 
 2005-03-11  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
 
