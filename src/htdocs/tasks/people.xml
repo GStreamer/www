@@ -9,7 +9,7 @@
       <person name="Ronald">
         <realname>Ronald Bultje</realname>
         <email>rbultje (at) ronald (dot) bitfreak (dot) net</email>
-        <irc>freenode.net, #gstreamer</irc>
+        <irc>irc.freenode.net, #gstreamer</irc>
         <nick>BBB</nick>
         <role>GStreamer Developer</role>
       </person>
@@ -25,7 +25,7 @@
       <person name="Thomas">
         <realname>Thomas Vander Stichele</realname>
         <email>thomas (at) apestaart (dot) org</email>
-        <irc>freenode.net, #gstreamer</irc>
+        <irc>irc.freenode.net, #gstreamer</irc>
         <nick>thomasvs</nick>
         <role>GStreamer Developer</role>
       </person>
@@ -41,7 +41,7 @@
       <person name="Ted">
         <realname>Ted Gould</realname>
         <email>ted (at) gould (dot) cx</email>
-        <irc>#gnome</irc>
+        <irc>irc.gimp.org, #gnome</irc>
         <nick>Ted</nick>
         <role>Gnome Developer</role>
       </person>
@@ -49,7 +49,7 @@
       <person name="Anders">
         <realname>Anders Carlson</realname>
         <email>andersca (at) gnome (dot) org</email>
-        <irc>#gnome-hackers</irc>
+        <irc>irc.gimp.org, #gnome-hackers</irc>
         <nick>andersca</nick>
         <role>Gnome Developer</role>
       </person>
@@ -57,7 +57,7 @@
       <person name="David">
         <realname>David Schleef</realname>
         <email>ds (at) schleef (dot) org</email>
-        <irc>#gstreamer</irc>
+        <irc>irc.freenode.net, #gstreamer</irc>
         <nick>ds</nick>
         <role>GStreamer Developer</role>
       </person>
@@ -65,7 +65,7 @@
       <person name="Andy">
         <realname>Andy Wingo</realname>
         <email>wingo (at) pobox (dot) com</email>
-        <irc>#gstreamer</irc>
+        <irc>irc.freenode.net, #gstreamer</irc>
         <nick>wingo</nick>
         <role>GStreamer Developer</role>
       </person>
