@@ -1,0 +1,60 @@
+#!/usr/bin/env python
+
+# parse HTML from bugzilla.gnome.org to create a list of bugs for a given
+# product, component and target_milestone
+
+import re
+import sys
+import urllib
+
+# a sample bug line we parse for future reference:
+#<TR VALIGN=TOP ALIGN=LEFT CLASS="Nor" ><TD><A HREF="show_bug.cgi?id=78267">78267</A> <td class=severity><nobr>min</nobr></td><td class=priority><nobr>Nor</nobr></td><td class=owner><nobr>thomas@apestaart.org</nobr></td><td class=status><nobr>RESO</nobr></td><td class=resolution><nobr>FIXE</nobr></td><td class=summary>autogen.sh doesn't take --prefix and similar to configure</td></TR>
+
+URL = 'http://bugzilla.gnome.org/buglist.cgi?product=%s&component=%s&target_milestone=%s'
+
+reg = re.compile('<TR.*id=(\d+)".*summary>(.*)<\/td')
+
+HEADER = '<bugs>'
+ITEM = """  <bug>
+    <id>%s</id>
+    <summary>%s</summary>
+  </bug>"""
+FOOTER = '</bugs>'
+
+components = {
+  'gstreamer': 'gstreamer (core)' 
+}
+
+default_product = "GStreamer"
+
+def main(args):
+    if len(args) < 3:
+        print 'Usage: %s component milestone [product]' % args[0]
+        return 2
+
+    # translate the component if it's in our dict of components
+    if args[1] in components.keys():
+        component = components[args[1]]
+    else:
+        component = args[1]
+    milestone = args[2]
+
+    if len(args) == 3:
+        product = default_product
+    else:
+        product = args[3]
+
+    url = URL % (product, urllib.quote(component), milestone)
+    fd = urllib.urlopen(url)
+
+    print HEADER
+    for line in fd.readlines():
+        match = reg.search(line[:-1])
+        if match:
+            bug_id, summary = match.groups()
+            print ITEM % (bug_id, summary)
+    print FOOTER
+
+        
+if __name__ == '__main__':
+    sys.exit(main(sys.argv))
