@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
 <release>
-  <module>gstreamer</module>
+  <module>gst-plugins</module>
   <module-fancy>GStreamer Plugins</module-fancy>
   <name>There</name>
   <version>0.7.6</version>
