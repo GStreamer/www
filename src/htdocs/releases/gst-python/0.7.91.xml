@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python</module-fancy>
+  <name>What is your nationality? I'm a drunkard.</name>
+  <version>0.7.91</version>
+
+  <intro>
+<p>
+This is the 0.7.91 release of the GStreamer Python bindings. It should be used with
+the 0.8.x series of GStreamer, GStreamer Plugins.
+</p>
+<p>
+This release mainly fixes build issues
+</p>
+  <maintainers>
+    <person>Johan Dahlin</person>
+    <person>David Lehn</person>
+  </maintainers>
+</release>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
 <release>
-  <module>gst-player</module>
+  <module>gst-python</module>
   <module-fancy>GStreamer Python</module-fancy>
   <name>Here's looking at you, kid</name>
   <version>0.7.90</version>
