@@ -67,6 +67,49 @@ If you're not sure if your idea would work, just hop on the <A
 HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel</A>
 mailing list and ask us, we'll be glad to discuss it with you!</p>
 
+<h1>Third party applications</h1>
+<p>The following are a list of third party applications written using GStreamer.If you have an app that uses GStreamer that is not listed here, please hop on the <A HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel</A> list and ask for it to be added.
+</p>
+
+<h2>acast</h2>
+<p><a href="http://zaheer.merali.org/mediawiki/index.php/Acast">acast</a> is a program for webcasting audio from your sound device to a variety of different streaming servers and has GTK+2 and console interfaces.
+</p>
+
+<h2>amaroK</h2>
+<p><a href="http://amarok.kde.org/">amaroK</a> is an audio player for KDE.
+</p>
+
+<h2>The Dave/Dina Project</h2>
+<p><a href="http://www.davedina.org/content/">The Dave/Dina Project</a> is a set-top box distribution for playing and recording TV and multimedia and much more.
+</p>
+
+<h2>GNOME</h2>
+<p><a href="http://www.gnome.org/">GNOME</a> uses GStreamer for the volume control, sound recorder, cd player, video and audio thumnailers.
+</p>
+
+<h2>JuK</h2>
+<p><a href="http://developer.kde.org/~wheeler/juk.html">JuK</a> is an audio jukebox for KDE.
+</p>
+
+<h2>marlin</h2>
+<p><a href="http://marlin.sourceforge.net/">marlin</a> is a sample editor for Gnome.
+</p>
+
+<h2>Muine</h2>
+<p><a href="http://muine.gooeylinux.org/">Muine</a> is a music player for GNOME.
+</p>
+
+<h2>Totem</h2>
+<p><a href="http://hadess.net/totem.php3">Totem</a> is a movie player for the GNOME desktop.
+</p>
+
+<h2>Rhythmbox</h2>
+<p><a href="http://www.rhythmbox.org/">Rhythmbox</a> is an integrated music management application, originally inspired by Apple's iTunes.
+</p>
+
+<h2>Sound Juicer</h2>
+<p><a href="http://www.burtonini.com/blog/computers/sound-juicer">Sound Juicer</a> is a clean, mean, and lean CD ripper for GNOME.
+</p>
 
   </body>
 </page>
