@@ -1461,8 +1461,8 @@ release of Pitivi, a non-linear video editor using the GStreamer framework. Be
 sure to check out this first release of what is destined to be the best NLE the
 world has ever seen :).
 </p>
-    </content>
-  </item>
+   </content>
+   </item>
 
   <item>
     <date>2004-12-23 13:01</date>
@@ -1520,4 +1520,14 @@ or download the
 </p>
     </content>
   </item>
+  <item>
+<date>2005-01-14 13:40</date>
+    <title>Gst-player officially unmaintained and deprecated</title>
+    <content>
+<p>
+The Gst-player have been part of GStreamer almost from day one, but only been maintained at irregular intervals. Currently it is quite broken in many cases and we have due to this decided to official remove it from the project as there today are better alternatives. This means all references to the player have been removed and the bugzilla entry will also be cut. If you are looking for a GTK+ based video player using GStreamer we recommend <a href="http://www.hadess.net/totem.php3">Totem</a>.
+</p>
+   </content>
+   </item>
+
 </news>
