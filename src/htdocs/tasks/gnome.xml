@@ -48,7 +48,7 @@
   	The new gst-mixer - GNOME Volume control - in GNOME media needs to be accessible.</description>
   
       <why>
-  	The new GStreamer based mixer is a big step formward in many ways to the old one, but we really need to make sure the UI doesn't regress in regards to accessiblity. The old mixer code is still in CVS and should provide a good example on how to do it. A great task for someone who wants to learn the basics of implementing accessibility.
+  	The new GStreamer based mixer is a big step forward in many ways to the old one, but we really need to make sure the UI doesn't regress in regards to accessiblity. The old mixer code is still in CVS and should provide a good example on how to do it. A great task for someone who wants to learn the basics of implementing accessibility.
       </why>
   
       <how>
@@ -193,7 +193,7 @@
     </task>
    
    <task name="mediacaching">
-      <title>Design and implemente media info caching</title>
+      <title>Design and implement media info caching</title>
       <description>
   	We want a system similar to the image thumbnail standard on freedesktop.org for caching metadata. That way every application do not need to cache this for themselves.
   	</description>

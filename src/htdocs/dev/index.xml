@@ -58,11 +58,11 @@ cvs -z3 -d:ext:developername@cvs.freedesktop.org:/cvs/gstreamer co modulename
 <br/>
 NOTE: UNIX file and directory names are case sensitive. The path to the project CVSROOT must be specified using lowercase characters (i.e. /cvsroot/gstreamer)
 <br/>
-Local CVS policies and a list of tags and branches is <A
-HREF="cvs.php">also available</A>.
+<!-- Local CVS policies and a list of tags and branches is <A
+HREF="cvs.php">also available</A>. -->
 <br/>
 Developers will be added to the project for write access as necessary.  For all
-other changes, please contact the <A HREF="../contact/lists.php">gstreamer-devellist</A> with a patch (<code>cvs diff -u</code>).</p>
+other changes, please contact the <A HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel list</A> with a patch (<code>cvs diff -u</code>).</p>
 
 <H1>Language Bindings</H1>
                                                                                 

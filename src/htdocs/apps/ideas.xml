@@ -15,9 +15,9 @@
 <ul>
 <li>
 <B>Audio mixing environment:</B>
-<a href="&site;/data/images/apps/ideas/mixer.png">
+<!-- <a href="&site;/data/images/apps/ideas/mixer.png">
 <img align="right" alt="mixer diagram"
-     src="&site;/data/images/apps/ideas/mixer-small.png"/></a>
+     src="&site;/data/images/apps/ideas/mixer-small.png"/></a> -->
 <p>
 Complex audio environments require a high degree of repluggability.  
 This is usually done with racks of equipment and lots of cables, with a 
