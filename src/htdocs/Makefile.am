@@ -14,6 +14,8 @@ htaccess = \
 	tasks/.htaccess
 
 
+index.html: $(srcdir)/news/news.xml
+
 media pkg src:
 	ln -sf ../data/$@ .
 data:
