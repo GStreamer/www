@@ -41,12 +41,18 @@ entities = \
 	cp $< $@
 %.css: $(top_srcdir)/copy/%.css
 	cp $< $@
+# copy .htaccess preserving hierarchy
+# set htaccess in htdocs/ Makefile.am to get these in
+%/.htaccess: $(top_srcdir)/copy/$@
+	cp $</$@ $@
+
 
 # create new variables to use in automake targets so automake
 # doesn't complain when these variables are emtpy
 am_pages = $(if $(built_pages), $(built_pages), )
 am_images = $(if $(images), $(images), )
 am_css = $(if $(css), $(css), )
+am_htaccess = $(if $(htaccess), $(htaccess), )
 
-noinst_DATA = $(am_pages) $(am_images) $(am_css)
-CLEANFILES = $(am_pages)
+noinst_DATA = $(am_pages) $(am_images) $(am_css) $(am_htaccess)
+CLEANFILES = $(noinst_DATA)
