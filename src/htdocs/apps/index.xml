@@ -54,10 +54,8 @@ in any format supported by GStreamer.
 </p>
 
 
-<h2>Video Whale</h2>
-<p>Making a
-<a href="videowhale.html">Video Whale</a> video wall with GStreamer is easy,
-this article with pictures from Zeeshan Ali shows you how.
+<h2>Video-Whale</h2>
+<p><a href="videowhale.html">Video-Whale</a> is an implementation of a Gstreamer-based video-wall. Making a video wall with GStreamer is easy, this article with pictures from Zeeshan Ali shows you how.
 </p>
 
 <h1>Application ideas</h1>
