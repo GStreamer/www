@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python</module-fancy>
+  <name>I stick my neck out for nobody</name>
+  <version>0.7.92</version>
+
+  <intro>
+<p>
+This is the 0.7.92 release of the GStreamer Python bindings.
+It should be used with the 0.8.x series of GStreamer and GStreamer Plugins.
+</p>
+<p>
+This release adds an automated testsuite and some examples as well as
+improved coverage and bug fixes.
+</p>
+  </intro>
+  <features>
+    <feature>automated testsuite</feature>
+    <feature>new video player example</feature>
+    <feature>GstBuffer wrapping</feature>
+  </features>
+  <maintainers>
+    <person>Johan Dahlin</person>
+    <person>David Lehn</person>
+  </maintainers>
+</release>
