@@ -34,8 +34,9 @@ GStreamer.
 
   <DT>Gentoo</DT>
   <DD>The ebuilds for <A href="http://www.gentoo.org">Gentoo</A> linux are available in portage.</DD>
-  <DD>In case there are problems or questions, visit <A href="irc://irc.freenode.net/gstreamer">the GStreamer irc channel</A>
-     and look for Foser or Zaheerm.
+  <DD>In the case of problems or questions, check the <A href="http://forums.gentoo.org">Gentoo forums</A>.
+    Alternatively you can try <A href="irc://irc.freenode.net/gstreamer">the GStreamer irc channel</A>
+    and look for Foser or Zaheerm.
   </DD>
 
   <DT>Source</DT>

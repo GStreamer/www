@@ -1,5 +1,10 @@
 2005-03-26  Stefan Kost  <ensonic@users.sf.net>
 
+	* src/htdocs/download/index.xml:
+    people should try gentoo forums first before comming to gst-irc
+
+2005-03-26  Stefan Kost  <ensonic@users.sf.net>
+
 	* src/htdocs/bindings/bindings.xsl:
 	* src/htdocs/bugs/bugs.xsl:
     another litle finetuning of the tables
