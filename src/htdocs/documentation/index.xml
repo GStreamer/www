@@ -69,12 +69,10 @@
  <td colspan="3"><a href="&site;/data/doc/gstreamer/stable/gstreamer-libs/html/">HTML</a></td>
 </tr>
 </table>
-<!--
 <h2>GStreamer licensing advisory</h2>
 <p>The GStreamer community provides the following licensing advisory for developers planing on or already using GStreamer for their applications:</p>
 <p>
 <a href="&site;documentation/licensing.html">GStreamer Licensing Advisory</a>
 </p>
--->
   </body>
 </page>
