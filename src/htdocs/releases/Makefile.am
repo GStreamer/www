@@ -1,1 +1,1 @@
-SUBDIRS = gstreamer gst-player gst-plugins
+SUBDIRS = gstreamer gst-ffmpeg gst-player gst-plugins
