@@ -1138,5 +1138,17 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2004-07-18 00:00</date>
+    <title>Planet GStreamer Launched</title>
+    <content>
+<p>
+Now you can read the daily ramblings and mindless weblog dribble from the <a href="&site;">GStreamer</a> team at <a href="&site;/planet/">Planet GStreamer</a>!
+</p>
+<p>
+If <a href="&site;/planet/">PG</a> is too much braindump for you, we also now offer a <a href="&site;/news/rss-1.0.xml">GStreamer News RSS 1.0 feed</a> for your pleasure.
+</p>
+    </content>
+  </item>
 
 </news>

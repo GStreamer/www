@@ -1,5 +1,16 @@
 2004-07-18  David I. Lehn <dlehn@users.sourceforge.net>
 
+	* bin/planet-update:
+	  Add Planet GStreamer update script
+	* src/configure.in:
+	* src/htdocs/Makefile.am:
+	  Planet GStreamer dir creation
+	* src/htdocs/header.xml:
+	* src/htdocs/news/news.xml:
+	  Add Planet GStreamer to site
+
+2004-07-18  David I. Lehn <dlehn@users.sourceforge.net>
+
 	* src/htdocs/news/news2rss-1.0.xsl:
 	  Attempt to fix rss feed escaping
 
