@@ -29,7 +29,7 @@ Most people need at least gstreamer and gst-plugins to do anything useful.
 <p>
 Here's a quick overview of all of our modules :
                                                                                 
-<table width="100%" border="1">
+<table width="95%" border="1" cellspacing="0" cellpadding="2">
 <tr>
   <th>module</th>
   <th>description</th>
@@ -52,6 +52,7 @@ Here's a quick overview of all of our modules :
           &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/stable" />.html</xsl:with-param>
         <xsl:with-param name="text"><xsl:value-of select="versions/stable" /></xsl:with-param>
           </xsl:call-template>
+      &#160;
   </td>
   <td>
       <xsl:call-template name="hyperlink">
@@ -59,6 +60,7 @@ Here's a quick overview of all of our modules :
           &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/devel" />.html</xsl:with-param>
         <xsl:with-param name="text"><xsl:value-of select="versions/devel" /></xsl:with-param>
           </xsl:call-template>
+      &#160;
   </td>
 </tr>
  

@@ -1,3 +1,13 @@
+2005-03-26  Stefan Kost  <ensonic@users.sf.net>
+
+	* TODO:
+    little update
+	* src/htdocs/download/index.xml:
+    added gentoo as a distribution with good gstreamer support
+	* src/htdocs/documentation/index.xml:
+	* src/htdocs/modules/modules.xsl:
+    a litle finetuning of the tables on modules and docu-pages
+
 2005-03-11  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
 
 	* src/htdocs/news/news.xml:

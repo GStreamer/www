@@ -32,6 +32,12 @@ GStreamer.
    (gstreamer core and plugins + rhythmbox).</DD>
   <DD>    echo "deb http://pkg-gnome.alioth.debian.org/debian/ experimental main" &gt;&gt; /etc/apt/sources.list &amp;&amp; apt-get update</DD>
 
+  <DT>Gentoo</DT>
+  <DD>The ebuilds for <A href="http://www.gentoo.org">Gentoo</A> linux are available in portage.</DD>
+  <DD>In case there are problems or questions, visit <A href="irc://irc.freenode.net/gstreamer">the GStreamer irc channel</A>
+     and look for Foser or Zaheerm.
+  </DD>
+
   <DT>Source</DT>
   <DD>Check our <A href="&site;/modules/">modules</A> page, or
     go straight to our <A href="&site;/src/">source download directory</A>.</DD>
