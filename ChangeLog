@@ -1,3 +1,12 @@
+2004-12-23  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/bugs/bugs.xml:
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gstreamer/0.8.8.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	  new core release
+
 2004-12-21  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/download/fedora.xml:

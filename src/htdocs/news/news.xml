@@ -1420,34 +1420,83 @@ or download the
     </content>
   </item>
 
-<item>
-<date>2004-12-06 12:00</date>
+  <item>
+    <date>2004-12-23 13:01</date>
+    <title>GStreamer 0.8.8 "I'll Take Care Of You" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of the
+GStreamer 0.8.x series.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gstreamer/0.8.8.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.8.8.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.8.8.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
+  <item>
+    <date>2004-12-06 12:00</date>
     <title>Fluendo announces sponsorship of Xiph.org for Vorbis and Theora
 RTP support</title>
     <content>
 <p>
-Fluendo have done two press relases of interest to the GStreamer community recently. The first announced the offical launch of the Flumotion open source project and <a href="http://www.flumotion.net">website</a>. The second press release is about how we are sponsoring Xiph.org to implement specifications for Vorbis and Theora over RTP. You find this <a href="http://www.fluendo.com/press/releases/PR-2004-03.html">press release here</a>.
+Fluendo have done two press relases of interest to the GStreamer community
+recently. The first announced the offical launch of the Flumotion open source
+project and <a href="http://www.flumotion.net">website</a>. The second press
+release is about how we are sponsoring Xiph.org to implement specifications for
+Vorbis and Theora over RTP. You find this <a
+href="http://www.fluendo.com/press/releases/PR-2004-03.html">press release
+here</a>.
 </p>
-   </content>
-   </item>
+    </content>
+  </item>
 
-   <item>
-<date>2004-12-08 12:00</date>
+  <item>
+    <date>2004-12-08 12:00</date>
     <title>Interview on OSNEWS with amaroK developers</title>
     <content>
 <p>
-amaroK developers Mark, Max and Leinir are being <a href="http://www.osnews.com/story.php?news_id=9105">interviewed on osnews</a> about their music player amaroK, GStreamer and multimedia in general. Be sure to check it out.
+amaroK developers Mark, Max and Leinir are being <a
+href="http://www.osnews.com/story.php?news_id=9105">interviewed on osnews</a>
+about their music player amaroK, GStreamer and multimedia in general. Be sure
+to check it out.
 </p>
-   </content>
-   </item>
-    <item>
-<date>2004-12-20 12:00</date>
+    </content>
+  </item>
+
+  <item>
+    <date>2004-12-20 12:00</date>
     <title>First release of Pitivi Non-linear editor</title>
     <content>
 <p>
-The <a href="http://www.pitivi.org">Pitivi</a> team proudly announced the first release of Pitivi, a non-linear video editor using the GStreamer framework. Be sure to check out this first release of what is destined to be the best NLE the world has ever seen :).
+The <a href="http://www.pitivi.org">Pitivi</a> team proudly announced the first
+release of Pitivi, a non-linear video editor using the GStreamer framework. Be
+sure to check out this first release of what is destined to be the best NLE the
+world has ever seen :).
 </p>
-   </content>
-   </item>
+    </content>
+  </item>
+
+  <item>
+    <date>2004-12-23 13:01</date>
+    <title>GStreamer 0.8.8 "I'll Take Care Of You" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of the
+GStreamer 0.8.x series.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gstreamer/0.8.8.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.8.8.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.8.8.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
 
 </news>
