@@ -8,7 +8,7 @@
     <codes>
   
       <code name="acme">
-        <description>acme</description>
+        <description>acme (now merged in gnome control-center since 2.6)</description>
         <cvs>GNOME CVS</cvs>
         <path>acme</path>
       </code>
