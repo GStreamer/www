@@ -198,7 +198,7 @@ GStreamer has bindings for Python.
     </description>
     <maintainer>David Lehn</maintainer>
     <versions>
-      <stable>0.1.0</stable>
+<!--      <stable>0.1.0</stable> -->
       <devel>0.7.91</devel>
     </versions>
   </module>
