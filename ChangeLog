@@ -1,5 +1,12 @@
 2004-07-16  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/htdocs/modules/modules.xml:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	  releasing
+
+2004-07-16  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/bugs/bugs.xsl:
 	  add blocker bugs
 	* src/htdocs/news/news.xml:

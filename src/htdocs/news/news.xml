@@ -1120,4 +1120,23 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2004-07-16 13:29</date>
+    <title>GStreamer FFmpeg 0.8.1 "Just Another Victim" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce another stable release of the
+GStreamer FFmpeg 0.8.x series.
+</p>
+<p>
+Check out the
+<a href="&site;/releases/gst-ffmpeg/0.8.1.html">release notes</a>
+or download the
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.8.1.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.8.1.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
+
 </news>

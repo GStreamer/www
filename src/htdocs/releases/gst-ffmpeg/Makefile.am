@@ -1,5 +1,7 @@
-built_pages = 0.7.1.html 0.7.1 \
-	0.8.0.html 0.8.0
+built_pages = \
+	0.8.1.html 0.8.1 \
+	0.8.0.html 0.8.0 \
+	0.7.1.html 0.7.1
 
 style = ../releases.xsl
 
