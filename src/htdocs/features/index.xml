@@ -24,7 +24,7 @@ structures</li>
 plugin and application developers</li>
 <li>Extremely lightweight data passing means very high performance/low latency</li>
 <li>Complete
-<a href="&site;/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html">
+<a href="&site;/data/doc/gstreamer/head/gstreamer/html/gstreamer-gstinfo.html">
 debugging system</a>
 for both core and plugin/app developers</li>
 <li>Clocking to ensure global inter-stream synchronization</li>
@@ -33,7 +33,7 @@ for both core and plugin/app developers</li>
 <h2>Intelligent Plugin Architecture</h2>
 <ul>
 <li>
-<a href="&site;/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstPlugin.html">
+<a href="&site;/data/doc/gstreamer/head/gstreamer/html/gstreamer-gstplugin.html">
 Dynamically loaded</a>
 plugins provide elements and media types, demand-loaded via an XML registry,
 similar to ld.so.cache</li>
