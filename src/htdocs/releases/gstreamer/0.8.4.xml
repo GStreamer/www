@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Paella</name>
+  <version>0.8.4</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release
+in the 0.8.x stable series of the GStreamer streaming-media framework.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
+</p>
+<p>
+This module only contains core functionality.  For actual media playback,
+you will need other modules.  GStreamer Plugins contains a huge set of
+additional plugins.  GStreamer FFmpeg contains a plugin based on the popular
+FFmpeg decoding library.  These modules need not have the same source version
+as the core, as long as they are in the 0.8.x series.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+    <feature>New Translation: Czech (cs), Miloslav Trmac</feature>
+    <feature>New Translation: Catalan (ca), Jordi Mallach</feature>
+    <feature>Translations: af, az, cs, en_GB, fr, nl, sr, sv, tr, uk</feature>
+    <feature>gst_init () now behaves like gtk_init ()</feature>
+    <feature>queue fixes</feature>
+    <feature>ongoing win32 build integration</feature>
+    <feature>bytestream now has GstFilePad</feature>
+    <feature>gst-register is now i18n-ized</feature>
+    <feature>GstCaps XML-ization works again</feature>
+    <feature>Fixed enum GValue</feature>
+    <feature>Added GstFraction GValue</feature>
+  </features>
+
+  <applications>
+<p>
+Applications already ported to use GStreamer 0.8.x include the GNOME
+desktop components like gnome-media and nautilus-media, as well as other
+GNOME applications including sound-juicer, totem and RhythmBox.
+</p>
+  </applications>
+
+  <issues>
+    <issue>Some applications may print warnings on the console saying
+something like:
+ GStreamer-WARNING **: pad xvimagesink0:sink returned caps that are not a
+real subset of its template caps.
+
+It is safe to ignore this warning.  It will be fixed in the next release
+of the GStreamer Plugins.
+    </issue>
+  </issues>
+
+  <contributors>
+    <person>Andy Wingo</person>
+    <person>Benjamin Otte</person>
+    <person>Daniel Gazard</person>
+    <person>David Moore</person>
+    <person>David Schleef</person>
+    <person>Jan Schmidt</person>
+    <person>Joe Marcus Clarke</person>
+    <person>Johan Dahlin</person>
+    <person>Miloslav Trmac</person>
+    <person>Ronald Bultje</person>
+    <person>Sebastien Cote</person>
+    <person>Steve Lhomme</person>
+    <person>Thomas Vander Stichele</person>
+    <person>Wim Taymans</person>
+    <person>Zaheer Abbas Merali</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>109831</id>
+      <summary>clocks aren't refcounted properly</summary>
+    </bug>
+    <bug>
+      <id>123774</id>
+      <summary>state change on bin should set same state change on all c...</summary>
+    </bug>
+    <bug>
+      <id>134663</id>
+      <summary>failed assertion at end of movie in totem</summary>
+    </bug>
+    <bug>
+      <id>137863</id>
+      <summary>CPU/Memory leak when using spider decoder</summary>
+    </bug>
+    <bug>
+      <id>140219</id>
+      <summary>no man page for gst-xmlinspect</summary>
+    </bug>
+    <bug>
+      <id>141378</id>
+      <summary>gstreamer crashes during initialization due to a recent c...</summary>
+    </bug>
+    <bug>
+      <id>141692</id>
+      <summary>gst_init() type function that ignores arguments it doesn'...</summary>
+    </bug>
+    <bug>
+      <id>142418</id>
+      <summary>Win32 Debug build should not be the same as the Release one</summary>
+    </bug>
+    <bug>
+      <id>142422</id>
+      <summary>Win32 Build documentation missing</summary>
+    </bug>
+    <bug>
+      <id>142795</id>
+      <summary>[PATCH] Memory leak in queue element</summary>
+    </bug>
+    <bug>
+      <id>142813</id>
+      <summary>[PATCH] Deadlock in optimal scheduler</summary>
+    </bug>
+    <bug>
+      <id>142850</id>
+      <summary>GST-Register didn't find any plugins</summary>
+    </bug>
+    <bug>
+      <id>142903</id>
+      <summary>[PATCH] fdsrc element never resets buffer offset to zero</summary>
+    </bug>
+    <bug>
+      <id>143741</id>
+      <summary>cross compiling issue</summary>
+    </bug>
+    <bug>
+      <id>143777</id>
+      <summary>[opt] problem after removing some elemnts and putting the...</summary>
+    </bug>
+    <bug>
+      <id>143953</id>
+      <summary>Crash cause by gst_data_is_writable + audioconvert</summary>
+    </bug>
+    <bug>
+      <id>144185</id>
+      <summary>Double-free memory</summary>
+    </bug>
+    <bug>
+      <id>145137</id>
+      <summary>patch to make GstCaps XML functions actually do something</summary>
+    </bug>
+    <bug>
+      <id>145338</id>
+      <summary>[PATCH] Fix a bus error in the optimal scheduler</summary>
+    </bug>
+    <bug>
+      <id>145391</id>
+      <summary>gstvalue.c: ref klasses instead of peek</summary>
+    </bug>
+    <bug>
+      <id>145520</id>
+      <summary>registry rebuilds too easily</summary>
+    </bug>
+    <bug>
+      <id>147707</id>
+      <summary>FreeBSD dosn't have strndup</summary>
+    </bug>
+    <bug>
+      <id>147713</id>
+      <summary>opt scheduler resorts the chain incorrectly</summary>
+    </bug>
+    <bug>
+      <id>147819</id>
+      <summary>[PATCH] Add some checks in the opt scheduler</summary>
+    </bug>
+    <bug>
+      <id>147894</id>
+      <summary>opt scheduler decoupled elements mismanagement</summary>
+    </bug>
+    <bug>
+      <id>147929</id>
+      <summary>[PATCH] running gst-register in non-utf8 locale can cause...</summary>
+    </bug>
+  </bugs>
+
+</release>

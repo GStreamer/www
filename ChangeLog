@@ -1,3 +1,9 @@
+2004-07-20  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/releases/gstreamer/0.8.4.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	  release notes
+
 2004-07-18  David I. Lehn <dlehn@users.sourceforge.net>
 
 	* src/htdocs/news/news2rss-1.0.xsl:
