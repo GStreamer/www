@@ -1,15 +1,6 @@
+dnl on commits of this file autogen.sh will be rerun online
 AC_INIT
 AM_INIT_AUTOMAKE(gstreamer-www, 0.0)
-
-AC_ARG_WITH(http_prefix, [  --with-http-prefix=DISTRIBUTOR  Specify http prefix for local testing, such as http://localhost/~user/gnomesites/])
-
-if test "x$with_http_prefix" != x ; then
-	HTTP_PREFIX=$with_http_prefix
-else
-	HTTP_PREFIX=http:/
-fi
-
-AC_SUBST(HTTP_PREFIX)
 
 AC_OUTPUT([
 Makefile
