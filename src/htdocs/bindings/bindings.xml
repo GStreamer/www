@@ -30,8 +30,7 @@
   <binding>
     <id>dotnet</id>
     <name>.NET</name>
-    <status>These bindings are part of the Gtk# module of
-<a href="http://www.go-mono.com/anoncvs.html">Mono's CVS tree</a> and not yet released.
+    <status>These bindings are still under development and not yet released.
     </status>
 <body>
 <p>The GStreamer bindings for the .NET framework, known as Gst#
