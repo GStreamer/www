@@ -1,5 +1,4 @@
 dnl on commits of this file autogen.sh will be rerun online
-dnl I hope
 AC_INIT
 AM_INIT_AUTOMAKE(gstreamer-www, 0.0)
 
