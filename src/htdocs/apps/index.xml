@@ -36,6 +36,9 @@
 <h2>amaroK</h2>
 <p><a href="http://amarok.kde.org/">amaroK</a> is an audio player for KDE.</p>
 
+<h2>Buzztard</h2>
+<p><a href="http://buzztard.org/index.php/Overview">Buzztard</a> is music application similar to Buzz or FastTracker.</p>
+
 <h2>Cupid</h2>
 <p>
 <a href="http://ronald.bitfreak.net/me/cupid.php">A GStreamer video Recorder</a>,
@@ -75,6 +78,9 @@ in any format supported by GStreamer.</p>
 
 <h2>Muine</h2>
 <p><a href="http://muine.gooeylinux.org/">Muine</a> is a music player for GNOME.</p>
+
+<h2>Navys</h2>
+<p><a href="http://www.navsys.org">Navsys</a> is a GPS map application and music player in one. Music player is using GStreamer.</p>
 
 <h2>Pakt</h2>
 <p><a href="http://subsignal.org/pakt/">Pakt</a> is a XML abstraction for GObjects used 
