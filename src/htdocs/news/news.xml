@@ -1255,4 +1255,40 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2004-10-06 19:01</date>
+    <title>GStreamer Plugins 0.8.5 "Take You On" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release
+of the GStreamer Plugins 0.8.x series.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gst-plugins/0.8.5.html">release notes</a>
+or download the
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.5.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.5.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
+  <item>
+    <date>2004-10-06 19:05</date>
+    <title>GStreamer 0.8.7 "A Cruise" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of the
+GStreamer 0.8.x series.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gstreamer/0.8.7.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.8.7.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.8.7.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
 </news>
