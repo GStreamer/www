@@ -269,7 +269,7 @@ icecast server. <b>Update</b> here's an <A href="http://gstreamer.freedesktop.or
 
   <item>  <date>2001-12-12 15:43</date>
   
-    <content>After nearly six months of development, the GStreamer team is extremely pleased to announce version 0.3.0. Links to source tarballs and binary packages can be found <A href="#DEAD-LINK-/releases/0.3.0/">here</A>; you might want to read the <A href="#DEAD-LINK-/releases/0.3.0/notice.php">release notes</A> while you're waiting for it to download.
+    <content>After nearly six months of development, the GStreamer team is extremely pleased to announce version 0.3.0. Links to source tarballs and binary packages can be found <A href="#DEAD-LINK-http://www.gstreamer.net/releases/0.3.0/">here</A>; you might want to read the <A href="#DEAD-LINK-/releases/0.3.0/notice.php">release notes</A> while you're waiting for it to download.
     </content>
     <title>GStreamer 0.3.0 "Most Eventful Ever" Released</title>
   </item>
@@ -285,7 +285,7 @@ icecast server. <b>Update</b> here's an <A href="http://gstreamer.freedesktop.or
 
   <item>  <date>2002-01-13 17:34</date>
   
-    <content>Thanks to the work of David Lehn, we now have Debian packages available for the recent 0.3.1 release. See the <A href="http://gstreamer.net/releases/debian/README">README</A> for more details.
+    <content>Thanks to the work of David Lehn, we now have Debian packages available for the recent 0.3.1 release. See the <A href="#DEAD-LINK-http://www.gstreamer.net/releases/debian/README">README</A> for more details.
     </content>
     <title>Debian Packages for 0.3.1 Now Available</title>
   </item>
@@ -293,7 +293,7 @@ icecast server. <b>Update</b> here's an <A href="http://gstreamer.freedesktop.or
 
   <item>  <date>2002-02-02 10:27</date>
   
-    <content>The GStreamer team is proud to announce GStreamer 0.3.2 'Do-B-day'. Lots of fixes and improvements in this release so make sure to read the full release notes at <A HREF="http://www.gstreamer.net/releases/0.3.2/">http://www.gstreamer.net/releases/0.3.2/</A>
+    <content>The GStreamer team is proud to announce GStreamer 0.3.2 'Do-B-day'. Lots of fixes and improvements in this release so make sure to read the full release notes at <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.3.2/">http://www.gstreamer.net/releases/0.3.2/</A>
 <b>Update</b> Since most developers were using glib-2.0 during QA for the last release, the gtk+-1.2 part got a bit overlooked. If you can't fix the compile errors yourself, either build against glib-2.0 or go back to 0.3.1. Onward!
     </content>
     <title>GStreamer 0.3.2 Available</title>
@@ -663,7 +663,7 @@ release page</A> to find out where to get the goods.
   <item>  <date>2003-06-09 16:43</date>
   
     <content>This new release on the stable branch features a lot of bugfixes.
-<A href="#DEAD-LINK-http://gstreamer.net/releases/0.6.2">Read the release notice and start downloading</A>.
+<A href="#DEAD-LINK-http://www.gstreamer.net/releases/0.6.2">Read the release notice and start downloading</A>.
     </content>
     <title>GStreamer 0.6.2 "Wild Rover" is OUT</title>
   </item>
@@ -671,7 +671,7 @@ release page</A> to find out where to get the goods.
 
   <item>  <date>2003-08-27 12:05</date>
   
-    <content>A new smashing release of the GStreamer stable branch is out fixing the bugs you have reported in regards to Rhythmbox and Sound Juicer. Get it while its hot at <A HREF="#DEAD-LINK-http://gstreamer.net/releases/0.6.3/">the 0.6.3 release page</A>. Make also sure to read our <A HREF="#DEAD-LINK-http://gstreamer.net/releases/0.6.3/notice.php">release notes</A>.
+    <content>A new smashing release of the GStreamer stable branch is out fixing the bugs you have reported in regards to Rhythmbox and Sound Juicer. Get it while its hot at <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.6.3/">the 0.6.3 release page</A>. Make also sure to read our <A HREF="#DEAD-LINK-http://www.gstreamer.net/releases/0.6.3/notice.php">release notes</A>.
     </content>
     <title>GStreamer 0.6.3 available</title>
   </item>
