@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>EOS</name>
+  <version>0.6.5</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release in the
+ABI-stable 0.6.x series.
+</p>
+<p>
+This release is a service release, fixing some small outstanding issues
+and using the same code for the unversioned binaries so that parallel
+installability of the 0.6.x with future series is fixed.
+</p>
+  </intro>
+  <features>
+    <feature>Provides versioned and unversioned binaries</feature>
+    <feature>Documentation fixes</feature>
+  </features>
+
+</release>
