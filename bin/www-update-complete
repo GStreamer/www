@@ -4,8 +4,8 @@
 
 cd /home/projects/gstreamer/www
 umask 0002
-chown -R :gstreamer *
-chmod -R g+w *
+chown -R :gstreamer * 2> /dev/null
+chmod -R g+w * 2> /dev/null
 cvs update -dP
 src/autogen.sh
 make clean
