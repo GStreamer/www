@@ -1392,5 +1392,13 @@ or download the
 </p>
     </content>
   </item>
-
+  <item>
+    <date>2004-11-29 09:40</date>
+    <title>Amarok 1.2-beta 1 released</title>
+    <content>
+<p>
+The amaroK team has <a href="http://amarok.kde.org/content/view/31/2/">announced</a> their 1.2 beta 1 release. The release features such goodies as a 10-band graphical equalizer for GStreamer and Vorbis stream metadata support.
+</p>
+   </content>
+   </item>
 </news>
