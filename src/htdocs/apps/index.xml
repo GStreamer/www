@@ -26,12 +26,12 @@
 </p>
 -->
 
-<h1>our GStreamer applications</h1>
+<h1>Our GStreamer applications</h1>
 
 <h2>GStreamer Player</h2>
 <p>
 One well-featured example shipped with GStreamer is the 
-<a href="gst-player/">GStreamer Player</a>,
+<a href="&site;/modules/gst-player.html">GStreamer Player</a>,
 a simple, but functional, media player that
  supports any media type for which plugins exist. 
 </p>
@@ -40,14 +40,15 @@ a simple, but functional, media player that
 <p>
  We also include a graphical pipeline contruction interface similar in
  goals to GLAME called 
-<a href="gst-editor/">GStreamer Editor</a>.
+<a href="&site;/modules/gst-editor.html">GStreamer Editor</a>.
  It was recently rewritten from the ground up and ported to GTK+ 2.
 </p>
 
 <h2>GStreamer Recorder</h2>
 <p>
 Our third in-house project is
-<a href="gst-recorder/">GStreamer Recorder</a>, which is currently under
+<a href="&site;/modules/gst-recorder.html">GStreamer Recorder</a>,
+which is currently under
 development and will be able to record perfectly synchronized audio/video
 in any format supported by GStreamer. 
 </p>
@@ -60,63 +61,13 @@ in any format supported by GStreamer.
 </p>
 
 <h1>Application ideas</h1>
-
-<ul>
-<li>
-<B>Audio mixing environment:</B>
-<a href="../images/mixer.png"><img align="right" src="../images/mixer-small.png"/></a>
-<p>Complex audio environments require a high degree of repluggability.  
-This is usually done with racks of equipment and lots of cables, with a 
-patch panel if you're lucky.  Instead, GStreamer gives you unlimited 
-access to &quot;hardware&quot;, within the constraints of your CPU.</p>
-
-<p>With access to <a href="http://www.ladspa.org">LADSPA</a> plugins and
-multi-channel sound hardware via the ALSA source and
-sink, complex processing is as easy as drawing your idea mixing system in
-the editor.</p>
-
-<p>Of course, just having the processing half isn't enough, which is why
-significant time and effort will need to be expended in the user interface
-and automation systems.</p>
-</li>
-
-<li><b>DVD player:</b>
-<p>A DVD player is a relatively easy thing to construct given the right 
-components, some of which already exist.  A simple DVD player would look 
-something like this (as much as ASCII graphs look like anything):</p>
-
-<pre>
-                                           |=thread===========|
-                      -------(audio)-------|ac3dec--audiosink |
-|=thread============|/                     |==================|
-| dvdsrc--mpeg2parse|         |=thread============================|
-|===================|-(video)-|mpeg2dec--  |=bin================| |
-                    \         |========| \-|subtitle--videosink | |
-                     \---(subtitle)----|---|====================| |
-                                       |==========================|
-</pre>
-
-<p><a href="gst-player/">gst-player</a> should be 
-capable of constructing the above graph without any outside assistance.  
-Further work is necessary for the system to be capable of navigation, 
-menus, and angles.  Most such components would live outside the pipeline 
-in the DVD player application, but one might conceive of a case where 
-those pieces of code are capable of being autoplugged, reducing the act of 
-watching a DVD to the following command:</p>
-
-<pre>
-gst-player /dev/dvd
-</pre>
-</li>
-
-<li><I><B>Your application here!</B></I></li>
-
-<p>Just about anything you can think to do with media is possible with
-GStreamer. If you're not sure, just hop on the <A
+<p>
+Just about anything you can think to do with media is possible with
+GStreamer.
+You can <A href="ideas.html">see some of our ideas for applications</A>.
+If you're not sure if your idea would work, just hop on the <A
 HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel</A>
 mailing list and ask us, we'll be glad to discuss it with you!</p>
-
-</ul>
 
 
   </body>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: Applications</title>
+  <body>
+
+<h1>Application ideas</h1>
+
+<ul>
+<li>
+<B>Audio mixing environment:</B>
+<a href="&site;/data/images/apps/ideas/mixer.png">
+<img align="right" alt="mixer diagram"
+     src="&site;/data/images/apps/ideas/mixer-small.png"/></a>
+<p>
+Complex audio environments require a high degree of repluggability.  
+This is usually done with racks of equipment and lots of cables, with a 
+patch panel if you're lucky.  Instead, GStreamer gives you unlimited 
+access to &quot;hardware&quot;, within the constraints of your CPU.</p>
+
+<p>With access to <a href="http://www.ladspa.org">LADSPA</a> plugins and
+multi-channel sound hardware via the ALSA source and
+sink, complex processing is as easy as drawing your idea mixing system in
+the editor.</p>
+
+<p>Of course, just having the processing half isn't enough, which is why
+significant time and effort will need to be expended in the user interface
+and automation systems.</p>
+</li>
+
+<li><b>DVD player:</b>
+<p>A DVD player is a relatively easy thing to construct given the right 
+components, some of which already exist.  A simple DVD player would look 
+something like this (as much as ASCII graphs look like anything):</p>
+
+<pre>
+                                           |=thread===========|
+                      -------(audio)-------|ac3dec--audiosink |
+|=thread============|/                     |==================|
+| dvdsrc--mpeg2parse|         |=thread============================|
+|===================|-(video)-|mpeg2dec--  |=bin================| |
+                    \         |========| \-|subtitle--videosink | |
+                     \---(subtitle)----|---|====================| |
+                                       |==========================|
+</pre>
+
+<p><a href="gst-player/">gst-player</a> should be 
+capable of constructing the above graph without any outside assistance.  
+Further work is necessary for the system to be capable of navigation, 
+menus, and angles.  Most such components would live outside the pipeline 
+in the DVD player application, but one might conceive of a case where 
+those pieces of code are capable of being autoplugged, reducing the act of 
+watching a DVD to the following command:</p>
+
+<pre>
+gst-player /dev/dvd
+</pre>
+</li>
+
+<li><I><B>Your application here!</B></I></li>
+</ul>
+
+
+  </body>
+</page>

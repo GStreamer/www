@@ -12,6 +12,7 @@ htdocs/documentation/Makefile
 htdocs/features/Makefile
 htdocs/images/Makefile
 htdocs/lists/Makefile
+htdocs/modules/Makefile
 htdocs/news/Makefile
 htdocs/tasks/Makefile
 ])

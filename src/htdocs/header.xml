@@ -2,9 +2,12 @@
 <!-- all the href's here are relative to & site ; -->
   <menu>
     <item href="/">Home</item>
+
     <item href="/features/">Features</item>
     <item href="/data/doc/gstreamer/head/faq/html/">FAQ</item>
     <item href="/news/">News</item>
+
+    <item href="/modules/">Modules</item>
     <item href="/documentation/">Documentation</item>
     <item href="/apps/">Applications</item>
     <item href="/dev/">Developers</item>
