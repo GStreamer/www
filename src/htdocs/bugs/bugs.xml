@@ -9,44 +9,44 @@
   <module id="gstreamer">
     <component>gstreamer+%28core%29</component>
     <milestones>
-      <milestone>0.6.0</milestone>
-      <milestone>0.6.1</milestone>
-      <milestone>0.6.2</milestone>
-      <milestone>0.6.3</milestone>
-      <milestone>0.6.4</milestone>
-      <milestone>0.7.1</milestone>
-      <milestone>0.7.2</milestone>
-      <milestone>0.7.3</milestone>
-      <milestone>0.7.4</milestone>
       <milestone>HEAD</milestone>
+      <milestone>0.7.4</milestone>
+      <milestone>0.7.3</milestone>
+      <milestone>0.7.2</milestone>
+      <milestone>0.7.1</milestone>
+      <milestone>0.6.4</milestone>
+      <milestone>0.6.3</milestone>
+      <milestone>0.6.2</milestone>
+      <milestone>0.6.1</milestone>
+      <milestone>0.6.0</milestone>
     </milestones>
   </module>
 
   <module id="gst-plugins">
     <component>gst-plugins</component>
     <milestones>
-      <milestone>0.6.0</milestone>
-      <milestone>0.6.1</milestone>
-      <milestone>0.6.2</milestone>
-      <milestone>0.6.3</milestone>
-      <milestone>0.6.4</milestone>
-      <milestone>0.7.1</milestone>
-      <milestone>0.7.2</milestone>
-      <milestone>0.7.3</milestone>
-      <milestone>0.7.4</milestone>
       <milestone>HEAD</milestone>
+      <milestone>0.7.4</milestone>
+      <milestone>0.7.3</milestone>
+      <milestone>0.7.2</milestone>
+      <milestone>0.7.1</milestone>
+      <milestone>0.6.4</milestone>
+      <milestone>0.6.3</milestone>
+      <milestone>0.6.2</milestone>
+      <milestone>0.6.1</milestone>
+      <milestone>0.6.0</milestone>
     </milestones>
   </module>
 
   <module id="gst-player">
     <component>gst-player</component>
     <milestones>
-      <milestone>0.3.3</milestone>
-      <milestone>0.4.0</milestone>
-      <milestone>0.5.2</milestone>
-      <milestone>0.6.x</milestone>
-      <milestone>0.7.1</milestone>
       <milestone>HEAD</milestone>
+      <milestone>0.7.1</milestone>
+      <milestone>0.6.x</milestone>
+      <milestone>0.5.2</milestone>
+      <milestone>0.4.0</milestone>
+      <milestone>0.3.3</milestone>
     </milestones>
   </module>
 
