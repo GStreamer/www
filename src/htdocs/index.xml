@@ -19,10 +19,9 @@
 media-handling components, ranging from simple mp3 playback to complex
 audio (mixing) and video (non-linear editing) processing.  
 <br/>
-Applications can take advantage of
-advances in codec and filter technology transparently.  Developers can add
-new codecs and filters by writing a simple plugin with a clean, generic
-interface.
+Applications can take advantage of advances in codec and filter technology 
+transparently.  Developers can add new codecs and filters by writing a
+simple plugin with a clean, generic interface.
 <br/>
 GStreamer is released under the LGPL.
 </p>
