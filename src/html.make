@@ -37,8 +37,6 @@ $(entities):
 #       my guess is $(fullsources) is only defined for the action, not the
 #       rule, since it's a pattern-dependant variable
 #
-# BUG: somehow it doesn't trigger the $(entities) make rule so we
-#      run make $(entities) manually
 %.html: %.xml $($*_sources) $(fullstyle) $(entities) $(page_style)
 	xsltproc $(fullsources) -o $@
 
