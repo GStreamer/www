@@ -1328,7 +1328,7 @@ or download the
     </content>
   </item>
 
-  <item>
+  <item>    
     <date>2004-11-08 23:57</date>
     <title>gst-editor 0.8.0 "Si Senor!" released</title>
     <content>
@@ -1361,6 +1361,16 @@ or download the
 <a href="&site;/src/gst-python/gst-python-0.8.0.tar.gz">tar.gz</a> or
 <a href="&site;/src/gst-python/gst-python-0.8.0.tar.bz2">tar.bz2</a>archive.
 </p>
+    </content>
+  </item>
+   <item>
+    <date>2004-25-11 11:44</date>
+    <title>Interview with KDE Multimedia hackers Scott Wheeler</title>
+    <content>
+     <p>
+OpenForBusiness interviews Scott Wheeler maintainer of the JuK media player
+and KDE multimedia hacker. Topics includes among other things JuK and of course usage of GStreamer in KDE.
+     </p>
     </content>
   </item>
 
