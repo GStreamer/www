@@ -1,5 +1,12 @@
 2004-07-20  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	reviewed by: <delete if not using a buddy>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+
+2004-07-20  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/releases/gstreamer/0.8.4.xml:
 	* src/htdocs/releases/gstreamer/Makefile.am:
 	  release notes
