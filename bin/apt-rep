@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# update redhat/fedora apt repositories
+# run this from the toplevel www directory that contains data/
+# specify
+# - nothing to rebuild all
+# - a directory containing *RPMS.* dirs to rebuild for that dir
+# the argument is treated as an argument to find, so all dirs in the tree
+# below your argument will trigger a regeneration
+
+TMPDIR=`mktemp -d`
+BASEDIR=data/pkg
+
+if test ! -d $BASEDIR;
+then
+  echo "Please run this script from the www directory, containing $BASEDIR"
+  exit 1
+fi
+
+if test  ! -z $1; then BASEDIR=$1; fi
+cd $BASEDIR
+
+DIRS=`find . -type d -name "*RPMS.*"`;
+
+for dir in $DIRS;
+do
+  echo -n -e "0000/0000 Generating repository for $dir\r"
+  # if base does not exist one level deep, create it
+  if test ! -d $dir/../base; then mkdir $dir/../base; fi
+  DIR=`dirname $dir`
+  EXT=`echo $dir | sed "s@^.*\.@@"`
+  TYPE=`echo $dir | sed "s@^.*/@@" | sed "s@\..*@@"`
+
+  # RPMS
+  if test "x$TYPE" == "xRPMS"; then
+    mkdir -p $TMPDIR/$DIR
+    genpkglist --index $TMPDIR/$DIR/index --bloat --progress $DIR $EXT
+    bzip2 -f $DIR/base/pkglist.$EXT
+    echo
+  fi
+                                                                                
+  # SRPMS
+  # srclist.os gets dumped in the current dir for some reason
+  if test "x$TYPE" == "xSRPMS"; then
+    gensrclist --flat --progress $DIR $EXT $TMPDIR/$DIR/index
+    mv srclist.$EXT $DIR/base
+    bzip2 -f $DIR/base/srclist.$EXT
+    echo
+  fi
+
+done
+
+rm -rf $TMPDIR
