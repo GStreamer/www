@@ -3,4 +3,4 @@ To hack on the GStreamer website, here's what to do:
 1) Check out the www module
 2) src/autogen.sh
 3) create src/entities by symlinking the applicable entities file
-3) make
+4) make
