@@ -27,10 +27,10 @@ GStreamer is released under the LGPL.
 </p>
 </td>
 <td>
-<a href="&site;/modules/gst-player.html">
-<img src="&site;/data/images/gst-player/gst-player-0.7.0.jpg" height="100"
+<a href="&site;/data/images/totem.png">
+<img src="&site;/data/images/totem_small.png" height="100"
      border="0" align="right" valign="top"
-     alt="gst-player demo image" class="floatright" /></a>
+     alt="totem demo image" class="floatright" /></a>
 </td>
 </tr>
 </table>
