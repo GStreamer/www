@@ -65,7 +65,6 @@ built quickly, run, and saved as XML</li>
 <a href="&site;/data/doc/gstreamer/head/manual/html/section-programs-gst-launch.html">
 gst-launch command-line tool</a> enables even
 quicker prototyping and testing, similar to ecasound</li>
-playing any media type for which plugins exist</li>
 <li>All tools written as libraries to allow easy reuse</li>
 <li>A lot of 
 <a href="&site;/documentation/">documentation</a>,
