@@ -1,4 +1,4 @@
-SUBDIRS = apps bugs dev documentation images \
+SUBDIRS = apps bugs dev documentation download images \
 	lists modules news releases \
 	tasks features
 

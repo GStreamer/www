@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: download for Fedora Core</title>
+  <body>
+
+<h2>Download instructions for Fedora Core</h2>
+<P>
+GStreamer is distributed with Fedora Core.  If you want to get updates,
+you have two options:
+
+<UL>
+<LI>Use the repository hosted by us, which is compatible with
+<A href="http://www.fedora.us/">www.fedora.us</A> and
+<A href="http://rpm.livna.org/">rpm.livna.org</A>.
+This repository has both packages not in the base distribution mirrored
+from those two sites, as well as packages created by us and submitted back
+to those two repositories.</LI>
+<LI>Use the <A href="http://www.freshrpms.net/">FreshRPMS repository</A>, where
+the GStreamer packages are packaged in the same way as ours.</LI>
+</UL>
+</P>
+<H2>Our repository</H2>
+<P>
+Here's the five step guide to getting our packages.
+</P>
+<OL>
+<LI>
+<P>
+You can use either yum or apt for rpm.
+The current repository contains packages built using
+<A href="http://thomas.apestaart.org/projects/mach">mach</A> for the
+Fedora Core 1 platform.  They should also be compatible with the Fedora Core
+test releases if you keep your system upgraded.
+</P>
+<P>
+If you use apt,
+then add these two lines to your sources.list file, or your sources.list
+directory:
+<PRE>
+rpm     http://gstreamer.freedesktop.org/pkg/ fedora/1/i386 deps gst
+rpm-src http://gstreamer.freedesktop.org/pkg/ fedora/1/i386 deps gst
+</PRE>
+</P>
+<P>
+If you use yum. add these lines to your yum.conf file:
+<PRE>
+[gstreamer-deps]
+name=Fedora Core $releasever - $basearch - GStreamer dependencies
+baseurl=http://gstreamer.net/pkg/fedora/$releasever/$basearch/yum/deps
+
+[gstreamer]
+name=Fedora Core $releasever - $basearch - GStreamer
+baseurl=http://gstreamer.net/pkg/fedora/$releasever/$basearch/yum/gst
+</PRE>
+</P>
+</LI>
+<LI>Import the GPG key for this repository if you haven't already done so:
+<DL>
+<DT>Get it:</DT>
+<DD><PRE>wget http://thomas.apestaart.org/pkg/thomas.pubkey</PRE></DD>
+<DT>Verify it:</DT>
+<DD><PRE>
+gpg --keyserver pgp.mit.edu --recv-keys 55f3aa6f
+gpg --list-keys | grep Stichele
+gpg --export -a 55f3aa6f > tmp
+diff tmp thomas.pubkey
+</PRE></DD>
+<DT>Import it into rpm:</DT>
+<DD>As root, run <PRE>rpm --import thomas.pubkey</PRE></DD>
+</DL>
+</LI>
+
+<LI>
+Install all GStreamer packages:
+<UL>
+<LI>
+Using apt:
+<PRE>
+apt-get update
+apt-get install gstreamer-universe
+</PRE>
+</LI>
+<LI>
+Using yum:
+<PRE>
+yum install gstreamer-universe
+</PRE>
+</LI>
+</UL>
+</LI>
+<P>
+If this gives problems, it is probably due to you having installed packages
+from another repository.  Try removing those packages, or only installing
+part of the GStreamer package set.
+</P>
+<P>
+You can also <A href="&site;/pkg/fedora">browse the repository</A>.
+</P>
+</OL>
+  </body>
+</page>

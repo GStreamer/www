@@ -9,6 +9,7 @@ htdocs/apps/Makefile
 htdocs/bugs/Makefile
 htdocs/dev/Makefile
 htdocs/documentation/Makefile
+htdocs/download/Makefile
 htdocs/features/Makefile
 htdocs/images/Makefile
 htdocs/lists/Makefile

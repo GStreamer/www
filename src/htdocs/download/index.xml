@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: Download</title>
+  <body>
+
+<h2>Download GStreamer</h2>
+
+<p>
+In general, you should find packages that were specifically made for your
+distribution.  Do not compile from source yourself unless you are certain
+you have to or want to.  Do not compile from CVS unless you really need
+some specific feature that is not released yet, or want to help out developing
+GStreamer.
+</p>
+
+<DL>
+<DL>Fedora Core 1</DL>
+<DT>Check our <A href="fedora.html">Fedora</A> download page.</DT>
+</DL>
+
+  </body>
+</page>
