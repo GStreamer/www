@@ -57,11 +57,11 @@ If you use yum. add these lines to your yum.conf file:
 <PRE>
 [gstreamer-deps]
 name=Fedora Core $releasever - $basearch - GStreamer dependencies
-baseurl=http://gstreamer.net/pkg/fedora/$releasever/$basearch/yum/deps
+baseurl=http://gstreamer.freedesktop.org/pkg/fedora/$releasever/$basearch/yum/deps
 
 [gstreamer]
 name=Fedora Core $releasever - $basearch - GStreamer
-baseurl=http://gstreamer.net/pkg/fedora/$releasever/$basearch/yum/gst
+baseurl=http://gstreamer.freedesktop.org/pkg/fedora/$releasever/$basearch/yum/gst
 </PRE>
 </P>
 </LI>

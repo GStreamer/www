@@ -1,3 +1,8 @@
+2004-08-18  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/download/fedora.xml:
+	  fix download location for yum
+
 2004-08-16  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/bugs/bugs.xml:
