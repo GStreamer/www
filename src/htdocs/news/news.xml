@@ -1328,4 +1328,21 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2004-11-08 23:57</date>
+    <title>gst-editor 0.8.0 "Si Senor!" released</title>
+    <content>
+<p>
+A new release of the GStreamer graphical pipeline editor, gst-editor,
+containing various fixes and enhancements.
+</p>
+<p>
+Check out the
+<a href="&site;/releases/gst-editor/0.8.0.html">release notes</a>
+or download the
+<a href="&site;/src/gst-editor/gst-editor-0.8.0.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-editor/gst-editor-0.8.0.tar.bz2">tar.bz2</a>archive.
+</p>
+    </content>
+  </item>
 </news>

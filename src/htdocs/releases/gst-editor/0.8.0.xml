@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editor</module>
+  <module-fancy>GStreamer Pipeline Editor</module-fancy>
+  <name>Si Senor!</name>
+  <version>0.8.0</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release of the
+GStreamer Pipeline Editor
+</p>
+  </intro>
+  <features>
+    <feature>Updated for the latest GStreamer. Requires at least GStreamer 0.7.1</feature>
+    <feature>Fixes for pipeline saving and loading</feature>
+    <feature>Memory leak fixes</feature>
+    <feature>New filtering for the element selector tree</feature>
+    <feature>API changes</feature>
+    <feature>Enhanced debug system support and new debug categories</feature>
+    <feature>I18N fixes</feature>
+    <feature>For a complete list of changes, see the ChangeLog file in the release tarball</feature>
+  </features>
+  <contributors>
+    <person>Jan Schmidt</person>
+    <person>Thomas Vander Stichele</person>
+    <person>Stephane Loeuillet</person>
+    <person>Stefan Kost</person>
+  </contributors>
+</release>
+
