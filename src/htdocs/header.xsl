@@ -21,8 +21,16 @@
           <xsl:for-each select="item">
           <tr>
             <td width="140" bgcolor="#CCCCCC" align="center">
+              <xsl:choose>
+                <xsl:when test="substring(@href, 1, 7) = 'http://'">
+              <b><a href="{@href}" class="gstnavside">
+                 <xsl:value-of select="." /></a></b>
+                </xsl:when>
+                <xsl:otherwise>
               <b><a href="&site;{@href}" class="gstnavside">
                  <xsl:value-of select="." /></a></b>
+                </xsl:otherwise>
+              </xsl:choose>
             </td>
             <td><img src="&site;/images/1x1.gif" border="0" width="2" height="2" alt="" /></td>
           </tr>
