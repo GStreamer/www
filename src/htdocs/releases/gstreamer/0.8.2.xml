@@ -113,10 +113,6 @@ GNOME applications including sound-juicer, totem and RhythmBox.
       <summary>gstreamer-0.8.1 compile failure with gcc-3.4: error: PIC ...</summary>
     </bug>
     <bug>
-      <id>141176</id>
-      <summary>[mad] Can't play ...Faithfulness.mp3</summary>
-    </bug>
-    <bug>
       <id>141304</id>
       <summary>GST_CAPS and GST_IS_CAPS broken</summary>
     </bug>
