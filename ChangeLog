@@ -1,3 +1,11 @@
+2005-01-28  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
+
+	* src/htdocs/tasks/code.xml:
+	* src/htdocs/tasks/gnome.xml:
+	* src/htdocs/tasks/gstreamer.xml:
+	* src/htdocs/tasks/people.xml:
+	  Add some new 'simple' tasks (people asked for them).
+
 2005-01-20  Stephane LOEUILLET  <stephane.loeuillet@tiscali.fr>
 
 	* src/htdocs/documentation/index.xml:

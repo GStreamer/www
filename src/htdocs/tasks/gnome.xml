@@ -5,40 +5,61 @@
   </body>
   
   <tasks title="List of GNOME-related tasks">
-    
-  <task name="cdplayer">
-      <title>Port GNOME-CD player to GStreamer</title>
+
+    <task name="fontselection">
+      <title>Add font selection for subtitles in Totem</title>
       <description>
-  	The Audio-CD player in GNOME media needs to be ported to use GStreamer.
+        Since some time now, <xref type="http"
+        linkend="http://hadess.net/totem.php3">Totem</xref> (using the GStreamer
+        backend) has had subtitle support from Ogm or Matroska streams or
+        from external subtitle files. What's lacking, though, is font
+        selection in the Totem user interface.
       </description>
-  
       <why>
-  	It should help cut back on the amount of code in gnome-media making it easier to maintain. It also helps further the goal of only maintaining such code in one place in the GNOME stack. All fixes made in regards to Audio cd playback in GStreamer due to gnome-cd will also help any other GStreamer using application that wants to do audio-cd playback.
+        It'd be nice if users could select their own font type, size and
+        color using a font selector widget in the Totem preferences screen.
+        This fits in well with the GNOME philosophy where user interfaces
+        are simple and intuitive.
       </why>
-  
       <how>
-  	There are multiple plugins in GStreamer that can read audiocd's. The most correct to use is probably the one called 'cdplayer'. A big and important part of this task is to make sure the port doesn't cause any regressions, so make sure that if there are some architectures supported in the CD player that these gets ported over to the cdplayer GStreamer plugin.
+        The preferences dialog of Totem is defined in the glade file
+        <filename>totem.glade</filename> (in <filename>totem/data/</filename>).
+        Here, you can add an additional notebook page for font handling. Add
+        useful descriptions on what it does. Next, you'll need to add signal
+        handlers in <filename>totem/src/totem.c</filename>, and add function
+        calls to the <classname>BaconVideoWidget</classname> backend.
+        <br/>
+        In <application>GStreamer</application>, font-selection is done in
+        the textoverlay element (in
+        <filename>gst-plugins/ext/pango/gsttextoverlay.c</filename>) using the
+        <quote>font-desc</quote> property. Add a similar property to the
+        playbin element (which is the playback backend for Totem), and make
+        the <classname>BaconVideoWidget</classname> in Totem use this
+        property to set the font. Lastly, choose a nice default (something
+        like Vera bitstream) and make this property work using GConf as well.
       </how>
-  
       <where>
-        <code id="gnome-media-cdplayer">
-          <name>GNOME CD player</name>
-          <description>The code to port to GStreamer</description>
+        <code id="totem">
+          <name>Totem</name>
+          <description>The totem module in GNOME CVS.</description>
         </code>
-        
+        <code id="playbin">
+          <name>playbin</name>
+          <description>The playbin element in GStreamer CVS, module
+          <quote>gst-plugins</quote>.</description>
+        </code>
       </where>
-  
       <difficulty>
-        MEDIUM - The port of the GUI is probably rather trivial. But the need to port over support for non-linux architectures and also make sure the cdplayer plugin is fully working with latest GStreamer makes the task a bit more advanced.
+        EASY - font selection in Gtk+ is well documented, and it requires
+        little code in both Totem and playbin.
       </difficulty>
-      <submit>
-        Patch should be made against gnome-media CVS and sent the gnome-multimedia mailing list.
-      </submit>
       <notes>
-  Any questions about this task should be sent to the gnome-media mailing list.
+        Any questions about this task should be sent to the gnome-media
+        mailing list.
       </notes>
       <see>
         <person>Ronald</person>
+        <person>Bastien</person>
       </see>
     </task>
     
@@ -73,46 +94,6 @@
       </notes>
       <see>
         <person>Ted Gould</person>
-      </see>
-    </task>
-  
-    <task name="juicerprofiles">
-      <title>Integrate audio profiles and sound-juicer</title>
-      <description>
-  	Switch Sound juicer to use the new shared audio quality gconf keys and add a menu entry in sound juicer to call the audio-profiles.
-  	</description>
-  
-      <why>
-  	We have a new shared sub-system for taking care of sound quality when recording/encoding audio. Sound-Juicer as our main showcase application for ripping cd's would be a great application to support this both since it is exactly the kind of application it is meant for, but also since Sound-Juicer then could server as documentation for other programs.
-      </why>
-  
-      <how>
-  	Look at the gnome-audio-profiles code in gnome-media. You find it in the 'profiles' directory.</how>
-  
-      <where>
-        <code id="gnome-media-profiles">
-          <name>GNOME Media profiles</name>
-          <description>The code of the audio profile code</description>
-        </code>
-
-        <code id="sound juicer">
-        <name>Sound Juicer CD ripper</name>
-          <description>Sound juicer CD ripper code</description>
-        </code>
-
-      </where>
-  
-      <difficulty>
-        MEDIUM - Fairly simple code, but no examples to look at.
-      </difficulty>
-      <submit>
-        Patch should be made against gnome-media CVS and sent it ot the gnome-multimedia mailing list.
-      </submit>
-      <notes>
-  Any questions about this task should be sent to the gnome-media mailing list.
-      </notes>
-      <see>
-        <person>Thomas</person>
       </see>
     </task>
   

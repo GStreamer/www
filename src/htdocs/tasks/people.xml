@@ -61,6 +61,15 @@
         <nick>wingo</nick>
         <role>GStreamer Developer</role>
       </person>
+
+      <person name="Christian">
+        <realname>Christian Schaller</realname>
+        <email>uraeus (at) linuxrusing (dot) org</email>
+        <irc>irc.freenode.net, #gstreamer</irc>
+        <nick>uraeus</nick>
+        <role>GStreamer Developer</role>
+      </person>
+
     </people>
   </tasks>
 </page>

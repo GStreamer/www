@@ -104,6 +104,27 @@
 	<cvs>GStreamer CVS</cvs>
 	<path>gstreamer/gst/schedulers/gstbasicscheduler.c</path>
       </code>
+      <code name="totem">
+        <description>Totem CVS module in GNOME CVS.</description>
+        <cvs>GNOME CVS</cvs>
+        <path>totem/</path>
+      </code>
+
+      <code name="playbin">
+        <description>Playbin element in GStreamer CVS.</description>
+        <cvs>GStreamer CVS</cvs>
+        <path>gst-plugins/gst/playback/</path>
+      </code>
+      <code name="subparse">
+        <description>Subparse element in GStreamer CVS.</description>
+        <cvs>GStreamer CVS</cvs>
+        <path>gst-plugins/gst/subparse/</path>
+      </code>
+      <code name="website">
+        <description>GStreamer website module in GStreamer CVS.</description>
+        <cvs>GStreamer CVS</cvs>
+        <path>www/</path>
+      </code>
     </codes>
   
     <cvses>

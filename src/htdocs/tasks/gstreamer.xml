@@ -6,6 +6,121 @@
 
   <tasks title="List of GStreamer tasks">
 
+    <task name="subtitles">
+      <title>Add more subtitle formats to GStreamer</title>
+      <description>
+        For some time now, <application>GStreamer</application> has supported
+        subtitles. One of the players using this feature is <xref type="http"
+        linkend="http://hadess.net/totem.php3">Totem</xref>. Subtitles are
+        automatically supported if you use the <classname>playbin</classname>
+        element. Currently, Ogm and Matroska plain-text subtitles and external
+        subtitle files in microDVD, MPsub and Subrip format are supported.
+        It would be nice to support more types of subtitles, particularly the
+        ones in external text files, since those are very easy to add.
+      </description>
+      <why>
+        It's a good idea to support as many media formats as possible. In
+        addition, our subtitle support is not very wide yet, and we hope
+        to change that.
+      </why>
+      <how>
+        External subtitle files are handled by the <quote>subparse</quote>
+        element (in
+        <filename>gst-plugins/gst/subparse/gstsubparse.c</filename>). Each
+        subtitle has three functions available - one for initialization, one
+        for reading a single subtitle and one to deinitialize. For each new
+        subtitle format, adding those three functions is enough. After that,
+        test the newly added code in Totem. If all is well, it should just
+        work.
+        <br/>
+        It is also possible to add more subtitle support to particular
+        demuxers, e.g. Ogg/Ogm or Matroska. In that case look at the code
+        of that particular demuxer and it there.
+      </how>
+      <where>
+        <code id="subparse">
+          <name>subparse</name>
+          <description>The subparse element in the gst-plugins module in
+          GStreamer CVS.</description>
+        </code>
+      </where>
+      <difficulty>
+        EASY: three functions per format, and no code involved elsewhere.
+      </difficulty>
+      <see>
+        <person>Ronald</person>
+        <person>Thomas</person>
+      </see>
+    </task>
+
+    <task name="elementlist">
+      <title>Revive the element status tables</title>
+      <description>
+        In the early days (around 0.2.0), <application>GStreamer</application>
+        used to have extended status tables. In Google, search for
+        <quote>GStreamer Status Tables</quote> to get an idea of what they
+        were. They have never been updated since, and were removed some time
+        ago because they were hopelessly outdated. We would like to see those
+        status tables revived, but slightly differently.
+      </description>
+      <why>
+        The idea of plugin/element status tables is very useful, though. It
+        allows users to see what formats are supported (by element name, by
+        mimetype, etc.), particular notes on that format and how well it is
+        supported, plus maybe even download locations. It allows end users,
+        who see Totem telling that <application>GStreamer</application> does
+        not support some mimetype found in their media file, to actually
+        find a solution by knowing which additional plugin to install.
+      </why>
+      <how>
+        The reason that the status tables were abandoned was because they were
+        hopelessly outdated and nobody maintained them. What we would like is
+        a system that is not too hard to maintain. Ideally, the submitter would
+        help us maintaining it, although that is not a requirement.
+        <br/>
+        The initial setup is most difficult. You'll need to gather a list of
+        information that you want to display for each plugin/element, e.g.
+        a small description of the plugin, its name, contained elements,
+        handled mimetypes, dependency and where to get it and possibly a short
+        status summary. Some of this information (like descriptions, handled
+        mimetypes, plugin-/elementnames) can be extracted from the source.
+        You probably want to do that, since it saves you a lot of work. All
+        other information, like the small status description, dependency and
+        where to get that, need to be added either alternatively, or needs
+        to be added in some way to the sources as well so that it can be
+        extracted from the sources.
+        <br/>
+        After the initial setup is done, we'd like someone to maintain the
+        list to be somewhat up-to-date from time to time. You may want to
+        improve the element/plugin descriptions once you've found that they
+        are really quite lousy (they are), but that's a later concern.
+      </how>
+      <where>
+        <code id="website">
+          <name>GStreamer website</name>
+          <description>The GStreamer website module in GStreamer
+          CVS.</description>
+        </code>
+      </where>
+      <difficulty>
+        MEDIUM: extracting the required information from all elements will
+        require some scripting capabilities (especially since we'll want to
+        maintain it after the initial work is done). However, apart from that,
+        it requires no actual coding, and is mostly just a whole bunch of work
+        that is not particularly difficult.
+      </difficulty>
+      <notes>
+        You'll probably need to ask other people about details on how well
+        each element/plugin works for the status descriptions. Feel free to
+        ask people on IRC (irc.freenode.net, #gstreamer) for details here.
+      </notes>
+      <see>
+        <person>Ronald</person>
+        <person>Thomas</person>
+        <person>Christian</person>
+      </see>
+    </task>
+
 <task name="686basicomega">
     <title>Make basicomega scheduler work with i686 glibc</title>
     <description>
