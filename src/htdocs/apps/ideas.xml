@@ -50,7 +50,7 @@ something like this (as much as ASCII graphs look like anything):</p>
                                        |==========================|
 </pre>
 
-<p><a href="gst-player/">gst-player</a> should be 
+<p><a href="&site;/modules/gst-player.html">gst-player</a> should be 
 capable of constructing the above graph without any outside assistance.  
 Further work is necessary for the system to be capable of navigation, 
 menus, and angles.  Most such components would live outside the pipeline 

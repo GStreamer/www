@@ -7,7 +7,7 @@
 <h1>Developer Information</h1>
 
 <p>Much documentation and some introductory slides are to be found on the
-<a HREF="../docs/">Documentation page</a>. We suggest to read
+<a HREF="&site;/documentation/">Documentation page</a>. We suggest to read
 the manual and the slides to get a general overview and to get you started.</p>
                                                                                 
 <p>Developers are welcome to:</p>
@@ -17,7 +17,7 @@ the manual and the slides to get a general overview and to get you started.</p>
 <li>Write applications using GStreamer.</li>
 <li>Help us with the editor and gstplay.</li>
 <li>Write all kinds of cool bonobo components.</li>
-<li>Write a lot of <a href="../bindings">language bindings</a>.</li>
+<li>Write a lot of <a href="&site;/bindings/">language bindings</a>.</li>
 <li>Contribute to the documentation.</li>
 <li>Build test cases.</li>
 </ul>
