@@ -2,6 +2,7 @@
 
 	* src/htdocs/releases/gst-ffmpeg/0.8.2.xml:
 	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	* src/htdocs/news/news.xml:
 	  writing release notes for gst-ffmpeg 0.8.2.
 
 2004-10-06  Thomas Vander Stichele  <thomas at apestaart dot org>
