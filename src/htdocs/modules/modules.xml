@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<modules>
+
+  <module>
+    <id>gstreamer</id>
+    <title>GStreamer</title>
+    <blurb>core library and elements</blurb>
+    <description>
+GStreamer is the core library.  It contains the headers, core library files,
+and core elements.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <stable>0.6.4</stable>
+      <devel>0.7.3</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gst-plugins</id>
+    <title>GStreamer Plugins</title>
+    <blurb>additional elements</blurb>
+    <description>
+GStreamer Plugins contains the media-specific plugins and elements.
+A wide range of video and audio decoders, encoders, and filters are included.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <stable>0.6.4</stable>
+      <devel>0.7.3</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gst-player</id>
+    <title>GStreamer Player</title>
+    <blurb>sample player</blurb>
+    <description>
+GStreamer Player is our test bed for GStreamer and the GStreamer Play
+library.
+    </description>
+    <maintainer>Julien Moutte</maintainer>
+    <screenshot width="708" height="416" alt="GStreamer Player">
+      <src>gst-player/gst-player-0.7.0.jpg</src>
+   </screenshot>
+    <versions>
+      <devel>0.7.0</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gst-editor</id>
+    <blurb>graphical pipeline editor</blurb>
+    <title>GStreamer Editor</title>
+    <description>
+<table>
+<tr>
+  <td colspan="2">
+    <p>
+The GStreamer Pipeline Editor (<tt>gst-editor</tt>) is a graphical pipeline
+contruction and manipulation tool. Using the Gnome Canvas as the foundation, it
+allows you to draw media pipelines very quickly. It's not anywhere near
+complete yet, but it still lets you do some amazing things.
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+
+<p>The example at the right shows a complex pipeline set up for playback
+of an MP3 in an <A HREF="http://www.ambisonic.net">Ambisonics</A> surround setup.  
+From left to right you have a filesrc to read from disk, mad to decode the mp3, 
+and ladspa_<A href="http://home.onet.co.uk/~jzracc/freeverb.htm">freeverb3</A>
+to apply some world-class reverb effects.  At the bottom you have
+ladspa_encode_bformat, which has three arguments: angle, elevation, and
+distance.  This encodes the audio as 4 channels of surround sound.  The
+ladspa_bf2cube element converts this surround data into output channels
+appropriate for a cube of speakers.  Finally, the audio is routed to an
+8-channel ALSA audio sink.</p>
+
+<p>The pipeline shown probably works, although <tt>gst-editor</tt>'s author does
+not have a sound card that can support 8 channels (hint, hint :-).</p>
+  </td>
+
+  <td>
+    <a href="&site;/data/images/gst-editor/gst-editor-ambisonics.png">
+      <img align="right" src="&site;/data/images/gst-editor/gst-editor-ambisonics-small.png" border="0" /></a>
+  </td>
+</tr>
+
+<tr>
+  <td>
+
+<p>The second example on the right shows another complex pipeline that was
+loaded up from <tt>gst-launch</tt> syntax. Initially, the audio and video pads
+on the mpeg demuxer were not present. The pipeline was set to PLAYING, and the
+<tt>gstparse</tt> code caught the presence of these pads and connected to the
+audio and video rendering pipelines. As this dynamic connection was made, the
+editor knew to graphically add the pads to the demuxer and connect them to the
+proper elements. This is interesting because <tt>gstparse</tt> knows nothing
+about <tt>gst-editor</tt>!
+</p>
+  </td>
+  <td>
+<a href="&site;/images/gst-editor/gst-editor-0.4.1.png">
+  <img align="right" src="&site;/data/images/gst-editor/gst-editor-0.4.1-small.png" border="0" /></a>
+  </td>
+
+</tr>
+
+<tr>
+  <td colspan="2">
+<H1>Features</H1>
+
+<p><tt>gst-editor</tt>, even though it's far from complete, already has a
+large number of major features:</p>
+
+<ul>
+<li>Built as a library, so you can trivially embed the editor into your
+own application.</li>
+<li>Reads and write standard XML descriptions of pipelines, which you can
+load into your application just as with libglade and GUIs</li>
+<li>Capable of not only building but <b>running</b> most pipelines right
+in the editor</li>
+<li>A Glade-like interface gives access to the element's arguments, as
+shown in the shot at right of all the options to the <A
+HREF="http://plugin.org.uk/">LADSPA</A> gong model reverb filter.</li>
+<li>Threadsafe, so as to safely control threaded pipelines</li>
+<li>Supports rapid prototyping with <tt>gst-launch</tt> syntax</li>
+<li>Supports cut, copy, and paste in the standard GStreamer XML format</li>
+<li>Has iterative, graphical bin sorting functionality (click the Sort
+        button)</li>
+<li>Integrated with GStreamer's debugging subsystem</li>
+<li>Supports all GStreamer pipeline elements: request pads, ghost pads, dynamic
+        connections, threads, ...</li>
+<li>Built on the solid rock of Gnome 2 and GObject -- code is very clean</li>
+<li>Integrated with the Gnome 2 help system</li>
+<li>Context menus offer context-specific "What's this?"-style help</li>
+</ul>
+  </td>
+</tr>
+</table>
+
+    </description>
+    <maintainer>Jan Schmidt</maintainer>
+    <screenshot width="765" height="454" alt="GStreamer Pipeline Editor">
+      <src>gst-editor/gst-editor-0.4.1.png</src>
+   </screenshot>
+    <versions>
+      <devel>0.6.0</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gst-recorder</id>
+    <blurb>audio/video recorder</blurb>
+    <title>GStreamer Recorder</title>
+    <description>
+GStreamer Recorder is an application for recording audio and/or video.
+    </description>
+    <maintainer>Ronald Bultje</maintainer>
+    <versions>
+      <devel>cvs only</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gst-python</id>
+    <blurb>python bindings</blurb>
+    <title>GStreamer Python Bindings</title>
+    <description>
+GStreamer has bindings for Python.
+    </description>
+    <maintainer>David Lehn</maintainer>
+    <versions>
+      <stable>0.1.0</stable>
+      <devel>cvs only</devel>
+    </versions>
+  </module>
+
+</modules>

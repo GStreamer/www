@@ -11,8 +11,9 @@
 
   <xsl:include href="header.xsl" />
 
-<!-- index page contents -->
-  <xsl:template match="page">
+<!-- page template -->
+<!-- call with content variable containing html content to paste verbatim -->
+<xsl:template name="page">
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
@@ -56,10 +57,8 @@
       <!-- white spacing between menu on left and page content --> 
       <td width="22"><img src="&site;/images/1x1.gif" alt="" border="0" width="22" height="2" /></td>
       <td valign="top"><br/>
-        <xsl:apply-templates select="document('news/news.xml')" />
-        <xsl:apply-templates />
-        <!-- copy contents of body verbatim -->
-        <xsl:copy-of select="body/node()" />
+      <!-- paste the page content passed with a param here -->
+      <xsl:copy-of select="$content" />
       </td>
       <!-- close the page table -->
     </tr>
@@ -75,6 +74,18 @@
 
     </body>
     </html>
+</xsl:template>
+
+<!-- index page contents -->
+  <xsl:template match="page">
+    <xsl:call-template name="page">
+      <xsl:with-param name="content">
+        <xsl:apply-templates select="document('news/news.xml')" />
+        <xsl:apply-templates />
+        <!-- copy contents of body verbatim -->
+        <xsl:copy-of select="body/node()" />
+      </xsl:with-param>
+    </xsl:call-template>
   </xsl:template>
   <!-- by default we ignore the news, unless another stylesheet includes us
        and overrides the news template, like index.xsl -->
