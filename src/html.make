@@ -25,22 +25,42 @@ entities = \
 	$(top_srcdir)/htdocs/entities.site \
 	$(top_srcdir)/htdocs/entities.gst
 
+$(entities):
+	@echo Please make sure $(entities) exist.
+	@echo Have you read the README ?
+	@exit 1
+
 # generate html page from xml source
 # BUG: somehow specifying $(fullsources) as a prereq doesn't really work to
 #       make the target rebuild when one of them gets changed,
 #       so we put %.xml in there for safety
 #       my guess is $(fullsources) is only defined for the action, not the
 #       rule, since it's a pattern-dependant variable
+#
+# BUG: somehow it doesn't trigger the $(entities) make rule so we
+#      run make $(entities) manually
 %.html: %.xml $($*_sources) $(fullstyle) $(entities) $(page_style)
 	xsltproc $(fullsources) -o $@
 
+%.html-debug: 
+	echo xml: $@
+	echo sources: $($*_sources)
+	echo fullstyle: $(fullstyle)
+	echo entities: $(entities)
+	echo page_style: $(page_style)
+
 # copy files from copy when needed
-%.png: $(top_srcdir)/copy/images/%.png
+# we used to depend on the origin so it got autoupdated, but
+# that didn't work for srcdir=builddir because it recursed
+%.png:
+	cp $(top_srcdir)/copy/images/$@ $@
+
+%.gif:
+	cp $(top_srcdir)/copy/images/$@ $@
+
+gstreamer.css: $(top_srcdir)/copy/gstreamer.css
 	cp $< $@
-%.gif: $(top_srcdir)/copy/images/%.gif
-	cp $< $@
-%.css: $(top_srcdir)/copy/%.css
-	cp $< $@
+
 # copy .htaccess preserving hierarchy
 # set htaccess in htdocs/ Makefile.am to get these in
 %/.htaccess: $(top_srcdir)/copy/$@
