@@ -45,45 +45,6 @@ Application containing tag extraction code.
       <person>Benjamin</person>
     </see>
   </task>
-    
-  <task name="tagasf">
-    <title>Add tagging support for ASF</title>
-    <description>
-GStreamer 0.7/0.8 introduce a new system for handling metadata in
-mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
-    </description>
-
-    <why>
-GStreamer wants to allow seamless conversion of media files. The new
-tagging system will preserve tagging information when converting the
-media files if it is implemented in both the media formats in question.
-    </why>
-
-    <how>
-Information on ASF tagging can be found
-<A HREF="http://download.microsoft.com/download/winmediatech40/Doc/1.0/WIN98MeXP/EN-US/ASF_Specification_v.1.0.exe">in this microsoft download</A>.
-It is a .exe file but you can just unzip it to get the .doc file.
-It loads fine in Abiword. Unless you write an asf muxer so is only
-tag extraction possible to implement at this point in time.
-    </how>
-    <where>
-      <code id="tag.h">
-        <name>Tagging header file</name>
-        <description>Header file for tag implementation</description>
-      </code>
-      <code id="vorbistag">
-        <name>Vorbis tagging implementation</name>
-        <description>code file with Vorbis tag implementation</description>
-      </code>
-    </where>
-    <difficulty>
-MEDIUM - tag extraction is stable but new and not documented yet.
-    </difficulty>
-    <see>
-      <person>Ronald</person>
-      <person>Benjamin</person>
-    </see>
-  </task>
 
 <task name="686basicomega">
     <title>Make basicomega scheduler work with i686 glibc</title>
