@@ -16,10 +16,11 @@ htdocs/lists/Makefile
 htdocs/modules/Makefile
 htdocs/news/Makefile
 htdocs/releases/Makefile
-htdocs/releases/gstreamer/Makefile
+htdocs/releases/gst-editor/Makefile
 htdocs/releases/gst-ffmpeg/Makefile
 htdocs/releases/gst-player/Makefile
 htdocs/releases/gst-plugins/Makefile
-htdocs/releases/gst-editor/Makefile
+htdocs/releases/gst-python/Makefile
+htdocs/releases/gstreamer/Makefile
 htdocs/tasks/Makefile
 ])

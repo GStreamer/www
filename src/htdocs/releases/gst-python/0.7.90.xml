@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-player</module>
+  <module-fancy>GStreamer Python</module-fancy>
+  <name>Here's looking at you, kid.</name>
+  <version>0.7.99</version>
+
+  <intro>
+<p>
+This is the 0.7.99 release of the GStreamer Player. It should be used with
+the 0.8.x series of GStreamer, GStreamer Plugins.
+</p>
+<p>
+This is the first release of python bindings for 0.8.x of GStreamer.
+It's still rather immature and should be used with caution.
+However, it's still very possible to write simple and medium sized applications
+using gstreamer, like music players and simple video players.
+</p>
+</intro>
+  <features>
+    <feature>Basic support for most common object</feature>
+    <feature>Experimental TagList, Caps and Structure support</feature>
+    <feature>Interfaces should work as expected</feature>
+    <feature>GstPlay is added for easy playback</feature>
+    <feature>New and updated examples</feature>
+    <feature>Licensed under LGPL.</feature>
+  </features>
+
+  <maintainers>
+    <person>Johan Dahlin</person>
+    <person>David Lehn</person>
+  </maintainers>
+</release>
