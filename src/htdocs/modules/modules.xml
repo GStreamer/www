@@ -33,7 +33,7 @@ A wide range of video and audio decoders, encoders, and filters are included.
     <maintainer>GStreamer Team</maintainer>
     <versions>
       <stable>0.6.4</stable>
-      <devel>0.7.4</devel>
+      <devel>0.7.5</devel>
     </versions>
   </module>
 

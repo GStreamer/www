@@ -5,8 +5,6 @@ style = ../releases.xsl
 
 $(built_pages): $(style) ../text.xsl
 
-%.html: %.xml
-
 %: %.xml
 	xsltproc -o $@ $(srcdir)/../text.xsl $<
 

@@ -775,7 +775,32 @@ or download the
     </content>
   </item>
 
-
+  <item>
+    <date>2004-02-26 18:57</date>
+    <title>GStreamer and GStreamer Plugins 0.7.5 released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce another release of the
+GStreamer 0.7 development series.
+A lot of work has gone into this release to fix up bugs in current plugins
+and core.
+</p>
+<p>
+For GStreamer 0.7.5, check out
+<a href="&site;/releases/gstreamer/0.7.5.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.7.5.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.7.5.tar.bz2">tar.bz2</a> archive.
+</p>
+<p>
+For GStreamer Plugins 0.7.5, check out
+<a href="&site;/releases/gst-plugins/0.7.5.html">release notes</a>
+or download the
+<a href="&site;/src/gst-plugins/gst-plugins-0.7.5.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-plugins/gst-plugins-0.7.5.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
 
 </news>
 

@@ -25,6 +25,7 @@ Features of this release
 
   <!-- this template displays the issues -->
   <xsl:template match="issues">
+
 Known issues
     <xsl:for-each select="issue">
       * <xsl:value-of select="." />
@@ -75,7 +76,7 @@ GStreamer: Release notes for <xsl:value-of select="module-fancy" />&nbsp;<xsl:va
 Download
 
 You find source releases of <xsl:copy-of select="module" /> in the download directory:
-(&realsite;/src/<xsl:value-of select="module" />/
+&realsite;/src/<xsl:value-of select="module" />/
 
 GStreamer Homepage
 

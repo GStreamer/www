@@ -14,12 +14,12 @@ URL = 'http://bugzilla.gnome.org/buglist.cgi?product=%s&component=%s&target_mile
 
 reg = re.compile('<TR.*id=(\d+)".*summary>(.*)<\/td')
 
-HEADER = '<bugs>'
-ITEM = """  <bug>
-    <id>%s</id>
-    <summary>%s</summary>
-  </bug>"""
-FOOTER = '</bugs>'
+HEADER = '  <bugs>'
+ITEM = """    <bug>
+      <id>%s</id>
+      <summary>%s</summary>
+    </bug>"""
+FOOTER = '  </bugs>'
 
 components = {
   'gstreamer': 'gstreamer (core)' 
