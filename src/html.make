@@ -56,8 +56,10 @@ $(entities):
 %.gif:
 	cp $(top_srcdir)/copy/images/$@ $@
 
-gstreamer.css: $(top_srcdir)/copy/gstreamer.css
+$(top_builddir)/htdocs/gstreamer.css: $(top_srcdir)/copy/gstreamer.css
 	cp $< $@
+#gstreamer.css: $(top_srcdir)/copy/gstreamer.css
+#	cp $< $@
 
 # copy .htaccess preserving hierarchy
 # set htaccess in htdocs/ Makefile.am to get these in
