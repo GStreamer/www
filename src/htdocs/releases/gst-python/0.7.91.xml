@@ -12,8 +12,9 @@ This is the 0.7.91 release of the GStreamer Python bindings. It should be used w
 the 0.8.x series of GStreamer, GStreamer Plugins.
 </p>
 <p>
-This release mainly fixes build issues
+This release mainly fixes build issues.
 </p>
+  </intro>
   <maintainers>
     <person>Johan Dahlin</person>
     <person>David Lehn</person>
