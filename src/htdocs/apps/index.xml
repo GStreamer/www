@@ -10,7 +10,7 @@
   <title>GStreamer: Applications</title>
   <body>
 
-<p>
+  <p>
  Because GStreamer is designed to be as generic as possible, a wide 
  range of applications can be build on top of it with very little effort, 
  allowing the programmer to focus on the user interface and human interaction
@@ -44,6 +44,12 @@
 <a href="http://ronald.bitfreak.net/me/cupid.php">A GStreamer video Recorder</a>,
 which is currently under development and will be able to record perfectly synchronized audio/video
 in any format supported by GStreamer.</p>
+
+<h2>The Dave/Dina Project</h2>
+<p><a href="http://www.davedina.org/content/">The Dave/Dina Project</a> is a set-top box distribution for playing and recording TV and multimedia and much more.</p>
+
+<h2>Eina</h2>
+<p><a href="http://bolgo.cent.uji.es/proyectos/eina-en">Eina</a> is a traditional audio player with a GTK2 interface.</p>
 
 <h2>Flumotion</h2>
 <p><a href="http://www.fluendo.com">Flumotion</a> is a distributed streaming media server</p>
@@ -83,9 +89,18 @@ in any format supported by GStreamer.</p>
 <p><a href="http://subsignal.org/pakt/">Pakt</a> is a XML abstraction for GObjects used 
 with GStreamer to monitor and change elements parameters and pipeline structures.</p>
 
+<h2>Permovi</h2>
+<p><a href="http://forge.novell.com/modules/xfmod/project/?permovi">Permovi</a> 
+Permovi is a Linux-based HTPC (Home Theatre PC) application. It transforms a PC into a standalone CD-player/tuner/DVD-player/PVR device.
+</p>
+
+
 <h2>Rhythmbox</h2>
 <p><a href="http://www.rhythmbox.org/">Rhythmbox</a> is an integrated music management application, originally inspired by Apple's iTunes.
 </p>
+
+<h2>Sound Converter</h2>
+<p><a href="http://liw.iki.fi/liw/programs.html">Sound Converter</a> Small GNOME based sound conversion application.</p>
 
 <h2>Sound Juicer</h2>
 <p><a href="http://www.burtonini.com/blog/computers/sound-juicer">Sound Juicer</a> is a clean, mean, and lean CD ripper for GNOME.</p>
