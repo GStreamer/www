@@ -154,44 +154,6 @@
       </see>
     </task>
   
-    <task name="recorderprofiles">
-      <title>Integrate audio profiles and gnome-sound-recorder</title>
-      <description>
-  	Switch gnome-sound-recorder to use the new shared audio quality gconf keys and add a menu entry in sound juicer to call the audio-profiles.
-  	</description>
-  
-      <why>
-  	We have a new shared sub-system for taking care of sound quality when recording/encoding audio. Having both Sound-Juicer and GNOME Sound recorder use it is important in regards to make sure it gets used everywhere relevant.
-      </why>
-  
-      <how>
-  	Look at the gnome-audio-profiles code in gnome-media. You find it in the 'profiles' directory.</how>
-  
-      <where>
-        <code id="gnome-media-profiles">
-          <name>GNOME Media profiles</name>
-          <description>The code of the audio profile code</description>
-        </code>
-        <code id="grecord">
-          <name>grecord</name>
-          <description>The code of gnome-sound-recorder.</description>
-        </code>
-      </where>
-  
-      <difficulty>
-        MEDIUM - Fairly simple code, but no examples to look at.
-      </difficulty>
-      <submit>
-        Patch should be made against gnome-media CVS and sent it ot the gnome-multimedia mailing list.
-      </submit>
-      <notes>
-  Any questions about this task should be sent to the gnome-media mailing list.
-      </notes>
-      <see>
-        <person>Thomas</person>
-      </see>
-    </task>
-  
     <task name="libgnomeify">
       <title>Update and merge libgnome GStreamer patches</title>
       <description>
