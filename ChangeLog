@@ -1,3 +1,7 @@
+2004-11-04  Owen Fraser-Green  <owen@discobabe.net>
+
+	* src/htdocs/bindings/bindings.xml: Updated gst-sharp info.
+
 2004-10-09  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
 
 	* src/htdocs/releases/gst-ffmpeg/0.8.2.xml:

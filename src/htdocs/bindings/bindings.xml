@@ -28,10 +28,10 @@
   </binding>
 
   <binding>
-    <id>csharp</id>
-    <name>C#</name>
-    <status>Unreleased; part of the Gtk# module of
-<a href="http://www.go-mono.com/anoncvs.html">Mono's CVS tree</a>.
+    <id>dotnet</id>
+    <name>.NET</name>
+    <status>These bindings are part of the Gtk# module of
+<a href="http://www.go-mono.com/anoncvs.html">Mono's CVS tree</a> and not yet released.
     </status>
 <body>
 <p>The GStreamer bindings for the .NET framework, known as Gst#
@@ -45,21 +45,19 @@ Java and JavaScript.</p>
 <a href="http://www.go-mono.com/">Mono project</a>'s
 <a href="http://gtk-sharp.sourceforge.net/">Gtk#</a> code parser, which
 produces an intermediate XML representation of the API, and code generator
-which processes the XML to produce the bindings themselves. No custom
+which processes the XML to produce the bindings themselves. Few custom
 modifications are required to the code once generated, making it possible to
 provide up-to-date .NET bindings at the same time as every major and minor
 GStreamer release.</p>
                                                                                 
 <p>Gst# is still at an early stage of development so many areas of its
 functionality remain untested. In particular, users should not expect a
-stable API or ABI between releases.</p>
+stable API between releases.</p>
  
-<p>At the time of writing, the bindings are present in the Gtk# module
-(<tt>gtk-sharp</tt>) of <a href="http://www.go-mono.com/anoncvs.html">Mono's CVS  
-tree</a> and have been distributed as part of the <a href="http://gtk-sharp.sourceforge.net/">Gtk# 0.6</a> release, although they
-aren't yet part of the standard build. A certain amount of tweaking will be
-required to get the generated bindings to compile until all blocking bugs
-are eliminated.</p>
+<p>The bindings are present in the module (<tt>gst-sharp</tt>) of <a
+href="http://www.go-mono.com/anoncvs.html">Mono's CVS tree</a> but
+there are currentl no released packages.
+</p>
  
 <p>Gst# is being developed primarily on GNU/Linux using the Mono JIT runtime
 on x86. Users are encouraged to try different platforms and report the
@@ -91,6 +89,7 @@ reach a wider audience.</p>
 <ul>
 <li><a href="http://www.atoker.com/mmp/">MMP</a> - a comprehensive media
 player for the GNOME2 desktop</li>
+<li><a href="http://forge.novell.com/modules/xfmod/project/?permovi">Permovi</a> - a home theatre PC system</li>
 <li><a href="http://www.atoker.com/phonic/">Phonic</a> - a music collection cataloguing system for GNOME2</li>
 </ul>
 
@@ -101,6 +100,10 @@ player for the GNOME2 desktop</li>
       <person>
         <realname>Alp Toker</realname>
         <email>alp (at) atoker.com</email>
+      </person>
+      <person>
+        <realname>Owen Fraser-Green</realname>
+        <email>owen (at) discobabe.net</email>
       </person>
     </contacts>
   </binding>
