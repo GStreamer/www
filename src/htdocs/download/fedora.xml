@@ -67,17 +67,40 @@ baseurl=http://gstreamer.freedesktop.org/pkg/fedora/$releasever/$basearch/yum/gs
 </LI>
 <LI>Import the GPG key for this repository if you haven't already done so:
 <DL>
-<DT>Get it:</DT>
-<DD><PRE>wget http://thomas.apestaart.org/pkg/thomas.pubkey</PRE></DD>
-<DT>Verify it:</DT>
+
+<DT>
+Get key and fingerprint from website:
+</DT>
+<DD><PRE>
+wget http://thomas.apestaart.org/pkg/thomas.pubkey
+wget http://thomas.apestaart.org/pkg/thomas.fingerprint
+</PRE></DD>
+
+<DT>
+Verify that the fingerprint matches the pubkey:
+</DT>
+<DD><PRE>
+gpg --with-fingerprint thomas.pubkey | head -n 3 | diff - thomas.fingerprint
+</PRE></DD>
+
+<DT>
+Get the public key from a keyserver and verify that the online fingerprint
+matches the one downloaded:
+</DT>
 <DD><PRE>
 gpg --keyserver pgp.mit.edu --recv-keys 55f3aa6f
 gpg --list-keys | grep Stichele
-gpg --export -a 55f3aa6f > tmp
-diff tmp thomas.pubkey
+gpg --fingerprint 55f3aa6f | head -n 3 > thomas.fingerprint.tmp
+diff thomas.fingerprint.tmp thomas.fingerprint
 </PRE></DD>
-<DT>Import it into rpm:</DT>
-<DD>As root, run <PRE>rpm --import thomas.pubkey</PRE></DD>
+
+<DT>
+Now that you verified the validity of thomas.pubkey, you can import it in
+your rpm database using
+</DT>
+<DD><PRE>
+rpm --import thomas.pubkey
+</PRE></DD>
 </DL>
 </LI>
 

@@ -1,3 +1,8 @@
+2004-12-21  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/download/fedora.xml:
+	  fix up gpg verification
+
 2004-12-01  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	patch by: Aurelien Mino
