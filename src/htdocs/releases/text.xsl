@@ -12,6 +12,14 @@
   extension-element-prefixes="exsl"
   version="1.0">
 
+<!-- this template outputs a complete list of items wrapped in a list -->
+<xsl:template name="item-list">
+  <xsl:param name="parent" />
+  <xsl:for-each select="item">
+* <xsl:value-of select="." />
+  </xsl:for-each>
+</xsl:template>
+
   <!-- transform a release xml file to a text version of release notes -->
 
   <xsl:output method="text" />
@@ -27,9 +35,7 @@ Features of this release
   <xsl:template match="issues">
 
 Known issues
-    <xsl:for-each select="issue">
-      * <xsl:value-of select="." />
-    </xsl:for-each>
+    <xsl:for-each select="issue">* <xsl:value-of select="." /></xsl:for-each>
   </xsl:template>
 
   <!-- this template displays the bugs fixed -->
@@ -41,8 +47,55 @@ Bugs fixed in this release
     </xsl:for-each>
   </xsl:template>
 
+  <!-- this template displays the API changes -->
+  <xsl:template match="api">
+
+API changed in this release
+     <xsl:apply-templates select="additions" />
+
+     <xsl:apply-templates select="removals" />
+
+     <xsl:apply-templates select="depreciations" />
+
+  </xsl:template>
+
+  <!-- this template matches the API additions -->
+  <xsl:template match="additions">
+
+- API additions:
+    <xsl:call-template name="item-list">
+      <xsl:with-param name="parent">
+        <xsl:value-of select="." />
+      </xsl:with-param>
+    </xsl:call-template>
+
+  </xsl:template>
  
-  <!-- this template displays the contributors -->
+  <!-- this template matches the API removals -->
+  <xsl:template match="removals">
+
+- API removals:
+    <xsl:call-template name="item-list">
+      <xsl:with-param name="parent">
+        <xsl:value-of select="." />
+      </xsl:with-param>
+    </xsl:call-template>
+
+  </xsl:template>
+
+  <!-- this template matches the API removals -->
+  <xsl:template match="depreciations">
+
+- API depreciations:
+    <xsl:call-template name="item-list">
+      <xsl:with-param name="parent">
+        <xsl:value-of select="." />
+      </xsl:with-param>
+    </xsl:call-template>
+
+  </xsl:template>
+
+   <!-- this template displays the contributors -->
   <xsl:template match="contributors">
 Contributors to this release
     <xsl:for-each select="person">
@@ -72,6 +125,8 @@ GStreamer: Release notes for <xsl:value-of select="module-fancy" />&nbsp;<xsl:va
         <xsl:apply-templates select="issues" />
 
         <xsl:apply-templates select="bugs" />
+
+        <xsl:apply-templates select="api" />
 
 Download
 

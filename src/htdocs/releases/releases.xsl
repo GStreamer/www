@@ -50,7 +50,47 @@
     </ul>
   </xsl:template>
 
- 
+  <!-- this template displays the API changes -->
+  <xsl:template match="api">
+    <h2>API changes</h2>
+    <ul>
+      <xsl:apply-templates select="additions" />
+      <xsl:apply-templates select="removals" />
+      <xsl:apply-templates select="depreciations" />
+    </ul>
+  </xsl:template>
+
+  <!-- this template matches the API additions -->
+  <xsl:template match="additions">
+    <li>API additions
+      <xsl:call-template name="item-list">
+        <xsl:with-param name="parent">
+          <xsl:value-of select="." />
+        </xsl:with-param>
+      </xsl:call-template>
+    </li>
+  </xsl:template>
+  <!-- this template matches the API removals -->
+  <xsl:template match="removals">
+    <li>API removals
+      <xsl:call-template name="item-list">
+        <xsl:with-param name="parent">
+          <xsl:value-of select="." />
+        </xsl:with-param>
+      </xsl:call-template>
+    </li>
+  </xsl:template>
+  <!-- this template matches the API deprecations -->
+  <xsl:template match="depreciations">
+    <li>API depreciations
+      <xsl:call-template name="item-list">
+        <xsl:with-param name="parent">
+          <xsl:value-of select="." />
+        </xsl:with-param>
+      </xsl:call-template>
+    </li>
+  </xsl:template>
+
   <!-- this template displays the contributors -->
   <xsl:template match="contributors">
     <h2>Contributors to this release</h2>
@@ -70,7 +110,6 @@
     </xsl:for-each>
     </ul>
   </xsl:template>
-
 
   <!-- this template displays the application notes -->
   <xsl:template match="applications">
@@ -97,6 +136,7 @@ Release notes for
         <xsl:apply-templates select="features" />
         <xsl:apply-templates select="issues" />
         <xsl:apply-templates select="bugs" />
+        <xsl:apply-templates select="api" />
 
 <h2>Download</h2>
 You can find source releases of <xsl:copy-of select="module" /> in the

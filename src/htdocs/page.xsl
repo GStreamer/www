@@ -24,7 +24,17 @@
   </xsl:element>
 </xsl:template>
 
-
+<!-- this template outputs a complete list of items wrapped in a ul -->
+<xsl:template name="item-list">
+  <xsl:param name="parent" />
+  <xsl:element name="ul">
+    <xsl:for-each select="item">
+      <xsl:element name="li">
+        <xsl:value-of select="." />
+      </xsl:element>
+    </xsl:for-each>
+  </xsl:element>
+</xsl:template>
 
 <!-- page template -->
 <!-- call with content variable containing html content to paste verbatim -->

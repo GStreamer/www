@@ -1,3 +1,13 @@
+2004-08-12  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/page.xsl:
+	* src/htdocs/releases/gstreamer/0.8.5.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	* src/htdocs/releases/releases.xsl:
+	* src/htdocs/releases/text.xsl:
+	  add API changes to release notes.
+	  preliminary core 0.8.5 release notes.
+
 2004-08-02  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/entities.gst:
