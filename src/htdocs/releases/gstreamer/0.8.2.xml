@@ -145,10 +145,6 @@ GNOME applications including sound-juicer, totem and RhythmBox.
       <summary>needed change to allow x86 Solaris compile with Forte</summary>
     </bug>
     <bug>
-      <id>142850</id>
-      <summary>GST-Register didn't find any plugins</summary>
-    </bug>
-    <bug>
       <id>142957</id>
       <summary>xmlregistry failes to compile on osx</summary>
     </bug>
