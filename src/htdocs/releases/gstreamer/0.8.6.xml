@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Narc</name>
+  <version>0.8.6</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release
+in the 0.8.x stable series of the GStreamer streaming-media framework.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
+</p>
+<p>
+This module only contains core functionality.  For actual media playback,
+you will need other modules.  GStreamer Plugins contains a huge set of
+additional plugins.  GStreamer FFmpeg contains a plugin based on the popular
+FFmpeg decoding library.  These modules need not have the same source version
+as the core, as long as they are in the 0.8.x series.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+
+    <feature>spider, queue fixes</feature>
+    <feature>fakesrc and identity now have a datarate property</feature>
+    <feature>dataprotocol threadsafety fix</feature>
+  </features>
+
+  <applications>
+<p>
+Applications already ported to use GStreamer 0.8.x include the GNOME
+desktop components like gnome-media and nautilus-media, as well as other
+GNOME applications including sound-juicer, totem and RhythmBox.
+</p>
+  </applications>
+
+  <contributors>
+	<person>Benjamin Otte</person>
+	<person>David Schleef</person>
+	<person>Luca Ognibene</person>
+	<person>Ronald Bultje</person>
+	<person>Steve Lhomme</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+  <api>
+    <additions>
+      <item>The "fakesrc" element now has a datarate property.</item>
+      <item>The "identity" element now has a datarate property.</item>
+    </additions>
+  </api>
+
+  <bugs>
+    <bug>
+      <id>136962</id>
+      <summary>crc error when decoding flac with typefind and threads</summary>
+    </bug>
+    <bug>
+      <id>150001</id>
+      <summary>[PATCH] Mem leaks in gstpad.c, gstxml.c and gstelement.c</summary>
+    </bug>
+    <bug>
+      <id>150262</id>
+      <summary>gstreamer.spec file needs correction to work with rpmbuil...</summary>
+    </bug>
+    <bug>
+      <id>150626</id>
+      <summary>bug trying to play a theora web stream</summary>
+    </bug>
+    <bug>
+      <id>153657</id>
+      <summary>make typefind prevent unneeded discont element</summary>
+    </bug>
+    <bug>
+      <id>153881</id>
+      <summary>[PATCH] in-code C declarations</summary>
+    </bug>
+  </bugs>
+</release>

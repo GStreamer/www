@@ -1,3 +1,9 @@
+2004-10-05  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/releases/gstreamer/0.8.6.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	  writing release notes
+
 2004-08-31  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* bin/data-get:
