@@ -98,6 +98,12 @@ with GStreamer to monitor and change elements parameters and pipeline structures
 Permovi is a Linux-based HTPC (Home Theatre PC) application. It transforms a PC into a standalone CD-player/tuner/DVD-player/PVR device. Permovi is using the Mono framework.
 </p>
 
+<h2>Pitivi</h2>
+<p><a href="http://www.pitivi.org/">Pitivi</a>
+Pitivi is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin non-linear video editing library.
+</p>
+
+
 <h2>Rhythmbox</h2>
 <p><a href="http://www.rhythmbox.org/">Rhythmbox</a> is an integrated music management application, originally inspired by Apple's iTunes.
 </p>
@@ -132,13 +138,6 @@ artistic tool for mapping movements in video to MIDI events</p>
 <p>
 <a href="http://ronald.bitfreak.net/me/aldegonde.php">Aldegonde</a> is a 
 simple media player made to ease debugging of GStreamer playback issues. 
-</p>
-
-<h2>GStreamer Player</h2>
-<p>
-<a href="&site;/modules/gst-player.html">GStreamer Player</a>,
-is a simple, but functional, media player that exposes some of the more 
-exotic features of GStreamer like the video effects.
 </p>
 
 <h2>gst-sci</h2>
