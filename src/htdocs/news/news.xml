@@ -1045,7 +1045,25 @@ or download the
     </content>
   </item>
 
-
-
+  <item>
+    <date>2004-06-05 18:59</date>
+    <title>GStreamer 0.8.3 "Oops" released</title>
+    <content>
+<p>
+The GStreamer team is not as proud as usual to announce a new stable release
+of the GStreamer 0.8.x series.
+</p>
+<p>
+This release is a hotfix release for the breakage of the switch element
+of gst-plugins.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gstreamer/0.8.3.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.8.3.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.8.3.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
 </news>
-
