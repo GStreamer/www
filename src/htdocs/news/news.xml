@@ -1,4 +1,9 @@
 <?xml-stylesheet href="news.xsl" type="text/xsl"?>
+<!DOCTYPE xsl:stylesheet
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
 <news>
   <item>
     <date>1999-10-31 00:00</date>
@@ -722,4 +727,35 @@ notes</A> and <A HREF="http://www.gstreamer.net/releases/0.7.1/">main download p
     </content>
     <title>GStreamer moves to Freedesktop.org</title>
   </item>
+
+  <item>
+    <date>2004-02-06 13:40</date>
+    <title>GStreamer and GStreamer Plugins 0.7.4 released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce another release of the
+GStreamer 0.7 development series.
+A lot of work has gone into this release to fix up bugs in current plugins
+and core.
+</p>
+<p>
+For GStreamer 0.7.4, check out
+<a href="&site;/releases/gstreamer/0.7.4.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.7.4.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.7.4.tar.bz2">tar.bz2</a> archive.
+</p>
+<p>
+For GStreamer Plugins 0.7.4, check out
+<a href="&site;/releases/gst-plugins/0.7.4.html">release notes</a>
+or download the
+<a href="&site;/src/gst-plugins/gst-plugins-0.7.4.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-plugins/gst-plugins-0.7.4.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
+
+
 </news>
+
