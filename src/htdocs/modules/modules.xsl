@@ -1,6 +1,8 @@
 <?xml version='1.0'?>
 <!DOCTYPE xsl:stylesheet
 [
+  <!ENTITY % gst-entities SYSTEM "../entities.gst">
+  %gst-entities;
   <!ENTITY % site-entities SYSTEM "../entities.site">
   %site-entities;
 ]>
@@ -94,8 +96,7 @@ Here's a quick overview of all of our modules :
   <td>browse CVS</td>
   <td>
     <xsl:call-template name="hyperlink">
-      <xsl:with-param name="href">
-http://freedesktop.org/cgi-bin/viewcvs.cgi/gstreamer/<xsl:value-of select="id" />
+      <xsl:with-param name="href">&gst-cvs-http;<xsl:value-of select="id" />
       </xsl:with-param>
     </xsl:call-template>
   </td>

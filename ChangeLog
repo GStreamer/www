@@ -1,3 +1,14 @@
+2004-12-01  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	patch by: Aurelien Mino
+
+	* src/htdocs/bindings/bindings.xml:
+	* src/htdocs/dev/index.xml:
+	* src/htdocs/entities.gst:
+	* src/htdocs/modules/modules.xsl:
+	* src/htdocs/tasks/code.xml:
+	  change gst-cvs-http and use it everywhere
+
 2004-11-25  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/releases/gst-plugins/0.8.6.xml:

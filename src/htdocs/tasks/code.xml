@@ -1,4 +1,9 @@
 <?xml-stylesheet href="tasks.xsl" type="text/xsl"?>
+<!DOCTYPE xsl:stylesheet
+[
+  <!ENTITY % gst-entities SYSTEM "../entities.gst">
+  %gst-entities;
+]>
 <page>
   <title>GStreamer: Tasks</title>
   <body>
@@ -107,8 +112,7 @@
         <anon>gnome cvs anon</anon>
       </cvs>
       <cvs of="GStreamer CVS">
-        <web>http://freedesktop.org/cgi-bin/viewcvs.cgi/gstreamer/</web>
-  
+        <web>&gst-cvs-http;</web>
         <anon>gst cvs anon</anon>
       </cvs>
     </cvses>

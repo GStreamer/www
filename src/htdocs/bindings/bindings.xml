@@ -194,7 +194,7 @@ The bindings are still under development and not yet released.
     </status>
 <body>
 <p>
-The GStreamer API <a href="http://java.sun.com/">Java</a> bindings are still under development. The prelimenary bindings can be found in the <a href="http://freedesktop.org/cgi-bin/viewcvs.cgi/gstreamer/gst-java/">gst-java</a> module in CVS.
+The GStreamer API <a href="http://java.sun.com/">Java</a> bindings are still under development. The prelimenary bindings can be found in the <a href="&gst-cvs-http;gst-java/">gst-java</a> module in CVS.
 </p>
 </body>
   </binding>

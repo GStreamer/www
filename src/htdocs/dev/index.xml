@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE xml
 [
+  <!ENTITY % gst-entities SYSTEM "../entities.gst">
+  %gst-entities;
   <!ENTITY % site-entities SYSTEM "../entities.site">
   %site-entities;
 ]>
@@ -38,7 +40,7 @@ can use irc.freenode.net to get there if you want.
                                                                                 
 <h2>Anonymous CVS Access</h2>
 <p>
-This project's freedesktop.org CVS repository can be checked out through anonymous CVS with the following instruction set. The module you wish to check out must be specified as the modulename. When prompted for a password for anonymous, simply press the Enter key. To determine the names of the modules created by this project, you may examine their CVS repository via the <A HREF="http://freedesktop.org/cgi-bin/viewcvs.cgi/gstreamer/">provided web-based CVS repository viewer</A>.
+This project's freedesktop.org CVS repository can be checked out through anonymous CVS with the following instruction set. The module you wish to check out must be specified as the modulename. When prompted for a password for anonymous, simply press the Enter key. To determine the names of the modules created by this project, you may examine their CVS repository via the <A HREF="&gst-cvs-http;">provided web-based CVS repository viewer</A>.
 </p>
 <p>
 <pre>
