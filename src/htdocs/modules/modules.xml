@@ -34,8 +34,8 @@ A wide range of video and audio decoders, encoders, and filters are included.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>0.6.4</stable>
-      <devel>0.7.5</devel>
+      <stable>&gst-plugins-version-stable;</stable>
+      <devel>&gst-plugins-version-devel;</devel>
     </versions>
   </module>
 
