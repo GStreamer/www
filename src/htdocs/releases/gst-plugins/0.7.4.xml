@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins</module>
+  <module-fancy>GStreamer Plugins</module-fancy>
+  <name>For Great Justice</name>
+  <version>0.7.4</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release in the
+0.7.x development series of the GStreamer streaming-media framework.
+The goal of this release series is to stabilize it towards a 0.8
+release series which will be part of the GNOME 2.6 releases
+and hopefully eventually KDE 4.x. 
+</p>
+<p>
+The 0.7 series is a development series and is aimed at developers.
+It is NOT API or ABI compatible with the stable 0.6.x series or
+with other releases in the series.  This means you can not use this
+release to upgrade your current GStreamer installation and expect your
+GStreamer applications to keep working without a recompile.
+It is however parallel installable with the 0.6.x series.
+</p>
+  </intro>
+  <features>
+    <feature>Compatible with gstreamer 0.7.4</feature>
+    <feature>Reworked pad negotation</feature>
+    <feature>Internationalized plugin elements</feature>
+    <feature>Reworked error notification with translated error messages and additional debug information for developer feedback</feature>
+    <feature>Updated Dutch and French translations</feature>
+    <feature>Reworked clocking</feature>
+    <feature>Added marshal and enum headers for libraries</feature>
+    <feature>New Ogg demuxer</feature>
+    <feature>New Theora decoder</feature>
+    <feature>New trm (musicbrainz) element</feature>
+    <feature>New switch element</feature>
+    <feature>New rfb (remote framebuffer) element</feature>
+    <feature>Updated quicktime demuxer</feature>
+    <feature>Updated SVQ3 decoding</feature>
+    <feature>Updated playback library</feature>
+    <feature>Updated flushing from gnomevfs source</feature>
+    <feature>Updated X and Xv image sinks</feature>
+    <feature>Updated audio conversion elements</feature>
+    <feature>Updated flac tag handling</feature>
+    <feature>Updated dvdnav element</feature>
+    <feature>Updated mplex element</feature>
+  </features>
+
+  <issues>
+    <issue>MPEG video playback needs to be updated, it doesn't work reliably</issue>
+  </issues>
+  <applications>
+<p>
+As mentioned there are some changes in API/ABI between the 0.6.x and 0.7.x
+releases.
+Many applications will probably be source compatible between 0.6.x. and 0.7.x
+however.
+<a href="http://www.rhythmbox.org/">Rhythmbox</a> and
+<a href="http://www.burtonini.com/blog/computers/sound-juicer">Sound Juicer</a>
+for instance work very well when compiled on 0.7.x.
+GStreamer Player does not work accross releases however,
+so we will make a separate release of gst-player with the needed
+fixes for it to work with 0.7.x. This release contains the core fixes we
+were waiting for to port the player over so expect a gst-player release in
+the near future.
+</p>
+  </applications>
+  <contributors>
+    <person>Amaury Jacquot</person>
+    <person>Arwed v. Merkatz</person>
+    <person>Benjamin Otte</person>
+    <person>Christian Fredrik Kalager Schaller</person>
+    <person>Colin Walters</person>
+    <person>David I. Lehn</person>
+    <person>David Schleef</person>
+    <person>Iain Holmes</person>
+    <person>Jan Schmidt</person>
+    <person>Jérémy Simon</person>
+    <person>Jon Trowbridge</person>
+    <person>Julien Moutte</person>
+    <person>Ronald Bultje</person>
+    <person>Steve Baker</person>
+    <person>Thomas Canty</person>
+    <person>Thomas Vander Stichele</person>
+  </contributors>
+</release>
