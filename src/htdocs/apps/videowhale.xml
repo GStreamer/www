@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: Applications</title>
+  <body>
+
+<h1>Video-Whale Project</h1>
+
+<img src="&site;/data/images/videowhale/videowhale.png" />
+<h2>Team</h2>
+<dl>
+<dt>Concept</dt><dd>Umer Anwar Sheikh</dd>
+<dt>Technical insight and Co-funding</dt><dd>Dr. Lutfullah Kakakhel (lutfullah(AT)upesh.edu)</dd>
+<dt>Developer</dt><dd>Zeeshan Ali Khattak (zak147(AT)yahoo.com)</dd>
+<dt>Special Thanks</dt><dd>Wim Taymans (wim.taymans(AT)chello.be) and the GStreamer team.</dd>
+</dl>
+ 
+<h2>Introduction</h2>
+
+<P>The video-whale project is an implementation of video-wall which exploits
+the combined power of GStreamer (www.gstreamer.net) and Xinerama.
+</P>
+ 
+<H2>Overview</H2>
+<P>
+Every group of four displays (monitors) are controlled by one machine. So there is a LAN of four machine behind the video-wall in the pictures below. Xinerama seems to work flawlessly for four displays. There are two GStreamer applications making it all happen: a client and a server. All four machines are running the client application, that receive mpeg1 system stream from the network, de-multiplexes, decodes, crops the images according to its need from the decoded stream and show it on the screen. One of the four machines, besides running the client Application also runs the server Application. The server application is only responsible for reading mpeg 1 system streams from a file and send it out on the network.
+</P>
+ 
+<H2>History</H2>
+<P>
+Well it all started when my friend Mr. Umer, who runs his own Research Company named North West Research (in Pakistan) told Dr. Lutfullah, who is a professor at the Center of Physical Chemistry and the poineer of computing in Peshawar and me about video-walls and that he had just realized the basic idea behind them. He told me that you just need to crop regions out of the video streams and then treat them as individual sub-streams. As he was telling us all this, I tried visualizing GStreamer doing all the tasks needed.</P>
+<P>I rather quick realized that the only extra component we needed in GStreamer was one that that did the cropping for us. At the same time I also saw that my knowledge about multimedia and GStreamer was not good enough to allow me to write this element. So I tried asking my friend Wim Taymans, who is one of the main-developrs of GStreamer, if he would be willing to take on the task of writing such a plugin. He was kind enough to do that not only because of my need, but also because he saw it as another nice feature of GStreamer that would be needed by many others.</P>
+<P>After I had done this I once again discussed the possibility of implementating the video-wall through GStreamer with Dr. Lutfullah and Mr. Umer. The project was funded by Northwest Research and Dr. Lutfulla which we named Video-Whale, which was also a suggestion of Wim Taymans. It turned out however that our biggest problem was finding PCI video cards in Pakistan whose XFree86 drivers could do XVideo, this in a situation when its hard to even find PCI video cards at all in the market. Solving this problem of lacking parts took us 3 months and at one point we even considered abondoning the project. We still need more cards because we do not have more than these 16 s3virge/DX cards. If any of the cards stop functioning, we are out of business.</P>
+ 
+<P>We plan on using these videowalls in Pakistani Universties and Schools to let them quickly set up videowalls for use in the classrooms when need be. Due to this we really need more cards so if anyone reading this has such videocards they don't use anymore and would be willing to send us, please contact us on email.</P>
+ 
+<P>Anyone interested in the videowalls on a commercial basis is also of course welcome to contact us.</P>
+ 
+<H2>Pictures of videowall in action</H2>
+<TABLE>
+<TR>
+  <TD><img src="&site;/data/images/videowhale/PIC00008.jpg" /></TD>
+</TR>
+<TR>
+  <TD><img src="&site;/data/images/videowhale/PIC00009.jpg" /></TD>
+</TR>
+<TR>
+  <TD><img src="&site;/data/images/videowhale/PIC00010.jpg" /></TD>
+</TR>
+<TR>
+  <TD><img src="&site;/data/images/videowhale/PIC00074.jpg" /></TD>
+</TR>
+<TR>
+  <TD><img src="&site;/data/images/videowhale/PIC00075.jpg" /></TD>
+</TR>
+<TR>
+  <TD><img src="&site;/data/images/videowhale/PIC00076.jpg" /></TD>
+</TR>
+<TR>
+  <TD><img src="&site;/data/images/videowhale/PIC00077.jpg" /></TD>
+</TR>
+</TABLE>
+  </body>
+</page>
