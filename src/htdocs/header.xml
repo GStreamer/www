@@ -14,6 +14,7 @@
     <item href="/dev/">Developers</item>
     <item href="/bindings/">Bindings</item>
     <item href="/tasks/">Tasks</item>
-    <item href="/lists/">Lists</item>
+    <item href="/lists/">Mailing Lists</item>
     <item href="/bugs/">Bug Lists</item>
+    <item href="http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">File a Bug</item>
   </menu>
