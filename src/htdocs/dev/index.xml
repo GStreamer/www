@@ -1,4 +1,9 @@
 <?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
   <title>GStreamer: developers</title>
