@@ -10,6 +10,7 @@ htaccess = \
 	releases/gstreamer/.htaccess \
 	releases/gst-player/.htaccess \
 	releases/gst-plugins/.htaccess \
+	data/pkg/.htaccess \
 	tasks/.htaccess
 
 
