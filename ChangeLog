@@ -1,3 +1,11 @@
+2004-08-31  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* bin/data-get:
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins/Makefile.am:
+	  releasing gst-plugins 0.8.4
+
 2004-08-18  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/download/fedora.xml:
