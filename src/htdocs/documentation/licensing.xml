@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+  <!ENTITY % gst-entities SYSTEM "../entities.gst">
+  %gst-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: Licensing advice</title>
+  <body>
+<h1>Licensing your applications and plugins for use with GStreamer</h1>
+
+<p>This document is the result of many discussions both inside the GStreamer 
+community and with stakeholders outside the community. It includes the
+results of discussions with many lawyers, including official representatives 
+of the FSF, to help us ensure we cover the legal issues as correctly as possible. 
+This does not mean the FSF or anyone else endorse the opinions in this page, 
+the opinions only represent the rough consensus of the GStreamer community. The 
+advice contained in here is meant as information and guidance for people 
+developing free and open source software using the GStreamer library, so 
+they are aware of the consequences of their choices. People developing 
+properietary software or people distributing GStreamer might also find this 
+document useful in order to understand how GStreamer works in a licensing context.</p>
+<p>For more information on licensing you can check out our <a href="licensingfaq.html">
+licensing and patents FAQ</a>.</p>
+
+<h2>Licensing of code contributed to GStreamer itself</h2>
+<p>GStreamer is a plugin based framework licensed under the LGPL. The
+reason for this choice in licensing was to ensure that everyone can use 
+GStreamer to build applications using licenses of their choice. 
+</p>
+<p>
+To keep this policy viable the GStreamer community has made a few licensing rules
+for code to be included in GStreamer or GStreamer's central modules like our
+official plugin packages. The first rule is that we demand that all code going
+into our core package is LGPL. For the plugin code we mandate the use of
+the LGPL for all plugins written from scratch or linking to external libraries. 
+Only exception to this is plugins containing older code under liberal licenses 
+like the MPL or BSD can use those licenses instead and still be considered 
+for inclusion. We do not accept GPL code to be added to our plugins module, 
+but we do accept LGPL licensed plugins utilizing an external GPL library. 
+The reason for demanding LGPL plugin even when using a GPL library is that 
+other developers might want to use the plugin code as a template 
+for plugins linking to non-gpl libraries.
+</p>
+<p>
+We also plan on splitting out the plugins using GPL libraries into a separate 
+package eventually and implement a system which makes sure an application
+will not be able to access these plugins unless it utilizes some special code 
+to do so. The point of this is not to block GPL licensed plugins from being used
+and developed, but to make sure people are not unintentionally violating the GPL
+license of said plugins.
+</p>
+<h2>Licensing of applications using GStreamer</h2>
+<p>
+The licensing of GStreamer is no different from a lot of other libraries out 
+there like GTK+ or glibc, we use the <a href="http://www.fsf.org/licenses/lgpl.html">
+LGPL</a>. What complicates things with regards to GStreamer 
+is its plugin based design and the heavily patented and proprietary nature 
+of multimedia codecs. While patents on software are currently only allowed in 
+a small minority of world countries, the US and Australia being the most 
+important of those, the problem is that with the very central place the US 
+hold in the world economy and the computing industry especially, software 
+patents are hard to ignore wherever you are.
+</p>
+<p>
+Due to this situation many companies, like major GNU/Linux distributions, 
+get trapped in a situation where they either get bad reviews due to lacking 
+out of the box media playback capabilities (and attempts to educate the 
+reviewers have met with little success so far) or go against their 
+own and the free software movements wish to avoid proprietary software. 
+Due to competitive pressure most choose to add some support. Doing that 
+through pure free software solutions they would risk heavy litigation and 
+punishment from patent owners. So when the choice is made to include support 
+for patented codecs it leaves them the alternatives of either using special 
+proprietary applications or try to integrate the support for these codecs 
+through proprietary plugins into the multimedia infrastructure provided by 
+GStreamer. Faced with one of these two evils the GStreamer community of 
+course prefer the second option.
+</p>
+<p>
+The problem which arises is that most Free and open source applications 
+developed use the GPL as their license. While this is generally a good
+thing it creates a dilemma for people who want to put together a distribution.
+The dilemma they face is that if they include proprietary plugins in GStreamer 
+to support patented formats in a way that is legal for them, they do risk 
+running afoul of the GPL license of the applications. We have gotten some 
+conflicting reports from lawyers of whether this is actually a problem, but 
+the official stance of the FSF is that it is a problem, so that is what we 
+go by as our measuring stick.
+</p>
+<p>
+So what does this mean for you as an application developer? Well it means
+you have to make an active decision on whether you want your application to
+be used together with proprietary plugins or not. What you decide here will
+also influence the chances of commercial distributions and Unix vendors
+shipping your application. The GStreamer community suggest you license your
+software using a license that will allow proprietary plugins to be bundled 
+with GStreamer and your applications, in order to make sure that as many
+vendors as possible go with GStreamer instead of less free solutions.
+This in turn we hope and think will let GStreamer be a vehicle for wider 
+use of free formats like the Ogg formats.
+</p>
+<p>
+If you do decide that you want to allow for non-free plugins to be used with
+your application you have a variety of choices. One of the simplest is using
+licenses like LGPL, MPL or BSD for your application instead of the GPL.
+Or you can add a exceptions clause to your GPL license stating that you except
+GStreamer plugins from the obligations of the GPL.
+</p>
+<p>
+A good example of such a GPL exceptions clause would be, using the Muine 
+music player project as an example:</p>
+<i>The Muine project hereby grant permission for non-gpl compatible
+GStreamer plugins to be used and distributed together with GStreamer and
+Muine. This permission are above and beyond the permissions granted by
+the GPL license Muine is covered by.</i>
+<p>
+Our suggestion among these choices is using the LGPL license as it is what
+resembles the GPL most and it makes it a good licensing fit with the major
+GNU/Linux desktop projects like GNOME and KDE.
+</p>
+<p>
+I have above outlined the practical reasons for why the GStreamer community
+suggest you allow non-free plugins to be used with your applications. We feel
+that in the multimedia arena the free software community is still not strong
+enough to set the agenda and that blocking non-free plugins to be used in our
+infrastructure hurts us more than it hurts the patent owners and their ilk.
+</p>
+<p> 
+This view is not shared by everyone. The <a href="http://www.fsf.org">Free Software Foundation</a> urges you to use an unmodified GPL for your applications, so as to push back 
+against the temptation to use non-free plug-ins. They say that since not everyone 
+else has the strength to reject them because they are unethical, they ask 
+your help to give them a legal reason to do so.</p>
+  </body>
+</page>
