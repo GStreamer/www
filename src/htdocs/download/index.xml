@@ -27,6 +27,9 @@ GStreamer.
   <DT>Red Hat 9</DT>
   <DD>Check our <A href="redhat.html">Red Hat</A> download page.</DD>
 
+  <DT>Debian</DT>
+  <DD>Not yet in experimental but on <A href="http://pkg-gnome.alioth.debian.org/debian">Alioth</A> (gstreamer core & plugins + rhythmbox).</DD>
+
   <DT>Source</DT>
   <DD>Check our <A href="&site;/modules/">modules</A> page, or
     go straight to our <A href="&site;/src/">source download directory</A>.</DD>
