@@ -1,0 +1,13 @@
+2004-07-12  David I. Lehn <dlehn@users.sourceforge.net>
+
+	* src/htdocs/index.xsl:
+	* src/htdocs/news/Makefile.am:
+	* src/htdocs/news/news.xsl:
+	* src/htdocs/news/news2atom.xsl:
+	* src/htdocs/news/news2rss-1.0.xsl:
+	Generate news feed
+
+2004-07-11  David I. Lehn <dlehn@users.sourceforge.net>
+
+	* ChangeLog:
+	Starting off a www module ChangeLog
