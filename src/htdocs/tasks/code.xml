@@ -63,7 +63,7 @@
 
       <code name="gnome-media-cdplayer">
 	<description>GNOME CD player</description>
-	<cvs>GNOME CVS</CVS>
+	<cvs>GNOME CVS</cvs>
 	<path>gnome-media/gnome-cd</path>
       </code>
 
