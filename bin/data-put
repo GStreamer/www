@@ -1,0 +1,8 @@
+#!/bin/sh
+if ! test -d data
+then
+  echo "Please run this from the www/ module dir"
+  exit 1
+fi
+
+rsync -arv -e ssh data pdx.freedesktop.org:/home/projects/gstreamer/www
