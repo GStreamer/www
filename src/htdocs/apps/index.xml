@@ -95,14 +95,18 @@ with GStreamer to monitor and change elements parameters and pipeline structures
 
 <h2>Permovi</h2>
 <p><a href="http://forge.novell.com/modules/xfmod/project/?permovi">Permovi</a> 
-Permovi is a Linux-based HTPC (Home Theatre PC) application. It transforms a PC into a standalone CD-player/tuner/DVD-player/PVR device. Permovi is using the Mono framework.
+is a Linux-based HTPC (Home Theatre PC) application. It transforms a PC into a standalone CD-player/tuner/DVD-player/PVR device. Permovi is using the Mono framework.
 </p>
 
 <h2>Pitivi</h2>
 <p><a href="http://www.pitivi.org/">Pitivi</a>
-Pitivi is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin non-linear video editing library.
+is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin non-linear video editing library.
 </p>
 
+<h2>Player</h2>
+<p><a href="http://linux-media.net/player/">Player</a>
+is a simple to use player which features inline visualizations.
+</p>
 
 <h2>Rhythmbox</h2>
 <p><a href="http://www.rhythmbox.org/">Rhythmbox</a> is an integrated music management application, originally inspired by Apple's iTunes.
