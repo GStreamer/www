@@ -3,7 +3,7 @@
 <release>
   <module>gst-plugins</module>
   <module-fancy>GStreamer Plugins</module-fancy>
-  <name>PRELIMINARY</name>
+  <name>IOU Love</name>
   <version>0.8.6</version>
 
   <intro>
@@ -34,9 +34,22 @@ element has been added to the Plugins however.
     <feature>Parallel installability with 0.6.x series</feature>
     <feature>Internationalization</feature>
 
-    <feature>New translation in this release: </feature>
+    <feature>New translation in this release: Norwegian Bokmaal</feature>
+    <feature>New translation in this release: Luca Ferretti</feature>
 
-    <feature>Translations: af az cs en_GB hu nl or sq sr sv uk</feature>
+    <feature>Translations: af az cs en_GB hu nb nl or sq sr sv uk</feature>
+
+    <feature>new element: polypsink</feature>
+    <feature>playbin fixes</feature>
+    <feature>support for cd://, cdda:// and dv:// uri</feature>
+    <feature>v4lsrc fixes</feature>
+    <feature>id3demux fixes</feature>
+    <feature>avc-based Firewire camera support</feature>
+    <feature>speex fixes</feature>
+    <feature>tcp fixes</feature>
+    <feature>multifdsink improvements</feature>
+    <feature>ffmpegcolorspace fixes</feature>
+    <feature>chained ogg support</feature>
   </features>
 
   <applications>
@@ -48,30 +61,40 @@ as provided by gstreamer-gconf-0.8.pc, to access the default settings.
   </applications>
   <contributors>
 <!--
-	<person>Arwed v. Merkatz</person>
 	<person>Balamurali Viswanathan</person>
-	<person>Benjamin Otte</person>
 	<person>Brian Cameron</person>
 	<person>Christian Schaller</person>
-	<person>Christophe Fergeau</person>
-	<person>David Schleef</person>
 	<person>Francis Labonte</person>
 	<person>Gora Mohanty</person>
-	<person>Iain Holmes</person>
-	<person>Jan Schmidt</person>
-	<person>Johan Dahlin</person>
-	<person>Julien Moutte</person>
 	<person>Martin Eikermann</person>
 	<person>Nathan Robertson</person>
 	<person>Phil Blundell</person>
-	<person>Ronald Bultje</person>
 	<person>Scott Wheeler</person>
-	<person>Sebastien Cote</person>
 	<person>Stephane Loeuillet</person>
+-->
+	<person>Arwed v. Merkatz</person>
+	<person>Benjamin Otte</person>
+	<person>Christophe Fergeau</person>
+	<person>David Schleef</person>
+	<person>Iain Holmes</person>
+	<person>James Henstridge</person>
+	<person>James Morrison</person>
+	<person>Jan Schmidt</person>
+	<person>Johan Dahlin</person>
+	<person>Julien Moutte</person>
+	<person>Kjartan Maraas</person>
+	<person>Koop Mast</person>
+	<person>Luca Ferretti</person>
+	<person>Martin Pitt</person>
+	<person>Milosz Derezynski</person>
+	<person>Ronald Bultje</person>
+	<person>Sebastien Cote</person>
+	<person>Stefan Kost</person>
+	<person>Takao Fujiwara</person>
 	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
 	<person>Wim Taymans</person>
 	<person>Zaheer Abbas Merali</person>
--->
   </contributors>
 
   <api>
@@ -85,6 +108,182 @@ as provided by gstreamer-gconf-0.8.pc, to access the default settings.
   </api>
 
   <bugs>
+    <bug>
+      <id>140994</id>
+      <summary>[mplex] configure failure</summary>
+    </bug>
+    <bug>
+      <id>143961</id>
+      <summary>MusePack codec support</summary>
+    </bug>
+    <bug>
+      <id>144389</id>
+      <summary>alsasink dies after some time playing</summary>
+    </bug>
+    <bug>
+      <id>144436</id>
+      <summary>opt / oggmux problem (endless interrupt event loop)</summary>
+    </bug>
+    <bug>
+      <id>150061</id>
+      <summary>gstreamer error in rhythmbox: vorbisdec(27925) vorbisdec....</summary>
+    </bug>
+    <bug>
+      <id>150576</id>
+      <summary>pad v4l2src0:src returned caps that are not a real subset...</summary>
+    </bug>
+    <bug>
+      <id>151059</id>
+      <summary>[sdlvideosink] doesn't implement overlay properly</summary>
+    </bug>
+    <bug>
+      <id>151064</id>
+      <summary>asfdemux crash</summary>
+    </bug>
+    <bug>
+      <id>151122</id>
+      <summary>doesn't work</summary>
+    </bug>
+    <bug>
+      <id>152750</id>
+      <summary>audioconvert crash</summary>
+    </bug>
+    <bug>
+      <id>154781</id>
+      <summary>[playbin/totem] avi file with just divx video (no audio) ...</summary>
+    </bug>
+    <bug>
+      <id>154784</id>
+      <summary>[playbin/totem] playing avi with 320x240 raw yuv video an...</summary>
+    </bug>
+    <bug>
+      <id>154788</id>
+      <summary>Xv video in another window</summary>
+    </bug>
+    <bug>
+      <id>154807</id>
+      <summary>auparse doesn't error out on invalid files</summary>
+    </bug>
+    <bug>
+      <id>154834</id>
+      <summary>0</summary>
+    </bug>
+    <bug>
+      <id>154903</id>
+      <summary>cdparanoia plugin doesn't handle URIs</summary>
+    </bug>
+    <bug>
+      <id>154967</id>
+      <summary>[wavenc] missing cast and terminator in gst_event_new_dis...</summary>
+    </bug>
+    <bug>
+      <id>155008</id>
+      <summary>LoTr movie segfaulting with gstreamer+totem</summary>
+    </bug>
+    <bug>
+      <id>155223</id>
+      <summary>memleak in wavparse</summary>
+    </bug>
+    <bug>
+      <id>155814</id>
+      <summary>gst_bin_iterate() gets stuck on some images</summary>
+    </bug>
+    <bug>
+      <id>155864</id>
+      <summary>[oggdemux] regression with files without proper EOS flag</summary>
+    </bug>
+    <bug>
+      <id>156372</id>
+      <summary>gst-plugins fails to build on AMD64</summary>
+    </bug>
+    <bug>
+      <id>156387</id>
+      <summary>[oggdemux] seeking is off by up to 30 secs (regression)</summary>
+    </bug>
+    <bug>
+      <id>156477</id>
+      <summary>Ogg Vorbis file fails to play. Works with ogg123</summary>
+    </bug>
+    <bug>
+      <id>156488</id>
+      <summary>Introducing device for alsasink in gconf makes totem crash</summary>
+    </bug>
+    <bug>
+      <id>156565</id>
+      <summary>gst_bin_remove crashes deep down</summary>
+    </bug>
+    <bug>
+      <id>156910</id>
+      <summary>Rhythmbox crash at the end of this song</summary>
+    </bug>
+    <bug>
+      <id>157032</id>
+      <summary>Patch for dispose/finalize functions in gst-plugins</summary>
+    </bug>
+    <bug>
+      <id>157281</id>
+      <summary>crash with totem-gst</summary>
+    </bug>
+    <bug>
+      <id>157543</id>
+      <summary>[rtpgsmparse] missing NULL terminator to gst_caps_new_sim...</summary>
+    </bug>
+    <bug>
+      <id>157548</id>
+      <summary>[vorbisenc] premature and/or missing terminator to gst_ca...</summary>
+    </bug>
+    <bug>
+      <id>157632</id>
+      <summary>C99 style variable initialization(multifilesrc_test.c)</summary>
+    </bug>
+    <bug>
+      <id>157964</id>
+      <summary>smoothwave display warnings when launching gst-register</summary>
+    </bug>
+    <bug>
+      <id>157986</id>
+      <summary>[vorbisdec] fix warning when querying while draining</summary>
+    </bug>
+    <bug>
+      <id>158006</id>
+      <summary>alsasink/rhythmbox don't like each other anymore</summary>
+    </bug>
+    <bug>
+      <id>158125</id>
+      <summary>...</summary>
+    </bug>
+    <bug>
+      <id>158221</id>
+      <summary>Build fix for gstreamer-plugins 0.8.5.3</summary>
+    </bug>
+    <bug>
+      <id>158365</id>
+      <summary>Fix for playbin hangs</summary>
+    </bug>
+    <bug>
+      <id>158375</id>
+      <summary>fix segfault in mp3 typefinding</summary>
+    </bug>
+    <bug>
+      <id>158462</id>
+      <summary>[dvdreadsrc] invalid reads / is_nav_pack assertion failure</summary>
+    </bug>
+    <bug>
+      <id>158832</id>
+      <summary>pngenc drops GstBuffer extra info (timestamp, length...)</summary>
+    </bug>
+    <bug>
+      <id>158976</id>
+      <summary>[oggdemux] seeking broken again [regression]</summary>
+    </bug>
+    <bug>
+      <id>159186</id>
+      <summary>[PATCH] videorate doesn't handle all colorspaces</summary>
+    </bug>
+    <bug>
+      <id>159187</id>
+      <summary>[PATCH] v4l probes too much and should cache</summary>
+    </bug>
   </bugs>
 
 </release>
