@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Gigantic</name>
+  <version>0.8.2</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release
+in the 0.8.x stable series of the GStreamer streaming-media framework.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
+</p>
+<p>
+This module only contains core functionality.  For actual media playback,
+you will need other modules.  GStreamer Plugins contains a huge set of
+additional plugins.  GStreamer FFmpeg contains a plugin based on the popular
+FFmpeg decoding library.  These modules need not have the same source version
+as the core, as long as they are in the 0.8.x series.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+    <feature>New translations in this release: Turkish, Ukrainian, GB English</feature>
+    <feature>Translations: af, az, en_GB, fr, nl, sr, sv, tr, uk</feature>
+    <feature>Fixes for setting elements to NULL to release devices</feature>
+    <feature>Windows port</feature>
+    <feature>New GStreamer Data Protocol helper library</feature>
+    <feature>New GstAdapter, similar to bytestream</feature>
+    <feature>Fixes for registry loading plugins with same name</feature>
+    <feature>Added no-more-pads signal</feature>
+    <feature>Added Fixed List GValue type</feature>
+    <feature>Fixes to schedulers</feature>
+  </features>
+
+  <applications>
+<p>
+Applications already ported to use GStreamer 0.8.x include the GNOME
+desktop components like gnome-media and nautilus-media, as well as other
+GNOME applications including sound-juicer, totem and RhythmBox.
+</p>
+  </applications>
+  <contributors>
+    <person>Baris Cicek</person>
+    <person>Benjamin Otte</person>
+    <person>Christian Rose</person>
+    <person>Daniel Gazard</person>
+    <person>David Schleef</person>
+    <person>Gareth Owen</person>
+    <person>Jan Schmidt</person>
+    <person>Johan Dahlin</person>
+    <person>Maxim V. Dziumanenko</person>
+    <person>Ronald Bultje</person>
+    <person>Sebastien Cote</person>
+    <person>Stephane Loeuillet</person>
+    <person>Thomas Vander Stichele</person>
+    <person>Wim Taymans</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>133897</id>
+      <summary>Internal GStreamer error: seek problem</summary>
+    </bug>
+    <bug>
+      <id>134839</id>
+      <summary>buffers leaked by filesrc, typefind, spider or fakesink</summary>
+    </bug>
+    <bug>
+      <id>137710</id>
+      <summary>When seeking, the sink's time is reset</summary>
+    </bug>
+    <bug>
+      <id>138012</id>
+      <summary>[opt] simple pipeline crashe</summary>
+    </bug>
+    <bug>
+      <id>138836</id>
+      <summary>docs build but won't install</summary>
+    </bug>
+    <bug>
+      <id>140015</id>
+      <summary>GstValue GTypes should not derive from G_TYPE_BOXED</summary>
+    </bug>
+    <bug>
+      <id>140156</id>
+      <summary>ARM port / type reading patches</summary>
+    </bug>
+    <bug>
+      <id>140477</id>
+      <summary>[debug] crash with *:2 while playing alien.mpg</summary>
+    </bug>
+    <bug>
+      <id>140594</id>
+      <summary>Small memory leak int gst_parse_launch()</summary>
+    </bug>
+    <bug>
+      <id>140734</id>
+      <summary>filesrc should handle named pipes/devices</summary>
+    </bug>
+    <bug>
+      <id>140743</id>
+      <summary>Leak in _gst_parse_escape()</summary>
+    </bug>
+    <bug>
+      <id>141083</id>
+      <summary>gstreamer-0.8.1 compile failure with gcc-3.4: error: PIC ...</summary>
+    </bug>
+    <bug>
+      <id>141176</id>
+      <summary>[mad] Can't play ...Faithfulness.mp3</summary>
+    </bug>
+    <bug>
+      <id>141304</id>
+      <summary>GST_CAPS and GST_IS_CAPS broken</summary>
+    </bug>
+    <bug>
+      <id>141317</id>
+      <summary>Win32 build with newest Microsoft compilers</summary>
+    </bug>
+    <bug>
+      <id>141414</id>
+      <summary>filesink leaks events</summary>
+    </bug>
+    <bug>
+      <id>141416</id>
+      <summary>leak in entrygthread scheduler</summary>
+    </bug>
+    <bug>
+      <id>141417</id>
+      <summary>Memory leak in gthread-cothreads.h</summary>
+    </bug>
+    <bug>
+      <id>142304</id>
+      <summary>The Win32 makefiles clean too much</summary>
+    </bug>
+    <bug>
+      <id>142804</id>
+      <summary>needed change to allow x86 Solaris compile with Forte</summary>
+    </bug>
+    <bug>
+      <id>142850</id>
+      <summary>GST-Register didn't find any plugins</summary>
+    </bug>
+    <bug>
+      <id>142957</id>
+      <summary>xmlregistry failes to compile on osx</summary>
+    </bug>
+  </bugs>
+</release>
