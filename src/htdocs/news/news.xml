@@ -776,6 +776,25 @@ or download the
   </item>
 
   <item>
+    <date>2004-02-26 18:55</date>
+    <title>GStreamer FFmpeg 0.7.1 released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce the first release of the
+GStreamer FFmpeg plugin.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gst-ffmpeg/0.7.1.html">release notes</a>
+or download the
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.7.1.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.7.1.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
+
+  <item>
     <date>2004-02-26 18:57</date>
     <title>GStreamer and GStreamer Plugins 0.7.5 released</title>
     <content>
