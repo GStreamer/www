@@ -1440,5 +1440,14 @@ amaroK developers Mark, Max and Leinir are being <a href="http://www.osnews.com/
 </p>
    </content>
    </item>
+    <item>
+<date>2004-12-20 12:00</date>
+    <title>First release of Pitivi Non-linear editor</title>
+    <content>
+<p>
+The <a href="http://www.pitivi.org">Pitivi</a> team proudly announced the first release of Pitivi, a non-linear video editor using the GStreamer framework. Be sure to check out this first release of what is destined to be the best NLE the world has ever seen :).
+</p>
+   </content>
+   </item>
 
 </news>
