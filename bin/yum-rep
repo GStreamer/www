@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# update redhat/fedora yum repositories
+# run this from the toplevel www directory that contains data/
+# specify
+# - nothing to rebuild all
+# - a directory containing yum dirs to rebuild for those dirs
+# the argument is treated as an argument to find, so all dirs in the tree
+# below your argument will trigger a regeneration
+
+BASEDIR=data/pkg
+
+if test ! -d $BASEDIR;
+then
+  echo "Please run this script from the www directory, containing $BASEDIR"
+  exit 1
+fi
+
+if test  ! -z $1; then BASEDIR=$1; fi
+cd $BASEDIR
+# get absolute
+ABSBASEDIR=`pwd`
+
+YUMS=`find * -type d -name "yum"`
+for yum in $YUMS;
+do
+  cd $ABSBASEDIR/$yum
+  DIRS=`find * -type d`
+  for dir in $DIRS;
+  do
+    echo "Generating yum repository for $BASEDIR/$yum/$dir"
+    cd $ABSBASEDIR/$yum/$dir
+    yum-arch -q .
+  done
+done
