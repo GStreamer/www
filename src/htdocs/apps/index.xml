@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: Applications</title>
+  <body>
+
+<p>
+ Because GStreamer is designed to be as generic as possible, a wide 
+ range of applications can be build on top of it with very little effort, 
+ allowing the programmer to focus on the user interface and human interaction
+ components of application design.
+</p>
+
+<!--
+<h1>Applications using GStreamer</h1>
+
+<p>
+ We've started a <a href="../status/?category=2">status page</a> that tracks the 
+ progress of applications that written using GStreamer. There are some really nice applications out there using Gstreamer now so be sure to check it out. And of course, let us know if you have anything you'd like to add to it.
+</p>
+-->
+
+<h1>our GStreamer applications</h1>
+
+<h2>GStreamer Player</h2>
+<p>
+One well-featured example shipped with GStreamer is the 
+<a href="gst-player/">GStreamer Player</a>,
+a simple, but functional, media player that
+ supports any media type for which plugins exist. 
+</p>
+
+<h2>GStreamer Editor</h2>
+<p>
+ We also include a graphical pipeline contruction interface similar in
+ goals to GLAME called 
+<a href="gst-editor/">GStreamer Editor</a>.
+ It was recently rewritten from the ground up and ported to GTK+ 2.
+</p>
+
+<h2>GStreamer Recorder</h2>
+<p>
+Our third in-house project is
+<a href="gst-recorder/">GStreamer Recorder</a>, which is currently under
+development and will be able to record perfectly synchronized audio/video
+in any format supported by GStreamer. 
+</p>
+
+
+<h2>Video Wall</h2>
+<p>Making a
+<a href="vw/">Video Wall</a> with GStreamer is easy, this article with pictures from Zeeshan Ali shows you how.  You can also read the
+<a href="vw/howto/">Videowall HOWTO</a>.
+</p>
+
+<h1>Application ideas</h1>
+
+<ul>
+<li>
+<B>Audio mixing environment:</B>
+<a href="../images/mixer.png"><img align="right" src="../images/mixer-small.png"/></a>
+<p>Complex audio environments require a high degree of repluggability.  
+This is usually done with racks of equipment and lots of cables, with a 
+patch panel if you're lucky.  Instead, GStreamer gives you unlimited 
+access to &quot;hardware&quot;, within the constraints of your CPU.</p>
+
+<p>With access to <a href="http://www.ladspa.org">LADSPA</a> plugins and
+multi-channel sound hardware via the ALSA source and
+sink, complex processing is as easy as drawing your idea mixing system in
+the editor.</p>
+
+<p>Of course, just having the processing half isn't enough, which is why
+significant time and effort will need to be expended in the user interface
+and automation systems.</p>
+</li>
+
+<li><b>DVD player:</b>
+<p>A DVD player is a relatively easy thing to construct given the right 
+components, some of which already exist.  A simple DVD player would look 
+something like this (as much as ASCII graphs look like anything):</p>
+
+<pre>
+                                           |=thread===========|
+                      -------(audio)-------|ac3dec--audiosink |
+|=thread============|/                     |==================|
+| dvdsrc--mpeg2parse|         |=thread============================|
+|===================|-(video)-|mpeg2dec--  |=bin================| |
+                    \         |========| \-|subtitle--videosink | |
+                     \---(subtitle)----|---|====================| |
+                                       |==========================|
+</pre>
+
+<p><a href="gst-player/">gst-player</a> should be 
+capable of constructing the above graph without any outside assistance.  
+Further work is necessary for the system to be capable of navigation, 
+menus, and angles.  Most such components would live outside the pipeline 
+in the DVD player application, but one might conceive of a case where 
+those pieces of code are capable of being autoplugged, reducing the act of 
+watching a DVD to the following command:</p>
+
+<pre>
+gst-player /dev/dvd
+</pre>
+</li>
+
+<li><I><B>Your application here!</B></I></li>
+
+<p>Just about anything you can think to do with media is possible with
+GStreamer. If you're not sure, just hop on the <A
+HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel</A>
+mailing list and ask us, we'll be glad to discuss it with you!</p>
+
+</ul>
+
+
+  </body>
+</page>

@@ -6,6 +6,7 @@ AM_INIT_AUTOMAKE(gstreamer-www, 0.0)
 AC_OUTPUT([
 Makefile
 htdocs/Makefile
+htdocs/apps/Makefile
 htdocs/dev/Makefile
 htdocs/documentation/Makefile
 htdocs/features/Makefile

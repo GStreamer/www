@@ -45,13 +45,13 @@
 </tr>
 <tr>
  <td>API Reference</td>
- <td colspan="3">[<a href="&site;/data/doc/gstreamer/stable/gst/html/">HTML</a>]</td>
- <td colspan="3">[<a href="&site;/data/doc/gstreamer/head/gst/html/">HTML</a>]</td>
+ <td colspan="3">[<a href="&site;/data/doc/gstreamer/stable/gstreamer/html/">HTML</a>]</td>
+ <td colspan="3">[<a href="&site;/data/doc/gstreamer/head/gstreamer/html/">HTML</a>]</td>
 </tr>
 <tr>
  <td>Extension Library API Reference</td>
- <td colspan="3">[<a href="&site;/data/doc/gstreamer/stable/gst-libs/html/">HTML</a>]</td>
- <td colspan="3">[<a href="&site;/data/doc/gstreamer/head/gst-libs/html/">HTML</a>]</td>
+ <td colspan="3">[<a href="&site;/data/doc/gstreamer/stable/gstreamer-libs/html/">HTML</a>]</td>
+ <td colspan="3">[<a href="&site;/data/doc/gstreamer/head/gstreamer-libs/html/">HTML</a>]</td>
 </tr>
 </table>
 
