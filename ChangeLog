@@ -1,3 +1,16 @@
+2004-08-16  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/bugs/bugs.xml:
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gstreamer/0.8.5.xml:
+	  releasing
+
+2004-08-16  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/releases/gstreamer/0.8.5.xml:
+	  adding bugs
+
 2004-08-12  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/page.xsl:

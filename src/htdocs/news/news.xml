@@ -1187,4 +1187,22 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2004-08-16 14:16</date>
+    <title>GStreamer 0.8.5 "Stuttgart" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of the
+GStreamer 0.8.x series.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gstreamer/0.8.5.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.8.5.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.8.5.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
 </news>

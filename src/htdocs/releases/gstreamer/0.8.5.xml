@@ -3,7 +3,7 @@
 <release>
   <module>gstreamer</module>
   <module-fancy>GStreamer</module-fancy>
-  <name>Stuttgart (PRELIMINARY)</name>
+  <name>Stuttgart</name>
   <version>0.8.5</version>
 
   <intro>
@@ -77,6 +77,25 @@ key units instead, since key units are the more common case.</item>
   </api>
 
   <bugs>
+    <bug>
+      <id>145100</id>
+      <summary>segfault in gst_pad_call_get_function</summary>
+    </bug>
+    <bug>
+      <id>147889</id>
+      <summary>gst_element_link_pads_filtered may ignore named dest pad ...</summary>
+    </bug>
+    <bug>
+      <id>148692</id>
+      <summary>GstQueue binary compatibility breakage</summary>
+    </bug>
+    <bug>
+      <id>149981</id>
+      <summary>Win32 not included in the source distribution</summary>
+    </bug>
+    <bug>
+      <id>150242</id>
+      <summary>GStreamer doesn't copy some buffer flags correctly</summary>
+    </bug>
   </bugs>
-
 </release>
