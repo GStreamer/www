@@ -13,7 +13,7 @@
 
 <xsl:include href="../page.xsl" />
 
-<!-- this template outputs a complete <a href > for a component and version -->
+<!-- this template outputs a complete <a href > for a component and milestone -->
 <xsl:template name="hyperlink.bug">
   <xsl:param name="id" />
   <xsl:param name="component" />
@@ -65,13 +65,18 @@ unresolved
 <h1>Bug Lists</h1>
 <table>
 <tr>
-<xsl:apply-templates />
-</tr>
-
-<tr>
   <td colspan="4">
 <a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query">All unresolved bugs</a>
   </td>
+</tr>
+<tr>
+  <td colspan="4">
+<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=RESOLVED&amp;resolution=FIXED&amp;target_milestone=HEAD&amp;form_name=query">All fixed in HEAD bugs (need to reassign to milestones)</a>
+  </td>
+</tr>
+
+<tr>
+<xsl:apply-templates />
 </tr>
 </table>
 
