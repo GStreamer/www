@@ -24,7 +24,49 @@
         <cvs>GNOME CVS</cvs>
         <path>gnome-media/gst-mixer</path>
       </code>
-  
+      
+      <code name="gnome-media-profiles">
+        <description>GNOME Media profiles</description>
+        <cvs>GNOME CVS</cvs>
+        <path>gnome-media/profiles</path>
+      </code>
+
+      <code name="grecord">
+        <description>GNOME Sound Recorder</description>
+        <cvs>GNOME CVS</cvs>
+        <path>gnome-media/grecord</path>
+      </code>
+
+      <code name="libgnome">
+        <description>GNOME development libraries</description>
+        <cvs>GNOME CVS</cvs>
+        <path>gnome-libs</path>
+      </code>
+
+      <code name="libgnomeui">
+	<description>GNOME UI development libraries</description>
+	<cvs>GNOME CVS</cvs>
+	<path>libgnomeui</path>
+      </code>
+
+      <code name="sound-juicer">
+        <description>Sound Juicer CD-ripper</description>
+        <cvs>GNOME CVS</cvs>
+        <path>sound-juicer</path>
+      </code>
+
+      <code name="gnome-media-gmix">
+	<description>Old GNOME volume control</description>
+	<cvs>GNOME CVS</cvs>
+	<path>gnome-media/gmix</path>
+       </code>
+
+      <code name="gnome-media-cdplayer">
+	<description>GNOME CD player</description>
+	<cvs>GNOME CVS</CVS>
+	<path>gnome-media/gnome-cd</path>
+      </code>
+
       <code name="gst-libs-gst-mixer">
         <description>GStreamer mixer interface API</description>
         <cvs>GStreamer CVS</cvs>
@@ -42,8 +84,21 @@
         <cvs>GStreamer CVS</cvs>
         <path>gstreamer/tools/gst-launch.c</path>
       </code>
-  
-  
+      <code name="tag.h">
+	<description>GStreamer tagging header file</description>
+	<cvs>GStreamer CVS</cvs>
+	<path>gst-plugins/gst-libs/gst/tag/</path>
+      </code>
+      <code name="vorbistagg">
+	<description>Vorbisdec C file with vorbis tag implementation</description>
+	<cvs>GStreamer CVS</cvs>
+	<path>gst-plugins/ext/vorbis/vorbisfile.c</path>
+      </code>
+      <code name="basicomega">
+	<description>Basicomega C file.</description>
+	<cvs>GStreamer CVS</cvs>
+	<path>gstreamer/gst/schedulers/gstbasicscheduler.c</path>
+      </code>
     </codes>
   
     <cvses>
@@ -52,7 +107,7 @@
         <anon>gnome cvs anon</anon>
       </cvs>
       <cvs of="GStreamer CVS">
-        <web>http://cvs.sourceforge.net/viewcvs.py/gstreamer/</web>
+        <web>http://freedesktop.org/cgi-bin/viewcvs.cgi/gstreamer/</web>
   
         <anon>gst cvs anon</anon>
       </cvs>

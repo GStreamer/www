@@ -21,8 +21,8 @@
       </how>
   
       <where>
-        <code id="gnome-media">
-          <name>gnome-media</name>
+        <code id="gnome-media-cdplayer">
+          <name>GNOME CD player</name>
           <description>The code to port to GStreamer</description>
         </code>
         
@@ -56,10 +56,13 @@
   
       <where>
         <code id="gnome-media/gmix">
-          <name>gmix</name>
+          <name>Old gmix</name>
           <description>The code to port to gst-mixer</description>
         </code>
-        
+        <code id="gnome-media-gst-mixer">
+	<name>New GNOME gst mixer</name>
+	<description>The new GStreamer based mixer interface</description>
+	</code>
       </where>
   
       <difficulty>
@@ -90,7 +93,7 @@
   	Look at gnome-sound-recorder or any other GNOME module with online docs to see how they are done. You should also look over the GNOME Documentation project for information on how to do this.</how>
   
       <where>
-        <code id="gnome-media/grecord">
+        <code id="grecord">
           <name>grecord</name>
           <description>The code of gnome-sound-recorder which can serve as an example</description>
         </code>
@@ -125,11 +128,16 @@
   	Look at the gnome-audio-profiles code in gnome-media. You find it in the 'profiles' directory.</how>
   
       <where>
-        <code id="gnome-media/profiles">
-          <name>profiles</name>
+        <code id="gnome-media-profiles">
+          <name>GNOME Media profiles</name>
           <description>The code of the audio profile code</description>
         </code>
-        
+
+        <code id="sound juicer">
+        <name>Sound Juicer CD ripper</name>
+          <description>Sound juicer CD ripper code</description>
+        </code>
+
       </where>
   
       <difficulty>
@@ -160,11 +168,14 @@
   	Look at the gnome-audio-profiles code in gnome-media. You find it in the 'profiles' directory.</how>
   
       <where>
-        <code id="gnome-media/profiles">
-          <name>profiles</name>
+        <code id="gnome-media-profiles">
+          <name>GNOME Media profiles</name>
           <description>The code of the audio profile code</description>
         </code>
-        
+        <code id="grecord">
+          <name>grecord</name>
+          <description>The code of gnome-sound-recorder.</description>
+        </code>
       </where>
   
       <difficulty>
@@ -181,7 +192,7 @@
       </see>
     </task>
   
-    <task name="libgnomeimy">
+    <task name="libgnomeify">
       <title>Update and merge libgnome GStreamer patches</title>
       <description>
   	There where a couple of patches made long ago that migrates libgnome to use GStreamer for audio playback. These patches should be cleaned up (use GStreamer directly) and verified to work with GStreamer 0.7/0.8.
@@ -191,8 +202,19 @@
   	As we are now moving to really take advantage of GStreamer in the GNOME technology stack it is natural to also move libgnome to GStreamer.</why>
   
       <how>
-  	Patches can be found in these two GNOME bugzilla entries <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82340">82340</A> and <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82341">82341</A>.</how>
+  	Patches can be found in these two GNOME bugzilla entries <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82340">82340</A> and <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82341">82341</A>. These patches uses monkey-media. Today we probably want to access GStreamer directly or use gstplay.</how>
   
+	<where>
+        <code id="libgnome">
+          <name>GNOME development library</name>
+          <description>GNOME development library</description>
+        </code>
+        <code id="libgnomeui">
+          <name>GNOME UI development library</name>
+          <description>GNOME UI development library</description>
+        </code>
+
+      </where>
       <difficulty>
         MEDIUM - Fairly simple code, but at a very high impact place in the toolchain.
       </difficulty>
