@@ -1,0 +1,8 @@
+#!/bin/sh
+# this script is run on the fdo server, so no use running at home
+# it forcefully updates cvs, autogens, and makes
+
+cd /home/projects/gstreamer/www
+cvs update -dP
+src/autogen.sh
+make

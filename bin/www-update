@@ -1,0 +1,4 @@
+#!/bin/sh
+# manually ssh into fdo and update site completely
+
+ssh pdx.freedesktop.org /home/projects/gstreamer/www/bin/www-update-complete
