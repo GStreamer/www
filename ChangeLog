@@ -1,3 +1,9 @@
+2005-01-05  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/releases/gst-plugins/0.8.7.xml:
+	* src/htdocs/releases/gst-plugins/Makefile.am:
+	  release notes for gst-plugins 0.8.7
+
 2004-12-27  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
 
 	* src/htdocs/news/news.xml:
