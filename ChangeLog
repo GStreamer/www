@@ -1,7 +1,8 @@
 2005-01-20  Stephane LOEUILLET  <stephane.loeuillet@tiscali.fr>
 
+	* src/htdocs/documentation/index.xml:
 	* src/htdocs/news/news.xml:
-	  fix link to new licencing page
+	  fix link to new licensing page
 
 2005-01-15  Thomas Vander Stichele  <thomas at apestaart dot org>
 
