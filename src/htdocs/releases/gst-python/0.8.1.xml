@@ -25,10 +25,12 @@ serveral applications.
     <feature>Updated examples</feature>
     <feature>Reference counting fixes</feature>
   </features>
-  <maintainers>
+  <contributors>
     <person>Zaheer Abbas Merali</person>
-    <person>Johan Dahlin</person>
     <person>Martin Soto</person>
     <person>Brian Warner</person>
+  </contributors>
+  <maintainers>
+    <person>Johan Dahlin</person>
   </maintainers>
 </release>
