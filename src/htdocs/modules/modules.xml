@@ -50,7 +50,7 @@ library.
       <src>gst-player/gst-player-0.7.0.jpg</src>
    </screenshot>
     <versions>
-      <devel>0.7.0</devel>
+      <stable>0.6.0</stable>
     </versions>
   </module>
 
@@ -154,7 +154,6 @@ HREF="http://plugin.org.uk/">LADSPA</A> gong model reverb filter.</li>
       <src>gst-editor/gst-editor-0.4.1.png</src>
    </screenshot>
     <versions>
-      <devel>0.6.0</devel>
     </versions>
   </module>
 

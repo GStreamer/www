@@ -14,7 +14,7 @@
 <xsl:include href="../page.xsl" />
 
 <!-- this template outputs a complete <a href > for a component and version -->
-<xsl:template name="hyperlink">
+<xsl:template name="hyperlink.bug">
   <xsl:param name="id" />
   <xsl:param name="component" />
   <xsl:param name="milestone" />
@@ -46,7 +46,7 @@ unresolved
   <xsl:for-each select="milestones/milestone">
 <tr>
   <td>
-  <xsl:call-template name="hyperlink">
+  <xsl:call-template name="hyperlink.bug">
     <xsl:with-param name="id"><xsl:value-of select="../../@id" /></xsl:with-param>
     <xsl:with-param name="component"><xsl:value-of select="../../component" /></xsl:with-param>
     <xsl:with-param name="milestone"><xsl:value-of select="." /></xsl:with-param>

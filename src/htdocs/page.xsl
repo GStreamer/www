@@ -11,6 +11,21 @@
 
   <xsl:include href="header.xsl" />
 
+<!-- this template outputs a complete <a href > construction given the href -->
+<xsl:template name="hyperlink">
+  <xsl:param name="href" />
+  <!-- if no text param specified, we default to the href value -->
+  <xsl:param name="text" select="$href"/>
+  <xsl:element name="a">
+    <xsl:attribute name="href">
+      <xsl:value-of select="$href" />
+    </xsl:attribute>
+    <xsl:value-of select="$text" />
+  </xsl:element>
+</xsl:template>
+
+
+
 <!-- page template -->
 <!-- call with content variable containing html content to paste verbatim -->
 <xsl:template name="page">

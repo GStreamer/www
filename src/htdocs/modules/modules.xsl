@@ -14,19 +14,6 @@
 
 <xsl:include href="../page.xsl" />
 
-<!-- this template outputs a complete <a href > construction given the href -->
-<xsl:template name="hyperlink">
-  <xsl:param name="href" />
-  <!-- if no text param specified, we default to the href value -->
-  <xsl:param name="text" select="$href"/>
-  <xsl:element name="a">
-    <xsl:attribute name="href">
-      <xsl:value-of select="$href" />
-    </xsl:attribute>
-    <xsl:value-of select="$text" />
-  </xsl:element>
-</xsl:template>
-
 <!-- this template writes the index file -->
 <xsl:template name="write.index">
   <exsl:document href="index{$dotext}" method="html">
@@ -58,7 +45,13 @@ Here's a quick overview of all of our modules :
   </td>
   <td><xsl:value-of select="blurb" /></td>
   <td><xsl:value-of select="versions/stable" /></td>
-  <td><xsl:value-of select="versions/devel" /></td>
+  <td>
+      <xsl:call-template name="hyperlink">
+        <xsl:with-param name="href">
+          &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/devel" />.html</xsl:with-param>
+        <xsl:with-param name="text"><xsl:value-of select="versions/devel" /></xsl:with-param>
+          </xsl:call-template>
+  </td>
 </tr>
  
         </xsl:for-each>
