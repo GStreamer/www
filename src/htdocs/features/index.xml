@@ -58,13 +58,13 @@ XML</a> and loaded back to working state</li>
 
 <h2>Extensive Development Tools</h2>
 <ul>
-<li><a href="apps/gst-editor/">Graphical editor</a> allows pipelines to be
+<li><a href="&site;/modules/gst-editor.html">Graphical editor</a> allows pipelines to be
 built quickly, run, and saved as XML</li>
 <li>
 <a href="&site;/data/doc/gstreamer/head/manual/html/section-programs-gst-launch.html">
 gst-launch command-line tool</a> enables even
 quicker prototyping and testing, similar to ecasound</li>
-<li><a href="apps/gst-player/">GStreamer media player</a> capable of 
+<li><a href="&site;/modules/gst-player.html">GStreamer media player</a> capable of 
 playing any media type for which plugins exist</li>
 <li>All tools written as libraries to allow easy reuse</li>
 <li>A lot of 
@@ -78,7 +78,7 @@ plugin writer's guide</a></li>
 <!--
 <li>Large selection of <a href="status/">included plugins</a></li>
 -->
-<li>Access to GStreamer API with <a href="bindings/">various programming languages</a></li>
+<li>Access to GStreamer API with <a href="&site;/bindings/">various programming languages</a></li>
 </ul>
 
 <p>GSreamer is rapidly approaching a stable API. There are still a number of
