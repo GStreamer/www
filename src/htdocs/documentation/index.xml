@@ -17,7 +17,7 @@
 <tr>
  <th>document</th>
  <th colspan="3">HEAD</th>
- <th colspan="3">devel &gst-version-devel;</th>
+<!-- <th colspan="3">devel &gst-version-devel;</th> -->
  <th colspan="3">stable &gst-version-stable;</th>
 </tr>
 <tr>
@@ -25,11 +25,11 @@
  <td><a href="&site;/data/doc/gstreamer/head/manual/html/index.html">HTML</a></td>
  <td><a href="&site;/data/doc/gstreamer/head/manual/manual.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/head/manual/manual.pdf">PDF</a></td>
-
+<!--
  <td><a href="&site;/data/doc/gstreamer/devel/manual/html/index.html">HTML</a></td>
  <td><a href="&site;/data/doc/gstreamer/devel/manual/manual.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/devel/manual/manual.pdf">PDF</a></td>
-
+ -->
  <td><a href="&site;/data/doc/gstreamer/stable/manual/html/index.html">HTML</a></td>
  <td><a href="&site;/data/doc/gstreamer/stable/manual/manual.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/stable/manual/manual.pdf">PDF</a></td>
@@ -48,11 +48,11 @@
  <td><a href="&site;/data/doc/gstreamer/head/pwg/html/index.html">HTML</a></td>
  <td><a href="&site;/data/doc/gstreamer/head/pwg/pwg.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/head/pwg/pwg.pdf">PDF</a></td>
-
+<!--
  <td><a href="&site;/data/doc/gstreamer/devel/pwg/html/index.html">HTML</a></td>
  <td><a href="&site;/data/doc/gstreamer/devel/pwg/pwg.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/devel/pwg/pwg.pdf">PDF</a></td>
-
+ -->
  <td><a href="&site;/data/doc/gstreamer/stable/pwg/html/index.html">HTML</a></td>
  <td><a href="&site;/data/doc/gstreamer/stable/pwg/pwg.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/stable/pwg/pwg.pdf">PDF</a></td>
@@ -60,13 +60,13 @@
 <tr>
  <td>API Reference</td>
  <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gstreamer/html/">HTML</a></td>
- <td colspan="3"><a href="&site;/data/doc/gstreamer/devel/gstreamer/html/">HTML</a></td>
+<!-- <td colspan="3"><a href="&site;/data/doc/gstreamer/devel/gstreamer/html/">HTML</a></td> -->
  <td colspan="3"><a href="&site;/data/doc/gstreamer/stable/gstreamer/html/">HTML</a></td>
 </tr>
 <tr>
  <td>Extension Library API Reference</td>
  <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gstreamer-libs/html/">HTML</a></td>
- <td colspan="3"><a href="&site;/data/doc/gstreamer/devel/gstreamer-libs/html/">HTML</a></td>
+<!-- <td colspan="3"><a href="&site;/data/doc/gstreamer/devel/gstreamer-libs/html/">HTML</a></td> -->
  <td colspan="3"><a href="&site;/data/doc/gstreamer/stable/gstreamer-libs/html/">HTML</a></td>
 </tr>
 </table>
