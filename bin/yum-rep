@@ -25,7 +25,7 @@ YUMS=`find * -type d -name "yum"`
 for yum in $YUMS;
 do
   cd $ABSBASEDIR/$yum
-  DIRS=`find * -type d`
+  DIRS=`find * -type d -maxdepth 0`
   for dir in $DIRS;
   do
     echo "Generating yum repository for $BASEDIR/$yum/$dir"

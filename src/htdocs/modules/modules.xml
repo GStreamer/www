@@ -17,7 +17,7 @@ and core elements.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>0.6.4</stable>
+      <stable>0.6.5</stable>
       <devel>0.7.4</devel>
     </versions>
   </module>
