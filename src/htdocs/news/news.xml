@@ -950,20 +950,20 @@ or download the
   </item>
 
   <item>
-    <date>2004-03-30 12:59</date>
-    <title>GStreamer Python bindings 0.7.90 "Here's looking at you, kid" released</title>
+    <date>2004-03-31 18:02</date>
+    <title>GStreamer Python bindings 0.7.91 released</title>
     <content>
 <p>
-The GStreamer team is proud to announce the first release of the Python
+The GStreamer team is proud to announce the second release of the Python
 bindings targetting the 0.8.x series of GStreamer. It is still unstable so make
-sure you file a bug for all nasty things you can find
+sure you file a bug for all nasty things you can find.
 </p>
 <p>
 Check out the
-<a href="&site;/releases/gst-python/0.7.90.html">release notes</a>
+<a href="&site;/releases/gst-python/0.7.91.html">release notes</a>
 or download the
-<a href="&site;/src/gst-python/gst-python-0.7.90.tar.gz">tar.gz</a> or
-<a href="&site;/src/gst-python/gst-python-0.7.90.tar.bz2">tar.bz2</a> archive.
+<a href="&site;/src/gst-python/gst-python-0.7.91.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-python/gst-python-0.7.91.tar.bz2">tar.bz2</a> archive.
 </p>
     </content>
   </item>
