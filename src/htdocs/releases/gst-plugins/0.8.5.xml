@@ -97,70 +97,71 @@ as provided by gstreamer-gconf-0.8.pc, to access the default settings.
 	<person>Wim Taymans</person>
 	<person>Zaheer Abbas Merali</person>
   </contributors>
+
   <bugs>
     <bug>
-      <id>121809</id>
-      <summary>[Solaris] Not able to record</summary>
+      <id>119376</id>
+      <summary>Playback out of sync for mpeg videos from DVB</summary>
     </bug>
     <bug>
-      <id>130682</id>
-      <summary>[alsasink] fails to negotiate with audio decoders</summary>
+      <id>126922</id>
+      <summary>[qtdemux] demuxes incorrectly</summary>
     </bug>
     <bug>
-      <id>135407</id>
-      <summary>[xviddec] shows green frames when decoding packed bitstre...</summary>
+      <id>135528</id>
+      <summary>[ximagesink] crashes on resize</summary>
     </bug>
     <bug>
-      <id>140432</id>
-      <summary>Osssink and alsasink broken on nforce2 (intel8x0) soundcard</summary>
+      <id>137748</id>
+      <summary>[ffdec_wmav2] jaggy video for homeShopping.asf</summary>
     </bug>
     <bug>
-      <id>140897</id>
-      <summary>Incorrect segment duration in files created with matroska...</summary>
+      <id>139194</id>
+      <summary>[gstplay] doesn't play media with only video</summary>
     </bug>
     <bug>
-      <id>140898</id>
-      <summary>No writing application specified in matroska files create...</summary>
+      <id>139588</id>
+      <summary>In Alsa tab, binary value options appear as a slider and ...</summary>
     </bug>
     <bug>
-      <id>141554</id>
-      <summary>vorbis in matroska files makes the vorbisdec plugin segfault</summary>
+      <id>142268</id>
+      <summary>avidemux forwards flush events event when not seeking</summary>
     </bug>
     <bug>
-      <id>144091</id>
-      <summary>[Solaris] audio mixer element</summary>
+      <id>147441</id>
+      <summary>typefind recognizes ELF files as audio/mpeg</summary>
     </bug>
     <bug>
-      <id>144616</id>
-      <summary>Infinite loop in wavparse.</summary>
+      <id>148283</id>
+      <summary>** ERROR **: file gst-register.c: line 138 (main): assert...</summary>
     </bug>
     <bug>
-      <id>148711</id>
-      <summary>typefind function for TTA audio files</summary>
+      <id>148993</id>
+      <summary>Gstreamer fails to play Faac created aac file</summary>
     </bug>
     <bug>
-      <id>148950</id>
-      <summary>matroskademux doesn't set buffer duration</summary>
+      <id>149742</id>
+      <summary>[asfdemux] Can't play Shania Twain - Up.wma</summary>
     </bug>
     <bug>
-      <id>148951</id>
-      <summary>matroskademux misses the tta codec in its codec list</summary>
+      <id>150589</id>
+      <summary>dirac plugin does not compile with dirac-0.4.0</summary>
     </bug>
     <bug>
-      <id>151232</id>
-      <summary>[lame] doesn't build with lame-3.90</summary>
+      <id>151416</id>
+      <summary>[PATCH] Fix CVS jhbuild build failure of gstadder.c</summary>
     </bug>
     <bug>
-      <id>151236</id>
-      <summary>[v4l] compile failure</summary>
+      <id>151419</id>
+      <summary>[PATCH] Fix CVS jhbuild build failure of progressreport.c</summary>
     </bug>
     <bug>
-      <id>151410</id>
-      <summary>Memory leaks in multifdsink</summary>
+      <id>151420</id>
+      <summary>[PATCH] matroska-demux.c build failure on x86_64</summary>
     </bug>
     <bug>
-      <id>151462</id>
-      <summary>theora plugin Makefile broken</summary>
+      <id>151421</id>
+      <summary>[PATCH] playback/test3.c build failure on x86_64</summary>
     </bug>
     <bug>
       <id>151877</id>
@@ -195,16 +196,65 @@ as provided by gstreamer-gconf-0.8.pc, to access the default settings.
       <summary>[PATCH] Fix format string warnings in player.c</summary>
     </bug>
     <bug>
+      <id>152091</id>
+      <summary>aspect-ratio fixes</summary>
+    </bug>
+    <bug>
       <id>152102</id>
       <summary>wavenc leaks events</summary>
+    </bug>
+    <bug>
+      <id>152289</id>
+      <summary>wavparse pushes buffers on unusable source pad</summary>
     </bug>
     <bug>
       <id>152341</id>
       <summary>patch for ivorbis compile failure</summary>
     </bug>
     <bug>
+      <id>152671</id>
+      <summary>file not playing back with BBB's gst-player</summary>
+    </bug>
+    <bug>
+      <id>152692</id>
+      <summary>Compile error with gcc 2.95</summary>
+    </bug>
+    <bug>
+      <id>152757</id>
+      <summary>playes this file in slow motion while other media players...</summary>
+    </bug>
+    <bug>
+      <id>152805</id>
+      <summary>[sunaudiosink] Deselects other input ports</summary>
+    </bug>
+    <bug>
+      <id>152806</id>
+      <summary>[sunaudiomixer]  Mute functionality is broken</summary>
+    </bug>
+    <bug>
+      <id>153388</id>
+      <summary>Mpeg makes Totem hang</summary>
+    </bug>
+    <bug>
+      <id>153818</id>
+      <summary>AVI plays back extremely slowly</summary>
+    </bug>
+    <bug>
+      <id>154056</id>
+      <summary>Small leak in wavparse</summary>
+    </bug>
+    <bug>
       <id>154301</id>
       <summary>typefind and rmdemux don't use the same mime type for rea...</summary>
     </bug>
+    <bug>
+      <id>154375</id>
+      <summary>avi index massaging is slow</summary>
+    </bug>
+    <bug>
+      <id>154518</id>
+      <summary>gst-plugins speex support not compatible with speex-1.0.x...</summary>
+    </bug>
   </bugs>
+
 </release>
