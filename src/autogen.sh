@@ -7,7 +7,7 @@ ORIGDIR=`pwd`
 cd $srcdir
 
 aclocal && \
-automake --add-missing --copy && \
+automake --foreign --add-missing --copy && \
 autoconf \
   || exit 1
 
