@@ -1,3 +1,10 @@
+2005-03-11  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
+
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.8.4.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	  Release of gst-ffmpeg 0.8.4 "Mellow on my fingers".
+
 2005-03-07  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/entities.gst:

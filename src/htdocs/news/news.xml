@@ -1595,4 +1595,21 @@ or download the
     </content>
   </item>
  
+  <item>
+    <date>2005-03-11 10:40 GMT</date>
+    <title>GStreamer FFmpeg 0.8.4 "Mellow on my fingers" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of the
+GStreamer FFmpeg 0.8.x series.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gst-ffmpeg/0.8.4.html">release notes</a>
+or download the
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.8.4.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.8.4.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
 </news>

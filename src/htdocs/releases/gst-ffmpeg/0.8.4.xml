@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-ffmpeg</module>
+  <module-fancy>GStreamer FFmpeg</module-fancy>
+  <name>Mellow on my fingers</name>
+  <version>0.8.4</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new stable release of the
+FFmpeg-based GStreamer plugin.
+</p>
+<p>
+This module is separated from GStreamer Plugins for easier maintenance
+and decoupled release cycles.
+Our CVS contains both the patched source code to FFmpeg, as well as the
+set of patches against upstream CVS, so we can send patches upstream
+regularly from our modifications.
+</p>
+  </intro>
+  <features>
+    <feature>codecs for most popular formats</feature>
+    <feature>stability fixes</feature>
+  </features>
+  <contributors>
+    <person>Ronald Bultje</person>
+    <person>Jan Schmidt</person>
+    <person>Luca Ognibene</person>
+  </contributors>
+  <bugs>
+    <bug>
+      <id>162905</id>
+      <summary>SEGV when using ffenc_msmpeg4</summary>
+    </bug>
+    <bug>
+      <id>163340</id>
+      <summary>[PATCH] [ffdec_mjpeg] ffdec_mjpeg doesn't work anymore </summary>
+    </bug>
+    <bug>
+      <id>163437</id>
+      <summary>[ffenc_*] Encoders segfault on exit</summary>
+    </bug>
+    <bug>
+      <id>163467</id>
+      <summary>[ffdec_mpeg2video] causes 'lag'</summary>
+    </bug>
+    <bug>
+      <id>165250</id>
+      <summary>Problem compiling gst-ffmpeg 0.8.3</summary>
+    </bug>
+    <bug>
+      <id>165501</id>
+      <summary>ffmpeg flac decoder fails on testsuite flac</summary>
+    </bug>
+  </bugs>
+</release>
