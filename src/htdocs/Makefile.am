@@ -5,7 +5,13 @@ SUBDIRS = apps bugs dev documentation images \
 built_pages = index.html
 index_style = index.xsl
 css = gstreamer.css
-htaccess = tasks/.htaccess
+
+htaccess = \
+	releases/gstreamer/.htaccess \
+	releases/gst-player/.htaccess \
+	releases/gst-plugins/.htaccess \
+	tasks/.htaccess
+
 
 media pkg src:
 	ln -sf ../data/$@ .
