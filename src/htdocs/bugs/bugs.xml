@@ -38,6 +38,7 @@
     <component>gst-plugins</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.8.8</milestone>
       <milestone>0.8.7</milestone>
       <milestone>0.8.6</milestone>
       <milestone>0.8.5</milestone>
