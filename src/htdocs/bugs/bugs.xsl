@@ -29,8 +29,8 @@ http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value
 
 <xsl:template match="module">
 <td valign="top">
-<table border="1">
-<tr><td><xsl:value-of select="@id" /></td></tr>
+<table border="1" cellspacing="0" cellpadding="2">
+<tr><th><xsl:value-of select="@id" /></th></tr>
 
 <!-- blocker bugs for this component -->
 <tr>
@@ -77,7 +77,7 @@ unresolved
     <xsl:with-param name="title">GStreamer: Bug Lists</xsl:with-param>
     <xsl:with-param name="content">
 <h1>Bug Lists</h1>
-<table>
+<table border="0">
 <tr>
   <td colspan="4">
 <a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query">All unresolved bugs</a>

@@ -1,5 +1,11 @@
 2005-03-26  Stefan Kost  <ensonic@users.sf.net>
 
+	* src/htdocs/bindings/bindings.xsl:
+	* src/htdocs/bugs/bugs.xsl:
+    another litle finetuning of the tables
+
+2005-03-26  Stefan Kost  <ensonic@users.sf.net>
+
 	* TODO:
     little update
 	* src/htdocs/download/index.xml:

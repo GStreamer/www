@@ -26,7 +26,7 @@ There are bindings for GStreamer for quite a few languages already.
 <p>
 Here's a quick overview of all of our bindings :
                                                                                 
-<table width="100%" border="1">
+<table width="95%" border="1" cellspacing="0" cellpadding="2">
 <tr>
   <th>language</th>
   <th>status</th>
