@@ -931,6 +931,24 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2004-03-18 10:59</date>
+    <title>GStreamer Player 0.8.0 "Losing Grip" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce the first stable release of the
+GStreamer Player 0.8.x series.
+</p>
+<p>
+Check out the
+<a href="&site;/releases/gst-player/0.8.0.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gst-player-0.8.0.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gst-player-0.8.0.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
 
 </news>
 

@@ -68,7 +68,7 @@ library.
       <src>gst-player/gst-player-0.7.0.jpg</src>
    </screenshot>
     <versions>
-      <stable>0.6.0</stable>
+      <stable>0.8.0</stable>
     </versions>
   </module>
 
