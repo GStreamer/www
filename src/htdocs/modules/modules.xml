@@ -58,7 +58,7 @@ very fast colorspace conversion elements.
   <module>
     <id>gst-player</id>
     <title>GStreamer Player</title>
-    <blurb>sample player</blurb>
+    <blurb>sample player (unmaintained use Totem)</blurb>
     <description>
 GStreamer Player is our test bed for GStreamer and the GStreamer Play
 library.
