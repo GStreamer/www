@@ -26,36 +26,108 @@
 </p>
 -->
 
-<h1>Our GStreamer applications</h1>
+<h1>GStreamer applications</h1>
+<p>All applications listed alphabetically</p>
 
-<h2>GStreamer Player</h2>
-<p>
-One well-featured example shipped with GStreamer is the 
-<a href="&site;/modules/gst-player.html">GStreamer Player</a>,
-a simple, but functional, media player that
- supports any media type for which plugins exist. 
+<h2>acast</h2>
+<p><a href="http://zaheer.merali.org/mediawiki/index.php/Acast">acast</a> is a program for webcasting audio from your sound device to a variety of different streaming servers and has GTK+2 and console interfaces.
 </p>
+
+<h2>amaroK</h2>
+<p><a href="http://amarok.kde.org/">amaroK</a> is an audio player for KDE.</p>
+
+<h2>Cupid</h2>
+<p>
+<a href="http://ronald.bitfreak.net/me/cupid.php">A GStreamer video Recorder</a>,
+which is currently under development and will be able to record perfectly synchronized audio/video
+in any format supported by GStreamer.</p>
+
+<h2>The Dave/Dina Project</h2>
+<p><a href="http://www.davedina.org/content/">The Dave/Dina Project</a> is a set-top box distribution for playing and recording TV and multimedia and much more.</p>
+
+<h2>Flumotion</h2>
+<p><a href="http://www.fluendo.com">Flumotion</a> is a distributed streaming media server</p>
+
+<h2>Gamp</h2>
+<p><a href="http://gamp.sourceforge.net/">Gamp</a> is a GNOME based media player</p>
+
+<h2>GNOME Media</h2>
+<p><a href="http://ronald.bitfreak.net/me/gnome-media.php">GNOME Media</a> uses GStreamer for the volume control, sound recorder, cd player, video and audio thumnailers.</p>
+
+<h2>Goobox</h2>
+<p><a href="http://www.gnomefiles.org/app.php?soft_id=531">Goobox</a> is a GNOME based cd-player and ripper</p>
 
 <h2>GStreamer Editor</h2>
-<p>
- We also include a graphical pipeline contruction interface similar in
- goals to GLAME called 
-<a href="&site;/modules/gst-editor.html">GStreamer Editor</a>.
- It was recently rewritten from the ground up and ported to GTK+ 2.
+<p>A graphical pipeline contruction interface called
+<a href="&site;/modules/gst-editor.html">GStreamer Editor</a>.</p>
+
+<h2>Jamboree</h2>
+<p><a href="http://www.imendio.com/projects/jamboree/">Jamboree</a> is a GNOME based music player</p>
+
+<h2>JuK</h2>
+<p><a href="http://developer.kde.org/~wheeler/juk.html">JuK</a> is an audio jukebox for KDE.</p>
+
+<h2>Lindele</h2>
+<p><a href="http://projects.subpop.net/lindele/">Lindele</a> is a GNOME based music player</p>
+
+<h2>Marlin</h2>
+<p><a href="http://marlin.sourceforge.net/">marlin</a> is a sample editor for Gnome.</p>
+
+<h2>Muine</h2>
+<p><a href="http://muine.gooeylinux.org/">Muine</a> is a music player for GNOME.</p>
+
+<h2>Pakt</h2>
+<p><a href="http://subsignal.org/pakt/">Pakt</a> is a XML abstraction for GObjects used 
+with GStreamer to monitor and change elements parameters and pipeline structures.</p>
+
+<h2>Rhythmbox</h2>
+<p><a href="http://www.rhythmbox.org/">Rhythmbox</a> is an integrated music management application, originally inspired by Apple's iTunes.
 </p>
 
-<h2>GStreamer Recorder</h2>
-<p>
-Our third in-house project is
-<a href="&site;/modules/gst-recorder.html">GStreamer Recorder</a>,
-which is currently under
-development and will be able to record perfectly synchronized audio/video
-in any format supported by GStreamer. 
+<h2>Sound Juicer</h2>
+<p><a href="http://www.burtonini.com/blog/computers/sound-juicer">Sound Juicer</a> is a clean, mean, and lean CD ripper for GNOME.</p>
+
+<h2>SoundScrape</h2>
+<p><a href="http://ambient.2y.net/soundscrape/">SoundScrape</a> is a modular audio 
+synthesizer</p>
+
+<h2>Totem</h2>
+<p><a href="http://hadess.net/totem.php3">Totem</a> is a movie player for the GNOME desktop.
 </p>
 
+<h2>Towel</h2>
+<p><a href="http://towel.sourceforge.net/">Towel</a> is a GTKMM based music player for.</p>
 
 <h2>Video-Whale</h2>
 <p><a href="videowhale.html">Video-Whale</a> is an implementation of a Gstreamer-based video-wall. Making a video wall with GStreamer is easy, this article with pictures from Zeeshan Ali shows you how.
+</p>
+
+<h2>Wechselspieler</h2> 
+<p><a href="http://wechselspieler.sourceforge.net/">Wechselspieler</a> is an 
+artistic tool for mapping movements in video to MIDI events</p>
+
+<h1>Experimental GStreamer applications</h1>
+
+<h2>Aldegonde</h2>
+<p>
+<a href="http://ronald.bitfreak.net/me/aldegonde.php">Aldegonde</a> is a 
+simple media player made to ease debugging of GStreamer playback issues. 
+</p>
+
+<h2>GStreamer Player</h2>
+<p>
+<a href="&site;/modules/gst-player.html">GStreamer Player</a>,
+is a simple, but functional, media player that exposes some of the more 
+exotic features of GStreamer like the video effects.
+</p>
+
+<h2>gst-sci</h2>
+<p><a href="http://www.schleef.org/">gst-sci</a> are a collection of scientific plugins for GStreamer.</p>
+
+<h2>Rapide</h2>
+<p>
+<a href="http://ronald.bitfreak.net/me/rapide.php">Rapide</a> is a 
+DVD backup utility under development. 
 </p>
 
 <h1>Application ideas</h1>
@@ -66,50 +138,6 @@ You can <A href="ideas.html">see some of our ideas for applications</A>.
 If you're not sure if your idea would work, just hop on the <A
 HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel</A>
 mailing list and ask us, we'll be glad to discuss it with you!</p>
-
-<h1>Third party applications</h1>
-<p>The following are a list of third party applications written using GStreamer.If you have an app that uses GStreamer that is not listed here, please hop on the <A HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel</A> list and ask for it to be added.
-</p>
-
-<h2>acast</h2>
-<p><a href="http://zaheer.merali.org/mediawiki/index.php/Acast">acast</a> is a program for webcasting audio from your sound device to a variety of different streaming servers and has GTK+2 and console interfaces.
-</p>
-
-<h2>amaroK</h2>
-<p><a href="http://amarok.kde.org/">amaroK</a> is an audio player for KDE.
-</p>
-
-<h2>The Dave/Dina Project</h2>
-<p><a href="http://www.davedina.org/content/">The Dave/Dina Project</a> is a set-top box distribution for playing and recording TV and multimedia and much more.
-</p>
-
-<h2>GNOME</h2>
-<p><a href="http://www.gnome.org/">GNOME</a> uses GStreamer for the volume control, sound recorder, cd player, video and audio thumnailers.
-</p>
-
-<h2>JuK</h2>
-<p><a href="http://developer.kde.org/~wheeler/juk.html">JuK</a> is an audio jukebox for KDE.
-</p>
-
-<h2>marlin</h2>
-<p><a href="http://marlin.sourceforge.net/">marlin</a> is a sample editor for Gnome.
-</p>
-
-<h2>Muine</h2>
-<p><a href="http://muine.gooeylinux.org/">Muine</a> is a music player for GNOME.
-</p>
-
-<h2>Totem</h2>
-<p><a href="http://hadess.net/totem.php3">Totem</a> is a movie player for the GNOME desktop.
-</p>
-
-<h2>Rhythmbox</h2>
-<p><a href="http://www.rhythmbox.org/">Rhythmbox</a> is an integrated music management application, originally inspired by Apple's iTunes.
-</p>
-
-<h2>Sound Juicer</h2>
-<p><a href="http://www.burtonini.com/blog/computers/sound-juicer">Sound Juicer</a> is a clean, mean, and lean CD ripper for GNOME.
-</p>
 
   </body>
 </page>
