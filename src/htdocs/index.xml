@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="index.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: open source multimedia framework</title>
+  <body>
+
+<h1>What is GStreamer?</h1>
+
+<table>
+<tr>
+<td>
+<p>GStreamer is a library that allows the construction of graphs of
+media-handling components, ranging from simple mp3 playback to complex
+audio (mixing) and video (non-linear editing) processing.  
+<br/>
+Applications can take advantage of
+advances in codec and filter technology transparently.  Developers can add
+new codecs and filters by writing a simple plugin with a clean, generic
+interface.
+<br/>
+GStreamer is released under the LGPL.
+</p>
+</td>
+<td>
+<a href="apps/gst-player/">
+<img src="&site;/data/images/gst-player/gst-player-0.7.0.jpg" height="100"
+     border="0" align="right" valign="top"
+     alt="gst-player demo image" class="floatright" /></a>
+</td>
+</tr>
+</table>
+  </body>
+</page>

@@ -1,0 +1,77 @@
+h1 { 
+  color: #333333;
+  text-decoration: none;
+  font-size:1.6em;
+  font-family: "Arial Narrow", "Arial", sans-serif;
+}
+
+h2 {
+  color: #333333;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: "Arial Narrow", "Arial", sans-serif;
+}
+
+h3 {
+  color: #333333;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: "Arial Narrow", "Arial", sans-serif;
+}
+
+a:link { color: #0000FF; text-decoration: none; }
+a:visited { color: #6666CC; text-decoration: none; }
+a:hover { color: #FF3333; text-decoration: underline; }
+
+a.gstnavside:link { color: #000000; text-decoration: none; font-family: "Arial", sans-serif; }
+a.gstnavside:visited { color: #000000; text-decoration: none; font-family: "Arial", sans-serif; }
+a.gstnavside:hover { color: #3333CC; text-decoration: none; font-family: "Arial", sans-serif; }
+
+.right { text-align: right; }
+
+.task-header {
+  background: lightblue;
+  margin: 2px;
+  min-width: 100%;
+  padding: 3px;
+}
+
+.task-body {
+  background: lightgrey;
+  margin: 2px;
+  min-width: 100%;
+  padding: 3px;
+}
+
+.task-text {
+  margin: 2px;
+  padding: 3px;
+}
+.task-cell {
+  padding-right: 20px;
+}
+
+.task-word {
+  background: #e98080;
+  margin: 3px;
+  padding: 3px;
+}
+
+.task-footer {
+  font-size: small;
+  background: lightgreen;
+  margin: 2px;
+  min-width: 100%;
+  padding: 3px;
+}
+
+.task-nav {
+  text-align: right;
+}
+
+                                                                               
+.task {
+  min-width: 100%;
+  padding-bottom: 12pt;
+}
+

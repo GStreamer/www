@@ -1,0 +1,26 @@
+AC_INIT
+AM_INIT_AUTOMAKE(gstreamer-www, 0.0)
+
+AC_CONFIG_AUX_DIR(aux)
+
+AC_ARG_WITH(http_prefix, [  --with-http-prefix=DISTRIBUTOR  Specify http prefix for local testing, such as http://localhost/~user/gnomesites/])
+
+if test "x$with_http_prefix" != x ; then
+	HTTP_PREFIX=$with_http_prefix
+else
+	HTTP_PREFIX=http:/
+fi
+
+AC_SUBST(HTTP_PREFIX)
+
+AC_OUTPUT([
+Makefile
+htdocs/Makefile
+htdocs/dev/Makefile
+htdocs/documentation/Makefile
+htdocs/features/Makefile
+htdocs/images/Makefile
+htdocs/lists/Makefile
+htdocs/news/Makefile
+htdocs/tasks/Makefile
+])
