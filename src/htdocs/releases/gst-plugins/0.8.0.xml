@@ -25,9 +25,9 @@ to make them work.  The versions do not need to match exactly, as long
 as all of them are in the 0.8.x series.
 </p>
 <p>
-The FFMpeg-based decoder element has been moved to its own module.  If you
+The FFmpeg-based decoder element has been moved to its own module.  If you
 want support for a lot of popular video formats, you need to install this
-module along with the GStreamer Core and Plugins.  An FFMpeg-based colorspace
+module along with the GStreamer Core and Plugins.  An FFmpeg-based colorspace
 element has been added to the Plugins however.
 </p>
   </intro>
