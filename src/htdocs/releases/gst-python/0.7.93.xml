@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python</module-fancy>
+  <name>I ain't sleepy either.</name>
+  <version>0.7.93</version>
+
+  <intro>
+<p>
+This is the 0.7.93 release of the GStreamer Python bindings.
+It should be used with the 0.8.x series of GStreamer and GStreamer Plugins.
+</p>
+<p>
+This release contains a fairly big amount of improvements of the previous release.
+It requires PyGTK 2.4.0 and Python 2.3.
+</p>
+  </intro>
+  <features>
+    <feature>improved testsuite</feature>
+    <feature>updated examples</feature>
+    <feature>GstXML wrapping</feature>
+    <feature>improved GstInterface wrapping</feature>
+    <feature>Plenty of threading fixes</feature>
+    <feature>GstXML wrapping</feature>
+    <feature>GstStructure and GstCaps wrapping</feature>
+  </features>
+  <contributors>
+    <person>David Scheleef</person>
+    <person>Thomas Vander Stichele</person>
+    <person>Zaheer Abbas Merali</person>
+    <person>Poelzi</person>
+  </contributors>
+  <maintainers>
+    <person>Johan Dahlin</person>
+  </maintainers>
+</release>
