@@ -50,7 +50,7 @@
   </xsl:variable>
   <item rdf:about="&site;/news/#{$w3cdtf}">
     <title><xsl:value-of select="title"/></title>
-    <link>&site;/news/</link>
+    <link>&site;/news/#<xsl:value-of select="$w3cdtf"/></link>
     <dc:date><xsl:value-of select="$w3cdtf"/></dc:date>
     <content:encoded>
       <xsl:text disable-output-escaping="yes">&lt;</xsl:text>![CDATA[<xsl:copy-of select="content/*"/>]]<xsl:text disable-output-escaping="yes">&gt;</xsl:text></content:encoded>
