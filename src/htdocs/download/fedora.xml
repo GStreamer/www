@@ -36,7 +36,8 @@ Here's the five step guide to getting our packages.
 You can use either yum or apt for rpm.
 The current repository contains packages built using
 <A href="http://thomas.apestaart.org/projects/mach">mach</A> for the
-Fedora Core 1 platform.  They should also be compatible with the Fedora Core
+Fedora Core 1 and 2 platform.
+They should also be compatible with the Fedora Core
 test releases if you keep your system upgraded.
 </P>
 <P>
@@ -44,9 +45,12 @@ If you use apt,
 then add these two lines to your sources.list file, or your sources.list
 directory:
 <PRE>
-rpm     http://gstreamer.freedesktop.org/pkg/ fedora/1/i386 deps gst
-rpm-src http://gstreamer.freedesktop.org/pkg/ fedora/1/i386 deps gst
+rpm     http://gstreamer.freedesktop.org/pkg/ fedora/2/i386 deps gst
+rpm-src http://gstreamer.freedesktop.org/pkg/ fedora/2/i386 deps gst
 </PRE>
+</P>
+<P>
+Make sure you replace "2" with "1" if you use Fedora Core 1 !
 </P>
 <P>
 If you use yum. add these lines to your yum.conf file:
