@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-player</module>
+  <module-fancy>GStreamer Player</module-fancy>
+  <name>Losing Grip</name>
+  <version>0.8.0</version>
+
+  <intro>
+<p>
+This is the 0.8.0 release of the GStreamer Player. It should be used with
+the 0.8.x series of GStreamer, GStreamer Plugins and GStreamer FFmpeg.
+</p>
+<p>
+The player is now rather mature and should be be able to play back all
+media supported by the GStreamer framework including mp3, ogg, flac, mpeg,
+avi, vob, mod and others. While it does support audio formats, it is
+designed to primarly be a video player. 
+</p>
+<p>
+The player is our primary test bed for GStreamer, to show off the things
+GStreamer provides.  It is not the primary player of choice for desktops.
+For example, in GNOME, Totem is preferred, using the same backend as
+GStreamer Player.
+</p>
+  </intro>
+  <features>
+    <feature>Playback of all GStreamer-supported mediatypes</feature>
+    <feature>Fullscreen support</feature>
+    <feature>Correct aspect ratio scaling</feature>
+    <feature>Playlist</feature>
+    <feature>Nautilus view</feature>
+    <features>GUI support for choosing video effects</features>
+    <features>Fullscreen button in toolbar</features>
+    <features>License mostly canged to LGPL.  Playlist is still GPL.</features>
+  </features>
+
+  <maintainers>
+    <person>Julien Moutte</person>
+  </maintainers>
+</release>
