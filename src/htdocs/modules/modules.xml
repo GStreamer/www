@@ -50,7 +50,7 @@ very fast colorspace conversion elements.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <devel>0.7.1</devel>
+      <stable>0.8.0</stable>
     </versions>
   </module>
 
