@@ -16,7 +16,7 @@
 <tr>
 <td>
 <p>GStreamer is a library that allows the construction of graphs of
-media-handling components, ranging from simple mp3 playback to complex
+media-handling components, ranging from simple Ogg/Vorbis playback to complex
 audio (mixing) and video (non-linear editing) processing.  
 <br/>
 Applications can take advantage of advances in codec and filter technology 
