@@ -40,8 +40,8 @@
  <td><a href="&site;/data/doc/gstreamer/head/faq/html/index.html">HTML</a></td>
  <td><a href="&site;/data/doc/gstreamer/head/faq/faq.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/head/faq/faq.pdf">PDF</a></td>
- <td colspan="3"></td>
- <td colspan="3"></td>
+ <td colspan="3">&#160;</td>
+ <td colspan="3">&#160;</td>
 </tr>
 <tr>
  <td>Plugin Writer's Guide</td>
@@ -53,7 +53,7 @@
  <td><a href="&site;/data/doc/gstreamer/devel/pwg/pwg.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/devel/pwg/pwg.pdf">PDF</a></td>
  -->
- <td><!-- <a href="&site;/data/doc/gstreamer/stable/pwg/html/index.html">HTML</a>--></td>
+ <td>&#160;<!-- <a href="&site;/data/doc/gstreamer/stable/pwg/html/index.html">HTML</a>--></td>
  <td><a href="&site;/data/doc/gstreamer/stable/pwg/pwg.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/stable/pwg/pwg.pdf">PDF</a></td>
 </tr>
