@@ -21,9 +21,15 @@ GStreamer.
 </p>
 
 <DL>
-<DL>Fedora Core 1</DL>
-<DT>Check our <A href="fedora.html">Fedora</A> download page.</DT>
-</DL>
+  <DT>Fedora Core 1</DT>
+  <DD>Check our <A href="fedora.html">Fedora</A> download page.</DD>
 
+  <DT>Red Hat 9</DT>
+  <DD>Check our <A href="redhat.html">Red Hat</A> download page.</DD>
+
+  <DT>Source</DT>
+  <DD>Check our <A href="&site;/modules/">modules</A> page, or
+    go straight to our <A href="&site;/src/">source download directory</A>.</DD>
+</DL>
   </body>
 </page>
