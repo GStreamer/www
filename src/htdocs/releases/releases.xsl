@@ -99,7 +99,7 @@ Release notes for
         <xsl:apply-templates select="bugs" />
 
 <h2>Download</h2>
-You find source releases of <xsl:copy-of select="module" /> in the
+You can find source releases of <xsl:copy-of select="module" /> in the
 <xsl:call-template name="hyperlink">
   <xsl:with-param name="href">&realsite;/src/<xsl:value-of select="module" />/</xsl:with-param>
   <xsl:with-param name="text"><xsl:value-of select="module" /> download directory</xsl:with-param>

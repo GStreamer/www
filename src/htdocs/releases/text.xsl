@@ -75,7 +75,7 @@ GStreamer: Release notes for <xsl:value-of select="module-fancy" />&nbsp;<xsl:va
 
 Download
 
-You find source releases of <xsl:copy-of select="module" /> in the download directory:
+You can find source releases of <xsl:copy-of select="module" /> in the download directory:
 &realsite;/src/<xsl:value-of select="module" />/
 
 GStreamer Homepage
