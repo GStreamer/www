@@ -821,5 +821,26 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2004-03-05 11:02</date>
+    <title>GStreamer Plugins 0.6.7 "EOS" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce another release of the
+GStreamer Plugins 0.6.x stable series.
+This release is a service release, fixing some parallel install issues and
+compilation against newer ALSA and mpeg2dec libraries.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gst-plugins/0.6.5.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gst-plugins-0.6.5.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gst-plugins-0.6.5.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
+
 </news>
 
