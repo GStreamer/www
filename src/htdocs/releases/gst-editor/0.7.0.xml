@@ -4,7 +4,7 @@
   <module>gst-editor</module>
   <module-fancy>GStreamer Pipeline Editor</module-fancy>
   <name>Flying Delorean</name>
-  <version>0.7.1</version>
+  <version>0.7.0</version>
 
   <intro>
 <p>
@@ -13,7 +13,7 @@ GStreamer Pipeline Editor
 </p>
   </intro>
   <features>
-    <feature>Updated for the latest GStreamer. Requires at least GStreamer 0.7.1</feature>
+    <feature>Updated for the latest GStreamer. Requires at least GStreamer 0.7.0</feature>
     <feature>Many bug fixes</feature>
     <feature>I18n support</feature>
     <feature>Supports the GStreamer error framework</feature>
