@@ -49,60 +49,71 @@ Application containing tag extraction code.
   <task name="tagquicktime">
     <title>Add tagging support for Quicktime</title>
     <description>
-	GStreamer 0.7/0.8 introduce a new system for handling metadata in mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
+    GStreamer 0.7/0.8 introduce a new system for handling metadata in mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
     </description>
 
     <why>
-	GStreamer wants to allow seamless conversion of media files. The new tagging system will preserve tagging information when converting the media files if it is implemented in both the media formats in question.
+    GStreamer wants to allow seamless conversion of media files. The new tagging system will preserve tagging information when converting the media files if it is implemented in both the media formats in question.
     </why>
-	<where>
-       <code id="tag.h">
+    <where>
+      <code id="tag.h">
         <name>Tagging header file</name>
-        <description>Header file for tag implementation<description>
+        <description>Header file for tag implementation</description>
       </code>
-	<code id="vorbistag">
-	<name>Vorbis tagging implementation</code>
-	<description>Vorbisfile.c file with Vorbis tagg implementation</description>
-	</code>
-        </where>
+      <code id="vorbistag">
+        <name>Vorbis tagging implementation</name>
+        <description>code file with Vorbis tag implementation</description>
+      </code>
+    </where>
     <how>
-	Look at the Ogg Vorbis and Mp3 plugins to see how it is done and do the same for Quicktime. <A HREF="http://developer.apple.com/documentation/quicktime/QTFF/QTFFChap2/chapter_3_section_2.html#//apple_ref/doc/uid/DontLinkBookID_78-CH204-TPXREF101">Apple Developer docs for Quicktime tags.</A><P>
-	Unless you write a Quicktime muxer so is tag writing not possible for Quicktime currently.
+Look at the Ogg Vorbis and Mp3 plugins to see how it is done and do the
+same for Quicktime.
+<A HREF="http://developer.apple.com/documentation/quicktime/QTFF/QTFFChap2/chapter_3_section_2.html#//apple_ref/doc/uid/DontLinkBookID_78-CH204-TPXREF101">
+Apple Developer docs for Quicktime tags.</A>
+Unless you write a Quicktime muxer so is tag writing not possible for Quicktime currently.
     </how>
 
-   <difficulty>
-      MEDIUM - tag extraction is stable but new and not documented yet.
+    <difficulty>
+MEDIUM - tag extraction is stable but new and not documented yet.
     </difficulty>
     <see>
       <person>Ronald</person>
       <person>Benjamin</person>
     </see>
   </task>
+
   <task name="tagasf">
     <title>Add tagging support for ASF</title>
     <description>
-	GStreamer 0.7/0.8 introduce a new system for handling metadata in mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
+GStreamer 0.7/0.8 introduce a new system for handling metadata in
+mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
     </description>
 
     <why>
-	GStreamer wants to allow seamless conversion of media files. The new tagging system will preserve tagging information when converting the media files if it is implemented in both the media formats in question.
+GStreamer wants to allow seamless conversion of media files. The new
+tagging system will preserve tagging information when converting the
+media files if it is implemented in both the media formats in question.
     </why>
 
     <how>
-	Information on ASF tagging can be found <A HREF="http://download.microsoft.com/download/winmediatech40/Doc/1.0/WIN98MeXP/EN-US/ASF_Specification_v.1.0.exe">in this microsoft download</A>. It is a .exe file but you can just unzip it to get the .doc file. It loads fine in Abiword. Unless you write an asf muxer so is only tag extraction possible to implement at this point in time.
+Information on ASF tagging can be found
+<A HREF="http://download.microsoft.com/download/winmediatech40/Doc/1.0/WIN98MeXP/EN-US/ASF_Specification_v.1.0.exe">in this microsoft download</A>.
+It is a .exe file but you can just unzip it to get the .doc file.
+It loads fine in Abiword. Unless you write an asf muxer so is only
+tag extraction possible to implement at this point in time.
     </how>
-	<where>
-       <code id="tag.h">
+    <where>
+      <code id="tag.h">
         <name>Tagging header file</name>
-        <description>Header file for tag implementation<description>
+        <description>Header file for tag implementation</description>
       </code>
-	<code id="vorbistag">
-	<name>Vorbis tagging implementation</code>
-	<description>Vorbisfile.c file with Vorbis tagg implementation</description>
-	</code>
-        </where>
-   <difficulty>
-      MEDIUM - tag extraction is stable but new and not documented yet.
+      <code id="vorbistag">
+        <name>Vorbis tagging implementation</name>
+        <description>code file with Vorbis tag implementation</description>
+      </code>
+    </where>
+    <difficulty>
+MEDIUM - tag extraction is stable but new and not documented yet.
     </difficulty>
     <see>
       <person>Ronald</person>
@@ -113,27 +124,31 @@ Application containing tag extraction code.
   <task name="tagmatroska">
     <title>Add tagging support for Matroska</title>
     <description>
-	GStreamer 0.7/0.8 introduce a new system for handling metadata in mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
+GStreamer 0.7/0.8 introduces a new system for handling metadata in
+mediafiles. It is currently implemented for the Ogg and Mp3 plugins.
     </description>
 
     <why>
-	GStreamer wants to allow seamless conversion of media files. The new tagging system will preserve tagging information when converting the media files if it is implemented in both the media formats in question.
+GStreamer wants to allow seamless conversion of media files. The new
+tagging system will preserve tagging information when converting the
+media files if it is implemented in both the media formats in question.
     </why>
 
     <how>
-	Information on the Matroska tagging format on <A HREF="http://matroska.corecodec.org/technical/specs/tagging/index.html">the Matroska specs page</A>.</how>
-	<where>
-       <code id="tag.h">
+Information on the Matroska tagging format on <A HREF="http://matroska.corecodec.org/technical/specs/tagging/index.html">the Matroska specs page</A>.
+    </how>
+    <where>
+      <code id="tag.h">
         <name>Tagging header file</name>
-        <description>Header file for tag implementation<description>
+        <description>Header file for tag implementation</description>
       </code>
-	<code id="vorbistag">
-	<name>Vorbis tagging implementation</code>
-	<description>Vorbisfile.c file with Vorbis tagg implementation</description>
-	</code>
-        </where>
+      <code id="vorbistag">
+        <name>Vorbis tagging implementation</name>
+        <description>code file with Vorbis tagg implementation</description>
+      </code>
+   </where>
    <difficulty>
-      MEDIUM - tag extraction is stable but new and not documented yet.
+MEDIUM - tag extraction is stable but new and not documented yet.
     </difficulty>
     <see>
       <person>Ronald</person>
@@ -144,24 +159,47 @@ Application containing tag extraction code.
 <task name="686basicomega">
     <title>Make basicomega scheduler work with i686 glibc</title>
     <description>
-	One of the fastest schedulers we have is the one called basicomega. Unfortunatly we have been bared from using it as the default for quite a while because it segfaults when you use a version of glibc that has been compiled with -march=686. This means that the standard glibc used with major distributions like Mandrake and Red Hat cause this scheduler to crash.
-	</description>
+One of the fastest schedulers we have is the one called basicomega.
+Unfortunatly we have been bared from using it as the default for quite a
+while because it segfaults when you use a version of glibc that has been
+compiled with -march=686. This means that the standard glibc used with
+major distributions like Mandrake and Red Hat cause this scheduler to crash.
+    </description>
 
     <why>
-	Context switching is one of the tasks the scheduler does most. And the faster the better. For many heavy applications being able to use this scheduler would be a great boon.</why>
+Context switching is one of the tasks the scheduler does most. And the
+faster the better. For many heavy applications being able to use this
+scheduler would be a great boon.
+    </why>
 
     <how>
-	If we knew we would have fixed it long ago ourselves. Andy Wingo says the following:<BR>
-	As you know, omega cothreads uses up the stack in pieces, one piece perelement. It assumes that it has 2M of stack space to work with, dividedinto 16 pieces (see the top of cothreads.c). Now this 2M size isarbitrary, and based on the old pre-i686 glibc's default stack size.For new threads in gstthread.c, we explicitly ask for a 2M stack. Butfor the main thread, we never try to query or even change the size withgetrlimit/setrlimit(2). I would suggest looking here for a solution (trycalling setrlimit(RLIMIT_STACK,rlim_struct_for_2M).So what might be happening is too many (more than 8) elements are beingput into the main thread and it's trying to use memory that doesn'tbelong to it.Note also that the STACK_SIZE macro in cothreads.c and the STACK_SIZEmacro in gstthread.c depend on each other.Just keep in mind the saying about the worth of free advice :-)</how>
-	<where>
-       <code id="basicomega">
+If we knew we would have fixed it long ago ourselves.
+Andy Wingo says the following:
+<BR/>
+"As you know, omega cothreads uses up the stack in pieces, one piece per
+element. It assumes that it has 2M of stack space to work with, divided
+into 16 pieces (see the top of cothreads.c). Now this 2M size is
+arbitrary, and based on the old pre-i686 glibc's default stack size.
+For new threads in gstthread.c, we explicitly ask for a 2M stack. But
+for the main thread, we never try to query or even change the size with
+getrlimit/setrlimit(2). I would suggest looking here for a solution (try
+calling setrlimit(RLIMIT_STACK,rlim_struct_for_2M).
+<br/>
+So what might be happening is too many (more than 8) elements are being
+put into the main thread and it's trying to use memory that doesn't
+belong to it.Note also that the STACK_SIZE macro in cothreads.c and the 
+STACK_SIZE macro in gstthread.c depend on each other.
+Just keep in mind the saying about the worth of free advice :-)
+    </how>
+    <where>
+      <code id="basicomega">
         <name>Implementation of basicomega scheduler</name>
-        <description>C file with the code for the scheduler<description>
+        <description>C file with the code for the scheduler</description>
       </code>
-	
-        </where>
+    
+   </where>
    <difficulty>
-      Friggin HARD - Demands detailed knowledge of how glibc internals work and compiler optimizations.
+HARD - Demands detailed knowledge of how glibc internals work and compiler optimizations.
     </difficulty>
     <see>
       <person>Andy</person>
