@@ -1011,6 +1011,22 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2004-04-21 16:50</date>
+    <title>GStreamer Fedora Core 2 repository online</title>
+    <content>
+<p>
+Packages for Fedora Core 2 are now online as well.  Check our
+<A href="&site;/download/fedora.html">Fedora instructions</A> on how to
+set up the packages.
+</p>
+<p>
+The repository includes most GStreamer plugins, the editor, the player,
+the python bindings, gstreamer-ffmpeg and gstreamer-monkeysaudio.
+</p>
+    </content>
+  </item>
+
 
 </news>
 
