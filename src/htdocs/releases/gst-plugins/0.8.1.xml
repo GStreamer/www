@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins</module>
+  <module-fancy>GStreamer Plugins</module-fancy>
+  <name>Comforting Sounds</name>
+  <version>0.8.1</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release
+in the 0.8.x stable series of the GStreamer Plugins.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
+</p>
+<p>
+This module contains plugins providing media encoding and decoding,
+conversion, effects, and other elements that provide actual media
+handling functionality to the core.  You need the GStreamer core module
+to make them work.  The versions do not need to match exactly, as long
+as all of them are in the 0.8.x series.
+</p>
+<p>
+The FFmpeg-based decoder element has been moved to its own module.  If you
+want support for a lot of popular video formats, you need to install this
+module along with the GStreamer Core and Plugins.  An FFmpeg-based colorspace
+element has been added to the Plugins however.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+    <feature>New translations in this release: Swedish, Afrikaans, Azerbeaijani</feature>
+    <feature>Translations: af az nl sr sv</feature>
+    <feature>Updated to the new core 0.8 subsystems</feature>
+    <feature>Reworked play and media-info libraries</feature>
+    <feature>Updated osssink: now does probing of possible output properties</feature>
+    <feature>Updated qtdemux: fixes for MACE audio</feature>
+    <feature>New debug element: quasirandom byte changes</feature>
+    <feature>New element: dvddemux</feature>
+    <feature>New element: kiosrc, a KIO-slaves source</feature>
+    <feature>Fixes to all other elements, including level, videodrop, gnomevfssrc, speex, *law, mpeg2dec, adder, a52dec, oggdemux, matroska, mad, v4l2, cacasink</feature>
+    <feature>Portability fixes</feature>
+    <feature>ChangeLog use</feature>
+    <feature>Coding style consistency</feature>
+    <feature>Various memleak and buffer overflow fixes</feature>
+  </features>
+
+  <applications>
+<p>
+The GConf settings have moved to a versioned location and can now be found
+under /system/gstreamer/0.8.  Applications should use the gconf library,
+as provided by gstreamer-gconf-0.8.pc, to access the default settings.
+</p>
+  </applications>
+  <contributors>
+    <person>Benjamin Otte</person>
+    <person>Christian Schaller</person>
+    <person>David I. Lehn</person>
+    <person>David Schleef</person>
+    <person>Iain Holmes</person>
+    <person>Jan Schmidt</person>
+    <person>Jérémy Simon</person>
+    <person>Johan Dahlin</person>
+    <person>Julio M. Merino Vidal</person>
+    <person>Martin Soto</person> 
+    <person>Petri Jooste</person>
+    <person>Ronald Bultje</person>
+    <person>Stefan Kost</person>
+    <person>Thomas Vander Stichele</person>
+    <person>Tim-Philipp Müller</person>
+    <person>W. Michael Petullo</person>
+  </contributors>
+  <bugs>
+    <bug>
+      <id>120883</id>
+      <summary>osssink advertises more rates than it handles</summary>
+    </bug>
+    <bug>
+      <id>125732</id>
+      <summary>v4l2src don't support all YUV formats</summary>
+    </bug>
+    <bug>
+      <id>134301</id>
+      <summary>gst-plugins should depend on X</summary>
+    </bug>
+    <bug>
+      <id>135919</id>
+      <summary>Mandrake 10</summary>
+    </bug>
+    <bug>
+      <id>136477</id>
+      <summary>[PATCH] gst-launch-ext does not support .mov</summary>
+    </bug>
+    <bug>
+      <id>136527</id>
+      <summary>gdk_pixbuf makefile tried to execute targets contrains in...</summary>
+    </bug>
+    <bug>
+      <id>137348</id>
+      <summary>media-info .pc file lacks a 'Version:' line</summary>
+    </bug>
+    <bug>
+      <id>137448</id>
+      <summary>mpegaudioparse: crash (bus error)</summary>
+    </bug>
+    <bug>
+      <id>137504</id>
+      <summary>mpeg2dec fails on 422 encoded material</summary>
+    </bug>
+    <bug>
+      <id>137556</id>
+      <summary>Ogg Vorbis playback has poor spatialization</summary>
+    </bug>
+    <bug>
+      <id>137588</id>
+      <summary>ffmpegcolorspace gives critical when it should throw error</summary>
+    </bug>
+    <bug>
+      <id>137722</id>
+      <summary>Quicktime audio parsing is broken</summary>
+    </bug>
+    <bug>
+      <id>138105</id>
+      <summary>[mpeg1videoparse] Hangs while decoding everest.m1v</summary>
+    </bug>
+    <bug>
+      <id>138168</id>
+      <summary>id3tag using gst_event_new_discontinuous incorrectly?</summary>
+    </bug>
+    <bug>
+      <id>138169</id>
+      <summary>matroska-demux using gst_event_new_discontinuous without ...</summary>
+    </bug>
+    <bug>
+      <id>138635</id>
+      <summary>two GLib-GObject-CRITICAL Messages when running gst-regis...</summary>
+    </bug>
+    <bug>
+      <id>138846</id>
+      <summary>all of the ladspa-wrapped source-plugins fail to go to pl...</summary>
+    </bug>
+    <bug>
+      <id>138914</id>
+      <summary>gstgdkanimation.h is missing from gst-plugins-0.8.0</summary>
+    </bug>
+    <bug>
+      <id>139034</id>
+      <summary>Non-standard test(1) operator used in configure script</summary>
+    </bug>
+    <bug>
+      <id>139035</id>
+      <summary>Non-standard regex used as libtool argument</summary>
+    </bug>
+    <bug>
+      <id>139382</id>
+      <summary>mad decoder can resync wrongly after seek and does explic...</summary>
+    </bug>
+    <bug>
+      <id>139532</id>
+      <summary>gstcolorspace crashes when after v4lsrc (ffmpegcolorspace...</summary>
+    </bug>
+    <bug>
+      <id>139926</id>
+      <summary>id3tag's caps cause it to be plugged more than once by sp...</summary>
+    </bug>
+    <bug>
+      <id>139958</id>
+      <summary>Leak in avidemux</summary>
+    </bug>
+    <bug>
+      <id>140058</id>
+      <summary>[msmpeg4] file with broken qscale/header does not play</summary>
+    </bug>
+  </bugs>
+</release>
