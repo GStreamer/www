@@ -54,8 +54,8 @@ documentation to show up as it's written.</p>
     <content><p>Today we finally released version 0.1.0, dubbed
 &quot;Slipstream&quot;.  The number of features is astounding even to us,
 which is why it's taken 3 days since code-freeze just to get the release
-out &lt;g&gt;.  You can get a list of features from the <A href="index.shtml">main page</A>, read the <A href="release-0.1.0.txt">release notes</A>,
-read more in the <A href="documentation.shtml">documentation section</A>, or go <A href="download.shtml">download it</A>!</p>
+out &lt;g&gt;.  You can get a list of features from the <A href="&site;/features/">main page</A>, read the <A href="#DEAD-LINK-release-0.1.0.txt">release notes</A>,
+read more in the <A href="&site;/documentation/">documentation section</A>, or go <A href="&site;/download/">download it</A>!</p>
 
 
     </content>
@@ -65,7 +65,7 @@ read more in the <A href="documentation.shtml">documentation section</A>, or go 
 
   <item>  <date>2001-01-12 00:00</date>
   
-    <content><p>A contest of sorts has spontaneously appeared.  Check out the <A href="contest/udb-contest.txt">details here</A>.  Specifically, the
+    <content><p>A contest of sorts has spontaneously appeared.  Check out the <A href="#DEAD-LINK-contest/udb-contest.txt">details here</A>.  Specifically, the
 build date is January 14, 2001, in case it isn't clear from the
 message.</p>
 
@@ -80,7 +80,7 @@ message.</p>
   
     <content><p>As of January 29, 2001, RidgeRun, Inc. has hired Erik Walthinsen, aka Omega, head developer of the GStreamer project.  His job will be continued
 development of GStreamer, as well as specific projects using GStreamer on
-embedded Linux systems.  You can read the <A href="ridgerun-announce.txt">announcement from him</A>, or the <A href="http://www.ridgerun.com/pr/2001/01/31/0001/">RidgeRun press
+embedded Linux systems.  You can read the <A href="#DEAD-LINK-ridgerun-announce.txt">announcement from him</A>, or the <A href="http://www.ridgerun.com/pr/2001/01/31/0001/">RidgeRun press
 release</A> for more information.</p>
 
 
@@ -93,8 +93,8 @@ release</A> for more information.</p>
   
     <content><p>This release includes several major build and bug fixes.  There are
 several core subsystem updates, but nothing major in this release.  You
-can read the <A href="/releases/0.1.1/notice.shtml">release notice</A>,
-or go straight to the <A href="/download.shtml">download page</A>.
+can read the <A href="#DEAD-LINK-http://www.gstreamer.net/releases/0.1.1/notice.shtml">release notice</A>,
+or go straight to the <A href="&site;/download/">download page</A>.
 <b>Update</b> An <A href="http://www.linuxpower.com/display.php?id=205">interview</A> with 
 the lead developer, <A href="mailto:omega@temple-baptist.com">Omega</A> has just been
 posted to <A href="http://www.linuxpower.org/">LinuxPower</A>.
@@ -122,7 +122,7 @@ Walthinsen and Wim Taymans.</p>
 
   <item>  <date>2001-03-11 00:00</date>
   
-    <content><p>Well, it's only a few weeks until both <A href="http://guadec.gnome.dk/">GUADEC</A> and the real event, <i><A href="2001odyssey.shtml">2001: A GStreamer Odyssey</A></i> &lt;g&gt;. 
+    <content><p>Well, it's only a few weeks until both <A href="http://guadec.gnome.dk/">GUADEC</A> and the real event, <i><A href="#DEAD-LINK-2001odyssey.shtml">2001: A GStreamer Odyssey</A></i> &lt;g&gt;. 
 If you'd like to attend, please <A href="mailto:omega@ridgerun.com">send
 me some email</A> and I'll add you to the list of attendees.</p>
 
@@ -184,7 +184,7 @@ these nightly emails, or make use of the list archives otherwise.</p>
 
   <item>  <date>2001-06-07 00:00</date>
   
-    <content><p>The latest release of GStreamer is available!  See the <A href="releases/0.2.0/">release page</A> for more info.  Binary 
+    <content><p>The latest release of GStreamer is available!  See the <A href="#DEAD-LINK-http://www.gstreamer.net/releases/0.2.0/">release page</A> for more info.  Binary 
 releases will be made available shortly, as they're built.</p>
 
 
@@ -211,7 +211,7 @@ with the backwards-compatibility shim necessary to compile against
 gtk+-1.2 still. New plugins, and the ability to disable several large
 subsystems at compile time are also in this release.</p>
 
-<p>You can get more information at the <A href="/releases/0.2.1/">0.2.1
+<p>You can get more information at the <A href="#DEAD-LINK-http://www.gstreamer.net/releases/0.2.1/">0.2.1
 release page</A>. Binaries will be available shortly.</p>
 
 
@@ -269,7 +269,7 @@ icecast server. <b>Update</b> here's an <A href="http://gstreamer.freedesktop.or
 
   <item>  <date>2001-12-12 15:43</date>
   
-    <content>After nearly six months of development, the GStreamer team is extremely pleased to announce version 0.3.0. Links to source tarballs and binary packages can be found <A href="#DEAD-LINK-http://www.gstreamer.net/releases/0.3.0/">here</A>; you might want to read the <A href="#DEAD-LINK-/releases/0.3.0/notice.php">release notes</A> while you're waiting for it to download.
+    <content>After nearly six months of development, the GStreamer team is extremely pleased to announce version 0.3.0. Links to source tarballs and binary packages can be found <A href="#DEAD-LINK-http://www.gstreamer.net/releases/0.3.0/">here</A>; you might want to read the <A href="#DEAD-LINK-http://www.gstreamer.net/releases/0.3.0/notice.php">release notes</A> while you're waiting for it to download.
     </content>
     <title>GStreamer 0.3.0 "Most Eventful Ever" Released</title>
   </item>
@@ -310,7 +310,7 @@ icecast server. <b>Update</b> here's an <A href="http://gstreamer.freedesktop.or
 
   <item>  <date>2002-04-07 18:23</date>
   
-    <content>Docs have been updated, check the <A href="docs/">docs page</A> for more info. Use the CVS docs. We've got some new python bindings in the gst-python module (CVS only), including an example DVD player (in python!). We've also got a new parser; <code>gst-launch filesrc ! spider ! osssink</code> finally works. Release coming in a couple of weeks...
+    <content>Docs have been updated, check the <A href="&site;/documentation/">docs page</A> for more info. Use the CVS docs. We've got some new python bindings in the gst-python module (CVS only), including an example DVD player (in python!). We've also got a new parser; <code>gst-launch filesrc ! spider ! osssink</code> finally works. Release coming in a couple of weeks...
     </content>
     <title>Miscellaneous updates</title>
   </item>
@@ -434,7 +434,7 @@ Michael Meeks has been overheard saying he was "<B>duly impressed</B>" by the vi
 
   <item>  <date>2002-07-11 22:18</date>
   
-    <content>0.4.0 is our first release to have its <A href="docs/">documentation</A> on the site since 0.3.0. We even have a PDF version of the manual. If you're interested in helping us finish the <A href="docs/current/pwg">plugin writer's guide</A>, drop us a line.
+    <content>0.4.0 is our first release to have its <A href="&site;/documentation/">documentation</A> on the site since 0.3.0. We even have a PDF version of the manual. If you're interested in helping us finish the <A href="&site;/data/doc/gstreamer/head/pwg/html/index.html">plugin writer's guide</A>, drop us a line.
     </content>
     <title>Documentation Updated</title>
   </item>
@@ -518,7 +518,7 @@ all the details and download instructions. You find it <A HREF="#DEAD-LINK-http:
 
   <item>  <date>2002-10-06 15:15</date>
   
-    <content>After two years of (sporadic) development, <A href="/apps/gst-editor/">gst-editor</A>, GStreamer's graphical pipeline editor, has finally been <A href="/releases/gst-editor/0.2.0/">released into the wild</A>. The code is very alpha and is prone to eating small mammals, so don't use it near your cat. Please report any reproduceable bugs to <A href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=gst-editor">Gnome bugzilla</A>.
+    <content>After two years of (sporadic) development, <A href="&site;/modules/gst-editor.html">gst-editor</A>, GStreamer's graphical pipeline editor, has finally been <A href="#DEAD-LINK-http://www.gstreamer.net/releases/gst-editor/0.2.0/">released into the wild</A>. The code is very alpha and is prone to eating small mammals, so don't use it near your cat. Please report any reproduceable bugs to <A href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=gst-editor">Gnome bugzilla</A>.
     </content>
     <title>First-Ever Release of Gst-Editor</title>
   </item>
@@ -962,8 +962,8 @@ sure you file a bug for all nasty things you can find.
 Check out the
 <a href="&site;/releases/gst-python/0.7.91.html">release notes</a>
 or download the
-<a href="&site;/src/gst-python/gst-python-0.7.91.tar.gz">tar.gz</a> or
-<a href="&site;/src/gst-python/gst-python-0.7.91.tar.bz2">tar.bz2</a> archive.
+<a href="&site;/src/gst-python/gst-python-0.7.91.tar.gz">tar.gz</a> <!-- or
+<a href="&site;/src/gst-python/gst-python-0.7.91.tar.bz2">tar.bz2</a> -->archive.
 </p>
     </content>
   </item>
