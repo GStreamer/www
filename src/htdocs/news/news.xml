@@ -1420,4 +1420,15 @@ or download the
     </content>
   </item>
 
+<item>
+<date>2004-12-06 12:00</date>
+    <title>Fluendo announces sponsorship of Xiph.org for Vorbis and Theora
+RTP support</title>
+    <content>
+<p>
+Fluendo have done two press relases of interest to the GStreamer community recently. The first announced the offical launch of the Flumotion open source project and <a href="http://www.flumotion.net">website</a>. The second press release is about how we are sponsoring Xiph.org to implement specifications for Vorbis and Theora over RTP. You find this <a href="http://www.fluendo.com/press/releases/PR-2004-03.html">press release here</a>.
+</p>
+   </content>
+   </item>
+
 </news>
