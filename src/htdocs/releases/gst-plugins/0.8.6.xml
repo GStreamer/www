@@ -40,7 +40,11 @@ element has been added to the Plugins however.
     <feature>Translations: af az cs en_GB hu nb nl or sq sr sv uk</feature>
 
     <feature>new element: polypsink</feature>
+    <feature>new element: musepack decoder</feature>
+
+    <feature>alsa fixes</feature>
     <feature>playbin fixes</feature>
+    <feature>visualisation fixes</feature>
     <feature>support for cd://, cdda:// and dv:// uri</feature>
     <feature>v4lsrc fixes</feature>
     <feature>id3demux fixes</feature>
