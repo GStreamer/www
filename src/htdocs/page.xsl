@@ -36,7 +36,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
     <link rel="stylesheet" type="text/css"
           href="&site;/gstreamer.css" title="default" />
-    <link rel="shortcut icon" href="&site;/images/gst-logo-favicon.png" />
+    <link rel="shortcut icon" href="&site;/images/favicon.png" />
     <title><xsl:value-of select="$title" /></title>
   </head>
   <body bgcolor="#FFFFFF" text="#000000"
