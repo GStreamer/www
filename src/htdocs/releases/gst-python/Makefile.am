@@ -1,4 +1,4 @@
-built_pages = 0.7.90.html 0.7.90
+built_pages = 0.7.90.html 0.7.90 0.7.91.html 0.7.91
 
 style = ../releases.xsl
 
