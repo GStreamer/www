@@ -114,7 +114,7 @@ More details can be found on the project's website,
 
 <h2>Support and Bugs</h2>
 
-We use Gnome's bugzilla for
+We use GNOME's bugzilla for
 <a href="&gst-bug-report;">bug reports and feature requests</a>.
 
 <h2>Developers</h2>
