@@ -13,7 +13,7 @@ GStreamer Pipeline Editor
 </p>
   </intro>
   <features>
-    <feature>Updated for the latest GStreamer. Requires at least GStreamer 0.7.1</feature>
+    <feature>Requires at least GStreamer 0.7.1</feature>
     <feature>Fixes for pipeline saving and loading</feature>
     <feature>Memory leak fixes</feature>
     <feature>New filtering for the element selector tree</feature>
