@@ -3,7 +3,9 @@
 # it forcefully updates cvs, autogens, and makes
 
 cd /home/projects/gstreamer/www
-umask 002
+umask 0002
+chown -R :gstreamer *
+chmod -R g+w *
 cvs update -dP
 src/autogen.sh
 make clean
