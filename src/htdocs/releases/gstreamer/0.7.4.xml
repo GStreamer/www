@@ -10,7 +10,7 @@
 <p>
 The GStreamer team is happy to announce a new release in the
 0.7.x development series of the GStreamer streaming-media framework.
-The goal of this release series is to stabilize it towards a 0.8
+The goal of this release series is to stabilize towards a 0.8
 release series which will be part of the GNOME 2.6 releases
 and hopefully eventually KDE 4.x. 
 </p>
@@ -20,11 +20,12 @@ It is NOT API or ABI compatible with the stable 0.6.x series or
 with other releases in the series.  This means you can not use this
 release to upgrade your current GStreamer installation and expect your
 GStreamer applications to keep working without a recompile.
-It is however parallel installable with the 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
 </p>
   </intro>
   <features>
-    <feature>Reworked pad negotation</feature>
+    <feature>Merged the new caps system</feature>
+    <feature>Reworked pad negotiation</feature>
     <feature>Internationalized core and elements</feature>
     <feature>Reworked error notification with translated error messages and additional debug information for developer feedback</feature>
     <feature>Updated Dutch and French translations</feature>
@@ -33,9 +34,10 @@ It is however parallel installable with the 0.6.x series.
     <feature>Documentation of GstCaps</feature>
     <feature>Poisoning of GstCaps</feature>
     <feature>Queues now flushed properly to fix seeking in playback</feature>
-    <feature>memleak fixes in core elements</feature>
-    <feature>largely rewritten Plugin Writer's Guide</feature>
-    <feature>unversioned tools that wrap all present and future versioned tools to help packagers</feature>
+    <feature>Memleak fixes in core elements</feature>
+    <feature>Largely rewritten Plugin Writer's Guide</feature>
+    <feature>Unversioned tools that wrap all present and future versioned tools to help packagers</feature>
+    <feature>Lots of bugfixes</feature>
   </features>
 
   <applications>
@@ -47,7 +49,7 @@ however.
 <a href="http://www.rhythmbox.org/">Rhythmbox</a> and
 <a href="http://www.burtonini.com/blog/computers/sound-juicer">Sound Juicer</a>
 for instance work very well when compiled on 0.7.x.
-GStreamer Player does not work accross releases however,
+GStreamer Player does not work across releases however,
 so we will make a separate release of gst-player with the needed
 fixes for it to work with 0.7.x. This release contains the core fixes we
 were waiting for to port the player over so expect a gst-player release in
