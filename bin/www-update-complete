@@ -5,4 +5,5 @@
 cd /home/projects/gstreamer/www
 cvs update -dP
 src/autogen.sh
+make clean
 make
