@@ -31,6 +31,7 @@ as the core, as long as they are in the 0.8.x series.
     <feature>Dutch, French and Serbian translations</feature>
     <feature>Reworked capabilities and negotiation subsystem</feature>
     <feature>Reworked tagging subsystem</feature>
+    <feature>Reworked interactivity subsystem (for DVD playback)</feature>
     <feature>Consistent error and debug signaling</feature>
     <feature>Dynamic debug logging</feature>
     <feature>Portability fixes</feature>
@@ -49,9 +50,11 @@ GNOME applications including sound-juicer, totem and RhythmBox.
   <contributors>
     <person>Andy Wingo</person>
     <person>Benjamin Otte</person>
+    <person>Brian Cameron</person>
     <person>Christian Schaller</person>
     <person>Christophe Fergeau</person>
     <person>Colin Walters</person>
+    <person>David I. Lehn</person>
     <person>David Schleef</person>
     <person>Iain Holmes</person>
     <person>Jan Schmidt</person>
