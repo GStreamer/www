@@ -10,15 +10,18 @@
   <title>GStreamer: artwork</title>
   <body>
 
+    <!-- talk about what these pictures are here for, e.g. use to link to gst-www -->
+    
     <!-- upload images to http://gstreamer.freedesktop.org/data/images/artwork/ -->
     <h2>Artwork created by Jakub "Jimmac" Steiner</h2>
-    <a href="http://jimmac.musichall.cz/index.php3" taget="new">artists homepage</a><br/>
+    <a href="http://jimmac.musichall.cz/index.php3" taget="new">artists homepage</a> | 
     Licence: GPL<br/>
     <br/>
-    desktop wallpaper:<br/>
+    desktop wallpaper: (1280x1024)<br/>
     <a href="/data/images/artwork/gstreamer.jpeg"><img src="/data/images/artwork/gstreamer-mini.jpeg"/></a><br/>
-    link button:<br/>
-    <img src="/data/images/artwork/gstreamer.jpeg"/><br/>
+    link button: (102x47)<br/>
+    <img src="/data/images/artwork/gstreamer-family.png"/><br/>
+
     <br/>
     <h2>More artwork ...</h2>
     If you want your gstreamer related artwork to be seen here, please sent it to us.
