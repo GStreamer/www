@@ -87,6 +87,8 @@ as provided by gstreamer-gconf-0.8.pc, to access the default settings.
 	<person>Johan Dahlin</person>
 	<person>Julien Moutte</person>
 	<person>Martin Eikermann</person>
+	<person>Nathan Robertson</person>
+	<person>Phil Blundell</person>
 	<person>Ronald Bultje</person>
 	<person>Scott Wheeler</person>
 	<person>Sebastien Cote</person>
@@ -94,10 +96,6 @@ as provided by gstreamer-gconf-0.8.pc, to access the default settings.
 	<person>Thomas Vander Stichele</person>
 	<person>Wim Taymans</person>
 	<person>Zaheer Abbas Merali</person>
-	<person>Nathan Robertson</person>
-	<person>Sebastien Cote</person>
-	<person>Phil Blundell</person>
-	<person>Balamurali Viswanathan</person>
   </contributors>
   <bugs>
     <bug>
