@@ -19,5 +19,6 @@ htdocs/releases/gstreamer/Makefile
 htdocs/releases/gst-ffmpeg/Makefile
 htdocs/releases/gst-player/Makefile
 htdocs/releases/gst-plugins/Makefile
+htdocs/releases/gst-editor/Makefile
 htdocs/tasks/Makefile
 ])

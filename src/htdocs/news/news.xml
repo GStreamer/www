@@ -869,7 +869,24 @@ or download the
     </content>
   </item>
 
-
+  <item>
+    <date>2004-03-11 02:30</date>
+    <title>GStreamer Pipeline Editor "Flying Delorean" 0.7.0 released</title>
+    <content>
+<p>
+The GStreamer team is happy to announce a new release of the
+GStreamer Pipeline Editor.
+This release brings gst-editor into line with the latest GStreamer API and support for new features such as internationalisation, and better error handling and debugging.
+</p>
+<p>
+Check out the 
+<a href="&site;/releases/gst-editor/0.7.0.html">release notes</a>
+or download the
+<a href="&site;/src/gst-editor/gst-editor-0.7.0.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-editor/gst-editor-0.7.0.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
 
 </news>
 
