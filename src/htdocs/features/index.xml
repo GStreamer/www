@@ -9,6 +9,8 @@
 <page>
   <title>GStreamer: features</title>
   <body>
+<h2>Multiplatform</h2>
+<p>GStreamer has been ported to a wide range of operating systems, processors and compilers. This include but are not limited to Linux on i86,PPC, ARM using GCC. Solaris on x86 and SPARCi using both GCC and Forte, MacOSX, Microsoft Windows using MS Visual Developer and IBM OS/400.</p>
 
 <h2>Comprehensive Core Library</h2>
 <ul>
@@ -55,7 +57,6 @@ capabilities system to complete complex paths automatically</li>
 XML</a> and loaded back to working state</li>
 <li>Resource friendly plugins don't waste RAM</li>
 </ul>
-
 <h2>Extensive Development Tools</h2>
 <ul>
 <li><a href="&site;/modules/gst-editor.html">Graphical editor</a> allows pipelines to be
