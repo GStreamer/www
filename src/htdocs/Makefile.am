@@ -1,4 +1,4 @@
-SUBDIRS = apps images news dev documentation lists modules tasks features
+SUBDIRS = apps bugs images news dev documentation lists modules tasks features
 
 built_pages = index.html
 index_style = index.xsl

@@ -14,13 +14,15 @@
 <!-- page template -->
 <!-- call with content variable containing html content to paste verbatim -->
 <xsl:template name="page">
+<xsl:param name="title" select="GStreamer" />
+<xsl:param name="content" />
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
     <link rel="stylesheet" type="text/css"
           href="&site;/gstreamer.css" title="default" />
     <link rel="shortcut icon" href="&site;/images/gst-logo-favicon.png" />
-    <title><xsl:value-of select="title" /></title>
+    <title><xsl:value-of select="$title" /></title>
   </head>
   <body bgcolor="#FFFFFF" text="#000000"
         link="#3399CC" vlink="#551A8B" alink="#FF0000" leftmargin="0"
