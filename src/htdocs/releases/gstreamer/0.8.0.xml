@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Executive Slacks</name>
+  <version>0.8.0</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce the first release
+in the 0.8.x stable series
+of the GStreamer streaming-media framework.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
+</p>
+<p>
+This module only contains core functionality.  For actual media playback,
+you will need other modules.  GStreamer Plugins contains a huge set of
+additional plugins.  GStreamer FFMpeg contains a plugin based on the popular
+FFMpeg decoding library.  These modules need not have the same source version
+as the core, as long as they are in the 0.8.x series.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+    <feature>Dutch, French and Serbian translations</feature>
+    <feature>Reworked capabilities and negotiation subsystem</feature>
+    <feature>Reworked tagging subsystem</feature>
+    <feature>Consistent error and debug signaling</feature>
+    <feature>Dynamic debug logging</feature>
+    <feature>Portability fixes</feature>
+    <feature>Binding support fixes</feature>
+    <feature>ChangeLog use</feature>
+    <feature>Coding style consistency</feature>
+  </features>
+
+  <applications>
+<p>
+Applications already ported to use GStreamer 0.8.x include the GNOME
+desktop components like gnome-media and nautilus-media, as well as other
+GNOME applications including sound-juicer, totem and RhythmBox.
+</p>
+  </applications>
+  <contributors>
+    <person>Andy Wingo</person>
+    <person>Benjamin Otte</person>
+    <person>Christian Schaller</person>
+    <person>Christophe Fergeau</person>
+    <person>Colin Walters</person>
+    <person>David Schleef</person>
+    <person>Iain Holmes</person>
+    <person>Jan Schmidt</person>
+    <person>Jérémy Simon</person>
+    <person>Johan Dahlin</person>
+    <person>Jon Trowbridge</person>
+    <person>Julien Moutte</person>
+    <person>Laurent Vivier</person>
+    <person>Leif Morgan Johnson</person>
+    <person>Mattias Wadman</person>
+    <person>Ronald Bultje</person>
+    <person>Stefan Kost</person>
+    <person>Thomas Vander Stichele</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>133653</id>
+      <summary>need to settle on coding style using indent and use it befor</summary>
+    </bug>
+    <bug>
+      <id>136683</id>
+      <summary>Add padding to GstCaps [ABI change]</summary>
+    </bug>
+  </bugs>
+</release>
