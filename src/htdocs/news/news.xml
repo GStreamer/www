@@ -1309,4 +1309,23 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2004-10-11 18:12</date>
+    <title>gst-python 0.7.93 "I aint sleepy either" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce the fourth release of the Python
+bindings targetting the 0.8.x series of GStreamer. It is still unstable so make
+sure you file a bug for all nasty things you can find.
+</p>
+<p>
+Check out the
+<a href="&site;/releases/gst-python/0.7.93.html">release notes</a>
+or download the
+<a href="&site;/src/gst-python/gst-python-0.7.93.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-python/gst-python-0.7.93.tar.bz2">tar.bz2</a>archive.
+</p>
+    </content>
+  </item>
+
 </news>
