@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % gst-entities SYSTEM "../entities.gst">
+  %gst-entities;
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<bindings>
+
+  <binding>
+    <id>python</id>
+    <name>Python</name>
+    <status>Released. See the <a href="&site;/modules/gst-python.html">gst-python</a> module.</status>
+  </binding>
+
+  <binding>
+    <id>perl</id>
+    <name>Perl</name>
+    <status>The bindings are still under development and not yet released.</status>
+    <contacts>
+      <person>
+        <realname>Brett Kosinski</realname>
+        <email>brettk (at) frodo.dyn.gno.org</email>
+      </person>
+    </contacts>
+  </binding>
+
+  <binding>
+    <id>csharp</id>
+    <name>C#</name>
+    <status>Unreleased; part of the Gtk# module of
+<a href="http://www.go-mono.com/anoncvs.html">Mono's CVS tree</a>.
+    </status>
+<body>
+<p>The GStreamer bindings for the .NET framework, known as Gst#
+(gst-sharp), are implemented using C#, a modern object-oriented
+language defined by the ECMA-334 standard. However, applications making use
+of the bindings can be written in any language supported by the .NET runtime,
+including but not limited to C#, Visual Basic, Managed C++, Python, Perl,
+Java and JavaScript.</p>
+                                                                                
+<p>The bindings are generated in two steps by the
+<a href="http://www.go-mono.com/">Mono project</a>'s
+<a href="http://gtk-sharp.sourceforge.net/">Gtk#</a> code parser, which
+produces an intermediate XML representation of the API, and code generator
+which processes the XML to produce the bindings themselves. No custom
+modifications are required to the code once generated, making it possible to
+provide up-to-date .NET bindings at the same time as every major and minor
+GStreamer release.</p>
+                                                                                
+<p>Gst# is still at an early stage of development so many areas of its
+functionality remain untested. In particular, users should not expect a
+stable API or ABI between releases.</p>
+ 
+<p>At the time of writing, the bindings are present in the Gtk# module
+(<tt>gtk-sharp</tt>) of <a href="http://www.go-mono.com/anoncvs.html">Mono's CVS  
+tree</a> and have been distributed as part of the <a href="http://gtk-sharp.sourceforge.net/">Gtk# 0.6</a> release, although they
+aren't yet part of the standard build. A certain amount of tweaking will be
+required to get the generated bindings to compile until all blocking bugs
+are eliminated.</p>
+ 
+<p>Gst# is being developed primarily on GNU/Linux using the Mono JIT runtime
+on x86. Users are encouraged to try different platforms and report the
+extent of their success.</p>
+ 
+<h2>Examples</h2>
+ 
+<p>There is currently no documentation for Gst#. Developers are encouraged
+to explore the generated bindings' source code for insight into how they
+work. A few examples provided in the <tt>samples/</tt> directory of
+the Gst# distribution are made available here for completeness:</p>
+                                                                                
+<h3>C#</h3>
+<ul>
+<li><a href="http://www.atoker.com/mmp/GstPlayer.cs">GStreamer Player</a></li>
+</ul>
+                                                                                
+<h3>Visual Basic .NET</h3>
+<ul>
+<li><a href="http://www.atoker.com/mmp/GstPlayer.vb">GStreamer Player</a></li>
+</ul>
+                                                                                
+<h2>Applications</h2>
+                                                                                
+<p>There are only a handful of applications that make use of Gst# right now,
+but this situation is expected to improve as GStreamer and Mono continue to
+reach a wider audience.</p>
+                                                                                
+<ul>
+<li><a href="http://www.atoker.com/mmp/">MMP</a> - a comprehensive media
+player for the GNOME2 desktop</li>
+<li><a href="http://www.atoker.com/phonic/">Phonic</a> - a music collection cataloguing system for GNOME2</li>
+</ul>
+
+
+</body>
+
+    <contacts>
+      <person>
+        <realname>Alp Toker</realname>
+        <email>alp (at) atoker.com</email>
+      </person>
+    </contacts>
+  </binding>
+
+  <binding>
+    <id>cplusplus</id>
+    <name>C++</name>
+    <status>The bindings are still under development and not yet released.</status>
+<body>
+<p>
+The GStreamer API <a href="http://www.research.att.com/~bs/C++.html">C++</a>
+bindings are still under development.The bindings are based upon <a
+href="http://www.gtkmm.org">gtkmm</a>. It's using the same lifecycle mechanism.
+A modified version of gtkmmproc autogenerates the code. Further work needs to bedone there.
+</p>
+<p>
+Currently, the following classes are either fully or partially implemented:
+</p>
+                                                                                
+<ul>
+    <li>Gst::Object</li>
+    <li>Gst::Element</li>
+    <li>Gst::Gstreamer</li>
+    <li>Gst::Pad (partially)</li>
+</ul>
+                                                                                
+
+
+</body>
+
+    <news>
+      <item>
+        <date>Mid-September</date>
+        <text>Initial work started</text>
+      </item>
+      <item>
+        <date>September-October</date>
+        <text>More classes have been implemented</text>
+      </item>
+      <item>
+        <date>October</date>
+        <text>Martin Schulze added a RefPtr class, which is needed
+    for some classes which don't directly inherit from Glib::Object</text>
+      </item>
+      <item>
+        <date>Mid-October</date>
+        <text>Development has been stopped until November, hence
+    lack of time (university).</text>
+      </item>
+    </news>
+
+    <issues>
+      <issue>Lifecycle, hence inconsistencies in Gstreamer</issue>
+      <issue>Modified gtkmmproc isn't perfect</issue>
+      <issue>Other things which are in the TODO file</issue>
+    </issues>
+
+    <contacts>
+      <person>
+        <realname>Christian Meyer</realname>
+        <email>chrisime (at) gnome.org</email>
+      </person>
+    </contacts>
+  </binding>
+
+  <binding>
+    <id>guile</id>
+    <name>Guile</name>
+    <status>
+The bindings are still under development and not yet released.
+<!--See the <a href="&site;/modules/gst-guile.html">gst-guile</a> module.-->
+    </status>
+<body>
+<p>
+The GStreamer API <a
+href="http://www.gnu.org/software/guile/guile.html">Guile</a> bindings are still
+under development, but are already quite usable.
+</p>
+</body>
+
+    <news>
+      <item>
+        <date>18 Sept 2003</date>
+        <text>
+I'm trying to get out a 0.1.0 release sometime soon, bear with me. In the
+meantime the code in CVS should be functional at all times. Please please
+please let me know of any bugs you find, and be sure to say which version
+of GStreamer you are using (0.6 or 0.7). Thanks.
+      </text>
+      </item>
+    </news>
+
+    <contacts>
+      <person>
+        <realname>Andy Wingo</realname>
+        <email>wingo (at) users.sourceforge.net</email>
+      </person>
+    </contacts>
+  </binding>
+
+  <binding>
+    <id>java</id>
+    <name>Java</name>
+    <status>
+The bindings are still under development and not yet released.
+    </status>
+<body>
+<p>
+The GStreamer API <a href="http://java.sun.com/">Java</a> bindings are still under development.
+</p>
+</body>
+  </binding>
+
+  <binding>
+    <id>ruby</id>
+    <name>Ruby</name>
+    <status>
+The Ruby bindings are released as part of
+<a href="http://ruby-gnome2.sourceforge.jp/">Ruby-GNOME2</a>.
+    </status>
+<body>
+</body>
+
+    <contacts>
+      <person>
+        <realname>Laurent Sansonetti</realname>
+        <email>laurent (at) datarescue.be</email>
+      </person>
+    </contacts>
+  </binding>
+
+
+</bindings>
