@@ -1,5 +1,11 @@
 2004-10-06  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/htdocs/releases/gstreamer/0.8.7.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	  writing release notes for gstreamer 0.8.7
+
+2004-10-06  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/releases/gst-plugins/0.8.5.xml:
 	* src/htdocs/releases/gst-plugins/Makefile.am:
 	  writing release notes for gst-plugins 0.8.5
