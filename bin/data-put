@@ -6,7 +6,7 @@ then
 fi
 
 chmod -R g+w data 2> /dev/null
-rsync -arv -e ssh $@ data pdx.freedesktop.org:/home/projects/gstreamer/www
+rsync -arv -e ssh $@ data freedesktop.org:/srv/gstreamer.freedesktop.org/www
 
 echo "if you want to sync packages (only if you maintain them !), do"
 echo rsync -arv -e ssh --delete data/pkg pdx.freedesktop.org:/home/projects/gstreamer/www/data
