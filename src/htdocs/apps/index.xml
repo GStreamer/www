@@ -68,7 +68,7 @@ in any format supported by GStreamer.</p>
 <a href="&site;/modules/gst-editor.html">GStreamer Editor</a>.</p>
 
 <h2>Jamboree</h2>
-<p><a href="http://www.imendio.com/projects/jamboree/">Jamboree</a> is a GNOME based music player</p>
+<p><a href="http://www.imendio.com/projects/jamboree/">Jamboree</a> is a GNOME based music player developed by Imendio.</p>
 
 <h2>JuK</h2>
 <p><a href="http://developer.kde.org/~wheeler/juk.html">JuK</a> is an audio jukebox for KDE.</p>
@@ -80,7 +80,7 @@ in any format supported by GStreamer.</p>
 <p><a href="http://marlin.sourceforge.net/">marlin</a> is a sample editor for Gnome.</p>
 
 <h2>Muine</h2>
-<p><a href="http://muine.gooeylinux.org/">Muine</a> is a music player for GNOME.</p>
+<p><a href="http://muine.gooeylinux.org/">Muine</a> is a music player for GNOME using the Mono framework.</p>
 
 <h2>Navys</h2>
 <p><a href="http://www.navsys.org">Navsys</a> is a GPS map application and music player in one. Music player is using GStreamer.</p>
@@ -91,9 +91,8 @@ with GStreamer to monitor and change elements parameters and pipeline structures
 
 <h2>Permovi</h2>
 <p><a href="http://forge.novell.com/modules/xfmod/project/?permovi">Permovi</a> 
-Permovi is a Linux-based HTPC (Home Theatre PC) application. It transforms a PC into a standalone CD-player/tuner/DVD-player/PVR device.
+Permovi is a Linux-based HTPC (Home Theatre PC) application. It transforms a PC into a standalone CD-player/tuner/DVD-player/PVR device. Permovi is using the Mono framework.
 </p>
-
 
 <h2>Rhythmbox</h2>
 <p><a href="http://www.rhythmbox.org/">Rhythmbox</a> is an integrated music management application, originally inspired by Apple's iTunes.
@@ -106,8 +105,7 @@ Permovi is a Linux-based HTPC (Home Theatre PC) application. It transforms a PC 
 <p><a href="http://www.burtonini.com/blog/computers/sound-juicer">Sound Juicer</a> is a clean, mean, and lean CD ripper for GNOME.</p>
 
 <h2>SoundScrape</h2>
-<p><a href="http://ambient.2y.net/soundscrape/">SoundScrape</a> is a modular audio 
-synthesizer</p>
+<p><a href="http://ambient.2y.net/soundscrape/">SoundScrape</a> is a modular audio synthesizer with built in GUILE scriptability.</p>
 
 <h2>Totem</h2>
 <p><a href="http://hadess.net/totem.php3">Totem</a> is a movie player for the GNOME desktop.
