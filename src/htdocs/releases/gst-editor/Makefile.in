@@ -38,7 +38,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	$(top_srcdir)/html.make
-subdir = htdocs/releases/gst-ffmpeg
+subdir = htdocs/releases/gst-editor
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.in
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
@@ -134,9 +134,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am $(top_srcdir)/html.make $(am__conf
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign  htdocs/releases/gst-ffmpeg/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign  htdocs/releases/gst-editor/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --foreign  htdocs/releases/gst-ffmpeg/Makefile
+	  $(AUTOMAKE) --foreign  htdocs/releases/gst-editor/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
