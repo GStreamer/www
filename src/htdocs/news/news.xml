@@ -1066,12 +1066,58 @@ or download the
 </p>
     </content>
   </item>
-<item>
-	<date>2004-06-18 12:38</date>
-	<title>AmaroK 1.0 released</title>
-	<content>
-	<p>
-	Mark Kretschmann and the AmaroK team announced the 1.0 version of their great audio player AmaroK. AmaroK uses the best KDE technology available to create music for your ears and eyes. Like any good multimedia software these days AmaroK can use GStreamer as its backend. You can find out more about Amarok and the features of this first release at <A HREF="http://amarok.kde.org">the AmaroK homepage</A>.</p>
-</content>
-</item>
+  <item>
+    <date>2004-06-18 12:38</date>
+    <title>AmaroK 1.0 released</title>
+    <content>
+      <p>
+Mark Kretschmann and the AmaroK team announced the 1.0 version of their
+great audio player AmaroK. AmaroK uses the best KDE technology available
+to create music for your ears and eyes. Like any good multimedia software
+these days AmaroK can use GStreamer as its backend. You can find out more
+about Amarok and the features of this first release
+at <A HREF="http://amarok.kde.org">the AmaroK homepage</A>.
+     </p>
+    </content>
+  </item>
+
+  <item>
+    <date>2004-06-22 16:30</date>
+    <title>GStreamer Python 0.7.92 "I stick my neck out for nobody" released</title>
+    <content>
+<p>
+The GStreamer team is not as proud as usual to announce a new development release
+of the GStreamer Python bindings.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gst-python/0.7.92.html">release notes</a>
+or download the
+<a href="&site;/src/gst-python/gst-python-0.7.92.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-python/gst-python-0.7.92.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
+  <item>
+    <date>2004-06-23 18:30</date>
+    <title>GStreamer Plugins 0.8.2 "Kristiansand" released</title>
+    <content>
+<p>
+The GStreamer team is not as proud as usual to announce a new stable release
+of the GStreamer Plugins 0.8.x series.
+</p>
+<p>
+This release features over 62 bug fixes and 20 new elements.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gst-plugins/0.8.2.html">release notes</a>
+or download the
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.2.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.2.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
 </news>
