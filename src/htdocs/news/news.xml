@@ -836,8 +836,8 @@ compilation against newer ALSA and mpeg2dec libraries.
 Check out
 <a href="&site;/releases/gst-plugins/0.6.5.html">release notes</a>
 or download the
-<a href="&site;/src/gstreamer/gst-plugins-0.6.5.tar.gz">tar.gz</a> or
-<a href="&site;/src/gstreamer/gst-plugins-0.6.5.tar.bz2">tar.bz2</a> archive.
+<a href="&site;/src/gst-plugins/gst-plugins-0.6.5.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-plugins/gst-plugins-0.6.5.tar.bz2">tar.bz2</a> archive.
 </p>
     </content>
   </item>
@@ -925,8 +925,8 @@ GStreamer FFmpeg 0.8.x series.
 Check out the
 <a href="&site;/releases/gst-ffmpeg/0.8.0.html">release notes</a>
 or download the
-<a href="&site;/src/gstreamer/gst-ffmpeg-0.8.0.tar.gz">tar.gz</a> or
-<a href="&site;/src/gstreamer/gst-ffmpeg-0.8.0.tar.bz2">tar.bz2</a> archive.
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.8.0.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.8.0.tar.bz2">tar.bz2</a> archive.
 </p>
     </content>
   </item>
