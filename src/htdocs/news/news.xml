@@ -1027,6 +1027,25 @@ the python bindings, gstreamer-ffmpeg and gstreamer-monkeysaudio.
     </content>
   </item>
 
+  <item>
+    <date>2004-06-04 13:48</date>
+    <title>GStreamer 0.8.2 "Gigantic" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of the
+GStreamer 0.8.x series.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gstreamer/0.8.2.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.8.2.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.8.2.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
+
 
 </news>
 
