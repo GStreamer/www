@@ -1,5 +1,11 @@
 2005-03-07  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	  releasing plugins 0.8.8
+
+2005-03-07  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/releases/gst-plugins/0.8.8.xml:
 	* src/htdocs/releases/gst-plugins/Makefile.am:
 	  new plugins release notes

@@ -1520,6 +1520,7 @@ or download the
 </p>
     </content>
   </item>
+
   <item>
     <date>2005-01-14 13:40</date>
     <title>gst-player officially unmaintained and deprecated</title>
@@ -1573,4 +1574,25 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2005-03-07 18:07</date>
+    <title>GStreamer Plugins 0.8.8 "Fluded" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release
+of the GStreamer Plugins 0.8.x series.
+</p>
+<p>
+It also wishes you a happy New Year !
+</p>
+<p>
+Check out
+<a href="&site;/releases/gst-plugins/0.8.8.html">release notes</a>
+or download the
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.8.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.8.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+ 
 </news>
