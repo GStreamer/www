@@ -55,7 +55,7 @@ in any format supported by GStreamer.</p>
 <p><a href="http://gamp.sourceforge.net/">Gamp</a> is a GNOME based media player</p>
 
 <h2>GNOME Media</h2>
-<p><a href="http://ronald.bitfreak.net/me/gnome-media.php">GNOME Media</a> uses GStreamer for the volume control, sound recorder, cd player, video and audio thumnailers.</p>
+<p><a href="http://ronald.bitfreak.net/me/gnome-media.php">GNOME Media</a> uses GStreamer for the volume control, sound recorder and cd player.</p>
 
 <h2>Goobox</h2>
 <p><a href="http://www.gnomefiles.org/app.php?soft_id=531">Goobox</a> is a GNOME based cd-player and ripper</p>
