@@ -1,7 +1,7 @@
 SUBDIRS = apps bindings bugs dev documentation download images \
 	lists modules news releases \
 	tasks features \
-	planet
+	planet artwork
 
 built_pages = index.html
 index_style = index.xsl

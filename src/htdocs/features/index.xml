@@ -33,7 +33,7 @@ for both core and plugin/app developers</li>
 <h2>Intelligent Plugin Architecture</h2>
 <ul>
 <li>
-<a href="&site;/data/doc/gstreamer/head/gstreamer/html/gstreamer-gstplugin.html">
+<a href="&site;/data/doc/gstreamer/head/gstreamer/html/GstPlugin.html">
 Dynamically loaded</a>
 plugins provide elements and media types, demand-loaded via an XML registry,
 similar to ld.so.cache</li>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: artwork</title>
+  <body>
+
+    <!-- upload images to http://gstreamer.freedesktop.org/data/images/artwork/ -->
+    <h2>Artwork created by Jakub "Jimmac" Steiner</h2>
+    <a href="http://jimmac.musichall.cz/index.php3" taget="new">artists homepage</a><br/>
+    Licence: GPL<br/>
+    <br/>
+    desktop wallpaper:<br/>
+    <a href="/data/images/artwork/gstreamer.jpeg"><img src="/data/images/artwork/gstreamer-mini.jpeg"/></a><br/>
+    link button:<br/>
+    <img src="/data/images/artwork/gstreamer.jpeg"/><br/>
+    <br/>
+    <h2>More artwork ...</h2>
+    If you want your gstreamer related artwork to be seen here, please sent it to us.
+  </body>
+</page>
