@@ -1521,22 +1521,56 @@ or download the
     </content>
   </item>
   <item>
-<date>2005-01-14 13:40</date>
-    <title>Gst-player officially unmaintained and deprecated</title>
+    <date>2005-01-14 13:40</date>
+    <title>gst-player officially unmaintained and deprecated</title>
     <content>
 <p>
-The Gst-player have been part of GStreamer almost from day one, but only been maintained at irregular intervals. Currently it is quite broken in many cases and we have due to this decided to official remove it from the project as there today are better alternatives. This means all references to the player have been removed and the bugzilla entry will also be cut. If you are looking for a GTK+ based video player using GStreamer we recommend <a href="http://www.hadess.net/totem.php3">Totem</a>.
+gst-player has been part of GStreamer almost from day one, but only been
+maintained at irregular intervals. Currently it is quite broken in many cases
+and we have due to this decided to officially remove it from the project as
+today there are better alternatives. This means all references to the player
+have been removed and the bugzilla entry will also be removed. If you are
+looking for a GTK+-based video player using GStreamer we recommend <a
+href="http://www.hadess.net/totem.php3">Totem</a>.
 </p>
-   </content>
-   </item>
- <item>
-<date>2005-01-20 19:00</date>
+    </content>
+  </item>
+
+  <item>
+    <date>2005-01-20 19:00</date>
     <title>GStreamer licensing advisory online</title>
     <content>
 <p>
-GStreamer is a project which aims to fullfill an important part of the infrastructure for free and open source operating systems. As a result of this we need to make sure everything we do is licensed in a way that enables us to fullfil this role well. To help ensure this we have, after a lot of discussion and gathering of external feedback, put together <a href="http://gstreamer.freedesktop.org/documentation/licensing.html">this licensing advisory</a>. It explains both how plugins for GStreamer will have to be licensed for us to approve them for inclusion and suggestions for how free software developers should license their software to solve the practical problems facing us today. We strongly advice everyone to read this. The content of this advisory will also be included in our development manuals.
+GStreamer is a project which aims to fullfill an important part of the
+infrastructure for free and open source operating systems. As a result of this
+we need to make sure everything we do is licensed in a way that enables us to
+fullfill this role well. To help ensure this we have, after a lot of discussion
+and gathering of external feedback, put together <a
+href="&site;/documentation/licensing.html">this
+licensing advisory</a>. It explains both how plugins for GStreamer will have to
+be licensed for us to approve them for inclusion and suggestions for how free
+software developers should license their software to solve the practical
+problems facing us today. We strongly advise everyone to read this. The content
+of this advisory is also included in our FAQ.  </p>
+    </content>
+  </item>
+
+  <item>
+    <date>2005-02-08 12:44</date>
+    <title>GStreamer 0.8.9 "Like Eating Glass" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of the
+GStreamer 0.8.x series.
 </p>
-   </content>
-   </item>
+<p>
+Check out
+<a href="&site;/releases/gstreamer/0.8.9.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.8.9.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.8.9.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
 
 </news>

@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Like Eating Glass</name>
+  <version>0.8.9</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release
+in the 0.8.x stable series of the GStreamer streaming-media framework.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
+</p>
+<p>
+This module only contains core functionality.  For actual media playback,
+you will need other modules.  GStreamer Plugins contains a huge set of
+additional plugins.  GStreamer FFmpeg contains a plugin based on the popular
+FFmpeg decoding library.  These modules need not have the same source version
+as the core, as long as they are in the 0.8.x series.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+
+    <feature>Probe fixes</feature>
+    <feature>Thread and queue fixes fixes</feature>
+    <feature>Documentation updates</feature>
+    <feature>New translation added: Vietnamese (Clytie Siddall)</feature>
+    <feature>Important GstBin state change fix - see #166371 if you subclass</feature>
+  </features>
+
+  <applications>
+<p>
+Applications already ported to use GStreamer 0.8.x include the GNOME
+desktop components like gnome-media and nautilus-media, as well as other
+GNOME applications including sound-juicer, totem and RhythmBox.
+</p>
+  </applications>
+
+  <contributors>
+<!--
+<person>Christian Schaller</person>
+<person>Christophe Fergeau</person>
+<person>Daniel Gazard</person>
+<person>Johan Dahlin</person>
+<person>Luca Ferretti</person>
+<person>Kjartan Maraas</person>
+<person>Martin Soto</person>
+<person>Matt Kraai</person>
+<person>Steve Lhomme</person>
+<person>William Jon McCann</person>
+<person>Zaheer Abbas Merali</person>
+-->
+	<person>Andy Wingo</person>
+	<person>Benjamin Otte</person>
+	<person>Clytie Siddall</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Luca Ognibene</person>
+	<person>Ronald Bultje</person>
+	<person>Sebastien Cote</person>
+	<person>Stefan Kost</person>
+	<person>Stephane Loeuillet</person>
+	<person>Stephane Wirtel</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Torri</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  <bugs>
+    <bug>
+      <id>94464</id>
+      <summary>[threads] gst_scheduler_add_scheduler() doesn't ref passe...</summary>
+    </bug>
+    <bug>
+      <id>123775</id>
+      <summary>[PATCH] [api] setting state on element should force highe...</summary>
+    </bug>
+    <bug>
+      <id>142588</id>
+      <summary>[threads] if all elements have been removed from a bin, s...</summary>
+    </bug>
+    <bug>
+      <id>150546</id>
+      <summary>[api] Error for calling gst_pad_push in a get function is...</summary>
+    </bug>
+    <bug>
+      <id>162276</id>
+      <summary>[build] gstregistry.h and gstxmlregistry.c don't build wi...</summary>
+    </bug>
+    <bug>
+      <id>163234</id>
+      <summary>[PATCH] plugin loading isn't thread-safe</summary>
+    </bug>
+    <bug>
+      <id>163383</id>
+      <summary>[PATCH] ogm plugins won't register</summary>
+    </bug>
+    <bug>
+      <id>163801</id>
+      <summary>[PATCH] mem leak in xml registry loading</summary>
+    </bug>
+    <bug>
+      <id>164062</id>
+      <summary>[PATCH] tee capsnego is broken</summary>
+    </bug>
+    <bug>
+      <id>164261</id>
+      <summary>[PATCH] GST parsing doesn't recognise urls without a file...</summary>
+    </bug>
+    <bug>
+      <id>165272</id>
+      <summary>[PATCH] Problem compiling gstreamer 0.8.8</summary>
+    </bug>
+    <bug>
+      <id>165365</id>
+      <summary>[PATCH] gst_string_wrap() segfaults on NULL strings</summary>
+    </bug>
+    <bug>
+      <id>165922</id>
+      <summary>add locking in opt</summary>
+    </bug>
+    <bug>
+      <id>166269</id>
+      <summary>Typo in current .po file msgid string</summary>
+    </bug>
+    <bug>
+      <id>166362</id>
+      <summary>data discarded by probes is leaked</summary>
+    </bug>
+    <bug>
+      <id>166371</id>
+      <summary>GstBin derived classes not notified of state change</summary>
+    </bug>
+  </bugs>
+
+</release>

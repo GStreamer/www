@@ -1,4 +1,4 @@
-<!ENTITY gst-version-stable "0.8.8">
+<!ENTITY gst-version-stable "0.8.9">
 <!ENTITY gst-version-devel "0.7.6">
 <!ENTITY gst-plugins-version-stable "0.8.7">
 <!ENTITY gst-plugins-version-devel "0.7.6">

@@ -1,3 +1,11 @@
+2005-02-08  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gstreamer/0.8.9.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	  releasing core 0.8.9
+
 2005-01-29  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
 
 	* src/htdocs/tasks/gstreamer.xml:
