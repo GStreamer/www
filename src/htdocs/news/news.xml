@@ -1404,10 +1404,10 @@ The amaroK team has <a href="http://amarok.kde.org/content/view/31/2/">announced
 
   <item>
     <date>2004-11-29 13:34</date>
-    <title>gst-python 0.8.1: Don't listen to him, Sascha. Fill it up! released</title>
+    <title>gst-python 0.8.1: "Don't listen to him, Sascha. Fill it up!" released</title>
     <content>
 <p>
-The GStreamer team is proud to announce the first stable release of the Python
+The GStreamer team is proud to announce the second stable release of the Python
 bindings targetting the 0.8.x series of GStreamer. 
 </p>
 <p>
@@ -1415,7 +1415,7 @@ Check out the
 <a href="&site;/releases/gst-python/0.8.1.html">release notes</a>
 or download the
 <a href="&site;/src/gst-python/gst-python-0.8.1.tar.gz">tar.gz</a> or
-<a href="&site;/src/gst-python/gst-python-0.8.1.tar.bz2">tar.bz2</a>archive.
+<a href="&site;/src/gst-python/gst-python-0.8.1.tar.bz2">tar.bz2</a> archive.
 </p>
     </content>
   </item>
