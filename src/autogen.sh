@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # on changes to this file, it gets run automatically on the online website
-# I hope
 
 srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
