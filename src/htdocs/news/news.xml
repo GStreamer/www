@@ -1169,4 +1169,22 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2004-08-02 15:57</date>
+    <title>GStreamer Plugins 0.8.3 "Water" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release
+of the GStreamer Plugins 0.8.x series.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gst-plugins/0.8.3.html">release notes</a>
+or download the
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.3.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.3.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
 </news>
