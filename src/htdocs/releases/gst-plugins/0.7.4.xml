@@ -25,7 +25,6 @@ It is, however, parallel installable with the 0.6.x series.
   </intro>
   <features>
     <feature>Compatible with gstreamer 0.7.4</feature>
-    <feature>Lots of bugfixes</feature>
     <feature>Reworked pad negotiation</feature>
     <feature>Internationalized plugin elements</feature>
     <feature>Reworked error notification with translated error messages and additional debug information for developer feedback</feature>
@@ -47,6 +46,7 @@ It is, however, parallel installable with the 0.6.x series.
     <feature>Updated flac tag handling</feature>
     <feature>Updated dvdnav element</feature>
     <feature>Updated mplex element</feature>
+    <feature>Lots of bugfixes</feature>
   </features>
 
   <issues>
