@@ -203,4 +203,18 @@ GStreamer has bindings for Python.
     </versions>
   </module>
 
+  <module>
+    <id>gst-monkeysaudio</id>
+    <blurb>Monkey's Audio plugin</blurb>
+    <title>GStreamer Monkey's Audio Plugin</title>
+    <description>
+GStreamer has a plugin for the Monkey's Audio format.
+    </description>
+    <maintainer>Jérémy Simon</maintainer>
+    <versions>
+      <stable>0.8.0</stable>
+    </versions>
+  </module>
+
+
 </modules>
