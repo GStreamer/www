@@ -135,10 +135,13 @@ the GPL license Muine is covered by.</i>
 Our suggestion among these choices is to use the LGPL license, as it is what
 resembles the GPL most and it makes it a good licensing fit with the major
 GNU/Linux desktop projects like GNOME and KDE.  It also allows you to share
-code more openly with projects that have compatible licenses.  Obviously,
-pure GPL code without the above-mentioned clause is not usable in your
-application as such.  By choosing the LGPL, there is no need for an
-exception clause and thus code can be shared more freely.
+code more openly with projects that have compatible licenses. As you might
+deduce, pure GPL licensed code without the above-mentioned clause is not 
+re-usable in your application under a GPL plus exception clause unless you 
+get the author of the pure GPL code to allow a relicensing to GPL plus 
+exception clause. By choosing the LGPL, there is no need for an exception 
+clause and thus code can be shared freely between your application and
+other LGPL using projects.
 </p>
 <p>
 I have above outlined the practical reasons for why the GStreamer community
