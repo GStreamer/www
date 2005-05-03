@@ -28,8 +28,8 @@ as the core, as long as they are in the 0.8.x series.
     <feature>Parallel installability with 0.6.x series</feature>
     <feature>Internationalization</feature>
 
-    <feature>fixes for 64-bit platforms</feature>
-    <feature>fixes for gcc 4</feature>
+    <feature>Fixes for 64-bit platforms</feature>
+    <feature>Fixes for gcc 4</feature>
 
     <feature>New translation added: Russian (Peter Astakhov)</feature>
     <feature>Registry now uses libxml for faster startup</feature>
@@ -39,10 +39,15 @@ as the core, as long as they are in the 0.8.x series.
 <p>
 Applications already ported to use GStreamer 0.8.x include the GNOME
 desktop components like gnome-media and nautilus-media, as well as other
-GNOME applications including sound-juicer, totem and RhythmBox.
-
+GNOME applications including sound-juicer, totem and rhythmbox.
+</p>
+<p>
 Users of Flumotion on 64-bit systems need to upgrade to this release, as it
 contains an important bug fix needed for the TCP elements.
+</p>
+<p>
+Users of Totem and Rhythmbox (development) having small pauses when playing
+MP3 files should also upgrade, as this is fixed in the queue element.
 </p>
   </applications>
 
@@ -80,7 +85,7 @@ contains an important bug fix needed for the TCP elements.
 	<person>Thomas Vander Stichele</person>
 	<person>Tim-Philipp Müller</person>
 	<person>Torsten Schoenfeld</person>
-	<person>Trtistan van Berkom</person>
+	<person>Tristan van Berkom</person>
 	<person>Wim Taymans</person>
 	<person>Wouter Paesen</person>
 	<person>Zaheer Abbas Merali</person>
@@ -88,8 +93,9 @@ contains an important bug fix needed for the TCP elements.
 
   <api>
     <additions>
-      <item>GST_EVENT_COMMON_FLAGS_NEED_RESPONSE has been added, to indicate whether a reply is expected to an upstream event.</item>
+      <item>GST_EVENT_COMMON_FLAGS_NEED_RESPONSE has been added, to indicate whether a reply is expected to an upstream event</item>
       <item>GST_TAG_LANGUAGE_CODE has been added</item>
+      <item>GstChildProxy, a new interface to uniformly access elements' children and their properties, has been added</item>
     </additions>
     <depreciations>
       <item>gst_buffer_set_data was deprecated</item>
