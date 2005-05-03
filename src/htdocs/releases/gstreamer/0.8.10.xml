@@ -3,13 +3,13 @@
 <release>
   <module>gstreamer</module>
   <module-fancy>GStreamer</module-fancy>
-  <name>Like Eating Glass</name>
-  <version>0.8.9</version>
+  <name>No Fun</name>
+  <version>0.8.10</version>
 
   <intro>
 <p>
 The GStreamer team is happy to announce a new release
-in the 0.8.x stable series of the GStreamer streaming-media framework.
+in the 0.8.x stable series of the GStreamer streaming media framework.
 </p>
 <p>
 The 0.8.x series is a stable series aimed at end users.
@@ -26,13 +26,23 @@ as the core, as long as they are in the 0.8.x series.
   </intro>
   <features>
     <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+
+    <feature>fixes for 64-bit platforms</feature>
+    <feature>fixes for gcc 4</feature>
+
+    <feature>New translation added: Russian (Peter Astakhov)</feature>
+    <feature>Registry now uses libxml for faster startup</feature>
   </features>
 
   <applications>
 <p>
 Applications already ported to use GStreamer 0.8.x include the GNOME
-desktop components like gnome-media, sound-juicer, totem and RhythmBox.
-And KDE applications like AmaroK and JuK.
+desktop components like gnome-media and nautilus-media, as well as other
+GNOME applications including sound-juicer, totem and RhythmBox.
+
+Users of Flumotion on 64-bit systems need to upgrade to this release, as it
+contains an important bug fix needed for the TCP elements.
 </p>
   </applications>
 
@@ -43,104 +53,169 @@ And KDE applications like AmaroK and JuK.
 <person>Daniel Gazard</person>
 <person>Johan Dahlin</person>
 <person>Luca Ferretti</person>
-<person>Kjartan Maraas</person>
 <person>Martin Soto</person>
 <person>Matt Kraai</person>
 <person>Steve Lhomme</person>
 <person>William Jon McCann</person>
-<person>Zaheer Abbas Merali</person>
+<person>Sebastien Cote</person>
+<person>Stephane Loeuillet</person>
+<person>Stephane Wirtel</person>
+<person>Vincent Torri</person>
+<person>Andy Wingo</person>
+<person>Clytie Siddall</person>
+<person>Edward Hervey</person>
 -->
-	<person>Andy Wingo</person>
 	<person>Benjamin Otte</person>
-	<person>Clytie Siddall</person>
 	<person>David Schleef</person>
-	<person>Edward Hervey</person>
+	<person>Jamey Hicks</person>
 	<person>Jan Schmidt</person>
+	<person>Jean de Largentaye</person>
+	<person>Kjartan Maraas</person>
 	<person>Luca Ognibene</person>
+	<person>Maciej Katafiasz</person>
+	<person>Peter Astakhov</person>
+	<person>Phil Blundell</person>
 	<person>Ronald Bultje</person>
-	<person>Sebastien Cote</person>
 	<person>Stefan Kost</person>
-	<person>Stephane Loeuillet</person>
-	<person>Stephane Wirtel</person>
 	<person>Thomas Vander Stichele</person>
 	<person>Tim-Philipp Müller</person>
-	<person>Vincent Torri</person>
+	<person>Torsten Schoenfeld</person>
+	<person>Trtistan van Berkom</person>
 	<person>Wim Taymans</person>
+	<person>Wouter Paesen</person>
+	<person>Zaheer Abbas Merali</person>
   </contributors>
 
-<!--
   <api>
     <additions>
+      <item>GST_EVENT_COMMON_FLAGS_NEED_RESPONSE has been added, to indicate whether a reply is expected to an upstream event.</item>
+      <item>GST_TAG_LANGUAGE_CODE has been added</item>
     </additions>
     <depreciations>
+      <item>gst_buffer_set_data was deprecated</item>
     </depreciations>
   </api>
--->
 
   <bugs>
     <bug>
-      <id>94464</id>
-      <summary>[threads] gst_scheduler_add_scheduler() doesn't ref passe...</summary>
+      <id>137485</id>
+      <summary>[strings] Please don't unnecessarily abbreviate in Gstrea...</summary>
     </bug>
     <bug>
-      <id>123775</id>
-      <summary>[PATCH] [api] setting state on element should force highe...</summary>
+      <id>147782</id>
+      <summary>[build] When compiling, CPPFLAGS don't propagate to GTKDO...</summary>
     </bug>
     <bug>
-      <id>142588</id>
-      <summary>[threads] if all elements have been removed from a bin, s...</summary>
+      <id>149791</id>
+      <summary>fdsrc w/o timeout can hang exiting threads</summary>
     </bug>
     <bug>
-      <id>150546</id>
-      <summary>[api] Error for calling gst_pad_push in a get function is...</summary>
+      <id>159676</id>
+      <summary>[playbin] audible click after 3s of playback using playbin</summary>
     </bug>
     <bug>
-      <id>162276</id>
-      <summary>[build] gstregistry.h and gstxmlregistry.c don't build wi...</summary>
+      <id>161991</id>
+      <summary>gst_init is slow</summary>
     </bug>
     <bug>
-      <id>163234</id>
-      <summary>[PATCH] plugin loading isn't thread-safe</summary>
+      <id>164479</id>
+      <summary>[cli-tools] gst_parse_launch can't handle spaces</summary>
     </bug>
     <bug>
-      <id>163383</id>
-      <summary>[PATCH] ogm plugins won't register</summary>
+      <id>164821</id>
+      <summary>[docs] GstLibraryError misses (proper) descriptions</summary>
     </bug>
     <bug>
-      <id>163801</id>
-      <summary>[PATCH] mem leak in xml registry loading</summary>
+      <id>165354</id>
+      <summary>Tests failure report for gstreamer 0.8.8</summary>
     </bug>
     <bug>
-      <id>164062</id>
-      <summary>[PATCH] tee capsnego is broken</summary>
+      <id>166073</id>
+      <summary>[threads] wrong error handling</summary>
     </bug>
     <bug>
-      <id>164261</id>
-      <summary>[PATCH] GST parsing doesn't recognise urls without a file...</summary>
+      <id>166250</id>
+      <summary>[PATCH] [queue] When two threads are connected with queue...</summary>
     </bug>
     <bug>
-      <id>165272</id>
-      <summary>[PATCH] Problem compiling gstreamer 0.8.8</summary>
+      <id>166699</id>
+      <summary>Typo in gstreamer-0.8.9/tools/gst-launch.1.in</summary>
     </bug>
     <bug>
-      <id>165365</id>
-      <summary>[PATCH] gst_string_wrap() segfaults on NULL strings</summary>
+      <id>167701</id>
+      <summary>[PATCH, strings] Please do not split translatable strings...</summary>
     </bug>
     <bug>
-      <id>165922</id>
-      <summary>add locking in opt</summary>
+      <id>168493</id>
+      <summary>[API] gst_index_factory_new() doesn't increase refcount o...</summary>
     </bug>
     <bug>
-      <id>166269</id>
-      <summary>Typo in current .po file msgid string</summary>
+      <id>168659</id>
+      <summary>[build] Need to patch gst-element-check-0.8.m4 to check f...</summary>
     </bug>
     <bug>
-      <id>166362</id>
-      <summary>data discarded by probes is leaked</summary>
+      <id>168703</id>
+      <summary>[API] Add gst_index_add_associationv() to gstindex.h</summary>
     </bug>
     <bug>
-      <id>166371</id>
-      <summary>GstBin derived classes not notified of state change</summary>
+      <id>169111</id>
+      <summary>[API] GstEvent NEED_RESPONSE flag</summary>
+    </bug>
+    <bug>
+      <id>169123</id>
+      <summary>[build] false dependence on libxml2 if registry is enabled</summary>
+    </bug>
+    <bug>
+      <id>169405</id>
+      <summary>[API] GST_TYPE_EVENT and gst_event_get_type unusable befo...</summary>
+    </bug>
+    <bug>
+      <id>169732</id>
+      <summary>gstreamer (element) does not build on cygwin</summary>
+    </bug>
+    <bug>
+      <id>170067</id>
+      <summary>Typefind leaks</summary>
+    </bug>
+    <bug>
+      <id>170464</id>
+      <summary>Bad variable's name mp3player in sample source code</summary>
+    </bug>
+    <bug>
+      <id>170499</id>
+      <summary>spider no decode some .mp3</summary>
+    </bug>
+    <bug>
+      <id>171400</id>
+      <summary>mmapsize property on gstfilesrc borked.</summary>
+    </bug>
+    <bug>
+      <id>172526</id>
+      <summary>gst-register fails on a lot of plugins on MacOSX</summary>
+    </bug>
+    <bug>
+      <id>300339</id>
+      <summary>assertion with gst_pad_relink_filtered</summary>
+    </bug>
+    <bug>
+      <id>300736</id>
+      <summary>Plug a bunch of leaks in the registry code</summary>
+    </bug>
+    <bug>
+      <id>300932</id>
+      <summary>[PATCH] add a GST_ELEMENT_WORK_IN_PLACE flag to gstelement</summary>
+    </bug>
+    <bug>
+      <id>301128</id>
+      <summary>cvs login command line is incorrect in PWG</summary>
+    </bug>
+    <bug>
+      <id>301313</id>
+      <summary>[decodebin] seek while reading (non-existant) ID3v2 tag d...</summary>
+    </bug>
+    <bug>
+      <id>301331</id>
+      <summary>gst_element_unlink only unlinks real pads</summary>
     </bug>
   </bugs>
 
