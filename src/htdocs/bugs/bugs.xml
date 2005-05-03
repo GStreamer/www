@@ -10,6 +10,7 @@
     <component>gstreamer+%28core%29</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.8.11</milestone>
       <milestone>0.8.10</milestone>
       <milestone>0.8.9</milestone>
       <milestone>0.8.8</milestone>
