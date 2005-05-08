@@ -4,7 +4,7 @@
 
 cd /home/wingo/planet-gstreamer
 umask 0002
-python planet.py gstreamer/config.ini
+python planet.py /home/srv/gstreamer.freedesktop.org/planet/config.ini
 chown -R :gstreamer * 2> /dev/null
 chmod -R g+w * 2> /dev/null
 rsync -a gstreamer/planet/ /home/srv/gstreamer.freedesktop.org/www/htdocs/planet/
