@@ -2,10 +2,9 @@
 # this script is run on the fdo server, so no use running at home
 # it updates Planet GStreamer
 
-HOME=/home/projects/gstreamer
-cd $HOME/planet
+cd /home/wingo/planet-gstreamer
 umask 0002
 python planet.py gstreamer/config.ini
 chown -R :gstreamer * 2> /dev/null
 chmod -R g+w * 2> /dev/null
-rsync -a gstreamer/planet/ $HOME/www/htdocs/planet/
+rsync -a gstreamer/planet/ /home/srv/gstreamer.freedesktop.org/www/htdocs/planet/

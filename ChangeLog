@@ -1,5 +1,7 @@
 2005-05-08  Andy Wingo  <wingo@pobox.com>
 
+	* bin/planet-update: Update to work with newer planet code.
+
 	* src/htdocs/bindings/bindings.xml: Updates for guile and perl.
 
 2005-05-03  Thomas Vander Stichele  <thomas at apestaart dot org>
