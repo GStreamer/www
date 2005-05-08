@@ -18,13 +18,16 @@
   <binding>
     <id>perl</id>
     <name>Perl</name>
-    <status>The bindings are still under development and not yet released.</status>
-    <contacts>
-      <person>
-        <realname>Brett Kosinski</realname>
-        <email>brettk (at) frodo.dyn.gno.org</email>
-      </person>
-    </contacts>
+    <status>Released as part of the <a
+      href="http://gtk2-perl.sourceforge.net">gtk2-perl</a> project.
+    </status>
+    <body>
+    <p>See the <a href="http://gtk2-perl.sourceforge.net">gtk2-perl</a> project
+    page for more information. Releases can be had directly from <a
+    href="http://sourceforge.net/project/showfiles.php?group_id=64773&amp;package_id=150831">the
+    sourceforge download page</a>.
+    </p>
+    </body>
   </binding>
 
   <binding>
@@ -158,24 +161,22 @@ Currently, the following classes are either fully or partially implemented:
   <binding>
     <id>guile</id>
     <name>Guile</name>
-    <status>
-The bindings are part of the gnome-guile package
+    <status>Released under the aegis of the
+      <a href="http://www.gnu.org/software/guile-gnome/">guile-gnome</a> project.
     </status>
-<body>
-<p>
-The GStreamer API <a
-href="http://home.gna.org/guile-gnome/">Guile</a> bindings are still
-under development, but are already quite usable.
-</p>
-</body>
+    <body>
+      <p>
+        The GStreamer <a href="http://www.gnu.org/software/guile/">Guile</a>
+        bindings can be technically described as the &quot;Bee's Knees&quot;.
+      </p>
+      <p>
+        Check out the <a
+        href="http://www.gnu.org/software/guile-gnome/">guile-gnome</a> page for
+        details.
+      </p>
+    </body>
 
     <news>
-      <item>
-        <date>02 Nov 2004</date>
-        <text>
-Check out the GNOME-Guile page for details about the Guile bindings to GStreamer.
-      </text>
-      </item>
     </news>
 
     <contacts>
