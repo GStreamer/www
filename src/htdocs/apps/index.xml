@@ -41,7 +41,7 @@
 
 <h2>Cupid</h2>
 <p>
-<a href="http://ronald.bitfreak.net/me/cupid.php">A GStreamer video Recorder</a>,
+<a href="http://ronald.bitfreak.net/cupid.php">A GStreamer video Recorder</a>,
 which is currently under development and will be able to record perfectly synchronized audio/video
 in any format supported by GStreamer.</p>
 
@@ -58,7 +58,7 @@ in any format supported by GStreamer.</p>
 <p><a href="http://gamp.sourceforge.net/">Gamp</a> is a GNOME based media player</p>
 
 <h2>GNOME Media</h2>
-<p><a href="http://ronald.bitfreak.net/me/gnome-media.php">GNOME Media</a> uses GStreamer for the volume control, sound recorder and cd player.</p>
+<p><a href="http://ronald.bitfreak.net/gnome-media.php">GNOME Media</a> uses GStreamer for the volume control, sound recorder and cd player.</p>
 
 <h2>Goobox</h2>
 <p><a href="http://www.gnomefiles.org/app.php?soft_id=531">Goobox</a> is a GNOME based cd-player and ripper</p>
@@ -144,7 +144,7 @@ artistic tool for mapping movements in video to MIDI events</p>
 
 <h2>Aldegonde</h2>
 <p>
-<a href="http://ronald.bitfreak.net/me/aldegonde.php">Aldegonde</a> is a 
+<a href="http://ronald.bitfreak.net/aldegonde.php">Aldegonde</a> is a 
 simple media player made to ease debugging of GStreamer playback issues. 
 </p>
 
