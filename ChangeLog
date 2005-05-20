@@ -1,3 +1,8 @@
+2005-05-20  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/bugs/bugs.xml:
+	  add bugzilla plugins versions
+
 2005-05-08  Andy Wingo  <wingo@pobox.com>
 
 	* bin/planet-update: Update to work with newer planet code.
