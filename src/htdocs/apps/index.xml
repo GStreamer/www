@@ -136,6 +136,9 @@ is a simple to use player which features inline visualizations.
 <p><a href="videowhale.html">Video-Whale</a> is an implementation of a Gstreamer-based video-wall. Making a video wall with GStreamer is easy, this article with pictures from Zeeshan Ali shows you how.
 </p>
 
+<h2>WaveMixer</h2>
+<p><a href="http://wavemixer.sourceforge.net/">WaveMixer</a> is a multitrack sound editor written with gtkmm and GStreamer.</p>
+
 <h2>Wechselspieler</h2> 
 <p><a href="http://wechselspieler.sourceforge.net/">Wechselspieler</a> is an 
 artistic tool for mapping movements in video to MIDI events</p>
@@ -148,7 +151,7 @@ artistic tool for mapping movements in video to MIDI events</p>
 simple media player made to ease debugging of GStreamer playback issues. 
 </p>
 
-<h2>Kiss</h2?
+<h2>Kiss</h2>
 <p>
 <a href="http://ronald.bitfreak.net/kiss.php">Kiss</a> is a simple KDE base media player meant as an example application for KDE developers who want to use GStreamer.
 </p>
