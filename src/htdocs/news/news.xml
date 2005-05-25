@@ -1630,5 +1630,18 @@ or download the
 </p>
     </content>
   </item>
+  <item>
+    <date>2005-05-25 20:11</date>
+    <title>GStreamer Plugins 0.8.9 "Old Hat"</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of GStreamer 
+Plugins in the 0.8.x stable release series.
+</p>
+<p>
+Check out <a href="&site;/releases/gst-plugins/0.8.9.html">release page</a>
+for details.
+</content>
+</item>
 
 </news>
