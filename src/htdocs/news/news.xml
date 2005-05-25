@@ -1645,4 +1645,30 @@ for details.
 </content>
 </item>
 
+  <item>
+    <date>2005-05-25 20:32</date>
+    <title>Gnonlin 0.2.1</title>
+    <content>
+<p>
+A new version of Gnonlin was made today. Gnonlin is a library for making
+nonlinear video editors. With this release all Gnonlin elements can
+be handled using only the standard GStreamer API.
+</p>
+<p>
+Check out <a href="http://gnonlin.sourceforge.net/">Gnonlin homepage for more details</a>.
+</p>
+</content>
+</item>
+
+<item>
+    <date>2005-05-25 20:36</date>
+    <title>Nokia launch mobile device using GStreamer</title>
+    <content>
+<p>
+Nokia today announced the <a href="http://www.nokia.com/nokia/0,,75023,00.html">Nokia 770</a> web tablet which runs GNU/Linux and uses GStreamer for its multimedia. Check out their <a href="http://www.maemo.org/">developer page</a> for details. This is a great validation of the effort the GStreamer team and we are very happy about GStreamer being used by Nokia for their device.
+</p>
+</content>
+</item>
+
+
 </news>
