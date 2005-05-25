@@ -1,3 +1,9 @@
+2005-05-25  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/releases/gst-plugins/0.8.9.xml:
+	* src/htdocs/releases/gst-plugins/Makefile.am:
+	  release notes
+
 2005-05-20  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/bugs/bugs.xml:

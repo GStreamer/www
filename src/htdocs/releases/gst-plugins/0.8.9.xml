@@ -1,0 +1,402 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins</module>
+  <module-fancy>GStreamer Plugins</module-fancy>
+  <name>Old Hat</name>
+  <version>0.8.9</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release
+in the 0.8.x stable series of the GStreamer Plugins.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
+</p>
+<p>
+This module contains plugins providing media encoding and decoding,
+conversion, effects, and other elements that provide actual media
+handling functionality to the core.  You need the GStreamer core module
+to make them work.  The versions do not need to match exactly, as long
+as all of them are in the 0.8.x series.
+</p>
+<p>
+The FFmpeg-based decoder element has been moved to its own module.  If you
+want support for a lot of popular video formats, you need to install this
+module along with the GStreamer Core and Plugins.  An FFmpeg-based colorspace
+element has been added to the Plugins however.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+
+    <feature>Translations: af az ca cs en_GB fr hu it nb nl or sq sr sv uk vi</feature>
+
+    <feature>new element: ximagesrc</feature>
+    <feature>new plugin: video4linuxradio</feature>
+    <feature>new plugin: freeze</feature>
+  </features>
+
+  <applications>
+<p>
+The GConf settings have moved to a versioned location and can now be found
+under /system/gstreamer/0.8.  Applications should use the gconf library,
+as provided by gstreamer-gconf-0.8.pc, to access the default settings.
+</p>
+  </applications>
+  <contributors>
+<!--
+<person>Amaury Jacquot</person>
+<person>Andy Wingo</person>
+<person>Archana Shah</person>
+<person>Balamurali Viswanathan</person>
+<person>Christian Schaller</person>
+<person>Christophe Fergeau</person>
+<person>Clytie Siddall</person>
+<person>David Moore</person>
+<person>Francis Labonte</person>
+<person>James Henstridge</person>
+<person>Jeffrey Ollie</person>
+<person>Julien Moutte</person>
+<person>Gora Mohanty</person>
+<person>Iain Holmes</person>
+<person>James Bowes</person>
+<person>James Morrison</person>
+<person>Johan Dahlin</person>
+<person>Luca Ferretti</person>
+<person>Martin Pitt</person>
+<person>Martin Soto</person>
+<person>Maciej Katafiasz</person>
+<person>Martin Eikermann</person>
+<person>Martin Holters</person>
+<person>Milosz Derezynski</person>
+<person>Nathan Robertson</person>
+<person>Paul Jack</person>
+<person>Phil Blundell</person>
+<person>Scott Wheeler</person>
+<person>Stefan Kost</person>
+<person>Sebastien Cote</person>
+<person>Stephane Loeuillet</person>
+<person>Steve Baker</person>
+<person>Takao Fujiwara</person>
+<person>Toni Willberg</person>
+-->
+
+	<person>Ali Akcaagac</person>
+	<person>Arwed v. Merkatz</person>
+	<person>Benjamin Otte</person>
+	<person>Benoit Amiaux</person>
+	<person>Brian Cameron</person>
+	<person>Chris Lee</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Gergely Nagy</person>
+	<person>Jan Schmidt</person>
+	<person>Kjartan Maraas</person>
+	<person>Koop Mast</person>
+	<person>Luca Ognibene</person>
+	<person>Lutz Mueller</person>
+	<person>Nickolay V. Shmyrev</person>
+	<person>Richard Hult</person>
+	<person>Ronald Bultje</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Till Busch</person>
+	<person>Tim-Philipp Müller</person>
+	<person>William Jon McCann</person>
+	<person>Wim Taymans</person>
+	<person>Wouter Paesen</person>
+	<person>Zaheer Abbas Merali</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  <bugs>
+    <bug>
+      <id>118033</id>
+      <summary>Autodetect audiosink at run-time</summary>
+    </bug>
+    <bug>
+      <id>141189</id>
+      <summary>[PATCH] [SPC] playback</summary>
+    </bug>
+    <bug>
+      <id>149158</id>
+      <summary>[qtdemux/faad] MP4 file encoded Nero AAC Codec 2.6.2.0 is...</summary>
+    </bug>
+    <bug>
+      <id>154431</id>
+      <summary>[mpeg] on PPC, gstreamer segfaults on any mpeg video</summary>
+    </bug>
+    <bug>
+      <id>161661</id>
+      <summary>[PATCH] screenshots via gstreamer</summary>
+    </bug>
+    <bug>
+      <id>162024</id>
+      <summary>[alsasink] doesn't probe HW buffer_size/period_size/perio...</summary>
+    </bug>
+    <bug>
+      <id>162355</id>
+      <summary>[PATCH] [cdparanoia] Fix for _QUERY_POSITION</summary>
+    </bug>
+    <bug>
+      <id>163443</id>
+      <summary>crash when searching in a file (cvs)</summary>
+    </bug>
+    <bug>
+      <id>165643</id>
+      <summary>[qtdemux] doesn't handle embedded URLs</summary>
+    </bug>
+    <bug>
+      <id>165726</id>
+      <summary>[PATCH] New plugin: freeze</summary>
+    </bug>
+    <bug>
+      <id>166113</id>
+      <summary>[faad] plugin won't compile against faad CVS (unreleased ...</summary>
+    </bug>
+    <bug>
+      <id>168390</id>
+      <summary>data caching (queue) breaks mms/asf</summary>
+    </bug>
+    <bug>
+      <id>168406</id>
+      <summary>asfdemux always uses 25fps</summary>
+    </bug>
+    <bug>
+      <id>168558</id>
+      <summary>[faad] Unsupported FAAD channel position 0x0 encountered ...</summary>
+    </bug>
+    <bug>
+      <id>168728</id>
+      <summary>[v4lsrc] Support for v4l radio (patch included)</summary>
+    </bug>
+    <bug>
+      <id>169073</id>
+      <summary>muine crashes on song change</summary>
+    </bug>
+    <bug>
+      <id>169081</id>
+      <summary>ogg broken stream fix</summary>
+    </bug>
+    <bug>
+      <id>169289</id>
+      <summary>Playbin should fallback on x11 when xvideo isn't available</summary>
+    </bug>
+    <bug>
+      <id>169333</id>
+      <summary>[pngdec, pngenc] Stride problems</summary>
+    </bug>
+    <bug>
+      <id>169400</id>
+      <summary>decodebin finalization bug</summary>
+    </bug>
+    <bug>
+      <id>169629</id>
+      <summary>[theoraenc] sharpness property</summary>
+    </bug>
+    <bug>
+      <id>170060</id>
+      <summary>Segmentation Fault when open a video file with external s...</summary>
+    </bug>
+    <bug>
+      <id>170066</id>
+      <summary>Leak in oggdemux</summary>
+    </bug>
+    <bug>
+      <id>170083</id>
+      <summary>nautilus restarts (crashes) when trying to view the prope...</summary>
+    </bug>
+    <bug>
+      <id>170249</id>
+      <summary>[nassink] playing .wav gives only noise</summary>
+    </bug>
+    <bug>
+      <id>170319</id>
+      <summary>id3demuxbin loses tags</summary>
+    </bug>
+    <bug>
+      <id>170387</id>
+      <summary>gstreamer fails to play free format mp3 using playbin</summary>
+    </bug>
+    <bug>
+      <id>170390</id>
+      <summary>adder fails to implement a release_pad function</summary>
+    </bug>
+    <bug>
+      <id>171341</id>
+      <summary>seeks on the silence plugin</summary>
+    </bug>
+    <bug>
+      <id>171371</id>
+      <summary>need wavpack decoder</summary>
+    </bug>
+    <bug>
+      <id>171530</id>
+      <summary>new plugin: libcdio-based cdda source</summary>
+    </bug>
+    <bug>
+      <id>171777</id>
+      <summary>Ogm seek support is broken</summary>
+    </bug>
+    <bug>
+      <id>171997</id>
+      <summary>gst-plugins structure addon for mikmod &lt; = 3.2.0 just a on...</summary>
+    </bug>
+    <bug>
+      <id>172242</id>
+      <summary>gstspeed doesn't handle seek events correct</summary>
+    </bug>
+    <bug>
+      <id>172281</id>
+      <summary>Buffer overflows in gstspeed</summary>
+    </bug>
+    <bug>
+      <id>172563</id>
+      <summary>[videocrop] corrupts video when setting property in state...</summary>
+    </bug>
+    <bug>
+      <id>172697</id>
+      <summary>[PATCH] mpeg2dec skip-frame</summary>
+    </bug>
+    <bug>
+      <id>172845</id>
+      <summary>one pixel cropped off at left when rendering subtitles</summary>
+    </bug>
+    <bug>
+      <id>172854</id>
+      <summary>totem spawns error and stops when opening with a badly fo...</summary>
+    </bug>
+    <bug>
+      <id>172884</id>
+      <summary>When un-muting the sound volume is restored to 100%</summary>
+    </bug>
+    <bug>
+      <id>172946</id>
+      <summary>crash when playing a .mov quicktime file</summary>
+    </bug>
+    <bug>
+      <id>300337</id>
+      <summary>[PATCH] [switch] Does not set debug category</summary>
+    </bug>
+    <bug>
+      <id>300377</id>
+      <summary>Totem cannot read files from davs URIs (other GNOME apps ...</summary>
+    </bug>
+    <bug>
+      <id>300457</id>
+      <summary>Totem never errors if you try playing a mp3 stream withou...</summary>
+    </bug>
+    <bug>
+      <id>300495</id>
+      <summary>configure does not find v4l, v4l2, Xlib.h, and SDL</summary>
+    </bug>
+    <bug>
+      <id>301158</id>
+      <summary>2 casts of buf in the gst_ximagesink_chain function (xima...</summary>
+    </bug>
+    <bug>
+      <id>301292</id>
+      <summary>caps nego problem in gst-adder</summary>
+    </bug>
+    <bug>
+      <id>301894</id>
+      <summary>Wavpack doesn't compile on FreeBSD.</summary>
+    </bug>
+    <bug>
+      <id>301944</id>
+      <summary>GstAdder doesn't EOS when all input channels did</summary>
+    </bug>
+    <bug>
+      <id>302188</id>
+      <summary>totem crashes on a mp3 file</summary>
+    </bug>
+    <bug>
+      <id>302222</id>
+      <summary>update for future Cairo 0.5 API</summary>
+    </bug>
+    <bug>
+      <id>302625</id>
+      <summary>mad element doesn't report bitrate for mp3 files with no ...</summary>
+    </bug>
+    <bug>
+      <id>302813</id>
+      <summary>volume inside playbin doesn't work after the first file h...</summary>
+    </bug>
+    <bug>
+      <id>302837</id>
+      <summary>[playbin] gst_tag_list_copy: assertion `GST_IS_TAG_LIST (...</summary>
+    </bug>
+    <bug>
+      <id>302864</id>
+      <summary>gst-plugins fails to compile with gcc4</summary>
+    </bug>
+    <bug>
+      <id>303011</id>
+      <summary>compilation fails on GCC4 warnings</summary>
+    </bug>
+    <bug>
+      <id>303117</id>
+      <summary>Gstreamer plugins 0.8.8 musepack plugin build fails</summary>
+    </bug>
+    <bug>
+      <id>303253</id>
+      <summary>More gcc4 issues in 0.8 head plugins</summary>
+    </bug>
+    <bug>
+      <id>303650</id>
+      <summary>mpeg1videoparse does not recognize keyframes</summary>
+    </bug>
+    <bug>
+      <id>303936</id>
+      <summary>should use g++ to link with cpp code</summary>
+    </bug>
+    <bug>
+      <id>304125</id>
+      <summary>POTFILES.in fixes for gst-plugins</summary>
+    </bug>
+    <bug>
+      <id>304180</id>
+      <summary>[directfb] compilation fails with gcc-4</summary>
+    </bug>
+    <bug>
+      <id>304284</id>
+      <summary>[dv1394src] doesn't compile with gcc4</summary>
+    </bug>
+    <bug>
+      <id>304537</id>
+      <summary>[dvdnav] dvdnav doesn't like gcc4</summary>
+    </bug>
+    <bug>
+      <id>304538</id>
+      <summary>[hermes] doesn't like gcc4</summary>
+    </bug>
+    <bug>
+      <id>304540</id>
+      <summary>[libmms] libmms doesn't like gcc4</summary>
+    </bug>
+    <bug>
+      <id>304588</id>
+      <summary>totem crashes on invalid WAV file (channels=0)</summary>
+    </bug>
+    <bug>
+      <id>305012</id>
+      <summary>[ximage] doesn't compile with gcc4</summary>
+    </bug>
+    <bug>
+      <id>305186</id>
+      <summary>alsasink borkage</summary>
+    </bug>
+  </bugs>
+</release>
