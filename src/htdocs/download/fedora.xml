@@ -17,6 +17,7 @@ you have two options:
 
 <UL>
 <LI>Use the repository hosted by us, which is compatible with
+Fedora Extras,
 <A href="http://www.fedora.us/">www.fedora.us</A> and
 <A href="http://rpm.livna.org/">rpm.livna.org</A>.
 This repository has both packages not in the base distribution mirrored
@@ -36,7 +37,7 @@ Here's the five step guide to getting our packages.
 You can use either yum or apt for rpm.
 The current repository contains packages built using
 <A href="http://thomas.apestaart.org/projects/mach">mach</A> for the
-Fedora Core 1 and 2 platform.
+Fedora Core 2 and 3 platform.
 They should also be compatible with the Fedora Core
 test releases if you keep your system upgraded.
 </P>
@@ -50,7 +51,7 @@ rpm-src http://gstreamer.freedesktop.org/pkg/ fedora/2/i386 deps gst
 </PRE>
 </P>
 <P>
-Make sure you replace "2" with "1" if you use Fedora Core 1 !
+Make sure you replace "2" with "3" if you use Fedora Core 3 !
 </P>
 <P>
 If you use yum. add these lines to your yum.conf file:
@@ -65,6 +66,7 @@ baseurl=http://gstreamer.freedesktop.org/pkg/fedora/$releasever/$basearch/yum/gs
 </PRE>
 </P>
 </LI>
+
 <LI>Import the GPG key for this repository if you haven't already done so:
 <DL>
 
@@ -102,6 +104,10 @@ your rpm database using
 rpm --import thomas.pubkey
 </PRE></DD>
 </DL>
+</LI>
+
+<LI>Import the GPG key for <A href="http://rpm.livna.org/">rpm.livna.org</A>
+by following the instructions on their site.
 </LI>
 
 <LI>

@@ -24,7 +24,7 @@ DIRS=`find . -type d -name "*RPMS.*"`;
 
 for dir in $DIRS;
 do
-  echo -n -e "0000/0000 Generating repository for $dir\r"
+  echo -n -e " 0000/0000 Generating repository for $dir\r"
   # if base does not exist one level deep, create it
   if test ! -d $dir/../base; then mkdir $dir/../base; fi
   DIR=`dirname $dir`
