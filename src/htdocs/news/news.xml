@@ -327,8 +327,8 @@ From left to right : Leon (MAS), Ronald (BBB), Wim (wtay), Thomas (thomasvs), Er
 <I>Picture courtesy of Jeff Waugh</I>
 </TD>
 <TD>
-<A href="/images/guad3c.jpg">
-<IMG border="0" src="images/guad3c-small.jpg" /></A>
+<A href="&site;/images/guad3c.jpg">
+<IMG border="0" src="&site;/images/guad3c-small.jpg" /></A>
 </TD>
 </TR>
 </TABLE>
@@ -415,12 +415,12 @@ Here are some screenshots of it :
 <TABLE>
 <TR>
 <TD>
-<A href="/images/gst-nautilus-1.png" target="blank">
-<IMG src="/images/gst-nautilus-1-small.png" border="0" /></A>
+<A href="&site;/images/gst-nautilus-1.png" target="blank">
+<IMG src="&site;/images/gst-nautilus-1-small.png" border="0" /></A>
 </TD>
 <TD>
-<A href="/images/gst-nautilus-2.png" target="blank">
-<IMG src="/images/gst-nautilus-2-small.png" border="0" /></A>
+<A href="&site;/images/gst-nautilus-2.png" target="blank">
+<IMG src="&site;/images/gst-nautilus-2-small.png" border="0" /></A>
 </TD>
 </TR>
 </TABLE>
@@ -458,7 +458,7 @@ For help in getting these from cvs, check our
     <content>Thanks to the great work of Tim Jansen, there is now C++/KDE bindings for GStreamer. So if you have been wanting to make a KDE or Qt application using GStreamer there is no time better time than now to start. Check out <A HREF="http://www.geocrawler.com/lists/3/SourceForge/1504/0/9341282/">
 the announcement for details</A>.
 Also, here's a screenshot of a simple player he knocked up with the bindings :
-<img src="/images/kdeplayer.png" border="0" ALT="kde player" />
+<img src="&site;/images/kdeplayer.png" border="0" ALT="kde player" />
     </content>
     <title>GStreamer now with KDE bindings!</title>
   </item>
@@ -478,8 +478,8 @@ the result of launching
 (I set disable-xv to true to take the screenshot)
 </TD>
 <TD>
-<A href="/images/gst-editor-0.4.1-launched.png" alt="launched gst-editor">
-<IMG src="/images/gst-editor-0.4.1-launched.gif" border="0" /></A>
+<A href="&site;/images/gst-editor-0.4.1-launched.png" alt="launched gst-editor">
+<IMG src="&site;/images/gst-editor-0.4.1-launched.gif" border="0" /></A>
 </TD>
 </TR>
 <TR>
@@ -487,8 +487,8 @@ the result of launching
 a manually re-ordered pipeline window to show the structure
 </TD>
 <TD>
-<A href="/images/gst-editor-0.4.1-clean.png" alt="launched gst-editor">
-<IMG src="/images/gst-editor-0.4.1-clean.gif" border="0" /></A>
+<A href="&site;/images/gst-editor-0.4.1-clean.png" alt="launched gst-editor">
+<IMG src="&site;/images/gst-editor-0.4.1-clean.gif" border="0" /></A>
 </TD>
 </TR>
 </TABLE>
