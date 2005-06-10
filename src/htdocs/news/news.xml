@@ -368,9 +368,9 @@ The effecTV plug-ins : soon coming to a gst-enabled video editor near you !
 </I>
 Here's screenshots of three different effects applied on the alien-song movie:
 </p><p>
-<IMG SRC="images/age.png" ALT="The EffecTV Age effect" /><BR/><I>The Age Effect</I>
-<IMG SRC="images/edge.png" ALT="The EffecTV Edge effect" /><BR/><I>The Edge Effect</I>
-<img src="images/age_edge.png" ALT="The EffecTV Edge/Age effects combined" /><BR/><I>The Age/Edge Effects Together</I>
+<IMG SRC="&site;/images/age.png" ALT="The EffecTV Age effect" /><BR/><I>The Age Effect</I>
+<IMG SRC="&site;/images/edge.png" ALT="The EffecTV Edge effect" /><BR/><I>The Edge Effect</I>
+<img src="&site;/images/age_edge.png" ALT="The EffecTV Edge/Age effects combined" /><BR/><I>The Age/Edge Effects Together</I>
 </p>
     </content>
     <title>GStreamer ports effecTV plug-ins</title>
