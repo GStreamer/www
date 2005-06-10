@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-ffmpeg</module>
+  <module-fancy>GStreamer FFmpeg</module-fancy>
+  <name>For the better of the world</name>
+  <version>0.8.5</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new stable release of the
+FFmpeg-based GStreamer plugin.
+</p>
+<p>
+This module is separated from GStreamer Plugins for easier maintenance
+and decoupled release cycles.
+Our CVS contains both the patched source code to FFmpeg, as well as the
+set of patches against upstream CVS, so we can send patches upstream
+regularly from our modifications.
+</p>
+  </intro>
+  <features>
+    <feature>codecs for most popular formats</feature>
+    <feature>stability fixes</feature>
+    <feature>gcc4 support</feature>
+    <feature>snapshot update to 21/4</feature>
+    <feature>timestamp smoothing</feature>
+    <feature>deinterlacer and scaler elements added</feature>
+    <feature>new codecs for alac, shorten</feature>
+    <feature>much improved h264 support</feature>
+    <feature>some muxers added (mpeg, mp4)</feature>
+    <feature>decoder performance improvements</feature>
+  </features>
+  <contributors>
+    <person>Ronald Bultje</person>
+    <person>Edward Hervey</person>
+    <person>Luca Ognibene</person>
+  </contributors>
+  <bugs>
+    <bug>
+      <id>149097</id>
+      <summary>Internal GStreamer error: pad problem. File a bug.</summary>
+    </bug>
+    <bug>
+      <id>169082</id>
+      <summary>segfault with invalid pipeline</summary>
+    </bug>
+    <bug>
+      <id>169823</id>
+      <summary>[enhancement] add alac decoding support :)</summary>
+    </bug>
+    <bug>
+      <id>172668</id>
+      <summary>gst-ffmpeg 0.8.4 doesn't compile with gcc4</summary>
+    </bug>
+    <bug>
+      <id>172961</id>
+      <summary>valgrind gives a lot of errors on gst-ffmpeg elements</summary>
+    </bug>
+    <bug>
+      <id>173044</id>
+      <summary>[PATCH to ffmpeg] Memory error in mjpeg_decode_frame</summary>
+    </bug>
+    <bug>
+      <id>300200</id>
+      <summary>cpu usage on certain .mov file goes to 100% once file has...</summary>
+    </bug>
+    <bug>
+      <id>300923</id>
+      <summary>[PATCH] make ffdec_* elements use gst_pad_alloc_buffer</summary>
+    </bug>
+    <bug>
+      <id>301717</id>
+      <summary>[PATCH] ffenc_mpeg4 segfaults in _get_caps</summary>
+    </bug>
+    <bug>
+      <id>301783</id>
+      <summary>[PATCH] enable our get/release_buffer functions in ffmpegdec</summary>
+    </bug>
+    <bug>
+      <id>302017</id>
+      <summary>possible segfault</summary>
+    </bug>
+    <bug>
+      <id>302147</id>
+      <summary>[PATCH] support YUVJ(420|422|444)P colorspace format in f...</summary>
+    </bug>
+    <bug>
+      <id>306530</id>
+      <summary>quicktime files encoded with "Sorensen video v.3" have fr...</summary>
+    </bug>
+    <bug>
+      <id>306770</id>
+      <summary>[PATCH] only do timestamp interpolation for delayed streams</summary>
+    </bug>
+    <bug>
+      <id>306893</id>
+      <summary>Unreffing already unreffed buffer when going from PAUSED-...</summary>
+    </bug>
+  </bugs>
+</release>

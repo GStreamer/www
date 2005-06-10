@@ -1,3 +1,10 @@
+2005-06-11  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
+
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.8.5.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	  Release gst-ffmpeg 0.8.5 "For the better of the world".
+
 2005-06-08  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* bin/apt-rep:

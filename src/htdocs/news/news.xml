@@ -1697,4 +1697,19 @@ Nokia today announced the <a href="http://www.nokia.com/nokia/0,,75023,00.html">
 </p>
 </content>
 </item>
+
+<item>
+    <date>2005-06-11 01:47</date>
+    <title>GStreamer FFMpeg 0.8.5 "For the better of the world" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of the
+GStreamer FFmpeg 0.8.x series. See the
+<a href="&site;/releases/gst-ffmpeg/0.8.5.html">release notes</a>
+or download the
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.8.5.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.8.5.tar.bz2">tar.bz2</a> archive.
+</p>
+</content>
+</item>
 </news>
