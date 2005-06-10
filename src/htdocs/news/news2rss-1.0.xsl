@@ -1,4 +1,5 @@
 <?xml version='1.0'?>
+<!-- make sure your changes here validate on www.feedvalidator.org -->
 <!DOCTYPE xsl:stylesheet
 [
   <!ENTITY % site-entities SYSTEM "../entities.site">
