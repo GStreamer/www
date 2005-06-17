@@ -18,6 +18,9 @@ It is not API or ABI compatible with the stable 0.8.x series.
 It is, however, parallel installable with the 0.8.x series.
 </p>
 <p>
+The
+</p>
+<p>
 This module contains a set of reference plugins, base classes for other
 plugins, and helper libraries.
 
