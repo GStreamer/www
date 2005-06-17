@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Left</name>
+  <version>0.9.1</version>
+
+  <intro>
+<p>
+The GStreamer team is petrified to announce a new release
+in the 0.9.x development series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.9.x series is a development series and not recommended for end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The main focus of the 0.9 series is to make GStreamer threadsafe.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+gst-plugins-base contains a basic set of well-supported plugins.
+
+Other modules will be released later on when they are ready.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+
+  </features>
+
+  <applications>
+<p>
+At this point, ports of existing applications to 0.9 are still experimental.
+There are patches for totem and jamboree.
+</p>
+  </applications>
+
+  <contributors>
+<!--
+<person>Benjamin Otte</person>
+<person>Clytie Siddall</person>
+<person>Christian Schaller</person>
+<person>Christophe Fergeau</person>
+<person>Daniel Gazard</person>
+<person>Johan Dahlin</person>
+<person>Luca Ferretti</person>
+<person>Luca Ognibene</person>
+<person>Kjartan Maraas</person>
+<person>Martin Soto</person>
+<person>Matt Kraai</person>
+<person>Sebastien Cote</person>
+<person>Stephane Loeuillet</person>
+<person>Stephane Wirtel</person>
+<person>Steve Lhomme</person>
+<person>Vincent Torri</person>
+<person>William Jon McCann</person>
+<person>Zaheer Abbas Merali</person>
+-->
+	<person>Andy Wingo</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Ronald Bultje</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  <bugs>
+  </bugs>
+
+</release>
