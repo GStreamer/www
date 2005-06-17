@@ -1712,4 +1712,43 @@ or download the
 </p>
 </content>
 </item>
+
+  <item>
+    <date>2005-06-17 19:28</date>
+    <title>GStreamer 0.9.1 "Left" released</title>
+    <content>
+<p>
+The GStreamer team is petrified to announce a new release of the
+GStreamer Core in the
+GStreamer 0.9 development series.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gstreamer/0.9.1.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.9.1.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.9.1.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
+  <item>
+    <date>2005-06-17 19:29</date>
+    <title>GStreamer Base Plugins 0.9.1 "Right" released</title>
+    <content>
+<p>
+The GStreamer team is petrified to announce a new release of the
+GStreamer Base Plugins in the
+GStreamer 0.9 development series.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gst-plugins-base/0.9.1.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gst-plugins-base-0.9.1.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gst-plugins-base-0.9.1.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
 </news>
