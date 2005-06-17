@@ -21,11 +21,11 @@ cd $BASEDIR
 # get absolute
 ABSBASEDIR=`pwd`
 
-YUMS=`find * -type d -name "yum"`
+YUMS=`find * -type d -name "yum" | sort -r`
 for yum in $YUMS;
 do
   cd $ABSBASEDIR/$yum
-  DIRS=`find * -type d -maxdepth 0`
+  DIRS=`find * -maxdepth 0 -type d | sort`
   for dir in $DIRS;
   do
     echo "Generating yum repository for $BASEDIR/$yum/$dir"

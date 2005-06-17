@@ -24,6 +24,7 @@ htdocs/releases/gst-ffmpeg/Makefile
 htdocs/releases/gst-monkeysaudio/Makefile
 htdocs/releases/gst-player/Makefile
 htdocs/releases/gst-plugins/Makefile
+htdocs/releases/gst-plugins-base/Makefile
 htdocs/releases/gst-python/Makefile
 htdocs/releases/gstreamer/Makefile
 htdocs/tasks/Makefile

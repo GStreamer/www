@@ -1,3 +1,12 @@
+2005-06-17  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* bin/yum-rep:
+	* src/configure.in:
+	* src/htdocs/releases/Makefile.am:
+	* src/htdocs/releases/gst-plugins-base/0.9.1.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	  release notes for 0.9.1
+
 2005-06-11  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
 
 	* src/htdocs/news/news.xml:

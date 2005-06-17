@@ -4,5 +4,6 @@ SUBDIRS = \
 	gst-monkeysaudio \
 	gst-player \
 	gst-plugins \
+	gst-plugins-base \
 	gst-python \
 	gstreamer
