@@ -8,27 +8,31 @@
 
   <intro>
 <p>
-This is the 0.8.1 release of the GStreamer Python bindings.
+This is the 0.8.2 release of the GStreamer Python bindings.
 It should be used with the 0.8.x series of GStreamer and GStreamer Plugins.
 </p>
 <p>
-This is the second stable 0.8.0 gst-python release, it's now considered
+This is the third stable 0.8.0 gst-python release, it's now considered
 stable and ready to be used in production. It's already being used by
 serveral applications.
 </p>
   </intro>
   <features>
-    <feature>Interface improvements (Colorbalance, macros)</feature>
-    <feature>Exception handling</feature>
-    <feature>Better structure wrapping</feature>
-    <feature>ANY event support</feature>
-    <feature>Updated examples</feature>
-    <feature>Reference counting fixes</feature>
+    <feature>Fixes for gcc 4</feature>
+    <feature>Dict-like access to Structure and Caps</feature>
+    <feature>Access to Buffer and Event fields</feature>
+    <feature>Access to Element flags</feature>
+    <feature>Access to Probes</feature>
+    <feature>Overriding of Object, Element and Bin virtual methods posssible</feature>
+    <feature>Many memleak fixes</feature>
   </features>
   <contributors>
+    <person>Edward Hervey</person>
+    <person>Richard Hult</person>
     <person>Zaheer Abbas Merali</person>
-    <person>Martin Soto</person>
-    <person>Brian Warner</person>
+    <person>Benjamin Otte</person>
+    <person>Thomas Vander Stichele</person>
+    <person>Andy Wingo</person>
   </contributors>
   <maintainers>
     <person>Johan Dahlin</person>
