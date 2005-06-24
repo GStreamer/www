@@ -73,8 +73,17 @@ If you want to check out a branch the command would be:<br/>
 cvs -z3 -d:ext:developername@cvs.freedesktop.org:/cvs/gstreamer co -r BRANCH-NAME modulename
 </pre>
 <br/>
-Developers will be added to the project for write access as necessary.  For all
-other changes, please contact the <A HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel list</A> with a patch (<code>cvs diff -u</code>).</p>
+Developers will be added to the project for write access as necessary.
+For all other changes, please submit patches (<code>cvs diff -u</code>) to <A HREF="http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">bugzilla</A> or
+send it to the <A HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel list</A>.</p>
+
+<H1>Buildbots</H1>
+
+<p>
+Commits to CVS are verified by our build cluster. This does automated checkouts on a series of slaves and runs the buidl there.
+If a commit breaks a build it is announced in the <a href="irc://irc.freenode.net/gstreamer">gstreamer developer channel</a> and on these websites:
+<a href="http://build.fluendo.com:8080/">gstreamer head</a> and <a href="http://build.fluendo.com:8081/">gstreamer stable</a>.
+</p> 
 
 <H1>Language Bindings</H1>
                                                                                 
