@@ -44,7 +44,7 @@ This project's freedesktop.org CVS repository can be checked out through anonymo
 </p>
 <p>
 <pre>
-cvs -d:pserver:anoncvs@pdx.freedesktop.org:/cvs/gstreamer co modulename
+cvs -d:pserver:anoncvs@anoncvs.freedesktop.org:/cvs/gstreamer co modulename
 </pre>
 </p>
 <p>
