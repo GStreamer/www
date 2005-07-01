@@ -1,10 +1,16 @@
+2005-07-01  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/releases/gst-plugins/0.8.10.xml:
+	* src/htdocs/releases/gst-plugins/Makefile.am:
+	  release notes
+
 2005-06-24  Stefan Kost  <ensonic@users.sf.net>
 
 	* HACKING:
-          how to upload changed files
+	  how to upload changed files
 	* src/htdocs/dev/index.xml:
-          added link to bugzilla
-          added section about buildbots
+	  added link to bugzilla
+	  added section about buildbots
 
 2005-06-17  Thomas Vander Stichele  <thomas at apestaart dot org>
 

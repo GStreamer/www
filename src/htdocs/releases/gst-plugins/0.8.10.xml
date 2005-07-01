@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins</module>
+  <module-fancy>GStreamer Plugins</module-fancy>
+  <name>Jangle</name>
+  <version>0.8.10</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release
+in the 0.8.x stable series of the GStreamer Plugins.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
+</p>
+<p>
+This module contains plugins providing media encoding and decoding,
+conversion, effects, and other elements that provide actual media
+handling functionality to the core.  You need the GStreamer core module
+to make them work.  The versions do not need to match exactly, as long
+as all of them are in the 0.8.x series.
+</p>
+<p>
+The FFmpeg-based decoder element has been moved to its own module.  If you
+want support for a lot of popular video formats, you need to install this
+module along with the GStreamer Core and Plugins.  An FFmpeg-based colorspace
+element has been added to the Plugins however.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+
+    <feature>Translations: af az ca cs en_GB fr hu it nb nl or sq sr sv uk vi</feature>
+
+    <feature>new videoscale algorithm: bilinear</feature>
+    <feature>important fixes for cd-based applications (Sound Juicer, gnome-cd)</feature>
+  </features>
+
+  <applications>
+<p>
+The GConf settings have moved to a versioned location and can now be found
+under /system/gstreamer/0.8.  Applications should use the gconf library,
+as provided by gstreamer-gconf-0.8.pc, to access the default settings.
+</p>
+  </applications>
+  <contributors>
+<!--
+<person>Ali Akcaagac</person>
+<person>Amaury Jacquot</person>
+<person>Andy Wingo</person>
+<person>Archana Shah</person>
+<person>Balamurali Viswanathan</person>
+<person>Benoit Amiaux</person>
+<person>Brian Cameron</person>
+<person>Chris Lee</person>
+<person>Christian Schaller</person>
+<person>Christophe Fergeau</person>
+<person>Clytie Siddall</person>
+<person>David Moore</person>
+<person>Edward Hervey</person>
+<person>Francis Labonte</person>
+<person>Gergely Nagy</person>
+<person>Jeffrey Ollie</person>
+<person>Julien Moutte</person>
+<person>Gora Mohanty</person>
+<person>Iain Holmes</person>
+<person>James Bowes</person>
+<person>James Morrison</person>
+<person>Johan Dahlin</person>
+<person>Kjartan Maraas</person>
+<person>Koop Mast</person>
+<person>Luca Ferretti</person>
+<person>Lutz Mueller</person>
+<person>Martin Pitt</person>
+<person>Maciej Katafiasz</person>
+<person>Martin Eikermann</person>
+<person>Martin Holters</person>
+<person>Milosz Derezynski</person>
+<person>Nathan Robertson</person>
+<person>Nickolay V. Shmyrev</person>
+<person>Paul Jack</person>
+<person>Phil Blundell</person>
+<person>Richard Hult</person>
+<person>Scott Wheeler</person>
+<person>Sebastien Cote</person>
+<person>Stephane Loeuillet</person>
+<person>Steve Baker</person>
+<person>Takao Fujiwara</person>
+<person>Till Busch</person>
+<person>Toni Willberg</person>
+<person>William Jon McCann</person>
+<person>Wim Taymans</person>
+-->
+
+	<person>Antoine Tremblay</person>
+	<person>Arwed v. Merkatz</person>
+	<person>Benjamin Otte</person>
+	<person>David Schleef</person>
+	<person>James Henstridge</person>
+	<person>Jan de Groot</person>
+	<person>Jan Schmidt</person>
+	<person>Jeroen Zwartepoorte</person>
+	<person>Luca Ognibene</person>
+	<person>Martin Soto</person>
+	<person>Michael Benes</person>
+	<person>Paolo Borelli</person>
+	<person>Ronald Bultje</person>
+	<person>Ross Burton</person>
+	<person>Thomas Klausner</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Stefan Kost</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wouter Paesen</person>
+	<person>Zaheer Abbas Merali</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  <bugs>
+    <bug>
+      <id>140237</id>
+      <summary>Mp3 playback messes up on this file</summary>
+    </bug>
+    <bug>
+      <id>161079</id>
+      <summary>[videoscale] implement bilinear or bicubic methods for do...</summary>
+    </bug>
+    <bug>
+      <id>300305</id>
+      <summary>videobox in YUV adds green instead of black if right=(odd...</summary>
+    </bug>
+    <bug>
+      <id>300471</id>
+      <summary>videoscale from odd to even width adds a green line at th...</summary>
+    </bug>
+    <bug>
+      <id>301292</id>
+      <summary>caps nego problem in gst-adder</summary>
+    </bug>
+    <bug>
+      <id>304627</id>
+      <summary>asfdemux producing a strange framerate</summary>
+    </bug>
+    <bug>
+      <id>304754</id>
+      <summary>Say what devices  couldn't be opened when cdparanoia thro...</summary>
+    </bug>
+    <bug>
+      <id>305150</id>
+      <summary>faad plugin doesn't recognize end-of-song?</summary>
+    </bug>
+    <bug>
+      <id>305428</id>
+      <summary>[audiorate] crashes if first buffer has offset of GST_BUF...</summary>
+    </bug>
+    <bug>
+      <id>305435</id>
+      <summary>libgstaudiofile.so uses af_virtual_file_new, which is not...</summary>
+    </bug>
+    <bug>
+      <id>305505</id>
+      <summary>Fail to compile plugin spc</summary>
+    </bug>
+    <bug>
+      <id>305524</id>
+      <summary>Cairo plugin does not compile with cairo 0.5</summary>
+    </bug>
+    <bug>
+      <id>305658</id>
+      <summary>the adder plugin doesn't connect to more than one sinks</summary>
+    </bug>
+    <bug>
+      <id>306041</id>
+      <summary>gstreamer-plugins 0.8.8 stops Soundjuicer ripping properly</summary>
+    </bug>
+    <bug>
+      <id>306641</id>
+      <summary>gst-compprep segfaults when mpeg2enc plugin is installed ...</summary>
+    </bug>
+    <bug>
+      <id>306659</id>
+      <summary>[avidemux] certain avi file doesnt show video</summary>
+    </bug>
+    <bug>
+      <id>306660</id>
+      <summary>glsink fails to build when OpenGL is used instead of MESA</summary>
+    </bug>
+    <bug>
+      <id>306680</id>
+      <summary>mov with 8 bit raw pcm sound distorted</summary>
+    </bug>
+    <bug>
+      <id>306938</id>
+      <summary>memory leak in gsttypefind</summary>
+    </bug>
+    <bug>
+      <id>307354</id>
+      <summary>PATCH: gcc4 compile fix</summary>
+    </bug>
+    <bug>
+      <id>307459</id>
+      <summary>Can not rip the last track of CDs</summary>
+    </bug>
+    <bug>
+      <id>307606</id>
+      <summary>gstplaybasebin leaks mutex</summary>
+    </bug>
+    <bug>
+      <id>307804</id>
+      <summary>[cdio] gst_element_make_from_uri hangs on &quot; cdda:// &quot; in totem</summary>
+    </bug>
+    <bug>
+      <id>308644</id>
+      <summary>[matroska] Incorrect pixel-aspect-ratio in matroska demuxer</summary>
+    </bug>
+    <bug>
+      <id>308794</id>
+      <summary>[auparse] minor memory leak</summary>
+    </bug>
+    <bug>
+      <id>308827</id>
+      <summary>ogg muxer in 0.8 muxes wrong</summary>
+    </bug>
+    <bug>
+      <id>309005</id>
+      <summary>leaks in gstlibfame.c</summary>
+    </bug>
+    <bug>
+      <id>309043</id>
+      <summary>gstwavparse causes segfaults</summary>
+    </bug>
+  </bugs>
+</release>
