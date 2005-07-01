@@ -1750,4 +1750,19 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2005-07-01 18:08</date>
+    <title>GStreamer Plugins 0.8.10 "Jangle"</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of GStreamer 
+Plugins in the 0.8.x stable release series.
+</p>
+<p>
+Check out <a href="&site;/releases/gst-plugins/0.8.10.html">release page</a>
+for details.
+</p>
+    </content>
+  </item>
+
 </news>
