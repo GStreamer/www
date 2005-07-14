@@ -74,5 +74,7 @@
 <p>
 <a href="&site;/documentation/licensing.html">GStreamer Licensing Advisory</a>
 </p>
+<h2>RTP in GStreamer 0.9</h2>
+<p><a href="&site;/documentation/rtp.html">Information from Philipe Khalaf</a> on the ongoing RTP development being done for GStreamer 0.9/0.10</p>
   </body>
 </page>

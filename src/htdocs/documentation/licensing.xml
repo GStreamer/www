@@ -130,7 +130,10 @@ music player project as an example:</p>
 <i>The Muine project hereby grants permission for non-GPL-compatible
 GStreamer plugins to be used and distributed together with GStreamer and
 Muine. This permission goes above and beyond the permissions granted by
-the GPL license Muine is covered by.</i>
+the GPL license Muine is covered by. If you modify this code, you may extend 
+this exception to your version of the code, but you are not obligated to do 
+so. If you do not wish to do so, delete this exception statement from your 
+version.</i>
 <p>
 Our suggestion among these choices is to use the LGPL license, as it is what
 resembles the GPL most and it makes it a good licensing fit with the major

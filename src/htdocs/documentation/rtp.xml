@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+  <!ENTITY % gst-entities SYSTEM "../entities.gst">
+  %gst-entities;
+]>
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+<title>GStreamer: RTP support</title>
+<body>
+  <H1>RTP in Gstreamer 0.9</H1>
+<p>Philippe Khalaf &lt;burger@speedy.org&gt;</p>
+<p>
+Any questions you have you can find me on #farsight or #gstreamer on freenode, my nickname is Burger.</p>
+<FONT COLOR="#ff0000">This is still under HEAVY developpement, don't expect it to work well, assuming it actually does work</FONT>
+<H2>Intro</H2>
+<p>This document describes how to get RTP working in GStreamer 0.9 CVS. RTP support it based on JRTPLib. The required elements are currently all located on <A HREF="http://farsight.sourceforge.net">Farsight</A>'s CVS under gst-plugins-0.9 module.</p>
+
+<p>Current state : (14/07/05) Basic RTP support is in the CVS. By basic I mean this is the first version of RTP, at it's most simple form. It has RTCP support, meaning it will receive and send RTCP packets, and process them. That information is still not being used actively by the system.
+It also provides a depayloader base class. This shall be used by codec specific depayloaders.  It implements generic functions such as buffering, reordering and dropping packets.</p>
+<H2>How to use it</H2>
+<UL>
+<li>First you need to have gstreamer, gst-base-plugins and gst-plugins CVS, (You can install it or run it uninstalled).</li>
+<li>Then you need to have jrtplib and gst-plugins-0.9 (both from Farsight's CVS). You can also run both of these installed or uninstalled.</li>
+</UL>
+Here are the basic elements that are provided by jrtp system :
+
+<UL>
+<li>rtpsession : This element is the heart of the system. It is basically a jrtplib interface to the gstreamer world. It has in total 6 pads:</li>
+<ol>
+<li>datasrc : The received packets are fed here.</li>
+
+<li>datasink : The packets you want to be sent are given here.</li>
+
+<li>rtpsink : The received RAW RTP packets from a network source are given here.</li>
+
+<li>rtcpsink : The received RAW RTCP packets from a network source are given here.</li>
+
+<li>rtpsrc : The outgoing RAW RTP packets need to be given to a network sink.</li>
+
+<li>rtcpsrc : The outgoing RAW RTCP packets need to be given to a network sink.</li>
+</ol>
+<li>rtpbin : This is a bin that basicaly connects an rtpsession to 2 udpsinks and 2 udpsources, and only exposes the datasrc and datasink to the user.</li>
+<li>h263depayloader : Example depayloader element that uses BaseRTPDepayload class.</li>
+</UL>
+<p>If you want to use rtpbin or rtpsession, there are a few things that need to be done to your elements first. Any buffers that go into <b>datasink</b> MUST be <i>GstRTPBuffers</i>. They MUST contain the timestamp increment, the mark and the payload type in them. <b>datasink</b> also gives out <i>GstRTPBuffers</i> that contain important information for the depayloader. <b>rtpsink/rtcpsink</b> MUST receive <i>GstNetBuffers</i>. This contains important source information needed by rtpsession. Also, <b>rtpsrc/rtcpsrc</b> sends out <i>GstNetBuffers</i> that the sinks must use to send to the given destinations in the <i>GstNetBuffers</i>. (dynudpsink does this as an example).</p>
+<H2>Pipeline construction</H2>
+Here is what a pipeline would normally look like :
+<UL>
+<li>Outgoing :</li>
+<b>videotestsrc -&gt; r263enc -&gt; rtpbin.datasink</b> or <b>videotestsrc -&gt; r263enc -&gt; h263payloader -&gt; rtpbin.datasink</b>
+<li>Incoming:</li>
+<b>xvimagesink &lt;- ffdec_h263 &lt;- h263depayloader &lt;-rtpbin.datasrc</b>
+</UL>
+<b>Notes</b>
+<UL>
+<li>As a note for the first part, usually the payloader is embeded in the encoder because it requires some encoding specific marks and data, but it is possible to have it separate.</li>
+<li>At this point the rtpbin/rtpsession elements are designed to be used in duplex mode (sending AND receiving). Only doing one should work fine, but I would still like to do some work that would allow to actually 'turn off' half of the element if required, and construct new bins (say rtpsendbin, rtpreceivebin). This is usefull for cases when you only want to receive (for playing RTP streams).</li> 
+<li>Also I have no tested/verified RTSP compatiblity yet, but it has been taken into account during the design. There are a few RTSP elements written by wtay that can probably be used successfully here.</li>
+<li>You can of course use the rtpsession element directly to route information to other places than udpsink/src.</li>
+</UL>
+  </body>
+</page>
