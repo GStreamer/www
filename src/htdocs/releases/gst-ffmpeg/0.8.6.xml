@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-ffmpeg</module>
+  <module-fancy>GStreamer FFmpeg</module-fancy>
+  <name>Vamoz a la Playa</name>
+  <version>0.8.6</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new stable release of the
+FFmpeg-based GStreamer plugin.
+</p>
+<p>
+This module is separated from GStreamer Plugins for easier maintenance
+and decoupled release cycles.
+Our CVS contains both the patched source code to FFmpeg, as well as the
+set of patches against upstream CVS, so we can send patches upstream
+regularly from our modifications.
+</p>
+  </intro>
+  <features>
+    <feature>codecs for most popular formats</feature>
+    <feature>snapshot update to 20/7</feature>
+    <feature>new post-processing plugin</feature>
+    <feature>added flv/vob muxers</feature>
+    <feature>decoder performance improvements</feature>
+  </features>
+  <contributors>
+    <person>Ronald Bultje</person>
+    <person>Edward Hervey</person>
+    <person>Luca Ognibene</person>
+    <person>Daniel Fischer</person>
+    <person>Sebastien Cote</person>
+  </contributors>
+  <bugs>
+    <bug>
+      <id>160665</id>
+      <summary>[ffdec_h264] VideoSoft h.264 videos (VSSH) make totem/ffd...</summary>
+    </bug>
+    <bug>
+      <id>308335</id>
+      <summary>[PATCH] ffmpeg postprocessing plugins</summary>
+    </bug>
+    <bug>
+      <id>308415</id>
+      <summary>gst-ffmpeg cvs doesn't build in</summary>
+    </bug>
+    <bug>
+      <id>308804</id>
+      <summary>ffmpeg encoders do not set the GST_BUFFER_DELTA_UNIT flag</summary>
+    </bug>
+    <bug>
+      <id>309050</id>
+      <summary>[PATCH] flv encoding</summary>
+    </bug>
+    <bug>
+      <id>309051</id>
+      <summary>[PATCH] enable "streamheader" properties</summary>
+    </bug>
+    <bug>
+      <id>309149</id>
+      <summary>[flv] flv demuxer/decoder doesn't set correct timestamps</summary>
+    </bug>
+    <bug>
+      <id>310054</id>
+      <summary>[PATCH] fix flag handling for GST_FFMPEG_URL_STREAMHEADER</summary>
+    </bug>
+    <bug>
+      <id>311593</id>
+      <summary>fix timestamps </summary>
+    </bug>
+    <bug>
+      <id>311802</id>
+      <summary>[PATCH] local variable 'bq' for timestamp conversion unin...</summary>
+    </bug>
+  </bugs>
+</release>
