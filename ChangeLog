@@ -1,5 +1,6 @@
 2005-08-05  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
 
+	* src/htdocs/news/news.xml:
 	* src/htdocs/releases/gst-ffmpeg/0.8.6.xml:
 	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
 	  Release gst-ffmpeg 0.8.6 "Vamoz a la Playa".

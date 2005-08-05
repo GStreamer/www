@@ -1765,4 +1765,18 @@ for details.
     </content>
   </item>
 
+  <item>
+    <date>2005-08-05 14:00</date>
+    <title>GStreamer FFMpeg 0.8.6 "Vamoz a la Playa"</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new release of the GStreamer
+FFMpeg plugins for the 0.8.x stable release series.
+</p>
+<p>
+Check out <a href="&site;/releases/gst-ffmpeg/0.8.6.html">release page</a>
+for details.
+</p>
+    </content>
+  </item>
 </news>
