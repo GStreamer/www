@@ -36,6 +36,9 @@
 <h2>amaroK</h2>
 <p><a href="http://amarok.kde.org/">amaroK</a> is an audio player for KDE.</p>
 
+<h2>Banshee</h2>
+<p><a href="http://sonance.aaronbock.net/">Banshee</h2> is a music player for GNOME using Mono</p>
+
 <h2>Buzztard</h2>
 <p><a href="http://buzztard.org/index.php/Overview">Buzztard</a> is music application similar to Buzz or FastTracker.</p>
 
@@ -111,6 +114,10 @@ is a simple to use player which features inline visualizations.
 <h2>Rhythmbox</h2>
 <p><a href="http://www.rhythmbox.org/">Rhythmbox</a> is an integrated music management application, originally inspired by Apple's iTunes.
 </p>
+
+<h2>Siren</h2>
+<p><a href="http://jodrell.net/projects/siren">Siren</a> lightweight GTK2 music
+player written in Perl.</p>
 
 <h2>Sound Converter</h2>
 <p><a href="http://soundconverter.berlios.de/">Sound Converter</a> Small GNOME based sound conversion application.</p>
