@@ -1,3 +1,11 @@
+2005-09-04  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* bin/apt-rep:
+	  change way of generating
+	* src/htdocs/bugs/bugs.xml:
+	  remove gst-player; add gst-python; add milestones
+	* src/htdocs/releases/gstreamer/0.8.10.xml:
+
 2005-08-05  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
 
 	* src/htdocs/news/news.xml:

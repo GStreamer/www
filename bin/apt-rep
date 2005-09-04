@@ -19,20 +19,29 @@ fi
 
 if test  ! -z $1; then BASEDIR=$1; fi
 cd $BASEDIR
+BASEDIR=`pwd`
 
 DIRS=`find . -type d -name "*RPMS.*"`;
 
 for dir in $DIRS;
 do
-  echo -n -e " 0000/0000 Generating repository for $dir\r"
+  cd $BASEDIR
+  #echo -n -e " 0000/0000 Generating repository for $dir\r"
   # if base does not exist one level deep, create it
   if test ! -d $dir/../base; then mkdir $dir/../base; fi
   DIR=`dirname $dir`
+  ABSDIR=`cd $dir && pwd`
   EXT=`echo $dir | sed "s@^.*\.@@"`
   TYPE=`echo $dir | sed "s@^.*/@@" | sed "s@\..*@@"`
 
-  # RPMS
   if test "x$TYPE" == "xRPMS"; then
+    cd $ABSDIR/..
+    genbasedir --partial $ABSDIR/.. $EXT
+  fi
+
+  # thomas: disable the code here because we're using genbasedir now
+  # RPMS
+  if test "x$TYPE" == "noxRPMS"; then
     mkdir -p $TMPDIR/$DIR
     genpkglist --index $TMPDIR/$DIR/index --bloat --progress $DIR $EXT
     bzip2 -f $DIR/base/pkglist.$EXT
@@ -41,7 +50,7 @@ do
                                                                                 
   # SRPMS
   # srclist.os gets dumped in the current dir for some reason
-  if test "x$TYPE" == "xSRPMS"; then
+  if test "x$TYPE" == "noxSRPMS"; then
     gensrclist --flat --progress $DIR $EXT $TMPDIR/$DIR/index
     mv srclist.$EXT $DIR/base
     bzip2 -f $DIR/base/srclist.$EXT
