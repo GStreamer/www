@@ -1779,4 +1779,40 @@ for details.
 </p>
     </content>
   </item>
+
+  <item>
+    <date>2005-09-04 14:41</date>
+    <title>GStreamer 0.8.11 "So Long ..." released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of the
+GStreamer 0.8.x series.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gstreamer/0.8.11.html">release notes</a>
+or download the
+<a href="&site;/src/gstreamer/gstreamer-0.8.11.tar.gz">tar.gz</a> or
+<a href="&site;/src/gstreamer/gstreamer-0.8.11.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
+  <item>
+    <date>2005-09-04 14:43</date>
+    <title>GStreamer Plugins 0.8.11 "... And Thanks For All The Fix"</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of GStreamer 
+Plugins in the 0.8.x stable release series.
+</p>
+<p>
+Check out <a href="&site;/releases/gst-plugins/0.8.11.html">release page</a>
+for details or download the
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.11.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.11.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
 </news>

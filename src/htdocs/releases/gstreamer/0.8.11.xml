@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>So Long ...</name>
+  <version>0.8.10</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release
+in the 0.8.x stable series of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x series.
+It is, however, parallel installable with the 0.6.x series.
+</p>
+<p>
+This module only contains core functionality.  For actual media playback,
+you will need other modules.  GStreamer Plugins contains a huge set of
+additional plugins.  GStreamer FFmpeg contains a plugin based on the popular
+FFmpeg decoding library.  These modules need not have the same source version
+as the core, as long as they are in the 0.8.x series.
+</p>
+<p>
+A special "thank you" to Ronald Bultje, who has done most of the work on 0.8
+in the past year.  We wish him luck on his new adventure in NYC.  Thanks for
+all the fix !
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x series</feature>
+    <feature>Internationalization</feature>
+  </features>
+
+  <applications>
+<p>
+Applications already ported to use GStreamer 0.8.x include the GNOME
+desktop components like gnome-media and nautilus-media, as well as other
+GNOME applications including sound-juicer, totem and RhythmBox.
+</p>
+  </applications>
+
+  <contributors>
+<!--
+<person>Andy Wingo</person>
+<person>Christian Schaller</person>
+<person>Christophe Fergeau</person>
+<person>Daniel Gazard</person>
+<person>Edward Hervey</person>
+<person>Johan Dahlin</person>
+<person>Kjartan Maraas</person>
+<person>Luca Ferretti</person>
+<person>Martin Soto</person>
+<person>Matt Kraai</person>
+<person>Sebastien Cote</person>
+<person>Stephane Loeuillet</person>
+<person>Stephane Wirtel</person>
+<person>Steve Lhomme</person>
+<person>Vincent Torri</person>
+<person>William Jon McCann</person>
+<person>Wim Taymans</person>
+<person>Zaheer Abbas Merali</person>
+-->
+	<person>Akos Maroy</person>
+	<person>Andreas Schwab</person>
+	<person>Antoine Tremblay</person>
+	<person>Benjamin Otte</person>
+	<person>David Schleef</person>
+	<person>Jan Schmidt</person>
+	<person>Luca Ognibene</person>
+	<person>Ronald Bultje</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Torsten Schoenfeld</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  <bugs>
+    <bug>
+      <id>170809</id>
+      <summary>Error compiling on Solaris 9 x86</summary>
+    </bug>
+    <bug>
+      <id>304123</id>
+      <summary>update to POTFILES.in</summary>
+    </bug>
+    <bug>
+      <id>305653</id>
+      <summary>build fixes for gstreamer and gst-plugins</summary>
+    </bug>
+    <bug>
+      <id>307352</id>
+      <summary>PATCH: pass the --libdir argument to autogen</summary>
+    </bug>
+    <bug>
+      <id>308067</id>
+      <summary>GST_TYPE_BUFFER crashes in gstvalue handling</summary>
+    </bug>
+    <bug>
+      <id>308438</id>
+      <summary>Registering the same tag twice leads to assertion warnings</summary>
+    </bug>
+    <bug>
+      <id>308559</id>
+      <summary>gst_value_deserialize to a gint64 does not work</summary>
+    </bug>
+    <bug>
+      <id>308647</id>
+      <summary>[filesink] not handling errors properly?</summary>
+    </bug>
+    <bug>
+      <id>308766</id>
+      <summary>gst_element_factory_create() may invalidate pad templates...</summary>
+    </bug>
+    <bug>
+      <id>309125</id>
+      <summary>[patch] memleak in gst/gstvalues.c</summary>
+    </bug>
+  </bugs>
+
+</release>

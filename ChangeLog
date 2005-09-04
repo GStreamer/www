@@ -1,5 +1,15 @@
 2005-09-04  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/htdocs/entities.gst:
+	* src/htdocs/releases/gst-plugins/0.8.11.xml:
+	* src/htdocs/releases/gst-plugins/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.8.11.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	* src/htdocs/news/news.xml:
+	  release notes for core and plugins
+
+2005-09-04  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* bin/apt-rep:
 	  change way of generating
 	* src/htdocs/bugs/bugs.xml:
