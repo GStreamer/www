@@ -1816,6 +1816,17 @@ for details or download the
   </item>
 
   <item>
+    <date>2005-09-05 19:10</date>
+    <title>GStreamer 0.9 plug-ins split-up</title>
+    <content>
+<p>
+In the 0.9.x development series, gst-plugins has been split up in four
+separate modules.  <A href="&site;/documentation/plugins.html">Read why</A>.
+</p>
+    </content>
+  </item>
+
+  <item>
     <date>2005-09-06 16:10</date>
     <title>GStreamer 0.9 development series releases</title>
     <content>

@@ -69,12 +69,22 @@
  <td colspan="3"><a href="&site;/data/doc/gstreamer/stable/gstreamer-libs/html/">HTML</a></td>
 </tr>
 </table>
+
 <h2>GStreamer licensing advisory</h2>
-<p>The GStreamer community provides the following licensing advisory for developers planing on or already using GStreamer for their applications:</p>
+<p>The GStreamer community provides the following licensing advisory for
+developers planing on or already using GStreamer for their applications:</p>
 <p>
 <a href="&site;/documentation/licensing.html">GStreamer Licensing Advisory</a>
 </p>
+
+<h2>GStreamer plug-ins split-up in 0.9</h2>
+<p><a href="&site;/documentation/plugins.html">
+An explanation of the plug-ins split-up in 0.9</a>
+</p>
+
 <h2>RTP in GStreamer 0.9</h2>
-<p><a href="&site;/documentation/rtp.html">Information from Philipe Khalaf</a> on the ongoing RTP development being done for GStreamer 0.9/0.10</p>
-  </body>
+<p><a href="&site;/documentation/rtp.html">Information from Philipe Khalaf</a>
+on the ongoing RTP development being done for GStreamer 0.9/0.10</p>
+
+</body>
 </page>
