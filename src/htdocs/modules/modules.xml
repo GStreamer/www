@@ -224,7 +224,7 @@ HREF="http://plug-in.org.uk/">LADSPA</A> gong model reverb filter.</li>
       <src>gst-editor/gst-editor-0.4.1.png</src>
    </screenshot>
     <versions>
-      <devel>0.8.0</devel>
+      <stable>0.8.0</stable>
     </versions>
   </module>
 

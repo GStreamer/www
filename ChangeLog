@@ -1,5 +1,12 @@
 2005-09-06  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/htdocs/modules/modules.xml:
+	  editor -> stable
+	* src/htdocs/releases/releases.xsl:
+	  fix double slash in cvs links in release notes
+
+2005-09-06  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/entities.gst:
 	* src/htdocs/releases/gst-ffmpeg/0.8.0.xml:
 	* src/htdocs/releases/gst-ffmpeg/0.8.1.xml:

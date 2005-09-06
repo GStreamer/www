@@ -160,7 +160,7 @@ We use GNOME's bugzilla for
 <h2>Developers</h2>
 CVS is hosted on cvs.freedesktop.org.  You can
 <xsl:call-template name="hyperlink">
-  <xsl:with-param name="href">&gst-cvs-http;/<xsl:value-of select="module" />/</xsl:with-param>
+  <xsl:with-param name="href">&gst-cvs-http;<xsl:value-of select="module" />/</xsl:with-param>
   <xsl:with-param name="text">browse the <xsl:value-of select="module" /> repository</xsl:with-param>
 </xsl:call-template>.
 
