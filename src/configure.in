@@ -25,6 +25,9 @@ htdocs/releases/gst-monkeysaudio/Makefile
 htdocs/releases/gst-player/Makefile
 htdocs/releases/gst-plugins/Makefile
 htdocs/releases/gst-plugins-base/Makefile
+htdocs/releases/gst-plugins-good/Makefile
+htdocs/releases/gst-plugins-ugly/Makefile
+htdocs/releases/gst-plugins-bad/Makefile
 htdocs/releases/gst-python/Makefile
 htdocs/releases/gstreamer/Makefile
 htdocs/tasks/Makefile

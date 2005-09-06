@@ -20,37 +20,106 @@ and core elements.
     <maintainer>GStreamer Team</maintainer>
     <versions>
       <stable>&gst-version-stable;</stable>
-<!--      <devel>&gst-version-devel;</devel>-->
+      <devel>&gst-version-devel;</devel>
     </versions>
   </module>
 
   <module>
     <id>gst-plugins</id>
-    <title>GStreamer Plugins</title>
+    <title>GStreamer Plug-ins</title>
     <blurb>additional elements</blurb>
     <description>
-GStreamer Plugins contains the media-specific plugins and elements.
+GStreamer Plug-ins contains the media-specific plugins and elements.
 A wide range of video and audio decoders, encoders, and filters are included.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
       <stable>&gst-plugins-version-stable;</stable>
-<!--      <devel>&gst-plugins-version-devel;</devel>-->
+      <devel>DISCONTINUED</devel>
     </versions>
   </module>
 
   <module>
-    <id>gst-ffmpeg</id>
-    <title>GStreamer FFmpeg plugin</title>
-    <blurb>FFmpeg-based plugin</blurb>
+    <id>gst-plugins-base</id>
+    <title>GStreamer Base Plug-ins</title>
+    <blurb>an essential exemplary set of elements</blurb>
     <description>
-GStreamer FFmpeg plugin contains one plugin with a set of elements using
+GStreamer Base Plug-ins is a well-groomed and well-maintained collection of
+GStreamer plug-ins and elements, spanning the range of possible types of
+elements one would want to write for GStreamer.  It also contains helper
+libraries and base classes useful for elements.
+A wide range of video and audio decoders, encoders, and filters are included.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <!--<stable></stable>-->
+      <devel>&gst-plugins-base-version-devel;</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gst-plugins-good</id>
+    <title>GStreamer Good Plug-ins</title>
+    <blurb>a set of good-quality plug-ins under our preferred license, LGPL</blurb>
+    <description>
+GStreamer Good Plug-ins is a set of plug-ins that we consider to have good
+quality code, correct functionality, our preferred license (LGPL for the
+plug-in code, LGPL or LGPL-compatible for the supporting library).
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <!--<stable></stable>-->
+      <devel>&gst-plugins-good-version-devel;</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gst-plugins-ugly</id>
+    <title>GStreamer Ugly Plug-ins</title>
+    <blurb>a set of good-quality plug-ins that might pose distribution problems</blurb>
+    <description>
+Gstreamer Ugly Plug-ins is a set of plug-ins that have good quality and correct
+functionality, but distributing them might pose problems.  The license on
+either the plug-ins or the supporting libraries might not be how we'd like. The
+code might be widely known to present patent problems.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <!--<stable></stable>-->
+      <devel>&gst-plugins-ugly-version-devel;</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gst-plugins-bad</id>
+    <title>GStreamer Bad Plug-ins</title>
+    <blurb>a set of plug-ins that need more quality</blurb>
+    <description>
+Gstreamer Bad Plug-ins is a set of plug-ins that aren't up to par compared to
+the rest.  They might be close to being good quality, but they're missing
+something - be it a good code review, some documentation, a set of tests, a
+real live maintainer, or some actual wide use.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <!--<stable></stable>-->
+      <devel>&gst-plugins-bad-version-devel;</devel>
+    </versions>
+  </module>
+
+
+  <module>
+    <id>gst-ffmpeg</id>
+    <title>GStreamer FFmpeg plug-in</title>
+    <blurb>FFmpeg-based plug-in</blurb>
+    <description>
+GStreamer FFmpeg plug-in contains one plugin with a set of elements using
 the FFmpeg library code.  It contains most popular decoders as well as
 very fast colorspace conversion elements.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>0.8.3</stable>
+      <stable>&gst-ffmpeg-version-stable;</stable>
     </versions>
   </module>
 
@@ -132,7 +201,7 @@ load into your application just as with libglade and GUIs</li>
 in the editor</li>
 <li>A Glade-like interface gives access to the element's arguments, as
 shown in the shot at right of all the options to the <A
-HREF="http://plugin.org.uk/">LADSPA</A> gong model reverb filter.</li>
+HREF="http://plug-in.org.uk/">LADSPA</A> gong model reverb filter.</li>
 <li>Threadsafe, so as to safely control threaded pipelines</li>
 <li>Supports rapid prototyping with <tt>gst-launch</tt> syntax</li>
 <li>Supports cut, copy, and paste in the standard GStreamer XML format</li>
@@ -187,10 +256,10 @@ GStreamer python bindings.
 
   <module>
     <id>gst-monkeysaudio</id>
-    <blurb>Monkey's Audio plugin</blurb>
-    <title>GStreamer Monkey's Audio Plugin</title>
+    <blurb>Monkey's Audio plug-in</blurb>
+    <title>GStreamer Monkey's Audio Plug-in</title>
     <description>
-GStreamer has a plugin for the Monkey's Audio format.
+GStreamer has a plug-in for the Monkey's Audio format.
     </description>
     <maintainer>Jérémy Simon</maintainer>
     <versions>

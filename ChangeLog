@@ -1,3 +1,16 @@
+2005-09-06  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/configure.in:
+	* src/htdocs/entities.gst:
+	* src/htdocs/modules/modules.xml:
+	* src/htdocs/releases/Makefile.am:
+	* src/htdocs/releases/gst-plugins-bad/Makefile.am:
+	* src/htdocs/releases/gst-plugins-base/0.9.2.xml:
+	* src/htdocs/releases/gst-plugins-good/Makefile.am:
+	* src/htdocs/releases/gst-plugins-ugly/Makefile.am:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	  starting to prepare for a 0.9 release
+
 2005-09-04  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/entities.gst:
