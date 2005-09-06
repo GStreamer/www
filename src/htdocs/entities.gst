@@ -2,7 +2,7 @@
 <!ENTITY gst-version-devel "0.9.2">
 <!ENTITY gst-plugins-version-stable "0.8.11">
 
-<!ENTITY gst-plugins-base-version-devel "0.9.1">
+<!ENTITY gst-plugins-base-version-devel "0.9.2">
 <!ENTITY gst-plugins-good-version-devel "0.9.1">
 <!ENTITY gst-plugins-ugly-version-devel "0.9.1">
 <!ENTITY gst-plugins-bad-version-devel "0.9.1">

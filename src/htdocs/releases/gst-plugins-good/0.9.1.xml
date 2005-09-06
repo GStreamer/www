@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
 <release>
-  <module>gst-plugins-base</module>
-  <module-fancy>GStreamer Base Plug-ins</module-fancy>
-  <name>Spoon</name>
-  <version>0.9.2</version>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Blondie</name>
+  <version>0.9.1</version>
 
   <intro>
 <p>
 The GStreamer team is petrified to announce a new release
 in the 0.9.x development series of the
-GStreamer Base Plug-ins.
+GStreamer Good Plug-ins.
 </p>
 <p>
 The 0.9.x series is a development series and not recommended for end users.
@@ -18,36 +18,33 @@ It is not API or ABI compatible with the stable 0.8.x series.
 It is, however, parallel installable with the 0.8.x series.
 </p>
 <p>
-The
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
 </p>
 <p>
-This module contains a set of reference plugins, base classes for other
-plugins, and helper libraries.
-
-This module is kept up-to-date together with the core developments.  Element
-writers should look at the elements in this module as a reference for
-their development.
-
-This module contains elements for, among others:
-<ul>
-  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
-  <li>containers: ogg</li>
-  <li>codecs: vorbis, theora</li>
-  <li>text: textoverlay, subparse</li>
-  <li>sources: sinesrc, videotestsrc, gnomevfssrc</li>
-  <li>network: tcp</li>
-  <li>typefind</li>
-  <li>audio processing: audioconvert, adder, audiorate, audioscale, volume</li>
-  <li>visualisation: libvisual</li>
-  <li>video processing: ffmpegcolorspace</li>
-  <li>aggregate elements: decodebin, playbin</li>
-</ul>
-
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
 Other modules containing plug-ins are:
 
 <dl>
-<dt>gst-plugins-good</dt>
-<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
 <dt>gst-plugins-ugly</dt>
 <dd>contains a set of well-supported plug-ins, but might pose problems for
     distributors</dd>

@@ -2,14 +2,14 @@
 <?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
 <release>
   <module>gst-plugins</module>
-  <module-fancy>GStreamer Plugins</module-fancy>
+  <module-fancy>GStreamer Plug-ins</module-fancy>
   <name>Under The Sea</name>
   <version>0.7.5</version>
 
   <intro>
 <p>
 The GStreamer team is happy to announce a new release in the
-0.7.x development series of the GStreamer Plugins.
+0.7.x development series of the GStreamer Plug-ins.
 The goal of this release series is to stabilize towards a 0.8
 release series which will be part of the GNOME 2.6 releases
 and hopefully eventually KDE 4.x. 

@@ -2,14 +2,14 @@
 <?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
 <release>
   <module>gst-monkeysaudio</module>
-  <module-fancy>GStreamer Monkey's Audio Plugin</module-fancy>
+  <module-fancy>GStreamer Monkey's Audio Plug-in</module-fancy>
   <name>She Drives</name>
   <version>0.8.0</version>
 
   <intro>
 <p>
 The GStreamer team is happy to announce the first release
-in the 0.8.x stable series of the GStreamer Monkey's Audio Plugin.
+in the 0.8.x stable series of the GStreamer Monkey's Audio Plug-in.
 </p>
 <p>
 The 0.8.x series is a stable series aimed at end users.
@@ -22,7 +22,7 @@ which typically have the .ape extension.
 </p>
   </intro>
   <features>
-    <feature>Works with 0.8.x of GStreamer and GStreamer Plugins</feature>
+    <feature>Works with 0.8.x of GStreamer and GStreamer Plug-ins</feature>
     <feature>Implemented tagging and events</feature>
   </features>
 

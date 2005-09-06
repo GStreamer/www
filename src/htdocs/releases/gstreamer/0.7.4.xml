@@ -35,7 +35,7 @@ It is, however, parallel installable with the 0.6.x series.
     <feature>Poisoning of GstCaps</feature>
     <feature>Queues now flushed properly to fix seeking in playback</feature>
     <feature>Memleak fixes in core elements</feature>
-    <feature>Largely rewritten Plugin Writer's Guide</feature>
+    <feature>Largely rewritten Plug-in Writer's Guide</feature>
     <feature>Unversioned tools that wrap all present and future versioned tools to help packagers</feature>
     <feature>Portability fixes for Solaris and OSX</feature>
     <feature>Lots of bugfixes</feature>

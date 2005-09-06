@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
 <release>
   <module>gst-plugins-base</module>
-  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
   <name>Right</name>
   <version>0.9.1</version>
 
@@ -10,7 +10,7 @@
 <p>
 The GStreamer team is petrified to announce a new release
 in the 0.9.x development series of the
-GStreamer Base Plugins.
+GStreamer Base Plug-ins.
 </p>
 <p>
 The 0.9.x series is a development series and not recommended for end users.

@@ -2,14 +2,14 @@
 <?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
 <release>
   <module>gst-plugins</module>
-  <module-fancy>GStreamer Plugins</module-fancy>
+  <module-fancy>GStreamer Plug-ins</module-fancy>
   <name>Water</name>
   <version>0.8.3</version>
 
   <intro>
 <p>
 The GStreamer team is happy to announce a new release
-in the 0.8.x stable series of the GStreamer Plugins.
+in the 0.8.x stable series of the GStreamer Plug-ins.
 </p>
 <p>
 The 0.8.x series is a stable series aimed at end users.
@@ -26,8 +26,8 @@ as all of them are in the 0.8.x series.
 <p>
 The FFmpeg-based decoder element has been moved to its own module.  If you
 want support for a lot of popular video formats, you need to install this
-module along with the GStreamer Core and Plugins.  An FFmpeg-based colorspace
-element has been added to the Plugins however.
+module along with the GStreamer Core and Plug-ins.  An FFmpeg-based colorspace
+element has been added to the Plug-ins however.
 </p>
   </intro>
   <features>

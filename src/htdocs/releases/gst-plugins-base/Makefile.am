@@ -1,5 +1,5 @@
 releases = \
-	0.9.1
+	0.9.1 0.9.2
 
 built_pages = \
 	$(releases) \

@@ -9,7 +9,7 @@
   <intro>
 <p>
 This is the 0.8.0 release of the GStreamer Player. It should be used with
-the 0.8.x series of GStreamer, GStreamer Plugins and GStreamer FFmpeg.
+the 0.8.x series of GStreamer, GStreamer Plug-ins and GStreamer FFmpeg.
 </p>
 <p>
 The player is now rather mature and should be be able to play back all

@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
 <release>
   <module>gst-plugins</module>
-  <module-fancy>GStreamer Plugins</module-fancy>
+  <module-fancy>GStreamer Plug-ins</module-fancy>
   <name>Mobil Avenue</name>
   <version>0.7.3</version>
 

@@ -1,5 +1,65 @@
 2005-09-06  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/htdocs/entities.gst:
+	* src/htdocs/releases/gst-ffmpeg/0.8.0.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.8.1.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.8.2.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.8.3.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.8.4.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.8.5.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.8.6.xml:
+	* src/htdocs/releases/gst-monkeysaudio/0.8.0.xml:
+	* src/htdocs/releases/gst-player/0.6.0.xml:
+	* src/htdocs/releases/gst-player/0.8.0.xml:
+	* src/htdocs/releases/gst-plugins-bad/0.9.1.xml:
+	* src/htdocs/releases/gst-plugins-base/0.9.1.xml:
+	* src/htdocs/releases/gst-plugins-base/0.9.2.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gst-plugins-good/0.9.1.xml:
+	* src/htdocs/releases/gst-plugins-ugly/0.9.1.xml:
+	* src/htdocs/releases/gst-plugins/0.6.5.xml:
+	* src/htdocs/releases/gst-plugins/0.7.3.xml:
+	* src/htdocs/releases/gst-plugins/0.7.4.xml:
+	* src/htdocs/releases/gst-plugins/0.7.5.xml:
+	* src/htdocs/releases/gst-plugins/0.7.6.xml:
+	* src/htdocs/releases/gst-plugins/0.8.0.xml:
+	* src/htdocs/releases/gst-plugins/0.8.1.xml:
+	* src/htdocs/releases/gst-plugins/0.8.10.xml:
+	* src/htdocs/releases/gst-plugins/0.8.11.xml:
+	* src/htdocs/releases/gst-plugins/0.8.2.xml:
+	* src/htdocs/releases/gst-plugins/0.8.3.xml:
+	* src/htdocs/releases/gst-plugins/0.8.4.xml:
+	* src/htdocs/releases/gst-plugins/0.8.5.xml:
+	* src/htdocs/releases/gst-plugins/0.8.6.xml:
+	* src/htdocs/releases/gst-plugins/0.8.7.xml:
+	* src/htdocs/releases/gst-plugins/0.8.8.xml:
+	* src/htdocs/releases/gst-plugins/0.8.9.xml:
+	* src/htdocs/releases/gst-python/0.7.90.xml:
+	* src/htdocs/releases/gst-python/0.7.91.xml:
+	* src/htdocs/releases/gst-python/0.7.92.xml:
+	* src/htdocs/releases/gst-python/0.7.93.xml:
+	* src/htdocs/releases/gst-python/0.7.94.xml:
+	* src/htdocs/releases/gst-python/0.8.0.xml:
+	* src/htdocs/releases/gst-python/0.8.1.xml:
+	* src/htdocs/releases/gst-python/0.8.2.xml:
+	* src/htdocs/releases/gstreamer/0.7.4.xml:
+	* src/htdocs/releases/gstreamer/0.8.0.xml:
+	* src/htdocs/releases/gstreamer/0.8.1.xml:
+	* src/htdocs/releases/gstreamer/0.8.10.xml:
+	* src/htdocs/releases/gstreamer/0.8.11.xml:
+	* src/htdocs/releases/gstreamer/0.8.2.xml:
+	* src/htdocs/releases/gstreamer/0.8.3.xml:
+	* src/htdocs/releases/gstreamer/0.8.4.xml:
+	* src/htdocs/releases/gstreamer/0.8.5.xml:
+	* src/htdocs/releases/gstreamer/0.8.6.xml:
+	* src/htdocs/releases/gstreamer/0.8.7.xml:
+	* src/htdocs/releases/gstreamer/0.8.8.xml:
+	* src/htdocs/releases/gstreamer/0.8.9.xml:
+	* src/htdocs/releases/gstreamer/0.9.2.xml:
+	  adding release notes for good, bad and ugly
+
+2005-09-06  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/configure.in:
 	* src/htdocs/entities.gst:
 	* src/htdocs/modules/modules.xml:

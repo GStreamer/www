@@ -9,7 +9,7 @@
   <intro>
 <p>
 This is the 0.7.93 release of the GStreamer Python bindings.
-It should be used with the 0.8.x series of GStreamer and GStreamer Plugins.
+It should be used with the 0.8.x series of GStreamer and GStreamer Plug-ins.
 </p>
 <p>
 This release contains a fairly big amount of improvements of the previous release.

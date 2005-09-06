@@ -9,7 +9,7 @@
   <intro>
 <p>
 This is the 0.8.0 release of the GStreamer Python bindings.
-It should be used with the 0.8.x series of GStreamer and GStreamer Plugins.
+It should be used with the 0.8.x series of GStreamer and GStreamer Plug-ins.
 </p>
 <p>
 This is the first stable 0.8.0 gst-python release, it's now considered

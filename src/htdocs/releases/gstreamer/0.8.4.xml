@@ -18,7 +18,7 @@ It is, however, parallel installable with the 0.6.x series.
 </p>
 <p>
 This module only contains core functionality.  For actual media playback,
-you will need other modules.  GStreamer Plugins contains a huge set of
+you will need other modules.  GStreamer Plug-ins contains a huge set of
 additional plugins.  GStreamer FFmpeg contains a plugin based on the popular
 FFmpeg decoding library.  These modules need not have the same source version
 as the core, as long as they are in the 0.8.x series.
@@ -55,7 +55,7 @@ something like:
 real subset of its template caps.
 
 It is safe to ignore this warning.  It will be fixed in the next release
-of the GStreamer Plugins.
+of the GStreamer Plug-ins.
     </issue>
   </issues>
 
