@@ -1,5 +1,10 @@
 2005-09-06  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/htdocs/news/news.xml:
+	  releasing 0.9.x tarballs
+
+2005-09-06  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/releases/gstreamer/0.9.2.xml:
 	  add bugs fixed
 
