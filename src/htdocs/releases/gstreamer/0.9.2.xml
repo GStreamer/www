@@ -103,6 +103,45 @@ GStreamer 0.9.
 -->
 
   <bugs>
+    <bug>
+      <id>121015</id>
+      <summary>[api] gst_clock_entry_new() seems broken</summary>
+    </bug>
+    <bug>
+      <id>134227</id>
+      <summary>[api] gst_clock_id_wait_async, wrong return code for defa...</summary>
+    </bug>
+    <bug>
+      <id>142209</id>
+      <summary>[build] Large file support broken</summary>
+    </bug>
+    <bug>
+      <id>154785</id>
+      <summary>Clock does not run if audio stream lacks data for a short...</summary>
+    </bug>
+    <bug>
+      <id>305256</id>
+      <summary>[API] Change gst_element_seek to not mix enum/flags types</summary>
+    </bug>
+    <bug>
+      <id>309253</id>
+      <summary>GST_DEBUG_FUNCPTR macro does illegal casting from functio...</summary>
+    </bug>
+    <bug>
+      <id>311004</id>
+      <summary>ghostpad bugginess</summary>
+    </bug>
+    <bug>
+      <id>311009</id>
+      <summary>valgrind shows undesired messages</summary>
+    </bug>
+    <bug>
+      <id>311848</id>
+      <summary>Renegotiation broken</summary>
+    </bug>
+    <bug>
+      <id>314708</id>
+      <summary>filesrc doesn't set GST_BUFFER_FLAG_READONLY on mmaped bu...</summary>
+    </bug>
   </bugs>
-
 </release>
