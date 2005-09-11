@@ -1821,7 +1821,7 @@ for details or download the
     <content>
 <p>
 In the 0.9.x development series, gst-plugins has been split up in four
-separate modules.  <A href="&site;/documentation/plugins.html">Read why</A>.
+separate modules.  <A href="&site;/documentation/splitup.html">Read why</A>.
 </p>
     </content>
   </item>
