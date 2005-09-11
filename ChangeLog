@@ -1,3 +1,11 @@
+2005-09-11  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/documentation/Makefile.am:
+	* src/htdocs/documentation/index.xml:
+	* src/htdocs/documentation/plugins.xml:
+	* src/htdocs/documentation/splitup.xml:
+	  First stab at centralizing docs for all plug-ins
+
 2005-09-06  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/news/news.xml:

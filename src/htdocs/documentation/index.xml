@@ -42,6 +42,12 @@
  <td><a href="&site;/data/doc/gstreamer/head/faq/faq.pdf">PDF</a></td>
  <td colspan="3">&#160;</td>
 </tr>
+
+<tr>
+ <td>Overview of all Plug-ins</td>
+ <td><a href="plugins.html">HTML</a></td>
+ <td colspan="3">&#160;</td>
+</tr>
 <tr>
  <td>Plugin Writer's Guide</td>
  <td><a href="&site;/data/doc/gstreamer/head/pwg/html/index.html">HTML</a></td>
@@ -68,6 +74,20 @@
 <!-- <td colspan="3"><a href="&site;/data/doc/gstreamer/devel/gstreamer-libs/html/">HTML</a></td> -->
  <td colspan="3"><a href="&site;/data/doc/gstreamer/stable/gstreamer-libs/html/">HTML</a></td>
 </tr>
+
+<tr>
+ <td>GStreamer Base Plugins Reference</td>
+ <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gst-plugins-base-plugins/html/">HTML</a></td>
+</tr>
+
+<tr>
+ <td>GStreamer Good Plugins Reference</td>
+ <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gst-plugins-good-plugins/html/">HTML</a></td>
+</tr>
+<tr>
+ <td>GStreamer Ugly Plugins Reference</td>
+ <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gst-plugins-ugly-plugins/html/">HTML</a></td>
+</tr>
 </table>
 
 <h2>GStreamer licensing advisory</h2>
@@ -78,7 +98,7 @@ developers planing on or already using GStreamer for their applications:</p>
 </p>
 
 <h2>GStreamer plug-ins split-up in 0.9</h2>
-<p><a href="&site;/documentation/plugins.html">
+<p><a href="&site;/documentation/splitup.html">
 An explanation of the plug-ins split-up in 0.9</a>
 </p>
 
