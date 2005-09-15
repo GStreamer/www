@@ -18,7 +18,19 @@ Any questions you have you can find me on #farsight or #gstreamer on freenode, m
 <H2>Intro</H2>
 <p>This document describes how to get RTP working in GStreamer 0.9 CVS. RTP support it based on JRTPLib. The required elements are currently all located on <A HREF="http://farsight.sourceforge.net">Farsight</A>'s CVS under gst-plugins-0.9 module.</p>
 
-<p>Current state : (20/07/05) Brand spanking new RTPBin element. It's dynamic. It has 6 modes :
+<p>Current state : (15/08/05) Some more changes to RTPBin :
+<ul>
+<li>No more GstRTPBuffer, instead we use normal GstBuffer's with full rtp
+packets inside of them. gstrtpbuffer.[ch] contain all the helper parse
+functions that allow to build and read/write the rtp headers.</li>
+<li>No more modes, the mode is determined by on request pads. So depending on
+your requested pads a mode will be selected.</li>
+<li>Parameter to turn on/off RTCP</li>
+<li>The jrtp gst plugin has be moved to gst-plugins-bad, it will be maintained
+there instead of farsight's CVS</li>
+</ul>
+
+(20/07/05) Brand spanking new RTPBin element. It's dynamic. It has 6 modes :
 <ul>
 <li>Send and Receive</li>
 <li>Send Only</li>
@@ -38,16 +50,19 @@ It also provides a depayloader base class. This shall be used by codec specific 
 </ul>
 Here is what you get :
 <ul>
-<li>rtpbin : This is the bin that does it all. It has 6 different modes.</li> 
+<li>rtpbin : This is the bin that does it all. It adapts dynamically to your
+needs based on the requested pads.</li> 
 <li>BaseRTPDepayload: A base depayloader class that should be used by any RTP depayloaders you write (h263depayloader is an example depayloader element that uses BaseRTPDepayload class).</li>
+<li>BaseRTPPayload: A base payloader class that should be used by any RTP
+payloaders you write.</li>
 </ul>
 <p>If you want to use rtpbin, there are a few things you need to know :
 </p>
 <ul>
-<li>To use it you need to SET BOTH the mode and the localport, otherwise it won't work.</li>
+<li>To use it you need to set the localport, otherwise it won't work.</li>
 <li>If sending data, the destinations must be added with the signal "add-destination". This can contain one or more ip:port combinations with the following syntax (127.0.0.1:5000;192.168.1.101:4000;).</li>
-<li>Any buffers that go into <b>sink</b> MUST be <i>GstRTPBuffers</i>. They MUST contain the timestamp increment, the mark and the payload type in them.</li>
-<li><b>src</b> also gives out <i>GstRTPBuffers</i> that contain important information for the depayloader.</li>
+<li>Any buffers that go into <b>sink</b> MUST be rtp buffers. They MUST contain the timestamp increment, the mark and the payload type in them.</li>
+<li><b>src</b> also gives out full rtp buffers that contain important information for the depayloader.</li>
 </ul>
 <A HREF="../images/RTP-gst.png">Image 1</A> - Internals of RTPBin
 <p></p>
