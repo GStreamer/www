@@ -34,10 +34,11 @@
 
     <!-- hyperlink to the actual plugin documentation -->
     <xsl:element name="tr">
-      <xsl:element name="td">Plugin</xsl:element>
+      <td>Plugin</td>
 
       <!-- td with link to plugin documentation -->
       <xsl:element name="td">
+        <xsl:attribute name="colspan">2</xsl:attribute>
         <xsl:element name="a">
           <xsl:attribute name="href">&site;/data/doc/gstreamer/head/<xsl:value-of select="source" />-plugins/html/<xsl:value-of select="source" />-plugins-plugin-<xsl:value-of select="name"/>.html</xsl:attribute>
           <xsl:value-of select="name"/>
@@ -72,10 +73,12 @@
   <!-- for every element -->
   <xsl:template match="element">
     <xsl:element name="tr">
-      <xsl:element name="td" />
+      <td colspan="2"></td>
 
       <!-- td with link to the element documentation -->
       <xsl:element name="td">
+        <xsl:attribute name="alignment">right</xsl:attribute>
+        has 
         <xsl:element name="a">
           <xsl:attribute name="href">&site;/data/doc/gstreamer/head/<xsl:value-of select="../../source" />-plugins/html/<xsl:value-of select="../../source" />-plugins-<xsl:value-of select="name"/>.html</xsl:attribute>
           <xsl:value-of select="name"/>

@@ -7,7 +7,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 version="1.0">
 
-  <xsl:output method="html"/>
+  <xsl:output method="html" />
 
   <xsl:include href="header.xsl" />
 
@@ -15,7 +15,7 @@
 <xsl:template name="hyperlink">
   <xsl:param name="href" />
   <!-- if no text param specified, we default to the href value -->
-  <xsl:param name="text" select="$href"/>
+  <xsl:param name="text" select="$href" />
   <xsl:element name="a">
     <xsl:attribute name="href">
       <xsl:value-of select="$href" />
@@ -39,6 +39,7 @@
 <!-- page template -->
 <!-- call with content variable containing html content to paste verbatim -->
 <xsl:template name="page">
+<!-- FIXME: I'm not sure doing select= specifies a default correctly -->
 <xsl:param name="title" select="GStreamer" />
 <xsl:param name="content" />
 <html>
@@ -48,7 +49,7 @@
           href="&site;/gstreamer.css" title="default" />
     <link rel="icon" type="image/png" href="&site;/images/favicon.png" />
     <link rel="shortcut icon" href="&site;/images/favicon.png" />
-    <title><xsl:value-of select="$title" /></title>
+    <title><xsl:copy-of select="$title" /></title>
   </head>
   <body bgcolor="#FFFFFF" text="#000000"
         link="#3399CC" vlink="#551A8B" alink="#FF0000" leftmargin="0"
@@ -112,6 +113,9 @@
         <xsl:apply-templates />
         <!-- copy contents of body verbatim -->
         <xsl:copy-of select="body/node()" />
+      </xsl:with-param>
+      <xsl:with-param name="title">
+        <xsl:value-of select="title" />
       </xsl:with-param>
     </xsl:call-template>
   </xsl:template>
