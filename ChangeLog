@@ -1,3 +1,13 @@
+2005-09-26  Andy Wingo  <wingo@pobox.com>
+
+	* src/htdocs/news/Makefile.am: Add rule to generate
+	status-rss-1.0.xml.
+
+	* src/htdocs/news/status.xml: Dump the status into an xml file.
+
+	* src/htdocs/news/status2rss-1.0.xsl: New file, copied from the
+	news one.
+
 2005-09-17  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/documentation/plugins.xsl:

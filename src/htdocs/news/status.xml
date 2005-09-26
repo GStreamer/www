@@ -1,0 +1,148 @@
+<!DOCTYPE xsl:stylesheet
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+<status>
+  <item>
+    <title>GStreamer status, 20 Sept 2005</title>
+    <date>2005-09-20 00:00</date>
+    <content><![CDATA[
+Aloha hackers,
+
+This is the first installment of what I hope will be a weekly or
+biweekly newsletter on the state of GStreamer. You will find in it a
+discussion of recent API changes, bug and release status, and notes on a
+featured application built with GStreamer. I hope you enjoy this first
+one. Let me know what you think about it, good or bad, and especially
+let me know if you want to write a paragraph or so about your area of
+GStreamer interest.
+
+
+Recent Core Changes
+-------------------
+
+The registry recently underwent a rewrite at the hands of David Scheef.
+Developers will notice that there are no more pluggable registries or
+registry pools, and that some of the plugin/pluginfeature semantics have
+changed. Users will notice that there is no more gst-register. Initial
+reports show this registry to be faster at rebuilding than the old one
+and that run-time rebuilding actually works. Someone should port the
+gnome-multimedia utilities to 0.9 to see how the changes affect Gnome
+startup time :-)
+
+Also, Wim Taymans checked in some bus-related changes. What was called a
+GstBusHandler is now a GstBusFunc, to match the naming of GSourceFunc,
+and its return value is just like any other GSourceFunc -- that is, TRUE
+to keep the source in the GMainContext, and FALSE otherwise. Also, now
+you can attach multiple bus watches, each listening to a different set
+of events. A related change is that gst_bus_poll now returns the actual
+message that was received, not just its type -- no need to explicitly
+pop the message off the bus anymore.
+
+In other changes, Stefan Kost checked in a patch to use GLib 2.8's
+atomic refcounting for GObject, which was something Wim pushed hard for
+in GLib's last development cycle. Of course, we still support the hacks
+that allow GStreamer to work reliably with GLib as old as 2.4, but you
+have to be careful when getting an object from GLib, as with
+g_value_get_object.
+
+David also recently removed our atomic memchunk and trash stack
+implementations, which is related to ongoing work in GLib -- see
+http://bugzilla.gnome.org/show_bug.cgi?id=118439. This change shouldn't
+affect anyone out there.
+
+Thomas on the other hand has continued on his masochistic selfless quest
+for quality, adding a 'make valgrind' target to the build. He will be
+rewarded in heaven.
+
+
+Buildbot status
+---------------
+
+The buildbot configuration has been partly upgraded for some slaves to
+build the new modules. The Mac OSX buildslave is on a short holiday
+while it's being upgraded. The Fedora Core 4 slave will now be
+valgrinding and reporting leaks as failures.
+
+Remember - if you're not part of the solution, you're part of the
+problem ! Buildbot will still blame you if you keep committing to a tree
+that's in a broken state. So hold off committing if the tree is broken
+and you're not trying to fix it yourself.
+
+We are still looking for more build slave platforms to add to our
+system.  In particular, a Windows slave would be great.
+
+
+Meanwhile, Back At The Ranch
+----------------------------
+
+Or, notable activity in the plugins modules. Have you checked out the
+plugins documentation[1]? Go and see it and then tell Thomas how awesome
+he is. The goal here is to have every element come with either an
+example launch line or a small program that demonstrates the use of the
+element. This is a very simple thing for new developers to be
+contributing to and it helps in understanding how GStreamer works.
+
+gst-plugins-base: Leak fixing, a new RTP payloader base class, 24 bit
+audioconvert
+
+gst-plugins-good: Work on RTP payloaders (AMR, GSM, H263, MP4, MPA),
+wavparse updates
+
+gst-plugins-bad: A ported SDL video sink, yay
+
+gst-plugins-ugly: lame updates, documentation work
+
+[1] http://gstreamer.freedesktop.org/documentation/plugins.html
+
+
+Bug Activity
+------------
+
+Total number of GStreamer bugs as of today : 200
+Number opened in the last week             : +21
+Number closed in the last week             : -22
+Net change                                 : -1
+
+GStreamer is currently number 9 on the list of projects with the most
+bugs in GNOME bugzilla. Our project is a pile of bugs!
+
+Luca Ognibene has put together a triaged list of bugs for the stable
+series (0.8) here[2]. Some of these are low-hanging fruit, and it's an
+easy-to-read list -- check it out if you have half an hour free
+sometime.
+
+[2] http://skaboy.no-ip.org/~luogni/gst08-bug-status-20050919
+
+
+Featured Application: Banshee
+-----------------------------
+
+Christian Schaller lets us know about this week's featured application.
+
+A lot of application development is being done using Mono and C# these
+days and Banshee is no exception. Banshee is a music player being
+developed with the support of Novell with a interface similar to what
+you find in applications such as iTunes and Rhythmbox. Banshee is has a
+lot of work being put in to support seamless syncing with Apple iPods
+and includes its own GStreamer mp3 encoder for instance to acomplish
+this. Doesn't yet support the DAAP music sharing like Rhythmbox does for
+instance, but if iPod support is what you want then this is definetly
+the application to look out for. Banshee is licensed under a MIT style
+license. You can find out more on the Banshee homepage:
+
+http://www.banshee-project.org/index.php/Main_Page
+
+
+Well that's all for this week. Thanks to Thomas, Luca, and Christian for
+their contributions to this week's edition, and if you want to write
+something for next week, send it along to me, preferably before Monday.
+
+Until next time,
+-- 
+Andy Wingo
+http://wingolog.org/
+]]></content>
+  </item>
+</status>
