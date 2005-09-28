@@ -145,4 +145,125 @@ Andy Wingo
 http://wingolog.org/
 ]]></content>
   </item>
+  <item>
+    <title>GStreamer status, 28 Sept 2005</title>
+    <date>2005-09-28 12:48</date>
+    <content><![CDATA[
+Hey folks,
+
+It's a marvelous mercredi we have here, and a nice time for the second
+edition of the GStreamer status report. So prop up your feet, grab a
+GStreamer-approved beverage and relax as we go over the crucial
+happenings of the last week.
+
+
+The Bleeding Edge
+-----------------
+
+Stefan Kost is the hero of the week, for completely inlining all of
+GStreamer's API documentation into the source code. Now the primary
+source for all of the API documentation is maintained right beside the
+API itself, which should help to increase the long-term quality of our
+documentation. Go Stefan!
+
+Interestingly enough, there were no actual API changes this week, as far
+as I can tell -- just function additions, and moving around header files
+as part of the documentation work. Added API includes structure field
+and GstValue accessors for GstClockTime and GDate. Also,
+gst_object_has_ancestor was made public, and fdsrc was ported and moved
+to the core.
+
+As an internal detail, Wim rewrote the state change algorithm this week.
+Changing the states of a bin's children is a tricky operation in 0.9,
+because changing state can cause elements to start pushing or pulling
+data in another thread. Obviously this can only work if the other
+elements in a bin are in the correct state to start processing when the
+thread starts. The problem of determining the order in which the
+element's states should be changed is complicated by allowing element
+additions and removals from other threads while performing the state
+change.
+
+Wim solved this gracefully by implementing a GstIterator that iterates a
+bin's children in state-change order, having done a topological sort,
+and then folding over that iterator. Wow. I guess there's a reason we
+keep him around.
+
+Also, one of our primary data structures is acquiring a dependency on an
+outside library. Congratulations to Jan Schmidt (thaytan)'s marriage to
+Jaime Hemmett!
+
+
+Meanwhile, Back At The Ranch
+----------------------------
+
+The "base" plugin set saw the normal set of bugfixes, some work on the
+RTP payloader base class, seeking optimization work in playbin, and
+general refactoring in sinesrc, the tcp elements, and audio sink base
+classes.
+
+News from the "good" plugins includes Tim Müller's fixing of OSS
+playback of mono streams, fixes when demuxing AVI files containing
+unknown types, refactoring in the level element by Thomas, porting of
+auparse from 0.8 by Edgard Lima, and the normal batch of RTP work from
+Wim.
+
+In the "ugly" set, there were bugfixes in mp3parse and amrnbenc, and
+Michael Smith wielded a sword of righteousness over the AC3 framer for
+S/PDIF output.
+
+Finally, the ttaparse and gsmdec plugins were ported to 0.9 by Arwed v.
+Merkatz and Edgard Lima, respectively.
+
+
+The Path To Release
+-------------------
+
+Andy Wingo proposed a tentative schedule[1] for GStreamer development
+releases, culminating with 0.10.0 on 5 December. As part of that plan,
+expect to see a 0.9.3 release of GStreamer and plugin modules on Monday
+3 October. See the mail for more details.
+
+[1] http://article.gmane.org/gmane.comp.video.gstreamer.devel/13768
+
+
+Bugs
+----
+
+Total number of GStreamer bugs as of today : 206
+Number opened in the last week             : +18
+Number closed in the last week             : -23
+Net change                                 : -5
+
+GStreamer is currently number 8 on the list of projects with the most
+bugs in GNOME bugzilla, which is one place higher than we were last
+week.
+
+On the 0.8 side of things, Luca Ognibene has been doing some great
+work dealing with bugs. He could use a bit of help now, though -- check
+out his recent mail to the list[2] for ways you can help.
+
+[2] http://article.gmane.org/gmane.comp.video.gstreamer.devel/13808
+
+
+Featured Application: Istanbul
+------------------------------
+
+Christian Schaller once again brings us this week's featured
+application.
+
+    Istanbul is a nice GStreamer based application made by Zaheer
+    Merali. It gives you a small notification area icon which by a click
+    of your mouse lets you stop or start recording sessions of your
+    desktop. The resulting video is stored as an Ogg file. This is a
+    quick and easy way to to create desktop videos demonstrating your
+    favourite desktop application feature. And its all free software and
+    using free media formats. You find more on Istanbul here:
+
+    http://live.gnome.org/Istanbul
+
+Thanks, Christian!
+
+
+Well, that's about all for this week. Happy hacking!
+]]></content>
 </status>
