@@ -1,3 +1,19 @@
+2005-10-03  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	* src/htdocs/releases/gst-ffmpeg/0.9.3.xml:
+	* src/htdocs/releases/gst-plugins-bad/Makefile.am:
+	* src/htdocs/releases/gst-plugins-base/0.9.3.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gst-plugins-good/0.9.3.xml:
+	* src/htdocs/releases/gst-plugins-good/Makefile.am:
+	* src/htdocs/releases/gst-plugins-ugly/0.9.3.xml:
+	* src/htdocs/releases/gst-plugins-ugly/Makefile.am:
+	* src/htdocs/releases/gst-python/0.9.3.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.9.3.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+
 2005-09-28  Andy Wingo  <wingo@pobox.com>
 
 	* src/htdocs/news/status.xml: Dump.
