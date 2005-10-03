@@ -1,5 +1,10 @@
 2005-10-03  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/htdocs/news/news.xml:
+	  releasing
+
+2005-10-03  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
 	* src/htdocs/releases/gst-ffmpeg/0.9.3.xml:
 	* src/htdocs/releases/gst-plugins-bad/Makefile.am:
