@@ -1,13 +1,17 @@
 <!ENTITY gst-version-stable "0.8.11">
-<!ENTITY gst-version-devel "0.9.2">
 <!ENTITY gst-plugins-version-stable "0.8.11">
-
-<!ENTITY gst-plugins-base-version-devel "0.9.2">
-<!ENTITY gst-plugins-good-version-devel "0.9.1">
-<!ENTITY gst-plugins-ugly-version-devel "0.9.1">
-<!ENTITY gst-plugins-bad-version-devel "0.9.1">
-
 <!ENTITY gst-ffmpeg-version-stable "0.8.6">
+<!ENTITY gst-python-version-stable "0.8.2">
+
+<!ENTITY gst-version-devel "0.9.3">
+<!ENTITY gst-plugins-base-version-devel "0.9.3">
+<!ENTITY gst-plugins-good-version-devel "0.9.3">
+<!ENTITY gst-plugins-ugly-version-devel "0.9.3">
+<!ENTITY gst-plugins-bad-version-devel "0.9.3">
+<!ENTITY gst-plugins-bad-version-devel "0.9.3">
+
+<!ENTITY gst-ffmpeg-version-devel "0.9.3">
+<!ENTITY gst-python-version-devel "0.9.3">
 
 <!ENTITY gst-bug-report "http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">
 <!ENTITY gst-cvs-http "http://cvs.freedesktop.org/gstreamer/">

@@ -120,6 +120,7 @@ very fast colorspace conversion elements.
     <maintainer>GStreamer Team</maintainer>
     <versions>
       <stable>&gst-ffmpeg-version-stable;</stable>
+      <devel>&gst-ffmpeg-version-devel;</devel>
     </versions>
   </module>
 
@@ -250,7 +251,8 @@ GStreamer python bindings.
     </description>
     <maintainer>Johan Dahlin</maintainer>
     <versions>
-      <stable>0.8.2</stable>
+      <stable>&gst-python-version-stable;</stable>
+      <devel>&gst-python-version-devel;</devel>
     </versions>
   </module>
 
