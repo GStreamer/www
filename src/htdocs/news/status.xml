@@ -7,7 +7,7 @@
   <item>
     <title>GStreamer status, 20 Sept 2005</title>
     <date>2005-09-20 00:00</date>
-    <content><![CDATA[
+    <content>
 <pre>
 Aloha hackers,
 
@@ -145,12 +145,12 @@ Until next time,
 Andy Wingo
 http://wingolog.org/
 </pre>
-]]></content>
+</content>
   </item>
   <item>
     <title>GStreamer status, 28 Sept 2005</title>
     <date>2005-09-28 12:48</date>
-    <content><![CDATA[
+    <content>
 <pre>
 Hey folks,
 
@@ -269,12 +269,12 @@ Thanks, Christian!
 
 Well, that's about all for this week. Happy hacking!
 </pre>
-]]></content>
+</content>
   </item>
   <item>
     <title>GStreamer status, 05 October 2005</title>
     <date>2005-10-05 00:00</date>
-    <content><![CDATA[
+    <content>
 <p>
 Mwa lala po oohacker yoGStreamer,
 </p>
@@ -427,6 +427,6 @@ http://gstreamer.freedesktop.org/news/status-rss-1.0.xml, for the more
 technologically inclined out there. However it is you read, farewell for
 another half-fortnight. Tu hackeni nenyanyu (Happy hacking).
 </p>
-]]></content>
+</content>
   </item>
 </status>

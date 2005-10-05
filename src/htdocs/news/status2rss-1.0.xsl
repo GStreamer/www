@@ -54,7 +54,7 @@
     <link>&site;/news/#<xsl:value-of select="$w3cdtf"/></link>
     <dc:date><xsl:value-of select="$w3cdtf"/></dc:date>
     <content:encoded>
-      <xsl:text disable-output-escaping="yes">&lt;![CDATA[</xsl:text><xsl:value-of select="content"/><xsl:text disable-output-escaping="yes">]]&gt;</xsl:text></content:encoded>
+      <xsl:text disable-output-escaping="yes">&lt;![CDATA[</xsl:text><xsl:value-of select="content/*"/><xsl:text disable-output-escaping="yes">]]&gt;</xsl:text></content:encoded>
   </item>
 </xsl:for-each>
 </rdf:RDF>
