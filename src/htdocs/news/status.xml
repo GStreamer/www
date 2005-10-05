@@ -274,7 +274,7 @@ Well, that's about all for this week. Happy hacking!
   <item>
     <title>GStreamer status, 05 October 2005</title>
     <date>2005-10-05 00:00</date>
-    <content>
+    <content><![CDATA[
 <p>
 Mwa lala po oohacker yoGStreamer,
 </p>
@@ -427,6 +427,6 @@ http://gstreamer.freedesktop.org/news/status-rss-1.0.xml, for the more
 technologically inclined out there. However it is you read, farewell for
 another half-fortnight. Tu hackeni nenyanyu (Happy hacking).
 </p>
-</content>
+]]></content>
   </item>
 </status>
