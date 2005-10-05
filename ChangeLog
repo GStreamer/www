@@ -1,3 +1,7 @@
+2005-10-05  Andy Wingo  <wingo@pobox.com>
+
+	* src/htdocs/news/status.xml: sump.
+
 2005-10-03  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/news/news.xml:

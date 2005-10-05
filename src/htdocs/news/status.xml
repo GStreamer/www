@@ -8,6 +8,7 @@
     <title>GStreamer status, 20 Sept 2005</title>
     <date>2005-09-20 00:00</date>
     <content><![CDATA[
+<pre>
 Aloha hackers,
 
 This is the first installment of what I hope will be a weekly or
@@ -143,12 +144,14 @@ Until next time,
 -- 
 Andy Wingo
 http://wingolog.org/
+</pre>
 ]]></content>
   </item>
   <item>
     <title>GStreamer status, 28 Sept 2005</title>
     <date>2005-09-28 12:48</date>
     <content><![CDATA[
+<pre>
 Hey folks,
 
 It's a marvelous mercredi we have here, and a nice time for the second
@@ -265,6 +268,165 @@ Thanks, Christian!
 
 
 Well, that's about all for this week. Happy hacking!
+</pre>
 ]]></content>
+  </item>
+  <item>
+    <title>GStreamer status, 05 October 2005</title>
+    <date>2005-10-05 00:00</date>
+    <content>
+<p>
+Mwa lala po oohacker yoGStreamer,
+</p>
+
+<p>
+It's that time of the week again, where we take a caffeine-assisted look
+at last week's events in GStreamer. So whether you percolate, filter,
+steep or express, fill your mug and prepare to be educated.
+</p>
+
+<h3>Release, Release, Release, Release, Release, Release, Release</h3>
+
+<p>Seven of them, my friends. Version 0.9.3 of GStreamer core,
+plugins-base, -good, -bad, -ugly, ffmpeg, and gst-python were released
+on Monday by Master Builder Thomas Vander Stichele (+47 endurance).
+Check the main page[0] for links, and check the 0.10 roadmap[1] to see
+how we're doing for the release. The next releases will be on 17
+October, at which point the API will be frozen for four weeks. Any API
+changes after 17 October will have to go through bugzilla, be reviewed,
+and applied on 14 November. API stability for that time means 17 October
+will be a great time to start porting your application to 0.9.
+</p>
+
+
+<p>[0] http://gstreamer.freedesktop.org/<br/>
+[1] http://article.gmane.org/gmane.comp.video.gstreamer.devel/13768
+</p>
+
+<h3>Core Happenings</h3>
+
+<p>GStreamer is an abnormal GObject-based library in that it is
+multithreaded. Because GTK+ is normally programmed from one thread,
+programmers are not accustomed to having to think about concurrency. To
+make application programming simpler, GStreamer 0.9 offers the ability
+to marshal messages from the pipeline into the main thread.
+</p>
+
+<p>GStreamer does this by the use of a bus, where messages are received,
+handled synchronously, and then depending on the return value of the
+synchronous handler they can be placed on a threadsafe queue. There is
+GLib integration that creates a GSource to operate in the main context,
+so you can handle messages from this queue in your main loop.
+Integration with other main loop APIs is also possible.
+</p>
+
+<p>Last week Wim Taymans made it even easier to use the bus. Now the
+suggested way to use the bus is to connect to signals on the bus instead
+of installing a bus watch. To listen for all messages, you connect to
+the "message" signal. To listen for only EOS messages, you can connect
+to "message::eos" (using the "detailed signal" functionality in GLib).
+To use these signals, you will have to first call
+gst_bus_add_signal_watch(), to add the bus integration to the main loop,
+and gst_bus_remove_signal_watch() to clean up.
+</p>
+
+<p>You also have to option to receive signals synchronously via the
+"sync-message" signal, but most programmers will find the "message"
+signal to be more convenient.
+</p>
+
+<p>Other core changes include the normal bug fixes, refcount fixes in tee,
+and the destruction of a couple of race conditions that affected mp3
+playback.
+</p>
+
+<h3>Plugin Activity</h3>
+
+<p>Cutting to the quick, a brief look at activity by module:
+</p>
+
+<ul>
+<li>base: more robust error handling in ogg, theora, vorbis; cleanup fixes</li>
+<li>good: rtp payloading bugfixes, enable tag reading in flacdec, flacenc
+        ported to 0.9, cleanup fixes, dv query fixes</li>
+<li>bad: qtdemux locking fix</li>
+<li>  ugly: elite real demuxer work by Michael Smith</li>
+</ul>
+
+<p>FFMpeg also has gotten some love these days from Thomas and Wim.
+</p>
+
+<h3>Bug Status</h3>
+
+<center>
+<table width="50%">
+<tr><td>Total number of GStreamer bugs as of today</td><td>207</td></tr>
+<tr><td>Number opened in the last week</td><td>+13</td></tr>
+<tr><td>Number closed in the last week</td><td>-23</td></tr>
+<tr><td>Net change</td><td>-10</td></tr>
+</table>
+</center>
+
+<p>We are again #9 in the GNOME bug rankings. Frankly though I don't see
+how these numbers add up -- we were at 207 bugs last week. Does this
+prove the existence of a divine being? Stay tuned next week to find out.
+</p>
+
+<h3>Current Releases</h3>
+
+<p>Thomas considers it crucial that each and every one of you tatoo this
+information to your forearms.</p>
+
+<h4>Latest development versions</h4>
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-base</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-good</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-bad</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-ugly</td><td>0.9.3</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.9.3</td></tr>
+<tr><td>gst-python</td><td>0.9.3</td></tr>
+</table>
+</center>
+
+<h4>Latest stable versions</h4>
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.8.11</td></tr>
+<tr><td>gst-plugins</td><td>0.8.11</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.8.6</td></tr>
+<tr><td>gst-python</td><td>0.8.2</td></tr>
+</table>
+</center>
+
+<h3>Featured Application: Thoggen</h3>
+
+<p>Christian Schaller lets us know how to back up DVDs with GStreamer.
+</p>
+
+<blockquote>
+    Looking for a tool to backup your DVD's? Well you are in luck. This
+    week we take a look at Thoggen, written by Tim Müller, which gives
+    you a nice looking GTK+ GUI for ripping your DVD's into Ogg files.
+    It uses HAL/d-bus for DVD detection and provides nice features such
+    as preview, picture cropping and picture resizing. So free yourself
+    from DivX and move into the world of Ogg.
+</blockquote>
+
+<blockquote>
+    You find Thoggen and lots of screenshots on the Thoggen website,
+    http://thoggen.net/.
+</blockquote>
+
+<p>
+Well well, there went another week and this status newsletter is all we
+have to show for it, that and some code and tarballs and stuff. I'm now
+syndicating this newsletter over RSS at
+http://gstreamer.freedesktop.org/news/status-rss-1.0.xml, for the more
+technologically inclined out there. However it is you read, farewell for
+another half-fortnight. Tu hackeni nenyanyu (Happy hacking).
+</p>
+</content>
   </item>
 </status>
