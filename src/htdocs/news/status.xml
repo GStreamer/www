@@ -429,4 +429,199 @@ another half-fortnight. Tu hackeni nenyanyu (Happy hacking).
 </p>
 </content>
   </item>
+  <item>
+    <title>GStreamer status, 05 October 2005</title>
+    <date>2005-10-13 11:57</date>
+    <content>
+<p>
+Goeiemorgen GStreamer hackers,
+</p>
+
+<p>
+Another day, another dollar, another 1000 lines of ChangeLog. You are
+tuned into Radio GStreamer, operating at a frequency of 0.131 summaries
+per day, which, when the DJs are not sipping piña coladas and letting the
+radio software play some chilled-out dub, is all about some crucial
+GStreamer news. Represent.
+</p>
+
+<h3>
+The Coming Winter
+</h3>
+
+<p>
+As our plan for 0.10 [0] indicates, the frost is coming. After Monday 17
+October, GStreamer will enter an API freeze. Much of the frenetic
+hacking this last week has focused on dealing with the things we
+normally ignore, like dirt under the fridge.
+</p>
+
+<p>
+Command-line argument parsing is now done with GOption instead of the
+byzantine relic known as popt. The GST_FLAG_IS_SET macro and friends
+were renamed to GST_OBJECT_FLAG_*, and the flags themselves are now
+declared as flags instead of enums. gst_element_get_state now takes a
+GstClockTime instead of a GTimeVal for the timeout, the newsegment
+events got a new boolean flag only to be used by Wim Taymans, and
+iterators now declare which GType they are iterating over so as to be
+more bindings-friendly. Clock distribution got the Taymans treatment,
+including a new provide_clock vmethod in GstElement. Tim Müller sped up
+typefinding while fixing some bugs. Also, there's a new type of
+messages, TYPE_ELEMENT, which is designed for element-specific
+notifications. GStreamer will not post TYPE_APPLICATION messages
+anymore; those are reserved for you.
+</p>
+
+<p>
+But by far the largest change of the past week was Wim's state change
+patch. Before this week, applications had to keep a rather complicated
+model of GStreamer's state in order to deal with all possible pipeline
+behaviors. Setting a pipeline to PLAYING could block or not depending on
+an object property on the GstPipeline object; it could succeed all the
+way up to PAUSED but not try to go to PLAYING in some cases; error
+conditions were poorly defined; sometimes messages would be posted and
+sometimes not. It was more complex than it should be.
+</p>
+
+<p>
+The core of the patch was rather simple. The state lock was made into a
+recursive mutex that can be waited on. Setting the state on a bin simply
+sets the state on all elements and returns even if some elements are
+changing state asynchronously, instead of blocking like GstPipeline used
+to do. Elements record the state that they are trying to go to; that is,
+if you set an element to PLAYING that is in READY, its _current_ state
+will be READY, the _next_ state is PAUSED, but the _pending_ state is
+PLAYING. Then when it commits its state either by returning SUCCESS from
+the change_state function or manually in the case of ASYNC elements
+(sinks mainly), it pulls itself up recursively into the _pending_ state
+(PLAYING in this case).
+</p>
+
+<p>
+After the patch, things are much more simple. Setting a pipeline to a
+given state will either result in success or error. Messages will always
+be posted. There are a couple of bugs still but we are confident they
+will be ironed out soon. That or we send Wim to go work on MPlayer.
+</p>
+
+<p>
+[0] http://article.gmane.org/gmane.comp.video.gstreamer.devel/13768
+</p>
+
+<h3>
+Plugin Activity
+</h3>
+
+<p>
+Our wire services indicate the following changes in the plugins modules:
+</p>
+
+<ul>
+<li>base: multifdsink bugfixes, audiosink bugfixes, typefind leaks
+        plugged, adder querying added, addition of a most rocking
+        audiotestsrc by Stefan Kost, tcpserversrc state change fix,
+        unsigned audio in alsaink, playbin seeking fix</li>
+<li>good: cairo timeoverlay ported to cairo 1.0 API, speexenc ported by
+        Edgard Lima, error handling in oss elements, dv1394src made
+        nonblocking and interruptible (and it posts a message when the
+        cable is plugged/unplugged), many debugging plugins ported by
+        Tim Müller (progressreport, navseek, navigationtest, testsink,
+        breakmydata)</li>
+<li>bad: faac bugfixes</li>
+<li>ugly: mad bugfix, amrnbdec bugfix</li>
+</ul>
+
+<h3>
+Build Status
+</h3>
+
+<p>
+We are pleased to announce that Thomas Vander Stichele now the proud
+godfather of a new buildslave running FreeBSD, thanks to Koop Mast for
+naming Thomas to this honored position. Also the Fedora Core 3
+buildslaves have been removed, as they do not support GLib 2.6, and the
+OS X buildslaves have been reenabled thanks to Stephen Thorne.
+</p>
+
+<p>
+For a while now we have also had a monster of a Power 5 machine running
+builds from Augsburg, Germany. /proc/cpuinfo says it has 32
+processors!!!!! Thanks to Thomas Morpe and the debian-ppc folks over at
+http://tuxppc.rz.uni-augsburg.de/ for the use of this machine.
+</p>
+
+<h3>
+Vital statistics
+</h3>
+
+<center>
+<table width="50%">
+<tr><td>Core files changed this week</td><td>166</td></tr>
+<tr><td>Lines added this week</td><td>10082</td></tr>
+<tr><td>Lines removed</td><td>2947</td></tr>
+<tr><td>New change in core value according to sloccount(1)</td><td>+$88,294</td></tr>
+<tr><td>Total number of GStreamer bugs as of today</td><td>209 [1]</td></tr>
+<tr><td>Number opened in the last week</td><td>+23</td></tr>
+<tr><td>Number closed in the last week</td><td>-20</td></tr>
+<tr><td>Net change</td><td>-3</td></tr>
+<tr><td>Rank among most buggy projects hosted in gnome bugzilla</td><td>8</td></tr>
+</table>
+</center>
+
+<p>
+[1] Not counting enhancements; this discounts the
+divine-beings-are-munging-our-bug-counts theory, but leaves open the
+possibility of malicious gremlins.
+</p>
+
+<h3>
+Current Releases
+</h3>
+
+<p>
+No new tarballs were dropped on the world this week. Monday, however,
+will see the release into the wild of the 0.9.4 development versions.
+</p>
+
+<h4>Latest development versions</h4>
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-base</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-good</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-bad</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-ugly</td><td>0.9.3</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.9.3</td></tr>
+<tr><td>gst-python</td><td>0.9.3</td></tr>
+</table>
+</center>
+
+<h4>Latest stable versions</h4>
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.8.11</td></tr>
+<tr><td>gst-plugins</td><td>0.8.11</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.8.6</td></tr>
+<tr><td>gst-python</td><td>0.8.2</td></tr>
+</table>
+</center>
+
+<h3>
+Featured Application
+</h3>
+
+<p>
+Christian Schaller, our foreign correspondent in Norwegia, was too busy
+researching a hot lead to send us a featured application this week. Stay
+tuned next week for his report.
+</p>
+
+<p>
+That brings this piece to a close. My fellow DJ's appear to already be
+in dub-and-piña-colada mode, so I am taking that as a sign from the most
+high. From our broadcasting office in Barcelona this is Radio GStreamer
+signing off. Tune in again in 1/0.131 days!
+</p>
+    </content>
+  </item>
 </status>
