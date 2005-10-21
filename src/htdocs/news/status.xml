@@ -624,4 +624,216 @@ signing off. Tune in again in 1/0.131 days!
 </p>
     </content>
   </item>
+  <item>
+    <title>GStreamer status, 21 October 2005</title>
+    <date>2005-10-21 16:26</date>
+    <content>
+<p>
+God kveld GStreamer hackere,
+</p>
+
+<p>
+Happy Friday to everyone across the land. The days slip by and we still
+do work, accelerating time's arrow by reducing entropy in our CVS.
+Depressing? No my friends, we party while the ship sinks. At least when
+we're not reading dinosaur comics[0], that is.
+</p>
+
+<p>
+[0] http://www.qwantz.com/index.pl?comic=116
+</p>
+
+
+<h3>
+The Flocculator
+</h3>
+
+<p>
+Remember Wim's state change patch from last week? It turns out that it
+had some nasty deadlocks due to a kind of mayonnaise policy[1] regarding
+the state lock. The state lock was being used (1) to synchronize access
+to the state variables on elements; (2) to serialize calls to
+gst_element_get_state; and (3) to serialize calls to
+gst_element_set_state. With such a broad lock, adding recursion only
+made the deadlocks trickier to find and understand.
+</p>
+
+<p>
+The ultimate solution to this problem was to redefine the role of the
+state lock. Now it is private to GstElement, and is only used to
+serialize calls to gst_element_set_state. Accessing the state variables
+themselves is done with the normal object lock. Bins are notified of
+asynchronous state changes via a new STATE_DIRTY message, which tells
+bins that a state recalculation is needed. It's still not entirely
+elegant internally, but application writers should now have a library
+that Just Works(tm).
+</p>
+
+<p>
+In light of these changes, in addition to the 600 unread dinosaur
+comics, the API freeze was postponed until Wednesday evening. It will be
+in effect until 14 November. The releases should hopefully come out
+today; as it turns out it takes time to distcheck 7 modules on a puny
+Thinkpad laptop.
+</p>
+
+<p>
+Of course, given the extra opportunity to break API, various malevolent
+hackers were busy doing just that. Position and duration queries were
+split, as position changes frequently but duration does not. In addition
+position queries are now handled by sink elements, which makes the query
+results sample-accurate. Duration changes are now broadcast via messages
+as well. There was some further win32 porting done, autoconf flogged
+Thomas a bit more, some plugin version-checking helper functions found
+their way in, and dates in GstTag objects are now of type GST_TYPE_DATE.
+</p>
+
+<p>
+[1] More is better!
+</p>
+
+
+<h3>
+API Freeze Status
+</h3>
+
+<p>
+Totally frozen dude! This is just like being in a stable series. No
+changes in properties, no changes in API, no changes in ABI, &amp;c. At this
+point, if there are changes that need to made, they should be filed in
+bugzilla as blocking bug #319388 so they can be reviewed and maybe
+applied on 14 November.
+</p>
+
+
+<h3>
+Plug It In, Plug It In
+</h3>
+
+<p>
+In addition to the churn this week related to the position/duration
+query changes, and the date tag type change, the plugins saw a lot of
+hacking this week. Here's a brief run-down:
+</p>
+
+<ul>
+<li>
+  base: decodebin and playbin now change state asynchronously (only
+        going to PAUSED when all streams are decoded), buffer-frames
+        removed from float audio caps (see [2]), typefinding updates,
+        bugfixes in oggmux, theoraenc, ffmpegcolorspace, and some build
+        system flaggelation by Thomas
+</li>
+
+<li>
+  good: lots of elements ported -- matroska demuxer and muxer, pngdec,
+        alphacolor, videomixer, flxdec; bugfixes in wavparse, videobox;
+        level uses ELEMENT messages (instead of APPLICATION)
+</li>
+
+<li>
+   bad: build fixes, speed updates from 0.8, faac ported better
+</li>
+
+<li>
+  ugly: a52dec ported, siddec fixes
+</li>
+</ul>
+
+<p>
+[2] http://article.gmane.org/gmane.comp.video.gstreamer.devel/13647
+</p>
+
+
+<h3>
+Everyone Likes Numbers
+</h3>
+
+<center>
+<table width="50%">
+<tr><td>Core files changed this week</td><td>247</td></tr>
+<tr><td>Lines added this week</td><td>4522</td></tr>
+<tr><td>Lines removed</td><td>6266</td></tr>
+<tr><td>New change in core value according to sloccount(1)</td><td>-$58,893 [3]</td></tr>
+<tr><td>Total number of GStreamer bugs as of today</td><td>213</td></tr>
+<tr><td>Number opened in the last week</td><td>+19</td></tr>
+<tr><td>Number closed in the last week</td><td>-11</td></tr>
+<tr><td>Net change</td><td>+8</td></tr>
+<tr><td>Rank among most buggy projects hosted in gnome bugzilla</td><td>8</td></tr>
+</table>
+</center>
+
+<p>
+[3] Thomas stole $69,000 of testsuites for 0.8-only features and has
+laundered it to Belgium. If anyone seek him, ask him to bankroll your
+bar tab -- the guy is loaded!
+</p>
+
+
+<h3>
+Current Releases
+</h3>
+
+<p>
+0.9.4 should come out later today, but as I write this these are still
+the latest releases:
+</p>
+
+<h4>Latest development versions</h4>
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-base</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-good</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-bad</td><td>0.9.3</td></tr>
+<tr><td>gst-plugins-ugly</td><td>0.9.3</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.9.3</td></tr>
+<tr><td>gst-python</td><td>0.9.3</td></tr>
+</table>
+</center>
+
+<h4>Latest stable versions</h4>
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.8.11</td></tr>
+<tr><td>gst-plugins</td><td>0.8.11</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.8.6</td></tr>
+<tr><td>gst-python</td><td>0.8.2</td></tr>
+</table>
+</center>
+
+
+<h3>
+Featured Application: Totem
+</h3>
+
+<p>
+Christian Schaller has brought this breathtaking report back from his
+Norvegian holidays:
+</p>
+
+<blockquote>
+<p>
+    Every system needs a good video player and in the GStreamer world
+    the best one out there is Totem. Totem is the default media player
+    in GNOME and has seen a lot of development put into making it very
+    mature and well featured, like support for Infrared remotes, video
+    thumbnails for Nautilus, support for various playlist formats and
+    much work put into optimizing usability. And maybe best of all you
+    can already use it with GStreamer 0.9 by using the patch from GNOME
+    bugzilla bug 313086. More information on the Totem homepage:
+</p>
+<p>
+    http://www.gnome.org/projects/totem/
+</p>
+</blockquote>
+
+
+<p>
+Well people, by my count I've got about 300 dinosaur comics left to read
+and only another 2 hours of work. So enough of this playing around, it's
+time to get serious. Have a quite fine weekend.
+</p>
+    </content>
+  </item>
 </status>
