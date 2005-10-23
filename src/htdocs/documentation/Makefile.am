@@ -14,7 +14,7 @@ plugins.xml-update:
 	rm plugins.xml
 	make plugins.xml
        
-plugins.html: plugins.xsl plugins.xml
+plugins.html: plugins.xsl plugins.xml-update
 	xsltproc -o plugins.html $(srcdir)/plugins.xsl plugins.xml
 
 include $(top_srcdir)/html.make
