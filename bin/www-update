@@ -1,4 +1,4 @@
 #!/bin/sh
 # manually ssh into fdo and update site completely
 
-ssh uraeus@pdx.freedesktop.org /srv/gstreamer.freedesktop.org/www/bin/www-update-complete
+ssh freedesktop.org /srv/gstreamer.freedesktop.org/www/bin/www-update-complete

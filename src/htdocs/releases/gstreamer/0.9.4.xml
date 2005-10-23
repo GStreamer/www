@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Tyrannosaurus Rex</name>
+  <version>0.9.4</version>
+
+  <intro>
+<p>
+The GStreamer team is petrified to announce a new release
+in the 0.9.x development series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.9.x series is a development series and not recommended for end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The main focus of the 0.9 series is to make GStreamer threadsafe.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+
+    <feature>state lock redefined</feature>
+    <feature>Extensive documentation updates</feature>
+    <feature>BaseTransform reworked</feature>
+    <feature>Bus reworked; signal API added</feature>
+  </features>
+
+  <applications>
+<p>
+At this point, ports of existing applications to 0.9 are still experimental.
+A patch for Totem is maintained at
+<A href="http://bugzilla.gnome.org/show_bug.cgi?id=313086">
+http://bugzilla.gnome.org/show_bug.cgi?id=313086</A>.
+A patch for Rhythmbox is maintained at
+<A href="http://bugzilla.gnome.org/show_bug.cgi?id=309609">
+http://bugzilla.gnome.org/show_bug.cgi?id=309609</A>.
+Jamboree has a branch with the tag "jamboree-gst-0.9" that works against
+GStreamer 0.9.
+Flumotion has been mostly ported to 0.9 as well.
+</p>
+  </applications>
+
+  <contributors>
+<!--
+<person>Antoine Tremblay</person>
+<person>Benjamin Otte</person>
+<person>Clytie Siddall</person>
+<person>Christian Schaller</person>
+<person>Christophe Fergeau</person>
+<person>Daniel Gazard</person>
+<person>Luca Ferretti</person>
+<person>Luca Ognibene</person>
+<person>Kjartan Maraas</person>
+<person>Martin Soto</person>
+<person>Matt Kraai</person>
+<person>Ronald Bultje</person>
+<person>Sebastien Cote</person>
+<person>Stephane Loeuillet</person>
+<person>Stephane Wirtel</person>
+<person>Steve Lhomme</person>
+<person>Torsten Schoenfeld</person>
+<person>Vincent Torri</person>
+<person>William Jon McCann</person>
+<person>Zaheer Abbas Merali</person>
+<person>Alessandro Decina</person>
+<person>David Schleef</person>
+<person>Francis Labonte</person>
+<person>Jan Schmidt</person>
+-->
+	<person>Andy Wingo</person>
+	<person>Edward Hervey</person>
+	<person>Johan Dahlin</person>
+	<person>Josef Zlomek</person>
+	<person>Julien Moutte</person>
+	<person>Michael Smith</person>
+	<person>Philippe Khalaf</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  <bugs>
+    <bug>
+      <id>111146</id>
+      <summary>new GstThread fails on pipeline with errors</summary>
+    </bug>
+    <bug>
+      <id>169772</id>
+      <summary>[PATCH] GOption command-line parsing</summary>
+    </bug>
+    <bug>
+      <id>170777</id>
+      <summary>use GST_TYPE_DATE for GST_TAG_DATE</summary>
+    </bug>
+    <bug>
+      <id>315050</id>
+      <summary>[API] consider using GstClockTime instead of GTimeVal in ...</summary>
+    </bug>
+    <bug>
+      <id>315126</id>
+      <summary>filesrc + forced caps should be possible</summary>
+    </bug>
+    <bug>
+      <id>315383</id>
+      <summary>gst-launch shouldn't run broken pipelines</summary>
+    </bug>
+    <bug>
+      <id>317041</id>
+      <summary>GstObject flags should be made real flags</summary>
+    </bug>
+    <bug>
+      <id>318447</id>
+      <summary>gst_bin_iterate_sorted: Invalid call to gst_iterator_new</summary>
+    </bug>
+  </bugs>
+</release>
