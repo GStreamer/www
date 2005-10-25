@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-ffmpeg</module>
+  <module-fancy>GStreamer FFmpeg</module-fancy>
+  <name>Redneck soup</name>
+  <version>0.8.7</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new stable release of the
+FFmpeg-based GStreamer plugin.
+</p>
+<p>
+This module is separated from GStreamer Plugins for easier maintenance
+and decoupled release cycles.
+Our CVS contains both the patched source code to FFmpeg, as well as the
+set of patches against upstream CVS, so we can send patches upstream
+regularly from our modifications.
+</p>
+  </intro>
+  <features>
+    <feature>codecs for most popular formats</feature>
+    <feature>snapshot update to 20/10</feature>
+    <feature>fixed FPS setting bug for divx5 movies</feature>
+    <feature>fixed possible memleak in MJPEG decoding</feature>
+    <feature>fixed altivec detection which caused it to not run on G3 CPUs</feature>
+    <feature>added QDM2 decoding</feature>
+  </features>
+  <contributors>
+    <person>Ronald Bultje</person>
+    <person>Luca Ognibene</person>
+    <person>Zaheer Abbas Merali</person>
+  </contributors>
+  <bugs>
+    <bug>
+      <id>312764</id>
+      <summary>--disable-encoders doesn't work</summary>
+    </bug>
+    <bug>
+      <id>313223</id>
+      <summary>gst-ffmpeg-0.8.6 fails to compile on a PPC </summary>
+    </bug>
+    <bug>
+      <id>313970</id>
+      <summary>ffdec_mpeg4 detects wrong framerate with some files</summary>
+    </bug>
+    <bug>
+      <id>314320</id>
+      <summary>gst ffmpeg calls "make" without caring about called make ...</summary>
+    </bug>
+    <bug>
+      <id>315385</id>
+      <summary>SIGFPE in gst_ffmpegdec_chain/gst_ffmpeg_time_gst_to_ff</summary>
+    </bug>
+    <bug>
+      <id>317596</id>
+      <summary>Gstreamer unable to play a qt video</summary>
+    </bug>
+    <bug>
+      <id>319471</id>
+      <summary>hooks.texi and faq.texi are missing from 0.8.6.2 tarball.</summary>
+    </bug>
+    <bug>
+      <id>319482</id>
+      <summary>altivec detections is broken.</summary>
+    </bug>
+  </bugs>
+</release>

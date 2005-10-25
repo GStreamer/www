@@ -1,3 +1,12 @@
+2005-10-25  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
+
+	* src/htdocs/bugs/bugs.xml:
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.8.7.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	  Release gst-ffmpeg 0.8.7 "Redneck soup".
+
 2005-10-24  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* bin/www-update:
