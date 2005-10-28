@@ -1,3 +1,8 @@
+2005-10-28  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/bugs/bugs.xsl:
+	  Add 'create bug' row for each component.
+
 2005-10-25  Ronald S. Bultje  <rbultje@ronald.bitfreak.net>
 
 	* src/htdocs/bugs/bugs.xml:
