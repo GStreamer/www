@@ -11,7 +11,7 @@ plugins.xml:
 	rm -rf gst-plugins-*
 
 plugins.xml-update:
-	rm plugins.xml
+	rm -f plugins.xml
 	make plugins.xml
        
 plugins.html: plugins.xsl plugins.xml-update
