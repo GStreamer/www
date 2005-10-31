@@ -836,4 +836,196 @@ time to get serious. Have a quite fine weekend.
 </p>
     </content>
   </item>
+  <item>
+    <title>GStreamer status, 31 October 2005</title>
+    <date>2005-10-31 16:26</date>
+    <content>
+<p>
+доброе утро gstreamer хакеры
+</p>
+
+<p>
+Spooky Monday greetings! You weren't about to start working, were you?
+Much better to put off beginning your day with a pot of coffee and a
+GStreamer summary. That's what I think anyway.
+</p>
+
+
+<h3>
+Life Under The Ice
+</h3>
+
+<p>
+Binary and source stability notwithstanding, quite a few mischievous
+minions have found ways to introduce changes into GStreamer CVS. 
+</p>
+
+<p>
+Support was added in basesink for some of the more esoteric seeking
+flags. filesink is more polite to the streams i/o layer now, and the
+queue saw some crasher/deadlock fixes. Bins got some support code for
+managing segment-start and segment-stop messages from their children,
+and now cache durations queried from their children. Property
+notifications are no longer serialized in GLib 2.8, and there is a new
+lock in basetransform [0].
+</p>
+
+<p>
+However the largest activity this last week centered around improving
+our API documentation. This culminated in our first-ever documentation
+day on Friday. It got off to a bit of a slow start, but was fruitful in
+the end. Unfortunately we probably still have about 120 hours of
+documentation work left to do, and we need your help. Read [1] to find
+out how you can get involved!
+</p>
+
+<p>
+[0] http://wingolog.org/pub/new-lock.jpg<br />
+[1] http://article.gmane.org/gmane.comp.video.gstreamer.devel/14044
+</p>
+
+
+<h3>
+Roadmap
+</h3>
+
+<p>
+Owing to the delay in freezing the API, as well as the delay in getting
+0.9.4 out the door, we pushed back the next two milestones by a week.
+Thus the 0.9.5 and 0.9.6 releases will happen on 7 November and 21
+November, with the hard freeze on 21 November [2].
+</p>
+
+<p>
+[2] http://article.gmane.org/gmane.comp.video.gstreamer.devel/14038
+</p>
+
+
+<h3>
+Plugged In
+</h3>
+
+<p>
+The standard capabilities for video data no longer have arbitrary
+bounds. Framerate now ranges from 0 to MAXDOUBLE, and dimensions are now
+[1, MAXINT]. Although it is in the plans, it does not look like
+framerate will become a rational for 0.10.
+</p>
+
+<ul>
+<li>
+  base: baseaudiosink now accepts audio buffers without timestamps,
+        vorbisdec fixes, rtp base class work, audioconvert renegotiating
+        fix, adder timestamps, oggdemux convert fix
+</li>
+
+<li>
+  good: pngdec videobox bugfixen and optimization, flacenc fixes from
+        Tim, osssrc mono/width fixes, h263 and asterisk payloaders,
+        dvdemux autoplugging fix, payloader/depayloaders for gsm, mulaw,
+        alaw, videomixer refcount fixen, matroska v2 support, speexenc
+        fix
+</li>
+
+<li>
+   bad: ttaparse fix, gsmenc/gsmdec rewritten, qtdemux update,
+        sdlvideosink
+</li>
+
+<li>
+  ugly: mpeg2dec fixes
+</li>
+</ul>
+
+
+<h3>
+Digits
+</h3>
+
+<center>
+<table width="50%">
+<tr><td>Core files changed this week</td><td>71</td></tr>
+<tr><td>Lines added this week</td><td>4157</td></tr>
+<tr><td>Lines removed</td><td>3362</td></tr>
+<tr><td>New change in core value according to sloccount(1)</td><td>+$9,723</td></tr>
+<tr><td>Total number of GStreamer bugs as of today</td><td>230</td></tr>
+<tr><td>Number opened in the last week</td><td>+33</td></tr>
+<tr><td>Number closed in the last week</td><td>-16</td></tr>
+<tr><td>Net change</td><td>+17</td></tr>
+<tr><td>Rank among most buggy projects hosted in gnome bugzilla</td><td>8</td></tr>
+</table>
+</center>
+
+
+<h3>
+Current Releases
+</h3>
+
+<h4>Latest development versions</h4>
+<p>
+0.9.4 of all of the development modules was released on 24 October. The
+API and ABI of those modules will not change until 21 November. 
+</p>
+
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.9.4</td></tr>
+<tr><td>gst-plugins-base</td><td>0.9.4</td></tr>
+<tr><td>gst-plugins-good</td><td>0.9.4</td></tr>
+<tr><td>gst-plugins-bad</td><td>0.9.4</td></tr>
+<tr><td>gst-plugins-ugly</td><td>0.9.4</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.9.4</td></tr>
+<tr><td>gst-python</td><td>0.9.4</td></tr>
+</table>
+</center>
+
+<h4>Latest stable versions</h4>
+
+<p>
+Ronald has rolled a stable gst-ffmpeg prerelease which he would like
+people to test, version 0.8.6.3. Check #gstreamer on irc.freenode.net
+for more information.
+</p>
+
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.8.11</td></tr>
+<tr><td>gst-plugins</td><td>0.8.11</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.8.6</td></tr>
+<tr><td>gst-python</td><td>0.8.2</td></tr>
+</table>
+</center>
+
+
+<h3>
+Featured Application: Buzztard
+</h3>
+
+<p>
+Tall. Blond. Norwegian. Add these words together and decode them for the
+name of the secret author bringing us this week's featured application!
+</p>
+
+<p>
+    Buzztard is a music production software modelled after the program
+    Buzz which was released for Windows. The main person behind Buzztard
+    is Stefan Kost who has also been one of the primary drivers behind
+    making GStreamer 0.9/0.10 well suited for music creation software
+    like this. Buzztard aims to reach parity and then surpass the
+    original, a task made a little easier by the fact that the
+    original's development stopped due to lost source code. You can find
+    out more about Buzztard here:
+</p>
+
+<p>
+    http://www.buzztard.org/
+</p>
+
+
+<p>
+So it's four oclock already, I imagine I should start working. You too.
+Have a fine week!
+</p>
+    </content>
+  </item>
 </status>
