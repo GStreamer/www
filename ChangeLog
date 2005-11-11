@@ -1,3 +1,10 @@
+2005-11-11  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* bin/bugzilla:
+	* bin/new-release:
+	* bin/update-contributors:
+	  add/update scripts to help with the release
+
 2005-10-31  Andy Wingo  <wingo@pobox.com>
 
 	* try again
