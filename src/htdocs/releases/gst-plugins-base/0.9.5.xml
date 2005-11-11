@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
+  <name>No No Kia</name>
+  <version>0.9.5</version>
+
+  <intro>
+<p>
+The GStreamer team is petrified to announce a new release
+in the 0.9.x development series of the
+GStreamer Base Plug-ins.
+</p>
+<p>
+The 0.9.x series is a development series and not recommended for end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: sinesrc, videotestsrc, gnomevfssrc</li>
+  <li>network: tcp</li>
+  <li>typefind</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioscale, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: ffmpegcolorspace</li>
+  <li>aggregate elements: decodebin, playbin</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+
+    <feature>video caps now use a good range for framerate and w/h</feature>
+    <feature>oggdemux/oggmux improvements</feature>
+    <feature>playbin improvements</feature>
+
+  </features>
+
+  <applications>
+  </applications>
+      <contributors>
+	<person>Andre Magalhaes</person>
+	<person>Andy Wingo</person>
+	<person>Brian Cameron</person>
+	<person>Julien MOUTTE</person>
+	<person>Michael Smith</person>
+	<person>Sebastien Cote</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Zeeshan Ali</person>
+  </contributors>
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>319110</id>
+      <summary>[PATCH] oggdemux chain finding is slow</summary>
+    </bug>
+    <bug>
+      <id>320058</id>
+      <summary>playbin of a jpeg over http does not work</summary>
+    </bug>
+    <bug>
+      <id>320923</id>
+      <summary>[volume] doesn't build on Solaris</summary>
+    </bug>
+    <bug>
+      <id>321011</id>
+      <summary>gstbasertpdepayload doesn't send the &quot; new segment &quot; event ...</summary>
+    </bug>
+  </bugs>
+
+</release>

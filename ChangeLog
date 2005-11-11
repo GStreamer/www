@@ -1,3 +1,31 @@
+2005-11-11  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* bin/new-release:
+	* bin/update-contributors:
+	  update scripts a little
+	* src/htdocs/releases/gst-ffmpeg/0.9.5.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	* src/htdocs/releases/gst-ffmpeg/template.xml:
+	* src/htdocs/releases/gst-plugins-bad/0.9.5.xml:
+	* src/htdocs/releases/gst-plugins-bad/Makefile.am:
+	* src/htdocs/releases/gst-plugins-bad/template.xml:
+	* src/htdocs/releases/gst-plugins-base/0.9.5.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gst-plugins-base/template.xml:
+	* src/htdocs/releases/gst-plugins-good/0.9.5.xml:
+	* src/htdocs/releases/gst-plugins-good/Makefile.am:
+	* src/htdocs/releases/gst-plugins-good/template.xml:
+	* src/htdocs/releases/gst-plugins-ugly/0.9.5.xml:
+	* src/htdocs/releases/gst-plugins-ugly/Makefile.am:
+	* src/htdocs/releases/gst-plugins-ugly/template.xml:
+	* src/htdocs/releases/gst-python/0.9.5.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	* src/htdocs/releases/gst-python/template.xml:
+	* src/htdocs/releases/gstreamer/0.9.5.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	* src/htdocs/releases/gstreamer/template.xml:
+	  do release notes 
+
 2005-11-11  Andy Wingo  <wingo@pobox.com>
 
 	* src/htdocs/news/status.xml: dump

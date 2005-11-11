@@ -29,6 +29,9 @@ def main():
     
     lines = codecs.open(changelog, "r", encoding='utf-8').readlines()
     relmatcher = re.compile('^=== release .* ===$')
+    if relmatcher.match(lines[0]):
+        del lines[0]
+
     datedmatcher = re.compile('^\d*-\d*-\d*\s*(.*)\s*<.*>$')
     bymatcher = re.compile(' by: (.*)\s*<.*>$')
     for line in lines:

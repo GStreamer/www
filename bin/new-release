@@ -32,9 +32,24 @@ then
   exit 1
 fi
 
+echo "Updating CVS"
+pushd $moduledir > /dev/null 2>&1
+cvs up
+popd
+
 release=src/htdocs/releases/$module/$version
+template=src/htdocs/releases/$module/template.xml
+if test ! -e $template
+then
+  echo "No template $template !"
+  exit 1
+fi
+if test ! -e $release.xml
+then
+  echo "Creating $release.xml"
+  cp $template $release.xml
+fi
 echo "Updating $release.xml"
-cp src/htdocs/releases/$module/template.xml $release.xml
 perl -i -p -e "s@<version></version>@<version>$version</version>@" $release.xml
 perl -i -p -e "s@<name></name>@<name>$name</name>@" $release.xml
 echo "Updating contributors"
@@ -60,9 +75,14 @@ fi
 
 # update configure.ac
 configureac=$moduledir/configure.ac
-echo "Please update configure.ac's version number and libtool versioning."
+echo "Press Enter to update configure.ac's version and libtool versioning."
 read
 $EDITOR $configureac
+
+echo "Rebuilding to update version numbering"
+pushd $moduledir > /dev/null 2>&1
+make > out 2>&1 || ( echo "Build failed"; exit 1 )
+popd
 
 # update Changelog
 changelog=$moduledir/ChangeLog
@@ -97,12 +117,39 @@ release=htdocs/releases/$module/$version
 echo "Copying RELEASE"
 cp $release $moduledir/RELEASE
 
-echo "Please update NEWS with information from RELEASE"
+echo "Press Enter to update NEWS with information from RELEASE"
 read
 $EDITOR $moduledir/NEWS $release
 
-pushdir
-cd $moduledir
-make release
-popdir
+if test -d $moduledir/docs/plugins
+then
+  echo "Updating plugin documentation files"
+  pushd $moduledir/docs/plugins > /dev/null 2>&1
+  make update
+  popd
+fi
+
+echo "Rolling release tarballs"
+pushd $moduledir > /dev/null 2>&1
+make release > /dev/null 2>&1 || exit 1
+popd
 mv $moduledir/$module-$version.tar.* data/src/$module
+
+echo "Updating docs on website"
+pushd $moduledir/docs > /dev/null 2>&1
+make upload > /dev/null 2>&1
+popd
+
+if test -d $moduledir/po
+then
+  echo "Press Enter to commit updates to .po files"
+  read
+  pushd $moduledir > /dev/null 2>&1
+  cvs commit -m "Update .po files" po/*.po
+  popd
+fi
+
+cd $moduledir
+cvs diff > release.diff
+echo "Press Enter to review the CVS diff"
+less -R release.diff
