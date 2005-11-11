@@ -1028,4 +1028,242 @@ Have a fine week!
 </p>
     </content>
   </item>
+  <item>
+    <title>GStreamer status, 11 November 2005</title>
+    <date>2005-11-10 17:50</date>
+    <content>
+<p>
+Bon dia hackers,
+</p>
+
+<p>
+Happy Friday across the land. Don't start with the keyboard yet, just
+chill and let the hangover subside by doing some, er, "professional
+development". Time to check out what's been going on in the land of
+GStreamer!
+</p>
+
+<h3>
+Acontecimientos Nucleares
+</h3>
+
+<p>
+Odds and ends, odds and ends. GstBaseSrc now supports a mode where it
+synchronizes its output to a clock, which is useful for elements which
+simulate live sources. Wim fixed a bug when linking ghost pads, filesrc
+got some cleanups, and sink elements now emit the correct state change
+messages. gst_bus_poll can now co-exist happily with the "message"
+signal, and the GstBaseTransform class that underlies most filters was
+fixed to correctly support passthrough mode.
+</p>
+
+<p>
+GstBaseSrc also saw a number of segment seeking fixes, which allow for
+looped and reverse playback. A deadlock when flushing blocked pads was
+fixed, Thomas made sure that local plugins can override system plugins
+in the registry, and there were also a series of collectpads fixes and
+updates for win32.
+</p>
+
+<p>
+Finally, lots of documentation was reviewed and expanded. Mmm.
+Documentation.
+</p>
+
+
+<h3>
+A Look Ahead
+</h3>
+
+<p>
+As we are in a freeze right now, we can't commit API-breaking patches to
+CVS directly. Breaks proposed before 0.10.0 is out are being queued up
+in bugzilla as blocking bug #319388 [0]. A brief look at these patches
+shows changes in the following categories:
+</p>
+
+<ul>
+<li>
+ removals of deprecated API that doesn't work (319389, 320097, 321235)
+</li><li>
+ name changes for consistency (319392, 319395, 320113, 320395, 320766)
+</li><li>
+ cleanups (320324, 321061, 319940, 320423)
+</li>
+</ul>
+
+<p>
+Surprisingly there is only one addition bug, and we're not sure if it's
+needed -- to spec out filler events (319178). The one left (320299) is
+to have the core take the stream lock for event functions, only if
+necessary. Plugin code should then be updated not to take the stream
+lock within event functions, although it will not cause an error because
+the stream lock is recursive.
+</p>
+
+<p>
+Of these patches, the name changes are the only thing application/plugin
+writers should be concerned about. However, there is one other source of
+proposed changes, which is Wim's to-do list [1], which is looking quite
+formidable. We'll know what hit us on the 21st...
+</p>
+
+<p>
+[0] http://bugzilla.gnome.org/showdependencytree.cgi?id=319388<br />
+[1] http://cvs.freedesktop.org/*checkout*/gstreamer/gstreamer/docs/design/part-TODO.txt
+</p>
+
+
+<h3>
+Enchufado
+</h3>
+
+<p>
+I was looking at changelogs and I noticed that this is the first summary
+period in which no commit was made to 0.8 core or plugins. Sweet!
+</p>
+
+<p>
+The highlight of this week in plugins was Julien Moutte's directfb video
+sink port. Not only does it handle all of the tricky things video sinks
+should implement (reverse negotiation, hardware scaling, DMA buffer
+allocation...), but it was committed with documentation and example
+code. As it should be, it was first put into -bad while he worked on it,
+and then he filed a bug [2] requesting that it be accepted into -good.
+Truly a model for how to port plugins. Excellent work, Julien!
+</p>
+
+<p>
+[2] http://bugzilla.gnome.org/show_bug.cgi?id=321240
+</p>
+
+<ul>
+<li>
+  base: ffmpegcolorspace passthrough mode fix, better errors in
+        alsasink, better seeking in ogg, playbin fixes, test sources
+        let basesrc do the clock synchronization for them, v4lsrc fix,
+        mux ogg correctly (mostly a forward-port from 0.8), base rtp
+        depayloader fixes, baseaudiosink optimizations, new example for
+        changing playback rate (not completely implemented in audio
+        sinks yet)
+</li>
+
+<li>
+  good: matroskamux fixes, autoaudiosink and autovideosink more robust,
+        wavenc decruftifying, cairotextoverlay ported, osssink debugging
+        fixes, flxdec optimizations
+</li>
+
+<li>
+   bad: qtdemux supports custom genre tags, documentation fixes, tremor
+        integer vorbis decoder ported, directfb video sink ported (with
+        examples and documentation!)
+</li>
+
+<li>
+  ugly: nothing!
+</li>
+</ul>
+
+<h3>
+Digits
+</h3>
+
+<center>
+<table width="50%">
+<tr><td>Core files changed this week</td><td>77</td></tr>
+<tr><td>Lines added this week</td><td>3179</td></tr>
+<tr><td>Lines removed</td><td>1780</td></tr>
+<tr><td>New change in core value according to sloccount(1)</td><td>+$18,017</td></tr>
+<tr><td>Total number of GStreamer bugs as of today</td><td>245</td></tr>
+<tr><td>Number opened in the last week</td><td>+21</td></tr>
+<tr><td>Number closed in the last week</td><td>-17</td></tr>
+<tr><td>Net change</td><td>+4</td></tr>
+<tr><td>Rank among most buggy projects hosted in gnome bugzilla</td><td>8</td></tr>
+</table>
+</center>
+
+
+<h3>
+Current Releases
+</h3>
+
+<h4>Latest development versions</h4>
+<p>
+0.9.5 of all of the development modules is being released as this
+newsletter goes to press. The API and ABI of these modules will not
+change until 21 November.
+</p>
+
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.9.5</td></tr>
+<tr><td>gst-plugins-base</td><td>0.9.5</td></tr>
+<tr><td>gst-plugins-good</td><td>0.9.5</td></tr>
+<tr><td>gst-plugins-bad</td><td>0.9.5</td></tr>
+<tr><td>gst-plugins-ugly</td><td>0.9.5</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.9.5</td></tr>
+<tr><td>gst-python</td><td>0.9.5</td></tr>
+</table>
+</center>
+
+<h4>Upcoming releases</h4>
+
+<center>
+<table width="50%">
+<tr><td>21 November</td><td>0.9.6</td></tr>
+<tr><td>28 November</td><td>0.9.7 (the 0.10.0 prerelease)</td></tr>
+<tr><td>05 December</td><td>0.10.0</td></tr>
+</table>
+</center>
+
+<h4>Latest stable versions</h4>
+
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.8.11</td></tr>
+<tr><td>gst-plugins</td><td>0.8.11</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.8.7</td></tr>
+<tr><td>gst-python</td><td>0.8.2</td></tr>
+</table>
+</center>
+
+<h3>
+Featured Application: Flumotion
+</h3>
+
+<p>
+Christian Ferrari Schaller is our reporter on location, bringing us
+these words of wisdom.
+</p>
+
+<blockquote>
+<p>
+    Flumotion is just out today with a new release so I thought I would
+    make it this week's featured application. Flumotion is a distributed
+    streaming server using GStreamer. It supports the free Ogg Vorbis,
+    Ogg Theora and Ogg Speex protocls and also jpeg video streaming.
+    Today's new version supports both GStreamer 0.8 and the new sparking
+    GStreamer 0.9 version. You find more information about Flumotion at:
+</p>
+
+<p>
+    http://www.flumotion.net/
+</p>
+</blockquote>
+
+<p>
+Christian also notes that the new Flumotion release might not be out
+when you read this, but it will be out before the end of the day. Word
+is bond.
+</p>
+
+
+<p>
+So kids, a little over three weeks until the big 0.10.0. Keep hacking,
+keep porting, and stay away from drugs, ok? Thanks. We'll totally make
+it there together. Peace.
+</p>
+    </content>
+  </item>
 </status>
