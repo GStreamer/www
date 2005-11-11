@@ -56,6 +56,8 @@ NOTE: UNIX file and directory names are case sensitive. The path to the project 
 <p>
 Only project developers can access the CVS tree via this method. A SSH client must be installed on your client machine. Substitute modulename and developername with the proper values. Enter your site password when prompted.
 <br/>
+<p>
+You find information on how to get a developer account on <a href="http://www.freedesktop.org/wiki/AccountRequests">freedesktop here</a></p>
 Developers may also make use of shared SSH keys for authentication.
 <br/>
 <pre>
