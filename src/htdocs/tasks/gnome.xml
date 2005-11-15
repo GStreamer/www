@@ -41,16 +41,18 @@
     </task>
   
     <task name="libgnomeify">
-      <title>Update and merge libgnome GStreamer patches</title>
+      <title>Port libgnome to use GStreamer instead of esound</title>
       <description>
-  	There where a couple of patches made long ago that migrates libgnome to use GStreamer for audio playback. These patches should be cleaned up (use GStreamer directly) and verified to work with GStreamer 0.7/0.8.
+One of the last parts of GNOME still depending on esound directly is libgnome, which use it to provide a simple API for doing system sounds. This API should be ported to use GStreamer for its backend.
   	</description>
   
       <why>
-  	As we are now moving to really take advantage of GStreamer in the GNOME technology stack it is natural to also move libgnome to GStreamer.</why>
+Switching to GStreamer will allow GNOME to drop esound at some point in the future. It also allows distributors to choose not to ship or use esound with their systems and instead output directly to for instance alsa/dmix
+      </why>
   
       <how>
-  	Patches can be found in these two GNOME bugzilla entries <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82340">82340</A> and <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82341">82341</A>. These patches uses monkey-media. Today we probably want to access GStreamer directly or use gstplay.</how>
+There is a couple of issues that needs to be taken into account. One thing esound provides is caching of sound samples, which is especially usefull in a networked setup. Adding some API/system to GStreamer to abstract away this capability would be a good idea when doing this task. Next question then is what to do when users use output plugins which do not do this type of caching. Probably just fallback to a non-caching mode. There are some old patches that can be found in these two GNOME bugzilla entries <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82340">82340</A> and <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82341">82341</A>. 
+      </how>
   
 	<where>
         <code id="libgnome">
