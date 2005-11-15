@@ -51,7 +51,7 @@ Switching to GStreamer will allow GNOME to drop esound at some point in the futu
       </why>
   
       <how>
-There is a couple of issues that needs to be taken into account. One thing esound provides is caching of sound samples, which is especially usefull in a networked setup. Adding some API/system to GStreamer to abstract away this capability would be a good idea when doing this task. Next question then is what to do when users use output plugins which do not do this type of caching. Probably just fallback to a non-caching mode. There are some old patches that can be found in these two GNOME bugzilla entries <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82340">82340</A> and <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82341">82341</A>. 
+There are a couple of issues that needs to be taken into account. One thing esound provides is caching of sound samples, which is especially usefull in a networked setup. Adding some API/system to GStreamer to abstract away this capability would be a good idea when doing this task. Next question then is what to do when users use output plugins which do not do this type of caching. Probably just fallback to a non-caching mode. There are some old patches that can be found in these two GNOME bugzilla entries <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82340">82340</A> and <A HREF="http://bugzilla.gnome.org/show_bug.cgi?id=82341">82341</A>. 
       </how>
   
 	<where>
