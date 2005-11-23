@@ -4,7 +4,7 @@ module=$1
 shift
 version=$1
 shift
-moduledir=$1
+modulebasedir=$1
 shift
 name="$*"
 
@@ -20,9 +20,9 @@ then
   exit 1
 fi
 
-if test -z $moduledir
+if test -z $modulebasedir
 then
-  echo Please specify a module dir
+  echo "Please specify a module base dir (root of your checkout)"
   exit 1
 fi
 
@@ -31,6 +31,14 @@ then
   echo Please specify a release name
   exit 1
 fi
+
+if test ! -d $modulebasedir/gstreamer
+then
+  echo $modulebasedir does not contain a "gstreamer" directory
+  exit 1
+fi
+
+moduledir=$modulebasedir/$module
 
 echo "Updating CVS"
 pushd $moduledir > /dev/null 2>&1
