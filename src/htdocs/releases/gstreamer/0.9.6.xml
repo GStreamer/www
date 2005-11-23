@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Always On Time</name>
+  <version>0.9.6</version>
+
+  <intro>
+<p>
+The GStreamer team is petrified to announce a new release
+in the 0.9.x development series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.9.x series is a development series and not recommended for end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The main focus of the 0.9 series is to make GStreamer threadsafe.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+
+    <feature>API changes and clean-up</feature>
+    <feature>Extensive documentation updates</feature>
+    <feature>remove GLib 2.4 compatibility</feature>
+    <feature>added clock selection</feature>
+    <feature>added network clocking</feature>
+    <feature>added fd:// URI handler</feature>
+    <feature>added more fraction functionality</feature>
+  </features>
+
+  <applications>
+<p>
+At this point, ports of existing applications to 0.9 are still experimental.
+A patch for Totem is maintained at
+<A href="http://bugzilla.gnome.org/show_bug.cgi?id=313086">
+http://bugzilla.gnome.org/show_bug.cgi?id=313086</A>.
+A patch for Rhythmbox is maintained at
+<A href="http://bugzilla.gnome.org/show_bug.cgi?id=309609">
+http://bugzilla.gnome.org/show_bug.cgi?id=309609</A>.
+Jamboree has a branch with the tag "jamboree-gst-0.9" that works against
+GStreamer 0.9.
+Flumotion has been mostly ported to 0.9 as well.
+</p>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Dessina</person>
+	<person>Andy Wingo</person>
+	<person>Daniel Fischer</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Johan Dahlin</person>
+	<person>Julien MOUTTE</person>
+	<person>Michael Smith</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Torsten Schoenfeld</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>143472</id>
+      <summary>[api] gst_tag_list_foreach() takes a non-const GstTagList*</summary>
+    </bug>
+    <bug>
+      <id>156633</id>
+      <summary>[API] don't use same API for arrays as for normal lists</summary>
+    </bug>
+    <bug>
+      <id>164168</id>
+      <summary>circular pipeline fails to negotiate</summary>
+    </bug>
+    <bug>
+      <id>165650</id>
+      <summary>[API] gst_value_deserialize doesn't work correctly for NU...</summary>
+    </bug>
+    <bug>
+      <id>168438</id>
+      <summary>[API] GstIndexFilter doesn't receive user_data</summary>
+    </bug>
+    <bug>
+      <id>168494</id>
+      <summary>[API] gst_index_add_object() does nothing</summary>
+    </bug>
+    <bug>
+      <id>305291</id>
+      <summary>Obnoxious bug-filing request</summary>
+    </bug>
+    <bug>
+      <id>311489</id>
+      <summary>Possible gstghostpad locking problems</summary>
+    </bug>
+    <bug>
+      <id>319178</id>
+      <summary>[API] finish filler events and support them in GstCollect...</summary>
+    </bug>
+    <bug>
+      <id>319388</id>
+      <summary>0.9 API changes tracker</summary>
+    </bug>
+    <bug>
+      <id>319389</id>
+      <summary>state change updates obsolete some functions</summary>
+    </bug>
+    <bug>
+      <id>319392</id>
+      <summary>GstEventType is not bindings-friendly</summary>
+    </bug>
+    <bug>
+      <id>319395</id>
+      <summary>Macro name/visibility API bugs</summary>
+    </bug>
+    <bug>
+      <id>319940</id>
+      <summary>Use GLIB macros for GCC extensions</summary>
+    </bug>
+    <bug>
+      <id>320060</id>
+      <summary>add a CORE error category for missing ELEMENTS/PLUGINS</summary>
+    </bug>
+    <bug>
+      <id>320097</id>
+      <summary>GST_BUFFER_FLAG_ORIGINAL should die</summary>
+    </bug>
+    <bug>
+      <id>320113</id>
+      <summary>[API] duration message changes</summary>
+    </bug>
+    <bug>
+      <id>320299</id>
+      <summary>gst_pad_send_event should take stream lock for serialized...</summary>
+    </bug>
+    <bug>
+      <id>320324</id>
+      <summary>[API] GST_FOURCC_FORMAT should drop leading '%'</summary>
+    </bug>
+    <bug>
+      <id>320423</id>
+      <summary>[API] padding for GstCollectData</summary>
+    </bug>
+    <bug>
+      <id>320766</id>
+      <summary>[API] collect pads API changes</summary>
+    </bug>
+    <bug>
+      <id>321061</id>
+      <summary>GstURI not used</summary>
+    </bug>
+    <bug>
+      <id>321235</id>
+      <summary>[API] GST_PAD_IS_USABLE should be removed</summary>
+    </bug>
+    <bug>
+      <id>321386</id>
+      <summary>[SEGFAULT] basetransform when doing reverse caps negotiation</summary>
+    </bug>
+    <bug>
+      <id>321452</id>
+      <summary>GstPad's &quot; template &quot; property is b0rked</summary>
+    </bug>
+    <bug>
+      <id>321528</id>
+      <summary>capsfilter: assertion `caps != NULL' failed</summary>
+    </bug>
+    <bug>
+      <id>321595</id>
+      <summary>GstBin doesn't clean the message queue when changing stat...</summary>
+    </bug>
+    <bug>
+      <id>321638</id>
+      <summary>Don't use // style comments in headers</summary>
+    </bug>
+    <bug>
+      <id>321648</id>
+      <summary>Wrong type check in gst_message_parse_clock_lost</summary>
+    </bug>
+    <bug>
+      <id>321710</id>
+      <summary>GstClock resolution functions should take a GstClockTime</summary>
+    </bug>
+    <bug>
+      <id>321712</id>
+      <summary>GstClock adjust function changes</summary>
+    </bug>
+    <bug>
+      <id>321875</id>
+      <summary>gst_plugin_check_file disappeared</summary>
+    </bug>
+    <bug>
+      <id>321950</id>
+      <summary>gst_registry_scan_paths lacks implementation</summary>
+    </bug>
+    <bug>
+      <id>321962</id>
+      <summary>[easyfix] gst_value_is_fixed uses gst_value_list_* on GST...</summary>
+    </bug>
+    <bug>
+      <id>322027</id>
+      <summary>[API] Rename gst_caps_structure_fixate_* to gst_structure...</summary>
+    </bug>
+    <bug>
+      <id>322034</id>
+      <summary>Elements should be updated not to take the stream lock in...</summary>
+    </bug>
+    <bug>
+      <id>322069</id>
+      <summary>Names of GstTagSetter methods should be more descriptive</summary>
+    </bug>
+    <bug>
+      <id>322134</id>
+      <summary>API master/slave clocks</summary>
+    </bug>
+    <bug>
+      <id>322139</id>
+      <summary>our elements are confused about GEnumValue and which is t...</summary>
+    </bug>
+  </bugs>
+</release>

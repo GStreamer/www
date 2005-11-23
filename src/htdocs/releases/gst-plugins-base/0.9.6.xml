@@ -3,8 +3,8 @@
 <release>
   <module>gst-plugins-base</module>
   <module-fancy>GStreamer Base Plug-ins</module-fancy>
-  <name></name>
-  <version></version>
+  <name>White Eight</name>
+  <version>0.9.6</version>
 
   <intro>
 <p>
@@ -59,16 +59,30 @@ Other modules containing plug-ins are:
     <feature>Parallel installability with 0.8.x series</feature>
     <feature>Threadsafe design and API</feature>
 
-    <feature>RTP base classes</feature>
-    <feature>New element: audiotestsrc</feature>
-    <feature>typefind improvements</feature>
-    <feature>buffer-frames removed</feature>
+    <feature>lots of leak fixes</feature>
+    <feature>flicker-free and rewritten X sinks</feature>
+    <feature>fractional framerates</feature>
+    <feature>removed sinesrc, replaced by audiotestsrc</feature>
   </features>
 
   <applications>
   </applications>
-  <contributors>
-</contributors>
+    <contributors>
+	<person></person>
+	<person>Alessandro Dessina</person>
+	<person>Andy Wingo</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Johan Dahlin</person>
+	<person>Julien Moutte</person>
+	<person>Luca Ocgibene</person>
+	<person>Michael Smith</person>
+	<person>Sebastien Cote</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
 
 <!--
   <api>
@@ -79,7 +93,49 @@ Other modules containing plug-ins are:
   </api>
 -->
 
+  
+
   <bugs>
+    <bug>
+      <id>316442</id>
+      <summary>playbin should use autoaudiosink/autovideosink by default</summary>
+    </bug>
+    <bug>
+      <id>318353</id>
+      <summary>[ffmpegcolorspace] forward-port fixes from 0.8 branch</summary>
+    </bug>
+    <bug>
+      <id>320200</id>
+      <summary>vorbisenc: min-bitrate and max-bitrate are 1/1000 bps rat...</summary>
+    </bug>
+    <bug>
+      <id>321164</id>
+      <summary>gstringbuffer stops working under load</summary>
+    </bug>
+    <bug>
+      <id>321426</id>
+      <summary>ximage plugin should be renamed to ximagesink</summary>
+    </bug>
+    <bug>
+      <id>321446</id>
+      <summary>sinesrc should be dropped in favour of audiotestsrc</summary>
+    </bug>
+    <bug>
+      <id>321451</id>
+      <summary>GstRtpBuffer: no way to create a sub buffer with only the...</summary>
+    </bug>
+    <bug>
+      <id>321816</id>
+      <summary>[API] xoverlay API to post prepare-xwindow-id message</summary>
+    </bug>
+    <bug>
+      <id>321894</id>
+      <summary>vorbisenc doesn't compile</summary>
+    </bug>
+    <bug>
+      <id>322117</id>
+      <summary>Rename libgsttagedit to libgsttag</summary>
+    </bug>
   </bugs>
 
 </release>
