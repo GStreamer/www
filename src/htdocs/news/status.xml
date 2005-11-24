@@ -1266,4 +1266,323 @@ it there together. Peace.
 </p>
     </content>
   </item>
+  <item>
+    <title>GStreamer status, 24 November 2005</title>
+    <date>2005-11-24 15:27</date>
+    <content>
+<p>
+Fala hackers,
+</p>
+
+<p>
+E ai? GStreamer rages on, stealing our days and nights. One release
+down, one to go, and then the oh ten oh. Catch the audiotestsrc sound
+while we break the week down yo.
+</p>
+
+
+<h3>
+Kicking Ass And Taking Names
+</h3>
+
+<p>
+The amount of hacking done in the last 10 days on GStreamer has been
+astounding. If concentrated and properly channeled, it could power the
+island nation of Australia for 3 full weeks. Intense is the word.
+</p>
+
+
+<h3>
+Interesting Additions
+</h3>
+
+<p>
+Jan Schmidt is not only a hacker's hacker, but he works hard too. Many
+people have thought that framerate in GStreamer should be expressed as a
+fraction, but only Jan actually took the time to sit down, add the
+needed core functionality, *and* change all of the plugins (with some
+help from Mike Smith).
+</p>
+
+<p>
+API-wise, the core now supports fraction ranges (<tt>'framerate=(fraction)[2/3,
+17/4]'</tt>), including range intersections and unions, as well as some new
+convenience functions for dealing with fractions in caps and structures.
+</p>
+
+<p>
+Another longstanding wishlist item was finally completed last week as we
+implemented a framework for synchronizing multiple clocks. Whenever you
+capture from or output to multiple devices, there are different clocks
+at work -- one provided by each hardware device, and possibly a
+different one for the pipeline as a whole.
+</p>
+
+<p>
+In this situation, to ensure that buffer timestamps are relative to the
+same clock, one clock (the <i>master</i>) needs to provide the definitive
+time, and the other ones (the <i>slaves</i>) try to match their time to the
+master. This enables the possibility of synchronized capture from
+multiple sound cards, among other things.
+</p>
+
+<p>
+Interestingly enough the same framework can be used to syncronize clocks
+over the network. A GstClock running on one machine can now export its
+time over the network [0], allowing specialized GstNetClientClock [2]
+instances on other machines to slave their clocks it. Most excellent.
+These network clocking components are part of a new GStreamer core
+package, found in the gst/net directory of GStreamer core, called
+gstreamer-net. This package has its own library, its own headers, and
+its own pkg-config information, so that you can link it in to your
+application only if you need it.
+</p>
+
+<p>
+[0] http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstNetTimeProvider.html
+<br />
+[1] http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstNetClientClock.html
+</p>
+
+
+<h3>
+API Freeze Breakage
+</h3>
+
+<p>
+As everyone is I'm sure aware, our schedule [2] specified that API
+changes filed in bugzilla were to be applied for our latest release,
+0.9.6. Work started on merging in these changes on Saturday, but did not
+finish until Wednesday, almost 900 lines of ChangeLog later. Most of the
+changes can be seen on the bugs that blocked #319388 [3].
+</p>
+
+<p>
+Application authors will note that framerates for video are now
+fractions; thus any caps filters should be updated. Note that integers
+also parse as fractions, so <tt>'framerate=(fraction)25'</tt> should work.
+</p>
+
+<p>
+Also be aware that the tag setter interfaces changed so that the verb
+stem of the function name is more descriptive, e.g. gst_tag_setter_merge
+changed to gst_tag_setter_merge_tags. There is a script to automate
+these updates, run as:
+</p>
+
+<pre>
+$ find myprojdir -name '*.[ch]' -exec gstreamer/scripts/update-funcnames {}\;
+</pre>
+
+<p>
+Plugin developers will find the update-macros script in the same
+directory useful for automatically renaming some macros that changed.
+gst_caps_structure_fixate_* was renamed to gst_structure_fixate_*, and
+value arrays should now only be accessed via the gst_value_array API and
+not the gst_value_list API.
+</p>
+
+<p>
+Plugin authors should also note that it is no longer necessary to take
+the stream lock in event functions; any instances of GST_STREAM_LOCK or
+GST_STREAM_UNLOCK should probably be removed unless they are part of a
+source pad's seek implementation. Ask on the channel if you need more
+help.
+</p>
+
+<p>
+Finally, the '0.9' major-minor number will change to '0.10' starting
+with the next GStreamer release. Anyone who makes applications or
+plugins with GStreamer should look at the migration mail [4].
+</p>
+
+<p>
+[2] http://article.gmane.org/gmane.comp.video.gstreamer.devel/14038
+<br />
+[3] http://bugzilla.gnome.org/showdependencytree.cgi?id=319388
+<br />
+[4] http://article.gmane.org/gmane.comp.video.gstreamer.devel/14251
+</p>
+
+
+<h3>
+Tick Tick Tick
+</h3>
+
+<p>
+There are 11 days left until the stable release of GStreamer 0.10.0.
+Woot! Note that we're pushing the 0.9.7 release forward by one day.
+</p>
+
+<center>
+<table width="50%">
+<tr><td>29 November</td><td>0.9.7 (the 0.10.0 prerelease)</td></tr>
+<tr><td>05 December</td><td>0.10.0</td></tr>
+</table>
+</center>
+
+
+<h3>
+Plums In The Icebox
+</h3>
+
+<p>
+Aside from the stable-cleaning involved in updating the plugins for the
+API renames and fractional framerates, we did manage to hack in some
+more substantial changes.
+</p>
+
+<p>
+Authors of video players will be interested in these notes on the XOverlay
+interface by Julien Moutte:
+</p>
+
+<blockquote>
+<p>
+    XOverlay now only focuses on providing a way to set your own window
+    on or get the generated window from the video sink element. It also
+    provides a way to force the video sink to expose the latest frame to
+    handle expose events while being PAUSED. The desired-size features
+    are gone because you are supposed to get that in another way.
+</p>
+</blockquote>
+
+<p>
+Thanks, Julien.
+</p>
+
+<ul>
+<li>
+  base: audioclock supports master/slave operation, sinesrc removed in
+        favor of audiotestsrc, xoverlay interface changes, xvimagesink
+        handles aspect ratio/navigation/expose in PAUSED, vorbisenc
+        bugfixes, ximagesink doesn't flicker any more and can keep
+        aspect ratio, updates for the new segment helper API, lots of
+        pad template leaks fixed, baseaudiosink bugfixes,
+        oggmux/vorbisenc leaks plugged
+</li>
+
+<li>
+  good: Julien "video hero" Moutte ported videofilter ported to use
+        basetransform and updated the effectv, videoflip, and
+        navigationtest plugins, goom got a bugfix, cutter ported,
+        dv1394src and udpsrc now properly handle URIs, wavenc fixes,
+        speex rtp elements added, avidemux bugfixes.
+</li>
+
+<li>
+   bad: initial port of musepackdec, tremor vorbis decoder can operate
+        in streaming mode
+</li>
+
+<li>
+  ugly: Better seeking in mad, mpeg2dec modernization, mpegstream plugin
+        ported by Joser Zlomek.
+</li>
+</ul>
+
+
+<h3>
+Digits
+</h3>
+
+<center>
+<table width="50%">
+<tr><td>Core files changed this week</td><td>174</td></tr>
+<tr><td>Lines added this week</td><td>8236</td></tr>
+<tr><td>Lines removed</td><td>3214</td></tr>
+<tr><td>New change in core value according to sloccount(1)</td><td>+$148,554.69 AUD</td></tr>
+<tr><td>Total number of GStreamer bugs as of today</td><td>206</td></tr>
+<tr><td>Number opened in the last week</td><td>+32</td></tr>
+<tr><td>Number closed in the last week</td><td>-68</td></tr>
+<tr><td>Net change</td><td>-36</td></tr>
+<tr><td>Rank among most buggy projects hosted in gnome bugzilla</td><td>10</td></tr>
+</table>
+</center>
+
+<p>
+Fully 4 of top 15 bug closers are hacking GStreamer -- wingo, __tim,
+msmith, and bilboed. With 68 bugs closed this week [5], we are really
+starting to take a bite out of Bugzilla. Let's keep it up!
+</p>
+
+<p>
+[5] http://tinyurl.com/8v3rw
+</p>
+
+
+<h3>
+Current Releases
+</h3>
+
+<h4>Latest development versions</h4>
+
+<p>
+0.9.6 of all of the development modules was released yesterday, the
+24th. Barring emergencies, the API and ABI is now frozen.
+</p>
+
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.9.6</td></tr>
+<tr><td>gst-plugins-base</td><td>0.9.6</td></tr>
+<tr><td>gst-plugins-good</td><td>0.9.6</td></tr>
+<tr><td>gst-plugins-bad</td><td>0.9.6</td></tr>
+<tr><td>gst-plugins-ugly</td><td>0.9.6</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.9.6</td></tr>
+<tr><td>gst-python</td><td>0.9.6</td></tr>
+</table>
+</center>
+
+<h4>Latest stable versions</h4>
+
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.8.11</td></tr>
+<tr><td>gst-plugins</td><td>0.8.11</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.8.7</td></tr>
+<tr><td>gst-python</td><td>0.8.2</td></tr>
+</table>
+</center>
+
+
+<h3>
+Featured Application: Muine
+</h3>
+
+<p>
+Christian Vander Schaller comes down from the mountain, bringing us
+these tablets of truth.
+</p>
+
+<blockquote>
+<p>
+    This week we spotlight the Muine Music player created by Jorn
+    Baayen. Muine is a Music player written in C#. Its tries to take a
+    different approach with its user interface than iTunes or WinAmp,
+    unlike most other players out today. The organization is organized
+    around albums and is kept small and efficient. Thanks to the work of
+    Iain Holmes there is even a patch porting Muine to GStreamer
+    0.9/0.10 available [6]. Check out Muine at:
+</p>
+
+<p>
+    http://muine.gooeylinux.org/
+</p>
+</blockquote>
+
+<p>
+[6] http://mail.gnome.org/archives/muine-list/2005-November/msg00016.html
+    Iain notes this patch is preliminary and might molest the pooch.
+</p>
+
+
+<p>
+These days with 0.10 on the way it's time to stop hacking libraries and
+start making applications people love to use. Take your old ideas down
+from the shelf, dust them off with something new, and let's make 2006
+the year of GStreamer sound and video.
+</p>
+    </content>
+  </item>
 </status>
