@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>My Dog Has No Nose</name>
+  <version>0.9.7</version>
+
+  <intro>
+<p>
+The GStreamer team is petrified to announce a new release
+in the 0.9.x development series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.9.x series is a development series and not recommended for end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+<b>
+This release is a pre-release for the new 0.10 stable series.
+</b>
+The major/minor has been bumped to 0.10 - update your pkg-config magic if
+you're developing applications..
+</p>
+<p>
+The main focus of the 0.9 series is to make GStreamer threadsafe.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+
+    <feature>bumped major/minor to 0.10</feature>
+    <feature>API cleanup</feature>
+    <feature>PluginFeature and TypeFind leak fixes</feature>
+    <feature>cleaned up source tree</feature>
+    <feature>added plugin documentation for core elements</feature>
+    <feature>fixes for stripped core</feature>
+  </features>
+
+  <applications>
+<p>
+At this point, ports of existing applications to 0.9 are still experimental.
+A patch for Totem is maintained at
+<A href="http://bugzilla.gnome.org/show_bug.cgi?id=313086">
+http://bugzilla.gnome.org/show_bug.cgi?id=313086</A>.
+A patch for Rhythmbox is maintained at
+<A href="http://bugzilla.gnome.org/show_bug.cgi?id=309609">
+http://bugzilla.gnome.org/show_bug.cgi?id=309609</A>.
+Jamboree has a branch with the tag "jamboree-gst-0.9" that works against
+GStreamer 0.9.
+Flumotion has been mostly ported to 0.9 as well.
+</p>
+  </applications>
+
+          <contributors>
+	<person></person>
+	<person>Andy Wingo</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Michael Smith</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>320529</id>
+      <summary>[API] gst_event_new_segment mentions &quot; stream_time &quot; as an ...</summary>
+    </bug>
+    <bug>
+      <id>321917</id>
+      <summary>quicktime with two video tracks and extra foo, makes tote...</summary>
+    </bug>
+    <bug>
+      <id>322257</id>
+      <summary>Fix gstnet library name</summary>
+    </bug>
+    <bug>
+      <id>322427</id>
+      <summary>gst-compprep aborts with 'double free or corruption'</summary>
+    </bug>
+    <bug>
+      <id>322429</id>
+      <summary>Filesink seeking problem</summary>
+    </bug>
+    <bug>
+      <id>322626</id>
+      <summary>Strings in gst-launch.c adn gstdebug.c are horrid</summary>
+    </bug>
+    <bug>
+      <id>322708</id>
+      <summary>gst_plugin_load_file leaks a reference to a GstPlugin</summary>
+    </bug>
+    <bug>
+      <id>322751</id>
+      <summary>gst_ghost_pad_get_target borks on pads without target</summary>
+    </bug>
+    <bug>
+      <id>322842</id>
+      <summary>GStreamer-CRITICAL in GstBaseSink and GstBaseTransform</summary>
+    </bug>
+  </bugs>
+</release>
