@@ -13,13 +13,17 @@
   <body>
 <h1>Documentation</h1>
 
+<h2>General</h2>
+
 <table width="95%" border="1" cellspacing="0" cellpadding="2">
+
 <tr>
  <th>document</th>
  <th colspan="3">HEAD</th>
 <!-- <th colspan="3">devel &gst-version-devel;</th> -->
  <th colspan="3">stable &gst-version-stable;</th>
 </tr>
+
 <tr>
  <td>Application Development Manual (Read this first)</td>
  <td><a href="&site;/data/doc/gstreamer/head/manual/html/index.html">HTML</a></td>
@@ -44,11 +48,6 @@
 </tr>
 
 <tr>
- <td>Overview of all Plug-ins</td>
- <td><a href="plugins.html">HTML</a></td>
- <td colspan="3">&#160;</td>
-</tr>
-<tr>
  <td>Plugin Writer's Guide</td>
  <td><a href="&site;/data/doc/gstreamer/head/pwg/html/index.html">HTML</a></td>
  <td><a href="&site;/data/doc/gstreamer/head/pwg/pwg.ps">PostScript</a></td>
@@ -63,16 +62,44 @@
  <td><a href="&site;/data/doc/gstreamer/stable/pwg/pwg.pdf">PDF</a></td>
 </tr>
 <tr>
- <td>API Reference</td>
+ <td>Core Reference</td>
  <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gstreamer/html/">HTML</a></td>
 <!-- <td colspan="3"><a href="&site;/data/doc/gstreamer/devel/gstreamer/html/">HTML</a></td> -->
  <td colspan="3"><a href="&site;/data/doc/gstreamer/stable/gstreamer/html/">HTML</a></td>
 </tr>
+
 <tr>
- <td>Extension Library API Reference</td>
+ <td>Core Libraries Reference</td>
  <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gstreamer-libs/html/">HTML</a></td>
 <!-- <td colspan="3"><a href="&site;/data/doc/gstreamer/devel/gstreamer-libs/html/">HTML</a></td> -->
  <td colspan="3"><a href="&site;/data/doc/gstreamer/stable/gstreamer-libs/html/">HTML</a></td>
+</tr>
+
+<tr>
+ <td>GStreamer Base Plugins Libraries Reference</td>
+ <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gst-plugins-base-libs/html/">HTML</a></td>
+<!-- <td colspan="3"><a href="&site;/data/doc/gstreamer/devel/gstreamer-libs/html/">HTML</a></td> -->
+</tr>
+
+</table>
+
+<h2>Plugins</h2>
+
+<table width="95%" border="1" cellspacing="0" cellpadding="2">
+
+<tr>
+ <th>document</th>
+ <th colspan="3">HEAD</th>
+<!-- <th colspan="3">devel &gst-version-devel;</th> -->
+<!--
+ <th colspan="3">stable &gst-version-stable;</th>
+-->
+</tr>
+
+<tr>
+ <td>Overview of all Plug-ins</td>
+ <td><a href="plugins.html">HTML</a></td>
+ <td colspan="3">&#160;</td>
 </tr>
 
 <tr>

@@ -1,5 +1,10 @@
 2005-12-03  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/htdocs/documentation/index.xml:
+	  separate plugins and other docs
+
+2005-12-03  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/documentation/Makefile.am:
 	* src/htdocs/documentation/index.xml:
 	  add plugin docs from core and bad
