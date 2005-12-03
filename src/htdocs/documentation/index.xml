@@ -76,6 +76,11 @@
 </tr>
 
 <tr>
+ <td>GStreamer Core Plugins Reference</td>
+ <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gstreamer-plugins/html/">HTML</a></td>
+</tr>
+
+<tr>
  <td>GStreamer Base Plugins Reference</td>
  <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gst-plugins-base-plugins/html/">HTML</a></td>
 </tr>
@@ -87,6 +92,10 @@
 <tr>
  <td>GStreamer Ugly Plugins Reference</td>
  <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gst-plugins-ugly-plugins/html/">HTML</a></td>
+</tr>
+<tr>
+ <td>GStreamer Bad Plugins Reference</td>
+ <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/">HTML</a></td>
 </tr>
 </table>
 

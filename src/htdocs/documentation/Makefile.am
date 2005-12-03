@@ -1,7 +1,7 @@
 built_pages = index.html licensing.html rtp.html plugins.html splitup.html
 
 plugins.xml:
-	for m in gst-plugins-base gst-plugins-good gst-plugins-ugly; do \
+	for m in gstreamer gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad; do \
 	  cvs -d:pserver:anonymous@cvs.freedesktop.org:/cvs/gstreamer \
 	  co -d $$m $$m/docs/plugins/inspect; \
 	done
