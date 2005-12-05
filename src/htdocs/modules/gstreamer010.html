@@ -76,6 +76,21 @@ Also, the Python bindings for GStreamer make the whole development cycle much sh
 <p>
 &quot;Totem users can look forward to a whole range of new features that will make totem much more pleasant to use: seeking in video files will be instantaneous so that the video is flashing by as the seek slider is being moved, pause and resume will take immediate effect as well, and the graphical user interface will no longer block when it takes a bit longer to open a media file or stream. Even though the 0.10 back-end is currently still missing a few features that the 0.8 back-end supports, we plan to have it at least feature equivalent in time for the next major GNOME release.&quot;
 </p>
+<p>
+<h3>Michael Dominic, lead developer of <a href="http://www.diva-project.org">Diva</a> video editor</h3>
+<p>
+&quot;We started developing Diva for GStreamer 0.8 which always felt more like
+an advanced playback engine than a complete multimedia framework. This
+is no longer true with 0.10. This release has new design principles
+meant specifically to aid the non-linear, advanced processing
+applications that deal with many sources at once. Following the good
+design rules, Gst 0.10 architecture has not been deepened, yet it has
+been widened -- allowing the developer to control more aspects of the
+actual dataflow.</p>
+<p>
+All of our problems with 0.8 has been solved in 0.10. We're now
+finishing a new, 0.10-based engine that will power Diva.&quot;</p>
+
 <h3>Rob Taylor, lead designer of the <a href="http://farsight.sf.net">Farsight audio/video conferencing framework</a></h3>
 <p>
 &quot;Using GStreamer 0.10 we've been able to build multithreaded pipelines to simultaneously send and receive RTP, complete with RTCP control. We can dynamically switch codecs on the fly, smooth jitter and correct clock drift. The threading ability of 0.10 is an absolute must for any high-fidelity real-time media streaming. There are also a lot of features in GStreamer 0.10 that are a big help, for example the ability to add extra data to GstBuffers means we can transport information like the origin of the packet along with its data and with GstBus we now have a thread-independent way of allowing application level communication with a running pipeline. The master-slave clocking new in 0.10 will mean that we will be able to automagically correct clock drift, including re-sampling for perfect audio fidelity!&quot;
@@ -84,7 +99,14 @@ Also, the Python bindings for GStreamer make the whole development cycle much sh
 <p>
 &quot;One of the most directly visible improvements for us is the fact that the scheduling model and element state model has been cleaned up and fixed. In practice, this means we can interrupt elements when problems occur, clean up pipelines correctly, replug them, all without having our processes lock up and break the whole media flow. But overall, the reworked design is a lot clearer conceptually, and the amount of quality control added with unit testing, continuous build integration and API documentation is stunning.&quot;
 </p>
-
+<p>
+<h3>Milosz Derezynski, maintainer of <a href="http://beep-media-player.org/index.php/BMPx_Homepage">BMPx</a> music player</h3>
+<p>
+&quot;GStreamer 0.10 could be the first serious coercion point of Linux multimedia as a lot of issues in regard of using it as a backend for media players have been resolved, and we will be porting our codebase to use GStreamer instead of the current Xine auxilliary backend which we've been using during the GST 0.9 development stage.
+<p>
+</p>
+Another main focus of our application is to provide an extensive remote interface using DBus, and GstBus which is new to 0.10 makes it much easier to create an application-specific event pipline which consists of internal core events, UI events, playback backend events, all together marshaled and piped into the remote interface. This proved much more complex with GST 0.8. All in all, we're looking forward to having our player being based on GStreamer 0.10&quot;
+</p>
 <h2>Free Software Projects</h2>
 <p>
 GStreamer could not have reached this milestone without the help of our friends and partners in the Free Software community. We got these greetings for our milestone release.
