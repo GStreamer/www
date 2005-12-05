@@ -101,7 +101,7 @@ finishing a new, 0.10-based engine that will power Diva.&quot;</p>
 </p>
 <h3>Milosz Derezynski, maintainer of <a href="http://beep-media-player.org/index.php/BMPx_Homepage">BMPx</a> music player</h3>
 <p>
-&quot;GStreamer 0.10 could be the first serious coercion point of Linux multimedia as a lot of issues in regard of using it as a backend for media players have been resolved, and we will be porting our codebase to use GStreamer instead of the current Xine auxilliary backend which we've been using during the GST 0.9 development stage.
+&quot;GStreamer 0.10 could be the first serious covergence point of Linux multimedia as a lot of issues in regard of using it as a backend for media players have been resolved, and we will be porting our codebase to use GStreamer instead of the current Xine auxilliary backend which we've been using during the GST 0.9 development stage.
 <p>
 </p>
 Another main focus of our application is to provide an extensive remote interface using DBus, and GstBus which is new to 0.10 makes it much easier to create an application-specific event pipline which consists of internal core events, UI events, playback backend events, all together marshaled and piped into the remote interface. This proved much more complex with GST 0.8. All in all, we're looking forward to having our player being based on GStreamer 0.10&quot;
