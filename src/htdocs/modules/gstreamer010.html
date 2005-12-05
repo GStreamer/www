@@ -1,0 +1,128 @@
+<html>
+<head><title>GStreamer 0.10 - The Revolution</title></head>
+<body bgcolor="white">
+<h1>GStreamer 0.10 - The Revolution</h1>
+<p>
+One and a half years. A large number of developers contributing. High expectations and a lot of pressure. The wait is over, GStreamer 0.10 has arrived. GStreamer 0.10 is a huge step forward for GNU/Linux and Unix multimedia. Power, stability, functionality, deployment, industry support, GStreamer 0.10 has it all. Prepare yourself for the revolution!
+</p>
+<p>
+GStreamer is the leading multimedia framework for GNU/Linux and Unix systems and is being used in a wide range of applications such as music and video players, streaming servers, video editors, sound editors and software synthesizers.
+</p>
+<p> 
+GStreamer is a generic multimedia framework based around the concept of media pipelines linking elements, providing support for all manner of things. In GStreamer you'll find plug-ins supporting multimedia file formats, firewire and usb cameras, sound cards, Windowing systems, transcoding, networking, audio and video transformations and much more.
+</p>
+<p>
+GStreamer has been ported to and runs on GNU/Linux, Microsoft Windows and Unix systems such as Sun Solaris and MacOS X.
+</p>
+<h2>Summary of major improvements in GStreamer 0.10 :</h2>
+<p>
+<ul>
+<li><b>Thread-safe</b><br>
+Designed from the ground up to be a thread-safe framework. GStreamer 0.10 will work flawlessly on multi-CPU and hyper-threaded systems which are getting more and more commonplace these days while hiding the complexity of threads away from most application developers.</li>
+
+<li><b>Pre-rolling and seeking improvements</b><br>
+GStreamer 0.10 implements pre-rolling. This means all your media playback applications will do instant start/stop, and 'video scrubbing' when seeking, and has accurate audio/video synchronisation.</li>
+
+<li><b>RTP Suppport</b><br>
+Thanks to the help of the Farsight project, Nokia, Instituto Nokia de Tecnologia and Fluendo, GStreamer 0.10 includes great support for the RTP protocol and has payload encoders and decoders for a wide variety of formats. This means creating VoIP applications with GStreamer will now be easy.</li>
+
+<li><b>Fraction based frame rates</b><br>
+GStreamer 0.10 specifies frame rates in fractions. This allows for correct specification of commonly used frame rates and allows elimination of rounding errors which could otherwise cause loss of synchronization.</li>
+
+<li><b>No more manual registry maintenance</b><br>
+One thing that constantly caused problems for our users in earlier releases was the registry which needed to be carefully maintained by packagers and application developers. GStreamer 0.10 takes care of keeping its internal registry in sync automatically and should through that make life better for many of our users.</li>
+
+<li><b>Improved developer documentation</b><br>
+The community has put a lot of effort into improving the GStreamer documentation. The GStreamer core now follows a policy of not allowing API additions without the new API being fully documented. All GStreamer plug-ins also generate documentation now, making it easier for developers and users to see what kind of plug-ins are available and what the plug-ins are capable of. There are also a wide range of documents available now which explain the overall design of the various GStreamer sub-modules.</li>
+
+<li><b>Better performance and smaller overhead</b><br>
+The GStreamer framework now has less overhead and higher performance than 0.8. Some benchmarks now show it running twice as fast. These speedups are especially an advantage for the use of GStreamer in embedded systems.</li>
+
+<li><b>Improvements in clock handling</b><br>
+Our new master/slave clock implementation allows for network clocks which will ensure, when implemented in your application, that even if you have multiple devices spread out on your network running GStreamer-based applications, they will be playing or recording fully synchronized with each other. Our new clock selection algorithms makes sure the clocks of live sources are preferred over the clocks of sink elements, ensuring good results when decoding RTP streams, for instance.</li>
+
+<li><b>Base classes</b><br>
+GStreamer 0.10 provides a set of element base classes which implement the common functionality of sinks, sources and transforms. They enable both easier plugin development and highly consistent behavior between plug-ins of the same type.</li>
+
+<li><b>New controller subsystem</b><br>
+GstController takes over from the DParams infrastructure of GStreamer 0.8. GstController provides timed parameter changes synchronised with the data stream. This means that having your applications do timed parameter adjustments on elements is easier than ever, for instance timing the crossfading of two audio or two video tracks.</li>
+</ul> 
+</p>
+<h2>Developer testimonials</h2>
+<p> 
+We asked some application developers who already have taken a look at GStreamer 0.10 and started porting their applications over to it what they think. And here is what they say:
+</p>
+<p>
+<h3>Stefan Kost, project lead of <a href="http://www.buzztard.org/index.php/Main_Page">Buzztard music composer</a></h3>
+<p>
+&quot;GStreamer 0.10 is really a big step forward for those of us writing applications like Buzztard enabling quick development of new effects and not having to worry about handling more mundane stuff like support for all manner of audio systems on the various platforms where Buzztard might be used. The improved documentation in 0.10 is also a big boon, making it much easier to get new contributors to Buzztard started on actually contributing. Looking forward to continue working with the rest of the GStreamer community on making GStreamer the best multimedia framework possible.&quot;
+</p>
+<h3>Aaron Bockover, maintainer of <a href="http://banshee-project.org/Main_Page">Banshee music player</a></h3>
+<p>
+&quot;Banshee consumes the GStreamer APIs in three primary areas: for basic audio playback, stream-to-stream on-the-fly transcoding, and CD-ripping. With the switch to GStreamer 0.10, the amount of effort required for these tasks has been cut in half, and the result is a much safer, simpler, more efficient codebase. The new threading system in 0.10 removes this burden from Banshee and allows GStreamer to optimize its efforts where Banshee couldn't. The new message bus in 0.10 greatly reduces the complexity of handling events that occur when dealing with multimedia, especially considering the events are thread-safe, removing the burden of proxying messages to the main thread when necessary.&quot;
+</p>
+<h3>Edward Hervey, maintainer of <a href="http://pitivi.sf.net">Pitivi video editor</a></h3>
+<p>
+&quot;Non-linear multimedia editors require a lot from a multimedia framework. It's not your common 'set-up pipeline, set to play' case. With the latest improvements in GStreamer 0.10 , it is now possible to scrub through medias VERY quickly, to modify the pipeline during playback, ... and all of that without any bad surprises happening all of a sudden. The possibilities are there to go even further than before, and in a much easier way for application or plugin developers.
+</p>
+<p>
+Also, the Python bindings for GStreamer make the whole development cycle much shorter for high-level applications. It allows to concentrate on the design of your application and the bindings will make sure that the GStreamer API is used correctly. If you've always dreamt of making a multimedia application, or have really good multimedia handling in your existing application, Use GStreamer 0.10 ! It's stable, it's slick, it's fast... and it's definitely fun :)&quot;
+</p>
+<h3>Mark Kretschmann, project lead of <a href="http://amarok.kde.org/">Amarok music player</a></h3>
+<p>
+&quot;I am looking forward to porting Amarok over to GStreamer 0.10. Many of the problems our users experienced with the 0.8 version seem to be addressed in GStreamer 0.10, especially the responsiveness issues we faced. So to make it short, GStreamer 0.10 is gonna be a blast, I'm totally into it!&quot;
+</p>
+<h3>Tim M&#252;ller, maintainer of GStreamer 0.10 port of <a href="http://www.gnome.org/projects/totem">Totem video player</a></h3>
+<p>
+&quot;Totem users can look forward to a whole range of new features that will make totem much more pleasant to use: seeking in video files will be instantaneous so that the video is flashing by as the seek slider is being moved, pause and resume will take immediate effect as well, and the graphical user interface will no longer block when it takes a bit longer to open a media file or stream. Even though the 0.10 back-end is currently still missing a few features that the 0.8 back-end supports, we plan to have it at least feature equivalent in time for the next major GNOME release.&quot;
+</p>
+<h3>Rob Taylor, lead designer of the <a href="http://farsight.sf.net">Farsight audio/video conferencing framework</a></h3>
+<p>
+&quot;Using GStreamer 0.10 we've been able to build multithreaded pipelines to simultaneously send and receive RTP, complete with RTCP control. We can dynamically switch codecs on the fly, smooth jitter and correct clock drift. The threading ability of 0.10 is an absolute must for any high-fidelity real-time media streaming. There are also a lot of features in GStreamer 0.10 that are a big help, for example the ability to add extra data to GstBuffers means we can transport information like the origin of the packet along with its data and with GstBus we now have a thread-independent way of allowing application level communication with a running pipeline. The master-slave clocking new in 0.10 will mean that we will be able to automagically correct clock drift, including re-sampling for perfect audio fidelity!&quot;
+</p>
+<h3>Thomas Vander Stichele, project lead on <a href="http://www.flumotion.net">Flumotion Streaming Server</a></h3>
+<p>
+&quot;One of the most directly visible improvements for us is the fact that the scheduling model and element state model has been cleaned up and fixed. In practice, this means we can interrupt elements when problems occur, clean up pipelines correctly, replug them, all without having our processes lock up and break the whole media flow. But overall, the reworked design is a lot clearer conceptually, and the amount of quality control added with unit testing, continuous build integration and API documentation is stunning.&quot;
+</p>
+
+<h2>Free Software Projects</h2>
+<p>
+GStreamer could not have reached this milestone without the help of our friends and partners in the Free Software community. We got these greetings for our milestone release.
+</p>
+<p>
+&quot;Multimedia has been a difficult problem on the Linux desktop. The GStreamer team are doing the hard work to support free standards while also allowing the Linux desktop to legally use proprietary codecs for legacy media, keeping everybody happy and making multimedia just work. Their success is our success.&quot;, <b>Murray Cumming, <a href="http://www.gnome.org">GNOME</a> Foundation board member</b>.</p>
+<p>
+&quot;Multimedia is a central theme for desktop computing, so making meaningful strides towards open source media solutions that provide what application developers as well as users need is critical. Recognizing how non-trivial software that addresses this problem space in a portable and open manner is, and given that several KDE applications provide GStreamer support already today, we are happy to see the milestones that are being met by the GStreamer project. The future of multimedia in Open Source just keeps looking better and better. Congratulations on a successful release!&quot;,<b>Aaron J. Seigo, <a href="http://www.kde.org">KDE</a> spokesperson</b>.</p>
+<p>
+&quot;We're very happy to see the hard work of the gstreamer developers 
+coming to fruition in this new major release. The improvements in
+capability and performance we've seen during development have been
+very impressive and we're looking forward to their deployment.
+</p>
+<p>
+groundWe at Xiph are especially happy to see the new set of plugin packages, 
+distinguished by license and shipping a base set of absolutely free 
+codecs as part of the system. This is a sign of maturity in Open 
+Source multimedia and a great step forward for the Free Desktop.&quot;,
+<b>Ralph Giles, <a href="http://wwwXiph.org">Xiph.org</a></b>.
+</p>
+
+<h2>Corporate backers</h2>
+<p>
+The GStreamer community would also like to express its gratitude to our corporate sponsors Fluendo and Nokia who have put a lot of resources into this releases and whose endorsement of GStreamer means a lot for increasing the deployment of GStreamer.
+</p>
+<h3><a href="http://www.fluendo.com">Fluendo</a></h3>
+<p>
+&quot;GStreamer is the foundation on which we build our business and GStreamer 0.10 will enable us to move forward with all our offerings&quot; says Fluendo CEO Julien Moutte. &quot;We are very happy to have been able to participate in the development of GStreamer 0.10 and would also like to thank the community for being a pleasure to work with during this process.&quot;
+</p>
+<h3><a href="http://www.nokia.com">Nokia</a></h3>
+<p>
+&quot;GStreamer 0.10 will give us new opportunities to innovate and drive our product development forward faster in the Multimedia/VoIP area. We are most grateful to the GStreamer community for its continued effort.&quot; says Makoto Sugano, Engineering Manager - Nokia Multimedia
+</p>
+<center>
+<p>
+For more information about GStreamer and GStreamer applications please visit:
+</p>
+<font size="+5"><a href="http://gstreamer.freedesktop.org">gstreamer.freedesktop.org</a></font></center>
+</body>
+</html>
