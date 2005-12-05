@@ -7,18 +7,20 @@
   <version></version>
 
   <intro>
+
 <p>
-The GStreamer team is petrified to announce a new release
-in the 0.9.x development series of the
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
 core of the GStreamer streaming media framework.
 </p>
 <p>
-The 0.9.x series is a development series and not recommended for end users.
+The 0.10.x series is a stable series targeted at end users.
 It is not API or ABI compatible with the stable 0.8.x series.
 It is, however, parallel installable with the 0.8.x series.
 </p>
 <p>
-The main focus of the 0.9 series is to make GStreamer threadsafe.
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enchancements.
 </p>
 <p>
 This module, gstreamer, only contains core functionality.
@@ -50,16 +52,13 @@ For actual media playback, you will need other modules.
 
   <applications>
 <p>
-At this point, ports of existing applications to 0.9 are still experimental.
-A patch for Totem is maintained at
-<A href="http://bugzilla.gnome.org/show_bug.cgi?id=313086">
-http://bugzilla.gnome.org/show_bug.cgi?id=313086</A>.
+At this point, ports of existing applications to 0.10 are still experimental.
+Totem HEAD has a configure option to build the 0.10 backend.
 A patch for Rhythmbox is maintained at
 <A href="http://bugzilla.gnome.org/show_bug.cgi?id=309609">
 http://bugzilla.gnome.org/show_bug.cgi?id=309609</A>.
-Jamboree has a branch with the tag "jamboree-gst-0.9" that works against
-GStreamer 0.9.
-Flumotion has been mostly ported to 0.9 as well.
+Jamboree builds against GStreamer 0.10.
+Flumotion has been ported to 0.10 as well.
 </p>
   </applications>
 
