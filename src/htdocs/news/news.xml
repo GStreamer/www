@@ -2104,7 +2104,10 @@ or download tarballs for
 <a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.0.tar.bz2">gst-plugins-ugly</a>,
 <a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.0.tar.bz2">gst-plugins-bad</a>,
 <a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.0.tar.bz2">gst-ffmpeg</a>,
-<a href="&site;/src/gst-python/gst-python-0.10.0.tar.bz2">gst-python</a>,
+<a href="&site;/src/gst-python/gst-python-0.10.0.tar.bz2">gst-python</a>
+</p>
+<p>
+We also have a special <a href="http://gstreamer.freedesktop.org/documentation/gstreamer010.html">release announcement for GStreamer 0.10</a>. Check it out! 
 </p>
     </content>
   </item>
