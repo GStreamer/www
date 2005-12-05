@@ -2067,5 +2067,47 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2005-12-05 18:59</date>
+    <title>GStreamer 0.10.0 stable release</title>
+    <content>
+
+<p>
+The GStreamer team is proud to announce the first release of the new GStreamer
+stable release series.
+7 modules have been released: GStreamer, GStreamer Base Plug-ins,
+GStreamer Good Plug-ins, GStreamer Ugly Plug-ins, 
+GStreamer Bad Plug-ins, GStreamer FFmpeg Plug-ins, and
+GStreamer Python Bindings.
+</p>
+
+<p>
+<b>
+This release comes close to 18 months after the 0.8.0 release.  It's been
+a fun ride and we thank you all.  Hop on board for the next leg.
+</b>
+</p>
+
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.0.html">gstreamer</a>,
+<a href="&site;/releases/gst-plugins-base/0.10.0.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/0.10.0.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/0.10.0.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/0.10.0.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-ffmpeg/0.10.0.html">gst-ffmpeg</a>,
+<a href="&site;/releases/gst-python/0.10.0.html">gst-python</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.0.tar.bz2">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.0.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.0.tar.bz2">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.0.tar.bz2">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.0.tar.bz2">gst-plugins-bad</a>,
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.0.tar.bz2">gst-ffmpeg</a>,
+<a href="&site;/src/gst-python/gst-python-0.10.0.tar.bz2">gst-python</a>,
+</p>
+    </content>
+  </item>
+
 
 </news>

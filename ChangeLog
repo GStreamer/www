@@ -1,3 +1,21 @@
+2005-12-05  Thomas Vander Stichele  <thomas (at) apestaart (dot) org>
+
+	* src/htdocs/releases/gst-ffmpeg/0.10.0.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	* src/htdocs/releases/gst-plugins-bad/0.10.0.xml:
+	* src/htdocs/releases/gst-plugins-bad/Makefile.am:
+	* src/htdocs/releases/gst-plugins-base/0.10.0.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gst-plugins-good/0.10.0.xml:
+	* src/htdocs/releases/gst-plugins-good/Makefile.am:
+	* src/htdocs/releases/gst-plugins-ugly/0.10.0.xml:
+	* src/htdocs/releases/gst-plugins-ugly/Makefile.am:
+	* src/htdocs/releases/gst-python/0.10.0.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.0.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	  releasing 0.10.0
+
 2005-12-03  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/documentation/index.xml:
