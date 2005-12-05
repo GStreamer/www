@@ -1,4 +1,4 @@
-built_pages = index.html licensing.html rtp.html plugins.html splitup.html
+built_pages = index.html licensing.html rtp.html plugins.html splitup.html gstreamer010.html
 
 plugins.xml:
 	for m in gstreamer gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad; do \
