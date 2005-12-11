@@ -1,3 +1,9 @@
+2005-12-11  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/bugs/bugs.xml:
+	  Add new column for the 'documentation' component; add
+	  0.10.0 and 0.10.1 milestones to all components.
+
 2005-12-05  Thomas Vander Stichele  <thomas (at) apestaart (dot) org>
 
 	* src/htdocs/releases/gst-ffmpeg/0.10.0.xml:

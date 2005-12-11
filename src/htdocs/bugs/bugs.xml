@@ -10,6 +10,8 @@
     <component>gstreamer+%28core%29</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.1</milestone>
+      <milestone>0.10.0</milestone>
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -79,6 +81,8 @@
     <component>gst-plugins-base</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.1</milestone>
+      <milestone>0.10.0</milestone>
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -93,6 +97,8 @@
     <component>gst-plugins-good</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.1</milestone>
+      <milestone>0.10.0</milestone>
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -107,6 +113,8 @@
     <component>gst-plugins-ugly</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.1</milestone>
+      <milestone>0.10.0</milestone>
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -121,6 +129,8 @@
     <component>gst-plugins-bad</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.1</milestone>
+      <milestone>0.10.0</milestone>
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -151,6 +161,8 @@
     <component>gst-python</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.1</milestone>
+      <milestone>0.10.0</milestone>
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -168,6 +180,8 @@
     <component>gst-ffmpeg</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.1</milestone>
+      <milestone>0.10.0</milestone>
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -184,5 +198,13 @@
     </milestones>
   </module>
 
+  <module id="documentation">
+    <component>documentation</component>
+    <milestones>
+      <milestone>HEAD</milestone>
+      <milestone>0.10.1</milestone>
+      <milestone>0.10.0</milestone>
+    </milestones>
+  </module>
 
 </buglists>
