@@ -1585,4 +1585,365 @@ the year of GStreamer sound and video.
 </p>
     </content>
   </item>
+  <item>
+    <title>GStreamer status, 16 December 2005</title>
+    <date>2005-12-16 17:45</date>
+    <content>
+<p>
+Mwa pendukeni oohacker yo GStreamer,
+</p>
+
+<p>
+I know it's been a long time since I rapped at ya, but we had some very
+crucial details to take care of, such as releasing a stable GStreamer.
+So amigos let's see what's been up over the past three weeks already.
+</p>
+
+
+<h3>
+A to the P to the I
+</h3>
+
+<p>
+We are most totally and definitely stable! December 5 saw the 0.10.0
+release of all modules, from core on out to python and ffmpeg. Check out
+the hyped-up release notes [0] if you haven't already.
+</p>
+
+<p>
+As the last edition of your favorite GStreamer news product was released
+two weeks before 0.10.0, there were still a number of lines of ChangeLog
+that made it into the core before we went stable. And that number is
+1360. 
+</p>
+
+<p>
+There weren't all that many features added. The identity element got a
+new property, "single-segment", that will cause it to re-stamp the
+buffers passing through it, so that e.g. a looping segment can appear to
+downstream elements as one continuous stream. This is especially useful
+if you want to encode a stream whose source is a looping file. Wim got a
+bit bored and implemented high-precision scaling of 64-bit integers.
+GstBaseTransform got an event vmethod implemented, and Jan Schmidt added
+seek support to fdsrc. Stefan added code to GstController so it could
+control enums, and Edward Hervey made the gst-launch output slightly
+less cryptic.
+</p>
+
+<p>
+API-wise, functions in gstvalue.h were changed to use GLib-style types
+only, e.g. gchar instead of char. Yes they are the same thing, but such
+is our attention to consistency that we can't bear seeing non-GLib types
+in the API. gst_pad_alloc_buffer was changed so it never sets caps, and
+a new function was added: gst_pad_alloc_buffer_and_set_caps. I bet you
+can guess what it does.
+</p>
+
+<p>
+Do take some time today to mourn the removal of bash completion support
+for gst-launch. gst-complete was a noble friend, but unmaintained, and
+required its own XML cache to be kept up-to-date via running the
+gst-compprep utility. A patch to port gst-complete to 0.10 would
+certainly be accepted, if it can work without gst-compprep, for the same
+reasons that we removed gst-register.
+</p>
+
+<p>
+As a source package, GStreamer core itself saw a lot of loving from its
+favorite consort, Thomas Vander Stichele. Directories moved around,
+--disable-gst-debug and related options now work again, the queue
+element is out of the core (finally), and the normal
+dist/distcheck/visual studio fixes were applied. Aside from all that,
+object padding was updated, leaks were plugged, and there were
+documentation updates all around.
+</p>
+
+<p>
+Also, welcome to our new translations: Bulgarian and Traditional
+Chinese. Dobre doshli! Huan yin!
+</p>
+
+<p>
+[0] http://gstreamer.freedesktop.org/documentation/gstreamer010.html
+</p>
+
+
+<h3>
+Post Oh Ten Oh
+</h3>
+
+<p>
+After a short continuation of the CVS freeze, in case a new release
+needed to be rolled out quickly, the core opened again for commits. One
+of the first was an ABI test that makes sure our structures do not
+change in size. gstparse handling of the { and } characters (which make
+GstThread bins) was removed, as GstThread is no more, and Wim fixed the
+"sync" fakesrc property. Obsolete configure.ac checks for makecontext
+were removed, and Mike Smith fixed a leak in the typefind element. Tim
+spent some time updating the manual for 0.10, and Stefan ported some of
+the old examples to the current API.
+</p>
+
+<p>
+BaseSrc finally got support for seeks, position, and queries in any
+format -- before, it only provided hooks for byte positions. The net
+time provider can be deactivated, in which state it will not reply to
+time messages. The typefind element was bugfixed some more, and Julien
+fixed threadsafety bugs in GstCollectPads.
+</p>
+
+<p>
+Other than that there wasn't anything to speak of -- a relaxed week and
+a half. This is how it should be, minor bugfixes as we concentrate on
+making applications users will enjoy using.
+</p>
+
+
+<h3>
+Seven Noses, Seven Cheeses
+</h3>
+
+<p>
+Leading up to the 0.10.0 releases, there was a lot of last-minute
+polish being applied to the plugins. Here's the changes between 23
+November and 5 December:
+</p>
+
+<ul>
+<li>
+ base: multifdsink threadsafety fixes, oggdemux made more robust,
+  audiorate respects flow returns, ximagesink, xvimagesink, and the
+  xoverlay interface polished and documented by video hero Julien,
+  decodebin got some queues, audio clock supports operating in
+  master/slave mode, playbin polishes and support for multiple audio
+  streams, rtp plugin names made more consistent, xoverlay stress test
+  added, pango plugin ported nicely and moved from -good, audioresample
+  fixed (finally!)
+</li>
+
+<li>
+ good: navigation, stride, and passthrough fixes in videoflip, quarktv
+  crasher fix, documentation added for autovideo, audioaudio, and
+  flacdec added, dvdec fixes for pixel aspect-ratio, matroska muxer
+  updates, video filters use a base class from plugins-base, event
+  support added to the navseek and progressreport debug plugins,
+  multipart muxer and demuxer ported, dvdemux seeking fixes, rtp plugin
+  renaming.
+</li>
+
+<li>
+ ugly: mpegstream work, mad gracefully handles unlinked source pads,
+  a52dec supports streams with special DVD headers, real media demuxer
+  EOS fix, id3tag removed.
+</li>
+
+<li>
+ bad: wavpack ported (no correction file support yet though), qtdemux
+  state change fixes, faad robustness fix, libmms plugin ported to 0.10
+  by Edgard
+</li>
+</ul>
+
+<p>
+After the initial rest that everyone took after 0.10.0, the bug reports
+started to pour in. Since then there have been a number of fixes that
+will come out in our next release:
+</p>
+
+<ul>
+<li>
+ base: ogm support added to the ogg plugin, playbin fixes for glib 2.6,
+  gst-launch-ext removed (it wasn't working and isn't useful), bugfixes
+  in the subtitle parser, cdparanoia ported to 0.10 (made possible by
+  basesrc changes), videorate bugfixes, plugged massive leak in
+  audioresample, audiotestsrc and videotestsrc seeking support,
+  GstPropertyProbe support added back to the alsa elements.
+</li>
+
+<li>
+ good: Memleak and crasher fixes in wavparse and avidemux, docs added
+  to multipart muxer/demuxer, flacdec bugfixes, OSS portability fixes,
+  flxdec endianness fix, fix totally ironic crash in the electric fence
+  debugging element, auparse beautification and crasher fix,
+  mastroskademux timestamping fix, videomixer capsnego fixed, RTP
+  payloader/depayloader caps fixes, speex rtp elements set clock rate
+  properly, rtsp portability fix.
+</li>
+
+<li>
+ ugly: more mpegstream work, mad query/position fixes, plug leak in
+  rmdemux
+</li>
+
+<li>
+ bad: qtdemux EOS and 64-bit fixes, swfdec ported to 0.9 by Edgard,
+  mmsh support in libmms, dtsdec, xviddec and xvidenc ported to 0.10
+  also by Edgard.
+</li>
+</ul>
+
+<h3>
+Introducing the Media Test Suite
+</h3>
+
+<p>
+Edward Hervey recently gave birth to a beautiful HTML baby. Tell us
+about your baby, Edward!
+</p>
+
+<blockquote>
+<p>
+    Fixing bugs in GStreamer plugins has always been a tedious task.
+    Sometimes fixing playback for one file breaks it for other files.
+    Testing files playback/seeking by *hand* is repetitive and no
+    developer likes it. And finally, nobody (apart maybe for the main
+    developer of a plugin) ever knows at one given point how well some
+    media formats are supported, or how well the API is implemented in
+    each plugins.
+</p>
+
+<p>
+    In order to solve all these issues, a new testsuite is born :
+    gst-media-test. It currently contains two tests : typefindtest (Can
+    we read this file and all the media streams contained within ?) and
+    playtest (does playback/seeking work properly?). The tests check
+    that complete and correct API-compliance is respected for every
+    file. HTML reports of the tests are then generated, with complete
+    debug logs, exact reasons why the test failed, backtraces if the
+    test crashed, plugins used, etc...
+</p>
+
+<p>
+    We currently run the testsuite about everyday on over 20Gbytes of
+    test files with the latest cvs version of GStreamer and the results
+    are available online [1]. Pick your bug and fix it :)
+</p>
+
+<p>
+    All buggy media files that land in the GStreamer bugzilla should
+    also be added to the list of files tested here, so users can also
+    see if the current cvs version of GStreamer solved their issue.
+</p>
+<p>
+    [1] http://core.fluendo.com/gst-media-test/
+</p>
+</blockquote>
+
+<p>
+We're all impressed, Edward. Nice work!
+</p>
+
+
+<h3>
+Um... So Like What Are We Doing And Stuff
+</h3>
+
+<p>
+It seems we've lost our direction, inasmuch as we spent the last 10
+months looking to the day of 0.10.0 and now it has passed. What now?
+</p>
+
+<p>
+So your editor sent a clandestine reporter to the GStreamer IRC channel,
+asking people that same question. Here's what they said:
+</p>
+
+<p>
+OK so they didn't say anything, so given the pressure of the story's
+deadline our clandestine reporter just left the editor with a link to a
+mailing list discussion [2] started by Thomas.
+</p>
+
+<p>
+[2] http://news.gmane.org/find-root.php?group=gmane.comp.video.gstreamer.devel&amp;article=14432
+</p>
+
+
+<h3>
+114 Gs Down
+</h3>
+
+<p>
+Thomas removed a bunch of outdated examples, which combined with his
+previous thefts is probably enough to buy a large plasma TV. Have him
+buy your drinks at the bar!
+</p>
+
+<center>
+<table width="50%">
+<tr><td>Core files changed this week</td><td>266</td></tr>
+<tr><td>Lines added this week</td><td>9303</td></tr>
+<tr><td>Lines removed</td><td>7860</td></tr>
+<tr><td>New change in core value according to sloccount(1)</td><td>-$114,303</td></tr>
+<tr><td>Total number of GStreamer bugs as of today</td><td>228</td></tr>
+<tr><td>Number opened in the last week</td><td>+12</td></tr>
+<tr><td>Number closed in the last week</td><td>-2</td></tr>
+<tr><td>Net change</td><td>+10</td></tr>
+<tr><td>Rank among most buggy projects hosted in gnome bugzilla</td><td>Tied for 8</td></tr>
+</table>
+</center>
+
+<p>
+Our bug count is shooting back up. Your editor is waiting for the new
+bugzilla to be installed before going back to looking at bugs. Of course
+that means that after Monday, there will be no excuse.
+</p>
+
+
+<h3>
+Current Releases
+</h3>
+
+<h4>Latest stable versions</h4>
+
+<p>
+No more 0.8, no more 0.9, 0.10 is the new stable series!
+</p>
+
+<center>
+<table width="50%">
+<tr><td>gstreamer</td><td>0.10.0</td></tr>
+<tr><td>gst-plugins-base</td><td>0.10.0</td></tr>
+<tr><td>gst-plugins-good</td><td>0.10.0</td></tr>
+<tr><td>gst-plugins-bad</td><td>0.10.0</td></tr>
+<tr><td>gst-plugins-ugly</td><td>0.10.0</td></tr>
+<tr><td>gst-ffmpeg</td><td>0.10.0</td></tr>
+<tr><td>gst-python</td><td>0.10.0</td></tr>
+</table>
+</center>
+
+
+<h3>
+Featured Application: bmpX
+</h3>
+
+<p>
+Christian Schaller brings us this week's featured application.
+</p>
+
+<blockquote>
+<p>
+    This weeks featured application is bmpX, a music player with a Winamp
+    and XMMS compatible user interface. The bmp project started its life
+    as a GTK+ 2 port of XMMS, but is today a fully separate project.
+    bmpX CVS has working GStreamer 0.10 support and will soon bring
+    bliss to the world among those who never fell in love with
+    iTunes-style user interfaces. A big thanks to Milosz Derezynski and
+    the rest of the bmpX team for this cool project.
+</p>
+
+<p>
+    You find more information about this project at:<br/>
+    http://beep-media-player.org/index.php/BMPx_Homepage
+</p>
+</blockquote>
+
+<p>
+Well that brings this most lengthy newsletter to a close. Everyone
+should pull out those dusty personal projects, update them for the new
+API, and give the world a nice present for the new year. Word is bond.
+Peace.
+</p>
+    </content>
+  </item>
 </status>
