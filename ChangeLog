@@ -1,3 +1,9 @@
+2005-12-18  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/bugs/bugs.xsl:
+	  Add link to list unresolved bugs that are not assigned
+	  to a real component yet (= "don't know" component).
+
 2005-12-16  Andy Wingo  <wingo@pobox.com>
 
 	* src/htdocs/news/status.xml: Dump.

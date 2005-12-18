@@ -98,6 +98,11 @@ unresolved
 </tr>
 <tr>
   <td colspan="4">
+<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=don%27t%20know&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query">All unresolved bugs not assigned to a component</a>
+  </td>
+</tr>
+<tr>
+  <td colspan="4">
 <a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=RESOLVED&amp;resolution=FIXED&amp;target_milestone=HEAD&amp;form_name=query">All fixed in HEAD bugs (need to reassign to milestones)</a>
   </td>
 </tr>
