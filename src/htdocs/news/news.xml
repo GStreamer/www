@@ -2112,5 +2112,21 @@ We also have a special <a href="http://gstreamer.freedesktop.org/documentation/g
     </content>
   </item>
 
+   <item>
+    <date>2005-12-20 13:30</date>
+    <title>GStreamer Monnkeys Audio 0.8.2 release</title>
+    <content>
+<p>
+We just released an updated Monkey's Audio plugin, updating it to work
+with latest version of the Monkey's Audio format using the mac-port library.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-monkeysaudio/0.8.2.html">gst-monkey's audio</a>
+</p>
+    </content>
+  </item>
+
+
 
 </news>
