@@ -21,7 +21,7 @@ library for this plugin.
   </intro>
   <features>
     <feature>Works with 0.8.x of GStreamer and GStreamer Plug-ins</feature>
-    <feature>Ported to use the mac-port library</feature>
+    <feature>Ported to use the <a href="http://sourceforge.net/projects/mac-port/">mac-port library</a></feature>
   </features>
 
   <contributors>
