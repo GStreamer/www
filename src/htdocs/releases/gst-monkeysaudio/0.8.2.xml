@@ -15,7 +15,7 @@ This module contains a plugin to decode files in the Monkey's Audio format,
 which typically have the .ape extension.
 </p>
 <p>
-You need the <a hrefe="http://sourceforge.net/projects/mac-port/">Mac-port</a>
+You need the <a href="http://sourceforge.net/projects/mac-port/">Mac-port</a>
 library for this plugin.
 </p>
   </intro>
