@@ -16,6 +16,30 @@ import HTMLParser
 # a sample bug line we parse for future reference:
 #<TR VALIGN=TOP ALIGN=LEFT CLASS="Nor" ><TD><A HREF="show_bug.cgi?id=78267">78267</A> <td class=severity><nobr>min</nobr></td><td class=priority><nobr>Nor</nobr></td><td class=owner><nobr>thomas@apestaart.org</nobr></td><td class=status><nobr>RESO</nobr></td><td class=resolution><nobr>FIXE</nobr></td><td class=summary>autogen.sh doesn't take --prefix and similar to configure</td></TR>
 
+# a sample bug section after olav's updating of bugzilla
+#    <td class="first-child">
+#      <a href="show_bug.cgi?id=147641">147641</a>
+#      <span style="display: none"></span>
+#    </td>
+#
+#    <td style="white-space: nowrap">nor
+#    </td>
+#    <td style="white-space: nowrap">Nor
+#    </td>
+#    <td style="white-space: nowrap">Linu
+#    </td>
+#    <td style="white-space: nowrap">GStreamer
+#    </td>
+#    <td style="white-space: nowrap">RESO
+#    </td>
+#    <td style="white-space: nowrap">FIXE
+#    </td>
+#    <td >[docs] pydoc segfaults when viewing gst package doc
+#    </td>
+#
+#  </tr>
+
+
 URL = 'http://bugzilla.gnome.org/buglist.cgi?product=%s&component=%s&target_milestone=%s'
 
 # reg = re.compile('<TR.*id=(\d+)".*summary>(.*)<\/td')
@@ -35,6 +59,8 @@ default_product = "GStreamer"
 
 TD_ID = 1
 TD_SUMMARY = 7
+# after Olav's changes, it's now number 8
+TD_SUMMARY = 8
 
 # Horrible, don't look here
 class HP(HTMLParser.HTMLParser):
@@ -51,7 +77,7 @@ class HP(HTMLParser.HTMLParser):
             self.tr = 1
             return
         # count td's
-        elif self.tr and tag == 'td':
+        elif self.tr and tag.startswith('td'):
             self.td += 1
 
     # all &gt; refs are handled through this method; append them to self.descr
@@ -66,7 +92,7 @@ class HP(HTMLParser.HTMLParser):
         if not data:
             return
         
-        #print self.td, self.tr, repr(data)
+        # print self.td, self.tr, repr(data)
 
         # clear self.descr if we're not in the correct td
         if self.td != TD_SUMMARY:

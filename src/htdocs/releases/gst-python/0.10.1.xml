@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name>Krisimas Yakanaka</name>
+  <version>0.10.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Python Bindings.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+
+    <feature>added discoverer</feature>
+    <feature>updated for core API additions</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+      <contributors>
+	<person>Andy Wingo</person>
+	<person>Edward Hervey</person>
+	<person>Martin Soto</person>
+	<person>Thomas Vander Stichele</person>
+  </contributors>
+
+
+
+  <api>
+    <additions>
+      <item>gst.extend.discoverer</item>
+      <item>wrapped gst_version()</item>
+      <item>wrapped gst_type_find_factory_get_list()</item>
+      <item>wrapped gst_mixer_options_get_values()</item>
+      <item>wrapped gst_dp_*()</item>
+      <item>wrapped gst_element_factory_get_static_pad_templates()</item>
+    </additions>
+<!--
+    <depreciations>
+    </depreciations>
+-->
+  </api>
+
+  
+
+  
+
+  <bugs>
+  </bugs>
+</release>
