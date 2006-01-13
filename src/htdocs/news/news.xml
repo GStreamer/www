@@ -2156,6 +2156,28 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2006-01-13 20:17</date>
+    <title>GStreamer Plugins Good and Ugly  0.10.1 stable release</title>
+    <content>
+
+<p>
+The GStreamer team is proud to announce a new release in the new GStreamer
+stable release series.
+2 modules have been released: GStreamer Good Plug-ins,
+and GStreamer Ugly Plug-ins.
+</p>
+
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-good/0.10.1.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/0.10.1.html">gst-plugins-ugly</a>,
+or download tarballs for
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.1.tar.bz2">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.1.tar.bz2">gst-plugins-ugly</a>.
+</p>
+    </content>
+  </item>
 
 
 </news>

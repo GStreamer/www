@@ -1,3 +1,12 @@
+2006-01-13  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-good/0.10.1.xml:
+	* src/htdocs/releases/gst-plugins-good/Makefile.am:
+	* src/htdocs/releases/gst-plugins-ugly/0.10.1.xml:
+	* src/htdocs/releases/gst-plugins-ugly/Makefile.am:
+	  releasing good and ugly 0.10.1
+
 2005-12-18  Tim-Philipp Müller  <tim at centricular dot net>
 
 	* src/htdocs/bugs/bugs.xsl:
