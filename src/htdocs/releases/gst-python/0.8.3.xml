@@ -18,13 +18,12 @@ serveral applications.
 </p>
   </intro>
   <features>
-    <feature>Introduction of a "pygst" module allowing you to require a version</feature>
     <feature>add GStreamer logging support from python</feature>
     <feature>added a gst.extend package</feature>
     <feature>added modules to do jukebox mixed and levelled playback</feature>
     <feature>memleak fixes</feature>
   </features>
-        <contributors>
+          <contributors>
 	<person>Andy Wingo</person>
 	<person>Benjamin Otte</person>
 	<person>Edward Hervey</person>
@@ -39,9 +38,12 @@ serveral applications.
 
 
 
+
   <maintainers>
     <person>Edward Hervey</person>
   </maintainers>
+
+  
 
   
 

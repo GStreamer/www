@@ -1732,7 +1732,8 @@ or download the
 </p>
     </content>
   </item>
-<item>
+
+  <item>
     <date>2005-06-21 18:38</date>
     <title>GStreamer Python 0.8.2 'Another one bites the dust'</title>
     <content>
@@ -2179,5 +2180,22 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2006-01-14 14:47</date>
+    <title>GStreamer Python 0.8.3 'Nadolig LLawen'</title>
+    <content>
+<p>
+A new better, strong, faster, cuter and in general more fantastic release of
+the GStreamer python bindings are out. Get it while its hot and juicy.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gst-python/0.8.3.html">release notes</a>
+or download the
+<a href="&site;/src/gst-python/gst-python-0.8.3.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-python/gst-python-0.8.3.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
 
 </news>
