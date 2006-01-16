@@ -2198,4 +2198,30 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2006-01-16 21:57</date>
+    <title>GStreamer Core, Base and Python 0.10.2 stable release</title>
+    <content>
+
+<p>
+The GStreamer team is proud to announce a new release in the new GStreamer
+stable release series.
+3 modules have been released: GStreamer, GStreamer Base Plug-ins,
+and GStreamer Python Bindings.
+</p>
+
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.2.html">gstreamer</a>,
+<a href="&site;/releases/gst-plugins-base/0.10.2.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-python/0.10.2.html">gst-python</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.2.tar.bz2">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.2.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gst-python/gst-python-0.10.2.tar.bz2">gst-python</a>
+</p>
+    </content>
+  </item>
+
+
 </news>
