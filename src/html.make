@@ -27,7 +27,7 @@ entities = \
 
 $(entities):
 	@echo Please make sure $(entities) exist.
-	@echo Have you read the README ?
+	@echo Have you read HACKING ?
 	@exit 1
 
 # generate html page from xml source

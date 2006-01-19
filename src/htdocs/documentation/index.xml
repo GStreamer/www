@@ -79,6 +79,7 @@
  <td>GStreamer Base Plugins Libraries Reference</td>
  <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gst-plugins-base-libs/html/">HTML</a></td>
 <!-- <td colspan="3"><a href="&site;/data/doc/gstreamer/devel/gstreamer-libs/html/">HTML</a></td> -->
+ <td colspan="3">&#160;</td>
 </tr>
 
 </table>
@@ -99,7 +100,6 @@
 <tr>
  <td>Overview of all Plug-ins</td>
  <td><a href="plugins.html">HTML</a></td>
- <td colspan="3">&#160;</td>
 </tr>
 
 <tr>

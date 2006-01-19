@@ -3,9 +3,10 @@ To hack on the GStreamer website, here's what to do:
 1) Check out the www module
 2) src/autogen.sh
 3) create src/entities by symlinking the applicable entities file
-	(normally entities.site found in htdocs)
+   (entities.site.xxx found in htdocs)
 	* entities.site.gnl is for building/running the site locally
 	* entities.site.fdo is for gstreamer freedesktop setup
+   (e.g.: cd src; ln -s ./htdocs/entities.site.fdo ./entities.site)
 4) mkdir data
 4) bin/data-get (this is not needed if you just plan on updating the generated content)
 5) make
