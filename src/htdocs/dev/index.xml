@@ -87,6 +87,12 @@ If a commit breaks a build it is announced in the <a href="irc://irc.freenode.ne
 <a href="http://build.fluendo.com:8080/">gstreamer head</a> and <a href="http://build.fluendo.com:8081/">gstreamer stable</a>.
 </p> 
 
+<H1>Automated media tests</H1>
+<p>
+We regularly run mediafile tests with GStreamer to see how we are progressing
+on filetype support and catch any regressions. You find the results of these
+<a href="http://core.fluendo.com/gst-media-test/">GStreamer media test here</a>.
+</p>
 <H1>Language Bindings</H1>
                                                                                 
 <p>The GStreamer API can be accessed from <a href="../bindings">various programming languages</a> in addition to the native C API.</p>
