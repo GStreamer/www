@@ -1,3 +1,8 @@
+2006-02-03  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* src/htdocs/entities.gst:
+	Update version numbers
+
 2006-01-19  Stefan Kost  <ensonic@users.sf.net>
 
 	* HACKING:
