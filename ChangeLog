@@ -1,4 +1,9 @@
 2006-02-03  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* src/htdocs/modules/modules.xml:
+	Enable the entities for our modules that our now stable.
+
+2006-02-03  Jan Schmidt  <thaytan@mad.scientist.com>
 	* src/htdocs/entities.gst:
 	Interesting - these are stable versions, not devel.
 

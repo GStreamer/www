@@ -52,7 +52,7 @@ A wide range of video and audio decoders, encoders, and filters are included.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <!--<stable></stable>-->
+      <stable>&gst-plugins-base-version-stable;</stable>
       <devel>&gst-plugins-base-version-devel;</devel>
     </versions>
   </module>
@@ -68,7 +68,7 @@ plug-in code, LGPL or LGPL-compatible for the supporting library).
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <!--<stable></stable>-->
+      <stable>&gst-plugins-good-version-stable;</stable>
       <devel>&gst-plugins-good-version-devel;</devel>
     </versions>
   </module>
@@ -85,7 +85,7 @@ code might be widely known to present patent problems.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <!--<stable></stable>-->
+      <stable>&gst-plugins-ugly-version-stable;</stable>
       <devel>&gst-plugins-ugly-version-devel;</devel>
     </versions>
   </module>
@@ -102,7 +102,7 @@ real live maintainer, or some actual wide use.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <!--<stable></stable>-->
+      <stable>&gst-plugins-bad-version-stable;</stable>
       <devel>&gst-plugins-bad-version-devel;</devel>
     </versions>
   </module>
