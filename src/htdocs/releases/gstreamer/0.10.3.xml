@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Like a virgin</name>
+  <version>0.10.3</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enchancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+
+    <feature>state lock redefined</feature>
+    <feature>Extensive documentation updates</feature>
+    <feature>BaseTransform reworked</feature>
+    <feature>Bus reworked; signal API added</feature>
+  </features>
+
+  <applications>
+<p>
+At this point, ports of various applications are available:
+Totem HEAD has a configure option to build the 0.10 backend,
+as does Rhythmbox.
+Jamboree builds against GStreamer 0.10.
+Flumotion has been ported to 0.10 as well.
+</p>
+  </applications>
+
+      <contributors>
+	<person>Andy Wingo</person>
+	<person>Christian Schaller</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Julien MOUTTE</person>
+	<person>Sebastien Moutte</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Torsten Schoenfeld</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>320084</id>
+      <summary>gst-launch doesn't show errors before going to PLAYING</summary>
+    </bug>
+    <bug>
+      <id>168703</id>
+      <summary>[API] Add gst_index_add_associationv() to gstindex.h</summary>
+    </bug>
+    <bug>
+      <id>324162</id>
+      <summary>[API] Add gst_buffer_make_meta_writable or similar</summary>
+    </bug>
+    <bug>
+      <id>324199</id>
+      <summary>Collectpads hangs when muxing more than two streams</summary>
+    </bug>
+    <bug>
+      <id>325490</id>
+      <summary>fdsink ported to 0.10.x</summary>
+    </bug>
+    <bug>
+      <id>327001</id>
+      <summary>API: add gst_event_replace</summary>
+    </bug>
+    <bug>
+      <id>327197</id>
+      <summary>Sound Juicer with Gst-0.10 segfaults</summary>
+    </bug>
+    <bug>
+      <id>327324</id>
+      <summary>gst-inspect-0.10 -a crashes after id3demux</summary>
+    </bug>
+    <bug>
+      <id>328491</id>
+      <summary>Sending FLUSH_START blocks in GstCollectPads</summary>
+    </bug>
+    <bug>
+      <id>328715</id>
+      <summary>tee does no handle a pad being in wrong state or not linked</summary>
+    </bug>
+    <bug>
+      <id>329069</id>
+      <summary>API: add gst_parse_bin_from_description</summary>
+    </bug>
+    <bug>
+      <id>329105</id>
+      <summary>ghostpad no setting pad chain function if target has not ...</summary>
+    </bug>
+    <bug>
+      <id>329713</id>
+      <summary>Endlessly increasing VM size with playbin using apps</summary>
+    </bug>
+  </bugs>
+</release>
