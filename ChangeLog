@@ -1,5 +1,10 @@
 2006-02-08  Jan Schmidt  <thaytan@mad.scientist.com>
 
+	* src/htdocs/news/news.xml:
+	New item for core 0.10.3
+
+2006-02-08  Jan Schmidt  <thaytan@mad.scientist.com>
+
 	* src/htdocs/entities.gst:
 	* src/htdocs/releases/gstreamer/0.10.3.xml:
 	* src/htdocs/releases/gstreamer/Makefile.am:
