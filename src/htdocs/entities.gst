@@ -1,5 +1,5 @@
 <!ENTITY gst-version-stable "0.10.3">
-<!ENTITY gst-plugins-version-stable "0.8.11">
+<!ENTITY gst-plugins-version-stable "0.8.12">
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.0">
 <!ENTITY gst-python-version-stable "0.10.2">

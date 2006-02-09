@@ -2268,4 +2268,26 @@ or download tarballs
 </p>
     </content>
   </item>
+
+  <item>
+    <date>2006-02-09 14:43</date>
+    <title>GStreamer Core 0.8.12 "Cookies" and Plugins 0.8.12 "Ravage" released</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new stable release of GStreamer
+Core and Plugins in the 0.8.x stable release series.
+</p>
+<p>
+Check out the
+<a href="&site;/releases/gstreamer/0.8.12.html">core release page</a> and the
+<a href="&site;/releases/gst-plugins/0.8.12.html">plugins release page</a>
+for details, or download the core
+<a href="&site;/src/gstreamer/gstreamer-0.8.12.tar.gz">tar.gz</a> /
+<a href="&site;/src/gstreamer/gstreamer-0.8.12.tar.bz2">tar.bz2</a>
+or the plugins
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.12.tar.gz">tar.gz</a> /
+<a href="&site;/src/gst-plugins/gst-plugins-0.8.12.tar.bz2">tar.bz2</a>
+archives.</p>
+    </content>
+  </item>
 </news>

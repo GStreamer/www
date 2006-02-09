@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins</module>
+  <module-fancy>GStreamer Plug-ins</module-fancy>
+  <name>Ravage</name>
+  <version>0.8.12</version>
+
+  <intro>
+<p>
+The GStreamer team is happy to announce a new release
+in the 0.8.x stable series of the GStreamer Plug-ins.
+</p>
+<p>
+The 0.8.x series is a stable series aimed at end users.
+It is not API or ABI compatible with the stable 0.6.x and 0.10.x series.
+It is, however, parallel installable with the 0.6.x and 0.10.x series.
+</p>
+<p>
+This module contains plugins providing media encoding and decoding,
+conversion, effects, and other elements that provide actual media
+handling functionality to the core.  You need the GStreamer core module
+to make them work.  The versions do not need to match exactly, as long
+as all of them are in the 0.8.x series.
+</p>
+<p>
+The FFmpeg-based decoder element has been moved to its own module.  If you
+want support for a lot of popular video formats, you need to install this
+module along with the GStreamer Core and Plug-ins.  An FFmpeg-based colorspace
+element has been added to the Plug-ins however.
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.6.x and 0.10.x series</feature>
+    <feature>Internationalization</feature>
+    <feature>Translations: af az ca cs da en_GB fr hu it nb nl or sq sr sv uk vizh_TW</feature>
+    <feature>mmsh:// support</feature>
+    <feature>Quicktime still-image and improved streaming support</feature>
+    <feature>Sun audio element fixes</feature>
+    <feature>ALSA reliability fixes</feature>
+    <feature>Build and stability fixes</feature>
+  </features>
+
+  <applications>
+<p>
+The GConf settings have moved to a versioned location and can now be found
+under /system/gstreamer/0.8.  Applications should use the gconf library,
+as provided by gstreamer-gconf-0.8.pc, to access the default settings.
+</p>
+  </applications>
+  <contributors>
+    <person>Akos Maroy</person>
+    <person>Arwed v. Merkatz</person>
+    <person>Benjamin Otte</person>
+    <person>Brian Cameron</person>
+    <person>Daniel Amelang</person>
+    <person>Fabrizio Gennari</person>
+    <person>Felix Riemann</person>
+    <person>Gustavo Noronha Silva</person>
+    <person>Julien MOUTTE</person>
+    <person>Luca Ognibene</person>
+    <person>Michael Smith</person>
+    <person>Michal Benes</person>
+    <person>Raphael Slinckx</person>
+    <person>Ronald S. Bultje</person>
+    <person>Steve Lhomme</person>
+    <person>Thomas Vander Stichele</person>
+    <person>Tim-Philipp Müller</person>
+    <person>Torsten Schoenfeld</person>
+    <person>Wouter Paesen</person>
+    <person>Zaheer Abbas Merali</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  <bugs>
+    <bug>
+      <id>162963</id>
+      <summary>gst-editor crash when playing pipeline with ximagsink/xvi...</summary>
+    </bug>
+    <bug>
+      <id>164176</id>
+      <summary>[jpegenc/dec] conversion bugs (wrong strides?)</summary>
+    </bug>
+    <bug>
+      <id>165964</id>
+      <summary>alsasink device detection issues</summary>
+    </bug>
+    <bug>
+      <id>168257</id>
+      <summary>[PATCH] [tcpserversink] add buffer-processed signal to tc...</summary>
+    </bug>
+    <bug>
+      <id>308663</id>
+      <summary>typefind function for smil content</summary>
+    </bug>
+    <bug>
+      <id>310747</id>
+      <summary>[ximagesrc] Segfaults when using a bpp != 32</summary>
+    </bug>
+    <bug>
+      <id>312114</id>
+      <summary>[PATCH]gnomevfssrc unneccessarily registers callbacks wit...</summary>
+    </bug>
+    <bug>
+      <id>312947</id>
+      <summary>Making single frame snapshots with the snapshot plugin is...</summary>
+    </bug>
+    <bug>
+      <id>313209</id>
+      <summary>[cdparanoia] wrong track info</summary>
+    </bug>
+    <bug>
+      <id>313812</id>
+      <summary>metadata not found in ogg files without genre</summary>
+    </bug>
+    <bug>
+      <id>314076</id>
+      <summary>Playbin segfault when switching from READY to PAUSED state</summary>
+    </bug>
+    <bug>
+      <id>314689</id>
+      <summary>alsasink cracks with some dmix configurations</summary>
+    </bug>
+    <bug>
+      <id>314771</id>
+      <summary>Xing header are detected only one time</summary>
+    </bug>
+    <bug>
+      <id>315121</id>
+      <summary>[alsasink] doesn't work unless passing hw:0</summary>
+    </bug>
+    <bug>
+      <id>315457</id>
+      <summary>[adder] reports time position improperly</summary>
+    </bug>
+    <bug>
+      <id>315550</id>
+      <summary>[typefinding] wrongly identifies non-music files as music... </summary>
+    </bug>
+    <bug>
+      <id>315868</id>
+      <summary>GST_DOC used in configure.ac not expanded correctly</summary>
+    </bug>
+    <bug>
+      <id>316000</id>
+      <summary>[Patch] fix 4 plugins with gcc 2.95</summary>
+    </bug>
+    <bug>
+      <id>316543</id>
+      <summary>cddasrc not reporting correct discid for freedb Test CD</summary>
+    </bug>
+    <bug>
+      <id>317065</id>
+      <summary>gstreamer skips/pops on some mp3 files</summary>
+    </bug>
+    <bug>
+      <id>317300</id>
+      <summary>inline functions should be static or extern</summary>
+    </bug>
+    <bug>
+      <id>317592</id>
+      <summary>gst-launch-ext doesn't support wavpack</summary>
+    </bug>
+    <bug>
+      <id>317630</id>
+      <summary>cdparanoia seems to read one sector too much</summary>
+    </bug>
+    <bug>
+      <id>317742</id>
+      <summary>[cdparanoia] mispelling in comment</summary>
+    </bug>
+    <bug>
+      <id>317774</id>
+      <summary>wavpack: segfault on files encoded with -h (lossy, lossle...</summary>
+    </bug>
+    <bug>
+      <id>318136</id>
+      <summary>[ffmpegcolorspace] RGB fixation issue (needlessly fixate...</summary>
+    </bug>
+    <bug>
+      <id>318273</id>
+      <summary>[audioscale] messed up timestamps</summary>
+    </bug>
+    <bug>
+      <id>318767</id>
+      <summary>[alsasink] choppy playback of some files</summary>
+    </bug>
+    <bug>
+      <id>319805</id>
+      <summary>Missing include in dvdreadsrc.c</summary>
+    </bug>
+    <bug>
+      <id>324530</id>
+      <summary>plugin arts doesn't compile with -Werrror enabled</summary>
+    </bug>
+    <bug>
+      <id>326033</id>
+      <summary>Performance of totem mozilla plugin on apple.trailers.com...</summary>
+    </bug>
+    <bug>
+      <id>326318</id>
+      <summary>fix qtdemux h264 avcC atom finding</summary>
+    </bug>
+  </bugs>
+</release>
