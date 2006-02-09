@@ -3,8 +3,8 @@
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.0">
 <!ENTITY gst-python-version-stable "0.10.2">
-<!ENTITY gst-plugins-base-version-stable "0.10.2">
-<!ENTITY gst-plugins-good-version-stable "0.10.1">
+<!ENTITY gst-plugins-base-version-stable "0.10.3">
+<!ENTITY gst-plugins-good-version-stable "0.10.2">
 <!ENTITY gst-plugins-ugly-version-stable "0.10.1">
 <!ENTITY gst-plugins-bad-version-stable "0.10.0">
 

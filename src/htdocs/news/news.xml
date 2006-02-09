@@ -2250,4 +2250,22 @@ or download tarballs
 </p>
     </content>
   </item>
+  <item>
+    <date>2006-02-09 12:30</date>
+    <title>GStreamer Base and Good stable release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new release in the 
+GStreamer stable release series. 2 modules have been released: Gstreamer Base Plug-ins and Gstreamer Good Plug-ins.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-base/0.10.3.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/0.10.2.html">gst-plugins-good</a>
+or download tarballs 
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.3.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-good-0.10.2.tar.bz2">gst-plugins-good</a>
+</p>
+    </content>
+  </item>
 </news>
