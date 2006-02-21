@@ -2290,5 +2290,23 @@ or the plugins
 archives.</p>
     </content>
   </item>
+  <item>
+    <date>2006-02-20 12:00</date>
+    <title>GStreamer Ugly and Bad stable release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new release in the 
+GStreamer stable release series. 2 modules have been released: Gstreamer Ugly Plug-ins and GStreamer Bad Plug-ins.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-ugly/0.10.2.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-plugins-bad/0.10.1.html">gst-plugins-ugly</a>
+or download tarballs 
+<a href="&site;/src/gst-plugins-base/gst-plugins-ugly-0.10.2.tar.bz2">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-bad-0.10.1.tar.bz2">gst-plugins-bad</a>
+</p>
+    </content>
+  </item>
 
 </news>
