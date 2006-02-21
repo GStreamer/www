@@ -1,6 +1,11 @@
 2006-02-21  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* src/htdocs/news/news.xml:
+	Grrr, fix my links.
+
+2006-02-21  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* src/htdocs/news/news.xml:
 	Add news item for the release
 
 2006-02-20  Jan Schmidt  <thaytan@mad.scientist.com>
