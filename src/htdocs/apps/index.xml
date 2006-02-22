@@ -37,7 +37,10 @@
 <p><a href="http://amarok.kde.org/">amaroK</a> is an audio player for KDE.</p>
 
 <h2>Banshee</h2>
-<p><a href="http://sonance.aaronbock.net/">Banshee</a> is a music player for GNOME using Mono</p>
+<p><a href="http://banshee-project.org/Main_Page">Banshee</a> is a music player for GNOME using Mono</p>
+
+<h2>BMPx</h2>
+<p><a href="http://beep-media-player.org/site/BMPx_Homepage">BMPx</a> is a music player using GTK+ with a 'Winamp' like interface</p>
 
 <h2>Buzztard</h2>
 <p><a href="http://buzztard.org/index.php/Overview">Buzztard</a> is music application similar to Buzz or FastTracker.</p>
@@ -56,6 +59,9 @@ in any format supported by GStreamer.</p>
 
 <h2>Flumotion</h2>
 <p><a href="http://www.fluendo.com">Flumotion</a> is a distributed streaming media server</p>
+
+<h2>FUPlayer</h2>
+<p><a href="http://fuplayer.org/">FUPlayer</a> GNOME Media player written in Python.</p>
 
 <h2>Gamp</h2>
 <p><a href="http://gamp.sourceforge.net/">Gamp</a> is a GNOME based media player</p>
