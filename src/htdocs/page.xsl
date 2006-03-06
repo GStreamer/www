@@ -89,6 +89,8 @@
       <!-- paste the page content passed with a param here -->
       <xsl:copy-of select="$content" />
       </td>
+      <!-- white spacing between page content and the right border --> 
+      <td width="22"><img src="&site;/images/1x1.gif" alt="" border="0" width="22" height="2" /></td>
       <!-- close the page table -->
     </tr>
     <tr>
