@@ -19,17 +19,19 @@ several applications.
   </intro>
   <features>
     <feature>fix installation on 64-bit machines</feature>
-    <feature>memleak fixes</feature>
   </features>
-          <contributors>
+            <contributors>
 	<person>Thomas Vander Stichele</person>
   </contributors>
+
 
   <maintainers>
     <person>Edward Hervey</person>
   </maintainers>
 
 <!--
+  
+
   <bugs>
   </bugs>
 -->
