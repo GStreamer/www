@@ -1,3 +1,9 @@
+2006-03-08  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/releases/gst-python/0.8.4.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	  about to release a 0.8.4 of gst-python
+
 2006-03-06  Stefan Kost  <ensonic@users.sf.net>
 
 	* src/htdocs/page.xsl:
