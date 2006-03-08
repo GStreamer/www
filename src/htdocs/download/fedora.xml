@@ -18,11 +18,12 @@ Fedora Core 2, 3, and 4 have shipped with GStreamer 0.8
 
 <P>
 GStreamer 0.10 is new and not included in Fedora yet.
-Our repository contains packages for Fedora Core 4 in a separate repository.
+Our repository contains packages of GStreamer 0.10 for Fedora Core 4 in a separate repository.
+
 </P>
 
 <P>
-If you want to get updates and additional plug-ins for GStreamer 0.8,
+If you want to get updates and additional plug-ins for GStreamer 0.8 or 0.10,
 you have two options:
 
 <UL>
@@ -74,6 +75,14 @@ baseurl=http://gstreamer.freedesktop.org/pkg/fedora/$releasever/$basearch/yum/de
 [gstreamer]
 name=Fedora Core $releasever - $basearch - GStreamer
 baseurl=http://gstreamer.freedesktop.org/pkg/fedora/$releasever/$basearch/yum/gst
+</PRE>
+</P>
+<P>
+If you use also want GStreamer 0.10, add these lines to your yum.conf file:
+<PRE>
+[gstreamer-0.10]
+name=Fedora Core $releasever - $basearch - GStreamer
+baseurl=http://gstreamer.freedesktop.org/pkg/fedora/$releasever/$basearch/yum/gst010
 </PRE>
 </P>
 </LI>
