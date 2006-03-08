@@ -2310,4 +2310,22 @@ or download tarballs
     </content>
   </item>
 
+  <item>
+    <date>2006-03-08 11:50</date>
+    <title>GStreamer Python 0.8.4 '64 bits is enough for anyone'</title>
+    <content>
+<p>
+This release fixes installation on 64-bit systems.
+</p>
+<p>
+Check out
+<a href="&site;/releases/gst-python/0.8.4.html">release notes</a>
+or download the
+<a href="&site;/src/gst-python/gst-python-0.8.4.tar.gz">tar.gz</a> or
+<a href="&site;/src/gst-python/gst-python-0.8.4.tar.bz2">tar.bz2</a> archive.
+</p>
+    </content>
+  </item>
+
+
 </news>
