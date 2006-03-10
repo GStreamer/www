@@ -33,7 +33,7 @@ def main():
         del lines[0]
 
     datedmatcher = re.compile('^\d*-\d*-\d*\s*(.*)\s*<.*>$')
-    bymatcher = re.compile(' by: (.*)\s*<.*>$')
+    bymatcher = re.compile(' by: ([^<]*)\s*.*$')
     for line in lines:
         if relmatcher.match(line):
             break
