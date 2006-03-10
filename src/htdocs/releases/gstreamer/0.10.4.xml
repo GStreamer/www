@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Light</name>
+  <version>0.10.4</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enchancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+
+    <feature>33% of library size removed by parse change</feature>
+    <feature>(Experimental) QoS features (use max-lateness on BaseSink subclasses to enable)</feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include: totem, gnome-media, RhythmBox,
+Sound-juicer, Jamboree, Flumotion.
+
+</p>
+  </applications>
+
+        <contributors>
+	<person>Andy Wingo</person>
+	<person>Christophe Fergeau</person>
+	<person>Jan Schmidt</person>
+	<person>Julien MOUTTE</person>
+	<person>Loïc Minier</person>
+	<person>Michael Smith</person>
+	<person>Renchi Raju</person>
+	<person>Ross Burton</person>
+	<person>Sebastien Moutte</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Torsten Schoenfeld</person>
+	<person>Vincent Torri</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+
+
+
+  <api>
+    <additions>
+      <item>gst_pipeline_set_auto_flush_bus()</item>
+      <item>gst_pipeline_get_auto_flush_bus()</item>
+      <item>gst_uri_has_protocol()</item>
+      <item>gst_pipeline_set_max_lateness()</item>
+      <item>gst_pipeline_get_max_lateness()</item>
+      <item>gst_pipeline_get_sync()</item>
+      <item>gst_pipeline_do_sync()</item>
+      <item>GST_BASE_TRANSFORM_SRC_PAD()</item>
+      <item>GST_BASE_TRANSFORM_SINK_PAD()</item>
+      <item>GstBaseSrc::check_get_range()</item>
+      <item>GstBaseSink::max-lateness</item>
+      <item>gst_type_find_helper_get_range()</item>
+      <item>gst_type_find_helper_for_buffer()</item>
+      <item>GST_MESSAGE_TYPE_NAME()</item>
+      <item>GST_QUERY_TYPE_NAME()</item>
+      <item>gst_bus_enable_sync_message_emission()</item>
+      <item>gst_bus_disable_sync_message_emission()</item>
+    </additions>
+<!--
+    <depreciations>
+    </depreciations>
+-->
+  </api>
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>323542</id>
+      <summary>GStreamer 0.10 hangs at EOS for all songs</summary>
+    </bug>
+    <bug>
+      <id>320340</id>
+      <summary>triggering a gst_task_join from the streaming task can de...</summary>
+    </bug>
+    <bug>
+      <id>322628</id>
+      <summary>document thread-unsafety of gst_value_foo() + gst_value_r...</summary>
+    </bug>
+    <bug>
+      <id>324186</id>
+      <summary>Smarter (deterministic!) typefind decisions</summary>
+    </bug>
+    <bug>
+      <id>324398</id>
+      <summary>varargs/valist functions aren't bindable</summary>
+    </bug>
+    <bug>
+      <id>328873</id>
+      <summary>only one gst_bin_recalc_state allowed at a time</summary>
+    </bug>
+    <bug>
+      <id>330899</id>
+      <summary>CVS directory in make dist tarball</summary>
+    </bug>
+    <bug>
+      <id>330906</id>
+      <summary>API: add GST_QUERY_TYPE_NAME and GST_MESSAGE_TYPE_NAME</summary>
+    </bug>
+    <bug>
+      <id>330996</id>
+      <summary>basesrc emits EOS unconditionally when going to READY</summary>
+    </bug>
+    <bug>
+      <id>331255</id>
+      <summary>Shrinking gst_parse_launch bloat</summary>
+    </bug>
+    <bug>
+      <id>331898</id>
+      <summary>Basetranform is not reusable</summary>
+    </bug>
+    <bug>
+      <id>332045</id>
+      <summary>API: GstPipeline needs API to disable  flushing of its bu...</summary>
+    </bug>
+    <bug>
+      <id>332277</id>
+      <summary>[filesrc] seek does not correct read position in non-mmap...</summary>
+    </bug>
+    <bug>
+      <id>332611</id>
+      <summary>[basesrc] needs way to prevent expensive start/stop in ch...</summary>
+    </bug>
+    <bug>
+      <id>332723</id>
+      <summary>New API: gst_type_find_helper_for_buffer</summary>
+    </bug>
+    <bug>
+      <id>333042</id>
+      <summary>New API: gst_type_find_helper_get_range</summary>
+    </bug>
+    <bug>
+      <id>333266</id>
+      <summary>Registry file writing rewrite</summary>
+    </bug>
+    <bug>
+      <id>333272</id>
+      <summary>tests should set G_SLICE=always-malloc now</summary>
+    </bug>
+    <bug>
+      <id>333417</id>
+      <summary>GST_BOILERPLATE_WITH_INTERFACE can't be used in C++ code</summary>
+    </bug>
+    <bug>
+      <id>333669</id>
+      <summary>Add pad accessor defines for GstBaseTransform</summary>
+    </bug>
+    <bug>
+      <id>333779</id>
+      <summary>New API: add gst_uri_has_protocol</summary>
+    </bug>
+    <bug>
+      <id>324818</id>
+      <summary>gst_registry_get_default doesn't sink newly created registry</summary>
+    </bug>
+    <bug>
+      <id>330125</id>
+      <summary>_pad_send_event does not check flushing correctly</summary>
+    </bug>
+    <bug>
+      <id>330684</id>
+      <summary>Add ability to emit sync-message without messing with the...</summary>
+    </bug>
+  </bugs>
+</release>

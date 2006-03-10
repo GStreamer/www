@@ -2234,6 +2234,7 @@ the efforts undertaken around it</a>. The article is not 100% exact, but all PR 
 </p>
     </content>
   </item>
+
   <item>
     <date>2006-02-08 20:00</date>
     <title>GStreamer Core 0.10.3 stable release</title>
@@ -2327,5 +2328,23 @@ or download the
     </content>
   </item>
 
+  <item>
+    <date>2006-03-10 20:16</date>
+    <title>GStreamer Core and Base Plugins 0.10.4 stable release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new Core and Base Plugins 
+release in the new GStreamer stable release series.
+</p>
+<p>
+Check out release notes  for
+<a href="&site;/releases/gstreamer/0.10.4.html">gstreamer</a> or
+<a href="&site;/releases/gst-plugins-base/0.10.4.html">gst-plugins-base</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.4.tar.bz2">gstreamer</a> or
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.4.tar.bz2">gst-plugins-base</a>.
+</p>
+    </content>
+  </item>
 
 </news>
