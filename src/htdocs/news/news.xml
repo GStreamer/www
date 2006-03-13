@@ -2347,4 +2347,24 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2006-03-13 20:57</date>
+    <title>GStreamer Base Plugins 0.10.5 stable release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new Base Plugins 
+release in the new GStreamer stable release series.
+This release is a quick fix release that addresses seekable playback
+of "local" files on NFS shares.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-base/0.10.5.html">gst-plugins-base</a>,
+or download tarballs for
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.5.tar.bz2">gst-plugins-base</a>.
+</p>
+    </content>
+  </item>
+
+
 </news>
