@@ -21,11 +21,16 @@ GStreamer.
 </p>
 
 <DL>
-  <DT>Fedora Core</DT>
+  <DT>Fedora Core 5</DT>
+  <DD>Check our <A href="fedora5.html">Fedora 5</A> download page.</DD>
+
+  <DT>Fedora Core 4 and older</DT>
   <DD>Check our <A href="fedora.html">Fedora</A> download page.</DD>
 
   <DT>Red Hat 9</DT>
-  <DD>Check our <A href="redhat.html">Red Hat</A> download page.</DD>
+  <DD><B>Note</B>: the Red Hat repository is unmaintained and only provided for
+      historical reasons.  If you still want to know more,
+      check our <A href="redhat.html">Red Hat</A> download page.</DD>
 
   <DT>Debian</DT>
   <DD>Not yet in experimental but on <A href="http://pkg-gnome.alioth.debian.org">Alioth</A>

@@ -1,0 +1,6 @@
+[gst-0.10-gst]
+name=GStreamer 0.10 - extras - $releasever - $basearch - gst
+baseurl=http://gstreamer.freedesktop.org/pkg/fedora/$releasever/0.10/$basearch/gst/
+enabled=1
+gpgcheck=1
+gpgkey=http://thomas.apestaart.org/pkg/thomas.pubkey

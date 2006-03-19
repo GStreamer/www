@@ -22,8 +22,7 @@ you have two options:
 
 <UL>
 <LI>Use the repository hosted by us, which is compatible with
-Fedora Extras,
-<A href="http://www.fedora.us/">www.fedora.us</A> and
+Fedora Extras and
 <A href="http://rpm.livna.org/">rpm.livna.org</A>.
 This repository has both packages not in the base distribution mirrored
 from those two sites, as well as packages created by us and submitted back

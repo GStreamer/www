@@ -1,3 +1,16 @@
+2006-03-19  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* bin/www-update:
+	* planet/config.ini:
+	* src/copy/download/gstreamer-0.10-apps.repo:
+	* src/copy/download/gstreamer-0.10-deps.repo:
+	* src/copy/download/gstreamer-0.10-gst.repo:
+	* src/htdocs/download/Makefile.am:
+	* src/htdocs/download/fedora5.xml:
+	* src/htdocs/download/index.xml:
+	  add the Fedora Core 5 repository, plus repo files, and change
+	  the way we handle fedora package repository
+
 2006-03-17  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* planet/config.ini:
