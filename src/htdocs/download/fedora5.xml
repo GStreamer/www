@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer: download for Fedora Core</title>
+  <body>
+
+<h2>Download instructions for Fedora Core</h2>
+<P>
+GStreamer is distributed with Fedora Core.
+Fedora Core 5 shipped with GStreamer 0.10.
+</P>
+
+<P>
+If you want to get updates and additional plug-ins for GStreamer 0.8 or 0.10,
+you have two options:
+
+<UL>
+<LI>Use the repository hosted by us, which is compatible with
+Fedora Extras,
+<A href="http://www.fedora.us/">www.fedora.us</A> and
+<A href="http://rpm.livna.org/">rpm.livna.org</A>.
+This repository has both packages not in the base distribution mirrored
+from those two sites, as well as packages created by us and submitted back
+to those two repositories.</LI>
+<LI>Use the <A href="http://www.freshrpms.net/">FreshRPMS repository</A>, where
+the GStreamer packages are packaged in the same way as ours.</LI>
+</UL>
+
+
+</P>
+<H2>Our repository</H2>
+<P>
+Here's the five step guide to getting our packages.
+</P>
+<OL>
+<LI>
+<P>
+The current repository contains packages built using
+<A href="http://thomas.apestaart.org/projects/mach">mach</A>.
+They should also be compatible with the Fedora Core
+test releases if you keep your system upgraded.
+</P>
+Download the following .repo files and drop them in your /etc/yum.repos.d
+directory:
+<UL>
+<LI><A href="gstreamer-0.10-deps.repo">gstreamer-0.10-deps.repo</A></LI>
+<LI><A href="gstreamer-0.10-gst.repo">gstreamer-0.10-gst.repo</A></LI>
+<LI><A href="gstreamer-0.10-apps.repo">gstreamer-0.10-apps.repo</A></LI>
+</UL>
+</LI>
+
+<LI>If you want to manually import the GPG key for this repository:
+<DL>
+
+<DT>
+Get key and fingerprint from website:
+</DT>
+<DD><PRE>
+wget http://thomas.apestaart.org/pkg/thomas.pubkey
+wget http://thomas.apestaart.org/pkg/thomas.fingerprint
+</PRE></DD>
+
+<DT>
+Verify that the fingerprint matches the pubkey:
+</DT>
+<DD><PRE>
+gpg --with-fingerprint thomas.pubkey | head -n 3 | diff - thomas.fingerprint
+</PRE></DD>
+
+<DT>
+Get the public key from a keyserver and verify that the online fingerprint
+matches the one downloaded:
+</DT>
+<DD><PRE>
+gpg --keyserver pgp.mit.edu --recv-keys 55f3aa6f
+gpg --list-keys | grep Stichele
+gpg --fingerprint 55f3aa6f | head -n 3 > thomas.fingerprint.tmp
+diff thomas.fingerprint.tmp thomas.fingerprint
+</PRE></DD>
+
+<DT>
+Now that you verified the validity of thomas.pubkey, you can import it in
+your rpm database using
+</DT>
+<DD><PRE>
+rpm --import thomas.pubkey
+</PRE></DD>
+</DL>
+</LI>
+
+<LI>Import the GPG key for <A href="http://rpm.livna.org/">rpm.livna.org</A>
+by following the instructions on their site.
+</LI>
+
+<LI>
+Install all GStreamer packages:
+<PRE>
+yum install gstreamer-universe
+</PRE>
+</LI>
+<P>
+If this gives problems, it is probably due to you having installed packages
+from another repository.  Try removing those packages, or only installing
+part of the GStreamer package set.
+</P>
+<P>
+You can also <A href="&site;/pkg/fedora">browse the repository</A>.
+</P>
+</OL>
+  </body>
+</page>
