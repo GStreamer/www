@@ -1,3 +1,9 @@
+2006-03-21  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* planet/config.ini:
+	  Change philn's feed to the RSS1. Escaped HTML in a CDATA
+	  section doesn't seem to translate into planet properly.
+
 2006-03-19  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* bin/www-update:
