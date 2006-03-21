@@ -1,5 +1,13 @@
 2006-03-21  Jan Schmidt  <thaytan@mad.scientist.com>
 
+	* src/htdocs/news/news.xml:
+	* src/htdocs/entities.gst:
+	* src/htdocs/releases/gst-python/0.10.3.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	  releasing
+
+2006-03-21  Jan Schmidt  <thaytan@mad.scientist.com>
+
 	* planet/config.ini:
 	  Change philn's feed to the RSS1. Escaped HTML in a CDATA
 	  section doesn't seem to translate into planet properly.

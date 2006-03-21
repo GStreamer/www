@@ -2365,6 +2365,22 @@ or download tarballs for
 </p>
     </content>
   </item>
-
+  <item>
+    <date>2006-03-21 23:20</date>
+    <title>GStreamer Python Bindings 0.10.3 stable release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new Python Bindings
+release in the GStreamer 0.10 stable release series.
+This release contains API additions, bug fixes and better compatibility with older GStreamer releases..
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-python/0.10.3.html">gst-python</a>,
+or download tarballs for
+<a href="&site;/src/gst-python/gst-python-0.10.3.tar.bz2">gst-python</a>.
+</p>
+    </content>
+  </item>
 
 </news>

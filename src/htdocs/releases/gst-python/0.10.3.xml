@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name>Maybe not today. Maybe not tomorrow, but soon...</name>
+  <version>0.10.3</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Python Bindings.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+    <feature>Backwards compatibility with older GStreamer installations</feature>
+    <feature>Wrapping of new API in GStreamer</feature>
+    <feature>Bug-fixes and enhancements</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+        <contributors>
+	<person>Andy Wingo</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Joe Wreschnig</person>
+	<person>Michael Smith</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Zaheer Abbas Merali</person>
+  </contributors>
+
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>329110</id>
+      <summary>gst-python sets RTLD_GLOBAL when importing, but doesn't s...</summary>
+    </bug>
+    <bug>
+      <id>332586</id>
+      <summary>pygst.require should raise an error based on StandardErro...</summary>
+    </bug>
+    <bug>
+      <id>333055</id>
+      <summary>PYGIL_API_IS_BUGGY is already defined in pygobect.h</summary>
+    </bug>
+    <bug>
+      <id>331616</id>
+      <summary>gst.version and gst.gst_version differ</summary>
+    </bug>
+  </bugs>
+</release>
