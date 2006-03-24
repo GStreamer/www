@@ -72,6 +72,10 @@ in any format supported by GStreamer.</p>
 <h2>GNOME Media</h2>
 <p><a href="http://ronald.bitfreak.net/gnome-media.php">GNOME Media</a> uses GStreamer for the volume control, sound recorder and cd player.</p>
 
+<h2>GMediaRender</h2>
+<p><a href="http://gmrender.nongnu.org/">GMediaRender</a> is a upnp client for 
+use with upnp media servers</p>
+
 <h2>Goobox</h2>
 <p><a href="http://www.gnomefiles.org/app.php?soft_id=531">Goobox</a> is a GNOME based cd-player and ripper</p>
 
