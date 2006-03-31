@@ -1,3 +1,14 @@
+2006-03-31  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/bugs/bugs.xml:
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.10.1.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	* src/htdocs/releases/gst-plugins-ugly/0.10.3.xml:
+	* src/htdocs/releases/gst-plugins-ugly/Makefile.am:
+	  releases of ffmpeg and ugly
+
 2006-03-21  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* src/htdocs/news/news.xml:

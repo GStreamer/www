@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-ffmpeg</module>
+  <module-fancy>GStreamer FFmpeg Plug-ins</module-fancy>
+  <name>Late Train</name>
+  <version>0.10.1</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer FFmpeg Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+This module contains plug-ins using libraries from the FFmpeg project.
+</p>
+
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+    <feature>ffvideoscale ported</feature>
+    <feature>ffdeinterlace ported</feature>
+    <feature>demuxer wrapper works pull-based</feature>
+    <feature>disabled mpeg2 video and mp3 audio autoplugging</feature>
+    <feature>fixes for Indeo3, PNG, smc, H264 HD, H263, FLV1, G2</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+      <contributors>
+	<person>Andy Wingo</person>
+	<person>Christian Schaller</person>
+	<person>Edgard Lima</person>
+	<person>Edward Hervey</person>
+	<person>Fabrizio Gennari</person>
+	<person>Jan Schmidt</person>
+	<person>Josef Zlomek</person>
+	<person>Loïc Minier</person>
+	<person>Luca Ognibene</person>
+	<person>Michael Smith</person>
+	<person>Michal Benes</person>
+	<person>Sebastien Cote</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>162833</id>
+      <summary>[ffdemux_mp3] ffmpeg mp3 decoder miss seeking</summary>
+    </bug>
+    <bug>
+      <id>311272</id>
+      <summary>Reading mpeg-ts stream from standard input does not work</summary>
+    </bug>
+    <bug>
+      <id>319248</id>
+      <summary>configure script doesn't accept --with-pkg-config-path ar...</summary>
+    </bug>
+    <bug>
+      <id>320238</id>
+      <summary>Fails to build under powerpc</summary>
+    </bug>
+    <bug>
+      <id>322254</id>
+      <summary>avcodec_open()/close() aren't thread-safe</summary>
+    </bug>
+    <bug>
+      <id>323286</id>
+      <summary>[ffdec_cinepak] chef.avi causes gstreamer to hang in preroll</summary>
+    </bug>
+    <bug>
+      <id>326372</id>
+      <summary>Indeo AVI files do not play with 0.10</summary>
+    </bug>
+    <bug>
+      <id>326704</id>
+      <summary>[ffdec] Memory leak when joining pcache</summary>
+    </bug>
+    <bug>
+      <id>327028</id>
+      <summary>MS Video 1 palettized AVI doesn't work</summary>
+    </bug>
+    <bug>
+      <id>327224</id>
+      <summary>ffdeinterlace port to 0.10</summary>
+    </bug>
+    <bug>
+      <id>327861</id>
+      <summary>[ffmpegenc] FFMpeg audio encoders do not set caps to buffers</summary>
+    </bug>
+    <bug>
+      <id>329963</id>
+      <summary>gstreamer CVS doesn't work with ffmpeg codecs</summary>
+    </bug>
+    <bug>
+      <id>330634</id>
+      <summary>Wrap the ffmpeg demuxers</summary>
+    </bug>
+    <bug>
+      <id>331209</id>
+      <summary>[ffdec_h264] seeking in &quot; IntoTheBlue_Cin_AVC.mp4 &quot; crashes...</summary>
+    </bug>
+    <bug>
+      <id>332072</id>
+      <summary>Too fast playback of h263p encoded file</summary>
+    </bug>
+    <bug>
+      <id>332557</id>
+      <summary>FFmpeg video scale port to 0.10</summary>
+    </bug>
+    <bug>
+      <id>332995</id>
+      <summary>segfault in ffmpeg enc</summary>
+    </bug>
+    <bug>
+      <id>333001</id>
+      <summary>Memory leak in ffmpegenc</summary>
+    </bug>
+    <bug>
+      <id>324209</id>
+      <summary>[CVE-2005-4048] avcodec_default_get_buffer heap overflow</summary>
+    </bug>
+  </bugs>
+
+</release>

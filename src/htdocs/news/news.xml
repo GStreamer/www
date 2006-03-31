@@ -2365,6 +2365,7 @@ or download tarballs for
 </p>
     </content>
   </item>
+
   <item>
     <date>2006-03-21 23:20</date>
     <title>GStreamer Python Bindings 0.10.3 stable release</title>
@@ -2379,6 +2380,40 @@ Check out release notes for
 <a href="&site;/releases/gst-python/0.10.3.html">gst-python</a>,
 or download tarballs for
 <a href="&site;/src/gst-python/gst-python-0.10.3.tar.bz2">gst-python</a>.
+</p>
+    </content>
+  </item>
+
+  <item>
+    <date>2006-03-31 13:19</date>
+    <title>GStreamer Ugly Plugins 0.10.3 stable release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new Ugly Plugins 
+release in the new GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-ugly/0.10.3.html">gst-plugins-ugly</a>,
+or download tarballs for
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.3.tar.bz2">gst-plugins-ugly</a>.
+</p>
+    </content>
+  </item>
+
+  <item>
+    <date>2006-03-31 13:20</date>
+    <title>GStreamer FFmpeg 0.10.1 stable release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new FFmpeg
+release in the new GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-ffmpeg/0.10.1.html">gst-ffmpeg</a>,
+or download tarballs for
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.1.tar.bz2">gst-ffmpeg</a>.
 </p>
     </content>
   </item>
