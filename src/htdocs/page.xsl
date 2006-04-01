@@ -93,9 +93,11 @@
       <td width="22"><img src="&site;/images/1x1.gif" alt="" border="0" width="22" height="2" /></td>
       <!-- close the page table -->
     </tr>
+    <!-- add a contact address -->
     <tr>
-      <td width="22"><img src="&site;/images/1x1.gif" alt="" border="0" width="22" height="2" /></td>
-      <td valign="top"><br/></td>
+      <td colspan="2"></td>
+      <td align="right"><br/><i>If there are any problems on this page, please contact thomas (at) apestaart (dot) org</i></td>
+      <td></td>
     </tr>
   </table>
 
