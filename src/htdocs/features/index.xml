@@ -26,7 +26,7 @@ structures</li>
 plugin and application developers</li>
 <li>Extremely lightweight data passing means very high performance/low latency</li>
 <li>Complete
-<a href="&site;/data/doc/gstreamer/head/gstreamer/html/gstreamer-gstinfo.html">
+<a href="&site;/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html">
 debugging system</a>
 for both core and plugin/app developers</li>
 <li>Clocking to ensure global inter-stream synchronization</li>
@@ -49,8 +49,7 @@ Capabilities system</a>
 allows verification of element compatibility using MIME types and
 media-specific properties</li>
 <li>
-<a href="&site;/data/doc/gstreamer/head/manual/html/chapter-autoplug.html">
-Autoplugging</a> uses
+Autoplugging uses
 capabilities system to complete complex paths automatically</li>
 <li>Pipelines can be saved to
 <a href="&site;/data/doc/gstreamer/head/manual/html/chapter-xml.html">
@@ -62,8 +61,7 @@ XML</a> and loaded back to working state</li>
 <li><a href="&site;/modules/gst-editor.html">Graphical editor</a> allows pipelines to be
 built quickly, run, and saved as XML</li>
 <li>
-<a href="&site;/data/doc/gstreamer/head/manual/html/section-programs-gst-launch.html">
-gst-launch command-line tool</a> enables even
+gst-launch command-line tool enables even
 quicker prototyping and testing, similar to ecasound</li>
 <li>All tools written as libraries to allow easy reuse</li>
 <li>A lot of 
