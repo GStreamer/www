@@ -1,3 +1,8 @@
+2006-04-01  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/documentation/plugins.xsl:
+	  add a note on why some links are broken.  See #323798
+
 2006-03-31  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/bugs/bugs.xml:
