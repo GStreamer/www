@@ -1,3 +1,9 @@
+2006-04-04  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* src/htdocs/documentation/index.xml:
+	  Split out the gst-plugins-base library documentation, since
+	  it has a different version number to the core.
+
 2006-04-01  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/page.xsl:
