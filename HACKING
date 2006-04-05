@@ -10,3 +10,16 @@ To hack on the GStreamer website, here's what to do:
 4) mkdir data
 4) bin/data-get (this is not needed if you just plan on updating the generated content)
 5) make
+
+MISCELLANEOUS NOTES:
+
+Things that are in the data subdirectory and synched with the contents
+on the website server by the data-get and data-put scripts. The
+things in there are updated by various scripts or by hand.
+
+The data/doc/gstreamer/head/ directory contains subdirs for the CVS version of
+the various documentation modules. These should be updated by running 
+'make upload' within the docs/ subdirectory of a CVS checkout of each module.
+
+The new-release script updates the data/doc/gstreamer/$VERSION/ copies
+automatically, so use that.

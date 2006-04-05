@@ -1,3 +1,8 @@
+2006-04-05  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* HACKING:
+	  Add some simple notes on how the data directory is maintained
+
 2006-04-04  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* src/htdocs/documentation/index.xml:
