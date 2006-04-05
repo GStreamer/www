@@ -247,9 +247,9 @@ GStreamer Recorder is an application for recording audio and/or video.
     <blurb>python bindings</blurb>
     <title>GStreamer Python Bindings</title>
     <description>
-GStreamer python bindings.
+GStreamer python bindings. You can find API docs for the Python bindings at <a href="http://pygstdocs.berlios.de/">this website</a>.
     </description>
-    <maintainer>Johan Dahlin</maintainer>
+    <maintainer>Edward Hervey</maintainer>
     <versions>
       <stable>&gst-python-version-stable;</stable>
       <devel>&gst-python-version-devel;</devel>
