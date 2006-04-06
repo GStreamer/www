@@ -124,6 +124,21 @@ very fast colorspace conversion elements.
     </versions>
   </module>
 
+  <module>
+    <id>gst-gnonlin</id>
+    <title>GNonLin plug-in</title>
+    <blurb>Non-linear editing elements</blurb>
+    <description>
+GNonLin contains a set of plug-ins for GStreamer to ease the
+creation of multimedia editors, or any other application where a
+timeline-oriented use of GStreamer makes sense.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <stable>&gnonlin-version-stable;</stable>
+      <devel></devel>
+    </versions>
+  </module>
 
   <module>
     <id>gst-editor</id>

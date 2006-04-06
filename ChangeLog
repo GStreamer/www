@@ -1,3 +1,15 @@
+2006-04-06  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/bugs/bugs.xml:
+	* src/htdocs/entities.gst:
+	* src/htdocs/modules/modules.xml:
+	* src/htdocs/releases/gnonlin/0.10.1.xml:
+	* src/htdocs/releases/gnonlin/template.xml:
+	  add release notes and product info for gnonlin
+	* src/htdocs/releases/releases.xsl:
+	* src/htdocs/releases/text.xsl:
+	  don't prefix release notes with GStreamer:
+
 2006-04-06  Edward Hervey  <edward@fluendo.com>
 
 	* src/htdocs/releases/gnonlin/template.xml:

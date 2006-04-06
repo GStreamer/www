@@ -121,7 +121,7 @@
   <xsl:template match="release">
     <xsl:call-template name="page">
       <xsl:with-param name="title">
-GStreamer: Release notes for
+Release notes for
 <xsl:value-of select="module-fancy" />&nbsp;<xsl:value-of select="version" />
 "<xsl:value-of select="name" />"
       </xsl:with-param>

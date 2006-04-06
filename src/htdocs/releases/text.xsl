@@ -118,7 +118,7 @@ Applications<xsl:copy-of select="." />
 
   <!-- this template outputs the release notes -->
   <xsl:template match="release">
-GStreamer: Release notes for <xsl:value-of select="module-fancy" />&nbsp;<xsl:value-of select="version" /> "<xsl:value-of select="name" />"
+Release notes for <xsl:value-of select="module-fancy" />&nbsp;<xsl:value-of select="version" /> "<xsl:value-of select="name" />"
         <xsl:copy-of select="intro" />
         <xsl:apply-templates select="features" />
 

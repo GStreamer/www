@@ -18,6 +18,17 @@ This module contains a set of plug-ins for GStreamer to ease the
 creation of multimedia editors, or any other application where a
 timeline-oriented use of GStreamer makes sense.
 </p>
+<p>
+These elements include:
+<dl>
+<dt>gnlsource</dt>
+<dd>An element for using source elements/bins in a GnlComposition</dd>
+<dt>gnlfilesource</dt>
+<dd>A higher-level element for using a uri in a GnlComposition</dd>
+<dt>gnlcomposition</dt>
+<dd>A container element that handles GNonLin objects</dd>
+</dl>
+</p>
   </intro>
   <features>
     <feature></feature>

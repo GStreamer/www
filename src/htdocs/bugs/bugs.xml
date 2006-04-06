@@ -50,37 +50,6 @@
     </milestones>
   </module>
 
-  <module id="gst-plugins">
-    <component>gst-plugins</component>
-    <milestones>
-      <milestone>HEAD</milestone>
-      <milestone>0.8.12</milestone>
-      <milestone>0.8.11</milestone>
-      <milestone>0.8.10</milestone>
-      <milestone>0.8.9</milestone>
-      <milestone>0.8.8</milestone>
-      <milestone>0.8.7</milestone>
-      <milestone>0.8.6</milestone>
-      <milestone>0.8.5</milestone>
-      <milestone>0.8.4</milestone>
-      <milestone>0.8.3</milestone>
-      <milestone>0.8.2</milestone>
-      <milestone>0.8.1</milestone>
-      <milestone>0.8.0</milestone>
-      <milestone>0.7.6</milestone>
-      <milestone>0.7.5</milestone>
-      <milestone>0.7.4</milestone>
-      <milestone>0.7.3</milestone>
-      <milestone>0.7.2</milestone>
-      <milestone>0.7.1</milestone>
-      <milestone>0.6.4</milestone>
-      <milestone>0.6.3</milestone>
-      <milestone>0.6.2</milestone>
-      <milestone>0.6.1</milestone>
-      <milestone>0.6.0</milestone>
-    </milestones>
-  </module>
-
   <module id="gst-plugins-base">
     <component>gst-plugins-base</component>
     <milestones>
@@ -217,6 +186,16 @@
     </milestones>
   </module>
 
+  <module id="gnonlin">
+    <component>gnonlin</component>
+    <milestones>
+      <milestone>HEAD</milestone>
+      <milestone>0.10.2</milestone>
+      <milestone>0.10.1</milestone>
+    </milestones>
+  </module>
+    
+
   <module id="documentation">
     <component>documentation</component>
     <milestones>
@@ -228,5 +207,37 @@
       <milestone>0.10.0</milestone>
     </milestones>
   </module>
+
+  <module id="gst-plugins">
+    <component>gst-plugins</component>
+    <milestones>
+      <milestone>HEAD</milestone>
+      <milestone>0.8.12</milestone>
+      <milestone>0.8.11</milestone>
+      <milestone>0.8.10</milestone>
+      <milestone>0.8.9</milestone>
+      <milestone>0.8.8</milestone>
+      <milestone>0.8.7</milestone>
+      <milestone>0.8.6</milestone>
+      <milestone>0.8.5</milestone>
+      <milestone>0.8.4</milestone>
+      <milestone>0.8.3</milestone>
+      <milestone>0.8.2</milestone>
+      <milestone>0.8.1</milestone>
+      <milestone>0.8.0</milestone>
+      <milestone>0.7.6</milestone>
+      <milestone>0.7.5</milestone>
+      <milestone>0.7.4</milestone>
+      <milestone>0.7.3</milestone>
+      <milestone>0.7.2</milestone>
+      <milestone>0.7.1</milestone>
+      <milestone>0.6.4</milestone>
+      <milestone>0.6.3</milestone>
+      <milestone>0.6.2</milestone>
+      <milestone>0.6.1</milestone>
+      <milestone>0.6.0</milestone>
+    </milestones>
+  </module>
+
 
 </buglists>
