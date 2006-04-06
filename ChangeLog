@@ -1,3 +1,8 @@
+2006-04-06  Edward Hervey  <edward@fluendo.com>
+
+	* src/htdocs/releases/gnonlin/template.xml:
+	Update gnonlin release template
+
 2006-04-06  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/configure.in:
