@@ -2418,4 +2418,22 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2006-04-06 20:19</date>
+    <title>GNonLin 0.10.1 stable release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new GNonLin
+release in the new GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gnonlin/0.10.1.html">gnonlin</a>,
+or download tarballs for
+<a href="&site;/src/gnonlin/gnonlin-0.10.1.tar.bz2">gnonlin</a>.
+</p>
+    </content>
+  </item>
+
+
 </news>
