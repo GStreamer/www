@@ -1,3 +1,11 @@
+2006-04-06  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/configure.in:
+	* src/htdocs/releases/Makefile.am:
+	* src/htdocs/releases/gnonlin/Makefile.am:
+	* src/htdocs/releases/gnonlin/template.xml:
+	  add gnonlin release template
+
 2006-04-05  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* HACKING:

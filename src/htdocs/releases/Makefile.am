@@ -1,4 +1,5 @@
 SUBDIRS = \
+	gnonlin \
 	gst-editor \
 	gst-ffmpeg \
 	gst-monkeysaudio \

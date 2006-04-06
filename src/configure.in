@@ -30,5 +30,6 @@ htdocs/releases/gst-plugins-ugly/Makefile
 htdocs/releases/gst-plugins-bad/Makefile
 htdocs/releases/gst-python/Makefile
 htdocs/releases/gstreamer/Makefile
+htdocs/releases/gnonlin/Makefile
 htdocs/tasks/Makefile
 ])
