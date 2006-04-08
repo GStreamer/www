@@ -1,3 +1,10 @@
+%.xml:
+	cp $(top_srcdir)/copy/releases/$@ $@
+%.ics:
+	cp $(top_srcdir)/copy/releases/$@ $@
+
+all-local:	releases.rss10.xml releases.rss20.xml releases.ics
+
 SUBDIRS = \
 	gnonlin \
 	gst-editor \

@@ -1,3 +1,13 @@
+2006-04-08  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/copy/releases/releases.ics:
+	* src/copy/releases/releases.rss10.xml:
+	* src/copy/releases/releases.rss20.xml:
+	* src/htdocs/index.xsl:
+	* src/htdocs/modules/modules.xml:
+	* src/htdocs/releases/Makefile.am:
+	  add rss and ics files for the releases, as an experiment
+
 2006-04-06  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/bugs/bugs.xml:

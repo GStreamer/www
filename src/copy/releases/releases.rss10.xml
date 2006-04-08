@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rdf:RDF
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns="http://purl.org/rss/1.0/">
+
+  <channel>
+    <title>GStreamer project releases</title>
+    <link>http://gstreamer.freedesktop.org/</link>
+
+
+        <item>
+          <title>gst-plugins-base 0.10.5 'Net' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.5.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.5.html</link>
+            <pubDate>Mon, 13 Mar 2006 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer Base Plug-ins is a well-groomed and well-maintained collection of
+GStreamer plug-ins and elements, spanning the range of possible types of
+elements one would want to write for GStreamer.  It also contains helper
+libraries and base classes useful for writing elements.
+A wide range of video and audio decoders, encoders, and filters are included.
+@en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.5/gst-plugins-base-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.5.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.5.tar.bz2"&gt;gst-plugins-base-0.10.5.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.5.tar.gz"&gt;gst-plugins-base-0.10.5.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gst-plugins-base 0.10.4 'Power' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.4.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.4.html</link>
+            <pubDate>Fri, 10 Mar 2006 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer Base Plug-ins is a well-groomed and well-maintained collection of
+GStreamer plug-ins and elements, spanning the range of possible types of
+elements one would want to write for GStreamer.  It also contains helper
+libraries and base classes useful for writing elements.
+A wide range of video and audio decoders, encoders, and filters are included.
+@en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.4/gst-plugins-base-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.4.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.4.tar.bz2"&gt;gst-plugins-base-0.10.4.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.4.tar.gz"&gt;gst-plugins-base-0.10.4.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gstreamer 0.10.4 'Light' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gstreamer/0.10.4.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gstreamer/0.10.4.html</link>
+            <pubDate>Fri, 10 Mar 2006 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer is a streaming media framework that allows the construction of
+graphs of elements which operate on media data.
+Applications using this library can do anything from real-time sound processing
+over playing video to capturing audio, video, and even other types of media
+data.
+Its architecture allows for adding new data types or processing capabilities
+simply by installing new plug-ins.
+GStreamer is the core module, containing libraries, headers, the basic object
+hierarchy, and a set of media-agnostic core elements.
+ @en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.4/gstreamer-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gstreamer/0.10.4.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.10.4.tar.bz2"&gt;gstreamer-0.10.4.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.10.4.tar.gz"&gt;gstreamer-0.10.4.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gst-plugins-good 0.10.2 'Papa was a rolling stone' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gst-plugins-good/0.10.2.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gst-plugins-good/0.10.2.html</link>
+            <pubDate>Thu, 09 Feb 2006 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer Good Plug-ins is a set of plug-ins that we consider to have good
+quality code and correct functionality, under our preferred license (LGPL for
+the plug-in code, LGPL or LGPL-compatible for the supporting library).
+@en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.2/gst-plugins-good-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gst-plugins-good/0.10.2.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-0.10.2.tar.bz2"&gt;gst-plugins-good-0.10.2.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-0.10.2.tar.gz"&gt;gst-plugins-good-0.10.2.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gst-plugins-base 0.10.3 'Under Pressure' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.3.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.3.html</link>
+            <pubDate>Thu, 09 Feb 2006 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer Base Plug-ins is a well-groomed and well-maintained collection of
+GStreamer plug-ins and elements, spanning the range of possible types of
+elements one would want to write for GStreamer.  It also contains helper
+libraries and base classes useful for writing elements.
+A wide range of video and audio decoders, encoders, and filters are included.
+@en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.3/gst-plugins-base-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.3.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.3.tar.bz2"&gt;gst-plugins-base-0.10.3.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.3.tar.gz"&gt;gst-plugins-base-0.10.3.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gstreamer 0.8.12 'Cookies' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gstreamer/0.8.12.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gstreamer/0.8.12.html</link>
+            <pubDate>Thu, 09 Feb 2006 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer is a streaming media framework that allows the construction of
+graphs of elements which operate on media data.
+Applications using this library can do anything from real-time sound processing
+over playing video to capturing audio, video, and even other types of media
+data.
+Its architecture allows for adding new data types or processing capabilities
+simply by installing new plug-ins.
+GStreamer is the core module, containing libraries, headers, the basic object
+hierarchy, and a set of media-agnostic core elements.
+ @en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.8.12/gstreamer-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gstreamer/0.8.12.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.8.12.tar.bz2"&gt;gstreamer-0.8.12.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.8.12.tar.gz"&gt;gstreamer-0.8.12.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gstreamer 0.10.3 'Like a virgin' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gstreamer/0.10.3.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gstreamer/0.10.3.html</link>
+            <pubDate>Wed, 08 Feb 2006 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer is a streaming media framework that allows the construction of
+graphs of elements which operate on media data.
+Applications using this library can do anything from real-time sound processing
+over playing video to capturing audio, video, and even other types of media
+data.
+Its architecture allows for adding new data types or processing capabilities
+simply by installing new plug-ins.
+GStreamer is the core module, containing libraries, headers, the basic object
+hierarchy, and a set of media-agnostic core elements.
+ @en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.3/gstreamer-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gstreamer/0.10.3.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.10.3.tar.bz2"&gt;gstreamer-0.10.3.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.10.3.tar.gz"&gt;gstreamer-0.10.3.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gst-plugins-base 0.10.2 'Then the devil is six' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.2.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.2.html</link>
+            <pubDate>Mon, 16 Jan 2006 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer Base Plug-ins is a well-groomed and well-maintained collection of
+GStreamer plug-ins and elements, spanning the range of possible types of
+elements one would want to write for GStreamer.  It also contains helper
+libraries and base classes useful for writing elements.
+A wide range of video and audio decoders, encoders, and filters are included.
+@en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.2/gst-plugins-base-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.2.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.2.tar.bz2"&gt;gst-plugins-base-0.10.2.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.2.tar.gz"&gt;gst-plugins-base-0.10.2.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gstreamer 0.10.2 'If man is five' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gstreamer/0.10.2.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gstreamer/0.10.2.html</link>
+            <pubDate>Mon, 16 Jan 2006 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer is a streaming media framework that allows the construction of
+graphs of elements which operate on media data.
+Applications using this library can do anything from real-time sound processing
+over playing video to capturing audio, video, and even other types of media
+data.
+Its architecture allows for adding new data types or processing capabilities
+simply by installing new plug-ins.
+GStreamer is the core module, containing libraries, headers, the basic object
+hierarchy, and a set of media-agnostic core elements.
+ @en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.2/gstreamer-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gstreamer/0.10.2.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.10.2.tar.bz2"&gt;gstreamer-0.10.2.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.10.2.tar.gz"&gt;gstreamer-0.10.2.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gst-plugins-good 0.10.1 'Li' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gst-plugins-good/0.10.1.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gst-plugins-good/0.10.1.html</link>
+            <pubDate>Fri, 13 Jan 2006 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer Good Plug-ins is a set of plug-ins that we consider to have good
+quality code and correct functionality, under our preferred license (LGPL for
+the plug-in code, LGPL or LGPL-compatible for the supporting library).
+@en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.1/gst-plugins-good-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gst-plugins-good/0.10.1.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-0.10.1.tar.bz2"&gt;gst-plugins-good-0.10.1.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-0.10.1.tar.gz"&gt;gst-plugins-good-0.10.1.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gst-plugins-base 0.10.1 'Dobro Dedek' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.1.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.1.html</link>
+            <pubDate>Fri, 23 Dec 2005 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer Base Plug-ins is a well-groomed and well-maintained collection of
+GStreamer plug-ins and elements, spanning the range of possible types of
+elements one would want to write for GStreamer.  It also contains helper
+libraries and base classes useful for writing elements.
+A wide range of video and audio decoders, encoders, and filters are included.
+@en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.1/gst-plugins-base-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.1.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.1.tar.bz2"&gt;gst-plugins-base-0.10.1.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.1.tar.gz"&gt;gst-plugins-base-0.10.1.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gstreamer 0.10.1 'Nollaig chridheil' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gstreamer/0.10.1.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gstreamer/0.10.1.html</link>
+            <pubDate>Fri, 23 Dec 2005 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer is a streaming media framework that allows the construction of
+graphs of elements which operate on media data.
+Applications using this library can do anything from real-time sound processing
+over playing video to capturing audio, video, and even other types of media
+data.
+Its architecture allows for adding new data types or processing capabilities
+simply by installing new plug-ins.
+GStreamer is the core module, containing libraries, headers, the basic object
+hierarchy, and a set of media-agnostic core elements.
+ @en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.1/gstreamer-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gstreamer/0.10.1.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.10.1.tar.bz2"&gt;gstreamer-0.10.1.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.10.1.tar.gz"&gt;gstreamer-0.10.1.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gst-plugins-good 0.10.0 'Abondance' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gst-plugins-good/0.10.0.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gst-plugins-good/0.10.0.html</link>
+            <pubDate>Mon, 05 Dec 2005 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer Good Plug-ins is a set of plug-ins that we consider to have good
+quality code and correct functionality, under our preferred license (LGPL for
+the plug-in code, LGPL or LGPL-compatible for the supporting library).
+@en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.0/gst-plugins-good-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gst-plugins-good/0.10.0.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-0.10.0.tar.bz2"&gt;gst-plugins-good-0.10.0.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-0.10.0.tar.gz"&gt;gst-plugins-good-0.10.0.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gst-plugins-base 0.10.0 'Mont-d'or' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.0.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.0.html</link>
+            <pubDate>Mon, 05 Dec 2005 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer Base Plug-ins is a well-groomed and well-maintained collection of
+GStreamer plug-ins and elements, spanning the range of possible types of
+elements one would want to write for GStreamer.  It also contains helper
+libraries and base classes useful for writing elements.
+A wide range of video and audio decoders, encoders, and filters are included.
+@en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.0/gst-plugins-base-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gst-plugins-base/0.10.0.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.0.tar.bz2"&gt;gst-plugins-base-0.10.0.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.0.tar.gz"&gt;gst-plugins-base-0.10.0.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+        <item>
+          <title>gstreamer 0.10.0 'Maroilles' released</title>
+            <guid>http://gstreamer.freedesktop.org/releases/gstreamer/0.10.0.html</guid>
+            <link>http://gstreamer.freedesktop.org/releases/gstreamer/0.10.0.html</link>
+            <pubDate>Mon, 05 Dec 2005 00:00:00 +0000</pubDate>
+            <description>
+&lt;p&gt;
+
+GStreamer is a streaming media framework that allows the construction of
+graphs of elements which operate on media data.
+Applications using this library can do anything from real-time sound processing
+over playing video to capturing audio, video, and even other types of media
+data.
+Its architecture allows for adding new data types or processing capabilities
+simply by installing new plug-ins.
+GStreamer is the core module, containing libraries, headers, the basic object
+hierarchy, and a set of media-agnostic core elements.
+ @en
+&lt;/p&gt;
+
+
+&lt;p&gt;
+See a
+&lt;A href="http://gstreamer.freedesktop.org/data/doc/gstreamer/0.10.0/gstreamer-plugins/html/"&gt;
+ list of plug-ins and elements&lt;/A&gt; in this module's release.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Read the &lt;A href="http://gstreamer.freedesktop.org/releases/gstreamer/0.10.0.html"&gt;release notes&lt;/A&gt;
+or download
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.10.0.tar.bz2"&gt;gstreamer-0.10.0.tar.bz2&lt;/A&gt;
+or
+&lt;A href="http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-0.10.0.tar.gz"&gt;gstreamer-0.10.0.tar.gz&lt;/A&gt;.
+&lt;/p&gt;
+            </description>
+        </item>
+
+
+  </channel>
+</rdf:RDF>
+
