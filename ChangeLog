@@ -1,3 +1,10 @@
+2006-04-21  Edward Hervey  <edward@fluendo.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/releases/gnonlin/0.10.2.xml:
+	* src/htdocs/releases/gnonlin/Makefile.am:
+	Add release notes for gnonlin 0.10.2
+
 2006-04-08  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/copy/releases/releases.ics:
