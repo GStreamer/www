@@ -1,5 +1,13 @@
 2006-04-28  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-python/0.10.4.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	  new gst-python release
+
+2006-04-28  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/news/news.xml:
 	* src/htdocs/releases/gst-plugins-base/0.10.6.xml:
 	* src/htdocs/releases/gst-plugins-base/Makefile.am:

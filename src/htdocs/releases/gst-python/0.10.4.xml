@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name>Alegre</name>
+  <version>0.10.4</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Python Bindings.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+
+    <feature>Conditional compile of core API additions</feature>
+    <feature>wrapped gst.BaseSrc and gst.PushSrc</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Andy Wingo</person>
+	<person>David I. Lehn</person>
+	<person>Edward Hervey</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+  </contributors>
+
+
+  <api>
+    <additions>
+      <item>gst.get_gst_version()</item>
+      <item>gst.get_pygst_version()</item>
+    </additions>
+<!--
+    <depreciations>
+    </depreciations>
+-->
+  </api>
+  
+
+  <bugs>
+    <bug>
+      <id>339010</id>
+      <summary>segfault/undefined behavior with optional GstCaps args</summary>
+    </bug>
+    <bug>
+      <id>337876</id>
+      <summary>TagList does not retreive tags by key if 2 or more tags w...</summary>
+    </bug>
+  </bugs>
+</release>
