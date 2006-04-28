@@ -2435,5 +2435,24 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2006-04-28 13:02</date>
+    <title>GStreamer 0.10.5 and Base Plugins 0.10.6 stable release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new Core and Base Plugins 
+release in the new GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.5.html">gstreamer</a>,
+<a href="&site;/releases/gst-plugins-base/0.10.6.html">gst-plugins-base</a>,
+or download tarballs for
+<a href="&site;/src/gst-plugins-base/gstreamer-0.10.5.tar.bz2">gstreamer</a> or
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.6.tar.bz2">gst-plugins-base</a>.
+</p>
+    </content>
+  </item>
+
 
 </news>

@@ -1,3 +1,13 @@
+2006-04-28  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-base/0.10.6.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.5.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	* src/htdocs/releases/gstreamer/template.xml:
+	  new releases of core and base
+
 2006-04-25  Edward Hervey  <edward@fluendo.com>
 
 	* src/htdocs/entities.gst:
