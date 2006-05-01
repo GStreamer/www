@@ -1,3 +1,8 @@
+2006-05-01  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/bugs/bugs.xml:
+	  Add more milestones.
+
 2006-04-28  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/entities.gst:
