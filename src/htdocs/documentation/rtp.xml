@@ -8,17 +8,50 @@
 ]>
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
+
 <title>GStreamer: RTP support</title>
 <body>
-  <H1>RTP in Gstreamer 0.9</H1>
-<p>Philippe Khalaf &lt;burger@speedy.org&gt;</p>
+<h1>RTP in Gstreamer 0.10</h1>
+<p>Philippe Khalaf &lt;philippe.kalaf at collabora.co.uk&gt;</p>
 <p>
 Any questions you have you can find me on #farsight or #gstreamer on freenode, my nickname is Burger.</p>
-<FONT COLOR="#ff0000">This is still under HEAVY developpement, don't expect it to work well, assuming it actually does work</FONT>
-<H2>Intro</H2>
-<p>This document describes how to get RTP working in GStreamer 0.9 CVS. RTP support it based on JRTPLib. The required elements are currently all located on <A HREF="http://farsight.sourceforge.net">Farsight</A>'s CVS under gst-plugins-0.9 module.</p>
+<font COLOR="#ff0000">This is still under HEAVY developpement, don't expect it to work well, assuming it actually does work</font>
+<h2>Intro</h2>
+<p>This document describes how to get RTP working in GStreamer 0.10.</p>
+<p>The elements are currently being developped in <a
+HREF="http://farsight.sourceforge.net">Farsight</a>'s darcs repository. The
+required module is <a
+HREF="http://projects.collabora.co.uk/darcs/farsight/gst-plugins-farsight/">gst-plugins-farsight.</a>
+</p> 
+<p>The elements should also be available in GStreamer CVS and future releases
+(releases after May 2006), but latest edge will be on the farsight darcs.</p>
+<p>There are 3 main elements for RTP :</p>
 
-<p>Current state : (15/08/05) Some more changes to RTPBin :
+<ul>
+<li>rtpbin</li>
+<li>rtpjitterbuffer</li>
+<li>rtpdemux.</li>
+</ul>
+
+<p>jrtplib and jthread are optional dependencies for rtpbin. It is required if you wish to use more advanced RTP features such as
+RTCP, SSRC control and multi-user (multiple destinations/sources). If they are not installed rtpbin will compile without them.</p>
+
+<p>Current state : (17/04/06)</p>
+<ul>
+<li>Optional jrtplib dependency</li>
+<li>rtpjitterbuffer added to rtpbin</li>
+<li>bypass-udp property added that allows to connect to rtpbin for transfering
+over other sink/src that udp (i.e. icesrc/sink for libjingle)</li>
+<li>sockfd properties added to allow to set an external sockfd for udp</li>
+<li>pt-map property added to rtpbin that defines supported payloads and their
+clock rates</li>
+<li>queue-delay property added to rtpbin for the jitter buffer size
+(jitterbuffer removed from basedepayloader class)</li>
+<li>many other small improvements</li>
+</ul>
+<p>
+(15/08/05) Some more changes to RTPBin :
+</p>
 <ul>
 <li>No more GstRTPBuffer, instead we use normal GstBuffer's with full rtp
 packets inside of them. gstrtpbuffer.[ch] contain all the helper parse
@@ -26,11 +59,10 @@ functions that allow to build and read/write the rtp headers.</li>
 <li>No more modes, the mode is determined by on request pads. So depending on
 your requested pads a mode will be selected.</li>
 <li>Parameter to turn on/off RTCP</li>
-<li>The jrtp gst plugin has be moved to gst-plugins-bad, it will be maintained
-there instead of farsight's CVS</li>
 </ul>
-
+<p>
 (20/07/05) Brand spanking new RTPBin element. It's dynamic. It has 6 modes :
+</p>
 <ul>
 <li>Send and Receive</li>
 <li>Send Only</li>
@@ -39,46 +71,70 @@ there instead of farsight's CVS</li>
 <li>Send Only without RTCP</li>
 <li>Receive Only without RTCP</li>
 </ul>
+<p>
  I think they are self-explanatory.
 </p>
 <p>(14/07/05) Basic RTP support is in the CVS. By basic I mean this is the first version of RTP, at it's most simple form. It has RTCP support, meaning it will receive and send RTCP packets, and process them. That information is still not being used actively by the system.
 It also provides a depayloader base class. This shall be used by codec specific depayloaders.  It implements generic functions such as buffering, reordering and dropping packets.</p>
-<H2>How to use it</H2>
+<h2>How to use it</h2>
 <ul>
-<li>First you need to have gstreamer, gst-base-plugins and gst-plugins CVS, (You can install it or run it uninstalled).</li>
-<li>Then you need to have jrtplib and gst-plugins-0.9 (both from Farsight's CVS). You can also run both of these installed or uninstalled.</li>
+<li>First you need to have gstreamer, gst-base-plugins and gst-plugins. I use
+CVS but most 0.10 releases should do fine as well</li>
+<li>Then you need to compile and install gst-plugins-farsight. If you want
+jrtplib support you need to install jrtplib and jthread before installing
+gst-plugins-farsight. You need to get jrtplib and jthread from <a
+href="http://projects.collabora.co.uk/trac/farsight/wiki/GettingStarted">here</a>
+for now.</li>
 </ul>
 Here is what you get :
 <ul>
-<li>rtpbin : This is the bin that does it all. It adapts dynamically to your
-needs based on the requested pads.</li> 
-<li>BaseRTPDepayload: A base depayloader class that should be used by any RTP depayloaders you write (h263depayloader is an example depayloader element that uses BaseRTPDepayload class).</li>
-<li>BaseRTPPayload: A base payloader class that should be used by any RTP
-payloaders you write.</li>
+<li><b>rtpbin</b> : This is the bin that does it all. It adapts dynamically to your needs based on the requested pads. It contains the rtpjitterbuffer for extra
+jitter control. GStreamer's sound sources already contains a jitter buffer, so
+this is only usefull for packet reodering. The buffer can be disabled by setting
+queue-delay to 0.</li>
+ 
+<li><b>jrtpjitterbuffer</b> : This element is an RTP buffer that controls network jitter and reorders packets. It also dumps packets that arrive to late. The
+jitterbuffer still has some issues. For example it uses a thread/timer to
+release packets from the queue. Ideally the sink would "pull" the buffers out of
+it instead. It is not heavily tested and might have some leaks.</li>
+
+<li><b>rtpdemux</b> : This element usually sits on the rtpbin src pad and will detect any new payload types that arrive in the RTP stream. It will then create a pad for that new payload and you can connect a depayloader/decoder pipeline to that pad.</li>
+
+<li><b>BaseRTPDepayload</b> : A base depayloader class that should be used by any RTP depayloaders you write (h263depayloader is an example depayloader element that uses BaseRTPDepayload class).</li>
+
+<li><b>BaseRTPPayload</b> : A base payloader class that should be used by any RTP payloaders you write.</li>
+
+<li><b>BaseRTPAudioPayload</b> <b><i><font COLOR="#ff0000">Coming soon
+(17/04/06)</font></i></b> : A base payloader class for audio codecs. It supports
+frame based and sample based audio codecs (constant bitrate).</li>
 </ul>
 <p>If you want to use rtpbin, there are a few things you need to know :
 </p>
 <ul>
 <li>To use it you need to set the localport, otherwise it won't work.</li>
-<li>If sending data, the destinations must be added with the signal "add-destination". This can contain one or more ip:port combinations with the following syntax (127.0.0.1:5000;192.168.1.101:4000;).</li>
-<li>Any buffers that go into <b>sink</b> MUST be rtp buffers. They MUST contain the timestamp increment, the mark and the payload type in them.</li>
+<li>If sending data, the destinations must be added with the &quot;destinations&quot; property or the &quot;add-destination&quot; signal. This can contain one or more ip:port combinations with the following syntax (127.0.0.1:5000;192.168.1.101:4000;).</li>
+<li>Any buffers that go into <b>sink</b> MUST be rtp buffers.</li>
 <li><b>src</b> also gives out full rtp buffers that contain important information for the depayloader.</li>
 </ul>
-<A HREF="../images/RTP-gst.png">Image 1</A> - Internals of RTPBin
+<a HREF="../images/rtpbin.png">Image 1</a> - Internals of RTPBin with JRTPLIB support<br/>
+<a HREF="../images/rtpbin-nojrtp.png">Image 2</a> - Internals of RTPBin without JRTPLIB support<br/>
 <p></p>
 <b>Notes</b>
 <ul>
-<li>Inside the bin, <b>rtpsink/rtcpsink</b> MUST receive <i>GstNetBuffers</i>. This contains important source information needed by rtpsession. Also, <b>rtpsrc/rtcpsrc</b> sends out <i>GstNetBuffers</i> that the sinks must use to send to the given destinations in the <i>GstNetBuffers</i>. (dynudpsink does this as an example).</li>
+<li>Inside the bin, <b>rtpsink/rtcpsink</b> MUST receive <i>GstNetBuffers</i>.
+This contains important source information needed if using jrtplib . Also, <b>rtpsrc/rtcpsrc</b> sends out <i>GstNetBuffers</i> that the sinks must use to send to the given destinations in the <i>GstNetBuffers</i>. (dynudpsink does this as an example).</li>
 <li>If you need to reroute the packet flow, you will need to rewrite another rtpbin.</li>
 </ul>
 <h2>Pipeline construction</h2>
-Here is what a pipeline would normally look like with the different modes :
-<img SRC="../images/RTP-gst2.png" ALIGN="MIDDLE" WIDTH="670" HEIGHT="654" />
-<b>Notes</b>
+<p>Here is what a pipeline would normally look like with the different modes:</p>
+<img SRC="../images/rtp-gst.png"/>
+<p>Here is one using the rtpdemuxer element :</p>
+<img SRC="../images/rtp-gst2.png"/>
+<p><b>Notes</b>
 <ul>
-<li>As a note for the first part, usually the payloader is embeded in the encoder because it requires some encoding specific marks and data, but it is possible to have it separate.</li>
+<li>As a note for the first part, its easier if the payloader is embeded in the encoder because it requires some encoding specific marks and data, but it is possible to have it separate.</li>
 <li>Also I have no tested/verified RTSP compatiblity yet, but it has been taken into account during the design. There are a few RTSP elements written by wtay that can probably be used successfully here.</li>
 </ul>
-
+</p>
   </body>
 </page>
