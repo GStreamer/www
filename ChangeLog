@@ -1,3 +1,14 @@
+2006-05-04  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-bad/0.10.3.xml:
+	* src/htdocs/releases/gst-plugins-bad/Makefile.am:
+	* src/htdocs/releases/gst-plugins-good/0.10.3.xml:
+	* src/htdocs/releases/gst-plugins-good/Makefile.am:
+
+	  Releases of good and bad 
+
 2006-05-01  Tim-Philipp Müller  <tim at centricular dot net>
 
 	* src/htdocs/bugs/bugs.xml:

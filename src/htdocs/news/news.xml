@@ -2471,5 +2471,23 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2006-05-04 17:44</date>
+    <title>GStreamer Good and Bad Plugins 0.10.3 stable release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce new releases of the Good and Bad
+plugins collections in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes  for
+<a href="&site;/releases/gst-plugins-good/0.10.3.html">gst-plugins-good</a> or
+<a href="&site;/releases/gst-plugins-bad/0.10.3.html">gst-plugins-bad</a>,
+or download tarballs for
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.3.tar.bz2">gst-plugins-good</a> or
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.3.tar.bz2">gst-plugins-bad</a>.
+</p>
+    </content>
+  </item>
 
 </news>
