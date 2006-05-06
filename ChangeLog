@@ -1,3 +1,8 @@
+2006-05-06  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/bugs/bugs.xml:
+	  Even more milestones
+
 2006-05-04  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* src/htdocs/entities.gst:
