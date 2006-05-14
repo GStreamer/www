@@ -78,7 +78,7 @@ plug-in code, LGPL or LGPL-compatible for the supporting library).
     <title>GStreamer Ugly Plug-ins</title>
     <blurb>a set of good-quality plug-ins that might pose distribution problems</blurb>
     <description>
-Gstreamer Ugly Plug-ins is a set of plug-ins that have good quality and correct
+GStreamer Ugly Plug-ins is a set of plug-ins that have good quality and correct
 functionality, but distributing them might pose problems.  The license on
 either the plug-ins or the supporting libraries might not be how we'd like. The
 code might be widely known to present patent problems.
@@ -95,7 +95,7 @@ code might be widely known to present patent problems.
     <title>GStreamer Bad Plug-ins</title>
     <blurb>a set of plug-ins that need more quality</blurb>
     <description>
-Gstreamer Bad Plug-ins is a set of plug-ins that aren't up to par compared to
+GStreamer Bad Plug-ins is a set of plug-ins that aren't up to par compared to
 the rest.  They might be close to being good quality, but they're missing
 something - be it a good code review, some documentation, a set of tests, a
 real live maintainer, or some actual wide use.

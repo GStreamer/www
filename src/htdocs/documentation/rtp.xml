@@ -127,9 +127,9 @@ This contains important source information needed if using jrtplib . Also, <b>rt
 </ul>
 <h2>Pipeline construction</h2>
 <p>Here is what a pipeline would normally look like with the different modes:</p>
-<img SRC="../images/rtp-gst.png"/>
+<img SRC="../images/RTP-gst.png"/>
 <p>Here is one using the rtpdemuxer element :</p>
-<img SRC="../images/rtp-gst2.png"/>
+<img SRC="../images/RTP-gst2.png"/>
 <p><b>Notes</b>
 <ul>
 <li>As a note for the first part, its easier if the payloader is embeded in the encoder because it requires some encoding specific marks and data, but it is possible to have it separate.</li>

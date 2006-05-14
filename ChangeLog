@@ -1,3 +1,17 @@
+2006-05-14  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/copy/images/rtpbin-nojrtp.png:
+	* src/copy/images/rtpbin.png:
+	* src/htdocs/documentation/rtp.xml:
+	* src/htdocs/images/Makefile.am:
+	* src/htdocs/images/rtp-gst.png:
+	* src/htdocs/images/rtp-gst2.png:
+	* src/htdocs/images/rtpbin-nojrtp.png:
+	* src/htdocs/images/rtpbin.png:
+	* src/htdocs/modules/modules.xml:
+	* src/htdocs/news/news.xml:
+	  fix rtp docs and some GStreamer misspellings
+
 2006-05-11  Edward Hervey  <edward@fluendo.com>
 
 	* src/htdocs/entities.gst:

@@ -335,7 +335,7 @@ From left to right : Leon (MAS), Ronald (BBB), Wim (wtay), Thomas (thomasvs), Er
   
     <content>Once more the GStreamer team is here with a new and exciting release. Fewer bugs, more documentation and some new plugins.
     </content>
-    <title>Gstreamer 0.3.4 released</title>
+    <title>GStreamer 0.3.4 released</title>
   </item>
 
 
@@ -516,7 +516,7 @@ many new nice features like improved GNOME 2 integration, Nautilus view,
 improved error handling and more. Check the release notes for all the details
 and download instructions.
     </content>
-    <title>Gst-Player 0.4.1 released</title>
+    <title>GStreamer Player 0.4.1 released</title>
   </item>
 
 
@@ -645,7 +645,7 @@ development series until we release 1.0.
 A major new release of the GStreamer Media player is available. This release
 features a huge GUI update and lot better stability.
     </content>
-    <title>Gst-player 0.5.0 released</title>
+    <title>GStreamer Player 0.5.0 released</title>
   </item>
 
 
@@ -663,7 +663,7 @@ features a huge GUI update and lot better stability.
 We have a new release of the GStreamer editor which works with the 0.6.x stable
 series of GStreamer.
     </content>
-    <title>Gst-Editor with new Release!</title>
+    <title>GStreamer Editor with new Release!</title>
   </item>
 
 
@@ -680,11 +680,11 @@ release features major bugfixes in all areas.
   <item>  <date>2003-04-23 11:48</date>
   
     <content>
-The 0.5.1 release of Gst-Player is now available. Lots of cleanups and new
+The 0.5.1 release of GStreamer Player is now available. Lots of cleanups and new
 stuff in this release. For instance we now support visualization when playing
 music and drag and drop form Nautilus. 
     </content>
-    <title>Gst-Player 0.5.1 released</title>
+    <title>GStreamer Player 0.5.1 released</title>
   </item>
 
 
@@ -709,7 +709,7 @@ This new release on the stable branch features a lot of bugfixes.
   
     <content>We have a new release of our media player application for your  testing pleasure. New for this release is support for video effects and many bug fixes. 
     </content>
-    <title>Gst-Player 0.6.0 released</title>
+    <title>GStreamer Player 0.6.0 released</title>
   </item>
 
 
@@ -2257,7 +2257,7 @@ or download tarballs
     <content>
 <p>
 The GStreamer team is proud to announce a new release in the 
-GStreamer stable release series. 2 modules have been released: Gstreamer Base Plug-ins and Gstreamer Good Plug-ins.
+GStreamer stable release series. 2 modules have been released: GStreamer Base Plug-ins and GStreamer Good Plug-ins.
 </p>
 <p>
 Check out release notes for
@@ -2298,7 +2298,7 @@ archives.</p>
     <content>
 <p>
 The GStreamer team is proud to announce a new release in the 
-GStreamer stable release series. 2 modules have been released: Gstreamer Ugly Plug-ins and GStreamer Bad Plug-ins.
+GStreamer stable release series. 2 modules have been released: GStreamer Ugly Plug-ins and GStreamer Bad Plug-ins.
 </p>
 <p>
 Check out release notes for
