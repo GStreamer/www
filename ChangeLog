@@ -1,3 +1,13 @@
+2006-05-14  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-base/0.10.7.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.6.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+
+	 Core and base releases
+
 2006-05-14  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/copy/images/rtpbin-nojrtp.png:
