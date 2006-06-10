@@ -2545,5 +2545,28 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2006-06-10 19:03</date>
+    <title>GStreamer 0.10.8 stable release</title>
+    <content>
+<p>
+The GStreamer team is embarassed to announce a new Core
+release in the new GStreamer stable release series.
+</p>
+<p>
+This release fixes a bug when updating the registry causing some programs
+(like the GNOME mixer applet) to exit prematurely.
+We recommend no one use or ship GStreamer 0.10.7, but move to this version
+instead.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.8.html">gstreamer</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.8.tar.bz2">gstreamer</a>.
+</p>
+    </content>
+  </item>
+
 
 </news>

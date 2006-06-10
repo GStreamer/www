@@ -1,4 +1,4 @@
-<!ENTITY gst-version-stable "0.10.7">
+<!ENTITY gst-version-stable "0.10.8">
 <!ENTITY gst-plugins-version-stable "0.8.12">
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.1">
