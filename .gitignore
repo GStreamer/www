@@ -1,6 +1,4 @@
 media
-htdocs
-htdocs/*
 data
 config.log
 config.status
