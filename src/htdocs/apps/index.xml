@@ -36,6 +36,10 @@
 <h2>amaroK</h2>
 <p><a href="http://amarok.kde.org/">amaroK</a> is an audio player for KDE.</p>
 
+<h2>avisynth 3.0</h2>
+<p><a href="http://www.avisynth.org/AviSynth30">Avisynth 3.0</a> is a powerful video frameserver.</p> 
+
+
 <h2>Banshee</h2>
 <p><a href="http://banshee-project.org/Main_Page">Banshee</a> is a music player for GNOME using Mono</p>
 
@@ -53,6 +57,9 @@ in any format supported by GStreamer.</p>
 
 <h2>The Dave/Dina Project</h2>
 <p><a href="http://www.davedina.org/content/">The Dave/Dina Project</a> is a set-top box distribution for playing and recording TV and multimedia and much more.</p>
+
+<h2>Elisa</h2>
+<p><a href="http://www.fluendo.com/elisa">Elisa</a> is a OpenGL based cross-platform media center solution.</p>
 
 <h2>Eina</h2>
 <p><a href="http://bolgo.cent.uji.es/proyectos/eina-en">Eina</a> is a traditional audio player with a GTK2 interface.</p>
