@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>On the road again</name>
+  <version>0.10.9</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enchancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+    <feature>The testsuite can now generate coverage information</feature>
+    <feature>Better support for non-linear editing</feature>
+    <feature>Removed Glib 2.6 compatibility</feature>
+    <feature>Performance improvements on cpus that support branch hints</feature>
+    <feature>Bug fixes</feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
+Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
+Let us know if you want to be added to this list.
+</p>
+  </applications>
+
+              <contributors>
+	<person>Andy Wingo</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Philip Jägenstedt</person>
+	<person>Sebastien Moutte</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Wouter Paesen</person>
+  </contributors>
+
+
+
+
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>346730</id>
+      <summary>some warnings about enums and macros</summary>
+    </bug>
+    <bug>
+      <id>341029</id>
+      <summary>Ghostpads internal and target should be linked from the b...</summary>
+    </bug>
+    <bug>
+      <id>346192</id>
+      <summary>[PATCH] Pad blocking on events</summary>
+    </bug>
+    <bug>
+      <id>347384</id>
+      <summary>[ghostpad] padtemplates shouldn't be set automatically</summary>
+    </bug>
+    <bug>
+      <id>344115</id>
+      <summary>[patch] make more internal data const</summary>
+    </bug>
+    <bug>
+      <id>324176</id>
+      <summary>gst-element-check-0.x.m4 should use versioned gst-inspect</summary>
+    </bug>
+    <bug>
+      <id>330379</id>
+      <summary>Bogus commits to basesink, basetransform, collectpads</summary>
+    </bug>
+    <bug>
+      <id>341667</id>
+      <summary>restore_from_xml breaks pad links again after creating them</summary>
+    </bug>
+    <bug>
+      <id>344642</id>
+      <summary>tools/gst-inspect.c does not compile if --disable-nls is ...</summary>
+    </bug>
+    <bug>
+      <id>344748</id>
+      <summary>Fails with non-writable registry</summary>
+    </bug>
+    <bug>
+      <id>344849</id>
+      <summary>GstController doesn't handle float properties correct</summary>
+    </bug>
+    <bug>
+      <id>345086</id>
+      <summary>[gst-feedback] calls un-versioned tools</summary>
+    </bug>
+    <bug>
+      <id>346097</id>
+      <summary>SIGSEGV when using --gst-plugin-load</summary>
+    </bug>
+    <bug>
+      <id>347337</id>
+      <summary>GDP does not correctly deserialize events without a struc...</summary>
+    </bug>
+    <bug>
+      <id>347408</id>
+      <summary>basesrc causes regressions in pull with 0 bytes</summary>
+    </bug>
+    <bug>
+      <id>345720</id>
+      <summary>Bad performance playing files off CD</summary>
+    </bug>
+    <bug>
+      <id>331727</id>
+      <summary>make probes and Ghostpads more elegant</summary>
+    </bug>
+    <bug>
+      <id>343196</id>
+      <summary>basetransform not handles ro/rw buffer flagging for trans...</summary>
+    </bug>
+    <bug>
+      <id>346663</id>
+      <summary>Segmentation error with fakesrc, fakesink and a filter</summary>
+    </bug>
+  </bugs>
+</release>

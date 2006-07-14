@@ -1,3 +1,14 @@
+2006-07-14  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-base/0.10.9.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.9.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+
+	Release 0.10.9 of core and base
+
 2006-06-10  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/entities.gst:
