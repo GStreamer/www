@@ -2,6 +2,15 @@
 
 	* src/htdocs/entities.gst:
 	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-python/0.10.5.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+
+	Releasing gst-python 0.10.5 "My Little Poney wants some Funk"
+
+2006-07-20  Edward Hervey  <edward@fluendo.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
 	* src/htdocs/releases/gnonlin/0.10.5.xml:
 	* src/htdocs/releases/gnonlin/Makefile.am:
 
