@@ -1,3 +1,12 @@
+2006-08-14  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-good/0.10.4.xml:
+	* src/htdocs/releases/gst-plugins-good/Makefile.am:
+	* src/htdocs/releases/gst-plugins-ugly/0.10.4.xml:
+	* src/htdocs/releases/gst-plugins-ugly/Makefile.am:
+	  releasing 0.10.4 of good and ugly
+
 2006-07-20  Edward Hervey  <edward@fluendo.com>
 
 	* src/htdocs/entities.gst:
