@@ -1,3 +1,17 @@
+2006-08-31  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* HACKING:
+	  Fix wrong instructions.
+
+	* TODO:
+	  Fix typo.
+
+	* src/htdocs/documentation/index.xml:
+	  Only link to HEAD documentation and hide the 'stable' column
+	  completely for now, since the docs in the 'stable' column are
+	  ancient and don't seem to be ever updated, but at the same time
+	  those are the docs most people seem to check out first. Not good.
+
 2006-08-14  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/news/news.xml:
