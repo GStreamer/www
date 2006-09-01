@@ -78,10 +78,10 @@ Let us know if you want to be added to this list.
       <item>GstSegment::applied_rate field</item>
       <item>gst_segment_set_newsegment_full()</item>
     </additions>
-<!--
-    <depreciations>
-    </depreciations>
--->
+    <deprecations>
+    </deprecations>
+    <removals>
+    </removals>
   </api>
 
   <bugs>

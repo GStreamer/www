@@ -35,8 +35,8 @@ It is, however, parallel installable with the 0.8.x series.
   <api>
     <additions>
     </additions>
-    <depreciations>
-    </depreciations>
+    <deprecations>
+    </deprecations>
   </api>
 -->
 

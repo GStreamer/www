@@ -41,57 +41,77 @@ Known issues
   <!-- this template displays the bugs fixed -->
   <xsl:template match="bugs">
 
+   <xsl:choose>
+    <xsl:when test="count(bug) > 0">
 Bugs fixed in this release
-    <xsl:for-each select="bug">
+     <xsl:for-each select="bug">
       * <xsl:value-of select="id" /> : <xsl:value-of select="summary" />
-    </xsl:for-each>
+     </xsl:for-each>
+    </xsl:when>
+    <xsl:otherwise>
+There were no bugs fixed in this release
+    </xsl:otherwise>
+   </xsl:choose>
   </xsl:template>
 
   <!-- this template displays the API changes -->
   <xsl:template match="api">
 
+   <xsl:choose>
+    <xsl:when test="count((additions|removals|deprecations)/*) > 0">
 API changed in this release
      <xsl:apply-templates select="additions" />
 
      <xsl:apply-templates select="removals" />
 
-     <xsl:apply-templates select="depreciations" />
+     <xsl:apply-templates select="deprecations" />
+    </xsl:when>
+    <xsl:otherwise>
+There were no API changes in this release.
+    </xsl:otherwise>
+   </xsl:choose>
 
   </xsl:template>
 
   <!-- this template matches the API additions -->
   <xsl:template match="additions">
 
+   <xsl:if test="count(./*) > 0">
 - API additions:
     <xsl:call-template name="item-list">
       <xsl:with-param name="parent">
         <xsl:value-of select="." />
       </xsl:with-param>
     </xsl:call-template>
+   </xsl:if>
 
   </xsl:template>
  
   <!-- this template matches the API removals -->
   <xsl:template match="removals">
 
+   <xsl:if test="count(./*) > 0">
 - API removals:
     <xsl:call-template name="item-list">
       <xsl:with-param name="parent">
         <xsl:value-of select="." />
       </xsl:with-param>
     </xsl:call-template>
+   </xsl:if>
 
   </xsl:template>
 
-  <!-- this template matches the API removals -->
-  <xsl:template match="depreciations">
+  <!-- this template matches the API removals. -->
+  <xsl:template match="deprecations">
 
-- API depreciations:
+   <xsl:if test="count(./*) > 0">
+- API deprecations:
     <xsl:call-template name="item-list">
       <xsl:with-param name="parent">
         <xsl:value-of select="." />
       </xsl:with-param>
     </xsl:call-template>
+   </xsl:if>
 
   </xsl:template>
 

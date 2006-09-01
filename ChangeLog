@@ -1,3 +1,17 @@
+2006-09-01  Michael Smith  <msmith@fluendo.com>
+
+	* src/htdocs/releases/gst-ffmpeg/template.xml:
+	* src/htdocs/releases/gst-plugins-bad/template.xml:
+	* src/htdocs/releases/gst-plugins-base/template.xml:
+	* src/htdocs/releases/gst-plugins-good/template.xml:
+	* src/htdocs/releases/gst-plugins-ugly/template.xml:
+	* src/htdocs/releases/gst-python/template.xml:
+	* src/htdocs/releases/gstreamer/0.10.6.xml:
+	* src/htdocs/releases/gstreamer/template.xml:
+	* src/htdocs/releases/releases.xsl:
+	* src/htdocs/releases/text.xsl:
+	Patch from bug #341758: improve release XSL, better spelling.
+
 2006-08-31  Tim-Philipp Müller  <tim at centricular dot net>
 
 	* HACKING:

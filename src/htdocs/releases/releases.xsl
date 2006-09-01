@@ -36,59 +36,79 @@
 
   <!-- this template displays the bugs fixed -->
   <xsl:template match="bugs">
-    <h2>Bugs fixed in this release</h2>
-    <ul>
-    <xsl:for-each select="bug">
-      <li>
-        <xsl:call-template name="hyperlink">
-          <xsl:with-param name="href">http://bugzilla.gnome.org/show_bug.cgi?id=<xsl:value-of select="id" /></xsl:with-param>
-  <xsl:with-param name="text"><xsl:value-of select="id" /></xsl:with-param>
-</xsl:call-template>
-        : <xsl:value-of select="summary" />
-      </li>
-    </xsl:for-each>
-    </ul>
+    <xsl:choose>
+     <xsl:when test="count(bug) > 0">
+       <h2>Bugs fixed in this release</h2>
+       <ul>
+       <xsl:for-each select="bug">
+         <li>
+           <xsl:call-template name="hyperlink">
+             <xsl:with-param name="href">http://bugzilla.gnome.org/show_bug.cgi?id=<xsl:value-of select="id" /></xsl:with-param>
+             <xsl:with-param name="text"><xsl:value-of select="id" /></xsl:with-param>
+           </xsl:call-template>
+           : <xsl:value-of select="summary" />
+         </li>
+       </xsl:for-each>
+       </ul>
+     </xsl:when>
+     <xsl:otherwise>
+       <h2> No bugs were fixed in this release </h2>
+     </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!-- this template displays the API changes -->
   <xsl:template match="api">
-    <h2>API changes</h2>
-    <ul>
-      <xsl:apply-templates select="additions" />
-      <xsl:apply-templates select="removals" />
-      <xsl:apply-templates select="depreciations" />
-    </ul>
+   <xsl:choose>
+    <xsl:when test="count((additions|removals|deprecations)/*) > 0">
+      <h2>API changes</h2>
+      <ul>
+        <xsl:apply-templates select="additions" />
+        <xsl:apply-templates select="removals" />
+        <xsl:apply-templates select="deprecations" />
+      </ul>
+    </xsl:when>
+    <xsl:otherwise>
+      <h2> There were no API changes in this release </h2>
+    </xsl:otherwise>
+   </xsl:choose>
   </xsl:template>
 
   <!-- this template matches the API additions -->
   <xsl:template match="additions">
-    <li>API additions
-      <xsl:call-template name="item-list">
-        <xsl:with-param name="parent">
-          <xsl:value-of select="." />
-        </xsl:with-param>
-      </xsl:call-template>
-    </li>
+    <xsl:if test="count(./*) > 0">
+     <li>API additions
+       <xsl:call-template name="item-list">
+         <xsl:with-param name="parent">
+           <xsl:value-of select="." />
+         </xsl:with-param>
+       </xsl:call-template>
+     </li>
+    </xsl:if>
   </xsl:template>
   <!-- this template matches the API removals -->
   <xsl:template match="removals">
-    <li>API removals
-      <xsl:call-template name="item-list">
-        <xsl:with-param name="parent">
-          <xsl:value-of select="." />
-        </xsl:with-param>
-      </xsl:call-template>
-    </li>
+    <xsl:if test="count(./*) > 0">
+     <li>API removals
+       <xsl:call-template name="item-list">
+         <xsl:with-param name="parent">
+           <xsl:value-of select="." />
+         </xsl:with-param>
+       </xsl:call-template>
+     </li>
+    </xsl:if>
   </xsl:template>
   <!-- this template matches the API deprecations -->
-  <xsl:template match="depreciations">
-    <li>API depreciations
-      <xsl:call-template name="item-list">
-        <xsl:with-param name="parent">
-          <xsl:value-of select="." />
-        </xsl:with-param>
-      </xsl:call-template>
-    </li>
+  <xsl:template match="deprecations">
+    <xsl:if test="count(./*) > 0">
+     <li>API deprecations
+       <xsl:call-template name="item-list">
+         <xsl:with-param name="parent">
+           <xsl:value-of select="." />
+         </xsl:with-param>
+       </xsl:call-template>
+     </li>
+    </xsl:if>
   </xsl:template>
 
   <!-- this template displays the contributors -->
