@@ -19,12 +19,11 @@
 * <xsl:value-of select="." />
   </xsl:for-each>
 </xsl:template>
-
   <!-- transform a release xml file to a text version of release notes -->
-
   <xsl:output method="text" />
   <!-- this template displays the features -->
   <xsl:template match="features">
+
 Features of this release
     <xsl:for-each select="feature">
       * <xsl:value-of select="." />
@@ -43,6 +42,7 @@ Known issues
 
    <xsl:choose>
     <xsl:when test="count(bug) > 0">
+
 Bugs fixed in this release
      <xsl:for-each select="bug">
       * <xsl:value-of select="id" /> : <xsl:value-of select="summary" />
@@ -59,6 +59,7 @@ There were no bugs fixed in this release
 
    <xsl:choose>
     <xsl:when test="count((additions|removals|deprecations)/*) > 0">
+
 API changed in this release
      <xsl:apply-templates select="additions" />
 

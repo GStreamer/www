@@ -1,3 +1,12 @@
+2006-09-14  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/releases/gst-plugins-base/0.10.10.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.10.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	* src/htdocs/releases/text.xsl:
+	  release notes for 0.10.10
+
 2006-09-08  Tim-Philipp Müller  <tim at centricular dot net>
 
 	* src/htdocs/bugs/bugs.xml:
