@@ -78,8 +78,8 @@ plugin writer's guide</a></li>
 <li>Access to GStreamer API with <a href="&site;/bindings/">various programming languages</a></li>
 </ul>
 
-<p>GSreamer is rapidly approaching a stable API. There are still a number of
-items on our TODO lists.
+<p>GStreamer is rapidly approaching a stable API. There is still a number of
+items on our TODO list.
 <!-- - for more info, check out our <a
 href="status/">status</a>.
 -->
