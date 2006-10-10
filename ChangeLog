@@ -1,3 +1,8 @@
+2006-10-10  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/bugs/bugs.xml:
+	  Add 0.10.11 milestones for core and -base.
+
 2006-09-14  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/releases/gst-plugins-base/0.10.10.xml:

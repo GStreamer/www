@@ -10,6 +10,7 @@
     <component>gstreamer+%28core%29</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.11</milestone>
       <milestone>0.10.10</milestone>
       <milestone>0.10.9</milestone>
       <milestone>0.10.8</milestone>
@@ -59,6 +60,7 @@
     <component>gst-plugins-base</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.11</milestone>
       <milestone>0.10.10</milestone>
       <milestone>0.10.9</milestone>
       <milestone>0.10.8</milestone>
