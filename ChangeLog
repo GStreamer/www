@@ -1,3 +1,9 @@
+2006-10-27  Michael Smith  <msmith@fluendo.com>
+
+	* src/htdocs/releases/gstreamer/template.xml:
+	  11 consecutive releases with the same spelling mistake. Does nobody
+	  ever actually read the release notes?
+
 2006-10-10  Tim-Philipp Müller  <tim at centricular dot net>
 
 	* src/htdocs/bugs/bugs.xml:
