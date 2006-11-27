@@ -1,5 +1,10 @@
 2006-11-27  Edward Hervey  <edward@fluendo.com>
 
+	* src/htdocs/news/news.xml:
+	Mention the new GNonLin release in the news
+
+2006-11-27  Edward Hervey  <edward@fluendo.com>
+
 	* src/htdocs/entities.gst:
 	* src/htdocs/releases/gnonlin/0.10.6.xml:
 	* src/htdocs/releases/gnonlin/Makefile.am:
