@@ -156,5 +156,9 @@ An explanation of the plug-ins split-up in 0.9</a>
 <p><a href="&site;/documentation/rtp.html">Information from Philipe Khalaf</a>
 on the ongoing RTP development being done for GStreamer 0.9/0.10</p>
 
+<h2>Articles</h2>
+External articles discussing GStreamer in various contexts.
+<p><a href="http://www.eetimes.com/news/design/showArticle.jhtml?articleID=193401461">Article discussing DSP's and GStreamer written by Texas Instruments</a>.
+</p>
 </body>
 </page>
