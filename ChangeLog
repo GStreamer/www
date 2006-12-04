@@ -1,3 +1,12 @@
+2006-12-04  Edward Hervey  <edward@fluendo.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-python/0.10.6.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	gst-python 0.10.6 "You're not very subtle, but you are effective"
+	release.
+
 2006-11-27  Edward Hervey  <edward@fluendo.com>
 
 	* src/htdocs/news/news.xml:
