@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Love never runs on time</name>
+  <version>0.10.11</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Base sink classes now fully support reverse playback modes</feature>
+    <feature>Optimisations and bug-fixes</feature>
+    <feature>Documentation improvements</feature>
+    <feature>New API for network buffering</feature>
+    <feature>Reduction in exported DLL symbols</feature>
+    <feature>Pad blocking now works correctly</feature>
+    <feature>Introduction of the MultiQueue object for building queue-like objects</feature>
+    <feature>Many other bug-fixes and enhancements</feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
+Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
+Let us know if you want to be added to this list.
+</p>
+  </applications>
+
+              <contributors>
+	<person>Alessandro Decina</person>
+	<person>Antoine Tremblay</person>
+	<person>Christian F.K. Schaller</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jan David Mol</person>
+	<person>Jan Schmidt</person>
+	<person>Jonathan Matthew</person>
+	<person>Josep Torre Valles</person>
+	<person>Kjartan Maraas</person>
+	<person>Marcus Granado</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Smith</person>
+	<person>Peter Kjellerstedt</person>
+	<person>René Stadler</person>
+	<person>Sebastian Droege</person>
+	<person>Sebastien Cote</person>
+	<person>Sergey Scobich</person>
+	<person>Sjoerd Simons</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Yves Lefebvre</person>
+	<person>Zaheer Abbas Merali</person>
+	<person>gorshkov</person>
+	<person>mrcgran</person>
+  </contributors>
+
+
+
+
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>363095</id>
+      <summary>[BaseTransform] Outputs empty buffers</summary>
+    </bug>
+    <bug>
+      <id>353301</id>
+      <summary>aborts in _get_element_by_uri(), probably due to buggy el...</summary>
+    </bug>
+    <bug>
+      <id>344639</id>
+      <summary>Separate threadsafe queuing functionnality in a separate ...</summary>
+    </bug>
+    <bug>
+      <id>347785</id>
+      <summary>[multiqueue] New multiple input-output queue</summary>
+    </bug>
+    <bug>
+      <id>352827</id>
+      <summary>re-negotiation issues with dynamic pipelines and level or...</summary>
+    </bug>
+    <bug>
+      <id>357180</id>
+      <summary>[libs] gst_controller_new* functions don't increase refco...</summary>
+    </bug>
+    <bug>
+      <id>318031</id>
+      <summary>gstreamer should use gmodule-no-export in its .pc file</summary>
+    </bug>
+    <bug>
+      <id>340878</id>
+      <summary>Registry doesn't discard removed plugin features</summary>
+    </bug>
+    <bug>
+      <id>345496</id>
+      <summary>No GstPadDirection in files created by GstXml</summary>
+    </bug>
+    <bug>
+      <id>356910</id>
+      <summary>Basesrc gst_base_src_activate_push not calling base_src_s...</summary>
+    </bug>
+    <bug>
+      <id>357593</id>
+      <summary>Generated gst-element-check.m4 installed from $(srcdir)</summary>
+    </bug>
+    <bug>
+      <id>358436</id>
+      <summary>#include is missing in gstghostpad.c and gstquery.c</summary>
+    </bug>
+    <bug>
+      <id>358999</id>
+      <summary>[PATCH] [GstPad] Flushing on blocked pads not handled cor...</summary>
+    </bug>
+    <bug>
+      <id>359850</id>
+      <summary>Compiling issues on sparc with Forte</summary>
+    </bug>
+    <bug>
+      <id>360151</id>
+      <summary>Fixes compiling with forte: disable warning as error for ...</summary>
+    </bug>
+    <bug>
+      <id>360173</id>
+      <summary>Fixes compiling with forte: warning clean up (part 1)</summary>
+    </bug>
+    <bug>
+      <id>360467</id>
+      <summary>[API] add gst_tag_list_is_empty ()</summary>
+    </bug>
+    <bug>
+      <id>360860</id>
+      <summary>Fixes compiling with forte: warning clean up (part 2)</summary>
+    </bug>
+    <bug>
+      <id>361675</id>
+      <summary>Allow applications to use libxml2 and GStreamer even if  ...</summary>
+    </bug>
+    <bug>
+      <id>361720</id>
+      <summary>grammar project: error generating gstmarshal.c and gstmar...</summary>
+    </bug>
+    <bug>
+      <id>361730</id>
+      <summary>wrong source file list in VC8 project</summary>
+    </bug>
+    <bug>
+      <id>361732</id>
+      <summary> &quot; win32\common\libgstreamer.def &quot; lacks 'gst_caps_merge' entry</summary>
+    </bug>
+    <bug>
+      <id>361769</id>
+      <summary>Deadlock in gstpad.c</summary>
+    </bug>
+    <bug>
+      <id>364388</id>
+      <summary>size variable is not always initialized in gst_base_src_s...</summary>
+    </bug>
+    <bug>
+      <id>366321</id>
+      <summary>GST_SEGMENT_FORMAT not defined on windows</summary>
+    </bug>
+    <bug>
+      <id>370865</id>
+      <summary>[basesrc] update segment duration in gst_base_src_update_...</summary>
+    </bug>
+    <bug>
+      <id>371493</id>
+      <summary>Incomplete change of printf conversion specifiers in gstr...</summary>
+    </bug>
+    <bug>
+      <id>374475</id>
+      <summary>[PATCH] minor doc typo</summary>
+    </bug>
+    <bug>
+      <id>377332</id>
+      <summary>[PATCH] Warning with check &gt; = 0.9.4</summary>
+    </bug>
+    <bug>
+      <id>381175</id>
+      <summary>[PATCH] fix vs8 compilation</summary>
+    </bug>
+    <bug>
+      <id>357617</id>
+      <summary>[libs] gst_controller_set_from_list can return without un...</summary>
+    </bug>
+    <bug>
+      <id>358737</id>
+      <summary>_gst_event_copy sets the wrong parent_refcount on the chi...</summary>
+    </bug>
+    <bug>
+      <id>366212</id>
+      <summary>Fix some misspellings in gstreamer core</summary>
+    </bug>
+    <bug>
+      <id>369366</id>
+      <summary>MacOSX printf fixes for CVS</summary>
+    </bug>
+    <bug>
+      <id>371894</id>
+      <summary>tests/examples/typefind is broken</summary>
+    </bug>
+    <bug>
+      <id>355499</id>
+      <summary>ensure_current_registry_forking()  fails if zombie alread...</summary>
+    </bug>
+    <bug>
+      <id>352345</id>
+      <summary>Small race condition in the queue element</summary>
+    </bug>
+    <bug>
+      <id>357432</id>
+      <summary>[libs] GstController needs to keep controlled objects alive</summary>
+    </bug>
+    <bug>
+      <id>358613</id>
+      <summary>sink- &gt; file is never reset for filesink elements, even tho...</summary>
+    </bug>
+    <bug>
+      <id>366286</id>
+      <summary>[PATCH] fix compilation on Windows</summary>
+    </bug>
+    <bug>
+      <id>366572</id>
+      <summary>Bad declaration in headerfile</summary>
+    </bug>
+    <bug>
+      <id>367677</id>
+      <summary>[fdsrc] skips the first byte</summary>
+    </bug>
+    <bug>
+      <id>369942</id>
+      <summary>[PATCH] unblocking blocked pad does not release all block...</summary>
+    </bug>
+  </bugs>
+</release>
