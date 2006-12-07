@@ -108,11 +108,11 @@ Other modules containing plug-ins are:
 
   <api>
     <additions>
-    <addition>Add new interface GstVideoOrientation</addition>
-    <addition>gst_base_rtp_depayload_push_ts</addition>
-    <addition>gst_base_rtp_depayload_push</addition>
-    <addition>add dropped_buffers to the get-stats GValueArray for multifdsink</addition>
-    <addition>gst_ring_buffer_commit_full</addition>
+    <item>Add new interface GstVideoOrientation</item>
+    <item>gst_base_rtp_depayload_push_ts</item>
+    <item>gst_base_rtp_depayload_push</item>
+    <item>add dropped_buffers to the get-stats GValueArray for multifdsink</item>
+    <item>gst_ring_buffer_commit_full</item>
     </additions>
     <deprecations>
     </deprecations>
