@@ -89,32 +89,21 @@ Let us know if you want to be added to this list.
 	<person>mrcgran</person>
   </contributors>
 
-
-
-
-
-
-
-<!--
   <api>
     <additions>
+    <item>gst_message_new_buffering</item>
+    <item>gst_message_parse_buffering</item>
+    <item>gst_base_sink_wait_preroll</item>
+    <item>gst_base_src_wait_playing</item>
+    <item>gst_pad_is_blocking()</item>
+    <item>GST_PAD_IS_BLOCKING() macro</item>
+    <item>GST_PAD_BLOCKING GstPadFlag</item>
+    <item>gst_tag_list_is_empty</item>
+    <item>gst_element_state_change_return_get_name</item>
     </additions>
     <deprecations>
     </deprecations>
   </api>
--->
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
   <bugs>
     <bug>

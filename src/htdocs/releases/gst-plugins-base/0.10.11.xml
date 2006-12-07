@@ -73,7 +73,6 @@ Other modules containing plug-ins are:
   <applications>
   </applications>
     <contributors>
-	<person></person>
 	<person>David Schleef</person>
 	<person>Edgard Lima</person>
 	<person>Edward Hervey</person>
@@ -98,13 +97,6 @@ Other modules containing plug-ins are:
 	<person>Young-Ho Cha</person>
 	<person>Zaheer Abbas Merali</person>
   </contributors>
-
-
-
-
-
-
-
 
   <api>
     <additions>
