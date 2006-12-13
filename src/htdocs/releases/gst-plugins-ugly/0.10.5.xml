@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-ugly</module>
+  <module-fancy>GStreamer Ugly Plug-ins</module-fancy>
+  <name>She said</name>
+  <version>0.10.5</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Ugly Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"When you have to shoot, shoot.  Don't talk."</i>
+</p>
+<p>
+There are times when the world needs a color between black and white.
+Quality code to match the good's, but two-timing, backstabbing and ready to
+sell your freedom down the river.  These plug-ins might have a patent noose
+around their neck, or a lock-up license, or any other problem that makes you
+think twice about shipping them.
+</p>
+<p>
+We don't call them ugly because we like them less.  Does a mother love her
+son less because he's not as pretty as the other ones ? No  - she commends
+him on his great personality.  These plug-ins are the life of the party.
+And we'll still step in and set them straight if you report any unacceptable
+behaviour - because there are two kinds of people in the world, my friend:
+those with a rope around their neck and the people who do the cutting.
+</p>
+<p>
+This module contains a set of plug-ins that have good quality and correct
+functionality, but distributing them might pose problems.  The license
+on either the plug-ins or the supporting libraries might not be how we'd
+like. The code might be widely known to present patent problems.
+Distributors should check if they want/can ship these plug-ins.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Improved asf playback</feature>
+    <feature>Fixes to MPEG demuxer</feature>
+    <feature>Improved Real playback</feature>
+    <feature>Fix crasher bugs in the MPEG video decoder</feature>
+    <feature>DVD-read-src improvements</feature>
+    <feature>mp3 parser fixes</feature>
+    <feature>Threadsafe design and API</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+        <contributors>
+	<person>David Schleef</person>
+	<person>Jan Arne Petersen</person>
+	<person>Jan Schmidt</person>
+	<person>Josep Torra Valles</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Martin Zlomek</person>
+	<person>Michael Smith</person>
+	<person>Michal Benes</person>
+	<person>Roland Kay</person>
+	<person>Sebastian Droege</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Yves Lefebvre</person>
+  </contributors>
+
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>361584</id>
+      <summary>[mpeg2dec] framerate=0/0 on caps leads to crash</summary>
+    </bug>
+    <bug>
+      <id>162417</id>
+      <summary>[mpeg] movie skips</summary>
+    </bug>
+    <bug>
+      <id>340433</id>
+      <summary>[dvdread] fails to play certain DVDs with playbin and Totem</summary>
+    </bug>
+    <bug>
+      <id>348002</id>
+      <summary>AC3 5.1 foreground movie sound cannot be heard in Totem/g...</summary>
+    </bug>
+    <bug>
+      <id>350761</id>
+      <summary>[a52dec] Select output format based on peer element caps</summary>
+    </bug>
+    <bug>
+      <id>350778</id>
+      <summary>[mpegdemux] Send update newsegments</summary>
+    </bug>
+    <bug>
+      <id>356004</id>
+      <summary>[mpeg2dec] memory corruption</summary>
+    </bug>
+    <bug>
+      <id>361140</id>
+      <summary>[lame] lame bitrate=196 errors out in setup</summary>
+    </bug>
+    <bug>
+      <id>362639</id>
+      <summary>Fixes compiling with forte: warning clean up (part 6)</summary>
+    </bug>
+    <bug>
+      <id>369627</id>
+      <summary>[mpeg2dec] unit test addition and memleak fix</summary>
+    </bug>
+    <bug>
+      <id>374760</id>
+      <summary>[PATCH] last buffer sent by lame may not have (valid) tim...</summary>
+    </bug>
+    <bug>
+      <id>374914</id>
+      <summary>this mp4 video doesn't play correctly (codec problem)</summary>
+    </bug>
+    <bug>
+      <id>384447</id>
+      <summary>totem crashes while trying to play dvd on ppc</summary>
+    </bug>
+    <bug>
+      <id>385192</id>
+      <summary>mpegparse accesses random memory</summary>
+    </bug>
+    <bug>
+      <id>334322</id>
+      <summary>[mpegdemux] playbin freezes with VobSub subtitles</summary>
+    </bug>
+    <bug>
+      <id>384989</id>
+      <summary>misparsing of Real Media mux leads to buffer overrun</summary>
+    </bug>
+    <bug>
+      <id>384996</id>
+      <summary>Tailored or broken Real Media mux file crashes RM demuxer</summary>
+    </bug>
+    <bug>
+      <id>327350</id>
+      <summary>[mpeg2dec] altivec crashes on misaligned buffers</summary>
+    </bug>
+    <bug>
+      <id>350723</id>
+      <summary>[mad] Wrong output buffer timestamping</summary>
+    </bug>
+  </bugs>
+</release>

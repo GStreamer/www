@@ -2712,4 +2712,22 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2006-12-13 21:56</date>
+    <title>GStreamer "Ugly" Plugins 0.10.5 and GStreamer FFmpeg Plugins 0.10.2 stable releases</title>
+    <content>
+<p>
+The GStreamer team is excessively happy to announce new Core and Base Plugins
+releases in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-ugly/0.10.5.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-ffmpeg/0.10.11.html">gst-ffmpeg</a> and
+or download tarballs for
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.5.tar.bz2">gst-plugins-ugly</a> and
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.2.tar.bz2">gst-ffmpeg</a>.
+</p>
+    </content>
+  </item>
 </news>

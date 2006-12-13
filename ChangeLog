@@ -1,3 +1,12 @@
+2006-12-13  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.10.2.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	* src/htdocs/releases/gst-plugins-ugly/0.10.5.xml:
+	* src/htdocs/releases/gst-plugins-ugly/Makefile.am:
+	Release 0.10.2 of gst-ffmpeg and 0.10.5 of gst-plugins-ugly
+
 2006-12-07  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* src/htdocs/releases/gst-plugins-base/0.10.11.xml:
