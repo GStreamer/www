@@ -10,7 +10,9 @@
   <title>GStreamer: download for Fedora Core</title>
   <body>
 
-<h2>Download instructions for Fedora Core</h2>
+<h2>Download instructions for Fedora Core 1 - 4</h2>
+<i>Note: For FC5 and newer, see <A href="http://fedora5.html"></i>
+
 <P>
 GStreamer is distributed with Fedora Core.
 Fedora Core 2, 3, and 4 have shipped with GStreamer 0.8

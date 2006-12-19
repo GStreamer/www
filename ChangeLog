@@ -1,3 +1,9 @@
+2006-12-19  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/download/fedora.xml:
+	* src/htdocs/download/fedora5.xml:
+	  Make the difference between the two fedora pages more clear.
+
 2006-12-14  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* src/htdocs/entities.gst:
