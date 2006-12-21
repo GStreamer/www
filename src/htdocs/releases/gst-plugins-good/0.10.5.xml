@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>The Path of Thorns</name>
+  <version>0.10.5</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+    <feature>RTP/RTSP improvements</feature>
+    <feature>Fixes in OSS support</feature>
+    <feature>Addition of the audiopanorama element</feature>
+    <feature>Improvements in AVI playback</feature>
+    <feature>Annodex playback fixes</feature>
+    <feature>Support FLAC in OGG and Matroska</feature>
+    <feature>Fixes in the Speex decoder</feature>
+    <feature>V4L2 source moved from Bad Plugins</feature>
+    <feature>SMPTE element ported to 0.10</feature>
+    <feature>GStreamer Data Protocol (GDP) Payloader and Depayloader elements added</feature>
+    <feature>Many other bug-fixes</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+        <contributors>
+	<person>Alessandro Decina</person>
+	<person>Andy Wingo</person>
+	<person>Antoine Tremblay</person>
+	<person>Brian Cameron</person>
+	<person>Darren Kenny</person>
+	<person>David Schleef</person>
+	<person>Edgard Lima</person>
+	<person>Edward Hervey</person>
+	<person>Fredrik Persson</person>
+	<person>Frédéric Riss</person>
+	<person>Jan Schmidt</person>
+	<person>Jens Granseuer</person>
+	<person>Jerome Alet</person>
+	<person>Jerry Tan</person>
+	<person>Jonas Holmberg</person>
+	<person>Jonathan Matthew</person>
+	<person>Josep Torra Valles</person>
+	<person>Lutz Mueller</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michal Benes</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Philippe Kalaf</person>
+	<person>René Stadler</person>
+	<person>Rob Taylor</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastien Cote</person>
+	<person>Sergey Scobich</person>
+	<person>Sjoerd Simons</person>
+	<person>Stefan Kost</person>
+	<person>Thijs Vermeir</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vijay Santhanam</person>
+	<person>Ville Syrjala</person>
+	<person>Wim Taymans</person>
+	<person>Yves Lefebvre</person>
+  </contributors>
+
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>336465</id>
+      <summary>[patch] Streaming support for avidemuxer</summary>
+    </bug>
+    <bug>
+      <id>349207</id>
+      <summary>[PLUGIN-ADD] audiopanorama</summary>
+    </bug>
+    <bug>
+      <id>341278</id>
+      <summary>[autoaudiosink] should fallback to fakesink</summary>
+    </bug>
+    <bug>
+      <id>342950</id>
+      <summary>Implement device profiles in autoaudiosink/autoaudiosrc</summary>
+    </bug>
+    <bug>
+      <id>348233</id>
+      <summary>dv1394src crashes with libavc1394 0.5.3 - cause known</summary>
+    </bug>
+    <bug>
+      <id>349015</id>
+      <summary>[sunaudio] open source with O_NONBLOCK</summary>
+    </bug>
+    <bug>
+      <id>349894</id>
+      <summary>RTSP Multicast</summary>
+    </bug>
+    <bug>
+      <id>351347</id>
+      <summary>--disable-schemas-install now works too well</summary>
+    </bug>
+    <bug>
+      <id>351794</id>
+      <summary>[id3demux] try harder to extract wrongly marked strings</summary>
+    </bug>
+    <bug>
+      <id>352577</id>
+      <summary>[avidemux] regression in CVS with Elephant's Dream</summary>
+    </bug>
+    <bug>
+      <id>355210</id>
+      <summary>Sample pipeline from the documentation doesn't work properly</summary>
+    </bug>
+    <bug>
+      <id>356142</id>
+      <summary>GST Sun Audio Mixer doesn't set only Output Track as Mast...</summary>
+    </bug>
+    <bug>
+      <id>356147</id>
+      <summary>[avimux] duration in header not correct for big avi ( &gt; 2 ...</summary>
+    </bug>
+    <bug>
+      <id>357592</id>
+      <summary>Avoid compiler warnings with uClibc and -Werror</summary>
+    </bug>
+    <bug>
+      <id>361637</id>
+      <summary>h263 variant missing from RTP (de)payloaders' caps</summary>
+    </bug>
+    <bug>
+      <id>361639</id>
+      <summary>MPA payloader's payload number is incorrect</summary>
+    </bug>
+    <bug>
+      <id>362603</id>
+      <summary>Fixes compiling with forte: warning clean up (part 4)</summary>
+    </bug>
+    <bug>
+      <id>362673</id>
+      <summary>Playback with 4Front OSS driver not working due to blocki...</summary>
+    </bug>
+    <bug>
+      <id>366492</id>
+      <summary>add windows vs8 project files</summary>
+    </bug>
+    <bug>
+      <id>369621</id>
+      <summary>[avidemux] Out-of-sync playback with VBR MP3 audio</summary>
+    </bug>
+    <bug>
+      <id>372021</id>
+      <summary>flxdec has wrong classification</summary>
+    </bug>
+    <bug>
+      <id>374213</id>
+      <summary>Seeking with LADSPA plug-ins fails</summary>
+    </bug>
+    <bug>
+      <id>374479</id>
+      <summary>[PATCH] videomixer memleak fix and enhancement</summary>
+    </bug>
+    <bug>
+      <id>374737</id>
+      <summary>[matroskademux] doesn't recognise opaque &quot; A_AAC &quot; codec ID</summary>
+    </bug>
+    <bug>
+      <id>376594</id>
+      <summary>id3demux crashes when reading compressed ID3 frames</summary>
+    </bug>
+    <bug>
+      <id>379433</id>
+      <summary>[PATCH] avidemux audio pad reports wrong position upon query</summary>
+    </bug>
+    <bug>
+      <id>379792</id>
+      <summary>Remove memcpy in multipartmux and fix RFC compliance</summary>
+    </bug>
+    <bug>
+      <id>379918</id>
+      <summary>Doesn't compile with newer libcaca versions (0.99.beta4+)</summary>
+    </bug>
+    <bug>
+      <id>380199</id>
+      <summary>[matroskademux] Wrong framerate conversion</summary>
+    </bug>
+    <bug>
+      <id>380825</id>
+      <summary>make avimux accept video/mpeg in versions 1, 2 and 4</summary>
+    </bug>
+    <bug>
+      <id>381857</id>
+      <summary>[id3v2mux] crashes trying to write empty frames</summary>
+    </bug>
+    <bug>
+      <id>382179</id>
+      <summary>Videomixer shouldn't reset position to 0 when the caps ar...</summary>
+    </bug>
+    <bug>
+      <id>382277</id>
+      <summary>multipartmux modifies buffer timestamp</summary>
+    </bug>
+    <bug>
+      <id>382982</id>
+      <summary>[apedemux] Fails to read track gain or other doubles</summary>
+    </bug>
+    <bug>
+      <id>383001</id>
+      <summary>[PATCH] if using multicast in udpsrc, bind to the multica...</summary>
+    </bug>
+    <bug>
+      <id>383043</id>
+      <summary>Videomixer can crash when adding/removing pads  while pla...</summary>
+    </bug>
+    <bug>
+      <id>383596</id>
+      <summary>mixer doesnot work if set AUDIODEV on solaris</summary>
+    </bug>
+    <bug>
+      <id>384587</id>
+      <summary>libcaca check breaks cross-compile</summary>
+    </bug>
+    <bug>
+      <id>385031</id>
+      <summary>[id3demux] autoplug loop if first buffer has nonzero offs...</summary>
+    </bug>
+    <bug>
+      <id>385623</id>
+      <summary>[quarktv] crash when plugged dynamically into a pipeline</summary>
+    </bug>
+    <bug>
+      <id>343348</id>
+      <summary>[matroska] add support for vobsub subtitles</summary>
+    </bug>
+    <bug>
+      <id>345449</id>
+      <summary>[icydemux] Internet radio hangs when connecting to radio....</summary>
+    </bug>
+    <bug>
+      <id>348762</id>
+      <summary>[ID3v2] comment frame extraction/writing doesn't retain d...</summary>
+    </bug>
+    <bug>
+      <id>351116</id>
+      <summary>'make check' tries to run annodex unit tests even if anno...</summary>
+    </bug>
+    <bug>
+      <id>352110</id>
+      <summary>[flacdec] no support for ogg flac</summary>
+    </bug>
+    <bug>
+      <id>366155</id>
+      <summary>[matroskademux] Several problems in encoding handling code</summary>
+    </bug>
+    <bug>
+      <id>374658</id>
+      <summary>[matroskamux] add tag writing support and implement relea...</summary>
+    </bug>
+    <bug>
+      <id>378184</id>
+      <summary>g-s-p crash due to incorrect free from do_toggle_element</summary>
+    </bug>
+    <bug>
+      <id>360673</id>
+      <summary>[PATCH] Stuttering with SunAudio Sink</summary>
+    </bug>
+    <bug>
+      <id>349068</id>
+      <summary>multipart demuxer improvements</summary>
+    </bug>
+    <bug>
+      <id>350006</id>
+      <summary>[LADSPA] after changing state from PLAYING to READY/NULL,...</summary>
+    </bug>
+    <bug>
+      <id>350340</id>
+      <summary>CMML test cases and small fixes</summary>
+    </bug>
+    <bug>
+      <id>350785</id>
+      <summary>[ossmixer] provides no way to set mixer device</summary>
+    </bug>
+    <bug>
+      <id>353908</id>
+      <summary>Error seeking at the beginning of a CMML file</summary>
+    </bug>
+    <bug>
+      <id>356596</id>
+      <summary>[wavparse] Does not support GSM encoded audio</summary>
+    </bug>
+    <bug>
+      <id>358156</id>
+      <summary>in udpsrc.c gst_udpsrc_create function read command could...</summary>
+    </bug>
+    <bug>
+      <id>361252</id>
+      <summary>Memory leak in udpsrc</summary>
+    </bug>
+    <bug>
+      <id>364958</id>
+      <summary>[avidemux] broken timestamping in streaming mode</summary>
+    </bug>
+    <bug>
+      <id>367221</id>
+      <summary>[PATCH] videomixer does not mix for some framerate combin...</summary>
+    </bug>
+    <bug>
+      <id>368162</id>
+      <summary>iLBc rtp payloaders and depayloaders not compiled</summary>
+    </bug>
+    <bug>
+      <id>377792</id>
+      <summary>rtspsrc tries to stream application/x-wms-rtx</summary>
+    </bug>
+    <bug>
+      <id>383323</id>
+      <summary>smpte doesn't handle sink1 and sink2 correctly</summary>
+    </bug>
+    <bug>
+      <id>383726</id>
+      <summary>[audiopanorama] only transforms half of the samples in fl...</summary>
+    </bug>
+    <bug>
+      <id>349901</id>
+      <summary>[LADSPA] gst_element_class_add_pad_template: assertion `g...</summary>
+    </bug>
+    <bug>
+      <id>375476</id>
+      <summary>v4l2src cannot close /dev/video0</summary>
+    </bug>
+  </bugs>
+
+</release>

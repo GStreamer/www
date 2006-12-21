@@ -2717,16 +2717,34 @@ or download tarballs for
     <title>GStreamer "Ugly" Plugins 0.10.5 and GStreamer FFmpeg Plugins 0.10.2 stable releases</title>
     <content>
 <p>
-The GStreamer team is excessively happy to announce new Core and Base Plugins
+The GStreamer team is excessively happy to announce new "Ugly" and FFmpeg 
+Plugins releases in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-ugly/0.10.5.html">gst-plugins-ugly</a> and
+<a href="&site;/releases/gst-ffmpeg/0.10.2.html">gst-ffmpeg</a>, 
+or download tarballs for
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.5.tar.bz2">gst-plugins-ugly</a> and
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.2.tar.bz2">gst-ffmpeg</a>.
+</p>
+    </content>
+  </item>
+  <item>
+    <date>2006-12-21 17:00</date>
+    <title>GStreamer "Good" Plugins 0.10.5 and GStreamer "Bad" Plugins 0.10.4 stable releases</title>
+    <content>
+<p>
+The GStreamer team is fairly pleased to announce new "Good" and "Bad" Plugins
 releases in the 0.10 GStreamer stable release series.
 </p>
 <p>
 Check out release notes for
-<a href="&site;/releases/gst-plugins-ugly/0.10.5.html">gst-plugins-ugly</a>,
-<a href="&site;/releases/gst-ffmpeg/0.10.2.html">gst-ffmpeg</a> and
+<a href="&site;/releases/gst-plugins-good/0.10.5.html">gst-plugins-good</a> and
+<a href="&site;/releases/gst-plugins-bad/0.10.4.html">gst-plugins-bad</a>,
 or download tarballs for
-<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.5.tar.bz2">gst-plugins-ugly</a> and
-<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.2.tar.bz2">gst-ffmpeg</a>.
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.5.tar.bz2">gst-plugins-good</a> and
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.4.tar.bz2">gst-plugins-bad</a>.
 </p>
     </content>
   </item>

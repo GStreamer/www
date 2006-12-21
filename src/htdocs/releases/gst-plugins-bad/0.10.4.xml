@@ -1,0 +1,395 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plug-ins</module-fancy>
+  <name>Black Bugs</name>
+  <version>0.10.4</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Bad Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plug-ins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plug-ins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plug-ins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+    <feature>V4L2 source element moved to Good plugins</feature>
+    <feature>Many improvements in Quicktime playback</feature>
+    <feature>Xvid encoding and decoding improvements</feature>
+    <feature>FAAD decoder fixes</feature>
+    <feature>New element: alsaspdifsink for IEC958 output</feature>
+    <feature>Spectrum FFT analysis element ported</feature>
+    <feature>New element: h264parse. H.264 Parser</feature>
+    <feature>Fixes in bz2 support</feature>
+    <feature>New element: theoraexpdec. Libtheoraexp based Theora decoder</feature>
+    <feature>New element: wavpackenc. Wavpack decoder</feature>
+    <feature>Improvements in the libneon based http source</feature>
+    <feature>gstfilter ported to 0.10</feature>
+    <feature>mpeg2enc ported to 0.10</feature>
+    <feature>New element: nsfdec. NSF decoder</feature>
+    <feature>New element: spcdec. libopenspc based SPC decoder</feature>
+    <feature>videocrop ported/re-written from 0.8</feature>
+    <feature>cdaudio element ported to 0.10</feature>
+    <feature>New element: rganalysis. ReplayGain analysis element</feature>
+    <feature>New element: dvbsrc. DVB source element (disabled by default)</feature>
+    <feature>deinterlace (Simple deinterlacer) ported from 0.8</feature>
+    <feature>New element: nuvdemux. NUV video demuxer</feature>
+    <feature>Fixes in the DirectDraw output elements</feature>
+    <feature>New elements: multifilesrc, multifilesink</feature>
+    <feature>y4mencode ported from 0.8</feature>
+    <feature>rfbsrc, librfb based capture source ported from 0.8</feature>
+    <feature>New element: jackaudiosink. JACK audio output element</feature>
+    <feature>Many other fixes and improvements</feature>
+  </features>
+
+  <applications>
+  </applications>
+      <contributors>
+	<person>Andre Moreira Magalhaes</person>
+	<person>Andrew Andkjar</person>
+	<person>Chris Lee</person>
+	<person>David Schleef</person>
+	<person>Edgard Lima</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Johan Dahlin</person>
+	<person>Jonathan Matthew</person>
+	<person>Josep Torra Valles</person>
+	<person>Julien MOUTTE</person>
+	<person>Lutz Mueller</person>
+	<person>Lutz Müller</person>
+	<person>Maciej Katafiasz</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Martin Szulecki</person>
+	<person>Mathis Hofer</person>
+	<person>Michael Smith</person>
+	<person>Michal Benes</person>
+	<person>Milosz Derezynski</person>
+	<person>Renato Filho</person>
+	<person>René Stadler</person>
+	<person>Rosfran Borges</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastien Moutte</person>
+	<person>Sergey Scobich</person>
+	<person>Stefan Kost</person>
+	<person>Stefan Kost,,,</person>
+	<person>Thadeu Lima de Souza Cascardo</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Wouter Paesen</person>
+	<person>Young-Ho Cha</person>
+	<person>Zaheer Abbas Merali</person>
+  </contributors>
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>379261</id>
+      <summary>crash in Movie Player: Trying to play a partial...</summary>
+    </bug>
+    <bug>
+      <id>151192</id>
+      <summary>[PATCH] nsf decoder</summary>
+    </bug>
+    <bug>
+      <id>124580</id>
+      <summary>[jacksink] plugin needs a maintainer/love/to be updated</summary>
+    </bug>
+    <bug>
+      <id>330632</id>
+      <summary>[qtdemux] MP3 stream in MP4 container not playable</summary>
+    </bug>
+    <bug>
+      <id>335507</id>
+      <summary>[FAAD] blur_warhammer.mp4 movie doesn't transcode</summary>
+    </bug>
+    <bug>
+      <id>339462</id>
+      <summary>[PATCH] xvid plugin to support more capabilities of XviD ...</summary>
+    </bug>
+    <bug>
+      <id>340638</id>
+      <summary>New plugin: h264 parse element</summary>
+    </bug>
+    <bug>
+      <id>341231</id>
+      <summary>[qtdemux] [faad] audio in some superman trailers doesn't ...</summary>
+    </bug>
+    <bug>
+      <id>341461</id>
+      <summary>gst-plugins-bad missing -no-undefined again</summary>
+    </bug>
+    <bug>
+      <id>341563</id>
+      <summary>[faad] fails to decode middle of file, should just skip o...</summary>
+    </bug>
+    <bug>
+      <id>343031</id>
+      <summary>v4l2src caps negotion is faulty</summary>
+    </bug>
+    <bug>
+      <id>343131</id>
+      <summary>[wavpack] add wavpack encoder</summary>
+    </bug>
+    <bug>
+      <id>343184</id>
+      <summary>[mpeg2enc] ported to 0.10</summary>
+    </bug>
+    <bug>
+      <id>343866</id>
+      <summary>cygwin fixes</summary>
+    </bug>
+    <bug>
+      <id>344472</id>
+      <summary>[wavpackdec] should post audio codec tag and extract bitrate</summary>
+    </bug>
+    <bug>
+      <id>344821</id>
+      <summary>[pitch] controllable properties</summary>
+    </bug>
+    <bug>
+      <id>344944</id>
+      <summary>AAC Support crashes with some files</summary>
+    </bug>
+    <bug>
+      <id>345182</id>
+      <summary>[neonhttpsrc] fails to compile with libneon 0.26.x</summary>
+    </bug>
+    <bug>
+      <id>345336</id>
+      <summary>modplug plugin doesn't work on AMD64</summary>
+    </bug>
+    <bug>
+      <id>345653</id>
+      <summary>[videocrop] port to 0.10, support all common formats</summary>
+    </bug>
+    <bug>
+      <id>346853</id>
+      <summary>[PATCH] ported gstfilter elements to 0.10</summary>
+    </bug>
+    <bug>
+      <id>347079</id>
+      <summary>[qtdemux] plugin doesn't decode Year</summary>
+    </bug>
+    <bug>
+      <id>347443</id>
+      <summary>[wavpack] port parser/decoder to official API and random ...</summary>
+    </bug>
+    <bug>
+      <id>347935</id>
+      <summary>[nsf] warning when building RPM</summary>
+    </bug>
+    <bug>
+      <id>348220</id>
+      <summary>New libopenspc-based SPC playback plugin</summary>
+    </bug>
+    <bug>
+      <id>348976</id>
+      <summary>[xviddec] crashes after invalid unit size warning</summary>
+    </bug>
+    <bug>
+      <id>350399</id>
+      <summary>[qtdemux] extract multiple redirect locations and require...</summary>
+    </bug>
+    <bug>
+      <id>350741</id>
+      <summary>[faac] Wrong bitrate set</summary>
+    </bug>
+    <bug>
+      <id>351495</id>
+      <summary>[wavpackparse] add support for push-based mode</summary>
+    </bug>
+    <bug>
+      <id>351557</id>
+      <summary>[wavpackparse] resync in push mode if sync was lost</summary>
+    </bug>
+    <bug>
+      <id>357069</id>
+      <summary>[rganalysis] New element: ReplayGain analysis</summary>
+    </bug>
+    <bug>
+      <id>357212</id>
+      <summary>[glimagesink] crashes if no DISPLAY</summary>
+    </bug>
+    <bug>
+      <id>361260</id>
+      <summary>New element: nuvdemux</summary>
+    </bug>
+    <bug>
+      <id>362626</id>
+      <summary>Fixes compiling with forte: warning clean up (part 5)</summary>
+    </bug>
+    <bug>
+      <id>376106</id>
+      <summary>Port rfbsrc to gst 0.10</summary>
+    </bug>
+    <bug>
+      <id>378613</id>
+      <summary>[qtdemux] non-working redirect ('alis' redirect reference...</summary>
+    </bug>
+    <bug>
+      <id>382203</id>
+      <summary>ladspa element needs to be enabled</summary>
+    </bug>
+    <bug>
+      <id>384294</id>
+      <summary>[modplug] returns position query results in attoseconds</summary>
+    </bug>
+    <bug>
+      <id>385048</id>
+      <summary>[qtdemux] Crash on a mp4 file in qtdemux_parse_trak</summary>
+    </bug>
+    <bug>
+      <id>385788</id>
+      <summary>[SECURITY] buffer overflows in modplug</summary>
+    </bug>
+    <bug>
+      <id>387076</id>
+      <summary>[wavpack] Wrong include</summary>
+    </bug>
+    <bug>
+      <id>387122</id>
+      <summary>[qtdemux] regression: crash in parse_trak</summary>
+    </bug>
+    <bug>
+      <id>387160</id>
+      <summary>[qtdemux] posts buffering message which can cause hangs</summary>
+    </bug>
+    <bug>
+      <id>351659</id>
+      <summary>[wavpackparse] fix resync in push mode, implement it in p...</summary>
+    </bug>
+    <bug>
+      <id>351663</id>
+      <summary>[wavpackenc] doesn't set correct caps on source pad</summary>
+    </bug>
+    <bug>
+      <id>352476</id>
+      <summary>[wavpack] documentation, unit tests, memleak fix</summary>
+    </bug>
+    <bug>
+      <id>366523</id>
+      <summary>[directdraw] fix playback and vs8 fixes</summary>
+    </bug>
+    <bug>
+      <id>369539</id>
+      <summary>[wavpackenc] More sensible values for GstEnums, don't sen...</summary>
+    </bug>
+    <bug>
+      <id>384140</id>
+      <summary>[neonhttpsrc] id3demux autoplug loop streaming mp3 with I...</summary>
+    </bug>
+    <bug>
+      <id>387137</id>
+      <summary>Regression: qtdemux paletted image handling</summary>
+    </bug>
+    <bug>
+      <id>349916</id>
+      <summary>[gdp] raw audio saved in gdp, when depayloading  complain...</summary>
+    </bug>
+    <bug>
+      <id>346723</id>
+      <summary>gstneonhttpsrc fails for URL</summary>
+    </bug>
+    <bug>
+      <id>347439</id>
+      <summary>[qtdemux] seeks poorly in files with slideshows</summary>
+    </bug>
+    <bug>
+      <id>349204</id>
+      <summary>[gdp] raw audio saved in gdp does not depayload correctly</summary>
+    </bug>
+    <bug>
+      <id>351825</id>
+      <summary>[qtdemux] doesn't set proper caps for RGB video</summary>
+    </bug>
+    <bug>
+      <id>367696</id>
+      <summary>[qtdemux] No support for QuickTime Animation (RLE).</summary>
+    </bug>
+    <bug>
+      <id>372243</id>
+      <summary>[PATCH] yuv4mpeg (v2) encoder ported to 0.10</summary>
+    </bug>
+    <bug>
+      <id>380610</id>
+      <summary>[rganalysis] Incorrect event handling</summary>
+    </bug>
+    <bug>
+      <id>383471</id>
+      <summary>cannot link 1 ch raw 24-bit PCM audio</summary>
+    </bug>
+    <bug>
+      <id>344987</id>
+      <summary>[PATCH] [dvbsrc] [ts-tools] gstreamer 0.10 port</summary>
+    </bug>
+  </bugs>
+</release>
