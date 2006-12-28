@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# update redhat/fedora yum repositories
+# run this from the toplevel www directory that contains data/
+# specify
+# - nothing to rebuild all
+# - a directory containing yum dirs to rebuild for those dirs
+# the argument is treated as an argument to find, so all dirs in the tree
+# below your argument will trigger a regeneration
+
+BASEDIR=data/pkg
+
+if test ! -d $BASEDIR;
+then
+  echo "Please run this script from the www directory, containing $BASEDIR"
+  exit 1
+fi
+
+if test  ! -z $1; then BASEDIR=$1; fi
+cd $BASEDIR
+# get absolute
+ABSBASEDIR=`pwd`
+
+# relative paths to repodata dirs
+REPODATAS=`find * -type d -name "repodata" | sort -r`
+for repodata in $REPODATAS;
+do
+  yum=`dirname $repodata`
+  absyum=$ABSBASEDIR/$yum
+  cd $absyum
+  if test $absyum -nt $ABSBASEDIR/$repodata
+  then
+    echo "yum repository $BASEDIR/$yum out of date, regenerating"
+    createrepo .
+  else
+    echo "yum repository $BASEDIR/$yum is up to date"
+  fi
+done

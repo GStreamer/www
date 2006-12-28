@@ -1,0 +1,67 @@
+#!/bin/sh
+
+if test ! -d data/pkg
+then
+  echo "Please run this from the directory containing data/pkg"
+  exit 1
+fi
+
+# get all packages in current dir
+find /var/tmp/mach/fedora-*-gstreamer -name "*.rpm" -exec mv {} . \;
+echo "Collected rpms:"
+ls *.rpm
+
+echo "Ctrl-C to abort, or Enter to continue:"
+read
+
+rpm --addsign *.rpm
+
+### fc5 and higher
+
+for ver in 5 6; do
+	# 0.10/gst
+	mv gstreamer-*.gst*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/gst
+	mv gstreamer-*.gst*$ver.i386.rpm data/pkg/fedora/$ver/0.10/i386/gst
+	mv gstreamer-*.gst*$ver.x86_64.rpm data/pkg/fedora/$ver/0.10/x86_64/gst
+	mv gnonlin-*.gst*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/gst
+	mv gnonlin-*.gst*$ver.i386.rpm data/pkg/fedora/$ver/0.10/i386/gst
+	mv gnonlin-*.gst*$ver.x86_64.rpm data/pkg/fedora/$ver/0.10/x86_64/gst
+
+	# 0.10/deps
+	mv *lvn*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/deps
+	mv *lvn*$ver.i386.rpm data/pkg/fedora/$ver/0.10/i386/deps
+	mv *lvn*$ver.x86_64.rpm data/pkg/fedora/$ver/0.10/x86_64/deps
+	mv *gst*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/deps
+	mv *gst*$ver.i386.rpm data/pkg/fedora/$ver/0.10/i386/deps
+	mv *gst*$ver.x86_64.rpm data/pkg/fedora/$ver/0.10/x86_64/deps
+done
+
+
+### fc4
+# gst010
+mv gstreamer010-*.gst*4.src.rpm data/pkg/fedora/4/i386/SRPMS.gst010
+mv gstreamer010-*.gst*4.i386.rpm data/pkg/fedora/4/i386/RPMS.gst010
+mv gstreamer010-*.gst*4.x86_64.rpm data/pkg/fedora/4/x86_64/RPMS.gst010
+mv gstreamer-tools-*.gst*4.src.rpm data/pkg/fedora/4/i386/SRPMS.gst010
+mv gstreamer-tools-*.gst*4.i386.rpm data/pkg/fedora/4/i386/RPMS.gst010
+mv gstreamer-tools-*.gst*4.x86_64.rpm data/pkg/fedora/4/x86_64/RPMS.gst010
+mv gnonlin-*.gst*4.src.rpm data/pkg/fedora/4/i386/SRPMS.gst010
+mv gnonlin-*.gst*4.i386.rpm data/pkg/fedora/4/i386/RPMS.gst010
+mv gnonlin-*.gst*4.x86_64.rpm data/pkg/fedora/4/x86_64/RPMS.gst010
+
+# deps
+mv *gst*4.src.rpm data/pkg/fedora/4/i386/SRPMS.deps
+mv *gst*4.i386.rpm data/pkg/fedora/4/i386/RPMS.deps
+mv *gst*4.x86_64.rpm data/pkg/fedora/4/x86_64/RPMS.deps
+
+if test ! -z "`ls *.rpm`"
+then
+  echo "RPM files still left:"
+  ls *.rpm
+  echo "Ctrl-C to abort, or Enter to continue:"
+  read
+fi
+bin/yum-rep-new data/pkg/fedora/6
+bin/yum-rep-new data/pkg/fedora/5
+bin/yum-rep data/pkg/fedora/4
+bin/data-put

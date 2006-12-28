@@ -1,0 +1,5 @@
+#!/bin/sh
+bin/apt-rep
+bin/yum-rep
+bin/data-put
+bin/data-put-sf
