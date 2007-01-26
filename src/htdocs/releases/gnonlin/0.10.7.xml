@@ -3,8 +3,8 @@
 <release>
   <module>gnonlin</module>
   <module-fancy>GNonLin Non-Linear Editing Plug-ins</module-fancy>
-  <name></name>
-  <version></version>
+  <name>Anything better ?</name>
+  <version>0.10.7</version>
 
   <intro>
 
@@ -27,20 +27,24 @@ These elements include:
 <dd>A higher-level element for using a uri in a GnlComposition</dd>
 <dt>gnlcomposition</dt>
 <dd>A container element that handles GNonLin objects</dd>
-<dt>gnloperation</dt>
-<dd>An element for using filters in a GnlComposition</dd>
 </dl>
 </p>
   </intro>
   <features>
-    <feature></feature>
+    <feature>GnlFileSource can use decodebin2 if the USE_DECODEBIN2 
+env variable is set</feature>
+    <feature>Deadlock fixes for modifying GnlComposition</feature>
   </features>
 
   <applications>
-GNonLin is primarily used by PiTiVi (http://www.pitivi.org/) and Jokosher (http://www.jokosher.org/).
+GNonLin is primarily used by PiTiVi (http://www.pitivi.org/)
   </applications>
-  <contributors>
+        <contributors>
+	<person>Edward Hervey</person>
   </contributors>
+
+
+
 
 <!--
   <api>
@@ -50,6 +54,12 @@ GNonLin is primarily used by PiTiVi (http://www.pitivi.org/) and Jokosher (http:
     </depreciations>
   </api>
 -->
+
+  
+
+  
+
+  
 
   <bugs>
   </bugs>
