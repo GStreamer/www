@@ -1,3 +1,12 @@
+2007-01-31  Edward Hervey  <edward@fluendo.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-python/0.10.7.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	Releasing gst-python 0.10.7 "You want to feel sorry for yourself,
+	Don't you ?"
+
 2007-01-26  Edward Hervey  <edward@fluendo.com>
 
 	* src/htdocs/entities.gst:
