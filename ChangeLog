@@ -1,3 +1,9 @@
+2007-02-09  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/bindings/bindings.xsl:
+	* src/htdocs/modules/modules.xsl:
+	  Fix dotext undeclared variable errors
+
 2007-01-31  Edward Hervey  <edward@fluendo.com>
 
 	* src/htdocs/entities.gst:

@@ -16,6 +16,7 @@
 
 <!-- this template writes the index file -->
 <xsl:template name="write.index">
+  <xsl:variable name="dotext">.html</xsl:variable>
   <exsl:document href="index{$dotext}" method="html">
     <xsl:call-template name="page">
       <xsl:with-param name="title">GStreamer: Bindings</xsl:with-param>
@@ -54,6 +55,7 @@ Here's a quick overview of all of our bindings :
 <!-- this template writes a separate file for each binding -->
 <xsl:template name="write.binding">
   <xsl:variable name="id"><xsl:copy-of select="id"/></xsl:variable> 
+  <xsl:variable name="dotext">.html</xsl:variable> 
   <exsl:document href="{concat ($id, $dotext)}" method="html">
     <xsl:call-template name="page">
       <xsl:with-param name="content">
