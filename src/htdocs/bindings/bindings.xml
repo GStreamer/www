@@ -13,6 +13,7 @@
     <id>python</id>
     <name>Python</name>
     <status>Released. See the <a href="&site;/modules/gst-python.html">gst-python</a> module.</status>
+    <body><p>Released. See the <a href="&site;/modules/gst-python.html">gst-python</a> module.</p></body>
   </binding>
 
   <binding>

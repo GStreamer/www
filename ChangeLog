@@ -1,5 +1,10 @@
 2007-02-09  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/htdocs/bindings/bindings.xml:
+	  put content on the python page
+
+2007-02-09  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/bindings/bindings.xsl:
 	* src/htdocs/modules/modules.xsl:
 	  Fix dotext undeclared variable errors
