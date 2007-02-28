@@ -55,6 +55,10 @@
 which is currently under development and will be able to record perfectly synchronized audio/video
 in any format supported by GStreamer.</p>
 
+<h2>Dissent</h2>
+<p><a href="http://dissent-project.org/">Dissent</a> is a audio and video player
+ written in C# and GTK+.</p>
+
 <h2>The Dave/Dina Project</h2>
 <p><a href="http://www.davedina.org/content/">The Dave/Dina Project</a> is a set-top box distribution for playing and recording TV and multimedia and much more.</p>
 
@@ -63,6 +67,9 @@ in any format supported by GStreamer.</p>
 
 <h2>Eina</h2>
 <p><a href="http://bolgo.cent.uji.es/proyectos/eina-en">Eina</a> is a traditional audio player with a GTK2 interface.</p>
+
+<h2>Exaile</h2>
+<p><a href="http://www.exaile.org/trac">Exaile</a> is a audio player for GNOME supporting a wide range of features. Its GUI and featureset is similar to that of the Amarok music player.</p>
 
 <h2>Flumotion</h2>
 <p><a href="http://www.fluendo.com">Flumotion</a> is a distributed streaming media server</p>
@@ -118,6 +125,9 @@ use with upnp media servers</p>
 
 <h2>Marlin</h2>
 <p><a href="http://marlin.sourceforge.net/">marlin</a> is a sample editor for Gnome.</p>
+
+<h2>MMS</h2>
+<p><a href="http://mms.sunsite.dk/">MMS</a> or My Media System is a media center style application.</p>
 
 <h2>Monkey Bubble</h2>
 <p><a href="http://home.gna.org/monkeybubble/">Monkey Bubble</a> a fun and cool game for GNOME using GStreamer to play some funky music and sweet sound effects.</p>
