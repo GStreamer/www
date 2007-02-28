@@ -29,10 +29,6 @@
 <h1>GStreamer applications</h1>
 <p>All applications listed alphabetically</p>
 
-<h2>acast</h2>
-<p><a href="http://zaheer.merali.org/mediawiki/index.php/Acast">acast</a> is a program for webcasting audio from your sound device to a variety of different streaming servers and has GTK+2 and console interfaces.
-</p>
-
 <h2>amaroK</h2>
 <p><a href="http://amarok.kde.org/">amaroK</a> is an audio player for KDE.</p>
 
@@ -66,7 +62,7 @@ in any format supported by GStreamer.</p>
 <p><a href="http://www.fluendo.com/elisa">Elisa</a> is a OpenGL based cross-platform media center solution.</p>
 
 <h2>Eina</h2>
-<p><a href="http://bolgo.cent.uji.es/proyectos/eina-en">Eina</a> is a traditional audio player with a GTK2 interface.</p>
+<p><a href="http://www.ikossi.org/?page=eina-en">Eina</a> is a traditional audio player with a GTK2 interface.</p>
 
 <h2>Exaile</h2>
 <p><a href="http://www.exaile.org/trac">Exaile</a> is a audio player for GNOME supporting a wide range of features. Its GUI and featureset is similar to that of the Amarok music player.</p>
@@ -136,26 +132,16 @@ use with upnp media servers</p>
 <h2>Muine</h2>
 <p><a href="http://muine.gooeylinux.org/">Muine</a> is a music player for GNOME using the Mono framework.</p>
 
-<h2>Navys</h2>
-<p><a href="http://www.navsys.org">Navsys</a> is a GPS map application and music player in one. Music player is using GStreamer.</p>
+<h2>OggConvert</h2>
+<p><a href="http://oggconvert.tristanb.net">OggConvert</a> is a tool for converting video to Ogg,Theora,Dirac and Vorbis formats.</p>
 
 <h2>Pakt</h2>
 <p><a href="http://subsignal.org/pakt/">Pakt</a> is a XML abstraction for GObjects used 
 with GStreamer to monitor and change elements parameters and pipeline structures.</p>
 
-<h2>Permovi</h2>
-<p><a href="http://forge.novell.com/modules/xfmod/project/?permovi">Permovi</a> 
-is a Linux-based HTPC (Home Theatre PC) application. It transforms a PC into a standalone CD-player/tuner/DVD-player/PVR device. Permovi is using the Mono framework.
-</p>
-
 <h2>Pitivi</h2>
 <p><a href="http://www.pitivi.org/">Pitivi</a>
 is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin non-linear video editing library.
-</p>
-
-<h2>Player</h2>
-<p><a href="http://linux-media.net/player/">Player</a>
-is a simple to use player which features inline visualizations.
 </p>
 
 <h2>Rhythmbox</h2>
@@ -164,10 +150,6 @@ is a simple to use player which features inline visualizations.
 
 <h2>Serpentine</h2>
 <p><a href="http://s1x.homelinux.net/projects/serpentine/">Serpentine</a> is a GNOME Audio cd recorder</p>
-
-<h2>Siren</h2>
-<p><a href="http://jodrell.net/projects/siren">Siren</a> lightweight GTK2 music
-player written in Perl.</p>
 
 <h2>Songbird</h2>
 <p><a href="http://www.songbirdnest.com/">Songbird</a> is a cross-platform media player written using the XUL toolkit from Mozilla.</p>
@@ -197,10 +179,6 @@ player written in Perl.</p>
 <h2>Towel</h2>
 <p><a href="http://towel.sourceforge.net/">Towel</a> is a GTKMM based music player.</p>
 
-<h2>Video-Whale</h2>
-<p><a href="videowhale.html">Video-Whale</a> is an implementation of a Gstreamer-based video-wall. Making a video wall with GStreamer is easy, this article with pictures from Zeeshan Ali shows you how.
-</p>
-
 <h2>WaveMixer</h2>
 <p><a href="http://wavemixer.sourceforge.net/">WaveMixer</a> is a multitrack sound editor written with gtkmm and GStreamer.</p>
 
@@ -219,6 +197,15 @@ simple media player made to ease debugging of GStreamer playback issues.
 <h2>Kiss</h2>
 <p>
 <a href="http://ronald.bitfreak.net/kiss.php">Kiss</a> is a simple KDE base media player meant as an example application for KDE developers who want to use GStreamer.
+</p>
+
+<h2>Permovi</h2>
+<p><a href="http://forge.novell.com/modules/xfmod/project/?permovi">Permovi</a>
+is a Linux-based HTPC (Home Theatre PC) application. It transforms a PC into a standalone CD-player/tuner/DVD-player/PVR device. Permovi is using the Mono framework.
+</p>
+
+<h2>Video-Whale</h2>
+<p><a href="videowhale.html">Video-Whale</a> is an implementation of a Gstreamer-based video-wall. Making a video wall with GStreamer is easy, this article with pictures from Zeeshan Ali shows you how.
 </p>
 
 <h2>gst-sci</h2>
