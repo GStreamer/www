@@ -4,8 +4,12 @@
 <head>
 <title><TMPL_VAR name></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="<TMPL_VAR generator ESCAPE="HTML">">
 <link rel="stylesheet" href="planet-gstreamer.css" media="screen" type="text/css">
 <link rel="shortcut icon" href="http://gstreamer.freedesktop.org/images/favicon.png">
+<TMPL_IF feedtype>
+<link rel="alternate" href="<TMPL_VAR feed ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml">
+</TMPL_IF>
 </head>
 
 <body>
@@ -14,36 +18,55 @@
 <h1><TMPL_VAR name></h1>
 </div>
 
-<div id="entry">
-<table>
-<tr><td class="videoreeltop" colspan="3"></td></tr>
-<tr><td class="topleftcorner"></td><td class="tablecell"></td><td class="toprightcorner"></td></tr>
-<tr><td class="tablecell" colspan="3">
+<div id="entries">
 <TMPL_LOOP Items>
 <TMPL_IF new_date>
+<TMPL_UNLESS __FIRST__>
+### End <div class="channelgroup">
+</div>
+### End <div class="daygroup">
+</div>
+</TMPL_UNLESS>
+<div class="daygroup">
 <h2 class="date"><TMPL_VAR new_date></h2>
 </TMPL_IF>
 
-
-<h3 class="entry"><a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title ESCAPE="HTML">"><TMPL_VAR channel_name></a><TMPL_IF title> &mdash; <a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR title></a></TMPL_IF></h3>
 <TMPL_IF new_channel>
-<TMPL_IF channel_face>
-<img class="face" src="images/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt="">
-</TMPL_IF>
-</TMPL_IF>
-
-<TMPL_VAR content>
-<p>
-<em><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_IF creator>by <TMPL_VAR creator> at </TMPL_IF><TMPL_VAR date></a></em>
-</p>
-
-</TMPL_LOOP>
-</td>
-</tr>
-<tr><td class="bottomleftcorner"></td><td class="tablecell"></td><td class="bottomrightcorner"></td></tr>
-<tr><td class="videoreelbottom" colspan="3"></td></tr>
-</table>
+<TMPL_UNLESS new_date>
+### End <div class="channelgroup">
 </div>
+</TMPL_UNLESS>
+<div class="channelgroup">
+</TMPL_IF>
+
+
+<div class="entrygroup" id="<TMPL_VAR id>"<TMPL_IF channel_language> lang="<TMPL_VAR channel_language>"</TMPL_IF>>
+<TMPL_IF title>
+<h3<TMPL_IF title_language> lang="<TMPL_VAR title_language>"</TMPL_IF>><a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">"><TMPL_VAR channel_name></a><TMPL_IF title> &mdash; <a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR title></a></TMPL_IF></h3>
+</TMPL_IF>
+<div class="entry">
+<div class="content"<TMPL_IF content_language> lang="<TMPL_VAR content_language>"</TMPL_IF>>
+<TMPL_IF channel_face>
+<img class="face" src="images/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt="(<TMPL_VAR channel_name>)">
+</TMPL_IF>
+<TMPL_VAR content>
+</div>
+
+<p class="date">
+<a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_IF author>by <TMPL_VAR author> at </TMPL_IF><TMPL_VAR date><TMPL_IF category> under <TMPL_VAR category></TMPL_IF></a>
+</p>
+</div>
+</div>
+
+<TMPL_IF __LAST__>
+### End <div class="channelgroup">
+</div>
+### End <div class="daygroup">
+</div>
+</TMPL_IF>
+</TMPL_LOOP>
+</div>
+
 <div id="sidebar">
 
 <div id="about">
@@ -54,11 +77,6 @@ Planet GStreamer is powered by <a href="http://www.planetplanet.org/">Planet</a>
 <a href="http://gstreamer.net/">GStreamer Home</a>
 </p>
 <p>
-<a href="rss10.xml"><img class="button" src="rss10.png" width="80" height="15" alt="[RSS 1.0 Feed]"></a>
-<a href="rss20.xml"><img class="button" src="rss20.png" width="80" height="15" alt="[RSS 2.0 Feed]"></a>
-<a href="foafroll.xml"><img class="button" src="foaf.png" width="80" height="15" alt="[FOAF Subscriptions]"></a>
-
-<a href="opml.xml"><img class="button" src="opml.png" width="80" height="15" alt="[OPML Subscriptions]"></a>
 <a href="http://www.catb.org/hacker-emblem/"><img class="button" src="hacker.png" width="80" height="15" alt="[Hacker]"></a>
 <a href="http://www.planetplanet.org/"><img class="button" src="planet.png" width="80" height="15" alt="[Planet]"></a>
 </p>
@@ -70,17 +88,32 @@ Planet GStreamer is powered by <a href="http://www.planetplanet.org/">Planet</a>
 </p>
 </div>
 
-<div id="weblogroll">
-<h1>Subscriptions:</h1>
+<div id="feeds">
+<h2>Feeds:</h2>
+<p>
+Planet Gstreamer has aggregated feeds available as
+<a href="atom.xml">Atom 1.0</a>,
+<a href="rss10.xml">RSS 1.0</a>, and
+<a href="rss20.xml">RSS 2.0</a>
+and subscription lists in
+<a href="foafroll.xml">FOAF</a> and
+<a href="opml.xml">OPML</a>.
+</p>
+</div>
+
+<div id="subscriptions">
+<h2>Subscriptions:</h2>
 <ul>
 <TMPL_LOOP Channels>
-<li><a href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR title ESCAPE="HTML">"><TMPL_VAR name></a> <a href="<TMPL_VAR uri ESCAPE="HTML">">(feed)</a></li>
+<li>
+<a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a> <a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe">(feed)</a>
+</li>
 </TMPL_LOOP>
 </ul>
 </div>
 
 <div id="planetarium">
-<h1>Planetarium:</h1>
+<h2>Planetarium:</h2>
 <ul>
 <li><a href="http://www.planetapache.org/">Planet Apache</a></li>
 <li><a href="http://classpath.wildebeest.org/planet/">Planet Classpath</a></li>

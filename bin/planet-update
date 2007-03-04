@@ -2,9 +2,14 @@
 # this script is run on the fdo server, so no use running at home
 # it updates Planet GStreamer
 
-cd /home/wingo/planet-gstreamer
+GSTHOME=/srv/gstreamer.freedesktop.org/
+#BUILDDIR=$GSTHOME/planet
+BUILDDIR=/home/dlehn/planet-gstreamer
+CONFDIR=$GSTHOME/www/planet
+LIVEDIR=$GSTHOME/www/htdocs/planet
+cd $BUILDDIR
 umask 0002
-python planet.py /home/srv/gstreamer.freedesktop.org/www/planet/config.ini
+python src/planet.py $CONFDIR/config.ini
 chown -R :gstreamer * 2> /dev/null
 chmod -R g+w * 2> /dev/null
-rsync -a gstreamer/planet/ /home/srv/gstreamer.freedesktop.org/www/htdocs/planet/
+rsync -a output/ $LIVEDIR/
