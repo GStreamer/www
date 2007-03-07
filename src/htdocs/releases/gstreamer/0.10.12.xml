@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Inevitable Demise</name>
+  <version>0.10.12</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Add a warning if GLib threading support is not properly initialised</feature>
+    <feature>Add support for binary registry serialisation</feature>
+    <feature>Preliminary support for pull-mode scheduling of entire chains</feature>
+    <feature>Add support for HPPA</feature>
+    <feature>Collectpads fixes</feature>
+    <feature>Lots of bug fixes</feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
+Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
+Let us know if you want to be added to this list.
+</p>
+  </applications>
+
+        <contributors>
+	<person>Andy Wingo</person>
+	<person>Carlos Sanmartin Dominguez</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Jindrich Makovicka</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michal Benes</person>
+	<person>René Stadler</person>
+	<person>Sebastian Dröge</person>
+	<person>Sjoerd Simons</person>
+	<person>Stefan Kost</person>
+	<person>Sébastien Moutte</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Torri</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+
+
+
+  <api>
+    <additions>
+    <item>gst_update_registry()</item> 
+    <item>gst_adapter_copy()</item>
+    <item>GST_ROUND_DOWN_* macros</item>
+    <item>GstCollectDataDestroyNotify</item>
+    <item>gst_query_new_latency()</item>
+    <item>gst_query_set_latency()</item>
+    <item>gst_query_parse_latency()</item>
+    <item>gst_message_new_lost_preroll()</item>
+    <item>gst_message_parse_lost_preroll()</item>
+    <item>gst_message_new_prerolled()</item>
+    <item>gst_message_new_latency()</item>
+    <item>gst_event_new_latency()</item>
+    <item>gst_event_parse_latency()</item>
+    <item>GST_TAG_REFERENCE_LEVEL</item>
+    <item>gst_base_sink_query_latency()</item>
+    <item>gst_base_sink_get_latency()</item>
+    <item>gst_bus_timed_pop()</item>
+    <item>gst_message_new_info()</item>
+    <item>gst_message_parse_info()</item>
+    </additions>
+<!--
+    <deprecations>
+    </deprecations>
+-->
+  </api>
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>378931</id>
+      <summary>Bison version check doesn't work on Solaris 9</summary>
+    </bug>
+    <bug>
+      <id>399875</id>
+      <summary>[multiqueue] dynamic growth not implemented.</summary>
+    </bug>
+    <bug>
+      <id>339326</id>
+      <summary>pads not set to FLUSHING when created</summary>
+    </bug>
+    <bug>
+      <id>380129</id>
+      <summary>gst_plugin_feature_load doesn't consistently ref a return...</summary>
+    </bug>
+    <bug>
+      <id>381301</id>
+      <summary>[patch] Make GstBus watch work with any GMainContext</summary>
+    </bug>
+    <bug>
+      <id>383382</id>
+      <summary>Removing pads from collectpads not threadsafe</summary>
+    </bug>
+    <bug>
+      <id>383506</id>
+      <summary>Disallow CLOCK_TIME_NONE as periodic clock id interval</summary>
+    </bug>
+    <bug>
+      <id>387073</id>
+      <summary>gst-launch videotestsrc ! ffmpegcolorspace ! ximagesink d...</summary>
+    </bug>
+    <bug>
+      <id>387866</id>
+      <summary>[docs] Small fix for GstCollectPads docs</summary>
+    </bug>
+    <bug>
+      <id>391278</id>
+      <summary>g_thread_init() called too late, possibly causing memory ...</summary>
+    </bug>
+    <bug>
+      <id>391296</id>
+      <summary>[API] add gst_update_registry() to rescan registry at run...</summary>
+    </bug>
+    <bug>
+      <id>391777</id>
+      <summary>GStreamer does not reset SEGV trap handler</summary>
+    </bug>
+    <bug>
+      <id>391909</id>
+      <summary>Fix compilation with MinGW</summary>
+    </bug>
+    <bug>
+      <id>399094</id>
+      <summary>gst_pad_start_task: small doc typo</summary>
+    </bug>
+    <bug>
+      <id>401381</id>
+      <summary>GstRegistry signals documentation is missing</summary>
+    </bug>
+    <bug>
+      <id>401781</id>
+      <summary>[API] add GST_ROUND_DOWN_* macros</summary>
+    </bug>
+    <bug>
+      <id>402393</id>
+      <summary>[API][GstCollectPads] Allow elements to specify destroy n...</summary>
+    </bug>
+    <bug>
+      <id>405284</id>
+      <summary>Changing state of pipeline can lock up with preroll queue...</summary>
+    </bug>
+    <bug>
+      <id>400656</id>
+      <summary>[PATCH] filesrc seekability detection fix (NFS and 2GB+ f...</summary>
+    </bug>
+    <bug>
+      <id>403172</id>
+      <summary>[filesrc] doesn't handle localhost file locations</summary>
+    </bug>
+    <bug>
+      <id>404569</id>
+      <summary>[filesrc] Unexpected end of file</summary>
+    </bug>
+    <bug>
+      <id>161922</id>
+      <summary>script to provide plugin installation info</summary>
+    </bug>
+    <bug>
+      <id>391915</id>
+      <summary>adapter test doesn't compile with mingw</summary>
+    </bug>
+    <bug>
+      <id>395554</id>
+      <summary>gst_tag_setter_merge_tags works at most once</summary>
+    </bug>
+    <bug>
+      <id>403597</id>
+      <summary>[API] Add ReplayGain reference level tag</summary>
+    </bug>
+    <bug>
+      <id>405288</id>
+      <summary>Configure checks use pkg-config directly</summary>
+    </bug>
+    <bug>
+      <id>381492</id>
+      <summary>[SystemClock] ClockID wait_async notification broken</summary>
+    </bug>
+    <bug>
+      <id>382592</id>
+      <summary>Multiple wait()ers break periodic clock ids</summary>
+    </bug>
+    <bug>
+      <id>385084</id>
+      <summary>endless ghost pad pull/push activate recursion until crash</summary>
+    </bug>
+    <bug>
+      <id>388201</id>
+      <summary>[API] add gst_adapter_copy()</summary>
+    </bug>
+  </bugs>
+</release>

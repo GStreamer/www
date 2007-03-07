@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
+  <name>Zombie Horde</name>
+  <version>0.10.12</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Base Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc</li>
+  <li>network: tcp</li>
+  <li>typefind</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioscale, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: ffmpegcolorspace</li>
+  <li>aggregate elements: decodebin, playbin</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+<p><strong>Please note that decodebin2 API included in this release is still 
+considered unstable and WILL change in future releases. At this stage, only
+developers or early adopters should consider using the decodebin2 API embodied
+in its signals and properties.</strong>
+</p>
+  </intro>
+  <features>
+    <feature>New API for on-demand plugin installation</feature>
+    <feature>Xv thread-safety and configuration enhancements</feature>
+    <feature>decodebin2 improvements</feature>
+    <feature>Support more raw audio format conversions</feature>
+    <feature>Improvements in Ogg support</feature>
+    <feature>AudioFilter base class ported to 0.10</feature>
+    <feature>Fixes for subtitles</feature>
+    <feature>Latency/live-playback support for Alsa</feature>
+    <feature>Lots of bug fixes and improvements</feature>
+  </features>
+
+  <applications>
+  </applications>
+    <contributors>
+	<person></person>
+	<person>Andy Wingo</person>
+	<person>David Schleef</person>
+	<person>Ed Catmur</person>
+	<person>Edward Hervey</person>
+	<person>Günter Thelen</person>
+	<person>Holger Wansing</person>
+	<person>Jan Schmidt</person>
+	<person>Jens Granseuer</person>
+	<person>Julien MOUTTE</person>
+	<person>Julien Puydt</person>
+	<person>Loïc Minier</person>
+	<person>René Stadler</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Sébastien Moutte</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Yves Lefebvre</person>
+  </contributors>
+
+
+  <api>
+    <additions>
+    <item>GstAudioFilter</item>
+    <item>GST_VIDEO_SINK_CAST()</item>
+    <item>gst_pb_utils_add_codec_description_to_tag_list()</item>
+    <item>gst_pb_utils_get_codec_description()</item>
+    <item>gst_pb_utils_get_source_description()</item>
+    <item>gst_pb_utils_get_sink_description()</item>
+    <item>gst_pb_utils_get_decoder_description()</item>
+    <item>gst_pb_utils_get_encoder_description()</item>
+    <item>gst_pb_utils_get_element_description()</item>
+    <item>gst_pb_utils_init()</item>
+    <item>gst_install_plugins_context_new()</item>
+    <item>gst_install_plugins_context_set_xid()</item>
+    <item>gst_install_plugins_context_free()</item>
+    <item>gst_install_plugins_async()</item>
+    <item>gst_install_plugins_sync()</item>
+    <item>gst_install_plugins_return_get_name()</item>
+    <item>gst_install_plugins_installation_in_progress()</item>
+    <item>gst_missing_uri_source_message_new()</item>
+    <item>gst_missing_uri_sink_message_new</item>
+    <item>gst_missing_element_message_new</item>
+    <item>gst_missing_decoder_message_new</item>
+    <item>gst_missing_encoder_message_new</item>
+    <item>gst_missing_plugin_message_get_installer_detail</item>
+    <item>gst_missing_plugin_message_get_description</item>
+    <item>gst_is_missing_plugin_message</item>
+    </additions>
+
+<!--
+    <deprecations>
+    </deprecations>
+-->
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>398721</id>
+      <summary>No video in .ogm files with decodebin2</summary>
+    </bug>
+    <bug>
+      <id>339837</id>
+      <summary>[audioconvert] support for 64-bit float audio</summary>
+    </bug>
+    <bug>
+      <id>341524</id>
+      <summary>[decodebin] can't handle decoders with always src pads wi...</summary>
+    </bug>
+    <bug>
+      <id>352069</id>
+      <summary>Add de.po German translation</summary>
+    </bug>
+    <bug>
+      <id>363379</id>
+      <summary>[oggmux] doesn't detect EOS on all sinkpads</summary>
+    </bug>
+    <bug>
+      <id>378436</id>
+      <summary>[oggdemux] rhythmbox crash on fast clicking on rating in ...</summary>
+    </bug>
+    <bug>
+      <id>380342</id>
+      <summary>Totem does not play mp3 files when lyrics are present</summary>
+    </bug>
+    <bug>
+      <id>383195</id>
+      <summary>[cddabasesrc,basertpaudiopayload] compile errors with gcc...</summary>
+    </bug>
+    <bug>
+      <id>383198</id>
+      <summary>totem crashed to gst_xvimagesink_update_colorbalance</summary>
+    </bug>
+    <bug>
+      <id>384008</id>
+      <summary>[xvimagesink] accesses - &gt; xwindow outside locks</summary>
+    </bug>
+    <bug>
+      <id>384060</id>
+      <summary>gst_xoverlay_set_xwindow_id() causing lockups with x(v)im...</summary>
+    </bug>
+    <bug>
+      <id>387138</id>
+      <summary>x input events processing in sinks with xoverlay interfac...</summary>
+    </bug>
+    <bug>
+      <id>390063</id>
+      <summary>Documentation typo</summary>
+    </bug>
+    <bug>
+      <id>390076</id>
+      <summary>add xv adaptor and port properties in xvimagesink element.</summary>
+    </bug>
+    <bug>
+      <id>391365</id>
+      <summary>[oggdemux] internal stream error on OggFlac</summary>
+    </bug>
+    <bug>
+      <id>392070</id>
+      <summary>[vorbis] GST_TAG_LOCATION not mapped</summary>
+    </bug>
+    <bug>
+      <id>392393</id>
+      <summary>[API] add libgstbaseutils library for missing plugins mes...</summary>
+    </bug>
+    <bug>
+      <id>396042</id>
+      <summary>mpeg4 video typefinder loops endlessly on quicktime redirect</summary>
+    </bug>
+    <bug>
+      <id>396835</id>
+      <summary>audioconvert/audioresample combination causing buffer of ...</summary>
+    </bug>
+    <bug>
+      <id>397673</id>
+      <summary>[patch] XIOError caught in x[v]imagesink.c</summary>
+    </bug>
+    <bug>
+      <id>397810</id>
+      <summary>[typefinding] .vob file: could not determine type of stream</summary>
+    </bug>
+    <bug>
+      <id>398110</id>
+      <summary>[theoraenc] GLib failed to allocate 3080991032 bytes on g...</summary>
+    </bug>
+    <bug>
+      <id>399340</id>
+      <summary>Crash in the oggdemux plugin when trying to play a specia...</summary>
+    </bug>
+    <bug>
+      <id>401029</id>
+      <summary>[playbin] rapidly changing visualisation freezes</summary>
+    </bug>
+    <bug>
+      <id>401072</id>
+      <summary>Move libgimme-codec helper functions to GStreamer</summary>
+    </bug>
+    <bug>
+      <id>402505</id>
+      <summary>visualisations don't work for some samplerates</summary>
+    </bug>
+    <bug>
+      <id>407811</id>
+      <summary>decodebin2 hang on HD clip</summary>
+    </bug>
+    <bug>
+      <id>409683</id>
+      <summary>Crash with Decodebin2</summary>
+    </bug>
+    <bug>
+      <id>410396</id>
+      <summary>not reading &quot; DATE &quot; tags from Flac files</summary>
+    </bug>
+    <bug>
+      <id>410963</id>
+      <summary>Fails to build with -z defs</summary>
+    </bug>
+    <bug>
+      <id>357503</id>
+      <summary>[suparse] wrong timing with microdvd subtitles</summary>
+    </bug>
+    <bug>
+      <id>393310</id>
+      <summary>[pango] localtime_r does not exist in MinGW</summary>
+    </bug>
+    <bug>
+      <id>397207</id>
+      <summary>Test failure w/ HP-UX 11.11 &amp; native compiler</summary>
+    </bug>
+    <bug>
+      <id>399948</id>
+      <summary>[textoverlay] leaks upstream events if textpad unlinked</summary>
+    </bug>
+    <bug>
+      <id>403963</id>
+      <summary>GstAudioFilter base class broken</summary>
+    </bug>
+    <bug>
+      <id>404512</id>
+      <summary>[videoscale] floating point exception on 1x1 video</summary>
+    </bug>
+    <bug>
+      <id>405020</id>
+      <summary>[alsa] probing the device-name doesn't seem to work corre...</summary>
+    </bug>
+    <bug>
+      <id>408278</id>
+      <summary>[videorate] memory leak</summary>
+    </bug>
+    <bug>
+      <id>410772</id>
+      <summary>Crash copying a GstNetBuffer</summary>
+    </bug>
+    <bug>
+      <id>401118</id>
+      <summary>[visual] error if width not a multiple of 4</summary>
+    </bug>
+    <bug>
+      <id>405451</id>
+      <summary>[alsasink] deadlocks when disconnecting USB Sounddevice</summary>
+    </bug>
+  </bugs>
+
+</release>

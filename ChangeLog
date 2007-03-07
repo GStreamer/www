@@ -1,3 +1,14 @@
+2007-03-07  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-base/0.10.12.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.12.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+
+	Release GStreamer and Base 0.10.12.
+
 2007-03-03  David I. Lehn  <dlehn@users.sourceforge.net>
 
 	* bin/planet-update:
