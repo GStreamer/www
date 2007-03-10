@@ -10,6 +10,8 @@
     <component>gstreamer+%28core%29</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.13</milestone>
+      <milestone>0.10.12</milestone>
       <milestone>0.10.11</milestone>
       <milestone>0.10.10</milestone>
       <milestone>0.10.9</milestone>
@@ -60,6 +62,8 @@
     <component>gst-plugins-base</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.13</milestone>
+      <milestone>0.10.12</milestone>
       <milestone>0.10.11</milestone>
       <milestone>0.10.10</milestone>
       <milestone>0.10.9</milestone>
@@ -86,6 +90,7 @@
     <component>gst-plugins-good</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.6</milestone>
       <milestone>0.10.5</milestone>
       <milestone>0.10.4</milestone>
       <milestone>0.10.3</milestone>
@@ -126,6 +131,7 @@
     <component>gst-plugins-bad</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.5</milestone>
       <milestone>0.10.4</milestone>
       <milestone>0.10.3</milestone>
       <milestone>0.10.1</milestone>
@@ -160,6 +166,7 @@
     <component>gst-python</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.7</milestone>
       <milestone>0.10.6</milestone>
       <milestone>0.10.5</milestone>
       <milestone>0.10.4</milestone>
@@ -184,6 +191,7 @@
     <component>gst-ffmpeg</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.3</milestone>
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>

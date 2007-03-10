@@ -1,3 +1,9 @@
+2007-03-10  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/bugs/bugs.xml:
+	  Add more milestones (could someone upload/update the website please?
+	  the auto-upload/rebuild never seems to work for me).
+
 2007-03-07  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* src/htdocs/entities.gst:
