@@ -1,3 +1,8 @@
+2007-03-23  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/apps/index.xml:
+	  Add an application
+
 2007-03-10  Tim-Philipp Müller  <tim at centricular dot net>
 
 	* src/htdocs/bugs/bugs.xml:
