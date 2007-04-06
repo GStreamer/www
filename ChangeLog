@@ -1,3 +1,8 @@
+2007-04-06  David Schleef  <ds@schleef.org>
+
+	* src/htdocs/apps/index.xml:
+	  Add iStream
+
 2007-03-23  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/apps/index.xml:
