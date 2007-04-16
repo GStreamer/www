@@ -13,7 +13,12 @@
     <id>python</id>
     <name>Python</name>
     <status>Released. See the <a href="&site;/modules/gst-python.html">gst-python</a> module.</status>
-    <body><p>Released. See the <a href="&site;/modules/gst-python.html">gst-python</a> module.</p></body>
+    <body>
+    <p>Released. See the <a href="&site;/modules/gst-python.html">gst-python</a> module.</p>
+    <p>
+Gian Mario Tagliaretti has written some documents for using GStreamer Python which you can find <a href="http://pygstdocs.berlios.de/">them at this page</a>.
+    </p>
+    </body>
   </binding>
 
   <binding>
@@ -29,7 +34,19 @@
     sourceforge download page</a>.
     </p>
     <p>
-Gian Mario Tagliaretti has written some documents for using GStreamer Python which you can find <a href="http://pygstdocs.berlios.de/">them at this page</a>.
+      <ul>
+        <lh>Documentation:</lh>
+        <li>
+          <a href="http://gtk2-perl.sourceforge.net/doc/pod/GStreamer.html">
+          GStreamer - Perl interface overview
+          </a>
+        </li>
+        <li>
+          <a href="http://gtk2-perl.sourceforge.net/doc/pod/GStreamer/index.html">
+          Automatically generated GStreamer Perl API documentation
+          </a>
+        </li>
+      </ul>
     </p>
     </body>
   </binding>

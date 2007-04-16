@@ -1,3 +1,9 @@
+2007-04-16  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/bindings/bindings.xml:
+	  Add some direct links to documentation for the GStreamer-Perl
+	  bindings; move gst-python link from perl to gst-python section.
+
 2007-04-06  David Schleef  <ds@schleef.org>
 
 	* src/htdocs/apps/index.xml:
