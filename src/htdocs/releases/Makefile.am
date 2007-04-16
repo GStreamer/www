@@ -1,6 +1,6 @@
-%.xml:
+%.xml: $(top_srcdir)/copy/releases/$@
 	cp $(top_srcdir)/copy/releases/$@ $@
-%.ics:
+%.ics: $(top_srcdir)/copy/releases/$@
 	cp $(top_srcdir)/copy/releases/$@ $@
 
 all-local:	releases.rss10.xml releases.rss20.xml releases.ics
