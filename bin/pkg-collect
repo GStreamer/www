@@ -19,21 +19,39 @@ rpm --addsign *.rpm
 ### fc5 and higher
 
 for ver in 5 6; do
-	# 0.10/gst
-	mv gstreamer-*.gst*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/gst
-	mv gstreamer-*.gst*$ver.i386.rpm data/pkg/fedora/$ver/0.10/i386/gst
-	mv gstreamer-*.gst*$ver.x86_64.rpm data/pkg/fedora/$ver/0.10/x86_64/gst
-	mv gnonlin-*.gst*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/gst
-	mv gnonlin-*.gst*$ver.i386.rpm data/pkg/fedora/$ver/0.10/i386/gst
-	mv gnonlin-*.gst*$ver.x86_64.rpm data/pkg/fedora/$ver/0.10/x86_64/gst
+  # 0.10 apps
+  for p in pigment pitivi; do
+      mv $p-*.*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/apps
+    for arch in i386 x86_64 ppc; do
+      cp $p-*.*$ver.noarch.rpm data/pkg/fedora/$ver/0.10/$arch/apps
+      mv $p-*.*$ver.$arch.rpm data/pkg/fedora/$ver/0.10/$arch/apps
+    done
+    rm $p-*.*$ver.noarch.rpm
+  done
 
-	# 0.10/deps
-	mv *lvn*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/deps
-	mv *lvn*$ver.i386.rpm data/pkg/fedora/$ver/0.10/i386/deps
-	mv *lvn*$ver.x86_64.rpm data/pkg/fedora/$ver/0.10/x86_64/deps
-	mv *gst*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/deps
-	mv *gst*$ver.i386.rpm data/pkg/fedora/$ver/0.10/i386/deps
-	mv *gst*$ver.x86_64.rpm data/pkg/fedora/$ver/0.10/x86_64/deps
+  # 0.10 gst
+  for p in gstreamer gnonlin; do
+    mv $p-*.*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/gst
+    for arch in i386 x86_64 ppc; do
+      mv $p-*.*$ver.$arch.rpm data/pkg/fedora/$ver/0.10/$arch/gst
+    done
+  done
+
+  # 0.10 deps
+  # tagged with lvn or gst releases
+  for tag in lvn gst; do
+    mv *$tag*.*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/deps
+    for arch in i386 x86_64 ppc; do
+      mv *$tag*-*.*$ver.$arch.rpm data/pkg/fedora/$ver/0.10/$arch/deps
+    done
+  done
+  # specific package names
+  for name in liboil; do
+    mv $name*.*$ver.src.rpm data/pkg/fedora/$ver/0.10/SRPMS/deps
+    for arch in i386 x86_64 ppc; do
+      mv $name*-*.*$ver.$arch.rpm data/pkg/fedora/$ver/0.10/$arch/deps
+    done
+  done
 done
 
 
@@ -48,6 +66,9 @@ mv gstreamer-tools-*.gst*4.x86_64.rpm data/pkg/fedora/4/x86_64/RPMS.gst010
 mv gnonlin-*.gst*4.src.rpm data/pkg/fedora/4/i386/SRPMS.gst010
 mv gnonlin-*.gst*4.i386.rpm data/pkg/fedora/4/i386/RPMS.gst010
 mv gnonlin-*.gst*4.x86_64.rpm data/pkg/fedora/4/x86_64/RPMS.gst010
+mv pitivi-*.*4.src.rpm data/pkg/fedora/4/i386/SRPMS.gst010
+cp pitivi-*.*4.noarch.rpm data/pkg/fedora/4/i386/RPMS.gst010
+mv pitivi-*.*4.noarch.rpm data/pkg/fedora/4/x86_64/RPMS.gst010
 
 # deps
 mv *gst*4.src.rpm data/pkg/fedora/4/i386/SRPMS.deps

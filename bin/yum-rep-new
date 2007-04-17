@@ -30,8 +30,9 @@ do
   cd $absyum
   if test $absyum -nt $ABSBASEDIR/$repodata
   then
+    mkdir -p /tmp/yum/gst
     echo "yum repository $BASEDIR/$yum out of date, regenerating"
-    createrepo .
+    createrepo --cachedir /tmp/yum/gst .
   else
     echo "yum repository $BASEDIR/$yum is up to date"
   fi
