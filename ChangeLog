@@ -1,5 +1,10 @@
 2007-04-17  Thomas Vander Stichele  <thomas at apestaart dot org>
 
+	* src/copy/releases/releases.ics:
+	  End calendar only once.
+
+2007-04-17  Thomas Vander Stichele  <thomas at apestaart dot org>
+
 	* src/htdocs/releases/Makefile.am:
 	  Fix make rule to copy on update.
 
