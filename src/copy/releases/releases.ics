@@ -4,6 +4,7 @@ VERSION:2.0
 
 BEGIN:VEVENT
 SUMMARY:GStreamer FFmpeg Plug-ins 0.8.0 'In Buildings' released
+UID:2004-03-16-gst-ffmpeg-0.8.0@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2004-03-16
@@ -12,6 +13,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer FFmpeg Plug-ins 0.8.1 'Just Another Victim' released
+UID:2004-07-16-gst-ffmpeg-0.8.1@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2004-07-16
@@ -20,6 +22,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer FFmpeg Plug-ins 0.8.2 'Titan Shifting Gears' released
+UID:2004-10-09-gst-ffmpeg-0.8.2@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2004-10-09
@@ -28,6 +31,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer FFmpeg Plug-ins 0.8.3 'Tiny Piece of Plastic' released
+UID:2004-12-27-gst-ffmpeg-0.8.3@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2004-12-27
@@ -36,6 +40,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer FFmpeg Plug-ins 0.8.4 'Mellow on my fingers' released
+UID:2005-03-11-gst-ffmpeg-0.8.4@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-03-11
@@ -44,6 +49,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer FFmpeg Plug-ins 0.8.5 'For the better of the world' released
+UID:2005-06-11-gst-ffmpeg-0.8.5@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-06-11
@@ -52,6 +58,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer FFmpeg Plug-ins 0.8.6 'Vamoz a la Playa' released
+UID:2005-08-05-gst-ffmpeg-0.8.6@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-08-05
@@ -60,6 +67,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer FFmpeg Plug-ins 0.8.7 'Redneck soup' released
+UID:2005-10-25-gst-ffmpeg-0.8.7@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-10-25
@@ -68,6 +76,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Bad Plug-ins 0.10.0 'Camembert' released
+UID:2005-12-05-gst-plugins-bad-0.10.0@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-12-05
@@ -76,6 +85,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.0 'Maroilles' released
+UID:2005-12-05-gstreamer-0.10.0@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-12-05
@@ -84,6 +94,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.0 'Mont-d'or' released
+UID:2005-12-05-gst-plugins-base-0.10.0@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-12-05
@@ -92,6 +103,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer FFmpeg Plug-ins 0.10.0 'Rocamadour' released
+UID:2005-12-05-gst-ffmpeg-0.10.0@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-12-05
@@ -100,6 +112,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Ugly Plug-ins 0.10.0 'Brie' released
+UID:2005-12-05-gst-plugins-ugly-0.10.0@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-12-05
@@ -108,6 +121,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Python Bindings 0.10.0 'Reblochon' released
+UID:2005-12-05-gst-python-0.10.0@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-12-05
@@ -116,6 +130,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Good Plug-ins 0.10.0 'Abondance' released
+UID:2005-12-05-gst-plugins-good-0.10.0@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-12-05
@@ -124,6 +139,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.1 'Nollaig chridheil' released
+UID:2005-12-23-gstreamer-0.10.1@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-12-23
@@ -132,6 +148,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.1 'Dobro Dedek' released
+UID:2005-12-23-gst-plugins-base-0.10.1@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-12-23
@@ -140,6 +157,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Python Bindings 0.10.1 'Krisimas Yakanaka' released
+UID:2005-12-23-gst-python-0.10.1@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2005-12-23
@@ -148,6 +166,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Ugly Plug-ins 0.10.1 'Peng' released
+UID:2006-01-13-gst-plugins-ugly-0.10.1@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-01-13
@@ -156,6 +175,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Good Plug-ins 0.10.1 'Li' released
+UID:2006-01-13-gst-plugins-good-0.10.1@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-01-13
@@ -164,6 +184,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.2 'If man is five' released
+UID:2006-01-16-gstreamer-0.10.2@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-01-16
@@ -172,6 +193,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.2 'Then the devil is six' released
+UID:2006-01-16-gst-plugins-base-0.10.2@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-01-16
@@ -180,6 +202,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Python Bindings 0.10.2 'And if the devil is six' released
+UID:2006-01-16-gst-python-0.10.2@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-01-16
@@ -188,6 +211,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.3 'Like a virgin' released
+UID:2006-02-08-gstreamer-0.10.3@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-02-08
@@ -196,6 +220,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.8.12 'Cookies' released
+UID:2006-02-09-gstreamer-0.8.12@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-02-09
@@ -204,6 +229,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.3 'Under Pressure' released
+UID:2006-02-09-gst-plugins-base-0.10.3@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-02-09
@@ -212,6 +238,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Good Plug-ins 0.10.2 'Papa was a rolling stone' released
+UID:2006-02-09-gst-plugins-good-0.10.2@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-02-09
@@ -220,6 +247,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Bad Plug-ins 0.10.1 'Slimy - yet satisfying' released
+UID:2006-02-20-gst-plugins-bad-0.10.1@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-02-20
@@ -228,6 +256,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Ugly Plug-ins 0.10.2 'Season to Taste' released
+UID:2006-02-20-gst-plugins-ugly-0.10.2@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-02-20
@@ -236,6 +265,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Python Bindings 0.8.4 '64 bit is enough for everyone' released
+UID:2006-03-08-gst-python-0.8.4@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-03-08
@@ -244,6 +274,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.4 'Light' released
+UID:2006-03-10-gstreamer-0.10.4@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-03-10
@@ -252,6 +283,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.4 'Power' released
+UID:2006-03-10-gst-plugins-base-0.10.4@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-03-10
@@ -260,6 +292,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.5 'Net' released
+UID:2006-03-13-gst-plugins-base-0.10.5@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-03-13
@@ -268,6 +301,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Python Bindings 0.10.3 'Maybe not today. Maybe not tomorrow, but soon...' released
+UID:2006-03-21-gst-python-0.10.3@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-03-21
@@ -276,6 +310,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer FFmpeg Plug-ins 0.10.1 'Late Train' released
+UID:2006-03-31-gst-ffmpeg-0.10.1@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-03-31
@@ -284,6 +319,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Ugly Plug-ins 0.10.3 'Late Plane' released
+UID:2006-03-31-gst-plugins-ugly-0.10.3@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-03-31
@@ -292,6 +328,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.5 'Fogo' released
+UID:2006-04-28-gstreamer-0.10.5@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-04-28
@@ -300,6 +337,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.6 'Chao' released
+UID:2006-04-28-gst-plugins-base-0.10.6@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-04-28
@@ -308,6 +346,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Python Bindings 0.10.4 'Alegre' released
+UID:2006-04-28-gst-python-0.10.4@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-04-28
@@ -316,6 +355,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Bad Plug-ins 0.10.3 'Petition to request permission' released
+UID:2006-05-04-gst-plugins-bad-0.10.3@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-05-04
@@ -324,6 +364,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Good Plug-ins 0.10.3 'Desplazado' released
+UID:2006-05-04-gst-plugins-good-0.10.3@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-05-04
@@ -332,6 +373,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.6 'Leave the cannoli' released
+UID:2006-05-14-gstreamer-0.10.6@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-05-14
@@ -340,6 +382,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.7 'Leave the gun' released
+UID:2006-05-14-gst-plugins-base-0.10.7@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-05-14
@@ -348,6 +391,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.7 'Soepeke, ik zie ou' released
+UID:2006-06-09-gstreamer-0.10.7@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-06-09
@@ -356,6 +400,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.8 'Soepeke, ik zie ou nog altijd nie' released
+UID:2006-06-10-gstreamer-0.10.8@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-06-10
@@ -364,6 +409,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.8 'Moar gij zie mij nie' released
+UID:2006-06-10-gst-plugins-base-0.10.8@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-06-10
@@ -372,6 +418,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.9 'On the road again' released
+UID:2006-07-14-gstreamer-0.10.9@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-07-14
@@ -380,6 +427,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.9 'I walk the line' released
+UID:2006-07-14-gst-plugins-base-0.10.9@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-07-14
@@ -388,6 +436,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Python Bindings 0.10.5 'My Little Poney wants some Funk' released
+UID:2006-07-20-gst-python-0.10.5@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-07-20
@@ -396,6 +445,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Ugly Plug-ins 0.10.4 'Metal Molly' released
+UID:2006-08-14-gst-plugins-ugly-0.10.4@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-08-14
@@ -404,6 +454,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Good Plug-ins 0.10.4 'Dear Leader' released
+UID:2006-08-14-gst-plugins-good-0.10.4@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-08-14
@@ -412,6 +463,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.10 'Pais' released
+UID:2006-09-14-gstreamer-0.10.10@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-09-14
@@ -420,6 +472,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.10 'Chorizo' released
+UID:2006-09-14-gst-plugins-base-0.10.10@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-09-14
@@ -428,6 +481,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Python Bindings 0.10.6 'You're not very subtle, but you are effective' released
+UID:2006-12-04-gst-python-0.10.6@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-12-04
@@ -436,6 +490,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.11 'Love never runs on time' released
+UID:2006-12-06-gstreamer-0.10.11@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-12-06
@@ -444,6 +499,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.11 'Dumb things' released
+UID:2006-12-06-gst-plugins-base-0.10.11@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-12-06
@@ -452,6 +508,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Ugly Plug-ins 0.10.5 'She said' released
+UID:2006-12-13-gst-plugins-ugly-0.10.5@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-12-13
@@ -460,6 +517,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Bad Plug-ins 0.10.4 'Black Bugs' released
+UID:2006-12-21-gst-plugins-bad-0.10.4@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-12-21
@@ -468,6 +526,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Good Plug-ins 0.10.5 'The Path of Thorns' released
+UID:2006-12-21-gst-plugins-good-0.10.5@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-12-21
@@ -476,6 +535,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer FFmpeg Plug-ins 0.10.2 'At the edge of Taymans' released
+UID:2006-12-31-gst-ffmpeg-0.10.2@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2006-12-31
@@ -484,6 +544,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer 0.10.12 'Inevitable Demise' released
+UID:2007-03-07-gstreamer-0.10.12@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2007-03-07
@@ -492,6 +553,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 SUMMARY:GStreamer Base Plug-ins 0.10.12 'Zombie Horde' released
+UID:2007-03-07-gst-plugins-base-0.10.12@moap
 CLASS:PUBLIC
 PRIORITY:3
 DTSTART;VALUE=DATE:2007-03-07
