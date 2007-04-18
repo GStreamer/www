@@ -31,15 +31,14 @@ HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-cvs">Subscribe</A>
 | <A
 HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-cvs">Archives</A></I>
 
+<p>CVS commit notifications.</p>
+
 <LI><B>gstreamer-bugs</B>:</LI>
 <I><A
 HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-bugs">Subscribe</A>
 | <A
 HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-bugs">Archives</A></I>
 <p>Bugzilla activity. Please report bugs in bugzilla and not on this list.</p>
-
-
-<p>CVS commit notifications.</p>
 
 <LI><B>gstreamer-daily</B>:</LI>
 <I><A
