@@ -11,7 +11,7 @@
 <I><A
 HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-announce">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_id=5948">Archives</A></I>
+HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-announce">Archives</A></I>
 
 <p>Used for announcements of new versions, features, etc.</p>
 
@@ -19,15 +19,25 @@ HREF="http://sourceforge.net/mailarchive/forum.php?forum_id=5948">Archives</A></
 <I><A
 HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-devel">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_id=5947">Archives</A></I>
+HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-devel">Archives</A></I>
 
-<p>Where development discussions occur. Ask here if you have problems with GStreamer.</p>
+<p>Where development discussions occur. Ask here if you have problems with GStreamer.
+Please submit patches and report bugs in bugzilla and not on this list.
+</p>
 
 <LI><B>gstreamer-cvs</B>:</LI>
 <I><A
 HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-cvs">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_id=7791">Archives</A></I>
+HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-cvs">Archives</A></I>
+
+<LI><B>gstreamer-bugs</B>:</LI>
+<I><A
+HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-bugs">Subscribe</A>
+| <A
+HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-bugs">Archives</A></I>
+<p>Bugzilla activity. Please report bugs in bugzilla and not on this list.</p>
+
 
 <p>CVS commit notifications.</p>
 
@@ -35,22 +45,15 @@ HREF="http://sourceforge.net/mailarchive/forum.php?forum_id=7791">Archives</A></
 <I><A
 HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-daily">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_id=1731">Archives</A></I>
+HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-daily">Archives</A></I>
 
 <p>Daily mailings (irc logs, build failures, etc.).</p>
-
-<LI><B>gstreamer-bugs</B>:</LI>
-<I><A
-HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-bugs">Subscribe</A>
-| <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_id=10312">Archives</A></I>
-<p>Bugzilla activity.</p>
 
 <LI><B>gstreamer-gstmm</B>:</LI>
 <I><A
 HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-gstmm">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_id=12890">Archives</A></I>
+HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-gstmm">Archives</A></I>
 <p>Development of GStreamer <A HREF="http://www.gtkmm.org">gtkmm</A> style C++ bindings.</p>
 
 </UL>

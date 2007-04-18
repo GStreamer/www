@@ -1,3 +1,8 @@
+2007-04-18  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/lists/index.xml:
+	  Fix links to mailing list archives. Move unused lists to the bottom.
+
 2007-04-17  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/copy/releases/releases.ics:
