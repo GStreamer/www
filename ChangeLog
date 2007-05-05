@@ -1,3 +1,11 @@
+2007-05-05  Edward Hervey  <edward@fluendo.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gnonlin/0.10.8.xml:
+	* src/htdocs/releases/gnonlin/Makefile.am:
+	Releasing GNonLin 0.10.8 "Half a kilo of power points"
+
 2007-04-29  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/artwork/Makefile.am:
