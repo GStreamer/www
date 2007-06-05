@@ -1,3 +1,13 @@
+2007-06-05  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-base/0.10.13.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.13.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	Release 0.10.13 of GStreamer core & gst-plugins-base
+
 2007-05-05  Edward Hervey  <edward@fluendo.com>
 
 	* src/htdocs/entities.gst:

@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
+  <name>What's Going on?</name>
+  <version>0.10.13</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Base Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc</li>
+  <li>network: tcp</li>
+  <li>typefind</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioscale, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: ffmpegcolorspace</li>
+  <li>aggregate elements: decodebin, playbin</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Many fixes and improvements</feature>
+    <feature>RTP and RTCP support improved</feature>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+  </features>
+
+  <applications>
+  </applications>
+    <contributors>
+	<person>Alex Lancaster</person>
+	<person>Andy Wingo</person>
+	<person>Christian Kirbach</person>
+	<person>Dan Williams</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Julien MOUTTE</person>
+	<person>Kamil Pawlowski</person>
+	<person>Marc-Andre Lureau</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Smith</person>
+	<person>Olivier Crete</person>
+	<person>René Stadler</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastien Moutte</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tommi Myöhänen</person>
+	<person>Vincent Torri</person>
+	<person>Wim Taymans</person>
+	<person>Young-Ho Cha</person>
+	<person>Zaheer Abbas Merali</person>
+	<person>Zeeshan Ali</person>
+  </contributors>
+
+  <api>
+    <additions>
+    <item>add gst_tag_freeform_string_to_utf8()</item>
+    <item>GstRTPBuffer::gst_rtp_buffer_default_clock_rate()</item>
+    <item>GstBaseAudioSink::slave-method property</item>
+    <item>add "min-ptime" property to RTP base audio payloader</item>
+    <item>gst_base_rtp_audio_payload_push()</item>
+    <item>gst_base_rtp_audio_payload_get_adapter()</item>
+    <item>GstMixerTrack::untranslated-label property</item>
+    </additions>
+<!--
+    <deprecations>
+    </deprecations>
+-->
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>339838</id>
+      <summary>[audioconvert] support floats with non-native endianness</summary>
+    </bug>
+    <bug>
+      <id>393975</id>
+      <summary>closing x/xvimagesink window crashes gst-launch</summary>
+    </bug>
+    <bug>
+      <id>405072</id>
+      <summary>[API] add gst_tag_freeform_string_to_utf8()</summary>
+    </bug>
+    <bug>
+      <id>413799</id>
+      <summary>[subparse] add support for MPL2 format</summary>
+    </bug>
+    <bug>
+      <id>414645</id>
+      <summary>GstMixerTrack should make untranslated label available</summary>
+    </bug>
+    <bug>
+      <id>420079</id>
+      <summary>[audioconvert] Uses biased rounding which results in dist...</summary>
+    </bug>
+    <bug>
+      <id>420578</id>
+      <summary>[subparse] add more colour map in sami parser</summary>
+    </bug>
+    <bug>
+      <id>421834</id>
+      <summary>videorate breaks on dimension changes</summary>
+    </bug>
+    <bug>
+      <id>423051</id>
+      <summary>Vorbis tags of type double use locale-dependent formatting</summary>
+    </bug>
+    <bug>
+      <id>423055</id>
+      <summary>Verify ReplayGain vorbistag processing in libs/tag testsuite</summary>
+    </bug>
+    <bug>
+      <id>425455</id>
+      <summary>Decodebin2 leaks pads</summary>
+    </bug>
+    <bug>
+      <id>426250</id>
+      <summary>GstPlayBaseBin leaks streaminfo objects</summary>
+    </bug>
+    <bug>
+      <id>428187</id>
+      <summary>Rtp base depayloader class doesn't send new_segment after...</summary>
+    </bug>
+    <bug>
+      <id>431672</id>
+      <summary>gst_base_rtp_audio_payload_push() should take object of i...</summary>
+    </bug>
+    <bug>
+      <id>432362</id>
+      <summary>[ximagesink] doesn't build if XShm is not available</summary>
+    </bug>
+    <bug>
+      <id>432755</id>
+      <summary>[videorate] leaks buffer if flow != OK</summary>
+    </bug>
+    <bug>
+      <id>432984</id>
+      <summary>[baseaudiosrc] misleading warning message when dropping s...</summary>
+    </bug>
+    <bug>
+      <id>433888</id>
+      <summary>[theoradec] does not generate a perfect stream</summary>
+    </bug>
+    <bug>
+      <id>436562</id>
+      <summary>Theoradec doesn't work well with gnonlin</summary>
+    </bug>
+    <bug>
+      <id>438840</id>
+      <summary>[theoradec] does not compile with old version of libtheora</summary>
+    </bug>
+    <bug>
+      <id>440997</id>
+      <summary>[gstriff] Doesn't handle width!=depth files with audio/x-...</summary>
+    </bug>
+    <bug>
+      <id>441295</id>
+      <summary>audioconvert doesn't build on VS6</summary>
+    </bug>
+    <bug>
+      <id>442024</id>
+      <summary>regression in playbin buffering</summary>
+    </bug>
+    <bug>
+      <id>350299</id>
+      <summary>[playbin] &quot; Internal data flow error &quot; opening movie with s...</summary>
+    </bug>
+    <bug>
+      <id>410039</id>
+      <summary>totem crashed with SIGSEGV in new_decoded_pad_full()</summary>
+    </bug>
+    <bug>
+      <id>340842</id>
+      <summary>do latency calculation for live sources</summary>
+    </bug>
+    <bug>
+      <id>341078</id>
+      <summary>RB does not play beyond initially downloaded podcast file</summary>
+    </bug>
+    <bug>
+      <id>414496</id>
+      <summary>[id3demux, id3v2mux] Add support for GST_TAG_MUSICBRAINZ_...</summary>
+    </bug>
+  </bugs>
+
+</release>
