@@ -1,3 +1,8 @@
+2007-06-13  Stefan Kost  <ensonic@users.sf.net>
+
+	* src/htdocs/download/index.xml:
+	Add OpenBSD packages to download page.
+
 2007-06-05  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* src/htdocs/releases/gstreamer/0.10.13.xml:

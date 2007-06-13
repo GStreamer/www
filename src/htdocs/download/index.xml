@@ -44,6 +44,9 @@ GStreamer.
     and look for Foser or Zaheerm.
   </DD>
 
+  <DT>OpenBSD</DT>
+  <DD>Packages for various architectures are available for <A href="http://www.openbsd.org/4.1_packages/">OpenBSD 4.1</A>.</DD>
+
   <DT>Source</DT>
   <DD>Check our <A href="&site;/modules/">modules</A> page, or
     go straight to our <A href="&site;/src/">source download directory</A>.</DD>
