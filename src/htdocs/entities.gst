@@ -4,9 +4,9 @@
 <!ENTITY gst-ffmpeg-version-stable "0.10.2">
 <!ENTITY gst-python-version-stable "0.10.7">
 <!ENTITY gst-plugins-base-version-stable "0.10.13">
-<!ENTITY gst-plugins-good-version-stable "0.10.5">
-<!ENTITY gst-plugins-ugly-version-stable "0.10.5">
-<!ENTITY gst-plugins-bad-version-stable "0.10.4">
+<!ENTITY gst-plugins-good-version-stable "0.10.6">
+<!ENTITY gst-plugins-ugly-version-stable "0.10.6">
+<!ENTITY gst-plugins-bad-version-stable "0.10.5">
 <!ENTITY gnonlin-version-stable "0.10.8">
 
 <!ENTITY gst-version-devel "0.9.6">

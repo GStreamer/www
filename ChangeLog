@@ -1,3 +1,15 @@
+2007-06-19  Jan Schmidt  <thaytan@mad.scientist.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-bad/0.10.5.xml:
+	* src/htdocs/releases/gst-plugins-bad/Makefile.am:
+	* src/htdocs/releases/gst-plugins-good/0.10.6.xml:
+	* src/htdocs/releases/gst-plugins-good/Makefile.am:
+	* src/htdocs/releases/gst-plugins-ugly/0.10.6.xml:
+	* src/htdocs/releases/gst-plugins-ugly/Makefile.am:
+	Release 0.10.6 of Good/Ugly and 0.10.5 of Bad
+
 2007-06-13  Stefan Kost  <ensonic@users.sf.net>
 
 	* src/htdocs/download/index.xml:

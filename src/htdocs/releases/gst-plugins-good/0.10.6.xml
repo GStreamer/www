@@ -1,0 +1,544 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Wobble Board</name>
+  <version>0.10.6</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Much improved RTSP/RTP and V4l2 support</feature>
+    <feature>New plugins - audiopanorama, audioinvert, audiodynamic, audioamplify</feature>
+    <feature>OSX and Windows video/audio support elements moved from Bad Plugins</feature>
+    <feature>qtdemux, videocrop and wavpack elements moved from Bad Plugins</feature>
+    <feature>Fixes in avi and matroska muxing</feature>
+    <feature>Fixes in wavparse, sunaudio, AVI demuxing, ID3 tag handling</feature>
+    <feature>gamma element ported to 0.10</feature>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+        <contributors>
+	<person>Alex Lancaster</person>
+	<person>Andy Wingo</person>
+	<person>Antoine Tremblay</person>
+	<person>Brian Cameron</person>
+	<person>Christian Schaller</person>
+	<person>Christophe Dehais</person>
+	<person>Daniel Charles</person>
+	<person>David Schleef</person>
+	<person>Dejan Sakelšak</person>
+	<person>Edgard Lima</person>
+	<person>Edward Hervey</person>
+	<person>Eric Anholt</person>
+	<person>Jan Schmidt</person>
+	<person>Jonas Holmberg</person>
+	<person>Jonathan Matthew</person>
+	<person>Josh Coalson</person>
+	<person>Julien Moutte</person>
+	<person>Laurent Glayal</person>
+	<person>Loïc Minier</person>
+	<person>Lutz Mueller</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Smith</person>
+	<person>Peter Kjellerstedt</person>
+	<person>René Stadler</person>
+	<person>Sebastian Dröge</person>
+	<person>Sébastien Moutte</person>
+	<person>Sjoerd Simons</person>
+	<person>Snaik</person>
+	<person>Stefan Kost</person>
+	<person>Thijs Vermeir</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tommi Myöhänen</person>
+	<person>Vincent Torri</person>
+	<person>Wim Taymans</person>
+	<person>Zaheer Abbas Merali</person>
+	<person>Charles</person>
+	<person>Daniel Fischer</person>
+	<person>Jerry Tan</person>
+	<person>jp.Liu</person>
+	<person>Zhangfei Gao</person>
+  </contributors>
+
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>392189</id>
+      <summary>[esdsink] pipeline hung in state change from PAUSED to PL...</summary>
+    </bug>
+    <bug>
+      <id>407590</id>
+      <summary>crash using gconfaudiosink</summary>
+    </bug>
+    <bug>
+      <id>439255</id>
+      <summary>[rtspsrc] crash on unsupported transport</summary>
+    </bug>
+    <bug>
+      <id>441118</id>
+      <summary>Incorrect caps in G.711 RTP depayloaders</summary>
+    </bug>
+    <bug>
+      <id>323471</id>
+      <summary>[PLUGIN-MOVE] osxaudio</summary>
+    </bug>
+    <bug>
+      <id>407780</id>
+      <summary>avimux does not handle video/x-h264</summary>
+    </bug>
+    <bug>
+      <id>316203</id>
+      <summary>MinGW: udp and rtsp plugin should be disabled on windows</summary>
+    </bug>
+    <bug>
+      <id>340362</id>
+      <summary>[PATCH] new plugin - hardlimiter</summary>
+    </bug>
+    <bug>
+      <id>342463</id>
+      <summary>[ximagesrc] performance improvement</summary>
+    </bug>
+    <bug>
+      <id>347806</id>
+      <summary>[v4l2src] try_capture(): Error getting buffer information...</summary>
+    </bug>
+    <bug>
+      <id>350296</id>
+      <summary>[udpsrc] add property to remove extra headers from buffers</summary>
+    </bug>
+    <bug>
+      <id>354007</id>
+      <summary>[PLUGIN-MOVE] videocrop should be moved to -good</summary>
+    </bug>
+    <bug>
+      <id>356692</id>
+      <summary>wavparse drops final sample in most files</summary>
+    </bug>
+    <bug>
+      <id>358040</id>
+      <summary>Fix speex rtp (de)payloader</summary>
+    </bug>
+    <bug>
+      <id>362566</id>
+      <summary>[dv1394src] Random segfault and kernel oopses</summary>
+    </bug>
+    <bug>
+      <id>374489</id>
+      <summary>rtspdec never sends out RTCP Receiver reports</summary>
+    </bug>
+    <bug>
+      <id>377306</id>
+      <summary>[sunaudiomixer] mixer track labels not localized</summary>
+    </bug>
+    <bug>
+      <id>379298</id>
+      <summary>[avimux] allow multiple audio streams</summary>
+    </bug>
+    <bug>
+      <id>392620</id>
+      <summary>gnome-sound-record can not be started on sunray client on...</summary>
+    </bug>
+    <bug>
+      <id>393427</id>
+      <summary>error/warnings when compiling with mingw</summary>
+    </bug>
+    <bug>
+      <id>395688</id>
+      <summary>playbin is unable to play rtsp stream for 3gp from Darwin...</summary>
+    </bug>
+    <bug>
+      <id>396057</id>
+      <summary>[audiofx] New audioinvert element</summary>
+    </bug>
+    <bug>
+      <id>397162</id>
+      <summary>[audiofx] New element audioamplify</summary>
+    </bug>
+    <bug>
+      <id>397946</id>
+      <summary>[audiopanorama] another trivial docs fix</summary>
+    </bug>
+    <bug>
+      <id>398299</id>
+      <summary>[smpte] crashes if fed empty buffers from fakesrc</summary>
+    </bug>
+    <bug>
+      <id>398325</id>
+      <summary>[smpte] Segfaults with big width/height</summary>
+    </bug>
+    <bug>
+      <id>399338</id>
+      <summary>Hang in PREROLLING when trying to play a specially crafte...</summary>
+    </bug>
+    <bug>
+      <id>399825</id>
+      <summary>Tags don't work properly for shout2send plugin</summary>
+    </bug>
+    <bug>
+      <id>406042</id>
+      <summary>[v4l2src] fails with radio chips</summary>
+    </bug>
+    <bug>
+      <id>407369</id>
+      <summary>[v4l2src] Wrong way of EIO error handling</summary>
+    </bug>
+    <bug>
+      <id>407793</id>
+      <summary>memory leaks of sdpmessage.c</summary>
+    </bug>
+    <bug>
+      <id>407797</id>
+      <summary>bug of rtsp_url_parse() in gst/rtsp/rtspurl.c</summary>
+    </bug>
+    <bug>
+      <id>408544</id>
+      <summary>totem crashed with SIGSEGV to rtsp_ext_wms_configure_stre...</summary>
+    </bug>
+    <bug>
+      <id>410997</id>
+      <summary>Fails to build with -z defs</summary>
+    </bug>
+    <bug>
+      <id>412597</id>
+      <summary>Simplify GstSunAudioSrc</summary>
+    </bug>
+    <bug>
+      <id>412608</id>
+      <summary>[avidemux] flow return aggregation can ignore errors</summary>
+    </bug>
+    <bug>
+      <id>414168</id>
+      <summary>Mixes spaces and tabs in Makefile.am defs</summary>
+    </bug>
+    <bug>
+      <id>416445</id>
+      <summary>[avidemux] seeking regressions</summary>
+    </bug>
+    <bug>
+      <id>416727</id>
+      <summary>[v4l2src] typo in printf format string</summary>
+    </bug>
+    <bug>
+      <id>416728</id>
+      <summary>[v4l2src] typo in translated strings</summary>
+    </bug>
+    <bug>
+      <id>417729</id>
+      <summary>[autoaudiosink] plugs alsaspdifsink, breaking playbin</summary>
+    </bug>
+    <bug>
+      <id>419338</id>
+      <summary>[wavparse] critical warning from plugin viewer</summary>
+    </bug>
+    <bug>
+      <id>420208</id>
+      <summary>Probably typo</summary>
+    </bug>
+    <bug>
+      <id>426044</id>
+      <summary>[flacenc] broken files when used with oggmux</summary>
+    </bug>
+    <bug>
+      <id>427990</id>
+      <summary>[rtph264depay] sprop-parameter-set erros</summary>
+    </bug>
+    <bug>
+      <id>428611</id>
+      <summary>[ximagesrc] segfaults when used from a non-X terminal</summary>
+    </bug>
+    <bug>
+      <id>428901</id>
+      <summary>[icydemux]  broken tags for non-UTF-8/ISO-8859-1-using ra...</summary>
+    </bug>
+    <bug>
+      <id>429319</id>
+      <summary>[alphacolor] distorts png images without alpha channel</summary>
+    </bug>
+    <bug>
+      <id>429666</id>
+      <summary>[goom] totem skips mp3 (while Rhythmbox doesn't)</summary>
+    </bug>
+    <bug>
+      <id>430228</id>
+      <summary>[sunaudio] copyright bug</summary>
+    </bug>
+    <bug>
+      <id>430632</id>
+      <summary>memory problem</summary>
+    </bug>
+    <bug>
+      <id>430804</id>
+      <summary>[PATCH] navseek only seeks (sort-of) partially</summary>
+    </bug>
+    <bug>
+      <id>431282</id>
+      <summary>broken RTP depayloaders</summary>
+    </bug>
+    <bug>
+      <id>433119</id>
+      <summary>wavparse causes skipping for MPEG-encoded RIFF Wav files ...</summary>
+    </bug>
+    <bug>
+      <id>433135</id>
+      <summary>[wavparse] regression in CVS with mp3-in-wav</summary>
+    </bug>
+    <bug>
+      <id>433530</id>
+      <summary>udpsrc read of size 0</summary>
+    </bug>
+    <bug>
+      <id>434824</id>
+      <summary>rtp mp4 payloader doesn't handle newsegments and flush ev...</summary>
+    </bug>
+    <bug>
+      <id>436910</id>
+      <summary>[videomixer] wrong strides with odd input width</summary>
+    </bug>
+    <bug>
+      <id>437499</id>
+      <summary>[wavparse] can't handle WAV file with 'LIST'  header chunk</summary>
+    </bug>
+    <bug>
+      <id>437670</id>
+      <summary>Improvements for rtsptransport.[ch]</summary>
+    </bug>
+    <bug>
+      <id>437692</id>
+      <summary>Some more fixes for the RTSP support</summary>
+    </bug>
+    <bug>
+      <id>438926</id>
+      <summary>invalid comparison of pointer with string literal</summary>
+    </bug>
+    <bug>
+      <id>438940</id>
+      <summary>[rtph263ppay] Support for Segment Fragmentation based on ...</summary>
+    </bug>
+    <bug>
+      <id>440127</id>
+      <summary>Autoaudiosink does extra switching between null and ready...</summary>
+    </bug>
+    <bug>
+      <id>440203</id>
+      <summary>Support multiple RTSP headers of the same type</summary>
+    </bug>
+    <bug>
+      <id>440928</id>
+      <summary>Improved RTSP version support, and added Date header</summary>
+    </bug>
+    <bug>
+      <id>441408</id>
+      <summary>speexdec plays incorrectly files made with nframes=4</summary>
+    </bug>
+    <bug>
+      <id>442535</id>
+      <summary>[wavenc] Doesn't handle width!=depth files with audio/x-r...</summary>
+    </bug>
+    <bug>
+      <id>442677</id>
+      <summary>WideBand AMR payloaders</summary>
+    </bug>
+    <bug>
+      <id>443081</id>
+      <summary>[wavparse] fails to post error on FLOW_NOT_LINKED</summary>
+    </bug>
+    <bug>
+      <id>445905</id>
+      <summary>ximagesrc disregards display_name property</summary>
+    </bug>
+    <bug>
+      <id>446981</id>
+      <summary>error during the compilation of rtspconnection.c</summary>
+    </bug>
+    <bug>
+      <id>447210</id>
+      <summary>wrong length calculation for codec_data</summary>
+    </bug>
+    <bug>
+      <id>447458</id>
+      <summary>[qtdemux] export AMRSpecificBox as codec_data</summary>
+    </bug>
+    <bug>
+      <id>385887</id>
+      <summary>[flac] make work with libflac-1.1.3</summary>
+    </bug>
+    <bug>
+      <id>404646</id>
+      <summary>[audiofx] Compressor/Expander element</summary>
+    </bug>
+    <bug>
+      <id>424527</id>
+      <summary>[auparse] don't convert non-native endianness floats in t...</summary>
+    </bug>
+    <bug>
+      <id>387121</id>
+      <summary>[matroskamux] Can't mux raw audio</summary>
+    </bug>
+    <bug>
+      <id>392855</id>
+      <summary>[matroska] plugin must link against zlib (error with MinGW)</summary>
+    </bug>
+    <bug>
+      <id>394851</id>
+      <summary>[audiopanorama] Some trivial docs fixes</summary>
+    </bug>
+    <bug>
+      <id>394859</id>
+      <summary>[audiopanorama] New simple method for adjusting the panorama</summary>
+    </bug>
+    <bug>
+      <id>398086</id>
+      <summary>[smpte] crashes if input dimensions differ</summary>
+    </bug>
+    <bug>
+      <id>406018</id>
+      <summary>64bit uncleanness in gstavimux.c</summary>
+    </bug>
+    <bug>
+      <id>407057</id>
+      <summary>[wavparse] leaks contents of every buffer pushed when in ...</summary>
+    </bug>
+    <bug>
+      <id>407349</id>
+      <summary>[id3demux] wrongly interprets TDAT as year</summary>
+    </bug>
+    <bug>
+      <id>350278</id>
+      <summary>[rtpmp2tdepay] Add support for proprietary headers</summary>
+    </bug>
+    <bug>
+      <id>380895</id>
+      <summary>A couple of corrections and improvements for the RTSP sup...</summary>
+    </bug>
+    <bug>
+      <id>380944</id>
+      <summary>[dvdec] Doesn't set pixel-aspect-ratio</summary>
+    </bug>
+    <bug>
+      <id>394977</id>
+      <summary>multipartmux not honoring flow return</summary>
+    </bug>
+    <bug>
+      <id>403956</id>
+      <summary>Add float32 support for &quot; level &quot; element</summary>
+    </bug>
+    <bug>
+      <id>405213</id>
+      <summary>mp3 plays too fast in totem or rhythmbox</summary>
+    </bug>
+    <bug>
+      <id>407006</id>
+      <summary>[goom] odd adapter behaviour</summary>
+    </bug>
+    <bug>
+      <id>412704</id>
+      <summary>[PATCH] gamma filter ported to 0.10</summary>
+    </bug>
+    <bug>
+      <id>414887</id>
+      <summary>[gconf] gconfaudiosink doesn't set GST_ELEMENT_IS_SINK un...</summary>
+    </bug>
+    <bug>
+      <id>415446</id>
+      <summary>[avidemux] fails parsing mjpeg file from digital camera</summary>
+    </bug>
+    <bug>
+      <id>417792</id>
+      <summary>rtp depayloader for AAC</summary>
+    </bug>
+    <bug>
+      <id>423304</id>
+      <summary>file descriptor closed in udpsrc and dynudpsink</summary>
+    </bug>
+    <bug>
+      <id>423782</id>
+      <summary>Code for H264 payloader</summary>
+    </bug>
+    <bug>
+      <id>428182</id>
+      <summary>Current CVS generates compiler warnings</summary>
+    </bug>
+    <bug>
+      <id>429329</id>
+      <summary>[videobox] add support for AYUV input</summary>
+    </bug>
+    <bug>
+      <id>442874</id>
+      <summary>Multipartmux assumes caps == mime</summary>
+    </bug>
+  </bugs>
+
+</release>
