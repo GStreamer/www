@@ -1,3 +1,8 @@
+2007-07-05  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/documentation/index.xml:
+	  Add link to design docs.
+
 2007-06-19  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* src/htdocs/news/news.xml:

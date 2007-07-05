@@ -77,6 +77,13 @@
 <!-- <td colspan="3"><a href="&site;/data/doc/gstreamer/devel/gstreamer-libs/html/">HTML</a></td> -->
 <!-- <td colspan="3"><a href="&site;/data/doc/gstreamer/stable/gstreamer-libs/html/">HTML</a></td> -->
 </tr>
+
+<tr>
+ <td>Core Design Documentation</td>
+ <td colspan="3"><a href="http://webcvs.freedesktop.org/gstreamer/gstreamer/docs/design/">HTML</a></td>
+<!-- <td colspan="3"><a href="">HTML</a></td> -->
+<!-- <td colspan="3"><a href="">HTML</a></td> -->
+</tr>
 </table>
 
 <table width="95%" border="1" cellspacing="0" cellpadding="2">
