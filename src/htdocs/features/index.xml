@@ -14,75 +14,80 @@
 
 <h2>Comprehensive Core Library</h2>
 <ul>
-<li>Graph-based structure allows arbitrary pipeline construction</li>
-<li>Based on <a
-href="http://developer.gnome.org/doc/API/2.0/gobject/index.html">GLib
-2.0</a> object model for object-oriented design and inheritance</li>
-<li>Small core library of less than 150KB, about 10 K lines of code</li>
-<li>Pluggable scheduling system capable of dealing with most pipeline
-structures</li>
-<li>Multi-threaded pipelines are trivial and transparent to construct</li>
-<li>Clean and simple <a href="&site;/data/doc/gstreamer/head/gstreamer/html/">API</a> for both
-plugin and application developers</li>
-<li>Extremely lightweight data passing means very high performance/low latency</li>
-<li>Complete
-<a href="&site;/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html">
-debugging system</a>
-for both core and plugin/app developers</li>
-<li>Clocking to ensure global inter-stream synchronization</li>
+  <li>Graph-based structure allows arbitrary pipeline construction</li>
+  <li>
+    Based on
+    <a href="http://developer.gnome.org/doc/API/2.0/gobject/index.html">GLib 2.0</a>
+    object model for object-oriented design and inheritance
+  </li>
+  <li>Compact core library of less than 500KB, about 65 K lines of code</li>
+  <li>Multi-threaded pipelines are trivial and transparent to construct</li>
+  <li>
+    Clean and simple
+    <a href="&site;/data/doc/gstreamer/head/gstreamer/html/">API</a> for both
+    plugin and application developers
+  </li>
+  <li>Extremely lightweight data passing means very high performance/low latency</li>
+  <li>
+    Complete
+    <a href="&site;/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html">debugging system</a>
+    for both core and plugin/app developers
+  </li>
+  <li>Clocking to ensure global inter-stream synchronization (a/v sync)</li>
+  <li>Quality of service (qos) to ensure best possible quality under high CPU load</li>
 </ul>
 
 <h2>Intelligent Plugin Architecture</h2>
 <ul>
-<li>
-<a href="&site;/data/doc/gstreamer/head/gstreamer/html/GstPlugin.html">
-Dynamically loaded</a>
-plugins provide elements and media types, demand-loaded via an XML registry,
-similar to ld.so.cache</li>
-<li>
-<a href="&site;/data/doc/gstreamer/head/manual/html/chapter-elements.html">
-Element interface</a>
-handles all known types of sources, filters, sinks</li>
-<li>
-<a href="&site;/data/doc/gstreamer/head/manual/html/section-caps.html">
-Capabilities system</a>
-allows verification of element compatibility using MIME types and
-media-specific properties</li>
-<li>
-Autoplugging uses
-capabilities system to complete complex paths automatically</li>
-<li>Pipelines can be saved to
-<a href="&site;/data/doc/gstreamer/head/manual/html/chapter-xml.html">
-XML</a> and loaded back to working state</li>
-<li>Resource friendly plugins don't waste RAM</li>
+  <li>
+    <a href="&site;/data/doc/gstreamer/head/gstreamer/html/GstPlugin.html">
+    Dynamically loaded</a>
+    plugins provide elements and media types, demand-loaded via an XML registry,
+    similar to ld.so.cache</li>
+  <li>
+    <a href="&site;/data/doc/gstreamer/head/manual/html/chapter-elements.html">
+    Element interface</a>
+    handles all known types of sources, filters, sinks</li>
+  <li>
+    <a href="&site;/data/doc/gstreamer/head/manual/html/section-caps.html">
+    Capabilities system</a>
+    allows verification of element compatibility using MIME types and
+    media-specific properties</li>
+  <li>
+    Autoplugging uses
+    capabilities system to complete complex paths automatically</li>
+  <li>
+    Pipelines can be saved to
+    <a href="&site;/data/doc/gstreamer/head/manual/html/chapter-xml.html">
+    XML</a> and loaded back to working state
+  </li>
+  <li>Resource friendly plugins don't waste RAM</li>
 </ul>
+
 <h2>Extensive Development Tools</h2>
 <ul>
-<li><a href="&site;/modules/gst-editor.html">Graphical editor</a> allows pipelines to be
-built quickly, run, and saved as XML</li>
-<li>
-gst-launch command-line tool enables even
-quicker prototyping and testing, similar to ecasound</li>
-<li>All tools written as libraries to allow easy reuse</li>
-<li>A lot of 
-<a href="&site;/documentation/">documentation</a>,
-including partially completed
-<a href="&site;/data/doc/gstreamer/head/manual/html/index.html">
-manual</a> and 
-<a href="&site;/data/doc/gstreamer/head/pwg/html/index.html">
-plugin writer's guide</a></li>
-<li>Large selection of test programs and example code</li>
-<!--
-<li>Large selection of <a href="status/">included plugins</a></li>
--->
-<li>Access to GStreamer API with <a href="&site;/bindings/">various programming languages</a></li>
+  <li>
+    gst-launch command-line tool for quick prototyping and testing, similar to ecasound
+  </li>
+  <li>
+    A lot of 
+    <a href="&site;/documentation/">documentation</a>,
+    including partially completed
+    <a href="&site;/data/doc/gstreamer/head/manual/html/index.html">
+    manual</a> and 
+    <a href="&site;/data/doc/gstreamer/head/pwg/html/index.html">
+    plugin writer's guide</a>
+  </li>
+  <li>Large selection of test programs and example code</li>
+  <li>Access to GStreamer API with <a href="&site;/bindings/">various programming languages</a></li>
+  <li>
+    <a href="&site;/modules/gst-editor.html">Graphical editor</a> allows pipelines to be
+    built quickly, run, and saved as XML (not ported to 0.10)
+  </li>
 </ul>
 
 <p>GStreamer is rapidly approaching a stable API. There is still a number of
 items on our TODO list.
-<!-- - for more info, check out our <a
-href="status/">status</a>.
--->
 </p>
 
   </body>

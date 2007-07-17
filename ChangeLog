@@ -1,3 +1,11 @@
+2007-07-17  Stefan Kost  <ensonic@users.sf.net>
+
+	* src/htdocs/download/index.xml:
+	  Add windows download links.
+
+	* src/htdocs/features/index.xml:
+	  Slighly update. More needed.
+
 2007-07-05  Tim-Philipp Müller  <tim at centricular dot net>
 
 	* src/htdocs/documentation/index.xml:
