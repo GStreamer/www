@@ -1,5 +1,13 @@
 2007-07-17  Stefan Kost  <ensonic@users.sf.net>
 
+	* src/htdocs/documentation/Makefile.am:
+	  Improve the build.
+	
+	* src/htdocs/download/index.xml:
+	  Fix xml breakage.
+
+2007-07-17  Stefan Kost  <ensonic@users.sf.net>
+
 	* src/htdocs/download/index.xml:
 	  Add windows download links.
 

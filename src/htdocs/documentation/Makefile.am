@@ -1,9 +1,9 @@
 built_pages = index.html licensing.html rtp.html plugins.html splitup.html gstreamer010.html
 
 plugins.xml:
+	- cvsroot=`cat $(srcdir)/CVS/Root`; \
 	for m in gstreamer gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad; do \
-	  cvs -d:pserver:anonymous@cvs.freedesktop.org:/cvs/gstreamer \
-	  co -d $$m $$m/docs/plugins/inspect; \
+	  cvs -d$$cvsroot co -d $$m $$m/docs/plugins/inspect; \
 	done
 	echo "<plugins>" > plugins.xml
 	cat */*.xml >> plugins.xml

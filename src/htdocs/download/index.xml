@@ -51,7 +51,7 @@ GStreamer.
   <DD>We also have <A href="http://gstreamer.freedesktop.org/pkg/windows/releases/">Windows binaries</A> of the last core and base releases.
     You will find setup installers and win32dev packages including headers
     and .lib to build application based on GStreamer using Visual Studio.
-    <br>
+    <BR/>
     Alternatively there is also <A href="http://projects.collabora.co.uk/~oleavr/OABuild/">OABuild</A> which provides a
     fast and convenient way to build GStreamer, GTK+, D-Bus, Telepathy and
     .NET bindings for all of them on Windows, also without the usage of mingw/cygwin.
