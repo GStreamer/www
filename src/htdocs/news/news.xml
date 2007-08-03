@@ -2874,4 +2874,22 @@ or download tarballs for
 </p>
     </content>
   </item>
+  <item>
+    <date>2007-08-03 17:00</date>
+    <title>GStreamer and GStreamer Base Plugins 0.10.14 stable releases</title>
+    <content>
+<p>
+The GStreamer team is pleased to announce new Core and Base Plugins
+releases in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.14.html">gstreamer</a> and
+<a href="&site;/releases/gst-plugins-base/0.10.14.html">gst-plugins-base</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.14.tar.bz2">gstreamer</a> and
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.14.tar.bz2">gst-plugins-base</a>.
+</p>
+    </content>
+  </item>
 </news>

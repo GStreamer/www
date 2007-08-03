@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Breathing Vacuum</name>
+  <version>0.10.14</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>State change handling improvements</feature>
+    <feature>New improved GstController API</feature>
+    <feature>Multi-queue fixes and enhancements</feature>
+    <feature>Fewer dynamic library relocations</feature>
+    <feature>Various other fixes and improvements</feature>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
+Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
+Let us know if you want to be added to this list.
+</p>
+  </applications>
+
+    <contributors>
+	<person>Andy Wingo</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastien Moutte</person>
+	<person>Stefan Kost</person>
+	<person>Steve Fink</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim Angus</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tommi Vainikainen</person>
+	<person>Wim Taymans</person>
+	<person>Étienne Noreau-Hébert</person>
+  </contributors>
+
+
+  <api>
+    <additions>
+    <item>Add GstParamSpecFraction, so elements can have fraction
+    properties without lots of painful string parsing (#444648).</item>
+    <item>Add fail_unless_equals_float() and assert_equals_float()</item>
+    <item>Add gst_type_register_static_full</item>
+    <item>Add gst_element_class_set_details_simple</item>
+    <item>Refactor GstController into the core controller which can take
+    a GstControlSource for providing actual values for timestamps.</item>
+    <item>add GST_TAG_LICENSE_URI and GST_TAG_COPYRIGHT_URI (#451939)</item>
+    <item>gst_element_factory_has_interface()</item>
+    </additions>
+<!--
+    <deprecations>
+    </deprecations>
+-->
+  </api>
+
+  <bugs>
+    <bug>
+      <id>457322</id>
+      <summary>registry is read twice on startup</summary>
+    </bug>
+    <bug>
+      <id>406632</id>
+      <summary>pkgconfigify the check for Check in configure.ac</summary>
+    </bug>
+    <bug>
+      <id>423700</id>
+      <summary>[multiqueue] leaks memory when flushing</summary>
+    </bug>
+    <bug>
+      <id>437457</id>
+      <summary>saving relocations for GstElementDetails</summary>
+    </bug>
+    <bug>
+      <id>444648</id>
+      <summary>[API] add GstParamSpecFraction</summary>
+    </bug>
+    <bug>
+      <id>444820</id>
+      <summary>build error with grammar.tab.c</summary>
+    </bug>
+    <bug>
+      <id>448794</id>
+      <summary>state changes are racy with decodebin after rewrite for 0...</summary>
+    </bug>
+    <bug>
+      <id>449197</id>
+      <summary>[capsfilter] Should set src pad caps on buffer</summary>
+    </bug>
+    <bug>
+      <id>449226</id>
+      <summary>Incomplete ghostpads in xml session save</summary>
+    </bug>
+    <bug>
+      <id>449493</id>
+      <summary>minor quoting fix in gst-feature.m4 macro</summary>
+    </bug>
+    <bug>
+      <id>450711</id>
+      <summary>[GstController] Improve extensibility by providing a GstC...</summary>
+    </bug>
+    <bug>
+      <id>451939</id>
+      <summary>[API] add GST_TAG_LICENSE_URI and GST_TAG_COPYRIGHT_URI</summary>
+    </bug>
+    <bug>
+      <id>459501</id>
+      <summary>gst_registry_lookup_feature_locked is slow</summary>
+    </bug>
+    <bug>
+      <id>462558</id>
+      <summary>Regression in async state change handling</summary>
+    </bug>
+    <bug>
+      <id>462752</id>
+      <summary>make gst_element_class_set_details_simple args const</summary>
+    </bug>
+    <bug>
+      <id>430682</id>
+      <summary>multiqueue doesn't output data on unlinked pads properly</summary>
+    </bug>
+    <bug>
+      <id>462085</id>
+      <summary>registry feature hash can access invalid memory</summary>
+    </bug>
+    <bug>
+      <id>357959</id>
+      <summary>buffer_alloc is not proxied through tee</summary>
+    </bug>
+    <bug>
+      <id>374639</id>
+      <summary>GstTee doesn't handle pad list resyncs properly</summary>
+    </bug>
+    <bug>
+      <id>449414</id>
+      <summary>[capsfilter] Copy of passed GstCaps taken instead of refe...</summary>
+    </bug>
+    <bug>
+      <id>453732</id>
+      <summary>[PATCH] multiqueue returns wrong internally linked pads</summary>
+    </bug>
+  </bugs>
+</release>
