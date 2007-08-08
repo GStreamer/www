@@ -1,3 +1,11 @@
+2007-08-08  Edward Hervey  <edward@fluendo.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gnonlin/0.10.9.xml:
+	* src/htdocs/releases/gnonlin/Makefile.am:
+	Release 0.10.9 of GNonLin.
+
 2007-08-03  Jan Schmidt  <thaytan@mad.scientist.com>
 
 	* src/htdocs/entities.gst:
