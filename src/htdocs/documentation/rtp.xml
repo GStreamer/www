@@ -15,9 +15,10 @@
 <p>Philippe Khalaf &lt;philippe.kalaf at collabora.co.uk&gt;</p>
 <p>
 Any questions you have you can find me on #farsight or #gstreamer on freenode, my nickname is Burger.</p>
-<font COLOR="#ff0000">This is still under HEAVY developpement, don't expect it to work well, assuming it actually does work</font>
 <h2>Intro</h2>
 <p>This document describes how to get RTP working in GStreamer 0.10.</p>
+<p>The RTP stack described below on this page is in place and works, but a new and
+improved one is in development and you can find the latest details on that <a href="http://farsight.freedesktop.org/wiki/GstRtpDesign">on the Farsight Wiki page</a>.</p>
 <p>The elements are currently being developped in <a
 HREF="http://farsight.sourceforge.net">Farsight</a>'s darcs repository. The
 required module is <a

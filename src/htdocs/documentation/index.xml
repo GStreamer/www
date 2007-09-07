@@ -154,14 +154,14 @@ developers planing on or already using GStreamer for their applications:</p>
 <a href="&site;/documentation/licensing.html">GStreamer Licensing Advisory</a>
 </p>
 
-<h2>GStreamer plug-ins split-up in 0.9</h2>
+<h2>GStreamer plug-ins split-up in 0.10</h2>
 <p><a href="&site;/documentation/splitup.html">
-An explanation of the plug-ins split-up in 0.9</a>
+An explanation of the plug-ins split-up in 0.10</a>
 </p>
 
-<h2>RTP in GStreamer 0.9</h2>
+<h2>RTP in GStreamer 0.10</h2>
 <p><a href="&site;/documentation/rtp.html">Information from Philipe Khalaf</a>
-on the ongoing RTP development being done for GStreamer 0.9/0.10</p>
+on the ongoing RTP development being done for GStreamer 0.10</p>
 
 <h2>Articles</h2>
 External articles discussing GStreamer in various contexts.
