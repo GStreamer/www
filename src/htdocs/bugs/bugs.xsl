@@ -106,7 +106,21 @@ unresolved
 <a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=RESOLVED&amp;resolution=FIXED&amp;target_milestone=HEAD&amp;form_name=query">All fixed in HEAD bugs (need to reassign to milestones)</a>
   </td>
 </tr>
-
+<tr>
+  <td colspan="6">
+All bugs changed within the last
+<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=1">24 hours</a>, 
+<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=2">48 hours</a>,
+<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=3">72 hours</a>,
+<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=7">1 week</a>,
+<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=14">2 weeks</a>
+  </td>
+</tr>
+<tr>
+  <td colspan="4">
+<a href="http://bugzilla.gnome.org/browse.cgi?product=GStreamer">GStreamer bugzilla overview</a>
+  </td>
+</tr>
 <tr>
 <xsl:apply-templates />
 </tr>
