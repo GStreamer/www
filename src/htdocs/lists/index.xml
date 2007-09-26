@@ -48,12 +48,12 @@ HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-daily">A
 
 <p>Daily mailings (irc logs, build failures, etc.).</p>
 
-<LI><B>gstreamer-gstmm</B>:</LI>
+<LI><B>gstreamer-gstopenmax</B>:</LI>
 <I><A
-HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-gstmm">Subscribe</A>
+HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-openmax">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-gstmm">Archives</A></I>
-<p>Development of GStreamer <A HREF="http://www.gtkmm.org">gtkmm</A> style C++ bindings.</p>
+HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-gstopenmax">Archives</A></I>
+<p>Development of GStreamer wrappers for OpenMax components.</p>
 
 </UL>
 
