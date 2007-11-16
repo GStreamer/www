@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
+  <name>No need to argue</name>
+  <version>0.10.15</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Base Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc</li>
+  <li>network: tcp</li>
+  <li>typefind</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioscale, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: ffmpegcolorspace</li>
+  <li>aggregate elements: decodebin, playbin</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>RTP/RTSP/RTCP/SDP support improved</feature>
+    <feature>New FFT support library libgstfft, based on Kiss FFT</feature>
+    <feature>New formats supported in volume and audiotestsrc</feature>
+    <feature>Fixes in audiorate and videorate</feature>
+    <feature>Audio capture fixes</feature>
+    <feature>Playbin and decodebin fixes</feature>
+    <feature>New tagdemux base class for ID3/APE style tag readers</feature>
+    <feature>Fix a nasty crash in the X sinks on shutdown</feature>
+    <feature>New tags supported</feature>
+    <feature>Add support for multichannel WAV files.</feature>
+    <feature>Preserve channel layout information when up/down-mixing.</feature>
+    <feature>Many bug-fixes and improvements</feature>
+    <feature></feature>
+  </features>
+
+  <applications>
+  </applications>
+    <contributors>
+	<person>Stefan Kost</person>
+	<person>Alexander Shopov</person>
+	<person>Damien Lespiau</person>
+	<person>Dan Williams</person>
+	<person>Daniel Díaz</person>
+	<person>David Schleef</person>
+	<person>Davyd Madeley</person>
+	<person>Funda Wang</person>
+	<person>Haakon Sporsheim</person>
+	<person>Ilkka Tuohela</person>
+	<person>Jakub Bogusz</person>
+	<person>Jan Schmidt</person>
+	<person>Jason Kivlighn</person>
+	<person>Jens Granseuer</person>
+	<person>Johan Dahlin</person>
+	<person>Jorge González González</person>
+	<person>Josep Torra Valles</person>
+	<person>Julien MOUTTE</person>
+	<person>Laurent Glayal</person>
+	<person>Michael Smith</person>
+	<person>Mogens Jaeger</person>
+	<person>Ole André Vadla Ravnås</person>
+	<person>Olivier Crete</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Renato Filho</person>
+	<person>René Stadler</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastien Moutte</person>
+	<person>Stefan Kost</person>
+	<person>Thijs Vermeir</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tommi Myöhänen</person>
+	<person>Vincent Torri</person>
+	<person>Wim Taymans</person>
+	<person>Yang Hong</person>
+  </contributors>
+
+  <api>
+    <additions>
+    <item>GstTagDemux base class for simple tag demuxers</item>
+    <item>GstBaseAudioSrc::provide-clock property</item>
+    <item>gst_rtcp_ntp_to_unix()</item>
+    <item>gst_rtcp_unix_to_ntp()</item>
+    <item>gst_rtp_buffer_get_header_len()</item>
+    <item>gst_rtp_buffer_get_extension_data()</item>
+    <item>gst_rtp_buffer_compare_seqnum()</item>
+    <item>gst_rtp_buffer_ext_timestamp()</item>
+    <item>gst_rtcp_packet_sdes_copy_entry()</item>
+    <item>gst_install_plugins_supported()</item>
+    <item>gst_missing_*_installer_detail_new() convenience API</item>
+    <item>gst_rtsp_connection_poll()</item>
+    <item>GstTextOverlay::line-alignment property</item>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+
+  <bugs>
+    <bug>
+      <id>475395</id>
+      <summary>decodebin2 leaks request-pads</summary>
+    </bug>
+    <bug>
+      <id>475451</id>
+      <summary>[decodebin2] leaks ghostpad</summary>
+    </bug>
+    <bug>
+      <id>378770</id>
+      <summary>[xvimagesink] race condition in event thread?</summary>
+    </bug>
+    <bug>
+      <id>407282</id>
+      <summary>[decodebin2] autoplug-sort signal has GList ** parameter</summary>
+    </bug>
+    <bug>
+      <id>430677</id>
+      <summary>[audioconvert] does not preserve channel positions when f...</summary>
+    </bug>
+    <bug>
+      <id>442654</id>
+      <summary>[volume] controller bypassed by default</summary>
+    </bug>
+    <bug>
+      <id>445529</id>
+      <summary>[volume] support for 24/32-bit audio/x-raw-int</summary>
+    </bug>
+    <bug>
+      <id>446766</id>
+      <summary>return code for gst_base_rtp_payload_audio_handle_event()</summary>
+    </bug>
+    <bug>
+      <id>451970</id>
+      <summary>Subparse requires HTML parser</summary>
+    </bug>
+    <bug>
+      <id>453650</id>
+      <summary>[audiobasesrc] two alsasrcs do not work in one pipeline</summary>
+    </bug>
+    <bug>
+      <id>459334</id>
+      <summary>[textoverlay] expose pango line alignment property</summary>
+    </bug>
+    <bug>
+      <id>459585</id>
+      <summary>[basertpdepayload] api without namespace</summary>
+    </bug>
+    <bug>
+      <id>460422</id>
+      <summary>[audiotestsrc] Add support for float and double output</summary>
+    </bug>
+    <bug>
+      <id>462805</id>
+      <summary>[alsa] compilation fails with gcc 4.2</summary>
+    </bug>
+    <bug>
+      <id>462979</id>
+      <summary>Add 'silent' property to GstTimeOverlay</summary>
+    </bug>
+    <bug>
+      <id>463215</id>
+      <summary>[audioconvert] compile errors</summary>
+    </bug>
+    <bug>
+      <id>464320</id>
+      <summary>[PATCH] gst-plugins-base-0.14 does not build for win32</summary>
+    </bug>
+    <bug>
+      <id>464666</id>
+      <summary>[playbin] QT trailer hangs in preroll with decodebin2</summary>
+    </bug>
+    <bug>
+      <id>464690</id>
+      <summary>Add connection-speed property to uridecodebin element</summary>
+    </bug>
+    <bug>
+      <id>465015</id>
+      <summary>[playbin] Not removed probes causes deadlocks in streamin...</summary>
+    </bug>
+    <bug>
+      <id>465028</id>
+      <summary>some warnings with mingw</summary>
+    </bug>
+    <bug>
+      <id>467667</id>
+      <summary>GST_FRAMES_TO_CLOCK_TIME() and GST_CLOCK_TIME_TO_FRAMES()...</summary>
+    </bug>
+    <bug>
+      <id>468129</id>
+      <summary>[basertpaudiopayload] event handler returns the wrong value</summary>
+    </bug>
+    <bug>
+      <id>468619</id>
+      <summary>New library gstfft: FFT library for integer and float typ...</summary>
+    </bug>
+    <bug>
+      <id>470456</id>
+      <summary>[API] add gst_missing_*_installer_detail_new()</summary>
+    </bug>
+    <bug>
+      <id>470766</id>
+      <summary>[ssaparse] line breaks in SSA subtitle parser</summary>
+    </bug>
+    <bug>
+      <id>471067</id>
+      <summary>Make the SDP code useable for generating SDP descriptions</summary>
+    </bug>
+    <bug>
+      <id>471194</id>
+      <summary>[rtpbuffer] RTP headers are wrong for win32</summary>
+    </bug>
+    <bug>
+      <id>473097</id>
+      <summary>[baseaudiosink] gstreamer-properties hangs when testing s...</summary>
+    </bug>
+    <bug>
+      <id>474384</id>
+      <summary>gstrtsp-enumtypes.c and .h needed for win32</summary>
+    </bug>
+    <bug>
+      <id>474880</id>
+      <summary>[xvimagesink] [ximagesink] leaking buffer caps reference</summary>
+    </bug>
+    <bug>
+      <id>475731</id>
+      <summary>rtspconnection is able to read incomplete messages</summary>
+    </bug>
+    <bug>
+      <id>483620</id>
+      <summary>All Rtp buffers are discarded --  gst_rtp_buffer_get_payl...</summary>
+    </bug>
+    <bug>
+      <id>484989</id>
+      <summary>memleak, not unrefed caps for gstbasertppayload.c</summary>
+    </bug>
+    <bug>
+      <id>489010</id>
+      <summary>Please change default channel order for WAVE_EXT-less .wa...</summary>
+    </bug>
+    <bug>
+      <id>491722</id>
+      <summary>[playbin] regression: crash with external subtitles</summary>
+    </bug>
+    <bug>
+      <id>492098</id>
+      <summary>[GstFFT] Broken scaling</summary>
+    </bug>
+    <bug>
+      <id>492114</id>
+      <summary>Build issues on Windows/MSVC</summary>
+    </bug>
+    <bug>
+      <id>492306</id>
+      <summary>compilation errors with MinGW</summary>
+    </bug>
+    <bug>
+      <id>492813</id>
+      <summary>Missing symbols in libgstrtp.def</summary>
+    </bug>
+    <bug>
+      <id>493986</id>
+      <summary>Build issues on Windows (missing symbols)</summary>
+    </bug>
+    <bug>
+      <id>494346</id>
+      <summary>pre-release vs6 patch</summary>
+    </bug>
+    <bug>
+      <id>496548</id>
+      <summary>Including malloc.h breaks macos build</summary>
+    </bug>
+    <bug>
+      <id>496724</id>
+      <summary>DSW file references non-existent DSP files</summary>
+    </bug>
+    <bug>
+      <id>464079</id>
+      <summary>audiotestsrc doesn't respond to conversion queries properly</summary>
+    </bug>
+    <bug>
+      <id>442065</id>
+      <summary>floatcast.h includes config.h and might break other apps</summary>
+    </bug>
+    <bug>
+      <id>466717</id>
+      <summary>gst_event_new_new_segment_full:assertion `start &lt; = stop' ...</summary>
+    </bug>
+    <bug>
+      <id>485753</id>
+      <summary>Decodebin2 deadlocks when nulling pipeline during typefind</summary>
+    </bug>
+    <bug>
+      <id>464028</id>
+      <summary>Move connection-speed from playbin to playbasebin</summary>
+    </bug>
+  </bugs>
+
+</release>
