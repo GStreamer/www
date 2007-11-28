@@ -2929,4 +2929,20 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2007-11-28 11:00</date>
+    <title>GStreamer Python Bindings 0.10.9 stable release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new Python Bindings
+release in the GStreamer 0.10 stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-python/0.10.9.html">gst-python</a>,
+or download tarballs for
+<a href="&site;/src/gst-python/gst-python-0.10.9.tar.bz2">gst-python</a>.
+</p>
+    </content>
+  </item>
 </news>

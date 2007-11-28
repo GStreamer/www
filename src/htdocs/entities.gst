@@ -2,7 +2,7 @@
 <!ENTITY gst-plugins-version-stable "0.8.12">
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.2">
-<!ENTITY gst-python-version-stable "0.10.8">
+<!ENTITY gst-python-version-stable "0.10.9">
 <!ENTITY gst-plugins-base-version-stable "0.10.15">
 <!ENTITY gst-plugins-good-version-stable "0.10.6">
 <!ENTITY gst-plugins-ugly-version-stable "0.10.6">
