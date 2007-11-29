@@ -93,20 +93,26 @@
       <td width="22"><img src="&site;/images/1x1.gif" alt="" border="0" width="22" height="2" /></td>
       <!-- close the page table -->
     </tr>
+  </table>
+
+  <!-- this is the footer with the conact -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr><br /></tr>
+    <tr>
+      <div style="background: #FF3333; height: 2px; width: 100%;"></div>
+      <div style="background: #339933; height: 2px; width: 100%;"></div>
+      <div style="background: #3333CC; height: 2px; width: 100%;"></div>
+    </tr>
     <!-- add a contact address -->
     <tr>
-      <td colspan="2"></td>
-      <td align="right"><br/><i>If there are any problems on this page, please contact thomas (at) apestaart (dot) org</i></td>
-      <td></td>
+      <td align="right">
+        <i>If there are any problems on this page, please contact thomas (at) apestaart (dot) org</i>
+      </td>
     </tr>
   </table>
 
-  <div style="background: #FF3333; height: 2px; width: 100%;"></div>
-  <div style="background: #339933; height: 2px; width: 100%;"></div>
-  <div style="background: #3333CC; height: 2px; width: 100%;"></div>
-
     </body>
-    </html>
+  </html>
 </xsl:template>
 
 <!-- index page contents -->

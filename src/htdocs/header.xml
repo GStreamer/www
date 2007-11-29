@@ -1,22 +1,27 @@
 <!-- this is the xml for the menu which is pulled in by header.xsl -->
 <!-- all the href's here are relative to & site ; -->
   <menu>
-    <item href="/">Home</item>
+    <item class="gstnavside-r" href="/">Home</item>
+    <item class="gstnavside-r" href="/features/">Features</item>
+    <!--item class="gstnavside-r" href="/data/doc/gstreamer/head/faq/html/">FAQ</item-->
+    <item class="gstnavside-r" href="/news/">News</item>
+    <item class="gstnavside-r" href="/planet/">Planet</item>
+    <item class="gstnavside-r" href="/download/">Download</item>
+    <item class="gstnavside-r" href="/apps/">Applications</item>
 
-    <item href="/features/">Features</item>
-    <item href="/data/doc/gstreamer/head/faq/html/">FAQ</item>
-    <item href="/news/">News</item>
-    <item href="/planet/">Planet</item>
-    <item href="/download/">Download</item>
+    <item href="" />
 
-    <item href="/modules/">Modules</item>
-    <item href="/documentation/">Documentation</item>
-    <item href="/apps/">Applications</item>
-    <item href="/dev/">Developers</item>
-    <item href="/bindings/">Bindings</item>
-    <item href="/artwork/">Artwork</item>
-    <item href="/tasks/">Tasks</item>
-    <item href="/lists/">Mailing Lists</item>
-    <item href="/bugs/">Bug Lists</item>
-    <item href="http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">File a Bug</item>
+    <item class="gstnavside-g" href="/dev/">Developers</item>
+    <item class="gstnavside-g" href="/documentation/">Documentation</item>
+    <item class="gstnavside-g" href="/lists/">Mailing Lists</item>
+    <item class="gstnavside-g" href="http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">File a Bug</item>
+    <item class="gstnavside-g" href="/bugs/">Bug Lists</item>
+    <!--item class="gstnavside-g" href="/modules/">Modules</item-->
+    <!--item class="gstnavside-g" href="/bindings/">Bindings</item-->
+
+    <item href="" />
+
+    <item class="gstnavside-b" href="/artwork/">Artwork</item>
+
+    <!--item href="/tasks/">Tasks</item-->
   </menu>

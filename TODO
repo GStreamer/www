@@ -4,3 +4,16 @@
   (it is, the documantation page is not!)
 * add page for presentations, publications etc. (documentation?)
 
+* check: http://www.buzztard.org/files/gst/
+* cleanup left side menu (16 entries)
+  * remove
+    * FAQ (its under docs, its outdated)
+    * Tasks (remove totally or link to wiki )
+  * make groups: 1st common stuff, 2nd group developer stuff, 3rd group misc
+    * Home, Features, News, Planet, Download, Applications
+    * Developers, Documentation, Mailing Lists, File a Bug
+      Modules (now linked from Developer page)
+      Bindings (is on Developer page)
+      Bug Lists (should be linked from Developer page)
+    * Artwork
+

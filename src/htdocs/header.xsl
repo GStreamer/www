@@ -11,7 +11,7 @@
 <xsl:template match="menu">
 
 <!-- actual menu -->
-  <table border="0" width="146" cellpadding="0" cellspacing="0">
+  <table border="0" width="156" cellpadding="0" cellspacing="0">
     <tr><td><img src="&site;/images/backslash.png" alt="" height="48" width="100%" /></td></tr>
     <tr>
       <td bgcolor="#666666" valign="top">
@@ -20,21 +20,37 @@
           <tr><td colspan="2"><img src="&site;/images/1x1.gif" alt="" border="0" width="2" height="2" /></td></tr>
           <xsl:for-each select="item">
           <tr>
-            <td width="140" bgcolor="#CCCCCC" align="center">
-              <xsl:choose>
-                <xsl:when test="substring(@href, 1, 7) = 'http://'">
-              <b><a href="{@href}" class="gstnavside">
-                 <xsl:value-of select="." /></a></b>
-                </xsl:when>
-                <xsl:otherwise>
-              <b><a href="&site;{@href}" class="gstnavside">
-                 <xsl:value-of select="." /></a></b>
-                </xsl:otherwise>
-              </xsl:choose>
-            </td>
+            <xsl:choose>
+              <xsl:when test="@href = ''">
+                <td width="150" />
+              </xsl:when>
+              <xsl:otherwise>
+                <td width="150" align="left">
+                  <xsl:attribute name="class">
+                    <xsl:value-of select="@class" />
+                  </xsl:attribute>
+                  <xsl:choose>
+                    <xsl:when test="substring(@href, 1, 7) = 'http://'">
+                      <b><a href="{@href}">
+                        <xsl:attribute name="class">
+                          <xsl:value-of select="@class" />
+                        </xsl:attribute>
+                        <xsl:value-of select="." /></a></b>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <b><a href="&site;{@href}" class="gstnavside">
+                        <xsl:attribute name="class">
+                          <xsl:value-of select="@class" />
+                        </xsl:attribute>
+                       <xsl:value-of select="." /></a></b>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </td>
+              </xsl:otherwise>
+            </xsl:choose>
             <td><img src="&site;/images/1x1.gif" border="0" width="2" height="2" alt="" /></td>
           </tr>
-          <tr><td colspan="2"><img src="&site;/images/1x1.gif" border="0" width="2" height="2" alt="" /></td></tr>
+          <tr><td colspan="3"><img src="&site;/images/1x1.gif" border="0" width="2" height="2" alt="" /></td></tr>
           </xsl:for-each>
         </table>
       </td>

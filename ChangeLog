@@ -1,3 +1,20 @@
+2007-11-29  Stefan Kost  <ensonic@users.sf.net>
+
+	* HACKING:
+	* TODO:
+	* src/copy/gstreamer.css:
+	* src/htdocs/dev/index.xml:
+	* src/htdocs/header.xml:
+	* src/htdocs/header.xsl:
+	* src/htdocs/index.xsl:
+	* src/htdocs/news/news.xsl:
+	* src/htdocs/page.xsl:
+	  New left-side navigation. Some links have been commented out
+	  (FAQ, Tasks, Modules, Bindings). They are alreay accesible from the
+	  subpages and the tasks are outdated. The remaining links have been
+	  visually grouped. Table-layout on the front-page has been fixed. Irc
+	  link on devel page reworded and modules linked from the page.
+
 2007-11-28  Edward Hervey  <bilboed@bilboed.com>
 
 	* src/htdocs/entities.gst:

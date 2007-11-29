@@ -1,33 +1,50 @@
-h1 { 
+h1, h2, h3 {
   color: #333333;
   text-decoration: none;
-  font-size:1.6em;
   font-family: "Arial Narrow", "Arial", sans-serif;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #AAAAAA;
 }
 
-h2 {
-  color: #333333;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-family: "Arial Narrow", "Arial", sans-serif;
-}
-
-h3 {
-  color: #333333;
-  text-decoration: none;
-  font-size: 1em;
-  font-family: "Arial Narrow", "Arial", sans-serif;
-}
+h1 { font-size:1.6em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: 1em; }
 
 a:link { color: #0000FF; text-decoration: none; }
 a:visited { color: #6666CC; text-decoration: none; }
 a:hover { color: #FF3333; text-decoration: underline; }
 
-a.gstnavside:link { color: #000000; text-decoration: none; font-family: "Arial", sans-serif; }
-a.gstnavside:visited { color: #000000; text-decoration: none; font-family: "Arial", sans-serif; }
-a.gstnavside:hover { color: #3333CC; text-decoration: none; font-family: "Arial", sans-serif; }
+td.gstnavside-r, td.gstnavside-g, td.gstnavside-b {
+  border-left-width: 4px;
+  border-left-style: solid;
+}
+
+td.gstnavside-r { background-color:#CCAAAA; border-left-color: #CCAAAA; }
+td.gstnavside-g { background-color:#AACCAA; border-left-color: #AACCAA; }
+td.gstnavside-b { background-color:#AAAACC; border-left-color: #AAAACC; }
+td.gstnavside-r:hover { border-left-color: #FFAAAA; }
+td.gstnavside-g:hover { border-left-color: #AAFFAA; }
+td.gstnavside-b:hover { border-left-color: #AAAAFF; }
+
+a.gstnavside-r, a.gstnavside-g, a.gstnavside-b {
+  text-decoration: none; font-family: "Arial", sans-serif;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+a.gstnavside-r:link, a.gstnavside-g:link, a.gstnavside-b:link { 
+  color: #000000;
+}
+a.gstnavside-r:visited, a.gstnavside-g:visited, a.gstnavside-b:visited {
+  color: #000000;
+}
+a.gstnavside-r:hover { color: #CC3333; }
+a.gstnavside-g:hover { color: #33CC33; }
+a.gstnavside-b:hover { color: #3333CC; }
 
 .right { text-align: right; }
+
+/* task pages */
 
 .task-header {
   background: lightblue;
