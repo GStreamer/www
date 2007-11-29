@@ -23,6 +23,7 @@
     <xsl:call-template name="page">
       <xsl:with-param name="title">GStreamer: Modules</xsl:with-param>
       <xsl:with-param name="content">
+<h2>Modules</h2>
 <p>
 GStreamer is a large project, so it's split up into several modules.
 Most people need at least gstreamer and gst-plugins to do anything useful.

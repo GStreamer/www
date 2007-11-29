@@ -21,6 +21,7 @@
     <xsl:call-template name="page">
       <xsl:with-param name="title">GStreamer: Bindings</xsl:with-param>
       <xsl:with-param name="content">
+<h2>Bindings</h2>
 <p>
 There are bindings for GStreamer for quite a few languages already.
 </p>

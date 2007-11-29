@@ -10,23 +10,14 @@
   <title>GStreamer: Applications</title>
   <body>
 
-  <p>
+
+<h1>GStreamer applications</h1>
+<p>
  Because GStreamer is designed to be as generic as possible, a wide 
  range of applications can be build on top of it with very little effort, 
  allowing the programmer to focus on the user interface and human interaction
  components of application design.
 </p>
-
-<!--
-<h1>Applications using GStreamer</h1>
-
-<p>
- We've started a <a href="../status/?category=2">status page</a> that tracks the 
- progress of applications that written using GStreamer. There are some really nice applications out there using Gstreamer now so be sure to check it out. And of course, let us know if you have anything you'd like to add to it.
-</p>
--->
-
-<h1>GStreamer applications</h1>
 <p>All applications listed alphabetically</p>
 
 <h2>amaroK</h2>

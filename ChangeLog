@@ -1,5 +1,13 @@
 2007-11-29  Stefan Kost  <ensonic@users.sf.net>
 
+	* src/htdocs/apps/index.xml:
+	* src/htdocs/bindings/bindings.xsl:
+	* src/htdocs/lists/index.xml:
+	* src/htdocs/modules/modules.xsl:
+	  Add headings for those pages.
+
+2007-11-29  Stefan Kost  <ensonic@users.sf.net>
+
 	* HACKING:
 	* TODO:
 	* src/copy/gstreamer.css:
