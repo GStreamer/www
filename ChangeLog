@@ -1,3 +1,11 @@
+2007-12-04  Edward Hervey  <bilboed@bilboed.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.10.3.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	gst-ffmpeg 0.10.3 release
+
 2007-11-29  Stefan Kost  <ensonic@users.sf.net>
 
 	* src/htdocs/apps/index.xml:

@@ -2945,4 +2945,22 @@ or download tarballs for
 </p>
     </content>
   </item>
+
+  <item>
+    <date>2007-12-04 22:00</date>
+    <title>GStreamer FFmpeg Plugins 0.10.3 stable releases</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new FFmpeg Plugins 
+releases in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-ffmpeg/0.10.3.html">gst-ffmpeg</a>, 
+or download tarballs for
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.2.tar.bz2">gst-ffmpeg</a>.
+</p>
+    </content>
+  </item>
+
 </news>
