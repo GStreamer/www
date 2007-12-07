@@ -28,11 +28,11 @@
     desktop wallpaper: (1280x1024)<br/>
     <a href="/data/images/artwork/gstreamer.jpeg"><img src="/data/images/artwork/gstreamer-mini.jpeg"/></a><br/>
     link button: (102x47)<br/>
-    <img src="/data/images/artwork/gstreamer-family.png"/><br/>
+    <a href="/data/images/artwork/gstreamer-family.png"><img src="/data/images/artwork/gstreamer-family.png"/></a><br/>
 
     <br/>
     <h2>GStreamer logo in SVG format by Christophe Dumas</h2>
-    <a href="gstreamer-logo.svg">GStreamer logo SVG format</a>
+    <a href="/data/images/artwork/gstreamer-logo.svg">GStreamer logo SVG format</a>
 
     <h2>More artwork ...</h2>
     If you want your GStreamer-related artwork added to this page,

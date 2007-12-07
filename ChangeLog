@@ -1,3 +1,12 @@
+2007-12-07  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/artwork/index.xml:
+	  Fix link to SVG logo now that it's been uploaded to
+	  the same place where the other logos are (#500633)
+
+	* src/htdocs/bugs/bugs.xml:
+	  Add more milestones.
+
 2007-12-06  Thijs Vermeir  <thijsvermeir@gmail.com>
 
 	* src/htdocs/lists/index.xml:
