@@ -1,3 +1,8 @@
+2007-12-17  Stefan Kost  <ensonic@users.sf.net>
+
+	* src/htdocs/dev/index.xml:
+	  Add link for the wiki.
+
 2007-12-07  Tim-Philipp Müller  <tim at centricular dot net>
 
 	* src/htdocs/artwork/index.xml:

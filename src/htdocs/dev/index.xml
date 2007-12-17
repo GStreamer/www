@@ -30,7 +30,8 @@ the manual and the slides to get a general overview and to get you started.</p>
 <!-- FIXME: dotplan back in action or not ? -->
 
 <p>The developers tend to live in IRC on <a href="http://www.freenode.net/">Freenode</a>, in
-<a href="irc://irc.freenode.net/gstreamer">#gstreamer</a>.
+<a href="irc://irc.freenode.net/gstreamer">#gstreamer</a>. Sketching ideas and making plans can be done on the
+<a href="http://gstreamer.freedesktop.org/wiki">gstreamer wiki</a>.
 </p>
                                                                                 
 <H1>CVS access</H1>
