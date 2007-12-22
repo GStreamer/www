@@ -1,3 +1,8 @@
+2007-12-22  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/apps/index.xml:
+	  Patch from Russ Nelson to add Gnash.
+
 2007-12-17  Stefan Kost  <ensonic@users.sf.net>
 
 	* src/htdocs/dev/index.xml:
