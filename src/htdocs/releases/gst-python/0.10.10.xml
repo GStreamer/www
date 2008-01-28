@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name>Destination Overtime</name>
+  <version>0.10.10</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Python Bindings.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+  </intro>
+  <features>
+    <feature>Wrap new API for 0.10.16 GStreamer and Base releases.</feature>
+    <feature>New gst.pbutils module wraps the gst-plugins-base pbutils library.</feature>
+    <feature>Rework gst_pad_add_*probe function wrapping to avoid leaks.</feature>
+    <feature>Various build fixes.</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+        <contributors>
+	<person>Andy Wingo</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Olivier Crete</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastien Moutte</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>509522</id>
+      <summary>New gst-python bindings don't compile with python2.4</summary>
+    </bug>
+    <bug>
+      <id>472822</id>
+      <summary>Wrap -base utils helper library</summary>
+    </bug>
+    <bug>
+      <id>504786</id>
+      <summary>pad probes leak  refs to their data</summary>
+    </bug>
+    <bug>
+      <id>509766</id>
+      <summary>generated win32/common/config.h miss some defines</summary>
+    </bug>
+    <bug>
+      <id>510437</id>
+      <summary>Build failure due to missing Python.h</summary>
+    </bug>
+  </bugs>
+</release>

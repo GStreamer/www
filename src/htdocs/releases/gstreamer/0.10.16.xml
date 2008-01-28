@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Special Dispensation</name>
+  <version>0.10.16</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Monotonic/Posix clock support</feature>
+    <feature>Dumping of dot-file graph descriptions for debugging</feature>
+    <feature>Clean-up of exported symbols</feature>
+    <feature>Many bug-fixes and enhancements</feature>
+    <feature></feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
+Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
+Let us know if you want to be added to this list.
+</p>
+  </applications>
+
+        <contributors>
+	<person>Alexis Ballier</person>
+	<person>Damien Lespiau</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Julien MOUTTE</person>
+	<person>Julien Moutte</person>
+	<person>Laurent Glayal</person>
+	<person>Matthias Bolte</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thijs Vermeir</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+
+
+
+  <api>
+    <additions>
+    <item>GstIdentity::signal-handoffs</item>
+    <item>gst_util_get_timestamp()</item>
+    <item>gst_base_transform_set_gap_aware()</item>
+    <item>GstFileSink::buffer-mode</item>
+    <item>GstFileSink::buffer-size</item>
+    <item>gst_plugin_register_static()</item>
+    </additions>
+    <deprecations>
+    <item>GST_PLUGIN_DEFINE_STATIC()</item>
+    </deprecations>
+  </api>
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>497859</id>
+      <summary>--disable-gst-debug option fails compilation</summary>
+    </bug>
+    <bug>
+      <id>339279</id>
+      <summary>[gst.URIHandler] interfaces with class-global virtual met...</summary>
+    </bug>
+    <bug>
+      <id>498694</id>
+      <summary>Patches to avoid g_signal_emit(SIGNAL_HANDOFF) on identit...</summary>
+    </bug>
+    <bug>
+      <id>498746</id>
+      <summary>basesink is forwarding downstream events</summary>
+    </bug>
+    <bug>
+      <id>498767</id>
+      <summary>Hangs after end of tracks since 0.10.15</summary>
+    </bug>
+    <bug>
+      <id>498924</id>
+      <summary>deprecate GST_PLUGIN_DEFINE_STATIC because it's not portable</summary>
+    </bug>
+    <bug>
+      <id>499007</id>
+      <summary>[gst-plot-timeline] more options</summary>
+    </bug>
+    <bug>
+      <id>499140</id>
+      <summary>Add check to ensure .def files are kept up-to-date</summary>
+    </bug>
+    <bug>
+      <id>500143</id>
+      <summary>Some small improvements (limiting realloc and CPU usage )</summary>
+    </bug>
+    <bug>
+      <id>500150</id>
+      <summary>[filesink] add property to enable buffering via setvbuf()</summary>
+    </bug>
+    <bug>
+      <id>501560</id>
+      <summary>gst_(caps|structure)_from_string() crash if structure nam...</summary>
+    </bug>
+    <bug>
+      <id>503131</id>
+      <summary>g_intern_string SUSE 10.2</summary>
+    </bug>
+    <bug>
+      <id>503231</id>
+      <summary>Change to GST_BUFFER_FLAG_GAP meaning can break with base...</summary>
+    </bug>
+    <bug>
+      <id>503417</id>
+      <summary>Build failure due uninitialized variable in function 'gst...</summary>
+    </bug>
+    <bug>
+      <id>503590</id>
+      <summary>gstreamer-0.10.15 fails tests on ppc64</summary>
+    </bug>
+    <bug>
+      <id>503675</id>
+      <summary>broken registry files written to disk</summary>
+    </bug>
+    <bug>
+      <id>504499</id>
+      <summary>Messages from check no longer contain the test case name</summary>
+    </bug>
+    <bug>
+      <id>505799</id>
+      <summary>iSight camera does not work in gstreamer</summary>
+    </bug>
+    <bug>
+      <id>506643</id>
+      <summary>crash in fixate_value/gst_value_init_and_copy on empty li...</summary>
+    </bug>
+    <bug>
+      <id>507957</id>
+      <summary>clean-up incomplete function declarations</summary>
+    </bug>
+    <bug>
+      <id>508175</id>
+      <summary>GST_TIMEVAL_TO_TIME() and GST_TIMESPEC_TO_TIME() need to ...</summary>
+    </bug>
+    <bug>
+      <id>510187</id>
+      <summary>gst_plugin_register_static() API review and GST_PLUGIN_DE...</summary>
+    </bug>
+    <bug>
+      <id>510747</id>
+      <summary>Use $(MAKE) instead of make to fix the build if GNU make ...</summary>
+    </bug>
+    <bug>
+      <id>511750</id>
+      <summary>Configure of prereleases 15.2-15.4 fail in OpenEmbedded M...</summary>
+    </bug>
+  </bugs>
+</release>

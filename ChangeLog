@@ -1,3 +1,16 @@
+2008-01-28  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* bin/new-release:
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-base/0.10.16.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gst-python/0.10.10.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.16.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	Announce releases of core 0.10.16, base 0.10.16 and python 0.10.10
+
 2008-01-11  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/apps/index.xml:

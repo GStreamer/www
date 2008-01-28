@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
+  <name>Scheduled Interruption</name>
+  <version>0.10.16</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Base Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc</li>
+  <li>network: tcp</li>
+  <li>typefind</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioscale, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: ffmpegcolorspace</li>
+  <li>aggregate elements: decodebin, playbin</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Handle newer Theora granule-pos semantics</feature>
+    <feature>Introducing first alpha version playbin2 - the upcoming successor to playbin</feature>
+    <feature>Fixes in playbin handling of stream-switching</feature>
+    <feature>New API for uniform handling of raw-video format buffers.</feature>
+    <feature>Improvements for RTSP/RTP handling</feature>
+    <feature>RIFF lib additions for VC-1 and AVC1 fourccs</feature>
+    <feature>Many other bug-fixes and improvements</feature>
+  </features>
+
+  <applications>
+  </applications>
+        <contributors>
+	<person>Bastien Nocera</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Jerone Young</person>
+	<person>Joe Peterson</person>
+	<person>Julien MOUTTE</person>
+	<person>Julien Moutte</person>
+	<person>Michael Smith</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Robin Stocker</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastien Moutte</person>
+	<person>Stefan Kost</person>
+	<person>Thijs Vermeir</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tommi Myöhänen</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+
+
+
+  <api>
+    <additions>
+    <item>New GstVideoFormat API and helper functions in libgstvideo</item>
+    <item>gst_base_audio_sink_set_provide_clock()</item>
+    <item>gst_base_audio_sink_get_provide_clock()</item>
+    <item>gst_base_audio_sink_set_slave_method()</item>
+    <item>gst_base_audio_sink_get_slave_method()</item>
+    <item>gst_base_audio_src_set_provide_clock()</item>
+    <item>gst_base_audio_src_get_provide_clock()</item>
+    </additions>
+<!--
+    <deprecations>
+    </deprecations>
+-->
+  </api>
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>506132</id>
+      <summary>Review of changes in video/video.h</summary>
+    </bug>
+    <bug>
+      <id>320984</id>
+      <summary>[oggdemux] cannot handle multiple chains</summary>
+    </bug>
+    <bug>
+      <id>373011</id>
+      <summary>[playbin] throws error when switching off subtitles</summary>
+    </bug>
+    <bug>
+      <id>436756</id>
+      <summary>Intermittent crashes in Pidgin in audioclock g_type_class...</summary>
+    </bug>
+    <bug>
+      <id>462740</id>
+      <summary>[streamselector] patch to improve default stream selection</summary>
+    </bug>
+    <bug>
+      <id>486840</id>
+      <summary>[alsamixer] use _all variants when setting the mixer</summary>
+    </bug>
+    <bug>
+      <id>497964</id>
+      <summary>theoraenc test fails</summary>
+    </bug>
+    <bug>
+      <id>498228</id>
+      <summary>gst-plugins-base-0.10.15 does not compile on FreeBSD (Gen...</summary>
+    </bug>
+    <bug>
+      <id>499697</id>
+      <summary>Provide better pkg-config files</summary>
+    </bug>
+    <bug>
+      <id>502497</id>
+      <summary>[subparse] SubRip subtitles starting from 0 not recognised</summary>
+    </bug>
+    <bug>
+      <id>503440</id>
+      <summary>The control sockets used by gstrtspconnection.c are never...</summary>
+    </bug>
+    <bug>
+      <id>503930</id>
+      <summary>[cdda] warning: 'eos' may be used uninitialized in this f...</summary>
+    </bug>
+    <bug>
+      <id>506928</id>
+      <summary>[alsamixer] add &quot; PCM &quot; as master fall back for cards that ...</summary>
+    </bug>
+    <bug>
+      <id>508138</id>
+      <summary>[decodebin] does not error out if pad activation fails</summary>
+    </bug>
+    <bug>
+      <id>509762</id>
+      <summary>missing file in win32/MANIFEST</summary>
+    </bug>
+    <bug>
+      <id>511274</id>
+      <summary>gst_rtp_buffer_get_extension_data is returning FALSE when...</summary>
+    </bug>
+    <bug>
+      <id>496731</id>
+      <summary>[PATCH] xvimagesink leaks memory if initialization fails</summary>
+    </bug>
+    <bug>
+      <id>496761</id>
+      <summary>[PATCH] RTSP message leaks memory when uninitialized</summary>
+    </bug>
+    <bug>
+      <id>500763</id>
+      <summary>SIGSEGV while playing ogg audio file</summary>
+    </bug>
+  </bugs>
+
+</release>
