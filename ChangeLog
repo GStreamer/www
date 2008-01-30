@@ -1,3 +1,13 @@
+2008-01-30  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-base/0.10.17.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.17.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	Announce 0.10.17 core & base paper bags
+
 2008-01-28  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* bin/new-release:
