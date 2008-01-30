@@ -1,6 +1,11 @@
 2008-01-30  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* src/htdocs/news/news.xml:
+	Add a little extra note about not using 0.10.16 releases...
+
+2008-01-30  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/news/news.xml:
 	Fix date in the new announcement...
 
 2008-01-30  Jan Schmidt  <jan.schmidt@sun.com>

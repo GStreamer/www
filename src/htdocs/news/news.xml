@@ -2991,6 +2991,9 @@ or download tarballs for
 The GStreamer team is surprised to announce new releases of GStreamer Core and GStreamer Base Plugins in the 0.10 GStreamer stable release series.
 </p>
 <p>
+These unscheduled releases replace the ill-fated 0.10.16 versions of Core &amps; Base. See the release notes for details, but the important point is that everyone should pretend 0.10.16 didn't happen.
+</p>
+<p>
 Check out release notes for
 <a href="&site;/releases/gstreamer/0.10.17.html">gstreamer</a> and 
 <a href="&site;/releases/gst-plugins-base/0.10.17.html">gst-plugins-base</a>
