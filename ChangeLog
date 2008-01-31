@@ -1,3 +1,8 @@
+2008-01-31  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/news/news.xml:
+	Fix the spelling of '&amp;'
+
 2008-01-30  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* src/htdocs/news/news.xml:
