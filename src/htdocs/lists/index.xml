@@ -55,6 +55,13 @@ HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-openmax">Subscribe</
 HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-openmax">Archives</A></I>
 <p>Development of GStreamer wrappers for OpenMax components.</p>
 
+<LI><B>gstreamer-embedded</B>:</LI>
+<I><A
+HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-embedded">Subscribe</A>
+| <A
+HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-embedded">Archives</A></I>
+<p>Discussion of building, optimising, developing and using GStreamer on embedded devices.</p>
+
 </UL>
 
   </body>

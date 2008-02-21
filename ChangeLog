@@ -1,5 +1,10 @@
 2008-02-21  Jan Schmidt  <jan.schmidt@sun.com>
 
+	* src/htdocs/lists/index.xml:
+	Add the gstreamer-embedded mailing list to the rank.
+
+2008-02-21  Jan Schmidt  <jan.schmidt@sun.com>
+
 	* src/htdocs/entities.gst:
 	* src/htdocs/news/news.xml:
 	* src/htdocs/releases/gst-plugins-bad/0.10.6.xml:
