@@ -72,49 +72,64 @@ Other modules containing plug-ins are:
   <applications>
   </applications>
 
-        <contributors>
-	<person>Alex Lancaster</person>
-	<person>Andy Wingo</person>
+          <contributors>
+	<person></person>
+	<person> Wim Taymans</person>
+	<person>Abel Cheung</person>
+	<person>Alessandro Decina</person>
+	<person>Alexander Eichner</person>
+	<person>Alexander Shopov</person>
+	<person>Anders Skargren</person>
 	<person>Antoine Tremblay</person>
+	<person>Arek Korbik</person>
+	<person>Bjarne Rosengren</person>
 	<person>Brian Cameron</person>
 	<person>Christian Schaller</person>
-	<person>Christophe Dehais</person>
-	<person>Daniel Charles</person>
+	<person>Damien Carbery</person>
 	<person>David Schleef</person>
-	<person>Dejan Sakelšak</person>
 	<person>Edgard Lima</person>
 	<person>Edward Hervey</person>
-	<person>Eric Anholt</person>
+	<person>Funda Wang</person>
+	<person>Haakon Sporsheim</person>
+	<person>Ilkka Tuohela</person>
+	<person>Jakub Bogusz</person>
 	<person>Jan Schmidt</person>
-	<person>Jonas Holmberg</person>
-	<person>Jonathan Matthew</person>
-	<person>Josh Coalson</person>
+	<person>Jason Kivlighn</person>
+	<person>Jayarama S. Santana</person>
+	<person>John Millikin</person>
+	<person>Jordi Jaen Pallares</person>
+	<person>Jorge González González</person>
+	<person>Julien MOUTTE</person>
 	<person>Julien Moutte</person>
+	<person>Julien Puydt</person>
+	<person>Kwang Yul Seo</person>
 	<person>Laurent Glayal</person>
-	<person>Loïc Minier</person>
-	<person>Lutz Mueller</person>
 	<person>Mark Nauwelaerts</person>
 	<person>Michael Smith</person>
+	<person>Mikel Olasagasti</person>
+	<person>Mogens Jaeger</person>
+	<person>Ole André Vadla Ravnås</person>
+	<person>Olivier Crete</person>
 	<person>Peter Kjellerstedt</person>
 	<person>René Stadler</person>
+	<person>Sameer Naik</person>
 	<person>Sebastian Dröge</person>
-	<person>Sébastien Moutte</person>
-	<person>Sjoerd Simons</person>
-	<person>Snaik</person>
+	<person>Sebastien Moutte</person>
 	<person>Stefan Kost</person>
 	<person>Thijs Vermeir</person>
 	<person>Thomas Vander Stichele</person>
 	<person>Tim-Philipp Müller</person>
+	<person>Timo Hotti</person>
 	<person>Tommi Myöhänen</person>
-	<person>Vincent Torri</person>
+	<person>Wai-Ming Ho</person>
 	<person>Wim Taymans</person>
+	<person>Wim Taymans,,,</person>
+	<person>Wouter Cloetens</person>
+	<person>Yun Zheng Hu</person>
 	<person>Zaheer Abbas Merali</person>
-	<person>Charles</person>
-	<person>Daniel Fischer</person>
-	<person>Jerry Tan</person>
-	<person>jp.Liu</person>
-	<person>Zhangfei Gao</person>
+	<person>orjan</person>
   </contributors>
+
 
 
 
@@ -134,11 +149,9 @@ Other modules containing plug-ins are:
 
   
 
+  
+
   <bugs>
-    <bug>
-      <id>392189</id>
-      <summary>[esdsink] pipeline hung in state change from PAUSED to PL...</summary>
-    </bug>
     <bug>
       <id>407590</id>
       <summary>crash using gconfaudiosink</summary>
@@ -430,6 +443,10 @@ Other modules containing plug-ins are:
     <bug>
       <id>447458</id>
       <summary>[qtdemux] export AMRSpecificBox as codec_data</summary>
+    </bug>
+    <bug>
+      <id>476916</id>
+      <summary>Have a source based on gvfs</summary>
     </bug>
     <bug>
       <id>385887</id>

@@ -3004,4 +3004,24 @@ or download tarballs for
     </content>
   </item>
 
+<item>
+    <date>2008-02-20 00:00</date>
+<title>GStreamer Good 0.10.7, Bad 0.10.6 &amp; Ugly 0.10.7 stable releases</title>
+<content>
+<p>
+The GStreamer team is thrilled to announce new releases of the Good, Bad and Ugly Plugins modules in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-good/0.10.7.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-bad/0.10.6.html">gst-plugins-bad</a> and
+<a href="&site;/releases/gst-plugins-ugly/0.10.7.html">gst-plugins-ugly</a>
+or download tarballs for
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.7.tar.bz2">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.6.tar.bz2">gst-plugins-bad</a> and
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.7.tar.bz2">gst-plugins-ugly</a>
+</p>
+    </content>
+  </item>
+
 </news>
