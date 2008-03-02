@@ -1,3 +1,8 @@
+2008-03-02  Tim-Philipp Müller  <tim at centricular dot net>
+
+	* src/htdocs/bugs/bugs.xml:
+	  Add more versions.
+
 2008-02-21  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* src/htdocs/lists/index.xml:
