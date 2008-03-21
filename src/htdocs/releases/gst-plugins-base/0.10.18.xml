@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
+  <name>I will follow</name>
+  <version>0.10.18</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Base Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc</li>
+  <li>network: tcp</li>
+  <li>typefind</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioscale, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: ffmpegcolorspace</li>
+  <li>aggregate elements: decodebin, playbin</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Experimental GIO plugin</feature>
+    <feature>Continued playbin2 development</feature>
+    <feature>RTP fixes</feature>
+    <feature>Better network element support on Windows</feature>
+    <feature>Various other bug-fixes and improvements</feature>
+  </features>
+
+  <applications>
+  </applications>
+    <contributors>
+	<person>Alan Peevers</person>
+	<person>Branko Čibej</person>
+	<person>Brian Cameron</person>
+	<person>David Schleef</person>
+	<person>Jan Schmidt</person>
+	<person>Josep Torra Valles</person>
+	<person>José Alburquerque</person>
+	<person>Julien Moutte</person>
+	<person>Mersad Jelacic</person>
+	<person>Michael Smith</person>
+	<person>Milosz Derezynski</person>
+	<person>Ole André Vadla Ravnås</person>
+	<person>Olivier Crete</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Rene Stadler</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thijs Vermeir</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tomasz Sałaciński</person>
+	<person>Tommi Myöhänen</person>
+	<person>William M. Brack</person>
+	<person>Wim Taymans</person>
+	<person>Zaheer Abbas Merali</person>
+  </contributors>
+
+  <api>
+    <additions>
+    <item>GstRTPBuffer:gst_rtp_buffer_set_extension_data()</item>
+    <item>add GST_VIDEO_FORMAT_Y41B and GST_VIDEO_FORMAT_Y42B.</item>
+    <item>add GstMixerOptions::get_values vfunc (#519906)</item>
+    <item>add gst_mixer_options_list_changed(), gst_mixer_mixer_changed() and gst_mixer_message_parse_options_list_changed(). Fixes #519916.</item>
+    <item>gst_base_rtp_audio_payload_set_samplebits_options()</item>
+    <item>GstNetBuffer::gst_netaddress_equal</item>
+    </additions>
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>509637</id>
+      <summary>[API] [basertpaudiopayload] add _set_samplebits_options()</summary>
+    </bug>
+    <bug>
+      <id>510229</id>
+      <summary>[gnomevfssrc] HTTPS support</summary>
+    </bug>
+    <bug>
+      <id>511478</id>
+      <summary>[rtpbuffer] add gst_rtp_buffer_set_extension_data function</summary>
+    </bug>
+    <bug>
+      <id>511810</id>
+      <summary>[RTSP] Uses MT-unsafe gmtime() function</summary>
+    </bug>
+    <bug>
+      <id>512899</id>
+      <summary>[alsa] gstalsasink.c:527: warning: 'snd_pcm_sw_params_set...</summary>
+    </bug>
+    <bug>
+      <id>513167</id>
+      <summary>Fix compiler warning due to disabled signals in mixertrac...</summary>
+    </bug>
+    <bug>
+      <id>514307</id>
+      <summary>[playbin] warning in nautilus, volume element can't be cr...</summary>
+    </bug>
+    <bug>
+      <id>514623</id>
+      <summary>Ogg Theora video slow</summary>
+    </bug>
+    <bug>
+      <id>514937</id>
+      <summary>Correct initialization of hints in is_multicast_address()</summary>
+    </bug>
+    <bug>
+      <id>515654</id>
+      <summary>xvimagesink doesn't build with --disable-xshm</summary>
+    </bug>
+    <bug>
+      <id>516246</id>
+      <summary>[alsasink] handle negative delay from snd_pcm_delay</summary>
+    </bug>
+    <bug>
+      <id>517420</id>
+      <summary>typefind: add h264 elementary stream discovery</summary>
+    </bug>
+    <bug>
+      <id>517991</id>
+      <summary>problems with configure file depending on GCC compiler</summary>
+    </bug>
+    <bug>
+      <id>518039</id>
+      <summary>libgstrtsp MSVC 6.0 compile error</summary>
+    </bug>
+    <bug>
+      <id>518162</id>
+      <summary>[subparse] handle italic text starting with &quot; / &quot; with Micr...</summary>
+    </bug>
+    <bug>
+      <id>518940</id>
+      <summary>[playbin2] make _get_*_tags() match vfuncs prototype in c...</summary>
+    </bug>
+    <bug>
+      <id>519906</id>
+      <summary>[API] add GstMixerOptions::get_values vfunc</summary>
+    </bug>
+    <bug>
+      <id>519916</id>
+      <summary>[API] add mixer-changed and options-list-changed messages</summary>
+    </bug>
+    <bug>
+      <id>520523</id>
+      <summary>[API] Unreviewed changes to ringbuffer API</summary>
+    </bug>
+    <bug>
+      <id>521743</id>
+      <summary>libgstnetbuffer.def exports not up to date</summary>
+    </bug>
+    <bug>
+      <id>522625</id>
+      <summary>[video] gst_video_format_parse_caps() broken for RGBA for...</summary>
+    </bug>
+    <bug>
+      <id>523054</id>
+      <summary>gstbasesrc crashes when called from typefind helpers</summary>
+    </bug>
+    <bug>
+      <id>511825</id>
+      <summary>[RTSP] compiler warning on FreeBSD</summary>
+    </bug>
+    <bug>
+      <id>520300</id>
+      <summary>[alsasrc] provide-clock=false messes up buffer durations</summary>
+    </bug>
+  </bugs>
+
+</release>

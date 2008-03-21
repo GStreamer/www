@@ -1,3 +1,15 @@
+2008-03-21  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-base/0.10.18.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gst-python/0.10.11.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.18.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	Release Core 0.10.18, Base 0.10.18 and Python 0.10.11
+
 2008-03-02  Tim-Philipp Müller  <tim at centricular dot net>
 
 	* src/htdocs/bugs/bugs.xml:

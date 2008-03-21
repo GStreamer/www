@@ -3024,4 +3024,23 @@ or download tarballs for
     </content>
   </item>
 
+<item>
+    <date>2008-03-21 21:00</date>
+<title>GStreamer Core 0.10.18 Base 0.10.18 Python 0.10.11 stable releases</title>
+<content>
+<p>
+The GStreamer team is happy to provide new releases of GStreamer Core, GStreamer Base Plugins and GStreamer Python Bindings in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.18.html">gstreamer</a>, 
+<a href="&site;/releases/gst-plugins-base/0.10.18.html">gst-plugins-base</a> and
+<a href="&site;/releases/gst-python/0.10.11.html">gst-python</a>
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.18.tar.bz2">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.18.tar.bz2">gst-plugins-base</a> and
+<a href="&site;/src/gstreamer/gst-python-0.10.11.tar.bz2">gst-python</a>
+</p>
+    </content>
+  </item>
 </news>

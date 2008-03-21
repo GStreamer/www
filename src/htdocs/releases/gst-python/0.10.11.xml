@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name>What I got</name>
+  <version>0.10.11</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Python Bindings.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+  </intro>
+  <features>
+    <feature>Wrap gst.Pad.start_task</feature>
+    <feature>New videomixer example</feature>
+    <feature>Various other fixes</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Rene Stadler</person>
+	<person>Stefan Kost</person>
+  </contributors>
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>512916</id>
+      <summary>python_do_pending_calls timer is apparently redundant</summary>
+    </bug>
+    <bug>
+      <id>514717</id>
+      <summary>memleak in Pad.set_blocked_async()</summary>
+    </bug>
+  </bugs>
+</release>

@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>So far away</name>
+  <version>0.10.18</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>New GstPoll abstraction simplifies operations on multiple fd's/sockets</feature>
+    <feature>Various bug fixes and corrections</feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
+Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
+Let us know if you want to be added to this list.
+</p>
+  </applications>
+
+    <contributors>
+	<person>Andy Wingo</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Fabrizio Gennari</person>
+	<person>Jan Schmidt</person>
+	<person>Julien Moutte</person>
+	<person>Ole André Vadla Ravnås</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Rene Stadler</person>
+	<person>Sebastian Dröge</person>
+	<person>Siavash Safi</person>
+	<person>Stefan Kost</person>
+	<person>Thijs Vermeir</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>516187</id>
+      <summary>adding gst_collect_pads_read_buffer () collectpads</summary>
+    </bug>
+    <bug>
+      <id>516395</id>
+      <summary>gst_buffer_create_sub does not copy flags</summary>
+    </bug>
+    <bug>
+      <id>520756</id>
+      <summary>different registry backend configurations cause build errors</summary>
+    </bug>
+    <bug>
+      <id>498222</id>
+      <summary>configure improvements</summary>
+    </bug>
+    <bug>
+      <id>499127</id>
+      <summary>[multiqueue] has no documentation</summary>
+    </bug>
+    <bug>
+      <id>505417</id>
+      <summary>Add GstPoll to core</summary>
+    </bug>
+    <bug>
+      <id>509559</id>
+      <summary>[gstinfo]_gst_debug_init() memory leak</summary>
+    </bug>
+    <bug>
+      <id>510194</id>
+      <summary>segmentation fault when trying to link elements.</summary>
+    </bug>
+    <bug>
+      <id>511783</id>
+      <summary>[API] [check] add gst_check_element_push_buffer_list() etc.</summary>
+    </bug>
+    <bug>
+      <id>513964</id>
+      <summary>[GstPad] gst_pad_get_caps don't return a copy of the caps</summary>
+    </bug>
+    <bug>
+      <id>515469</id>
+      <summary>patch to add gst_index_set_resolver_full</summary>
+    </bug>
+    <bug>
+      <id>519584</id>
+      <summary>gst_element_implements_interface() segfaults with 'filesr...</summary>
+    </bug>
+    <bug>
+      <id>519698</id>
+      <summary>g_free/xmlFree mismatches in gstregistryxml</summary>
+    </bug>
+    <bug>
+      <id>520152</id>
+      <summary>Core uses non-portable size_t and ssize_t</summary>
+    </bug>
+    <bug>
+      <id>520671</id>
+      <summary>GstPoll needs to be ported to Windows</summary>
+    </bug>
+    <bug>
+      <id>520808</id>
+      <summary>GstPoll's API could need some changes for Windows</summary>
+    </bug>
+    <bug>
+      <id>520877</id>
+      <summary>registrybinary.c doesn't build cleanly on Windows/MSVC</summary>
+    </bug>
+    <bug>
+      <id>521740</id>
+      <summary>libgstreamer.def exports not up to date</summary>
+    </bug>
+    <bug>
+      <id>522741</id>
+      <summary>regression: gst_index_entry_free() frees string it does n...</summary>
+    </bug>
+  </bugs>
+</release>
