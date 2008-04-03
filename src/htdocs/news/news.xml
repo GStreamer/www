@@ -3043,4 +3043,22 @@ or download tarballs for
 </p>
     </content>
   </item>
+
+<item>
+    <date>2008-04-04 03:00</date>
+<title>GStreamer Core 0.10.19 Base 0.10.19 stable releases</title>
+<content>
+<p>
+The GStreamer team is happy to provide new releases of GStreamer Core, GStreamer Base Plugins in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.19.html">gstreamer</a> and 
+<a href="&site;/releases/gst-plugins-base/0.10.19.html">gst-plugins-base</a>
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.19.tar.bz2">gstreamer</a> and
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.19.tar.bz2">gst-plugins-base</a>
+</p>
+    </content>
+  </item>
 </news>
