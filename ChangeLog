@@ -1,3 +1,8 @@
+2008-05-06  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/apps/index.xml:
+	  Add an app and fix up another one.
+
 2008-04-24  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* src/htdocs/entities.gst:
