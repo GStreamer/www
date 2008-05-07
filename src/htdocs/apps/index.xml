@@ -86,7 +86,7 @@ in any format supported by GStreamer.</p>
 <p><a href="http://ronald.bitfreak.net/gnome-media.php">GNOME Media</a> uses GStreamer for the volume control, sound recorder and cd player.</p>
 
 <h2>GNOME Subtitles</h2>
-<p><a href="http://gnome-subtitle.sourceforge.net">GNOME Subtitles</a>
+<p><a href="http://gnome-subtitles.sourceforge.net">GNOME Subtitles</a>
 is a subtitle editor for the GNOME desktop. It supports the most common
 text-based subtitle formats and allows for subtitle editing, translation and
 synchronization.  It uses GStreamer for the video playback.
