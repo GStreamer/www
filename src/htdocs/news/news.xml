@@ -3079,4 +3079,22 @@ or download tarballs for
     </content>
   </item>
 
+<item>
+    <date>2008-05-22 00:00</date>
+<title>GStreamer Ugly 0.10.8 &amp; FFmpeg 0.10.4 stable releases</title>
+<content>
+<p>
+The GStreamer team is pleased to present new releases of the Ugly and FFmpeg Plugins modules in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-ugly/0.10.8.html">gst-plugins-ugly</a> and
+<a href="&site;/releases/gst-ffmpeg/0.10.4.html">gst-ffmpeg</a>
+or download tarballs for
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.8.tar.bz2">gst-plugins-ugly</a> and
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.4.tar.bz2">gst-ffmpeg</a>
+</p>
+    </content>
+  </item>
+
 </news>

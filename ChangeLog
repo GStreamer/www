@@ -1,3 +1,13 @@
+2008-05-22  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.10.4.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	* src/htdocs/releases/gst-plugins-ugly/0.10.8.xml:
+	* src/htdocs/releases/gst-plugins-ugly/Makefile.am:
+
+	Release 0.10.8 ugly and 0.10.4 ffmpeg
+
 2008-05-09  Tim-Philipp Müller  <tim.muller at collabora co uk>
 
 	* src/htdocs/bugs/bugs.xml:
