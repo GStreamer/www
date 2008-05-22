@@ -1,5 +1,10 @@
 2008-05-22  Jan Schmidt  <jan.schmidt@sun.com>
 
+	* src/htdocs/entities.gst:
+	Commit the version updates too
+
+2008-05-22  Jan Schmidt  <jan.schmidt@sun.com>
+
 	* src/htdocs/news/news.xml:
 	* src/htdocs/releases/gst-ffmpeg/0.10.4.xml:
 	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
