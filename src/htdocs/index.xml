@@ -15,15 +15,19 @@
 <table>
 <tr>
 <td>
-<p>GStreamer is a library that allows the construction of graphs of
-media-handling components, ranging from simple Ogg/Vorbis playback to complex
-audio (mixing) and video (non-linear editing) processing.  
-<br/>
+<p>GStreamer is a library for constructing of graphs of
+media-handling components. The use cases it covers range from simple Ogg/Vorbis
+playback, audio/video streaming to complex audio (mixing) and video (non-linear
+editing) processing.
+</p>
+<p>
 Applications can take advantage of advances in codec and filter technology 
 transparently.  Developers can add new codecs and filters by writing a
 simple plugin with a clean, generic interface.
-<br/>
-GStreamer is released under the LGPL.
+<a href="features/index.html">Read more ...</a>
+</p>
+<p>
+GStreamer is released under the LGPL. The 0.10 series is API and ABI stable.
 </p>
 </td>
 <td>

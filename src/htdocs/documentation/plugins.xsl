@@ -22,7 +22,9 @@
            element is not documented yet.  We appreciate contributions
            to the documentation !</i>
         <xsl:element name="table">
-          <xsl:attribute name="border" value="1" />
+          <xsl:attribute name="border">1</xsl:attribute>
+          <xsl:attribute name="cellspacing">0</xsl:attribute>
+          <xsl:attribute name="cellpadding">2</xsl:attribute>
           <xsl:for-each select="plugin">
             <xsl:sort select="name" />
             <xsl:call-template name="plugin" />
@@ -37,8 +39,6 @@
 
     <!-- hyperlink to the actual plugin documentation -->
     <xsl:element name="tr">
-      <td>Plugin</td>
-
       <!-- td with link to plugin documentation -->
       <xsl:element name="td">
         <xsl:attribute name="colspan">2</xsl:attribute>
@@ -76,12 +76,11 @@
   <!-- for every element -->
   <xsl:template match="element">
     <xsl:element name="tr">
-      <td colspan="2"></td>
+      <td>&#160;&#160;</td>
 
       <!-- td with link to the element documentation -->
       <xsl:element name="td">
         <xsl:attribute name="alignment">right</xsl:attribute>
-        has 
         <xsl:element name="a">
           <xsl:attribute name="href">&site;/data/doc/gstreamer/head/<xsl:value-of select="../../source" />-plugins/html/<xsl:value-of select="../../source" />-plugins-<xsl:value-of select="name"/>.html</xsl:attribute>
           <xsl:value-of select="name"/>
@@ -90,6 +89,7 @@
 
       <!-- td with description -->
       <xsl:element name="td">
+        <xsl:attribute name="colspan">3</xsl:attribute>
         <xsl:value-of select="description"/>
       </xsl:element>
 

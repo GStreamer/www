@@ -1,3 +1,20 @@
+2008-05-28  Stefan Kost  <ensonic@users.sf.net>
+
+	* src/htdocs/documentation/plugins.xsl:
+	  Fix broken xsl and improve the table layout a bit.
+
+	* src/htdocs/features/index.xml:
+	  Mention bridging to other media frameworks. Remove note that
+	   gst-editor has not been ported.
+
+	* src/htdocs/index.xml:
+	  Reformulate the "what is gstreamer" section a bit.
+
+	* src/htdocs/page.xsl:
+	  Link to www category of gstreamer product in bugzilla with
+	  subject=page-title in the footer, instead of showing thomas own email
+	  address.
+
 2008-05-22  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* src/htdocs/entities.gst:

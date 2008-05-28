@@ -10,7 +10,20 @@
   <title>GStreamer: features</title>
   <body>
 <h2>Multiplatform</h2>
-<p>GStreamer has been ported to a wide range of operating systems, processors and compilers. This include but are not limited to Linux on i86,PPC, ARM using GCC. Solaris on x86 and SPARC using both GCC and Forte, MacOSX, Microsoft Windows using MS Visual Developer and IBM OS/400.</p>
+<p>
+GStreamer has been ported to a wide range of operating systems, processors and
+compilers. This include but are not limited to Linux on i86,PPC, ARM using GCC.
+Solaris on x86 and SPARC using both GCC and Forte, MacOSX, Microsoft Windows
+using MS Visual Developer and IBM OS/400.
+</p>
+<p>
+GStreamer can bridge to other multimedia frameworks in order to reuse existing
+components (e.g. codecs) and use platform input/output mechanisms:<ul>
+  <li>Linux/Unix: OpenMAX-IL (via gst-openmax)</li>
+  <li>Windows: DirectShow</li>
+  <li>MaxOS X: QuickTime</li>
+</ul>
+</p>
 
 <h2>Comprehensive Core Library</h2>
 <ul>
@@ -23,7 +36,7 @@
   <li>Compact core library of less than 500KB, about 65 K lines of code</li>
   <li>Multi-threaded pipelines are trivial and transparent to construct</li>
   <li>
-    Clean and simple
+    Clean, simple and stable
     <a href="&site;/data/doc/gstreamer/head/gstreamer/html/">API</a> for both
     plugin and application developers
   </li>
@@ -82,7 +95,7 @@
   <li>Access to GStreamer API with <a href="&site;/bindings/">various programming languages</a></li>
   <li>
     <a href="&site;/modules/gst-editor.html">Graphical editor</a> allows pipelines to be
-    built quickly, run, and saved as XML (not ported to 0.10)
+    built quickly, run, and saved as XML
   </li>
 </ul>
 
