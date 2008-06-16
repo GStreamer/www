@@ -49,6 +49,7 @@
           href="&site;/gstreamer.css" title="default" />
     <link rel="icon" type="image/png" href="&site;/images/favicon.png" />
     <link rel="shortcut icon" href="&site;/images/favicon.png" />
+    <link rel="alternate" type="application/rss+xml" title="GStreamer Project News" href="&site;/news/rss-1.0.xml" />
     <title><xsl:copy-of select="$title" /></title>
   </head>
   <body bgcolor="#FFFFFF" text="#000000"

@@ -1,3 +1,8 @@
+2008-06-16  Stefan Kost  <ensonic@users.sf.net>
+
+	* src/htdocs/page.xsl:
+	  We have a newsfeed - tell about it.
+
 2008-05-28  Stefan Kost  <ensonic@users.sf.net>
 
 	* src/htdocs/documentation/plugins.xsl:
