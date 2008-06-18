@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
+  <name>Here I Go Again</name>
+  <version>0.10.20</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Base Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc</li>
+  <li>network: tcp</li>
+  <li>typefind</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioscale, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: ffmpegcolorspace</li>
+  <li>aggregate elements: decodebin, playbin</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>RTP improvements</feature>
+    <feature>Support digest auth for RTSP</feature>
+    <feature>Additional documentation</feature>
+    <feature>Support DSCP QoS in multifdsink</feature>
+    <feature>Add NV12/NV21 video buffer layouts</feature>
+    <feature>Video scaling now bilinear by default</feature>
+    <feature>Support more than 8 channels in audio conversions</feature>
+    <feature>Channel mapping fixes for audioconvert</feature>
+    <feature>Improve tmplayer and sami subtitle support</feature>
+    <feature>Support 1x1 pixel buffers for videoscale</feature>
+    <feature>Typefinding improvements for MPEG2, musepack</feature>
+    <feature>Ogg/Dirac mapping updated in oggmux</feature>
+    <feature>Fixes in ogg demuxing</feature>
+    <feature>audiosink synchronisation and slaving fixes</feature>
+    <feature>Support muting of the audio in playbin by selecting -1 as the audio stream</feature>
+    <feature>Work done on playbin2 and uridecodebin</feature>
+    <feature>Improvements in the experimental GIO plugin</feature>
+    <feature>decodebin fixes</feature>
+    <feature>Handle GAP buffers in some places</feature>
+    <feature>Various other leak and bug-fixes</feature>
+  </features>
+
+  <applications>
+  </applications>
+    <contributors>
+	<person>Antoine Tremblay</person>
+	<person>Bernard B</person>
+	<person>Damien Lespiau</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Felipe Contreras</person>
+	<person>Hannes Bistry</person>
+	<person>Henrik Eriksson</person>
+	<person>Jan Gerber</person>
+	<person>Jan Schmidt</person>
+	<person>John Millikin</person>
+	<person>Julien Moutte</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Smith</person>
+	<person>Ole André Vadla Ravnås</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Sebastian Dröge</person>
+	<person>Sjoerd Simons</person>
+	<person>Stefan Kost</person>
+	<person>Thijs Vermeir</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Victor STINNER</person>
+	<person>Wim Taymans</person>
+	<person>Wouter Cloetens</person>
+	<person>Young-Ho Cha</person>
+  </contributors>
+
+  <api>
+    <additions>
+    <item>decodebin2::sink-caps property</item>
+    <item>giosrc::file property</item>
+    <item>giosink::file property</item>
+    <item>gst_base_audio_src_set_slave_method()</item>
+    <item>gst_base_audio_src_get_slave_method()</item>
+    <item>GstAudioClock::gst_audio_clock_reset()</item>
+    <item>GstBaseAudioSrc:actual-buffer-time property</item>
+    <item>GstBaseAudioSrc:actual-latency-time property</item>
+    <item>gst_audio_check_channel_positions()</item>
+    <item>add gst_tag_image_data_to_image_buffer()</item>
+    <item>add gst_tag_list_add_id3_image()</item>
+    <item>add GST_TAG_IMAGE_TYPE_NONE enum value</item>
+    </additions>
+<!--
+    <deprecations>
+    </deprecations>
+-->
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>526794</id>
+      <summary>[giosrc] totem doesn't work with some gvfs backends</summary>
+    </bug>
+    <bug>
+      <id>510417</id>
+      <summary>[PLUGIN-MOVE] Move gio to gst-plugins-base</summary>
+    </bug>
+    <bug>
+      <id>509125</id>
+      <summary>crash in CD Player: - playing CD - lowering/...</summary>
+    </bug>
+    <bug>
+      <id>517813</id>
+      <summary>[audioconvert] make gap aware</summary>
+    </bug>
+    <bug>
+      <id>302798</id>
+      <summary>[playbin] add mute property</summary>
+    </bug>
+    <bug>
+      <id>342294</id>
+      <summary>Setting playbin property current-audio=-1 also stops the ...</summary>
+    </bug>
+    <bug>
+      <id>398033</id>
+      <summary>[audioconvert] support more than 8 channels</summary>
+    </bug>
+    <bug>
+      <id>419351</id>
+      <summary>[avi/a52dec] AV synchronization problems</summary>
+    </bug>
+    <bug>
+      <id>467911</id>
+      <summary>[subparse] sami parser update</summary>
+    </bug>
+    <bug>
+      <id>469933</id>
+      <summary>multifdsink IPv6 and diffserv TOS/TC markup</summary>
+    </bug>
+    <bug>
+      <id>506659</id>
+      <summary>[textoverlay] rendering error when using non-standard widths</summary>
+    </bug>
+    <bug>
+      <id>512333</id>
+      <summary>[gstvorbistag] Retrieve Ogg/Vorbis cover art as image met...</summary>
+    </bug>
+    <bug>
+      <id>512382</id>
+      <summary>[playbin] race condition when pausing/playing multiple in...</summary>
+    </bug>
+    <bug>
+      <id>518037</id>
+      <summary>pbutils-enumtypes.c is not included in win32/vs6/libgstpb...</summary>
+    </bug>
+    <bug>
+      <id>521761</id>
+      <summary>gstaudioclock frozen the clock value until reaches latest...</summary>
+    </bug>
+    <bug>
+      <id>522401</id>
+      <summary>gdpdepay doesn't validate payload CRCs</summary>
+    </bug>
+    <bug>
+      <id>523993</id>
+      <summary>playbin2 blocks after a while when listening to a radio s...</summary>
+    </bug>
+    <bug>
+      <id>524724</id>
+      <summary>[PATCH] [baseaudiosrc] buffer-time and latency-time do no...</summary>
+    </bug>
+    <bug>
+      <id>525665</id>
+      <summary>Crash on Ogg/Vorbis with chain=NULL</summary>
+    </bug>
+    <bug>
+      <id>525915</id>
+      <summary>[streamheader] Unit test fails with &quot; gst_adapter_peek: as...</summary>
+    </bug>
+    <bug>
+      <id>526173</id>
+      <summary>[typefinding] fails to detect mpeg video stream whereas m...</summary>
+    </bug>
+    <bug>
+      <id>529018</id>
+      <summary>gst_ogm_parse_stream_header creates fraction value with w...</summary>
+    </bug>
+    <bug>
+      <id>529500</id>
+      <summary>[videotestsrc] support for NV12 and NV21</summary>
+    </bug>
+    <bug>
+      <id>529546</id>
+      <summary>[Playbin] Memory leak in streaminfo handling</summary>
+    </bug>
+    <bug>
+      <id>530068</id>
+      <summary>Ogg Streams with Skeleton and Granulepos &gt; 0 do not work(...</summary>
+    </bug>
+    <bug>
+      <id>530531</id>
+      <summary>[typefinding] bad read in mpeg_video_stream_type_find</summary>
+    </bug>
+    <bug>
+      <id>530719</id>
+      <summary>gst_video_calculate_display_ratio fails when playing Ogg ...</summary>
+    </bug>
+    <bug>
+      <id>530962</id>
+      <summary>[subparse] parses only every second line of TMPlayer subt...</summary>
+    </bug>
+    <bug>
+      <id>532454</id>
+      <summary>[NV12/NV21] videotestsrc and ffmpegcolorspace don't play ...</summary>
+    </bug>
+    <bug>
+      <id>533087</id>
+      <summary>GstRTSPTransport kept opaque in docs</summary>
+    </bug>
+    <bug>
+      <id>533817</id>
+      <summary>[audioconvert] Can't use default 7 channel layout / only ...</summary>
+    </bug>
+    <bug>
+      <id>534071</id>
+      <summary>Gdppay memleak</summary>
+    </bug>
+    <bug>
+      <id>534331</id>
+      <summary>race in decodebin when changing states while the internal...</summary>
+    </bug>
+    <bug>
+      <id>535356</id>
+      <summary>vorbisdec doesn't support 8 channels</summary>
+    </bug>
+    <bug>
+      <id>536475</id>
+      <summary>gdppay memleak and possible crash</summary>
+    </bug>
+    <bug>
+      <id>536521</id>
+      <summary>Refcounting errors in playbin</summary>
+    </bug>
+    <bug>
+      <id>536874</id>
+      <summary>Build failure on windows</summary>
+    </bug>
+    <bug>
+      <id>532166</id>
+      <summary>[ffmpegcolorspace] support NV12 format</summary>
+    </bug>
+    <bug>
+      <id>533617</id>
+      <summary>[audioconvert] Produces silence when converting 1/2 chann...</summary>
+    </bug>
+    <bug>
+      <id>536848</id>
+      <summary>[giosrc] Doesn't handle short reads properly</summary>
+    </bug>
+    <bug>
+      <id>536849</id>
+      <summary>[giosrc] Very slow doing any playback</summary>
+    </bug>
+    <bug>
+      <id>518082</id>
+      <summary>[alsamixer] playback volumes overwritten by capture volum...</summary>
+    </bug>
+    <bug>
+      <id>435633</id>
+      <summary>[PATCH] videorate not (fully) segment aware; causes frame...</summary>
+    </bug>
+    <bug>
+      <id>532364</id>
+      <summary>tcpclientsrc broken in 0.10.19</summary>
+    </bug>
+    <bug>
+      <id>533075</id>
+      <summary>gst_rtp_buffer_compare_seqnum doesn't do what it says</summary>
+    </bug>
+    <bug>
+      <id>533265</id>
+      <summary>[cddabasesrc] Sound Juicer cut a sector when ripping a track</summary>
+    </bug>
+  </bugs>
+
+</release>

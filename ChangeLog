@@ -1,3 +1,15 @@
+2008-06-18  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-base/0.10.20.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gst-python/0.10.12.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.20.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	Release 0.10.20 core/base and 0.10.12 python
+
 2008-06-16  Stefan Kost  <ensonic@users.sf.net>
 
 	* src/htdocs/page.xsl:

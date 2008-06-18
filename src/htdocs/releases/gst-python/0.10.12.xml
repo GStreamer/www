@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name>A Wild Finish</name>
+  <version>0.10.12</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Python Bindings.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+  </intro>
+  <features>
+    <feature>Build fixes</feature>
+    <feature>make gst.Fraction do simplification like GstFraction does in C</feature>
+    <feature>Wrap gst_type_find_register</feature>
+    <feature>Various bug-fixes</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Damien Lespiau</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Johan Dahlin</person>
+	<person>Sebastian Dröge</person>
+  </contributors>
+
+
+  <api>
+    <additions>
+     <item>gst.type_find_register()</item>
+    </additions>
+<!--
+    <deprecations>
+    </deprecations>
+-->
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>529728</id>
+      <summary>wrap gst_type_find_register</summary>
+    </bug>
+    <bug>
+      <id>529731</id>
+      <summary>release the GIL around gst_element_factory_make</summary>
+    </bug>
+    <bug>
+      <id>531697</id>
+      <summary>wrong indentation</summary>
+    </bug>
+    <bug>
+      <id>532809</id>
+      <summary>gst-python version of gst.Fraction doesn't simplify</summary>
+    </bug>
+    <bug>
+      <id>534888</id>
+      <summary>gst-python refcount error with gst_event_new_tag</summary>
+    </bug>
+  </bugs>
+</release>
