@@ -1,3 +1,8 @@
+2008-06-24  Tim-Philipp Müller  <tim.muller at collabora co uk>
+
+	* src/htdocs/bindings/bindings.xml:
+	  Update c++ bindings blurb.
+
 2008-06-18  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* src/htdocs/entities.gst:

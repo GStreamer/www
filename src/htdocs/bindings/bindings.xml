@@ -125,58 +125,31 @@ reach a wider audience.</p>
 <body>
 <p>
 The GStreamer API <a href="http://www.research.att.com/~bs/C++.html">C++</a>
-bindings are still under development.The bindings are based upon <a
-href="http://www.gtkmm.org">gtkmm</a>. It's using the same lifecycle mechanism.
-A modified version of gtkmmproc autogenerates the code. Further work needs to bedone there.
+bindings are still under development and based on
+<a href="http://www.gtkmm.org">gtkmm</a>, using the same lifecycle mechanism.
 </p>
 <p>
-Currently, the following classes are either fully or partially implemented:
+The latest version can be downloaded from the
+<a href="http://ftp.gnome.org/pub/GNOME/sources/gstreamermm/">gstreamermm
+directory on ftp.gnome.org</a>.
 </p>
-                                                                                
-<ul>
-    <li>Gst::Object</li>
-    <li>Gst::Element</li>
-    <li>Gst::Gstreamer</li>
-    <li>Gst::Pad (partially)</li>
-</ul>
-                                                                                
-
-
-</body>
+<p>
+Development takes place in the 
+<a href="http://svn.gnome.org/viewvc/gnomemm/gstreamermm/trunk/">gnomemm module
+in GNOME's Subversion repository</a> and on the
+<a href="http://mail.gnome.org/mailman/listinfo/gtkmm-list">gtkmm mailing list
+</a>, which should also be your first point of contact if you have any queries
+or would like to help out.
+</p>
+    </body>
 
     <news>
       <item>
-        <date>Mid-September</date>
-        <text>Initial work started</text>
-      </item>
-      <item>
-        <date>September-October</date>
-        <text>More classes have been implemented</text>
-      </item>
-      <item>
-        <date>October</date>
-        <text>Martin Schulze added a RefPtr class, which is needed
-    for some classes which don't directly inherit from Glib::Object</text>
-      </item>
-      <item>
-        <date>Mid-October</date>
-        <text>Development has been stopped until November, hence
-    lack of time (university).</text>
+        <date>7 May 2008</date>
+        <text>gstreamermm 0.9.5 released</text>
       </item>
     </news>
 
-    <issues>
-      <issue>Lifecycle, hence inconsistencies in Gstreamer</issue>
-      <issue>Modified gtkmmproc isn't perfect</issue>
-      <issue>Other things which are in the TODO file</issue>
-    </issues>
-
-    <contacts>
-      <person>
-        <realname>Christian Meyer</realname>
-        <email>chrisime (at) gnome.org</email>
-      </person>
-    </contacts>
   </binding>
 
   <binding>
