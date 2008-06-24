@@ -10,6 +10,7 @@
     <component>gstreamer+%28core%29</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.21</milestone>
       <milestone>0.10.20</milestone>
       <milestone>0.10.19</milestone>
       <milestone>0.10.18</milestone>
@@ -69,6 +70,7 @@
     <component>gst-plugins-base</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.21</milestone>
       <milestone>0.10.20</milestone>
       <milestone>0.10.19</milestone>
       <milestone>0.10.18</milestone>
@@ -128,6 +130,7 @@
     <component>gst-plugins-ugly</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.9</milestone>
       <milestone>0.10.8</milestone>
       <milestone>0.10.7</milestone>
       <milestone>0.10.6</milestone>
@@ -189,6 +192,7 @@
     <component>gst-python</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.13</milestone>
       <milestone>0.10.12</milestone>
       <milestone>0.10.11</milestone>
       <milestone>0.10.10</milestone>
@@ -219,6 +223,7 @@
     <component>gst-ffmpeg</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.5</milestone>
       <milestone>0.10.4</milestone>
       <milestone>0.10.3</milestone>
       <milestone>0.10.2</milestone>
@@ -262,6 +267,23 @@
     <component>documentation</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.21</milestone>
+      <milestone>0.10.20</milestone>
+      <milestone>0.10.19</milestone>
+      <milestone>0.10.18</milestone>
+      <milestone>0.10.17</milestone>
+      <milestone>0.10.16</milestone>
+      <milestone>0.10.15</milestone>
+      <milestone>0.10.14</milestone>
+      <milestone>0.10.13</milestone>
+      <milestone>0.10.12</milestone>
+      <milestone>0.10.11</milestone>
+      <milestone>0.10.10</milestone>
+      <milestone>0.10.9</milestone>
+      <milestone>0.10.8</milestone>
+      <milestone>0.10.7</milestone>
+      <milestone>0.10.6</milestone>
+      <milestone>0.10.5</milestone>
       <milestone>0.10.4</milestone>
       <milestone>0.10.3</milestone>
       <milestone>0.10.2</milestone>
