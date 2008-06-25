@@ -1,3 +1,8 @@
+2008-06-25  Tim-Philipp Müller  <tim.muller at collabora co uk>
+
+	* src/htdocs/bindings/bindings.xml:
+	  More c++ bindings page updates.
+
 2008-06-24  Tim-Philipp Müller  <tim.muller at collabora co uk>
 
 	* src/htdocs/bugs/bugs.xml:
