@@ -32,6 +32,7 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
+<!--
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -63,6 +64,7 @@
       <milestone>0.6.2</milestone>
       <milestone>0.6.1</milestone>
       <milestone>0.6.0</milestone>
+-->
     </milestones>
   </module>
 
@@ -92,6 +94,7 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
+<!--
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -99,6 +102,7 @@
       <milestone>0.9.3</milestone>
       <milestone>0.9.2</milestone>
       <milestone>0.9.1</milestone>
+-->
     </milestones>
   </module>
 
@@ -116,6 +120,7 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
+<!--
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -123,6 +128,7 @@
       <milestone>0.9.3</milestone>
       <milestone>0.9.2</milestone>
       <milestone>0.9.1</milestone>
+-->
     </milestones>
   </module>
 
@@ -140,6 +146,7 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
+<!--
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -147,6 +154,7 @@
       <milestone>0.9.3</milestone>
       <milestone>0.9.2</milestone>
       <milestone>0.9.1</milestone>
+-->
     </milestones>
   </module>
 
@@ -162,6 +170,7 @@
       <milestone>0.10.3</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
+<!--
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -169,6 +178,7 @@
       <milestone>0.9.3</milestone>
       <milestone>0.9.2</milestone>
       <milestone>0.9.1</milestone>
+-->
     </milestones>
   </module>
     
@@ -206,6 +216,7 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
+<!--
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -216,6 +227,7 @@
       <milestone>0.8.2</milestone>
       <milestone>0.8.1</milestone>
       <milestone>0.8.0</milestone>
+-->
     </milestones>
   </module>
 
@@ -229,6 +241,7 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
+<!--
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -242,6 +255,7 @@
       <milestone>0.8.2</milestone>
       <milestone>0.8.1</milestone>
       <milestone>0.8.0</milestone>
+-->
     </milestones>
   </module>
 
@@ -292,6 +306,7 @@
     </milestones>
   </module>
 
+<!--
   <module id="gst-plugins">
     <component>gst-plugins</component>
     <milestones>
@@ -323,6 +338,6 @@
       <milestone>0.6.0</milestone>
     </milestones>
   </module>
-
+-->
 
 </buglists>
