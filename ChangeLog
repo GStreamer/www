@@ -1,3 +1,8 @@
+2008-06-27  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* src/htdocs/apps/index.xml:
+	  Long overdue update because LiveSupport was renamed to CampCaster.
+
 2008-06-25  Tim-Philipp Müller  <tim.muller at collabora co uk>
 
 	* src/htdocs/bugs/bugs.xml:
