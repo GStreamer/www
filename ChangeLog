@@ -1,3 +1,13 @@
+2008-07-03  Tim-Philipp Müller  <tim.muller at collabora co uk>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/modules/modules.xml:
+	* src/htdocs/modules/modules.xsl:
+	  gst-plugins is no more, so don't claim it's needed to do
+	  anything useful with GStreamer. Also, use 'CVS HEAD' as
+	  development version for most things instead of abandoned
+	  0.9.x versions.
+
 2008-06-27  Thomas Vander Stichele  <thomas at apestaart dot org>
 
 	* src/htdocs/apps/index.xml:

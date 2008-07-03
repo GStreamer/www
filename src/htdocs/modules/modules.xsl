@@ -26,7 +26,8 @@
 <h2>Modules</h2>
 <p>
 GStreamer is a large project, so it's split up into several modules.
-Most people need at least gstreamer and gst-plugins to do anything useful.
+Most people need at least gstreamer, gst-plugins-base and gst-plugins-good
+to do anything useful.
 </p>
 <p>
 Here's a quick overview of all of our modules :

@@ -9,14 +9,14 @@
 <!ENTITY gst-plugins-bad-version-stable "0.10.7">
 <!ENTITY gnonlin-version-stable "0.10.9">
 
-<!ENTITY gst-version-devel "0.9.6">
-<!ENTITY gst-plugins-base-version-devel "0.9.6">
-<!ENTITY gst-plugins-good-version-devel "0.9.6">
-<!ENTITY gst-plugins-ugly-version-devel "0.9.6">
-<!ENTITY gst-plugins-bad-version-devel "0.9.6">
+<!ENTITY gst-version-devel "CVS HEAD">
+<!ENTITY gst-plugins-base-version-devel "CVS HEAD">
+<!ENTITY gst-plugins-good-version-devel "CVS HEAD">
+<!ENTITY gst-plugins-ugly-version-devel "CVS HEAD">
+<!ENTITY gst-plugins-bad-version-devel "CVS HEAD">
 
-<!ENTITY gst-ffmpeg-version-devel "0.9.6">
-<!ENTITY gst-python-version-devel "0.9.6">
+<!ENTITY gst-ffmpeg-version-devel "CVS HEAD">
+<!ENTITY gst-python-version-devel "CVS HEAD">
 
 <!ENTITY gst-bug-report "http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">
 <!ENTITY gst-cvs-http "http://cvs.freedesktop.org/gstreamer/">

@@ -253,7 +253,8 @@ GStreamer Recorder is an application for recording audio and/or video.
     </description>
     <maintainer>Ronald Bultje</maintainer>
     <versions>
-      <devel>cvs only</devel>
+      <stable>None</stable>
+      <devel>None</devel>
     </versions>
   </module>
 
@@ -280,7 +281,7 @@ GStreamer has a plug-in for the Monkey's Audio format.
     </description>
     <maintainer>Jérémy Simon</maintainer>
     <versions>
-      <stable>0.8.0</stable>
+      <stable>0.8.0 (not ported to GStreamer-0.10 yet)</stable>
     </versions>
   </module>
 
