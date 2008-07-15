@@ -1,3 +1,8 @@
+2008-07-15  Tim-Philipp Müller  <tim.muller at collabora co uk>
+
+	* src/htdocs/download/index.xml::
+	  Update info for debian/ubuntu (#542894).
+
 2008-07-03  Tim-Philipp Müller  <tim.muller at collabora co uk>
 
 	* src/htdocs/entities.gst:

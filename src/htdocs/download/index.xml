@@ -32,10 +32,14 @@ GStreamer.
       historical reasons.  If you still want to know more,
       check our <A href="redhat.html">Red Hat</A> download page.</DD>
 
-  <DT>Debian</DT>
-  <DD>Not yet in experimental but on <A href="http://pkg-gnome.alioth.debian.org">Alioth</A>
-   (gstreamer core and plugins + rhythmbox).</DD>
-  <DD>    echo "deb http://pkg-gnome.alioth.debian.org/debian/ experimental main" &gt;&gt; /etc/apt/sources.list &amp;&amp; apt-get update</DD>
+  <DT>Debian and Ubuntu</DT>
+  <DD>GStreamer and the various plugins modules are available in both Debian
+      and Ubuntu. You can install the most important ones with</DD>
+  <DD><tt>sudo apt-get install gstreamer0.10-tools gstreamer0.10-x
+          gstreamer0.10-plugins-base gstreamer0.10-plugins-good
+          gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad
+          gstreamer0.10-ffmpeg gstreamer0.10-alsa
+          gstreamer0.10-schroedinger gstreamer0.10-pulseaudio</tt></DD>
 
   <DT>Gentoo</DT>
   <DD>The ebuilds for <A href="http://www.gentoo.org">Gentoo</A> linux are available in portage.</DD>
