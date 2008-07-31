@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Steam Train Rolling</name>
+  <version>0.10.9</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Replaygain elements moved from Bad</feature>
+    <feature>Interleave/Deinterleave elements moved from Bad</feature>
+    <feature>Pulseaudio plugin http://pulseaudio.org is now integrated</feature>
+    <feature>New simple Karaoke audio effect plugin</feature>
+    <feature>Improvements in v4l2src</feature>
+    <feature>Multi-channel FLAC file fixes</feature>
+    <feature>AVI and Quicktime reverse playback support</feature>
+    <feature>AVI and Matroska muxing improvements</feature>
+    <feature>New element for rendering SMPTE transitions into alpha channels</feature>
+    <feature>Many improvements in the Win32 directdraw elements</feature>
+    <feature>Error out cleanly for encrypted streams</feature>
+    <feature>RTP/UDP handling improvements</feature>
+    <feature>RTSP digest authentatication implemented.</feature>
+    <feature>New RTP Pay/Depay-loaders for Speex, G.729, DV &amp; raw video/audio</feature>
+    <feature>Error concealment for Speex</feature>
+    <feature>Many other bug-fixes and enhancements</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+        <contributors>
+	<person>Alessandro Decina</person>
+	<person>Bastien Nocera</person>
+	<person>Benjamin Kampmann</person>
+	<person>Benoit Fouet</person>
+	<person>Brian Cameron</person>
+	<person>Bruno Santos</person>
+	<person>Christian Schaller</person>
+	<person>Damien Lespiau</person>
+	<person>Daniel Drake</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Gustaf Räntilä</person>
+	<person>Haakon Sporsheim</person>
+	<person>Henrik Eriksson</person>
+	<person>Jan Gerber</person>
+	<person>Jan Schmidt</person>
+	<person>Jason Donenfeld</person>
+	<person>Jesús Corrius</person>
+	<person>Julien Moutte</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Mersad Jelacic</person>
+	<person>Michael Smith</person>
+	<person>Ole André Vadla Ravnås</person>
+	<person>Olivier Crete</person>
+	<person>Patrick Radizi</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Keller</person>
+	<person>Sjoerd Simons</person>
+	<person>Stefan Kost</person>
+	<person>Tero Saarni</person>
+	<person>Thiago Sousa Santos</person>
+	<person>Thijs Vermeir</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tomasz Grobelny</person>
+	<person>William M. Brack</person>
+	<person>Wim Taymans</person>
+	<person>Wouter Cloetens</person>
+	<person>Youness Alaoui</person>
+  </contributors>
+
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>541787</id>
+      <summary>incorrect timestamp</summary>
+    </bug>
+    <bug>
+      <id>413705</id>
+      <summary>[PLUGINS MOVE] gst-plugins-good contails GPL'ed libcdio p...</summary>
+    </bug>
+    <bug>
+      <id>345393</id>
+      <summary>Missing documentation</summary>
+    </bug>
+    <bug>
+      <id>400679</id>
+      <summary>[PLUGIN-MOVE] pulse-gst to -good</summary>
+    </bug>
+    <bug>
+      <id>422917</id>
+      <summary>G729 payloader/depayloader</summary>
+    </bug>
+    <bug>
+      <id>429322</id>
+      <summary>[matroska-demux] hangs if file starts at non-zero timestamp</summary>
+    </bug>
+    <bug>
+      <id>465146</id>
+      <summary>Add more complete negotiation to gstrtpbasepayload</summary>
+    </bug>
+    <bug>
+      <id>469917</id>
+      <summary>multiudpsink IPv6 and diffserv TOS/TC markup</summary>
+    </bug>
+    <bug>
+      <id>499318</id>
+      <summary>[osxvideosink] warnings on build (ppc, 64bit, 10.4)</summary>
+    </bug>
+    <bug>
+      <id>503288</id>
+      <summary>rtph264pay does not split multiple NAL units in incoming ...</summary>
+    </bug>
+    <bug>
+      <id>511489</id>
+      <summary>avimux muxed audio and video out of sync</summary>
+    </bug>
+    <bug>
+      <id>512345</id>
+      <summary>gstalpha: chroma-key should not set alpha to 0 if brightn...</summary>
+    </bug>
+    <bug>
+      <id>515962</id>
+      <summary>[udp] add ipv6 support to multiudpsink and udpsrc, add mu...</summary>
+    </bug>
+    <bug>
+      <id>516509</id>
+      <summary>gstid3v2mux.cc build failure on Solaris, CFLAGS not valid...</summary>
+    </bug>
+    <bug>
+      <id>519301</id>
+      <summary>avimux fails when going from NULL to playing a second time</summary>
+    </bug>
+    <bug>
+      <id>519460</id>
+      <summary>8 bytes missing in AVI streamheader</summary>
+    </bug>
+    <bug>
+      <id>520092</id>
+      <summary>v4l2src proposed patches</summary>
+    </bug>
+    <bug>
+      <id>520885</id>
+      <summary>directdrawsink has some issues</summary>
+    </bug>
+    <bug>
+      <id>527865</id>
+      <summary>[PATCH] [matroskademux] uses wrong colourspace for palett...</summary>
+    </bug>
+    <bug>
+      <id>529454</id>
+      <summary>[udpsrc] generates false error on win32 due to ICMP dest-...</summary>
+    </bug>
+    <bug>
+      <id>529692</id>
+      <summary>[goom] fails to build on Windows with mingw32</summary>
+    </bug>
+    <bug>
+      <id>529707</id>
+      <summary>[rtp] fails to build on Windows with mingw32</summary>
+    </bug>
+    <bug>
+      <id>530886</id>
+      <summary>Support more mpeg2 variants in .mov files</summary>
+    </bug>
+    <bug>
+      <id>531532</id>
+      <summary>rtspsrc leaks filedescriptors when gst_rtspsrc_open fails</summary>
+    </bug>
+    <bug>
+      <id>531672</id>
+      <summary>[qtdemux] does not handle files with edit lists correctly...</summary>
+    </bug>
+    <bug>
+      <id>532295</id>
+      <summary>gconf setting default audio sink to video default visualizer</summary>
+    </bug>
+    <bug>
+      <id>532393</id>
+      <summary>[dvdec] Shouldn't be GST_RANK_PRIMARY</summary>
+    </bug>
+    <bug>
+      <id>532409</id>
+      <summary>RTP payload/depayloader for G.729</summary>
+    </bug>
+    <bug>
+      <id>532423</id>
+      <summary>RTP payload/depayloader for DV</summary>
+    </bug>
+    <bug>
+      <id>533264</id>
+      <summary>Make v4l2 compile without X</summary>
+    </bug>
+    <bug>
+      <id>533619</id>
+      <summary>udpsink dies when Linux fails (for no reason) sendto() wi...</summary>
+    </bug>
+    <bug>
+      <id>535121</id>
+      <summary>[videomixer] proper seek/segment handling</summary>
+    </bug>
+    <bug>
+      <id>535300</id>
+      <summary>[avidemux] missing support for reverse playback.</summary>
+    </bug>
+    <bug>
+      <id>535935</id>
+      <summary>[qtdemux] Missing metadata</summary>
+    </bug>
+    <bug>
+      <id>536228</id>
+      <summary>[PLUGIN-MOVE] Move interleave/deinterleave to gst-plugins...</summary>
+    </bug>
+    <bug>
+      <id>536317</id>
+      <summary>[v4l2src] Doesn't compile with latest git kernel</summary>
+    </bug>
+    <bug>
+      <id>536646</id>
+      <summary>v4l2src doesn't pick the optimal resolution</summary>
+    </bug>
+    <bug>
+      <id>536831</id>
+      <summary>v4l2src == non-experimental</summary>
+    </bug>
+    <bug>
+      <id>536903</id>
+      <summary>udpsrc now assumes one is using multicast</summary>
+    </bug>
+    <bug>
+      <id>537021</id>
+      <summary>[cdio] does not extract album title from CD-TEXT</summary>
+    </bug>
+    <bug>
+      <id>537031</id>
+      <summary>Enhancement to SunAudio mixer plugin</summary>
+    </bug>
+    <bug>
+      <id>537361</id>
+      <summary>videomixer segment handler fail</summary>
+    </bug>
+    <bug>
+      <id>537377</id>
+      <summary>Gstreamer avidemux fails on avi files with non-AV data st...</summary>
+    </bug>
+    <bug>
+      <id>537622</id>
+      <summary>[matroskademux] Doesn't export covers (file attachments)</summary>
+    </bug>
+    <bug>
+      <id>537675</id>
+      <summary>rtp vorbis/theora payloader static caps don't specify del...</summary>
+    </bug>
+    <bug>
+      <id>537832</id>
+      <summary>rtsp is broken</summary>
+    </bug>
+    <bug>
+      <id>539372</id>
+      <summary>udpsrc do not set port properly on anonymous binding</summary>
+    </bug>
+    <bug>
+      <id>539548</id>
+      <summary>[udpsrc] Fails to bind with permission denied when trying...</summary>
+    </bug>
+    <bug>
+      <id>540067</id>
+      <summary>souphttpsrc does not support http authentication</summary>
+    </bug>
+    <bug>
+      <id>540300</id>
+      <summary>[souphttpsrc] souphttpsrc does not seek ahead in http stream</summary>
+    </bug>
+    <bug>
+      <id>540940</id>
+      <summary>Quicktime demuxer does not handle dirac in QT files</summary>
+    </bug>
+    <bug>
+      <id>541081</id>
+      <summary>[v4l2src] Doesn't compile with on old kernel</summary>
+    </bug>
+    <bug>
+      <id>541384</id>
+      <summary>cross mingw32 gcc: making goom compile</summary>
+    </bug>
+    <bug>
+      <id>541412</id>
+      <summary>cross mingw32 gcc: making libgstrtp plugin compile</summary>
+    </bug>
+    <bug>
+      <id>541650</id>
+      <summary>udpsrc fails to parse URI with IPv6 address</summary>
+    </bug>
+    <bug>
+      <id>541956</id>
+      <summary>v4l2src only requests interlaced video</summary>
+    </bug>
+    <bug>
+      <id>542410</id>
+      <summary>qtdemux not recognizing pcm 8bit streams correctly</summary>
+    </bug>
+    <bug>
+      <id>543054</id>
+      <summary>[osxvideosink] minor build issue</summary>
+    </bug>
+    <bug>
+      <id>543255</id>
+      <summary>-Wno-attributes does not exist in every gcc version</summary>
+    </bug>
+    <bug>
+      <id>543259</id>
+      <summary>warning in gstv4l2src.c due to an uninitialized variable</summary>
+    </bug>
+    <bug>
+      <id>543300</id>
+      <summary>[qtdemux] [PATCH] wrong depth in RLE video caps and wrong...</summary>
+    </bug>
+    <bug>
+      <id>543406</id>
+      <summary>[PLUGIN-MOVE] move replaygain elements to -good</summary>
+    </bug>
+    <bug>
+      <id>544509</id>
+      <summary>[qtdemux] Regression in segment.stop</summary>
+    </bug>
+    <bug>
+      <id>539482</id>
+      <summary>[avidemux] Doesn't parse vprp ODML header</summary>
+    </bug>
+    <bug>
+      <id>544433</id>
+      <summary>Some -good plugins aren't buildable with MSVC</summary>
+    </bug>
+    <bug>
+      <id>536994</id>
+      <summary>Improve v4l2src negotiation a bit more</summary>
+    </bug>
+    <bug>
+      <id>329198</id>
+      <summary>GStreamer-CRITICAL: gst_pad_activate_pull: assertion `old...</summary>
+    </bug>
+    <bug>
+      <id>532065</id>
+      <summary>Implement RTSP Digest authentication</summary>
+    </bug>
+    <bug>
+      <id>533287</id>
+      <summary>Mapping of mime types to gst names in multipartdemux</summary>
+    </bug>
+    <bug>
+      <id>538891</id>
+      <summary>G.726 pay/depayloader is missing</summary>
+    </bug>
+  </bugs>
+
+</release>
