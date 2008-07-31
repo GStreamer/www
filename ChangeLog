@@ -1,6 +1,11 @@
 2008-07-31  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* src/htdocs/news/news.xml:
+	Grrr - correct the date on the news item
+
+2008-07-31  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/news/news.xml:
 	Add news item for new releases
 
 2008-07-31  Jan Schmidt  <jan.schmidt@sun.com>
