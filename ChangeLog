@@ -1,3 +1,11 @@
+2008-09-03  Edward Hervey  <edward.hervey@collabora.co.uk>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.10.5.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	Release gst-ffmpeg 0.10.5
+
 2008-08-27  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* src/htdocs/entities.gst:

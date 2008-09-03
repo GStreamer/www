@@ -3150,4 +3150,22 @@ or download tarballs for
 </p>
     </content>
   </item>
+
+<item>
+    <date>2008-09-03 017:00</date>
+<title>GStreamer FFmpeg 0.10.5 stable releases</title>
+<content>
+<p>
+The GStreamer team is pleased to present a new releases of the FFmpeg Plugins modules in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-ffmpeg/0.10.5.html">gst-ffmpeg</a>
+or download tarballs for
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.5.tar.bz2">gst-ffmpeg</a>
+</p>
+    </content>
+  </item>
+
+
 </news>
