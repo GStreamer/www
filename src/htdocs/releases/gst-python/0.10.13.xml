@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name>Feel The Sun Rise</name>
+  <version>0.10.13</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Python Bindings.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+  </intro>
+  <features>
+    <feature>Updated for GStreamer 0.10.21 API</feature>
+    <feature>New examples</feature>
+    <feature>Fix double import issues on OS/X</feature>
+    <feature>Bug fixes</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+  </contributors>
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>553131</id>
+      <summary>Import modules in correct order</summary>
+    </bug>
+    <bug>
+      <id>553134</id>
+      <summary>Assumes wrong RTLD constants for Linux/MIPS</summary>
+    </bug>
+    <bug>
+      <id>461838</id>
+      <summary>Fails to build on Mac OS X i686 with multiply defined sym...</summary>
+    </bug>
+    <bug>
+      <id>517993</id>
+      <summary>pipeline-tester should not be hardcoded to ALSA</summary>
+    </bug>
+    <bug>
+      <id>540221</id>
+      <summary>Empty GstMiniObject GValues raise a SystemError</summary>
+    </bug>
+    <bug>
+      <id>546689</id>
+      <summary>Add GST_DEBUG_BIN_TO_DOT_FILE* to python bindings</summary>
+    </bug>
+    <bug>
+      <id>549450</id>
+      <summary>caps.append_structure() gives warnings if structure is no...</summary>
+    </bug>
+  </bugs>
+</release>

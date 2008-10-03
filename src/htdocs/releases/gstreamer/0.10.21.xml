@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Take These Things From Me</name>
+  <version>0.10.21</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Basetransform rework</feature>
+    <feature>Basesink synchronisation extensions</feature>
+    <feature>New documentation</feature>
+    <feature>Many bug fixes, enhancements and optimisations</feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
+Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
+Let us know if you want to be added to this list.
+</p>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Antoine Tremblay</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Frederic Crozat</person>
+	<person>Jan Schmidt</person>
+	<person>Jason Zhao</person>
+	<person>Joel Larsson</person>
+	<person>Luc Pionchon</person>
+	<person>Michael Smith</person>
+	<person>Murray Cumming</person>
+	<person>Ole André Vadla Ravnås</person>
+	<person>Olivier Crete</person>
+	<person>Rene Stadler</person>
+	<person>Robert Schwebel</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thijs Vermeir</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tristan Matthews</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+
+  <api>
+    <additions>
+    <item>Add GST_TAG_ATTACHMENT for generic file attachments to streams.</item>
+    <item>Add gst_base_sink_set_render_delay()</item>
+    <item>Add gst_base_sink_get_render_delay()</item>
+    <item>Add gst_check_setup_src_pad_by_name</item>
+    <item>Add gst_check_setup_sink_pad_by_name</item>
+    <item>Add gst_check_teardown_pad_by_name</item>
+    <item>Add GstBaseTransform::gst_base_transform_suggest()</item>
+    <item>GstBaseTransform::gst_base_transform_reconfigure()</item>
+    <item>GstPad::gst_pad_set_iterate_internal_links_function()</item>
+    <item>GstPad::GstPadIterIntLinkFunction</item>
+    <item>GstPad::gst_pad_iterate_internal_links()</item>
+    <item>GstPad::gst_pad_iterate_internal_links_default()</item>
+
+    </additions>
+    <deprecations>
+    <item>gst_pad_get_internal_links()</item>
+    <item>gst_pad_set_internal_link_function()</item>
+    <item>gst_pad_get_internal_links_default()</item>
+    </deprecations>
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>481169</id>
+      <summary>[tag] add support for geo tags (gps location etc.)</summary>
+    </bug>
+    <bug>
+      <id>520694</id>
+      <summary>adding GST_TAG_KEYWORDS</summary>
+    </bug>
+    <bug>
+      <id>538201</id>
+      <summary>deleting the control point at ts=0 does not lower the con...</summary>
+    </bug>
+    <bug>
+      <id>544855</id>
+      <summary>fakesrc and fakesink should call super::event()</summary>
+    </bug>
+    <bug>
+      <id>339795</id>
+      <summary>[GstBaseTransform] Reverse negotiation issues in passthro...</summary>
+    </bug>
+    <bug>
+      <id>348114</id>
+      <summary>[PPC64?] [gcc-4.1.2?] GST_BUFFER_IN_CAPS flag should have...</summary>
+    </bug>
+    <bug>
+      <id>361718</id>
+      <summary>[basetransform] needs API to force renegotiation</summary>
+    </bug>
+    <bug>
+      <id>533856</id>
+      <summary>gst_buffer_join() documentation is unclear</summary>
+    </bug>
+    <bug>
+      <id>536978</id>
+      <summary>GTKDOC_CFLAGS should include CFLAGS</summary>
+    </bug>
+    <bug>
+      <id>537804</id>
+      <summary>[multiqueue] wrongly reporting that the queue is full.</summary>
+    </bug>
+    <bug>
+      <id>537812</id>
+      <summary>[check] add api to setup a pad by name</summary>
+    </bug>
+    <bug>
+      <id>538568</id>
+      <summary>Add GST_TAG_ATTACHMENT</summary>
+    </bug>
+    <bug>
+      <id>539772</id>
+      <summary>gst_pad_template_new() does more than call g_object_new()</summary>
+    </bug>
+    <bug>
+      <id>542175</id>
+      <summary>gst-inspect --gst-plugins-path fails with multiple direct...</summary>
+    </bug>
+    <bug>
+      <id>543444</id>
+      <summary>gst_base_sink_get_position can return 0 unexpectedly</summary>
+    </bug>
+    <bug>
+      <id>543853</id>
+      <summary>Bison version check failure on OSX 10.4 Tiger</summary>
+    </bug>
+    <bug>
+      <id>544174</id>
+      <summary>[basesrc] allow dynamic value of the seekable value.</summary>
+    </bug>
+    <bug>
+      <id>544776</id>
+      <summary>[win32] binary registry may fail if glib is using a diffe...</summary>
+    </bug>
+    <bug>
+      <id>545352</id>
+      <summary>gsturi is too restrictive</summary>
+    </bug>
+    <bug>
+      <id>545603</id>
+      <summary>gst-inspect: don't print uri handler when compiled withou...</summary>
+    </bug>
+    <bug>
+      <id>545605</id>
+      <summary>gstelementfactory: don't use uri handler code without uri...</summary>
+    </bug>
+    <bug>
+      <id>545607</id>
+      <summary>gst: include gstconfig when using macros defined therein</summary>
+    </bug>
+    <bug>
+      <id>545853</id>
+      <summary>[basetransform] rewrite</summary>
+    </bug>
+    <bug>
+      <id>546328</id>
+      <summary>fractions with G_MAXINT cause failure for fixation</summary>
+    </bug>
+    <bug>
+      <id>546822</id>
+      <summary>gstreamer doesn't tell gettext to output its translations...</summary>
+    </bug>
+    <bug>
+      <id>547277</id>
+      <summary>filesrc detect if a file is seekable using SEEK_SET and n...</summary>
+    </bug>
+    <bug>
+      <id>547728</id>
+      <summary>[basetransform] fail on buffer_alloc</summary>
+    </bug>
+    <bug>
+      <id>548394</id>
+      <summary>basesink should ignore EOS during flushing</summary>
+    </bug>
+    <bug>
+      <id>548652</id>
+      <summary>[Inconsistency] GST_TAG_LOCATION is used for different me...</summary>
+    </bug>
+    <bug>
+      <id>549504</id>
+      <summary>Thread-safe version of gst_pad_get_internal_links()</summary>
+    </bug>
+    <bug>
+      <id>551952</id>
+      <summary>Need 'check' package when compile</summary>
+    </bug>
+    <bug>
+      <id>551978</id>
+      <summary>Memleak in gst_element_sync_state_with_paren</summary>
+    </bug>
+    <bug>
+      <id>547835</id>
+      <summary>tee release_request_pad while buffer_alloc racyness</summary>
+    </bug>
+    <bug>
+      <id>538628</id>
+      <summary>Patch: added a timeout property to fdsrc used in gst_poll...</summary>
+    </bug>
+    <bug>
+      <id>546883</id>
+      <summary>[basetransform] ximagesink fails when resizing video window</summary>
+    </bug>
+    <bug>
+      <id>551509</id>
+      <summary>gst_base_transform_prepare_output_buffer: assertion faile...</summary>
+    </bug>
+  </bugs>
+</release>

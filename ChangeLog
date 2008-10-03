@@ -1,3 +1,16 @@
+2008-10-03  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/entities.site.gnl:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-base/0.10.21.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gst-python/0.10.13.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.21.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+
+	Release GStreamer 0.10.21, Base 0.10.21 and Python 0.10.13
+
 2008-09-03  Edward Hervey  <edward.hervey@collabora.co.uk>
 
 	* src/htdocs/entities.gst:
