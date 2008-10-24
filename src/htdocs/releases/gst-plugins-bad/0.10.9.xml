@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plug-ins</module-fancy>
+  <name>Matters of fact</name>
+  <version>0.10.9</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Bad Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plug-ins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plug-ins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plug-ins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>New CELT encoder and decoder</feature>
+    <feature>New TwoLAME encoder</feature>
+    <feature>New DCCP element</feature>
+    <feature>New AIFF parser element</feature>
+    <feature>New APEX sink element</feature>
+    <feature>deinterlace2 element improvements</feature>
+    <feature>New JACK audio src element</feature>
+    <feature>New winscreencap, winks and pcapparse plugins</feature>
+    <feature>x624enc fixes</feature>
+    <feature>Support for ATSC tuning and channels.conf parsing</feature>
+    <feature>RTP improvements</feature>
+    <feature>New scaletempo element</feature>
+    <feature>Add Fluendo MPEG-TS muxer</feature>
+    <feature>Add Fluendo MPEG-TS and MPEG-PS demuxers</feature>
+    <feature>New JPEG2000 element</feature>
+    <feature>New FLAC parser element</feature>
+    <feature>DVD playback improvements</feature>
+    <feature>Improved DirectShow decoding support</feature>
+    <feature>New Windows Audio Session audio src element</feature>
+    <feature>New FLV muxer element</feature>
+    <feature>Many other bug fixes and improvements</feature>
+  </features>
+
+  <applications>
+  </applications>
+    <contributors>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Frederic Crozat</person>
+	<person>Haakon Sporsheim</person>
+	<person>Håvard Graff</person>
+	<person>Jan Schmidt</person>
+	<person>Josep Torra</person>
+	<person>Jérémie Bernard</person>
+	<person>Leandro Melo de Sales</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Krufky</person>
+	<person>Michael Smith</person>
+	<person>Ole André Vadla Ravnås</person>
+	<person>Olivier Crete</person>
+	<person>Rov Juvano</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Pölsterl</person>
+	<person>Stefan Kost</person>
+	<person>Tal Shalif</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tristan Matthews</person>
+	<person>Wim Taymans</person>
+	<person>Zaheer Abbas Merali</person>
+  </contributors>
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>537700</id>
+      <summary>[scaletempo] Scale audio tempo in sync with playback rate</summary>
+    </bug>
+    <bug>
+      <id>550468</id>
+      <summary>[name conflict] New Fluendo mpeg demuxers</summary>
+    </bug>
+    <bug>
+      <id>545197</id>
+      <summary>jackaudiosrc</summary>
+    </bug>
+    <bug>
+      <id>555244</id>
+      <summary>Output-selector has unexpected event forwarding right aft...</summary>
+    </bug>
+    <bug>
+      <id>402593</id>
+      <summary>deinterleave gives corrupt output</summary>
+    </bug>
+    <bug>
+      <id>406673</id>
+      <summary>Need AIFF parser</summary>
+    </bug>
+    <bug>
+      <id>535527</id>
+      <summary>[real] Real video/audio stream fails to play</summary>
+    </bug>
+    <bug>
+      <id>537455</id>
+      <summary>ATSC: VSB / QAM Annex B support</summary>
+    </bug>
+    <bug>
+      <id>538500</id>
+      <summary>AIFF file doesn't play</summary>
+    </bug>
+    <bug>
+      <id>542390</id>
+      <summary>Implementation of DCCP Plugin for gstreamer</summary>
+    </bug>
+    <bug>
+      <id>542510</id>
+      <summary>[apexsink] Apple AirPort Express Wireless Sink</summary>
+    </bug>
+    <bug>
+      <id>545247</id>
+      <summary>use g_setenv() insteed of setenv() in sdlvideosink.c</summary>
+    </bug>
+    <bug>
+      <id>546312</id>
+      <summary>Make the metadata writable before modifying it in rtpmanager</summary>
+    </bug>
+    <bug>
+      <id>549409</id>
+      <summary>gstrtpbin don't stop at the end of a stream</summary>
+    </bug>
+    <bug>
+      <id>549774</id>
+      <summary>audio / video synchronization glitch during rtsp playback</summary>
+    </bug>
+    <bug>
+      <id>550486</id>
+      <summary>[faac] Negotiation problem with mono audio for some sampl...</summary>
+    </bug>
+    <bug>
+      <id>550657</id>
+      <summary>New element jasperdec</summary>
+    </bug>
+    <bug>
+      <id>552506</id>
+      <summary>[neonhttpsrc] doesn't handle/throw errors correctly</summary>
+    </bug>
+    <bug>
+      <id>552536</id>
+      <summary>fix incomplete change to gstdvbsrc.c</summary>
+    </bug>
+    <bug>
+      <id>553755</id>
+      <summary>[mpegpsdemux] FP exception when playing tv2-1_25.mpg</summary>
+    </bug>
+    <bug>
+      <id>555193</id>
+      <summary>[ELEMENT-MOVE] Move mpegtsparse element into mpegdemux pl...</summary>
+    </bug>
+    <bug>
+      <id>555198</id>
+      <summary>[mpegpsdemux] Lower the RANK to MARGINAL for next release</summary>
+    </bug>
+    <bug>
+      <id>555912</id>
+      <summary>[apexsink] Missing from ext/Makefile.am</summary>
+    </bug>
+    <bug>
+      <id>555965</id>
+      <summary>Missing space after point mark</summary>
+    </bug>
+    <bug>
+      <id>555968</id>
+      <summary>Missing space after point mark</summary>
+    </bug>
+    <bug>
+      <id>555969</id>
+      <summary>Missing space after point mark</summary>
+    </bug>
+    <bug>
+      <id>556003</id>
+      <summary>[flvdemux] Regression in handling flow returns in pull-mode</summary>
+    </bug>
+    <bug>
+      <id>556274</id>
+      <summary>[aiffparse] Uses debugging methods before debugging is in...</summary>
+    </bug>
+    <bug>
+      <id>556338</id>
+      <summary>Failed to configure latency</summary>
+    </bug>
+    <bug>
+      <id>556428</id>
+      <summary>[mpegpsdemux] Creates invalid newsegment events</summary>
+    </bug>
+    <bug>
+      <id>556430</id>
+      <summary>[inputselector] Assumes there's always an otherpad</summary>
+    </bug>
+    <bug>
+      <id>556440</id>
+      <summary>[PATCH] crash on demuxing certain transport streams</summary>
+    </bug>
+    <bug>
+      <id>556482</id>
+      <summary>[PATCH] crash in mpegtsparse get_encoding_and_convert</summary>
+    </bug>
+    <bug>
+      <id>556564</id>
+      <summary>[flvmux] Copy &amp; paste bugs resulting in invalid files</summary>
+    </bug>
+    <bug>
+      <id>556588</id>
+      <summary>[apexsink] should not have PRIMARY rank</summary>
+    </bug>
+    <bug>
+      <id>557080</id>
+      <summary>[mpegpsdemux] Regression with reverse-playback</summary>
+    </bug>
+    <bug>
+      <id>543480</id>
+      <summary>gstrtpbin fails to release lock while emitting signal</summary>
+    </bug>
+    <bug>
+      <id>556520</id>
+      <summary>jitterbuffer seqnum gap detection is wrong</summary>
+    </bug>
+    <bug>
+      <id>463941</id>
+      <summary>Plugin for screen capture on windows</summary>
+    </bug>
+    <bug>
+      <id>519935</id>
+      <summary>New plugin for video capture on Windows</summary>
+    </bug>
+    <bug>
+      <id>520899</id>
+      <summary>New plugin: pcapparse</summary>
+    </bug>
+    <bug>
+      <id>520901</id>
+      <summary>New plugin: wasapi (Windows Audio Session API)</summary>
+    </bug>
+  </bugs>
+</release>
