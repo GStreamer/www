@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gnonlin</module>
+  <module-fancy>GNonLin Non-Linear Editing Plug-ins</module-fancy>
+  <name>All Good Things...</name>
+  <version>0.10.10</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of GNonLin.
+</p>
+
+<p>
+This module contains a set of plug-ins for GStreamer to ease the
+creation of multimedia editors, or any other application where a
+timeline-oriented use of GStreamer makes sense.
+</p>
+<p>
+These elements include:
+<dl>
+<dt>gnlsource</dt>
+<dd>An element for using source elements/bins in a GnlComposition</dd>
+<dt>gnlfilesource</dt>
+<dd>A higher-level element for using a uri in a GnlComposition</dd>
+<dt>gnlcomposition</dt>
+<dd>A container element that handles GNonLin objects</dd>
+<dt>gnloperation</dt>
+<dd>An element for using filters in a GnlComposition</dd>
+</dl>
+</p>
+  </intro>
+  <features>
+    <feature>Documentation in gtk-doc format</feature>
+    <feature>Smarter handling of modifications while playing.</feature>
+    <feature>Can handle more complicated combinations/types of operations</feature>
+  </features>
+
+  <applications>
+GNonLin is primarily used by PiTiVi (http://www.pitivi.org/) and Jokosher (http://www.jokosher.org/).
+  </applications>
+      <contributors>
+	<person></person>
+	<person>Damien Lespiau</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Sebastian Dröge</person>
+  </contributors>
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+  </bugs>
+
+</release>

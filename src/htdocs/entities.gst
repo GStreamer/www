@@ -7,7 +7,7 @@
 <!ENTITY gst-plugins-good-version-stable "0.10.11">
 <!ENTITY gst-plugins-ugly-version-stable "0.10.9">
 <!ENTITY gst-plugins-bad-version-stable "0.10.9">
-<!ENTITY gnonlin-version-stable "0.10.9">
+<!ENTITY gnonlin-version-stable "0.10.10">
 
 <!ENTITY gst-version-devel "CVS HEAD">
 <!ENTITY gst-plugins-base-version-devel "CVS HEAD">
