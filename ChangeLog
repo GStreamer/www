@@ -1,3 +1,9 @@
+2008-11-08  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/news/news.xml:
+	Commit news release announce for 0.10.11 of Good and 0.10.9 of Bad
+	from last month...
+
 2008-11-03  Edward Hervey  <edward.hervey@collabora.co.uk>
 
 	* src/htdocs/entities.gst:
