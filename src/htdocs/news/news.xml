@@ -3220,4 +3220,19 @@ or download tarballs for
 </p>
     </content>
   </item>
+<item>
+    <date>2008-11-19 15:00</date>
+<title>GStreamer Ugly 0.10.10 stable release</title>
+<content>
+<p>
+The GStreamer team is happy to announce a new release of the Ugly Plugins module in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-ugly/0.10.10.html">gst-plugins-ugly</a>
+or download the tarball at
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.10.tar.bz2">gst-plugins-ugly</a>
+</p>
+    </content>
+  </item>
 </news>

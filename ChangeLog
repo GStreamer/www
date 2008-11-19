@@ -1,3 +1,11 @@
+2008-11-19  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-ugly/0.10.10.xml:
+	* src/htdocs/releases/gst-plugins-ugly/Makefile.am:
+	Release Ugly 0.10.10
+
 2008-11-08  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* src/htdocs/news/news.xml:

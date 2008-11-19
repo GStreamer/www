@@ -5,7 +5,7 @@
 <!ENTITY gst-python-version-stable "0.10.13">
 <!ENTITY gst-plugins-base-version-stable "0.10.21">
 <!ENTITY gst-plugins-good-version-stable "0.10.11">
-<!ENTITY gst-plugins-ugly-version-stable "0.10.9">
+<!ENTITY gst-plugins-ugly-version-stable "0.10.10">
 <!ENTITY gst-plugins-bad-version-stable "0.10.9">
 <!ENTITY gnonlin-version-stable "0.10.10">
 

@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-ugly</module>
+  <module-fancy>GStreamer Ugly Plug-ins</module-fancy>
+  <name>Under the House</name>
+  <version>0.10.10</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Ugly Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"When you have to shoot, shoot.  Don't talk."</i>
+</p>
+<p>
+There are times when the world needs a color between black and white.
+Quality code to match the good's, but two-timing, backstabbing and ready to
+sell your freedom down the river.  These plug-ins might have a patent noose
+around their neck, or a lock-up license, or any other problem that makes you
+think twice about shipping them.
+</p>
+<p>
+We don't call them ugly because we like them less.  Does a mother love her
+son less because he's not as pretty as the other ones ? No  - she commends
+him on his great personality.  These plug-ins are the life of the party.
+And we'll still step in and set them straight if you report any unacceptable
+behaviour - because there are two kinds of people in the world, my friend:
+those with a rope around their neck and the people who do the cutting.
+</p>
+<p>
+This module contains a set of plug-ins that have good quality and correct
+functionality, but distributing them might pose problems.  The license
+on either the plug-ins or the supporting libraries might not be how we'd
+like. The code might be widely known to present patent problems.
+Distributors should check if they want/can ship these plug-ins.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>asfdemux and rmdemux fixes</feature>
+    <feature>RDT support</feature>
+    <feature>AMR-NB parser improvements</feature>
+    <feature>Fix a52dec channel output negotiation</feature>
+    <feature>Compilation fixes for mad, mpeg2dec</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Benoit Fouet</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Michael Smith</person>
+	<person>Robin Stocker</person>
+	<person>Sameer Naik</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Tal Shalif</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>546859</id>
+      <summary>Asfdemux doesn't properly error out on not-linked</summary>
+    </bug>
+    <bug>
+      <id>536274</id>
+      <summary>handle flush seeking in amrnbparse</summary>
+    </bug>
+    <bug>
+      <id>554142</id>
+      <summary>mad plugin with disable index seeking issue</summary>
+    </bug>
+    <bug>
+      <id>554150</id>
+      <summary>mpeg2dec plugin with disable index seeking issue</summary>
+    </bug>
+    <bug>
+      <id>556184</id>
+      <summary>[PATCH] mpeg2dec: prefer container's pixel aspect ratio o...</summary>
+    </bug>
+    <bug>
+      <id>556277</id>
+      <summary>mp3parse generate discontinuities.</summary>
+    </bug>
+    <bug>
+      <id>558277</id>
+      <summary>generic states test fails</summary>
+    </bug>
+    <bug>
+      <id>559569</id>
+      <summary>GStreamer mp3 consistent and regular stuttering</summary>
+    </bug>
+    <bug>
+      <id>559682</id>
+      <summary>negotiation problem</summary>
+    </bug>
+    <bug>
+      <id>561161</id>
+      <summary>[sidplay] Uses GST_CFLAGS for C++</summary>
+    </bug>
+    <bug>
+      <id>424070</id>
+      <summary>[amrnbdec] add IF2 handling</summary>
+    </bug>
+    <bug>
+      <id>536226</id>
+      <summary>fix query duration</summary>
+    </bug>
+    <bug>
+      <id>558896</id>
+      <summary>DVD playing on Vista using dvddemux element seg-faults on...</summary>
+    </bug>
+  </bugs>
+</release>
