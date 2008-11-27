@@ -1,3 +1,11 @@
+2008-11-27  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-ffmpeg/0.10.6.xml:
+	* src/htdocs/releases/gst-ffmpeg/Makefile.am:
+	FFmpeg 0.10.6 release
+
 2008-11-19  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* src/htdocs/entities.gst:

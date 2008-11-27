@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-ffmpeg</module>
+  <module-fancy>GStreamer FFmpeg Plug-ins</module-fancy>
+  <name>A little itching in our bones</name>
+  <version>0.10.6</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer FFmpeg Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+This module contains plug-ins using libraries from the FFmpeg project.
+</p>
+
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+    <feature>Update ffmpeg and libswscale snapshot</feature>
+    <feature>Prefer aspect ratios prescribed by the container over the codec</feature>
+    <feature>Improve ffmpeg encoders wrapping</feature>
+    <feature>Rewrite ffvideoscale to use libswscale</feature>
+    <feature>Improve H.264 wrapping</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+  <contributors>
+	<person>Alexis Ballier</person>
+	<person>Damien Lespiau</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Robin Stocker</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>350738</id>
+      <summary>[ffvideoscale] GStreamer-Critical when pixel-aspects-rati...</summary>
+    </bug>
+    <bug>
+      <id>504056</id>
+      <summary>[ffvideoscale] Switch to using libswscale</summary>
+    </bug>
+    <bug>
+      <id>542216</id>
+      <summary>cross compilation and mingw32 support</summary>
+    </bug>
+    <bug>
+      <id>548304</id>
+      <summary>missing check for bz2 library and header</summary>
+    </bug>
+    <bug>
+      <id>551046</id>
+      <summary>gst-ffmpeg configure complains about libz2, should be libbz2</summary>
+    </bug>
+    <bug>
+      <id>556336</id>
+      <summary>[PATCH] gstffmpegdec.c: prefer demuxer's pixel aspect rat...</summary>
+    </bug>
+    <bug>
+      <id>556405</id>
+      <summary>gst-ffmpeg fails to build against 20081014 ffmpeg snapshot</summary>
+    </bug>
+    <bug>
+      <id>560137</id>
+      <summary>Two build fixes for using system ffmpeg</summary>
+    </bug>
+    <bug>
+      <id>560305</id>
+      <summary>x264enc &amp; ffmux_* doesnt link</summary>
+    </bug>
+  </bugs>
+
+</release>

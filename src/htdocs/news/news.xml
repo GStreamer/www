@@ -3235,4 +3235,18 @@ or download the tarball at
 </p>
     </content>
   </item>
+<item>
+    <date>2008-11-28 23:30</date>
+    <title>GStreamer FFmpeg 0.10.6 stable release</title>
+    <content>
+    <p>
+    The GStreamer team is pleased to announce a new release of the FFmpeg Plugins module in the 0.10 GStreamer stable release series.
+    </p>
+    <p>
+    Check out the release notes
+    <a href="&site;/releases/gst-ffmpeg/0.10.6.html">here</a>, or download the tarball 
+    <a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.6.tar.bz2">here</a>.
+    </p>
+    </content>
+</item>
 </news>
