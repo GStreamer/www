@@ -1,5 +1,10 @@
 2008-11-28  Sebastian Dröge  <sebastian.droege@collabora.co.uk>
 
+	* src/htdocs/documentation/index.xml:
+	Add gnonlin to the plugin documentation table.
+
+2008-11-28  Sebastian Dröge  <sebastian.droege@collabora.co.uk>
+
 	* src/htdocs/apps/index.xml:
 	Update URL for the Eina music player and add Minirok, a small KDE/Qt
 	music player. Fixes bug #562111.

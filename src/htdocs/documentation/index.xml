@@ -145,6 +145,10 @@
  <td>GStreamer Bad Plugins Reference</td>
  <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/">HTML</a></td>
 </tr>
+<tr>
+ <td>GStreamer Non-Linear Multimedia Editing Plugins Reference</td>
+ <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gnonlin/html/">HTML</a></td>
+</tr>
 </table>
 
 <h2>GStreamer licensing advisory</h2>
