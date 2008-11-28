@@ -66,7 +66,7 @@ in any format supported by GStreamer.</p>
 <p><a href="http://www.fluendo.com/elisa">Elisa</a> is a OpenGL based cross-platform media center solution.</p>
 
 <h2>Eina</h2>
-<p><a href="http://www.ikossi.org/?page=eina-en">Eina</a> is a traditional audio player with a GTK2 interface.</p>
+<p><a href="http://eina.sourceforge.net/">Eina</a> is a traditional audio player with a GTK2 interface.</p>
 
 <h2>Exaile</h2>
 <p><a href="http://www.exaile.org/trac">Exaile</a> is a audio player for GNOME supporting a wide range of features. Its GUI and featureset is similar to that of the Amarok music player.</p>
@@ -137,6 +137,9 @@ panel applet for playing internet radio streams.
 
 <h2>Marlin</h2>
 <p><a href="http://marlin.sourceforge.net/">marlin</a> is a sample editor for Gnome.</p>
+
+<h2>Minirok</h2>
+<p><a href="http://chistera.yi.org/~adeodato/code/minirok/">Minirok</a> is a small music player for KDE/Qt.</p>
 
 <h2>MMS</h2>
 <p><a href="http://mms.sunsite.dk/">MMS</a> or My Media System is a media center style application.</p>

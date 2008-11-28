@@ -1,3 +1,9 @@
+2008-11-28  Sebastian Dröge  <sebastian.droege@collabora.co.uk>
+
+	* src/htdocs/apps/index.xml:
+	Update URL for the Eina music player and add Minirok, a small KDE/Qt
+	music player. Fixes bug #562111.
+
 2008-11-27  Jan Schmidt  <jan.schmidt@sun.com>
 
 	* src/htdocs/entities.gst:
