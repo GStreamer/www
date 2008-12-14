@@ -1,3 +1,9 @@
+2008-12-14  Sebastian Dröge  <sebastian.droege@collabora.co.uk>
+
+	* src/htdocs/apps/index.xml:
+	Add Telesceno, a web-based telepresence application for venues
+	and live performance. Fixes bug #564143.
+
 2008-11-28  Sebastian Dröge  <sebastian.droege@collabora.co.uk>
 
 	* src/htdocs/documentation/index.xml:

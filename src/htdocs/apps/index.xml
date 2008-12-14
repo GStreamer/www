@@ -163,6 +163,9 @@ with GStreamer to monitor and change elements parameters and pipeline structures
 is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin non-linear video editing library.
 </p>
 
+<h2>Quod Libet</h2>
+<p><a href="http://www.sacredchao.net/quodlibet">Quod Libet</a> is a Music Manager for GNOME written in Python</p>
+
 <h2>Rhythmbox</h2>
 <p><a href="http://www.rhythmbox.org/">Rhythmbox</a> is an integrated music management application, originally inspired by Apple's iTunes.
 </p>
@@ -181,11 +184,11 @@ is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin no
 <h2>SoundScrape</h2>
 <p><a href="http://ambient.2y.net/soundscrape/">SoundScrape</a> is a modular audio synthesizer with built in GUILE scriptability.</p>
 
+<h2>Telesceno</h2>
+<p><a href="http://propulseart.sat.qc.ca/">Telesceno</a> is a web-based telepresence application for venues and live performance. It is part of the PropulseART  project. Telesceno's features include remote operation, multi-channel audio and serial transmission.</p>
+
 <h2>Togra</h2>
 <p><a href="http://togra.sourceforge.net/">Togra</a> is a 3D multimedia framework</p>
-
-<h2>Quod Libet</h2>
-<p><a href="http://www.sacredchao.net/quodlibet">Quod Libet</a> is a Music Manager for GNOME written in Python</p>
 
 <h2>Thoggen</h2>
 <p><a href="http://thoggen.net/">Thoggen</a> is a DVD backup utility using GStreamer with a nice GTK+ frontend. Powerfull and easy to use.
