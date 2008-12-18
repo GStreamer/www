@@ -48,6 +48,9 @@ Other modules containing plug-ins are:
 
   <contributors>
   </contributors>
+<p>In addition to the above contributors, we would like to extend our
+thanks to the FFmpeg developers without which these plugins would have
+no reason to exist.</p>
 
 <!--
   <api>

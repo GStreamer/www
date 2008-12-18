@@ -1,3 +1,9 @@
+2008-12-18  Edward Hervey  <bilboed@gmail.com>
+
+	* src/htdocs/releases/gst-ffmpeg/template.xml:
+	Add credit to the FFmpeg developers in the gst-ffmpeg release notes
+	template.
+
 2008-12-14  Sebastian Dröge  <sebastian.droege@collabora.co.uk>
 
 	* src/htdocs/apps/index.xml:
