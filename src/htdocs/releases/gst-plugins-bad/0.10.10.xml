@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plug-ins</module-fancy>
+  <name>keep them dogies rollin</name>
+  <version>0.10.10</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Bad Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plug-ins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plug-ins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plug-ins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Require gettext 0.17</feature>
+    <feature>ACM mp3 decoder element for win32</feature>
+    <feature>New MXF demuxer added</feature>
+    <feature>JPEG-2000 encoder - jp2enc added</feature>
+    <feature>RTP support</feature>
+    <feature>Fixes for RTP support</feature>
+    <feature>Add parsers for AAC and AMR</feature>
+    <feature>Move libgstapp and elements to -base</feature>
+    <feature>Add Quicktime muxer element qtmux</feature>
+    <feature>Enhance RFB capture</feature>
+    <feature>Improve MPEG-TS and MPEG-PS demuxing</feature>
+    <feature>Don't install static libs for plugins</feature>
+    <feature>Introduce audioringbuffer element</feature>
+    <feature>Improve DVD playback of ResinDVD components</feature>
+    <feature>Move old audioresample from -base as legacyaudioresample</feature>
+    <feature>Improve speexresampler, and then move it to -base</feature>
+    <feature>Improve FLV demuxing and parsing</feature>
+    <feature>Various DVB input fixes</feature>
+    <feature>Add support for frequency list descriptors for DVB</feature>
+    <feature>Improve MPEG-TS muxer</feature>
+    <feature>Various other bug-fixes</feature>
+  </features>
+
+  <applications>
+  </applications>
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Arnout Vandecappelle</person>
+	<person>Brian Cameron</person>
+	<person>Christian Schaller</person>
+	<person>Cygwin Ports maintainer</person>
+	<person>Damien Lespiau</person>
+	<person>David Härdeman</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Jonathan Matthew</person>
+	<person>Josep Torra</person>
+	<person>Julien Moutte</person>
+	<person>Leandro Melo de Sales</person>
+	<person>Luotao Fu</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Smith</person>
+	<person>Olivier Crete</person>
+	<person>Robin Stocker</person>
+	<person>Sascha Hauer</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Pölsterl</person>
+	<person>Stefan Kost</person>
+	<person>Tal Shalif</person>
+	<person>Thiago Sousa Santos</person>
+	<person>Thijs Vermeir</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Zaheer Abbas Merali</person>
+	<person>vanista</person>
+	<person>이문형</person>
+  </contributors>
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>127574</id>
+      <summary>replaygain support</summary>
+    </bug>
+    <bug>
+      <id>480543</id>
+      <summary>[spc] crashes when not given any input data</summary>
+    </bug>
+    <bug>
+      <id>546319</id>
+      <summary>[resindvd] Stuck on first menu (language selection)</summary>
+    </bug>
+    <bug>
+      <id>549222</id>
+      <summary>Totem using resindvd element as DVD navigation module doe...</summary>
+    </bug>
+    <bug>
+      <id>550280</id>
+      <summary>Move qtmux to gst-plugins-bad</summary>
+    </bug>
+    <bug>
+      <id>550454</id>
+      <summary>FLV demuxer screws up in Pitivi</summary>
+    </bug>
+    <bug>
+      <id>550613</id>
+      <summary>[mpegtsmux] Add support for ac3/dts/lpcm</summary>
+    </bug>
+    <bug>
+      <id>553823</id>
+      <summary>CodeStyle improvements and minor fixes to the DCCP plugin.</summary>
+    </bug>
+    <bug>
+      <id>555238</id>
+      <summary>Recent changes in x264 breaks compilation of x264 plugin.</summary>
+    </bug>
+    <bug>
+      <id>557161</id>
+      <summary>Wrong time displayed and no seeking with MPEG PS cut from...</summary>
+    </bug>
+    <bug>
+      <id>557763</id>
+      <summary>[mpegtsmux] DeadlockEOS due to interleaving mechanism</summary>
+    </bug>
+    <bug>
+      <id>557814</id>
+      <summary>[mpegdemux] frequency list descriptor support</summary>
+    </bug>
+    <bug>
+      <id>558639</id>
+      <summary>cross-configuring interrupts due to a failing check for &quot; ...</summary>
+    </bug>
+    <bug>
+      <id>560841</id>
+      <summary>Provide access to packet loss</summary>
+    </bug>
+    <bug>
+      <id>561992</id>
+      <summary>debug format warning during compilation of resindvdsrc.c ...</summary>
+    </bug>
+    <bug>
+      <id>562312</id>
+      <summary>Lip-sync generates wrong `ts-offset' in GstRtpBin</summary>
+    </bug>
+    <bug>
+      <id>562319</id>
+      <summary>[rtpsession] memory corruption</summary>
+    </bug>
+    <bug>
+      <id>562802</id>
+      <summary>[appsrc] lockup in pad_push() if previous flow was wrong-...</summary>
+    </bug>
+    <bug>
+      <id>563006</id>
+      <summary>mxf mpeg422 file stops playing</summary>
+    </bug>
+    <bug>
+      <id>563147</id>
+      <summary>input-selector doesn't notify of active-pad changing when...</summary>
+    </bug>
+    <bug>
+      <id>564232</id>
+      <summary>Dual Licensing qtmux</summary>
+    </bug>
+    <bug>
+      <id>565439</id>
+      <summary>Make pcapparse compile with (mingw32) gcc</summary>
+    </bug>
+    <bug>
+      <id>565509</id>
+      <summary>rtpsource on receiver side can't get clock-rate for h264,...</summary>
+    </bug>
+    <bug>
+      <id>565614</id>
+      <summary>[mpegtsdemux] Fix memory leak</summary>
+    </bug>
+    <bug>
+      <id>565910</id>
+      <summary>allow forcing the ssrc on a rtpsession</summary>
+    </bug>
+    <bug>
+      <id>566356</id>
+      <summary>[dvbbasebin] Couple of memleaks</summary>
+    </bug>
+    <bug>
+      <id>566613</id>
+      <summary>bayer2rgb calculates wrong color offset</summary>
+    </bug>
+    <bug>
+      <id>566878</id>
+      <summary>[ladspa] Add dependencies for ladspa modules</summary>
+    </bug>
+    <bug>
+      <id>566957</id>
+      <summary>Add time based seeking to ResinDVD</summary>
+    </bug>
+    <bug>
+      <id>566958</id>
+      <summary>fix dirac support in qtmux/mp4mux</summary>
+    </bug>
+    <bug>
+      <id>566959</id>
+      <summary>Fix duration query on mpegtsdemux</summary>
+    </bug>
+    <bug>
+      <id>508029</id>
+      <summary>[speexresample] pops/glitches in some cases</summary>
+    </bug>
+    <bug>
+      <id>558416</id>
+      <summary>[PATCH] realvideodec: use pixel aspect ratio of container</summary>
+    </bug>
+    <bug>
+      <id>564482</id>
+      <summary>[appsrc] semantics of push-buffer signal awkward for bind...</summary>
+    </bug>
+    <bug>
+      <id>565319</id>
+      <summary>rtpjitterbuffer: bursty reception can cause time to be re...</summary>
+    </bug>
+    <bug>
+      <id>565613</id>
+      <summary>[mpegtsdemux] Add scrambled field to service structure</summary>
+    </bug>
+    <bug>
+      <id>567004</id>
+      <summary>ladspa plugin crashes on Solaris</summary>
+    </bug>
+  </bugs>
+</release>

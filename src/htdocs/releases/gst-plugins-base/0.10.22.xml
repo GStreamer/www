@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
+  <name>hidey hidey hidey ho</name>
+  <version>0.10.22</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Base Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc</li>
+  <li>network: tcp</li>
+  <li>typefind</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioscale, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: ffmpegcolorspace</li>
+  <li>aggregate elements: decodebin, playbin</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Require gettext 0.17</feature>
+    <feature>Replace audioresample with speexresample from -bad</feature>
+    <feature>Support new formats in RIFF: uncompressed RGB, WMA lossless, VP6</feature>
+    <feature>Move libgstapp and elements from -bad</feature>
+    <feature>Support color-key setting and probing for Xv properties</feature>
+    <feature>Improve typefinding for various formats</feature>
+    <feature>Extend audio sinks for pull-mode operation</feature>
+    <feature>Support for more subtitle formats</feature>
+    <feature>More development on decode2bin and playbin2</feature>
+    <feature>RTP and SDP fixes</feature>
+    <feature>Many bug fixes and improvements</feature>
+  </features>
+
+  <applications>
+  </applications>
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Andrew Feren</person>
+	<person>Andy Wingo</person>
+	<person>Christian Schaller</person>
+	<person>Cygwin Ports maintainer</person>
+	<person>Damien Lespiau</person>
+	<person>Daniel Drake</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Guillaume Emont</person>
+	<person>Håvard Graff</person>
+	<person>Jan Gerber</person>
+	<person>Jan Schmidt</person>
+	<person>Jonathan Matthew</person>
+	<person>Jonathan Rosser</person>
+	<person>José Alburquerque</person>
+	<person>Julien Moutte</person>
+	<person>Klaas</person>
+	<person>Luis Menina</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Matthias Kretz</person>
+	<person>Michael Smith</person>
+	<person>Nick Haddad</person>
+	<person>Olivier Crete</person>
+	<person>Pavel Zeldin</person>
+	<person>Robin Stocker</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Tero Saarni</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>xavierb at gmail dot com</person>
+	<person>이문형</person>
+  </contributors>
+
+
+  <api>
+    <additions>
+    <item>clockoverlay::time-format</item>
+    <item>GstRingBuffer:gst_ring_buffer_activate()</item>
+    <item>GstRingBuffer:gst_ring_buffer_is_active()</item>
+    <item>GstRingBuffer:gst_ring_buffer_convert()</item>
+    <item>Add GST_TYPE_BASE_AUDIO_(SRC|SINK)_SLAVE_METHOD to the public API</item>
+    <item>gst_netaddress_get_address_bytes()</item>
+    <item>gst_netaddress_set_address_bytes()</item>
+    </additions>
+  </api>
+
+  <bugs>
+    <bug>
+      <id>562163</id>
+      <summary>theoraenc likely ignoring segments</summary>
+    </bug>
+    <bug>
+      <id>562258</id>
+      <summary>rtspsrc element takes long time to error out if the addre...</summary>
+    </bug>
+    <bug>
+      <id>561789</id>
+      <summary>[volume] deadlocks with a controller attached</summary>
+    </bug>
+    <bug>
+      <id>554533</id>
+      <summary>[xvimagesink] allow setting colorkey if possible</summary>
+    </bug>
+    <bug>
+      <id>567511</id>
+      <summary>colorkey in xvimagesink gets reset when element is reused</summary>
+    </bug>
+    <bug>
+      <id>116051</id>
+      <summary>libresample doesn't handle &gt; factor of 2 rate conversion</summary>
+    </bug>
+    <bug>
+      <id>346218</id>
+      <summary>[audioresample] doesn't do anti aliasing</summary>
+    </bug>
+    <bug>
+      <id>385061</id>
+      <summary>[audioresample?] investigate high CPU usage</summary>
+    </bug>
+    <bug>
+      <id>456788</id>
+      <summary>[subparse] can't handle UTF-16 charset encoded subtitle.</summary>
+    </bug>
+    <bug>
+      <id>525807</id>
+      <summary>[vorbisenc] vorbisenc has problems with a gnlsource that ...</summary>
+    </bug>
+    <bug>
+      <id>546955</id>
+      <summary>gstoggmux EOS handling issue</summary>
+    </bug>
+    <bug>
+      <id>549417</id>
+      <summary>[audioresample] unit test fails on 64bit linux</summary>
+    </bug>
+    <bug>
+      <id>549510</id>
+      <summary>audioresample doesn't negotiate ideal caps</summary>
+    </bug>
+    <bug>
+      <id>552237</id>
+      <summary>UTF-16 srt confuses gstreamer, misdetected as mp3</summary>
+    </bug>
+    <bug>
+      <id>552559</id>
+      <summary>Implementation of SLAVE_SKEW in baseaudiosrc</summary>
+    </bug>
+    <bug>
+      <id>552569</id>
+      <summary>audioresample producing strange sized buffers</summary>
+    </bug>
+    <bug>
+      <id>552801</id>
+      <summary>audioconvert can overflow with big audio buffers</summary>
+    </bug>
+    <bug>
+      <id>554879</id>
+      <summary>Add ability to specify format for date/time display in Gs...</summary>
+    </bug>
+    <bug>
+      <id>555257</id>
+      <summary>Doesn't display srt subtitles saved with BOM</summary>
+    </bug>
+    <bug>
+      <id>555319</id>
+      <summary>add FFV1 fourcc to riff-media</summary>
+    </bug>
+    <bug>
+      <id>555607</id>
+      <summary>subrip subtitles typefind too strict</summary>
+    </bug>
+    <bug>
+      <id>555699</id>
+      <summary>[PATCH] theoradec: prefer container's pixel aspect ratio ...</summary>
+    </bug>
+    <bug>
+      <id>556025</id>
+      <summary>build failure in tests/icles</summary>
+    </bug>
+    <bug>
+      <id>556066</id>
+      <summary>Last byte of FLAC image buffer chopped off</summary>
+    </bug>
+    <bug>
+      <id>557365</id>
+      <summary>subparse check fails</summary>
+    </bug>
+    <bug>
+      <id>558124</id>
+      <summary>[PLUGIN-MOVE] Move speexresample as audioresample2 to -base</summary>
+    </bug>
+    <bug>
+      <id>559111</id>
+      <summary>ALSA sink hangs on USB audio device unplug while playing</summary>
+    </bug>
+    <bug>
+      <id>559478</id>
+      <summary>does not play windows media streams correctly</summary>
+    </bug>
+    <bug>
+      <id>559567</id>
+      <summary>`gst_base_audio_sink_sync_latency' should call `gst_base_...</summary>
+    </bug>
+    <bug>
+      <id>561436</id>
+      <summary>videorate element add image/jpeg to caps template</summary>
+    </bug>
+    <bug>
+      <id>561734</id>
+      <summary>playbin2 additions</summary>
+    </bug>
+    <bug>
+      <id>561780</id>
+      <summary>Playbin2 should work without volume too</summary>
+    </bug>
+    <bug>
+      <id>561924</id>
+      <summary>oggdemux hangs when given corrupt input via non-seekable ...</summary>
+    </bug>
+    <bug>
+      <id>562270</id>
+      <summary>build without gdk fails</summary>
+    </bug>
+    <bug>
+      <id>563143</id>
+      <summary>ximagesink/xvimagesink : _alloc_buffer returns non-clean ...</summary>
+    </bug>
+    <bug>
+      <id>563174</id>
+      <summary>Implement gst_rtcp_packet_remove</summary>
+    </bug>
+    <bug>
+      <id>563508</id>
+      <summary>[rgvolume] Unit test fails with passthrough assertions</summary>
+    </bug>
+    <bug>
+      <id>563718</id>
+      <summary>Theora check out of date</summary>
+    </bug>
+    <bug>
+      <id>563904</id>
+      <summary>GNOME Goal: Clean up GLib and GTK+ includes</summary>
+    </bug>
+    <bug>
+      <id>564098</id>
+      <summary>MS Word files are recognised as audio/mpeg and OSX's .DS_...</summary>
+    </bug>
+    <bug>
+      <id>564139</id>
+      <summary>Documentation of TCP plugins</summary>
+    </bug>
+    <bug>
+      <id>564200</id>
+      <summary>GstBaseAudioSink should register its enums and have corre...</summary>
+    </bug>
+    <bug>
+      <id>564206</id>
+      <summary>GstBaseAudioSrc should register its enum and have corresp...</summary>
+    </bug>
+    <bug>
+      <id>564421</id>
+      <summary>Move appsrc/appsink to -base</summary>
+    </bug>
+    <bug>
+      <id>564929</id>
+      <summary>Audiosink blocks if setcaps called while playing</summary>
+    </bug>
+    <bug>
+      <id>566586</id>
+      <summary>playbin2 test7.c fails after two songs</summary>
+    </bug>
+    <bug>
+      <id>566750</id>
+      <summary>[appsrc/sink] add padding, move private data to private s...</summary>
+    </bug>
+    <bug>
+      <id>566761</id>
+      <summary>[gstapp] No pkg-config file</summary>
+    </bug>
+    <bug>
+      <id>566837</id>
+      <summary>gst_cdda_base_src_mode_get_type() is not public from &lt; gst...</summary>
+    </bug>
+    <bug>
+      <id>566875</id>
+      <summary>[gnomevfs] Add dependency for the GnomeVFS modules</summary>
+    </bug>
+    <bug>
+      <id>566876</id>
+      <summary>[gio] Add dependency for the modules dir</summary>
+    </bug>
+    <bug>
+      <id>567027</id>
+      <summary>Add GType for GstRTSPUrl for bindings</summary>
+    </bug>
+    <bug>
+      <id>567168</id>
+      <summary>appsink is using the wrong signal slot for the pull-buffe...</summary>
+    </bug>
+    <bug>
+      <id>567960</id>
+      <summary>[tagdemux] Doesn't forward unknown events upstream</summary>
+    </bug>
+    <bug>
+      <id>500833</id>
+      <summary>[FFT] Struct alignment issues on sparc</summary>
+    </bug>
+    <bug>
+      <id>552199</id>
+      <summary>Parsing SDP file with multicast address fails</summary>
+    </bug>
+    <bug>
+      <id>558553</id>
+      <summary>[riff] gst_riff_create_video_caps not recognizing certain...</summary>
+    </bug>
+    <bug>
+      <id>564896</id>
+      <summary>gst_netaddress_get_ip[46]_address should check for correc...</summary>
+    </bug>
+    <bug>
+      <id>566341</id>
+      <summary>Some Ogg Theora files don't finished at seek at the end</summary>
+    </bug>
+    <bug>
+      <id>566654</id>
+      <summary>playbin2: does not come back from NULL after switching UR...</summary>
+    </bug>
+    <bug>
+      <id>566723</id>
+      <summary>GstAudioClock's new function may better use const gchar* ...</summary>
+    </bug>
+  </bugs>
+
+</release>

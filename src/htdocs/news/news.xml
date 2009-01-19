@@ -3249,4 +3249,25 @@ or download the tarball at
     </p>
     </content>
 </item>
+<item>
+    <date>2009-01-19 23:00</date>
+<title>GStreamer Core 0.10.22, Base Plugins 0.10.22, Bad Plugins 0.10.10 and Python Bindings 0.10.14 stable release</title>
+<content>
+<p>
+The GStreamer team is happy to announce the first releases of 2009 with new versions of Core, the Base Plugins module, the Bad Plugins module and the Python Bindings for the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.22.html">gstreamer</a>,
+<a href="&site;/releases/gst-plugins-base/0.10.22.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-bad/0.10.10.html">gst-plugins-bad</a> and
+<a href="&site;/releases/gst-python/0.10.14.html">gst-python</a>
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.22.tar.bz2">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.22.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.10.tar.bz2">gst-plugins-bad</a> and
+<a href="&site;/src/gst-python/gst-python-0.10.14.tar.bz2">gst-python</a>
+    </p>
+    </content>
+</item>
 </news>

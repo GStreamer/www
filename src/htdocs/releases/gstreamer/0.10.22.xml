@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>I heard a disturbing sound</name>
+  <version>0.10.22</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>GstController improvements</feature>
+    <feature>Extensions to the latency setting behaviours</feature>
+    <feature>Ability for plugins to register dependencies to trigger re-scanning</feature>
+    <feature>Optimisations in some common operations on caps and values and elsewhere</feature>
+    <feature>Add sequence numbers to events so dependent events can be associated with the event that caused them</feature>
+    <feature>New macros for reading and writing float values</feature>
+    <feature>Many improvements in the basesink base class</feature>
+    <feature>Support non-default main contexts for GstBus watches</feature>
+    <feature>Improvements in pull-mode scheduling of sinks</feature>
+    <feature>Fixes for alignment issues on sparc</feature>
+    <feature>Ghost pad fixes</feature>
+    <feature>New bit-reader assistance API</feature>
+    <feature>Many other bug fixes and improvements</feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
+Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
+Let us know if you want to be added to this list.
+</p>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Andrew Feren</person>
+	<person>Andy Wingo</person>
+	<person>Antoine Tremblay</person>
+	<person>Cygwin Ports maintainer</person>
+	<person>David Schleef</person>
+	<person>Dig Ge</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Jan Schmidt - Sun Microsystems</person>
+	<person>Jonas Holmberg</person>
+	<person>Michael Smith</person>
+	<person>Olivier Crete</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Sebastian Dröge</person>
+	<person>Simon Holm Thøgersen</person>
+	<person>Stefan Kost</person>
+	<person>Thijs Vermeir</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>이문형</person>
+  </contributors>
+
+
+  <api>
+    <additions>
+    <item>Add bit reader and byte reader classes.</item>
+    <item>gst_message_new_structure_change()</item>
+    <item>gst_message_parse_structure_change()</item>
+    <item>GST_BUFFER_FREE_FUNC()</item>
+    <item>Add GST_READ_UINT24_(LE|BE) and GST_WRITE_UINT24_(LE|BE).</item>
+    <item>GstBaseSrc::gst_base_src_set_blocksize()</item>
+    <item>GstBaseSrc::gst_base_src_get_blocksize()</item>
+    <item>GstBaseSink::gst_base_sink_set_blocksize()</item>
+    <item>GstBaseSink::gst_base_sink_get_blocksize()</item>
+    <item>GstBaseSink::blocksize</item>
+    <item>GstBaseSink::gst_base_sink_do_preroll()</item>
+    <item>Add gst_byte_reader_get_data and gst_byte_reader_peek_data</item>
+    <item>Move float endianness conversion macros from libgstfloatcast to core</item>
+    <item>gst_util_seqnum_next, gst_util_seqnum_compare</item>
+    <item>gst_event_get_seqnum, gst_event_set_seqnum</item>
+    <item>gst_message_get_seqnum, gst_message_set_seqnum</item>
+    <item>GstSeekFlags::GST_SEEK_FLAG_SKIP</item>
+    <item>gst_bin_recalculate_latency()</item>
+    <item>GstBin::do-latency</item>
+    <item>gst_tag_setter_reset_tags()</item>
+    <item>gst_query_new_uri, gst_query_set_uri, gst_query_parse_uri</item>
+    <item>add gst_plugin_add_dependency()</item>
+    <item>add gst_plugin_add_dependency_simple()</item>
+    </additions>
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>567002</id>
+      <summary>--gst-disable-registry-update also skips registry creation</summary>
+    </bug>
+    <bug>
+      <id>350477</id>
+      <summary>[Registry] Provide a way for plugins to delegate the 'cha...</summary>
+    </bug>
+    <bug>
+      <id>510354</id>
+      <summary>post GST_MESSAGE_STRUCTURE_CHANGE when linking and unlink...</summary>
+    </bug>
+    <bug>
+      <id>526044</id>
+      <summary>Crash if there is more than one watcher for a GstBus</summary>
+    </bug>
+    <bug>
+      <id>539108</id>
+      <summary>gst_ghost_pad_new() does more than call g_object_new()</summary>
+    </bug>
+    <bug>
+      <id>544003</id>
+      <summary>[parse] Links to wrong pad if no padtemplate name is given</summary>
+    </bug>
+    <bug>
+      <id>544293</id>
+      <summary>rtspsrc / gstpoll regression</summary>
+    </bug>
+    <bug>
+      <id>545714</id>
+      <summary>GST_READ_UINT_* and GST_WRITE_UINT_* are not always safe ...</summary>
+    </bug>
+    <bug>
+      <id>548786</id>
+      <summary>[win32] search for plugins based on location of DLL</summary>
+    </bug>
+    <bug>
+      <id>551676</id>
+      <summary>Small Memleak fix in gst_pad_link_check_compatible_unlocked</summary>
+    </bug>
+    <bug>
+      <id>552778</id>
+      <summary>add free_func in gstbuffer instances</summary>
+    </bug>
+    <bug>
+      <id>553554</id>
+      <summary>[base] Add a generic bit reader</summary>
+    </bug>
+    <bug>
+      <id>553874</id>
+      <summary>query_position broken during seek</summary>
+    </bug>
+    <bug>
+      <id>555196</id>
+      <summary>Move floating point endian conversion macros into core</summary>
+    </bug>
+    <bug>
+      <id>555307</id>
+      <summary>Need to push latency event into the pipeline</summary>
+    </bug>
+    <bug>
+      <id>555631</id>
+      <summary>Banshee crashes; gstreamer GST_CAPS GST_IS_CAPS warnings</summary>
+    </bug>
+    <bug>
+      <id>556091</id>
+      <summary>libtool-2.2 and old gettext don't mix</summary>
+    </bug>
+    <bug>
+      <id>556900</id>
+      <summary>a copy &amp; paste bug in helloworld example</summary>
+    </bug>
+    <bug>
+      <id>557154</id>
+      <summary>Allow totem to run without write-access to home directory</summary>
+    </bug>
+    <bug>
+      <id>557300</id>
+      <summary>libgstnet needs to link against $(WIN32_LIBS)</summary>
+    </bug>
+    <bug>
+      <id>557438</id>
+      <summary>Gstreamer crashes when Banshee supposed to change track</summary>
+    </bug>
+    <bug>
+      <id>557649</id>
+      <summary>GstBaseTransform can cause ivalid memory references</summary>
+    </bug>
+    <bug>
+      <id>559250</id>
+      <summary>segments need identifiers.</summary>
+    </bug>
+    <bug>
+      <id>560301</id>
+      <summary>Add --plugin to gst-inspect</summary>
+    </bug>
+    <bug>
+      <id>560360</id>
+      <summary>Excessive statting when reading binary cache</summary>
+    </bug>
+    <bug>
+      <id>560399</id>
+      <summary>Unnecessary CRC checksum for binary registry cache</summary>
+    </bug>
+    <bug>
+      <id>560442</id>
+      <summary>GNOME Goal: Remove deprecated GLib symbols</summary>
+    </bug>
+    <bug>
+      <id>561501</id>
+      <summary>g_type_class_ref without unref</summary>
+    </bug>
+    <bug>
+      <id>562170</id>
+      <summary>GstBus watch doesn't work with non-default main context</summary>
+    </bug>
+    <bug>
+      <id>562949</id>
+      <summary>[API] Add an URI query type for querying the source/sink URI</summary>
+    </bug>
+    <bug>
+      <id>564863</id>
+      <summary>Caps are not propagated from a ghostpad's target to the g...</summary>
+    </bug>
+    <bug>
+      <id>567225</id>
+      <summary>volatile gonce_data in BOILERPLATE not initialized to 0</summary>
+    </bug>
+    <bug>
+      <id>566393</id>
+      <summary>[deadlock] Setting index on a pipeline</summary>
+    </bug>
+  </bugs>
+</release>

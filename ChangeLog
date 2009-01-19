@@ -1,3 +1,17 @@
+2009-01-19  Jan Schmidt  <jan.schmidt@sun.com>
+
+	* src/htdocs/entities.gst:
+	* src/htdocs/news/news.xml:
+	* src/htdocs/releases/gst-plugins-bad/0.10.10.xml:
+	* src/htdocs/releases/gst-plugins-bad/Makefile.am:
+	* src/htdocs/releases/gst-plugins-base/0.10.22.xml:
+	* src/htdocs/releases/gst-plugins-base/Makefile.am:
+	* src/htdocs/releases/gst-python/0.10.14.xml:
+	* src/htdocs/releases/gst-python/Makefile.am:
+	* src/htdocs/releases/gstreamer/0.10.22.xml:
+	* src/htdocs/releases/gstreamer/Makefile.am:
+	Release Core 0.10.22, Base 0.10.22, Bad 0.10.10, Python 0.10.14
+
 2008-12-18  Edward Hervey  <bilboed@gmail.com>
 
 	* src/htdocs/releases/gst-ffmpeg/template.xml:
