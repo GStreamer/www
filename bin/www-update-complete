@@ -1,13 +1,13 @@
 #!/bin/sh
 # this script is run on the fdo server, so no use running at home
-# it forcefully updates cvs, autogens, and makes
+# it forcefully updates git, autogens, and makes
 
 cd /srv/gstreamer.freedesktop.org/www
 
 umask 0002
 chown -R :gstreamer * 2> /dev/null
 chmod -R g+w * 2> /dev/null
-cvs update -dP
+git pull
 src/autogen.sh
 make clean
 make
