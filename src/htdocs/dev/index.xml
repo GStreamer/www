@@ -34,68 +34,55 @@ the manual and the slides to get a general overview and to get you started.</p>
 <a href="http://gstreamer.freedesktop.org/wiki">gstreamer wiki</a>.
 </p>
                                                                                 
-<H1>CVS access</H1>
+<H1>GIT access</H1>
 
 <h2>Modules</h2>
 <p>
 The repository is split in several <a href="&site;/modules/">modules</a>.
 </p>
 
-<h2>Anonymous CVS Access</h2>
+<h2>Anonymous GIT Access</h2>
 <p>
-This project's freedesktop.org CVS repository can be checked out through anonymous CVS with the following instruction set. The module you wish to check out must be specified as the modulename. When prompted for a password for anonymous, simply press the Enter key. To determine the names of the modules created by this project, you may examine their CVS repository via the <A HREF="&gst-cvs-http;">provided web-based CVS repository viewer</A>.
+This project's freedesktop.org GIT repository can be checked out through anonymous GIT with the following instruction set. The module you wish to check out must be specified as the modulename. To determine the names of the modules created by this project, you may examine their GIT repository via the <A HREF="&gst-cvs-http;">provided web-based GIT repository viewer</A>.
 </p>
 <p>
 <pre>
-cvs -d:pserver:anoncvs@anoncvs.freedesktop.org:/cvs/gstreamer co modulename
+git clone git://anongit.freedesktop.org/gstreamer/modulename
 </pre>
 </p>
 <p>
 Updates from within the module's directory do not need the -d parameter.
-<br/>
-NOTE: UNIX file and directory names are case sensitive. The path to the project CVSROOT must be specified using lowercase characters (i.e. /cvsroot/gstreamer)
 </p>
-<h2>Developer CVS Access via SSH</h2>
+<h2>Developer GIT Access</h2>
 <p>
-Only project developers can access the CVS tree via this method. A SSH client must be installed on your client machine. Substitute modulename and developername with the proper values. Enter your site password when prompted.
+Only project developers can access the GIT tree via this method. A GIT client must be installed on your client machine. Substitute modulename and developername with the proper values. Enter your site password when prompted.
 <br/>
 <p>
 You find information on how to get a developer account on <a href="http://www.freedesktop.org/wiki/AccountRequests">freedesktop here</a></p>
 Developers may also make use of shared SSH keys for authentication.
 <br/>
 <pre>
-export CVS_RSH=ssh
-cvs -z3 -d:ext:developername@cvs.freedesktop.org:/cvs/gstreamer co modulename
-</pre>
-<br/>
-NOTE: UNIX file and directory names are case sensitive. The path to the project CVSROOT must be specified using lowercase characters (i.e. /cvsroot/gstreamer)
-<br/>
-<!-- Local CVS policies and a list of tags and branches is <A
-HREF="cvs.php">also available</A>. -->
-<br/>
-If you want to check out a branch the command would be:<br/>
-<pre>
-cvs -z3 -d:ext:developername@cvs.freedesktop.org:/cvs/gstreamer co -r BRANCH-NAME modulename
+git clone ssh://username@git.freedesktop.org/git/gstreamer/modulename
 </pre>
 <br/>
 Developers will be added to the project for write access as necessary.
-For all other changes, please submit patches (<code>cvs diff -u</code>) to <A HREF="http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">bugzilla</A> or
+For all other changes, please submit patches (<code>git diff -u</code>) to <A HREF="http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">bugzilla</A> or
 send it to the <A HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel list</A>.</p>
+<!-- Uncoment the following once we *actually* have buildslaves and testsuite -->
+<!-- <H1>Buildbots</H1> -->
 
-<H1>Buildbots</H1>
+<!-- <p> -->
+<!-- Commits to GIT are verified by our build cluster. This does automated checkouts on a series of slaves and runs the buidl there. -->
+<!-- If a commit breaks a build it is announced in the <a href="irc://irc.freenode.net/gstreamer">gstreamer developer channel</a> and on these websites: -->
+<!-- <a href="http://build.fluendo.com:8080/">gstreamer head</a> and <a href="http://build.fluendo.com:8081/">gstreamer stable</a>. -->
+<!-- </p>  -->
 
-<p>
-Commits to CVS are verified by our build cluster. This does automated checkouts on a series of slaves and runs the buidl there.
-If a commit breaks a build it is announced in the <a href="irc://irc.freenode.net/gstreamer">gstreamer developer channel</a> and on these websites:
-<a href="http://build.fluendo.com:8080/">gstreamer head</a> and <a href="http://build.fluendo.com:8081/">gstreamer stable</a>.
-</p> 
-
-<H1>Automated media tests</H1>
-<p>
-We regularly run mediafile tests with GStreamer to see how we are progressing
-on filetype support and catch any regressions. You find the results of these
-<a href="http://core.fluendo.com/gst-media-test/">GStreamer media test here</a>.
-</p>
+<!-- <H1>Automated media tests</H1> -->
+<!-- <p> -->
+<!-- We regularly run mediafile tests with GStreamer to see how we are progressing -->
+<!-- on filetype support and catch any regressions. You find the results of these -->
+<!-- <a href="http://core.fluendo.com/gst-media-test/">GStreamer media test here</a>. -->
+<!-- </p> -->
 <H1>Language Bindings</H1>
                                                                                 
 <p>The GStreamer API can be accessed from <a href="../bindings">various programming languages</a> in addition to the native C API.</p>

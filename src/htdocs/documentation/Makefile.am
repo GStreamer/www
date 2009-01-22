@@ -1,9 +1,9 @@
 built_pages = index.html licensing.html rtp.html plugins.html splitup.html gstreamer010.html
 
 plugins.xml:
-	- cvsroot=`cat $(srcdir)/CVS/Root`; \
 	for m in gstreamer gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad; do \
-	  cvs -d$$cvsroot co -d $$m $$m/docs/plugins/inspect; \
+	  git clone --depth 1 git://anongit.freedesktop.org/gstreamer/$$m $$m-checkouts.git; \
+	  ln -s $$m-checkouts.git/docs/plugins/inspect $$m\-checkouts\-plugins-inspect; \
 	done
 	echo "<plugins>" > plugins.xml
 	cat */*.xml >> plugins.xml
@@ -13,7 +13,7 @@ plugins.xml:
 plugins.xml-update:
 	rm -f plugins.xml
 	make plugins.xml
-       
+
 plugins.html: plugins.xsl plugins.xml-update
 	xsltproc -o plugins.html $(srcdir)/plugins.xsl plugins.xml
 
