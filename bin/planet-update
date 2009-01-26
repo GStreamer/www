@@ -4,7 +4,7 @@
 
 GSTHOME=/srv/gstreamer.freedesktop.org/
 #BUILDDIR=$GSTHOME/planet
-BUILDDIR=/home/dlehn/planet-gstreamer
+BUILDDIR=/home/thaytan/planet-gstreamer
 CONFDIR=$GSTHOME/www/planet
 LIVEDIR=$GSTHOME/www/htdocs/planet
 cd $BUILDDIR
