@@ -42,7 +42,7 @@ moduledir=$modulebasedir/$module
 
 echo "Updating CVS"
 pushd $moduledir > /dev/null 2>&1
-cvs up
+git pull
 popd
 
 release=src/htdocs/releases/$module/$version
@@ -80,6 +80,8 @@ else
   echo Updating $makefileam
   perl -i.bak -p -e "s@(releases =)@\$1 $version@" $makefileam
 fi
+# Mark for committing
+git add $makefileam
 
 # update configure.ac
 configureac=$moduledir/configure.ac
@@ -110,13 +112,14 @@ else
   cat $changelog.bak >> $changelog
 fi
 
-# FIXME: add to cvs
-cvs add $release.xml
-
 echo "Now press Enter to edit the next .xml file and update the list of features and API changes"
 read
 
 $EDITOR $release.xml
+
+# Mark for committing
+git add $release.xml
+
 
 echo "Building website"
 make
@@ -157,11 +160,11 @@ then
   echo "Press Enter to commit updates to .po files"
   read
   pushd $moduledir > /dev/null 2>&1
-  cvs commit -m "Update .po files" po/*.po
+  git commit -m "Update .po files" po/*.po
   popd
 fi
 
 cd $moduledir
-cvs diff > release.diff
-echo "Press Enter to review the CVS diff"
+git diff > release.diff
+echo "Press Enter to review the git diff"
 less -R release.diff
