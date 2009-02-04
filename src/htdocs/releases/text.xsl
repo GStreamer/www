@@ -166,8 +166,7 @@ We use GNOME's bugzilla for bug reports and feature requests:
 
 Developers
 
-CVS is hosted on cvs.freedesktop.org.
-All code is in CVS and can be checked out from there.
+GStreamer is stored in Git, hosted at git.freedesktop.org, and can be cloned from there.
 Interested developers of the core library, plug-ins, and applications should
 subscribe to the gstreamer-devel list. If there is sufficient interest we
 will create more lists as necessary.

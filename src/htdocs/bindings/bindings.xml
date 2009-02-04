@@ -198,7 +198,8 @@ The bindings are still under development and not yet released.
     </status>
 <body>
 <p>
-The GStreamer API <a href="http://java.sun.com/">Java</a> bindings are still under development. The prelimenary bindings can be found in the <a href="&gst-cvs-http;gst-java/">gst-java</a> module in CVS.
+There have been several projects to bind the GStreamer API under <a href="http://java.sun.com/">Java</a>. Two such projects are the
+<a href="http://freshmeat.net/projects/gstreamer-java/">gstreamer-java</a> Google Summer of Code project, and the <a href="http://projectkenai.com/projects/gstreamer-java">Java bindings for GStreamer</a> project.
 </p>
 </body>
   </binding>

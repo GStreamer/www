@@ -24,7 +24,7 @@ HREF="http://farsight.sourceforge.net">Farsight</a>'s darcs repository. The
 required module is <a
 HREF="http://projects.collabora.co.uk/darcs/farsight/gst-plugins-farsight/">gst-plugins-farsight.</a>
 </p> 
-<p>The elements should also be available in GStreamer CVS and future releases
+<p>The elements should also be available in GStreamer Git and future releases
 (releases after May 2006), but latest edge will be on the farsight darcs.</p>
 <p>There are 3 main elements for RTP :</p>
 

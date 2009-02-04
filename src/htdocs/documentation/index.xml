@@ -80,7 +80,7 @@
 
 <tr>
  <td>Core Design Documentation</td>
- <td colspan="3"><a href="http://webcvs.freedesktop.org/gstreamer/gstreamer/docs/design/">HTML</a></td>
+ <td colspan="3"><a href="http://cgit.freedesktop.org/gstreamer/gstreamer/tree/docs/design/">HTML</a></td>
 <!-- <td colspan="3"><a href="">HTML</a></td> -->
 <!-- <td colspan="3"><a href="">HTML</a></td> -->
 </tr>

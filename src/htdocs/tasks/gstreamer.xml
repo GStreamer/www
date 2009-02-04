@@ -41,7 +41,7 @@
         <code id="subparse">
           <name>subparse</name>
           <description>The subparse element in the gst-plugins module in
-          GStreamer CVS.</description>
+          GStreamer Git.</description>
         </code>
       </where>
       <difficulty>

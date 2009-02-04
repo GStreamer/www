@@ -15,7 +15,7 @@
 <p>
 In general, you should find packages that were specifically made for your
 distribution.  Do not compile from source yourself unless you are certain
-you have to or want to.  Do not compile from CVS unless you really need
+you have to or want to.  Do not compile from Git unless you really need
 some specific feature that is not released yet, or want to help out developing
 GStreamer.
 </p>

@@ -30,7 +30,7 @@
         EASY - Many examples to look at.
       </difficulty>
       <submit>
-        Patch should be made against gnome-media CVS and sent it ot the gnome-multimedia mailing list.
+        Patch should be made against gnome-media SVN and sent to the gnome-multimedia mailing list.
       </submit>
       <notes>
   Any questions about this task should be sent to the gnome-media mailing list.
@@ -69,7 +69,7 @@ There are a couple of issues that needs to be taken into account. One thing esou
         MEDIUM - Fairly simple code, but at a very high impact place in the toolchain.
       </difficulty>
       <submit>
-        Patch should be made against libgnome and libgnomeui CVS and sent to the gnome-desktop mailing list.
+        Patch should be made against libgnome and libgnomeui SVN and sent to the gnome-desktop mailing list.
       </submit>
       <notes>
   Any questions about this task should be sent to the gnome-media mailing list.

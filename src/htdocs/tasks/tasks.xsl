@@ -166,20 +166,20 @@
         </div>
         <TABLE>
         <TR>
-          <TD class="task-cell">CVS location</TD>
-          <TD class="task-cell"><xsl:value-of select="cvs/text()"/></TD>
+          <TD class="task-cell">Code location</TD>
+          <TD class="task-cell"><xsl:value-of select="repo/text()"/></TD>
         </TR>
         <TR>
-          <TD class="task-cell">CVS path</TD>
+          <TD class="task-cell">Code path</TD>
           <TD class="task-cell">
-            <!-- provide a link to the CVS code if we have one -->
+            <!-- provide a link to the code in Git if we have one -->
             <!-- FIXME. there's got to be a better way then looping over all
-                 cvs location definitions ? -->
-            <!-- first we store the id of the cvs and the path in that cvs -->
-            <xsl:variable name="which"><xsl:value-of select="cvs/text()"/></xsl:variable>
+                 repo location definitions ? -->
+            <!-- first we store the id of the repo and the path in that repo -->
+            <xsl:variable name="which"><xsl:value-of select="repo/text()"/></xsl:variable>
             <xsl:variable name="dir"><xsl:value-of select="path/text()"/></xsl:variable>
-            <!-- then we loop over all cvses, selecting where of... = $which -->
-              <xsl:for-each select="//cvses/cvs[@of=$which]">
+            <!-- then we loop over all repos, selecting where of... = $which -->
+              <xsl:for-each select="//repos/repo[@of=$which]">
                 <xsl:element name="a">
                   <xsl:attribute name="href">
                     <xsl:value-of select="web/text()"/>
@@ -195,7 +195,7 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="cvses">
+  <xsl:template match="repos">
   </xsl:template>
 
   <!-- fake out title and body so it doesn't get printed verbatim -->

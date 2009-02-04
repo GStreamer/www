@@ -14,129 +14,129 @@
   
       <code name="acme">
         <description>acme (now merged in gnome control-center since 2.6)</description>
-        <cvs>GNOME CVS</cvs>
+        <repo>GNOME SVN</repo>
         <path>acme</path>
       </code>
   
       <code name="gnome-mixer-applet">
         <description>GNOME's mixer applet</description>
-        <cvs>GNOME CVS</cvs>
+        <repo>GNOME SVN</repo>
         <path>gnome-applets/mixer</path>
       </code>
   
       <code name="gnome-media-gst-mixer">
         <description>GNOME volume control</description>
-        <cvs>GNOME CVS</cvs>
+        <repo>GNOME SVN</repo>
         <path>gnome-media/gst-mixer</path>
       </code>
       
       <code name="gnome-media-profiles">
         <description>GNOME Media profiles</description>
-        <cvs>GNOME CVS</cvs>
+        <repo>GNOME SVN</repo>
         <path>gnome-media/profiles</path>
       </code>
 
       <code name="grecord">
         <description>GNOME Sound Recorder</description>
-        <cvs>GNOME CVS</cvs>
+        <repo>GNOME SVN</repo>
         <path>gnome-media/grecord</path>
       </code>
 
       <code name="libgnome">
         <description>GNOME development libraries</description>
-        <cvs>GNOME CVS</cvs>
+        <repo>GNOME SVN</repo>
         <path>gnome-libs</path>
       </code>
 
       <code name="libgnomeui">
 	<description>GNOME UI development libraries</description>
-	<cvs>GNOME CVS</cvs>
+	<repo>GNOME SVN</repo>
 	<path>libgnomeui</path>
       </code>
 
       <code name="sound-juicer">
         <description>Sound Juicer CD-ripper</description>
-        <cvs>GNOME CVS</cvs>
+        <repo>GNOME SVN</repo>
         <path>sound-juicer</path>
       </code>
 
       <code name="gnome-media-gmix">
 	<description>Old GNOME volume control</description>
-	<cvs>GNOME CVS</cvs>
+	<repo>GNOME SVN</repo>
 	<path>gnome-media/gmix</path>
        </code>
 
       <code name="gnome-media-cdplayer">
 	<description>GNOME CD player</description>
-	<cvs>GNOME CVS</cvs>
+	<repo>GNOME SVN</repo>
 	<path>gnome-media/gnome-cd</path>
       </code>
 
       <code name="gst-libs-gst-mixer">
         <description>GStreamer mixer interface API</description>
-        <cvs>GStreamer CVS</cvs>
+        <repo>GStreamer Git</repo>
         <path>gst-plugins/gst-libs/gst/mixer</path>
       </code>
   
       <code name="gst-media-info">
         <description>GStreamer media-info library</description>
-        <cvs>GStreamer CVS</cvs>
+        <repo>GStreamer Git</repo>
         <path>gst-plugins/gst-libs/gst/media-info</path>
       </code>
   
       <code name="gst-launch">
         <description>GStreamer gst-launch</description>
-        <cvs>GStreamer CVS</cvs>
+        <repo>GStreamer Git</repo>
         <path>gstreamer/tools/gst-launch.c</path>
       </code>
       <code name="tag.h">
 	<description>GStreamer tagging header file</description>
-	<cvs>GStreamer CVS</cvs>
+	<repo>GStreamer Git</repo>
 	<path>gst-plugins/gst-libs/gst/tag/</path>
       </code>
       <code name="vorbistagg">
 	<description>Vorbisdec C file with vorbis tag implementation</description>
-	<cvs>GStreamer CVS</cvs>
+	<repo>GStreamer Git</repo>
 	<path>gst-plugins/ext/vorbis/vorbisdec.c</path>
       </code>
       <code name="basicomega">
 	<description>Basicomega C file.</description>
-	<cvs>GStreamer CVS</cvs>
+	<repo>GStreamer Git</repo>
 	<path>gstreamer/gst/schedulers/gstbasicscheduler.c</path>
       </code>
       <code name="totem">
-        <description>Totem CVS module in GNOME CVS.</description>
-        <cvs>GNOME CVS</cvs>
+        <description>Totem SVN module in GNOME SVN.</description>
+        <repo>GNOME SVN</repo>
         <path>totem/</path>
       </code>
 
       <code name="playbin">
-        <description>Playbin element in GStreamer CVS.</description>
-        <cvs>GStreamer CVS</cvs>
+        <description>Playbin element in GStreamer SVN.</description>
+        <repo>GStreamer Git</repo>
         <path>gst-plugins/gst/playback/</path>
       </code>
       <code name="subparse">
-        <description>Subparse element in GStreamer CVS.</description>
-        <cvs>GStreamer CVS</cvs>
+        <description>Subparse element in GStreamer Git.</description>
+        <repo>GStreamer Git</repo>
         <path>gst-plugins/gst/subparse/</path>
       </code>
       <code name="website">
-        <description>GStreamer website module in GStreamer CVS.</description>
-        <cvs>GStreamer CVS</cvs>
+        <description>GStreamer website module in GStreamer Git.</description>
+        <repo>GStreamer Git</repo>
         <path>www/</path>
       </code>
     </codes>
   
-    <cvses>
-      <cvs of="GNOME CVS">
-        <web>http://cvs.gnome.org/bonsai/rview.cgi?cvsroot=/cvs/gnome&amp;dir=</web>
-        <anon>gnome cvs anon</anon>
-      </cvs>
-      <cvs of="GStreamer CVS">
-        <web>&gst-cvs-http;</web>
-        <anon>gst cvs anon</anon>
-      </cvs>
-    </cvses>
+    <repos>
+      <repo of="GNOME SVN">
+        <web>http://svn.gnome.org/viewvc/</web>
+        <anon>gnome svn anon</anon>
+      </repo>
+      <repo of="GStreamer Git">
+        <web>&gst-repo-http;</web>
+        <anon>gst git anon</anon>
+      </repo>
+    </repos>
   
   </tasks>
 </page>

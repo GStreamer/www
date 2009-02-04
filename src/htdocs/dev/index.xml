@@ -43,7 +43,7 @@ The repository is split in several <a href="&site;/modules/">modules</a>.
 
 <h2>Anonymous Git Access</h2>
 <p>
-This project's freedesktop.org Git repository can be checked out through anonymous Git with the following instruction set. The module you wish to check out must be specified as the modulename. To determine the names of the modules created by this project, you may examine their Git repository via the <A HREF="&gst-cvs-http;">provided web-based Git repository viewer</A>.
+This project's freedesktop.org Git repository can be checked out through anonymous Git with the following instruction set. The module you wish to check out must be specified as the modulename. To determine the names of the modules created by this project, you may examine their Git repository via the <A HREF="&gst-repo-http;">provided web-based Git repository viewer</A>.
 </p>
 <p>
 <pre>

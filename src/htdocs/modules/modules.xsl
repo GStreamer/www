@@ -99,10 +99,10 @@ Here's a quick overview of all of our modules :
 </tr>
 
 <tr>
-  <td>browse CVS</td>
+  <td>browse Git</td>
   <td>
     <xsl:call-template name="hyperlink">
-      <xsl:with-param name="href">&gst-cvs-http;<xsl:value-of select="id" />
+      <xsl:with-param name="href">&gst-repo-http;<xsl:value-of select="id" />
       </xsl:with-param>
     </xsl:call-template>
   </td>
