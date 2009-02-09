@@ -21,44 +21,26 @@ GStreamer.
 </p>
 
 <DL>
-  <DT>Fedora Core 5</DT>
-  <DD>Check our <A href="fedora5.html">Fedora 5</A> download page.</DD>
-
-  <DT>Fedora Core 4 and older</DT>
-  <DD>Check our <A href="fedora.html">Fedora</A> download page.</DD>
-
-  <DT>Red Hat 9</DT>
-  <DD><B>Note</B>: the Red Hat repository is unmaintained and only provided for
-      historical reasons.  If you still want to know more,
-      check our <A href="redhat.html">Red Hat</A> download page.</DD>
-
-  <DT>Debian and Ubuntu</DT>
-  <DD>GStreamer and the various plugins modules are available in both Debian
-      and Ubuntu. You can install the most important ones with</DD>
-  <DD><tt>sudo apt-get install gstreamer0.10-tools gstreamer0.10-x
-          gstreamer0.10-plugins-base gstreamer0.10-plugins-good
-          gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad
-          gstreamer0.10-ffmpeg gstreamer0.10-alsa
-          gstreamer0.10-schroedinger gstreamer0.10-pulseaudio</tt></DD>
-
-  <DT>Gentoo</DT>
-  <DD>The ebuilds for <A href="http://www.gentoo.org">Gentoo</A> linux are available in portage.</DD>
-  <DD>In the case of problems or questions, check the <A href="http://forums.gentoo.org">Gentoo forums</A>.
-    Alternatively you can try <A href="irc://irc.freenode.net/gstreamer">the GStreamer irc channel</A>
-    and look for Foser or Zaheerm.
+  <DT>Linux</DT>
+  <DD>Most, if not all, Linux distributions provide packages of GStreamer.
+  You should find these in your distribution's package repository.
+  <BR/>
+  Note that some distributions split the GStreamer plugins up further than the
+  upstream sources. Additionally, some distributions do not include the
+  gst-plugins-bad, gst-plugins-ugly, and gst-ffmpeg packages in their main
+  repository, for legal reasons.
   </DD>
 
   <DT>OpenBSD</DT>
   <DD>Packages for various architectures are available for <A href="http://www.openbsd.org/4.1_packages/">OpenBSD 4.1</A>.</DD>
 
   <DT>Windows</DT>
-  <DD>We also have <A href="http://gstreamer.freedesktop.org/pkg/windows/releases/">Windows binaries</A> of the last core and base releases.
-    You will find setup installers and win32dev packages including headers
-    and .lib to build application based on GStreamer using Visual Studio.
+  <DD>Unfortunately, we are unable to provide up-to-date Windows binaries of GStreamer, due to limited developer resources.
     <BR/>
-    Alternatively there is also <A href="http://projects.collabora.co.uk/~oleavr/OABuild/">OABuild</A> which provides a
-    fast and convenient way to build GStreamer, GTK+, D-Bus, Telepathy and
-    .NET bindings for all of them on Windows, also without the usage of mingw/cygwin.
+    Developers wishing to build GStreamer on Windows using MSVC may want to look at
+    <A href="http://projects.collabora.co.uk/~oleavr/OABuild/">OABuild</A> which provides a
+    fast and convenient way to build GStreamer, GTK+, D-Bus, Telepathy (and
+    .NET bindings for all of them) on Windows, without requiring mingw/cygwin.
   </DD>
 
   <DT>Source</DT>
