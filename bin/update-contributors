@@ -32,16 +32,19 @@ def main():
     if relmatcher.match(lines[0]):
         del lines[0]
 
-    datedmatcher = re.compile('^\d*-\d*-\d*\s*(.*)\s*<.*>$')
-    bymatcher = re.compile(' by: ([^<]*)\s*.*$')
+    datedmatcher = re.compile('^\d*-\d*-\d*\s(?:[0-9:]+ [+-]\d{4}\s)\s?(.*)\s*<.*>$')
+    bymatcher = re.compile(' by: ([^<]+)\s*.*$')
+    byaddyonlymatcher = re.compile(' by:[ ]*<([^>]*)')
     for line in lines:
         if relmatcher.match(line):
             break
-        for matcher in [datedmatcher, bymatcher]:
+        for matcher in [datedmatcher, bymatcher, byaddyonlymatcher]:
             match = matcher.search(line)
             if match:
                 name = match.expand("\\1").rstrip()
-                if not name in names:
+                if name == "":
+                  print "Warning: parsed null name from '%s'" % (line)
+                if not name in names and name != "":
                     names.append(name)
     names.sort()
        
