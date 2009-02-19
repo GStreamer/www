@@ -3304,4 +3304,20 @@ or download a tarball at
 </p>
     </content>
   </item>
+
+<item>
+    <date>2009-02-19 20:30</date>
+<title>GStreamer Good 0.10.14 stable release</title>
+<content>
+<p>
+The GStreamer team presents a new release of the Good Plugins module in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-good/0.10.14.html">gst-plugins-good</a>
+or download a tarball at
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.14.tar.bz2">gst-plugins-good</a>
+</p>
+    </content>
+  </item>
 </news>

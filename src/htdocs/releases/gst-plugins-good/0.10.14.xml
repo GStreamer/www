@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Disaffected Affectation</name>
+  <version>0.10.14</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Add autodetect source elements</feature>
+    <feature>Improvements in RTP payload/depayload and RTSP</feature>
+    <feature>Support float input in wav, and require depth == width</feature>
+    <feature>Support inverted RGB video in avi</feature>
+    <feature>Compilation fixes and smarter format selection in V4L2 support</feature>
+    <feature>Use libv4l when available</feature>
+    <feature>Don't install static plugin libraries any more</feature>
+    <feature>Matroska muxing: Add Dirac, fix AAC</feature>
+    <feature>Improve qtdemux segment handling</feature>
+    <feature>Add presets to equalizer</feature>
+    <feature>OS/X video and audio output improvements</feature>
+    <feature>Rework Pulseaudio audio output</feature>
+    <feature>Support basic and digest auth in souphttpsrc</feature>
+    <feature>Use libsoup-gnome instead of libsoup when available</feature>
+    <feature>DV demuxer fixes</feature>
+    <feature>New IIR and FIR base classes and echo filter in audiofx plugin</feature>
+    <feature>Improved spectrum analysis plugin</feature>
+    <feature>8 bit greyscale support in v4l2src and videocrop</feature>
+    <feature>New aspectratiocrop element</feature>
+    <feature>Many other bug fixes and improvements</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+  <contributors>
+	<person>Alexandre Rostovtsev</person>
+	<person>Andy Wingo</person>
+	<person>Bastien Nocera</person>
+	<person>Bjorn Ostby</person>
+	<person>Brian Cameron</person>
+	<person>Brijesh Singh</person>
+	<person>Christian Schaller</person>
+	<person>Cygwin Ports maintainer</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Eric Zhang</person>
+	<person>Fabricio Godoy</person>
+	<person>Jan Schmidt</person>
+	<person>Jonathan Matthew</person>
+	<person>Julien Moutte</person>
+	<person>Justin Karnegas</person>
+	<person>Lennart Poettering</person>
+	<person>Luotao Fu</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Smith</person>
+	<person>Nick Haddad</person>
+	<person>Olivier Crete</person>
+	<person>Pepijn Van Eeckhoudt</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Robin Stocker</person>
+	<person>Ron McOuat</person>
+	<person>Sascha Hauer</person>
+	<person>Sebastian Dröge</person>
+	<person>Sjoerd Simons</person>
+	<person>Stefan Kost</person>
+	<person>Tal Shalif</person>
+	<person>Thiago Sousa Santos</person>
+	<person>Thijs Vermeir</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Yotam</person>
+	<person>Zeeshan Ali</person>
+	<person>j^</person>
+	<person>lrn1986 at gmail dot com</person>
+	<person>이문형</person>
+  </contributors>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>561502</id>
+      <summary>Not-negociated error in udpsrc</summary>
+    </bug>
+    <bug>
+      <id>522183</id>
+      <summary>add preset suport to gstequalizer</summary>
+    </bug>
+    <bug>
+      <id>523813</id>
+      <summary>[autodetect] add autovideosrc and autoaudiosrc</summary>
+    </bug>
+    <bug>
+      <id>557709</id>
+      <summary>goom should have license headers in all source files</summary>
+    </bug>
+    <bug>
+      <id>560155</id>
+      <summary>segfault when trying to set tag to NULL with avimux</summary>
+    </bug>
+    <bug>
+      <id>527951</id>
+      <summary>[new element] aspectratiocrop</summary>
+    </bug>
+    <bug>
+      <id>529379</id>
+      <summary>RTSP seeks when pipeline is in STATE_PAUSED</summary>
+    </bug>
+    <bug>
+      <id>532409</id>
+      <summary>RTP payload/depayloader for G.729</summary>
+    </bug>
+    <bug>
+      <id>537539</id>
+      <summary>[pulse] Rhythmbox starts using 100% of CPU time when puls...</summary>
+    </bug>
+    <bug>
+      <id>537540</id>
+      <summary>[pulse] Causes a deadlock when the pulseserver dies</summary>
+    </bug>
+    <bug>
+      <id>537543</id>
+      <summary>[pulse] sink/src should have &quot; volume &quot; property (was GstMi...</summary>
+    </bug>
+    <bug>
+      <id>545033</id>
+      <summary>[v4l2src] Add support for camera specific formats</summary>
+    </bug>
+    <bug>
+      <id>552140</id>
+      <summary>[soup] use libsoup-gnome for proxy configuration if avail...</summary>
+    </bug>
+    <bug>
+      <id>556019</id>
+      <summary>Add the ability to make souphttpsrc act as a live source</summary>
+    </bug>
+    <bug>
+      <id>556484</id>
+      <summary>Implement getcaps in rtpL16pay</summary>
+    </bug>
+    <bug>
+      <id>556641</id>
+      <summary>rtpL16depay doesn't support multichannel audio</summary>
+    </bug>
+    <bug>
+      <id>556802</id>
+      <summary>Misspelled messages</summary>
+    </bug>
+    <bug>
+      <id>556955</id>
+      <summary>[videocrop] fails to renegotiate</summary>
+    </bug>
+    <bug>
+      <id>556986</id>
+      <summary>pulsesink deadlocks when raising an error</summary>
+    </bug>
+    <bug>
+      <id>557260</id>
+      <summary>[equalizer] Calculates coefficients for every buffer</summary>
+    </bug>
+    <bug>
+      <id>557293</id>
+      <summary>Argument type mismatch on Windows</summary>
+    </bug>
+    <bug>
+      <id>557294</id>
+      <summary>cross mingw32 gcc: getaddrinfo is not in ws2_32.dll befor...</summary>
+    </bug>
+    <bug>
+      <id>557710</id>
+      <summary>Memory leak related to matroskamux's request pads</summary>
+    </bug>
+    <bug>
+      <id>558427</id>
+      <summary>rtpmpapay/depay are too wide</summary>
+    </bug>
+    <bug>
+      <id>558638</id>
+      <summary>Compiler error on v4l2</summary>
+    </bug>
+    <bug>
+      <id>558711</id>
+      <summary>gst-plugins-good-0.10.11 compile fails</summary>
+    </bug>
+    <bug>
+      <id>559288</id>
+      <summary>[qtdemux] deadly embrace!</summary>
+    </bug>
+    <bug>
+      <id>559545</id>
+      <summary>rtspsrc could not receive data from RTSP server because o...</summary>
+    </bug>
+    <bug>
+      <id>559547</id>
+      <summary>Seek bugs when playing rtsp video in m.youtube.com</summary>
+    </bug>
+    <bug>
+      <id>560641</id>
+      <summary>rtp mp4 payloader doesn't flush the last frame upon EOS</summary>
+    </bug>
+    <bug>
+      <id>560756</id>
+      <summary>New Plugin: JPEG RTP Payloader</summary>
+    </bug>
+    <bug>
+      <id>561625</id>
+      <summary>Rtspsrc set segment's last_stop incorrectly</summary>
+    </bug>
+    <bug>
+      <id>561775</id>
+      <summary>souphttpsrc patch to support basic and digest authentication</summary>
+    </bug>
+    <bug>
+      <id>561802</id>
+      <summary>DLNA specific HTTP header missing</summary>
+    </bug>
+    <bug>
+      <id>561990</id>
+      <summary>qtdemux build fails on mingw due to missing definition of...</summary>
+    </bug>
+    <bug>
+      <id>562434</id>
+      <summary>[wavenc] Add support for a-law and mu-law encoded wav files</summary>
+    </bug>
+    <bug>
+      <id>562572</id>
+      <summary>multiudpsink handles errors in _render() too aggressively</summary>
+    </bug>
+    <bug>
+      <id>563414</id>
+      <summary>Fix for SunAudioMixer plugin</summary>
+    </bug>
+    <bug>
+      <id>563504</id>
+      <summary>add libv4l2 support to v4l2 gst plugin - required for mos...</summary>
+    </bug>
+    <bug>
+      <id>563509</id>
+      <summary>[rtp_data_test] Complains about negotiation errors with m...</summary>
+    </bug>
+    <bug>
+      <id>563510</id>
+      <summary>[videocrop] 1x1 unit test fails</summary>
+    </bug>
+    <bug>
+      <id>564437</id>
+      <summary>rtpjpegdepay was unable to handle frame dimensions greate...</summary>
+    </bug>
+    <bug>
+      <id>564948</id>
+      <summary>Fix and clean up osxaudio</summary>
+    </bug>
+    <bug>
+      <id>565850</id>
+      <summary>mov files can contain xvid, fmp4 and ac3 tracks</summary>
+    </bug>
+    <bug>
+      <id>566616</id>
+      <summary>v4l2src: b/w support</summary>
+    </bug>
+    <bug>
+      <id>566843</id>
+      <summary>[pulse] Terminating an audio stream hangs the application</summary>
+    </bug>
+    <bug>
+      <id>567577</id>
+      <summary>[audiofx] Add generic IIR/FIR audio filter elements</summary>
+    </bug>
+    <bug>
+      <id>567642</id>
+      <summary>spectrum element has undocumented arbitrary limitation on...</summary>
+    </bug>
+    <bug>
+      <id>567746</id>
+      <summary>fix for 547227 created a ref loop</summary>
+    </bug>
+    <bug>
+      <id>567794</id>
+      <summary>[PATCH] Rework pulse plugin</summary>
+    </bug>
+    <bug>
+      <id>567800</id>
+      <summary>Mp4 created by Avidemux don't play.</summary>
+    </bug>
+    <bug>
+      <id>567853</id>
+      <summary>osxaudiosrc does not build on 10.4</summary>
+    </bug>
+    <bug>
+      <id>567874</id>
+      <summary>[audiofx] Echo/Reverb filter</summary>
+    </bug>
+    <bug>
+      <id>567955</id>
+      <summary>[spectrum] Need compensation for rounding errors</summary>
+    </bug>
+    <bug>
+      <id>567992</id>
+      <summary>[videocrop] wrong mouse navigation commands while cropping</summary>
+    </bug>
+    <bug>
+      <id>568395</id>
+      <summary>[audiofx] Rename audioreverb to audioecho</summary>
+    </bug>
+    <bug>
+      <id>568780</id>
+      <summary>elements/videocrop check fails</summary>
+    </bug>
+    <bug>
+      <id>568809</id>
+      <summary>Patch needed for building gst-plugins-good 0.10.13 on Sol...</summary>
+    </bug>
+    <bug>
+      <id>569820</id>
+      <summary>In some cases v4l2src element does not return correct norm</summary>
+    </bug>
+    <bug>
+      <id>570343</id>
+      <summary>equalizer bands != specified parameters</summary>
+    </bug>
+    <bug>
+      <id>570435</id>
+      <summary>Read Title element of Matroska files</summary>
+    </bug>
+    <bug>
+      <id>571038</id>
+      <summary>[osxvideosink] build fail</summary>
+    </bug>
+    <bug>
+      <id>571150</id>
+      <summary>aspectratiocrop : Memory leak</summary>
+    </bug>
+    <bug>
+      <id>571153</id>
+      <summary>[pulsemixer] compiler warnings (on ARM)</summary>
+    </bug>
+    <bug>
+      <id>571204</id>
+      <summary>[pulsesink] PA assertion failure triggers abort</summary>
+    </bug>
+    <bug>
+      <id>570581</id>
+      <summary>osxvideosink: non-embedded mode is badly broken and shoul...</summary>
+    </bug>
+    <bug>
+      <id>341752</id>
+      <summary>[rtspsrc] 500 Internal Server Error response with tagessc...</summary>
+    </bug>
+    <bug>
+      <id>420658</id>
+      <summary>gconfaudiosink is not behaving normally</summary>
+    </bug>
+    <bug>
+      <id>558554</id>
+      <summary>[avidemux] avidemux not recognizing certain uncompressed ...</summary>
+    </bug>
+    <bug>
+      <id>561580</id>
+      <summary>GStreamer does not play a specific WAV file</summary>
+    </bug>
+    <bug>
+      <id>563056</id>
+      <summary> &quot; rtpjpegdepay ! jpegdec &quot; doesnt works</summary>
+    </bug>
+    <bug>
+      <id>565441</id>
+      <summary>Smoke encoder doesn't set caps correctly</summary>
+    </bug>
+    <bug>
+      <id>567952</id>
+      <summary>videocrop: add b/w support</summary>
+    </bug>
+  </bugs>
+
+</release>
