@@ -40,9 +40,22 @@ fi
 
 moduledir=$modulebasedir/$module
 
-echo "Updating CVS"
+echo "Updating checkout"
 pushd $moduledir > /dev/null 2>&1
 git pull
+popd
+
+echo "Regenerating ChangeLog"
+# Check CHANGELOG_START tag exists
+if test ! -e $moduledir/.git/refs/tags/CHANGELOG_START
+then
+    echo "No CHANGELOG_START tag in module"
+    exit 1
+fi
+pushd $moduledir > /dev/null 2>&1
+changelog=ChangeLog
+python common/gen-changelog.py > $changelog
+git add $changelog
 popd
 
 release=src/htdocs/releases/$module/$version
@@ -110,6 +123,9 @@ else
   echo -e "\t  releasing $version, \"$name\"" >> $changelog
   echo >> $changelog
   cat $changelog.bak >> $changelog
+  pushd $moduledir > /dev/null 2>&1
+  git add ChangeLog
+  popd
 fi
 
 echo "Now press Enter to edit the next .xml file and update the list of features and API changes"
