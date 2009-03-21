@@ -3320,4 +3320,25 @@ or download a tarball at
 </p>
     </content>
   </item>
+
+<item>
+    <date>2009-03-20 00:00</date>
+<title>GStreamer Bad 0.10.11, Ugly 0.10.11 &amp; FFmpeg 0.10.7 stable releases</title>
+<content>
+<p>
+The GStreamer team is pleased to present new releases of the Bad, Ugly and FFmpeg Plugins modules in the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-bad/0.10.11.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-plugins-ugly/0.10.11.html">gst-plugins-ugly</a> and
+<a href="&site;/releases/gst-ffmpeg/0.10.7.html">gst-ffmpeg</a>
+or download tarballs for
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.11.tar.bz2">gst-plugins-bad</a> and
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.11.tar.bz2">gst-plugins-ugly</a> and
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.4.tar.bz2">gst-ffmpeg</a>
+</p>
+    </content>
+  </item>
+
 </news>

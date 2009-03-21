@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-ugly</module>
+  <module-fancy>GStreamer Ugly Plug-ins</module-fancy>
+  <name>Their swords and their knives</name>
+  <version>0.10.11</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Ugly Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"When you have to shoot, shoot.  Don't talk."</i>
+</p>
+<p>
+There are times when the world needs a color between black and white.
+Quality code to match the good's, but two-timing, backstabbing and ready to
+sell your freedom down the river.  These plug-ins might have a patent noose
+around their neck, or a lock-up license, or any other problem that makes you
+think twice about shipping them.
+</p>
+<p>
+We don't call them ugly because we like them less.  Does a mother love her
+son less because he's not as pretty as the other ones ? No  - she commends
+him on his great personality.  These plug-ins are the life of the party.
+And we'll still step in and set them straight if you report any unacceptable
+behaviour - because there are two kinds of people in the world, my friend:
+those with a rope around their neck and the people who do the cutting.
+</p>
+<p>
+This module contains a set of plug-ins that have good quality and correct
+functionality, but distributing them might pose problems.  The license
+on either the plug-ins or the supporting libraries might not be how we'd
+like. The code might be widely known to present patent problems.
+Distributors should check if they want/can ship these plug-ins.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Migrate twolame element from -bad</feature>
+    <feature>mp3parse improvements</feature>
+    <feature>Support scaling in the synaesthsia visualisation</feature>
+    <feature>Improve realmedia streaming, supporting RDT and pnm://</feature>
+    <feature>Improved ASF demuxing, including streaming-mode seeking</feature>
+    <feature>Support for 4:4:4 MPEG-2 video</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+      <contributors>
+	<person>Alessandro Decina</person>
+	<person>Cygwin Ports maintainer</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Hans de Goede</person>
+	<person>Jan Schmidt</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Smith</person>
+	<person>René Stadler</person>
+	<person>Roland Moser</person>
+	<person>Sebastian Dröge</person>
+	<person>Simon Holm Thøgersen</person>
+	<person>Stefan Kost</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Yves Lefebvre</person>
+	<person>Zaheer Merali</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  <bugs>
+    <bug>
+      <id>571146</id>
+      <summary>[mpeg2dec] Probably uses wrong strides for 4:2:2 and 4:4:...</summary>
+    </bug>
+    <bug>
+      <id>574461</id>
+      <summary>[mpeg2dec] Lower rank and make ffdec_mpeg2video PRIMARY</summary>
+    </bug>
+    <bug>
+      <id>454228</id>
+      <summary>[mpegdemux] problem with mark shuttleworth clip</summary>
+    </bug>
+    <bug>
+      <id>522699</id>
+      <summary>pnm:/something.ra streams can't be loaded in Totem from a...</summary>
+    </bug>
+    <bug>
+      <id>527112</id>
+      <summary>[real] Can't play several real audio streams</summary>
+    </bug>
+    <bug>
+      <id>556714</id>
+      <summary>Real Audio streams not working properly</summary>
+    </bug>
+    <bug>
+      <id>560348</id>
+      <summary>plus7.arte.tv plays slooooowly</summary>
+    </bug>
+    <bug>
+      <id>562065</id>
+      <summary>mpeg2dec does not handle STATE_SEQUENCE_MODIFIED from &gt; =l...</summary>
+    </bug>
+    <bug>
+      <id>562086</id>
+      <summary>mpeg2 stream crashes something in gstreamer</summary>
+    </bug>
+    <bug>
+      <id>564885</id>
+      <summary>[mpegstream] memory leak</summary>
+    </bug>
+    <bug>
+      <id>568836</id>
+      <summary>[asfdemux] add seeking support when operating in push mode</summary>
+    </bug>
+    <bug>
+      <id>569317</id>
+      <summary>[PLUGIN-MOVE] Move twolame plugin from -bad to -ugly</summary>
+    </bug>
+    <bug>
+      <id>575068</id>
+      <summary>[mp3parse] deadlock with accurate seeking</summary>
+    </bug>
+    <bug>
+      <id>335067</id>
+      <summary>Need RTP ASF depayloader</summary>
+    </bug>
+    <bug>
+      <id>571358</id>
+      <summary>[real] file playing stops immediately</summary>
+    </bug>
+  </bugs>
+</release>
