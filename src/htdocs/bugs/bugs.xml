@@ -10,6 +10,8 @@
     <component>gstreamer+%28core%29</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.23</milestone>
+      <milestone>0.10.22</milestone>
       <milestone>0.10.21</milestone>
       <milestone>0.10.20</milestone>
       <milestone>0.10.19</milestone>
@@ -72,6 +74,8 @@
     <component>gst-plugins-base</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.23</milestone>
+      <milestone>0.10.22</milestone>
       <milestone>0.10.21</milestone>
       <milestone>0.10.20</milestone>
       <milestone>0.10.19</milestone>
@@ -110,6 +114,12 @@
     <component>gst-plugins-good</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.15</milestone>
+      <milestone>0.10.14</milestone>
+      <milestone>0.10.13</milestone>
+      <milestone>0.10.12</milestone>
+      <milestone>0.10.11</milestone>
+      <milestone>0.10.10</milestone>
       <milestone>0.10.9</milestone>
       <milestone>0.10.8</milestone>
       <milestone>0.10.7</milestone>
@@ -136,6 +146,9 @@
     <component>gst-plugins-ugly</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.12</milestone>
+      <milestone>0.10.11</milestone>
+      <milestone>0.10.10</milestone>
       <milestone>0.10.9</milestone>
       <milestone>0.10.8</milestone>
       <milestone>0.10.7</milestone>
@@ -162,6 +175,10 @@
     <component>gst-plugins-bad</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.12</milestone>
+      <milestone>0.10.11</milestone>
+      <milestone>0.10.10</milestone>
+      <milestone>0.10.9</milestone>
       <milestone>0.10.8</milestone>
       <milestone>0.10.7</milestone>
       <milestone>0.10.6</milestone>
@@ -202,6 +219,8 @@
     <component>gst-python</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.15</milestone>
+      <milestone>0.10.14</milestone>
       <milestone>0.10.13</milestone>
       <milestone>0.10.12</milestone>
       <milestone>0.10.11</milestone>
@@ -235,6 +254,9 @@
     <component>gst-ffmpeg</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.8</milestone>
+      <milestone>0.10.7</milestone>
+      <milestone>0.10.6</milestone>
       <milestone>0.10.5</milestone>
       <milestone>0.10.4</milestone>
       <milestone>0.10.3</milestone>
@@ -263,6 +285,7 @@
     <component>gnonlin</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.11</milestone>
       <milestone>0.10.10</milestone>
       <milestone>0.10.9</milestone>
       <milestone>0.10.8</milestone>
