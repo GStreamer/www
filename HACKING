@@ -2,7 +2,7 @@ To hack on the GStreamer website, here's what to do:
 
 1) Check out the www module
 2) src/autogen.sh
-3) create src/entities by symlinking the applicable entities file
+3) create src/htdocs/entities.site by symlinking the applicable entities file
    (entities.site.xxx found in htdocs)
 	* entities.site.gnl is for building/running the site locally
 	* entities.site.fdo is for gstreamer freedesktop setup
