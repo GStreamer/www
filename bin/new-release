@@ -45,19 +45,6 @@ pushd $moduledir > /dev/null 2>&1
 git pull
 popd
 
-echo "Regenerating ChangeLog"
-# Check CHANGELOG_START tag exists
-if test ! -e $moduledir/.git/refs/tags/CHANGELOG_START
-then
-    echo "No CHANGELOG_START tag in module"
-    exit 1
-fi
-pushd $moduledir > /dev/null 2>&1
-changelog=ChangeLog
-python common/gen-changelog.py > $changelog
-git add $changelog
-popd
-
 release=src/htdocs/releases/$module/$version
 template=src/htdocs/releases/$module/template.xml
 if test ! -e $template
@@ -108,6 +95,19 @@ make > out 2>&1 || ( echo "Build failed"; exit 1 )
 popd
 
 # update Changelog
+echo "Regenerating ChangeLog"
+# Check CHANGELOG_START tag exists
+if test ! -e $moduledir/.git/refs/tags/CHANGELOG_START
+then
+    echo "No CHANGELOG_START tag in module"
+    exit 1
+fi
+pushd $moduledir > /dev/null 2>&1
+changelog=ChangeLog
+python common/gen-changelog.py > $changelog
+git add $changelog
+popd
+
 changelog=$moduledir/ChangeLog
 if grep "=== release $version ===" $changelog > /dev/null 2>&1
 then
