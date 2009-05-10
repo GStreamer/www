@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name>We built a wall</name>
+  <version>0.10.15</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Python Bindings.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+  </intro>
+  <features>
+      <feature>Support new API in core/base</feature>
+      <feature>Fixes for python 2.6</feature>
+      <feature>Other bug-fixes and improvements</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+      <contributors>
+	<person>Alessandro Decina</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Felipe Contreras</person>
+	<person>Jan Schmidt</person>
+	<person>Laszlo Pandy</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Olivier Crete</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thomas Vander Stichele</person>
+  </contributors>
+
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>304361</id>
+      <summary>Python plugin loader</summary>
+    </bug>
+    <bug>
+      <id>576145</id>
+      <summary>pygst programs skip python plugins on registry update</summary>
+    </bug>
+    <bug>
+      <id>514717</id>
+      <summary>memleak in Pad.set_blocked_async()</summary>
+    </bug>
+    <bug>
+      <id>571156</id>
+      <summary>gst_tag_get_type not wrapped</summary>
+    </bug>
+    <bug>
+      <id>571380</id>
+      <summary>Allow user to specify filename and line number for gst_de...</summary>
+    </bug>
+    <bug>
+      <id>572487</id>
+      <summary>Fix licensing screwups</summary>
+    </bug>
+    <bug>
+      <id>574251</id>
+      <summary>leaks the flow name</summary>
+    </bug>
+    <bug>
+      <id>574258</id>
+      <summary>_wrap_gst_install_plugins_sync might leak details</summary>
+    </bug>
+    <bug>
+      <id>574272</id>
+      <summary>Python plugin loader causes SIGSEGV if &quot; import gst &quot; fails</summary>
+    </bug>
+    <bug>
+      <id>576505</id>
+      <summary>not all gst_adapter_* methods are wrapped</summary>
+    </bug>
+    <bug>
+      <id>577735</id>
+      <summary>python bins with do_handle_message leak messages</summary>
+    </bug>
+    <bug>
+      <id>578435</id>
+      <summary>gst-python pkgconfig file lies about needing pygtk</summary>
+    </bug>
+    <bug>
+      <id>578731</id>
+      <summary>Python plugin loader deadlocks registry scanning</summary>
+    </bug>
+    <bug>
+      <id>578848</id>
+      <summary>Wrap new core/base API</summary>
+    </bug>
+    <bug>
+      <id>579183</id>
+      <summary>freshly created QUERY_SEEKING is immutable</summary>
+    </bug>
+    <bug>
+      <id>579325</id>
+      <summary>gstlibtoolimporter is not disted</summary>
+    </bug>
+    <bug>
+      <id>579383</id>
+      <summary>gst-python doesn't compile with glib &lt; = 2.16.0</summary>
+    </bug>
+    <bug>
+      <id>581546</id>
+      <summary>Elements do_query function is broken</summary>
+    </bug>
+    <bug>
+      <id>581729</id>
+      <summary>Fails to build with previous core/base releases (0.10.22)</summary>
+    </bug>
+    <bug>
+      <id>581737</id>
+      <summary>Python examples need to take the GDK lock</summary>
+    </bug>
+    <bug>
+      <id>579416</id>
+      <summary>Nasty gst-python deadlock</summary>
+    </bug>
+    <bug>
+      <id>579455</id>
+      <summary>gst.TIME_ARGS doesn't validate input</summary>
+    </bug>
+    <bug>
+      <id>576546</id>
+      <summary>Problems with Python 2.6</summary>
+    </bug>
+  </bugs>
+</release>

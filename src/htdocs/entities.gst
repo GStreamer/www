@@ -1,9 +1,9 @@
-<!ENTITY gst-version-stable "0.10.22">
+<!ENTITY gst-version-stable "0.10.23">
 <!ENTITY gst-plugins-version-stable "0.8.12">
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.7">
-<!ENTITY gst-python-version-stable "0.10.14">
-<!ENTITY gst-plugins-base-version-stable "0.10.22">
+<!ENTITY gst-python-version-stable "0.10.15">
+<!ENTITY gst-plugins-base-version-stable "0.10.23">
 <!ENTITY gst-plugins-good-version-stable "0.10.13">
 <!ENTITY gst-plugins-ugly-version-stable "0.10.11">
 <!ENTITY gst-plugins-bad-version-stable "0.10.11">

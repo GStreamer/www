@@ -3340,5 +3340,23 @@ or download tarballs for
 </p>
     </content>
   </item>
-
+<item>
+    <date>2009-05-10 0:00</date>
+<title>GStreamer Core 0.10.23, Base Plugins 0.10.23 and Python Bindings 0.10.15 stable release</title>
+<content>
+<p>
+The GStreamer team is relieved to announce new releases of Core, the Base Plugins module and the Python Bindings for the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.23.html">gstreamer</a>,
+<a href="&site;/releases/gst-plugins-base/0.10.23.html">gst-plugins-base</a> and
+<a href="&site;/releases/gst-python/0.10.15.html">gst-python</a>
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.23.tar.bz2">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.23.tar.bz2">gst-plugins-base</a> and
+<a href="&site;/src/gst-python/gst-python-0.10.15.tar.bz2">gst-python</a>
+    </p>
+    </content>
+</item>
 </news>
