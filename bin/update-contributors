@@ -54,11 +54,11 @@ def main():
     for name in names:
         list.append("\t<person>%s</person>" % name)
     contr = "\n".join(list) + "\n"
-    matcher = re.compile('(.*)<contributors>.*</contributors>(.*)',
+    matcher = re.compile('(.*)<contributors>.*</contributors>\s*(.*)',
         re.DOTALL)
     match = matcher.search(doc)
     pre = match.expand('\\1') + "  <contributors>\n"
-    post = "  </contributors>\n" + match.expand('\\2')
+    post = "  </contributors>\n\n" + match.expand('\\2')
 
     target = release + ".bak"
     os.rename(release, target)
