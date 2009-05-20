@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plug-ins</module-fancy>
+  <name>More than I can handle</name>
+  <version>0.10.12</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Bad Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plug-ins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plug-ins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plug-ins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+      <feature>Presets support in several elements</feature>
+      <feature>Support ITV MPEG-TS streams</feature>
+      <feature>New element: flvmux</feature>
+      <feature>New element: osxvideosrc</feature>
+      <feature>Fixes in RTP elements</feature>
+      <feature>camerabin fixes</feature>
+      <feature>Improved QT/mp4 muxing</feature>
+    <feature>xdgmime based content type guessing</feature>
+    <feature>deinterlace2 moved to the Good plugins (replacing deinterlace)</feature>
+    <feature>Support for MXF muxing, and improved MXF demuxing</feature>
+    <feature>Greatly improved DVD playback</feature>
+    <feature>DirectDraw element moved back from Good plugins</feature>
+    <feature>Many other bug fixes and improvements</feature>
+  </features>
+
+  <applications>
+  </applications>
+    <contributors>
+	<person>Alan Falloon</person>
+	<person>Alessandro Decina</person>
+	<person>Andy Wingo</person>
+	<person>Arnout Vandecappelle</person>
+	<person>Christian Schaller</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Felipe Contreras</person>
+	<person>Haakon Sporsheim</person>
+	<person>Jan Schmidt</person>
+	<person>Janin Kolenc</person>
+	<person>Julien Moutte</person>
+	<person>Lasse Laukkanen</person>
+	<person>Laurent Glayal</person>
+	<person>Marc-Andre Lureau</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Smith</person>
+	<person>Ole André Vadla Ravnås</person>
+	<person>Olivier Crête</person>
+	<person>René Stadler</person>
+	<person>Rov Juvano</person>
+	<person>Sebastian Dröge</person>
+	<person>Sergey Scobich</person>
+	<person>Stefan Kost</person>
+	<person>Sébastien Moutte</person>
+	<person>Thiago Santos</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tristan Matthews</person>
+	<person>Vincent Genieux</person>
+	<person>Vincent Torri</person>
+	<person>Wim Taymans</person>
+	<person>Zaheer Abbas Merali</person>
+	<person>Руслан Ижбулатов</person>
+  </contributors>
+
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>573852</id>
+      <summary>Update celt to 0.5.x</summary>
+    </bug>
+    <bug>
+      <id>574401</id>
+      <summary>metadatamux fails^WIS failure</summary>
+    </bug>
+    <bug>
+      <id>580091</id>
+      <summary>soundtouch plugin fails to load</summary>
+    </bug>
+    <bug>
+      <id>153684</id>
+      <summary>[osxvideosrc] Mac users needs an osxvideosrc</summary>
+    </bug>
+    <bug>
+      <id>537700</id>
+      <summary>[scaletempo] Scale audio tempo in sync with playback rate</summary>
+    </bug>
+    <bug>
+      <id>569437</id>
+      <summary>mpegtsparse: flow error or crashes while dynamicly changi...</summary>
+    </bug>
+    <bug>
+      <id>569673</id>
+      <summary>[Mpegtsparse] PAT changes not always signaled</summary>
+    </bug>
+    <bug>
+      <id>569781</id>
+      <summary>[Mpegtsparse] drop of valid TS packets</summary>
+    </bug>
+    <bug>
+      <id>573595</id>
+      <summary>plugins-bad mingw ports</summary>
+    </bug>
+    <bug>
+      <id>573846</id>
+      <summary>Check for soundtouch-1.4 too</summary>
+    </bug>
+    <bug>
+      <id>573847</id>
+      <summary>Use SDL static-libs for conftest and libs for gstsdl*</summary>
+    </bug>
+    <bug>
+      <id>573848</id>
+      <summary>Use native CPU number detection in mpeg2enc</summary>
+    </bug>
+    <bug>
+      <id>573849</id>
+      <summary>modplug's sndfile.h conflicts with libsndfile's sndfile.h</summary>
+    </bug>
+    <bug>
+      <id>575388</id>
+      <summary>[aacparse] deadlocks in busy loop when seeking</summary>
+    </bug>
+    <bug>
+      <id>575736</id>
+      <summary>mpeg2enc's bitrate parameter does not work properly</summary>
+    </bug>
+    <bug>
+      <id>576408</id>
+      <summary>[playbin2] Deadlock when using resindvd as source</summary>
+    </bug>
+    <bug>
+      <id>577690</id>
+      <summary>rtpdtmfmux: missing pad unref</summary>
+    </bug>
+    <bug>
+      <id>577864</id>
+      <summary>[residvd] dvdnav version requirements should be higher</summary>
+    </bug>
+    <bug>
+      <id>578112</id>
+      <summary>x264enc: I-frame request</summary>
+    </bug>
+    <bug>
+      <id>578562</id>
+      <summary>dshowdecwrapper missing check for GST_DISABLE_GST_DEBUG</summary>
+    </bug>
+    <bug>
+      <id>578563</id>
+      <summary>win32 export files are not disted</summary>
+    </bug>
+    <bug>
+      <id>580133</id>
+      <summary>Regression in baseparse since last release</summary>
+    </bug>
+    <bug>
+      <id>580144</id>
+      <summary>emit notify::internal-ssrc when there is a ssrc collision</summary>
+    </bug>
+    <bug>
+      <id>580786</id>
+      <summary>[flvmux] &quot; uninitialized variable &quot; compiler warning</summary>
+    </bug>
+    <bug>
+      <id>580901</id>
+      <summary>Uninitialized variable may be used in fpsdisplaysink.c</summary>
+    </bug>
+    <bug>
+      <id>581375</id>
+      <summary>rtpssrcdemux crashes on SR-less rtcp packets</summary>
+    </bug>
+    <bug>
+      <id>582013</id>
+      <summary>uninitialized var in mxfmux.c prevents gst-plugins-bad bu...</summary>
+    </bug>
+    <bug>
+      <id>582074</id>
+      <summary>[faad] Fails to build with faad 2.6 (misdetected as 2.7)</summary>
+    </bug>
+    <bug>
+      <id>582208</id>
+      <summary>[PATCH] fix for soundtouch-1.4</summary>
+    </bug>
+    <bug>
+      <id>582483</id>
+      <summary>y4menc doesn't pass timestamps on</summary>
+    </bug>
+    <bug>
+      <id>582656</id>
+      <summary>[mxfdemux] Fix deadlock when querying from the pad-added ...</summary>
+    </bug>
+    <bug>
+      <id>582702</id>
+      <summary>qtmux: crash in atom_moov_add_blob_tag</summary>
+    </bug>
+    <bug>
+      <id>583337</id>
+      <summary>[mxfmux] Wrong layout for non-interlaced formats</summary>
+    </bug>
+    <bug>
+      <id>580585</id>
+      <summary>rtpmux memleak</summary>
+    </bug>
+    <bug>
+      <id>577843</id>
+      <summary>input-selector causes problems with DVD menus in playbin2</summary>
+    </bug>
+    <bug>
+      <id>581593</id>
+      <summary>gppmux doesn't support MPEG4 part 2 in sink caps</summary>
+    </bug>
+    <bug>
+      <id>575284</id>
+      <summary>add auto-connect-forced mode to jackaudiosrc and jackaudi...</summary>
+    </bug>
+    <bug>
+      <id>576021</id>
+      <summary>On Windows qtmux can't write files longer than 2-4 GiB, u...</summary>
+    </bug>
+    <bug>
+      <id>576712</id>
+      <summary>Output-selector keeps reference to latest buffer when cha...</summary>
+    </bug>
+    <bug>
+      <id>581427</id>
+      <summary>[mpeg4videoparse] config buffer is leaked</summary>
+    </bug>
+  </bugs>
+</release>
