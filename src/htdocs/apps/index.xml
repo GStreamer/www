@@ -135,6 +135,10 @@ panel applet for playing internet radio streams.
 <h2>Listen</h2>
 <p><a href="http://listengnome.free.fr/">Listen</a> is a GNOME music player written in Python</p>
 
+<h2>LongoMatch</h2>
+<p><a href="https://www.ylatuya.es">LongoMatch</a> is a cross-platform
+sports video analysis tool based on Mono, Gtk+ and GStreamer.</p>
+
 <h2>Marlin</h2>
 <p><a href="http://marlin.sourceforge.net/">marlin</a> is a sample editor for Gnome.</p>
 
