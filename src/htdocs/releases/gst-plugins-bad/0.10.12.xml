@@ -65,7 +65,7 @@ Other modules containing plug-ins are:
   </intro>
   <features>
       <feature>Presets support in several elements</feature>
-      <feature>Support ITV MPEG-TS streams</feature>
+      <feature>Support ITV HD MPEG-TS streams</feature>
       <feature>New element: flvmux</feature>
       <feature>New element: osxvideosrc</feature>
       <feature>Fixes in RTP elements</feature>
