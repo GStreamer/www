@@ -8,6 +8,9 @@ umask 0002
 chown -R :gstreamer * 2> /dev/null
 chmod -R g+w * 2> /dev/null
 git pull
+find . -type d -print0 | xargs -0 chmod g+ws 2> /dev/null
 src/autogen.sh
 make clean
 make
+chown -R :gstreamer * 2> /dev/null
+chmod -R g+w * 2> /dev/null
