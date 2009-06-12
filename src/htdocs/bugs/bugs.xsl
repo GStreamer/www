@@ -122,6 +122,39 @@ All bugs changed within the last
   </td>
 </tr>
 <tr>
+  <td colspan="6">
+  <!-- This might come in handy when someone figures out how to make it
+       find bugs where the short_desc OR the long_desc matches the search terms
+       rather than all bugs where both match. Add this to the form element:
+         onSubmit="CopyValue(short_desc,long_desc)"
+       For now we just search the bug titles.
+  <script>
+   function CopyValue(obj1, obj2)
+   {
+     var visibleField = obj1;
+     obj2.value = visibleField.value;
+   }
+  </script>
+  -->
+  <form name="f" action="http://bugzilla.gnome.org/buglist.cgi" method="get">
+    <p>Search for GStreamer bugs:<br/>
+    <input type="hidden" name="query_format" value="advanced" />
+    <input type="hidden" name="product" value="GStreamer" />
+    <input type="hidden" name="bug_status" value="UNCONFIRMED" />
+    <input type="hidden" name="bug_status" value="NEW" />
+    <input type="hidden" name="bug_status" value="ASSIGNED" />
+    <input type="hidden" name="bug_status" value="REOPENED" />
+    <input type="hidden" name="bug_status" value="NEEDINFO" />
+    <input type="hidden" name="long_desc_type" value="allwordssubstr" />
+    <input type="hidden" name="long_desc" value="" id="long_desc" />
+    <input type="hidden" name="short_desc_type" value="allwordssubstr" />
+    <input type="text" name="short_desc" id="short_desc" />
+    <input id="show" type="submit" value="Search" />
+    </p>
+  </form>
+  </td>
+</tr>
+<tr>
 <xsl:apply-templates />
 </tr>
 </table>
