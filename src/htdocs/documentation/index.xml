@@ -84,6 +84,16 @@
 <!-- <td colspan="3"><a href="">HTML</a></td> -->
 <!-- <td colspan="3"><a href="">HTML</a></td> -->
 </tr>
+
+<tr>
+ <td>GStreamer Wiki (see esp.
+   <a href="http://gstreamer.freedesktop.org/wiki/ReleasePlanning">ReleasePlanning</a> and
+   <a href="http://gstreamer.freedesktop.org/wiki/SubmittingPatches">SubmittingPatches</a>)
+ </td>
+ <td colspan="3"><a href="http://gstreamer.freedesktop.org/wiki/">HTML</a></td>
+<!-- <td colspan="3"><a href="">HTML</a></td> -->
+<!-- <td colspan="3"><a href="">HTML</a></td> -->
+</tr>
 </table>
 
 <table width="95%" border="1" cellspacing="0" cellpadding="2">
