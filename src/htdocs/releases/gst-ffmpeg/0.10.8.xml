@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-ffmpeg</module>
+  <module-fancy>GStreamer FFmpeg Plug-ins</module-fancy>
+  <name>Brilliant in the morning</name>
+  <version>0.10.8</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer FFmpeg Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+This module contains plug-ins using libraries from the FFmpeg project.
+</p>
+
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+    <feature>Ability to force key-frames in video encoders</feature>
+    <feature>Better timestamp handling in decoders</feature>
+    <feature>Improved muxer wrapping</feature>
+    <feature>Code cleanups and refactoring</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+      <contributors>
+	<person>Branko Čibej</person>
+	<person>Christian Schaller</person>
+	<person>David Hoyt</person>
+	<person>Edward Hervey</person>
+	<person>Felipe Contreras</person>
+	<person>Jan Schmidt</person>
+	<person>Janin Kolenc</person>
+	<person>Jordi Mas</person>
+	<person>Marc-Andre Lureau</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Vanista Herion</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<p>In addition to the above contributors, we would like to extend our
+thanks to the FFmpeg developers without which these plugins would have
+no reason to exist.</p>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>574661</id>
+      <summary>[gstffmpegdec] Wrong usage of parsers</summary>
+    </bug>
+    <bug>
+      <id>570815</id>
+      <summary>ffmenc_mpeg4 allows its bitrate property to be changed wi...</summary>
+    </bug>
+    <bug>
+      <id>574728</id>
+      <summary>Use new interlaced support from -base</summary>
+    </bug>
+    <bug>
+      <id>575678</id>
+      <summary>[ffmux] Set caps on the srcpad / output buffers</summary>
+    </bug>
+    <bug>
+      <id>575715</id>
+      <summary>[ffenc_h263] Properties</summary>
+    </bug>
+    <bug>
+      <id>576126</id>
+      <summary>av_iformat_next and av_oformat_next compile errors using ...</summary>
+    </bug>
+    <bug>
+      <id>577879</id>
+      <summary>Bad check in configure.ac</summary>
+    </bug>
+    <bug>
+      <id>578278</id>
+      <summary>gst-ffmpeg: assign offsets (from upstream) to outgoing bu...</summary>
+    </bug>
+    <bug>
+      <id>580796</id>
+      <summary>[ffmpegdec] out-of-order timestamps</summary>
+    </bug>
+    <bug>
+      <id>580810</id>
+      <summary>Stuttering and crash with some H.264 files</summary>
+    </bug>
+    <bug>
+      <id>581009</id>
+      <summary>gst-ffmpeg needs presets support</summary>
+    </bug>
+    <bug>
+      <id>585845</id>
+      <summary>0.10.7.2 breaks swfdec</summary>
+    </bug>
+    <bug>
+      <id>587297</id>
+      <summary>build failure on macosx</summary>
+    </bug>
+    <bug>
+      <id>575709</id>
+      <summary>Request a key frame</summary>
+    </bug>
+    <bug>
+      <id>584291</id>
+      <summary>Cannot create elements after calling  gst_update_registry</summary>
+    </bug>
+    <bug>
+      <id>584399</id>
+      <summary>FFmpeg libraries are included in incorrect order when ext...</summary>
+    </bug>
+  </bugs>
+
+</release>
