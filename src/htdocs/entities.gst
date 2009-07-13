@@ -7,6 +7,7 @@
 <!ENTITY gst-plugins-good-version-stable "0.10.15">
 <!ENTITY gst-plugins-ugly-version-stable "0.10.12">
 <!ENTITY gst-plugins-bad-version-stable "0.10.13">
+<!ENTITY gst-plugins-gl-version-stable "0.10.1">
 <!ENTITY gnonlin-version-stable "0.10.11">
 
 <!ENTITY gst-version-devel "git master">
@@ -14,6 +15,7 @@
 <!ENTITY gst-plugins-good-version-devel "git master">
 <!ENTITY gst-plugins-ugly-version-devel "git master">
 <!ENTITY gst-plugins-bad-version-devel "git master">
+<!ENTITY gst-plugins-gl-version-devel "git master">
 
 <!ENTITY gst-ffmpeg-version-devel "git master">
 <!ENTITY gst-python-version-devel "git master">

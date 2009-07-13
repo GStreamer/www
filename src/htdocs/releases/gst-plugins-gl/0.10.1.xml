@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-gl</module>
+  <module-fancy>GStreamer OpenGL Plug-ins</module-fancy>
+  <name>La Fromage De La Belle France</name>
+  <version>0.10.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the GStreamer OpenGL Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p><strong>Please note that at this time, the GStreamer GL plugins
+        module is not considered API/ABI stable, and public interfaces
+        may change from release to release.</strong>
+</p>
+
+<p>
+This module contains integration libraries and plug-ins for using OpenGL within
+GStreamer pipelines.
+
+This module contains elements for, among others:
+<ul>
+  <li>output: glimagesink</li>
+  <li>adapters: glupload, gldownload</li>
+  <li>video processing: gldeinterlace, glcolorscale</li>
+  <li>GL effects: glfiltersobel, glfilterblur, gleffects, others</li>
+  <li>sources: gltestsrc</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Initial release of gst-plugins-gl</feature>
+    <feature>Integration with standard GStreamer video buffers</feature>
+    <feature>Various OpenGL effects and filters</feature>
+    <feature>Direct GL output via glimagesink</feature>
+  </features>
+
+  <applications>
+  </applications>
+        <contributors>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Felipe Contreras</person>
+	<person>Filippo Argiolas</person>
+	<person>Jan Schmidt</person>
+	<person>Julien Isorce</person>
+	<person>Marc-Andre Lureau</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  <bugs>
+  </bugs>
+
+</release>

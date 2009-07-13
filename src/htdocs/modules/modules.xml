@@ -107,6 +107,21 @@ real live maintainer, or some actual wide use.
     </versions>
   </module>
 
+  <module>
+    <id>gst-plugins-gl</id>
+    <title>GStreamer OpenGL Plug-ins</title>
+    <blurb>plug-in and helper libraries for OpenGL integration</blurb>
+    <description>
+        The GStreamer OpenGL module provides helper libraries, base classes
+        and elements for integrating with OpenGL and using it to perform video
+        display and processing.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <stable>&gst-plugins-gl-version-stable;</stable>
+      <devel>&gst-plugins-gl-version-devel;</devel>
+    </versions>
+  </module>
 
   <module>
     <id>gst-ffmpeg</id>

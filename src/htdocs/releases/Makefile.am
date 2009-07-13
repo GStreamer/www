@@ -12,9 +12,10 @@ SUBDIRS = \
 	gst-monkeysaudio \
 	gst-player \
 	gst-plugins \
+	gst-plugins-bad \
 	gst-plugins-base \
+	gst-plugins-gl \
 	gst-plugins-good \
 	gst-plugins-ugly \
-	gst-plugins-bad \
 	gst-python \
 	gstreamer

@@ -1,7 +1,7 @@
 built_pages = index.html licensing.html rtp.html plugins.html splitup.html gstreamer010.html
 
 plugins.xml:
-	for m in gstreamer gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad; do \
+	for m in gstreamer gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad gst-plugins-gl; do \
 	  rm -rf $$m-checkouts.git $$m\-checkouts\-plugins-inspect > /dev/null; \
 	  git clone --depth 1 git://anongit.freedesktop.org/gstreamer/$$m $$m-checkouts.git; \
 	  ln -s $$m-checkouts.git/docs/plugins/inspect $$m\-checkouts\-plugins-inspect; \
