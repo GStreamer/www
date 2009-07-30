@@ -3,7 +3,7 @@
 <release>
   <module>gst-plugins-gl</module>
   <module-fancy>GStreamer OpenGL Plug-ins</module-fancy>
-  <name>La Fromage De La Belle France</name>
+  <name>Le Fromage De La Belle France</name>
   <version>0.10.1</version>
 
   <intro>
