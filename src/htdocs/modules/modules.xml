@@ -25,21 +25,6 @@ and core elements.
   </module>
 
   <module>
-    <id>gst-plugins</id>
-    <title>GStreamer Plug-ins</title>
-    <blurb>additional elements</blurb>
-    <description>
-GStreamer Plug-ins contains the media-specific plugins and elements.
-A wide range of video and audio decoders, encoders, and filters are included.
-    </description>
-    <maintainer>GStreamer Team</maintainer>
-    <versions>
-      <stable>&gst-plugins-version-stable;</stable>
-      <devel>DISCONTINUED</devel>
-    </versions>
-  </module>
-
-  <module>
     <id>gst-plugins-base</id>
     <title>GStreamer Base Plug-ins</title>
     <blurb>an essential exemplary set of elements</blurb>
@@ -156,6 +141,49 @@ timeline-oriented use of GStreamer makes sense.
   </module>
 
   <module>
+    <id>gst-python</id>
+    <blurb>python bindings</blurb>
+    <title>GStreamer Python Bindings</title>
+    <description>
+GStreamer python bindings. You can find API docs for the Python bindings at <a href="http://pygstdocs.berlios.de/">this website</a>.
+    </description>
+    <maintainer>Edward Hervey</maintainer>
+    <versions>
+      <stable>&gst-python-version-stable;</stable>
+      <devel>&gst-python-version-devel;</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gst-rtsp-server</id>
+    <blurb>RTSP server</blurb>
+    <title>GStreamer RTSP Server</title>
+    <description>
+RTSP server based on GStreamer
+    </description>
+    <maintainer>Wim Taymans</maintainer>
+    <versions>
+      <stable>see <a href="http://people.freedesktop.org/~wtay/">here</a></stable>
+      <devel>see <a href="http://people.freedesktop.org/~wtay/">here</a></devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gst-plugins</id>
+    <title>GStreamer Plug-ins</title>
+    <blurb>additional elements</blurb>
+    <description>
+GStreamer Plug-ins contains the media-specific plugins and elements.
+A wide range of video and audio decoders, encoders, and filters are included.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <stable>0.8.12</stable>
+      <devel>N/A</devel>
+    </versions>
+  </module>
+
+  <module>
     <id>gst-editor</id>
     <blurb>graphical pipeline editor</blurb>
     <title>GStreamer Editor</title>
@@ -256,6 +284,7 @@ HREF="http://plug-in.org.uk/">LADSPA</A> gong model reverb filter.</li>
    </screenshot>
     <versions>
       <stable>0.8.0</stable>
+      <devel>N/A</devel>
     </versions>
   </module>
 
@@ -268,22 +297,8 @@ GStreamer Recorder is an application for recording audio and/or video.
     </description>
     <maintainer>Ronald Bultje</maintainer>
     <versions>
-      <stable>None</stable>
-      <devel>None</devel>
-    </versions>
-  </module>
-
-  <module>
-    <id>gst-python</id>
-    <blurb>python bindings</blurb>
-    <title>GStreamer Python Bindings</title>
-    <description>
-GStreamer python bindings. You can find API docs for the Python bindings at <a href="http://pygstdocs.berlios.de/">this website</a>.
-    </description>
-    <maintainer>Edward Hervey</maintainer>
-    <versions>
-      <stable>&gst-python-version-stable;</stable>
-      <devel>&gst-python-version-devel;</devel>
+      <stable>N/A</stable>
+      <devel>N/A</devel>
     </versions>
   </module>
 
@@ -292,11 +307,12 @@ GStreamer python bindings. You can find API docs for the Python bindings at <a h
     <blurb>Monkey's Audio plug-in</blurb>
     <title>GStreamer Monkey's Audio Plug-in</title>
     <description>
-GStreamer has a plug-in for the Monkey's Audio format.
+GStreamer has a plug-in for the Monkey's Audio format (replaced by gst-ffmpeg).
     </description>
     <maintainer>Jérémy Simon</maintainer>
     <versions>
-      <stable>0.8.0 (not ported to GStreamer-0.10 yet)</stable>
+      <stable>0.8.0</stable>
+      <devel>N/A</devel>
     </versions>
   </module>
 
