@@ -8,7 +8,7 @@
 <!ENTITY gst-plugins-ugly-version-stable "0.10.12">
 <!ENTITY gst-plugins-bad-version-stable "0.10.13">
 <!ENTITY gst-plugins-gl-version-stable "0.10.1">
-<!ENTITY gnonlin-version-stable "0.10.11">
+<!ENTITY gnonlin-version-stable "0.10.12">
 
 <!ENTITY gst-version-devel "git master">
 <!ENTITY gst-plugins-base-version-devel "git master">

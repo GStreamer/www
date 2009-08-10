@@ -3461,4 +3461,23 @@ or download tarballs for
     </p>
     </content>
 </item>
+
+  <item>
+    <date>2009-08-10 17:10</date>
+    <title>GNonLin 0.10.12 release</title>
+    <content>
+<p>
+The GStreamer team is proud to announce a new release in the 0.10.x stable
+series of GNonLin.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gnonlin/0.10.12.html">gnonlin</a>,
+or download tarballs for
+<a href="&site;/src/gnonlin/gnonlin-0.10.12.tar.bz2">gnonlin</a>.
+</p>
+    </content>
+  </item>
+<item>
+
 </news>
