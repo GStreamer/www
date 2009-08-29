@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plug-ins</module-fancy>
+  <name>Your New Best Friends</name>
+  <version>0.10.14</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Bad Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plug-ins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plug-ins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plug-ins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Moved rtpmanager to -good</feature>
+    <feature>Moved dirac elements from schroedinger to gst-plugins-bad (new schroedinger release without the gstreamer elements will follow shortly)</feature>
+    <feature>amrwb: Remove AMR-WB parser and decoder and rename encoder plugin from amrwb to amrwbenc (the removed elements will re-appear in the next -ugly release; no migration strategy provided in this case because of the 'special' status of the amrwb plugin)</feature>
+    <feature>asfmux, rtpasfpay: add ASF muxer and windows media payloader</feature>
+    <feature>basevideo: add experimental video base class library/API</feature>
+    <feature>camerabin: lots of fixes and improvements</feature>
+    <feature>capssetter: new element for debugging purposes</feature>
+    <feature>directdraw: Implement GstNavigation interface</feature>
+    <feature>directshow: refactor and improve dshowsrcwrapper, dshowideosrc, dshowaudiosrc</feature>
+    <feature>frei0r: wrapper for frei0r video filter plugins</feature>
+    <feature>gme: add libgme plugin which supersedes the existing OpenSPC spc plugin</feature>
+    <feature>Implement SEEKING query in more demuxers and decoders (notably mpeg-ps/mpeg-ts, mxf, musepack, rawparse)</feature>
+    <feature>kate: add kate subtitle encoder, decoder and overlay</feature>
+    <feature>mimic: lots of fixes for mimenc and mimdec; add "paused mode"</feature>
+    <feature>mpegpsdemux: added caps for AAC and fixed playback of a clip with LPCM</feature>
+    <feature>mpegtsdemux: added VC1, EAC3 and LPCM related to blueray/hdmv</feature>
+    <feature>qtmux: handle pixel-aspect-ratio; misc. other fixes and improvements</feature>
+    <feature>shapewipe: support ARGB/RGBA for video input/output; fix for still images</feature>
+    <feature>vdpau: add experimental vdpau plugin</feature>
+  </features>
+
+  <applications>
+  </applications>
+      <contributors>
+	<person>Aleksey Yulin</person>
+	<person>Andoni Morales</person>
+	<person>Arek Korbik</person>
+	<person>Austin Lund</person>
+	<person>Branko Subasic</person>
+	<person>Carl-Anton Ingmarsson</person>
+	<person>Changwoo Ryu</person>
+	<person>Christian Schaller</person>
+	<person>Dave Robillard</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Garrett D'Amore</person>
+	<person>Iago Toral</person>
+	<person>Jan Schmidt</person>
+	<person>Jan Urbanski</person>
+	<person>Joni Valtanen</person>
+	<person>Josep Torra</person>
+	<person>Julien Isorce</person>
+	<person>Lasse Laukkanen</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Matijs van Zuijlen</person>
+	<person>Maximilian Högner</person>
+	<person>Michael Pyne</person>
+	<person>Miguel Àngel Farré</person>
+	<person>Mikael Magnusson</person>
+	<person>Olivier Crête</person>
+	<person>Руслан Ижбулатов</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Pölsterl</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tommi Myöhänen</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Wim Taymans</person>
+	<person>Zaheer Abbas Merali</person>
+	<person>Zaheer Merali</person>
+	<person>Zeeshan Ali (Khattak)</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>587819</id>
+      <summary>[mpegtsparse] crash because of double free</summary>
+    </bug>
+    <bug>
+      <id>344129</id>
+      <summary>[directsoundsrc] Plugin for Directsound source</summary>
+    </bug>
+    <bug>
+      <id>377784</id>
+      <summary>xvidenc should output video/mpeg</summary>
+    </bug>
+    <bug>
+      <id>540128</id>
+      <summary>Totem freeze with short HDV file</summary>
+    </bug>
+    <bug>
+      <id>541962</id>
+      <summary>[directdrawsink] crash when exposing in GST_STATE_READY</summary>
+    </bug>
+    <bug>
+      <id>561241</id>
+      <summary>metadatademux pad activation deadlock</summary>
+    </bug>
+    <bug>
+      <id>561752</id>
+      <summary>GstRtpBin implement Release pad functions</summary>
+    </bug>
+    <bug>
+      <id>575672</id>
+      <summary>[mpegtsdemux] crashes when souphttpsrc is used as a stream source</summary>
+    </bug>
+    <bug>
+      <id>575818</id>
+      <summary>[ivorbisdec] extract vorbis tags</summary>
+    </bug>
+    <bug>
+      <id>576800</id>
+      <summary>gstreamer SPC plugin requires non-portable x86 code</summary>
+    </bug>
+    <bug>
+      <id>583470</id>
+      <summary>mpegtsparse: Old pes pids not removed when receiving PAT table</summary>
+    </bug>
+    <bug>
+      <id>584252</id>
+      <summary>enhancements to OSSv4 plugin</summary>
+    </bug>
+    <bug>
+      <id>584897</id>
+      <summary>Remove AMR plugin as it has been replaced by updated OpenCore plugin</summary>
+    </bug>
+    <bug>
+      <id>585839</id>
+      <summary>Support for sending RTP packets as GstBufferList in the gstrtpbin</summary>
+    </bug>
+    <bug>
+      <id>586019</id>
+      <summary>[mxfdemux] stray semicolons after if statement</summary>
+    </bug>
+    <bug>
+      <id>586097</id>
+      <summary>GStreamer DVB tuning too quick for some devices</summary>
+    </bug>
+    <bug>
+      <id>586956</id>
+      <summary>Include &lt; sys/time.h &gt; only if it is present in the system</summary>
+    </bug>
+    <bug>
+      <id>587023</id>
+      <summary>[freeze] disable plugin static lib</summary>
+    </bug>
+    <bug>
+      <id>587595</id>
+      <summary>[dshowsrcwrapper] start refactoring</summary>
+    </bug>
+    <bug>
+      <id>588638</id>
+      <summary>[katedec] add x-dvd-subpicture output</summary>
+    </bug>
+    <bug>
+      <id>588944</id>
+      <summary>mpegpsdemux doesn't support seeking with GST_FORMAT_TIME anymore</summary>
+    </bug>
+    <bug>
+      <id>590030</id>
+      <summary>rtpsource: Incoming buffers do not always have caps</summary>
+    </bug>
+    <bug>
+      <id>590208</id>
+      <summary>GstNavigation interface support for directdrawsink</summary>
+    </bug>
+    <bug>
+      <id>590360</id>
+      <summary>[qtmux] requires endianness even if the samples are 8bit</summary>
+    </bug>
+    <bug>
+      <id>590446</id>
+      <summary>[mpegdemux] MPEG TS with A52 not seekable</summary>
+    </bug>
+    <bug>
+      <id>590797</id>
+      <summary>Memory leak in rtpsource.c</summary>
+    </bug>
+    <bug>
+      <id>591440</id>
+      <summary>rtpdtmfsrc event cleanup</summary>
+    </bug>
+    <bug>
+      <id>591538</id>
+      <summary>generic states test fails (vdpau, mimenc)</summary>
+    </bug>
+    <bug>
+      <id>591610</id>
+      <summary>asfmux: messing up with sinkpads</summary>
+    </bug>
+    <bug>
+      <id>591927</id>
+      <summary>REQUIREMENTS is out of date</summary>
+    </bug>
+    <bug>
+      <id>592259</id>
+      <summary>mimenc: fourcc written incorrectly</summary>
+    </bug>
+    <bug>
+      <id>593024</id>
+      <summary>regression in schroenc streamheader initialization</summary>
+    </bug>
+    <bug>
+      <id>593063</id>
+      <summary>resindvd and rawparse do not use correct base LDFLAGS</summary>
+    </bug>
+    <bug>
+      <id>593068</id>
+      <summary>Disarray in directsoundsrc/directdrawsink</summary>
+    </bug>
+    <bug>
+      <id>586354</id>
+      <summary>[h264parse] blocked in infinite loop while parsing a corrupted frame</summary>
+    </bug>
+  </bugs>
+</release>
