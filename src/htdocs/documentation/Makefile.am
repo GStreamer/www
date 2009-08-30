@@ -1,6 +1,6 @@
 built_pages = index.html licensing.html rtp.html plugins.html splitup.html gstreamer010.html
 
-CHECKOUT_DIR = $(abs_top_builddir)/cache/plugin-inspect-checkouts
+CHECKOUT_DIR = $(top_builddir)/cache/plugin-inspect-checkouts
 
 checkoutdir:
 	echo "Check plugin documentation checkout directory $(CHECKOUT_DIR)"; \
