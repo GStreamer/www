@@ -1,6 +1,8 @@
 Makefile
 media
+cache/
 data
 config.log
-config.status
+config.status*
 htdocs/
+*~

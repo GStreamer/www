@@ -12,6 +12,9 @@ FILE LAYOUT
 -----------
 src/
 	contains the content source, managed in CVS
+cache/
+	local git checkouts of our modules for documentation purposes
+	(can be deleted at any time)
 data/
 	contains the rsync'd data
 
