@@ -136,7 +136,7 @@ timeline-oriented use of GStreamer makes sense.
     <maintainer>GStreamer Team</maintainer>
     <versions>
       <stable>&gnonlin-version-stable;</stable>
-      <devel></devel>
+      <devel>git master</devel>
     </versions>
   </module>
 
@@ -159,12 +159,12 @@ GStreamer python bindings. You can find API docs for the Python bindings at <a h
     <blurb>RTSP server</blurb>
     <title>GStreamer RTSP Server</title>
     <description>
-RTSP server based on GStreamer
+RTSP server based on GStreamer (<a href="http://people.freedesktop.org/~wtay/">homepage</a>)
     </description>
     <maintainer>Wim Taymans</maintainer>
     <versions>
-      <stable>see <a href="http://people.freedesktop.org/~wtay/">here</a></stable>
-      <devel>see <a href="http://people.freedesktop.org/~wtay/">here</a></devel>
+      <stable>0.10.4</stable>
+      <devel>git master</devel>
     </versions>
   </module>
 

@@ -50,15 +50,38 @@ Here's a quick overview of all of our modules :
   </td>
   <td><xsl:value-of select="blurb" /></td>
   <td>
-      <xsl:call-template name="hyperlink">
-        <xsl:with-param name="href">
-          &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/stable" />.html</xsl:with-param>
-        <xsl:with-param name="text"><xsl:value-of select="versions/stable" /></xsl:with-param>
-          </xsl:call-template>
+    <!-- add link to cgit if it says 'git master'; no link if it says 'N/A' -->
+    <xsl:choose>
+      <xsl:when test="versions/stable/text() = string('git master')">
+        <xsl:call-template name="hyperlink">
+          <xsl:with-param name="href">http://cgit.freedesktop.org/gstreamer/<xsl:value-of select="id" />/</xsl:with-param>
+          <xsl:with-param name="text">git master</xsl:with-param>
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+
+        <xsl:choose>
+          <xsl:when test="versions/stable/text() = string('N/A')">
+            N/A
+          </xsl:when>
+          <xsl:otherwise>
+
+
+            <xsl:call-template name="hyperlink">
+              <xsl:with-param name="href">
+                &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/stable" />.html</xsl:with-param>
+              <xsl:with-param name="text"><xsl:value-of select="versions/stable" /></xsl:with-param>
+            </xsl:call-template>
+
+           </xsl:otherwise>
+        </xsl:choose>
+
+      </xsl:otherwise>
       &#160;
+    </xsl:choose>
   </td>
   <td>
-    <!--only add link to development version if it's not git master -->
+    <!-- add link to cgit if it says 'git master'; no link if it says 'N/A' -->
     <xsl:choose>
       <xsl:when test="versions/devel/text() = string('git master')">
         <xsl:call-template name="hyperlink">
@@ -67,14 +90,25 @@ Here's a quick overview of all of our modules :
         </xsl:call-template>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:call-template name="hyperlink">
-          <xsl:with-param name="href">
-            &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/devel" />.html
-          </xsl:with-param>
-          <xsl:with-param name="text">
-            <xsl:value-of select="versions/devel" />
-          </xsl:with-param>
-        </xsl:call-template>
+
+        <xsl:choose>
+          <xsl:when test="versions/devel/text() = string('N/A')">
+            N/A
+          </xsl:when>
+          <xsl:otherwise>
+
+            <xsl:call-template name="hyperlink">
+              <xsl:with-param name="href">
+                &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/devel" />.html
+              </xsl:with-param>
+              <xsl:with-param name="text">
+                <xsl:value-of select="versions/devel" />
+              </xsl:with-param>
+            </xsl:call-template>
+
+           </xsl:otherwise>
+        </xsl:choose>
+
       </xsl:otherwise>
       &#160;
     </xsl:choose>
