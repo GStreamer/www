@@ -97,7 +97,7 @@ popd
 # update Changelog
 echo "Regenerating ChangeLog"
 # Check CHANGELOG_START tag exists
-if test ! -e $moduledir/.git/refs/tags/CHANGELOG_START
+if ! GIT_DIR=$moduledir/.git git rev-parse CHANGELOG_START
 then
     echo "No CHANGELOG_START tag in module"
     exit 1
