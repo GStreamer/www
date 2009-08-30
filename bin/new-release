@@ -87,7 +87,7 @@ then
   echo "No template $template !"
   exit 1
 fi
-if test ! -e $release.xml
+if test ! -s $release.xml
 then
   echo "Creating $release.xml"
   cp $template $release.xml
