@@ -58,12 +58,26 @@ Here's a quick overview of all of our modules :
       &#160;
   </td>
   <td>
-      <xsl:call-template name="hyperlink">
-        <xsl:with-param name="href">
-          &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/devel" />.html</xsl:with-param>
-        <xsl:with-param name="text"><xsl:value-of select="versions/devel" /></xsl:with-param>
-          </xsl:call-template>
+    <!--only add link to development version if it's not git master -->
+    <xsl:choose>
+      <xsl:when test="versions/devel/text() = string('git master')">
+        <xsl:call-template name="hyperlink">
+          <xsl:with-param name="href">http://cgit.freedesktop.org/gstreamer/<xsl:value-of select="id" />/</xsl:with-param>
+          <xsl:with-param name="text">git master</xsl:with-param>
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:call-template name="hyperlink">
+          <xsl:with-param name="href">
+            &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/devel" />.html
+          </xsl:with-param>
+          <xsl:with-param name="text">
+            <xsl:value-of select="versions/devel" />
+          </xsl:with-param>
+        </xsl:call-template>
+      </xsl:otherwise>
       &#160;
+    </xsl:choose>
   </td>
 </tr>
  
