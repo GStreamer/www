@@ -40,6 +40,41 @@ fi
 
 moduledir=$modulebasedir/$module
 
+# check misc. environment variables we'll be using later
+if test "x$EDITOR" = "x"; then
+  echo "EDITOR environment variable not set."
+  if [ -x /usr/bin/editor ] ; then
+    echo "Using /usr/bin/editor instead"
+    export EDITOR="/usr/bin/editor"
+  else
+    echo "No /usr/bin/editor either. Giving up."
+    exit 1
+  fi
+fi
+
+if test "x$REAL_NAME" = "x" ; then
+  echo "REAL_NAME environment variable not set."
+  export REAL_NAME=`git config user.name`
+  if test "x$REAL_NAME" = "x" ; then
+    echo "git config --get user.name not set either"
+    exit 1
+  else
+    echo "Set REAL_NAME from git config --get user.name to: $REAL_NAME"
+  fi
+fi
+
+if test "x$EMAIL_ADDRESS" = "x" ; then
+  echo "EMAIL_ADDRESS environment variable not set."
+  export EMAIL_ADDRESS=`git config user.email`
+  if test "x$EMAIL_ADDRESS" = "x" ; then
+    echo "git config --get user.email not set either"
+    exit 1
+  else
+    echo "Set EMAIL_ADDRESS from git config --get user.email to: $EMAIL_ADDRESS"
+  fi
+fi
+
+
 echo "Updating checkout"
 pushd $moduledir > /dev/null 2>&1
 git pull
@@ -87,7 +122,10 @@ git add $makefileam
 configureac=$moduledir/configure.ac
 echo "Press Enter to update configure.ac's version and libtool versioning."
 read
-$EDITOR $configureac
+$EDITOR $configureac || {
+  echo "Error editing $configureac"
+  exit 1
+}
 
 echo "Rebuilding to update version numbering"
 pushd $moduledir > /dev/null 2>&1
@@ -131,7 +169,10 @@ fi
 echo "Now press Enter to edit the next .xml file and update the list of features and API changes"
 read
 
-$EDITOR $release.xml
+$EDITOR $release.xml || {
+  echo "Error editing $release.xml"
+  exit 1
+}
 
 # Mark for committing
 git add $release.xml
