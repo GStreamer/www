@@ -3,8 +3,8 @@
 <release>
   <module>gstreamer-sharp</module>
   <module-fancy>GStreamer C# bindings</module-fancy>
-  <name></name>
-  <version></version>
+  <name>Good things come to those who wait</name>
+  <version>0.9.0</version>
 
   <intro>
 
@@ -32,7 +32,12 @@ It is, however, parallel installable with the 0.8.x series.
   <applications>
   </applications>
 
-  <contributors>
+    <contributors>
+	<person>Aaron Bockover</person>
+	<person>Khaled Mohammed</person>
+	<person>Maarten Bosmans</person>
+	<person>Michael Dominic K</person>
+	<person>Sebastian Dröge</person>
   </contributors>
 
 <!--
@@ -43,6 +48,12 @@ It is, however, parallel installable with the 0.8.x series.
     </deprecations>
   </api>
 -->
+
+  
+
+  
+
+  
 
   <bugs>
   </bugs>
