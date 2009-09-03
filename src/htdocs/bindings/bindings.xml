@@ -54,68 +54,10 @@ Gian Mario Tagliaretti has written some documents for using GStreamer Python whi
   <binding>
     <id>dotnet</id>
     <name>.NET</name>
-    <status>The bindings are still under development and not yet released.
-    </status>
-<body>
-<p>The GStreamer bindings for the .NET framework, known as Gst#
-(gst-sharp), are implemented using C#, a modern object-oriented
-language defined by the ECMA-334 standard. However, applications making use
-of the bindings can be written in any language supported by the .NET runtime,
-including but not limited to C#, Visual Basic, Managed C++, Python, Perl,
-Java and JavaScript.</p>
-                                                                                
-<p>The bindings are generated in two steps by the
-<a href="http://www.go-mono.com/">Mono project</a>'s
-<a href="http://gtk-sharp.sourceforge.net/">Gtk#</a> code parser, which
-produces an intermediate XML representation of the API, and code generator
-which processes the XML to produce the bindings themselves. Few custom
-modifications are required to the code once generated, making it possible to
-provide up-to-date .NET bindings at the same time as every major and minor
-GStreamer release.</p>
-                                                                                
-<p>Gst# is still at an early stage of development so many areas of its
-functionality remain untested. In particular, users should not expect a
-stable API between releases.</p>
- 
-<p>The bindings are present in the module (<tt>gst-sharp</tt>) of <a
-href="http://www.go-mono.com/anoncvs.html">Mono's CVS tree</a> but
-there are currentl no released packages.
-</p>
- 
-<p>Gst# is being developed primarily on GNU/Linux using the Mono JIT runtime
-on x86. Users are encouraged to try different platforms and report the
-extent of their success.</p>
- 
-<h2>Documentation and Examples</h2>
- 
-<p>Gst# includes monodoc documentation, although it is currently very
-incomplete. A couple of examples are provided in the <tt>sample/</tt>
-directory of the Gst# distribution.</p>
-                                                                                
-<h2>Applications</h2>
-                                                                                
-<p>There are only a handful of applications that make use of Gst# right now,
-but this situation is expected to improve as GStreamer and Mono continue to
-reach a wider audience.</p>
-                                                                                
-<ul>
-<li><a href="http://forge.novell.com/modules/xfmod/project/?permovi">Permovi</a> - a home theatre PC system</li>
-<li><a href="http://www.atoker.com/phonic/">Phonic</a> - a music collection cataloguing system for GNOME2</li>
-</ul>
-
-
-</body>
-
-    <contacts>
-      <person>
-        <realname>Alp Toker</realname>
-        <email>alp (at) atoker.com</email>
-      </person>
-      <person>
-        <realname>Owen Fraser-Green</realname>
-        <email>owen (at) discobabe.net</email>
-      </person>
-    </contacts>
+    <status>The bindings are still under development. See the <a href="&site;/modules/gstreamer-sharp.html">gstreamer-sharp</a> module.</status>
+    <body>
+    <p>Released. See the <a href="&site;/modules/gstreamer-sharp.html">gstreamer-sharp</a> module.</p>
+    </body>
   </binding>
 
   <binding>
