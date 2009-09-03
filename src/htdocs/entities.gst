@@ -3,6 +3,7 @@
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.8">
 <!ENTITY gst-python-version-stable "0.10.16">
+<!ENTITY gstreamer-sharp-version-stable "0.9.0">
 <!ENTITY gst-plugins-base-version-stable "0.10.24">
 <!ENTITY gst-plugins-good-version-stable "0.10.16">
 <!ENTITY gst-plugins-ugly-version-stable "0.10.12">
@@ -19,6 +20,7 @@
 
 <!ENTITY gst-ffmpeg-version-devel "git master">
 <!ENTITY gst-python-version-devel "git master">
+<!ENTITY gstreamer-sharp-version-devel "git master">
 
 <!ENTITY gst-bug-report "http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">
 <!ENTITY gst-repo-http "http://cgit.freedesktop.org/gstreamer/">

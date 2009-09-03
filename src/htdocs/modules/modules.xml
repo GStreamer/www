@@ -155,6 +155,20 @@ GStreamer python bindings. You can find API docs for the Python bindings at <a h
   </module>
 
   <module>
+    <id>gstreamer-sharp</id>
+    <blurb>C#/.NET bindings</blurb>
+    <title>GStreamer C# Bindings</title>
+    <description>
+      GStreamer C# bindings.
+    </description>
+    <maintainer>Sebastian Dröge</maintainer>
+    <versions>
+      <stable>&gstreamer-sharp-version-stable;</stable>
+      <devel>&gstreamer-sharp-version-devel;</devel>
+    </versions>
+  </module>
+
+  <module>
     <id>gst-rtsp-server</id>
     <blurb>RTSP server</blurb>
     <title>GStreamer RTSP Server</title>
