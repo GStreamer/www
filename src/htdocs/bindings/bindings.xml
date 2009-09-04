@@ -56,7 +56,7 @@ Gian Mario Tagliaretti has written some documents for using GStreamer Python whi
     <name>.NET</name>
     <status>The bindings are still under development. See the <a href="&site;/modules/gstreamer-sharp.html">gstreamer-sharp</a> module.</status>
     <body>
-    <p>Released. See the <a href="&site;/modules/gstreamer-sharp.html">gstreamer-sharp</a> module.</p>
+    <p>See the <a href="&site;/modules/gstreamer-sharp.html">gstreamer-sharp</a> module.</p>
     </body>
   </binding>
 
@@ -164,5 +164,17 @@ The Ruby bindings are released as part of
     </contacts>
   </binding>
 
+  <binding>
+    <id>vala</id>
+    <name>Vala</name>
+    <status>
+    Released as part of
+    <a href="http://www.vala-project.org/">Vala</a>.
+    </status>
+    <body>
+    <p>The Vala bindings are released as part of
+    <a href="http://www.vala-project.org/">Vala</a>.</p>
+    </body>
+  </binding>
 
 </bindings>
