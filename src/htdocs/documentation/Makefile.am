@@ -19,10 +19,14 @@ plugins.xml: checkoutdir
 	    git clean -f -d -x || { \
 	      echo "Cleaning $$m checkout failed"; exit 1; \
 	    } ; \
-	    echo "$$m checkout: updating..."; \
-	    git pull || { \
-	      echo "Updating $$m checkout failed"; exit 1; \
-	    } ; \
+	    if test "x$$GST_WWW_SKIP_DOC_CHECKOUT_UPDATES" != "x"; then \
+	      echo "$$m checkout: skipping update (GST_WWW_SKIP_DOC_CHECKOUT_UPDATES is set)"; \
+	    else \
+	      echo "$$m checkout: updating..."; \
+	      git pull || { \
+	        echo "Updating $$m checkout failed"; exit 1; \
+	      } ; \
+	    fi; \
 	    popd >/dev/null; \
 	  else \
 	    echo "$$m checkout: creating (cloning)"; \
