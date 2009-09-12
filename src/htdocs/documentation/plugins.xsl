@@ -18,7 +18,7 @@
     <xsl:call-template name="page">
       <xsl:with-param name="content">
         <h1>Overview of available plug-ins</h1>
-        <i>Note: if a link to an element is broken, this means the
+        <i>Note: if a link to an element or plugin is missing, this means the
            element is not documented yet.  We appreciate contributions
            to the documentation !</i>
         <xsl:element name="table">

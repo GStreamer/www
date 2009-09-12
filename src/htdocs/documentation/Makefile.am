@@ -2,6 +2,9 @@ built_pages = index.html licensing.html rtp.html plugins.html splitup.html gstre
 
 CHECKOUT_DIR = $(top_builddir)/cache/plugin-inspect-checkouts
 
+# the top_builddir here is not quite right, but should work for now
+FIX_UNDOCUMENTED_PLUGIN_LINKS = $(top_builddir)/bin/fix-undocumented-plugins-links
+
 checkoutdir:
 	echo "Check plugin documentation checkout directory $(CHECKOUT_DIR)"; \
 	mkdir -p $(CHECKOUT_DIR) || { \
@@ -48,5 +51,7 @@ plugins.xml-update:
 
 plugins.html: plugins.xsl plugins.xml-update
 	xsltproc -o plugins.html $(srcdir)/plugins.xsl plugins.xml
+	$(FIX_UNDOCUMENTED_PLUGIN_LINKS) plugins.html $(top_builddir) > plugins-fixed.html
+	mv plugins-fixed.html plugins.html
 
 include $(top_srcdir)/html.make
