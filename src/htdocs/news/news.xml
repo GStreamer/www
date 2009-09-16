@@ -3532,4 +3532,20 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2009-09-16 09:00</date>
+    <title>GStreamer C# bindings 0.9.1 development release</title>
+    <content>
+      <p>
+        The GStreamer team is pleased to announce the first GStreamer C#
+	bindings release for the 0.10 GStreamer stable release series.
+      </p>
+      <p>
+        Check out release notes for
+        <a href="&site;/releases/gstreamer-sharp/0.9.1.html">gstreamer-sharp</a>
+        or download tarballs for
+        <a href="&site;/src/gstreamer-sharp/gstreamer-sharp-0.9.1.tar.bz2">gstreamer-sharp</a>
+      </p>
+    </content>
+  </item>
 </news>
