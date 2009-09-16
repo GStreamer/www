@@ -9,13 +9,11 @@
   <intro>
 
 <p>
-The GStreamer team is proud to announce a first development release
-of the GStreamer C# bindings for the 0.10.x release series.
+The GStreamer team is proud to announce a new development release
+of the GStreamer C# bindings for the GStreamer 0.10.x release series.
 </p>
 <p>
-The 0.10.x series is a stable series targeted at end users.
-It is not API or ABI compatible with the stable 0.8.x series.
-It is, however, parallel installable with the 0.8.x series.
+The GStreamer 0.10.x release series is a stable series targeted at end users.
 </p>
 <p><strong>Please note that at this time the GStreamer C# bindings
         are not consindered API/ABI stable, and public interfaces
