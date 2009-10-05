@@ -3548,4 +3548,25 @@ or download tarballs for
       </p>
     </content>
   </item>
+<item>
+    <date>2009-10-05 16:00</date>
+<title>GStreamer Core 0.10.25, Base Plugins 0.10.25, Python Bindings 0.10.17 and FFmpeg plugin 0.10.9 stable release</title>
+<content>
+<p>
+The GStreamer team is relieved to announce new releases of Core, the Base Plugins module, the Python Bindings and the FFmpeg plugin module for the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.25.html">gstreamer</a>,
+<a href="&site;/releases/gst-plugins-base/0.10.25.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-python/0.10.17.html">gst-python</a> and
+<a href="&site;/releases/gst-ffmpeg/0.10.9.html">gst-ffmpeg</a>
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.25.tar.bz2">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.25.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gst-python/gst-python-0.10.17.tar.bz2">gst-python</a> and
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.9.tar.bz2">gst-ffmpeg</a>
+    </p>
+    </content>
+</item>
 </news>

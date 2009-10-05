@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-ffmpeg</module>
+  <module-fancy>GStreamer FFmpeg Plug-ins</module-fancy>
+  <name>Shooting the moon</name>
+  <version>0.10.9</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer FFmpeg Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+This module contains plug-ins using libraries from the FFmpeg project.
+</p>
+
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+    <feature>Update FFmpeg snapshot to SVN 19580 on the 0.5 branch</feature>
+    <feature>Improve tag passing</feature>
+    <feature>Track timestamps and frame delay for improved timestamping</feature>
+    <feature>Support 4khz ADPCM and g.721</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+        <contributors>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Jarkko Palviainen</person>
+	<person>Jonathan Matthew</person>
+	<person>Jordi Mas</person>
+	<person>Olivier Crête</person>
+	<person>Sebastian Dröge</person>
+	<person>Sjoerd Simons</person>
+	<person>Stefan Kost</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Руслан Ижбулатов</person>
+  </contributors>
+
+<p>In addition to the above contributors, we would like to extend our
+thanks to the FFmpeg developers without which these plugins would have
+no reason to exist.</p>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>574661</id>
+      <summary>[gstffmpegdec] Wrong usage of parsers</summary>
+    </bug>
+    <bug>
+      <id>575545</id>
+      <summary>[gstffmpegenc] Wrong usage of AVCodec.pix_fmts</summary>
+    </bug>
+    <bug>
+      <id>578278</id>
+      <summary>gst-ffmpeg: assign offsets (from upstream) to outgoing buffers</summary>
+    </bug>
+    <bug>
+      <id>586894</id>
+      <summary>distclean removes gst-libs/ext/ffmpeg</summary>
+    </bug>
+    <bug>
+      <id>586957</id>
+      <summary>[ffdemux_ape] APE file metadata not retained during transcode</summary>
+    </bug>
+    <bug>
+      <id>588546</id>
+      <summary>Add AC3 audio codec to DVD Muxer</summary>
+    </bug>
+    <bug>
+      <id>590172</id>
+      <summary>ffdec_theora does not work</summary>
+    </bug>
+    <bug>
+      <id>590964</id>
+      <summary>Varying licensing in COPYING file in release tarballs</summary>
+    </bug>
+    <bug>
+      <id>591038</id>
+      <summary>Colorspace error during negotiation in ffenc_mjpeg</summary>
+    </bug>
+    <bug>
+      <id>591163</id>
+      <summary>Duration calculation is wrong for codecs with ticks_per_frame != 1</summary>
+    </bug>
+    <bug>
+      <id>591469</id>
+      <summary>gst-ffmpeg won't build</summary>
+    </bug>
+    <bug>
+      <id>591809</id>
+      <summary>[ffdec_adpcm_ima_wav] can't decode ADPCM file</summary>
+    </bug>
+    <bug>
+      <id>593141</id>
+      <summary>Add AG_GST_ARG_WITH_PKG_CONFIG_PATH to configure</summary>
+    </bug>
+    <bug>
+      <id>594306</id>
+      <summary>ffdec_* sets channel-positions for common mono and stereo cases</summary>
+    </bug>
+    <bug>
+      <id>594454</id>
+      <summary>gstreamer does not support adpcm, g721  audio file ?</summary>
+    </bug>
+  </bugs>
+
+</release>

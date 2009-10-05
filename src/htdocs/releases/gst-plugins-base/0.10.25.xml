@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
+  <name>Standard disclaimers apply</name>
+  <version>0.10.25</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Base Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc</li>
+  <li>network: tcp</li>
+  <li>typefind</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioscale, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: ffmpegcolorspace</li>
+  <li>aggregate elements: decodebin, playbin</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+      <feature>Add per-stream volume controls</feature>
+      <feature>Theora 1.0 and Y444 and Y42B format support</feature>
+      <feature>Improve audio capture timing</feature>
+      <feature>GObject introspection support</feature>
+      <feature>Improve audio output startup</feature>
+      <feature>RTSP improvements</feature>
+      <feature>Use pango-cairo instead of pangoft2</feature>
+      <feature>Allow cdda://(device#)?track URI scheme in cddabasesrc</feature>
+      <feature>Support interlaced content in videoscale and ffmpegcolorspacee</feature>
+      <feature>Many other bug fixes and improvements</feature>
+  </features>
+
+  <applications>
+  </applications>
+            <contributors>
+	<person>Arnout Vandecappelle</person>
+	<person>Benjamin Gaignard</person>
+	<person>Benjamin Otte</person>
+	<person>Christian F.K. Schaller</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Eero Nurkkala</person>
+	<person>Havard Graff</person>
+	<person>Håvard Graff</person>
+	<person>Jan Schmidt</person>
+	<person>John Millikin</person>
+	<person>Jonas Holmberg</person>
+	<person>Jonathan Matthew</person>
+	<person>Josep Torra</person>
+	<person>Kipp Cannon</person>
+	<person>Marc-André Lureau</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Mart Raudsepp</person>
+	<person>Michael Smith</person>
+	<person>Olivier Crête</person>
+	<person>Peter Kjellerstedt</person>
+	<person>Philip Jägenstedt</person>
+	<person>René Stadler</person>
+	<person>Sebastian Dröge</person>
+	<person>Siarhei Siamashka</person>
+	<person>Stefan Kost</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Young-Ho Cha</person>
+	<person>Руслан Ижбулатов</person>
+  </contributors>
+
+<api>
+    <additions>
+    <item>gst_rtsp_connection_create_from_fd()</item>
+    <item>gst_rtsp_connection_set_http_mode()</item>
+    <item>gst_rtsp_watch_write_data()</item>
+    <item>gst_rtsp_watch_send_message()</item>
+    <item>GstBaseRTPPayload::perfect-rtptime</item>
+    <item>GstBaseRTPAudioPayload::gst_base_rtp_audio_payload_flush()</item>
+    <item>GstVideoSinkClass::show_frame()</item>
+    <item>GstVideoSink:show-preroll-frame</item>
+    <item>GST_MIXER_TRACK_READONLY</item>
+    <item>GST_MIXER_TRACK_WRITEONLY</item>
+    <item>GstStreamVolume interface</item>
+    </additions>
+<!--
+    <deprecations>
+    </deprecations>
+-->
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>595401</id>
+      <summary>gobject assertion and null access to volume instance in playbin</summary>
+    </bug>
+    <bug>
+      <id>563828</id>
+      <summary>[decodebin2] Complains about loops in the graph when demuxer output requires another demuxer</summary>
+    </bug>
+    <bug>
+      <id>591677</id>
+      <summary>Easy codec installation is not working</summary>
+    </bug>
+    <bug>
+      <id>588523</id>
+      <summary>smarter sink selection in playbin2</summary>
+    </bug>
+    <bug>
+      <id>590146</id>
+      <summary>adder regressions</summary>
+    </bug>
+    <bug>
+      <id>321532</id>
+      <summary>[cddabasesrc] Support device setting in cdda:// URI</summary>
+    </bug>
+    <bug>
+      <id>340887</id>
+      <summary>add pangocairo textoverlay plugin.</summary>
+    </bug>
+    <bug>
+      <id>397419</id>
+      <summary>[oggdemux] ogm video with subtitles stuck on first frame</summary>
+    </bug>
+    <bug>
+      <id>556537</id>
+      <summary>[PATCH] typefind: more flexible MPEG4 start code recognition</summary>
+    </bug>
+    <bug>
+      <id>559049</id>
+      <summary>gstcheck.c:76:F:general:test_state_changes_* failure: GST_IS_CLOCK(clock) assertion fails</summary>
+    </bug>
+    <bug>
+      <id>567660</id>
+      <summary>[API] need a stream volume interface for sinks that do volume control</summary>
+    </bug>
+    <bug>
+      <id>567928</id>
+      <summary>Make videorate work with a live source</summary>
+    </bug>
+    <bug>
+      <id>571610</id>
+      <summary>[playbin] Scale of volume property is not documented</summary>
+    </bug>
+    <bug>
+      <id>583255</id>
+      <summary>[playbin2] deadlock when disabling visualisations</summary>
+    </bug>
+    <bug>
+      <id>586180</id>
+      <summary>RTSP improvements</summary>
+    </bug>
+    <bug>
+      <id>588717</id>
+      <summary>[oggmux] gst_caps_unref() warning if not linked downstream</summary>
+    </bug>
+    <bug>
+      <id>588761</id>
+      <summary>[videoscale] Needs special support for interlaced content</summary>
+    </bug>
+    <bug>
+      <id>588915</id>
+      <summary>audioresample's output offset counter's initialization could maybe be improved</summary>
+    </bug>
+    <bug>
+      <id>589095</id>
+      <summary>[appsrc] clarify documentation on caps and linkage</summary>
+    </bug>
+    <bug>
+      <id>589574</id>
+      <summary>[typefind] incorrect sdp file detection</summary>
+    </bug>
+    <bug>
+      <id>590243</id>
+      <summary>[videoscale] Claims to support MAX width/height</summary>
+    </bug>
+    <bug>
+      <id>590425</id>
+      <summary>Slaved alsasrc clock with slave-method=re-timestamp not usable for RTP audio</summary>
+    </bug>
+    <bug>
+      <id>590856</id>
+      <summary>[decodebin2] triggers assertion failure on NULL caps</summary>
+    </bug>
+    <bug>
+      <id>591207</id>
+      <summary>totem does display the following subtitle srt file.</summary>
+    </bug>
+    <bug>
+      <id>591357</id>
+      <summary>gst-plugins-base git won't build due to warning in gstrtspconnection.c</summary>
+    </bug>
+    <bug>
+      <id>591577</id>
+      <summary>[playbin2] Incorrect error message string</summary>
+    </bug>
+    <bug>
+      <id>591664</id>
+      <summary>[playbin2] after seeking, srt subtitles don't resync correctly</summary>
+    </bug>
+    <bug>
+      <id>591934</id>
+      <summary>timestamp drift in audioresample</summary>
+    </bug>
+    <bug>
+      <id>592544</id>
+      <summary>Remove regex.h check</summary>
+    </bug>
+    <bug>
+      <id>592657</id>
+      <summary>[appsink] Blocks after entering on pause state</summary>
+    </bug>
+    <bug>
+      <id>592864</id>
+      <summary>deadlocks from recent inputselector/streamselector change</summary>
+    </bug>
+    <bug>
+      <id>592884</id>
+      <summary>[playbin2] g_object_get increases refcount by 2 and therefore leaves memleak</summary>
+    </bug>
+    <bug>
+      <id>593035</id>
+      <summary>gdp doesn't preserve fields of the buffers put into the caps' streamheader</summary>
+    </bug>
+    <bug>
+      <id>593284</id>
+      <summary>basertppayloader takes time in instance init</summary>
+    </bug>
+    <bug>
+      <id>594020</id>
+      <summary>Totem don't play videos from ssh remote host</summary>
+    </bug>
+    <bug>
+      <id>594094</id>
+      <summary>Playback Error playing Midi file</summary>
+    </bug>
+    <bug>
+      <id>594136</id>
+      <summary>[alsasink] Regression from 0.10.23 -- element reuse doesn't work</summary>
+    </bug>
+    <bug>
+      <id>594165</id>
+      <summary>[theoraenc] Implement support for new formats</summary>
+    </bug>
+    <bug>
+      <id>594256</id>
+      <summary>improved slave-skew resynch mechanism</summary>
+    </bug>
+    <bug>
+      <id>594258</id>
+      <summary>missing break in rtcpbuffer</summary>
+    </bug>
+    <bug>
+      <id>594275</id>
+      <summary>Add cast to navigation to fix compiler warning</summary>
+    </bug>
+    <bug>
+      <id>594623</id>
+      <summary>Expose playsink as a fully-fledged element</summary>
+    </bug>
+    <bug>
+      <id>594732</id>
+      <summary>parse error</summary>
+    </bug>
+    <bug>
+      <id>594757</id>
+      <summary>build fails due to warning in gstbasertppayload.c</summary>
+    </bug>
+    <bug>
+      <id>594993</id>
+      <summary>[introspection] pkg-config file madness</summary>
+    </bug>
+    <bug>
+      <id>594994</id>
+      <summary>[streamvolume] Add get_type function to the documentation</summary>
+    </bug>
+    <bug>
+      <id>595454</id>
+      <summary>[cddabasesrc] uri format change breaks rhythmbox</summary>
+    </bug>
+    <bug>
+      <id>545807</id>
+      <summary>[baseaudiosink] audible crack when starting the pipeline</summary>
+    </bug>
+  </bugs>
+
+</release>
