@@ -176,6 +176,9 @@ is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin no
 <p><a href="http://www.rhythmbox.org/">Rhythmbox</a> is an integrated music management application, originally inspired by Apple's iTunes.
 </p>
 
+<h2>Scenic</h2>
+<p><a href="http://scenic.sat.qc.ca/">Scenic</a> (formerly known as Telesceno) is a web-based telepresence application for venues and live performance. It is part of the PropulseART  project. Scenic's features include remote operation, multi-channel audio and serial transmission.</p>
+
 <h2>Serpentine</h2>
 <p><a href="http://s1x.homelinux.net/projects/serpentine/">Serpentine</a> is a GNOME Audio cd recorder</p>
 
@@ -189,9 +192,6 @@ is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin no
 
 <h2>SoundScrape</h2>
 <p><a href="http://ambient.2y.net/soundscrape/">SoundScrape</a> is a modular audio synthesizer with built in GUILE scriptability.</p>
-
-<h2>Scenic</h2>
-<p><a href="http://scenic.sat.qc.ca/">Scenic</a> (formerly known as Telesceno) is a web-based telepresence application for venues and live performance. It is part of the PropulseART  project. Scenic's features include remote operation, multi-channel audio and serial transmission.</p>
 
 <h2>Togra</h2>
 <p><a href="http://togra.sourceforge.net/">Togra</a> is a 3D multimedia framework</p>
