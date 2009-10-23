@@ -3586,4 +3586,19 @@ or download tarballs for
 </p>
     </content>
   </item>
+<item>
+    <date>2009-10-23 23:00</date>
+<title>GStreamer Bad 0.10.16 stable release</title>
+<content>
+<p>
+Hot on the heels of Wednesday's release of the Bad Plugins module 0.10.15 is an update that fixes several problems - including possible deadlocks when starting DVDs.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-bad/0.10.16.html">gst-plugins-bad</a>
+or download the tarball
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.16.tar.bz2">gst-plugins-bad</a>
+</p>
+    </content>
+  </item>
 </news>
