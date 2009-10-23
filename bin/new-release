@@ -95,6 +95,21 @@ fi
 echo "Updating $release.xml"
 perl -i -p -e "s@<version></version>@<version>$version</version>@" $release.xml
 perl -i -p -e "s@<name></name>@<name>$name</name>@" $release.xml
+
+# update Changelog
+echo "Regenerating ChangeLog"
+# Check CHANGELOG_START tag exists
+if ! GIT_DIR=$moduledir/.git git rev-parse CHANGELOG_START
+then
+    echo "No CHANGELOG_START tag in module"
+    exit 1
+fi
+pushd $moduledir > /dev/null 2>&1
+changelog=ChangeLog
+python common/gen-changelog.py > $changelog
+git add $changelog
+popd
+
 echo "Updating contributors"
 changelog=$moduledir/ChangeLog
 if test ! -e $changelog
@@ -130,20 +145,6 @@ $EDITOR $configureac || {
 echo "Rebuilding to update version numbering"
 pushd $moduledir > /dev/null 2>&1
 make > out 2>&1 || ( echo "Build failed"; exit 1 )
-popd
-
-# update Changelog
-echo "Regenerating ChangeLog"
-# Check CHANGELOG_START tag exists
-if ! GIT_DIR=$moduledir/.git git rev-parse CHANGELOG_START
-then
-    echo "No CHANGELOG_START tag in module"
-    exit 1
-fi
-pushd $moduledir > /dev/null 2>&1
-changelog=ChangeLog
-python common/gen-changelog.py > $changelog
-git add $changelog
 popd
 
 changelog=$moduledir/ChangeLog
