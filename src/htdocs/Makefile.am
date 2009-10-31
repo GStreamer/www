@@ -22,7 +22,9 @@ media pkg src:
 data:
 	ln -sf ../data .
 
+robots.txt: $(top_srcdir)/copy/robots.txt
+	cp $(top_srcdir)/copy/robots.txt $@
 
-all-local: media pkg src data
+all-local: media pkg src data robots.txt
 
 include $(top_srcdir)/html.make

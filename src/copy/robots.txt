@@ -1,0 +1,4 @@
+# these win32 packages are old and broken and unsupported, we
+# don't want them to show up when people search for 'gstreamer windows'
+User-agent: *
+Disallow: /pkg/windows/
