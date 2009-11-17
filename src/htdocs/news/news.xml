@@ -3601,4 +3601,23 @@ or download the tarball
 </p>
     </content>
   </item>
+  <item>
+    <date>2009-11-17 01:00</date>
+    <title>GStreamer Good 0.10.17 &amp; Bad 0.10.17 stable releases</title>
+    <content>
+      <p>
+        The GStreamer team is pleased to announce new releases of the Good and
+        Bad Plugins modules in the 0.10 GStreamer stable release series.
+      </p>
+      <p>
+        Check out release notes for
+        <a href="&site;/releases/gst-plugins-good/0.10.17.html">gst-plugins-good</a> and
+        <a href="&site;/releases/gst-plugins-bad/0.10.17.html">gst-plugins-bad</a>
+        or download tarballs for
+        <a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.17.tar.bz2">gst-plugins-good</a> and
+        <a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.17.tar.bz2">gst-plugins-bad</a>
+      </p>
+    </content>
+  </item>
+s
 </news>
