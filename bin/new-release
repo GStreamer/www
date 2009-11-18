@@ -145,6 +145,7 @@ $EDITOR $configureac || {
 echo "Rebuilding to update version numbering"
 pushd $moduledir > /dev/null 2>&1
 make > out 2>&1 || ( echo "Build failed"; exit 1 )
+make win32-update >> out 2>&1 || ( echo "Failed updating win32 config.h"; exit 1 )
 popd
 
 changelog=$moduledir/ChangeLog
