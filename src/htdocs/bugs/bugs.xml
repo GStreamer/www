@@ -120,6 +120,7 @@
     <component>gst-plugins-good</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.18</milestone>
       <milestone>0.10.17</milestone>
       <milestone>0.10.16</milestone>
       <milestone>0.10.15</milestone>
@@ -185,6 +186,9 @@
     <component>gst-plugins-bad</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.18</milestone>
+      <milestone>0.10.17</milestone>
+      <milestone>0.10.16</milestone>
       <milestone>0.10.15</milestone>
       <milestone>0.10.14</milestone>
       <milestone>0.10.13</milestone>
