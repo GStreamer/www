@@ -2,3 +2,13 @@
 # don't want them to show up when people search for 'gstreamer windows'
 User-agent: *
 Disallow: /pkg/windows/
+
+# don't want ancient docs to show up in e.g. Google or Yahoo
+# (maybe we should just remove the old docs from the server?)
+User-agent: Slurp
+Allow: /data/doc/gstreamer/head/
+Disallow: /data/doc/gstreamer/
+
+User-agent: Googlebot
+Allow: /data/doc/gstreamer/head/
+Disallow: /data/doc/gstreamer/
