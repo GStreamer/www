@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Short Circuit</name>
+  <version>0.10.18</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+        <feature>v4l2src: implement GstURIHandler interface</feature>
+        <feature>matroskamux: make index size configurable</feature>
+        <feature>matroskademux: support push based mode</feature>
+        <feature>matroskademux: improve stream synchronization</feature>
+        <feature>flacdec: fix possible hanging in pull mode seeking</feature>
+        <feature>flacdec: use a single decoder field for both push and pull mode</feature>
+        <feature>flacenc: optionally add a seek table</feature>
+        <feature>rtp: add BroadcomVoice payloader and depayloader</feature>
+        <feature>rtp: add G.723 payloader and depayloader</feature>
+        <feature>rtph264pay: add option to insert PPS/SPS in streams</feature>
+        <feature>rtph264depay: optionally merge NALUs into Access Units</feature>
+        <feature>rtspsrc: add user-id and user-pw properties; fix major memory leak</feature>
+        <feature>avimux: many fixes, also better compatibility with Windows Media Player</feature>
+        <feature>avidemux: per-stream index parsing (= much faster startup)</feature>
+        <feature>qtdemux: progressive download support / seeking in push mode</feature>
+        <feature>qtdemux: per sample parsing (= much faster start up)</feature>
+        <feature>wavenc: Post warning if file hasn't been finalised properly</feature>
+        <feature>videomixer: MMX optimisations and other improvements; implement basic QoS</feature>
+        <feature>matroska, qtdemux, id3demux: fix language code writing and extraction</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Arnout Vandecappelle</person>
+	<person>Arun Raghavan</person>
+	<person>Aurelien Grimaud</person>
+	<person>Bastien Nocera</person>
+	<person>Branko Čibej</person>
+	<person>David Hoyt</person>
+	<person>Edward Hervey</person>
+	<person>Havard Graff</person>
+	<person>Jan Schmidt</person>
+	<person>Jan Urbański</person>
+	<person>Jonathan Conder</person>
+	<person>Kipp Cannon</person>
+	<person>Marco Ballesio</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Smith</person>
+	<person>Olivier Crête</person>
+	<person>Pascal Buhler</person>
+	<person>Peter van Hardenberg</person>
+	<person>Robert Swain</person>
+	<person>Robert Weidlich</person>
+	<person>Roland Krikava</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Tiago Katcipis</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>609405</id>
+      <summary>[qtdemux] Issues when seeking with file with lots of tracks and edit lists</summary>
+    </bug>
+    <bug>
+      <id>503582</id>
+      <summary>[avidemux] Extract date tag (contained in the IDIT chunk)</summary>
+    </bug>
+    <bug>
+      <id>351595</id>
+      <summary>[flacenc] write seek tables</summary>
+    </bug>
+    <bug>
+      <id>505823</id>
+      <summary>[matroskademux] language tags have wrong iso code</summary>
+    </bug>
+    <bug>
+      <id>515073</id>
+      <summary>[goom] Update to goom2k4</summary>
+    </bug>
+    <bug>
+      <id>539858</id>
+      <summary>not enough NEWSEGMENT events from matroskademux</summary>
+    </bug>
+    <bug>
+      <id>554839</id>
+      <summary>[rtpbin] Automaticaly remove pads</summary>
+    </bug>
+    <bug>
+      <id>582575</id>
+      <summary>[rtph263depay] dropping only part of key frames on lost fragmets</summary>
+    </bug>
+    <bug>
+      <id>583367</id>
+      <summary>gstrtpL16pay ignores max-ptime property</summary>
+    </bug>
+    <bug>
+      <id>583985</id>
+      <summary>[matroskamux] make index size configurable</summary>
+    </bug>
+    <bug>
+      <id>587323</id>
+      <summary>rtpmp4vpay does not payload mp4v stream depayloaded with rtpmp4vdepay</summary>
+    </bug>
+    <bug>
+      <id>593354</id>
+      <summary>rtpjitterbuffer sometimes outputs packets with timestamps in the past</summary>
+    </bug>
+    <bug>
+      <id>595265</id>
+      <summary>SDES handling in RTPSource</summary>
+    </bug>
+    <bug>
+      <id>597497</id>
+      <summary>can't play a redirecting .mov file via playbin</summary>
+    </bug>
+    <bug>
+      <id>597823</id>
+      <summary>Add rtpg723pay plugin</summary>
+    </bug>
+    <bug>
+      <id>599300</id>
+      <summary>[qtdemux] Doesn't populate video bitrate field</summary>
+    </bug>
+    <bug>
+      <id>601143</id>
+      <summary>v4l2src: add GstURIHandler interface</summary>
+    </bug>
+    <bug>
+      <id>601242</id>
+      <summary>[flvmux] ECMA array with file index lacks final 0x09 byte</summary>
+    </bug>
+    <bug>
+      <id>601728</id>
+      <summary>[rtspsrc] Add username/password properties</summary>
+    </bug>
+    <bug>
+      <id>602231</id>
+      <summary>Deadlock between rtpjitterbuffer and gstrtpbin</summary>
+    </bug>
+    <bug>
+      <id>602508</id>
+      <summary>qtdemux: Parse stbl atom per sample instead of all at once</summary>
+    </bug>
+    <bug>
+      <id>602887</id>
+      <summary>shout2send element won't change from PLAYING state to NULL</summary>
+    </bug>
+    <bug>
+      <id>602940</id>
+      <summary>jitterbuffer is racy determining basetime</summary>
+    </bug>
+    <bug>
+      <id>603376</id>
+      <summary>rtpsession : g_type_create_instance performance issue : avoid buffer ref</summary>
+    </bug>
+    <bug>
+      <id>603471</id>
+      <summary>[flacdec] not timestamping output buffers</summary>
+    </bug>
+    <bug>
+      <id>603547</id>
+      <summary>shout2send plugin sends data too fast</summary>
+    </bug>
+    <bug>
+      <id>603779</id>
+      <summary>[ladspa] Remove ladspa plugin code</summary>
+    </bug>
+    <bug>
+      <id>604352</id>
+      <summary>[rganalysis] miscomputes timestamps</summary>
+    </bug>
+    <bug>
+      <id>604611</id>
+      <summary>[qtdemux] Provides invalid ALAC codec data</summary>
+    </bug>
+    <bug>
+      <id>604679</id>
+      <summary>videomixer MMX code doesn't build on fedora12</summary>
+    </bug>
+    <bug>
+      <id>604814</id>
+      <summary>videomixer make error</summary>
+    </bug>
+    <bug>
+      <id>604872</id>
+      <summary>[udpsink] Add missing 'gssize len' parameter to g_convert()</summary>
+    </bug>
+    <bug>
+      <id>604913</id>
+      <summary>rtph264pay/NALU/rtph264depay</summary>
+    </bug>
+    <bug>
+      <id>605222</id>
+      <summary>Mobile Youtube RTSP streams time out at EOS</summary>
+    </bug>
+    <bug>
+      <id>605269</id>
+      <summary>[shout2][patch] Setting public flag</summary>
+    </bug>
+    <bug>
+      <id>605447</id>
+      <summary>Unable to play Real Audio stream for radioBERLIN.</summary>
+    </bug>
+    <bug>
+      <id>605882</id>
+      <summary>rtpg723pay is incorrect</summary>
+    </bug>
+    <bug>
+      <id>606198</id>
+      <summary>rtph264pay is causing alignment trap on ARM arch</summary>
+    </bug>
+    <bug>
+      <id>606438</id>
+      <summary>multiudpsink: warningfixes for windows</summary>
+    </bug>
+    <bug>
+      <id>606692</id>
+      <summary>Incorrect Center Frequency For Band3</summary>
+    </bug>
+    <bug>
+      <id>606807</id>
+      <summary>audioamplify:  allow negative amplifications</summary>
+    </bug>
+    <bug>
+      <id>607353</id>
+      <summary>rtph264pay &amp; base: Don't crash if the other side specifies the profile-level-id</summary>
+    </bug>
+    <bug>
+      <id>607440</id>
+      <summary>[wavenc] should post warning if the file isn't finished properly on pipeline shutting down</summary>
+    </bug>
+    <bug>
+      <id>607718</id>
+      <summary>[qtdemux] Infinite loop doing negative rate playback for single audio stream</summary>
+    </bug>
+    <bug>
+      <id>607949</id>
+      <summary>[avidemux] regression in stop position for mp3 streams</summary>
+    </bug>
+    <bug>
+      <id>608209</id>
+      <summary>[videomixer] blend_mmx.h:173: Error: can't encode register '%ah' in an instruction requiring REX prefix</summary>
+    </bug>
+    <bug>
+      <id>608255</id>
+      <summary>[speex] speexenc crash and leaks in rtpspeexpay and speexdec</summary>
+    </bug>
+    <bug>
+      <id>608268</id>
+      <summary>[flvmux] index timestamps should be in seconds, not milliseconds</summary>
+    </bug>
+    <bug>
+      <id>608629</id>
+      <summary>[pngdec] png_set_gray_1_2_4_to_8() removed in libpng &gt; = 1.4.0</summary>
+    </bug>
+    <bug>
+      <id>608671</id>
+      <summary>[mkv] issues when seeking</summary>
+    </bug>
+    <bug>
+      <id>608990</id>
+      <summary>[qtdemux] Segment start timestamps can be broken</summary>
+    </bug>
+    <bug>
+      <id>609107</id>
+      <summary>[qtdemux] Unknown atoms should also be skipped when looking for moov</summary>
+    </bug>
+    <bug>
+      <id>598610</id>
+      <summary>[matroskademux] Support push mode operation</summary>
+    </bug>
+    <bug>
+      <id>594381</id>
+      <summary>audiofirfilter: Implement FFT convolution</summary>
+    </bug>
+  </bugs>
+
+</release>
