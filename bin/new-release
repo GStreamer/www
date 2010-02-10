@@ -185,7 +185,13 @@ make
 
 release=htdocs/releases/$module/$version
 echo "Copying RELEASE"
-cp $release $moduledir/RELEASE
+cp $release $moduledir/RELEASE || {
+  echo "Error copying $release $moduledir/RELEASE."
+  echo "Maybe there was a problem creating $release , maybe because"
+  echo "there is a syntax error in $release.xml or some other problem"
+  echo "occured when rebuilding www/htdocs/releases/$module"
+  exit 1
+}
 
 echo "Press Enter to update NEWS with information from RELEASE"
 read
