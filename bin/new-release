@@ -230,6 +230,6 @@ then
 fi
 
 cd $moduledir
-git diff > release.diff
+git diff --color > release.diff
 echo "Press Enter to review the git diff"
 less -R release.diff
