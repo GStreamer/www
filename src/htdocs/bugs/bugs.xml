@@ -255,6 +255,7 @@
     <component>gst-python</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.19</milestone>
       <milestone>0.10.18</milestone>
       <milestone>0.10.17</milestone>
       <milestone>0.10.16</milestone>
@@ -326,6 +327,7 @@
     <component>gnonlin</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.15</milestone>
       <milestone>0.10.14</milestone>
       <milestone>0.10.13</milestone>
       <milestone>0.10.12</milestone>
