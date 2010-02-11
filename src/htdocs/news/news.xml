@@ -3656,4 +3656,23 @@ or download tarballs for
     </content>
 </item>
 
+  <item>
+    <date>2010-02-11 16:20</date>
+    <title>GStreamer Python Bindings 0.10.18 &amp; GNonLin 0.10.14 stable releases</title>
+    <content>
+      <p>
+        The GStreamer team is pleased to announce new releases of the Python Bindings and the GNonLin set of plugins
+        Bad Plugins modules in the 0.10 GStreamer stable release series.
+      </p>
+      <p>
+        Check out release notes for
+        <a href="&site;/releases/gst-python/0.10.18.html">gst-python</a> and
+        <a href="&site;/releases/gnonlin/0.10.14.html">gnonlin</a>
+        or download tarballs for
+        <a href="&site;/src/gst-python/gst-python-0.10.18.tar.bz2">gst-python</a> and
+        <a href="&site;/src/gnonlin/gnonlin-0.10.14.tar.bz2">gnonlin</a>
+      </p>
+    </content>
+  </item>
+
 </news>
