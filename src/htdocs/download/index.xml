@@ -43,6 +43,12 @@ GStreamer.
     .NET bindings for all of them) on Windows, without requiring mingw/cygwin.
   </DD>
 
+  <DT>Symbian</DT>
+  <DD>The sources of the initial port of GStreamer are available for <a href="&site;/src/symbian/gstreamer_source.zip">download</a>.
+    <BR/>
+    Releated binary packages are also <a href="&site;/pkg/symbian/gstreamer_binaries.zip">available</a>.
+  </DD>
+
   <DT>Source</DT>
   <DD>Check our <A href="&site;/modules/">modules</A> page, or
     go straight to our <A href="&site;/src/">source download directory</A>.</DD>

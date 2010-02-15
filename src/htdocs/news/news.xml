@@ -3675,4 +3675,30 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2010-02-15 13:00</date>
+    <title>GStreamer on Symbian OS</title>
+    <content>
+      <p>
+        GStreamer is now ported on Symbian platform. The GStreamer core version ported is v10.0.19.
+        It works with the S60 SDK versions  3.2 and 5.0. It has been tested with the Nokia 5800
+        XpressMusic and N78 phone models.
+      </p>
+      <p>
+        The initial package contains:
+        <ul>
+          <li>gstreamer core</li>
+          <li>gst-plugins-base</li>
+          <li>audio source and sink elements for symbian</li>
+          <li>some gst-good-plugins</li>
+          <li>Test application</li>
+        </ul>
+      </p>
+      <p>
+        Next steps are to integrate the changes step by step with the official
+        source tree.
+      </p>
+    </content>
+  </item>
+
 </news>
