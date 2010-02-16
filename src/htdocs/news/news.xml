@@ -3680,7 +3680,7 @@ or download tarballs for
     <title>GStreamer on Symbian OS</title>
     <content>
       <p>
-        GStreamer is now ported on Symbian platform. The GStreamer core version ported is v10.0.19.
+        GStreamer is now ported on Symbian platform. The GStreamer core version ported is v0.10.19.
         It works with the S60 SDK versions  3.2 and 5.0. It has been tested with the Nokia 5800
         XpressMusic and N78 phone models.
       </p>
