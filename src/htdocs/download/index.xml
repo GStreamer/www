@@ -32,7 +32,7 @@ GStreamer.
   </DD>
 
   <DT>OpenBSD</DT>
-  <DD>Packages for various architectures are available for <A href="http://www.openbsd.org/4.6_packages/">OpenBSD 4.6</A>.</DD>
+  <DD>Packages for various architectures are available, see the <A href="http://openports.se/multimedia/gstreamer-0.10">OpenBSD ports</A> page.</DD>
 
   <DT>Windows</DT>
   <DD>Unfortunately, we are unable to provide up-to-date Windows binaries of GStreamer, due to limited developer resources.
