@@ -36,13 +36,15 @@ GStreamer.
 
   <DT>Windows</DT>
   <DD>The GStreamer project itself to not provide Windows binaries at this point unfortunately. However there are a couple of good options provided by the wider community.
-    <BR/>
+    <p>
     The <a href="http://www.gstreamer-winbuild.ylatuya.es/doku.php?id=start">GStreamer winbuilds project</a> for instance has provided up-to-date binaries of GStreamer and plugin packages for some time now.
-    <BR/>
+    </p>
+    <p>
     Developers wishing to build GStreamer on Windows using MSVC may want to look at
     <A href="http://projects.collabora.co.uk/~oleavr/OABuild/">OABuild</A> which provides a
     fast and convenient way to build GStreamer, GTK+, D-Bus, Telepathy (and
     .NET bindings for all of them) on Windows, without requiring mingw/cygwin.
+    </p>
   </DD>
 
   <DT>Symbian</DT>
