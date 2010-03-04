@@ -12,9 +12,9 @@
 <h2>Multiplatform</h2>
 <p>
 GStreamer has been ported to a wide range of operating systems, processors and
-compilers. This include but are not limited to Linux on i86,PPC, ARM using GCC.
+compilers. This include but are not limited to Linux on x86, PPC, ARM using GCC.
 Solaris on x86 and SPARC using both GCC and Forte, MacOSX, Microsoft Windows
-using MS Visual Developer and IBM OS/400.
+using MS Visual Developer, IBM OS/400 and Symbian OS.
 </p>
 <p>
 GStreamer can bridge to other multimedia frameworks in order to reuse existing
@@ -55,12 +55,12 @@ components (e.g. codecs) and use platform input/output mechanisms:<ul>
   <li>
     <a href="&site;/data/doc/gstreamer/head/gstreamer/html/GstPlugin.html">
     Dynamically loaded</a>
-    plugins provide elements and media types, demand-loaded via an XML registry,
+    plugins provide elements and media types, demand-loaded via an registry cache,
     similar to ld.so.cache</li>
   <li>
     <a href="&site;/data/doc/gstreamer/head/manual/html/chapter-elements.html">
     Element interface</a>
-    handles all known types of sources, filters, sinks</li>
+    handles all known types of sources, filters and sinks</li>
   <li>
     <a href="&site;/data/doc/gstreamer/head/manual/html/section-caps.html">
     Capabilities system</a>
@@ -74,7 +74,22 @@ components (e.g. codecs) and use platform input/output mechanisms:<ul>
     <a href="&site;/data/doc/gstreamer/head/manual/html/chapter-xml.html">
     XML</a> and loaded back to working state
   </li>
-  <li>Resource friendly plugins don't waste RAM</li>
+  <li>Resource friendly plugins don't waste memory</li>
+</ul>
+
+<h2>Broad Coverage of Multimedia Technologies</h2>
+<para>
+  GStreamers capabilities can be extended through new plugins. The features
+  listed below are just a rough overview what is available using the
+  GStreamers own plugins, not counting any 3rd party offerings.
+</para>
+<ul>
+  <li>container formats: asf, avi, 3gp/mp4/mov, flv, mpeg-ps/ts, mkv, mxf, ogg</li>
+  <li>streaming: http, mms, rtsp</li>
+  <li>codecs: ffmpeg, various codec libaries, 3rd party codec packs</li>
+  <li>metadata: native container formats with a common mapping between them</li>
+  <li>video: various colorspaces, support for progressive and interlaced video</li>
+  <li>audio: integer and float audio in various bitdepths and multichannel configurations</li>
 </ul>
 
 <h2>Extensive Development Tools</h2>
@@ -91,7 +106,7 @@ components (e.g. codecs) and use platform input/output mechanisms:<ul>
     <a href="&site;/data/doc/gstreamer/head/pwg/html/index.html">
     plugin writer's guide</a>
   </li>
-  <li>Large selection of test programs and example code</li>
+  <li>Large selection of test programs and example code in each module</li>
   <li>Access to GStreamer API with <a href="&site;/bindings/">various programming languages</a></li>
   <li>
     <a href="&site;/modules/gst-editor.html">Graphical editor</a> allows pipelines to be
@@ -99,9 +114,7 @@ components (e.g. codecs) and use platform input/output mechanisms:<ul>
   </li>
 </ul>
 
-<p>GStreamer is rapidly approaching a stable API. There is still a number of
-items on our TODO list.
-</p>
+<p>GStreamer 0.10 series API is stable since 2005.</p>
 
   </body>
 </page>
