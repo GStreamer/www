@@ -12,7 +12,7 @@
 <h2>Multiplatform</h2>
 <p>
 GStreamer has been ported to a wide range of operating systems, processors and
-compilers. This include but are not limited to Linux on x86, PPC and ARM using GCC.
+compilers. These include but are not limited to Linux on x86, PPC and ARM using GCC.
 Solaris on x86 and SPARC using both GCC and Forte, MacOSX, Microsoft Windows
 using MS Visual Developer, IBM OS/400 and Symbian OS.
 </p>
@@ -86,10 +86,10 @@ components (e.g. codecs) and use platform input/output mechanisms:<ul>
 <ul>
   <li>container formats: asf, avi, 3gp/mp4/mov, flv, mpeg-ps/ts, mkv, mxf, ogg</li>
   <li>streaming: http, mms, rtsp</li>
-  <li>codecs: FFmpeg, various codec libaries, 3rd party codec packs</li>
+  <li>codecs: FFmpeg, various codec libraries, 3rd party codec packs</li>
   <li>metadata: native container formats with a common mapping between them</li>
   <li>video: various colorspaces, support for progressive and interlaced video</li>
-  <li>audio: integer and float audio in various bitdepths and multichannel configurations</li>
+  <li>audio: integer and float audio in various bit depths and multichannel configurations</li>
 </ul>
 
 <h2>Extensive Development Tools</h2>
