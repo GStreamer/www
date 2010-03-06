@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-ffmpeg</module>
+  <module-fancy>GStreamer FFmpeg Plug-ins</module-fancy>
+  <name>It's the bomb</name>
+  <version>0.10.10</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer FFmpeg Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+This module contains plug-ins using libraries from the FFmpeg project.
+</p>
+
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+    <feature>Update to revision 21874 of ffmpeg (Feb 18th 2010)</feature>
+    <feature>Various fixes for encoders</feature>
+    <feature>Faster plugin/element creation</feature>
+    <feature>Fix duration of out-of-order buffers</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Julien Moutte</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Olivier Crête</person>
+	<person>Sebastian Dröge</person>
+	<person>Sjoerd Simons</person>
+	<person>Stefan Kost</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<p>In addition to the above contributors, we would like to extend our
+thanks to the FFmpeg developers without which these plugins would have
+no reason to exist.</p>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>610613</id>
+      <summary>a vp6 flv file crashes totem and pitivi</summary>
+    </bug>
+    <bug>
+      <id>330681</id>
+      <summary>[real] RV20 video garbled</summary>
+    </bug>
+    <bug>
+      <id>361177</id>
+      <summary>Need WMS decoder</summary>
+    </bug>
+    <bug>
+      <id>578160</id>
+      <summary>ffenc_h263 doesn't list the resolutions it actually supports</summary>
+    </bug>
+    <bug>
+      <id>593647</id>
+      <summary>ffdec_flashsv doesn't work</summary>
+    </bug>
+    <bug>
+      <id>593651</id>
+      <summary>buffer-size property of ffenc_* is a cop-out</summary>
+    </bug>
+    <bug>
+      <id>601421</id>
+      <summary>[fixed upstream] WMA9 support</summary>
+    </bug>
+    <bug>
+      <id>601501</id>
+      <summary>[ffdec_vc1] Fails to decode some VC1 streams that work with mplayer</summary>
+    </bug>
+    <bug>
+      <id>603331</id>
+      <summary>Feature request: intel indeo 4 &amp; 5 codec support</summary>
+    </bug>
+    <bug>
+      <id>610469</id>
+      <summary>flv file doesn't play in totem</summary>
+    </bug>
+    <bug>
+      <id>610481</id>
+      <summary>[ffmpegdec] wrong output timestamps when non-keyframe following flush</summary>
+    </bug>
+    <bug>
+      <id>611398</id>
+      <summary>[regression] outgoing buffer durations aren't correct</summary>
+    </bug>
+    <bug>
+      <id>611722</id>
+      <summary>[regression] No decoder for video/x-wmv, wmvversion=(int)3, format=(fourcc)WMVA</summary>
+    </bug>
+    <bug>
+      <id>611782</id>
+      <summary>[regression] Segmentation fault in demuxers</summary>
+    </bug>
+  </bugs>
+
+</release>
