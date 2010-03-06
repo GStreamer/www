@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
+  <name>No Mistakes Allowed</name>
+  <version>0.10.27</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Base Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: ffmpegcolorspace</li>
+  <li>aggregate elements: uridecodebin, decodebin2, playbin2, decodebin, playbin</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+<feature>playbin2,decodebin2: lots of fixes for missing plugin installation</feature>
+<feature>playbin2, playsink, subtitleoverlay: Set subtitle encoding properly</feature>
+<feature>videorate: Improve upstream negotiation</feature>
+<feature>oggdemux: use the chain begin_time instead of our counter</feature>
+<feature>oggdemux: mark skeleton streams correctly</feature>
+<feature>oggdemux: theora PAR of 0:N, N:0 or 0:0 is allowed and maps to 1:1</feature>
+<feature>typefinding: detect stm module format</feature>
+<feature>ffmpegcolorspace: add conversions from all ARGB formats to AYUV and back</feature>
+<feature>theoradec: Fix chroma copying for 4:2:2</feature>
+<feature>tcpclientsrc,tcpserversrc: Fix handling of closed sockets</feature>
+<feature>examples,build: dist header file for the Qt graphics view example</feature>
+<feature>playsink: Reset the sink's state to NULL before unreffing it unless it's the same instance again</feature>
+<feature>rtspconnection: make sure not to dereference NULL username or password</feature>
+<feature>appsrc: Update segment duration and post a duration message if the duration changes</feature>
+<feature>vorbisdec: also support ivorbis tremor decoder</feature>
+<feature>rtsp: fail gracefully on bad Content-Length headers</feature>
+<feature>rtsp: ignore \n and \r as the first line</feature>
+  </features>
+
+  <applications>
+  </applications>
+    <contributors>
+	<person>Benjamin Otte</person>
+	<person>David Schleef</person>
+	<person>Götz Waschk</person>
+	<person>Josep Torra Valles</person>
+	<person>Kaj-Michael Lang</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Patrick Radizi</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+  <api>
+    <additions>
+<item>appsrc::min-percent property</item>
+<item>GST_RIFF_TAG_JUNQ</item>
+    </additions>
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>610449</id>
+      <summary>codec autodetection does not always work</summary>
+    </bug>
+    <bug>
+      <id>608025</id>
+      <summary>[videorate] fails at upstream negotiation</summary>
+    </bug>
+    <bug>
+      <id>608309</id>
+      <summary>[appsrc] Should request new data before the queue is empty</summary>
+    </bug>
+    <bug>
+      <id>608417</id>
+      <summary>rtspsrc problem with \n and \r as first line</summary>
+    </bug>
+    <bug>
+      <id>609063</id>
+      <summary>[vorbisdec] also support integer vorbis decoder (tremor) library implementation</summary>
+    </bug>
+    <bug>
+      <id>609314</id>
+      <summary>typefind: Typefind does not handle .stm module format</summary>
+    </bug>
+    <bug>
+      <id>609423</id>
+      <summary>[appsrc] gst_app_src_set_size() should update duration and post a duration message</summary>
+    </bug>
+    <bug>
+      <id>610005</id>
+      <summary>[oggdemux] regression: bad seek granularity</summary>
+    </bug>
+    <bug>
+      <id>610268</id>
+      <summary>[rtsp] NULL pointer reference in gstrtspconnection</summary>
+    </bug>
+    <bug>
+      <id>610310</id>
+      <summary>[playbin2] Subtitle encoding property has no effect</summary>
+    </bug>
+    <bug>
+      <id>610329</id>
+      <summary>[theoradec] doesn't copy all chroma lines for 4:2:2</summary>
+    </bug>
+    <bug>
+      <id>610379</id>
+      <summary>[playbin2] doesn't play if text flag is unset and media has text subtitles</summary>
+    </bug>
+    <bug>
+      <id>610386</id>
+      <summary>[tcpserversrc] Doesn't send EOS when socket is closed</summary>
+    </bug>
+    <bug>
+      <id>610672</id>
+      <summary>overlay examples are now inconsistent and broken</summary>
+    </bug>
+    <bug>
+      <id>610832</id>
+      <summary>missing header file in the tarball</summary>
+    </bug>
+    <bug>
+      <id>611225</id>
+      <summary>[oggdemux] doesn't preroll big_buck_bunny_427x240.indexed.ogg in push mode</summary>
+    </bug>
+    <bug>
+      <id>611227</id>
+      <summary>[oggdemux] no duration or seeking in local big_buck_bunny_427x240.indexed.ogg in pull mode</summary>
+    </bug>
+    <bug>
+      <id>604131</id>
+      <summary>Totem can no longer open Matroska files that hold ASS subtitles</summary>
+    </bug>
+  </bugs>
+
+</release>

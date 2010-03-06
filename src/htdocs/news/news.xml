@@ -3701,4 +3701,28 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2010-03-06 02:00</date>
+    <title>GStreamer Core 0.10.27, Base Plugins 0.10.27, Good Plugins 0.10.19, Ugly Plugins 0.10.14, and Bad Plugins 0.10.18 stable releases</title>
+<content>
+<p>
+The GStreamer team is excited to announce new releases of the GStreamer core module, the gst-plugins-base module, the gst-plugins-good module, the gst-plugins-ugly module, and the gst-plugins-bad module for the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.27.html">gstreamer</a>,
+<a href="&site;/releases/gst-plugins-base/0.10.27.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/0.10.19.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-good/0.10.14.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-good/0.10.18.html">gst-plugins-bad</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.27.tar.bz2">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.27.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.19.tar.bz2">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.14.tar.bz2">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.18.tar.bz2">gst-plugins-bad</a>,
+    </p>
+    </content>
+  </item>
+
 </news>

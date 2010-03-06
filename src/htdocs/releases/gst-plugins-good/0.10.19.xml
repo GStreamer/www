@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Closer to the Edit</name>
+  <version>0.10.19</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+<feature>shapewipe: moved from -bad to -good</feature>
+<feature>avidemux: push mode seeking support</feature>
+<feature>avidemux: drop video frames up to the desired keyframe after a seek</feature>
+<feature>configure: cross-compilation fixes (use $PKG_CONFIG instead of pkg-config)</feature>
+<feature>dvdepay: don't output frames until we have a header, fixes crash</feature>
+<feature>flacdec: fix tag extraction in push mode</feature>
+<feature>flvdemux: obtain the index from the end of an flv file in push mode</feature>
+<feature>flvdemux: audio tags without any content are valid; indexing improvements</feature>
+<feature>jpegdec: fix invalid memory access in parser</feature>
+<feature>jitterbuffer: new buffering modes: low/high watermark buffering, rtp timestamps</feature>
+<feature>matroskademux: seeking/segment fixes (esp. regression with gnonlin)</feature>
+<feature>matroskademux: subtitle stream improvements (advance sparse streams in smaller steps)</feature>
+<feature>multipartdemux: improve header mime-type parsing</feature>
+<feature>qtdemux: fix ALAC codec-data handling; handle signed values in 3GPP location tag</feature>
+<feature>qtdemux: fix frame rate cap regression; fix sample durations corner-case</feature>
+<feature>qtdemux: Use the correct duration when comparing segments</feature>
+<feature>pulsesink: avoid segfault when shutting down</feature>
+<feature>pulsesink: return previous mute state if sink is not active at the moment</feature>
+<feature>rtpbin: change how NTP time is calculated in RTCP, generating more accurate NTP timestamps if the system clock is synchronised with NTP or similar</feature>
+<feature>rtpmp4gdepay: avoid division by 0 in corner case</feature>
+<feature>v4l2sink: change rank to NONE so we don't try to autoplug it</feature>
+<feature>videomixer: fix timestamping problems for input streams with different lengths</feature>
+<feature>videomixer: fix problem when used with gnonlin (always send FLUSH_STOP)</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Anders Skargren</person>
+	<person>Brian Cameron</person>
+	<person>David Hoyt</person>
+	<person>Edward Hervey</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Philippe Normand</person>
+	<person>Robert Swain</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Volker Grabsch</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+  <api>
+    <additions>
+<item>jitterbuffer::mode</item>
+<item>rtpbin::buffer-mode</item>
+    </additions>
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>584536</id>
+      <summary>[PLUGIN-MOVE] Move shapewipe to -good</summary>
+    </bug>
+    <bug>
+      <id>587304</id>
+      <summary>[jitterbuffer] don't handle correctly data burst from udpsrc</summary>
+    </bug>
+    <bug>
+      <id>599292</id>
+      <summary>Synchronizing two RTP streams from different devices using RTCP is inaccurate.</summary>
+    </bug>
+    <bug>
+      <id>604711</id>
+      <summary>Handling of mime type in multipartdemux</summary>
+    </bug>
+    <bug>
+      <id>608026</id>
+      <summary>[videomixer] timestamping problems</summary>
+    </bug>
+    <bug>
+      <id>608843</id>
+      <summary>[flacdec] Can't read tags in push mode</summary>
+    </bug>
+    <bug>
+      <id>610004</id>
+      <summary>GST_CXXFLAGS should contain GST_CFLAGS</summary>
+    </bug>
+    <bug>
+      <id>610053</id>
+      <summary>matroska fails to build with Sun Studio</summary>
+    </bug>
+    <bug>
+      <id>610238</id>
+      <summary>Avoid an assertion in the rtspsrc element which abort the client application</summary>
+    </bug>
+    <bug>
+      <id>610265</id>
+      <summary>gstrtpmp4gdepay issuing a SIGFPE crashing an application</summary>
+    </bug>
+    <bug>
+      <id>610280</id>
+      <summary>[qtdemux] issue with corrupted 3gp file</summary>
+    </bug>
+    <bug>
+      <id>610296</id>
+      <summary>[qtdemux] Confusion with gst/qt segments</summary>
+    </bug>
+    <bug>
+      <id>610337</id>
+      <summary>pulsesink: gst_pulsesink_get_mute: set result earlier.</summary>
+    </bug>
+    <bug>
+      <id>610483</id>
+      <summary>[jpegdec] invalid memory access</summary>
+    </bug>
+    <bug>
+      <id>610556</id>
+      <summary>Memory violation when starting to decode a running DV PAL RTP stream</summary>
+    </bug>
+    <bug>
+      <id>610839</id>
+      <summary>Unable to cross compile gst-plugins-good</summary>
+    </bug>
+    <bug>
+      <id>610894</id>
+      <summary>send FLUSH_STOP after FLUSH_START in videomixer</summary>
+    </bug>
+    <bug>
+      <id>611501</id>
+      <summary>[regression] matroskademux fails to output anything on some seeks</summary>
+    </bug>
+    <bug>
+      <id>609724</id>
+      <summary>Add translator comment for %s in pulsesink</summary>
+    </bug>
+  </bugs>
+
+</release>
