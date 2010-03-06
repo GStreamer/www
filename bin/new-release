@@ -40,6 +40,12 @@ fi
 
 moduledir=$modulebasedir/$module
 
+if test ! -e $moduledir/Makefile
+then
+  echo $moduledir/Makefile not found - run autogen.sh
+  exit 1
+fi
+
 # check misc. environment variables we'll be using later
 if test "x$EDITOR" = "x"; then
   echo "EDITOR environment variable not set."
