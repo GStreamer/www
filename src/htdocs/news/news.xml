@@ -3702,7 +3702,7 @@ or download tarballs for
   </item>
 
   <item>
-    <date>2010-03-06 02:00</date>
+    <date>2010-03-08 00:30</date>
     <title>GStreamer Core 0.10.27, Base Plugins 0.10.27, Good Plugins 0.10.19, Ugly Plugins 0.10.14, Bad Plugins 0.10.18 and FFmpeg plugins 0.10.10 stable releases</title>
 <content>
 <p>
@@ -3713,8 +3713,8 @@ Check out release notes for
 <a href="&site;/releases/gstreamer/0.10.27.html">gstreamer</a>,
 <a href="&site;/releases/gst-plugins-base/0.10.27.html">gst-plugins-base</a>,
 <a href="&site;/releases/gst-plugins-good/0.10.19.html">gst-plugins-good</a>,
-<a href="&site;/releases/gst-plugins-good/0.10.14.html">gst-plugins-ugly</a>,
-<a href="&site;/releases/gst-plugins-good/0.10.18.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-plugins-ugly/0.10.14.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/0.10.18.html">gst-plugins-bad</a>,
 <a href="&site;/releases/gst-ffmpeg/0.10.10.html">gst-ffmpeg</a>,
 or download tarballs for
 <a href="&site;/src/gstreamer/gstreamer-0.10.27.tar.bz2">gstreamer</a>,
