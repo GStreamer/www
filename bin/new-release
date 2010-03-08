@@ -46,6 +46,12 @@ then
   exit 1
 fi
 
+# FIXME: we could be smarter, e.g. insert a skeleton entry and spawn an editor
+grep "$version" "$moduledir/$module.doap" >/dev/null || {
+  echo "No mention of version $version in $module.doap file, please update first."
+  exit 1;
+}
+
 # check misc. environment variables we'll be using later
 if test "x$EDITOR" = "x"; then
   echo "EDITOR environment variable not set."
