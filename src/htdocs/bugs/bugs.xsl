@@ -103,7 +103,7 @@ unresolved
 </tr>
 <tr>
   <td colspan="4">
-<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=RESOLVED&amp;resolution=FIXED&amp;target_milestone=HEAD&amp;form_name=query">All fixed in HEAD bugs (need to reassign to milestones)</a>
+<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=RESOLVED&amp;resolution=FIXED&amp;resolution=VERIFIED&amp;target_milestone=HEAD&amp;target_milestone=HEART&amp;form_name=query">All fixed in HEAD bugs (need to reassign to milestones)</a>
   </td>
 </tr>
 <tr>

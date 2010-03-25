@@ -10,6 +10,7 @@
     <component>gstreamer+%28core%29</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.29</milestone>
       <milestone>0.10.28</milestone>
       <milestone>0.10.27</milestone>
       <milestone>0.10.26</milestone>
@@ -79,6 +80,7 @@
     <component>gst-plugins-base</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.29</milestone>
       <milestone>0.10.28</milestone>
       <milestone>0.10.27</milestone>
       <milestone>0.10.26</milestone>
@@ -124,6 +126,8 @@
     <component>gst-plugins-good</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.22</milestone>
+      <milestone>0.10.21</milestone>
       <milestone>0.10.20</milestone>
       <milestone>0.10.19</milestone>
       <milestone>0.10.18</milestone>
@@ -161,6 +165,7 @@
     <component>gst-plugins-ugly</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.15</milestone>
       <milestone>0.10.14</milestone>
       <milestone>0.10.13</milestone>
       <milestone>0.10.12</milestone>
@@ -227,9 +232,6 @@
     <component>gst-plugins-gl</component>
     <milestones>
       <milestone>HEAD</milestone>
-      <milestone>0.10.5</milestone>
-      <milestone>0.10.4</milestone>
-      <milestone>0.10.3</milestone>
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
     </milestones>
@@ -294,6 +296,7 @@
     <component>gst-ffmpeg</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.11</milestone>
       <milestone>0.10.10</milestone>
       <milestone>0.10.9</milestone>
       <milestone>0.10.8</milestone>
@@ -327,6 +330,7 @@
     <component>gnonlin</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.16</milestone>
       <milestone>0.10.15</milestone>
       <milestone>0.10.14</milestone>
       <milestone>0.10.13</milestone>
@@ -350,6 +354,9 @@
     <component>documentation</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.29</milestone>
+      <milestone>0.10.28</milestone>
+      <milestone>0.10.27</milestone>
       <milestone>0.10.26</milestone>
       <milestone>0.10.25</milestone>
       <milestone>0.10.24</milestone>
