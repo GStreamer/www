@@ -63,34 +63,35 @@ Gian Mario Tagliaretti has written some documents for using GStreamer Python whi
   <binding>
     <id>cplusplus</id>
     <name>C++</name>
-    <status>The bindings are still under development and not yet released.</status>
+    <status>Released. See the <a href="http://ftp.gnome.org/pub/gnome/sources/gstreamermm/0.10/">gstreamermm</a> GNOME module.</status>
 <body>
 <p>
 The GStreamer API <a href="http://www.research.att.com/~bs/C++.html">C++</a>
-bindings are still under development and based on
+bindings are actively developed and based on
 <a href="http://www.gtkmm.org">gtkmm</a>, using the same lifecycle mechanism.
 </p>
 <p>
 The latest version can be downloaded from the
-<a href="http://ftp.gnome.org/pub/GNOME/sources/gstreamermm/">gstreamermm
+<a href="http://ftp.gnome.org/pub/GNOME/sources/gstreamermm/0.10/">gstreamermm
 directory on ftp.gnome.org</a>.
 </p>
 <p>
-Development takes place in the 
-<a href="http://svn.gnome.org/viewvc/gnomemm/gstreamermm/trunk/">gnomemm module
-in GNOME's Subversion repository</a> and on the
+Development takes place in
+<a href="http://git.gnome.org/browse/gstreamermm">GNOME's Git repository</a> and on the
 <a href="http://mail.gnome.org/mailman/listinfo/gtkmm-list">gtkmm mailing list
 </a>, which should also be your first point of contact if you have any queries
 or would like to help out.
 </p>
     </body>
 
+<!--
     <news>
       <item>
         <date>7 May 2008</date>
         <text>gstreamermm 0.9.5 released</text>
       </item>
     </news>
+-->
 
     <contacts>
       <person>
