@@ -217,6 +217,8 @@ then
   echo "Updating plugin documentation files"
   pushd $moduledir/docs/plugins > /dev/null 2>&1
   make update
+  make clean
+  make
   popd
 fi
 
