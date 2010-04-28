@@ -1,8 +1,9 @@
 Makefile
-media
-cache/
-data
+/media
+/cache/
+/data
 config.log
 config.status*
-htdocs/
+/htdocs/
 *~
+*.bak
