@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Square One</name>
+  <version>0.10.22</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+      <feature>alpha: add support for different color matrixes</feature>
+      <feature>alpha: add support for generating ARGB output</feature>
+      <feature>alpha: add support for ARGB, RGB and xRGB input</feature>
+      <feature>alphacolor: support inplace and on-the-fly conversions from AYUV to ARGB</feature>
+      <feature>alphacolor: Implement color-matrix support and use integer arithmetic only</feature>
+      <feature>videobox: add support for most common RGB(A), (A)YUV, and grayscale formats</feature>
+      <feature>videobox: add support for on-the-fly conversions for some formats</feature>
+      <feature>videobox: add support for filling the background with red, yellow and white</feature>
+      <feature>videobox: add support for YV12, including conversion support for I420/AYUV</feature>
+      <feature>videomixer: add support for ABGR and RGBA</feature>
+      <feature>shapewipe: add support for the remaining ARGB formats</feature>
+      <feature>qtdemux, matroska: export h.264 profile and level in caps</feature>
+      <feature>multifilesink: Add key-frame option to next-file</feature>
+      <feature>directsoundsink: Implement SPDIF support for AC3</feature>
+      <feature>h264depay: handle STAPs properly</feature>
+      <feature>speexdec: adapt to new oggdemux</feature>
+      <feature>flvdemux: mark delta frames properly</feature>
+      <feature>flvdemux: improve index building and scaning in pull mode</feature>
+      <feature>flvdemux: add support for backwards playback (when operating in pull mode)</feature>
+      <feature>avidemux: fix offset handling in push mode seeking</feature>
+      <feature>matroskademux: prefer index of video track to perform seeking</feature>
+      <feature>matroskademux: add support for backwards playback (when operating in pull mode)</feature>
+      <feature>matroskademux: push correctly sized flac header buffers</feature>
+      <feature>matroskademux: restrict resyncing to subtitle tracks</feature>
+      <feature>rtpsession: Make it possible to favor new sources in case of SSRC conflict</feature>
+      <feature>rtspsrc: send keep alive when paused</feature>
+      <feature>rtspsrc: handle ipv6 listening ports when needed</feature>
+      <feature>rtspsrc: require a destination for multicast</feature>
+      <feature>rtspsrc: parse connection information</feature>
+      <feature>qtdemux: Set stream-format=raw on AAC caps</feature>
+      <feature>qtdemux: add XMP parsing support</feature>
+      <feature>qtdemux: Read replaygain peak/gain tags</feature>
+      <feature>qtdemux: extract stream language in more cases</feature>
+      <feature>id3demux: fix parsing of unsynced frames with data length indicator</feature>
+      <feature>jpegdec: don't crash if jpeg image contains more than three components</feature>
+      <feature>ximagesrc: send new segment event in TIME format</feature>
+      <feature>mp4gdepay: improve constantDuration guessing</feature>
+      <feature>h264pay: fix config-interval property</feature>
+      <feature>rtspsrc: add property to control the buffering method</feature>
+      <feature>png: make work with libpng 1.4</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Andoni Morales Alastruey</person>
+	<person>André Dieb Martins</person>
+	<person>Arun Raghavan</person>
+	<person>Benjamin Otte</person>
+	<person>Brian Cameron</person>
+	<person>Damien Lespiau</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jan Urbański</person>
+	<person>Julien Moutte</person>
+	<person>Marco Ballesio</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Smith</person>
+	<person>Olivier Crête</person>
+	<person>Raimo Järvi</person>
+	<person>Rob Clark</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thadeu Lima de Souza Cascardo</person>
+	<person>Thiago Santos</person>
+	<person>Thijs Vermeir</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tristan Matthews</person>
+	<person>Wim Taymans</person>
+	<person>Руслан Ижбулатов</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>517588</id>
+      <summary>[avidemux] Allow seeking in push mode</summary>
+    </bug>
+    <bug>
+      <id>593910</id>
+      <summary>[dv1394src] live streaming / clock issues</summary>
+    </bug>
+    <bug>
+      <id>597739</id>
+      <summary>Test suite not slow-machine-safe(?)</summary>
+    </bug>
+    <bug>
+      <id>601236</id>
+      <summary>[flvmux] script tag with index gets written at end of file, contains all tags</summary>
+    </bug>
+    <bug>
+      <id>601617</id>
+      <summary>matroska-demuxer triggers an assert in gststructure.c</summary>
+    </bug>
+    <bug>
+      <id>604870</id>
+      <summary>[udpsink] Can't set TTL socket option</summary>
+    </bug>
+    <bug>
+      <id>607615</id>
+      <summary>Make it possible to favor new sources in case of SSRC conflict</summary>
+    </bug>
+    <bug>
+      <id>610447</id>
+      <summary>[flvdemux] Be more flexible in script tag (metadata) parsing</summary>
+    </bug>
+    <bug>
+      <id>611659</id>
+      <summary>[ximagesrc] should send new_segment with GST_FORMAT_TIME format</summary>
+    </bug>
+    <bug>
+      <id>612397</id>
+      <summary>[multiudpsink] [PATCH] Fix print of socket's error code on Windows</summary>
+    </bug>
+    <bug>
+      <id>612411</id>
+      <summary>[rtspsrc] lock/performance problem</summary>
+    </bug>
+    <bug>
+      <id>612553</id>
+      <summary>Segfault in rtspsrc (tcp interleaved and local gst-rtsp-server)</summary>
+    </bug>
+    <bug>
+      <id>612657</id>
+      <summary>[rtph264depay] refuse caps without profile-level-id when byte-stream is unset</summary>
+    </bug>
+    <bug>
+      <id>612696</id>
+      <summary>rtspsrc with tcp timeouts after recent commit</summary>
+    </bug>
+    <bug>
+      <id>612700</id>
+      <summary>pngenc can't be built against libpng 1.4.x anymore</summary>
+    </bug>
+    <bug>
+      <id>612751</id>
+      <summary>[udpsink] regression when external sockfd is used</summary>
+    </bug>
+    <bug>
+      <id>612777</id>
+      <summary>Deprecated macro in gstspeexdec.c causes compile error in MSVC</summary>
+    </bug>
+    <bug>
+      <id>613002</id>
+      <summary>[flvmux] always put duration in metadata tag</summary>
+    </bug>
+    <bug>
+      <id>613003</id>
+      <summary>[flvmux] EOS after supposedly reaching FLV timestamp limit, but real limit is lower</summary>
+    </bug>
+    <bug>
+      <id>613013</id>
+      <summary>rtph264pay does not insert config parameters anymore in the stream</summary>
+    </bug>
+    <bug>
+      <id>613094</id>
+      <summary>[flvmux] put more info (like width and height) in the metadata</summary>
+    </bug>
+    <bug>
+      <id>613206</id>
+      <summary>[rtph264depay] wrong timestamp for gst_base_rtp_depayload_push_ts?</summary>
+    </bug>
+    <bug>
+      <id>613663</id>
+      <summary>New warnings in osx plugins</summary>
+    </bug>
+    <bug>
+      <id>613789</id>
+      <summary>[jpegenc] Updating caps is not supported</summary>
+    </bug>
+    <bug>
+      <id>614158</id>
+      <summary>[id3demux] doesn't read tags from file correctly (tag with unsynced frames, data length indicator)</summary>
+    </bug>
+    <bug>
+      <id>614353</id>
+      <summary>matroskademux: can't correctly demux flac-in-MKV</summary>
+    </bug>
+    <bug>
+      <id>614354</id>
+      <summary>fix small compile break if $(top_srcdir) != $(top_builddir)</summary>
+    </bug>
+    <bug>
+      <id>614460</id>
+      <summary>matroskademux: wrong H.264 demux in some file</summary>
+    </bug>
+    <bug>
+      <id>614466</id>
+      <summary>videomixer makes some formats grayscale</summary>
+    </bug>
+    <bug>
+      <id>614471</id>
+      <summary>[qtdemux] Gstreamer not reading replaygain tags from m4a files</summary>
+    </bug>
+    <bug>
+      <id>614651</id>
+      <summary>Export h.264 profile and level in caps</summary>
+    </bug>
+    <bug>
+      <id>614765</id>
+      <summary>racy stream status leave implementation</summary>
+    </bug>
+    <bug>
+      <id>614842</id>
+      <summary>[jpegenc] sink pad returns ANY (not subset of its template) when connected to a filesink</summary>
+    </bug>
+    <bug>
+      <id>614843</id>
+      <summary>[alphacolor] unneeded variable</summary>
+    </bug>
+    <bug>
+      <id>614927</id>
+      <summary>qtdemux: Post avg/max bitrate tags for H.264</summary>
+    </bug>
+    <bug>
+      <id>615051</id>
+      <summary>h264depay: STAP are handled the wrong way</summary>
+    </bug>
+    <bug>
+      <id>615143</id>
+      <summary>[videobox] I420- &gt; AYUV conversion broken</summary>
+    </bug>
+    <bug>
+      <id>615161</id>
+      <summary>Remove -Wundef from CFLAGS</summary>
+    </bug>
+    <bug>
+      <id>615460</id>
+      <summary>[deinterlace] broken ...</summary>
+    </bug>
+    <bug>
+      <id>615996</id>
+      <summary>doesn't detect HAVE_CPU_I386 or HAVE_CPU_X86_64 properly on Solaris</summary>
+    </bug>
+    <bug>
+      <id>615998</id>
+      <summary>GOOM plugin crashes on Solaris when built with MMX code enabled</summary>
+    </bug>
+    <bug>
+      <id>616166</id>
+      <summary>[videobox] Use correct order for RGB filling</summary>
+    </bug>
+    <bug>
+      <id>616409</id>
+      <summary>[videomixer] AYUV blending broken</summary>
+    </bug>
+    <bug>
+      <id>611986</id>
+      <summary>[cairotextoverlay] Out-of-range deltas give SIGSEGV or other funkyness</summary>
+    </bug>
+    <bug>
+      <id>604106</id>
+      <summary>[jpegdec] Crash in jpeg_idct_ifast if more than 3 components</summary>
+    </bug>
+    <bug>
+      <id>614001</id>
+      <summary>[qtdemux] parse Macintosh language codes</summary>
+    </bug>
+    <bug>
+      <id>615793</id>
+      <summary>[flactag] when used after flacenc: gst_adapter_take_buffer: assertion `nbytes &gt; 0'</summary>
+    </bug>
+  </bugs>
+
+</release>

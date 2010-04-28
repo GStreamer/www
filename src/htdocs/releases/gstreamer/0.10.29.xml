@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>It's a Trap</name>
+  <version>0.10.29</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>improve plugin loading robustness: do not ever unload a plugin after calling into it: should fix mystery crashers during registry loading when a plugin init function returns FALSE (e.g. when some supporting library fails to initialise or a wrapper plugin found no features to wrap and wrongly returned FALSE)</feature>
+    <feature>configurable memory alignment for GstBuffers</feature>
+    <feature>add QoS message to inform apps of lost data, dropped frames etc.</feature>
+    <feature>basesink, basetransform: add support for new QoS message</feature>
+    <feature>basetransform: accept non-fixed caps suggestions</feature>
+    <feature>basesrc: fix gst_base_src_new_seamless_segment()</feature>
+    <feature>GstController fixes and optimisations</feature>
+    <feature>set thread name for pad tasks on Linux</feature>
+    <feature>pipeline, bin: fix refcount issue when removing elements during a state change</feature>
+    <feature>queue2: implement seeking in download mode</feature>
+    <feature>queue2: implement flushing in download buffering</feature>
+    <feature>queue2: improve buffer level measurement in download mode</feature>
+    <feature>fdsrc: allow specifying the size in bytes on the uri</feature>
+    <feature>build fixes: better checks for uint128_t, inline assembly on OSX, compilation if HAVE_REGISTER_PRINTF_SPECIFIER is undefined, gobject-introspection</feature>
+    <feature>two symbols were removed that had been exported but never been used or been declared in any header file: gst_element_default_error and gst_element_request_compatible_pad</feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
+Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
+Let us know if you want to be added to this list.
+</p>
+  </applications>
+
+    <contributors>
+	<person>Alan Knowles</person>
+	<person>André Dieb Martins</person>
+	<person>Benjamin Otte</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jeremy Huddleston</person>
+	<person>Jonas Holmberg</person>
+	<person>Leo Singer</person>
+	<person>Mart Raudsepp</person>
+	<person>Philip Withnall</person>
+	<person>Philippe Normand</person>
+	<person>Robert Swain</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+  <api>
+    <additions>
+      <item>GST_MESSAGE_QOS</item>
+      <item>gst_message_new_qos()</item>
+      <item>gst_message_parse_qos()</item>
+      <item>gst_message_parse_qos_stats()</item>
+      <item>gst_message_parse_qos_values()</item>
+      <item>gst_message_set_qos_stats()</item>
+      <item>gst_message_set_qos_values()</item>
+      <item>GST_FLOW_CUSTOM_SUCCESS_1</item>
+      <item>GST_FLOW_CUSTOM_SUCCESS_2</item>
+      <item>GST_FLOW_CUSTOM_ERROR_1</item>
+      <item>GST_FLOW_CUSTOM_ERROR_2</item>
+      <item>GST_TAG_USER_RATING</item>
+      <item>GST_TAG_GEO_LOCATION_COUNTRY</item>
+      <item>GST_TAG_GEO_LOCATION_CITY</item>
+      <item>GST_TAG_GEO_LOCATION_SUBLOCATION</item>
+    </additions>
+    <deprecations>
+      <item>gst_element_class_set_details()</item>
+    </deprecations>
+  </api>
+  
+
+  <bugs>
+    <bug>
+      <id>576234</id>
+      <summary>[basetransform] Suggesting non-fixed caps or no size doesn't work for upstream negotiation</summary>
+    </bug>
+    <bug>
+      <id>520697</id>
+      <summary>[API] Add GST_TAG_USER_RATING</summary>
+    </bug>
+    <bug>
+      <id>590718</id>
+      <summary>docs build failures with -jN: cp: cannot create regular file `build/image.entities': File exists</summary>
+    </bug>
+    <bug>
+      <id>595958</id>
+      <summary>Position not updated after a backwards gst_event_new_step()</summary>
+    </bug>
+    <bug>
+      <id>596832</id>
+      <summary>configurable buffer alignment</summary>
+    </bug>
+    <bug>
+      <id>600718</id>
+      <summary>autoconf fails with gobject-introspection</summary>
+    </bug>
+    <bug>
+      <id>600877</id>
+      <summary>[uridecodebin] Needs to disable download buffering for non-fast-start files</summary>
+    </bug>
+    <bug>
+      <id>603710</id>
+      <summary>Can't compile with introspection support</summary>
+    </bug>
+    <bug>
+      <id>603831</id>
+      <summary>build with libtool 1.x.y only works if --disable-shave is used</summary>
+    </bug>
+    <bug>
+      <id>609046</id>
+      <summary>basetransform now ignores suggestions from capsfilter</summary>
+    </bug>
+    <bug>
+      <id>609170</id>
+      <summary>basesrc pushes two newsegment</summary>
+    </bug>
+    <bug>
+      <id>610256</id>
+      <summary>Use G_VALUE_COLLECT_INIT if available</summary>
+    </bug>
+    <bug>
+      <id>611075</id>
+      <summary>Typo in debug_dump_pad function</summary>
+    </bug>
+    <bug>
+      <id>611911</id>
+      <summary>Set thread names on pipeline threads</summary>
+    </bug>
+    <bug>
+      <id>612370</id>
+      <summary>gstutils.c inline asm typo, compilation fails</summary>
+    </bug>
+    <bug>
+      <id>612410</id>
+      <summary>[API][tags] add new geo tags</summary>
+    </bug>
+    <bug>
+      <id>612733</id>
+      <summary>Build fails because HAVE_REGISTER_PRINTF_SPECIFIER is undefined</summary>
+    </bug>
+    <bug>
+      <id>612881</id>
+      <summary>[utils] gst_pad_proxy_setcaps() doesn't handler iterator resyncs</summary>
+    </bug>
+    <bug>
+      <id>613215</id>
+      <summary>delayed set in gst-launch are not recursive</summary>
+    </bug>
+    <bug>
+      <id>613593</id>
+      <summary>git-update.sh script does not work on fresh git repository clones</summary>
+    </bug>
+    <bug>
+      <id>614167</id>
+      <summary>gstinfo: no previous prototype for 'xxx' when buildign with --disable-gst-debug</summary>
+    </bug>
+    <bug>
+      <id>614629</id>
+      <summary>utils: Use G_GNUC_CONST instead of G_GNUC_PURE for conversion functions</summary>
+    </bug>
+    <bug>
+      <id>614767</id>
+      <summary>libgstreamer build failure on OS X x86_64</summary>
+    </bug>
+    <bug>
+      <id>614833</id>
+      <summary>out of srcdir build fails for libs/gst/check</summary>
+    </bug>
+    <bug>
+      <id>615698</id>
+      <summary> &quot; warning: cast increases required alignment of target type &quot; with gcc 4.2.1 on arm</summary>
+    </bug>
+    <bug>
+      <id>615756</id>
+      <summary>[bin] refcount issue when removing element in error</summary>
+    </bug>
+    <bug>
+      <id>615880</id>
+      <summary>Add some more custom flow returns</summary>
+    </bug>
+    <bug>
+      <id>615881</id>
+      <summary>[LFOControlSource] Use correct setter for double GValues</summary>
+    </bug>
+    <bug>
+      <id>616846</id>
+      <summary>Crash in gst_interpolation_control_source_find_control_point_iter</summary>
+    </bug>
+  </bugs>
+</release>
