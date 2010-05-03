@@ -1,5 +1,5 @@
 SUBDIRS = apps bindings bugs dev documentation download images \
-	lists modules news releases \
+	lists modules news releases conference \
 	tasks features \
 	planet artwork
 
