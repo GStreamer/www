@@ -9,6 +9,7 @@
 <page>
   <title>GStreamer Conference 2010</title>
   <body>
+<h1>GStreamer Conference 2010</h1>
 <h2>Cambridge, United Kingdom 26th of October 2010</h2>
 <p>
 In conjuction with the <a href="http://www.embeddedlinuxconference.com/elc_europe10/">
@@ -35,7 +36,7 @@ with an actual agenda soon.
 <li>GStreamer 1.0</li>
 <li>DLNA support</li>
 <li>Cross platform development with GStreamer</li>
-<li>Telepathey VOIP and videoconferencing</li>
+<li>Telepathy VOIP and videoconferencing</li>
 <li>GStreamer and Android</li>
 <li>GStreamer and MeeGo</li>
 <li>GStreamer, Webkit and HTML5</li>
@@ -60,11 +61,14 @@ please check back there for updates on when you can register.
 Anyone interested in open source multimedia are encouraged to join us at the GStreamer Conference 2010.
 If you are a hobbyist or a student interested in the field of multimedia or working for a company
 using or looking to GStreamer on their products then this is the perfect event for you to network
-and learn more about what is happening. The talks should be interested for both developers and
+and learn more about what is happening. The talks should be target both developers and
 managers alike.
 </p>
 <p>
-<img src="http://farm2.static.flickr.com/1361/1330772310_39512c9610.jpg"/>
+<table>
+<tr><td><img src="http://farm2.static.flickr.com/1361/1330772310_39512c9610.jpg" width="500" height="375"/>
+</td></tr>
+<tr><td><b>Photo of Cambridge Arms Hotel</b></td></tr>
 </p>
 
   </body>
