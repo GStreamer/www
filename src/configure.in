@@ -9,6 +9,7 @@ htdocs/artwork/Makefile
 htdocs/apps/Makefile
 htdocs/bindings/Makefile
 htdocs/bugs/Makefile
+htdocs/conference/Makefile
 htdocs/dev/Makefile
 htdocs/documentation/Makefile
 htdocs/download/Makefile
