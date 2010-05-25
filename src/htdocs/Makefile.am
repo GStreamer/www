@@ -1,6 +1,6 @@
 SUBDIRS = apps bindings bugs dev documentation download images \
 	lists modules news releases conference \
-	tasks features \
+	features \
 	planet artwork
 
 built_pages = index.html
@@ -11,8 +11,7 @@ htaccess = \
 	releases/gstreamer/.htaccess \
 	releases/gst-player/.htaccess \
 	releases/gst-plugins/.htaccess \
-	releases/gst-ffmpeg/.htaccess \
-	tasks/.htaccess
+	releases/gst-ffmpeg/.htaccess
 
 
 index.html: $(srcdir)/news/news.xml
