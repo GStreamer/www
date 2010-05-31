@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Stylish Kids in Riot</name>
+  <version>0.10.23</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>alpha: add support for YUY2, YVYU, UYVY and YV12; YUV->RGB conversion fixes</feature>
+    <feature>avimux, flvmux, matroskamux: don't crash if tags arrive on multiple input pads at the same time</feature>
+    <feature>avimux, matroskamux: add support for On2 VP8</feature>
+    <feature>capssetter: element moved from gst-plugins-bad</feature>
+    <feature>deinterlace: add support for most YUV and RGB formats for some methods</feature>
+    <feature>deinterlace: make automatic detection of interlacing the default</feature>
+    <feature>gamma: add support for more YUV/RGB formats, make gamma property controllable</feature>
+    <feature>jpegdec, jpegenc: support more colour spaces and pixel formats</feature>
+    <feature>matroskademux: implement push mode seeking</feature>
+    <feature>matroskademux: add support for WebM</feature>
+    <feature>imagefreeze: plugin moved from gst-plugins-bad</feature>
+    <feature>oss4: plugin moved from gst-plugins-bad</feature>
+    <feature>osxvideosink: implement the xoverlay interface, allow switching views at runtime</feature>
+    <feature>qcelpdepay: add a QCELP depayloader</feature>
+    <feature>qtdemux: add support for VP8; push-mode seeking and ctts table parsing fixes</feature>
+    <feature>rtph263depay: use Picture Start Code to detect packet loss and frame start</feature>
+    <feature>rtph263pay: use found GOBs to apply Mode A payloading</feature>
+    <feature>rtph264depay: DELTA_UNIT marking of output buffers</feature>
+    <feature>rtph264pay: extract SPS and PPS from property provided parameter set</feature>
+    <feature>rtph264pay: add config-interval property to re-send SPS/PPS in stream</feature>
+    <feature>rtpmp4vpay: add config-interval property to re-insert config in stream</feature>
+    <feature>rtptheoradepay: fix in-band configuration parsing</feature>
+    <feature>rtptheorapay: add config-interval parameter to re-insert config in stream</feature>
+    <feature>rtpvorbisdepay, rtptheoradepay: also accept in-line configuration</feature>
+    <feature>rtsp: configure bandwidth properties in the session</feature>
+    <feature>rtspsrc: fall back to SDP ports instead of server_port</feature>
+    <feature>rtspsrc: use the SDP connection info in multicast</feature>
+    <feature>rtspsrc: handle SEEKING queries</feature>
+    <feature>smptealpha: add support for all 4 ARGB formats and YV12 (converted to AYUV)</feature>
+    <feature>videobalance: add support for all RGB formats, Y41B, Y42B and Y444, YUY2, UYVY, AYUV and YVYU</feature>
+    <feature>videobox: add support for Y444, Y42B, Y41B, YUY2, UYUV, and YVYU</feature>
+    <feature>videobox: fix floating point to integer conversion for the alpha values</feature>
+    <feature>videobox: handle ranges/lists of width or height when transforming caps</feature>
+    <feature>videobox: translate navigation events to make sense again upstream</feature>
+    <feature>videofilter: merge gamma, videobalance, and videoflip plugin into single plu</feature>gin
+    <feature>videoflip: add support for all RGB formats and AYUV, Y41B, Y42B and Y444</feature>
+    <feature>videoflip: also flip the pixel-aspect-ratio if width/height are exchanged</feature>
+    <feature>videomixer: add support for Y444, Y42B, Y41B, YV12, YUY2, YVYU, UYVY</feature>
+    <feature>webmmux: Add new webmmux element that only supports muxing of WebM</feature>
+    <feature>y4menc: add 4:2:2, 4:1:1, and 4:4:4 output support</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+      <contributors>
+	<person>Alessandro Decina</person>
+	<person>Benjamin M. Schwartz</person>
+	<person>Benjamin Otte</person>
+	<person>Brian Cameron</person>
+	<person>Christian Schaller</person>
+	<person>Clive Wright</person>
+	<person>David Schleef</person>
+	<person>Frederic Crozat</person>
+	<person>Garrett D'Amore</person>
+	<person>Jan Schmidt</person>
+	<person>Jan Urbański</person>
+	<person>Julien Moutte</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Olivier Crête</person>
+	<person>Philip</person>
+	<person>Philip Jägenstedt</person>
+	<person>Robert Swain</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tristan Matthews</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>619485</id>
+      <summary>matroskademux: skip buffers before a late keyframe (QoS)</summary>
+    </bug>
+    <bug>
+      <id>576286</id>
+      <summary>[videomixer] Should accept/output non-alpha streams</summary>
+    </bug>
+    <bug>
+      <id>618349</id>
+      <summary>osxvideosink: implement the XOverlay interface</summary>
+    </bug>
+    <bug>
+      <id>574416</id>
+      <summary>rtp{theora,vorbis}depay should accept in-line configuration (too)</summary>
+    </bug>
+    <bug>
+      <id>590662</id>
+      <summary>[pulse] Allocates and starts pulse main loops in instance_init</summary>
+    </bug>
+    <bug>
+      <id>592270</id>
+      <summary>Cannot catch 'have-ns-view' on pipeline for playbin and playbin2</summary>
+    </bug>
+    <bug>
+      <id>599585</id>
+      <summary>gstrtph263pay does not fragment frame with limited GOBs</summary>
+    </bug>
+    <bug>
+      <id>600553</id>
+      <summary>[jpegdec] crashes on a fuzzed jpeg</summary>
+    </bug>
+    <bug>
+      <id>606689</id>
+      <summary>Re-send codec data on GstForceKeyUnit</summary>
+    </bug>
+    <bug>
+      <id>607452</id>
+      <summary>Failure to sync on rtpmp4vpay stream; sender;receiver mismatch</summary>
+    </bug>
+    <bug>
+      <id>609405</id>
+      <summary>[qtdemux] Issues when seeking with file with lots of tracks and edit lists</summary>
+    </bug>
+    <bug>
+      <id>609658</id>
+      <summary>[rtph264depay] doesn't mark output frames as keyframes correctly</summary>
+    </bug>
+    <bug>
+      <id>610172</id>
+      <summary>inconsistent h263pay/h263depay behaviour</summary>
+    </bug>
+    <bug>
+      <id>610902</id>
+      <summary>y4menc only supports 4:2:0</summary>
+    </bug>
+    <bug>
+      <id>613786</id>
+      <summary>[PLUGIN-MOVE] Move imagefreeze to gst-plugins-good</summary>
+    </bug>
+    <bug>
+      <id>614305</id>
+      <summary>[PLUGIN-MOVE] oss4 should be moved to good</summary>
+    </bug>
+    <bug>
+      <id>614765</id>
+      <summary>racy stream status leave implementation</summary>
+    </bug>
+    <bug>
+      <id>615798</id>
+      <summary>[smptealpha] Need ability to reverse transition direction</summary>
+    </bug>
+    <bug>
+      <id>616516</id>
+      <summary>[qtdemux] h264 playback gets skippy after a seek</summary>
+    </bug>
+    <bug>
+      <id>616700</id>
+      <summary>[rtspsrc] gst_query_new_seeking() fails on rtspsrc</summary>
+    </bug>
+    <bug>
+      <id>617164</id>
+      <summary>[rtph264pay] SPS/PPS in provided sprop-parameter-sets never sent on timeout</summary>
+    </bug>
+    <bug>
+      <id>617537</id>
+      <summary>rtspsrc always falls back to unicast instead of using the announced multicast</summary>
+    </bug>
+    <bug>
+      <id>617733</id>
+      <summary>[wavparse] handle gst_pad_pull_range() returning less data than requested</summary>
+    </bug>
+    <bug>
+      <id>617739</id>
+      <summary>[PLUGIN-MOVE] Move capssetter to gst-plugins-good</summary>
+    </bug>
+    <bug>
+      <id>618305</id>
+      <summary>[flvmux] last timestamp is stored even if it's invalid</summary>
+    </bug>
+    <bug>
+      <id>618351</id>
+      <summary>avimux crashes when fed from filesrc</summary>
+    </bug>
+    <bug>
+      <id>618386</id>
+      <summary>rtptheoradepay: make delivery-method parameter optional</summary>
+    </bug>
+    <bug>
+      <id>618419</id>
+      <summary>gstrtpbin-Description maybe exist error</summary>
+    </bug>
+    <bug>
+      <id>618733</id>
+      <summary>[efence] Configure check is broken</summary>
+    </bug>
+    <bug>
+      <id>618874</id>
+      <summary>[pulse] regression: broken mainloop locking</summary>
+    </bug>
+    <bug>
+      <id>618940</id>
+      <summary>rtptheorapay/depay wrongly claims to do delivery-method=inline</summary>
+    </bug>
+    <bug>
+      <id>619018</id>
+      <summary>Speex encoder latency should depend on rate</summary>
+    </bug>
+    <bug>
+      <id>619103</id>
+      <summary>WebM demuxer</summary>
+    </bug>
+    <bug>
+      <id>619105</id>
+      <summary>[qtdemux] misalignment between index and sample while looking for frame</summary>
+    </bug>
+    <bug>
+      <id>619219</id>
+      <summary>[matroska] Move webm muxer into a separate element with restrictions</summary>
+    </bug>
+    <bug>
+      <id>619835</id>
+      <summary>[videobox] Either makes video completely opaque or completely transparent</summary>
+    </bug>
+    <bug>
+      <id>619943</id>
+      <summary>[jpegenc] Crash if playing - &gt; setcaps - &gt; ready - &gt; setcaps</summary>
+    </bug>
+    <bug>
+      <id>620002</id>
+      <summary>[flvdemux] Typo in position query handling makes all position queries fail</summary>
+    </bug>
+    <bug>
+      <id>605231</id>
+      <summary>[deinterlace] Support AYUV, RGB colorspaces</summary>
+    </bug>
+    <bug>
+      <id>619533</id>
+      <summary>[avimux, matroskamux, flvmux] crash when receiving tags on multiple pads at the same time</summary>
+    </bug>
+  </bugs>
+
+</release>
