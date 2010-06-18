@@ -177,8 +177,8 @@ RTSP server based on GStreamer (<a href="http://people.freedesktop.org/~wtay/">h
     </description>
     <maintainer>Wim Taymans</maintainer>
     <versions>
-      <stable>0.10.4</stable>
-      <devel>git master</devel>
+      <stable>&gst-rtsp-server-version-stable;</stable>
+      <devel>&gst-rtsp-server-version-devel;</devel>
     </versions>
   </module>
 
