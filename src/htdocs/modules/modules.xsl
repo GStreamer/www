@@ -66,14 +66,20 @@ Here's a quick overview of all of our modules :
           </xsl:when>
           <xsl:otherwise>
 
-
+          <xsl:choose>
+            <xsl:when test="id = string('gst-rtsp-server')">
+              <xsl:value-of select="versions/stable" />
+            </xsl:when>
+            <xsl:otherwise>
             <xsl:call-template name="hyperlink">
               <xsl:with-param name="href">
                 &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/stable" />.html</xsl:with-param>
               <xsl:with-param name="text"><xsl:value-of select="versions/stable" /></xsl:with-param>
             </xsl:call-template>
+            </xsl:otherwise>
+          </xsl:choose>
 
-           </xsl:otherwise>
+          </xsl:otherwise>
         </xsl:choose>
 
       </xsl:otherwise>
