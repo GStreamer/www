@@ -33,6 +33,10 @@ a format to share annotations about digital video documents (movies, courses,
 conferences...), as well as tools to edit and visualize the hypervideos
 generated from both the annotations and the audiovisual documents.</p>
 
+<h2>Audition</h2>
+<p><a href="http://www.rillion.net/audition/index.html">Audition</a>
+Audition is an ncurses-based audio player for the console.</p>
+
 <h2>Banshee</h2>
 <p><a href="http://banshee-project.org/Main_Page">Banshee</a> is a music player for GNOME using Mono</p>
 
