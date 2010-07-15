@@ -1,7 +1,7 @@
 <!ENTITY gst-version-stable "0.10.30">
 
-<!ENTITY gst-ffmpeg-version-stable "0.10.10">
-<!ENTITY gst-python-version-stable "0.10.18">
+<!ENTITY gst-ffmpeg-version-stable "0.10.11">
+<!ENTITY gst-python-version-stable "0.10.19">
 <!ENTITY gstreamer-sharp-version-stable "0.9.2">
 <!ENTITY gst-plugins-base-version-stable "0.10.30">
 <!ENTITY gst-plugins-good-version-stable "0.10.24">

@@ -3844,4 +3844,24 @@ or download tarballs for
     </content>
   </item>
 
+
+  <item>
+    <date>2010-07-15 22:00</date>
+    <title>GStreamer Python Bindings 0.10.19 and FFmpeg plugin 0.10.11 stable releases</title>
+<content>
+<p>
+The GStreamer team announces new releases of the GStreamer Python bindings and the FFmpeg plugin module for the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-python/0.10.19.html">gst-python</a>,
+<a href="&site;/releases/gst-ffmpeg/0.10.11.html">gst-ffmpeg</a>,
+or download tarballs for
+<a href="&site;/src/gst-python/gst-python-0.10.19.tar.bz2">gst-python</a>,
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.11.tar.bz2">gst-ffmpeg</a>,
+    </p>
+    </content>
+  </item>
+
+
 </news>

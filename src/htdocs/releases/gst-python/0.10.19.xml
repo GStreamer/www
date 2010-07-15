@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name>Insert Casablanca quote here</name>
+  <version>0.10.19</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Python Bindings.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+  </intro>
+  <features>
+    <feature>Wrap new gstreamer API up to 0.10.30</feature>
+    <feature>Parallel installability with 0.8.x series</feature>
+    <feature>Threadsafe design and API</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Benjamin Otte</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Emilio Pozuelo Monfort</person>
+	<person>Olivier Aubert</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>572766</id>
+      <summary>gst.Bus.set_sync_handler() leaks and can't be unset</summary>
+    </bug>
+    <bug>
+      <id>589582</id>
+      <summary>Missing gst.Buffer.size setter in python bindings</summary>
+    </bug>
+    <bug>
+      <id>590735</id>
+      <summary>[gst.GhostPad] can't unset target</summary>
+    </bug>
+    <bug>
+      <id>617068</id>
+      <summary>Adding xmp functions to python</summary>
+    </bug>
+    <bug>
+      <id>530417</id>
+      <summary>Add a nicer constructor for GstElements</summary>
+    </bug>
+  </bugs>
+</release>
