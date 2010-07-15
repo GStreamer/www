@@ -239,11 +239,13 @@ fi
 
 if test -d $moduledir/po
 then
-  echo "Press Enter to commit updates to .po files"
-  read
-  pushd $moduledir > /dev/null 2>&1
-  git commit -m "Update .po files" po/*.po
-  popd
+  echo "Press Enter to commit updates to .po files (or enter 'no' to skip)"
+  read do_commit
+  if test "x$do_commit" != "xno"; then
+    pushd $moduledir > /dev/null 2>&1
+    git commit -m "Update .po files" po/*.po
+    popd
+  fi
 fi
 
 cd $moduledir
