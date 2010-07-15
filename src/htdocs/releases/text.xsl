@@ -16,7 +16,7 @@
 <xsl:template name="item-list">
   <xsl:param name="parent" />
   <xsl:for-each select="item">
-* <xsl:value-of select="." />
+      * <xsl:value-of select="." />
   </xsl:for-each>
 </xsl:template>
   <!-- transform a release xml file to a text version of release notes -->
