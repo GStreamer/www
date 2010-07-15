@@ -33,13 +33,13 @@ This module contains elements for, among others:
   <li>containers: ogg</li>
   <li>codecs: vorbis, theora</li>
   <li>text: textoverlay, subparse</li>
-  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc</li>
+  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc, giosrc</li>
   <li>network: tcp</li>
-  <li>typefind</li>
-  <li>audio processing: audioconvert, adder, audiorate, audioscale, volume</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
   <li>visualisation: libvisual</li>
   <li>video processing: ffmpegcolorspace</li>
-  <li>aggregate elements: decodebin, playbin</li>
+  <li>aggregate elements: uridecodebin, playbin2, decodebin2, decodebin, playbin</li>
 </ul>
 
 Other modules containing plug-ins are:
