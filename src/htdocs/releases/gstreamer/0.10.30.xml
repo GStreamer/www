@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Safety First</name>
+  <version>0.10.30</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>GLib requirement was bumped to 2.20, automake requirement to 1.10</feature>
+
+    <feature>bin: unlock gst_element_get_state() on error, instead of hanging forever if no timeout is given</feature>
+    <feature>clock: fix refcounting bug in gst_clock_set_master</feature>
+    <feature>caps: make sure _normalize() is applied on all structures</feature>
+    <feature>info: add new TRACE log level and move refcounting there from LOG level</feature>
+    <feature>pad: don't check twice for changed caps per push</feature>
+    <feature>pad: fix iterator aggregation of all pads in the internal links fallback</feature>
+    <feature>tagsetter: protect tagsetter operations with a lock</feature>
+    <feature>value: support short fourccs (esp. serialisation/deserialisation)</feature>
+
+    <feature>adapter: fix _try_to_merge_up(); optimize progressive masked scans</feature>
+    <feature>basesink: implement percentage position and duration queries</feature>
+    <feature>basesink: fix segment query return value</feature>
+    <feature>basetransform: add accept_caps vmethod</feature>
+    <feature>basetransform: re-evaluate proxy_alloc when reconfigured</feature>
+    <feature>basetransform: assume in_size equals out_size if there's no transform_size/get_unit_size vfunc</feature>
+
+    <feature>fdsink, filesink: make sync property work correctly</feature>
+    <feature>typefind: make sure buffers' metadata is writable before setting caps on them</feature>
+    <feature>queue2: fix merging of ranges</feature>
+    <feature>queue2: don't wait for data when EOS</feature>
+    <feature>queue2: don't ignore failure to open the temporary file location</feature>
+
+    <feature>tools: make gst-launch print things correctly to stderr/stdout and make --quiet work correctly</feature>
+    <feature>introspection: add many more gobject-introspection annotations</feature>
+    <feature>xml: serialisation/deserialisation to/from XML has been deprecated, since it's always been broken
+             for all but the most trivial pipelines, and will likely never be fixed</feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
+Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
+Let us know if you want to be added to this list.
+</p>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Alexander Saprykin</person>
+	<person>Benjamin Gaignard</person>
+	<person>Benjamin Otte</person>
+	<person>David Schleef</person>
+	<person>Eduardo Dobay</person>
+	<person>Edward Hervey</person>
+	<person>Johan Dahlin</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Martin Bisson</person>
+	<person>Olivier Crête</person>
+	<person>Philippe Normand</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tristan Matthews</person>
+	<person>Wim Taymans</person>
+	<person>Zaheer Abbas Merali</person>
+	<person>Руслан Ижбулатов</person>
+  </contributors>
+
+  <api>
+    <additions>
+    <item>gst_caps_steal_structure()</item>
+    <item>gst_clock_id_wait_async_full()</item>
+    <item>gst_element_link_pads_full()</item>
+    <item>GstPadLinkCheck</item>
+    <item>gst_pad_link_check_get_type()</item>
+    <item>gst_pad_link_full()</item>
+    <item>gst_structure_fixate_field_string()</item>
+    <item>GST_TAG_DEVICE_MANUFACTURER</item>
+    <item>GST_TAG_DEVICE_MODEL</item>
+    <item>GST_TAG_IMAGE_ORIENTATION</item>
+    <item>GST_TAG_GEO_LOCATION_CAPTURE_DIRECTION</item>
+    <item>GST_TAG_GEO_LOCATION_MOVEMENT_DIRECTION</item>
+    <item>GST_TAG_GEO_LOCATION_MOVEMENT_SPEED</item>
+    <item>gst_tag_list_peek_string_index()</item>
+    <item>GST_TRACE</item>
+    <item>GST_TRACE_OBJECT</item>
+    <item>GST_CAT_TRACE</item>
+    <item>GST_CAT_TRACE_OBJECT</item>
+    <item>GST_LEVEL_TRACE</item>
+
+    <item>gst_adapter_masked_scan_uint32_peek</item>
+    <item>GstBaseSink::enable-last-buffer</item>
+    <item>gst_base_sink_is_last_buffer_enabled()</item>
+    <item>gst_base_sink_set_last_buffer_enabled()</item>
+    <item>GstBaseTransform::accept_caps()</item>
+    </additions>
+    <deprecations>
+    <item>gst_object_get_name_prefix()</item>
+    <item>gst_object_set_name_prefix()</item>
+    <item>gst_caps_load_thyself()</item>
+    <item>gst_caps_save_thyself()</item>
+    <item>gst_class_signal_emit_by_name()</item>
+    <item>gst_object_save_thyself()</item>
+    <item>gst_object_restore_thyself()</item>
+    <item>gst_pad_load_and_link()</item>
+    <item>gst_xml_get_element()</item>
+    <item>gst_xml_get_topelements()</item>
+    <item>gst_xml_get_type()</item>
+    <item>gst_xml_make_element()</item>
+    <item>gst_xml_new()</item>
+    <item>gst_xml_parse_doc()</item>
+    <item>gst_xml_parse_file()</item>
+    <item>gst_xml_parse_memory()</item>
+    <item>gst_xml_write()</item>
+    <item>gst_xml_write_file()</item>
+    </deprecations>
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>623586</id>
+      <summary>gst/tagsetter check fails</summary>
+    </bug>
+    <bug>
+      <id>463435</id>
+      <summary>Skip #include &lt; libxml/parser.h &gt; in gstconfig.h.in when  not needed</summary>
+    </bug>
+    <bug>
+      <id>505770</id>
+      <summary>gst_element_get_state() should unblock if element posts an error</summary>
+    </bug>
+    <bug>
+      <id>615820</id>
+      <summary>implement percentage position and duration queries</summary>
+    </bug>
+    <bug>
+      <id>615941</id>
+      <summary>[tags] Add GST_TAG_DEVICE_MANUFACTURER and GST_TAG_DEVICE_MODEL</summary>
+    </bug>
+    <bug>
+      <id>616586</id>
+      <summary>Use GObject's boxed type for GError</summary>
+    </bug>
+    <bug>
+      <id>617223</id>
+      <summary>[tags] Add tags for direction of capture and movement</summary>
+    </bug>
+    <bug>
+      <id>617625</id>
+      <summary>Commandline utility wrappers (gst-run) don't work on Windows</summary>
+    </bug>
+    <bug>
+      <id>618644</id>
+      <summary>gst_pad_get_caps() Return pad template if parent element is in GST_STATE_NULL</summary>
+    </bug>
+    <bug>
+      <id>619508</id>
+      <summary>[tag] Add image orientation tag</summary>
+    </bug>
+    <bug>
+      <id>619815</id>
+      <summary>GST_PLUGIN_LOADING_WHITELIST env var for unit tests</summary>
+    </bug>
+    <bug>
+      <id>619828</id>
+      <summary>[API] adapter: add masked_scan_uint32_peek</summary>
+    </bug>
+    <bug>
+      <id>620460</id>
+      <summary>info: add new TRACE log level and move refcounting there from LOG level</summary>
+    </bug>
+    <bug>
+      <id>620490</id>
+      <summary>[basesink] segment query unconditionally returns FALSE</summary>
+    </bug>
+    <bug>
+      <id>621006</id>
+      <summary>Deprecate unused gst_object_{get|set}_name_prefix()</summary>
+    </bug>
+    <bug>
+      <id>621282</id>
+      <summary>Display of short fourccs is in hex instead of text</summary>
+    </bug>
+    <bug>
+      <id>621332</id>
+      <summary>BaseTransform should disable proxy alloc if downstream changes caps</summary>
+    </bug>
+    <bug>
+      <id>621334</id>
+      <summary>GstBaseTransform should not require a transform_size function</summary>
+    </bug>
+    <bug>
+      <id>621505</id>
+      <summary>Disable memory poisoning by default for releases</summary>
+    </bug>
+    <bug>
+      <id>621527</id>
+      <summary>gstcaps: New gst_caps_steal_structure() method</summary>
+    </bug>
+    <bug>
+      <id>621530</id>
+      <summary>filesink ignores sync=true</summary>
+    </bug>
+    <bug>
+      <id>621595</id>
+      <summary>--quiet doesnt make gst-launch be completely quiet, also messages should not go to stdout</summary>
+    </bug>
+    <bug>
+      <id>621773</id>
+      <summary>Add introspection annotations</summary>
+    </bug>
+    <bug>
+      <id>621867</id>
+      <summary>gst-launch: rename new --no-play command line option</summary>
+    </bug>
+    <bug>
+      <id>621896</id>
+      <summary>[API][taglist] Add gst_tag_list_peek_string_index</summary>
+    </bug>
+    <bug>
+      <id>622504</id>
+      <summary>[GstPad] Provide more fine-grained linking methods</summary>
+    </bug>
+    <bug>
+      <id>622546</id>
+      <summary>distcheck fails in docs/plugins/</summary>
+    </bug>
+    <bug>
+      <id>622685</id>
+      <summary>[GstXml] Deprecate GstXml</summary>
+    </bug>
+    <bug>
+      <id>622967</id>
+      <summary>[queue2] Problems with progressive downloading</summary>
+    </bug>
+    <bug>
+      <id>623301</id>
+      <summary>gst_caps_normalize : doesn't normalize completely</summary>
+    </bug>
+    <bug>
+      <id>623589</id>
+      <summary>Fix races/refcounting bugs with slave clocks</summary>
+    </bug>
+    <bug>
+      <id>624113</id>
+      <summary>[tags] wrong behaviour in merge function for strings</summary>
+    </bug>
+    <bug>
+      <id>622025</id>
+      <summary>Can't build gstreamer due to Gst-0.10.gir: error: Can't resolve type 'PadIntLinkFunction' for field Gst.Pad.intlinkfunc</summary>
+    </bug>
+  </bugs>
+</release>
