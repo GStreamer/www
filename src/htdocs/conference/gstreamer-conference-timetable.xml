@@ -9,191 +9,191 @@
 <page>
   <title>GStreamer Conference 2010 Program </title>
 
-<BODY LANG="en-US" DIR="LTR">
-<TABLE WIDTH="100%" BORDER="1" BORDERCOLOR="#000000" CELLPADDING="4" CELLSPACING="0">
-	<COL WIDTH="68*" />
-	<COL WIDTH="103*" />
-	<COL WIDTH="85*" />
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>GStreamer talks 
-			</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P>Main Room</P>
-		</TD>
-		<TD WIDTH="33%">
-			<P>Darwin</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>09.00 
-			</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P>Keynote - GStreamer - Current and future developments - Wim
+<body lang="en-US" dir="LTR">
+<table width="100%" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0">
+	<col width="68*" />
+	<col width="103*" />
+	<col width="85*" />
+	<tr valign="top">
+		<td width="27%">
+			<p>GStreamer talks 
+			</p>
+		</td>
+		<td WIDTH="40%">
+			<p>Main Room</p>
+		</td>
+		<td WIDTH="33%">
+			<p>Darwin</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>09.00 
+			</p>
+		</td>
+		<td width="40%">
+			<p>Keynote - GStreamer - Current and future developments - Wim
 			Taymans, Collabora Multimedia 
-			</P>
-		</TD>
-		<TD WIDTH="33%">
-			<P>
-			</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>10.00</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P>HTML5 and GStreamer - Philippe Normand, Igalia 
-			</P>
-		</TD>
-		<TD WIDTH="33%">
-			<P>Cross platform development with GStreamer - Mike Smith,
+			</p>
+		</td>
+		<td width="33%">
+			<p>
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<P>10.00</p>
+		</td>
+		<td width="40%">
+			<p>HTML5 and GStreamer - Philippe Normand, Igalia 
+			</p>
+		</td>
+		<td width="33%">
+			<p>Cross platform development with GStreamer - Mike Smith,
 			Songbird 
-			</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>11.00</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P>Challenges of video editing in your pocket - Edward Hervey,
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>11.00</p>
+		</td>
+		<td width="40%">
+			<p>Challenges of video editing in your pocket - Edward Hervey,
 			Collabora Multimedia 
-			</P>
-		</TD>
-		<TD WIDTH="33%">
-			<P>A GStreamer based framework for adaptive streaming
-			applications, Emanuele Quacchio,  ST Microelectronics</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>12.00 
-			</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P>GStreamer and OMAP4 - Rob Clark, Texas Instruments 
-			</P>
-		</TD>
-		<TD WIDTH="33%">
-			<P>Optimizing multimedia with Orc - David Schleef, Entropy Wave 
-			</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>13.00</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P>Lunch 
-			</P>
-		</TD>
-		<TD WIDTH="33%">
-			<P>Lunch</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>14.00</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P>Voip and Videoconferencing with Telepathy and Farstream -
+			</p>
+		</td>
+		<td width="33%">
+			<p>A GStreamer based framework for adaptive streaming
+			applications, Emanuele Quacchio,  ST Microelectronics</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>12.00 
+			</p>
+		</td>
+		<td width="40%">
+			<p>GStreamer and OMAP4 - Rob Clark, Texas Instruments 
+			</p>
+		</td>
+		<td width="33%">
+			<p>Optimizing multimedia with Orc - David Schleef, Entropy Wave 
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>13.00</p>
+		</td>
+		<td width="40%">
+			<p>Lunch 
+			</p>
+		</td>
+		<td WIDTH="33%">
+			<p>Lunch</p>
+		</td>
+	</tr>
+	<re valign="top">
+		<td width="27%">
+			<p>14.00</p>
+		</td>
+		<td width="40%">
+			<p>Voip and Videoconferencing with Telepathy and Farstream -
 			Olivier Crete, Collabora 
-			</P>
-		</TD>
-		<TD WIDTH="33%">
-			<P>DLNA and GUPNP - Zeeshan Ali, Nokia 
-			</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>15.00</P>
-		</TD>
-		<TD ROWSPAN="2" WIDTH="40%">
-			<P>Case study - Tandberg and GStreamer, Håvard Graff, Tandberg 
-			</P>
-		</TD>
-		<TD WIDTH="33%">
-			<P>SLTV - live streaming for the masses – Luciana Fujii,
-			Holoscopio</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>15.30</P>
-		</TD>
-		<TD WIDTH="33%">
-			<P>Case study - Flumotion and GStreamer - Zaheer Merali</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>16.00</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P><B>Afternoon Break</B></P>
-		</TD>
-		<TD WIDTH="33%">
-			<P><B>Afternoon Break</B></P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>16.30</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P><SPAN STYLE="font-weight: normal">Case study - GStreamer on
-			Axis devices, Jonas Holmberg, Axis</SPAN><B> </B>
-			</P>
-		</TD>
-		<TD WIDTH="33%">
-			<P>Using ICE middleware with GStreamer to implement real-time
+			</p>
+		</td>
+		<td WIDTH="33%">
+			<p>DLNA and GUPNP - Zeeshan Ali, Nokia 
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>15.00</p>
+		</td>
+		<td rowspan="2" width="40%">
+			<p>Case study - Tandberg and GStreamer, Håvard Graff, Tandberg 
+			</p>
+		</td>
+		<td width="33%">
+			<p>SLTV - live streaming for the masses – Luciana Fujii,
+			Holoscopio</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>15.30</p>
+		</td>
+		<td width="33%">
+			<p>Case study - Flumotion and GStreamer - Zaheer Merali</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>16.00</p>
+		</td>
+		<td width="40%">
+			<p><b>Afternoon Break</b></p>
+		</td>
+		<td width="33%">
+			<p><b>Afternoon Break</b></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>16.30</p>
+		</td>
+		<td width="40%">
+			<p>Case study - GStreamer on
+			Axis devices, Jonas Holmberg, Axis
+			</p>
+		</td>
+		<td width="33%">
+			<p>Using ICE middleware with GStreamer to implement real-time
 			QoS-aware video streaming for remote controlled vehicle, Andrey
-			Nechypurenko and Maksym Parkachov</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>17.00 Lightning talks 
-			</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P>3D Stereoscopic and GStreamer, Martin Bisson</P>
-		</TD>
-		<TD ROWSPAN="3" WIDTH="33%">
-			<P>Case Study - Intel SMD elements in GStreamer, Josep Torra,
+			Nechypurenko and Maksym Parkachov</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>17.00 Lightning talks 
+			</p>
+		</td>
+		<td width="40%">
+			<p>3D Stereoscopic and GStreamer, Martin Bisson</p>
+		</td>
+		<td rowspan="3" width="33%">
+			<p>Case Study - Intel SMD elements in GStreamer, Josep Torra,
 			Fluendo 
-			</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P>17.15</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P>WebM and GStreamer, Sebastian Droge 
-			</P>
-		</TD>
-	</TR>
-	<TR VALIGN="TOP">
-		<TD WIDTH="27%">
-			<P> 17.30</P>
-		</TD>
-		<TD WIDTH="40%">
-			<P>Case study - Using gstreamer for building automated multimedia
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>17.15</p>
+		</td>
+		<td width="40%">
+			<p>WebM and GStreamer, Sebastian Droge 
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p> 17.30</p>
+		</td>
+		<td width="40%">
+			<p>Case study - Using gstreamer for building automated multimedia
 			systems, Florent Thiery, Ubicast.eu 
-			</P>
-		</TD>
-	</TR>
-	<TR>
-		<TD COLSPAN="3" WIDTH="100%" VALIGN="TOP">
-			<P ALIGN="CENTER">18.00 End of Day</P>
-		</TD>
-	</TR>
-</TABLE>
-</BODY>
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" width="100%" valign="TOP">
+			<p align="center">18.00 End of Day</p>
+		</td>
+	</tr>
+</table>
+</body>
 </page>
