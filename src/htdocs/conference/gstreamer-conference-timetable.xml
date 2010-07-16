@@ -14,7 +14,7 @@
 	<COL WIDTH="68*" />
 	<COL WIDTH="103*" />
 	<COL WIDTH="85*" />
-	<TR VALIGN="TOP" />
+	<TR VALIGN="TOP">
 		<TD WIDTH="27%">
 			<P>GStreamer talks 
 			</P>
@@ -195,7 +195,5 @@
 		</TD>
 	</TR>
 </TABLE>
-<P STYLE="margin-bottom: 0cm">
-</P>
 </BODY>
 </page>
