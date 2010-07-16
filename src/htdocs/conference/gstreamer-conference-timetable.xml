@@ -43,7 +43,7 @@
 	</tr>
 	<tr valign="top">
 		<td width="27%">
-			<P>10.00</p>
+			<p>10.00</p>
 		</td>
 		<td width="40%">
 			<p>HTML5 and GStreamer - Philippe Normand, Igalia 
@@ -95,7 +95,7 @@
 			<p>Lunch</p>
 		</td>
 	</tr>
-	<re valign="top">
+	<tr valign="top">
 		<td width="27%">
 			<p>14.00</p>
 		</td>
