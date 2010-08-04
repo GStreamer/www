@@ -52,19 +52,47 @@ git clone git://anongit.freedesktop.org/gstreamer/modulename
 </p>
 <h2>Developer Git Access</h2>
 <p>
-Only project developers can access the Git tree via this method. A Git client must be installed on your client machine. Substitute modulename and username with the proper values. Enter your site password when prompted.
-<br/>
-<p>
-You find information on how to get a developer account on <a href="http://www.freedesktop.org/wiki/AccountRequests">freedesktop here</a></p>
-Developers may also make use of shared SSH keys for authentication.
+Developers can check out modules from git like this:
 <br/>
 <pre>
 git clone ssh://username@git.freedesktop.org/git/gstreamer/modulename
 </pre>
 <br/>
+Only project developers can access the Git tree via this method. A Git client
+must be installed on your client machine. Substitute modulename and username
+with the proper values. Make sure the appropriate SSH key is available on your
+machine (add it with <pre>ssh-add</pre>). Enter your SSH key's passphrase when
+prompted.
+</p>
+<p>
+You can find information on how to get a developer account on
+<a href="http://www.freedesktop.org/wiki/AccountRequests">freedesktop here</a>.
+</p>
+<p>
+However, usually you should only apply for a developer account if you have
+been encouraged by a GStreamer developer to do so, or have been contributing
+to GStreamer and been active in the GStreamer community for some time.
+</p>
+<p>
+You do not need a developer account in order to work on GStreamer. Anonymous
+git access should be sufficient for that, and it's easy to maintain personal
+git branches elsewhere with git (e.g. on a personal server, or gitorious or
+github). Patches can and should then be submitted via bugzilla, as per the
+<a href="http://gstreamer.freedesktop.org/wiki/SubmittingPatches">SubmittingPatches</a>
+page on the wiki.
+</p>
+<p>
 Developers will be added to the project for write access as necessary.
 For all other changes, please submit patches (<code>git diff</code>) to <A HREF="http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">bugzilla</A> or
-send it to the <A HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel list</A>.</p>
+send it to the <A HREF="http://lists.sourceforge.net/mailman/listinfo/gstreamer-devel">gstreamer-devel list</A>.
+</p>
+
+<h2>Developer Guidelines</h2>
+
+<p>Best practices for making patches and/or committing to GStreamer git can
+be found on the <a href="http://gstreamer.freedesktop.org/wiki/GitDeveloperGuidelines">GitDeveloperGuidelines</a>
+wiki page.
+</p>
 
 <H1>Buildbots</H1>
 
