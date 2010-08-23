@@ -21,8 +21,6 @@
 		<td>
 			<p>Wim Taymans, Collabora Multimedia 
 			</p>
-		</td>
-		<td>
 			<p>
 		Wim Taymans is one of the founders of the GStreamer project and the man behind the current GStreamer design. Wim got
 		a long history in the development of multimedia software, starting with computer game development on the Commodore 64.
@@ -47,8 +45,6 @@
 		<td>
 			<p>Mike Smith,Songbird 
 			</p>
-		</td>
-		<td>
 		<p>
 		Mike Smith is the main GStreamer developer at Songbird, a company making the cross-platform music player Songbird.
 		Mike will talk about their experiences with using GStreamer as a cross-platform media engine on Linux, Windows 
@@ -87,14 +83,14 @@
 	</tr>
 	<tr valign="top">
 		
-		<td width="40%">
+		<td>
 			<p>Rob Clark has been working in the arm embedded world for more than 10 years, and
 			playing with linux for even longer.  And most recently, gets to combine the
 			two.  For the last year or so, he has been making GStreamer work with the
 			hardware accelerated codecs and video on the TI OMAP4 platform.
 			</p>
 		</td>
-		<td width="33%">
+		<td>
 			<p>Implementing DLNA using GStreamer - Zeeshan Ali, Nokia</p>
 			<p>Zeeshan Ali is a Lead Developer/Architect at Nokia OSSO in Helsinki, He started as a GStreamer 
 			plugin and application developer and is known in the GNOME community for his video-whale project. 
@@ -107,7 +103,7 @@
 	
 	<tr valign="top">
 		
-		<td width="40%">
+		<td>
 			<p>Voip and Videoconferencing with Telepathy and Farstream -
 			Olivier Crete, Collabora 
 			</p>
@@ -117,7 +113,7 @@
 			conferencing framework. In his work for Collabora, he concentrates mainly on Farstream.
 			</p>
 		</td>
-		<td WIDTH="33%">
+		<td>
 			<p>Optimizing multimedia with Orc - David Schleef, Entropy Wave 
 			</p>
 			<p>David Schleef is one of the leading experts on open source multimedia. He has been active for 
@@ -130,25 +126,25 @@
 	</tr>
 	<tr valign="top">
 		
-		<td rowspan="2" width="40%">
+		<td>
 			<p>Case study - Tandberg and GStreamer, Håvard Graff, Tandberg 
 			</p>
-		</td>
-		<td width="33%">
+		</td></tr>
+		<tr><td>
 			<p>SLTV - live streaming for the masses – Luciana Fujii,
 			Holoscopio</p>
 		</td>
 	</tr>
 	<tr valign="top">
 		
-		<td width="33%">
+		<td>
 			<p>Case study - Flumotion and GStreamer - Zaheer Merali</p>
 		</td>
 	</tr>
 	
 	<tr valign="top">
 		
-		<td width="40%">
+		<td>
 			<p>Case study - GStreamer on
 			Axis devices, Jonas Holmberg, Axis
 			</p>
@@ -163,7 +159,6 @@
 		</td></tr>
 		<tr><td>
 		<p>Andrey Nechypurenko and Maksym Parkachov</p>
-		</td><td>
 		<p>Andrey Nechypurenko is currently working as a senior software engineer
 		at General Electric. He has many years of experience in defining
 		architecture and implementing large scale distributed real-time and
@@ -181,10 +176,10 @@
 	</tr>
 	<tr valign="top">
 		
-		<td width="40%">
+		<td>
 			<p>3D Stereoscopic and GStreamer, Martin Bisson</p>
 		</td>
-		<td rowspan="3" width="33%">
+		<td>
 			<p>Case Study - Intel SIMD elements in GStreamer, Josep Torra,
 			Fluendo 
 			</p>
@@ -203,14 +198,14 @@
 	</tr>
 	<tr valign="top">
 		
-		<td width="40%">
+		<td>
 			<p>WebM and GStreamer, Sebastian Droge 
 			</p>
 		</td>
 	</tr>
 	<tr valign="top">
 		
-		<td width="40%">
+		<td>
 			<p>Case study - Using gstreamer for building automated webcasting systems, Florent Thiery, Ubicast.eu 
 			</p>
 			<p>Florent Thiery is co-founder and C.T.O. of UbiCast, a small french company dedicated to providing 
@@ -227,7 +222,7 @@
 </table>
 
 <p>
-<b>Note:</b> there may be further GStreamer-related talks on October 27/28 as part of the
+<b>Note:</b> there will be further GStreamer-related talks on October 27/28 as part of the
 <a href="http://www.embeddedlinuxconference.com/elc_europe10/program.html">main CE Linux program</a>.
 </p>
 
