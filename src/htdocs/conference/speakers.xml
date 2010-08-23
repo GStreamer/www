@@ -80,7 +80,7 @@
 	This talk will focus on the GStreamer Editing Services (GES) layer for GStreamer which adds support for
 	high quality and low overhead video editing in an easy manner with GStreamer. GES is developed with the
 	embedded space in mind, but will also be useful for desktop developers who wants to add simple video editing
-	support to their applications.
+	support to their applications.</p>
 	</td></tr>
 		
 	<tr bgcolor="#C0C0C0"><td>
@@ -120,6 +120,12 @@
 	For the past three years, he had been obsessed with UPnP and in turn the GUPnP project and Rygel. 
 	When he gets some time from his office work and GUPnP, he hangs around with his wife and tries to 
 	learn some Finnish.</p>
+	<p>Rygel is a collection of DLNA (UPnP AV) services implementing the <a href="http://www.dlna.org">DLNA</a> standard for 
+	interoperable multimedia devices, implemented through a plug-in mechanism. UPnP in simplest words is a set of protocols 
+	that defines how different devices on a home network can seamlessly (without or with minimum configuration) communicate with 
+	each other. This talk will introduce you to the current state of Rygel and give you an introduction how Rygel can be quickly 
+	deployed to enable you to ship a DLNA-enabled device.
+	</p>
 	</td></tr>
 	
 	<tr valign="top"><td>
