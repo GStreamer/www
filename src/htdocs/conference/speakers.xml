@@ -11,13 +11,13 @@
 
 <body lang="en-US" dir="LTR">
 
-<h1>GStreamer Conference 2010</h1>
+<h1>Speakers bio and abstracts - GStreamer Conference 2010</h1>
 <h2>Cambridge, United Kingdom, 26th of October 2010</h2>
 
-<table width="100%" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0">
+<table width="100%" border="0" bordercolor="#000000" cellpadding="4" cellspacing="0">
 	
-	<tr valign="top"><td>
-	<p>Wim Taymans, Collabora Multimedia</p>
+	<tr valign="top" bgcolor="#C0C0C0"><td>
+	<p>Keynote - GStreamer - Current and future development, Wim Taymans, Collabora Multimedia</p>
 	<p>
 	Wim Taymans is one of the founders of the GStreamer project and the man behind the current GStreamer design. Wim got
 	a long history in the development of multimedia software, starting with computer game development on the Commodore 64.
@@ -25,39 +25,65 @@
 	design and use of GStreamer.
 	</p>
 	<p>
-	Wim Taymans will in his keynote be speaking about the current state of GStreamer and the development plans for GStreamer 1.0.
+	Wim Taymans will in his keynote be speaking about the current state of the GStreamer project and the development 
+	plans for GStreamer 1.0.
 	</p>
 	</td></tr>
 
 	<tr valign="top"><td>
+	<p>Webkit, HTML5 and GStreamer, Philippe Normand, Igalia</p>
 	<p>Philippe Normand has worked at ENST-Bretagne (France) on home-care and domotic technologies for 
 	elderly people. He too worked on the Elisa/Moovida media-center project at Fluendo.
 	</p>
-	<p>At Igalia he currently works on improving the HTML5 audio/video support in WebKitGTK+ with the GStreamer 
-	multimedia framework. Philippe has a Master degree in Computer Sciences.</p>
+	<p>At Igalia he currently works on improving the HTML5 audio/video support in WebKitGTK+ with 
+	the GStreamer multimedia framework. Philippe has a Master degree in Computer Sciences.</p>
+	<p>
+	This talk will cover integrating a GStreamer-based media player in
+	multiple WebKit ports to provide HTML5 audio/video support on a
+	variety of platforms including (but not limited to) Linux, Mac OS X
+	and Windows.
+	</p>
+	<p>
+	It will describe the modifications done on the player first developed
+	for the GTK+ WebKit port to be cross-platform and modular enough to be
+	used by other ports such as WinCairo and the official Mac WebKit port.
+	</p>
+	<p>
+	Other topics discussed will include the fullscreen video support
+	implementation, a check-list explaining how to enable the GStreamer
+	player for your WebKit port and a small HTML5 video showcase of the
+	current WebKit ports supporting the GStreamer player.
+	</p>
 	</td></tr>
 
-	<tr valign="top"><td>
-	<p>Michael Smith,Songbird 
-	</p>
+	<tr valign="top" bgcolor="#C0C0C0"><td>
+	<p>Cross platform development with GStreamer, Michael Smith,Songbird</p>
 	<p>
 	Michael Smith is the main GStreamer developer at Songbird, a company making the cross-platform music player Songbird.
 	Michael will talk about their experiences with using GStreamer as a cross-platform media engine on Linux, Windows 
 	and Mac OS X.
 	</p>
+	<p>
+	This talk will focus on the advantages and challenges when using GStreamer as a cross platform middleware based on 
+	the experiences with developing the Songbird Music Player on Windows, MacOS X, Solaris and Linux, all using the GStreamer
+	framework for media playback.
 	</td></tr>
 	
 	<tr valign="top"><td>
-	<p>Edward Hervey, Collabora Multimedia 
-	</p>
+	<p>Challenges of video editing in your pocket ,Edward Hervey, Collabora Multimedia</p>
 	<p>Edward Hervey founded PiTiVi during his final year at the EPITECH engineering school in Paris. 
 	He soon found that PiTiVi's needs required improvements to the GStreamer framework, and began 
 	developing them. At Collabora Multimedia, Edward manages the PiTiVi team and continues to contribute 
 	substantially to the GStreamer project 
 	</p>
+	<p>
+	This talk will focus on the GStreamer Editing Services (GES) layer for GStreamer which adds support for
+	high quality and low overhead video editing in an easy manner with GStreamer. GES is developed with the
+	embedded space in mind, but will also be useful for desktop developers who wants to add simple video editing
+	support to their applications.
 	</td></tr>
 		
-	<tr><td>
+	<tr bgcolor="#C0C0C0"><td>
 	<p>A GStreamer based framework for adaptive streaming
 	applications, Emanuele Quacchio,  ST Microelectronics</p>
 	<p>Emanuele QUACCHIO *received the Master Degree in Electronic Engineering 
@@ -71,9 +97,15 @@
 	conferences. Since 2006 he has participated to a number of EU funded 
 	projects (ASTRALS, SEA, P2PNext, COAST) and he has given lectures at 
 	Polytechnic of Turin on video communication.</p>
+	<p>
+	In this work we present novel gstreamer plugins that lay the groundwork for the development
+	of adaptive streaming applications supporting the novel video coding standard known as
+	Scalable Video Coding (SVC) , extension of state-of-art H.264/AVC standard.
+	</p>
 	</td></tr>
 
 	<tr valign="top"><td>
+	<p>GStreamer and OMAP4, Rob Clark, Texas Instruments</p>
 	<p>Rob Clark has been working in the arm embedded world for more than 10 years, and
 	playing with linux for even longer.  And most recently, gets to combine the
 	two.  For the last year or so, he has been making GStreamer work with the
@@ -81,7 +113,7 @@
 	</p>
 	</td></tr>
 
-	<tr><td>
+	<tr bgcolor="#C0C0C0"><td>
 	<p>Implementing DLNA using GStreamer - Zeeshan Ali, Nokia</p>
 	<p>Zeeshan Ali is a Lead Developer/Architect at Nokia OSSO in Helsinki, He started as a GStreamer 
 	plugin and application developer and is known in the GNOME community for his video-whale project. 
@@ -91,15 +123,31 @@
 	</td></tr>
 	
 	<tr valign="top"><td>
-	<p>Voip and Videoconferencing with Telepathy and Farstream - Olivier Crete, Collabora</p>
+	<p>Integrating VideoConferencing into Everyday Applications, Olivier Crete, Collabora</p></p>
 	<p>
-	Olivier Crête has degrees in software engineering, including one from École Polytechnique de Montréal. 
-	He lives in Montréal, Canada, and is the lead developer and designer for the Farstream audio/video 
-	conferencing framework. In his work for Collabora, he concentrates mainly on Farstream.
+	Olivier has been involved in free software since 2000. He's been the
+	maintainer of GnomeICU (a Gnome ICQ client) since 2002 and a Gentoo
+	developer since 2003, starting the amd64 port and also helping maintain
+	various IM applications. He currently works for Collabora on GStreamer,
+	the Farstream VoIP framework and its integration into Telepathy. 
+	</p>
+	<p>
+	This talk will discuss how until now, videoconferencing has lived in dedicated applications. 
+	We've had instant messengers with VoIP, softphones, but they don't integrate
+	into the everyday workflow. Farstream, the next generation of Farsight,
+	the GStreamer based VoIP and videoconferencing framework not only
+	provides media handling to communication applications such as Empathy,
+	Pidgin, aMSN and the Nokia Internet Tablets, but can also be used to
+	integrate videoconferencing into everyday applications.</p>
+	<p>This talk will give a brief introduction to Farstream and Telepathy and how they
+	integrate. I will then show how to integrate videoconferencing features
+	into an application such as a non-linear editor. It will also demonstrate
+	how easy it is for application developers to integrate such features
+	into their applications and how useful it can be for users.
 	</p>
 	</td></tr>
 		
-	<tr><td>
+	<tr bgcolor="#C0C0C0"><td>
 	<p>Optimizing multimedia with Orc - David Schleef, Entropy Wave </p>
 	<p>David Schleef is one of the leading experts on open source multimedia. He has been active for 
 	13+ years in leading and developing several open source projects, including GStreamer, Swfdec, Comedi, 
@@ -107,6 +155,11 @@
 	power of CPU vector extensions without having to write assembly code or intrinsics. Allegedly, he got 
 	tired of writing yet another thousand lines of assembly code and wrote a program to write it for him.
 	</p>
+	<p>
+	This talk will present the Orc library and set of tools for compiling and executing very simple programs that operate on arrays of data.  
+	The “language” is a generic assembly language that represents many of the features available in SIMD architectures, including 
+	saturated addition and subtraction, and many arithmetic operations. The talk will also cover the recently released
+	NEON backend for ORC.</p>
 	</td></tr>
 	
 	<tr valign="top"><td>
@@ -114,15 +167,36 @@
 	</p>
 	</td></tr>
 	
-	<tr><td>
+	<tr bgcolor="#C0C0C0"><td>
 	<p>SLTV - live streaming for the masses – Luciana Fujii, Holoscopio</p>
+	<p>
+	<a href="http://sltv.holoscopio.com">SLTV</a> is a free software designed to allow
+	live recording and streaming with a simple GTK+-based interface.
+	Features include switching sources, picture-in-picture, watermark,
+	multiple filters and multiple simultaneous outputs without stopping the
+	pipeline.
+	</p>
+	<p>
+	The main challenge during SLTV development was to dynamically change the
+	pipeline to, for instance, change which video effect to apply on the	
+	fly.  Although most of the software features may seem simple if
+	considered separately, the resulting pipeline became quite complex, and
+	the same was true for making all the pieces fit together.
+	</p>
 	</td></tr>
 	
 	<tr valign="top"><td>
 	<p>Case study - Flumotion and GStreamer - Zaheer Merali</p>
+	<p>
+	This talk will feature an introduction to Flumotion the open source streaming server, the
+	GStreamer, Python and Twisted powered streaming server. It will discuss how flumotion distributes 
+	GStreamer pipelines across processes and how flumotion tries to ensure sync between different processes doing
+	for example capture that could even be on different machines. We will also look at how flumotion streams to the 
+	end user client, adminning a Flumotion streaming server and finally how to create your own Flumotion component.
+	</p>
 	</td></tr>
 	
-	<tr valign="top"><td>
+	<tr valign="top" bgcolor="#C0C0C0"><td>
 	<p>Case study - GStreamer on Axis devices, Jonas Holmberg, Axis</p>
 	<p>
 	In 2006 Axis camera developers decided to implement a GStreamer based
@@ -134,7 +208,9 @@
 	</td></tr>
 	
 	<tr><td>
-	<p>Andrey Nechypurenko and Maksym Parkachov</p>
+	<p>Using ICE middleware with GStreamer to implement real-time
+	QoS-aware video streaming for remotely controlled vehicle.
+	,Andrey Nechypurenko and Maksym Parkachov</p>
 	<p>Andrey Nechypurenko is currently working as a senior software engineer
 	at General Electric. He has many years of experience in defining
 	architecture and implementing large scale distributed real-time and
@@ -148,10 +224,28 @@
 	optimizations of parallel processing systems and data quality
 	processes implementation . In his free time, he is building remote
 	controlled embedded systems.</p>
+
+	<p>
+	Typically, remotely controlled vehicles are equipped with video camera
+	to let the remote driver see surrounding environment. To enable
+	precise control of the vehicle over the Internet, it is necessary to
+	assure low video latency and ability to adapt to the changing network
+	conditions. In addition, low power consumption is required to increase
+	the battery-based operation time. In this paper we: a) outline our
+	embedded control system based on BeagleBoard open hardware and
+	Ångström Linux distribution; b) provide requirements, motivation and
+	describe how we build real-time quality of service (QoS) aware video
+	streaming solution with ICE open-source middleware and GStreamer on
+	this platform; c) we contrast and compare our solution with
+	RTP/RTCP-based streaming alternatives and d) provide performance
+	measurements for our adaptation algorithms.
+	</p>
 	</td></tr>
 	
-	<tr valign="top"><td>
+	<tr valign="top" bgcolor="#C0C0C0"><td>
 	<p>3D Stereoscopic and GStreamer, Martin Bisson</p>
+	<p>This talk will cover the work being done to support 3D stereoscopic video in GStreamer 
+	as part of the Google Summer of Code this year.</p>
 	</td></tr>
 		
 	<tr><td>
@@ -164,10 +258,19 @@
 	range of platforms, from desktop to embedded systems. Embedded Linux development, 
 	HW accelerated decoders, and performance optimization techniques are of special interest for Josep. 
 	He is also a developer on the GStreamer project.</p>
+	<p>
+	Intel C3100 (aka Canmore)and C4100 (aka Sodaville) are integrated system-on-a-chip solutions
+	that could be used in set-top boxes to integrate the Internet on TVs. This talk discuss the
+	work done at Fluendo to support the Moovida media center solution on Intels chipset and the 
+	state of running these kind of applications on Linux systems.
+	</p>
 	</td></tr>
 	
-	<tr valign="top"><td>
-	<p>WebM and GStreamer, Sebastian Droge</p>
+	<tr valign="top" bgcolor="#C0C0C0"><td>
+	<p>WebM and GStreamer, Sebastian Droge, Collabora Multimedia</p>
+	<p>This year Google released the WebM video format for the web. This talk presents the work done
+	by Collabora Multimedia and Entropy Wave to support this format from day one in GStreamer and 
+	how vendors can quickly and easily support WebM on their devices using GStreamer.</p>
 	</td></tr>
 	
 	<tr valign="top"><td>
