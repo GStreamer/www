@@ -71,16 +71,15 @@
 	<tr valign="top"><td>
 	<a name="hervey" id="hervey"></a>
 	<p><b>Challenges of video editing in your pocket, Edward Hervey, Collabora Multimedia</b></p>
-	<p>Edward Hervey founded PiTiVi during his final year at the EPITECH engineering school in Paris. 
-	He soon found that PiTiVi's needs required improvements to the GStreamer framework, and began 
-	developing them. At Collabora Multimedia, Edward manages the PiTiVi team and continues to contribute 
-	substantially to the GStreamer project 
+	<p>Edward Hervey started developing PiTiVi during his final years at the EPITECH engineering school in Paris. He soon found that 
+	PiTiVi's needs required improvements to the GStreamer framework, and began developing them. As one of the founders of Collabora 
+	Multimedia, Edward manages the PiTiVi team and continues to contribute substantially to the GStreamer project.
 	</p>
 	<p>
-	This talk will focus on the GStreamer Editing Services (GES) layer for GStreamer which adds support for
-	high quality and low overhead video editing in an easy manner with GStreamer. GES is developed with the
-	embedded space in mind, but will also be useful for desktop developers who wants to add simple video editing
-	support to their applications.</p>
+	This talk will focus on the GStreamer Editing Services (GES) layer for GStreamer which adds support for high quality and low overhead 
+	video editing in an easy manner with GStreamer. GES is developed with the embedded space in mind, but will also be useful for desktop 
+	developers who want to add simple video editing support to their applications.
+	</p>
 	</td></tr>
 		
 	<tr bgcolor="#C0C0C0"><td>
@@ -216,6 +215,11 @@
 	<tr valign="top"><td>
 	<a name="merali" id="merali"></a>
 	<p><b>Case study - Flumotion and GStreamer, Zaheer Merali</b></p>
+	<p>
+	Zaheer Merali is a long standing GStreamer developer, now working at Tandberg/Cisco as a senior software engineer. 
+	He was at Flumotion for 4 1/2 years where he has heavily influenced the design and code of the open source Flumotion 
+	streaming server.
+	</p>
 	<p>
 	This talk will feature an introduction to Flumotion the open source streaming server, the
 	GStreamer, Python and Twisted powered streaming server. It will discuss how flumotion distributes 
