@@ -70,7 +70,7 @@
 	
 	<tr valign="top"><td>
 	<a name="hervey" id="hervey"></a>
-	<p><b>Challenges of video editing in your pocket ,Edward Hervey, Collabora Multimedia</b></p>
+	<p><b>Challenges of video editing in your pocket, Edward Hervey, Collabora Multimedia</b></p>
 	<p>Edward Hervey founded PiTiVi during his final year at the EPITECH engineering school in Paris. 
 	He soon found that PiTiVi's needs required improvements to the GStreamer framework, and began 
 	developing them. At Collabora Multimedia, Edward manages the PiTiVi team and continues to contribute 
@@ -87,7 +87,7 @@
 	<a name="quacchio" id="quacchio"></a>
 	<p><b>A GStreamer based framework for adaptive streaming
 	applications, Emanuele Quacchio,  ST Microelectronics</b></p>
-	<p>Emanuele QUACCHIO *received the Master Degree in Electronic Engineering 
+	<p>Emanuele Quacchio received the Master Degree in Electronic Engineering 
 	from the Polytechnic University of Turin, Italy in 2003. He worked two 
 	years as a researcher in the Dept. of Electronics of the same university 
 	and joined STMicroelectronics at the AST-system R&amp;D group in 2006, where 
@@ -129,11 +129,11 @@
 	<tr bgcolor="#C0C0C0"><td>
 	<a name="ali" id="ali"></a>
 	<p><b>Implementing DLNA using GStreamer, Zeeshan Ali, Nokia</b></p>
-	<p>Zeeshan Ali is a Lead Developer/Architect at Nokia OSSO in Helsinki, He started as a GStreamer 
+	<p>Zeeshan Ali is a Lead Developer/Architect at Nokia MeeGo Computers division in Helsinki, He started as a GStreamer 
 	plugin and application developer and is known in the GNOME community for his video-whale project. 
 	For the past three years, he had been obsessed with UPnP and in turn the GUPnP project and Rygel. 
-	When he gets some time from his office work and GUPnP, he hangs around with his wife and tries to 
-	learn some Finnish.</p>
+	When he gets some time from his office work and GUPnP, he hangs around with his wife, plays Star Trek Online &amp; 
+	Street Fighter in his spare time and sometimes tries to learn some Finnish.</p>
 	<p>Rygel is a collection of DLNA (UPnP AV) services implementing the <a href="http://www.dlna.org">DLNA</a> standard for 
 	interoperable multimedia devices, implemented through a plug-in mechanism. UPnP in simplest words is a set of protocols 
 	that defines how different devices on a home network can seamlessly (without or with minimum configuration) communicate with 
@@ -146,7 +146,7 @@
 	<a name="crete" id="crete"></a>
 	<p><b>Integrating VideoConferencing into Everyday Applications, Olivier Crete, Collabora</b></p>
 	<p>
-	Olivier has been involved in free software since 2000. He's been the
+	Olivier Crete has been involved in free software since 2000. He's been the
 	maintainer of GnomeICU (a Gnome ICQ client) since 2002 and a Gentoo
 	developer since 2003, starting the amd64 port and also helping maintain
 	various IM applications. He currently works for Collabora on GStreamer,
@@ -229,6 +229,11 @@
 	<a name="holmberg" id="holmberg"></a>
 	<p><b>Case study - GStreamer on Axis devices, Jonas Holmberg, Axis</b></p>
 	<p>
+	Jonas Holmberg is a Master of Science in Computer Science from Sweden.
+ 	He works as an expert Software Engineer at Axis Communications, being an
+	system architect and software developer.
+	</p>
+	<p>
 	In 2006 Axis camera developers decided to implement a GStreamer based
 	streaming application for their camera and video server hardware. Two
 	years later the first GStreamer based Axis camera was released.
@@ -241,7 +246,7 @@
 	<a name="nechypurenko" id="nechypurenko"></a>
 	<p><b>Using ICE middleware with GStreamer to implement real-time
 	QoS-aware video streaming for remotely controlled vehicle.
-	,Andrey Nechypurenko and Maksym Parkachov</b></p>
+	, Andrey Nechypurenko and Maksym Parkachov</b></p>
 
 	<p>Andrey Nechypurenko is currently working as a senior software engineer
 	at General Electric. He has many years of experience in defining
@@ -302,7 +307,14 @@
 	
 	<tr valign="top" bgcolor="#C0C0C0"><td>
 	<a name="droge" id="droge"></a>
-	<p><b>WebM and GStreamer, Sebastian Droge, Collabora Multimedia</b></p>
+	<p><b>WebM and GStreamer, Sebastian Dröge, Collabora Multimedia</b></p>
+	<p>
+	Sebastian Dröge is working on GStreamer since early 2006 and nowadays is
+	one of the main developers. He is working for Collabora Multimedia since
+	2008 and also works on other open source projects in his free time.
+	Sebastian has a bachelor's degree in computer sciences and is currently
+	finishing his master's degree.
+	</p>
 	<p>This year Google released the WebM video format for the web. This talk presents the work done
 	by Collabora Multimedia and Entropy Wave to support this format from day one in GStreamer and 
 	how vendors can quickly and easily support WebM on their devices using GStreamer.</p>
