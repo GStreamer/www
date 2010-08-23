@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+    %site-entities;
+    ]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer Conference 2010 Program </title>
+
+<body lang="en-US" dir="LTR">
+
+<h1>GStreamer Conference 2010</h1>
+<h2>Cambridge, United Kingdom, 26th of October 2010</h2>
+
+<table width="100%" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0">
+	
+	<tr valign="top">
+		
+		<td>
+			<p>Wim Taymans, Collabora Multimedia 
+			</p>
+		</td>
+		<td>
+			<p>
+		Wim Taymans is one of the founders of the GStreamer project and the man behind the current GStreamer design. Wim got
+		a long history in the development of multimedia software, starting with computer game development on the Commodore 64.
+		Wim Taymans is a co-founder of Collabora Multimedia and is working on assisting Collabora Multimedia customers with the
+		design and use of GStreamer.
+			</p>
+			<p>
+		Wim Taymans will in his keynote be speaking about the current state of GStreamer and the development plans for GStreamer 1.0.
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td>
+		<p>Philippe Normand has worked at ENST-Bretagne (France) on home-care and domotic technologies for 
+		elderly people. He too worked on the Elisa/Moovida media-center project at Fluendo.
+		</p>
+		<p>At Igalia he currently works on improving the HTML5 audio/video support in WebKitGTK+ with the GStreamer 
+		multimedia framework. Philippe has a Master degree in Computer Sciences.</p>
+		</td></tr>
+
+	<tr valign="top">
+		<td>
+			<p>Mike Smith,Songbird 
+			</p>
+		</td>
+		<td>
+		<p>
+		Mike Smith is the main GStreamer developer at Songbird, a company making the cross-platform music player Songbird.
+		Mike will talk about their experiences with using GStreamer as a cross-platform media engine on Linux, Windows 
+		and Mac OS X.
+		</p></td></tr>
+	<tr valign="top">
+		
+		<td>
+			<p>Edward Hervey, Collabora Multimedia 
+			</p>
+			<p>Edward Hervey founded PiTiVi during his final year at the EPITECH engineering school in Paris. 
+			He soon found that PiTiVi's needs required improvements to the GStreamer framework, and began 
+			developing them. At Collabora Multimedia, Edward manages the PiTiVi team and continues to contribute 
+			substantially to the GStreamer project 
+			</p>
+		</td>
+
+
+		<td>
+			<p>A GStreamer based framework for adaptive streaming
+			applications, Emanuele Quacchio,  ST Microelectronics</p>
+		<p>Emanuele QUACCHIO *received the Master Degree in Electronic Engineering 
+		from the Polytechnic University of Turin, Italy in 2003. He worked two 
+		years as a researcher in the Dept. of Electronics of the same university 
+		and joined STMicroelectronics at the AST-system R&amp;D group in 2006, where 
+		he is currently working as a Senior System Engineer. His activities are 
+		mainly focused on embedded SW development for STB/mobile platforms, 
+		video compression standards and streaming protocols. He published and 
+		co-authored several papers on the principal journals of engineering and 
+		conferences. Since 2006 he has participated to a number of EU funded 
+		projects (ASTRALS, SEA, P2PNext, COAST) and he has given lectures at 
+		Polytechnic of Turin on video communication.</p>
+
+
+		</td>
+	</tr>
+	<tr valign="top">
+		
+		<td width="40%">
+			<p>Rob Clark has been working in the arm embedded world for more than 10 years, and
+			playing with linux for even longer.  And most recently, gets to combine the
+			two.  For the last year or so, he has been making GStreamer work with the
+			hardware accelerated codecs and video on the TI OMAP4 platform.
+			</p>
+		</td>
+		<td width="33%">
+			<p>Implementing DLNA using GStreamer - Zeeshan Ali, Nokia</p>
+			<p>Zeeshan Ali is a Lead Developer/Architect at Nokia OSSO in Helsinki, He started as a GStreamer 
+			plugin and application developer and is known in the GNOME community for his video-whale project. 
+			For the past three years, he had been obsessed with UPnP and in turn the GUPnP project and Rygel. 
+			When he gets some time from his office work and GUPnP, he hangs around with his wife and tries to 
+			learn some Finnish.
+			</p>
+		</td>
+	</tr>
+	
+	<tr valign="top">
+		
+		<td width="40%">
+			<p>Voip and Videoconferencing with Telepathy and Farstream -
+			Olivier Crete, Collabora 
+			</p>
+			<p>
+			Olivier Crête has degrees in software engineering, including one from École Polytechnique de Montréal. 
+			He lives in Montréal, Canada, and is the lead developer and designer for the Farstream audio/video 
+			conferencing framework. In his work for Collabora, he concentrates mainly on Farstream.
+			</p>
+		</td>
+		<td WIDTH="33%">
+			<p>Optimizing multimedia with Orc - David Schleef, Entropy Wave 
+			</p>
+			<p>David Schleef is one of the leading experts on open source multimedia. He has been active for 
+			13+ years in leading and developing several open source projects, including GStreamer, Swfdec, Comedi, 
+			Dirac/Schroedinger, and Liboil/Orc. His most recent project, Orc, allows developers to harness the 
+			power of CPU vector extensions without having to write assembly code or intrinsics. Allegedly, he got 
+			tired of writing yet another thousand lines of assembly code and wrote a program to write it for him.
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		
+		<td rowspan="2" width="40%">
+			<p>Case study - Tandberg and GStreamer, Håvard Graff, Tandberg 
+			</p>
+		</td>
+		<td width="33%">
+			<p>SLTV - live streaming for the masses – Luciana Fujii,
+			Holoscopio</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		
+		<td width="33%">
+			<p>Case study - Flumotion and GStreamer - Zaheer Merali</p>
+		</td>
+	</tr>
+	
+	<tr valign="top">
+		
+		<td width="40%">
+			<p>Case study - GStreamer on
+			Axis devices, Jonas Holmberg, Axis
+			</p>
+			<p>
+			In 2006 Axis camera developers decided to implement a GStreamer based
+			streaming application for their camera and video server hardware. Two
+			years later the first GStreamer based Axis camera was released.
+			</p><p>
+			This case study will discuss lessons learned during development of a
+			GStreamer based application on custom hardware.
+			</p>
+		</td></tr>
+		<tr><td>
+		<p>Andrey Nechypurenko and Maksym Parkachov</p>
+		</td><td>
+		<p>Andrey Nechypurenko is currently working as a senior software engineer
+		at General Electric. He has many years of experience in defining
+		architecture and implementing large scale distributed real-time and
+		embedded systems in automotive and industrial automation domain. As
+		his hobby, Andrey is developing different kinds of ground and air
+		vehicles which can be controlled over the Internet.</p>
+		<p>
+		Maksym Parkachov is working as senior CRM consultant at the Riverland
+		GmbH. His expertise area lies in integration of the enterprise
+		front-facing applications with industry standard back-ends,
+		optimizations of parallel processing systems and data quality
+		processes implementation . In his free time, he is building remote
+		controlled embedded systems.</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		
+		<td width="40%">
+			<p>3D Stereoscopic and GStreamer, Martin Bisson</p>
+		</td>
+		<td rowspan="3" width="33%">
+			<p>Case Study - Intel SIMD elements in GStreamer, Josep Torra,
+			Fluendo 
+			</p>
+			<p>
+			Josep Torra holds a Computer Engineering degree from the Open
+			University of Catalonia (UOC), Catalonia, Spain. He joined Fluendo as
+			senior developer and became a part of the codec development team for
+			embedded systems in 2006. He currently works as a Technical Lead for
+			the team developing codecs and multimedia related projects in a wide
+			range of platforms, from desktop to embedded systems.
+			Embedded Linux development, HW accelerated decoders, and performance
+			optimization techniques are of special interest for Josep. He is also
+			a developer on the GStreamer project.</p>
+
+		</td>
+	</tr>
+	<tr valign="top">
+		
+		<td width="40%">
+			<p>WebM and GStreamer, Sebastian Droge 
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		
+		<td width="40%">
+			<p>Case study - Using gstreamer for building automated webcasting systems, Florent Thiery, Ubicast.eu 
+			</p>
+			<p>Florent Thiery is co-founder and C.T.O. of UbiCast, a small french company dedicated to providing 
+			turnkey, automated multimedia capture appliances for the conference, training and educational market. 
+			Based on the gstreamer framework and other open source technologies (notably, OpenCV, twisted and 
+			Clutter), these solutions aim at lowering the complexity of producing and publishing video to the 
+			Internet by automating as much tasks as possible for the end user. Being a gstreamer application 
+			architect and developer, he focuses on audio/video capture devices, web streaming and computer vision 
+			technologies.
+ 			</p>
+		</td>
+	</tr>
+
+</table>
+
+<p>
+<b>Note:</b> there may be further GStreamer-related talks on October 27/28 as part of the
+<a href="http://www.embeddedlinuxconference.com/elc_europe10/program.html">main CE Linux program</a>.
+</p>
+
+</body>
+</page>
