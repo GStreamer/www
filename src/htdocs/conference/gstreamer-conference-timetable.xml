@@ -170,7 +170,7 @@
 		</td>
 		<td rowspan="3" width="33%">
 			<p>Case Study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">
-			Intel SMD elements in GStreamer, Josep Torra</a>, Fluendo</p>
+			Intel SIMD elements in GStreamer, Josep Torra</a>, Fluendo</p>
 		</td>
 	</tr>
 	<tr valign="top">
