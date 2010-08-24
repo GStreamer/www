@@ -187,6 +187,12 @@
 	<a name="graff" id="graff"></a>
 	<p><b>Case study - Tandberg and GStreamer, Håvard Graff, Tandberg</b></p>
 	<p>
+	Håvard was introduced to GStreamer when he started working for TANDBERG (now Cisco) three years ago, and has been in love ever since. 
+	Håvard is particularly interested in dynamic pipeline-building, synchronization, MT-safeness and audio. When not trying to understand 
+	caps-negotiation, Håvard tries to play the piano. Works on <a href="http://www.tandberg.com/personal-video-conferencing/pc-mac-video-movi-v2..jsp">
+	Movi</a>, a cross-platform, telepresence application for the desktop. 
+	</p>
+	<p>
 	This talk will cover our experiences with gstreamer, how we work with it, management issues, 
 	support, customizing and so on. We will also specifically look at the Movi application developed by Tandberg using GStreamer, 
 	including an in depth look at how we &quot;do it&quot; Points of interest, challenges with dynamic live pipelines, plumbing solutions etc.
@@ -286,8 +292,18 @@
 	<tr valign="top" bgcolor="#C0C0C0"><td>
 	<a name="bisson" id="bisson"></a>
 	<p><b>3D Stereoscopic and GStreamer, Martin Bisson</b></p>
-	<p>This talk will cover the work being done to support 3D stereoscopic video in GStreamer 
-	as part of the Google Summer of Code this year.</p>
+	<p>
+	Martin Bisson has completed his Master's Degree in Computer Science at École Polytechnique de Montréal, working on a 3D visualization 
+	tool for minimally invasive spine surgery.  During his studies, he worked for various high technology companies in the fields of 
+	image and video processing as well as computer graphics, such as Matrox and Autodesk (Media &amp; Entertainment Division formerly 
+	known as Discreet).  In 2008, he co-founded Float4 Interactive (www.float4.com), a creative technology company that develops interactive 
+	systems for entertainment, advertising and design applications. 
+	</p>
+	<p>With recent developments in 3D video technology and its success, adding support now for this uprising technology will make 
+	GStreamer an attractive choice for application developers.  The support has been implemented as part of a Google Summer of Code 
+	project.  Different possible implementations, each with its own strengths and weaknesses, were considered, but a simple and 
+	hopefully complete one was chosen.  ORC can be used for the CPU-intensive but easily parallelized task of generating anaglyph images.  
+	Work still needs to be done, especially on support of different 3D display hardware..</p>
 	</td></tr>
 		
 	<tr><td>
