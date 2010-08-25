@@ -202,21 +202,17 @@
 	
 	<tr bgcolor="#C0C0C0"><td>
 	<a name="fujii" id="fujii"></a>
-	<p><b>SLTV - live streaming for the masses, Luciana Fujii, Holoscopio</b></p>
+	<p><b>Landell - live streaming for the masses, Luciana Fujii, Holoscopio</b></p>
 	<p>
-	<a href="http://sltv.holoscopio.com">SLTV</a> is a free software designed to allow
-	live recording and streaming with a simple GTK+-based interface.
-	Features include switching sources, picture-in-picture, watermark,
-	multiple filters and multiple simultaneous outputs without stopping the
-	pipeline.
-	</p>
-	<p>
-	The main challenge during SLTV development was to dynamically change the
-	pipeline to, for instance, change which video effect to apply on the	
-	fly.  Although most of the software features may seem simple if
-	considered separately, the resulting pipeline became quite complex, and
-	the same was true for making all the pieces fit together.
-	</p>
+	Luciana Fujii is the main developer of <a href="http://landell.holoscopio.com">Landell</a>
+	, a free software designed to allow live recording and streaming with simple GTK+-based interface. In Holoscópio,
+	she has also worked in embedded systems development. Luciana has a bachelor's degree in Computer Science.
+	</p><p>
+	Features of Landell include switching sources, picture-in-picture,
+	watermark, multiple filters and multiple simultaneous outputs without
+	stopping the pipeline.The presentation will show the challenges faced during Landell
+	development, specially regarding dynamically changing a quite complex
+	pipeline.</p>
 	</td></tr>
 	
 	<tr valign="top"><td>
