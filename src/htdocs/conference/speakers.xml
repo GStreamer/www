@@ -27,8 +27,8 @@
 	design and use of GStreamer.
 	</p>
 	<p>
-	Wim Taymans will in his keynote be speaking about the current state of the GStreamer project and the development 
-	plans for GStreamer 1.0.
+	Wim Taymans will in his keynote be speaking about the current state of the <a href="http://gstreamer.freedesktop.org">GStreamer</a>
+	project and the development plans for GStreamer 1.0.
 	</p>
 	</td></tr>
 
@@ -41,7 +41,7 @@
 	the GStreamer multimedia framework. Philippe has a Master degree in Computer Sciences.</p>
 	<p>
 	This talk will cover integrating a GStreamer-based media player in
-	multiple WebKit ports to provide HTML5 audio/video support on a
+	multiple <a href="http://webkit.org/">WebKit</a> ports to provide HTML5 audio/video support on a
 	variety of platforms including (but not limited to) Linux, Mac OS X
 	and Windows. It will describe the modifications done on the player first developed
 	for the GTK+ WebKit port to be cross-platform and modular enough to be
@@ -65,19 +65,20 @@
 	</p>
 	<p>
 	This talk will focus on the advantages and challenges when using GStreamer as a cross platform middleware based on 
-	the experiences with developing the Songbird Music Player on Windows, MacOS X, Solaris and Linux, all using the GStreamer
+	the experiences with developing the <a href="http://getsongbird.com/">Songbird</a> Music Player on Windows, MacOS X, Solaris and Linux, all using the GStreamer
 	framework for media playback.</p>
 	</td></tr>
 	
 	<tr valign="top"><td>
 	<a name="hervey" id="hervey"></a>
 	<p><b>Challenges of video editing in your pocket, Edward Hervey, Collabora Multimedia</b></p>
-	<p>Edward Hervey started developing PiTiVi during his final years at the EPITECH engineering school in Paris. He soon found that 
+	<p>Edward Hervey started developing <a href="http://www.pitivi.org/">PiTiVi</a> during his final years at the EPITECH engineering school in Paris. He soon found that 
 	PiTiVi's needs required improvements to the GStreamer framework, and began developing them. As one of the founders of Collabora 
 	Multimedia, Edward manages the PiTiVi team and continues to contribute substantially to the GStreamer project.
 	</p>
 	<p>
-	This talk will focus on the GStreamer Editing Services (GES) layer for GStreamer which adds support for high quality and low overhead 
+	This talk will focus on the <a href="http://blogs.gnome.org/edwardrv/2009/11/30/the-result-of-the-past-few-months-of-hacking/">
+	GStreamer Editing Services (GES)</a> layer for GStreamer which adds support for high quality and low overhead 
 	video editing in an easy manner with GStreamer. GES is developed with the embedded space in mind, but will also be useful for desktop 
 	developers who want to add simple video editing support to their applications.
 	</p>
@@ -131,8 +132,8 @@
 	<p><b>Implementing DLNA using GStreamer, Zeeshan Ali, Nokia</b></p>
 	<p>Zeeshan Ali is a Lead Developer/Architect at Nokia MeeGo Computers division in Helsinki, He started as a GStreamer 
 	plugin and application developer and is known in the GNOME community for his video-whale project. 
-	For the past three years, he had been obsessed with UPnP and in turn the GUPnP project and Rygel. 
-	When he gets some time from his office work and GUPnP, he hangs around with his wife, plays Star Trek Online &amp; 
+	For the past three years, he had been obsessed with UPnP and in turn the GUPnP project and <a href="http://live.gnome.org/Rygel">
+	Rygel</a>. When he gets some time from his office work and GUPnP, he hangs around with his wife, plays Star Trek Online &amp; 
 	Street Fighter in his spare time and sometimes tries to learn some Finnish.</p>
 	<p>Rygel is a collection of DLNA (UPnP AV) services implementing the <a href="http://www.dlna.org">DLNA</a> standard for 
 	interoperable multimedia devices, implemented through a plug-in mechanism. UPnP in simplest words is a set of protocols 
@@ -155,13 +156,13 @@
 	<p>
 	This talk will discuss how until now, videoconferencing has lived in dedicated applications. 
 	We've had instant messengers with VoIP, softphones, but they don't integrate
-	into the everyday workflow. Farstream, the next generation of Farsight,
-	the GStreamer based VoIP and videoconferencing framework not only
+	into the everyday workflow. <a href="http://www.collabora.co.uk/projects/farstream/">Farstream</a>,
+	 the next generation of Farsight, the GStreamer based VoIP and videoconferencing framework not only
 	provides media handling to communication applications such as Empathy,
 	Pidgin, aMSN and the Nokia Internet Tablets, but can also be used to
 	integrate videoconferencing into everyday applications.</p>
-	<p>This talk will give a brief introduction to Farstream and Telepathy and how they
-	integrate. I will then show how to integrate videoconferencing features
+	<p>This talk will give a brief introduction to Farstream and <a href="http://www.collabora.co.uk/projects/telepathy/">
+	Telepathy</a> and how they integrate. I will then show how to integrate videoconferencing features
 	into an application such as a non-linear editor. It will also demonstrate
 	how easy it is for application developers to integrate such features
 	into their applications and how useful it can be for users.
@@ -178,7 +179,7 @@
 	tired of writing yet another thousand lines of assembly code and wrote a program to write it for him.
 	</p>
 	<p>
-	This talk will present the Orc library and set of tools for compiling and executing very simple programs that operate on arrays of data.  
+	This talk will present the <a href="http://code.entropywave.com/projects/orc/">Orc</a> library and set of tools for compiling and executing very simple programs that operate on arrays of data.  
 	The “language” is a generic assembly language that represents many of the features available in SIMD architectures, including 
 	saturated addition and subtraction, and many arithmetic operations. The talk will also cover the recently released
 	NEON backend for ORC.</p>
@@ -224,7 +225,7 @@
 	streaming server.
 	</p>
 	<p>
-	This talk will feature an introduction to Flumotion the open source streaming server, the
+	This talk will feature an introduction to <a href="http://www.flumotion.net/">Flumotion</a> the open source streaming server, the
 	GStreamer, Python and Twisted powered streaming server. It will discuss how flumotion distributes 
 	GStreamer pipelines across processes and how flumotion tries to ensure sync between different processes doing
 	for example capture that could even be on different machines. We will also look at how flumotion streams to the 
@@ -332,7 +333,7 @@
 	Sebastian has a bachelor's degree in computer sciences and is currently
 	finishing his master's degree.
 	</p>
-	<p>This year Google released the WebM video format for the web. This talk presents the work done
+	<p>This year Google released the <a href="http://www.webmproject.org/">WebM</a> video format for the web. This talk presents the work done
 	by Collabora Multimedia and Entropy Wave to support this format from day one in GStreamer and 
 	how vendors can quickly and easily support WebM on their devices using GStreamer.</p>
 	</td></tr>
