@@ -180,7 +180,7 @@
 	</p>
 	<p>
 	This talk will present the <a href="http://code.entropywave.com/projects/orc/">Orc</a> library and set of tools for compiling and executing very simple programs that operate on arrays of data.  
-	The “language” is a generic assembly language that represents many of the features available in SIMD architectures, including 
+	The “language” is a generic assembly language that represents many of the features available in SMD architectures, including 
 	saturated addition and subtraction, and many arithmetic operations. The talk will also cover the recently released
 	NEON backend for ORC.</p>
 	</td></tr>
