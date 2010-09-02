@@ -192,9 +192,22 @@
 			</p>
 		</td>
 	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>18.00</p>
+		</td>
+		<td width="40%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schmidt">
+			Interactivity in GStreamer pipelines, Jan Schmidt</a>, Oracle Corporation 
+			</p>
+		</td>
+	<td></td>
+	</tr>
+
+
 	<tr>
 		<td colspan="3" width="100%" valign="TOP">
-			<p align="center">18.00 End of Day</p>
+			<p align="center">19.00 End of Day</p>
 		</td>
 	</tr>
 </table>

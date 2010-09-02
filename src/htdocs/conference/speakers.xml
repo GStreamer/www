@@ -350,6 +350,16 @@
 	technologies.</p>
 	</td></tr>
 
+	<tr valign="top"><td>
+	<a name="thiery" id="schmidt"></a>
+	<p><b>Interactivity in GStreamer pipelines, Jan Schmidt, Oracle Corporation</b></p>
+	<p>This talk will discuss the challenges encountered when implementing features such as DVD menu support 
+	with GStreamer, and the solutions that were implemented. It will discuss how these can be used in other 
+	scenarios, such as interactivity over the network, and Blu-ray disc support.</p>
+	<p>Jan is a GStreamer maintainer. After leaving Fluendo in 2007, he moved to Ireland and joined Sun Microsystems 
+	and subsequently Oracle on their acquisition of Sun in 2009. These days, he lives in Australia and hacks on 
+	GStreamer as he can.</p>
+	</td></tr>
 </table>
 
 <p>
