@@ -180,7 +180,7 @@
 	</p>
 	<p>
 	This talk will present the <a href="http://code.entropywave.com/projects/orc/">Orc</a> library and set of tools for compiling and executing very simple programs that operate on arrays of data.  
-	The “language” is a generic assembly language that represents many of the features available in SMD architectures, including 
+	The “language” is a generic assembly language that represents many of the features available in SIMD architectures, including 
 	saturated addition and subtraction, and many arithmetic operations. The talk will also cover the recently released
 	NEON backend for ORC.</p>
 	</td></tr>
@@ -305,7 +305,7 @@
 	</td></tr>
 		
 	<tr><td>
-	<p><b>Case Study - Intel SIMD elements in GStreamer, Josep Torra, Fluendo</b></p>
+	<p><b>Case Study - Intel SMD elements in GStreamer, Josep Torra, Fluendo</b></p>
 	<a name="torra" id="torra"></a>
 	<p>Josep Torra holds a Computer Engineering degree from the Open
 	University of Catalonia (UOC), Catalonia, Spain. He joined Fluendo as
