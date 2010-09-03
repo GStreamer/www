@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-ugly</module>
+  <module-fancy>GStreamer Ugly Plug-ins</module-fancy>
+  <name>Because He Knows the Time is Short</name>
+  <version>0.10.16</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Ugly Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"When you have to shoot, shoot.  Don't talk."</i>
+</p>
+<p>
+There are times when the world needs a color between black and white.
+Quality code to match the good's, but two-timing, backstabbing and ready to
+sell your freedom down the river.  These plug-ins might have a patent noose
+around their neck, or a lock-up license, or any other problem that makes you
+think twice about shipping them.
+</p>
+<p>
+We don't call them ugly because we like them less.  Does a mother love her
+son less because he's not as pretty as the other ones ? No  - she commends
+him on his great personality.  These plug-ins are the life of the party.
+And we'll still step in and set them straight if you report any unacceptable
+behaviour - because there are two kinds of people in the world, my friend:
+those with a rope around their neck and the people who do the cutting.
+</p>
+<p>
+This module contains a set of plug-ins that have good quality and correct
+functionality, but distributing them might pose problems.  The license
+on either the plug-ins or the supporting libraries might not be how we'd
+like. The code might be widely known to present patent problems.
+Distributors should check if they want/can ship these plug-ins.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>refactor x264enc to use current x264 API correctly, add new properties and new defaults</feature>
+    <feature>liboil is no longer required, but orc is now required</feature>
+
+    <feature>build: require orc &gt;= 0.4.5, GLib &gt;= 2.20, automake &gt;= 1.10, autoconf &gt;= 2.60; liboil is no longer required</feature>
+    <feature>asfdemux: fix playback of files or streams that are shorter than the advertised preroll value</feature>
+    <feature>asfdemux: fix sending eos event for chained asfs in pull mode (exotic)</feature>
+    <feature>asfdemux: fix playback of files or streams that advertise miniscule preroll values</feature>
+    <feature>lamemp3enc: implement latency query</feature>
+    <feature>rmdemux: fix playback of sipro audio streams</feature>
+    <feature>x264enc: refactor code in preparation for presets/tunings</feature>
+    <feature>x264enc: add "profile" property (and default to MAIN profile)</feature>
+    <feature>x264enc: improve defaults: medium speed/quality preset; auto mode for threads</feature>
+    <feature>x264enc: add "speed-preset", "tune" and "psy-tune" properties</feature>
+    <feature>x264enc: add "option-string" property to specify advanced parameters</feature>
+    <feature>x264enc: set time base if needed, fixes visual artifacts</feature>
+    <feature>x264enc: add "sliced-threads", "sync-lookahead", "intra-refresh", "mb-tree", and "rc-lookahead" properties</feature>
+    <feature>x264enc: fix compilation against ancient x264 versions (X264_BUILD &lt;= 75)</feature>
+    <feature>x264enc: speed up first pass of multi-pass encoding (has no impact on quality)</feature>
+    <feature>x264enc: fix flushing of delayed frames with new default settings</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>David Hoyt</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Olivier Crête</person>
+	<person>Robert Swain</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tristan Matthews</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>599718</id>
+      <summary>[asf] support chained asfs</summary>
+    </bug>
+    <bug>
+      <id>600412</id>
+      <summary>[asfdemux] Wrong handling of downstream GstFlowReturn</summary>
+    </bug>
+    <bug>
+      <id>607798</id>
+      <summary>x264enc needs updating to support new features and use x264 correctly</summary>
+    </bug>
+    <bug>
+      <id>618896</id>
+      <summary>lamemp3enc doesn't implement latency query</summary>
+    </bug>
+    <bug>
+      <id>620007</id>
+      <summary>Gibberish sound when playing a certain RealMedia file of Sipro/ACELP.net audio codec</summary>
+    </bug>
+    <bug>
+      <id>620344</id>
+      <summary>Update gst-plugins-ugly docs on website</summary>
+    </bug>
+    <bug>
+      <id>622407</id>
+      <summary>[asfdemux] doesn't detect some streams if preroll value is very small</summary>
+    </bug>
+    <bug>
+      <id>624786</id>
+      <summary>x264enc time base is wrong</summary>
+    </bug>
+    <bug>
+      <id>625557</id>
+      <summary>x264enc doesn't flush delayed frames properly</summary>
+    </bug>
+    <bug>
+      <id>626577</id>
+      <summary>[x264enc] regression: doesn't work with older versions of x264</summary>
+    </bug>
+    <bug>
+      <id>627946</id>
+      <summary>mp3parse misuses GST_FLOW_IS_FATAL, doesn't forward GST_FLOW_UNEXPECTED upstream</summary>
+    </bug>
+  </bugs>
+</release>

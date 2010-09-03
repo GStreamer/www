@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Woe to You Oh Earth and Sea</name>
+  <version>0.10.25</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>v4l2src: massive performance improvement in many cases</feature>
+    <feature>streaming mode fixes for avi and matroska/webm</feature>
+    <feature>seeking in matroska and webm files that don't have an index</feature>
+    <feature>new cpureport element for debugging</feature>
+
+    <feature>avidemux: improve VBR audio stream handling</feature>
+    <feature>avidemux: streaming mode fixes: use proper offset for movi-based index, handle 0-size data chunks</feature>
+    <feature>debugutils: new element cpureport, posts "cpu-report" element messages on bus</feature>
+    <feature>flacdec, rtspsrc, rtph264pay, rtpmp4vdepay: memory leak fixes</feature>
+    <feature>gconfvideosrc: use correct GConf key (ie. not the audiosrc key)</feature>
+    <feature>gdkpixbuf: remove gdkpixbuf3 plugin again, gdk-pixbuf was split out of gtk+ and will stay at 2.x</feature>
+    <feature>id3v2mux: write beats-per-minute tag using TBPM frame</feature>
+    <feature>jpegdec: fix markers parsing regression</feature>
+    <feature>matroskademux: do not error out on a block with unknown tracknumber</feature>
+    <feature>matroskademux: fix streaming in case where the size in bytes is unknown</feature>
+    <feature>matroskademux: handle bogus files storing ADTS AAC data</feature>
+    <feature>matroskademux: support seeking in local files even if they don't have an index</feature>
+    <feature>matroskamux: don't try to seek back and fix up headers if streamable=TRUE</feature>
+    <feature>pulsesink: fix race when creating multiple pulsesinks at the same time</feature>
+    <feature>qtdemux: also calculate PAR using track width and height for QT files</feature>
+    <feature>qtdemux: fix the max/avg in btrt atom reading</feature>
+    <feature>qtdemux: improve reverse playback</feature>
+    <feature>qtdemux: parse 64-bit version of mvhd atom as well instead of erroring out</feature>
+    <feature>qtdemux: prevent reading past avc1 atom when parsing</feature>
+    <feature>rtpg729pay: avoid basertppayload perfect-rtptime mode</feature>
+    <feature>rtph263pdepay: allow more clock-rates as input</feature>
+    <feature>rtpL16depay: also parse encoding-params for the number of channels</feature>
+    <feature>rtpL16depay: default to 1 channel if number of channels not specified</feature>
+    <feature>rtpmp4gpay: implement perfect timestamps</feature>
+    <feature>rtspsrc: add "port-range" property, useful for setups with firewall/ipsec</feature>
+    <feature>rtspsrc: don't reuse udp sockets (avoids odd errors when data from previous streams is received)</feature>
+    <feature>udpsrc: add "reuse" property to enable or disable port reuse (enabled by default, but disabled in rtspsrc)</feature>
+    <feature>v4l2: sort formats in the right order so that non-emulated formats are prefered</feature>
+    <feature>videobalance: fix wrong locking order that could lead to a deadlock</feature>
+    <feature>videomixer: only reset QoS information and send a NEWSEGMENT event downstream for NEWSEGMENT events on the master pad</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Andoni Morales Alastruey</person>
+	<person>Arnaud Vrac</person>
+	<person>David Schleef</person>
+	<person>Jonathan Matthew</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Philippe Normand</person>
+	<person>Sebastian Dröge</person>
+	<person>Sjoerd Simons</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Zaheer Abbas Merali</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>626463</id>
+      <summary>[matroskademux] &quot; reading large block of size 14688496 not supported &quot; </summary>
+    </bug>
+    <bug>
+      <id>593117</id>
+      <summary>[avidemux] Support AVF files</summary>
+    </bug>
+    <bug>
+      <id>618535</id>
+      <summary>[avidemux] fails to stream eva_2010_2.22_promo1.avi</summary>
+    </bug>
+    <bug>
+      <id>621520</id>
+      <summary>[id3v2mux] write beats-per-minute tag</summary>
+    </bug>
+    <bug>
+      <id>622017</id>
+      <summary>[GstRtpMP4GDepay] Packet payload was too short.</summary>
+    </bug>
+    <bug>
+      <id>622577</id>
+      <summary>rtspsrc has confusing error messages</summary>
+    </bug>
+    <bug>
+      <id>623209</id>
+      <summary>bug in rtpL16depay</summary>
+    </bug>
+    <bug>
+      <id>623357</id>
+      <summary>avidemux: push mode doesn't work for some http streaming avi files</summary>
+    </bug>
+    <bug>
+      <id>623629</id>
+      <summary>Reverse Playback Issue in QtDemux</summary>
+    </bug>
+    <bug>
+      <id>624173</id>
+      <summary>[qtdemux] qt file with dimension data in tkhd does not get pixel-aspect-ratio in caps</summary>
+    </bug>
+    <bug>
+      <id>624331</id>
+      <summary>videobalance: deadlocks/freezes when changing &quot; brightness &quot; property</summary>
+    </bug>
+    <bug>
+      <id>624455</id>
+      <summary>The matroska muxer seeks even when used with streamable=TRUE</summary>
+    </bug>
+    <bug>
+      <id>624770</id>
+      <summary>rtspsrc: memory leak in gst_rtspsrc_handle_request</summary>
+    </bug>
+    <bug>
+      <id>625002</id>
+      <summary>[examples] Don't use GdkDraw</summary>
+    </bug>
+    <bug>
+      <id>625153</id>
+      <summary>rtspsrc: add property to set client port range</summary>
+    </bug>
+    <bug>
+      <id>625302</id>
+      <summary>[qtdemux] Set the pixel-aspect-ratio field also for par=1/1</summary>
+    </bug>
+    <bug>
+      <id>625371</id>
+      <summary>[matroskademux] critical warnings when playing live webm with progressive download enabled</summary>
+    </bug>
+    <bug>
+      <id>625442</id>
+      <summary>pulsesink: crash -  pa_threaded_mainloop_stop is called from the pa thread</summary>
+    </bug>
+    <bug>
+      <id>625452</id>
+      <summary>[videomixer] Pipeline from the docs doesn't work anymore</summary>
+    </bug>
+    <bug>
+      <id>626467</id>
+      <summary>matroskademux: CRITICAL **: file matroska-demux.c: line 578 (gst_matroska_demux_get_length): should not be reached</summary>
+    </bug>
+    <bug>
+      <id>626609</id>
+      <summary>[qtdemux] segfault when parsing avc1 atom</summary>
+    </bug>
+    <bug>
+      <id>626619</id>
+      <summary>[imagefreeze] Incorrect seek behaviour</summary>
+    </bug>
+    <bug>
+      <id>627689</id>
+      <summary>[deinterlace] Broken timestamps</summary>
+    </bug>
+    <bug>
+      <id>617368</id>
+      <summary>[matroska] Implement push-mode seeking and non-cue seeking</summary>
+    </bug>
+  </bugs>
+
+</release>
