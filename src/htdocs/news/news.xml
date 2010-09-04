@@ -3891,5 +3891,20 @@ or download tarballs for
     </p>
     </content>
   </item>
-
+  <item>
+    <date>2010-09-04 14:30</date>
+    <title>GStreamer OpenGL plug-in module 0.10.2 release</title>
+    <content>
+<p>
+    The GStreamer team is proud to announce a new release of the gst-plugins-gl
+    OpenGL integration module.
+</p>
+<p>
+Check out release notes
+<a href="&site;/releases/gst-plugins-gl/0.10.2.html">here</a>,
+or download tarballs from
+<a href="&site;/src/gst-plugins-gl/gst-plugins-gl-0.10.2.tar.bz2">here</a>.
+</p>
+    </content>
+  </item>
 </news>
