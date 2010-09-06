@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gnonlin</module>
+  <module-fancy>GNonLin Non-Linear Editing Plug-ins</module-fancy>
+  <name>I needed time to think to get the memories from my mind</name>
+  <version>0.10.16</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of GNonLin.
+</p>
+
+<p>
+This module contains a set of plug-ins for GStreamer to ease the
+creation of multimedia editors, or any other application where a
+timeline-oriented use of GStreamer makes sense.
+</p>
+<p>
+These elements include:
+<dl>
+<dt>gnlsource</dt>
+<dd>An element for using source elements/bins in a GnlComposition</dd>
+<dt>gnlfilesource</dt>
+<dd>A higher-level element for using a uri in a GnlComposition</dd>
+<dt>gnlcomposition</dt>
+<dd>A container element that handles GNonLin objects</dd>
+<dt>gnloperation</dt>
+<dd>An element for using filters in a GnlComposition</dd>
+</dl>
+</p>
+  </intro>
+  <features>
+<feature>More race fixes</feature>
+<feature>gnlcomposition: propagate caps to childs</feature>
+<feature>gnlurisource: Only use needed streams</feature>
+<feature>gnlcomposition: Fix QoS handling</feature>
+    <feature></feature>
+  </features>
+
+  <applications>
+GNonLin is primarily used by PiTiVi (http://www.pitivi.org/) and Jokosher (http://www.jokosher.org/).
+  </applications>
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Benjamin Otte</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>613283</id>
+      <summary>gst_element_class_set_details = &gt; gst_element_class_set_details_simple</summary>
+    </bug>
+    <bug>
+      <id>626501</id>
+      <summary>Caps property of gnlfilesource works incorrectly</summary>
+    </bug>
+    <bug>
+      <id>626733</id>
+      <summary>Race in gnlcomposition between no_more_pads_object_cb and compare_relink_single_node</summary>
+    </bug>
+  </bugs>
+
+</release>

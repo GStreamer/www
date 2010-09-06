@@ -9,7 +9,7 @@
 <!ENTITY gst-plugins-bad-version-stable "0.10.20">
 <!ENTITY gst-plugins-gl-version-stable "0.10.1">
 <!ENTITY gst-rtsp-server-version-stable "0.10.5">
-<!ENTITY gnonlin-version-stable "0.10.15">
+<!ENTITY gnonlin-version-stable "0.10.16">
 
 <!ENTITY gst-version-devel "git master">
 <!ENTITY gst-plugins-base-version-devel "git master">
