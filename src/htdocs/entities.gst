@@ -7,7 +7,7 @@
 <!ENTITY gst-plugins-good-version-stable "0.10.25">
 <!ENTITY gst-plugins-ugly-version-stable "0.10.16">
 <!ENTITY gst-plugins-bad-version-stable "0.10.20">
-<!ENTITY gst-plugins-gl-version-stable "0.10.1">
+<!ENTITY gst-plugins-gl-version-stable "0.10.2">
 <!ENTITY gst-rtsp-server-version-stable "0.10.5">
 <!ENTITY gnonlin-version-stable "0.10.16">
 
