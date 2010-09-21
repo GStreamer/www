@@ -226,17 +226,6 @@ artistic tool for mapping movements in video to MIDI events</p>
 
 <h1>Experimental GStreamer applications</h1>
 
-<h2>Aldegonde</h2>
-<p>
-<a href="http://ronald.bitfreak.net/aldegonde.php">Aldegonde</a> is a 
-simple media player made to ease debugging of GStreamer playback issues. 
-</p>
-
-<h2>Kiss</h2>
-<p>
-<a href="http://ronald.bitfreak.net/kiss.php">Kiss</a> is a simple KDE base media player meant as an example application for KDE developers who want to use GStreamer.
-</p>
-
 <h2>Permovi</h2>
 <p><a href="http://forge.novell.com/modules/xfmod/project/?permovi">Permovi</a>
 is a Linux-based HTPC (Home Theatre PC) application. It transforms a PC into a standalone CD-player/tuner/DVD-player/PVR device. Permovi is using the Mono framework.
