@@ -266,6 +266,20 @@
   </module>
 -->
 
+  <module id="gst-rtsp-server">
+    <component>gst-rtsp-server</component>
+    <milestones>
+      <milestone>HEAD</milestone>
+      <milestone>0.10.6</milestone>
+      <milestone>0.10.5</milestone>
+      <milestone>0.10.4</milestone>
+      <milestone>0.10.3</milestone>
+      <milestone>0.10.2</milestone>
+      <milestone>0.10.1</milestone>
+      <milestone>0.10.0</milestone>
+    </milestones>
+  </module>
+
   <module id="gst-python">
     <component>gst-python</component>
     <milestones>
