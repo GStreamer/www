@@ -3925,4 +3925,17 @@ or download tarballs from
     </content>
   </item>
 
+  <item>
+    <date>2010-10-13 01:10</date>
+    <title>gst-openmax 0.10.1 stable release</title>
+    <content>
+      <p>
+        We are pleased to announce the first stable release of gst-openmax.
+      </p>
+      <p>
+        Check out the <a href="&site;/releases/gst-openmax/0.10.1.html">release notes</a>.
+      </p>
+    </content>
+  </item>
+
 </news>

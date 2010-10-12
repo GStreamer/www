@@ -1,6 +1,7 @@
 <!ENTITY gst-version-stable "0.10.30">
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.11">
+<!ENTITY gst-openmax-version-stable "0.10.1">
 <!ENTITY gst-python-version-stable "0.10.19">
 <!ENTITY gstreamer-sharp-version-stable "0.9.2">
 <!ENTITY gst-plugins-base-version-stable "0.10.30">
@@ -20,6 +21,7 @@
 <!ENTITY gst-rtsp-server-version-devel "git master">
 
 <!ENTITY gst-ffmpeg-version-devel "git master">
+<!ENTITY gst-openmax-version-devel "git master">
 <!ENTITY gst-python-version-devel "git master">
 <!ENTITY gstreamer-sharp-version-devel "git master">
 
