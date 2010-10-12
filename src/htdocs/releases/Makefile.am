@@ -10,6 +10,7 @@ SUBDIRS = \
 	gst-editor \
 	gst-ffmpeg \
 	gst-monkeysaudio \
+	gst-openmax \
 	gst-player \
 	gst-plugins \
 	gst-plugins-bad \
