@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plug-ins</module-fancy>
+  <name>Dance Like It's 1982</name>
+  <version>0.10.31</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Base Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, gnomevfssrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: ffmpegcolorspace</li>
+  <li>aggregate elements: uridecodebin, playbin2, decodebin2, decodebin, playbin</li>
+</ul>
+
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>adder: Make sure FLUSH_STOP is always sent after a flushing seek</feature>
+    <feature>alsasrc, alsasink: add "card-name" property to get the card name in addition to the device name</feature>
+    <feature>appsrc: don't override buffer caps if appsrc caps are NULL; fix element classification</feature>
+    <feature>audioclock: add a function to invalidate the clock</feature>
+    <feature>audioconvert: optimise remaining conversion code paths with Orc as well</feature>
+    <feature>baseaudiosink,baseaudiosrc: post clock-provide and clock-lost messages when going from/to READY to/from PAUSED</feature>
+    <feature>baseaudiosink: subtract the render_delay from our latency</feature>
+    <feature>decodebin2: don't add non prerolled stream to topology</feature>
+    <feature>ffmpegcolorspace: add support for A420 and fix support for 8 bit paletted RGB and IYU1</feature>
+    <feature>gnomevfsrc: set GST_PARAM_MUTABLE_READY flag on the "handle" property</feature>
+    <feature>libvisual: add latency query; only drop frames that are really too old</feature>
+    <feature>multifdsink: gdp protocol is deprecated. People should use gdppay instead</feature>
+    <feature>oggdemux: fix seeking with negative rate with skeleton; fix wrong flowreturn handling</feature>
+    <feature>pbutils: AAC profile and level detection utility functions</feature>
+    <feature>pbutils: H.264 and MPEG-4 profile and level extraction utility functions</feature>
+    <feature>pbutils: new GstDiscoverer utility API for extracting metadata and tags</feature>
+    <feature>playbin2, decodebin2: declare stable, deprecate the old playbin/decodebin</feature>
+    <feature>playbin2, uridecodebin: add property to configure ring buffer size</feature>
+    <feature>rtcpbuffer: add function to manipulation the data in RTCP feedback packets</feature>
+    <feature>rtpbuffer: add functions to add RFC 5285 header extensions to GstBufferLists</feature>
+    <feature>rtpbuffer: add function to add RTP header extensions with a two bytes header</feature>
+    <feature>rtpbuffer: add function to append RFC 5285 one byte header extensions</feature>
+    <feature>rtpbuffer: add function to parse RFC 5285 header extensions</feature>
+    <feature>rtpbuffer: add function to read RFC 5285 header extensions from GstBufferLists</feature>
+    <feature>rtpbuffer: add function to transform a GstBuffer into a GstBufferList</feature>
+    <feature>rtsp: improve rtsp timeout calculation and handling</feature>
+    <feature>sdp: add methods to convert between uri and message</feature>
+    <feature>tags: try ISO-8859-1 as second fallback in case WINDOWS-1252 is not supported</feature>
+    <feature>tags: add many more photography/capture tags</feature>
+    <feature>tags: EXIF and XMP tag handling improvements</feature>
+    <feature>textoverlay: add support for NV12, NV21 and AYUV; configurable text color and position</feature>
+    <feature>theoradec: expose telemetry properties only if libtheora was compiled with --enable-telemetry</feature>
+    <feature>theoraenc: add support for two-pass encoding; allow change of bitrate and quality on-the-fly</feature>
+    <feature>tools: standalone gst-discoverer-0.10 tool for discovering media file properties</feature>
+    <feature>typefinding: detect avc1 ftyp as video/quicktime</feature>
+    <feature>typefinding: export 3gp profile in caps</feature>
+    <feature>typefinding: detect enhanced AC-3</feature>
+    <feature>typefinding: extend AAC typefinder to detect LOAS streams</feature>
+    <feature>typefinding: fix ADTS caps stream-format detail</feature>
+    <feature>typefinding: more reliable mpeg-ts typefinding</feature>
+    <feature>uridecodebin: Only enable progressive downloading if the upstream duration in bytes is known</feature>
+    <feature>video: add  gst_video_convert_frame*() utility functions</feature>
+    <feature>videorate: fixate the pixel-aspect-ratio if necessary</feature>
+    <feature>videorate: mark duplicated frames with the GAP flag</feature>
+    <feature>videoscale: add support for adding black borders to keep the DAR if necessary ("add-borders" property)</feature>
+    <feature>videoscale: Fix caps fixating if the height is fixed but the width isn't</feature>
+    <feature>videoscale: only set the PAR if the caps already had a PAR</feature>
+    <feature>videoscale: refactor using more Orc code</feature>
+    <feature>videotestsrc: new patterns: solid-color, ball, bar and smpte100</feature>
+    <feature>videotestsrc: add "foreground-color" and "background-color" properties, deprecate "colorspec" property</feature>
+    <feature>videotestsrc: add support for UYVP format, fix NV21 rendering</feature>
+    <feature>volume: use Orc to optimise many code paths</feature>
+    <feature>vorbisdec: decode pending buffers upon EOS when doing reverse playback</feature>
+    <feature>xoverlay: add set_window_handle() with guintptr argument, deprecate set_xwindow_id() which doesn't work on some platforms</feature>
+    <feature>xoverlay: allow render rectangle coordinates to be negative</feature>
+  </features>
+
+  <applications>
+  </applications>
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Alexey Fisher</person>
+	<person>American Dynamics</person>
+	<person>Andrzej K. Haczewski</person>
+	<person>Arun Raghavan</person>
+	<person>Chris Shoemaker</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Evan Nemerson</person>
+	<person>Guillaume Emont</person>
+	<person>Harri Mähönen</person>
+	<person>Havard Graff</person>
+	<person>Jan Schmidt</person>
+	<person>Leo Singer</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Matthias Clasen</person>
+	<person>Olivier Crête</person>
+	<person>Parthasarathi Susarla</person>
+	<person>Philip Jägenstedt</person>
+	<person>Philippe Normand</person>
+	<person>René Stadler</person>
+	<person>Rob Clark</person>
+	<person>Robert Swain</person>
+	<person>Sebastian Dröge</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Thijs Vermeir</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tristan Matthews</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vladimir</person>
+	<person>Wim Taymans</person>
+	<person>Zaheer Abbas Merali</person>
+  </contributors>
+
+  <api>
+    <additions>
+      <item>gst_audio_clock_invalidate()</item>
+      <item>gst_audio_clock_new_full()</item>
+      <item>gst_base_audio_sink_get_drift_tolerance()</item>
+      <item>gst_base_audio_sink_set_drift_tolerance()</item>
+      <item>gst_x_overlay_got_window_handle()</item>
+      <item>gst_x_overlay_set_window_handle()</item>
+      <item>GstXOverlay::set_window_handle()</item>
+      <item>gst_codec_utils_aac_caps_set_level_and_profile()</item>
+      <item>gst_codec_utils_aac_get_level()</item>
+      <item>gst_codec_utils_aac_get_profile()</item>
+      <item>gst_codec_utils_aac_get_sample_rate_from_index()</item>
+      <item>gst_codec_utils_h264_caps_set_level_and_profile()</item>
+      <item>gst_codec_utils_h264_get_level()</item>
+      <item>gst_codec_utils_h264_get_profile()</item>
+      <item>gst_codec_utils_mpeg4video_caps_set_level_and_profile()</item>
+      <item>gst_codec_utils_mpeg4video_get_level()</item>
+      <item>gst_codec_utils_mpeg4video_get_profile()</item>
+      <item>gst_discoverer_audio_info_get_bitrate()</item>
+      <item>gst_discoverer_audio_info_get_channels()</item>
+      <item>gst_discoverer_audio_info_get_depth()</item>
+      <item>gst_discoverer_audio_info_get_max_bitrate()</item>
+      <item>gst_discoverer_audio_info_get_sample_rate()</item>
+      <item>gst_discoverer_audio_info_get_type()</item>
+      <item>gst_discoverer_container_info_get_streams()</item>
+      <item>gst_discoverer_container_info_get_type()</item>
+      <item>gst_discoverer_discover_uri()</item>
+      <item>gst_discoverer_discover_uri_async()</item>
+      <item>gst_discoverer_get_type()</item>
+      <item>gst_discoverer_info_copy()</item>
+      <item>gst_discoverer_info_get_audio_streams()</item>
+      <item>gst_discoverer_info_get_container_streams()</item>
+      <item>gst_discoverer_info_get_duration()</item>
+      <item>gst_discoverer_info_get_misc()</item>
+      <item>gst_discoverer_info_get_result()</item>
+      <item>gst_discoverer_info_get_stream_info()</item>
+      <item>gst_discoverer_info_get_stream_list()</item>
+      <item>gst_discoverer_info_get_streams()</item>
+      <item>gst_discoverer_info_get_tags()</item>
+      <item>gst_discoverer_info_get_type()</item>
+      <item>gst_discoverer_info_get_uri()</item>
+      <item>gst_discoverer_info_get_video_streams()</item>
+      <item>gst_discoverer_new()</item>
+      <item>gst_discoverer_result_get_type()</item>
+      <item>gst_discoverer_start()</item>
+      <item>gst_discoverer_stop()</item>
+      <item>gst_discoverer_stream_info_get_caps()</item>
+      <item>gst_discoverer_stream_info_get_misc()</item>
+      <item>gst_discoverer_stream_info_get_next()</item>
+      <item>gst_discoverer_stream_info_get_previous()</item>
+      <item>gst_discoverer_stream_info_get_stream_type_nick()</item>
+      <item>gst_discoverer_stream_info_get_tags()</item>
+      <item>gst_discoverer_stream_info_get_type()</item>
+      <item>gst_discoverer_stream_info_list_free()</item>
+      <item>gst_discoverer_video_info_get_bitrate()</item>
+      <item>gst_discoverer_video_info_get_depth()</item>
+      <item>gst_discoverer_video_info_get_framerate_denom()</item>
+      <item>gst_discoverer_video_info_get_framerate_num()</item>
+      <item>gst_discoverer_video_info_get_height()</item>
+      <item>gst_discoverer_video_info_get_max_bitrate()</item>
+      <item>gst_discoverer_video_info_get_par_denom()</item>
+      <item>gst_discoverer_video_info_get_par_num()</item>
+      <item>gst_discoverer_video_info_get_type()</item>
+      <item>gst_discoverer_video_info_get_width()</item>
+      <item>gst_discoverer_video_info_is_image()</item>
+      <item>gst_discoverer_video_info_is_interlaced()</item>
+      <item>GST_PLUGINS_BASE_VERSION_MAJOR</item>
+      <item>GST_PLUGINS_BASE_VERSION_MINOR</item>
+      <item>GST_PLUGINS_BASE_VERSION_MICRO</item>
+      <item>GST_PLUGINS_BASE_VERSION_NANO</item>
+      <item>GST_CHECK_PLUGINS_BASE_VERSION</item>
+      <item>gst_plugins_base_version()</item>
+      <item>gst_plugins_base_version_string()</item>
+      <item>gst_rtcp_packet_fb_get_fci()</item>
+      <item>gst_rtcp_packet_fb_get_fci_length()</item>
+      <item>gst_rtcp_packet_fb_set_fci_length()</item>
+      <item>gst_rtp_buffer_add_extension_onebyte_header()</item>
+      <item>gst_rtp_buffer_add_extension_twobytes_header()</item>
+      <item>gst_rtp_buffer_get_extension_onebyte_header()</item>
+      <item>gst_rtp_buffer_get_extension_twobytes_header()</item>
+      <item>gst_rtp_buffer_list_add_extension_onebyte_header()</item>
+      <item>gst_rtp_buffer_list_add_extension_twobytes_header()</item>
+      <item>gst_rtp_buffer_list_from_buffer()</item>
+      <item>gst_rtp_buffer_list_get_extension_onebyte_header()</item>
+      <item>gst_rtp_buffer_list_get_extension_twobytes_header()</item>
+      <item>gst_sdp_message_as_uri()</item>
+      <item>gst_sdp_message_parse_uri()</item>
+      <item>GST_TAG_CAPTURING_SOURCE</item>
+      <item>GST_TAG_CAPTURING_METERING_MODE</item>
+      <item>GST_TAG_CAPTURING_SHARPNESS</item>
+      <item>GST_TAG_IMAGE_HORIZONTAL_PPI</item>
+      <item>GST_TAG_IMAGE_VERTICAL_PPI</item>
+      <item>GST_TAG_CAPTURING_FLASH_FIRED</item>
+      <item>GST_TAG_CAPTURING_FLASH_MODE</item>
+      <item>GST_TAG_CAPTURING_EXPOSURE_PROGRAM</item>
+      <item>GST_TAG_CAPTURING_EXPOSURE_MODE</item>
+      <item>GST_TAG_CAPTURING_SCENE_CAPTURE_TYPE</item>
+      <item>GST_TAG_CAPTURING_GAIN_ADJUSTMENT</item>
+      <item>GST_TAG_CAPTURING_WHITE_BALANCE</item>
+      <item>GST_TAG_CAPTURING_CONTRAST</item>
+      <item>GST_TAG_CAPTURING_SATURATION</item>
+      <item>GST_TAG_CAPTURING_SHUTTER_SPEED</item>
+      <item>GST_TAG_CAPTURING_FOCAL_RATIO</item>
+      <item>GST_TAG_CAPTURING_FOCAL_LENGTH</item>
+      <item>GST_TAG_CAPTURING_DIGITAL_ZOOM_RATIO</item>
+      <item>GST_TAG_CAPTURING_ISO_SPEED</item>
+      <item>GST_VIDEO_FORMAT_UYVP</item>
+      <item>GST_VIDEO_FORMAT_A420</item>
+      <item>gst_video_convert_frame()</item>
+      <item>gst_video_convert_frame_async()</item>
+      <item>GstTextOverlay:xpos</item>
+      <item>GstTextOverlay:ypos</item>
+      <item>GstTextOverlay:color</item>
+      <item>GstVideoTestSrc:solid-color</item>
+      <item>GstVideoTestSrc::foreground-color</item>
+      <item>GstVideoTestSrc::background-color</item>
+    </additions>
+    <deprecations>
+      <item>gst_x_overlay_set_xwindow_id()</item>
+      <item>gst_x_overlay_got_xwindow_id()</item>
+      <item>GstXOverlay::set_xwindow_id()</item>
+    </deprecations>
+  </api>
+
+  
+
+  <bugs>
+    <bug>
+      <id>628028</id>
+      <summary>[uridecodebin] Don't enable progressive downloading for live streams</summary>
+    </bug>
+    <bug>
+      <id>623846</id>
+      <summary>typefinding: add support for &quot; enhanced ac3 &quot; (eac3)</summary>
+    </bug>
+    <bug>
+      <id>602437</id>
+      <summary>[playbin2] [gapless] Completely broken when switching between files with audio/video only</summary>
+    </bug>
+    <bug>
+      <id>612264</id>
+      <summary>Notification needed when the first buffer is pushed by the basertppayloader</summary>
+    </bug>
+    <bug>
+      <id>615471</id>
+      <summary>[videoscale] Interlaced handling makes output worse than no interlaced handling at all</summary>
+    </bug>
+    <bug>
+      <id>616392</id>
+      <summary>videotestsrc colorspec=0/1 does not affect color-matrix in caps</summary>
+    </bug>
+    <bug>
+      <id>617314</id>
+      <summary>pbutils: Add codec-specific utility functions for AAC, H.264, MPEG-4 video</summary>
+    </bug>
+    <bug>
+      <id>617506</id>
+      <summary>[videoscale] Add support for adding black borders if necessary to keep the DAR</summary>
+    </bug>
+    <bug>
+      <id>620291</id>
+      <summary>typefindfunctions: Export 3gp profile in caps</summary>
+    </bug>
+    <bug>
+      <id>623663</id>
+      <summary>[typefinding] mpeg-ts file detected as audio/mpeg</summary>
+    </bug>
+    <bug>
+      <id>623807</id>
+      <summary>[audioclock] Add gst_audio_clock_new_full() with GDestroyNotify for the user_data</summary>
+    </bug>
+    <bug>
+      <id>623837</id>
+      <summary>typefind: only associate .webm with WebM</summary>
+    </bug>
+    <bug>
+      <id>623918</id>
+      <summary>[typefind] Extend AAC typefinder to detect LOAS stream</summary>
+    </bug>
+    <bug>
+      <id>624598</id>
+      <summary>[adder] crash in orc_sse_set_mxcsr()</summary>
+    </bug>
+    <bug>
+      <id>624656</id>
+      <summary>[videoscale] UYVY scaling broken, introduces green lines</summary>
+    </bug>
+    <bug>
+      <id>624919</id>
+      <summary>[videotestsrc] add solid color pattern</summary>
+    </bug>
+    <bug>
+      <id>624920</id>
+      <summary>[textoverlay] configurable text color and position</summary>
+    </bug>
+    <bug>
+      <id>624949</id>
+      <summary>[playbin2] declare playbin2 stable</summary>
+    </bug>
+    <bug>
+      <id>625001</id>
+      <summary>[examples] Don't use GdkDraw/GdkGC</summary>
+    </bug>
+    <bug>
+      <id>625118</id>
+      <summary>[playbin2] Race condition with EOS events in gapless mode</summary>
+    </bug>
+    <bug>
+      <id>625944</id>
+      <summary>[pbutils] GstDiscoverer - API to discover metadata and stream information</summary>
+    </bug>
+    <bug>
+      <id>626125</id>
+      <summary>[alsa] Conditional jump or move depends on uninitialised value(s)</summary>
+    </bug>
+    <bug>
+      <id>626570</id>
+      <summary>[tag] Add resolution tags</summary>
+    </bug>
+    <bug>
+      <id>626581</id>
+      <summary>[playbin2] regression: occasional deadlocks in streamsynchronizer</summary>
+    </bug>
+    <bug>
+      <id>626621</id>
+      <summary>[playbin2] streamsynchronizer regressions</summary>
+    </bug>
+    <bug>
+      <id>626629</id>
+      <summary>[ffmpegcolorspace] doesn't handle palettes any longer</summary>
+    </bug>
+    <bug>
+      <id>626718</id>
+      <summary>playback: Delay usage of GstFactoryList</summary>
+    </bug>
+    <bug>
+      <id>627203</id>
+      <summary>[alsa] alsasrc and alsasink should expose card name via property</summary>
+    </bug>
+    <bug>
+      <id>627297</id>
+      <summary>[regression] build-failure</summary>
+    </bug>
+    <bug>
+      <id>627565</id>
+      <summary>[xoverlay][win64] gulong can't hold a HANDLE</summary>
+    </bug>
+    <bug>
+      <id>627768</id>
+      <summary>add NV12 support to textoverlay</summary>
+    </bug>
+    <bug>
+      <id>627780</id>
+      <summary>GstClockOverlay re-renders string even if it hasn't changed, resulting in very high CPU usage.</summary>
+    </bug>
+    <bug>
+      <id>627924</id>
+      <summary>riff: add support for 2vuy</summary>
+    </bug>
+    <bug>
+      <id>628009</id>
+      <summary>[volume] Float processing with orc broken</summary>
+    </bug>
+    <bug>
+      <id>628400</id>
+      <summary>[videorate] does not generate buffers to fill the duration of the last frame</summary>
+    </bug>
+    <bug>
+      <id>628500</id>
+      <summary>videotestsrc: add moving color bars pattern</summary>
+    </bug>
+    <bug>
+      <id>628747</id>
+      <summary>gst-plugins-base: unable to build because of compiler warning in libggsttag</summary>
+    </bug>
+    <bug>
+      <id>629157</id>
+      <summary>Move video frame conversion from playback plugin to libgstvideo</summary>
+    </bug>
+    <bug>
+      <id>629672</id>
+      <summary>gnomevfsrsrc: &quot; handle &quot; property should also have the GST_PARAM_MUTABLE_READY flag</summary>
+    </bug>
+    <bug>
+      <id>629848</id>
+      <summary>build problem with current gtk+: implicit declaration of function 'gdk_draw_rectangle', GtkStyle' has no member named 'black_gc'</summary>
+    </bug>
+    <bug>
+      <id>630303</id>
+      <summary>theoraenc: Make the bitrate/quality dynamically modifiable</summary>
+    </bug>
+    <bug>
+      <id>630353</id>
+      <summary>[appsrc] Avoid losing buffers' caps</summary>
+    </bug>
+    <bug>
+      <id>630440</id>
+      <summary>ringbuffer: use g_once for type-init</summary>
+    </bug>
+    <bug>
+      <id>630443</id>
+      <summary>baseaudiosink: Add getter and setter for drift tolerance</summary>
+    </bug>
+    <bug>
+      <id>630471</id>
+      <summary>[tag] ligatures &quot; Œ &quot; and &quot; œ &quot; are not supported in freeform strings</summary>
+    </bug>
+    <bug>
+      <id>630496</id>
+      <summary>seek example: add new #define to set seek bar graininess</summary>
+    </bug>
+    <bug>
+      <id>630802</id>
+      <summary>videotestsrc.c doesn't compile in Visual Studio 2008</summary>
+    </bug>
+    <bug>
+      <id>631128</id>
+      <summary>Add methods to manipulate RFC 5285 header extensions</summary>
+    </bug>
+    <bug>
+      <id>631312</id>
+      <summary>[streamsynchronizer] Advancing segments too much</summary>
+    </bug>
+    <bug>
+      <id>631633</id>
+      <summary>[oggdemux] fix seeking with negative rate with skeleton</summary>
+    </bug>
+    <bug>
+      <id>631703</id>
+      <summary>[oggdemux] sintel ogv delay when playing</summary>
+    </bug>
+    <bug>
+      <id>631756</id>
+      <summary>Fix build with glib 2.21.3</summary>
+    </bug>
+    <bug>
+      <id>631773</id>
+      <summary>[tags] Add new exif tags: sharpness, metering mode, file/capturing source</summary>
+    </bug>
+    <bug>
+      <id>631774</id>
+      <summary>[xvimagesink] sets non-simple caps on pad_alloced buffer</summary>
+    </bug>
+    <bug>
+      <id>632167</id>
+      <summary>[oggdemux] doesn't parse/push all headers in pull mode</summary>
+    </bug>
+    <bug>
+      <id>632653</id>
+      <summary>[seek] Don't use deprecated combo box API</summary>
+    </bug>
+    <bug>
+      <id>632656</id>
+      <summary>[uridecodebin] internal decodebin2 might fail to reach PLAYING in streaming case</summary>
+    </bug>
+    <bug>
+      <id>632789</id>
+      <summary>[PATCH] tests/icles/: adapted test-colorkey.c and test-xoverlay.c to deprecation of gtk_widget_hide_all</summary>
+    </bug>
+    <bug>
+      <id>632809</id>
+      <summary>[regression] build failure in 0.10.30.2 in tools/</summary>
+    </bug>
+    <bug>
+      <id>632988</id>
+      <summary>[discoverer] gst_caps_ref() critical for substreams of unknown streams</summary>
+    </bug>
+    <bug>
+      <id>633023</id>
+      <summary>[discoverer] Add versionized gst-discoverer tool</summary>
+    </bug>
+    <bug>
+      <id>633203</id>
+      <summary>Regression: streamsynchroniser + disabled deinterlacing = no DVD menu highlights/subtitles</summary>
+    </bug>
+    <bug>
+      <id>633311</id>
+      <summary>discoverer: use specific types in getters, rename some boolean getters</summary>
+    </bug>
+    <bug>
+      <id>633336</id>
+      <summary>[discoverer] Move documentation into the correct section</summary>
+    </bug>
+    <bug>
+      <id>633455</id>
+      <summary>[rtsp] don't let the rtsp connection timeout</summary>
+    </bug>
+    <bug>
+      <id>634014</id>
+      <summary>GTK+3 is a moving target, lets not compile against it by default.</summary>
+    </bug>
+    <bug>
+      <id>634584</id>
+      <summary>decodebin2 docs should mention that &quot; new-decoded-pad &quot; signal may be emitted after &quot; no-more-pads &quot; </summary>
+    </bug>
+    <bug>
+      <id>635067</id>
+      <summary>[*decodebin*] pad template leaked</summary>
+    </bug>
+    <bug>
+      <id>635392</id>
+      <summary>Missing information on exported packages from GIRs</summary>
+    </bug>
+    <bug>
+      <id>621349</id>
+      <summary>[theoraenc] Implement two-pass encoding</summary>
+    </bug>
+    <bug>
+      <id>628488</id>
+      <summary>[theoradec] add properties to enable telemetry overlay</summary>
+    </bug>
+    <bug>
+      <id>629746</id>
+      <summary>Enumerations have incorrect names of enum values (GEnumValue.value_name)</summary>
+    </bug>
+    <bug>
+      <id>626869</id>
+      <summary>The RTP depayloader is sometimes sending partial frames down the pipeline without the DISCONT bit set</summary>
+    </bug>
+  </bugs>
+
+</release>

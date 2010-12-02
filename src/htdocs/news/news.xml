@@ -3938,4 +3938,26 @@ or download tarballs from
     </content>
   </item>
 
+  <item>
+    <date>2010-12-01 23:00</date>
+    <title>GStreamer Core 0.10.31, Base Plugins 0.10.31, Good Plugins 0.10.26 and Python Bindings 0.10.20 stable releases</title>
+<content>
+<p>
+The GStreamer team announces new releases of the GStreamer core module, the gst-plugins-base module, the gst-plugins-good module and the gst-python module for the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.31.html">gstreamer</a>,
+<a href="&site;/releases/gst-plugins-base/0.10.31.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/0.10.26.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-python/0.10.20.html">gst-python</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.31.tar.bz2">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.31.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.26.tar.bz2">gst-plugins-good</a>,
+<a href="&site;/src/gst-python/gst-python-0.10.20.tar.bz2">gst-python</a>,
+    </p>
+    </content>
+  </item>
+
 </news>
