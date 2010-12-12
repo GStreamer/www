@@ -65,12 +65,18 @@ wealthiness to purchase hardware bricks.
 which is currently under development and will be able to record perfectly synchronized audio/video
 in any format supported by GStreamer.</p>
 
+<h2>The Dave/Dina Project</h2>
+<p><a href="http://www.davedina.org/content/">The Dave/Dina Project</a> is a set-top box distribution for playing and recording TV and multimedia and much more.</p>
+
 <h2>Dissent</h2>
 <p><a href="http://dissent-project.org/">Dissent</a> is a audio and video player
  written in C# and GTK+.</p>
 
-<h2>The Dave/Dina Project</h2>
-<p><a href="http://www.davedina.org/content/">The Dave/Dina Project</a> is a set-top box distribution for playing and recording TV and multimedia and much more.</p>
+<h2>dmapd</h2>
+<p><a href="http://www.flyn.org/projects/dmapd/">dmapd</a> is a media server that implements
+Apple's DAAP and DPAP protocols. Dmapd can share content with Apple iTunes,
+Apple iPhoto, Roku's SoundBridge products, Rhythmbox, etc. dmapd uses GStreamer
+to read media metadata and perform real-time transcoding of audio formats</p>
 
 <h2>Elisa</h2>
 <p><a href="http://www.fluendo.com/elisa">Elisa</a> is a OpenGL based cross-platform media center solution.</p>
