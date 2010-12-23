@@ -14,7 +14,7 @@
 <h1>GStreamer applications</h1>
 <p>
  Because GStreamer is designed to be as generic as possible, a wide 
- range of applications can be build on top of it with very little effort, 
+ range of applications can be built on top of it with very little effort,
  allowing the programmer to focus on the user interface and human interaction
  components of application design.
 </p>
