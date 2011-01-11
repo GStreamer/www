@@ -183,6 +183,20 @@ RTSP server based on GStreamer (<a href="http://people.freedesktop.org/~wtay/">h
   </module>
 
   <module>
+    <id>gst-editing-services</id>
+    <blurb>Editing Services</blurb>
+    <title>GStreamer Editing Services</title>
+    <description>
+Library for creating audio/video editors.
+    </description>
+    <maintainer>Edward Hervey</maintainer>
+    <versions>
+      <stable>&gst-editing-services-version-stable;</stable>
+      <devel>&gst-editing-services-version-devel;</devel>
+    </versions>
+  </module>
+
+  <module>
     <id>gst-plugins</id>
     <title>GStreamer Plug-ins</title>
     <blurb>additional elements</blurb>
