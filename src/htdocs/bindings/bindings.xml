@@ -105,6 +105,15 @@ or would like to help out.
   </binding>
 
   <binding>
+    <id>qt</id>
+    <name>Qt</name>
+    <status>Released. See the <a href="&site;/modules/qt-gstreamer.html">qt-gstreamer</a> module.</status>
+    <body>
+    <p>Released. See the <a href="&site;/modules/qt-gstreamer.html">qt-gstreamer</a> module.</p>
+    </body>
+  </binding>
+
+  <binding>
     <id>guile</id>
     <name>Guile</name>
     <status>Released under the aegis of the

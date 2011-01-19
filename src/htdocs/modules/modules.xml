@@ -197,6 +197,20 @@ Library for creating audio/video editors.
   </module>
 
   <module>
+    <id>qt-gstreamer</id>
+    <blurb>QtGStreamer</blurb>
+    <title>Qt bindings</title>
+    <description>
+Bindings for Qt.
+    </description>
+    <maintainer>George Kiagiadakis and Mauricio Piacentini</maintainer>
+    <versions>
+      <stable>&qt-gstreamer-version-stable;</stable>
+      <devel>&qt-gstreamer-version-devel;</devel>
+    </versions>
+  </module>
+
+  <module>
     <id>gst-plugins</id>
     <title>GStreamer Plug-ins</title>
     <blurb>additional elements</blurb>

@@ -12,6 +12,7 @@
 <!ENTITY gst-rtsp-server-version-stable "0.10.7">
 <!ENTITY gnonlin-version-stable "0.10.16">
 <!-- <!ENTITY gst-editing-services-version-stable "0.10.1"> -->
+<!-- <!ENTITY qt-gstreamer-version-stable "0.10.1"> -->
 
 <!ENTITY gst-version-devel "git master">
 <!ENTITY gst-plugins-base-version-devel "git master">
@@ -21,6 +22,7 @@
 <!ENTITY gst-plugins-gl-version-devel "git master">
 <!ENTITY gst-rtsp-server-version-devel "git master">
 <!ENTITY gst-editing-services-version-devel "git master">
+<!ENTITY qt-gstreamer-version-devel "git master">
 
 <!ENTITY gst-ffmpeg-version-devel "git master">
 <!ENTITY gst-openmax-version-devel "git master">
