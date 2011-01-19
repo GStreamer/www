@@ -20,4 +20,5 @@ SUBDIRS = \
 	gst-plugins-ugly \
 	gst-python \
 	gstreamer \
-	gstreamer-sharp
+	gstreamer-sharp \
+	gst-editing-services
