@@ -10,7 +10,7 @@
 <!ENTITY gst-plugins-bad-version-stable "0.10.20">
 <!ENTITY gst-plugins-gl-version-stable "0.10.2">
 <!ENTITY gst-rtsp-server-version-stable "0.10.7">
-<!ENTITY gnonlin-version-stable "0.10.16">
+<!ENTITY gnonlin-version-stable "0.10.17">
 <!-- <!ENTITY gst-editing-services-version-stable "0.10.1"> -->
 <!-- <!ENTITY qt-gstreamer-version-stable "0.10.1"> -->
 
