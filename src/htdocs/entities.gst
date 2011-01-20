@@ -11,7 +11,7 @@
 <!ENTITY gst-plugins-gl-version-stable "0.10.2">
 <!ENTITY gst-rtsp-server-version-stable "0.10.7">
 <!ENTITY gnonlin-version-stable "0.10.17">
-<!-- <!ENTITY gst-editing-services-version-stable "0.10.1"> -->
+<!ENTITY gst-editing-services-version-stable "0.10.1">
 <!-- <!ENTITY qt-gstreamer-version-stable "0.10.1"> -->
 
 <!ENTITY gst-version-devel "git master">

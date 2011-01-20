@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name>This is Scandinavian one-o-one</name>
+  <version>0.10.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce the first release
+in the 0.10.x stable series of the GStreamer Editing Services.
+</p>
+
+  </intro>
+  <features>
+<feature>Highly portable and lightweight, written in C/GObject</feature>
+<feature>High-level API for simple applications</feature>
+<feature>Full-depth API for advanced applications</feature>
+<feature>gobject-introspection support for easy language bindings creation</feature>
+<feature>Audio/Video/Image file support</feature>
+<feature>Audio/Video Transitions</feature>
+<feature>Title/Credits</feature>
+<feature>Title overlay</feature>
+<feature>Saving/Loading of timelines to custom file format</feature>
+<feature>Playback/Rendering of timelines with convenience GstPipeline</feature>
+<feature></feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Brandon Lewis</person>
+	<person>Edward Hervey</person>
+	<person>Jarkko Pallviainen</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>639218</id>
+      <summary>Exports private symbols</summary>
+    </bug>
+    <bug>
+      <id>639219</id>
+      <summary>ges-internal.h shouldn't be installed</summary>
+    </bug>
+    <bug>
+      <id>639222</id>
+      <summary>Rename ges-launch to ges-launch-0.10</summary>
+    </bug>
+  </bugs>
+</release>

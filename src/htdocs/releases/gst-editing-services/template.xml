@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version></version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the GStreamer Editing Services.
+</p>
+
+  </intro>
+  <features>
+  </features>
+
+  <applications>
+  </applications>
+
+  <contributors>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  <bugs>
+  </bugs>
+</release>
