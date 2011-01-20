@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name>She used to be an ironhorse, twenty years ago</name>
+  <version>0.10.21</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Python Bindings.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+  </intro>
+  <features>
+    <feature>gstreamer core/base 0.10.32 API additions</feature>
+    <feature>Fix GstDiscover methods</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Arun Raghavan</person>
+	<person>Edward Hervey</person>
+	<person>Stefan Kost</person>
+	<person>Tim-Philipp Müller</person>
+	<person>christian schaller</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>639293</id>
+      <summary>gst-python 0.10.20 does not build with gstreamer &lt; 0.10.31</summary>
+    </bug>
+    <bug>
+      <id>639632</id>
+      <summary>GST_TAG_APPLICATION_NAME not bound</summary>
+    </bug>
+  </bugs>
+</release>

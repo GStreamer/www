@@ -2,7 +2,7 @@
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.11">
 <!ENTITY gst-openmax-version-stable "0.10.1">
-<!ENTITY gst-python-version-stable "0.10.20">
+<!ENTITY gst-python-version-stable "0.10.21">
 <!ENTITY gstreamer-sharp-version-stable "0.9.2">
 <!ENTITY gst-plugins-base-version-stable "0.10.31">
 <!ENTITY gst-plugins-good-version-stable "0.10.26">
