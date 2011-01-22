@@ -3960,4 +3960,32 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2011-01-22 11:00</date>
+    <title>GStreamer Core 0.10.32, Base Plugins 0.10.32, Good Plugins 0.10.27, Ugly Plugins 0.10.27, Bad Plugins 0.10.21, GNonLin 0.10.17, gst-python 0.10.21 stable releases</title>
+<content>
+<p>
+The GStreamer team is excited to announce new releases of the GStreamer core module, the gst-plugins-base module, the gst-plugins-good module, the gst-plugins-ugly module, the gst-plugins-bad module, the GNonLin module and the gst-python bindings module for the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.32.html">gstreamer</a>,
+<a href="&site;/releases/gst-plugins-base/0.10.32.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/0.10.27.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/0.10.17.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/0.10.21.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gnonlin/0.10.17.html">gnonlin</a>,
+<a href="&site;/releases/gst-python/0.10.21.html">gst-python</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.27.tar.bz2">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.27.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.19.tar.bz2">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.14.tar.bz2">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.18.tar.bz2">gst-plugins-bad</a>,
+<a href="&site;/src/gnonlin/gnonlin-0.10.17.tar.bz2">gnonlin</a>,
+<a href="&site;/src/gst-python/gst-python-0.10.21.tar.bz2">gst-python</a>,
+    </p>
+    </content>
+  </item>
+
 </news>
