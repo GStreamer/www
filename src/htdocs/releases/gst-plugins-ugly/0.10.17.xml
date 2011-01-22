@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-ugly</module>
+  <module-fancy>GStreamer Ugly Plug-ins</module-fancy>
+  <name>Raised by Wolves</name>
+  <version>0.10.17</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Ugly Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+</p>
+
+<p>
+<i>"When you have to shoot, shoot.  Don't talk."</i>
+</p>
+<p>
+There are times when the world needs a color between black and white.
+Quality code to match the good's, but two-timing, backstabbing and ready to
+sell your freedom down the river.  These plug-ins might have a patent noose
+around their neck, or a lock-up license, or any other problem that makes you
+think twice about shipping them.
+</p>
+<p>
+We don't call them ugly because we like them less.  Does a mother love her
+son less because he's not as pretty as the other ones ? No  - she commends
+him on his great personality.  These plug-ins are the life of the party.
+And we'll still step in and set them straight if you report any unacceptable
+behaviour - because there are two kinds of people in the world, my friend:
+those with a rope around their neck and the people who do the cutting.
+</p>
+<p>
+This module contains a set of plug-ins that have good quality and correct
+functionality, but distributing them might pose problems.  The license
+on either the plug-ins or the supporting libraries might not be how we'd
+like. The code might be widely known to present patent problems.
+Distributors should check if they want/can ship these plug-ins.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>asfdemux: Handle new type of DRM'd asf files</feature>
+    <feature>dvdreadsrc: fix handling of multi-angle streams</feature>
+    <feature>dvdreadsrc: improve error messages on read errors</feature>
+    <feature>mad: if gst_pad_alloc_buffer() returns a buffer with the wrong size allocate a new one</feature>
+    <feature>mad: support reverse playback</feature>
+    <feature>mpeg2dec: convert the position to stream time before answering to a position query</feature>
+    <feature>mpeg2dec: fix position query by trusting upstream</feature>
+    <feature>mpeg2dec: refactor cropping code to use libgstvideo functions</feature>
+    <feature>mpeg2dec: use gst_pad_alloc_buffer() when cropping buffers</feature>
+    <feature>mpegparse: re-fix flow return handling</feature>
+    <feature>rmdemux: set GST_BUFFER_FLAG_DELTA_UNIT properly</feature>
+    <feature>x264enc: add a note to the docs about encoder latency and queues</feature>
+    <feature>x264enc: also accept YV12 input</feature>
+    <feature>x264enc: Handle codec/encoder tags</feature>
+    <feature>x264enc: Work around a rate control issue in libx264</feature>
+    <feature>x264: use pkg-config to locate libx264</feature>
+    <feature>x264: vbv-buf-capacity should have a minimum of 0</feature>
+    <feature>xingmux: Don't ignore WRONG_STATE and NOT_LINKED when pushing data downstream</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Benjamin Gaignard</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Guillaume Emont</person>
+	<person>Jan Schmidt</person>
+	<person>Leo Singer</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Rob Clark</person>
+	<person>Robert Swain</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Thomas Green</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tristan Matthews</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>539254</id>
+      <summary>[dvdreadsrc] DVDs with multiple angles switch angles during read</summary>
+    </bug>
+    <bug>
+      <id>571146</id>
+      <summary>mpeg2dec: possibly uses wrong strides for 4:2:2 and 4:4:4 YUV with unusual display width or height</summary>
+    </bug>
+    <bug>
+      <id>599515</id>
+      <summary>Fix dvb for DVB API 3.3</summary>
+    </bug>
+    <bug>
+      <id>621465</id>
+      <summary>[x264enc] Video codec information copied incorrectly to output</summary>
+    </bug>
+    <bug>
+      <id>632549</id>
+      <summary>[mpeg2dec] answers to position queries are wrong for DVDs</summary>
+    </bug>
+    <bug>
+      <id>632861</id>
+      <summary>[x264enc] really bad quality with tune=zerolatency</summary>
+    </bug>
+    <bug>
+      <id>634840</id>
+      <summary>x264: use pkg-config to locate dependencies for plugin</summary>
+    </bug>
+    <bug>
+      <id>635291</id>
+      <summary>x264enc: &quot; vbv-buf-capacity &quot; property should have minimum value of 0</summary>
+    </bug>
+    <bug>
+      <id>635461</id>
+      <summary>Crash in mad decoder when changing number of audio output channels in Totem while media is running</summary>
+    </bug>
+    <bug>
+      <id>636107</id>
+      <summary>x264enc: docs should indicate specifics of using with queues</summary>
+    </bug>
+    <bug>
+      <id>637093</id>
+      <summary>rmdemux: set GST_BUFFER_FLAG_DELTA_UNIT properly</summary>
+    </bug>
+    <bug>
+      <id>637932</id>
+      <summary>realmedia: do not use the pad buffer allocation functions in demuxers</summary>
+    </bug>
+    <bug>
+      <id>639226</id>
+      <summary>[asfdemux] Doesn't handle new PlayReady DRM files</summary>
+    </bug>
+  </bugs>
+</release>
