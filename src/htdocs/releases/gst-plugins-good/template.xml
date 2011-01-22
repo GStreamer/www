@@ -15,8 +15,6 @@ GStreamer Good Plug-ins.
 </p>
 <p>
 The 0.10.x series is a stable series targeted at end users.
-It is not API or ABI compatible with the stable 0.8.x series.
-It is, however, parallel installable with the 0.8.x series.
 </p>
 
 <p>
@@ -58,10 +56,6 @@ Other modules containing plug-ins are:
 </p>
   </intro>
   <features>
-    <feature>Parallel installability with 0.8.x series</feature>
-    <feature>Threadsafe design and API</feature>
-    <feature>DV/Firewire fixes</feature>
-    <feature>speexenc, cairotimeoverlay, matroska, pngdec, flxdec, videomixer, alphacolor ported</feature>
   </features>
 
   <applications>

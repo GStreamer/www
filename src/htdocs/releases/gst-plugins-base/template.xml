@@ -39,7 +39,8 @@ This module contains elements for, among others:
   <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
   <li>visualisation: libvisual</li>
   <li>video processing: ffmpegcolorspace</li>
-  <li>aggregate elements: uridecodebin, playbin2, decodebin2, decodebin, playbin</li>
+  <li>aggregate elements: uridecodebin, playbin2, decodebin2, decodebin, playbin, encodebin</li>
+  <li>libraries: app, audio, cdda, fft, interfaces, netbuffer, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
 </ul>
 
 Other modules containing plug-ins are:
