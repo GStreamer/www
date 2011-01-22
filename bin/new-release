@@ -248,7 +248,21 @@ then
   fi
 fi
 
-cd $moduledir
+pushd $moduledir > /dev/null 2>&1
 git diff --color > release.diff
 echo "Press Enter to review the git diff"
 less -R release.diff
+popd
+
+# print md5sums and links
+echo
+echo "======================================================================="
+echo
+cat data/src/$module/$module-$version.tar.gz.md5
+cat data/src/$module/$module-$version.tar.bz2.md5
+echo
+echo "http://gstreamer.freedesktop.org/src/$module/$module-$version.tar.gz"
+echo "http://gstreamer.freedesktop.org/src/$module/$module-$version.tar.bz2"
+echo
+echo "======================================================================="
+echo
