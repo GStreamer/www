@@ -3962,7 +3962,7 @@ or download tarballs for
 
   <item>
     <date>2011-01-22 11:00</date>
-    <title>GStreamer Core 0.10.32, Base Plugins 0.10.32, Good Plugins 0.10.27, Ugly Plugins 0.10.27, Bad Plugins 0.10.21, GNonLin 0.10.17, gst-python 0.10.21 stable releases</title>
+    <title>GStreamer Core 0.10.32, Base Plugins 0.10.32, Good Plugins 0.10.27, Ugly Plugins 0.10.17, Bad Plugins 0.10.21, GNonLin 0.10.17, gst-python 0.10.21 stable releases</title>
 <content>
 <p>
 The GStreamer team is excited to announce new releases of the GStreamer core module, the gst-plugins-base module, the gst-plugins-good module, the gst-plugins-ugly module, the gst-plugins-bad module, the GNonLin module and the gst-python bindings module for the 0.10 GStreamer stable release series.
