@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(www\.)?gstreamer\.net$ [NC]
+RewriteRule .* http://gstreamer.freedesktop.org%{REQUEST_URI} [R=301,L]
