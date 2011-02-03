@@ -97,7 +97,7 @@ real live maintainer, or some actual wide use.
     <title>GStreamer OpenGL Plug-ins</title>
     <blurb>plug-in and helper libraries for OpenGL integration</blurb>
     <description>
-        The GStreamer OpenGL modhttp://gstreamer.freedesktop.org/wiki/QtGStreamerule provides helper libraries, base classes
+        The GStreamer OpenGL module provides helper libraries, base classes
         and elements for integrating with OpenGL and using it to perform video
         display and processing.
     </description>
