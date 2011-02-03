@@ -55,6 +55,14 @@ HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-openmax">Subscribe</
 HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-openmax">Archives</A></I>
 <p>Development of GStreamer wrappers for OpenMax components.</p>
 
+<LI><B>gstreamer-android</B>:</LI>
+<I><A
+HREF="https://lists.sourceforge.net/lists/listinfo/gstreamer-android">Subscribe</A>
+| <A
+HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-android">Archives</A></I>
+<p>Development of GStreamer for Android integration.</p>
+
+
 <LI><B>gstreamer-embedded</B>:</LI>
 <I><A
 HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-embedded">Subscribe</A>

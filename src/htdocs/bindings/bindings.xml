@@ -1,3 +1,4 @@
+;;;::
 <?xml version="1.0"?>
 <!DOCTYPE xml
 [
@@ -110,6 +111,15 @@ or would like to help out.
     <status>Released. See the <a href="&site;/modules/qt-gstreamer.html">qt-gstreamer</a> module.</status>
     <body>
     <p>Released. See the <a href="&site;/modules/qt-gstreamer.html">qt-gstreamer</a> module.</p>
+    </body>
+  </binding>
+
+  <binding>
+    <id>android</id>
+    <name>Android</name>
+    <status>Under development. See the <a href="&site;/modules/gstreamer-android.html">gstreamer android</a> module.</status>
+    <body>
+    <p>Under development. See the <a href="&site;/modules/gstreamer-android.html">gstreamer android</a> module</p>
     </body>
   </binding>
 

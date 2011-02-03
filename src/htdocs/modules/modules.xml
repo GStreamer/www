@@ -201,9 +201,31 @@ Library for creating audio/video editors.
     <blurb>QtGStreamer</blurb>
     <title>Qt bindings</title>
     <description>
-Bindings for Qt.
+    QtGStreamer is a set of libraries providing C++ bindings for GStreamer
+    with a Qt-style API, plus some helper classes and elements for
+    integrating GStreamer better in Qt applications. The goal of this module is to allow
+    easy use of GStreamer for applications targetting MeeGo Mobile or the KDE desktop.
     </description>
     <maintainer>George Kiagiadakis and Mauricio Piacentini</maintainer>
+    <versions>
+      <stable>&qt-gstreamer-version-stable;</stable>
+      <devel>&qt-gstreamer-version-devel;</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gstreamer-android</id>
+    <blurb>GStreamer for Android</blurb>
+    <title>GStreamer for Android</title>
+    <description>
+    This is a module that allows you to make GStreamer the media engine for
+    Android. The goal of the project is to both allow hardware makers to 
+    standarize on GStreamer accross their software platforms, but also to make
+    the advanced functionality of GStreamer available on the Android platform,
+    like video editing, DLNA Support and Video conferencing. This module has a 
+    seperate mailing list, so be sure to check the mailing lists page for details.
+    </description>
+    <maintainer>Reynaldo Pinochet and Alessandro Decina</maintainer>
     <versions>
       <stable>&qt-gstreamer-version-stable;</stable>
       <devel>&qt-gstreamer-version-devel;</devel>
