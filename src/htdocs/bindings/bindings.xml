@@ -116,9 +116,9 @@ or would like to help out.
   <binding>
     <id>android</id>
     <name>Android</name>
-    <status>Under development. See the <a href="&site;/modules/gstreamer-android.html">gstreamer android</a> module.</status>
+    <status>Under development. See the <a href="&site;/modules/gst-android.html">gstreamer android</a> module.</status>
     <body>
-    <p>Under development. See the <a href="&site;/modules/gstreamer-android.html">gstreamer android</a> module</p>
+    <p>Under development. See the <a href="&site;/modules/gst-android.html">gstreamer android</a> module</p>
     </body>
   </binding>
 
