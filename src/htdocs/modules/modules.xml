@@ -214,7 +214,7 @@ Library for creating audio/video editors.
   </module>
 
   <module>
-    <id>gstreamer-android</id>
+    <id>gst-android</id>
     <blurb>GStreamer for Android</blurb>
     <title>GStreamer for Android</title>
     <description>
@@ -227,8 +227,8 @@ Library for creating audio/video editors.
     </description>
     <maintainer>Reynaldo Pinochet and Alessandro Decina</maintainer>
     <versions>
-      <stable>&qt-gstreamer-version-stable;</stable>
-      <devel>&qt-gstreamer-version-devel;</devel>
+      <stable>&gst-android-version-stable;</stable>
+      <devel>&gst-android-version-devel;</devel>
     </versions>
   </module>
 
