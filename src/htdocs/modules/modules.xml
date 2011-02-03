@@ -97,7 +97,7 @@ real live maintainer, or some actual wide use.
     <title>GStreamer OpenGL Plug-ins</title>
     <blurb>plug-in and helper libraries for OpenGL integration</blurb>
     <description>
-        The GStreamer OpenGL module provides helper libraries, base classes
+        The GStreamer OpenGL modhttp://gstreamer.freedesktop.org/wiki/QtGStreamerule provides helper libraries, base classes
         and elements for integrating with OpenGL and using it to perform video
         display and processing.
     </description>
@@ -205,6 +205,8 @@ Library for creating audio/video editors.
     with a Qt-style API, plus some helper classes and elements for
     integrating GStreamer better in Qt applications. The goal of this module is to allow
     easy use of GStreamer for applications targetting MeeGo Mobile or the KDE desktop.
+    More information can be found on the <a href="http://gstreamer.freedesktop.org/wiki/QtGStreamer">QtGStreamer 
+    wiki page</a>
     </description>
     <maintainer>George Kiagiadakis and Mauricio Piacentini</maintainer>
     <versions>
