@@ -4002,5 +4002,28 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2011-02-11 00:00</date>
+    <title>GStreamer mailing lists move to freedesktop.org</title>
+    <content>
+      <p>
+        The GStreamer mailing lists have been moved to freedesktop.org. All
+        subscriptions should automatically have been moved over to the new
+        lists, subscribers should have received welcome e-mails from the new
+        lists already. If not, please check your SPAM filters and other e-mail
+        filters and head to http://lists.freedesktop.org to re-subscribe.
+      </p>
+      <p>
+        The old mailing lists will be disabled (posts should be rejected with
+        a message that the list has moved) and subscriptions will be disabled.
+        After a transition period people will be unsubscribed from the old
+        lists automatically.
+      </p>
+      <p>
+        If you encounter any problems with the mailing list move, please
+        find us on IRC (#gstreamer on irc.freenode.net) to let us know.
+      </p>
+    </content>
+  </item>
 
 </news>
