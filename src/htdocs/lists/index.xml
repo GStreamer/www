@@ -9,65 +9,67 @@
 <UL>
 <LI><B>gstreamer-announce</B>:</LI>
 <I><A
-HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-announce">Subscribe</A>
+HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-announce">Archives</A></I>
+HREF="http://lists.freedesktop.org/archives/gstreamer-announce/">Archives</A></I>
 
 <p>Used for announcements of new versions, features, etc.</p>
 
 <LI><B>gstreamer-devel</B>:</LI>
 <I><A
-HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-devel">Subscribe</A>
+HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-devel">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-devel">Archives</A></I>
+HREF="http://lists.freedesktop.org/archives/gstreamer-devel/">Archives</A></I>
 
-<p>Where development discussions occur. Ask here if you have problems with GStreamer.
+<p>Where general discussions occur. Ask here if you have problems with GStreamer.
 Please submit patches and report bugs in bugzilla and not on this list.
 </p>
 
-<LI><B>gstreamer-cvs</B>:</LI>
+<LI><B>gstreamer-commits</B>:</LI>
 <I><A
-HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-cvs">Subscribe</A>
+HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-commits">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-cvs">Archives</A></I>
+HREF="http://lists.freedesktop.org/archives/gstreamer-commits/">Archives</A></I>
 
-<p>Git commit notifications. Obviously the list needs renaming...</p>
+<p>git commit notifications</p>
 
 <LI><B>gstreamer-bugs</B>:</LI>
 <I><A
-HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-bugs">Subscribe</A>
+HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-bugs">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-bugs">Archives</A></I>
+HREF="http://lists.freedesktop.org/archives/gstreamer-bugs/">Archives</A></I>
 <p>Bugzilla activity. Please report bugs in bugzilla and not on this list.</p>
 
+<!--
 <LI><B>gstreamer-daily</B>:</LI>
 <I><A
-HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-daily">Subscribe</A>
+HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-daily">Subscribe</A>
 | <A
 HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-daily">Archives</A></I>
 
 <p>Daily mailings (irc logs, build failures, etc.).</p>
+-->
 
-<LI><B>gstreamer-gstopenmax</B>:</LI>
+<LI><B>gstreamer-openmax</B>:</LI>
 <I><A
-HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-openmax">Subscribe</A>
+HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-openmax">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-openmax">Archives</A></I>
+HREF="http://lists.freedesktop.org/archives/gstreamer-openmax/">Archives</A></I>
 <p>Development of GStreamer wrappers for OpenMax components.</p>
 
 <LI><B>gstreamer-android</B>:</LI>
 <I><A
-HREF="https://lists.sourceforge.net/lists/listinfo/gstreamer-android">Subscribe</A>
+HREF="https://lists.freedesktop.org/mailman/listinfo/gstreamer-android">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-android">Archives</A></I>
+HREF="http://lists.freedesktop.org/archives/gstreamer-android/">Archives</A></I>
 <p>Development of GStreamer for Android integration.</p>
 
 
 <LI><B>gstreamer-embedded</B>:</LI>
 <I><A
-HREF="http://lists.sourceforge.net/lists/listinfo/gstreamer-embedded">Subscribe</A>
+HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-embedded">Subscribe</A>
 | <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-embedded">Archives</A></I>
+HREF="http://lists.freedesktop.org/archives/gstreamer-embedded/">Archives</A></I>
 <p>Discussion of building, optimising, developing and using GStreamer on embedded devices.</p>
 
 </UL>
