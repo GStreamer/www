@@ -99,6 +99,11 @@ to read media metadata and perform real-time transcoding of audio formats</p>
 <h2>Geekcast</h2>
 <p><a href="http://home.gna.org/geekast/">Geekast</a> is a GNOME P2P streaming client writen in Ruby</p>
 
+<h2>GEntrans</h2>
+<p><a href="http://gentrans.sourceforge.net/">GEntrans</a> provides a gst-python based command-line transcoding application,
+as well as various GStreamer filter elements ported from other sources.
+In particular, it can serve as an enhanced gst-launch alternative.</p>
+
 <h2>Gnash</h2>
 <p><a href="http://gnashdev.org/">Gnash</a> is the GNU Flash movie player, which can be run standalone on the desktop or an embedded device, as well as as a plugin for several browsers.</p>
 
