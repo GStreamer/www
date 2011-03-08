@@ -5,7 +5,7 @@
 <!ENTITY gst-python-version-stable "0.10.21">
 <!ENTITY gstreamer-sharp-version-stable "0.9.2">
 <!ENTITY gst-plugins-base-version-stable "0.10.32">
-<!ENTITY gst-plugins-good-version-stable "0.10.27">
+<!ENTITY gst-plugins-good-version-stable "0.10.28">
 <!ENTITY gst-plugins-ugly-version-stable "0.10.17">
 <!ENTITY gst-plugins-bad-version-stable "0.10.21">
 <!ENTITY gst-plugins-gl-version-stable "0.10.2">

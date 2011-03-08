@@ -4026,4 +4026,26 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2011-03-08 17:00</date>
+    <title>GStreamer Good Plugins 0.10.28 stable release</title>
+<content>
+<p>
+The GStreamer team announces a new release of the GStreamer gst-plugins-good
+module for the 0.10 GStreamer stable release series.
+</p>
+<p>
+This is an ad-hoc bug-fix release that fixes a build issue when building
+against newer kernels where the old video4linux interface has been removed.
+It is identical to the 0.10.27 release in all other respects.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-plugins-good/0.10.28.html">gst-plugins-good</a>,
+or download tarballs for
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.28.tar.bz2">gst-plugins-good</a>,
+    </p>
+    </content>
+  </item>
+
 </news>
