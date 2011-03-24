@@ -6,6 +6,8 @@ then
 fi
 
 chmod -R g+w data 2> /dev/null
+
+echo "put: $@"
 rsync -v -rlpt -z -e ssh $@ data gstreamer.freedesktop.org:/srv/gstreamer.freedesktop.org/www
 
 echo "if you want to sync packages (only if you maintain them !), do"

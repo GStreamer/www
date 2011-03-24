@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if ! test -d data
+then
+  echo "Please run this from the www/ module dir"
+  exit 1
+fi
+
+./bin/data-get --include='/data/src' --exclude='/data/*' $@
