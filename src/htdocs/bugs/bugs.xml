@@ -134,6 +134,7 @@
     <component>gst-plugins-good</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.29</milestone>
       <milestone>0.10.28</milestone>
       <milestone>0.10.27</milestone>
       <milestone>0.10.26</milestone>
