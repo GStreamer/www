@@ -227,7 +227,7 @@ Library for creating audio/video editors.
     like video editing, DLNA Support and Video conferencing. This module has a 
     seperate mailing list, so be sure to check the mailing lists page for details.
     </description>
-    <maintainer>Reynaldo Pinochet and Alessandro Decina</maintainer>
+    <maintainer>Reynaldo Verdejo and Alessandro Decina</maintainer>
     <versions>
       <stable>&gst-android-version-stable;</stable>
       <devel>&gst-android-version-devel;</devel>
