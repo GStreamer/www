@@ -152,6 +152,16 @@ or would like to help out.
   </binding>
 
   <binding>
+    <id>haskell</id>
+    <name>Haskell</name>
+    <status>
+See <a href="http://hackage.haskell.org/package/gstreamer/">Haskell.org</a>.
+    </status>
+<body>
+</body>
+  </binding>
+
+  <binding>
     <id>java</id>
     <name>Java</name>
     <status>
