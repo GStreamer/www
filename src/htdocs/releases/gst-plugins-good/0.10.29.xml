@@ -1,0 +1,472 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Soft Cheese Enthusiast</name>
+  <version>0.10.29</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+      <feature>audioparser: new amrparse, aacparse, ac3parse, flacparse, mpegaudioparse, dcaparse elements</feature>
+      <feature>audiowsincband: Add new windowing functions: gaussian, cos and hann</feature>
+      <feature>audiowsincband: Fix range of kernel elements (lim -> lim-1)</feature>
+      <feature>audiowsinclimimt: Add new windows to high/low-pass filters: gaussian, cosine, hann</feature>
+      <feature>audiowsinclimit: Fix range of kernel elements (lim -> lim-1) in high/low-pass filters</feature>
+      <feature>avidemux: also add the frame-type for the stream index.</feature>
+      <feature>avidemux, flvdemux: mark delta-units in the index</feature>
+      <feature>avidemux: stream->current_total is accumulated byte size and not time</feature>
+      <feature>avimux: add stream-format field to h264 pad template caps</feature>
+      <feature>avimux: rework _request_new_pad to handle explict req-pad-names</feature>
+      <feature>avimux: use running time for synchronization</feature>
+      <feature>cairooverlay: Add generic Cairo overlay video element.</feature>
+      <feature>debugutils: remove bitrotten negotiation element</feature>
+      <feature>deinterlace: add support for NV12 and NV21 formats; fix greedyl method</feature>
+      <feature>dvdemux: first try if upstream handles TIME seeks before handling them here and other event handling fixes</feature>
+      <feature>flacdec: fix issues with large metadata blocks when streaming unframed flac</feature>
+      <feature>flacenc: Add support for writing METADATA_BLOCK_PICTURE blocks for GST_TAG_IMAGE and GST_TAG_PREVIEW_IMAGE</feature>
+      <feature>flacenc: Don't store image tags inside the vorbiscomments and the flac metadata</feature>
+      <feature>flvdemux: add width, height and framerate to caps when present on onMetaData</feature>
+      <feature>flvdemux: Do not build an index if upstream is not seekable</feature>
+      <feature>flvdemux: fix deadlock on setting index on flvdemux</feature>
+      <feature>flvmux: don't overwrite metadata tag with duration in streaming mode</feature>
+      <feature>flvmux: don't set duration for live stream</feature>
+      <feature>flvmux: use running time for synchronization</feature>
+      <feature>flv: specify stream-format for h264 in the pad template caps</feature>
+
+      <feature>icydemux: fix tag list handling issues that might have caused crashes</feature>
+      <feature>j2kpay: skip EPH packets</feature>
+
+      <feature>jitterbuffer: also estimate eos if very near eos</feature>
+      <feature>jitterbuffer: avoid trying to buffer more than is available</feature>
+      <feature>jitterbuffer: handle position query</feature>
+
+      <feature>matroskademux: better calculation of output framerate</feature>
+      <feature>matroskademux: properly resume cluster scanning</feature>
+      <feature>matroskademux: pull mode should always report seekable</feature>
+      <feature>matroskademux: set stream-format=byte-stream on h264 caps if there's no codec data</feature>
+      <feature>matroskademux: store cluster positions provided by SeekHead</feature>
+      <feature>matroskamux: add support for A-Law and µ-Law</feature>
+      <feature>matroskamux: avoid building index when streamable</feature>
+      <feature>matroskamux: use running time for stream synchronization</feature>
+      <feature>matroskamux: add stream-format field to h264 pad template caps</feature>
+      <feature>matroska: Use ARTIST Matroska tag instead of AUTHOR for GST_TAG_ARTIST</feature>
+
+      <feature>matroskaparse: new element</feature>
+
+      <feature>monoscope: stability (off-by-one) and memory leak fixes</feature>
+
+      <feature>pngdec: handle 16-bit-per-channel images</feature>
+
+      <feature>pulsesink: also uncork during EOS waiting (and after EOS is rendered)</feature>
+      <feature>pulsesink: fix deadlock if connecting to PA fails</feature>
+      <feature>pulsesink: release pa_shared_resource_mutex before pa_threaded_mainloop_wait</feature>
+
+      <feature>qtdemux: Adds more h264 fields to its caps</feature>
+      <feature>qtdemux: Add support for 2Vuy and r210</feature>
+      <feature>qtdemux: don't error out when there's a problem parsing non-vital headers</feature>
+      <feature>qtdemux: avoid skipping exposing a stream following a removed stream</feature>
+      <feature>qtdemux: Check for invalid (empty) classification info entity strings</feature>
+      <feature>qtdemux: extract MusicBrainz tags</feature>
+      <feature>qtdemux: mind rounding issues when converting from global time to mov time</feature>
+      <feature>qtdemux: propagate error during expose_streams</feature>
+      <feature>qtdemux: support some more mpeg-4 fourcc variants</feature>
+      <feature>qtdemux: take configured start time into account</feature>
+
+      <feature>isomp4: move mp4mux/3gppmux/qtmux from -bad to -good, rename qtdemux plugin to isomp4</feature>
+
+      <feature>rtpbin: Don't try to request the same request pad twice</feature>
+      <feature>rtpbin: fix setting the SDES property</feature>
+      <feature>rtpbin: Get and use the NTP time when receiving RTCP</feature>
+      <feature>rtpmanager: ignore a BYE if it is sent with our internal SSRC</feature>
+      <feature>rtpptdemux: Tag upstream custom events with payload type</feature>
+      <feature>rtpsession: add action signal to request early RTCP</feature>
+      <feature>rtpsession: add "rtcp-min-interval" property for minimum interval between Regular RTCP messages</feature>
+      <feature>rtpsession: Don't relay more than one PLI request per RTT</feature>
+      <feature>rtpsession: Emit "on-ssrc-validated" when validating by RTCP</feature>
+      <feature>rtpsession: Emit signal on incoming RTCP feedback packet</feature>
+      <feature>rtpsession: Emit signal when sending a compound RTCP packet</feature>
+      <feature>rtpsession: Implement sending PLI packets in response to GstForceKeyUnit</feature>
+      <feature>rtpsession: Number of active sources should be updated whenever the status of the source changes to active</feature>
+      <feature>rtpsession: Send GstForceKeyUnit event in response to received RTCP PLI</feature>
+      <feature>rtpsource: Retain RTCP Feedback packets for a specified amount of time</feature>
+      <feature>rtpssrcdemux: Tag upstream custom events with SSRC</feature>
+      <feature>rtpssrcdemux: Unknown SSRC is not fatal</feature>
+      <feature>rtpspeexpay: Do not transmit samples with GAP flag</feature>
+      <feature>rtptheoradepay: Request new keyframe on lost packets</feature>
+      <feature>rtpvrawpay: add support for interlaced video</feature>
+      <feature>rtspsrc: distribute new base_time to manager children following flush seek</feature>
+      <feature>rtspsrc: handle * control correctly</feature>
+      <feature>rtspsrc: improve recovery from failed seek</feature>
+      <feature>spectrum: miscellaneous optimisations, add multi-channel support</feature>
+      <feature>speexdec: Always process the number of frames per packet as specified in the header</feature>
+      <feature>speexdec: get and use streamheader from the caps if possible</feature>
+      <feature>speexenc: Use speex intern silence detection</feature>
+      <feature>theorapay: handle 0-sized packets (which are repeat frames)</feature>
+      <feature>udpsink: warn when packet is too large</feature>
+      <feature>v4l2: Add PJPG mapping</feature>
+      <feature>v4l2: fix interlaced set_format configuration</feature>
+      <feature>v4l2: new v4l2radio element to control analog radio devices</feature>
+      <feature>videobalance: fix handling of YUV images with 'odd' widths</feature>
+      <feature>videoflip: add support for YUY2, UVYV and YVYU</feature>
+      <feature>videoflip: fix invalid memory access for odd resolutions and Y422</feature>
+      <feature>videomixer2: Add transparent background option for alpha channel formats</feature>
+      <feature>videomixer: Add transparent background option for alpha channel formats</feature>
+      <feature>videomixer: Fix argb/rgba overlay orc code</feature>
+      <feature>wavparse: tune output max buffer size to material</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+      <contributors>
+	<person>"Carsten Kroll</person>
+	<person>Alejandro Gonzalez</person>
+	<person>Alessandro Decina</person>
+	<person>Alexey Chernov</person>
+	<person>Alexey Fisher</person>
+	<person>Andoni Morales Alastruey</person>
+	<person>Arun Raghavan</person>
+	<person>Benjamin Otte</person>
+	<person>Christian Fredrik Kalager Schaller</person>
+	<person>Christian Schaller</person>
+	<person>David Hoyt</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Felipe Contreras</person>
+	<person>Haakon Sporsheim</person>
+	<person>Havard Graff</person>
+	<person>Jan Schmidt</person>
+	<person>Jan Urbanski</person>
+	<person>Jan Urbański</person>
+	<person>Jon Nordby</person>
+	<person>Jordi Burguet-Castell</person>
+	<person>Josep Torra</person>
+	<person>Joshua M. Doe</person>
+	<person>Julien Moutte</person>
+	<person>LRN</person>
+	<person>Lane Brooks</person>
+	<person>Lasse Laukkanen</person>
+	<person>Leonardo Sandoval</person>
+	<person>Luis de Bethencourt</person>
+	<person>Marc-André Lureau</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Michael Smith</person>
+	<person>Ole André Vadla Ravnås</person>
+	<person>Olivier Crête</person>
+	<person>Pascal Buhler</person>
+	<person>Philip Jägenstedt</person>
+	<person>Philippe Normand</person>
+	<person>René Stadler</person>
+	<person>Rob Clark</person>
+	<person>Robert Swain</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thiago Santos</person>
+	<person>Thiago Sousa Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tom Janiszewski</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Wim Taymans</person>
+	<person>Youness Alaoui</person>
+	<person>Zaheer Abbas Merali</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>564122</id>
+      <summary>Crash in monoscope_update</summary>
+    </bug>
+    <bug>
+      <id>432612</id>
+      <summary>[matroskamux] doesn't handle segments correctly</summary>
+    </bug>
+    <bug>
+      <id>593482</id>
+      <summary>Spectrum: Multi-Channel support and Stereo to Mono compat report(cross-correlation)</summary>
+    </bug>
+    <bug>
+      <id>595520</id>
+      <summary>Implement a generic cairo overlay</summary>
+    </bug>
+    <bug>
+      <id>622553</id>
+      <summary>rtpmanager: Implement RFC 4585 (AVPF / early feedback)</summary>
+    </bug>
+    <bug>
+      <id>636699</id>
+      <summary>[PLUGIN-MOVE] qtmux: move to -good</summary>
+    </bug>
+    <bug>
+      <id>639994</id>
+      <summary>videomixer2: added 'transparent' background option</summary>
+    </bug>
+    <bug>
+      <id>640118</id>
+      <summary>v4l2: add element to control radio devices</summary>
+    </bug>
+    <bug>
+      <id>640163</id>
+      <summary>rtspsrc: minor leak</summary>
+    </bug>
+    <bug>
+      <id>640249</id>
+      <summary>[taginject] Taginject does not allow to change tags after init</summary>
+    </bug>
+    <bug>
+      <id>640483</id>
+      <summary>flvdemux: Video's width, height and/or framerate src caps added when present on onMetaData</summary>
+    </bug>
+    <bug>
+      <id>640542</id>
+      <summary>matroskamux leaks memory after reset</summary>
+    </bug>
+    <bug>
+      <id>641330</id>
+      <summary>icydemux: crash while playing MP3 stream in amarok</summary>
+    </bug>
+    <bug>
+      <id>641332</id>
+      <summary>can't connect vorbisenc ! queue ! matroskamux</summary>
+    </bug>
+    <bug>
+      <id>641400</id>
+      <summary>[deinterlace] Handle image caps without asserting</summary>
+    </bug>
+    <bug>
+      <id>641827</id>
+      <summary>rtptheorapay: doesn't handle 0-size packets</summary>
+    </bug>
+    <bug>
+      <id>642205</id>
+      <summary>qtdemux: extract MusicBrainz tags</summary>
+    </bug>
+    <bug>
+      <id>642337</id>
+      <summary>[souphttpsrc] Add support for URI queries</summary>
+    </bug>
+    <bug>
+      <id>642412</id>
+      <summary>gstrtpbin with ignore-pt tries to use NULL stream- &gt; demux during uninitialization</summary>
+    </bug>
+    <bug>
+      <id>642691</id>
+      <summary>deinterlace: Miscellaneous cleanup</summary>
+    </bug>
+    <bug>
+      <id>642879</id>
+      <summary>qtmux: add a 'variant' with the bare video/quicktime media type</summary>
+    </bug>
+    <bug>
+      <id>642961</id>
+      <summary>NV12 colorspace support for deinterlace plugin</summary>
+    </bug>
+    <bug>
+      <id>642963</id>
+      <summary>[dvdemux] time based upstream seek</summary>
+    </bug>
+    <bug>
+      <id>643087</id>
+      <summary>pulsesink: deadlock in gst_pulseringbuffer_open_device</summary>
+    </bug>
+    <bug>
+      <id>643981</id>
+      <summary>[cairooverlay] example uses gtk/gtk-x11 unnecessarily</summary>
+    </bug>
+    <bug>
+      <id>644288</id>
+      <summary>generic/states check fails</summary>
+    </bug>
+    <bug>
+      <id>644477</id>
+      <summary>[jack] doesn't build with jack &gt; = 0.120.2</summary>
+    </bug>
+    <bug>
+      <id>644510</id>
+      <summary>pulsesink: deadlock when create/connect fails</summary>
+    </bug>
+    <bug>
+      <id>644669</id>
+      <summary>gstspeexdec causes 'Conditional jump depends on uninitialised value'</summary>
+    </bug>
+    <bug>
+      <id>644773</id>
+      <summary>Add support for Y422 colorspaces in videoflip element</summary>
+    </bug>
+    <bug>
+      <id>644849</id>
+      <summary>[speexdec] Remove warning message when it is inappropriate</summary>
+    </bug>
+    <bug>
+      <id>644875</id>
+      <summary>[matroskademux] can't read the ARTIST tag in a Matroska file</summary>
+    </bug>
+    <bug>
+      <id>645858</id>
+      <summary>[flvdemux] memory leak when demuxing infinite FLV files</summary>
+    </bug>
+    <bug>
+      <id>645961</id>
+      <summary>[pulsesink] hangs when going from paused to playing near EOS</summary>
+    </bug>
+    <bug>
+      <id>646397</id>
+      <summary>rtpjitterbuffer base_time broken by commit f84b8a69</summary>
+    </bug>
+    <bug>
+      <id>646474</id>
+      <summary>rtpspeexpay should drop empty samples</summary>
+    </bug>
+    <bug>
+      <id>646567</id>
+      <summary>[matroska] Add alaw/mulaw audio support</summary>
+    </bug>
+    <bug>
+      <id>646800</id>
+      <summary>rtspsrc: control attribute on the session and not on the media</summary>
+    </bug>
+    <bug>
+      <id>646954</id>
+      <summary>rtpgstpay: declare frag_offset to hold 32 bits</summary>
+    </bug>
+    <bug>
+      <id>646964</id>
+      <summary>rtpmanager: ignore a BYE if it is sent with our internal SSRC</summary>
+    </bug>
+    <bug>
+      <id>646965</id>
+      <summary>rtpmanager: Number of active sources should be updated whenever the status of the source changes to active</summary>
+    </bug>
+    <bug>
+      <id>646966</id>
+      <summary>rtpssrcdemux: Unknown SSRC is not fatal</summary>
+    </bug>
+    <bug>
+      <id>646967</id>
+      <summary>rtpsession: make iterate_internal_links MT-safe</summary>
+    </bug>
+    <bug>
+      <id>646999</id>
+      <summary>[regression] pulsesink: underruns while playing WMA</summary>
+    </bug>
+    <bug>
+      <id>647263</id>
+      <summary>REGRESSION: rtpsession: fix wrongly applied patch</summary>
+    </bug>
+    <bug>
+      <id>647510</id>
+      <summary>audiowsinclimit uses the wrong limits for the range of the kernel elements</summary>
+    </bug>
+    <bug>
+      <id>647511</id>
+      <summary>add other common windows to low/high-pass filters in audiowsinclimit.c</summary>
+    </bug>
+    <bug>
+      <id>647659</id>
+      <summary>mp3parse / mpegaudioparse fails to detect VBRI header in mpeg1 mono and mpeg2 files</summary>
+    </bug>
+    <bug>
+      <id>647833</id>
+      <summary>matroskademux: bad at guessing the framerate</summary>
+    </bug>
+    <bug>
+      <id>647848</id>
+      <summary>Failure to compile with GCC 4.6.x due to variable unused but set warnings being treated as errors</summary>
+    </bug>
+    <bug>
+      <id>647919</id>
+      <summary>qtmux: silently corrupts h264 streams with legacy caps</summary>
+    </bug>
+    <bug>
+      <id>648004</id>
+      <summary>[quicktime] Rename plugin library to quicktime too</summary>
+    </bug>
+    <bug>
+      <id>648160</id>
+      <summary>Remove half-complete bits of RTCP FIR support</summary>
+    </bug>
+    <bug>
+      <id>648589</id>
+      <summary>jpegdec: documentation typo &quot; jpegddec &quot; </summary>
+    </bug>
+    <bug>
+      <id>649060</id>
+      <summary>flvmux: overwrites metadata tags with duration in streamable=false mode</summary>
+    </bug>
+    <bug>
+      <id>649449</id>
+      <summary>[gppmux] Failure to write location</summary>
+    </bug>
+    <bug>
+      <id>566769</id>
+      <summary>[flacdec] crash in push mode with large header packet (image)</summary>
+    </bug>
+    <bug>
+      <id>644730</id>
+      <summary>[matroskamux] Should return TRUE in the event function when the event is handled</summary>
+    </bug>
+  </bugs>
+
+</release>

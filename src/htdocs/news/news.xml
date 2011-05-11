@@ -3955,7 +3955,8 @@ or download tarballs for
 <a href="&site;/src/gstreamer/gstreamer-0.10.31.tar.bz2">gstreamer</a>,
 <a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.31.tar.bz2">gst-plugins-base</a>,
 <a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.26.tar.bz2">gst-plugins-good</a>,
-<a href="&site;/src/gst-python/gst-python-0.10.20.tar.bz2">gst-python</a>,
+<a href="&site;/src/gst-python/gst-python-0.10.20.tar.bz2">gst-python</a>
+directly.
     </p>
     </content>
   </item>
@@ -3983,7 +3984,8 @@ or download tarballs for
 <a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.17.tar.bz2">gst-plugins-ugly</a>,
 <a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.21.tar.bz2">gst-plugins-bad</a>,
 <a href="&site;/src/gnonlin/gnonlin-0.10.17.tar.bz2">gnonlin</a>,
-<a href="&site;/src/gst-python/gst-python-0.10.21.tar.bz2">gst-python</a>,
+<a href="&site;/src/gst-python/gst-python-0.10.21.tar.bz2">gst-python</a>
+directly.
     </p>
     </content>
   </item>
@@ -4044,6 +4046,84 @@ Check out release notes for
 <a href="&site;/releases/gst-plugins-good/0.10.28.html">gst-plugins-good</a>,
 or download tarballs for
 <a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.28.tar.bz2">gst-plugins-good</a>,
+    </p>
+    </content>
+  </item>
+
+  <item>
+    <date>2011-05-10 12:00</date>
+    <title>GStreamer Core 0.10.33, Base Plugins 0.10.33, Good Plugins 0.10.29, Ugly Plugins 0.10.18, Bad Plugins 0.10.22 stable releases</title>
+<content>
+<p>
+The GStreamer team is excited to announce new releases of the GStreamer core module, the gst-plugins-base module, the gst-plugins-good module, the gst-plugins-ugly module, and the gst-plugins-bad module for the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.33.html">gstreamer</a>,
+<a href="&site;/releases/gst-plugins-base/0.10.33.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/0.10.29.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/0.10.18.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/0.10.22.html">gst-plugins-bad</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.33.tar.bz2">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.33.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.29.tar.bz2">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.18.tar.bz2">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.22.tar.bz2">gst-plugins-bad</a>
+directly.
+    </p>
+    <p>
+    <i>Highlights:</i>
+    <ul>
+      <li><b>GStreamer core:</b></li>
+        <ul>
+        <li>new parser base class: GstBaseParse</li>
+        <li>new core element: funnel</li>
+        <li>OSX multi-arch fixes</li>
+        <li>new QoS type for QoS events</li>
+        <li>new progress message API to notify applications of asynchronous operations</li>
+        </ul>
+      <li><b>gst-plugins-base:</b></li>
+        <ul>
+        <li>support for 16-bit-per-component video formats</li>
+        <li>playbin2 fixes and improvements for custom and non-raw sinks</li>
+        <li>oggmux muxes based on running time now</li>
+        <li>orc 0.4.14 or newer recommended</li>
+        </ul>
+      <li><b>gst-plugins-good:</b></li>
+        <ul>
+        <li>amrparse, aacparse, ac3parse, flacparse, mpegaudioparse, dcaparse audio parsers (moved from -bad)</li>
+        <li>muxers now mux based on running time</li>
+        <li>ISO MP4 muxers: mp4mux/3gppmux/qtmux/mj2mux (moved from -bad)</li>
+        <li>new matroskaparse element</li>
+        <li>new v4l2radio element</li>
+        <li>rtpsession: support RTCP Early Feedback (the AVPF profile)</li>
+        <li>orc 0.4.14 or newer recommended</li>
+        </ul>
+      <li><b>gst-plugins-ugly:</b></li>
+        <ul>
+        <li>x264enc: allow changing bitrate and quantizers dynamically at runtime</li>
+        <li>x264enc: proxy downstream caps restrictions upstream via get_caps()</li>
+        <li>lamemp3enc: proxy downstream rate/channels restrictions upstream via get_caps()</li>
+        <li>mad: allow build without libid3tag (which isn't really needed anyway)</li>
+        </ul>
+      <li><b>gst-plugins-bad:</b></li>
+        <ul>
+        <li>hlsdemux: Add HTTP live streaming parser/demuxer element</li>
+        <li>new elements: h263parse, zebrastripe, patchdetect</li>
+        <li>scenechange: new scene change detection element</li>
+        <li>removed audioparsersbad plugin, it has been moved to -good</li>
+        <li>make opencv plugin work with OpenCV 2.2</li>
+        <li>countless (still experimental) camerabin2 fixes and improvements</li>
+        <li>experimental VP8 RTP payloader/depayloader (RTP payloading not finalised yet)</li>
+        <li>curlsink: add libcurl-based sink element (acts as client, not server)</li>
+        <li>decklink: add decklink plugin</li>
+        <li>linsys: add plugin for Linear Systems SDI boards</li>
+        <li>sdi: add raw SDI muxing/demuxing elements</li>
+        <li>camerabin now relies on muxers to mux based on running time (ie. latest base/good/ugly releases)</li>
+        </ul>
+    </ul>
+    ... and many other fixes and improvements of course.
     </p>
     </content>
   </item>
