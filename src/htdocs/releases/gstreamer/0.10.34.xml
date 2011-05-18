@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Misfits</name>
+  <version>0.10.34</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+The 0.10.x series has been reworked for threadsafety.  It also features
+various feature additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Fix multiqueue thread-safety regression</feature>
+    <feature>Don't set artificial 0-timestamp on first packet for TIME-based live sources</feature>
+    <feature>Otherwise identical to the previous release (0.10.33)</feature>
+  </features>
+
+  <applications>
+<p>
+Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
+Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
+Let us know if you want to be added to this list.
+</p>
+  </applications>
+
+          <contributors>
+	<person>Mark Nauwelaerts</person>
+	<person>Vincent Penquerc'h</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>649369</id>
+      <summary>basesrc: do not set first buffer timestamp to 0 for live sources</summary>
+    </bug>
+    <bug>
+      <id>649878</id>
+      <summary>[multiqueue] regression: gst_single_queue_new not MT-safe</summary>
+    </bug>
+  </bugs>
+</release>
