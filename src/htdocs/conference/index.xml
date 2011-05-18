@@ -7,23 +7,17 @@
 
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
-  <title>GStreamer Conference 2010</title>
+  <title>GStreamer Conference 2011</title>
   <body>
-<h1>GStreamer Conference 2010</h1>
-<h2>Cambridge, United Kingdom, 26th of October 2010</h2>
-<h2>The conference is now over, but we are making video recordings of the talks available 
-through our <a href="http://gstconf.ubicast.tv">sponsor Ubicast who recorded the talks using their advanced recording systems</a>. Not all videos are available yet, but we will update this page once they all are. We will also make all the 
-<a href="http://gstreamer.freedesktop.org/wiki/GStreamerConference2010">slides available from our wiki.</a></h2>
+<h1>GStreamer Conference 2011</h1>
+<h2>October 24 - 26, 2011 · Clarion Congress Hotel · Prague, Czech Republic</h2>
+<h2></h2>
 <p>
-In conjuction with the <a href="http://www.embeddedlinuxconference.com/elc_europe10/">
-CE Linux Conference Europe</a> we are happy to host and arrange the first full day conference
-focusing on GStreamer and related technologies. Speakers from a wide range of companies and 
-fields will attend to speak about available GStreamer technologies and future developments.
-</p>
-<p>
-The conference will be held in the ballroom at the <a href="http://www.universityarms.info/">
-University Arms Hotel</a> the day before the CE Linux Europe conference, making it ideal to combine 
-the two events.
+After a successful launch last year in Cambridge, UK, we are very happy to invite everyone to the
+second annual GStreamer Conference. This year we will be co-hosting with the <a href="http://events.linuxfoundation.org/events/linux-kernel-summit">
+Linux Kernel Summit</a> and hold the event at the Clarion Congress Hotel in Prague, Czech Republic. Speakers from a wide range of companies and 
+fields will attend to speak about available GStreamer technologies and future developments, including the release of GStreamer 1.0 which is scheduled
+to happen not long after the conference.
 </p>
 <p>
 The talks hosted will cover a range of technologies built around GStreamer aimed at embedded,
@@ -44,37 +38,28 @@ We have a long list of topics to be presented like:</p>
 <li>Case studies on GStreamer product deployments</li>
 </ul>
 <p>
-Both the <a href="gstreamer-conference-timetable.html">full GStreamer conference timetable</a> and the <a href="speakers.html">full list of
-speakers bios and talk abstracts</a> are now online. We got a wonderful list of speakers so we hope as many of you as possible will be attending. 
-In addition to the talks at the GStreamer Conference day there are quite a few very interesting talks happening as part of CE Linux also, 
-like Benjamin Gaignard of ST Ericsson talking about <a href="http://www.embeddedlinuxconference.com/elc_europe10/sessions.html#Gaignard">
-Android and GStreamer</a>, Stefan Kost of Nokia talking about <a href="http://www.embeddedlinuxconference.com/elc_europe10/sessions.html#Cost">
-Meego and GStreamer</a> and Arun Raghavan from Collabora Multimedia speaking about 
-<a href="http://www.embeddedlinuxconference.com/elc_europe10/sessions.html#Raghavan">Pulse Audio</a>. So be sure to register for both events.
-</p>
+
 <h2>Registration</h2>
 <p>
-<b>Update:</b> The GStreamer 2010 conference is over for 2010, hope to see you there for 2011.
+<b>The registration will open soon</b>
 </p>
-<h2>Contact information</h2>
+<h2>Call for Papers</h2>
 <p>
-If you have any questions or problems please contact <a href="mailto:christian.schaller@collabora.co.uk">Christian Schaller</a>.
+We are not ready to accept submissions for talks at the GStreamer Conference 2011. Please send your abstract to 
+<a href="mailto:christian.schaller@collabora.co.uk">Christian Schaller</a>. The deadline for talk submissions will be 1st of July
+2011 and accepted talks will be notified before 15th of July 2011.
 </p>
 <h2>Who Should Join?</h2>
 <p>
-Anyone interested in open source multimedia is encouraged to join us at the GStreamer Conference 2010.
+Anyone interested in open source multimedia is encouraged to join us at the GStreamer Conference 2011.
 If you are a hobbyist or a student interested in the field of multimedia, or working for a company
 using or looking to use GStreamer in their products, then this is the perfect event for you to network
 at and learn more about the latest technological breakthroughs in and around GStreamer. The talks 
 will target both developers and managers alike.
 </p>
 <p>
-<table>
-<tr><td><img src="http://farm2.static.flickr.com/1361/1330772310_39512c9610.jpg" width="500" height="375"/>
-</td></tr>
-<tr><td><b>Cambridge Arms Hotel</b></td></tr>
-</table>
-</p>
+<i>For information about last years conference go to the <a href="http://gstreamer.freedesktop.org/conference/2010">GStreamer Conference 2010 website</a>
+</i>
 
   </body>
 </page>
