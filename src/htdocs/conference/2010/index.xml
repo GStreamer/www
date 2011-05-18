@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer Conference 2010</title>
+  <body>
+<h1>GStreamer Conference 2010</h1>
+<h2>Cambridge, United Kingdom, 26th of October 2010</h2>
+<h2>The conference is now over, but we are making video recordings of the talks available 
+through our <a href="http://gstconf.ubicast.tv">sponsor Ubicast who recorded the talks using their advanced recording systems</a>. Not all videos are available yet, but we will update this page once they all are. We will also make all the 
+<a href="http://gstreamer.freedesktop.org/wiki/GStreamerConference2010">slides available from our wiki.</a></h2>
+<p>
+In conjuction with the <a href="http://www.embeddedlinuxconference.com/elc_europe10/">
+CE Linux Conference Europe</a> we are happy to host and arrange the first full day conference
+focusing on GStreamer and related technologies. Speakers from a wide range of companies and 
+fields will attend to speak about available GStreamer technologies and future developments.
+</p>
+<p>
+The conference will be held in the ballroom at the <a href="http://www.universityarms.info/">
+University Arms Hotel</a> the day before the CE Linux Europe conference, making it ideal to combine 
+the two events.
+</p>
+<p>
+The talks hosted will cover a range of technologies built around GStreamer aimed at embedded,
+desktop and server usage. There will also be a presentation on the plans for the GStreamer 1.0 release.
+</p>
+<h2>Technologies covered</h2>
+<p>
+We have a long list of topics to be presented like:</p>
+
+<ul>
+<li>GStreamer 1.0</li>
+<li>DLNA support</li>
+<li>Cross platform development with GStreamer</li>
+<li>Telepathy VOIP and videoconferencing</li>
+<li>GStreamer and Android</li>
+<li>GStreamer and MeeGo</li>
+<li>GStreamer, Webkit and HTML5</li>
+<li>Case studies on GStreamer product deployments</li>
+</ul>
+<p>
+Both the <a href="gstreamer-conference-timetable.html">full GStreamer conference timetable</a> and the <a href="speakers.html">full list of
+speakers bios and talk abstracts</a> are now online. We got a wonderful list of speakers so we hope as many of you as possible will be attending. 
+In addition to the talks at the GStreamer Conference day there are quite a few very interesting talks happening as part of CE Linux also, 
+like Benjamin Gaignard of ST Ericsson talking about <a href="http://www.embeddedlinuxconference.com/elc_europe10/sessions.html#Gaignard">
+Android and GStreamer</a>, Stefan Kost of Nokia talking about <a href="http://www.embeddedlinuxconference.com/elc_europe10/sessions.html#Cost">
+Meego and GStreamer</a> and Arun Raghavan from Collabora Multimedia speaking about 
+<a href="http://www.embeddedlinuxconference.com/elc_europe10/sessions.html#Raghavan">Pulse Audio</a>. So be sure to register for both events.
+</p>
+<h2>Registration</h2>
+<p>
+<b>Update:</b> The GStreamer 2010 conference is over for 2010, hope to see you there for 2011.
+</p>
+<h2>Contact information</h2>
+<p>
+If you have any questions or problems please contact <a href="mailto:christian.schaller@collabora.co.uk">Christian Schaller</a>.
+</p>
+<h2>Who Should Join?</h2>
+<p>
+Anyone interested in open source multimedia is encouraged to join us at the GStreamer Conference 2010.
+If you are a hobbyist or a student interested in the field of multimedia, or working for a company
+using or looking to use GStreamer in their products, then this is the perfect event for you to network
+at and learn more about the latest technological breakthroughs in and around GStreamer. The talks 
+will target both developers and managers alike.
+</p>
+<p>
+<table>
+<tr><td><img src="http://farm2.static.flickr.com/1361/1330772310_39512c9610.jpg" width="500" height="375"/>
+</td></tr>
+<tr><td><b>Cambridge Arms Hotel</b></td></tr>
+</table>
+</p>
+
+  </body>
+</page>

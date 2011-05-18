@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+    %site-entities;
+    ]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer Conference 2010 Program </title>
+
+<body lang="en-US" dir="LTR">
+
+<h1>GStreamer Conference 2010</h1>
+<h2>Cambridge, United Kingdom, 26th of October 2010</h2>
+<p><a href="http://gstreamer.freedesktop.org/conference">Back to conference main page</a></p>
+<table width="100%" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0">
+	<col width="68*" />
+	<col width="103*" />
+	<col width="85*" />
+	<tr valign="top">
+		<td width="27%">
+			<p>GStreamer talks 
+			</p>
+		</td>
+		<td WIDTH="40%">
+			<p>Main Room</p>
+		</td>
+		<td WIDTH="33%">
+			<p>Darwin</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>09.00 
+			</p>
+		</td>
+		<td width="40%">
+			<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#taymans">
+			GStreamer Current and future developments - Wim Taymans</a>, Collabora Multimedia 
+			</p>
+		</td>
+		<td width="33%">
+			<p>
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>10.00</p>
+		</td>
+		<td width="40%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#normand">
+			Webkit, HTML5 and GStreamer - Philippe Normand</a>, Igalia</p>
+		</td>
+		<td width="33%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#smith">
+			Cross platform development with GStreamer - Mike Smith</a>, Songbird</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>11.00</p>
+		</td>
+		<td width="40%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#hervey">
+			Challenges of video editing in your pocket - Edward Hervey</a>,
+			Collabora Multimedia</p>
+		</td>
+		<td width="33%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#quacchio">
+			A GStreamer based framework for adaptive streaming
+			applications - Emanuele Quacchio</a>, ST Microelectronics</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>12.00 
+			</p>
+		</td>
+		<td width="40%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#clark">GStreamer and OMAP4 - Rob Clark</a>, Texas Instruments 
+			</p>
+		</td>
+		<td width="33%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#ali">
+			Implementing DLNA using GStreamer - Zeeshan Ali</a>, Nokia</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>13.00</p>
+		</td>
+		<td width="40%">
+			<p><b>Lunch</b></p>
+		</td>
+		<td WIDTH="33%">
+			<p><b>Lunch</b></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>14.00</p>
+		</td>
+		<td width="40%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#crete">
+			Integrating VideoConferencing into Everyday Applications, Olivier Crete</a>, Collabora</p>
+		</td>
+		<td WIDTH="33%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schleef">
+			Optimizing multimedia with Orc - David Schleef</a>, Entropy Wave</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>15.00</p>
+		</td>
+		<td rowspan="2" width="40%">
+			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#graff">
+			Tandberg and GStreamer, Håvard Graff</a>, Tandberg</p>
+		</td>
+		<td width="33%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#fujii">
+			Landell - live streaming for the masses – Luciana Fujii</a>,Holoscopio</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>15.30</p>
+		</td>
+		<td width="33%">
+			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#merali">
+			Flumotion and GStreamer - Zaheer Merali</a></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>16.00</p>
+		</td>
+		<td width="40%">
+			<p><b>Afternoon Break</b></p>
+		</td>
+		<td width="33%">
+			<p><b>Afternoon Break</b></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>16.30</p>
+		</td>
+		<td width="40%">
+			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#holmberg">
+			GStreamer on Axis devices, Jonas Holmberg</a>, Axis</p>
+		</td>
+		<td width="33%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#nechypurenko">
+			Using ICE middleware with GStreamer to implement real-time
+			QoS-aware video streaming for remote controlled vehicle, Andrey
+			Nechypurenko and Maksym Parkachov</a></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>17.00 Lightning talks 
+			</p>
+		</td>
+		<td width="40%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#bisson">
+			3D Stereoscopic and GStreamer, Martin Bisson</a></p>
+		</td>
+		<td rowspan="3" width="33%">
+			<p>Case Study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">
+			Intel SMD elements in GStreamer, Josep Torra</a>, Fluendo</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>17.15</p>
+		</td>
+		<td width="40%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#droge">
+			WebM and GStreamer, Sebastian Droge</a>, Collabora Multimedia</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p> 17.30</p>
+		</td>
+		<td width="40%">
+			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#thiery">
+			Using gstreamer for building automated webcasting systems, Florent Thiery</a>, Ubicast.eu 
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>18.00</p>
+		</td>
+		<td width="40%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schmidt">
+			Interactivity in GStreamer pipelines, Jan Schmidt</a>, Oracle Corporation 
+			</p>
+		</td>
+	<td></td>
+	</tr>
+
+
+	<tr>
+		<td colspan="3" width="100%" valign="TOP">
+			<p align="center">19.00 End of Day</p>
+		</td>
+	</tr>
+</table>
+
+<p>
+<b>Note:</b> there will be further GStreamer-related talks on October 27/28 as part of the
+<a href="http://www.embeddedlinuxconference.com/elc_europe10/program.html">main CE Linux program</a>.
+</p>
+
+</body>
+</page>
