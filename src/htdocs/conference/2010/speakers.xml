@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <!DOCTYPE xml
 [
-  <!ENTITY % site-entities SYSTEM "../entities.site">
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
     %site-entities;
     ]>
 
-<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
 <page>
   <title>GStreamer Conference 2010 Program </title>
 
