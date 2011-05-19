@@ -4154,4 +4154,18 @@ or download tarballs for
     </content>
   </item>
 
+ <item>
+     <date>2011-05-19 12:00</date>
+         <title>GStreamer Conference 2011</title>
+         <content>
+         <p>
+We are very happy to announce that registration and Call for papers is now open for the <a href="http://gstreamer.freedesktop.org/conference">GStreamer Conference 2011</a>. 
+         </p>
+         <p>
+Due to the success and great attendance of last years event this is the second year we are organizing a conference focusing on GStreamer and GStreamer related technologies. So if you are writing an application or creating a product using GStreamer or potentially using GStreamer this is definetly the conference to attend. So check out the <a href="http://gstreamer.freedesktop.org/conference">conference website</a> and hopefully we see you in Prague this October.
+         </p>
+
+                 </content>
+                   </item>
+
 </news>
