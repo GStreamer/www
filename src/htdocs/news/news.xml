@@ -4148,8 +4148,8 @@ Check out release notes for
 <a href="&site;/releases/gstreamer/0.10.34.html">gstreamer core</a> or
 <a href="&site;/releases/gst-plugins-base/0.10.34.html">gst-plugins-base</a>,
 or download tarballs for
-<a href="&site;/src/gst-plugins-good/gstreamer-0.10.34.tar.bz2">gstreamer</a> or
-<a href="&site;/src/gst-plugins-good/gst-plugins-base-0.10.34.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gstreamer/gstreamer-0.10.34.tar.bz2">gstreamer</a> or
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.34.tar.bz2">gst-plugins-base</a>,
     </p>
     </content>
   </item>
