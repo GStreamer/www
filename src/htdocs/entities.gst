@@ -1,8 +1,8 @@
 <!ENTITY gst-version-stable "0.10.35">
 <!ENTITY gst-plugins-base-version-stable "0.10.35">
 <!ENTITY gst-plugins-good-version-stable "0.10.30">
-<!ENTITY gst-plugins-ugly-version-stable "0.10.17">
-<!ENTITY gst-plugins-bad-version-stable "0.10.21">
+<!ENTITY gst-plugins-ugly-version-stable "0.10.18">
+<!ENTITY gst-plugins-bad-version-stable "0.10.22">
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.11">
 <!ENTITY gst-openmax-version-stable "0.10.1">
