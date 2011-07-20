@@ -4,7 +4,7 @@
 <!ENTITY gst-plugins-ugly-version-stable "0.10.18">
 <!ENTITY gst-plugins-bad-version-stable "0.10.22">
 
-<!ENTITY gst-ffmpeg-version-stable "0.10.11">
+<!ENTITY gst-ffmpeg-version-stable "0.10.12">
 <!ENTITY gst-openmax-version-stable "0.10.1">
 <!ENTITY gst-python-version-stable "0.10.21">
 <!ENTITY gstreamer-sharp-version-stable "0.9.2">
