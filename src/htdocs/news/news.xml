@@ -4196,4 +4196,21 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2011-07-20 13:00</date>
+    <title>GStreamer FFmpeg Plug-in 0.10.12 stable release</title>
+<content>
+<p>
+The GStreamer team announces a new release of the GStreamer gst-ffmpeg module
+for the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes
+<a href="&site;/releases/gst-ffmpeg/0.10.12.html">here</a>,
+or download tarballs 
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.12.tar.bz2">here</a>.
+    </p>
+    </content>
+  </item>
+
 </news>

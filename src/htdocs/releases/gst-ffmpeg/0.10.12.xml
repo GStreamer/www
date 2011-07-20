@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-ffmpeg</module>
+  <module-fancy>GStreamer FFmpeg Plug-ins</module-fancy>
+  <name>A year in hell</name>
+  <version>0.10.12</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer FFmpeg Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+<p>
+This module contains plug-ins using libraries from the FFmpeg project.
+</p>
+
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+<feature>Bump to LibAV 0.7</feature>
+<feature>Timestamp tracking fixes</feature>
+<feature>New codecs</feature>
+<feature>Multi-threaded decoding</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jan Schmidt</person>
+	<person>Julien Isorce</person>
+	<person>Luis de Bethencourt</person>
+	<person>Marc Plano-Lesay</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Miguel Angel Cabrera Moya</person>
+	<person>Punya Prakash</person>
+	<person>Rafael Diniz</person>
+	<person>Raimo Järvi</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Thadeu Lima de Souza Cascardo</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<p>In addition to the above contributors, we would like to extend our
+thanks to the FFmpeg developers without which these plugins would have
+no reason to exist.</p>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>595590</id>
+      <summary>Conditional jump or move depends on uninitialised value in ff_h264_find_frame_end</summary>
+    </bug>
+    <bug>
+      <id>611500</id>
+      <summary>[regression] Wrong outgoing timestamps</summary>
+    </bug>
+    <bug>
+      <id>613901</id>
+      <summary>No support for PIX_FMT_YUVA420P, prevents vp6a decoding</summary>
+    </bug>
+    <bug>
+      <id>629648</id>
+      <summary>ffenc_dvdsub wrongly categorized as audio encoder</summary>
+    </bug>
+    <bug>
+      <id>631075</id>
+      <summary>RTP based decoding degrades over time</summary>
+    </bug>
+    <bug>
+      <id>632691</id>
+      <summary>[ffenc_ac3] does not support changing the number of channels on the fly</summary>
+    </bug>
+    <bug>
+      <id>632877</id>
+      <summary>[ffdec_h264] always outputs same timestamp</summary>
+    </bug>
+    <bug>
+      <id>639681</id>
+      <summary>[ffdec_wmv3] regression: video very unsmooth with various mms streams</summary>
+    </bug>
+    <bug>
+      <id>639993</id>
+      <summary>h.263+ support is broken</summary>
+    </bug>
+    <bug>
+      <id>642015</id>
+      <summary>[ffvideoscale] add support for UYVY</summary>
+    </bug>
+    <bug>
+      <id>642507</id>
+      <summary>[mingw/cygwin build] ensure building of plugin dll</summary>
+    </bug>
+    <bug>
+      <id>646838</id>
+      <summary>ffdec_h264 fail to decode some stream</summary>
+    </bug>
+    <bug>
+      <id>648816</id>
+      <summary>[compile] with-ffmpeg-extra-configure passes incorrect cflags</summary>
+    </bug>
+    <bug>
+      <id>649297</id>
+      <summary>regression: ffdemux_ape fails with gst_ffmpegdata_open: assertion `GST_PAD_IS_SRC (pad)' failed</summary>
+    </bug>
+    <bug>
+      <id>649372</id>
+      <summary>ffdec: make the time threshold to skip to next keyframe configurable</summary>
+    </bug>
+    <bug>
+      <id>650596</id>
+      <summary>ffenc_aac needs AAC profile support in caps</summary>
+    </bug>
+    <bug>
+      <id>650695</id>
+      <summary>Patch adds LATM/LOAS support to codecmap and make distinction between ADTS and LATM/LOAS</summary>
+    </bug>
+    <bug>
+      <id>651447</id>
+      <summary>[ffdec_aac] Add mpegversion 2 to caps</summary>
+    </bug>
+    <bug>
+      <id>651625</id>
+      <summary>[ffdec] Check for AV_NOPTS_VALUE in PTS</summary>
+    </bug>
+    <bug>
+      <id>651714</id>
+      <summary>[ffdec] Fix calculating frame duration from last timestamp and frame count</summary>
+    </bug>
+    <bug>
+      <id>652812</id>
+      <summary>Don't create dummy extradata for AAC LATM</summary>
+    </bug>
+    <bug>
+      <id>653648</id>
+      <summary>[ffmpegdec] allocates and leaks avpacket helper structs</summary>
+    </bug>
+    <bug>
+      <id>653649</id>
+      <summary>[ffmpegdec] complains in basic encoding / decoding pipeline</summary>
+    </bug>
+    <bug>
+      <id>653717</id>
+      <summary>[ffmpegdec] wrong audio template src caps</summary>
+    </bug>
+  </bugs>
+
+</release>
