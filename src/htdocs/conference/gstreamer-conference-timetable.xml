@@ -11,8 +11,8 @@
 
 <body lang="en-US" dir="LTR">
 
-<h1>GStreamer Conference 2010</h1>
-<h2>Cambridge, United Kingdom, 26th of October 2010</h2>
+<h1>GStreamer Conference 2011</h1>
+<h2>Prague, Czech Republic, 24th - 25th of October 2011</h2>
 <p><a href="http://gstreamer.freedesktop.org/conference">Back to conference main page</a></p>
 <table width="100%" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0">
 	<col width="68*" />
@@ -27,7 +27,7 @@
 			<p>Main Room</p>
 		</td>
 		<td WIDTH="33%">
-			<p>Darwin</p>
+			<p>Second Room</p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -37,7 +37,7 @@
 		</td>
 		<td width="40%">
 			<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#taymans">
-			GStreamer Current and future developments - Wim Taymans</a>, Collabora Multimedia 
+			GStreamer 1.0 - GStreamer maintainer Wim Taymans</a>, Collabora Multimedia 
 			</p>
 		</td>
 		<td width="33%">
