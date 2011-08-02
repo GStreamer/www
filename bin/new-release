@@ -198,7 +198,6 @@ git add $release.xml
 echo "Building website"
 make
 
-release=htdocs/releases/$module/$version
 echo "Copying RELEASE"
 cp $release $moduledir/RELEASE || {
   echo "Error copying $release $moduledir/RELEASE."

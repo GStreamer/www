@@ -4213,4 +4213,27 @@ or download tarballs
     </content>
   </item>
 
+  <item>
+    <date>2011-08-02 20:59</date>
+    <title>GStreamer Core 0.11.0, Base Plugins 0.11.0 unstable release</title>
+<content>
+<p>
+The GStreamer team announces a new release of the GStreamer core and
+gst-plugins-base modules for the 0.11 GStreamer unstable release series.
+</p>
+<p>
+  This is the first release of the unstable 0.11 series that will lead up
+  to the next 1.0 stable series later this year.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.11.0.html">gstreamer core</a> or
+<a href="&site;/releases/gst-plugins-base/0.11.0.html">gst-plugins-base</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.11.0.tar.bz2">gstreamer</a> or
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.11.0.tar.bz2">gst-plugins-base</a>,
+    </p>
+    </content>
+  </item>
+
 </news>
