@@ -30,11 +30,12 @@ We have a long list of topics to be presented like:
 
 <ul>
 <li>GStreamer 1.0</li>
-<li>DLNA support</li>
-<li>Cross platform development with GStreamer</li>
-<li>Telepathy VOIP and videoconferencing</li>
-<li>GStreamer and Android</li>
-<li>GStreamer and MeeGo</li>
+<li>WebM and VP8</li>
+<li>Pulse Audio development report</li>
+<li>Designing complex pipelines with GStreamer</li>
+<li>Blu-ray playback and GStreamer</li>
+<li>GStreamer and WebOS</li>
+<li>Updates on latest Xiph.org and Vorbis developments</li>
 <li>GStreamer, Webkit and HTML5</li>
 <li>Case studies on GStreamer product deployments</li>
 </ul>
