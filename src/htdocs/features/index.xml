@@ -30,8 +30,8 @@ components (e.g. codecs) and use platform input/output mechanisms:<ul>
   <li>Graph-based structure allows arbitrary pipeline construction</li>
   <li>
     Based on
-    <a href="http://developer.gnome.org/doc/API/2.0/gobject/index.html">GLib 2.0</a>
-    object model for object-oriented design and inheritance
+    <a href="http://developer.gnome.org/gobject/stable/">GLib 2.0
+    object model</a> for object-oriented design and inheritance
   </li>
   <li>Compact core library of less than 500KB, about 65 K lines of code</li>
   <li>Multi-threaded pipelines are trivial and transparent to construct</li>
