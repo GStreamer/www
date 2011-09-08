@@ -44,19 +44,20 @@
 			</p>
 		</td>
 	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>10.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#sauer">
-			High complexity GStreamer pipelines, Stefan Sauer</a>, Google</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#sauer">High complexity GStreamer pipelines, Stefan Sauer</a>, Google</p>
 		</td>
 		<td width="33%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#emont">
 			Time lapse and stabilizing a sequence of images - Guillame Emont</a>, Igalia</p>
 		</td>
 	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>11.00</p>
@@ -66,9 +67,9 @@
 			Ericsson</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">Time shifting with GStreamer</a>, Fluendo</p>
-		</td>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">Time shifting with GStreamer</a>, Fluendo</p></td>
 	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>12.00 
@@ -76,12 +77,11 @@
 		</td>
 		<td width="40%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#quachio">GStreamer and DASH - Emanuelle Quachio</a>, ST Microelectronics 
-			</p>
-		</td>
+			</p></td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#alaoui">GStreamer and Farsight - Communication the easy way, Youness Alaoui</a>, Collabora</p>
-		</td>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#alaoui">GStreamer and Farsight - Communication the easy way, Youness Alaoui</a>, Collabora</p></td>
 	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>13.00</p>
@@ -93,6 +93,7 @@
 			<p><b>Lunch</b></p>
 		</td>
 	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>14.00</p>
@@ -104,9 +105,10 @@
 			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#sparell">GStreamer at Oblong Industries - Carlton Sparell</a>, Oblong Industries</p>
 		</td>
 	</tr>
+	
 	<tr valign="top">
 		<td width="27%">
-			<p>15.00</p>
+		<p>15.00</p>
 		</td>
 		<td rowspan="2" width="40%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#luther">WebM and VP8 - Latest developments</a>, Google</p>
@@ -149,6 +151,7 @@
 			</p>
 		</td>
 	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>11.00</p>
@@ -160,6 +163,7 @@
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#frisch">Blu-Ray Authoring, Andreas Frisch</a>, Dreambox</p>
 		</td>
 	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>12.00</p>
@@ -172,6 +176,7 @@
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schmidth">GStreamer and Blu-ray playback - Jan Schmidth</a>, Oracle</p>
 		</td>
 	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>13.00 
@@ -180,6 +185,7 @@
 		<td width="40%">Lunch</td>
 		<td width="33%">Lunch</td>
 	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>14.00</p>
@@ -191,6 +197,7 @@
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#pinochet">GStreamer + Android???</a></p>
 		</td>
 	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>15.00</p>
@@ -202,6 +209,7 @@
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#leeman">Videowall - Marc Leeman</a>, Barco</p>
 		</td>
 	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>16.00</p>
@@ -214,7 +222,6 @@
 		</td>
 	</tr>
 	
-</tr>
 	<tr valign="top">
 		<td width="27%">
 			<p>16.00</p>
@@ -231,9 +238,6 @@
 		</td>
 	</tr>
 
-
-
 </table>
-
 </body>
 </page>
