@@ -91,9 +91,20 @@ his spare time he enjoys writing m4 macros and raising wombats.
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-Media Explorer is a media centre application for Linux (including MeeGo). It leverages existing libraries (GUPnP, Grilo, Tracker, GStreamer) to find, index and play local and remote media. The application (interface coded in Mx and Clutter) enables browsing, searching, and viewing of found media.</p>
+Mex is a media center application with a smooth and intuitive
+interface to browse, search and consume media from your local hard
+disk, your home network and the Internet. While being extensible is
+deeply ingrained into Mex design to allow 3rd parties to expose all
+sorts of services, the playback engine remains GStreamer on all our
+supported platforms.</p>
 <p>
-This talk will give an introduction to the design and features of Media Explorer, future roadmap and talk about its use of GStreamer.
+The talk will demonstrate Mex running on different platforms,
+including the Intel CE4100 Media Processor (a Set Top Box hardware),
+GNU/Linux, Windows and OS X. Highlights will then be given on specific
+points: how GStreamer is used as our abstraction API, how we handle in
+and out of process decoding transparently, how Clutter can be used a
+composition engine on top of GStreamer and the challenges of GStreamer
+integration with OpenGL.
 	</p>
 	</i>
 
@@ -252,7 +263,7 @@ OpenMAX. The target SoC is the OMAP4 using a panda-board.
 	
 	<tr valign="top"><td>
 	<a name="muller" id="muller"></a>
-	<p><b>GStreamer 0.10 Status Report, Tim-Philipp Müller, Collabora</b></p>
+	<p><b>GStreamer Status Report, Tim-Philipp Müller, Collabora</b></p>
 	<p>
 Tim-Philipp Müller is a GStreamer developer and maintainer. He studied
 in Hamburg, York and Aberystwyth before going to work for Fluendo. He
@@ -261,9 +272,9 @@ UK.</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-While GStreamer 1.0 looms close on the horizon a lot of development is still happening in the 0.10 branch. Tim-Philipp Müller is the maintainer and release manager for GStreamer 0.10.x. This talk will give you a whirlwind tour of what's new and improved in and around GStreamer 0.10.
-Including a high-level overview of all kinds of cool things we've improved and done lately, 
-especially. from an application developer perspective. Topics will range from things like AC-3 passthrough now working, va-api support and transcoding improvements. The talk will also talk a bit about the support plans for GStreamer 0.10.x once GStreamer 1.0 has been released.
+While GStreamer 1.0 looms close on the horizon a lot of development is still happening in the 0.10 branch, most of which will migrate accross to 10. Tim-Philipp Müller is the maintainer and release manager for GStreamer 0.10.x. This talk will give you a whirlwind tour of what's new and improved in and around GStreamer over the course of the last year.</p>
+<p>
+The talk includes a high-level overview of all kinds of cool things we've improved and done lately, especially. from an application developer perspective. Topics will range from things like AC-3 passthrough now working, va-api support and transcoding improvements. The talk will also talk a bit about the support plans for GStreamer 0.10.x once GStreamer 1.0 has been released.
 	</p>
 	</i>
 	</td></tr>

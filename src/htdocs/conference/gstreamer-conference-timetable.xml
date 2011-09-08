@@ -162,8 +162,7 @@
 			<p>12.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#droege">A new OpenMax IL integration layer for GStreamer- Sebastian Dröge</a>,
-			Collabora Ltd.</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#burks">GStreamer for Engineering Video Processing Applications - Joshua Doe and Stephen Burks</a>, US Army</p>
 		</td>
 		<td width="33%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schmidth">GStreamer and Blu-ray playback - Jan Schmidth</a>, Oracle</p>
@@ -194,7 +193,8 @@
 			<p>15.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#burke">GStreamer for Engineering Video Processing Applications - Joshua Doe and Stephen Burks</a>, US Army</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#droege">A new OpenMax IL integration layer for GStreamer- Sebastian Dröge</a>,
+			Collabora Ltd.</p>
 		</td>
 		<td WIDTH="33%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#leeman">Advanced videowall with GStreamer - Marc Leeman</a>, Barco</p>
