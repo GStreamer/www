@@ -34,13 +34,10 @@
 		<td width="27%">
 			<p>09.00</p>
 		</td>
-		<td width="40%">
+		<td width="40%" colspan="2">
 		<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#taymans">GStreamer 1.0 - GStreamer maintainer Wim Taymans</a>, Collabora Ltd.</p>
 		</td>
-		<td width="33%">
-			<p>
-			</p>
-		</td>
+		
 	</tr>
 
 	<tr valign="top">
@@ -62,7 +59,7 @@
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#lundberg">GStreamer, WebKit and HTML5 - Jonas Lundberg</a>, Ericsson</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">Time shifting with GStreamer</a>, Fluendo</p></td>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">Time shifting with GStreamer - Jossep Torra</a>, Fluendo</p></td>
 	</tr>
 
 	<tr valign="top">
@@ -134,12 +131,8 @@
 		<td width="27%">
 			<p>10.00</p>
 		</td>
-		<td width="40%">
+		<td width="40%" collspan="2">
 			<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#muller">GStreamer 0.10.x status report - Tim Muller</a>, Collabora Ltd.</p>
-		</td>
-		<td width="33%">
-			<p>
-			</p>
 		</td>
 	</tr>
 
@@ -214,7 +207,7 @@
 	
 	<tr valign="top">
 		<td width="27%">
-			<p>16.00</p>
+			<p>16.30</p>
 		</td>
 		<td width="40%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#debethencourt">The ease of writing a video player in GStreamer - Luis deBethencourt</a>, Collabora Ltd.</p>
