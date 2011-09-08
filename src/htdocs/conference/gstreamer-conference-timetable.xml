@@ -61,7 +61,7 @@
 			<p>11.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#lundberg">GStreamer, WebKit and HTML5 - Jonas Lundberg</a>, Ericsson</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#lundberg">GStreamer, Webkit, HTML5 and Real-Time Communication - Jonas Lundberg</a>, Ericsson</p>
 		</td>
 		<td width="33%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">Time shifting with GStreamer - Jossep Torra</a>, Fluendo</p></td>
@@ -82,7 +82,7 @@
 		<td width="27%">
 			<p>13.00</p>
 		</td>
-		<td>
+		<td colspan="2">
 			<p align="center"><b>Lunch</b></p>
 		</td>
 		
@@ -162,7 +162,7 @@
 			<p>12.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#raghavan">Latest developments in Pulse Audio - Arun Raghavan</a>,
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#raghavan">A new OpenMax IL integration layer for GStreamer- Sebastian Dröge</a>,
 			Collabora Ltd.</p>
 		</td>
 		<td width="33%">
@@ -174,7 +174,7 @@
 		<td width="27%">
 			<p>13.00</p>
 		</td>
-		<td colspan="2"><p align="center">Lunch</p></td>
+		<td colspan="2"><p align="center"><b>Lunch</b></p></td>
 	</tr>
 
 	<tr valign="top">
@@ -182,7 +182,7 @@
 			<p>14.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schleef">Broadcast and Web Streaming with GStreamer, David Schleef</a>, Entropy Wave</p>
+			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#schleef">Broadcast and Web Streaming with GStreamer, David Schleef</a>, Entropy Wave</p>
 		</td>
 		<td WIDTH="33%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#pinochet">GStreamer + Android + Androginizer + Telepathy</a></p>
@@ -197,7 +197,7 @@
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#burke">GStreamer for Engineering Video Processing Applications - Joshua Doe and Stephen Burke</a>, US Army</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#leeman">Videowall - Marc Leeman</a>, Barco</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#leeman">Advanced videowall with GStreamer - Marc Leeman</a>, Barco</p>
 		</td>
 	</tr>
 

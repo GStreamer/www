@@ -23,10 +23,13 @@
 	<p>
 	Wim Taymans is one of the founders of the GStreamer project and the man behind the current GStreamer design. Wim has a long history in the development of multimedia software, starting with computer game development on the Commodore 64. Wim Taymans and is working on assisting Collabora customers with the design and use of GStreamer.
 	</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
 	<p>
-	Wim Taymans will in his keynote be speaking about the current state of GStreamer 1.0 development and highlight the most important changes in GStreamer 1.0 compared to the 0.10 release series.
-
-	</p>
+	The GStreamer 1.0 release is scheduled for the end of the year. This talk will go over what worked and didn't work so well in the 0.10 series, and what GStreamer 1.0 brings for applications and desktop environments. This talk is intended mainly for developers, but users will also be interested in knowing what it means for them in the long run.</p>
+<p>
+Since the 0.10.0 release in 2005, GStreamer has been used in an ever increasing range of applications, platforms, devices and use-cases. While the API/ABI stability and ever-increasing range of features it provides enabled it to spread so extensively, there were areas and use-cases that required breaking the API/ABI.</p>
+	</i>	
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -35,13 +38,29 @@
 	<p>Stefan is a software engineer working for Google on build infrastructure
 tools. In the past he was working for Nokia on the multimedia stack used on their maemo internet tablets and phones. In his free time his is contributing to GStreamer, other GNOME projects (e.g. gtk-doc) and working on his music editor buzztard. He has a PhD in Human Computer Interaction from the Technical University of Dresden/Germany. Stefan now lives in Munich/Germany with his wife and his two kids.
 	</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+Buzztard is a music composer for linux build on GStreamer. Using hundreds of plugins for its
+pipelines Buzztard stress test the GStreamer framework like few other applications. 
+In the talk Stefan Sauer will go through the specific features of GStreamer Buzztard relies on, where the project has been pushing GStreamer and what areas they still see challenges.
+The talk also covers aspects like performance and scalibility of GStreamer applications.
+	</p>
+	</i>
 	</td></tr>
 
 	<tr valign="top" bgcolor="#C0C0C0"><td>
 	<a name="lundberg" id="lundberg"></a>
-	<p><b>GStreamer, Webkit and HTML5, Jonas Lundberg, Ericsson</b></p>
+	<p><b>GStreamer, Webkit, HTML5 and Real-Time Communication, Jonas Lundberg, Ericsson</b></p>
 	<p>
 	Jonas Lundberg is a senior researcher at Ericsson Research with over ten years of experience in multimedia research. His research interests include real-time multimedia services and web technologies. He has a master's degree in Computer Science from Luleå University of Technology, Sweden.</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+Through emerging web standards, it will soon be possible to build web applications with support for real-time voice and video communication without the need for proprietary browser plug-ins. Ericsson Research has developed an early prototype in WebKit with support for a sub-set of WHATWGs &quot;Web Real-Time Communication APIs&quot; specification. This talk will focus on how these APIs have been realized using WebKit and GStreamer. In the end a demonstration will be given showing how easy it is for web developers to integrate video conferencing into their applications.
+</p>
+	</i>
+
 	</td></tr>
 	
 	<tr valign="top"><td>
@@ -50,6 +69,12 @@ tools. In the past he was working for Nokia on the multimedia stack used on thei
 	<p>Emanuele Quacchio received the Master Degree in Electronic Engineering from the Polytechnic of Turin, Italy, in 2003, and worked two year as a researcher in the Dept. of Electronics of the same University developing algorithms for image and video processing.
 He joined STMicroelectronics at the System R&amp;D Division in 2006, where he is currently leading the design and management of projects on embedded multimedia applications, focusing on Internet media distribution and exploiting GStreamer media frameworks and other Open Source technologies. Since 2009 he is also coordinating the technical activities for STM in a number of EU funded projects.
 	</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+In this work we describe a GStreamer module that implements the specifications of a novel MPEG standard which aims to define formats for adaptive video delivery over HTTP (Dynamic and Adaptive Streaming over HTTP, DASH; the standard applies to video streaming services over the Internet  for  television and other connected devices.
+</p>
+	</i>
 	</td></tr>
 		
 	<tr bgcolor="#C0C0C0"><td>
@@ -62,20 +87,71 @@ Clutter and GStreamer and, in a past life, has been advocating GNOME
 libraries and GStreamer in companies writing proprietary software.  In
 his spare time he enjoys writing m4 macros and raising wombats.
 	</p>
+
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+Media Explorer is a media centre application for Linux (including MeeGo). It leverages existing libraries (GUPnP, Grilo, Tracker, GStreamer) to find, index and play local and remote media. The application (interface coded in Mx and Clutter) enables browsing, searching, and viewing of found media.</p>
+<p>
+This talk will give an introduction to the design and features of Media Explorer, future roadmap and talk about its use of GStreamer.
+	</p></i>
+
 	</td></tr>
 
 	<tr valign="top"><td>
 	<a name="luther" id="luther"></a>
 	<p><b>WebM and VP8 latest developments , John Luther, Google</b></p>
 	<p>John Luther is Product Manager at the WebM Project. Prior to WebM, he was VP of Product Management at On2 Technologies, an early developer of video compression technology and creators of VP3, the codec that formed the basis for Ogg Theroa.</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+This talk gives is a general development update for VP8 and WebM, focusing on things like recent development activity, technical roadmap and priorities going forward like the in development RTP standard for VP8.</p>
+<p>
+The talk also looks at what kind of applications would be useful in order to push WebM and free formats forward, be that open source or others. Including looking at potential future usescases for VP8 and WebM and which internet standards  you would like to see VP8 interact with and so on.
+</p>
+	</i>
 	</td></tr>
+
+
+
+
 
 	<tr bgcolor="#C0C0C0"><td>
 	<a name="emont" id="emont"></a>
 	<p><b>Time lapse and stabilising a sequence of images, Guillame Emont,  Igalia</b></p>
 	<p>
-
+Guillaume Emont has been playing around on various things related to multimedia 
+(Elisa/Moovida, Pigment, Grilo and of course GStreamer) in the Free software 
+world for a few years and enjoys it a lot. He is now proudly part of the 
+awesome group of hackers known as Igalia.</p>
+<p>
+When he doesn't hack on software, he enjoys discussing with like-minded people 
+around a drink or a good meal, various outdoor sports in and around sunny 
+Barcelona, or trying to take photos from above using helium balloons, among 
+many other things.
+</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+The topic for this talk was encountered when trying to make a time
+lapse film with a camera attached to a tethered helium balloon high above.
+</p>
+<p>
+This talk will introduce the issues of stabilising a sequence of images.
+It will mainly focus on &quot;discreet&quot; sequences of images (time lapses,
+stop motion) but will have many bits relevant to more typical
+continous-ish videos.
+</p>
+<p>
+It will introduce some methods to solve that problem, and various
+benefits of having these methods in GStreamer, so that they are
+available to solve other related problems (such as following an object,
+movement detection, automated compositing or 3D reconstruction).
+</p>
+Of course, there will be cool demos, hopefully featuring stunning aerial
+pictures getting transformed into a smooth video.
 	</p>
+	</i>
 	</td></tr>
 	
 	<tr valign="top"><td>
@@ -84,6 +160,11 @@ his spare time he enjoys writing m4 macros and raising wombats.
 	<p>
 	Josep Torra holds a Computer Engineering degree from the Open University of Catalonia (UOC), Catalonia, Spain. He joined Fluendo as senior developer and became a part of the codec development team for embedded systems in 2006. He currently works as a Technical Lead for the team developing codecs and multimedia related projects in a wide range of platforms, from desktop to embedded systems. Embedded Linux development, HW accelerated decoders, and performance optimization techniques are of special interest for Josep. He is also a developer on the GStreamer project.
 	</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+A complete Set-top box solution based on GStreamer requires timeshift support for MPEG TS streams. Josep Torra from Fluendo will talk about the design and development of an element that provides these Timeshift capabilities. This element is easy to incorporate into the main playback pipeline and is completely integrated into GStreamer semantics.
+	</p></i>
 	</td></tr>
 		
 	<tr bgcolor="#C0C0C0"><td>
@@ -92,6 +173,31 @@ his spare time he enjoys writing m4 macros and raising wombats.
 	<p>
 I'm a Software Developer working for Collabora for the past 4 years. I've worked mostly as a VoIP/Streaming expert on various technologies like GStreamer and Farsight. I'm the maintainer of libnice, a NAT-Traversal library implementing the ICE specification. In my free time, I'm the project leader of the aMSN Messenger client, as well as founder of the PSFreedom, PL3 and PS3MFW projects.
 	</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+GStreamer can be complicated to work with and needs a steep learning
+curve. It's also quite difficult to do dynamic pipeline modifications without a
+lot of code and careful tinkering. Farsight is a framework providing GStreamer elements that provide a VoIP stack, but it's a lengthy and difficult process to use Farsight in order to build a
+fully fledged VoIP Application.</p>
+<p>
+In this talk, Youness will first discuss GstFilters, a very simple to use library that
+makes it easy to write complex and dynamic GStreamer pipelines in very few lines
+of code. He will then talk about Farsight-Utils, a convenience library that builds the
+whole GStreamer pipelines for you, handles the Farsight interaction and provides
+developers with a simple API that gives them access to all the features they'd
+need to build a complete and full-featured VoIP application in just a few
+minutes, without sacrificing the control and customization provided by the
+Farsight API.</p>
+<p>
+Farsight-Utils uses GstFilters and provides the user access to multiple
+GstFilterManagers so they can customize the pipeline however they want.
+In under 100 lines of C code, a complete VoIP application can be written which
+supports displaying the sound level, control the volume as well as display a
+preview window for the video call, maybe even provide the option to record the
+call to a file.
+</p>
+	</i>
 	</td></tr>
 	
 	<tr valign="top"><td>
@@ -105,6 +211,12 @@ Prior to Oblong Industries, Carlton was VP Technology at Ucentric Systems, a pio
 Carlton was a founder of Fantasma Networks, a silicon valley Ultra-Wide Band fabless semiconductor company and a Member of Research Staff at Paul Allen’s Interval Research Corporation in the mid to late 1990s.</p>
 <p> 
 Carlton holds a Master of Science from the MIT Media Laboratory and a Bachelor of Science from MIT in Electrical Science and Engineering.</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+Quite often you hear people talking about things with the words 'a Minority Report like interface'. The Xbox 360 Kinect system for instance is often referenced this way. But what do a system built by the guy who came up with the technology in Minority Report really look like? Kwindla Kramer who founded Oblong Industries after being the technical consultant on Minority Report and has been working with his team in Los Angeles to create revolutionary motion control systems. In this talk Carlton J. Sparell from Oblong Industries will talk about the technologies developed at Oblong Industries and how GStreamer fits into their system. He will also talk about some of the multimedia challenges they have encountered and how GStreamer has been used to solve them.
+</p></i>
+
 	</td></tr>
 	
 	<tr bgcolor="#C0C0C0"><td>
@@ -116,23 +228,53 @@ the OMAP3 processors. At Igalia he has been involved in several projects for
 OMAP3 and OMAP4 processors. He is now fooling around with the SysLink IPC
 mechanism and its integration with GStreamer.
 	</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+SysLink is a multi-core Inter-Processor Communication (IPC) software stack,
+pushed by Texas Instrument, where the developers could take advantage of
+asymmetric multiprocessing with several heterogeneous processors running
+different instances of operating system, whether Linux or any other flavor of
+RT OS.</p>
+<p>
+In the realm of the multimedia processing, this mechanism offloads the
+CPU-intensive (de)codification tasks from the host processor, enhancing the
+user experience, particularly in embedded devices, where specialized
+processing units could be stored on SoCs.
+</p>
+<p>
+This talk will describe the main SysLink components (Linux kernel API, RCM
+modules, etc.) and how we could map those concepts into GStreamer elements,
+providing hardware accelerated multimedia, but without the burden of
+OpenMAX. The target SoC is the OMAP4 using a panda-board.
+</p>
+	</i>
+
 	</td></tr>
 	
 	<tr valign="top"><td>
 	<a name="muller" id="muller"></a>
-	<p><b>GStreamer 0.10 Status Report, Tim Muller, Collabora</b></p>
+	<p><b>GStreamer 0.10 Status Report, Tim-Philipp Müller, Collabora</b></p>
 	<p>
 Tim-Philipp Müller is a GStreamer developer and maintainer. He studied
 in Hamburg, York and Aberystwyth before going to work for Fluendo. He
 co-founded Collabora Multimedia in 2007 and currently lives in Bristol,
 UK.</p>
-	
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+While GStreamer 1.0 looms close on the horizon a lot of development is still happening in the 0.10 branch. Tim-Philipp Müller is the maintainer and release manager for GStreamer 0.10.x. This talk will give you a whirlwind tour of what's new and improved in and around GStreamer 0.10.
+Including a high-level overview of all kinds of cool things we've improved and done lately, 
+especially. from an application developer perspective. Topics will range from things like AC-3 passthrough now working, va-api support and transcoding improvements. The talk will also talk a bit about the support plans for GStreamer 0.10.x once GStreamer 1.0 has been released.
+</p>
+	</i>
 	</td></tr>
 	
 	<tr valign="top" bgcolor="#C0C0C0"><td>
 	<a name="pinochet" id="pinochet"></a>
-	<p><b>Easy integration of GStreamer in Android, Reynaldo Pinochet</b></p>
+	<p><b>Easy integration of GStreamer in Android</b></p>
 	<p>
+Talk details TBD.
 	</p>
 	</td></tr>
 	
@@ -145,6 +287,14 @@ support, among other things. In the past he worked for Fluendo and Sun
 Microsystems. Currently, he lives in Albury Australia, working from home
 for Oracle Corporation, and hacks on GStreamer as he can.
 	</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+GStreamer plays DVDs quite well, but so far has no support for playing
+Blu-Ray discs which are quite a different beast. This talk covers some
+of the background and challenges to playing Blu-Ray content, a design
+for GStreamer Blu-Ray support and (hopefully) a demonstration of some
+code.</p></i>
 	</td></tr>
 	
 	<tr valign="top" bgcolor="#C0C0C0"><td>
@@ -159,10 +309,16 @@ Technology and a M.Eng. in Computer Engineering from Tokyo Institute
 of Technology.  He is currently a Senior Engineer at the open source
 software vendor Red Hat where he works on open desktop media software.
 	</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+This talk will cover the current work happening under the banner of Xiph.org, including the development of a new voice codec to be standardized by the IETF, and improvements to existing codec technologies. It will also talk about how the entrance of Google into the free codec space has changed the market dynamics. 
+	</p>
+	</i>
 	</td></tr>
 		
 	<tr><td>
-	<p><b>Videowall, Marc Leeman, Barco</b></p>
+	<p><b>Advanced videowall with GStreamer, Marc Leeman, Barco</b></p>
 	<a name="leeman" id="leeman"></a>
 	<p>Marc Leeman has been an open source enthousiast since 1997. He has
 a background in electrical engineering where he did research on
@@ -174,6 +330,33 @@ applications with GStreamer.</p>
 He has three lovely daughters that use a GStreamer application to watch
 their favourite television shows from the DVB-S Dreambox settop box.
 	</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+Last year, there was a demo on the embedded part of the conference
+where TI panda boards were used to show a movie (blender project) over
+a number of displays (3x2). The same demo was given on FOSDEM. There
+were a number of problems with that demo. First off, the playing was
+done off a file and secondly; the video was far from synchronised;
+which was clearly visible in fast panning scenes. No timing
+information was used, next to 'play and display as fast as possible'.
+This was a custom application based off of the ffmpeg libraries.
+</p>
+<p>
+We will be presenting a similar setup with GStreamer that
+shows much better results; allowing full content locking using
+heterogeneous files (e.g. transcoded/black and white, forming one
+large display); fault tolerant (nodes can fall out and come back up.
+</p>
+<p>
+We've extended the setup to include the ability to use RTP/RTCP timing
+information with GStreamer to pick video off a readily available RTP
+camera and scale it up a wall over different monitors; guaranteeing
+synchronised display; where the timestamps difference of the decoded
+frames are in the 100-200 us range.
+</p>
+	</i>
+
 	</td></tr>
 	
 	<tr valign="top" bgcolor="#C0C0C0"><td>
@@ -184,17 +367,59 @@ Robert Swain is a multimedia software developer with a strong and long-running i
 <p>
 Since joining Collabora in 2009, he has worked on a broad range of topics such as GStreamer as a multimedia backend for Android, progressive download support for common video formats, PiTiVi pipeline optimisations, general camera improvements for Meego and dynamic, automated deinterlacing.
 	</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+Legacy quirks of the audiovisual media industry often plague digital
+video content some time after they should really have been phased out -
+telecine/interlacing are among them and still pose problems in our
+modern and progressive world.
+</p><p>
+Interlacing and telecine still have some merit today, e.g. sports
+benefit from higher temporal resolution provided by interlacing, but we
+all have progressive displays that want progressive frames to display.
+</p><p>
+A goal was set to develop a solution within GStreamer to obtain
+progressive video content from any video input. Therefore it was
+required to implement identification of source content, interpolation or
+reconstruction of progressive frames and all the surrounding magic to
+make things 'just work'.
+</p><p>
+The background, proposed solutions and interesting bits and pieces will
+be discussed in this talk.
+</p></i>
+
 	</td></tr>
 	
 	<tr valign="top"><td>
 	<a name="bethencourt" id="bethencourt"></a>
 	<p><b>Luis De Bethencourt, Collabora</b></p>
-	<p></p>
+	<p>Luis de Bethencourt is a freedom-lover technocrat, and has always
+enjoyed programming and playing around with video, so since he
+discovered GStreamer years ago he's been hooked. Originally from the
+Canary Islands, computers felt like a door to the world, and saw in
+Linux the best way to open it, see how it all works, and become a part
+of it. He currently works for Collabora and enjoys contributing to
+projects like Gstreamer Editing Services, Rygel, PiTiVi, freemix or
+snappy. When he isn't in front of the screen, you can probably find him
+behind it. Beware of cake!</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+when you started learning GStreamer, did you feel the temptation of how easy
+it would be to write a player with it? well, I fell into that temptation and
+started snappy. this talk will be about the experience of writing a
+GStreamer (plus clutter) video player; problems faced, how the project evolved, API
+comfortability, all the movie watching in the name of testing, and how I
+got in one little fight and my mom got scared, she said your moving in with your
+auntie and uncle in bel-air.
+</p>
+	</i>
 	</td></tr>
 
 	<tr valign="top"><td>
 	<a name="droege" id="droege"></a>
-	<p><b>Pulse Audio , Sebastian Droege, Collabora</b></p>
+	<p><b>A new OpenMax IL integration layer for GStreamer , Sebastian Dröge, Collabora</b></p>
 	<p>
 Sebastian Dröge is working on GStreamer since early 2006 and nowadays is
 one of the main developers. He also works on other open source projects
@@ -216,6 +441,30 @@ for Dream Multimedia, the company which released the first Linux-based STB
 called &quot;Dreambox&quot;. Andreas is now responsible for the Gstreamer integration 
 into Enigma2, the software for this embedded linux product line.
 </p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+High definition video is the big deal in consumer electronics and when it 
+comes to delivering retail content, the Bluray disc, as the successor of the 
+DVD, is now the industry standard. Still, playback of this medium in an open 
+source environment is very tricky due to copy protection and closed standards. 
+Recently, a library has started to provide reading ability. With the help of 
+libbluray, some open media players are now able to display bluray videos.
+Recordable bluray discs are also available at stores and can be written using 
+standard linux tools. There is, however, no open source solution for 
+generating actual content compliant to the bluray specs.
+This leads to the actual topics of this presentation.
+<ul>
+<li>An introduction to the Bluray format with its file structure</li>
+<li>How to generate adequate m2ts video streams using gstreamer and what 
+modifications were required for that</li>
+<li>An overview of the steps necessary to generate the tables and metadata 
+mandatory for a self-authored Bluray disc to play correctly with libbluray-
+driven software or in a retail Bluray player</li>
+<li>Integration of this solution into the Dreambox set-top-box to allow burning 
+DVB recordings</li>
+</p>
+	</i>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -230,7 +479,22 @@ the open source community for 15 years, working most recently on
 projects such as GStreamer, a cross-platform multimedia framework,
 the Dirac video codec, and various Xiph.org projects.
 </p>
-
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+A case study looking at the development of Entropy Wave's
+E1000 Multi-format Live Encoder.  The E1000 takes a live
+video feed from a variety of sources, processes and encodes
+the video to WebM, H.264, and Ogg/Theora, and streams to a
+wide variety of devices and browsers.  The E1000 is based on an
+embedded Linux system that uses GStreamer for media handling,
+including capture, processing, encoding, and web streaming.
+The project required creating or improving several GStreamer
+components, such as HD-SDI and HDMI capture elements, improved
+video scaling, and an HTTP streaming server framework, much of
+which is open source.  Much humor will be derived from the
+project's pitfalls, wrong turns, and dead ends.
+</p></i>
 	</td></tr>
 
 <tr valign="top"><td>
