@@ -18,6 +18,11 @@
 	<col width="68*" />
 	<col width="103*" />
 	<col width="85*" />
+	<tr>
+		<td colspan="3" width="100%" valign="TOP" bgcolor="light blue">
+			<p align="center">Monday 24th of October 2011</p>
+		</td>
+	</tr>
 	<tr valign="top">
 		<td width="27%">
 			<p>GStreamer talks 
@@ -35,7 +40,7 @@
 			<p>09.00</p>
 		</td>
 		<td width="40%" colspan="2">
-		<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#taymans">GStreamer 1.0 - GStreamer maintainer Wim Taymans</a>, Collabora Ltd.</p>
+		<p align="center">Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#taymans">GStreamer 1.0 - GStreamer maintainer Wim Taymans</a>, Collabora Ltd.</p>
 		</td>
 		
 	</tr>
@@ -102,7 +107,7 @@
 		<p>15.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#luther">WebM and VP8 - Latest developments</a>, Google</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#luther">WebM and VP8 - Latest developments - John Luther</a>, Google</p>
 		</td>
 		<td width="33%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#jaquez">GStreamer and SysLink - Victor Jaquez</a>, Igalia</p>
@@ -115,6 +120,12 @@
 		</td>
 	</tr>
 <!-- DAY 2 -->
+	<tr>
+		<td colspan="3" width="100%" valign="TOP" bgcolor="light blue">
+			<p align="center">Tuesday 25th of October 2011</p>
+		</td>
+	</tr>
+
 	<tr valign="top">
 		<td width="27%">
 			<p>GStreamer talks 
@@ -132,7 +143,7 @@
 			<p>10.00</p>
 		</td>
 		<td width="40%" colspan="2">
-			<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#muller">GStreamer 0.10.x status report - Tim Muller</a>, Collabora Ltd.</p>
+			<p align="center">Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#muller">GStreamer 0.10.x status report - Tim Muller</a>, Collabora Ltd.</p>
 		</td>
 	</tr>
 
