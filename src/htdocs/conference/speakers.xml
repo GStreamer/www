@@ -58,7 +58,7 @@ The talk also covers aspects like performance and scalibility of GStreamer appli
 	<p><b>Talk Abstract</b></p>
 	<p>
 Through emerging web standards, it will soon be possible to build web applications with support for real-time voice and video communication without the need for proprietary browser plug-ins. Ericsson Research has developed an early prototype in WebKit with support for a sub-set of WHATWGs &quot;Web Real-Time Communication APIs&quot; specification. This talk will focus on how these APIs have been realized using WebKit and GStreamer. In the end a demonstration will be given showing how easy it is for web developers to integrate video conferencing into their applications.
-</p>
+	</p>
 	</i>
 
 	</td></tr>
@@ -73,7 +73,7 @@ He joined STMicroelectronics at the System R&amp;D Division in 2006, where he is
 	<p><b>Talk Abstract</b></p>
 	<p>
 In this work we describe a GStreamer module that implements the specifications of a novel MPEG standard which aims to define formats for adaptive video delivery over HTTP (Dynamic and Adaptive Streaming over HTTP, DASH; the standard applies to video streaming services over the Internet  for  television and other connected devices.
-</p>
+	</p>
 	</i>
 	</td></tr>
 		
@@ -94,7 +94,8 @@ his spare time he enjoys writing m4 macros and raising wombats.
 Media Explorer is a media centre application for Linux (including MeeGo). It leverages existing libraries (GUPnP, Grilo, Tracker, GStreamer) to find, index and play local and remote media. The application (interface coded in Mx and Clutter) enables browsing, searching, and viewing of found media.</p>
 <p>
 This talk will give an introduction to the design and features of Media Explorer, future roadmap and talk about its use of GStreamer.
-	</p></i>
+	</p>
+	</i>
 
 	</td></tr>
 
@@ -108,13 +109,9 @@ This talk will give an introduction to the design and features of Media Explorer
 This talk gives is a general development update for VP8 and WebM, focusing on things like recent development activity, technical roadmap and priorities going forward like the in development RTP standard for VP8.</p>
 <p>
 The talk also looks at what kind of applications would be useful in order to push WebM and free formats forward, be that open source or others. Including looking at potential future usescases for VP8 and WebM and which internet standards  you would like to see VP8 interact with and so on.
-</p>
+	</p>
 	</i>
 	</td></tr>
-
-
-
-
 
 	<tr bgcolor="#C0C0C0"><td>
 	<a name="emont" id="emont"></a>
@@ -148,6 +145,7 @@ benefits of having these methods in GStreamer, so that they are
 available to solve other related problems (such as following an object,
 movement detection, automated compositing or 3D reconstruction).
 </p>
+<p>
 Of course, there will be cool demos, hopefully featuring stunning aerial
 pictures getting transformed into a smooth video.
 	</p>
@@ -164,7 +162,8 @@ pictures getting transformed into a smooth video.
 	<p><b>Talk Abstract</b></p>
 	<p>
 A complete Set-top box solution based on GStreamer requires timeshift support for MPEG TS streams. Josep Torra from Fluendo will talk about the design and development of an element that provides these Timeshift capabilities. This element is easy to incorporate into the main playback pipeline and is completely integrated into GStreamer semantics.
-	</p></i>
+	</p>
+	</i>
 	</td></tr>
 		
 	<tr bgcolor="#C0C0C0"><td>
@@ -196,7 +195,7 @@ In under 100 lines of C code, a complete VoIP application can be written which
 supports displaying the sound level, control the volume as well as display a
 preview window for the video call, maybe even provide the option to record the
 call to a file.
-</p>
+	</p>
 	</i>
 	</td></tr>
 	
@@ -215,8 +214,8 @@ Carlton holds a Master of Science from the MIT Media Laboratory and a Bachelor o
 	<p><b>Talk Abstract</b></p>
 	<p>
 Quite often you hear people talking about things with the words 'a Minority Report like interface'. The Xbox 360 Kinect system for instance is often referenced this way. But what do a system built by the guy who came up with the technology in Minority Report really look like? Kwindla Kramer who founded Oblong Industries after being the technical consultant on Minority Report and has been working with his team in Los Angeles to create revolutionary motion control systems. In this talk Carlton J. Sparell from Oblong Industries will talk about the technologies developed at Oblong Industries and how GStreamer fits into their system. He will also talk about some of the multimedia challenges they have encountered and how GStreamer has been used to solve them.
-</p></i>
-
+	</p>
+	</i>
 	</td></tr>
 	
 	<tr bgcolor="#C0C0C0"><td>
@@ -247,9 +246,8 @@ This talk will describe the main SysLink components (Linux kernel API, RCM
 modules, etc.) and how we could map those concepts into GStreamer elements,
 providing hardware accelerated multimedia, but without the burden of
 OpenMAX. The target SoC is the OMAP4 using a panda-board.
-</p>
+	</p>
 	</i>
-
 	</td></tr>
 	
 	<tr valign="top"><td>
@@ -266,7 +264,7 @@ UK.</p>
 While GStreamer 1.0 looms close on the horizon a lot of development is still happening in the 0.10 branch. Tim-Philipp Müller is the maintainer and release manager for GStreamer 0.10.x. This talk will give you a whirlwind tour of what's new and improved in and around GStreamer 0.10.
 Including a high-level overview of all kinds of cool things we've improved and done lately, 
 especially. from an application developer perspective. Topics will range from things like AC-3 passthrough now working, va-api support and transcoding improvements. The talk will also talk a bit about the support plans for GStreamer 0.10.x once GStreamer 1.0 has been released.
-</p>
+	</p>
 	</i>
 	</td></tr>
 	
@@ -294,7 +292,9 @@ GStreamer plays DVDs quite well, but so far has no support for playing
 Blu-Ray discs which are quite a different beast. This talk covers some
 of the background and challenges to playing Blu-Ray content, a design
 for GStreamer Blu-Ray support and (hopefully) a demonstration of some
-code.</p></i>
+code.
+	</p>
+	</i>
 	</td></tr>
 	
 	<tr valign="top" bgcolor="#C0C0C0"><td>
@@ -354,9 +354,8 @@ information with GStreamer to pick video off a readily available RTP
 camera and scale it up a wall over different monitors; guaranteeing
 synchronised display; where the timestamps difference of the decoded
 frames are in the 100-200 us range.
-</p>
+	</p>
 	</i>
-
 	</td></tr>
 	
 	<tr valign="top" bgcolor="#C0C0C0"><td>
@@ -387,8 +386,8 @@ make things 'just work'.
 </p><p>
 The background, proposed solutions and interesting bits and pieces will
 be discussed in this talk.
-</p></i>
-
+	</p>
+	</i>
 	</td></tr>
 	
 	<tr valign="top"><td>
@@ -413,7 +412,7 @@ GStreamer (plus clutter) video player; problems faced, how the project evolved, 
 comfortability, all the movie watching in the name of testing, and how I
 got in one little fight and my mom got scared, she said your moving in with your
 auntie and uncle in bel-air.
-</p>
+	</p>
 	</i>
 	</td></tr>
 
@@ -463,7 +462,7 @@ mandatory for a self-authored Bluray disc to play correctly with libbluray-
 driven software or in a retail Bluray player</li>
 <li>Integration of this solution into the Dreambox set-top-box to allow burning 
 DVB recordings</li>
-</p>
+	</p>
 	</i>
 	</td></tr>
 
@@ -494,7 +493,8 @@ components, such as HD-SDI and HDMI capture elements, improved
 video scaling, and an HTTP streaming server framework, much of
 which is open source.  Much humor will be derived from the
 project's pitfalls, wrong turns, and dead ends.
-</p></i>
+	</p>
+	</i>
 	</td></tr>
 
 <tr valign="top"><td>
