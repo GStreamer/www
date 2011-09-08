@@ -131,7 +131,7 @@
 		<td width="27%">
 			<p>10.00</p>
 		</td>
-		<td width="40%" collspan="2">
+		<td width="40%" colspan="2">
 			<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#muller">GStreamer 0.10.x status report - Tim Muller</a>, Collabora Ltd.</p>
 		</td>
 	</tr>
@@ -177,7 +177,7 @@
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schleef">Broadcast and Web Streaming with GStreamer, David Schleef</a>, Entropy Wave</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#pinochet">GStreamer + Android???</a></p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#pinochet">GStreamer + Android + Androginizer + Telepathy</a></p>
 		</td>
 	</tr>
 
@@ -197,7 +197,7 @@
 		<td width="27%">
 			<p>16.00</p>
 		</td>
-		<td rowspan="2" width="40%">
+		<td width="40%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#swain">Interlacing and telecine in GStreamer - Robert Swain</a>,  Collabora Ltd.</p>
 		</td>
 		<td width="33%" rowspan="2">
