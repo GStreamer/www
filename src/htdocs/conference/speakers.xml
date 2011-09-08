@@ -19,7 +19,7 @@
 	
 	<tr valign="top" bgcolor="#C0C0C0"><td>
 	<a name="taymans" id="taymans"></a>
-	<p><b>Keynote - GStreamer 1.0, Wim Taymans, Collabora Multimedia</b></p>
+	<p><b>Keynote - GStreamer 1.0, Wim Taymans, Collabora</b></p>
 	<p>
 	Wim Taymans is one of the founders of the GStreamer project and the man behind the current GStreamer design. Wim has a long history in the development of multimedia software, starting with computer game development on the Commodore 64. Wim Taymans and is working on assisting Collabora customers with the design and use of GStreamer.
 	</p>
@@ -329,7 +329,7 @@ This talk will cover the current work happening under the banner of Xiph.org, in
 	</td></tr>
 		
 	<tr><td>
-	<p><b>Advanced videowall with GStreamer, Marc Leeman, Barco</b></p>
+	<p><b>Displaying synchronised video, Marc Leeman, Barco</b></p>
 	<a name="leeman" id="leeman"></a>
 	<p>Marc Leeman has been an open source enthousiast since 1997. He has
 a background in electrical engineering where he did research on
@@ -344,23 +344,31 @@ their favourite television shows from the DVB-S Dreambox settop box.
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-Last year, there was a demo on the embedded part of the conference
-where TI panda boards were used to show a movie (blender project) over
-a number of displays (3x2). The same demo was given on FOSDEM. There
-were a number of problems with that demo. First off, the playing was
-done off a file and secondly; the video was far from synchronised;
-which was clearly visible in fast panning scenes. No timing
-information was used, next to 'play and display as fast as possible'.
-This was a custom application based off of the ffmpeg libraries.
-</p>
+In the world of video transmission and video display; synchronised video 
+was often circumvented by having powerfull machines with multi-headed
+graphical cards and custom splitter hardware powering a large number of
+video wall projectors. As a result, a number of these devices could
+drive a video wall of an almost arbitrary size, mostly limited by
+mechanical support structures.</p>
 <p>
-We will be presenting a similar setup with GStreamer that
-shows much better results; allowing full content locking using
-heterogeneous files (e.g. transcoded/black and white, forming one
-large display); fault tolerant (nodes can fall out and come back up.
-</p>
+Unfortunately, the flexibility to move and scale video freely over 
+the wall was limited to the physical box the video was decoded on, and
+when video as crossing the borders of these "macro-tiles", projectors
+driven by a single processing unit; synchronisation could suffer
+as the signal would be decoded on different machines and displayed
+independently. Furthermore, these types of configurations leaned towards
+high end (and expensive) machines.
+</p><p>
+With the advent of low cost powerful embedded devices with proper
+displaying properties; truely flexible display walls can now be built at
+low prices that no longer have these limitations. Using a framework like
+GStreamer that tightly controls the timing information, full content
+locking in the compressed domain can be obtained between different
+machines using heterogeneous files (e.g. transcoded/black and white,
+forming one large display) and in fault tolerant way (nodes can fall
+out and come back up).</p>
 <p>
-We've extended the setup to include the ability to use RTP/RTCP timing
+We've extended the setup to include the ability to use RTP/RTCP timing 
 information with GStreamer to pick video off a readily available RTP
 camera and scale it up a wall over different monitors; guaranteeing
 synchronised display; where the timestamps difference of the decoded
@@ -373,7 +381,7 @@ frames are in the 100-200 us range.
 	<a name="swain" id="swain"></a>
 	<p><b>Interlacing and telecine, Robert Swain, Collabora</b></p>
 	<p>
-Robert Swain is a multimedia software developer with a strong and long-running interest in codecs and processing/transmission of digital audio and video. He learned to program on-the-fly while contributing to open source multimedia software projects including FFmpeg/libav and GStreamer.</p>
+Robert Swain is a multimedia software developer with a strong and long-running interest in codecs and processing/transformation of digital audio and video. He learned to program on-the-fly while contributing to open source multimedia software projects including FFmpeg/libav and GStreamer.</p>
 <p>
 Since joining Collabora in 2009, he has worked on a broad range of topics such as GStreamer as a multimedia backend for Android, progressive download support for common video formats, PiTiVi pipeline optimisations, general camera improvements for Meego and dynamic, automated deinterlacing.
 	</p>

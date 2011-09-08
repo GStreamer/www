@@ -40,7 +40,7 @@
 			<p>09.00</p>
 		</td>
 		<td width="40%" colspan="2">
-		<p align="center">Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#taymans">GStreamer 1.0 - GStreamer maintainer Wim Taymans</a>, Collabora Ltd.</p>
+		<p align="center">Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#taymans">GStreamer 1.0 - GStreamer maintainer Wim Taymans</a>, Collabora</p>
 		</td>
 		
 	</tr>
@@ -96,7 +96,7 @@
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#lespiau">The Media Explorer Media Center - Damien Lespiau</a>, Intel</p>
 		</td>
 		<td WIDTH="33%">
-			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#sparell">GStreamer at Oblong Industries - Carlton Sparell</a>, Oblong Industries</p>
+			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#sparell">GStreamer at Oblong Industries - Carlton J. Sparell</a>, Oblong Industries</p>
 		</td>
 	</tr>
 	
@@ -141,7 +141,7 @@
 			<p>10.00</p>
 		</td>
 		<td width="40%" colspan="2">
-			<p align="center">Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#muller">GStreamer 0.10.x status report - Tim Muller</a>, Collabora Ltd.</p>
+			<p align="center">Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#muller">GStreamer 0.10.x status report - Tim Muller</a>, Collabora</p>
 		</td>
 	</tr>
 
@@ -194,10 +194,10 @@
 		</td>
 		<td width="40%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#droege">A new OpenMax IL integration layer for GStreamer- Sebastian Dröge</a>,
-			Collabora Ltd.</p>
+			Collabora</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#leeman">Advanced videowall with GStreamer - Marc Leeman</a>, Barco</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#leeman">Displaying synchronised video - Marc Leeman</a>, Barco</p>
 		</td>
 	</tr>
 
@@ -206,7 +206,7 @@
 			<p>16.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#swain">Interlacing and telecine in GStreamer - Robert Swain</a>,  Collabora Ltd.</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#swain">Interlacing and telecine in GStreamer - Robert Swain</a>,  Collabora</p>
 		</td>
 		<td width="33%" rowspan="2">
 			<p>Linux Audio BOF – Wim Taymans, Arun Raghavan, Sebastian Droge, Lennart Pottering, Takashi Iwai</p>
@@ -218,7 +218,7 @@
 			<p>16.30</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#debethencourt">The ease of writing a video player in GStreamer - Luis deBethencourt</a>, Collabora Ltd.</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#debethencourt">The ease of writing a video player in GStreamer - Luis deBethencourt</a>, Collabora</p>
 		</td>
 	</tr>
 
