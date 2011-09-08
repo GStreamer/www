@@ -20,7 +20,7 @@
 	<col width="85*" />
 	<tr>
 		<td colspan="3" width="100%" valign="TOP" bgcolor="light blue">
-			<p align="center">Monday 24th of October 2011</p>
+			<p align="center"><font color="white">Monday 24th of October 2011</font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -82,12 +82,10 @@
 		<td width="27%">
 			<p>13.00</p>
 		</td>
-		<td width="40%">
-			<p><b>Lunch</b></p>
+		<td>
+			<p align="center"><b>Lunch</b></p>
 		</td>
-		<td WIDTH="33%">
-			<p><b>Lunch</b></p>
-		</td>
+		
 	</tr>
 
 	<tr valign="top">
@@ -122,7 +120,7 @@
 <!-- DAY 2 -->
 	<tr>
 		<td colspan="3" width="100%" valign="TOP" bgcolor="light blue">
-			<p align="center">Tuesday 25th of October 2011</p>
+			<p align="center"><font color="white">Tuesday 25th of October 2011</font></p>
 		</td>
 	</tr>
 
@@ -176,8 +174,7 @@
 		<td width="27%">
 			<p>13.00</p>
 		</td>
-		<td width="40%"><p>Lunch</p></td>
-		<td width="33%"><p>Lunch</p></td>
+		<td colspan="2"><p align="center">Lunch</p></td>
 	</tr>
 
 	<tr valign="top">
