@@ -32,12 +32,10 @@
 	</tr>
 	<tr valign="top">
 		<td width="27%">
-			<p>09.00 
-			</p>
+			<p>09.00</p>
 		</td>
 		<td width="40%">
-			<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#taymans">
-			GStreamer 1.0 - GStreamer maintainer Wim Taymans</a>, Collabora Ltd.</p>
+		<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#taymans">GStreamer 1.0 - GStreamer maintainer Wim Taymans</a>, Collabora Ltd.</p>
 		</td>
 		<td width="33%">
 			<p>
@@ -50,12 +48,10 @@
 			<p>10.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#sauer">High complexity GStreamer pipelines, Stefan Sauer</a>, Google</p>
+		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#sauer">High complexity GStreamer pipelines, Stefan Sauer</a>, Google</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#emont">
-			Time lapse and stabilizing a sequence of images - Guillame Emont</a>, Igalia</p>
-		</td>
+		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#emont">Time lapse and stabilizing a sequence of images - Guillame Emont</a>, Igalia</p></td>
 	</tr>
 
 	<tr valign="top">
@@ -63,8 +59,7 @@
 			<p>11.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#lundberg">GStreamer, WebKit and HTML5 - Jonas Lundberg</a>,
-			Ericsson</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#lundberg">GStreamer, WebKit and HTML5 - Jonas Lundberg</a>, Ericsson</p>
 		</td>
 		<td width="33%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">Time shifting with GStreamer</a>, Fluendo</p></td>
@@ -72,8 +67,7 @@
 
 	<tr valign="top">
 		<td width="27%">
-			<p>12.00 
-			</p>
+			<p>12.00</p>
 		</td>
 		<td width="40%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#quachio">GStreamer and DASH - Emanuelle Quachio</a>, ST Microelectronics 
@@ -110,7 +104,7 @@
 		<td width="27%">
 		<p>15.00</p>
 		</td>
-		<td rowspan="2" width="40%">
+		<td width="40%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#luther">WebM and VP8 - Latest developments</a>, Google</p>
 		</td>
 		<td width="33%">
@@ -138,13 +132,10 @@
 	</tr>
 	<tr valign="top">
 		<td width="27%">
-			<p>10.00 
-			</p>
+			<p>10.00</p>
 		</td>
 		<td width="40%">
-			<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#muller">
-			GStreamer 0.10.x status report - Tim Muller</a>, Collabora Ltd. 
-			</p>
+			<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#muller">GStreamer 0.10.x status report - Tim Muller</a>, Collabora Ltd.</p>
 		</td>
 		<td width="33%">
 			<p>
@@ -179,11 +170,10 @@
 
 	<tr valign="top">
 		<td width="27%">
-			<p>13.00 
-			</p>
+			<p>13.00</p>
 		</td>
-		<td width="40%">Lunch</td>
-		<td width="33%">Lunch</td>
+		<td width="40%"><p>Lunch</p></td>
+		<td width="33%"><p>Lunch</p></td>
 	</tr>
 
 	<tr valign="top">
@@ -217,7 +207,7 @@
 		<td rowspan="2" width="40%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#swain">Interlacing and telecine in GStreamer - Robert Swain</a>,  Collabora Ltd.</p>
 		</td>
-		<td width="33%">
+		<td width="33%" rowspan="2">
 			<p>Linux Audio BOF – Wim Taymans, Arun Raghavan, Sebastian Droge, Lennart Pottering, Takashi Iwai</p>
 		</td>
 	</tr>
@@ -226,10 +216,9 @@
 		<td width="27%">
 			<p>16.00</p>
 		</td>
-		<td rowspan="2" width="40%">
+		<td width="40%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#debethencourt">The ease of writing a video player in GStreamer - Luis deBethencourt</a>, Collabora Ltd.</p>
 		</td>
-		<td width="33%"><p></p></td>
 	</tr>
 
 	<tr>
