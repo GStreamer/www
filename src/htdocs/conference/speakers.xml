@@ -536,6 +536,29 @@ project's pitfalls, wrong turns, and dead ends.
 
 	</td></tr>
 
+	<tr valign="top"><td>
+	<a name="raghavan" id="raghavan"></a>
+<p><b>Latest developments in Pulse Audio, Arun Raghavan, Collabora</b></p>
+<p>
+Arun Raghavan is a long-time open source supporter and contributor. He
+hacks on PulseAudio and GStreamer at Collabora. He also wrote large
+parts of the gupnp-dlna library, and is a developer on the Gentoo Linux
+distribution.</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+Support for passthrough audio has been on the GStreamer wanted list for
+a while now, to enable streaming AC3/DTS audio to A/V receivers over
+S/PDIF or HDMI. Over the last few months, we've managed to get this done
+with modifications to PulseAudio and GStreamer. The same infrastructure
+is also used for streaming compressed audio to Bluetooth headsets and
+potentially hardware decoder blocks on embedded SoCs.</p>
+<p>
+This talk will cover the broad problem, the challenges involved, and the
+approach we took to make passthrough audio support on Linux awesome.
+</p>
+	</i>
+
 </table>
 
 </body>

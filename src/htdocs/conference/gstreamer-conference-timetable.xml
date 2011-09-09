@@ -183,7 +183,7 @@
 			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#schleef">Broadcast and Web Streaming with GStreamer, David Schleef</a>, Entropy Wave</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#soliverez">GStreamer, Telepathy and Android the easy way, Alvaro Soliverez</a>, Collabora</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#soliverez">GStreamer, Telepathy and Android the easy way, Alvaro Soliverez and Reynaldo Pinochet</a>, Collabora</p>
 		</td>
 	</tr>
 
@@ -208,7 +208,7 @@
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#swain">Interlacing and telecine in GStreamer - Robert Swain</a>,  Collabora</p>
 		</td>
 		<td width="33%" rowspan="2">
-			<p>Linux Audio BOF – Wim Taymans, Arun Raghavan, Sebastian Droge, Lennart Pottering, Takashi Iwai</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#raghavan">Latest developments in Pulse Audio, Arun Raghavan</a>, Collabora</p>
 		</td>
 	</tr>
 	
