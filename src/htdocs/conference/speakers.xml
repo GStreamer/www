@@ -288,7 +288,7 @@ worked in IT since 1997 and in free software  since 2007. For the last he has
 worked for multinational customers in Java, C++, and Qt software development.
 He is 33 years old and lives in Buenos Aires, Argentina, with his wife and 
 daughter.</p>
-<i>
+	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
 Show the work involved to port GStreamer and Telepathy to the Android 
@@ -558,7 +558,7 @@ This talk will cover the broad problem, the challenges involved, and the
 approach we took to make passthrough audio support on Linux awesome.
 </p>
 	</i>
-
+</td></tr>
 </table>
 
 </body>
