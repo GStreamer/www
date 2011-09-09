@@ -8,7 +8,19 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
   <title>GStreamer Conference 2010 Program </title>
+<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24904872-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 <body lang="en-US" dir="LTR">
 
 <h1>GStreamer Conference 2011</h1>
@@ -96,7 +108,7 @@
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#lespiau">The Media Explorer Media Center - Damien Lespiau</a>, Intel</p>
 		</td>
 		<td WIDTH="33%">
-			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#sparell">GStreamer at Oblong Industries - Carlton J. Sparell</a>, Oblong Industries</p>
+			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#sparrell">GStreamer at Oblong Industries - Carlton J. Sparrell</a>, Oblong Industries</p>
 		</td>
 	</tr>
 	
@@ -184,7 +196,7 @@
 			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#schleef">Broadcast and Web Streaming with GStreamer, David Schleef</a>, Entropy Wave</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#pinochet">GStreamer + Android + Androginizer + Telepathy</a></p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#soliverez">GStreamer, Telepathy and Android the easy way, Alvaro Soliverez, Collabora</a></p>
 		</td>
 	</tr>
 
