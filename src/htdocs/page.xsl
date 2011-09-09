@@ -51,6 +51,17 @@
     <link rel="shortcut icon" href="&site;/images/favicon.png" />
     <link rel="alternate" type="application/rss+xml" title="GStreamer Project News" href="&site;/news/rss-1.0.xml" />
     <title><xsl:copy-of select="$title" /></title>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-24904872-1']);
+          _gaq.push(['_trackPageview']);
+
+  (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+                </script>
   </head>
   <body bgcolor="#FFFFFF" text="#000000"
         link="#3399CC" vlink="#551A8B" alink="#FF0000" leftmargin="0"
