@@ -70,9 +70,8 @@ components (e.g. codecs) and use platform input/output mechanisms:<ul>
     Autoplugging uses
     capabilities system to complete complex paths automatically</li>
   <li>
-    Pipelines can be saved to
-    <a href="&site;/data/doc/gstreamer/head/manual/html/chapter-xml.html">
-    XML</a> and loaded back to working state
+    Pipelines can be visualised by dumping them to a .dot file and creating a
+    PNG image from that
   </li>
   <li>Resource friendly plugins don't waste memory</li>
 </ul>
@@ -84,7 +83,7 @@ components (e.g. codecs) and use platform input/output mechanisms:<ul>
   GStreamers own plugins, not counting any 3rd party offerings.
 </para>
 <ul>
-  <li>container formats: asf, avi, 3gp/mp4/mov, flv, mpeg-ps/ts, mkv, mxf, ogg</li>
+  <li>container formats: asf, avi, 3gp/mp4/mov, flv, mpeg-ps/ts, mkv/webm, mxf, ogg</li>
   <li>streaming: http, mms, rtsp</li>
   <li>codecs: FFmpeg, various codec libraries, 3rd party codec packs</li>
   <li>metadata: native container formats with a common mapping between them</li>
@@ -108,10 +107,6 @@ components (e.g. codecs) and use platform input/output mechanisms:<ul>
   </li>
   <li>Large selection of test programs and example code in each module</li>
   <li>Access to GStreamer API with <a href="&site;/bindings/">various programming languages</a></li>
-  <li>
-    <a href="&site;/modules/gst-editor.html">Graphical editor</a> allows pipelines to be
-    built quickly, run, and saved as XML
-  </li>
 </ul>
 
 <p>GStreamer 0.10 series API is stable since 2005.</p>
