@@ -533,7 +533,7 @@ project's pitfalls, wrong turns, and dead ends.
 
 <tr valign="top"><td>
 	<a name="burks" id="burks"></a>
-	<p><b>GStreamer for Engineering Video Processing Applications, Joshua Doe and Stephen Burks, US Army NVESD</b></p>
+	<p><b>GStreamer for Engineering Video Processing Applications, Joshua Doe and Stephen Burks, US Army RDECOM CERDEC NVESD</b></p>
 	<p>
 Stephen D. Burks received the B.S. degree in physics from Emory
 University, Atlanta, GA, in 2000 and the M.S. degrees in physics,
@@ -576,15 +576,15 @@ distribution.</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-Support for passthrough audio has been on the GStreamer wanted list for
-a while now, to enable streaming AC3/DTS audio to A/V receivers over
-S/PDIF or HDMI. Over the last few months, we've managed to get this done
-with modifications to PulseAudio and GStreamer. The same infrastructure
-is also used for streaming compressed audio to Bluetooth headsets and
-potentially hardware decoder blocks on embedded SoCs.</p>
-<p>
-This talk will cover the broad problem, the challenges involved, and the
-approach we took to make passthrough audio support on Linux awesome.
+The last year has seen several interesting developments in the world
+of PulseAudio. A 1.0 release is around the corner, bringing a large
+number of features and bug fixes. This talk will cover an overview of
+the new features and improvements that are on the horizon.
+</p><p>
+In particular, I will cover passthrough support that was recently
+added to PulseAudio and the corresponding changes that were made in
+GStreamer to make for a (nearly) seamless passthrough experience on
+the desktop.
 </p>
 	</i>
 </td></tr>
