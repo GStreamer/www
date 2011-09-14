@@ -112,8 +112,10 @@ integration with OpenGL.
 
 	<tr valign="top"><td>
 	<a name="luther" id="luther"></a>
-	<p><b>WebM and VP8 latest developments , John Luther, Google</b></p>
+	<p><b>WebM and VP8 latest developments , John Luther and Matt Frost, Google</b></p>
 	<p>John Luther is Product Manager at the WebM Project. Prior to WebM, he was VP of Product Management at On2 Technologies, an early developer of video compression technology and creators of VP3, the codec that formed the basis for Ogg Theroa.</p>
+	<p>
+Matt Frost is Senior Business Product Manager at Google. Prior to joining Google, he was CEO at On2 Technologies.</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
@@ -531,9 +533,36 @@ project's pitfalls, wrong turns, and dead ends.
 
 <tr valign="top"><td>
 	<a name="burks" id="burks"></a>
-	<p><b>GStreamer for Engineering Video Processing Applications, Joshua Doe and Stephen Burks, US Army</b></p>
-	<p></p>
-
+	<p><b>GStreamer for Engineering Video Processing Applications, Joshua Doe and Stephen Burks, US Army NVESD</b></p>
+	<p>
+Stephen D. Burks received the B.S. degree in physics from Emory
+University, Atlanta, GA, in 2000 and the M.S. degrees in physics,
+electrical and computer engineering, and public policy, respectively,
+from the Georgia Institute of Technology, Atlanta, GA, in 2002, 2002,
+and 2004, respectively. He is currently the Team Leader of the
+Advanced Sensor Evaluation Facility (ASEF) at the U.S. Army Night
+Vision and Electronic Sensors Directorate, Fort Belvoir, VA. During
+his time as the leader of the ASEF, he has measured and characterized
+the performance of over 500 mid-wave and long-wave thermal imaging
+systems. His research interests include novel thermal imaging systems,
+image fusion, and thermal sensor performance model development.
+</p><p>
+Joshua M. Doe received the B.S degree in physics from the University
+of Virginia, Charlottesville, VA in 2005 and is nearing completion of
+the requirements for the Masters degree in electrical engineering from
+the Catholic University of America, Washington, DC. Since 2005 he has
+been working at the U.S. Army RDECOM CERDEC NVESD, Fort Belvoir, VA,
+as a computer programmer.
+</p>
+<i>
+	<p><b>Talk Abstract</b></p>
+	<p>
+At NVESD we work with sensors and often have a need to capture,
+process, and analyze information from them. We have found that
+GStreamer is well suited for solving many of our requirements. Stephen
+Burks will discuss our motivations and approach.
+	</p>	
+	</i>
 	</td></tr>
 
 	<tr valign="top"><td>

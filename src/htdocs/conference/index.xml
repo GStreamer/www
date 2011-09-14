@@ -10,19 +10,21 @@
   <title>GStreamer Conference 2011</title>
 
   <body>
+<table>
+<tr><td>
 <h1>GStreamer Conference 2011</h1>
 <h2>October 24 - 25, 2011 · Clarion Congress Hotel · Prague, Czech Republic</h2>
 <h2></h2>
 <p>
 After a successful launch last year in Cambridge, UK, we are very happy to invite everyone to the
 second annual GStreamer Conference. This year we will be co-hosting with the <a href="http://events.linuxfoundation.org/events/linux-kernel-summit">
-Linux Kernel Summit</a> and hold the event at the Clarion Congress Hotel in Prague, Czech Republic. Speakers from a wide range of companies and 
-fields will attend to speak about available GStreamer technologies and future developments, including the release of GStreamer 1.0 which is scheduled
-to happen not long after the conference.
+Linux Kernel Summit</a> and hold the event at the Clarion Congress Hotel in Prague, Czech Republic. 
+</p>
+This year we decided to broaden the scope a bit for the GStreamer Conference, by including talks from a wide range of related projects and technologies. This means that this year in addition to a lot of great talks about GStreamer you can also learn about latest developments with the WebM format, whats new in Pulse Audio and a lot more.
 </p>
 <p>
-The talks hosted will cover a range of technologies built around GStreamer aimed at embedded,
-desktop and server usage. There will also be a presentation on the plans for the GStreamer 1.0 release.
+The lead keynote event this year will be GStreamer maintainer Wim Taymans talking about GStreamer 1.0, which will be out before the end of the year. This event will be your best chance to hear about whats new in GStreamer 1.0 and what advantages it will offer your application and product.
+</p>
 </p>
 <h2>Technologies covered</h2>
 <p>
@@ -35,25 +37,43 @@ We have a long list of topics to be presented like:
 <li>Pulse Audio development report</li>
 <li>Designing complex pipelines with GStreamer</li>
 <li>Blu-ray playback and GStreamer</li>
-<li>GStreamer and WebOS</li>
 <li>Updates on latest Xiph.org and Vorbis developments</li>
 <li>GStreamer, Webkit and HTML5</li>
-<li>Case studies on GStreamer product deployments</li>
+<li>Case studies on GStreamer deployments</li>
 </ul>
+</td>
+<td valign="top">
+<h1>Platinum Sponsor</h1>
+<p>
+<a href="http://www.collabora.com"><img src="sponsor_150x49_collabora.png" alt="Collabora" height="49" width="150" /></a>
+</p>
+<h2>Silver Sponsors</h2>
+<p>
+<a href="http://www.fluendo.com"><img src="sponsor_149x36_fluendo.png" alt="Fluendo" height="36" width="149" /></a>
+</p>
+<p>
+<a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
+</p>
+<h2>Special Media Partners</h2>
+<p>
+<a href="http://www.ubicast.eu/"><img src="sponsor_150x45_UbiCast.png" alt="Ubi Cast" height="45" width="150" /></a>
+</p>
+<p>
+<small>
+Interested in <a href="http://gstreamer.freedesktop.org/conference/2011/gstreamer-sponsor.pdf">becoming a sponsor?</a></small>
+</p>
+</td></tr>
+</table>
 <h2>Registration</h2>
 <p>
 Registration is now open and you can take advantage of our early bird rebate by registring on <a href="http://www.regonline.com/Register/Checkin.aspx?EventID=977251">
-the GStreamer 2011 registration page</a> provided by regonline and the Linux Foundation. There is a special early bird fee if you register
-before 24th of September.
+the GStreamer 2011 registration page</a> provided by regonline and the Linux Foundation. There is a special early bird fee if you register before 24th of September.
 </p>
-<h2>Call for Papers</h2>
+<h2>Full Program</h2>
 <p>
-The call for papers is closed for this year and we are in the process of selecting the program. We hope to have the conference program online soon.
+We have the <a href="gstreamer-conference-timetable.html">full schedule for the online</a> now for the conference, including <a href="speakers.html"> abstracts and speaker biographies</a>. 
 </p>
-<h2>Sponsorship</h2>
-<p>
-If you are interested in sponsoring this years GStreamer conference please take a look at the <a href="http://gstreamer.freedesktop.org/conference/2011/gstreamer-sponsor.pdf">GStreamer Conference 2011 sponsorship leaflet</a>.
-</p>
+
 <h2>Who Should Join?</h2>
 <p>
 Anyone interested in open source multimedia is encouraged to join us at the GStreamer Conference 2011.
