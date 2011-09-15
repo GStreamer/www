@@ -337,7 +337,14 @@ software vendor Red Hat where he works on open desktop media software.
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-This talk will cover the current work happening under the banner of Xiph.org, including the development of a new voice codec to be standardized by the IETF, and improvements to existing codec technologies. It will also talk about how the entrance of Google into the free codec space has changed the market dynamics. 
+Xiph.Org is heavily involved in the current generation of Free
+media, notably Ogg, Vorbis and now WebM and the new Opus codec.
+In this talk we'll look at the upcoming generation of Xiph codecs
+such as Opus, as well as where things currently stand with
+current generation codecs such as Vorbis and WebM.  We'll also
+discuss the equally important non-technical road map including
+continued work within the IETF and strategy concerning the
+brewing Patent Apocalypse.
 	</p>
 	</i>
 	</td></tr>
