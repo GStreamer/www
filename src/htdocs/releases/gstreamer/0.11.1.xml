@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>Sweet New Blossom</name>
+  <version>0.11.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.11.x unstable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.11.x series is an unstable series targeted at developers
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series.
+</p>
+<p>
+The 0.11.x series has improved memory management and features
+various cleanups and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.10.x series</feature>
+    <feature>Remove negotiation from state change in GstBaseSrc</feature>
+    <feature>Removed our custom FOURCC type</feature>
+    <feature>Updates to the base classes</feature>
+  </features>
+
+  <applications>
+<p>
+No applications are ported to 0.11 as of yet. We are looking for more people to
+port plugins and applications.
+</p>
+  </applications>
+
+      <contributors>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Fabrizio (Misto) Milo</person>
+	<person>Guillaume Desmottes</person>
+	<person>Josep Torra</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Nicolas Dufresne</person>
+	<person>Peteris Krisjanis</person>
+	<person>Piotr Fusik</person>
+	<person>Raimo Järvi</person>
+	<person>Sebastian Dröge</person>
+	<person>Shaun Hoopes</person>
+	<person>Sjoerd Simons</person>
+	<person>Stas Sergeev</person>
+	<person>Stefan Kost</person>
+	<person>Stefan Sauer</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+  </bugs>
+</release>
