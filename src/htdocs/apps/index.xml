@@ -23,8 +23,7 @@
 <h2>amaroK</h2>
 <p><a href="http://amarok.kde.org/">amaroK</a> is an audio player for KDE.</p>
 
-<h2>avisynth 3.0</h2>
-<p><a href="http://www.avisynth.org/AviSynth30">Avisynth 3.0</a> is a powerful video frameserver.</p> 
+
 
 <h2>Advene</h2>
 <p><a href="http://liris.cnrs.fr/advene/">Advene</a>
@@ -33,44 +32,22 @@ a format to share annotations about digital video documents (movies, courses,
 conferences...), as well as tools to edit and visualize the hypervideos
 generated from both the annotations and the audiovisual documents.</p>
 
+<h2>Arista</h2>
+<p><a href="http://www.transcoder.org/">Arista Transcoder</a> is an easy to
+use transcoder application.</p>
+
 <h2>Audition</h2>
 <p><a href="http://www.rillion.net/audition/index.html">Audition</a>
 Audition is an ncurses-based audio player for the console.</p>
 
 <h2>Banshee</h2>
 <p><a href="http://banshee-project.org/Main_Page">Banshee</a> is a music player for GNOME using Mono</p>
-
-<h2>Boxtream</h2>
-<p><a href="http://boxtream.unice.fr/">Boxtream</a> is a hardware and software
-project forming a mobile and autonomous video streaming and recording studio.
-It's an all in one assembly which may look similar to Newtek's Tricaster or
-Sony's Anycast, but running on entirely Free Software and open hardware, it is
-both easily extensible and simplifiable depending on your needs and your
-wealthiness to purchase hardware bricks.
-</p>
-
-<h2>BMPx</h2>
-<p><a href="http://bmpx.backtrace.info/site/BMPx_Homepage">BMPx</a> is a music player using GTK+ with a 'Winamp' like interface</p>
-
+	
 <h2>Buzztard</h2>
 <p><a href="http://buzztard.org/index.php/Overview">Buzztard</a> is music application similar to Buzz or FastTracker.</p>
 
-<h2>CampCaster</h2>
-<p><a href="http://www.campware.org/en/camp/campcaster_news/">CampCaster</a> is radio management software that provides live studio broadcast capabilities as well as remote automation in one integrated system.</p>
-
-
-<h2>Cupid</h2>
-<p>
-<a href="http://ronald.bitfreak.net/cupid.php">A GStreamer video Recorder</a>,
-which is currently under development and will be able to record perfectly synchronized audio/video
-in any format supported by GStreamer.</p>
-
-<h2>The Dave/Dina Project</h2>
-<p><a href="http://www.davedina.org/content/">The Dave/Dina Project</a> is a set-top box distribution for playing and recording TV and multimedia and much more.</p>
-
-<h2>Dissent</h2>
-<p><a href="http://dissent-project.org/">Dissent</a> is a audio and video player
- written in C# and GTK+.</p>
+<h2>AirTime&amp;CampCaster</h2>
+<p><a href="http://code.sourcefabric.org/projects">AirTime&amp;CampCaster</a> is radio management software that provides live studio broadcast capabilities as well as remote automation in one integrated system.</p>
 
 <h2>dmapd</h2>
 <p><a href="http://www.flyn.org/projects/dmapd/">dmapd</a> is a media server that implements
@@ -78,26 +55,25 @@ Apple's DAAP and DPAP protocols. Dmapd can share content with Apple iTunes,
 Apple iPhoto, Roku's SoundBridge products, Rhythmbox, etc. dmapd uses GStreamer
 to read media metadata and perform real-time transcoding of audio formats</p>
 
-<h2>Elisa</h2>
-<p><a href="http://www.fluendo.com/elisa">Elisa</a> is a OpenGL based cross-platform media center solution.</p>
 
 <h2>Eina</h2>
 <p><a href="http://eina.sourceforge.net/">Eina</a> is a traditional audio player with a GTK2 interface.</p>
 
-<h2>Exaile</h2>
-<p><a href="http://www.exaile.org/trac">Exaile</a> is a audio player for GNOME supporting a wide range of features. Its GUI and featureset is similar to that of the Amarok music player.</p>
+<h2>Empathy</h2>
+<p><a href="https://live.gnome.org/Empathy">Empathy</a> is a messaging client with
+ VoIP and Video conferencing support.</p>
 
 <h2>Flumotion</h2>
-<p><a href="http://www.fluendo.com">Flumotion</a> is a distributed streaming media server</p>
+<p><a href="http://www.fluendo.com">Flumotion</a> is a distributed streaming media server.</p>
 
-<h2>FUPlayer</h2>
-<p><a href="http://fuplayer.org/">FUPlayer</a> GNOME Media player written in Python.</p>
+<h2>Freemix</h2>
+<p><a href="http://freemix.forja.rediris.es/">Fremix</a> is a live video performance application.</p>
 
 <h2>Gamp</h2>
-<p><a href="http://gamp.sourceforge.net/">Gamp</a> is a GNOME based media player</p>
+<p><a href="http://gamp.sourceforge.net/">Gamp</a> is a GNOME based media player.</p>
 
 <h2>Geekcast</h2>
-<p><a href="http://home.gna.org/geekast/">Geekast</a> is a GNOME P2P streaming client writen in Ruby</p>
+<p><a href="http://home.gna.org/geekast/">Geekast</a> is a GNOME P2P streaming client writen in Ruby.</p>
 
 <h2>GEntrans</h2>
 <p><a href="http://gentrans.sourceforge.net/">GEntrans</a> provides a gst-python based command-line transcoding application,
@@ -107,8 +83,9 @@ In particular, it can serve as an enhanced gst-launch alternative.</p>
 <h2>Gnash</h2>
 <p><a href="http://gnashdev.org/">Gnash</a> is the GNU Flash movie player, which can be run standalone on the desktop or an embedded device, as well as as a plugin for several browsers.</p>
 
-<h2>GNOME Media</h2>
-<p><a href="http://ronald.bitfreak.net/gnome-media.php">GNOME Media</a> uses GStreamer for the volume control, sound recorder and cd player.</p>
+<h2>GNOME DVB Daemon</h2>
+<p><a href="https://live.gnome.org/DVBDaemon">DVBDaemon</a> is a daemon that lets you watch 
+DVB streams and check out the EPG.</p>
 
 <h2>GNOME Subtitles</h2>
 <p><a href="http://gnome-subtitles.sourceforge.net">GNOME Subtitles</a>
@@ -121,37 +98,22 @@ synchronization.  It uses GStreamer for the video playback.
 <p><a href="http://gmrender.nongnu.org/">GMediaRender</a> is a upnp client for 
 use with upnp media servers</p>
 
-<h2>Goobox</h2>
-<p><a href="http://www.gnomefiles.org/app.php?soft_id=531">Goobox</a> is a GNOME based cd-player and ripper</p>
-
-<h2>GStreamer Editor</h2>
-<p>A graphical pipeline contruction interface called
-<a href="&site;/modules/gst-editor.html">GStreamer Editor</a>.</p>
-
 <h2>Istanbul</h2>
 <p><a href="http://live.gnome.org/Istanbul">Istanbul</a> is a screen recorder
 </p>
 
-<h2>iStream</h2>
-<p><a href="http://gnomefiles.org/app.php/iStream">iStream</a> is a GNOME
-panel applet for playing internet radio streams.
-</p>
-
-<h2>Jamboree</h2>
-<p><a href="http://www.imendio.com/projects/jamboree/">Jamboree</a> is a GNOME based music player developed by Imendio.</p>
-
 <h2>Jokosher</h2>
-<p><a href="http://www.jokosher.org/">Jokosher</a> is a multitrack music editori
+<p><a href="http://www.jokosher.org/">Jokosher</a> is a multitrack music editor
 </p>
 
 <h2>JuK</h2>
 <p><a href="http://developer.kde.org/~wheeler/juk.html">JuK</a> is an audio jukebox for KDE.</p>
 
 <h2>Kaffeine</h2>
-<p><a href="http://kaffeine.sourceforge.net/">Kaffeine</a> is a KDE based media player</p>
+<p><a href="http://kaffeine.sourceforge.net/">Kaffeine</a> is a KDE based media player.</p>
 
-<h2>Lindele</h2>
-<p><a href="https://gna.org/projects/lindele">Lindele</a> is a GNOME based music player</p>
+<h2>Landell</h2>
+<p><a href="http://landell.holoscopio.com/">Landell</a> is an audio and video streaming server.</p>.
 
 <h2>Listen</h2>
 <p><a href="http://listengnome.free.fr/">Listen</a> is a GNOME music player written in Python</p>
@@ -166,8 +128,6 @@ sports video analysis tool based on Mono, Gtk+ and GStreamer.</p>
 <h2>Minirok</h2>
 <p><a href="http://chistera.yi.org/~adeodato/code/minirok/">Minirok</a> is a small music player for KDE/Qt.</p>
 
-<h2>MMS</h2>
-<p><a href="http://mms.sunsite.dk/">MMS</a> or My Media System is a media center style application.</p>
 
 <h2>Monkey Bubble</h2>
 <p><a href="http://home.gna.org/monkeybubble/">Monkey Bubble</a> a fun and cool game for GNOME using GStreamer to play some funky music and sweet sound effects.</p>
@@ -185,6 +145,10 @@ sports video analysis tool based on Mono, Gtk+ and GStreamer.</p>
 <p><a href="http://subsignal.org/pakt/">Pakt</a> is a XML abstraction for GObjects used 
 with GStreamer to monitor and change elements parameters and pipeline structures.</p>
 
+<h2>Parole</h2>
+<p><a href="http://goodies.xfce.org/projects/applications/parole">Parole</a> is a video player made
+to integrate well with the XFCE desktop.</p>
+
 <h2>Pitivi</h2>
 <p><a href="http://www.pitivi.org/">Pitivi</a>
 is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin non-linear video editing library.
@@ -197,22 +161,20 @@ is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin no
 <p><a href="http://www.rhythmbox.org/">Rhythmbox</a> is an integrated music management application, originally inspired by Apple's iTunes.
 </p>
 
+<h2>Rygel</h2>
+<p><a href="https://live.gnome.org/Rygel">Rygel</a> is a DLNA streaming server and renderer.</p>
+
 <h2>Scenic</h2>
 <p><a href="http://scenic.sat.qc.ca/">Scenic</a> is a web-based telepresence application for venues and live performance. It is part of the PropulseART  project. Scenic's features include remote operation, multi-channel audio and serial transmission.</p>
-
-<h2>Serpentine</h2>
-<p><a href="http://s1x.homelinux.net/projects/serpentine/">Serpentine</a> is a GNOME Audio cd recorder</p>
 
 <h2>Songbird</h2>
 <p><a href="http://www.songbirdnest.com/">Songbird</a> is a cross-platform media player written using the XUL toolkit from Mozilla.</p>
 <h2>Sound Converter</h2>
-<p><a href="http://soundconverter.berlios.de/">Sound Converter</a> Small GNOME based sound conversion application.</p>
+
+<p><a href="http://soundconverter.org/">Sound Converter</a> Small GNOME based sound conversion application.</p>
 
 <h2>Sound Juicer</h2>
 <p><a href="http://www.burtonini.com/blog/computers/sound-juicer">Sound Juicer</a> is a clean, mean, and lean CD ripper for GNOME.</p>
-
-<h2>SoundScrape</h2>
-<p><a href="http://ambient.2y.net/soundscrape/">SoundScrape</a> is a modular audio synthesizer with built in GUILE scriptability.</p>
 
 <h2>Togra</h2>
 <p><a href="http://togra.sourceforge.net/">Togra</a> is a 3D multimedia framework</p>
@@ -222,14 +184,15 @@ is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin no
 </p>
 
 <h2>Totem</h2>
-<p><a href="http://hadess.net/totem.php3">Totem</a> is a movie player for the GNOME desktop.
+<p><a href="http://projects.gnome.org/totem/">Totem</a> is a movie player for the GNOME desktop.
 </p>
 
 <h2>Towel</h2>
 <p><a href="http://towel.sourceforge.net/">Towel</a> is a GTKMM based music player.</p>
 
-<h2>WaveMixer</h2>
-<p><a href="http://wavemixer.sourceforge.net/">WaveMixer</a> is a multitrack sound editor written with gtkmm and GStreamer.</p>
+<h2>Transmageddon</h2>
+<p><a href="http://www.linuxrising.org">Transmageddon</a> is a GTK based Video and Audio Transcoder
+and remuxer</p>
 
 <h2>Wechselspieler</h2> 
 <p><a href="http://wechselspieler.sourceforge.net/">Wechselspieler</a> is an 
