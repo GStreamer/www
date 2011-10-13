@@ -547,36 +547,44 @@ project's pitfalls, wrong turns, and dead ends.
 	</td></tr>
 
 <tr valign="top"><td>
-	<a name="burks" id="burks"></a>
-	<p><b>GStreamer for Engineering Video Processing Applications, Joshua Doe and Stephen Burks, US Army RDECOM CERDEC NVESD</b></p>
+	<a name="stichele" id="stichele"></a>
+	<p><b>An overview of the Flumotion Streaming Server</b></p>
 	<p>
-Stephen D. Burks received the B.S. degree in physics from Emory
-University, Atlanta, GA, in 2000 and the M.S. degrees in physics,
-electrical and computer engineering, and public policy, respectively,
-from the Georgia Institute of Technology, Atlanta, GA, in 2002, 2002,
-and 2004, respectively. He is currently the Team Leader of the
-Advanced Sensor Evaluation Facility (ASEF) at the U.S. Army Night
-Vision and Electronic Sensors Directorate, Fort Belvoir, VA. During
-his time as the leader of the ASEF, he has measured and characterized
-the performance of over 500 mid-wave and long-wave thermal imaging
-systems. His research interests include novel thermal imaging systems,
-image fusion, and thermal sensor performance model development.
+Thomas Vander Stichele is CTO of Flumotion.  Thomas graduated as
+electro-technical engineer in communications technology at the university
+of Gent, Belgium.  In his spare time at university, he helped start the
+university's radio station, which went on to be one of the first online radios
+in Europe.
 </p><p>
-Joshua M. Doe received the B.S degree in physics from the University
-of Virginia, Charlottesville, VA in 2005 and is nearing completion of
-the requirements for the Masters degree in electrical engineering from
-the Catholic University of America, Washington, DC. Since 2005 he has
-been working at the U.S. Army RDECOM CERDEC NVESD, Fort Belvoir, VA,
-as a computer programmer.
-</p>
+After that, he helped start one of the two first commercial national radio
+stations in Belgium, while in his spare time discovering and contributing to
+numerous open source projects, like the GNOME desktop, GStreamer, the
+Fedora distribution, ...
+</p><p>
+In 2004 he co-founded the Fluendo Group with Julien Moutte and Pascal
+Pegaz-Paquet, to take GStreamer to a professional level and build products
+and services around it.  As part of this group, Flumotion was developed
+and then spun off as a separate company.
+	</p>
 <i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-At NVESD we work with sensors and often have a need to capture,
-process, and analyze information from them. We have found that
-GStreamer is well suited for solving many of our requirements. Stephen
-Burks will discuss our motivations and approach.
-	</p>	
+Flumotion is an LGPL streaming media server written in Python. It is distributed
+and component-based: every step in the streaming process (production,
+conversion, consumption) can be run inside a separate process on separate
+machines.</p>
+<p>
+Flumotion uses Twisted and GStreamer. Twisted enables the high-level
+functionality, distributing components over the network. GStreamer, through the
+Python bindings, enables the high-speed low-level functionality: actual media
+processing.
+</p>
+<p>
+Flumotion can capture from a wide array of sources and devices, encode into
+multiple formats at the same time, combine source signals in various ways, and
+even do live transcoding.
+</p>
+	
 	</i>
 	</td></tr>
 
