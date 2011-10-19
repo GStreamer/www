@@ -167,7 +167,7 @@ pictures getting transformed into a smooth video.
 	
 	<tr valign="top"><td>
 	<a name="torra" id="torra"></a>
-	<p><b>Timeshifting with GStreamer, Jossep Torra, Fluendo</b></p>
+	<p><b>Timeshifting with GStreamer, Josep Torra, Fluendo</b></p>
 	<p>
 	Josep Torra holds a Computer Engineering degree from the Open University of Catalonia (UOC), Catalonia, Spain. He joined Fluendo as senior developer and became a part of the codec development team for embedded systems in 2006. He currently works as a Technical Lead for the team developing codecs and multimedia related projects in a wide range of platforms, from desktop to embedded systems. Embedded Linux development, HW accelerated decoders, and performance optimization techniques are of special interest for Josep. He is also a developer on the GStreamer project.
 	</p>
