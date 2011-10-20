@@ -303,6 +303,8 @@
     <component>gst-python</component>
     <milestones>
       <milestone>HEAD</milestone>
+      <milestone>0.10.22</milestone>
+      <milestone>0.10.21</milestone>
       <milestone>0.10.20</milestone>
       <milestone>0.10.19</milestone>
       <milestone>0.10.18</milestone>
