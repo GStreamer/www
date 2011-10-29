@@ -6,7 +6,7 @@
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.12">
 <!ENTITY gst-openmax-version-stable "0.10.1">
-<!ENTITY gst-python-version-stable "0.10.21">
+<!ENTITY gst-python-version-stable "0.10.22">
 <!ENTITY gstreamer-sharp-version-stable "0.9.2">
 <!ENTITY gst-plugins-gl-version-stable "0.10.2">
 <!ENTITY gst-rtsp-server-version-stable "0.10.8">
