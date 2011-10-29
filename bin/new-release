@@ -198,6 +198,9 @@ git add $release.xml
 echo "Building website"
 make
 
+# if the next line causes problems for you, you are not building the
+# web site as per the README/HACKING file with different src/build dir
+release=htdocs/releases/$module/$version
 echo "Copying RELEASE"
 cp $release $moduledir/RELEASE || {
   echo "Error copying $release $moduledir/RELEASE."
