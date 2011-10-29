@@ -4270,4 +4270,24 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2011-10-29 18:00</date>
+    <title>GStreamer Python Bindings 0.10.22 stable releases</title>
+<content>
+<p>
+The GStreamer team announces a new release of the GStreamer Python Bindings
+module for the 0.10 GStreamer stable release series. This is primarily a
+bug-fix release that fixes issues with pad probes and
+encoding profiles/encodebin.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gst-python/0.10.22.html">gst-python</a>,
+or download tarballs for
+<a href="&site;/src/gst-python/gst-python-0.10.22.tar.bz2">gst-python</a>
+directly.
+    </p>
+    </content>
+  </item>
+
 </news>

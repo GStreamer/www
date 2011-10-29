@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name>Ninety Tons of Thunder</name>
+  <version>0.10.22</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Python Bindings.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+</p>
+
+  </intro>
+  <features>
+    <feature>pad probes working properly with recent GStreamer</feature>
+    <feature>fixes for encoding profiles and encodebin</feature>
+    <feature>build fixes</feature>
+    <feature>install pygst.h, pygstminiobject.h and other headers so they can be used by other python bindings such the ones for gstreamer-editing-services</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+          <contributors>
+	<person>Andoni Morales Alastruey</person>
+	<person>Arun Raghavan</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Luis de Bethencourt</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Kost</person>
+	<person>Stefan Sauer</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>587432</id>
+      <summary>Update .defs for changed API</summary>
+    </bug>
+    <bug>
+      <id>639421</id>
+      <summary>remuxer.py: do not crash when clicking open without having selected a file</summary>
+    </bug>
+    <bug>
+      <id>639423</id>
+      <summary>remuxer.py: list files named *.og[gvax], not only *.ogg</summary>
+    </bug>
+    <bug>
+      <id>639427</id>
+      <summary>remuxer.py: allow more than one stream of the same type</summary>
+    </bug>
+    <bug>
+      <id>640207</id>
+      <summary>Fix make check when locale is not the default one</summary>
+    </bug>
+    <bug>
+      <id>640341</id>
+      <summary>gst-python 0.10.21 does not compile</summary>
+    </bug>
+    <bug>
+      <id>640410</id>
+      <summary>codegen: Respect ignore-type for miniobjects</summary>
+    </bug>
+    <bug>
+      <id>640837</id>
+      <summary>GStreamer-python fails to build</summary>
+    </bug>
+    <bug>
+      <id>649227</id>
+      <summary>[python] Check for Py_None when setting a miniobject</summary>
+    </bug>
+    <bug>
+      <id>650986</id>
+      <summary>[gst-python] Fix overrides of pad probes</summary>
+    </bug>
+    <bug>
+      <id>650987</id>
+      <summary>0.10.34 gstreamer has pad_probe counting issues</summary>
+    </bug>
+    <bug>
+      <id>656289</id>
+      <summary>We should be able to reuse (Py)GstMiniObject and its subclasses from outside of pygst</summary>
+    </bug>
+    <bug>
+      <id>657435</id>
+      <summary>Does not add the include path to the pkg-config file, needed in an uninstalled setup by g-e-s</summary>
+    </bug>
+  </bugs>
+</release>
