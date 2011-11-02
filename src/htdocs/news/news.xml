@@ -4290,4 +4290,21 @@ directly.
     </content>
   </item>
 
+  <item>
+    <date>2011-11-02 17:30</date>
+    <title>GStreamer FFmpeg Plug-in 0.10.13 stable release</title>
+<content>
+<p>
+The GStreamer team announces a new release of the GStreamer gst-ffmpeg module
+for the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes
+<a href="&site;/releases/gst-ffmpeg/0.10.13.html">here</a>,
+or download tarballs 
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.10.13.tar.bz2">here</a>.
+    </p>
+    </content>
+  </item>
+
 </news>
