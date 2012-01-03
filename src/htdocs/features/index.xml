@@ -21,7 +21,7 @@ GStreamer can bridge to other multimedia frameworks in order to reuse existing
 components (e.g. codecs) and use platform input/output mechanisms:<ul>
   <li>Linux/Unix: OpenMAX-IL (via gst-openmax)</li>
   <li>Windows: DirectShow</li>
-  <li>MaxOS X: QuickTime</li>
+  <li>Mac OS X: QuickTime</li>
 </ul>
 </p>
 
