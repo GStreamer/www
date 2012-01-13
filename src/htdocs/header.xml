@@ -1,6 +1,5 @@
 <!-- this is the xml for the menu which is pulled in by header.xsl -->
 <!-- all the href's here are relative to & site ; -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
   <menu>
     <item class="gstnavside-r" href="/">Home</item>
@@ -25,5 +24,5 @@
     <item href="" />
 
     <item class="gstnavside-b" href="/artwork/">Artwork</item>
-    <a href="https://twitter.com/gstreamer" class="twitter-follow-button" data-show-count="false">Follow @gstreamer</item>
+    <item class "gstnavside-b" href="https://twitter.com/gstreamer">Follow @gstreamer on Twitter</item>
   </menu>
