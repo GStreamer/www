@@ -94,13 +94,16 @@ be found on the <a href="http://gstreamer.freedesktop.org/wiki/GitDeveloperGuide
 wiki page.
 </p>
 
+<!--
 <H1>Buildbots</H1>
 
 <p>
+<i>Build bots are currently out of action</i>
 Commits to Git are verified by our build cluster. This does automated checkouts on a series of slaves and runs the build there.
 If a commit breaks a build it is announced in the <a href="irc://irc.freenode.net/gstreamer">gstreamer developer channel</a> and on this websites:
-<a href="http://build.gstreamer.org:8010/">GStreamer buildbot</a>.
+<a href="http://build.SOMEWHERE.OVER.THE.RAINBOW:8010/">GStreamer buildbot</a>.
 </p>
+-->
 
 <!-- <H1>Automated media tests</H1> -->
 <!-- <p> -->
