@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>A Shiny White Tooth</name>
+  <version>0.11.2</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.11.x unstable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.11.x series is an unstable series targeted at developers and will
+eventually lead up to the stable 1.0 series.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series.
+</p>
+<p>
+The 0.11.x series has improved memory management and features
+various cleanups and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+         <feature>Added pts/dts to buffers</feature>
+         <feature>Moved controller into core</feature>
+         <feature>Pad probe rewrite</feature>
+         <feature>AcceptCaps and GetCaps made as queries</feature>
+         <feature>Added parent to pad functions</feature>
+         <feature>Sticky events rewrite</feature>
+         <feature>New GstSample object</feature>
+         <feature>Asynchronous state change support for basesrc</feature>
+         <feature>Added new bitmask type</feature>
+         <feature>GstMemory updates</feature>
+         <feature>Port to gio</feature>
+         <feature>Port to newest glib</feature>
+         <feature>Add stepped ranges</feature>
+         <feature>Do typefind in separate thread</feature>
+         <feature>Rework alloc tracing</feature>
+         <feature>Added STREAM_CONFIG, GAP and STREAM_START events</feature>
+         <feature>Various cleanups and leak fixes</feature>
+    <feature></feature>
+  </features>
+
+  <applications>
+<p>
+Various applications have early ports to GStreamer 0.11 including Totem, RhythmBox,
+Webkit, Jokosher, Transmageddon and others. We're working on porting more applications.
+</p>
+  </applications>
+
+                <contributors>
+	<person>Andoni Morales Alastruey</person>
+	<person>Antoine Tremblay</person>
+	<person>Christian Fredrik Kalager Schaller</person>
+	<person>Colin Walters</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Havard Graff</person>
+	<person>Idar Tollefsen</person>
+	<person>Jan Schmidt</person>
+	<person>Jason DeRose</person>
+	<person>Johan Boulé</person>
+	<person>Johan Dahlin</person>
+	<person>João Paulo Pizani Flor</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Matej Knopp</person>
+	<person>Nicolas Dufresne</person>
+	<person>Olivier Crête</person>
+	<person>Peteris Krisjanis</person>
+	<person>Philippe Normand</person>
+	<person>René Stadler</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Robert Swain</person>
+	<person>Ryan Lortie</person>
+	<person>Sebastian Dröge</person>
+	<person>Sjoerd Simons</person>
+	<person>Stas Sergeev</person>
+	<person>Stefan Sauer</person>
+	<person>Thiago Santos</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>664491</id>
+      <summary>compiler warnings on OS X 64bit</summary>
+    </bug>
+    <bug>
+      <id>402562</id>
+      <summary>[gst_parse_launch] Requesting pads but not releasing them</summary>
+    </bug>
+    <bug>
+      <id>383102</id>
+      <summary>[0.11] Rethink pad_blocking</summary>
+    </bug>
+    <bug>
+      <id>610338</id>
+      <summary>[0.11] [controller] Triggers should be moved into their own control source</summary>
+    </bug>
+    <bug>
+      <id>660300</id>
+      <summary>gst_memory_alignment undefined if HAVE_POSIX_MEMALIGN isn't defined</summary>
+    </bug>
+    <bug>
+      <id>662207</id>
+      <summary>gst: Fix a lot of GLib deprecations and errors</summary>
+    </bug>
+    <bug>
+      <id>664099</id>
+      <summary>0.11 new to use new floating ref annotation</summary>
+    </bug>
+    <bug>
+      <id>664880</id>
+      <summary>[0.11] GstBaseParse default caps query implementation broken</summary>
+    </bug>
+    <bug>
+      <id>664927</id>
+      <summary>GST_STATIC_CAPS missing initializer</summary>
+    </bug>
+    <bug>
+      <id>666096</id>
+      <summary>[0.11] encodebin bindings failing to accept None</summary>
+    </bug>
+    <bug>
+      <id>666154</id>
+      <summary>[0.11] Python - query_caps fails to accept 'None'</summary>
+    </bug>
+    <bug>
+      <id>666351</id>
+      <summary>[0.11] Get rid of GST_TYPE_DATE</summary>
+    </bug>
+    <bug>
+      <id>666890</id>
+      <summary>[0.11] controller compiler warning: gsttriggercontrolsource.c:82: control reaches end of non-void function</summary>
+    </bug>
+    <bug>
+      <id>668909</id>
+      <summary>[0.11] typefindelement is broken</summary>
+    </bug>
+  </bugs>
+</release>

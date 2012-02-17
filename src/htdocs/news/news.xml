@@ -4307,4 +4307,36 @@ or download tarballs
     </content>
   </item>
 
+  <item>
+    <date>2012-02-17 11:11</date>
+    <title>GStreamer Core 0.11.2, Base Plugins 0.11.2, Good Plugins 0.11.1, Bad
+      Plugins 0.11.1, Ugly Plugins 0.11.1, FFmpeg Plugins 0.11.1 unstable release</title>
+<content>
+<p>
+The GStreamer team announces a new release of the GStreamer core,
+Base/Good/Bad/Ugly/FFmpeg modules for the 0.11 GStreamer unstable release series.
+</p>
+<p>
+  This is the next release of the unstable 0.11 core and base series that will lead up
+  to the next 1.0 stable series later this year.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.11.2.html">gstreamer core</a> or
+<a href="&site;/releases/gst-plugins-base/0.11.2.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/0.11.1.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-bad/0.11.1.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-plugins-ugly/0.11.1.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-ffmpeg/0.11.1.html">gst-ffmpeg</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.11.2.tar.bz2">gstreamer</a> or
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.11.2.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.11.1.tar.bz2">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.11.1.tar.bz2">gst-plugins-bad</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.11.1.tar.bz2">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-ffmpeg/gst-ffmpeg-0.11.1.tar.bz2">gst-ffmpeg</a>,
+    </p>
+    </content>
+  </item>
+
 </news>
