@@ -4339,4 +4339,118 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2012-02-21 14:00</date>
+    <title>GStreamer Core 0.10.36, Base Plugins 0.10.36, Good Plugins 0.10.31, Ugly Plugins 0.10.19, Bad Plugins 0.10.23 stable releases</title>
+<content>
+<p>
+The GStreamer team is excited to announce new releases of the GStreamer core module, the gst-plugins-base module, the gst-plugins-good module, the gst-plugins-ugly module, and the gst-plugins-bad module for the 0.10 GStreamer stable release series.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.10.36.html">gstreamer</a>,
+<a href="&site;/releases/gst-plugins-base/0.10.36.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/0.10.31.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/0.10.19.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/0.10.23.html">gst-plugins-bad</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.10.36.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.10.36.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.10.31.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.10.19.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.10.23.tar.xz">gst-plugins-bad</a>
+directly.
+    </p>
+    <p>
+    <i>Highlights:</i>
+    <ul>
+      <li><b>GStreamer core:</b></li>
+        <ul>
+        <li>new muxer/mixer helper class: GstCollectPads2</li>
+        <li>weak ref support for mini objects</li>
+        <li>qdata support for buffers to attach additional metadata</li>
+        <li>input-selector: "sync-streams" property to sync
+            inactive inputs with active one</li>
+        <li>multiqueue: add "sync-by-running-time" property
+            to sync not-linked/deactivated streams by
+            running time (instead of input order of buffers)</li>
+        </ul>
+      <li><b>gst-plugins-base:</b></li>
+        <ul>
+        <li>new GstAudioDecoder and GstAudioEncoder base classes</li>
+        <li>new GstAudioInfo audio format description API
+            (which matches the new API in 0.11)</li>
+        <li>add support for compressed audio payloading and passhthrough
+            (think S/PDIF, mp3 over bluetooth)</li>
+        <li>new tag convenience API to get info about creative commons licenses</li>
+        <li>new GstTagMux base class</li>
+        <li>new video API to force key units via events</li>
+        <li>new video overlay composition API for subtitles</li>
+        <li>decodebin/playbin2 now plug parsers by default</li>
+        </ul>
+      <li><b>gst-plugins-good:</b></li>
+        <ul>
+        <li>new souphttpclientsink element</li>
+        <li>new splitfilesrc element to expose multiple files as one single file</li>
+        <li>compressed audio format passthrough support for pulseaudio</li>
+        <li>rtspsrc is now fully async</li>
+        <li>shout2send: support webm streaming</li>
+        <li>rtpsession: Full Intra Requests (FIR) support using new force-key-unit API</li>
+        <li>propagate downstream caps constraints upstream in audio parsers and rtp payloaders</li>
+        <li>many multifile plugin improvements for file/stream splitting</li>
+        </ul>
+      <li><b>gst-plugins-ugly:</b></li>
+        <ul>
+        <li>most audio decoders and encoders ported to the
+            new base classes (with the exception of mad)</li>
+        <li>lame mp3 and twolame mp2 encoders now output
+            framed mpeg audio (better for muxing)</li>
+        <li>x264enc now supports configuration via downstream
+            caps restrictions (useful for encodebin / rtp etc.)</li>
+        <li>mad doesn't depend on libid3tag any longer
+            (often a hassle on embedded builds)</li>
+        <li>mpeg2dec is more error resilient</li>
+        <li>lots of dvdreadsrc fixes</li>
+        </ul>
+      <li><b>gst-plugins-bad:</b></li>
+        <ul>
+        <li>new API-unstable video codec parsing library with
+            support for H.264, MPEG-4 (part 2), MPEG-1 and
+            MPEG-2 video, and VC-1</li>
+        <li>video: (API-unstable) video decoder/encoder base classes
+            have seen countless fixes (but some issues still remain
+            before they can be moved into -base)</li>
+        <li>video: new (API unstable) abstract video surface API
+            for hardware-accelerated codecs: GstSurfaceBuffer,
+            GstSurfaceConverter</li>
+        <li>video: new (API unstable) GstVideoContext interface</li>
+        <li>video parsers are consolidated into the videoparserbad
+            plugin and based on new codec parsing library</li>
+        <li>video parsers are ranked for autoplugging now
+            (so they can act as converters where needed)</li>
+        <li>video parsers accept unparsed input as well now
+            (useful for encoding/transcoding pipelines)</li>
+        <li>new audiovisualizers plugin with experimental
+            (and private) audio visualizer base class</li>
+        <li>camerabin2 is no longer considered experimental
+            (and has seen many fixes and improvements)</li>
+        <li>OS/X: new avcsrc to capture DV or HDV video from Firewire port</li>
+        <li>Windows: new d3dvideosink</li>
+        <li>new debugging elements: compare (with memcmp and ssim method) and debugspy</li>
+        <li>new faceoverlay element to overlay an SVG image on top of a face</li>
+        <li>new freeverb element (audio reverb effect)</li>
+        <li>new intermediate surface elements provide stream decoupling</li>
+        <li>within the same pipeline: inter{video,audio,sub}{sink,src}</li>
+        <li>new motioncells element to detect motion in video</li>
+        <li>new Opus audio decoder, encoder, parser and RTP payload/depayloader</li>
+        <li>new removesilence element</li>
+        <li>new rtmpsink element for output to an RTMP server</li>
+        <li>countless other fixes and improvements</li>
+        </ul>
+    </ul>
+    ... and many other fixes and improvements of course.
+    </p>
+    </content>
+  </item>
+
 </news>
