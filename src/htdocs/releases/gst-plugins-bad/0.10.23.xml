@@ -1,0 +1,998 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plug-ins</module-fancy>
+  <name>The Game Has Changed</name>
+  <version>0.10.23</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Bad Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.8.x series.
+It is, however, parallel installable with the 0.8.x series.
+</p>
+
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plug-ins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plug-ins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plug-ins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>aiffparse: extract ID3 tags embedded in ID3 chunks</feature>
+    <feature>amrwbenc: switch to the free vo-amrwbenc library</feature>
+    <feature>apexsink: Add support for generation 2 AirTunes hardware</feature>
+    <feature>applemedia: bump the rank of qtkitvideosrc to PRIMARY</feature>
+    <feature>autoconvert: remove the initial-identity property from autoconvert, update for basetransform changes in core</feature>
+    <feature>avcsrc: add AVC Video Services plugin for OS/X (captures DV or HDV video from Firewire port)</feature>
+    <feature>basevideo: cater for format conversion</feature>
+    <feature>basevideo: Fix locking, especially if both pads have different streaming threads</feature>
+    <feature>basevideodecoder: add API to drop a frame and post a QoS message on the bus</feature>
+    <feature>basevideodecoder: reverse playback support; limited legacy seeking support</feature>
+    <feature>basevideodecoder: better caps handling; event handling fixes esp. discont and flush</feature>
+    <feature>basevideoencoder: add support for new force-key-unit event API</feature>
+    <feature>basevideoencoder: implement preset interface; enable clipping by default</feature>
+    <feature>basevideoencoder: proxy the width/height/framerate/PAR constraints of downstream caps to upstream</feature>
+    <feature>bayer2rgb: rewrite signal processing and convert to orc for better speed</feature>
+    <feature>camerabin2: no longer experimental; add flags to disable conversion elements</feature>
+    <feature>camerabin2: add "audio-filter" property; countless fixes</feature>
+    <feature>camerabin: add "image-formatter" property</feature>
+    <feature>camerabin: prevent audio source from providing clock; reset audiosrc timestamping</feature>
+    <feature>camerabin: prevent captures from being lost when switching resolutions</feature>
+    <feature>colorspace: Add JPEG YCbCr matrix</feature>
+    <feature>colorspace: fix odd width and height handling in some fastpath cases</feature>
+    <feature>colorspace: fix r210 writing only half a scanline</feature>
+    <feature>d3dvideosink: new d3dvideosink element</feature>
+    <feature>dc1394src: implement LATENCY query</feature>
+    <feature>debugutils: new elements: compare (with memcmp and ssim method) and debugspy</feature>
+    <feature>decklink: add more modes, connection type, "audio-input" and "subdevice" properties</feature>
+    <feature>decklink: add support for Windows; properly set up analog input</feature>
+    <feature>decklinksink: add audio support</feature>
+    <feature>dfbvideosink: also consider non-accelerated DirectFB surfaces</feature>
+    <feature>diracparse: make diracparse work correctly</feature>
+    <feature>directdrawsink: handle pixel-aspect-ratio, lower rank to secondary</feature>
+    <feature>dshowdecwrapper: fix COM initialization</feature>
+    <feature>dtmf: post messages when starting to send/receive DTMF</feature>
+    <feature>dtmfsrc: align DTMF sound buffers with last-stop from event</feature>
+    <feature>dtmfsrc: reject start/stop requests that come out of order</feature>
+    <feature>dvbsrc: add "timeout" property and use (interruptible) GstPoll</feature>
+    <feature>element-templates: improve the audiofilter template</feature>
+    <feature>faac: add properties for VBR encoding</feature>
+    <feature>faac: add profile and level to the caps; negotiate output format from downstream caps</feature>
+    <feature>facedetect: detect face features (mouth, nose, eyes) and drop faces that don't have them</feature>
+    <feature>faceoverlay: add element that displays an SVG image over a detected face</feature>
+    <feature>freeverb: new freeverb element (reverb effect)</feature>
+    <feature>h263parse: also extract width and height into caps; propagate downstream caps</feature>
+    <feature>h264parse: many negotiation and caps-related fixes; propagate downstream caps where appropriate</feature>
+    <feature>h264parse: countless parsing and timestamping fixes</feature>
+    <feature>hlsdemux: allow bandwidth switching during caching of fragments</feature>
+    <feature>hlsdemux: make more error resilient</feature>
+    <feature>hlsdemux: cache number of fragments we are required to cache</feature>
+    <feature>hlsdemux: add seeking support (for streams that are not live)</feature>
+    <feature>hlsdemux: implement duration and seeking queries; improved duration reporting</feature>
+    <feature>hlsdemux: Send a flush-stop when switching pads. Fixes A -> A/V sync issue</feature>
+    <feature>hlsdemux: implement buffering by posting buffering messages on the bus</feature>
+    <feature>hlsdemux: send NEWSEGMENT events in TIME format</feature>
+    <feature>hlsdemux: switch to higher/lower bitrate by more than one step at a time</feature>
+    <feature>hsldemux: handle change of media types</feature>
+    <feature>inter: new intermediate surface elements: inter{video,audio,sub}{sink,src} to decouple elements within the same pipeline</feature>
+    <feature>invtelecine: Remove in favor of fieldanalysis</feature>
+    <feature>irtspparse: add Interleaved RTSP parser element</feature>
+    <feature>jifmux: change class to formatter, bump rank to secondary</feature>
+    <feature>kate: do not consider an empty SPU to be a fatal error</feature>
+    <feature>kateenc: don't error on empty input buffers</feature>
+    <feature>kate: pass on timed event metadata as tags when we can</feature>
+    <feature>kate: support for rendering on several YUV formats</feature>
+    <feature>legacyh264parse: create correct avc codec-data</feature>
+    <feature>legacyh264parse: delay pushing buffers until we have width/height</feature>
+    <feature>legacyh264parse: fix output caps alignment for avc input</feature>
+    <feature>modplug: fix modules playing as mono instead of stereo</feature>
+    <feature>motioncells: new element to detect areas of motion</feature>
+    <feature>mpeg2enc: support mjpegtools 2.0</feature>
+    <feature>mpeg4videoparse: properly handle profile and level in caps</feature>
+    <feature>mpegpsdemux: timestamp handling and seeking fixes</feature>
+    <feature>mpegpsmux: remember whether an incoming buffer is a keyunit or not</feature>
+    <feature>mpegpsmux: add "aggregate-gops" property to aggregate GOPs into buffer lists</feature>
+    <feature>mpegpsmux: put stream headers into output caps</feature>
+    <feature>mpeg[pt]sdemux: Add support for AAC LATM/LOAS streams</feature>
+    <feature>mpegtsbase: actually set seen_pat=TRUE when we see a PAT</feature>
+    <feature>mpegtsdemux: always try to seek for to a keyframe; add accurate seeking support</feature>
+    <feature>mpegtsdemux: fix frequent deadlock demuxing MPEG TS</feature>
+    <feature>mpegtsdemux: fix scanning stopping too early</feature>
+    <feature>mpegtsdemux: fix timestamps in newsegement event after seeking</feature>
+    <feature>mpegtsdemux: implement key_unit seeking for MPEG2 video</feature>
+    <feature>mpegtsdemux: payload parsing for H.264</feature>
+    <feature>mpegtsdemux: push based seeking based on PCR</feature>
+    <feature>mpegtsmux: add support for force key unit events</feature>
+    <feature>mpegtsmux: unset the current PCR stream when starting a new unit</feature>
+    <feature>mpegtsparse: fix parsing of PSI table IDs</feature>
+    <feature>mpegtsparse: support more character set encodings</feature>
+    <feature>mpegts: stop scanning for keyframes as early as possible</feature>
+    <feature>ofa: don't crash when there's no data to create a fingerprint from</feature>
+    <feature>openal: new OpenAL sink and source elements: openalsrc, openalsink</feature>
+    <feature>opencv: allow to build against 2.3.1</feature>
+    <feature>opus: new Opus audio codec elements: opusdec, opusenc, opusparsertpopusdepay, rtpopusay</feature>
+    <feature>pcapparse: also support extracting tcp data; fix SLL parsing</feature>
+    <feature>photography: add missing FLICKER_REDUCTION capability</feature>
+    <feature>pvr2d: new pvrvideosink element</feature>
+    <feature>psmux: fix writing of system header, which makes VLC not skip the adjacent PSM and play embedded H.264 streams</feature>
+    <feature>removesilence: new plugin</feature>
+    <feature>resindvdsrc: do not try to seek before the first chapter</feature>
+    <feature>rotate: angle is in radians already, do not scale it</feature>
+    <feature>rsvgdec: use input buffer timings if possible</feature>
+    <feature>rtmp: add rtmpsink element for output to an RTMP server</feature>
+    <feature>rtpdtmfmux: Add last-stop to dtmf-event upstream events</feature>
+    <feature>rtpdtmfsrc: Correctly recognize the end of a buffer</feature>
+    <feature>rtpdtmfsrc: Just error out if there is no clock</feature>
+    <feature>rtpdtmfsrc: Make sure rtpdtmfsrc timestamps don't overlap</feature>
+    <feature>rtpdtmfsrc: Put the inter digit interval at the end, not at the start</feature>
+    <feature>rtpdtmfsrc: Respect ptime from the caps</feature>
+    <feature>rtpdtmfsrc: Start at the last_stop from the start event if there was one</feature>
+    <feature>rtpvp8: fix bitstream parsing using the wrong kind of bitreader</feature>
+    <feature>rtpvp8: Reject unknown bitstream versions</feature>
+    <feature>rtpvp8: Update the pay/depay to the ietf-draft-01 spec</feature>
+    <feature>schroenc: balance encoder and video format alloc/dealloc</feature>
+    <feature>schroenc: remove shape_output handling</feature>
+    <feature>scopes: add a new element similar to synaesthesia</feature>
+    <feature>scopes: add a simple fft based scope</feature>
+    <feature>scopes: draw pixels with signle 32bit writes</feature>
+    <feature>scopes: first version of a scopes plugin using a new baseclass</feature>
+    <feature>scopes: fix elements descriptions</feature>
+    <feature>shm: add ability to add uint64 tags on buffers</feature>
+    <feature>shm: add buffer-time property</feature>
+    <feature>smooth: new element, port to 0.10</feature>
+    <feature>soundtouch: Handling incoming rate when requested</feature>
+    <feature>spacescope: add color-modes</feature>
+    <feature>spacescope: use the drawhelpers and add a draw-style property</feature>
+    <feature>spandsp: Adding spandsp plugin with spanplc element for packet loss concealment</feature>
+    <feature>spectrascope: use add_pixel for non-white pixels</feature>
+    <feature>subenc: Add webvttenc element</feature>
+    <feature>teletextdec: New teletext decoder plugin based in zvbi</feature>
+    <feature>tiger: add a "silent" property to skip rendering</feature>
+    <feature>tsdemux: add explicit supported AAC stream-format in template caps</feature>
+    <feature>tsdemux: countless fixes and improvements</feature>
+    <feature>tta: decrease rank to NONE</feature>
+    <feature>video: abstract surface API for HW accelerated codecs</feature>
+    <feature>video: add GstVideoContext interface</feature>
+    <feature>video: add libgstbasevideo PC file</feature>
+    <feature>voaacenc: add new plugin for audio AAC encoder based on vo-aacenc lib</feature>
+    <feature>voaacenc: add profile and level to the caps</feature>
+    <feature>vp8dec: add check if we have legal aspect-ratio before reset it</feature>
+    <feature>vp8dec: propagate downstream flow return to upstream</feature>
+    <feature>vp8dec: use new basevideodecoder API to drop frames and get QoS messages posted</feature>
+    <feature>vp8enc: add "lag-in-frames" and "min/maxsection-pct" options</feature>
+    <feature>vp8enc: generate a timestamp for alt-ref frames</feature>
+    <feature>wrappercamerabinsrc: push newsegments on video capture start</feature>
+    <feature>xviddec: add video/mpeg,mpegversion=4 to the caps</feature>
+    <feature>xvidenc: add profile/level to the caps and negotiate them with downstream</feature>
+    <feature>xvidenc: add support for levels 4a/5/6 of the simple profile</feature>
+    <feature>xvidenc: don't add the profile/level to the video/x-xvid caps</feature>
+  </features>
+
+  <applications>
+  </applications>
+      <contributors>
+	<person>Alessandro Decina</person>
+	<person>Alexey Fisher</person>
+	<person>Andoni Morales Alastruey</person>
+	<person>Andreas Frisch</person>
+	<person>Arun Raghavan</person>
+	<person>Brad Smith</person>
+	<person>Brian Gitonga Marete</person>
+	<person>Christian Fredrik Kalager Schaller</person>
+	<person>Danilo Cesar Lemes de Paula</person>
+	<person>David King</person>
+	<person>David Schleef</person>
+	<person>Debarshi Ray</person>
+	<person>Edward Hervey</person>
+	<person>Felipe Contreras</person>
+	<person>Gabriel Strimtu</person>
+	<person>George Kiagiadakis</person>
+	<person>Guillaume Emont</person>
+	<person>Gwenole Beauchesne</person>
+	<person>Götz Waschk</person>
+	<person>Jan Schmidt</person>
+	<person>Janne Grunau</person>
+	<person>Jonas Larsson</person>
+	<person>Josep Torra</person>
+	<person>Joshua M. Doe</person>
+	<person>Julien Isorce</person>
+	<person>Julien MOUTTE</person>
+	<person>Krzysztof Krakowiak</person>
+	<person>Lasse Laukkanen</person>
+	<person>Laura Lucas Alday</person>
+	<person>Lauri Lehtinen</person>
+	<person>Levente Farkas</person>
+	<person>Luciana Fujii Pontello</person>
+	<person>Luis de Bethencourt</person>
+	<person>Marc-André Lureau</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Mart Raudsepp</person>
+	<person>Martin Storsjo</person>
+	<person>Matej Knopp</person>
+	<person>Mukul Majmudar</person>
+	<person>Nicola Murino</person>
+	<person>Nicolas Dufresne</person>
+	<person>Olaf Seibert</person>
+	<person>Oleksij Rempel (Alexey Fisher)</person>
+	<person>Olivier Crête</person>
+	<person>Pino Toscano</person>
+	<person>Quentin Smith</person>
+	<person>Rafael Diniz</person>
+	<person>Raimo Järvi</person>
+	<person>Raluca Elena Podiuc</person>
+	<person>René Stadler</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Rob Clark</person>
+	<person>Robert Jobbagy</person>
+	<person>Robert Swain</person>
+	<person>Sameer Naik</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Pölsterl</person>
+	<person>Sjoerd Simons</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Stefan Kost</person>
+	<person>Stefan Sauer</person>
+	<person>Teemu Katajisto</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Thijs Vermeir</person>
+	<person>Tiago César Katcipis</person>
+	<person>Tim 'mithro' Ansell</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tom Deseyn</person>
+	<person>Tommi Myöhänen</person>
+	<person>Vincent Génieux</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+	<person>W. Michael Petullo</person>
+	<person>Youness Alaoui</person>
+	<person>Zhao Halley</person>
+	<person>benjamin gaignard</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>648021</id>
+      <summary>gst-plugins-bad/gst/nsf/ code not needed (can be replaced by ext/gme/)</summary>
+    </bug>
+    <bug>
+      <id>655887</id>
+      <summary>gst_buffer_create_sub: assertion `buffer- &gt; size &gt; = offset + size' failed</summary>
+    </bug>
+    <bug>
+      <id>597822</id>
+      <summary>Add removesilence plugin</summary>
+    </bug>
+    <bug>
+      <id>608171</id>
+      <summary>[dvbsrc] many wake-ups in read_device on signal loss.</summary>
+    </bug>
+    <bug>
+      <id>652677</id>
+      <summary>[bayer] compiler warning in orc-generated code</summary>
+    </bug>
+    <bug>
+      <id>652956</id>
+      <summary>vp8enc: add more encoder options</summary>
+    </bug>
+    <bug>
+      <id>654310</id>
+      <summary>FAAC VBR encoding support</summary>
+    </bug>
+    <bug>
+      <id>655362</id>
+      <summary>[decklink] Add support for Windows</summary>
+    </bug>
+    <bug>
+      <id>532820</id>
+      <summary>[mpegtsdemux] garbled display</summary>
+    </bug>
+    <bug>
+      <id>550230</id>
+      <summary>A plug-in &quot; openalsrc &quot; for capture audio using OpenAL</summary>
+    </bug>
+    <bug>
+      <id>569305</id>
+      <summary>[mgpegvideoparse] not all tags show up in gst.extend.discoverer</summary>
+    </bug>
+    <bug>
+      <id>578926</id>
+      <summary>[h264parse] Make sure h264parse are autoplugged when required</summary>
+    </bug>
+    <bug>
+      <id>589064</id>
+      <summary>resindvd doesn't behave right for &quot; previous chapter &quot; </summary>
+    </bug>
+    <bug>
+      <id>599469</id>
+      <summary>resindvd: problems pre-rolling in the absence of audio</summary>
+    </bug>
+    <bug>
+      <id>609639</id>
+      <summary>xviddec plugin caps does not allow MPEG 4 video - trivial fix</summary>
+    </bug>
+    <bug>
+      <id>611046</id>
+      <summary>mpegtsmux: pcr problems</summary>
+    </bug>
+    <bug>
+      <id>615615</id>
+      <summary>A plugin for audio output using OpenAL</summary>
+    </bug>
+    <bug>
+      <id>615681</id>
+      <summary>[mpeg[pt]sdemux] do not support AAC LATM Stream type</summary>
+    </bug>
+    <bug>
+      <id>616421</id>
+      <summary>celtenc/dec produces silent output with live sources</summary>
+    </bug>
+    <bug>
+      <id>619739</id>
+      <summary>Teletext decoder element based on libzvbi</summary>
+    </bug>
+    <bug>
+      <id>620119</id>
+      <summary>[dvdspu] Program received signal SIGSEGV, Segmentation fault.</summary>
+    </bug>
+    <bug>
+      <id>625190</id>
+      <summary>Directshow decoders wrappers have COM initialization issues</summary>
+    </bug>
+    <bug>
+      <id>625520</id>
+      <summary>dc1394src: timestamping problem</summary>
+    </bug>
+    <bug>
+      <id>628284</id>
+      <summary>[rsvgdec] all buffer timestamps are set to zero</summary>
+    </bug>
+    <bug>
+      <id>629244</id>
+      <summary>[opencv] Add motion detection element</summary>
+    </bug>
+    <bug>
+      <id>631390</id>
+      <summary>dfbvideosink does not consider surfaces when blit is not accelerated</summary>
+    </bug>
+    <bug>
+      <id>631416</id>
+      <summary>mpegpsdemux hits EOS too early</summary>
+    </bug>
+    <bug>
+      <id>634582</id>
+      <summary>Localized menus when playing DVD</summary>
+    </bug>
+    <bug>
+      <id>635917</id>
+      <summary>[mpegtsparse] don't parse and post all the EIT events.</summary>
+    </bug>
+    <bug>
+      <id>640017</id>
+      <summary>basevideodecoder: add API to drop a frame and post a QoS message on the bus</summary>
+    </bug>
+    <bug>
+      <id>641405</id>
+      <summary>[vp8enc] patch - allow to use best quality</summary>
+    </bug>
+    <bug>
+      <id>641918</id>
+      <summary>[Camerabin2] Allow previewing without capture</summary>
+    </bug>
+    <bug>
+      <id>642023</id>
+      <summary>[mpeg4videoparse] assertion `a_d != 0' failed</summary>
+    </bug>
+    <bug>
+      <id>642759</id>
+      <summary>faceoverlay plugin: displays an SVG image over a detected face on a video stream</summary>
+    </bug>
+    <bug>
+      <id>647055</id>
+      <summary>liveadder has a memory leak</summary>
+    </bug>
+    <bug>
+      <id>647748</id>
+      <summary>[aacenc] add AAC audio encoder based on vo-aacenc lib</summary>
+    </bug>
+    <bug>
+      <id>647842</id>
+      <summary>[faac] Detect ADTS/raw output in the downstream caps</summary>
+    </bug>
+    <bug>
+      <id>648245</id>
+      <summary>mpegtsdemux: truncates last buffer</summary>
+    </bug>
+    <bug>
+      <id>648478</id>
+      <summary>jpegparse: unit test for APP1/exif &amp; comment parsing</summary>
+    </bug>
+    <bug>
+      <id>648565</id>
+      <summary>clean_ups in opencv</summary>
+    </bug>
+    <bug>
+      <id>648933</id>
+      <summary>[mpegvideoparse] Avoid searching for picture start codes when not needed</summary>
+    </bug>
+    <bug>
+      <id>649391</id>
+      <summary>[jifmux] bump rank from none</summary>
+    </bug>
+    <bug>
+      <id>649822</id>
+      <summary>wrappercamerabinsrc: add a filter property</summary>
+    </bug>
+    <bug>
+      <id>649832</id>
+      <summary>[camerabin2]: negotiation problems when capturing</summary>
+    </bug>
+    <bug>
+      <id>649931</id>
+      <summary>[apexsink] Allow to play to new, generation 2 AirTunes (AirPlay) hardware</summary>
+    </bug>
+    <bug>
+      <id>650072</id>
+      <summary>[basevideoencoder] Fix use-after-free after state change transition</summary>
+    </bug>
+    <bug>
+      <id>650171</id>
+      <summary>gst/dccp: fix build on newer mingw</summary>
+    </bug>
+    <bug>
+      <id>650228</id>
+      <summary>Fix h264parse negotiation</summary>
+    </bug>
+    <bug>
+      <id>650323</id>
+      <summary>[h264parse] leaks entire input if converting bytestream - &gt; avc,au</summary>
+    </bug>
+    <bug>
+      <id>650416</id>
+      <summary>[h264parse] Assertion failure: nal_size &gt; =2</summary>
+    </bug>
+    <bug>
+      <id>650484</id>
+      <summary>h264parse should increase max allowed PPS id from 31 to 255</summary>
+    </bug>
+    <bug>
+      <id>650594</id>
+      <summary>[faac] AAC profile support in the caps</summary>
+    </bug>
+    <bug>
+      <id>650595</id>
+      <summary>voaacenc needs profile caps support</summary>
+    </bug>
+    <bug>
+      <id>650914</id>
+      <summary>decklink sink has no audio support</summary>
+    </bug>
+    <bug>
+      <id>650970</id>
+      <summary>mpeg2enc: fix build with mjpegtools 2.0</summary>
+    </bug>
+    <bug>
+      <id>651050</id>
+      <summary>[mpegtsmux] error &quot; Stream on pad xxx is not associated with any program &quot; debug output incorrect pointer instead of padname</summary>
+    </bug>
+    <bug>
+      <id>651779</id>
+      <summary>directdrawsink: keep aspect ratio</summary>
+    </bug>
+    <bug>
+      <id>651782</id>
+      <summary>add d3dvideosink on windows</summary>
+    </bug>
+    <bug>
+      <id>652035</id>
+      <summary>[d3dvideosink] Fix configure check and makefiles</summary>
+    </bug>
+    <bug>
+      <id>652261</id>
+      <summary>xvidenc needs codec profiles in caps</summary>
+    </bug>
+    <bug>
+      <id>652694</id>
+      <summary>rtpvp8pay fails on error-resilient stream</summary>
+    </bug>
+    <bug>
+      <id>652902</id>
+      <summary>vp8dec: Add check if we have legal aspect-ratio before reset it.</summary>
+    </bug>
+    <bug>
+      <id>652924</id>
+      <summary>[tta] playing white noise instead of file contents</summary>
+    </bug>
+    <bug>
+      <id>652951</id>
+      <summary>vp8enc: Set correct timestamp/duration for altref/invisible frames</summary>
+    </bug>
+    <bug>
+      <id>652995</id>
+      <summary>legacyh264parse wrong access-unit output</summary>
+    </bug>
+    <bug>
+      <id>653013</id>
+      <summary>h264parse fails to create SPS when input uses 4 byte start code</summary>
+    </bug>
+    <bug>
+      <id>653087</id>
+      <summary>[h264parse] Assertions on valid h264 streams when converting to stream-format=avc,alignment=nal</summary>
+    </bug>
+    <bug>
+      <id>653161</id>
+      <summary>wininet.h checking during configure</summary>
+    </bug>
+    <bug>
+      <id>653481</id>
+      <summary>tsdemux: Fail to sync to stream when input buffers lacks OFFSET</summary>
+    </bug>
+    <bug>
+      <id>653544</id>
+      <summary>[basevideodecoder] Immediately forwards synchronized events</summary>
+    </bug>
+    <bug>
+      <id>654293</id>
+      <summary>[basevideodecoder] Leaks coder_hook</summary>
+    </bug>
+    <bug>
+      <id>654416</id>
+      <summary>[mpegtsmux] gst_buffer_unref () call segfaults</summary>
+    </bug>
+    <bug>
+      <id>654572</id>
+      <summary>Set but unused warning</summary>
+    </bug>
+    <bug>
+      <id>654657</id>
+      <summary>tsdemux: newsegment for push-mode is wrong</summary>
+    </bug>
+    <bug>
+      <id>654666</id>
+      <summary>mpeg4videoparse: Fix failure to find frames on some streams</summary>
+    </bug>
+    <bug>
+      <id>654799</id>
+      <summary>Add force-key-unit support to mpegtsmux</summary>
+    </bug>
+    <bug>
+      <id>654805</id>
+      <summary>Missing gstdecklink.h in sys/decklink when doing a &quot; make dist &quot; </summary>
+    </bug>
+    <bug>
+      <id>654806</id>
+      <summary>Missing dependencies for gst/intra</summary>
+    </bug>
+    <bug>
+      <id>654840</id>
+      <summary>dfbvideosink: fix harmless typo in variable initialization</summary>
+    </bug>
+    <bug>
+      <id>654844</id>
+      <summary>dtsdec: stream with jitter sounds broken</summary>
+    </bug>
+    <bug>
+      <id>655112</id>
+      <summary>videomaxrate: add &quot; max-rate &quot; property and improve caps negotiation</summary>
+    </bug>
+    <bug>
+      <id>655319</id>
+      <summary>hlsdemux: compilation problem on NetBSD caused by wrong GST_ELEMENT_ERROR usage</summary>
+    </bug>
+    <bug>
+      <id>655361</id>
+      <summary>pcapparse: fix SLL parsing</summary>
+    </bug>
+    <bug>
+      <id>655540</id>
+      <summary>mpegtsbase: gst_structure_id_get() called with wrong type</summary>
+    </bug>
+    <bug>
+      <id>655804</id>
+      <summary>Play position advancing but frames not rendered</summary>
+    </bug>
+    <bug>
+      <id>656107</id>
+      <summary>shmsink should have a buffer-time property.</summary>
+    </bug>
+    <bug>
+      <id>656115</id>
+      <summary>mpegpsdemux: handle SCR jumps/discontinuities more gracefully</summary>
+    </bug>
+    <bug>
+      <id>656164</id>
+      <summary>dirac triggers set but unused variable warnings</summary>
+    </bug>
+    <bug>
+      <id>656166</id>
+      <summary>schroedinger: triggers set-but-not-used warnings from gcc</summary>
+    </bug>
+    <bug>
+      <id>656226</id>
+      <summary>[faac] Does not passthrough downstream caps constraints to upstream</summary>
+    </bug>
+    <bug>
+      <id>656641</id>
+      <summary>Segfault using ofa element</summary>
+    </bug>
+    <bug>
+      <id>656686</id>
+      <summary>celtdec: make this compile with git libcelt</summary>
+    </bug>
+    <bug>
+      <id>656928</id>
+      <summary>vp8: probe for the new tuning API to keep building with older libvpx</summary>
+    </bug>
+    <bug>
+      <id>656929</id>
+      <summary>vp8: drop frames is a uint in the libvpx API, not a boolean</summary>
+    </bug>
+    <bug>
+      <id>657033</id>
+      <summary>kate: emit timed metadata as tags</summary>
+    </bug>
+    <bug>
+      <id>657091</id>
+      <summary>kate: do not clear out high bits from display area</summary>
+    </bug>
+    <bug>
+      <id>657250</id>
+      <summary>rsndvdbin attempts to modify read only metadata</summary>
+    </bug>
+    <bug>
+      <id>657363</id>
+      <summary>tests: make camerabin2 test build</summary>
+    </bug>
+    <bug>
+      <id>657368</id>
+      <summary>basevideoencoder: fix element leak</summary>
+    </bug>
+    <bug>
+      <id>657419</id>
+      <summary>basevideoenc: do not try to calculate latency from an unknown framerate</summary>
+    </bug>
+    <bug>
+      <id>658251</id>
+      <summary>dccp: cross compile warning - &quot; WINVER &quot; redefined</summary>
+    </bug>
+    <bug>
+      <id>658450</id>
+      <summary>mpegvideoparse: make this build with older glib</summary>
+    </bug>
+    <bug>
+      <id>658800</id>
+      <summary>h264parse: do not try to read from a non existent VUI</summary>
+    </bug>
+    <bug>
+      <id>658940</id>
+      <summary>kate: flush on seek, and ensure we cancel any waiting buffer</summary>
+    </bug>
+    <bug>
+      <id>658973</id>
+      <summary>mpegvideoparse: avoid reading past a buffer</summary>
+    </bug>
+    <bug>
+      <id>659061</id>
+      <summary>camerabin2: replace deprecated g_atomic_int_exchange_and_add</summary>
+    </bug>
+    <bug>
+      <id>659087</id>
+      <summary>celt: various cleanups/fixes</summary>
+    </bug>
+    <bug>
+      <id>659485</id>
+      <summary>mpegpsdemux: large MPEG PS file not working when seeking/transcoding with encodebin</summary>
+    </bug>
+    <bug>
+      <id>659836</id>
+      <summary>Transcoding crash with new git master FAAC</summary>
+    </bug>
+    <bug>
+      <id>659924</id>
+      <summary>Fix some MPEG-2 transport streams containing audio and private data</summary>
+    </bug>
+    <bug>
+      <id>660118</id>
+      <summary>mpegtsdemux: keep CRC data in .rodata</summary>
+    </bug>
+    <bug>
+      <id>660234</id>
+      <summary>[mpeg4videoparse] Use strings for the profile/level fields in caps</summary>
+    </bug>
+    <bug>
+      <id>660364</id>
+      <summary>opus: misc cleanup/fixes</summary>
+    </bug>
+    <bug>
+      <id>660406</id>
+      <summary>[rtpvp8] update rtp vp8 pay/depay to the latest IETF draft version 01</summary>
+    </bug>
+    <bug>
+      <id>660469</id>
+      <summary>opus/celt: fix calculation of filler data size</summary>
+    </bug>
+    <bug>
+      <id>660528</id>
+      <summary>kate: rendering performance improvements</summary>
+    </bug>
+    <bug>
+      <id>660630</id>
+      <summary>kate: fix race condition on PAUSED- &gt; READY state change</summary>
+    </bug>
+    <bug>
+      <id>660999</id>
+      <summary>opusenc: fix latency query</summary>
+    </bug>
+    <bug>
+      <id>661053</id>
+      <summary>some patches to gsth264parse.c</summary>
+    </bug>
+    <bug>
+      <id>661066</id>
+      <summary>Segfault when transcoding a file from Ogg to Quicktime</summary>
+    </bug>
+    <bug>
+      <id>661098</id>
+      <summary>[rtmp] need to initialize winsock 2 dll</summary>
+    </bug>
+    <bug>
+      <id>661113</id>
+      <summary>Some patches to h264parse</summary>
+    </bug>
+    <bug>
+      <id>661614</id>
+      <summary>mplex configure check broken with mjpegtools 2.0.0</summary>
+    </bug>
+    <bug>
+      <id>662164</id>
+      <summary>vc1parser: fix parsing of FRMRTQ_POSTPROC, BITRTQ_POSTPROC and sequence layer</summary>
+    </bug>
+    <bug>
+      <id>662321</id>
+      <summary>GstVideoContext to enable context sharing</summary>
+    </bug>
+    <bug>
+      <id>662420</id>
+      <summary>Abstract surface API for HW accelerated decoders</summary>
+    </bug>
+    <bug>
+      <id>662746</id>
+      <summary>vc1parser: fix parsing of RANGEREDFRM</summary>
+    </bug>
+    <bug>
+      <id>662776</id>
+      <summary>vc1parser: do not overwrite buffer</summary>
+    </bug>
+    <bug>
+      <id>662857</id>
+      <summary>tiger: add a 'silent' property to skip rendering</summary>
+    </bug>
+    <bug>
+      <id>662949</id>
+      <summary>[h264parse] Doesn't use PAR from bitstream</summary>
+    </bug>
+    <bug>
+      <id>663180</id>
+      <summary>h264parse tests are not valgrind clean</summary>
+    </bug>
+    <bug>
+      <id>663203</id>
+      <summary>colorspace: fix r210 writing only half a scanline</summary>
+    </bug>
+    <bug>
+      <id>663234</id>
+      <summary>tests: allow building with older versions of glib (g_list_free_full)</summary>
+    </bug>
+    <bug>
+      <id>663235</id>
+      <summary>mpegvideoparser: input data is const, mark it so</summary>
+    </bug>
+    <bug>
+      <id>663238</id>
+      <summary>colorspace: fix width/height mismatches</summary>
+    </bug>
+    <bug>
+      <id>663309</id>
+      <summary>mpegvideoparse: Fix in picture header parse.</summary>
+    </bug>
+    <bug>
+      <id>663346</id>
+      <summary>autoconvert: merge caps instead of using union</summary>
+    </bug>
+    <bug>
+      <id>663552</id>
+      <summary>h264parse: conditional jump or or move depends on uninitialised value(s)</summary>
+    </bug>
+    <bug>
+      <id>663768</id>
+      <summary>mimic, opencv, vp8, acmmp3dec, linsys: Don't build static plugins</summary>
+    </bug>
+    <bug>
+      <id>663782</id>
+      <summary>Progressive support for gstmpegvideoparser</summary>
+    </bug>
+    <bug>
+      <id>664048</id>
+      <summary>camerabin: Document requirement to be in PLAYING state for capture-start</summary>
+    </bug>
+    <bug>
+      <id>664123</id>
+      <summary>[h264parse] Conversion from AVC to byte stream fails for nal_length_size != 4</summary>
+    </bug>
+    <bug>
+      <id>664257</id>
+      <summary>[mpegtsparse] Support UTF-16BE text encoding</summary>
+    </bug>
+    <bug>
+      <id>664631</id>
+      <summary>Build error: gstsmooth.c:205:3: error: format '%d' expects type 'int', but argument 8 has type 'gulong'</summary>
+    </bug>
+    <bug>
+      <id>664725</id>
+      <summary>aiffparse: extract embedded ID3 tags</summary>
+    </bug>
+    <bug>
+      <id>664815</id>
+      <summary>opusenc: Fixing &quot; Unused var &quot; compiling error for opus codec</summary>
+    </bug>
+    <bug>
+      <id>664817</id>
+      <summary>Adding opus RTP payloader/depayloader module</summary>
+    </bug>
+    <bug>
+      <id>665078</id>
+      <summary>opus: work without the Ogg headers</summary>
+    </bug>
+    <bug>
+      <id>665205</id>
+      <summary>rsndvd: sends buffers before newsegment event</summary>
+    </bug>
+    <bug>
+      <id>665378</id>
+      <summary>Fail to compile xvidenc in ubuntu 11.04 uninstalled setup</summary>
+    </bug>
+    <bug>
+      <id>665418</id>
+      <summary>h264parse produce AVC: nal size -1702885365</summary>
+    </bug>
+    <bug>
+      <id>665584</id>
+      <summary>[h264parse] Reduce latency and cpu usage for packetized input</summary>
+    </bug>
+    <bug>
+      <id>665631</id>
+      <summary>mpeg4videoparse regressions</summary>
+    </bug>
+    <bug>
+      <id>665703</id>
+      <summary>mpeg4videoparse: memory leak</summary>
+    </bug>
+    <bug>
+      <id>665814</id>
+      <summary>mpegtsdemux: add a property to control whether to signal no-more-pads</summary>
+    </bug>
+    <bug>
+      <id>666517</id>
+      <summary>Frequent deadlock while discovering a MPEG TS file</summary>
+    </bug>
+    <bug>
+      <id>666584</id>
+      <summary>Invalid memory access in gsth264parse</summary>
+    </bug>
+    <bug>
+      <id>666750</id>
+      <summary>Compiler warning- &gt; error in faac</summary>
+    </bug>
+    <bug>
+      <id>667560</id>
+      <summary>h264parse: H.264 reverse playback does not work anymore</summary>
+    </bug>
+    <bug>
+      <id>668192</id>
+      <summary>codecparsers: h264: fix ref_pic_list_modification()</summary>
+    </bug>
+    <bug>
+      <id>668311</id>
+      <summary>does pkg-config check for gst-plugins-good-0.10.pc which is not installed</summary>
+    </bug>
+    <bug>
+      <id>668380</id>
+      <summary>[h264parse] [codecparsers] gst_h264_parse_hrd_parameters not reading cbr_flag</summary>
+    </bug>
+    <bug>
+      <id>668381</id>
+      <summary>[h264parse] [codecparsers] SEI parsing fails when payload contains emulation_prevention_three_byte</summary>
+    </bug>
+    <bug>
+      <id>668471</id>
+      <summary>[h264parse] Negotiation regression for autoplugging</summary>
+    </bug>
+    <bug>
+      <id>668521</id>
+      <summary>REQUIREMENTS file doesn't list requirement for rtmp</summary>
+    </bug>
+    <bug>
+      <id>668627</id>
+      <summary>[h264parse] conversion avc/au to byte-stream/au broken</summary>
+    </bug>
+    <bug>
+      <id>668833</id>
+      <summary>kateenc provides wrong duration information when muxed in Matroska</summary>
+    </bug>
+    <bug>
+      <id>669365</id>
+      <summary>rotate plugin docs say that 'angle' is in radians, yet seems to be in degrees</summary>
+    </bug>
+    <bug>
+      <id>669697</id>
+      <summary>shmsink blocking forever</summary>
+    </bug>
+    <bug>
+      <id>628609</id>
+      <summary>The qtwrapperaudiodec_samr decoder doesn't handle buffers containing many AMR frames properly</summary>
+    </bug>
+    <bug>
+      <id>655318</id>
+      <summary>photography: add missing FLICKER_REDUCTION capability</summary>
+    </bug>
+  </bugs>
+</release>

@@ -1,0 +1,788 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Faster</name>
+  <version>0.10.31</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.10.x stable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.10.x series is a stable series targeted at end users.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>audioparsers: propagate downstream caps constraints upstream</feature>
+    <feature>ac3parse: add support for IEC 61937 alignment and conversion/switching between alignments</feature>
+    <feature>ac3parse: let bsid 9 and 10 through</feature>
+    <feature>auparse: implement seeking</feature>
+    <feature>avidemux: fix wrong stride when inverting uncompressed video</feature>
+    <feature>cairotextoverlay: add a "silent" property to skip rendering; forward new segment events</feature>
+    <feature>deinterlace: add support for deinterlacing using buffer caps/flags (as set by e.g. fieldanalysis)</feature>
+    <feature>deinterlace: new fieldanalysis-related properties: "locking" and "ignore-obscure"</feature>
+    <feature>directsoundsink: fix negotiation/device setup: 16-bit audio is signed, 8-bit is unsigned</feature>
+    <feature>effecttv: fix reverse negotiation; repair color modes in radioactv by taking rgb,bgr into account</feature>
+    <feature>equalizer: also sync the parameters for the filter bands</feature>
+    <feature>flacdec: better timestamp/offset handling; try upstream first for duration queries</feature>
+    <feature>flacdec: send EOS when seeking after the end of file instead of failing</feature>
+    <feature>flacenc: do not drop the first data buffer on the floor</feature>
+    <feature>flacparse: detect when a file lies about fixed block size; ignore invalid minimum_blocksize</feature>
+    <feature>flacparse: more accurate/better duration/timestamp handling</feature>
+    <feature>flvdemux: better timestamp handling (negative cts, detect large pts gaps; fix discontinuity threshold check when timestamps go backwards)</feature>
+    <feature>flvmux: properly determine final duration; metadata/header writing fixes</feature>
+    <feature>gdkpixbufsink: fix inverted pixel-aspect-ratio info on pixbufs</feature>
+    <feature>jack: add "client-name" property to jackaudiosink and jackaudiosrc</feature>
+    <feature>jpegdec: add sof-marker to template caps, so we don't get plugged for lossless jpeg</feature>
+    <feature>jpegdec: Implement upstream negotiation</feature>
+    <feature>matroskademux: seeking fixes; better handling of non-finalized files</feature>
+    <feature>matroskademux: better timestamp/duration handling, fix some stuttering A/V</feature>
+    <feature>matroskademux: add "max-gap-time" property to make gap handling configurable</feature>
+    <feature>matroskademux: UTF-8 subtitles may have markup</feature>
+    <feature>matroskamux: do not use unoffical V_MJPEG codec id</feature>
+    <feature>matroskamux: fix segment handling, so we actually use running time</feature>
+    <feature>matroskamux: for streaming files, push tags first</feature>
+    <feature>matroskamux: handle GstForceKeyUnit event</feature>
+    <feature>multifile: new splitfilesrc element to read multiple files as if they were one single file</feature>
+    <feature>multifilesrc: add "loop" property</feature>
+    <feature>multifilesink: handle buffer lists, useful to keep groups of buffers (GOPs) in the same file</feature>
+    <feature>multifilesink: add flag to cut after a force key unit event</feature>
+    <feature>multifilesink: add "max-files" property</feature>
+    <feature>multifilesink: add new 'max-size' mode and "max-file-size" property for switching to the next file based on size</feature>
+    <feature>multifilesink: write stream-headers when switching to the next file in max-size mode</feature>
+    <feature>multipartdemux: Add property to assume a single stream and emit no-more-pads</feature>
+    <feature>multipartmux: Add \r\n to tail of pushed buffers</feature>
+    <feature>navseek: toggle pause/play on space bar</feature>
+    <feature>osxvideo: Fix leak of NSOpenGLPixelFormat object</feature>
+    <feature>pcmadepay,pcmudepay: allow variable sample rate</feature>
+    <feature>pngenc: increase arbitrary resolution limits</feature>
+    <feature>pulse: Drop support for PA versions before 0.9.16 (1.x is recommended)</feature>
+    <feature>pulse: new pulseaudiosink element to handle format changes (not autoplugged yet)</feature>
+    <feature>pulsesink: add support for compressed audio format passthrough (S/PDIF, mp3-over-bluetooth)</feature>
+    <feature>pulsesink: Allow writes in bigger chunks</feature>
+    <feature>pulsesink: Use the extended stream API if available</feature>
+    <feature>pulsesrc: add a "source-output-index" property; implement GstStreamVolume interface</feature>
+    <feature>qtdemux: better fragmented support (avoid adjustment for keyframe seek; mark all audio track samples as keyframe)</feature>
+    <feature>qtdemux: parse embedded ID32 tags; improve bitrate guessing/extraction</feature>
+    <feature>qtdemux: push mode fixes, fix buffered streaming</feature>
+    <feature>qtmux: add direct dirac mapping</feature>
+    <feature>qtmux: calculate average bitrate for streams</feature>
+    <feature>qtmux: fix ctts generation for streams that don't start at 0 timestamps</feature>
+    <feature>qtmux: use GST_TAG_IMAGE for coverart too</feature>
+    <feature>ismlmux: Use iso-fragmented as variant type (useful in connection with encodebin)</feature>
+    <feature>rtph263ppay: implement getcaps following RFC 4629, picks the right annexes</feature>
+    <feature>rtph263ppay: set H263-2000 if thats what the other side wants</feature>
+    <feature>rtph264depay: complete merged AU on marker bit (thus reducing latency)</feature>
+    <feature>rtph264depay: cope with FU-A E bit not being set (caused by buggy payloaders)</feature>
+    <feature>rtph264depay: exclude NALu size from payload length on truncated packets</feature>
+    <feature>rtph264pay: proxy downstream caps restrictions (converting profile-level-id from RTP caps into video/x-h264 style caps)</feature>
+    <feature>rtph264pay: only set the marker bit on the last NALU of a multi-NALU access unit</feature>
+    <feature>rtpjpegpay: add support for H.264 payload in MJPEG container</feature>
+    <feature>rtpjpegpay: fix for "odd" resolutions not a multiple of DCTSIZE</feature>
+    <feature>rtpmp4adepay: fix output buffer timestamps in case of multiple frames</feature>
+    <feature>rtpmp4gdepay: improve bogus interleaved index compensating</feature>
+    <feature>rtpmp4vpay: deprecated send-config property and replace by config-interval</feature>
+    <feature>rtppcmapay/depay: static clock rates on static payloads, dynamic on dynamic</feature>
+    <feature>rtpvrawpay,-depay: RGB video payloading/depayloading fixes</feature>
+    <feature>rtpg722pay: Compensate for clockrate vs. samplerate difference</feature>
+    <feature>rtpbin: allow configurable rtcp stream syncing interval</feature>
+    <feature>rtpbin: new "rtcp-sync" property, alternative inter-stream syncing methods</feature>
+    <feature>rtpjitterbuffer/rtpbin: relax dropping rtcp packets; misc other fixes</feature>
+    <feature>rtpmanager: don't reveal the user's username, hostname or real name by default</feature>
+    <feature>rtpsession: process received Full Intra Requests (FIR)</feature>
+    <feature>rtpsession: add special mode to use FIR as repair as Google does</feature>
+    <feature>rtpsession: send FIR requests in response to key unit requests with all-headers=TRUE</feature>
+    <feature>rtpsession: always send application requested feedback in immediate mode</feature>
+    <feature>rtpsession: put the PLI requests in each RTPSource</feature>
+    <feature>rtpsession: wait longer to timeout SSRC collision</feature>
+    <feature>rtspsrc: implement async network I/O</feature>
+    <feature>rtspsrc: allow sending short RTSP requests to a server</feature>
+    <feature>rtspsrc: configure rtcp interval if provided</feature>
+    <feature>rtspsrc: open on play and pause when not done yet</feature>
+    <feature>shout2send: send video/webm through libshout</feature>
+    <feature>soup: new souphttpclientsink element</feature>
+    <feature>udpsrc: drop dataless UDP packets</feature>
+    <feature>v4l2: take care not to change the current format where appropriate</feature>
+    <feature>v4l2src, v4l2sink: add "norm" property; default to a pixel-aspect-ratio of 1/1</feature>
+    <feature>v4l2src: do not ignore the highest frame interval or the largest resolution</feature>
+    <feature>v4l2src: handle some feature query failures more gracefully</feature>
+    <feature>videobox: avoid wrapping opaque to transparent</feature>
+    <feature>wavenc: Allow setcaps to be called after a format was negotiated if it's compatible</feature>
+    <feature>ximagesrc: add "xid" and "xname" properties to allow capturing a particular window</feature>
+    <feature>ximagesrc: fallback to non-XShm mode if allocating the XShm image failed</feature>
+    <feature>ximagesrc: clear flags on buffer reuse, so that flags like DISCONT aren't set accidentally</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Alexey Fisher</person>
+	<person>Andoni Morales Alastruey</person>
+	<person>Antoine Jacoutot</person>
+	<person>Arun Raghavan</person>
+	<person>Branko Subasic</person>
+	<person>Brian Li</person>
+	<person>Chad</person>
+	<person>David Henningsson</person>
+	<person>David Schleef</person>
+	<person>David Svensson Fors</person>
+	<person>Debarshi Ray</person>
+	<person>Edward Hervey</person>
+	<person>Gary Ching-Pang Lin</person>
+	<person>Guillaume Desmottes</person>
+	<person>Ha Nguyen</person>
+	<person>Havard Graff</person>
+	<person>Jan Schmidt</person>
+	<person>Jayakrishnan M</person>
+	<person>John Ogness</person>
+	<person>Jonas Larsson</person>
+	<person>Jonny Lamb</person>
+	<person>Julien Isorce</person>
+	<person>Konstantin Miller</person>
+	<person>Lasse Laukkanen</person>
+	<person>Marc Leeman</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Mart Raudsepp</person>
+	<person>Miguel Angel Cabrera Moya</person>
+	<person>Monty Montgomery</person>
+	<person>Nicola Murino</person>
+	<person>Nicolas Baron</person>
+	<person>Olivier Crête</person>
+	<person>Pascal Buhler</person>
+	<person>Peter Korsgaard</person>
+	<person>Peter Seiderer</person>
+	<person>Philip Jägenstedt</person>
+	<person>Philippe Normand</person>
+	<person>Raimo Järvi</person>
+	<person>Ralph Giles</person>
+	<person>Raul Gutierrez Segales</person>
+	<person>René Stadler</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Robert Krakora</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Rasmussen</person>
+	<person>Sjoerd Simons</person>
+	<person>Stas Sergeev</person>
+	<person>Stefan Kost</person>
+	<person>Stefan Sauer</person>
+	<person>Stig Sandnes</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tristan Matthews</person>
+	<person>Tuukka Pasanen</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>668320</id>
+      <summary>rtpmanager: RTCP receiver reports reveal full user name</summary>
+    </bug>
+    <bug>
+      <id>652727</id>
+      <summary>multifilesrc: add ability to loop</summary>
+    </bug>
+    <bug>
+      <id>657422</id>
+      <summary>[souphttpsrc] The souphttpsrc plugin doesn't work behind a proxy that requires authentication</summary>
+    </bug>
+    <bug>
+      <id>432612</id>
+      <summary>[matroskamux] doesn't handle segments correctly</summary>
+    </bug>
+    <bug>
+      <id>541215</id>
+      <summary>[avimux] Dirac muxing is broken and results in A/V sync issues</summary>
+    </bug>
+    <bug>
+      <id>546932</id>
+      <summary>[ximagesrc] allow recording of specific window only</summary>
+    </bug>
+    <bug>
+      <id>571400</id>
+      <summary>RTSP blocks in gst_element_set_state( GST_STATE_PAUSED ) and incorrect url</summary>
+    </bug>
+    <bug>
+      <id>576524</id>
+      <summary>rtpbin, jitterbuffer: add mode to support for recording RTP streams</summary>
+    </bug>
+    <bug>
+      <id>586450</id>
+      <summary>[cairotextoverlay] Forward upstream events to both sinkpads</summary>
+    </bug>
+    <bug>
+      <id>595055</id>
+      <summary>[pulsesrc] Should implement GstStreamVolume interface</summary>
+    </bug>
+    <bug>
+      <id>605834</id>
+      <summary>directsoundsink: 16-bit audio is always signed while 8-bit is always unsigned</summary>
+    </bug>
+    <bug>
+      <id>610916</id>
+      <summary>rtspsrc dosen't work under windows</summary>
+    </bug>
+    <bug>
+      <id>614803</id>
+      <summary>v4l2:  add tv-norm property</summary>
+    </bug>
+    <bug>
+      <id>616686</id>
+      <summary>multipartdemux: add &quot; single-stream &quot; property to emit no-more-pads earlier</summary>
+    </bug>
+    <bug>
+      <id>616936</id>
+      <summary>[matroskademux] Incorrect display of subtitles with markup</summary>
+    </bug>
+    <bug>
+      <id>619548</id>
+      <summary>qtdemux: Guess bitrate if only one stream's bitrate is unknown</summary>
+    </bug>
+    <bug>
+      <id>619590</id>
+      <summary>[matroskademux] Doesn't protect segment and other fields from concurrent changes from different threads</summary>
+    </bug>
+    <bug>
+      <id>620186</id>
+      <summary>qtdemux: Export max bitrate for AMR-NB/-WB streams</summary>
+    </bug>
+    <bug>
+      <id>622412</id>
+      <summary>[rtpmp4vpay] remove send-config parameter; obsoleted by config-interval</summary>
+    </bug>
+    <bug>
+      <id>624887</id>
+      <summary>pitivi playback hangs / errors while playing mov clips on clip change</summary>
+    </bug>
+    <bug>
+      <id>630456</id>
+      <summary>[ximagesrc] Fallback to non-XShm mode if image allocation fails</summary>
+    </bug>
+    <bug>
+      <id>631430</id>
+      <summary>[flvdemux] Cannot play .flv to the end</summary>
+    </bug>
+    <bug>
+      <id>632504</id>
+      <summary>[rtspsrc] reduce or avoid (network) hang during shutdown</summary>
+    </bug>
+    <bug>
+      <id>634093</id>
+      <summary>RTSP client asks for unicast from multicast only server</summary>
+    </bug>
+    <bug>
+      <id>638300</id>
+      <summary>v4l2src: make this work more than once in a row</summary>
+    </bug>
+    <bug>
+      <id>639217</id>
+      <summary>udpsrc: allow skip-first-bytes of full buffer size</summary>
+    </bug>
+    <bug>
+      <id>640323</id>
+      <summary>[cairotextoverlay] forward new segment events from the sink to the source</summary>
+    </bug>
+    <bug>
+      <id>643847</id>
+      <summary>deinterlace: Add support for deinterlacing using buffer caps/flags</summary>
+    </bug>
+    <bug>
+      <id>644151</id>
+      <summary>[multifilesink] Add option to create a new file after each GstForceKeyUnit event</summary>
+    </bug>
+    <bug>
+      <id>644154</id>
+      <summary>[matroskamux] Force a new cluster after each GstForceKeyUnit event</summary>
+    </bug>
+    <bug>
+      <id>644512</id>
+      <summary>[auparse] Add seeking</summary>
+    </bug>
+    <bug>
+      <id>647540</id>
+      <summary>autoaudiosink picks element to use by rank, but pulsesink/alsasink/jackaudiosink are all PRIMARY</summary>
+    </bug>
+    <bug>
+      <id>648312</id>
+      <summary>[v4l2sink] Unconditionally accepts video/mpegts</summary>
+    </bug>
+    <bug>
+      <id>648642</id>
+      <summary>rtpsession: Ensure ssrc collisions aren't timed out immediately</summary>
+    </bug>
+    <bug>
+      <id>648937</id>
+      <summary>matroskademux: avoid building index when streamable</summary>
+    </bug>
+    <bug>
+      <id>649067</id>
+      <summary>v4l2src: got unexpected frame size of 262254 instead of 614400</summary>
+    </bug>
+    <bug>
+      <id>649617</id>
+      <summary>[rtp] Deadlock and other fixes for rtpssrcdemux</summary>
+    </bug>
+    <bug>
+      <id>649780</id>
+      <summary>flac: seek beyond end fails instead of EOSing immediately</summary>
+    </bug>
+    <bug>
+      <id>649955</id>
+      <summary>flvmux: add support for mpegversion 2, which is also AAC</summary>
+    </bug>
+    <bug>
+      <id>650258</id>
+      <summary>matroskademux/matroskaparse: gst_element_query_duration returns wrong value for Matroska files</summary>
+    </bug>
+    <bug>
+      <id>650313</id>
+      <summary>ac3parse: Add support for iec61937 alignment</summary>
+    </bug>
+    <bug>
+      <id>650503</id>
+      <summary>[dvdemux] Broken DURATION query handling</summary>
+    </bug>
+    <bug>
+      <id>650555</id>
+      <summary>[aacparse] AAC profiles needed in caps</summary>
+    </bug>
+    <bug>
+      <id>650691</id>
+      <summary>[flacparse] regression playing some flac files</summary>
+    </bug>
+    <bug>
+      <id>650714</id>
+      <summary>[amrparse] skips first few frames (problem in checking sync)</summary>
+    </bug>
+    <bug>
+      <id>650785</id>
+      <summary>[flacparse] duration query in DEFAULT format failing with flacparse in pipeline (regression)</summary>
+    </bug>
+    <bug>
+      <id>650877</id>
+      <summary>matroska: refactor code common to matroskademux and matroskaparse</summary>
+    </bug>
+    <bug>
+      <id>650912</id>
+      <summary>Rare leak in qtdemux</summary>
+    </bug>
+    <bug>
+      <id>650916</id>
+      <summary>REGRESSION: ssrcdemux causing FLOW_NOT_LINKED</summary>
+    </bug>
+    <bug>
+      <id>650937</id>
+      <summary>deinterlace: fix parameter type in trace</summary>
+    </bug>
+    <bug>
+      <id>651059</id>
+      <summary>rtspsrc: uniform unknown message handling</summary>
+    </bug>
+    <bug>
+      <id>651443</id>
+      <summary>multifilesink: add next-file=max-size mode and max-file-size property</summary>
+    </bug>
+    <bug>
+      <id>652195</id>
+      <summary>matroskademux: seeking in non-finalized matroska files does not work correctly</summary>
+    </bug>
+    <bug>
+      <id>652286</id>
+      <summary>matroskaparse: Gstreamer-CRITICAL when changing state from PAUSED to READY</summary>
+    </bug>
+    <bug>
+      <id>652467</id>
+      <summary>matroska: missing &lt; stdio.h &gt; include for sscanf</summary>
+    </bug>
+    <bug>
+      <id>653080</id>
+      <summary>matroskamux: make check for block_duration less sensitive</summary>
+    </bug>
+    <bug>
+      <id>653091</id>
+      <summary>[dv1394src] Make the internal clock thread-safe</summary>
+    </bug>
+    <bug>
+      <id>653327</id>
+      <summary>configure script for gst-plugins-good selects shout2 when it's not present</summary>
+    </bug>
+    <bug>
+      <id>653559</id>
+      <summary>aacparse: too greedy minimum frame size</summary>
+    </bug>
+    <bug>
+      <id>653709</id>
+      <summary>[ximagesrc] sets DISCONT on half the buffers</summary>
+    </bug>
+    <bug>
+      <id>654175</id>
+      <summary>matroskademux: handle blocks with duration=0</summary>
+    </bug>
+    <bug>
+      <id>654379</id>
+      <summary>matroskamux: make default framerate optional per stream</summary>
+    </bug>
+    <bug>
+      <id>654583</id>
+      <summary>Immediate RTCP in rtpsession</summary>
+    </bug>
+    <bug>
+      <id>654585</id>
+      <summary>rtpmp4gdepay choppy sound</summary>
+    </bug>
+    <bug>
+      <id>654744</id>
+      <summary>matroskademux: fix aspect ratio if header has only onle display variable set</summary>
+    </bug>
+    <bug>
+      <id>654749</id>
+      <summary>goom: unbreak build on PPC on openbsd</summary>
+    </bug>
+    <bug>
+      <id>654816</id>
+      <summary>[rtspsrc] rtspsrc doesn't get eos if it's wrapped into a bin</summary>
+    </bug>
+    <bug>
+      <id>655530</id>
+      <summary>Logitech B990 HD Webcam yields poor video in MJPEG mode.</summary>
+    </bug>
+    <bug>
+      <id>655570</id>
+      <summary>qtdemux: assertion error when playing Apple Trailers</summary>
+    </bug>
+    <bug>
+      <id>655805</id>
+      <summary>Make the extended RTSP headers optional</summary>
+    </bug>
+    <bug>
+      <id>655866</id>
+      <summary>jackaudiosink: Don't call g_alloca in jack_process_cb</summary>
+    </bug>
+    <bug>
+      <id>655918</id>
+      <summary>qtdemux : qtdemux_add_fragmented_samples return error.</summary>
+    </bug>
+    <bug>
+      <id>656104</id>
+      <summary>v4l2src fails to correctly configure the framerate</summary>
+    </bug>
+    <bug>
+      <id>656606</id>
+      <summary>crash in gst_spectrum_reset_message_data()</summary>
+    </bug>
+    <bug>
+      <id>656649</id>
+      <summary>flacparse: fix off by one in frame size check</summary>
+    </bug>
+    <bug>
+      <id>656734</id>
+      <summary>[aacparse] Assumes 1024 samples per frame</summary>
+    </bug>
+    <bug>
+      <id>657080</id>
+      <summary>aacparse: failing test due to two buffers being dropped for one sync loss</summary>
+    </bug>
+    <bug>
+      <id>657179</id>
+      <summary>pulse: New pulseaudiosink element to handle format changes</summary>
+    </bug>
+    <bug>
+      <id>657376</id>
+      <summary>rtspsrc regression</summary>
+    </bug>
+    <bug>
+      <id>657830</id>
+      <summary>multiudpsink: make add/remove/clear/get-stats action signals</summary>
+    </bug>
+    <bug>
+      <id>658178</id>
+      <summary>udpsrc: rough error reporting when using an invalid URI</summary>
+    </bug>
+    <bug>
+      <id>658305</id>
+      <summary>[souphttpsrc] can’t seek during double speed playback</summary>
+    </bug>
+    <bug>
+      <id>658419</id>
+      <summary>Add FIR support to rtpsession</summary>
+    </bug>
+    <bug>
+      <id>658543</id>
+      <summary>[v4l2src] Use GST_RESOURCE_ERROR_BUSY if webcam is already used</summary>
+    </bug>
+    <bug>
+      <id>658546</id>
+      <summary>ac3parse: RealAudio file with AC-3 audio no longer plays</summary>
+    </bug>
+    <bug>
+      <id>659009</id>
+      <summary>[matroskademux] property for configuring gap handling</summary>
+    </bug>
+    <bug>
+      <id>659065</id>
+      <summary>navseek: toggle pause/play on space bar</summary>
+    </bug>
+    <bug>
+      <id>659153</id>
+      <summary>matroskademux: fix stuttering A/V</summary>
+    </bug>
+    <bug>
+      <id>659237</id>
+      <summary>[gstrtpbin] clock is not unreffed after finish using it</summary>
+    </bug>
+    <bug>
+      <id>659242</id>
+      <summary>[matroskademux] Unexpected EOS when seeking on paused matroska file</summary>
+    </bug>
+    <bug>
+      <id>659798</id>
+      <summary>Segfault when you convert with audioconvert from audio file mkv to audio file avi</summary>
+    </bug>
+    <bug>
+      <id>659808</id>
+      <summary>matroskademux: misc fixes</summary>
+    </bug>
+    <bug>
+      <id>659837</id>
+      <summary>matroskamux: unable to mux audio/x-raw-int,rate=8000,channels=1,endianness=1234,width=16,depth=16,signed=true</summary>
+    </bug>
+    <bug>
+      <id>659943</id>
+      <summary>[ac3parse] it does not correcly check for ac3/e-ac3 switch</summary>
+    </bug>
+    <bug>
+      <id>660249</id>
+      <summary>won't play wav file: invalid WAV header (no fmt at start): ID32</summary>
+    </bug>
+    <bug>
+      <id>660275</id>
+      <summary>jpegdec doesn't implement upstream negotiation</summary>
+    </bug>
+    <bug>
+      <id>660294</id>
+      <summary>goom2k1: Fix mingw compiler warnings</summary>
+    </bug>
+    <bug>
+      <id>660448</id>
+      <summary>videomixer2: memory leak</summary>
+    </bug>
+    <bug>
+      <id>660468</id>
+      <summary>speexenc: fix calculation of filler data size</summary>
+    </bug>
+    <bug>
+      <id>660481</id>
+      <summary>v4l, ximagesrc: printf format warnings</summary>
+    </bug>
+    <bug>
+      <id>660969</id>
+      <summary>qtmux memleak</summary>
+    </bug>
+    <bug>
+      <id>661049</id>
+      <summary>matroskademux: support seek with start_type NONE</summary>
+    </bug>
+    <bug>
+      <id>661215</id>
+      <summary>flacparse: fix last frame timestamp in fixed block size mode</summary>
+    </bug>
+    <bug>
+      <id>661400</id>
+      <summary>rtpg722pay: G722 rtptime too fast</summary>
+    </bug>
+    <bug>
+      <id>661477</id>
+      <summary>flvdemux: negative cts causes uint overflow, resulting in sinks waiting forever</summary>
+    </bug>
+    <bug>
+      <id>661841</id>
+      <summary>[edgetv] video artifacts if videorate placed after edgetv</summary>
+    </bug>
+    <bug>
+      <id>661874</id>
+      <summary>aacparse fails to forward caps to encoder</summary>
+    </bug>
+    <bug>
+      <id>662856</id>
+      <summary>cairotextoverlay: add a 'silent' property to skip rendering</summary>
+    </bug>
+    <bug>
+      <id>663186</id>
+      <summary>taginject is not gap aware</summary>
+    </bug>
+    <bug>
+      <id>663334</id>
+      <summary>gst/flv/: add amfdefs.h to noinst_HEADERS</summary>
+    </bug>
+    <bug>
+      <id>663580</id>
+      <summary>v4l2src negotiation failure with weird pixel-aspect-ratios</summary>
+    </bug>
+    <bug>
+      <id>664548</id>
+      <summary>matroskaparse: memleak</summary>
+    </bug>
+    <bug>
+      <id>664792</id>
+      <summary>Staircase effect in M-JPEG over RTP with unaligned image dimensions..</summary>
+    </bug>
+    <bug>
+      <id>664892</id>
+      <summary>[matroskademux] Doesn't set caps properly</summary>
+    </bug>
+    <bug>
+      <id>665387</id>
+      <summary>v4l2src: fix stepwise enumeration ignoring the highest values</summary>
+    </bug>
+    <bug>
+      <id>665412</id>
+      <summary>matroskamux: jpeg muxing regression</summary>
+    </bug>
+    <bug>
+      <id>665502</id>
+      <summary>[flvdemux] broken a/v sync for some files</summary>
+    </bug>
+    <bug>
+      <id>665666</id>
+      <summary>multifilesink: GstMultiFileSinkNext not documented</summary>
+    </bug>
+    <bug>
+      <id>665872</id>
+      <summary>jackaudiosink, jackaudiosrc: add &quot; client-name &quot; property</summary>
+    </bug>
+    <bug>
+      <id>665882</id>
+      <summary>gdkpixbufsink: &quot; pixel-aspect-ratio &quot; is the inverse of what it should be</summary>
+    </bug>
+    <bug>
+      <id>665911</id>
+      <summary>Ability to specify ignore-length in wavparse</summary>
+    </bug>
+    <bug>
+      <id>666361</id>
+      <summary>playbin2: regression: visualisations don't work with pulseaudiosink</summary>
+    </bug>
+    <bug>
+      <id>666583</id>
+      <summary>matroskademux: too many bus messages in streamable mode</summary>
+    </bug>
+    <bug>
+      <id>666602</id>
+      <summary>ac3parse: no valid frames found before end of stream (unexpected bsid=10)</summary>
+    </bug>
+    <bug>
+      <id>666644</id>
+      <summary>udpsrc: infinite loop on dataless UDP packets</summary>
+    </bug>
+    <bug>
+      <id>666688</id>
+      <summary>jpedec: peer_caps leak</summary>
+    </bug>
+    <bug>
+      <id>666711</id>
+      <summary>rtspsrc: hostname lookup is not thread safe</summary>
+    </bug>
+    <bug>
+      <id>667419</id>
+      <summary>matroskamux memleaks</summary>
+    </bug>
+    <bug>
+      <id>667818</id>
+      <summary>osxvideo: Fix leak of NSOpenGLPixelFormat object</summary>
+    </bug>
+    <bug>
+      <id>667820</id>
+      <summary>rtpptdemux: Plug potential pad leak.</summary>
+    </bug>
+    <bug>
+      <id>667846</id>
+      <summary>rtph264depay: Exclude NALu size from payload length on truncated packets.</summary>
+    </bug>
+    <bug>
+      <id>668648</id>
+      <summary>gst-plugins-good does not compile: cairo cannot find libgstvideo-0.10</summary>
+    </bug>
+    <bug>
+      <id>669455</id>
+      <summary>V4l2src can't open webcamstudio new vloopback</summary>
+    </bug>
+    <bug>
+      <id>669590</id>
+      <summary>[shout2send] support webm streaming</summary>
+    </bug>
+    <bug>
+      <id>670197</id>
+      <summary>v4l2src: webcam doesn't work due to fatal error when querying color balance attributes</summary>
+    </bug>
+    <bug>
+      <id>650960</id>
+      <summary>flacparse makes decoded flac files start at sample offset 9215</summary>
+    </bug>
+    <bug>
+      <id>659947</id>
+      <summary>souphttpsink: rename to souphttpclientsink?</summary>
+    </bug>
+    <bug>
+      <id>658659</id>
+      <summary>qtmux: Fix ctts entries for streams that don't start with timestamps from 0</summary>
+    </bug>
+  </bugs>
+
+</release>
