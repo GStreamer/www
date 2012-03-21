@@ -4452,5 +4452,16 @@ directly.
     </p>
     </content>
   </item>
+ <item>
+      <date>2012-03-21 13:00</date>
+          <title>GStreamer Participating in Google Summer of Code 2012</title>
+          <content>
+          <p>
+The GStreamer project is happy to announce that we are a mentoring organization in the 2012 <a href="http://www.google-melange.com/gsoc/dashboard/google/gsoc2012">Google Summer of Code</a>. This means students from all over the world who are interested in open source and multimedia can apply to do a project related to GStreamer as their paid summer job this year. You can find more information about this and how to apply on the <a href="http://gstreamer.freedesktop.org/wiki/TaskList">GStreamer Google Summer of Code 2012 wiki page.</a>. 
+                  </p>
+                      </content>
+  </item>
+
+
 
 </news>
