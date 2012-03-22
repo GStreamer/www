@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <name>Rite of Devastation</name>
+  <version>0.11.2</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.11.x unstable series of the
+GStreamer Good Plug-ins.
+</p>
+<p>
+The 0.11.x series is an unstable series targeted at developers and will
+eventually lead up to the stable 1.0 series.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plug-ins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plug-in on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plug-ins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plug-in
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plug-ins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+         <feature>Many cleanups</feature>
+         <feature>Ported to new 0.11 core API changes</feature>
+         <feature>flacenc: various fixes</feature>
+         <feature>gdkpixbuf: port to 0.11</feature>
+         <feature>wavpack: port to 0.11</feature>
+         <feature>rtpbin: many fixes</feature>
+         <feature>qtdemux: use PTS and DTS</feature>
+         <feature>imagefreeze: port to 0.11</feature>
+         <feature>qtdemux: negotiate allocators</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+      <contributors>
+	<person>Alessandro Decina</person>
+	<person>Andrej Gelenberg</person>
+	<person>Antoine Tremblay</person>
+	<person>David Schleef</person>
+	<person>Dominique Leuenberger</person>
+	<person>Edward Hervey</person>
+	<person>Marc Leeman</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Matej Knopp</person>
+	<person>Nicola Murino</person>
+	<person>Oleksij Rempel (Alexey Fisher)</person>
+	<person>Olivier Crête</person>
+	<person>Peteris Krisjanis</person>
+	<person>Ross Burton</person>
+	<person>Sebastian Dröge</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Stefan Sauer</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vincent Untz</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>670623</id>
+      <summary>[0.11] flacenc not working</summary>
+    </bug>
+    <bug>
+      <id>628773</id>
+      <summary>[0.11] rtp -- match properties and caps fields</summary>
+    </bug>
+    <bug>
+      <id>658357</id>
+      <summary>[0.11] pulse: build fails with recent pulseaudio</summary>
+    </bug>
+    <bug>
+      <id>662615</id>
+      <summary>[0.11] build failure due to printf format compiler warnings on OSX 64 bit</summary>
+    </bug>
+    <bug>
+      <id>667085</id>
+      <summary>[0.11] dcaparse: uses uninitialized variable</summary>
+    </bug>
+    <bug>
+      <id>669607</id>
+      <summary>[0.11] directsoundsink: Fix compiling</summary>
+    </bug>
+    <bug>
+      <id>669612</id>
+      <summary>[0.11] waveformsink: Port to 0.11</summary>
+    </bug>
+    <bug>
+      <id>669643</id>
+      <summary>[0.11] interleave port</summary>
+    </bug>
+    <bug>
+      <id>670320</id>
+      <summary>gst-plugins-good 0.11.1 fails to build due to missing gstsmokedec.h</summary>
+    </bug>
+    <bug>
+      <id>671534</id>
+      <summary>[0.11] qtmux: cover art tag is GstSample now</summary>
+    </bug>
+    <bug>
+      <id>670303</id>
+      <summary>[0.11] Can't access &quot; rms &quot; , &quot; peak &quot; and &quot; decay &quot; keys from GstLevel bus message trough PyGI</summary>
+    </bug>
+  </bugs>
+
+</release>
