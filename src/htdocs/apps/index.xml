@@ -98,6 +98,10 @@ synchronization.  It uses GStreamer for the video playback.
 <p><a href="http://gmrender.nongnu.org/">GMediaRender</a> is a upnp client for 
 use with upnp media servers</p>
 
+<h2>GstLAL</h2>
+<p><a href="https://www.lsc-group.phys.uwm.edu/daswg/projects/gstlal.html">GstLAL</a> is a
+suite of gstreamer elements and applications for gravitational wave data analysis.</p>
+
 <h2>Istanbul</h2>
 <p><a href="http://live.gnome.org/Istanbul">Istanbul</a> is a screen recorder
 </p>
