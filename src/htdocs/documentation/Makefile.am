@@ -14,7 +14,7 @@ checkoutdir:
 
 # Note: using pushd/popd because GIT_DIR doesn't seem to work properly
 plugins.xml: checkoutdir
-	for m in gstreamer gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad gst-plugins-gl; do \
+	for m in gstreamer gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad; do \
 	  moduledir=$(CHECKOUT_DIR)/$$m; \
 	  if [ -d $$moduledir ] ; then \
 	    pushd $$moduledir >/dev/null; \
@@ -26,14 +26,14 @@ plugins.xml: checkoutdir
 	      echo "$$m checkout: skipping update (GST_WWW_SKIP_DOC_CHECKOUT_UPDATES is set)"; \
 	    else \
 	      echo "$$m checkout: updating..."; \
-	      git pull || { \
+	      git checkout 0.10 && git pull || { \
 	        echo "Updating $$m checkout failed"; exit 1; \
 	      } ; \
 	    fi; \
 	    popd >/dev/null; \
 	  else \
 	    echo "$$m checkout: creating (cloning)"; \
-	    git clone git://anongit.freedesktop.org/gstreamer/$$m $$moduledir || { \
+	    git clone git://anongit.freedesktop.org/gstreamer/$$m $$moduledir && cd $$moduledir && git checkout origin/0.10 -b 0.10 && cd .. || { \
 	      echo "git clone failed"; exit 1; \
 	    } ; \
 	  fi; \
