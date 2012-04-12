@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name>And all with pearl and ruby glowing was the fair palace door</name>
+  <version>0.11.90</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.11.x unstable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 0.11.x series is an unstable series targeted at developers and will
+eventually lead up to the stable 1.0 series.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series.
+</p>
+<p>
+The 0.11.x series has improved memory management and features
+various cleanups and enhancements.
+</p>
+
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plug-ins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Lots of bugfixes, cleanup and other improvements</feature>
+    <feature>Improvements to the buffer and memory managment API</feature>
+    <feature>A new GstTOC interface, e.g. for handling chapters</feature>
+    <feature>The GstChildProxy interface works with any GObject now</feature>
+  </features>
+
+  <applications>
+<p>
+Various applications have early ports to GStreamer 0.11 including Totem, RhythmBox,
+Webkit, Jokosher, Transmageddon and others. We're working on porting more applications.
+</p>
+  </applications>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Alexander Saprykin</person>
+	<person>Christian Fredrik Kalager Schaller</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Fabrizio (Misto) Milo</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Matej Knopp</person>
+	<person>Olivier Crête</person>
+	<person>Ryan Lortie</person>
+	<person>Sebastian Dröge</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Stefan Sauer</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Руслан Ижбулатов</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  <bugs>
+  </bugs>
+</release>
