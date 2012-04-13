@@ -230,14 +230,14 @@ make release > /dev/null 2>&1 || exit 1
 popd
 mv $moduledir/$module-$version.tar.* data/src/$module
 
-#if [ -d $moduledir/docs ]; then
-#echo "Updating docs on website"
-#pushd $moduledir/docs > /dev/null 2>&1
-#make upload > /dev/null 2>&1
-#popd
-#else
-#echo "Not updating docs on website - no docs directory"
-#fi
+if [ -d $moduledir/docs ]; then
+echo "Updating docs on website"
+pushd $moduledir/docs > /dev/null 2>&1
+make upload > /dev/null 2>&1
+popd
+else
+echo "Not updating docs on website - no docs directory"
+fi
 
 if test -d $moduledir/po
 then
