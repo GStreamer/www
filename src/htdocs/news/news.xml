@@ -4494,5 +4494,39 @@ or download tarballs for
     </content>
   </item>
 
+  <item>
+    <date>2012-04-13 09:33</date>
+    <title>GStreamer Core 0.11.90, Base Plugins 0.11.90, Good Plugins 0.11.90, Bad
+      Plugins 0.11.90, Ugly Plugins 0.11.90, libav Plugins 0.11.90 unstable release</title>
+<content>
+<p>
+The GStreamer team announces a new release of the GStreamer core,
+Base/Good/Bad/Ugly/libav modules for the 0.11 GStreamer unstable release series.
+</p>
+<p>
+This is the first release candidate of the upcoming 1.0 release. It
+is intended for developers and people wanting to port their plugins and
+applications to the new series. Only minor or absolutely necessary
+changes to the core/base API/ABI will happen between this release and
+the final 1.0.0 release.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.11.90.html">gstreamer core</a> or
+<a href="&site;/releases/gst-plugins-base/0.11.90.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/0.11.90.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-bad/0.11.90.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-plugins-ugly/0.11.90.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-libav/0.11.90.html">gst-libav</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.11.90.tar.bz2">gstreamer</a> or
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.11.90.tar.bz2">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.11.90.tar.bz2">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.11.90.tar.bz2">gst-plugins-bad</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.11.90.tar.bz2">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-libav/gst-libav-0.11.90.tar.bz2">gst-libav</a>,
+    </p>
+    </content>
+  </item>
 
 </news>
