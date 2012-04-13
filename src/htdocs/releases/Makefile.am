@@ -9,6 +9,7 @@ SUBDIRS = \
 	gnonlin \
 	gst-editor \
 	gst-ffmpeg \
+	gst-libav \
 	gst-monkeysaudio \
 	gst-openmax \
 	gst-player \

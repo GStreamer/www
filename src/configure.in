@@ -24,6 +24,7 @@ htdocs/releases/Makefile
 htdocs/releases/gst-editing-services/Makefile
 htdocs/releases/gst-editor/Makefile
 htdocs/releases/gst-ffmpeg/Makefile
+htdocs/releases/gst-libav/Makefile
 htdocs/releases/gst-monkeysaudio/Makefile
 htdocs/releases/gst-openmax/Makefile
 htdocs/releases/gst-player/Makefile
