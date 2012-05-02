@@ -7,44 +7,25 @@
 
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
-  <title>GStreamer Conference 2011</title>
+  <title>GStreamer Conference 2012</title>
 
   <body>
 <table>
 <tr><td>
-<h1>GStreamer Conference 2011</h1>
-<h2>October 24 - 25, 2011 · Clarion Congress Hotel · Prague, Czech Republic</h2>
+<h1>GStreamer Conference 2012</h1>
+<h2>August 27th and August 28th, 2012 · Sheraton San Diego Hotel &amp; Marina · San Diego, USA</h2>
 <p>
-<p><b>This years conference is over, but all the talks can be viewed online at <a href="http://gstconf.ubicast.tv/channels/#conferences2011">
-gstconf.ubicast.tv</a> thanks to our recording partner <a href="http://www.ubicast.tv">Ubicast</a>.</b>
-</p>
-After a successful launch last year in Cambridge, UK, we are very happy to invite everyone to the
-second annual GStreamer Conference. This year we will be co-hosting with the <a href="http://events.linuxfoundation.org/events/linux-kernel-summit">
-Linux Kernel Summit</a> and hold the event at the Clarion Congress Hotel in Prague, Czech Republic.
+We are back for a third year of the GStreamer Conference, and this year we are taking the GStreamer Conference to the United States and San Diego. This year we will be co-hosting with the LinuxCon North America, the Linux Plumbers Conference and the Linux Kernel Summit</a>. The event will be held at the Sheraton San Diego Hotel and Marina.
 </p>
 <p>
-This year we decided to broaden the scope a bit for the GStreamer Conference, by including talks from a wide range of related projects and technologies. This means that this year in addition to a lot of great talks about GStreamer you can also learn about latest developments with the WebM format, whats new in Pulse Audio and a lot more.
+<b>Call for Papers</b>
 </p>
 <p>
-The lead keynote event this year will be GStreamer maintainer Wim Taymans talking about GStreamer 1.0, which will be out before the end of the year. This event will be your best chance to hear about whats new in GStreamer 1.0 and what advantages it will offer your application and product.
+If you are interested in presenting at this years GStreamer Conference please send an abstract to <a href="mailto:christian.schaller@gmail.com">Christian Schaller</a> before the 25th of May 2012. We will be happy to accept talks on any subject relating to open source and multimedia. Last year in addition to talks about GStreamer we had presentations about Pulse Audio, VP8 and WebM and Xiph.org codecs for instance.</p> 
 </p>
-<h2>Technologies covered</h2>
-<p>
-We have a long list of topics to be presented like:
-</p>
-
-<ul>
-<li>GStreamer 1.0</li>
-<li>WebM and VP8</li>
-<li>Pulse Audio development report</li>
-<li>Designing complex pipelines with GStreamer</li>
-<li>Blu-ray playback and GStreamer</li>
-<li>Updates on latest Xiph.org and Vorbis developments</li>
-<li>GStreamer, Webkit and HTML5</li>
-<li>Case studies on GStreamer deployments</li>
-</ul>
 </td>
 <td valign="top">
+<!--
 <h1>Platinum Sponsor</h1>
 <p>
 <a href="http://www.collabora.com/projects/gstreamer/"><img src="sponsor_150x49_collabora.png" alt="Collabora" height="49" width="150" /></a>
@@ -56,58 +37,55 @@ We have a long list of topics to be presented like:
 <p>
 <a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
 </p>
+-->
 <h2>Special Media Partners</h2>
 <p>
 <a href="http://www.ubicast.eu/"><img src="sponsor_150x45_UbiCast.png" alt="Ubi Cast" height="45" width="150" /></a>
 </p>
 <p>
 <small>
-Interested in <a href="http://gstreamer.freedesktop.org/conference/2011/gstreamer-sponsor.pdf">becoming a sponsor?</a></small>
+Interested in <a href="http://gstreamer.freedesktop.org/conference/2012/gstreamer-sponsor.pdf">becoming a sponsor?</a></small>
 </p>
 </td></tr>
 </table>
 <h2>Registration</h2>
 <p>
-Registration for GStreamer Conference 2011 is closed.
-</p>
-<h2>Full Program</h2>
-<p>
-We have the <a href="gstreamer-conference-timetable.html">full schedule for the conference</a> now online, including <a href="speakers.html"> abstracts and speaker biographies</a>. 
+We will have information for registrering online very soon.
 </p>
 
 <h2>Who Should Join?</h2>
 <p>
-Anyone interested in open source multimedia is encouraged to join us at the GStreamer Conference 2011.
+Anyone interested in open source multimedia is encouraged to join us at the GStreamer Conference 2012.
 If you are a hobbyist or a student interested in the field of multimedia, or working for a company
 using or looking to use GStreamer in their products, then this is the perfect event for you to network
 at and learn more about the latest technological breakthroughs in and around GStreamer. The talks 
 will target both developers and managers alike.
 </p>
-<p>Following on from the GStreamer Conference 2011 and the Linux Kernel Summit, at the same venue, is the <a href="http://events.linuxfoundation.org/events/embedded-linux-conference-europe/">
+<p>Following on from the GStreamer Conference 2012 and the Linux Kernel Summit, at the same venue, is the <a href="http://events.linuxfoundation.org/events/embedded-linux-conference-europe/">
 Embedded Linux Conference Europe</a> and <a href="http://events.linuxfoundation.org/events/linuxcon-europe">LinuxCon Europe</a>, so combining these events with
 the GStreamer Conference might be a good idea for many of our attendees.
 </p>
-<h2>Hotel and Travel</h2>
+<h2>Hotel</h2>
 <p>
-The simplest option if you are attending it to book yourself a room at the <a href="http://www.cchp.cz/en/bookingconf/?price_group=32768&amp;hotel_id=2679&amp;service_model=2">
-Clarion Congress Hotel Prague</a> as you would then be staying at the venue. If you use our link you will get our special conference rates at the hotel. There is
-of course no requirement to stay at the hotel and you can of course use any lodging of your choosing and still attend the conference.
+The GStreamer Conference is being held in San Diego, California from August 24 – August 25 in the Sheraton San Diego Hotel &amp; Marina. Linux Plumbers Conference attendees can avail themselves of rooms at a Linux Foundation discounted booking rate of US $170 a night (plus taxes) at this hotel. We encourage you to stay on-site to take full advantage of the conference.  Please note that rooms in our reserved block will include internet in guest rooms at no additional cost. Be aware that with LinuxCon running during the same days at the same hotel, rooms in this discounted block will go fast.
 </p>
 <p>
-The closest airport is the Ruzyne International Airport and for those arriving by others means the conference center got a <a href="http://cchp.cz/en/about-us/#/2174&amp;2175">
-page with directions for how to reach the Clarion Congress hotel</a>.</p>
+Sheraton Hotel &amp; Marina<br>
+1380 Harbor Island Drive<br>
+San Diego, CA 92101<br>
+Tel: +1 619-291-2900
+</p>
 <p>
-We got the following two documents put together by some local volunteers about some <a href="http://gstreamer.freedesktop.org/conference/2011/Prague-Food.pdf">good restaurants</a> and <a href="http://gstreamer.freedesktop.org/conference/2011/Prague-Nightlife.pdf">night life</a> options while in Prague.
-
+To make your room reservation online, please <a href="https://www.starwoodmeeting.com/StarGroupsWeb/booking/reservation?id=1203149218&key=8AF0A">click here</a>.  You may also call the Reservation Center to make a reservation at 1-877-734-2726 and ask for the LinuxCon room rate. 
 </p>
 <p>
 <table>
-<tr><td><img src="http://www.cchp.cz/image-cache/crop-524x300/448-exterier_298x168.png" width="298" height="168"/>
+<tr><td><img src="http://www.starwoodhotels.com/pub/media/127/she127ex.99865_md.jpg" width="343" height="230"/>
 </td></tr>
-<tr><td><b>Clarion Congress Hotel, Prague</b></td></tr>
+<tr><td><b>Sheraton Hotel &amp; Marina</b></td></tr>
 </table>
 </p>
-<p>If you have any questions about the GStreamer Conference please contact <a href="mailto:christian.schaller@collabora.co.uk">Christian Schaller</a>.</p>
-<p><i>If you want information on last years conference you will find that on the <a href="http://gstreamer.freedesktop.org/conference/2010">GStreamer Conference 2010</a> website.</i></p>
+<p>If you have any questions about the GStreamer Conference please contact <a href="mailto:christian.schaller@gmail.com">Christian Schaller</a>.</p>
+<p><i>If you want information on last years conference you will find that on the <a href="http://gstreamer.freedesktop.org/conference/2011">GStreamer Conference 2011</a> website.</i></p>
   </body>
 </page>
