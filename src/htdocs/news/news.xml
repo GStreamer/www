@@ -4550,7 +4550,7 @@ The GStreamer team announces a new release of the GStreamer core,
 Base/Good/Bad/Ugly/libav modules for the 0.11 GStreamer unstable release series.
 </p>
 <p>
-This is the first release candidate of the upcoming 1.0 release. It
+This is the second release candidate of the upcoming 1.0 release. It
 is intended for developers and people wanting to port their plugins and
 applications to the new series. Only minor or absolutely necessary
 changes to the core/base API/ABI will happen between this release and
