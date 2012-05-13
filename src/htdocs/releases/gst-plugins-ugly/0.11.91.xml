@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-ugly</module>
+  <module-fancy>GStreamer Ugly Plug-ins</module-fancy>
+  <name>I’ll grind his bones to make my bread!</name>
+  <version>0.11.91</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 0.11.x unstable series of the
+GStreamer Bad Plug-ins.
+</p>
+<p>
+The 0.11.x series is an unstable series targeted at developers and will
+eventually lead up to the stable 1.0 series.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series.
+</p>
+
+<p>
+There are times when the world needs a color between black and white.
+Quality code to match the good's, but two-timing, backstabbing and ready to
+sell your freedom down the river.  These plug-ins might have a patent noose
+around their neck, or a lock-up license, or any other problem that makes you
+think twice about shipping them.
+</p>
+<p>
+We don't call them ugly because we like them less.  Does a mother love her
+son less because he's not as pretty as the other ones ? No  - she commends
+him on his great personality.  These plug-ins are the life of the party.
+And we'll still step in and set them straight if you report any unacceptable
+behaviour - because there are two kinds of people in the world, my friend:
+those with a rope around their neck and the people who do the cutting.
+</p>
+<p>
+This module contains a set of plug-ins that have good quality and correct
+functionality, but distributing them might pose problems.  The license
+on either the plug-ins or the supporting libraries might not be how we'd
+like. The code might be widely known to present patent problems.
+Distributors should check if they want/can ship these plug-ins.
+</p>
+<p>
+Other modules containing plug-ins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plug-ins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plug-ins that haven't passed the
+    rigorous quality testing we expect</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Lots of bugfixes and other improvements</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Alban Browaeys</person>
+	<person>Leon Merten Lohse</person>
+	<person>Sebastian Dröge</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+  </bugs>
+</release>

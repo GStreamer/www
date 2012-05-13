@@ -1,4 +1,4 @@
-releases = 0.11.90
+releases = 0.11.91 0.11.90
 
 built_pages = \
         $(releases) \

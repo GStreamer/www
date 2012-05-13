@@ -214,30 +214,11 @@ echo "Press Enter to update NEWS with information from RELEASE"
 read
 $EDITOR $moduledir/NEWS $release
 
-if test -d $moduledir/docs/plugins
-then
-  echo "Updating plugin documentation files"
-  pushd $moduledir/docs/plugins > /dev/null 2>&1
-  make update
-  make clean
-  make
-  popd
-fi
-
 echo "Rolling release tarballs"
 pushd $moduledir > /dev/null 2>&1
 make release > /dev/null 2>&1 || exit 1
 popd
 mv $moduledir/$module-$version.tar.* data/src/$module
-
-if [ -d $moduledir/docs ]; then
-echo "Updating docs on website"
-pushd $moduledir/docs > /dev/null 2>&1
-make upload > /dev/null 2>&1
-popd
-else
-echo "Not updating docs on website - no docs directory"
-fi
 
 if test -d $moduledir/po
 then
