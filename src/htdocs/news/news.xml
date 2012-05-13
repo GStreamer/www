@@ -4540,5 +4540,39 @@ out our <a href="&site;/conference">conference page</a> for details and the Call
          </content>
           </item>
 
+  <item>
+    <date>2012-05-13 17:06</date>
+    <title>GStreamer Core 0.11.91, Base Plugins 0.11.91, Good Plugins 0.11.91, Bad
+      Plugins 0.11.91, Ugly Plugins 0.11.91, libav Plugins 0.11.91 unstable release</title>
+<content>
+<p>
+The GStreamer team announces a new release of the GStreamer core,
+Base/Good/Bad/Ugly/libav modules for the 0.11 GStreamer unstable release series.
+</p>
+<p>
+This is the first release candidate of the upcoming 1.0 release. It
+is intended for developers and people wanting to port their plugins and
+applications to the new series. Only minor or absolutely necessary
+changes to the core/base API/ABI will happen between this release and
+the final 1.0.0 release.
+</p>
+<p>
+Check out release notes for
+<a href="&site;/releases/gstreamer/0.11.91.html">gstreamer core</a> or
+<a href="&site;/releases/gst-plugins-base/0.11.91.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/0.11.91.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-bad/0.11.91.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-plugins-ugly/0.11.91.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-libav/0.11.91.html">gst-libav</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-0.11.91.tar.xz">gstreamer</a> or
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-0.11.91.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-0.11.91.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-0.11.91.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-0.11.91.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-libav/gst-libav-0.11.91.tar.xz">gst-libav</a>,
+    </p>
+    </content>
+  </item>
 
 </news>
