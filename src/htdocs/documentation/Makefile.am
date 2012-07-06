@@ -33,7 +33,7 @@ plugins.xml: checkoutdir
 	    popd >/dev/null; \
 	  else \
 	    echo "$$m checkout: creating (cloning)"; \
-	    git clone git://anongit.freedesktop.org/gstreamer/$$m $$moduledir && cd $$moduledir && git checkout origin/0.10 -b 0.10 && cd .. || { \
+	    git clone --depth 1 -b 0.10 git://anongit.freedesktop.org/gstreamer/$$m $$moduledir || { \
 	      echo "git clone failed"; exit 1; \
 	    } ; \
 	  fi; \
