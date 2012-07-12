@@ -7,11 +7,11 @@
 
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
-  <title>GStreamer Conference 2011 Program </title>
+  <title>GStreamer Conference 2012 Program </title>
 <body lang="en-US" dir="LTR">
 
-<h1>GStreamer Conference 2011</h1>
-<h2>Prague, Czech Republic, 24th - 25th of October 2011</h2>
+<h1>GStreamer Conference 2012</h1>
+<h2>San Diego, USA, August 27th and August 28th, 2012</h2>
 <p><a href="http://gstreamer.freedesktop.org/conference">Back to conference main page</a></p>
 <table width="100%" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0">
 	<col width="68*" />
@@ -19,7 +19,7 @@
 	<col width="85*" />
 	<tr>
 		<td colspan="3" width="100%" valign="TOP" bgcolor="light blue">
-			<p align="center"><font color="white">Monday 24th of October 2011</font></p>
+			<p align="center"><font color="white">Monday 27th of August 2012</font></p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -28,15 +28,24 @@
 			</p>
 		</td>
 		<td WIDTH="40%">
-			<p>Main Room</p>
+			<p>Nautilus 1</p>
 		</td>
 		<td WIDTH="33%">
-			<p>Second Room</p>
+			<p>Nautilus 2</p>
 		</td>
 	</tr>
 	<tr valign="top">
 		<td width="27%">
 			<p>09.00</p>
+		</td>
+		<td width="40%" colspan="2">
+		<p align="center">Opening and welcome to the 2012 GStreamer Conference - Christian Schaller</p>
+		</td>
+		
+	</tr>
+	<tr valign="top">
+		<td width="27%">
+			<p>09.10</p>
 		</td>
 		<td width="40%" colspan="2">
 		<p align="center">Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#taymans">GStreamer 1.0 - GStreamer maintainer Wim Taymans</a>, Collabora</p>
@@ -49,10 +58,11 @@
 			<p>10.00</p>
 		</td>
 		<td width="40%">
-		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#sauer">High complexity GStreamer pipelines, Stefan Sauer</a>, Google</p>
+		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#hoegsberg">Wayland - Kristian Hoegsberg</a>, Intel</p>
 		</td>
 		<td width="33%">
-		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#emont">Time lapse and stabilizing a sequence of images - Guillame Emont</a>, Igalia</p></td>
+		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#stichele">A V4L status report, Hans Verkuil</a>, Cisco</p>
+		</td>
 	</tr>
 
 	<tr valign="top">
@@ -60,26 +70,15 @@
 			<p>11.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#lundberg">GStreamer, Webkit, HTML5 and Real-Time Communication - Jonas Lundberg</a>, Ericsson</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#lundberg">GStreamer for advanced image capture and analysis - Stephen Burks</a>, U.S Army</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">Time shifting with GStreamer - Josep Torra</a>, Fluendo</p></td>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">Development of hardware-based Elements for GStreamer 1.0: A case study, Victor Jaquez</a>, Igalia</p></td>
 	</tr>
 
 	<tr valign="top">
 		<td width="27%">
 			<p>12.00</p>
-		</td>
-		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#quachio">GStreamer and DASH - Emanuele Quacchio</a>, ST Microelectronics 
-			</p></td>
-		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#alaoui">GStreamer and Farstream - Communication the easy way, Youness Alaoui</a>, Collabora</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td width="27%">
-			<p>13.00</p>
 		</td>
 		<td colspan="2">
 			<p align="center"><b>Lunch</b></p>
@@ -89,31 +88,39 @@
 
 	<tr valign="top">
 		<td width="27%">
-			<p>14.00</p>
+			<p>13.30</p>
 		</td>
-		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#lespiau">The Media Explorer Media Center - Damien Lespiau</a>, Intel</p>
-		</td>
-		<td WIDTH="33%">
-			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#sparrell">GStreamer at Oblong Industries - Carlton J. Sparrell</a>, Oblong Industries</p>
+		<td width="40%" colspan="2">
+			<p align="center"><a href="http://gstreamer.freedesktop.org/conference/speakers.html#morales">The GStreamer SDK - Andoni Morales</a>, Fluendo</p>
 		</td>
 	</tr>
 	
 	<tr valign="top">
 		<td width="27%">
-		<p>15.00</p>
+		<p>14.30</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#luther">WebM and VP8 - Latest developments - John Luther and Matt Frost</a>, Google</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#hervey">CPU, Memory, Latency: Profiling and Optimizing GStreamer - Edward Hervey</a>, Collabora</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#jaquez">GStreamer and SysLink - Victor Jaquez</a>, Igalia</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#jaquez">GStreamer Streaming library - David Schleef</a>, Entropy Wave</p>
 		</td>
 	</tr>
+
+	<tr valign="top">
+		<td width="27%">
+			<p>15.30</p>
+		</td>
+		<td width="40%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#quachio">Current status of the Android enablement - Reynaldo Verdejo</a>, Collabora</p></td>
+		<td width="33%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#alaoui">Improving GStreamer quality - Jason Gerard DeRose</a>, Novacut</p></td>
+	</tr>
+
 	
 	<tr>
 		<td colspan="3" width="100%" valign="TOP">
-			<p align="center">16.00 End of Day</p>
+			<p align="center">16.30 End of Day</p>
 		</td>
 	</tr>
 <!-- DAY 2 -->
@@ -129,10 +136,10 @@
 			</p>
 		</td>
 		<td WIDTH="40%">
-			<p>Main Room</p>
+			<p>Nautilus 1</p>
 		</td>
 		<td WIDTH="33%">
-			<p>Second Room</p>
+			<p>Nautilus 2</p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -149,10 +156,12 @@
 			<p>11.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#montgomery">Xiph.org plans and projects, Monty Montgomery</a>, Red Hat</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#montgomery">GStreamer for Large-Scale Scientific Signal Processing, Kipp Cannon</a>, CITA
+</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#frisch">Blu-Ray Authoring, Andreas Frisch</a>, Dreambox</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#frisch">
+GStreamer, dmabuf, and OMAP4+ Update - Rob Clark</a>, Texas Instruments</p>
 		</td>
 	</tr>
 
@@ -161,10 +170,10 @@
 			<p>12.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#stichele">An overview of the Flumotion Streaming Server - Thomas Vander Stichele</a>, Flumotion</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#emont">Playing in the sandbox - GStreamer security - Guillame Emont</a>, Igalia</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schmidth">GStreamer and Blu-ray playback - Jan Schmidt</a>, Oracle</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schmidth">Home area entertainment systems, Jan Schmidt</a>, Oracle</p>
 		</td>
 	</tr>
 
@@ -177,53 +186,53 @@
 
 	<tr valign="top">
 		<td width="27%">
-			<p>14.00</p>
+			<p>14.30</p>
 		</td>
 		<td width="40%">
-			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#schleef">Broadcast and Web Streaming with GStreamer, David Schleef</a>, Entropy Wave</p>
+			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#schleef">Development with GES, Jeff Fortin</a>, Collabora</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#soliverez">GStreamer, Telepathy and Android the easy way, Alvaro Soliverez and Reynaldo Verdejo</a>, Collabora</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#soliverez">ALSA project status update - Takashi Iwai,</a>Suse</p>
 		</td>
 	</tr>
 
 	<tr valign="top">
 		<td width="27%">
-			<p>15.00</p>
+			<p>15.30</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#droege">A new OpenMax IL integration layer for GStreamer- Sebastian Dröge</a>,
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#droege">GStreamer base classes – or how to
+make your life easier - Sebastian Dröge</a>,
 			Collabora</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#leeman">Displaying synchronised video - Marc Leeman</a>, Barco</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#leeman">Debugging GStreamer pipelines, Rene Staedler, Collabora</a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="27%">
+			<p>16.30</p>
+		</td>
+		<td colspan="2" width="100%" valign="TOP">
+			<p align="center">Coffee break</p>
 		</td>
 	</tr>
 
 	<tr valign="top">
 		<td width="27%">
-			<p>16.00</p>
+			<p>16.45</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#swain">Interlacing and telecine in GStreamer - Robert Swain</a>,  Collabora</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#swain">The Opus Audio Codec, Timothy B. Terriberry</a>,  Xiph.org</p>
 		</td>
-		<td width="33%" rowspan="2">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#raghavan">Latest developments in Pulse Audio, Arun Raghavan</a>, Collabora</p>
-		</td>
-	</tr>
-	
-	<tr valign="top">
-		<td width="27%">
-			<p>16.30</p>
-		</td>
-		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#bethencourt">The ease of writing a video player in GStreamer - Luis deBethencourt</a>, Collabora</p>
+		<td width="33%">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#raghavan">OpenGL and Mesa development - Eric Anholt</a>, Intel </p>
 		</td>
 	</tr>
 
 	<tr>
 		<td colspan="3" width="100%" valign="TOP">
-			<p align="center">17.00 End of Day</p>
+			<p align="center">17.45 End of Day</p>
 		</td>
 	</tr>
 
