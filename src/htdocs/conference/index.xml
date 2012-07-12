@@ -25,17 +25,19 @@ We have a long list of topics to be presented like:
 <ul>
 <li>GStreamer 1.0</li>
 <li>Developing with the GStreamer.com SDK</li>
-<li>Developing hardware based elements with GStreamer</li>
-<li>Using MXF with GStreamer</li>
+<li>Developing hardware based elements with GStreamer 1.0</li>
+<li>V4L development status and plans</li>
+<li>OpenGL and Mesa</li>
+<li>Advanced image analysis, MXF and GStreamer</li>
 <li>GStreamer for Large-Scale Scientific Signal Processing</li>
-<li>Case studies on GStreamer deployments</li>
+<li>The Opus Audio Codec</li>
+<li>Working with GStreamer base classes</li>
+<li>Status update on ALSA development</li>
+<li>GStreamer and Android</li>
 </ul>
 </td>
 <td valign="top">
-<!--
-<h1>Platinum Sponsor</h1>
-<p>
--->
+
 <h1>Gold Sponsor</h1>
 <p>
 <a href="http://www.collabora.com/projects/gstreamer/"><img src="sponsor_150x49_collabora.png" alt="Collabora" height="49" width="150" /></a>
