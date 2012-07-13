@@ -433,11 +433,19 @@ existing base classes will be discussed.
 	<a name="staedler" id="staedler"></a>
 	<p><b>Debugging GStreamer pipelines, Rene Staedler, Collabora</b></p>
 	<p>
-TDB
+René is a free software and GStreamer enthusiast who joined Nokia's
+Linux team in 2007. After almost four years in Helsinki, he moved back
+to his hometown of Duisburg, Germany to work as a full-time contractor
+with Collabora Ltd.
 </p>
 	<i>
 	<p><b>Talk Abstract</b></p>
-	<p>TBD</p></i>
+	<p>Introduction to the powerful logging system provided by GStreamer and
+how to use it when writing plugins. How to read log output to
+understand what happens in your pipelines and learn about GStreamer's
+internals. I will extensively demonstrate my gst-debug-viewer UI,
+which can easily handle million-line log files and boost your
+productivity.</p></i>
 
 	</td></tr>
 
