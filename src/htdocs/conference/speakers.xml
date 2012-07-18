@@ -384,9 +384,18 @@ simple.
 	</td></tr>
 		
 	<tr><td>
-	<p><b>Development with GES, Jeff Fortin, Collabora</b></p>
+	<p><b>Flexible multimedia content creation apps with the GStreamer
+Editing Services, Jeff Fortin &amp; Thibault Saunier, Collabora</b></p>
 	<a name="fortin" id="fortin"></a>
-	<p>TBD
+	<p>GES is a library that allows rapid development of advanced
+multi-platform audio/video editors using GStreamer. From your smartphone
+to your high-end server cluster, GES is designed to be the solution to
+all your needs. This presentation will give you an overview of GES, its history and goals.
+It will also feature a case stufy of the Pitivi video editor, a major GES user, a general technical overview and how GES concepts match
+well-established non-linear editing paradigms. 
+</p>
+<p>
+The talk will also cover the current features (why you want to use GES) and the roadmap ahead for the library.
 	</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
@@ -399,8 +408,9 @@ TBD
 	<tr valign="top" bgcolor="#C0C0C0"><td>
 	<a name="iwai" id="iwai"></a>
 	<p><b>ALSA project status update - Takashi Iwai, Suse</b></p>
-	<p>
-TBD.</p>
+	<p>Takashi Iwai currently works as a member of hardware-enablement team in SUSE Labs
+at SUSE Linux Products GmbH in Nuremberg, Germany, while playing a
+role as a gatekeeper of the Linux sound subsystem tree over years.</p>
 
 	<i>
 	<p><b>Talk Abstract</b></p>
