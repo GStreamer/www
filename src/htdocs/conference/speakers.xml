@@ -53,13 +53,14 @@ core framework with the goal of fully supporting complex embedded video hardware
 lives in Oslo, Norway, working as a senior R&amp;D software engineer at Cisco Systems Norway,
 developing both Linux and NIOS-based drivers. He gave V4L presentations before during
 Embedded Linux Conferences in the US and Europe, the Plumbers Conference and LinuxCon
-in Japan..</p>
+in Japan.</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
 Video4Linux is a fast-changing subsystem where a lot of work is done to support
 the complex video hardware of embedded systems. This presentation will give an
-overview of recent developments and the work that is planned for the near future.
+overview of recent developments and the work that is planned for the near future,
+in particular the ongoing effort to support zero-copy video pipelines.
 	</p>
 	</i>
 

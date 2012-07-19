@@ -55,6 +55,12 @@ We have a long list of topics to be presented like:
 <p>
 <a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
 </p>
+<h2>Press Partners</h2>
+<p><a href="http://www.lwn.net"><img src="lwn.png" alt="Lwn.net" height="61" width="150" /></a>
+</p>
+<p>
+<a href="http://www.phoronix.com/"><img src="phoronix.png" alt="Phoronix.com" height="34" width="150" /></a>
+</p>
 
 <h2>Special Media Partners</h2>
 <p>
@@ -66,6 +72,10 @@ Interested in <a href="http://gstreamer.freedesktop.org/conference/2012/gstreame
 </p>
 </td></tr>
 </table>
+<h2>Schedule and speakers list</h2>
+<p>The <a href="http://gstreamer.freedesktop.org/conference/gstreamer-conference-timetable.html">full conference schedule is now available</a>. We hope you will be as excited about this years schedule as we are. In addition to of course many in-depth GStreamer talks we also have presentations on some of the most important core Linux multimedia technologies like ALSA, Mesa, Wayland, the Opus Codec and V4L. We have managed to get some of the leading developers from the world of open source multimedia come to speak this year, so this is definetly an event you should not be missing out on.
+</p>
+ 
 <h2>Registration</h2>
 <p>
 You can now <a href="http://www.regonline.com/gstreamerconference2012">register for the GStreamer Conference</a>. We offer separate registration options for both professionals and for students and hobbyists. There is also an early bird reduced fee charged if you register before June 15th. 
