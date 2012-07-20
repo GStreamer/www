@@ -114,7 +114,7 @@
 		<td width="40%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#quachio">Current status of the Android enablement - Reynaldo Verdejo</a>, Collabora</p></td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#alaoui">Improving GStreamer quality - Jason Gerard DeRose</a>, Novacut</p></td>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#derose">Improving GStreamer quality - Jason Gerard DeRose</a>, Novacut</p></td>
 	</tr>
 
 	
@@ -206,7 +206,7 @@ make your life easier - Sebastian Dröge</a>,
 			Collabora</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#leeman">Debugging GStreamer pipelines, Rene Staedler, Collabora</a></p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#leeman">Debugging GStreamer pipelines, Rene Staedler</a>, Collabora</p>
 		</td>
 	</tr>
 	<tr>
