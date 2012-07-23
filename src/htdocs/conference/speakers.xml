@@ -463,11 +463,12 @@ productivity.</p></i>
 	<tr valign="top"><td>
 	<a name="terriberry" id="terriberry"></a>
 	<p><b>The Opus Audio Codec, Timothy B. Terriberry,  Xiph.org</b></p>
-	<p>TBD</p>
+	<p>Timothy Terriberry has been contributing to codecs produced by the Xiph.Org Foundation for just about a decade. In addition to leading the Theora project and helping maintain the other Xiph codecs, he was one of the authors of Opus and assisted in its standardization. He currently works for Mozilla, where he maintains their codec implementations and tries to solve the problem of royalty-free media formats for the web.
+</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-TBD
+Opus is a new lossy audio codec, standardized at the IETF by Microsoft, Mozilla, Broadcom, and others. It can replace a large collection of existing codecs for both high-quality archival music storage and low-bitrate, interactive speech, as well as everything inbetween. This talk will cover some of the interesting technical aspects of the codec, its features, and how those features interact with various aspects of gstreamer, hopefully without starting a flamewar about container formats.
 	</p>
 	</i>
 	</td></tr>
