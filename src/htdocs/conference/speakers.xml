@@ -388,21 +388,19 @@ simple.
 	<p><b>Flexible multimedia content creation apps with the GStreamer
 Editing Services, Jeff Fortin &amp; Thibault Saunier, Collabora</b></p>
 	<a name="fortin" id="fortin"></a>
-	<p>GES is a library that allows rapid development of advanced
+<p>	</p>
+	<i>
+	<p><b>Talk Abstract</b></p>
+<p>GES is a library that allows rapid development of advanced
 multi-platform audio/video editors using GStreamer. From your smartphone
 to your high-end server cluster, GES is designed to be the solution to
 all your needs. This presentation will give you an overview of GES, its history and goals.
 It will also feature a case stufy of the Pitivi video editor, a major GES user, a general technical overview and how GES concepts match
-well-established non-linear editing paradigms. 
+well-established non-linear editing paradigms.
 </p>
 <p>
 The talk will also cover the current features (why you want to use GES) and the roadmap ahead for the library.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
-	<p>
-TBD
-	</p>
+        </p>
 	</i>
 	</td></tr>
 	
