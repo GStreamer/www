@@ -61,7 +61,7 @@
 		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#hoegsberg">Wayland - Kristian Hoegsberg</a>, Intel</p>
 		</td>
 		<td width="33%">
-		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#stichele">A V4L status report, Hans Verkuil</a>, Cisco</p>
+		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#verkuil">A V4L status report, Hans Verkuil</a>, Cisco</p>
 		</td>
 	</tr>
 
@@ -70,10 +70,10 @@
 			<p>11.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#lundberg">GStreamer for advanced image capture and analysis - Stephen Burks</a>, U.S Army</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#burks">GStreamer for advanced image capture and analysis - Stephen Burks</a>, U.S Army</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">Development of hardware-based Elements for GStreamer 1.0: A case study, Victor Jaquez</a>, Igalia</p></td>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#jaquez">Development of hardware-based Elements for GStreamer 1.0: A case study, Victor Jaquez</a>, Igalia</p></td>
 	</tr>
 
 	<tr valign="top">
@@ -103,7 +103,7 @@
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#hervey">CPU, Memory, Latency: Profiling and Optimizing GStreamer - Edward Hervey</a>, Collabora</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#jaquez">GStreamer Streaming library - David Schleef</a>, Entropy Wave</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schleef">GStreamer Streaming library - David Schleef</a>, Entropy Wave</p>
 		</td>
 	</tr>
 
@@ -112,7 +112,7 @@
 			<p>15.30</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#quachio">Current status of the Android enablement - Reynaldo Verdejo</a>, Collabora</p></td>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#verdejo">Current status of the Android enablement - Reynaldo Verdejo</a>, Collabora</p></td>
 		<td width="33%">
 			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#derose">Improving GStreamer quality - Jason Gerard DeRose</a>, Novacut</p></td>
 	</tr>
@@ -156,11 +156,11 @@
 			<p>11.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#montgomery">GStreamer for Large-Scale Scientific Signal Processing, Kipp Cannon</a>, CITA
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#cannon">GStreamer for Large-Scale Scientific Signal Processing, Kipp Cannon</a>, CITA
 </p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#frisch">
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#clark">
 GStreamer, dmabuf, and OMAP4+ Update - Rob Clark</a>, Texas Instruments</p>
 		</td>
 	</tr>
@@ -189,10 +189,10 @@ GStreamer, dmabuf, and OMAP4+ Update - Rob Clark</a>, Texas Instruments</p>
 			<p>14.30</p>
 		</td>
 		<td width="40%">
-			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#schleef">Development with GES, Jeff Fortin</a>, Collabora</p>
+			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#fortin">Development with GES, Jeff Fortin</a>, Collabora</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#soliverez">ALSA project status update - Takashi Iwai,</a>Suse</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#iwai">ALSA project status update - Takashi Iwai,</a>Suse</p>
 		</td>
 	</tr>
 
@@ -206,7 +206,7 @@ make your life easier - Sebastian Dröge</a>,
 			Collabora</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#leeman">Debugging GStreamer pipelines, Rene Staedler</a>, Collabora</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#staedler">Debugging GStreamer pipelines, Rene Staedler</a>, Collabora</p>
 		</td>
 	</tr>
 	<tr>
@@ -223,10 +223,10 @@ make your life easier - Sebastian Dröge</a>,
 			<p>16.45</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#swain">The Opus Audio Codec, Timothy B. Terriberry</a>,  Xiph.org</p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#terriberry">The Opus Audio Codec, Timothy B. Terriberry</a>,  Xiph.org</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#raghavan">OpenGL and Mesa development - Eric Anholt</a>, Intel </p>
+			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#anholt">OpenGL and Mesa development - Eric Anholt</a>, Intel </p>
 		</td>
 	</tr>
 
