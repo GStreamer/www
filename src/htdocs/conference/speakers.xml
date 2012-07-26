@@ -212,7 +212,17 @@ general public wanting to understand profiling and optimization.
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-TBD
+GSS is a new streaming server application that grew out of
+work done by Entropy Wave.  It is a custom standalone HTTP
+server written in GLib-style C and based on GStreamer, Libsoup
+for HTTP processing, Bootstrap for HTML user interface, and
+JSON-GLib for request processing.  Streaming protocols include
+HTTP, RTSP, various flavors of RTMP, Icecast, HTTP Live Streaming,
+and WebRTC.  Primary streaming formats include WebM, Ogg/Theora/Vorbis,
+Ogg/Theora/Opus, FLV, and MPEG-TS.  As a library, GSS is useful
+for creating any standalone HTTP server in the GLib ecosystem.
+This talk will discuss GSS architecture, how to deploy GSS, and
+how to modify and extend.
 	</p>
 	</i>
 	</td></tr>
