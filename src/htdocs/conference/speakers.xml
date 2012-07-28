@@ -403,7 +403,10 @@ simple.
 	<p><b>Flexible multimedia content creation apps with the GStreamer
 Editing Services, Jeff Fortin &amp; Thibault Saunier, Collabora</b></p>
 	<a name="fortin" id="fortin"></a>
-<p>	</p>
+<p>
+Jeff Fortin is a long-time user, designer and tester for the PiTiVi project. In recent times, he has taken over some development and maintainership tasks with Thibault Saunier. He spends most of his time doing community management and mentoring new contributors.
+</p><p>
+Thibault Saunier joined the PiTiVi project as a Summer of Code student in 2010 and has been hooked ever since. He now maintains PiTiVi and works on the GStreamer Editing Services. 	</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
 <p>GES is a library that allows rapid development of advanced
