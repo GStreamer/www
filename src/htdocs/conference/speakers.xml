@@ -69,7 +69,8 @@ in particular the ongoing effort to support zero-copy video pipelines.
 	<tr valign="top"><td>
 	<a name="burks" id="burks"></a>
 	<p><b>GStreamer for advanced image capture and analysis - Stephen Burks, U.S Army</b></p>
-	<p>TBD
+	<p>
+Stephen Burks is the team leader of the Advanced Sensor Evaluation Facility (ASEF) at the U.S. Army Night Vision and Electronic Sensors Directorate, Fort Belvoir, VA. His research interests include novel thermal imaging systems, image fusion, and thermal sensor performance model development.  He is interested in GStreamer as a means to streamline video collection with an ever expanding set of hardware requirements.
 	</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
