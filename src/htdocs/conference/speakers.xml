@@ -493,12 +493,24 @@ Opus is a new lossy audio codec, standardized at the IETF by Microsoft, Mozilla,
 	<tr valign="top"><td>
 	<a name="anholt" id="anholt"></a>
 	<p><b>OpenGL and Mesa development - Eric Anholt, Intel </b></p>
-	<p>TBD
+	<p>
+Eric Anholt started working on open source to get video games to work on
+the graphics drivers in Linux and FreeBSD back in high school. He has
+been a developer for Intel's Open Source Technology Center since
+2006. He was a key developer of the GEM kernel graphics memory
+management API, and a major contributor to the new GLSL compiler that is
+pushing Mesa forward to GL 3.1 and beyond.
 </p>
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-TBD
+The Mesa project has been speeding up its development over the last few
+years catching up to modern OpenGL.  This talk will cover some of our
+recent developments and where our plans take us over the next year.
+
+A particular focus will be made on what impact newer OpenGL may have on
+gstreamer, for GPGPU-style media decode and for hardware-assisted
+post-processing.
 	</p>
 	</i>
 	</td></tr>
