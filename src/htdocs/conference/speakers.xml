@@ -433,7 +433,11 @@ role as a gatekeeper of the Linux sound subsystem tree over years.</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-TBD
+ALSA has been deployed as the basic lowlevel sound infrastructure, and
+is still one of the most actively developed area in Linux.  This talk
+will cover a brief introduction of ALSA, the recent development in
+both the kernel and user-space sides, and the planned new features in
+near future.
 	</p>
 	</i>
 	</td></tr>
