@@ -38,7 +38,14 @@
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-TBD
+Wayland is a new display server architecture that reuses the Linux
+low-level graphics stack but makes the compositor the server and
+relies exclusively on client side rendering.  We're approaching the
+1.0 release of Wayland, which means that we're ready to freeze the
+protocol and client side API.  Along with the protocol, we're
+developing a reference server implementation called Weston.  In the
+talk we will take a look at what will be in Wayland and Weston 1.0,
+with a bit of extra focus on how video and gstreamer is integrated.
 	</p>
 	</i>
 	</td></tr>
