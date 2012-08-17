@@ -89,7 +89,7 @@ At NVESD we work with imaging sensors and often have a need to capture, process,
 		
 	<tr bgcolor="#C0C0C0"><td>
 	<a name="jaquez" id="jaquez"></a>
-        <p><b>Development of hardware-based Elements for GStreamer 1.0: A case study, Victor Jaquez</b></p>
+        <p><b>Development of hardware-based Elements for GStreamer 1.0: A case study, Victor Jaquez, Igalia</b></p>
 	<p>
 Víctor worked for TI, in Mexico, in the development of GStreamer elements for the OMAP3 processors. At Igalia he has been involved in several projects for OMAP3 and OMAP4 processors.
 	</p>
