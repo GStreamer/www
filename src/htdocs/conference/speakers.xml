@@ -526,6 +526,24 @@ post-processing.
 	</i>
 	</td></tr>
 
+        <tr valign="top"><td>
+        <a name="bethencourt" id="bethencourt"></a>
+        <p><b> Road to GStreamer Expertise, Luis de Bethencourt, Collabora </b></p>
+        <p>
+Luis de Bethencourt is a freedom-lover technocrat, and has always enjoyed programming and playing around with video, so since he discovered GStreamer years ago he's been hooked. Originally from the Canary Islands, computers felt like a door to the world, and saw in Linux the best way to open it, see how it all works, and become a part of it. He currently works for Collabora and enjoys contributing to projects like Gstreamer Editing Services, Rygel, PiTiVi, freemix or snappy. 
+</p>
+        <i>
+        <p><b>Talk Abstract</b></p>
+        <p>
+Luis de Bethencourt will be hosting a round table with 3 GStreamer Experts: Jan Schmidt, 
+Sebastian Dröge, and Tim P. Müller. This personal, instead of technical, Q&amp;A will be driven by the 
+audience questions to the table about their experience learning, progressing, and contributing in 
+GStreamer. Leading and inspiring by example the experts will talk about the help, tricks, mistakes 
+and bumps each one of them experienced in their road to GStreamer expertise.
+        </p>
+        </i>
+        </td></tr>
+
 
 </table>
 

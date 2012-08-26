@@ -230,9 +230,21 @@ make your life easier - Sebastian Dröge</a>,
 		</td>
 	</tr>
 
+        <tr valign="top">
+                <td width="27%">
+                        <p>17.45</p>
+                </td>
+                <td width="40%" colspan="2">
+                        <p align="center">End of Day Panel discussion - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#bethencourt"> Road to GStreamer Expertise - Luis de Bethencourt,  Jan Schmidt, 
+Sebastian Dröge, and Tim P. Müller</a></p>
+                </td>
+        </tr>
+
+
+
 	<tr>
 		<td colspan="3" width="100%" valign="TOP">
-			<p align="center">17.45 End of Day</p>
+			<p align="center">18.45 End of Day</p>
 		</td>
 	</tr>
 
