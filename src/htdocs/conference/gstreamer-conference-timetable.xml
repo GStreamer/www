@@ -58,7 +58,8 @@
 			<p>10.00</p>
 		</td>
 		<td width="40%">
-		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#hoegsberg">Wayland - Kristian Hoegsberg</a>, Intel</p>
+<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#stadler">Debugging GStreamer pipelines, Rene Stadler</a>, Collabora</p>
+		
 		</td>
 		<td width="33%">
 		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#verkuil">A V4L status report, Hans Verkuil</a>, Cisco</p>
@@ -206,7 +207,7 @@ make your life easier - Sebastian Dröge</a>,
 			Collabora</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#stadler">Debugging GStreamer pipelines, Rene Stadler</a>, Collabora</p>
+		<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#hoegsberg">Wayland - Kristian Hoegsberg</a>, Intel</p>
 		</td>
 	</tr>
 	<tr>
