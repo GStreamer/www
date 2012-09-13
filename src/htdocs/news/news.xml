@@ -1,4 +1,4 @@
-<?xml-stylesheet href="news.xsl" type="text/xsl"?>
+G<?xml-stylesheet href="news.xsl" type="text/xsl"?>
 <!DOCTYPE xsl:stylesheet
 [
   <!ENTITY % site-entities SYSTEM "../entities.site">
@@ -4618,6 +4618,14 @@ We are happy to announce that the schedule for this years GStreamer Conference i
          </p>
          </content>
           </item>
-
+  <item>
+      <date>2012-13-09 11:30</date>
+        <title>GStreamer Conference 2012 Talk recordings online</title>
+        <content>
+        <p>
+Thanks to our partners at <a href="http://www.ubicast.eu/">Ubicast</a> we have the recordings of this years GStreamer Conference online. Be sure to <a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2012">view the talks here</a>. 
+         </p>
+         </content>
+          </item>
 
 </news>
