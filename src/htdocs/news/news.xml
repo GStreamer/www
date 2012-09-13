@@ -1,4 +1,4 @@
-G<?xml-stylesheet href="news.xsl" type="text/xsl"?>
+<?xml-stylesheet href="news.xsl" type="text/xsl"?>
 <!DOCTYPE xsl:stylesheet
 [
   <!ENTITY % site-entities SYSTEM "../entities.site">
