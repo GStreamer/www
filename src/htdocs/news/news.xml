@@ -4628,4 +4628,91 @@ Thanks to our partners at <a href="http://www.ubicast.eu/">Ubicast</a> we have t
          </content>
           </item>
 
+  <item>
+      <date>2012-09-24 18:00</date>
+        <title>GStreamer 1.0 released</title>
+        <content>
+        <p>
+The GStreamer project is pleased to announce the very first release of
+the new API and ABI-stable 1.x series of the GStreamer multimedia
+framework.
+        </p>
+        <p>
+The 1.x series is a stable series targeted at end users. It is not API
+or ABI compatible with the 0.10.x series. It can, however, be installed
+in parallel with the 0.10.x series and will not affect an existing
+0.10.x installation.
+        </p>
+        <p>
+Major improvements include:
+        <ul>
+<li>more flexible memory handling</li>
+<li>extensible and negotiable metadata for buffers</li>
+<li>caps negotiation and renegotiation mechanisms, decoupled from buffer allocation</li>
+<li>improved caps renegotiation</li>
+<li>automatic re-sending of state for dynamic pipelines</li>
+<li>reworked and more fine-grained pad probing</li>
+<li>simpler and more descriptive audio and video caps</li>
+<li>more efficient allocation of buffers, events and other mini objects</li>
+<li>improved timestamp handling</li>
+<li>support for gobject-inspection-based language bindings</li>
+<li>countless other improvements</li>
+        </ul>
+An overview of the architectural changes can be found in
+<a href="http://gstconf.ubicast.tv/videos/keynote-gstreamer-10/">Wim Tayman's GStreamer 1.0 keynote</a>
+from the GStreamer Conference 2012 in San Diego (click on the 'Share' tab for other video formats).
+        </p>
+        <p>
+Most of these changes involve the GStreamer plugin API. The application
+API has changed comparatively little, and most applications should be
+fairly easy to port to the new API. There is a
+<a href="http://cgit.freedesktop.org/gstreamer/gstreamer/tree/docs/random/porting-to-1.0.txt">porting guide</a>
+available.
+        </p>
+        <p>
+The GStreamer team would like to thank everyone who helped bring this
+release about, whether by submitting patches, reporting bugs, testing,
+sponsoring development, attending hackfests, or simply supplying moral
+support.
+        </p>
+        <p>
+This is the end of a long development process, but also the beginning of
+one. This release does not mark the pinnacle of perfection, but the
+point where the team is content with the API and stability and quality
+of the code base in general, especially compared to the old 0.10 series.
+        </p>
+        <p>
+There will be bugs to fix, and starting from this release there will be
+distinct bug-fixing and feature development cycles, with the goal of
+getting bug-fixes out quicker and unencumbered by other more risky
+changes. See the
+<a href="http://gstreamer.freedesktop.org/wiki/ReleasePlanning/RoadMap">ReleasePlanning/RoadMap page on the wiki</a>
+for a tentative road map and possible schedule.
+        </p>
+        <p>
+Please also note that we may still need to fine-tune some minor aspects
+of plugin behaviour in the next development cycle (e.g. bufferpool
+draining on renegotiation), so keep an eye out for that when porting
+elements over.
+        </p>
+        <p>
+Release tarballs can be downloaded directly here:
+<a href="&site;/src/gstreamer/gstreamer-1.0.0.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.0.0.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.0.0.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.0.0.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.0.0.tar.xz">gst-plugins-ugly</a>, and
+<a href="&site;/src/gst-libav/gst-libav-1.0.0.tar.xz">gst-libav</a> (formerly gst-ffmpeg).
+        </p>
+        <p>
+Packages should be available shortly in debian sid, fedora 18, ubuntu
+quantal, and other distros.
+        </p>
+        <p>
+As always, please let us know of any issues you run into by filing a bug
+in bugzilla: http://gstreamer.freedesktop.org/bugs/
+        </p>
+        </content>
+  </item>
+
 </news>
