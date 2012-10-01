@@ -78,7 +78,7 @@ code might be widely known to present patent problems.
   <module>
     <id>gst-plugins-bad</id>
     <title>GStreamer Bad Plug-ins</title>
-    <blurb>a set of plug-ins that need more quality</blurb>
+    <blurb>a set of plug-ins that need more quality, testing or documentation</blurb>
     <description>
 GStreamer Bad Plug-ins is a set of plug-ins that aren't up to par compared to
 the rest.  They might be close to being good quality, but they're missing
@@ -93,34 +93,17 @@ real live maintainer, or some actual wide use.
   </module>
 
   <module>
-    <id>gst-plugins-gl</id>
-    <title>GStreamer OpenGL Plug-ins</title>
-    <blurb>plug-in and helper libraries for OpenGL integration</blurb>
+    <id>gst-libav</id>
+    <title>GStreamer Libav plug-in</title>
+    <blurb>Libav-based plug-in containing many decoders and encoders</blurb>
     <description>
-        The GStreamer OpenGL module provides helper libraries, base classes
-        and elements for integrating with OpenGL and using it to perform video
-        display and processing.
+GStreamer Libav plug-in contains one plugin with a set of elements using
+the Libav library code.  It contains many popular decoders and encoders.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>&gst-plugins-gl-version-stable;</stable>
-      <devel>&gst-plugins-gl-version-devel;</devel>
-    </versions>
-  </module>
-
-  <module>
-    <id>gst-ffmpeg</id>
-    <title>GStreamer FFmpeg plug-in</title>
-    <blurb>FFmpeg-based plug-in</blurb>
-    <description>
-GStreamer FFmpeg plug-in contains one plugin with a set of elements using
-the FFmpeg library code.  It contains most popular decoders as well as
-very fast colorspace conversion elements.
-    </description>
-    <maintainer>GStreamer Team</maintainer>
-    <versions>
-      <stable>&gst-ffmpeg-version-stable;</stable>
-      <devel>&gst-ffmpeg-version-devel;</devel>
+      <stable>&gst-libav-version-stable;</stable>
+      <devel>&gst-libav-version-devel;</devel>
     </versions>
   </module>
 
@@ -143,11 +126,11 @@ timeline-oriented use of GStreamer makes sense.
   <module>
     <id>gst-python</id>
     <blurb>python bindings</blurb>
-    <title>GStreamer Python Bindings</title>
+    <title>GStreamer Python Bindings Supplement</title>
     <description>
-GStreamer python bindings. You can find API docs for the Python bindings at <a href="http://pygstdocs.berlios.de/">this website</a>.
+GStreamer python overrides for the gobject-introspection-based pygst bindings.
     </description>
-    <maintainer>Edward Hervey</maintainer>
+    <maintainer>GStreamer Team</maintainer>
     <versions>
       <stable>&gst-python-version-stable;</stable>
       <devel>&gst-python-version-devel;</devel>
@@ -155,16 +138,16 @@ GStreamer python bindings. You can find API docs for the Python bindings at <a h
   </module>
 
   <module>
-    <id>gstreamer-sharp</id>
-    <blurb>C#/.NET bindings</blurb>
-    <title>GStreamer C# Bindings</title>
+    <id>gst-editing-services</id>
+    <blurb>Editing Services</blurb>
+    <title>GStreamer Editing Services</title>
     <description>
-      GStreamer C# bindings.
+Library for creating audio/video editors.
     </description>
-    <maintainer>Sebastian Dröge</maintainer>
+    <maintainer>Thibault Saunier</maintainer>
     <versions>
-      <stable>&gstreamer-sharp-version-stable;</stable>
-      <devel>&gstreamer-sharp-version-devel;</devel>
+      <stable>&gst-editing-services-version-stable;</stable>
+      <devel>&gst-editing-services-version-devel;</devel>
     </versions>
   </module>
 
@@ -183,16 +166,32 @@ RTSP server based on GStreamer (<a href="http://people.freedesktop.org/~wtay/">h
   </module>
 
   <module>
-    <id>gst-editing-services</id>
-    <blurb>Editing Services</blurb>
-    <title>GStreamer Editing Services</title>
+    <id>gst-streaming-server</id>
+    <blurb>Streaming server</blurb>
+    <title>GStreamer Streaming Server</title>
     <description>
-Library for creating audio/video editors.
+Streaming server based on GStreamer
     </description>
-    <maintainer>Edward Hervey</maintainer>
+    <maintainer>David Schleef</maintainer>
     <versions>
-      <stable>&gst-editing-services-version-stable;</stable>
-      <devel>&gst-editing-services-version-devel;</devel>
+      <stable>&gst-streaming-server-version-stable;</stable>
+      <devel>&gst-streaming-server-version-devel;</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gst-plugins-gl</id>
+    <title>GStreamer OpenGL Plug-ins</title>
+    <blurb>plug-in and helper libraries for OpenGL integration</blurb>
+    <description>
+        The GStreamer OpenGL module provides helper libraries, base classes
+        and elements for integrating with OpenGL and using it to perform video
+        display and processing.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <stable>&gst-plugins-gl-version-stable;</stable>
+      <devel>&gst-plugins-gl-version-devel;</devel>
     </versions>
   </module>
 
@@ -208,10 +207,24 @@ Library for creating audio/video editors.
     More information can be found on the <a href="http://gstreamer.freedesktop.org/wiki/QtGStreamer">QtGStreamer 
     wiki page</a>
     </description>
-    <maintainer>George Kiagiadakis and Mauricio Piacentini</maintainer>
+    <maintainer>George Kiagiadakis</maintainer>
     <versions>
       <stable>&qt-gstreamer-version-stable;</stable>
       <devel>&qt-gstreamer-version-devel;</devel>
+    </versions>
+  </module>
+
+  <module>
+    <id>gstreamer-sharp</id>
+    <blurb>C#/.NET bindings</blurb>
+    <title>GStreamer C# Bindings</title>
+    <description>
+      GStreamer C# bindings.
+    </description>
+    <maintainer>Sebastian Dröge</maintainer>
+    <versions>
+      <stable>&gstreamer-sharp-version-stable;</stable>
+      <devel>&gstreamer-sharp-version-devel;</devel>
     </versions>
   </module>
 
@@ -227,7 +240,7 @@ Library for creating audio/video editors.
     like video editing, DLNA Support and Video conferencing. This module has a 
     seperate mailing list, so be sure to check the mailing lists page for details.
     </description>
-    <maintainer>Reynaldo Verdejo and Alessandro Decina</maintainer>
+    <maintainer>Reynaldo Verdejo</maintainer>
     <versions>
       <stable>&gst-android-version-stable;</stable>
       <devel>&gst-android-version-devel;</devel>
