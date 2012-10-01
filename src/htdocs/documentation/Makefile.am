@@ -16,6 +16,7 @@ checkoutdir:
 plugins.xml: checkoutdir
 	for m in gstreamer gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad; do \
 	  moduledir=$(CHECKOUT_DIR)/$$m; \
+	  branch="master"; \
 	  if [ -d $$moduledir ] ; then \
 	    pushd $$moduledir >/dev/null; \
 	    echo "$$m checkout: cleaning"; \
@@ -26,14 +27,14 @@ plugins.xml: checkoutdir
 	      echo "$$m checkout: skipping update (GST_WWW_SKIP_DOC_CHECKOUT_UPDATES is set)"; \
 	    else \
 	      echo "$$m checkout: updating..."; \
-	      git checkout 0.10 && git pull || { \
+	      git checkout $$branch && git pull || { \
 	        echo "Updating $$m checkout failed"; exit 1; \
 	      } ; \
 	    fi; \
 	    popd >/dev/null; \
 	  else \
 	    echo "$$m checkout: creating (cloning)"; \
-	    git clone --depth 1 -b 0.10 git://anongit.freedesktop.org/gstreamer/$$m $$moduledir || { \
+	    git clone --depth 1 -b $$branch git://anongit.freedesktop.org/gstreamer/$$m $$moduledir || { \
 	      echo "git clone failed"; exit 1; \
 	    } ; \
 	  fi; \
