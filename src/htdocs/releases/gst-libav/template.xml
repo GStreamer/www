@@ -2,45 +2,50 @@
 <?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
 <release>
   <module>gst-libav</module>
-  <module-fancy>GStreamer libav Plug-ins</module-fancy>
+  <module-fancy>GStreamer libav Plugins</module-fancy>
   <name></name>
   <version></version>
 
   <intro>
 <p>
 The GStreamer team is proud to announce a new release
-in the 0.10.x stable series of the
-GStreamer libav Plug-ins.
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
 </p>
 <p>
-The 0.10.x series is a stable series targeted at end users.
-It is not API or ABI compatible with the stable 0.8.x series.
-It is, however, parallel installable with the 0.8.x series.
-</p>
-<p>
-This module contains plug-ins using libraries from the libav project.
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
 </p>
 
 <p>
-Other modules containing plug-ins are:
+This module contains plugins based on the libav project, including codecs.
+</p>
+
+<p>
+Other modules containing plugins are:
 
 <dl>
 <dt>gst-plugins-base</dt>
-<dd>contains a basic set of well-supported plug-ins</dd>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
 <dt>gst-plugins-ugly</dt>
-<dd>contains a set of well-supported plug-ins, but might pose problems for
+<dd>contains a set of well-supported plugins, but might pose problems for
     distributors</dd>
 <dt>gst-plugins-bad</dt>
-<dd>contains a set of less supported plug-ins that haven't passed the
-    rigorous quality testing we expect</dd>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
 </dl>
 
 </p>
   </intro>
 
   <features>
-    <feature>Parallel installability with 0.8.x series</feature>
-    <feature>Threadsafe design and API</feature>
+    <feature>Parallel installability with 0.10.x series</feature>
+    <feature></feature>
   </features>
 
   <applications>

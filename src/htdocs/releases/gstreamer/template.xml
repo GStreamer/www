@@ -10,49 +10,55 @@
 
 <p>
 The GStreamer team is proud to announce a new release
-in the 0.10.x stable series of the
+in the 1.x stable series of the
 core of the GStreamer streaming media framework.
 </p>
 <p>
-The 0.10.x series is a stable series targeted at end users.
-It is not API or ABI compatible with the stable 0.8.x series.
-It is, however, parallel installable with the 0.8.x series.
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
 </p>
 <p>
-The 0.10.x series has been reworked for threadsafety.  It also features
-various feature additions and enhancements.
+The 1.x series has been reworked for more flexible memory handling, improved
+caps negotiation and re-negotiation, better handling of dynamic pipelines,
+and increased performance in general. It also features countless other feature
+additions and enhancements.
 </p>
 <p>
 This module, gstreamer, only contains core functionality.
 For actual media playback, you will need other modules.
 <dl>
 <dt>gst-plugins-base</dt>
-<dd>contains a basic set of well-supported plug-ins</dd>
+<dd>contains a basic set of well-supported plugins</dd>
 <dt>gst-plugins-good</dt>
-<dd>contains a set of well-supported plug-ins under our preferred license</dd>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
 <dt>gst-plugins-ugly</dt>
-<dd>contains a set of well-supported plug-ins, but might pose problems for
+<dd>contains a set of well-supported plugins, but might pose problems for
     distributors</dd>
 <dt>gst-plugins-bad</dt>
-<dd>contains a set of less supported plug-ins that haven't passed the
-    rigorous quality testing we expect</dd>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
 </dl>
 
 </p>
   </intro>
-  <features>
-    <feature>Parallel installability with 0.8.x series</feature>
-    <feature>Threadsafe design and API</feature>
 
+  <features>
+    <feature>Parallel installability with 0.10.x series</feature>
     <feature></feature>
   </features>
 
   <applications>
+<!--
 <p>
-Applications ported to GStreamer 0.10 include Totem, RhythmBox, Sound-Juicer,
-Gnome Media, Flumotion, Amarok, Jamboree, Pitivi, Istanbul, AnnoAmp, Elisa, and others.
-Let us know if you want to be added to this list.
+Applications ported to GStreamer 1.0 include Totem, RhythmBox, Sound-Juicer,
+Pitivi, Cheese, Empathy, Transmageddon, and others.
 </p>
+-->
   </applications>
 
   <contributors>

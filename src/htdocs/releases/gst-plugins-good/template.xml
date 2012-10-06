@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
 <release>
   <module>gst-plugins-good</module>
-  <module-fancy>GStreamer Good Plug-ins</module-fancy>
+  <module-fancy>GStreamer Good Plugins</module-fancy>
   <name></name>
   <version></version>
 
@@ -10,21 +10,24 @@
 
 <p>
 The GStreamer team is proud to announce a new release
-in the 0.10.x stable series of the
-GStreamer Good Plug-ins.
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
 </p>
 <p>
-The 0.10.x series is a stable series targeted at end users.
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
 </p>
 
 <p>
 <i>"Such ingratitude.  After all the times I've saved your life."</i>
 </p>
 <p>
-A collection of plug-ins you'd want to have right next to you on the
-battlefield.  Shooting sharp and making no mistakes, these plug-ins have it
+A collection of plugins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plugins have it
 all: good looks, good code, and good licensing.  Documented and dressed up
-in tests.  If you're looking for a role model to base your own plug-in on,
+in tests.  If you're looking for a role model to base your own plugin on,
 here it is.
 </p>
 <p>
@@ -33,29 +36,34 @@ let us know - it is a matter of honour for us to ensure Blondie doesn't look
 like he's been walking 100 miles through the desert without water.
 </p>
 <p>
-This module contains a set of plug-ins that we consider to have good quality
-  code, correct functionality, our preferred license (LGPL for the plug-in
+This module contains a set of plugins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plugin
   code, LGPL or LGPL-compatible for the supporting library).
-We believe distributors can safely ship these plug-ins.
+We believe distributors can safely ship these plugins.
 People writing elements should base their code on these elements.
 </p>
 <p>
-Other modules containing plug-ins are:
+Other modules containing plugins are:
 
 <dl>
 <dt>gst-plugins-base</dt>
-<dd>contains a basic set of well-supported plug-ins</dd>
+<dd>contains a basic set of well-supported plugins</dd>
 <dt>gst-plugins-ugly</dt>
-<dd>contains a set of well-supported plug-ins, but might pose problems for
+<dd>contains a set of well-supported plugins, but might pose problems for
     distributors</dd>
 <dt>gst-plugins-bad</dt>
-<dd>contains a set of less supported plug-ins that haven't passed the
-    rigorous quality testing we expect</dd>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
 </dl>
 
 </p>
   </intro>
+
   <features>
+    <feature>Parallel installability with 0.10.x series</feature>
   </features>
 
   <applications>
