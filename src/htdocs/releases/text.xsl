@@ -49,6 +49,7 @@ Bugs fixed in this release
      </xsl:for-each>
     </xsl:when>
     <xsl:otherwise>
+
 There were no bugs fixed in this release
     </xsl:otherwise>
    </xsl:choose>
@@ -60,7 +61,7 @@ There were no bugs fixed in this release
    <xsl:choose>
     <xsl:when test="count((additions|removals|deprecations)/*) > 0">
 
-API changed in this release
+API changes in this release
      <xsl:apply-templates select="additions" />
 
      <xsl:apply-templates select="removals" />
@@ -68,6 +69,7 @@ API changed in this release
      <xsl:apply-templates select="deprecations" />
     </xsl:when>
     <xsl:otherwise>
+
 There were no API changes in this release.
     </xsl:otherwise>
    </xsl:choose>
@@ -78,7 +80,7 @@ There were no API changes in this release.
   <xsl:template match="additions">
 
    <xsl:if test="count(./*) > 0">
-- API additions:
+ - API additions:
     <xsl:call-template name="item-list">
       <xsl:with-param name="parent">
         <xsl:value-of select="." />
@@ -92,7 +94,7 @@ There were no API changes in this release.
   <xsl:template match="removals">
 
    <xsl:if test="count(./*) > 0">
-- API removals:
+ - API removals:
     <xsl:call-template name="item-list">
       <xsl:with-param name="parent">
         <xsl:value-of select="." />
@@ -106,7 +108,7 @@ There were no API changes in this release.
   <xsl:template match="deprecations">
 
    <xsl:if test="count(./*) > 0">
-- API deprecations:
+ - API deprecations:
     <xsl:call-template name="item-list">
       <xsl:with-param name="parent">
         <xsl:value-of select="." />
@@ -139,7 +141,7 @@ Applications<xsl:copy-of select="." />
 
   <!-- this template outputs the release notes -->
   <xsl:template match="release">
-Release notes for <xsl:value-of select="module-fancy" />&nbsp;<xsl:value-of select="version" /> "<xsl:value-of select="name" />"
+Release notes for <xsl:value-of select="module-fancy" />&nbsp;<xsl:value-of select="version" /><xsl:if test="not(normalize-space(name)='')"> "<xsl:value-of select="name" />"</xsl:if>
         <xsl:copy-of select="intro" />
         <xsl:apply-templates select="features" />
 
@@ -149,27 +151,37 @@ Release notes for <xsl:value-of select="module-fancy" />&nbsp;<xsl:value-of sele
 
         <xsl:apply-templates select="api" />
 
-Download
+==== Download ====
 
-You can find source releases of <xsl:copy-of select="module" /> in the download directory:
-&realsite;/src/<xsl:value-of select="module" />/
+You can find source releases of <xsl:copy-of select="module" /> in the download
+directory: &realsite;/src/<xsl:value-of select="module" />/
 
-GStreamer Homepage
+The git repository and details how to clone it can be found at
+http://cgit.freedesktop.org/gstreamer/<xsl:value-of select="module" />/
 
-More details can be found on the project's website:
-&realsite;/
+==== Homepage ====
 
-Support and Bugs
+The project's website is &realsite;/
+
+==== Support and Bugs ====
 
 We use GNOME's bugzilla for bug reports and feature requests:
 &gst-bug-report;
 
-Developers
+Please submit patches via bugzilla as well.
 
-GStreamer is stored in Git, hosted at git.freedesktop.org, and can be cloned from there.
-Interested developers of the core library, plug-ins, and applications should
-subscribe to the gstreamer-devel list. If there is sufficient interest we
-will create more lists as necessary.
+For help and support, please subscribe to and send questions to the
+gstreamer-devel mailing list (see below for details).
+
+There is also a #gstreamer IRC channel on the Freenode IRC network.
+
+==== Developers ====
+
+GStreamer is stored in Git, hosted at git.freedesktop.org, and can be cloned
+from there (see link above).
+
+Interested developers of the core library, plugins, and applications should
+subscribe to the gstreamer-devel list.
 
         <xsl:apply-templates select="applications" />
 

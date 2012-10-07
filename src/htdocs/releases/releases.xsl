@@ -149,7 +149,9 @@ Release notes for
 <h1>
 Release notes for
 <xsl:value-of select="module-fancy" />&nbsp;<xsl:value-of select="version" />
+<xsl:if test="not(normalize-space(name)='')">
 "<xsl:value-of select="name" />"
+</xsl:if>
 </h1>
         <xsl:copy-of select="intro" />
 
@@ -159,35 +161,60 @@ Release notes for
         <xsl:apply-templates select="api" />
 
 <h2>Download</h2>
+
+<p>
 You can find source releases of <xsl:copy-of select="module" /> in the
 <xsl:call-template name="hyperlink">
   <xsl:with-param name="href">&realsite;/src/<xsl:value-of select="module" />/</xsl:with-param>
   <xsl:with-param name="text"><xsl:value-of select="module" /> download directory</xsl:with-param>
 </xsl:call-template>.
+</p>
+<p>
+The git repository and details how to clone it can be found at
+<xsl:call-template name="hyperlink">
+  <xsl:with-param name="href">http://cgit.freedesktop.org/gstreamer/<xsl:value-of select="module" />/</xsl:with-param>
+  <xsl:with-param name="text">git.freedesktop.org</xsl:with-param>
+</xsl:call-template>.
+</p>
 
 
+<h2>Homepage</h2>
 
-<h2>GStreamer Homepage</h2>
-
-More details can be found on the project's website,
-<a href="&realsite;">&realsite;</a>.
+The project's website is <a href="&realsite;">&realsite;</a>.
 
 <h2>Support and Bugs</h2>
 
+<p>
 We use GNOME's bugzilla for
 <a href="&gst-bug-report;">bug reports and feature requests</a>.
+</p>
+<p>
+Please submit patches via bugzilla as well.
+</p>
+<p>
+For help and support, please subscribe to and send questions to the
+gstreamer-devel mailing list (see below for details).
+</p>
+<p>
+There is also a #gstreamer IRC channel on the Freenode IRC network.
+</p>
 
 <h2>Developers</h2>
+
+<p>
 Git is hosted on git.freedesktop.org.  You can
 <xsl:call-template name="hyperlink">
   <xsl:with-param name="href">&gst-repo-http;<xsl:value-of select="module" />/</xsl:with-param>
   <xsl:with-param name="text">browse the <xsl:value-of select="module" /> repository</xsl:with-param>
 </xsl:call-template>.
-
+</p>
+<p>
 All code is in Git and can be checked out from there.
-Interested developers of the core library, plug-ins, and applications should
-subscribe to the gstreamer-devel list. If there is sufficient interest we
-will create more lists as necessary.
+</p>
+<p>
+Interested developers of the core library, plugins, and applications should
+subscribe to the gstreamer-devel list.
+</p>
 
         <xsl:apply-templates select="applications" />
 
