@@ -21,7 +21,7 @@
 
   <xsl:element name="a">
     <xsl:attribute name="href">
-http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value-of select="$component" /><![CDATA[&]]>target_milestone=<xsl:value-of select="$milestone" /></xsl:attribute>
+https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value-of select="$component" /><![CDATA[&]]>target_milestone=<xsl:value-of select="$milestone" /></xsl:attribute>
     <xsl:value-of select="$milestone" />
   </xsl:element>
 </xsl:template>
@@ -37,7 +37,7 @@ http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value
   <td>
     <xsl:element name="a">
       <xsl:attribute name="href">
-http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer&amp;component=<xsl:value-of select="component" />
+https://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer&amp;component=<xsl:value-of select="component" />
       </xsl:attribute>
 create bug
     </xsl:element>
@@ -50,7 +50,7 @@ create bug
   <td>
     <xsl:element name="a">
       <xsl:attribute name="href">
-http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value-of select="component" />&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;bug_severity=blocker&amp;form_name=query
+https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value-of select="component" />&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;bug_severity=blocker&amp;form_name=query
       </xsl:attribute>
 blocker
     </xsl:element>
@@ -63,7 +63,7 @@ blocker
   <td>
     <xsl:element name="a">
       <xsl:attribute name="href">
-http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value-of select="component" />&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query
+https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value-of select="component" />&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query
       </xsl:attribute>
 unresolved
     </xsl:element>
@@ -93,32 +93,32 @@ unresolved
 <table border="0">
 <tr>
   <td colspan="4">
-<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query">All unresolved bugs</a>
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query">All unresolved bugs</a>
   </td>
 </tr>
 <tr>
   <td colspan="4">
-<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=don%27t%20know&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query">All unresolved bugs not assigned to a component</a>
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=don%27t%20know&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query">All unresolved bugs not assigned to a component</a>
   </td>
 </tr>
 <tr>
   <td colspan="4">
-<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=RESOLVED&amp;resolution=FIXED&amp;resolution=VERIFIED&amp;target_milestone=HEAD&amp;target_milestone=HEART&amp;target_milestone=1.0.x&amp;target_milestone=1.1.x&amp;target_milestone=1.2.x&amp;target_milestone=1.3.x&amp;target_milestone=1.4.x&amp;target_milestone=2.x&amp;form_name=query">Fixed bugs which need to be reassigned to the right milestone</a>
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=RESOLVED&amp;resolution=FIXED&amp;resolution=VERIFIED&amp;target_milestone=HEAD&amp;target_milestone=HEART&amp;target_milestone=1.0.x&amp;target_milestone=1.1.x&amp;target_milestone=1.2.x&amp;target_milestone=1.3.x&amp;target_milestone=1.4.x&amp;target_milestone=2.x&amp;form_name=query">Fixed bugs which need to be reassigned to the right milestone</a>
   </td>
 </tr>
 <tr>
   <td colspan="6">
 All bugs changed within the last
-<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=1">24 hours</a>, 
-<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=2">48 hours</a>,
-<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=3">72 hours</a>,
-<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=7">1 week</a>,
-<a href="http://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=14">2 weeks</a>
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=1">24 hours</a>,
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=2">48 hours</a>,
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=3">72 hours</a>,
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=7">1 week</a>,
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=14">2 weeks</a>
   </td>
 </tr>
 <tr>
   <td colspan="4">
-<a href="http://bugzilla.gnome.org/browse.cgi?product=GStreamer">GStreamer bugzilla overview</a>
+<a href="https://bugzilla.gnome.org/browse.cgi?product=GStreamer">GStreamer bugzilla overview</a>
   </td>
 </tr>
 <tr>
@@ -136,7 +136,7 @@ All bugs changed within the last
    }
   </script>
   -->
-  <form name="f" action="http://bugzilla.gnome.org/buglist.cgi" method="get">
+  <form name="f" action="https://bugzilla.gnome.org/buglist.cgi" method="get">
     <p>Search for GStreamer bugs:<br/>
     <input type="hidden" name="query_format" value="advanced" />
     <input type="hidden" name="product" value="GStreamer" />
