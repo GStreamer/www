@@ -237,12 +237,15 @@ popd
 mv $moduledir/$module-$version.tar.* data/src/$module
 
 if [ -d $moduledir/docs ]; then
-echo "Updating docs on website"
-pushd $moduledir/docs > /dev/null 2>&1
-make upload > /dev/null 2>&1
-popd
+  echo "Press Enter to update docs on website (or enter 'no' to skip)"
+  read do_commit
+  if test "x$do_commit" != "xno"; then
+    pushd $moduledir/docs > /dev/null 2>&1
+    make upload > /dev/null 2>&1
+    popd
+  fi
 else
-echo "Not updating docs on website - no docs directory"
+  echo "Not updating docs on website - no docs directory"
 fi
 
 if test -d $moduledir/po
