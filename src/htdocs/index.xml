@@ -27,7 +27,9 @@ simple plugin with a clean, generic interface.
 <a href="features/index.html">Read more ...</a>
 </p>
 <p>
-GStreamer is released under the LGPL. The 0.10 series is API and ABI stable.
+GStreamer is released under the LGPL. The 1.x series is API and ABI stable
+and supersedes the previous stable 0.10 series. Both can be installed in
+parallel.
 </p>
 </td>
 <td>
