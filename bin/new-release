@@ -232,9 +232,11 @@ fi
 
 echo "Rolling release tarballs"
 pushd $moduledir > /dev/null 2>&1
-make release > /dev/null 2>&1 || exit 1
+make release > "/tmp/gst-make-release-$module-$version.log" 2>&1 || exit 1
 popd
-mv $moduledir/$module-$version.tar.* data/src/$module
+# not needed any more, make release does that now
+# mv $moduledir/$module-$version.tar.* data/src/$module
+tail -n 8 "/tmp/gst-make-release-$module-$version.log"
 
 if [ -d $moduledir/docs ]; then
   echo "Press Enter to update docs on website (or enter 'no' to skip)"
@@ -265,15 +267,13 @@ echo "Press Enter to review the git diff"
 less -R release.diff
 popd
 
-# print md5sums and links
+# print sha256sum and links (again, even though 'make release' does that too)
 echo
 echo "======================================================================="
 echo
-cat data/src/$module/$module-$version.tar.gz.md5
-cat data/src/$module/$module-$version.tar.bz2.md5
+cat data/src/$module/$module-$version.tar.xz.sha256sum
 echo
-echo "http://gstreamer.freedesktop.org/src/$module/$module-$version.tar.gz"
-echo "http://gstreamer.freedesktop.org/src/$module/$module-$version.tar.bz2"
+echo "http://gstreamer.freedesktop.org/src/$module/$module-$version.tar.xz"
 echo
 echo "======================================================================="
 echo
