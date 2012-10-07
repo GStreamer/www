@@ -26,11 +26,11 @@ then
   exit 1
 fi
 
-if test -z "$name"
-then
-  echo Please specify a release name
-  exit 1
-fi
+#if test -z "$name"
+#then
+#  echo Please specify a release name
+#  exit 1
+#fi
 
 if test ! -d $modulebasedir/gstreamer
 then
@@ -109,7 +109,9 @@ then
 fi
 echo "Updating $release.xml"
 perl -i -p -e "s@<version></version>@<version>$version</version>@" $release.xml
-perl -i -p -e "s@<name></name>@<name>$name</name>@" $release.xml
+if test -n "$name"; then
+  perl -i -p -e "s@<name></name>@<name>$name</name>@" $release.xml
+fi
 
 # update Changelog
 echo "Regenerating ChangeLog"
@@ -175,7 +177,11 @@ else
   echo "`date +%Y-%m-%d`  $REAL_NAME <$EMAIL_ADDRESS>" >> $changelog
   echo >> $changelog
   echo -e "\t* configure.ac:" >> $changelog
-  echo -e "\t  releasing $version, \"$name\"" >> $changelog
+  if test -n "$name"; then
+    echo -e "\t  releasing $version, \"$name\"" >> $changelog;
+  else
+    echo -e "\t  releasing $version" >> $changelog;
+  fi;
   echo >> $changelog
   cat $changelog.bak >> $changelog
   pushd $moduledir > /dev/null 2>&1
