@@ -9,7 +9,13 @@
   <module id="gstreamer">
     <component>gstreamer+%28core%29</component>
     <milestones>
-      <milestone>HEAD</milestone>
+      <milestone>1.1.x</milestone>
+      <milestone>1.0.2</milestone>
+      <milestone>1.0.1</milestone>
+      <milestone>1.0.0</milestone>
+      <milestone>0.10.37</milestone>
+
+<!--
       <milestone>0.10.36</milestone>
       <milestone>0.10.35</milestone>
       <milestone>0.10.34</milestone>
@@ -47,7 +53,7 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
-<!--
+
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -86,7 +92,12 @@
   <module id="gst-plugins-base">
     <component>gst-plugins-base</component>
     <milestones>
-      <milestone>HEAD</milestone>
+      <milestone>1.1.x</milestone>
+      <milestone>1.0.2</milestone>
+      <milestone>1.0.1</milestone>
+      <milestone>1.0.0</milestone>
+      <milestone>0.10.37</milestone>
+<!--
       <milestone>0.10.36</milestone>
       <milestone>0.10.35</milestone>
       <milestone>0.10.34</milestone>
@@ -124,7 +135,7 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
-<!--
+
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -139,7 +150,12 @@
   <module id="gst-plugins-good">
     <component>gst-plugins-good</component>
     <milestones>
-      <milestone>HEAD</milestone>
+      <milestone>1.1.x</milestone>
+      <milestone>1.0.2</milestone>
+      <milestone>1.0.1</milestone>
+      <milestone>1.0.0</milestone>
+      <milestone>0.10.32</milestone>
+<!--
       <milestone>0.10.31</milestone>
       <milestone>0.10.30</milestone>
       <milestone>0.10.29</milestone>
@@ -172,7 +188,7 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
-<!--
+
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -187,7 +203,12 @@
   <module id="gst-plugins-ugly">
     <component>gst-plugins-ugly</component>
     <milestones>
-      <milestone>HEAD</milestone>
+      <milestone>1.1.x</milestone>
+      <milestone>1.0.2</milestone>
+      <milestone>1.0.1</milestone>
+      <milestone>1.0.0</milestone>
+      <milestone>0.10.20</milestone>
+<!--
       <milestone>0.10.19</milestone>
       <milestone>0.10.18</milestone>
       <milestone>0.10.17</milestone>
@@ -208,7 +229,7 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
-<!--
+
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -223,7 +244,12 @@
   <module id="gst-plugins-bad">
     <component>gst-plugins-bad</component>
     <milestones>
-      <milestone>HEAD</milestone>
+      <milestone>1.1.x</milestone>
+      <milestone>1.0.2</milestone>
+      <milestone>1.0.1</milestone>
+      <milestone>1.0.0</milestone>
+      <milestone>0.10.24</milestone>
+<!--
       <milestone>0.10.23</milestone>
       <milestone>0.10.22</milestone>
       <milestone>0.10.21</milestone>
@@ -247,7 +273,7 @@
       <milestone>0.10.3</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
-<!--
+
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -259,36 +285,14 @@
     </milestones>
   </module>
 
-  <module id="gst-plugins-gl">
-    <component>gst-plugins-gl</component>
-    <milestones>
-      <milestone>HEAD</milestone>
-      <milestone>0.10.3</milestone>
-      <milestone>0.10.2</milestone>
-      <milestone>0.10.1</milestone>
-    </milestones>
-  </module>
-    
 <!--
-  <module id="gst-player">
-    <component>gst-player</component>
-    <milestones>
-      <milestone>HEAD</milestone>
-      <milestone>0.8.1</milestone>
-      <milestone>0.8.0</milestone>
-      <milestone>0.7.1</milestone>
-      <milestone>0.6.x</milestone>
-      <milestone>0.5.2</milestone>
-      <milestone>0.4.0</milestone>
-      <milestone>0.3.3</milestone>
-    </milestones>
-  </module>
--->
-
   <module id="gst-rtsp-server">
     <component>gst-rtsp-server</component>
     <milestones>
-      <milestone>HEAD</milestone>
+      <milestone>1.1.x</milestone>
+      <milestone>1.0.2</milestone>
+      <milestone>1.0.1</milestone>
+      <milestone>1.0.0</milestone>
       <milestone>0.10.6</milestone>
       <milestone>0.10.5</milestone>
       <milestone>0.10.4</milestone>
@@ -298,11 +302,92 @@
       <milestone>0.10.0</milestone>
     </milestones>
   </module>
+-->
 
+  <module id="gst-libav">
+    <component>gst-libav</component>
+    <milestones>
+      <milestone>1.1.x</milestone>
+      <milestone>1.0.2</milestone>
+      <milestone>1.0.1</milestone>
+      <milestone>1.0.0</milestone>
+      <milestone>0.10.14</milestone>
+<!--
+      <milestone>0.10.13</milestone>
+      <milestone>0.10.12</milestone>
+      <milestone>0.10.11</milestone>
+      <milestone>0.10.10</milestone>
+      <milestone>0.10.9</milestone>
+      <milestone>0.10.8</milestone>
+      <milestone>0.10.7</milestone>
+      <milestone>0.10.6</milestone>
+      <milestone>0.10.5</milestone>
+      <milestone>0.10.4</milestone>
+      <milestone>0.10.3</milestone>
+      <milestone>0.10.2</milestone>
+      <milestone>0.10.1</milestone>
+      <milestone>0.10.0</milestone>
+      <milestone>0.9.7</milestone>
+      <milestone>0.9.6</milestone>
+      <milestone>0.9.5</milestone>
+      <milestone>0.9.4</milestone>
+      <milestone>0.9.3</milestone>
+      <milestone>0.8.7</milestone>
+      <milestone>0.8.6</milestone>
+      <milestone>0.8.5</milestone>
+      <milestone>0.8.4</milestone>
+      <milestone>0.8.3</milestone>
+      <milestone>0.8.2</milestone>
+      <milestone>0.8.1</milestone>
+      <milestone>0.8.0</milestone>
+-->
+    </milestones>
+  </module>
+
+<!--
+  <module id="gnonlin">
+    <component>gnonlin</component>
+    <milestones>
+      <milestone>0.10.17</milestone>
+      <milestone>0.10.16</milestone>
+      <milestone>0.10.15</milestone>
+      <milestone>0.10.14</milestone>
+      <milestone>0.10.13</milestone>
+      <milestone>0.10.12</milestone>
+      <milestone>0.10.11</milestone>
+      <milestone>0.10.10</milestone>
+      <milestone>0.10.9</milestone>
+      <milestone>0.10.8</milestone>
+      <milestone>0.10.7</milestone>
+      <milestone>0.10.6</milestone>
+      <milestone>0.10.5</milestone>
+      <milestone>0.10.4</milestone>
+      <milestone>0.10.3</milestone>
+      <milestone>0.10.2</milestone>
+      <milestone>0.10.1</milestone>
+    </milestones>
+  </module>
+-->
+
+<!--    
+  <module id="gst-plugins-gl">
+    <component>gst-plugins-gl</component>
+    <milestones>
+      <milestone>0.10.3</milestone>
+      <milestone>0.10.2</milestone>
+      <milestone>0.10.1</milestone>
+    </milestones>
+  </module>
+-->
+
+<!--
   <module id="gst-python">
     <component>gst-python</component>
     <milestones>
-      <milestone>HEAD</milestone>
+      <milestone>1.1.x</milestone>
+      <milestone>1.0.2</milestone>
+      <milestone>1.0.1</milestone>
+      <milestone>1.0.0</milestone>
       <milestone>0.10.22</milestone>
       <milestone>0.10.21</milestone>
       <milestone>0.10.20</milestone>
@@ -326,7 +411,6 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
-<!--
       <milestone>0.9.7</milestone>
       <milestone>0.9.6</milestone>
       <milestone>0.9.5</milestone>
@@ -337,76 +421,18 @@
       <milestone>0.8.2</milestone>
       <milestone>0.8.1</milestone>
       <milestone>0.8.0</milestone>
+    </milestones>
+  </module>
 -->
-    </milestones>
-  </module>
-
-  <module id="gst-ffmpeg">
-    <component>gst-ffmpeg</component>
-    <milestones>
-      <milestone>HEAD</milestone>
-      <milestone>0.10.13</milestone>
-      <milestone>0.10.12</milestone>
-      <milestone>0.10.11</milestone>
-      <milestone>0.10.10</milestone>
-      <milestone>0.10.9</milestone>
-      <milestone>0.10.8</milestone>
-      <milestone>0.10.7</milestone>
-      <milestone>0.10.6</milestone>
-      <milestone>0.10.5</milestone>
-      <milestone>0.10.4</milestone>
-      <milestone>0.10.3</milestone>
-      <milestone>0.10.2</milestone>
-      <milestone>0.10.1</milestone>
-      <milestone>0.10.0</milestone>
-<!--
-      <milestone>0.9.7</milestone>
-      <milestone>0.9.6</milestone>
-      <milestone>0.9.5</milestone>
-      <milestone>0.9.4</milestone>
-      <milestone>0.9.3</milestone>
-      <milestone>0.8.7</milestone>
-      <milestone>0.8.6</milestone>
-      <milestone>0.8.5</milestone>
-      <milestone>0.8.4</milestone>
-      <milestone>0.8.3</milestone>
-      <milestone>0.8.2</milestone>
-      <milestone>0.8.1</milestone>
-      <milestone>0.8.0</milestone>
--->
-    </milestones>
-  </module>
-
-  <module id="gnonlin">
-    <component>gnonlin</component>
-    <milestones>
-      <milestone>HEAD</milestone>
-      <milestone>0.10.17</milestone>
-      <milestone>0.10.16</milestone>
-      <milestone>0.10.15</milestone>
-      <milestone>0.10.14</milestone>
-      <milestone>0.10.13</milestone>
-      <milestone>0.10.12</milestone>
-      <milestone>0.10.11</milestone>
-      <milestone>0.10.10</milestone>
-      <milestone>0.10.9</milestone>
-      <milestone>0.10.8</milestone>
-      <milestone>0.10.7</milestone>
-      <milestone>0.10.6</milestone>
-      <milestone>0.10.5</milestone>
-      <milestone>0.10.4</milestone>
-      <milestone>0.10.3</milestone>
-      <milestone>0.10.2</milestone>
-      <milestone>0.10.1</milestone>
-    </milestones>
-  </module>
-    
 
   <module id="documentation">
     <component>documentation</component>
     <milestones>
-      <milestone>HEAD</milestone>
-      <milestone>0.10.36</milestone>
+      <milestone>1.1.x</milestone>
+      <milestone>1.0.2</milestone>
+      <milestone>1.0.1</milestone>
+      <milestone>1.0.0</milestone>
+<!--
       <milestone>0.10.35</milestone>
       <milestone>0.10.34</milestone>
       <milestone>0.10.33</milestone>
@@ -443,41 +469,8 @@
       <milestone>0.10.2</milestone>
       <milestone>0.10.1</milestone>
       <milestone>0.10.0</milestone>
-    </milestones>
-  </module>
-
-<!--
-  <module id="gst-plugins">
-    <component>gst-plugins</component>
-    <milestones>
-      <milestone>HEAD</milestone>
-      <milestone>0.8.13</milestone>
-      <milestone>0.8.12</milestone>
-      <milestone>0.8.11</milestone>
-      <milestone>0.8.10</milestone>
-      <milestone>0.8.9</milestone>
-      <milestone>0.8.8</milestone>
-      <milestone>0.8.7</milestone>
-      <milestone>0.8.6</milestone>
-      <milestone>0.8.5</milestone>
-      <milestone>0.8.4</milestone>
-      <milestone>0.8.3</milestone>
-      <milestone>0.8.2</milestone>
-      <milestone>0.8.1</milestone>
-      <milestone>0.8.0</milestone>
-      <milestone>0.7.6</milestone>
-      <milestone>0.7.5</milestone>
-      <milestone>0.7.4</milestone>
-      <milestone>0.7.3</milestone>
-      <milestone>0.7.2</milestone>
-      <milestone>0.7.1</milestone>
-      <milestone>0.6.4</milestone>
-      <milestone>0.6.3</milestone>
-      <milestone>0.6.2</milestone>
-      <milestone>0.6.1</milestone>
-      <milestone>0.6.0</milestone>
-    </milestones>
-  </module>
 -->
+    </milestones>
+  </module>
 
 </buglists>
