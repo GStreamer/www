@@ -66,8 +66,10 @@ Other modules containing plugins are:
     <feature>Parallel installability with 0.10.x series</feature>
   </features>
 
+<!--
   <applications>
   </applications>
+-->
 
   <contributors>
   </contributors>

@@ -52,14 +52,14 @@ For actual media playback, you will need other modules.
     <feature></feature>
   </features>
 
-  <applications>
 <!--
+  <applications>
 <p>
 Applications ported to GStreamer 1.0 include Totem, RhythmBox, Sound-Juicer,
 Pitivi, Cheese, Empathy, Transmageddon, and others.
 </p>
--->
   </applications>
+-->
 
   <contributors>
   </contributors>

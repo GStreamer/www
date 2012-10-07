@@ -71,8 +71,11 @@ Other modules containing plugins are:
     <feature></feature>
   </features>
 
+<!--
   <applications>
   </applications>
+-->
+
   <contributors>
   </contributors>
 
