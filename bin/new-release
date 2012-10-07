@@ -138,7 +138,7 @@ bin/bugzilla $module $version GStreamer $release.xml
 
 # update releases Makefile.am
 makefileam=src/htdocs/releases/$module/Makefile.am
-if grep $version $makefileam > /dev/null 2>&1
+if grep "($version)" $makefileam > /dev/null 2>&1
 then
   echo already changed $makefileam
 else
