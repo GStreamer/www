@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.0.2</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+    <feature>Parallel installability with 0.10.x series</feature>
+    <feature>alsa: fix probing of supported formats, and advertise non-native-endianness formats as fallback</feature>
+    <feature>audiobasesink: properly handle GAP events (fixing some isses with e.g. certain DVD menus)</feature>
+    <feature>audioconvert: try harder to not convert or to preserve input format precision</feature>
+    <feature>audiodecoder: leak fixes and refcounting fixes</feature>
+    <feature>audioresample: re-enable the SSE/SSE2 code paths for better performance</feature>
+    <feature>riff: fix paletted RGB formats and msvideo mapping</feature>
+    <feature>rtsp: make formatting and parsing of range floating-point values locale-independent</feature>
+    <feature>playbin: streamsynchronizer fixes, esp. for handling corner-cases near EOS</feature>
+    <feature>tcpserver{sink,src}: add 'current-port' property and signal actually used port</feature>
+    <feature>videoconvert: fix handling of paletted RGB formats</feature>
+    <feature>videodecoder: don't leak message strings when error is not fatal</feature>
+    <feature>videodecoder: finetune missing timestamp estimating</feature>
+    <feature>videotestsrc: add palette for paletted RGB formats</feature>
+    <feature>vorbistag: fix writing of image tags into vorbis comments</feature>
+  </features>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+      <contributors>
+	<person>Alexandre Relange</person>
+	<person>Andoni Morales Alastruey</person>
+	<person>Carlos Rafael Giani</person>
+	<person>David Corvoysier</person>
+	<person>Josep Torra</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Sebastian Dröge</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>580093</id>
+      <summary>tcpserversink,src: add 'current-port' property and signal actually used port when port=0 was set</summary>
+    </bug>
+    <bug>
+      <id>680904</id>
+      <summary>alsasink: no supported formats detected with using USB sound card on big-endian system</summary>
+    </bug>
+    <bug>
+      <id>683098</id>
+      <summary>videodecoder: log failure message if acquire_buffer failed</summary>
+    </bug>
+    <bug>
+      <id>684411</id>
+      <summary>rtsp: range in SDP formatted according to locale</summary>
+    </bug>
+    <bug>
+      <id>685273</id>
+      <summary>Pre-rolling on GAP events doesn't work properly for audio sinks</summary>
+    </bug>
+    <bug>
+      <id>685711</id>
+      <summary>audio, video: update docs for virtual functions that require chaining up</summary>
+    </bug>
+    <bug>
+      <id>685938</id>
+      <summary>[decodebin] Issues with group switching algorithm</summary>
+    </bug>
+    <bug>
+      <id>686081</id>
+      <summary>adder: all unit tests crash now after collectpads changes</summary>
+    </bug>
+    <bug>
+      <id>686298</id>
+      <summary>Cannot decode some AVI files with Microsoft Video 1</summary>
+    </bug>
+  </bugs>
+
+</release>
