@@ -4771,4 +4771,59 @@ or download tarballs for
         </content>
   </item>
 
+  <item>
+      <date>2012-11-21 13:00</date>
+        <title>GStreamer Core and Plugins 1.0.3 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team announces a new bug-fix release for the
+new API and ABI-stable 1.x series of the GStreamer multimedia
+framework.
+        </p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.0.3.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.0.3.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.0.3.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.0.3.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.0.3.html">gst-plugins-bad</a>, or
+<a href="&site;/releases/gst-libav/1.0.3.html">gst-libav</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.0.3.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.0.3.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.0.3.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.0.3.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.0.3.tar.xz">gst-plugins-bad</a>, or
+<a href="&site;/src/gst-libav/gst-libav-1.0.3.tar.xz">gst-libav</a>,
+        </p>
+        <p>
+Improvements include:
+        <ul>
+    <li>bufferpool: fix deadlock</li>
+    <li>baseparse: forward stream-start event in push mode, fixing issues with streamsynchronizer</li>
+    <li>basesink: reset START_TIME when needed, fixing position reporting after seeking beyond end</li>
+    <li>typefind: detect isml ftyp as iso-fragmented video/quicktime</li>
+    <li>typefinding improvements fixing playback of some wavpack files</li>
+    <li>textoverlay rendering fixes</li>
+    <li>gobject-introspection annotation fixes</li>
+    <li>API: gst_video_decoder_get_qos_proportion()</li>
+    <li>rtspsrc: numerous improvements</li>
+    <li>build fix for gst-plugins-base installed in non-default prefix</li>
+    <li>multifilesink: post messages in max-size mode as well</li>
+    <li>vp8dec: improve robustness on decoding errors, e.g. for videocalling</li>
+    <li>cdio: try to handle CD-TEXT in non-UTF8 encodings</li>
+    <li>xingmux, siddec, dvdlpcmdec and dvdsubdec fixes</li>
+    <li>mpegtsmux: fix DTS/PTS confusion</li>
+    <li>tsdemux, tsparse: seeking fixes</li>
+    <li>tsdemux, tsparse: fix timestamping with push-based input</li>
+    <li>h264parse: fix PPS insertion</li>
+    <li>mpg123audiodec: fix leaks from not chaining up in the finalize function</li>
+    <li>avcodecmap: Y41B is YUV411P, not YUV410P</li>
+    <li>numerous <a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;target_milestone=1.0.3">bug fixes</a></li>
+    <li>some memory leak fixes</li>
+        </ul>
+        </p>
+        </content>
+  </item>
+
 </news>
