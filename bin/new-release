@@ -106,6 +106,10 @@ if test ! -s $release.xml
 then
   echo "Creating $release.xml"
   cp $template $release.xml
+  case $version in
+    *.0 ) sed -i -e 's/a new release/a new feature release/' $release.xml ;;
+    * ) sed -i -e 's/a new release/a new bug-fix release/' $release.xml ;;
+  esac
 fi
 echo "Updating $release.xml"
 perl -i -p -e "s@<version></version>@<version>$version</version>@" $release.xml
@@ -216,11 +220,14 @@ cp $release $moduledir/RELEASE || {
   exit 1
 }
 
+# FIXME: we should be able to generate most of the NEWS entries automatically
+# just like we do for the RELEASE file.
 echo "Press Enter to update NEWS with information from RELEASE"
 read
 $EDITOR $moduledir/NEWS $release
 
-if test -d $moduledir/docs/plugins
+# we check for the inspect subdir, so this is skipped for e.g. gst-libav
+if test -d $moduledir/docs/plugins/inspect
 then
   echo "Updating plugin documentation files"
   pushd $moduledir/docs/plugins > /dev/null 2>&1
