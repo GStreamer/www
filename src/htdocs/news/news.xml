@@ -4826,4 +4826,62 @@ Improvements include:
         </content>
   </item>
 
+  <item>
+      <date>2012-12-18 23:00</date>
+        <title>GStreamer Core and Plugins 1.0.4 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team announces a new bug-fix release for the
+new API and ABI-stable 1.x series of the GStreamer multimedia
+framework.
+        </p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.0.4.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.0.4.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.0.4.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.0.4.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.0.4.html">gst-plugins-bad</a>, or
+<a href="&site;/releases/gst-libav/1.0.4.html">gst-libav</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.0.4.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.0.4.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.0.4.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.0.4.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.0.4.tar.xz">gst-plugins-bad</a>, or
+<a href="&site;/src/gst-libav/gst-libav-1.0.4.tar.xz">gst-libav</a>,
+        </p>
+        <p>
+Improvements include:
+        <ul>
+    <li>basesrc: fix potential leaks when re-activating in a different mode</li>
+    <li>bindings: make all pad probe types work with bindings</li>
+    <li>bindings: fix gst_event_parse_stream_start() annotation, fixing crash</li>
+    <li>bindings: fix annotation for gst_app_src_push_buffer(), fixing crash</li>
+    <li>bindings: add several missing annotations for GstRtspMessage API</li>
+    <li>documentation improvements</li>
+    <li>playbin: fix occasional not-negotiated errors when switching visualisations</li>
+    <li>ssaparse: ignore invalid UTF-8 in SSA/ASS subtitles init sections in matroska files</li>
+    <li>streamsynchronizer: better timestamp and gap handling at EOS, fixing potential OOM in baseaudiosink</li>
+    <li>deinterleave: properly set srcpad channel position</li>
+    <li>osxvideosink: Fix resizing the Cocoa window on receiving new caps</li>
+    <li>rtspsrc fixes</li>
+    <li>shout2send: also accept audio/webm in addition to video/webm</li>
+    <li>videobox: fix border filling for planar YUV formats</li>
+    <li>webmmux: fix linking to shout2send</li>
+    <li>v4l2: fix build on FreeBSD</li>
+    <li>siddec: initialize debug category</li>
+    <li>mpeg4videoparse: also parse divx 4/5</li>
+    <li>mpeg4videoparse: export number of sprite warping points in caps (decoders might have no or only limited GMC support)</li>
+    <li>mpegtsmux: propagate flow returns upstream; don't crash when reused</li>
+    <li>rtmpsrc: disable seeking if the configured url specifies live=true</li>
+    <li>build fixes for OS/X (shm) and Windows (d3dvideosink)</li>
+    <li>libav G.726 decoder fixes</li>
+    <li>miscellaneous <a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;target_milestone=1.0.4">bug fixes</a></li>
+    <li>some memory leak fixes</li>
+        </ul>
+        </p>
+        </content>
+  </item>
+
 </news>
