@@ -1,0 +1,24 @@
+#!/bin/sh
+
+if [ -z "$1" ]; then
+  echo "Uploads gstreamer gst-plugins-base gst-plugins-good to master.gnome.org";
+  echo "Usage: $0 VERSION-NUMBER";
+  echo;
+  exit 1;
+fi
+
+export VERSION=$1
+
+echo "Version $VERSION"
+TARBALLS="\
+data/src/gstreamer/gstreamer-$VERSION.tar.xz \
+data/src/gst-plugins-base/gst-plugins-base-$VERSION.tar.xz \
+data/src/gst-plugins-good/gst-plugins-good-$VERSION.tar.xz"
+
+scp $TARBALLS master.gnome.org:
+
+echo
+echo "Done uploading. Installing modules on ftp.gnome.org now:"
+echo
+ssh master.gnome.org "ftpadmin install gstreamer-$VERSION.tar.xz gst-plugins-base-$VERSION.tar.xz gst-plugins-good-$VERSION.tar.xz"
+
