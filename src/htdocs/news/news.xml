@@ -4884,4 +4884,59 @@ Improvements include:
         </content>
   </item>
 
+  <item>
+      <date>2013-01-08 12:00</date>
+        <title>GStreamer Core and Plugins 1.0.5 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce a new bug-fix release for the
+new API and ABI-stable 1.x series of the GStreamer multimedia
+framework.
+        </p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.0.5.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.0.5.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.0.5.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.0.5.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.0.5.html">gst-plugins-bad</a>, or
+<a href="&site;/releases/gst-libav/1.0.5.html">gst-libav</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.0.5.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.0.5.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.0.5.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.0.5.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.0.5.tar.xz">gst-plugins-bad</a>, or
+<a href="&site;/src/gst-libav/gst-libav-1.0.5.tar.xz">gst-libav</a>,
+        </p>
+        <p>
+Improvements include:
+        <ul>
+    <li>rtspsrc: fix regression that make rtspsrc hang when stopping</li>
+    <li>alsasrc: don't output buffers without timestamps or with bogus timestamps</li>
+    <li>add GST_CLOCK_TYPE_OTHER clock type</li>
+    <li>discoverer, decodebin: fix state change re-sync race that might lead to deadlocks</li>
+    <li>add GST_BIN_FLAG_NO_RESYNC flag that disables a resync when
+       an element is added, removed or linked in the bin; this is
+       interesting for complex bins that dynamically add elements
+       to themselves and want to manage the state of those elements
+       without interference from state resync threads (which may
+       cause deadlocks)</li>
+    <li>video: fix crashes with and frame sizes of A420 video format</li>
+    <li>fix VP6-alpha video playback</li>
+    <li>jpegenc: pass flow returns upstream</li>
+    <li>audio/video parsers: fix negotiation with encoders in some transcoding cases</li>
+    <li>qtdemux: fix pixel-aspect-ratio of some files with ProRes video</li>
+    <li>cairo: port cairooverlay to 1.0</li>
+    <li>psdemux: tentative port to 1.0; take into account both DTS and PTS</li>
+    <li>shm: Actually get the permissions on get_property</li>
+    <li>waylandsink: do not default to fullscreen mode</li>
+    <li>build: fix build with new automake 1.13</li>
+    <li>build: pass CC, LD, AS, AR and NM to the libav configure if set</li>
+    <li>miscellaneous <a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;target_milestone=1.0.5">bug fixes</a></li>
+        </ul>
+        </p>
+        </content>
+  </item>
+
 </news>
