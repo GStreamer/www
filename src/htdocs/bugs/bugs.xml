@@ -10,6 +10,8 @@
     <component>gstreamer+%28core%29</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.0.6</milestone>
+      <milestone>1.0.5</milestone>
       <milestone>1.0.4</milestone>
       <milestone>1.0.3</milestone>
       <milestone>1.0.2</milestone>
@@ -95,6 +97,8 @@
     <component>gst-plugins-base</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.0.6</milestone>
+      <milestone>1.0.5</milestone>
       <milestone>1.0.4</milestone>
       <milestone>1.0.3</milestone>
       <milestone>1.0.2</milestone>
@@ -155,6 +159,8 @@
     <component>gst-plugins-good</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.0.6</milestone>
+      <milestone>1.0.5</milestone>
       <milestone>1.0.4</milestone>
       <milestone>1.0.3</milestone>
       <milestone>1.0.2</milestone>
@@ -210,6 +216,8 @@
     <component>gst-plugins-ugly</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.0.6</milestone>
+      <milestone>1.0.5</milestone>
       <milestone>1.0.4</milestone>
       <milestone>1.0.3</milestone>
       <milestone>1.0.2</milestone>
@@ -253,6 +261,8 @@
     <component>gst-plugins-bad</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.0.6</milestone>
+      <milestone>1.0.5</milestone>
       <milestone>1.0.4</milestone>
       <milestone>1.0.3</milestone>
       <milestone>1.0.2</milestone>
@@ -318,6 +328,8 @@
     <component>gst-libav</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.0.6</milestone>
+      <milestone>1.0.5</milestone>
       <milestone>1.0.4</milestone>
       <milestone>1.0.3</milestone>
       <milestone>1.0.2</milestone>
@@ -441,6 +453,8 @@
     <component>documentation</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.0.6</milestone>
+      <milestone>1.0.5</milestone>
       <milestone>1.0.4</milestone>
       <milestone>1.0.3</milestone>
       <milestone>1.0.2</milestone>
