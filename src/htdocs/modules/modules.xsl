@@ -38,6 +38,7 @@ Here's a quick overview of all of our modules :
   <th>description</th>
   <th>stable version</th>
   <th>devel version</th>
+  <th>status</th>
 </tr>
 
         <xsl:for-each select="module">
@@ -119,6 +120,7 @@ Here's a quick overview of all of our modules :
       &#160;
     </xsl:choose>
   </td>
+  <td><xsl:value-of select="status" /></td>
 </tr>
  
         </xsl:for-each>
