@@ -16,6 +16,7 @@
 <!ENTITY gst-editing-services-version-stable "git master">
 <!ENTITY qt-gstreamer-version-stable "0.10.1">
 <!ENTITY gst-android-version-stable "git master">
+<!ENTITY gst-omx-version-stable "git master">
 
 <!ENTITY gst-version-devel "git master">
 <!ENTITY gst-plugins-base-version-devel "git master">
@@ -28,6 +29,7 @@
 <!ENTITY gst-editing-services-version-devel "git master">
 <!ENTITY qt-gstreamer-version-devel "git master">
 <!ENTITY gst-android-version-devel "git master">
+<!ENTITY gst-omx-version-devel "git master">
 
 <!ENTITY gst-ffmpeg-version-devel "git master">
 <!ENTITY gst-libav-version-devel "git master">

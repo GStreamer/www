@@ -247,4 +247,19 @@ Streaming server based on GStreamer
     </versions>
   </module>
 
+  <module>
+    <id>gst-omx</id>
+    <blurb>OpenMax plugins</blurb>
+    <title>GStreamer OpenMax plugins</title>
+    <description>
+OpenMax-based decoder and encoder elements for GStreamer.
+Replaces gst-openmax.
+    </description>
+    <maintainer>Sebastian Dröge</maintainer>
+    <versions>
+      <stable>&gst-omx-version-stable;</stable>
+      <devel>&gst-omx-version-devel;</devel>
+    </versions>
+  </module>
+
 </modules>
