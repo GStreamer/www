@@ -86,6 +86,13 @@
 </tr>
 
 <tr>
+ <td>GStreamer 0.10 to 1.0 porting guide</td>
+ <td colspan="3"><a href="http://cgit.freedesktop.org/gstreamer/gstreamer/plain/docs/random/porting-to-1.0.txt">HTML</a></td>
+<!-- <td colspan="3"><a href="">HTML</a></td> -->
+<!-- <td colspan="3"><a href="">HTML</a></td> -->
+</tr>
+
+<tr>
  <td>GStreamer Wiki (see esp.
    <a href="http://gstreamer.freedesktop.org/wiki/ReleasePlanning">ReleasePlanning</a> and
    <a href="http://gstreamer.freedesktop.org/wiki/SubmittingPatches">SubmittingPatches</a>)
