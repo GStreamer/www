@@ -4986,4 +4986,22 @@ Happy hacking, see you on the other side!
         </content>
   </item>
 
+  <item>
+      <date>2013-03-22 17:40</date>
+        <title>GStreamer OpenMAX IL wrapper plugin 1.0.0 release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce the first GStreamer OpenMAX IL wrapper plugin
+release for the new API and ABI-stable 1.x series of the GStreamer multimedia
+framework.
+        </p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gst-omx/1.0.0.html">gst-omx</a>,
+or download tarballs for
+<a href="&site;/src/gst-omx/gst-omx-1.0.0.tar.xz">gst-omx</a>,
+        </p>
+        </content>
+  </item>
+
 </news>

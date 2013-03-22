@@ -449,6 +449,15 @@
   </module>
 -->
 
+  <module id="gst-omx">
+    <component>gst-omx</component>
+    <milestones>
+      <milestone>1.1.x</milestone>
+      <milestone>1.0.1</milestone>
+      <milestone>1.0.0</milestone>
+   </milestones>
+ </module>
+
   <module id="documentation">
     <component>documentation</component>
     <milestones>

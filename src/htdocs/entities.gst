@@ -16,7 +16,7 @@
 <!ENTITY gst-editing-services-version-stable "git master">
 <!ENTITY qt-gstreamer-version-stable "0.10.1">
 <!ENTITY gst-android-version-stable "git master">
-<!ENTITY gst-omx-version-stable "git master">
+<!ENTITY gst-omx-version-stable "1.0.0">
 
 <!ENTITY gst-version-devel "git master">
 <!ENTITY gst-plugins-base-version-devel "git master">
