@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plugins</module-fancy>
+  <name></name>
+  <version>1.0.6</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plugins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plugins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plugin on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plugins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plugin
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plugins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+    <feature>auparse: fix caps leak</feature>
+    <feature>avidemux: push mode: handle some more 0-size buffer cases</feature>
+    <feature>deinterlace: fix infinite loop on EOS with non-default methods or fields</feature>
+    <feature>dvdemux: don't return FALSE when dropping sink events, fixes flow errors</feature>
+    <feature>level: send a last message on EOS</feature>
+    <feature>mp4mux: in faststart mode, don't output up to 4 kB of garbage at the end</feature>
+    <feature>osxvideosink: Fix crash in osxvideosink with external window output</feature>
+    <feature>osxvideosink: Make GstGLView propagate input events to its parent view</feature>
+    <feature>osxvideosink: Make GstNavigation key input events in osxvideosink compatible with x(v)imagesink ones</feature>
+    <feature>pulsesink: don't error out if pa_stream_proplist_update() with new tags fails</feature>
+    <feature>qtdemux: fix potential crash on short MOOV atom</feature>
+    <feature>qtdemux: fix sample leak when processing private qt tags</feature>
+    <feature>qtdemux: push mode: only parse moov 1 once</feature>
+    <feature>qtdemux: skip disabled tracks</feature>
+    <feature>qtmux: set stream language code from tag</feature>
+    <feature>rtph264pay: Don't use upstream caps with peer_query_caps()</feature>
+    <feature>rtpmp4gdepay: streamtype is not put by all RTSP server, not make it optional</feature>
+    <feature>rtpptdemux: forward sticky events and then set caps</feature>
+    <feature>rtpsession: Fix wrong code organisation in case of collision</feature>
+    <feature>rtspsrc: flush connection when stopping</feature>
+    <feature>rtspsrc: only EOS when our source sends BYE</feature>
+    <feature>rtspsrc: save the stream SSRC</feature>
+    <feature>v4l2: don't check stride for encoded formats</feature>
+    <feature>v4l2: fix compilation against newer kernel headers as on FC19</feature>
+    <feature>videomixer2: avoid caps leak</feature>
+    <feature>videomixer: fix eos timestamp check</feature>
+    <feature>ximagesrc: Set the pixel aspect ratio correctly in the caps</feature>
+    <feature>build: allow calling autogen.sh from out-of-tree</feature>
+    <feature>build: fix build with automake 1.13</feature>
+  </features>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Alexey Chernov</person>
+	<person>Arnaud Vrac</person>
+	<person>Bastien Nocera</person>
+	<person>Benjamin Gaignard</person>
+	<person>Kishore Arepalli</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Markovtsev Vadim</person>
+	<person>Matej Knopp</person>
+	<person>Matthew Waters</person>
+	<person>Michael Smith</person>
+	<person>Norbert Waschbuesch</person>
+	<person>Ognyan Tonchev</person>
+	<person>Olivier Crête</person>
+	<person>Paul HENRYS</person>
+	<person>Rodolfo Schulz de Lima</person>
+	<person>Thomas Vander Stichele</person>
+	<person>Tim 'mithro' Ansell</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+
+
+  <bugs>
+    <bug>
+      <id>628790</id>
+      <summary>qtdemux: OSD displays persistent chapters subtitles</summary>
+    </bug>
+    <bug>
+      <id>656068</id>
+      <summary>pulsesink: errors out if pa_stream_proplist_update() fails with old pulseaudio versions</summary>
+    </bug>
+    <bug>
+      <id>675453</id>
+      <summary>rtspsrc: only EOS if BYE came from SSRC of the stream</summary>
+    </bug>
+    <bug>
+      <id>678429</id>
+      <summary>souphttpsrc: should return GST_FLOW_ERROR from create function in case of HTTP error 404 not found</summary>
+    </bug>
+    <bug>
+      <id>684924</id>
+      <summary>rtspsrc: flush connection when going to null state</summary>
+    </bug>
+    <bug>
+      <id>684944</id>
+      <summary>avidemux: &quot; unhandled buffer size &quot; error for cyuv.avi in push mode</summary>
+    </bug>
+    <bug>
+      <id>688935</id>
+      <summary>rtpjitterbuffer not always correctly warns about resetting skew</summary>
+    </bug>
+    <bug>
+      <id>689809</id>
+      <summary>osxvideosink: inconsistent keyboard navigation events</summary>
+    </bug>
+    <bug>
+      <id>691484</id>
+      <summary>osxvideosink: crash when displaying on Qt widget</summary>
+    </bug>
+    <bug>
+      <id>691570</id>
+      <summary>[isomp4/qtdemux] lots of critical warnings on this sample file</summary>
+    </bug>
+    <bug>
+      <id>691580</id>
+      <summary>ximagesrc sets bad pixel-aspect-ratio caps</summary>
+    </bug>
+    <bug>
+      <id>691832</id>
+      <summary>osxvideosink doesn't propagate input events to output window</summary>
+    </bug>
+    <bug>
+      <id>692309</id>
+      <summary>allow autogen.sh to be call out-of-tree</summary>
+    </bug>
+    <bug>
+      <id>692786</id>
+      <summary>CAPS event is forwarded before STREAM_START in rtpptdemux element</summary>
+    </bug>
+    <bug>
+      <id>692935</id>
+      <summary>videomixer: hangs on eos</summary>
+    </bug>
+    <bug>
+      <id>692950</id>
+      <summary> &quot; rtpjitterbuffer &quot; properties can't be changed after pipeline is started</summary>
+    </bug>
+    <bug>
+      <id>693055</id>
+      <summary>level: 32-bit formats don't work because of typo in format list: S32LEF32LE</summary>
+    </bug>
+    <bug>
+      <id>693173</id>
+      <summary>deinterlace method=greedyl fields=top does not complete</summary>
+    </bug>
+    <bug>
+      <id>693307</id>
+      <summary>videomixer2 leaks caps reference</summary>
+    </bug>
+    <bug>
+      <id>693373</id>
+      <summary>1.0 branch is still using AM_CONFIG_HEADER</summary>
+    </bug>
+    <bug>
+      <id>694010</id>
+      <summary>qtdemux: crash with partial mp4 / moov atom</summary>
+    </bug>
+    <bug>
+      <id>694184</id>
+      <summary>Wrong code organisation in case of collision in rtpsession</summary>
+    </bug>
+    <bug>
+      <id>694275</id>
+      <summary>auparse: src_caps are leaked</summary>
+    </bug>
+    <bug>
+      <id>695629</id>
+      <summary>rtph264pay: caps negotiation fails if upstream caps is not NULL</summary>
+    </bug>
+    <bug>
+      <id>695643</id>
+      <summary>dvdemux: returns wrong value when it is not processing the sink events</summary>
+    </bug>
+    <bug>
+      <id>695644</id>
+      <summary>deinterlace: going to infinite loop on EOS with method=scalerbob fields=bff</summary>
+    </bug>
+    <bug>
+      <id>696355</id>
+      <summary>qtdemux: sample leak in tag handling</summary>
+    </bug>
+    <bug>
+      <id>696358</id>
+      <summary>qtmux: set language code on streams</summary>
+    </bug>
+  </bugs>
+
+</release>

@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.0.6</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+<p>
+The 1.x series has been reworked for more flexible memory handling, improved
+caps negotiation and re-negotiation, better handling of dynamic pipelines,
+and increased performance in general. It also features countless other feature
+additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+    <feature>bin: reset GValue from iterator after usage, fixing leak</feature>
+    <feature>pipeline: fix seeking on pipeline with NULL clock</feature>
+    <feature>message: accept NULL error argument in gst_message_parse_{error,warning,info}</feature>
+    <feature>basesrc: handle renegotiation correctly</feature>
+    <feature>basesink: handle sync of EOS after item without duration</feature>
+    <feature>basetransform: avoid warnings from NULL outcaps passed to transform_size in shutdown race</feature>
+    <feature>adapter, basesrc, typefind: handle gst_buffer_map failure</feature>
+    <feature>queuearray: fix gst_queue_array_drop_element()</feature>
+    <feature>queuearray: fix gst_queue_array_find()</feature>
+    <feature>queue: remove query from queue if queue is flushing</feature>
+    <feature>g-i: make sure enumeration types and flags are introspected and available to bindings</feature>
+    <feature>g-i: add allow-none annotation for gst_pipeline_new()'s name property</feature>
+  </features>
+
+<!--
+  <applications>
+<p>
+Applications ported to GStreamer 1.0 include Totem, RhythmBox, Sound-Juicer,
+Pitivi, Cheese, Empathy, Transmageddon, and others.
+</p>
+  </applications>
+-->
+
+    <contributors>
+	<person>Alexander Schrab</person>
+	<person>Nate Bogdanowicz</person>
+	<person>Niv Sardi</person>
+	<person>Simon Feltman</person>
+	<person>Stefan Sauer</person>
+	<person>Tim 'mithro' Ansell</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+
+
+  <bugs>
+    <bug>
+      <id>684804</id>
+      <summary>basesink: fails to post EOS message with RTSP stream</summary>
+    </bug>
+    <bug>
+      <id>691185</id>
+      <summary>g-i: GStreamer enums and flags not usable - &quot; expected enumeration type GstFormat, but got Format instead &quot; warning when setting GstFormat property on GStreamer appsrc element</summary>
+    </bug>
+    <bug>
+      <id>691985</id>
+      <summary>gst_pad_check_reconfigure: only remove flag if set.</summary>
+    </bug>
+    <bug>
+      <id>691986</id>
+      <summary>basesrc: set NEED_RECONFIGURE flag if negotiate fails</summary>
+    </bug>
+    <bug>
+      <id>692691</id>
+      <summary>queue: dangling pointer when doing allocation query on a flushing queue</summary>
+    </bug>
+    <bug>
+      <id>692868</id>
+      <summary>basesink: expands GAP event without duration to last to segment end</summary>
+    </bug>
+    <bug>
+      <id>693065</id>
+      <summary>pipeline: criticals when seeking on pipeline with NULL clock</summary>
+    </bug>
+    <bug>
+      <id>693587</id>
+      <summary>Adding offset to GstSegment deserialize/serialize to fix jump on uninitialized value</summary>
+    </bug>
+    <bug>
+      <id>693704</id>
+      <summary>gst_message_parse_{warning,error} annotations wrongly claim allow-none for GError parameter</summary>
+    </bug>
+    <bug>
+      <id>693996</id>
+      <summary>basetransform: audioresample shutdown unit test fails with 'gst_audio_info_from_caps: caps != NULL'  in transform_size</summary>
+    </bug>
+  </bugs>
+</release>

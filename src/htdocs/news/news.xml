@@ -4987,6 +4987,64 @@ Happy hacking, see you on the other side!
   </item>
 
   <item>
+      <date>2013-03-22 16:00</date>
+        <title>GStreamer Core and Plugins 1.0.6 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce a new bug-fix release for the
+new API and ABI-stable 1.x series of the GStreamer multimedia
+framework.
+        </p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.0.6.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.0.6.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.0.6.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.0.6.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.0.6.html">gst-plugins-bad</a>, or
+<a href="&site;/releases/gst-libav/1.0.6.html">gst-libav</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.0.6.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.0.6.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.0.6.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.0.6.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.0.6.tar.xz">gst-plugins-bad</a>, or
+<a href="&site;/src/gst-libav/gst-libav-1.0.6.tar.xz">gst-libav</a>,
+        </p>
+        <p>
+Improvements include:
+        <ul>
+    <li>build fixes for out-of-tree autogen.sh and automake 1.13, and recent kernel/video4linux</li>
+    <li>gobject-introspection fixes for bindings</li>
+    <li>videoscale: Correct DAR and border calculations</li>
+    <li>playbin: make sure converters are always plugged when needed, fixes not-negotiated errors with some sinks</li>
+    <li>playbin: fix subtitleoverlay caps handling to avoid not-negotiated errors when subtitle plugins are missing</li>
+    <li>adder: make "caps" property work properly</li>
+    <li>alsasink: don't use 100% CPU in some cases</li>
+    <li>reliability fixes for flushing seeks and shutdowns in queue and bastransform</li>
+    <li>appsrc: fix locking order</li>
+    <li>audiovisualisation fixes</li>
+    <li>deinterlace: fix infinite loop on EOS with non-default methods or fields</li>
+    <li>avidemux push mode fixes, make dv-in-avidemux work</li>
+    <li>level: send a final level message on EOS</li>
+    <li>osxvideosink fixes</li>
+    <li>ximagesrc: Set the pixel aspect ratio correctly in the output caps</li>
+    <li>v4l2: don't check stride for encoded formats</li>
+    <li>leak fixes in GstBin, pango, auparse, gdppay</li>
+    <li>qtdemux: skip disabled tracks and ignore chapter subtitle tracks</li>
+    <li>RTSP and RTP fixes</li>
+    <li>Opus audio decoder, encoder and RTP payloader fixes</li>
+    <li>codecparser fixes for H.264, MPEG-2 and VC-1 parsing</li>
+    <li>opensles, eglglessink, and decklink plugins ported to 1.0</li>
+    <li>libav: fix H.264 decoding errors in some files and update to 0.8.5 release</li>
+
+    <li>miscellaneous <a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;target_milestone=1.0.6">bug fixes</a></li>
+        </ul>
+        </p>
+        </content>
+  </item>
+
+  <item>
       <date>2013-03-22 17:40</date>
         <title>GStreamer OpenMAX IL wrapper plugin 1.0.0 release</title>
         <content>

@@ -1,11 +1,11 @@
-<!ENTITY gst-version-stable "1.0.5">
-<!ENTITY gst-plugins-base-version-stable "1.0.5">
-<!ENTITY gst-plugins-good-version-stable "1.0.5">
-<!ENTITY gst-plugins-ugly-version-stable "1.0.5">
-<!ENTITY gst-plugins-bad-version-stable "1.0.5">
+<!ENTITY gst-version-stable "1.0.6">
+<!ENTITY gst-plugins-base-version-stable "1.0.6">
+<!ENTITY gst-plugins-good-version-stable "1.0.6">
+<!ENTITY gst-plugins-ugly-version-stable "1.0.6">
+<!ENTITY gst-plugins-bad-version-stable "1.0.6">
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.13">
-<!ENTITY gst-libav-version-stable "1.0.5">
+<!ENTITY gst-libav-version-stable "1.0.6">
 <!ENTITY gst-openmax-version-stable "git master">
 <!ENTITY gst-python-version-stable "git master">
 <!ENTITY gstreamer-sharp-version-stable "0.9.2">
