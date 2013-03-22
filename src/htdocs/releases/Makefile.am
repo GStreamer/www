@@ -22,4 +22,5 @@ SUBDIRS = \
 	gst-python \
 	gstreamer \
 	gstreamer-sharp \
-	gst-editing-services
+	gst-editing-services \
+	gst-omx

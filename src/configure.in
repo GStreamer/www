@@ -39,4 +39,5 @@ htdocs/releases/gst-python/Makefile
 htdocs/releases/gstreamer/Makefile
 htdocs/releases/gstreamer-sharp/Makefile
 htdocs/releases/gnonlin/Makefile
+htdocs/releases/gst-omx/Makefile
 ])
