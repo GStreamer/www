@@ -5062,4 +5062,47 @@ or download tarballs for
         </content>
   </item>
 
+  <item>
+      <date>2013-04-26 14:00</date>
+        <title>GStreamer Core and Plugins 1.0.7 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another bug-fix release for the
+new API and ABI-stable 1.x series of the GStreamer multimedia
+framework.
+        </p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.0.7.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.0.7.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.0.7.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.0.7.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.0.7.html">gst-plugins-bad</a>, or
+<a href="&site;/releases/gst-libav/1.0.7.html">gst-libav</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.0.7.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.0.7.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.0.7.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.0.7.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.0.7.tar.xz">gst-plugins-bad</a>, or
+<a href="&site;/src/gst-libav/gst-libav-1.0.7.tar.xz">gst-libav</a>,
+        </p>
+        <p>
+Improvements include:
+        <ul>
+    <li>better support for static plugins</li>
+    <li>streamsynchronizer is now a public element, useful in HLS pipelines for example</li>
+    <li>osxaudio plugin ported to 1.0</li>
+    <li>androidmedia plugin is ported to 1.0</li>
+    <li>internal libav snapshot in gst-libav has been updated to libav 0.8.6</li>
+    <li>Now uses frame based threading if possible and disables slice
+        based threading until libav 0.9.x is used (as is the case in git master
+        already) This provides potentially better performance and fixes some
+        display corruptions caused by bugs in the slice based threading</li>
+    <li>a number of <a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;target_milestone=1.0.7">bug fixes</a></li>
+        </ul>
+        </p>
+        </content>
+  </item>
+
 </news>
