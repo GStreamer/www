@@ -10,6 +10,8 @@
     <component>gstreamer+%28core%29</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.1.1</milestone>
+      <milestone>1.0.8</milestone>
       <milestone>1.0.7</milestone>
       <milestone>1.0.6</milestone>
       <milestone>1.0.5</milestone>
@@ -98,6 +100,8 @@
     <component>gst-plugins-base</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.1.1</milestone>
+      <milestone>1.0.8</milestone>
       <milestone>1.0.7</milestone>
       <milestone>1.0.6</milestone>
       <milestone>1.0.5</milestone>
@@ -161,6 +165,8 @@
     <component>gst-plugins-good</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.1.1</milestone>
+      <milestone>1.0.8</milestone>
       <milestone>1.0.7</milestone>
       <milestone>1.0.6</milestone>
       <milestone>1.0.5</milestone>
@@ -219,6 +225,8 @@
     <component>gst-plugins-ugly</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.1.1</milestone>
+      <milestone>1.0.8</milestone>
       <milestone>1.0.7</milestone>
       <milestone>1.0.6</milestone>
       <milestone>1.0.5</milestone>
@@ -265,6 +273,8 @@
     <component>gst-plugins-bad</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.1.1</milestone>
+      <milestone>1.0.8</milestone>
       <milestone>1.0.7</milestone>
       <milestone>1.0.6</milestone>
       <milestone>1.0.5</milestone>
@@ -333,6 +343,8 @@
     <component>gst-libav</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.1.1</milestone>
+      <milestone>1.0.8</milestone>
       <milestone>1.0.7</milestone>
       <milestone>1.0.6</milestone>
       <milestone>1.0.5</milestone>
@@ -465,6 +477,8 @@
       <milestone></milestone>
       <milestone></milestone>
       <milestone></milestone>
+      <milestone></milestone>
+      <milestone></milestone>
       <milestone>1.0.1</milestone>
       <milestone>1.0.0</milestone>
    </milestones>
@@ -474,6 +488,8 @@
     <component>documentation</component>
     <milestones>
       <milestone>1.1.x</milestone>
+      <milestone>1.1.1</milestone>
+      <milestone>1.0.8</milestone>
       <milestone>1.0.7</milestone>
       <milestone>1.0.6</milestone>
       <milestone>1.0.5</milestone>
