@@ -12,6 +12,7 @@ htdocs/bugs/Makefile
 htdocs/conference/Makefile
 htdocs/conference/2010/Makefile
 htdocs/conference/2011/Makefile
+htdocs/conference/2012/Makefile
 htdocs/dev/Makefile
 htdocs/documentation/Makefile
 htdocs/download/Makefile

@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <!DOCTYPE xml
 [
-  <!ENTITY % site-entities SYSTEM "../entities.site">
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
     %site-entities;
     ]>
 
-<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
 <page>
   <title>GStreamer Conference 2012 Program </title>
 
@@ -14,7 +14,7 @@
 <h1>Speakers bio and abstracts - GStreamer Conference 2012</h1>
 <h2>San Diego, USA, August 27th and August 28th, 2012</h2>
 <p><a href="http://gstreamer.freedesktop.org/conference">Back to conference main page</a></p>
-<p><a href="http://gstreamer.freedesktop.org/conference/gstreamer-conference-timetable.html">Back to conference timetable</a></p>
+<p><a href="gstreamer-conference-timetable.html">Back to conference timetable</a></p>
 <table width="100%" border="1" bordercolor="#C0C0C0" cellpadding="4" cellspacing="2">
 	
 	<tr valign="top" bgcolor="#C0C0C0"><td>

@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer Conference 2012</title>
+
+  <body>
+<table>
+<tr><td>
+<h1>GStreamer Conference 2012</h1>
+<h2>The GStreamer Conference 2012 is now over, but we are assembling the slides from the speakers <a href="http://gstreamer.freedesktop.org/wiki/GStreamerConference2012">on this page</a>. We also recorded the talks and they will soon be available for viewing at <a href="http://gstconf.ubicast.tv/">gstconf.ubicast.tv</a>.</h2>
+<h2>August 27th and August 28th, 2012 · Sheraton San Diego Hotel &amp; Marina · San Diego, USA</h2>
+<p>
+We are back for a third year of the GStreamer Conference, and this year we are taking the GStreamer Conference to the United States and San Diego. This year we will be co-hosting with the LinuxCon North America, the Linux Plumbers Conference and the Linux Kernel Summit. The event will be held at the Sheraton San Diego Hotel and Marina.
+</p>
+<h2>Technologies covered</h2>
+<p>
+We have a long list of topics to be presented like:
+</p>
+
+<ul>
+<li>GStreamer 1.0</li>
+<li>Developing with the GStreamer.com SDK</li>
+<li>Developing hardware based elements with GStreamer 1.0</li>
+<li>V4L development status and plans</li>
+<li>OpenGL and Mesa</li>
+<li>Advanced image analysis, MXF and GStreamer</li>
+<li>GStreamer for Large-Scale Scientific Signal Processing</li>
+<li>The Opus Audio Codec</li>
+<li>Working with GStreamer base classes</li>
+<li>Status update on ALSA development</li>
+<li>GStreamer and Android</li>
+</ul>
+</td>
+<td valign="top">
+
+<h1>Gold Sponsor</h1>
+<p>
+<a href="http://www.collabora.com/projects/gstreamer/"><img src="sponsor_150x49_collabora.png" alt="Collabora" height="49" width="150" /></a>
+</p>
+<h2>Silver Sponsors</h2>
+<p>
+<a href="http://entropywave.com/"><img src="sponsor_150_35_entropywave.png" alt="Entropy Wave" height="35" width="150" /></a>
+</p>
+<p>
+<a href="http://www.fluendo.com"><img src="sponsor_149x36_fluendo.png" alt="Fluendo" height="36" width="149" /></a>
+</p>
+<p>
+<a href="http://www.igalia.com/"><img src="sponsor_150x54_igalia.png" alt="Igalia" height="54" width="150" /></a>
+</p>
+<p>
+<a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
+</p>
+<h2>Press Partners</h2>
+<p><a href="http://lwn.net"><img src="lwn.png" alt="Lwn.net" height="61" width="150" /></a>
+</p>
+<p>
+<a href="http://www.phoronix.com/"><img src="phoronix.png" alt="Phoronix.com" height="34" width="150" /></a>
+</p>
+
+<h2>Special Media Partners</h2>
+<p>
+<a href="http://www.ubicast.eu/"><img src="sponsor_150x45_UbiCast.png" alt="Ubi Cast" height="45" width="150" /></a>
+</p>
+<p>
+<small>
+Interested in <a href="http://gstreamer.freedesktop.org/conference/2012/gstreamer-sponsor.pdf">becoming a sponsor?</a></small>
+</p>
+</td></tr>
+</table>
+<h2>Schedule and speakers list</h2>
+<p>The <a href="gstreamer-conference-timetable.html">full conference schedule is now available</a>. We hope you will be as excited about this years schedule as we are. In addition to of course many in-depth GStreamer talks we also have presentations on some of the most important core Linux multimedia technologies like ALSA, Mesa, Wayland, the Opus Codec and V4L. We have managed to get some of the leading developers from the world of open source multimedia come to speak this year, so this is definetly an event you should not be missing out on.
+</p>
+ 
+<h2>Registration</h2>
+<p>
+You can now <a href="http://www.regonline.com/gstreamerconference2012">register for the GStreamer Conference</a>. We offer separate registration options for both professionals and for students and hobbyists. There is also an early bird reduced fee charged if you register before June 15th. 
+<table>
+<tr><td><b>Registration type</b></td><td><b>Registration cost</b></td></tr>
+<tr><td>Professional</td><td>300 USD</td></tr>
+<tr><td>Student/hobbyist</td><td>100 USD</td></tr>
+</table>
+</p>
+<p>
+For those uncertain about registrering as a professional or hobbyist the general rule is that if your company pays your are a professional and if you personally pay you are a student or hobbyist.
+</p>
+
+<h2>Who Should Join?</h2>
+<p>
+Anyone interested in open source multimedia is encouraged to join us at the GStreamer Conference 2012.
+If you are a hobbyist or a student interested in the field of multimedia, or working for a company
+using or looking to use GStreamer in their products, then this is the perfect event for you to network
+at and learn more about the latest technological breakthroughs in and around GStreamer. The talks 
+will target both developers and managers alike.
+</p>
+<h2>Co-hosted conferences</h2>
+<p>
+There are 3 other events happening alongside and after the GStreamer Conference this year, so if you are making your way to San Diego you might want to consider combining the GStreamer Conference with some of the other events.
+</p>
+<table>
+<tr><td><a href="https://events.linuxfoundation.org/events/linux-kernel-summit">Linux Kernel Summit</a></td><td>August 27th to 29th</td></tr>
+<tr><td><a href="http://www.linuxplumbersconf.org/2012/">Linux Plumbers 2012</a></td><td>August 29th to 31st</td></tr>
+<tr><td><a href="https://events.linuxfoundation.org/events/linuxcon">LinuxCon North America</a></td><td>August 29th to 31st</td></tr>
+</table>
+
+<h2>Hotel</h2>
+<p>
+<b>Update: The Sheraton is full</b></p>
+<p>Since the Sheraton is now ful we have booked another block of rooms at the Hilton San Diego Airport/Harbor Island, located .7 miles from the Sheraton.  The room rate is US$179/night and includes wireless internet as well as
+complimentary shuttle service to/from the Sheraton each day.
+</p>
+<p>
+The online reservation link will be available shortly. To make your
+reservation in the meantime, please call 1-619-291-6700 and ask for
+the Linux Foundation group rate.
+</p>
+<p>Original text:</p>
+<p>
+The GStreamer Conference is being held in San Diego, California from August 27 – August 28 in the Sheraton San Diego Hotel &amp; Marina.  GStreamer Conference attendees can avail themselves of rooms at a Linux Foundation discounted booking rate of US $170 a night (plus taxes) at this hotel. We encourage you to stay on-site to take full advantage of the conference.  Please note that rooms in our reserved block will include internet in guest rooms at no additional cost. Be aware that with LinuxCon in the same hotel in the days following, the rooms in this discounted block will go fast.
+</p>
+<p>
+<pre>
+Sheraton Hotel &amp; Marina
+1380 Harbor Island Drive
+San Diego, CA 92101
+Tel: +1 619-291-2900
+</pre>
+</p>
+<p>
+To make your room reservation online, please <a href="https://www.starwoodmeeting.com/StarGroupsWeb/booking/reservation?id=1203149218&amp;key=8AF0A">click here</a>.  You may also call the Reservation Center to make a reservation at 1-877-734-2726 and ask for the LinuxCon room rate. 
+</p>
+
+<table>
+<tr><td><img src="http://www.starwoodhotels.com/pub/media/127/she127ex.99865_md.jpg" width="343" height="230"/>
+</td></tr>
+<tr><td><b>Sheraton Hotel &amp; Marina</b></td></tr>
+</table>
+<h2>Partner and Spouse program</h2>
+<p>
+If you are bringing your partner and spouse to San Diego the Linux Foundation is organizing various tours and events. Please check <a href="https://events.linuxfoundation.org/events/cloudopen/partner-family-program">the Linux Foundation Partner Family Program page</a> for further details and how to take part.
+</p>
+<p>If you have any questions about the GStreamer Conference please contact <a href="mailto:christian.schaller@gmail.com">Christian Schaller</a>.</p>
+<p><i>If you want information on last years conference you will find that on the <a href="http://gstreamer.freedesktop.org/conference/2011">GStreamer Conference 2011</a> website.</i></p>
+  </body>
+</page>
