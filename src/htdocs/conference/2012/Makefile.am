@@ -9,4 +9,10 @@ images = \
 	sponsor_150_35_entropywave.png \
 	lwn.png phoronix.png
 
+documents = \
+	gstreamer-sponsor.pdf
+
+gstreamer-sponsor.pdf:
+	cp $(top_srcdir)/copy/documents/gstreamer-sponsor-2012.pdf gstreamer-sponsor.pdf
+
 include $(top_srcdir)/html.make

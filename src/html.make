@@ -71,8 +71,9 @@ $(top_builddir)/htdocs/gstreamer.css: $(top_srcdir)/copy/gstreamer.css
 # doesn't complain when these variables are emtpy
 am_pages = $(if $(built_pages), $(built_pages), )
 am_images = $(if $(images), $(images), )
+am_documents = $(if $(documents), $(documents), )
 am_css = $(if $(css), $(css), )
 am_htaccess = $(if $(htaccess), $(htaccess), )
 
-noinst_DATA = $(am_pages) $(am_images) $(am_css) $(am_htaccess)
+noinst_DATA = $(am_pages) $(am_images) $(am_css) $(am_htaccess) $(am_documents)
 CLEANFILES = $(noinst_DATA)
