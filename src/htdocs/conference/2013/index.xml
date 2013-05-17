@@ -19,6 +19,63 @@
 <!--
 <h2>The GStreamer Conference 2013 is now over, but we are assembling the slides from the speakers <a href="http://gstreamer.freedesktop.org/wiki/GStreamerConference2012">on this page</a>. We also recorded the talks and they will soon be available for viewing at <a href="http://gstconf.ubicast.tv/">gstconf.ubicast.tv</a>.</h2>
 -->
+<p>
+
+<style>
+.crop-EICC{
+    float:left;
+    margin:.5em 10px .5em 0;
+    overflow:hidden; /* this is important */
+    position:relative; /* this is important too */
+    border:1px solid #ccc;
+    width:750px;
+    height:210px;
+    }
+.crop-EICC img{
+    position:absolute;
+    left:-100px;
+    right:-100px;
+    }
+.crop-hillview{
+    float:left;
+    margin:.5em 10px .5em 0;
+    overflow:hidden; /* this is important */
+    position:relative; /* this is important too */
+    border:1px solid #ccc;
+    width:280px;
+    height:210px;
+    }
+.crop-hillview img{
+    position:absolute;
+    top:-42px;
+    right:-56px;
+    }
+</style>
+
+<table>
+<tr>
+  <td>
+    <div class="crop-EICC">
+    <img src="http://www.eicc.co.uk/media/20285/eicc_expansion_home_page_1900px_wide.jpg"
+         alt="Edinburgh International Conference Centre building picture"
+         width="950"
+         height="210"
+    />
+    </div>
+  </td>
+  <td>
+    <div class="crop-hillview">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/9/91/Edinburgh._View_from_Calton_Hill.jpg"
+         alt="Edinburgh View from Calton Hill"
+         width="336"
+         height="252"
+    />
+    </div>
+  </td>
+</tr>
+</table>
+</p>
+
 <h2>22-23 October 2013 · Edinburgh International Conference Centre · Edinburgh, Scotland, UK</h2>
 <p>
 For the fourth GStreamer Conference we're back in Europe. This year we will be co-hosting with the Embedded Linux Conference Europe, LinuxCon Europe, the Automotive Linux Summit and the Linux Kernel Summit. The event will be held at the Edinburgh International Conference Centre (EICC) in Edinburgh, Scotland.
