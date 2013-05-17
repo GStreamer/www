@@ -12,9 +12,9 @@
 
 <!-- actual menu -->
   <table border="0" width="156" cellpadding="0" cellspacing="0">
-    <tr><td><img src="&site;/images/backslash.png" alt="" height="48" width="100%" /></td></tr>
+    <tr height="30"><td><!-- <img src="&site;/images/backslash.png" alt="" height="48" width="100%" />--></td></tr>
     <tr>
-      <td bgcolor="#666666" valign="top">
+      <td bgcolor="#FFFFFF" valign="top">
         <!-- table inside the graphics for menu items -->
         <table border="0" cellpadding="2" cellspacing="0">
           <tr><td colspan="2"><img src="&site;/images/1x1.gif" alt="" border="0" width="2" height="2" /></td></tr>
@@ -55,7 +55,7 @@
         </table>
       </td>
     </tr>
-    <tr><td><img src="&site;/images/slash.png" alt="" height="41" width="100%" /></td></tr>
+    <!-- <tr><td><img src="&site;/images/slash.png" alt="" height="41" width="100%" /></td></tr> -->
   </table>
 
 </xsl:template>

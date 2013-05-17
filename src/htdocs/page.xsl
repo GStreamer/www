@@ -67,12 +67,27 @@
         link="#3399CC" vlink="#551A8B" alink="#FF0000" leftmargin="0"
         topmargin="0" marginwidth="0" marginheight="0" rightmargin="0">
 
+<!-- crop black triangle from GStreamer logo with otherwise white background -->
+<style>
+.crop-header{
+    float:left;
+    overflow:hidden; /* this is important */
+    position:relative; /* this is important too */
+    width:300px;
+    height:53px;
+    }
+.crop-header img{
+    position:absolute;
+    right:-51px;
+    }
+</style>
+
   <!-- this is the top table with our logo -->
   <table border="0" width="100%" cellpadding="0" cellspacing="0">
     <tr>
-      <td bgcolor="#000000">
-        <a href="&site;/"><img src="&site;/images/header-logo-top.png"
-           height="53" width="351" alt="GStreamer" border="0" /></a>
+      <td bgcolor="#FFFFFF">
+        <a href="&site;/"><div class="crop-header"><img src="&site;/images/header-logo-top.png"
+           height="53" width="351" alt="GStreamer" border="0" /></div></a>
       </td>
       <td align="right" bgcolor="#000000"></td>
     </tr>
