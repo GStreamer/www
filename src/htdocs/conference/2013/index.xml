@@ -90,7 +90,7 @@ socialising.
 </p>
 <p>
 There will likely be only one track of talks this year. Talk slots will be
-available in varying durations from 15 minutes up to an hour.
+available in varying durations from 20 minutes up to an hour.
 <!--We want to hear
 from you, what you are working on, what you are using GStreamer for, what
 difficulties you have encountered and how you solved them, what your plans
@@ -162,18 +162,34 @@ Interested in <a href="http://gstreamer.freedesktop.org/conference/2012/gstreame
 Registration will open shortly and will be announced on the mailing lists and
 on the website.
 </p>
+<p>
 <!--
-You can now <a href="http://www.regonline.com/gstreamerconference2012">register for the GStreamer Conference</a>. We offer separate registration options for both professionals and for students and hobbyists. There is also an early bird reduced fee charged if you register before June 15th. 
-<table>
-<tr><td><b>Registration type</b></td><td><b>Registration cost</b></td></tr>
-<tr><td>Professional</td><td>300 USD</td></tr>
-<tr><td>Student/hobbyist</td><td>100 USD</td></tr>
-</table>
+You can now <a href="http://www.regonline.com/gstreamerconference2013">register for the GStreamer Conference</a>. -->
+There will be separate registration options for both professionals and for students and hobbyists:
 </p>
 <p>
-For those uncertain about registrering as a professional or hobbyist the general rule is that if your company pays your are a professional and if you personally pay you are a student or hobbyist.
+<div style="margin-left:5%">
+<table width="30%" cellpadding="5">
+<tr><td>Professional</td><td>250 USD (before 15 July)</td></tr>
+<tr><td>Professional</td><td>350 USD (from 15 July)</td></tr>
+<tr><td>Student/hobbyist</td><td>100 USD</td></tr>
+</table>
+</div>
 </p>
--->
+<p>
+For those uncertain about whether to register as a professional or hobbyist,
+the general rule is that if your company pays for you or sponsors you, you are
+a professional, and if you personally pay you are a student or hobbyist.
+</p>
+<p>
+Speakers will receive a discount code, so if you have submitted a talk or plan
+to submit a talk you may want to wait with registration until a decision has
+been made as to whether your proposal has been accepted.
+</p>
+<p>
+Sponsors will receive a number of free registrations as part of the
+sponsorship package.
+</p>
 
 <h2>Who should join?</h2>
 <p>
@@ -187,12 +203,19 @@ will target both developers and managers alike.
 <p>
 There are four other events taking place alongside and after the GStreamer Conference this year, so if you are making your way to Edinburgh you might want to consider combining the GStreamer Conference with some of the other events.
 </p>
+<p>
 <table>
 <tr><td><a href="http://events.linuxfoundation.org/events/embedded-linux-conference-europe">Embedded Linux Conference Europe 2013 (ELCE)</a></td><td>October 24-25, 2013</td></tr>
 <tr><td><a href="http://events.linuxfoundation.org/events/automotive-linux-summit-fall">Automotive Linux Summit</a></td><td>October 24-25, 2013</td></tr>
 <tr><td><a href="http://events.linuxfoundation.org/events/linux-kernel-summit">Linux Kernel Summit</a></td><td>October 23-25, 2013</td></tr>
 <tr><td><a href="http://events.linuxfoundation.org/events/linuxcon-europe">LinuxCon Europe 2013</a></td><td>October 21-23, 2013</td></tr>
 </table>
+</p>
+<p>
+Professionals registering for the GStreamer conference will receive a
+discount code to claim a small discount when registering for ELCE or the
+Automotive Linux Summit as well.
+</p>
 
 <!--
 <h2>Hotel</h2>
