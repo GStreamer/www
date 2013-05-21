@@ -82,7 +82,9 @@ For the fourth GStreamer Conference we're back in Europe. This year we will be c
 </p>
 <h2>Details</h2>
 <p>
-More details and call for talks and papers to follow shortly.
+The GStreamer Conference is a conference for developers, decision-makers, and
+anyone else interested in the GStreamer multimedia framework and open source
+multimedia.
 </p>
 <p>
 This year we will try to provide more time and opportunity for networking and
@@ -156,6 +158,22 @@ Interested in <a href="http://gstreamer.freedesktop.org/conference/2012/gstreame
 <p>The <a href="gstreamer-conference-timetable.html">full conference schedule is now available</a>. We hope you will be as excited about this years schedule as we are. In addition to of course many in-depth GStreamer talks we also have presentations on some of the most important core Linux multimedia technologies like ALSA, Mesa, Wayland, the Opus Codec and V4L. We have managed to get some of the leading developers from the world of open source multimedia come to speak this year, so this is definetly an event you should not be missing out on.
 </p>
 -->
+<h2>Call for Papers</h2>
+<p>
+The call for papers is now open and talk proposals can be submitted.
+</p>
+<p>
+The initial submission needs to be only a couple of paragraphs describing the
+talk you want to give and the desired length of your talk (please allow for
+5-10 minutes of questions at the end as well).
+</p>
+<p>
+Talks can be on almost anything multimedia related, ranging from talks about
+applications to challenges in the lower levels in the stack or hardware.
+</p>
+<p>
+Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference@<!-- -->lists.freedesktop.org</a>.
+</p>
 
 <h2>Who should join?</h2>
 <p>
