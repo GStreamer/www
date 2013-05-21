@@ -5105,4 +5105,39 @@ Improvements include:
         </content>
   </item>
 
+  <item>
+      <date>2013-05-21 23:00</date>
+        <title>GStreamer Conference 2013: Registration now open, Call for Papers</title>
+        <content>
+        <p><i>About the GStreamer Conference</i></p>
+        <p>
+The GStreamer Conference 2013 will take place from 22-23 October 2013 in
+Edinburgh (UK), and will be co-hosted with the Embedded Linux Conference Europe
+and the Automotive Linux Summit.
+        </p>
+        <p>
+It is a conference for developers, decision-makers, and anyone else interested
+in the GStreamer multimedia framework and open source multimedia.
+        </p>
+
+        <p><i>Registration now open</i></p>
+        <p>
+You can now register for the GStreamer Conference 2013 on the
+<a href="&site;/conference/2013/">conference website</a>.
+        </p>
+        <p><i>Call for Papers</i></p>
+        <p>
+The initial submission needs to be only a couple of paragraphs describing the
+talk you want to give and the desired length of your talk (please allow for
+5-10 minutes of questions at the end as well).
+        </p>
+        <p>
+Talks can be on almost anything multimedia related, ranging from talks about
+applications to challenges in the lower levels in the stack or hardware.
+        </p>
+        <p>
+Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference@<!-- -->lists.freedesktop.org</a>.
+        </p>
+        </content>
+  </item>
 </news>
