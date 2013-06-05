@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-libav</module>
+  <module-fancy>GStreamer libav Plugins</module-fancy>
+  <name></name>
+  <version>1.1.1</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+
+<p>
+This module contains plugins based on the libav project, including codecs.
+</p>
+
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+  </features>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Andoni Morales Alastruey</person>
+	<person>Christiaan Welvaart</person>
+	<person>David Schleef</person>
+	<person>Luca Barbato</person>
+	<person>Matej Knopp</person>
+	<person>Nicolas Dufresne</person>
+	<person>Olivier Crête</person>
+	<person>Rasmus Rohde</person>
+	<person>Rico Tzschichholz</person>
+	<person>Sebastian Dröge</person>
+	<person>Siva Chandran P</person>
+	<person>Stefan Sauer</person>
+	<person>Thiago Santos</person>
+	<person>Thijs Vermeir</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Руслан Ижбулатов</person>
+  </contributors>
+
+<p>In addition to the above contributors, we would like to extend our
+thanks to the libav developers without which these plugins would have
+no reason to exist.</p>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>532422</id>
+      <summary>avenc_dvvideo: Add non-exposed framerate/width/height/format limitations to caps</summary>
+    </bug>
+    <bug>
+      <id>595286</id>
+      <summary>[ffdec_dvvideo] doesn't handle PAR correctly</summary>
+    </bug>
+    <bug>
+      <id>600895</id>
+      <summary>ffenc_dvvideo : doesn't list resolution/details it supports</summary>
+    </bug>
+    <bug>
+      <id>666435</id>
+      <summary>avdec: use new avcodec_decode_audio4() API</summary>
+    </bug>
+    <bug>
+      <id>679200</id>
+      <summary>[0.10] regression: crash with apple smc codec</summary>
+    </bug>
+    <bug>
+      <id>680487</id>
+      <summary>avenc_wmav1: errors out with default bitrate - output buffer size is too small</summary>
+    </bug>
+    <bug>
+      <id>685074</id>
+      <summary>G.726 decoder failure.</summary>
+    </bug>
+    <bug>
+      <id>688644</id>
+      <summary>Update gst-libav to libav 9 API</summary>
+    </bug>
+    <bug>
+      <id>689398</id>
+      <summary>avenc_wmav1: audio encoder timestamps broken, can't transcode videos to WMV anymore</summary>
+    </bug>
+    <bug>
+      <id>689565</id>
+      <summary>[audiodec] Must push one buffer (and only one) for each input buffer</summary>
+    </bug>
+    <bug>
+      <id>689751</id>
+      <summary>Missing include in gstavutils.c</summary>
+    </bug>
+    <bug>
+      <id>689981</id>
+      <summary>avviddec: 0.9 port - opaque pointer sometimes NULL - causing crashes - make check fails</summary>
+    </bug>
+    <bug>
+      <id>690940</id>
+      <summary>avdec_aac: produces garbled output (regression in master)</summary>
+    </bug>
+    <bug>
+      <id>691665</id>
+      <summary>avdec_aac: garbled audio (regression in git master)</summary>
+    </bug>
+    <bug>
+      <id>694416</id>
+      <summary>Passing of $AS, etc to libav configure breaks on some platforms</summary>
+    </bug>
+    <bug>
+      <id>698256</id>
+      <summary>Using avdec_mp3 decoder appliction can't retrieve the audio codec info.</summary>
+    </bug>
+  </bugs>
+
+</release>
