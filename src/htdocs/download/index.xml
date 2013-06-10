@@ -27,25 +27,24 @@ GStreamer.
   <BR/>
   Note that some distributions split the GStreamer plugins up further than the
   upstream sources. Additionally, some distributions do not include the
-  gst-plugins-bad, gst-plugins-ugly, and gst-ffmpeg packages in their main
+  gst-plugins-bad, gst-plugins-ugly, and gst-libav packages in their main
   repository, for legal reasons.
   </DD>
 
   <DT>OpenBSD</DT>
-  <DD>Packages for various architectures are available, see the <A href="http://openports.se/multimedia/gstreamer-0.10">OpenBSD ports</A> page.</DD>
+  <DD>Packages for various architectures are available, see the <A href="http://openports.se/multimedia/gstreamer1">OpenBSD ports</A> page.</DD>
 
   <DT>Windows</DT>
-  <DD>The GStreamer project itself does not provide Windows binaries at this point unfortunately.
-      However, there are a couple of good options provided by the wider community:
-    <p>
-    The <a href="http://code.google.com/p/ossbuild/">OSSBuild project</a> provides reasonably up-to-date binaries of GStreamer and plugin packages.
-    </p>
-    <p>
-    GStreamer should also compile with MingW/MSys, see the
-    <a href="http://gstreamer.freedesktop.org/wiki/">GStreamer wiki</a> for
-    <a href="http://gstreamer.freedesktop.org/wiki/BuildGStreamerWithMinGWAndMsys">details</a>.
-    </p>
-  </DD>
+  <DD>MSI installers for Windows can be found <a href="http://gstreamer.freedesktop.org/data/pkg/windows/">here</a>.
+      They are provided and maintained by the GStreamer project.</DD>
+
+  <DT>Mac OS X</DT>
+  <DD>A .framework for Mac OS X can be found <a href="http://gstreamer.freedesktop.org/data/pkg/osx/">here</a>.
+      It is provided and maintained by the GStreamer project.</DD>
+
+  <DT>Andoird</DT>
+  <DD>Binaries for GStreamer on Android that integrate into the Android NDK can be found <a href="http://gstreamer.freedesktop.org/data/pkg/android/">here</a>.
+      They are provided and maintained by the GStreamer project.</DD>
 
   <DT>Symbian</DT>
   <DD>The sources of the initial port of GStreamer are available for <a href="&site;/src/symbian/gstreamer_source.zip">download</a>.
