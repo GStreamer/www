@@ -42,7 +42,7 @@ GStreamer.
   <DD>A .framework for Mac OS X can be found <a href="http://gstreamer.freedesktop.org/data/pkg/osx/">here</a>.
       It is provided and maintained by the GStreamer project.</DD>
 
-  <DT>Andoird</DT>
+  <DT>Android</DT>
   <DD>Binaries for GStreamer on Android that integrate into the Android NDK can be found <a href="http://gstreamer.freedesktop.org/data/pkg/android/">here</a>.
       They are provided and maintained by the GStreamer project.</DD>
 
