@@ -3,8 +3,8 @@
 # it updates Planet GStreamer
 
 GSTHOME=/srv/gstreamer.freedesktop.org/
-#BUILDDIR=$GSTHOME/planet
-BUILDDIR=/home/thaytan/planet-gstreamer
+BUILDDIR=$GSTHOME/planet
+#BUILDDIR=/home/thaytan/planet-gstreamer
 LOCK=$BUILDDIR/.lock
 CONFDIR=$GSTHOME/www/planet
 LIVEDIR=$GSTHOME/www/htdocs/planet
