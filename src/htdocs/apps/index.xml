@@ -176,8 +176,17 @@ is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin no
 
 <h2>Songbird</h2>
 <p><a href="http://www.songbirdnest.com/">Songbird</a> is a cross-platform media player written using the XUL toolkit from Mozilla.</p>
-<h2>Sound Converter</h2>
 
+<h2>Snowmix</h2>
+<p><a href="http://sourceforge.net/projects/snowmix/">Snowmix</a> is a video
+mixer tool for mixing live and recorded video and audio feeds. It supports
+clipping, scaling and transparent overlay of video, png graphics and text; it
+also supports animation of video, images and texts through native commands
+changing scale, placement, transparency and rotation.The primary target
+platform is Ubuntu Linux, but it can also be compiled for other platforms
+including OS X.</p>
+
+<h2>Sound Converter</h2>
 <p><a href="http://soundconverter.org/">Sound Converter</a> Small GNOME based sound conversion application.</p>
 
 <h2>Sound Juicer</h2>
