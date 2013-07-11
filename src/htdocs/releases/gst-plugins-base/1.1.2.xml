@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.1.2</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+  </features>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Branko Subasic</person>
+	<person>Brendan Long</person>
+	<person>Carlos Rafael Giani</person>
+	<person>Edward Hervey</person>
+	<person>Jonas Holmberg</person>
+	<person>Marcin Lewandowski</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Ognyan Tonchev</person>
+	<person>Patricia Muscalu</person>
+	<person>Piotr Drąg</person>
+	<person>Sebastian Dröge</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>696300</id>
+      <summary>H264 video is playing too fast because of invalid PTS:</summary>
+    </bug>
+    <bug>
+      <id>698562</id>
+      <summary>rtpbuffer: broken language bindings for gst_rtp_buffer_get_payload</summary>
+    </bug>
+    <bug>
+      <id>700967</id>
+      <summary>playbin: sink messages are not received in the bus</summary>
+    </bug>
+    <bug>
+      <id>701798</id>
+      <summary>rtspsrc: Regression with connections to certain live stream</summary>
+    </bug>
+    <bug>
+      <id>701924</id>
+      <summary>tests: add playbin test for autoplugging of decoder-sink combination based on capsfeatures</summary>
+    </bug>
+    <bug>
+      <id>701943</id>
+      <summary>playbin: unit tests fail</summary>
+    </bug>
+    <bug>
+      <id>701997</id>
+      <summary>[regression] playbin: loses audio clock and hangs when switching songs after about-to-finish</summary>
+    </bug>
+    <bug>
+      <id>702195</id>
+      <summary>playbin: Emit {audio,text,video}-changed signals when pads are removed</summary>
+    </bug>
+    <bug>
+      <id>702215</id>
+      <summary>pbutils: descriptions: Allow smart codec tag handling</summary>
+    </bug>
+    <bug>
+      <id>702465</id>
+      <summary>playsink: Fix the block diagram of deinterlace bin.</summary>
+    </bug>
+    <bug>
+      <id>702467</id>
+      <summary>audiobasesrc: missing calls to gst_buffer_unmap</summary>
+    </bug>
+    <bug>
+      <id>702545</id>
+      <summary>tags: xmp: adding tags is very slow</summary>
+    </bug>
+    <bug>
+      <id>702652</id>
+      <summary>rtspconnection: tunneled connections do not work</summary>
+    </bug>
+    <bug>
+      <id>702840</id>
+      <summary>queue2 does not work with use-buffering=true</summary>
+    </bug>
+    <bug>
+      <id>703088</id>
+      <summary>rtspsrc parse error race condition</summary>
+    </bug>
+    <bug>
+      <id>703119</id>
+      <summary>rtpbasepayload leaks the segment event</summary>
+    </bug>
+    <bug>
+      <id>703196</id>
+      <summary>videoencoder: Send all pending events with type &lt; CAPS before sending caps.</summary>
+    </bug>
+    <bug>
+      <id>703256</id>
+      <summary>typefind: Fix low probability typefinding for video/mpeg on small amount of data</summary>
+    </bug>
+    <bug>
+      <id>703477</id>
+      <summary>audioresample: disable NEON code path for 16-bit integer</summary>
+    </bug>
+    <bug>
+      <id>703684</id>
+      <summary>POTFILES.in is out of date</summary>
+    </bug>
+  </bugs>
+
+</release>

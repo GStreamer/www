@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plugins</module-fancy>
+  <name></name>
+  <version>1.1.2</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plugins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plugins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plugins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+  </features>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Alban Browaeys</person>
+	<person>Aleix Conchillo Flaque</person>
+	<person>Alex Ashley</person>
+	<person>Andoni Morales Alastruey</person>
+	<person>Arnaud Vrac</person>
+	<person>Arthur Shipkowski</person>
+	<person>Benjamin Gaignard</person>
+	<person>Brendan Long</person>
+	<person>Chen Jie</person>
+	<person>Edward Hervey</person>
+	<person>Greg Rutz</person>
+	<person>Gwenole Beauchesne</person>
+	<person>Hans de Goede</person>
+	<person>Ilya Smelykh</person>
+	<person>Josep Torra</person>
+	<person>Miguel Casas-Sanchez</person>
+	<person>Olivier Crête</person>
+	<person>Patricia Muscalu</person>
+	<person>Piotr Drąg</person>
+	<person>Sebastian Dröge</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Xavi Artigas</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>694068</id>
+      <summary>h264parser: Parse the cropping-rectangle separately.</summary>
+    </bug>
+    <bug>
+      <id>560631</id>
+      <summary>[tsdemux] Handle carousel data (MHP, MHEG, ...)</summary>
+    </bug>
+    <bug>
+      <id>614479</id>
+      <summary>[mpegtspacketizer] Use CRC to check if tables are duplicate</summary>
+    </bug>
+    <bug>
+      <id>646327</id>
+      <summary>h264parse: Drop data before receiving the first PPS/SPS</summary>
+    </bug>
+    <bug>
+      <id>664274</id>
+      <summary>[API] codecparsers: add gst_mpeg_video_parse_slice() and gst_mpeg_video_parse_sequence_scalable_extension()</summary>
+    </bug>
+    <bug>
+      <id>677443</id>
+      <summary>[tsdemux/tsparse] Handle multiple SI in one packet</summary>
+    </bug>
+    <bug>
+      <id>678148</id>
+      <summary>[tsdemux] missing timestamp on DVB subtitles</summary>
+    </bug>
+    <bug>
+      <id>692933</id>
+      <summary>[API] codecparsers: mpeg2: add new API that takes  GstMpegVideoPacket arguments</summary>
+    </bug>
+    <bug>
+      <id>695475</id>
+      <summary>h264parser: Fix the return value type for the SEI palyload parsing methods.</summary>
+    </bug>
+    <bug>
+      <id>698050</id>
+      <summary>tsdemux: seeking doesn't even work in pull mode</summary>
+    </bug>
+    <bug>
+      <id>700489</id>
+      <summary>[dashdemux] Initialization blocks without URLs generate spurious critical errors</summary>
+    </bug>
+    <bug>
+      <id>701421</id>
+      <summary>opencv: add foreground/background segmentation element</summary>
+    </bug>
+    <bug>
+      <id>701509</id>
+      <summary>dashdemux selects first fragment in the manifest for live streams</summary>
+    </bug>
+    <bug>
+      <id>701953</id>
+      <summary>wrappercamerabinsrc: Add video-source-filter during construction</summary>
+    </bug>
+    <bug>
+      <id>701961</id>
+      <summary>dashdemux: Spurious critical if there is no initialization segment</summary>
+    </bug>
+    <bug>
+      <id>702036</id>
+      <summary>curlsmtpsink: incorrect assert in gst_curl_smtp_sink_set_payload_headers_unlocked</summary>
+    </bug>
+    <bug>
+      <id>702112</id>
+      <summary>waylandsink: add support for RGBx and RGBA formats</summary>
+    </bug>
+    <bug>
+      <id>702174</id>
+      <summary>mpegvideoparse: Crash while transcoding to MPEG2 with encodebin while attaching parse meta</summary>
+    </bug>
+    <bug>
+      <id>702206</id>
+      <summary>dashdemux: media range requests not supported</summary>
+    </bug>
+    <bug>
+      <id>702297</id>
+      <summary>opencv: build broken - c++ header indirectly included into c code (gstsegmentation.h contains a .hpp)</summary>
+    </bug>
+    <bug>
+      <id>702422</id>
+      <summary>tsparse: Ensure initial events are sent in the right order</summary>
+    </bug>
+    <bug>
+      <id>702677</id>
+      <summary>dashdemux: SegmentTemplates at multiple levels not aggregated</summary>
+    </bug>
+    <bug>
+      <id>702684</id>
+      <summary>shmsink: shared memory filled when no clients connected</summary>
+    </bug>
+    <bug>
+      <id>702724</id>
+      <summary>first-class miniobjects/API for mpeg-ts related SI (Service Information)</summary>
+    </bug>
+    <bug>
+      <id>702837</id>
+      <summary>dashdemux: Cleanup use of xmlFree vs g_free</summary>
+    </bug>
+    <bug>
+      <id>703264</id>
+      <summary>srtp: Key is required even if cipher and auth are null</summary>
+    </bug>
+    <bug>
+      <id>703667</id>
+      <summary>codecparsers: mpeg2: add missing gtk-doc entries</summary>
+    </bug>
+    <bug>
+      <id>703668</id>
+      <summary>codecparsers: mpeg2: fix video packet header size checks</summary>
+    </bug>
+    <bug>
+      <id>703683</id>
+      <summary>POTFILES are out of date</summary>
+    </bug>
+  </bugs>
+</release>
