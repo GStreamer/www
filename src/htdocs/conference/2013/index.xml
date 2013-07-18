@@ -76,6 +76,9 @@
 </table>
 </p>
 
+<table>
+<tr><td>
+
 <h2>22-23 October 2013 · Edinburgh International Conference Centre · Edinburgh, Scotland, UK</h2>
 <p>
 For the fourth GStreamer Conference we're back in Europe. This year we will be co-hosting with the Embedded Linux Conference Europe, LinuxCon Europe, the Automotive Linux Summit and the Linux Kernel Summit. The event will be held at the Edinburgh International Conference Centre (EICC) in Edinburgh, Scotland.
@@ -118,42 +121,7 @@ We have a long list of topics to be presented like:
 <li>GStreamer and Android</li>
 </ul>
 </td>
-<td valign="top">
 
-<h1>Gold Sponsor</h1>
-<p>
-<a href="http://www.collabora.com/projects/gstreamer/"><img src="sponsor_150x49_collabora.png" alt="Collabora" height="49" width="150" /></a>
-</p>
-<h2>Silver Sponsors</h2>
-<p>
-<a href="http://entropywave.com/"><img src="sponsor_150_35_entropywave.png" alt="Entropy Wave" height="35" width="150" /></a>
-</p>
-<p>
-<a href="http://www.fluendo.com"><img src="sponsor_149x36_fluendo.png" alt="Fluendo" height="36" width="149" /></a>
-</p>
-<p>
-<a href="http://www.igalia.com/"><img src="sponsor_150x54_igalia.png" alt="Igalia" height="54" width="150" /></a>
-</p>
-<p>
-<a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
-</p>
-<h2>Press Partners</h2>
-<p><a href="http://lwn.net"><img src="lwn.png" alt="Lwn.net" height="61" width="150" /></a>
-</p>
-<p>
-<a href="http://www.phoronix.com/"><img src="phoronix.png" alt="Phoronix.com" height="34" width="150" /></a>
-</p>
-
-<h2>Special Media Partners</h2>
-<p>
-<a href="http://www.ubicast.eu/"><img src="sponsor_150x45_UbiCast.png" alt="Ubi Cast" height="45" width="150" /></a>
-</p>
-<p>
-<small>
-Interested in <a href="http://gstreamer.freedesktop.org/conference/2012/gstreamer-sponsor.pdf">becoming a sponsor?</a></small>
-</p>
-</td></tr>
-</table>
 <h2>Schedule and speakers list</h2>
 <p>The <a href="gstreamer-conference-timetable.html">full conference schedule is now available</a>. We hope you will be as excited about this years schedule as we are. In addition to of course many in-depth GStreamer talks we also have presentations on some of the most important core Linux multimedia technologies like ALSA, Mesa, Wayland, the Opus Codec and V4L. We have managed to get some of the leading developers from the world of open source multimedia come to speak this year, so this is definetly an event you should not be missing out on.
 </p>
@@ -292,5 +260,44 @@ becoming a sponsor, please contact
 <!--
 <p><i>For information on last years conference you will find that on the <a href="http://gstreamer.freedesktop.org/conference/2011">GStreamer Conference 2011</a> website.</i></p>
 -->
+
+</td>
+<!--
+<a href="http://www.collabora.com/projects/gstreamer/"><img src="sponsor_150x49_collabora.png" alt="Collabora" height="49" width="150" /></a>
+<a href="http://entropywave.com/"><img src="sponsor_150_35_entropywave.png" alt="Entropy Wave" height="35" width="150" /></a>
+<a href="http://www.fluendo.com"><img src="sponsor_149x36_fluendo.png" alt="Fluendo" height="36" width="149" /></a>
+<a href="http://www.igalia.com/"><img src="sponsor_150x54_igalia.png" alt="Igalia" height="54" width="150" /></a>
+<a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
+-->
+<td valign="top">
+<!--
+<h1>Gold Sponsor</h1>
+<p>
+</p>
+<h2>Silver Sponsors</h2>
+<p>
+</p>
+<h2>Press Partners</h2>
+<p>
+<a href="http://lwn.net"><img src="lwn.png" alt="Lwn.net" height="61" width="150" /></a>
+</p>
+<p>
+<a href="http://www.phoronix.com/"><img src="phoronix.png" alt="Phoronix.com" height="34" width="150" /></a>
+</p>
+-->
+<h2>Special Media Partners</h2>
+<p>
+<a href="http://www.ubicast.eu/"><img src="sponsor_150x45_UbiCast.png" alt="Ubi Cast" height="45" width="150" /></a>
+</p>
+<!--
+<p>
+<small>
+Interested in <a href="http://gstreamer.freedesktop.org/conference/2013/gstreamer-sponsor.pdf">becoming a sponsor?</a></small>
+</p>
+-->
+</td>
+</tr>
+</table>
+
   </body>
 </page>
