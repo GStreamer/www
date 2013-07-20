@@ -70,6 +70,8 @@
 </table>
 </p>
 
+<table>
+<tr><td>
 <h2>22-23 October 2013 · Edinburgh International Conference Centre · Edinburgh, Scotland, UK</h2>
 <p>
 For the fourth GStreamer Conference we're back in Europe. This year we will be co-hosting with the Embedded Linux Conference Europe, LinuxCon Europe, the Automotive Linux Summit and the Linux Kernel Summit. The event will be held at the Edinburgh International Conference Centre (EICC) in Edinburgh, Scotland.
@@ -120,6 +122,34 @@ becoming a sponsor, please contact
   <li><a href="2011/index.html">24-25 October 2011 · Clarion Congress Hotel · Prague, Czech Republic</a></li>
   <li><a href="2010/index.html">26 October 2010 · University Arms Hotel · Cambridge, UK</a></li>
 </ul>
+</td>
+<td valign="top">
+<!--
+<h1>Gold Sponsor</h1>
+<p>
+</p>
+<h2>Silver Sponsors</h2>
+<p>
+</p>
+<h2>Press Partners</h2>
+<p>
+<a href="http://lwn.net"><img src="lwn.png" alt="Lwn.net" height="61" width="150" /></a>
+</p>
+<p>
+<a href="http://www.phoronix.com/"><img src="phoronix.png" alt="Phoronix.com" height="34" width="150" /></a>
+</p>
+-->
+<h2>Special Media Partners</h2>
+<p>
+<a href="http://www.ubicast.eu/"><img src="2013/sponsor_150x45_UbiCast.png" alt="Ubi Cast" height="45" width="150" /></a>
+</p>
+<p>
+<small>
+Interested in <a href="http://gstreamer.freedesktop.org/conference/2013/gstreamer-sponsor.pdf">becoming a sponsor?</a></small>
+</p>
+</td>
+</tr>
+</table>
 
   </body>
 </page>
