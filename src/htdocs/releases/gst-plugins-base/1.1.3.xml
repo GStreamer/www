@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.1.3</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+  </features>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Alban Browaeys</person>
+	<person>Arnaud Vrac</person>
+	<person>Benjamin Gaignard</person>
+	<person>Changbok Chea</person>
+	<person>Edward Hervey</person>
+	<person>Matej Knopp</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Miguel Casas-Sanchez</person>
+	<person>Olivier Crête</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Sebastian Dröge</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Wim Taymans</person>
+	<person>Young-Ho Cha</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>643202</id>
+      <summary>encodebin: streamcombiner not completely implemented</summary>
+    </bug>
+    <bug>
+      <id>585969</id>
+      <summary>playbin: Position/Duration information mismatch on track change</summary>
+    </bug>
+    <bug>
+      <id>681368</id>
+      <summary>typefinding: CSV file is detected as MP3</summary>
+    </bug>
+    <bug>
+      <id>700537</id>
+      <summary>oggdemux: Drops frames because it needs a keyframe after a seek</summary>
+    </bug>
+    <bug>
+      <id>702380</id>
+      <summary>basertppayload: provide a GstBufferPool for output rtp buffers</summary>
+    </bug>
+    <bug>
+      <id>703259</id>
+      <summary>video: Add support for NV24 video format</summary>
+    </bug>
+    <bug>
+      <id>703659</id>
+      <summary>allocators: dmabuf: allow testing allocator type</summary>
+    </bug>
+    <bug>
+      <id>704070</id>
+      <summary>video: Add Region Of Interest (roi) meta</summary>
+    </bug>
+    <bug>
+      <id>704194</id>
+      <summary>playbin: glib warning when setting sink properties to NULL</summary>
+    </bug>
+    <bug>
+      <id>704198</id>
+      <summary>rtspconnection: Removes child sources and adds them again later</summary>
+    </bug>
+    <bug>
+      <id>704285</id>
+      <summary>playbin: incorrect sorting of decoders when autoplugging</summary>
+    </bug>
+    <bug>
+      <id>704427</id>
+      <summary>streamsynchronizer: Assumes that a different stream-id on one stream means a new stream-group (problem when switching streams)</summary>
+    </bug>
+    <bug>
+      <id>704706</id>
+      <summary>streamcombiner: Must proxy all sink events</summary>
+    </bug>
+    <bug>
+      <id>704774</id>
+      <summary>appsrc: add &quot; current-level-bytes &quot; property</summary>
+    </bug>
+    <bug>
+      <id>705048</id>
+      <summary>audiorate, videorate: drop GAP event</summary>
+    </bug>
+    <bug>
+      <id>705062</id>
+      <summary>tagdemux: push mode code doesn't handle seeks</summary>
+    </bug>
+  </bugs>
+
+</release>
