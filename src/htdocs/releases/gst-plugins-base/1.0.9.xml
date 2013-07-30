@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.0.9</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+     <feature>subparse: re-enable sami parser</feature>
+     <feature>tagdemux: fix ACCURATE seeks in push mode</feature>
+     <feature>multisocketsink, multifdsink: fix handling of partial writes and WOULD_BLOCK errors, and other fixes</feature>
+     <feature>audiodecoder: fix input caps leak</feature>
+  </features>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Edward Hervey</person>
+	<person>Matej Knopp</person>
+	<person>Olivier Crête</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Sebastian Dröge</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Young-Ho Cha</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>693056</id>
+      <summary>subparse: re-enable sami support</summary>
+    </bug>
+    <bug>
+      <id>704291</id>
+      <summary>riff: PNG AVI file does not play</summary>
+    </bug>
+    <bug>
+      <id>704301</id>
+      <summary>tagdemux: Breaks seeking forward fails if ACCURATE seek and push sources</summary>
+    </bug>
+    <bug>
+      <id>704926</id>
+      <summary>audiodecoder: leaks input caps</summary>
+    </bug>
+  </bugs>
+
+</release>
