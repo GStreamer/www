@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.1.4</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+<p>
+The 1.x series has been reworked for more flexible memory handling, improved
+caps negotiation and re-negotiation, better handling of dynamic pipelines,
+and increased performance in general. It also features countless other feature
+additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+<p>
+Applications ported to GStreamer 1.0 include Totem, RhythmBox, Sound-Juicer,
+Pitivi, Cheese, Empathy, Transmageddon, and others.
+</p>
+  </applications>
+-->
+
+      <contributors>
+	<person>Adrian Pardini</person>
+	<person>Alessandro Decina</person>
+	<person>Andoni Morales Alastruey</person>
+	<person>Arnaud Vrac</person>
+	<person>Brendan Long</person>
+	<person>Edward Hervey</person>
+	<person>Jonas Holmberg</person>
+	<person>Kerrick Staley</person>
+	<person>Kjartan Maraas</person>
+	<person>Lubosz Sarnecki</person>
+	<person>Matthieu Bouron</person>
+	<person>Nicolas Dufresne</person>
+	<person>Olivier Crête</person>
+	<person>Sebastian Dröge</person>
+	<person>Sjoerd Simons</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+	<person>Wonchul Lee</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>701996</id>
+      <summary>context: Still inconvenient to use and racy</summary>
+    </bug>
+    <bug>
+      <id>705835</id>
+      <summary>queue: Keeps sticky events around after pad deactivation</summary>
+    </bug>
+    <bug>
+      <id>704927</id>
+      <summary>queue2: forward the upstream scheduling flags</summary>
+    </bug>
+    <bug>
+      <id>704934</id>
+      <summary>Clarify the gst buffer query api documentation slightly</summary>
+    </bug>
+    <bug>
+      <id>705156</id>
+      <summary>Small fixes to get make check to finish</summary>
+    </bug>
+    <bug>
+      <id>705332</id>
+      <summary>queue2: global state is affected by buffery query handling</summary>
+    </bug>
+    <bug>
+      <id>705350</id>
+      <summary>automake 1.14 warns very verbosely about subdir-objects</summary>
+    </bug>
+    <bug>
+      <id>705621</id>
+      <summary>baseparse: Add a property to force processing</summary>
+    </bug>
+    <bug>
+      <id>705694</id>
+      <summary>dataqueue: add gst_data_queue_push_force</summary>
+    </bug>
+    <bug>
+      <id>705999</id>
+      <summary>taglist: handle publisher, interpreted-by and key tags</summary>
+    </bug>
+    <bug>
+      <id>706160</id>
+      <summary>query: crash when parsing uri redirection</summary>
+    </bug>
+    <bug>
+      <id>706162</id>
+      <summary>gst_buffer_memcmp() ignores the buffer size if it goes past the gstbuffer</summary>
+    </bug>
+    <bug>
+      <id>706360</id>
+      <summary>queue2: test_simple_shutdown_while_running fails/racy</summary>
+    </bug>
+    <bug>
+      <id>706454</id>
+      <summary>Sample: add gst_sample_copy function</summary>
+    </bug>
+    <bug>
+      <id>706600</id>
+      <summary>basetransform: Don't push out identical caps</summary>
+    </bug>
+  </bugs>
+</release>

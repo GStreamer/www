@@ -5336,4 +5336,35 @@ or download tarballs for
         </content>
   </item>
 
+  <item>
+      <date>2013-08-28 15:00</date>
+        <title>GStreamer Core and Plugins 1.1.4 development release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce a new development release with feature additions for the API and ABI-stable 1.x series of the GStreamer multimedia
+framework.
+        </p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.1.4.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.1.4.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.1.4.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.1.4.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.1.4.html">gst-plugins-bad</a>, or
+<a href="&site;/releases/gst-libav/1.1.4.html">gst-libav</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.1.4.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.1.4.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.1.4.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.1.4.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.1.4.tar.xz">gst-plugins-bad</a>, or
+<a href="&site;/src/gst-libav/gst-libav-1.1.4.tar.xz">gst-libav</a>,
+        </p>
+        <p>
+	Check the <a href="http://lists.freedesktop.org/archives/gstreamer-devel/2013-August/042720.html">release announcement mail</a> for a
+	list of changes.
+        </p>
+        </content>
+  </item>
+
 </news>

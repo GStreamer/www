@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plugins</module-fancy>
+  <name></name>
+  <version>1.1.4</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plugins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plugins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plugins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Alexandre Rostovtsev</person>
+	<person>Andoni Morales Alastruey</person>
+	<person>Arnaud Vrac</person>
+	<person>Bernhard Miller</person>
+	<person>Chris Bass</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>Jesper Larsen</person>
+	<person>Kishore Arepalli</person>
+	<person>Lubosz Sarnecki</person>
+	<person>Matej Knopp</person>
+	<person>Matthieu Bouron</person>
+	<person>Miguel Casas-Sanchez</person>
+	<person>Nicola Murino</person>
+	<person>Olivier Crête</person>
+	<person>Robert Krakora</person>
+	<person>Sebastian Dröge</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Zaheer Abbas Merali</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>706566</id>
+      <summary>d3dvideosink: bufferpool implementation does not work well with device-lost/resets</summary>
+    </bug>
+    <bug>
+      <id>599298</id>
+      <summary>[tsdemux] Emit codec tags</summary>
+    </bug>
+    <bug>
+      <id>697239</id>
+      <summary>[mpegtsmux] Let prog-map define the program number</summary>
+    </bug>
+    <bug>
+      <id>701681</id>
+      <summary>[regression] NASA HLS stream</summary>
+    </bug>
+    <bug>
+      <id>702357</id>
+      <summary>codecparser: optimize scanning for start code</summary>
+    </bug>
+    <bug>
+      <id>703264</id>
+      <summary>srtp: Key is required even if cipher and auth are null</summary>
+    </bug>
+    <bug>
+      <id>704308</id>
+      <summary>dash: Stream does not play &quot; assertion `client- &gt; active_streams != NULL' failed &quot; </summary>
+    </bug>
+    <bug>
+      <id>704760</id>
+      <summary>opencv: disparity-map calculation element</summary>
+    </bug>
+    <bug>
+      <id>705208</id>
+      <summary>[dvbsrc] should check if _XOPEN_SOURCE is already defined</summary>
+    </bug>
+    <bug>
+      <id>705349</id>
+      <summary>bluez: avdtpsrc produces error at EOF</summary>
+    </bug>
+    <bug>
+      <id>705452</id>
+      <summary>h264parse: Does not extract width/height/etc from h264-in-mpeg-ps</summary>
+    </bug>
+    <bug>
+      <id>705598</id>
+      <summary>regression h264parse: incorrect keyframe/delta-unit detection</summary>
+    </bug>
+    <bug>
+      <id>705661</id>
+      <summary>dashdemux: segmentNumber attribute of SegmentTemplate element is not being observed</summary>
+    </bug>
+    <bug>
+      <id>705667</id>
+      <summary>vc1parse: some sequence layer handling fixes for advanced profile</summary>
+    </bug>
+    <bug>
+      <id>705674</id>
+      <summary>aiffparse broken</summary>
+    </bug>
+    <bug>
+      <id>705675</id>
+      <summary>aiffparse: invalid SSND data size</summary>
+    </bug>
+    <bug>
+      <id>705679</id>
+      <summary>dashdemux: faulty buffer timestamps when using SegmentTemplate element</summary>
+    </bug>
+    <bug>
+      <id>705683</id>
+      <summary>[srtp] invalid packets results in GST_FLOW_ERROR</summary>
+    </bug>
+    <bug>
+      <id>705812</id>
+      <summary>neonhttpsrc: fails to configure with neon-0.30.0</summary>
+    </bug>
+    <bug>
+      <id>705957</id>
+      <summary>pcapparse: crash due to bad unref</summary>
+    </bug>
+    <bug>
+      <id>705993</id>
+      <summary>aiffparse: fix sticky event warnings in push mode / add tests</summary>
+    </bug>
+    <bug>
+      <id>706091</id>
+      <summary>srtpdec: Shadowed variable causes buffers to be dropped</summary>
+    </bug>
+    <bug>
+      <id>706276</id>
+      <summary>uvch264src: don't error out on incomplete aux data segment with Logitech C920</summary>
+    </bug>
+    <bug>
+      <id>706369</id>
+      <summary>videoparser/mpegvideoparse: bad switch statements</summary>
+    </bug>
+    <bug>
+      <id>706574</id>
+      <summary>directsoundsrc: 'device-name' property for selecting a audio device</summary>
+    </bug>
+  </bugs>
+</release>
