@@ -5337,6 +5337,27 @@ or download tarballs for
   </item>
 
   <item>
+      <date>2013-08-24 21:00</date>
+        <title>Orc 0.4.18 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team announces another maintenance bug-fix release of liborc,
+the Optimized Inner Loop Runtime Compiler. It contains:
+        </p>
+        <p>
+          <ul>
+            <li>Important bugfix in reading constants from bytecode</li>
+            <li>Documentation and code cleanup</li>
+            <li>Fix cache flushing on iOS</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.18.tar.gz">orc-0.4.18</a>.
+        </p>
+        </content>
+  </item>
+
+  <item>
       <date>2013-08-28 15:00</date>
         <title>GStreamer Core and Plugins 1.1.4 development release</title>
         <content>
@@ -5363,6 +5384,43 @@ or download tarballs for
         <p>
 	Check the <a href="http://lists.freedesktop.org/archives/gstreamer-devel/2013-August/042720.html">release announcement mail</a> for a
 	list of changes.
+        </p>
+        </content>
+  </item>
+
+  <item>
+      <date>2013-08-29 20:00</date>
+        <title>GStreamer Core and Plugins 1.0.10 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another bug-fix release for the
+new API and ABI-stable 1.x series of the GStreamer multimedia
+framework.
+        </p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.0.10.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.0.10.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.0.10.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.0.10.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.0.10.html">gst-plugins-bad</a>, or
+<a href="&site;/releases/gst-libav/1.0.10.html">gst-libav</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.0.10.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.0.10.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.0.10.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.0.10.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.0.10.tar.xz">gst-plugins-bad</a>, or
+<a href="&site;/src/gst-libav/gst-libav-1.0.10.tar.xz">gst-libav</a>,
+        </p>
+        <p>
+	Check the <a href="http://lists.freedesktop.org/archives/gstreamer-devel/2013-August/042736.html">release announcement mail</a> for a
+	list of changes.
+        </p>
+        <p>
+        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.0.10/">Android</a>,
+	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.0.10/">Mac OS X</a> and
+	<a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.0.10/">Windows</a>.
         </p>
         </content>
   </item>
