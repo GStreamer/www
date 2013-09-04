@@ -1,5 +1,5 @@
 #gstreamer-conference-timetable.html speakers.html
-built_pages = index.html
+built_pages = index.html speakers.html
 
 #images = \
 #	sponsor_150x54_igalia.png      \
