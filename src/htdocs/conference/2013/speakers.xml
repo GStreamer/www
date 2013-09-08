@@ -422,7 +422,16 @@ to match specific use cases.
 Cairosink and GPU Buffer Sharing, Guillaume Emont, Igalia
     </b></p>
 	<p>
-BIO: FIXME
+Guillaume Emont has been playing around on various things related to multimedia
+(Elisa/Moovida, Pigment, Grilo and of course GStreamer) in the Free software
+world for a few years and enjoys it a lot. He is proudly part of the awesome
+group of hackers known as Igalia.
+    </p>
+    <p>
+When he doesn't hack on software, he enjoys travelling around the world,
+discussing with like-minded people around a drink or a good meal, various
+outdoor sports in and around sunny Barcelona, helium balloon photography or
+building interactive laser installations, among many other things.
 	</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
@@ -564,15 +573,23 @@ It might also touch on network media, streaming and synchronisation.
 	<tr valign="top"><td>
 	<a name="graff-testing" id="graff-testing"></a>
 	<p><b>
-Pexip and Our Testing Approach to GStreamer, Havard Graff, Pepix
+Achieving Pexcellence - Challenges of real time streaming applications, Havard Graff, Pexip
 </b></p>
 	<p>
-BIO: FIXME
+Håvard Graff has worked with GStreamer professionally for 6 years in Tandberg,
+Cisco and now Pexip. Developing video conferencing systems like Movi, Jabber
+Video and Pexip Infinity using GStreamer as the backbone. Was instrumental in
+premiering GStreamer in the AppStore. Still pretends to be a musician with
+programming as a hobby.
 	</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-ABSTRACT: FIXME
+How can you test real time systems deterministically? How can you fix bugs that
+only happens once every millionth run of your application? (and never with you
+or your debugger present). Pexip have invested a lot of time and effort towards
+these issues, and we want to share some of our thoughts, techniques and code
+with you.
 	</p>
 	</i>
 	</td></tr>
