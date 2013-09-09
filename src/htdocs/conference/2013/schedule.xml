@@ -91,7 +91,7 @@
 	<tr valign="top">
 		<td rowspan="2"><p>14.00</p></td>
 		<td rowspan="2">
-			<p><a href="&site;/conference/2013/speakers.html#droge-hw-integration">New GStreamer API for hardware integration</a><br />Sebastian Dröge</p>
+			<p><a href="&site;/conference/2013/speakers.html#droge-hw-integration">The never-ending story: GStreamer and hardware integration</a><br />Sebastian Dröge</p>
 		</td>
 		<td>
 			<p><a href="&site;/conference/2013/speakers.html#calvar-webkit">WebKit and GStreamer</a><br />Xabier Rodríguez Calvar, Igalia</p></td>

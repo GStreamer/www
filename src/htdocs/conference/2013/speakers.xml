@@ -75,20 +75,32 @@ ABSTRACT: FIXME
 	<tr valign="top"><td>
 	<a name="droge-hw-integration" id="droge-hw-integration"></a>
 	<p><b>
-New GStreamer API for hardware integration, Sebastian Dröge
+The never-ending story: GStreamer and hardware integration, Sebastian Dröge
     </b></p>
 	<p>
-BIO: FIXME
+Sebastian Dröge is, among other things, a free software developer and
+one of the GStreamer maintainers and core developers since 2006 and
+also contributing to many other free software projects.
+While finishing his computer sciences degree, he started to work as a
+contractor for Collabora and stayed there until 2013 to work on GStreamer
+and related technologies. He also was the technical lead of the GStreamer
+SDK project at Collabora, which provides easy to use binaries for Windows,
+Mac OS X, Android and iOS.
+<!-- (also check company affiliation) -->
 	</p>
 	<i>
 	<p><b>Talk Abstract</b></p>
 	<p>
-Topics covered are the GstCapsFeatures, the ALLOCATION query,
-GstMemory/GstAllocator, GstBufferPool, GstMeta and GstContext
-and how this all works together to automatically make use of
-hardware acceleration features in playback pipelines and other
-scenarios.
-<!-- FIXME: add some APIs covered, e.g. vaapi/vdpau/soc-api etc. -->
+In the past usage of specialized hardware features, especially those of embedded
+hardware DSPs, VPUs and GPUs, was always a challenge with GStreamer. GStreamer
+0.10 had many shortcomings in this area, and many hacks were necessary
+to use hardware in an efficient way or make it usable at all. In GStreamer
+1.0 and later versions many new interfaces were introduced or existing
+interfaces were improved to allow clean and efficient integration of
+specialized hardware features. This talk will provide an overview about
+these changes, with examples of usage for APIs like OpenGL, EGL, OpenMAX IL,
+VDPAU, VAAPI. There will also be some guidance about which interfaces should be
+used how and in which cases.
 	</p>
 	</i>
 	</td></tr>
