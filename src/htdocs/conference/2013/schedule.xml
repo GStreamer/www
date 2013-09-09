@@ -14,20 +14,22 @@
 <h2>Edinburgh, UK, 22-23 October 2013</h2>
 <p><a href="&site;/conference">Back to conference main page</a></p>
 <table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0">
+<!--
 	<col width="10*" />
 	<col width="40*" />
 	<col width="40*" />
 	<col width="10*" />
+-->
 	<tr>
 		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
 			<p align="center"><font color="white">Tuesday 22nd of October 2013</font></p>
 		</td>
 	</tr>
 	<tr valign="top" bgcolor="#b0c4de">
-		<td><p></p></td>
-		<td><p align="center">Room 1</p></td>
-		<td><p align="center">Room 2</p></td>
-		<td><p></p></td>
+		<td width="5%"><p></p></td>
+		<td width="45%"><p align="center">Room 1</p></td>
+		<td width="45%"><p align="center">Room 2</p></td>
+		<td width="5%"><p></p></td>
 	</tr>
 	<tr valign="top" bgcolor="#E0E0E0">
 		<td><p>08.30</p></td>
@@ -161,11 +163,11 @@
 	</tr>
 
 	<tr valign="center" bgcolor="#E0E0E0">
-		<td><p>19.30-23.00</p></td>
+		<td><p>19.30-<br />23.00</p></td>
 		<td colspan="2">
 		<p align="center"><b>Social Event: Drinks and Food</b></p>
 		</td>
-		<td><p>19.30-23.00</p></td>
+		<td><p>19.30-<br />23.00</p></td>
 	</tr>
 
 	<tr valign="top" style="border:none">
