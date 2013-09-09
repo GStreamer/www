@@ -90,17 +90,21 @@ anyone else interested in the GStreamer multimedia framework and open source
 multimedia.
 </p>
 <p>
-This year we will try to provide more time and opportunity for networking and
+This year we will provide more time and opportunity for networking and
 socialising.
 </p>
+<!--
 <p>
 There will likely be only one track of talks this year. Talk slots will be
 available in varying durations from 20 minutes up to an hour.
+-->
 <!--We want to hear
 from you, what you are working on, what you are using GStreamer for, what
 difficulties you have encountered and how you solved them, what your plans
 are.-->
+<!--
 </p>
+-->
 <!--
 <h2>Technologies covered</h2>
 <p>
@@ -126,24 +130,14 @@ We have a long list of topics to be presented like:
 <p>The <a href="gstreamer-conference-timetable.html">full conference schedule is now available</a>. We hope you will be as excited about this years schedule as we are. In addition to of course many in-depth GStreamer talks we also have presentations on some of the most important core Linux multimedia technologies like ALSA, Mesa, Wayland, the Opus Codec and V4L. We have managed to get some of the leading developers from the world of open source multimedia come to speak this year, so this is definetly an event you should not be missing out on.
 </p>
 -->
+<h2>Schedule</h2>
+<p>
+The <a href="http://gstreamer.freedesktop.org/conference/2013/schedule.html">conference schedule</a> and is now available.
+</p>
+
 <h2>Call for Papers</h2>
 <p>
-The call for papers is now open and talk proposals can be submitted.
-</p>
-<p>
-The deadline for talk proposals is Thursday 25 July 2013.
-</p>
-<p>
-The initial submission needs to be only a couple of paragraphs describing the
-talk you want to give and the desired length of your talk (please allow for
-5-10 minutes of questions at the end as well).
-</p>
-<p>
-Talks can be on almost anything multimedia related, ranging from talks about
-applications to challenges in the lower levels in the stack or hardware.
-</p>
-<p>
-Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference@<!-- -->lists.freedesktop.org</a>.
+The call for papers is now closed and talk proposals can no longer be submitted.
 </p>
 
 <h2>Who should join?</h2>

@@ -5425,4 +5425,27 @@ or download tarballs for
         </content>
   </item>
 
+  <item>
+      <date>2013-09-08 12:00</date>
+        <title>GStreamer Conference 2013 Schedule now available</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce that the
+<a href="http://gstreamer.freedesktop.org/conference/2013/schedule.html">schedule</a>
+for this year's GStreamer Conference now available.
+        </p>
+        <p>
+The GStreamer Conference takes place on 22-23 October in Edinburgh (UK),
+alongside LinuxCon Europe, the Embedded Linux Conference Europe, the Automotive
+Linux Summit, and the Linux Kernel Summit.
+        </p>
+        <p>
+Topics covered include embedded systems, mobile platforms, optimisations,
+streaming servers, hardware-accelerated video decoding, testing and Q&amp;A,
+best practices, industry changes, OpenGL, multimedia editing,
+latest codec developments, network synchronisation, and chickens.
+        </p>
+        </content>
+  </item>
+
 </news>
