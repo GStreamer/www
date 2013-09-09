@@ -15,7 +15,7 @@
 <h2>Edinburgh, Scotland, UK, 22-23 October 2013</h2>
 <p><a href="http://gstreamer.freedesktop.org/conference">Back to conference main page</a></p>
 <p><a href="gstreamer-conference-timetable.html">Back to conference timetable</a></p>
-<table width="100%" border="1" bordercolor="#C0C0C0" cellpadding="4" cellspacing="2">
+<table width="100%" border="0" bordercolor="#C0C0C0" cellpadding="20" cellspacing="2">
 
 	<tr valign="top" bgcolor="#E8E8FF"><td>
 	<a name="muller-nextlevel" id="muller-nextlevel"></a>
@@ -23,14 +23,11 @@
 Keynote - Taking GStreamer to the Next Level, Tim-Philipp Müller
     </b></p>
 	<p>
-BIO: FIXME <!-- (also check company affiliation) -->
+Abstract coming soon
 	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
-	<p>
-ABSTRACT: FIXME
-	</p>
-	</i>
+	<p><i>
+Biographical details coming soon
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -38,11 +35,6 @@ ABSTRACT: FIXME
 	<p><b>
 Automated Set-top Box Testing with GStreamer, David Röthlisberger, YouView
     </b></p>
-	<p>
-David Röthlisberger is the creator of stb-tester, and heads test automation at YouView.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 We'll see how easy it is to develop a video-capturing image-recognition
 system using GStreamer, by building one in 3 minutes!
@@ -53,7 +45,9 @@ an open-source tool developed at YouView to automate the user interface
 testing of our set-top boxes. We'll see stb-tester in action, and hear
 about the flexibility offered by its GStreamer underpinnings.
 	</p>
-	</i>
+	<p><i>
+David Röthlisberger is the creator of stb-tester, and heads test automation at YouView.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -62,14 +56,11 @@ about the flexibility offered by its GStreamer underpinnings.
 Latest GStreamer Streaming Server features: Video on Demand, Smooth Streaming, and DRM, David Schleef, Rdio
     </b></p>
 	<p>
-BIO: FIXME <!-- (also check desired company affiliation) -->
+Abstract coming soon
 	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
-	<p>
-ABSTRACT: FIXME
-	</p>
-	</i>
+	<p><i>
+Biographical details coming soon
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -77,19 +68,6 @@ ABSTRACT: FIXME
 	<p><b>
 The never-ending story: GStreamer and hardware integration, Sebastian Dröge
     </b></p>
-	<p>
-Sebastian Dröge is, among other things, a free software developer and
-one of the GStreamer maintainers and core developers since 2006 and
-also contributing to many other free software projects.
-While finishing his computer sciences degree, he started to work as a
-contractor for Collabora and stayed there until 2013 to work on GStreamer
-and related technologies. He also was the technical lead of the GStreamer
-SDK project at Collabora, which provides easy to use binaries for Windows,
-Mac OS X, Android and iOS.
-<!-- (also check company affiliation) -->
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 In the past usage of specialized hardware features, especially those of embedded
 hardware DSPs, VPUs and GPUs, was always a challenge with GStreamer. GStreamer
@@ -102,7 +80,16 @@ these changes, with examples of usage for APIs like OpenGL, EGL, OpenMAX IL,
 VDPAU, VAAPI. There will also be some guidance about which interfaces should be
 used how and in which cases.
 	</p>
-	</i>
+	<p><i>
+Sebastian Dröge is, among other things, a free software developer and
+one of the GStreamer maintainers and core developers since 2006 and
+also contributing to many other free software projects.
+While finishing his computer sciences degree, he started to work as a
+contractor for Collabora and stayed there until 2013 to work on GStreamer
+and related technologies. He also was the technical lead of the GStreamer
+SDK project at Collabora, which provides easy to use binaries for Windows,
+Mac OS X, Android and iOS.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -111,21 +98,18 @@ used how and in which cases.
 GStreamer and OpenGL plugins in 1.0, Matthew Waters
     </b></p>
 	<p>
-Matthew Waters has only just started his hopefully long and rewarding
-FOSS career after using Linux for the past couple of years.  When he
-isn't hacking on gst-plugins-gl, he is attending University and playing
-around with waveforms.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
-	<p>
 OpenGL is a powerful API usually accompanied by powerful hardware that
 currently goes mostly unused by GStreamer.  Equipped with GLSL, one can
 envisage complex (or simple) filters that transform the typical video
 into a psychedelic light show.  This talk will provide for the current
 state of gst-plugins-gl and a look into the future of GStreamer with OpenGL.
 	</p>
-	</i>
+	<p><i>
+Matthew Waters has only just started his hopefully long and rewarding
+FOSS career after using Linux for the past couple of years.  When he
+isn't hacking on gst-plugins-gl, he is attending University and playing
+around with waveforms.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -134,6 +118,12 @@ state of gst-plugins-gl and a look into the future of GStreamer with OpenGL.
 Latest GStreamer RTSP Server features, Wim Taymans, Collabora
     </b></p>
 	<p>
+This talk presents an RTSP server built on top of GStreamer and its various
+RTP elements and libraries. We will cover the design of the server and
+how it integrates with GStreamer. We will also talk about some of the new
+features such as the security infrastructure and multicast support.
+	</p>
+	<p><i>
 Wim Taymans has a computer science degree from the Katholieke Universiteit
 in Leuven, Belgium and decades of software development experience. He
 co-founded the GStreamer multimedia framework in 1999 and is the person
@@ -141,16 +131,7 @@ behind much of the current design. Wim has a long history in the development
 of multimedia software, starting with computer game development on the
 Commodore 64. Wim Taymans is working on assisting Collabora customers with
 the design and use of  GStreamer as well as general research and development.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
-	<p>
-This talk presents an RTSP server built on top of GStreamer and its various
-RTP elements and libraries. We will cover the design of the server and
-how it integrates with GStreamer. We will also talk about some of the new
-features such as the security infrastructure and multicast support.
-	</p>
-	</i>
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -158,16 +139,6 @@ features such as the security infrastructure and multicast support.
 	<p><b>
 GStreamer for Mobile Platforms: Android and iOS, Andoni Morales, Fluendo
     </b></p>
-	<p>
-Andoni Morales is a software engineer with experience in multimedia middleware,
-cross-platform applications and build systems. Andoni holds a master degree in
-Telecommunications Engineering and he is a multimedia engineer at Fluendo,
-working in the design and development of the company’s multimedia solutions.
-On his spare time, he works in LongoMatch, a performance video analysis tool
-for sports powered by GStreamer.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 Mobile platforms such as Android and iOS are growing very fast and GStreamer
 offers an excellent alternative to the native API's to develop complex
@@ -183,7 +154,14 @@ describe the integration with the native build systems and how GStreamer is
 bundled in the application. Finally we will show an example on how to build a
 simple media player for Android with Eclipse and for iOS with XCode.
 	</p>
-	</i>
+	<p><i>
+Andoni Morales is a software engineer with experience in multimedia middleware,
+cross-platform applications and build systems. Andoni holds a master degree in
+Telecommunications Engineering and he is a multimedia engineer at Fluendo,
+working in the design and development of the company’s multimedia solutions.
+On his spare time, he works in LongoMatch, a performance video analysis tool
+for sports powered by GStreamer.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -191,13 +169,6 @@ simple media player for Android with Eclipse and for iOS with XCode.
 	<p><b>
 Alternative playback solutions for Hardware Manufacturers, Jeongseok Kim, LG Electronics
     </b></p>
-	<p>
-Jeongseok Kim has worked for over 10 years as an embedded system software
-developer. At LG Electronics he's a senior research engineer and also the
-leader of GStreamer core team for WebOS.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 LGE is developing a mediaframework for WebOS based on Gstreamer. Although
 GStreamer provides very good architecture, LGE still has problems to adapt
@@ -207,7 +178,11 @@ alternative playback solutions. In this talk, I'll share a short story and
 our approach to make  solutions for unusual requirements. This talk would be
 helpful for developers who are trying to make their own products with playbin.
 	</p>
-	</i>
+	<p><i>
+Jeongseok Kim has worked for over 10 years as an embedded system software
+developer. At LG Electronics he's a senior research engineer and also the
+leader of GStreamer core team for WebOS.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -215,14 +190,6 @@ helpful for developers who are trying to make their own products with playbin.
 	<p><b>
 GStreamer-based Media Player for SetTopBox, Romain Picard, SoftAtHome
     </b></p>
-	<p>
-Romain Picard is software architect at SoftAtHome, a software editor based
-in France and Belgium. He has been working for more than 10 years on digital
-tv. He was involved in the design and development of media components used
-in many SetTopBoxes : dvb player, recorder and streamer, multimedia player.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 Good quality multimedia playback is now a mandatory feature in SetTopBox
 devices. Providing the same user experience on multiple settopbox and chipset
@@ -232,7 +199,12 @@ supported each year. We present a multimedia player design allowing progressive
 enhancement and easy board customization with minimal code changes, leveraging
 the GStreamer framework modularity.
 	</p>
-	</i>
+	<p><i>
+Romain Picard is software architect at SoftAtHome, a software editor based
+in France and Belgium. He has been working for more than 10 years on digital
+tv. He was involved in the design and development of media components used
+in many SetTopBoxes : dvb player, recorder and streamer, multimedia player.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -241,14 +213,11 @@ the GStreamer framework modularity.
 FluMediaPlayer: Growing our user base through high level media player API, Julien Moutte, Fluendo
     </b></p>
 	<p>
-BIO: FIXME
+Abstract coming soon
 	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
-	<p>
-ABSTRACT: FIXME
-	</p>
-	</i>
+	<p><i>
+Biographical details coming soon
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -257,17 +226,13 @@ ABSTRACT: FIXME
 WebKit and GStreamer, Xabier Rodríguez Calvar, Igalia
     </b></p>
 	<p>
-BIO: FIXME
+Abstract coming soon. This talk covers WebKit architecture, WebKit ports, which
+ports are using GStreamer and which version (0.10 vs 1.0), WebKit Multimedia
+and GStreamer, and WebKit Multimedia in WebKitGtk+.
 	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
-	<p>
-ABSTRACT: FIXME
-This talk covers WebKit architecture, WebKit ports, which  ports are using
-GStreamer and which versio (0.10 vs 1.0), WebKit Multimedia and GStreamer,
-and WebKit Multimedia in WebKitGtk+.
-	</p>
-	</i>
+	<p><i>
+Biographical details coming soon
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -275,17 +240,6 @@ and WebKit Multimedia in WebKitGtk+.
 	<p><b>
 Application Showcase: Toonloop, the Live Stop Motion Editor, Alexandre Quessy, Collabora
     </b></p>
-	<p>
-Alexandre Quessy is a Montreal-based artist and software developer. He
-is interested in sampling audio, video and data. He is much involved in
-creating and teaching free software for arts. His projects went to
-Canada, USA, Norway, France, Mexico, Taiwan and Belgium. He is the main
-author of the Toonloop live animation software. Quessy studied
-communication and music. He is a software engineer at Collabora, and a
-member of the artist-run centre Perte de Signal.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 Toonloop is a free software for live stop-motion animation. It allows to
 create frame by frame animation, pixilation and other animation
@@ -314,7 +268,15 @@ In this presentation, the creator of Toonloop will explain the project
 and demonstrate it in a short live performance. The presentation should
 last around 30 minutes, or longer if desired.
 	</p>
-	</i>
+	<p><i>
+Alexandre Quessy is a Montreal-based artist and software developer. He
+is interested in sampling audio, video and data. He is much involved in
+creating and teaching free software for arts. His projects went to
+Canada, USA, Norway, France, Mexico, Taiwan and Belgium. He is the main
+author of the Toonloop live animation software. Quessy studied
+communication and music. He is a software engineer at Collabora, and a
+member of the artist-run centre Perte de Signal.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -322,16 +284,6 @@ last around 30 minutes, or longer if desired.
 	<p><b>
 Case Study: GStreamer on the Dreambox, Andreas Frisch, Dream Property
     </b></p>
-	<p>
-Andreas aka "Fraxinas" in the FOSS world, graduated from the
-University of Applied Sciences in Aschaffenburg with a degree in
-electrical engineering and information technology. Since writing his
-thesis paper about a streaming video server for set top boxes, he has
-been working for Dream Multimedia, the company which released the
-first Linux-based STB called "Dreambox".
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 The Dreambox is a prototypical example of a multimedia embedded linux
 device and has been making use of Gstreamer since 2006. In this case
@@ -343,7 +295,14 @@ using the LinuxTV API and custom Gstreamer sink elements. I will
 expound on how our Gstreamer 1.0 port is coming along and what plans
 the future holds.
 	</p>
-	</i>
+	<p><i>
+Andreas aka "Fraxinas" in the FOSS world, graduated from the
+University of Applied Sciences in Aschaffenburg with a degree in
+electrical engineering and information technology. Since writing his
+thesis paper about a streaming video server for set top boxes, he has
+been working for Dream Multimedia, the company which released the
+first Linux-based STB called "Dreambox".
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -351,14 +310,6 @@ the future holds.
 	<p><b>
 Next Generation Video Coding with HEVC: Facts and Figures, Thijs Vermeir, Barco
     </b></p>
-	<p>
-Thijs Vermeir has been contributing to the GStreamer project since 2006. After
-working at Fluendo, he is now research engineer for Barco, where he is
-doing research in video processing including video compression and network
-streaming.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 HEVC (High Efficiency Video Coding) is developed as the successor of the
 H.264/AVC video coding standard. The goal of the HEVC standardization process
@@ -377,7 +328,12 @@ respect to the improved coding tools as well as performance. The second part
 of the talk will provide insight on how this new codec can be adopted in the
 market and what the burdens are on its way to success.
 	</p>
-	</i>
+	<p><i>
+Thijs Vermeir has been contributing to the GStreamer project since 2006. After
+working at Fluendo, he is now research engineer for Barco, where he is
+doing research in video processing including video compression and network
+streaming.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -386,6 +342,11 @@ market and what the burdens are on its way to success.
 Application Showcase: gst-media-info, Stefan Sauer
     </b></p>
 	<p>
+GStreamer has the discoverer feature to quickly collect metadata from media
+files. The included command-line tool is not convenient for going through a
+larger set of files. In this demo I show gst-mediainfo as an alternative UI.
+	</p>
+	<p><i>
 Stefan is a software engineer working for Google on build infrastructure tools.
 In the past he was working for Nokia on the multimedia stack used on their
 maemo/meego internet tablets and phones. In his free time his is contributing
@@ -393,15 +354,7 @@ to GStreamer, other GNOME projects (e.g. gtk-doc) and working on his music
 editor buzztrax. He has a PhD in Human Computer Interaction from the Technical
 University of Dresden/Germany. Stefan now lives in Munich/Germany with his
 wife and his two kids.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
-	<p>
-GStreamer has the discoverer feature to quickly collect metadata from media
-files. The included command-line tool is not convenient for going through a
-larger set of files. In this demo I show gst-mediainfo as an alternative UI.
-	</p>
-	</i>
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -409,11 +362,6 @@ larger set of files. In this demo I show gst-mediainfo as an alternative UI.
 	<p><b>
 GES - The Open Source Swiss Army Knife of Multimedia Editing, Mathieu Duponchelle
     </b></p>
-	<p>
-BIO: FIXME
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 The purpose of this talk is to first present the current state of
 Gstreamer Editing Services, and in a second time analyse how our design, and
@@ -425,7 +373,9 @@ to be used in much more use cases than this particular one: online editing,
 collaborative editing, live broadcasting, and how Pitivi could be extended
 to match specific use cases.
 	</p>
-	</i>
+	<p><i>
+Biographical details coming soon
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -433,20 +383,6 @@ to match specific use cases.
 	<p><b>
 Cairosink and GPU Buffer Sharing, Guillaume Emont, Igalia
     </b></p>
-	<p>
-Guillaume Emont has been playing around on various things related to multimedia
-(Elisa/Moovida, Pigment, Grilo and of course GStreamer) in the Free software
-world for a few years and enjoys it a lot. He is proudly part of the awesome
-group of hackers known as Igalia.
-    </p>
-    <p>
-When he doesn't hack on software, he enjoys travelling around the world,
-discussing with like-minded people around a drink or a good meal, various
-outdoor sports in and around sunny Barcelona, helium balloon photography or
-building interactive laser installations, among many other things.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 GStreamer 1.0 introduced a new architecture that makes memory management
 easier. In particular, handling non-system memory and sharing it between
@@ -459,23 +395,23 @@ pipeline. In this talk, I will explain how I made the various parts fit
 together, and discuss the challenges that I have met and how I have worked on
 them.
 	</p>
-	</i>
+	<p><i>
+Guillaume Emont has been playing around on various things related to multimedia
+(Elisa/Moovida, Pigment, Grilo and of course GStreamer) in the Free software
+world for a few years and enjoys it a lot. He is proudly part of the awesome
+group of hackers known as Igalia.
+    </i></p>
+    <p><i>
+When he doesn't hack on software, he enjoys travelling around the world,
+discussing with like-minded people around a drink or a good meal, various
+outdoor sports in and around sunny Barcelona, helium balloon photography or
+building interactive laser installations, among many other things.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top" bgcolor="#E8E8FF"><td>
 	<a name="taymans-pitfalls" id="taymans-pitfalls"></a>
 	<p><b>Keynote - Pitfalls and Best Practices for Using GStreamer to Build Products, Wim Taymans, Collabora</b></p>
-	<p>
-Wim Taymans has a computer science degree from the Katholieke Universiteit
-in Leuven, Belgium and decades of software development experience. He
-co-founded the GStreamer multimedia framework in 1999 and is the person
-behind much of the current design. Wim has a long history in the development
-of multimedia software, starting with computer game development on the
-Commodore 64. Wim Taymans is working on assisting Collabora customers with
-the design and use of  GStreamer as well as general research and development.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 This Keynote compiles a set of guidelines and best practices for integrating
 GStreamer into your products. It is meant to be a series of 'lessons
@@ -484,7 +420,15 @@ avoid some of the common pitfalls. We will talk about integration with
 existing hardware and software solutions as well as dealing with the community
 to make the most out of GStreamer and its ecosystem.
     </p>
-	</i>
+	<p><i>
+Wim Taymans has a computer science degree from the Katholieke Universiteit
+in Leuven, Belgium and decades of software development experience. He
+co-founded the GStreamer multimedia framework in 1999 and is the person
+behind much of the current design. Wim has a long history in the development
+of multimedia software, starting with computer game development on the
+Commodore 64. Wim Taymans is working on assisting Collabora customers with
+the design and use of  GStreamer as well as general research and development.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -492,13 +436,6 @@ to make the most out of GStreamer and its ecosystem.
 	<p><b>
 Multimedia on Embedded Linux - Pushing GStreamer to its Limits, Michael Olbrich, PenguTronix
 </b></p>
-	<p>
-Michael works for Pengutronix on embedded Linux topics and has been using
-GStreamer here for several years. He recently started to contribute to
-GStreamer, mostly to the video4linux plugin and related topics.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 Modern ARM SoCs have a number of hardware multimedia units. GStreamer's
 modular design makes it the ideal candidate to integrate these units into a
@@ -517,7 +454,11 @@ decoding and displaying a video or encoding and streaming from a camera
 barely scratches the surface of what can be done with GStreamer on embedded
 systems.
 	</p>
-	</i>
+	<p><i>
+Michael works for Pengutronix on embedded Linux topics and has been using
+GStreamer here for several years. He recently started to contribute to
+GStreamer, mostly to the video4linux plugin and related topics.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -526,19 +467,16 @@ systems.
 Time and Synchronization for Dummies (yes, you!), Edward Hervey, Collabora
 </b></p>
 	<p>
-Edward Hervey has been contributing since 2003 to the GStreamer
-framework. Edward is interested in all fields of applications and usage of
-GStreamer, which he applies as the Multimedia Domains Lead at Collabora
-where he has worked for the past 6 years.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
-	<p>
 An overview of all time usages in GStreamer, how it all fits
 together, and what can be improved. If you are unsure about time and
 synchronization in GStreamer, this is your chance to fix that.
 	</p>
-	</i>
+	<p><i>
+Edward Hervey has been contributing since 2003 to the GStreamer
+framework. Edward is interested in all fields of applications and usage of
+GStreamer, which he applies as the Multimedia Domains Lead at Collabora
+where he has worked for the past 6 years.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -547,14 +485,11 @@ synchronization in GStreamer, this is your chance to fix that.
 Drive Towards Software in a Traditionally Hardware-centric Company and how GStreamer Plays an Essential Role in This, Marc Leeman, Barco
 </b></p>
 	<p>
-BIO: FIXME
+Abstract coming soon
 	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
-	<p>
-ABSTRACT: FIXME
-	</p>
-	</i>
+	<p><i>
+Biographical details coming soon
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -562,14 +497,6 @@ ABSTRACT: FIXME
 	<p><b>
 My GStreamer-Enabled Home, Jan Schmidt
 </b></p>
-	<p>
-Jan Schmidt has been a GStreamer developer and maintainer since 2002. He
-is responsible for GStreamer's DVD support, and primary author of the
-Aurena home-area media player. He lives in Albury, Australia and keeps
-sheep, chickens, ducks and more fruit trees than is sensible.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 Officially, this is a talk about using GStreamer around the house.
 	</p>
@@ -579,7 +506,12 @@ Really, it's a talk about being lazy, chickens, sheds and tiny humans.
 	<p>
 It might also touch on network media, streaming and synchronisation.
 	</p>
-	</i>
+	<p><i>
+Jan Schmidt has been a GStreamer developer and maintainer since 2002. He
+is responsible for GStreamer's DVD support, and primary author of the
+Aurena home-area media player. He lives in Albury, Australia and keeps
+sheep, chickens, ducks and more fruit trees than is sensible.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -588,22 +520,19 @@ It might also touch on network media, streaming and synchronisation.
 Achieving Pexcellence - Challenges of real time streaming applications, Havard Graff, Pexip
 </b></p>
 	<p>
-Håvard Graff has worked with GStreamer professionally for 6 years in Tandberg,
-Cisco and now Pexip. Developing video conferencing systems like Movi, Jabber
-Video and Pexip Infinity using GStreamer as the backbone. Was instrumental in
-premiering GStreamer in the AppStore. Still pretends to be a musician with
-programming as a hobby.
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
-	<p>
 How can you test real time systems deterministically? How can you fix bugs that
 only happens once every millionth run of your application? (and never with you
 or your debugger present). Pexip have invested a lot of time and effort towards
 these issues, and we want to share some of our thoughts, techniques and code
 with you.
 	</p>
-	</i>
+	<p><i>
+Håvard Graff has worked with GStreamer professionally for 6 years in Tandberg,
+Cisco and now Pexip. Developing video conferencing systems like Movi, Jabber
+Video and Pexip Infinity using GStreamer as the backbone. Was instrumental in
+premiering GStreamer in the AppStore. Still pretends to be a musician with
+programming as a hobby.
+	</i></p>
 	</td></tr>
 
 	<tr valign="top"><td>
@@ -611,11 +540,6 @@ with you.
 	<p><b>
 Return of the PulseAudio Update, Arun Rhagavan, Collabora
 </b></p>
-	<p>
-BIO: FIXME
-	</p>
-	<i>
-	<p><b>Talk Abstract</b></p>
 	<p>
 When we last left or heroes, it was autumn in Prague, 2011. A 1.0 release has
 just been made, the citizens of Linuxia were rejoicing and world domination was
@@ -627,7 +551,9 @@ them, as they navigate the swamps of Android, fight the beasts of ARM, and
 finally vanquish the Use Case Manager. Will they finally get a stable release
 cycle? Will they stop breaking your audio? Join us, to find out more!
 	</p>
-	</i>
+	<p><i>
+Biographical details coming soon
+	</i></p>
 	</td></tr>
 
 </table>
