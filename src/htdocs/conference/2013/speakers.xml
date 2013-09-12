@@ -482,10 +482,43 @@ where he has worked for the past 6 years.
 	<tr valign="top"><td>
 	<a name="leeman-drive-towards-software" id="leeman-drive-towards-software"></a>
 	<p><b>
-Drive Towards Software in a Traditionally Hardware-centric Company and how GStreamer Plays an Essential Role in This, Marc Leeman, Barco
+GStreamer and the move from a hardware centric product design towards a software centric product design, Marc Leeman, Barco
 </b></p>
 	<p>
-Abstract coming soon
+Until quite recently, the domain of professional video processing in our
+company has been the exclusive domain of hardware engineers and opticians.
+	</p>
+	<p>
+As digital and streaming video entered the professional markets in the
+beginning of the new millennium, the complex and often unstandardised
+formats required some kind of pre-processing of the streams. Later,
+all kinds of session management systems started to come into the
+picture. This required the introduction of some kind of control logic
+on the devices itself; best performed by a software layer.
+	</p>
+	<p>
+However, next to overall management software on the system level,
+the software on the devices themselves was limited to control of the
+peripherals and user interaction. Traditional hardware design was still
+very much at the core of the products.
+	</p>
+	<p>
+Two main drivers shattered this comfort zone: increasing parallelism in
+processors combined with mature and stable user-land open source software.
+	</p>
+	<p>
+While the initial investment of hardware design is high, creating a
+significant step-in cost; a software approach is flexible and runs on, in
+comparison, "low cost" hardware. Deciding on custom hardware design is
+currently like crossing the Rubicon: committing resources for longer
+periods of time. These decisions must be taken with the utmost care.
+	</p>
+	<p>
+This talk focusses on the disruptive nature of this marriage of
+technologies in an environment where hardware design was at the core
+of what we did. The focus is on how GStreamer is a driving force in
+the transition; impacting day-to-day work, training, product design and
+system definition.
 	</p>
 	<p><i>
 Biographical details coming soon
