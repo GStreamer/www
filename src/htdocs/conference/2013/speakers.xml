@@ -213,10 +213,30 @@ in many SetTopBoxes : dvb player, recorder and streamer, multimedia player.
 FluMediaPlayer: Growing our user base through high level media player API, Julien Moutte, Fluendo
     </b></p>
 	<p>
-Abstract coming soon
+Thanks to the GStreamer SDK effort it is now possible to easily build and
+deploy GStreamer applications on almost all major operating systems in the
+market. However GStreamer API is still pretty complex/low level in comparison
+to competition on those new platforms. Indeed, creating a simple, yet powerful
+media player using Java on Android or Objective C on iOS, can become a serious
+nightmare for the usual "App" developer which is used to a simple
+_open/_play/_close API.
+	</p>
+	<p>
+Fluendo created a media player engine aiming at making it straightforward to
+create such applications leveraging GStreamer's versatile infrastructure to
+support all media formats, adaptive streaming, hardware accelerated decoding,
+etc. Thanks to its high level API (C, JNI, ...) it is now much faster and
+easier to start using GStreamer in your "App" and benefit from the cross
+platform goodness it can offer you without becoming a GStreamer guru.
 	</p>
 	<p><i>
-Biographical details coming soon
+Combining both a strong technical and business understanding of the IT market,
+Moutte co-founded more than 4 companies since 1998 before bringing his
+visionary leadership to the establishment of the Fluendo group in 2004.
+An active contributor to the Free Software community since 2001, Moutte has
+participated in the creation of GStreamer, the multimedia framework chosen by
+most multimedia software producers. Moutte has also been at the origin of
+several innovative solutions within the multimedia environment.
 	</i></p>
 	</td></tr>
 
