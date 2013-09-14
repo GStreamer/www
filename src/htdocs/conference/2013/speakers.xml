@@ -246,12 +246,27 @@ several innovative solutions within the multimedia environment.
 WebKit and GStreamer, Xabier Rodríguez Calvar, Igalia
     </b></p>
 	<p>
-Abstract coming soon. This talk covers WebKit architecture, WebKit ports, which
-ports are using GStreamer and which version (0.10 vs 1.0), WebKit Multimedia
-and GStreamer, and WebKit Multimedia in WebKitGtk+.
+WebKit is a well known open source browser engine used by Apple, GNOME,
+EFL, Blackberry and others and shares quite a big codebase with Blink.
+It was the result of a fork from KHTML and KJS.
+	</p>
+	<p>
+As a simplification we can say that it has three main layers, the API,
+the core and the backend. The different ports implement their API and
+their backends and the core is shared. WebKit 2 is robust and
+transparent multiprocess architecture allowing safer interactions with
+webpages.
+	</p>
+	<p>
+GStreamer is the multimedia backend of some WebKit ports and in this
+talk we will see its architecture, status, challenges and future.
 	</p>
 	<p><i>
-Biographical details coming soon
+Xabier Rodríguez Calvar (calvaris) is a Free Software developer living
+in A Coruña and partner at Igalia. He has always worked on GNOME
+technologies though he has also experience in Qt. These last years he
+has focused his energies in multimedia with GStreamer and now he is a
+WebKit hacker.
 	</i></p>
 	</td></tr>
 
