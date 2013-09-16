@@ -393,7 +393,7 @@ wife and his two kids.
 	</td></tr>
 
 	<tr valign="top"><td>
-	<a name="duponchelle-ges" id="duponchelle-ges"></a>
+	<a name="duponchelle-saunier-ges" id="duponchelle-saunier-ges"></a>
 	<p><b>
 GES - The Open Source Swiss Army Knife of Multimedia Editing, Mathieu Duponchelle
     </b></p>
@@ -409,7 +409,15 @@ collaborative editing, live broadcasting, and how Pitivi could be extended
 to match specific use cases.
 	</p>
 	<p><i>
-Biographical details coming soon
+Mathieu Duponchelle is a student in Epitech Paris. He contributes to pitivi and
+GStreamer since 2010, and, as of September 2013, is finishing a Google Summer
+of Code which purpose was to eliminate as many bugs as possible across the
+multimedia stack.
+	</i></p>
+	<p><i>
+Thibault Saunier joined the PiTiVi project as a Summer of Code student in 2010
+and has been hooked ever since. He now maintains and leads PiTiVi, GNonLin
+and GStreamer Editing Services development.
 	</i></p>
 	</td></tr>
 
