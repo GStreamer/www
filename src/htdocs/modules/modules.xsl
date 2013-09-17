@@ -106,8 +106,7 @@ Here's a quick overview of all of our modules :
 
             <xsl:call-template name="hyperlink">
               <xsl:with-param name="href">
-                &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/devel" />.html
-              </xsl:with-param>
+                &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/devel" />.html</xsl:with-param>
               <xsl:with-param name="text">
                 <xsl:value-of select="versions/devel" />
               </xsl:with-param>
