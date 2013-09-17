@@ -127,7 +127,7 @@ timeline-oriented use of GStreamer makes sense.
       <stable>&gnonlin-version-stable;</stable>
       <devel>git master</devel>
     </versions>
-    <status>(active)</status>
+    <status>active</status>
   </module>
 
   <module>
@@ -204,7 +204,7 @@ Streaming server based on GStreamer
       <stable>&gst-plugins-gl-version-stable;</stable>
       <devel>&gst-plugins-gl-version-devel;</devel>
     </versions>
-    <status>inactive</status>
+    <status>active</status>
   </module>
 
   <module>
@@ -239,7 +239,7 @@ Streaming server based on GStreamer
       <stable>&gstreamer-sharp-version-stable;</stable>
       <devel>&gstreamer-sharp-version-devel;</devel>
     </versions>
-    <status>unmaintained</status>
+    <status>unmaintained (but replacement for 1.0 in the works)</status>
   </module>
 
   <module>
