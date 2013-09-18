@@ -564,7 +564,24 @@ the transition; impacting day-to-day work, training, product design and
 system definition.
 	</p>
 	<p><i>
-Biographical details coming soon
+Marc has a background in electrical engineering and performed research
+on the usage and impact of dynamic memory in small and constrained
+systems.
+	</i></p>
+	<p><i>
+Putting theory to practice; he joined Barco, where he did U-Boot and
+the Linux kernel porting to a line of embedded streaming video products
+and was part of a team that designed the users pace software. When more
+powerful processing became available, he introduced GStreamer in a stream
+normalising system, that in turn was used for software decoding and made
+full circle to "embedded systems".
+	</i></p>
+	<p><i>
+In his spare time, he's mainly driving his three daughters to horse
+riding academy or does some road bicycle racing and has recently taken
+up the challenge to construct his own carbon bicycle. He does some
+Debian package maintenance and published a low cost system to control
+KNX automation systems.
 	</i></p>
 	</td></tr>
 
