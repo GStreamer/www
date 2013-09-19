@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plugins</module-fancy>
+  <name></name>
+  <version>1.1.90</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plugins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plugins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plugin on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plugins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plugin
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plugins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Alex Ashley</person>
+	<person>Andreea Fulger</person>
+	<person>Bernhard Miller</person>
+	<person>Christoph Reiter</person>
+	<person>David Holroyd</person>
+	<person>Jan Schmidt</person>
+	<person>Matej Knopp</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Olivier Crête</person>
+	<person>Rico Tzschichholz</person>
+	<person>Sebastian Dröge</person>
+	<person>Seán de Búrca</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>646963</id>
+      <summary>rtpmanager: Only update last_rtcp_send_time when actually sending a report</summary>
+    </bug>
+    <bug>
+      <id>687657</id>
+      <summary>rtpsession: Demux RTCP buffers from the RTP stream</summary>
+    </bug>
+    <bug>
+      <id>695090</id>
+      <summary>rganalysis: fix tests</summary>
+    </bug>
+    <bug>
+      <id>702004</id>
+      <summary>qtdemux: add support for the avc3 sample entry format of the AVC file  format</summary>
+    </bug>
+    <bug>
+      <id>704950</id>
+      <summary>videomixer: add colorspace conversion</summary>
+    </bug>
+    <bug>
+      <id>705371</id>
+      <summary>souphttpsrc: Does network operations from the state change thread</summary>
+    </bug>
+    <bug>
+      <id>706955</id>
+      <summary>autoaudiosink/autovideosink: Introduce &quot; sync &quot; property</summary>
+    </bug>
+    <bug>
+      <id>707042</id>
+      <summary>udpsrc binds to INADDR_ANY instead of multicast group address</summary>
+    </bug>
+    <bug>
+      <id>707303</id>
+      <summary>flacenc: 'Got data flow before stream-start event' warnings</summary>
+    </bug>
+    <bug>
+      <id>707340</id>
+      <summary>qtmux: should NOT use PTS if DTS is missing</summary>
+    </bug>
+    <bug>
+      <id>707411</id>
+      <summary>qtmux: what is purpose of MAX_TOLERATED_LATENESS?</summary>
+    </bug>
+    <bug>
+      <id>707530</id>
+      <summary>qtdemux: Handle segments correctly in push mode seeks</summary>
+    </bug>
+    <bug>
+      <id>707688</id>
+      <summary>matroskademux: leaking buffer and caps when parsing attachments</summary>
+    </bug>
+    <bug>
+      <id>707734</id>
+      <summary>rtp: add payloader and depayloader for 24bit raw audio</summary>
+    </bug>
+    <bug>
+      <id>707758</id>
+      <summary>v4l2: Incorrect UV plane stride value for NV12/NV21 formats</summary>
+    </bug>
+    <bug>
+      <id>707886</id>
+      <summary>videomixer: build fails due to unrenamed files if orc is not installed</summary>
+    </bug>
+    <bug>
+      <id>707933</id>
+      <summary>matroskademux: Wrong UTF8 detection causes wrong detection of subtitle encoding</summary>
+    </bug>
+    <bug>
+      <id>708131</id>
+      <summary>videomixer: undefined reference to `videomixer_video_convert_orc_convert_I420_BGRA'</summary>
+    </bug>
+  </bugs>
+
+</release>
