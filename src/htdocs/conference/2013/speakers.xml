@@ -56,10 +56,30 @@ David Röthlisberger is the creator of stb-tester, and heads test automation at 
 Latest GStreamer Streaming Server features: Video on Demand, Smooth Streaming, and DRM, David Schleef, Rdio
     </b></p>
 	<p>
-Abstract coming soon
+In the past year, GSS (GStreamer Streaming Server) has morphed from
+a simple live streaming server into a web framework written in C,
+with a strong media bias.  This talk will be a reintroduction to
+GSS with information on features, how to use and deploy GSS, and
+future directions.  New features, such as the video-on-demand system,
+Microsoft Smooth Streaming, MPEG DASH, and DRM encryption will be
+discussed in detail.  The deployment of GSS at Rdio Inc for video
+streaming will be used as an example.
+	</p>
+	<p>
+GSS is a custom standalone HTTP server and web framework written in
+GLib-style C and based on GStreamer, Libsoup for HTTP processing,
+Bootstrap for HTML user interface, and JSON-GLib for request processing.
+Streaming protocols include HTTP, RTSP, RTMP, Icecast, HTTP Live
+Streaming, Microsoft Smooth Streaming, and MPEG DASH.
 	</p>
 	<p><i>
-Biographical details coming soon
+David Schleef is a long-time contributor in the open-source
+community, working on projects such as GStreamer, the Dirac video
+codec, Swfdec, Orc, Debian, Comedi, and Xiph.org projects.  He is
+a Senior Engineering Manager at Rdio Inc, handling music and video
+ingestion, transcoding, and streaming.  His current interests
+relate to improving the tools used for converting and delivering
+high-quality content to viewers.
 	</i></p>
 	</td></tr>
 
