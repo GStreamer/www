@@ -266,10 +266,16 @@ please contact
 <p>
 <a href="http://www.collabora.com/projects/gstreamer/"><img src="sponsor_150x49_collabora.png" alt="Collabora" height="49" width="150" /></a>
 </p>
+<br />
 <h2>Silver Sponsors</h2>
 <p>
 <a href="http://www.fluendo.com"><img src="sponsor_149x36_fluendo.png" alt="Fluendo" height="36" width="149" /></a>
+</p>
+<p>
 <a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
+</p>
+<p>
+<div style="font-size:40px;font-family:verdana,arial,sans-serif;text-align:center;color:gray">Cisco</div>
 </p>
 <!--
 <h1>Gold Sponsor</h1>
@@ -278,10 +284,12 @@ please contact
 <h2>Silver Sponsors</h2>
 <p>
 </p>
+-->
 <h2>Press Partners</h2>
 <p>
 <a href="http://lwn.net"><img src="lwn.png" alt="Lwn.net" height="61" width="150" /></a>
 </p>
+<!--
 <p>
 <a href="http://www.phoronix.com/"><img src="phoronix.png" alt="Phoronix.com" height="34" width="150" /></a>
 </p>
