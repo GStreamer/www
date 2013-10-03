@@ -20,7 +20,7 @@
 	<tr valign="top" bgcolor="#E8E8FF"><td>
 	<a name="muller-nextlevel" id="muller-nextlevel"></a>
 	<p><b>
-Keynote - Taking GStreamer to the Next Level, Tim-Philipp Müller
+Keynote - Taking GStreamer to the Next Level, Tim-Philipp Müller (__tim)
     </b></p>
 	<p>
 Abstract coming soon
@@ -53,7 +53,7 @@ David Röthlisberger is the creator of stb-tester, and heads test automation at 
 	<tr valign="top"><td>
 	<a name="schleef-gss" id="schleef-gss"></a>
 	<p><b>
-Latest GStreamer Streaming Server features: Video on Demand, Smooth Streaming, and DRM, David Schleef, Rdio
+Latest GStreamer Streaming Server features: Video on Demand, Smooth Streaming, and DRM, David Schleef (ds), Rdio
     </b></p>
 	<p>
 In the past year, GSS (GStreamer Streaming Server) has morphed from
@@ -86,7 +86,7 @@ high-quality content to viewers.
 	<tr valign="top"><td>
 	<a name="droge-hw-integration" id="droge-hw-integration"></a>
 	<p><b>
-The never-ending story: GStreamer and hardware integration, Sebastian Dröge
+The never-ending story: GStreamer and hardware integration, Sebastian Dröge (slomo)
     </b></p>
 	<p>
 In the past usage of specialized hardware features, especially those of embedded
@@ -115,7 +115,7 @@ Mac OS X, Android and iOS.
 	<tr valign="top"><td>
 	<a name="waters-opengl" id="waters-opengl"></a>
 	<p><b>
-GStreamer and OpenGL plugins in 1.0, Matthew Waters
+GStreamer and OpenGL plugins in 1.0, Matthew Waters (ystreet00)
     </b></p>
 	<p>
 OpenGL is a powerful API usually accompanied by powerful hardware that
@@ -135,7 +135,7 @@ around with waveforms.
 	<tr valign="top"><td>
 	<a name="taymans-rtsp" id="taymans-rtsp"></a>
 	<p><b>
-Latest GStreamer RTSP Server features, Wim Taymans, Collabora
+Latest GStreamer RTSP Server features, Wim Taymans (wtay), Collabora
     </b></p>
 	<p>
 This talk presents an RTSP server built on top of GStreamer and its various
@@ -157,7 +157,7 @@ the design and use of  GStreamer as well as general research and development.
 	<tr valign="top"><td>
 	<a name="morales-android-ios" id="morales-android-ios"></a>
 	<p><b>
-GStreamer for Mobile Platforms: Android and iOS, Andoni Morales, Fluendo
+GStreamer for Mobile Platforms: Android and iOS, Andoni Morales (ylatuya), Fluendo
     </b></p>
 	<p>
 Mobile platforms such as Android and iOS are growing very fast and GStreamer
@@ -230,7 +230,7 @@ in many SetTopBoxes : dvb player, recorder and streamer, multimedia player.
 	<tr valign="top"><td>
 	<a name="moutte-flump" id="moutte-flump"></a>
 	<p><b>
-FluMediaPlayer: Growing our user base through high level media player API, Julien Moutte, Fluendo
+FluMediaPlayer: Growing our user base through high level media player API, Julien Moutte (dolphy), Fluendo
     </b></p>
 	<p>
 Thanks to the GStreamer SDK effort it is now possible to easily build and
@@ -263,7 +263,7 @@ several innovative solutions within the multimedia environment.
 	<tr valign="top"><td>
 	<a name="calvar-webkit" id="calvar-webkit"></a>
 	<p><b>
-WebKit and GStreamer, Xabier Rodríguez Calvar, Igalia
+WebKit and GStreamer, Xabier Rodríguez Calvar (calvaris), Igalia
     </b></p>
 	<p>
 WebKit is a well known open source browser engine used by Apple, GNOME,
@@ -293,7 +293,7 @@ WebKit hacker.
 	<tr valign="top"><td>
 	<a name="quessy-toonloop" id="quessy-toonloop"></a>
 	<p><b>
-Application Showcase: Toonloop, the Live Stop Motion Editor, Alexandre Quessy, Collabora
+Application Showcase: Toonloop, the Live Stop Motion Editor, Alexandre Quessy (aalex), Collabora
     </b></p>
 	<p>
 Toonloop is a free software for live stop-motion animation. It allows to
@@ -337,7 +337,7 @@ member of the artist-run centre Perte de Signal.
 	<tr valign="top"><td>
 	<a name="frisch-dreambox" id="frisch-dreambox"></a>
 	<p><b>
-Case Study: GStreamer on the Dreambox, Andreas Frisch, Dream Property
+Case Study: GStreamer on the Dreambox, Andreas Frisch (fraxinath), Dream Property
     </b></p>
 	<p>
 The Dreambox is a prototypical example of a multimedia embedded linux
@@ -363,7 +363,7 @@ first Linux-based STB called "Dreambox".
 	<tr valign="top"><td>
 	<a name="vermeir-hevc" id="vermeir-hevc"></a>
 	<p><b>
-Next Generation Video Coding with HEVC: Facts and Figures, Thijs Vermeir, Barco
+Next Generation Video Coding with HEVC: Facts and Figures, Thijs Vermeir (lovebug356), Barco
     </b></p>
 	<p>
 HEVC (High Efficiency Video Coding) is developed as the successor of the
@@ -394,7 +394,7 @@ streaming.
 	<tr valign="top"><td>
 	<a name="sauer-mediainfo" id="sauer-mediainfo"></a>
 	<p><b>
-Application Showcase: gst-media-info, Stefan Sauer
+Application Showcase: gst-media-info, Stefan Sauer (ensonic), Google
     </b></p>
 	<p>
 GStreamer has the discoverer feature to quickly collect metadata from media
@@ -415,7 +415,7 @@ wife and his two kids.
 	<tr valign="top"><td>
 	<a name="duponchelle-saunier-ges" id="duponchelle-saunier-ges"></a>
 	<p><b>
-GES - The Open Source Swiss Army Knife of Multimedia Editing, Mathieu Duponchelle
+GES - The Open Source Swiss Army Knife of Multimedia Editing, Mathieu Duponchelle (Mathieu_Du) and Thibault Saunier (thiblahute)
     </b></p>
 	<p>
 The purpose of this talk is to first present the current state of
@@ -444,7 +444,7 @@ and GStreamer Editing Services development.
 	<tr valign="top"><td>
 	<a name="emont-cairosink" id="emont-cairosink"></a>
 	<p><b>
-Cairosink and GPU Buffer Sharing, Guillaume Emont, Igalia
+Cairosink and GPU Buffer Sharing, Guillaume Emont (guijemont), Igalia
     </b></p>
 	<p>
 GStreamer 1.0 introduced a new architecture that makes memory management
@@ -474,7 +474,7 @@ building interactive laser installations, among many other things.
 
 	<tr valign="top" bgcolor="#E8E8FF"><td>
 	<a name="taymans-pitfalls" id="taymans-pitfalls"></a>
-	<p><b>Keynote - Pitfalls and Best Practices for Using GStreamer to Build Products, Wim Taymans, Collabora</b></p>
+	<p><b>Keynote - Pitfalls and Best Practices for Using GStreamer to Build Products, Wim Taymans (wtay), Collabora</b></p>
 	<p>
 This Keynote compiles a set of guidelines and best practices for integrating
 GStreamer into your products. It is meant to be a series of 'lessons
@@ -497,7 +497,7 @@ the design and use of  GStreamer as well as general research and development.
 	<tr valign="top"><td>
 	<a name="olbrich-embedded" id="olbrich-embedded"></a>
 	<p><b>
-Multimedia on Embedded Linux - Pushing GStreamer to its Limits, Michael Olbrich, PenguTronix
+Multimedia on Embedded Linux - Pushing GStreamer to its Limits, Michael Olbrich, Pengutronix
 </b></p>
 	<p>
 Modern ARM SoCs have a number of hardware multimedia units. GStreamer's
@@ -527,7 +527,7 @@ GStreamer, mostly to the video4linux plugin and related topics.
 	<tr valign="top"><td>
 	<a name="hervey-time" id="hervey-time"></a>
 	<p><b>
-Time and Synchronization for Dummies (yes, you!), Edward Hervey, Collabora
+Time and Synchronization for Dummies (yes, you!), Edward Hervey (bilboed), Collabora
 </b></p>
 	<p>
 An overview of all time usages in GStreamer, how it all fits
@@ -545,7 +545,7 @@ where he has worked for the past 6 years.
 	<tr valign="top"><td>
 	<a name="leeman-drive-towards-software" id="leeman-drive-towards-software"></a>
 	<p><b>
-GStreamer and the move from a hardware centric product design towards a software centric product design, Marc Leeman, Barco
+GStreamer and the move from a hardware centric product design towards a software centric product design, Marc Leeman (den_erpel), Barco
 </b></p>
 	<p>
 Until quite recently, the domain of professional video processing in our
@@ -608,7 +608,7 @@ KNX automation systems.
 	<tr valign="top"><td>
 	<a name="schmidt-gst-enabled-home" id="schmidt-gst-enabled-home"></a>
 	<p><b>
-My GStreamer-Enabled Home, Jan Schmidt
+My GStreamer-Enabled Home, Jan Schmidt (thaytan)
 </b></p>
 	<p>
 Officially, this is a talk about using GStreamer around the house.
@@ -630,7 +630,7 @@ sheep, chickens, ducks and more fruit trees than is sensible.
 	<tr valign="top"><td>
 	<a name="graff-testing" id="graff-testing"></a>
 	<p><b>
-Achieving Pexcellence - Challenges of real time streaming applications, Havard Graff, Pexip
+Achieving Pexcellence - Challenges of real time streaming applications, Håvard Graff (hgr), Pexip
 </b></p>
 	<p>
 How can you test real time systems deterministically? How can you fix bugs that
@@ -651,7 +651,7 @@ programming as a hobby.
 	<tr valign="top"><td>
 	<a name="raghavan-pulseaudio" id="raghavan-pulseaudio"></a>
 	<p><b>
-Return of the PulseAudio Update, Arun Rhagavan, Collabora
+Return of the PulseAudio Update, Arun Rhagavan (Ford_Prefect), Collabora
 </b></p>
 	<p>
 When we last left or heroes, it was autumn in Prague, 2011. A 1.0 release has

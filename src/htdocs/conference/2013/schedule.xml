@@ -38,7 +38,7 @@
 	</tr>
 	<tr valign="top">
 		<td><p>09.30</p></td>
-		<td colspan="2"><p align="center"><i>Opening and welcome to the 2013 GStreamer Conference</i><br />Christian Schaller</p>
+		<td colspan="2"><p align="center"><i>Opening and welcome to the 2013 GStreamer Conference</i><br />Christian Schaller (cschalle)</p>
 		<p align="center"><small>Kilsyth room</small></p>
         </td>
 		<td><p>09.30</p></td>
@@ -48,7 +48,7 @@
 		<td><p>10.00</p></td>
 		<td colspan="2">
 		<p align="center"><i>Keynote</i></p>
-        <p align="center"><a href="&site;/conference/2013/speakers.html#muller-nextlevel">Taking GStreamer to the Next Level</a><br />Tim-Philipp Müller</p>
+        <p align="center"><a href="&site;/conference/2013/speakers.html#muller-nextlevel">Taking GStreamer to the Next Level</a><br />Tim-Philipp Müller (__tim)</p>
 		<p align="center"><small>Kilsyth room</small></p>
 		</td>
 		<td><p>10.00</p></td>
@@ -74,7 +74,7 @@
 	<tr valign="top">
 		<td rowspan="2"><p>11.30</p></td>
 		<td rowspan="2">
-			<p><a href="&site;/conference/2013/speakers.html#schleef-gss">Latest GStreamer Streaming Server features: Video on Demand, Smooth Streaming, and DRM</a><br />David Schleef, Rdio</p>
+			<p><a href="&site;/conference/2013/speakers.html#schleef-gss">Latest GStreamer Streaming Server features: Video on Demand, Smooth Streaming, and DRM</a><br />David Schleef (ds), Rdio</p>
 		</td>
 		<td>
 			<p><a href="&site;/conference/2013/speakers.html#picard-stb-player">GStreamer-based Media Player for SetTopBox</a><br />Romain Picard, SoftAtHome</p></td>
@@ -82,7 +82,7 @@
 	</tr>
 	<tr valign="top">
 		<td>
-			<p><a href="&site;/conference/2013/speakers.html#moutte-flump">FluMediaPlayer: Growing our user base through high level media player API</a><br />Julien Moutte, Fluendo</p></td>
+			<p><a href="&site;/conference/2013/speakers.html#moutte-flump">FluMediaPlayer: Growing our user base through high level media player API</a><br />Julien Moutte (dolphy), Fluendo</p></td>
 		<td><p>12.00</p></td>
 	</tr>
 
@@ -97,25 +97,25 @@
 	<tr valign="top">
 		<td rowspan="2"><p>14.00</p></td>
 		<td rowspan="2">
-			<p><a href="&site;/conference/2013/speakers.html#droge-hw-integration">The never-ending story: GStreamer and hardware integration</a><br />Sebastian Dröge</p>
+			<p><a href="&site;/conference/2013/speakers.html#droge-hw-integration">The never-ending story: GStreamer and hardware integration</a><br />Sebastian Dröge (slomo)</p>
 		</td>
 		<td>
-			<p><a href="&site;/conference/2013/speakers.html#calvar-webkit">WebKit and GStreamer</a><br />Xabier Rodríguez Calvar, Igalia</p></td>
+			<p><a href="&site;/conference/2013/speakers.html#calvar-webkit">WebKit and GStreamer</a><br />Xabier Rodríguez Calvar (calvaris), Igalia</p></td>
 		<td><p>14.00</p></td>
 	</tr>
 	<tr valign="top">
 		<td>
-			<p><a href="&site;/conference/2013/speakers.html#quessy-toonloop">Application Showcase: Toonloop, the Live Stop Motion Editor</a><br />Alexandre Quessy, Collabora</p></td>
+			<p><a href="&site;/conference/2013/speakers.html#quessy-toonloop">Application Showcase: Toonloop, the Live Stop Motion Editor</a><br />Alexandre Quessy (aalex), Collabora</p></td>
 		<td><p>14.30</p></td>
 	</tr>
 
 	<tr valign="top">
 		<td><p>15.00</p></td>
 		<td>
-			<p><a href="&site;/conference/2013/speakers.html#waters-opengl">GStreamer and OpenGL plugins in 1.0</a><br />Matthew Waters</p>
+			<p><a href="&site;/conference/2013/speakers.html#waters-opengl">GStreamer and OpenGL plugins in 1.0</a><br />Matthew Waters (ystreet00)</p>
 		</td>
 		<td>
-			<p><a href="&site;/conference/2013/speakers.html#frisch-dreambox">Case Study: GStreamer on the Dreambox</a><br />Andreas Frisch, Dream Property</p>
+			<p><a href="&site;/conference/2013/speakers.html#frisch-dreambox">Case Study: GStreamer on the Dreambox</a><br />Andreas Frisch (fraxinath), Dream Property</p>
 		</td>
 		<td><p>15.00</p></td>
 	</tr>
@@ -123,15 +123,15 @@
 	<tr valign="top">
 		<td rowspan="2"><p>15.30</p></td>
 		<td rowspan="2">
-			<p><a href="&site;/conference/2013/speakers.html#taymans-rtsp">Latest GStreamer RTSP Server features</a><br />Wim Taymans, Collabora</p>
+			<p><a href="&site;/conference/2013/speakers.html#taymans-rtsp">Latest GStreamer RTSP Server features</a><br />Wim Taymans (wtay), Collabora</p>
 		</td>
 		<td>
-			<p><a href="&site;/conference/2013/speakers.html#vermeir-hevc">Next Generation Video Coding with HEVC: Facts and Figures</a><br />Thijs Vermeir, Barco</p></td>
+			<p><a href="&site;/conference/2013/speakers.html#vermeir-hevc">Next Generation Video Coding with HEVC: Facts and Figures</a><br />Thijs Vermeir (lovebug356), Barco</p></td>
 		<td><p>15.30</p></td>
 	</tr>
 	<tr valign="top">
 		<td>
-			<p><a href="&site;/conference/2013/speakers.html#sauer-mediainfo">Application Showcase: gst-media-info</a><br />Stefan Sauer, Google</p></td>
+			<p><a href="&site;/conference/2013/speakers.html#sauer-mediainfo">Application Showcase: gst-media-info</a><br />Stefan Sauer (ensonic), Google</p></td>
 		<td><p>16.00</p></td>
 	</tr>
 
@@ -146,15 +146,15 @@
 	<tr valign="top">
 		<td rowspan="2"><p>17.00</p></td>
 		<td rowspan="2">
-			<p><a href="&site;/conference/2013/speakers.html#morales-android-ios">GStreamer for Mobile Platforms: Android and iOS</a><br />Andoni Morales, Fluendo</p>
+			<p><a href="&site;/conference/2013/speakers.html#morales-android-ios">GStreamer for Mobile Platforms: Android and iOS</a><br />Andoni Morales (ylatuya), Fluendo</p>
 		</td>
 		<td>
-			<p><a href="&site;/conference/2013/speakers.html#duponchelle-saunier-ges">GES - The Open Source Swiss Army Knife of Multimedia Editing</a><br />Mathieu Duponchelle and Thibault Saunier</p></td>
+			<p><a href="&site;/conference/2013/speakers.html#duponchelle-saunier-ges">GES - The Open Source Swiss Army Knife of Multimedia Editing</a><br />Mathieu Duponchelle (Mathieu_Du) and Thibault Saunier (thiblahute)</p></td>
 		<td><p>17.00</p></td>
 	</tr>
 	<tr valign="top">
 		<td>
-			<p><a href="&site;/conference/2013/speakers.html#emont-cairosink">Cairosink and GPU Buffer Sharing</a><br />Guillaume Emont, Igalia</p></td>
+			<p><a href="&site;/conference/2013/speakers.html#emont-cairosink">Cairosink and GPU Buffer Sharing</a><br />Guillaume Emont (guijemont), Igalia</p></td>
 		<td><p>17.30</p></td>
 	</tr>
 
@@ -205,7 +205,7 @@
 		<td><p>10.00</p></td>
 		<td colspan="2">
 		<p align="center"><i>Keynote</i></p>
-		<p align="center"><a href="&site;/conference/2013/speakers.html#taymans-pitfalls">Pitfalls and Best Practices for Using GStreamer to Build Products</a><br />Wim Taymans, Collabora</p>
+		<p align="center"><a href="&site;/conference/2013/speakers.html#taymans-pitfalls">Pitfalls and Best Practices for Using GStreamer to Build Products</a><br />Wim Taymans (wtay), Collabora</p>
 		<p align="center"><small>Kilsyth room</small></p>
 		</td>
 		<td><p>10.00</p></td>
@@ -220,7 +220,7 @@
 	<tr valign="top">
 		<td><p>11.00</p></td>
 		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#olbrich-embedded">Multimedia on Embedded Linux - Pushing GStreamer to its Limits</a><br />Michael Olbrich, PenguTronix</p>
+		<p><a href="&site;/conference/2013/speakers.html#olbrich-embedded">Multimedia on Embedded Linux - Pushing GStreamer to its Limits</a><br />Michael Olbrich, Pengutronix</p>
 		</td>
 		<td><p>11.00</p></td>
 	</tr>
@@ -228,7 +228,7 @@
 	<tr valign="top">
 		<td><p>11.45</p></td>
 		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#hervey-time">Time and Synchronization for Dummies (yes, you!)</a><br />Edward Hervey, Collabora</p>
+		<p><a href="&site;/conference/2013/speakers.html#hervey-time">Time and Synchronization for Dummies (yes, you!)</a><br />Edward Hervey (bilboed), Collabora</p>
 		</td>
 		<td><p>11.45</p></td>
 	</tr>
@@ -244,7 +244,7 @@
 	<tr valign="top">
 		<td><p>14.00</p></td>
 		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#leeman-drive-towards-software">GStreamer and the Move From a Hardware Centric Product Design Towards a Software Centric Product Design</a><br />Marc Leeman, Barco</p>
+		<p><a href="&site;/conference/2013/speakers.html#leeman-drive-towards-software">GStreamer and the Move From a Hardware Centric Product Design Towards a Software Centric Product Design</a><br />Marc Leeman (den_erpel), Barco</p>
 		</td>
 		<td><p>14.00</p></td>
 	</tr>
@@ -252,7 +252,7 @@
 	<tr valign="top">
 		<td><p>14.45</p></td>
 		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#schmidt-gst-enabled-home">My GStreamer-Enabled Home</a><br />Jan Schmidt</p>
+		<p><a href="&site;/conference/2013/speakers.html#schmidt-gst-enabled-home">My GStreamer-Enabled Home</a><br />Jan Schmidt (thaytan)</p>
 		</td>
 		<td><p>14.45</p></td>
 	</tr>
@@ -260,7 +260,7 @@
 	<tr valign="top">
 		<td><p>15.30</p></td>
 		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#graff-testing">Achieving Pexcellence - Challenges of Real Time Streaming Applications</a><br />Havard Graff, Pexip</p>
+		<p><a href="&site;/conference/2013/speakers.html#graff-testing">Achieving Pexcellence - Challenges of Real Time Streaming Applications</a><br />Håvard Graff (hgr), Pexip</p>
 		</td>
 		<td><p>15.30</p></td>
 	</tr>
@@ -276,7 +276,7 @@
 	<tr valign="top">
 		<td><p>16.45</p></td>
 		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#raghavan-pulseaudio">Return of the PulseAudio Update</a><br />Arun Rhagavan, Collabora</p>
+		<p><a href="&site;/conference/2013/speakers.html#raghavan-pulseaudio">Return of the PulseAudio Update</a><br />Arun Rhagavan (Ford_Prefect), Collabora</p>
 		</td>
 		<td><p>16.45</p></td>
 	</tr>
