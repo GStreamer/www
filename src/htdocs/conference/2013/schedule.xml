@@ -27,8 +27,8 @@
 	</tr>
 	<tr valign="top" bgcolor="#b0c4de">
 		<td width="5%"><p></p></td>
-		<td width="45%"><p align="center">Room 1</p></td>
-		<td width="45%"><p align="center">Room 2</p></td>
+		<td width="45%"><p align="center">Kilsyth</p></td>
+		<td width="45%"><p align="center">Harris</p></td>
 		<td width="5%"><p></p></td>
 	</tr>
 	<tr valign="top" bgcolor="#E0E0E0">
@@ -38,14 +38,18 @@
 	</tr>
 	<tr valign="top">
 		<td><p>09.30</p></td>
-		<td colspan="2"><p align="center"><i>Opening and welcome to the 2013 GStreamer Conference</i>, Christian Schaller</p></td>
+		<td colspan="2"><p align="center"><i>Opening and welcome to the 2013 GStreamer Conference</i><br />Christian Schaller</p>
+		<p align="center"><small>Kilsyth room</small></p>
+        </td>
 		<td><p>09.30</p></td>
 	</tr>
 
 	<tr valign="top">
 		<td><p>10.00</p></td>
 		<td colspan="2">
-		<p align="center"><i>Keynote</i> - <a href="&site;/conference/2013/speakers.html#muller-nextlevel">Taking GStreamer to the Next Level</a><br />Tim-Philipp Müller</p>
+		<p align="center"><i>Keynote</i></p>
+        <p align="center"><a href="&site;/conference/2013/speakers.html#muller-nextlevel">Taking GStreamer to the Next Level</a><br />Tim-Philipp Müller</p>
+		<p align="center"><small>Kilsyth room</small></p>
 		</td>
 		<td><p>10.00</p></td>
 	</tr>
@@ -185,7 +189,7 @@
 	</tr>
 	<tr valign="top" bgcolor="#b0c4de">
 		<td><p></p></td>
-		<td colspan="2"><p align="center">Room 1</p></td>
+		<td colspan="2"><p align="center">Kilsyth</p></td>
 		<td><p></p></td>
 	</tr>
 
@@ -198,7 +202,9 @@
 	<tr valign="top">
 		<td><p>10.00</p></td>
 		<td colspan="2">
-		<p align="center"><i>Keynote</i> - <a href="&site;/conference/2013/speakers.html#taymans-pitfalls">Pitfalls and Best Practices for Using GStreamer to Build Products</a><br />Wim Taymans, Collabora</p>
+		<p align="center"><i>Keynote</i></p>
+		<p align="center"><a href="&site;/conference/2013/speakers.html#taymans-pitfalls">Pitfalls and Best Practices for Using GStreamer to Build Products</a><br />Wim Taymans, Collabora</p>
+		<p align="center"><small>Kilsyth room</small></p>
 		</td>
 		<td><p>10.00</p></td>
 	</tr>
