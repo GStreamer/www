@@ -122,6 +122,29 @@
 
 </table>
 
+<table width="95%" border="1" cellspacing="0" cellpadding="2">
+
+<h2>GStreamer Plugins-Bad Module Libraries Reference</h2>
+
+<p><b>Note: The API from these libraries is unstable and can change between
+releases.<br />Only the API in libraries from GStreamer core and plugins base are
+guaranteed to be API and ABI stable</b></p>
+
+<tr>
+ <th>document</th>
+ <th colspan="3">HEAD</th>
+<!-- <th colspan="3">devel &gst-version-devel;</th> -->
+<!-- <th colspan="3">stable &gst-plugins-bad-version-stable;</th> -->
+</tr>
+
+<tr>
+ <td>GStreamer Bad Plugins Libraries Reference</td>
+ <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gst-plugins-bad-libs/html/">HTML</a></td>
+ <!-- <td colspan="3"><a href="&site;/data/doc/gstreamer/&gst-plugins-bad-version-stable;/gst-plugins-bad-libs/html/">HTML</a></td> -->
+</tr>
+
+</table>
+
 <h2>Plugin Modules</h2>
 
 <table width="95%" border="1" cellspacing="0" cellpadding="2">
