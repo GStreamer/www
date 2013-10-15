@@ -687,7 +687,29 @@ demanding that you get off his lawn.
 Free Codecs Update: Opus and Daala, Greg Maxwell (gmaxwell), Mozilla
 </b></p>
 	<p>
-Abstract coming soon.
+Opus is a state-of-the-art royalty-free lossy audio codec convering more
+applications than any other single audio codec— from low latency VoIP to
+high fidelity music storage. After five years of open development, including
+contributions from Xiph.Org, Skype/Microsoft, Mozilla, Broadcom, and many
+individual developers, Opus was standardized in 2012 by the IETF in RFC 6716
+and has since been deployed to hundreds of millions of computers and devices.
+	</p>
+	<p>
+Daala is a new open effort to build a state-of-the-art video codec targeting
+compression performance beyond HEVC and VP9. Leveraging the experience we had
+with Opus we are building a new technical framework for video coding the ground
+up to avoid patent thickets and be royalty free: By breaking from the
+common design pattern of block based transform codecs we avoid many licensing
+complications and create an opportunity to better resolve some of the
+weaknesses of existing formats.
+	</p>
+	<p>
+This talk will cover our success with Opus and our plans for Daala and how we
+will create codec infrastructure which is convincingly royalty free, has
+state-of-the-art performance, and can be easily deployed and integrated,
+with the hope that someday everyone can stop worrying about codecs and
+go on to build fantastic things without having to compromise on  performance
+or navigating licensing.
 	</p>
 	<p><i>
 Greg has worked on unencumbered multimedia codecs with the Xiph.Org Foundation
