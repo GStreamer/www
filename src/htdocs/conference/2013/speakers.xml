@@ -20,7 +20,7 @@
 	<tr valign="top" bgcolor="#E8E8FF"><td>
 	<a name="muller-nextlevel" id="muller-nextlevel"></a>
 	<p><b>
-Keynote - Taking GStreamer to the Next Level, Tim-Philipp Müller (__tim)
+Keynote - Taking GStreamer to the Next Level, Tim-Philipp Müller (__tim), Centricular
     </b></p>
 	<p>
 This keynote will take a bird's eye look at what's been happening in and around
@@ -93,7 +93,7 @@ high-quality content to viewers.
 	<tr valign="top"><td>
 	<a name="droge-hw-integration" id="droge-hw-integration"></a>
 	<p><b>
-The never-ending story: GStreamer and hardware integration, Sebastian Dröge (slomo)
+The never-ending story: GStreamer and hardware integration, Sebastian Dröge (slomo), Centricular
     </b></p>
 	<p>
 In the past usage of specialized hardware features, especially those of embedded
@@ -617,7 +617,7 @@ KNX automation systems.
 	<tr valign="top"><td>
 	<a name="schmidt-gst-enabled-home" id="schmidt-gst-enabled-home"></a>
 	<p><b>
-My GStreamer-Enabled Home, Jan Schmidt (thaytan)
+My GStreamer-Enabled Home, Jan Schmidt (thaytan), Centricular
 </b></p>
 	<p>
 Officially, this is a talk about using GStreamer around the house.
