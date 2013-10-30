@@ -54,6 +54,7 @@
 
 <table>
 <tr>
+<!--
   <td>
     <div class="crop-EICC">
     <img src="http://www.eicc.co.uk/media/20285/eicc_expansion_home_page_1900px_wide.jpg"
@@ -63,6 +64,7 @@
     />
     </div>
   </td>
+-->
   <td>
     <div class="crop-hillview">
     <img src="http://upload.wikimedia.org/wikipedia/commons/9/91/Edinburgh._View_from_Calton_Hill.jpg"
