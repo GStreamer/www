@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.2.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Aleix Conchillo Flaque</person>
+	<person>Antonio Ospite</person>
+	<person>Hans Månsson</person>
+	<person>Matej Knopp</person>
+	<person>Ognyan Tonchev</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Sauer</person>
+	<person>Stephan Sundermann</person>
+	<person>Takashi Iwai</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tom Greenwood</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  <bugs>
+    <bug>
+      <id>701813</id>
+      <summary>Reverse playback not working with videotestsrc</summary>
+    </bug>
+    <bug>
+      <id>708689</id>
+      <summary>rtspconnection: RTSP watch is dispatched after closing the connection</summary>
+    </bug>
+    <bug>
+      <id>708773</id>
+      <summary>pbutils: add MPEG 2 AAC description</summary>
+    </bug>
+    <bug>
+      <id>708789</id>
+      <summary>playbin: make sure elements are in null before disposing</summary>
+    </bug>
+    <bug>
+      <id>708880</id>
+      <summary>rtspconnection: Not connecting to proxy when specified</summary>
+    </bug>
+    <bug>
+      <id>708952</id>
+      <summary>audio: change buffer ts when clipping buffer even if data length is same</summary>
+    </bug>
+    <bug>
+      <id>708953</id>
+      <summary>audiorate: clip buffers before pushing them out</summary>
+    </bug>
+    <bug>
+      <id>708954</id>
+      <summary>pbutils: add entry for text/x-raw</summary>
+    </bug>
+    <bug>
+      <id>709210</id>
+      <summary>Hangs on startup getting PulseAudio volume</summary>
+    </bug>
+    <bug>
+      <id>709408</id>
+      <summary>audioconvert: modifies buffer mapped for READ</summary>
+    </bug>
+    <bug>
+      <id>709637</id>
+      <summary>oggmux: Make sure we end up sending EOS if we received EOS on all sinkpads</summary>
+    </bug>
+    <bug>
+      <id>709754</id>
+      <summary>audioringbuffer: Clears need_reorder flag wrongly</summary>
+    </bug>
+    <bug>
+      <id>709938</id>
+      <summary>navigation: Missing gobject-introspection annotations</summary>
+    </bug>
+    <bug>
+      <id>710325</id>
+      <summary>playback: Add subpicture/x-dvb as raw caps</summary>
+    </bug>
+    <bug>
+      <id>711003</id>
+      <summary>videoscale: borders are filled with green when using NV12 pixelformat</summary>
+    </bug>
+    <bug>
+      <id>711231</id>
+      <summary>rtspconnection: allow setting tls certificate validation flags</summary>
+    </bug>
+    <bug>
+      <id>711550</id>
+      <summary>appsrc: Deadlocking because holding mutex while setting caps</summary>
+    </bug>
+  </bugs>
+
+</release>
