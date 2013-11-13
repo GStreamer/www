@@ -244,8 +244,8 @@ Streaming server based on GStreamer
 
   <module>
     <id>gst-android</id>
-    <blurb>GStreamer for Android</blurb>
-    <title>GStreamer for Android</title>
+    <blurb>GStreamer as media engine for Android</blurb>
+    <title>GStreamer as media engine for Android</title>
     <description>
     This is a module that allows you to make GStreamer the media engine for
     Android. The goal of the project is to both allow hardware makers to 
@@ -259,7 +259,7 @@ Streaming server based on GStreamer
       <stable>&gst-android-version-stable;</stable>
       <devel>&gst-android-version-devel;</devel>
     </versions>
-    <status>???</status>
+    <status>inactive (note: GStreamer builds for Android are actively maintained, see the cerbero module and the release binaries provided)</status>
   </module>
 
   <module>

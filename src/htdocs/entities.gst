@@ -1,11 +1,11 @@
-<!ENTITY gst-version-stable "1.0.10">
-<!ENTITY gst-plugins-base-version-stable "1.0.10">
-<!ENTITY gst-plugins-good-version-stable "1.0.10">
-<!ENTITY gst-plugins-ugly-version-stable "1.0.10">
-<!ENTITY gst-plugins-bad-version-stable "1.0.10">
+<!ENTITY gst-version-stable "1.2.1">
+<!ENTITY gst-plugins-base-version-stable "1.2.1">
+<!ENTITY gst-plugins-good-version-stable "1.2.1">
+<!ENTITY gst-plugins-ugly-version-stable "1.2.1">
+<!ENTITY gst-plugins-bad-version-stable "1.2.1">
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.13">
-<!ENTITY gst-libav-version-stable "1.0.10">
+<!ENTITY gst-libav-version-stable "1.2.1">
 <!ENTITY gst-openmax-version-stable "git master">
 <!ENTITY gst-python-version-stable "git master">
 <!ENTITY gstreamer-sharp-version-stable "0.9.2">
@@ -18,11 +18,11 @@
 <!ENTITY gst-android-version-stable "git master">
 <!ENTITY gst-omx-version-stable "1.0.0">
 
-<!ENTITY gst-version-devel "1.1.4">
-<!ENTITY gst-plugins-base-version-devel "1.1.4">
-<!ENTITY gst-plugins-good-version-devel "1.1.4">
-<!ENTITY gst-plugins-ugly-version-devel "1.1.4">
-<!ENTITY gst-plugins-bad-version-devel "1.1.4">
+<!ENTITY gst-version-devel "git master">
+<!ENTITY gst-plugins-base-version-devel "git master">
+<!ENTITY gst-plugins-good-version-devel "git master">
+<!ENTITY gst-plugins-ugly-version-devel "git master">
+<!ENTITY gst-plugins-bad-version-devel "git master">
 <!ENTITY gst-plugins-gl-version-devel "git master">
 <!ENTITY gst-rtsp-server-version-devel "git master">
 <!ENTITY gst-streaming-server-version-devel "git master">
@@ -32,7 +32,7 @@
 <!ENTITY gst-omx-version-devel "git master">
 
 <!ENTITY gst-ffmpeg-version-devel "git master">
-<!ENTITY gst-libav-version-devel "1.1.4">
+<!ENTITY gst-libav-version-devel "git master">
 <!ENTITY gst-openmax-version-devel "git master">
 <!ENTITY gst-python-version-devel "git master">
 <!ENTITY gstreamer-sharp-version-devel "git master">
