@@ -30,8 +30,8 @@ the manual and the slides to get a general overview and to get you started.</p>
 <!-- FIXME: dotplan back in action or not ? -->
 
 <p>The developers tend to live in IRC on <a href="http://www.freenode.net/">Freenode</a>, in
-<a href="irc://irc.freenode.net/gstreamer">#gstreamer</a>. Sketching ideas and making plans can be done on the
-<a href="http://gstreamer.freedesktop.org/wiki">gstreamer wiki</a>.
+<a href="irc://irc.freenode.net/gstreamer">#gstreamer</a>. <!-- Sketching ideas and making plans can be done on the
+<a href="http://gstreamer.freedesktop.org/wiki">gstreamer wiki</a>. -->
 </p>
                                                                                 
 <H1>Git access</H1>
@@ -83,16 +83,21 @@ page on the wiki.
 </p>
 <p>
 Developers will be added to the project for write access as necessary.
-For all other changes, please submit patches (<code>git diff</code>) to <A HREF="http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">bugzilla</A> or
-send it to the <A HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-devel">gstreamer-devel list</A>.
+For all other changes, please submit patches (in <code>git format-patch</code>)
+format to <A HREF="http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">bugzilla</A>.
+File a new bug and then attach the patch to the bug.
+
+<!-- or send it to the <A HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-devel">gstreamer-devel list</A>. -->
 </p>
 
+<!--
 <h2>Developer Guidelines</h2>
 
 <p>Best practices for making patches and/or committing to GStreamer git can
 be found on the <a href="http://gstreamer.freedesktop.org/wiki/GitDeveloperGuidelines">GitDeveloperGuidelines</a>
 wiki page.
 </p>
+-->
 
 <!--
 <H1>Buildbots</H1>
