@@ -5564,4 +5564,44 @@ Thanks to our partners at <a href="http://www.ubicast.eu/">Ubicast</a> the recor
     </content>
   </item>
 
+  <item>
+      <date>2013-12-27 12:00</date>
+        <title>GStreamer Core and Plugins 1.2.2 stable release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce a new release of the stable
+1.2 release series. The 1.2 release series is adding new features on top
+of the 1.0 series and is part of the API and ABI-stable 1.x release series of the GStreamer multimedia framework that contains new features.
+        </p><p>
+Binaries for Android, iOS, OS X and Windows are also provided.
+        </p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.2.2.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.2.2.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.2.2.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.2.2.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.2.2.html">gst-plugins-bad</a>, or
+<a href="&site;/releases/gst-libav/1.2.2.html">gst-libav</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.2.2.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.2.2.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.2.2.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.2.2.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.2.2.tar.xz">gst-plugins-bad</a>, or
+<a href="&site;/src/gst-libav/gst-libav-1.2.2.tar.xz">gst-libav</a>,
+        </p>
+        <p>
+	Check the <a href="http://lists.freedesktop.org/archives/gstreamer-devel/2013-December/045238.html">release announcement mail</a> for details
+	and the release notes above for a list of changes.
+        </p>
+        <p>
+        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.2.2/">Android</a>,
+	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.2.2/">iOS</a>,
+	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.2.2/">Mac OS X</a> and
+	<a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.2.2/">Windows</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
