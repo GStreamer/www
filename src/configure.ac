@@ -1,8 +1,8 @@
 dnl on commits of this file autogen.sh will be rerun online
-AC_INIT
-AM_INIT_AUTOMAKE(gstreamer-www, 0.0)
+AC_INIT([gstreamer-www], [0.0])
+AM_INIT_AUTOMAKE
 
-AC_OUTPUT([
+AC_CONFIG_FILES([
 Makefile
 htdocs/Makefile
 htdocs/artwork/Makefile
@@ -43,3 +43,4 @@ htdocs/releases/gstreamer-sharp/Makefile
 htdocs/releases/gnonlin/Makefile
 htdocs/releases/gst-omx/Makefile
 ])
+AC_OUTPUT
