@@ -1,15 +1,15 @@
-<!ENTITY gst-version-stable "1.2.1">
-<!ENTITY gst-plugins-base-version-stable "1.2.1">
-<!ENTITY gst-plugins-good-version-stable "1.2.1">
-<!ENTITY gst-plugins-ugly-version-stable "1.2.1">
-<!ENTITY gst-plugins-bad-version-stable "1.2.1">
+<!ENTITY gst-version-stable "1.2.2">
+<!ENTITY gst-plugins-base-version-stable "1.2.2">
+<!ENTITY gst-plugins-good-version-stable "1.2.2">
+<!ENTITY gst-plugins-ugly-version-stable "1.2.2">
+<!ENTITY gst-plugins-bad-version-stable "1.2.2">
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.13">
-<!ENTITY gst-libav-version-stable "1.2.1">
+<!ENTITY gst-libav-version-stable "1.2.2">
 <!ENTITY gst-openmax-version-stable "git master">
 <!ENTITY gst-python-version-stable "git master">
-<!ENTITY gstreamer-sharp-version-stable "0.9.2">
-<!ENTITY gst-plugins-gl-version-stable "0.10.2">
+<!ENTITY gstreamer-sharp-version-stable "git master">
+<!ENTITY gst-plugins-gl-version-stable "git master">
 <!ENTITY gst-rtsp-server-version-stable "git master">
 <!ENTITY gst-streaming-server-version-stable "git master">
 <!ENTITY gnonlin-version-stable "git master">
