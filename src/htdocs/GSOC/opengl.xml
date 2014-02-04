@@ -163,7 +163,7 @@ with a GL and software implementations
 <p>
 If the application does not use glimagesink then the application would just require to implement the navigation interface and it will have an overlay control for free.
 </p>
-<h2>Project idea 3: accelerated video decoding on Windows + make gst-gl compatible with DirectX ( gl texture <-> dx surface)</h2>
+<h2>Project idea 3: accelerated video decoding on Windows + make gst-gl compatible with DirectX ( gl texture to dx surface)</h2>
 <p>
 goal:
 </p>
