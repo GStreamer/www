@@ -38,8 +38,8 @@ So here are some ideas I would like to suggest for GSoC 2014 in order to make gs
 I have spend time (not equaly though) on each item to have a bit more than an initial idea. 
 But if you decide to propose them (or just some of them) it would require to provide a more complete description for some of the ideas. And also because one person can only be the mentor of one project (isn't it ?). But I'm sure we can find guys that would be interested to be a mentor. I do not think we will find a student for every ideas but why not ? :) Generally anything related to OpenGL attract people.
 </p>
-<ol>
-<li>make external sink(s) compatible with gst-gl
+
+<h2>Project idea 1: make external sink(s) compatible with gst-gl</h2>
 <p>
 external gl sink = clutter (cluttersink/coglsink), cairo (cairosink), Qt (qtglvideosink), webkit (webkitvideosink), [not sure about SDL (sdlvideosink) because it only support GstVideoOverlay so no interest vs glimagesink, I mean sdlvideosink is not relied on the SDL Application as it's the case for others]
 </p>
@@ -149,8 +149,8 @@ external_sink_query (GstQuery * query)
   }
 }
 </code>
-</li>
-<li>new glcontrol element
+
+<h2>Project idea 2: New glcontrol element</h2>
 <p>
 video overlay control that we can see in webkit when you put the mouse over the rendering area (play/pause, position bar, volume) which would be usable through the navigation interface.
 https://bugzilla.gnome.org/show_bug.cgi?id=703486
@@ -163,7 +163,7 @@ with a GL and software implementations
 <p>
 If the application does not use glimagesink then the application would just require to implement the navigation interface and it will have an overlay control for free.
 </p>
-<li>accelerated video decoding on Windows + make gst-gl compatible with DirectX ( gl texture <-> dx surface)</li>
+<h2>Project idea 3: accelerated video decoding on Windows + make gst-gl compatible with DirectX ( gl texture <-> dx surface)</h2>
 <p>
 goal:
 </p>
@@ -194,7 +194,7 @@ So that every dx element could use it
 
 - Start from d3dvideosink. And then implement a new dx element (of its choice)
 </p>
-<li>implement a new element eglimagetrans:</li>
+<h2>Project idea 4: implement a new element eglimagetrans:</h2>
 <p>
 goal:
 </p>
@@ -228,8 +228,8 @@ other info: https://bugzilla.gnome.org/show_bug.cgi?id=703343
 - different pool, then it wraps 
 The purpose here it that the doswstream element knows what to do with the eglimage
 </p>
-</li>
-<li>port libvisual_gl gstgl element to gst-1.0 and then to GLES2
+
+<h2>Project idea 5: port libvisual_gl gstgl element to gst-1.0 and then to GLES2</h2>
 <p>
 goal: efficient gstreamer audio visualizer on embedded platforms
 </p>
@@ -240,7 +240,8 @@ Does it exist any other opensource audio visualizer API that support GL ?
 <p>
 +extra work: port other elements to GLES2 (starting from gleffects which is already ported but not completely (the basis is ported but not all effects) )
 </p>
-<li>implement new KTX texture file parser</li>
+
+<h2>Project idea 6: implement new KTX texture file parser</h2>
 <p>
 goal:
 </p>
@@ -271,8 +272,8 @@ next: gst-launch-1.0 gloverlay name=ov   videotestsrc ! gleffects ! ov ! glimage
 Improve GstGLFilter base class or new for the one additional pad or use GstGLMixer ?
 Through glvideomixer (https://bugzilla.gnome.org/show_bug.cgi?id=710714)
 </p>
-</li>
-<li>: make gst-gl support subtitles
+
+<h2>Project idea 7: make gst-gl support subtitles</h2>
 <p>
 GL Fonts drawing:  filesrc location=text.srt ! subparse ! text/x-raw ! glfonts ! Glimagesink
 Use FTGL https://sourceforge.net/projects/ftgl/files/ ?
@@ -284,8 +285,8 @@ So improve gloverlay or glvideomixer:
 http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstvideooverlaycomposition.html
 - cairo/pango is GL font ? so is textoverlay re-usable to support GL fonts ?
 </p>
-</li>
-<li>make gst-gl compatible with gstreamer Python binding
+
+<h2>Project idea 8 :make gst-gl compatible with gstreamer Python binding</h2>
 <p>
 goal: use a gltexture that comes from gst-gl into a python application
 that uses pypoengl: http://pyopengl.sourceforge.net/context/tutorials/index.xhtml
@@ -293,8 +294,8 @@ that uses pypoengl: http://pyopengl.sourceforge.net/context/tutorials/index.xhtm
 <p>
 It also would be a base for other bindings (JAVA, JS/WebGL)
 </p>
-</li>
-<li>add supports for glCompressedTexImage2D
+
+<h2>Project idea 9: add supports for glCompressedTexImage2D</h2>
 <p>
 make it more generic like GstGLUpload/Download API
 and in new elements gldec/glenc ?
@@ -303,8 +304,8 @@ and in new elements gldec/glenc ?
 http://www.opengl.org/sdk/docs/man/xhtml/glCompressedTexImage2D.xml
 http://withimagination.imgtec.com/index.php/powervr/pvrtc-the-most-efficient-texture-compression-standard-for-the-mobile-graphics-world
 </p>
-</li>
-<li>glfakevideodec
+
+<h2>Project idea 10: glfakevideodec</h2>
 <p>
 I have started a fakevideodec element in a branch. It's useful when you have a new embedded platform and you want to know what would be the perf (or start enable zerocopy) if you had a hardware decoder. (without adding extra CPU usage)
 videotestsrc is not really usable on embedded like RPI, I mean it uses so much CPU so not really useful to identify what would be the best FPS. Also fpsdisplaysink uses textoverlay for the visual fps information. When you want a visual information and not a console info.
@@ -329,7 +330,5 @@ Also this work could be factorize to make it usable from gltestsrc or videotests
 If GLFont is efficient it would be perfect.
 Also maybe re-use what is done in fpsdisplaysink and make it use the gstvideooverlaycomposition API
 </p>
-</li>
-</ol>
 </body>
 </page>
