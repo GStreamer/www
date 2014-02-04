@@ -22,11 +22,12 @@ The list below is just some suggestions made by various members of the GStreamer
 <ul><li>plugins</li>
 
 <ul>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/WebP">WebP</a> : Project to create a decoder and encoder for WebP image format</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/PluginsForEditing">PluginsForEditing</a>: Wrapping much-needed audio/video filters as gstreamer plugins.</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/SrtpSupport">SrtpSupport</a>: Write plugins to support sRTP (and maybe zRTP)</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/zrtpSupport">zrtpSupport</a>: Write plugins to support zRTP</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/ChapterSupport">ChapterSupport</a>: Implement chapter support in more plugins</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/OpencvGestureDetection">OpencvGestureDetection</a> : Implement an opencv plugin for gesture detection (eg: hand gesture)</li>
+<li><a href="http://wiki.webmproject.org/adaptive-streaming/webm-dash-specification">DASH WebM support</a>: Implement a plugin to do WebM DASH streaming</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/subtitles">Improved Subtitle support</a> : Work on subtitle support in Muxers and Encodebin</li>
 </ul>
 <li>applications</li>
 <ul><li><a href="http://gstreamer.freedesktop.org/GSOC/Pitivi">Pitivi</a>: Improve Pitivi</li>
@@ -41,7 +42,6 @@ The list below is just some suggestions made by various members of the GStreamer
 <ul>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/SocProjects/GStreamerLua">Gstreamer-Lua</a> : Gstreamer Lua binding enhancement</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/RobinHorvath/Gstreamer-java_enhancement">Gstreamer-Java enhancement</a> : GStreamer Java binding enhancement, GStreamer and GStreamer-Java Mac OS and Windows port</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/GStreamerSharp">gstreamer-sharp</a> : Finish/improve the GStreamer C# bindings</li>
 <li>Port GStreamer applications and/or plugins from 0.10 to 0.11/1.0</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/RolandElek/AutomaticLowLevelJavaBindingGeneration">Automatic low-level Java binding generation</a> : Automatically generate the low-level layer of gstreamer-java</li>
 </ul>
