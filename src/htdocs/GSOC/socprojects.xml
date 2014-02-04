@@ -27,8 +27,9 @@ The list below is just some suggestions made by various members of the GStreamer
 <li><a href="http://gstreamer.freedesktop.org/GSOC/ChapterSupport">ChapterSupport</a>: Implement chapter support in more plugins</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/OpencvGestureDetection">OpencvGestureDetection</a> : Implement an opencv plugin for gesture detection (eg: hand gesture)</li>
 <li><a href="http://wiki.webmproject.org/adaptive-streaming/webm-dash-specification">DASH WebM support</a>: Implement a plugin to do WebM DASH streaming</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/subtitles">Improved Subtitle support</a> : Work on subtitle support in Muxers and Encodebin</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/subtitles">Improved Subtitle support</a> : Work on subtitle support in Muxers</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/opengl.html">GStreamer &amp; OpenGL</a> : Project ideas for improving OpenGL support in GStreamer</li> 
+<li><a href="fixme">CoreAnimation plugin for Apple platforms</a> : CoreAnimation video sink (also useful for iOS)</li>
 </ul>
 <li>applications</li>
 <ul><li><a href="http://gstreamer.freedesktop.org/GSOC/Pitivi">Pitivi</a>: Improve Pitivi</li>
@@ -38,6 +39,7 @@ The list below is just some suggestions made by various members of the GStreamer
 <ul><li><a href="http://gstreamer.freedesktop.org/GSOC/Closed_Captioning_support">Closed_Captioning_support</a>: Subtitles for the hearing impaired</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/TamasKorodi/IVC_multichannel_grabber_card_support">Multichannel_grabber_card_support</a> : Multichannel video grabber card support and more baseclasses</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/GeneratedFormatTestdata">GeneratedFormatTestdata</a>: Generate robustness testdata for demuxer/parser tests</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/orc.html">Orc Acceleration</a>: Extend use of the Orc optimizations in GStreamer</li>
 </ul>
 <li>bindings</li>
 <ul>
