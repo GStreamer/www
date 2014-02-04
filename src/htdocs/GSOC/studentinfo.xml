@@ -7,7 +7,9 @@
 
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
-<title>GStreamer Google Summer of Code Student Information</title></head>
+<head>
+<title>GStreamer Google Summer of Code Student Information</title>
+</head>
 <body>
 <H1>StudentInfo</h1>
 <h2>How to write the Application</h2>
