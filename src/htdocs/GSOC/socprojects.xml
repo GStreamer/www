@@ -20,21 +20,23 @@ The list below is just some suggestions made by various members of the GStreamer
 
 <h1>List of Summer of Code project ideas for students</h1>
 <ul><li>plugins</li>
-<ul><li><a href="http://gstreamer.freedesktop.org/GSOC/WebP">WebP</a> : Project to create a decoder and encoder for WebP image format</li>
+
+<ul>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/WebP">WebP</a> : Project to create a decoder and encoder for WebP image format</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/PluginsForEditing">PluginsForEditing</a>: Wrapping much-needed audio/video filters as gstreamer plugins.</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/SrtpSupport">SrtpSupport</a>: Write plugins to support sRTP (and maybe zRTP)</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/ChapterSupport">ChapterSupport</a>: Implement chapter support in more plugins</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/OpencvGestureDetection">OpencvGestureDetection</a> : Implement an opencv plugin for gesture detection (eg: hand gesture)</li>
-</ul></li>
+</ul>
 <li>applications</li>
 <ul><li><a href="http://gstreamer.freedesktop.org/GSOC/Pitivi">Pitivi</a>: Improve Pitivi</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/Buzztard">Buzztard</a>: Improve Buzztard</li>
-</ul></li>
+</ul>
 <li>framework</li>
 <ul><li><a href="http://gstreamer.freedesktop.org/GSOC/Closed_Captioning_support">Closed_Captioning_support</a>: Subtitles for the hearing impaired</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/TamasKorodi/IVC_multichannel_grabber_card_support">Multichannel_grabber_card_support</a> : Multichannel video grabber card support and more baseclasses</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/GeneratedFormatTestdata">GeneratedFormatTestdata</a>: Generate robustness testdata for demuxer/parser tests</li>
-</ul></li>
+</ul>
 <li>bindings</li>
 <ul>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/SocProjects/GStreamerLua">Gstreamer-Lua</a> : Gstreamer Lua binding enhancement</li>
@@ -42,7 +44,7 @@ The list below is just some suggestions made by various members of the GStreamer
 <li><a href="http://gstreamer.freedesktop.org/GSOC/GStreamerSharp">gstreamer-sharp</a> : Finish/improve the GStreamer C# bindings</li>
 <li>Port GStreamer applications and/or plugins from 0.10 to 0.11/1.0</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/RolandElek/AutomaticLowLevelJavaBindingGeneration">Automatic low-level Java binding generation</a> : Automatically generate the low-level layer of gstreamer-java</li>
-</ul></li>
+</ul>
 </ul>
 <p>We have a <a href="http://gstreamer.freedesktop.org/GSOC/PreviousSocProjets">list of previous projects</a> for reference. </p>
 
