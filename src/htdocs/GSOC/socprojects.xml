@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+<head>
+<title>GStreamer - SocProjects Idea</title>
+</head>
+
+<body lang="en">
+
+
+<p>
+The list below is just some suggestions made by various members of the GStreamer community. We are more than happy for students to make proposals based on their own wishes and ideas instead of using any of these suggestions. The important part for us is that you are motivated and that you put good work into writing a good and detailed proposal and that you try to interact with us from the start. Try to early find a possible mentor and shape your proposal (e.g. using Google docs). When writing the proposal, be sure to describe what you will deliver, how this is useful and include a rough timeline how you plan to get there. Please include useful references (links to projects you worked on in the past, online references for code you wrote (create an account on <a class="http" href="http://ohloh.net/">ohloh</a> and add your contributions), links to specifications you want to implement, ...) - anything that helps to understand your proposal is well researched and you suited to achieve the goals by the end of the summer. If you do that then any kind of project you can think of using GStreamer has a good chance of being selected. 
+</p>
+
+<h1>List of Summer of Code project ideas for students</h1>
+<ul><li>plugins</li>
+<ul><li><a href="http://gstreamer.freedesktop.org/GSOC/WebP">WebP</a> : Project to create a decoder and encoder for WebP image format</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/PluginsForEditing">PluginsForEditing</a>: Wrapping much-needed audio/video filters as gstreamer plugins.</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/SrtpSupport">SrtpSupport</a>: Write plugins to support sRTP (and maybe zRTP)</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/ChapterSupport">ChapterSupport</a>: Implement chapter support in more plugins</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/OpencvGestureDetection">OpencvGestureDetection</a> : Implement an opencv plugin for gesture detection (eg: hand gesture)</li>
+</ul></li>
+<li>applications</li>
+<ul><li><a href="http://gstreamer.freedesktop.org/GSOC/Pitivi">Pitivi</a>: Improve Pitivi</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/Buzztard">Buzztard</a>: Improve Buzztard</li>
+</ul></li>
+<li>framework</li>
+<ul><li><a href="http://gstreamer.freedesktop.org/GSOC/Closed_Captioning_support">Closed_Captioning_support</a>: Subtitles for the hearing impaired</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/TamasKorodi/IVC_multichannel_grabber_card_support">Multichannel_grabber_card_support</a> : Multichannel video grabber card support and more baseclasses</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/GeneratedFormatTestdata">GeneratedFormatTestdata</a>: Generate robustness testdata for demuxer/parser tests</li>
+</ul></li>
+<li>bindings</li>
+<ul>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/SocProjects/GStreamerLua">Gstreamer-Lua</a> : Gstreamer Lua binding enhancement</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/RobinHorvath/Gstreamer-java_enhancement">Gstreamer-Java enhancement</a> : GStreamer Java binding enhancement, GStreamer and GStreamer-Java Mac OS and Windows port</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/GStreamerSharp">gstreamer-sharp</a> : Finish/improve the GStreamer C# bindings</li>
+<li>Port GStreamer applications and/or plugins from 0.10 to 0.11/1.0</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/RolandElek/AutomaticLowLevelJavaBindingGeneration">Automatic low-level Java binding generation</a> : Automatically generate the low-level layer of gstreamer-java</li>
+</ul></li>
+</ul>
+<p>We have a <a href="http://gstreamer.freedesktop.org/GSOC/PreviousSocProjets">list of previous projects</a> for reference. </p>
+
+<h1 id="Other_Organizations">Other Organizations</h1>
+<p>Other organizations that have project ideas related to GStreamer:</p>
+<ul><li><a href="http://live.gnome.org/SummerOfCode2012/Ideas">http://live.gnome.org/SummerOfCode2014/Ideas</a></li>
+<li><a href="http://community.kde.org/GSoC/2012/Ideas">http://community.kde.org/GSoC/2014/Ideas</a></li>
+</ul>
+</body></page>

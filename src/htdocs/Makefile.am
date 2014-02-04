@@ -1,6 +1,6 @@
 SUBDIRS = apps bindings bugs dev documentation download images \
 	lists modules news releases conference \
-	features \
+	features GSOC \
 	planet artwork
 
 built_pages = index.html

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer Google Summer of Code 2014</title>
+
+  <body>
+
+<h1>GStreamer Google Summer of Code 2014</h1>
+
+<p>
+
+<table>
+<p>
+Welcome to the GStreamer Google Summer of Code 2014. These pages will provide you with some general information about how to apply, some ideas we have, how to pitch your own ideas and how to write a GSoC application that is likely to get accepted.
+</p>
+<a href="studentinfo.html">General information for students interesting in participating</a>
+</p>
+<p>
+<a href="http://socprojects.html">Project Suggestions</a>
+</p>
+
+</body>
+</page>
