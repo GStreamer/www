@@ -11,7 +11,7 @@
 <title>GStreamer Google Summer of Code Student Information</title>
 </head>
 <body>
-<H1>StudentInfo</h1>
+<h1>StudentInfo</h1>
 <h2>How to write the Application</h2>
 <p>
 Once the students applications period has opened, you have to submit your application on Google's Summer of Code website. Your application must be written in English. It should contain a detailed description of your project proposal. There are some ideas on this wiki for various projects, but be aware that it is perfectly fine for you to propose a project of your own instead. The important part is to start talking with people in the GStreamer community about it as soon as possible and get some feedback. Once you write your proposal you should consider answering questions such as:
