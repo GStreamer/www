@@ -22,10 +22,10 @@ The list below is just some suggestions made by various members of the GStreamer
 <ul><li>plugins</li>
 
 <ul>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/PluginsForEditing">PluginsForEditing</a>: Wrapping much-needed audio/video filters as gstreamer plugins.</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/zrtpSupport">zrtpSupport</a>: Write plugins to support zRTP</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/ChapterSupport">ChapterSupport</a>: Implement chapter support in more plugins</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/OpencvGestureDetection">OpencvGestureDetection</a> : Implement an opencv plugin for gesture detection (eg: hand gesture)</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/PluginsForEditing">Editing Plugins</a>: Wrapping much-needed audio/video filters as gstreamer plugins.</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/zrtpSupport">zrtp Support</a>: Write plugins to support zRTP</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/ChapterSupport">Chapter Support</a>: Implement chapter support in more plugins</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/OpencvGestureDetection">OpenCV Gesture Detection</a> : Implement an opencv plugin for gesture detection (eg: hand gesture)</li>
 <li><a href="http://wiki.webmproject.org/adaptive-streaming/webm-dash-specification">DASH WebM support</a>: Implement a plugin to do WebM DASH streaming</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/subtitles">Improved Subtitle support</a> : Work on subtitle support in Muxers</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/opengl.html">GStreamer &amp; OpenGL</a> : Project ideas for improving OpenGL support in GStreamer</li> 
@@ -47,9 +47,9 @@ The list below is just some suggestions made by various members of the GStreamer
 <li><a href="http://gstreamer.freedesktop.org/GSOC/RobinHorvath/Gstreamer-java_enhancement">Gstreamer-Java enhancement</a> : GStreamer Java binding enhancement, GStreamer and GStreamer-Java Mac OS and Windows port</li>
 <li>Port GStreamer applications and/or plugins from 0.10 to 0.11/1.0</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/RolandElek/AutomaticLowLevelJavaBindingGeneration">Automatic low-level Java binding generation</a> : Automatically generate the low-level layer of gstreamer-java</li>
+<li><a href="fixme">JavaScript bindings</a> : Since GNOME picked JavaScript as a preferred language for desktop apps, it would be good to have someone verify that it works with GStreamer and write some sample apps and tutorials.</li>
 </ul>
 </ul>
-<p>We have a <a href="http://gstreamer.freedesktop.org/GSOC/PreviousSocProjets">list of previous projects</a> for reference. </p>
 
 <h1 id="Other_Organizations">Other Organizations</h1>
 <p>Other organizations that have project ideas related to GStreamer:</p>
