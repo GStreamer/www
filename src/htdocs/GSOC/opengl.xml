@@ -44,6 +44,7 @@ But if you decide to propose them (or just some of them) it would require to pro
 <p>
 external gl sink = clutter (cluttersink/coglsink), cairo (cairosink), Qt (qtglvideosink), webkit (webkitvideosink), [not sure about SDL (sdlvideosink) because it only support GstVideoOverlay so no interest vs glimagesink, I mean sdlvideosink is not relied on the SDL Application as it's the case for others]
 </p>
+<p>
 goal: make it possible to use gl textures that come from gst-gl elements with gl application
 Often the application does not use the GstVideoOverlay path. Instead they use their own video sink
 which connects directly with their API (which also wrap GL)
