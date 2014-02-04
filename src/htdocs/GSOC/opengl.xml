@@ -144,7 +144,7 @@ external_sink_query (GstQuery * query)
 {
   switch (GST_QUERY_TYPE (query)) {
     case GST_QUERY_CONTEXT:
-      return gst_gl_handle_context_query (sink, query, &sink->display);
+      return gst_gl_handle_context_query (sink, query, &amp;sink->display);
       break;
   }
 }
@@ -324,6 +324,6 @@ Also this work could be factorize to make it usable from gltestsrc or videotests
 If GLFont is efficient it would be perfect.
 Also maybe re-use what is done in fpsdisplaysink and make it use the gstvideooverlaycomposition API
 </p>
-
+</ol>
 </body>
 </page>
