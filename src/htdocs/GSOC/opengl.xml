@@ -7,34 +7,41 @@
 
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
+<head>
   <title>GStreamer Google Summer of Code OpenGL ideas</title>
-
+</head>
 <body>
-
 <h1>GStreamer Google Summer of Code OpenGL ideas</h1>
 
 <p>
 <quot>gst-gl is fun but are those elements really useful and what for ?</quot>
 </p>
+
 <p>
 gst-gl has always been a bit aside from the rest of others plugins. The plugins are not well understood because the gl elements are not very useful except a few of them. And even those gl elements are not easily pluggable in to an application.
 </p>
+
 <p>
 The two most important gl elements are glimagesink and gleffects.
 </p>
+
 <p>
 I think glimagesink has the potential to be the primary gstreamer video sink element on any platform. But I also think that a lof of applications are not using the GstVideoOverlay interface and prefer to use cluttersink (ex: totem, pitivi, cheese). So in the end there is not so much interest for it.
 </p>
+
 <p>
 Also gleffects (GSoC_2008) could has been very fun in gnome-Cheese but it has never been integrated officialy because the Cheese application does not use the GstVideoOverlay inteface. It uses cluttersink.
 </p>
+
 <p>
 Moreover, applications generally just would like to be able to use the gltexture that come from gst-gl and use it to do whatever they would like to do with it. 
 There were several attempts with cluttershare.c, sdlshare.c, qtgltextureshare, examples. They work but it's not easy for the user.
 </p>
+
 <p>
 So here are some ideas I would like to suggest for GSoC 2014 in order to make gst-plugins-gl more useful because I think it really could be useful :) which I admit this is not the case right now.
 </p>
+
 <p>
 I have spend time (not equaly though) on each item to have a bit more than an initial idea. 
 But if you decide to propose them (or just some of them) it would require to provide a more complete description for some of the ideas. And also because one person can only be the mentor of one project (isn't it ?). But I'm sure we can find guys that would be interested to be a mentor. I do not think we will find a student for every ideas but why not ? :) Generally anything related to OpenGL attract people.
@@ -44,18 +51,22 @@ But if you decide to propose them (or just some of them) it would require to pro
 <p>
 external gl sink = clutter (cluttersink/coglsink), cairo (cairosink), Qt (qtglvideosink), webkit (webkitvideosink), [not sure about SDL (sdlvideosink) because it only support GstVideoOverlay so no interest vs glimagesink, I mean sdlvideosink is not relied on the SDL Application as it's the case for others]
 </p>
+
 <p>
 goal: make it possible to use gl textures that come from gst-gl elements with gl application
 Often the application does not use the GstVideoOverlay path. Instead they use their own video sink
 which connects directly with their API (which also wrap GL)
 </p>
+
 <code>
 gst-launch-1.0 videotestsrc ! gleffects ! cluttersink
 gst-launch-1.0 playbin uri=foo video-sink="gleffects ! cluttersink"
 </code>
+
 <p>
 It will allow to make gst-gl more friendly to the real world.
 </p>
+
 <p>
 We have almost everything in gst-gl to do that.
 We still need to make an API to create a GstGLContext type
@@ -63,6 +74,7 @@ from an external GL context (ex: EGLContext, GLXContext ...)
 Today gst-gl already manages how to do gl context sharing.
 But it just lacks of real world usage.
 </p>
+
 <p>
 The following lines roughly describes what to do in those external sink(s):
 </p>
@@ -327,6 +339,7 @@ So I think having a glfakevideodec could be useful too. We could generate a more
 Like a kind of pre-made grid line:  0-------5-------10------15------25-------....
 And a sprite showing where is the current FPS
 </p>
+<p>
 Also this work could be factorize to make it usable from gltestsrc or videotestsrc. But in real cases the user just want to use playbin so that you actually want to replace the video decoder.
 
 If GLFont is efficient it would be perfect.
