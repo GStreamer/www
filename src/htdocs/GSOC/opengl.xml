@@ -39,7 +39,7 @@ I have spend time (not equaly though) on each item to have a bit more than an in
 But if you decide to propose them (or just some of them) it would require to provide a more complete description for some of the ideas. And also because one person can only be the mentor of one project (isn't it ?). But I'm sure we can find guys that would be interested to be a mentor. I do not think we will find a student for every ideas but why not ? :) Generally anything related to OpenGL attract people.
 </p>
 <ol>
-li>make external sink(s) compatible with gst-gl</li>
+<li>make external sink(s) compatible with gst-gl</li>
 <p>
 external gl sink = clutter (cluttersink/coglsink), cairo (cairosink), Qt (qtglvideosink), webkit (webkitvideosink), [not sure about SDL (sdlvideosink) because it only support GstVideoOverlay so no interest vs glimagesink, I mean sdlvideosink is not relied on the SDL Application as it's the case for others]
 </p>
