@@ -15,6 +15,7 @@
 
 <p>
 <quot>gst-gl is fun but are those elements really useful and what for ?</quot>
+</p>
 <p>
 gst-gl has always been a bit aside from the rest of others plugins. The plugins are not well understood because the gl elements are not very useful except a few of them. And even those gl elements are not easily pluggable in to an application.
 </p>
