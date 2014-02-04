@@ -42,5 +42,6 @@ htdocs/releases/gstreamer/Makefile
 htdocs/releases/gstreamer-sharp/Makefile
 htdocs/releases/gnonlin/Makefile
 htdocs/releases/gst-omx/Makefile
+htdocs/GSOC/Makefile
 ])
 AC_OUTPUT
