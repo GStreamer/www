@@ -14,201 +14,70 @@
 <h1>GStreamer Google Summer of Code OpenGL ideas</h1>
 
 <p>
-<quot>gst-gl is fun but are those elements really useful and what for ?</quot>
+<quot>The following ideas aim to improve gst-plugins-gl to make it more pluggable with real world applications</quot>
 </p>
 
-<p>
-gst-gl has always been a bit aside from the rest of others plugins. The plugins are not well understood because the gl elements are not very useful except a few of them. And even those gl elements are not easily pluggable in to an application.
-</p>
-
-<p>
-The two most important gl elements are glimagesink and gleffects.
-</p>
-
-<p>
-I think glimagesink has the potential to be the primary gstreamer video sink element on any platform. But I also think that a lof of applications are not using the GstVideoOverlay interface and prefer to use cluttersink (ex: totem, pitivi, cheese). So in the end there is not so much interest for it.
-</p>
-
-<p>
-Also gleffects (GSoC_2008) could has been very fun in gnome-Cheese but it has never been integrated officialy because the Cheese application does not use the GstVideoOverlay inteface. It uses cluttersink.
-</p>
-
-<p>
-Moreover, applications generally just would like to be able to use the gltexture that come from gst-gl and use it to do whatever they would like to do with it. 
-There were several attempts with cluttershare.c, sdlshare.c, qtgltextureshare, examples. They work but it's not easy for the user.
-</p>
-
-<p>
-So here are some ideas I would like to suggest for GSoC 2014 in order to make gst-plugins-gl more useful because I think it really could be useful :) which I admit this is not the case right now.
-</p>
-
-<p>
-I have spend time (not equaly though) on each item to have a bit more than an initial idea. 
-But if you decide to propose them (or just some of them) it would require to provide a more complete description for some of the ideas. And also because one person can only be the mentor of one project (isn't it ?). But I'm sure we can find guys that would be interested to be a mentor. I do not think we will find a student for every ideas but why not ? :) Generally anything related to OpenGL attract people.
-</p>
 
 <h2>Project idea 1: make external sink(s) compatible with gst-gl</h2>
 <p>
-external gl sink = clutter (cluttersink/coglsink), cairo (cairosink), Qt (qtglvideosink), webkit (webkitvideosink), [not sure about SDL (sdlvideosink) because it only support GstVideoOverlay so no interest vs glimagesink, I mean sdlvideosink is not relied on the SDL Application as it's the case for others]
+external gl sink = clutter (cluttersink/coglsink), cairo (cairosink), Qt (qtglvideosink), webkit (webkitvideosink)
 </p>
 
 <p>
-goal: make it possible to use gl textures that come from gst-gl elements with gl application
-Often the application does not use the GstVideoOverlay path. Instead they use their own video sink
-which connects directly with their API (which also wrap GL)
+Applications generally just would like to be able to use the gltexture that come from gst-gl and use it to do whatever they would like to do with it.
+There were several attempts with cluttershare.c, sdlshare.c, qtgltextureshare.c examples. Those demos work but it's not easy for the user.
+Also most of the time applications are not using the GstVideoOverlay interface and prefer to use a dedicated video sink. For example cluttersink in totem, pitivi and cheese.
 </p>
 
 <code>
+<p>
 gst-launch-1.0 videotestsrc ! gleffects ! cluttersink
+</p>
+<p>
 gst-launch-1.0 playbin uri=foo video-sink="gleffects ! cluttersink"
+</p>
 </code>
 
 <p>
-It will allow to make gst-gl more friendly to the real world.
+More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723674">here</a>
 </p>
 
+<h2>Project idea 2: new glcontrol element</h2>
 <p>
-We have almost everything in gst-gl to do that.
-We still need to make an API to create a GstGLContext type
-from an external GL context (ex: EGLContext, GLXContext ...)
-Today gst-gl already manages how to do gl context sharing.
-But it just lacks of real world usage.
+glcontrol draws controls (play/pause button, seek bar, volume, quality) into a separate gltexture and attach it to the input buffer's GstVideoOverlayCompositionMeta.
+Then a downstream element could call gst_video_overlay_composition_blend to show up the controls.
 </p>
 
-<p>
-The following lines roughly describes what to do in those external sink(s):
-</p>
 <code>
-/* the sink wraps the gl context that comes with the external API (clutter, etc ...)
- * and proposes it to the upstream gstgl element.
- * The gstgl element creates a new context when calling decide_allocation
- * and do sharing with the external gl context.
- * So that the textures that come from the gstgl element will be usable in
- * the external API.
- * Then if the external API directly uses GL API there is nothing special to do more.
- *
- * But for clutter we will need to call cogl_texture_new_from_foreign to wrap the
- * textures that come from the upstream gstgl element.
- * https://developer.gnome.org/cogl/stable/cogl-Textures.html#cogl-texture-new-from-foreign
- * For cairo we will have to call cairo_gl_surface_create_for_texture
- * http://cgit.freedesktop.org/cairo/tree/src/cairo-gl-surface.c#n658
- *
- * With webkit the mecanism will be a bit different, we will have to copy
- * the texture when calling the GstVideoGLTextureUpload callback:
-*http://trac.webkit.org/browser/trunk/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamerBase.cpp#L334
- *
- * Also the following draft my be added into a new gstreamer interface GstGLBridge
- */
-
-GstGLDisplay *sink->display = NULL;
-GstGLContext *sink->context = NULL;
-
-gboolean external_sink_wrap_gl_callback (gpointer data)
-{
-  GstExternalVideoSink *sink = data;
-
-  EGLContext eglcontext = eglGetCurrentContext ();
-  if (eglcontext == EGL_NO_CONTEXT) {
-    g_cond_signal (cond);
-    g_mutex_unlock (mutex);
-    return FALSE;
-  }
-
-  EGLDisplay egldisplay = eglGetCurrentDisplay ();
-  if (egldisplay == EGL_NO_DISPLAY) {
-    g_cond_signal (cond);
-    g_mutex_unlock (mutex);
-    return FALSE;
-  }
-
-  sink->display = gst_gl_display_new (egldisplay);
-  sink->context = gst_gl_context_new (eglcontext, sink->display);
-
-  g_cond_signal (cond);
-  g_mutex_unlock (mutex);
-  return FALSE;
-}
-
-external_sink_propose_allocation (GstBaseSink * sink, GstQuery* query)
-{
-  /* call our callback in the thread where webkit gl context lives
-   * here is an example for GLib API:
-   * for webkit it's the default main context (g_main_context_default)
-   * but if this is not the case for other external sinks we can use:
-   * g_timeout_source_new / g_source_set_funcs / g_source_attach
-   */
-  g_mutex_lock(mutex);
-  g_timeout_add_full (G_PRIORITY_DEFAULT, (interval) 0, external_sink_wrap_gl_callback, gst_object_ref (sink), gst_object_unref);
-  g_cond_wait(cond, mutex);
-
-
-  /* @"share": TRUE means that the upstream element has to create a new gl context
-   * and share with the external context
-   * It will be valid because when doing the sharing the new context has not
-   * yet created any texture and it's also valid if the external context
-   * has already created some textures */
-  s = gst_structure_new ("GstVideoGLTextureUploadMeta", "gst.gl.GstGLContext", GST_GL_TYPE_CONTEXT, sink->context, "share", G_TYPE_BOOLEAN, TRUE, NULL);
-  gst_query_add_allocation_meta (query, GST_VIDEO_GL_TEXTURE_UPLOAD_META_API_TYPE, s);
-}
-
-/* maybe the display needs to be retrieved sooner (= call external_sink_wrap_gl_callback sooner).
- * For example when going to ready state. Because the following query may be called
- * earlier then when calling propose_allocation */
-external_sink_query (GstQuery * query)
-{
-  switch (GST_QUERY_TYPE (query)) {
-    case GST_QUERY_CONTEXT:
-      return gst_gl_handle_context_query (sink, query, &amp;sink->display);
-      break;
-  }
-}
+gst-launch-1.0 playbin uri=foo video-sink="glcontrol ! glimagesink"
 </code>
 
-<h2>Project idea 2: New glcontrol element</h2>
 <p>
-video overlay control that we can see in webkit when you put the mouse over the rendering area (play/pause, position bar, volume) which would be usable through the navigation interface.
-https://bugzilla.gnome.org/show_bug.cgi?id=703486
+More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723680">here</a>
 </p>
-<p>
-glcontrol will propose several themes
-we can also imagine a GstBaseOverlayControl
-with a GL and software implementations
-</p>
-<p>
-If the application does not use glimagesink then the application would just require to implement the navigation interface and it will have an overlay control for free.
-</p>
-<h2>Project idea 3: accelerated video decoding on Windows + make gst-gl compatible with DirectX ( gl texture to dx surface)</h2>
-<p>
-goal:
-</p>
-<code>
-gst-launch-1.0 videotestsrc ! gleffects ! d3dvideosink
-gst-launch-1.0 videotestsrc ! gleffects ! dxvaenc ! h264parse ! ...
-gst-launch-1.0 videotestsrc ! gleffects ! dxvadeinterlace ! glimagesink
-gst-launch-1.0 ... ! dxvadec ! glimagesink
-gst-launch-1.0 ... ! dxvadec ! gleffects ! d3dvideosink
-</code>
-<p>
-(http://cgit.freedesktop.org/gstreamer/gst-plugins-bad/tree/sys/d3dvideosink)
-</p>
-<p>
-DXVA: http://en.wikipedia.org/wiki/DirectX_Video_Acceleration
-http://msdn.microsoft.com/en-us/library/windows/desktop/ee663582(v=vs.85).aspx
-http://msdn.microsoft.com/en-us/library/windows/desktop/ms694840(v=vs.85).aspx
-</p>
-<p>
-gl/dx interop: http://developer.download.nvidia.com/opengl/specs/WGL_NV_DX_interop.txt
-</p>
-<p>
-New API ? :
-GstVideoDXSurfaceUploadMeta
-GST_CAPS_FEATURE_META_GST_VIDEO_DX_SURFACE_UPLOAD_META
-With a default upload/download callback that just convert a gl texture to a dx surface ?
-So that every dx element could use it
 
-- Start from d3dvideosink. And then implement a new dx element (of its choice)
+<h2>Project idea 3: port libvisual_gl gstgl elements to gst-1.0 and then to GLES2</h2>
+
+<p>
+This would enable an efficient gstreamer audio visualizer on embedded platforms.
+This project is also open to use another opensource audio visualizer API that support GL.
 </p>
-<h2>Project idea 4: implement a new element eglimagetrans:</h2>
+
+<p>
+More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723681">here</a>
+</p>
+
+<h2>Project idea 4: make gst-gl compatible with gstreamer Python binding and pyopengl</h2>
+<p>
+Make it possible to use a gltexture that comes from gst-gl into a gstreamer python application that uses <a href="http://pyopengl.sourceforge.net/context/tutorials/index.xhtml">pypoengl</a>
+</p>
+
+<p>
+More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723683">here</a>
+</p>
+
+
+<h2>(TODO: cleanup) Project idea 5: implement a new element eglimagetrans:</h2>
 <p>
 goal:
 </p>
@@ -243,19 +112,62 @@ other info: https://bugzilla.gnome.org/show_bug.cgi?id=703343
 The purpose here it that the doswstream element knows what to do with the eglimage
 </p>
 
-<h2>Project idea 5: port libvisual_gl gstgl element to gst-1.0 and then to GLES2</h2>
+<h2>(TODO: cleanup) Project idea 6: make gst-gl support subtitles</h2>
 <p>
-goal: efficient gstreamer audio visualizer on embedded platforms
-</p>
-<p>
-I know libsual is compatible with GLESv1 but not sure about GLESv2 ?
-Does it exist any other opensource audio visualizer API that support GL ?
-</p>
-<p>
-+extra work: port other elements to GLES2 (starting from gleffects which is already ported but not completely (the basis is ported but not all effects) )
+GL Fonts drawing:  filesrc location=text.srt ! subparse ! text/x-raw ! glfonts ! Glimagesink
+Use FTGL https://sourceforge.net/projects/ftgl/files/ ?
+
+Like in “6” we would then have to compose the 2 textures (one from the video, one from glfonts)
+
+So improve gloverlay or glvideomixer:
+- use gstvideooverlaycomposition API
+http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstvideooverlaycomposition.html
+- cairo/pango is GL font ? so is textoverlay re-usable to support GL fonts ?
 </p>
 
-<h2>Project idea 6: implement new KTX texture file parser</h2>
+<h2>(TODO: cleanup) Project idea 7: accelerated video decoding on Windows + make gst-gl compatible with DirectX ( gl texture to dx surface)</h2>
+<p>
+goal:
+</p>
+<code>
+<p>
+gst-launch-1.0 videotestsrc ! gleffects ! d3dvideosink
+</p>
+<p>
+gst-launch-1.0 videotestsrc ! gleffects ! dxvaenc ! h264parse ! ...
+</p>
+<p>
+gst-launch-1.0 videotestsrc ! gleffects ! dxvadeinterlace ! glimagesink
+</p>
+<p>
+gst-launch-1.0 ... ! dxvadec ! glimagesink
+</p>
+<p>
+gst-launch-1.0 ... ! dxvadec ! gleffects ! d3dvideosink
+</p>
+</code>
+<p>
+(http://cgit.freedesktop.org/gstreamer/gst-plugins-bad/tree/sys/d3dvideosink)
+</p>
+<p>
+DXVA: http://en.wikipedia.org/wiki/DirectX_Video_Acceleration
+http://msdn.microsoft.com/en-us/library/windows/desktop/ee663582(v=vs.85).aspx
+http://msdn.microsoft.com/en-us/library/windows/desktop/ms694840(v=vs.85).aspx
+</p>
+<p>
+gl/dx interop: http://developer.download.nvidia.com/opengl/specs/WGL_NV_DX_interop.txt
+</p>
+<p>
+New API ? :
+GstVideoDXSurfaceUploadMeta
+GST_CAPS_FEATURE_META_GST_VIDEO_DX_SURFACE_UPLOAD_META
+With a default upload/download callback that just convert a gl texture to a dx surface ?
+So that every dx element could use it
+
+- Start from d3dvideosink. And then implement a new dx element (of its choice)
+</p>
+
+<h2>(TODO: cleanup) Project idea 8: implement new KTX texture file parser</h2>
 <p>
 goal:
 </p>
@@ -287,29 +199,8 @@ Improve GstGLFilter base class or new for the one additional pad or use GstGLMix
 Through glvideomixer (https://bugzilla.gnome.org/show_bug.cgi?id=710714)
 </p>
 
-<h2>Project idea 7: make gst-gl support subtitles</h2>
-<p>
-GL Fonts drawing:  filesrc location=text.srt ! subparse ! text/x-raw ! glfonts ! Glimagesink
-Use FTGL https://sourceforge.net/projects/ftgl/files/ ?
 
-Like in “6” we would then have to compose the 2 textures (one from the video, one from glfonts)
-
-So improve gloverlay or glvideomixer:
-- use gstvideooverlaycomposition API
-http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstvideooverlaycomposition.html
-- cairo/pango is GL font ? so is textoverlay re-usable to support GL fonts ?
-</p>
-
-<h2>Project idea 8 :make gst-gl compatible with gstreamer Python binding</h2>
-<p>
-goal: use a gltexture that comes from gst-gl into a python application
-that uses pypoengl: http://pyopengl.sourceforge.net/context/tutorials/index.xhtml
-</p>
-<p>
-It also would be a base for other bindings (JAVA, JS/WebGL)
-</p>
-
-<h2>Project idea 9: add supports for glCompressedTexImage2D</h2>
+<h2>(TODO: cleanup) Project idea 9: add supports for glCompressedTexImage2D</h2>
 <p>
 make it more generic like GstGLUpload/Download API
 and in new elements gldec/glenc ?
@@ -319,7 +210,7 @@ http://www.opengl.org/sdk/docs/man/xhtml/glCompressedTexImage2D.xml
 http://withimagination.imgtec.com/index.php/powervr/pvrtc-the-most-efficient-texture-compression-standard-for-the-mobile-graphics-world
 </p>
 
-<h2>Project idea 10: glfakevideodec</h2>
+<h2>(TODO: cleanup) Project idea 10: glfakevideodec</h2>
 <p>
 I have started a fakevideodec element in a branch. It's useful when you have a new embedded platform and you want to know what would be the perf (or start enable zerocopy) if you had a hardware decoder. (without adding extra CPU usage)
 videotestsrc is not really usable on embedded like RPI, I mean it uses so much CPU so not really useful to identify what would be the best FPS. Also fpsdisplaysink uses textoverlay for the visual fps information. When you want a visual information and not a console info.
