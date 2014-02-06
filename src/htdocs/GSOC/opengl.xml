@@ -77,164 +77,96 @@ More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723683">here</a
 </p>
 
 
-<h2>(TODO: cleanup) Project idea 5: implement a new element eglimagetrans:</h2>
+<h2>Project idea 5: add EGLImage support</h2>
 <p>
-goal:
+Will replace gst-plugins-bad/gst-libs/gst/egl.
 </p>
+
 <code>
-In webkit playbin uri=foo video-sink="eglimagetrans ! webkitvideosink"
-gst-launch-1.0 ... ! gleffects ! omxh264enc ! ...
-</code>
 <p>
-OMX_UseEGLImage is in the official OMX spec so the egl_render component should also available in the future on other 
-platform than RPI.
-</p>
-<p>
-It would avoid to manually use the GstEGLImageBufferPool in every elements that consume or provide it.
+omxvideodec ! glimagesink
 </p>
 <p>
 In webkit: playbin uri=foo video-sink="eglimagetrans ! webkitvideosink"
-In this case, omxvideodec will use the eglimage provided by eglimagetrans.
-It proposes a GstEGLImageBufferPool pool and add a GstVideoGLTextureUploadMeta
-that calls glEGLImageTargetTexture2DOES
-EGLImage from malloc buffer (extension)
-see https://bugzilla.gnome.org/show_bug.cgi?id=706054#c34
-https://bugzilla.gnome.org/show_bug.cgi?id=703343
-
-but eglimagetrans ! gleffects would provide EGLImage created from some textures
-
-+extra work: add OMX.(broadcom).egl_render to gstomxvideoencoder
-
-other info: https://bugzilla.gnome.org/show_bug.cgi?id=703343
-
-- the incoming buffer has the same pool has the one it suggested: it means the upstream element knows how to fill in the eglimage (ex: OMX_UseEGLImage)
-- different pool, then it wraps 
-The purpose here it that the doswstream element knows what to do with the eglimage
 </p>
-
-<h2>(TODO: cleanup) Project idea 6: make gst-gl support subtitles</h2>
 <p>
-GL Fonts drawing:  filesrc location=text.srt ! subparse ! text/x-raw ! glfonts ! Glimagesink
-Use FTGL https://sourceforge.net/projects/ftgl/files/ ?
-
-Like in “6” we would then have to compose the 2 textures (one from the video, one from glfonts)
-
-So improve gloverlay or glvideomixer:
-- use gstvideooverlaycomposition API
-http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstvideooverlaycomposition.html
-- cairo/pango is GL font ? so is textoverlay re-usable to support GL fonts ?
+gleffects ! omxvideoenc
 </p>
+</code>
 
-<h2>(TODO: cleanup) Project idea 7: accelerated video decoding on Windows + make gst-gl compatible with DirectX ( gl texture to dx surface)</h2>
 <p>
-goal:
+More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=703343">here</a>
 </p>
+
+<h2>Project idea 6: add support for subtitles</h2>
+<p>
+Similar to textoverlay element.
+Use an external GL Font API to build a separate gltexture and attach it to the input buffer's GstVideoOverlayCompositionMeta.
+Then a downstream element could call gst_video_overlay_composition_blend to show up the subtitles.
+</p>
+
 <code>
+gst-launch-1.0 filesrc location=text.srt ! subparse ! text/x-raw ! gltextoverlay.text_sink ! glimagesink
+</code>
+
 <p>
-gst-launch-1.0 videotestsrc ! gleffects ! d3dvideosink
+More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723761">here</a>
 </p>
+
+<h2>Project idea 7: new KTX texture parser</h2>
+
+<code>
+gst-launch-1.0 filesrc location=texture.ktx ! glktxparse ! glimagesink
+</code>
+
 <p>
-gst-launch-1.0 videotestsrc ! gleffects ! dxvaenc ! h264parse ! ...
+<a href="http://www.khronos.org/opengles/sdk/tools/KTX/">KTX format</a>
 </p>
+
 <p>
-gst-launch-1.0 videotestsrc ! gleffects ! dxvadeinterlace ! glimagesink
+More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723768">here</a>
 </p>
+
+
+<h2>Project idea 8: make gst-gl compatible with DirectX</h2>
+<p>
+gl element should be able to handle dx surface as input.
+</p>
+
+<code>
 <p>
 gst-launch-1.0 ... ! dxvadec ! glimagesink
 </p>
 <p>
-gst-launch-1.0 ... ! dxvadec ! gleffects ! d3dvideosink
+gst-launch-1.0 videotestsrc ! gleffects ! d3dvideosink
 </p>
 </code>
-<p>
-(http://cgit.freedesktop.org/gstreamer/gst-plugins-bad/tree/sys/d3dvideosink)
-</p>
-<p>
-DXVA: http://en.wikipedia.org/wiki/DirectX_Video_Acceleration
-http://msdn.microsoft.com/en-us/library/windows/desktop/ee663582(v=vs.85).aspx
-http://msdn.microsoft.com/en-us/library/windows/desktop/ms694840(v=vs.85).aspx
-</p>
-<p>
-gl/dx interop: http://developer.download.nvidia.com/opengl/specs/WGL_NV_DX_interop.txt
-</p>
-<p>
-New API ? :
-GstVideoDXSurfaceUploadMeta
-GST_CAPS_FEATURE_META_GST_VIDEO_DX_SURFACE_UPLOAD_META
-With a default upload/download callback that just convert a gl texture to a dx surface ?
-So that every dx element could use it
 
-- Start from d3dvideosink. And then implement a new dx element (of its choice)
+<p>
+Also investigate about accelerated video decoding on Windows (DXVA).
 </p>
 
-<h2>(TODO: cleanup) Project idea 8: implement new KTX texture file parser</h2>
 <p>
-goal:
-</p>
-<code>
-gst-launch-1.0 filesrc location=texturefile.ktx ! glktxparse ! imagefreeze ! glimagesink
-</code>
-<p>
-The example1 here http://www.khronos.org/opengles/sdk/tools/KTX/
-is quite explicit (ktxLoadTextureN)
-
-Would GstBaseParse usable for that ?
-</p>
-<p>
-+extra: usable in:
-gloverlay
-glbumper
-gldifferencemate
-</p>
-<p>
-And make those elements not use libjpeg or libpng directly,
-(the user should use jpegdec and pngdec instead)
-</p>
-<p>
-currently: gst-launch-1.0 videotestsrc ! gleffects ! gloverlay location=img.jpg ! glimagesink
-next: gst-launch-1.0 gloverlay name=ov   videotestsrc ! gleffects ! ov ! glimagesink   filesrc location=img.jpg ! jpegparse ! jpegdec ! gleffects ! ov.sink2
-</p>
-<p>
-Improve GstGLFilter base class or new for the one additional pad or use GstGLMixer ?
-Through glvideomixer (https://bugzilla.gnome.org/show_bug.cgi?id=710714)
+More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723772">here</a>
 </p>
 
 
-<h2>(TODO: cleanup) Project idea 9: add supports for glCompressedTexImage2D</h2>
+<h2>Project idea 9: add supports for glCompressedTexImage2D</h2>
+
 <p>
-make it more generic like GstGLUpload/Download API
-and in new elements gldec/glenc ?
-</p>
-<p>
-http://www.opengl.org/sdk/docs/man/xhtml/glCompressedTexImage2D.xml
-http://withimagination.imgtec.com/index.php/powervr/pvrtc-the-most-efficient-texture-compression-standard-for-the-mobile-graphics-world
+More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723781">here</a>
 </p>
 
-<h2>(TODO: cleanup) Project idea 10: glfakevideodec</h2>
-<p>
-I have started a fakevideodec element in a branch. It's useful when you have a new embedded platform and you want to know what would be the perf (or start enable zerocopy) if you had a hardware decoder. (without adding extra CPU usage)
-videotestsrc is not really usable on embedded like RPI, I mean it uses so much CPU so not really useful to identify what would be the best FPS. Also fpsdisplaysink uses textoverlay for the visual fps information. When you want a visual information and not a console info.
-</p>
-<p>
-So my fakevideodec just draw a kind of snake on 1 line (to make it use the CPU the less possible)
-And the snake moves from left to right in 1 sec if no drop.  So that when there are frame dropping
-the snake freez and you see it jumps to other positions. At every new frame it clears the line and draw the next position base on the framerate and the resolution.
-It supposes that the input is parsed to have the width/height and FPS.
-See http://cgit.collabora.com/git/user/julien/gst-plugins-good.git/log/?h=fakevideodec
-</p>
-<p>
-Even if it currently visually gives an idea of the FPS, it still does not allow to determine visually what is the precise FPS.
-</p>
-<p>
-So I think having a glfakevideodec could be useful too. We could generate a more precise visual information on the FPS without using CPU.
-Like a kind of pre-made grid line:  0-------5-------10------15------25-------....
-And a sprite showing where is the current FPS
-</p>
-<p>
-Also this work could be factorize to make it usable from gltestsrc or videotestsrc. But in real cases the user just want to use playbin so that you actually want to replace the video decoder.
+<h2>Project idea 10: new glfakevideodec element</h2>
 
-If GLFont is efficient it would be perfect.
-Also maybe re-use what is done in fpsdisplaysink and make it use the gstvideooverlaycomposition API
+<p>
+Useful to visually evaluate the display performance you would have with a decoder that does not use CPU.
+Especially if you use GstVideoOverlay or a custom video sink embedded in an application.
 </p>
+
+<p>
+More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723779">here</a>
+</p>
+
 </body>
 </page>
