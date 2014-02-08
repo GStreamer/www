@@ -165,7 +165,7 @@ Library for creating audio/video editors.
     <blurb>RTSP server</blurb>
     <title>GStreamer RTSP Server</title>
     <description>
-RTSP server based on GStreamer (<a href="http://people.freedesktop.org/~wtay/">homepage</a>)
+RTSP server library based on GStreamer
     </description>
     <maintainer>Wim Taymans</maintainer>
     <versions>

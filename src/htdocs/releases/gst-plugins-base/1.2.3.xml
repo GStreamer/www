@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.2.3</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Holger Kaelberer</person>
+	<person>Jan Schmidt</person>
+	<person>Julien Isorce</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Rasmussen</person>
+	<person>Stéphane Cerveau</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>William Grant</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>603921</id>
+      <summary>resindvd: DVD menus not working</summary>
+    </bug>
+    <bug>
+      <id>697665</id>
+      <summary>Add format=WMV3 for WMV 3 video</summary>
+    </bug>
+    <bug>
+      <id>711816</id>
+      <summary>audiobasesrc: Avoid unnecessary configuration if caps don't change</summary>
+    </bug>
+    <bug>
+      <id>712367</id>
+      <summary>Prevent the NEON check in configure from passing under aarch64.</summary>
+    </bug>
+    <bug>
+      <id>715138</id>
+      <summary>xvimagesink 1.2 ignores resize events when used on a QWidget</summary>
+    </bug>
+    <bug>
+      <id>719615</id>
+      <summary>oggdemux: slow seeking on some ogg files</summary>
+    </bug>
+    <bug>
+      <id>719684</id>
+      <summary>videodecoder: Allocation query is always at least sent twice</summary>
+    </bug>
+    <bug>
+      <id>720015</id>
+      <summary>docs: add missing files for distribution</summary>
+    </bug>
+    <bug>
+      <id>720661</id>
+      <summary>audiobasesink: Fix locking bug accessing ring buffer time</summary>
+    </bug>
+    <bug>
+      <id>721078</id>
+      <summary>videodecoder: cannot call gst_video_decoder_negotiate without output_state</summary>
+    </bug>
+    <bug>
+      <id>721666</id>
+      <summary>videodecoder: push newsegment earlier for reverse playback</summary>
+    </bug>
+    <bug>
+      <id>721835</id>
+      <summary>videodecoder: do not drop events when releasing frames</summary>
+    </bug>
+    <bug>
+      <id>722144</id>
+      <summary>audiodecoder: do not negotiate caps with rate=1 and channels=1 for gap</summary>
+    </bug>
+    <bug>
+      <id>722656</id>
+      <summary>videoconvert: scoring system ranks colour loss very low</summary>
+    </bug>
+  </bugs>
+
+</release>

@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.2.3</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new bug-fix release
+in the 1.x stable series of the
+core of the GStreamer streaming media framework.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users.
+It is not API or ABI compatible with the stable 0.10.x series.
+It is, however, parallel installable with the 0.10.x series and
+will not affect an existing 0.10.x installation.
+</p>
+<p>
+The 1.x series has been reworked for more flexible memory handling, improved
+caps negotiation and re-negotiation, better handling of dynamic pipelines,
+and increased performance in general. It also features countless other feature
+additions and enhancements.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+<p>
+Applications ported to GStreamer 1.0 include Totem, RhythmBox, Sound-Juicer,
+Pitivi, Cheese, Empathy, Transmageddon, and others.
+</p>
+  </applications>
+-->
+
+      <contributors>
+	<person>Arnaud Vrac</person>
+	<person>Pedro Côrte-Real</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Rasmussen</person>
+	<person>Thiago Santos</person>
+	<person>Wim Taymans</person>
+	<person>YanpingZhang</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>712597</id>
+      <summary>multiqueue: regression: buffering of live radio stream never finishes</summary>
+    </bug>
+    <bug>
+      <id>719814</id>
+      <summary>docs: add missing files for distribution</summary>
+    </bug>
+    <bug>
+      <id>721253</id>
+      <summary>multiqueue: May cause hanging if shut down while handling a serialized query</summary>
+    </bug>
+    <bug>
+      <id>721289</id>
+      <summary>pad: using multiple blocking probes doesn't work as expected</summary>
+    </bug>
+    <bug>
+      <id>721300</id>
+      <summary>tee: Does not protect pad from being destroyed from pad probe during gst_pad_push()</summary>
+    </bug>
+    <bug>
+      <id>721350</id>
+      <summary>baseparse: push pending events before GAP</summary>
+    </bug>
+    <bug>
+      <id>721422</id>
+      <summary>Negative pad offsets don't work</summary>
+    </bug>
+    <bug>
+      <id>721941</id>
+      <summary>baseparse: do not accumulate buffers on passthrough mode</summary>
+    </bug>
+    <bug>
+      <id>722467</id>
+      <summary>pad: Leaks events when iterating sticky events and callback drops event</summary>
+    </bug>
+  </bugs>
+</release>
