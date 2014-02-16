@@ -11,7 +11,7 @@ To hack on the GStreamer website, here's what to do:
 5) bin/data-get (this is not needed if you just plan on updating the generated
    content; note that bin/data-get will download no less than 2-3GB of data)
 6) make
-7) to rebuild the online pages run ./bin/www-update-complete
+7) to rebuild the online pages run ./bin/www-update
 
 MISCELLANEOUS NOTES:
 
