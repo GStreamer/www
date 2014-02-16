@@ -32,7 +32,7 @@ The list below is just some suggestions made by various members of the GStreamer
 <li><a href="fixme">CoreAnimation plugin for Apple platforms</a> : CoreAnimation video sink (also useful for iOS)</li>
 </ul>
 <li>applications</li>
-<ul><li><a href="http://gstreamer.freedesktop.org/GSOC/Pitivi">Pitivi</a>: Improve Pitivi</li>
+<ul><li><a href="http://wiki.pitivi.org/wiki/Google_Summer_of_Code">Pitivi</a>: Improve Pitivi video editor</li>
 <li><a href="http://wiki.buzztrax.org/index.php/TODO">Buzztrax</a>: Improve Buzztrax music composer</li>
 </ul>
 <li>framework</li>
