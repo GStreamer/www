@@ -33,7 +33,7 @@ The list below is just some suggestions made by various members of the GStreamer
 </ul>
 <li>applications</li>
 <ul><li><a href="http://gstreamer.freedesktop.org/GSOC/Pitivi">Pitivi</a>: Improve Pitivi</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/Buzztard">Buzztrax</a>: Improve Buzztrax</li>
+<li><a href="http://wiki.buzztrax.org/index.php/TODO">Buzztrax</a>: Improve Buzztrax music composer</li>
 </ul>
 <li>framework</li>
 <ul><li><a href="http://gstreamer.freedesktop.org/GSOC/Closed_Captioning_support">Closed_Captioning_support</a>: Subtitles for the hearing impaired</li>
