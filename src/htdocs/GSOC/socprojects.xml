@@ -27,7 +27,7 @@ The list below is just some suggestions made by various members of the GStreamer
 <li><a href="http://gstreamer.freedesktop.org/GSOC/ChapterSupport">Chapter Support</a>: Implement chapter support in more plugins</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/OpencvGestureDetection">OpenCV Gesture Detection</a> : Implement an opencv plugin for gesture detection (eg: hand gesture)</li>
 <li><a href="http://wiki.webmproject.org/adaptive-streaming/webm-dash-specification">DASH WebM support</a>: Implement a plugin to do WebM DASH streaming</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/subtitles">Improved Subtitle support</a> : Work on subtitle support in Muxers</li>
+<li><a href="https://bugzilla.gnome.org/process_bug.cgi">Improved Subtitle support</a> : Work on subtitle support in Muxers, for example adding XSUB support</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/opengl.html">GStreamer &amp; OpenGL</a> : Project ideas for improving OpenGL support in GStreamer</li> 
 <li><a href="fixme">CoreAnimation plugin for Apple platforms</a> : CoreAnimation video sink (also useful for iOS)</li>
 </ul>
