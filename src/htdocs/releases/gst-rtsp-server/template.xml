@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-rtsp-server</module>
+  <module-fancy>GStreamer RTSP Server Library</module-fancy>
+  <name></name>
+  <version></version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new release
+in the 1.x stable series of the GStreamer RTSP Server Library.
+</p>
+
+  </intro>
+  <features>
+  </features>
+
+  <applications>
+  </applications>
+
+  <contributors>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  <bugs>
+  </bugs>
+</release>

@@ -38,6 +38,7 @@ htdocs/releases/gst-plugins-gl/Makefile
 htdocs/releases/gst-plugins-good/Makefile
 htdocs/releases/gst-plugins-ugly/Makefile
 htdocs/releases/gst-python/Makefile
+htdocs/releases/gst-rtsp-server/Makefile
 htdocs/releases/gstreamer/Makefile
 htdocs/releases/gstreamer-sharp/Makefile
 htdocs/releases/gnonlin/Makefile

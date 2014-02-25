@@ -23,4 +23,5 @@ SUBDIRS = \
 	gstreamer \
 	gstreamer-sharp \
 	gst-editing-services \
+	gst-rtsp-server \
 	gst-omx
