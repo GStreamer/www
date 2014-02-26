@@ -1,4 +1,4 @@
-releases =
+releases = 1.2.3 1.2.3 1.2.3 1.2.3
 
 built_pages = \
         $(releases) \
