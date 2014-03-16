@@ -7,13 +7,13 @@
 <!ENTITY gst-ffmpeg-version-stable "0.10.13">
 <!ENTITY gst-libav-version-stable "1.2.2">
 <!ENTITY gst-openmax-version-stable "git master">
-<!ENTITY gst-python-version-stable "git master">
+<!ENTITY gst-python-version-stable "1.2.0">
 <!ENTITY gstreamer-sharp-version-stable "git master">
 <!ENTITY gst-plugins-gl-version-stable "git master">
 <!ENTITY gst-rtsp-server-version-stable "git master">
 <!ENTITY gst-streaming-server-version-stable "git master">
-<!ENTITY gnonlin-version-stable "git master">
-<!ENTITY gst-editing-services-version-stable "git master">
+<!ENTITY gnonlin-version-stable "1.2.0">
+<!ENTITY gst-editing-services-version-stable "1.2.0">
 <!ENTITY qt-gstreamer-version-stable "0.10.1">
 <!ENTITY gst-android-version-stable "git master">
 <!ENTITY gst-omx-version-stable "1.0.0">
@@ -35,6 +35,8 @@
 <!ENTITY gst-libav-version-devel "git master">
 <!ENTITY gst-openmax-version-devel "git master">
 <!ENTITY gst-python-version-devel "git master">
+<!ENTITY gnonlin-version-devel "git master">
+<!ENTITY gst-editing-services-version-devel "git master">
 <!ENTITY gstreamer-sharp-version-devel "git master">
 
 <!ENTITY gst-bug-report "http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">

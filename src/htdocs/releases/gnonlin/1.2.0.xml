@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gnonlin</module>
+  <module-fancy>GNonLin Non-Linear Editing Plug-ins</module-fancy>
+  <name></name>
+  <version>1.2.0</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce the first stable release
+in the 1.x stable series of GNonLin.
+</p>
+
+<p>
+This module contains a set of plug-ins for GStreamer to ease the
+creation of multimedia editors, or any other application where a
+timeline-oriented use of GStreamer makes sense.
+</p>
+<p>
+These elements include:
+<dl>
+<dt>gnlsource</dt>
+<dd>An element for using source elements/bins in a GnlComposition</dd>
+<dt>gnlfilesource</dt>
+<dd>A higher-level element for using a uri in a GnlComposition</dd>
+<dt>gnlcomposition</dt>
+<dd>A container element that handles GNonLin objects</dd>
+<dt>gnloperation</dt>
+<dd>An element for using filters in a GnlComposition</dd>
+</dl>
+</p>
+  </intro>
+  <features>
+    <feature></feature>
+  </features>
+
+  <applications>
+GNonLin is primarily used by PiTiVi (http://www.pitivi.org/) and Jokosher (http://www.jokosher.org/).
+  </applications>
+    <contributors>
+	<person>Edward Hervey</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Sauer</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <depreciations>
+    </depreciations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>596374</id>
+      <summary>GnlObject: &quot; priority &quot; property should be changed to int type for special -1 value</summary>
+    </bug>
+    <bug>
+      <id>690881</id>
+      <summary>Replace AM_CONFIG_HEADER with AC_CONFIG_HEADERS in configure.ac</summary>
+    </bug>
+    <bug>
+      <id>691041</id>
+      <summary>pitivi frozen when after drag'n drop to timeline: GstVideoTestSrc Internal data flow error</summary>
+    </bug>
+    <bug>
+      <id>701015</id>
+      <summary>Using a g_thread for gnonlin pipeline update / forward eos on the streaming thread.</summary>
+    </bug>
+    <bug>
+      <id>706831</id>
+      <summary>composition: Release objects lock while forwarding an event</summary>
+    </bug>
+  </bugs>
+
+</release>
