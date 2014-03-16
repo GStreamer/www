@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name></name>
+  <version>1.2</version>
+
+  <intro>
+
+<p>
+  The GStreamer team is proud to announce the first stable release
+  of the 1.X serie of the gst-python overrides for the PyGObject
+  runtime bindings.
+</p>
+  </intro>
+  <features>
+    <feature>Python 3.3 support</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+          <contributors>
+	<person>Alessandro Decina</person>
+	<person>Andoni Morales Alastruey</person>
+	<person>George McCollister</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Olivier Crête</person>
+	<person>René Stadler</person>
+	<person>Sebastian Dröge</person>
+	<person>Simon Farnsworth</person>
+	<person>Stefan Sauer</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  
+
+  <bugs>
+  </bugs>
+</release>
