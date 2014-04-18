@@ -5714,4 +5714,25 @@ directly.
     </content>
   </item>
 
+  <item>
+      <date>2014-04-18 11:00</date>
+        <title>Orc 0.4.19 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team announces another maintenance bug-fix release of liborc,
+the Optimized Inner Loop Runtime Compiler. It contains:
+        </p>
+        <p>
+          <ul>
+            <li>Fix out-of-tree builds</li>
+            <li>Fix many memory leaks, compiler warnings and coverity warnings</li>
+            <li>Documentation fix for mulhsw, mulhuw</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.19.tar.gz">orc-0.4.19</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
