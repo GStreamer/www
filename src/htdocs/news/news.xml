@@ -5775,4 +5775,23 @@ or download tarballs for
         </content>
   </item>
 
+  <item>
+    <date>2014-04-23 15:32</date>
+    <title>GNonLin and GStreamer Editing Services 1.2.1 stable release</title>
+    <content>
+      <p>
+The GStreamer team is pleased to announce a new release of the stable
+1.2 release series of GStreamer Editing Services and GNonLin.
+      </p>
+      <p>
+        Check out the GES release notes <a href="&site;/releases/gst-editing-services/1.2.1.html">here</a> or download tarballs
+        from <a href="&site;/src/gstreamer-editing-services/gstreamer-editing-services-1.2.1.tar.xz">here</a>.
+      </p>
+      <p>
+        Check out the GNonLin release notes <a href="&site;/releases/gnonlin/1.2.1.html">here</a> or download tarballs
+        from <a href="&site;/src/gnonlin/gnonlin-1.2.1.tar.xz">here</a>.
+      </p>
+    </content>
+  </item>
+
 </news>

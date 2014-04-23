@@ -12,8 +12,8 @@
 <!ENTITY gst-plugins-gl-version-stable "git master">
 <!ENTITY gst-rtsp-server-version-stable "git master">
 <!ENTITY gst-streaming-server-version-stable "git master">
-<!ENTITY gnonlin-version-stable "1.2.0">
-<!ENTITY gst-editing-services-version-stable "1.2.0">
+<!ENTITY gnonlin-version-stable "1.2.1">
+<!ENTITY gst-editing-services-version-stable "1.2.1">
 <!ENTITY qt-gstreamer-version-stable "0.10.1">
 <!ENTITY gst-android-version-stable "git master">
 <!ENTITY gst-omx-version-stable "1.0.0">
