@@ -5794,4 +5794,19 @@ The GStreamer team is pleased to announce a new release of the stable
     </content>
   </item>
 
+  <item>
+    <date>2014-04-26 11:08</date>
+    <title>gst-python 1.2.1 stable release</title>
+    <content>
+      <p>
+The GStreamer team is pleased to announce a new release of the stable
+1.2 release series of gst-python.
+      </p>
+      <p>
+        Check out the gst-python release notes <a href="&site;/releases/gst-python/1.2.1.html">here</a> or download tarballs
+        from <a href="&site;/src/gst-python/gst-python-1.2.1.tar.gz">here</a>.
+      </p>
+    </content>
+  </item>
+
 </news>
