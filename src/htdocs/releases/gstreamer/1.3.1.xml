@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.3.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.3 release series. The 1.3 release series is adding new features on top of
+the 1.0 and 1.2 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.3 release series
+will lead to the stable 1.4 release series in the next weeks, and newly added
+API can still change until that point.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.3 release series.
+</p>
+
+<p>
+The versioning scheme that is used in general is that 1.x.y is API and
+ABI backwards compatible with previous 1.x.y releases. If x is an even
+number it is a stable release series and all releases in this series
+will only contain important bugfixes, e.g. the 1.0 series with 1.0.7. If
+x is odd it is a development release series that will lead to the next
+stable release series 1.x+1 and contains new features and bigger
+changes. During the development release series, new API can still
+change.
+</p>
+
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+<p>
+Applications ported to GStreamer 1.0 include Totem, RhythmBox, Sound-Juicer,
+Pitivi, Cheese, Empathy, Transmageddon, and others.
+</p>
+  </applications>
+-->
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Antoine Jacoutot</person>
+	<person>Antonio Ospite</person>
+	<person>Arnaud Vrac</person>
+	<person>Brendan Long</person>
+	<person>Carlos Rafael Giani</person>
+	<person>Chun-wei Fan</person>
+	<person>David Svensson Fors</person>
+	<person>Edward Hervey</person>
+	<person>Erik Andresen</person>
+	<person>Fabian Kirsch</person>
+	<person>Felipe Ortiz</person>
+	<person>George Kiagiadakis</person>
+	<person>Haakon Sporsheim</person>
+	<person>Havard Graff</person>
+	<person>Jan Alexander Steffens (heftig)</person>
+	<person>Jan Schmidt</person>
+	<person>Jose Antonio Santos Cadenas</person>
+	<person>Linus Svensson</person>
+	<person>Luis de Bethencourt</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Matthieu Bouron</person>
+	<person>Nicola Murino</person>
+	<person>Nicolas Dufresne</person>
+	<person>Olivier Crête</person>
+	<person>Pedro Côrte-Real</person>
+	<person>Per x Johansson</person>
+	<person>Philip Withnall</person>
+	<person>Philippe Normand</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Rasmussen</person>
+	<person>Showayb Zahda</person>
+	<person>Srimanta Panda</person>
+	<person>Stefan Sauer</person>
+	<person>Stewart Brodie</person>
+	<person>Stian Selnes</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Todd Agulnick</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+	<person>William Jon McCann</person>
+	<person>William Manley</person>
+	<person>Wim Taymans</person>
+	<person>Xavi Artigas</person>
+	<person>YanpingZhang</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>729440</id>
+      <summary>docs: DeviceMonitor missing in generated doc</summary>
+    </bug>
+    <bug>
+      <id>710621</id>
+      <summary>utils: Uses non-literal as format string</summary>
+    </bug>
+    <bug>
+      <id>726423</id>
+      <summary>playbin/decodebin: aggregate buffering messages</summary>
+    </bug>
+    <bug>
+      <id>726425</id>
+      <summary>Add new API to notify minimum buffering needed downstream</summary>
+    </bug>
+    <bug>
+      <id>679115</id>
+      <summary>Windows: Make the GStreamer DLLs/data relocatable</summary>
+    </bug>
+    <bug>
+      <id>721655</id>
+      <summary>basesrc activation order logs error in some cases where it should not</summary>
+    </bug>
+    <bug>
+      <id>702842</id>
+      <summary>basesrc: operate in time mode if do-timestamp is true</summary>
+    </bug>
+    <bug>
+      <id>705189</id>
+      <summary>debug-dot-dump: Add the presence/state of a GstTask</summary>
+    </bug>
+    <bug>
+      <id>708870</id>
+      <summary> &quot; generic &quot; is spelled wrong in GstBaseSrc's documentation</summary>
+    </bug>
+    <bug>
+      <id>709253</id>
+      <summary>caps: subset checks fail with duplicated values in lists</summary>
+    </bug>
+    <bug>
+      <id>709262</id>
+      <summary>GstStructure's documentation incorrectly warns that empty strings don't work in any GstStructure</summary>
+    </bug>
+    <bug>
+      <id>709831</id>
+      <summary>filesrc: Improve unit test coverage by setting property in the &quot; wrong &quot; state...</summary>
+    </bug>
+    <bug>
+      <id>710034</id>
+      <summary>parse: bison finds conflicts / ambiguities</summary>
+    </bug>
+    <bug>
+      <id>710342</id>
+      <summary>docs: various constructors are annotated as &quot; transfer full &quot; , but return floating references</summary>
+    </bug>
+    <bug>
+      <id>710442</id>
+      <summary>netclientclock: constify name parameter for gst_net_client_clock_new()</summary>
+    </bug>
+    <bug>
+      <id>710758</id>
+      <summary>gst-launch: assert if we can't get gst sample</summary>
+    </bug>
+    <bug>
+      <id>710876</id>
+      <summary>pwg: rename the &quot; samplerate &quot; variable to make example code compilable</summary>
+    </bug>
+    <bug>
+      <id>711138</id>
+      <summary>iterator: Don't hold mutex while calling filter functions of recursive filter iterators</summary>
+    </bug>
+    <bug>
+      <id>711269</id>
+      <summary>systemclock: Add method to set the default system clock</summary>
+    </bug>
+    <bug>
+      <id>711488</id>
+      <summary>gst-uninstalled: export gst-plugins-gl DYLD_LIBRARY_PATH</summary>
+    </bug>
+    <bug>
+      <id>712385</id>
+      <summary>netclock: added new round-trip limit property</summary>
+    </bug>
+    <bug>
+      <id>712679</id>
+      <summary>parse: prototype-mismatch</summary>
+    </bug>
+    <bug>
+      <id>719614</id>
+      <summary>docs: add missing docs and fix errors</summary>
+    </bug>
+    <bug>
+      <id>720029</id>
+      <summary>docs/etc: Fix typos</summary>
+    </bug>
+    <bug>
+      <id>720036</id>
+      <summary>info: return existing debug category when registering a category twice (regression)</summary>
+    </bug>
+    <bug>
+      <id>720100</id>
+      <summary>parse: redefinition of malloc - old grammar.y bugs crawl out of the woodwork</summary>
+    </bug>
+    <bug>
+      <id>720199</id>
+      <summary>basesrc: DTS becomes 0 in gst_base_src_do_sync() for first buffer</summary>
+    </bug>
+    <bug>
+      <id>720316</id>
+      <summary>parse: Fails to compile on CentOS due to redefinition of yyscan_t</summary>
+    </bug>
+    <bug>
+      <id>720337</id>
+      <summary>gstreamer-uninstalled: add gstreamer-vaapi to GST_PLUGIN_PATH</summary>
+    </bug>
+    <bug>
+      <id>721076</id>
+      <summary>appsink documentation missing gst_sample_unref</summary>
+    </bug>
+    <bug>
+      <id>721096</id>
+      <summary>pad: Pad BLOCKING probe callback issues</summary>
+    </bug>
+    <bug>
+      <id>722289</id>
+      <summary>capsfilter: Sending CAPS event downstream in pull mode</summary>
+    </bug>
+    <bug>
+      <id>722697</id>
+      <summary>pad: Setting pad offsets breaks the running time in QoS and other events</summary>
+    </bug>
+    <bug>
+      <id>722791</id>
+      <summary>basesrc: not respecting seqnum of eos from send_event</summary>
+    </bug>
+    <bug>
+      <id>722891</id>
+      <summary>multiqueue: Growing of multiqueue does not work correctly if all except one pad are not linked</summary>
+    </bug>
+    <bug>
+      <id>723229</id>
+      <summary>gst-uninstalled call print as function</summary>
+    </bug>
+    <bug>
+      <id>723236</id>
+      <summary>caps: fix gst_caps_get_features return</summary>
+    </bug>
+    <bug>
+      <id>723266</id>
+      <summary>outputselector: respect the 'negotiation-mode' property</summary>
+    </bug>
+    <bug>
+      <id>723997</id>
+      <summary>gstreamer/docs: add missing seqnum file for distribution</summary>
+    </bug>
+    <bug>
+      <id>724045</id>
+      <summary>gst-inspect: Compile error at gst-inspect.c:514:15 since 53d8460bfd</summary>
+    </bug>
+    <bug>
+      <id>724571</id>
+      <summary>In collectpads, the collected function is sometimes called incorrectly.</summary>
+    </bug>
+    <bug>
+      <id>724757</id>
+      <summary>basesrc: Ignores seek made when the last buffer is pushed</summary>
+    </bug>
+    <bug>
+      <id>725476</id>
+      <summary>adapter: Added interfaces for language bindings</summary>
+    </bug>
+    <bug>
+      <id>725478</id>
+      <summary>gstreamer: Ignore gcov intermediate files</summary>
+    </bug>
+    <bug>
+      <id>725862</id>
+      <summary>buffer: invert BUFFER_FLAG_TAG_MEMORY ?</summary>
+    </bug>
+    <bug>
+      <id>725917</id>
+      <summary>multiqueue: do not reset last push result when pushing events</summary>
+    </bug>
+    <bug>
+      <id>726461</id>
+      <summary>collectpads: should send the seek events to the peers of its sink pads, as they can be flushing</summary>
+    </bug>
+    <bug>
+      <id>727484</id>
+      <summary>gstpad: Don't print name of an unowned event</summary>
+    </bug>
+    <bug>
+      <id>727701</id>
+      <summary>debugutils: Handle caps field values being NULL</summary>
+    </bug>
+    <bug>
+      <id>727903</id>
+      <summary>structure: handle 0 denominator</summary>
+    </bug>
+    <bug>
+      <id>727945</id>
+      <summary>funnel: element doesn't forward eos stream</summary>
+    </bug>
+    <bug>
+      <id>727949</id>
+      <summary>bin: Make sure to post EOS message always after reaching the PLAYING state</summary>
+    </bug>
+    <bug>
+      <id>729335</id>
+      <summary>basesink: Should render buffers that arrived on time even if prepare() took some time</summary>
+    </bug>
+    <bug>
+      <id>727109</id>
+      <summary>buffer: Should not set TAG_MEMORY if memory has not been replaced</summary>
+    </bug>
+  </bugs>
+</release>
