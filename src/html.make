@@ -56,6 +56,9 @@ $(entities):
 %.gif:
 	cp $(top_srcdir)/copy/images/$@ $@
 
+%.jpg:
+	cp $(top_srcdir)/copy/images/$@ $@
+
 $(top_builddir)/htdocs/gstreamer.css: $(top_srcdir)/copy/gstreamer.css
 	cp $< $@
 #gstreamer.css: $(top_srcdir)/copy/gstreamer.css

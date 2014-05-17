@@ -1,5 +1,7 @@
 Options +FollowSymLinks
 
+Redirect /conference/index.html /conference/2014/index.html
+
 RewriteEngine On
 
 RewriteCond %{HTTP_HOST} ^(www\.)?gstreamer\.net$ [NC]
