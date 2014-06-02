@@ -46,6 +46,10 @@ GStreamer.
   <DD>Binaries for GStreamer on Android that integrate into the Android NDK can be found <a href="http://gstreamer.freedesktop.org/data/pkg/android/">here</a>.
       They are provided and maintained by the GStreamer project.</DD>
 
+  <DT>iOS</DT>
+  <DD>Binaries for GStreamer on iOS that integrate into XCode can be found <a href="http://gstreamer.freedesktop.org/data/pkg/ios/">here</a>.
+      They are provided and maintained by the GStreamer project.</DD>
+
   <DT>Symbian</DT>
   <DD>The sources of the initial port of GStreamer are available for <a href="&site;/src/symbian/gstreamer_source.zip">download</a>.
     <BR/>
