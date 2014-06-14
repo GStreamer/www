@@ -121,8 +121,10 @@
 
   <h2>Registration</h2>
   <p>
-  Registration will open in early June and will stay open until the conference.
-  <!-- Registration is now open: <b><a href="http://www.regonline.com/gstreamerconference2014">sign up for the GStreamer Conference</a></b> -->
+  Registration is now open and will stay open until the conference.
+  </p>
+  <p>
+  <b><a href="http://www.regonline.com/gstreamerconference2014">Sign up for the GStreamer Conference here</a></b>
   </p>
   <p>
   There will be separate registration options for both professionals and for students and hobbyists:
@@ -216,8 +218,8 @@
     <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>.
   </p>
 
-<!--
   <h2>Conference News and Updates</h2>
+<!--
   <p>
     <i>2014-September-XX</i>: the <a href="http://gstreamer.freedesktop.org/conference/2014/schedule.html">conference schedule</a> and is now available
   </p>
@@ -236,10 +238,10 @@
   <p>
     <i>2014-May-XX</i>: The call for papers is now open and talk proposals can be submitted
   </p>
-  <p>
-    <i>2014-May-XX</i>: Registration now open
-  </p>
 -->
+  <p>
+    <i>2014-June-14</i>: Registration now open
+  </p>
 
   <h1>Past GStreamer Conferences</h1>
   <ul>
