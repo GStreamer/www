@@ -7,239 +7,27 @@
 
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
-<title>GStreamer Conference 2014</title>
+<title>GStreamer Conference</title>
 
 <body>
 
 <table>
 <tr><td>
 
-<h1>GStreamer Conference 2014</h1>
-
-  <h2>16-17 October 2014 · Congress Centre Düsseldorf · Düsseldorf, Germany</h2>
-  <p>
-  <table>
-  <tr>
-    <td>
-      <div class="crop-dusseldorf">
-      <img src="Medienhafen_Duesseldorf_Nacht-cropped.jpg"
-           alt="Dusseldorf at night (media harbour)"
-           height="252"
-      />
-      </div>
-    </td>
-  </tr>
-  </table>
-  </p>
-
-  <p>
-  The <b>5<sup><small>th</small></sup> GStreamer Conference</b> will again
-  be co-located with the <i>Embedded Linux Conference Europe (ELCE)</i>,
-  <i>LinuxCon Europe</i>, and the <i>Linux Plumbers Conference</i>.
-  The event will be held on Thursday and Friday <b>16-17 October 2014</b> at
-  the Congress Centre Düsseldorf (CCD) in <b>Düsseldorf, Germany</b>.
-  </p>
-
-  <h2>Details</h2>
-  <p>
-  The GStreamer Conference is a conference for developers, decision-makers,
-  community members, industry partners, and anyone else interested in the
-  GStreamer multimedia framework or Open Source and cross-platform multimedia.
-  </p>
-
-  <h2>Call for Papers</h2>
-  <!-- The call for papers is now closed and talk proposals can no longer be submitted. -->
-  <p>
-  The call for papers is now open and talk proposals can be submitted.
-  </p>
-  <p>
-  The deadline for talk proposals is Wednesday 23 July 2014.
-  </p>
-  <p>
-  The initial submission needs to be only a couple of sentences or paragraphs
-  describing the talk you want to give and the desired length of your talk
-  (please allow for 5-10 minutes of questions at the end as well).
-  </p>
-  <p>
-  Talks can be on almost anything multimedia related, ranging from talks about
-  applications to challenges in the lower levels in the stack or hardware.
-  </p>
-  <p>
-  Talk slots will be available in varying durations from 20 minutes up to an
-  hour. We want to hear from you, what you are working on, what you are using
-  GStreamer for, what difficulties you have encountered and how you solved them,
-  what your plans are.
-  </p>
-  <p>
-  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference@<!-- -->lists.freedesktop.org</a>.
-  </p>
-
-  <h2>Showcase or Lightening Talks</h2>
-  <p>
-    If you don't think you have enough material for a full talk, but perhaps
-    just want to showcase something you're working on, or present a problem or
-    challenge you are facing or have solved, and that you think might be
-    interesting for others to hear about, why not submit a 5-10 minute
-    mini-talk for our <i>lightening talk</i>/<i>showcase</i> event?
-  </p>
-  <p>
-    Simply send a quick mail to the e-mail address above to reserve your slot.
-  </p>
-
-  <h2>Schedule and speakers list</h2>
-  <p>
-    The conference schedule and speaker list will be available at a later date
-    once the call for papers has closed.
-  </p>
-  <p>
-    There will be a social event for attendees on Thursday 16 October 2014
-    in the evening (to be confirmed).
-  </p>
-  <!--
-  <p>
-    The <a href="schedule.html">conference schedule is now available</a>.
-    We hope you will be as excited about this years
-    schedule as we are. In addition to of course many in-depth GStreamer talks
-    we also have presentations on some of the most important core Linux
-    multimedia technologies like ALSA, Mesa, Wayland, the Opus Codec and V4L.
-    We have managed to get some of the leading developers from the world of
-    open source multimedia come to speak this year, so this is definetly an
-    event you should not be missing out on.
-  </p>
-  -->
-
-  <h2>Who should join?</h2>
-  <p>
-    Anyone interested in open source cross-platform multimedia is encouraged
-    to join us at the GStreamer Conference 2014.
-    Whether you are a hobbyist or a student interested in the field of
-    multimedia, or working for a company using or looking to use GStreamer
-    in their products, this is the perfect event for you to network at and
-    to learn more about the latest technological breakthroughs in and around
-    GStreamer. The talks will target both developers and managers.
-  </p>
-
-  <h2>Registration</h2>
-  <p>
-  Registration will open in early June.
-  <!-- Registration is now open: <b><a href="http://www.regonline.com/gstreamerconference2014">sign up for the GStreamer Conference</a></b> -->
-  </p>
-  <p>
-  There will be separate registration options for both professionals and for students and hobbyists:
-  </p>
-  <p>
-    <div style="margin-left:5%">
-    <table width="60%" cellpadding="5">
-      <tr><td>Professional</td><td>250 USD (until 31 July)</td></tr>
-      <tr><td>Professional</td><td>350 USD (from 1 August)</td></tr>
-      <tr><td>Student/hobbyist</td><td>100 USD</td></tr>
-    </table>
-    </div>
-  </p>
-  <p>
-    For those uncertain about whether to register as a professional or hobbyist,
-    the general rule is that if your company pays for you or sponsors you, you
-    are a professional, and if you personally pay you are a student or hobbyist.
-    If in doubt drop us a mail or just register as hobbyist. The important
-    thing is that you'll make it to the conference!
-  </p>
-  <p>
-    Speakers who do a longer presentation will receive a discount code, so if
-    you have submitted a talk or plan to submit a talk you may want to wait
-    with registration until a decision has been made as to whether your
-    proposal has been accepted.
-  </p>
-  <p>
-    Sponsors will receive a number of free registrations as part of the
-    <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-sponsor.pdf">sponsorship package</a>.
-  </p>
-
-  <h2>Co-hosted conferences</h2>
-  <p>
-    There are a few other events taking place alongside or just before the
-    GStreamer Conference on October 16-17 this year, so if you are making
-    your way to Düsseldorf you might want to consider combining the GStreamer
-    Conference with some of the other events.
-  </p>
-  <p>
-  <table>
-    <tr><td><a href="http://events.linuxfoundation.org/events/embedded-linux-conference-europe">Embedded Linux Conference Europe (ELCE)</a></td><td>October 13-15, 2014</td></tr>
-    <tr><td><a href="http://www.linuxplumbersconf.org/2014/">Linux Plumbers Conference</a></td><td>October 15-17, 2014</td></tr>
-    <tr><td><a href="http://events.linuxfoundation.org/events/linuxcon-europe">LinuxCon Europe</a></td><td>October 13-15, 2014</td></tr>
-    <tr><td><a href="http://events.linuxfoundation.org/events/cloudopen-europe">CloudOpen Europe</a></td><td>October 13-15, 2014</td></tr>
-    <tr><td><a href="http://events.linuxfoundation.org/events/kvm-forum">KVM Forum</a></td><td>October 14-16, 2014</td></tr>
-  </table>
-  </p>
 <!--
-  <p>
-  Professionals registering for the GStreamer conference will receive a
-  discount code to claim a small discount when registering for ELCE or the
-  Automotive Linux Summit as well.
-  </p>
+ ==========================================================================
+
+  THIS PAGE SHOULD NEVER BE VISIBLE TO ANYONE, THERE IS AN .HTACCESS FILE
+  THAT REDIRECTS AUTOMATICALLY TO THE LATEST conference/YYYY/index.html
+
+ ==========================================================================
 -->
 
-  <h2>Hotels</h2>
-  <p>
-  A list of hotels will be posted here closer to the time.
-  </p>
-  <!--
-  <h3>Foo Hotel</h3>
-  <p>
-  The Linux Foundation has reserved a block of rooms at a discounted rate of
-  £89 (€105/$135) per night for a single room and £99 (€115/$150) for a double/twin
-  room (incl. taxes and breakfast) at the
-  <a href="http://www3.hilton.com/en/hotels/united-kingdom/hilton-edinburgh-grosvenor-hotel-EDNGRHN/index.html">Hilton Edinburgh Grosvenor Hotel</a>,
-  which GStreamer Conference attendees can use as well. The hotel is about
-  5-10 minutes walk from the Edinburgh International Conference Centre where the
-  conference will take place. This rate is available only up to 60 days before
-  arrival, and there are also other conferences such as LinuxCon going on in the
-  same week, so make sure to book as early as possible.
-  </p>
-  <p>
-  <a href="http://www.hilton.com/en/hi/groups/personalized/E/EDNGRHN-GLINA-20131019/index.jhtml?WT.mc_id=POG">Reserve your room online by clicking here</a>.
-  </p>
+<h1>GStreamer Conference</h1>
 
-  <h3>Other hotels</h3>
-  <p>
-  Düsseldorf is an international tourist destination and as such has many hotels
-  and hostels in all price categories. The above is merely a small selection,
-  you can find more using the usual booking engines.
-  </p>
-  -->
-
-  <h2>Contact</h2>
-  <p>
-  If you have any questions about the GStreamer Conference or are considering
-  <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-sponsor.pdf">becoming a sponsor</a>,
-  please contact
-    <!-- <a href="mailto:christian.schaller@gmail.com">Christian Schaller</a> or -->
-    <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>.
-  </p>
-
-<!--
-  <h2>Conference News and Updates</h2>
-  <p>
-    <i>2014-September-XX</i>: the <a href="http://gstreamer.freedesktop.org/conference/2014/schedule.html">conference schedule</a> and is now available
-  </p>
-  <p>
-    <i>2014-July-XX</i>: <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-sponsor.pdf">Sponsor brief</a> is now available
-  </p>
-  <p>
-    <i>2014-July-XX</i>: <a href="http://www.ubicast.eu">UbiCast</a> welcomed as special media partner
-  </p>
-  <p>
-    <i>2014-July-XX</i>: Hotel details have been added to the conference pages
-  </p>
-  <p>
-    <i>2014-July-XX</i>: The call for papers deadline has been set to Thursday 25 July 2014
-  </p>
-  <p>
-    <i>2014-May-XX</i>: The call for papers is now open and talk proposals can be submitted
-  </p>
-  <p>
-    <i>2014-May-XX</i>: Registration now open
-  </p>
--->
+<p>
+  <b><a href="2014/index.html">16-17 October 2014 · Congress Centre Düsseldorf · Düsseldorf, Germany</a></b>
+</p>
 
   <h1>Past GStreamer Conferences</h1>
   <ul>
@@ -249,15 +37,6 @@
     <li><a href="2010/index.html">26 October 2010 · University Arms Hotel · Cambridge, UK</a></li>
   </ul>
 
-</td>
-
-<td valign="top">
-  <h1>Sponsors</h1>
-   <p>
-    <small>
-    Interested in <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-sponsor.pdf">becoming a sponsor</a> ?
-    </small>
-  </p>
 </td>
 
 </tr>
