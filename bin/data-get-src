@@ -2,8 +2,12 @@
 
 if ! test -d data
 then
-  echo "Please run this from the www/ module dir"
-  exit 1
+  if ! test -d ../www; then
+    echo "Please run this from the www/ module dir"
+    exit 1
+  else
+    mkdir data
+  fi
 fi
 
 ./bin/data-get --include='/data/src' --exclude='/data/*' $@
