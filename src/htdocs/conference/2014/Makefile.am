@@ -9,10 +9,10 @@ built_pages = index.html
 #lwn.png
 images = Medienhafen_Duesseldorf_Nacht-cropped.jpg
 
-#documents = \
-#	gstreamer-sponsor.pdf
+documents = \
+	gstreamer-conference-sponsor-brief-2014.pdf
 
-#gstreamer-sponsor.pdf:
-#	cp $(top_srcdir)/copy/documents/gstreamer-sponsor-2012.pdf gstreamer-sponsor.pdf
+gstreamer-conference-sponsor-brief-2014.pdf:
+	cp $(top_srcdir)/copy/documents/gstreamer-conference-sponsor-brief-2014.pdf gstreamer-conference-sponsor-brief-2014.pdf
 
 include $(top_srcdir)/html.make
