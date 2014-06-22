@@ -5889,4 +5889,48 @@ or download tarballs for
         </content>
   </item>
 
+    <item>
+      <date>2014-06-22 20:00</date>
+        <title>GStreamer Core and Plugins 1.3.3 development release</title>
+        <content>
+          <p>
+The GStreamer team is pleased to announce the third release of the unstable
+1.3 release series. The 1.3 release series is adding new features on top of
+the 1.0 and 1.2 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.3 release series
+will lead to the stable 1.4 release series in the next weeks, and newly added
+API can still change until that point.
+        </p><p>
+This is hopefully the last 1.3 development release and will be followed by
+the first 1.4.0 release candidate (1.3.90) in 1-2 weeks. Which then hopefully
+is followed by 1.4.0 soonish in early July.
+        </p><p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.3 release series.
+        </p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.3.3.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.3.3.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.3.3.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.3.3.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.3.3.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-libav/1.3.3.html">gst-libav</a>, or
+<a href="&site;/releases/gst-rtsp-server/1.3.3.html">gst-rtsp-server</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.3.3.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.3.3.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.3.3.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.3.3.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.3.3.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.3.3.tar.xz">gst-libav</a>, or
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.3.3.tar.xz">gst-rtsp-server</a>, or
+        </p>
+        <p>
+	Check the <a href="http://lists.freedesktop.org/archives/gstreamer-devel/2014-June/048534.html">release announcement mail</a> for details
+	and the release notes above for a list of changes.
+        </p>
+        </content>
+  </item>
+
 </news>
