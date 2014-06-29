@@ -5934,8 +5934,8 @@ or download tarballs for
   </item>
 
   <item>
-      <date>2014-06-29 20:00</date>
-        <title>GStreamer Core and Plugins 1.3.90 release candidate</title>
+      <date>2014-06-29 13:00</date>
+        <title>GStreamer Core, Plugins and RTSP server 1.3.90 release candidate</title>
         <content>
 <p>
 The GStreamer team is pleased to announce the first release candidate of
@@ -5965,15 +5965,17 @@ Check out the release notes for
 <a href="&site;/releases/gst-plugins-base/1.3.90.html">gst-plugins-base</a>,
 <a href="&site;/releases/gst-plugins-good/1.3.90.html">gst-plugins-good</a>,
 <a href="&site;/releases/gst-plugins-ugly/1.3.90.html">gst-plugins-ugly</a>,
-<a href="&site;/releases/gst-plugins-bad/1.3.90.html">gst-plugins-bad</a>, or
-<a href="&site;/releases/gst-libav/1.3.90.html">gst-libav</a>,
+<a href="&site;/releases/gst-plugins-bad/1.3.90.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-libav/1.3.90.html">gst-libav</a>, or
+<a href="&site;/releases/gst-rtsp-server/1.3.90.html">gst-rtsp-server</a>,
 or download tarballs for
 <a href="&site;/src/gstreamer/gstreamer-1.3.90.tar.xz">gstreamer</a>,
 <a href="&site;/src/gst-plugins-base/gst-plugins-base-1.3.90.tar.xz">gst-plugins-base</a>,
 <a href="&site;/src/gst-plugins-good/gst-plugins-good-1.3.90.tar.xz">gst-plugins-good</a>,
 <a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.3.90.tar.xz">gst-plugins-ugly</a>,
 <a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.3.90.tar.xz">gst-plugins-bad</a>, or
-<a href="&site;/src/gst-libav/gst-libav-1.3.90.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.3.90.tar.xz">gst-libav</a>, or
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.3.3.tar.xz">gst-rtsp-server</a>.
         </p>
         <p>
 	Check the <a href="http://lists.freedesktop.org/archives/gstreamer-devel/2014-June/048651.html">release announcement mail</a> for details
