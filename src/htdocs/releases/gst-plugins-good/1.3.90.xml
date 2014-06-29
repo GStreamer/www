@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plugins</module-fancy>
+  <name></name>
+  <version>1.3.90</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release candidate of
+the stable 1.4 release series. The 1.4 release series is adding new features
+on top of the 1.0 and 1.2 series and is part of the API and ABI-stable 1.x
+release series of the GStreamer multimedia framework.
+</p>
+<p>
+This release candidate will hopefully shortly be followed by the stable 1.4.0
+release if no bigger regressions or bigger issues are detected, and enough
+testing of the release candidate happened. The new API that was added during
+the 1.3 release series is not expected to change anymore at this point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows are provided together with this
+release.
+</p>
+<p>
+The stable 1.4 release series is API and ABI compatible with 1.0.x, 1.2.x and
+any other 1.x release series in the future. Compared to 1.2.x it contains some
+new features and more intrusive changes that were considered too risky as a
+bugfix.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plugins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plugins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plugin on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plugins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plugin
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plugins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Andoni Morales Alastruey</person>
+	<person>David Fernandez</person>
+	<person>Jan Schmidt</person>
+	<person>Miguel París Díaz</person>
+	<person>Olivier Crête</person>
+	<person>Ravi Kiran K N</person>
+	<person>Sebastian Dröge</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>701110</id>
+      <summary>videomixer: sinkpads GSList is not protected for multi-threading</summary>
+    </bug>
+    <bug>
+      <id>703753</id>
+      <summary>osxvideosink: remove legacy code for passing a windows ID</summary>
+    </bug>
+    <bug>
+      <id>731324</id>
+      <summary>rtpssrcdemux: manage ssrc of RTCP RR packets</summary>
+    </bug>
+    <bug>
+      <id>731533</id>
+      <summary>wavparse: Infinite loop in wavparse with some files</summary>
+    </bug>
+    <bug>
+      <id>732144</id>
+      <summary>videobox: Add unit tests</summary>
+    </bug>
+  </bugs>
+
+</release>

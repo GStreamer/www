@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.3.90</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release candidate of
+the stable 1.4 release series. The 1.4 release series is adding new features
+on top of the 1.0 and 1.2 series and is part of the API and ABI-stable 1.x
+release series of the GStreamer multimedia framework.
+</p>
+<p>
+This release candidate will hopefully shortly be followed by the stable 1.4.0
+release if no bigger regressions or bigger issues are detected, and enough
+testing of the release candidate happened. The new API that was added during
+the 1.3 release series is not expected to change anymore at this point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows are provided together with this
+release.
+</p>
+<p>
+The stable 1.4 release series is API and ABI compatible with 1.0.x, 1.2.x and
+any other 1.x release series in the future. Compared to 1.2.x it contains some
+new features and more intrusive changes that were considered too risky as a
+bugfix.
+</p>
+
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+<p>
+Applications ported to GStreamer 1.0 include Totem, RhythmBox, Sound-Juicer,
+Pitivi, Cheese, Empathy, Transmageddon, and others.
+</p>
+  </applications>
+-->
+
+        <contributors>
+	<person>Evan Nemerson</person>
+	<person>George Kiagiadakis</person>
+	<person>Olivier Crête</person>
+	<person>Philip Withnall</person>
+	<person>Sebastian Dröge</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  <bugs>
+    <bug>
+      <id>730873</id>
+      <summary>miniobject: Add missing (nullable) annotations</summary>
+    </bug>
+    <bug>
+      <id>730957</id>
+      <summary>Missing nullability annotations</summary>
+    </bug>
+    <bug>
+      <id>731303</id>
+      <summary>dataqueue: add bindings-friendly gst_data_queue_new_full()</summary>
+    </bug>
+    <bug>
+      <id>731350</id>
+      <summary>Add gst_queue_array_new variant which takes a GDestroyNotify</summary>
+    </bug>
+    <bug>
+      <id>731542</id>
+      <summary>base: introspection fixes</summary>
+    </bug>
+    <bug>
+      <id>732007</id>
+      <summary>Rename GstGlobalDeviceMonitor</summary>
+    </bug>
+  </bugs>
+</release>
