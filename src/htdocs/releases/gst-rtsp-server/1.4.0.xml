@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-rtsp-server</module>
+  <module-fancy>GStreamer RTSP Server Library</module-fancy>
+  <name></name>
+  <version>1.4.0</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release of
+the stable 1.4 release series. The 1.4 release series is adding new
+features on top of the 1.0 and 1.2 series and is part of the API and
+ABI-stable 1.x release series of the GStreamer multimedia framework.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows are provided together
+with this release.
+</p>
+
+<p>
+The stable 1.4 release series is API and ABI compatible with 1.0.x,
+1.2.x and any other 1.x release series in the future. Compared to 1.2.x
+it contains some new features and more intrusive changes that were
+considered too risky as a bugfix.
+</p>
+
+  </intro>
+
+    <contributors>
+	<person>Hyunjun Ko</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>733244</id>
+      <summary>Correct misspelled words</summary>
+    </bug>
+  </bugs>
+</release>
