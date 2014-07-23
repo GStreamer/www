@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-omx</module>
+  <module-fancy>GStreamer OpenMAX IL wrapper plugin</module-fancy>
+  <name></name>
+  <version>1.2.0</version>
+
+  <intro>
+    <p>
+The GStreamer project is proud to announce a new release of the
+GStreamer OpenMAX IL wrapper plugin for the API and ABI-stable
+1.x series of the GStreamer multimedia framework.
+</p>
+
+<p>
+This module contains a plugin that wraps available OpenMAX IL
+components and makes them available as standard GStreamer
+elements.
+</p>
+
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+</dl>
+
+</p>
+  </intro>
+
+  <features>
+    <feature>Generic support for OpenMAX IL implementations</feature>
+    <feature>Support for audio decoders</feature>
+    <feature>Support for raw and encoded audio sink</feature>
+    <feature>Improved support for the Raspberry Pi</feature>
+    <feature>Many bugfixes to work properly with AMD's, NVIDIA's, Qualcomm's and other OpenMAX IL implementations</feature>
+  </features>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Aurélien Zanelli</person>
+	<person>Carlos Rafael Giani</person>
+	<person>Christian König</person>
+	<person>Edward Hervey</person>
+	<person>Ilya Smelykh</person>
+	<person>Josep Torra</person>
+	<person>Julien Isorce</person>
+	<person>Kazunori Kobayashi</person>
+	<person>Michal Lazo</person>
+	<person>Roman Arutyunyan</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Sauer</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Zhao, Halley</person>
+	<person>jitendra</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>697574</id>
+      <summary>Only use EGL code paths conditionally if gstreamer-egl is available</summary>
+    </bug>
+    <bug>
+      <id>698049</id>
+      <summary>omxh264enc: openmax API ignores output bitrate</summary>
+    </bug>
+    <bug>
+      <id>698109</id>
+      <summary>Disable output port before transition to idle state</summary>
+    </bug>
+    <bug>
+      <id>699008</id>
+      <summary>Fix printf format compiler warning</summary>
+    </bug>
+    <bug>
+      <id>699754</id>
+      <summary>Don't force elements of type source/sink  to add two pads</summary>
+    </bug>
+    <bug>
+      <id>701706</id>
+      <summary>gst-omx testegl.c example not compatible with gstreamer 1.x</summary>
+    </bug>
+    <bug>
+      <id>710564</id>
+      <summary>Need to convert OMX alignments to GStreamer alignments</summary>
+    </bug>
+    <bug>
+      <id>710948</id>
+      <summary>omxvideodec: Doesn't recover after aspect ratio changes</summary>
+    </bug>
+    <bug>
+      <id>720031</id>
+      <summary>omxh264enc:  key frame interval missing</summary>
+    </bug>
+    <bug>
+      <id>723176</id>
+      <summary>omx: Examples need to be ported to 1.0</summary>
+    </bug>
+    <bug>
+      <id>723386</id>
+      <summary>Bad port index playing VC-1 WMV in Raspberry Pi</summary>
+    </bug>
+    <bug>
+      <id>723851</id>
+      <summary>omxvideoenc/dec: Fix for a startup race condition</summary>
+    </bug>
+    <bug>
+      <id>724236</id>
+      <summary>omx: Enhancements/cleanup for decoder/encoder frame handling</summary>
+    </bug>
+    <bug>
+      <id>725468</id>
+      <summary>Fix two serious message handling bugs</summary>
+    </bug>
+    <bug>
+      <id>725493</id>
+      <summary>Consolidate message waiting code</summary>
+    </bug>
+    <bug>
+      <id>725826</id>
+      <summary>omxvideoenc: Fix a minor memory leak in gst_omx_video_enc_getcaps</summary>
+    </bug>
+    <bug>
+      <id>725907</id>
+      <summary>omxvideodec: Two more minor fixes for memory leaks</summary>
+    </bug>
+    <bug>
+      <id>726021</id>
+      <summary>Simplify tunnel functions</summary>
+    </bug>
+    <bug>
+      <id>726024</id>
+      <summary>Share more code between video decoder and  encoder</summary>
+    </bug>
+    <bug>
+      <id>726025</id>
+      <summary>omxvideodec: separate the buffer pool from the decoder</summary>
+    </bug>
+    <bug>
+      <id>726038</id>
+      <summary>omxvideodec: Multiple issues during seeks</summary>
+    </bug>
+    <bug>
+      <id>726107</id>
+      <summary>omxvideodec: Drain pipeline to support adaptive streaming scenarios and partially fix gpu resource leaks</summary>
+    </bug>
+    <bug>
+      <id>726337</id>
+      <summary>omxbufferpool: leak buffers when stopped</summary>
+    </bug>
+    <bug>
+      <id>726669</id>
+      <summary>omxh264enc: Properly accumulate headers and provide them to the base class</summary>
+    </bug>
+    <bug>
+      <id>726957</id>
+      <summary>Add configure option for external omxil headers</summary>
+    </bug>
+    <bug>
+      <id>726958</id>
+      <summary>omxvideodec: add missing unlock in the error path</summary>
+    </bug>
+    <bug>
+      <id>727825</id>
+      <summary>omxvideodec: Enhance colorformat support</summary>
+    </bug>
+    <bug>
+      <id>728322</id>
+      <summary>omvideodec: don't unref caps before logging field from it</summary>
+    </bug>
+    <bug>
+      <id>728774</id>
+      <summary>omxvp8dec: fix typo in GST_TYPE_OMX_VP8_DEC define</summary>
+    </bug>
+    <bug>
+      <id>728940</id>
+      <summary>gst-omx: port testegl example to new libgstgl</summary>
+    </bug>
+    <bug>
+      <id>728962</id>
+      <summary>Add audiosink elements to support raw and ac3/dts passthrough on the RPI</summary>
+    </bug>
+    <bug>
+      <id>729196</id>
+      <summary>omxvideodec: no memory:EGLImage feature in the caps when using eglimage allocator</summary>
+    </bug>
+    <bug>
+      <id>730989</id>
+      <summary>omxdec: Get stuck while doing ctrl+c during preroll</summary>
+    </bug>
+    <bug>
+      <id>730995</id>
+      <summary>omxvideodec: Memory leak with interlaced h264 streams</summary>
+    </bug>
+    <bug>
+      <id>731141</id>
+      <summary>Fix a missing g_free() in error path</summary>
+    </bug>
+    <bug>
+      <id>731672</id>
+      <summary>omxvideodec: uses non-standard stride without videometa</summary>
+    </bug>
+    <bug>
+      <id>731898</id>
+      <summary>omxvideodec: fix a query leak</summary>
+    </bug>
+    <bug>
+      <id>732518</id>
+      <summary>Link with gmodule-2.0-no-export for g_module_*() API</summary>
+    </bug>
+    <bug>
+      <id>733168</id>
+      <summary>omxaudiosink: Does not set ports to non-flushing after prepare</summary>
+    </bug>
+  </bugs>
+
+</release>

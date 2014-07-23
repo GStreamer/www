@@ -6101,4 +6101,26 @@ or download tarballs for
         </content>
   </item>
 
+  <item>
+      <date>2014-07-23 12:00</date>
+        <title>GStreamer OpenMAX IL wrapper plugin 1.2.0 release</title>
+        <content>
+        <p>
+The GStreamer project is proud to announce a new release of the
+GStreamer OpenMAX IL wrapper plugin for the API and ABI-stable
+1.x series of the GStreamer multimedia framework.
+        </p>
+        <p>
+This plugin wraps available OpenMAX IL components and makes them
+available as standard GStreamer elements.
+        </p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gst-omx/1.2.0.html">gst-omx</a>,
+or download tarballs for
+<a href="&site;/src/gst-omx/gst-omx-1.2.0.tar.xz">gst-omx</a>,
+        </p>
+        </content>
+  </item>
+
 </news>

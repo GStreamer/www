@@ -1,4 +1,4 @@
-releases = 1.0.0 1.0.0 1.0.0 1.0.0 1.0.0
+releases = 1.2.0 1.0.0 1.0.0 1.0.0 1.0.0 1.0.0
 
 built_pages = \
         $(releases) \
