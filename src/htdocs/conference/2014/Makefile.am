@@ -1,13 +1,14 @@
 # speakers.html schedule.html
 built_pages = index.html
 
-# phoronix.png sponsor_150x54_igalia.png
-# sponsor_150x45_UbiCast.png
-# sponsor_150x49_collabora.png
+#phoronix.png sponsor_150x54_igalia.png
+#sponsor_150x49_collabora.png
 #sponsor_149x36_fluendo.png
-#sponsor_150x50_google.png
 #lwn.png
-images = Medienhafen_Duesseldorf_Nacht-cropped.jpg
+images = \
+	Medienhafen_Duesseldorf_Nacht-cropped.jpg \
+	sponsor_150x45_UbiCast.png \
+	sponsor_150x50_google.png
 
 documents = \
 	gstreamer-conference-sponsor-brief-2014.pdf

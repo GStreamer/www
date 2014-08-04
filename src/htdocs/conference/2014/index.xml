@@ -48,7 +48,10 @@
   </p>
 
   <h2>Call for Papers</h2>
-  <!-- The call for papers is now closed and talk proposals can no longer be submitted. -->
+  <p>
+  The call for papers is now closed and talk proposals can no longer be submitted.
+  </p>
+<!--
   <p>
   The call for papers is now open and talk proposals can be submitted.
   </p>
@@ -71,8 +74,9 @@
   what your plans are.
   </p>
   <p>
-  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference@<!-- -->lists.freedesktop.org</a>.
+  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference at lists.freedesktop.org</a>.
   </p>
+-->
 
   <h2>Showcase or Lightening Talks</h2>
   <p>
@@ -83,7 +87,7 @@
     mini-talk for our <i>lightening talk</i>/<i>showcase</i> event?
   </p>
   <p>
-    Simply send a quick mail to the e-mail address above to reserve your slot.
+    Simply send a quick mail to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- -->@<!-- -->lists.freedesktop.org</a> above to reserve your slot (subject to availability). Lightning Talk submissions are still accepted.
   </p>
 
   <h2>Schedule and speakers list</h2>
@@ -228,18 +232,21 @@
     <i>2014-September-XX</i>: the <a href="http://gstreamer.freedesktop.org/conference/2014/schedule.html">conference schedule</a> and is now available
   </p>
   <p>
-    <i>2014-July-XX</i>: <a href="http://www.ubicast.eu">UbiCast</a> welcomed as special media partner
-  </p>
-  <p>
     <i>2014-July-XX</i>: Hotel details have been added to the conference pages
   </p>
-  <p>
-    <i>2014-July-XX</i>: The call for papers deadline has been set to Thursday 25 July 2014
-  </p>
-  <p>
-    <i>2014-May-XX</i>: The call for papers is now open and talk proposals can be submitted
-  </p>
 -->
+  <p>
+    <i>2014-August-02</i>: <a href="http://www.ubicast.eu">UbiCast</a> is welcomed back as special media partner who will <a href="http://gstconf.ubicast.tv/">record the talks</a>
+  </p>
+  <p>
+    <i>2014-July-30</i>: The GStreamer project is delighted to welcome back <a href="http://www.google.com">Google</a> as Silver sponsor
+  </p>
+  <p>
+    <i>2014-July-30</i>: Paper submission is now closed, but Lightning talks (~5-10 mins) may still be submitted
+  </p>
+  <p>
+    <i>2014-June-30</i>: The call for papers is now open and talk proposals can be submitted
+  </p>
   <p>
     <i>2014-June-22</i>: The <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-conference-sponsor-brief-2014.pdf">Sponsor brief</a> is now available
   </p>
@@ -259,7 +266,30 @@
 
 <td valign="top">
   <h1>Sponsors</h1>
-   <p>
+  <h2>Silver Sponsors</h2>
+  <p>
+    <a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
+  </p>
+<!--
+  <p>
+    <a href="http://www.centricular.com" style="color:#555555"><div style="font-size:25px;font-family:verdana,arial,sans-serif;text-align:center;color:#555555">Centricular</div></a>
+  </p>
+-->
+<!--
+  <h2>Press Partners</h2>
+  <p>
+    <a href="http://lwn.net"><img src="lwn.png" alt="Lwn.net" height="61" width="150" /></a>
+  </p>
+  <p>
+    <a href="http://www.phoronix.com/"><img src="phoronix.png" alt="Phoronix.com" height="34" width="150" /></a>
+  </p>
+-->
+  <h2>Special Media Partners</h2>
+  <p>
+    <a href="http://www.ubicast.eu/"><img src="sponsor_150x45_UbiCast.png" alt="Ubi Cast" height="45" width="150" /></a>
+  </p>
+
+  <p>
     <small>
     Interested in <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-conference-sponsor-brief-2014.pdf">becoming a sponsor</a> ?
     </small>
