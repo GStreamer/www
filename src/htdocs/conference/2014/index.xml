@@ -90,14 +90,60 @@
     Simply send a quick mail to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- -->@<!-- -->lists.freedesktop.org</a> above to reserve your slot (subject to availability). Lightning Talk submissions are still accepted.
   </p>
 
+  <h2>Social Event</h2>
+  <p>
+    There will be a social event for registered attendees on
+    Thursday 16 October 2014 in the evening (details to be confirmed).
+  </p>
+
   <h2>Schedule and speakers list</h2>
   <p>
-    The conference schedule and speaker list will be available at a later date
-    once the call for papers has closed.
+    We have an exciting range of topics and speakers lined up for you
+    this year:
+    <ul>
+    <li>A New Tracing Subsystem for GStreamer <small><i> · Stefan Kost, Google</i></small></li>
+    <li>Cross-Platform WebRTC with GStreamer <small><i> · Robert Swain, Ericsson</i></small></li>
+    <li>GStreamer, it's all about the negotiation <small><i> · Edward Hervey</i></small></li>
+    <li>HTML5, the Web and GStreamer <small><i> · Luis de Bethencourt</i></small></li>
+    <li>GStreamer State of the Union <small><i> · Tim Müller, Centricular</i></small></li>
+    <li>Kurento: Creating a GStreamer-based Media Server for Real-Time Communication Services <small><i> · Luis López Fernández</i></small></li>
+    <li>Secure RTP <small><i> · Wim Taymans, RedHat</i></small></li>
+    <li>Smart Properties for Pipelines <small><i> · Jeongseok Kim, LG Electronics</i></small></li>
+    <li>Stereoscopic 3D Video <small><i> · Jan Schmidt, Centricular</i></small></li>
+    <li>Trick Modes in GStreamer <small><i> · Sebastian Dröge, Centricular</i></small></li>
+    <li>Using Playbin in a Limited Resources Environment <small><i> · Wonchul Lee, LG Electronics</i></small></li>
+    <li>Implementing WebRTC capabilities for GStreamer: the case of the Kurento WebRtcEndpoint <small><i> · Miguel París Díaz</i></small></li>
+    <li>Efficient multimedia support in QtWebKit on Raspberry Pi <small><i> · Philippe Normand and Miguel Gómez, Igalia</i></small></li>
+    <li>Validate your elements behaviour, Investigate your bugs and avoid regressions with gst-validate! <small><i> · Thibault Saunier</i></small></li>
+    <li>GStreamer on Wayland overview <small><i> · George Kiagiadaki, Collabora</i></small></li>
+    <li>The Development of Video4Linux Decoder support <small><i> · Nicolas Dufresne, Collabora</i></small></li>
+    <li>Bridging the divide between GStreamer and a largely C++11 codebase <small><i> · Cort Tompkins, IPConfigure</i></small></li>
+    <li>GStreamer and digital television support <small><i> · Reynaldo H. Verdejo Pinochet, Samsung</i></small></li>
+    <li>MPEG-H 3D Audio, next generation audio compression standard <small><i> · Tomasz Żernicki, Zylia</i></small></li>
+    <li>GStreamer's role in Tizen <small><i> · Chengjun Wang, Samsung</i></small></li>
+    <li>HLS, DASH, MMS: Adaptive Streaming Formats in GStreamer <small><i> · Thiago Sousa Santos, Samsung</i></small></li>
+    <li>State-of-the-art GStreamer on Android with Java and Scala <small><i> · Nenad V. Nikolić</i></small></li>
+    <li>OpenGL Desktop/ES for the GStreamer 1.4 pipeline <small><i> · Matthew Waters</i></small></li>
+    <li>Over the top GStreamer <small><i> · Alex Ashley, YouView</i></small></li>
+    <li>GstHarness again - A follow up <small><i> · Pexip</i></small></li>
+    <li>Videocodec development with GStreamer <small><i> · Pexip</i></small></li>
+    <li>Porting Pexip Infinity to 1.x - Live pipeline challenges <small><i> · Pexip</i></small></li>
+    </ul>
   </p>
   <p>
-    There will be a social event for attendees on Thursday 16 October 2014
-    in the evening (to be confirmed).
+    Lightning Talks:
+    <ul>
+    <li>Stream IDs and how they're used in Transmageddon <small><i> · Christian Schaller, RedHat</i></small></li>
+    <li>Time synchronization in multipoint audio streaming using GStreamer in 3DAudioSense system <small><i> · Tomasz Żernicki, Zylia</i></small></li>
+    <li>Testing Video4Linux Applications and Drivers <small><i> · Hans Verkuil, Cisco</i></small></li>
+    <li>Automatic audio-video synchronisation measurement using GStreamer and OpenCV <small><i> · Florent Thiery, UbiCast</i></small></li>
+    <li>Pexcision - Real-time media-detection testing-framework <small><i> · Pexip</i></small></li>
+    <li><i>Your talk here?</i></li>
+    </ul>
+  </p>
+  <p>
+    A more detailed conference schedule with talk abstracts and speaker bios
+    will be available in due course.
   </p>
   <!--
   <p>
@@ -255,12 +301,12 @@
   </p>
 
   <h1>Past GStreamer Conferences</h1>
-  <ul>
+  <li>
     <li><a href="../2013/index.html">22-23 October 2013 · Edinburgh International Conference Centre · Edinburgh, Scotland, UK</a></li>
     <li><a href="../2012/index.html">27-28 August 2012 · Sheraton San Diego Hotel &amp; Marina · San Diego, USA</a></li>
     <li><a href="../2011/index.html">24-25 October 2011 · Clarion Congress Hotel · Prague, Czech Republic</a></li>
     <li><a href="../2010/index.html">26 October 2010 · University Arms Hotel · Cambridge, UK</a></li>
-  </ul>
+  </li>
 
 </td>
 
