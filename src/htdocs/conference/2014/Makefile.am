@@ -1,5 +1,4 @@
-# speakers.html
-built_pages = index.html schedule.html
+built_pages = index.html schedule.html speakers.html
 
 #phoronix.png sponsor_150x54_igalia.png
 #sponsor_150x49_collabora.png
