@@ -102,7 +102,7 @@
     We have an exciting range of topics and speakers lined up for you
     this year:
     <ul>
-    <li>A New Tracing Subsystem for GStreamer <small><i> · Stefan Kost, Google</i></small></li>
+    <li>A New Tracing Subsystem for GStreamer <small><i> · Stefan Sauer, Google</i></small></li>
     <li>Cross-Platform WebRTC with GStreamer <small><i> · Robert Swain, Ericsson</i></small></li>
     <li>GStreamer, it's all about the negotiation <small><i> · Edward Hervey</i></small></li>
     <li>HTML5, the Web and GStreamer <small><i> · Luis de Bethencourt</i></small></li>
@@ -113,9 +113,9 @@
     <li>Stereoscopic 3D Video <small><i> · Jan Schmidt, Centricular</i></small></li>
     <li>Trick Modes in GStreamer <small><i> · Sebastian Dröge, Centricular</i></small></li>
     <li>Using Playbin in a Limited Resources Environment <small><i> · Wonchul Lee, LG Electronics</i></small></li>
-    <li>Implementing WebRTC capabilities for GStreamer: the case of the Kurento WebRtcEndpoint <small><i> · Miguel París Díaz</i></small></li>
+    <li>Implementing WebRTC capabilities for GStreamer: the case of the Kurento WebRtcEndpoint <small><i> · Miguel París Díaz, Kurento</i></small></li>
     <li>Efficient multimedia support in QtWebKit on Raspberry Pi <small><i> · Philippe Normand and Miguel Gómez, Igalia</i></small></li>
-    <li>Validate your elements behaviour, Investigate your bugs and avoid regressions with gst-validate! <small><i> · Thibault Saunier</i></small></li>
+    <li>Validate your elements behaviour, Investigate your bugs and avoid regressions with gst-validate! <small><i> · Thibault Saunier, Collabora</i></small></li>
     <li>GStreamer on Wayland overview <small><i> · George Kiagiadaki, Collabora</i></small></li>
     <li>The Development of Video4Linux Decoder support <small><i> · Nicolas Dufresne, Collabora</i></small></li>
     <li>Bridging the divide between GStreamer and a largely C++11 codebase <small><i> · Cort Tompkins, IPConfigure</i></small></li>
@@ -139,6 +139,7 @@
     <li>Testing Video4Linux Applications and Drivers <small><i> · Hans Verkuil, Cisco</i></small></li>
     <li>Automatic audio-video synchronisation measurement using GStreamer and OpenCV <small><i> · Florent Thiery, UbiCast</i></small></li>
     <li>Pexcision - Real-time media-detection testing-framework <small><i> · Pexip</i></small></li>
+    <li>Time based seek and trick play features in GStreamer <small><i> · Ramesh Venkatachalapathy, LG Electronics</i></small></li>
     <li><i>Your talk here?</i></li>
     </ul>
   </p>
@@ -261,12 +262,12 @@
 
   <h2>Venue</h2>
   <p>
-  The conference will take place in room 15 and 16 of the
-  <a href="http://www.ccd.de/en/route/1_9_0/anreise/thumbs/8">CCD Congress Center
+  The conference will take place in rooms 15 and 16 of the
+  <a href="http://www.ccd.de/en/route/1_9_0/anreise/8">CCD Congress Center
   Düsseldorf</a>, which is located in the south east corner of the
   'Messe Düsseldorf' (i.e. the Düsseldorf fair/exhibition center) area, which
   itself is located a bit outside the city center but within easy reach of
-  it. A Taxi from the Altstadt takes ca. 10 minutes and costs around 12 EUR,
+  it. A taxi from the Altstadt should take ca. 10 minutes and cost around 12 EUR,
   a taxi to/from the airport should be roughly the same.
   </p><p>
   The venue is served directly by
@@ -281,36 +282,48 @@
   "Messe Ost/Stockumer Kirchstr.", from which it is a 10-15 minute walk to
   the venue (ca. 1km, just over half a mile). Alternatively, there are a number
   of busses (722, 896, and others) which will take you to the venue from there.
+  </p><p>
+  <a href="http://www.ccd.de/global/dbbin/130313_113858_anfahrtsplan_oepnv___032010.pdf">Map (pdf)</a>
   </p>
 
   <h2>Hotels</h2>
   <p>
-  A list of hotels will be posted here closer to the time.
+  This is just a small selection of hotels which may or may not be suitable.
+  Düsseldorf is an international business centre and tourist destination
+  and as such has many hotels and hostels in all price categories. The below
+  is merely a small selection, you can find more using the usual booking
+  engines. 'Stadtmitte' (city centre) north west of the central station
+  (Düsseldorf Hbf) towards the 'Altstadt' (old town)  might be a convenient
+  area to be in, as it's close to the bars and restaurants of the Altstadt and
+  the U78/U79 metro that will take you to the venue or the centre also passes
+  through there.
   </p>
-  <!--
-  <h3>Foo Hotel</h3>
+  <h3>Hilton and Radisson Blue Scandinavia</h3>
   <p>
-  The Linux Foundation has reserved a block of rooms at a discounted rate of
-  £89 (€105/$135) per night for a single room and £99 (€115/$150) for a double/twin
-  room (incl. taxes and breakfast) at the
-  <a href="http://www3.hilton.com/en/hotels/united-kingdom/hilton-edinburgh-grosvenor-hotel-EDNGRHN/index.html">Hilton Edinburgh Grosvenor Hotel</a>,
-  which GStreamer Conference attendees can use as well. The hotel is about
-  5-10 minutes walk from the Edinburgh International Conference Centre where the
-  conference will take place. This rate is available only up to 60 days before
-  arrival, and there are also other conferences such as LinuxCon going on in the
-  same week, so make sure to book as early as possible.
-  </p>
-  <p>
-  <a href="http://www.hilton.com/en/hi/groups/personalized/E/EDNGRHN-GLINA-20131019/index.jhtml?WT.mc_id=POG">Reserve your room online by clicking here</a>.
+  The Linux Foundation has <a href="http://events.linuxfoundation.org/events/linuxcon-europe/attend/hotel-and-travel">negotiated a discounted rate</a>
+  of €149 ($195) and €143 ($188) per night incl. taxes at the
+  Hilton Düsseldorf and the Radisson Blue Scandinavia Düsseldorf. Both are
+  located within easy reach (but not necessarily walking distance) of both
+  the venue and the Altstadt and close to U78/U79 metro stops. GStreamer
+  conference attendees may make use of these rates. Those looking for
+  something more luxurious will find something suitable near the
+  Königsallee ("Kö").
   </p>
 
-  <h3>Other hotels</h3>
+  <h3>City Centre</h3>
   <p>
-  Düsseldorf is an international tourist destination and as such has many hotels
-  and hostels in all price categories. The above is merely a small selection,
-  you can find more using the usual booking engines.
+  These hotels are centrally located and at the time of writing had a
+  reaonable number of rooms left, but there are many smaller hotels in
+  the area which may be even better located or provide better value:
+  <ul>
+    <li>Motel One Düsseldorf Hauptbahnhof</li>
+    <li>Mercure Hotel Düsseldorf City Centre</li>
+    <li>ibis Düsseldorf Hauptbahnhof</li>
+    <li>Hotel Prinz Anton</li>
+    <li>Novum Business Hotel Madison Düsseldorf Hauptbahnhof</li>
+  </ul>
+  Keep in mind that there will also be a breakfast buffet at the venue.
   </p>
-  -->
 
   <h2>Contact</h2>
   <p>
