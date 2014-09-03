@@ -105,7 +105,7 @@
     <li>A New Tracing Subsystem for GStreamer <small><i> · Stefan Sauer, Google</i></small></li>
     <li>Cross-Platform WebRTC with GStreamer <small><i> · Robert Swain, Ericsson</i></small></li>
     <li>GStreamer, it's all about the negotiation <small><i> · Edward Hervey</i></small></li>
-    <li>HTML5, the Web and GStreamer <small><i> · Luis de Bethencourt</i></small></li>
+    <li>HTML5, the Web and GStreamer <small><i> · Luis de Bethencourt, Samsung</i></small></li>
     <li>GStreamer State of the Union <small><i> · Tim Müller, Centricular</i></small></li>
     <li>Kurento: Creating a GStreamer-based Media Server for Real-Time Communication Services <small><i> · Luis López Fernández</i></small></li>
     <li>Secure RTP <small><i> · Wim Taymans, RedHat</i></small></li>
@@ -116,7 +116,7 @@
     <li>Implementing WebRTC capabilities for GStreamer: the case of the Kurento WebRtcEndpoint <small><i> · Miguel París Díaz, Kurento</i></small></li>
     <li>Efficient multimedia support in QtWebKit on Raspberry Pi <small><i> · Philippe Normand and Miguel Gómez, Igalia</i></small></li>
     <li>Validate your elements behaviour, Investigate your bugs and avoid regressions with gst-validate! <small><i> · Thibault Saunier, Collabora</i></small></li>
-    <li>GStreamer on Wayland overview <small><i> · George Kiagiadaki, Collabora</i></small></li>
+    <li>GStreamer on Wayland overview <small><i> · George Kiagiadakis, Collabora</i></small></li>
     <li>The Development of Video4Linux Decoder support <small><i> · Nicolas Dufresne, Collabora</i></small></li>
     <li>Bridging the divide between GStreamer and a largely C++11 codebase <small><i> · Cort Tompkins, IPConfigure</i></small></li>
     <li>GStreamer and digital television support <small><i> · Reynaldo H. Verdejo Pinochet, Samsung</i></small></li>
