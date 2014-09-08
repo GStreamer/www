@@ -215,6 +215,10 @@ guaranteed to be API and ABI stable</b></p>
  <td>QtGStreamer Reference</td>
  <td colspan="3"><a href="&site;/data/doc/gstreamer/head/qt-gstreamer/html/">HTML</a></td>
 </tr>
+<tr>
+ <td>GstValidate Reference</td>
+ <td colspan="3"><a href="&site;/data/doc/gstreamer/head/gst-validate/html/">HTML</a></td>
+</tr>
 
 </table>
 
