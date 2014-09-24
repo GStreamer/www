@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version>1.3.90</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release candidate of
+the stable 1.4 release series. The 1.4 release series is adding new features
+on top of the 1.0 and 1.2 series and is part of the API and ABI-stable 1.x
+release series of the GStreamer Editing Services.
+</p>
+<p>
+This release candidate will hopefully shortly be followed by the stable 1.4.0
+release if no bigger regressions or bigger issues are detected, and enough
+testing of the release candidate happened. The new API that was added during
+the 1.3 release series is not expected to change anymore at this point.
+</p>
+<p>
+The stable 1.4 release series is API and ABI compatible with 1.0.x, 1.2.x and
+any other 1.x release series in the future. Compared to 1.2.x it contains some
+new features and more intrusive changes that were considered too risky as a
+bugfix.
+</p>
+
+  </intro>
+  <features>
+  </features>
+
+  <applications>
+  </applications>
+
+      <contributors>
+	<person>Alexandru Băluț</person>
+	<person>Christoph Reiter</person>
+	<person>Edward Hervey</person>
+	<person>Lazar Claudiu</person>
+	<person>Lubosz Sarnecki</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Sebastian Dröge</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>719373</id>
+      <summary>Add multifilesrc support to GES</summary>
+    </bug>
+    <bug>
+      <id>720023</id>
+      <summary>[pitivi] GStreamer effect properties are received in random order</summary>
+    </bug>
+    <bug>
+      <id>727776</id>
+      <summary>docs: include class related section documentation in the gir file</summary>
+    </bug>
+    <bug>
+      <id>729382</id>
+      <summary>Add a name property to GESTimelineElement</summary>
+    </bug>
+    <bug>
+      <id>730691</id>
+      <summary>Fix invalid GEnumValue.value_name entries</summary>
+    </bug>
+    <bug>
+      <id>730806</id>
+      <summary>Incorrect handling of transitions in ges-launch</summary>
+    </bug>
+    <bug>
+      <id>731245</id>
+      <summary>pipeline: Add support to rendering without container</summary>
+    </bug>
+    <bug>
+      <id>731248</id>
+      <summary>Enhance and rename ges_clip_set_priority and add tests to it</summary>
+    </bug>
+    <bug>
+      <id>735121</id>
+      <summary>ges-launch: Clean up help page and add profile option</summary>
+    </bug>
+  </bugs>
+</release>
