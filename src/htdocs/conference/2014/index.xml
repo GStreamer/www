@@ -84,7 +84,7 @@
     If you don't think you have enough material for a full talk, but perhaps
     just want to showcase something you're working on, or present a problem or
     challenge you are facing or have solved, and that you think might be
-    interesting for others to hear about, why not submit a 5-8 minute
+    interesting for others to hear about, why not submit a 5-7 minute
     mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
   </p>
   <p>
@@ -136,10 +136,15 @@
     <ul>
     <li>Stream IDs and how they're used in Transmageddon <small><i> · Christian Schaller, RedHat</i></small></li>
     <li>Time synchronization in multipoint audio streaming using GStreamer in 3DAudioSense system <small><i> · Tomasz Żernicki, Zylia</i></small></li>
-    <li>Testing Video4Linux Applications and Drivers <small><i> · Hans Verkuil, Cisco</i></small></li>
+    <li>Testing Video4Linux Applications and Drivers <small><i> · Hans Verkuil, Cisco</i></small><br />
+        <small>(the long version of this talk can be seen on Tuesday October 14 at 11:15am as part of ELCE)</small></li>
     <li>Automatic audio-video synchronisation measurement using GStreamer and OpenCV <small><i> · Florent Thiery, UbiCast</i></small></li>
     <li>Pexcision - Real-time media-detection testing-framework <small><i> · Pexip</i></small></li>
     <li>Time based seek and trick play features in GStreamer <small><i> · Ramesh Venkatachalapathy, LG Electronics</i></small></li>
+    <li>Using GStreamer to set up Raspberry Pi as a surveillance camera <small><i> · Vivia Nikolaidou</i></small></li>
+    <li>Low Power Audio pipeline with PulseAudio <small><i> · Manohar Babu K, LG Electronics</i></small></li>
+    <li>Dynamic switching of music playback on hardware/software pipelines for Low power Audio <small><i> · Biju Malayil, LG Electronics</i></small></li>
+    <li>GStreamer streamiddemux element <small><i> · HoonHee Lee, LG Electronics</i></small></li>
     <li><i>Your talk here?</i></li>
     </ul>
   </p>
@@ -350,7 +355,7 @@
     <i>2014-July-30</i>: The GStreamer project is delighted to welcome back <a href="http://www.google.com">Google</a> as Silver sponsor
   </p>
   <p>
-    <i>2014-July-30</i>: Paper submission is now closed, but Lightning talks (~5-10 mins) may still be submitted
+    <i>2014-July-30</i>: Paper submission is now closed, but Lightning talks (~5-7 mins) may still be submitted
   </p>
   <p>
     <i>2014-June-30</i>: The call for papers is now open and talk proposals can be submitted
@@ -378,11 +383,9 @@
   <p>
     <a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
   </p>
-<!--
   <p>
     <a href="http://www.centricular.com" style="color:#555555"><div style="font-size:25px;font-family:verdana,arial,sans-serif;text-align:center;color:#555555">Centricular</div></a>
   </p>
--->
 <!--
   <h2>Press Partners</h2>
   <p>
