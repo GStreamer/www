@@ -145,6 +145,7 @@
     <li>Low Power Audio pipeline with PulseAudio <small><i> · Manohar Babu K, LG Electronics</i></small></li>
     <li>Dynamic switching of music playback on hardware/software pipelines for Low power Audio <small><i> · Biju Malayil, LG Electronics</i></small></li>
     <li>GStreamer streamiddemux element <small><i> · HoonHee Lee, LG Electronics</i></small></li>
+    <li>The Linux DVB libdvbv5 library for digital TV applications<small><i> · Mauro Carvalho Chehab, Samsung</i></small></li>
     <li><i>Your talk here?</i></li>
     </ul>
   </p>
