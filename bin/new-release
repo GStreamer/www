@@ -140,7 +140,16 @@ else
   bin/update-contributors $changelog $release.xml
 fi
 echo "Updating bugs"
-bin/bugzilla $module $version GStreamer $release.xml
+if [ $module == gst-devtools ];
+then
+  $product = "gst-devtools"
+  $sub_component = 'validate'
+else
+  $product = $module
+  $sub_component = ''
+fi
+
+bin/bugzilla $product $version GStreamer $release.xml $sub_component
 
 # update releases Makefile.am
 makefileam=src/htdocs/releases/$module/Makefile.am

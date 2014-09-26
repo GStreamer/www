@@ -6319,4 +6319,30 @@ or download tarballs for
         </content>
   </item>
 
+  <item>
+      <date>2014-09-29 13:00</date>
+        <title>GstValidate 1.3.90 release candidate</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the first release candidate of
+the stable 1.4 version of the GstValidate developper tool.
+</p>
+<p>
+This release candidate will hopefully shortly be followed by the stable 1.4.0
+release if no bigger regressions or bigger issues are detected, and enough
+testing of the release candidate happened. The new API that was added during
+the 1.3 release series is not expected to change anymore at this point.
+</p>
+<p>
+</p>
+
+<p>
+Check out the release notes for
+<a href="&site;/releases/gst-validate/1.3.90.html">here</a>,
+and download tarballs
+<a href="&site;/src/gst-validate/gst-validate-1.3.90.tar.xz">here</a>,
+</p>
+        </content>
+  </item>
+
 </news>

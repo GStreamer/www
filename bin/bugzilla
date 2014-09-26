@@ -119,7 +119,7 @@ class HP(HTMLParser.HTMLParser):
 
 def main(args):
     if len(args) < 3:
-        print 'Usage: %s component milestone [product] [file]' % args[0]
+        print 'Usage: %s component milestone [product] [file] <component>' % args[0]
         return 2
 
     # translate the component if it's in our dict of components
@@ -139,6 +139,11 @@ def main(args):
     else:
         output = args[4]
 
+    if len(args) <= 5:
+        sub_component = None
+    else:
+        sub_component = args[5]
+
     url = URL % (product, urllib.quote(component), milestone)
     fd = urllib.urlopen(url)
     
@@ -148,7 +153,8 @@ def main(args):
     lines = ["\n", ]
     lines.append(HEADER)
     for bug_id, summary in hp.bugs:
-        lines.append(ITEM % (bug_id, summary))
+        if sub_component is None or sub_component in summary:
+            lines.append(ITEM % (bug_id, summary))
     lines.append(FOOTER)
     bugs = "\n".join(lines)
 

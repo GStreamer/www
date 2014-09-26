@@ -18,6 +18,7 @@
 <!ENTITY gst-android-version-stable "git master">
 <!ENTITY gst-omx-version-stable "1.2.0">
 
+<!ENTITY gst-validate-stable "1.3.90">
 <!ENTITY gst-version-devel "git master">
 <!ENTITY gst-plugins-base-version-devel "git master">
 <!ENTITY gst-plugins-good-version-devel "git master">
@@ -30,6 +31,7 @@
 <!ENTITY gst-android-version-devel "git master">
 <!ENTITY gst-omx-version-devel "git master">
 
+<!ENTITY gst-validate-devel "1.3.90">
 <!ENTITY gst-python-version-devel "1.3.90">
 <!ENTITY gnonlin-version-devel "1.3.90">
 <!ENTITY gst-editing-services-version-devel "1.3.90">
