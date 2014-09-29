@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.4.2</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce a bugfix release of the stable
+1.4 release series. The 1.4 release series is adding new features on top
+of the 1.2 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework that contains new features.
+The 1.4.x bugfix releases only contain important bugfixes compared to 1.4.0.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows are provided by the
+GStreamer project for this release.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users. It is not API
+or ABI compatible with the 0.10.x series. It can, however, be installed
+in parallel with the 0.10.x series and will not affect an existing
+0.10.x installation.
+</p>
+<p>
+The stable 1.4.x release series is API and ABI compatible with 1.0.x and
+any other 1.x release series in the future. Compared to 1.0.x it contains
+some new features and more intrusive changes that were considered too
+risky as a bugfix.
+</p>
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Andrei Sarakeev</person>
+	<person>Arnaud Vrac</person>
+	<person>Garg</person>
+	<person>George Kiagiadakis</person>
+	<person>Göran Jönsson</person>
+	<person>Kipp Cannon</person>
+	<person>Ognyan Tonchev</person>
+	<person>Ravi Kiran K N</person>
+	<person>Sebastian Dröge</person>
+	<person>Thiago Santos</person>
+	<person>Vineeth T M</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>732908</id>
+      <summary>audioresample: skips samples unless input buffers have correct size</summary>
+    </bug>
+    <bug>
+      <id>727255</id>
+      <summary>playbin: filter out buffering messages when switching URI and the previous URI is still playing</summary>
+    </bug>
+    <bug>
+      <id>729811</id>
+      <summary>output-selector: test example in gstreamer plugin base is giving &quot; Internal data flow error &quot; </summary>
+    </bug>
+    <bug>
+      <id>735569</id>
+      <summary>rtspconnection: Crash due to no protection of watchs readsrc</summary>
+    </bug>
+    <bug>
+      <id>735748</id>
+      <summary>playbin: can't play an avi file in totem with audio-filter=scaletempo</summary>
+    </bug>
+    <bug>
+      <id>735800</id>
+      <summary>textoverlay: Two textoverlay in sequence fail to negotiate (regression)</summary>
+    </bug>
+    <bug>
+      <id>735844</id>
+      <summary>basetextoverlay/pango: overlay negotiation fails when it should not</summary>
+    </bug>
+    <bug>
+      <id>735952</id>
+      <summary>videorate: GstStructure refcount critical message</summary>
+    </bug>
+    <bug>
+      <id>736071</id>
+      <summary>audiobasesink: Don't hold object lock while calling into other objects like the clock</summary>
+    </bug>
+    <bug>
+      <id>736118</id>
+      <summary>videofilter: The buffer is not writable in transform_frame_ip</summary>
+    </bug>
+    <bug>
+      <id>736739</id>
+      <summary>audiocdsrc: do not leak uid after parsing TOC select event</summary>
+    </bug>
+    <bug>
+      <id>736779</id>
+      <summary>typefind: h265 IRAP picture always true</summary>
+    </bug>
+    <bug>
+      <id>736788</id>
+      <summary>audiodecoder: leaks events</summary>
+    </bug>
+    <bug>
+      <id>736796</id>
+      <summary>videoencoder: do not leak events when flushing them</summary>
+    </bug>
+    <bug>
+      <id>736861</id>
+      <summary>playbin: Reference count bug</summary>
+    </bug>
+    <bug>
+      <id>736679</id>
+      <summary>videodecoder: do not leak pool and allocator in error case</summary>
+    </bug>
+  </bugs>
+
+</release>
