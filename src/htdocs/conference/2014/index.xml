@@ -108,7 +108,7 @@
     <li>HTML5, the Web and GStreamer <small><i> · Luis de Bethencourt, Samsung</i></small></li>
     <li>GStreamer State of the Union <small><i> · Tim Müller, Centricular</i></small></li>
     <li>Kurento: Creating a GStreamer-based Media Server for Real-Time Communication Services <small><i> · Luis López Fernández</i></small></li>
-    <li>Secure RTP <small><i> · Wim Taymans, RedHat</i></small></li>
+    <li>Image Conversion <small><i> · Wim Taymans, RedHat</i></small></li>
     <li>Smart Properties for Pipelines <small><i> · Jeongseok Kim, LG Electronics</i></small></li>
     <li>Stereoscopic 3D Video <small><i> · Jan Schmidt, Centricular</i></small></li>
     <li>Trick Modes in GStreamer <small><i> · Sebastian Dröge, Centricular</i></small></li>
@@ -148,6 +148,7 @@
     <li>The Linux DVB libdvbv5 library for digital TV applications<small><i> · Mauro Carvalho Chehab, Samsung</i></small></li>
     <li>gnonlin? it's dead, jim (a new design for dynamic pipelines) <small><i> · Mathieu Duponchelle</i></small></li>
     <li>Reducing the loading time with playbin <small><i> · Hyejin Choi, LG CNS</i></small></li>
+    <li>Secure RTP <small><i> · Wim Taymans, RedHat</i></small></li>
     <li><i>Your talk here?</i></li>
     </ul>
   </p>
