@@ -37,36 +37,113 @@
 		<td><p>08.30</p></td>
 	</tr>
 	<tr valign="top">
-		<td><p>09.00-<br />09.10</p></td>
+		<td><p>09.00-<br />09.05</p></td>
 		<td colspan="2"><p align="center"><i>Opening and welcome to the 2014 GStreamer Conference</i><br /><!-- FIXME Christian Schaller (cschalle) --></p>
 		<p align="center"><small>Room 15</small></p>
-        </td>
-		<td><p>09.00-<br />09.10</p></td>
+                </td>
+		<td><p>09.00-<br />09.05</p></td>
 	</tr>
 
 	<tr valign="top">
-		<td><p>09.10-<br />17.50</p></td>
-		<td colspan="2">
-		<p align="center">Exact conference schedule yet to be finalised, please check back again soon</p>
-		</td>
-		<td><p>09.10-<br />17.50</p></td>
-	</tr>
-<!--
-	<tr valign="top">
-		<td><p>09.10</p></td>
+		<td><p>09.05-<br />09.50</p></td>
 		<td colspan="2">
 		<p align="center"><i>Keynote</i></p>
-        <p align="center"><a href="&site;/conference/2013/speakers.html#muller-nextlevel">Taking GStreamer to the Next Level</a><br />Tim-Philipp Müller (__tim), Centricular</p>
-		<p align="center"><small>Kilsyth room</small></p>
+        <p align="center"><a href="&site;/conference/2014/speakers.html#mueller-gstreamer-state-of-the-union">GStreamer State of the Union</a><br />Tim-Philipp Müller (__tim), Centricular</p>
+		<p align="center"><small>Room 15</small></p>
 		</td>
-		<td><p>10.00</p></td>
+		<td><p>09.05-<br />09.50</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>09.50-<br />10.05</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>09.50-<br />10.05</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>10.05-<br />10.50</p></td>
+		<td colspan="2">
+		<p align="center">2x 45 mins talks</p>
+		</td>
+		<td><p>10.05-<br />10.50</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p>10.50-<br />11.20</p></td>
+		<td colspan="2">
+		<p align="center">2x 30 mins talks</p>
+		</td>
+		<td><p>10.50-<br />11.20</p></td>
 	</tr>
 
 	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>10.45</p></td>
+		<td><p>11.20-<br />11.45</p></td>
 		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
-		<td><p>10.45</p></td>
+		<td><p>11.20-<br />11.45</p></td>
 	</tr>
+
+	<tr valign="top">
+		<td><p>11.45-<br />12.30</p></td>
+		<td colspan="2">
+		<p align="center">2x 45 mins talks</p>
+		</td>
+		<td><p>11.45-<br />12.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>12.30-<br />13.50</p></td>
+		<td colspan="2"><p align="center"><b>Lunch Break</b></p></td>
+		<td><p>12.30-<br />13.50</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>13.50-<br />14.30</p></td>
+		<td colspan="2">
+		<p align="center">2x 40 mins talks</p>
+		</td>
+		<td><p>13.50-<br />14.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>14.30-<br />14.45</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>14.30-<br />14.45</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.45-<br />15.30</p></td>
+		<td colspan="2">
+		<p align="center">2x 45 mins talks</p>
+		</td>
+		<td><p>14.45-<br />15.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>15.30-<br />16.00</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>15.30-<br />16.00</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.00-<br />16.30</p></td>
+		<td colspan="2">
+		<p align="center">2x 30 mins talks</p>
+		</td>
+		<td><p>16.00-<br />16.30</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.30-<br />17.50</p></td>
+		<td colspan="2"><p align="center"><i>Lightning Talks - part I</i><br /><!-- FIXME list talks? --></p>
+		<p align="center"><small>Room 15</small></p>
+                </td>
+		<td><p>16.30-<br />17.50</p></td>
+	</tr>
+
+<!--
 
 	<tr valign="top">
 		<td><p>11.00</p></td>
@@ -78,94 +155,8 @@
 		</td>
 		<td><p>11.00</p></td>
 	</tr>
-
-	<tr valign="top">
-		<td rowspan="2"><p>11.30</p></td>
-		<td rowspan="2">
-			<p><a href="&site;/conference/2013/speakers.html#schleef-gss">Latest GStreamer Streaming Server features: Video on Demand, Smooth Streaming, and DRM</a><br />David Schleef (ds), Rdio</p>
-		</td>
-		<td>
-			<p><a href="&site;/conference/2013/speakers.html#picard-stb-player">GStreamer-based Media Player for SetTopBox</a><br />Romain Picard, SoftAtHome</p></td>
-		<td><p>11.30</p></td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p><a href="&site;/conference/2013/speakers.html#moutte-flump">FluMediaPlayer: Growing our user base through high level media player API</a><br />Julien Moutte (dolphy), Fluendo</p></td>
-		<td><p>12.00</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>12.30</p></td>
-		<td colspan="2">
-		<p align="center"><b>Lunch</b></p>
-		</td>
-		<td><p>12.30</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td rowspan="2"><p>14.00</p></td>
-		<td rowspan="2">
-			<p><a href="&site;/conference/2013/speakers.html#droge-hw-integration">The never-ending story: GStreamer and hardware integration</a><br />Sebastian Dröge (slomo), Centricular</p>
-		</td>
-		<td>
-			<p><a href="&site;/conference/2013/speakers.html#calvar-webkit">WebKit and GStreamer</a><br />Xabier Rodríguez Calvar (calvaris), Igalia</p></td>
-		<td><p>14.00</p></td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p><a href="&site;/conference/2013/speakers.html#quessy-toonloop">Application Showcase: Toonloop, the Live Stop Motion Editor</a><br />Alexandre Quessy (aalex), Perte de Signal</p></td>
-		<td><p>14.30</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>15.00</p></td>
-		<td>
-			<p><a href="&site;/conference/2013/speakers.html#waters-opengl">GStreamer and OpenGL plugins in 1.0</a><br />Matthew Waters (ystreet00)</p>
-		</td>
-		<td>
-			<p><a href="&site;/conference/2013/speakers.html#frisch-dreambox">Case Study: GStreamer on the Dreambox</a><br />Andreas Frisch (fraxinas), Dream Property</p>
-		</td>
-		<td><p>15.00</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td rowspan="2"><p>15.30</p></td>
-		<td rowspan="2">
-			<p><a href="&site;/conference/2013/speakers.html#taymans-rtsp">Latest GStreamer RTSP Server features</a><br />Wim Taymans (wtay), Collabora</p>
-		</td>
-		<td>
-			<p><a href="&site;/conference/2013/speakers.html#vermeir-hevc">Next Generation Video Coding with HEVC: Facts and Figures</a><br />Thijs Vermeir (lovebug356), Barco</p></td>
-		<td><p>15.30</p></td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p><a href="&site;/conference/2013/speakers.html#sauer-mediainfo">Application Showcase: gst-media-info</a><br />Stefan Sauer (ensonic), Google</p></td>
-		<td><p>16.00</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>16.15</p></td>
-		<td colspan="2">
-		<p align="center"><b>Coffee Break</b></p>
-		</td>
-		<td><p>16.15</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td rowspan="2"><p>17.00</p></td>
-		<td rowspan="2">
-			<p><a href="&site;/conference/2013/speakers.html#morales-android-ios">GStreamer for Mobile Platforms: Android and iOS</a><br />Andoni Morales (ylatuya), Fluendo</p>
-		</td>
-		<td>
-			<p><a href="&site;/conference/2013/speakers.html#duponchelle-saunier-ges">GES - The Open Source Swiss Army Knife of Multimedia Editing</a><br />Mathieu Duponchelle (Mathieu_Du) and Thibault Saunier (thiblahute)</p></td>
-		<td><p>17.00</p></td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p><a href="&site;/conference/2013/speakers.html#emont-cairosink">Cairosink and GPU Buffer Sharing</a><br />Guillaume Emont (guijemont), Igalia</p></td>
-		<td><p>17.30</p></td>
-	</tr>
 -->
+
 	<tr valign="top" bgcolor="#E0E0E0">
 		<td><p>18.00</p></td>
 		<td colspan="2">
@@ -175,7 +166,7 @@
 	</tr>
 
 	<tr valign="center" bgcolor="#E0E0E0">
-		<td><p>19.30-<br />23.00</p></td>
+		<td><p>19.00-<br />23.00</p></td>
 		<td colspan="2">
 		<p align="center"><b>Social Event: Drinks and Food</b></p>
 		<p align="center">at <!--<a href="">-->Location to be confirmed<!--</a>--><!--, 18 Morrison St, EH3 8BJ (<a href="https://maps.google.co.uk/maps?saddr=EICC,+Morrison+Street,+Edinburgh&amp;daddr=Lebowskis+Bar+Edinburgh,+Morrison+Street,+Edinburgh&amp;hl=en&amp;sll=55.945788,-3.208146&amp;sspn=0.002229,0.005638&amp;geocode=FYerVQMdAgbP_yHxPxfF4v0ejilZHW-zo8eHSDHxPxfF4v0ejg%3BFa-qVQMdABPP_yEuJOcDaY1qrimtW815pMeHSDEuJOcDaY1qrg&amp;oq=lebows&amp;dirflg=w&amp;mra=ltm&amp;t=m&amp;z=18">map</a>)--></p>
@@ -183,7 +174,7 @@
 		<p align="center">at <a href="http://www.lebowskis.co.uk/lebowskis-edinburgh.php">Lebowskis Bar</a>, 18 Morrison St, EH3 8BJ (<a href="https://maps.google.co.uk/maps?saddr=EICC,+Morrison+Street,+Edinburgh&amp;daddr=Lebowskis+Bar+Edinburgh,+Morrison+Street,+Edinburgh&amp;hl=en&amp;sll=55.945788,-3.208146&amp;sspn=0.002229,0.005638&amp;geocode=FYerVQMdAgbP_yHxPxfF4v0ejilZHW-zo8eHSDHxPxfF4v0ejg%3BFa-qVQMdABPP_yEuJOcDaY1qrimtW815pMeHSDEuJOcDaY1qrg&amp;oq=lebows&amp;dirflg=w&amp;mra=ltm&amp;t=m&amp;z=18">map</a>)</p>
 		<p align="center"><i>just a few metres down the road from the conference venue; both drinks and food will be provided, incl. vegetarian and vegan options.</i></p>
 -->		</td>
-		<td><p>19.30-<br />23.00</p></td>
+		<td><p>19.00-<br />23.00</p></td>
 	</tr>
 
 	<tr valign="top" style="border:none">
@@ -207,18 +198,109 @@
 	</tr>
 
 	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>09.00-<br />09.30</p></td>
+		<td><p>09.00-<br />10.00</p></td>
 		<td colspan="2"><p align="center"><b>Breakfast Buffet</b></p></td>
-		<td><p>09.00-<br />09.30</p></td>
+		<td><p>09.00-<br />10.00</p></td>
 	</tr>
 
 	<tr valign="top">
-		<td><p>09.30-<br />17.50</p></td>
+		<td><p>10.00-<br />10.30</p></td>
 		<td colspan="2">
-		<p align="center">Exact conference schedule yet to be finalised, please check back again soon</p>
+		<p align="center">2x 30 mins talks</p>
 		</td>
-		<td><p>09.30-<br />17.50</p></td>
+		<td><p>10.00-<br />10.30</p></td>
 	</tr>
+
+	<tr valign="top">
+		<td><p>10.30-<br />11.00</p></td>
+		<td colspan="2">
+		<p align="center">2x 30 mins talks</p>
+		</td>
+		<td><p>10.30-<br />11.00</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>11.00-<br />11.30</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>11.00-<br />11.30</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>11.30-<br />12.00</p></td>
+		<td colspan="2">
+		<p align="center">2x 30 mins talks</p>
+		</td>
+		<td><p>11.30-<br />12.00</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>12.00-<br />12.15</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>12.00-<br />12.15</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>12.15-<br />13.00</p></td>
+		<td colspan="2">
+		<p align="center">2x 45 mins talks</p>
+		</td>
+		<td><p>12.15-<br />13.00</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>13.00-<br />14.30</p></td>
+		<td colspan="2"><p align="center"><b>Lunch Break</b></p></td>
+		<td><p>13.00-<br />14.30</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.30-<br />15.10</p></td>
+		<td colspan="2"><p align="center"><i>Lightning Talks - part II</i><br /><!-- FIXME list talks? --></p>
+		<p align="center"><small>Room 15</small></p>
+                </td>
+		<td><p>14.30-<br />15.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>15.10-<br />15.40</p></td>
+		<td colspan="2">
+		<p align="center">2x 30 mins talks</p>
+		</td>
+		<td><p>15.10-<br />15.40</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>15.40-<br />16.00</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>15.40-<br />16.00</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.00-<br />16.45</p></td>
+		<td colspan="2">
+		<p align="center">2x 45 mins talks</p>
+		</td>
+		<td><p>16.00-<br />16.45</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.45-<br />17.15</p></td>
+		<td colspan="2">
+		<p align="center">2x 30 mins talks</p>
+		</td>
+		<td><p>16.45-<br />17.15</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>17.15-<br />17.45</p></td>
+		<td colspan="2">
+		<p align="center">2x 30 mins talks</p>
+		</td>
+		<td><p>17.15-<br />17.45</p></td>
+	</tr>
+
 <!--
 	<tr valign="top">
 		<td><p>09.30</p></td>
@@ -229,89 +311,12 @@
 		</td>
 		<td><p>10.00</p></td>
 	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>10.45</p></td>
-		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
-		<td><p>10.45</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>11.00</p></td>
-		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#olbrich-embedded">Multimedia on Embedded Linux - Pushing GStreamer to its Limits</a><br />Michael Olbrich, Pengutronix</p>
-		</td>
-		<td><p>11.00</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>11.45</p></td>
-		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#hervey-time">Time and Synchronization for Dummies (yes, you!)</a><br />Edward Hervey (bilboed), Collabora</p>
-		</td>
-		<td><p>11.45</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>12.30</p></td>
-		<td colspan="2">
-		<p align="center"><b>Lunch</b></p>
-		</td>
-		<td><p>12.30</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>14.00</p></td>
-		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#leeman-drive-towards-software">GStreamer and the Move From a Hardware Centric Product Design Towards a Software Centric Product Design</a><br />Marc Leeman (den_erpel), Barco</p>
-		</td>
-		<td><p>14.00</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>14.45</p></td>
-		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#schmidt-gst-enabled-home">My GStreamer-Enabled Home</a><br />Jan Schmidt (thaytan), Centricular</p>
-		</td>
-		<td><p>14.45</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>15.30</p></td>
-		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#graff-testing">Achieving Pexcellence - Challenges of Real Time Streaming Applications</a><br />Håvard Graff (hgr), Pexip</p>
-		</td>
-		<td><p>15.30</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>16.15</p></td>
-		<td colspan="2">
-		<p align="center"><b>Coffee Break</b></p>
-		</td>
-		<td><p>16.15</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>16.45</p></td>
-		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#raghavan-pulseaudio">Return of the PulseAudio Update</a><br />Arun Rhagavan (Ford_Prefect), Collabora</p>
-		</td>
-		<td><p>16.45</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>17.15</p></td>
-		<td colspan="2">
-		<p><a href="&site;/conference/2013/speakers.html#maxwell-free-codecs">Opus and Daala: State of the Art Royalty-free Codecs</a><br />Greg Maxwell (gmaxwell), Mozilla</p>
-		</td>
-		<td><p>17.15</p></td>
-	</tr>
 -->
+
 	<tr valign="top">
-		<td><p>17.50</p></td>
+		<td><p>17.45</p></td>
 		<td colspan="2"><p align="center"><i>Closing Session</i></p></td>
-		<td><p>17.50</p></td>
+		<td><p>17.45</p></td>
 	</tr>
 
 	<tr valign="top" bgcolor="#E0E0E0">
