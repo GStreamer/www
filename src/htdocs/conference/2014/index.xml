@@ -116,7 +116,7 @@
     <li><a href="&site;/conference/2014/speakers.html#paris-diaz-webrtc-kurento-webrtcendpoint">Implementing WebRTC capabilities for GStreamer: the case of the Kurento WebRtcEndpoint</a> <small><i> · Miguel París Díaz, Kurento</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#normand-gomez-efficient-multimedia-in-qt-webkit-on-raspberry-pi">Efficient multimedia support in QtWebKit on Raspberry Pi</a> <small><i> · Philippe Normand and Miguel Gómez, Igalia</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#saunier-gst-validate">Validate your elements behaviour, Investigate your bugs and avoid regressions with gst-validate!</a> <small><i> · Thibault Saunier, Collabora</i></small></li>
-    <li><a href="&site;/conference/2014/speakers.html#kiagiadaki-gstreamer-on-wayland-overview">GStreamer on Wayland overview</a> <small><i> · George Kiagiadaki, Collabora</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#kiagiadaki-gstreamer-on-wayland-overview">GStreamer on Wayland overview</a> <small><i> · George Kiagiadakis, Collabora</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#dufresne-v4l-decoder-support">The Development of Video4Linux Decoder support</a> <small><i> · Nicolas Dufresne, Collabora</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#tompkins-bridging-divide-between-gstreamer-and-cplusplus">Bridging the divide between GStreamer and a largely C++11 codebase</a> <small><i> · Cort Tompkins, IPConfigure</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#verdejo-pinochet-gstreamer-digital-tv-support">GStreamer and digital television support</a> <small><i> · Reynaldo H. Verdejo Pinochet, Samsung</i></small></li>
@@ -126,9 +126,10 @@
     <li><a href="&site;/conference/2014/speakers.html#nikolic-gstreamer-on-android-with-java-and-scala">State-of-the-art GStreamer on Android with Java and Scala</a> <small><i> · Nenad V. Nikolić</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#waters-opengl-for-the-gstreamer-1-4-pipeline">OpenGL Desktop/ES for the GStreamer 1.4 pipeline</a> <small><i> · Matthew Waters</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#ashley-garvey-over-the-top-gstreamer">Over the top GStreamer</a> <small><i> · Alex Ashley and Darren Garvey, YouView</i></small></li>
-    <li>GstHarness again - A follow up <small><i> · Pexip</i></small></li>
-    <li>Videocodec development with GStreamer <small><i> · Pexip</i></small></li>
-    <li>Porting Pexip Infinity to 1.x - Live pipeline challenges <small><i> · Pexip</i></small></li>
+    <li>GstHarness again - A follow up <small><i> · Håvard Graff, Pexip</i></small></li>
+    <li>Pexcision - Real-time media-detection testing-framework <small><i> · Håvard Graff, Pexip</i></small></li>
+    <li>Videocodec development with GStreamer <small><i> · Stian Selnes, Pexip</i></small></li>
+    <li>Porting Pexip Infinity to 1.x - Live pipeline challenges <small><i> · Stian Selnes, Pexip</i></small></li>
     </ul>
   </p>
   <p>

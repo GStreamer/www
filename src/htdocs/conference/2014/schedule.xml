@@ -64,15 +64,21 @@
 
 	<tr valign="top">
 		<td><p>10.05-<br />10.50</p></td>
-		<td colspan="2">
-		<p align="center">2x 45 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#verdejo-pinochet-gstreamer-digital-tv-support">GStreamer and digital television support</a><br />Reynaldo H. Verdejo Pinochet, Samsung</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#swain-crossplatform-webrtc">Cross-Platform WebRTC with GStreamer</a><br />Robert Swain, Ericsson</p>
 		</td>
 		<td><p>10.05-<br />10.50</p></td>
 	</tr>
 	<tr valign="top">
 		<td><p>10.50-<br />11.20</p></td>
-		<td colspan="2">
-		<p align="center">2x 30 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#ashley-garvey-over-the-top-gstreamer">Over the top GStreamer</a><br />Alex Ashley and Darren Garvey, YouView</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#debethencourt-html5-the-web-and-gstreamer">HTML5, the Web and GStreamer</a><br />Luis de Bethencourt, Samsung</p>
 		</td>
 		<td><p>10.50-<br />11.20</p></td>
 	</tr>
@@ -85,8 +91,11 @@
 
 	<tr valign="top">
 		<td><p>11.45-<br />12.30</p></td>
-		<td colspan="2">
-		<p align="center">2x 45 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#sousa-santos-adaptive-streaming">HLS, DASH, MMS: Adaptive Streaming Formats in GStreamer</a><br />Thiago Sousa Santos, Samsung</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#normand-gomez-efficient-multimedia-in-qt-webkit-on-raspberry-pi">Efficient multimedia support in QtWebKit on Raspberry Pi</a><br />Philippe Normand and Miguel Gómez, Igalia</p>
 		</td>
 		<td><p>11.45-<br />12.30</p></td>
 	</tr>
@@ -99,8 +108,11 @@
 
 	<tr valign="top">
 		<td><p>13.50-<br />14.30</p></td>
-		<td colspan="2">
-		<p align="center">2x 40 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#kiagiadaki-gstreamer-on-wayland-overview">GStreamer on Wayland overview</a><br />George Kiagiadakis, Collabora</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#lopez-fernandez-kurento">Kurento: Creating a GStreamer-based Media Server for Real-Time Communication Services</a><br />Luis López Fernández</p>
 		</td>
 		<td><p>13.50-<br />14.30</p></td>
 	</tr>
@@ -115,8 +127,11 @@
 
 	<tr valign="top">
 		<td><p>14.45-<br />15.30</p></td>
-		<td colspan="2">
-		<p align="center">2x 45 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#taymans-image-conversion">Image Conversion</a><br />Wim Taymans, RedHat</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#paris-diaz-webrtc-kurento-webrtcendpoint">Implementing WebRTC capabilities for GStreamer: the case of the Kurento WebRtcEndpoint</a><br />Miguel París Díaz, Kurento</p>
 		</td>
 		<td><p>14.45-<br />15.30</p></td>
 	</tr>
@@ -129,8 +144,11 @@
 
 	<tr valign="top">
 		<td><p>16.00-<br />16.30</p></td>
-		<td colspan="2">
-		<p align="center">2x 30 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#tompkins-bridging-divide-between-gstreamer-and-cplusplus">Bridging the divide between GStreamer and a largely C++11 codebase</a><br />Cort Tompkins, IPConfigure</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#wang-gstreamers-role-in-tizen">GStreamer's role in Tizen</a><br />Chengjun Wang, Samsung</p>
 		</td>
 		<td><p>16.00-<br />16.30</p></td>
 	</tr>
@@ -142,20 +160,6 @@
                 </td>
 		<td><p>16.30-<br />17.50</p></td>
 	</tr>
-
-<!--
-
-	<tr valign="top">
-		<td><p>11.00</p></td>
-		<td>
-		<p><a href="&site;/conference/2013/speakers.html#rothlisberger-stb-testing">Automated Set-top Box Testing with GStreamer</a><br />David Röthlisberger, YouView</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2013/speakers.html#kim-alt-playback">Alternative playback solutions for Hardware Manufacturers</a><br />Jeongseok Kim, LG Electronics</p>
-		</td>
-		<td><p>11.00</p></td>
-	</tr>
--->
 
 	<tr valign="top" bgcolor="#E0E0E0">
 		<td><p>18.00</p></td>
@@ -205,16 +209,22 @@
 
 	<tr valign="top">
 		<td><p>10.00-<br />10.30</p></td>
-		<td colspan="2">
-		<p align="center">2x 30 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#sauer-new-tracing-subsystem-for-gstreamer">A New Tracing Subsystem for GStreamer</a><br />Stefan Sauer, Google</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#nikolic-gstreamer-on-android-with-java-and-scala">State-of-the-art GStreamer on Android with Java and Scala</a><br />Nenad V. Nikolić</p>
 		</td>
 		<td><p>10.00-<br />10.30</p></td>
 	</tr>
 
 	<tr valign="top">
 		<td><p>10.30-<br />11.00</p></td>
-		<td colspan="2">
-		<p align="center">2x 30 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#saunier-gst-validate">Validate your elements behaviour, Investigate your bugs and avoid regressions with gst-validate!</a><br />Thibault Saunier, Collabora</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#lee-playbin-in-limited-resources-environment">Using Playbin in a Limited Resources Environment</a><br />Wonchul Lee, LG Electronics</p>
 		</td>
 		<td><p>10.30-<br />11.00</p></td>
 	</tr>
@@ -227,8 +237,12 @@
 
 	<tr valign="top">
 		<td><p>11.30-<br />12.00</p></td>
-		<td colspan="2">
-		<p align="center">2x 30 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#">GstHarness again - A follow up</a><br />Håvard Graff, Pexip<br /></p>
+                   <a href="&site;/conference/2014/speakers.html#">Pexcision - Real-time media-detection testing-framewor</a><br />Håvard Graff, Pexip<br />
+		</td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#">Videocodec development with GStreamer</a><br />Stian Selnes, Pexip</p>
 		</td>
 		<td><p>11.30-<br />12.00</p></td>
 	</tr>
@@ -243,8 +257,11 @@
 
 	<tr valign="top">
 		<td><p>12.15-<br />13.00</p></td>
-		<td colspan="2">
-		<p align="center">2x 45 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#droege-trick-modes-in-gstreamer">Trick Modes in GStreamer</a><br />Sebastian Dröge, Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#dufresne-v4l-decoder-support">The Development of Video4Linux Decoder support</a><br />Nicolas Dufresne, Collabora</p>
 		</td>
 		<td><p>12.15-<br />13.00</p></td>
 	</tr>
@@ -265,58 +282,47 @@
 
 	<tr valign="top">
 		<td><p>15.10-<br />15.40</p></td>
-		<td colspan="2">
-		<p align="center">2x 30 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#">Porting Pexip Infinity to 1.x - Live pipeline challenges</a><br />Stian Selnes, Pexip</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#zernicki-mpeg-h-3d-audio">MPEG-H 3D Audio, next generation audio compression standard</a><br />Tomasz Żernicki, Zylia</p>
 		</td>
 		<td><p>15.10-<br />15.40</p></td>
 	</tr>
 
 	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>15.40-<br />16.00</p></td>
+		<td><p>15.40-<br />16.10</p></td>
 		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
-		<td><p>15.40-<br />16.00</p></td>
+		<td><p>15.40-<br />16.10</p></td>
 	</tr>
 
 	<tr valign="top">
-		<td><p>16.00-<br />16.45</p></td>
-		<td colspan="2">
-		<p align="center">2x 45 mins talks</p>
+		<td><p>16.10-<br />16.55</p></td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#schmidt-stereoscopic-3d-video-in-gstreamer">Stereoscopic 3D Video</a><br />Jan Schmidt, Centricular</p>
 		</td>
-		<td><p>16.00-<br />16.45</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>16.45-<br />17.15</p></td>
-		<td colspan="2">
-		<p align="center">2x 30 mins talks</p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#hervey-gstreamer-negotiation">GStreamer, Negotiate all the things</a><br />Edward Hervey</p>
 		</td>
-		<td><p>16.45-<br />17.15</p></td>
+		<td><p>16.10-<br />16.55</p></td>
 	</tr>
 
 	<tr valign="top">
-		<td><p>17.15-<br />17.45</p></td>
-		<td colspan="2">
-		<p align="center">2x 30 mins talks</p>
+		<td><p>16.55-<br />17.25</p></td>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#waters-opengl-for-the-gstreamer-1-4-pipeline">OpenGL Desktop/ES for the GStreamer 1.4 pipeline</a><br />Matthew Waters</p>
 		</td>
-		<td><p>17.15-<br />17.45</p></td>
-	</tr>
-
-<!--
-	<tr valign="top">
-		<td><p>09.30</p></td>
-		<td colspan="2">
-		<p align="center"><i>Keynote</i></p>
-		<p align="center"><a href="&site;/conference/2013/speakers.html#taymans-pitfalls">Pitfalls and Best Practices for Using GStreamer to Build Products</a><br />Wim Taymans (wtay), Collabora</p>
-		<p align="center"><small>Room 15</small></p>
+		<td>
+		<p><a href="&site;/conference/2014/speakers.html#kim-smart-properties-for-pipelines">Smart Properties for Pipelines</a><br />Jeongseok Kim, LG Electronics</p>
 		</td>
-		<td><p>10.00</p></td>
+		<td><p>16.55-<br />17.25</p></td>
 	</tr>
--->
 
 	<tr valign="top">
-		<td><p>17.45</p></td>
+		<td><p>17.25</p></td>
 		<td colspan="2"><p align="center"><i>Closing Session</i></p></td>
-		<td><p>17.45</p></td>
+		<td><p>17.25</p></td>
 	</tr>
 
 	<tr valign="top" bgcolor="#E0E0E0">
