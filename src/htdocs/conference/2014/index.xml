@@ -150,6 +150,7 @@
     <li>gnonlin? it's dead, jim (a new design for dynamic pipelines) <small><i> · Mathieu Duponchelle</i></small></li>
     <li>Reducing the loading time with playbin <small><i> · Hyejin Choi, LG CNS</i></small></li>
     <li>Secure RTP <small><i> · Wim Taymans, RedHat</i></small></li>
+    <li>Zero-copy inter-process video with FD passing <small><i> · William Manley, stb-tester.com</i></small></li>
     <li><i>Your talk here?</i></li>
     </ul>
   </p>
