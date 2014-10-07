@@ -761,16 +761,80 @@ and maintain stability of pipeline.
 </i></p>
 </td></tr>
 
+<tr valign="top"><td>
+<a name="graff-gstharness-again" id="graff-gstharness-again"></a>
+<p><b>
+GstHarness again - A follow up, Håvard Graff, Pexip
+</b></p>
+<p>
+Where is GstHarness now? Tips and Tricks on the use of this new testing tool
+for GStreamer.
+</p>
+<p><i>
+Håvard Graff has worked with GStreamer professionally for 7 years in
+Tandberg, Cisco and now Pexip. Developing video conferencing systems
+like Movi, Jabber Video and Pexip Infinity using GStreamer as the
+backbone. Was instrumental in premiering GStreamer in the AppStore.
+Still pretends to be a musician with programming as a hobby.
+</i></p>
+</td></tr>
 
-<!--
-Håvard Graff has worked with GStreamer professionally for 6 years in Tandberg,
-Cisco and now Pexip. Developing video conferencing systems like Movi, Jabber
-Video and Pexip Infinity using GStreamer as the backbone. Was instrumental in
-premiering GStreamer in the AppStore. Still pretends to be a musician with
-programming as a hobby.
-	</i></p>
-	</td></tr>
--->
+<tr valign="top"><td>
+<a name="graff-pexcision" id="graff-pexcision"></a>
+<p><b>
+Pexcision - Real-time media-detection testing-framework, Håvard Graff, Pexip
+</b></p>
+<p>
+Automated testing of large complex videoconferencing scenarios is tricky. How
+to test videomixing and audiomixing? How do we ensure a mixed stream contains
+a particular input stream or set of streams at any given point in time. We
+talk about how we are using special GStreamer sources and sinks to achieve
+this.
+</p>
+<p><i>
+Håvard Graff has worked with GStreamer professionally for 7 years in
+Tandberg, Cisco and now Pexip. Developing video conferencing systems
+like Movi, Jabber Video and Pexip Infinity using GStreamer as the
+backbone. Was instrumental in premiering GStreamer in the AppStore.
+Still pretends to be a musician with programming as a hobby.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="selnes-videocodec-dev" id="selnes-videocodec-dev"></a>
+<p><b>
+Videocodec development with GStreamer, Stian Selnes, Pexip
+</b></p>
+<p>
+Opportunities and challenges with developing videocodecs in a GStreamer
+context, especially for low-latency coding in lossy environments. Examples
+on how to track down rare bugs, tools and tricks for testing and development.
+</p>
+<p><i>
+Stian Selnes is a software engineer developing video conferencing
+systems at Pexip. He has been working on GStreamer, video codecs and
+other types of signal processing for 7 years at Pexip, Cisco and
+Tandberg.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="selnes-live-pipeline-challenges" id="selnes-live-pipeline-challenges"></a>
+<p><b>
+Porting Pexip Infinity to 1.x - Live pipeline challenges, Stian Selnes, Pexip
+</b></p>
+<p>
+Discussing our port from 0.10 to 1.x with the benefits and problems that
+came with it.
+</p>
+<p><i>
+Stian Selnes is a software engineer developing video conferencing
+systems at Pexip. He has been working on GStreamer, video codecs and
+other types of signal processing for 7 years at Pexip, Cisco and
+Tandberg.
+</i></p>
+</td></tr>
+
 </table>
 
 </body>

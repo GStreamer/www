@@ -238,11 +238,11 @@
 	<tr valign="top">
 		<td><p>11.30-<br />12.00</p></td>
 		<td>
-		<p><a href="&site;/conference/2014/speakers.html#">GstHarness again - A follow up</a><br />Håvard Graff, Pexip<br /></p>
-                   <a href="&site;/conference/2014/speakers.html#">Pexcision - Real-time media-detection testing-framewor</a><br />Håvard Graff, Pexip<br />
+		<p><a href="&site;/conference/2014/speakers.html#graff-gstharness-again">GstHarness again - A follow up</a><br />Håvard Graff, Pexip<br /></p>
+                   <a href="&site;/conference/2014/speakers.html#graff-pexcision">Pexcision - Real-time media-detection testing-framewor</a><br />Håvard Graff, Pexip<br />
 		</td>
 		<td>
-		<p><a href="&site;/conference/2014/speakers.html#">Videocodec development with GStreamer</a><br />Stian Selnes, Pexip</p>
+		<p><a href="&site;/conference/2014/speakers.html#selnes-videocodec-dev">Videocodec development with GStreamer</a><br />Stian Selnes, Pexip</p>
 		</td>
 		<td><p>11.30-<br />12.00</p></td>
 	</tr>
@@ -283,7 +283,7 @@
 	<tr valign="top">
 		<td><p>15.10-<br />15.40</p></td>
 		<td>
-		<p><a href="&site;/conference/2014/speakers.html#">Porting Pexip Infinity to 1.x - Live pipeline challenges</a><br />Stian Selnes, Pexip</p>
+		<p><a href="&site;/conference/2014/speakers.html#selnes-live-pipeline-challenges">Porting Pexip Infinity to 1.x - Live pipeline challenges</a><br />Stian Selnes, Pexip</p>
 		</td>
 		<td>
 		<p><a href="&site;/conference/2014/speakers.html#zernicki-mpeg-h-3d-audio">MPEG-H 3D Audio, next generation audio compression standard</a><br />Tomasz Żernicki, Zylia</p>

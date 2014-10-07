@@ -126,10 +126,10 @@
     <li><a href="&site;/conference/2014/speakers.html#nikolic-gstreamer-on-android-with-java-and-scala">State-of-the-art GStreamer on Android with Java and Scala</a> <small><i> · Nenad V. Nikolić</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#waters-opengl-for-the-gstreamer-1-4-pipeline">OpenGL Desktop/ES for the GStreamer 1.4 pipeline</a> <small><i> · Matthew Waters</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#ashley-garvey-over-the-top-gstreamer">Over the top GStreamer</a> <small><i> · Alex Ashley and Darren Garvey, YouView</i></small></li>
-    <li>GstHarness again - A follow up <small><i> · Håvard Graff, Pexip</i></small></li>
-    <li>Pexcision - Real-time media-detection testing-framework <small><i> · Håvard Graff, Pexip</i></small></li>
-    <li>Videocodec development with GStreamer <small><i> · Stian Selnes, Pexip</i></small></li>
-    <li>Porting Pexip Infinity to 1.x - Live pipeline challenges <small><i> · Stian Selnes, Pexip</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#graff-gstharness-again">GstHarness again - A follow up</a> <small><i> · Håvard Graff, Pexip</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#graff-pexcision">Pexcision - Real-time media-detection testing-framework</a> <small><i> · Håvard Graff, Pexip</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#selnes-videocodec-dev">Videocodec development with GStreamer</a> <small><i> · Stian Selnes, Pexip</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#selnes-live-pipeline-challenges">Porting Pexip Infinity to 1.x - Live pipeline challenges</a> <small><i> · Stian Selnes, Pexip</i></small></li>
     </ul>
   </p>
   <p>
