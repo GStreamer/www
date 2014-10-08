@@ -114,7 +114,6 @@
     <li><a href="&site;/conference/2014/speakers.html#mueller-gstreamer-state-of-the-union">GStreamer State of the Union</a> <small><i> · Tim Müller, Centricular</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#lopez-fernandez-kurento">Kurento: Creating a GStreamer-based Media Server for Real-Time Communication Services</a> <small><i> · Luis López Fernández</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#taymans-image-conversion">Image Conversion</a> <small><i> · Wim Taymans, RedHat</i></small></li>
-    <li><a href="&site;/conference/2014/speakers.html#kim-smart-properties-for-pipelines">Smart Properties for Pipelines</a> <small><i> · Jeongseok Kim, LG Electronics</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#schmidt-stereoscopic-3d-video-in-gstreamer">Stereoscopic 3D Video</a> <small><i> · Jan Schmidt, Centricular</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#droege-trick-modes-in-gstreamer">Trick Modes in GStreamer</a> <small><i> · Sebastian Dröge, Centricular</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#lee-playbin-in-limited-resources-environment">Using Playbin in a Limited Resources Environment</a> <small><i> · Wonchul Lee, LG Electronics</i></small></li>
@@ -135,6 +134,8 @@
     <li><a href="&site;/conference/2014/speakers.html#graff-pexcision">Pexcision - Real-time media-detection testing-framework</a> <small><i> · Håvard Graff, Pexip</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#selnes-videocodec-dev">Videocodec development with GStreamer</a> <small><i> · Stian Selnes, Pexip</i></small></li>
     <li><a href="&site;/conference/2014/speakers.html#selnes-live-pipeline-challenges">Porting Pexip Infinity to 1.x - Live pipeline challenges</a> <small><i> · Stian Selnes, Pexip</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#hervey-ci">GStreamer Continuous Integration</a> <small><i> · Edward Hervey</i></small></li>
+    <li><del><a href="&site;/conference/2014/speakers.html#kim-smart-properties-for-pipelines">Smart Properties for Pipelines</a> <small><i> · Jeongseok Kim, LG Electronics</i></small></del></li>
     </ul>
   </p>
   <p>

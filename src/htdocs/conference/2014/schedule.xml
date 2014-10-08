@@ -239,7 +239,7 @@
 		<td><p>11.30-<br />12.00</p></td>
 		<td>
 		<p><a href="&site;/conference/2014/speakers.html#graff-gstharness-again">GstHarness again - A follow up</a><br />Håvard Graff, Pexip<br /></p>
-                   <a href="&site;/conference/2014/speakers.html#graff-pexcision">Pexcision - Real-time media-detection testing-framewor</a><br />Håvard Graff, Pexip<br />
+                   <a href="&site;/conference/2014/speakers.html#graff-pexcision">Pexcision - Real-time media-detection testing-framework</a><br />Håvard Graff, Pexip<br />
 		</td>
 		<td>
 		<p><a href="&site;/conference/2014/speakers.html#selnes-videocodec-dev">Videocodec development with GStreamer</a><br />Stian Selnes, Pexip</p>
@@ -314,7 +314,7 @@
 		<p><a href="&site;/conference/2014/speakers.html#waters-opengl-for-the-gstreamer-1-4-pipeline">OpenGL Desktop/ES for the GStreamer 1.4 pipeline</a><br />Matthew Waters</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2014/speakers.html#kim-smart-properties-for-pipelines">Smart Properties for Pipelines</a><br />Jeongseok Kim, LG Electronics</p>
+		<p><a href="&site;/conference/2014/speakers.html#hervey-ci">GStreamer Continuous Integration</a><br />Edward Hervey</p>
 		</td>
 		<td><p>16.55-<br />17.25</p></td>
 	</tr>

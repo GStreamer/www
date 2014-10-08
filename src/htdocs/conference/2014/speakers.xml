@@ -162,6 +162,27 @@ freelance consulting work while enjoying life.
 </td></tr>
 
 <tr valign="top"><td>
+<a name="hervey-ci" id="hervey-ci"></a>
+<p><b>
+GStreamer Continuous Integration, Edward Hervey (bilboed), BilboEd Consulting
+</b></p>
+<p>
+As all big projects, GStreamer is now running a Continuous
+Integration system. During this talk, we'll go over the initial
+challenges, what is needed (and to be avoided), how the current CI
+system and workflow works, and what the next steps and challenges are.
+</p>
+<p><i>
+Edward Hervey has been contributing for over 11 years to GStreamer,
+ending up there after starting the PiTiVi video editor and then
+maintaining various components over the years. After having started
+Collabora Multimedia in 2007 and ending up as the Multimedia Domain
+Lead, Edward Hervey is now enjoying a sabbatical where he tries to mix
+freelance consulting work while enjoying life.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
 <a name="kiagiadaki-gstreamer-on-wayland-overview" id="kiagiadaki-gstreamer-on-wayland-overview"></a>
 <p><b>
 GStreamer on Wayland Overview, George Kiagiadakis (gkiagia), Collabora
@@ -212,25 +233,27 @@ graphics development.
 <tr valign="top"><td>
 <a name="kim-smart-properties-for-pipelines" id="kim-smart-properties-for-pipelines"></a>
 <p><b>
-Smart Properties for Pipelines, Jeongseok Kim, LG Electronics
+Smart Properties for Pipelines, Jeongseok Kim, LG Electronics (cancelled)
 </b></p>
 <p>
+<i>Note: this talk has been cancelled and will not be presented this year.</i>
+</p><p style="color:gray">
 This talk will cover simple property, query and event use cases for GStreamer
 beginners. My colleague and I defined “smart-properties” to deliver value into
 a pipeline.
-</p><p>
+</p><p style="color:gray">
 The basic concept of smart-properties originates from a crash when setting
 property in certain state. For example, someone defined “application-type”,
 however, it must be set after hardware resource allocation. If not, the
 property accesses invalid handle of hardware resource, as a result, it crashes.
 This happened very frequently in my company. It’s a simple mistake, though.
-</p><p>
+</p><p style="color:gray">
 Therefore, I will try to explain which one among them (property, query, and
 event) is more appropriate for each situation. The talk will include revising
 property, query and event, and a more simple approach to delivering parameters
 into a pipeline with smart-properties.
 </p>
-<p><i>
+<p style="color:gray"><i>
 Jeongseok Kim has worked for over 10 years as an embedded system software
 developer. At LG Electronics he's a senior research engineer and also the
 leader of GStreamer core team for WebOS.
