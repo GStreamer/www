@@ -7,6 +7,8 @@ built_pages = index.html schedule.html speakers.html
 images = \
 	Medienhafen_Duesseldorf_Nacht-cropped.jpg \
 	sponsor_150x45_UbiCast.png \
+	sponsor_305x50_collabora_new.png \
+	sponsor_150x78_collabora_new.png \
 	sponsor_150x50_google.png
 
 documents = \

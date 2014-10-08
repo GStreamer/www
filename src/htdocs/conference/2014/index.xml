@@ -349,7 +349,10 @@
 
   <h2>Conference News and Updates</h2>
   <p>
-    <i>2014-October</i>: the <a href="http://gstreamer.freedesktop.org/conference/2014/schedule.html">conference schedule</a> with full talk abstracts and speaker bios is now available
+    <i>2014-October-08</i>: The GStreamer project is pleased to welcome back <a href="http://www.collabora.com">Collabora</a> as Silver sponsor
+  </p>
+  <p>
+    <i>2014-October-07</i>: the <a href="http://gstreamer.freedesktop.org/conference/2014/schedule.html">conference schedule</a> with full talk abstracts and speaker bios is now available
   </p>
   <p>
     <i>2014-September-02</i>: Hotel details have been added to the conference pages
@@ -386,7 +389,10 @@
 <td valign="top">
   <h1>Sponsors</h1>
   <h2>Silver Sponsors</h2>
-  <p>
+  <p style="padding:10px 0px">
+    <a href="http://www.collabora.com"><img src="sponsor_150x78_collabora_new.png" alt="Collabora" height="78" width="150" /></a>
+  </p>
+  <p style="padding:10px 0px">
     <a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
   </p>
   <p>
@@ -401,8 +407,9 @@
     <a href="http://www.phoronix.com/"><img src="phoronix.png" alt="Phoronix.com" height="34" width="150" /></a>
   </p>
 -->
+  <br />
   <h2>Special Media Partners</h2>
-  <p>
+  <p style="padding:10px 0px">
     <a href="http://www.ubicast.eu/"><img src="sponsor_150x45_UbiCast.png" alt="Ubi Cast" height="45" width="150" /></a>
   </p>
 
