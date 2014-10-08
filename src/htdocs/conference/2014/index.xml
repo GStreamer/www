@@ -40,6 +40,11 @@
   the Congress Centre Düsseldorf (CCD) in <b>Düsseldorf, Germany</b>.
   </p>
 
+  <h2>Schedule</h2>
+  <p>
+  <a href="schedule.html">Click here for the conference schedule</a>.
+  </p>
+
   <h2>Details</h2>
   <p>
   The GStreamer Conference is a conference for developers, decision-makers,
@@ -84,7 +89,7 @@
     If you don't think you have enough material for a full talk, but perhaps
     just want to showcase something you're working on, or present a problem or
     challenge you are facing or have solved, and that you think might be
-    interesting for others to hear about, why not submit a 5-7 minute
+    interesting for others to hear about, why not submit a ca. 5-minute
     mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
   </p>
   <p>
@@ -155,21 +160,17 @@
     </ul>
   </p>
   <p>
-    A more detailed conference schedule with talk abstracts and speaker bios
-    will be available in due course.
-  </p>
-  <!--
-  <p>
-    The <a href="schedule.html">conference schedule is now available</a>.
+    The full <a href="schedule.html">conference schedule is now available</a>.
     We hope you will be as excited about this years
     schedule as we are. In addition to of course many in-depth GStreamer talks
     we also have presentations on some of the most important core Linux
-    multimedia technologies like ALSA, Mesa, Wayland, the Opus Codec and V4L.
+    multimedia technologies like OpenGL and Wayland.
+<!--
     We have managed to get some of the leading developers from the world of
     open source multimedia come to speak this year, so this is definetly an
     event you should not be missing out on.
+-->
   </p>
-  -->
 
   <h2>Who should join?</h2>
   <p>
@@ -346,14 +347,12 @@
   </p>
 
   <h2>Conference News and Updates</h2>
-<!--
   <p>
-    <i>2014-September-XX</i>: the <a href="http://gstreamer.freedesktop.org/conference/2014/schedule.html">conference schedule</a> and is now available
+    <i>2014-October</i>: the <a href="http://gstreamer.freedesktop.org/conference/2014/schedule.html">conference schedule</a> with full talk abstracts and speaker bios is now available
   </p>
   <p>
-    <i>2014-July-XX</i>: Hotel details have been added to the conference pages
+    <i>2014-September-02</i>: Hotel details have been added to the conference pages
   </p>
--->
   <p>
     <i>2014-August-02</i>: <a href="http://www.ubicast.eu">UbiCast</a> is welcomed back as special media partner who will <a href="http://gstconf.ubicast.tv/">record the talks</a>
   </p>
@@ -361,7 +360,7 @@
     <i>2014-July-30</i>: The GStreamer project is delighted to welcome back <a href="http://www.google.com">Google</a> as Silver sponsor
   </p>
   <p>
-    <i>2014-July-30</i>: Paper submission is now closed, but Lightning talks (~5-7 mins) may still be submitted
+    <i>2014-July-30</i>: Paper submission is now closed, but Lightning talks (~5 mins) may still be submitted
   </p>
   <p>
     <i>2014-June-30</i>: The call for papers is now open and talk proposals can be submitted
