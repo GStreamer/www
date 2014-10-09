@@ -157,6 +157,8 @@
     <li>Reducing the loading time with playbin <small><i> · Hyejin Choi, LG CNS</i></small></li>
     <li>Secure RTP <small><i> · Wim Taymans, RedHat</i></small></li>
     <li>Zero-copy inter-process video with FD passing <small><i> · William Manley, stb-tester.com</i></small></li>
+    <li>Special Interest Groups? <small><i> · Edward Hervey</i></small></li>
+    <li>RTMP - Challenges with testing and interop <small><i> · Håvard Graff, Pexip</i></small></li>
     <li><i>Your talk here?</i></li>
     </ul>
   </p>
