@@ -9,6 +9,7 @@ images = \
 	sponsor_150x45_UbiCast.png \
 	sponsor_305x50_collabora_new.png \
 	sponsor_150x78_collabora_new.png \
+	sponsor_305x50_centricular.png \
 	sponsor_150x50_google.png
 
 documents = \
