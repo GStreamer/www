@@ -6345,4 +6345,42 @@ and download tarballs
         </content>
   </item>
 
+  <item>
+      <date>2014-10-12 13:30</date>
+        <title>GStreamer Conference 2014: Talks, Schedule and Speakers</title>
+        <content>
+<p>
+This year's GStreamer Conference will take place on October 16-17 in
+Düsseldorf, Germany, alongside LinuxCon Europe, the Embedded Linux
+Conference Europe, and the Linux Plumbers Conference.
+</p>
+<p>
+The <a href="&site;/conference/2014/schedule.html">conference schedule</a>
+with full details about talks and speakers is now available on the conference
+website.
+</p>
+<p>
+Topics covered include embedded systems, mobile platforms,
+optimisations, adaptive streaming, hardware-accelerated video decoding,
+testing and Q&amp;A, OpenGL, editing, digital television support, latest
+codec developments, stereoscopic 3D video, and many others.
+</p>
+<p>
+All talks will be recorded by Ubicast.
+</p>
+<p>
+If you're not registered yet, it's not too late, you can still sign up,
+see the <a href="&site;/conference/2014/">conference home page</a> for
+details.
+</p>
+<p>
+Many thanks go to our sponsors Centricular, Collabora, and Google
+without whom this conference would not have been possible in this form.
+</p>
+<p>
+We hope to see you all in Düsseldorf next week!
+</p>
+        </content>
+  </item>
+
 </news>
