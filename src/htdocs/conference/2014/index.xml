@@ -160,7 +160,7 @@
     <li>Using GStreamer to set up Raspberry Pi as a surveillance camera <small><i> · Vivia Nikolaidou</i></small></li>
     <li>Low Power Audio pipeline with PulseAudio <small><i> · Manohar Babu K, LG Electronics</i></small></li>
     <li>Dynamic switching of music playback on hardware/software pipelines for Low power Audio <small><i> · Biju Malayil, LG Electronics</i></small></li>
-    <li>GStreamer streamiddemux element <small><i> · HoonHee Lee, LG Electronics</i></small></li>
+    <!--<li>GStreamer streamiddemux element <small><i> · HoonHee Lee, LG Electronics</i></small></li>-->
     <li>The Linux DVB libdvbv5 library for digital TV applications<small><i> · Mauro Carvalho Chehab, Samsung</i></small></li>
     <li>gnonlin? it's dead, jim (a new design for dynamic pipelines) <small><i> · Mathieu Duponchelle</i></small></li>
     <li>Reducing the loading time with playbin <small><i> · Hyejin Choi, LG CNS</i></small></li>
