@@ -156,7 +156,7 @@
         <small>(the long version of this talk can be seen on Tuesday October 14 at 11:15am as part of ELCE)</small></li>
     <li>Automatic audio-video synchronisation measurement using GStreamer and OpenCV <small><i> · Florent Thiery, UbiCast</i></small></li>
     <li>Pexcision - Real-time media-detection testing-framework <small><i> · Pexip</i></small></li>
-    <li>Time based seek and trick play features in GStreamer <small><i> · Ramesh Venkatachalapathy, LG Electronics</i></small></li>
+    <!-- <li>Time based seek and trick play features in GStreamer <small><i> · Ramesh Venkatachalapathy, LG Electronics</i></small></li> -->
     <li>Using GStreamer to set up Raspberry Pi as a surveillance camera <small><i> · Vivia Nikolaidou</i></small></li>
     <li>Low Power Audio pipeline with PulseAudio <small><i> · Manohar Babu K, LG Electronics</i></small></li>
     <li>Dynamic switching of music playback on hardware/software pipelines for Low power Audio <small><i> · Biju Malayil, LG Electronics</i></small></li>
