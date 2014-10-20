@@ -6383,4 +6383,31 @@ We hope to see you all in Düsseldorf next week!
         </content>
   </item>
 
+  <item>
+    <date>2014-10-20 13:00</date>
+    <title>gst-validate, gst-editing-services, gst-python and gnonlin 1.4.0 stable release</title>
+    <content>
+      <p>
+        The GStreamer team is pleased to announce the new the stable 1.4
+        release of gst-editing-services, gst-python, gnonlin, and GstValidate.
+        The 1.4 release series is adding new features on top of the 1.0 and 1.2
+        series and is part of the API and ABI-stable 1.x release series of the
+        GStreamer multimedia framework.
+      </p>
+
+      <p>
+        Check out the release notes for
+        <a href="&site;/releases/gst-editing-services/1.4.0.html">gst-editing-services</a>,
+        <a href="&site;/releases/gnonlin/1.4.0.html">gnonlin</a>,
+        <a href="&site;/releases/gst-python/1.4.0.html">gst-python</a>,
+        <a href="&site;/releases/gst-validate/1.4.0.html">gst-validate</a>,
+        and download tarballs for
+        <a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.4.0.tar.xz">gst-editing-services</a>,
+        <a href="&site;/src/gnonlin/gnonlin-1.4.0.tar.xz">gnonlin</a>,
+        <a href="&site;/src/gst-python/gst-python-1.4.0.tar.xz">gst-python</a>.
+        <a href="&site;/src/gst-python/gst-validate-1.4.0.tar.xz">gst-validate</a>.
+      </p>
+    </content>
+  </item>
 </news>
+

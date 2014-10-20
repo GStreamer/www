@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name></name>
+  <version>1.4.0</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new feature release
+in the 1.0.x stable series of the GStreamer Python Bindings.
+</p>
+
+<p>
+This new version introduces the possibility to write GStreamer
+elements in python and get them registered in the GstRegistry.
+This means those elements will then be usable by any application
+that uses GStreamer, whatever language their are built with.
+</p>
+  </intro>
+
+  <applications>
+  </applications>
+
+      <contributors>
+	<person>Sebastian Dröge</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+  </bugs>
+</release>

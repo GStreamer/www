@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version>1.4.0</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new feature release
+in the 1.0.x stable series of the GStreamer Editing Services.
+</p>
+  </intro>
+  <features>
+    <feature>Add support to gst-validate, allowing us to easily write integration testsuites</feature>
+    <feature>Add multifilesrc support</feature>
+    <feature>Give a name/unique identifier to all GESTimelineElement in the timeline</feature>
+    <feature>ges-launch: Cleanup and allow using encoding profiles from project files</feature>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Thibault Saunier</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>738624</id>
+      <summary>gst-editing-services fails to build with current git gstreamer-validate via Cerbero</summary>
+    </bug>
+  </bugs>
+</release>
