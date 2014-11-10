@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plugins</module-fancy>
+  <name></name>
+  <version>1.4.4</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce a bugfix release of the stable
+1.4 release series. The 1.4 release series is adding new features on top
+of the 1.2 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework that contains new features.
+The 1.4.x bugfix releases only contain important bugfixes compared to 1.4.0.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows are provided by the
+GStreamer project for this release.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users. It is not API
+or ABI compatible with the 0.10.x series. It can, however, be installed
+in parallel with the 0.10.x series and will not affect an existing
+0.10.x installation.
+</p>
+<p>
+The stable 1.4.x release series is API and ABI compatible with 1.0.x and
+any other 1.x release series in the future. Compared to 1.0.x it contains
+some new features and more intrusive changes that were considered too
+risky as a bugfix.
+</p>
+
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plugins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plugins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plugins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+        <contributors>
+	<person>Antonio Ospite</person>
+	<person>Aurélien Zanelli</person>
+	<person>Edward Hervey</person>
+	<person>Havard Graff</person>
+	<person>Jesper Larsen</person>
+	<person>Julien Isorce</person>
+	<person>Lubosz Sarnecki</person>
+	<person>Luis de Bethencourt</person>
+	<person>Matej Knopp</person>
+	<person>Matthew Waters</person>
+	<person>Matthieu Bouron</person>
+	<person>Sebastian Dröge</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Abriou</person>
+	<person>Vivia Nikolaidou</person>
+	<person>Vootele Vesterblom</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>732239</id>
+      <summary>h264parse: expose parsed profiles to downstream</summary>
+    </bug>
+    <bug>
+      <id>733510</id>
+      <summary>gltransformation produced black screen</summary>
+    </bug>
+    <bug>
+      <id>734156</id>
+      <summary>androidmedia: doesn't calculate framesize for COLOR_FormatYUV420Planar correctly</summary>
+    </bug>
+    <bug>
+      <id>736319</id>
+      <summary>dashdemux: mark first buffer as discont after restarting a download task</summary>
+    </bug>
+    <bug>
+      <id>737186</id>
+      <summary>h264parse: Return flushing if we get chained while being set to READY</summary>
+    </bug>
+    <bug>
+      <id>737569</id>
+      <summary>tsdemux: valid data is discarded if PES start packet is the first packet after discontinuity</summary>
+    </bug>
+    <bug>
+      <id>737658</id>
+      <summary>fluiddec: segmentation fault when used with fakesrc</summary>
+    </bug>
+    <bug>
+      <id>737724</id>
+      <summary>vc1parse: unref caps when it is empty in renegotiate()</summary>
+    </bug>
+    <bug>
+      <id>738067</id>
+      <summary>gl: Downloading YUY2 is broken and creates blocky artefacts</summary>
+    </bug>
+    <bug>
+      <id>738223</id>
+      <summary>fluiddec: leaks memory in gst_fluid_dec_change_state()</summary>
+    </bug>
+    <bug>
+      <id>738230</id>
+      <summary>vc1parser: fix level value for simple/main profile</summary>
+    </bug>
+    <bug>
+      <id>738243</id>
+      <summary>vc1parse: fix framesize when input is frame-layer</summary>
+    </bug>
+    <bug>
+      <id>738291</id>
+      <summary>fluiddec: leaks incoming caps event</summary>
+    </bug>
+    <bug>
+      <id>738449</id>
+      <summary>vc1parse: just assume none header-format when no codec_data is present</summary>
+    </bug>
+    <bug>
+      <id>738519</id>
+      <summary>vc1parse: parse frame header when stream format is ASF/raw for simple/main profile</summary>
+    </bug>
+    <bug>
+      <id>738532</id>
+      <summary>vc1parse: select caps according to wmv format at negotiation</summary>
+    </bug>
+    <bug>
+      <id>738674</id>
+      <summary>rtmpsink: leaking URI string</summary>
+    </bug>
+    <bug>
+      <id>738695</id>
+      <summary>mpegtsbase: do not remove programs on EOS</summary>
+    </bug>
+    <bug>
+      <id>738696</id>
+      <summary>hlsdemux: send missing stream start</summary>
+    </bug>
+    <bug>
+      <id>739277</id>
+      <summary>GstGLFilter propose allocation pass uninitialized size to gst_query_add_allocation_pool</summary>
+    </bug>
+    <bug>
+      <id>739348</id>
+      <summary>configure.ac: auto decision to include GL library fails</summary>
+    </bug>
+    <bug>
+      <id>739368</id>
+      <summary>gl: small memory leak in gl shader</summary>
+    </bug>
+    <bug>
+      <id>739374</id>
+      <summary>h264parse: sets srccaps too often</summary>
+    </bug>
+  </bugs>
+</release>
