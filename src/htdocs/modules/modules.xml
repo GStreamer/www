@@ -127,7 +127,7 @@ timeline-oriented use of GStreamer makes sense.
       <stable>&gnonlin-version-stable;</stable>
       <devel>git master</devel>
     </versions>
-    <status>active</status>
+    <status>active, but deprecated (replacement is being worked on as part of gst-editing-services)</status>
   </module>
 
   <module>
@@ -191,23 +191,6 @@ Streaming server based on GStreamer
   </module>
 
   <module>
-    <id>gst-plugins-gl</id>
-    <title>GStreamer OpenGL Plug-ins</title>
-    <blurb>plug-in and helper libraries for OpenGL integration</blurb>
-    <description>
-        The GStreamer OpenGL module provides helper libraries, base classes
-        and elements for integrating with OpenGL and using it to perform video
-        display and processing.
-    </description>
-    <maintainer>GStreamer Team</maintainer>
-    <versions>
-      <stable>&gst-plugins-gl-version-stable;</stable>
-      <devel>&gst-plugins-gl-version-devel;</devel>
-    </versions>
-    <status>active</status>
-  </module>
-
-  <module>
     <id>qt-gstreamer</id>
     <blurb>QtGStreamer</blurb>
     <title>Qt bindings</title>
@@ -224,7 +207,7 @@ Streaming server based on GStreamer
       <stable>&qt-gstreamer-version-stable;</stable>
       <devel>&qt-gstreamer-version-devel;</devel>
     </versions>
-    <status>???</status>
+    <status>active-ish</status>
   </module>
 
   <module>
@@ -234,12 +217,28 @@ Streaming server based on GStreamer
     <description>
       GStreamer C# bindings.
     </description>
-    <maintainer>Sebastian Dröge</maintainer>
+    <maintainer>Stephan Sundermann, Sebastian Dröge</maintainer>
     <versions>
       <stable>&gstreamer-sharp-version-stable;</stable>
       <devel>&gstreamer-sharp-version-devel;</devel>
     </versions>
-    <status>unmaintained (but replacement for 1.0 in the works)</status>
+    <status>active</status>
+  </module>
+
+  <module>
+    <id>gst-omx</id>
+    <blurb>OpenMax plugins</blurb>
+    <title>GStreamer OpenMax plugins</title>
+    <description>
+OpenMax-based decoder and encoder elements for GStreamer.
+Replaces gst-openmax.
+    </description>
+    <maintainer>Sebastian Dröge</maintainer>
+    <versions>
+      <stable>&gst-omx-version-stable;</stable>
+      <devel>&gst-omx-version-devel;</devel>
+    </versions>
+    <status>active</status>
   </module>
 
   <module>
@@ -259,23 +258,24 @@ Streaming server based on GStreamer
       <stable>&gst-android-version-stable;</stable>
       <devel>&gst-android-version-devel;</devel>
     </versions>
-    <status>inactive (note: GStreamer builds for Android are actively maintained, see the cerbero module and the release binaries provided)</status>
+    <status>obsolete (note: GStreamer builds for Android are actively maintained, see the cerbero module and the release binaries provided)</status>
   </module>
 
   <module>
-    <id>gst-omx</id>
-    <blurb>OpenMax plugins</blurb>
-    <title>GStreamer OpenMax plugins</title>
+    <id>gst-plugins-gl</id>
+    <title>GStreamer OpenGL Plug-ins</title>
+    <blurb>plug-in and helper libraries for OpenGL integration</blurb>
     <description>
-OpenMax-based decoder and encoder elements for GStreamer.
-Replaces gst-openmax.
+        The GStreamer OpenGL module provides helper libraries, base classes
+        and elements for integrating with OpenGL and using it to perform video
+        display and processing.
     </description>
-    <maintainer>Sebastian Dröge</maintainer>
+    <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>&gst-omx-version-stable;</stable>
-      <devel>&gst-omx-version-devel;</devel>
+      <stable>&gst-plugins-gl-version-stable;</stable>
+      <devel>&gst-plugins-gl-version-devel;</devel>
     </versions>
-    <status>active</status>
+    <status>obsolete (now part of gst-plugins-bad)</status>
   </module>
 
 </modules>
