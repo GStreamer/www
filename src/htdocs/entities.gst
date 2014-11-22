@@ -42,6 +42,9 @@
 <!ENTITY gst-openmax-version-devel "git master">
 <!ENTITY gstreamer-sharp-version-devel "git master">
 
+<!ENTITY orc-version-stable "0.4.22">
+<!ENTITY orc-version-devel "git master">
+
 <!ENTITY gst-bug-report "http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">
 <!ENTITY gst-repo-http "http://cgit.freedesktop.org/gstreamer/">
 <!ENTITY realsite "http://gstreamer.freedesktop.org">

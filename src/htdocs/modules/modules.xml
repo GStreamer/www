@@ -242,6 +242,22 @@ Replaces gst-openmax.
   </module>
 
   <module>
+    <id>orc</id>
+    <blurb>Orc runtime compiler</blurb>
+    <title>Library of Optimized Inner Loops Runtime Compiler</title>
+    <description>
+Library and set of tools for compiling and executing SIMD assembly
+language-like programs that operate on arrays of data.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <stable>&orc-version-stable;</stable>
+      <devel>&orc-version-devel;</devel>
+    </versions>
+    <status>active</status>
+  </module>
+
+  <module>
     <id>gst-android</id>
     <blurb>GStreamer as media engine for Android</blurb>
     <title>GStreamer as media engine for Android</title>
