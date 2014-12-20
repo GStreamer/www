@@ -6475,5 +6475,70 @@ or download tarballs for
         </content>
   </item>
 
+<item>
+      <date>2014-12-20 16:00</date>
+        <title>GStreamer Core, Plugins and RTSP server 1.4.5 stable release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce a bugfix release of the stable
+1.4 release series. The 1.4 release series is adding new features on top
+of the 1.2 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework that contains new features.
+The 1.4.x bugfix releases only contain important bugfixes compared to 1.4.0.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows are provided by the
+GStreamer project for this release.
+The Android binaries are now built with the r10c NDK and as such
+binary compatible again with all NDK and Android releases.
+Additionally now binaries for Android ARMv7 and Android X86 are
+provided.
+This binary release features the first 1.4 releases of GNonLin and
+the GStreamer Editing Services.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users. It is not API
+or ABI compatible with the 0.10.x series. It can, however, be installed
+in parallel with the 0.10.x series and will not affect an existing
+0.10.x installation.
+</p>
+<p>
+The stable 1.4.x release series is API and ABI compatible with 1.0.x and
+any other 1.x release series in the future. Compared to 1.0.x it contains
+some new features and more intrusive changes that were considered too
+risky as a bugfix.
+</p>
+
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.4.5.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.4.5.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.4.5.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.4.5.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.4.5.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-libav/1.4.5.html">gst-libav</a>, or
+<a href="&site;/releases/gst-rtsp-server/1.4.5.html">gst-rtsp-server</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.4.5.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.4.5.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.4.5.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.4.5.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.4.5.tar.xz">gst-plugins-bad</a>, or
+<a href="&site;/src/gst-libav/gst-libav-1.4.5.tar.xz">gst-libav</a>, or
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.4.5.tar.xz">gst-rtsp-server</a>.
+        </p>
+        <p>
+	Check the <a href="http://lists.freedesktop.org/archives/gstreamer-devel/2014-December/050904.html">release announcement mail</a> for details
+	and the release notes above for a list of changes.
+        </p>
+        <p>
+        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.4.5/">Android</a>,
+	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.4.5/">iOS</a>,
+	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.4.5/">Mac OS X</a> and
+        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.4.5/">Windows</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
 

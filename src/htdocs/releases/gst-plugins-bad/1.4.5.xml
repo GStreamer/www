@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plugins</module-fancy>
+  <name></name>
+  <version>1.4.5</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce a bugfix release of the stable
+1.4 release series. The 1.4 release series is adding new features on top
+of the 1.2 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework that contains new features.
+The 1.4.x bugfix releases only contain important bugfixes compared to 1.4.0.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows are provided by the
+GStreamer project for this release.
+</p>
+<p>
+The 1.x series is a stable series targeted at end users. It is not API
+or ABI compatible with the 0.10.x series. It can, however, be installed
+in parallel with the 0.10.x series and will not affect an existing
+0.10.x installation.
+</p>
+<p>
+The stable 1.4.x release series is API and ABI compatible with 1.0.x and
+any other 1.x release series in the future. Compared to 1.0.x it contains
+some new features and more intrusive changes that were considered too
+risky as a bugfix.
+</p>
+
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plugins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plugins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plugins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Aleix Conchillo Flaqué</person>
+	<person>Alessandro Decina</person>
+	<person>Gwenole Beauchesne</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Matthew Waters</person>
+	<person>Sebastian Dröge</person>
+	<person>Sudip Jain</person>
+	<person>Thibault Saunier</person>
+	<person>Thomas Klausner</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Wim Taymans</person>
+	<person>Wonchul Lee</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  <bugs>
+    <bug>
+      <id>722764</id>
+      <summary>rawparse: fix SEEKING query handling</summary>
+    </bug>
+    <bug>
+      <id>729768</id>
+      <summary>mpegtsbase: Raise limit to read more bytes initially to find PCR</summary>
+    </bug>
+    <bug>
+      <id>739152</id>
+      <summary>gl/cocoa: build with GNUStep fails</summary>
+    </bug>
+    <bug>
+      <id>740191</id>
+      <summary>dvbbasesink: segfaults on 32-bit (rpi)</summary>
+    </bug>
+    <bug>
+      <id>740201</id>
+      <summary>gl/cocoa: Does not compile on OSX &lt; 10.7 anymore</summary>
+    </bug>
+    <bug>
+      <id>740451</id>
+      <summary>srtpdec: leaks rtp/rtcp sink events</summary>
+    </bug>
+    <bug>
+      <id>740953</id>
+      <summary>configure.ac: unportable test(1) comparison operator</summary>
+    </bug>
+    <bug>
+      <id>741321</id>
+      <summary>opusparse: fix header parsing esp. of encoded output of libopus</summary>
+    </bug>
+  </bugs>
+</release>
