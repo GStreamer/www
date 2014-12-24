@@ -122,9 +122,5 @@ Note that many RTP elements assume they receive RTP buffers with
 <a href="&site;/data/doc/gstreamer/head/gstreamer-libs/html/gstreamer-libs-GstNetAddressMeta.html">GstNetAddressMeta</a>
 meta data set on them (as udpsrc will produce).
 </p>
-<!--
-<a HREF="../images/rtpbin.png">Image 1</a> - Internals of RTPBin with JRTPLIB support<br/>
-<a HREF="../images/rtpbin-nojrtp.png">Image 2</a> - Internals of RTPBin without JRTPLIB support<br/>
--->
   </body>
 </page>
