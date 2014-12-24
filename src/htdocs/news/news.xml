@@ -6475,7 +6475,36 @@ or download tarballs for
         </content>
   </item>
 
-<item>
+  <item>
+      <date>2014-12-17 10:30</date>
+        <title>Orc 0.4.23 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team announces another maintenance bug-fix release of liborc,
+the Optimized Inner Loop Runtime Compiler. Main changes since the previous
+release:
+        </p>
+        <p>
+          <ul>
+            <li>various improvements to the NEON backend to bring it closer to
+                the SSE backend</li>
+            <li>add support for setting a custom backup function</li>
+            <li>preserve NEON/VFP registers across subroutines</li>
+            <li>fix 64 bit parameter loading on big-endian systems</li>
+            <li>improved implementations for various opcodes</li>
+            <li>various improvements and fixes to constants handling</li>
+            <li>avoid some undefined operations on signed integers</li>
+            <li>prefer user specific directories over global ones for
+                intermediate files to prevent name collisions</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.23.tar.xz">orc-0.4.23</a>.
+        </p>
+        </content>
+  </item>
+
+  <item>
       <date>2014-12-20 16:00</date>
         <title>GStreamer Core, Plugins and RTSP server 1.4.5 stable release</title>
         <content>
