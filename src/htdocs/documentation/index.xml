@@ -220,6 +220,16 @@ gst-plugins-base are guaranteed to be API and ABI stable</b></p>
 
 </table>
 
+<h2>GStreamer Conference Videos and Slides</h2>
+
+<ul>
+ <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2014">GStreamer Conference 2014: Videos and Slides</a></li>
+ <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2013">GStreamer Conference 2013: Videos and Slides</a></li>
+ <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2012">GStreamer Conference 2012: Videos and Slides</a></li>
+ <li><a href="http://gstconf.ubicast.tv/channels/#conferences-2011">GStreamer Conference 2011: Videos and Slides</a></li>
+ <li><a href="http://gstconf.ubicast.tv/channels/#conferences-2010">GStreamer Conference 2010: Videos and Slides</a></li>
+</ul>
+
 <h2>GStreamer licensing advisory</h2>
 <p>The GStreamer community provides the following licensing advisory for
 developers planing on or already using GStreamer for their applications:</p>
