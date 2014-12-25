@@ -27,23 +27,19 @@
 <tr>
  <td>Application Development Manual (Read this first)</td>
  <td><a href="&site;/data/doc/gstreamer/head/manual/html/index.html">HTML</a></td>
- <td><a href="&site;/data/doc/gstreamer/head/manual/manual.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/head/manual/manual.pdf">PDF</a></td>
 <!--
  <td><a href="&site;/data/doc/gstreamer/devel/manual/html/index.html">HTML</a></td>
- <td><a href="&site;/data/doc/gstreamer/devel/manual/manual.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/devel/manual/manual.pdf">PDF</a></td>
  -->
 <!--
  <td><a href="&site;/data/doc/gstreamer/stable/manual/html/index.html">HTML</a></td>
- <td><a href="&site;/data/doc/gstreamer/stable/manual/manual.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/stable/manual/manual.pdf">PDF</a></td>
  -->
 </tr>
 <tr>
  <td>Frequently Asked Questions</td>
  <td><a href="&site;/data/doc/gstreamer/head/faq/html/index.html">HTML</a></td>
- <td><a href="&site;/data/doc/gstreamer/head/faq/faq.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/head/faq/faq.pdf">PDF</a></td>
  <!-- <td colspan="3">&#160;</td> -->
 </tr>
@@ -51,16 +47,13 @@
 <tr>
  <td>Plugin Writer's Guide</td>
  <td><a href="&site;/data/doc/gstreamer/head/pwg/html/index.html">HTML</a></td>
- <td><a href="&site;/data/doc/gstreamer/head/pwg/pwg.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/head/pwg/pwg.pdf">PDF</a></td>
 <!--
  <td><a href="&site;/data/doc/gstreamer/devel/pwg/html/index.html">HTML</a></td>
- <td><a href="&site;/data/doc/gstreamer/devel/pwg/pwg.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/devel/pwg/pwg.pdf">PDF</a></td>
  -->
 <!--
  <td><a href="&site;/data/doc/gstreamer/stable/pwg/html/index.html">HTML</a></td>
- <td><a href="&site;/data/doc/gstreamer/stable/pwg/pwg.ps">PostScript</a></td>
  <td><a href="&site;/data/doc/gstreamer/stable/pwg/pwg.pdf">PDF</a></td>
   -->
 </tr>
@@ -92,15 +85,20 @@
 <!-- <td colspan="3"><a href="">HTML</a></td> -->
 </tr>
 
+<!-- FIXME: save useful bits from wiki
 <tr>
  <td>GStreamer Wiki (see esp.
    <a href="http://gstreamer.freedesktop.org/wiki/ReleasePlanning">ReleasePlanning</a> and
    <a href="http://gstreamer.freedesktop.org/wiki/SubmittingPatches">SubmittingPatches</a>)
  </td>
  <td colspan="3"><a href="http://gstreamer.freedesktop.org/wiki/">HTML</a></td>
+-->
 <!-- <td colspan="3"><a href="">HTML</a></td> -->
 <!-- <td colspan="3"><a href="">HTML</a></td> -->
+<!--
 </tr>
+-->
+
 </table>
 
 <table width="95%" border="1" cellspacing="0" cellpadding="2">
@@ -126,9 +124,9 @@
 
 <h2>GStreamer Plugins-Bad Module Libraries Reference</h2>
 
-<p><b>Note: The API from these libraries is unstable and can change between
-releases.<br />Only the API in libraries from GStreamer core and plugins base are
-guaranteed to be API and ABI stable</b></p>
+<p><b>Note: The API from these gst-plugins-bad libraries is unstable and can
+change between releases.<br />Only the API in libraries from GStreamer core and
+gst-plugins-base are guaranteed to be API and ABI stable</b></p>
 
 <tr>
  <th>document</th>
@@ -229,14 +227,13 @@ developers planing on or already using GStreamer for their applications:</p>
 <a href="&site;/documentation/licensing.html">GStreamer Licensing Advisory</a>
 </p>
 
-<h2>GStreamer plug-ins split-up in 0.10</h2>
+<h2>GStreamer plugin module split-up</h2>
 <p><a href="&site;/documentation/splitup.html">
-An explanation of the plug-ins split-up in 0.10</a>
+An explanation of the various plugin modules and how they were split up</a>
 </p>
 
-<h2>RTP in GStreamer 0.10</h2>
-<p><a href="&site;/documentation/rtp.html">Information from Philipe Khalaf</a>
-on the ongoing RTP development being done for GStreamer 0.10</p>
+<h2>RTP and RTSP support in GStreamer</h2>
+<p><a href="&site;/documentation/rtp.html">RTSP and RTP component overview</a></p>
 
 <h2>Articles, Slides, Tutorials</h2>
 External articles discussing GStreamer in various contexts.
