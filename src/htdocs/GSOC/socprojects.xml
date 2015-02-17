@@ -20,7 +20,7 @@ The list below is just some suggestions made by various members of the GStreamer
 <h1>List of Summer of Code project ideas for students</h1>
 
 <ul>
-  <li>plugins</li>
+  <li>Plugins</li>
   <ul>
     <li><a href="opengl.html">GStreamer &amp; OpenGL</a>: Project ideas for improving OpenGL support in GStreamer</li>
     <li><a href="opencvgesturedetection.html">OpenCV Gesture Detection</a>: Implement an OpenCV plugin for gesture detection (eg: hand gesture)</li>
@@ -32,19 +32,23 @@ The list below is just some suggestions made by various members of the GStreamer
     <li><a href="editingplugins.html">Editing Plugins</a>: Wrapping popular audio/video filters as GStreamer plugins.</li>
   </ul>
 
-  <li>framework</li>
+  <li>Framework</li>
   <ul>
     <li><a href="gstplayer.html">GstPlayer</a>: Extended it into a set of minimalistic official GStreamer players for all the supported platforms.</li>
     <li><a href="closed_captioning_support.html">Closed Captioning support</a>: Subtitles for the hearing impaired</li>
     <li><a href="orc.html">Orc Acceleration</a>: Extend use of the Orc optimizations in GStreamer to ARM 64bits</li>
   </ul>
 
-  <li>bindings</li>
+  <li>Bindings</li>
   <ul>
     <li><a href="rust.html">GStreamer-Rust</a>: Bindings for the Rust programming language.</li>
     <li><a href="gstlua.html">GStreamer-Lua</a>: GStreamer Lua bindings enhancement</li>
     <li><a href="gstjava.html">GStreamer-Java enhancement</a>: GStreamer Java bindings enhancement, JNI based bindings that work better in Android than Java-GNOME.</li>
-    <li><a href="automaticjavabindings.html">Automatic low-level Java binding generation</a>: Automatically generate the low-level layer of gstreamer-java.</li>
+  </ul>
+
+  <li>Applications</li>
+  <ul>
+    <li>Students can propose work on applications that use GStreamer if this work will involve enhancing the GStreamer framework as well. For example writing a new feature in Pitivi that requires new API in the gst-editing-services or extending Buzztrax by writing music related GStreamer plugins.</li>
   </ul>
 </ul>
 
