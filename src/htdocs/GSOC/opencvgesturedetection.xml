@@ -20,8 +20,19 @@
 <p>
 <h1>Interested Mentors:</h1>
 <ul>
-  <li>Luis de Bethencourt</li>
+  <li>Nicolas Dufresne, Luis de Bethencourt</li>
 </ul>
+</p>
+
+<p>
+<h1>Notes</h1>
+Overall improvements need to be done in the OpenCV element.
+In general we want to use OpenCV to scale down the input for processing, so we can run these on higher resolution.
+</p>
+
+<p>
+OpenCV has a fast scaler (that isn't color correct, but good enough to do the processing when you process images,
+you convert them into monochrome, a extra step would be to scale down before sending to the image processor
 </p>
 
 <p>
