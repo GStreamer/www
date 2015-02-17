@@ -22,39 +22,33 @@ The list below is just some suggestions made by various members of the GStreamer
 <ul><li>plugins</li>
 
 <ul>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/PluginsForEditing">Editing Plugins</a>: Wrapping much-needed audio/video filters as gstreamer plugins.</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/opengl.html">GStreamer &amp; OpenGL</a> : Project ideas for improving OpenGL support in GStreamer</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/OpencvGestureDetection">OpenCV Gesture Detection</a> : Implement an opencv plugin for gesture detection (eg: hand gesture)</li>
+<li><a href="http://wiki.webmproject.org/adaptive-streaming/webm-dash-specification">DASH WebM support</a>: Implement a plugin to do WebM DASH streaming based on the existing MP4 DASH plugin.</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/Windows">Windows Support</a>: Improve Wasapi, MediaFoundation, d3dvideosink and other Windows-specific plugins.
 <li><a href="http://gstreamer.freedesktop.org/GSOC/zrtpSupport">zrtp Support</a>: Write plugins to support zRTP</li>
 <li><a href="http://gstreamer.freedesktop.org/GSOC/ChapterSupport">Chapter Support</a>: Implement chapter support in more plugins</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/OpencvGestureDetection">OpenCV Gesture Detection</a> : Implement an opencv plugin for gesture detection (eg: hand gesture)</li>
-<li><a href="http://wiki.webmproject.org/adaptive-streaming/webm-dash-specification">DASH WebM support</a>: Implement a plugin to do WebM DASH streaming</li>
-<li><a href="https://bugzilla.gnome.org/process_bug.cgi">Improved Subtitle support</a> : Work on subtitle support in Muxers, for example adding XSUB support</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/opengl.html">GStreamer &amp; OpenGL</a> : Project ideas for improving OpenGL support in GStreamer</li> 
-<li><a href="fixme">CoreAnimation plugin for Apple platforms</a> : CoreAnimation video sink (also useful for iOS)</li>
-</ul>
-<li>applications</li>
-<ul><li><a href="http://wiki.pitivi.org/wiki/Google_Summer_of_Code">Pitivi</a>: Improve Pitivi video editor</li>
-<li><a href="http://wiki.buzztrax.org/index.php/TODO">Buzztrax</a>: Improve Buzztrax music composer</li>
+<li><a href="https://bugzilla.gnome.org/process_bug.cgi">Improved Subtitle support</a>: Work on subtitle support in Muxers, for example adding XSUB support</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/PluginsForEditing">Editing Plugins</a>: Wrapping popular audio/video filters as gstreamer plugins.</li>
 </ul>
 <li>framework</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/GstPlayer">GstPlayer</a>: Extended it into a set of minimalistic official GStreamer players for all the supported platforms.
 <ul><li><a href="http://gstreamer.freedesktop.org/GSOC/Closed_Captioning_support">Closed_Captioning_support</a>: Subtitles for the hearing impaired</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/TamasKorodi/IVC_multichannel_grabber_card_support">Multichannel_grabber_card_support</a> : Multichannel video grabber card support and more baseclasses</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/GeneratedFormatTestdata">GeneratedFormatTestdata</a>: Generate robustness testdata for demuxer/parser tests</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/orc.html">Orc Acceleration</a>: Extend use of the Orc optimizations in GStreamer</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/orc.html">Orc Acceleration</a>: Extend use of the Orc optimizations in GStreamer to ARM 64bits</li>
 </ul>
 <li>bindings</li>
 <ul>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/SocProjects/GStreamerLua">Gstreamer-Lua</a> : Gstreamer Lua binding enhancement</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/RobinHorvath/Gstreamer-java_enhancement">Gstreamer-Java enhancement</a> : GStreamer Java binding enhancement, GStreamer and GStreamer-Java Mac OS and Windows port</li>
-<li>Port GStreamer applications and/or plugins from 0.10 to 0.11/1.0</li>
-<li><a href="http://gstreamer.freedesktop.org/GSOC/RolandElek/AutomaticLowLevelJavaBindingGeneration">Automatic low-level Java binding generation</a> : Automatically generate the low-level layer of gstreamer-java</li>
-<li><a href="fixme">JavaScript bindings</a> : Since GNOME picked JavaScript as a preferred language for desktop apps, it would be good to have someone verify that it works with GStreamer and write some sample apps and tutorials.</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/Rust">GStreamer-Rust</a>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/GStreamerLua">GStreamer-Lua</a> : GStreamer Lua binding enhancement</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/GStreamerJava">GStreamer-Java enhancement</a>: GStreamer Java binding enhancement, JNI based bindings that work better in Android than Java-GNOME.</li>
+<li><a href="http://gstreamer.freedesktop.org/GSOC/AutomaticLowLevelJavaBindingGeneration">Automatic low-level Java binding generation</a> : Automatically generate the low-level layer of gstreamer-java</li>
 </ul>
 </ul>
 
 <h1 id="Other_Organizations">Other Organizations</h1>
 <p>Other organizations that have project ideas related to GStreamer:</p>
-<ul><li><a href="http://live.gnome.org/Outreach/SummerOfCode/2014/Ideas">http://live.gnome.org/Outreach/SummerOfCode/2014/Ideas</a></li>
-<li><a href="http://community.kde.org/GSoC/2014/Ideas">http://community.kde.org/GSoC/2014/Ideas</a></li>
+<ul><li><a href="http://live.gnome.org/Outreach/SummerOfCode/2015/Ideas">http://live.gnome.org/Outreach/SummerOfCode/2014/Ideas</a></li>
+<li><a href="http://community.kde.org/GSoC/2015/Ideas">http://community.kde.org/GSoC/2014/Ideas</a></li>
 <li><a href="http://wiki.pitivi.org/wiki/Google_Summer_of_Code">http://wiki.pitivi.org/wiki/Google_Summer_of_Code</a></li>
 </ul>
 </body></page>
