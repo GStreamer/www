@@ -8,14 +8,14 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <head>
-  <title>GStreamer Google Summer of Code 2014</title>
+  <title>GStreamer Google Summer of Code 2015</title>
 </head>
 <body>
 
-<h1>GStreamer Google Summer of Code 2014</h1>
+<h1>GStreamer Google Summer of Code 2015</h1>
 
 <p>
-Welcome to the GStreamer Google Summer of Code 2014.
+Welcome to the GStreamer Google Summer of Code 2015.
 </p>
 <p>
 Google Summer of Code is a program run by Google in collaboration with various open source projects. The goal of the program is to allow students to work on open source software during their summer break and gain valuable experience and skills. Google has been running the program for many years now and many students have gained valuable experience and skills doing GStreamer related Summer of Code. These pages will provide you with some general information about how to apply, some ideas we have, how to pitch your own ideas and how to write a GSoC application that is likely to get accepted.
@@ -23,7 +23,7 @@ Google Summer of Code is a program run by Google in collaboration with various o
 <p>
 These pages outline the requirements and ideas for participating in the Google Summer of code doing a
 project around GStreamer. In addition to any requests we have you also need to qualify according to the
-guidelines provided by Google. So recommend that if you haven't already done so, take a look at <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014">the Google Summer of Code</a> information on the Google website. You also need to apply through that site.
+guidelines provided by Google. So recommend that if you haven't already done so, take a look at <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2015">the Google Summer of Code</a> information on the Google website. You also need to apply through that site.
 </p>
 <p>
 Once you done that what you want to do is to look over our general information page for students. It contains hints and tips for how you can write a proposal that we are likely to approve.
