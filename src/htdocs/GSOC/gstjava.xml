@@ -14,7 +14,25 @@
 <h1>GStreamer Google Summer of Code: Java</h1>
 
 <p>
-<quot>GStreamer Java bindings enhancement, JNI based bindings that work better in Android than Java-GNOME.</quot>
+<quot>GStreamer Java bindings rewrite, JNI based bindings that work better in Android than Java-GNOME.</quot>
+</p>
+
+<p>
+<h1>Interested Mentors:</h1>
+<ul>
+  <li>Luis de Bethencourt</li>
+</ul>
+</p>
+
+<p>
+<h1>Student Notes:</h1>
+</p>
+
+<p>
+<h1>Related links:</h1>
+<ul>
+  <li><a href="http://en.wikipedia.org/wiki/Java_Native_Interface">http://en.wikipedia.org/wiki/Java_Native_Interface</a></li>
+</ul>
 </p>
 
 </body>

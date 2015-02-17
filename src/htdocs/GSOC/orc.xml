@@ -17,5 +17,24 @@
 <quot>Extend use of the Orc optimizations in GStreamer to ARM 64 bits.</quot>
 </p>
 
+<p>
+<h1>Interested Mentors:</h1>
+<ul>
+  <li>Sebastian Dröge, Wim Taymans</li>
+</ul>
+</p>
+
+<p>
+<h1>Student Notes:</h1>
+</p>
+
+<p>
+<h1>Related links:</h1>
+<ul>
+  <li><a href="http://code.entropywave.com/orc/">http://code.entropywave.com/orc/</a></li>
+  <li><a href="http://cgit.freedesktop.org/gstreamer/orc/">http://cgit.freedesktop.org/gstreamer/orc/</a></li>
+</ul>
+</p>
+
 </body>
 </page>
