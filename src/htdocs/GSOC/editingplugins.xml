@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+<head>
+  <title>GStreamer Google Summer of Code: Editing Plugins</title>
+</head>
+<body>
+<h1>GStreamer Google Summer of Code: Editing Plugins</h1>
+
+<p>
+<quot>Wrapping popular audio/video filters as GStreamer plugins.</quot>
+</p>
+
+</body>
+</page>
