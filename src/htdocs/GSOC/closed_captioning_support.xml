@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+<head>
+  <title>GStreamer Google Summer of Code: Closed Captioning Support</title>
+</head>
+<body>
+<h1>GStreamer Google Summer of Code: Closed Captioning Support</h1>
+
+<p>
+<quot>Implement subtitules for the hearing impaired.</quot>
+</p>
+
+</body>
+</page>

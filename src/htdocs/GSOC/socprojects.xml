@@ -34,17 +34,17 @@ The list below is just some suggestions made by various members of the GStreamer
 
   <li>framework</li>
   <ul>
-    <li><a href="GstPlayer">GstPlayer</a>: Extended it into a set of minimalistic official GStreamer players for all the supported platforms.</li>
-    <li><a href="closed_captioning_support">Closed_Captioning_support</a>: Subtitles for the hearing impaired</li>
+    <li><a href="gstplayer.html">GstPlayer</a>: Extended it into a set of minimalistic official GStreamer players for all the supported platforms.</li>
+    <li><a href="closed_captioning_support.html">Closed Captioning support</a>: Subtitles for the hearing impaired</li>
     <li><a href="orc.html">Orc Acceleration</a>: Extend use of the Orc optimizations in GStreamer to ARM 64bits</li>
   </ul>
 
   <li>bindings</li>
   <ul>
-    <li><a href="rust">GStreamer-Rust</a>: Bindings for the Rust programming language.</li>
-    <li><a href="gstreamerlua">GStreamer-Lua</a>: GStreamer Lua binding enhancement</li>
-    <li><a href="gStreamerjava">GStreamer-Java enhancement</a>: GStreamer Java binding enhancement, JNI based bindings that work better in Android than Java-GNOME.</li>
-    <li><a href="automaticjavabindings">Automatic low-level Java binding generation</a>: Automatically generate the low-level layer of gstreamer-java.</li>
+    <li><a href="rust.html">GStreamer-Rust</a>: Bindings for the Rust programming language.</li>
+    <li><a href="gstlua.html">GStreamer-Lua</a>: GStreamer Lua bindings enhancement</li>
+    <li><a href="gstjava.html">GStreamer-Java enhancement</a>: GStreamer Java bindings enhancement, JNI based bindings that work better in Android than Java-GNOME.</li>
+    <li><a href="automaticjavabindings.html">Automatic low-level Java binding generation</a>: Automatically generate the low-level layer of gstreamer-java.</li>
   </ul>
 </ul>
 

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+<head>
+  <title>GStreamer Google Summer of Code: Rust</title>
+</head>
+<body>
+<h1>GStreamer Google Summer of Code: Rust Bindings</h1>
+
+<p>
+<quot>GStreamer bindings for the Rust programming language.</quot>
+</p>
+
+</body>
+</page>
