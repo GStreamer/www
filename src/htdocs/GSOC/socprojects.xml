@@ -25,26 +25,26 @@ The list below is just some suggestions made by various members of the GStreamer
     <li><a href="opengl.html">GStreamer &amp; OpenGL</a>: Project ideas for improving OpenGL support in GStreamer</li>
     <li><a href="opencvgesturedetection.html">OpenCV Gesture Detection</a>: Implement an OpenCV plugin for gesture detection (eg: hand gesture)</li>
     <li><a href="http://wiki.webmproject.org/adaptive-streaming/webm-dash-specification">DASH WebM support</a>: Implement a plugin to do WebM DASH streaming based on the existing MP4 DASH plugin.</li>
-    <li><a href="http://gstreamer.freedesktop.org/GSOC/windows.html">Windows Support</a>: Improve Wasapi, MediaFoundation, d3dvideosink and other Windows-specific plugins.</li>
-    <li><a href="http://gstreamer.freedesktop.org/GSOC/zrtp.html">zRTP Support</a>: Write plugins to support zRTP</li>
-    <li><a href="http://gstreamer.freedesktop.org/GSOC/chaptersupport.html">Chapter Support</a>: Implement chapter support in more plugins</li>
+    <li><a href="windows.html">Windows Support</a>: Improve Wasapi, MediaFoundation, d3dvideosink and other Windows-specific plugins.</li>
+    <li><a href="zrtp.html">zRTP Support</a>: Write plugins to support zRTP</li>
+    <li><a href="chaptersupport.html">Chapter Support</a>: Implement chapter support in more plugins</li>
     <li><a href="https://bugzilla.gnome.org/show_bug.cgi?id=628429">Improved Subtitle support</a>: Work on subtitle support in Muxers, for example adding XSUB support</li>
-    <li><a href="http://gstreamer.freedesktop.org/GSOC/editingplugins.html">Editing Plugins</a>: Wrapping popular audio/video filters as GStreamer plugins.</li>
+    <li><a href="editingplugins.html">Editing Plugins</a>: Wrapping popular audio/video filters as GStreamer plugins.</li>
   </ul>
 
   <li>framework</li>
   <ul>
-    <li><a href="http://gstreamer.freedesktop.org/GSOC/GstPlayer">GstPlayer</a>: Extended it into a set of minimalistic official GStreamer players for all the supported platforms.</li>
-    <li><a href="http://gstreamer.freedesktop.org/GSOC/Closed_Captioning_support">Closed_Captioning_support</a>: Subtitles for the hearing impaired</li>
-    <li><a href="http://gstreamer.freedesktop.org/GSOC/orc.html">Orc Acceleration</a>: Extend use of the Orc optimizations in GStreamer to ARM 64bits</li>
+    <li><a href="GstPlayer">GstPlayer</a>: Extended it into a set of minimalistic official GStreamer players for all the supported platforms.</li>
+    <li><a href="closed_captioning_support">Closed_Captioning_support</a>: Subtitles for the hearing impaired</li>
+    <li><a href="orc.html">Orc Acceleration</a>: Extend use of the Orc optimizations in GStreamer to ARM 64bits</li>
   </ul>
 
   <li>bindings</li>
   <ul>
-    <li><a href="http://gstreamer.freedesktop.org/GSOC/Rust">GStreamer-Rust</a>: Bindings for the Rust programming language.</li>
-    <li><a href="http://gstreamer.freedesktop.org/GSOC/GStreamerLua">GStreamer-Lua</a>: GStreamer Lua binding enhancement</li>
-    <li><a href="http://gstreamer.freedesktop.org/GSOC/GStreamerJava">GStreamer-Java enhancement</a>: GStreamer Java binding enhancement, JNI based bindings that work better in Android than Java-GNOME.</li>
-    <li><a href="http://gstreamer.freedesktop.org/GSOC/AutomaticLowLevelJavaBindingGeneration">Automatic low-level Java binding generation</a>: Automatically generate the low-level layer of gstreamer-java.</li>
+    <li><a href="rust">GStreamer-Rust</a>: Bindings for the Rust programming language.</li>
+    <li><a href="gstreamerlua">GStreamer-Lua</a>: GStreamer Lua binding enhancement</li>
+    <li><a href="gStreamerjava">GStreamer-Java enhancement</a>: GStreamer Java binding enhancement, JNI based bindings that work better in Android than Java-GNOME.</li>
+    <li><a href="automaticjavabindings">Automatic low-level Java binding generation</a>: Automatically generate the low-level layer of gstreamer-java.</li>
   </ul>
 </ul>
 
