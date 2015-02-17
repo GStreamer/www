@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+<head>
+  <title>GStreamer Google Summer of Code: Haskell</title>
+</head>
+<body>
+<h1>GStreamer Google Summer of Code: Haskell Bindings</h1>
+
+<p>
+<quot>Enhance the Haskell bindings for GStreamer.</quot>
+</p>
+
+<p>
+<h1>Interested Mentors:</h1>
+<ul>
+  <li>Sebastian Dröge</li>
+</ul>
+</p>
+
+<p>
+<h1>Student Notes:</h1>
+</p>
+
+<p>
+<h1>Related links:</h1>
+<ul>
+  <li><a href="https://github.com/gtk2hs/gstreamer/issues/1">https://github.com/gtk2hs/gstreamer/issues/1</a></li>
+</ul>
+</p>
+
+</body>
+</page>
