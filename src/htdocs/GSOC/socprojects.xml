@@ -35,7 +35,6 @@ The list below is just some suggestions made by various members of the GStreamer
   <li>Framework</li>
   <ul>
     <li><a href="gstplayer.html">GstPlayer</a>: Extended it into a set of minimalistic official GStreamer players for all the supported platforms.</li>
-    <li><a href="closed_captioning_support.html">Closed Captioning support</a>: Subtitles for the hearing impaired</li>
     <li><a href="orc.html">Orc Acceleration</a>: Extend use of the Orc optimizations in GStreamer to ARM 64bits</li>
   </ul>
 
