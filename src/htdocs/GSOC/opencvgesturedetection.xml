@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+<head>
+  <title>GStreamer Google Summer of Code: OpenCV Gesture Detection</title>
+</head>
+<body>
+<h1>GStreamer Google Summer of Code: OpenCV Gesture Detection</h1>
+
+<p>
+<quot>Implement an OpenCV based plugin for gesture detection. For example hand gestures.</quot>
+</p>
+
+</body>
+</page>
