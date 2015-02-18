@@ -18,6 +18,15 @@
 </p>
 
 <p>
+There is some preliminary code in MP4 supporting chapters, and the Matroska plugin handles the Table of Contents.
+This is a good starting point and a good reference for the rest of the plugins.
+</p>
+
+<p>
+A user-facing working sample solution will be implemented inside the Totem player.
+</p>
+
+<p>
 <h1>Interested Mentors:</h1>
 <ul>
   <li>Thiago Santos</li>
@@ -33,6 +42,7 @@
 <h1>Related links:</h1>
 <ul>
   <li><a href="http://matroska.org/technical/specs/chapters/index.html">http://matroska.org/technical/specs/chapters/index.html</a></li>
+  <li><a href="http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstToc.html">http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstToc.html</a></li>
 </ul>
 </p>
 
