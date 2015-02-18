@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+<head>
+  <title>GStreamer Google Summer of Code: DASH WebM</title>
+</head>
+<body>
+<h1>GStreamer Google Summer of Code: DASH WebM</h1>
+
+<p>
+<quot>Implement a plugin to support WebM DASH streaming based on the existing MP4 DASH plugin.</quot>
+</p>
+
+<p>
+<h1>Interested Mentors:</h1>
+<ul>
+  <li>Thiago Santos</li>
+</ul>
+</p>
+
+<p>
+<h1>Student Notes:</h1>
+</p>
+
+<p>
+<h1>Related links:</h1>
+<ul>
+  <li><a href="http://wiki.webmproject.org/adaptive-streaming/webm-dash-specification">http://wiki.webmproject.org/adaptive-streaming/webm-dash-specification</a></li>
+</ul>
+</p>
+
+</body>
+</page>
