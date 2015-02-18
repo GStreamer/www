@@ -31,6 +31,8 @@
 <p>
 <h1>Related links:</h1>
 <ul>
+  <li><a href="https://github.com/sdroege/gst-player">https://github.com/sdroege/gst-player</a></li>
+  <li><a href="https://coaxion.net/blog/2014/08/gstreamer-playback-api/">https://coaxion.net/blog/2014/08/gstreamer-playback-api</a></li>
   <li><a href="https://coaxion.net/~slomo/gst-player/docs/gst-player-gstplayer.html">https://coaxion.net/~slomo/gst-player/docs/gst-player-gstplayer.html</a></li>
 </ul>
 </p>
