@@ -43,7 +43,7 @@ The list below is just some suggestions made by various members of the GStreamer
   <ul>
     <li><a href="rust.html">GStreamer-Rust</a>: Bindings for the Rust programming language.</li>
     <li><a href="gstlua.html">GStreamer-Lua</a>: GStreamer Lua bindings enhancement</li>
-    <li><a href="gstjava.html">GStreamer-Java enhancement</a>: GStreamer Java bindings enhancement, JNI based bindings that work better in Android than Java-GNOME.</li>
+    <li><a href="gstjava.html">GStreamer-Java enhancement</a>: New GStreamer Java bindings, based on JNI to work better in Android than Java-GNOME.</li>
     <li><a href="gsthaskell.html">GStreamer-Haskell</a>: Port bindings to being generated automatically via gobject-introspection and to 1.x.</li>
   </ul>
 
