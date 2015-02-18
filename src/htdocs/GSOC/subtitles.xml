@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
+<page>
+<head>
+  <title>GStreamer Google Summer of Code: Subtitle support</title>
+</head>
+<body>
+<h1>GStreamer Google Summer of Code: Subtitle support</h1>
+
+<p>
+<quot>Work on improving subtitle support in muxers, for example adding XSUB support.</quot>
+</p>
+
+<p>
+<h1>Interested Mentors:</h1>
+<ul>
+  <li>Thiago Santos, Luis de Bethencourt</li>
+</ul>
+</p>
+
+<p>
+<h1>Student Notes:</h1>
+</p>
+
+<p>
+<h1>Related links:</h1>
+<ul>
+  <li><a href="https://bugzilla.gnome.org/show_bug.cgi?id=628429">https://bugzilla.gnome.org/show_bug.cgi?id=628429</a></li>
+</ul>
+</p>
+
+</body>
+</page>

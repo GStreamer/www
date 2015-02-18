@@ -28,7 +28,7 @@ The list below is just some suggestions made by various members of the GStreamer
     <li><a href="windows.html">Windows Support</a>: Improve Wasapi, MediaFoundation, d3dvideosink and other Windows-specific plugins.</li>
     <li><a href="zrtp.html">zRTP Support</a>: Write plugins to support zRTP</li>
     <li><a href="chaptersupport.html">Chapter Support</a>: Implement chapter support in more plugins</li>
-    <li><a href="https://bugzilla.gnome.org/show_bug.cgi?id=628429">Improved Subtitle support</a>: Work on subtitle support in Muxers, for example adding XSUB support</li>
+    <li><a href="subtitles.html">Improved Subtitle support</a>: Work on subtitle support in muxers, for example adding XSUB support</li>
     <li><a href="editingplugins.html">Editing Plugins</a>: Wrapping popular audio/video filters as GStreamer plugins.</li>
   </ul>
 
