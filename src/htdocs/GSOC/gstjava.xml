@@ -18,6 +18,15 @@
 </p>
 
 <p>
+There is a minimal bindings generator available here:
+<a href="https://github.com/EricssonResearch/openwebrtc/tree/master/bindings/java">https://github.com/EricssonResearch/openwebrtc/tree/master/bindings/java</a>
+</p>
+
+<p>
+The solution needs to be JNI based because Android does not support JNA. This means using the GNOME Java bindings solution won't work for developers using GStreamer on Android.
+</p>
+
+<p>
 <h1>Interested Mentors:</h1>
 <ul>
   <li>Sebastian Dröge</li>
