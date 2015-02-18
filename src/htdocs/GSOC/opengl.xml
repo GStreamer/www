@@ -25,7 +25,7 @@
 </ul>
 </p>
 
-<h2>Project idea 1: OpenGL audio visualizer</h2>
+<h1>Project idea 1: OpenGL audio visualizer</h1>
 
 <p>
 Port libvisual_gl gstgl elements from 0.10 to gst-1.0. Make it work with GLES2.
@@ -37,7 +37,7 @@ This project is also open to use another opensource audio visualizer API that su
 More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723681">here</a>
 </p>
 
-<h2>Project idea 2: VDPAU interoperability with GstGL</h2>
+<h1>Project idea 2: VDPAU interoperability with GstGL</h1>
 
 <p>
 Use "GL_NV_vdpau_interop" OpenGL extension to make vdpauvideodec ! glimagesink avoid downloading/uploading the frame in between.
@@ -49,7 +49,7 @@ This will enable a zero-copy path from the CPU point of view.
 More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=744698">here</a>
 </p>
 
-<h2>Project idea 3: Add suport for GstVideoOverlayCompositionMeta and apply it to new glcontrol and subtitle elementa</h2>
+<h1>Project idea 3: Add suport for GstVideoOverlayCompositionMeta and apply it to new glcontrol and subtitle elementa</h1>
 <p>
 glcontrol: draws controls (play/pause button, seek bar, volume, quality) into a separate gltexture and attach it to the input buffer's GstVideoOverlayCompositionMeta.
 gltextoverlay: use an external GL Font API to build a separate gltexture and attach it to the input buffer's GstVideoOverlayCompositionMeta.
@@ -73,7 +73,7 @@ More details for glcontrol <a href="https://bugzilla.gnome.org/show_bug.cgi?id=7
 More details for gltextoverlay <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723761">here</a>
 </p>
 
-<h2>Project idea 4: make other sinks compatible with gstgl</h2>
+<h1>Project idea 4: make other sinks compatible with gstgl</h1>
 
 <p>
 gstgl sink: glimagesink
@@ -98,14 +98,14 @@ gst-launch-1.0 src ! omxvideodec ! qtglvideosink
 More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723674">here</a>
 </p>
 
-<h2>Project idea 5: add supports for glCompressedTexImage2D</h2>
+<h1>Project idea 5: add supports for glCompressedTexImage2D</h1>
 
 <p>
 More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723781">here</a>
 </p>
 
 
-<h2>Project idea 6: new KTX texture parser</h2>
+<h1>Project idea 6: new KTX texture parser</h1>
 
 <code>
 gst-launch-1.0 filesrc location=texture.ktx ! glktxparse ! glimagesink
@@ -120,7 +120,7 @@ More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723768">here</a
 </p>
 
 
-<h2>Project idea 7: make gst-gl compatible with DirectX</h2>
+<h1>Project idea 7: make gst-gl compatible with DirectX</h1>
 <p>
 gl element should be able to handle dx surface as input.
 </p>
