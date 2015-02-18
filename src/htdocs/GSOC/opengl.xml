@@ -17,6 +17,14 @@
 <quot>The following ideas aim to improve GStreamer OpenGL library and plugins</quot>
 </p>
 
+<p>
+<h1>Interested Mentors</h1>
+<ul>
+  <li>Julien Isorce</li>
+  <li>Matthew Waters</li>
+</ul>
+</p>
+
 <h2>Project idea 1: OpenGL audio visualizer</h2>
 
 <p>
@@ -74,7 +82,7 @@ non-gstgl: Qt (qtglvideosink), Wayland (waylandsink), clutter (cluttersink/cogls
 
 <p>
 Useful to benefit GstGL capabilities in these other video sinks. (Ex: zero-copy with OpenMAX decoder)
-The GstGL API is ready but some corner cases may be encountered. The student will need to improve API accordling.
+The GstGL API is ready but some corner cases may be encountered. The student will need to improve API according.
 </p>
 
 <code>
