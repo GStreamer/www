@@ -14,7 +14,27 @@
 <h1>GStreamer Google Summer of Code: GstPlayer</h1>
 
 <p>
-<quot>Extended GstPlayer into a set of minimalistic official GStreamer players for all the platforms the framework supports.</quot>
+<quot>Write a set of minimalistic official GStreamer players based on GstPlayer and add missing features to the GstPlayer API.</quot>
+</p>
+
+<p>
+TODO:
+<ul>
+  <li>Media info, tags</li>
+  <li>Audio track selection</li>
+  <li>Subtitle track selection, external subs, disable</li>
+  <li>Visualization</li>
+  <li>Playback rate</li>
+  <li>volume/mute change notification</li>
+  <li>Equalizer</li>
+  <li>Gapless playback</li>
+  <li>Frame stepping</li>
+  <li>Subtitle font, connection speed</li>
+  <li>Color balance, deinterlacing</li>
+  <li>Buffering control (-> progressive downloading)</li>
+  <li>Playlist/queue object</li>
+  <li>Custom video sink (e.g. embed in GL scene)</li>
+</ul>
 </p>
 
 <p>
@@ -39,6 +59,7 @@
   <li><a href="https://github.com/sdroege/gst-player">https://github.com/sdroege/gst-player</a></li>
   <li><a href="https://coaxion.net/blog/2014/08/gstreamer-playback-api/">https://coaxion.net/blog/2014/08/gstreamer-playback-api</a></li>
   <li><a href="https://coaxion.net/~slomo/gst-player/docs/gst-player-gstplayer.html">https://coaxion.net/~slomo/gst-player/docs/gst-player-gstplayer.html</a></li>
+  <li><a href="https://github.com/sdroege/gst-player/blob/master/lib/gst/player/gstplayer.c#L29">TODO list</a></li>
 </ul>
 </p>
 
