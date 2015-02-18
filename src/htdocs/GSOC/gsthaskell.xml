@@ -14,7 +14,7 @@
 <h1>GStreamer Google Summer of Code: Haskell Bindings</h1>
 
 <p>
-<quot>Enhance the Haskell bindings for GStreamer.</quot>
+<quot>Port bindings to being generated automatically via gobject-introspection and to 1.x</quot>
 </p>
 
 <p>
@@ -31,6 +31,7 @@
 <p>
 <h1>Related links:</h1>
 <ul>
+  <li><a href="https://wiki.haskell.org/GObjectIntrospection">https://wiki.haskell.org/GObjectIntrospection</a></li>
   <li><a href="https://github.com/gtk2hs/gstreamer/issues/1">https://github.com/gtk2hs/gstreamer/issues/1</a></li>
 </ul>
 </p>
