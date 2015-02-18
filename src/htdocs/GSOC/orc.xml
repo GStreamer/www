@@ -13,8 +13,24 @@
 <body>
 <h1>GStreamer Google Summer of Code: ORC Acceleration</h1>
 
+<h1>Description</h1>
 <p>
-<quot>Extend use of the Orc optimizations in GStreamer to ARM 64 bits.</quot>
+Orc is basically a simplified assembly language for data processing (no loops/jumps etc.),
+it's supposed to map to SIMD instructions on various architectures curently there
+are two things:
+<ul>
+  <li>liborc, which is a JIT compiler that will at run-time take orc code (in some byte
+format) and generate machine code for the architecture in question on the fly and then
+execute that whenever there's a function call</li>
+  <li>we have C backup functions as .c files in the gstreamer source code, which are
+also compiled in when orc can't compile some code (for various reasons), or liborc is
+not available, then the C backup function will be used that's the current state of
+things.</li>
+</ul>
+</p>
+
+<p>
+Currently there is no ARM64/AArch64 support in ORC. Add this and implement all relevant opcodes to allow usage of most GStreamer ORC programs.
 </p>
 
 <p>
@@ -34,6 +50,7 @@
 <ul>
   <li><a href="http://code.entropywave.com/orc/">http://code.entropywave.com/orc/</a></li>
   <li><a href="http://cgit.freedesktop.org/gstreamer/orc/">http://cgit.freedesktop.org/gstreamer/orc/</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/ARM_architecture#AArch64_features">http://en.wikipedia.org/wiki/ARM_architecture#AArch64_features</a></li>
 </ul>
 </p>
 
