@@ -14,7 +14,7 @@
 <h1>GStreamer Google Summer of Code: Editing Plugins</h1>
 
 <p>
-<quot>Wrapping popular audio/video filters as GStreamer plugins.</quot>
+<quot>Wrapping popular audio/video filters as GStreamer plugins. For example, the LV2 audio plugins.</quot>
 </p>
 
 <p>
@@ -32,6 +32,8 @@
 <h1>Related links:</h1>
 <ul>
   <li><a href="http://pitivi.org/">http://pitivi.org</a></li>
+  <li><a href="http://buzztrax.org/">http://buzztrax.org/</a></li>
+  <li><a href="http://lv2plug.in/">http://lv2plug.in/</a></li>
 </ul>
 </p>
 
