@@ -14,7 +14,11 @@
 <h1>GStreamer Google Summer of Code: zRTP Support</h1>
 
 <p>
-<quot>Write pluins to support zRTP.</quot>
+<quot>Write plugins to support zRTP.</quot>
+</p>
+
+<p>
+These plugins will be integrated into the current RTP stack, making use of the existing relevant object classes. Even though this might limit the usage of existing libraries like libzrtp, GStreamer avoids code duplication and prefers a well integrated solution.
 </p>
 
 <p>
