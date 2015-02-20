@@ -30,6 +30,15 @@ These plugins will be integrated into the current RTP stack, making use of the e
 </p>
 
 <p>
+<h1>Required Skills:</h1>
+<ul>
+  <li>GStreamer Plugin API</li>
+  <li>Video streaming concepts</li>
+  <li>RTP and zRTP</li>
+</ul>
+</p>
+
+<p>
 <h1>Student Notes:</h1>
 </p>
 
