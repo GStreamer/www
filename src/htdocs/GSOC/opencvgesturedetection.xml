@@ -27,6 +27,15 @@
 </p>
 
 <p>
+<h1>Required Skills:</h1>
+<ul>
+  <li>GStreamer Plugin API</li>
+  <li>Digital Video Theory</li>
+  <li>OpenCV</li>
+</ul>
+</p>
+
+<p>
 <h1>Notes</h1>
 Overall improvements need to be done in the OpenCV element.
 In general we want to use OpenCV to scale down the input for processing, so we can run these on higher resolution.
