@@ -35,6 +35,15 @@ The solution needs to be JNI based because Android does not support JNA. This me
 </p>
 
 <p>
+<h1>Required Skills:</h1>
+<ul>
+  <li>GStreamer Development API</li>
+  <li>Java</li>
+</ul>
+</p>
+
+
+<p>
 <h1>Student Notes:</h1>
 </p>
 
