@@ -41,6 +41,16 @@ Provide proper Opus/VP8/VP9 support in Matroska/WebM.
 </p>
 
 <p>
+<h1>Required Skills:</h1>
+<ul>
+  <li>GStreamer Basics</li>
+  <li>Understanding media formats</li>
+  <li>Knowledge of HTTP Requests</li>
+</ul>
+</p>
+
+
+<p>
 <h1>Student Notes:</h1>
 </p>
 
