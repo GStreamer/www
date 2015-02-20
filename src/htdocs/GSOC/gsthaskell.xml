@@ -22,11 +22,20 @@ As a result there should be new, GStreamer 1.x based bindings.
 </p>
 
 <p>
-<h1>Interested Mentors:</h1>
+<h1>Interested mentors:</h1>
 <ul>
-  <li>Sebastian Dröge</li>
+  <li>sebastian dröge</li>
 </ul>
 </p>
+
+<p>
+<h1>Required Skills:</h1>
+<ul>
+  <li>GStreamer Development API</li>
+  <li>Haskell</li>
+</ul>
+</p>
+
 
 <p>
 <h1>Student Notes:</h1>
