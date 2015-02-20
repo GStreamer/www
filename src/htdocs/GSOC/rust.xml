@@ -29,6 +29,7 @@
 <h1>Required Skills:</h1>
 <ul>
   <li>GStreamer Development API</li>
+  <li>Knowledge about language binding implementation and GObject-Introspection</li>
   <li>Rust Programming Language</li>
 </ul>
 </p>

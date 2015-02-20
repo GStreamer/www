@@ -28,6 +28,7 @@
 <h1>Required Skills:</h1>
 <ul>
   <li>GStreamer Development API</li>
+  <li>Knowledge about language binding implementation and GObject-Introspection</li>
   <li>Lua Programming Language</li>
 </ul>
 </p>
