@@ -49,7 +49,7 @@ This will enable a zero-copy path from the CPU point of view.
 More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=744698">here</a>
 </p>
 
-<h1>Project idea 3: Add suport for GstVideoOverlayCompositionMeta and apply it to new glcontrol and subtitle elementa</h1>
+<h1>Project idea 3: Add suport for GstVideoOverlayCompositionMeta and apply it to new glcontrol and subtitle element</h1>
 <p>
 glcontrol: draws controls (play/pause button, seek bar, volume, quality) into a separate gltexture and attach it to the input buffer's GstVideoOverlayCompositionMeta.
 gltextoverlay: use an external GL Font API to build a separate gltexture and attach it to the input buffer's GstVideoOverlayCompositionMeta.
@@ -140,13 +140,6 @@ Also investigate about accelerated video decoding on Windows (DXVA).
 
 <p>
 More details <a href="https://bugzilla.gnome.org/show_bug.cgi?id=723772">here</a>
-</p>
-
-<p>
-<h1>Interested Mentors:</h1>
-<ul>
-  <li>Julien Isorce</li>
-</ul>
 </p>
 
 <p>
