@@ -141,11 +141,11 @@ open
 </td></tr>
 <tr><td>
 All bugs changed within the last
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=1">24 hours</a>,
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=2">48 hours</a>,
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=3">72 hours</a>,
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=7">1 week</a>,
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;changedin=14">2 weeks</a>
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;chfieldfrom=24h">24 hours</a>,
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;chfieldfrom=48h">48 hours</a>,
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;chfieldfrom=72h">72 hours</a>,
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;chfieldfrom=7d">1 week</a>,
+<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;chfieldfrom=14d">2 weeks</a>
 </td></tr>
 <tr><td>
 <a href="https://bugzilla.gnome.org/browse.cgi?product=GStreamer">GStreamer bugzilla overview</a>
