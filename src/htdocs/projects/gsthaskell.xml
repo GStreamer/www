@@ -8,10 +8,10 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <head>
-  <title>GStreamer Google Summer of Code: Haskell</title>
+  <title>GStreamer Project: Haskell</title>
 </head>
 <body>
-<h1>GStreamer Google Summer of Code: Haskell Bindings</h1>
+<h1>GStreamer Project: Haskell Bindings</h1>
 
 <p>
 Improve GObjectIntrospection based bindings generator to be able to automatically generate bindings for GStreamer and also extend the GObject/GLib/GIO bindings to make usage of GStreamer possible.

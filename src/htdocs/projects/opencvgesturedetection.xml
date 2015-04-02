@@ -8,10 +8,10 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <head>
-  <title>GStreamer Google Summer of Code: OpenCV Gesture Detection</title>
+  <title>GStreamer Project: OpenCV Gesture Detection</title>
 </head>
 <body>
-<h1>GStreamer Google Summer of Code: OpenCV Gesture Detection</h1>
+<h1>GStreamer Project: OpenCV Gesture Detection</h1>
 
 <p>
 <quot>Improve the OpenCV based plugin for hand gesture detection, and add more OpenCV related plugins.</quot>

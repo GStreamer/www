@@ -8,10 +8,10 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <head>
-  <title>GStreamer Google Summer of Code OpenGL ideas</title>
+  <title>GStreamer Projects: OpenGL ideas</title>
 </head>
 <body>
-<h1>GStreamer Google Summer of Code OpenGL ideas</h1>
+<h1>GStreamer Projects: OpenGL ideas</h1>
 
 <p>
 <quot>The following ideas aim to improve GStreamer OpenGL library and plugins</quot>

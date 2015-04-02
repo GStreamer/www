@@ -8,10 +8,10 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <head>
-  <title>GStreamer Google Summer of Code: Windows Support</title>
+  <title>GStreamer Project: Windows Support</title>
 </head>
 <body>
-<h1>GStreamer Google Summer of Code: Windows Support</h1>
+<h1>GStreamer Project: Windows Support</h1>
 
 <p>
 <quot>Improve Wasapi, MediaFoundation, d3dvideosink and other Windows-specific plugins.</quot>

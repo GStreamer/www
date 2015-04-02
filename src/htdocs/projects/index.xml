@@ -8,7 +8,7 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <head>
-  <title>GStreamer - SocProjects Idea</title>
+  <title>GStreamer Project Ideas</title>
 </head>
 
 <body lang="en">
@@ -17,7 +17,7 @@
 The list below is just some suggestions made by various members of the GStreamer community. We are more than happy for students to make proposals based on their own wishes and ideas instead of using any of these suggestions. The important part for us is that you are motivated and that you put good work into writing a good and detailed proposal and that you try to interact with us from the start. Try to early find a possible mentor and shape your proposal (e.g. using Google docs).
 </p>
 
-<h1>List of Summer of Code project ideas for students</h1>
+<h1>List of GStreamer project ideas for students and mentees</h1>
 
 <ul>
   <li>Plugins</li>

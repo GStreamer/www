@@ -8,10 +8,10 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <head>
-  <title>GStreamer Google Summer of Code: Rust</title>
+  <title>GStreamer Project: Rust</title>
 </head>
 <body>
-<h1>GStreamer Google Summer of Code: Rust Bindings</h1>
+<h1>GStreamer Project: Rust Bindings</h1>
 
 <p>
 <quot>GStreamer bindings for the Rust programming language.</quot>

@@ -8,10 +8,10 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <head>
-  <title>GStreamer Google Summer of Code: GstPlayer</title>
+  <title>GStreamer Project: GstPlayer</title>
 </head>
 <body>
-<h1>GStreamer Google Summer of Code: GstPlayer</h1>
+<h1>GStreamer Project: GstPlayer</h1>
 
 <p>
 <quot>Write a set of minimalistic official GStreamer players based on GstPlayer and add missing features to the GstPlayer API.</quot>

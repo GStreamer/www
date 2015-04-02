@@ -8,18 +8,19 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <head>
-  <title>GStreamer Google Summer of Code: Lua</title>
+  <title>GStreamer Project: Subtitle support</title>
 </head>
 <body>
-<h1>GStreamer Google Summer of Code: Lua Bindings</h1>
+<h1>GStreamer Project: Subtitle support</h1>
 
 <p>
-<quot>Enhance the Lua bindings for GStreamer.</quot>
+<quot>Work on improving subtitle support in muxers, for example adding XSUB support.</quot>
 </p>
 
 <p>
 <h1>Interested Mentors:</h1>
 <ul>
+  <li>Thiago Santos</li>
   <li>Luis de Bethencourt</li>
 </ul>
 </p>
@@ -27,9 +28,8 @@
 <p>
 <h1>Required Skills:</h1>
 <ul>
-  <li>GStreamer Development API</li>
-  <li>Knowledge about language binding implementation and GObject-Introspection</li>
-  <li>Lua Programming Language</li>
+  <li>GStreamer Basics</li>
+  <li>Knowledge of how video containers and muxers work</li>
 </ul>
 </p>
 
@@ -40,7 +40,7 @@
 <p>
 <h1>Related links:</h1>
 <ul>
-  <li><a href="http://www.lua.org/">http://www.lua.org/</a></li>
+  <li><a href="https://bugzilla.gnome.org/show_bug.cgi?id=628429">https://bugzilla.gnome.org/show_bug.cgi?id=628429</a></li>
 </ul>
 </p>
 

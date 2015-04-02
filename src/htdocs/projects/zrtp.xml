@@ -8,10 +8,10 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <head>
-  <title>GStreamer Google Summer of Code: zRTP Support</title>
+  <title>GStreamer Project: zRTP Support</title>
 </head>
 <body>
-<h1>GStreamer Google Summer of Code: zRTP Support</h1>
+<h1>GStreamer Project: zRTP Support</h1>
 
 <p>
 <quot>Write plugins to support zRTP.</quot>

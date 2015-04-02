@@ -8,10 +8,10 @@
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <head>
-  <title>GStreamer Google Summer of Code: Editing Plugins</title>
+  <title>GStreamer Project: Editing Plugins</title>
 </head>
 <body>
-<h1>GStreamer Google Summer of Code: Editing Plugins</h1>
+<h1>GStreamer Project: Editing Plugins</h1>
 
 <p>
 <quot>Wrapping popular audio/video filters as GStreamer plugins. For example, the LV2 audio plugins.</quot>
