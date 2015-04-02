@@ -30,8 +30,8 @@ Getting Started
 <ul>
   <li>Get to know GStreamer. If you are interested in contributing to GStreamer, it is recommended to start by subscribing to the ​main mailing-list (gstreamer-devel@lists.freedesktop.org), visiting our FreeNode IRC channel (#gstreamer), and exploring both the codebase and the development workflow. Feel free to contact us if you have any questions. Also do not hesitate to answer questions from others on our IRC channel if you know the answer to something.</li>
   <li>Find a project. Listed on this page are mentored projects. The projects are well-defined and mentor(s) have already volunteered. You can also propose your own project, if you can think of one that better fits your interest and skill level. If a project description is unclear or you have any questions, please get in touch with its mentor and/or send an email to the program admins.</li>
-  <li>Contact us. If you decide on a project, get in touch with the community and let us know.</li>
-  <li>Apply.</li>
+  <li>Contact us. If you decide on a project, get in touch with the community and start working on your initial contribution with the help of a mentor.</li>
+  <li><a href="https://wiki.gnome.org/Outreachy#Submit_an_Application">Apply</a>.</li>
 </ul>
 
 <p>
