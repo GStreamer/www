@@ -6569,5 +6569,23 @@ or download tarballs for
         </content>
   </item>
 
+  <item>
+      <date>2015-04-05 18:00</date>
+        <title>Outreachy Internship Opportunity</title>
+        <content>
+        <p>
+GStreamer has secured an spot in the May-August round of Outreachy (former OPW). The program aims to help people from groups underrepresented in free and open source software getting involved by offering focused internship opportunities twice a year with a number of free software organizations.
+        </p>
+        <p>
+The current round of outreachy internship opportunities is open to women (cis and trans), trans men, genderqueer people, and all participants of the Ascend Project regardless of gender. The organization plans to expand the program to more participants from underrepresented backgrounds in the future. You can find more information about the program <a href="https://www.gnome.org/outreachy/">here</a>.
+        </p>
+        <p>
+GStreamer application instructions and a list of mentored projects (you can always suggest your own) can be found at the <a href="http://gstreamer.freedesktop.org/projects/outreach.html">GStreamer-Outreachy landing page</a>. If you are interested on applying to an internship position with us, please take a look at the project ideas and get in touch by subscribing to our <a href="http://lists.freedesktop.org/mailman/listinfo/gstreamer-devel">development list</a> and sending an email about your selected project idea. Please include <b>[Outreachy 2015]</b> in the subject so we can easily spot it.
+        </p>
+        <p>
+GStreamer participation in this round of the program is been sponsored by Samsung's Open Source Group. Deadline for applications is April 10.
+        </p>
+        </content>
+  </item>
 </news>
 
