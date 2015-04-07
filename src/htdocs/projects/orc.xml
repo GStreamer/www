@@ -36,8 +36,8 @@ Currently there is no ARM64/AArch64 support in ORC. Add this and implement all r
 <p>
 <h1>Interested Mentors:</h1>
 <ul>
-  <li>Sebastian Dröge</li>
-  <li>Wim Taymans</li>
+  <li><a href="mailto:slomo at coaxion dot net">Sebastian Dröge</a></li>
+  <li><a href="mailto: wim.taymans at gmail dot com">Wim Taymans</a></li>
 </ul>
 </p>
 

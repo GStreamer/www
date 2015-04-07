@@ -29,8 +29,8 @@ The solution needs to be JNI based because Android does not support JNA. This me
 <p>
 <h1>Interested Mentors:</h1>
 <ul>
-  <li>Sebastian Dröge</li>
-  <li>Luis de Bethencourt</li>
+  <li><a href="mailto:slomo at coaxion dot net">Sebastian Dröge</a></li>
+  <li><a href="mailto:luis at debethencourt dot com">Luis de Bethencourt</a></li>
 </ul>
 </p>
 
