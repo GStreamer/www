@@ -121,10 +121,10 @@ suite of gstreamer elements and applications for gravitational wave data analysi
 <p><a href="http://kaffeine.sourceforge.net/">Kaffeine</a> is a KDE based media player.</p>
 
 <h2>Landell</h2>
-<p><a href="http://landell.holoscopio.com/">Landell</a> is an audio and video streaming server.</p>.
+<p><a href="http://landell.holoscopio.com/">Landell</a> is an audio and video streaming server.</p>
 
 <h2>Listen</h2>
-<p><a href="http://listengnome.free.fr/">Listen</a> is a GNOME music player written in Python</p>
+<p><a href="http://listengnome.free.fr/">Listen</a> is a GNOME music player written in Python.</p>
 
 <h2>LongoMatch</h2>
 <p><a href="http://www.ylatuya.es">LongoMatch</a> is a cross-platform
@@ -135,7 +135,6 @@ sports video analysis tool based on Mono, Gtk+ and GStreamer.</p>
 
 <h2>Minirok</h2>
 <p><a href="http://chistera.yi.org/~adeodato/code/minirok/">Minirok</a> is a small music player for KDE/Qt.</p>
-
 
 <h2>Monkey Bubble</h2>
 <p><a href="http://home.gna.org/monkeybubble/">Monkey Bubble</a> a fun and cool game for GNOME using GStreamer to play some funky music and sweet sound effects.</p>
