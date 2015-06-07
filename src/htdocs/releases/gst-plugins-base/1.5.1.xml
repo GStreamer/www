@@ -1,0 +1,755 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.5.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.5 release series. The 1.5 release series is adding new features on top of
+the 1.0, 1.2 and 1.4 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.5 release series
+will lead to the stable 1.6 release series in the next weeks, and newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.5 release series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Aleix Conchillo Flaqué</person>
+	<person>Alessandro Decina</person>
+	<person>Andreas Frisch</person>
+	<person>Andrei Sarakeev</person>
+	<person>Andres Gomez</person>
+	<person>Anuj Jaiswal</person>
+	<person>Arnaud Vrac</person>
+	<person>Arun Raghavan</person>
+	<person>Aurélien Zanelli</person>
+	<person>Bernhard Miller</person>
+	<person>Branislav Katreniak</person>
+	<person>Chad</person>
+	<person>Chihyoung Kim</person>
+	<person>Claudiu Florin Lazar</person>
+	<person>Danny Song</person>
+	<person>David Schleef</person>
+	<person>Duncan Palmer</person>
+	<person>Edward Hervey</person>
+	<person>Garg</person>
+	<person>George Kiagiadakis</person>
+	<person>Guillaume Desmottes</person>
+	<person>Göran Jönsson</person>
+	<person>Heinrich Fink</person>
+	<person>Hyunjun Ko</person>
+	<person>Ilya Konstantinov</person>
+	<person>Jan Alexander Steffens (heftig)</person>
+	<person>Jan Schmidt</person>
+	<person>Jonathan Matthew</person>
+	<person>Jose Antonio Santos Cadenas</person>
+	<person>Kalev Lember</person>
+	<person>Kipp Cannon</person>
+	<person>Luis de Bethencourt</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Matej Knopp</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Matthieu Bouron</person>
+	<person>Matthieu Crapet</person>
+	<person>Mohammed Sameer</person>
+	<person>Nicola Murino</person>
+	<person>Nicolas Dufresne</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Ognyan Tonchev</person>
+	<person>Olivier Crete</person>
+	<person>Olivier Crête</person>
+	<person>Peter G. Baum</person>
+	<person>Ramiro Polla</person>
+	<person>Ravi Kiran K N</person>
+	<person>Rico Tzschichholz</person>
+	<person>Sam Thursfield</person>
+	<person>Sanjay NM</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Rasmussen</person>
+	<person>Song Bing</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Stefan Sauer</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Thomas Klausner</person>
+	<person>Thomas Roos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vineeth T M</person>
+	<person>Vivia Nikolaidou</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+	<person>Wang Xin-yu (王昕宇)</person>
+	<person>William Manley</person>
+	<person>Wim Taymans</person>
+	<person>Wonchul Lee</person>
+	<person>Young Han Lee</person>
+	<person>Zaheer Abbas Merali</person>
+	<person>danny song</person>
+	<person>eunhae choi</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>742924</id>
+      <summary>decodebin: Initial decoder negotiation will always fail</summary>
+    </bug>
+    <bug>
+      <id>749676</id>
+      <summary>playbin: failed to get end-of-stream event when visualization flag is enabled</summary>
+    </bug>
+    <bug>
+      <id>741355</id>
+      <summary>playbin: deadlock</summary>
+    </bug>
+    <bug>
+      <id>650652</id>
+      <summary>encodebin: missing encoder error when trying to remux</summary>
+    </bug>
+    <bug>
+      <id>673976</id>
+      <summary>pbutils: codec description should include profile</summary>
+    </bug>
+    <bug>
+      <id>706066</id>
+      <summary>xvimagesink: Fails to allocate large xvimages but does not declare this limitation on the caps</summary>
+    </bug>
+    <bug>
+      <id>722316</id>
+      <summary>playbin: flac playback broken</summary>
+    </bug>
+    <bug>
+      <id>722442</id>
+      <summary>Internal data stream error in gstoggdemux.c</summary>
+    </bug>
+    <bug>
+      <id>723252</id>
+      <summary>testsuite failure: libs/tag - exif tag: &quot; Conversion from character set 'utf8' to 'latin1' is not supported &quot; </summary>
+    </bug>
+    <bug>
+      <id>725383</id>
+      <summary>uridecodebin doesn't need to set the &quot; iradio-mode &quot; property in the source element any more</summary>
+    </bug>
+    <bug>
+      <id>726709</id>
+      <summary>playback-test: Segment seeks do not work anymore</summary>
+    </bug>
+    <bug>
+      <id>727409</id>
+      <summary>streamsynchronizer: Invalid memory accesses when using uncopyable memory</summary>
+    </bug>
+    <bug>
+      <id>727955</id>
+      <summary>id3v2: ignore RVA2 tags with 0 peak bits</summary>
+    </bug>
+    <bug>
+      <id>728379</id>
+      <summary>appsink: add push_sample() convenience function for easy appsrc - &gt; appsink use</summary>
+    </bug>
+    <bug>
+      <id>729198</id>
+      <summary>oggdemux: add non flushing time seeking to 0 in push mode</summary>
+    </bug>
+    <bug>
+      <id>729314</id>
+      <summary>ogg: sample-accurate decoding/encoding is broken</summary>
+    </bug>
+    <bug>
+      <id>729760</id>
+      <summary>appsrc: Changing caps and pushing buffers is not serialized</summary>
+    </bug>
+    <bug>
+      <id>731047</id>
+      <summary>ximagesink, xvimagesink: configure checks pull in libSM and libICE even though they are not used</summary>
+    </bug>
+    <bug>
+      <id>732186</id>
+      <summary>videoconvert optimization</summary>
+    </bug>
+    <bug>
+      <id>733147</id>
+      <summary>audio/video decoder base classes needlessly delay caps events</summary>
+    </bug>
+    <bug>
+      <id>733169</id>
+      <summary>decodebin: improve deadend pads handling</summary>
+    </bug>
+    <bug>
+      <id>733405</id>
+      <summary>riff: wrong channel mask in wav should be ignored</summary>
+    </bug>
+    <bug>
+      <id>733482</id>
+      <summary>discoverer: Prettify tags with samples</summary>
+    </bug>
+    <bug>
+      <id>733495</id>
+      <summary>uridecodebin/playbin: Does not properly do async state changes</summary>
+    </bug>
+    <bug>
+      <id>733524</id>
+      <summary>ges-launch crashes with SIGABRT when using h264 encoded assets</summary>
+    </bug>
+    <bug>
+      <id>733615</id>
+      <summary>decodebin: Changing state of a playbin pipeline intensively segfault with several formats</summary>
+    </bug>
+    <bug>
+      <id>733720</id>
+      <summary>videodecoder: output should not have DTS</summary>
+    </bug>
+    <bug>
+      <id>734350</id>
+      <summary>oggdemux: Unref peer pad after use in error case</summary>
+    </bug>
+    <bug>
+      <id>734359</id>
+      <summary>tests: Add missing unrefs of objects after use</summary>
+    </bug>
+    <bug>
+      <id>734424</id>
+      <summary>videorate: produces bogus output when framerate=0/1</summary>
+    </bug>
+    <bug>
+      <id>734441</id>
+      <summary>videodecoder: in reverse playback, flush the output queue after decoding each keyframe chain</summary>
+    </bug>
+    <bug>
+      <id>734540</id>
+      <summary>audioencoder: Mark caps argument as not being transferred</summary>
+    </bug>
+    <bug>
+      <id>734541</id>
+      <summary>vorbisenc: Improve annotation of internal function</summary>
+    </bug>
+    <bug>
+      <id>734650</id>
+      <summary>videoscale: Does not support NV21 format</summary>
+    </bug>
+    <bug>
+      <id>734666</id>
+      <summary>audiodecoder: Don't drain and flush on SEGMENT events.</summary>
+    </bug>
+    <bug>
+      <id>735509</id>
+      <summary>oggdemux: should accumulate segment.base</summary>
+    </bug>
+    <bug>
+      <id>735631</id>
+      <summary>riff: Recognize RF64 as RIFF file</summary>
+    </bug>
+    <bug>
+      <id>735808</id>
+      <summary>oggdemux: should not set segment.base in gst_ogg_pad_submit_packet()</summary>
+    </bug>
+    <bug>
+      <id>735879</id>
+      <summary>basetetxtoverlay: make shading_value a property</summary>
+    </bug>
+    <bug>
+      <id>736028</id>
+      <summary>basetextoverlay: cairo transparence setting not needed</summary>
+    </bug>
+    <bug>
+      <id>736267</id>
+      <summary>rtspconnection: Be more forgiving when parsing session header in requests</summary>
+    </bug>
+    <bug>
+      <id>736797</id>
+      <summary>audio: correct condition for MPEG case in iec61937 / SPDIF payloader</summary>
+    </bug>
+    <bug>
+      <id>736845</id>
+      <summary>videoscale: 4Tap resize support not present for NV format</summary>
+    </bug>
+    <bug>
+      <id>737072</id>
+      <summary>videopool: add missing annotation for gst_video_buffer_pool_new()</summary>
+    </bug>
+    <bug>
+      <id>737138</id>
+      <summary>audioencoder: weird error handling code path</summary>
+    </bug>
+    <bug>
+      <id>737400</id>
+      <summary>videoscale: Lanczos resizing for NV image format</summary>
+    </bug>
+    <bug>
+      <id>737757</id>
+      <summary>decodebin: memory leak</summary>
+    </bug>
+    <bug>
+      <id>738018</id>
+      <summary>typefind: #define gst_type_find_peek is not needed any more</summary>
+    </bug>
+    <bug>
+      <id>738026</id>
+      <summary>audioresample: struct GstAudioResample has unused variables</summary>
+    </bug>
+    <bug>
+      <id>738131</id>
+      <summary>playbin: Bogus results from GST_STATE_NULL (audio-)sink</summary>
+    </bug>
+    <bug>
+      <id>738242</id>
+      <summary>textoverlay: segfault when trying to position text outside of the video frame</summary>
+    </bug>
+    <bug>
+      <id>738416</id>
+      <summary>decodebin: Don't plug multiple parsers one after another</summary>
+    </bug>
+    <bug>
+      <id>738568</id>
+      <summary>videotestsrc: assertion failed error</summary>
+    </bug>
+    <bug>
+      <id>738984</id>
+      <summary>basetextoverlay: segfault for min/max values of element properties</summary>
+    </bug>
+    <bug>
+      <id>739346</id>
+      <summary>playback-test: correct the test apps</summary>
+    </bug>
+    <bug>
+      <id>739433</id>
+      <summary>video: recent video-resampler addition causes build failures when building without orc</summary>
+    </bug>
+    <bug>
+      <id>739446</id>
+      <summary>audiosink, audiosrc: fix silence for unsigned pcm formats</summary>
+    </bug>
+    <bug>
+      <id>739536</id>
+      <summary>subtitleoverlay: return available factory caps instead of any on caps query</summary>
+    </bug>
+    <bug>
+      <id>739545</id>
+      <summary>docs: gst_dmabuf_allocator_alloc: Improve documentation</summary>
+    </bug>
+    <bug>
+      <id>739546</id>
+      <summary>New socketsrc element</summary>
+    </bug>
+    <bug>
+      <id>739640</id>
+      <summary>tests : fix leaks in adder unit test</summary>
+    </bug>
+    <bug>
+      <id>739689</id>
+      <summary>textoverlay: not rendering when x + text_width &gt; frame_width &amp;  &amp; x &lt; frame_width</summary>
+    </bug>
+    <bug>
+      <id>740018</id>
+      <summary>videorate: Operate in a zero-latency mode if drop-only is set to TRUE</summary>
+    </bug>
+    <bug>
+      <id>740214</id>
+      <summary>[API] encodebin: Add a way to disable caps renegotiation for output stream format</summary>
+    </bug>
+    <bug>
+      <id>740422</id>
+      <summary>vorbisenc: Nothing encoded in some transcoding cases (regression)</summary>
+    </bug>
+    <bug>
+      <id>740615</id>
+      <summary>alsa: warn on buffer underrun / overrun</summary>
+    </bug>
+    <bug>
+      <id>740686</id>
+      <summary>audiodecoder: Error not handled in gst_audio_decoder_drain</summary>
+    </bug>
+    <bug>
+      <id>740689</id>
+      <summary>decodebin/multiqueue/max-size-buffers is not set in playing state</summary>
+    </bug>
+    <bug>
+      <id>740690</id>
+      <summary>Timeoverlay: add an option to choose between stream-time and running-time.</summary>
+    </bug>
+    <bug>
+      <id>740693</id>
+      <summary>decodebin: Analyze source pad before setting to PAUSED for 'tag demuxers'</summary>
+    </bug>
+    <bug>
+      <id>740694</id>
+      <summary>decodebin: Take STREAM_LOCK before sending sticky events.</summary>
+    </bug>
+    <bug>
+      <id>740798</id>
+      <summary>videoscale: Videoscale test suite fails for 4-tap method</summary>
+    </bug>
+    <bug>
+      <id>740834</id>
+      <summary>audiobasesink: racy clock jump when renegotiating</summary>
+    </bug>
+    <bug>
+      <id>741015</id>
+      <summary>videoconvert: Tune quality setting to not degrade performance compared to 1.4</summary>
+    </bug>
+    <bug>
+      <id>741030</id>
+      <summary>theoradec: Sets video-meta width/height from padded values</summary>
+    </bug>
+    <bug>
+      <id>741097</id>
+      <summary>oggdemux: Fix seeking before the first frame.</summary>
+    </bug>
+    <bug>
+      <id>741144</id>
+      <summary>id3demux: support UTF-16 - &gt; UTF-8 conversion on systems with crippled iconv</summary>
+    </bug>
+    <bug>
+      <id>741187</id>
+      <summary>[regression] ProRes files show up pink</summary>
+    </bug>
+    <bug>
+      <id>741263</id>
+      <summary>videodecoder: implement caps query</summary>
+    </bug>
+    <bug>
+      <id>741281</id>
+      <summary>audiorate: fill gap events</summary>
+    </bug>
+    <bug>
+      <id>741501</id>
+      <summary>videopool: should update video alignment after change it</summary>
+    </bug>
+    <bug>
+      <id>741640</id>
+      <summary>video-converter: support AYUV border</summary>
+    </bug>
+    <bug>
+      <id>741879</id>
+      <summary>audio/videotestsrc: Report latency in live-mode</summary>
+    </bug>
+    <bug>
+      <id>741987</id>
+      <summary>videoscale performance regression</summary>
+    </bug>
+    <bug>
+      <id>742006</id>
+      <summary>discoverer: _get_missing_elements_installer_details() is documented to return a copy but doesn't</summary>
+    </bug>
+    <bug>
+      <id>742110</id>
+      <summary>video: Add support for BT2020 colorspace (UHD)</summary>
+    </bug>
+    <bug>
+      <id>742885</id>
+      <summary>decodebin: disable pad link checks as it has already been done</summary>
+    </bug>
+    <bug>
+      <id>743687</id>
+      <summary>playback: gstreamer-vaapi doesn't work with Totem master</summary>
+    </bug>
+    <bug>
+      <id>743834</id>
+      <summary>tcpserversink: fails with html5 &lt; video &gt; client</summary>
+    </bug>
+    <bug>
+      <id>743900</id>
+      <summary>oggdemux gets first packet timestamp wrong - theora</summary>
+    </bug>
+    <bug>
+      <id>743980</id>
+      <summary>decodebin2: crash in analyze_new_pad</summary>
+    </bug>
+    <bug>
+      <id>744028</id>
+      <summary>video-converter: Converter doesn't work properly when offsets are specified</summary>
+    </bug>
+    <bug>
+      <id>744070</id>
+      <summary>oggdemux: wrong duration for ogv file</summary>
+    </bug>
+    <bug>
+      <id>744465</id>
+      <summary>install-plugins: add _set_desktop_id(), _set_startup_notification_id() and _set_confirm_search() API</summary>
+    </bug>
+    <bug>
+      <id>744844</id>
+      <summary>playbin: forward template and ring buffer settings to existing decodebins</summary>
+    </bug>
+    <bug>
+      <id>745006</id>
+      <summary>video-converter: Add frame 'alpha' property to video-converter</summary>
+    </bug>
+    <bug>
+      <id>745073</id>
+      <summary>playbin, discoverer: criticals when switching from pull mode to push mode</summary>
+    </bug>
+    <bug>
+      <id>745174</id>
+      <summary>gst-play: support play rate change</summary>
+    </bug>
+    <bug>
+      <id>745207</id>
+      <summary>video-converter: sometimes crashes during ARGB - &gt; BGRx conversion.</summary>
+    </bug>
+    <bug>
+      <id>745337</id>
+      <summary>video: RGB15/16 pack/unpack unit test failure on big endian systems</summary>
+    </bug>
+    <bug>
+      <id>745667</id>
+      <summary>volume: Unable to set the volume with gcc-4.9 on arm platform</summary>
+    </bug>
+    <bug>
+      <id>745719</id>
+      <summary>video-converter: doesn't work properly with YUY2 and right border</summary>
+    </bug>
+    <bug>
+      <id>745980</id>
+      <summary>ogg video file is unable to be seeked</summary>
+    </bug>
+    <bug>
+      <id>746150</id>
+      <summary>multisocketsink: Map `GstMemory`s individually when sending</summary>
+    </bug>
+    <bug>
+      <id>746457</id>
+      <summary>oggdemux: don't abuse GST_ERROR()</summary>
+    </bug>
+    <bug>
+      <id>746466</id>
+      <summary>video: add NV61 format support</summary>
+    </bug>
+    <bug>
+      <id>746480</id>
+      <summary>playbin: deadlock on PMT change in mpeg TS stream</summary>
+    </bug>
+    <bug>
+      <id>746661</id>
+      <summary>audioconvert: slow dithering on architectures without 64-bit integer divide (e.g. armv7)</summary>
+    </bug>
+    <bug>
+      <id>746865</id>
+      <summary>videoencoder: Keep sticky event when reset.</summary>
+    </bug>
+    <bug>
+      <id>746908</id>
+      <summary>appsrc: allow sample with no caps or no buffer in push_sample()</summary>
+    </bug>
+    <bug>
+      <id>747005</id>
+      <summary>audioconvert: avoid floating point calculations when mixing integer-formatted channels</summary>
+    </bug>
+    <bug>
+      <id>747103</id>
+      <summary>discoverer: leak when handling toc messages</summary>
+    </bug>
+    <bug>
+      <id>747190</id>
+      <summary>videodecoder: Sends GAP events before CAPS</summary>
+    </bug>
+    <bug>
+      <id>747245</id>
+      <summary>navigation: Post navigation events as message on the bus</summary>
+    </bug>
+    <bug>
+      <id>747283</id>
+      <summary>configure: playback and seek tests build error with gtk &lt; 3.10.0</summary>
+    </bug>
+    <bug>
+      <id>747293</id>
+      <summary>audiodecoder: Add sink and src query virtual method</summary>
+    </bug>
+    <bug>
+      <id>747517</id>
+      <summary>appsrc: negotiates twice if caps are changed before pipeline starts</summary>
+    </bug>
+    <bug>
+      <id>747602</id>
+      <summary>basetextoverlay: Leak in gst_base_text_overlay_text_chain</summary>
+    </bug>
+    <bug>
+      <id>747624</id>
+      <summary>decodebin unit test fails: test environment not set up correctly with automake 1.11</summary>
+    </bug>
+    <bug>
+      <id>747692</id>
+      <summary>check build error on osx: pipelines/tcp.c:161:34: error: use of undeclared identifier 'SOCK_CLOEXEC'</summary>
+    </bug>
+    <bug>
+      <id>747790</id>
+      <summary>videoscale method=bilinear2 and UYVY/YUY2 distortion</summary>
+    </bug>
+    <bug>
+      <id>747841</id>
+      <summary>gio: plugin dependencies wrong or insufficient</summary>
+    </bug>
+    <bug>
+      <id>748021</id>
+      <summary>video-converter: unused variables n_taps max_taps</summary>
+    </bug>
+    <bug>
+      <id>748027</id>
+      <summary>rtpbasedepayload: testcase crash</summary>
+    </bug>
+    <bug>
+      <id>748247</id>
+      <summary>oggdemux: fix event leak</summary>
+    </bug>
+    <bug>
+      <id>748289</id>
+      <summary>audio: &quot; delay &quot; virt-func mixes up samples and frames</summary>
+    </bug>
+    <bug>
+      <id>748348</id>
+      <summary>video-converter: change data type of _GstLineCache::n_lines</summary>
+    </bug>
+    <bug>
+      <id>748413</id>
+      <summary>xmptag: valgrind errors when printing debug output</summary>
+    </bug>
+    <bug>
+      <id>748687</id>
+      <summary>video-converter: Remove unused macro</summary>
+    </bug>
+    <bug>
+      <id>748814</id>
+      <summary>discoverer: add serialization/deserialization methods</summary>
+    </bug>
+    <bug>
+      <id>748820</id>
+      <summary>oggdemux: remove unnecessary codes</summary>
+    </bug>
+    <bug>
+      <id>748903</id>
+      <summary>fix navigation event leaks</summary>
+    </bug>
+    <bug>
+      <id>748964</id>
+      <summary>oggdemux: fix chain leak</summary>
+    </bug>
+    <bug>
+      <id>749104</id>
+      <summary>video-converter: Change some implicit string enums to  real enums</summary>
+    </bug>
+    <bug>
+      <id>749105</id>
+      <summary>videoconvert: Expose some properties from the videoconverter API</summary>
+    </bug>
+    <bug>
+      <id>749528</id>
+      <summary>playbin: need to avoid duplicated flag setting</summary>
+    </bug>
+    <bug>
+      <id>749530</id>
+      <summary>xvimagesink: fix pool leak</summary>
+    </bug>
+    <bug>
+      <id>749632</id>
+      <summary>FTBFS when srcdir != builddir since commit bfc13c8e</summary>
+    </bug>
+    <bug>
+      <id>749673</id>
+      <summary>discoverer: Serialize the top level DiscovererInfo</summary>
+    </bug>
+    <bug>
+      <id>749740</id>
+      <summary>tools: gst-play: print keyboard shortcuts help in interactive mode.</summary>
+    </bug>
+    <bug>
+      <id>749824</id>
+      <summary>basetextoverlay: make deltax and deltay properties controllable</summary>
+    </bug>
+    <bug>
+      <id>750032</id>
+      <summary>videorate: fails to renegotiate on streams with a variable framerate</summary>
+    </bug>
+    <bug>
+      <id>750096</id>
+      <summary>sdp: prevent the sdp message parser from reading past the end of the buffer</summary>
+    </bug>
+    <bug>
+      <id>750325</id>
+      <summary>rtcpbuffer: Update package validation to support reduced size rtcp packets</summary>
+    </bug>
+    <bug>
+      <id>750406</id>
+      <summary>audioconvert: copy all metadata.</summary>
+    </bug>
+    <bug>
+      <id>738302</id>
+      <summary>videorate: Should increase minimum buffer in allocation query</summary>
+    </bug>
+    <bug>
+      <id>739281</id>
+      <summary>video-blend: fix blending of rectangles partially or fully outside of the video</summary>
+    </bug>
+    <bug>
+      <id>740013</id>
+      <summary>rtspconnection: There is an warning by mismatch of parameter name in header and source files</summary>
+    </bug>
+  </bugs>
+
+</release>

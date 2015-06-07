@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-ugly</module>
+  <module-fancy>GStreamer Ugly Plugins</module-fancy>
+  <name></name>
+  <version>1.5.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.5 release series. The 1.5 release series is adding new features on top of
+the 1.0, 1.2 and 1.4 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.5 release series
+will lead to the stable 1.6 release series in the next weeks, and newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.5 release series.
+</p>
+
+<p>
+<i>"When you have to shoot, shoot.  Don't talk."</i>
+</p>
+<p>
+There are times when the world needs a color between black and white.
+Quality code to match the good's, but two-timing, backstabbing and ready to
+sell your freedom down the river.  These plugins might have a patent noose
+around their neck, or a lock-up license, or any other problem that makes you
+think twice about shipping them.
+</p>
+<p>
+We don't call them ugly because we like them less.  Does a mother love her
+son less because he's not as pretty as the other ones ? No  - she commends
+him on his great personality.  These plugins are the life of the party.
+And we'll still step in and set them straight if you report any unacceptable
+behaviour - because there are two kinds of people in the world, my friend:
+those with a rope around their neck and the people who do the cutting.
+</p>
+<p>
+This module contains a set of plugins that have good quality and correct
+functionality, but distributing them might pose problems.  The license
+on either the plugins or the supporting libraries might not be how we'd
+like. The code might be widely known to present patent problems.
+Distributors should check if they want/can ship these plugins.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+  <features>
+    <feature>Parallel installability with 0.10.x series</feature>
+    <feature></feature>
+  </features>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Cliff Han</person>
+	<person>Edward Hervey</person>
+	<person>Guillaume Desmottes</person>
+	<person>Jan Schmidt</person>
+	<person>Luis de Bethencourt</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Nicolas Dufresne</person>
+	<person>Sebastian Dröge</person>
+	<person>Simon Farnsworth</person>
+	<person>Stefan Sauer</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>731351</id>
+      <summary>x264enc: Shift PTS and DTS with bframes</summary>
+    </bug>
+    <bug>
+      <id>453322</id>
+      <summary>dvdreadsrc ignores chapter specification when starting playback</summary>
+    </bug>
+    <bug>
+      <id>734471</id>
+      <summary>asfdemux: Should pass seek events upstream first</summary>
+    </bug>
+    <bug>
+      <id>735070</id>
+      <summary>asfdemux: ASF file with H.264 video not playing back properly</summary>
+    </bug>
+    <bug>
+      <id>735379</id>
+      <summary>mpeg2dec: use stride information from GstVideoFrame</summary>
+    </bug>
+    <bug>
+      <id>737516</id>
+      <summary>gst-launch-1.0 videotestsrc ! x264enc ! decodebin ! autovideosink doesn't want to preroll</summary>
+    </bug>
+    <bug>
+      <id>746781</id>
+      <summary>a52dec: audio noise/distortions when there are multiple AC-3 streams being decoded in parallel</summary>
+    </bug>
+    <bug>
+      <id>746887</id>
+      <summary>mpeg2dec: fix a couple of leaks</summary>
+    </bug>
+    <bug>
+      <id>748162</id>
+      <summary>asfdemux: can't seek to the offset which is bigger than 4G bytes in push mode</summary>
+    </bug>
+    <bug>
+      <id>732288</id>
+      <summary>x264enc: Does not request enough buffers in allocation query</summary>
+    </bug>
+  </bugs>
+</release>

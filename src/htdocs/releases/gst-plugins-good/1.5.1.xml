@@ -1,0 +1,830 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plugins</module-fancy>
+  <name></name>
+  <version>1.5.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.5 release series. The 1.5 release series is adding new features on top of
+the 1.0, 1.2 and 1.4 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.5 release series
+will lead to the stable 1.6 release series in the next weeks, and newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.5 release series.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plugins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plugins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plugin on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plugins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plugin
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plugins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Aleix Conchillo Flaqué</person>
+	<person>Alex O'Konski</person>
+	<person>Ananda</person>
+	<person>Andrei Sarakeev</person>
+	<person>Antonio Ospite</person>
+	<person>Anuj Jaiswal</person>
+	<person>Arun Raghavan</person>
+	<person>Aurélien Zanelli</person>
+	<person>Benjamin Gaignard</person>
+	<person>Brad Smith</person>
+	<person>Branislav Katreniak</person>
+	<person>David Sansome</person>
+	<person>David Schleef</person>
+	<person>Edward Hervey</person>
+	<person>George Kiagiadakis</person>
+	<person>Guillaume Desmottes</person>
+	<person>Gwenole Beauchesne</person>
+	<person>Göran Jönsson</person>
+	<person>Hans de Goede</person>
+	<person>Henning Heinold</person>
+	<person>Hyunjun Ko</person>
+	<person>Ilya Konstantinov</person>
+	<person>Jan Alexander Steffens (heftig)</person>
+	<person>Jan Schmidt</person>
+	<person>Jason Litzinger</person>
+	<person>Jesper Larsen</person>
+	<person>Jimmy Ohn</person>
+	<person>Jonas Holmberg</person>
+	<person>Jose Antonio Santos Cadenas</person>
+	<person>Josep Torra</person>
+	<person>Julien Isorce</person>
+	<person>Jurgen Slowack</person>
+	<person>Krzysztof Kotlenga</person>
+	<person>Linus Svensson</person>
+	<person>Luis de Bethencourt</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Matej Knopp</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Matthew Waters</person>
+	<person>Michael Smith</person>
+	<person>Miguel París Díaz</person>
+	<person>Nicola Murino</person>
+	<person>Nicolas Dufresne</person>
+	<person>Nicolas Huet</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Ognyan Tonchev</person>
+	<person>Olivier Crête</person>
+	<person>Patrick Radizi</person>
+	<person>Paul Hyunil</person>
+	<person>Peter G. Baum</person>
+	<person>Peter Korsgaard</person>
+	<person>Peter Seiderer</person>
+	<person>Philippe De Muyter</person>
+	<person>Philippe Normand</person>
+	<person>Piotr Drąg</person>
+	<person>Ramiro Polla</person>
+	<person>Ravi Kiran K N</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Sanjay NM</person>
+	<person>Santiago Carot-Nemesio</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Rasmussen</person>
+	<person>Simon Farnsworth</person>
+	<person>Sjoerd Simons</person>
+	<person>Srimanta Panda</person>
+	<person>Stefan Sauer</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tobias Modschiedler</person>
+	<person>Tom Greenwood</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vineeth T M</person>
+	<person>Vineeth TM</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+	<person>Wim Taymans</person>
+	<person>Youness Alaoui</person>
+	<person>hark</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>740130</id>
+      <summary>matroskamux: wrong duration on some files</summary>
+    </bug>
+    <bug>
+      <id>699382</id>
+      <summary>v4l2: dmabuf handling is not complete</summary>
+    </bug>
+    <bug>
+      <id>746747</id>
+      <summary>rtpsession: Also report internal sources in on-new-ssrc and on-ssrc-active</summary>
+    </bug>
+    <bug>
+      <id>741783</id>
+      <summary>qtmux: crash when trying to mux ALAC</summary>
+    </bug>
+    <bug>
+      <id>601733</id>
+      <summary>rtspsrc: Use specific error message when authentication is required</summary>
+    </bug>
+    <bug>
+      <id>635701</id>
+      <summary>rtspsrc: seeking is broken</summary>
+    </bug>
+    <bug>
+      <id>678124</id>
+      <summary>multifilesink: add support for time based file switching</summary>
+    </bug>
+    <bug>
+      <id>682770</id>
+      <summary>v4l2src: should renegotiate</summary>
+    </bug>
+    <bug>
+      <id>690646</id>
+      <summary>ximagesrc: Cursor offset with ximagesrc and xid</summary>
+    </bug>
+    <bug>
+      <id>690719</id>
+      <summary>jackaudiosink: add new property (port-pattern) to specify which jack ports to autoconnect to</summary>
+    </bug>
+    <bug>
+      <id>692473</id>
+      <summary>qtmux: does not store stream specific tags</summary>
+    </bug>
+    <bug>
+      <id>708808</id>
+      <summary>qtmux: Error out when downstream is not seekable and no fast-start</summary>
+    </bug>
+    <bug>
+      <id>711764</id>
+      <summary>osxaudiosrc: Produces broken audio for any sample rate other than 44100Hz</summary>
+    </bug>
+    <bug>
+      <id>722567</id>
+      <summary>wavparse: loops on incorrect wav file</summary>
+    </bug>
+    <bug>
+      <id>725335</id>
+      <summary>rtspsrc: Extract the payload type from sdp framesize attribute</summary>
+    </bug>
+    <bug>
+      <id>726415</id>
+      <summary>rtpjpegpay/-depay: Remove incorrectly introduced framesize SDP attribute</summary>
+    </bug>
+    <bug>
+      <id>726416</id>
+      <summary>rtph263pay/-depay: add framesize SDP attribute</summary>
+    </bug>
+    <bug>
+      <id>730417</id>
+      <summary>rtspt: no timestamp from some rtsp source over tcp</summary>
+    </bug>
+    <bug>
+      <id>731038</id>
+      <summary>playbin downmixes 5.0 multichannel-audio to stereo</summary>
+    </bug>
+    <bug>
+      <id>732152</id>
+      <summary>multiudpsink: use sendmmsg() to send multiple packets to multiple recipients in one go</summary>
+    </bug>
+    <bug>
+      <id>732866</id>
+      <summary>udpsink: client add/remove from app blocked while render function is stuck in g_socket_send_message()</summary>
+    </bug>
+    <bug>
+      <id>732870</id>
+      <summary>jpegenc: add support for encoding from nv21</summary>
+    </bug>
+    <bug>
+      <id>733225</id>
+      <summary>Lockup while using Cheese on 1.3.91</summary>
+    </bug>
+    <bug>
+      <id>733444</id>
+      <summary>wavenc: does not support more than 2 channel</summary>
+    </bug>
+    <bug>
+      <id>733539</id>
+      <summary>rtph264pay: append profile-level-id parameter to SDP if available</summary>
+    </bug>
+    <bug>
+      <id>733556</id>
+      <summary>h264 payloader : append packetization-mode parameter for SDP</summary>
+    </bug>
+    <bug>
+      <id>733616</id>
+      <summary>v4l2object: code cleanup</summary>
+    </bug>
+    <bug>
+      <id>733750</id>
+      <summary>v4l2object: query minimum required buffers for output</summary>
+    </bug>
+    <bug>
+      <id>734322</id>
+      <summary>RTP Jitterbuffer shouldn't force clock-rate on the caps</summary>
+    </bug>
+    <bug>
+      <id>734443</id>
+      <summary>qtdemux: forward DISCONT from upstream to the output streams</summary>
+    </bug>
+    <bug>
+      <id>734542</id>
+      <summary>speexenc: Improve annotation of internal function</summary>
+    </bug>
+    <bug>
+      <id>734987</id>
+      <summary>udp: fix udpsrc documentation</summary>
+    </bug>
+    <bug>
+      <id>735085</id>
+      <summary>y4mencode :  port y4m encoder to use GstVideoEncoder base class</summary>
+    </bug>
+    <bug>
+      <id>735378</id>
+      <summary>gstrtpjitterbuffer: requests retransmission periodically when no needed</summary>
+    </bug>
+    <bug>
+      <id>735564</id>
+      <summary>gdkpixbufdec: Error when using gdkpixbufdec with ImageFreeze element</summary>
+    </bug>
+    <bug>
+      <id>735581</id>
+      <summary>imagefreeze: Remove impossible error condition</summary>
+    </bug>
+    <bug>
+      <id>735626</id>
+      <summary>multipartdemux: caps are NULL in pad-added callback (regression)</summary>
+    </bug>
+    <bug>
+      <id>735627</id>
+      <summary>wavenc/wavparse: should support RF64 files</summary>
+    </bug>
+    <bug>
+      <id>735795</id>
+      <summary>imagefreeze: Don't call gst_caps_unref() on NULL caps</summary>
+    </bug>
+    <bug>
+      <id>735880</id>
+      <summary>imagefreeze: replace with gst_buffer_copy</summary>
+    </bug>
+    <bug>
+      <id>735950</id>
+      <summary>gdkpixbufdec: free query after use</summary>
+    </bug>
+    <bug>
+      <id>735971</id>
+      <summary>qtdemux: avdec_mjpeg does not get autoplugged for mjpeg in mov container</summary>
+    </bug>
+    <bug>
+      <id>736072</id>
+      <summary>v4l2: set min_latency for output device according to required minimum number of buffers</summary>
+    </bug>
+    <bug>
+      <id>736122</id>
+      <summary>ximagesrc: setting the screen-num property has no effect</summary>
+    </bug>
+    <bug>
+      <id>736133</id>
+      <summary>v4l2: query crop configuration after each call of S_CROP</summary>
+    </bug>
+    <bug>
+      <id>736252</id>
+      <summary>gdkpixbufdec: packetized mode logic</summary>
+    </bug>
+    <bug>
+      <id>736462</id>
+      <summary>multifile: don't bitwise OR the same flag twice</summary>
+    </bug>
+    <bug>
+      <id>736528</id>
+      <summary>udp: getting compilation error for implicit declaration of memcmp, memset</summary>
+    </bug>
+    <bug>
+      <id>736543</id>
+      <summary>matroska:OR and Bitwise OR of the same flag twice</summary>
+    </bug>
+    <bug>
+      <id>736872</id>
+      <summary>libpng: Removed redundant assignment</summary>
+    </bug>
+    <bug>
+      <id>736873</id>
+      <summary>alpha: Removed unreachable break statements</summary>
+    </bug>
+    <bug>
+      <id>736874</id>
+      <summary>audiofx: Removed unwanted variable</summary>
+    </bug>
+    <bug>
+      <id>736875</id>
+      <summary>audiofx: Removed unwanted buffer_length variable</summary>
+    </bug>
+    <bug>
+      <id>736876</id>
+      <summary>audiofx: Removed unreachable breaks, unwanted variable</summary>
+    </bug>
+    <bug>
+      <id>736878</id>
+      <summary>audioparsers: Added index check before using the index</summary>
+    </bug>
+    <bug>
+      <id>736879</id>
+      <summary>avi: Removed redundant assignment</summary>
+    </bug>
+    <bug>
+      <id>736880</id>
+      <summary>avi: Removed unwanted hdl variable</summary>
+    </bug>
+    <bug>
+      <id>736881</id>
+      <summary>deinterlace: Removed unwanted res variable</summary>
+    </bug>
+    <bug>
+      <id>736883</id>
+      <summary>dtmf: Removed unwanted structure member and assignment</summary>
+    </bug>
+    <bug>
+      <id>736884</id>
+      <summary>flv: Removed unreachable break statements</summary>
+    </bug>
+    <bug>
+      <id>736887</id>
+      <summary>goom: Clarified precedence between % and ?</summary>
+    </bug>
+    <bug>
+      <id>736888</id>
+      <summary>isomp4: Removed unreachable breaks</summary>
+    </bug>
+    <bug>
+      <id>736890</id>
+      <summary>matroska: Removed unwanted instruction</summary>
+    </bug>
+    <bug>
+      <id>736892</id>
+      <summary>rtpmanager: Removed unwanted variable and assignment</summary>
+    </bug>
+    <bug>
+      <id>736893</id>
+      <summary>rtpmanager: Removed unwanted assignment</summary>
+    </bug>
+    <bug>
+      <id>736894</id>
+      <summary>rtpmanager: Removed unwanted assignment in rtpsession</summary>
+    </bug>
+    <bug>
+      <id>736897</id>
+      <summary>videobox: duplicate assignment</summary>
+    </bug>
+    <bug>
+      <id>736903</id>
+      <summary>rtsp: Precedence in expression is not clear</summary>
+    </bug>
+    <bug>
+      <id>736986</id>
+      <summary>qtdemux: handle AAC audio without ESDS atom</summary>
+    </bug>
+    <bug>
+      <id>737095</id>
+      <summary>qtmux: subtitle muxing doesn't work</summary>
+    </bug>
+    <bug>
+      <id>737127</id>
+      <summary>interleave: interleaving does not respect the channel positions default order</summary>
+    </bug>
+    <bug>
+      <id>737359</id>
+      <summary>matroskademux: returns FLOW_FLUSHING when trying to reuse it</summary>
+    </bug>
+    <bug>
+      <id>737708</id>
+      <summary>pngdec: change parse logic</summary>
+    </bug>
+    <bug>
+      <id>737868</id>
+      <summary>rtspsrc: set stream caps on internal src TCP pads</summary>
+    </bug>
+    <bug>
+      <id>738013</id>
+      <summary>v4l2allocator: issue with import_userptr() in single-planar API when n_planes &gt; 1</summary>
+    </bug>
+    <bug>
+      <id>738707</id>
+      <summary>gst-plugins-good fails to build on Mac OS X 10.10 Yosemite due to deprecated NSOpenGLPFAFullScreen</summary>
+    </bug>
+    <bug>
+      <id>738838</id>
+      <summary>videobox: critical error when element properties set as max/min</summary>
+    </bug>
+    <bug>
+      <id>739344</id>
+      <summary>rtpjitterbuffer: ensure rtx_retry_period &gt; = 0</summary>
+    </bug>
+    <bug>
+      <id>739366</id>
+      <summary>imagefreeze: Handle seqnums</summary>
+    </bug>
+    <bug>
+      <id>739549</id>
+      <summary>v4l2bufferpool: fix typos in flags</summary>
+    </bug>
+    <bug>
+      <id>739566</id>
+      <summary>gdkpixbufoverlay: Fix relative-x/y and widen their range to support scolling images in/out of frame with GstController</summary>
+    </bug>
+    <bug>
+      <id>739930</id>
+      <summary>Port server-alsasrc-PCMA.py to version 1.x</summary>
+    </bug>
+    <bug>
+      <id>739975</id>
+      <summary>Seeking through some AAC file freezes my application</summary>
+    </bug>
+    <bug>
+      <id>740403</id>
+      <summary>v4l2object: reuse caps framerate if not overwritten by v4l2 device</summary>
+    </bug>
+    <bug>
+      <id>740505</id>
+      <summary>rtspsrc: segmentation fault when requesting srtp key</summary>
+    </bug>
+    <bug>
+      <id>740683</id>
+      <summary>rtspsrc: add retransmission handling for rtp</summary>
+    </bug>
+    <bug>
+      <id>740987</id>
+      <summary>Fixes to osxaudiosrc and osxaudiosink</summary>
+    </bug>
+    <bug>
+      <id>741115</id>
+      <summary>videomixer segfault when output height is smaller than input height and ypos is negative</summary>
+    </bug>
+    <bug>
+      <id>741134</id>
+      <summary>v4l2: CREATE_BUF support is broken</summary>
+    </bug>
+    <bug>
+      <id>741279</id>
+      <summary>qtmux: generating corrupted file when over 4GB</summary>
+    </bug>
+    <bug>
+      <id>741398</id>
+      <summary>rtpptdemux: errors out on invalid rtp packet, e.g. if the version check failed (0 != 2)</summary>
+    </bug>
+    <bug>
+      <id>741993</id>
+      <summary>souphttpsrc: leaking a buffer during flushing</summary>
+    </bug>
+    <bug>
+      <id>742098</id>
+      <summary>rtp: Fails rtpaux and rtpcollision tests</summary>
+    </bug>
+    <bug>
+      <id>742325</id>
+      <summary>ac3parse: requests minimum frame size that is too small</summary>
+    </bug>
+    <bug>
+      <id>742363</id>
+      <summary>v4l2object: recognize and distinguish all bayer arrangements</summary>
+    </bug>
+    <bug>
+      <id>742572</id>
+      <summary>qtdemux: EOS emitted after 10 seconds on a audio/mp4a file [REGRESSION]</summary>
+    </bug>
+    <bug>
+      <id>742661</id>
+      <summary>qtdemux: EOS in push mode when seeking in m4a</summary>
+    </bug>
+    <bug>
+      <id>743013</id>
+      <summary>v4l2bufferpool: set v4l2_buffer.field when queuing buffer in an output device</summary>
+    </bug>
+    <bug>
+      <id>743186</id>
+      <summary>v4l2object: set colorspace in caps for capture devices</summary>
+    </bug>
+    <bug>
+      <id>743407</id>
+      <summary>qtdemux: doesn't ignore data after last sample in mdat.</summary>
+    </bug>
+    <bug>
+      <id>743518</id>
+      <summary>qtdemux: dead code while calculating segment base ?</summary>
+    </bug>
+    <bug>
+      <id>743578</id>
+      <summary>qtdemux: Parse 'sidx' atom (for duration and indexing in fragmented files)</summary>
+    </bug>
+    <bug>
+      <id>743906</id>
+      <summary>quarktv: doesn't work with planes=0, fix property range accordingly</summary>
+    </bug>
+    <bug>
+      <id>744211</id>
+      <summary>interleave: assertion 'self- &gt; func != NULL' failed</summary>
+    </bug>
+    <bug>
+      <id>744461</id>
+      <summary>pulsesink: Enhance code readability in pulsesink_query</summary>
+    </bug>
+    <bug>
+      <id>745192</id>
+      <summary>matroskademux: V_MS-VFW-FOURCC streams have DTS instead of PTS</summary>
+    </bug>
+    <bug>
+      <id>745226</id>
+      <summary>Vorbis RTP payloader metadata is slightly wrong</summary>
+    </bug>
+    <bug>
+      <id>745276</id>
+      <summary>avidemux: remove not needed code</summary>
+    </bug>
+    <bug>
+      <id>745339</id>
+      <summary>qtdemux: key_unit seek doesn't work</summary>
+    </bug>
+    <bug>
+      <id>745441</id>
+      <summary>v4l2: Detect lossed frame and warn</summary>
+    </bug>
+    <bug>
+      <id>745515</id>
+      <summary>level: infinite loop when interval is set to low values</summary>
+    </bug>
+    <bug>
+      <id>745587</id>
+      <summary>rtp: Add PLI and FIR counters to RTPSource statistics</summary>
+    </bug>
+    <bug>
+      <id>745599</id>
+      <summary>rtsp: tcp transport fails</summary>
+    </bug>
+    <bug>
+      <id>745973</id>
+      <summary>matroskademux: gst_tag_list_insert: assertion 'GST_IS_TAG_LIST (into)' failed</summary>
+    </bug>
+    <bug>
+      <id>746065</id>
+      <summary>level: outputs random values if channels==1</summary>
+    </bug>
+    <bug>
+      <id>746242</id>
+      <summary>matroskaparse: send global tags</summary>
+    </bug>
+    <bug>
+      <id>746274</id>
+      <summary>flvdemux: Less spam from no_more_pads warning</summary>
+    </bug>
+    <bug>
+      <id>746390</id>
+      <summary>qtdemux: crash while playing MPEG DASH stream</summary>
+    </bug>
+    <bug>
+      <id>746479</id>
+      <summary>rtsp: Only two second of playback with rtpsrc and test-mp4 (rtsp-server)</summary>
+    </bug>
+    <bug>
+      <id>746543</id>
+      <summary>rtpsession: Properly implement T_rr_interval and allow sending multiple early feedback packets in a row</summary>
+    </bug>
+    <bug>
+      <id>746810</id>
+      <summary>matroska: fix GValue leak when parsing tags</summary>
+    </bug>
+    <bug>
+      <id>746822</id>
+      <summary>qtdemux: segment query reports wrong values after key-unit seek</summary>
+    </bug>
+    <bug>
+      <id>746834</id>
+      <summary>v4l2sink: driver is not queried for minimum number of buffers when propose_allocation is not called</summary>
+    </bug>
+    <bug>
+      <id>747204</id>
+      <summary>audiofirfilter creates strange noise for smaller filter kernels and even default kernel</summary>
+    </bug>
+    <bug>
+      <id>747208</id>
+      <summary>rtpvp8depay: should have width/height in its caps so it can be fed to muxers</summary>
+    </bug>
+    <bug>
+      <id>747358</id>
+      <summary>rtp: RTPJitterBufferMode enum missing from gtk-doc</summary>
+    </bug>
+    <bug>
+      <id>747394</id>
+      <summary>rtpsession: Track RTX ssrc caps</summary>
+    </bug>
+    <bug>
+      <id>747554</id>
+      <summary>suppressions: silence possible valgrind false positive</summary>
+    </bug>
+    <bug>
+      <id>747595</id>
+      <summary>tests: Add test suite for alpha element</summary>
+    </bug>
+    <bug>
+      <id>747597</id>
+      <summary>smpte: Remove unused fields</summary>
+    </bug>
+    <bug>
+      <id>747863</id>
+      <summary>rtpsession: Use bandwidth calculation by default instead of some arbitrary hardcoded value</summary>
+    </bug>
+    <bug>
+      <id>747922</id>
+      <summary>rtpjitterbuffer/rtxreceive: Don't reset the jitterbuffer if too old RTX packets arrive</summary>
+    </bug>
+    <bug>
+      <id>748022</id>
+      <summary>audiofx: fix typos in example pipelines</summary>
+    </bug>
+    <bug>
+      <id>748024</id>
+      <summary>icydemux: Fix segfault for 0-value metainterval</summary>
+    </bug>
+    <bug>
+      <id>748041</id>
+      <summary>rtpjitterbuffer: Too early requested retransmission for future packets</summary>
+    </bug>
+    <bug>
+      <id>748353</id>
+      <summary>rtspsrc: Leak of RTCP caps</summary>
+    </bug>
+    <bug>
+      <id>748436</id>
+      <summary>rtpjitterbuffer: &quot; stats &quot; property docs</summary>
+    </bug>
+    <bug>
+      <id>748584</id>
+      <summary>matroskademux: fix seek event leak in push mode</summary>
+    </bug>
+    <bug>
+      <id>748617</id>
+      <summary>qtdemux: fix buffer leak on EOS with stop position in push mode</summary>
+    </bug>
+    <bug>
+      <id>748627</id>
+      <summary>rtspsrc: Don't send NACKs and early RTCP in non-feedback profiles</summary>
+    </bug>
+    <bug>
+      <id>748909</id>
+      <summary>jpegdec: fix frame leaks</summary>
+    </bug>
+    <bug>
+      <id>749054</id>
+      <summary>qtdemux: Fix gst-launch pipeline in the documentation</summary>
+    </bug>
+    <bug>
+      <id>749072</id>
+      <summary>flacparse: fix buffer leak</summary>
+    </bug>
+    <bug>
+      <id>749122</id>
+      <summary>vp8enc: vp9enc: target bitrate is not working as expected</summary>
+    </bug>
+    <bug>
+      <id>749129</id>
+      <summary>rtpg726depay: add block_align to output caps</summary>
+    </bug>
+    <bug>
+      <id>749163</id>
+      <summary>po: update POTFILES.in</summary>
+    </bug>
+    <bug>
+      <id>749543</id>
+      <summary>rtpg726depay: fix input buffer memleak</summary>
+    </bug>
+    <bug>
+      <id>749544</id>
+      <summary>rtpg726pay: fix caps leak</summary>
+    </bug>
+    <bug>
+      <id>749581</id>
+      <summary>rtpbasepayload: Try harder to reuse previously configured caps values and give more preference to anything set as properties</summary>
+    </bug>
+    <bug>
+      <id>749669</id>
+      <summary>rtp: fix collection of statistic</summary>
+    </bug>
+    <bug>
+      <id>749690</id>
+      <summary>splitfilesrc: Implement binary search in find_part_for_offset</summary>
+    </bug>
+    <bug>
+      <id>749909</id>
+      <summary>matroska: overwritten value assignment</summary>
+    </bug>
+    <bug>
+      <id>750327</id>
+      <summary>rtpssrcdemux: Add support for reduce size rtcp</summary>
+    </bug>
+    <bug>
+      <id>750332</id>
+      <summary>rtpsession: Add support for reduced size rtcp</summary>
+    </bug>
+    <bug>
+      <id>743925</id>
+      <summary>osxaudiosink won't reconfigure sink caps</summary>
+    </bug>
+    <bug>
+      <id>744922</id>
+      <summary>osxaudiosrc: iOS resampling is stuttering</summary>
+    </bug>
+    <bug>
+      <id>728353</id>
+      <summary>goom2k1: code does nothing, slowly</summary>
+    </bug>
+    <bug>
+      <id>748068</id>
+      <summary>equalizer: not changing settings dynamically</summary>
+    </bug>
+    <bug>
+      <id>731352</id>
+      <summary>flv: Container timestamp is DTS not PTS</summary>
+    </bug>
+    <bug>
+      <id>732910</id>
+      <summary>v4l2src: Dectect and workaround decreasing HW timestamp</summary>
+    </bug>
+    <bug>
+      <id>737810</id>
+      <summary>payloaders: VP8 and Opus payloader should probably suppport Google Chrome encoding-names</summary>
+    </bug>
+    <bug>
+      <id>740787</id>
+      <summary>videocrop: No longer apply the new crop if caps have not changed</summary>
+    </bug>
+    <bug>
+      <id>736396</id>
+      <summary>isomp4: duplicate if else branches in atoms.c</summary>
+    </bug>
+    <bug>
+      <id>610364</id>
+      <summary>udpsrc: allocates buffers with size a lot bigger than needed</summary>
+    </bug>
+    <bug>
+      <id>739305</id>
+      <summary>souphttpsrc: log connection events at info level</summary>
+    </bug>
+    <bug>
+      <id>744213</id>
+      <summary>spectrum: assertion 'len &gt; 0' failed</summary>
+    </bug>
+  </bugs>
+
+</release>

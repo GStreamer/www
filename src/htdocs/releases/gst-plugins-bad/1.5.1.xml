@@ -1,0 +1,1544 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plugins</module-fancy>
+  <name></name>
+  <version>1.5.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.5 release series. The 1.5 release series is adding new features on top of
+the 1.0, 1.2 and 1.4 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.5 release series
+will lead to the stable 1.6 release series in the next weeks, and newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.5 release series.
+</p>
+
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plugins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plugins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plugins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Aleix Conchillo Flaqué</person>
+	<person>Alessandro Decina</person>
+	<person>Alex Ashley</person>
+	<person>Alexander Zallesov</person>
+	<person>Andoni Morales Alastruey</person>
+	<person>Anton Gritsay</person>
+	<person>Anton Obzhirov</person>
+	<person>Antonio Ospite</person>
+	<person>Anuj Jaiswal</person>
+	<person>Arun Raghavan</person>
+	<person>Aurélien Zanelli</person>
+	<person>Belozorov Semen</person>
+	<person>Benjamin Gaignard</person>
+	<person>Blake Tregre</person>
+	<person>Branislav Katreniak</person>
+	<person>Branko Subasic</person>
+	<person>Brendan Long</person>
+	<person>Brion Vibber</person>
+	<person>Carlos Rafael Giani</person>
+	<person>Christoph Reiter</person>
+	<person>Chun-wei Fan</person>
+	<person>DanielD10</person>
+	<person>Danny Song</person>
+	<person>David Rothlisberger</person>
+	<person>David Waring</person>
+	<person>David Woodhouse</person>
+	<person>Duncan Palmer</person>
+	<person>Edward Hervey</person>
+	<person>Fabrice Bellet</person>
+	<person>Felix Schwarz</person>
+	<person>Florian Langlois</person>
+	<person>Florian Zwoch</person>
+	<person>Flávio Ribeiro</person>
+	<person>George Kiagiadakis</person>
+	<person>Guillaume Desmottes</person>
+	<person>Guillaume Emont</person>
+	<person>Guillaume Seguin</person>
+	<person>Gwenole Beauchesne</person>
+	<person>Havard Graff</person>
+	<person>Heinrich Fink</person>
+	<person>Hyunjun Ko</person>
+	<person>Ilya Averyanov</person>
+	<person>Ilya Konstantinov</person>
+	<person>Jan Alexander Steffens (heftig)</person>
+	<person>Jan Schmidt</person>
+	<person>Jerome Laheurte</person>
+	<person>Jesper Larsen</person>
+	<person>Jimmy Ohn</person>
+	<person>Joachim Bauch</person>
+	<person>Jose Antonio Santos Cadenas</person>
+	<person>Josep Torra</person>
+	<person>Joshua M. Doe</person>
+	<person>Julien Isorce</person>
+	<person>Jun Xie</person>
+	<person>Jürgen Slowack</person>
+	<person>L. Sorin</person>
+	<person>Lasse Laursen</person>
+	<person>Lihua Liu</person>
+	<person>Lubosz Sarnecki</person>
+	<person>Luis de Bethencourt</person>
+	<person>Lyon Wang</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Matej Knopp</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Matthew Bader</person>
+	<person>Matthew Waters</person>
+	<person>Matthieu Bouron</person>
+	<person>Mersad Jelacic</person>
+	<person>Michał Dębski</person>
+	<person>Miguel París Díaz</person>
+	<person>Mohammed Hassan</person>
+	<person>Neos3452</person>
+	<person>Nick Stoughton</person>
+	<person>Nicola Murino</person>
+	<person>Nicolas Dufresne</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Ognyan Tonchev</person>
+	<person>Oleksij Rempel</person>
+	<person>Olivier Crete</person>
+	<person>Olivier Crête</person>
+	<person>Patricia Muscalu</person>
+	<person>Patrik Oldsberg</person>
+	<person>Philippe Normand</person>
+	<person>Piotr Drąg</person>
+	<person>Raimo Järvi</person>
+	<person>Rajat Verma</person>
+	<person>Ramiro Polla</person>
+	<person>Ramprakash Jelari</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Rob Clark</person>
+	<person>Robert Jobbagy</person>
+	<person>Robert Swain</person>
+	<person>Roman Nowicki</person>
+	<person>Sanjay NM</person>
+	<person>Santiago Carot-Nemesio</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Rasmussen</person>
+	<person>Song Bing</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Stefan Sauer</person>
+	<person>Sudip Jain</person>
+	<person>Suhwang Kim</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Thijs Vermeir</person>
+	<person>Thomas Bluemel</person>
+	<person>Thomas Klausner</person>
+	<person>Tifaine Inguere</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Valentin PONS</person>
+	<person>Vasilis Liaskovitis</person>
+	<person>Victor Toso</person>
+	<person>Vijay Jayaraman</person>
+	<person>Vincent Abriou</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vineeth T M</person>
+	<person>Vineeth TM</person>
+	<person>Vivia Nikolaidou</person>
+	<person>Vootele Vesterblom</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+	<person>Wang Xin-yu (王昕宇)</person>
+	<person>William Manley</person>
+	<person>Wim Taymans</person>
+	<person>Wonchul Lee</person>
+	<person>Xavier Claessens</person>
+	<person>Youness Alaoui</person>
+	<person>Yujin Lee</person>
+	<person>Zaheer Abbas Merali</person>
+	<person>hoonhee.lee</person>
+	<person>ijsf</person>
+	<person>xixi</person>
+	<person>Руслан Ижбулатов</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>739345</id>
+      <summary>codecparsers: remove ignored increment of return</summary>
+    </bug>
+    <bug>
+      <id>750185</id>
+      <summary>gl: Not showing any video on Android (skip glDrawElements)</summary>
+    </bug>
+    <bug>
+      <id>743974</id>
+      <summary>gl: rethink glfilter, glmixer, glupload, glcolorconvert, gldownload</summary>
+    </bug>
+    <bug>
+      <id>746617</id>
+      <summary>opusenc: headers are never sent</summary>
+    </bug>
+    <bug>
+      <id>749601</id>
+      <summary>win32: glimagesink always popup a new window</summary>
+    </bug>
+    <bug>
+      <id>745881</id>
+      <summary>Apply gst-indent for code convention</summary>
+    </bug>
+    <bug>
+      <id>748497</id>
+      <summary>spandsp: Fails to build, uses a private field missing_samples</summary>
+    </bug>
+    <bug>
+      <id>739992</id>
+      <summary>h264parse: expose compatible profiles to downstream</summary>
+    </bug>
+    <bug>
+      <id>740236</id>
+      <summary>New audiointerleave based on GstAggregator and create GstAudioAggregator from audiomixer</summary>
+    </bug>
+    <bug>
+      <id>611689</id>
+      <summary>[NEW PLUGIN] crossfeed plugin</summary>
+    </bug>
+    <bug>
+      <id>643252</id>
+      <summary>Improve opencv facedetect performance</summary>
+    </bug>
+    <bug>
+      <id>672610</id>
+      <summary>camerabin2: check negotiated caps avoid reseting of the pipe</summary>
+    </bug>
+    <bug>
+      <id>675134</id>
+      <summary>shmsrc: add an shm-area-name property</summary>
+    </bug>
+    <bug>
+      <id>677223</id>
+      <summary>dshowdecwrapper: Remove dependency to ATL</summary>
+    </bug>
+    <bug>
+      <id>678990</id>
+      <summary>camerabin2: Not showing anything</summary>
+    </bug>
+    <bug>
+      <id>685215</id>
+      <summary>codecparsers: h264: Add initial MVC parser</summary>
+    </bug>
+    <bug>
+      <id>696032</id>
+      <summary>mpegtsmux: Downstream force-key-unit events are being assigned the wrong &quot; count &quot; </summary>
+    </bug>
+    <bug>
+      <id>699364</id>
+      <summary>dshowvideosink: port to 1.0</summary>
+    </bug>
+    <bug>
+      <id>706872</id>
+      <summary>mpegtsmux does not flag key frames properly for tcpserversink</summary>
+    </bug>
+    <bug>
+      <id>708532</id>
+      <summary>tsdemux: skips too much when scanning for last PCR</summary>
+    </bug>
+    <bug>
+      <id>709532</id>
+      <summary>testsuite has failures</summary>
+    </bug>
+    <bug>
+      <id>722129</id>
+      <summary>mpegtsmux: alignment property does not work as expected for UDP streaming</summary>
+    </bug>
+    <bug>
+      <id>724868</id>
+      <summary>Setting Image Size in camerabin causes pipeline to fail with Not Negotiated</summary>
+    </bug>
+    <bug>
+      <id>725047</id>
+      <summary>tsdemux offsetting timestamp</summary>
+    </bug>
+    <bug>
+      <id>725145</id>
+      <summary>libde265 based HEVC/H.265 decoder plugin</summary>
+    </bug>
+    <bug>
+      <id>725163</id>
+      <summary>opencv extension is using the deprecated cv.h header</summary>
+    </bug>
+    <bug>
+      <id>725298</id>
+      <summary>dashdemux: fails after MPD refresh</summary>
+    </bug>
+    <bug>
+      <id>725435</id>
+      <summary>hlsdemux: enable seek for live streams</summary>
+    </bug>
+    <bug>
+      <id>725828</id>
+      <summary>hlsdemux: reporting playlist and fragment download time stat</summary>
+    </bug>
+    <bug>
+      <id>726376</id>
+      <summary>x265enc: Add x265 encoder element</summary>
+    </bug>
+    <bug>
+      <id>726801</id>
+      <summary>rfbsrc: specifying out-of-bounds resolution leads to segfault</summary>
+    </bug>
+    <bug>
+      <id>727402</id>
+      <summary>aiffmux: write padding byte at end of SSND chunk if needed</summary>
+    </bug>
+    <bug>
+      <id>727731</id>
+      <summary>tsdemux: add support for chinese AVS video codec</summary>
+    </bug>
+    <bug>
+      <id>727742</id>
+      <summary>hlsdemux: selects incorrect starting position for live streams</summary>
+    </bug>
+    <bug>
+      <id>727946</id>
+      <summary>decklinksrc: failure to switch states: PLAYING &lt; - &gt; NULL</summary>
+    </bug>
+    <bug>
+      <id>728646</id>
+      <summary>siren: fix sample list rate</summary>
+    </bug>
+    <bug>
+      <id>730225</id>
+      <summary>hlsdemux switch to higher quality don't connect all pads right</summary>
+    </bug>
+    <bug>
+      <id>730510</id>
+      <summary>facedetect: improve performance</summary>
+    </bug>
+    <bug>
+      <id>731263</id>
+      <summary>rtph265pay, rtph265depay: add rtp elements for H.265</summary>
+    </bug>
+    <bug>
+      <id>731404</id>
+      <summary>hlsdemux memmory leak</summary>
+    </bug>
+    <bug>
+      <id>731581</id>
+      <summary>curlsshsink: use the locally defined types instead of libcurl's</summary>
+    </bug>
+    <bug>
+      <id>731769</id>
+      <summary>onvif: add element implementing the ONVIF RTP extension</summary>
+    </bug>
+    <bug>
+      <id>731773</id>
+      <summary>pnmdec: unsupported bit depth is not checked</summary>
+    </bug>
+    <bug>
+      <id>731782</id>
+      <summary>waylandsink: video position is wrong when caps change and the sink is embedded in another window</summary>
+    </bug>
+    <bug>
+      <id>731943</id>
+      <summary>pnmenc: PNM Encoder needs to use gstVideoEncoder as base class</summary>
+    </bug>
+    <bug>
+      <id>731954</id>
+      <summary>glvideomixer: Add a background property</summary>
+    </bug>
+    <bug>
+      <id>731982</id>
+      <summary>hlsdemux: Don't use approximate duration for fragment buffer pts</summary>
+    </bug>
+    <bug>
+      <id>732237</id>
+      <summary>dashdemux: expose language tags</summary>
+    </bug>
+    <bug>
+      <id>732283</id>
+      <summary>dshowvideosrc: Port to 1.0</summary>
+    </bug>
+    <bug>
+      <id>732294</id>
+      <summary>mxfdemux: Use IndexTableSegments</summary>
+    </bug>
+    <bug>
+      <id>732507</id>
+      <summary>gl: R/RG textures don't work on iOS</summary>
+    </bug>
+    <bug>
+      <id>732596</id>
+      <summary>gdppay: put all sticky events in streamheader</summary>
+    </bug>
+    <bug>
+      <id>732662</id>
+      <summary>glmixer didn't receive the GstGLContext from downstream basetransform</summary>
+    </bug>
+    <bug>
+      <id>732664</id>
+      <summary>add other-context support to GstGLMixer</summary>
+    </bug>
+    <bug>
+      <id>732694</id>
+      <summary>glimagesink: handle drain query</summary>
+    </bug>
+    <bug>
+      <id>732875</id>
+      <summary>dvbsrc: add preliminary  support for ISDB-T/Tb</summary>
+    </bug>
+    <bug>
+      <id>733055</id>
+      <summary>winks: debug message printf format warnings</summary>
+    </bug>
+    <bug>
+      <id>733087</id>
+      <summary>Add WebP Image encoder</summary>
+    </bug>
+    <bug>
+      <id>733226</id>
+      <summary>katedec: properly handle segment and caps events</summary>
+    </bug>
+    <bug>
+      <id>733322</id>
+      <summary>parser: mpeg4:  problem with mpeg4_dmv_size_vlc_table values</summary>
+    </bug>
+    <bug>
+      <id>733347</id>
+      <summary>mpegtsmux: Fix naming prefix of internal functions</summary>
+    </bug>
+    <bug>
+      <id>733369</id>
+      <summary>dashdemux fails to detect end of period</summary>
+    </bug>
+    <bug>
+      <id>733661</id>
+      <summary>glimagesink navigation interface causes hangs with X11/GMainLoop event thread</summary>
+    </bug>
+    <bug>
+      <id>733682</id>
+      <summary>waylandsink: allow catching input events</summary>
+    </bug>
+    <bug>
+      <id>733717</id>
+      <summary>glmemory allocate size didn't match video_orc_pack_I420 needs if height is odd</summary>
+    </bug>
+    <bug>
+      <id>734040</id>
+      <summary>tsdemux: Handle sparse streams</summary>
+    </bug>
+    <bug>
+      <id>734264</id>
+      <summary>ksvideosrc gives GStreamer-CRITICAL **: write map requested on non-writable buffer continuously</summary>
+    </bug>
+    <bug>
+      <id>734321</id>
+      <summary>srtpdec doesn't support RTP on the RTCP sink pad</summary>
+    </bug>
+    <bug>
+      <id>734445</id>
+      <summary>hlsdemux:tsdemux: Improve trick modes support</summary>
+    </bug>
+    <bug>
+      <id>734482</id>
+      <summary>Make OpenGL plugins more accessible for application programmers</summary>
+    </bug>
+    <bug>
+      <id>734518</id>
+      <summary>dfbvideosink: Unref pad template caps after usage</summary>
+    </bug>
+    <bug>
+      <id>734523</id>
+      <summary>glbufferpool: Unref allocator after usage</summary>
+    </bug>
+    <bug>
+      <id>734525</id>
+      <summary>inter: Unref bus after usage</summary>
+    </bug>
+    <bug>
+      <id>734527</id>
+      <summary>gl/examples: Unref bus and element after usage</summary>
+    </bug>
+    <bug>
+      <id>734543</id>
+      <summary>opus: Improve annotation of internal function</summary>
+    </bug>
+    <bug>
+      <id>734623</id>
+      <summary>facedetect: fix NULL error when disable eyes/nose/mouth</summary>
+    </bug>
+    <bug>
+      <id>734775</id>
+      <summary>androidmedia: Should not send EOS when drained</summary>
+    </bug>
+    <bug>
+      <id>734970</id>
+      <summary>codecparser: h264: Use proper bit_reader api while parsing  buffering_period SEI</summary>
+    </bug>
+    <bug>
+      <id>735032</id>
+      <summary>zebrastripe: Refactoring of common code</summary>
+    </bug>
+    <bug>
+      <id>735042</id>
+      <summary>videoaggregator: race of vagg- &gt; info on pad removal</summary>
+    </bug>
+    <bug>
+      <id>735131</id>
+      <summary>gltestsrc: Add new patterns</summary>
+    </bug>
+    <bug>
+      <id>735248</id>
+      <summary>hlsdemux: Support OpenSSL for AES decryption of HLS fragments</summary>
+    </bug>
+    <bug>
+      <id>735522</id>
+      <summary>gl: fix for configure.ac to prevent unnecessary checks and linkage</summary>
+    </bug>
+    <bug>
+      <id>735565</id>
+      <summary>gl: Add GSTGLAPI to _gst_gl_debug_callback</summary>
+    </bug>
+    <bug>
+      <id>735566</id>
+      <summary>gl: some cleanup and fixes to qglwtextureshare</summary>
+    </bug>
+    <bug>
+      <id>735663</id>
+      <summary>dashdemux: synchronize with the download loop thread before signalling it</summary>
+    </bug>
+    <bug>
+      <id>735790</id>
+      <summary>GstGLMixer  random create none-RGBA output buffer pool for GstGLFilter</summary>
+    </bug>
+    <bug>
+      <id>735848</id>
+      <summary>adaptivedemux: new base class</summary>
+    </bug>
+    <bug>
+      <id>736008</id>
+      <summary>applemedia: Enable vtdec/vtenc on iOS 8</summary>
+    </bug>
+    <bug>
+      <id>736035</id>
+      <summary>glimagesink: Regression: Gtk+ cannot get glimagesink input</summary>
+    </bug>
+    <bug>
+      <id>736061</id>
+      <summary>typefind: detects AAC instead of mpegts when input buffer is small</summary>
+    </bug>
+    <bug>
+      <id>736132</id>
+      <summary>glimagesink: iOS: Does not rescale the video if the window size changes</summary>
+    </bug>
+    <bug>
+      <id>736134</id>
+      <summary>curlsmtpsink: Adding final boundary for every sending out email</summary>
+    </bug>
+    <bug>
+      <id>736141</id>
+      <summary>dashdemux: do not override last known stream error</summary>
+    </bug>
+    <bug>
+      <id>736176</id>
+      <summary>pngparse: re-assembling image from small blocks may be optimized</summary>
+    </bug>
+    <bug>
+      <id>736421</id>
+      <summary>dashdemux: improve detection of the position on download restart</summary>
+    </bug>
+    <bug>
+      <id>736460</id>
+      <summary>mpegpsmux: refactor duplicate else branches</summary>
+    </bug>
+    <bug>
+      <id>736531</id>
+      <summary>tsdemux: fix trivial coding style issue</summary>
+    </bug>
+    <bug>
+      <id>736740</id>
+      <summary>glimagesink: racy redraw with raw data upload accesses deleted texture</summary>
+    </bug>
+    <bug>
+      <id>736781</id>
+      <summary>vc1parse: forge sequence-layer from seq_hdr instead of seq_layer</summary>
+    </bug>
+    <bug>
+      <id>736786</id>
+      <summary>vc1parse: enable header-format conversion</summary>
+    </bug>
+    <bug>
+      <id>736790</id>
+      <summary>faad: logical disjunction consecutive return, break statement unnecessary.</summary>
+    </bug>
+    <bug>
+      <id>736800</id>
+      <summary>dashdemux: send missing FLUSH_STOP/EOS when no seeking period is found</summary>
+    </bug>
+    <bug>
+      <id>736853</id>
+      <summary>camerabin2: Removed redundant initialization</summary>
+    </bug>
+    <bug>
+      <id>736863</id>
+      <summary>mpegdemux: removed an unwanted initialization and an unwanted variable and assignment</summary>
+    </bug>
+    <bug>
+      <id>736895</id>
+      <summary>mplex: logical disjunction consecutive goto, break statements</summary>
+    </bug>
+    <bug>
+      <id>736926</id>
+      <summary>dshowvideosrc: error if set_caps is called while running</summary>
+    </bug>
+    <bug>
+      <id>736933</id>
+      <summary>gsettings: Fix typo in description</summary>
+    </bug>
+    <bug>
+      <id>736939</id>
+      <summary>gl: logical disjunction consecutive return, break statements</summary>
+    </bug>
+    <bug>
+      <id>736940</id>
+      <summary>androidmedia: logical disjunction consecutive goto, break statements</summary>
+    </bug>
+    <bug>
+      <id>736942</id>
+      <summary>androidmedia: logical disjunction consecutive goto, break statements</summary>
+    </bug>
+    <bug>
+      <id>736957</id>
+      <summary>gl: Removed unreachable break, unused variable</summary>
+    </bug>
+    <bug>
+      <id>737111</id>
+      <summary>videofilters: Added 3 more YUV formats</summary>
+    </bug>
+    <bug>
+      <id>737183</id>
+      <summary>audiomixer: Port to GstAggregator</summary>
+    </bug>
+    <bug>
+      <id>737370</id>
+      <summary>Unnecessary break statements following a goto</summary>
+    </bug>
+    <bug>
+      <id>737407</id>
+      <summary>zbar: fixed FIXME and added 2 formats for YUV.</summary>
+    </bug>
+    <bug>
+      <id>737411</id>
+      <summary>videoparser: comment out unused custom baseparse flag (with duplicate value)</summary>
+    </bug>
+    <bug>
+      <id>737412</id>
+      <summary>h264: playing a certain broken stream causes a crash (stack corruption caused by codec parser)</summary>
+    </bug>
+    <bug>
+      <id>737421</id>
+      <summary>dashdemux: Playback may attempt to start in wrong period for a live stream</summary>
+    </bug>
+    <bug>
+      <id>737505</id>
+      <summary>gltestsrc: implement checkers pattern in GLSL</summary>
+    </bug>
+    <bug>
+      <id>737559</id>
+      <summary>plugins-bad: remove unnecessary GLIB_DISABLE_DEPRECATION_WARNINGS</summary>
+    </bug>
+    <bug>
+      <id>737568</id>
+      <summary>video lib conversion in gstvideoaggregator.c leads  glvideomixer problem</summary>
+    </bug>
+    <bug>
+      <id>737788</id>
+      <summary>open264: Decoder and encoder element</summary>
+    </bug>
+    <bug>
+      <id>737793</id>
+      <summary>hlsdemux: Fix accessing invalidated memory.</summary>
+    </bug>
+    <bug>
+      <id>737892</id>
+      <summary>openh264: update to latest openh264 release and use pkg-config</summary>
+    </bug>
+    <bug>
+      <id>737894</id>
+      <summary>openh264enc: make denoise work</summary>
+    </bug>
+    <bug>
+      <id>737984</id>
+      <summary>schrodec: optimize parse logic</summary>
+    </bug>
+    <bug>
+      <id>738069</id>
+      <summary>waylandsink: avoid render twice the same buffer</summary>
+    </bug>
+    <bug>
+      <id>738072</id>
+      <summary>mpegts: typos in mpegts comments</summary>
+    </bug>
+    <bug>
+      <id>738129</id>
+      <summary>GstGLMixer download texture even if sink element is gl based</summary>
+    </bug>
+    <bug>
+      <id>738166</id>
+      <summary>docs: Update GstQOSType documentation a bit</summary>
+    </bug>
+    <bug>
+      <id>738206</id>
+      <summary>pcapparse can't handle LINKTYPE_RAW</summary>
+    </bug>
+    <bug>
+      <id>738227</id>
+      <summary>test: use G_GSIZE_FORMAT in audiomixer test</summary>
+    </bug>
+    <bug>
+      <id>738526</id>
+      <summary>vc1parse: implement some stream-format conversion</summary>
+    </bug>
+    <bug>
+      <id>738626</id>
+      <summary>bluez: Does not support bluez5 yet</summary>
+    </bug>
+    <bug>
+      <id>738740</id>
+      <summary>gl/cocoa: Fails to build on Mac OS X 10.10</summary>
+    </bug>
+    <bug>
+      <id>738816</id>
+      <summary>gl: gst-plugins-bad won't build without --with-opengl=yes</summary>
+    </bug>
+    <bug>
+      <id>738842</id>
+      <summary>add RGB16/BGR16 video format upload support to glcolorconvert</summary>
+    </bug>
+    <bug>
+      <id>738845</id>
+      <summary>audiomixer: critical error for blocksize, timeout min/max values</summary>
+    </bug>
+    <bug>
+      <id>738848</id>
+      <summary>dash: README is out-of-date</summary>
+    </bug>
+    <bug>
+      <id>738920</id>
+      <summary>dashdemux: allow seek to be performed if all streams are EOS</summary>
+    </bug>
+    <bug>
+      <id>739284</id>
+      <summary>decklinksrc: add automatic mode detection and timeout property</summary>
+    </bug>
+    <bug>
+      <id>739328</id>
+      <summary>GstGLMixer pass incorrect parameter to gst_gl_handle_set_context</summary>
+    </bug>
+    <bug>
+      <id>739334</id>
+      <summary>GstGLVideoMixer input caps can not be dynamically changed</summary>
+    </bug>
+    <bug>
+      <id>739385</id>
+      <summary>GstGLMixer link with  capsfilter  not-negotiated</summary>
+    </bug>
+    <bug>
+      <id>739404</id>
+      <summary>mpegts: value stored is never used</summary>
+    </bug>
+    <bug>
+      <id>739444</id>
+      <summary>glcolorconvert: fix comments that confuse gtk-doc</summary>
+    </bug>
+    <bug>
+      <id>739542</id>
+      <summary>interaudiosrc: racy caps negotiation/fixation</summary>
+    </bug>
+    <bug>
+      <id>739844</id>
+      <summary>examples: use snprintf instead of sprintf which is vulnerable</summary>
+    </bug>
+    <bug>
+      <id>739846</id>
+      <summary>opencv-example: Use snprintf instead of sprintf</summary>
+    </bug>
+    <bug>
+      <id>739906</id>
+      <summary>h264parser: fix documentation typo</summary>
+    </bug>
+    <bug>
+      <id>739941</id>
+      <summary>gl: Correct invalid comment text</summary>
+    </bug>
+    <bug>
+      <id>740009</id>
+      <summary>dashdemux: gst_dash_demux_download_wait causes abort for dynamic MPD</summary>
+    </bug>
+    <bug>
+      <id>740012</id>
+      <summary>gl: support opengl3+ core contexts</summary>
+    </bug>
+    <bug>
+      <id>740195</id>
+      <summary>mpg123: Handle setting caps if the srcpad is not linked yet, making it work with decodebin/playbin</summary>
+    </bug>
+    <bug>
+      <id>740235</id>
+      <summary>glcontext: build errors when GST_GL_HAVE_OPENGL is 0</summary>
+    </bug>
+    <bug>
+      <id>740305</id>
+      <summary>glimagesink: critical error while seeking using playback-test</summary>
+    </bug>
+    <bug>
+      <id>740376</id>
+      <summary>aggregator: Serialized events are deserialized</summary>
+    </bug>
+    <bug>
+      <id>740458</id>
+      <summary>hlsdemux: typefind might fail if first buffer is too short, causing the whole pipeline to abort</summary>
+    </bug>
+    <bug>
+      <id>740530</id>
+      <summary>gstglapi.h:42:21: fatal error: EGL/egl.h: No such file or directory</summary>
+    </bug>
+    <bug>
+      <id>740611</id>
+      <summary>gl: the gstglcontext_egl.h header is not installed</summary>
+    </bug>
+    <bug>
+      <id>740616</id>
+      <summary>decklinksink: crash on recreation</summary>
+    </bug>
+    <bug>
+      <id>740673</id>
+      <summary>codecparsers: some compiler warnings with apple-gcc42</summary>
+    </bug>
+    <bug>
+      <id>740674</id>
+      <summary>mpegts: some compiler warnings with apple-gcc42</summary>
+    </bug>
+    <bug>
+      <id>740744</id>
+      <summary>Caps negotiation between matroskademux and rtpopuspay fails</summary>
+    </bug>
+    <bug>
+      <id>740757</id>
+      <summary>watchdog: Handle playback and seeking cases</summary>
+    </bug>
+    <bug>
+      <id>740768</id>
+      <summary>videoaggregator: Expose vmethods to set converters and prepare frames</summary>
+    </bug>
+    <bug>
+      <id>740801</id>
+      <summary>glcolorconvert: add RGB16/BGR16 video format download support</summary>
+    </bug>
+    <bug>
+      <id>740815</id>
+      <summary>gstbasecamerasrc : fix typo</summary>
+    </bug>
+    <bug>
+      <id>740867</id>
+      <summary>dashdemux not flushing stream on pipeline stop for live content</summary>
+    </bug>
+    <bug>
+      <id>740891</id>
+      <summary>opusenc: replace &quot; audio &quot; property with new &quot; audio-type &quot; property</summary>
+    </bug>
+    <bug>
+      <id>740945</id>
+      <summary>directshowdec: Port decoder plugin to 1.x</summary>
+    </bug>
+    <bug>
+      <id>741086</id>
+      <summary>dshowsrcwrapper: Patch to fix comparison of null caps</summary>
+    </bug>
+    <bug>
+      <id>741096</id>
+      <summary>hlssink: remove unnecessary title on EXTINF tag</summary>
+    </bug>
+    <bug>
+      <id>741146</id>
+      <summary>aggregator: deadline based aggregation</summary>
+    </bug>
+    <bug>
+      <id>741231</id>
+      <summary>glfilter: position/texcoord attrib index usage</summary>
+    </bug>
+    <bug>
+      <id>741248</id>
+      <summary>dashdemux cannot switch representations in ISOBMFF OnDemand profile</summary>
+    </bug>
+    <bug>
+      <id>741285</id>
+      <summary>dashdemux: gst_dash_demux_setup_streams fails to initialise the segment numbers for live streams</summary>
+    </bug>
+    <bug>
+      <id>741322</id>
+      <summary>dashdemux: Change period when setting by period id.</summary>
+    </bug>
+    <bug>
+      <id>741495</id>
+      <summary>tests/aggregator: Use correct type when setting property</summary>
+    </bug>
+    <bug>
+      <id>741553</id>
+      <summary>curlsmtpsink: final boundary only added to last mail</summary>
+    </bug>
+    <bug>
+      <id>741592</id>
+      <summary>inter: silence messages for flushed / created samples</summary>
+    </bug>
+    <bug>
+      <id>741751</id>
+      <summary>mssdemux: pass correct type through vararg function to avoid potential crash</summary>
+    </bug>
+    <bug>
+      <id>741943</id>
+      <summary>glimagesink (or intel_dri) memleak</summary>
+    </bug>
+    <bug>
+      <id>742174</id>
+      <summary>vtenc_h264: potential deadlock upon EOS</summary>
+    </bug>
+    <bug>
+      <id>742212</id>
+      <summary>h264parse: periodic SPS/PPS insertion stops after a seek backwards</summary>
+    </bug>
+    <bug>
+      <id>742638</id>
+      <summary>mpegpsdemux: dead code</summary>
+    </bug>
+    <bug>
+      <id>742684</id>
+      <summary>aggregator: Locking logic should be reviewed, cleaned up, and documented</summary>
+    </bug>
+    <bug>
+      <id>742979</id>
+      <summary>adaptivedemux: Adaptive bitrate algorithm does not react fast enough to declining bitrate</summary>
+    </bug>
+    <bug>
+      <id>743142</id>
+      <summary>glimagesink memleak</summary>
+    </bug>
+    <bug>
+      <id>743155</id>
+      <summary>applemedia: new AVSampleBufferLayerSink</summary>
+    </bug>
+    <bug>
+      <id>743174</id>
+      <summary>h264parse: expose stereo-high profile</summary>
+    </bug>
+    <bug>
+      <id>743251</id>
+      <summary>POTFILES.in is out of date</summary>
+    </bug>
+    <bug>
+      <id>743334</id>
+      <summary>videoaggregator crash when work with filesrc</summary>
+    </bug>
+    <bug>
+      <id>743352</id>
+      <summary>po: update POTFILES.skip</summary>
+    </bug>
+    <bug>
+      <id>743677</id>
+      <summary>gl: new element caopengllayersink</summary>
+    </bug>
+    <bug>
+      <id>743907</id>
+      <summary>exclusion: crash with factor=0</summary>
+    </bug>
+    <bug>
+      <id>743908</id>
+      <summary>simplevideomark: crash when launch with max property values</summary>
+    </bug>
+    <bug>
+      <id>743914</id>
+      <summary>glimagesink: doesn't work on Raspberry Pi with EGLImages</summary>
+    </bug>
+    <bug>
+      <id>744020</id>
+      <summary>Auto-disabling of Desktop OpenGL when it can't be used doesn't work</summary>
+    </bug>
+    <bug>
+      <id>744096</id>
+      <summary>compositor, videoaggregator: ignores input timestamps if input buffers have no duration</summary>
+    </bug>
+    <bug>
+      <id>744219</id>
+      <summary>camerabin examples: Memory leak in camerabin examples code</summary>
+    </bug>
+    <bug>
+      <id>744246</id>
+      <summary>gl: Broken VideoAlignment handling?</summary>
+    </bug>
+    <bug>
+      <id>744338</id>
+      <summary>opusdec: LATENCY query handling looks wrong</summary>
+    </bug>
+    <bug>
+      <id>744362</id>
+      <summary>dashdemux: Add support for live stream seeking</summary>
+    </bug>
+    <bug>
+      <id>744371</id>
+      <summary>simplevideomark: move offset calculations out of inner loops</summary>
+    </bug>
+    <bug>
+      <id>744383</id>
+      <summary>directsoundsrc: volume and mute control</summary>
+    </bug>
+    <bug>
+      <id>744386</id>
+      <summary>decklink: incorrect frame rate values for interlaced modes</summary>
+    </bug>
+    <bug>
+      <id>744582</id>
+      <summary>dtls: Move Ericsson DTLS plugin to gst-plugins-bad</summary>
+    </bug>
+    <bug>
+      <id>744585</id>
+      <summary>vtenc: Crash when going to background</summary>
+    </bug>
+    <bug>
+      <id>744689</id>
+      <summary>hlssink: EXT-X-VERSION set to 6 while not using any features &gt; 3</summary>
+    </bug>
+    <bug>
+      <id>744778</id>
+      <summary>simplevideomarkdetect: move offset calculations out of inner loops</summary>
+    </bug>
+    <bug>
+      <id>744839</id>
+      <summary>gl: Flickering when libav direct rendering doing playbin playback</summary>
+    </bug>
+    <bug>
+      <id>744909</id>
+      <summary>opusenc: cbr and constrained-vbr are confusing</summary>
+    </bug>
+    <bug>
+      <id>744977</id>
+      <summary>glvideomixer: severe memory leak</summary>
+    </bug>
+    <bug>
+      <id>745054</id>
+      <summary>glimagesink: Segfault with webm/vp8 files that has odd height</summary>
+    </bug>
+    <bug>
+      <id>745090</id>
+      <summary>android: Fix changing GL window handle</summary>
+    </bug>
+    <bug>
+      <id>745105</id>
+      <summary>glimagesink: cosmetic cleanup</summary>
+    </bug>
+    <bug>
+      <id>745109</id>
+      <summary>gloverlay: image is upside down</summary>
+    </bug>
+    <bug>
+      <id>745161</id>
+      <summary>avfvideosrc: allow &quot; capture-screen &quot; mode to select which  screen to capture via the &quot; device-index &quot; option</summary>
+    </bug>
+    <bug>
+      <id>745251</id>
+      <summary>glvideomixer: corrupt video frames</summary>
+    </bug>
+    <bug>
+      <id>745409</id>
+      <summary>h264parse: broken output when caps change and stream-format=byte-stream</summary>
+    </bug>
+    <bug>
+      <id>745455</id>
+      <summary>dashdemux: doesn't take the presentationTimeOffset into account.</summary>
+    </bug>
+    <bug>
+      <id>745495</id>
+      <summary>dvbsuboverlay: Set query ALLOCATION need_pool to FALSE</summary>
+    </bug>
+    <bug>
+      <id>745506</id>
+      <summary>mpegtsmux: duplicate code</summary>
+    </bug>
+    <bug>
+      <id>745549</id>
+      <summary>glfilter: does not set new caps on its uploader</summary>
+    </bug>
+    <bug>
+      <id>745633</id>
+      <summary>glimagesink: X11: Race where it creates an external window even if the XID was set</summary>
+    </bug>
+    <bug>
+      <id>745705</id>
+      <summary>glfilter: GLBuffer pool may have two owners</summary>
+    </bug>
+    <bug>
+      <id>745740</id>
+      <summary>camerabin: update zoom param spec if video source changes its max-zoom</summary>
+    </bug>
+    <bug>
+      <id>745755</id>
+      <summary>pngparse prints too much info messages</summary>
+    </bug>
+    <bug>
+      <id>745780</id>
+      <summary>gl: Accepts downloading in RGB with BT709 colorspace (wrong colors)</summary>
+    </bug>
+    <bug>
+      <id>745875</id>
+      <summary>glcontext: remove unnecessary semicolon</summary>
+    </bug>
+    <bug>
+      <id>745877</id>
+      <summary>y4mdec: remove unnecessary semicolon</summary>
+    </bug>
+    <bug>
+      <id>745905</id>
+      <summary>hlsdemux: General Stream error due to bitrate change before last segment</summary>
+    </bug>
+    <bug>
+      <id>745955</id>
+      <summary>gleffects: port all effects to GLES2</summary>
+    </bug>
+    <bug>
+      <id>746032</id>
+      <summary>audiomixer: doesn't handle buffers with repeating pts properly (broken discont detection)</summary>
+    </bug>
+    <bug>
+      <id>746147</id>
+      <summary>compositor: Don't convert or aggregate pads that are completely obscured by a higher zorder pad</summary>
+    </bug>
+    <bug>
+      <id>746168</id>
+      <summary>[glshader] OSX crashes when trying to get vertex attribute without vertex shader</summary>
+    </bug>
+    <bug>
+      <id>746173</id>
+      <summary>new glimagesink (as glimagesinkbin) cannot copy metadata</summary>
+    </bug>
+    <bug>
+      <id>746209</id>
+      <summary>Merge glfiltersobel, glfilterblur and glfilterlaplacian into gleffects</summary>
+    </bug>
+    <bug>
+      <id>746251</id>
+      <summary>android/egl: changing window handle breaks video playback</summary>
+    </bug>
+    <bug>
+      <id>746347</id>
+      <summary>dashdemux: set defaultstartNumber and also avoid wrong overwrite</summary>
+    </bug>
+    <bug>
+      <id>746356</id>
+      <summary>srtpenc: Improvement to avoid memory copy</summary>
+    </bug>
+    <bug>
+      <id>746399</id>
+      <summary>glupload: get_caps vfunc incomplete</summary>
+    </bug>
+    <bug>
+      <id>746541</id>
+      <summary>glimagesink memleak</summary>
+    </bug>
+    <bug>
+      <id>746632</id>
+      <summary>dispmanx: surfaceless EGL context support broken</summary>
+    </bug>
+    <bug>
+      <id>746803</id>
+      <summary>mxfdemux: fix segment- &gt; delta_entries memory leak</summary>
+    </bug>
+    <bug>
+      <id>746906</id>
+      <summary>hlssink: creates a single segment</summary>
+    </bug>
+    <bug>
+      <id>747000</id>
+      <summary>multifilesink: doesn't post file message for last file</summary>
+    </bug>
+    <bug>
+      <id>747038</id>
+      <summary>tsparse/tsdemux: incorrect timestamps on PMT change in mpeg TS stream</summary>
+    </bug>
+    <bug>
+      <id>747124</id>
+      <summary>glbasefilter: avoid segfault when gl platform is not available</summary>
+    </bug>
+    <bug>
+      <id>747126</id>
+      <summary>androidmedia: add support for more color formats</summary>
+    </bug>
+    <bug>
+      <id>747220</id>
+      <summary>aggregator: Does not unlock sink pads on downstream error</summary>
+    </bug>
+    <bug>
+      <id>747319</id>
+      <summary>hlssink: Doesn't write ENDLIST marker on EOS</summary>
+    </bug>
+    <bug>
+      <id>747525</id>
+      <summary>dashdemux: playback failed when trying to play a content that has subtitles</summary>
+    </bug>
+    <bug>
+      <id>747697</id>
+      <summary>Documentation fails to build because of mismatching libraries</summary>
+    </bug>
+    <bug>
+      <id>747722</id>
+      <summary>winks: buffer is too late</summary>
+    </bug>
+    <bug>
+      <id>747911</id>
+      <summary>glcolorconvertelement: GstGLColorConvert is leaked</summary>
+    </bug>
+    <bug>
+      <id>747913</id>
+      <summary>glmixer: pass the proper free function to frames and buffers array</summary>
+    </bug>
+    <bug>
+      <id>747915</id>
+      <summary>glmixer: fix caps leaks</summary>
+    </bug>
+    <bug>
+      <id>747993</id>
+      <summary>videoaggregator: fix caps leak when early returning</summary>
+    </bug>
+    <bug>
+      <id>748033</id>
+      <summary>gstglupload: Fix GstGLUpload leak</summary>
+    </bug>
+    <bug>
+      <id>748037</id>
+      <summary>openh264enc: Add complexity property to configure speed / quality tradeoff</summary>
+    </bug>
+    <bug>
+      <id>748110</id>
+      <summary>vtdec: fix build error with clang</summary>
+    </bug>
+    <bug>
+      <id>748122</id>
+      <summary>applemedia: miscellaneous fixes</summary>
+    </bug>
+    <bug>
+      <id>748128</id>
+      <summary>avfvideosrc: fix build failure with clang</summary>
+    </bug>
+    <bug>
+      <id>748141</id>
+      <summary>videoconvert, glcolorconvert: keep colorimetry/chroma-site fields if passthrough</summary>
+    </bug>
+    <bug>
+      <id>748287</id>
+      <summary>glmixer: Possible null pointer dereference</summary>
+    </bug>
+    <bug>
+      <id>748369</id>
+      <summary>dashdemux: Excessive (96GB on 32-bit machines) memory usage on some dash streams</summary>
+    </bug>
+    <bug>
+      <id>748371</id>
+      <summary>glupload: Release glupload buffer when caps are changed</summary>
+    </bug>
+    <bug>
+      <id>748393</id>
+      <summary>gleffects_laplacian: error when testing the element</summary>
+    </bug>
+    <bug>
+      <id>748405</id>
+      <summary>glimagesink: balance change_state bufferpool/other_context ref/unref</summary>
+    </bug>
+    <bug>
+      <id>748407</id>
+      <summary>gltransformation: don't initialize multiple shaders on renegotiation</summary>
+    </bug>
+    <bug>
+      <id>748412</id>
+      <summary>tsdemux: possible refcount bug in applying PMT</summary>
+    </bug>
+    <bug>
+      <id>748425</id>
+      <summary>GL context on android has 16bits colors</summary>
+    </bug>
+    <bug>
+      <id>748467</id>
+      <summary>vtenc: fix keyframe request race condition</summary>
+    </bug>
+    <bug>
+      <id>748495</id>
+      <summary>libde265: No code to detect the number of CPUs on W32</summary>
+    </bug>
+    <bug>
+      <id>748496</id>
+      <summary>libde265: Fails to build due to werrors about wrong format</summary>
+    </bug>
+    <bug>
+      <id>748527</id>
+      <summary>mpegtspacketizer: Change return value in find_subtable</summary>
+    </bug>
+    <bug>
+      <id>748529</id>
+      <summary>adaptivedemux: only update stream position if query success</summary>
+    </bug>
+    <bug>
+      <id>748576</id>
+      <summary>tsdemux: fix tag list leak</summary>
+    </bug>
+    <bug>
+      <id>748580</id>
+      <summary>mxf: fix leak in mxfmetadata</summary>
+    </bug>
+    <bug>
+      <id>748585</id>
+      <summary>opus: don't use deprecated gst_buffer_new_and_alloc()</summary>
+    </bug>
+    <bug>
+      <id>748588</id>
+      <summary>glvideomixer: segfaulting when inspecting</summary>
+    </bug>
+    <bug>
+      <id>748594</id>
+      <summary>opus: fix includes and compilation against opus in non-standard prefix</summary>
+    </bug>
+    <bug>
+      <id>748723</id>
+      <summary>dtlssrtpdec: Merges RTP and RTCP into the same stream</summary>
+    </bug>
+    <bug>
+      <id>748867</id>
+      <summary>androidmedia: Fix slice-height for Tegra3 devices</summary>
+    </bug>
+    <bug>
+      <id>748875</id>
+      <summary>opusparse: Generates caps with a rate=0</summary>
+    </bug>
+    <bug>
+      <id>749218</id>
+      <summary>Decklink 4k 3184p50 has wrong name and uses wrong framerate</summary>
+    </bug>
+    <bug>
+      <id>749237</id>
+      <summary>gltestsrc: Assert and failed with not-neg when not linked</summary>
+    </bug>
+    <bug>
+      <id>749253</id>
+      <summary>h263parse: fix picture format parsing</summary>
+    </bug>
+    <bug>
+      <id>749304</id>
+      <summary>srtpenc: fix over unlocking</summary>
+    </bug>
+    <bug>
+      <id>749318</id>
+      <summary>dtlsenc: Memory leak</summary>
+    </bug>
+    <bug>
+      <id>749322</id>
+      <summary>dtlsdec: Memory leak</summary>
+    </bug>
+    <bug>
+      <id>749325</id>
+      <summary>dtlsconnection: Memory leak</summary>
+    </bug>
+    <bug>
+      <id>749335</id>
+      <summary>glimagesink and videooverlay on windows</summary>
+    </bug>
+    <bug>
+      <id>749380</id>
+      <summary>dtls[enc|dec]: Memory leak on keys</summary>
+    </bug>
+    <bug>
+      <id>749411</id>
+      <summary>glcontext_egl should call eglTerminate to free resources for non EGL DISPLAY types</summary>
+    </bug>
+    <bug>
+      <id>749430</id>
+      <summary>gltestsrc ! glimagesink crash on windows</summary>
+    </bug>
+    <bug>
+      <id>749523</id>
+      <summary>cvsmooth: Wrong assignment of prop leads to crash</summary>
+    </bug>
+    <bug>
+      <id>749525</id>
+      <summary>pyramidsegment: wrong value of level property</summary>
+    </bug>
+    <bug>
+      <id>749534</id>
+      <summary>dashdemux: Some suspicious compiler warnings about checking if the unsigned segment index is smaller than 0</summary>
+    </bug>
+    <bug>
+      <id>749634</id>
+      <summary>compositor: Strange behaviour mixing streams</summary>
+    </bug>
+    <bug>
+      <id>749655</id>
+      <summary>vtdec: Require width and height field for H264</summary>
+    </bug>
+    <bug>
+      <id>749684</id>
+      <summary>dashdemux: Segfault when playback starts after refactor for segments iteration</summary>
+    </bug>
+    <bug>
+      <id>749691</id>
+      <summary>dashdemux: remove unnecessary semicolon</summary>
+    </bug>
+    <bug>
+      <id>749728</id>
+      <summary>glimagesink doesn't work on nvidia OSX</summary>
+    </bug>
+    <bug>
+      <id>749734</id>
+      <summary>black screen when using gltransformation</summary>
+    </bug>
+    <bug>
+      <id>749809</id>
+      <summary>dashdemux: Incorrect example launch line in the dash demux description.</summary>
+    </bug>
+    <bug>
+      <id>749815</id>
+      <summary>curlsink: handle socket callback for active FTP connections as well</summary>
+    </bug>
+    <bug>
+      <id>749846</id>
+      <summary>gloverlay crash on missing file</summary>
+    </bug>
+    <bug>
+      <id>750028</id>
+      <summary>hlsdemux: Search more when advancing fragment</summary>
+    </bug>
+    <bug>
+      <id>750036</id>
+      <summary>dtls: wrong management of pads in releasing operation</summary>
+    </bug>
+    <bug>
+      <id>750104</id>
+      <summary>rtmpsink: Do not crash when receiving buffers after GST_FLOW_ERROR</summary>
+    </bug>
+    <bug>
+      <id>750143</id>
+      <summary>hlsdemux: Fix wrong gst-launch command in the description</summary>
+    </bug>
+    <bug>
+      <id>750199</id>
+      <summary>glimagesink: crashes in gst_gl_window_x11_set_window_handle()</summary>
+    </bug>
+    <bug>
+      <id>750252</id>
+      <summary>audiointerleave: Crash when channel-positions-from-input=1 and channel-positions unset</summary>
+    </bug>
+    <bug>
+      <id>750279</id>
+      <summary>Copying glsyncmeta causes errors</summary>
+    </bug>
+    <bug>
+      <id>750326</id>
+      <summary>srtp: Allow getting ssrc of more package types than RR and SR</summary>
+    </bug>
+    <bug>
+      <id>750337</id>
+      <summary>[REGRESSION] glimagesink fails to initialize the shader</summary>
+    </bug>
+    <bug>
+      <id>750348</id>
+      <summary>dtlsdec: 'Got data flow before stream-start event' warnings</summary>
+    </bug>
+    <bug>
+      <id>750381</id>
+      <summary>ksvideosrc: buffers have no timestamp</summary>
+    </bug>
+    <bug>
+      <id>747352</id>
+      <summary>applemedia: texture cache negotiation doesn't work</summary>
+    </bug>
+    <bug>
+      <id>747936</id>
+      <summary>osxaudio: spelling fix</summary>
+    </bug>
+    <bug>
+      <id>748054</id>
+      <summary>avfvideosrc: starting capture session too early, sending buffers with PTS=NONE</summary>
+    </bug>
+    <bug>
+      <id>740900</id>
+      <summary>glbufferpool: Add support for GstVideoAlignement</summary>
+    </bug>
+    <bug>
+      <id>732818</id>
+      <summary>dvbsrc: make slof/lof1/lof2 settable properties</summary>
+    </bug>
+    <bug>
+      <id>746249</id>
+      <summary>aggregator: Add gap event support</summary>
+    </bug>
+    <bug>
+      <id>747557</id>
+      <summary>zbar: Get an image along with the barcode</summary>
+    </bug>
+    <bug>
+      <id>696135</id>
+      <summary>h264parse: Add mvc stream parsing support</summary>
+    </bug>
+  </bugs>
+</release>

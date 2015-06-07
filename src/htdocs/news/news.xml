@@ -6587,5 +6587,47 @@ GStreamer participation in this round of the program it's being sponsored by Sam
         </p>
         </content>
   </item>
+
+    <item>
+      <date>2015-06-07 12:00</date>
+        <title>GStreamer Core and Plugins 1.5.1 development release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.5 release series. The 1.5 release series is adding new features on top of
+the 1.0, 1.2 and 1.4 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.5 release series
+will lead to the stable 1.6 release series in the next weeks, and newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.5 release series.
+</p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.5.1.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.5.1.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.5.1.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.5.1.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.5.1.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-libav/1.5.1.html">gst-libav</a>, or
+<a href="&site;/releases/gst-rtsp-server/1.5.1.html">gst-rtsp-server</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.5.1.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.5.1.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.5.1.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.5.1.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.5.1.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.5.1.tar.xz">gst-libav</a>, or
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.5.1.tar.xz">gst-rtsp-server</a>, or
+        </p>
+        <p>
+	Check the <a href="http://lists.freedesktop.org/archives/gstreamer-devel/2015-June/053070.html">release announcement mail</a> for details
+	and the release notes above for a list of changes.
+        </p>
+        </content>
+  </item>
+
 </news>
 
