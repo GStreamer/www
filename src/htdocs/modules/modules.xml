@@ -257,41 +257,4 @@ language-like programs that operate on arrays of data.
     <status>active</status>
   </module>
 
-  <module>
-    <id>gst-android</id>
-    <blurb>GStreamer as media engine for Android</blurb>
-    <title>GStreamer as media engine for Android</title>
-    <description>
-    This is a module that allows you to make GStreamer the media engine for
-    Android. The goal of the project is to both allow hardware makers to 
-    standarize on GStreamer accross their software platforms, but also to make
-    the advanced functionality of GStreamer available on the Android platform,
-    like video editing, DLNA Support and Video conferencing. This module has a 
-    seperate mailing list, so be sure to check the mailing lists page for details.
-    </description>
-    <maintainer>Reynaldo Verdejo</maintainer>
-    <versions>
-      <stable>&gst-android-version-stable;</stable>
-      <devel>&gst-android-version-devel;</devel>
-    </versions>
-    <status>obsolete (note: GStreamer builds for Android are actively maintained, see the cerbero module and the release binaries provided)</status>
-  </module>
-
-  <module>
-    <id>gst-plugins-gl</id>
-    <title>GStreamer OpenGL Plug-ins</title>
-    <blurb>plug-in and helper libraries for OpenGL integration</blurb>
-    <description>
-        The GStreamer OpenGL module provides helper libraries, base classes
-        and elements for integrating with OpenGL and using it to perform video
-        display and processing.
-    </description>
-    <maintainer>GStreamer Team</maintainer>
-    <versions>
-      <stable>&gst-plugins-gl-version-stable;</stable>
-      <devel>&gst-plugins-gl-version-devel;</devel>
-    </versions>
-    <status>obsolete (now part of gst-plugins-bad)</status>
-  </module>
-
 </modules>
