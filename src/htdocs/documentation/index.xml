@@ -153,12 +153,6 @@ gst-plugins-base are guaranteed to be API and ABI stable</b></p>
  </td>
 </tr>
 <tr>
- <td>GStreamer OpenGL Plugins Reference</td>
- <td width="15%" style="text-align:center">
-  <a href="&site;/data/doc/gstreamer/head/gst-plugins-gl-plugins/html/">HTML</a>
- </td>
-</tr>
-<tr>
  <td>GStreamer Non-Linear Multimedia Editing Plugins Reference</td>
  <td width="15%" style="text-align:center">
   <a href="&site;/data/doc/gstreamer/head/gnonlin/html/">HTML</a>
