@@ -6626,6 +6626,12 @@ or download tarballs for
 	Check the <a href="http://lists.freedesktop.org/archives/gstreamer-devel/2015-June/053070.html">release announcement mail</a> for details
 	and the release notes above for a list of changes.
         </p>
+        <p>
+        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.5.1/">Android</a>,
+	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.5.1/">iOS</a>,
+	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.5.1/">Mac OS X</a> and
+        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.5.1/">Windows</a>.
+        </p>
         </content>
   </item>
 
