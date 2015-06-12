@@ -1,4 +1,4 @@
-SUBDIRS =  2010 2011 2012 2013 2014
+SUBDIRS =  2010 2011 2012 2013 2014 2015
 
 built_pages = index.html 
 

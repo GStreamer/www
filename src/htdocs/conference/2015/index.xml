@@ -1,0 +1,472 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+<title>GStreamer Conference 2015</title>
+
+<body>
+
+<table>
+<tr><td>
+
+<h1>GStreamer Conference 2015</h1>
+
+  <h2>8-9 October 2014 · The Convention Centre Dublin · Dublin, Ireland</h2>
+
+<!-- FIXME: picture
+  <p>
+  <table>
+  <tr>
+    <td>
+      <div class="crop-dusseldorf">
+      <img src="Medienhafen_Duesseldorf_Nacht-cropped.jpg"
+           alt="Dusseldorf at night (media harbour)"
+           height="252"
+      />
+      </div>
+    </td>
+  </tr>
+  </table>
+  </p>
+-->
+
+  <p>
+  The <b>6<sup><small>th</small></sup> GStreamer Conference</b> will again
+  be co-located with the <i>Embedded Linux Conference Europe (ELCE)</i> and
+  <i>LinuxCon Europe</i>.
+  The event will be held on Thursday and Friday <b>8-9 October 2015</b> at
+  the Convention Centre Dublin (CCD) in <b>Dublin, Ireland</b>.
+  </p>
+
+<!--
+  <h2>Schedule</h2>
+  <p>
+  <a href="schedule.html">Click here for the conference schedule</a>.
+  </p>
+-->
+
+  <h2>Details</h2>
+  <p>
+  The GStreamer Conference is a conference for developers, decision-makers,
+  community members, industry partners, and anyone else interested in the
+  GStreamer multimedia framework or Open Source and cross-platform multimedia.
+  </p>
+
+  <h2>Call for Papers</h2>
+<!--
+  <p>
+  The call for papers is now closed and talk proposals can no longer be
+  submitted. Lightning talks may still be proposed though.
+  </p>
+-->
+  <p>
+  The call for papers is now open and talk proposals can be submitted.
+  </p>
+<!-- FIXME
+  <p>
+  The deadline for talk proposals is Wednesday 23 July 2014.
+  </p>
+-->
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk
+  (please allow at least 5 minutes for questions at the end as well).
+  </p>
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+  <p>
+  Talk slots will be available in varying durations from 15-45 minutes. We want
+  to hear from you, what you are working on, what you are using GStreamer for,
+  what difficulties you have encountered and how you solved them,
+  what your plans are.
+  </p>
+  <p>
+  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference at lists.freedesktop.org</a>.
+  </p>
+
+  <h2>Showcase or Lightning Talks</h2>
+  <p>
+    If you don't think you have enough material for a full talk, but perhaps
+    just want to showcase something you're working on, or present a problem or
+    challenge you are facing or have solved, and that you think might be
+    interesting for others to hear about, why not submit a ca. 5-minute
+    mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
+  </p>
+  <p>
+    Simply send a quick mail to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- -->@<!-- -->lists.freedesktop.org</a> above to reserve your slot (subject to availability).
+    <!-- Lightning Talk submissions are still accepted. -->
+  </p>
+
+  <h2>Social Event</h2>
+  <p>
+    We plan to again organise a social event for registered attendees on
+    Thursday 8 October 2015 in the evening. <!-- from 19.00-23.00h at the
+    <a href="http://www.hausbar-duesseldorf.de/">Hausbar</a>, Bolkerstraße 14,
+    40213 Düsseldorf, in the Altstadt (Old Town) district, just around the
+    corner of the <i>U Heinrich-Heine Allee</i> U-Bahn/Underground stop.
+  </p>
+  <p>
+    Food and Drink will be provided, including vegetarian options.
+  </p>
+  <p>
+    Please don't forget to bring your badge. -->
+  </p>
+
+  <h2>Schedule and speakers list</h2>
+  <p>
+  This will be published at a later time.
+  </p>
+<!--
+  <p>
+    We have an exciting range of topics and speakers lined up for you
+    this year:
+    <ul>
+    <li><a href="&site;/conference/2014/speakers.html#sauer-new-tracing-subsystem-for-gstreamer">A New Tracing Subsystem for GStreamer</a> <small><i> · Stefan Sauer, Google</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#swain-crossplatform-webrtc">Cross-Platform WebRTC with GStreamer</a> <small><i> · Robert Swain, Ericsson</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#hervey-gstreamer-negotiation">GStreamer, Negotiate all the things</a> <small><i> · Edward Hervey</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#debethencourt-html5-the-web-and-gstreamer">HTML5, the Web and GStreamer</a> <small><i> · Luis de Bethencourt, Samsung</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#mueller-gstreamer-state-of-the-union">GStreamer State of the Union</a> <small><i> · Tim Müller, Centricular</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#lopez-fernandez-kurento">Kurento: Creating a GStreamer-based Media Server for Real-Time Communication Services</a> <small><i> · Luis López Fernández</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#taymans-image-conversion">Image Conversion</a> <small><i> · Wim Taymans, RedHat</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#schmidt-stereoscopic-3d-video-in-gstreamer">Stereoscopic 3D Video</a> <small><i> · Jan Schmidt, Centricular</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#droege-trick-modes-in-gstreamer">Trick Modes in GStreamer</a> <small><i> · Sebastian Dröge, Centricular</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#lee-playbin-in-limited-resources-environment">Using Playbin in a Limited Resources Environment</a> <small><i> · Wonchul Lee, LG Electronics</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#paris-diaz-webrtc-kurento-webrtcendpoint">Implementing WebRTC capabilities for GStreamer: the case of the Kurento WebRtcEndpoint</a> <small><i> · Miguel París Díaz, Kurento</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#normand-gomez-efficient-multimedia-in-qt-webkit-on-raspberry-pi">Efficient multimedia support in QtWebKit on Raspberry Pi</a> <small><i> · Philippe Normand and Miguel Gómez, Igalia</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#saunier-gst-validate">Validate your elements behaviour, Investigate your bugs and avoid regressions with gst-validate!</a> <small><i> · Thibault Saunier, Collabora</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#kiagiadaki-gstreamer-on-wayland-overview">GStreamer on Wayland overview</a> <small><i> · George Kiagiadakis, Collabora</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#dufresne-v4l-decoder-support">The Development of Video4Linux Decoder support</a> <small><i> · Nicolas Dufresne, Collabora</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#tompkins-bridging-divide-between-gstreamer-and-cplusplus">Bridging the divide between GStreamer and a largely C++11 codebase</a> <small><i> · Cort Tompkins, IPConfigure</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#verdejo-pinochet-gstreamer-digital-tv-support">GStreamer and digital television support</a> <small><i> · Reynaldo H. Verdejo Pinochet, Samsung</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#zernicki-mpeg-h-3d-audio">MPEG-H 3D Audio, next generation audio compression standard</a> <small><i> · Tomasz Żernicki, Zylia</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#wang-gstreamers-role-in-tizen">GStreamer's role in Tizen</a> <small><i> · Chengjun Wang, Samsung</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#sousa-santos-adaptive-streaming">HLS, DASH, MMS: Adaptive Streaming Formats in GStreamer</a> <small><i> · Thiago Sousa Santos, Collabora</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#nikolic-gstreamer-on-android-with-java-and-scala">State-of-the-art GStreamer on Android with Java and Scala</a> <small><i> · Nenad V. Nikolić</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#waters-opengl-for-the-gstreamer-1-4-pipeline">OpenGL Desktop/ES for the GStreamer 1.4 pipeline</a> <small><i> · Matthew Waters</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#ashley-garvey-over-the-top-gstreamer">Over the top GStreamer</a> <small><i> · Alex Ashley and Darren Garvey, YouView</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#graff-gstharness-again">GstHarness again - A follow up</a> <small><i> · Håvard Graff, Pexip</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#graff-pexcision">Pexcision - Real-time media-detection testing-framework</a> <small><i> · Håvard Graff, Pexip</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#selnes-videocodec-dev">Videocodec development with GStreamer</a> <small><i> · Stian Selnes, Pexip</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#selnes-live-pipeline-challenges">Porting Pexip Infinity to 1.x - Live pipeline challenges</a> <small><i> · Stian Selnes, Pexip</i></small></li>
+    <li><a href="&site;/conference/2014/speakers.html#hervey-ci">GStreamer Continuous Integration</a> <small><i> · Edward Hervey</i></small></li>
+    <li><del><a href="&site;/conference/2014/speakers.html#kim-smart-properties-for-pipelines">Smart Properties for Pipelines</a> <small><i> · Jeongseok Kim, LG Electronics</i></small></del></li>
+    </ul>
+  </p>
+-->
+  <p>
+    Lightning Talks:
+    <ul>
+    <li><i>Submit your lightning talk now!</i></li>
+<!--
+    <li>Time synchronization in multipoint audio streaming using GStreamer in 3DAudioSense system <small><i> · Tomasz Żernicki, Zylia</i></small></li>
+    <li>Testing Video4Linux Applications and Drivers <small><i> · Hans Verkuil, Cisco</i></small><br />
+        <small>(the long version of this talk can be seen on Tuesday October 14 at 11:15am as part of ELCE)</small></li>
+    <li>Automatic audio-video synchronisation measurement using GStreamer and OpenCV <small><i> · Florent Thiery, UbiCast</i></small></li>
+    <li>Pexcision - Real-time media-detection testing-framework <small><i> · Pexip</i></small></li>
+    <li>Using GStreamer to set up Raspberry Pi as a surveillance camera <small><i> · Vivia Nikolaidou</i></small></li>
+    <li>Low Power Audio pipeline with PulseAudio <small><i> · Manohar Babu K, LG Electronics</i></small></li>
+    <li>Dynamic switching of music playback on hardware/software pipelines for Low power Audio <small><i> · Biju Malayil, LG Electronics</i></small></li>
+    <li>The Linux DVB libdvbv5 library for digital TV applications<small><i> · Mauro Carvalho Chehab, Samsung</i></small></li>
+    <li>gnonlin? it's dead, jim (a new design for dynamic pipelines) <small><i> · Mathieu Duponchelle</i></small></li>
+    <li>Reducing the loading time with playbin <small><i> · Hyejin Choi, LG CNS</i></small></li>
+    <li>Secure RTP <small><i> · Wim Taymans, RedHat</i></small></li>
+    <li>Zero-copy inter-process video with FD passing <small><i> · William Manley, stb-tester.com</i></small></li>
+    <li>Special Interest Groups? <small><i> · Edward Hervey</i></small></li>
+    <li>RTMP - Challenges with testing and interop <small><i> · Håvard Graff, Pexip</i></small></li>
+-->
+    <!--<li>GStreamer streamiddemux element <small><i> · HoonHee Lee, LG Electronics</i></small></li>-->
+    <!--<li>Stream IDs and how they're used in Transmageddon <small><i> · Christian Schaller, RedHat</i></small></li> -->
+    <!--<li>Time based seek and trick play features in GStreamer <small><i> · Ramesh Venkatachalapathy, LG Electronics</i></small></li> -->
+    </ul>
+  </p>
+<!--
+  <p>
+    The full <a href="schedule.html">conference schedule is now available</a>.
+    We hope you will be as excited about this years
+    schedule as we are. In addition to of course many in-depth GStreamer talks
+    we also have presentations on some of the most important core Linux
+    multimedia technologies like OpenGL and Wayland.
+  </p>
+-->
+
+  <h2>Who should attend?</h2>
+  <p>
+    Anyone interested in open source cross-platform multimedia is encouraged
+    to join us at the GStreamer Conference 2015.
+    Whether you are a hobbyist or a student interested in the field of
+    multimedia, or working for a company using or looking to use GStreamer
+    in their products, this is the perfect event for you to network at and
+    to learn more about the latest technological breakthroughs in and around
+    GStreamer. The talks will target both developers and managers.
+  </p>
+
+  <h2>Registration</h2>
+  <p>
+  Registration will open soon.
+  </p>
+<!--
+  <p>
+  Registration is now open and will stay open until the conference.
+  </p>
+  <p>
+  <b><a href="http://www.regonline.com/gstreamerconference2015">Sign up for the GStreamer Conference here</a></b>
+  </p>
+-->
+  <p>
+  There will be separate registration options for both professionals and for students and hobbyists:
+  </p>
+  <p>
+    <div style="margin-left:5%">
+    <table width="60%" cellpadding="5">
+      <tr><td>Professional</td><td><!--250 USD-->to be determined (until 31 July)</td></tr>
+      <tr><td>Professional</td><td><!--350 USD-->to be determined (from 1 August)</td></tr>
+      <tr><td>Student/hobbyist</td><td><!--100 USD-->to be determined</td></tr>
+    </table>
+    </div>
+  </p>
+  <p>
+    The registration fee includes continental breakfast and lunch at the venue
+    on both conference days.
+  </p>
+  <p>
+    For those uncertain about whether to register as a professional or hobbyist,
+    the general rule is that if your company pays for you or sponsors you, you
+    are a professional, and if you personally pay you are a student or hobbyist.
+    If in doubt drop us a mail or just register as hobbyist. The important
+    thing is that you'll make it to the conference!
+  </p>
+  <p>
+    Speakers who do a longer presentation will receive a discount code, so if
+    you have submitted a talk or plan to submit a talk you may want to wait
+    with registration until a decision has been made as to whether your
+    proposal has been accepted.
+  </p>
+  <p>
+    Sponsors will receive a number of free registrations as part of the
+<!--
+    <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-conference-sponsor-brief-2014.pdf">
+-->
+    sponsorship package<!--</a>-->.
+  </p>
+
+  <h2>Co-hosted conferences</h2>
+  <p>
+    There are a few other events taking place alongside or just before the
+    GStreamer Conference on October 8-9 this year, so if you are making
+    your way to Dublin you might want to consider combining the GStreamer
+    Conference with some of the other events.
+  </p>
+  <p>
+  <table>
+    <tr><td><a href="http://events.linuxfoundation.org/events/embedded-linux-conference-europe">Embedded Linux Conference Europe (ELCE)</a></td><td>October 5-7, 2015</td></tr>
+    <tr><td><a href="http://events.linuxfoundation.org/events/linuxcon-europe">LinuxCon Europe</a></td><td>October 5-7, 2015</td></tr>
+    <tr><td><a href="http://events.linuxfoundation.org/events/cloudopen-europe">CloudOpen Europe</a></td><td>October 5-7, 2015</td></tr>
+  </table>
+  </p>
+<!--
+  <p>
+  Professionals registering for the GStreamer conference will receive a
+  discount code to claim a small discount when registering for ELCE or the
+  Automotive Linux Summit as well.
+  </p>
+-->
+  <h2>City</h2>
+  <p>
+  This year's conference will take place in
+  <a href="http://en.wikipedia.org/wiki/Dublin">Dublin</a>, Ireland.
+  </p><p>
+  <i>Getting there</i>
+  </p><p>
+  Dublin airport (DUB) is Ireland's main airport with good
+  regional and international connections.
+  </p>
+<!-- FIXME
+  <p>
+  <i>Places</i>
+  </p><p>
+  The venue is a bit outside of town, but not too far away, and easily
+  reachable by car, taxi and public transport (see below).
+  </p><p>
+  The <a href="http://www.duesseldorf.de/eng/tourism/discover/altstadt/index.shtml">Altstadt (Old Town)</a>
+  district in the centre is renowned for its bars, restaurants, shops,
+  museums and galleries.
+  </p>
+-->
+
+  <h2>Venue</h2>
+  <p>
+  The conference will take place in
+  <a href="http://www.theccd.ie/view-the-venue/liffey-meeting-room-2">Liffey Meeting Room 2</a>
+  (2a and 2b) at <a href="http://www.theccd.ie/">The Convention Centre Dublin</a>,
+  which is located in Dublin's Docklands district not too far from the city centre.
+  </p>
+<!--
+  <p>
+  The venue is served directly by
+  <a href="http://www.openstreetmap.org/relation/1286330#map=14/51.2429/6.7731">bus route 722</a>
+  which zigzags from the central station (Hauptbahnhof = Düsseldorf Hbf)
+  through parts of the city centre and terminates directly in front of the
+  venue (every 12 mins or so). Bus route 896 connects directly to and from
+  Düsseldorf Airport (every 15 mins between 8.00h-19.30h).
+  </p><p>
+  Underground/metro lines U78/U79 may often provide a faster and more frequent
+  connection to/from the centre and also pass near the venue at stop
+  "Messe Ost/Stockumer Kirchstr.", from which it is a 10-15 minute walk to
+  the venue (ca. 1km, just over half a mile). Alternatively, there are a number
+  of busses (722, 896, and others) which will take you to the venue from there.
+  </p><p>
+  <a href="http://www.ccd.de/global/dbbin/130313_113858_anfahrtsplan_oepnv___032010.pdf">Map (pdf)</a>
+  </p>
+-->
+
+  <h2>Hotels</h2>
+  <p>
+  Hotel details will be available shortly.
+  </p>
+<!--
+  <p>
+  This is just a small selection of hotels which may or may not be suitable.
+  Düsseldorf is an international business centre and tourist destination
+  and as such has many hotels and hostels in all price categories. The below
+  is merely a small selection, you can find more using the usual booking
+  engines. 'Stadtmitte' (city centre) north west of the central station
+  (Düsseldorf Hbf) towards the 'Altstadt' (old town)  might be a convenient
+  area to be in, as it's close to the bars and restaurants of the Altstadt and
+  the U78/U79 metro that will take you to the venue or the centre also passes
+  through there.
+  </p>
+  <h3>Hilton and Radisson Blue Scandinavia</h3>
+  <p>
+  The Linux Foundation has <a href="http://events.linuxfoundation.org/events/linuxcon-europe/attend/hotel-and-travel">negotiated a discounted rate</a>
+  of €149 ($195) and €143 ($188) per night incl. taxes at the
+  Hilton Düsseldorf and the Radisson Blue Scandinavia Düsseldorf. Both are
+  located within easy reach (but not necessarily walking distance) of both
+  the venue and the Altstadt and close to U78/U79 metro stops. GStreamer
+  conference attendees may make use of these rates. Those looking for
+  something more luxurious will find something suitable near the
+  Königsallee ("Kö").
+  </p>
+
+  <h3>City Centre</h3>
+  <p>
+  These hotels are centrally located and at the time of writing had a
+  reaonable number of rooms left, but there are many smaller hotels in
+  the area which may be even better located or provide better value:
+  <ul>
+    <li>Motel One Düsseldorf Hauptbahnhof</li>
+    <li>Mercure Hotel Düsseldorf City Centre</li>
+    <li>ibis Düsseldorf Hauptbahnhof</li>
+    <li>Hotel Prinz Anton</li>
+    <li>Novum Business Hotel Madison Düsseldorf Hauptbahnhof</li>
+  </ul>
+  Keep in mind that there will also be a breakfast buffet at the venue.
+  </p>
+-->
+
+  <h2>Contact</h2>
+  <p>
+  If you have any questions about the GStreamer Conference or are considering
+  <!-- FIXME <a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">-->becoming a sponsor<!--</a>-->,
+  please contact
+    <!-- <a href="mailto:christian.schaller@gmail.com">Christian Schaller</a> or -->
+    <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>.
+  </p>
+
+  <h2>Conference News and Updates</h2>
+  <p>
+    <i>2015-June-12</i>: Date and venue confirmed, talks may be submitted.
+  </p>
+<!--
+  <p>
+    <i>2014-October-13</i>: The social event on Thursday 16 Oct in the evening is now confirmed to be at the <a href="http://www.hausbar-duesseldorf.de/">Hausbar</a> from 19.00-23.00h. Food and drink will be provided.
+  </p>
+  <p>
+    <i>2014-October-08</i>: The GStreamer project is pleased to welcome back <a href="http://www.collabora.com">Collabora</a> as Silver sponsor
+  </p>
+  <p>
+    <i>2014-October-07</i>: the <a href="http://gstreamer.freedesktop.org/conference/2014/schedule.html">conference schedule</a> with full talk abstracts and speaker bios is now available
+  </p>
+  <p>
+    <i>2014-September-02</i>: Hotel details have been added to the conference pages
+  </p>
+  <p>
+    <i>2014-August-02</i>: <a href="http://www.ubicast.eu">UbiCast</a> is welcomed back as special media partner who will <a href="http://gstconf.ubicast.tv/">record the talks</a>
+  </p>
+  <p>
+    <i>2014-July-30</i>: The GStreamer project is delighted to welcome back <a href="http://www.google.com">Google</a> as Silver sponsor
+  </p>
+  <p>
+    <i>2014-July-30</i>: Paper submission is now closed, but Lightning talks (~5 mins) may still be submitted
+  </p>
+  <p>
+    <i>2014-June-30</i>: The call for papers is now open and talk proposals can be submitted
+  </p>
+  <p>
+    <i>2014-June-22</i>: The <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-conference-sponsor-brief-2014.pdf">Sponsor brief</a> is now available
+  </p>
+  <p>
+    <i>2014-June-14</i>: Registration now open
+  </p>
+-->
+
+  <h1>Past GStreamer Conferences</h1>
+  <ul>
+    <li><a href="../2014/index.html">16-17 October 2014 · Congress Centre Düsseldorf · Düsseldorf, Germany</a></li>
+    <li><a href="../2013/index.html">22-23 October 2013 · Edinburgh International Conference Centre · Edinburgh, Scotland, UK</a></li>
+    <li><a href="../2012/index.html">27-28 August 2012 · Sheraton San Diego Hotel &amp; Marina · San Diego, USA</a></li>
+    <li><a href="../2011/index.html">24-25 October 2011 · Clarion Congress Hotel · Prague, Czech Republic</a></li>
+    <li><a href="../2010/index.html">26 October 2010 · University Arms Hotel · Cambridge, UK</a></li>
+  </ul>
+
+</td>
+
+<!-- FIXME
+<td valign="top">
+  <h1>Sponsors</h1>
+  <h2>Silver Sponsors</h2>
+  <p style="padding:10px 0px">
+    <a href="http://www.collabora.com"><img src="sponsor_305x50_collabora_new.png" alt="Collabora" height="50" width="305" /></a>
+  </p>
+  <p style="padding:10px 100px">
+    <a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
+  </p>
+  <p>
+    <a href="http://www.centricular.com"><img src="sponsor_305x50_centricular.png" alt="Centricular" height="50" width="305" /></a>
+  </p>
+-->
+<!--
+  <h2>Press Partners</h2>
+  <p>
+    <a href="http://lwn.net"><img src="lwn.png" alt="Lwn.net" height="61" width="150" /></a>
+  </p>
+  <p>
+    <a href="http://www.phoronix.com/"><img src="phoronix.png" alt="Phoronix.com" height="34" width="150" /></a>
+  </p>
+-->
+<!--
+  <br />
+  <h2>Special Media Partners</h2>
+  <p style="padding:10px 0px">
+    <a href="http://www.ubicast.eu/"><img src="sponsor_150x45_UbiCast.png" alt="Ubi Cast" height="45" width="150" /></a>
+  </p>
+
+  <p>
+    <small>
+    Interested in <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-conference-sponsor-brief-2014.pdf">becoming a sponsor</a> ?
+    </small>
+  </p>
+</td>
+-->
+
+</tr>
+</table>
+
+</body>
+</page>
