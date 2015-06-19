@@ -6635,5 +6635,45 @@ or download tarballs for
         </content>
   </item>
 
-</news>
+  <item>
+      <date>2015-06-19 14:00</date>
+        <title>GStreamer Conference 2015 Announced</title>
+        <content>
+        <p>
+The GStreamer project is happy to announce that this year's GStreamer
+Conference will take place on Thursday/Friday 8-9 October 2015 in Dublin,
+Ireland.
+        </p>
+        <p>
+It will be co-hosted with the Embedded Linux Conference Europe and LinuxCon
+Europe.
+        </p>
+        <p>
+You can (soon) find more details about the conference on the
+<a href="http://gstreamer.freedesktop.org/conference/2015/">GStreamer Conference 2015 web page</a>.
+        </p>
+        <p>
+A call for papers will be sent shortly, and registration will also open
+soon. We will send another mail to gstreamer-announce for both, and
+will send updates there as well.
+        </p>
+        <p>
+Talk slots will be available in varying durations from 20 minutes up to
+45 minutes. Whatever you're doing or planning to do with GStreamer,
+we'd like to hear from you!
+        </p>
+        <p>
+We also plan on having another session with short lightning talks /
+demos / showcase talks for those who just want to show what they've
+been working on or do a mini-talk instead of a full-length talk.
+        </p>
+        <p>
+There will also be a social event again on Thursday evening.
+        </p>
+        <p>
+We hope to see you in Dublin!
+        </p>
+        </content>
+  </item>
 
+</news>
