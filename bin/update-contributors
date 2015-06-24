@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # -*- Mode: Python -*-
 # vi:si:et:sw=4:sts=4:ts=4
 
@@ -26,7 +26,7 @@ def main():
         sys.exit(1)
 
     names = []
-    
+
     lines = codecs.open(changelog, "r", encoding='utf-8', errors='replace').readlines()
     relmatcher = re.compile('^=== release .* ===$')
     if relmatcher.match(lines[0]):
@@ -43,11 +43,11 @@ def main():
             if match:
                 name = match.expand("\\1").rstrip()
                 if name == "":
-                  print "Warning: parsed null name from '%s'" % (line)
+                  print("Warning: parsed null name from '%s'" % (line))
                 if not name in names and name != "":
                     names.append(name)
     names.sort()
-       
+
     # output
     doc = codecs.open(release, "r", encoding='utf-8').read()
     list = []

@@ -127,7 +127,7 @@ then
 fi
 pushd $moduledir > /dev/null 2>&1
 changelog=ChangeLog
-python common/gen-changelog.py > $changelog
+python2 common/gen-changelog.py > $changelog
 git add $changelog
 popd
 
@@ -148,7 +148,7 @@ else
   sub_component=""
 fi
 
-bin/bugzilla $product $version GStreamer $release.xml $sub_component
+python2 bin/bugzilla $product $version GStreamer $release.xml $sub_component
 
 # update releases Makefile.am
 makefileam=src/htdocs/releases/$module/Makefile.am
