@@ -118,13 +118,16 @@ if test -n "$name"; then
 fi
 
 # update Changelog
-echo "Regenerating ChangeLog"
+cd $moduledir
+echo "Regenerating ChangeLog in $PWD"
 # Check CHANGELOG_START tag exists
-if ! GIT_DIR=$moduledir/.git git rev-parse CHANGELOG_START
+if ! git rev-parse CHANGELOG_START
 then
     echo "No CHANGELOG_START tag in module"
     exit 1
 fi
+cd -
+
 pushd $moduledir > /dev/null 2>&1
 changelog=ChangeLog
 python2 common/gen-changelog.py > $changelog
@@ -258,7 +261,7 @@ if [ -d $moduledir/docs ]; then
   read do_commit
   if test "x$do_commit" != "xno"; then
     pushd $moduledir/docs > /dev/null 2>&1
-    make upload > /dev/null 2>&1
+    make upload > "/tmp/gst-make-upload-$module-$version.log" 2>&1
     popd
   fi
 else
