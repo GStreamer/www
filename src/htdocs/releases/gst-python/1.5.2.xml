@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name></name>
+  <version>1.5.2</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce a new development release
+in the 1.5.x stable series of the GstPython PyGObject overrides.
+</p>
+
+  </intro>
+  <features>
+  </features>
+
+  <applications>
+  </applications>
+
+          <contributors>
+	<person>Sebastian Dröge</person>
+	<person>Thibault Saunier</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>738157</id>
+      <summary>Same plugin name used for Python 3 and Python 2 plugins in Python</summary>
+    </bug>
+  </bugs>
+</release>
