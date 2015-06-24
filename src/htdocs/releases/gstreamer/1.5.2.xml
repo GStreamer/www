@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.5.2</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the second release of the unstable
+1.5 release series. The 1.5 release series is adding new features on top of
+the 1.0, 1.2 and 1.4 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.5 release series
+will lead to the stable 1.6 release series in the next weeks, and newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.5 release series.
+</p>
+
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+<p>
+Applications ported to GStreamer 1.0 include Totem, RhythmBox, Sound-Juicer,
+Pitivi, Cheese, Empathy, Transmageddon, and others.
+</p>
+  </applications>
+-->
+
+      <contributors>
+	<person>Alison Chaiken</person>
+	<person>Carlos Rafael Giani</person>
+	<person>Edward Hervey</person>
+	<person>Hyunjun</person>
+	<person>Hyunjun Ko</person>
+	<person>Jan Schmidt</person>
+	<person>Jonas Holmberg</person>
+	<person>Lazar Claudiu</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Matthew Waters</person>
+	<person>Nicolas Dufresne</person>
+	<person>Sebastian Dröge</person>
+	<person>Song Bing</person>
+	<person>Stefan Sauer</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Руслан Ижбулатов</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>740502</id>
+      <summary>Add absolute property to GstDirectControlBinding</summary>
+    </bug>
+    <bug>
+      <id>740575</id>
+      <summary>Fixing DTS in GStreamer</summary>
+    </bug>
+    <bug>
+      <id>745366</id>
+      <summary>concat: Forward FLUSH_START / FLUSH_STOP events</summary>
+    </bug>
+    <bug>
+      <id>746949</id>
+      <summary>concat: Add active-pad property</summary>
+    </bug>
+    <bug>
+      <id>750027</id>
+      <summary>concat: Reset internal start offset to 0 after flushing seek</summary>
+    </bug>
+    <bug>
+      <id>750033</id>
+      <summary>basetransform - allow collation/separation of buffers</summary>
+    </bug>
+    <bug>
+      <id>750039</id>
+      <summary>Keeping buffers with shared memory alive</summary>
+    </bug>
+    <bug>
+      <id>750319</id>
+      <summary>memory: subclasses don't know map flags in unmap</summary>
+    </bug>
+    <bug>
+      <id>750530</id>
+      <summary>ptp: FreeBSD, DragonFly and other BSDs don't have ifreq.ifw_hwaddr</summary>
+    </bug>
+    <bug>
+      <id>750574</id>
+      <summary>netclientclock: Make the clock a wrapper clock around an internal clock</summary>
+    </bug>
+    <bug>
+      <id>750761</id>
+      <summary>inputselector: Handle different duration track selection</summary>
+    </bug>
+    <bug>
+      <id>750782</id>
+      <summary>pipeline: Add gst_pipeline_set_latency(), getter and GObject property</summary>
+    </bug>
+    <bug>
+      <id>751026</id>
+      <summary>basesink: Properly handle buffer lists for the last-sample property</summary>
+    </bug>
+    <bug>
+      <id>751047</id>
+      <summary>concat: Add adjust-base property</summary>
+    </bug>
+    <bug>
+      <id>751107</id>
+      <summary>concat: when releasing pad, send EOS appropriately.</summary>
+    </bug>
+    <bug>
+      <id>751235</id>
+      <summary>utils: get_compatible_pad does not fully respect filter caps</summary>
+    </bug>
+    <bug>
+      <id>751420</id>
+      <summary>basesink: need to deep-copy last buffer list in drain</summary>
+    </bug>
+  </bugs>
+</release>
