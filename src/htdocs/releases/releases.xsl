@@ -171,10 +171,21 @@ You can find source releases of <xsl:copy-of select="module" /> in the
 </p>
 <p>
 The git repository and details how to clone it can be found at
-<xsl:call-template name="hyperlink">
-  <xsl:with-param name="href">http://cgit.freedesktop.org/gstreamer/<xsl:value-of select="module" />/</xsl:with-param>
-  <xsl:with-param name="text">git.freedesktop.org</xsl:with-param>
-</xsl:call-template>.
+ <xsl:choose>
+  <xsl:when test="module = 'gst-validate'">
+    <xsl:call-template name="hyperlink">
+      <xsl:with-param name="href">http://cgit.freedesktop.org/gstreamer/gst-devtools/</xsl:with-param>
+      <xsl:with-param name="text">git.freedesktop.org</xsl:with-param>
+    </xsl:call-template>
+  </xsl:when>
+  <xsl:otherwise>
+    <xsl:call-template name="hyperlink">
+      <xsl:with-param name="href">http://cgit.freedesktop.org/gstreamer/<xsl:value-of select="module" />/</xsl:with-param>
+      <xsl:with-param name="text">git.freedesktop.org</xsl:with-param>
+    </xsl:call-template>
+  </xsl:otherwise>
+ </xsl:choose>
+.
 </p>
 
 
@@ -203,10 +214,21 @@ There is also a #gstreamer IRC channel on the Freenode IRC network.
 
 <p>
 Git is hosted on git.freedesktop.org.  You can
-<xsl:call-template name="hyperlink">
-  <xsl:with-param name="href">&gst-repo-http;<xsl:value-of select="module" />/</xsl:with-param>
-  <xsl:with-param name="text">browse the <xsl:value-of select="module" /> repository</xsl:with-param>
-</xsl:call-template>.
+ <xsl:choose>
+  <xsl:when test="module = 'gst-validate'">
+    <xsl:call-template name="hyperlink">
+    <xsl:with-param name="href">&gst-repo-http;gst-devtools/</xsl:with-param>
+    <xsl:with-param name="text">browse the gst-devtools repository (where gst-validate lives).</xsl:with-param>
+    </xsl:call-template>.
+  </xsl:when>
+  <xsl:otherwise>
+    <xsl:call-template name="hyperlink">
+    <xsl:with-param name="href">&gst-repo-http;<xsl:value-of select="module" />/</xsl:with-param>
+    <xsl:with-param name="text">browse the <xsl:value-of select="module" /> repository</xsl:with-param>
+    </xsl:call-template>.
+  </xsl:otherwise>
+ </xsl:choose>
+
 </p>
 <p>
 All code is in Git and can be checked out from there.
