@@ -67,11 +67,9 @@
   <p>
   The call for papers is now open and talk proposals can be submitted.
   </p>
-<!-- FIXME
   <p>
-  The deadline for talk proposals is Wednesday 23 July 2014.
+  <b>The deadline for talk proposals is Sunday 9 August 2015.</b>
   </p>
--->
   <p>
   The initial submission needs to be only a couple of sentences or paragraphs
   describing the talk you want to give and the desired length of your talk
@@ -101,7 +99,8 @@
   </p>
   <p>
     Simply send a quick mail to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- -->@<!-- -->lists.freedesktop.org</a> above to reserve your slot (subject to availability).
-    <!-- Lightning Talk submissions are still accepted. -->
+    There is no deadline for Lightning Talk submissions, slots will be
+    allocated on a first-come first-serve basis.
   </p>
 
   <h2>Social Event</h2>
@@ -209,25 +208,21 @@
 
   <h2>Registration</h2>
   <p>
-  Registration will open soon.
-  </p>
-<!--
-  <p>
   Registration is now open and will stay open until the conference.
   </p>
   <p>
-  <b><a href="http://www.regonline.com/gstreamerconference2015">Sign up for the GStreamer Conference here</a></b>
+  <b><a href="http://www.regonline.com/gstreamereu">Sign up for the GStreamer Conference here</a></b>
   </p>
--->
+
   <p>
   There will be separate registration options for both professionals and for students and hobbyists:
   </p>
   <p>
     <div style="margin-left:5%">
     <table width="60%" cellpadding="5">
-      <tr><td>Professional</td><td><!--250 USD-->to be determined (until 31 July)</td></tr>
-      <tr><td>Professional</td><td><!--350 USD-->to be determined (from 1 August)</td></tr>
-      <tr><td>Student/hobbyist</td><td><!--100 USD-->to be determined</td></tr>
+      <tr><td>Professional</td><td>275 USD incl. lunch (until 31 July)</td></tr>
+      <tr><td>Professional</td><td>385 USD incl. lunch (from 1 August)</td></tr>
+      <tr><td>Student/hobbyist</td><td>100 USD incl. lunch</td></tr>
     </table>
     </div>
   </p>
