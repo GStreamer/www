@@ -114,23 +114,6 @@ the Libav library code.  It contains many popular decoders and encoders.
   </module>
 
   <module>
-    <id>gnonlin</id>
-    <title>GNonLin plug-in</title>
-    <blurb>Non-linear editing elements</blurb>
-    <description>
-GNonLin contains a set of plug-ins for GStreamer to ease the
-creation of multimedia editors, or any other application where a
-timeline-oriented use of GStreamer makes sense.
-    </description>
-    <maintainer>GStreamer Team</maintainer>
-    <versions>
-      <stable>&gnonlin-version-stable;</stable>
-      <devel>git master</devel>
-    </versions>
-    <status>active, but deprecated (replacement is being worked on as part of gst-editing-services)</status>
-  </module>
-
-  <module>
     <id>gst-python</id>
     <blurb>python bindings</blurb>
     <title>GStreamer Python Bindings Supplement</title>
@@ -173,41 +156,6 @@ RTSP server library based on GStreamer
       <devel>&gst-rtsp-server-version-devel;</devel>
     </versions>
     <status>active</status>
-  </module>
-
-  <module>
-    <id>gst-streaming-server</id>
-    <blurb>Streaming server</blurb>
-    <title>GStreamer Streaming Server</title>
-    <description>
-Streaming server based on GStreamer
-    </description>
-    <maintainer>David Schleef</maintainer>
-    <versions>
-      <stable>&gst-streaming-server-version-stable;</stable>
-      <devel>&gst-streaming-server-version-devel;</devel>
-    </versions>
-    <status>active</status>
-  </module>
-
-  <module>
-    <id>qt-gstreamer</id>
-    <blurb>QtGStreamer</blurb>
-    <title>Qt bindings</title>
-    <description>
-    QtGStreamer is a set of libraries providing C++ bindings for GStreamer
-    with a Qt-style API, plus some helper classes and elements for
-    integrating GStreamer better in Qt applications. The goal of this module is to allow
-    easy use of GStreamer for applications targetting MeeGo Mobile or the KDE desktop.
-    More information can be found on the <a href="http://gstreamer.freedesktop.org/wiki/QtGStreamer">QtGStreamer 
-    wiki page</a>
-    </description>
-    <maintainer>George Kiagiadakis</maintainer>
-    <versions>
-      <stable>&qt-gstreamer-version-stable;</stable>
-      <devel>&qt-gstreamer-version-devel;</devel>
-    </versions>
-    <status>active-ish</status>
   </module>
 
   <module>
@@ -255,6 +203,58 @@ language-like programs that operate on arrays of data.
       <devel>&orc-version-devel;</devel>
     </versions>
     <status>active</status>
+  </module>
+
+  <module>
+    <id>qt-gstreamer</id>
+    <blurb>QtGStreamer</blurb>
+    <title>Qt bindings</title>
+    <description>
+    QtGStreamer is a set of libraries providing C++ bindings for GStreamer
+    with a Qt-style API, plus some helper classes and elements for
+    integrating GStreamer better in Qt applications. The goal of this module is to allow
+    easy use of GStreamer for applications targetting MeeGo Mobile or the KDE desktop.
+    More information can be found on the <a href="http://gstreamer.freedesktop.org/wiki/QtGStreamer">QtGStreamer 
+    wiki page</a>
+    </description>
+    <maintainer>George Kiagiadakis</maintainer>
+    <versions>
+      <stable>&qt-gstreamer-version-stable;</stable>
+      <devel>&qt-gstreamer-version-devel;</devel>
+    </versions>
+    <status>not actively maintained</status>
+  </module>
+
+  <module>
+    <id>gst-streaming-server</id>
+    <blurb>Streaming server</blurb>
+    <title>GStreamer Streaming Server</title>
+    <description>
+Streaming server based on GStreamer
+    </description>
+    <maintainer>David Schleef</maintainer>
+    <versions>
+      <stable>&gst-streaming-server-version-stable;</stable>
+      <devel>&gst-streaming-server-version-devel;</devel>
+    </versions>
+    <status>not actively maintained</status>
+  </module>
+
+  <module>
+    <id>gnonlin</id>
+    <title>GNonLin plug-in</title>
+    <blurb>Non-linear editing elements</blurb>
+    <description>
+GNonLin contains a set of plug-ins for GStreamer to ease the
+creation of multimedia editors, or any other application where a
+timeline-oriented use of GStreamer makes sense.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <stable>&gnonlin-version-stable;</stable>
+      <devel>git master</devel>
+    </versions>
+    <status>deprecated (replacement is being worked on as part of gst-editing-services)</status>
   </module>
 
 </modules>
