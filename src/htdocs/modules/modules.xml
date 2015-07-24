@@ -206,6 +206,22 @@ language-like programs that operate on arrays of data.
   </module>
 
   <module>
+    <id>cerbero</id>
+    <blurb>Cerbero build system for Windows, OS/X, Android and iOS</blurb>
+    <title>Cerbero cross-platform build system</title>
+    <description>
+Build system to build GStreamer and all dependencies from source and
+create binary packages for Windows, Android, OS/X and iOS
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <stable>&gstreamer-version-stable;</stable>
+      <devel>&gstreamer-version-devel;</devel>
+    </versions>
+    <status>active</status>
+  </module>
+
+  <module>
     <id>qt-gstreamer</id>
     <blurb>QtGStreamer</blurb>
     <title>Qt bindings</title>
