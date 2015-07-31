@@ -244,11 +244,9 @@
     proposal has been accepted.
   </p>
   <p>
-    Sponsors will receive a number of free registrations as part of the
-<!--
-    <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-conference-sponsor-brief-2014.pdf">
--->
-    sponsorship package<!--</a>-->.
+    Sponsors will receive a number of free registrations as part of their
+    <a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">
+    sponsorship package</a>.
   </p>
 
   <h2>Co-hosted conferences</h2>
@@ -272,6 +270,14 @@
   Automotive Linux Summit as well.
   </p>
 -->
+  <h2>Sponsors</h2>
+  <p>
+  The GStreamer Conference 2015 is only possible thanks to the financial support
+  from our sponsors. If your company would like to become a sponsor please
+  refer to our <a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">sponsorship information</a>
+  package.
+  </p>
+
   <h2>City</h2>
   <p>
   This year's conference will take place in
@@ -368,13 +374,16 @@
   <h2>Contact</h2>
   <p>
   If you have any questions about the GStreamer Conference or are considering
-  <!-- FIXME <a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">-->becoming a sponsor<!--</a>-->,
+  <a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">becoming a sponsor</a>,
   please contact
     <!-- <a href="mailto:christian.schaller@gmail.com">Christian Schaller</a> or -->
     <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>.
   </p>
 
   <h2>Conference News and Updates</h2>
+  <p>
+    <i>2015-July-31</i>: Sponsorship brief available
+  </p>
   <p>
     <i>2015-July-17</i>: Registration is open
   </p>
