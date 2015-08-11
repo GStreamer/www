@@ -120,7 +120,10 @@
 
   <h2>Schedule and speakers list</h2>
   <p>
-  This will be published at a later time.
+    <b>Talks:</b>
+    <ul>
+    <li><i>The full schedule of talks will be published in the second half of August</i></li>
+    </ul>
   </p>
 <!--
   <p>
@@ -160,29 +163,16 @@
   </p>
 -->
   <p>
-    Lightning Talks:
+    <b>Lightning Talks:</b>
     <ul>
-    <li><i>Submit your lightning talk now!</i></li>
-<!--
-    <li>Time synchronization in multipoint audio streaming using GStreamer in 3DAudioSense system <small><i> · Tomasz Żernicki, Zylia</i></small></li>
-    <li>Testing Video4Linux Applications and Drivers <small><i> · Hans Verkuil, Cisco</i></small><br />
-        <small>(the long version of this talk can be seen on Tuesday October 14 at 11:15am as part of ELCE)</small></li>
-    <li>Automatic audio-video synchronisation measurement using GStreamer and OpenCV <small><i> · Florent Thiery, UbiCast</i></small></li>
-    <li>Pexcision - Real-time media-detection testing-framework <small><i> · Pexip</i></small></li>
-    <li>Using GStreamer to set up Raspberry Pi as a surveillance camera <small><i> · Vivia Nikolaidou</i></small></li>
-    <li>Low Power Audio pipeline with PulseAudio <small><i> · Manohar Babu K, LG Electronics</i></small></li>
-    <li>Dynamic switching of music playback on hardware/software pipelines for Low power Audio <small><i> · Biju Malayil, LG Electronics</i></small></li>
-    <li>The Linux DVB libdvbv5 library for digital TV applications<small><i> · Mauro Carvalho Chehab, Samsung</i></small></li>
-    <li>gnonlin? it's dead, jim (a new design for dynamic pipelines) <small><i> · Mathieu Duponchelle</i></small></li>
-    <li>Reducing the loading time with playbin <small><i> · Hyejin Choi, LG CNS</i></small></li>
-    <li>Secure RTP <small><i> · Wim Taymans, RedHat</i></small></li>
-    <li>Zero-copy inter-process video with FD passing <small><i> · William Manley, stb-tester.com</i></small></li>
-    <li>Special Interest Groups? <small><i> · Edward Hervey</i></small></li>
-    <li>RTMP - Challenges with testing and interop <small><i> · Håvard Graff, Pexip</i></small></li>
--->
-    <!--<li>GStreamer streamiddemux element <small><i> · HoonHee Lee, LG Electronics</i></small></li>-->
-    <!--<li>Stream IDs and how they're used in Transmageddon <small><i> · Christian Schaller, RedHat</i></small></li> -->
-    <!--<li>Time based seek and trick play features in GStreamer <small><i> · Ramesh Venkatachalapathy, LG Electronics</i></small></li> -->
+    <li>Hyperspectral imagery <small><i> · Dimitrios Katsaros, QTechnology</i></small></li>
+    <li>Industrial application pipelines <small><i> · Dimitrios Katsaros, QTechnology</i></small></li>
+    <li>gst-gtklaunch-1.0 <small><i> · Florent Thiery, Ubicast</i></small></li>
+    <li>liborc (JIT SIMD generator) experiments <small><i> · Wim Taymans, RedHat</i></small></li>
+    <li>V4L2 GStreamer elements update <small><i> · Nicolas Dufresne, Collabora</i></small></li>
+    <li>Analyzing caps negotiation with GstTracer <small><i> · Thiago Sousa Santos, Samsung</i></small></li>
+    <li>...</li>
+    <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
   </p>
 <!--
