@@ -175,6 +175,13 @@
     <li>liborc (JIT SIMD generator) experiments <small><i> · Wim Taymans, RedHat</i></small></li>
     <li>V4L2 GStreamer elements update <small><i> · Nicolas Dufresne, Collabora</i></small></li>
     <li>Analyzing caps negotiation with GstTracer <small><i> · Thiago Sousa Santos, Samsung</i></small></li>
+    <li>Know your queues! queue, queue2, multiqueue, netbuffer and all that <small><i> · Tim-Philipp Müller</i></small></li>
+    <li>Nle: A new design for the GStreamer Non Linear Engine <small><i> · Thiago Sousa Santos, Samsung</i></small></li>
+    <li>What is new in GstValidate <small><i> · Thibault Saunier</i></small></li>
+    <li>Continuous Integration update <small><i> · Edward Hervey</i></small></li>
+    <li>Remote GStreamer Debugger <small><i> · Marcin Kolny</i></small></li>
+    <li>gstreamermm C++ wrapper <small><i> · Marcin Kolny</i></small></li>
+    <li>Multipath RTP (MPRTP) plugin in GStreamer <small><i> · Balázs Kreith</i></small></li>
     <li>...</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
