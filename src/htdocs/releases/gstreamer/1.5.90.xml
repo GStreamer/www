@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.5.90</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release candidate for the
+stable 1.6 release series. The 1.6 release series is adding new features on top of
+the 1.0, 1.2 and 1.4 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The final 1.6.0 release is planned
+in the next few days unless any major bugs are found.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately by
+the GStreamer project.
+</p>
+
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+          <contributors>
+	<person>Arnaud Vrac</person>
+	<person>Arun Raghavan</person>
+	<person>Edward Hervey</person>
+	<person>Eunhae Choi</person>
+	<person>George Kiagiadakis</person>
+	<person>Havard Graff</person>
+	<person>Hyunjun Ko</person>
+	<person>Jan Schmidt</person>
+	<person>Justin Joy</person>
+	<person>Luis de Bethencourt</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Miguel París Díaz</person>
+	<person>Nicolas Dufresne</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Olivier Crête</person>
+	<person>Philippe Normand</person>
+	<person>Prashant Gotarne</person>
+	<person>Sebastian Dröge</person>
+	<person>Song Bing</person>
+	<person>Stefan Sauer</person>
+	<person>Stian Selnes</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vineeth T M</person>
+	<person>Vineeth TM</person>
+	<person>Vivia Nikolaidou</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  <bugs>
+    <bug>
+      <id>746385</id>
+      <summary>task: add function guards for gst_task_set_lock()</summary>
+    </bug>
+    <bug>
+      <id>746431</id>
+      <summary>gsttask: function gst_task_join should do the argument verification before accessing GstTaskPrivate</summary>
+    </bug>
+    <bug>
+      <id>746439</id>
+      <summary>task: guard against NULL task function in  gst_task_new()</summary>
+    </bug>
+    <bug>
+      <id>748643</id>
+      <summary>gstpad: Add a new GST_PROBE_HANDLED return value for probes</summary>
+    </bug>
+    <bug>
+      <id>749590</id>
+      <summary>protection_meta: implement transform function</summary>
+    </bug>
+    <bug>
+      <id>750149</id>
+      <summary>queuearray: allow storing of structs in addition to pointers (for GQueue optimisation)</summary>
+    </bug>
+    <bug>
+      <id>750783</id>
+      <summary>baseparse: reverse playback in pull mode</summary>
+    </bug>
+    <bug>
+      <id>751622</id>
+      <summary>test_ABI: failed ABI check</summary>
+    </bug>
+    <bug>
+      <id>751628</id>
+      <summary>tests: caps: test_intersect_flagset failure</summary>
+    </bug>
+    <bug>
+      <id>751712</id>
+      <summary>buffer: gst_buffer_copy_into() should probably not copy GST_META_FLAG_POOLED metadata</summary>
+    </bug>
+    <bug>
+      <id>751819</id>
+      <summary>basesink: Shouldn't drop buffer when sync=false</summary>
+    </bug>
+    <bug>
+      <id>751840</id>
+      <summary>inputselector: unnecessary check is always true</summary>
+    </bug>
+    <bug>
+      <id>751881</id>
+      <summary>memory: Add missing field initializers to GstMapInfo</summary>
+    </bug>
+    <bug>
+      <id>751916</id>
+      <summary>Add GstHarness test framework</summary>
+    </bug>
+    <bug>
+      <id>752055</id>
+      <summary>identity: invalid read when unscheduling a gst_clock_id_wait</summary>
+    </bug>
+    <bug>
+      <id>752092</id>
+      <summary>baseparse: Passes bogus buffer durations to subclass</summary>
+    </bug>
+    <bug>
+      <id>752116</id>
+      <summary>adapter: failure of gst_adapter_get_(buffer_)list</summary>
+    </bug>
+    <bug>
+      <id>752123</id>
+      <summary>harness: don't run code inside g_assert()</summary>
+    </bug>
+    <bug>
+      <id>752493</id>
+      <summary>harness: Improve detection of element type</summary>
+    </bug>
+    <bug>
+      <id>752494</id>
+      <summary>harness: Forward sticky events to sink harness</summary>
+    </bug>
+    <bug>
+      <id>752498</id>
+      <summary>GstHarness improvements</summary>
+    </bug>
+    <bug>
+      <id>752623</id>
+      <summary>concat: Test pipeline with uridecodebin and concat freezes sometimes when setting pipeline to state NULL</summary>
+    </bug>
+    <bug>
+      <id>752662</id>
+      <summary>registry: Add plugins to the registry we are loading and not default one</summary>
+    </bug>
+    <bug>
+      <id>752746</id>
+      <summary>harness: allow full control over event forwarding</summary>
+    </bug>
+    <bug>
+      <id>752800</id>
+      <summary>basetransform: may return not-negotiation on shutdown</summary>
+    </bug>
+    <bug>
+      <id>753011</id>
+      <summary>queue2: can not update upstream_size with valid data</summary>
+    </bug>
+    <bug>
+      <id>753151</id>
+      <summary>gstpad: fix invalid object unref</summary>
+    </bug>
+    <bug>
+      <id>753338</id>
+      <summary>value: free caps during failure</summary>
+    </bug>
+    <bug>
+      <id>753455</id>
+      <summary>datetime: allow passing just a time to gst_date_time_new_from_iso8601_string() and default to &quot; today &quot; as date then</summary>
+    </bug>
+    <bug>
+      <id>753538</id>
+      <summary>basetransform: remove unreachable return statement</summary>
+    </bug>
+    <bug>
+      <id>753623</id>
+      <summary>pad: implement default handling of accept-caps using the template caps</summary>
+    </bug>
+  </bugs>
+</release>
