@@ -5,6 +5,7 @@ built_pages = index.html schedule.html speakers.html
 #sponsor_150x78_collabora_new.png
 #lwn.png
 images = \
+	sponsor_ubicast_640x195.png \
 	sponsor_ubicast_821x240.png \
 	sponsor_centricular_753x125.png \
 	sponsor_google_538x190.png
