@@ -58,12 +58,15 @@
   </p>
 
   <h2>Call for Papers</h2>
-<!--
   <p>
   The call for papers is now closed and talk proposals can no longer be
-  submitted. Lightning talks may still be proposed though.
+  submitted. Speakers will be notified whether their talk has been accepted
+  shortly.
   </p>
--->
+  <p>
+  Lightning talks may still be proposed.
+  </p>
+<!--
   <p>
   The call for papers is now open and talk proposals can be submitted.
   </p>
@@ -88,6 +91,7 @@
   <p>
   Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference at lists.freedesktop.org</a>.
   </p>
+-->
 
   <h2>Showcase or Lightning Talks</h2>
   <p>
