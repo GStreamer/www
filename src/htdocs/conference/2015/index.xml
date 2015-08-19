@@ -372,6 +372,12 @@
 
   <h2>Conference News and Updates</h2>
   <p>
+    <i>2015-August-05</i>: The GStreamer project is delighted to welcome back <b><a href="http://www.google.com">Google</a></b> as Silver sponsor
+  </p>
+  <p>
+    <i>2015-August-01</i>: <b><a href="http://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="http://gstconf.ubicast.tv">record talks and lightning talks</a>
+  </p>
+  <p>
     <i>2015-July-31</i>: Sponsorship brief available
   </p>
   <p>
@@ -430,20 +436,20 @@
 
 </td>
 
-<!-- FIXME
-<td valign="top">
+<td valign="top" style="padding:0px 50px">
   <h1>Sponsors</h1>
   <h2>Silver Sponsors</h2>
+<!--
   <p style="padding:10px 0px">
     <a href="http://www.collabora.com"><img src="sponsor_305x50_collabora_new.png" alt="Collabora" height="50" width="305" /></a>
   </p>
-  <p style="padding:10px 100px">
-    <a href="http://www.google.com"><img src="sponsor_150x50_google.png" alt="Google" height="50" width="150" /></a>
+-->
+  <p style="padding:10px 0px">
+    <a href="http://www.google.com"><img src="sponsor_google_538x190.png" alt="Google" height="75" width="225" /></a>
   </p>
   <p>
-    <a href="http://www.centricular.com"><img src="sponsor_305x50_centricular.png" alt="Centricular" height="50" width="305" /></a>
+    <a href="http://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
   </p>
--->
 <!--
   <h2>Press Partners</h2>
   <p>
@@ -453,20 +459,18 @@
     <a href="http://www.phoronix.com/"><img src="phoronix.png" alt="Phoronix.com" height="34" width="150" /></a>
   </p>
 -->
-<!--
   <br />
   <h2>Special Media Partners</h2>
   <p style="padding:10px 0px">
-    <a href="http://www.ubicast.eu/"><img src="sponsor_150x45_UbiCast.png" alt="Ubi Cast" height="45" width="150" /></a>
+    <a href="http://www.ubicast.eu/"><img src="sponsor_ubicast_821x240.png" alt="UbiCast" height="75" width="257" /></a>
   </p>
 
   <p>
     <small>
-    Interested in <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-conference-sponsor-brief-2014.pdf">becoming a sponsor</a> ?
+    Interested in <a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">becoming a sponsor</a> ?
     </small>
   </p>
 </td>
--->
 
 </tr>
 </table>
