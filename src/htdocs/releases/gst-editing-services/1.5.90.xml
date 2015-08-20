@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version>1.5.90</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release candidate for the
+stable 1.6 release series. The 1.6 release series is adding new features on top of
+the 1.0, 1.2 and 1.4 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer Editing Services. The final 1.6.0 release is planned
+in the next few days unless any major bugs are found.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately by
+the GStreamer project.
+</p>
+
+  </intro>
+  <features>
+  </features>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Sauer</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>751510</id>
+      <summary>gst-library-error-quark: Failed to encode frame when rendering to webm</summary>
+    </bug>
+    <bug>
+      <id>752300</id>
+      <summary>After updating GES from 1.5.2 to Master complex timelines makes whole app to hang</summary>
+    </bug>
+  </bugs>
+</release>
