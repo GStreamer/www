@@ -6819,4 +6819,19 @@ or download tarballs for
         </content>
   </item>
 
+    <item>
+      <date>2015-08-21 11:23</date>
+        <title>GstValidate and GStreamer Editing Services 1.6.0 release candidate (1.5.90)</title>
+        <content>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gst-validate/1.5.90.html">GStreamer core</a>,
+<a href="&site;/releases/gst-editing-services/1.5.90.html">gst-plugins-base</a>,
+or download tarballs for
+<a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.5.90.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-validate/gst-validate-1.5.90.tar.xz">gst-validate</a>
+        </p>
+        </content>
+  </item>
+
 </news>
