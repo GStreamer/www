@@ -182,6 +182,7 @@
     <li>Remote GStreamer Debugger <small><i> · Marcin Kolny</i></small></li>
     <li>gstreamermm C++ wrapper <small><i> · Marcin Kolny</i></small></li>
     <li>Multipath RTP (MPRTP) plugin in GStreamer <small><i> · Balázs Kreith</i></small></li>
+    <li>OpenCV and GStreamer <small><i> · Vanessa Chipi</i></small></li>
     <li>...</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
