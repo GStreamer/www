@@ -6833,5 +6833,15 @@ or download tarballs for
         </p>
         </content>
   </item>
-
+    <item>
+      <date>2015-08-30 00:00</date>
+        <title>New OS X build (1.5.90.1)</title>
+        <content>
+    <p>
+      New builds of the 1.5.90 release candidate packages for OS X have been uploaded. This build fixes
+      a problem that made the first build unusuable, but contains no source changes. The new binaries can be
+      found <a href="&site;/pkg/osx/1.5.90.1">here</a>
+    </p>
+     </content>
+     </item>
 </news>
