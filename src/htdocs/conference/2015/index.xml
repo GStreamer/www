@@ -42,6 +42,9 @@
   The event will be held on Thursday and Friday <b>8-9 October 2015</b> at
   the Convention Centre Dublin (CCD) in <b>Dublin, Ireland</b>.
   </p>
+  <p>
+  <b><a href="http://www.regonline.com/gstreamereu">Register here for the GStreamer Conference</a></b>
+  </p>
 
 <!--
   <h2>Schedule</h2>
@@ -57,16 +60,8 @@
   GStreamer multimedia framework or Open Source and cross-platform multimedia.
   </p>
 
-  <h2>Call for Papers</h2>
-  <p>
-  The call for papers is now closed and talk proposals can no longer be
-  submitted. Speakers will be notified whether their talk has been accepted
-  shortly.
-  </p>
-  <p>
-  Lightning talks may still be proposed.
-  </p>
 <!--
+  <h2>Call for Papers</h2>
   <p>
   The call for papers is now open and talk proposals can be submitted.
   </p>
@@ -134,7 +129,7 @@
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
     <ul>
-    <li>Interactive video playback and capture in Processing via GStreamer <small><i> · Andres Colubri</i></small></li>
+    <li>Interactive video playback and capture in the Processing Language via GStreamer <small><i> · Andres Colubri</i></small></li>
     <li>Distributed transcoding with GStreamer <small><i> · Thiago Sousa Santos, Samsung</i></small></li>
     <li>Tiled Streaming of UHD video in real-time <small><i> · Arjen Veenhuizen, TNO</i></small></li>
     <li>GStreamer and WebKit <small><i> · Philippe Normand, Igalia</i></small></li>
@@ -173,7 +168,7 @@
     <ul>
     <li>Hyperspectral imagery <small><i> · Dimitrios Katsaros, QTechnology</i></small></li>
     <li>Industrial application pipelines <small><i> · Dimitrios Katsaros, QTechnology</i></small></li>
-    <li>gst-gtklaunch-1.0 <small><i> · Florent Thiery, Ubicast</i></small></li>
+    <li>gst-gtk-launch-1.0 <small><i> · Florent Thiery, Ubicast</i></small></li>
     <li>liborc (JIT SIMD generator) experiments <small><i> · Wim Taymans, RedHat</i></small></li>
     <li>V4L2 GStreamer elements update <small><i> · Nicolas Dufresne, Collabora</i></small></li>
     <li>Analyzing caps negotiation with GstTracer <small><i> · Thiago Sousa Santos, Samsung</i></small></li>
@@ -251,6 +246,16 @@
     Sponsors will receive a number of free registrations as part of their
     <a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">
     sponsorship package</a>.
+  </p>
+
+  <h2>Call for Papers</h2>
+  <p>
+  The call for papers is now closed and talk proposals can no longer be
+  submitted. Anyone who has submitted a talk proposal should have received
+  an e-mail letting them know whether their proposal has been accepted.
+  </p>
+  <p>
+  Lightning talks may still be proposed.
   </p>
 
   <h2>Co-hosted conferences</h2>
