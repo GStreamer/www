@@ -18,7 +18,7 @@ touch $LOCK
 cd $BUILDDIR
 umask 0002
 
-python src/planet.py $CONFDIR/config.ini
+timeout -k 15m 15m python src/planet.py $CONFDIR/config.ini
 chown -R :gstreamer * 2> /dev/null
 chmod -R g+w * 2> /dev/null
 rsync -a output/ $LIVEDIR/ 2>&1 | egrep -v '(failed to set times|some files could not|some files/attrs were not)'
