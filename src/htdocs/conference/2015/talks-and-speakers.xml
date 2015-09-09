@@ -839,7 +839,15 @@ the ongoing work in order to update the bindings and video library in
 Processing  to use GStreamer 1.x. 
 </p>
 <p><i>
-<!-- FIXME -->
+<a href="http://andrescolubri.net/">Andres</a> is a researcher working on data
+visualization and interactive graphics. He is an active contributor to the
+Processing project, a language and programming environment for computational
+arts and design, and the Java bindings for the GStreamer multimedia framework.
+He is the main developer of the OpenGL renderer and the GStreamer-based video
+library in Processing 2 and 3. He originally studied Physics and Mathematics
+in Argentina and later on did an MFA at the UCLA Design Media Arts program.
+He uses Processing as the main tool to bridge his interests in computer
+graphics, visualization, and statistical modeling.
 </i></p>
 </td></tr>
 
