@@ -181,6 +181,7 @@
     <li>Multipath RTP (MPRTP) plugin in GStreamer <small><i> · Balázs Kreith</i></small></li>
     <li>OpenCV and GStreamer <small><i> · Vanessa Chipi</i></small></li>
     <li>Handling Interleaved and Non-Interleaved streams with GStreamer <small><i> · Ramesh Venkatachalapathy, LGE</i></small></li>
+    <li>Done in 6.0 seconds: a new build system for GStreamer? <small><i> · Jussi Pakkanen</i></small></li>
     <li>...</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
