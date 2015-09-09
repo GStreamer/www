@@ -219,7 +219,7 @@ computer vision, augmented reality, transcoding, mixing and much more.
 </td></tr>
 
 <tr valign="top"><td>
-<a name="paris-diaz-webrtc-kurento-webrtcendpoint" id="paris-diaz-webrtc-kurento-webrtcendpoint"></a>
+<a name="paris-diaz-large-pipeline-perf" id="paris-diaz-large-pipeline-perf"></a>
 <p><b>
 Improving GStreamer performance on large pipelines: from profiling to optimization, Miguel París Díaz, Kurento
 </b></p>
@@ -529,7 +529,7 @@ designed capture and webcast interactive videos, like the
 </td></tr>
 
 <tr valign="top"><td>
-<a name="" id=""></a>
+<a name="nikolaidou-bins" id="nikolaidou-bins"></a>
 <p><b>
 Bin It! AKA, How to use bins and bin subclasses to keep state local and easily manage dynamic pipelines, Vivia Nikolaidou, ToolsOnAir
 </b></p>
@@ -894,9 +894,9 @@ help with having predictable behaviour and drop all 0.10-ism that
 still remain in decodebin2.
 </p><p>
 The new design will allow reducing cpu/memory usage by only using the
-decoders actually needed, re-use decoders for mpeg-ts stream switching
-use-cases, better dealing with adaptive streaming use-cases,
-stream-switching, ...
+decoders actually needed, re-use decoders when switching streams
+(where possible), and better deal with adaptive streaming and dynamic
+MPEG-TS use-cases in general, amongst other things.
 </p>
 <p><i>
 Edward Hervey has been contributing for over 12 years to GStreamer,
@@ -907,6 +907,20 @@ doing various freelancing, Edward Hervey is currently a part-time
 consultant for Centricular.
 </i></p>
 </td></tr>
+
+<tr valign="top"><td>
+<a name="daede-video-codecs" id="daede-video-codecs"></a>
+<p><b>
+Daala and NetVC: the next-generation of royalty free video codecs, Thomas Daede, Mozilla
+</b></p>
+<p>
+<!-- FIXME -->An abstract for this talk will be provided shortly.
+</p>
+<p><i>
+<!-- FIXME -->Thomas Daede is a Video Codec Engineer at Mozilla.
+</i></p>
+</td></tr>
+
 
 <tr valign="top"><td>
 <a name="lightning-talks" id="lightning-talks"></a>
