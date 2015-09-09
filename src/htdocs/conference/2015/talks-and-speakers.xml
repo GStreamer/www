@@ -372,10 +372,22 @@ drivers.
 Pointing cameras at TVs: when HDMI video-capture is not an option, Will Manley, stb-tester.com
 </b></p>
 <p>
-<!-- FIXME --><i>An abstract for this talk will be provided shortly.</i>
+At stb-tester.com we use image processing to perform automated black-box
+testing of set-top boxes.  This means that we capture video over HDMI
+and look for UI elements based on screenshots we'd previously captured. 
+This works great for set-top boxes, but what about Smart TVs which don't
+have an HDMI output?
+</p><p>
+This talk will describe how we use GStreamer, OpenCV and OpenGL to go
+from an image captured with a camera back to a nice flat image as if it
+had been captured over HDMI.
 </p>
 <p><i>
-<!-- FIXME -->William Manley works on stb-tester.com.
+William Manley is software developer and a co-founder of stb-tester.com,
+a company that provides automated testing equipment and services for
+set-top box manufacturers.  In a previous life he worked on set-top box
+middle-ware. He has been working with GStreamer since 2012 with a
+particular interest in v4l and sending video over IPC.
 </i></p>
 </td></tr>
 
