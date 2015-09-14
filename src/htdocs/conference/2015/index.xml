@@ -398,6 +398,12 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
+    <i>2015-September-14</i>: The GStreamer project is happy to welcome back <b><a href="http://www.igalia.com/">Igalia</a></b> as a Bronze sponsor this year.
+  </p>
+  <p>
+    <i>2015-September-09</i>: Talk abstracts and speaker bios published
+  </p>
+  <p>
     <i>2015-September-03</i>: The GStreamer project is pleased to welcome <b><a href="http://pexip.com/">Pexip</a></b> as a Bronze sponsor.
   </p>
   <p>
@@ -486,7 +492,12 @@ li {
   <h2>Bronze Sponsors</h2>
   <p style="padding:10px 0px">
     <a href="http://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" height="75" width="75" /></a>
+
+    <span style="padding:0px 20px">
+    <a href="http://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="65" width="182" /></a>
+    </span>
   </p>
+
 <!--
   <h2>Press Partners</h2>
   <p>
