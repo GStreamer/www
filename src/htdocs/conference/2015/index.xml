@@ -136,7 +136,7 @@ li {
     We have an exciting range of topics and speakers lined up for you again this year:
     <ul>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#colubri-processing">Interactive video playback and capture in the Processing Language via GStreamer</a><br /><small><i>Andres Colubri</i></small></li>
-    <li><a href="&site;/conference/2015/talks-and-speakers.html#santos-distributed-transcoding">Distributed transcoding with GStreamer</a><br /><small><i>Thiago Sousa Santos, Samsung</i></small></li>
+    <li><a href="&site;/conference/2015/talks-and-speakers.html#santos-distributed-transcoding">Faster transcoding with GStreamer in the cloud</a><br /><small><i>Thiago Sousa Santos, Samsung</i></small></li>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#veenhuizen-tiled-streaming">Tiled Streaming of UHD video in real-time</a><br /><small><i>Arjen Veenhuizen, TNO</i></small></li>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#normand-webkit">GStreamer and WebKit</a><br /><small><i>Philippe Normand, Igalia</i></small></li>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#prajod-ti-jacinto-6">Hardware accelerated multimedia on TI’s Jacinto 6 SoC</a><br /><small><i>Pooja Prajod, Texas Instruments</i></small></li>
@@ -163,11 +163,10 @@ li {
     <li><a href="&site;/conference/2015/talks-and-speakers.html#vibber-open-codecs-safari-and-ie">ogv.js: bringing open codecs to Safari and IE with emscripten</a><br /><small><i>Brion Vibber, Wikimedia</i></small></li>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#lewandowski-radio-broadcasting">Bringing GStreamer to Radio Broadcasting</a><br /><small><i>Marcin Lewandowski</i></small></li>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#daede-video-codecs">Daala and NetVC: the next-generation of royalty free video codecs</a><br /><small><i>Thomas Daede, Mozilla</i></small></li>
-    <li><a href="&site;/conference/2015/talks-and-speakers.html#FIXME">Profiling individual GStreamer elements (*)</a><br /><small><i>Kyrylo Polezhaiev</i></small></li> <!-- FIXME: no abstract yet! -->
+    <li><a href="&site;/conference/2015/talks-and-speakers.html#polezhaiev-profiling">Instrumentation-based profiling of GStreamer pipelines</a><br /><small><i>Kyrylo Polezhaiev</i></small></li>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#manley-camera-capture-testing">Pointing cameras at TVs: when HDMI video-capture is not an option</a><br /><small><i>Will Manley, stb-tester</i></small></li>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#hervey-decodebin3">Decodebin3, or dealing with modern playback use-cases</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
     </ul>
-    <i>(*) preliminary title</i>
   </p>
   <p>
     <b>Lightning Talks:</b>

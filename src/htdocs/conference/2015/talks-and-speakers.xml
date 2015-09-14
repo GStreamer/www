@@ -741,7 +741,7 @@ by future and current products.
 <tr valign="top"><td>
 <a name="santos-distributed-transcoding" id="santos-distributed-transcoding"></a>
 <p><b>
-Distributed transcoding with GStreamer, Thiago Sousa Santos, Samsung
+Faster transcoding with GStreamer in the cloud, Thiago Sousa Santos, Samsung
 </b></p>
 <p>
 Transcoding media files is a common activity when dealing with online content.
@@ -756,7 +756,12 @@ transcoding solution and present some of the results obtained in its
 experiments when compared with a single computer transcoding.
 </p>
 <p><i>
-<!-- FIXME -->Thiago works for the Samsung Open Source Group.
+Thiago started writing multimedia applications from the early days of his
+Computer Science course. He first used OpenCV and, a bit later, got interested
+in developing with and in GStreamer itself, and he's been part of the community
+ever since. Thiago has chosen Open Source to be his career and is now one the
+founder members of the Samsung OSG Multimedia team. Day to day work includes
+maintaining GStreamer and bringing internal projects closer to upstream.
 </i></p>
 </td></tr>
 
@@ -941,6 +946,26 @@ Daala and NetVC: the next-generation of royalty free video codecs, Thomas Daede,
 </i></p>
 </td></tr>
 
+
+<tr valign="top"><td>
+<a name="polezhaiev-profiling" id="polezhaiev-profiling"></a>
+<p><b>
+Instrumentation-based profiling of GStreamer pipelines
+</b></p>
+<p>
+In this talk I will present few simple ideas (and tools) for time profiling
+and data flow inspection between particular elements in GStreamer pipelines.
+I will underline few aspects that makes common profiling tools usage less
+effective for GStreamer-based applications and propose few tweaks for
+GStreamer to make tracing easier.
+</p>
+<p><i>
+Kyrylo Polezhaiev is a software engineer and former video game developer,
+and has an MSc in Systems Engineering. He assembled radio receiver at
+age eleven, and created a video game (using GStreamer) with 200k+ downloads
+when he was 21. Kyrylo lives in Kharkiv, Ukraine.
+</i></p>
+</td></tr>
 
 <tr valign="top"><td>
 <a name="lightning-talks" id="lightning-talks"></a>
