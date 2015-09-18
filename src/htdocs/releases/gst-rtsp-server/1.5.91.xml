@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-rtsp-server</module>
+  <module-fancy>GStreamer RTSP Server Library</module-fancy>
+  <name></name>
+  <version>1.5.91</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the second release candidate for the
+stable 1.6 release series. The 1.6 release series is adding new features on top of
+the 1.0, 1.2 and 1.4 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The final 1.6.0 release is planned
+in the next few days unless any major bugs are found.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately by
+the GStreamer project.
+</p>
+
+  </intro>
+
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Jan Schmidt</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>749095</id>
+      <summary>rtsp-stream: add API to set UDP buffer size</summary>
+    </bug>
+    <bug>
+      <id>754753</id>
+      <summary>rtsp-media: don't mutate original string when parsing keymgmt</summary>
+    </bug>
+  </bugs>
+</release>

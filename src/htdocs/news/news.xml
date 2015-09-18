@@ -6941,4 +6941,45 @@ We hope to see you all in Dublin in October! Don't forget to <a href="http://www
   </content>
  </item>
 
+    <item>
+      <date>2015-09-18 20:20</date>
+        <title>GStreamer Core, Plugins, RTSP Server, Editing Services 1.6.0 release candidate 2 (1.5.91)</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the second release candidate for the
+stable 1.6 release series. The 1.6 release series is adding new features on
+top of the 1.0, 1.2 and 1.4 series and is part of the API and ABI-stable 1.x
+release series of the GStreamer multimedia framework. The final 1.6.0 release
+is planned in the next few days unless any major bugs are found.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately by the GStreamer project.
+</p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.5.91.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.5.91.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.5.91.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.5.91.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.5.91.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-libav/1.5.91.html">gst-libav</a>,
+<a href="&site;/releases/gst-rtsp-server/1.5.91.html">gst-rtsp-server</a>, or
+<a href="&site;/releases/gst-editing-services/1.5.91.html">gst-editing-services</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.5.91.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.5.91.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.5.91.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.5.91.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.5.91.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.5.91.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.5.91.tar.xz">gst-rtsp-server</a>, or
+<a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.5.91.tar.xz">gst-editing-services</a>
+        </p>
+        <p>
+	Check the <a href="http://lists.freedesktop.org/archives/gstreamer-devel/2015-September/054600.html">release announcement mail</a> for details
+	and the release notes above for a list of changes.
+        </p>
+        </content>
+  </item>
+
 </news>
