@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version>1.5.91</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the second release candidate for the
+stable 1.6 release series. The 1.6 release series is adding new features on top of
+the 1.0, 1.2 and 1.4 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer Editing Services. The final 1.6.0 release is planned
+in the next few days unless any major bugs are found.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately by
+the GStreamer project.
+</p>
+
+  </intro>
+  <features>
+  </features>
+
+  <applications>
+  </applications>
+
+            <contributors>
+	<person>Jan Schmidt</person>
+	<person>Justin Kim</person>
+	<person>Thibault Saunier</person>
+  </contributors>
+
+
+
+  <bugs>
+    <bug>
+      <id>753806</id>
+      <summary>[REGRESSION] aggregator: Default to &quot; zero &quot; start time selection mode as documented broke several GES Validate tests</summary>
+    </bug>
+    <bug>
+      <id>754783</id>
+      <summary>ges-launch: crash when argument is invalid</summary>
+    </bug>
+    <bug>
+      <id>754858</id>
+      <summary>ges-launch: leakage of GError</summary>
+    </bug>
+    <bug>
+      <id>754867</id>
+      <summary>timeline,nleobject,nlecomposition: leakage of pad and hashtable reference when disposing</summary>
+    </bug>
+    <bug>
+      <id>754893</id>
+      <summary>nle: Segment base time accumulation is broken fixing videoaggregator segment handling</summary>
+    </bug>
+    <bug>
+      <id>755012</id>
+      <summary>GES timeline playback stops after playing a clip with an effect containing the pitch plugin</summary>
+    </bug>
+  </bugs>
+</release>
