@@ -398,6 +398,9 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
+    <i>2015-September-22</i>: The GStreamer project is thrilled to welcome back <b><a href="http://www.collabora.com/">Collabora</a></b> as a Silver sponsor this year.
+  </p>
+  <p>
     <i>2015-September-14</i>: The GStreamer project is happy to welcome back <b><a href="http://www.igalia.com/">Igalia</a></b> as a Bronze sponsor this year.
   </p>
   <p>
@@ -477,16 +480,16 @@ li {
 <td valign="top" style="padding:0px 50px">
   <h1>Sponsors</h1>
   <h2>Silver Sponsors</h2>
-<!--
-  <p style="padding:10px 0px">
-    <a href="http://www.collabora.com"><img src="sponsor_305x50_collabora_new.png" alt="Collabora" height="50" width="305" /></a>
-  </p>
--->
+
   <p style="padding:10px 0px">
     <a href="http://www.google.com"><img src="sponsor_google_538x190.png" alt="Google" height="75" width="225" /></a>
   </p>
   <p>
     <a href="http://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
+  </p>
+
+  <p style="padding:20px 0px">
+    <a href="http://www.collabora.com"><img src="sponsor_1722x282_collabora.png" alt="Collabora" height="50" width="305" /></a>
   </p>
 
   <h2>Bronze Sponsors</h2>
