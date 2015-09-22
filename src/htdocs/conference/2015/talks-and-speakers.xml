@@ -945,10 +945,26 @@ consultant for Centricular.
 <tr valign="top"><td>
 <a name="daede-video-codecs" id="daede-video-codecs"></a>
 <p><b>
-Daala and NetVC: the next-generation of royalty free video codecs, Thomas Daede, Mozilla
+Daala, NETVC, and the Alliance for Open Media: the plan for royalty free video, Thomas Daede, Mozilla
 </b></p>
 <p>
-<!-- FIXME -->An abstract for this talk will be provided shortly.
+NETVC is a new working group at the IETF to create a high quality and
+royalty-free video codec for the Internet. It follows the success of
+Opus, the audio codec standardized by the IETF as RFC 6716. The working
+group is receiving contributions from Xiph and Mozilla's Daala codec, as
+well as the new Thor codec contributed by Cisco.
+</p><p>
+The Alliance for Open Media is a brand new group formed to do the patent
+analysis necessary to achieve a royalty free codec. Its founding members
+represent some of the biggest names in online video, such as Netflix,
+Amazon, and YouTube, multiple browser vendors including Mozilla,
+Microsoft, and Google, and key technology providers like Cisco and Intel.
+</p><p>
+This talk will cover progress made in the last year in the development
+of Daala, as well as an overview of Thor and other contributions to the
+NETVC working group. It will also discuss the role of the Alliance and
+the importance of high quality video that anyone can use without complex
+and costly licensing.
 </p>
 <p><i>
 <!-- FIXME -->Thomas Daede is a Video Codec Engineer at Mozilla.
