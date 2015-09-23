@@ -187,6 +187,8 @@ li {
     <li>OpenCV and GStreamer <small><br /><i>Vanessa Chipi</i></small></li>
     <li>Handling Interleaved and Non-Interleaved streams with GStreamer <small><br /><i>Ramesh Venkatachalapathy, LGE</i></small></li>
     <li>Done in 6.0 seconds: a new build system for GStreamer? <small><br /><i>Jussi Pakkanen</i></small></li>
+    <li>Gst daemon and interpipes: A simpler way to get your application done <small><br /><i>Melissa Montero, RidgeRun</i></small></li>
+    <li>Another android camera source for Gstreamer <small><br /><i>Justin Kim, Collabora</i></small></li>
     <li>...</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
