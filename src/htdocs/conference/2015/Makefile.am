@@ -5,6 +5,7 @@ built_pages = index.html schedule.html talks-and-speakers.html
 #sponsor_150x78_collabora_new.png
 #lwn.png
 images = \
+	lwn-logo-gstconf2015.png \
 	sponsor_ubicast_640x195.png \
 	sponsor_ubicast_821x240.png \
 	sponsor_centricular_753x125.png \

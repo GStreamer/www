@@ -400,6 +400,9 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
+    <i>2015-September-23</i>: We're happy to to have <b><a href="http://lwn.net">Linux Weekly News</a></b> again as Press Partner at this year's conference.
+  </p>
+  <p>
     <i>2015-September-22</i>: The GStreamer project is thrilled to welcome back <b><a href="http://www.collabora.com/">Collabora</a></b> as a Silver sponsor this year.
   </p>
   <p>
@@ -503,19 +506,16 @@ li {
     </span>
   </p>
 
-<!--
-  <h2>Press Partners</h2>
-  <p>
-    <a href="http://lwn.net"><img src="lwn.png" alt="Lwn.net" height="61" width="150" /></a>
-  </p>
-  <p>
-    <a href="http://www.phoronix.com/"><img src="phoronix.png" alt="Phoronix.com" height="34" width="150" /></a>
-  </p>
--->
   <br />
   <h2>Special Media Partners</h2>
   <p style="padding:10px 0px">
     <a href="http://www.ubicast.eu/"><img src="sponsor_ubicast_640x195.png" alt="UbiCast" height="75" width="246" /></a>
+  </p>
+
+  <br />
+  <h2>Press Partners</h2>
+  <p style="padding:10px 0px">
+    <a href="http://lwn.net"><img src="lwn-logo-gstconf2015.png" alt="LWN" height="99" width="300" /></a>
   </p>
 
   <p>
