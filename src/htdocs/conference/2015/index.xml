@@ -326,68 +326,58 @@ li {
   (2a and 2b) at <a href="http://www.theccd.ie/">The Convention Centre Dublin</a>,
   which is located in Dublin's Docklands district not too far from the city centre.
   </p>
-<!--
   <p>
-  The venue is served directly by
-  <a href="http://www.openstreetmap.org/relation/1286330#map=14/51.2429/6.7731">bus route 722</a>
-  which zigzags from the central station (Hauptbahnhof = Düsseldorf Hbf)
-  through parts of the city centre and terminates directly in front of the
-  venue (every 12 mins or so). Bus route 896 connects directly to and from
-  Düsseldorf Airport (every 15 mins between 8.00h-19.30h).
-  </p><p>
-  Underground/metro lines U78/U79 may often provide a faster and more frequent
-  connection to/from the centre and also pass near the venue at stop
-  "Messe Ost/Stockumer Kirchstr.", from which it is a 10-15 minute walk to
-  the venue (ca. 1km, just over half a mile). Alternatively, there are a number
-  of busses (722, 896, and others) which will take you to the venue from there.
-  </p><p>
-  <a href="http://www.ccd.de/global/dbbin/130313_113858_anfahrtsplan_oepnv___032010.pdf">Map (pdf)</a>
+  The venue is just around the corner of the LUAS (light rail) Red Line
+  <i>Spencer Dock</i> stop. It is also within half an hour walking distance
+  or 10-minute taxi ride of most city centre locations and served by various
+  bus routes.
   </p>
--->
 
   <h2>Hotels</h2>
   <p>
-  Hotel details will be available shortly.
+  If you have not booked your accommodation yet, it is advisable to do this
+  as soon as possible.
   </p>
-<!--
   <p>
-  This is just a small selection of hotels which may or may not be suitable.
-  Düsseldorf is an international business centre and tourist destination
+  The Linux Foundation had some <a href="http://events.linuxfoundation.org/events/linuxcon-europe/attend/hotel-and-travel">hotel recommendations</a>
+  in the vicinity of the convention centre, all of which are sold out now, so
+  you may have to look at places in other areas.
+  </p>
+  <p>
+  Most hotels in the city centre will be within walking distance (15-30mins)
+  of the conference venue, or just a short taxi ride away. There is also
+  public transport in form of busses and the LUAS light rail system. The
+  convention centre is right next to the LUAS <i>Spencer Dock</i> stop which
+  is on the Red Line.
+  </p>
+  <p>
+  Temple Bar is the name of the cultural/nightlife quarter which is popular
+  with tourists and where also a lot of hotels are.
+  </p>
+  <p>
+  The following is just a small selection of hotels which may or may not be
+  suitable. Dublin is an international business centre and tourist destination
   and as such has many hotels and hostels in all price categories. The below
   is merely a small selection, you can find more using the usual booking
-  engines. 'Stadtmitte' (city centre) north west of the central station
-  (Düsseldorf Hbf) towards the 'Altstadt' (old town)  might be a convenient
-  area to be in, as it's close to the bars and restaurants of the Altstadt and
-  the U78/U79 metro that will take you to the venue or the centre also passes
-  through there.
+  engines such as booking.com, lastminute.com or airbnb.com.
   </p>
-  <h3>Hilton and Radisson Blue Scandinavia</h3>
   <p>
-  The Linux Foundation has <a href="http://events.linuxfoundation.org/events/linuxcon-europe/attend/hotel-and-travel">negotiated a discounted rate</a>
-  of €149 ($195) and €143 ($188) per night incl. taxes at the
-  Hilton Düsseldorf and the Radisson Blue Scandinavia Düsseldorf. Both are
-  located within easy reach (but not necessarily walking distance) of both
-  the venue and the Altstadt and close to U78/U79 metro stops. GStreamer
-  conference attendees may make use of these rates. Those looking for
-  something more luxurious will find something suitable near the
-  Königsallee ("Kö").
-  </p>
-
-  <h3>City Centre</h3>
-  <p>
-  These hotels are centrally located and at the time of writing had a
-  reaonable number of rooms left, but there are many smaller hotels in
-  the area which may be even better located or provide better value:
+  These hotels are located within half an hour of the convention center and
+  had at least a couple of rooms left at the time of writing, but there are
+  many other hotels in the city which may be even better located or provide
+  better value:
   <ul>
-    <li>Motel One Düsseldorf Hauptbahnhof</li>
-    <li>Mercure Hotel Düsseldorf City Centre</li>
-    <li>ibis Düsseldorf Hauptbahnhof</li>
-    <li>Hotel Prinz Anton</li>
-    <li>Novum Business Hotel Madison Düsseldorf Hauptbahnhof</li>
+    <li><a href="http://www.fleethoteltemplebar.com">The Fleet Street Hotel (Temple Bar)</a></li>
+    <li>Maldron Hotel Cardiff Lane</li>
+    <li><a href="http://www.sandymounthotel.ie/">Sandymount Hotel</a></li>
+    <li><a href="http://www.ballsbridgehotel.com/">Ballsbridge Hotel</a></li>
+    <li>Temple Bar Inn</li>
+    <li>Georg Frederic Handel Hotel, Temple Bar</li>
+    <li>For those on a budget airbnb.ie may have some suitable accommodation choices</li>
   </ul>
-  Keep in mind that there will also be a breakfast buffet at the venue.
+  If you find any other places that might be worth mentioning here, please send
+  us a mail.
   </p>
--->
 
   <h2>Contact</h2>
   <p>
@@ -399,6 +389,9 @@ li {
   </p>
 
   <h2>Conference News and Updates</h2>
+  <p>
+    <i>2015-September-23</i>: added some hotels which still have rooms available
+  </p>
   <p>
     <i>2015-September-23</i>: We're happy to to have <b><a href="http://lwn.net">Linux Weekly News</a></b> again as Press Partner at this year's conference.
   </p>
