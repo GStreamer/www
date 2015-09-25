@@ -26,6 +26,7 @@ htdocs/modules/Makefile
 htdocs/news/Makefile
 htdocs/planet/Makefile
 htdocs/releases/Makefile
+htdocs/releases/1.6/Makefile
 htdocs/releases/gst-editing-services/Makefile
 htdocs/releases/gst-editor/Makefile
 htdocs/releases/gst-ffmpeg/Makefile

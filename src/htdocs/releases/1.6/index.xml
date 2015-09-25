@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+  <!ENTITY release-notes SYSTEM "release-notes-1.6.html">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+<title>GStreamer 1.6 release notes</title>
+
+<body>
+
+&release-notes;
+
+</body>
+</page>
