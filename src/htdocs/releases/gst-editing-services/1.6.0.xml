@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version>1.6.0</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release of the GStreamer
+Editing Services stable 1.6 release series. The 1.6 release series is adding
+new features on top of the 1.2 and 1.4 series and is part of the API and
+ABI-stable 1.x release series of the GStreamer multimedia framework.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows are provided together
+with this release.
+</p>
+
+  </intro>
+  <features>
+  </features>
+
+  <applications>
+  </applications>
+
+  <contributors>
+    <person>Justin Kim</person>
+    <person>Thibault Saunier</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>755417</id>
+      <summary>nlecomposition allocates unused UpdateCompositionData</summary>
+    </bug>
+  </bugs>
+</release>

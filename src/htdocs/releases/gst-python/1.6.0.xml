@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name></name>
+  <version>1.6.0</version>
+
+  <intro>
+
+    <p>
+      The GStreamer team is pleased to announce the first release of
+      the stable 1.4 release series. 
+    </p>
+
+  </intro>
+  <applications>
+  </applications>
+
+    <contributors>
+	<person>Thibault Saunier</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+  <bugs>
+  </bugs>
+</release>
