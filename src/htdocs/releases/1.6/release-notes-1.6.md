@@ -38,7 +38,7 @@ for the latest version of this document.
   keep the output file in a valid state at all times
 - Live mixing support in aggregator, audiomixer and compositor was improved a
   lot
-- compositor now supports rescaling and converting inputs streams on the fly
+- compositor now also supports rescaling of inputs streams on the fly
 - New audiointerleave element with proper input synchronisation and live input
   support
 - Blackmagic Design DeckLink capture and playback card support was rewritten
@@ -694,10 +694,14 @@ audiomixer should be used instead.
 
 #### Rescaling and conversion support in compositor
 
-Compositor now has support for accepting raw video in arbitrary formats, and
-internally converts to the output formats. Thanks to the GstVideoConverter
-helper, this only required minimal changes and also made it trivial to support
-rescaling. Each input can now be individually rescaled via pad properties.
+Compositor had had support for accepting raw video inputs in arbitrary formats
+for a while (i.e. formats other than the negotiated output format), and
+internally converts to the output format. This is required to avoid negotiation
+and renegotiation races with multiple inputs.
+
+It now also supports resizing of the input video streams on the fly thanks to
+the new GstVideoConverter helper in the gstvideo library. Each input can now
+be individually rescaled (and positioned) via pad properties.
 
 #### New audiointerleave element
 
@@ -854,7 +858,7 @@ before writing/sending the data out.
 **mpegtsmux now outputs a buffer list** in many cases, instead of pushing
 one buffer downstream for every 188-byte MPEG-TS packet. This may affect you
 if you have buffer pad probes set up but not also a buffer list probe, your
-robe may no longer be fired in that case if now a buffer list is produced
+probe may no longer be fired in that case if now a buffer list is produced
 instead of single buffers. This especially affects mpegtsmux in combination
 with various sinks.
 
@@ -972,7 +976,7 @@ number of common and uncommon audio and video formats, switched back from libav
 to ffmpeg as libav provider following recent distro trends. The module will
 continue to be called gst-libav and the element names will not change and keep
 their av* prefix. This change should be entirely transparent to users,
-but if you notice any regressions caused by this, please let use know.
+but if you notice any regressions caused by this, please let us know.
 
 Support for the Chinese AVS (CAVS) video codec has been enabled (also in tsdemux).
 
