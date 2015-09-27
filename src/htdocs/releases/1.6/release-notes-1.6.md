@@ -10,6 +10,8 @@ See
 [http://gstreamer.freedesktop.org/releases/1.6/](http://gstreamer.freedesktop.org/releases/1.6/)
 for the latest version of this document.
 
+*Last updated: Sunday 27 September 2015, 19:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
+
 ## Highlights
 
 - Stereoscopic 3D and multiview video support
@@ -423,18 +425,99 @@ the shared V4L2 code.
 
 ### Easier chunked recording of MP4, Matroska, Ogg, MPEG-TS: new splitmuxsink and multifilesink improvements
 
-When recording a stream one often wants to regularly split the recorded files
+When recording a stream one often wants to regularly split the recorded stream
 into smaller chunks instead of having one very large output file. This might
 be in order to avoid filesystem limitations (e.g. 2GB limit on FAT32), to make
 the output more managable, or simply because the recording never ends
 (such as with CCTV security feeds).
 
-multifilesink can also be made aware of GOPs using the new 'aggregate-gops'
-property and will ensure GOPs aren't split accross files. Together with the
-'max-size' and 'max-duration' modes it can be used to generate a sequence of
-properly muxed files of the desired size. This only works for streaming formats
-such as OGG or MPEG-TS; for non-streaming formats such as MP4 splitmuxsink
-should be used.
+It's always been possible to do that with GStreamer, but it's always been a
+less than perfect affair, or more involved than it should be.
+
+Just setting a new filename on filesink is not possible while the pipeline
+is running, one needs to shut down filesink, change the filename via the
+location property and then start it up again, and also block the data flow
+via pad probes to make sure that the upstream element doesn't try to push
+on the filesink whilst it is in the wrong state, because that would make the
+pipeline stop (pushing on a pad or element that is not active results in a
+FLOW_FLUSHING flow return which will make upstream elements stop streaming
+and shut down their threads). On top of that one would also have to keep
+track of how much data is being written, in order to know when to switch to
+the next file. All doable, but clearly rather involved. And this does not
+even make sure yet that all files start with a keyframe, for example.
+
+An easier solution is to use the
+[multifilesink](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-multifilesink.html)
+element, which can switch to another output file on the fly independently
+and can be told when to switch to the next file, e.g. by specifying a maximum
+file size in bytes. This approach has a couple of problems: for one, it can
+only switch to a new file based on a file size limit, not a maximum duration
+limit; it will not take care to make sure that each new file starts with a
+keyframe; and it only works with streaming formats such as MPEG-TS, MPEG-PS,
+Matroska/WebM, or Ogg. Such streaming formats basically have a header at the
+beginning (or repeated in regular intervals) that can be written ahead of time,
+and is then followed by some stream payload data. The stream payload data does
+not have to be the first data produced, as long as the receiver has the headers
+it's fine to start in the middle of the stream. In GStreamer such headers are
+signalled in the caps via the "streamheader" field, and elements such as
+multifilesink or tcpserversink can then write them at the beginning of a new
+file or send them first thing when a new client connects to the server, before
+writing any actual video or audio data.
+
+The last problem has also been fixed in 1.6 now: multifilesink can now be
+made aware of GOPs using the new 'aggregate-gops' property and will ensure
+GOPs aren not split accross files. Together with the 'max-size' and
+'max-duration' modes this can be used to generate a sequence of properly
+muxed files of the desired size based either on file size or duration now.
+
+All this did not work for non-streaming container formats such as the
+classic MP4/QuickTime format in the non-fragmented variant, however.
+
+Unlike streaming container formats, MP4 files are structured in such a way
+that a stream can't just be split up into file parts with a repeated header.
+Each individual file part needs to be finalised explicitly to make sure a
+proper header with sample tables is written out. This can't be done with
+multifilesink.
+
+Enter the new splitmuxsink element.
+
+[splitmuxsink](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-splitmuxsink.html)
+allows for easy chunking of MP4, Matroska, MPEG-TS or Ogg files, in such a
+way that each file part can be played back on its own and starts with a
+keyframe, taking care of everything for you.
+
+This example pipeline records a video stream captured from a v4l2 device and
+muxes it into ISO MP4 files, splitting as needed to limit size/duration to
+10 seconds and 1MB maximum size:
+
+    gst-launch-1.0 -e v4l2src num-buffers=500 ! videoconvert ! queue ! \
+        timeoverlay ! x264enc key-int-max=10 ! h264parse ! \
+        splitmuxsink location=video%02d.mp4 max-size-time=10000000000 max-size-bytes=1000000
+
+Each file output will be a self-contained valid MP4 file that can be played
+by itself, and each file will start with a keyframe.
+
+[splitmuxsrc](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-splitmuxsrc.html)
+will then play back a number of files split with splitmuxsink in such a way
+that it is completely seamless and there are no glitches during transitions
+from one file part to the next. This is not as easy to accomplish as it sounds,
+since audio will usually be encoded and such encoded audio frames can't be
+split across files and will usually not line up perfectly with the start and
+end of video frames. This means that in each file part the audio will usually
+start either just a little bit later than the video or vice versa in order to
+maintain perfect audio/video sync. splitmuxsrc will make sure to recombine
+the streams from the individual file parts again in such a way that they will
+be perfectly seamless.
+
+    gst-launch-1.0 splitmuxsrc location=video*.mp4 ! \
+        decodebin ! videoconvert ! videoscale ! autovideosink
+
+or
+
+    gst-play-1.0 splitmux:///path/to/video*.mp4
+
+Of course it is possible to seek or do fast-forward/fast-reverse playback
+with splitmuxsrc as well.
 
 ### Content Protection signalling API and Common Encryption (CENC) support
 
