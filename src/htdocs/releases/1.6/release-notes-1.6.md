@@ -446,12 +446,14 @@ track of how much data is being written, in order to know when to switch to
 the next file. All doable, but clearly rather involved. And this does not
 even make sure yet that all files start with a keyframe, for example.
 
-An easier solution is to use the
+An easier solution was to use the
 [multifilesink](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-multifilesink.html)
 element, which can switch to another output file on the fly independently
 and can be told when to switch to the next file, e.g. by specifying a maximum
-file size in bytes. This approach has a couple of problems: for one, it can
-only switch to a new file based on a file size limit, not a maximum duration
+file size in bytes.
+
+This approach had a couple of problems: for one, it can only switch to a new
+file based on a file size limit, not a maximum duration
 limit; it will not take care to make sure that each new file starts with a
 keyframe; and it only works with streaming formats such as MPEG-TS, MPEG-PS,
 Matroska/WebM, or Ogg. Such streaming formats basically have a header at the
@@ -464,13 +466,14 @@ multifilesink or tcpserversink can then write them at the beginning of a new
 file or send them first thing when a new client connects to the server, before
 writing any actual video or audio data.
 
-The last problem has also been fixed in 1.6 now: multifilesink can now be
+Some of these problems with multifilesink have been fixed in 1.6 now:
+multifilesink can now be
 made aware of GOPs using the new 'aggregate-gops' property and will ensure
 GOPs aren not split accross files. Together with the 'max-size' and
 'max-duration' modes this can be used to generate a sequence of properly
 muxed files of the desired size based either on file size or duration now.
 
-All this did not work for non-streaming container formats such as the
+All this still does not work for non-streaming container formats such as the
 classic MP4/QuickTime format in the non-fragmented variant, however.
 
 Unlike streaming container formats, MP4 files are structured in such a way
