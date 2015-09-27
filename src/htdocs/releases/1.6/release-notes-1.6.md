@@ -196,7 +196,8 @@ gst-launch line:
             video/x-raw,width=800,height=600 ! \
             videoconvert ! ximagesink
         
-   [scale-method2-1.4.png] [scale-method2-1.6.png]
+![scale-method2-1.4](scale-method2-1.4.png "4-tap Sinc scaling method in 1.4")
+![scale-method2-1.6](scale-method2-1.6.png "4-tap Sinc scaling method in 1.6")
 
 A new scaler algorithm based on cubic interpolation has been added. This scaler
 can be configured with 2 parameters and there are some common configurations
@@ -220,7 +221,8 @@ compare the output of the these lines:
               video/x-raw,width=160,height=100 ! \
               ximagesink
 
- [bilinear-1.4.png] [bilinear2-1.6.png]
+![bilinear-1.4](bilinear-1.4.png "Bilinear scaling method in 1.4")
+![bilinear-1.6](bilinear2-1.6.png "New bilinear2 scaling method in 1.6")
 
 Both are using linear interpolation but the 1.6 version can use more than 2
 taps to create a much smoother output image.
@@ -281,7 +283,8 @@ Compare the output of the following pipelines in 1.6:
             video/x-raw,format=RGB15 ! \
             videoconvert ! ximagesink 
 
-  [colorbars-nodither-1.6.png] [colorbars-bayer-1.6.png]
+![colorbars-nodither-1.6](colorbars-nodither-1.6.png "Converting from 24bpp to 15bpp without dithering")
+![colorbars-bayer-1.6](colorbars-bayer-1.6.png "Converting from 24bpp to 15bpp with bayer dithering")
  
 We can also set a quantization factor in videoconvert that allows us to do
 nice color effects:
@@ -291,7 +294,9 @@ nice color effects:
             videoconvert dither=4 dither-quantization=256 ! \
             ximagesink
 
-  [colors-bayer-1.6.png]
+[//]: # (FIXME: perhaps add the original image before quanization for comparison)
+
+![colors-bayer-1.6.png](colors-bayer-1.6.png "colors-bayer-1.6")
 
 Which quantizes the components to 1 bit and uses bayer dithering to create
 intermediate colors. This can also be applied to video for some nice effects.
@@ -310,21 +315,21 @@ Compare the output of these 3 lines on a specially crafted png:
                  videoscale gamma-decode=1 ! \
                  video/x-raw,width=179,height=111 ! videoconvert ! ximagesink
    
-   [scale-1.6-gamma.png]
+![scale-1.6-gamma](scale-1.6-gamma.png "Scaled image in 1.6 with gamma correction")
 
      1.4:  gst-launch-1.0 http://gstreamer.freedesktop.org/media/small/gamma_dalai_lama_gray.png ! \
                  pngdec ! imagefreeze ! \
                  videoscale ! \
                  video/x-raw,width=179,height=111 ! videoconvert ! ximagesink
              
-   [scale-1.4-nogamma.png]
+![scale-1.4-nogamma](scale-1.4-nogamma.png "Scaled image in 1.4 without gamma correction")
 
      1.6: gst-launch-1.0 http://gstreamer.freedesktop.org/media/small/gamma_dalai_lama_gray.png ! \
                  pngdec ! imagefreeze ! \
                  videoscale ! \
                  video/x-raw,width=179,height=111 ! videoconvert ! ximagesink
              
-   [scale-1.6-nogamma.png]
+![scale-1.6-nogamma](scale-1.6-nogamma.png "Scaled image in 1.6 without gamma correction")
  
 The color bands on the 1.4 image are caused by inaccurate scaling coefficients.
  
