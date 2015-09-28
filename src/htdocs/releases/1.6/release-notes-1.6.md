@@ -10,7 +10,7 @@ See
 [http://gstreamer.freedesktop.org/releases/1.6/](http://gstreamer.freedesktop.org/releases/1.6/)
 for the latest version of this document.
 
-*Last updated: Sunday 27 September 2015, 19:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
+*Last updated: Monday 28 September 2015, 12:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
 
 ## Highlights
 
@@ -1225,8 +1225,7 @@ required).
 
 ### Linux
 
-- The bluez plugin now also supports bluez version 5, you can select bluez4
-  or bluez5 at compile time.
+- The bluez plugin was ported to bluez 5 and no longer supports bluez 4
 
 ## Contributors
 
