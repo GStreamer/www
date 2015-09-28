@@ -975,7 +975,7 @@ and costly licensing.
 <tr valign="top"><td>
 <a name="polezhaiev-profiling" id="polezhaiev-profiling"></a>
 <p><b>
-Instrumentation-based profiling of GStreamer pipelines, Kyrylo Polezhaiev
+Simple techniques of pipeline performance measurements and time profiling of individual elements, Kyrylo Polezhaiev
 </b></p>
 <p>
 In this talk I will present few simple ideas (and tools) for time profiling

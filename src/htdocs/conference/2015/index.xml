@@ -163,7 +163,7 @@ li {
     <li><a href="&site;/conference/2015/talks-and-speakers.html#vibber-open-codecs-safari-and-ie">ogv.js: bringing open codecs to Safari and IE with emscripten</a><br /><small><i>Brion Vibber, Wikimedia</i></small></li>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#lewandowski-radio-broadcasting">Bringing GStreamer to Radio Broadcasting</a><br /><small><i>Marcin Lewandowski</i></small></li>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#daede-video-codecs">Daala, NETVC, and the Alliance for Open Media: the plan for royalty free video</a><br /><small><i>Thomas Daede, Mozilla</i></small></li>
-    <li><a href="&site;/conference/2015/talks-and-speakers.html#polezhaiev-profiling">Instrumentation-based profiling of GStreamer pipelines</a><br /><small><i>Kyrylo Polezhaiev</i></small></li>
+    <li><a href="&site;/conference/2015/talks-and-speakers.html#polezhaiev-profiling">Simple techniques of pipeline performance measurements and time profiling of individual elements</a><br /><small><i>Kyrylo Polezhaiev</i></small></li>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#manley-camera-capture-testing">Pointing cameras at TVs: when HDMI video-capture is not an option</a><br /><small><i>Will Manley, stb-tester</i></small></li>
     <li><a href="&site;/conference/2015/talks-and-speakers.html#hervey-decodebin3">Decodebin3, or dealing with modern playback use-cases</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
     </ul>
