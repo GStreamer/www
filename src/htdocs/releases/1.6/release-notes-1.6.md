@@ -594,8 +594,8 @@ PTP is part of a few broadcasting and professional media standards, such as
 AES67, RAVENNA, AVB, SMPTE ST 2059-2 and other inter-device synchronization
 standards.
 
-See Sebastian's blog post about [PTP network clock support in GStreamer]
-(https://coaxion.net/blog/2015/05/ptp-network-clock-support-in-gstreamer/)
+See Sebastian's blog post about
+[PTP network clock support in GStreamer](https://coaxion.net/blog/2015/05/ptp-network-clock-support-in-gstreamer/)
 for more details.
 
 All netclocks, including the existing net client clock, have much better
