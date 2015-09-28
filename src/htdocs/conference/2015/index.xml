@@ -110,7 +110,7 @@ li {
 
   <h2>Social Event</h2>
   <p>
-    We plan to again organise a social event for registered attendees on
+    There will again be a social event for registered attendees on
     Thursday 8 October 2015 in the evening from 19.00-23.00h at
     <a href="http://www.tonerspub.ie/"><b>Toners Pub</b></a>,
     139 Lower Baggot Street, Dublin 2, D02 N231, between St Stephen's Green
@@ -124,14 +124,9 @@ li {
   </p>
 
   <h2>Schedule and speakers list</h2>
-<!--
   <p>
-    <b>Talks:</b>
-    <ul>
-    <li><i>The full schedule of talks will be published in the second half of August</i></li>
-    </ul>
+    <a href="schedule.html">Click here for the full schedule</a>
   </p>
--->
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
     <ul>
@@ -281,13 +276,7 @@ li {
     <tr><td><a href="http://events.linuxfoundation.org/events/cloudopen-europe">CloudOpen Europe</a></td><td>October 5-7, 2015</td></tr>
   </table>
   </p>
-<!--
-  <p>
-  Professionals registering for the GStreamer conference will receive a
-  discount code to claim a small discount when registering for ELCE or the
-  Automotive Linux Summit as well.
-  </p>
--->
+
   <h2>Sponsors</h2>
   <p>
   The GStreamer Conference 2015 is only possible thanks to the financial support
@@ -306,18 +295,6 @@ li {
   Dublin airport (DUB) is Ireland's main airport with good
   regional and international connections.
   </p>
-<!-- FIXME
-  <p>
-  <i>Places</i>
-  </p><p>
-  The venue is a bit outside of town, but not too far away, and easily
-  reachable by car, taxi and public transport (see below).
-  </p><p>
-  The <a href="http://www.duesseldorf.de/eng/tourism/discover/altstadt/index.shtml">Altstadt (Old Town)</a>
-  district in the centre is renowned for its bars, restaurants, shops,
-  museums and galleries.
-  </p>
--->
 
   <h2>Venue</h2>
   <p>
@@ -390,6 +367,9 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
+    <i>2015-September-28</i>: the <a href="http://gstreamer.freedesktop.org/conference/2015/schedule.html">full conference schedule</a> is now available as well
+  </p>
+  <p>
     <i>2015-September-28</i>: The social event on Thursday 8 Oct in the evening
     is now confirmed to be at <a href="http://www.tonerspub.ie/"><b>Toners Pub</b></a>
     from 19.00-23.00h. Food and drink will be provided. Bring your badge.
@@ -436,38 +416,6 @@ li {
   <p>
     <i>2015-June-12</i>: Date and venue confirmed, talks may be submitted.
   </p>
-<!--
-  <p>
-    <i>2014-October-13</i>: The social event on Thursday 16 Oct in the evening is now confirmed to be at the <a href="http://www.hausbar-duesseldorf.de/">Hausbar</a> from 19.00-23.00h. Food and drink will be provided.
-  </p>
-  <p>
-    <i>2014-October-08</i>: The GStreamer project is pleased to welcome back <a href="http://www.collabora.com">Collabora</a> as Silver sponsor
-  </p>
-  <p>
-    <i>2014-October-07</i>: the <a href="http://gstreamer.freedesktop.org/conference/2014/schedule.html">conference schedule</a> with full talk abstracts and speaker bios is now available
-  </p>
-  <p>
-    <i>2014-September-02</i>: Hotel details have been added to the conference pages
-  </p>
-  <p>
-    <i>2014-August-02</i>: <a href="http://www.ubicast.eu">UbiCast</a> is welcomed back as special media partner who will <a href="http://gstconf.ubicast.tv/">record the talks</a>
-  </p>
-  <p>
-    <i>2014-July-30</i>: The GStreamer project is delighted to welcome back <a href="http://www.google.com">Google</a> as Silver sponsor
-  </p>
-  <p>
-    <i>2014-July-30</i>: Paper submission is now closed, but Lightning talks (~5 mins) may still be submitted
-  </p>
-  <p>
-    <i>2014-June-30</i>: The call for papers is now open and talk proposals can be submitted
-  </p>
-  <p>
-    <i>2014-June-22</i>: The <a href="http://gstreamer.freedesktop.org/conference/2014/gstreamer-conference-sponsor-brief-2014.pdf">Sponsor brief</a> is now available
-  </p>
-  <p>
-    <i>2014-June-14</i>: Registration now open
-  </p>
--->
 
   <h1>Past GStreamer Conferences</h1>
   <ul>
