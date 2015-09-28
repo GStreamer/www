@@ -13,6 +13,8 @@
 <h1>GStreamer Conference 2015 Schedule</h1>
 <h2>Dublin, Ireland, 8-9 October 2015</h2>
 <p><a href="&site;/conference">Back to conference main page</a></p>
+<p><a href="#thursday">Schedule for Thursday 8 October 2015</a></p>
+<p><a href="#friday">Schedule for Friday 9 October 2015</a></p>
 <table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0">
 <!--
 	<col width="10*" />
@@ -20,7 +22,8 @@
 	<col width="40*" />
 	<col width="10*" />
 -->
-	<tr>
+
+	<tr name="thursday" id="thursday">
 		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
 			<p align="center"><font color="white">Thursday 8th of October 2015</font></p>
 		</td>
@@ -65,10 +68,10 @@
 	<tr valign="top">
 		<td><p>10.00-<br />10.30</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#veenhuizen-tiled-streaming">Tiled Streaming of UHD video in real-time</a><br />Arjen Veenhuizen, TNO</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#santos-kurento-media-server">Kurento Media Server: experiences bringing GStreamer capabilities to WWW developers</a><br />José Antonio Santos, Kurento</p>
 		</td>
 		<td><p>10.00-<br />10.30</p></td>
 	</tr>
@@ -76,10 +79,10 @@
 	<tr valign="top">
 		<td><p>10.35-<br />10.55</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">20-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#jaquez-gstreamer-vaapi">GStreamer-VAAPI: Hardware-accelerated encoding and decoding on Intel hardware</a><br />Víctor M. Jáquez L., Igalia</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">20-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#vibber-open-codecs-safari-and-ie">ogv.js: bringing open codecs to Safari and IE with emscripten</a><br />Brion Vibber, Wikimedia</p>
 		</td>
 		<td><p>10.35-<br />10.55</p></td>
 	</tr>
@@ -93,10 +96,10 @@
 	<tr valign="top">
 		<td><p>11.20-<br />12.05</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">45-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#hervey-decodebin3">Decodebin3, or dealing with modern playback use-cases</a><br />Edward Hervey (bilboed), Centricular</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">45-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#isorce-chromium-backend">Chromium: a new media Backend based on GStreamer</a><br />Julien Isorce, Samsung</p>
 		</td>
 		<td><p>11.20-<br />12.05</p></td>
 	</tr>
@@ -104,10 +107,10 @@
 	<tr valign="top">
 		<td><p>12.10-<br />12.30</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">20-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#droge-gstplayer">GstPlayer - A simple cross-platform API for all your media playback needs</a><br />Sebastian Dröge (slomo), Centricular</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">20-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#">GStreamer and WebKit</a><br />Philippe Normand (philn), Igalia</p>
 		</td>
 		<td><p>12.10-<br />12.30</p></td>
 	</tr>
@@ -121,10 +124,10 @@
 	<tr valign="top">
 		<td><p>13.30-<br />14.00</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#fink-broadcast-mixing-architecture">Going Live with ToolsOnAir’s GStreamer-based broadcast mixing architecture</a><br />Heinrich Fink, ToolsOnAir</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#picard-dvb-stack">The HeliosTv Distributed DVB stack</a><br />Romain Picard, Soft@Home</p>
 		</td>
 		<td><p>13.30-<br />14.00</p></td>
 	</tr>
@@ -132,10 +135,10 @@
 	<tr valign="top">
 		<td><p>14.05-<br />14.25</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">20-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#de-bethencourt-contributing">How to Contribute to GStreamer</a><br />Luis de Bethencourt (luisbg), Samsung</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">20-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#schmidt-stereoscopic-3d-video-redux">Stereoscopic 3D Video in GStreamer Redux</a><br />Jan Schmidt (thaytan), Centricular</p>
 		</td>
 		<td><p>14.05-<br />14.25</p></td>
 	</tr>
@@ -151,10 +154,10 @@
 	<tr valign="top">
 		<td><p>14.45-<br />15.15</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#santos-distributed-transcoding">Faster transcoding with GStreamer in the cloud</a><br />Thiago Sousa Santos, Samsung</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#verkuil-colorspaces-hdmi">Colorspaces and HDMI</a><br />Hans Verkuil, Cisco</p>
 		</td>
 		<td><p>14.45-<br />15.15</p></td>
 	</tr>
@@ -168,10 +171,10 @@
 	<tr valign="top">
 		<td><p>15.40-<br />16.10</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#dufresne-demystifying-allocation-query">Demystifying the allocation query</a><br />Nicolas Dufresne (stormer), Collabora</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#murthy-video-filters">Video Filters and their Applications</a><br />Sanjay Narasimha Murthy, Samsung</p>
 		</td>
 		<td><p>15.40-<br />16.10</p></td>
 	</tr>
@@ -179,10 +182,10 @@
 	<tr valign="top">
 		<td><p>16.15-<br />16.45</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#taymans-pinos-camera-sharing">Camera Sharing and Sandboxing with Pinos</a><br />Wim Taymans (wtay), RedHat</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#prajod-ti-jacinto-6">Hardware-accelerated multimedia on TI’s Jacinto 6 SoC</a><br />Pooja Prajod, Texas Instruments</p>
 		</td>
 		<td><p>16.15-<br />16.45</p></td>
 	</tr>
@@ -229,10 +232,15 @@
 		<td style="border:none" colspan="2"></td>
 		<td style="border:none"></td>
 	</tr>
+</table>
 
+<br />
+<br />
+<br />
 
 <!-- DAY 2 -->
 
+<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0" name="friday" id="friday">
 	<tr>
 		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
 			<p align="center"><font color="white">Friday 9th of October 2015</font></p>
@@ -247,17 +255,17 @@
 
 	<tr valign="top" bgcolor="#E0E0E0">
 		<td><p>09.00-<br />10.00</p></td>
-		<td colspan="2"><p align="center"><b>Breakfast Buffet</b></p></td>
+		<td colspan="2"><p align="center"><b>Breakfast Buffet</b><br /><small>(note that we start a bit later on Friday, at 10am)</small></p></td>
 		<td><p>09.00-<br />10.00</p></td>
 	</tr>
 
 	<tr valign="top">
 		<td><p><b>10.00</b>-<br />10.30</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#waters-opengl-desktop-es-for-the-gstreamer-pipeline">OpenGL Desktop/ES for the GStreamer pipeline</a><br />Matthew Waters (ystreet00), Centricular</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#thiery-robust-lipsync-detection">Robust lipsync error detection using GStreamer and QR Codes</a><br />Florent Thiery, Ubicast</p>
 		</td>
 		<td><p><b>10.00</b>-<br />10.30</p></td>
 	</tr>
@@ -265,10 +273,10 @@
 	<tr valign="top">
 		<td><p>10.35-<br />11.05</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#nikolaidou-bins">Bin It! AKA, How to use bins and bin subclasses to keep state local and easily manage dynamic pipelines</a><br />Vivia Nikolaidou, ToolsOnAir</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#lopez-fernandez-webrtc-endpoint">Implementing a WebRTC endpoint in GStreamer: challenges, problems and perspectives</a><br />Luis López Fernández</p>
 		</td>
 		<td><p>10.35-<br />11.05</p></td>
 	</tr>
@@ -282,10 +290,10 @@
 	<tr valign="top">
 		<td><p>11.30-<br />12.15</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">45-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#daede-video-codecs">Daala, NETVC, and the Alliance for Open Media: the plan for royalty free video</a><br />Thomas Daede, Mozilla</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">45-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#droge-synchronised-distributed-live-media-processing">Synchronised multi-room media playback and distributed live media processing and mixing with GStreamer</a><br />Sebastian Dröge (slomo), Centricular</p>
 		</td>
 		<td><p>11.30-<br />12.15</p></td>
 	</tr>
@@ -301,10 +309,10 @@
 	<tr valign="top">
 		<td><p>12.30-<br />13.00</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#">Bringing GStreamer to Radio Broadcasting</a><br />Marcin Lewandowski, RadioKit</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#paris-diaz-large-pipeline-perf">Improving GStreamer performance on large pipelines: from profiling to optimization</a><br />Miguel París Díaz, Kurento</p>
 		</td>
 		<td><p>12.30-<br />13.00</p></td>
 	</tr>
@@ -332,10 +340,10 @@
 	<tr valign="top">
 		<td><p>15.30-<br />16.15</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">45-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#colubri-processing">Interactive video playback and capture in the Processing Language via GStreamer</a><br />Andres Colubri, processing.org</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">45-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#schmidt-distributed-acoustic-triangulation">Distributed Acoustic Triangulation</a><br />Jan Schmidt (thaytan), Centricular</p>
 		</td>
 		<td><p>15.30-<br />16.15</p></td>
 	</tr>
@@ -351,10 +359,10 @@
 	<tr valign="top">
 		<td><p>16.30-<br />17.00</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#manley-camera-capture-testing">Pointing cameras at TVs: when HDMI video-capture is not an option</a><br />Will Manley, stb-tester.com</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">30-min talk</a><br />Foo Bar, Talk Inc</p>
+		<p><a href="&site;/conference/2015/speakers.html#polezhaiev-profiling">Instrumentation-based profiling of GStreamer pipelines</a><br />Kyrylo Polezhaiev</p>
 		</td>
 		<td><p>16.30-<br />17.00</p></td>
 	</tr>
@@ -374,5 +382,13 @@
 	</tr>
 
 </table>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 </body>
 </page>
