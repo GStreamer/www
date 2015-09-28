@@ -129,9 +129,9 @@ and demuxers. As GStreamer timestamps are positive value, GstSegment offset
 has been implemented to represent these negative values by simply pushing
 forward the timestamp.
 
-This came with new APIs. Notably gst_segment_to_running_time_full() was added
+This came with new APIs. Notably gst\_segment\_to\_running\_time\_full() was added
 to allow to get the running time of a timestamp that is outside the segment
-boundary. There is also gst_video_encoder_set_min_pts() which makes it easy
+boundary. There is also gst\_video\_encoder\_set\_min\_pts() which makes it easy
 for encoders to shift forward the segment and avoid negative values.
 The GstCollectData type of GstCollectPads has been extended to hold a gint64
 copy of the running time DTS so muxers can account for it. Note that the
@@ -608,18 +608,23 @@ to a GstBus if requested.
 
 New clock API:
 
-- gst_clock_adjust_with_calibration()
-- gst_clock_add_observation_unapplied()
-- GST_CLOCK_FLAG_NEEDS_STARTUP_SYNC and related API
+- gst\_clock\_adjust\_with\_calibration()
+- gst\_clock\_add\_observation\_unapplied()
+- GST\_CLOCK\_FLAG\_NEEDS\_STARTUP\_SYNC and related API
 
 In the case of network clocks, it might take a while until these clocks
 are properly synced up with the remote clock. Applications may want to wait
 for those clocks to be in sync before using them. Such
-clocks are flagged with the GST_CLOCK_FLAG_NEEDS_STARTUP_SYNC now, and
+clocks are flagged with the GST\_CLOCK\_FLAG\_NEEDS\_STARTUP\_SYNC now, and
 applications can wait for the clock to be in sync with
-gst_clock_wait_for_sync() (this will block), check sync status with
-gst_clock_is_synced(), or wait asynchronously for the "synced" signal
+gst\_clock\_wait\_for\_sync() (this will block), check sync status with
+gst\_clock\_is\_synced(), or wait asynchronously for the "synced" signal
 of the clock to be emitted.
+
+You can create an NTP clock with
+[gst\_ntp\_clock\_new()](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/GstNetClientClock.html#gst-ntp-clock-new)
+and a PTP clock with
+[gst\_ptp\_clock\_new()](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/gstreamer-libs-GstPtpClock.html#gst-ptp-clock-new) .
 
 ### textoverlay and subtitle rendering improvements
 
@@ -752,7 +757,7 @@ in such a way that the diffs will be minimal, but all of that is not
 implemented yet.
 
 It also makes certain assumption about how data will be written out
-(no re-ordering for example), and that the new GST_BUFFER_FLAG_SYNC_AFTER
+(no re-ordering for example), and that the new GST\_BUFFER\_FLAG\_SYNC\_AFTER
 flag will be honoured.
 
 ### Live mixing and other improvements in aggregator, audiomixer and compositor
@@ -895,9 +900,9 @@ use. Before it would error out if one of the pads was unlinked.
 There's a new **ignoreerror element to suppress/transform flow errors in
 sub-branches of a pipeline**, which makes it possible for example to remove
 or restart a misbehaving network sink without stopping the rest of the
-pipeline. Without this, a sink that errors out would return a GST_FLOW_ERROR
+pipeline. Without this, a sink that errors out would return a GST\_FLOW\_ERROR
 to the upstream elements which will make the pipeline stop and error out, and
-there was no way to intercept this GST_FLOW_ERROR.
+there was no way to intercept this GST\_FLOW\_ERROR.
 
 The **new concat element allows for seamless concatenation of input streams**.
 
@@ -993,7 +998,7 @@ available with a fallback to glFinish.
 
 There were also improvements in the integration with both sharing OpenGL
 context internally as well as with external OpenGL contexts. The
-gst_gl_context_get_current*() family of functions provide a simple way to
+gst\_gl\_context\_get\_current*() family of functions provide a simple way to
 retreive the required information to wrap an existing OpenGL context
 created/managed by the application or another library/toolkit.  They provided
 a simple interface that was instrumental in creating a number of GL elements
