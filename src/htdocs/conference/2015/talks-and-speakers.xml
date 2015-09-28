@@ -1018,24 +1018,27 @@ of different issues. We have the following talks scheduled so far
     <li>OpenCV and GStreamer <small><i> · Vanessa Chipi</i></small></li>
     <li>Handling Interleaved and Non-Interleaved streams with GStreamer <small><i> · Ramesh Venkatachalapathy, LGE</i></small></li>
     <li>Done in 6.0 seconds: a new build system for GStreamer? <small><i> · Jussi Pakkanen</i></small></li>
+    <li>Gst daemon and interpipes: A simpler way to get your application done <small><br /><i>Melissa Montero, RidgeRun</i></small></li>
+    <li>Another android camera source for Gstreamer <small><br /><i>Justin Kim, Collabora</i></small></li>
     <li>...</li>
     <li><i>Your talk here?</i></li>
     </ul>
 </p>
 <p>
 <b>Lightning talk speakers</b>, please export your slides into a PDF file and
-either send it to Tim by e-mail (you should have gotten an e-mail from him about
-your lightning talk) or have it ready on a usb stick before the start of the
-lightning talks on Thursday. The idea is that everyone uses the same laptop
-so that we don't waste time hooking up laptops to the projector and configuring
-them. There is no particular order or schedule for the talks. When a speaker
-is called up, we will also mention who is up next. Every speaker has up to
-ca. 5 minutes for their talk. There will be a countdown timer running, and there
-will be some music playing towards the end so the speaker knows they have to
-wrap up. If you don't want to use up the full 5 minutes, that's fine as well.
-It's not possible to go over time, you'll have to finish up so that everyone
-has an opportunity to present their talk. We will try to squeeze as many talks
-into the Thursday slot as possible, and then finish with the rest on Friday.
+either send it to Tim by e-mail (you will receive an e-mail from him about your
+lightning talk before the event) or have it ready on a usb stick before the
+start of the lightning talks on Thursday. The idea is that everyone uses the
+same laptop so that we don't waste time hooking up laptops to the projector
+and configuring them. There is no particular order or schedule for the talks.
+When a speaker is called up, we will also mention who is up next. Every speaker
+has up to ca. 5 minutes for their talk. There will be a countdown timer running,
+and there will be some music playing towards the end so the speaker knows they
+have to wrap up. If you don't want to use up the full 5 minutes, that's fine
+as well. It's not possible to go over time, you'll have to finish up so that
+everyone has an opportunity to present their talk. We will try to squeeze as
+many talks into the Thursday slot as possible, and then finish with the rest
+on Friday.
 </p>
 </td></tr>
 
