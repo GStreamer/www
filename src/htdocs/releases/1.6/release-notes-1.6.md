@@ -10,7 +10,7 @@ See
 [http://gstreamer.freedesktop.org/releases/1.6/](http://gstreamer.freedesktop.org/releases/1.6/)
 for the latest version of this document.
 
-*Last updated: Monday 28 September 2015, 12:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
+*Last updated: Tuesday 29 September 2015, 11:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
 
 ## Highlights
 
@@ -891,11 +891,13 @@ support for muxing KLV metadata into MPEG-TS and demuxing it from MPEG-TS
 encoders, decoders, filters, parsers, payloaders, depayloaders and other elements.
 Before metas attached to buffers would be dropped very easily.
 
-The **tee element has a new "allow-not-linked" property** that makes it ignore
-the fact that some of its output pads are not-linked, as long as there is still
-a linked pad. That makes it easier to dynamically add and remove tee branches,
-and allows application developers to leave unlinked tee pads around for later
-use. Before it would error out if one of the pads was unlinked.
+The **tee element has a new "allow-not-linked" property** that allows you to
+have a tee without any output pads or a tee where all output pads are
+not-linked. Before it would error out if all of the pads were unlinked or
+tee didn't have any source pads. Having unlinked pads should always be fine
+as long as there are still other linked pads, but sometimes it's more
+convenient when building dynamic pipelines to simply keep an unlinked
+tee element around for later use.
 
 There's a new **ignoreerror element to suppress/transform flow errors in
 sub-branches of a pipeline**, which makes it possible for example to remove
