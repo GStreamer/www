@@ -166,8 +166,8 @@ li {
   <p>
     <b>Lightning Talks:</b>
     <ul>
+    <li>Industrial application pipelines <small><i> · Marianna Smidth Buschle, QTechnology</i></small></li>
     <li>Hyperspectral imagery <small><br /><i>Dimitrios Katsaros, QTechnology</i></small></li>
-    <li>Industrial application pipelines <small><br /><i>Dimitrios Katsaros, QTechnology</i></small></li>
     <li>gst-gtk-launch-1.0 <small><br /><i>Florent Thiery, Ubicast</i></small></li>
     <li>liborc (JIT SIMD generator) experiments <small><br /><i>Wim Taymans, RedHat</i></small></li>
     <li>V4L2 GStreamer elements update <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>

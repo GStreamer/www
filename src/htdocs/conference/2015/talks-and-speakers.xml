@@ -1002,8 +1002,8 @@ Lightning talks are short talks by different speakers about a range
 of different issues. We have the following talks scheduled so far
 (in no particular order):
     <ul>
+    <li>Industrial application pipelines <small><i> · Marianna Smidth Buschle, QTechnology</i></small></li>
     <li>Hyperspectral imagery <small><i> · Dimitrios Katsaros, QTechnology</i></small></li>
-    <li>Industrial application pipelines <small><i> · Dimitrios Katsaros, QTechnology</i></small></li>
     <li>gst-gtk-launch-1.0 <small><i> · Florent Thiery, Ubicast</i></small></li>
     <li>liborc (JIT SIMD generator) experiments <small><i> · Wim Taymans, RedHat</i></small></li>
     <li>V4L2 GStreamer elements update <small><i> · Nicolas Dufresne, Collabora</i></small></li>
