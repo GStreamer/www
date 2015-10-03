@@ -110,7 +110,7 @@
 		<p><a href="&site;/conference/2015/speakers.html#droge-gstplayer">GstPlayer - A simple cross-platform API for all your media playback needs</a><br />Sebastian Dröge (slomo), Centricular</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">GStreamer and WebKit</a><br />Philippe Normand (philn), Igalia</p>
+		<p><a href="&site;/conference/2015/speakers.html#normand-webkit">GStreamer and WebKit</a><br />Philippe Normand (philn), Igalia</p>
 		</td>
 		<td><p>12.10-<br />12.30</p></td>
 	</tr>
@@ -309,7 +309,7 @@
 	<tr valign="top">
 		<td><p>12.30-<br />13.00</p></td>
 		<td>
-		<p><a href="&site;/conference/2015/speakers.html#">Bringing GStreamer to Radio Broadcasting</a><br />Marcin Lewandowski, RadioKit</p>
+		<p><a href="&site;/conference/2015/speakers.html#lewandowski-radio-broadcasting">Bringing GStreamer to Radio Broadcasting</a><br />Marcin Lewandowski, RadioKit</p>
 		</td>
 		<td>
 		<p><a href="&site;/conference/2015/speakers.html#paris-diaz-large-pipeline-perf">Improving GStreamer performance on large pipelines: from profiling to optimization</a><br />Miguel París Díaz, Kurento</p>
