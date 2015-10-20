@@ -153,7 +153,7 @@ gst-plugins-base are guaranteed to be API and ABI stable</b></p>
  </td>
 </tr>
 <tr>
- <td>GStreamer Non-Linear Multimedia Editing Plugins Reference</td>
+ <td>GStreamer Non-Linear Multimedia Editing Plugins Reference (deprecated)</td>
  <td width="15%" style="text-align:center">
   <a href="&site;/data/doc/gstreamer/head/gnonlin/html/">HTML</a>
  </td>
@@ -188,17 +188,30 @@ gst-plugins-base are guaranteed to be API and ABI stable</b></p>
   <a href="&site;/data/doc/gstreamer/head/gst-validate/html/">HTML</a>
  </td>
 </tr>
+<tr>
+ <td>Orc - Optimized inner loop Runtime Compiler</td>
+ <td width="15%" style="text-align:center">
+  <a href="&site;/data/doc/orc/">HTML</a>
+ </td>
+</tr>
 
 </table>
 
 <h2>GStreamer Conference Videos and Slides</h2>
 
 <ul>
- <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2014">GStreamer Conference 2014: Videos and Slides</a></li>
- <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2013">GStreamer Conference 2013: Videos and Slides</a></li>
- <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2012">GStreamer Conference 2012: Videos and Slides</a></li>
- <li><a href="http://gstconf.ubicast.tv/channels/#conferences-2011">GStreamer Conference 2011: Videos and Slides</a></li>
- <li><a href="http://gstconf.ubicast.tv/channels/#conferences-2010">GStreamer Conference 2010: Videos and Slides</a></li>
+ <li><!--<a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2015"> -->GStreamer Conference 2015: Videos and Slides<!--</a>--> (coming soon)
+     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2015/">(PDF slides)</a></li>
+ <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2014">GStreamer Conference 2014: Videos and Slides</a>
+     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2014/">(PDF slides)</a></li>
+ <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2013">GStreamer Conference 2013: Videos and Slides</a>
+     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2013/">(PDF slides)</a></li>
+ <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2012">GStreamer Conference 2012: Videos and Slides</a>
+     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2012/">(PDF slides)</a></li>
+ <li><a href="http://gstconf.ubicast.tv/channels/#conferences-2011">GStreamer Conference 2011: Videos and Slides</a>
+     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2011/">(PDF slides)</a></li>
+ <li><a href="http://gstconf.ubicast.tv/channels/#conferences-2010">GStreamer Conference 2010: Videos and Slides</a>
+     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2010/">(PDF slides)</a></li>
 </ul>
 
 <h2>GStreamer licensing advisory</h2>
