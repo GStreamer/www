@@ -7031,5 +7031,22 @@ or download tarballs for
         </content>
   </item>
 
+    <item>
+      <date>2015-09-27 12:00</date>
+        <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Python, Validate 1.6.0 stable release (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.6.0 stable release of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+        The builds are available for download from:
+        <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.6.0/">Android</a>,
+	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.6.0/">iOS</a>,
+	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.6.0/">Mac OS X</a> and
+        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.6.0/">Windows</a>.
+        </p>
+        </content>
+    </item>
+
 </news>
 
