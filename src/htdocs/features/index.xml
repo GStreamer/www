@@ -11,10 +11,12 @@
   <body>
 <h2>Multiplatform</h2>
 <p>
-GStreamer has been ported to a wide range of operating systems, processors and
-compilers. These include but are not limited to Linux on x86, PPC and ARM using GCC.
-Solaris on x86 and SPARC using both GCC and Forte, MacOSX, Microsoft Windows
-using MS Visual Developer, IBM OS/400 and Symbian OS.
+GStreamer works on all major operating systems such as Linux, Android,
+Windows, Max OS X, iOS, as well as most BSDs, commercial Unixes, Solaris,
+and Symbian. It has been ported to a wide range of operating systems,
+processors and compilers. It runs on all major hardware architectures
+including x86, ARM, MIPS, SPARC and PowerPC, on 32-bit as well as 64-bit,
+and little endian or big endian.
 </p>
 <p>
 GStreamer can bridge to other multimedia frameworks in order to reuse existing
@@ -109,7 +111,7 @@ components (e.g. codecs) and use platform input/output mechanisms:<ul>
   <li>Access to GStreamer API with <a href="&site;/bindings/">various programming languages</a></li>
 </ul>
 
-<p>GStreamer 0.10 series API is stable since 2005.</p>
+<p>GStreamer 1.x is our latest API series and has been stable since 2012.</p>
 
   </body>
 </page>
