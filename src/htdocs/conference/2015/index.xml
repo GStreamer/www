@@ -42,14 +42,49 @@ li {
 -->
 
   <p>
-  The <b>6<sup><small>th</small></sup> GStreamer Conference</b> will again
-  be co-located with the <i>Embedded Linux Conference Europe (ELCE)</i> and
+  The <b>6<sup><small>th</small></sup> GStreamer Conference</b> was again
+  co-located with the <i>Embedded Linux Conference Europe (ELCE)</i> and
   <i>LinuxCon Europe</i>.
-  The event will be held on Thursday and Friday <b>8-9 October 2015</b> at
+  The event was held on Thursday and Friday <b>8-9 October 2015</b> at
   the Convention Centre Dublin (CCD) in <b>Dublin, Ireland</b>.
   </p>
   <p>
-  <b><a href="http://www.regonline.com/gstreamereu">Register here for the GStreamer Conference</a></b>
+<!--  <b><a href="http://www.regonline.com/gstreamereu">Register here for the GStreamer Conference</a></b> -->
+  Registration is now closed.
+  </p>
+
+  <h2>Post-conference follow-up</h2>
+  <p>
+  The <b>6<sup><small>th</small></sup> GStreamer Conference</b> is now over.
+  Thanks to everyone who attended, we hope you enjoyed it as much as we did.
+  Many thanks to our speakers who have again presented a fantastic range of
+  topics, and last but not least of course a big thanks to our sponsors and
+  partners without whom the conference would not have been possible in this
+  form.
+  </p>
+  <p>
+  Talks have been recorded by <a href="http://www.ubicast.eu/">Ubicast</a> and
+  will be put up on the <a href="https://gstconf.ubicast.tv/">GStreamer Conference videos</a>
+  web site once they're ready. We will announce on the mailing lists,
+  Planet GStreamer and twitter when the videos are up.
+  </p>
+  <p>
+  Slides for some of the talks and the lightning talks can be found in the
+  <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2015/">GStreamer Conference 2015 slides</a>
+  folder.
+  </p>
+  <p>
+  <a href="http://lwn.net">Linux Weekly News (LWN)</a> have attended the
+  conference and have been <a href="https://lwn.net/Archives/ConferenceByYear/#2015-GStreamer_Conference">covering</a>
+  some of the talks (content might be subscriber only when initially
+  published but is usually available freely for non-subscribers the week
+  after):
+    <ul>
+      <li><a href="https://lwn.net/Articles/660528/">A simpler playback tool for GStreamer</a></li>
+      <li><a href="https://lwn.net/Articles/661401/">3D video and device mediation with GStreamer</a></li>
+      <li><a href="https://lwn.net/Articles/661403/">Upcoming work in and around GStreamer</a></li>
+      <li><a href="https://lwn.net/Articles/662014/">Experimental applications of GStreamer</a></li>
+    </ul>
   </p>
 
 <!--
