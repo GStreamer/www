@@ -1,3 +1,35 @@
+# GStreamer 1.6.1 Release Notes
+
+The GStreamer team is proud to announce the first bugfix release in the stable
+1.6 release series of your favourite cross-platform multimedia framework!
+
+This release only contains bugfixes and it is safe to update from 1.6.0. For a
+full list of bugfixes see [Bugzilla](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=73005&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.1).
+
+See
+[http://gstreamer.freedesktop.org/releases/1.6/](http://gstreamer.freedesktop.org/releases/1.6/)
+for the latest version of this document.
+
+*Last updated: Friday 30 October 2015, 14:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
+
+## Major bugfixes
+
+- Crashes in the gst-libav encoders were fixed
+- More DASH-IF test streams are working now
+- Live DASH, HLS and MS SmoothStreaming streams work more reliable and other
+  fixes for the adaptive streaming protocols
+- Reverse playback works with scaletempo to keep the audio pitch
+- Correct stream-time is reported for negative applied_rate
+- SRTP packet validation during decoding does not reject valid packets anymore
+- Fixes for audioaggregator and aggregator to start producing output at the
+  right time, and e.g. not outputting lots of silence in the beginning
+- gst-libav's internal ffmpeg snapshot was updated to 2.8.1
+- cerbero has support for Mac OS X 10.11 (El Capitan)
+- Various memory leaks were fixed, including major leaks in playbin, playsink
+  and decodebin
+- Various GObject-Introspection annotation fixes for bindings
+- [and many, many more](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=73005&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.1)
+
 # GStreamer 1.6 Release Notes
 
 The GStreamer team is proud to announce a new major feature release in the
@@ -9,8 +41,6 @@ new features, bug fixes and other improvements.
 See
 [http://gstreamer.freedesktop.org/releases/1.6/](http://gstreamer.freedesktop.org/releases/1.6/)
 for the latest version of this document.
-
-*Last updated: Tuesday 29 September 2015, 11:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
 
 ## Highlights
 

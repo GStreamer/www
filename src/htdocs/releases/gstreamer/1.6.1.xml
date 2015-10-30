@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.6.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is proud to announce the first bugfix release in the stable
+1.6 release series of your favourite cross-platform multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it is safe to update from 1.6.0. For a
+full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;limit=0&amp;list_id=73005&amp;order=bug_id&amp;product=GStreamer&amp;resolution=FIXED&amp;target_milestone=1.6.1">Bugzilla</a>.
+</p>
+
+<p>
+See <a href="http://gstreamer.freedesktop.org/releases/1.6/">http://gstreamer.freedesktop.org/releases/1.6/</a>
+for the full release notes.
+</p>
+
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+<p>
+Applications ported to GStreamer 1.0 include Totem, RhythmBox, Sound-Juicer,
+Pitivi, Cheese, Empathy, Transmageddon, and others.
+</p>
+  </applications>
+-->
+
+            <contributors>
+	<person>Edward Hervey</person>
+	<person>Florin Apostol</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Sauer</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vineeth TM</person>
+	<person>Vivia Nikolaidou</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>747612</id>
+      <summary>Valgrind 3.7.0 chokes on match-leak-kinds in gst.supp</summary>
+    </bug>
+    <bug>
+      <id>756069</id>
+      <summary>Gstreamer: Fix sample memory leaks</summary>
+    </bug>
+    <bug>
+      <id>756136</id>
+      <summary>gstreamer-1.6.0 doesn't compile on OS X 10.6: header file issue in gst-ptp-helper.c</summary>
+    </bug>
+    <bug>
+      <id>756645</id>
+      <summary>multiqueue: Improve incoming SEGMENT handling</summary>
+    </bug>
+    <bug>
+      <id>756810</id>
+      <summary>segment_to_stream_time and position_from_stream_time miscalculate when applied_rate &lt; 0</summary>
+    </bug>
+    <bug>
+      <id>756898</id>
+      <summary>pad: gst_pad_probe_info_get_buffer_list() has wrong ownership transfer</summary>
+    </bug>
+    <bug>
+      <id>757065</id>
+      <summary>uri: incorrect behavior when merging uris ending in ..</summary>
+    </bug>
+    <bug>
+      <id>757257</id>
+      <summary>pad: Unblock blocking pad probes when receiving FLUSH_START in send_event() too</summary>
+    </bug>
+  </bugs>
+</release>
