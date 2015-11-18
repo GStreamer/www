@@ -33,10 +33,10 @@ parallel.
 </p>
 </td>
 <td>
-<a href="&site;/data/images/totem.png">
-<img src="&site;/data/images/totem_small.png" height="100"
+<a href="&site;/data/images/gtk-play-sintel.png">
+<img src="&site;/data/images/gtk-play-sintel-small.png" height="100"
      border="0" align="right" valign="top"
-     alt="totem demo image" class="floatright" /></a>
+     alt="gst-player gtk+ backend playing Sintel" class="floatright" /></a>
 </td>
 </tr>
 </table>
