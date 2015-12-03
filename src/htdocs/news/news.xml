@@ -7113,5 +7113,27 @@ available for Windows 32/64-bit, iOS and Mac OS X and Android.
         </content>
     </item>
 
+    <item>
+      <date>2015-12-03 14:00</date>
+        <title>Official GStreamer GitHub mirror available</title>
+        <content>
+          <p>
+            Due to popular demand in the past, we now have an official mirror of
+            all GStreamer GIT repositories on GitHub: <a href="https://github.com/GStreamer">https://github.com/GStreamer</a>.
+            These are synced every 12-24 hours with the main repositories at
+            <a href="http://cgit.freedesktop.org/gstreamer/">http://cgit.freedesktop.org/gstreamer/</a>.
+          </p>
+          <p>
+            Pull requests are not going to be accepted on GitHub and are going to
+            be closed automatically. Patches should go to Bugzilla as usual, as
+            well as feature requests and bug reports.
+          </p>
+          <p>
+            See <a href="http://gstreamer.freedesktop.org/wiki/SubmittingPatches/">http://gstreamer.freedesktop.org/wiki/SubmittingPatches/</a>
+            for details and report anything here <a href="https://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">https://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer</a>
+          </p>
+        </content>
+    </item>
+
 </news>
 
