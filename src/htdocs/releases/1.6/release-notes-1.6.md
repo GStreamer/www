@@ -1,3 +1,41 @@
+# GStreamer 1.6.2 Release Notes
+
+The GStreamer team is proud to announce the second bugfix release in the stable
+1.6 release series of your favourite cross-platform multimedia framework!
+
+This release only contains bugfixes and it is safe to update from 1.6.0 and
+1.6.1. For a full list of bugfixes see [Bugzilla](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=83309&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.2).
+
+See
+[http://gstreamer.freedesktop.org/releases/1.6/](http://gstreamer.freedesktop.org/releases/1.6/)
+for the latest version of this document.
+
+*Last updated: Monday 14 December 2015, 16:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
+
+## Major bugfixes
+
+- Crashes in gst-libav with sinks that did not provide a buffer pool
+  but supported video metadata were fixed. This affected d3dvideosink
+  and some 3rd party sinks. Also related fixes for crashes when a downstream
+  buffer pool failed allocation.
+- Big GL performance improvement on iOS by a factor of 2 by using Apple's sync
+  extension.
+- Deadlocks in the DirectSound elements on Windows, and the behaviour of its
+  mute property were fixed.
+- The Direct3D video sink does not crash anymore when minimizing the window
+- The library soname generation on Android >= 6.0 was fixed, which previously
+  caused GStreamer to fail to load there.
+- File related elements have large-file (>2GB) support on Android now.
+- gst-libav was updated to ffmpeg 2.8.3.
+- Deserialization of custom events in the GDP depayloader was fixed.
+- Missing OpenGL context initialization in the Qt/QML video sink was fixed in
+  certain situations.
+- Interoperability with some broken RTSP servers using HTTP tunnel was
+  improved.
+- Various compilation fixes for Windows.
+- Various smaller memory leak and other fixes in different places.
+- [and many, many more](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=83309&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.2)
+
 # GStreamer 1.6.1 Release Notes
 
 The GStreamer team is proud to announce the first bugfix release in the stable

@@ -7135,5 +7135,53 @@ available for Windows 32/64-bit, iOS and Mac OS X and Android.
         </content>
     </item>
 
+    <item>
+      <date>2015-12-14 16:00</date>
+        <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Python 1.6.2 stable release</title>
+        <content>
+
+<p>
+The GStreamer team is proud to announce the second bugfix release in the stable
+1.6 release series of your favourite cross-platform multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it is safe to update from 1.6.0 and 1.6.1. For a
+full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;limit=0&amp;list_id=83309&amp;order=bug_id&amp;product=GStreamer&amp;resolution=FIXED&amp;target_milestone=1.6.2">Bugzilla</a>.
+</p>
+
+<p>
+See <a href="http://gstreamer.freedesktop.org/releases/1.6/">http://gstreamer.freedesktop.org/releases/1.6/</a>
+for the full release notes.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately by the GStreamer project.
+</p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.6.2.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.6.2.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.6.2.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.6.2.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.6.2.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-libav/1.6.2.html">gst-libav</a>,
+<a href="&site;/releases/gst-rtsp-server/1.6.2.html">gst-rtsp-server</a>,
+<a href="&site;/releases/gst-python/1.6.2.html">gst-python</a>, or
+<a href="&site;/releases/gst-editing-services/1.6.2.html">gst-editing-services</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.6.2.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.6.2.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.6.2.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.6.2.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.6.2.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.6.2.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.6.2.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.6.2.tar.xz">gst-python</a>, or
+<a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.6.2.tar.xz">gst-editing-services</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
 
