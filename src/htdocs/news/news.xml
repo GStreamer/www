@@ -7184,7 +7184,7 @@ or download tarballs for
   </item>
 
     <item>
-      <date>2015-12-24 8:00</date>
+      <date>2015-12-24 08:00</date>
         <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Python 1.6.2 stable release (binaries)</title>
         <content>
 <p>
@@ -7242,8 +7242,6 @@ or download tarballs for
         </p>
         </content>
   </item>
-
-
 
 </news>
 
