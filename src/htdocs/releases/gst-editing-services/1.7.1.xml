@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version>1.7.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.7 release series. The 1.7 release series is adding new features on top of
+the 1.0, 1.2, 1.4 and 1.6 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.7 release series
+will lead to the stable 1.8 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.7 release series.
+</p>
+
+  </intro>
+
+    <contributors>
+	<person>Justin Kim</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Nicolas Dufresne</person>
+	<person>Sebastian Dröge</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vineeth TM</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>753864</id>
+      <summary>editing-services: Fix memory leaks when context parse fails.</summary>
+    </bug>
+    <bug>
+      <id>755247</id>
+      <summary>{track,videotrack,smart-video-mixer}: leaks their internal objects</summary>
+    </bug>
+    <bug>
+      <id>759758</id>
+      <summary>build failure with clang, converting one enum type to another</summary>
+    </bug>
+  </bugs>
+</release>

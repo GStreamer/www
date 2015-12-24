@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.7.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.7 release series. The 1.7 release series is adding new features on top of
+the 1.0, 1.2, 1.4 and 1.6 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.7 release series
+will lead to the stable 1.8 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.7 release series.
+</p>
+
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+<p>
+Applications ported to GStreamer 1.0 include Totem, RhythmBox, Sound-Juicer,
+Pitivi, Cheese, Empathy, Transmageddon, and others.
+</p>
+  </applications>
+-->
+
+      <contributors>
+	<person>Aleix Conchillo Flaqué</person>
+	<person>Anton Bondarenko</person>
+	<person>Athanasios Oikonomou</person>
+	<person>Aurélien Zanelli</person>
+	<person>Duncan Palmer</person>
+	<person>Edward Hervey</person>
+	<person>Florin Apostol</person>
+	<person>Guillaume Desmottes</person>
+	<person>Heinrich Fink</person>
+	<person>Jan Alexander Steffens (heftig)</person>
+	<person>Jan Schmidt</person>
+	<person>Koop Mast</person>
+	<person>Luis de Bethencourt</person>
+	<person>Lukasz Forynski</person>
+	<person>Marcin Kolny</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Matthew Waters</person>
+	<person>Miguel París Díaz</person>
+	<person>Nicolas Dufresne</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Philippe Normand</person>
+	<person>Ravi Kiran K N</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Ross Burton</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Sauer</person>
+	<person>Stian Selnes</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Ting-Wei Lan</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vineeth TM</person>
+	<person>Vivia Nikolaidou</person>
+	<person>Wim Taymans</person>
+	<person>Xavier Claessens</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  
+
+  <bugs>
+    <bug>
+      <id>600648</id>
+      <summary>multiqueue: queues up too much data, excessive memory use with subtitle streams</summary>
+    </bug>
+    <bug>
+      <id>755822</id>
+      <summary>test_ABI: failed ABI check</summary>
+    </bug>
+    <bug>
+      <id>702921</id>
+      <summary>[pygi] python applications cannot interpret buffer metadata</summary>
+    </bug>
+    <bug>
+      <id>733187</id>
+      <summary>integrating the tracer branch</summary>
+    </bug>
+    <bug>
+      <id>744040</id>
+      <summary>bin: Deadlock when sending event</summary>
+    </bug>
+    <bug>
+      <id>753851</id>
+      <summary>gstreamer: Fix memory leaks when context parse fails.</summary>
+    </bug>
+    <bug>
+      <id>754112</id>
+      <summary>pad: don't fallback to caps queries with proxy pads</summary>
+    </bug>
+    <bug>
+      <id>754166</id>
+      <summary>debug: Dump pad properties values</summary>
+    </bug>
+    <bug>
+      <id>754356</id>
+      <summary>event: Make sure that timestamp + diff in QoS events is never smaller than 0</summary>
+    </bug>
+    <bug>
+      <id>754418</id>
+      <summary>segment: Added gst_segment_position_from_stream_time()</summary>
+    </bug>
+    <bug>
+      <id>754457</id>
+      <summary>segment: Rewording of struct field descriptions</summary>
+    </bug>
+    <bug>
+      <id>754464</id>
+      <summary>Add support for g_autoptr() and friends</summary>
+    </bug>
+    <bug>
+      <id>754496</id>
+      <summary>tracer: stats: log message structures</summary>
+    </bug>
+    <bug>
+      <id>754678</id>
+      <summary>controller: the cubic interpolation we have implemented can overshoot min/max of the control-point values</summary>
+    </bug>
+    <bug>
+      <id>755498</id>
+      <summary>timedvaluecontrolsource: Use g_sequence_lookup where possible</summary>
+    </bug>
+    <bug>
+      <id>755651</id>
+      <summary>gst-uninstalled: Added env var for uninstalled PTP helper</summary>
+    </bug>
+    <bug>
+      <id>755657</id>
+      <summary>Fix -Werror build for clang</summary>
+    </bug>
+    <bug>
+      <id>755832</id>
+      <summary>interpolationcontrolsource: memory corruption due to wrong  assignment</summary>
+    </bug>
+    <bug>
+      <id>756208</id>
+      <summary>pad: memory leak when pushing events to an EOS pad</summary>
+    </bug>
+    <bug>
+      <id>756507</id>
+      <summary>multiqueue: Use buffer DTS if present, else PTS</summary>
+    </bug>
+    <bug>
+      <id>756564</id>
+      <summary>segment: Don't return -1 for out-of-segment values in running/stream-time conversion functions</summary>
+    </bug>
+    <bug>
+      <id>756760</id>
+      <summary>Tracer framework reuses existing GST_TRACE environment variable</summary>
+    </bug>
+    <bug>
+      <id>756864</id>
+      <summary>stats: memory leak when fgets() fails</summary>
+    </bug>
+    <bug>
+      <id>756870</id>
+      <summary>Don't disable assertions for releases and provide a new GST_ENABLE_EXTRA_CHECKS #define</summary>
+    </bug>
+    <bug>
+      <id>756954</id>
+      <summary>basesink: rename 'pad' arg in LOCK/COND macros</summary>
+    </bug>
+    <bug>
+      <id>757045</id>
+      <summary>tracer: Emit 'element-new' hook when using parse_launch</summary>
+    </bug>
+    <bug>
+      <id>757193</id>
+      <summary>multiqueue: Handle negative DTS</summary>
+    </bug>
+    <bug>
+      <id>757197</id>
+      <summary>pad: Append hooks instead of prepending to call them in the order they were added</summary>
+    </bug>
+    <bug>
+      <id>757353</id>
+      <summary>multiqueue: Fix high_time computation</summary>
+    </bug>
+    <bug>
+      <id>757596</id>
+      <summary>filesink: left in half cleaned in case of fclose failure</summary>
+    </bug>
+    <bug>
+      <id>757821</id>
+      <summary>New GstPadEventFunction which returns a GstFlowReturn</summary>
+    </bug>
+    <bug>
+      <id>758012</id>
+      <summary>systemclock: Use mach_time on Apple platforms</summary>
+    </bug>
+    <bug>
+      <id>758078</id>
+      <summary>plugin: Dependency hash does not work with 32 or more files</summary>
+    </bug>
+    <bug>
+      <id>758080</id>
+      <summary>plugin: Allow using device nodes as plugin dependency</summary>
+    </bug>
+    <bug>
+      <id>758083</id>
+      <summary>plugin: Add prefix support to dependencies</summary>
+    </bug>
+    <bug>
+      <id>758207</id>
+      <summary>debugutils: Fix string memory leak</summary>
+    </bug>
+    <bug>
+      <id>758340</id>
+      <summary>tests: funnel test is racy</summary>
+    </bug>
+    <bug>
+      <id>758541</id>
+      <summary>gstinfo: Fix ISO non-standard predefined identifier warning for __FUNCTION__ when compiled with gcc 5 -Wpedantic</summary>
+    </bug>
+    <bug>
+      <id>758870</id>
+      <summary>clock: GST_STIME_ARGS does not handle GST_CLOCK_STIME_NONE</summary>
+    </bug>
+    <bug>
+      <id>759055</id>
+      <summary>baseparse: post tag list updates on percentage delta instead of fixed delta</summary>
+    </bug>
+    <bug>
+      <id>759089</id>
+      <summary>Add a fallback that copies the commit hook in autogen.sh</summary>
+    </bug>
+    <bug>
+      <id>759125</id>
+      <summary>GstBin: async-handling latency handling is decoupled from parent pipeline</summary>
+    </bug>
+    <bug>
+      <id>759300</id>
+      <summary>element: unref message in _post_message when there is no implementation</summary>
+    </bug>
+    <bug>
+      <id>759430</id>
+      <summary>queue: Illegal memory access of sink event</summary>
+    </bug>
+    <bug>
+      <id>759503</id>
+      <summary>Stopping a stream very soon after starting asserts</summary>
+    </bug>
+    <bug>
+      <id>759713</id>
+      <summary>-Bsymbolic configure check doesn't work on FreeBSD.</summary>
+    </bug>
+    <bug>
+      <id>751182</id>
+      <summary>identity: allow dropping buffers with specified flags</summary>
+    </bug>
+  </bugs>
+</release>

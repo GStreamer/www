@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.7.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.7 release series. The 1.7 release series is adding new features on top of
+the 1.0, 1.2, 1.4 and 1.6 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.7 release series
+will lead to the stable 1.8 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.7 release series.
+</p>
+
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+<!--
+  <applications>
+  </applications>
+-->
+
+    <contributors>
+	<person>Andreas Frisch</person>
+	<person>Antonio Ospite</person>
+	<person>Arnaud Vrac</person>
+	<person>Csaba Toth</person>
+	<person>Edward Hervey</person>
+	<person>Eunhae Choi</person>
+	<person>Evan Callaway</person>
+	<person>Guillaume Desmottes</person>
+	<person>Havard Graff</person>
+	<person>Jan Schmidt</person>
+	<person>Joan Pau Beltran</person>
+	<person>Julien Isorce</person>
+	<person>Kazunori Kobayashi</person>
+	<person>Koop Mast</person>
+	<person>Luis de Bethencourt</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Matthew Waters</person>
+	<person>Michael Olbrich</person>
+	<person>Miguel París Díaz</person>
+	<person>Nicolas Dufresne</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Ognyan Tonchev</person>
+	<person>Pankaj Darak</person>
+	<person>Pavel Bludov</person>
+	<person>Perry Hung</person>
+	<person>Philippe Normand</person>
+	<person>Rajat Verma</person>
+	<person>Ravi Kiran K N</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Rasmussen</person>
+	<person>Song Bing</person>
+	<person>Stefan Sauer</person>
+	<person>Stian Selnes</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Thomas Bluemel</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vineeth T M</person>
+	<person>Vineeth TM</person>
+	<person>Vivia Nikolaidou</person>
+	<person>William Manley</person>
+	<person>Wim Taymans</person>
+	<person>Xavier Claessens</person>
+	<person>eunhae choi</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>681447</id>
+      <summary>video overlay composition: fix video blending over transparent frame</summary>
+    </bug>
+    <bug>
+      <id>705579</id>
+      <summary>Playbin prevents plugins requesting a GstContext to work properly</summary>
+    </bug>
+    <bug>
+      <id>726117</id>
+      <summary>typefinding: issue in MPEG-TS detection logic for streams with Null Pids</summary>
+    </bug>
+    <bug>
+      <id>726472</id>
+      <summary>rtpbasepayload: Implement video SDP attributes</summary>
+    </bug>
+    <bug>
+      <id>727970</id>
+      <summary>videorate: remove dead code</summary>
+    </bug>
+    <bug>
+      <id>730926</id>
+      <summary>tags: add GST_TAG_PRIVATE_DATA and expose ID3 private frame ( &quot; PRIV &quot; ) data</summary>
+    </bug>
+    <bug>
+      <id>731791</id>
+      <summary>videometa: add GstVideoAffineTransformationMeta</summary>
+    </bug>
+    <bug>
+      <id>738687</id>
+      <summary>midi: add alsamidisrc, an ALSA MIDI sequencer source</summary>
+    </bug>
+    <bug>
+      <id>749596</id>
+      <summary>rtsp-over-http authentication failure</summary>
+    </bug>
+    <bug>
+      <id>751470</id>
+      <summary>encodebin: Fix special case.</summary>
+    </bug>
+    <bug>
+      <id>752651</id>
+      <summary>decodebin: segfault on setting to NULL</summary>
+    </bug>
+    <bug>
+      <id>753852</id>
+      <summary>gstreamer: base: Fix memory leaks when context parse fails.</summary>
+    </bug>
+    <bug>
+      <id>754054</id>
+      <summary>videorate: remove unnecessary break statement</summary>
+    </bug>
+    <bug>
+      <id>754196</id>
+      <summary>audiodecoder-test: port to using GstHarness</summary>
+    </bug>
+    <bug>
+      <id>754223</id>
+      <summary>audioencoder-tests: port to use GstHarness</summary>
+    </bug>
+    <bug>
+      <id>754450</id>
+      <summary>audiotestsrc: remove frequency and channel number limit</summary>
+    </bug>
+    <bug>
+      <id>755260</id>
+      <summary>decodebin: Fix a race condition accessing the decode_chain field.</summary>
+    </bug>
+    <bug>
+      <id>755301</id>
+      <summary>audioconvert: Integer- &gt; Float conversion creates values slightly smaller than -1.0</summary>
+    </bug>
+    <bug>
+      <id>755440</id>
+      <summary>gst-play: Add keyboard shortcut '0' to seek to beginning</summary>
+    </bug>
+    <bug>
+      <id>755482</id>
+      <summary>videotestsrc: Force alpha downstream if foreground color contains alpha</summary>
+    </bug>
+    <bug>
+      <id>756804</id>
+      <summary>playsink: text_sink dynamic reconnection is not working</summary>
+    </bug>
+    <bug>
+      <id>757008</id>
+      <summary>tests: typefindfunctions: Fix error leak</summary>
+    </bug>
+    <bug>
+      <id>757068</id>
+      <summary>audio{filter,convert,resample}: Clip input buffers to the segment before handling them</summary>
+    </bug>
+    <bug>
+      <id>757351</id>
+      <summary>audioconvert: Latest audioconvert outputs noise</summary>
+    </bug>
+    <bug>
+      <id>757480</id>
+      <summary>Use GST_STIME_FORMAT and GST_STIME_ARGS with GstClockTimeDiff</summary>
+    </bug>
+    <bug>
+      <id>757926</id>
+      <summary>pbutils:encoding-target: Fix string memory leak</summary>
+    </bug>
+    <bug>
+      <id>757927</id>
+      <summary>tests:video: Fix overlay rectangle and buffer leak</summary>
+    </bug>
+    <bug>
+      <id>757928</id>
+      <summary>audio-quantize: Fix dither_buffer memory leak</summary>
+    </bug>
+    <bug>
+      <id>758235</id>
+      <summary>rtspconnection: add support for parsing custom headers</summary>
+    </bug>
+    <bug>
+      <id>758744</id>
+      <summary>allocators: Add logging category for GstFdMemory</summary>
+    </bug>
+    <bug>
+      <id>758911</id>
+      <summary>audiobasesink/src: send latency message on setcaps</summary>
+    </bug>
+    <bug>
+      <id>758922</id>
+      <summary>rtspconnection should optionally make HTTP requests with abs_path instead of absoluteURI</summary>
+    </bug>
+    <bug>
+      <id>759126</id>
+      <summary>appsrc: issues with duration query handling</summary>
+    </bug>
+    <bug>
+      <id>759329</id>
+      <summary>convertframe: Support video crop when convert frame</summary>
+    </bug>
+    <bug>
+      <id>759356</id>
+      <summary>encodebin: Implement an encoding profile serialization format</summary>
+    </bug>
+    <bug>
+      <id>742875</id>
+      <summary>[API] new audiovisualizer base class</summary>
+    </bug>
+    <bug>
+      <id>758754</id>
+      <summary>oggdemux: failing to play an Opus sample file</summary>
+    </bug>
+  </bugs>
+
+</release>

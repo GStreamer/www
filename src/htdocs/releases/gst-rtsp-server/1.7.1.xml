@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-rtsp-server</module>
+  <module-fancy>GStreamer RTSP Server Library</module-fancy>
+  <name></name>
+  <version>1.7.1</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.7 release series. The 1.7 release series is adding new features on top of
+the 1.0, 1.2, 1.4 and 1.6 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.7 release series
+will lead to the stable 1.8 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.7 release series.
+</p>
+
+  </intro>
+
+    <contributors>
+	<person>David Svensson Fors</person>
+	<person>Hyunjun Ko</person>
+	<person>Jan Schmidt</person>
+	<person>Koop Mast</person>
+	<person>Marcus Prebble</person>
+	<person>Nicolas Dufresne</person>
+	<person>Olivier Crête</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Rasmussen</person>
+	<person>Srimanta Panda</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vineeth TM</person>
+	<person>Xavier Claessens</person>
+  </contributors>
+
+<!--
+  <api>
+    <additions>
+    </additions>
+    <deprecations>
+    </deprecations>
+  </api>
+-->
+
+  
+
+  <bugs>
+    <bug>
+      <id>753863</id>
+      <summary>rtsp-server: examples: Fix memory leaks when context parse fails</summary>
+    </bug>
+    <bug>
+      <id>756969</id>
+      <summary>rtsp-server unit tests don't test udp-mcast transport</summary>
+    </bug>
+    <bug>
+      <id>757949</id>
+      <summary>gst_rtsp_server_io_func() pops a context that has not been pushed</summary>
+    </bug>
+    <bug>
+      <id>758179</id>
+      <summary>GstRTSPStream : Create pipeline based on enabled transport type</summary>
+    </bug>
+    <bug>
+      <id>758268</id>
+      <summary>handle_setup_request() expect the media to be suspended</summary>
+    </bug>
+    <bug>
+      <id>758319</id>
+      <summary>rtsp-server: Seeking often hangs forever, waiting for prerolling to happen again</summary>
+    </bug>
+    <bug>
+      <id>758364</id>
+      <summary>rtsp-session-pool: Avoid dollar sign ($) in session ids</summary>
+    </bug>
+    <bug>
+      <id>759010</id>
+      <summary>Valgrind test are faling for rtsp-server for master</summary>
+    </bug>
+  </bugs>
+</release>
