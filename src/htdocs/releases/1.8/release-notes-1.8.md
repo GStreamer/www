@@ -30,11 +30,37 @@ FIXME
 
 ### Noteworthy new API, features and other changes
 
--
+- gst\_audio\_channel\_get\_fallback\_mask() to retrieve a default channel mask
+  for a given number of channels as last resort if the layout is unknown
+
+- new GstVideoAffineTransformationMeta for adding a simple 4x4 affine
+  transformation matrix to video buffers
+
+**FIXME: add GstAudioVisualizer to docs and add link here**
+
+- new GstAudioVisualizer base class for audio visualisation elements; most of
+  the existing visualisers have been ported over to the new base class. This
+  new base class lives in the pbutils library rather than the audio library,
+  since we'd have had to make libgstaudio depend on libgstvideo otherwise,
+  which was deemed somewhat undesirable.
+
+- [g\_autoptr()](https://developer.gnome.org/glib/stable/glib-Miscellaneous-Macros.html#g-autoptr)
+  support for all types is exposed in GStreamer headers now in combination
+  with a sufficiently-new GLib version (i.e. 2.44 or later). This is primarily
+  for the benefit of application developers who would like to make use of
+  this, the GStreamer codebase itself will not be using g_autoptr() for
+  the time being due to portability issues.
+
+- a new GST_TAG_PRIVATE_DATA, used initially to extract and write ID3 PRIV frames
 
 ### Noteworthy element features and additions
 
-FIXME
+**FIXME: add alsamidisrc to docs and add link here**
+
+- [alsamidisrc](): a new ALSA MIDI sequencer source element
+
+- audiotestsrc now supports all audio formats and is no longer artificially
+  limited with regard to the number of channels or sample rate
 
 ### GStreamer OpenGL support improvements
 
@@ -66,7 +92,15 @@ FIXME
 
 ## Miscellaneous
 
-FIXME
+- encodebin now works with "encoder-muxers" such as wavenc
+
+- gst-play-1.0 acquired a new keyboard shortcut: '0' seeks back to the start
+
+## Build and Dependencies
+
+- the GLib dependency requirement was bumped to 2.40
+
+- the -Bsymbolic configure check now works with clang as well
 
 ## Platform-specific improvements
 
