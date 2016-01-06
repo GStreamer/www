@@ -10,15 +10,30 @@ stable 1.x API series of your favourite cross-platform multimedia framework!
 As always, this release is again packed with new features, bug fixes and other
 improvements.
 
-See
-[http://gstreamer.freedesktop.org/releases/1.8/](http://gstreamer.freedesktop.org/releases/1.8/)
-for the latest version of this document.
+See [http://gstreamer.freedesktop.org/releases/1.8/][latest] for the latest
+version of this document.
 
-*Last updated: Thursday 24 December 2015, 11:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.8/release-notes-1.8.md)*
+*Last updated: Tuesday 5 January 2016, 21:00 UTC [(log)][gitlog]*
+
+[latest]: http://gstreamer.freedesktop.org/releases/1.8/
+[gitlog]: http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.8/release-notes-1.8.md
 
 ## Highlights
 
 - FILL ME
+
+- **Hardware-accelerated video decoding on Android**
+
+- **Windows Media reverse playback** support (ASF/WMV/WMA)
+
+- **new tracing system** provides support for more sophisticated debugging tools
+
+- **improved Opus audio codec support**: MPEG-TS demuxer/muxer can now handle Opus;
+  [sample-accurate](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta)
+  encoding/decoding/transmuxing with Ogg, Matroska, ISOBMFF (Quicktime/MP4),
+  and MPEG-TS as container;
+  [new codec utility functions for Opus header and caps handling](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstpbutilscodecutils.html)
+  in pbutils library.
 
 ## Major new features and changes
 
@@ -30,19 +45,8 @@ FIXME
 
 ### Noteworthy new API, features and other changes
 
-- gst\_audio\_channel\_get\_fallback\_mask() to retrieve a default channel mask
-  for a given number of channels as last resort if the layout is unknown
-
-- new GstVideoAffineTransformationMeta for adding a simple 4x4 affine
+- new GstVideoAffineTransformationMeta meta for adding a simple 4x4 affine
   transformation matrix to video buffers
-
-**FIXME: add GstAudioVisualizer to docs and add link here**
-
-- new GstAudioVisualizer base class for audio visualisation elements; most of
-  the existing visualisers have been ported over to the new base class. This
-  new base class lives in the pbutils library rather than the audio library,
-  since we'd have had to make libgstaudio depend on libgstvideo otherwise,
-  which was deemed somewhat undesirable.
 
 - [g\_autoptr()](https://developer.gnome.org/glib/stable/glib-Miscellaneous-Macros.html#g-autoptr)
   support for all types is exposed in GStreamer headers now in combination
@@ -51,9 +55,91 @@ FIXME
   this, the GStreamer codebase itself will not be using g_autoptr() for
   the time being due to portability issues.
 
-- a new GST_TAG_PRIVATE_DATA, used initially to extract and write ID3 PRIV frames
+- GstContexts are now automatically propagated to elements added to a bin
+  or pipeline, and elements now maintain a list of contexts set on them.
+  The list of contexts set on an element can now be queried using the new functions
+  [gst\_element\_get\_context()](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-get-context)
+  and [gst\_element\_get\_contexts()](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-get-contexts). GstContexts are used to share context-specific configuration objects
+  between elements and can also be used by applications to set context-specific
+  configuration objects on elements, e.g. for OpenGL or Hardware-accelerated
+  video decoding.
+
+- new [GST\_BUFFER\_DTS\_OR\_PTS()](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstBuffer.html#GST-BUFFER-DTS-OR-PTS:CAPS)
+  convenience macro that returns the decode timestamp if one is set and
+  otherwise returns the presentation timestamp
+
+- new GstPadEventFullFunc that returns a GstFlowReturn instead of a gboolean.
+  This new API is mostly for internal use and was added to fix a race condition
+  where occasionally internal flow error messages were posted on the bus when
+  sticky events were propagated at just the wrong moment whilst the pipeline
+  is shutting down. This happens primarily when the pipeline is shut down
+  immediately after starting it up. GStreamer would not know that the reason
+  the events could not be propagated is because the pipeline is shutting down
+  and not some other problem, and now the flow error allows GStreamer to know
+  the reason for the failure (and that there's no reason to post an error
+  message). This is particularly useful for queue-like elements which may need
+  to asynchronously propagate a previous flow return from downstream.
+
+- pipeline dumps in form of "dot files" now also show pad properties that
+  differ fro their default value, same it does for elements. This is
+  useful for elements with pad subclasses that provide additional properties,
+  e.g. videomixer or compositor.
+
+- pad probes are now guaranteed to be called in the order they were added
+  (before they were called in reverse order, but no particular order was
+  documented or guaranteed)
+
+- plugins can now have dependencies on device nodes (not just regular files)
+  and also have a prefix filter. This is useful for plugins that expose
+  features (elements) based on available devices, such as the video4linux
+  plugin in case of video decoders on certain embedded systems.
+
+- gst\_segment\_to\_position() has been deprecated and been replaced by the
+  better-named gst\_segment\_position\_from\_running\_time(). At the same time
+  gst\_segment\_position\_from\_stream\_time() was added, as well as \_full()
+  variants of both to cater for negative stream time.
+
+- GstController: the interpolation control source gained a new monotonic cubic
+  interpolation mode that unlike the existing cubic mode will never overshoot
+  the min/max y values set.
+
+- GstNetAddressMeta: can now be read from buffers in language bindings as well,
+  via the new gst\_buffer\_get\_net\_address\_meta() function
+
+- ID3 tag PRIV frames are now extraced into a new GST\_TAG\_PRIVATE\_DATA tag
+
+- gst-launch-1.0 and gst\_parse\_launch() now warn in the most common case if
+  a dynamic pad link could not be resolved, instead of just silently
+  waiting to see if a suitable pad appears later, which is often perceived
+  by users as hanging. Now at least they are being notified and can check
+  their pipeline.
+
+- GstRTSPConnection now also parses custom RTSP message headers and retains
+  them for the application instead of just ignoring them
+
+- rtspsrc: fix authentication over tunneled connections (e.g. RTSP over HTTP)
+
+- gst\_video\_convert\_sample() now crops if there is a crop meta on the input buffer
 
 ### Noteworthy element features and additions
+
+**FIXME**: a lot of this should probably be moved down into 'Miscellaneous'
+
+- *identity*: new ["drop-buffer-flags"](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-identity.html#GstIdentity--drop-buffer-flags)
+  property to drop buffers based on buffer flags. This can be used to drop all
+  non-keyframe buffers, for example.
+
+- *multiqueue*: various fixes and improvement, in particular add special handling
+  for sparse streams such as substitle streams, to make sure we don't overread
+  them any more. For sparse streams it can be normal that there's no buffer for
+  a long period of time, so having no buffer queued is perfectly normal. Before
+  we would often unnecessarily try to fill the subtitle stream queue, which
+  could lead to much more data being queued in multiqueue than necessary.
+
+- *queue2*: new ["avg-in-rate"](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-queue2.html#GstQueue2--avg-in-rate)
+  property that returns the average input rate in bytes per second; also an
+  ["overrun"](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-queue2.html#GstQueue2-overrun) 
+  signal (**FIXME** might get removed again before release, double-check)
 
 **FIXME: add alsamidisrc to docs and add link here**
 
@@ -61,6 +147,83 @@ FIXME
 
 - audiotestsrc now supports all audio formats and is no longer artificially
   limited with regard to the number of channels or sample rate
+
+- gst-libav (ffmpeg codec wrapper): map and enable JPEG2000 decoder
+
+- [multisocketsink] can on request send a custom GstNetworkMessage event
+  upstream whenever data is received from a client on a socket. Similarly,
+  [socketsrc] will on request pick up GstNetworkMessage events from downstream
+  and send any data contained within them via the socket. This allows for
+  simple bidirectional communication.
+
+- matroska muxer and demuxer now support the ProRes video format
+
+- improved VP8/VP9 decoding performance on multi-core systems by enabling
+  multi-threaded decoding in the libvpx-based decoders on such systems
+
+### New tracing tools for developers
+
+A new tracing subsystem API has been added to GStreamer, which provides
+external tracers with the possibility to strategically hook into GStreamer
+internals and collect data that can be evaluated later. These tracers are a
+new type of plugin features, and GStreamer core ships with a few example
+tracers (latency, stats, rusage, log) to start with. Tracers can be loaded
+and configured at start-up via an environment variable (GST\_TRACER\_PLUGINS).
+
+Background: Whilst GStreamer provides plenty of data of what's going on in a
+pipeline via its debug log, that data is not necessarily structured enough to
+be generally useful, and the overhead to enable logging output for all data
+required might be too high in many cases. The new tracing system allows tracers
+to just obtain the data needed at the right spot with as little overhead as
+possible, which will be particularly useful on embedded systems.
+
+Of course it has always been possible to do performance benchmarks and debug
+memory leaks, memory consumption and invalid memory access using standard
+operating system tools, but there are some things that are difficult to track
+with the standard tools, and the new tracing system helps with that. Examples
+are things such as latency handling, buffer flow, ownership transfer of
+events and buffers from element to element, caps negotiation, etc.
+
+For some background on the new tracing system, watch Stefan Sauer's
+GStreamer Conference talk ["A new tracing subsystem for GStreamer"][tracing-0]
+and for a more specific example how it can be useful have a look at
+Thiago Santos's lightning talk ["Analyzing caps negotiation using GstTracer"][tracer-1]
+and his ["GstTracer experiments"][tracer-2] blog post.
+
+This is all still very much work in progress, but we hope this will provide the
+foundation for a whole suite of new debugging tools for GStreamer pipelines.
+
+[tracer-0]: https://gstconf.ubicast.tv/videos/a-new-tracing-subsystem-for-gstreamer/
+[tracer-1]: https://gstconf.ubicast.tv/videos/analyzing-caps-negotiation-using-gsttracer/
+[tracer-2]: http://blog.thiagoss.com/2015/07/23/gsttracer-experiments/
+
+### Audio library improvements
+
+- audio conversion, quantization and channel up/downmixing functionality
+  has been moved from the audioconvert element into the audio library and
+  is now available as public API in form of [GstAudioConverter][audio-0],
+  [GstAudioQuantize][audio-1] and [GstAudioChannelMixer][audio-2].
+  Audio resampling will follow in future releases. **FIXME**: link to docs
+
+- [gst\_audio\_channel\_get\_fallback\_mask()][audio-3]
+  to retrieve a default channel mask for a given number of channels as last
+  resort if the layout is unknown
+
+- new [GstAudioClippingMeta][audio-4] meta for specifying clipping on encoded
+  audio buffers
+
+- new [GstAudioVisualizer][audio-5] base class for audio visualisation elements;
+  most of the existing visualisers have been ported over to the new base class.
+  This new base class lives in the pbutils library rather than the audio library,
+  since we'd have had to make libgstaudio depend on libgstvideo otherwise,
+  which was deemed somewhat undesirable.
+
+[audio-0]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-GstAudioConverter.html
+[audio-1]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-GstAudioQuantize.html
+[audio-2]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiochannels.html#gst-audio-channel-mix-new
+[audio-3]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiochannels.html#gst-audio-channel-get-fallback-mask
+[audio-4]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta
+[audio-5]: **FIXME: add GstAudioVisualizer to docs and add link here**
 
 ### GStreamer OpenGL support improvements
 
@@ -102,6 +265,13 @@ FIXME
 
 - the -Bsymbolic configure check now works with clang as well
 
+- ffmpeg is now required as libav provider, incompatible changes were
+  introduced that make it no longer viable to support both FFmpeg and Libav
+  as libav providers. Most major distros have switched to FFmpeg or are in
+  the process of switching to it anyway, so we don't expect this to be a
+  problem, and there is still an internal copy of ffmpeg that can be used
+  as fallback if needed.
+
 ## Platform-specific improvements
 
 ### Android
@@ -110,7 +280,8 @@ FIXME
 
 ### OS/X and iOS
 
-FIXME
+- the system clock now uses mach\_absolute\_time() on OSX/iOS, which is
+the preferred high-resolution monotonic clock to be used on Apple platforms
 
 ### Windows
 
@@ -129,8 +300,8 @@ suggestions or helped testing.
 
 ## Bugs fixed in 1.8
 
-More than [~9999 bugs FIXME)](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.7.1&target_milestone=1.7.2&target_milestone=1.7.3&target_milestone=1.7.4&target_milestone=1.7.90&target_milestone=1.7.91&target_milestone=1.7.92&target_milestone=1.7.x&target_milestone=1.8.0)
- have been fixed during the development of 1.8.
+More than [~9999 bugs FIXME)][bugs-fixed-in-1.8] have been fixed during
+the development of 1.8.
 
 This list does not include issues that have been cherry-picked into the
 stable 1.6 branch and fixed there as well, all fixes that ended up in the
@@ -138,6 +309,8 @@ stable 1.6 branch and fixed there as well, all fixes that ended up in the
 
 This list also does not include issues that have been fixed without a bug
 report in bugzilla, so the actual number of fixes is much higher.
+
+[bugs-fixed-in-1.8]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.7.1&target_milestone=1.7.2&target_milestone=1.7.3&target_milestone=1.7.4&target_milestone=1.7.90&target_milestone=1.7.91&target_milestone=1.7.92&target_milestone=1.7.x&target_milestone=1.8.0
 
 ## Stable 1.8 branch
 
@@ -170,7 +343,7 @@ release series.
 
 - - -
 
-*These release notes have been prepared by Sebastian Dröge and
-Tim-Philipp Müller with contributions from FIXME.*
+*These release notes have been prepared by Tim-Philipp Müller with
+contributions from **FIXME**.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
