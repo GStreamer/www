@@ -43,6 +43,12 @@ FIXME
 
 - loading of external periods/adaptationsets/etc.?
 
+- external clocks/timing?
+
+- adaptive demuxers (hlsdemux, dashdemux, mssdemux) now support the SNAP_AFTER
+  and SNAP_BEFORE seek flags which will jump to the nearest fragment boundary
+  when executing a seek, which means playback resumes more quickly after a seek.
+
 ### Noteworthy new API, features and other changes
 
 - new GstVideoAffineTransformationMeta meta for adding a simple 4x4 affine
@@ -121,6 +127,19 @@ FIXME
 
 - gst\_video\_convert\_sample() now crops if there is a crop meta on the input buffer
 
+- the debugging system printf functions are now exposed for general use, which
+  supports special printf format specifiers such as GST\_PTR\_FORMAT and
+  GST\_SEGMENT\_FORMAT to print GStreamer-related objects. This is handy for
+  systems that want to prepare some debug log information to be output at a
+  later point in time. The GStreamer-OpenGL subsystem is making use of these
+  new functions, which are [gst\_info\_vasprintf()][gst_info_vasprintf],
+    [gst\_info\_strdup\_vprintf()][gst_info_strdup_vprintf] and
+    [gst\_info\_strdup\_printf()][gst_info_strdup_printf].
+
+[gst_info_vasprintf]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-vasprintf
+[gst_info_strdup_vprintf]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-vprintf
+[gst_info_strdup_printf]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-printf
+
 ### Noteworthy element features and additions
 
 **FIXME**: a lot of this should probably be moved down into 'Miscellaneous'
@@ -161,6 +180,17 @@ FIXME
 - improved VP8/VP9 decoding performance on multi-core systems by enabling
   multi-threaded decoding in the libvpx-based decoders on such systems
 
+- appsrc has a new "wait-on-eos" property, so in cases where it
+  is uncertain if an appsink will have a consumer for its buffers when it
+  receives an EOS this can be set to FALSE to ensure that the appsink will
+  not hang.
+
+- rtph264pay and rtph265pay have a new "config-interval" mode -1 that will
+  re-send the setup data (SPS/PPS/VPS) before every keyframe to ensure
+  optimal coverage and the shortest possibly start-up time for a new client
+
+- mpegtsmux can now mux H.265/HEVC video as well
+
 ### New tracing tools for developers
 
 A new tracing subsystem API has been added to GStreamer, which provides
@@ -196,6 +226,27 @@ foundation for a whole suite of new debugging tools for GStreamer pipelines.
 [tracer-0]: https://gstconf.ubicast.tv/videos/a-new-tracing-subsystem-for-gstreamer/
 [tracer-1]: https://gstconf.ubicast.tv/videos/analyzing-caps-negotiation-using-gsttracer/
 [tracer-2]: http://blog.thiagoss.com/2015/07/23/gsttracer-experiments/
+
+### GstPlayer: a new high-level API for cross-platform multimedia playback
+
+GStreamer has had reasonably high-level API for multimedia playback
+in the form of the playbin element for a long time. This allowed application
+developers to just configure a URI to play, and playbin would take care of
+everything else. This works well, but there is still way too much to do on
+the application-side to implement a fully-featured playback application, and
+too much general GStreamer pipeline API exposed, which does not exactly make
+it the most accessible API to start with.
+
+Enter GstPlayer. GstPlayer's aim is to provide an even higher-level abstraction
+of a fully-featured playback API but specialised for its specific use case. It
+also provides easy integration with and examples for Gtk+, Qt, Android, OS/X,
+iOS and Windows. Watch Sebastian's [GstPlayer talk at the GStreamer Conference][gstplayer-talk]
+for more information, or check out the [GstPlayer API reference][gstplayer-api]
+and [GstPlayer examples][gstplayer-examples].
+
+[gstplayer-api]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/player.html
+[gstplayer-talk]: https://gstconf.ubicast.tv/videos/gstplayer-a-simple-cross-platform-api-for-all-your-media-playback-needs-part-1/
+[gstplayer-examples]: https://github.com/sdroege/gst-player/
 
 ### Audio library improvements
 
@@ -259,6 +310,9 @@ FIXME
 
 - gst-play-1.0 acquired a new keyboard shortcut: '0' seeks back to the start
 
+- gst-play-1.0 supports two new command line switches: -v for verbose output
+  and --flags to configure the playbin flags to use.
+
 ## Build and Dependencies
 
 - the GLib dependency requirement was bumped to 2.40
@@ -282,6 +336,8 @@ FIXME
 
 - the system clock now uses mach\_absolute\_time() on OSX/iOS, which is
 the preferred high-resolution monotonic clock to be used on Apple platforms
+
+- FIXME: loads of applemedia/avfsrc/gl improvements
 
 ### Windows
 
