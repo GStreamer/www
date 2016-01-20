@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.6.3</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce the third bugfix release in the stable
+1.6 release series of your favourite cross-platform multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it is safe to update from 1.6.x. For a
+full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;limit=0&amp;list_id=91562&amp;order=bug_id&amp;product=GStreamer&amp;resolution=FIXED&amp;target_milestone=1.6.3">Bugzilla</a>.
+</p>
+
+<p>
+See <a href="http://gstreamer.freedesktop.org/releases/1.6/">http://gstreamer.freedesktop.org/releases/1.6/</a>
+for the full release notes.
+</p>
+
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+    <contributors>
+	<person>Aleksander Wabik</person>
+	<person>Aurélien Zanelli</person>
+	<person>Florin Apostol</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Sebastian Dröge</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Ting-Wei Lan</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>755657</id>
+      <summary>Fix -Werror build for clang</summary>
+    </bug>
+    <bug>
+      <id>755971</id>
+      <summary>queue2: may overflow unsigned integer arithmetic</summary>
+    </bug>
+    <bug>
+      <id>759948</id>
+      <summary>caps: add 'transfer full' annotation to caps returned by intersection functions</summary>
+    </bug>
+  </bugs>
+</release>

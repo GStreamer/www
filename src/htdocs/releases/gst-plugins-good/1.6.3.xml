@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plugins</module-fancy>
+  <name></name>
+  <version>1.6.3</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce the third bugfix release in the stable
+1.6 release series of your favourite cross-platform multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it is safe to update from 1.6.x. For a
+full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;limit=0&amp;list_id=91562&amp;order=bug_id&amp;product=GStreamer&amp;resolution=FIXED&amp;target_milestone=1.6.3">Bugzilla</a>.
+</p>
+
+<p>
+See <a href="http://gstreamer.freedesktop.org/releases/1.6/">http://gstreamer.freedesktop.org/releases/1.6/</a>
+for the full release notes.
+</p>
+
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plugins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plugins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plugin on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plugins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plugin
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plugins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+    <contributors>
+	<person>Aleix Conchillo Flaqué</person>
+	<person>Nicolas Dufresne</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Sebastian Dröge</person>
+	<person>Thibault Saunier</person>
+	<person>Tim Sheridan</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Dehors</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>759624</id>
+      <summary>v4l2: Exposes colorimetry for RGB format which confuses videoconvert</summary>
+    </bug>
+    <bug>
+      <id>742446</id>
+      <summary>sbcparse: Frame coalescing broken for joint stereo</summary>
+    </bug>
+    <bug>
+      <id>758943</id>
+      <summary>SEGV using rtpj2kdepay &amp; openjpegdec</summary>
+    </bug>
+    <bug>
+      <id>760289</id>
+      <summary>rtpvrawdepay : memory leak</summary>
+    </bug>
+    <bug>
+      <id>760556</id>
+      <summary>rtspsrc: interleaved data and srtp don't play well together</summary>
+    </bug>
+    <bug>
+      <id>760666</id>
+      <summary>vp8enc: Do not mix up Booleans with FlowReturn</summary>
+    </bug>
+  </bugs>
+
+</release>
