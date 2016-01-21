@@ -22,7 +22,9 @@ version of this document.
 
 - FILL ME
 
-- **Hardware-accelerated video decoding on Android**
+- **Hardware-accelerated zero-copy video decoding on Android**
+
+- **new video capture source for Android using the android.hardware.Camera API**
 
 - **Windows Media reverse playback** support (ASF/WMV/WMA)
 
@@ -329,6 +331,13 @@ FIXME
 ## Platform-specific improvements
 
 ### Android
+
+- zero-copy video decoding on Android using the hardware-accelerated decoders
+  has been implemented, and is fully integrated with the GStreamer OpenGL stack
+
+- ahcsrc, a new camera source element, has been merged and can be used to
+  capture video on android devices. It uses the android.hardware.Camera Java
+  API to capture from the system's cameras.
 
 - the OpenGL-based QML video sink can now also be used on Android
 
