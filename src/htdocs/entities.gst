@@ -17,7 +17,7 @@
 <!ENTITY qt-gstreamer-version-stable "1.2.0">
 <!ENTITY gst-android-version-stable "git master">
 <!ENTITY gst-omx-version-stable "1.2.0">
-
+<!ENTITY gst-vaapi-version-stable "1.6.0">
 <!ENTITY gst-validate-stable "1.6.0">
 
 <!ENTITY gst-version-devel "git master">
@@ -31,6 +31,7 @@
 <!ENTITY qt-gstreamer-version-devel "git master">
 <!ENTITY gst-android-version-devel "git master">
 <!ENTITY gst-omx-version-devel "git master">
+<!ENTITY gst-vaapi-version-devel "git master">
 
 <!ENTITY gst-validate-devel "git master">
 <!ENTITY gst-python-version-devel "git master">

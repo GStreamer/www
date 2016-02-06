@@ -150,7 +150,7 @@ Library for creating audio/video editors.
     <description>
 RTSP server library based on GStreamer
     </description>
-    <maintainer>Wim Taymans</maintainer>
+    <maintainer>GStreamer Team</maintainer>
     <versions>
       <stable>&gst-rtsp-server-version-stable;</stable>
       <devel>&gst-rtsp-server-version-devel;</devel>
@@ -185,6 +185,22 @@ Replaces gst-openmax.
     <versions>
       <stable>&gst-omx-version-stable;</stable>
       <devel>&gst-omx-version-devel;</devel>
+    </versions>
+    <status>active</status>
+  </module>
+
+  <module>
+    <id>gstreamer-vaapi</id>
+    <blurb>VA-API integration</blurb>
+    <title>GStreamer VA-API integration</title>
+    <description>
+VA-API-based decoder, encoder, postprocessing and video sink elements
+for GStreamer.
+    </description>
+    <maintainer>Sreerenj Balachandran, Víctor M. Jáquez L., GStreamer Team</maintainer>
+    <versions>
+      <stable>&gst-vaapi-version-stable;</stable>
+      <devel>&gst-vaapi-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -233,7 +249,7 @@ create binary packages for Windows, Android, OS/X and iOS
     More information can be found on the <a href="http://gstreamer.freedesktop.org/wiki/QtGStreamer">QtGStreamer 
     wiki page</a>
     </description>
-    <maintainer>George Kiagiadakis</maintainer>
+    <maintainer></maintainer>
     <versions>
       <stable>&qt-gstreamer-version-stable;</stable>
       <devel>&qt-gstreamer-version-devel;</devel>
@@ -248,7 +264,7 @@ create binary packages for Windows, Android, OS/X and iOS
     <description>
 Streaming server based on GStreamer
     </description>
-    <maintainer>David Schleef</maintainer>
+    <maintainer></maintainer>
     <versions>
       <stable>&gst-streaming-server-version-stable;</stable>
       <devel>&gst-streaming-server-version-devel;</devel>
@@ -270,7 +286,7 @@ timeline-oriented use of GStreamer makes sense.
       <stable>&gnonlin-version-stable;</stable>
       <devel>git master</devel>
     </versions>
-    <status>deprecated (replacement is being worked on as part of gst-editing-services)</status>
+    <status>deprecated (replacement by gnl in gst-editing-services)</status>
   </module>
 
 </modules>
