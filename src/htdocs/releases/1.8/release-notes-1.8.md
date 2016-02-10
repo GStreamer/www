@@ -285,7 +285,7 @@ and [GstPlayer examples][gstplayer-examples].
 FIXME
 
 
-### GStreamer VAAPI support for hardware-accelerated video decoding and encoding on Intel platforms
+### GStreamer VAAPI support for hardware-accelerated video decoding and encoding on Intel (and other) platforms
 
 #### GStreamer VAAPI is now part of upstream GStreamer
 
