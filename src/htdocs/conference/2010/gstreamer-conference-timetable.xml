@@ -13,7 +13,7 @@
 
 <h1>GStreamer Conference 2010</h1>
 <h2>Cambridge, United Kingdom, 26th of October 2010</h2>
-<p><a href="http://gstreamer.freedesktop.org/conference">Back to conference main page</a></p>
+<p><a href="&site;/conference">Back to conference main page</a></p>
 <table width="100%" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0">
 	<col width="68*" />
 	<col width="103*" />
@@ -36,7 +36,7 @@
 			</p>
 		</td>
 		<td width="40%">
-			<p>Keynote - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#taymans">
+			<p>Keynote - <a href="&site;/conference/speakers.html#taymans">
 			GStreamer Current and future developments - Wim Taymans</a>, Collabora Multimedia 
 			</p>
 		</td>
@@ -50,11 +50,11 @@
 			<p>10.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#normand">
+			<p><a href="&site;/conference/speakers.html#normand">
 			Webkit, HTML5 and GStreamer - Philippe Normand</a>, Igalia</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#smith">
+			<p><a href="&site;/conference/speakers.html#smith">
 			Cross platform development with GStreamer - Mike Smith</a>, Songbird</p>
 		</td>
 	</tr>
@@ -63,12 +63,12 @@
 			<p>11.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#hervey">
+			<p><a href="&site;/conference/speakers.html#hervey">
 			Challenges of video editing in your pocket - Edward Hervey</a>,
 			Collabora Multimedia</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#quacchio">
+			<p><a href="&site;/conference/speakers.html#quacchio">
 			A GStreamer based framework for adaptive streaming
 			applications - Emanuele Quacchio</a>, ST Microelectronics</p>
 		</td>
@@ -79,11 +79,11 @@
 			</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#clark">GStreamer and OMAP4 - Rob Clark</a>, Texas Instruments 
+			<p><a href="&site;/conference/speakers.html#clark">GStreamer and OMAP4 - Rob Clark</a>, Texas Instruments 
 			</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#ali">
+			<p><a href="&site;/conference/speakers.html#ali">
 			Implementing DLNA using GStreamer - Zeeshan Ali</a>, Nokia</p>
 		</td>
 	</tr>
@@ -103,11 +103,11 @@
 			<p>14.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#crete">
+			<p><a href="&site;/conference/speakers.html#crete">
 			Integrating VideoConferencing into Everyday Applications, Olivier Crete</a>, Collabora</p>
 		</td>
 		<td WIDTH="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schleef">
+			<p><a href="&site;/conference/speakers.html#schleef">
 			Optimizing multimedia with Orc - David Schleef</a>, Entropy Wave</p>
 		</td>
 	</tr>
@@ -116,11 +116,11 @@
 			<p>15.00</p>
 		</td>
 		<td rowspan="2" width="40%">
-			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#graff">
+			<p>Case study - <a href="&site;/conference/speakers.html#graff">
 			Tandberg and GStreamer, Håvard Graff</a>, Tandberg</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#fujii">
+			<p><a href="&site;/conference/speakers.html#fujii">
 			Landell - live streaming for the masses – Luciana Fujii</a>,Holoscopio</p>
 		</td>
 	</tr>
@@ -129,7 +129,7 @@
 			<p>15.30</p>
 		</td>
 		<td width="33%">
-			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#merali">
+			<p>Case study - <a href="&site;/conference/speakers.html#merali">
 			Flumotion and GStreamer - Zaheer Merali</a></p>
 		</td>
 	</tr>
@@ -149,11 +149,11 @@
 			<p>16.30</p>
 		</td>
 		<td width="40%">
-			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#holmberg">
+			<p>Case study - <a href="&site;/conference/speakers.html#holmberg">
 			GStreamer on Axis devices, Jonas Holmberg</a>, Axis</p>
 		</td>
 		<td width="33%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#nechypurenko">
+			<p><a href="&site;/conference/speakers.html#nechypurenko">
 			Using ICE middleware with GStreamer to implement real-time
 			QoS-aware video streaming for remote controlled vehicle, Andrey
 			Nechypurenko and Maksym Parkachov</a></p>
@@ -165,11 +165,11 @@
 			</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#bisson">
+			<p><a href="&site;/conference/speakers.html#bisson">
 			3D Stereoscopic and GStreamer, Martin Bisson</a></p>
 		</td>
 		<td rowspan="3" width="33%">
-			<p>Case Study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#torra">
+			<p>Case Study - <a href="&site;/conference/speakers.html#torra">
 			Intel SMD elements in GStreamer, Josep Torra</a>, Fluendo</p>
 		</td>
 	</tr>
@@ -178,7 +178,7 @@
 			<p>17.15</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#droge">
+			<p><a href="&site;/conference/speakers.html#droge">
 			WebM and GStreamer, Sebastian Droge</a>, Collabora Multimedia</p>
 		</td>
 	</tr>
@@ -187,7 +187,7 @@
 			<p> 17.30</p>
 		</td>
 		<td width="40%">
-			<p>Case study - <a href="http://gstreamer.freedesktop.org/conference/speakers.html#thiery">
+			<p>Case study - <a href="&site;/conference/speakers.html#thiery">
 			Using gstreamer for building automated webcasting systems, Florent Thiery</a>, Ubicast.eu 
 			</p>
 		</td>
@@ -197,7 +197,7 @@
 			<p>18.00</p>
 		</td>
 		<td width="40%">
-			<p><a href="http://gstreamer.freedesktop.org/conference/speakers.html#schmidt">
+			<p><a href="&site;/conference/speakers.html#schmidt">
 			Interactivity in GStreamer pipelines, Jan Schmidt</a>, Oracle Corporation 
 			</p>
 		</td>

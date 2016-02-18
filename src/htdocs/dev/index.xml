@@ -31,7 +31,7 @@ the manual and the slides to get a general overview and to get you started.</p>
 
 <p>The developers tend to live in IRC on <a href="http://www.freenode.net/">Freenode</a>, in
 <a href="irc://irc.freenode.net/gstreamer">#gstreamer</a>. <!-- Sketching ideas and making plans can be done on the
-<a href="http://gstreamer.freedesktop.org/wiki">gstreamer wiki</a>. -->
+<a href="&site;/wiki">gstreamer wiki</a>. -->
 </p>
                                                                                 
 <H1>Git access</H1>
@@ -78,7 +78,7 @@ You do not need a developer account in order to work on GStreamer. Anonymous
 git access should be sufficient for that, and it's easy to maintain personal
 git branches elsewhere with git (e.g. on a personal server, or gitorious or
 github). Patches can and should then be submitted via bugzilla, as per the
-<a href="http://gstreamer.freedesktop.org/wiki/SubmittingPatches">SubmittingPatches</a>
+<a href="&site;/wiki/SubmittingPatches">SubmittingPatches</a>
 page on the wiki.
 </p>
 <p>
@@ -94,7 +94,7 @@ File a new bug and then attach the patch to the bug.
 <h2>Developer Guidelines</h2>
 
 <p>Best practices for making patches and/or committing to GStreamer git can
-be found on the <a href="http://gstreamer.freedesktop.org/wiki/GitDeveloperGuidelines">GitDeveloperGuidelines</a>
+be found on the <a href="&site;/wiki/GitDeveloperGuidelines">GitDeveloperGuidelines</a>
 wiki page.
 </p>
 -->

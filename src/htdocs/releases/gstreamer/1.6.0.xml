@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
 <?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
 <release>
   <module>gstreamer</module>
@@ -18,7 +19,7 @@ features, bug fixes and other improvements.
 </p>
 <p>
 See
-<a href="http://gstreamer.freedesktop.org/releases/1.6/">http://gstreamer.freedesktop.org/releases/1.6/</a>
+<a href="&site;/releases/1.6/">&site;/releases/1.6/</a>
 for the full list of changes.
 </p>
 

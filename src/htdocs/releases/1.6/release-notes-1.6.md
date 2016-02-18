@@ -6,7 +6,7 @@ The GStreamer team is proud to announce the third bugfix release in the stable
 This release only contains bugfixes and it is safe to update from 1.6.x. For a
 full list of bugfixes see For a full list of bugfixes see [Bugzilla](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=91562&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.3).
 
-See http://gstreamer.freedesktop.org/releases/1.6/ for the latest version of this document.
+See https://gstreamer.freedesktop.org/releases/1.6/ for the latest version of this document.
 
 *Last updated: Wednesday 20 Januar 2016, 13:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
 
@@ -51,7 +51,7 @@ This release only contains bugfixes and it is safe to update from 1.6.0 and
 1.6.1. For a full list of bugfixes see [Bugzilla](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=83309&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.2).
 
 See
-[http://gstreamer.freedesktop.org/releases/1.6/](http://gstreamer.freedesktop.org/releases/1.6/)
+[https://gstreamer.freedesktop.org/releases/1.6/](https://gstreamer.freedesktop.org/releases/1.6/)
 for the latest version of this document.
 
 ## Major bugfixes
@@ -87,7 +87,7 @@ This release only contains bugfixes and it is safe to update from 1.6.0. For a
 full list of bugfixes see [Bugzilla](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=73005&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.1).
 
 See
-[http://gstreamer.freedesktop.org/releases/1.6/](http://gstreamer.freedesktop.org/releases/1.6/)
+[https://gstreamer.freedesktop.org/releases/1.6/](https://gstreamer.freedesktop.org/releases/1.6/)
 for the latest version of this document.
 
 *Last updated: Friday 30 October 2015, 14:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
@@ -119,7 +119,7 @@ This release has been in the works for more than a year and is packed with
 new features, bug fixes and other improvements.
 
 See
-[http://gstreamer.freedesktop.org/releases/1.6/](http://gstreamer.freedesktop.org/releases/1.6/)
+[https://gstreamer.freedesktop.org/releases/1.6/](https://gstreamer.freedesktop.org/releases/1.6/)
 for the latest version of this document.
 
 ## Highlights
@@ -422,21 +422,21 @@ this is often ignored.
  
 Compare the output of these 3 lines on a specially crafted png:
  
-     1.6:  gst-launch-1.0 http://gstreamer.freedesktop.org/media/small/gamma_dalai_lama_gray.png ! \
+     1.6:  gst-launch-1.0 https://gstreamer.freedesktop.org/media/small/gamma_dalai_lama_gray.png ! \
                  pngdec ! imagefreeze ! \
                  videoscale gamma-decode=1 ! \
                  video/x-raw,width=179,height=111 ! videoconvert ! ximagesink
    
 ![scale-1.6-gamma](scale-1.6-gamma.png "Scaled image in 1.6 with gamma correction")
 
-     1.4:  gst-launch-1.0 http://gstreamer.freedesktop.org/media/small/gamma_dalai_lama_gray.png ! \
+     1.4:  gst-launch-1.0 https://gstreamer.freedesktop.org/media/small/gamma_dalai_lama_gray.png ! \
                  pngdec ! imagefreeze ! \
                  videoscale ! \
                  video/x-raw,width=179,height=111 ! videoconvert ! ximagesink
              
 ![scale-1.4-nogamma](scale-1.4-nogamma.png "Scaled image in 1.4 without gamma correction")
 
-     1.6: gst-launch-1.0 http://gstreamer.freedesktop.org/media/small/gamma_dalai_lama_gray.png ! \
+     1.6: gst-launch-1.0 https://gstreamer.freedesktop.org/media/small/gamma_dalai_lama_gray.png ! \
                  pngdec ! imagefreeze ! \
                  videoscale ! \
                  video/x-raw,width=179,height=111 ! videoconvert ! ximagesink
@@ -557,7 +557,7 @@ the next file. All doable, but clearly rather involved. And this does not
 even make sure yet that all files start with a keyframe, for example.
 
 An easier solution was to use the
-[multifilesink](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-multifilesink.html)
+[multifilesink](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-multifilesink.html)
 element, which can switch to another output file on the fly independently
 and can be told when to switch to the next file, e.g. by specifying a maximum
 file size in bytes.
@@ -594,7 +594,7 @@ multifilesink.
 
 Enter the new splitmuxsink element.
 
-[splitmuxsink](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-splitmuxsink.html)
+[splitmuxsink](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-splitmuxsink.html)
 allows for easy chunking of MP4, Matroska, MPEG-TS or Ogg files, in such a
 way that each file part can be played back on its own and starts with a
 keyframe, taking care of everything for you.
@@ -610,7 +610,7 @@ muxes it into ISO MP4 files, splitting as needed to limit size/duration to
 Each file output will be a self-contained valid MP4 file that can be played
 by itself, and each file will start with a keyframe.
 
-[splitmuxsrc](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-splitmuxsrc.html)
+[splitmuxsrc](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-splitmuxsrc.html)
 will then play back a number of files split with splitmuxsink in such a way
 that it is completely seamless and there are no glitches during transitions
 from one file part to the next. This is not as easy to accomplish as it sounds,
@@ -639,8 +639,8 @@ information between elements such as demuxers and decryptors. This API
 is very generic and the details of how it is used varies depending on
 the protection scheme used.
 
-The new API consists of [protection events](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstEvent.html#gst-event-new-protection)
-for general setup information and a [protection meta](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstProtectionMeta.html)
+The new API consists of [protection events](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstEvent.html#gst-event-new-protection)
+for general setup information and a [protection meta](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstProtectionMeta.html)
 that can be attached to individual buffers with buffer/sample-specific information.
 
 This new API was then used to implement support for DASH Common Encryption (CENC)
@@ -732,9 +732,9 @@ gst\_clock\_is\_synced(), or wait asynchronously for the "synced" signal
 of the clock to be emitted.
 
 You can create an NTP clock with
-[gst\_ntp\_clock\_new()](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/GstNetClientClock.html#gst-ntp-clock-new)
+[gst\_ntp\_clock\_new()](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/GstNetClientClock.html#gst-ntp-clock-new)
 and a PTP clock with
-[gst\_ptp\_clock\_new()](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/gstreamer-libs-GstPtpClock.html#gst-ptp-clock-new) .
+[gst\_ptp\_clock\_new()](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/gstreamer-libs-GstPtpClock.html#gst-ptp-clock-new) .
 
 ### textoverlay and subtitle rendering improvements
 
@@ -1198,7 +1198,7 @@ avdec_aac is now the prefered AAC audio decoder (instead of faad).
 
 ### GstHarness API for unit tests
 
-[GstHarness](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/gstreamer-libs-GstHarness.html)
+[GstHarness](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/gstreamer-libs-GstHarness.html)
 is a new convenience API for writing unit tests. It is still quite
 low-level (compared to gst-validate), but still higher-level and more convenient
 than the existing API in libgstcheck.
@@ -1238,7 +1238,7 @@ now uses those elements by default.
 
 The GStreamer Editing Services now integrates with GstValidate, compiling
 against GstValidate allows usage of
-[GstValidateScenario](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-validate/html/scenarios.html)
+[GstValidateScenario](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-validate/html/scenarios.html)
 to execute actions on the timeline (adding/editing/removing clips, adding
 keyframes.... etc) making bug reproduction and debugging much easier. A
 GstValidate testsuite has also been developed for GES allowing stress
@@ -1451,7 +1451,7 @@ The GStreamer Conference is suitable for anyone with an interest
 in GStreamer, whether beginner or expert or just interested to
 see what people are doing with GStreamer.
 
-More info on the [GStreamer Conference 2015 website](http://gstreamer.freedesktop.org/conference/2015/)
+More info on the [GStreamer Conference 2015 website](https://gstreamer.freedesktop.org/conference/2015/)
 
 - - -
 

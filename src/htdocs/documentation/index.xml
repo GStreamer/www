@@ -70,10 +70,10 @@
 <!-- FIXME: save useful bits from wiki
 <tr>
  <td>GStreamer Wiki (see esp.
-   <a href="http://gstreamer.freedesktop.org/wiki/ReleasePlanning">ReleasePlanning</a> and
-   <a href="http://gstreamer.freedesktop.org/wiki/SubmittingPatches">SubmittingPatches</a>)
+   <a href="&site;/wiki/ReleasePlanning">ReleasePlanning</a> and
+   <a href="&site;/wiki/SubmittingPatches">SubmittingPatches</a>)
  </td>
- <td width="15%" style="text-align:center"><a href="http://gstreamer.freedesktop.org/wiki/">HTML</a></td>
+ <td width="15%" style="text-align:center"><a href="&site;/wiki/">HTML</a></td>
 </tr>
 -->
 
@@ -201,17 +201,17 @@ gst-plugins-base are guaranteed to be API and ABI stable</b></p>
 
 <ul>
  <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2015">GStreamer Conference 2015: Videos and Slides</a>
-     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2015/">(PDF slides)</a></li>
+     <a href="&site;/data/events/gstreamer-conference/2015/">(PDF slides)</a></li>
  <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2014">GStreamer Conference 2014: Videos and Slides</a>
-     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2014/">(PDF slides)</a></li>
+     <a href="&site;/data/events/gstreamer-conference/2014/">(PDF slides)</a></li>
  <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2013">GStreamer Conference 2013: Videos and Slides</a>
-     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2013/">(PDF slides)</a></li>
+     <a href="&site;/data/events/gstreamer-conference/2013/">(PDF slides)</a></li>
  <li><a href="http://gstconf.ubicast.tv/channels/#gstreamer-conference-2012">GStreamer Conference 2012: Videos and Slides</a>
-     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2012/">(PDF slides)</a></li>
+     <a href="&site;/data/events/gstreamer-conference/2012/">(PDF slides)</a></li>
  <li><a href="http://gstconf.ubicast.tv/channels/#conferences-2011">GStreamer Conference 2011: Videos and Slides</a>
-     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2011/">(PDF slides)</a></li>
+     <a href="&site;/data/events/gstreamer-conference/2011/">(PDF slides)</a></li>
  <li><a href="http://gstconf.ubicast.tv/channels/#conferences-2010">GStreamer Conference 2010: Videos and Slides</a>
-     <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2010/">(PDF slides)</a></li>
+     <a href="&site;/data/events/gstreamer-conference/2010/">(PDF slides)</a></li>
 </ul>
 
 <h2>GStreamer licensing advisory</h2>

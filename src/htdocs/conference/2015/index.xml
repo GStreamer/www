@@ -70,7 +70,7 @@ li {
   </p>
   <p>
   Slides for some of the talks and the lightning talks can be found in the
-  <a href="http://gstreamer.freedesktop.org/data/events/gstreamer-conference/2015/">GStreamer Conference 2015 slides</a>
+  <a href="&site;/data/events/gstreamer-conference/2015/">GStreamer Conference 2015 slides</a>
   folder.
   </p>
   <p>
@@ -283,7 +283,7 @@ li {
   </p>
   <p>
     Sponsors will receive a number of free registrations as part of their
-    <a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">
+    <a href="&site;/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">
     sponsorship package</a>.
   </p>
 
@@ -316,7 +316,7 @@ li {
   <p>
   The GStreamer Conference 2015 is only possible thanks to the financial support
   from our sponsors. If your company would like to become a sponsor please
-  refer to our <a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">sponsorship information</a>
+  refer to our <a href="&site;/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">sponsorship information</a>
   package.
   </p>
 
@@ -394,7 +394,7 @@ li {
   <h2>Contact</h2>
   <p>
   If you have any questions about the GStreamer Conference or are considering
-  <a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">becoming a sponsor</a>,
+  <a href="&site;/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">becoming a sponsor</a>,
   please contact
     <!-- <a href="mailto:christian.schaller@gmail.com">Christian Schaller</a> or -->
     <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>.
@@ -402,7 +402,7 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
-    <i>2015-September-28</i>: the <a href="http://gstreamer.freedesktop.org/conference/2015/schedule.html">full conference schedule</a> is now available as well
+    <i>2015-September-28</i>: the <a href="&site;/conference/2015/schedule.html">full conference schedule</a> is now available as well
   </p>
   <p>
     <i>2015-September-28</i>: The social event on Thursday 8 Oct in the evening
@@ -501,7 +501,7 @@ li {
 
   <p>
     <small>
-    Interested in <a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">becoming a sponsor</a> ?
+    Interested in <a href="&site;/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">becoming a sponsor</a> ?
     </small>
   </p>
 </td>

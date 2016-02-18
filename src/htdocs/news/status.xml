@@ -95,7 +95,7 @@ gst-plugins-bad: A ported SDL video sink, yay
 
 gst-plugins-ugly: lame updates, documentation work
 
-[1] http://gstreamer.freedesktop.org/documentation/plugins.html
+[1] &site;/documentation/plugins.html
 
 
 Bug Activity
@@ -299,7 +299,7 @@ will be a great time to start porting your application to 0.9.
 </p>
 
 
-<p>[0] http://gstreamer.freedesktop.org/<br/>
+<p>[0] &site;/<br/>
 [1] http://article.gmane.org/gmane.comp.video.gstreamer.devel/13768
 </p>
 
@@ -423,7 +423,7 @@ information to your forearms.</p>
 Well well, there went another week and this status newsletter is all we
 have to show for it, that and some code and tarballs and stuff. I'm now
 syndicating this newsletter over RSS at
-http://gstreamer.freedesktop.org/news/status-rss-1.0.xml, for the more
+&site;/news/status-rss-1.0.xml, for the more
 technologically inclined out there. However it is you read, farewell for
 another half-fortnight. Tu hackeni nenyanyu (Happy hacking).
 </p>
@@ -1339,9 +1339,9 @@ application only if you need it.
 </p>
 
 <p>
-[0] http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstNetTimeProvider.html
+[0] &site;/data/doc/gstreamer/head/gstreamer/html/GstNetTimeProvider.html
 <br />
-[1] http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstNetClientClock.html
+[1] &site;/data/doc/gstreamer/head/gstreamer/html/GstNetClientClock.html
 </p>
 
 
@@ -1664,7 +1664,7 @@ Chinese. Dobre doshli! Huan yin!
 </p>
 
 <p>
-[0] http://gstreamer.freedesktop.org/documentation/gstreamer010.html
+[0] &site;/documentation/gstreamer010.html
 </p>
 
 

@@ -230,7 +230,7 @@ Corporation</A> for making Mozstreamer.</p>
 rebroadcasting <A href="http://cjsw.com/">CJSW</A>, a Calgary radio
 station, using GStreamer.  He's got a radio receiver attached to an
 SBLive!, using gstreamer-launch to encode and send the audio to an
-icecast server. <b>Update</b> here's an <A href="http://gstreamer.freedesktop.org/media/small/benow.mp3">mp3 clip</A> (warning: mpg123 has a cow) and
+icecast server. <b>Update</b> here's an <A href="&site;/media/small/benow.mp3">mp3 clip</A> (warning: mpg123 has a cow) and
 <A href="http://gstreamer.net/media/gstreamer-shoutout2.mp3">another</A> of the cast, complete with mention of GStreamer &lt;g&gt;</p>
 
 
@@ -343,14 +343,14 @@ From left to right : Leon (MAS), Ronald (BBB), Wim (wtay), Thomas (thomasvs), Er
   
     <content><A href="http://effectv.sourceforge.net/">EffecTV</A> is a cool project which allows you to add real-time effects to a video stream captured from a v4l-device.  Combining this with GStreamer allows you to use any effecTV plugin in any pipeline.  This can easily let you do really nice things.  Here's an example.
 <p>
-Starting from <A href="http://gstreamer.freedesktop.org/media/medium/alien.mpg">Alien Song</A>, we first run the pipeline
-<PRE>gst-launch gnomevfssrc location="http://gstreamer.freedesktop.org/media/medium/alien.mpg" ! mpegdemux video_%02d! <BR/>{ queue ! mpeg2dec ! colorspace ! agingTV ! colorspace ! <BR/> mpeg2enc ! disksink location=alien-age.mpg }</PRE> to re-encode the movie with the agingTV effect.  This is the <A href="http://gstreamer.net/media/alien-age.mpg">result</A>.
+Starting from <A href="&site;/media/medium/alien.mpg">Alien Song</A>, we first run the pipeline
+<PRE>gst-launch gnomevfssrc location="&site;/media/medium/alien.mpg" ! mpegdemux video_%02d! <BR/>{ queue ! mpeg2dec ! colorspace ! agingTV ! colorspace ! <BR/> mpeg2enc ! disksink location=alien-age.mpg }</PRE> to re-encode the movie with the agingTV effect.  This is the <A href="http://gstreamer.net/media/alien-age.mpg">result</A>.
 </p><p>
 Next, we re-encode the same video using the edgeTV plug-in :
-<PRE>gst-launch gnomevfssrc location="http://gstreamer.freedesktop.org/media/medium/alien.mpg" ! mpegdemux video_%02d! <BR/>{ queue ! mpeg2dec ! colorspace ! edgeTV ! colorspace ! <BR/> mpeg2enc ! disksink location=alien-edge.mpg }</PRE>
+<PRE>gst-launch gnomevfssrc location="&site;/media/medium/alien.mpg" ! mpegdemux video_%02d! <BR/>{ queue ! mpeg2dec ! colorspace ! edgeTV ! colorspace ! <BR/> mpeg2enc ! disksink location=alien-edge.mpg }</PRE>
 This is the <A href="http://gstreamer.net/media/alien-edge.mpg">result.</A>
 </p><p>Finally, we add the effects; we create an aged version of the edgy version.  This is where GStreamer really shines; in effectv you have to use loopback v4l devices.
-<PRE>gst-launch gnomevfssrc location="http://gstreamer.freedesktop.org/media/medium/alien.mpg" ! mpegdemux video_%02d! <BR/> { queue ! mpeg2dec ! colorspace ! edgeTV ! <BR/> agingTV ! colorspace ! mpeg2enc ! disksink location=alien-edge-age.mpg }</PRE>
+<PRE>gst-launch gnomevfssrc location="&site;/media/medium/alien.mpg" ! mpegdemux video_%02d! <BR/> { queue ! mpeg2dec ! colorspace ! edgeTV ! <BR/> agingTV ! colorspace ! mpeg2enc ! disksink location=alien-edge-age.mpg }</PRE>
 And here's the <A href="http://gstreamer.net/media/alien-edge-age.mpg">result.</A>
 </p><p>
 We hope to work with the effecTV authors to provide a convenient library which will allow easy access to these great effects.
@@ -593,7 +593,7 @@ release. Lots of work has gone into this one and things are really starting to f
 
   <item>  <date>2002-12-19 14:38</date>
   
-    <content>Zeeshan Ali has put up a how-to explaining how he made a video Wall using GStreamer. So read the <A HREF="http://gstreamer.freedesktop.org/apps/videowhale.html">how-to</A>
+    <content>Zeeshan Ali has put up a how-to explaining how he made a video Wall using GStreamer. So read the <A HREF="&site;/apps/videowhale.html">how-to</A>
 and <A HREF="http://www.gstreamer.net/apps/vw/">see the pictures</A>.
     </content>
     <title>Video Wall How-To</title>
@@ -651,7 +651,7 @@ features a huge GUI update and lot better stability.
 
   <item>  <date>2003-02-22 16:02</date>
   
-    <content>The online GStreamer documentation has just been updated to cover the 0.6 release series. Full API docs, a manual and plugin writers guide available for your reading pleasure at <A HREF="http://gstreamer.freedesktop.org/documentation/">the GStreamer documentation page</A>.
+    <content>The online GStreamer documentation has just been updated to cover the 0.6 release series. Full API docs, a manual and plugin writers guide available for your reading pleasure at <A HREF="&site;/documentation/">the GStreamer documentation page</A>.
     </content>
     <title>GStreamer documentation updated</title>
   </item>
@@ -742,7 +742,7 @@ In related news, Scott Wheeler has made Suse packages of GStreamer which you can
 
   <item>  <date>2003-12-20 04:57</date>
   
-    <content>The league of extraordinary gentlemen is proud to announce another release of the GStreamer 0.7 development series. A lot of work has gone into this release to fix up bugs in current plugins and core. Check out our <A HREF="http://gstreamer.freedesktop.org/releases/gstreamer/0.7.3.html">release notes</A> and grab the tarballs from our <A HREF="http://gstreamer.freedesktop.org/releases/gstreamer">download page</A>
+    <content>The league of extraordinary gentlemen is proud to announce another release of the GStreamer 0.7 development series. A lot of work has gone into this release to fix up bugs in current plugins and core. Check out our <A HREF="&site;/releases/gstreamer/0.7.3.html">release notes</A> and grab the tarballs from our <A HREF="&site;/releases/gstreamer">download page</A>
     </content>
     <title>GStreamer 0.7.3 released</title>
   </item>
@@ -1170,7 +1170,7 @@ or download the
     <title>Planet GStreamer Launched</title>
     <content>
 <p>
-Now you can read the daily ramblings and mindless weblog dribble from the <a href="&site;">GStreamer</a> team at <a href="&site;/planet/">Planet GStreamer</a>!
+    Now you can read the daily ramblings and mindless weblog dribble from the <a href="&site;/">GStreamer</a> team at <a href="&site;/planet/">Planet GStreamer</a>!
 </p>
 <p>
 If <a href="&site;/planet/">PG</a> is too much braindump for you, we also now offer a <a href="&site;/news/rss-1.0.xml">GStreamer News RSS 1.0 feed</a> for your pleasure.
@@ -2108,7 +2108,7 @@ or download tarballs for
 <a href="&site;/src/gst-python/gst-python-0.10.0.tar.bz2">gst-python</a>
 </p>
 <p>
-We also have a special <a href="http://gstreamer.freedesktop.org/documentation/gstreamer010.html">release announcement for GStreamer 0.10</a>. Check it out! 
+We also have a special <a href="&site;/documentation/gstreamer010.html">release announcement for GStreamer 0.10</a>. Check it out! 
 </p>
     </content>
   </item>
@@ -4159,10 +4159,10 @@ or download tarballs for
          <title>GStreamer Conference 2011</title>
          <content>
          <p>
-We are very happy to announce that registration and Call for papers is now open for the <a href="http://gstreamer.freedesktop.org/conference">GStreamer Conference 2011</a>. 
+We are very happy to announce that registration and Call for papers is now open for the <a href="&site;/conference">GStreamer Conference 2011</a>. 
          </p>
          <p>
-Due to the success and great attendance of last years event this is the second year we are organizing a conference focusing on GStreamer and GStreamer related technologies. So if you are writing an application or creating a product using GStreamer or potentially using GStreamer this is definitely the conference to attend. So check out the <a href="http://gstreamer.freedesktop.org/conference">conference website</a> and hopefully we see you in Prague this October.
+Due to the success and great attendance of last years event this is the second year we are organizing a conference focusing on GStreamer and GStreamer related technologies. So if you are writing an application or creating a product using GStreamer or potentially using GStreamer this is definitely the conference to attend. So check out the <a href="&site;/conference">conference website</a> and hopefully we see you in Prague this October.
          </p>
 
                  </content>
@@ -4457,7 +4457,7 @@ directly.
           <title>GStreamer Participating in Google Summer of Code 2012</title>
           <content>
           <p>
-The GStreamer project is happy to announce that we are a mentoring organization in the 2012 <a href="http://www.google-melange.com/gsoc/dashboard/google/gsoc2012">Google Summer of Code</a>. This means students from all over the world who are interested in open source and multimedia can apply to do a project related to GStreamer as their paid summer job this year. You can find more information about this and how to apply on the <a href="http://gstreamer.freedesktop.org/wiki/TaskList">GStreamer Google Summer of Code 2012 wiki page.</a>. 
+The GStreamer project is happy to announce that we are a mentoring organization in the 2012 <a href="http://www.google-melange.com/gsoc/dashboard/google/gsoc2012">Google Summer of Code</a>. This means students from all over the world who are interested in open source and multimedia can apply to do a project related to GStreamer as their paid summer job this year. You can find more information about this and how to apply on the <a href="&site;/wiki/TaskList">GStreamer Google Summer of Code 2012 wiki page.</a>. 
                   </p>
                       </content>
   </item>
@@ -4686,7 +4686,7 @@ There will be bugs to fix, and starting from this release there will be
 distinct bug-fixing and feature development cycles, with the goal of
 getting bug-fixes out quicker and unencumbered by other more risky
 changes. See the
-<a href="http://gstreamer.freedesktop.org/wiki/ReleasePlanning/RoadMap">ReleasePlanning/RoadMap page on the wiki</a>
+<a href="&site;/wiki/ReleasePlanning/RoadMap">ReleasePlanning/RoadMap page on the wiki</a>
 for a tentative road map and possible schedule.
         </p>
         <p>
@@ -4710,7 +4710,7 @@ quantal, and other distros.
         </p>
         <p>
 As always, please let us know of any issues you run into by filing a bug
-in bugzilla: http://gstreamer.freedesktop.org/bugs/
+in bugzilla: &site;/bugs/
         </p>
         </content>
   </item>
@@ -5190,9 +5190,9 @@ all their dependencies.
         </p>
         <p>
 Check out the <a href="http://lists.freedesktop.org/archives/gstreamer-devel/2013-June/041449.html">release announcement mail</a> for
-additional information or download the files for <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.0.7/">Windows</a>,
-<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.0.7/">Mac OS X</a> and
-<a href="http://gstreamer.freedesktop.org/data/pkg/android/1.0.7/">Android</a>.
+additional information or download the files for <a href="&site;/data/pkg/windows/1.0.7/">Windows</a>,
+<a href="&site;/data/pkg/osx/1.0.7/">Mac OS X</a> and
+<a href="&site;/data/pkg/android/1.0.7/">Android</a>.
         </p>
         </content>
   </item>
@@ -5259,9 +5259,9 @@ or download tarballs for
 	list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.0.8/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.0.8/">Mac OS X</a> and
-	<a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.0.8/">Windows</a>. Check the
+        Also available are binaries for <a href="&site;/data/pkg/android/1.0.8/">Android</a>,
+	<a href="&site;/data/pkg/osx/1.0.8/">Mac OS X</a> and
+	<a href="&site;/data/pkg/windows/1.0.8/">Windows</a>. Check the
 	<a href="http://lists.freedesktop.org/archives/gstreamer-devel/2013-July/041991.html">release announcement mail</a> of
 	the binaries for more details.
         </p>
@@ -5329,9 +5329,9 @@ or download tarballs for
 	list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.0.9/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.0.9/">Mac OS X</a> and
-	<a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.0.9/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.0.9/">Android</a>,
+	<a href="&site;/data/pkg/osx/1.0.9/">Mac OS X</a> and
+	<a href="&site;/data/pkg/windows/1.0.9/">Windows</a>.
         </p>
         </content>
   </item>
@@ -5418,9 +5418,9 @@ or download tarballs for
 	list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.0.10/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.0.10/">Mac OS X</a> and
-	<a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.0.10/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.0.10/">Android</a>,
+	<a href="&site;/data/pkg/osx/1.0.10/">Mac OS X</a> and
+	<a href="&site;/data/pkg/windows/1.0.10/">Windows</a>.
         </p>
         </content>
   </item>
@@ -5431,7 +5431,7 @@ or download tarballs for
         <content>
         <p>
 The GStreamer team is pleased to announce that the
-<a href="http://gstreamer.freedesktop.org/conference/2013/schedule.html">schedule</a>
+<a href="&site;/conference/2013/schedule.html">schedule</a>
 for this year's GStreamer Conference is now available.
         </p>
         <p>
@@ -5546,10 +5546,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.2.1/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.2.1/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.2.1/">Mac OS X</a> and
-	<a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.2.1/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.2.1/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.2.1/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.2.1/">Mac OS X</a> and
+	<a href="&site;/data/pkg/windows/1.2.1/">Windows</a>.
         </p>
         </content>
   </item>
@@ -5596,10 +5596,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.2.2/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.2.2/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.2.2/">Mac OS X</a> and
-	<a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.2.2/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.2.2/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.2.2/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.2.2/">Mac OS X</a> and
+	<a href="&site;/data/pkg/windows/1.2.2/">Windows</a>.
         </p>
         </content>
   </item>
@@ -5636,10 +5636,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.2.3/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.2.3/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.2.3/">Mac OS X</a> and
-	<a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.2.3/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.2.3/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.2.3/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.2.3/">Mac OS X</a> and
+	<a href="&site;/data/pkg/windows/1.2.3/">Windows</a>.
         </p>
         </content>
   </item>
@@ -5767,10 +5767,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.2.4/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.2.4/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.2.4/">Mac OS X</a> and
-	<a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.2.4/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.2.4/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.2.4/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.2.4/">Mac OS X</a> and
+	<a href="&site;/data/pkg/windows/1.2.4/">Windows</a>.
         </p>
         </content>
   </item>
@@ -5982,10 +5982,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.3.90/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.3.90/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.3.90/">Mac OS X</a> and
-	<a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.3.90/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.3.90/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.3.90/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.3.90/">Mac OS X</a> and
+	<a href="&site;/data/pkg/windows/1.3.90/">Windows</a>.
         </p>
         </content>
   </item>
@@ -6039,10 +6039,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.3.91/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.3.91/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.3.91/">Mac OS X</a> and
-        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.3.91/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.3.91/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.3.91/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.3.91/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.3.91/">Windows</a>.
         </p>
         </content>
   </item>
@@ -6093,10 +6093,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.4.0/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.4.0/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.4.0/">Mac OS X</a> and
-        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.4.0/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.4.0/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.4.0/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.4.0/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.4.0/">Windows</a>.
         </p>
         </content>
   </item>
@@ -6211,10 +6211,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.4.1/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.4.1/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.4.1/">Mac OS X</a> and
-        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.4.1/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.4.1/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.4.1/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.4.1/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.4.1/">Windows</a>.
         </p>
         </content>
   </item>
@@ -6311,10 +6311,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.4.3/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.4.3/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.4.3/">Mac OS X</a> and
-        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.4.3/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.4.3/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.4.3/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.4.3/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.4.3/">Windows</a>.
         </p>
         </content>
   </item>
@@ -6467,10 +6467,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.4.4/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.4.4/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.4.4/">Mac OS X</a> and
-        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.4.4/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.4.4/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.4.4/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.4.4/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.4.4/">Windows</a>.
         </p>
         </content>
   </item>
@@ -6561,10 +6561,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.4.5/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.4.5/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.4.5/">Mac OS X</a> and
-        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.4.5/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.4.5/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.4.5/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.4.5/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.4.5/">Windows</a>.
         </p>
         </content>
   </item>
@@ -6580,7 +6580,7 @@ GStreamer has secured a spot in the May-August round of Outreachy (former OPW). 
 The current round of outreachy internship opportunities is open to women (cis and trans), trans men, genderqueer people, and all participants of the Ascend Project regardless of gender. The organization plans to expand the program to more participants from underrepresented backgrounds in the future. You can find more information about Outreachy <a href="https://www.gnome.org/outreachy/">here</a>.
         </p>
         <p>
-GStreamer application instructions and a list of mentored projects (you can always suggest your own) can be found at the <a href="http://gstreamer.freedesktop.org/projects/outreach.html">GStreamer-Outreachy landing page</a>. If you are interested on applying to an internship position with us, please take a look at the project ideas and get in touch by subscribing to our <a href="http://lists.freedesktop.org/mailman/listinfo/gstreamer-devel">development list</a> and sending an email about your selected project idea. Please include <b>[Outreachy 2015]</b> in the subject so we can easily spot it.
+GStreamer application instructions and a list of mentored projects (you can always suggest your own) can be found at the <a href="&site;/projects/outreach.html">GStreamer-Outreachy landing page</a>. If you are interested on applying to an internship position with us, please take a look at the project ideas and get in touch by subscribing to our <a href="http://lists.freedesktop.org/mailman/listinfo/gstreamer-devel">development list</a> and sending an email about your selected project idea. Please include <b>[Outreachy 2015]</b> in the subject so we can easily spot it.
         </p>
         <p>
 GStreamer participation in this round of the program it's being sponsored by Samsung's Open Source Group. Deadline for applications is April 10.
@@ -6627,10 +6627,10 @@ or download tarballs for
 	and the release notes above for a list of changes.
         </p>
         <p>
-        Also available are binaries for <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.5.1/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.5.1/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.5.1/">Mac OS X</a> and
-        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.5.1/">Windows</a>.
+        Also available are binaries for <a href="&site;/data/pkg/android/1.5.1/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.5.1/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.5.1/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.5.1/">Windows</a>.
         </p>
         </content>
   </item>
@@ -6650,7 +6650,7 @@ Europe.
         </p>
         <p>
 You can (soon) find more details about the conference on the
-<a href="http://gstreamer.freedesktop.org/conference/2015/">GStreamer Conference 2015 web page</a>.
+<a href="&site;/conference/2015/">GStreamer Conference 2015 web page</a>.
         </p>
         <p>
 A call for papers will be sent shortly, and registration will also open
@@ -6731,10 +6731,10 @@ Pre-built binary images of the 1.5.2 development release of GStreamer are now
 available for Windows 32/64-bit, iOS and Mac OS X and Android.
 </p><p>
         The builds are available for download from:
-        <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.5.2/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.5.2/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.5.2/">Mac OS X</a> and
-        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.5.2/">Windows</a>.
+        <a href="&site;/data/pkg/android/1.5.2/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.5.2/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.5.2/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.5.2/">Windows</a>.
         </p>
         </content>
     </item>
@@ -6759,7 +6759,7 @@ The call for papers is now open and talk proposals can be submitted.
         </p>
         <p>
 You can find more details about the conference on the
-<a href="http://gstreamer.freedesktop.org/conference/2015/">GStreamer Conference 2015 web page</a>.
+<a href="&site;/conference/2015/">GStreamer Conference 2015 web page</a>.
         </p>
         <p>
 Talk slots will be available in varying durations from 20 minutes up to
@@ -6933,7 +6933,7 @@ who will be recording the talks again.
   </p>
   <p>
 Considering becoming a sponsor? Please check out our
-<a href="http://gstreamer.freedesktop.org/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">sponsor brief</a>.
+<a href="&site;/conference/2015/gstreamer-conference-sponsor-brief-2015.pdf">sponsor brief</a>.
   </p>
   <p>
 We hope to see you all in Dublin in October! Don't forget to <a href="http://www.regonline.com/gstreamereu">register</a>!
@@ -6997,7 +6997,7 @@ features, bug fixes and other improvements.
 </p>
 <p>
 See
-<a href="http://gstreamer.freedesktop.org/releases/1.6/">http://gstreamer.freedesktop.org/releases/1.6/</a>
+<a href="&site;/releases/1.6/">&site;/releases/1.6/</a>
 for the full list of changes.
 </p>
 
@@ -7040,10 +7040,10 @@ Pre-built binary images of the 1.6.0 stable release of GStreamer are now
 available for Windows 32/64-bit, iOS and Mac OS X and Android.
 </p><p>
         The builds are available for download from:
-        <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.6.0/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.6.0/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.6.0/">Mac OS X</a> and
-        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.6.0/">Windows</a>.
+        <a href="&site;/data/pkg/android/1.6.0/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.6.0/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.6.0/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.6.0/">Windows</a>.
         </p>
         </content>
     </item>
@@ -7064,7 +7064,7 @@ full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_st
 </p>
 
 <p>
-See <a href="http://gstreamer.freedesktop.org/releases/1.6/">http://gstreamer.freedesktop.org/releases/1.6/</a>
+See <a href="&site;/releases/1.6/">&site;/releases/1.6/</a>
 for the full release notes.
 </p>
 
@@ -7105,10 +7105,10 @@ Pre-built binary images of the 1.6.1 stable release of GStreamer are now
 available for Windows 32/64-bit, iOS and Mac OS X and Android.
 </p><p>
         The builds are available for download from:
-        <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.6.1/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.6.1/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.6.1/">Mac OS X</a> and
-        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.6.1/">Windows</a>.
+        <a href="&site;/data/pkg/android/1.6.1/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.6.1/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.6.1/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.6.1/">Windows</a>.
         </p>
         </content>
     </item>
@@ -7129,7 +7129,7 @@ available for Windows 32/64-bit, iOS and Mac OS X and Android.
             well as feature requests and bug reports.
           </p>
           <p>
-            See <a href="http://gstreamer.freedesktop.org/wiki/SubmittingPatches/">http://gstreamer.freedesktop.org/wiki/SubmittingPatches/</a>
+            See <a href="&site;/wiki/SubmittingPatches/">&site;/wiki/SubmittingPatches/</a>
             for details and report anything here <a href="https://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">https://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer</a>
           </p>
         </content>
@@ -7151,7 +7151,7 @@ full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_st
 </p>
 
 <p>
-See <a href="http://gstreamer.freedesktop.org/releases/1.6/">http://gstreamer.freedesktop.org/releases/1.6/</a>
+See <a href="&site;/releases/1.6/">&site;/releases/1.6/</a>
 for the full release notes.
 </p>
 
@@ -7192,10 +7192,10 @@ Pre-built binary images of the 1.6.2 stable release of GStreamer are now
 available for Windows 32/64-bit, iOS and Mac OS X and Android.
 </p><p>
         The builds are available for download from:
-        <a href="http://gstreamer.freedesktop.org/data/pkg/android/1.6.2/">Android</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/ios/1.6.2/">iOS</a>,
-	<a href="http://gstreamer.freedesktop.org/data/pkg/osx/1.6.2/">Mac OS X</a> and
-        <a href="http://gstreamer.freedesktop.org/data/pkg/windows/1.6.2/">Windows</a>.
+        <a href="&site;/data/pkg/android/1.6.2/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.6.2/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.6.2/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.6.2/">Windows</a>.
         </p>
         </content>
     </item>
@@ -7259,7 +7259,7 @@ full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_st
 </p>
 
 <p>
-See <a href="http://gstreamer.freedesktop.org/releases/1.6/">http://gstreamer.freedesktop.org/releases/1.6/</a>
+See <a href="&site;/releases/1.6/">&site;/releases/1.6/</a>
 for the full release notes.
 </p>
 

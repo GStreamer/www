@@ -12,7 +12,7 @@
 
     <!-- talk about what these pictures are here for, e.g. use to link to gst-www -->
     
-    <!-- upload images to http://gstreamer.freedesktop.org/data/images/artwork/ -->
+    <!-- upload images to &site;/data/images/artwork/ -->
     <h2>GStreamer logo created by Brock Frazier.</h2>
     <p>Here are some versions of the GStreamer logo in various sizes.</p>
     <a href="/data/images/artwork/gstreamer-logo.png">GStreamer logo</a><br/>

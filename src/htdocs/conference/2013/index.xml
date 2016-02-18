@@ -17,7 +17,7 @@
 <h1>GStreamer Conference 2013</h1>
 
 <!--
-<h2>The GStreamer Conference 2013 is now over, but we are assembling the slides from the speakers <a href="http://gstreamer.freedesktop.org/wiki/GStreamerConference2012">on this page</a>. We also recorded the talks and they will soon be available for viewing at <a href="http://gstconf.ubicast.tv/">gstconf.ubicast.tv</a>.</h2>
+<h2>The GStreamer Conference 2013 is now over, but we are assembling the slides from the speakers <a href="&site;/wiki/GStreamerConference2012">on this page</a>. We also recorded the talks and they will soon be available for viewing at <a href="http://gstconf.ubicast.tv/">gstconf.ubicast.tv</a>.</h2>
 -->
 <p>
 
@@ -134,7 +134,7 @@ We have a long list of topics to be presented like:
 -->
 <h2>Schedule</h2>
 <p>
-The <a href="http://gstreamer.freedesktop.org/conference/2013/schedule.html">conference schedule</a> and is now available.
+The <a href="&site;/conference/2013/schedule.html">conference schedule</a> and is now available.
 </p>
 
 <h2>Call for Papers</h2>
@@ -179,7 +179,7 @@ been made as to whether your proposal has been accepted.
 </p>
 <p>
 Sponsors will receive a number of free registrations as part of the
-<a href="http://gstreamer.freedesktop.org/conference/2013/gstreamer-sponsor.pdf">sponsorship package</a>.
+<a href="&site;/conference/2013/gstreamer-sponsor.pdf">sponsorship package</a>.
 </p>
 
 <h2>Co-hosted conferences</h2>
@@ -249,13 +249,13 @@ If you are bringing your partner and spouse to San Diego the Linux Foundation is
 <h2>Contact</h2>
 <p>
 If you have any questions about the GStreamer Conference or are considering
-<a href="http://gstreamer.freedesktop.org/conference/2013/gstreamer-sponsor.pdf">becoming a sponsor</a>,
+<a href="&site;/conference/2013/gstreamer-sponsor.pdf">becoming a sponsor</a>,
 please contact
 <!-- <a href="mailto:christian.schaller@gmail.com">Christian Schaller</a> or -->
 <a href="mailto:tim@centricular.net">Tim-Philipp Müller</a>.
 </p>
 <!--
-<p><i>For information on last years conference you will find that on the <a href="http://gstreamer.freedesktop.org/conference/2011">GStreamer Conference 2011</a> website.</i></p>
+<p><i>For information on last years conference you will find that on the <a href="&site;/conference/2011">GStreamer Conference 2011</a> website.</i></p>
 -->
 
 </td>
@@ -303,7 +303,7 @@ please contact
 </p>
 <p>
 <small>
-Interested in <a href="http://gstreamer.freedesktop.org/conference/2013/gstreamer-sponsor.pdf">becoming a sponsor?</a></small>
+Interested in <a href="&site;/conference/2013/gstreamer-sponsor.pdf">becoming a sponsor?</a></small>
 </p>
 </td>
 </tr>

@@ -1,4 +1,11 @@
 <?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+  <!ENTITY % gst-entities SYSTEM "../entities.gst">
+  %gst-entities;
+]>
 <?xml-stylesheet href="plugins.xsl" type="text/xsl"?>
 <page>
   <title>GStreamer 0.10 - The Revolution</title>
@@ -144,6 +151,6 @@ The GStreamer community would also like to express its gratitude to our corporat
 <p>
 For more information about GStreamer and GStreamer applications please visit:
 </p>
-<font size="+5"><a href="http://gstreamer.freedesktop.org">gstreamer.freedesktop.org</a></font></center>
+<font size="+5"><a href="&realsite;">gstreamer.freedesktop.org</a></font></center>
 </body>
 </page>

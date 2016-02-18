@@ -246,7 +246,7 @@ create binary packages for Windows, Android, OS/X and iOS
     with a Qt-style API, plus some helper classes and elements for
     integrating GStreamer better in Qt applications. The goal of this module is to allow
     easy use of GStreamer for applications targetting MeeGo Mobile or the KDE desktop.
-    More information can be found on the <a href="http://gstreamer.freedesktop.org/wiki/QtGStreamer">QtGStreamer 
+    More information can be found on the <a href="&site;/wiki/QtGStreamer">QtGStreamer 
     wiki page</a>
     </description>
     <maintainer></maintainer>

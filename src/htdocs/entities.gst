@@ -48,5 +48,5 @@
 
 <!ENTITY gst-bug-report "http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">
 <!ENTITY gst-repo-http "http://cgit.freedesktop.org/gstreamer/">
-<!ENTITY realsite "http://gstreamer.freedesktop.org">
+<!ENTITY realsite "https://gstreamer.freedesktop.org">
 <!ENTITY nbsp "&#x00A0;">

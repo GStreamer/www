@@ -10,13 +10,13 @@ stable 1.x API series of your favourite cross-platform multimedia framework!
 As always, this release is again packed with new features, bug fixes and other
 improvements.
 
-See [http://gstreamer.freedesktop.org/releases/1.8/][latest] for the latest
+See [https://gstreamer.freedesktop.org/releases/1.8/][latest] for the latest
 version of this document.
 
 *Last updated: Thursday 4 February 2016, 21:00 UTC [(log)][gitlog]*
 
-[latest]: http://gstreamer.freedesktop.org/releases/1.8/
-[gitlog]: http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.8/release-notes-1.8.md
+[latest]: https://gstreamer.freedesktop.org/releases/1.8/
+[gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.8/release-notes-1.8.md
 
 ## Highlights
 
@@ -31,10 +31,10 @@ version of this document.
 - **new tracing system** provides support for more sophisticated debugging tools
 
 - **improved Opus audio codec support**: MPEG-TS demuxer/muxer can now handle Opus;
-  [sample-accurate](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta)
+  [sample-accurate](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta)
   encoding/decoding/transmuxing with Ogg, Matroska, ISOBMFF (Quicktime/MP4),
   and MPEG-TS as container;
-  [new codec utility functions for Opus header and caps handling](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstpbutilscodecutils.html)
+  [new codec utility functions for Opus header and caps handling](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstpbutilscodecutils.html)
   in pbutils library.
 
 - **GStreamer VAAPI module now released and maintained as part of the GStreamer project**
@@ -68,13 +68,13 @@ FIXME
 - GstContexts are now automatically propagated to elements added to a bin
   or pipeline, and elements now maintain a list of contexts set on them.
   The list of contexts set on an element can now be queried using the new functions
-  [gst\_element\_get\_context()](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-get-context)
-  and [gst\_element\_get\_contexts()](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-get-contexts). GstContexts are used to share context-specific configuration objects
+  [gst\_element\_get\_context()](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-get-context)
+  and [gst\_element\_get\_contexts()](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-get-contexts). GstContexts are used to share context-specific configuration objects
   between elements and can also be used by applications to set context-specific
   configuration objects on elements, e.g. for OpenGL or Hardware-accelerated
   video decoding.
 
-- new [GST\_BUFFER\_DTS\_OR\_PTS()](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstBuffer.html#GST-BUFFER-DTS-OR-PTS:CAPS)
+- new [GST\_BUFFER\_DTS\_OR\_PTS()](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstBuffer.html#GST-BUFFER-DTS-OR-PTS:CAPS)
   convenience macro that returns the decode timestamp if one is set and
   otherwise returns the presentation timestamp
 
@@ -140,15 +140,15 @@ FIXME
     [gst\_info\_strdup\_vprintf()][gst_info_strdup_vprintf] and
     [gst\_info\_strdup\_printf()][gst_info_strdup_printf].
 
-[gst_info_vasprintf]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-vasprintf
-[gst_info_strdup_vprintf]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-vprintf
-[gst_info_strdup_printf]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-printf
+[gst_info_vasprintf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-vasprintf
+[gst_info_strdup_vprintf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-vprintf
+[gst_info_strdup_printf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-printf
 
 ### Noteworthy element features and additions
 
 **FIXME**: a lot of this should probably be moved down into 'Miscellaneous'
 
-- *identity*: new ["drop-buffer-flags"](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-identity.html#GstIdentity--drop-buffer-flags)
+- *identity*: new ["drop-buffer-flags"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-identity.html#GstIdentity--drop-buffer-flags)
   property to drop buffers based on buffer flags. This can be used to drop all
   non-keyframe buffers, for example.
 
@@ -159,9 +159,9 @@ FIXME
   we would often unnecessarily try to fill the subtitle stream queue, which
   could lead to much more data being queued in multiqueue than necessary.
 
-- *queue2*: new ["avg-in-rate"](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-queue2.html#GstQueue2--avg-in-rate)
+- *queue2*: new ["avg-in-rate"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-queue2.html#GstQueue2--avg-in-rate)
   property that returns the average input rate in bytes per second; also an
-  ["overrun"](http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-queue2.html#GstQueue2-overrun) 
+  ["overrun"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-queue2.html#GstQueue2-overrun) 
   signal (**FIXME** might get removed again before release, double-check)
 
 **FIXME: add alsamidisrc to docs and add link here**
@@ -248,7 +248,7 @@ iOS and Windows. Watch Sebastian's [GstPlayer talk at the GStreamer Conference][
 for more information, or check out the [GstPlayer API reference][gstplayer-api]
 and [GstPlayer examples][gstplayer-examples].
 
-[gstplayer-api]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/player.html
+[gstplayer-api]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/player.html
 [gstplayer-talk]: https://gstconf.ubicast.tv/videos/gstplayer-a-simple-cross-platform-api-for-all-your-media-playback-needs-part-1/
 [gstplayer-examples]: https://github.com/sdroege/gst-player/
 
@@ -273,11 +273,11 @@ and [GstPlayer examples][gstplayer-examples].
   since we'd have had to make libgstaudio depend on libgstvideo otherwise,
   which was deemed somewhat undesirable.
 
-[audio-0]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-GstAudioConverter.html
-[audio-1]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-GstAudioQuantize.html
-[audio-2]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiochannels.html#gst-audio-channel-mix-new
-[audio-3]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiochannels.html#gst-audio-channel-get-fallback-mask
-[audio-4]: http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta
+[audio-0]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-GstAudioConverter.html
+[audio-1]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-GstAudioQuantize.html
+[audio-2]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiochannels.html#gst-audio-channel-mix-new
+[audio-3]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiochannels.html#gst-audio-channel-get-fallback-mask
+[audio-4]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta
 [audio-5]: **FIXME: add GstAudioVisualizer to docs and add link here**
 
 ### GStreamer OpenGL support improvements

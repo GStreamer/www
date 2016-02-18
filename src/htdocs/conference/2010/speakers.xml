@@ -13,8 +13,8 @@
 
 <h1>Speakers bio and abstracts - GStreamer Conference 2010</h1>
 <h2>Cambridge, United Kingdom, 26th of October 2010</h2>
-<p><a href="http://gstreamer.freedesktop.org/conference">Back to conference main page</a></p>
-<p><a href="http://gstreamer.freedesktop.org/conference/gstreamer-conference-timetable.html">Back to conference timetable</a></p>
+<p><a href="&site;/conference">Back to conference main page</a></p>
+<p><a href="&site;/conference/gstreamer-conference-timetable.html">Back to conference timetable</a></p>
 <table width="100%" border="1" bordercolor="#C0C0C0" cellpadding="4" cellspacing="2">
 	
 	<tr valign="top" bgcolor="#C0C0C0"><td>
@@ -27,7 +27,7 @@
 	design and use of GStreamer.
 	</p>
 	<p>
-	Wim Taymans will in his keynote be speaking about the current state of the <a href="http://gstreamer.freedesktop.org">GStreamer</a>
+  Wim Taymans will in his keynote be speaking about the current state of the <a href="&site;/">GStreamer</a>
 	project and the development plans for GStreamer 1.0.
 	</p>
 	</td></tr>
