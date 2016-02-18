@@ -231,8 +231,8 @@ create binary packages for Windows, Android, OS/X and iOS
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>&gstreamer-version-stable;</stable>
-      <devel>&gstreamer-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
