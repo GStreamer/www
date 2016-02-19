@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.7.2</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the second release of the unstable
+1.7 release series. The 1.7 release series is adding new features on top of
+the 1.0, 1.2, 1.4 and 1.6 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.7 release series
+will lead to the stable 1.8 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.7 release series.
+</p>
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+    <contributors>
+	<person>Arun Raghavan</person>
+	<person>Aurélien Zanelli</person>
+	<person>Edward Hervey</person>
+	<person>Evan Callaway</person>
+	<person>Havard Graff</person>
+	<person>HoonHee Lee</person>
+	<person>Hugues Fruchet</person>
+	<person>Hyunjun Ko</person>
+	<person>Julien Isorce</person>
+	<person>Koop Mast</person>
+	<person>Lubosz Sarnecki</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Sauer</person>
+	<person>Stian Selnes</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vineeth T M</person>
+	<person>Vineeth TM</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>745880</id>
+      <summary>sdp: SDP &lt; - &gt; GstCaps helper functions</summary>
+    </bug>
+    <bug>
+      <id>751901</id>
+      <summary>gst-play: verbose &amp; playbin flags options support</summary>
+    </bug>
+    <bug>
+      <id>755918</id>
+      <summary>decodebin: Refactor code to remove assertion errors</summary>
+    </bug>
+    <bug>
+      <id>756187</id>
+      <summary>appsink: Always blocks on EOS until buffers are consumed since 1.6, should be configurable</summary>
+    </bug>
+    <bug>
+      <id>758212</id>
+      <summary>playbin adds the template caps on autoplug-query</summary>
+    </bug>
+    <bug>
+      <id>759729</id>
+      <summary>audiofxbad: Name collision with new GstAudioChannelMix API from libgstaudio</summary>
+    </bug>
+    <bug>
+      <id>759855</id>
+      <summary>build: pbutils needs to link to libgstbase for bytewriter and adapter</summary>
+    </bug>
+    <bug>
+      <id>759890</id>
+      <summary>audioconvert: creates choppy audio</summary>
+    </bug>
+    <bug>
+      <id>760134</id>
+      <summary>audioconvert test: doesn't build with clang</summary>
+    </bug>
+    <bug>
+      <id>760204</id>
+      <summary>videotestsrc: add missing break in set_property switch case</summary>
+    </bug>
+    <bug>
+      <id>760234</id>
+      <summary>playbin: Assumes recursive accept-caps query, breaks totem</summary>
+    </bug>
+    <bug>
+      <id>760408</id>
+      <summary>#750013 (streamsynchronizer patches) broke some use cases in GES</summary>
+    </bug>
+    <bug>
+      <id>760477</id>
+      <summary>playbin: caps intersection autoplugs too early and stream stops</summary>
+    </bug>
+    <bug>
+      <id>760769</id>
+      <summary>tests:audioconvert: Build error when running make check</summary>
+    </bug>
+    <bug>
+      <id>760938</id>
+      <summary>audioconvert: crash when executing orc unpack function</summary>
+    </bug>
+    <bug>
+      <id>760949</id>
+      <summary>decodebin: Correctly expose pads from elements that have directly exposable pads</summary>
+    </bug>
+    <bug>
+      <id>761132</id>
+      <summary>video-format: fix GstVideoFormatInfo documentation warnings</summary>
+    </bug>
+    <bug>
+      <id>761218</id>
+      <summary>audio/videodecoder: Use gst_pad_peer_query_caps() instead of using gst_pad_get_allowed_caps() to make negotiated output caps before forwarding GAP event</summary>
+    </bug>
+    <bug>
+      <id>761251</id>
+      <summary>textoverlay: Expose text rendering dimensions to applications and remove absolute positioning limit</summary>
+    </bug>
+    <bug>
+      <id>761949</id>
+      <summary>gst-libs/gst/Makefile.am: build audio before rtp</summary>
+    </bug>
+    <bug>
+      <id>761951</id>
+      <summary>videoencoder: Fix leak when pre_push does not return OK</summary>
+    </bug>
+    <bug>
+      <id>762085</id>
+      <summary>gst-base 1.7 update created background buzzing noise with audioconvert</summary>
+    </bug>
+    <bug>
+      <id>762239</id>
+      <summary>matroskademux: Assertions about unmappable memory when demuxing wavpack streams</summary>
+    </bug>
+    <bug>
+      <id>693263</id>
+      <summary>typefinding: MPEG-2 video ES detected as H.263</summary>
+    </bug>
+  </bugs>
+
+</release>

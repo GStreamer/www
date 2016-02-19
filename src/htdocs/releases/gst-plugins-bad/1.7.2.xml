@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plugins</module-fancy>
+  <name></name>
+  <version>1.7.2</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the second release of the unstable
+1.7 release series. The 1.7 release series is adding new features on top of
+the 1.0, 1.2, 1.4 and 1.6 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.7 release series
+will lead to the stable 1.8 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.7 release series.
+</p>
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plugins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plugins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plugins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+    <contributors>
+	<person>Alessandro Decina</person>
+	<person>Alex Ashley</person>
+	<person>Arun Raghavan</person>
+	<person>Aurélien Zanelli</person>
+	<person>Bob Holcomb</person>
+	<person>David Fernandez</person>
+	<person>David Waring</person>
+	<person>Florent Thiéry</person>
+	<person>Florin Apostol</person>
+	<person>George Kiagiadakis</person>
+	<person>Haihua Hu</person>
+	<person>Holger Kaelberer</person>
+	<person>Hyunjun Ko</person>
+	<person>Ilya Konstantinov</person>
+	<person>Jan Schmidt</person>
+	<person>John Chang</person>
+	<person>Julien Isorce</person>
+	<person>Julien MOUTTE</person>
+	<person>Julien Moutte</person>
+	<person>Justin Kim</person>
+	<person>Luis de Bethencourt</person>
+	<person>Matt Crane</person>
+	<person>Matthew Waters</person>
+	<person>Nicolas Dufresne</person>
+	<person>Philippe Normand</person>
+	<person>Piotr Drąg</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Sebastian Dröge</person>
+	<person>Sergey Borovkov</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Stian Selnes</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim Sheridan</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vineeth TM</person>
+	<person>Wang Xin-yu (王昕宇)</person>
+	<person>Youness Alaoui</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>719849</id>
+      <summary>[PLUGIN-MOVE] move mpg123 to -ugly</summary>
+    </bug>
+    <bug>
+      <id>729485</id>
+      <summary>avfvideosrc: Cannot reconfigure caps</summary>
+    </bug>
+    <bug>
+      <id>733959</id>
+      <summary>hlsdemux: download bitrate algorithms don't reflect real download rate</summary>
+    </bug>
+    <bug>
+      <id>737786</id>
+      <summary>android: Upstream one of the android video source implementations</summary>
+    </bug>
+    <bug>
+      <id>744367</id>
+      <summary>mpegtsmux: add HEVC support</summary>
+    </bug>
+    <bug>
+      <id>748507</id>
+      <summary>mpegtsmux: set non-0 payload length in PES header if video ES packet is small enough</summary>
+    </bug>
+    <bug>
+      <id>752374</id>
+      <summary>dashdemux: gst_dash_demux_get_live_seek_range should not return negative values</summary>
+    </bug>
+    <bug>
+      <id>752688</id>
+      <summary>wayland: improve check for wayland-scanner</summary>
+    </bug>
+    <bug>
+      <id>756207</id>
+      <summary>videoaggregator: Setting aspect ratio crops the frame</summary>
+    </bug>
+    <bug>
+      <id>756252</id>
+      <summary>Resurrect NetSim</summary>
+    </bug>
+    <bug>
+      <id>757597</id>
+      <summary>codecparsers: Add VP9 parser</summary>
+    </bug>
+    <bug>
+      <id>757602</id>
+      <summary>adaptivedemux: improved error message if availabilityStartTime is missing for a live stream</summary>
+    </bug>
+    <bug>
+      <id>757655</id>
+      <summary>dashdemux: cannot get segment availability start time if segment duration is not present</summary>
+    </bug>
+    <bug>
+      <id>757951</id>
+      <summary>adaptivedemux: set src element to ready before flushing the input pad</summary>
+    </bug>
+    <bug>
+      <id>758516</id>
+      <summary>mpegtsbase: Add condition to check for non working negative rate</summary>
+    </bug>
+    <bug>
+      <id>759158</id>
+      <summary>dashdemux/mssdemux: add support for snapping seek flags</summary>
+    </bug>
+    <bug>
+      <id>759679</id>
+      <summary>gl: unused function '_get_plane_width'</summary>
+    </bug>
+    <bug>
+      <id>759743</id>
+      <summary>dashdemux: getting clock compensation using HTTP HEAD uses an incorrect year</summary>
+    </bug>
+    <bug>
+      <id>759860</id>
+      <summary>glupload: Attaches composition overlay when not supported</summary>
+    </bug>
+    <bug>
+      <id>759869</id>
+      <summary>glimagesink: navigation messages are not posted on the bus</summary>
+    </bug>
+    <bug>
+      <id>759902</id>
+      <summary>glshader: fix usage documentation</summary>
+    </bug>
+    <bug>
+      <id>759913</id>
+      <summary>glbufferpool: Fix build error</summary>
+    </bug>
+    <bug>
+      <id>760090</id>
+      <summary>gst-plugins-bad: implicit declaration of function ‘gst_init’</summary>
+    </bug>
+    <bug>
+      <id>760120</id>
+      <summary>dashdemux: memory leak in gst_dash_demux_update_manifest_data</summary>
+    </bug>
+    <bug>
+      <id>760242</id>
+      <summary>rtmpsink: should get streamheaders from caps instead of first buffer.</summary>
+    </bug>
+    <bug>
+      <id>760270</id>
+      <summary>videoparse: add support of padded video</summary>
+    </bug>
+    <bug>
+      <id>760328</id>
+      <summary>adaptivedemux: tests: clean tests</summary>
+    </bug>
+    <bug>
+      <id>760559</id>
+      <summary>glvideomixer ! glimagesink deadlocks on resize</summary>
+    </bug>
+    <bug>
+      <id>760594</id>
+      <summary>decklinkvideosrc: does not support capture in RGB mode</summary>
+    </bug>
+    <bug>
+      <id>760600</id>
+      <summary>tests: memory leak in test HTTP source</summary>
+    </bug>
+    <bug>
+      <id>760696</id>
+      <summary>gl: Regression with caps ref-couting</summary>
+    </bug>
+    <bug>
+      <id>760873</id>
+      <summary>GstGLVideoMixerPad vertex_buffer leaks when pad dynamic removed</summary>
+    </bug>
+    <bug>
+      <id>760936</id>
+      <summary>dash, mpdparser: Fix the bug when getting the URL of index segment by SegmentBase</summary>
+    </bug>
+    <bug>
+      <id>760972</id>
+      <summary>glwindow: Fix android build</summary>
+    </bug>
+    <bug>
+      <id>760982</id>
+      <summary>adaptivedemux: memory leak of stream- &gt; internal_pad</summary>
+    </bug>
+    <bug>
+      <id>761014</id>
+      <summary>h264parse: sends unnecessary caps events/queries for every (unchanging) SPS/PPS when converting to byte-stream (android mediacodec)</summary>
+    </bug>
+    <bug>
+      <id>761108</id>
+      <summary>uvch264_src: Fix caps memory leak</summary>
+    </bug>
+    <bug>
+      <id>761109</id>
+      <summary>acmenc/acmmp3dec: remove unnecessary break after return</summary>
+    </bug>
+    <bug>
+      <id>761230</id>
+      <summary>tinyalsa: Add a new sink plugin using tinyalsa</summary>
+    </bug>
+    <bug>
+      <id>761458</id>
+      <summary>adaptivedemux: Unused GstSegment variable in download loop</summary>
+    </bug>
+    <bug>
+      <id>761460</id>
+      <summary>player: Makefile does not use configured PKG_CONFIG_PATH when performing introspection scan</summary>
+    </bug>
+    <bug>
+      <id>761519</id>
+      <summary>gl: Activate &quot; qos &quot; in filters</summary>
+    </bug>
+    <bug>
+      <id>761538</id>
+      <summary>gst_gl_insert_debug_marker called with no current context</summary>
+    </bug>
+    <bug>
+      <id>761578</id>
+      <summary>GstGLContext  didn't get unref correctly</summary>
+    </bug>
+    <bug>
+      <id>761606</id>
+      <summary>Move H.265 RTP payloader/depayloader from -bad to -good</summary>
+    </bug>
+    <bug>
+      <id>761704</id>
+      <summary>POTFILES.skip is out of date</summary>
+    </bug>
+    <bug>
+      <id>762013</id>
+      <summary>curlhttpsink: Problem in curlhttpsink when qtmux uses faststart, don't send empty buffers</summary>
+    </bug>
+    <bug>
+      <id>762171</id>
+      <summary>soundtouch plugin is not shipped</summary>
+    </bug>
+    <bug>
+      <id>758158</id>
+      <summary>opusdec: in-band FEC has no effect</summary>
+    </bug>
+  </bugs>
+</release>

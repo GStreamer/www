@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plugins</module-fancy>
+  <name></name>
+  <version>1.7.2</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the second release of the unstable
+1.7 release series. The 1.7 release series is adding new features on top of
+the 1.0, 1.2, 1.4 and 1.6 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.7 release series
+will lead to the stable 1.8 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.7 release series.
+</p>
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plugins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plugins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plugin on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plugins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plugin
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plugins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+    <contributors>
+	<person>Aleix Conchillo Flaqué</person>
+	<person>Alex Ashley</person>
+	<person>Antonio Ospite</person>
+	<person>George Kiagiadakis</person>
+	<person>Hyunjun Ko</person>
+	<person>Jan Schmidt</person>
+	<person>Luis de Bethencourt</person>
+	<person>Matej Knopp</person>
+	<person>Miguel París Díaz</person>
+	<person>Nicolas Dufresne</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Ognyan Tonchev</person>
+	<person>Pablo Anton</person>
+	<person>Philippe Normand</person>
+	<person>Piotr Drąg</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Sebastian Dröge</person>
+	<person>Seungha Yang</person>
+	<person>Stefan Sauer</person>
+	<person>Steven Hoving</person>
+	<person>Stian Selnes</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Thijs Vermeir</person>
+	<person>Tim Sheridan</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vineeth TM</person>
+	<person>Vivia Nikolaidou</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>617563</id>
+      <summary>matroskademux: pelicula.mkv doesn't preroll/play due to audio track without data</summary>
+    </bug>
+    <bug>
+      <id>709839</id>
+      <summary>matroskademux: file with late audio stream start does not preroll</summary>
+    </bug>
+    <bug>
+      <id>720388</id>
+      <summary>deinterlace: handle unsupported features caps in passthrough mode</summary>
+    </bug>
+    <bug>
+      <id>735673</id>
+      <summary>interleave: the example in the documentation does not work</summary>
+    </bug>
+    <bug>
+      <id>741280</id>
+      <summary>matroskademux: Send GAP events for non sparse streams</summary>
+    </bug>
+    <bug>
+      <id>754773</id>
+      <summary>rtp: Implement VP9 payloader and depayloader</summary>
+    </bug>
+    <bug>
+      <id>755736</id>
+      <summary>v4l2transform: configure output pool to use min_buffer</summary>
+    </bug>
+    <bug>
+      <id>757290</id>
+      <summary>gdkpixbufoverlay crash</summary>
+    </bug>
+    <bug>
+      <id>759293</id>
+      <summary>rtpbin: add &quot; get-session &quot; property</summary>
+    </bug>
+    <bug>
+      <id>759780</id>
+      <summary>v4l2: deviceprovider: Add the device and sysfs paths to the GstDevice properties</summary>
+    </bug>
+    <bug>
+      <id>760774</id>
+      <summary>qtdemux: fix framerate calculation for fragmented format</summary>
+    </bug>
+    <bug>
+      <id>760779</id>
+      <summary>qtdemux: fix framerate calculation for fragmented format in push mode</summary>
+    </bug>
+    <bug>
+      <id>760781</id>
+      <summary>qtdemux: handling zero segment-duration edit list</summary>
+    </bug>
+    <bug>
+      <id>760905</id>
+      <summary>taginject: Unable to add tags with spaces using example pipeline from docs</summary>
+    </bug>
+    <bug>
+      <id>760995</id>
+      <summary>deinterlace: Do passthrough if downstream only supports interlaced</summary>
+    </bug>
+    <bug>
+      <id>761094</id>
+      <summary>unintialized variable warnings (gcc 5.1)</summary>
+    </bug>
+    <bug>
+      <id>761144</id>
+      <summary>matroskamux: use A_AAC instead of A_AAC/MPEGx/y</summary>
+    </bug>
+    <bug>
+      <id>761670</id>
+      <summary>jpegdec: Possible endless loop if file is corrupt</summary>
+    </bug>
+    <bug>
+      <id>761705</id>
+      <summary>POTFILES.in is out of date</summary>
+    </bug>
+    <bug>
+      <id>761769</id>
+      <summary>qtdemux: incorrectly sets caps of CENC encrypted streams</summary>
+    </bug>
+    <bug>
+      <id>762057</id>
+      <summary>tests: rtpmux: Fix element memory leak</summary>
+    </bug>
+    <bug>
+      <id>762117</id>
+      <summary>avidemux: Fix string memory leak</summary>
+    </bug>
+    <bug>
+      <id>762185</id>
+      <summary>matroskademux: Simple implementation of GST_SEEK_FLAG_TRICKMODE_KEY_UNITS</summary>
+    </bug>
+    <bug>
+      <id>762211</id>
+      <summary>rtpjitterbuffer: Don't drop packets after big gap</summary>
+    </bug>
+  </bugs>
+
+</release>

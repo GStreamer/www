@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-rtsp-server</module>
+  <module-fancy>GStreamer RTSP Server Library</module-fancy>
+  <name></name>
+  <version>1.7.2</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the second release of the unstable
+1.7 release series. The 1.7 release series is adding new features on top of
+the 1.0, 1.2, 1.4 and 1.6 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.7 release series
+will lead to the stable 1.8 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.7 release series.
+</p>
+  </intro>
+
+    <contributors>
+	<person>Hyunjun Ko</person>
+	<person>Jan Schmidt</person>
+	<person>Julien Isorce</person>
+	<person>Luis de Bethencourt</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Rasmussen</person>
+	<person>Srimanta Panda</person>
+	<person>Steven Hoving</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>758180</id>
+      <summary>Add rtspclientsink plugin</summary>
+    </bug>
+    <bug>
+      <id>758999</id>
+      <summary>rtsp-media: Add property to decide if sending media should be stopped when a client disconnects without TEARDOWN</summary>
+    </bug>
+    <bug>
+      <id>759773</id>
+      <summary>Prevent simultaneous prepare/unprepare of RTSP media</summary>
+    </bug>
+    <bug>
+      <id>760150</id>
+      <summary>Updating transport for multicast case gives assertion</summary>
+    </bug>
+  </bugs>
+</release>
