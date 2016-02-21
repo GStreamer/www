@@ -30,7 +30,11 @@ version of this document.
 
 - **new tracing system** provides support for more sophisticated debugging tools
 
-- **improved Opus audio codec support**: MPEG-TS demuxer/muxer can now handle Opus;
+- **new GstPlayer playback convenience API**
+
+- **initial support for the new Vulkan API**
+
+- **improved Opus audio codec support**: Support for more than two channels; MPEG-TS demuxer/muxer can now handle Opus;
   [sample-accurate](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta)
   encoding/decoding/transmuxing with Ogg, Matroska, ISOBMFF (Quicktime/MP4),
   and MPEG-TS as container;
@@ -38,6 +42,17 @@ version of this document.
   in pbutils library.
 
 - **GStreamer VAAPI module now released and maintained as part of the GStreamer project**
+
+- **gst-libav uses FFMpeg 3.0 now**
+
+- **Plugin moves**: the H.265/HEVC RTP payloader/depayloader were moved to
+  gst-plugins-good, then MPG123 MP3 decoder was moved to gst-plugins-ugly
+
+- **New elements**: a VP9 RTP payloader/depayloader was added to
+  gst-plugins-good; a tinyalsa based audio sink, network simulator plugin,
+  video frame synchronized audio level element, spandsp tone generator source,
+  and NVIDIA NVENC based H.264 encoder were added to gst-plugins-bad; a RTSP
+  RECORD sink element was added to gst-rtsp-server.
 
 ## Major new features and changes
 
@@ -160,9 +175,7 @@ FIXME
   could lead to much more data being queued in multiqueue than necessary.
 
 - *queue2*: new ["avg-in-rate"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-queue2.html#GstQueue2--avg-in-rate)
-  property that returns the average input rate in bytes per second; also an
-  ["overrun"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-queue2.html#GstQueue2-overrun) 
-  signal (**FIXME** might get removed again before release, double-check)
+  property that returns the average input rate in bytes per second
 
 **FIXME: add alsamidisrc to docs and add link here**
 
@@ -194,6 +207,10 @@ FIXME
   optimal coverage and the shortest possibly start-up time for a new client
 
 - mpegtsmux can now mux H.265/HEVC video as well
+
+- The MXF muxer was ported to 1.x and produces more standard conformant files now
+  that can be handled by more other software; The MXF demuxer got improved
+  support for seek tables (IndexTableSegments).
 
 ### New tracing tools for developers
 
@@ -284,6 +301,9 @@ and [GstPlayer examples][gstplayer-examples].
 
 FIXME
 
+### Initial GStreamer Vulkan support
+
+FIXME
 
 ### GStreamer VAAPI support for hardware-accelerated video decoding and encoding on Intel (and other) platforms
 
