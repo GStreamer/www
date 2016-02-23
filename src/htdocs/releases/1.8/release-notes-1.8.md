@@ -32,7 +32,8 @@ version of this document.
 
 - **new GstPlayer playback convenience API**
 
-- **initial support for the new Vulkan API**
+- **initial support for the new [Vulkan][vulkan] API**, see
+  [Matthew Water's blog post][vulkan-in-gstreamer] for more details
 
 - **improved Opus audio codec support**: Support for more than two channels; MPEG-TS demuxer/muxer can now handle Opus;
   [sample-accurate](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta)
@@ -43,16 +44,8 @@ version of this document.
 
 - **GStreamer VAAPI module now released and maintained as part of the GStreamer project**
 
-- **gst-libav uses FFMpeg 3.0 now**
-
-- **Plugin moves**: the H.265/HEVC RTP payloader/depayloader were moved to
-  gst-plugins-good, then MPG123 MP3 decoder was moved to gst-plugins-ugly
-
-- **New elements**: a VP9 RTP payloader/depayloader was added to
-  gst-plugins-good; a tinyalsa based audio sink, network simulator plugin,
-  video frame synchronized audio level element, spandsp tone generator source,
-  and NVIDIA NVENC based H.264 encoder were added to gst-plugins-bad; a RTSP
-  RECORD sink element was added to gst-rtsp-server.
+  [vulkan]:              https://www.khronos.org/vulkan
+  [vulkan-in-gstreamer]: http://ystreet00.blogspot.co.uk/2016/02/vulkan-in-gstreamer.html
 
 ## Major new features and changes
 
@@ -159,6 +152,26 @@ FIXME
 [gst_info_strdup_vprintf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-vprintf
 [gst_info_strdup_printf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-printf
 
+### New Elements
+
+**FIXME: add these elements to the docs and add links here**
+
+- [netsim](): a new (resurrected) element to simulate network jitter and
+  packet dropping / duplication.
+
+- new VP9 RTP payloader/depayloader elements: rtpvp9pay/rtpvp9depay
+
+- new [videoframe_audiolevel]() element, a video frame synchronized audio level element
+
+- new spandsp-based tone generator source
+
+- new NVIDIA NVENC based H.264 encoder for GPU-accelerated video encoding on
+  suitable NVIDIA hardware
+
+- [rtspclientsink](), a new RTSP RECORD sink element, was added to gst-rtsp-server
+
+- [alsamidisrc](): a new ALSA MIDI sequencer source element
+
 ### Noteworthy element features and additions
 
 **FIXME**: a lot of this should probably be moved down into 'Miscellaneous'
@@ -176,10 +189,6 @@ FIXME
 
 - *queue2*: new ["avg-in-rate"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-queue2.html#GstQueue2--avg-in-rate)
   property that returns the average input rate in bytes per second
-
-**FIXME: add alsamidisrc to docs and add link here**
-
-- [alsamidisrc](): a new ALSA MIDI sequencer source element
 
 - audiotestsrc now supports all audio formats and is no longer artificially
   limited with regard to the number of channels or sample rate
@@ -211,6 +220,15 @@ FIXME
 - The MXF muxer was ported to 1.x and produces more standard conformant files now
   that can be handled by more other software; The MXF demuxer got improved
   support for seek tables (IndexTableSegments).
+
+### Plugin moves
+
+- The rtph265depay/pay RTP payloader/depayloader elements for H.265/HEVC video
+  from the rtph265 plugin in -bad have been moved into the existing rtp plugin
+  in gst-plugins-good.
+
+- The mpg123 plugin containing a libmpg123 based audio decoder element has
+  been moved from -bad to -ugly
 
 ### New tracing tools for developers
 
@@ -431,6 +449,9 @@ FIXME
   the process of switching to it anyway, so we don't expect this to be a
   problem, and there is still an internal copy of ffmpeg that can be used
   as fallback if needed.
+
+- the internal ffmpeg snapshot is now FFMpeg 3.0, but it should be possible
+  to build against 2.8 as well for the time being.
 
 ## Platform-specific improvements
 
