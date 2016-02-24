@@ -412,6 +412,8 @@ FIXME
 
 FIXME
 
+Uses GstTracer now instead of a LD PRELOAD library
+
 
 ### cerbero build tool for SDK binary packages
 
@@ -536,6 +538,6 @@ release series.
 - - -
 
 *These release notes have been prepared by Tim-Philipp Müller with
-contributions from **FIXME**.*
+contributions from Sebastian Dröge.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
