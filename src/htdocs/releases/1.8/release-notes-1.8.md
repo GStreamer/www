@@ -408,6 +408,16 @@ vaGetImage()/vaPutimage() API in the vaapi-intel-driver.
 
 FIXME
 
+Added changing playback rate support. This means that now, whenever a user
+adds a 'pitch' element (which is the only known element to change playback
+rate but that can and will be extended), GES will properly everything internally
+to handle it.
+
+Construction of NLE object has been reworked making copy/pasting fully
+functionnal and allowing users to set properties on effects right after
+creating them.
+
+
 ### GstValidate
 
 FIXME
