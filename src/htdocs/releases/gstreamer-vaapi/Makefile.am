@@ -1,8 +1,8 @@
-releases = 1.7.90 1.6.0 1.5.90 1.5.2 1.4.0 1.3.90
+releases = 1.7.90 1.7.90 1.7.90
 
 built_pages = \
-	$(releases) \
-	$(releases:=.html)
+        $(releases) \
+        $(releases:=.html)
 
 style = ../releases.xsl
 

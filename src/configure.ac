@@ -44,6 +44,7 @@ htdocs/releases/gst-plugins-ugly/Makefile
 htdocs/releases/gst-python/Makefile
 htdocs/releases/gst-rtsp-server/Makefile
 htdocs/releases/gstreamer/Makefile
+htdocs/releases/gstreamer-vaapi/Makefile
 htdocs/releases/gstreamer-sharp/Makefile
 htdocs/releases/gnonlin/Makefile
 htdocs/releases/gst-omx/Makefile

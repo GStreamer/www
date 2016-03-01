@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.7.90</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release candidate of the stable
+1.8 release series. The 1.8 release series is adding new features on top of
+the 1.0, 1.2, 1.4 and 1.6 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the stable 1.8 release series.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+          <contributors>
+	<person>Adam Miartus</person>
+	<person>Edward Hervey</person>
+	<person>George Yunaev</person>
+	<person>James Stevenson</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Sebastian Dröge</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vineeth TM</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>728326</id>
+      <summary>Check for return values of gst_buffer_map and gst_memory_map</summary>
+    </bug>
+    <bug>
+      <id>759539</id>
+      <summary>Stopping a stream with AAC very soon after starting crashes</summary>
+    </bug>
+    <bug>
+      <id>760979</id>
+      <summary>tracers: Allow adding tracers programatically without defining environment variables</summary>
+    </bug>
+    <bug>
+      <id>762450</id>
+      <summary>tags: add GST_TAG_CONDUCTOR</summary>
+    </bug>
+    <bug>
+      <id>762702</id>
+      <summary>gst_bus_add_watch will SEGV when process reaches fd limit</summary>
+    </bug>
+    <bug>
+      <id>762778</id>
+      <summary>API: add gst_element_class_add_static_pad_template()</summary>
+    </bug>
+    <bug>
+      <id>762792</id>
+      <summary>amcvideodec: Can't render to Surface if the color format is not supported</summary>
+    </bug>
+    <bug>
+      <id>762845</id>
+      <summary>tests: ghostpad: Fix memory leak</summary>
+    </bug>
+    <bug>
+      <id>762849</id>
+      <summary>bus: GSource can access GPollFD after the bus was destroyed</summary>
+    </bug>
+  </bugs>
+</release>
