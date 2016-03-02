@@ -317,7 +317,112 @@ and [GstPlayer examples][gstplayer-examples].
 
 ### GStreamer OpenGL support improvements
 
-FIXME
+#### Better Shader support
+
+[GstGLShader][shader] has been revamped to allow more OpenGL shader types
+by utilizing a new GstGLSLStage object.  Each stage holds an OpenGL pipeline
+stage such as a vertex, fragment or a geometry shader that are all compiled
+separately into a program that is executed.
+
+The glshader element has also received a revamp as a result of the changes in
+the library.  It does not take file locations for the vertex and fragment
+shaders anymore.  Instead it takes the strings directly leaving the file
+management to the application.
+
+A new [example][liveshader-example] was added utilizing the new shader infrastructure showcasing live
+shader edits.
+
+[shader]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/gst-plugins-bad-libs-gstglshader.html
+[liveshader-example]: https://cgit.freedesktop.org/gstreamer/gst-plugins-bad/tree/tests/examples/gtk/glliveshader.c
+
+#### GLMemory rework
+
+[GstGLMemory] was extensively reworked to support the addition of multiple
+texture targets required for zero-copy integration with the android
+MediaCodec elements.  This work was also used to provide IOSurface based
+GLMemory on OS X for zero-copy with OS X's VideoToolbox decoder (vtdec) and
+AV Foundation video source (avfvideosrc).  There are also patches in bugzilla
+for GstGLMemoryEGL specifically aimed at improving the decoding performance on
+the RPi.
+
+A texture-target field was added to video/x-raw(memory:GLMemory) caps to signal
+the texture target contained in the GLMemory.  It's values can be 2D, rectangle
+or external-oes.  glcolorconvert can convert between the different formats as
+required and different elements will accept or produce different targets.  e.g.
+glimagesink can take and render external-oes textures directly as required for
+effecient zero-copy on android.
+
+A generic GL allocation framework was also implemented to support the generic
+allocation of OpenGL buffers and textures which is used extensively by
+GstGLBufferPool.
+
+#### DMABuf import uploader
+
+There is now a DMABuf uploader available for automatic selection that will
+attempt to import the upstream provided DMABuf.  The uploader will import into
+2D textures with the necesarry format.  YUV to RGB conversion is still provided
+by glcolorconvert to avoid the laxer restrictions with external-oes textures.
+
+
+#### OpenGL queries
+
+Queries of various aspects of the OpenGL runtime such as timers, number of
+samples or the current timestamp are not possible.  The GstGLQuery object uses a
+delayed debug system to delay the debug output to later to avoid expensive calls
+the glGet\* family of functions directly after finishing a query.  It is
+currently used to output the time taken to perform various operations of texture
+uploads and downloads in GstGLMemory.
+
+#### New OpenGL elements
+
+glcolorbalance has been created mirroring the videobalance elements.
+glcolorbalance provides the exact same interface as videobalance so can be used
+as a GPU accelerated replacement.  glcolorbalance has been added to glsinkbin so
+usage with playsink/playbin will use it automatically instead of videobalance
+where possible.
+
+glvideoflip, which is the OpenGL equiavalant of videoflip, implements the exact
+same interface and functionality as videoflip.
+
+#### EGL implementation now selects OpenGL 3.x
+
+The EGL implementation can now select OpenGL 3.x contexts.
+
+#### API removal
+
+The GstGLDownload library object was removed as it was not used by anything.
+Everything is performed by GstGLMemory or in the gldownloadelement.
+
+The GstGLUploadMeta library object was removed as it was not being used and we
+don't want to promote the use of GstVideoGLTextureUploadMeta.
+
+#### Other miscellaneous changes
+
+- The EGL implementation can now select OpenGL 3.x contexts.  This brings OpenGL 3.x to
+  e.g. wayland and other EGL systems.
+
+- glstereomix/glstereosplit are now built and are usable on OpenGL ES systems
+
+- The UYVY/YUY2 to RGBA and RGBA to UYVY/YUY2 shaders were fixed removing the
+  sawtooth pattern and luma bleeding.
+
+- We now utilize the GL_APPLE_sync extension on iOS devices which improves
+  performance of OpenGL applications, especially with multiple OpenGL
+  contexts.
+
+- glcolorconvert now uses a bufferpool to avoid costly
+  glGenTextures/glDeleteTextures for every frame.
+
+- glvideomixer now has full glBlendFunc and glBlendEquation support per input.
+
+- gltransformation now support navigation events so your weird transformations
+  also work with DVD menus.
+
+- qmlglsink can now run on iOS, OS X and Android in addition to the already
+  supported Linux platform.
+
+- glimagesink now posts unhandled keyboard and mouse events (on backends that
+  support user input, current only X11) on the bus for the application.
 
 ### Initial GStreamer Vulkan support
 
@@ -497,6 +602,9 @@ FIXME
 - the system clock now uses mach\_absolute\_time() on OSX/iOS, which is
 the preferred high-resolution monotonic clock to be used on Apple platforms
 
+- the OpenGL-based QML video sink can now also be used on OS X and iOS (with
+  some Qt build system massaging)
+
 - FIXME: loads of applemedia/avfsrc/gl improvements
 
 ### Windows
@@ -560,6 +668,6 @@ release series.
 - - -
 
 *These release notes have been prepared by Tim-Philipp Müller with
-contributions from Sebastian Dröge.*
+contributions from Matthew Waters and Sebastian Dröge.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
