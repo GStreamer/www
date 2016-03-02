@@ -399,10 +399,22 @@ vaapimpeg2enc, vaapijpegenc, and vaapivp8enc.
 
 #### GStreamer VAAPI: New features in 1.8: 10-bit H.265/HEVC decoding support
 
+The encoders have been renamed: instead of vaapiencode_h264, for
+example, the new name is vaapih264enc. With this change now we follow
+the standard names in GStreamer, and the plugin documentation is
+generated correctly.
+
 Support for decoding 10-bit H.265/HEVC has been added. For the time being
 this only works in combination with vaapisink though, until support for the
 P010 video format used internally is added to GStreamer and to the
 vaGetImage()/vaPutimage() API in the vaapi-intel-driver.
+
+Several fixes for memory leaks, build errors, and in the internal
+video parsing.
+
+vaapisink posts the unhandled keyboard and mouse events to the
+application.
+
 
 ### GStreamer Editing Services
 
