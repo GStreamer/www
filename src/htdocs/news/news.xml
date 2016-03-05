@@ -7469,5 +7469,31 @@ or download tarballs for
         </content>
   </item>
 
+  <item>
+      <date>2016-03-05 00:30</date>
+        <title>Orc 0.4.25 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team announces another maintenance bug-fix release of liborc,
+the Optimized Inner Loop Runtime Compiler. Main changes since the previous
+release:
+        </p>
+        <p>
+          <ul>
+            <li>compiler: also prefer the backup function when no target,
+                instead of trying to use emulation which is usually slower</li>
+            <li>executor: fix load of parameters smaller than 64 bits, fixing
+                crashes on ldresnearb and friends in emulated code</li>
+            <li>Only check for Android's liblog on Android targets, so we don't
+                accidentally pick up another liblog that may exist elsewhere</li>
+            <li>Make -Bsymbolic check in configure work with clang</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.25.tar.xz">orc-0.4.25</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
 
