@@ -616,7 +616,13 @@ the preferred high-resolution monotonic clock to be used on Apple platforms
 - the OpenGL-based QML video sink can now also be used on OS X and iOS (with
   some Qt build system massaging)
 
-- FIXME: loads of applemedia/avfsrc/gl improvements
+- new IOSurface based memory implementation in avfvideosrc and vtdec on OS X
+  for zerocopy with OpenGL.  The previously used OpenGL extension
+  GL_APPLE_ycbcr_422 is not compatible with GL 3.x core contexts.
+
+- new GstAppleCoreVideoMemory wrapping CVPixelBuffer's
+
+- avfvideosrc now supports renegotiation.
 
 ### Windows
 
