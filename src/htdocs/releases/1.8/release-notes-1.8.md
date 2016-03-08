@@ -33,7 +33,7 @@ version of this document.
 - **new GstPlayer playback convenience API**
 
 - **initial support for the new [Vulkan][vulkan] API**, see
-  [Matthew Water's blog post][vulkan-in-gstreamer] for more details
+  [Matthew Waters' blog post][vulkan-in-gstreamer] for more details
 
 - **improved Opus audio codec support**: Support for more than two channels; MPEG-TS demuxer/muxer can now handle Opus;
   [sample-accurate](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta)
@@ -426,7 +426,18 @@ don't want to promote the use of GstVideoGLTextureUploadMeta.
 
 ### Initial GStreamer Vulkan support
 
-FIXME
+Some new elements, vulkansink and vulkanupload have been implemented utilizing
+the new Vulkan API.  The implementation is currently limited to X11 platforms
+(via xcb) and does not perform any scaling of the stream's contents to the size
+of the available output.
+
+A lot of infrasctructure work has been undertaken to support using Vulkan in
+GStreamer in the future.  A number of GstMemory subclasses have been created for
+integrating Vulkan's GPU memory handling along with VkBuffer's and VkImage's
+that can be passed between elements.  Some GStreamer refcounted wrappers for
+global objects such as VkInstance, VkDevice, VkQueue, etc have also been
+implemented along with GstContext integration for sharing these objects with the
+application.
 
 ### GStreamer VAAPI support for hardware-accelerated video decoding and encoding on Intel (and other) platforms
 
