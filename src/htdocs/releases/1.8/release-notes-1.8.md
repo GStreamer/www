@@ -531,6 +531,18 @@ video parsing.
 vaapisink posts the unhandled keyboard and mouse events to the
 application.
 
+### GStreamer Video 4 Linux Support
+
+Colorimetry support have been enhanced even more. It will now properly select
+default values when not specified by the driver. The range of color formats
+supported by GStreamer has been greatly improved. Notably, support for
+multi-planar I420 has been added along with all the new and non-ambiguous RGB
+formats that got added in recent kernels. The device provider now expose variety
+of properties as found in the Udev database. The video decoder is now able to
+negotiate downstream format. Elements that are dynamically created from
+/dev/video* now track changes on these devices to ensure the registry stay up to
+date. All this and various bug fixes that improves both stability and correctness.
+
 
 ### GStreamer Editing Services
 
