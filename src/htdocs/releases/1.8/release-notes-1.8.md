@@ -148,6 +148,10 @@ FIXME
     [gst\_info\_strdup\_vprintf()][gst_info_strdup_vprintf] and
     [gst\_info\_strdup\_printf()][gst_info_strdup_printf].
 
+- videoparse: "strides", "offsets" and "framesize" properties has been added to
+  allow parsing raw data with strides and padding that does not match GStreamer
+  defaults.
+
 [gst_info_vasprintf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-vasprintf
 [gst_info_strdup_vprintf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-vprintf
 [gst_info_strdup_printf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-printf
