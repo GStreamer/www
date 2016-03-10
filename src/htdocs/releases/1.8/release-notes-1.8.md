@@ -191,6 +191,20 @@ FIXME
   we would often unnecessarily try to fill the subtitle stream queue, which
   could lead to much more data being queued in multiqueue than necessary.
 
+- *multiqueue*/*queue*: When dealing with time limits, these elements now use the
+  new ["GST_BUFFER_DTS_OR_PTS"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstBuffer.html#GST-BUFFER-DTS-OR-PTS:CAPS)
+  and ["gst_segment_to_running_time_full()"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstSegment.html#gst-segment-to-running-time-full)
+  API, resulting in more accurate levels, especially when dealing with non-raw
+  streams (where reordering happens, and we want to use the increasing DTS as
+  opposed to the non-continuously increasing PTS) and out-of-segment input/output.
+  Previously all encoded buffers before the segment start, which can happen when
+  doing ACCURATE seeks, were not taken into account in the queue level calculation.
+
+- *multiqueue*: New ["use-interleave"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-multiqueue.html#GstMultiQueue--use-interleave)
+  property which allows the size of the queues to be optimized based on the input
+  streams interleave. This should only be used with input streams which are properly
+  timestamped. It will be used in the future decodebin3 element.
+
 - *queue2*: new ["avg-in-rate"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-queue2.html#GstQueue2--avg-in-rate)
   property that returns the average input rate in bytes per second
 
