@@ -564,23 +564,38 @@ date. All this and various bug fixes that improves both stability and correctnes
 
 ### GStreamer Editing Services
 
-FIXME
+Added APIs to handle asset proxying support. Proxy creation is not the
+responsibility of GES itself, but GES provides all the needed features
+for it to be cleanly handled at a higher level.
 
 Added changing playback rate support. This means that now, whenever a user
-adds a 'pitch' element (which is the only known element to change playback
-rate but that can and will be extended), GES will properly everything internally
-to handle it.
+adds a 'pitch' element (as it is the only known element to change playback
+rate through properties), GES will handle everything internally. This change
+introduced a new media-duration-factor property in NleObject which will
+lead to tweaking seek event to have the proper playback range to be
+requested upstream.
 
 Construction of NLE object has been reworked making copy/pasting fully
 functionnal and allowing users to set properties on effects right after
 creating them.
 
+Rework of the title source to add more flexibilty in text positionning,
+and letting the user get feedback about rendered text positionning.
+
+Report nlecomposition structural issues (comming from user programing mistake)
+into ERROR messages on the bus.
+
+Add GI/pythyon testsuite in GES itself, making sure the API is working as expected
+in python, and allowing writting tests faster.
 
 ### GstValidate
 
-FIXME
+Added support to run tests inside gdb.
 
-Uses GstTracer now instead of a LD PRELOAD library
+Added a 'smart' reporting mode where we give as much information as possible about
+critical errors.
+
+Uses GstTracer now instead of a LD PRELOAD library.
 
 
 ### cerbero build tool for SDK binary packages
