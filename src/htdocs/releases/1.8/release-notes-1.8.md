@@ -2,7 +2,7 @@
 
 **NOTE: THESE RELEASE NOTES ARE VERY INCOMPLETE AND STILL WORK-IN-PROGRESS**
 
-**GStreamer 1.8 is scheduled for release in February 2016.**
+**GStreamer 1.8 is scheduled for release in March 2016.**
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
@@ -13,7 +13,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.8/][latest] for the latest
 version of this document.
 
-*Last updated: Thursday 4 February 2016, 21:00 UTC [(log)][gitlog]*
+*Last updated: Monday 14 March 2016, 10:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.8/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.8/release-notes-1.8.md
@@ -40,7 +40,8 @@ version of this document.
   encoding/decoding/transmuxing with Ogg, Matroska, ISOBMFF (Quicktime/MP4),
   and MPEG-TS as container;
   [new codec utility functions for Opus header and caps handling](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstpbutilscodecutils.html)
-  in pbutils library.
+  in pbutils library. The Opus encoder/decoder elements were also moved to
+  gst-plugins-base.
 
 - **GStreamer VAAPI module now released and maintained as part of the GStreamer project**
 
@@ -246,7 +247,10 @@ FIXME
   in gst-plugins-good.
 
 - The mpg123 plugin containing a libmpg123 based audio decoder element has
-  been moved from -bad to -ugly
+  been moved from -bad to -ugly.
+
+- The Opus encoder/decoder elements have been moved to gst-plugins-base and
+  the RTP payloader to gst-plugins-good, both coming from gst-plugins-bad.
 
 ### New tracing tools for developers
 
@@ -275,7 +279,9 @@ For some background on the new tracing system, watch Stefan Sauer's
 GStreamer Conference talk ["A new tracing subsystem for GStreamer"][tracing-0]
 and for a more specific example how it can be useful have a look at
 Thiago Santos's lightning talk ["Analyzing caps negotiation using GstTracer"][tracer-1]
-and his ["GstTracer experiments"][tracer-2] blog post.
+and his ["GstTracer experiments"][tracer-2] blog post. There was also a Google
+Summer of Code project in 2015 that used tracing system for a graphical
+GStreamer debugging tool ["gst-debugger"][tracer-3].
 
 This is all still very much work in progress, but we hope this will provide the
 foundation for a whole suite of new debugging tools for GStreamer pipelines.
@@ -283,6 +289,7 @@ foundation for a whole suite of new debugging tools for GStreamer pipelines.
 [tracer-0]: https://gstconf.ubicast.tv/videos/a-new-tracing-subsystem-for-gstreamer/
 [tracer-1]: https://gstconf.ubicast.tv/videos/analyzing-caps-negotiation-using-gsttracer/
 [tracer-2]: http://blog.thiagoss.com/2015/07/23/gsttracer-experiments/
+[tracer-3]: https://git.gnome.org/browse/gst-debugger
 
 ### GstPlayer: a new high-level API for cross-platform multimedia playback
 
@@ -331,7 +338,7 @@ and [GstPlayer examples][gstplayer-examples].
 [audio-2]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiochannels.html#gst-audio-channel-mix-new
 [audio-3]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiochannels.html#gst-audio-channel-get-fallback-mask
 [audio-4]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta
-[audio-5]: **FIXME: add GstAudioVisualizer to docs and add link here**
+[audio-5]: **FIXME: add GstAudioVisualizer to docs and add link here **
 
 ### GStreamer OpenGL support improvements
 
@@ -558,7 +565,7 @@ multi-planar I420 has been added along with all the new and non-ambiguous RGB
 formats that got added in recent kernels. The device provider now expose variety
 of properties as found in the Udev database. The video decoder is now able to
 negotiate downstream format. Elements that are dynamically created from
-/dev/video* now track changes on these devices to ensure the registry stay up to
+/dev/video\* now track changes on these devices to ensure the registry stay up to
 date. All this and various bug fixes that improves both stability and correctness.
 
 
@@ -651,7 +658,8 @@ FIXME
 
 - the OpenGL-based QML video sink can now also be used on Android
 
-- new tinyalsasink element
+- new tinyalsasink element, which is mainly useful for Android but can also
+  be used on other platforms.
 
 ### OS/X and iOS
 
@@ -708,7 +716,7 @@ is a stable branch.
 
 ### 1.8.0
 
-1.8.0 was released on XX February 2016. (FIXME)
+1.8.0 was released on XX March 2016. (FIXME)
 
 ### 1.8.1
 
@@ -730,6 +738,7 @@ release series.
 - - -
 
 *These release notes have been prepared by Tim-Philipp Müller with
-contributions from Matthew Waters and Sebastian Dröge.*
+contributions from Sebastian Dröge, Nicolas Dufresne, Edward Hervey, Víctor
+Manuel Jáquez Leal, Thibault Saunier, Jan Schmidt and Matthew Waters.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
