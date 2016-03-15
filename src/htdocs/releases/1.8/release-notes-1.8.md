@@ -679,7 +679,12 @@ the preferred high-resolution monotonic clock to be used on Apple platforms
 
 ### Windows
 
-FIXME
+- Various bugs with UDP and multicast were fixed on Windows, mostly related to
+  gst-rtsp-server.
+
+- A few bugs in directsoundsrc and directsoundsink were fixed that could cause
+  the element to lock up. Also the "mute" property on the sink was fixed, and
+  a new "device" property for device selection was added to the source.
 
 ### Linux
 
@@ -704,7 +709,7 @@ stable 1.6 branch and fixed there as well, all fixes that ended up in the
 This list also does not include issues that have been fixed without a bug
 report in bugzilla, so the actual number of fixes is much higher.
 
-[bugs-fixed-in-1.8]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.7.1&target_milestone=1.7.2&target_milestone=1.7.3&target_milestone=1.7.4&target_milestone=1.7.90&target_milestone=1.7.91&target_milestone=1.7.92&target_milestone=1.7.x&target_milestone=1.8.0
+[bugs-fixed-in-1.8]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=107311&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.6.1&target_milestone=1.6.2&target_milestone=1.6.3&target_milestone=1.7.0&target_milestone=1.7.1&target_milestone=1.7.2&target_milestone=1.7.3&target_milestone=1.7.4&target_milestone=1.7.90&target_milestone=1.7.91&target_milestone=1.7.92&target_milestone=1.7.x&target_milestone=1.8.0
 
 ## Stable 1.8 branch
 
