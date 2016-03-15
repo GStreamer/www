@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.7.91</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the second release candidate of the stable
+1.8 release series. The 1.8 release series is adding new features on top of
+the 1.0, 1.2, 1.4 and 1.6 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the stable 1.8 release series.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+    <contributors>
+	<person>Carlos Rafael Giani</person>
+	<person>Sebastian Dröge</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>763112</id>
+      <summary>gstbuffer: fix GstParentBufferMeta GType name</summary>
+    </bug>
+    <bug>
+      <id>763213</id>
+      <summary>Add documentation about _NAME macros vs. _get_name functions</summary>
+    </bug>
+    <bug>
+      <id>763325</id>
+      <summary>Multiple netclocks do not work anymore</summary>
+    </bug>
+    <bug>
+      <id>763491</id>
+      <summary>typefind: behavior has changed on have-type signal, sets pad caps after signal handlers</summary>
+    </bug>
+    <bug>
+      <id>763553</id>
+      <summary>baseparse: Not pushing tags before PREROLL</summary>
+    </bug>
+  </bugs>
+</release>

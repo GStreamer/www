@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.7.91</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the second release candidate of the stable
+1.8 release series. The 1.8 release series is adding new features on top of
+the 1.0, 1.2, 1.4 and 1.6 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the stable 1.8 release series.
+</p>
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+    <contributors>
+	<person>Havard Graff</person>
+	<person>Lubosz Sarnecki</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Sebastian Dröge</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Wim Taymans</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>761251</id>
+      <summary>textoverlay: Expose text rendering dimensions to applications and remove absolute positioning limit</summary>
+    </bug>
+    <bug>
+      <id>763059</id>
+      <summary>opusdec: plug caps leak</summary>
+    </bug>
+    <bug>
+      <id>763094</id>
+      <summary>gst-play: remove peculiar setting of invalid -v property</summary>
+    </bug>
+    <bug>
+      <id>763278</id>
+      <summary>tcpserversink: problems with TS muxed stream, not detecting/sending keyframes</summary>
+    </bug>
+    <bug>
+      <id>763625</id>
+      <summary>decodebin: Crashes when shutting down during autoplugging</summary>
+    </bug>
+    <bug>
+      <id>758282</id>
+      <summary>OGG streams buffer constantly even with plenty of bandwidth</summary>
+    </bug>
+  </bugs>
+
+</release>
