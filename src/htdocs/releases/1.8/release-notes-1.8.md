@@ -1,6 +1,6 @@
 # GStreamer 1.8 Release Notes
 
-**NOTE: THESE RELEASE NOTES ARE VERY INCOMPLETE AND STILL WORK-IN-PROGRESS**
+**NOTE: THESE RELEASE NOTES ARE STILL WORK-IN-PROGRESS**
 
 **GStreamer 1.8 is scheduled for release in March 2016.**
 
@@ -20,8 +20,6 @@ version of this document.
 
 ## Highlights
 
-- FILL ME
-
 - **Hardware-accelerated zero-copy video decoding on Android**
 
 - **new video capture source for Android using the android.hardware.Camera API**
@@ -36,12 +34,14 @@ version of this document.
   [Matthew Waters' blog post][vulkan-in-gstreamer] for more details
 
 - **improved Opus audio codec support**: Support for more than two channels; MPEG-TS demuxer/muxer can now handle Opus;
-  [sample-accurate](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta)
-  encoding/decoding/transmuxing with Ogg, Matroska, ISOBMFF (Quicktime/MP4),
-  and MPEG-TS as container;
-  [new codec utility functions for Opus header and caps handling](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstpbutilscodecutils.html)
+  [sample-accurate][opus-sample-accurate] encoding/decoding/transmuxing with
+  Ogg, Matroska, ISOBMFF (Quicktime/MP4), and MPEG-TS as container;
+  [new codec utility functions for Opus header and caps handling][opus-codec-utils]
   in pbutils library. The Opus encoder/decoder elements were also moved to
-  gst-plugins-base.
+  gst-plugins-base (from -bad), and the opus RTP depayloader/payloader to -good.
+
+  [opus-sample-accurate]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta
+  [opus-codec-utils]:     https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstpbutilscodecutils.html
 
 - **GStreamer VAAPI module now released and maintained as part of the GStreamer project**
 
@@ -52,7 +52,7 @@ version of this document.
 
 ### Adaptive streaming: DASH, HLS and MSS improvements
 
-FIXME
+**FIXME**
 
 - loading of external periods/adaptationsets/etc.?
 
@@ -354,8 +354,8 @@ the library.  It does not take file locations for the vertex and fragment
 shaders anymore.  Instead it takes the strings directly leaving the file
 management to the application.
 
-A new [example][liveshader-example] was added utilizing the new shader infrastructure showcasing live
-shader edits.
+A new [example][liveshader-example] was added utilizing the new shader
+infrastructure showcasing live shader edits.
 
 [shader]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/gst-plugins-bad-libs-gstglshader.html
 [liveshader-example]: https://cgit.freedesktop.org/gstreamer/gst-plugins-bad/tree/tests/examples/gtk/glliveshader.c
@@ -371,7 +371,7 @@ for GstGLMemoryEGL specifically aimed at improving the decoding performance on
 the RPi.
 
 A texture-target field was added to video/x-raw(memory:GLMemory) caps to signal
-the texture target contained in the GLMemory.  It's values can be 2D, rectangle
+the texture target contained in the GLMemory.  Its values can be 2D, rectangle
 or external-oes.  glcolorconvert can convert between the different formats as
 required and different elements will accept or produce different targets.  e.g.
 glimagesink can take and render external-oes textures directly as required for
@@ -423,8 +423,8 @@ don't want to promote the use of GstVideoGLTextureUploadMeta.
 
 #### Other miscellaneous changes
 
-- The EGL implementation can now select OpenGL 3.x contexts.  This brings OpenGL 3.x to
-  e.g. wayland and other EGL systems.
+- The EGL implementation can now select OpenGL 3.x contexts.  This brings
+  OpenGL 3.x to e.g. wayland and other EGL systems.
 
 - glstereomix/glstereosplit are now built and are usable on OpenGL ES systems
 
@@ -545,6 +545,9 @@ example, the new name is vaapih264enc. With this change now we follow
 the standard names in GStreamer, and the plugin documentation is
 generated correctly.
 
+The JPEG decoder has been split out into a separate vaapijpegdec element and
+given marginal rank for the time being.
+
 Support for decoding 10-bit H.265/HEVC has been added. For the time being
 this only works in combination with vaapisink though, until support for the
 P010 video format used internally is added to GStreamer and to the
@@ -558,16 +561,21 @@ application.
 
 ### GStreamer Video 4 Linux Support
 
-Colorimetry support have been enhanced even more. It will now properly select
+Colorimetry support has been enhanced even more. It will now properly select
 default values when not specified by the driver. The range of color formats
 supported by GStreamer has been greatly improved. Notably, support for
 multi-planar I420 has been added along with all the new and non-ambiguous RGB
-formats that got added in recent kernels. The device provider now expose variety
-of properties as found in the Udev database. The video decoder is now able to
-negotiate downstream format. Elements that are dynamically created from
-/dev/video\* now track changes on these devices to ensure the registry stay up to
-date. All this and various bug fixes that improves both stability and correctness.
+formats that got added in recent kernels.
 
+The device provider now exposes a variety of properties as found in the udev
+database.
+
+The video decoder is now able to negotiate downstream format.
+
+Elements that are dynamically created from /dev/video\* now track changes on
+these devices to ensure the registry stay up to date.
+
+All this and various bug fixes that improve both stability and correctness.
 
 ### GStreamer Editing Services
 
@@ -583,17 +591,17 @@ lead to tweaking seek event to have the proper playback range to be
 requested upstream.
 
 Construction of NLE object has been reworked making copy/pasting fully
-functionnal and allowing users to set properties on effects right after
+functional and allowing users to set properties on effects right after
 creating them.
 
-Rework of the title source to add more flexibilty in text positionning,
-and letting the user get feedback about rendered text positionning.
+Rework of the title source to add more flexibility in text positioning,
+and letting the user get feedback about rendered text positioning.
 
-Report nlecomposition structural issues (comming from user programing mistake)
+Report nlecomposition structural issues (coming from user programing mistakes)
 into ERROR messages on the bus.
 
 Add GI/pythyon testsuite in GES itself, making sure the API is working as expected
-in python, and allowing writting tests faster.
+in python, and allowing writing tests faster.
 
 ### GstValidate
 
@@ -733,9 +741,11 @@ Our next major feature release will be 1.10, and 1.9 will be the unstable
 development version leading up to the stable 1.10 release. The development
 of 1.9/1.10 will happen in the git master branch.
 
-The plan for the 1.10 development cycle is to get a first 1.9 development
-release out by June 2016 and have our first 1.10 release candidate ready
-in July 2016, so that we can release 1.10 in August 2016.
+The plan for the 1.10 development cycle is yet to be confirmed.
+
+[](to get a first 1.9 development
+release out by June/FIXME 2016 and have our first 1.10 release candidate ready
+in July/FIXME 2016, so that we can release 1.10 in August/FIXME 2016.)
 
 1.10 will be backwards-compatible to the stable 1.8, 1.6, 1.4, 1.2 and 1.0
 release series.
