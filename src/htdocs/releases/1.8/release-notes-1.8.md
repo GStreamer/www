@@ -52,11 +52,11 @@ version of this document.
 
 ### Adaptive streaming: DASH, HLS and MSS improvements
 
-**FIXME**
+- dashdemux now supports loading external xml nodes pointed from its MPD.
 
-- loading of external periods/adaptationsets/etc.?
+- Content protection nodes parsing support for PlayReady WRM in mssdemux.
 
-- external clocks/timing?
+- Reverse playback was improved to respect seeking start and stop positions.
 
 - adaptive demuxers (hlsdemux, dashdemux, mssdemux) now support the SNAP_AFTER
   and SNAP_BEFORE seek flags which will jump to the nearest fragment boundary
