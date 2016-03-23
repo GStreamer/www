@@ -540,17 +540,16 @@ codec parser elements.
 
 The GStreamer-VAAPI encoder elements have been renamed from vaapiencode_foo
 to vaapifooenc, so encoders are now called vaapih264enc, vaapih265enc,
-vaapimpeg2enc, vaapijpegenc, and vaapivp8enc.
+vaapimpeg2enc, vaapijpegenc, and vaapivp8enc. With this change now we follow
+the standard names in GStreamer, and the plugin documentation is generated
+correctly.
+
+In the case of the decoders, only the jpeg decoder has been split from the
+general decoding element vaapidecode: vaapijpegdec. This is the first step to
+split per codec each decoding element. The vaapijpegdec also has given
+marginal rank for the time being.
 
 #### GStreamer VAAPI: New features in 1.8: 10-bit H.265/HEVC decoding support
-
-The encoders have been renamed: instead of vaapiencode_h264, for
-example, the new name is vaapih264enc. With this change now we follow
-the standard names in GStreamer, and the plugin documentation is
-generated correctly.
-
-The JPEG decoder has been split out into a separate vaapijpegdec element and
-given marginal rank for the time being.
 
 Support for decoding 10-bit H.265/HEVC has been added. For the time being
 this only works in combination with vaapisink though, until support for the
@@ -560,7 +559,7 @@ vaGetImage()/vaPutimage() API in the vaapi-intel-driver.
 Several fixes for memory leaks, build errors, and in the internal
 video parsing.
 
-vaapisink posts the unhandled keyboard and mouse events to the
+Finally, vaapisink now posts the unhandled keyboard and mouse events to the
 application.
 
 ### GStreamer Video 4 Linux Support
