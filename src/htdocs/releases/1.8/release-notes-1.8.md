@@ -153,6 +153,10 @@ version of this document.
   allow parsing raw data with strides and padding that does not match GStreamer
   defaults.
 
+- GstPreset reads presets from the directories given in GST\_PRESET\_PATH now.
+  Presets are read from there after those in the system path, but before
+  application and user paths.
+
 [gst_info_vasprintf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-vasprintf
 [gst_info_strdup_vprintf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-vprintf
 [gst_info_strdup_printf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-printf
