@@ -184,7 +184,7 @@ version of this document.
   property to drop buffers based on buffer flags. This can be used to drop all
   non-keyframe buffers, for example.
 
-- *multiqueue*: various fixes and improvement, in particular special handling
+- *multiqueue*: various fixes and improvements, in particular special handling
   for sparse streams such as substitle streams, to make sure we don't overread
   them any more. For sparse streams it can be normal that there's no buffer for
   a long period of time, so having no buffer queued is perfectly normal. Before
