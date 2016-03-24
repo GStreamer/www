@@ -1,6 +1,6 @@
 # GStreamer 1.8 Release Notes
 
-**GStreamer 1.8 is scheduled for release on 24 March 2016.**
+**GStreamer 1.8.0 was released on 24 March 2016.**
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
@@ -11,7 +11,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.8/][latest] for the latest
 version of this document.
 
-*Last updated: Thursday 24 March 2016, 01:00 UTC [(log)][gitlog]*
+*Last updated: Thursday 24 March 2016, 10:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.8/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.8/release-notes-1.8.md
@@ -326,7 +326,7 @@ and [GstPlayer examples][gstplayer-examples].
 - A new [GstAudioClippingMeta][audio-4] meta was added for specifying clipping
   on encoded audio buffers
 
-- A new [GstAudioVisualizer][audio-5] base class for audio visualisation elements;
+- A new GstAudioVisualizer base class for audio visualisation elements;
   most of the existing visualisers have been ported over to the new base class.
   This new base class lives in the pbutils library rather than the audio library,
   since we'd have had to make libgstaudio depend on libgstvideo otherwise,
@@ -337,7 +337,6 @@ and [GstPlayer examples][gstplayer-examples].
 [audio-2]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiochannels.html#gst-audio-channel-mix-new
 [audio-3]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiochannels.html#gst-audio-channel-get-fallback-mask
 [audio-4]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstaudiometa.html#GstAudioClippingMeta
-[audio-5]: **FIXME: add GstAudioVisualizer to docs and add link here **
 
 ### GStreamer OpenGL support improvements
 
@@ -677,6 +676,17 @@ Uses GstTracer now instead of a LD\_PRELOAD library.
   the element to lock up. Also the "mute" property on the sink was fixed, and
   a new "device" property for device selection was added to the source.
 
+## Known Issues
+
+- Building GStreamer applications with the Android NDK r11 is currently not
+  supported due to incompatible changes in the NDK. This is expected to be
+  fixed for 1.8.1.
+  [Bugzilla #763999](https://bugzilla.gnome.org/show_bug.cgi?id=763999)
+
+- vp8enc crashes on 32 bit Windows, but was working fine in 1.6. 64 bit
+  Windows is unaffected.
+  [Bugzilla #763663](https://bugzilla.gnome.org/show_bug.cgi?id=763663)
+
 ## Contributors
 
 Adam Miartus, Alban Bedel, Aleix Conchillo Flaqué, Aleksander Wabik,
@@ -706,7 +716,7 @@ Nirbheek Chauhan, Ognyan Tonchev, Olivier Crête, Pablo Anton, Pankaj Darak,
 Paolo Pettinato, Patricia Muscalu, Paul Arzelier, Pavel Bludov, Perry Hung,
 Peter Korsgaard, Peter Seiderer, Petr Viktorin, Philippe Normand,
 Philippe Renon, Philipp Zabel, Philip Van Hoof, Philip Withnall, Piotr Drąg,
-plamot, Polochon_street, Prashant Gotarne, Rajat Verma, Ramiro Polla,
+plamot, Polochon\_street, Prashant Gotarne, Rajat Verma, Ramiro Polla,
 Ravi Kiran K N, Reynaldo H. Verdejo Pinochet, Robert Swain, Romain Picard,
 Roman Nowicki, Ross Burton, Ryan Hendrickson, Santiago Carot-Nemesio,
 Scott D Phillips, Sebastian Dröge, Sebastian Rasmussen, Sergey Borovkov,
@@ -770,6 +780,7 @@ release series.
 
 *These release notes have been prepared by Tim-Philipp Müller with
 contributions from Sebastian Dröge, Nicolas Dufresne, Edward Hervey, Víctor
-Manuel Jáquez Leal, Thibault Saunier, Jan Schmidt and Matthew Waters.*
+Manuel Jáquez Leal, Arun Raghavan, Thiago Santos, Thibault Saunier, Jan
+Schmidt and Matthew Waters.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
