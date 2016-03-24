@@ -1,8 +1,6 @@
 # GStreamer 1.8 Release Notes
 
-**NOTE: THESE RELEASE NOTES ARE STILL WORK-IN-PROGRESS**
-
-**GStreamer 1.8 is scheduled for release in March 2016.**
+**GStreamer 1.8 is scheduled for release on 24 March 2016.**
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
@@ -13,7 +11,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.8/][latest] for the latest
 version of this document.
 
-*Last updated: Monday 14 March 2016, 10:00 UTC [(log)][gitlog]*
+*Last updated: Thursday 24 March 2016, 01:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.8/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.8/release-notes-1.8.md
@@ -28,7 +26,7 @@ version of this document.
 
 - **new tracing system** provides support for more sophisticated debugging tools
 
-- **new GstPlayer playback convenience API**
+- **new high-level GstPlayer playback convenience API**
 
 - **initial support for the new [Vulkan][vulkan] API**, see
   [Matthew Waters' blog post][vulkan-in-gstreamer] for more details
@@ -100,7 +98,7 @@ version of this document.
   to asynchronously propagate a previous flow return from downstream.
 
 - pipeline dumps in form of "dot files" now also show pad properties that
-  differ fro their default value, same it does for elements. This is
+  differ from their default value, same it does for elements. This is
   useful for elements with pad subclasses that provide additional properties,
   e.g. videomixer or compositor.
 
@@ -149,8 +147,8 @@ version of this document.
     [gst\_info\_strdup\_vprintf()][gst_info_strdup_vprintf] and
     [gst\_info\_strdup\_printf()][gst_info_strdup_printf].
 
-- videoparse: "strides", "offsets" and "framesize" properties has been added to
-  allow parsing raw data with strides and padding that does not match GStreamer
+- videoparse: "strides", "offsets" and "framesize" properties have been added to
+  allow parsing raw data with strides and padding that do not match GStreamer
   defaults.
 
 - GstPreset reads presets from the directories given in GST\_PRESET\_PATH now.
@@ -162,8 +160,6 @@ version of this document.
 [gst_info_strdup_printf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-strdup-printf
 
 ### New Elements
-
-**FIXME: add these elements to the docs and add links here**
 
 - [netsim](): a new (resurrected) element to simulate network jitter and
   packet dropping / duplication.
@@ -182,8 +178,6 @@ version of this document.
 - [alsamidisrc](): a new ALSA MIDI sequencer source element
 
 ### Noteworthy element features and additions
-
-**FIXME**: a lot of this should probably be moved down into 'Miscellaneous'
 
 - *identity*: new ["drop-buffer-flags"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-plugins/html/gstreamer-plugins-identity.html#GstIdentity--drop-buffer-flags)
   property to drop buffers based on buffer flags. This can be used to drop all
@@ -280,7 +274,7 @@ are things such as latency handling, buffer flow, ownership transfer of
 events and buffers from element to element, caps negotiation, etc.
 
 For some background on the new tracing system, watch Stefan Sauer's
-GStreamer Conference talk ["A new tracing subsystem for GStreamer"][tracing-0]
+GStreamer Conference talk ["A new tracing subsystem for GStreamer"][tracer-0]
 and for a more specific example how it can be useful have a look at
 Thiago Santos's lightning talk ["Analyzing caps negotiation using GstTracer"][tracer-1]
 and his ["GstTracer experiments"][tracer-2] blog post. There was also a Google
@@ -322,7 +316,7 @@ and [GstPlayer examples][gstplayer-examples].
   has been moved from the audioconvert element into the audio library and
   is now available as public API in form of [GstAudioConverter][audio-0],
   [GstAudioQuantize][audio-1] and [GstAudioChannelMixer][audio-2].
-  Audio resampling will follow in future releases. **FIXME**: link to docs
+  Audio resampling will follow in future releases.
 
 - [gst\_audio\_channel\_get\_fallback\_mask()][audio-3]
   to retrieve a default channel mask for a given number of channels as last
@@ -346,7 +340,7 @@ and [GstPlayer examples][gstplayer-examples].
 
 ### GStreamer OpenGL support improvements
 
-#### Better Shader support
+#### Better OpenGL Shader support
 
 [GstGLShader][shader] has been revamped to allow more OpenGL shader types
 by utilizing a new GstGLSLStage object.  Each stage holds an OpenGL pipeline
@@ -364,7 +358,7 @@ infrastructure showcasing live shader edits.
 [shader]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/gst-plugins-bad-libs-gstglshader.html
 [liveshader-example]: https://cgit.freedesktop.org/gstreamer/gst-plugins-bad/tree/tests/examples/gtk/glliveshader.c
 
-#### GLMemory rework
+#### OpenGL GLMemory rework
 
 [GstGLMemory] was extensively reworked to support the addition of multiple
 texture targets required for zero-copy integration with the android
@@ -385,13 +379,12 @@ A generic GL allocation framework was also implemented to support the generic
 allocation of OpenGL buffers and textures which is used extensively by
 GstGLBufferPool.
 
-#### DMABuf import uploader
+#### OpenGL DMABuf import uploader
 
 There is now a DMABuf uploader available for automatic selection that will
 attempt to import the upstream provided DMABuf.  The uploader will import into
 2D textures with the necesarry format.  YUV to RGB conversion is still provided
 by glcolorconvert to avoid the laxer restrictions with external-oes textures.
-
 
 #### OpenGL queries
 
@@ -417,7 +410,7 @@ same interface and functionality as videoflip.
 
 The EGL implementation can now select OpenGL 3.x contexts.
 
-#### API removal
+#### OpenGL API removal
 
 The GstGLDownload library object was removed as it was not used by anything.
 Everything is performed by GstGLMemory or in the gldownloadelement.
@@ -425,7 +418,7 @@ Everything is performed by GstGLMemory or in the gldownloadelement.
 The GstGLUploadMeta library object was removed as it was not being used and we
 don't want to promote the use of GstVideoGLTextureUploadMeta.
 
-#### Other miscellaneous changes
+#### OpenGL: Other miscellaneous changes
 
 - The EGL implementation can now select OpenGL 3.x contexts.  This brings
   OpenGL 3.x to e.g. wayland and other EGL systems.
@@ -435,7 +428,7 @@ don't want to promote the use of GstVideoGLTextureUploadMeta.
 - The UYVY/YUY2 to RGBA and RGBA to UYVY/YUY2 shaders were fixed removing the
   sawtooth pattern and luma bleeding.
 
-- We now utilize the GL_APPLE_sync extension on iOS devices which improves
+- We now utilize the GL\_APPLE\_sync extension on iOS devices which improves
   performance of OpenGL applications, especially with multiple OpenGL
   contexts.
 
@@ -540,13 +533,13 @@ codec parser elements.
 
 The GStreamer-VAAPI encoder elements have been renamed from vaapiencode_foo
 to vaapifooenc, so encoders are now called vaapih264enc, vaapih265enc,
-vaapimpeg2enc, vaapijpegenc, and vaapivp8enc. With this change now we follow
+vaapimpeg2enc, vaapijpegenc, and vaapivp8enc. With this change we now follow
 the standard names in GStreamer, and the plugin documentation is generated
 correctly.
 
 In the case of the decoders, only the jpeg decoder has been split from the
 general decoding element vaapidecode: vaapijpegdec. This is the first step to
-split per codec each decoding element. The vaapijpegdec also has given
+split per codec each decoding element. The vaapijpegdec has also been given
 marginal rank for the time being.
 
 #### GStreamer VAAPI: New features in 1.8: 10-bit H.265/HEVC decoding support
@@ -615,22 +608,6 @@ critical errors.
 
 Uses GstTracer now instead of a LD PRELOAD library.
 
-
-### cerbero build tool for SDK binary packages
-
-FIXME
-
-cerbero is a custom build too that builds GStreamer plus dependencies on
-non-Linux operating systems such as Windows, OS/X, iOS and Android, and
-produces SDK binary packages for those systems. This is needed because
-GStreamer depends on a large number of external libraries, all of which in
-turn have dependencies of their own. These dependent libraries are usually
-not present or available on non-unix operating systems, so everything GStreamer
-needs has to be pretty much built from scratch so that it can be used on on
-those systems.
-
-FIXME
-
 ## Miscellaneous
 
 - encodebin now works with "encoder-muxers" such as wavenc
@@ -697,13 +674,47 @@ the preferred high-resolution monotonic clock to be used on Apple platforms
   the element to lock up. Also the "mute" property on the sink was fixed, and
   a new "device" property for device selection was added to the source.
 
-### Linux
-
-FIXME
-
 ## Contributors
 
-FIXME
+Adam Miartus, Alban Bedel, Aleix Conchillo Flaqué, Aleksander Wabik,
+Alessandro Decina, Alex Ashley, Alex Dizengof, Alex Henrie, Alistair Buxton,
+Andreas Cadhalpun, Andreas Frisch, André Draszik, Anthony G. Basile,
+Antoine Jacoutot, Anton Bondarenko, Antonio Ospite, Arjen Veenhuizen,
+Arnaud Vrac, Arun Raghavan, Athanasios Oikonomou, Aurélien Zanelli, Ben Iofel,
+Bob Holcomb, Branko Subasic, Carlos Rafael Giani, Chris Bass, Csaba Toth,
+Daniel Kamil Kozar, Danilo Cesar Lemes de Paula, Dave Craig, David Fernandez,
+David Schleef, David Svensson Fors, David Waring, David Wu, Duncan Palmer,
+Edward Hervey, Egor Zaharov, Etienne Peron, Eunhae Choi, Evan Callaway,
+Evan Nemerson, Fabian Orccon, Florent Thiéry, Florin Apostol, Frédéric Wang,
+George Kiagiadakis, George Yunaev, Göran Jönsson, Graham Leggett,
+Guillaume Desmottes, Guillaume Marquebielle, Haihua Hu, Havard Graff,
+Heinrich Fink, Holger Kaelberer, HoonHee Lee, Hugues Fruchet, Hyunil Park,
+Hyunjun Ko, Ilya Konstantinov, James Stevenson, Jan Alexander Steffens (heftig),
+Jan Schmidt, Jason Litzinger, Jens Georg, Jimmy Ohn, Joan Pau Beltran,
+Joe Gorse, John Chang, John Slade, Jose Antonio Santos Cadenas, Josep Torra,
+Julian Bouzas, Julien Isorce, Julien Moutte, Justin Kim, Kazunori Kobayashi,
+Koop Mast, Lim Siew Hoon, Linus Svensson, Lubosz Sarnecki, Luis de Bethencourt,
+Lukasz Forynski, Manasa Athreya, Marcel Holtmann, Marcin Kolny, Marcus Prebble,
+Mark Nauwelaerts, Maroš Ondrášek, Martin Kelly, Matej Knopp, Mathias Hasselmann,
+Mathieu Duponchelle, Matt Crane, Matthew Marsh, Matthew Waters, Matthieu Bouron,
+Mersad Jelacic, Michael Olbrich, Miguel París Díaz, Mikhail Fludkov,
+Mischa Spiegelmock, Nicola Murino, Nicolas Dufresne, Nicolas Huet,
+Nirbheek Chauhan, Ognyan Tonchev, Olivier Crête, Pablo Anton, Pankaj Darak,
+Paolo Pettinato, Patricia Muscalu, Paul Arzelier, Pavel Bludov, Perry Hung,
+Peter Korsgaard, Peter Seiderer, Petr Viktorin, Philippe Normand,
+Philippe Renon, Philipp Zabel, Philip Van Hoof, Philip Withnall, Piotr Drąg,
+plamot, Polochon_street, Prashant Gotarne, Rajat Verma, Ramiro Polla,
+Ravi Kiran K N, Reynaldo H. Verdejo Pinochet, Robert Swain, Romain Picard,
+Roman Nowicki, Ross Burton, Ryan Hendrickson, Santiago Carot-Nemesio,
+Scott D Phillips, Sebastian Dröge, Sebastian Rasmussen, Sergey Borovkov,
+Seungha Yang, Sjors Gielen, Song Bing, Sreerenj Balachandran, Srimanta Panda,
+Stavros Vagionitis, Stefan Sauer, Steven Hoving, Stian Selnes, Suhwang Kim,
+Thiago Santos, Thibault Saunier, Thijs Vermeir, Thomas Bluemel, Thomas Roos,
+Thomas Vander Stichele, Tim-Philipp Müller, Tim Sheridan, Ting-Wei Lan,
+Tom Deseyn, Vanessa Chipirrás Navalón, Víctor Manuel Jáquez Leal,
+Vincent Dehors, Vincent Penquerc'h, Vineeth T M, Vivia Nikolaidou,
+Wang Xin-yu (王昕宇), William Manley, Wim Taymans, Wonchul Lee, Xavi Artigas,
+Xavier Claessens, Youness Alaoui,
 
 ... and many others who have contributed bug reports, translations, sent
 suggestions or helped testing.
@@ -732,11 +743,11 @@ is a stable branch.
 
 ### 1.8.0
 
-1.8.0 was released on XX March 2016. (FIXME)
+1.8.0 was released on 24 March 2016.
 
 ### 1.8.1
 
-The first 1.8 bug-fix release (1.8.1) is planned for FIXME 2016.
+The first 1.8 bug-fix release (1.8.1) is planned for April 2016.
 
 ## Schedule for 1.10
 
@@ -744,11 +755,10 @@ Our next major feature release will be 1.10, and 1.9 will be the unstable
 development version leading up to the stable 1.10 release. The development
 of 1.9/1.10 will happen in the git master branch.
 
-The plan for the 1.10 development cycle is yet to be confirmed.
-
-[](to get a first 1.9 development
-release out by June/FIXME 2016 and have our first 1.10 release candidate ready
-in July/FIXME 2016, so that we can release 1.10 in August/FIXME 2016.)
+The plan for the 1.10 development cycle is yet to be confirmed, but it is
+expected that feature freeze will be around late July or early August,
+followed by several 1.9 pre-releases and the new 1.10 stable release
+in September.
 
 1.10 will be backwards-compatible to the stable 1.8, 1.6, 1.4, 1.2 and 1.0
 release series.
