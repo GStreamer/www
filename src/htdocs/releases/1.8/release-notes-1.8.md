@@ -721,7 +721,7 @@ suggestions or helped testing.
 
 ## Bugs fixed in 1.8
 
-More than [~9999 bugs FIXME)][bugs-fixed-in-1.8] have been fixed during
+More than [~700 bugs][bugs-fixed-in-1.8] have been fixed during
 the development of 1.8.
 
 This list does not include issues that have been cherry-picked into the
