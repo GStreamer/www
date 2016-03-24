@@ -46,6 +46,8 @@ version of this document.
   [vulkan]:              https://www.khronos.org/vulkan
   [vulkan-in-gstreamer]: http://ystreet00.blogspot.co.uk/2016/02/vulkan-in-gstreamer.html
 
+- **Asset proxy support in the GStreamer Editing Services**
+
 ## Major new features and changes
 
 ### Noteworthy new API, features and other changes
@@ -391,7 +393,7 @@ by glcolorconvert to avoid the laxer restrictions with external-oes textures.
 #### OpenGL queries
 
 Queries of various aspects of the OpenGL runtime such as timers, number of
-samples or the current timestamp are not possible.  The GstGLQuery object uses a
+samples or the current timestamp are now possible. The GstGLQuery object uses a
 delayed debug system to delay the debug output to later to avoid expensive calls
 to the glGet\* family of functions directly after finishing a query.  It is
 currently used to output the time taken to perform various operations of texture
@@ -581,7 +583,7 @@ Added APIs to handle asset proxying support. Proxy creation is not the
 responsibility of GES itself, but GES provides all the needed features
 for it to be cleanly handled at a higher level.
 
-Added support for changing playback rate.  This means that now, whenever a
+Added support for changing playback rate. This means that now, whenever a
 user adds a 'pitch' element (as it is the only known element to change playback
 rate through properties), GES will handle everything internally. This change
 introduced a new media-duration-factor property in NleObject which will
@@ -595,20 +597,23 @@ creating them.
 Rework of the title source to add more flexibility in text positioning,
 and letting the user get feedback about rendered text positioning.
 
-Report nlecomposition structural issues (coming from user programing mistakes)
+Report nlecomposition structural issues (coming from user programming mistakes)
 into ERROR messages on the bus.
 
 Add GI/pythyon testsuite in GES itself, making sure the API is working as expected
 in python, and allowing writing tests faster.
 
+The GES validate integration testsuite is now run as part of the GStreamer
+continuous integration effort.
+
 ### GstValidate
 
-Added support to run tests inside gdb.
+- Added support to run tests inside gdb
 
-Added a 'smart' reporting mode where we give as much information as possible about
-critical errors.
+- Added a 'smart' reporting mode where we give as much information as possible about
+  critical errors
 
-Uses GstTracer now instead of a LD\_PRELOAD library.
+- Uses GstTracer now instead of a LD\_PRELOAD library
 
 ## Miscellaneous
 
