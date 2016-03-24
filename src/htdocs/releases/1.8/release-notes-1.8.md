@@ -20,18 +20,18 @@ version of this document.
 
 - **Hardware-accelerated zero-copy video decoding on Android**
 
-- **new video capture source for Android using the android.hardware.Camera API**
+- **New video capture source for Android using the android.hardware.Camera API**
 
 - **Windows Media reverse playback** support (ASF/WMV/WMA)
 
-- **new tracing system** provides support for more sophisticated debugging tools
+- **New tracing system** provides support for more sophisticated debugging tools
 
-- **new high-level GstPlayer playback convenience API**
+- **New high-level GstPlayer playback convenience API**
 
-- **initial support for the new [Vulkan][vulkan] API**, see
+- **Initial support for the new [Vulkan][vulkan] API**, see
   [Matthew Waters' blog post][vulkan-in-gstreamer] for more details
 
-- **improved Opus audio codec support**: Support for more than two channels; MPEG-TS demuxer/muxer can now handle Opus;
+- **Improved Opus audio codec support**: Support for more than two channels; MPEG-TS demuxer/muxer can now handle Opus;
   [sample-accurate][opus-sample-accurate] encoding/decoding/transmuxing with
   Ogg, Matroska, ISOBMFF (Quicktime/MP4), and MPEG-TS as container;
   [new codec utility functions for Opus header and caps handling][opus-codec-utils]
@@ -54,19 +54,19 @@ version of this document.
 
 - Content protection nodes parsing support for PlayReady WRM in mssdemux.
 
-- Reverse playback was improved to respect seeking start and stop positions.
+- Reverse playback was improved to respect seek start and stop positions.
 
-- adaptive demuxers (hlsdemux, dashdemux, mssdemux) now support the SNAP_AFTER
+- Adaptive demuxers (hlsdemux, dashdemux, mssdemux) now support the SNAP_AFTER
   and SNAP_BEFORE seek flags which will jump to the nearest fragment boundary
   when executing a seek, which means playback resumes more quickly after a seek.
 
 ### Noteworthy new API, features and other changes
 
-- new GstVideoAffineTransformationMeta meta for adding a simple 4x4 affine
+- New GstVideoAffineTransformationMeta meta for adding a simple 4x4 affine
   transformation matrix to video buffers
 
 - [g\_autoptr()](https://developer.gnome.org/glib/stable/glib-Miscellaneous-Macros.html#g-autoptr)
-  support for all types is exposed in GStreamer headers now in combination
+  support for all types is exposed in GStreamer headers now, in combination
   with a sufficiently-new GLib version (i.e. 2.44 or later). This is primarily
   for the benefit of application developers who would like to make use of
   this, the GStreamer codebase itself will not be using g_autoptr() for
@@ -81,43 +81,43 @@ version of this document.
   configuration objects on elements, e.g. for OpenGL or Hardware-accelerated
   video decoding.
 
-- new [GST\_BUFFER\_DTS\_OR\_PTS()](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstBuffer.html#GST-BUFFER-DTS-OR-PTS:CAPS)
+- New [GST\_BUFFER\_DTS\_OR\_PTS()](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstBuffer.html#GST-BUFFER-DTS-OR-PTS:CAPS)
   convenience macro that returns the decode timestamp if one is set and
   otherwise returns the presentation timestamp
 
-- new GstPadEventFullFunc that returns a GstFlowReturn instead of a gboolean.
+- New GstPadEventFullFunc that returns a GstFlowReturn instead of a gboolean.
   This new API is mostly for internal use and was added to fix a race condition
   where occasionally internal flow error messages were posted on the bus when
   sticky events were propagated at just the wrong moment whilst the pipeline
-  is shutting down. This happens primarily when the pipeline is shut down
+  was shutting down. This happened primarily when the pipeline was shut down
   immediately after starting it up. GStreamer would not know that the reason
-  the events could not be propagated is because the pipeline is shutting down
+  the events could not be propagated was because the pipeline was shutting down
   and not some other problem, and now the flow error allows GStreamer to know
   the reason for the failure (and that there's no reason to post an error
   message). This is particularly useful for queue-like elements which may need
   to asynchronously propagate a previous flow return from downstream.
 
-- pipeline dumps in form of "dot files" now also show pad properties that
-  differ from their default value, same it does for elements. This is
+- Pipeline dumps in form of "dot files" now also show pad properties that
+  differ from their default value, the same as it does for elements. This is
   useful for elements with pad subclasses that provide additional properties,
   e.g. videomixer or compositor.
 
-- pad probes are now guaranteed to be called in the order they were added
+- Pad probes are now guaranteed to be called in the order they were added
   (before they were called in reverse order, but no particular order was
   documented or guaranteed)
 
-- plugins can now have dependencies on device nodes (not just regular files)
+- Plugins can now have dependencies on device nodes (not just regular files)
   and also have a prefix filter. This is useful for plugins that expose
   features (elements) based on available devices, such as the video4linux
-  plugin in case of video decoders on certain embedded systems.
+  plugin does with video decoders on certain embedded systems.
 
 - gst\_segment\_to\_position() has been deprecated and been replaced by the
   better-named gst\_segment\_position\_from\_running\_time(). At the same time
   gst\_segment\_position\_from\_stream\_time() was added, as well as \_full()
-  variants of both to cater for negative stream time.
+  variants of both to deal with negative stream time.
 
 - GstController: the interpolation control source gained a new monotonic cubic
-  interpolation mode that unlike the existing cubic mode will never overshoot
+  interpolation mode that, unlike the existing cubic mode, will never overshoot
   the min/max y values set.
 
 - GstNetAddressMeta: can now be read from buffers in language bindings as well,
@@ -128,17 +128,18 @@ version of this document.
 - gst-launch-1.0 and gst\_parse\_launch() now warn in the most common case if
   a dynamic pad link could not be resolved, instead of just silently
   waiting to see if a suitable pad appears later, which is often perceived
-  by users as hanging. Now at least they are being notified and can check
+  by users as hanging -- they are now notified when this happens and can check
   their pipeline.
 
 - GstRTSPConnection now also parses custom RTSP message headers and retains
   them for the application instead of just ignoring them
 
-- rtspsrc: fix authentication over tunneled connections (e.g. RTSP over HTTP)
+- rtspsrc handling of  authentication over tunneled connections (e.g. RTSP over HTTP)
+  was fixed
 
 - gst\_video\_convert\_sample() now crops if there is a crop meta on the input buffer
 
-- the debugging system printf functions are now exposed for general use, which
+- The debugging system printf functions are now exposed for general use, which
   supports special printf format specifiers such as GST\_PTR\_FORMAT and
   GST\_SEGMENT\_FORMAT to print GStreamer-related objects. This is handy for
   systems that want to prepare some debug log information to be output at a
@@ -152,7 +153,7 @@ version of this document.
   defaults.
 
 - GstPreset reads presets from the directories given in GST\_PRESET\_PATH now.
-  Presets are read from there after those in the system path, but before
+  Presets are read from there after presets in the system path, but before
   application and user paths.
 
 [gst_info_vasprintf]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-info-vasprintf
@@ -164,18 +165,18 @@ version of this document.
 - [netsim](): a new (resurrected) element to simulate network jitter and
   packet dropping / duplication.
 
-- new VP9 RTP payloader/depayloader elements: rtpvp9pay/rtpvp9depay
+- New VP9 RTP payloader/depayloader elements: rtpvp9pay/rtpvp9depay
 
-- new [videoframe_audiolevel]() element, a video frame synchronized audio level element
+- New [videoframe_audiolevel]() element, a video frame synchronized audio level element
 
-- new spandsp-based tone generator source
+- New spandsp-based tone generator source
 
-- new NVIDIA NVENC based H.264 encoder for GPU-accelerated video encoding on
+- New NVIDIA NVENC-based H.264 encoder for GPU-accelerated video encoding on
   suitable NVIDIA hardware
 
 - [rtspclientsink](), a new RTSP RECORD sink element, was added to gst-rtsp-server
 
-- [alsamidisrc](): a new ALSA MIDI sequencer source element
+- [alsamidisrc](), a new ALSA MIDI sequencer source element
 
 ### Noteworthy element features and additions
 
@@ -183,7 +184,7 @@ version of this document.
   property to drop buffers based on buffer flags. This can be used to drop all
   non-keyframe buffers, for example.
 
-- *multiqueue*: various fixes and improvement, in particular add special handling
+- *multiqueue*: various fixes and improvement, in particular special handling
   for sparse streams such as substitle streams, to make sure we don't overread
   them any more. For sparse streams it can be normal that there's no buffer for
   a long period of time, so having no buffer queued is perfectly normal. Before
@@ -212,21 +213,21 @@ version of this document.
 
 - gst-libav (ffmpeg codec wrapper): map and enable JPEG2000 decoder
 
-- [multisocketsink] can on request send a custom GstNetworkMessage event
+- multisocketsink can, on request, send a custom GstNetworkMessage event
   upstream whenever data is received from a client on a socket. Similarly,
-  [socketsrc] will on request pick up GstNetworkMessage events from downstream
+  socketsrc will, on request, pick up GstNetworkMessage events from downstream
   and send any data contained within them via the socket. This allows for
   simple bidirectional communication.
 
 - matroska muxer and demuxer now support the ProRes video format
 
-- improved VP8/VP9 decoding performance on multi-core systems by enabling
+- Improved VP8/VP9 decoding performance on multi-core systems by enabling
   multi-threaded decoding in the libvpx-based decoders on such systems
 
-- appsrc has a new "wait-on-eos" property, so in cases where it
-  is uncertain if an appsink will have a consumer for its buffers when it
-  receives an EOS this can be set to FALSE to ensure that the appsink will
-  not hang.
+- appsink has a new ["wait-on-eos"](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-plugins/html/gst-plugins-base-plugins-appsink.html#GstAppSink--wait-on-eos)
+  property, so in cases where it is uncertain if an appsink will have a consumer for
+  its buffers when it receives an EOS this can be set to FALSE to ensure that the
+  appsink will not hang.
 
 - rtph264pay and rtph265pay have a new "config-interval" mode -1 that will
   re-send the setup data (SPS/PPS/VPS) before every keyframe to ensure
@@ -240,7 +241,7 @@ version of this document.
 
 ### Plugin moves
 
-- The rtph265depay/pay RTP payloader/depayloader elements for H.265/HEVC video
+- The rtph265pay/depay RTP payloader/depayloader elements for H.265/HEVC video
   from the rtph265 plugin in -bad have been moved into the existing rtp plugin
   in gst-plugins-good.
 
@@ -259,7 +260,7 @@ new type of plugin features, and GStreamer core ships with a few example
 tracers (latency, stats, rusage, log) to start with. Tracers can be loaded
 and configured at start-up via an environment variable (GST\_TRACER\_PLUGINS).
 
-Background: Whilst GStreamer provides plenty of data of what's going on in a
+Background: While GStreamer provides plenty of data on what's going on in a
 pipeline via its debug log, that data is not necessarily structured enough to
 be generally useful, and the overhead to enable logging output for all data
 required might be too high in many cases. The new tracing system allows tracers
@@ -296,8 +297,8 @@ in the form of the playbin element for a long time. This allowed application
 developers to just configure a URI to play, and playbin would take care of
 everything else. This works well, but there is still way too much to do on
 the application-side to implement a fully-featured playback application, and
-too much general GStreamer pipeline API exposed, which does not exactly make
-it the most accessible API to start with.
+too much general GStreamer pipeline API exposed, making it less accessible
+to application developers.
 
 Enter GstPlayer. GstPlayer's aim is to provide an even higher-level abstraction
 of a fully-featured playback API but specialised for its specific use case. It
@@ -318,18 +319,18 @@ and [GstPlayer examples][gstplayer-examples].
   [GstAudioQuantize][audio-1] and [GstAudioChannelMixer][audio-2].
   Audio resampling will follow in future releases.
 
-- [gst\_audio\_channel\_get\_fallback\_mask()][audio-3]
+- [gst\_audio\_channel\_get\_fallback\_mask()][audio-3] can be used
   to retrieve a default channel mask for a given number of channels as last
   resort if the layout is unknown
 
-- new [GstAudioClippingMeta][audio-4] meta for specifying clipping on encoded
-  audio buffers
+- A new [GstAudioClippingMeta][audio-4] meta was added for specifying clipping
+  on encoded audio buffers
 
-- new [GstAudioVisualizer][audio-5] base class for audio visualisation elements;
+- A new [GstAudioVisualizer][audio-5] base class for audio visualisation elements;
   most of the existing visualisers have been ported over to the new base class.
   This new base class lives in the pbutils library rather than the audio library,
   since we'd have had to make libgstaudio depend on libgstvideo otherwise,
-  which was deemed somewhat undesirable.
+  which was deemed undesirable.
 
 [audio-0]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-GstAudioConverter.html
 [audio-1]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-GstAudioQuantize.html
@@ -361,12 +362,14 @@ infrastructure showcasing live shader edits.
 #### OpenGL GLMemory rework
 
 [GstGLMemory] was extensively reworked to support the addition of multiple
-texture targets required for zero-copy integration with the android
+texture targets required for zero-copy integration with the Android
 MediaCodec elements.  This work was also used to provide IOSurface based
 GLMemory on OS X for zero-copy with OS X's VideoToolbox decoder (vtdec) and
 AV Foundation video source (avfvideosrc).  There are also patches in bugzilla
 for GstGLMemoryEGL specifically aimed at improving the decoding performance on
-the RPi.
+the Raspberry Pi.
+
+[GstGLMemory]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/gst-plugins-bad-libs-gstglmemory.html
 
 A texture-target field was added to video/x-raw(memory:GLMemory) caps to signal
 the texture target contained in the GLMemory.  Its values can be 2D, rectangle
@@ -391,7 +394,7 @@ by glcolorconvert to avoid the laxer restrictions with external-oes textures.
 Queries of various aspects of the OpenGL runtime such as timers, number of
 samples or the current timestamp are not possible.  The GstGLQuery object uses a
 delayed debug system to delay the debug output to later to avoid expensive calls
-the glGet\* family of functions directly after finishing a query.  It is
+to the glGet\* family of functions directly after finishing a query.  It is
 currently used to output the time taken to perform various operations of texture
 uploads and downloads in GstGLMemory.
 
@@ -509,11 +512,11 @@ numbering to avoid confusion: there is a new gstreamer-vaapi 1.6.0 release
 and a 1.6 branch that is roughly equivalent to the previous 0.7.0 version.
 Future releases 1.7.x and 1.8.x will be made alongside GStreamer releases.
 
-Whilst it was possible and supported by previous releases to build against
+While it was possible and supported by previous releases to build against
 a whole range of different GStreamer versions (such as 1.2, 1.4, 1.6 or 1.7/1.8),
-in future there will only be one target branch, so that git master will
+in the future there will only be one target branch, so that git master will
 track GStreamer git master, 1.8.x will target GStreamer 1.8, and
-1.6.x is targetting the 1.6 series.
+1.6.x will target the 1.6 series.
 
 [iostc]: http://01.org
 [bgo]:   http://bugzilla.gnome.og
@@ -566,7 +569,7 @@ formats that got added in recent kernels.
 The device provider now exposes a variety of properties as found in the udev
 database.
 
-The video decoder is now able to negotiate downstream format.
+The video decoder is now able to negotiate the downstream format.
 
 Elements that are dynamically created from /dev/video\* now track changes on
 these devices to ensure the registry stay up to date.
@@ -579,14 +582,14 @@ Added APIs to handle asset proxying support. Proxy creation is not the
 responsibility of GES itself, but GES provides all the needed features
 for it to be cleanly handled at a higher level.
 
-Added changing playback rate support. This means that now, whenever a user
-adds a 'pitch' element (as it is the only known element to change playback
+Added support for changing playback rate.  This means that now, whenever a
+user adds a 'pitch' element (as it is the only known element to change playback
 rate through properties), GES will handle everything internally. This change
 introduced a new media-duration-factor property in NleObject which will
-lead to tweaking seek event to have the proper playback range to be
+lead to tweaking of seek events so they have the proper playback range to be
 requested upstream.
 
-Construction of NLE object has been reworked making copy/pasting fully
+Construction of NLE objects has been reworked making copy/pasting fully
 functional and allowing users to set properties on effects right after
 creating them.
 
@@ -606,7 +609,7 @@ Added support to run tests inside gdb.
 Added a 'smart' reporting mode where we give as much information as possible about
 critical errors.
 
-Uses GstTracer now instead of a LD PRELOAD library.
+Uses GstTracer now instead of a LD\_PRELOAD library.
 
 ## Miscellaneous
 
@@ -619,9 +622,9 @@ Uses GstTracer now instead of a LD PRELOAD library.
 
 ## Build and Dependencies
 
-- the GLib dependency requirement was bumped to 2.40
+- The GLib dependency requirement was bumped to 2.40
 
-- the -Bsymbolic configure check now works with clang as well
+- The -Bsymbolic configure check now works with clang as well
 
 - ffmpeg is now required as libav provider, incompatible changes were
   introduced that make it no longer viable to support both FFmpeg and Libav
@@ -630,38 +633,38 @@ Uses GstTracer now instead of a LD PRELOAD library.
   problem, and there is still an internal copy of ffmpeg that can be used
   as fallback if needed.
 
-- the internal ffmpeg snapshot is now FFMpeg 3.0, but it should be possible
+- The internal ffmpeg snapshot is now FFMpeg 3.0, but it should be possible
   to build against 2.8 as well for the time being.
 
 ## Platform-specific improvements
 
 ### Android
 
-- zero-copy video decoding on Android using the hardware-accelerated decoders
+- Zero-copy video decoding on Android using the hardware-accelerated decoders
   has been implemented, and is fully integrated with the GStreamer OpenGL stack
 
 - ahcsrc, a new camera source element, has been merged and can be used to
   capture video on android devices. It uses the android.hardware.Camera Java
   API to capture from the system's cameras.
 
-- the OpenGL-based QML video sink can now also be used on Android
+- The OpenGL-based QML video sink can now also be used on Android
 
-- new tinyalsasink element, which is mainly useful for Android but can also
+- New tinyalsasink element, which is mainly useful for Android but can also
   be used on other platforms.
 
 ### OS/X and iOS
 
-- the system clock now uses mach\_absolute\_time() on OSX/iOS, which is
-the preferred high-resolution monotonic clock to be used on Apple platforms
+- The system clock now uses mach\_absolute\_time() on OSX/iOS, which is
+  the preferred high-resolution monotonic clock to be used on Apple platforms
 
-- the OpenGL-based QML video sink can now also be used on OS X and iOS (with
+- The OpenGL-based QML video sink can now also be used on OS X and iOS (with
   some Qt build system massaging)
 
-- new IOSurface based memory implementation in avfvideosrc and vtdec on OS X
+- New IOSurface based memory implementation in avfvideosrc and vtdec on OS X
   for zerocopy with OpenGL.  The previously used OpenGL extension
   GL_APPLE_ycbcr_422 is not compatible with GL 3.x core contexts.
 
-- new GstAppleCoreVideoMemory wrapping CVPixelBuffer's
+- New GstAppleCoreVideoMemory wrapping CVPixelBuffer's
 
 - avfvideosrc now supports renegotiation.
 
