@@ -48,18 +48,6 @@ version of this document.
 
 ## Major new features and changes
 
-### Adaptive streaming: DASH, HLS and MSS improvements
-
-- dashdemux now supports loading external xml nodes pointed from its MPD.
-
-- Content protection nodes parsing support for PlayReady WRM in mssdemux.
-
-- Reverse playback was improved to respect seek start and stop positions.
-
-- Adaptive demuxers (hlsdemux, dashdemux, mssdemux) now support the SNAP_AFTER
-  and SNAP_BEFORE seek flags which will jump to the nearest fragment boundary
-  when executing a seek, which means playback resumes more quickly after a seek.
-
 ### Noteworthy new API, features and other changes
 
 - New GstVideoAffineTransformationMeta meta for adding a simple 4x4 affine
@@ -310,6 +298,18 @@ and [GstPlayer examples][gstplayer-examples].
 [gstplayer-api]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/player.html
 [gstplayer-talk]: https://gstconf.ubicast.tv/videos/gstplayer-a-simple-cross-platform-api-for-all-your-media-playback-needs-part-1/
 [gstplayer-examples]: https://github.com/sdroege/gst-player/
+
+### Adaptive streaming: DASH, HLS and MSS improvements
+
+- dashdemux now supports loading external xml nodes pointed from its MPD.
+
+- Content protection nodes parsing support for PlayReady WRM in mssdemux.
+
+- Reverse playback was improved to respect seek start and stop positions.
+
+- Adaptive demuxers (hlsdemux, dashdemux, mssdemux) now support the SNAP_AFTER
+  and SNAP_BEFORE seek flags which will jump to the nearest fragment boundary
+  when executing a seek, which means playback resumes more quickly after a seek.
 
 ### Audio library improvements
 
