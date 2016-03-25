@@ -152,21 +152,21 @@ version of this document.
 
 ### New Elements
 
-- [netsim](): a new (resurrected) element to simulate network jitter and
+- netsim: a new (resurrected) element to simulate network jitter and
   packet dropping / duplication.
 
 - New VP9 RTP payloader/depayloader elements: rtpvp9pay/rtpvp9depay
 
-- New [videoframe_audiolevel]() element, a video frame synchronized audio level element
+- New videoframe_audiolevel element, a video frame synchronized audio level element
 
 - New spandsp-based tone generator source
 
 - New NVIDIA NVENC-based H.264 encoder for GPU-accelerated video encoding on
   suitable NVIDIA hardware
 
-- [rtspclientsink](), a new RTSP RECORD sink element, was added to gst-rtsp-server
+- rtspclientsink, a new RTSP RECORD sink element, was added to gst-rtsp-server
 
-- [alsamidisrc](), a new ALSA MIDI sequencer source element
+- alsamidisrc, a new ALSA MIDI sequencer source element
 
 ### Noteworthy element features and additions
 
