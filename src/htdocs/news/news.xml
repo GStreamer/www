@@ -7624,7 +7624,8 @@ Check out the release notes for
 <a href="&site;/releases/gst-plugins-bad/1.6.4.html">gst-plugins-bad</a>,
 <a href="&site;/releases/gst-libav/1.6.4.html">gst-libav</a>,
 <a href="&site;/releases/gst-rtsp-server/1.6.4.html">gst-rtsp-server</a>,
-<a href="&site;/releases/gst-editing-services/1.6.4.html">gst-editing-services</a>, or
+<a href="&site;/releases/gst-editing-services/1.6.4.html">gst-editing-services</a>,
+<a href="&site;/releases/gst-python/1.6.4.html">gst-python</a>, or
 or download tarballs for
 <a href="&site;/src/gstreamer/gstreamer-1.6.4.tar.xz">gstreamer</a>,
 <a href="&site;/src/gst-plugins-base/gst-plugins-base-1.6.4.tar.xz">gst-plugins-base</a>,
@@ -7634,6 +7635,7 @@ or download tarballs for
 <a href="&site;/src/gst-libav/gst-libav-1.6.4.tar.xz">gst-libav</a>,
 <a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.6.4.tar.xz">gst-rtsp-server</a>,
 <a href="&site;/src/gst-editing-services/gst-editing-services-1.6.4.tar.xz">gst-editing-services</a>.
+<a href="&site;/src/gst-python/gst-python-1.6.4.tar.xz">gst-python</a>.
         </p>
         </content>
   </item>
