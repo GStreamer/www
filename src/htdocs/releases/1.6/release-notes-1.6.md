@@ -1,126 +1,29 @@
-# GStreamer 1.6.3 Release Notes
-
-The GStreamer team is proud to announce the third bugfix release in the stable
-1.6 release series of your favourite cross-platform multimedia framework!
-
-This release only contains bugfixes and it is safe to update from 1.6.x. For a
-full list of bugfixes see For a full list of bugfixes see [Bugzilla](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=91562&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.3).
-
-See https://gstreamer.freedesktop.org/releases/1.6/ for the latest version of this document.
-
-*Last updated: Wednesday 20 Januar 2016, 13:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
-
-## Major bugfixes
-
-- Fix regression in GL library that made glimagesink unsable on Android
-- Integer arithmetic overflow in queue2 element that could break buffering or
-  cause crashes due to NULL pointer dereference
-- Fix crash in AAC/ADTS typefinder caused by reading more memory than is
-  available
-- Stop ignoring encoder errors in the VP8/VP9 encoders
-- Deprecate GstVideoEncoder GST_VIDEO_ENCODER_FLOW_DROPPED. It's redudant and
-  was never actually implemented
-- Ensure to store the correct video info in GstVideoBufferPool
-- Fix caps in rtspsrc when doing SRTP over interleaved TCP
-- Fix crash in pcap parser on 0-sized packets
-- Clear EOS flag in appsrc to allow reuse after EOS and flushing
-- Ignore flushing streams in streamsynchronizer during stream switches to fix
-  problems caused by this in gst-editing-services
-- Ignore tags and other metadata in WAV files after the "data" chunk in PUSH
-  mode to prevent them from being interpreted as audio
-- Correctly use colorimetry in v4l2 only for YUV color formats
-- Set reserved bits in MPEG TS muxer to 1s
-- Fix calculation of SBC frame lengths
-- Fix output of the RTP JPEG2000 depayloader to have one frame per buffer
-  and crash in the OpenJPEG decoder on incomplete frames
-- Update ffmpeg snapshot in gst-libav to 2.8.5
-- Memory leak fixes in scaletempo, the raw video RTP depayloader,
-  and in playsink related to audio/video filters
-- Fixes for error handling in the OSX audio plugin
-- Various gobject-introspection annotation fixes and additions
-- Compiler warning fixes for latest clang compiler
-- and many, many more:
-- [and many, many more](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=91562&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.3)
-
-# GStreamer 1.6.2 Release Notes
-
-The GStreamer team is proud to announce the second bugfix release in the stable
-1.6 release series of your favourite cross-platform multimedia framework!
-
-This release only contains bugfixes and it is safe to update from 1.6.0 and
-1.6.1. For a full list of bugfixes see [Bugzilla](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=83309&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.2).
-
-See
-[https://gstreamer.freedesktop.org/releases/1.6/](https://gstreamer.freedesktop.org/releases/1.6/)
-for the latest version of this document.
-
-## Major bugfixes
-
-- Crashes in gst-libav with sinks that did not provide a buffer pool
-  but supported video metadata were fixed. This affected d3dvideosink
-  and some 3rd party sinks. Also related fixes for crashes when a downstream
-  buffer pool failed allocation.
-- Big GL performance improvement on iOS by a factor of 2 by using Apple's sync
-  extension.
-- Deadlocks in the DirectSound elements on Windows, and the behaviour of its
-  mute property were fixed.
-- The Direct3D video sink does not crash anymore when minimizing the window
-- The library soname generation on Android >= 6.0 was fixed, which previously
-  caused GStreamer to fail to load there.
-- File related elements have large-file (>2GB) support on Android now.
-- gst-libav was updated to ffmpeg 2.8.3.
-- Deserialization of custom events in the GDP depayloader was fixed.
-- Missing OpenGL context initialization in the Qt/QML video sink was fixed in
-  certain situations.
-- Interoperability with some broken RTSP servers using HTTP tunnel was
-  improved.
-- Various compilation fixes for Windows.
-- Various smaller memory leak and other fixes in different places.
-- [and many, many more](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=83309&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.2)
-
-# GStreamer 1.6.1 Release Notes
-
-The GStreamer team is proud to announce the first bugfix release in the stable
-1.6 release series of your favourite cross-platform multimedia framework!
-
-This release only contains bugfixes and it is safe to update from 1.6.0. For a
-full list of bugfixes see [Bugzilla](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=73005&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.1).
-
-See
-[https://gstreamer.freedesktop.org/releases/1.6/](https://gstreamer.freedesktop.org/releases/1.6/)
-for the latest version of this document.
-
-*Last updated: Friday 30 October 2015, 14:00 UTC [(log)](http://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md)*
-
-## Major bugfixes
-
-- Crashes in the gst-libav encoders were fixed
-- More DASH-IF test streams are working now
-- Live DASH, HLS and MS SmoothStreaming streams work more reliable and other
-  fixes for the adaptive streaming protocols
-- Reverse playback works with scaletempo to keep the audio pitch
-- Correct stream-time is reported for negative applied_rate
-- SRTP packet validation during decoding does not reject valid packets anymore
-- Fixes for audioaggregator and aggregator to start producing output at the
-  right time, and e.g. not outputting lots of silence in the beginning
-- gst-libav's internal ffmpeg snapshot was updated to 2.8.1
-- cerbero has support for Mac OS X 10.11 (El Capitan)
-- Various memory leaks were fixed, including major leaks in playbin, playsink
-  and decodebin
-- Various GObject-Introspection annotation fixes for bindings
-- [and many, many more](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&limit=0&list_id=73005&order=bug_id&product=GStreamer&resolution=FIXED&target_milestone=1.6.1)
-
 # GStreamer 1.6 Release Notes
+
+1.6.0 was originally released on 25 September 2015.
+
+It is backwards-compatible with the stable 1.4, 1.2 and 1.0 release series.
+
+The latest bug-fix release in the 1.6 series is [1.6.4](#1.6.4) and was
+released on 14 April 2016.
+
+The 1.6 series has since been superseded by the 1.8 stable release series.
+
+See [https://gstreamer.freedesktop.org/releases/1.6/][latest] for the latest
+version of this document.
+
+*Last updated: Thursday 14 April 2016, 16:30 UTC [(log)][log]*
+
+[latest]: https://gstreamer.freedesktop.org/releases/1.6/
+[log]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.6/release-notes-1.6.md
+
+## Introduction
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
 
 This release has been in the works for more than a year and is packed with
 new features, bug fixes and other improvements.
-
-See
-[https://gstreamer.freedesktop.org/releases/1.6/](https://gstreamer.freedesktop.org/releases/1.6/)
-for the latest version of this document.
 
 ## Highlights
 
@@ -1416,13 +1319,170 @@ but no new features or intrusive changes will be added to a bug-fix release
 usually. The 1.6.x bug-fix releases will be made from the git 1.6 branch, which
 is a stable branch.
 
+<a name="1.6.0"></a>
+
 ### 1.6.0
 
 1.6.0 was released on 25 September 2015.
 
+<a name="1.6.1"></a>
+
 ### 1.6.1
 
-The first 1.6 bug-fix release (1.6.1) is planned for October 2015.
+1.6.1 was released on 30 October 2015.
+
+This release only contains bugfixes and it should be safe to update from 1.6.0.
+
+#### Major bugfixes in 1.6.1
+
+- Crashes in the gst-libav encoders were fixed
+- More DASH-IF test streams are working now
+- Live DASH, HLS and MS SmoothStreaming streams work more reliable and other
+  fixes for the adaptive streaming protocols
+- Reverse playback works with scaletempo to keep the audio pitch
+- Correct stream-time is reported for negative applied_rate
+- SRTP packet validation during decoding does not reject valid packets anymore
+- Fixes for audioaggregator and aggregator to start producing output at the
+  right time, and e.g. not outputting lots of silence in the beginning
+- gst-libav's internal ffmpeg snapshot was updated to 2.8.1
+- cerbero has support for Mac OS X 10.11 (El Capitan)
+- Various memory leaks were fixed, including major leaks in playbin, playsink
+  and decodebin
+- Various GObject-Introspection annotation fixes for bindings
+- [and many, many more][buglist-1.6.1]
+
+For a full list of bugfixes see [Bugzilla][buglist-1.6.1].
+
+[buglist-1.6.1]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&product=GStreamer&resolution=FIXED&target_milestone=1.6.1
+
+<a name="1.6.2"></a>
+
+### 1.6.2
+
+1.6.2 was released on 14 December 2015.
+
+This release only contains bugfixes and it should be safe to update from 1.6.1.
+
+#### Major bugfixes in 1.6.2
+
+- Crashes in gst-libav with sinks that did not provide a buffer pool
+  but supported video metadata were fixed. This affected d3dvideosink
+  and some 3rd party sinks. Also related fixes for crashes when a downstream
+  buffer pool failed allocation.
+- Big GL performance improvement on iOS by a factor of 2 by using Apple's sync
+  extension.
+- Deadlocks in the DirectSound elements on Windows, and the behaviour of its
+  mute property were fixed.
+- The Direct3D video sink does not crash anymore when minimizing the window
+- The library soname generation on Android >= 6.0 was fixed, which previously
+  caused GStreamer to fail to load there.
+- File related elements have large-file (>2GB) support on Android now.
+- gst-libav was updated to ffmpeg 2.8.3.
+- Deserialization of custom events in the GDP depayloader was fixed.
+- Missing OpenGL context initialization in the Qt/QML video sink was fixed in
+  certain situations.
+- Interoperability with some broken RTSP servers using HTTP tunnel was
+  improved.
+- Various compilation fixes for Windows.
+- Various smaller memory leak and other fixes in different places.
+- [and many, many more][buglist-1.6.2]
+
+For a full list of bugfixes see [Bugzilla][buglist-1.6.2].
+
+[buglist-1.6.2]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&product=GStreamer&resolution=FIXED&target_milestone=1.6.2
+
+<a name="1.6.3"></a>
+
+### 1.6.3
+
+1.6.3 was released on 20 January 2016.
+
+This release only contains bugfixes and it should be safe to update from 1.6.2.
+
+#### Major bugfixes in 1.6.3
+
+- Fix regression in GL library that made glimagesink unsable on Android
+- Integer arithmetic overflow in queue2 element that could break buffering or
+  cause crashes due to NULL pointer dereference
+- Fix crash in AAC/ADTS typefinder caused by reading more memory than is
+  available
+- Stop ignoring encoder errors in the VP8/VP9 encoders
+- Deprecate GstVideoEncoder GST_VIDEO_ENCODER_FLOW_DROPPED. It's redudant and
+  was never actually implemented
+- Ensure to store the correct video info in GstVideoBufferPool
+- Fix caps in rtspsrc when doing SRTP over interleaved TCP
+- Fix crash in pcap parser on 0-sized packets
+- Clear EOS flag in appsrc to allow reuse after EOS and flushing
+- Ignore flushing streams in streamsynchronizer during stream switches to fix
+  problems caused by this in gst-editing-services
+- Ignore tags and other metadata in WAV files after the "data" chunk in PUSH
+  mode to prevent them from being interpreted as audio
+- Correctly use colorimetry in v4l2 only for YUV color formats
+- Set reserved bits in MPEG TS muxer to 1s
+- Fix calculation of SBC frame lengths
+- Fix output of the RTP JPEG2000 depayloader to have one frame per buffer
+  and crash in the OpenJPEG decoder on incomplete frames
+- Update ffmpeg snapshot in gst-libav to 2.8.5
+- Memory leak fixes in scaletempo, the raw video RTP depayloader,
+  and in playsink related to audio/video filters
+- Fixes for error handling in the OSX audio plugin
+- Various gobject-introspection annotation fixes and additions
+- Compiler warning fixes for latest clang compiler
+- [and many, many more][buglist-1.6.3]
+
+For a full list of bugfixes see [Bugzilla][buglist-1.6.3].
+
+[buglist-1.6.3]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&product=GStreamer&resolution=FIXED&target_milestone=1.6.3
+
+<a name="1.6.4"></a>
+
+### 1.6.4
+
+1.6.4 was released on 14 April 2016.
+
+This release only contains bugfixes and it should be safe to update from 1.6.3.
+
+#### Major bugfixes in 1.6.4
+
+ - audio parsers: make sure to send tags before pushing the first buffer,
+   so all metadata is available at preroll. Fixes metadata collection in
+   mopidy with certain FLAC files.
+ - fix decoding glitches at the beginning of some mp3 streams when streaming
+ - multiqueue eos handling fixes
+ - tcpserversink/multisocketsink: fix 100% cpu usage on client disconnect
+ - video4linux: colorimetry and colorspace handling fixes
+ - udpsrc: add option to enable/disable multicast loopback ("loop" property)
+ - RTP JPEG: depayloader robustness fixes; payloader now accepts different
+   quant tables for the chroma components
+ - directsoundsink: fix some issues around muting/unmuting the sound
+ - dvdreadsrc: don't jump to wrong title when seeking back to 0 for titles != 1
+ - adaptivedemux: fix race on shutdown that could result in deadlocks
+   in hlsdemux/dashdemux, especially when stopped before playback started
+ - decklink: various robustness fixes in decklinkaudiosrc and decklinkvideosrc
+ - mpeg4parser: prevent assertion when scanning for sync code
+ - fbdevsink: fix crash caused by wrong bpp calculation
+ - tsdemux: fix hang in preroll caused by bogus timestamp/wraparound
+   handling in some corner cases
+ - tsdemux: fix accurating seeking
+ - h265parse: fix crash converting from hevc format to nal-aligned bytestream
+ - h264parse, h265parse: fix handling of downstream force-key-unit events
+ - g-i annotation fixes for bindings for gst_element_query_convert(),
+   gst_pad_get_current_caps(), and gst_pad_peer_query_caps()
+ - gst-libav: update internal libav copy to n2.8.6
+ - rtsp-server: report RECORD and ANNOUNCE as supported in the OPTIONS
+ - rtsp-server: prevent receival of looped back packets on Windows if a
+   multicast transport is used
+ - various minor memory leak fixes
+ - miscellaneous other fixes
+ - fix crashes on newer windows versions when GTypes are passed through
+   vararg functions as is done in souphttpsrc or during ges_init(). This
+   would manifest itself if the application was compiled with MSVC
+   and /DYNAMICBASE (address space layout randomization) was used.
+ - [and many more][buglist-1.6.4]
+
+For a full list of bugfixes see [Bugzilla][buglist-1.6.4].
+
+[buglist-1.6.4]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&product=GStreamer&resolution=FIXED&status_whiteboard_type=allwordssubstr&status_whiteboard=1.6.4
 
 ## Schedule for 1.8
 
