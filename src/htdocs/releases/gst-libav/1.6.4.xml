@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-libav</module>
+  <module-fancy>GStreamer libav Plugins</module-fancy>
+  <name></name>
+  <version>1.6.4</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce a new bug-fix release in the
+old 1.6 stable series of the core of the GStreamer streaming media framework.
+</p>
+<p>
+This release only contains bugfixes and it should be safe to update from 1.6.x.
+For a full list of bugfixes see Bugzilla.
+</p> 
+<p>
+This release maintains API/ABI backwards compatibility with the
+GStreamer 1.0, 1.2, 1.4 and 1.6 release series.
+</p>
+
+<p>
+This module contains plugins based on the libav project, including codecs.
+</p>
+
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+</dl>
+
+</p>
+  </intro>
+
+    <contributors>
+	<person>Sebastian Dröge</person>
+  </contributors>
+
+<p>In addition to the above contributors, we would like to extend our
+thanks to the libav developers without which these plugins would have
+no reason to exist.</p>
+
+</release>

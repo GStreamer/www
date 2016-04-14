@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version>1.6.4</version>
+
+  <intro>
+
+<p>
+The GStreamer team is pleased to announce a new bug-fix release in the
+old 1.6 stable series of the core of the GStreamer streaming media framework.
+</p>
+<p>
+This release only contains bugfixes and it should be safe to update from 1.6.x.
+For a full list of bugfixes see Bugzilla.
+</p> 
+<p>
+This release maintains API/ABI backwards compatibility with the
+GStreamer 1.0, 1.2, 1.4 and 1.6 release series.
+</p>
+
+  </intro>
+
+    <contributors>
+	<person>Thibault Saunier</person>
+  </contributors>
+
+</release>
