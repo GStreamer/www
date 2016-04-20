@@ -7640,5 +7640,58 @@ or download tarballs for
         </content>
   </item>
 
+    <item>
+      <date>2016-04-20 16:00</date>
+        <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Python, Validate, VAAPI 1.8.1 stable release</title>
+        <content>
+
+<p>
+The GStreamer team is pleased to announce the first bugfix release in the
+stable 1.8 release series of your favourite cross-platform multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it should be safe to update from 1.8.0. For a
+full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;classification=Plat
+form&amp;limit=0&amp;list_id=117422&amp;order=bug_id&amp;product=GStreamer&amp;query_format=advanced&amp;resolution=FIXED&amp;target_milestone=1.8.1">Bugzilla</a>.
+</p>
+
+<p>
+See <a href="&site;/releases/1.8/">&site;/releases/1.8/</a>
+for the full release notes.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.8.1.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.8.1.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.8.1.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.8.1.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.8.1.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-libav/1.8.1.html">gst-libav</a>,
+<a href="&site;/releases/gst-rtsp-server/1.8.1.html">gst-rtsp-server</a>,
+<a href="&site;/releases/gst-python/1.8.1.html">gst-python</a>,
+<a href="&site;/releases/gst-editing-services/1.8.1.html">gst-editing-services</a>,
+<a href="&site;/releases/gst-validate/1.8.1.html">gst-validate</a>, or
+<a href="&site;/releases/gstreamer-vaapi/1.8.1.html">gstreamer-vaapi</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.8.1.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.8.1.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.8.1.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.8.1.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.8.1.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.8.1.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.8.1.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.8.1.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.8.1.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-validate/gst-validate-1.8.1.tar.xz">gst-validate</a>, or
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.8.1.tar.xz">gstreamer-vaapi</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
 

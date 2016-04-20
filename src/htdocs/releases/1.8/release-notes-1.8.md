@@ -1,20 +1,24 @@
 # GStreamer 1.8 Release Notes
 
-**GStreamer 1.8.0 was released on 24 March 2016.**
+GStreamer 1.8.0 was originally released on 24 March 2016.
+The latest bug-fix release in the 1.8 series is [1.8.1](#1.8.1) and was
+released on 20 April 2016.
+
+See [https://gstreamer.freedesktop.org/releases/1.8/][latest] for the latest
+version of this document.
+
+*Last updated: Wednesday 20 April 2016, 16:00 UTC [(log)][gitlog]*
+
+[latest]: https://gstreamer.freedesktop.org/releases/1.8/
+[gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.8/release-notes-1.8.md
+
+## Introduction
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
 
 As always, this release is again packed with new features, bug fixes and other
 improvements.
-
-See [https://gstreamer.freedesktop.org/releases/1.8/][latest] for the latest
-version of this document.
-
-*Last updated: Thursday 24 March 2016, 10:00 UTC [(log)][gitlog]*
-
-[latest]: https://gstreamer.freedesktop.org/releases/1.8/
-[gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.8/release-notes-1.8.md
 
 ## Highlights
 
@@ -763,9 +767,32 @@ is a stable branch.
 
 1.8.0 was released on 24 March 2016.
 
+<a name="1.8.1"></a>
+
 ### 1.8.1
 
-The first 1.8 bug-fix release (1.8.1) is planned for April 2016.
+The first 1.8 bug-fix release (1.8.1) was released on 20 April 2016.
+This release only contains bugfixes and it should be safe to update from 1.8.0.
+
+#### Major bugfixes in 1.8.1
+
+ - Fix app compilation with Android NDK r11 and newer
+ - Fix compilation of nvenc plugin against latest NVIDIA SDK 6.0
+ - Fix regression in avdeinterlace
+ - Fix memory corruption in scaletempo element with S16 input
+ - Fix regression in qtdemux with MSE streams
+ - Fix glitches at the start with all audio sinks except for pulsesink
+ - Fix regression with encrypted HLS streams
+ - Fix automatic multithreaded decoding of VP8/9 video
+ - Fix deadlock in HTTP adaptive streams when scrub-seeking
+ - Fix regression in RTSP source with SRTP
+ - Add support for SRTP rollover counters in the RTSP source
+ - Add support for HiDPI ("Retina") screens in caopengllayersink
+ - ... and many more!
+
+For a full list of bugfixes see [Bugzilla][buglist-1.8.1].
+
+[buglist-1.8.1]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=117422&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.8.1
 
 ## Schedule for 1.10
 
