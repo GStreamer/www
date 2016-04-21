@@ -780,7 +780,6 @@ This release only contains bugfixes and it should be safe to update from 1.8.0.
  - Fix compilation of nvenc plugin against latest NVIDIA SDK 6.0
  - Fix regression in avdeinterlace
  - Fix memory corruption in scaletempo element with S16 input
- - Fix regression in qtdemux with MSE streams
  - Fix glitches at the start with all audio sinks except for pulsesink
  - Fix regression with encrypted HLS streams
  - Fix automatic multithreaded decoding of VP8/9 video
