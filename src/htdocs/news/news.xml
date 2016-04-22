@@ -7693,5 +7693,39 @@ or download tarballs for
         </content>
   </item>
 
+    <item>
+      <date>2016-04-22 11:00</date>
+        <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Validate 1.6.4 stable release (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.6.4 stable release of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.6.4/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.6.4/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.6.4/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.6.4/">Windows</a>.
+        </p>
+        </content>
+      </item>
+
+    <item>
+      <date>2016-04-22 12:00</date>
+        <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Validate 1.8.1 stable release (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.8.1 stable release of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.8.1/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.8.1/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.8.1/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.8.1/">Windows</a>.
+        </p>
+        </content>
+    </item>
+
 </news>
 
