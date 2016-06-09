@@ -1,13 +1,13 @@
 # GStreamer 1.8 Release Notes
 
 GStreamer 1.8.0 was originally released on 24 March 2016.
-The latest bug-fix release in the 1.8 series is [1.8.1](#1.8.1) and was
-released on 20 April 2016.
+The latest bug-fix release in the 1.8 series is [1.8.2](#1.8.2) and was
+released on 9 June 2016.
 
 See [https://gstreamer.freedesktop.org/releases/1.8/][latest] for the latest
 version of this document.
 
-*Last updated: Wednesday 20 April 2016, 16:00 UTC [(log)][gitlog]*
+*Last updated: Wednesday 9 June 2016, 10:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.8/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.8/release-notes-1.8.md
@@ -685,17 +685,6 @@ continuous integration effort.
   the element to lock up. Also the "mute" property on the sink was fixed, and
   a new "device" property for device selection was added to the source.
 
-## Known Issues
-
-- Building GStreamer applications with the Android NDK r11 is currently not
-  supported due to incompatible changes in the NDK. This is expected to be
-  fixed for 1.8.1.
-  [Bugzilla #763999](https://bugzilla.gnome.org/show_bug.cgi?id=763999)
-
-- vp8enc crashes on 32 bit Windows, but was working fine in 1.6. 64 bit
-  Windows is unaffected.
-  [Bugzilla #763663](https://bugzilla.gnome.org/show_bug.cgi?id=763663)
-
 ## Contributors
 
 Adam Miartus, Alban Bedel, Aleix Conchillo Flaqué, Aleksander Wabik,
@@ -789,9 +778,45 @@ This release only contains bugfixes and it should be safe to update from 1.8.0.
  - Add support for HiDPI ("Retina") screens in caopengllayersink
  - ... and many more!
 
-For a full list of bugfixes see [Bugzilla][buglist-1.8.1].
+For a full list of bugfixes see [Bugzilla][buglist-1.8.1]. Note that this is
+not the full list of changes. For the full list of changes please refer to the
+GIT logs or ChangeLogs of the particular modules.
 
 [buglist-1.8.1]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=117422&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.8.1
+
+<a name="1.8.2"></a>
+
+### 1.8.2
+
+The first 1.8 bug-fix release (1.8.2) was released on 9 June 2016.
+This release only contains bugfixes and it should be safe to update from 1.8.0.
+
+#### Major bugfixes in 1.8.2
+
+ - Fix vp8enc and flacenc segmentation faults on Windows
+ - Fix Android build failure due to BSD sed on OS X
+ - Fix Android build failure with applications targetting API > 20
+ - Fix playback of live MS SmoothStreaming streams
+ - Fix various issues with vtdec and caopengllayersink on OS X
+ - Fix severe performance degradation in various image decoders
+ - Fix sample rate negotiation in opusdec
+ - Fix regression in typefind, causing deadlocks in some situations
+ - Fix mpegtsmux to set PTS on all output buffers again
+ - Fix extraction of frame dimensions from SDP in RTP JPEG depayloader
+ - Fix failure in v4l2videodec when setting of format fails after starting
+ - ... and many, many more!
+
+For a full list of bugfixes see [Bugzilla][buglist-1.8.2]. Note that this is
+not the full list of changes. For the full list of changes please refer to the
+GIT logs or ChangeLogs of the particular modules.
+
+[buglist-1.8.2]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=130196&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.8.2
+
+## Known Issues
+
+- gst-rtsp-server does not take address pool configuration into account
+  for sending unicast UDP.
+  [Bugzilla #766612](https://bugzilla.gnome.org/show_bug.cgi?id=766612)
 
 ## Schedule for 1.10
 
