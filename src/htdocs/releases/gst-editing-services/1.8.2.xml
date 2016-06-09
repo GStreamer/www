@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version>1.8.2</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce the second bugfix release in the stable
+1.8 release series of your favourite cross-platform multimedia framework!
+</p>
+<p>
+This release only contains bugfixes and it is safe to update from 1.8.1. For a
+full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;classification=Platform&amp;limit=0&amp;list_id=130196&amp;order=bug_id&amp;product=GStreamer&amp;query_format=advanced&amp;resolution=FIXED&amp;target_milestone=1.8.2">Bugzilla</a>.
+</p>
+<p>
+See <a href="&site;/releases/1.8/">&site;/releases/1.8/</a> for the full release notes.
+</p>
+  </intro>
+
+    <contributors>
+	<person>Aurélien Zanelli</person>
+	<person>Sebastian Dröge</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>765853</id>
+      <summary>timeline: rename &quot; track-element &quot; to &quot; track_element &quot; in select-tracks-for-object documentation</summary>
+    </bug>
+    <bug>
+      <id>765856</id>
+      <summary>g-i: use only &quot; ges/ges.h &quot; as c-include for introspection</summary>
+    </bug>
+    <bug>
+      <id>766455</id>
+      <summary>nlecomposition: ensure elements pending to be added are not leaked</summary>
+    </bug>
+    <bug>
+      <id>766459</id>
+      <summary>ges: ges_asset_set_proxy documentation fix and add some g-i annotations</summary>
+    </bug>
+    <bug>
+      <id>766524</id>
+      <summary>audio-source: unref private capsfilter reference on finalize</summary>
+    </bug>
+    <bug>
+      <id>767053</id>
+      <summary>nlecomposition: Fix race condition in seek handling causing deadlocks</summary>
+    </bug>
+    <bug>
+      <id>767293</id>
+      <summary>ges-uri-asset: GstDiscoverer can return a valid info but a non-OK result, consider this an error</summary>
+    </bug>
+  </bugs>
+</release>
