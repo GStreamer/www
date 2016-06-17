@@ -818,6 +818,10 @@ GIT logs or ChangeLogs of the particular modules.
   for sending unicast UDP.
   [Bugzilla #766612](https://bugzilla.gnome.org/show_bug.cgi?id=766612)
 
+- vp8enc crashes on 32 bit Windows, but was working fine in 1.6. 64 bit
+  Windows is unaffected.
+  [Bugzilla #763663](https://bugzilla.gnome.org/show_bug.cgi?id=763663)
+
 ## Schedule for 1.10
 
 Our next major feature release will be 1.10, and 1.9 will be the unstable
