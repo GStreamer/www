@@ -1,0 +1,503 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plugins</module-fancy>
+  <name></name>
+  <version>1.9.1</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.9 release series. The 1.9 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6 and 1.8 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.9 release series
+will lead to the stable 1.10 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plugins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plugins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plugins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+    <contributors>
+	<person>Aaron Boxer</person>
+	<person>Aleix Conchillo Flaqué</person>
+	<person>Alessandro Decina</person>
+	<person>Alex Ashley</person>
+	<person>Alex-P. Natsios</person>
+	<person>Arjen Veenhuizen</person>
+	<person>Arun Raghavan</person>
+	<person>Aurélien Zanelli</person>
+	<person>Barun Kumar Singh</person>
+	<person>Carlos Garcia Campos</person>
+	<person>Carlos Rafael Giani</person>
+	<person>Christoffer Stengren</person>
+	<person>Damian Ziobro</person>
+	<person>Dimitrios Katsaros</person>
+	<person>Edward Hervey</person>
+	<person>Florin Apostol</person>
+	<person>Guillaume Desmottes</person>
+	<person>Gwang Yoon Hwang</person>
+	<person>Haihua Hu</person>
+	<person>Havard Graff</person>
+	<person>Heinrich Fink</person>
+	<person>Hyunjun Ko</person>
+	<person>Jan Alexander Steffens (heftig)</person>
+	<person>Jan Schmidt</person>
+	<person>Javier Martinez Canillas</person>
+	<person>Jerome Laheurte</person>
+	<person>Joan Pau Beltran</person>
+	<person>Jonathan Roy</person>
+	<person>Julien Isorce</person>
+	<person>Justin Kim</person>
+	<person>Kouhei Sutou</person>
+	<person>Luis de Bethencourt</person>
+	<person>Marcin Kolny</person>
+	<person>Marcin Lewandowski</person>
+	<person>Martin Kelly</person>
+	<person>Mats Lindestam</person>
+	<person>Matthew Waters</person>
+	<person>Michael Olbrich</person>
+	<person>Nicolas Dufresne</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Olivier Crête</person>
+	<person>Patricia Muscalu</person>
+	<person>Philipp Zabel</person>
+	<person>Philippe Normand</person>
+	<person>Raffaele Rossi</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Santiago Carot-Nemesio</person>
+	<person>Scott D Phillips</person>
+	<person>Sebastian Dröge</person>
+	<person>Sebastian Rasmussen</person>
+	<person>Sergey Borovkov</person>
+	<person>Song Bing</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Stefan Sauer</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vanessa Chipirras Navalon</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vineeth TM</person>
+	<person>Vivia Nikolaidou</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+	<person>Wang Xin-yu (王昕宇)</person>
+	<person>Wim Taymans</person>
+	<person>Xavier Claessens</person>
+	<person>Yann Jouanin</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>765266</id>
+      <summary>gl: More GLES/GL 3 compatibility fixes</summary>
+    </bug>
+    <bug>
+      <id>767087</id>
+      <summary>ahcsrc: improve error message when camera open fails</summary>
+    </bug>
+    <bug>
+      <id>623860</id>
+      <summary>mpegpsdemux: sends segment and gap events with invalid time after seek</summary>
+    </bug>
+    <bug>
+      <id>678207</id>
+      <summary>lv2: port to GStreamer 1.0 and SLV2 to Lilv</summary>
+    </bug>
+    <bug>
+      <id>704222</id>
+      <summary>gldownload: Support for multi-planar format for GLES</summary>
+    </bug>
+    <bug>
+      <id>733233</id>
+      <summary>chromaprint: notify fingerprint also via property notify</summary>
+    </bug>
+    <bug>
+      <id>733872</id>
+      <summary>codecparsers: mpegvideo: Add more fields to the headers.</summary>
+    </bug>
+    <bug>
+      <id>739598</id>
+      <summary>rfbsrc: incorrectly calculates caps</summary>
+    </bug>
+    <bug>
+      <id>746933</id>
+      <summary>gldisplay: EAGL &quot; Could not create display &quot; </summary>
+    </bug>
+    <bug>
+      <id>748651</id>
+      <summary>DTLS: Use unique names for internal elements to ease debugging</summary>
+    </bug>
+    <bug>
+      <id>751540</id>
+      <summary>gltestsrc: implement missing patterns, port to GL3 / ES3, load shaders with GIO</summary>
+    </bug>
+    <bug>
+      <id>751792</id>
+      <summary>dashdemux: incorrect segment duration for a segment list</summary>
+    </bug>
+    <bug>
+      <id>753265</id>
+      <summary>osxaudio: Add device provider support</summary>
+    </bug>
+    <bug>
+      <id>754495</id>
+      <summary>videoaggregator: No protection from receiving interlaced and non-interlaced content</summary>
+    </bug>
+    <bug>
+      <id>756931</id>
+      <summary>gstglbasemixer: negotiated logic is partly broken</summary>
+    </bug>
+    <bug>
+      <id>757022</id>
+      <summary>pnm: Implementation of GRAY16 handling</summary>
+    </bug>
+    <bug>
+      <id>758064</id>
+      <summary>dashdemux: leading whitespaces in content protection element are not ignored</summary>
+    </bug>
+    <bug>
+      <id>759801</id>
+      <summary>gltestsrc outputs only black frames for pattern 0 and 11</summary>
+    </bug>
+    <bug>
+      <id>760916</id>
+      <summary>gl: implement GstGLMemoryEGL</summary>
+    </bug>
+    <bug>
+      <id>761260</id>
+      <summary>qml: add Windows support</summary>
+    </bug>
+    <bug>
+      <id>762142</id>
+      <summary>dashdemux: tests: use g_object_unref for test data</summary>
+    </bug>
+    <bug>
+      <id>762144</id>
+      <summary>dashdemux: tests: add new dashdemux tests</summary>
+    </bug>
+    <bug>
+      <id>762147</id>
+      <summary>adaptivedemux: use GstSystemClock to all real-time calculations</summary>
+    </bug>
+    <bug>
+      <id>763026</id>
+      <summary>dc1394: port to 1.X</summary>
+    </bug>
+    <bug>
+      <id>763044</id>
+      <summary>Enable  qmlglsink on Rasperry PI</summary>
+    </bug>
+    <bug>
+      <id>763065</id>
+      <summary>androidmedia: assorted refactoring</summary>
+    </bug>
+    <bug>
+      <id>763081</id>
+      <summary>bad plugins: use new gst_element_class_add_static_pad_template()</summary>
+    </bug>
+    <bug>
+      <id>763099</id>
+      <summary>ahcsrc: replace with new surfacetexture</summary>
+    </bug>
+    <bug>
+      <id>763100</id>
+      <summary>ahcsrc: remove unused variable</summary>
+    </bug>
+    <bug>
+      <id>763126</id>
+      <summary>player: Add is_live flag to the GstPlayerMediaInfo</summary>
+    </bug>
+    <bug>
+      <id>763309</id>
+      <summary>ahcsrc: add finalize function</summary>
+    </bug>
+    <bug>
+      <id>763441</id>
+      <summary>rfbsrc: leads to - &gt; invalid video buffer received</summary>
+    </bug>
+    <bug>
+      <id>763647</id>
+      <summary>mpegtsmux doesn't keep language code from the incoming audio stream</summary>
+    </bug>
+    <bug>
+      <id>763998</id>
+      <summary>ahc: use g_slice_new instead of g_slice_new0</summary>
+    </bug>
+    <bug>
+      <id>764018</id>
+      <summary>glcontext: try wglCreateContextAttribsARB first even not using GL3 core profile</summary>
+    </bug>
+    <bug>
+      <id>764036</id>
+      <summary>interlace: Allow interlaced sink caps, do passthrough</summary>
+    </bug>
+    <bug>
+      <id>764251</id>
+      <summary>rtmpsrc: Add timeout property</summary>
+    </bug>
+    <bug>
+      <id>764361</id>
+      <summary>gdpdepay: query for buffer allocator</summary>
+    </bug>
+    <bug>
+      <id>764370</id>
+      <summary>codecparser: vp9: Wrong default values in non-intraonly/non-keyframe header fields</summary>
+    </bug>
+    <bug>
+      <id>764549</id>
+      <summary>aggregator: remove duplicated test of flow_return in pad_chain_internal</summary>
+    </bug>
+    <bug>
+      <id>764684</id>
+      <summary>adaptivedemux: Forward upstream buffer offsets</summary>
+    </bug>
+    <bug>
+      <id>764873</id>
+      <summary>gldeinterlace: enable this plugin on OpenGL ES using a simple deinterlace fragment shader</summary>
+    </bug>
+    <bug>
+      <id>764957</id>
+      <summary>dvbsrc: support dvbv5 channels format</summary>
+    </bug>
+    <bug>
+      <id>764972</id>
+      <summary>dvbsrc: needlessly perform delivery system autodetection twice</summary>
+    </bug>
+    <bug>
+      <id>765250</id>
+      <summary>d3dvideosink includes deprecated and unused d3dx9tex.h header</summary>
+    </bug>
+    <bug>
+      <id>765292</id>
+      <summary>gl:cocoa:Fix incompatible type warning</summary>
+    </bug>
+    <bug>
+      <id>765315</id>
+      <summary>player: Add A/V offset property</summary>
+    </bug>
+    <bug>
+      <id>765425</id>
+      <summary>dshowsrcwrapper: Fix include path in CMakeLists.txt</summary>
+    </bug>
+    <bug>
+      <id>765426</id>
+      <summary>dshowsrcwrapper: Fix link error (SAFESEH)</summary>
+    </bug>
+    <bug>
+      <id>765427</id>
+      <summary>dshowsrcwrapper: add support for RGB32, RGB555, RGB565 and RGB8 formats</summary>
+    </bug>
+    <bug>
+      <id>765428</id>
+      <summary>dshowsrcwrapper: Work around bugs in IDS Imaging camera drivers</summary>
+    </bug>
+    <bug>
+      <id>765431</id>
+      <summary>aggregator: Check all pads for data when live</summary>
+    </bug>
+    <bug>
+      <id>765581</id>
+      <summary>pvrbufferpool: gst_meta_register() parameter wrong</summary>
+    </bug>
+    <bug>
+      <id>765728</id>
+      <summary>adaptivedemux: Segfault since &quot; use realtime_clock for waiting for a condition &quot; commit</summary>
+    </bug>
+    <bug>
+      <id>765795</id>
+      <summary>glimagesink: support video frame rotation</summary>
+    </bug>
+    <bug>
+      <id>765804</id>
+      <summary>GstPlayer build error due to not finding GstVideo-1.0.gir</summary>
+    </bug>
+    <bug>
+      <id>765989</id>
+      <summary>videodiff element has useless &quot; FIXME &quot; description</summary>
+    </bug>
+    <bug>
+      <id>766053</id>
+      <summary>uridownloader: should take ownership of its source element</summary>
+    </bug>
+    <bug>
+      <id>766062</id>
+      <summary>player: Provide signalling for when a new URI is started</summary>
+    </bug>
+    <bug>
+      <id>766163</id>
+      <summary>Some header files missing in sys/applemedia/ in gst-plugins-bad-1.8.1.tar.xz</summary>
+    </bug>
+    <bug>
+      <id>766343</id>
+      <summary>mpegtsbase: remove unused variables 'upstream_live' and 'queried_latency'</summary>
+    </bug>
+    <bug>
+      <id>766597</id>
+      <summary>kmssink: doesn't chain up finalize</summary>
+    </bug>
+    <bug>
+      <id>766607</id>
+      <summary>player: problems with unit tests</summary>
+    </bug>
+    <bug>
+      <id>766639</id>
+      <summary>examples: opencv: typo fix</summary>
+    </bug>
+    <bug>
+      <id>766650</id>
+      <summary>adaptivedemux: Set DISCONT on startup and after seeks</summary>
+    </bug>
+    <bug>
+      <id>766661</id>
+      <summary>gltestsrc,glmosaic: fix shader leaks</summary>
+    </bug>
+    <bug>
+      <id>766662</id>
+      <summary>adaptivedemux: fix tag list leak</summary>
+    </bug>
+    <bug>
+      <id>766663</id>
+      <summary>bad: fix leaks in tests</summary>
+    </bug>
+    <bug>
+      <id>766679</id>
+      <summary>ahc: fix typo</summary>
+    </bug>
+    <bug>
+      <id>766703</id>
+      <summary>glvideomixer: Using an invalid, already destroyed context</summary>
+    </bug>
+    <bug>
+      <id>766794</id>
+      <summary>eglimage: Fails to compile because of compiler warning caused by unused function</summary>
+    </bug>
+    <bug>
+      <id>766803</id>
+      <summary>h264parse: add support for config-interval=-1 to re-send SPS/PPS on I/IDR frames</summary>
+    </bug>
+    <bug>
+      <id>766818</id>
+      <summary>[gl] gltransformation's pivot-z property not writable</summary>
+    </bug>
+    <bug>
+      <id>766867</id>
+      <summary>gl: win32: no debug category set in gstglcontext_wgl.c</summary>
+    </bug>
+    <bug>
+      <id>766891</id>
+      <summary>h265parse: codec_data cap field could be mis-populated when vps/sps/pps id's are not used contiguously from zero.</summary>
+    </bug>
+    <bug>
+      <id>766973</id>
+      <summary>Various warningfixes for OSX (10.9.5) compiling with Apple LLVM version 6.0</summary>
+    </bug>
+    <bug>
+      <id>766993</id>
+      <summary>Android decodebin: zero copy between hardware decoder and glimagesink doesn't work (regression in 1.9)</summary>
+    </bug>
+    <bug>
+      <id>767104</id>
+      <summary>applemedia: vtenc: Register a hardware-only vtenc_h264_hw element on OSX</summary>
+    </bug>
+    <bug>
+      <id>767159</id>
+      <summary>templatematch: fix leak in test</summary>
+    </bug>
+    <bug>
+      <id>767161</id>
+      <summary>a2dpsink: unref avdtpsink if state transition failed</summary>
+    </bug>
+    <bug>
+      <id>767162</id>
+      <summary>bad: use MAY_BE_LEAKED flag</summary>
+    </bug>
+    <bug>
+      <id>767365</id>
+      <summary>adaptivedemux: Add custom flow return for allowing subclasses to specify when a fragment is finished</summary>
+    </bug>
+    <bug>
+      <id>767402</id>
+      <summary>OpenJPEG decoder: use new sampling field to determine channel order for j2c and jpc streams</summary>
+    </bug>
+    <bug>
+      <id>767501</id>
+      <summary>curlsmtpsink: Lock and don't send final boundary upon error</summary>
+    </bug>
+    <bug>
+      <id>767512</id>
+      <summary>jpeg2000parse: support j2c and jp2 file formats</summary>
+    </bug>
+    <bug>
+      <id>767553</id>
+      <summary>qmlglsink: Add Wayland support</summary>
+    </bug>
+    <bug>
+      <id>767800</id>
+      <summary>Introduce a WebRTC Audio Processing based echo canceller for GStreamer</summary>
+    </bug>
+    <bug>
+      <id>767908</id>
+      <summary>jpeg2000parse: use enums for colorspace and sampling, rather than strings</summary>
+    </bug>
+    <bug>
+      <id>768217</id>
+      <summary>gl: Raw uploader is broken</summary>
+    </bug>
+    <bug>
+      <id>768365</id>
+      <summary>shmsrc: gst_poll_remove_fd: assertion 'fd- &gt; fd &gt; = 0' failed</summary>
+    </bug>
+    <bug>
+      <id>733265</id>
+      <summary>srtpenc: remove get-rollover-counter signal and add stats property</summary>
+    </bug>
+  </bugs>
+</release>

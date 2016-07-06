@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-validate</module>
+  <module-fancy>GStreamer Validate</module-fancy>
+  <name></name>
+  <version>1.9.1</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.9 release series. The 1.9 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6 and 1.8 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.9 release series
+will lead to the stable 1.10 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+
+<p>
+This module contains a whole testing infrastructure to help GStreamer developers
+to validate their elements, check the interaction between their element and the
+others.
+</p>
+
+<p>
+It allows to easily implement high level integration testsuite running scenarios on
+gstreamer pipeline checking that each element in the pipeline is behaving as expected.
+</p>
+
+<p>
+GstValidate also provide a default testsuite so that third party developers can
+test and validate their elements, this testsuite is also running on an integration server
+so that the upstream GStreamer project can detect any regression.
+</p>
+
+</intro>
+
+    <contributors>
+	<person>Alexandru Băluț</person>
+	<person>Edward Hervey</person>
+	<person>Guillaume Desmottes</person>
+	<person>Nicolas Dufresne</person>
+	<person>Philippe Normand</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Sauer</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tom Schoonjans</person>
+	<person>Vineeth T M</person>
+	<person>Vineeth TM</person>
+	<person>Xabier Rodriguez Calvar</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>753494</id>
+      <summary>validate: launcher: Add support for relative path while providing file path</summary>
+    </bug>
+  </bugs>
+
+</release>

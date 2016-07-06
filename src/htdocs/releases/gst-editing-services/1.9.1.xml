@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version>1.9.1</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.9 release series. The 1.9 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6 and 1.8 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.9 release series
+will lead to the stable 1.10 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+  </intro>
+
+    <contributors>
+	<person>Aurélien Zanelli</person>
+	<person>Edward Hervey</person>
+	<person>Julien Isorce</person>
+	<person>Justin Kim</person>
+	<person>Nicolas Dufresne</person>
+	<person>Sebastian Dröge</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vineeth TM</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>763195</id>
+      <summary>editing-services: use new gst_element_class_add_static_pad_template()</summary>
+    </bug>
+    <bug>
+      <id>764550</id>
+      <summary>examples/gitignore: ignore assets and play_timeline_with_one_clip binaries</summary>
+    </bug>
+    <bug>
+      <id>766523</id>
+      <summary>uri-clip: make uri parameter of ges_uri_clip_new () const</summary>
+    </bug>
+    <bug>
+      <id>766525</id>
+      <summary>framepositionner: add a weak ref on track element to know when it is finalized</summary>
+    </bug>
+  </bugs>
+</release>

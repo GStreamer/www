@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.9.1</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.9 release series. The 1.9 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6 and 1.8 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.9 release series
+will lead to the stable 1.10 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+    <contributors>
+	<person>Alex Ashley</person>
+	<person>Anthony G. Basile</person>
+	<person>Arun Raghavan</person>
+	<person>Carlos Rafael Giani</person>
+	<person>Danilo Cesar Lemes de Paula</person>
+	<person>Edward Hervey</person>
+	<person>Francisco Velazquez</person>
+	<person>Guillaume Desmottes</person>
+	<person>Havard Graff</person>
+	<person>Jan Alexander Steffens (heftig)</person>
+	<person>Jan Schmidt</person>
+	<person>Julien Isorce</person>
+	<person>Linus Svensson</person>
+	<person>Luis de Bethencourt</person>
+	<person>Mark Combellack</person>
+	<person>Matej Knopp</person>
+	<person>Matthew Gruenke</person>
+	<person>Matthew Waters</person>
+	<person>Nicolas Dufresne</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Ray Strode</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Sauer</person>
+	<person>Stian Selnes</person>
+	<person>Thiago Santos</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vineeth TM</person>
+	<person>Wonchul Lee</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>623469</id>
+      <summary>Unit test failures with CK_FORK=no make check</summary>
+    </bug>
+    <bug>
+      <id>747954</id>
+      <summary>osx: fix libcheck and &quot; make check &quot; builds with clang</summary>
+    </bug>
+    <bug>
+      <id>749427</id>
+      <summary>Dispose/finalize GST_REFCOUNTING log messages missing poitner of object being disposed/finalized</summary>
+    </bug>
+    <bug>
+      <id>750397</id>
+      <summary>CRITICAL: Race condition in GstBus</summary>
+    </bug>
+    <bug>
+      <id>751538</id>
+      <summary>info: gst_debug_log_default() function can't be removed before gst_init()</summary>
+    </bug>
+    <bug>
+      <id>756738</id>
+      <summary>gst_registry_plugin_filter() and gst_registry_feature_filter() callbacks can't use any API using the registry</summary>
+    </bug>
+    <bug>
+      <id>758960</id>
+      <summary>New GstStream API and decodebin3/playbin3</summary>
+    </bug>
+    <bug>
+      <id>761211</id>
+      <summary>pad: blocking pull probe during pull_range doesn't work</summary>
+    </bug>
+    <bug>
+      <id>763020</id>
+      <summary>gstreamer: use new gst_element_class_add_static_pad_template()</summary>
+    </bug>
+    <bug>
+      <id>763142</id>
+      <summary>API: add async property change notification - gst_element_add_property_notify_watch()</summary>
+    </bug>
+    <bug>
+      <id>763337</id>
+      <summary>capsfilter: remove unnecessary gst_pad_has_current_caps() calls for each buffer</summary>
+    </bug>
+    <bug>
+      <id>763457</id>
+      <summary>gstparse: element properties are contained in a GstPipeline instead of a GstBin</summary>
+    </bug>
+    <bug>
+      <id>763567</id>
+      <summary>libcompat.h: strsignal() should not be declared const</summary>
+    </bug>
+    <bug>
+      <id>763762</id>
+      <summary>crash due to gst_iterator_fold which lacks error handling.</summary>
+    </bug>
+    <bug>
+      <id>763814</id>
+      <summary>dot files: fix enum properties</summary>
+    </bug>
+    <bug>
+      <id>764176</id>
+      <summary>expose pad_link_maybe_ghosting</summary>
+    </bug>
+    <bug>
+      <id>764199</id>
+      <summary>tests: plugin: improve debug message</summary>
+    </bug>
+    <bug>
+      <id>764311</id>
+      <summary>gstinfo: fix file descriptor leak when default log function is not added</summary>
+    </bug>
+    <bug>
+      <id>764526</id>
+      <summary>Build broken with gcc 6.0</summary>
+    </bug>
+    <bug>
+      <id>764985</id>
+      <summary>rusage tracer: crash when freeing memory</summary>
+    </bug>
+    <bug>
+      <id>764999</id>
+      <summary>multiqueue: catch errors and flushing after locking</summary>
+    </bug>
+    <bug>
+      <id>765052</id>
+      <summary>tracer: add (mini) object leak tracer</summary>
+    </bug>
+    <bug>
+      <id>765212</id>
+      <summary>allocator: clean up allocators in gst_deinit()</summary>
+    </bug>
+    <bug>
+      <id>765540</id>
+      <summary>gst_element_base_class_finalize() is never called</summary>
+    </bug>
+    <bug>
+      <id>765606</id>
+      <summary>Add caps and capsfeatures cleanup functions</summary>
+    </bug>
+    <bug>
+      <id>765719</id>
+      <summary>pad: fix buffer leaks in test</summary>
+    </bug>
+    <bug>
+      <id>765720</id>
+      <summary>bin: fix leaks in unit test</summary>
+    </bug>
+    <bug>
+      <id>765736</id>
+      <summary>multiqueue: playback with sparse stream deadlocks</summary>
+    </bug>
+    <bug>
+      <id>765903</id>
+      <summary>fix various leaks in tests</summary>
+    </bug>
+    <bug>
+      <id>765904</id>
+      <summary>deviceproviderfactory: fix factory leak</summary>
+    </bug>
+    <bug>
+      <id>765957</id>
+      <summary>inspect: feature leak</summary>
+    </bug>
+    <bug>
+      <id>765958</id>
+      <summary>uri: don't use _gst_uri_free() directly</summary>
+    </bug>
+    <bug>
+      <id>765976</id>
+      <summary>factory leak in parse-launch test</summary>
+    </bug>
+    <bug>
+      <id>765978</id>
+      <summary>miniobject: fix ref count leaks in tests</summary>
+    </bug>
+    <bug>
+      <id>766008</id>
+      <summary>(mini)object: add flag marking &quot; leaked &quot; objects</summary>
+    </bug>
+    <bug>
+      <id>766251</id>
+      <summary>gstdebugutils: fix warning on enum properties printing</summary>
+    </bug>
+    <bug>
+      <id>766360</id>
+      <summary>pad: Don't drop LATENCY queries with default implementation</summary>
+    </bug>
+    <bug>
+      <id>766647</id>
+      <summary>adapter: Add a method to query current offset</summary>
+    </bug>
+    <bug>
+      <id>766666</id>
+      <summary>patch: make git-update.sh build with all cores available</summary>
+    </bug>
+    <bug>
+      <id>766795</id>
+      <summary>baseparse: Make sure DISCONT flags are properly propagated</summary>
+    </bug>
+    <bug>
+      <id>766923</id>
+      <summary>object: Notify name change when using _set_name()</summary>
+    </bug>
+    <bug>
+      <id>767012</id>
+      <summary>object: leak in test_fake_object_name</summary>
+    </bug>
+    <bug>
+      <id>767463</id>
+      <summary>windows static build broken (regression)</summary>
+    </bug>
+    <bug>
+      <id>767979</id>
+      <summary>GstBufferPool: acquire_buffer has unsafe GstPoll usage</summary>
+    </bug>
+    <bug>
+      <id>768439</id>
+      <summary>baseparse: Don't add calculated bitrates until threshold</summary>
+    </bug>
+  </bugs>
+</release>
