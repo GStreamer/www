@@ -7814,6 +7814,23 @@ or download tarballs for
   </item>
 
     <item>
+      <date>2016-06-17 14:00</date>
+        <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Validate 1.8.2 stable release (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.8.2 stable release of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.8.2/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.8.2/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.8.2/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.8.2/">Windows</a>.
+        </p>
+        </content>
+    </item>
+
+    <item>
       <date>2016-07-06 12:00</date>
         <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Python, Validate, VAAPI, OMX 1.9.1 unstable release</title>
         <content>
@@ -7857,7 +7874,24 @@ or download tarballs for
 <a href="&site;/src/gst-omx/gst-omx-1.9.1.tar.xz">gst-omx</a>.
         </p>
         </content>
-  </item>
+      </item>
+
+    <item>
+      <date>2016-07-12 17:00</date>
+        <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Python, Validate 1.9.1 unstable release (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.9.1 unstable release of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.9.1/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.9.1/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.9.1/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.9.1/">Windows</a>.
+        </p>
+        </content>
+    </item>
 
 </news>
 
