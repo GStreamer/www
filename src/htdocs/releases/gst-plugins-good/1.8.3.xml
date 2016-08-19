@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plugins</module-fancy>
+  <name></name>
+  <version>1.8.3</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce the third bugfix release in the stable
+1.8 release series of your favourite cross-platform multimedia framework!
+</p>
+<p>
+This release only contains bugfixes and it is safe to update from 1.8.x. For a
+full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;classification=Platform&amp;limit=0&amp;list_id=145400&amp;order=bug_id&amp;product=GStreamer&amp;query_format=advanced&amp;resolution=FIXED&amp;target_milestone=1.8.3">Bugzilla</a>.
+</p>
+<p>
+See <a href="&site;/releases/1.8/">&site;/releases/1.8/</a> for the full release notes.
+</p>
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plugins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plugins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plugin on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plugins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plugin
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plugins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+      <contributors>
+	<person>Brad Lackey</person>
+	<person>Jan Schmidt</person>
+	<person>Jonas Holmberg</person>
+	<person>Jürgen Slowack</person>
+	<person>Miguel París Díaz</person>
+	<person>Nicolas Dufresne</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Sebastian Dröge</person>
+	<person>Seungha Yang</person>
+	<person>Thomas Bluemel</person>
+	<person>Thomas Scheuermann</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>767666</id>
+      <summary>splitmuxsink: infinite change_state loop</summary>
+    </bug>
+    <bug>
+      <id>747275</id>
+      <summary>jackaudiosink: hangs when jackd exits</summary>
+    </bug>
+    <bug>
+      <id>766025</id>
+      <summary>rtpsession: race condition accessing ssrcs hash table</summary>
+    </bug>
+    <bug>
+      <id>766970</id>
+      <summary>aacparse: sticky event criticals with RTL HD mpeg-ts stream</summary>
+    </bug>
+    <bug>
+      <id>767496</id>
+      <summary>flvdemux: won't parse a date string with trailing whitespace</summary>
+    </bug>
+    <bug>
+      <id>767680</id>
+      <summary>rtph265pay: fix nal type parsing an sps/pps/vps insertion via config-interval property</summary>
+    </bug>
+    <bug>
+      <id>767980</id>
+      <summary>udpsrc: Receiving multicast packets from all addresses, not just the configured</summary>
+    </bug>
+    <bug>
+      <id>768232</id>
+      <summary>rtspsrc: protocols aren't reset after rtsp redirect</summary>
+    </bug>
+    <bug>
+      <id>768268</id>
+      <summary>qtdemux: Push caps only when it was updated</summary>
+    </bug>
+    <bug>
+      <id>768509</id>
+      <summary>matroskamux: Segmentation fault in string comparison</summary>
+    </bug>
+    <bug>
+      <id>768623</id>
+      <summary>udpsrc: There is no struct in_pktinfo on FreeBSD</summary>
+    </bug>
+    <bug>
+      <id>769514</id>
+      <summary>splitmuxsink: Deadlock</summary>
+    </bug>
+    <bug>
+      <id>769773</id>
+      <summary>multiudpsink: Randomly ceases to send to clients</summary>
+    </bug>
+  </bugs>
+
+</release>

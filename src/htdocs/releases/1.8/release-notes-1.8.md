@@ -1,13 +1,13 @@
 # GStreamer 1.8 Release Notes
 
 GStreamer 1.8.0 was originally released on 24 March 2016.
-The latest bug-fix release in the 1.8 series is [1.8.2](#1.8.2) and was
-released on 9 June 2016.
+The latest bug-fix release in the 1.8 series is [1.8.3](#1.8.3) and was
+released on 19 August 2016.
 
 See [https://gstreamer.freedesktop.org/releases/1.8/][latest] for the latest
 version of this document.
 
-*Last updated: Wednesday 9 June 2016, 10:00 UTC [(log)][gitlog]*
+*Last updated: Friday 19 August 2016, 08:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.8/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.8/release-notes-1.8.md
@@ -811,6 +811,47 @@ not the full list of changes. For the full list of changes please refer to the
 GIT logs or ChangeLogs of the particular modules.
 
 [buglist-1.8.2]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=130196&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.8.2
+
+## Known Issues
+
+- gst-rtsp-server does not take address pool configuration into account
+  for sending unicast UDP.
+  [Bugzilla #766612](https://bugzilla.gnome.org/show_bug.cgi?id=766612)
+
+- vp8enc crashes on 32 bit Windows, but was working fine in 1.6. 64 bit
+  Windows is unaffected.
+  [Bugzilla #763663](https://bugzilla.gnome.org/show_bug.cgi?id=763663)
+
+<a name="1.8.3"></a>
+
+### 1.8.3
+
+The third 1.8 bug-fix release (1.8.3) was released on 19 August 2016.
+This release only contains bugfixes and it should be safe to update from 1.8.x.
+
+#### Major bugfixes in 1.8.3
+
+ - Fix Android build scripts on OS X and Windows
+ - Fix stepping in PAUSED state in certain circumstances
+ - Fix jackaudiosink hang when exiting
+ - Fix udpsrc receiving multicast packets not only from the selected
+   multicast group
+ - Fix unnecessary decoding of unselected streams in GES
+ - Fix (multi)udpsink randomly not sending to clients
+ - Fix ALL\_BOTH probes not considering EVENT\_FLUSH
+ - Fix average input rate calculations in queue2
+ - Fix various locking issues causing deadlock in adaptivedemux
+ - Fix gst-libav encoders to correctly produce codec\_data in caps
+ - Add Wayland, Windows and Rasberry Pi support to the QML GL video sink
+ - Add support for building with OpenH264 1.6
+ - Add support for controlling deinterlacing in GES video sources
+ - ... and many, many more!
+
+For a full list of bugfixes see [Bugzilla][buglist-1.8.3]. Note that this is
+not the full list of changes. For the full list of changes please refer to the
+GIT logs or ChangeLogs of the particular modules.
+
+[buglist-1.8.3]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=145400&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.8.3
 
 ## Known Issues
 
