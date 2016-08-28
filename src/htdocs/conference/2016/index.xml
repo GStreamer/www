@@ -135,8 +135,7 @@ li {
 -->
   <h2>Schedule and speakers list</h2>
   <p>
-  Schedule and speakers will be published at a later time after the call for
-  papers concludes in August.
+  The Schedule and list of speakers will be published soon (end August / early September).
   </p>
 <!--
   <p>
@@ -178,31 +177,19 @@ li {
     <li><a href="&site;/conference/2016/talks-and-speakers.html#hervey-decodebin3">Decodebin3, or dealing with modern playback use-cases</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
     </ul>
   </p>
+-->
   <p>
     <b>Lightning Talks:</b>
+    <small> (submitted so far)</small>
     <ul>
-    <li>Industrial application pipelines <small><i> · Marianna Smidth Buschle, QTechnology</i></small></li>
-    <li>Hyperspectral imagery <small><br /><i>Dimitrios Katsaros, QTechnology</i></small></li>
-    <li>gst-gtk-launch-1.0 <small><br /><i>Florent Thiery, Ubicast</i></small></li>
-    <li>liborc (JIT SIMD generator) experiments <small><br /><i>Wim Taymans, RedHat</i></small></li>
-    <li>V4L2 GStreamer elements update <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li>Analyzing caps negotiation with GstTracer <small><br /><i>Thiago Sousa Santos, Samsung</i></small></li>
-    <li>Know your queues! queue, queue2, multiqueue, netbuffer and all that <small><br /><i>Tim-Philipp Müller</i></small></li>
-    <li>Nle: A new design for the GStreamer Non Linear Engine <small><br /><i>Thibault Saunier</i></small></li>
-    <li>What is new in GstValidate <small><br /><i>Thibault Saunier</i></small></li>
-    <li>Continuous Integration update <small><br /><i>Edward Hervey</i></small></li>
-    <li>Remote GStreamer Debugger <small><br /><i>Marcin Kolny</i></small></li>
-    <li>gstreamermm C++ wrapper <small><br /><i>Marcin Kolny</i></small></li>
-    <li>Multipath RTP (MPRTP) plugin in GStreamer <small><br /><i>Balázs Kreith</i></small></li>
-    <li>OpenCV and GStreamer <small><br /><i>Vanessa Chipi</i></small></li>
-    <li>Handling Interleaved and Non-Interleaved streams with GStreamer <small><br /><i>Ramesh Venkatachalapathy, LGE</i></small></li>
-    <li>Done in 6.0 seconds: a new build system for GStreamer? <small><br /><i>Jussi Pakkanen</i></small></li>
-    <li>Gst daemon and interpipes: A simpler way to get your application done <small><br /><i>Melissa Montero, RidgeRun</i></small></li>
-    <li>Another android camera source for Gstreamer <small><br /><i>Justin Kim, Collabora</i></small></li>
+    <li>Yet Another Update about Video4Linux2 in GStreamer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>FFV1 and Matroska as a new standard for video archiving <small><br /><i>Georg Lippitsch, ToolsOnAir</i></small></li>
+    <li>Writing Software Synthesizers for GStreamer <small><br /><i>Stefan Sauer, Google</i></small></li>
     <li>...</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
   </p>
+<!--
   <p>
     The full <a href="schedule.html">conference schedule is now available</a>.
     We hope you will be as excited about this years
