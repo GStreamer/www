@@ -324,54 +324,56 @@ li {
 
   <h2>Hotels</h2>
   <p>
-  Hotel suggestions will be provided at a later time.
-  </p>
-<!--
-  <p>
-  If you have not booked your accommodation yet, it is advisable to do this
-  as soon as possible.
-  </p>
-  <p>
-  The Linux Foundation had some <a href="http://events.linuxfoundation.org/events/linuxcon-europe/attend/hotel-and-travel">hotel recommendations</a>
-  in the vicinity of the convention centre, all of which are sold out now, so
-  you may have to look at places in other areas.
-  </p>
-  <p>
-  Most hotels in the city centre will be within walking distance (15-30mins)
-  of the conference venue, or just a short taxi ride away. There is also
-  public transport in form of busses and the LUAS light rail system. The
-  convention centre is right next to the LUAS <i>Spencer Dock</i> stop which
-  is on the Red Line.
-  </p>
-  <p>
-  Temple Bar is the name of the cultural/nightlife quarter which is popular
-  with tourists and where also a lot of hotels are.
-  </p>
-  <p>
   The following is just a small selection of hotels which may or may not be
-  suitable. Dublin is an international business centre and tourist destination
-  and as such has many hotels and hostels in all price categories. The below
-  is merely a small selection, you can find more using the usual booking
-  engines such as booking.com, lastminute.com or airbnb.com.
+  suitable. Berlin is a major city and tourist destination and as such has
+  many hotels and hostels in all price categories. The below is merely a small
+  selection, you can find more using the usual booking engines such as
+  booking.com, lastminute.com or airbnb.com. As always, it is advisable to book
+  your accommodation earlier rather than later.
   </p>
   <p>
-  These hotels are located within half an hour of the convention center and
+  Many hotels in the city centre (Mitte) will be within walking distance
+  (up to 30mins) of the conference venue, or just a short taxi ride away.
+  There is also a public transport in form of busses, trams,
+  S-Bahn (overground metro) and U-Bahn (underground metro).
+  Our venue, the Betahaus, is right next to the <i>U Moritzplatz</i> underground
+  stop which is on the U8 Line and M29 bus route.
+  </p>
+  <p>
+  The following hotels are located within half an hour of the betahaus and
   had at least a couple of rooms left at the time of writing, but there are
   many other hotels in the city which may be even better located or provide
   better value:
   <ul>
-    <li><a href="http://www.fleethoteltemplebar.com">The Fleet Street Hotel (Temple Bar)</a></li>
-    <li>Maldron Hotel Cardiff Lane</li>
-    <li><a href="http://www.sandymounthotel.ie/">Sandymount Hotel</a></li>
-    <li><a href="http://www.ballsbridgehotel.com/">Ballsbridge Hotel</a></li>
-    <li>Temple Bar Inn</li>
-    <li>Georg Frederic Handel Hotel, Temple Bar</li>
-    <li>For those on a budget airbnb.ie may have some suitable accommodation choices</li>
+    <li><a href="http://www.motel-one.com/de/hotels/berlin/hotel-berlin-mitte/">Hotel Motel One (Berlin Mitte)</a> - 3 mins walk from betahaus</li>
+    <li><a href="http://www.nh-hotels.de/hotel/nh-berlin-kreuzberg">Hotel NH (Berlin Kreuzberg)</a> - ca. 10 mins / 800m on foot from betahaus</li>
+    <li><a href="http://vj-hotels.com/">Hotel Vier Jahreszeiten (Berlin City) Kreuzberg</a> - ca. 15mins / 1.1km on foot, 9mins by bus</li>
+    <li><a href="http://www.booking.com/hotel/de/berlinanglehot.html">Angleterre Hotel</a>, Friedrichstrasse, ca. 25mins on foot, 11 mins by bus (M29 from U Kochstr./Checkpoint Charlie to Moritzplatz)</li>
+    <li><a href="foo">Hotel Novotel Mitte</a> - ca. 15 mins walk from betahaus (just as long by public transport)</li>
+    <li>For those on a budget airbnb.de may have some suitable accommodation choices, and there are also some hostels nearby, e.g. <a href="baxpax.de">baxpax Kreuzberg Hostel</a>, <a href="http://www.comebackpackers.com/en/">comebackpackers</a>, A&amp;O</li>
   </ul>
+  </p>
+  <p>
+  There are also many hotels in the (very central) Alexanderplatz area which
+  are just a short U-Bahn (underground metro) ride away from the venue
+  (it's 7 mins from <i>U Alexanderplatz</i> to <i>U Moritzplatz</i>), e.g.:
+  <ul>
+    <li><a href="http://www.parkinn-berlin.de">Park Inn by Radisson</a></li>
+    <li><a href="hotelindigoberlin.com">Hotel INDIGO</a></li>
+    <li><a href="http://www.ibis.com/en/hotel-5513-ibis-budget-berlin-alexanderplatz/index.shtml">ibis budget (Mollstraße)</a></li>
+    <li><i>.. and many others</i></li>
+  </ul>
+  </p>
+  <p>
+  Those also attending the Embedded Linux Conference at the Maritim Hotel Berlin
+  may wish to stay there and take the M29 bus from <i>Gedänkstätte deutscher Widerstand</i>
+  to <i>Moritzplatz</i> (17 mins, every 10 mins), which is just a few steps
+  aways from the betahaus (GStreamer Conference venue).
+  </p>
+  <p>
   If you find any other places that might be worth mentioning here, please send
   us a mail.
   </p>
--->
 
   <h2>Contact</h2>
   <p>
@@ -389,9 +391,6 @@ li {
     <i>2016-September-28</i>: The social event on Thursday 8 Oct in the evening
     is now confirmed to be at <a href="http://www.tonerspub.ie/"><b>Toners Pub</b></a>
     from 19.00-23.00h. Food and drink will be provided. Bring your badge.
-  </p>
-  <p>
-    <i>2016-September-23</i>: added some hotels which still have rooms available
   </p>
   <p>
     <i>2016-September-23</i>: We're happy to to have <b><a href="http://lwn.net">Linux Weekly News</a></b> again as Press Partner at this year's conference.
@@ -421,6 +420,9 @@ li {
     <i>2016-July-17</i>: Registration is open
   </p>
 -->
+  <p>
+    <i>2016-August-28</i>: Added list of hotels
+  </p>
   <p>
     <i>2016-August-28</i>: <a href="&site;/conference/2016/gstreamer-conference-sponsor-brief-2016.pdf">Sponsorship brief</a> available
   </p>
