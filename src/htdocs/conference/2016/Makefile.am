@@ -14,10 +14,10 @@ built_pages = index.html #schedule.html talks-and-speakers.html
 #	sponsor_pexip.png \
 #	sponsor_google_538x190.png
 
-#documents = \
-#	gstreamer-conference-sponsor-brief-2015.pdf
+documents = \
+	gstreamer-conference-sponsor-brief-2016.pdf
 
-#gstreamer-conference-sponsor-brief-2015.pdf:
-#	cp $(top_srcdir)/copy/documents/gstreamer-conference-sponsor-brief-2015.pdf gstreamer-conference-sponsor-brief-2015.pdf
+gstreamer-conference-sponsor-brief-2016.pdf:
+	cp $(top_srcdir)/copy/documents/gstreamer-conference-sponsor-brief-2016.pdf gstreamer-conference-sponsor-brief-2016.pdf
 
 include $(top_srcdir)/html.make
