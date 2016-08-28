@@ -70,7 +70,7 @@ li {
   community members, industry partners, and anyone else interested in the
   GStreamer multimedia framework or Open Source and cross-platform multimedia.
   </p>
-
+<!--
   <h2>Call for Papers</h2>
   <p>
   The call for papers is now open and talk proposals can be submitted.
@@ -99,8 +99,9 @@ li {
   what your plans are.
   </p>
   <p>
-  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- -->@<!-- -->lists.freedesktop.org</a>.
+  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference @t lists.freedesktop.org</a>.
   </p>
+-->
 
   <h2>Showcase or Lightning Talks</h2>
   <p>
@@ -224,7 +225,7 @@ li {
 
   <h2>Registration</h2>
   <p>
-    Registration is not open yet.
+    <b>Registration is not open yet, but we hope to open it very soon (by/before ~5 Sept)</b>.
 <!--  Registration is now open and will stay open until the conference. -->
   </p>
 <!--
@@ -256,21 +257,7 @@ li {
     If in doubt drop us a mail or just register as hobbyist. The important
     thing is that you'll make it to the conference!
   </p>
-  <p>
-    Speakers who do a longer presentation will receive a discount code, so if
-    you have submitted a talk or plan to submit a talk you may want to wait
-    with registration until a decision has been made as to whether your
-    proposal has been accepted.
-  </p>
-  <p>
-    Sponsors will receive a number of free registrations as part of their
-<!--
-    <a href="&site;/conference/2016/gstreamer-conference-sponsor-brief-2016.pdf">
--->
-    sponsorship package<!--</a>-->.
-  </p>
 
-<!--
   <h2>Call for Papers</h2>
   <p>
   The call for papers is now closed and talk proposals can no longer be
@@ -280,7 +267,6 @@ li {
   <p>
   Lightning talks may still be proposed.
   </p>
--->
 
   <h2>Concurrent conferences</h2>
   <p>
@@ -442,13 +428,16 @@ li {
   <p>
     <i>2016-July-17</i>: Registration is open
   </p>
-  <p>
-    <i>2016-July-17</i>: Talk submission deadline is Sunday 9 August 2016
-  </p>
-  <p>
-    <i>2016-July-02</i>: Call for Papers
-  </p>
 -->
+  <p>
+    <i>2016-August-28</i>: Speakers have been notified about their talk proposal
+  </p>
+  <p>
+    <i>2016-June-16</i>: Talk submission deadline is Sunday 7 August 2016
+  </p>
+  <p>
+    <i>2016-June-16</i>: Call for Papers
+  </p>
   <p>
     <i>2016-May-26</i>: Date and venue confirmed, talks may be submitted.
   </p>
