@@ -51,11 +51,9 @@ li {
   and the week after <i>LinuxCon Europe</i>, but not officially co-hosted with
   these conferences and at a different venue this time.
   </p>
-<!--
   <p>
-  <b><a href="http://www.regonline.com/gstreamereu">Register here for the GStreamer Conference</a></b>
+  <b><a href="https://ti.to/gstreamer-conference-2016/gstreamer-conference-2016">Register here for the GStreamer Conference</a></b>
   </p>
--->
 
 <!--
   <h2>Schedule</h2>
@@ -134,9 +132,6 @@ li {
   </p>
 -->
   <h2>Schedule and speakers list</h2>
-  <p>
-  The Schedule and list of speakers will be published soon (end August / early September).
-  </p>
 <!--
   <p>
     <a href="schedule.html">Click here for the full schedule</a>
@@ -214,30 +209,26 @@ li {
 
   <h2>Registration</h2>
   <p>
-    <b>Registration is not open yet, but we hope to open it very soon (by/before ~5 Sept)</b>.
-<!--  Registration is now open and will stay open until the conference. -->
+  Registration is now open and will stay open until the conference.
   </p>
-<!--
   <p>
-  <b><a href="http://www.regonline.com/gstreamereu">Sign up for the GStreamer Conference here</a></b>
+  <b><a href="https://ti.to/gstreamer-conference-2016/gstreamer-conference-2016">Sign up for the GStreamer Conference here</a></b>
   </p>
--->
   <p>
-  There will be separate registration options for both professionals and for students and hobbyists:
+  There are separate registration options for both professionals and for students and hobbyists:
   </p>
   <p>
     <div style="margin-left:5%">
     <table width="60%" cellpadding="5">
-      <tr><td>Professional</td><td>250 EUR (ca. 280 USD) incl. lunch (early bird)</td></tr>
+      <tr><td>Professional</td><td>250 EUR (ca. 280 USD) incl. lunch (early bird, until 15 Sept)</td></tr>
       <tr><td>Professional</td><td>340 EUR (ca. 380 USD) incl. lunch (regular)</td></tr>
       <tr><td>Student/hobbyist</td><td>100 EUR (ca. 110 USD) incl. lunch</td></tr>
     </table>
     </div>
-    These prices are indicative only and may still change.
   </p>
   <p>
-    The registration fee includes <!-- continental breakfast and--> lunch at the venue
-    on both conference days.
+    The registration fee includes lunch at the venue on both conference days
+    as well as access to the social event on Monday evening.
   </p>
   <p>
     For those uncertain about whether to register as a professional or hobbyist,
@@ -402,10 +393,10 @@ li {
   <p>
     <i>2016-August-01</i>: <b><a href="http://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="http://gstconf.ubicast.tv">record talks and lightning talks</a>
   </p>
-  <p>
-    <i>2016-July-17</i>: Registration is open
-  </p>
 -->
+  <p>
+    <i>2016-August-30</i>: Registration is now open
+  </p>
   <p>
     <i>2016-August-28</i>: List of talks and speakers available
   </p>
