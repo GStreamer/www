@@ -142,7 +142,7 @@ li {
     <ul>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">An overview of Video Encoding Benchmarks with GStreamer</a><br /><small><i>Florent Thiéry, UbiCast</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">Advanced Time Profiling Techniques of GStreamer Pipelines</a><br /><small><i>Kyrylo Polezhaiev</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Multimedia Communication Quality Assessment Testbed</a><br /><small><i>Edip Demirbilek, Énergie Matériaux Télécommunications (EMT) Research Centre</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Multimedia Communication Quality Assessment Testbed</a><br /><small><i>Jean-Charles Grégoire, Énergie Matériaux Télécommunications (EMT) Research Centre</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">Processing: RPi video library, a 1.0-based video library for the desktop</a><br /><small><i>Andres Colubri, Processing.org</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">The Pexip Media Architecture</a><br /><small><i>Havard Graff, Pexip</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">Holographic Telecommunication in the Age of Free Software</a><br /><small><i>Lubosz Sarnecki, Collabora</i></small></li>
@@ -161,7 +161,7 @@ li {
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">Features Detection Plugins Speed-up by ompSs@FPGA</a><br /><small><i>Nicola Bettin, Vimar S.p.A</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">The GStreamer Core Developers Show (Panel)</a><br /><small><i>Hosted by Luis de Bethencourt, Samsung OSG</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">Playing Arbitrary Video Files with GStreamer</a><br /><small><i>Michael Olbrich, Pengutronix</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Efficient Trick Modes in Adaptive Streaming with GStreamer</a><br /><small><i>Wojciech Przybyl, Visla Systems</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Efficient Trick Modes in MPEG-DASH Adaptive Streaming with GStreamer</a><br /><small><i>Wojciech Przybyl, Visla Systems</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">The new GstStream API: Design and Usage</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">gstreamermm: C++ way of doing GStreamer-based Applications</a><br /><small><i>Marcin Kolny</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">HLS Alternative Renditions</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
@@ -182,6 +182,7 @@ li {
     <li>Yet Another Update about Video4Linux2 in GStreamer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
     <li>FFV1 and Matroska as a new standard for video archiving <small><br /><i>Georg Lippitsch, ToolsOnAir</i></small></li>
     <li>Writing Software Synthesizers for GStreamer <small><br /><i>Stefan Sauer, Google</i></small></li>
+    <li>Making GStreamer on Android Easier <small><br /><i>Arun Raghavan</i></small></li>
     <li>...</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
@@ -261,6 +262,18 @@ li {
     <tr><td><a href="http://events.linuxfoundation.org/events/openiot-summit-europe">Open IoT Summit</a></td><td>October 11-13, 2016</td></tr>
     <tr><td><a href="http://events.linuxfoundation.org/events/linuxcon-europe">LinuxCon Europe</a></td><td>October 4-6, 2016</td></tr>
   </table>
+  </p>
+
+  <h2>GStreamer hackfest</h2>
+  <p>
+    There are plans to have a hackfest the weekend before the conference in
+    Berlin, i..e on the 8th and 9th of October. Venue is yet to be confirmed.
+    Please add yourself to the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2016">wiki page</a>
+    if you plan on attending the hackfest, so we have an idea of the number of
+    people to expect. Also see the
+    <a href="https://lists.freedesktop.org/archives/gstreamer-announce/2016-August/000395.html">announcement mail</a>
+    here. Mail Sebastian or pop onto the #gstreamer IRC channel if you don't
+    have editing permissions for the wiki.
   </p>
 
   <h2>Sponsorship Opportunities</h2>

@@ -1012,6 +1012,7 @@ of different issues. We have the following talks scheduled so far
     <li>Yet Another Update about Video4Linux2 in GStreamer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
     <li>FFV1 and Matroska as a new standard for video archiving <small><br /><i>Georg Lippitsch, ToolsOnAir</i></small></li>
     <li>Writing Software Synthesizers for GStreamer <small><br /><i>Stefan Sauer, Google</i></small></li>
+    <li>Making GStreamer on Android Easier <small><br /><i>Arun Raghavan</i></small></li>
     <li>...</li>
     <li><i>Your talk here?</i></li>
     </ul>
