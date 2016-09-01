@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer-vaapi</module>
+  <module-fancy>A set of VA-API based elements for GStreamer</module-fancy>
+  <name></name>
+  <version>1.9.2</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the second release of the unstable
+1.9 release series, which marks the feature freeze for 1.10. The 1.9 release
+series is adding new features on top of the 1.0, 1.2, 1.4, 1.6 and 1.8 series
+and is part of the API and ABI-stable 1.x release series of the GStreamer
+multimedia framework. The unstable 1.9 release series will lead to the stable
+1.10 release series in the next weeks. Any newly added API can still change
+until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+  </intro>
+
+    <contributors>
+	<person>Allen Zhang</person>
+	<person>Hyunjun Ko</person>
+	<person>Jagyum Koo</person>
+	<person>Scott D Phillips</person>
+	<person>Sebastian Dröge</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Stefan Sauer</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>724352</id>
+      <summary>Plugin should not register if underlaying library not available</summary>
+    </bug>
+    <bug>
+      <id>734093</id>
+      <summary>vaapidecode: allow for per-codec element split</summary>
+    </bug>
+    <bug>
+      <id>742922</id>
+      <summary>vaapidecode: support reverse playback</summary>
+    </bug>
+    <bug>
+      <id>751623</id>
+      <summary>vaapidecode: GstVideoGLTextureUploadMeta is not always configured</summary>
+    </bug>
+    <bug>
+      <id>766206</id>
+      <summary>plugins: negotiate GstGLContext during the GstContext sharing</summary>
+    </bug>
+    <bug>
+      <id>767176</id>
+      <summary>vaapiencode: implement flush() vmethod</summary>
+    </bug>
+    <bug>
+      <id>767203</id>
+      <summary>vaapi: libs: EGL support is dead code since upstream</summary>
+    </bug>
+    <bug>
+      <id>768458</id>
+      <summary>vaapiencode: use gst_util_uint64_scale() and check fps numerator</summary>
+    </bug>
+    <bug>
+      <id>768544</id>
+      <summary>[GST-VAAPI] Gstreamer not able to hardware decode H265 video using vaapidecode and fakesink.</summary>
+    </bug>
+    <bug>
+      <id>768647</id>
+      <summary>[MVC][Encode] all the encoded file can't be displayed.</summary>
+    </bug>
+    <bug>
+      <id>768652</id>
+      <summary>vaapidecode: improvements for flush and drain</summary>
+    </bug>
+    <bug>
+      <id>768899</id>
+      <summary>vaapidecodebin: simplify the code</summary>
+    </bug>
+    <bug>
+      <id>769237</id>
+      <summary>configure: Some PKG_CHECK_MODULES invocations that are meant to be non-fatal are actually fatal</summary>
+    </bug>
+    <bug>
+      <id>751876</id>
+      <summary>vaapipostproc: enable passthrough on same caps</summary>
+    </bug>
+  </bugs>
+</release>

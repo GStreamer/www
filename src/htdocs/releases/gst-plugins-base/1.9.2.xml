@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.9.2</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the second release of the unstable
+1.9 release series, which marks the feature freeze for 1.10. The 1.9 release
+series is adding new features on top of the 1.0, 1.2, 1.4, 1.6 and 1.8 series
+and is part of the API and ABI-stable 1.x release series of the GStreamer
+multimedia framework. The unstable 1.9 release series will lead to the stable
+1.10 release series in the next weeks. Any newly added API can still change
+until that point.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+    <contributors>
+	<person>Arun Raghavan</person>
+	<person>Carlos Rafael Giani</person>
+	<person>Duncan Palmer</person>
+	<person>Edward Hervey</person>
+	<person>Guillaume Desmottes</person>
+	<person>Jan Schmidt</person>
+	<person>Joan Pau Beltran</person>
+	<person>Josep Torra</person>
+	<person>Luis de Bethencourt</person>
+	<person>Matej Knopp</person>
+	<person>Michael Olbrich</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Piotr Drąg</person>
+	<person>Sebastian Dröge</person>
+	<person>Sergio Torres Soldado</person>
+	<person>Seungha Yang</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Stefan Sauer</person>
+	<person>Thibault Saunier</person>
+	<person>Thijs Vermeir</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vivia Nikolaidou</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+	<person>Wim Taymans</person>
+	<person>Xabier Rodriguez Calvar</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>761514</id>
+      <summary>riff: remove limits for sample rate and channel count</summary>
+    </bug>
+    <bug>
+      <id>766419</id>
+      <summary>videotimecode: Added support for SMPTE time code metadata</summary>
+    </bug>
+    <bug>
+      <id>767816</id>
+      <summary>Comparison of constant 64 with expression of type 'GstVideoFormat' is always false in Mac OS X</summary>
+    </bug>
+    <bug>
+      <id>768495</id>
+      <summary>POTFILES.in is out of date</summary>
+    </bug>
+    <bug>
+      <id>768525</id>
+      <summary>subparse: don't reset allowed tags</summary>
+    </bug>
+    <bug>
+      <id>768687</id>
+      <summary>Rework video orientation</summary>
+    </bug>
+    <bug>
+      <id>768718</id>
+      <summary>videoscale: fix leak in test</summary>
+    </bug>
+    <bug>
+      <id>768811</id>
+      <summary>decodebin3/playbin3: fix leaks</summary>
+    </bug>
+    <bug>
+      <id>768852</id>
+      <summary>appsink: add _try_pull_{sample,preroll} with timeout parameter</summary>
+    </bug>
+    <bug>
+      <id>768990</id>
+      <summary>audioclock: use GST_STIME_FORMAT for the correct argument</summary>
+    </bug>
+    <bug>
+      <id>769080</id>
+      <summary>decodebin3: fix collection refcounting</summary>
+    </bug>
+    <bug>
+      <id>769270</id>
+      <summary>decodebin3/playbin3: fix ref handling</summary>
+    </bug>
+    <bug>
+      <id>769298</id>
+      <summary>decodebin3: handle full removal of streams</summary>
+    </bug>
+    <bug>
+      <id>769299</id>
+      <summary>ogg: check return values in gst_ogg_parse_new_stream</summary>
+    </bug>
+    <bug>
+      <id>769303</id>
+      <summary>pbutils: Add more h264 scalable profiles</summary>
+    </bug>
+    <bug>
+      <id>769624</id>
+      <summary>videorate: Does not support reverse playback</summary>
+    </bug>
+    <bug>
+      <id>770053</id>
+      <summary>parsebin: sometimes sets global tags to stream</summary>
+    </bug>
+  </bugs>
+
+</release>

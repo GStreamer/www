@@ -5,19 +5,20 @@
   <module>gst-libav</module>
   <module-fancy>GStreamer libav Plugins</module-fancy>
   <name></name>
-  <version></version>
+  <version>1.9.2</version>
 
   <intro>
 <p>
-The GStreamer team is proud to announce a new release
-in the 1.x stable series of the
-core of the GStreamer streaming media framework.
+The GStreamer team is pleased to announce the second release of the unstable
+1.9 release series, which marks the feature freeze for 1.10. The 1.9 release
+series is adding new features on top of the 1.0, 1.2, 1.4, 1.6 and 1.8 series
+and is part of the API and ABI-stable 1.x release series of the GStreamer
+multimedia framework. The unstable 1.9 release series will lead to the stable
+1.10 release series in the next weeks. Any newly added API can still change
+until that point.
 </p>
 <p>
-The 1.x series is a stable series targeted at end users.
-It is not API or ABI compatible with the stable 0.10.x series.
-It is, however, parallel installable with the 0.10.x series and
-will not affect an existing 0.10.x installation.
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
 </p>
 
 <p>
@@ -44,32 +45,24 @@ Other modules containing plugins are:
 </p>
   </intro>
 
-  <features>
-    <feature>Parallel installability with 0.10.x series</feature>
-    <feature></feature>
-  </features>
-
-<!--
-  <applications>
-  </applications>
--->
-
-  <contributors>
+    <contributors>
+	<person>Edward Hervey</person>
+	<person>Josep Torra</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Sauer</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
   </contributors>
+
 <p>In addition to the above contributors, we would like to extend our
 thanks to the ffmpeg developers without which these plugins would have
 no reason to exist.</p>
 
-<!--
-  <api>
-    <additions>
-    </additions>
-    <deprecations>
-    </deprecations>
-  </api>
--->
-
   <bugs>
+    <bug>
+      <id>769809</id>
+      <summary>libgstlibav fails on Linux</summary>
+    </bug>
   </bugs>
 
 </release>
