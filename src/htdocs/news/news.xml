@@ -7992,5 +7992,32 @@ or download tarballs for
         </content>
       </item>
 
+  <item>
+      <date>2016-09-04 10:00</date>
+        <title>Orc 0.4.26 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team announces another maintenance bug-fix release of liborc,
+the Optimized Inner Loop Runtime Compiler. Main changes since the previous
+release:
+        </p>
+        <p>
+          <ul>
+            <li>Use 64 bit arithmetic to increment the stride if needed
+                (fixing crashes in certain libgstvideo functions on OS X)</li>
+            <li>Fix generation of ModR/M / SIB bytes for the EBP, R12, R13
+                registers on X86/X86-64 (fixing crashes in compositor on
+                Windows)</li>
+            <li>Fix test_parse unit test if no executable backend is available</li>
+            <li>Add orc-test path to the -uninstalled .pc file</li>
+            <li>Fix compiler warnings in the tests on OS X</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.26.tar.xz">orc-0.4.26</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
 
