@@ -8019,5 +8019,28 @@ Direct tarball download: <a href="&site;/src/orc/orc-0.4.26.tar.xz">orc-0.4.26</
         </content>
   </item>
 
+  <item>
+      <date>2016-09-05 09:00</date>
+        <title>GStreamer Conference 2016: Registration now open</title>
+        <content>
+        <p><i>About the GStreamer Conference</i></p>
+        <p>
+The GStreamer Conference 2016 will take place on 10-11 October 2016 in
+Berlin (Germany), and will take place in the same week as the Embedded Linux
+Conference Europe.
+        </p>
+        <p>
+It is a conference for developers, decision-makers, and anyone else interested
+in the GStreamer multimedia framework and open source multimedia.
+        </p>
+
+        <p><i>Registration now open</i></p>
+        <p>
+You can now register for the GStreamer Conference 2016 via the
+<a href="&site;/conference/2016/">conference website</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
 
