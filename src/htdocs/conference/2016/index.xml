@@ -390,24 +390,30 @@ li {
     <i>2016-September-23</i>: We're happy to to have <b><a href="http://lwn.net">Linux Weekly News</a></b> again as Press Partner at this year's conference.
   </p>
   <p>
-    <i>2016-September-22</i>: The GStreamer project is thrilled to welcome back <b><a href="http://www.collabora.com/">Collabora</a></b> as a Silver sponsor this year.
-  </p>
-  <p>
     <i>2016-September-14</i>: The GStreamer project is happy to welcome back <b><a href="http://www.igalia.com/">Igalia</a></b> as a Bronze sponsor this year.
   </p>
   <p>
     <i>2016-September-09</i>: Talk abstracts and speaker bios published
   </p>
   <p>
-    <i>2016-September-03</i>: The GStreamer project is pleased to welcome <b><a href="http://pexip.com/">Pexip</a></b> as a Bronze sponsor.
-  </p>
-  <p>
     <i>2016-August-05</i>: The GStreamer project is delighted to welcome back <b><a href="http://www.google.com">Google</a></b> as Silver sponsor
   </p>
-  <p>
-    <i>2016-August-01</i>: <b><a href="http://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="http://gstconf.ubicast.tv">record talks and lightning talks</a>
-  </p>
 -->
+  <p>
+    <i>2016-September-05</i>: The GStreamer project is pleased to see <b><a href="http://pexip.com/">Pexip</a></b> return as Silver sponsor this year.
+  </p>
+  <p>
+    <i>2016-September-05</i>: We're excited to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference for the first time this year, at Gold level.
+  </p>
+  <p>
+    <i>2016-September-05</i>: The GStreamer project is thrilled to welcome back <b><a href="http://www.collabora.com">Collabora</a></b> as a Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2016-September-05</i>: We're happy to have <b><a href="http://www.kinvolk.io">Kinvolk</a></b> on board this year as local partner handling the ticketing.
+  </p>
+  <p>
+    <i>2016-September-05</i>: <b><a href="http://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="http://gstconf.ubicast.tv">record talks and lightning talks</a>
+  </p>
   <p>
     <i>2016-August-30</i>: Registration is now open
   </p>
@@ -446,48 +452,65 @@ li {
 </td>
 
 <td valign="top" style="padding:0px 50px">
-<!--
   <h1>Sponsors</h1>
-  <h2>Silver Sponsors</h2>
+
+  <h2>Platinum Sponsor</h2>
+
+  <p style="padding:20px 0px"><!-- height="101" width="193" -->
+    <a href="http://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
+  </p>
+  <br />
+
+  <h2>Gold Sponsors</h2>
 
   <p style="padding:10px 0px">
-    <a href="http://www.google.com"><img src="sponsor_google_538x190.png" alt="Google" height="75" width="225" /></a>
+    <a href="http://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" width="275" /></a>
   </p>
   <p>
     <a href="http://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
   </p>
-
-  <p style="padding:20px 0px">
-    <a href="http://www.collabora.com"><img src="sponsor_1722x282_collabora.png" alt="Collabora" height="50" width="305" /></a>
+<!--
+  <p>
+    <a href="http://www.google.com"><img src="sponsor_google_538x190.png" alt="Google" height="75" width="225" /></a>
   </p>
+-->
+  <br />
 
-  <h2>Bronze Sponsors</h2>
+  <h2>Silver Sponsors</h2>
+
   <p style="padding:10px 0px">
     <a href="http://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" height="75" width="75" /></a>
 
-    <span style="padding:0px 20px">
+<!--    <span style="padding:0px 20px">
     <a href="http://www.igalia.com"><img src="sponsor_igalia_2016_2019x720.png" alt="Igalia" height="65" width="182" /></a>
     </span>
+-->
   </p>
-
   <br />
-  <h2>Special Media Partners</h2>
+
+  <h2>Special Media Partner</h2>
   <p style="padding:10px 0px">
     <a href="http://www.ubicast.eu/"><img src="sponsor_ubicast_640x195.png" alt="UbiCast" height="75" width="246" /></a>
   </p>
-
   <br />
+
+  <h2>Local Event Partner</h2>
+  <p style="padding:10px 0px">
+    <a href="http://kinvolk.io"><img src="sponsor_kinvolk_394x394.png" alt="Kinvolk" height="99" width="99" /></a>
+  </p>
+  <br />
+
+<!--
   <h2>Press Partners</h2>
   <p style="padding:10px 0px">
     <a href="http://lwn.net"><img src="lwn-logo-gstconf2016.png" alt="LWN" height="99" width="300" /></a>
   </p>
-
+-->
   <p>
     <small>
     Interested in <a href="&site;/conference/2016/gstreamer-conference-sponsor-brief-2016.pdf">becoming a sponsor</a> ?
     </small>
   </p>
--->
 </td>
 
 </tr>

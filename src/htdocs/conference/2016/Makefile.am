@@ -1,18 +1,19 @@
 built_pages = index.html talks-and-speakers.html #schedule.html
 
 #ccd.jpg
-#sponsor_305x50_collabora_new.png
-#sponsor_150x78_collabora_new.png
 #lwn.png
-#images = \
-#	lwn-logo-gstconf2015.png \
-#	sponsor_ubicast_640x195.png \
-#	sponsor_ubicast_821x240.png \
-#	sponsor_centricular_753x125.png \
-#	sponsor_1722x282_collabora.png \
-#	sponsor_igalia_2015_2019x720.png \
-#	sponsor_pexip.png \
+
+#	lwn-logo-gstconf2015.png
+#	sponsor_igalia_2015_2019x720.png
 #	sponsor_google_538x190.png
+
+images = \
+	sponsor_ubicast_640x195.png \
+	sponsor_centricular_753x125.png \
+	sponsor_collabora_02_rgb_965x504.png \
+        sponsor_facebook_960x263.png \
+	sponsor_pexip.png \
+        sponsor_kinvolk_394x394.png
 
 documents = \
 	gstreamer-conference-sponsor-brief-2016.pdf
