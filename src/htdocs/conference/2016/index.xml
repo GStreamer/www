@@ -143,7 +143,7 @@ li {
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">An overview of Video Encoding Benchmarks with GStreamer</a><br /><small><i>Florent Thiéry, UbiCast</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">Advanced Time Profiling Techniques of GStreamer Pipelines</a><br /><small><i>Kyrylo Polezhaiev</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">Multimedia Communication Quality Assessment Testbed</a><br /><small><i>Jean-Charles Grégoire, Énergie Matériaux Télécommunications (EMT) Research Centre</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Processing: RPi video library, a 1.0-based video library for the desktop</a><br /><small><i>Andres Colubri, Processing.org</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Processing: The new 1.0-based video library for desktop and RPi, with GoPro support (and much more!)</a><br /><small><i>Andres Colubri and Gal Nissim, Processing Foundation</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">The Pexip Media Architecture</a><br /><small><i>Havard Graff, Pexip</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">Holographic Telecommunication in the Age of Free Software</a><br /><small><i>Lubosz Sarnecki, Collabora</i></small></li>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#">The Wonderful World of Horrible Networks</a><br /><small><i>Havard Graff, Pexip</i></small></li>
@@ -343,8 +343,8 @@ li {
     <li><a href="http://www.nh-hotels.de/hotel/nh-berlin-kreuzberg">Hotel NH (Berlin Kreuzberg)</a> - ca. 10 mins / 800m on foot from betahaus</li>
     <li><a href="http://vj-hotels.com/">Hotel Vier Jahreszeiten (Berlin City) Kreuzberg</a> - ca. 15mins / 1.1km on foot, 9mins by bus</li>
     <li><a href="http://www.booking.com/hotel/de/berlinanglehot.html">Angleterre Hotel</a>, Friedrichstrasse, ca. 25mins on foot, 11 mins by bus (M29 from U Kochstr./Checkpoint Charlie to Moritzplatz)</li>
-    <li><a href="foo">Hotel Novotel Mitte</a> - ca. 15 mins walk from betahaus (just as long by public transport)</li>
-    <li>For those on a budget airbnb.de may have some suitable accommodation choices, and there are also some hostels nearby, e.g. <a href="baxpax.de">baxpax Kreuzberg Hostel</a>, <a href="http://www.comebackpackers.com/en/">comebackpackers</a>, A&amp;O</li>
+    <li><a href="http://www.novotel.com/en/hotel-3278-novotel-berlin-mitte/index.shtml">Hotel Novotel Mitte</a> - ca. 15 mins walk from betahaus (just as long by public transport)</li>
+    <li>For those on a budget airbnb.de may have some suitable accommodation choices, and there are also some hostels nearby, e.g. <a href="http://baxpax.de">baxpax Kreuzberg Hostel</a>, <a href="http://www.comebackpackers.com/en/">comebackpackers</a>, A&amp;O</li>
   </ul>
   </p>
   <p>
@@ -353,7 +353,7 @@ li {
   (it's 7 mins from <i>U Alexanderplatz</i> to <i>U Moritzplatz</i>), e.g.:
   <ul>
     <li><a href="http://www.parkinn-berlin.de">Park Inn by Radisson</a></li>
-    <li><a href="hotelindigoberlin.com">Hotel INDIGO</a></li>
+    <li><a href="http://hotelindigoberlin.com">Hotel INDIGO</a></li>
     <li><a href="http://www.ibis.com/en/hotel-5513-ibis-budget-berlin-alexanderplatz/index.shtml">ibis budget (Mollstraße)</a></li>
     <li><i>.. and many others</i></li>
   </ul>
