@@ -8042,5 +8042,36 @@ You can now register for the GStreamer Conference 2016 via the
         </content>
   </item>
 
+  <item>
+      <date>2016-09-14 13:00</date>
+        <title>GStreamer Conference 2016: Collabora Platinum Sponsor</title>
+        <content>
+        <p>
+The GStreamer project is pleased to welcome back Collabora as Platinum
+level sponsor at this year's GStreamer Conference in Berlin.
+        </p>
+        <p>
+Collabora (<a href="https://www.collabora.com">https://www.collabora.com</a>)
+is a consultancy with more than 10 years of experience in open source
+technologies. As well as employing several core contributors, they have
+been sponsoring the GStreamer conference for every year since the very
+first conference.
+        </p>
+        <p>
+Thanks Collabora!
+        </p>
+        <p style="padding:10px 0px">
+          <a href="http://www.collabora.com"><img src="&site;/conference/2014/sponsor_305x50_collabora_new.png" alt="Collabora" height="50" width="305" /></a>
+        </p>
+        <p><i>About the GStreamer Conference</i></p>
+        <p>
+The GStreamer Conference 2016 will take place on 10-11 October 2016 in
+Berlin (Germany), and will take place in the same week as the Embedded Linux
+Conference Europe. More information and details how to register can be found
+on the <a href="&site;/conference/2016/">conference website</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
 
