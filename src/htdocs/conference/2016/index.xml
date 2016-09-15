@@ -184,6 +184,7 @@ li {
     <li>Writing Software Synthesizers for GStreamer <small><br /><i>Stefan Sauer, Google</i></small></li>
     <li>Making GStreamer on Android Easier <small><br /><i>Arun Raghavan</i></small></li>
     <li>IP Streaming Performance Issues with GStreamer on an Embedded Platform - and some Solutions <small><br /><i>David Plowman, BrightSign Digital</i></small></li>
+    <li>Measuring video-capture latency with the Raspberry Pi and satellites <small><br /><i>Will Manley, stb-tester.com</i></small></li>
     <li>...</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
