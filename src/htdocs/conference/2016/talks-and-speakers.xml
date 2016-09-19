@@ -1015,6 +1015,7 @@ of different issues. We have the following talks scheduled so far
     <li>Making GStreamer on Android Easier <small><br /><i>Arun Raghavan</i></small></li>
     <li>IP Streaming Performance Issues with GStreamer on an Embedded Platform - and some Solutions <small><br /><i>David Plowman, BrightSign Digital</i></small></li>
     <li>Measuring video-capture latency with the Raspberry Pi and satellites <small><br /><i>Will Manley, stb-tester.com</i></small></li>
+    <li>Smooth playback of adaptive video streams on Raspberry Pi with gst-mmal <small><br /><i>John Sadler, YouView TV</i></small></li>
     <li>...</li>
     <li><i>Your talk here?</i></li>
     </ul>
