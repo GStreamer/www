@@ -400,6 +400,9 @@ li {
   </p>
 -->
   <p>
+    <i>2016-September-21</i>: A big welcome back to <a href="http://fluendo.com">Fluendo</a> who are sponsoring at Gold level this year.
+  </p>
+  <p>
     <i>2016-September-18</i>: We're delighted to welcome back <b><a href="http://www.igalia.com/">Igalia</a></b> as a Silver sponsor this year.
   </p>
   <p>
@@ -469,7 +472,10 @@ li {
   <p style="padding:10px 0px">
     <a href="http://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" width="275" /></a>
   </p>
-  <p>
+  <p style="padding:10px 0px">
+    <a href="http://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="74" width="320" /></a>
+  </p>
+  <p style="padding:10px 0px">
     <a href="http://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
   </p>
 <!--

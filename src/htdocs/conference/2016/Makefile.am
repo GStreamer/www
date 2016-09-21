@@ -11,6 +11,7 @@ images = \
 	sponsor_centricular_753x125.png \
 	sponsor_collabora_02_rgb_965x504.png \
         sponsor_facebook_960x263.png \
+        sponsor_fluendo_320x74.png \
 	sponsor_igalia_2015_2019x720.png \
 	sponsor_pexip.png \
         sponsor_kinvolk_394x394.png
