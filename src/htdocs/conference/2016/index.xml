@@ -120,17 +120,33 @@ li {
   <h2>Social Event</h2>
   <p>
     There will again be a social event for registered attendees on
-    Monday 10 October 2016 in the evening from ca. 19.00-23.00h
-    (location yet to be determined).
+    Monday 10 October 2016 in the evening from ca. 19.00 until late at
+    <a href="http://zaza-bar.de/zaza-bar/index_en.html"><b>ZaZa Bar and Lounge</b></a>,
+    Kastanienallee 12, 10435 Berlin
+    (<a href="http://zaza-bar.de/zaza-bar/location_en.html">ZaZa Bar location map</a>)(<a href="https://goo.gl/maps/5nQQ3pknoYz">Google Maps</a>)(<a href="http://www.openstreetmap.org/node/778710953">OpenStreetMap</a>).
   </p>
-<!--
+  <p>
+    Get there by public transport:
+    The closest underground/metro stop is <i>Eberswalder Strasse</i> which is
+    on the U2 line. From the venue (betahaus), take the U8 line northbound
+    from <i>Moritzplatz</i> and change at <i>Alexanderplatz</i> to the U2 line
+    northbound, and exit at <i>Eberswalder Strasse</i> from where it's just a
+    few metres to walk to the ZaZa Bar. Should take no more than 20 minutes,
+    and trains should run every 5 minutes or so. A single fare ticket
+    (Einzelfahrschein) should be about 2.70 EUR. You need to <u>validate your ticket</u>
+    before you start your journey by stamping it at the yellow or red boxes on
+    the platforms (or platform entrances), in buses or trams.
+  </p>
+  <p>
+    Getting there by taxi takes ca. 15-30 minutes from the venue, depending on traffic.
+  </p>
   <p>
     Food and Drink will be provided, including vegetarian options.
   </p>
   <p>
     Please don't forget to bring your badge.
   </p>
--->
+
   <h2>Schedule and speakers list</h2>
 <!--
   <p>
@@ -385,22 +401,23 @@ li {
   <p>
     <i>2016-September-28</i>: the <a href="&site;/conference/2016/schedule.html">full conference schedule</a> is now available as well
   </p>
-  <p>
-    <i>2016-September-28</i>: The social event on Thursday 8 Oct in the evening
-    is now confirmed to be at <a href="http://www.tonerspub.ie/"><b>Toners Pub</b></a>
-    from 19.00-23.00h. Food and drink will be provided. Bring your badge.
-  </p>
-  <p>
-    <i>2016-September-23</i>: We're happy to to have <b><a href="http://lwn.net">Linux Weekly News</a></b> again as Press Partner at this year's conference.
-  </p>
+-->
+<!--
   <p>
     <i>2016-September-09</i>: Talk abstracts and speaker bios published
   </p>
-
+-->
+<!--
   <p>
     <i>2016-August-05</i>: The GStreamer project is delighted to welcome back <b><a href="http://www.google.com">Google</a></b> as Silver sponsor
   </p>
 -->
+  <p>
+    <i>2016-October-04</i>: The social event on Monday 10 October in the evening
+    is now confirmed to be at <a href="http://zaza-bar.de/zaza-bar/index_en.html"><b>ZaZa Bar and Lounge</b></a>
+    from 19.00-late. Food and drink will be provided, including vegetarian options.
+    Make sure to bring your badge.
+  </p>
   <p>
     <i>2016-September-21</i>: A big welcome back to <a href="http://fluendo.com">Fluendo</a> who are sponsoring at Gold level this year.
   </p>
