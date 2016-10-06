@@ -1,4 +1,4 @@
-built_pages = index.html talks-and-speakers.html #schedule.html
+built_pages = index.html talks-and-speakers.html schedule.html
 
 #ccd.jpg
 #lwn.png

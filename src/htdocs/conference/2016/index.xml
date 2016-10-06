@@ -55,12 +55,10 @@ li {
   <b><a href="https://ti.to/gstreamer-conference-2016/gstreamer-conference-2016">Register here for the GStreamer Conference</a></b>
   </p>
 
-<!--
   <h2>Schedule</h2>
   <p>
   <a href="schedule.html">Click here for the conference schedule</a>.
   </p>
--->
 
   <h2>Details</h2>
   <p>
@@ -148,11 +146,9 @@ li {
   </p>
 
   <h2>Schedule and speakers list</h2>
-<!--
   <p>
     <a href="schedule.html">Click here for the full schedule</a>
   </p>
-<-->
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
     <ul>
@@ -208,15 +204,13 @@ li {
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
   </p>
-<!--
   <p>
     The full <a href="schedule.html">conference schedule is now available</a>.
     We hope you will be as excited about this years
     schedule as we are. In addition to of course many in-depth GStreamer talks
     we also have presentations on some of the most important core Linux
-    multimedia technologies like OpenGL and Wayland.
+    multimedia technologies like OpenGL as well as the new kid on the block, Vulkan.
   </p>
--->
 
   <h2>Who should attend?</h2>
   <p>
@@ -397,16 +391,12 @@ li {
   </p>
 
   <h2>Conference News and Updates</h2>
-<!--
   <p>
-    <i>2016-September-28</i>: the <a href="&site;/conference/2016/schedule.html">full conference schedule</a> is now available as well
+    <i>2016-October-06</i>: the <a href="&site;/conference/2016/schedule.html">full conference schedule</a> is now available as well
   </p>
--->
-<!--
   <p>
-    <i>2016-September-09</i>: Talk abstracts and speaker bios published
+    <i>2016-October-05</i>: Talk abstracts and speaker bios published
   </p>
--->
 <!--
   <p>
     <i>2016-August-05</i>: The GStreamer project is delighted to welcome back <b><a href="http://www.google.com">Google</a></b> as Silver sponsor
