@@ -152,39 +152,39 @@ li {
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
     <ul>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">An overview of Video Encoding Benchmarks with GStreamer</a><br /><small><i>Florent Thiéry, UbiCast</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Advanced Time Profiling Techniques of GStreamer Pipelines</a><br /><small><i>Kyrylo Polezhaiev</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Multimedia Communication Quality Assessment Testbed</a><br /><small><i>Jean-Charles Grégoire, Énergie Matériaux Télécommunications (EMT) Research Centre</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Processing: The new 1.0-based video library for desktop and RPi, with GoPro support (and much more!)</a><br /><small><i>Andres Colubri and Gal Nissim, Processing Foundation</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">The Pexip Media Architecture</a><br /><small><i>Havard Graff, Pexip</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Holographic Telecommunication in the Age of Free Software</a><br /><small><i>Lubosz Sarnecki, Collabora</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">The Wonderful World of Horrible Networks</a><br /><small><i>Havard Graff, Pexip</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Corroded Pipelines, or How to Write GStreamer Elements in Rust for Safety and Fun</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Industrial Application Pipelines with GStreamer</a><br /><small><i>Marianna Smidth Buschle, QTechnology</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">GStreamer-VAAPI: Where we are Today</a><br /><small><i>Víctor M. Jáquez L., Igalia</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">3D Scanning with GStreamer</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Time and Synchronisation: Take Two!</a><br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Intelligent Surveillance</a><br /><small><i>Mandar Joshi</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Using GStreamer for Video Analytics: VCABridge</a><br /><small><i>Julián Bouzas González, VCA Technology</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Tracking Memory Leaks</a><br /><small><i>Guillaume Desmottes, Collabora</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">How to Work with Dynamic Pipelines using GStreamer</a><br /><small><i>Jose Antonio Santos Cadenas, Kurento</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">GStreamer Element States: How Do They Work in Detail?</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Debugging Race Condition Problems in GStreamer</a><br /><small><i>Miguel París Díaz, Kurento</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Features Detection Plugins Speed-up by ompSs@FPGA</a><br /><small><i>Nicola Bettin, Vimar S.p.A</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">The GStreamer Core Developers Show (Panel)</a><br /><small><i>Hosted by Luis de Bethencourt, Samsung OSG</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Playing Arbitrary Video Files with GStreamer</a><br /><small><i>Michael Olbrich, Pengutronix</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Efficient Trick Modes in MPEG-DASH Adaptive Streaming with GStreamer</a><br /><small><i>Wojciech Przybyl, Visla Systems</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">The new GstStream API: Design and Usage</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">gstreamermm: C++ way of doing GStreamer-based Applications</a><br /><small><i>Marcin Kolny</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">HLS Alternative Renditions</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">The State of GStreamer for Video Editing</a><br /><small><i>Thibault Saunier, Samsung OSG</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">GStreamer Development on Windows and Faster Builds on All Platforms with the Meson Build System</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">SMPTE timecodes in GStreamer</a><br /><small><i>Vivia Nikolaidou, ToolsOnAir</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Vulkan, OpenGL and/or Zerocopy</a><br /><small><i>Matthew Waters, Centricular</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">GStreamer in the Broadcast World: A General Overview</a><br /><small><i>Georg Lippitsch, ToolsOnAir</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">Digital Television Support - Where are we at?</a><br /><small><i>Reynaldo H. Verdejo Pinochet, Samsung OSG</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">GStreamer State of the Union</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#">No title yet (talk about Multimedia APIs)</a><br /><small><i>Wim Taymans, RedHat</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#video-encoding-benchmarks">An overview of Video Encoding Benchmarks with GStreamer</a><br /><small><i>Florent Thiéry, UbiCast</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#profiling">Advanced Time Profiling Techniques of GStreamer Pipelines</a><br /><small><i>Kyrylo Polezhaiev</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#comm-quality-assessment-testbed">Multimedia Communication Quality Assessment Testbed</a><br /><small><i>Jean-Charles Grégoire, Énergie Matériaux Télécommunications (EMT) Research Centre</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#processing">Processing: The new 1.0-based video library for desktop and RPi, with GoPro support (and much more!)</a><br /><small><i>Andres Colubri and Gal Nissim, Processing Foundation</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#pexip-media-architecture">The Pexip Media Architecture</a><br /><small><i>Havard Graff, Pexip</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#holographic">Holographic Telecommunication in the Age of Free Software</a><br /><small><i>Lubosz Sarnecki, Collabora</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#horrible-networks">The Wonderful World of Horrible Networks</a><br /><small><i>Havard Graff, Pexip</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#corroded-pipelines-rust">Corroded Pipelines, or How to Write GStreamer Elements in Rust for Safety and Fun</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#industrial-application-pipelines">Industrial Application Pipelines with GStreamer</a><br /><small><i>Marianna Smidth Buschle, QTechnology</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#gstreamer-vaapi">GStreamer-VAAPI: Where we are Today</a><br /><small><i>Víctor M. Jáquez L., Igalia</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#3d-scanning">3D Scanning with GStreamer</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#time-and-sync-take-two">Time and Synchronisation: Take Two!</a><br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#intelligent-surveillance">Intelligent Surveillance</a><br /><small><i>Mandar Joshi</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#vcabridge">Using GStreamer for Video Analytics: VCABridge</a><br /><small><i>Julián Bouzas González, VCA Technology</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#tracing-memleaks">Tracking Memory Leaks</a><br /><small><i>Guillaume Desmottes, Collabora</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#dynamic-pipelines">How to Work with Dynamic Pipelines using GStreamer</a><br /><small><i>Jose Antonio Santos Cadenas, Kurento</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#element-states">GStreamer Element States: How Do They Work in Detail?</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#race-conditions">Debugging Race Condition Problems in GStreamer</a><br /><small><i>Miguel París Díaz, Kurento</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#features-dectection-fpga">Features Detection Plugins Speed-up by ompSs@FPGA</a><br /><small><i>Nicola Bettin, Vimar S.p.A</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#gst-dev-show">The GStreamer Developers Show (Panel)</a><br /><small><i>Hosted by Luis de Bethencourt, Samsung OSG</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#playing-everything">Playing Arbitrary Video Files with GStreamer</a><br /><small><i>Michael Olbrich, Pengutronix</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#dash-trickmodes">Efficient Trick Modes in MPEG-DASH Adaptive Streaming with GStreamer</a><br /><small><i>Wojciech Przybyl, Visla Systems</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#new-stream-api">The new GstStream API: Design and Usage</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#gst-mm">gstreamermm: C++ way of doing GStreamer-based Applications</a><br /><small><i>Marcin Kolny</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#hls-alt-renditions">HLS Alternative Renditions</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#video-editing">The State of GStreamer for Video Editing</a><br /><small><i>Thibault Saunier, Samsung OSG</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#windows-dev-meson">GStreamer Development on Windows and Faster Builds on All Platforms with the Meson Build System</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#smpte-timecodes">SMPTE timecodes in GStreamer</a><br /><small><i>Vivia Nikolaidou, ToolsOnAir</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#vulkan-opengl-zerocopy">Vulkan, OpenGL and/or Zerocopy</a><br /><small><i>Matthew Waters, Centricular</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#gst-in-broadcast-world">GStreamer in the Broadcast World: A General Overview</a><br /><small><i>Georg Lippitsch, ToolsOnAir</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#digital-television-support">Digital Television Support - Where are we at?</a><br /><small><i>Reynaldo H. Verdejo Pinochet, Samsung OSG</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#essence-of-gstreamer">Keep calm and refactor: About the essence of GStreamer</a><br /><small><i>Wim Taymans, RedHat</i></small></li>
   </ul>
   </p>
   <p>
