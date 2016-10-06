@@ -843,11 +843,11 @@ is currently a consultant for Centricular.
 Profiling GStreamer pipelines. Kyrylo Polezhaiev
 </b></p>
 <p>
-This talk will expand on last year's talk which presented few simple ideas
-(and tools) for time profiling and data flow inspection between particular
-elements in GStreamer pipelines and underlined a few aspects that makes
-common profiling tools usage less effective for GStreamer-based applications,
-as well as proposed a few tweaks for GStreamer to make tracing easier.
+Measuring performance and finding bottlenecks is key in program optimization.
+In this speech I will talk about what happens, at different levels of
+abstraction, with GStreamer-based app’s objects when it’s running, ways to
+record this events for future analysis and algorithms to re-create model of
+pipeline with performance information.
 </p>
 <p><i>
 Kyrylo Polezhaiev is a software engineer and former video game developer, and
