@@ -38,6 +38,8 @@ improvements.
 
 #### Audio conversion and resampling API
 
+#### Support for SMPTE timecodes
+
 #### GStreamer OpenMAX IL plugin
 
 - FILL ME
@@ -46,9 +48,11 @@ improvements.
 
 #### decodebin3, urisrcbin, parsebin and playbin3
 
-#### LV2 source element
+#### LV2 source element and switch from slv2 to lilv2
 
 #### WebRTC DSP Plugin
+
+#### FDK AAC encoder and decoder
 
 - FILL ME
 
@@ -57,6 +61,7 @@ improvements.
 #### Major RTP and RTSP improvements
 
 RTX, jitterbuffer, RTSP server fixes, rtspsrc seeking stability
+App and protocol specific RTCP
 
 #### Improvements to splitmuxsrc
 
@@ -65,6 +70,8 @@ RTX, jitterbuffer, RTSP server fixes, rtspsrc seeking stability
 #### OpenGL/GLES improvements
 
 #### Vulkan
+
+#### QML video sink ported to more platforms
 
 #### KMS video sink
 
@@ -88,13 +95,25 @@ trick modes, alternative renditions, ...
 
 - FILL ME
 
-### Some other new major change
+### Property change notification messages
+
+- FILL ME
+
+### GES and NLE changes
 
 - FILL ME
 
 ## Miscellaneous
 
-- FILL ME
+- Additional machine-readable details in error messages, e.g. HTTP status
+  codes
+- New redirect message
+- gst\_element\_call\_async() API
+- GstBin suppressed flags API
+- GstAdapter PTS/DTS/offset at discont and discont tracking
+- New video orientation interface
+- appsrc duration in time and try pull API
+- gst-libav uses ffmpeg 3.1
 
 ## Build and Dependencies
 
