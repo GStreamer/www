@@ -62,6 +62,8 @@ improvements.
 
 RTX, jitterbuffer, RTSP server fixes, rtspsrc seeking stability
 App and protocol specific RTCP
+RFC7273 support
+H265 payloader sync with RFC
 
 #### Improvements to splitmuxsrc
 
@@ -84,6 +86,10 @@ App and protocol specific RTCP
 trick modes, alternative renditions, ...
 
 #### a2dpsink finally works
+
+#### GStreamer VAAPI
+
+#### V4L2 changes
 
 - FILL ME
 
@@ -114,6 +120,14 @@ trick modes, alternative renditions, ...
 - New video orientation interface
 - appsrc duration in time and try pull API
 - gst-libav uses ffmpeg 3.1
+- x264enc has support for chroma-site and colorimetry settings
+- JPEG2000 parser and caps cleanup
+- Reverse playback support for videorate, deinterlace
+- GstPoll / GstBus race conditions
+- Various improvements for reverse playback and KEY\_UNITS trick mode
+- New cleaned up rawaudioparse, rawvideoparse elements
+- Decklink 10 bit and timecode support, various fixes
+- Multiview and other new API for GstPlayer
 
 ## Build and Dependencies
 
