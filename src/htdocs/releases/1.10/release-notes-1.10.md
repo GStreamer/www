@@ -13,7 +13,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.10/][latest] for the latest
 version of this document.
 
-*Last updated: Wednesday 9 June 2016, 10:00 UTC [(log)][gitlog]*
+*Last updated: Wednesday 9 Oct 2016, 18:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.10/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.10/release-notes-1.10.md
@@ -34,13 +34,49 @@ improvements.
 
 ### Noteworthy new API, features and other changes
 
+#### GstStream API and stream selection
+
+#### Audio conversion and resampling API
+
+#### GStreamer OpenMAX IL plugin
+
 - FILL ME
 
 ### New Elements
 
+#### decodebin3, urisrcbin, parsebin and playbin3
+
+#### LV2 source element
+
+#### WebRTC DSP Plugin
+
 - FILL ME
 
 ### Noteworthy element features and additions
+
+#### Major RTP and RTSP improvements
+
+RTX, jitterbuffer, RTSP server fixes, rtspsrc seeking stability
+
+#### Improvements to splitmuxsrc
+
+#### opencv plugins ported to OpenCV 3.1
+
+#### OpenGL/GLES improvements
+
+#### Vulkan
+
+#### KMS video sink
+
+#### Wayland video sink
+
+#### DVB improvements
+
+#### DASH, HLS and adaptivedemux
+
+trick modes, alternative renditions, ...
+
+#### a2dpsink finally works
 
 - FILL ME
 
@@ -48,7 +84,7 @@ improvements.
 
 - FILL ME
 
-### Some new major change
+### New leaks tracer
 
 - FILL ME
 
@@ -62,15 +98,33 @@ improvements.
 
 ## Build and Dependencies
 
+### Experimental meson-based build system
+
 - FILL ME
 
 ## Platform-specific improvements
 
 ### Android
 
+#### New universal binaries for all supported ABIs
+
+We now provide a "universal" tarball to allow building apps against all the
+architectures currently supported (x86, x86-64, armeabi, armeabi-v7a,
+armeabi-v8a). This is needed for building with recent versions of the Android
+NDK which defaults to building against all supported ABIs. Use [the Android
+player example][android-player-example-build] as a reference of the required
+changes.
+
+[android-player-example-build]: https://cgit.freedesktop.org/gstreamer/gst-examples/commit/playback/player/android?id=a5cdde9119f038a1eb365aca20faa9741a38e788
+
+#### Miscellaneous
+
 - FILL ME
 
 ### OS/X and iOS
+
+- We now support querying available devices on OS/X via the GstDeviceProvider
+  API.
 
 - FILL ME
 
@@ -131,6 +185,7 @@ in September.
 
 - - -
 
-*These release notes have been prepared by Sebastian Dröge, ....*
+*These release notes have been prepared by Sebastian Dröge, Arun Raghavan,
+Tim-Philipp Müller, ....*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
