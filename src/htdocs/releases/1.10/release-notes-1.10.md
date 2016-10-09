@@ -38,6 +38,20 @@ improvements.
 
 #### Audio conversion and resampling API
 
+The audio conversion library received a completely new and rewritten audio
+resampler. Integrating the resampler with the other audio conversion library
+allows us to implement generic conversion much more efficiently.
+
+The new audio resampler library is a combination of some of the best features
+of other samplers such as ffmpeg, speex, SRC. It natively supports S16, S32,
+F32 and F64 formats and uses optimized x86 and neon assembly for most of its
+processing. It has support for dynamically changing samplerates by incrementally
+updating the filter tables using linear or cubic interpollation. According to
+some benchmarks it's one of the fastest and most accurate resamplers around.
+
+The audio resampler plugin has been ported to the new audioconverter library
+to make use of this new resampler.
+
 #### Support for SMPTE timecodes
 
 #### GStreamer OpenMAX IL plugin
