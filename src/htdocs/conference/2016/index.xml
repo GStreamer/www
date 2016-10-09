@@ -202,6 +202,8 @@ li {
     <li>GObject bindings for libva <small><br /><i>Scott D Phillips, Intel</i></small></li>
     <li>How I ported Kurento Media Server to Windows <small><br /><i>Kyrylo Polezhaiev</i></small></li>
     <li>Code review in Chromium project + quick update on the Media Process based GStreamer backend <small><br /><i>Julien Isorce, Samsung</i></small></li>
+    <li>GstSeamCrop: A seam crop real-time video retargeting <small><br /><i>Francisco Javier Velazquez</i></small></li>
+    <li>PyGObject &amp; GIL - the death by thousand cuts <small><br /><i>Mikhail Fludkov, Pexip</i></small></li>
     <li>...</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
