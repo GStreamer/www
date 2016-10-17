@@ -112,7 +112,12 @@ trick modes, alternative renditions, ...
 
 #### V4L2 changes
 
-- FILL ME
+- More pixels formats are now supported
+- Decoder is no using G_SELECTION instead of deprecated G_CROP
+- Decoder now uses STOP command to handle EOS
+- Transform element can now scale the pixel aspect ratio
+- Colorimetry support have been improved even more
+- We now support OUTPUT_OVERLAY type of video node in v4l2sink
 
 ### Plugin moves
 
