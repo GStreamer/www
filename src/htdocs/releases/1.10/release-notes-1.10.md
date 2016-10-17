@@ -66,6 +66,13 @@ to make use of this new resampler.
 
 #### WebRTC DSP Plugin
 
+A set of new elements base on WebRTC DSP software can now be used to improve
+your audio voice communication. It currently supports echo cancellation,
+gain control, noise suppression and more. For more details you may read
+[Nicolas' blog post][webrtc-blog-post].
+
+[webrtc-blog-post]: https://ndufresne.ca/2016/06/gstreamer-echo-canceller/
+
 #### FDK AAC encoder and decoder
 
 - FILL ME
