@@ -13,7 +13,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.10/][latest] for the latest
 version of this document.
 
-*Last updated: Wednesday 9 Oct 2016, 18:00 UTC [(log)][gitlog]*
+*Last updated: Saturday 22 Oct 2016, 16:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.10/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.10/release-notes-1.10.md
@@ -39,18 +39,24 @@ improvements.
 #### Audio conversion and resampling API
 
 The audio conversion library received a completely new and rewritten audio
-resampler. Integrating the resampler with the other audio conversion library
-allows us to implement generic conversion much more efficiently.
+resampler complementing the audio conversion routines moved into the audio
+library in the [previous release][release-notes-1.8]. Integrating the resampler
+with the other audio conversion library allows us to implement generic
+conversion much more efficiently, as format conversion and resampling can now
+be done in the same processing loop instead of having to do it in separate
+steps (our element implementations do not make use of this yet though).
 
 The new audio resampler library is a combination of some of the best features
 of other samplers such as ffmpeg, speex, SRC. It natively supports S16, S32,
 F32 and F64 formats and uses optimized x86 and neon assembly for most of its
 processing. It has support for dynamically changing samplerates by incrementally
-updating the filter tables using linear or cubic interpollation. According to
+updating the filter tables using linear or cubic interpolation. According to
 some benchmarks it's one of the fastest and most accurate resamplers around.
 
 The audio resampler plugin has been ported to the new audioconverter library
 to make use of this new resampler.
+
+[release-notes-1.8]: https://gstreamer.freedesktop.org/releases/1.8/
 
 #### Support for SMPTE timecodes
 
@@ -64,13 +70,16 @@ to make use of this new resampler.
 
 #### LV2 source element and switch from slv2 to lilv2
 
-#### WebRTC DSP Plugin
+#### WebRTC DSP Plugin for echo-cancellation, gain control and noise suppression
 
-A set of new elements base on WebRTC DSP software can now be used to improve
-your audio voice communication. It currently supports echo cancellation,
+A set of new elements ([webrtcdsp][webrtcdsp], [webrtcechoprobe][webrtcechoprobe])
+based on the WebRTC DSP software stack can now be used to improve your audio
+voice communication pipelines. It currently supports echo cancellation,
 gain control, noise suppression and more. For more details you may read
 [Nicolas' blog post][webrtc-blog-post].
 
+[webrtcdsp]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/gst-plugins-bad-plugins-webrtcdsp.html
+[webrtcechoprobe]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/gst-plugins-bad-plugins-webrtcechoprobe.html
 [webrtc-blog-post]: https://ndufresne.ca/2016/06/gstreamer-echo-canceller/
 
 #### FDK AAC encoder and decoder
@@ -113,10 +122,10 @@ trick modes, alternative renditions, ...
 #### V4L2 changes
 
 - More pixels formats are now supported
-- Decoder is no using G_SELECTION instead of deprecated G_CROP
+- Decoder is now using G_SELECTION instead of deprecated G_CROP
 - Decoder now uses STOP command to handle EOS
 - Transform element can now scale the pixel aspect ratio
-- Colorimetry support have been improved even more
+- Colorimetry support has been improved even more
 - We now support OUTPUT_OVERLAY type of video node in v4l2sink
 
 ### Plugin moves
@@ -200,7 +209,7 @@ suggestions or helped testing.
 
 ## Bugs fixed in 1.10
 
-More than [~9000 bugs][bugs-fixed-in-1.10] have been fixed during
+More than [~600 bugs][bugs-fixed-in-1.10] have been fixed during
 the development of 1.10.
 
 This list does not include issues that have been cherry-picked into the
@@ -217,8 +226,8 @@ report in bugzilla, so the actual number of fixes is much higher.
 After the 1.10.0 release there will be several 1.10.x bug-fix releases which
 will contain bug fixes which have been deemed suitable for a stable branch,
 but no new features or intrusive changes will be added to a bug-fix release
-usually. The 1.10.x bug-fix releases will be made from the git 1.10 branch, which
-is a stable branch.
+usually. The 1.10.x bug-fix releases will be made from the git 1.10 branch,
+which is a stable branch.
 
 ### 1.10.0
 
@@ -235,9 +244,9 @@ development version leading up to the stable 1.12 release. The development
 of 1.11/1.12 will happen in the git master branch.
 
 The plan for the 1.12 development cycle is yet to be confirmed, but it is
-expected that feature freeze will be around TBD,
+expected that feature freeze will be around early/mid-January,
 followed by several 1.11 pre-releases and the new 1.12 stable release
-in September.
+in March.
 
 1.12 will be backwards-compatible to the stable 1.10, 1.8, 1.6, 1.4, 1.2 and
 1.0 release series.
