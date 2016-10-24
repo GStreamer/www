@@ -34,7 +34,161 @@ improvements.
 
 ### Noteworthy new API, features and other changes
 
-#### GstStream API and stream selection
+#### Core API additions
+
+##### Receive property change notifications via bus messages
+
+New API was added to receive element property change notifications via
+bus messages. So far applications had to connect a callback to an element's
+`notify::propert-name` signal via the GObject API, which was inconvenient for
+at least two reasons: one had to implement a signal callback function, and that
+callback function would usually be called from one of the streaming threads, so
+one had to marshal (send) any information gathered or pending requests to the
+main application thread which was tedious and error-prone.
+
+Enter [`gst_element_add_property_notify_watch()`][notify-watch] and
+[`gst_element_add_property_deep_notify_watch()`][deep-notify-watch] which will
+watch for changes of a property on the specified element, either only for the
+specified element or recursively for a whole bin or pipeline. Whenever such a
+property change happens, a `GST_MESSAGE_PROPERTY_NOTIFY` message will be posted
+on the pipeline bus with details of the element, the property and the new
+property value, all of which can be retrieved later from the message in the
+application via [`gst_message_parse_property_notify()`][parse-notify]. Unlike
+the GstBus watch functions, this API does not rely on a running GLib main loop.
+
+This can be used to be notified asynchronously of caps changes in the pipeline,
+or volume changes on an audio sink element, for example.
+
+[notify-watch]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-add-property-notify-watch
+[deep-notify-watch]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-add-property-deep-notify-watch
+[parse-notify]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstMessage.html#gst-message-parse-property-notify
+
+##### GstBin "deep" element-added and element-removed signals
+
+GstBin has gained `"deep-element-added"` and `"deep-element-removed"` signals
+which makes it easier for applications and higher-level plugins to track when
+elements are added or removed from a complex pipeline with multiple sub-bins.
+
+playbin makes use of this to implement the new `"element-setup"` signal which
+can be used to configure elements as they are added to playbin, just like the
+existing `"source-setup"` signal which can be used to configure the source
+element created.
+
+##### Error messages can contain additional structured details
+
+- FILL ME: e.g. HTTP status codes
+
+##### Redirect messages have official API now
+
+Sometimes elements need to redirect the current stream URL and tell the
+application to proceed with a different URL, possibly using a different
+protocol (thus changing the pipeline configuration). Until now this was
+implemented informally using `ELEMENT` messages on the bus.
+
+Now this has been formalised in form of a new `GST_MESSAGE_REDIRECT` message.
+A new redirect message can be created using [`gst_message_new_redirect()`][new-redirect].
+If needed, multiple redirect locations can be specified by calling
+[`gst_message_add_redirect_entry()`][add-redirect] to add further redirect
+entires, all with metadata so that the application can decide which is
+most suitable (e.g. depending on the bitrate tags).
+
+[new-redirect]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstMessage.html#gst-message-new-redirect
+[add-redirect]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstMessage.html#gst-message-add-redirect-entry
+
+#### GstStream API for stream announcement and stream selection
+
+New stream listing and stream selection API: new API has been added to
+provide high-level abstractions for streams ([`GstStream`][stream-api])
+and collections of streams ([`GstStreamCollections`][stream-collection-api]).
+
+##### Stream listing
+
+A [`GstStream`][stream-api] contains all the information pertinent to a stream,
+such as stream id, caps, tags, flags and stream type(s); it can represent a
+single elementary streams (e.g. audio, video, subtitles, etc.) or a container
+stream. It will depend on the context which it will be. In a decodebin3/playbin3
+context it will typically be elementary streams that can be selected and
+unselected.
+
+A [`GstStreamCollection`][stream-collection-api] represents a group of streams
+and is used to announce or publish all available streams. A GstStreamCollection
+is immutable - once created it won't change. If the available streams change,
+e.g. because a new stream appeared or some streams disappeared, a new stream
+collection will be published. The new stream collection may contain streams
+from the previous collection, if those streams persist, or completely new
+streams. Stream collections do not yet list all theoretically available streams,
+e.g. other available DVD angles or alternative resolutions/bitrate of the same
+stream in case of adaptive streaming.
+
+New events and messages have been added to notify or update other elements and
+the application about which streams are currently available and/or selected.
+This way we can easily and seamlessly let the application know whenever the
+available streams change, as happens frequently with digital television streams
+for example. The new system is also more flexible. For example, it is now also
+possible for the application to select multiple streams of the same type
+(e.g. in a transcoding/transmuxing scenario).
+
+A [`STREAM_COLLECTION` message][stream-collection-msg] is posted on the bus
+to inform the parent bin (e.g. playbin3, decodebin3) and/or the application
+about what streams are available, so you no longer have to hunt for this
+information (number of streams of each type, caps, tags etc.) in different
+places. Bins and/or the application can intercept this message synchronously
+to select and deselect streams before any data is produced (for the case where
+elements such as the demuxers support the new stream  API, not necessarily in
+the parsebin compatibility fallback case). Similarly, there is also a
+[`STREAM_COLLECTION` event][stream-collection-event] to inform downstream
+elements of the available streams. This event can be used by elements to
+aggregate streams from multiple inputs into one single collection.
+
+The `STREAM_START` event was extended so that it can also contain a GstStream
+object with all information about the current stream, see
+[`gst_event_set_stream()`][event-set-stream] and
+[`gst_event_parse_stream()`][event-parse-stream].
+[`gst_pad_get_stream()`][pad-get-stream] is a new utility function that can be
+used to look up the GstStream from the `STREAM_START` sticky event on a pad.
+
+[stream-api]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstStream.html
+[stream-collection-api]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstStreamCollection.html
+[stream-collection-msg]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstMessage.html#gst-message-new-stream-collection
+[stream-collection-event]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstEvent.html#gst-event-new-stream-collection
+[event-set-stream]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstEvent.html#gst-event-set-stream
+[event-parse-stream]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstEvent.html#gst-event-parse-stream
+[pad-get-stream]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstPad.html#gst-pad-get-stream
+
+##### Stream selection
+
+Once the available streams have been published, streams can be selected via
+their stream ID using the new `SELECT_STREAMS` event, which can be created
+with [`gst_event_new_select_streams()`][event-select-streams]. The new API
+supports selecting multiple streams per stream type. In future we may also
+implement explicit deselection of streams that will never be used so that
+elements can skip those and never expose them or output data for them in the
+first place.
+
+The application is then notified of the currently selected streams via the
+new `STREAMS_SELECTED` message on the pipeline bus, containing both the current
+stream collection as well as the selected streams. This might be posted in
+response to the application sending a `SELECT_STREAMS` event or when decodebin3
+or playbin3 decide on the streams selected initially without application input.
+
+[event-select-streams]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstEvent.html#gst-event-new-select-streams
+
+##### Further reading
+
+See further below for some notes on the new elements supporting this new
+stream API, namely `decodebin3`, `playbin3` and `parsebin`.
+
+More information about the new API and the new elements can also be found here:
+
+- GStreamer [stream selection design docs][streams-design]
+- Edward Hervey's talk ["The new streams API: Design and usage"][streams-talk] ([slides][streams-slides])
+- Edward Hervey's talk ["Decodebin3: Dealing with modern playback use cases"][db3-talk] ([slides][db3-slides])
+
+[streams-design]: https://cgit.freedesktop.org/gstreamer/gstreamer/tree/docs/design/part-stream-selection.txt
+[streams-talk]: https://gstconf.ubicast.tv/videos/the-new-gststream-api-design-and-usage/
+[streams-slides]: https://gstreamer.freedesktop.org/data/events/gstreamer-conference/2016/Edward%20Hervey%20-%20The%20New%20Streams%20API%20Design%20and%20Usage.pdf
+[db3-talk]: https://gstconf.ubicast.tv/videos/decodebin3-or-dealing-with-modern-playback-use-cases/
+[db3-slides]: https://gstreamer.freedesktop.org/data/events/gstreamer-conference/2015/Edward%20Hervey%20-%20decodebin3.pdf
 
 #### Audio conversion and resampling API
 
@@ -122,21 +276,17 @@ trick modes, alternative renditions, ...
 #### V4L2 changes
 
 - More pixels formats are now supported
-- Decoder is now using G_SELECTION instead of deprecated G_CROP
-- Decoder now uses STOP command to handle EOS
+- Decoder is now using `G_SELECTION` instead of deprecated `G_CROP`
+- Decoder now uses `STOP` command to handle EOS
 - Transform element can now scale the pixel aspect ratio
 - Colorimetry support has been improved even more
-- We now support OUTPUT_OVERLAY type of video node in v4l2sink
+- We now support `OUTPUT_OVERLAY` type of video node in v4l2sink
 
 ### Plugin moves
 
 - FILL ME
 
 ### New leaks tracer
-
-- FILL ME
-
-### Property change notification messages
 
 - FILL ME
 
@@ -149,7 +299,7 @@ trick modes, alternative renditions, ...
 - Additional machine-readable details in error messages, e.g. HTTP status
   codes
 - New redirect message
-- gst\_element\_call\_async() API
+- `gst_element_call_async()` API
 - GstBin suppressed flags API
 - GstAdapter PTS/DTS/offset at discont and discont tracking
 - New video orientation interface
@@ -159,7 +309,7 @@ trick modes, alternative renditions, ...
 - JPEG2000 parser and caps cleanup
 - Reverse playback support for videorate, deinterlace
 - GstPoll / GstBus race conditions
-- Various improvements for reverse playback and KEY\_UNITS trick mode
+- Various improvements for reverse playback and `KEY_UNITS` trick mode
 - New cleaned up rawaudioparse, rawvideoparse elements
 - Decklink 10 bit and timecode support, various fixes
 - Multiview and other new API for GstPlayer
