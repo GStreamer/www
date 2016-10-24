@@ -133,6 +133,40 @@ The default GStreamer debug log handler can now be removed already before
 calling `gst_init()`, so that it will never get installed and won't be active
 during initialisation.
 
+A new [`STREAM_GROUP_DONE` event][stream-group-done-event] was added. In some
+ways it works similar to the `EOS` event in that it can be used to unblock
+downstream elements which may be waiting for further data such as for example
+`input-selector`. Unlike `EOS` further data flow may happen after the
+`STREAM_GROUP_DONE` event though (and without the need to flush the pipeline).
+This is used to unblock input-selector when switching between streams in
+adaptive streaming scenarios (e.g. HLS).
+
+[stream-group-done-event]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstEvent.html#gst-event-new-stream-group-done
+
+The `gst-launch-1.0` command line tool will now print caps unescaped in verbose
+mode (enabled by the -v switch).
+
+[`gst_element_call_async()`][call-async] has been added as convenience API for
+plugin developers. It is useful for one-shot operations that need to be done
+from a thread other than the current streaming thread.
+
+[call-async]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-call-async
+
+Various race conditions have been fixed around the `GstPoll` API used by e.g.
+`GstBus` and `GstBufferPool`. Some of these would manifest themselves primarily
+on Windows.
+
+`GstAdapter` can now keep track of discontinuities signalled via the `DISCONT`
+buffer flag, and has gained [new API][new-adapter-api] to track PTS, DTS and
+offset at the last discont. This is useful for plugins implementing advanced
+trick mode scenarios.
+
+[new-adapter-api]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/GstAdapter.html#gst-adapter-pts-at-discont
+
+`GstTestClock` gained a new [`"clock-type"` property][clock-type-prop].
+
+[clock-type-prop]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/GstTestClock.html#GstTestClock--clock-type
+
 #### GstStream API for stream announcement and stream selection
 
 New stream listing and stream selection API: new API has been added to
@@ -320,13 +354,87 @@ trick modes, alternative renditions, ...
 - Colorimetry support has been improved even more
 - We now support `OUTPUT_OVERLAY` type of video node in v4l2sink
 
+#### Miscellaneous
+
+`multiqueue`'s input pads gained a new `"group-id"` property which can be
+used to group input streams. Typically one will assign different id numbers
+to audio, video and subtitle streams, for example. This way `multiqueue` can
+make sure streams of the same type advance in lockstep if some of the streams
+are unlinked and the `"sync-by-running-time"` property is set. This is used
+in decodebin3/playbin3 to implement almost-instantaneous stream switching.
+The grouping is required because different downstream paths (audio, video, etc.)
+may have different buffering/latency etc. so might be consuming data from
+multiqueue with a slightly different phase, and if we track different stream
+groups separately we minimise stream switching delays and buffering inside the
+`multiqueue`.
+
 ### Plugin moves
 
-- FILL ME
+No plugins were moved this cycle. We'll make up for it next cycle, promised!
 
-### New leaks tracer
+### Rewritten memory leak tracer
 
-- FILL ME
+GStreamer has had basic functionality to trace allocation and freeing of
+both mini objects (buffers, events, caps, etc.) and objects in form of the
+internal `GstAllocTrace` tracing system, whose API was never exposed in the
+1.x API series. This would at exit dump a list of objects and mini objects
+which had still not been freed at that point if so requested via an environment
+variable. This subsystem has now been removed in favour of a new implementation
+based on the recently-added new tracing framework.
+
+New tracing hooks have been added to trace the creation and destruction of
+GstObjects and mini objects, and a new tracer plugin has been written using
+those new hooks to track which objects are still live and which are not. If
+GStreamer has been compiled against the libunwind library, the new leaks tracer
+will remember where objects were allocated from as well. By default the leaks
+tracer will simply output a warning if leaks have been detected on `gst_deinit()`.
+
+If the `GST_LEAKS_TRACER_SIG` environment variable is set, the leaks tracer
+will also handle the following UNIX signals:
+
+ - SIGUSR1: log alive objects
+ - SIGUSR2: create a checkpoint and print a list of objects created and
+   destroyed since the previous checkpoint.
+
+This will not work on Windows though.
+
+If the `GST_LEAKS_TRACER_STACK_TRACE` environment variable is set, the leaks
+tracer will also log the creation stack trace of leaked objects. This may
+significantly increase memory consumption however.
+
+New `MAY_BE_LEAKED` flags have been added to GstObject and GstMiniObject, so
+that objects and mini objects that are likely to stay around forever can be
+flagged and blacklisted from the leak output.
+
+To give the new leak tracer a spin, simply call any GStreamer application such
+as `gst-launch-1.0` or `gst-play-1.0` like this:
+
+    GST_TRACERS=leaks gst-launch-1.0 videotestsrc num-buffers=10 ! fakesink
+
+If there are any leaks, a warning will be raised at the end.
+
+It is also possible to trace only certain types of objects or mini objects:
+
+    GST_TRACERS="leaks(GstEvent,GstMessage)" gst-launch-1.0 videotestsrc num-buffers=10 ! fakesink
+
+This dedicated leaks tracer is much much faster than valgrind since all code is
+executed natively instead of being instrumented. This makes it very suitable
+for use on slow machines or embedded devices. It is however limited to certain
+types of leaks and won't catch memory leaks when the allocation has been made
+via plain old `malloc()` or `g_malloc` or other means. It will also not trace
+non-GstObject GObjects.
+
+The goal is to enable leak tracing on GStreamer's Continuous-Integration and
+testing system, both for the regular unit tests (make check) and media tests
+(gst-validate), so that accidental leaks in common code paths can be detected
+and fixed quickly.
+
+For more information about the new tracer, check out Guillaume Desmottes's
+["Tracking Memory Leaks"][leaks-talk] talk or his [blog post][leaks-blog] about
+the topic.
+
+[leaks-talk]: https://gstconf.ubicast.tv/videos/tracking-memory-leaks/
+[leaks-blog]: https://blog.desmottes.be/?post/2016/06/20/GStreamer-leaks-tracer
 
 ### GES and NLE changes
 
@@ -334,23 +442,17 @@ trick modes, alternative renditions, ...
 
 ## Miscellaneous
 
-- Additional machine-readable details in error messages, e.g. HTTP status
-  codes
-- New redirect message
-- `gst_element_call_async()` API
-- GstBin suppressed flags API
-- GstAdapter PTS/DTS/offset at discont and discont tracking
 - New video orientation interface
 - appsrc duration in time and try pull API
 - gst-libav uses ffmpeg 3.1
 - x264enc has support for chroma-site and colorimetry settings
 - JPEG2000 parser and caps cleanup
 - Reverse playback support for videorate, deinterlace
-- GstPoll / GstBus race conditions
 - Various improvements for reverse playback and `KEY_UNITS` trick mode
 - New cleaned up rawaudioparse, rawvideoparse elements
 - Decklink 10 bit and timecode support, various fixes
 - Multiview and other new API for GstPlayer
+- GstBin suppressed flags API
 
 ## Build and Dependencies
 
@@ -386,7 +488,7 @@ changes.
 
 ### Windows
 
-- FILL ME
+- FILL ME: gstconfig.h: Always use dllexport/import on Windows with MSVC
 
 ## Contributors
 
