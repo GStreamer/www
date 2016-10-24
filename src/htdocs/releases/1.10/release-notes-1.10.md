@@ -95,6 +95,44 @@ most suitable (e.g. depending on the bitrate tags).
 [new-redirect]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstMessage.html#gst-message-new-redirect
 [add-redirect]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstMessage.html#gst-message-add-redirect-entry
 
+##### New pad linking convenience functions that automatically create ghost pads
+
+New pad linking convenience functions were added:
+[`gst_pad_link_maybe_ghosting()`][pad-maybe-ghost] and
+[`gst_pad_link_maybe_ghosting_full()`][pad-maybe-ghost-full] which were
+previously internal to GStreamer have now been exposed for general use.
+
+The existing pad link functions will refuse to link pads or elements at
+different levels in the pipeline hierarchy, requiring the developer to
+create ghost pads where necessary. These new utility functions will
+automatically create ghostpads if needed when linking pads at different
+levels of the hierarchy (e.g. from an element inside a bin to one that's at
+the same level in the hierarchy as the bin, or in another bin).
+
+[pad-maybe-ghost]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstPad.html#gst-pad-link-maybe-ghosting
+[pad-maybe-ghost-full]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstPad.html#gst-pad-link-maybe-ghosting-full
+
+##### Miscellaneous
+
+Pad probes: IDLE and BLOCK probes now work slightly differently in pull mode
+so that push and pull mode have opposite scenarios for idle and blocking probes.
+In push mode it will block with some data type and IDLE won't have any data.
+In pull mode it will block _before_ getting a buffer and will be IDLE once some
+data has been obtained. ([commit][commit-pad-probes], [bug][bug-pad-probes])
+
+[commit-pad-probes]: https://cgit.freedesktop.org/gstreamer/gstreamer/commit/gst/gstpad.c?id=368ee8a336d0c868d81fdace54b24431a8b48cbf
+[bug-pad-probes]: https://bugzilla.gnome.org/show_bug.cgi?id=761211
+
+[`gst_parse_launch_full()`][parse-launch-full] can now be made to return a
+`GstBin` instead of a top-level pipeline by passing the new
+`GST_PARSE_FLAG_PLACE_IN_BIN` flag.
+
+[parse-launch-full]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstParse.html#gst-parse-launch-full
+
+The default GStreamer debug log handler can now be removed already before
+calling `gst_init()`, so that it will never get installed and won't be active
+during initialisation.
+
 #### GstStream API for stream announcement and stream selection
 
 New stream listing and stream selection API: new API has been added to
