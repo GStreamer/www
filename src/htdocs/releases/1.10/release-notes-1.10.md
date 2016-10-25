@@ -456,9 +456,62 @@ the topic.
 
 ## Build and Dependencies
 
-### Experimental meson-based build system
+### Experimental support for Meson as build system
 
-- FILL ME
+#### Overview
+
+We have have added support for building GStreamer using the
+[Meson build system][meson]. This is currently experimental, but should work
+fine at least on Linux using the gcc or clang toolchains and on Windows using
+the MingW or MSVC toolchains.
+
+Autotools remains the primary build system for the time being, but we hope to
+someday replace it and will steadily work towards that goal.
+
+More information about the background and implications of all this and where
+we're hoping to go in future with this can be found in [Tim's mail][meson-mail]
+to the gstreamer-devel mailing list.
+
+For more information on Meson check out [these videos][meson-videos] and also
+the [Meson talk][meson-gstconf] at the GStreamer Conference.
+
+Immediate benefits for Linux users are faster builds and rebuilds. At the time
+of writing the Meson build of GStreamer is used by default in GNOME's jhbuild
+system.
+
+Note: The meson build files are not disted in the source tarballs, you will
+need to get GStreamer from git if you want try it out.
+
+[meson]: http://mesonbuild.com/
+[meson-mail]: https://lists.freedesktop.org/archives/gstreamer-devel/2016-September/060231.html
+[meson-videos]: http://mesonbuild.com/videos.html
+[meson-gstconf]: https://gstconf.ubicast.tv/videos/gstreamer-development-on-windows-ans-faster-builds-everywhere-with-meson/
+
+#### Windows Visual Studio toolchain support
+
+Windows users might appreciate being able to build GStreamer using the MSVC
+toolchain, which is not possible using autotools. This means that it will be
+possible to debug GStreamer and applications in Visual Studio, for example.
+We require VS2015 or newer for this at the moment.
+
+There are two ways to build GStreamer using the MSVC toolchain:
+
+1. Using the MSVC command-line tools (`cl.exe` etc.) via Meson's "ninja" backend.
+2. Letting Meson's "vs2015" backend generate Visual Studio project files that
+   can be opened in Visual Studio and compiled from there.
+
+This is currently only for adventurous souls though. All the bits are in place,
+but support for all of this has not been merged into GStreamer's cerbero build
+tool yet at the time of writing. This will hopefully happen in the next cycle,
+but for now this means that those wishing to compile GStreamer with MSVC will
+have to get their hands dirty.
+
+There are also no binary SDK builds using the MSVC toolchain yet.
+
+For more information on GStreamer builds using Meson and the Windows toolchain
+check out Nirbheek Chauhan's blog post ["Building and developing GStreamer using Visual Studio"][msvc-blog].
+
+[msvc-blog]: http://blog.nirbheek.in/2016/07/building-and-developing-gstreamer-using.html
 
 ## Platform-specific improvements
 
