@@ -89,7 +89,7 @@ Now this has been formalised in form of a new `GST_MESSAGE_REDIRECT` message.
 A new redirect message can be created using [`gst_message_new_redirect()`][new-redirect].
 If needed, multiple redirect locations can be specified by calling
 [`gst_message_add_redirect_entry()`][add-redirect] to add further redirect
-entires, all with metadata so that the application can decide which is
+entries, all with metadata so that the application can decide which is
 most suitable (e.g. depending on the bitrate tags).
 
 [new-redirect]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstMessage.html#gst-message-new-redirect
@@ -275,7 +275,7 @@ steps (our element implementations do not make use of this yet though).
 The new audio resampler library is a combination of some of the best features
 of other samplers such as ffmpeg, speex, SRC. It natively supports S16, S32,
 F32 and F64 formats and uses optimized x86 and neon assembly for most of its
-processing. It has support for dynamically changing samplerates by incrementally
+processing. It has support for dynamically changing sample rates by incrementally
 updating the filter tables using linear or cubic interpolation. According to
 some benchmarks it's one of the fastest and most accurate resamplers around.
 
