@@ -327,9 +327,62 @@ H265 payloader sync with RFC
 
 #### OpenGL/GLES improvements
 
+##### iOS and macOS (OS/X)
+
+- We now create OpenGL|ES 3.x contexts on iOS by default with a fallback to
+  OpenGL|ES 2.x if that fails.
+- Various zerocopy decoding fixes and enhancements with the
+  encoding/decoding/capturing elements.
+- libdispatch is now used on all Apple platforms instead of GMainLoop removing
+  the expensive poll()/pthread_*() overhead.
+
+##### New API
+
+- GstGLFramebuffer - for wrapping OpenGL frame buffer objects.  It provides
+  facilities for attaching GstGLMemory objects to the necessary attachment
+  points, binding and unbinding and running a user-supplied function with the
+  framebuffer bound.
+- GstGLRenderbuffer (a GstGLBaseMemory subclass) - for wrapping OpenGL
+  render buffer objects that are typically used for depth/stencil buffers or
+  for color buffers where we don't care about the output.
+- GstGLMemoryEGL (a GstGLMemory subclass) - for combining EGLImage's with a GL
+  texture that replaces GstEGLImageMemory bringing the improvements made to the
+  other GstGLMemory implementations.  This fixes a performance regression in
+  zerocopy decoding on the Raspberry Pi when used with an updated gst-omx.
+
+##### Miscellaneous improvements
+
+- gltestsrc is now usable on devices/platforms with OpenGL 3.x and OpenGL|ES
+  and has completed or gained support for new patterns in line with the
+  existing ones in videotestsrc.
+- gldeinterlace is now available on devices/platforms with OpenGL|ES
+  implementations.
+- The dispmanx backend (used on the Raspberry Pi) now supports the
+  `gst_video_overlay_set_window_handle()` and
+  `gst_video_overlay_set_render_rectangle()` functions.
+- The gltransformation element now correctly transforms mouse coordinates (in
+  window space) to stream coordinates for both perspective and orthographic
+  projections.
+- The gltransformation element now detects if the
+  GstVideoAffineTransformationMeta is supported downstream and will efficiently
+  pass it's transformation downstream.  This is a performance improvement as it
+  results in less processing being required.
+- The wayland implementation now uses the multi-threaded safe event-loop API
+  allowing correct usage in applications calling wayland functions from
+  multiple threads.
+- glimagesink supports 90 degree rotations and horizontal/vertical flips
+  natively.
+
 #### Vulkan
 
-#### QML video sink ported to more platforms
+- The Vulkan elements now work under Wayland and have received numerous
+  bugfixes.
+
+#### QML elements
+
+- qmlglsink video sink now works on more platforms, notably, Windows, Wayland,
+  and Qt's eglfs (for embedded devices with an OpenGL implementation)
+- New element qmlglsrc to record a QML scene into a GStreamer pipeline.
 
 #### KMS video sink
 
@@ -532,11 +585,11 @@ changes.
 
 - FILL ME
 
-### OS/X and iOS
+### macOS (OS/X) and iOS
 
 - We now support querying available devices on OS/X via the GstDeviceProvider
   API.
-
+- We can now create OpenGL|ES 3.x contexts on iOS.
 - FILL ME
 
 ### Windows
