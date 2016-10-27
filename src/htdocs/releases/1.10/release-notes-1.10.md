@@ -386,6 +386,10 @@ H265 payloader sync with RFC
 
 #### KMS video sink
 
+- New element kmssink to render video using Direct Rendering Manager
+  (DRM) and Kernel Mode Setting (KMS) subsystems in the Linux
+  kernel. It is oriented to be used mostly in embedded systems.
+
 #### Wayland video sink
 
 #### DVB improvements
