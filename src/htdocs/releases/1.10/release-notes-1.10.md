@@ -402,6 +402,31 @@ trick modes, alternative renditions, ...
 
 #### GStreamer VAAPI
 
+- All the decoders have been split, one plugin feature per codec. So
+  far, the available ones, depending on the driver, are:
+  vaapimpeg2dec, vaapih264dec, vaapih265dec, vaapivc1dec, vaapivp8dec,
+  vaapivp9dec and vaapijpegdec (which already was split).
+- Improvements when mapping VA surfaces into memory, differenciating
+  from negotiation caps and allocations caps, since the allocation
+  memory for surfaces may be bigger than one that is going to be
+  mapped.
+- vaapih265enc got support to constant bitrate mode (CBR).
+- Since several VA drivers are unmaintained, we decide to keep a white list
+  with the va drivers we actually test, which is mostly the i915 and, in some
+  degree, gallium from mesa project. Exporting the environment variable
+  `GST_VAAPI_ALL_DRIVERS` disable the white list.
+- The plugin features are registered, in run-time, according to its support by
+  the loaded VA driver. So only the decoders and encoder supported by the
+  system are registered. Since the driver can change, some dependencies are
+  tracked to invalidate the GStreamer registry and reload the plugin.
+- dmabuf importation from upstream has been improved, gaining performance.
+- vaapipostproc now can negotiate through caps the buffer transformations.
+- Decoders now can do reverse playback. They only shows I frames, because the
+  surface pool is smaller than the required by the GOP to show all the
+  frames.
+- The upload of frames onto native GL textures has been optimized too, keeping
+  a cache of the internal structures for the offered textures by the sink.
+
 #### V4L2 changes
 
 - More pixels formats are now supported
