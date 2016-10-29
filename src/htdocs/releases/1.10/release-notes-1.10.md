@@ -561,6 +561,10 @@ Immediate benefits for Linux users are faster builds and rebuilds. At the time
 of writing the Meson build of GStreamer is used by default in GNOME's jhbuild
 system.
 
+The Meson build currently still lacks many of the fine-grained configuration
+options to enable/disable specific plugins. These will be added back in due
+course.
+
 Note: The meson build files are not disted in the source tarballs, you will
 need to get GStreamer from git if you want try it out.
 
@@ -595,6 +599,28 @@ check out Nirbheek Chauhan's blog post ["Building and developing GStreamer using
 
 [msvc-blog]: http://blog.nirbheek.in/2016/07/building-and-developing-gstreamer-using.html
 
+### Dependencies
+
+#### gstreamer
+
+libunwind was added as an optional dependency. It is used only for debugging
+and tracing purposes.
+
+#### gst-plugins-ugly
+
+mpeg2dec now requires at least libmpeg2 0.5.1 (from 2008).
+
+### Packaging notes
+
+Packagers please note that the `gst/gstconfig.h` public header file in the
+GStreamer core library moved back from being an architecture dependent include
+to being architecture independent, and thus it is no longer installed into
+`$(libdir)/gstreamer-1.0/include/gst` but into the normal include directory
+where it lives happily ever after with all the other public header files. The
+reason for this is that we now check whether the target supports unaligned
+memory access based on predefined compiler macros at compile time instead of
+checking it at configure time.
+
 ## Platform-specific improvements
 
 ### Android
@@ -624,6 +650,83 @@ changes.
 ### Windows
 
 - FILL ME: gstconfig.h: Always use dllexport/import on Windows with MSVC
+- Miscellaneous fixes to make libs and plugins compile with the MVSC toolchain
+- MSVC toolchain support (see Meson section above for more details)
+
+## New Modules for Documentation, Examples, Meson Build
+
+Three new git modules have been added recently:
+
+### gst-docs
+
+This is a new module where we will maintain documentation in markup format.
+
+It contains the former gstreamer.com SDK tutorials which have kindly been made
+available by Fluendo under a Creative Commons license. The tutorials have been
+reviewed and updated for GStreamer 1.x and will be available as part of the
+[official GStreamer documentation][doc] going forward. The old gstreamer.com
+site will then be shut down with redirects pointing to the updated tutorials.
+
+Some of the existing docbook XML-formatted documentation from the GStreamer
+core module such as the *Application Development Manual* and the *Plugin
+Writer's Guide* have been converted to markup as well and will be maintained in
+the gst-docs module in future. They will be removed from the GStreamer core
+module in the next cycle.
+
+This is just the beginning. Our goal is to provide a more cohesive documentation
+experience for our users going forward, and easier to create and maintain
+documentation for developers. There is a lot more work to do, get in touch if
+you want to help out.
+
+If you encounter any problems or spot any omissions or outdated content in the
+new documentation, please [file a bug in bugzilla][doc-bug] to let us know.
+
+We will probably release gst-docs as a separate tarball for distributions to
+package in the next cycle.
+
+[doc]: http://gstreamer.freedesktop.org/documentation/
+[doc-bug]: https://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer&component=documentation
+
+### gst-examples
+
+A new [module][examples-git] has been added for examples. It does not contain
+much yet, currently it only contains a small [http-launch][http-launch] utility
+that serves a pipeline over http as well as various [GstPlayer playback frontends][puis]
+for Android, iOS, Gtk+ and Qt.
+
+More examples will be added over time. The examples in this repository should
+be more useful and more substantial than most of the examples we ship as part
+of our other modules, and also written in a way that makes them good example
+code. If you have ideas for examples, let us know.
+
+No decision has been made yet if this module will be released and/or packaged.
+It probably makes sense to do so though.
+
+[examples-git]: https://cgit.freedesktop.org/gstreamer/gst-examples/tree/
+[http-launch]: https://cgit.freedesktop.org/gstreamer/gst-examples/tree/network/http-launch/
+[puis]: https://cgit.freedesktop.org/gstreamer/gst-examples/tree/playback/player
+
+### gst-build
+
+[gst-build][gst-build-git] is a new meta module to build GStreamer using the
+new Meson build system. This module is not required to build GStreamer with
+Meson, it is merely for convenience and aims to provide a development setup
+similar to the existing `gst-uninstalled` setup.
+
+gst-build makes use of Meson's [subproject feature][meson-subprojects] and sets
+up the various GStreamer modules as subprojects, so they can all be updated and
+built in parallel.
+
+This module is still very new and highly experimental. It should work at least
+on Linux and Windows (OS/X needs some build fixes). Let us know of any issues
+you encounter by popping into the `#gstreamer` IRC channel or by
+[filing a bug][gst-build-bug].
+
+This module will probably not be released or packaged (does not really make sense).
+
+[gst-build-git]: https://cgit.freedesktop.org/gstreamer/gst-build/tree/
+[gst-build-bug]: https://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer&component=gst-build
+[meson-subprojects]: https://github.com/mesonbuild/meson/wiki/Subprojects
 
 ## Contributors
 
