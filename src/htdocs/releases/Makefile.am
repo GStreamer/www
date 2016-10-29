@@ -6,6 +6,7 @@
 all-local:	releases.rss10.xml releases.rss20.xml releases.ics
 
 SUBDIRS = \
+	1.10 \
 	1.8 \
 	1.6 \
 	gnonlin \
