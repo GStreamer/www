@@ -449,7 +449,14 @@ H265 payloader sync with RFC
 
 #### DVB improvements
 
-- FILL ME
+- `dvbsrc` has now better delivery-system autodetection and several
+new parameter sanity-checks to improve its resilence to configuration
+omissions and errors. Superfluous polling has continued to be trimmed,
+and the debugging output made more consistent and precise. Additionally,
+the channel-configuration parser now supports the new dvbv5 format,
+enabling `dvbbasebin` to automatically playback content transmited on
+delivery systems that previously required manual description, like
+ISDB-T.
 
 #### DASH, HLS and adaptivedemux
 
