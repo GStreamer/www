@@ -393,6 +393,13 @@ H265 payloader sync with RFC
 
 #### Wayland video sink
 
+- `waylandsink` now supports the wl_viewporter extension allowing
+  video scaling and cropping to be delegated to the Wayland
+  compositor. This extension is also been made optional, so that it can
+  also work on current compositor that don't support it. He's also added
+  support for the video meta, allowing zero-copy operations in more
+  cases.
+
 #### DVB improvements
 
 #### DASH, HLS and adaptivedemux
@@ -439,17 +446,27 @@ trick modes, alternative renditions, ...
 
 #### Miscellaneous
 
-`multiqueue`'s input pads gained a new `"group-id"` property which can be
-used to group input streams. Typically one will assign different id numbers
-to audio, video and subtitle streams, for example. This way `multiqueue` can
-make sure streams of the same type advance in lockstep if some of the streams
-are unlinked and the `"sync-by-running-time"` property is set. This is used
-in decodebin3/playbin3 to implement almost-instantaneous stream switching.
-The grouping is required because different downstream paths (audio, video, etc.)
-may have different buffering/latency etc. so might be consuming data from
-multiqueue with a slightly different phase, and if we track different stream
-groups separately we minimise stream switching delays and buffering inside the
-`multiqueue`.
+- `multiqueue`'s input pads gained a new `"group-id"` property which
+  can be used to group input streams. Typically one will assign
+  different id numbers to audio, video and subtitle streams, for
+  example. This way `multiqueue` can make sure streams of the same
+  type advance in lockstep if some of the streams are unlinked and the
+  `"sync-by-running-time"` property is set. This is used in
+  decodebin3/playbin3 to implement almost-instantaneous stream
+  switching.  The grouping is required because different downstream
+  paths (audio, video, etc.)  may have different buffering/latency
+  etc. so might be consuming data from multiqueue with a slightly
+  different phase, and if we track different stream groups separately
+  we minimise stream switching delays and buffering inside the
+  `multiqueue`.
+- `alsasrc` now supports ALSA drivers without a position for each
+  channel, this is common in some professional or industrial hardware.
+- libvpx based decoders (`vp8dec` and `vp9dec`) now create multiple threads on
+  computers with multiple CPUs automatically.
+- `rfbsrc` which can receive from a VNC server has seen a lot of
+  debugging, it now supports the latest version of the RFB
+  protocol. It also uses GIO everywhere.
+- `tsdemux` can now read ATSC E-AC-3 streams.
 
 ### Plugin moves
 
