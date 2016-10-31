@@ -328,7 +328,11 @@ gst-omx: please send us patches with your configuration and code changes!
 
 - FILL ME
 
-#### LV2 source element and switch from slv2 to lilv2
+#### LV2 ported from 0.10 and switched from slv2 to lilv2
+
+The LV2 plugin has been ported from 0.10 to 1.0 and moved from using the
+deprecated slv2 library to its replacement lilv2. We support sources and
+filter elements.
 
 - FILL ME
 
