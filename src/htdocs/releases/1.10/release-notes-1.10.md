@@ -357,7 +357,12 @@ App and protocol specific RTCP
 RFC7273 support
 H265 payloader sync with RFC
 
+
+- FILL ME
+
 #### Improvements to splitmuxsrc
+
+- FILL ME
 
 #### OpenGL/GLES improvements
 
@@ -441,6 +446,8 @@ H265 payloader sync with RFC
 #### DASH, HLS and adaptivedemux
 
 trick modes, alternative renditions, ...
+
+- FILL ME
 
 #### a2dpsink finally works
 
