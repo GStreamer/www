@@ -369,7 +369,13 @@ H265 payloader sync with RFC
 
 #### Improvements to splitmuxsrc
 
-- FILL ME
+Reliability and error handling improvements, removing at least one deadlock
+case. splitmuxsrc now stops cleanly at the end of the segment when handling
+a segment seek. We fixed a bug with large amounts of downstream buffering
+causing incorrect out-of-sequence playback.
+
+splitmuxsrc now has a format-location signal to directly specify the list
+of files to play from.
 
 #### OpenGL/GLES improvements
 
@@ -459,9 +465,10 @@ ISDB-T.
 
 #### DASH, HLS and adaptivedemux
 
-trick modes, alternative renditions, ...
-
-- FILL ME
+- HLS now has support for Alternate Rendition audio and video tracks
+- Full support for Alternate Rendition subtitle tracks coming soon
+- Lots of reliability fixes around seek handling and bitrate switching.
+- FILL ME - trick modes?
 
 #### a2dpsink finally works
 
@@ -529,7 +536,7 @@ trick modes, alternative renditions, ...
 
 ### Plugin moves
 
-No plugins were moved this cycle. We'll make up for it next cycle, promised!
+No plugins were moved this cycle. We'll make up for it next cycle, promise!
 
 ### Rewritten memory leak tracer
 
