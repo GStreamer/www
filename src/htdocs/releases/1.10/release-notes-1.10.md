@@ -69,8 +69,8 @@ GstBin has gained `"deep-element-added"` and `"deep-element-removed"` signals
 which makes it easier for applications and higher-level plugins to track when
 elements are added or removed from a complex pipeline with multiple sub-bins.
 
-playbin makes use of this to implement the new `"element-setup"` signal which
-can be used to configure elements as they are added to playbin, just like the
+`playbin` makes use of this to implement the new `"element-setup"` signal which
+can be used to configure elements as they are added to `playbin`, just like the
 existing `"source-setup"` signal which can be used to configure the source
 element created.
 
@@ -201,7 +201,7 @@ possible for the application to select multiple streams of the same type
 (e.g. in a transcoding/transmuxing scenario).
 
 A [`STREAM_COLLECTION` message][stream-collection-msg] is posted on the bus
-to inform the parent bin (e.g. playbin3, decodebin3) and/or the application
+to inform the parent bin (e.g. `playbin3`, `decodebin3`) and/or the application
 about what streams are available, so you no longer have to hunt for this
 information (number of streams of each type, caps, tags etc.) in different
 places. Bins and/or the application can intercept this message synchronously
@@ -240,8 +240,8 @@ first place.
 The application is then notified of the currently selected streams via the
 new `STREAMS_SELECTED` message on the pipeline bus, containing both the current
 stream collection as well as the selected streams. This might be posted in
-response to the application sending a `SELECT_STREAMS` event or when decodebin3
-or playbin3 decide on the streams selected initially without application input.
+response to the application sending a `SELECT_STREAMS` event or when `decodebin3`
+or `playbin3` decide on the streams selected initially without application input.
 
 [event-select-streams]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstEvent.html#gst-event-new-select-streams
 
@@ -279,7 +279,7 @@ processing. It has support for dynamically changing sample rates by incrementall
 updating the filter tables using linear or cubic interpolation. According to
 some benchmarks it's one of the fastest and most accurate resamplers around.
 
-The audio resampler plugin has been ported to the new audioconverter library
+The `audioresample` plugin has been ported to the new audio library functions
 to make use of this new resampler.
 
 [release-notes-1.8]: https://gstreamer.freedesktop.org/releases/1.8/
@@ -308,9 +308,11 @@ gain control, noise suppression and more. For more details you may read
 [webrtcechoprobe]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/gst-plugins-bad-plugins-webrtcechoprobe.html
 [webrtc-blog-post]: https://ndufresne.ca/2016/06/gstreamer-echo-canceller/
 
-#### FDK AAC encoder and decoder
+#### Fraunhofer FDK AAC encoder and decoder
 
-- FILL ME
+New encoder and decoder elements wrapping the Fraunhofer FDK AAC library have
+been added (`fdkaacdec`, `fdkaacdec`). The Fraunhofer FDK AAC encoder is
+generally considered to be a very high-quality AAC encoder.
 
 ### Noteworthy element features and additions
 
@@ -322,8 +324,6 @@ RFC7273 support
 H265 payloader sync with RFC
 
 #### Improvements to splitmuxsrc
-
-#### opencv plugins ported to OpenCV 3.1
 
 #### OpenGL/GLES improvements
 
@@ -338,39 +338,39 @@ H265 payloader sync with RFC
 
 ##### New API
 
-- GstGLFramebuffer - for wrapping OpenGL frame buffer objects.  It provides
-  facilities for attaching GstGLMemory objects to the necessary attachment
+- `GstGLFramebuffer` - for wrapping OpenGL frame buffer objects.  It provides
+  facilities for attaching `GstGLMemory` objects to the necessary attachment
   points, binding and unbinding and running a user-supplied function with the
   framebuffer bound.
-- GstGLRenderbuffer (a GstGLBaseMemory subclass) - for wrapping OpenGL
+- `GstGLRenderbuffer` (a `GstGLBaseMemory` subclass) - for wrapping OpenGL
   render buffer objects that are typically used for depth/stencil buffers or
   for color buffers where we don't care about the output.
-- GstGLMemoryEGL (a GstGLMemory subclass) - for combining EGLImage's with a GL
-  texture that replaces GstEGLImageMemory bringing the improvements made to the
-  other GstGLMemory implementations.  This fixes a performance regression in
+- `GstGLMemoryEGL` (a `GstGLMemory` subclass) - for combining `EGLImage`s with a GL
+  texture that replaces `GstEGLImageMemory` bringing the improvements made to the
+  other `GstGLMemory` implementations.  This fixes a performance regression in
   zerocopy decoding on the Raspberry Pi when used with an updated gst-omx.
 
 ##### Miscellaneous improvements
 
-- gltestsrc is now usable on devices/platforms with OpenGL 3.x and OpenGL|ES
+- `gltestsrc` is now usable on devices/platforms with OpenGL 3.x and OpenGL|ES
   and has completed or gained support for new patterns in line with the
-  existing ones in videotestsrc.
-- gldeinterlace is now available on devices/platforms with OpenGL|ES
+  existing ones in `videotestsrc`.
+- `gldeinterlace` is now available on devices/platforms with OpenGL|ES
   implementations.
 - The dispmanx backend (used on the Raspberry Pi) now supports the
   `gst_video_overlay_set_window_handle()` and
   `gst_video_overlay_set_render_rectangle()` functions.
-- The gltransformation element now correctly transforms mouse coordinates (in
+- The `gltransformation` element now correctly transforms mouse coordinates (in
   window space) to stream coordinates for both perspective and orthographic
   projections.
-- The gltransformation element now detects if the
-  GstVideoAffineTransformationMeta is supported downstream and will efficiently
-  pass it's transformation downstream.  This is a performance improvement as it
+- The `gltransformation` element now detects if the
+  `GstVideoAffineTransformationMeta` is supported downstream and will efficiently
+  pass its transformation downstream.  This is a performance improvement as it
   results in less processing being required.
 - The wayland implementation now uses the multi-threaded safe event-loop API
   allowing correct usage in applications calling wayland functions from
   multiple threads.
-- glimagesink supports 90 degree rotations and horizontal/vertical flips
+- `glimagesink` supports 90 degree rotations and horizontal/vertical flips
   natively.
 
 #### Vulkan
@@ -380,13 +380,14 @@ H265 payloader sync with RFC
 
 #### QML elements
 
-- qmlglsink video sink now works on more platforms, notably, Windows, Wayland,
-  and Qt's eglfs (for embedded devices with an OpenGL implementation)
-- New element qmlglsrc to record a QML scene into a GStreamer pipeline.
+- `qmlglsink` video sink now works on more platforms, notably, Windows, Wayland,
+  and Qt's eglfs (for embedded devices with an OpenGL implementation) including
+  the Raspberry Pi.
+- New element `qmlglsrc` to record a QML scene into a GStreamer pipeline.
 
 #### KMS video sink
 
-- New element kmssink to render video using Direct Rendering Manager
+- New element `kmssink` to render video using Direct Rendering Manager
   (DRM) and Kernel Mode Setting (KMS) subsystems in the Linux
   kernel. It is oriented to be used mostly in embedded systems.
 
@@ -404,13 +405,13 @@ trick modes, alternative renditions, ...
 
 - All the decoders have been split, one plugin feature per codec. So
   far, the available ones, depending on the driver, are:
-  vaapimpeg2dec, vaapih264dec, vaapih265dec, vaapivc1dec, vaapivp8dec,
-  vaapivp9dec and vaapijpegdec (which already was split).
+  `vaapimpeg2dec`, `vaapih264dec`, `vaapih265dec`, `vaapivc1dec`, `vaapivp8dec`,
+  `vaapivp9dec` and `vaapijpegdec` (which already was split).
 - Improvements when mapping VA surfaces into memory, differenciating
   from negotiation caps and allocations caps, since the allocation
   memory for surfaces may be bigger than one that is going to be
   mapped.
-- vaapih265enc got support to constant bitrate mode (CBR).
+- `vaapih265enc` got support to constant bitrate mode (CBR).
 - Since several VA drivers are unmaintained, we decide to keep a white list
   with the va drivers we actually test, which is mostly the i915 and, in some
   degree, gallium from mesa project. Exporting the environment variable
@@ -420,7 +421,7 @@ trick modes, alternative renditions, ...
   system are registered. Since the driver can change, some dependencies are
   tracked to invalidate the GStreamer registry and reload the plugin.
 - dmabuf importation from upstream has been improved, gaining performance.
-- vaapipostproc now can negotiate through caps the buffer transformations.
+- `vaapipostproc` now can negotiate through caps the buffer transformations.
 - Decoders now can do reverse playback. They only shows I frames, because the
   surface pool is smaller than the required by the GOP to show all the
   frames.
@@ -474,8 +475,8 @@ tracer will simply output a warning if leaks have been detected on `gst_deinit()
 If the `GST_LEAKS_TRACER_SIG` environment variable is set, the leaks tracer
 will also handle the following UNIX signals:
 
- - SIGUSR1: log alive objects
- - SIGUSR2: create a checkpoint and print a list of objects created and
+ - `SIGUSR1`: log alive objects
+ - `SIGUSR2`: create a checkpoint and print a list of objects created and
    destroyed since the previous checkpoint.
 
 This will not work on Windows though.
@@ -503,7 +504,7 @@ This dedicated leaks tracer is much much faster than valgrind since all code is
 executed natively instead of being instrumented. This makes it very suitable
 for use on slow machines or embedded devices. It is however limited to certain
 types of leaks and won't catch memory leaks when the allocation has been made
-via plain old `malloc()` or `g_malloc` or other means. It will also not trace
+via plain old `malloc()` or `g_malloc()` or other means. It will also not trace
 non-GstObject GObjects.
 
 The goal is to enable leak tracing on GStreamer's Continuous-Integration and
@@ -525,13 +526,13 @@ the topic.
 ## Miscellaneous
 
 - New video orientation interface
-- appsrc duration in time and try pull API
+- `appsrc` duration in time and try pull API
 - gst-libav uses ffmpeg 3.1
-- x264enc has support for chroma-site and colorimetry settings
+- `x264enc` has support for chroma-site and colorimetry settings
 - JPEG2000 parser and caps cleanup
-- Reverse playback support for videorate, deinterlace
+- Reverse playback support for `videorate`, `deinterlace`
 - Various improvements for reverse playback and `KEY_UNITS` trick mode
-- New cleaned up rawaudioparse, rawvideoparse elements
+- New cleaned up `rawaudioparse`, `rawvideoparse` elements
 - Decklink 10 bit and timecode support, various fixes
 - Multiview and other new API for GstPlayer
 - GstBin suppressed flags API
@@ -606,9 +607,12 @@ check out Nirbheek Chauhan's blog post ["Building and developing GStreamer using
 libunwind was added as an optional dependency. It is used only for debugging
 and tracing purposes.
 
+The `opencv` plugin in gst-plugins-bad can now be built against OpenCV
+version 3.1, previously only 2.3-2.5 were supported.
+
 #### gst-plugins-ugly
 
-mpeg2dec now requires at least libmpeg2 0.5.1 (from 2008).
+`mpeg2dec` now requires at least libmpeg2 0.5.1 (from 2008).
 
 ### Packaging notes
 
@@ -645,11 +649,11 @@ changes.
 - We now support querying available devices on OS/X via the GstDeviceProvider
   API.
 - We can now create OpenGL|ES 3.x contexts on iOS.
-- FILL ME
+- many OpenGL/GLES improvements, see OpenGL section above
 
 ### Windows
 
-- FILL ME: gstconfig.h: Always use dllexport/import on Windows with MSVC
+- gstconfig.h: Always use dllexport/import on Windows with MSVC
 - Miscellaneous fixes to make libs and plugins compile with the MVSC toolchain
 - MSVC toolchain support (see Meson section above for more details)
 
