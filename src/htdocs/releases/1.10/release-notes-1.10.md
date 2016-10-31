@@ -591,7 +591,32 @@ the topic.
 
 ### GES and NLE changes
 
-- FILL ME
+* Clip priorities are now handled by the layers, and the GESTimelineElement
+  priority property is now deprecated and unused
+* Enhance (de)interlacing support always using the `deinterlace` element
+  and exposing needed properties to users
+* Allow reusing clips children after removing the clip from a layer
+* We are now testing many more rendering format in the gst-validate
+  testsuite, and failures have been fixed.
+* Also many bugs have been fixed in this cycle!
+
+### GStreamer validate changes
+
+This cycle has been focused on making GstValidate more than just a validating
+tool but also a tool to help developers debug their GStreamer issues. When
+reporting, issues, we try to gather as much information as possible and expose
+it to end users in a useful way. For an example of such enhancements, check out
+Thibault Saunier's [blog post](improving-debugging-gstreamer-validate) about
+the new Not Negotiated Error reporting mechanism.
+
+Playbin3 support has been added so we can run validate tests with playbin3
+instead of playbin.
+
+We are now able to properly communicate between `gst-validate-launcher` and
+launched subprocesses with actual IPC between them. It enabled the test
+launcher to handle failing tests specifying the exact expected issue(s).
+
+[improving-debugging-gstreamer-validate]: https://blogs.s-osg.org/improving-debugging-gstreamer-validate/
 
 ### gst-libav changes
 
