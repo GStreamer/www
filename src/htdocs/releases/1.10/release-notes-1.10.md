@@ -736,26 +736,26 @@ This module will probably not be released or packaged (does not really make sens
 
 Aaron Boxer, Aleix Conchillo Flaqué, Alessandro Decina, Alexandru Băluț, Alex
 Ashley, Alex-P. Natsios, Alistair Buxton, Allen Zhang, Andreas Naumann, Andrew
-Eikum, Andy Devar, Anthony G. Basile, Arjen Veenhuizen, Arnaud Vrac, Arun
-Raghavan, Aurélien Zanelli, Barun Kumar Singh, Bernhard Miller, Brad Lackey,
-Branko Subasic, Carlos Garcia Campos, Carlos Rafael Giani, Christoffer
-Stengren, Daiki Ueno, Damian Ziobro, Danilo Cesar Lemes de Paula, David
-Buchmann, Dimitrios Katsaros, Duncan Palmer, Edward Hervey, Emmanuel Poitier,
-Enrico Jorns, Enrique Ocaña González, Fabrice Bellet, Florian Zwoch, Florin
-Apostol, Francisco Velazquez, Frédéric Bertolus, Fredrik Fornwall, Gaurav
-Gupta, George Kiagiadakis, Georg Lippitsch, Göran Jönsson, Graham Leggett,
-Gregoire Gentil, Guillaume Desmottes, Gwang Yoon Hwang, Haakon Sporsheim,
-Haihua Hu, Havard Graff, Heinrich Fink, Hoonhee Lee, Hyunjun Ko, Iain Lane,
-Ian, Ian Jamison, Jagyum Koo, Jake Foytik, Jakub Adam, Jan Alexander Steffens
-(heftig), Jan Schmidt, Javier Martinez Canillas, Jerome Laheurte, Jesper
-Larsen, Jie Jiang, Jihae Yi, Jimmy Ohn, Jinwoo Ahn, Joakim Johansson, Joan Pau
-Beltran, Jonas Holmberg, Jonathan Matthew, Jonathan Roy, Josep Torra, Julien
-Isorce, Jun Ji, Jürgen Slowack, Justin Kim, Kazunori Kobayashi, Kieran
-Bingham, Kipp Cannon, Koop Mast, Kouhei Sutou, Kseniia, Kyle Schwarz,
-Kyungyong Kim, Linus Svensson, Luis de Bethencourt, Marcin Kolny, Marcin
-Lewandowski, Marianna Smidth Buschle, Mario Sanchez Prada, Mark Combellack,
-Mark Nauwelaerts, Martin Kelly, Matej Knopp, Mathieu Duponchelle, Mats
-Lindestam, Matthew Gruenke, Matthew Waters, Michael Olbrich, Michal Lazo,
+Eikum, Andy Devar, Anthony G. Basile, Arjen Veenhuizen, Arnaud Vrac, Artem
+Martynovich, Arun Raghavan, Aurélien Zanelli, Barun Kumar Singh, Bernhard
+Miller, Brad Lackey, Branko Subasic, Carlos Garcia Campos, Carlos Rafael
+Giani, Christoffer Stengren, Daiki Ueno, Damian Ziobro, Danilo Cesar Lemes de
+Paula, David Buchmann, Dimitrios Katsaros, Duncan Palmer, Edward Hervey,
+Emmanuel Poitier, Enrico Jorns, Enrique Ocaña González, Fabrice Bellet,
+Florian Zwoch, Florin Apostol, Francisco Velazquez, Frédéric Bertolus, Fredrik
+Fornwall, Gaurav Gupta, George Kiagiadakis, Georg Lippitsch, Göran Jönsson,
+Graham Leggett, Gregoire Gentil, Guillaume Desmottes, Gwang Yoon Hwang, Haakon
+Sporsheim, Haihua Hu, Havard Graff, Heinrich Fink, Hoonhee Lee, Hyunjun Ko,
+Iain Lane, Ian, Ian Jamison, Jagyum Koo, Jake Foytik, Jakub Adam, Jan
+Alexander Steffens (heftig), Jan Schmidt, Javier Martinez Canillas, Jerome
+Laheurte, Jesper Larsen, Jie Jiang, Jihae Yi, Jimmy Ohn, Jinwoo Ahn, Joakim
+Johansson, Joan Pau Beltran, Jonas Holmberg, Jonathan Matthew, Jonathan Roy,
+Josep Torra, Julien Isorce, Jun Ji, Jürgen Slowack, Justin Kim, Kazunori
+Kobayashi, Kieran Bingham, Kipp Cannon, Koop Mast, Kouhei Sutou, Kseniia, Kyle
+Schwarz, Kyungyong Kim, Linus Svensson, Luis de Bethencourt, Marcin Kolny,
+Marcin Lewandowski, Marianna Smidth Buschle, Mario Sanchez Prada, Mark
+Combellack, Mark Nauwelaerts, Martin Kelly, Matej Knopp, Mathieu Duponchelle,
+Mats Lindestam, Matthew Gruenke, Matthew Waters, Michael Olbrich, Michal Lazo,
 Miguel París Díaz, Mikhail Fludkov, Minjae Kim, Mohan R, Munez, Nicola Murino,
 Nicolas Dufresne, Nicolas Huet, Nikita Bobkov, Nirbheek Chauhan, Olivier
 Crête, Paolo Pettinato, Patricia Muscalu, Paulo Neves, Peng Liu, Peter
@@ -777,7 +777,7 @@ suggestions or helped testing.
 
 ## Bugs fixed in 1.10
 
-More than [660 bugs][bugs-fixed-in-1.10] have been fixed during
+More than [750 bugs][bugs-fixed-in-1.10] have been fixed during
 the development of 1.10.
 
 This list does not include issues that have been cherry-picked into the
