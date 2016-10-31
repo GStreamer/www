@@ -161,7 +161,8 @@ mode (enabled by the -v switch).
 
 [`gst_element_call_async()`][call-async] has been added as convenience API for
 plugin developers. It is useful for one-shot operations that need to be done
-from a thread other than the current streaming thread.
+from a thread other than the current streaming thread. It is backed by a
+thread-pool that is shared by all elements.
 
 [call-async]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-call-async
 
@@ -307,7 +308,11 @@ to make use of this new resampler.
 
 #### decodebin3, urisrcbin, parsebin and playbin3
 
+- FILL ME
+
 #### LV2 source element and switch from slv2 to lilv2
+
+- FILL ME
 
 #### WebRTC DSP Plugin for echo-cancellation, gain control and noise suppression
 
@@ -325,7 +330,9 @@ gain control, noise suppression and more. For more details you may read
 
 New encoder and decoder elements wrapping the Fraunhofer FDK AAC library have
 been added (`fdkaacdec`, `fdkaacdec`). The Fraunhofer FDK AAC encoder is
-generally considered to be a very high-quality AAC encoder.
+generally considered to be a very high-quality AAC encoder, but unfortunately
+it comes under a non-free license with the option to obtain a paid, commercial
+license.
 
 ### Noteworthy element features and additions
 
@@ -415,11 +422,15 @@ H265 payloader sync with RFC
 
 #### DVB improvements
 
+- FILL ME
+
 #### DASH, HLS and adaptivedemux
 
 trick modes, alternative renditions, ...
 
 #### a2dpsink finally works
+
+- FILL ME
 
 #### GStreamer VAAPI
 
@@ -644,6 +655,8 @@ version 3.1, previously only 2.3-2.5 were supported.
 
 `mpeg2dec` now requires at least libmpeg2 0.5.1 (from 2008).
 
+- FILL ME
+
 ### Packaging notes
 
 Packagers please note that the `gst/gstconfig.h` public header file in the
@@ -851,7 +864,8 @@ in March.
 
 - - -
 
-*These release notes have been prepared by Sebastian Dröge, Arun Raghavan,
-Tim-Philipp Müller, ....*
+*These release notes have been prepared by Olivier Crête, Sebastian Dröge,
+Nicolas Dufresne, Víctor Manuel Jáquez Leal, Arun Raghavan, Tim-Philipp
+Müller, Wim Taymans, Matthew Waters*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
