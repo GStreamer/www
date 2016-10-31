@@ -309,9 +309,8 @@ to make use of this new resampler.
 #### GStreamer OpenMAX IL plugin
 
 The last gst-omx release, 1.2.0, was in July 2014. It was about time to get
-out a new release with all the improvements that happened in the meantime.
-We'll try to release gst-omx together with all other modules in the future
-from now on.
+out a new one with all the improvements that happened in the meantime.
+From now on, we will try to release gst-omx together with all other modules.
 
 This release features a lot of bugfixes, improved support for the Raspberry Pi
 and in general improved support for zerocopy rendering via EGL and a few minor
@@ -380,7 +379,7 @@ H265 payloader sync with RFC
   OpenGL|ES 2.x if that fails.
 - Various zerocopy decoding fixes and enhancements with the
   encoding/decoding/capturing elements.
-- libdispatch is now used on all Apple platforms instead of GMainLoop removing
+- libdispatch is now used on all Apple platforms instead of GMainLoop, removing
   the expensive poll()/pthread_*() overhead.
 
 ##### New API
@@ -412,13 +411,13 @@ H265 payloader sync with RFC
   projections.
 - The `gltransformation` element now detects if the
   `GstVideoAffineTransformationMeta` is supported downstream and will efficiently
-  pass its transformation downstream.  This is a performance improvement as it
+  pass its transformation downstream. This is a performance improvement as it
   results in less processing being required.
 - The wayland implementation now uses the multi-threaded safe event-loop API
   allowing correct usage in applications calling wayland functions from
   multiple threads.
-- `glimagesink` supports 90 degree rotations and horizontal/vertical flips
-  natively.
+- Support for native 90 degree rotations and horizontal/vertical flips
+  in `glimagesink`.
 
 #### Vulkan
 
@@ -443,7 +442,7 @@ H265 payloader sync with RFC
 - `waylandsink` now supports the wl_viewporter extension allowing
   video scaling and cropping to be delegated to the Wayland
   compositor. This extension is also been made optional, so that it can
-  also work on current compositor that don't support it. He's also added
+  also work on current compositors that don't support it. He's also added
   support for the video meta, allowing zero-copy operations in more
   cases.
 
