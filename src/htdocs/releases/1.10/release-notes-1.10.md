@@ -76,7 +76,20 @@ element created.
 
 ##### Error messages can contain additional structured details
 
-- FILL ME: e.g. HTTP status codes
+Often it is useful to provide additional, structured information in error,
+warning or info messages for applications (or higher-level elements) to do
+intellegent decisions based on them. To allow this, error, warning and info
+messages now have API for adding arbitrary additional information in a
+`GstStructure` to them:
+[`GST_ELEMENT_ERROR_WITH_DETAILS`][element-error-with-details] and the
+corresponding for the other message types.
+
+This is now used e.g. by the [souphttpsrc element][souphttpsrc-detailed-errors]
+to provide the actual HTTP status code, and if any, the URL to which a
+redirection has happened.
+
+[element-error-with-details]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#GST-ELEMENT-ERROR-WITH-DETAILS:CAPS
+[souphttpsrc-detailed-errors]: https://cgit.freedesktop.org/gstreamer/gst-plugins-good/tree/ext/soup/gstsouphttpsrc.c?id=60d30db912a1aedd743e66b9dcd2e21d71fbb24f#n1318
 
 ##### Redirect messages have official API now
 
