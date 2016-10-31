@@ -84,11 +84,13 @@ messages now have API for adding arbitrary additional information in a
 [`GST_ELEMENT_ERROR_WITH_DETAILS`][element-error-with-details] and the
 corresponding for the other message types.
 
-This is now used e.g. by the [souphttpsrc element][souphttpsrc-detailed-errors]
-to provide the actual HTTP status code, and if any, the URL to which a
-redirection has happened.
+This is now used e.g. by the new [`GST_ELEMENT_FLOW_ERROR`][element-flow-error]
+API to include the actual flow error in the error message, and the
+[souphttpsrc element][souphttpsrc-detailed-errors] to provide the actual HTTP
+status code, and if any, the URL to which a redirection has happened.
 
 [element-error-with-details]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#GST-ELEMENT-ERROR-WITH-DETAILS:CAPS
+[element-flow-error]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#GST-ELEMENT-FLOW-ERROR:CAPS
 [souphttpsrc-detailed-errors]: https://cgit.freedesktop.org/gstreamer/gst-plugins-good/tree/ext/soup/gstsouphttpsrc.c?id=60d30db912a1aedd743e66b9dcd2e21d71fbb24f#n1318
 
 ##### Redirect messages have official API now
@@ -301,6 +303,8 @@ to make use of this new resampler.
 #### Support for SMPTE timecodes
 
 - FILL ME
+
+- API, GstMeta, elements, element support
 
 #### GStreamer OpenMAX IL plugin
 
@@ -585,11 +589,17 @@ the topic.
 
 - FILL ME
 
+### gst-libav changes
+
+gst-libav uses the recently released ffmpeg 3.2 now, which brings a lot of
+improvements and bugfixes from the ffmpeg team in addition to various new
+codec mappings on the GStreamer side and quite a few bugfixes to the GStreamer
+integration to make it more robust.
+
 ## Miscellaneous
 
 - New video orientation interface
 - `appsrc` duration in time and try pull API
-- gst-libav uses ffmpeg 3.1
 - `x264enc` has support for chroma-site and colorimetry settings
 - JPEG2000 parser and caps cleanup
 - Reverse playback support for `videorate`, `deinterlace`
@@ -598,6 +608,8 @@ the topic.
 - Decklink 10 bit and timecode support, various fixes
 - Multiview and other new API for GstPlayer
 - GstBin suppressed flags API
+
+- FILL ME
 
 ## Build and Dependencies
 
@@ -674,9 +686,11 @@ version 3.1, previously only 2.3-2.5 were supported.
 
 #### gst-plugins-ugly
 
-`mpeg2dec` now requires at least libmpeg2 0.5.1 (from 2008).
+- `mpeg2dec` now requires at least libmpeg2 0.5.1 (from 2008).
 
-- FILL ME
+- `gltransformation` now requires at least graphene 1.4.0.
+
+- `lv2` now plugin requires at least lilv 0.16 instead of slv2.
 
 ### Packaging notes
 
