@@ -734,14 +734,50 @@ This module will probably not be released or packaged (does not really make sens
 
 ## Contributors
 
-- FILL ME
+Aaron Boxer, Aleix Conchillo Flaqué, Alessandro Decina, Alexandru Băluț, Alex
+Ashley, Alex-P. Natsios, Alistair Buxton, Allen Zhang, Andreas Naumann, Andrew
+Eikum, Andy Devar, Anthony G. Basile, Arjen Veenhuizen, Arnaud Vrac, Arun
+Raghavan, Aurélien Zanelli, Barun Kumar Singh, Bernhard Miller, Brad Lackey,
+Branko Subasic, Carlos Garcia Campos, Carlos Rafael Giani, Christoffer
+Stengren, Daiki Ueno, Damian Ziobro, Danilo Cesar Lemes de Paula, David
+Buchmann, Dimitrios Katsaros, Duncan Palmer, Edward Hervey, Emmanuel Poitier,
+Enrico Jorns, Enrique Ocaña González, Fabrice Bellet, Florian Zwoch, Florin
+Apostol, Francisco Velazquez, Frédéric Bertolus, Fredrik Fornwall, Gaurav
+Gupta, George Kiagiadakis, Georg Lippitsch, Göran Jönsson, Graham Leggett,
+Gregoire Gentil, Guillaume Desmottes, Gwang Yoon Hwang, Haakon Sporsheim,
+Haihua Hu, Havard Graff, Heinrich Fink, Hoonhee Lee, Hyunjun Ko, Iain Lane,
+Ian, Ian Jamison, Jagyum Koo, Jake Foytik, Jakub Adam, Jan Alexander Steffens
+(heftig), Jan Schmidt, Javier Martinez Canillas, Jerome Laheurte, Jesper
+Larsen, Jie Jiang, Jihae Yi, Jimmy Ohn, Jinwoo Ahn, Joakim Johansson, Joan Pau
+Beltran, Jonas Holmberg, Jonathan Matthew, Jonathan Roy, Josep Torra, Julien
+Isorce, Jun Ji, Jürgen Slowack, Justin Kim, Kazunori Kobayashi, Kieran
+Bingham, Kipp Cannon, Koop Mast, Kouhei Sutou, Kseniia, Kyle Schwarz,
+Kyungyong Kim, Linus Svensson, Luis de Bethencourt, Marcin Kolny, Marcin
+Lewandowski, Marianna Smidth Buschle, Mario Sanchez Prada, Mark Combellack,
+Mark Nauwelaerts, Martin Kelly, Matej Knopp, Mathieu Duponchelle, Mats
+Lindestam, Matthew Gruenke, Matthew Waters, Michael Olbrich, Michal Lazo,
+Miguel París Díaz, Mikhail Fludkov, Minjae Kim, Mohan R, Munez, Nicola Murino,
+Nicolas Dufresne, Nicolas Huet, Nikita Bobkov, Nirbheek Chauhan, Olivier
+Crête, Paolo Pettinato, Patricia Muscalu, Paulo Neves, Peng Liu, Peter
+Seiderer, Philippe Normand, Philippe Renon, Philipp Zabel, Pierre Lamot, Piotr
+Drąg, Prashant Gotarne, Raffaele Rossi, Ray Strode, Reynaldo H. Verdejo
+Pinochet, Santiago Carot-Nemesio, Scott D Phillips, Sebastian Dröge, Sebastian
+Rasmussen, Sergei Saveliev, Sergey Borovkov, Sergey Mamonov, Sergio Torres
+Soldado, Seungha Yang, sezero, Song Bing, Sreerenj Balachandran, Stefan Sauer,
+Stephen, Steven Hoving, Stian Selnes, Thiago Santos, Thibault Saunier, Thijs
+Vermeir, Thomas Bluemel, Thomas Jones, Thomas Klausner, Thomas Scheuermann,
+Tim-Philipp Müller, Ting-Wei Lan, Tom Schoonjans, Ursula Maplehurst, Vanessa
+Chipirras Navalon, Víctor Manuel Jáquez Leal, Vincent Penquerc'h, Vineeth TM,
+Vivia Nikolaidou, Vootele Vesterblom, Wang Xin-yu (王昕宇), William Manley,
+Wim Taymans, Wonchul Lee, Xabier Rodriguez Calvar, Xavier Claessens, xlazom00,
+Yann Jouanin, Zaheer Abbas Merali
 
 ... and many others who have contributed bug reports, translations, sent
 suggestions or helped testing.
 
 ## Bugs fixed in 1.10
 
-More than [~600 bugs][bugs-fixed-in-1.10] have been fixed during
+More than [580 bugs][bugs-fixed-in-1.10] have been fixed during
 the development of 1.10.
 
 This list does not include issues that have been cherry-picked into the
@@ -751,7 +787,7 @@ stable 1.8 branch and fixed there as well, all fixes that ended up in the
 This list also does not include issues that have been fixed without a bug
 report in bugzilla, so the actual number of fixes is much higher.
 
-[bugs-fixed-in-1.10]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=107311&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.6.1&target_milestone=1.6.2&target_milestone=1.9.1&target_milestone=1.9.2&target_milestone=1.9.3&target_milestone=1.9.4&target_milestone=1.9.5&target_milestone=1.9.90&target_milestone=1.9.91&target_milestone=1.9.92&target_milestone=1.9.93&target_milestone=1.10.0
+[bugs-fixed-in-1.10]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=164074&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.6.1&target_milestone=1.6.2&target_milestone=1.9.1&target_milestone=1.9.2&target_milestone=1.9.3&target_milestone=1.9.4&target_milestone=1.9.5&target_milestone=1.9.90&target_milestone=1.10.0
 
 ## Stable 1.10 branch
 
