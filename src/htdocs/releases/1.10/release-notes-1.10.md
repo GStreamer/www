@@ -777,7 +777,7 @@ suggestions or helped testing.
 
 ## Bugs fixed in 1.10
 
-More than [580 bugs][bugs-fixed-in-1.10] have been fixed during
+More than [660 bugs][bugs-fixed-in-1.10] have been fixed during
 the development of 1.10.
 
 This list does not include issues that have been cherry-picked into the
@@ -787,7 +787,7 @@ stable 1.8 branch and fixed there as well, all fixes that ended up in the
 This list also does not include issues that have been fixed without a bug
 report in bugzilla, so the actual number of fixes is much higher.
 
-[bugs-fixed-in-1.10]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=164074&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.6.1&target_milestone=1.6.2&target_milestone=1.9.1&target_milestone=1.9.2&target_milestone=1.9.3&target_milestone=1.9.4&target_milestone=1.9.5&target_milestone=1.9.90&target_milestone=1.10.0
+[bugs-fixed-in-1.10]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=164074&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.8.1&target_milestone=1.8.2&target_milestone=1.8.3&target_milestone=1.8.4&target_milestone=1.9.1&target_milestone=1.9.2&target_milestone=1.9.90&target_milestone=1.10.0
 
 ## Stable 1.10 branch
 
