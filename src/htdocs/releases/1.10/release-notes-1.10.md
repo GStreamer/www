@@ -300,9 +300,23 @@ to make use of this new resampler.
 
 #### Support for SMPTE timecodes
 
+- FILL ME
+
 #### GStreamer OpenMAX IL plugin
 
-- FILL ME
+The last gst-omx release, 1.2.0, was in July 2014. It was about time to get
+out a new release with all the improvements that happened in the meantime.
+We'll try to release gst-omx together with all other modules in the future
+from now on.
+
+This release features a lot of bugfixes, improved support for the Raspberry Pi
+and in general improved support for zerocopy rendering via EGL and a few minor
+new features.
+
+At this point, gst-omx is known to work best on the Raspberry Pi platform but
+it is also known to work on various other platforms. Unfortunately we are
+not including configurations for any other platforms, so if you happen to use
+gst-omx: please send us patches with your configuration and code changes!
 
 ### New Elements
 
