@@ -104,7 +104,7 @@ corresponding for the other message types.
 This is now used e.g. by the new [`GST_ELEMENT_FLOW_ERROR`][element-flow-error]
 API to include the actual flow error in the error message, and the
 [souphttpsrc element][souphttpsrc-detailed-errors] to provide the actual HTTP
-status code, and if any, the URL to which a redirection has happened.
+status code, and the URL, if any, to which a redirection has happened.
 
 [element-error-with-details]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#GST-ELEMENT-ERROR-WITH-DETAILS:CAPS
 [element-flow-error]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#GST-ELEMENT-FLOW-ERROR:CAPS
@@ -114,7 +114,7 @@ status code, and if any, the URL to which a redirection has happened.
 
 Sometimes, elements need to redirect the current stream URL and tell the
 application to proceed with this new URL, possibly using a different
-protocol (thus changing the pipeline configuration) too. Until now, this was
+protocol too (thus changing the pipeline configuration). Until now, this was
 informally implemented using `ELEMENT` messages on the bus.
 
 Now this has been formalized in form of a new `GST_MESSAGE_REDIRECT` message.
@@ -420,7 +420,7 @@ For more information on these new elements, check out Edward Hervey's talk
 #### LV2 ported from 0.10 and switched from slv2 to lilv2
 
 The LV2 wrapper plugin has been ported to 1.0 and moved from using the
-deprecated slv2 library to its replacement lilv2. We support sources and
+deprecated slv2 library to its replacement liblv2. We support sources and
 filter elements. lv2 is short for *Linux Audio Developer's Simple Plugin API
 (LADSPA) version 2* and is an open standard for audio plugins which includes
 support for audio synthesis (generation), digital signal processing of digital
