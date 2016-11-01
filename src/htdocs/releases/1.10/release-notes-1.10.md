@@ -39,7 +39,7 @@ improvements.
 ##### Receive property change notifications via bus messages
 
 New API was added to receive element property change notifications via
-bus messages. So far applications had to connect a callback to an element's
+bus messages. So far, applications had to connect a callback to an element's
 `notify::property-name` signal via the GObject API, which was inconvenient for
 at least two reasons: one had to implement a signal callback function, and that
 callback function would usually be called from one of the streaming threads, so
@@ -48,16 +48,16 @@ main application thread which was tedious and error-prone.
 
 Enter [`gst_element_add_property_notify_watch()`][notify-watch] and
 [`gst_element_add_property_deep_notify_watch()`][deep-notify-watch] which will
-watch for changes of a property on the specified element, either only for the
-specified element or recursively for a whole bin or pipeline. Whenever such a
+watch for changes of a property on the specified element, either only for this
+element or recursively for a whole bin or pipeline. Whenever such a
 property change happens, a `GST_MESSAGE_PROPERTY_NOTIFY` message will be posted
 on the pipeline bus with details of the element, the property and the new
 property value, all of which can be retrieved later from the message in the
 application via [`gst_message_parse_property_notify()`][parse-notify]. Unlike
 the GstBus watch functions, this API does not rely on a running GLib main loop.
 
-This can be used to be notified asynchronously of caps changes in the pipeline,
-or volume changes on an audio sink element, for example.
+The above can be used to be notified asynchronously of caps changes in the
+pipeline, or volume changes on an audio sink element, for example.
 
 [notify-watch]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-add-property-notify-watch
 [deep-notify-watch]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-add-property-deep-notify-watch
@@ -77,10 +77,10 @@ element created.
 ##### Error messages can contain additional structured details
 
 It is often useful to provide additional, structured information in error,
-warning or info messages for applications (or higher-level elements) to do
+warning or info messages for applications (or higher-level elements) to make
 intelligent decisions based on them. To allow this, error, warning and info
-messages now have API for adding arbitrary additional information in a
-`GstStructure` to them:
+messages now have API for adding arbitrary additional information to them
+using a `GstStructure`:
 [`GST_ELEMENT_ERROR_WITH_DETAILS`][element-error-with-details] and the
 corresponding for the other message types.
 
@@ -95,16 +95,16 @@ status code, and if any, the URL to which a redirection has happened.
 
 ##### Redirect messages have official API now
 
-Sometimes elements need to redirect the current stream URL and tell the
-application to proceed with a different URL, possibly using a different
-protocol (thus changing the pipeline configuration). Until now this was
-implemented informally using `ELEMENT` messages on the bus.
+Sometimes, elements need to redirect the current stream URL and tell the
+application to proceed with this new URL, possibly using a different
+protocol (thus changing the pipeline configuration) too. Until now, this was
+informally implemented using `ELEMENT` messages on the bus.
 
 Now this has been formalized in form of a new `GST_MESSAGE_REDIRECT` message.
 A new redirect message can be created using [`gst_message_new_redirect()`][new-redirect].
 If needed, multiple redirect locations can be specified by calling
 [`gst_message_add_redirect_entry()`][add-redirect] to add further redirect
-entries, all with metadata so that the application can decide which is
+entries, all with metadata, so the application can decide which is
 most suitable (e.g. depending on the bitrate tags).
 
 [new-redirect]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstMessage.html#gst-message-new-redirect
@@ -120,7 +120,7 @@ previously internal to GStreamer have now been exposed for general use.
 The existing pad link functions will refuse to link pads or elements at
 different levels in the pipeline hierarchy, requiring the developer to
 create ghost pads where necessary. These new utility functions will
-automatically create ghostpads if needed when linking pads at different
+automatically create ghostpads as needed when linking pads at different
 levels of the hierarchy (e.g. from an element inside a bin to one that's at
 the same level in the hierarchy as the bin, or in another bin).
 
@@ -129,10 +129,10 @@ the same level in the hierarchy as the bin, or in another bin).
 
 ##### Miscellaneous
 
-Pad probes: IDLE and BLOCK probes now work slightly differently in pull mode
+Pad probes: IDLE and BLOCK probes now work slightly differently in pull mode,
 so that push and pull mode have opposite scenarios for idle and blocking probes.
-In push mode it will block with some data type and IDLE won't have any data.
-In pull mode it will block _before_ getting a buffer and will be IDLE once some
+In push mode, it will block with some data type and IDLE won't have any data.
+In pull mode, it will block _before_ getting a buffer and will be IDLE once some
 data has been obtained. ([commit][commit-pad-probes], [bug][bug-pad-probes])
 
 [commit-pad-probes]: https://cgit.freedesktop.org/gstreamer/gstreamer/commit/gst/gstpad.c?id=368ee8a336d0c868d81fdace54b24431a8b48cbf
@@ -144,21 +144,21 @@ data has been obtained. ([commit][commit-pad-probes], [bug][bug-pad-probes])
 
 [parse-launch-full]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstParse.html#gst-parse-launch-full
 
-The default GStreamer debug log handler can now be removed already before
+The default GStreamer debug log handler can now be removed before
 calling `gst_init()`, so that it will never get installed and won't be active
 during initialization.
 
 A new [`STREAM_GROUP_DONE` event][stream-group-done-event] was added. In some
 ways it works similar to the `EOS` event in that it can be used to unblock
-downstream elements which may be waiting for further data such as for example
-`input-selector`. Unlike `EOS` further data flow may happen after the
+downstream elements which may be waiting for further data, such as for example
+`input-selector`. Unlike `EOS`, further data flow may happen after the
 `STREAM_GROUP_DONE` event though (and without the need to flush the pipeline).
 This is used to unblock input-selector when switching between streams in
 adaptive streaming scenarios (e.g. HLS).
 
 [stream-group-done-event]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstEvent.html#gst-event-new-stream-group-done
 
-The `gst-launch-1.0` command line tool will now print caps unescaped in verbose
+The `gst-launch-1.0` command line tool will now print unescaped caps in verbose
 mode (enabled by the -v switch).
 
 [`gst_element_call_async()`][call-async] has been added as convenience API for
@@ -169,7 +169,7 @@ thread-pool that is shared by all elements.
 [call-async]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-call-async
 
 Various race conditions have been fixed around the `GstPoll` API used by e.g.
-`GstBus` and `GstBufferPool`. Some of these would manifest themselves primarily
+`GstBus` and `GstBufferPool`. Some of these manifested themselves primarily
 on Windows.
 
 `GstAdapter` can now keep track of discontinuities signalled via the `DISCONT`
@@ -193,24 +193,23 @@ and collections of streams ([`GstStreamCollections`][stream-collection-api]).
 
 A [`GstStream`][stream-api] contains all the information pertinent to a stream,
 such as stream id, caps, tags, flags and stream type(s); it can represent a
-single elementary streams (e.g. audio, video, subtitles, etc.) or a container
-stream. It will depend on the context which it will be. In a decodebin3/playbin3
-context it will typically be elementary streams that can be selected and
-unselected.
+single elementary stream (e.g. audio, video, subtitles, etc.) or a container
+stream. This will depend on the context. In a decodebin3/playbin3 one
+it will typically be elementary streams that can be selected and unselected.
 
 A [`GstStreamCollection`][stream-collection-api] represents a group of streams
 and is used to announce or publish all available streams. A GstStreamCollection
 is immutable - once created it won't change. If the available streams change,
 e.g. because a new stream appeared or some streams disappeared, a new stream
-collection will be published. The new stream collection may contain streams
-from the previous collection, if those streams persist, or completely new
-streams. Stream collections do not yet list all theoretically available streams,
+collection will be published. This new stream collection may contain streams
+from the previous collection if those streams persist, or completely new ones.
+Stream collections do not yet list all theoretically available streams,
 e.g. other available DVD angles or alternative resolutions/bitrate of the same
 stream in case of adaptive streaming.
 
 New events and messages have been added to notify or update other elements and
 the application about which streams are currently available and/or selected.
-This way we can easily and seamlessly let the application know whenever the
+This way, we can easily and seamlessly let the application know whenever the
 available streams change, as happens frequently with digital television streams
 for example. The new system is also more flexible. For example, it is now also
 possible for the application to select multiple streams of the same type
@@ -219,10 +218,10 @@ possible for the application to select multiple streams of the same type
 A [`STREAM_COLLECTION` message][stream-collection-msg] is posted on the bus
 to inform the parent bin (e.g. `playbin3`, `decodebin3`) and/or the application
 about what streams are available, so you no longer have to hunt for this
-information (number of streams of each type, caps, tags etc.) in different
+information (number of streams of each type, caps, tags etc.) at different
 places. Bins and/or the application can intercept this message synchronously
 to select and deselect streams before any data is produced (for the case where
-elements such as the demuxers support the new stream  API, not necessarily in
+elements such as the demuxers support the new stream API, not necessarily in
 the parsebin compatibility fallback case). Similarly, there is also a
 [`STREAM_COLLECTION` event][stream-collection-event] to inform downstream
 elements of the available streams. This event can be used by elements to
@@ -248,23 +247,24 @@ used to look up the GstStream from the `STREAM_START` sticky event on a pad.
 Once the available streams have been published, streams can be selected via
 their stream ID using the new `SELECT_STREAMS` event, which can be created
 with [`gst_event_new_select_streams()`][event-select-streams]. The new API
-supports selecting multiple streams per stream type. In future we may also
-implement explicit deselection of streams that will never be used so that
-elements can skip those and never expose them or output data for them in the
+supports selecting multiple streams per stream type. In the future, we may also
+implement explicit deselection of streams that will never be used, so
+elements can skip these and never expose them or output data for them in the
 first place.
 
 The application is then notified of the currently selected streams via the
 new `STREAMS_SELECTED` message on the pipeline bus, containing both the current
 stream collection as well as the selected streams. This might be posted in
-response to the application sending a `SELECT_STREAMS` event or when `decodebin3`
-or `playbin3` decide on the streams selected initially without application input.
+response to the application sending a `SELECT_STREAMS` event or when
+`decodebin3` or `playbin3` decide on the streams initially selected without
+application input.
 
 [event-select-streams]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstEvent.html#gst-event-new-select-streams
 
 ##### Further reading
 
 See further below for some notes on the new elements supporting this new
-stream API, namely `decodebin3`, `playbin3` and `parsebin`.
+stream API, namely: `decodebin3`, `playbin3` and `parsebin`.
 
 More information about the new API and the new elements can also be found here:
 
@@ -281,7 +281,7 @@ More information about the new API and the new elements can also be found here:
 #### Audio conversion and resampling API
 
 The audio conversion library received a completely new and rewritten audio
-resampler complementing the audio conversion routines moved into the audio
+resampler, complementing the audio conversion routines moved into the audio
 library in the [previous release][release-notes-1.8]. Integrating the resampler
 with the other audio conversion library allows us to implement generic
 conversion much more efficiently, as format conversion and resampling can now
@@ -289,14 +289,14 @@ be done in the same processing loop instead of having to do it in separate
 steps (our element implementations do not make use of this yet though).
 
 The new audio resampler library is a combination of some of the best features
-of other samplers such as ffmpeg, speex, SRC. It natively supports S16, S32,
+of other samplers such as ffmpeg, speex and SRC. It natively supports S16, S32,
 F32 and F64 formats and uses optimized x86 and neon assembly for most of its
-processing. It has support for dynamically changing sample rates by incrementally
+processing. It also has support for dynamically changing sample rates by incrementally
 updating the filter tables using linear or cubic interpolation. According to
-some benchmarks it's one of the fastest and most accurate resamplers around.
+some benchmarks, it's one of the fastest and most accurate resamplers around.
 
 The `audioresample` plugin has been ported to the new audio library functions
-to make use of this new resampler.
+to make use of the new resampler.
 
 [release-notes-1.8]: https://gstreamer.freedesktop.org/releases/1.8/
 
@@ -309,7 +309,7 @@ to make use of this new resampler.
 #### GStreamer OpenMAX IL plugin
 
 The last gst-omx release, 1.2.0, was in July 2014. It was about time to get
-out a new one with all the improvements that happened in the meantime.
+a new one out with all the improvements that happened in the meantime.
 From now on, we will try to release gst-omx together with all other modules.
 
 This release features a lot of bugfixes, improved support for the Raspberry Pi
@@ -317,7 +317,7 @@ and in general improved support for zerocopy rendering via EGL and a few minor
 new features.
 
 At this point, gst-omx is known to work best on the Raspberry Pi platform but
-it is also known to work on various other platforms. Unfortunately we are
+it is also known to work on various other platforms. Unfortunately, we are
 not including configurations for any other platforms, so if you happen to use
 gst-omx: please send us patches with your configuration and code changes!
 
@@ -327,11 +327,11 @@ gst-omx: please send us patches with your configuration and code changes!
 
 This release features new decoding and playback elements as experimental
 technology preview: `decodebin3` and `playbin3` will soon supersede the
-existing `decodebin` and `playbin` elements. We skip the number 2 here
-as that was used back in the 0.10 days already, which might cause confusion.
+existing `decodebin` and `playbin` elements. We skipped the number 2 because
+it was already used back in the 0.10 days, which might cause confusion.
 Experimental technology preview means that everything should work fine already,
-but we can't guarantee there may not be some minor behavioral changes in the
-next cycle. In any case, please test and report back any problems.
+but we can't guarantee there won't be minor behavioral changes in the
+next cycle. In any case, please test and report any problems back.
 
 Before we go into detail about what these new elements improve, let's look at
 the new [`parsebin`][parsebin] element. It works similarly to `decodebin` and
@@ -351,32 +351,32 @@ will have noticed. The improved timestamp tracking also enables `multiqueue`
 to keep streams of the same type (audio, video) aligned better, making sure
 switching between streams of the same type is very fast.
 
-Another major improvement of `decodebin3` is that it will no longer decode
+Another major improvement in `decodebin3` is that it will no longer decode
 streams that are not being used. With the old `decodebin` and `playbin`, when
-there were 8 audio streams we would always decode all 8 audio streams even
-if 7 of those audio streams were not actually used. This caused a lot of
+there were 8 audio streams we would always decode all 8 streams even
+if 7 were not actually used. This caused a lot of
 CPU overhead, which was particularly problematic on embedded devices. When
 switching between streams `decodebin3` will try hard to re-use existing
 decoders. This is useful when switching between multiple streams of the same
 type if they are encoded in the same format.
 
-This is also useful when the available streams change on the fly, as might
+The above is also useful when the available streams change on the fly, as might
 happen with radio streams (chained Oggs), digital television broadcasts, when
 adaptive streaming streams change bitrate, or when switching gaplessly
-to the next title. In order to guarantee a seamless transition the old
+to the next title. In order to guarantee a seamless transition, the old
 `decodebin2` would plug a second decoder for the new stream while finishing
-up the old stream. With `decodebin3` that is no longer needed, at least not
+up the old stream. With `decodebin3`, this is no longer needed. At least not
 when the new and old format are the same. This will be particularly useful
 on embedded systems where it is often not possible to run multiple decoders
 at the same time, or tearing down and setting up decoders is fairly expensive.
 
 `decodebin3` also allows for multiple input streams, not just a single one.
-This will be useful for gapless playback in future, or for feeding multiple
-external subtitle streams to decodebin/playbin.
+This will be useful, in the future, for gapless playback, or for feeding
+multiple external subtitle streams to decodebin/playbin.
 
-`playbin3` makes use of `decodebin3` internally and will supersede `playbin`.
+`playbin3` uses `decodebin3` internally, and will supersede `playbin`.
 It was decided that it would be too risky to make the old `playbin` use the
-new `decodebin3` internally in a backwards compatible way. The new architecture
+new `decodebin3` in a backwards-compatible way. The new architecture
 makes it awkward, if not impossible, to maintain perfect backwards compatibility
 in some aspects, hence `playbin3` was born, and developers can migrate to the
 new element and new API at their own pace.
