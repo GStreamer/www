@@ -1,8 +1,6 @@
 # GStreamer 1.10 Release Notes
 
-**NOTE: THESE RELEASE NOTES ARE VERY INCOMPLETE AND STILL WORK-IN-PROGRESS**
-
-**GStreamer 1.10 is scheduled for release in November 2016.**
+**GStreamer 1.10.0 was released on 1st November 2016.**
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
@@ -13,7 +11,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.10/][latest] for the latest
 version of this document.
 
-*Last updated: Saturday 22 Oct 2016, 16:00 UTC [(log)][gitlog]*
+*Last updated: Tuesday 1 Nov 2016, 15:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.10/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.10/release-notes-1.10.md
@@ -41,9 +39,12 @@ improvements.
 - A new `gst-docs` module has been created, and we are in the process of moving
   our documentation to a markdown-based format for easier maintenance and
   updates
+- A new `gst-examples` module has been create, which contains example
+  GStreamer applications and is expected to grow with many more examples in
+  the future
 - Various OpenGL and OpenGL|ES-related fixes and improvements for greater
   efficiency on desktop and mobile platforms, and Vulkan support on Wayland was
-  also dded
+  also added
 - Extensive improvements to the VAAPI plugins for improved robustness and
   efficiency
 - Lots of fixes and improvements across the board, spanning RTP/RTSP, V4L2,
@@ -237,7 +238,7 @@ possible for the application to select multiple streams of the same type
 A [`STREAM_COLLECTION` message][stream-collection-msg] is posted on the bus
 to inform the parent bin (e.g. `playbin3`, `decodebin3`) and/or the application
 about what streams are available, so you no longer have to hunt for this
-information at different places. The availabe information includes number of
+information at different places. The available information includes number of
 streams of each type, caps, tags etc.  Bins and/or the application can intercept
 the message synchronously to select and deselect streams before any data is
 produced - for the case where elements such as the demuxers support the new
@@ -367,7 +368,7 @@ gst-omx: please send us patches with your configuration and code changes!
 #### decodebin3, playbin3, parsebin (experimental)
 
 This release features new decoding and playback elements as experimental
-technology previews: `decodebin3` and `playbin3` will soon supercede the
+technology previews: `decodebin3` and `playbin3` will soon supersede the
 existing `decodebin` and `playbin` elements. We skipped the number 2 because
 it was already used back in the 0.10 days, which might cause confusion.
 Experimental technology preview means that everything should work fine already,
@@ -433,7 +434,7 @@ The new elements are not entirely feature-complete yet: `playbin3` does not
 support so-called decodersinks yet where the data is not decoded inside
 GStreamer but passed directly for decoding to the sink. `decodebin3` is missing
 the various `autoplug-*` signals to influence which decoders get autoplugged
-in which oder. We're looking to add back this functionality, but it will probably
+in which order. We're looking to add back this functionality, but it will probably
 be in a different way, with a single unified signal and using GstStream perhaps.
 
 For more information on these new elements, check out Edward Hervey's talk
@@ -450,7 +451,7 @@ deprecated slv2 library to its replacement liblv2. We support sources and
 filter elements. lv2 is short for *Linux Audio Developer's Simple Plugin API
 (LADSPA) version 2* and is an open standard for audio plugins which includes
 support for audio synthesis (generation), digital signal processing of digital
-audio, and MIDI. The new lv2 plugin supercedes the existing LADSPA plugin.
+audio, and MIDI. The new lv2 plugin supersedes the existing LADSPA plugin.
 
 #### WebRTC DSP Plugin for echo-cancellation, gain control and noise suppression
 
@@ -665,6 +666,35 @@ license.
   debugging. It now supports the latest version of the RFB
   protocol and uses GIO everywhere.
 - `tsdemux` can now read ATSC E-AC-3 streams.
+- New `GstVideoDirection` video orientation interface for rotating, flipping
+  and mirroring video in 90° steps. It is implemented by the `videoflip` and
+  `glvideoflip` elements currently.
+- It is now possible to give `appsrc` a duration in time, and there is now a
+  non-blocking try-pull API for `appsink` that returns NULL if nothing is
+  available right now.
+- `x264enc` has support now for chroma-site and colorimetry settings
+- A new JPEG2000 parser element was added, and the JPEG2000 caps were cleaned
+  up and gained more information needed in combination with RTP and various
+  container formats.
+- Reverse playback support for `videorate` and `deinterlace` was implemented
+- Various improvements everywhere for reverse playback and `KEY_UNITS` trick mode
+- New cleaned up `rawaudioparse` and `rawvideoparse` elements that replace the
+  old `audioparse` and `videoparse` elements. There are compatibility element
+  factories registered with the old names to allow existing code to continue
+  to work.
+- The Decklink plugin gained support for 10 bit video SMPTE timecodes, and
+  generally got many bugfixes for various issues.
+- New API in `GstPlayer` for setting the multiview mode for stereoscopic
+  video, setting an HTTP/RTSP user agent and a time offset between audio and
+  video. In addition to that, there were various bugfixes and the new
+  gst-examples module contains Android, iOS, GTK+ and Qt example applications.
+- `GstBin` has new API for suppressing various `GstElement` or `GstObject`
+  flags that would otherwise be affected by added/removed child elements. This
+  new API allows `GstBin` subclasses to handle for themselves if they
+  should be considered a sink or source element, for example.
+- The `subparse` element can handle WebVTT streams now.
+- A new `sdpsrc` element was added that can read an SDP from a file, or get it
+  as a string as property and then sets up an RTP pipeline accordingly.
 
 ### Plugin moves
 
@@ -770,38 +800,6 @@ improvements and bugfixes from the ffmpeg team in addition to various new
 codec mappings on the GStreamer side and quite a few bugfixes to the GStreamer
 integration to make it more robust.
 
-## Miscellaneous
-
-- New `GstVideoDirection` video orientation interface for rotating, flipping
-  and mirroring video in 90° steps. It is implemented by the `videoflip` and
-  `glvideoflip` elements currently.
-- It is now possible to give `appsrc` a duration in time, and there is now a
-  non-blocking try-pull API for `appsink` that returns NULL if nothing is
-  available right now.
-- `x264enc` has support now for chroma-site and colorimetry settings
-- A new JPEG2000 parser element was added, and the JPEG2000 caps were cleaned
-  up and gained more information needed in combination with RTP and various
-  container formats.
-- Reverse playback support for `videorate` and `deinterlace` was implemented
-- Various improvements everywhere for reverse playback and `KEY_UNITS` trick mode
-- New cleaned up `rawaudioparse` and `rawvideoparse` elements that replace the
-  old `audioparse` and `videoparse` elements. There are compatibility element
-  factories registered with the old names to allow existing code to continue
-  to work.
-- The Decklink plugin gained support for 10 bit video SMPTE timecodes, and
-  generally got many bugfixes for various issues.
-- New API in `GstPlayer` for setting the multiview mode for stereoscopic
-  video, setting an HTTP/RTSP user agent and a time offset between audio and
-  video. In addition to that, there were various bugfixes and the new
-  gst-examples module contains Android, iOS, GTK+ and Qt example applications.
-- `GstBin` has new API for suppressing various `GstElement` or `GstObject`
-  flags that would otherwise be affected by added/removed child elements. This
-  new API allows `GstBin` subclasses to handle for themselves if they
-  should be considered a sink or source element, for example.
-- The `subparse` element can handle WebVTT streams now.
-- A new `sdpsrc` element was added that can read an SDP from a file, or get it
-  as a string as property and then sets up an RTP pipeline accordingly.
-
 ## Build and Dependencies
 
 ### Experimental support for Meson as build system
@@ -831,7 +829,7 @@ The Meson build currently still lacks many of the fine-grained configuration
 options to enable/disable specific plugins. These will be added back in due
 course.
 
-Note: The meson build files are not disted in the source tarballs, you will
+Note: The meson build files are not distributed in the source tarballs, you will
 need to get GStreamer from git if you want try it out.
 
 [meson]: http://mesonbuild.com/
@@ -1071,7 +1069,7 @@ which is a stable branch.
 
 ### 1.10.0
 
-1.10.0 was released on TBD 2016.
+1.10.0 was released on 1st November 2016.
 
 ## Known Issues
 
