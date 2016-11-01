@@ -544,9 +544,13 @@ ISDB-T.
 - Lots of reliability fixes around seek handling and bitrate switching.
 - FILL ME - trick modes?
 
-#### a2dpsink finally works
+#### Bluetooth improvements
 
-- FILL ME
+- The `avdtpsrc` element now supports metadata such as track title, artist
+  name, and more, which devices can send via AVRCP. These are published as
+  tags on the pipeline.
+- The `a2dpsink` element got some love and was cleaned up so that it works
+  after the GStreamer 1.0 port
 
 #### GStreamer VAAPI
 
