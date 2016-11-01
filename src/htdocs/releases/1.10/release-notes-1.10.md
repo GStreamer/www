@@ -28,7 +28,24 @@ improvements.
 
 ## Highlights
 
-- FILL ME
+- Several convenience APIs have been added to make developers' lives easier
+- A new `GstStream` API provides applications a more meaningful view of the
+  structure of streams, simplifying the process of dealing with media in
+  complex container formats
+- Experimental `decodebin3` and `playbin3` elements which bring a number of
+  improvements which were hard to implement within `decodebin` and `playbin`
+- A new `parsebin` element to automatically unpack and parse a stream, stopping
+  just short of decoding
+- Experimental new `meson`-based build system, bringing faster build and much
+  better Windows support (including for building with Visual Studio)
+- A new `gst-docs` module has been created, and we are in the process of moving
+  our documentation to a markdown-based format for easier maintenance and
+  updates
+- Various OpenGL and OpenGL|ES-related fixes and improvements for greater
+  efficiency on desktop and mobile platforms, and Vulkan support on Wayland was
+  also dded
+- Extensive improvements to the VAAPI plugins for improved robustness and
+  efficiency
 
 ## Major new features and changes
 
