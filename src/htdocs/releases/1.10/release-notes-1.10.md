@@ -2,7 +2,7 @@
 
 **NOTE: THESE RELEASE NOTES ARE VERY INCOMPLETE AND STILL WORK-IN-PROGRESS**
 
-**GStreamer 1.10 is scheduled for release in TBD 2016.**
+**GStreamer 1.10 is scheduled for release in November 2016.**
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
@@ -100,13 +100,13 @@ warning or info messages for applications (or higher-level elements) to make
 intelligent decisions based on them. To allow this, error, warning and info
 messages now have API for adding arbitrary additional information to them
 using a `GstStructure`:
-[`GST_ELEMENT_ERROR_WITH_DETAILS`][element-error-with-details] and the
-corresponding for the other message types.
+[`GST_ELEMENT_ERROR_WITH_DETAILS`][element-error-with-details] and
+corresponding API for the other message types.
 
 This is now used e.g. by the new [`GST_ELEMENT_FLOW_ERROR`][element-flow-error]
 API to include the actual flow error in the error message, and the
-[souphttpsrc element][souphttpsrc-detailed-errors] to provide the actual HTTP
-status code, and the URL, if any, to which a redirection has happened.
+[souphttpsrc element][souphttpsrc-detailed-errors] to provide the HTTP
+status code, and the URL (if any) to which a redirection has happened.
 
 [element-error-with-details]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#GST-ELEMENT-ERROR-WITH-DETAILS:CAPS
 [element-flow-error]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#GST-ELEMENT-FLOW-ERROR:CAPS
@@ -119,7 +119,7 @@ application to proceed with this new URL, possibly using a different
 protocol too (thus changing the pipeline configuration). Until now, this was
 informally implemented using `ELEMENT` messages on the bus.
 
-Now this has been formalized in form of a new `GST_MESSAGE_REDIRECT` message.
+Now this has been formalized in the form of a new `GST_MESSAGE_REDIRECT` message.
 A new redirect message can be created using [`gst_message_new_redirect()`][new-redirect].
 If needed, multiple redirect locations can be specified by calling
 [`gst_message_add_redirect_entry()`][add-redirect] to add further redirect
@@ -237,14 +237,15 @@ possible for the application to select multiple streams of the same type
 A [`STREAM_COLLECTION` message][stream-collection-msg] is posted on the bus
 to inform the parent bin (e.g. `playbin3`, `decodebin3`) and/or the application
 about what streams are available, so you no longer have to hunt for this
-information (number of streams of each type, caps, tags etc.) at different
-places. Bins and/or the application can intercept this message synchronously
-to select and deselect streams before any data is produced (for the case where
-elements such as the demuxers support the new stream API, not necessarily in
-the parsebin compatibility fallback case). Similarly, there is also a
-[`STREAM_COLLECTION` event][stream-collection-event] to inform downstream
-elements of the available streams. This event can be used by elements to
-aggregate streams from multiple inputs into one single collection.
+information at different places. The availabe information includes number of
+streams of each type, caps, tags etc.  Bins and/or the application can intercept
+the message synchronously to select and deselect streams before any data is
+produced - for the case where elements such as the demuxers support the new
+stream API, not necessarily in the parsebin compatibility fallback case.
+
+Similarly, there is also a [`STREAM_COLLECTION` event][stream-collection-event]
+to inform downstream elements of the available streams. This event can be used
+by elements to aggregate streams from multiple inputs into one single collection.
 
 The `STREAM_START` event was extended so that it can also contain a GstStream
 object with all information about the current stream, see
@@ -275,7 +276,7 @@ The application is then notified of the currently selected streams via the
 new `STREAMS_SELECTED` message on the pipeline bus, containing both the current
 stream collection as well as the selected streams. This might be posted in
 response to the application sending a `SELECT_STREAMS` event or when
-`decodebin3` or `playbin3` decide on the streams initially selected without
+`decodebin3` or `playbin3` decide on the streams to be initially selected without
 application input.
 
 [event-select-streams]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstEvent.html#gst-event-new-select-streams
@@ -349,7 +350,7 @@ the GStreamer Conference 2016.
 #### GStreamer OpenMAX IL plugin
 
 The last gst-omx release, 1.2.0, was in July 2014. It was about time to get
-a new one out with all the improvements that happened in the meantime.
+a new one out with all the improvements that have happened in the meantime.
 From now on, we will try to release gst-omx together with all other modules.
 
 This release features a lot of bugfixes, improved support for the Raspberry Pi
@@ -366,11 +367,11 @@ gst-omx: please send us patches with your configuration and code changes!
 #### decodebin3, playbin3, parsebin (experimental)
 
 This release features new decoding and playback elements as experimental
-technology preview: `decodebin3` and `playbin3` will soon supersede the
+technology previews: `decodebin3` and `playbin3` will soon supercede the
 existing `decodebin` and `playbin` elements. We skipped the number 2 because
 it was already used back in the 0.10 days, which might cause confusion.
 Experimental technology preview means that everything should work fine already,
-but we can't guarantee there won't be minor behavioral changes in the
+but we can't guarantee there won't be minor behavioural changes in the
 next cycle. In any case, please test and report any problems back.
 
 Before we go into detail about what these new elements improve, let's look at
@@ -385,36 +386,38 @@ decoding engine. For one, data is now fed into the internal `multiqueue` element
 *after* it has been parsed and timestamped, which means that the `multiqueue`
 element now has more knowledge and is able to calculate the interleaving of the
 various streams, thus minimizing memory requirements and doing away with magic
-values for buffering limits that were conceived when videos were 240p or 360p
-and which anyone who's tried to play back 4k video streams with decodebin2
-will have noticed. The improved timestamp tracking also enables `multiqueue`
-to keep streams of the same type (audio, video) aligned better, making sure
-switching between streams of the same type is very fast.
+values for buffering limits that were conceived when videos were 240p or 360p.
+Anyone who has tried to play back 4k video streams with decodebin2
+will have noticed the limitations of that approach. The improved timestamp
+tracking also enables `multiqueue` to keep streams of the same type (audio,
+video) aligned better, making sure switching between streams of the same type
+is very fast.
 
 Another major improvement in `decodebin3` is that it will no longer decode
 streams that are not being used. With the old `decodebin` and `playbin`, when
 there were 8 audio streams we would always decode all 8 streams even
-if 7 were not actually used. This caused a lot of
-CPU overhead, which was particularly problematic on embedded devices. When
-switching between streams `decodebin3` will try hard to re-use existing
-decoders. This is useful when switching between multiple streams of the same
-type if they are encoded in the same format.
+if 7 were not actually used. This caused a lot of CPU overhead, which was
+particularly problematic on embedded devices. When switching between streams
+`decodebin3` will try hard to re-use existing decoders. This is useful when
+switching between multiple streams of the same type if they are encoded in the
+same format.
 
-The above is also useful when the available streams change on the fly, as might
-happen with radio streams (chained Oggs), digital television broadcasts, when
-adaptive streaming streams change bitrate, or when switching gaplessly
-to the next title. In order to guarantee a seamless transition, the old
-`decodebin2` would plug a second decoder for the new stream while finishing
-up the old stream. With `decodebin3`, this is no longer needed. At least not
+Re-using decoders is also useful when the available streams change on the fly,
+as might happen with radio streams (chained Oggs), digital television
+broadcasts, when adaptive streaming streams change bitrate, or when switching
+gaplessly to the next title. In order to guarantee a seamless transition, the
+old `decodebin2` would plug a second decoder for the new stream while finishing
+up the old stream. With `decodebin3`, this is no longer needed - at least not
 when the new and old format are the same. This will be particularly useful
 on embedded systems where it is often not possible to run multiple decoders
-at the same time, or tearing down and setting up decoders is fairly expensive.
+at the same time, or when tearing down and setting up decoders is fairly
+expensive.
 
 `decodebin3` also allows for multiple input streams, not just a single one.
 This will be useful, in the future, for gapless playback, or for feeding
 multiple external subtitle streams to decodebin/playbin.
 
-`playbin3` uses `decodebin3` internally, and will supersede `playbin`.
+`playbin3` uses `decodebin3` internally, and will supercede `playbin`.
 It was decided that it would be too risky to make the old `playbin` use the
 new `decodebin3` in a backwards-compatible way. The new architecture
 makes it awkward, if not impossible, to maintain perfect backwards compatibility
@@ -447,14 +450,14 @@ deprecated slv2 library to its replacement liblv2. We support sources and
 filter elements. lv2 is short for *Linux Audio Developer's Simple Plugin API
 (LADSPA) version 2* and is an open standard for audio plugins which includes
 support for audio synthesis (generation), digital signal processing of digital
-audio, and MIDI. The new lv2 plugin supersedes the existing LADSPA plugin.
+audio, and MIDI. The new lv2 plugin supercedes the existing LADSPA plugin.
 
 #### WebRTC DSP Plugin for echo-cancellation, gain control and noise suppression
 
 A set of new elements ([webrtcdsp][webrtcdsp], [webrtcechoprobe][webrtcechoprobe])
 based on the WebRTC DSP software stack can now be used to improve your audio
-voice communication pipelines. It currently supports echo cancellation,
-gain control, noise suppression and more. For more details you may read
+voice communication pipelines. They support echo cancellation, gain control,
+noise suppression and more. For more details you may read
 [Nicolas' blog post][webrtc-blog-post].
 
 [webrtcdsp]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/gst-plugins-bad-plugins-webrtcdsp.html
@@ -473,24 +476,24 @@ license.
 
 #### Major RTP and RTSP improvements
 
-- The RTSP server and source element, as well as the RTP jitterbuffer support
-  remote clock synchronization according to [RFC7273][https://tools.ietf.org/html/rfc7273] now.
+- The RTSP server and source element, as well as the RTP jitterbuffer now support
+  remote clock synchronization according to [RFC7273][https://tools.ietf.org/html/rfc7273].
 - Support for application and profile specific RTCP packets was added.
 - The H265/HEVC payloader/depayloader is again in sync with the final RFC.
 - Seeking stability of the RTSP source and server was improved a lot and
-  runs stable now even when doing scrub-seeking.
-- The RTSP server got various major bugfixes, including for regressions that
+  runs stably now, even when doing scrub-seeking.
+- The RTSP server received various major bugfixes, including for regressions that
   caused the IP/port address pool to not be considered, or NAT hole punching
   to not work anymore. [Bugzilla #766612][https://bugzilla.gnome.org/show_bug.cgi?id=766612]
-- Various other bugfixes that improve stability of RTP and RTSP, including
+- Various other bugfixes that improve the stability of RTP and RTSP, including
   many new unit / integration tests.
 
 #### Improvements to splitmuxsrc and splitmuxsink
 
-- Reliability and error handling improvements, removing at least one deadlock
-  case. `splitmuxsrc` now stops cleanly at the end of the segment when handling
-  a segment seek. We fixed a bug with large amounts of downstream buffering
-  causing incorrect out-of-sequence playback.
+- The splitmux element received reliability and error handling improvements,
+  removing at least one deadlock case. `splitmuxsrc` now stops cleanly at the end
+  of the segment when handling seeks with a stop time. We fixed a bug with large
+  amounts of downstream buffering causing incorrect out-of-sequence playback.
 
 - `splitmuxsrc` now has a `"format-location"` signal to directly specify the list
   of files to play from.
@@ -542,7 +545,7 @@ license.
   pass its transformation downstream. This is a performance improvement as it
   results in less processing being required.
 - The wayland implementation now uses the multi-threaded safe event-loop API
-  allowing correct usage in applications calling wayland functions from
+  allowing correct usage in applications that call wayland functions from
   multiple threads.
 - Support for native 90 degree rotations and horizontal/vertical flips
   in `glimagesink`.
@@ -587,12 +590,12 @@ license.
 #### DASH, HLS and adaptivedemux
 
 - HLS now has support for Alternate Rendition audio and video tracks. Full
-  support for Alternate Rendition subtitle tracks coming soon
-- DASH got support for keyframe-only trick modes if the
-  `GST_SEEK_FLAG_KEY_UNIT` is given when seeking. It will only download
-  keyframes then, which should help with high-speed playback. Changes to skip
-  over multiple frames based on bandwidth and other metrics will be added in
-  the near future.
+  support for Alternate Rendition subtitle tracks will be in an upcoming release.
+- DASH received support for keyframe-only trick modes if the
+  `GST_SEEK_FLAG_TRICKMODE_KEY_UNITS` flag is given when seeking. It will
+  only download keyframes then, which should help with high-speed playback.
+  Changes to skip over multiple frames based on bandwidth and other metrics
+  will be added in the near future.
 - Lots of reliability fixes around seek handling and bitrate switching.
 
 #### Bluetooth improvements
@@ -600,8 +603,8 @@ license.
 - The `avdtpsrc` element now supports metadata such as track title, artist
   name, and more, which devices can send via AVRCP. These are published as
   tags on the pipeline.
-- The `a2dpsink` element got some love and was cleaned up so that it works
-  after the GStreamer 1.0 port
+- The `a2dpsink` element received some love and was cleaned up so that it
+  actually works after the initial GStreamer 1.0 port.
 
 #### GStreamer VAAPI
 
@@ -609,23 +612,23 @@ license.
   far, the available ones, depending on the driver, are:
   `vaapimpeg2dec`, `vaapih264dec`, `vaapih265dec`, `vaapivc1dec`, `vaapivp8dec`,
   `vaapivp9dec` and `vaapijpegdec` (which already was split).
-- Improvements when mapping VA surfaces into memory, differenciating
-  from negotiation caps and allocations caps, since the allocation
+- Improvements when mapping VA surfaces into memory. It now differentiates
+  between negotiation caps and allocations caps, since the allocation
   memory for surfaces may be bigger than one that is going to be
   mapped.
-- `vaapih265enc` got support to constant bitrate mode (CBR).
-- Since several VA drivers are unmaintained, we decide to keep a white list
-  with the va drivers we actually test, which is mostly the i915 and, in some
-  degree, gallium from mesa project. Exporting the environment variable
-  `GST_VAAPI_ALL_DRIVERS` disables the white list.
+- `vaapih265enc` now supports constant bitrate mode (CBR).
+- Since several VA drivers are unmaintained, we decide to keep a whitelist
+  with the va drivers we actually test, which is mostly the i915 and to a lesser
+  degree gallium from the mesa project. Exporting the environment variable
+  `GST_VAAPI_ALL_DRIVERS` disables the whitelist.
 - Plugin features are registered at run-time, according to their support by
   the loaded VA driver. So only the decoders and encoder supported by the
   system are registered. Since the driver can change, some dependencies are
   tracked to invalidate the GStreamer registry and reload the plugin.
 - `dmabuf` importation from upstream has been improved, gaining performance.
-- `vaapipostproc` now can negotiate through caps the buffer transformations.
-- Decoders now can do reverse playback. They only shows I-frames, because the
-  surface pool is smaller than the required by the GOP to show all the
+- `vaapipostproc` now can negotiate buffer transformations via caps.
+- Decoders now can do I-frame only reverse playback. This decodes I-frames
+  only because the surface pool is smaller than the required by the GOP to show all the
   frames.
 - The upload of frames onto native GL textures has been optimized too, keeping
   a cache of the internal structures for the offered textures by the sink.
@@ -633,17 +636,17 @@ license.
 #### V4L2 changes
 
 - More pixels formats are now supported
-- Decoder is now using `G_SELECTION` instead of deprecated `G_CROP`
-- Decoder now uses `STOP` command to handle EOS
+- Decoder is now using `G_SELECTION` instead of the deprecated `G_CROP`
+- Decoder now uses the `STOP` command to handle EOS
 - Transform element can now scale the pixel aspect ratio
 - Colorimetry support has been improved even more
-- We now support `OUTPUT_OVERLAY` type of video node in v4l2sink
+- We now support the `OUTPUT_OVERLAY` type of video node in v4l2sink
 
 #### Miscellaneous
 
 - `multiqueue`'s input pads gained a new `"group-id"` property which
   can be used to group input streams. Typically one will assign
-  different id numbers to audio, video and subtitle streams, for
+  different id numbers to audio, video and subtitle streams for
   example. This way `multiqueue` can make sure streams of the same
   type advance in lockstep if some of the streams are unlinked and the
   `"sync-by-running-time"` property is set. This is used in
@@ -658,9 +661,9 @@ license.
   channel, this is common in some professional or industrial hardware.
 - `libvpx` based decoders (`vp8dec` and `vp9dec`) now create multiple threads on
   computers with multiple CPUs automatically.
-- `rfbsrc` which can receive from a VNC server has seen a lot of
-  debugging, it now supports the latest version of the RFB
-  protocol. It also uses GIO everywhere.
+- `rfbsrc` - used for capturing from a VNC server - has seen a lot of
+  debugging. It now supports the latest version of the RFB
+  protocol and uses GIO everywhere.
 - `tsdemux` can now read ATSC E-AC-3 streams.
 
 ### Plugin moves
@@ -670,15 +673,15 @@ No plugins were moved this cycle. We'll make up for it next cycle, promise!
 ### Rewritten memory leak tracer
 
 GStreamer has had basic functionality to trace allocation and freeing of
-both mini objects (buffers, events, caps, etc.) and objects in form of the
-internal `GstAllocTrace` tracing system, whose API was never exposed in the
-1.x API series. This would at exit dump a list of objects and mini objects
-which had still not been freed at that point if so requested via an environment
-variable. This subsystem has now been removed in favour of a new implementation
-based on the recently-added new tracing framework.
+both mini-objects (buffers, events, caps, etc.) and objects in the form of the
+internal `GstAllocTrace` tracing system. This API was never exposed in the
+1.x API series though. When requested, this would dump a list of objects and
+mini-objects at exit time which had still not been freed at that point,
+enabled with an environment variable. This subsystem has now been removed
+in favour of a new implementation based on the recently-added tracing framework.
 
-New tracing hooks have been added to trace the creation and destruction of
-GstObjects and mini objects, and a new tracer plugin has been written using
+Tracing hooks have been added to trace the creation and destruction of
+GstObjects and mini-objects, and a new tracer plugin has been written using
 those new hooks to track which objects are still live and which are not. If
 GStreamer has been compiled against the libunwind library, the new leaks tracer
 will remember where objects were allocated from as well. By default the leaks
@@ -691,14 +694,14 @@ will also handle the following UNIX signals:
  - `SIGUSR2`: create a checkpoint and print a list of objects created and
    destroyed since the previous checkpoint.
 
-This will not work on Windows, though.
+Unfortunately this will not work on Windows due to no signals, however.
 
 If the `GST_LEAKS_TRACER_STACK_TRACE` environment variable is set, the leaks
 tracer will also log the creation stack trace of leaked objects. This may
 significantly increase memory consumption however.
 
 New `MAY_BE_LEAKED` flags have been added to GstObject and GstMiniObject, so
-that objects and mini objects that are likely to stay around forever can be
+that objects and mini-objects that are likely to stay around forever can be
 flagged and blacklisted from the leak output.
 
 To give the new leak tracer a spin, simply call any GStreamer application such
@@ -708,7 +711,7 @@ as `gst-launch-1.0` or `gst-play-1.0` like this:
 
 If there are any leaks, a warning will be raised at the end.
 
-It is also possible to trace only certain types of objects or mini objects:
+It is also possible to trace only certain types of objects or mini-objects:
 
     GST_TRACERS="leaks(GstEvent,GstMessage)" gst-launch-1.0 videotestsrc num-buffers=10 ! fakesink
 
@@ -738,15 +741,15 @@ the topic.
 - Enhanced (de)interlacing support to always use the `deinterlace` element
   and expose needed properties to users
 - Allow reusing clips children after removing the clip from a layer
-- We are now testing many more rendering format in the gst-validate
+- We are now testing many more rendering formats in the gst-validate
   test suite, and failures have been fixed.
 - Also many bugs have been fixed in this cycle!
 
 ### GStreamer validate changes
 
 This cycle has been focused on making GstValidate more than just a validating
-tool but also a tool to help developers debug their GStreamer issues. When
-reporting, issues, we try to gather as much information as possible and expose
+tool, but also a tool to help developers debug their GStreamer issues. When
+reporting issues, we try to gather as much information as possible and expose
 it to end users in a useful way. For an example of such enhancements, check out
 Thibault Saunier's [blog post](improving-debugging-gstreamer-validate) about
 the new Not Negotiated Error reporting mechanism.
@@ -755,7 +758,7 @@ Playbin3 support has been added so we can run validate tests with `playbin3`
 instead of playbin.
 
 We are now able to properly communicate between `gst-validate-launcher` and
-launched subprocesses with actual IPC between them. It enabled the test
+launched subprocesses with actual IPC between them. That has enabled the test
 launcher to handle failing tests specifying the exact expected issue(s).
 
 [improving-debugging-gstreamer-validate]: https://blogs.s-osg.org/improving-debugging-gstreamer-validate/
@@ -773,8 +776,8 @@ integration to make it more robust.
   and mirroring video in 90° steps. It is implemented by the `videoflip` and
   `glvideoflip` elements currently.
 - It is now possible to give `appsrc` a duration in time, and there is now a
-  non-blocking try-pull API that returns NULL if nothing is available right
-  now.
+  non-blocking try-pull API for `appsink` that returns NULL if nothing is
+  available right now.
 - `x264enc` has support now for chroma-site and colorimetry settings
 - A new JPEG2000 parser element was added, and the JPEG2000 caps were cleaned
   up and gained more information needed in combination with RTP and various
@@ -793,8 +796,8 @@ integration to make it more robust.
   gst-examples module contains Android, iOS, GTK+ and Qt example applications.
 - `GstBin` has new API for suppressing various `GstElement` or `GstObject`
   flags that would otherwise be affected by added/removed child elements. This
-  new API allows `GstBin` subclasses to handle for themselves, e.g. if they
-  should be considered a sink or source element.
+  new API allows `GstBin` subclasses to handle for themselves if they
+  should be considered a sink or source element, for example.
 - The `subparse` element can handle WebVTT streams now.
 - A new `sdpsrc` element was added that can read an SDP from a file, or get it
   as a string as property and then sets up an RTP pipeline accordingly.
@@ -901,7 +904,7 @@ We now provide a "universal" tarball to allow building apps against all the
 architectures currently supported (x86, x86-64, armeabi, armeabi-v7a,
 armeabi-v8a). This is needed for building with recent versions of the Android
 NDK which defaults to building against all supported ABIs. Use [the Android
-player example][android-player-example-build] as a reference of the required
+player example][android-player-example-build] as a reference for the required
 changes.
 
 [android-player-example-build]: https://cgit.freedesktop.org/gstreamer/gst-examples/commit/playback/player/android?id=a5cdde9119f038a1eb365aca20faa9741a38e788
@@ -1104,7 +1107,7 @@ in March.
 
 *These release notes have been prepared by Olivier Crête, Sebastian Dröge,
 Nicolas Dufresne, Edward Hervey, Víctor Manuel Jáquez Leal, Tim-Philipp
-Müller, Reynaldo H. Verdejo Pinochet, Arun Raghavan, Thibault Saunier, Wim
-Taymans, Matthew Waters*
+Müller, Reynaldo H. Verdejo Pinochet, Arun Raghavan, Thibault Saunier,
+Jan Schmidt, Wim Taymans, Matthew Waters*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
