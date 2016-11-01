@@ -1099,7 +1099,8 @@ in March.
 - - -
 
 *These release notes have been prepared by Olivier Crête, Sebastian Dröge,
-Nicolas Dufresne, Víctor Manuel Jáquez Leal, Arun Raghavan, Tim-Philipp
-Müller, Wim Taymans, Matthew Waters*
+Nicolas Dufresne, Edward Hervey, Víctor Manuel Jáquez Leal, Tim-Philipp
+Müller, Reynaldo H. Verdejo Pinochet, Arun Raghavan, Thibault Saunier, Wim
+Taymans, Matthew Waters*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
