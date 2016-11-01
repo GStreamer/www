@@ -323,17 +323,91 @@ gst-omx: please send us patches with your configuration and code changes!
 
 ### New Elements
 
-#### decodebin3, urisrcbin, parsebin and playbin3
+#### decodebin3, playbin3, parsebin (experimental)
 
-- FILL ME
+This release features new decoding and playback elements as experimental
+technology preview: `decodebin3` and `playbin3` will soon supersede the
+existing `decodebin` and `playbin` elements. We skip the number 2 here
+as that was used back in the 0.10 days already, which might cause confusion.
+Experimental technology preview means that everything should work fine already,
+but we can't guarantee there may not be some minor behavioural changes in the
+next cycle. In any case, please test and report back any problems.
+
+Before we go into detail about what these new elements improve, let's look at
+the new [`parsebin`][parsebin] element. It works similarly to `decodebin` and
+`decodebin3`, only that it stops one step short and does not plug any actual
+decoder elements. It will only plug parsers, tag readers, demuxers and
+depayloaders.
+
+[`decodebin3`'s][decodebin3] internal architecture is slightly different from
+the existing `decodebin` element and fixes many long-standing issues with our
+decoding engine. For one, data is now fed into the internal `multiqueue` element
+*after* it has been parsed and timestamped, which means that the `multiqueue`
+element now has more knowledge and is able to calculate the interleaving of the
+various streams, thus minimising memory requirements and doing away with magic
+values for buffering limits that were conceived when videos were 240p or 360p
+and which anyeone who's tried to play back 4k video streams with decodebin2
+will have noticed. The improved timestamp tracking also enables `multiqueue`
+to keep streams of the same type (audio, video) aligned better, making sure
+switching between streams of the same type is very fast.
+
+Another major improvement of `decodebin3` is that it will no longer decode
+streams that are not being used. With the old `decodebin` and `playbin`, when
+there were 8 audio streams we would always decode all 8 audio streams even
+if 7 of those audio streams were not actually used. This caused a lot of
+CPU overhead, which was particularly problematic on embedded devices. When
+switching between streams `decodebin3` will try hard to re-use existing
+decoders. This is useful when switching between multiple streams of the same
+type if they are encoded in the same format.
+
+This is also useful when the available streams change on the fly, as might
+happen with radio streams (chained Oggs), digital television broadcasts, when
+adaptive streaming streams change bitrate, or when switching gaplessly
+to the next title. In order to guarantee a seamless transition the old
+`decodebin2` would plug a second decoder for the new stream while finishing
+up the old stream. With `decodebin3` that is no longer needed, at least not
+when the new and old format are the same. This will be particularly useful
+on embedded systems where it is often not possible to run multiple decoders
+at the same time, or tearing down and setting up decoders is fairly expensive.
+
+`decodebin3` also allows for multiple input streams, not just a single one.
+This will be useful for gapless playback in future, or for feeding multiple
+external subtitle streams to decodebin/playbin.
+
+`playbin3` makes use of `decodebin3` internally and will supersede `playbin`.
+It was decided that it would be too risky to make the old `playbin` use the
+new `decodebin3` internally in a backwards compatible way. The new architecture
+makes it awkward, if not impossible, to maintain perfect backwards compatibility
+in some aspects, hence `playbin3` was born, and developers can migrate to the
+new element and new API at their own pace.
+
+All of these new elements make use of the new `GstStream` API for listing and
+selecting streams, as described above. `parsebin` provides backwards
+compatibility for demuxers and parsers which do not advertise their streams
+using the new API yet (which is most).
+
+The new elements are not entirely feature-complete yet: `playbin3` does not
+support so-called decodersinks yet where the data is not decoded inside
+GStreamer but passed directly for decoding to the sink. `decodebin3` is mising
+the various `autoplug-*` signals to influence which decoders get autoplugged
+in which oder. We're looking to add back this functionality, but it will probably
+be in a different way, with a single unified signal and using GstStream perhaps.
+
+For more information on these new elements, check out Edward Hervey's talk
+[*decodebin3 - dealing with modern playback use cases*][db3-talk]
+
+[parsebin]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-plugins/html/gst-plugins-base-plugins-parsebin.html
+[decodebin3]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-plugins/html/gst-plugins-base-plugins-decodebin3.html
+[db3-talk]: https://gstconf.ubicast.tv/videos/decodebin3-or-dealing-with-modern-playback-use-cases/
 
 #### LV2 ported from 0.10 and switched from slv2 to lilv2
 
-The LV2 plugin has been ported from 0.10 to 1.0 and moved from using the
+The LV2 wrapper plugin has been ported to 1.0 and moved from using the
 deprecated slv2 library to its replacement lilv2. We support sources and
-filter elements.
-
-- FILL ME
+filter elements. lv2 is short for *Linux Audio Developer's Simple Plugin API
+(LADSPA) version 2* and is an open standard for audio plugins which includes
+support for audio synthesis (generation), digital signal processing of digital
+audio, and MIDI. The new lv2 plugin supersedes the existing LADSPA plugin.
 
 #### WebRTC DSP Plugin for echo-cancellation, gain control and noise suppression
 
@@ -367,14 +441,14 @@ H265 payloader sync with RFC
 
 - FILL ME
 
-#### Improvements to splitmuxsrc
+#### Improvements to splitmuxsrc and splitmuxsink
 
 Reliability and error handling improvements, removing at least one deadlock
-case. splitmuxsrc now stops cleanly at the end of the segment when handling
+case. `splitmuxsrc` now stops cleanly at the end of the segment when handling
 a segment seek. We fixed a bug with large amounts of downstream buffering
 causing incorrect out-of-sequence playback.
 
-splitmuxsrc now has a format-location signal to directly specify the list
+`splitmuxsrc` now has a `"format-location"` signal to directly specify the list
 of files to play from.
 
 #### OpenGL/GLES improvements
