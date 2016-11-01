@@ -452,25 +452,31 @@ license.
 
 #### Major RTP and RTSP improvements
 
-RTX, jitterbuffer, RTSP server fixes, rtspsrc seeking stability
-App and protocol specific RTCP
-RFC7273 support
-H265 payloader sync with RFC
-
-
-- FILL ME
+- The RTSP server and source element, as well as the RTP jitterbuffer support
+  remote clock synchronization according to [RFC7273][https://tools.ietf.org/html/rfc7273] now.
+- Support for application and protocol specific RTCP packets was added.
+- The H265/HEVC payloader/depayloader is again in sync with the final RFC.
+- Seeking stability of the RTSP source and server was improved a lot and
+  runs stable now even when doing scrub-seeking.
+- The RTSP server got various major bugfixes, including for regressions that
+  caused the IP/port address pool to not be considered, or NAT hole punching
+  to not work anymore. [Bugzilla #766612][https://bugzilla.gnome.org/show_bug.cgi?id=766612]
+- Various other bugfixes that improve stability of RTP and RTSP, including
+  many new unit / integration tests.
 
 #### Improvements to splitmuxsrc and splitmuxsink
 
-Reliability and error handling improvements, removing at least one deadlock
-case. `splitmuxsrc` now stops cleanly at the end of the segment when handling
-a segment seek. We fixed a bug with large amounts of downstream buffering
-causing incorrect out-of-sequence playback.
+- Reliability and error handling improvements, removing at least one deadlock
+  case. `splitmuxsrc` now stops cleanly at the end of the segment when handling
+  a segment seek. We fixed a bug with large amounts of downstream buffering
+  causing incorrect out-of-sequence playback.
 
-`splitmuxsrc` now has a `"format-location"` signal to directly specify the list
-of files to play from.
+- `splitmuxsrc` now has a `"format-location"` signal to directly specify the list
+  of files to play from.
 
-- force-keyunit events
+- `splitmuxsink` can now optionally send force-keyunit events to upstream
+  elements to allow splitting files more accurately instead of having to wait
+  for upstream to provide a new keyframe by itself.
 
 #### OpenGL/GLES improvements
 
@@ -860,13 +866,15 @@ changes.
 
 #### Miscellaneous
 
-- FILL ME
+- New `ahssrc` element that allows reading the hardware sensors, e.g. compass
+  or accelerometer.
 
 ### macOS (OS/X) and iOS
 
-- We now support querying available devices on OS/X via the GstDeviceProvider
-  API.
-- We can now create OpenGL|ES 3.x contexts on iOS.
+- Support for querying available devices on OS/X via the GstDeviceProvider
+  API was added.
+- It is now possible to create OpenGL|ES 3.x contexts on iOS and use them in
+  combination with the VideoToolbox based decoder element.
 - many OpenGL/GLES improvements, see OpenGL section above
 
 ### Windows
