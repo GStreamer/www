@@ -1024,16 +1024,17 @@ which is a stable branch.
 
 - iOS builds with iOS 6 SDK and old C++ STL. You need to select iOS 6 instead
   of 7 or 8 in your projects settings to be able to link applications.
-  [Bugzilla #766366][https://bugzilla.gnome.org/show_bug.cgi?id=766366]
+  [Bug #766366](https://bugzilla.gnome.org/show_bug.cgi?id=766366)
 - Code signing for Apple platforms has some problems currently, requiring
-  manual work to get your application signed. [Bugzilla #771860][https://bugzilla.gnome.org/show_bug.cgi?id=771860]
+  manual work to get your application signed. [Bug #771860](https://bugzilla.gnome.org/show_bug.cgi?id=771860)
 - Building applications with Android NDK r13 on Windows does not work. Other
   platforms and earlier/later versions of the NDK are not affected.
-  [Bugzilla #772842][https://bugzilla.gnome.org/show_bug.cgi?id=772842]
-- The new leaks tracer is currently leaking its worker thread, of which there
-  is at most one at a time if the tracer is enabled. [Bugzilla #770373][https://bugzilla.gnome.org/show_bug.cgi?id=770373]
+  [Bug #772842](https://bugzilla.gnome.org/show_bug.cgi?id=772842)
+- The new leaks tracer is currently leaking its worker thread when `SIGUSR`
+  handling is enabled via the `GST_LEAKS_TRACER_SIG` environment variable.
+  [Bug #770373](https://bugzilla.gnome.org/show_bug.cgi?id=770373)
 - vp8enc crashes on 32 bit Windows, but was working fine in 1.6. 64 bit Windows is unaffected.
-  [Bugzilla #763663][https://bugzilla.gnome.org/show_bug.cgi?id=763663]
+  [Bug #763663](https://bugzilla.gnome.org/show_bug.cgi?id=763663)
 
 ## Schedule for 1.12
 
