@@ -877,6 +877,8 @@ version 3.1, previously only 2.3-2.5 were supported.
 
 - `mpeg2dec` now requires at least libmpeg2 0.5.1 (from 2008).
 
+#### gst-plugins-bad
+
 - `gltransformation` now requires at least graphene 1.4.0.
 
 - `lv2` now plugin requires at least lilv 0.16 instead of slv2.
