@@ -40,7 +40,7 @@ improvements.
 
 New API was added to receive element property change notifications via
 bus messages. So far applications had to connect a callback to an element's
-`notify::propert-name` signal via the GObject API, which was inconvenient for
+`notify::property-name` signal via the GObject API, which was inconvenient for
 at least two reasons: one had to implement a signal callback function, and that
 callback function would usually be called from one of the streaming threads, so
 one had to marshal (send) any information gathered or pending requests to the
@@ -76,9 +76,9 @@ element created.
 
 ##### Error messages can contain additional structured details
 
-Often it is useful to provide additional, structured information in error,
+It is often useful to provide additional, structured information in error,
 warning or info messages for applications (or higher-level elements) to do
-intellegent decisions based on them. To allow this, error, warning and info
+intelligent decisions based on them. To allow this, error, warning and info
 messages now have API for adding arbitrary additional information in a
 `GstStructure` to them:
 [`GST_ELEMENT_ERROR_WITH_DETAILS`][element-error-with-details] and the
@@ -337,7 +337,7 @@ Before we go into detail about what these new elements improve, let's look at
 the new [`parsebin`][parsebin] element. It works similarly to `decodebin` and
 `decodebin3`, only that it stops one step short and does not plug any actual
 decoder elements. It will only plug parsers, tag readers, demuxers and
-depayloaders.
+depayloaders. Also note that parsebin does not contain any queueing element.
 
 [`decodebin3`'s][decodebin3] internal architecture is slightly different from
 the existing `decodebin` element and fixes many long-standing issues with our
