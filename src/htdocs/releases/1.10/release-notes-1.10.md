@@ -321,9 +321,29 @@ to make use of the new resampler.
 
 #### Support for SMPTE timecodes
 
-- FILL ME
+Support for SMPTE timecodes was added to the GStreamer video library. This
+comes with an abstraction for timecodes, [`GstVideoTimeCode`][video-timecode]
+and a [`GstMeta`][video-timecode-meta] that can be placed on video buffers for
+carrying the timecode information for each frame. Additionally there is
+various API for making handling of timecodes easy and to do various
+calculations with them.
 
-- API, GstMeta, elements, element support
+A new plugin called [`timecode`][timecode-plugin] was added, that contains an
+element called `timecodestamper` for putting the timecode meta on video frames
+based on counting the frames and another element called `timecodewait` that
+drops all video (and audio) until a specific timecode is reached.
+
+Additionally support was added to the Decklink plugin for including the
+timecode information when sending video out or capturing it via SDI, and the
+`qtmux` plugin is able to write timecode information into the MOV container.
+
+More information can be found in the [talk about timecodes][timecode-talk] at
+the GStreamer Conference 2016.
+
+[video-timecode]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstvideo.html#GstVideoTimeCode
+[video-timecode-meta]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstvideometa.html#gst-buffer-add-video-time-code-meta
+[timecode-plugin]: https://cgit.freedesktop.org/gstreamer/gst-plugins-bad/tree/gst/timecode
+[timecode-talk]: https://gstconf.ubicast.tv/videos/smpte-timecodes-in-gstreamer/
 
 #### GStreamer OpenMAX IL plugin
 
@@ -565,10 +585,14 @@ license.
 
 #### DASH, HLS and adaptivedemux
 
-- HLS now has support for Alternate Rendition audio and video tracks
-- Full support for Alternate Rendition subtitle tracks coming soon
+- HLS now has support for Alternate Rendition audio and video tracks. Full
+  support for Alternate Rendition subtitle tracks coming soon
+- DASH got support for keyframe-only trick modes if the
+  `GST_SEEK_FLAG_KEY_UNIT` is given when seeking. It will only download
+  keyframes then, which should help with high-speed playback. Changes to skip
+  over multiple frames based on bandwidth and other metrics will be added in
+  the near future.
 - Lots of reliability fixes around seek handling and bitrate switching.
-- FILL ME - trick modes?
 
 #### Bluetooth improvements
 
@@ -710,8 +734,8 @@ the topic.
 
 - Clip priorities are now handled by the layers, and the GESTimelineElement
   priority property is now deprecated and unused
-- Enhance (de)interlacing support always using the `deinterlace` element
-  and exposing needed properties to users
+- Enhanced (de)interlacing support to always use the `deinterlace` element
+  and expose needed properties to users
 - Allow reusing clips children after removing the clip from a layer
 - We are now testing many more rendering format in the gst-validate
   test suite, and failures have been fixed.
