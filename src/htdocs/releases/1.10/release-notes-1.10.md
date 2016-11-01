@@ -334,8 +334,9 @@ based on counting the frames and another element called `timecodewait` that
 drops all video (and audio) until a specific timecode is reached.
 
 Additionally support was added to the Decklink plugin for including the
-timecode information when sending video out or capturing it via SDI, and the
-`qtmux` plugin is able to write timecode information into the MOV container.
+timecode information when sending video out or capturing it via SDI, the
+`qtmux` element is able to write timecode information into the MOV container,
+and the `timeoverlay` element can overlay timecodes on top of the video.
 
 More information can be found in the [talk about timecodes][timecode-talk] at
 the GStreamer Conference 2016.
@@ -474,7 +475,7 @@ license.
 
 - The RTSP server and source element, as well as the RTP jitterbuffer support
   remote clock synchronization according to [RFC7273][https://tools.ietf.org/html/rfc7273] now.
-- Support for application and protocol specific RTCP packets was added.
+- Support for application and profile specific RTCP packets was added.
 - The H265/HEVC payloader/depayloader is again in sync with the final RFC.
 - Seeking stability of the RTSP source and server was improved a lot and
   runs stable now even when doing scrub-seeking.
@@ -794,6 +795,9 @@ integration to make it more robust.
   flags that would otherwise be affected by added/removed child elements. This
   new API allows `GstBin` subclasses to handle for themselves, e.g. if they
   should be considered a sink or source element.
+- The `subparse` element can handle WebVTT streams now.
+- A new `sdpsrc` element was added that can read an SDP from a file, or get it
+  as a string as property and then sets up an RTP pipeline accordingly.
 
 ## Build and Dependencies
 
