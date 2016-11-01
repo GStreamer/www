@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version>1.10.0</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release of the new stable
+1.10 release series. The 1.10 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6 and 1.8 series and is part of the API and ABI-stable 1.x
+release series of the GStreamer multimedia framework.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided shortly after
+the source release by the GStreamer project during the stable 1.10 release
+series.
+</p>
+  </intro>
+    <contributors>
+	<person>Nirbheek Chauhan</person>
+	<person>Scott D Phillips</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+</release>

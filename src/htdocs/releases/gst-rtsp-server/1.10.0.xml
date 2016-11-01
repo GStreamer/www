@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-rtsp-server</module>
+  <module-fancy>GStreamer RTSP Server Library</module-fancy>
+  <name></name>
+  <version>1.10.0</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release of the new stable
+1.10 release series. The 1.10 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6 and 1.8 series and is part of the API and ABI-stable 1.x
+release series of the GStreamer multimedia framework.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided shortly after
+the source release by the GStreamer project during the stable 1.10 release
+series.
+</p>
+  </intro>
+    <contributors>
+	<person>Göran Jönsson</person>
+	<person>Nikita Bobkov</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Xavier Claessens</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>771983</id>
+      <summary>Deadlock when closing session and backlog is full.</summary>
+    </bug>
+    <bug>
+      <id>772478</id>
+      <summary>Missing video stream from SDP</summary>
+    </bug>
+    <bug>
+      <id>773640</id>
+      <summary>rtspclient unit test failures</summary>
+    </bug>
+  </bugs>
+</release>

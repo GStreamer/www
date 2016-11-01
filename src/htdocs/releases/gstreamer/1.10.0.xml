@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.10.0</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release of the new stable
+1.10 release series. The 1.10 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6 and 1.8 series and is part of the API and ABI-stable 1.x
+release series of the GStreamer multimedia framework.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided shortly after
+the source release by the GStreamer project during the stable 1.10 release
+series.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+      <contributors>
+	<person>Andrew Eikum</person>
+	<person>Edward Hervey</person>
+	<person>Guillaume Desmottes</person>
+	<person>Jesper Larsen</person>
+	<person>Matthew Waters</person>
+	<person>Nicolas Dufresne</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Sebastian Dröge</person>
+	<person>Stefan Sauer</person>
+	<person>Stian Selnes</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vincent Penquerc'h</person>
+  </contributors>
+
+
+
+  <bugs>
+    <bug>
+      <id>770627</id>
+      <summary>adaptivedemux: prevent to set source flag itself</summary>
+    </bug>
+    <bug>
+      <id>772431</id>
+      <summary>Doc is wrong about GST_PLUGIN_PATH being colon separated - it's semicolon on Windows.</summary>
+    </bug>
+    <bug>
+      <id>772571</id>
+      <summary>doc: fix GST_LEAKS_TRACER_SIG doc</summary>
+    </bug>
+    <bug>
+      <id>772741</id>
+      <summary>bin: Add a new GST_BIN_FLAG_STREAMS_AWARE flag</summary>
+    </bug>
+    <bug>
+      <id>772851</id>
+      <summary>tracers: fix structure leak</summary>
+    </bug>
+    <bug>
+      <id>773114</id>
+      <summary>meson: fixes for windows build</summary>
+    </bug>
+    <bug>
+      <id>773319</id>
+      <summary>adapter: mix-up between PTS and DTS</summary>
+    </bug>
+  </bugs>
+</release>
