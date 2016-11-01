@@ -451,6 +451,8 @@ causing incorrect out-of-sequence playback.
 `splitmuxsrc` now has a `"format-location"` signal to directly specify the list
 of files to play from.
 
+- force-keyunit events
+
 #### OpenGL/GLES improvements
 
 ##### iOS and macOS (OS/X)
@@ -682,14 +684,14 @@ the topic.
 
 ### GES and NLE changes
 
-* Clip priorities are now handled by the layers, and the GESTimelineElement
+- Clip priorities are now handled by the layers, and the GESTimelineElement
   priority property is now deprecated and unused
-* Enhance (de)interlacing support always using the `deinterlace` element
+- Enhance (de)interlacing support always using the `deinterlace` element
   and exposing needed properties to users
-* Allow reusing clips children after removing the clip from a layer
-* We are now testing many more rendering format in the gst-validate
+- Allow reusing clips children after removing the clip from a layer
+- We are now testing many more rendering format in the gst-validate
   test suite, and failures have been fixed.
-* Also many bugs have been fixed in this cycle!
+- Also many bugs have been fixed in this cycle!
 
 ### GStreamer validate changes
 
