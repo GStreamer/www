@@ -100,7 +100,7 @@ application to proceed with a different URL, possibly using a different
 protocol (thus changing the pipeline configuration). Until now this was
 implemented informally using `ELEMENT` messages on the bus.
 
-Now this has been formalised in form of a new `GST_MESSAGE_REDIRECT` message.
+Now this has been formalized in form of a new `GST_MESSAGE_REDIRECT` message.
 A new redirect message can be created using [`gst_message_new_redirect()`][new-redirect].
 If needed, multiple redirect locations can be specified by calling
 [`gst_message_add_redirect_entry()`][add-redirect] to add further redirect
@@ -146,7 +146,7 @@ data has been obtained. ([commit][commit-pad-probes], [bug][bug-pad-probes])
 
 The default GStreamer debug log handler can now be removed already before
 calling `gst_init()`, so that it will never get installed and won't be active
-during initialisation.
+during initialization.
 
 A new [`STREAM_GROUP_DONE` event][stream-group-done-event] was added. In some
 ways it works similar to the `EOS` event in that it can be used to unblock
@@ -330,7 +330,7 @@ technology preview: `decodebin3` and `playbin3` will soon supersede the
 existing `decodebin` and `playbin` elements. We skip the number 2 here
 as that was used back in the 0.10 days already, which might cause confusion.
 Experimental technology preview means that everything should work fine already,
-but we can't guarantee there may not be some minor behavioural changes in the
+but we can't guarantee there may not be some minor behavioral changes in the
 next cycle. In any case, please test and report back any problems.
 
 Before we go into detail about what these new elements improve, let's look at
@@ -344,9 +344,9 @@ the existing `decodebin` element and fixes many long-standing issues with our
 decoding engine. For one, data is now fed into the internal `multiqueue` element
 *after* it has been parsed and timestamped, which means that the `multiqueue`
 element now has more knowledge and is able to calculate the interleaving of the
-various streams, thus minimising memory requirements and doing away with magic
+various streams, thus minimizing memory requirements and doing away with magic
 values for buffering limits that were conceived when videos were 240p or 360p
-and which anyeone who's tried to play back 4k video streams with decodebin2
+and which anyone who's tried to play back 4k video streams with decodebin2
 will have noticed. The improved timestamp tracking also enables `multiqueue`
 to keep streams of the same type (audio, video) aligned better, making sure
 switching between streams of the same type is very fast.
@@ -388,7 +388,7 @@ using the new API yet (which is most).
 
 The new elements are not entirely feature-complete yet: `playbin3` does not
 support so-called decodersinks yet where the data is not decoded inside
-GStreamer but passed directly for decoding to the sink. `decodebin3` is mising
+GStreamer but passed directly for decoding to the sink. `decodebin3` is missing
 the various `autoplug-*` signals to influence which decoders get autoplugged
 in which oder. We're looking to add back this functionality, but it will probably
 be in a different way, with a single unified signal and using GstStream perhaps.
@@ -529,11 +529,11 @@ of files to play from.
 #### DVB improvements
 
 - `dvbsrc` has now better delivery-system autodetection and several
-new parameter sanity-checks to improve its resilence to configuration
+new parameter sanity-checks to improve its resilience to configuration
 omissions and errors. Superfluous polling has continued to be trimmed,
 and the debugging output made more consistent and precise. Additionally,
 the channel-configuration parser now supports the new dvbv5 format,
-enabling `dvbbasebin` to automatically playback content transmited on
+enabling `dvbbasebin` to automatically playback content transmitted on
 delivery systems that previously required manual description, like
 ISDB-T.
 
@@ -597,7 +597,7 @@ ISDB-T.
   paths (audio, video, etc.)  may have different buffering/latency
   etc. so might be consuming data from multiqueue with a slightly
   different phase, and if we track different stream groups separately
-  we minimise stream switching delays and buffering inside the
+  we minimize stream switching delays and buffering inside the
   `multiqueue`.
 - `alsasrc` now supports ALSA drivers without a position for each
   channel, this is common in some professional or industrial hardware.
@@ -684,7 +684,7 @@ the topic.
   and exposing needed properties to users
 * Allow reusing clips children after removing the clip from a layer
 * We are now testing many more rendering format in the gst-validate
-  testsuite, and failures have been fixed.
+  test suite, and failures have been fixed.
 * Also many bugs have been fixed in this cycle!
 
 ### GStreamer validate changes
