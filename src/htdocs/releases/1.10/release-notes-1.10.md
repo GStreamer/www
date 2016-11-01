@@ -46,6 +46,8 @@ improvements.
   also dded
 - Extensive improvements to the VAAPI plugins for improved robustness and
   efficiency
+- Lots of fixes and improvements across the board, spanning RTP/RTSP, V4L2,
+  Bluetooth, audio conversion, echo cancellation, and more!
 
 ## Major new features and changes
 
