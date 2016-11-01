@@ -768,18 +768,32 @@ integration to make it more robust.
 
 ## Miscellaneous
 
-- New video orientation interface
-- `appsrc` duration in time and try pull API
-- `x264enc` has support for chroma-site and colorimetry settings
-- JPEG2000 parser and caps cleanup
-- Reverse playback support for `videorate`, `deinterlace`
-- Various improvements for reverse playback and `KEY_UNITS` trick mode
-- New cleaned up `rawaudioparse`, `rawvideoparse` elements
-- Decklink 10 bit and timecode support, various fixes
-- Multiview and other new API for GstPlayer
-- GstBin suppressed flags API
-
-- FILL ME
+- New `GstVideoDirection` video orientation interface for rotating, flipping
+  and mirroring video in 90° steps. It is implemented by the `videoflip` and
+  `glvideoflip` elements currently.
+- It is now possible to give `appsrc` a duration in time, and there is now a
+  non-blocking try-pull API that returns NULL if nothing is available right
+  now.
+- `x264enc` has support now for chroma-site and colorimetry settings
+- A new JPEG2000 parser element was added, and the JPEG2000 caps were cleaned
+  up and gained more information needed in combination with RTP and various
+  container formats.
+- Reverse playback support for `videorate` and `deinterlace` was implemented
+- Various improvements everywhere for reverse playback and `KEY_UNITS` trick mode
+- New cleaned up `rawaudioparse` and `rawvideoparse` elements that replace the
+  old `audioparse` and `videoparse` elements. There are compatibility element
+  factories registered with the old names to allow existing code to continue
+  to work.
+- The Decklink plugin gained support for 10 bit video SMPTE timecodes, and
+  generally got many bugfixes for various issues.
+- New API in `GstPlayer` for setting the multiview mode for stereoscopic
+  video, setting an HTTP/RTSP user agent and a time offset between audio and
+  video. In addition to that, there were various bugfixes and the new
+  gst-examples module contains Android, iOS, GTK+ and Qt example applications.
+- `GstBin` has new API for suppressing various `GstElement` or `GstObject`
+  flags that would otherwise be affected by added/removed child elements. This
+  new API allows `GstBin` subclasses to handle for themselves, e.g. if they
+  should be considered a sink or source element.
 
 ## Build and Dependencies
 
