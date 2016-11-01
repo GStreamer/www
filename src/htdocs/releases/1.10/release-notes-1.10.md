@@ -543,20 +543,19 @@ of files to play from.
 - `waylandsink` now supports the wl_viewporter extension allowing
   video scaling and cropping to be delegated to the Wayland
   compositor. This extension is also been made optional, so that it can
-  also work on current compositors that don't support it. He's also added
+  also work on current compositors that don't support it. It also now has
   support for the video meta, allowing zero-copy operations in more
   cases.
 
 #### DVB improvements
 
-- `dvbsrc` has now better delivery-system autodetection and several
-new parameter sanity-checks to improve its resilience to configuration
-omissions and errors. Superfluous polling has continued to be trimmed,
-and the debugging output made more consistent and precise. Additionally,
-the channel-configuration parser now supports the new dvbv5 format,
-enabling `dvbbasebin` to automatically playback content transmitted on
-delivery systems that previously required manual description, like
-ISDB-T.
+- `dvbsrc` now has better delivery-system autodetection and several
+  new parameter sanity-checks to improve its resilience to configuration
+  omissions and errors. Superfluous polling continues to be trimmed down,
+  and the debugging output has been made more consistent and precise.
+  Additionally, the channel-configuration parser now supports the new dvbv5
+  format, enabling `dvbbasebin` to automatically playback content transmitted
+  on delivery systems that previously required manual description, like ISDB-T.
 
 #### DASH, HLS and adaptivedemux
 
@@ -587,14 +586,14 @@ ISDB-T.
 - Since several VA drivers are unmaintained, we decide to keep a white list
   with the va drivers we actually test, which is mostly the i915 and, in some
   degree, gallium from mesa project. Exporting the environment variable
-  `GST_VAAPI_ALL_DRIVERS` disable the white list.
-- The plugin features are registered, in run-time, according to its support by
+  `GST_VAAPI_ALL_DRIVERS` disables the white list.
+- Plugin features are registered at run-time, according to their support by
   the loaded VA driver. So only the decoders and encoder supported by the
   system are registered. Since the driver can change, some dependencies are
   tracked to invalidate the GStreamer registry and reload the plugin.
-- dmabuf importation from upstream has been improved, gaining performance.
+- `dmabuf` importation from upstream has been improved, gaining performance.
 - `vaapipostproc` now can negotiate through caps the buffer transformations.
-- Decoders now can do reverse playback. They only shows I frames, because the
+- Decoders now can do reverse playback. They only shows I-frames, because the
   surface pool is smaller than the required by the GOP to show all the
   frames.
 - The upload of frames onto native GL textures has been optimized too, keeping
@@ -626,7 +625,7 @@ ISDB-T.
   `multiqueue`.
 - `alsasrc` now supports ALSA drivers without a position for each
   channel, this is common in some professional or industrial hardware.
-- libvpx based decoders (`vp8dec` and `vp9dec`) now create multiple threads on
+- `libvpx` based decoders (`vp8dec` and `vp9dec`) now create multiple threads on
   computers with multiple CPUs automatically.
 - `rfbsrc` which can receive from a VNC server has seen a lot of
   debugging, it now supports the latest version of the RFB
@@ -661,7 +660,7 @@ will also handle the following UNIX signals:
  - `SIGUSR2`: create a checkpoint and print a list of objects created and
    destroyed since the previous checkpoint.
 
-This will not work on Windows though.
+This will not work on Windows, though.
 
 If the `GST_LEAKS_TRACER_STACK_TRACE` environment variable is set, the leaks
 tracer will also log the creation stack trace of leaked objects. This may
@@ -721,7 +720,7 @@ it to end users in a useful way. For an example of such enhancements, check out
 Thibault Saunier's [blog post](improving-debugging-gstreamer-validate) about
 the new Not Negotiated Error reporting mechanism.
 
-Playbin3 support has been added so we can run validate tests with playbin3
+Playbin3 support has been added so we can run validate tests with `playbin3`
 instead of playbin.
 
 We are now able to properly communicate between `gst-validate-launcher` and
@@ -882,7 +881,8 @@ Three new git modules have been added recently:
 
 ### gst-docs
 
-This is a new module where we will maintain documentation in markup format.
+This is a new module where we will maintain documentation in the markdown
+format.
 
 It contains the former gstreamer.com SDK tutorials which have kindly been made
 available by Fluendo under a Creative Commons license. The tutorials have been
@@ -892,8 +892,8 @@ site will then be shut down with redirects pointing to the updated tutorials.
 
 Some of the existing docbook XML-formatted documentation from the GStreamer
 core module such as the *Application Development Manual* and the *Plugin
-Writer's Guide* have been converted to markup as well and will be maintained in
-the gst-docs module in future. They will be removed from the GStreamer core
+Writer's Guide* have been converted to markdown as well and will be maintained
+in the gst-docs module in future. They will be removed from the GStreamer core
 module in the next cycle.
 
 This is just the beginning. Our goal is to provide a more cohesive documentation
