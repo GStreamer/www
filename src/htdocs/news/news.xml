@@ -7946,6 +7946,23 @@ or download tarballs for
   </item>
 
     <item>
+      <date>2016-08-22 10:00</date>
+        <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Python, Validate, VAAPI 1.8.3 stable release (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.8.3 stable release of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.8.3/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.8.3/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.8.3/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.8.3/">Windows</a>.
+        </p>
+        </content>
+    </item>
+
+    <item>
       <date>2016-09-01 09:00</date>
         <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Python, Validate, VAAPI, OMX 1.9.2 unstable release</title>
         <content>
@@ -8018,6 +8035,28 @@ Direct tarball download: <a href="&site;/src/orc/orc-0.4.26.tar.xz">orc-0.4.26</
         </p>
         </content>
   </item>
+
+    <item>
+      <date>2016-09-05 9:00</date>
+        <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Python, Validate, VAAPI, OMX 1.9.2 unstable release (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.9.2 unstable release of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+For Android, there is a new variant this time: an universal release
+that contains binaries for all supported architectures. Starting with
+the next release, this will be the only one that is provided.
+Updating your application should be straightforward and similar to <a href="http://cgit.freedesktop.org/gstreamer/gst-examples/commit/?id=a5cdde9119f038a1eb365aca20faa9741a38e788">this</a>
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.9.2/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.9.2/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.9.2/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.9.2/">Windows</a>.
+        </p>
+        </content>
+    </item>
 
   <item>
       <date>2016-09-05 09:00</date>
@@ -8145,6 +8184,23 @@ or download tarballs for
       </item>
 
     <item>
+      <date>2016-10-03 9:40</date>
+        <title>GStreamer Core, Plugins, RTSP Server, Editing Services, Python, Validate, VAAPI, OMX 1.10.0 release candidate 1 (1.9.90) (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.9.90 release candidate of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.9.90/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.9.90/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.9.90/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.9.90/">Windows</a>.
+        </p>
+        </content>
+    </item>
+
+    <item>
       <date>2016-11-01 16:30</date>
         <title>GStreamer 1.10.0 stable release</title>
         <content>
@@ -8197,6 +8253,27 @@ or download tarballs for
         </p>
         </content>
   </item>
+
+    <item>
+      <date>2016-11-02 16:10</date>
+        <title>GStreamer 1.10.0 stable release (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.10.0 stable release of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+See
+<a href="&site;/releases/1.10/">&site;/releases/1.10/</a>
+for the full list of changes.
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.10.0/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.10.0/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.10.0/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.10.0/">Windows</a>.
+        </p>
+        </content>
+    </item>
 
 </news>
 
