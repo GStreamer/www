@@ -39,7 +39,7 @@ improvements.
 - A new `gst-docs` module has been created, and we are in the process of moving
   our documentation to a markdown-based format for easier maintenance and
   updates
-- A new `gst-examples` module has been create, which contains example
+- A new `gst-examples` module has been created, which contains example
   GStreamer applications and is expected to grow with many more examples in
   the future
 - Various OpenGL and OpenGL|ES-related fixes and improvements for greater
