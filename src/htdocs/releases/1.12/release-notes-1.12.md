@@ -58,6 +58,15 @@ improvements.
 
 ## Miscellaneous
 
+The buffer stored in the Protection events is now left unchanged. This is a
+change of behaviour since 1.8, especially for the mssdemux element which used to
+decode the base64 parsed data wrapped in the protection events emitted by the
+demuxer.
+
+The DASH demuxer is now correctly parsing the MSPR-2.0 ContentProtection nodes
+and emits Protection events accordingly. Applications relying on those events
+might need to decode the base64 data stored in the event buffer before using it.
+
 - FILL ME
 
 ## Build and Dependencies
