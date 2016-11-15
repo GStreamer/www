@@ -182,3 +182,14 @@ Redirect 301 "/display/GstSDK/Legal+information" "/documentation2/"
 #RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-time-overview.html$ /documentation2/application-development/advanced/clocks.html
 #RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-typefinding.html$ /documentation2/application-development/advanced/autoplugging.html
 #RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/index.html$ /documentation2/application-development/
+
+# FAQ
+#RedirectMatch 301 ^/data/doc/gstreamer/.*/faq/html/chapter-troubleshooting.html$ /documentation2/frequently-asked-questions/troubleshooting.html
+#RedirectMatch 301 ^/data/doc/gstreamer/.*/faq/html/chapter-dependencies.html$ /documentation2/frequently-asked-questions/dependencies.html
+#RedirectMatch 301 ^/data/doc/gstreamer/.*/faq/html/index.html$ /documentation2/frequently-asked-questions/
+#RedirectMatch 301 ^/data/doc/gstreamer/.*/faq/html/chapter-developing.html$ /documentation2/frequently-asked-questions/developing.html
+#RedirectMatch 301 ^/data/doc/gstreamer/.*/faq/html/chapter-general.html$ /documentation2/frequently-asked-questions/general.html
+#RedirectMatch 301 ^/data/doc/gstreamer/.*/faq/html/chapter-legal.html$ /documentation2/frequently-asked-questions/legal.html
+#RedirectMatch 301 ^/data/doc/gstreamer/.*/faq/html/chapter-git.html$ /documentation2/frequently-asked-questions/git.html
+#RedirectMatch 301 ^/data/doc/gstreamer/.*/faq/html/chapter-using.html$ /documentation2/frequently-asked-questions/using.html
+#RedirectMatch 301 ^/data/doc/gstreamer/.*/faq/html/chapter-getting.html$ /documentation2/frequently-asked-questions/getting.html
