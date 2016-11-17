@@ -1,6 +1,8 @@
 # GStreamer 1.10 Release Notes
 
-**GStreamer 1.10.0 was released on 1st November 2016.**
+GStreamer 1.10.0 was originally released on 1st November 2016.
+The latest bug-fix release in the 1.10 series is [1.10.1](#1.10.1) and was
+released on 17 November 2016.
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
@@ -11,7 +13,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.10/][latest] for the latest
 version of this document.
 
-*Last updated: Tuesday 1 Nov 2016, 15:00 UTC [(log)][gitlog]*
+*Last updated: Tuesday 17 Nov 2016, 15:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.10/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.10/release-notes-1.10.md
@@ -1072,6 +1074,30 @@ which is a stable branch.
 ### 1.10.0
 
 1.10.0 was released on 1st November 2016.
+
+<a name="1.10.1"></a>
+
+### 1.10.1
+
+The first 1.10 bug-fix release (1.10.1) was released on 17 November 2016.
+This release only contains bugfixes and it should be safe to update from 1.10.x.
+
+#### Major bugfixes in 1.10.1
+
+ - Security-relevant bugfix in the vmnc decoder (no CVE)
+ - Various bugfixes to playbin3/decodebin3
+ - Fix error at the end of playing any WAV file
+ - Fix usability of androidmedia plugin if the camera or sensor API is not
+   available, but codecs are
+ - Handle redirections on PLAY, and missing control attribute in the RTSP source
+ - Various OpenGL related bugfixes
+ - ... and many, many more!
+
+For a full list of bugfixes see [Bugzilla][buglist-1.10.1]. Note that this is
+not the full list of changes. For the full list of changes please refer to the
+GIT logs or ChangeLogs of the particular modules.
+
+[buglist-1.10.1]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=168172&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.10.1
 
 ## Known Issues
 
