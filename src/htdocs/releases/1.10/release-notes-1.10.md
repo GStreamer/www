@@ -13,7 +13,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.10/][latest] for the latest
 version of this document.
 
-*Last updated: Tuesday 17 Nov 2016, 15:00 UTC [(log)][gitlog]*
+*Last updated: Saturday 19 Nov 2016, 17:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.10/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.10/release-notes-1.10.md
@@ -1084,7 +1084,7 @@ This release only contains bugfixes and it should be safe to update from 1.10.x.
 
 #### Major bugfixes in 1.10.1
 
- - Security-relevant bugfix in the vmnc decoder (no CVE)
+ - Security-relevant bugfix in the vmnc decoder (CVE-2016-9445, CVE-2016-9446)
  - Various bugfixes to playbin3/decodebin3
  - Fix error at the end of playing any WAV file
  - Fix usability of androidmedia plugin if the camera or sensor API is not
