@@ -276,3 +276,7 @@ Redirect 301 "/display/GstSDK/Legal+information" "/documentation2/"
 #RedirectMatch 301 ^/data/doc/gstreamer/.*/pwg/html/section-throttle.html$ /documentation2/plugin-development/advanced/qos.html#throttling
 #RedirectMatch 301 ^/data/doc/gstreamer/.*/pwg/html/section-types-definitions.html$ /documentation2/plugin-development/advanced/media-types.html#list-of-defined-types
 #RedirectMatch 301 ^/data/doc/gstreamer/.*/pwg/html/section-types-typefind.html$ /documentation2/plugin-development/advanced/media-types.html#typefind-functions-and-autoplugging
+
+# Old wiki
+#RedirectMatch 301 ^/wiki/SubmittingPatches$ /documentation2/contribute/index.html#how-to-submit-patches
+#RedirectMatch 410 ^/wiki/
