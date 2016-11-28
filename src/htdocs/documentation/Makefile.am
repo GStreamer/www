@@ -1,4 +1,4 @@
-built_pages = index.html licensing.html rtp.html plugins.html splitup.html gstreamer010.html
+built_pages = licensing.html plugins.html gstreamer010.html
 
 CHECKOUT_DIR = $(top_builddir)/cache/plugin-inspect-checkouts
 
