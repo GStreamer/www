@@ -8350,5 +8350,39 @@ for the full list of changes.
         </content>
     </item>
 
+    <item>
+      <date>2016-11-29 12:00</date>
+        <title>Revamped documentation and gstreamer.com switch-off</title>
+        <content>
+<p>
+The GStreamer project is pleased to announce its new revamped
+<a href="&site;/documentation/">documentation</a> featuring a new design,
+a new navigation bar, search functionality, source code syntax highlighting
+as well as new tutorials and documentation about how to use GStreamer on
+Android, iOS, macOS and Windows.
+</p><p>
+It now contains the former gstreamer.com SDK tutorials which have kindly been
+made available by Fluendo under a Creative Commons license. The tutorials have
+been reviewed and updated for GStreamer 1.x. The old gstreamer.com site will
+be shut down with redirects pointing to the updated tutorials and the official
+GStreamer website.
+</p><p>
+Thanks to everyone who helped make this happen.
+</p><p>
+This is just the beginning. Our goal is to provide a more cohesive
+documentation experience for our users going forward. To that end, we have
+converted most of our documentation into markdown format. This should hopefully
+make it easier for developers and contributors to create new documentation, and
+to maintain the existing one. There is a lot more work to do, do get in touch
+if you want to help out. The documentation is maintained in the new
+<a href="http://cgit.freedesktop.org/gstreamer/gst-docs">gst-docs</a> module.
+</p><p>
+If you encounter any problems or spot any omissions or outdated content in the
+new documentation, please <a href="https://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer&amp;component=documentation">
+file a bug in bugzilla</a> to let us know.
+</p>
+        </content>
+    </item>
+
 </news>
 
