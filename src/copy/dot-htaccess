@@ -138,7 +138,8 @@ RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-caps.html$ /docume
 RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-checklist-applications.html$ /documentation/application-development/appendix/checklist.html
 RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-checklist-conversion.html$ /documentation/application-development/appendix/checklist.html
 RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-checklist-debug.html$ /documentation/application-development/appendix/checklist.html
-RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-clocks-latency.html$ /documentation/application-development/advanced/clocks.html#RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-clocks-providers.html$ /documentation/application-development/advanced/clocks.html
+RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-clocks-latency.html$ /documentation/application-development/advanced/clocks.html
+RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-clocks-providers.html$ /documentation/application-development/advanced/clocks.html
 RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-components-decodebin.html$ /documentation/application-development/highlevel/playback-components.html
 RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-components-playsink.html$ /documentation/application-development/highlevel/playback-components.html
 RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/section-components-uridecodebin.html$ /documentation/application-development/highlevel/playback-components.html
