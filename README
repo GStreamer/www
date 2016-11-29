@@ -3,34 +3,34 @@ README for the GStreamer website
 RAW MATERIALS
 -------------
 The website content is split in two parts:
-- data contains the big chunks of data that aren't in CVS and should be
+- data contains the big chunks of data that aren't in git and should be
   managed through rsync
 - src contains the XML source for the website content, which is transformed
-  using xsl stylesheets and xsltproc, and managed from CVS
+  using xsl stylesheets and xsltproc, and managed from git
+- the documentation/ section is managed in the gst-docs module
 
 FILE LAYOUT
 -----------
 src/
-	contains the content source, managed in CVS
-cache/
-	local git checkouts of our modules for documentation purposes
-	(can be deleted at any time)
+	contains the content source, managed in git
 data/
 	contains the rsync'd data
 
 	pkg/				repository of binary packages
-		redhat/
-				9/
-		fedora/
-				1/
+		android/
+		ios/
+		osx/
+		src/
+		windows/
 	src/				source releases of our packages
 		gstreamer/
 		gst-plugins/
 		gst-player/
 		gst-record/
 		gst-editor/
+		mirror/                 source mirror of third-party packages
 	media/				our media test files
-	doc/				built documentation
+	doc/				built API documentation
 
 htdocs/
 	contains the built HTML, as well as symlinks to dirs in data/
