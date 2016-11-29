@@ -1,0 +1,22 @@
+<?xml-stylesheet href="advisory-detail.xsl" type="text/xsl"?>
+<!DOCTYPE xsl:stylesheet
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+<advisory>
+<id>ENTER-ID-HERE-EG: 2016-0001</id>
+<!-- <alternate-name>CVE-2016-9445</alternate-name> -->
+<date>2016-11-23 22:50</date>
+<summary>Test security advisory</summary>
+<affected-versions>GStreamer gst-plugins-bad</affected-versions>
+
+<details>Test security advisory</details>
+<impact></impact>
+<mitigation></mitigation>
+<workarounds></workarounds>
+<solution></solution>
+<references>
+    <reference><title></title><content></content></reference>
+</references>
+</advisory>

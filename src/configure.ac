@@ -52,5 +52,6 @@ htdocs/releases/gnonlin/Makefile
 htdocs/releases/gst-omx/Makefile
 htdocs/releases/gst-validate/Makefile
 htdocs/projects/Makefile
+htdocs/security/Makefile
 ])
 AC_OUTPUT

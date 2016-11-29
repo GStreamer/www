@@ -1,0 +1,40 @@
+<!DOCTYPE xsl:stylesheet
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+
+<advisory>
+<id>2016-0001</id>
+<alternate-name type="CVE ID">CVE-2016-9445</alternate-name>
+<alternate-name type="CVE ID">CVE-2016-9446</alternate-name>
+<date>2016-11-17 16:00</date>
+<summary>Multiple Issues in VMNC decoder</summary>
+<affected-versions>GStreamer gst-plugins-bad 1.10 &lt; 1.10.1<br/>
+  GStreamer gst-plugins-bad 1.x &lt;= 1.8.3</affected-versions>
+
+<details>The VMNC decoder in gst-plugins-bad contains an integer overflow vulnerability,
+    and a failure to initialise output memory</details>
+<impact>If successful, a malicious third party could trigger either a crash in an application
+    decoding a VMNC video stream, or an arbitratry code execution with the privileges of the target user.
+    The failure to initialise output memory may result in an information leak.
+</impact>
+<mitigation>Exploitation requires the user to access a VMNC stream or file.</mitigation>
+<workarounds>The user should refrain from opening files from untrusted third parties or accessing untrusted remote sites, or
+    disable the VMNC decoder plugin by removing the plugin binary file</workarounds>
+<solution>The gst-plugins-bad 1.10.1 release addresses the issue. The upcoming gst-plugins-bad 1.8.4 release will also address the issue. People using older branches of GStreamer should apply the patch and recompile, or disable the vmncdec plugin.</solution>
+<references>
+    <reference>
+        <title>The GStreamer project</title>
+        <content> <a href="https://gstreamer.freedesktop.org">https://gstreamer.freedesktop.org</a></content>
+    </reference>
+    <reference>
+    <title> CVE Database Entry </title>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9445">CVE-2016-9445</a> </content>
+    </reference>
+    <reference>
+    <title> CVE Database Entry </title>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9446">CVE-2016-9446</a> </content>
+    </reference>
+</references>
+</advisory>

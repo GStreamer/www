@@ -1,0 +1,37 @@
+How to enter a new security alert
+
+1) Choose a new Security Advisory Id
+   Format should be YYYY-nnnn, with nnnn incrementing from 001 and 0 padded to 4 digits.
+   YYYY is the year.
+2) Copy the alert-template.xml to a new filename
+   matching the SA id - e.g sa-2016-0001.xml
+3) Edit the sa-????.xml file and fill out the details
+4) Edit Makefile.am, add the new xml file to the ALERTS= entry
+5) Edit alerts.xml and add a new xi:include line for the new sa-????.xml file.
+
+Filling out the advisory XML:
+
+* Fill out the various fields. Some details below, but generally copy
+  previous entries.
+* If needed, the summary, affected-versions,
+  details, impact,  mitigation, workarounds, solution and reference entries
+  can hold arbitrary HTML.
+* The date should be in YYYY-MM-DD HH:MM format
+* summary should be a 1 line summary of the issue, and will appear in the list
+  on the index page
+* affected-versions should provide information about which gstreamer module and
+  version(s) contain the vulnerability.
+* details is a multiline more detailed summary of the type of vulnerability
+* impact should provide information about possible impacts - a leak, crash,
+  code execution, information exposure, etc
+* mitigation - factors which might reduce the severity or exposure to an exploit,
+  such as default settings, address randomisation, or lack of default installation
+  of the plugin.
+* workarounds should describe any configuration change which might limit exposure
+  to the vulnerability
+* solution describes which release(s) of which module(s) removes the vulnerability.
+* references is a list of <reference> nodes with a title and content that should
+  provide links to relevant resources - e.g.
+  <reference> <title> CVE Database Entry </title>
+     <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9445">CVE-2016-9445</a> </content>
+  </reference>

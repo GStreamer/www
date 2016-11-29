@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xsl:stylesheet
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+<wrapper xmlns:xi="http://www.w3.org/2001/XInclude">
+    <alerts>
+    <xi:include href="sa-2016-0001.xml" parse="xml" />
+</alerts> </wrapper>
+
