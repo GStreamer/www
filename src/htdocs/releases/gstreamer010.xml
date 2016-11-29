@@ -6,7 +6,7 @@
   <!ENTITY % gst-entities SYSTEM "../entities.gst">
   %gst-entities;
 ]>
-<?xml-stylesheet href="plugins.xsl" type="text/xsl"?>
+<?xml-stylesheet href="gstreamer010.xsl" type="text/xsl"?>
 <page>
   <title>GStreamer 0.10 - The Revolution</title>
 <body bgcolor="white">

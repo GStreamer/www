@@ -1,3 +1,5 @@
+built_pages = gstreamer010.html
+
 %.xml: $(top_srcdir)/copy/releases/$@
 	cp $(top_srcdir)/copy/releases/$@ $@
 %.ics: $(top_srcdir)/copy/releases/$@
@@ -30,3 +32,5 @@ SUBDIRS = \
 	gst-rtsp-server \
 	gst-validate \
 	gst-omx
+
+include $(top_srcdir)/html.make
