@@ -1103,7 +1103,7 @@ GIT logs or ChangeLogs of the particular modules.
 
 ### 1.10.2
 
-The first 1.10 bug-fix release (1.10.2) was released on 29 November 2016.
+The second 1.10 bug-fix release (1.10.2) was released on 29 November 2016.
 This release only contains bugfixes and it should be safe to update from 1.10.x.
 
 #### Major bugfixes in 1.10.2
