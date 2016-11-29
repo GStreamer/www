@@ -8362,10 +8362,10 @@ as well as new tutorials and documentation about how to use GStreamer on
 Android, iOS, macOS and Windows.
 </p><p>
 It now contains the former gstreamer.com SDK tutorials which have kindly been
-made available by Fluendo under a Creative Commons license. The tutorials have
-been reviewed and updated for GStreamer 1.x. The old gstreamer.com site will
-be shut down with redirects pointing to the updated tutorials and the official
-GStreamer website.
+made available by Fluendo &amp; Collabora under a Creative Commons license. The
+tutorials have been reviewed and updated for GStreamer 1.x. The old
+gstreamer.com site will be shut down with redirects pointing to the updated
+tutorials and the official GStreamer website.
 </p><p>
 Thanks to everyone who helped make this happen.
 </p><p>
