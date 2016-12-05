@@ -1111,7 +1111,9 @@ This release only contains bugfixes and it should be safe to update from 1.10.x.
  - Security-relevant bugfix in the FLI/FLX/FLC decoder (CVE-2016-9634,
    CVE-2016-9635, CVE-2016-9636)
  - Various fixes for crashes, assertions and other failures on fuzzed input
-   files (among others, thanks to Hanno Böck for testing and reporting)
+   files. Among others, thanks to Hanno Böck for testing and reporting
+   (CVE-2016-9807, CVE-2016-9808, CVE-2016-9809, CVE-2016-9810, CVE-2016-9811,
+   CVE-2016-9812, CVE-2016-9813).
  - SAVP/SAVPF profile in gst-rtsp-server works for live streams again, and the
    correct MIKEY policy message is generated
  - Further OpenGL related bugfixes
