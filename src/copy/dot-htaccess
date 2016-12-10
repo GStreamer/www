@@ -52,6 +52,7 @@ Redirect 301 "/display/GstSDK/Installing+for+iOS+development" "/documentation/in
 Redirect 301 "/display/GstSDK/Installing+on+Linux" "/documentation/installing-on-linux.html"
 Redirect 301 "/display/GstSDK/Installing+on+Mac+OS+X" "/documentation/installing-on-mac-osx.html"
 Redirect 301 "/display/GstSDK/Installing+on+Windows" "/documentation/installing-on-windows.html"
+Redirect 301 "/pages/viewpage.action?pageId=1441931" "/documentation/installing-on-windows.html"
 Redirect 301 "/display/GstSDK/Installing+the+SDK" "/documentation/installing.html"
 Redirect 301 "/display/GstSDK/iOS+tutorial+1:+Link+against+GStreamer" "/documentation/tutorial-ios-link-against-gstreamer.html"
 Redirect 301 "/display/GstSDK/iOS+tutorial+2:+A+running+pipeline" "/documentation/tutorial-ios-a-running-pipeline.html"
@@ -74,13 +75,15 @@ Redirect 301 "/display/GstSDK/Playback+tutorials" "/documentation/tutorials-play
 Redirect 301 "/display/GstSDK/Table+of+Concepts" "/documentation/table-of-concepts.html"
 Redirect 301 "/display/GstSDK/Tutorials" "/documentation/tutorials.html"
 Redirect 301 "/display/GstSDK/Windows+deployment" "/documentation/deploying-windows.html"
+Redirect 301 "/display/GstSDK/Releases" "/releases/"
+Redirect 301 "/pages/viewpage.action" "/documentation/
+Redirect 301 "/pages/[a-zA-Z_-]*.action" "/documentation/
 
 # C++ / Qt related
 Redirect 301 "/display/GstSDK/Upcoming+tutorials" "/documentation/"
 Redirect 301 "/display/GstSDK/Using+appsink%2Fappsrc+in+Qt" "/documentation/"
 Redirect 301 "/display/GstSDK/QtGStreamer+vs+C+GStreamer" "/documentation/"
 Redirect 301 "/display/GstSDK/Qt+tutorials" "/documentation/"
-Redirect 301 "/display/GstSDK/Releases" "/documentation/"
 
 # disabled pending review
 # Redirect 301 "/display/GstSDK/Legal+information" "/documentation/legal-information.html"
