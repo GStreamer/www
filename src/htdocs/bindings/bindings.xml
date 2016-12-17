@@ -151,6 +151,8 @@ or would like to help out.
     </body>
   </binding>
 
+<!-- This seems confusing, we don't want people who are looking for Android support to find this. -->
+<!--
   <binding>
     <id>android</id>
     <name>Android</name>
@@ -159,6 +161,7 @@ or would like to help out.
     <p>Under development. See the <a href="&site;/modules/gst-android.html">gstreamer android</a> module</p>
     </body>
   </binding>
+-->
 
   <binding>
     <id>guile</id>

@@ -284,3 +284,6 @@ RedirectMatch 301 ^/data/doc/gstreamer/.*/pwg/html/section-types-typefind.html$ 
 RedirectMatch 301 ^/wiki/SubmittingPatches$ /documentation/contribute/index.html#how-to-submit-patches
 RedirectMatch 301 ^/wiki/QtGStreamer /bindings/qt.html
 RedirectMatch 410 ^/wiki/
+
+# Other old pages
+Redirect 301 /bindings/android.html /documentation/installing/for-android-development.html
