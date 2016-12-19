@@ -29,12 +29,9 @@
         <content> <a href="https://gstreamer.freedesktop.org">https://gstreamer.freedesktop.org</a></content>
     </reference>
     <reference>
-    <title> CVE Database Entry </title>
+    <title> CVE Database Entries </title>
     <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9445">CVE-2016-9445</a> 
         <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9446">CVE-2016-9446</a> </content>
-    </reference>
-    <reference>
-    <title> CVE Database Entry </title>
     </reference>
     <reference>
     <title> GStreamer Bugzilla Entry </title>

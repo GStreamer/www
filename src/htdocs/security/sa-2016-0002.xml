@@ -29,24 +29,11 @@
         <content> <a href="https://gstreamer.freedesktop.org">https://gstreamer.freedesktop.org</a></content>
     </reference>
     <reference>
-    <title> CVE Database Entry </title>
+    <title> CVE Database Entries </title>
     <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9634">CVE-2016-9634</a> 
-        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9634">CVE-2016-9634</a> </content>
-    </reference>
-    <reference>
-    <title> CVE Database Entry </title>
-    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9635">CVE-2016-9635</a> 
-        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9635">CVE-2016-9635</a> </content>
-    </reference>
-    <reference>
-    <title> CVE Database Entry </title>
-    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9636">CVE-2016-9636</a> 
-        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9636">CVE-2016-9636</a> </content>
-    </reference>
-    <reference>
-    <title> CVE Database Entry </title>
-    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9807">CVE-2016-9807</a> 
-        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9807">CVE-2016-9807</a> </content>
+        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9635">CVE-2016-9635</a> 
+        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9636">CVE-2016-9636</a> 
+        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9807">CVE-2016-9807</a></content>
     </reference>
     <reference>
     <title> GStreamer Bugzilla Entries </title>
