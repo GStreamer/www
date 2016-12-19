@@ -1,4 +1,4 @@
-ALERTS=sa-2016-0001.xml
+ALERTS=sa-2016-0001.xml sa-2016-0002.xml
 security_pages = $(patsubst %.xml,%.html,$(ALERTS))
 
 

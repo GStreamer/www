@@ -1,0 +1,69 @@
+<?xml-stylesheet href="advisory-detail.xsl" type="text/xsl"?>
+<!DOCTYPE xsl:stylesheet
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+<advisory>
+<id>2016-0001</id>
+<alternate-name>CVE-2016-9634</alternate-name>
+<alternate-name>CVE-2016-9635</alternate-name>
+<alternate-name>CVE-2016-9636</alternate-name>
+<alternate-name>CVE-2016-9807</alternate-name>
+<date>2016-11-23 03:00</date>
+<summary>Multiple Issues in FLC/FLI/FLX Decoder</summary>
+<affected-versions>GStreamer gst-plugins-bad 1.10 &lt; 1.10.2<br/>
+  GStreamer gst-plugins-bad 1.x &lt;= 1.8.3</affected-versions>
+
+<details>The decoder for the FLC/FLI/FLX animation video formats in gst-plugins-good contains various out-of-bounds writes and reads and fails to initialise output frame memory</details>
+<impact>If successful, a malicious third party could trigger either a crash in an application
+  decoding a FLC/FLI/FLX video stream, or an arbitratry code execution with the privileges of the target user.
+  The failure to initialise output memory may result in an information leak.</impact>
+<mitigation>Exploitation requires the user to access a FLC/FLI/FLX stream or file.</mitigation>
+<workarounds>The user should refrain from opening files from untrusted third parties or accessing untrusted remote sites, or
+  disable the FLC/FLI/FLX decoder plugin by removing the plugin binary file libgstflxdec.so or libgstflxdec.dll</workarounds>
+<solution>The gst-plugins-bad 1.10.2 release addresses the issue. The upcoming gst-plugins-bad 1.8.4 release will also address the issue. People using older branches of GStreamer should apply the patch and recompile, or disable the FLC/FLI/FLX plugin.</solution>
+<references>
+    <reference>
+        <title>The GStreamer project</title>
+        <content> <a href="https://gstreamer.freedesktop.org">https://gstreamer.freedesktop.org</a></content>
+    </reference>
+    <reference>
+    <title> CVE Database Entry </title>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9634">CVE-2016-9634</a> 
+        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9634">CVE-2016-9634</a> </content>
+    </reference>
+    <reference>
+    <title> CVE Database Entry </title>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9635">CVE-2016-9635</a> 
+        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9635">CVE-2016-9635</a> </content>
+    </reference>
+    <reference>
+    <title> CVE Database Entry </title>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9636">CVE-2016-9636</a> 
+        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9636">CVE-2016-9636</a> </content>
+    </reference>
+    <reference>
+    <title> CVE Database Entry </title>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9807">CVE-2016-9807</a> 
+        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9807">CVE-2016-9807</a> </content>
+    </reference>
+    <reference>
+    <title> GStreamer Bugzilla Entries </title>
+    <content>
+      <a href="https://bugzilla.gnome.org/show_bug.cgi?id=774834">Bug 774834</a>
+      <a href="https://bugzilla.gnome.org/show_bug.cgi?id=774859">Bug 774859</a>
+    </content>
+    </reference>
+    <reference>
+    <title> GStreamer Patches </title>
+    <content>
+      <a href="https://cgit.freedesktop.org/gstreamer/gst-plugins-good/commit/?id=bf43f44fcfada5ec4a3ce60cb374340486fe9fac">Patch 1</a> 
+      <a href="https://cgit.freedesktop.org/gstreamer/gst-plugins-good/commit/?id=fec77de8cbb0c8192b77aff2e563705ba421f2f2">Patch 2</a> 
+      <a href="https://cgit.freedesktop.org/gstreamer/gst-plugins-good/commit/?id=45dcd0b9ccf33ed85cdafeb871a3781f5be57fd9">Patch 3</a> 
+      <a href="https://cgit.freedesktop.org/gstreamer/gst-plugins-good/commit/?id=153a8ae752c90d07190ef45803422a4f71ea8bff">Patch 4</a> 
+      <a href="https://cgit.freedesktop.org/gstreamer/gst-plugins-good/commit/?id=96aaf889afe90b5e02ec756af5c6c7000d2cc424">Patch 5</a> 
+    </content>
+    </reference>
+</references>
+</advisory>
