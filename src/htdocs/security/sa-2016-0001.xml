@@ -21,8 +21,8 @@
 </impact>
 <mitigation>Exploitation requires the user to access a VMNC stream or file.</mitigation>
 <workarounds>The user should refrain from opening files from untrusted third parties or accessing untrusted remote sites, or
-    disable the VMNC decoder plugin by removing the plugin binary file</workarounds>
-<solution>The gst-plugins-bad 1.10.1 release addresses the issue. The upcoming gst-plugins-bad 1.8.4 release will also address the issue. People using older branches of GStreamer should apply the patch and recompile, or disable the vmncdec plugin.</solution>
+    disable the VMNC decoder plugin by removing the plugin binary file libgstvmnc.so or libgstvmnc.dll</workarounds>
+<solution>The gst-plugins-bad 1.10.1 release addresses the issue. The upcoming gst-plugins-bad 1.8.4 release will also address the issue. People using older branches of GStreamer should apply the patch and recompile, or disable the VMNC plugin.</solution>
 <references>
     <reference>
         <title>The GStreamer project</title>
