@@ -30,11 +30,22 @@
     </reference>
     <reference>
     <title> CVE Database Entry </title>
-    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9445">CVE-2016-9445</a> </content>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9445">CVE-2016-9445</a> 
+        <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9446">CVE-2016-9446</a> </content>
     </reference>
     <reference>
     <title> CVE Database Entry </title>
-    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9446">CVE-2016-9446</a> </content>
+    </reference>
+    <reference>
+    <title> GStreamer Bugzilla Entry </title>
+    <content> <a href="https://bugzilla.gnome.org/show_bug.cgi?id=774533">Bug 774533</a> </content>
+    </reference>
+    <reference>
+    <title> GStreamer Patches </title>
+    <content>
+      <a href="https://cgit.freedesktop.org/gstreamer/gst-plugins-bad/commit/?id=4cb1bcf1422bbcd79c0f683edb7ee85e3f7a31fe">Patch 1</a> 
+      <a href="https://cgit.freedesktop.org/gstreamer/gst-plugins-bad/commit/?id=807e23118b6b6d99e61b5e2055c4bc82a444b008">Patch 2</a>
+    </content>
     </reference>
 </references>
 </advisory>
