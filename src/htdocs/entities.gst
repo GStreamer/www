@@ -1,24 +1,24 @@
-<!ENTITY gst-version-stable "1.8.1">
-<!ENTITY gst-plugins-base-version-stable "1.8.1">
-<!ENTITY gst-plugins-good-version-stable "1.8.1">
-<!ENTITY gst-plugins-ugly-version-stable "1.8.1">
-<!ENTITY gst-plugins-bad-version-stable "1.8.1">
+<!ENTITY gst-version-stable "1.10.2">
+<!ENTITY gst-plugins-base-version-stable "1.10.2">
+<!ENTITY gst-plugins-good-version-stable "1.10.2">
+<!ENTITY gst-plugins-ugly-version-stable "1.10.2">
+<!ENTITY gst-plugins-bad-version-stable "1.10.2">
 
 <!ENTITY gst-ffmpeg-version-stable "0.10.13">
-<!ENTITY gst-libav-version-stable "1.8.1">
+<!ENTITY gst-libav-version-stable "1.10.2">
 <!ENTITY gst-openmax-version-stable "git master">
-<!ENTITY gst-python-version-stable "1.8.1">
+<!ENTITY gst-python-version-stable "1.10.2">
 <!ENTITY gstreamer-sharp-version-stable "git master">
 <!ENTITY gst-plugins-gl-version-stable "obsolete">
-<!ENTITY gst-rtsp-server-version-stable "1.8.1">
+<!ENTITY gst-rtsp-server-version-stable "1.10.2">
 <!ENTITY gst-streaming-server-version-stable "git master">
 <!ENTITY gnonlin-version-stable "obsolete">
-<!ENTITY gst-editing-services-version-stable "1.8.1">
+<!ENTITY gst-editing-services-version-stable "1.10.2">
 <!ENTITY qt-gstreamer-version-stable "1.2.0">
 <!ENTITY gst-android-version-stable "obsolete">
-<!ENTITY gst-omx-version-stable "1.2.0">
-<!ENTITY gst-vaapi-version-stable "1.8.1">
-<!ENTITY gst-validate-stable "1.8.1">
+<!ENTITY gst-omx-version-stable "1.10.2">
+<!ENTITY gst-vaapi-version-stable "1.10.2">
+<!ENTITY gst-validate-stable "1.10.2">
 
 <!ENTITY gst-version-devel "git master">
 <!ENTITY gst-plugins-base-version-devel "git master">
