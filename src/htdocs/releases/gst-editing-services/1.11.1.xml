@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-editing-services</module>
+  <module-fancy>GStreamer Editing Services</module-fancy>
+  <name></name>
+  <version>1.11.1</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.11 release series. The 1.11 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6, 1.8 and 1.10 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.11 release series
+will lead to the stable 1.12 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Full release notes will be provided at some point during the 1.11 release
+cycle, highlighting all the new features, bugfixes, performance optimizations
+and other important changes.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+  </intro>
+    <contributors>
+	<person>Alexandru Băluț</person>
+	<person>Antonio Ospite</person>
+	<person>Edward Hervey</person>
+	<person>Guillaume Desmottes</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Philippe Renon</person>
+	<person>Scott D Phillips</person>
+	<person>Sebastian Dröge</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>774480</id>
+      <summary>nlecomposition: Start task and initialize the stack after chaining up to parent's change state function</summary>
+    </bug>
+    <bug>
+      <id>765967</id>
+      <summary>ges-launch wikipage in phabricator should become manpage</summary>
+    </bug>
+    <bug>
+      <id>774641</id>
+      <summary>gst-editing-services: Enable building with MSVC</summary>
+    </bug>
+    <bug>
+      <id>775051</id>
+      <summary>nlecomposition: validate: decodebin2 reaching code path that should not be reached when running scrub_forward_seeking on GES timelines</summary>
+    </bug>
+    <bug>
+      <id>775295</id>
+      <summary>examples: remove #include &lt; ges-internal.h &gt; from assets.c</summary>
+    </bug>
+    <bug>
+      <id>776063</id>
+      <summary>add a basic unix man page for ges-launch-1.0</summary>
+    </bug>
+    <bug>
+      <id>776064</id>
+      <summary>ges-launch-1.0 segfaults when omitting options argument</summary>
+    </bug>
+  </bugs>
+</release>

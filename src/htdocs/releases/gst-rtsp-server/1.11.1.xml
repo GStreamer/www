@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-rtsp-server</module>
+  <module-fancy>GStreamer RTSP Server Library</module-fancy>
+  <name></name>
+  <version>1.11.1</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.11 release series. The 1.11 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6, 1.8 and 1.10 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.11 release series
+will lead to the stable 1.12 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Full release notes will be provided at some point during the 1.11 release
+cycle, highlighting all the new features, bugfixes, performance optimizations
+and other important changes.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+  </intro>
+      <contributors>
+	<person>Aleksandr Slobodeniuk</person>
+	<person>Branko Subasic</person>
+	<person>Dag Gullberg</person>
+	<person>Edward Hervey</person>
+	<person>Guillaume Desmottes</person>
+	<person>Göran Jönsson</person>
+	<person>Jan Schmidt</person>
+	<person>Kseniia Vasilchuk</person>
+	<person>Matthew Waters</person>
+	<person>Neha Arora</person>
+	<person>Patricia Muscalu</person>
+	<person>Scott D Phillips</person>
+	<person>Sebastian Dröge</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>758062</id>
+      <summary>rtsp-client: emit new rtsp request signals in the beginning of each request</summary>
+    </bug>
+    <bug>
+      <id>771830</id>
+      <summary>There is no time out in idle connection RTSP server</summary>
+    </bug>
+    <bug>
+      <id>774173</id>
+      <summary>media: emit signal SIGNAL_NEW_STATE only when state change happens</summary>
+    </bug>
+    <bug>
+      <id>774640</id>
+      <summary>gst-rtsp-server: Enable building with MSVC</summary>
+    </bug>
+    <bug>
+      <id>776867</id>
+      <summary>pkgconfig: fix -uninstalled pc file</summary>
+    </bug>
+    <bug>
+      <id>777037</id>
+      <summary>rtsp-factory: just fixing a little typo in comments</summary>
+    </bug>
+    <bug>
+      <id>774416</id>
+      <summary>RTSP digest Authentification for gst-rtsp-server</summary>
+    </bug>
+  </bugs>
+</release>

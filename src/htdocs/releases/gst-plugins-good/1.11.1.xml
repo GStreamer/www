@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plugins</module-fancy>
+  <name></name>
+  <version>1.11.1</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.11 release series. The 1.11 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6, 1.8 and 1.10 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.11 release series
+will lead to the stable 1.12 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Full release notes will be provided at some point during the 1.11 release
+cycle, highlighting all the new features, bugfixes, performance optimizations
+and other important changes.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plugins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plugins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plugin on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plugins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plugin
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plugins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+    <contributors>
+	<person>Aleix Conchillo Flaque</person>
+	<person>Alejandro G. Castro</person>
+	<person>Andre McCurdy</person>
+	<person>Arun Raghavan</person>
+	<person>David Evans</person>
+	<person>Edward Hervey</person>
+	<person>Enrique Ocaña González</person>
+	<person>Garima Gaur</person>
+	<person>Havard Graff</person>
+	<person>Heekyoung Seo</person>
+	<person>Jagadish</person>
+	<person>Jan Schmidt</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Matt Staples</person>
+	<person>Matthew Waters</person>
+	<person>Nicola Murino</person>
+	<person>Nirbheek Chauhan</person>
+	<person>Petr Kulhavy</person>
+	<person>Philipp Zabel</person>
+	<person>Philippe Normand</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Scott D Phillips</person>
+	<person>Sean DuBois</person>
+	<person>Sebastian Dröge</person>
+	<person>Seungha Yang</person>
+	<person>Stian Selnes</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Ursula Maplehurst</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vinod Kesti</person>
+	<person>Vivia Nikolaidou</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+	<person>William Manley</person>
+	<person>Wonchul Lee</person>
+	<person>christophecvr</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>708221</id>
+      <summary>mp4dashmux: add the tfdt atom to the moof</summary>
+    </bug>
+    <bug>
+      <id>746574</id>
+      <summary>matroskamux: add G722 audio support</summary>
+    </bug>
+    <bug>
+      <id>748360</id>
+      <summary>rtspsrc: teardown usually never happens</summary>
+    </bug>
+    <bug>
+      <id>749098</id>
+      <summary>matroskamux: drop streamheader buffers only if they really are headers</summary>
+    </bug>
+    <bug>
+      <id>754696</id>
+      <summary>matroskamux: audio-only streams have all buffers flagged as delta units, causing problems with tcpserversink/multifdsink</summary>
+    </bug>
+    <bug>
+      <id>757631</id>
+      <summary>progressreport format=bytes will not send msg</summary>
+    </bug>
+    <bug>
+      <id>766991</id>
+      <summary>multifilesink: leaks memory when max-files property == 0</summary>
+    </bug>
+    <bug>
+      <id>767771</id>
+      <summary>qtdemux/jpegdec: Interlaced content detected as progressive</summary>
+    </bug>
+    <bug>
+      <id>768723</id>
+      <summary>rtprtx: test is sometimes failing</summary>
+    </bug>
+    <bug>
+      <id>769041</id>
+      <summary>qtmux: Downscaling time value loses precision</summary>
+    </bug>
+    <bug>
+      <id>769048</id>
+      <summary>qtmux: prores-related fixes</summary>
+    </bug>
+    <bug>
+      <id>772181</id>
+      <summary>isomp4: Parse/store colorimetry, chroma-site and interlaced-mode/field-order</summary>
+    </bug>
+    <bug>
+      <id>772740</id>
+      <summary>rtpbin: receiving RTP bundle support</summary>
+    </bug>
+    <bug>
+      <id>773217</id>
+      <summary>qtmux: Allow configuring the maximum interleave size in bytes/time</summary>
+    </bug>
+    <bug>
+      <id>773514</id>
+      <summary>rtph263pay: Use GST_TRACE for logging bitsream parsing</summary>
+    </bug>
+    <bug>
+      <id>773712</id>
+      <summary>isomp4: Add support for FLAC</summary>
+    </bug>
+    <bug>
+      <id>773785</id>
+      <summary>splitmuxsink: Use first buffer TS as mux start time</summary>
+    </bug>
+    <bug>
+      <id>773828</id>
+      <summary>qtmux: Crash on EOS with GST_DEBUG enabled</summary>
+    </bug>
+    <bug>
+      <id>774129</id>
+      <summary>'gst_buffer_is_writable' assertion  in aacparse</summary>
+    </bug>
+    <bug>
+      <id>774131</id>
+      <summary>flvmux: Add metadatacreator property</summary>
+    </bug>
+    <bug>
+      <id>774403</id>
+      <summary>qtmux: Always write edit lists for the tracks to give a more accurate duration</summary>
+    </bug>
+    <bug>
+      <id>774409</id>
+      <summary>tests/jitterbuffer: Major refactoring and cleanups</summary>
+    </bug>
+    <bug>
+      <id>774566</id>
+      <summary>matroskaparse: error out on last buffer</summary>
+    </bug>
+    <bug>
+      <id>774674</id>
+      <summary>qtdemux: Remove useless return variable</summary>
+    </bug>
+    <bug>
+      <id>774747</id>
+      <summary>qtdemux: compiler warning with gcc 6.2</summary>
+    </bug>
+    <bug>
+      <id>774789</id>
+      <summary>qtmux: Enable up to 16 unpositioned raw audio channels</summary>
+    </bug>
+    <bug>
+      <id>774840</id>
+      <summary>qtmux: Fix various timestamp and duration related issues</summary>
+    </bug>
+    <bug>
+      <id>774876</id>
+      <summary>meson: add libm to has_function checks</summary>
+    </bug>
+    <bug>
+      <id>775287</id>
+      <summary>qtdemux: change off_t type to gint</summary>
+    </bug>
+    <bug>
+      <id>775414</id>
+      <summary>qtdemux: Correctly read interlacing information</summary>
+    </bug>
+    <bug>
+      <id>775702</id>
+      <summary>v4l2object: Don't set empty interlace-mode list</summary>
+    </bug>
+    <bug>
+      <id>775752</id>
+      <summary>monoscope: Leaks allocation query</summary>
+    </bug>
+    <bug>
+      <id>776030</id>
+      <summary>udpsrc: Add to join multiple multicast interfaces</summary>
+    </bug>
+    <bug>
+      <id>776106</id>
+      <summary>v4l2object: Don't check size in a non-list value</summary>
+    </bug>
+    <bug>
+      <id>776789</id>
+      <summary>avidemux: fix memory leak in usage of gst_pad_template_new() API</summary>
+    </bug>
+    <bug>
+      <id>777095</id>
+      <summary>isomp4: Don't spam debug log with knonw/padding atoms</summary>
+    </bug>
+    <bug>
+      <id>777157</id>
+      <summary>qtdemux: seqh buffer not freed after calling qtdemux_parse_svq3_stsd_data()</summary>
+    </bug>
+  </bugs>
+
+</release>

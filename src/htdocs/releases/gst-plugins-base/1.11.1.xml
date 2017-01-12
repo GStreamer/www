@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-base</module>
+  <module-fancy>GStreamer Base Plugins</module-fancy>
+  <name></name>
+  <version>1.11.1</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release of the unstable
+1.11 release series. The 1.11 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6, 1.8 and 1.10 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.11 release series
+will lead to the stable 1.12 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Full release notes will be provided at some point during the 1.11 release
+cycle, highlighting all the new features, bugfixes, performance optimizations
+and other important changes.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+<p>
+This module contains a set of reference plugins, base classes for other
+plugins, and helper libraries. It also includes essential elements such
+as audio and video format converters, and higher-level components like playbin,
+decodebin, encodebin, and discoverer.
+
+This module is kept up-to-date together with the core developments.  Element
+writers should look at the elements in this module as a reference for
+their development.
+
+This module contains elements for, among others:
+<ul>
+  <li>device plugins: x(v)imagesink, alsa, v4lsrc, cdparanoia</li>
+  <li>containers: ogg</li>
+  <li>codecs: vorbis, theora</li>
+  <li>text: textoverlay, subparse</li>
+  <li>sources: audiotestsrc, videotestsrc, giosrc</li>
+  <li>network: tcp</li>
+  <li>typefind functions</li>
+  <li>audio processing: audioconvert, adder, audiorate, audioresample, volume</li>
+  <li>visualisation: libvisual</li>
+  <li>video processing: videoconvert, videoscale</li>
+  <li>high-level components: playbin, uridecodebin, decodebin, encodebin, discoverer</li>
+  <li>libraries: app, audio, fft, pbutils, riff, rtp, rtsp, sdp, tag, video</li>
+</ul>
+
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+    <contributors>
+	<person>Arun Raghavan</person>
+	<person>Carlos Rafael Giani</person>
+	<person>Changbok Chea</person>
+	<person>Edward Hervey</person>
+	<person>Evan Nemerson</person>
+	<person>Garima Gaur</person>
+	<person>Guillaume Desmottes</person>
+	<person>Jan Alexander Steffens (heftig)</person>
+	<person>Jan Schmidt</person>
+	<person>Joris Valette</person>
+	<person>Julien Isorce</person>
+	<person>Marcin Kolny</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Matthew Waters</person>
+	<person>Miguel Paris</person>
+	<person>Nicola Murino</person>
+	<person>Nicolas Dechesne</person>
+	<person>Nicolas Dufresne</person>
+	<person>Patricia Muscalu</person>
+	<person>Petr Kulhavy</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Scott D Phillips</person>
+	<person>Sebastian Dröge</person>
+	<person>Seungha Yang</person>
+	<person>Song Bing</person>
+	<person>Stian Selnes</person>
+	<person>Stuart Weaver</person>
+	<person>Thibault Saunier</person>
+	<person>Thomas Bluemel</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Tobias Mueller</person>
+	<person>Tomasz Zajac</person>
+	<person>Ulf Olsson</person>
+	<person>Vincent Penquerc'h</person>
+	<person>Vineeth TM</person>
+	<person>Vivia Nikolaidou</person>
+	<person>Wonchul Lee</person>
+	<person>hoonhee.lee</person>
+  </contributors>
+  <bugs>
+    <bug>
+      <id>678301</id>
+      <summary>audioringbuffer: introspection fixes and API clean up for bindings</summary>
+    </bug>
+    <bug>
+      <id>699077</id>
+      <summary>videorate: add &quot; rate &quot; property to modify clip speed</summary>
+    </bug>
+    <bug>
+      <id>744191</id>
+      <summary>encodebin: Need more buffers in output queue for better performance</summary>
+    </bug>
+    <bug>
+      <id>749567</id>
+      <summary>tcpclientsrc: add timeout property</summary>
+    </bug>
+    <bug>
+      <id>752052</id>
+      <summary>appsrc: Initialize min and max vars in get_property() for fix compiler warnings</summary>
+    </bug>
+    <bug>
+      <id>756628</id>
+      <summary>audioclock: Add run time type check safety</summary>
+    </bug>
+    <bug>
+      <id>758259</id>
+      <summary>discoverer: Add support to dump dot files</summary>
+    </bug>
+    <bug>
+      <id>759358</id>
+      <summary>Add GST_CAPS_FEATURE_MEMORY_DMABUF &quot; memory:DMABuf &quot; </summary>
+    </bug>
+    <bug>
+      <id>765796</id>
+      <summary>rtp depayloaders output bad segment events when input stream is a non time segment</summary>
+    </bug>
+    <bug>
+      <id>767450</id>
+      <summary>video-format: Add VYUY a packed 4:2:2 format</summary>
+    </bug>
+    <bug>
+      <id>769698</id>
+      <summary>sdp: add support for rtcp-fb attributes</summary>
+    </bug>
+    <bug>
+      <id>770355</id>
+      <summary>id3v2: Fix parsing extended header and string lists in UTF-16</summary>
+    </bug>
+    <bug>
+      <id>771376</id>
+      <summary>video: Add top-field-first / bottom-field-first information to raw video caps if interlaced-mode=interleaved &amp; proxy colorimetry in compressed caps too</summary>
+    </bug>
+    <bug>
+      <id>772445</id>
+      <summary>urisourcebin: minor enhancements</summary>
+    </bug>
+    <bug>
+      <id>772550</id>
+      <summary>urisourcebin: Fix minor typo and some FIXME list</summary>
+    </bug>
+    <bug>
+      <id>772832</id>
+      <summary>parsebin: Rename variables include 'decode' to 'parse'</summary>
+    </bug>
+    <bug>
+      <id>772864</id>
+      <summary>audioconvert: mask calculation optimization</summary>
+    </bug>
+    <bug>
+      <id>773073</id>
+      <summary>audioconvert: endian conversion optimization</summary>
+    </bug>
+    <bug>
+      <id>773102</id>
+      <summary>videotestsrc: Make snow deterministic</summary>
+    </bug>
+    <bug>
+      <id>773165</id>
+      <summary>videodecoder: add _allocate_output_frame_with_params() to pass custom GstBufferPoolAcquireParams [API]</summary>
+    </bug>
+    <bug>
+      <id>773341</id>
+      <summary>urisourcebin: Cleanup unused output slot</summary>
+    </bug>
+    <bug>
+      <id>773944</id>
+      <summary>meson: Generate girs</summary>
+    </bug>
+    <bug>
+      <id>774445</id>
+      <summary>meson: vorbis: Add -DTREMOR to flags for gstivorbisdec</summary>
+    </bug>
+    <bug>
+      <id>774454</id>
+      <summary>playbin3: remove dead code</summary>
+    </bug>
+    <bug>
+      <id>774484</id>
+      <summary>videodecoder, audiodecoder: parse format before checking in src_query_default</summary>
+    </bug>
+    <bug>
+      <id>774588</id>
+      <summary>video-info: Catch overflows in the video frame size calculation</summary>
+    </bug>
+    <bug>
+      <id>774728</id>
+      <summary>Subtitle showing as rectangular box in android platform</summary>
+    </bug>
+    <bug>
+      <id>774878</id>
+      <summary>tag: fix some warnings in mklicensestables</summary>
+    </bug>
+    <bug>
+      <id>774959</id>
+      <summary>rtpbuffer: fix ensure_buffers</summary>
+    </bug>
+    <bug>
+      <id>775310</id>
+      <summary>playbin: Fix caps memory leak in usage of gst_static_caps_get() API</summary>
+    </bug>
+    <bug>
+      <id>775369</id>
+      <summary>Audio distortion since commit 010b954 (regression)</summary>
+    </bug>
+    <bug>
+      <id>775917</id>
+      <summary>tests: Do not use 'auto-select-streams' property in playbin3 test app</summary>
+    </bug>
+    <bug>
+      <id>776038</id>
+      <summary>audioringbuffer: do not require 4 byte multiples for encoded audio</summary>
+    </bug>
+    <bug>
+      <id>776188</id>
+      <summary>encodebin: Fallback to other profile if we fail with one</summary>
+    </bug>
+    <bug>
+      <id>776447</id>
+      <summary>videotimecode: New GstVideoTimeCodeDiff type, ability to add to a GstVideoTimeCode</summary>
+    </bug>
+    <bug>
+      <id>776458</id>
+      <summary>urisourcebin: Always configure typefind</summary>
+    </bug>
+    <bug>
+      <id>777009</id>
+      <summary>urisourcebin: Never push actual EOS event to slot</summary>
+    </bug>
+    <bug>
+      <id>772764</id>
+      <summary>GstVideoTimeCode lacks GstValue functions</summary>
+    </bug>
+  </bugs>
+
+</release>
