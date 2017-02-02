@@ -1136,7 +1136,9 @@ This release only contains bugfixes and it should be safe to update from 1.10.x.
 #### Major bugfixes in 1.10.3
 
  - Various fixes for crashes, assertions, deadlocks and memory leaks on fuzzed
-   input files and in other situations
+   input files and in other situations (CVE-2016-10198, CVE-2016-10199,
+   CVE-2017-5837, CVE-2017-5838, CVE-2017-5839, CVE-2017-5840, CVE-2017-5841,
+   CVE-2017-5842, CVE-2017-5843, CVE-2017-5844, CVE-2017-5845, CVE-2017-5846)
  - Regression fixes for souphttpsrc with redirection tracking and retrying
  - Regression fix for gst-rtsp-server not handling TCP-only medias anymore
  - Various other bugfixes the RTP/RTSP codebase
