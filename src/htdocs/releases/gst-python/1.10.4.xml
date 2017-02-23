@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-python</module>
+  <module-fancy>GStreamer Python bindings</module-fancy>
+  <name></name>
+  <version>1.10.4</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce the fourth bugfix release in the stable
+1.10 release series of your favourite cross-platform multimedia framework!
+</p>
+<p>
+This release only contains bugfixes and it is safe to update from 1.10.x. For a
+full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;classification=Platform&amp;limit=0&amp;list_id=187054&amp;order=bug_id&amp;product=GStreamer&amp;query_format=advanced&amp;resolution=FIXED&amp;target_milestone=1.10.4">Bugzilla</a>.
+</p>
+<p>
+See <a href="&site;/releases/1.10/#1.10.4">&site;/releases/1.10/</a> for the full release notes.
+</p>
+  </intro>
+
+    <contributors>
+	<person>Sebastian Dröge</person>
+  </contributors>
+</release>
