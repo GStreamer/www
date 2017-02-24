@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-libav</module>
+  <module-fancy>GStreamer libav Plugins</module-fancy>
+  <name></name>
+  <version>1.11.2</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the second release of the unstable
+1.11 release series. The 1.11 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6, 1.8 and 1.10 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.11 release series
+will lead to the stable 1.12 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Full release notes will be provided at some point during the 1.11 release
+cycle, highlighting all the new features, bugfixes, performance optimizations
+and other important changes.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+<p>
+This module contains plugins based on the ffmpeg project, including codecs.
+</p>
+
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+</dl>
+
+</p>
+  </intro>
+
+    <contributors>
+	<person>Sebastian Dröge</person>
+	<person>Tim-Philipp Müller</person>
+  </contributors>
+
+<p>In addition to the above contributors, we would like to extend our
+thanks to the ffmpeg developers without which these plugins would have
+no reason to exist.</p>
+
+</release>

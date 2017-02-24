@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-good</module>
+  <module-fancy>GStreamer Good Plugins</module-fancy>
+  <name></name>
+  <version>1.11.2</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the second release of the unstable
+1.11 release series. The 1.11 release series is adding new features on top of
+the 1.0, 1.2, 1.4, 1.6, 1.8 and 1.10 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.11 release series
+will lead to the stable 1.12 release series in the next weeks. Any newly added
+API can still change until that point.
+</p>
+<p>
+Full release notes will be provided at some point during the 1.11 release
+cycle, highlighting all the new features, bugfixes, performance optimizations
+and other important changes.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+<p>
+<i>"Such ingratitude.  After all the times I've saved your life."</i>
+</p>
+<p>
+A collection of plugins you'd want to have right next to you on the
+battlefield.  Shooting sharp and making no mistakes, these plugins have it
+all: good looks, good code, and good licensing.  Documented and dressed up
+in tests.  If you're looking for a role model to base your own plugin on,
+here it is.
+</p>
+<p>
+If you find a plot hole or a badly lip-synced line of code in them,
+let us know - it is a matter of honour for us to ensure Blondie doesn't look
+like he's been walking 100 miles through the desert without water.
+</p>
+<p>
+This module contains a set of plugins that we consider to have good quality
+  code, correct functionality, our preferred license (LGPL for the plugin
+  code, LGPL or LGPL-compatible for the supporting library).
+We believe distributors can safely ship these plugins.
+People writing elements should base their code on these elements.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+    <contributors>
+	<person>Arnaud Vrac</person>
+	<person>Aurélien Zanelli</person>
+	<person>Brendan Shanks</person>
+	<person>David Warman</person>
+	<person>Edward Hervey</person>
+	<person>Enrico Jorns</person>
+	<person>Georg Lippitsch</person>
+	<person>Guillaume Desmottes</person>
+	<person>Jan Schmidt</person>
+	<person>Jean-Christophe Trotin</person>
+	<person>Jochen Henneberg</person>
+	<person>Jonas Holmberg</person>
+	<person>Juan Pablo Ugarte</person>
+	<person>Mark Nauwelaerts</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Matt Staples</person>
+	<person>Miguel París Díaz</person>
+	<person>Nick Kallen</person>
+	<person>Nicolas Dufresne</person>
+	<person>Olivier Crête</person>
+	<person>Rahul Bedarkar</person>
+	<person>Reynaldo H. Verdejo Pinochet</person>
+	<person>Santiago Carot-Nemesio</person>
+	<person>Sebastian Dröge</person>
+	<person>Seungha Yang</person>
+	<person>Søren Juul</person>
+	<person>Thiago Santos</person>
+	<person>Thibault Saunier</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Vivia Nikolaidou</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>778690</id>
+      <summary>qtdemux: Possible bug on gst-1.11 gst_element_seek</summary>
+    </bug>
+    <bug>
+      <id>736752</id>
+      <summary>mp4mux/qtmux: Add HEVC support</summary>
+    </bug>
+    <bug>
+      <id>761761</id>
+      <summary>splitmuxsink: Caps changes not handled</summary>
+    </bug>
+    <bug>
+      <id>766177</id>
+      <summary>qtdemux: Critical errors reported playing mp4 file with only xmp tags</summary>
+    </bug>
+    <bug>
+      <id>768762</id>
+      <summary>tests: qtmux and matroskamux reported as leaking by the leaks tracer</summary>
+    </bug>
+    <bug>
+      <id>774209</id>
+      <summary>splitmuxsink: Add option for timecode-based split</summary>
+    </bug>
+    <bug>
+      <id>775440</id>
+      <summary>qtdemux: Use upstream's StreamFlags if there are</summary>
+    </bug>
+    <bug>
+      <id>775817</id>
+      <summary>rtph265pay: fix config-interval handling</summary>
+    </bug>
+    <bug>
+      <id>776714</id>
+      <summary>rtpmanager: enhance RTP statistics by recording nacks sent/received per source too</summary>
+    </bug>
+    <bug>
+      <id>776715</id>
+      <summary>qtdemux: Skip seeking query if upstream format is time</summary>
+    </bug>
+    <bug>
+      <id>776899</id>
+      <summary>v4l2: Remove usage and definition of LOG_CAPS macro</summary>
+    </bug>
+    <bug>
+      <id>777100</id>
+      <summary>qtmux: Write tapt atom for MOV files if PAR not 1/1</summary>
+    </bug>
+    <bug>
+      <id>777182</id>
+      <summary>rtxqueue: Expose basic statistics as properties.</summary>
+    </bug>
+    <bug>
+      <id>777330</id>
+      <summary>v4l2bufferpool: remove duplicated line of code</summary>
+    </bug>
+    <bug>
+      <id>777331</id>
+      <summary>qtmux: Don't write Sync Sample Atom for ProRes</summary>
+    </bug>
+    <bug>
+      <id>777540</id>
+      <summary>isomp4: Unable to create streams playable with MSE</summary>
+    </bug>
+    <bug>
+      <id>778013</id>
+      <summary>rtpsession: relate received FIRs and PLIs to source</summary>
+    </bug>
+    <bug>
+      <id>778330</id>
+      <summary>qtmux: Creates two edit lists with reserved-* options enabled</summary>
+    </bug>
+    <bug>
+      <id>778389</id>
+      <summary>imagefreeze can return erroneous results for an accept caps query</summary>
+    </bug>
+    <bug>
+      <id>776962</id>
+      <summary>flacenc: Conversion from m4a encapsuled alac to flac fail with: Could not initialize supporting library.</summary>
+    </bug>
+  </bugs>
+
+</release>
