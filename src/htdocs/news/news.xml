@@ -8656,5 +8656,26 @@ or download tarballs for
         </content>
   </item>
 
+    <item>
+      <date>2017-02-24 10:00</date>
+        <title>GStreamer 1.10.4 stable release (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.10.4 stable release of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+See
+<a href="&site;/releases/1.10/#1.10.4">&site;/releases/1.10/</a>
+for the full list of changes.
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.10.4/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.10.4/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.10.4/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.10.4/">Windows</a>.
+        </p>
+        </content>
+    </item>
+
 </news>
 
