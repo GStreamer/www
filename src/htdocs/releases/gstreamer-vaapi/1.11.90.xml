@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer-vaapi</module>
+  <module-fancy>A set of VA-API based elements for GStreamer</module-fancy>
+  <name></name>
+  <version>1.11.90</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release candidate of the
+stable 1.12 release series. The 1.12 release series is adding new features on
+top of the 1.0, 1.2, 1.4, 1.6, 1.8 and 1.10 series and is part of the API and
+ABI-stable 1.x release series of the GStreamer multimedia framework.
+</p>
+<p>
+Full release notes will be provided with the 1.12.0 release, highlighting all
+the new features, bugfixes, performance optimizations and other important
+changes.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+  </intro>
+    <contributors>
+	<person>Hyunjun Ko</person>
+	<person>Julien Isorce</person>
+	<person>Scott D Phillips</person>
+	<person>Sebastian Dröge</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Thomas Petazzoni</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+  </contributors>
+  <bugs>
+    <bug>
+      <id>771291</id>
+      <summary>Encoder: HEVC: Add 10 bit encoding support</summary>
+    </bug>
+    <bug>
+      <id>772838</id>
+      <summary>vaapi: clutter on wayland: GLTextureUpload negotiated but not available</summary>
+    </bug>
+    <bug>
+      <id>778676</id>
+      <summary>vaapijpegenc does not work together with videotestsrc</summary>
+    </bug>
+    <bug>
+      <id>778750</id>
+      <summary>For vaapih264enc without h264parse, using the adaptive 8x8 DCT encoding tool breaks 720p 30 fps clips</summary>
+    </bug>
+    <bug>
+      <id>778781</id>
+      <summary>vaapiencode: merge tags for downstream's info</summary>
+    </bug>
+    <bug>
+      <id>779120</id>
+      <summary>vaapiencoder: miscellaneous potential bug</summary>
+    </bug>
+    <bug>
+      <id>779400</id>
+      <summary>vaapi: wayland window: more cases of using vpp</summary>
+    </bug>
+    <bug>
+      <id>780302</id>
+      <summary>Build failures when Gstreamer is built with --disable-gst-debug</summary>
+    </bug>
+    <bug>
+      <id>780620</id>
+      <summary>h264 encoding: artifacts in encoded stream</summary>
+    </bug>
+  </bugs>
+</release>

@@ -8745,5 +8745,54 @@ available for Windows 32/64-bit, iOS and Mac OS X and Android.
         </content>
     </item>
 
+    <item>
+      <date>2017-04-07 14:00</date>
+        <title>GStreamer 1.12.0 release candidate 1 (1.11.90)</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the first release candidate of the
+stable 1.12 release series. The 1.12 release series is adding new features on
+top of the 1.0, 1.2, 1.4, 1.6, 1.8 and 1.10 series and is part of the API and
+ABI-stable 1.x release series of the GStreamer multimedia framework.
+</p>
+<p>
+Full release notes will be provided with the 1.12.0 release, highlighting all
+the new features, bugfixes, performance optimizations and other important
+changes.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.11.90.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.11.90.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.11.90.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.11.90.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.11.90.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-libav/1.11.90.html">gst-libav</a>,
+<a href="&site;/releases/gst-rtsp-server/1.11.90.html">gst-rtsp-server</a>,
+<a href="&site;/releases/gst-python/1.11.90.html">gst-python</a>,
+<a href="&site;/releases/gst-editing-services/1.11.90.html">gst-editing-services</a>,
+<a href="&site;/releases/gst-validate/1.11.90.html">gst-validate</a>,
+<a href="&site;/releases/gstreamer-vaapi/1.11.90.html">gstreamer-vaapi</a>, or
+<a href="&site;/releases/gst-omx/1.11.90.html">gst-omx</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.11.90.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.11.90.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.11.90.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.11.90.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.11.90.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.11.90.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.11.90.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.11.90.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.11.90.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-validate/gst-validate-1.11.90.tar.xz">gst-validate</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.11.90.tar.xz">gstreamer-vaapi</a>, or
+<a href="&site;/src/gst-omx/gst-omx-1.11.90.tar.xz">gst-omx</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
 
