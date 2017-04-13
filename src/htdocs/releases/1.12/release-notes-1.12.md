@@ -1,8 +1,8 @@
 # GStreamer 1.12 Release Notes
 
-**NOTE: THESE RELEASE NOTES ARE VERY INCOMPLETE AND STILL WORK-IN-PROGRESS**
+**NOTE: THESE RELEASE NOTES ARE INCOMPLETE AND STILL WORK-IN-PROGRESS**
 
-**GStreamer 1.12 is scheduled for release in TBD 2017.**
+**GStreamer 1.12 is scheduled for release in TBD (April) 2017.**
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
@@ -13,7 +13,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.12/][latest] for the latest
 version of this document.
 
-*Last updated: Monday 14 November 2016, 10:00 UTC [(log)][gitlog]*
+*Last updated: Thursday 13 April 2017, 16:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.12/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.12/release-notes-1.12.md
@@ -28,64 +28,485 @@ improvements.
 
 ## Highlights
 
-- FILL ME
+- new `msdk` plugin for Intel's Media SDK for hardware-accelerated video
+  encoding and decoding on Intel graphics hardware on Windows or Linux.
+
+- `x264enc` can now use multiple x264 library versions compiled for different
+  bit depths at runtime, to transparently provide support for multiple bit
+  depths.
+
+- `videoscale` and `videoconvert` now support multi-threaded scaling and
+  conversion, which is particularly useful with higher resolution video.
+
+- `h264parse` will now automatically insert AU delimiters if needed when
+  outputting byte-stream format, which improves standard compliance and
+  is needed in particular for HLS playback on iOS/macOS.
 
 ## Major new features and changes
 
 ### Noteworthy new API, features and other changes
 
-- FILL ME
+- The video library gained support for a number of new video formats:
+
+  - `GBR_12LE`, `GBR_12BE`, `GBRA_12LE`, `GBRA_12BE` (planar 4:4:4 RGB/RGBA, 12 bits per channel)
+  - `GBRA_10LE`, `GBRA_10BE` (planar 4:4:4:4 RGBA, 10 bits per channel)
+  - `GBRA` (planar 4:4:4:4 ARGB, 8 bits per channel)
+  - `I420_12BE`, `I420_12LE` (planar 4:2:0 YUV, 12 bits per channel)
+  - `I422_12BE`,`I422_12LE` (planar 4:2:2 YUV, 12 bits per channel)
+  - `Y444_12BE`, `Y444_12LE` (planar 4:4:4 YUV, 12 bits per channel)
+  - `VYUY` (another packed 4:2:2 YUV format)
+
+- The high-level `GstPlayer` API was extended with functions for taking video
+  snapshots and enabling accurate seeking. It can optionally also use the
+  still-experimental `playbin3` element now.
 
 ### New Elements
 
-- FILL ME
+- msdk: new plugin for Intel's Media SDK for hardware-accelerated video encoding
+  and decoding on Intel graphics hardware on Windows or Linux. This includes
+  an H.264 encoder/decoder (`msdkh264dec`, `msdkh264enc`),
+  an H.265 encoder/decoder (`msdkh265dec`, `msdkh265enc`),
+  an MJPEG encoder/encoder (`msdkmjpegdec`, `msdkmjpegenc`),
+  an MPEG-2 video encoder (`msdkmpeg2enc`) and a VP8 encoder (`msdkvp8enc`).
 
-### Noteworthy element features and additions
+- `iqa` is a new Image Quality Assessment plugin based on [DSSIM][dssim],
+  similar to the old (unported) videomeasure element.
 
-- FILL ME
+- The `faceoverlay` element, which allows you to overlay SVG graphics over
+  a detected face in a video stream, has been ported from 0.10.
+
+- our `ffmpeg` wrapper plugin now exposes/maps the ffmpeg Opus audio decoder
+  (`avdec_opus`) as well as the CineForm HD / CFHD decoder (`avdec_cfhd`),
+  and also a parser/writer for the IVF format (`avdemux_ivf` and `avmux_ivf`).
+
+- `audiobuffersplit` is a new element that splits raw audio buffers into
+  equal-sized buffers
+
+- `audiomixmatrix` is a new element that mixes N:M audio channels
+  according to a configured mix matrix.
+
+- The `timecodewait` element got renamed to `avwait` and can operate in
+  different modes now.
+
+- The `opencv` video processing plugin has gained a new `dewarp` element that
+  dewarps fisheye images.
+
+- `ttml` is a new plugin for parsing and rendering subtitles in Timed Text
+  Markup Language (TTML) format. For the time being these elements will not
+  be autoplugged during media playback however, unless the `GST_TTML_AUTOPLUG=1`
+  environment variable is set.
+
+[dssim]: https://github.com/pornel/dssim
+
+### New element features and additions
+
+- `x264enc` can now use multiple x264 library versions compiled for different
+  bit depths at runtime, to transparently provide support for multiple bit
+  depths. A new configure parameter `--with-x264-libraries` has been added to
+  specify additional paths to look for additional x264 libraries to load.
+  Background is that the libx264 library is always compile for one specific
+  bit depth and the `x264enc` element would simply support the depth supported
+  by the underlying library. Now we can support multiple depths.
+
+- `x264enc` also picks up the interlacing mode automatically from the input
+  caps now and passed interlacing/TFF information correctly to the library.
+
+- `videoscale` and `videoconvert` now support multi-threaded scaling and
+  conversion, which is particularly useful with higher resolution video.
+  This has to be enabled explicitly via the `"n-threads"` property.
+
+- `videorate`'s new `"rate"` property lets you set a speed factor
+  on the output stream
+
+- `splitmuxsink`'s buffer collection and scheduling was rewritten to make
+  processing and splitting deterministic; before it was possible for a buffer
+  to end up in a different file chunk in different runs. `splitmuxsink` also
+  gained a new `"format-location-full"` signal that works just like the existing
+  `"format-location"` signal only that it is also passed the primary stream's
+  first buffer as argument, so that it is possible to construct the file name
+  based on metadata such as the buffer timestamp or any GstMeta attached to
+  the buffer. The new `"max-size-timecode"` property allows for timecode-based
+  splitting. `splitmuxsink` will now also automatically start a new file if the
+  input caps change in an incompatible way.
+
+- `fakesink` has a new `"drop-out-of-segment"` property to not drop
+  out-of-segment buffers, which is useful for debugging purposes.
+
+- `identity` gained a `"ts-offset"` property.
+
+- both `fakesink` and `identity` now also print what kind of metas are attached
+  to buffers when printing buffer details via the `"last-message"` property
+  used by `gst-launch-1.0 -v`.
+
+- multiqueue: made `"min-interleave-time"` a configurable property.
+
+- video nerds will be thrilled to know that `videotestsrc`'s snow is now
+  deterministic. `videotestsrc` also gained some new properties to make the
+  ball pattern based on system time, and invert colours each second
+  (`"animation-mode"`, `"motion"`, and `"flip"` properties).
+
+- `oggdemux` reverse playback should work again now. You're welcome.
+
+- `playbin3` and `urisourcebin` now have buffering enabled by default, and
+  buffering message aggregation was fixed.
+
+- `tcpclientsrc` now has a `"timeout"` property
+
+- `appsink` has gained support for buffer lists. For backwards compatibility
+  reasons users need to enable this explicitly with `gst_app_sink_set_buffer_list_support()`,
+  however. Once activated, a pulled `GstSample` can contain either a buffer
+  list or a single buffer.
+
+- `splitmuxsrc` reverse playback was fixed and handling of sparse streams, such
+  as subtitle tracks or metadata tracks, was improved.
+
+- `updsrc` can join groups on multiple multicast interfaces now.
+
+- `matroskamux` has acquired support for muxing G722 audio; it also marks all
+  buffers as keyframes now when streaming only audio, so that `tcpserversink`
+  will behave properly with audio-only streams.
+
+- `qtmux` gained support for ProRes 4444 XQ, HEVC/H.265 and CineForm formats,
+  and generally writes more video stream-related metadata into the track headers.
+  It is also allows configuration of the maximum interleave size in bytes and
+  time now. For fragmented mp4 we always write the `tfdt` atom now as required
+  by the DASH spec.
+
+- `qtdemux` supports FLAC, xvid, mp2 and S16L tracks now, and generally tries
+  harder to extract more video-related information from track headers, such as
+  colorimetry or interlacing details. It also received a couple of fixes for
+  the scenario where upstream operates in TIME format and feeds chunks to
+  qtdemux (e.g. DASH or MSE).
+
+- `audioecho` has two new properties to apply a delay only to certain channels
+  to create a surround effect, rather than an echo on all channels. This is
+  useful when upmixing from stereo, for example. The `"surround-delay"` property 
+  enables this, and the `"surround-mask"` property controls which channels
+  are considered surround sound channels in this case.
+
+- `webrtcdsp` gained various new properties for gain control and also exposes
+  voice activity detection now, in which case it will post `"voice-activity"`
+  messages on the bus whenever the voice detection status changes.
+
+- The `decklink` capture elements for blackmagic cards have seen a number of
+  improvements:
+
+  - `decklinkvideosrc` will post a warning message on "no signal" and an info
+    message when the signal lock has been (re)acquired. There is also a new
+    read-only `"signal"` property that can be used to query the signal lock
+    status. The `GAP` flag will be set on buffers that are captured without
+    a signal lock. The new `drop-no-signal-frames` will make `decklinkvideosrc`
+    drop all buffers that have been captured without an input signal. The
+    `"skip-first-time"` property will make the source drop the first few
+    buffers, which is handy since some devices will at first output buffers
+    with the wrong resolution before they manage to figure out the right input
+    format and decide on the actual output caps.
+
+  - `decklinkaudiosrc` supports more than just 2 audio channels now.
+
+  - The capture sources no longer use the "hardware" timestamps which turn
+    out to be useless and instead just use the pipeline clock directly.
+
+- `srtpdec` now also has a readonly `"stats"` property, just like `srtpenc`.
 
 ### Plugin moves
 
-- FILL ME
+- `dataurisrc` moved from gst-plugins-bad to core
 
-### Some new major change
+- The `rawparse` plugin containing the `rawaudioparse` and `rawvideoparse`
+  elements moved from gst-plugins-bad to gst-plugins-base. These elements
+  supersede the old `videoparse` and `audioparse` elements. They work the
+  same, with just some minor API changes. The old legacy elements still
+  exist in gst-plugins-bad, but may be removed at some point in the future.
 
-- FILL ME
+- `timecodestamper` is an element that attaches time codes to video buffers
+   in form of `GstVideoTimeCodeMeta`s. It had a `"clock-source"` property
+   which has now been removed because it was fairly useless in practice. It
+   gained some new properties however: the `"first-timecode"` property can
+   be used to set the inital timecode; alternatively `"first-timecode-to-now"`
+   can be set, and then the current system time at the time the first buffer
+   arrives is used as base time for the time codes.
 
-### Some other new major change
 
-- FILL ME
+### Plugin removals
 
-## Miscellaneous
+- The `mad` mp1/mp2/mp3 decoder plugin was removed from gst-plugins-ugly,
+  as libmad is GPL licensed, has been unmaintained for a very long time, and
+  there are better alternatives available. Use the `mpg123audiodec` element
+  from the `mpg123` plugin in gst-plugins-ugly instead, or `avdec_mp3` from
+  the `gst-libav` module which wraps the ffmpeg library. We expect that we
+  will be able to move mp3 decoding to gst-plugins-good in the next cycle
+  seeing that most patents around mp3 have expired recently or are about to
+  expire.
 
-The buffer stored in the Protection events is now left unchanged. This is a
-change of behaviour since 1.8, especially for the mssdemux element which used to
-decode the base64 parsed data wrapped in the protection events emitted by the
-demuxer.
+- The `mimic` plugin was removed from gst-plugins-bad. It contained a decoder
+  and encoder for a video codec used by MSN messanger many many years ago (in
+  a galaxy far far away). The underlying library is unmaintained and no one
+  really needs to use this codec any more. Recorded videos can still be played
+  back with the MIMIC decoder in gst-libav.
 
-The DASH demuxer is now correctly parsing the MSPR-2.0 ContentProtection nodes
-and emits Protection events accordingly. Applications relying on those events
-might need to decode the base64 data stored in the event buffer before using it.
+## Miscellaneous API additions
 
-- FILL ME
+- Request pad name templates passed to `gst_element_request_pad()` may now
+  contain multiple specifiers, such as e.g. `src_%u_%u`.
+
+- [`gst_buffer_iterate_meta_filtered()`][buffer-iterate-meta-filtered] is a
+  variant of `gst_buffer_iterate_meta()` that only returns metas of the
+  requested type and skips all other metas.
+
+- [`gst_pad_task_get_state()`][pad-task-get-state] gets the current state of
+  a task in a thread-safe way.
+
+- [`gst_uri_get_media_fragment_table()`][uri-get-fragment-table] provides the
+  media fragments of an URI as a table of key=value pairs.
+
+- [`gst_print()`][print], [`gst_println()`][println], [`gst_printerr()`][printerr],
+  and [`gst_printerrln()`][printerrln] can be used to print to stdout or stderr.
+  These functions are similar to `g_print()` and `g_printerr()` but they also
+  support all the additional format specifiers provided by the GStreamer
+  logging system, such as e.g. `GST_PTR_FORMAT`.
+
+- a `GstParamSpecArray` has been added, for elements who want to have array
+  type properties, such as the `audiomixmatrix` element for example. There are
+  also two new functions to set and get properties of this type from bindings:
+   - gst_util_set_object_array()
+   - gst_util_get_object_array()
+
+- various helper functions have been added to make it easier to set or get
+  GstStructure fields containing caps-style array or list fields from language
+  bindings (which usually support GValueArray but don't know about the GStreamer
+  specific fundamental types):
+   - [`gst_structure_get_array()`][get-array]
+   - [`gst_structure_set_array()`][set-array]
+   - [`gst_structure_get_list()`][get-list]
+   - [`gst_structure_set_list()`][set-list]
+
+- a new ['dynamic type' registry factory type][dynamic-type] was added to
+  register dynamically loadable GType types. This is useful for automatically
+  loading enum/flags types that are used in caps, such as for example the
+  `GstVideoMultiviewFlagsSet` type used in multiview video caps.
+
+- there is a new [`GstProxyControlBinding`][proxy-control-binding] for use
+  with GstController. This allows proxying the control interface from one
+  property on one GstObject to another property (of the same type) in another
+  GstObject. So e.g. in parent-child relationship, one may need to call
+  `gst_object_sync_values()` on the child and have a binding (set elsewhere)
+  on the parent update the value. This is used in `glvideomixer` and `glsinkbin`
+  for example, where `sync_values()` on the child pad or element will call
+  `sync_values()` on the exposed bin pad or element.
+
+  Note that this doesn't solve GObject property forwarding, that must
+  be taken care of by the implementation manually or using GBinding.
+
+- `gst_base_parse_drain()` has been made public for subclasses to use.
+
+- `gst_base_sink_set_drop_out_of_segment()' can be used by subclasses to
+  prevent GstBaseSink from dropping buffers that fall outside of the segment.
+
+- [`gst_calculate_linear_regression()`][calc-lin-regression] is a new utility
+  function to calculate a linear regression.
+
+- [`gst_debug_get_stack_trace`][get-stack-trace] is an easy way to retrieve a
+  stack trace, which can be useful in tracer plugins.
+
+- allocators: the dmabuf allocator is now sub-classable, and there is a new
+  `GST_CAPS_FEATURE_MEMORY_DMABUF` define.
+
+- video decoder subclasses can use the newly-added function
+  `gst_video_decoder_allocate_output_frame_with_params()` to
+  pass a `GstBufferPoolAcquireParams` to the buffer pool for
+  each buffer allocation.
+
+- the video time code API has gained a dedicated [`GstVideoTimeCodeInterval`][timecode-interval]
+  type plus related API, including functions to add intervals to timecodes.
+
+- There is a new `libgstbadallocators-1.0` library in gst-plugins-bad, which
+  may go away again in future releases once the `GstPhysMemoryAllocator`
+  interface API has been validated by more users.
+
+[timecode-interval]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstvideo.html#gst-video-time-code-interval-new
+[buffer-iterate-meta-filtered]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstBuffer.html#gst-buffer-iterate-meta-filtered
+[pad-task-get-state]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstPad.html#gst-pad-task-get-state
+[uri-get-fragment-table]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstUri.html#gst-uri-get-media-fragment-table
+[print]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-print
+[println]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-println
+[printerr]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-printerr
+[printerrln]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-printerrln
+[get-array]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstStructure.html#gst-structure-get-array
+[set-array]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstStructure.html#gst-structure-set-array
+[get-list]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstStructure.html#gst-structure-get-list
+[set-list]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstStructure.html#gst-structure-set-list
+[dynamic-type]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstDynamicTypeFactory.html
+[proxy-control-binding]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/gstreamer-libs-GstProxyControlBinding.html
+[calc-lin-regression]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstUtils.html#gst-calculate-linear-regression
+[get-stack-trace]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstUtils.html#gst-debug-get-stack-trace
+
+### GstPlayer
+
+New API has been added to:
+
+ - get the number of audio/video/subtitle streams:
+   - `gst_player_media_info_get_number_of_streams()`
+   - `gst_player_media_info_get_number_of_video_streams()`
+   - `gst_player_media_info_get_number_of_audio_streams()`
+   - `gst_player_media_info_get_number_of_subtitle_streams()`
+
+ - enable accurate seeking: `gst_player_config_set_seek_accurate()`
+   and `gst_player_config_get_seek_accurate()`
+
+ - get a snapshot image of the video in RGBx, BGRx, JPEG, PNG or
+   native format: [`gst_player_get_video_snapshot()`][snapshot]
+
+ - selecting use of a specific video sink element
+   ([`gst_player_video_overlay_video_renderer_new_with_sink()`][renderer-with-vsink])
+
+If the environment variable `GST_PLAYER_USE_PLAYBIN3` is set, GstPlayer will
+use the still-experimental `playbin3` element and the `GstStreams` API for
+playback.
+
+[snapshot]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/gst-plugins-bad-libs-gstplayer.html#gst-player-get-video-snapshot
+[renderer-with-vsink]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/gst-plugins-bad-libs-gstplayer-videooverlayvideorenderer.html#gst-player-video-overlay-video-renderer-new-with-sink
+
+## Miscellaneous changes
+
+- video caps for interlaced video may contain an optional `"field-order"` field
+  now in the case of `interlaced-mode=interleaved` to signal that the field
+  order is always the same throughout the stream. This is useful to signal to
+  muxers such as mp4mux. The new field is parsed from/to `GstVideoInfo` of course.
+
+- video decoder and video encoder base classes try harder to proxy
+  interlacing-related fields in caps properly.
+
+- The buffer stored in the `PROTECTION` events is now left unchanged. This is a
+  change of behaviour since 1.8, especially for the mssdemux element which used to
+  decode the base64 parsed data wrapped in the protection events emitted by the
+  demuxer.
+
+- `PROTECTION` events can now be injected into the pipeline from the application;
+  source elements deriving from GstBaseSrc will forward those downstream now.
+
+- The DASH demuxer is now correctly parsing the MSPR-2.0 ContentProtection nodes
+  and emits Protection events accordingly. Applications relying on those events
+  might need to decode the base64 data stored in the event buffer before using it.
+
+- The registry can now also be disabled by setting the environment variable
+  `GST_REGISTRY_DISABLE=yes`, with similar effect as the `GST_DISABLE_REGISTRY`
+  compile time switch.
+
+- Seeking performance with gstreamer-vaapi based decoders was improved. It would
+  recreate the decoder and surfaces on every seek which can be quite slow.
+
+- more robust handling of input caps changes in videoaggregator-based elements
+  such as `compositor`.
+
+- Lots of adaptive streaming-related fixes and improvements:
+
+  - `mssdemux`, the Microsoft Smooth Streaming demuxer, has seen various
+    fixes for live streams, duration reporting and seeking.
+
+  - The DASH manifest parser now extracts MS PlayReady ContentProtection objects
+    from manifests and sends them downstream as `PROTECTION` events. It also
+    supports multiple Period elements in external xml now.
+
+### OpenGL integration
+
+- The GStreamer OpenGL integration layer has gained support for the
+  Vivante EGL FB windowing system, which improves performance on platforms
+  such as Freescale iMX.6 for those who are stuck with the proprietary driver.
+  The `qmlglsink` element also supports this now if Qt is used with eglfs or
+  wayland backend, and it works in conjunction with [gstreamer-imx][gstreamer-imx]
+  of course.
+
+[gstreamer-imx]: https://github.com/Freescale/gstreamer-imx
+
+## Tracing framework and debugging improvements
+
+- New tracing hooks have been added to track GstMiniObject and GstObject
+  ref/unref operations.
+
+- The memory leaks tracer can optionally use this to retrieve stack traces if
+  enabled with e.g. `GST_TRACERS=leaks(filters="GstEvent,GstMessage",stack-traces-flags=full)`
+
+- The `GST_DEBUG_FILE` environment variable, which can be used to write the
+  debug log output to a file instead of printing it to stderr, can now contain
+  a name pattern, which is useful for automated testing and continuous
+  integration systems. The following format specifiers are supported:
+
+   - `%p`: will be replaced with the PID
+   - `%r`: will be replaced with a random number, which is useful for instance
+     when running two processes with the same PID but in different containers.
+
+## Tools
+
+- `gst-inspect-1.0` can now list elements by type with the new `--types`
+   command-line option, e.g. `gst-inspect-1.0 --types=Audio/Encoder` will
+   show a list of audio encoders.
+
+- `gst-launch-1.0` and `gst_parse_launch()` have gained a new operator (`:`)
+   that allows linking all pads between two elements. This is useful in cases
+   where the exact number of pads or type of pads is not known beforehand, such
+   as in the `uridecodebin : encodebin` scenario, for example. In this case,
+   multiple links will be created if the encodebin has multiple profiles
+   compatible with the output of uridecodebin.
+
+- `gst-device-monitor-1.0` now shows a `gst-launch-1.0` snippet for each
+  device that shows how to make use of it in a `gst-launch-1.0` pipeline string.
+
+## GStreamer RTSP server
+
+- The RTSP server now also supports Digest authentication.
+
+- The `GstRTSPClient` class has gained a `pre-*-request` signal and virtual
+  method for each client request type, emitted in the beginning of each rtsp
+  request. These signals or virtual methods let the application validate the
+  requests, configure the media/stream in a certain way and also generate error
+  status codes in case of an error or a bad request.
 
 ## Build and Dependencies
 
-- FILL ME
+- Meson build files are now disted in tarballs, for jhbuild and so distro
+  packagers can start using it.
+
+- Some plugin filenames have been changed to match the plugin names: for example
+  the file name of the `encoding` plugin in gst-plugins-base containing the
+  `encodebin` element was `libgstencodebin.so` and has been changed to
+  `libgstencodebin.so`. This affects only a handful of plugins across modules.
+
+  **Developers who install GStreamer from source and just do `make install`**
+  **after updating the source code, without doing `make uninstall` first, will**
+  **have to manually remove the old installed plugin files from the installation**
+  **prefix, or they will get 'Cannot register existing type' critical warnings.**
+
+- Most of the docbook-based documentation (FAQ, Application Development Manual,
+  Plugin Writer's Guide, design documents) has been converted to markdown and
+  moved into a new gst-docs module. The gtk-doc library API references and
+  the plugins documentation are still built as part of the source modules though.
+
+- GStreamer core now optionally uses libunwind and libdw to generate backtraces.
+  This is useful for tracer plugins used during debugging and development.
+
+- There is a new `libgstbadallocators-1.0` library in gst-plugins-bad (which
+  may go away again in future releases once the `GstPhysMemoryAllocator`
+  interface API has been validated by more users).
 
 ## Platform-specific improvements
 
 ### Android
 
-- FILL ME
+- androidmedia: add support for VP9 video decoding/encoding and
+  Opus audio decoding (where supported)
 
 ### OS/X and iOS
 
-- FILL ME
+- `avfvideosrc`, which represents an iphone camera or, on mac, a screencapture
+  session, so far allowed you to select an input device by device index only.
+  New API adds the ability to select the position (front or back facing) and
+  device-type (wide angle, telephoto, etc.). Furthermore, you can now also
+  specify the orientation (portrait, landscape, etc.) of the videostream.
 
 ### Windows
 
-- FILL ME
+- `dx9screencapsrc` can now optionally also capture the cursor.
 
 ## Contributors
 
@@ -122,7 +543,10 @@ is a stable branch.
 
 ## Known Issues
 
-- FILL ME
+- The `webrtcdsp` element is currently not shipped as part of the Windows
+  binary packages due to a [build system issue][bug-770264].
+
+[bug-770264]: https://bugzilla.gnome.org/show_bug.cgi?id=770264
 
 ## Schedule for 1.14
 
@@ -131,15 +555,15 @@ development version leading up to the stable 1.12 release. The development
 of 1.13/1.14 will happen in the git master branch.
 
 The plan for the 1.14 development cycle is yet to be confirmed, but it is
-expected that feature freeze will be around TBD,
+expected that feature freeze will be around the end of August 2017
 followed by several 1.13 pre-releases and the new 1.14 stable release
-in September.
+in September/October.
 
-1.12 will be backwards-compatible to the stable 1.12, 1.10, 1.8, 1.6, 1.4, 1.2 and
-1.0 release series.
+1.14 will be backwards-compatible to the stable 1.12, 1.10, 1.8, 1.6, 1.4,
+1.2 and 1.0 release series.
 
 - - -
 
-*These release notes have been prepared by Sebastian Dröge, ....*
+*These release notes have been prepared by Sebastian Dröge and Tim-Philipp Müller.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
