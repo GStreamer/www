@@ -514,6 +514,8 @@ playback.
   may go away again in future releases once the `GstPhysMemoryAllocator`
   interface API has been validated by more users).
 
+- the `gst-omx` module can now also be built using the Meson build system.
+
 ## Platform-specific improvements
 
 ### Android
