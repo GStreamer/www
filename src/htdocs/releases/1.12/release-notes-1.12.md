@@ -42,6 +42,8 @@ improvements.
   outputting byte-stream format, which improves standard compliance and
   is needed in particular for HLS playback on iOS/macOS.
 
+- `rtpbin` has acquired bundle support for incoming streams
+
 ## Major new features and changes
 
 ### Noteworthy new API, features and other changes
@@ -208,6 +210,24 @@ improvements.
     out to be useless and instead just use the pipeline clock directly.
 
 - `srtpdec` now also has a readonly `"stats"` property, just like `srtpenc`.
+
+- `rtpbin` can now also demultiplex incoming bundled streams. The first
+   rtpsession will have a `rtpssrcdemux` element inside splitting the streams
+   based on their SSRC and potentially dispatch to a different rtpsession.
+   Because retransmission SSRCs need to be merged with the corresponding media
+   stream the `::on-bundled-ssrc` signal is emitted on `rtpbin` so that the
+   application can find out to which session the SSRC belongs.
+
+- `rtprtxqueue` gained two now properties exposing retransmission
+  statistics (`"requests"` and `"fulfilled-requests"`)
+
+- `kmssink` will now use the prefered mode for the monitor and render to the
+  base plane if nothing else has set a mode yet. This can also be done forcibly
+  in any case via the new `"force-modesetting"` property. Furthermore, `kmssink`
+  now allows only the supported connector resolutions as input caps in order to
+  avoid scaling or positioning of the input stream, as `kmssink` can't know
+  whether scaling or positioning would be more appropriate for the use case at
+  hand.
 
 ### Plugin moves
 
@@ -399,7 +419,7 @@ playback.
 - more robust handling of input caps changes in videoaggregator-based elements
   such as `compositor`.
 
-- Lots of adaptive streaming-related fixes and improvements:
+- Lots of adaptive streaming-related fixes across the board. Also:
 
   - `mssdemux`, the Microsoft Smooth Streaming demuxer, has seen various
     fixes for live streams, duration reporting and seeking.
@@ -410,12 +430,17 @@ playback.
 
 ### OpenGL integration
 
-- The GStreamer OpenGL integration layer has gained support for the
+- As usual the GStreamer OpenGL integration library has seen numerous
+  fixes and performance improvements all over the place.
+
+- The GStreamer OpenGL integration layer has also gained support for the
   Vivante EGL FB windowing system, which improves performance on platforms
   such as Freescale iMX.6 for those who are stuck with the proprietary driver.
   The `qmlglsink` element also supports this now if Qt is used with eglfs or
   wayland backend, and it works in conjunction with [gstreamer-imx][gstreamer-imx]
   of course.
+
+- various `qmlglsrc` improvements
 
 [gstreamer-imx]: https://github.com/Freescale/gstreamer-imx
 
