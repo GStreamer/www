@@ -485,6 +485,42 @@ playback.
   requests, configure the media/stream in a certain way and also generate error
   status codes in case of an error or a bad request.
 
+## GStreamer VAAPI
+
+- GstVaapiDisplay now inherits from GstObject, thus the VA display logging
+  messages are better and tracing the context sharing is more readable.
+
+- When uploading raw images into a VA surfaces now VADeriveImages are tried
+  fist, improving the upload performance, if it is possible.
+
+- The decoders and the post-processor now can push dmabuf-based buffers to
+  downstream under certain conditions. For example:
+
+  `GST_GL_PLATFORM=egl gst-play-1.0 video-sample.mkv --videosink=glimagesink`
+
+- Refactored the wrapping of VA surface into gstreamer memory, adding lock
+  when mapping and unmapping, and many other fixes.
+
+- Now `vaapidecodebin` loads `vaapipostproc` dynamically. It is possible to
+  avoid it usage with the environment variable `GST_VAAPI_DISABLE_VPP=1`.
+
+- Regarding encoders: now they discover, in run-time, what color formats they
+  can use for upstream raw buffers; caps renegotiation were enabled; added CBR
+  encoding mode for VP8; encoders push encoding info tags to downstream; H265
+  encoder handles P010_10LE color format.
+
+- Regarding decoders, flush operation has been improved, now the internal VA
+  encoder is not recreated at each flush. Also there are several improvements
+  in the handling of H264 and H265 streams.
+
+- VAAPI plugins try to create their on GstGL context (when available) if they
+  cannot find it in the pipeline, to figure out what type of VA Display they
+  should create.
+
+- Regarding `vaapisink` for X11, if the backend reports that it is unable to
+  render correctly the current color format, an internal VA post-processor, is
+  instantiated (if available) and converts the color format.
+
 ## Build and Dependencies
 
 - Meson build files are now disted in tarballs, for jhbuild and so distro
@@ -512,7 +548,8 @@ playback.
   may go away again in future releases once the `GstPhysMemoryAllocator`
   interface API has been validated by more users).
 
-- the `gst-omx` module can now also be built using the Meson build system.
+- `gst-omx` and `gstreamer-vaapi` modules can now also be built using the
+  Meson build system.
 
 ## Platform-specific improvements
 
