@@ -216,10 +216,10 @@ improvements.
    stream the `::on-bundled-ssrc` signal is emitted on `rtpbin` so that the
    application can find out to which session the SSRC belongs.
 
-- `rtprtxqueue` gained two now properties exposing retransmission
+- `rtprtxqueue` gained two new properties exposing retransmission
   statistics (`"requests"` and `"fulfilled-requests"`)
 
-- `kmssink` will now use the prefered mode for the monitor and render to the
+- `kmssink` will now use the preferred mode for the monitor and render to the
   base plane if nothing else has set a mode yet. This can also be done forcibly
   in any case via the new `"force-modesetting"` property. Furthermore, `kmssink`
   now allows only the supported connector resolutions as input caps in order to
@@ -429,6 +429,13 @@ playback.
 - gst-libav was updated to ffmpeg 3.3 but should still work with any 3.x
   version.
 
+- GstEncodingProfile has been generally enhanced so it can, for
+  example, be used to get possible profiles for a given file
+  extension. It is now possible to define profiles based on element
+  factory names or using a path to a `.gep` file containing a
+  serialized profile.
+
+
 ### OpenGL integration
 
 - As usual the GStreamer OpenGL integration library has seen numerous
@@ -526,6 +533,36 @@ playback.
 - Regarding `vaapisink` for X11, if the backend reports that it is unable to
   render correctly the current color format, an internal VA post-processor, is
   instantiated (if available) and converts the color format.
+
+## GStreamer Editing Services and NLE
+
+- Enhanced auto transition behaviour
+
+- Fix some races in `nlecomposition`
+
+- Allow building with msvc
+
+- Added a UNIX man for `ges-launch`
+
+- API changes:
+  - Added ges_deinit (allowing the leak tracer to work properly)
+  - Added ges_layer_get_clips_in_interval
+  - Finally hide internal symbols that should never have been exposed
+
+## GStreamer validate
+
+- Port `gst-validate-launcher` to python 3
+
+- `gst-validate-launcher` now checks if blacklisted bugs have been fixed
+  on bugzilla and errors out if it is the case
+
+- Allow building with msvc
+
+- Add ability for the launcher to run GStreamer unit tests
+
+- Added a way to activate the leaks tracer on our tests and fix leaks
+
+- Make the http server multithreaded
 
 ## Build and Dependencies
 
