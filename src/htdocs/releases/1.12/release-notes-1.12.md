@@ -1,8 +1,6 @@
 # GStreamer 1.12 Release Notes
 
-**NOTE: THESE RELEASE NOTES ARE INCOMPLETE AND STILL WORK-IN-PROGRESS**
-
-**GStreamer 1.12 is scheduled for release in TBD (April) 2017.**
+**GStreamer 1.12 is scheduled for release in early May 2017.**
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
@@ -13,7 +11,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.12/][latest] for the latest
 version of this document.
 
-*Last updated: Thursday 13 April 2017, 16:00 UTC [(log)][gitlog]*
+*Last updated: Thursday 20 April 2017, 11:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.12/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.12/release-notes-1.12.md
@@ -46,7 +44,7 @@ improvements.
 
 ## Major new features and changes
 
-### Noteworthy new API, features and other changes
+### Noteworthy new API
 
 - The video library gained support for a number of new video formats:
 
@@ -544,7 +542,7 @@ suggestions or helped testing.
 
 ## Bugs fixed in 1.12
 
-More than [~9000 bugs][bugs-fixed-in-1.12] have been fixed during
+More than [~600 bugs][bugs-fixed-in-1.12] have been fixed during
 the development of 1.12.
 
 This list does not include issues that have been cherry-picked into the
@@ -566,7 +564,7 @@ is a stable branch.
 
 ### 1.12.0
 
-1.12.0 was released on TBD 2017.
+1.12.0 was released on TBD May 2017.
 
 ## Known Issues
 
@@ -582,9 +580,9 @@ development version leading up to the stable 1.12 release. The development
 of 1.13/1.14 will happen in the git master branch.
 
 The plan for the 1.14 development cycle is yet to be confirmed, but it is
-expected that feature freeze will be around the end of August 2017
+expected that feature freeze will be around September 2017
 followed by several 1.13 pre-releases and the new 1.14 stable release
-in September/October.
+in October.
 
 1.14 will be backwards-compatible to the stable 1.12, 1.10, 1.8, 1.6, 1.4,
 1.2 and 1.0 release series.
