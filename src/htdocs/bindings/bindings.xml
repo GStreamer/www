@@ -69,8 +69,7 @@ For 0.10, Gian Mario Tagliaretti has written some documents for using GStreamer 
     <status>Released. See the <a href="http://ftp.gnome.org/pub/gnome/sources/gstreamermm/">gstreamermm</a> GNOME module.</status>
 <body>
 <p>
-The GStreamer API <a href="http://www.research.att.com/~bs/C++.html">C++</a>
-bindings are actively developed and based on
+The GStreamer API C++ bindings are actively developed and based on
 <a href="http://www.gtkmm.org">gtkmm</a>, using the same lifecycle mechanism.
 </p>
 <p>
