@@ -504,10 +504,13 @@ playback.
 - Now `vaapidecodebin` loads `vaapipostproc` dynamically. It is possible to
   avoid it usage with the environment variable `GST_VAAPI_DISABLE_VPP=1`.
 
-- Regarding encoders: now they discover, in run-time, what color formats they
-  can use for upstream raw buffers; caps renegotiation were enabled; added CBR
-  encoding mode for VP8; encoders push encoding info tags to downstream; H265
-  encoder handles P010_10LE color format.
+- Regarding encoders: they have primary rank again, since they can discover,
+  in run-time, the color formats they can use for upstream raw buffers and
+  caps renegotiation is now possible. Also the encoders push encoding info
+  downstream via tags.
+
+- About specific encoders: added constant bit-rate encoding mode for VP8 and
+  H265 encoder handles P010_10LE color format.
 
 - Regarding decoders, flush operation has been improved, now the internal VA
   encoder is not recreated at each flush. Also there are several improvements
