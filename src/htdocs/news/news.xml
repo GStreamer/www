@@ -8816,7 +8816,7 @@ available for Windows 32/64-bit, iOS and Mac OS X and Android.
         <title>GStreamer 1.12.0 release candidate 2 (1.11.91)</title>
         <content>
 <p>
-The GStreamer team is pleased to announce the first release candidate of the
+The GStreamer team is pleased to announce the second release candidate of the
 stable 1.12 release series. The 1.12 release series is adding new features on
 top of the 1.0, 1.2, 1.4, 1.6, 1.8 and 1.10 series and is part of the API and
 ABI-stable 1.x release series of the GStreamer multimedia framework.
@@ -8824,7 +8824,7 @@ ABI-stable 1.x release series of the GStreamer multimedia framework.
 <p>
 Full release notes will be provided with the 1.12.0 release, highlighting all
 the new features, bugfixes, performance optimizations and other important
-changes.
+changes. A initial, unfinished version of the release notes can be found <a href="&site;/releases/1.12/">here</a> already.
 </p>
 <p>
 Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
