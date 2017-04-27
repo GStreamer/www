@@ -632,6 +632,7 @@ in October.
 
 - - -
 
-*These release notes have been prepared by Sebastian Dröge and Tim-Philipp Müller.*
+*These release notes have been prepared by Sebastian Dröge, Tim-Philipp Müller
+and Víctor Manuel Jáquez Leal.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
