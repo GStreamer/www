@@ -426,6 +426,9 @@ playback.
     from manifests and sends them downstream as `PROTECTION` events. It also
     supports multiple Period elements in external xml now.
 
+- gst-libav was updated to ffmpeg 3.3 but should still work with any 3.x
+  version.
+
 ### OpenGL integration
 
 - As usual the GStreamer OpenGL integration library has seen numerous
