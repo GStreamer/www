@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer-vaapi</module>
+  <module-fancy>A set of VA-API based elements for GStreamer</module-fancy>
+  <name></name>
+  <version>1.11.91</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the second release candidate of the
+stable 1.12 release series. The 1.12 release series is adding new features on
+top of the 1.0, 1.2, 1.4, 1.6, 1.8 and 1.10 series and is part of the API and
+ABI-stable 1.x release series of the GStreamer multimedia framework.
+</p>
+<p>
+Full release notes will be provided with the 1.12.0 release, highlighting all
+the new features, bugfixes, performance optimizations and other important
+changes.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+  </intro>
+
+    <contributors>
+	<person>Hyunjun Ko</person>
+	<person>Jagyum Koo</person>
+	<person>Jan Schmidt</person>
+	<person>Scott D Phillips</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>773689</id>
+      <summary>wayland: rt for event queue when destroy</summary>
+    </bug>
+    <bug>
+      <id>774029</id>
+      <summary>vaapiwindow: wayland: fix surface leaks.</summary>
+    </bug>
+    <bug>
+      <id>775848</id>
+      <summary>plugins: enable direct rendering through environment variable</summary>
+    </bug>
+    <bug>
+      <id>780442</id>
+      <summary>vaapi: wayland: multiple sinks blocks the pipeline</summary>
+    </bug>
+    <bug>
+      <id>781142</id>
+      <summary>Seeking can be slow due to surface recreation</summary>
+    </bug>
+    <bug>
+      <id>781573</id>
+      <summary>vaapidecodebin: fails to restart playback</summary>
+    </bug>
+    <bug>
+      <id>781577</id>
+      <summary>Fails to play specific size theora files (vaapisink bufferpool issue)</summary>
+    </bug>
+    <bug>
+      <id>781695</id>
+      <summary>vaapi: leak of vpp surface in GstVaapiWindowWayland</summary>
+    </bug>
+    <bug>
+      <id>781759</id>
+      <summary>visualizations fail with vaapi</summary>
+    </bug>
+  </bugs>
+</release>
