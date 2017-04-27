@@ -42,17 +42,24 @@ li {
 -->
 
   <p>
-  The <b>7<sup><small>th</small></sup> GStreamer Conference</b> will take place
+  The <b>7<sup><small>th</small></sup> GStreamer Conference</b> took place
   on Monday and Tuesday  <b>10-11 October 2016</b> at the Betahaus in
   <b>Berlin, Germany</b>.
   </p>
   <p>
-  This is the same week as the <i>Embedded Linux Conference Europe (ELCE)</i>
+  This was the same week as the <i>Embedded Linux Conference Europe (ELCE)</i>
   and the week after <i>LinuxCon Europe</i>, but not officially co-hosted with
   these conferences and at a different venue this time.
   </p>
+
   <p>
-  <b><a href="https://ti.to/gstreamer-conference-2016/gstreamer-conference-2016">Register here for the GStreamer Conference</a></b>
+  Talks have been recorded by <a href="http://www.ubicast.eu/">Ubicast</a> and
+  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2016">GStreamer Conference 2016 videos</a>
+  </p>
+  <p>
+  Slides for some of the talks and the lightning talks can be found in the
+  <a href="&site;/data/events/gstreamer-conference/2016/">GStreamer Conference 2016 slides</a>
+  folder.
   </p>
 
   <h2>Schedule</h2>
