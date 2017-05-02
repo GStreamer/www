@@ -204,10 +204,10 @@ See <a href="http://hackage.haskell.org/package/gstreamer/">Haskell.org</a>.
     <id>java</id>
     <name>Java</name>
     <status>
-Released as part of the <a href="http://code.google.com/p/gstreamer-java/">gstreamer-java</a> project.
+Released as part of the <a href="https://github.com/gstreamer-java">gstreamer-java</a> project.
     </status>
 <body>
-    <p>See the <a href="http://code.google.com/p/gstreamer-java/">gstreamer-java</a> project
+    <p>See the <a href="https://github.com/gstreamer-java">gstreamer-java</a> project
     page for more information.
     </p>
 </body>
