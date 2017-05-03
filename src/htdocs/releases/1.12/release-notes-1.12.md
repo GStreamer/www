@@ -227,6 +227,14 @@ improvements.
   whether scaling or positioning would be more appropriate for the use case at
   hand.
 
+- `waylandsink` can now take DMAbuf buffers as input in the presence
+  of a compatible Wayland compositor. This enables zero-copy transfer
+  from a decoder or source that outputs DMAbuf.
+
+- `udpsrc` can be bound to more than one interface when joining a
+  multicast group, this is done by giving a comma separate list of
+  interfaces such as multicast-iface="eth0,eth1".
+
 ### Plugin moves
 
 - `dataurisrc` moved from gst-plugins-bad to core
