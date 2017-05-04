@@ -453,6 +453,11 @@ New API has been added to:
 
 - `interleave` now supports > 64 channels.
 
+- OpenCV elements, `grabcut` and `retinex` has been ported to use
+  `GstOpencvVideoFilter` base class, increasing code reuse and fixing buffer
+  map/unmap issues. Redundant copie of images has been removed in `edgedetect`,
+  `cvlaplace` and `cvsobel`. This comes with various cleanup and Meson support.
+
 ### OpenGL integration
 
 - As usual the GStreamer OpenGL integration library has seen numerous
