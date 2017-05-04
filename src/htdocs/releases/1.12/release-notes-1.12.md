@@ -228,7 +228,8 @@ improvements.
 
 - `waylandsink` can now take DMAbuf buffers as input in the presence
   of a compatible Wayland compositor. This enables zero-copy transfer
-  from a decoder or source that outputs DMAbuf.
+  from a decoder or source that outputs DMAbuf. It will also set surface
+  opacity hint to allow better rendering optimization in the compositor.
 
 - `udpsrc` can be bound to more than one interface when joining a
   multicast group, this is done by giving a comma separate list of
