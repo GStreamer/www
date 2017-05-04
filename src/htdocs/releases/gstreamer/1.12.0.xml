@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer</module>
+  <module-fancy>GStreamer</module-fancy>
+  <name></name>
+  <version>1.12.0</version>
+
+  <intro>
+<p>
+The GStreamer team is pleased to announce the first release in the stable 1.12
+release series. The 1.12 release series is adding new features on top of the
+1.0, 1.2, 1.4, 1.6, 1.8 and 1.10 series and is part of the API and ABI-stable
+1.x release series of the GStreamer multimedia framework.
+</p>
+<p>
+Full release notes can be found <a href="https://gstreamer.freedesktop.org/releases/1.12/">here</a>
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+<p>
+This module, gstreamer, only contains core functionality.
+For actual media playback, you will need other modules.
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-plugins-bad</dt>
+<dd>contains a set of less supported plugins that haven't passed the
+    rigorous quality testing we expect, or are still missing documentation
+    and/or unit tests</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+
+    <contributors>
+	<person>Frédéric Dalleau</person>
+	<person>Nicola Murino</person>
+	<person>Sebastian Dröge</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>782050</id>
+      <summary>basetransform/adapter: Check if meta transform_func is NULL before using it</summary>
+    </bug>
+  </bugs>
+</release>
