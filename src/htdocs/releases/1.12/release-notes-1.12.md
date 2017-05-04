@@ -592,6 +592,12 @@ New API has been added to:
 
 - New testsuite for running various test scenarios on the DASH-IF test vectors
 
+## GStreamer Python Bindings
+
+- Overrides has been added for IntRange, Int64Range, DoubleRange,
+  FractionRange, Array and List. This finally enables Python programmers
+  to fully read and write GstCaps objects.
+
 ## Build and Dependencies
 
 - Meson build files are now disted in tarballs, for jhbuild and so distro
