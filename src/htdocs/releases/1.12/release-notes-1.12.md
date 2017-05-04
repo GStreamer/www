@@ -443,6 +443,15 @@ New API has been added to:
   factory names or using a path to a `.gep` file containing a
   serialized profile.
 
+- `audioconvert` can now do endianness conversion in-place. All other
+  conversions still require a copy, but e.g. sign conversion and a few others
+  could also be implemented in-place now.
+
+- The new, experimental `playbin3` and `urisourcebin` elements got many
+  bugfixes and improvements and should generally be closer to a full
+  replacement of the old elements.
+
+- `interleave` now supports > 64 channels.
 
 ### OpenGL integration
 
