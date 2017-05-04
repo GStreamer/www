@@ -726,8 +726,8 @@ is a stable branch.
 
 ## Schedule for 1.14
 
-Our next major feature release will be 1.14, and 1.11 will be the unstable
-development version leading up to the stable 1.12 release. The development
+Our next major feature release will be 1.14, and 1.13 will be the unstable
+development version leading up to the stable 1.14 release. The development
 of 1.13/1.14 will happen in the git master branch.
 
 The plan for the 1.14 development cycle is yet to be confirmed, but it is
