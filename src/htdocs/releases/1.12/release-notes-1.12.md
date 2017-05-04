@@ -1,6 +1,6 @@
 # GStreamer 1.12 Release Notes
 
-**GStreamer 1.12 is scheduled for release in early May 2017.**
+GStreamer 1.12.0 was originally released on 4th May 2017.
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
@@ -11,7 +11,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.12/][latest] for the latest
 version of this document.
 
-*Last updated: Thursday 20 April 2017, 11:00 UTC [(log)][gitlog]*
+*Last updated: Thursday 4 May 2017, 11:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.12/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.12/release-notes-1.12.md
@@ -76,14 +76,14 @@ improvements.
   a detected face in a video stream, has been ported from 0.10.
 
 - our `ffmpeg` wrapper plugin now exposes/maps the ffmpeg Opus audio decoder
-  (`avdec_opus`) as well as the CineForm HD / CFHD decoder (`avdec_cfhd`),
+  (`avdec_opus`) as well as the GoPro CineForm HD / CFHD decoder (`avdec_cfhd`),
   and also a parser/writer for the IVF format (`avdemux_ivf` and `avmux_ivf`).
 
 - `audiobuffersplit` is a new element that splits raw audio buffers into
   equal-sized buffers
 
-- `audiomixmatrix` is a new element that mixes N:M audio channels
-  according to a configured mix matrix.
+- `audiomixmatrix` is a new element that mixes N:M audio channels according to
+  a configured mix matrix.
 
 - The `timecodewait` element got renamed to `avwait` and can operate in
   different modes now.
@@ -94,7 +94,8 @@ improvements.
 - `ttml` is a new plugin for parsing and rendering subtitles in Timed Text
   Markup Language (TTML) format. For the time being these elements will not
   be autoplugged during media playback however, unless the `GST_TTML_AUTOPLUG=1`
-  environment variable is set.
+  environment variable is set. Only the EBU-TT-D profile is supported at this
+  point.
 
 [dssim]: https://github.com/pornel/dssim
 
@@ -160,27 +161,25 @@ improvements.
 - `splitmuxsrc` reverse playback was fixed and handling of sparse streams, such
   as subtitle tracks or metadata tracks, was improved.
 
-- `updsrc` can join groups on multiple multicast interfaces now.
-
 - `matroskamux` has acquired support for muxing G722 audio; it also marks all
   buffers as keyframes now when streaming only audio, so that `tcpserversink`
   will behave properly with audio-only streams.
 
-- `qtmux` gained support for ProRes 4444 XQ, HEVC/H.265 and CineForm formats,
+- `qtmux` gained support for ProRes 4444 XQ, HEVC/H.265 and CineForm (GoPro) formats,
   and generally writes more video stream-related metadata into the track headers.
   It is also allows configuration of the maximum interleave size in bytes and
   time now. For fragmented mp4 we always write the `tfdt` atom now as required
   by the DASH spec.
 
-- `qtdemux` supports FLAC, xvid, mp2 and S16L tracks now, and generally tries
-  harder to extract more video-related information from track headers, such as
-  colorimetry or interlacing details. It also received a couple of fixes for
-  the scenario where upstream operates in TIME format and feeds chunks to
-  qtdemux (e.g. DASH or MSE).
+- `qtdemux` supports FLAC, xvid, mp2, S16L and CineForm (GoPro) tracks now, and
+  generally tries harder to extract more video-related information from track
+  headers, such as colorimetry or interlacing details. It also received a
+  couple of fixes for the scenario where upstream operates in TIME format and
+  feeds chunks to qtdemux (e.g. DASH or MSE).
 
 - `audioecho` has two new properties to apply a delay only to certain channels
   to create a surround effect, rather than an echo on all channels. This is
-  useful when upmixing from stereo, for example. The `"surround-delay"` property 
+  useful when upmixing from stereo, for example. The `"surround-delay"` property
   enables this, and the `"surround-mask"` property controls which channels
   are considered surround sound channels in this case.
 
@@ -188,8 +187,8 @@ improvements.
   voice activity detection now, in which case it will post `"voice-activity"`
   messages on the bus whenever the voice detection status changes.
 
-- The `decklink` capture elements for blackmagic cards have seen a number of
-  improvements:
+- The `decklink` capture elements for Blackmagic Decklink cards have seen a
+  number of improvements:
 
   - `decklinkvideosrc` will post a warning message on "no signal" and an info
     message when the signal lock has been (re)acquired. There is also a new
@@ -209,7 +208,7 @@ improvements.
 
 - `srtpdec` now also has a readonly `"stats"` property, just like `srtpenc`.
 
-- `rtpbin` can now also demultiplex incoming bundled streams. The first
+- `rtpbin` gained RTP bundle support, as used by e.g. WebRTC. The first
    rtpsession will have a `rtpssrcdemux` element inside splitting the streams
    based on their SSRC and potentially dispatch to a different rtpsession.
    Because retransmission SSRCs need to be merged with the corresponding media
@@ -246,12 +245,12 @@ improvements.
   exist in gst-plugins-bad, but may be removed at some point in the future.
 
 - `timecodestamper` is an element that attaches time codes to video buffers
-   in form of `GstVideoTimeCodeMeta`s. It had a `"clock-source"` property
-   which has now been removed because it was fairly useless in practice. It
-   gained some new properties however: the `"first-timecode"` property can
-   be used to set the inital timecode; alternatively `"first-timecode-to-now"`
-   can be set, and then the current system time at the time the first buffer
-   arrives is used as base time for the time codes.
+  in form of `GstVideoTimeCodeMeta`s. It had a `"clock-source"` property
+  which has now been removed because it was fairly useless in practice. It
+  gained some new properties however: the `"first-timecode"` property can
+  be used to set the inital timecode; alternatively `"first-timecode-to-now"`
+  can be set, and then the current system time at the time the first buffer
+  arrives is used as base time for the time codes.
 
 
 ### Plugin removals
@@ -266,7 +265,7 @@ improvements.
   expire.
 
 - The `mimic` plugin was removed from gst-plugins-bad. It contained a decoder
-  and encoder for a video codec used by MSN messanger many many years ago (in
+  and encoder for a video codec used by MSN messenger many many years ago (in
   a galaxy far far away). The underlying library is unmaintained and no one
   really needs to use this codec any more. Recorded videos can still be played
   back with the MIMIC decoder in gst-libav.
@@ -348,7 +347,8 @@ improvements.
 
 - There is a new `libgstbadallocators-1.0` library in gst-plugins-bad, which
   may go away again in future releases once the `GstPhysMemoryAllocator`
-  interface API has been validated by more users.
+  interface API has been validated by more users and was moved to
+  `libgstallocators-1.0` from gst-plugins-base.
 
 [timecode-interval]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstvideo.html#gst-video-time-code-interval-new
 [buffer-iterate-meta-filtered]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstBuffer.html#gst-buffer-iterate-meta-filtered
@@ -386,9 +386,9 @@ New API has been added to:
  - selecting use of a specific video sink element
    ([`gst_player_video_overlay_video_renderer_new_with_sink()`][renderer-with-vsink])
 
-If the environment variable `GST_PLAYER_USE_PLAYBIN3` is set, GstPlayer will
-use the still-experimental `playbin3` element and the `GstStreams` API for
-playback.
+ - If the environment variable `GST_PLAYER_USE_PLAYBIN3` is set, GstPlayer will
+   use the still-experimental `playbin3` element and the `GstStreams` API for
+   playback.
 
 [snapshot]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/gst-plugins-bad-libs-gstplayer.html#gst-player-get-video-snapshot
 [renderer-with-vsink]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-libs/html/gst-plugins-bad-libs-gstplayer-videooverlayvideorenderer.html#gst-player-video-overlay-video-renderer-new-with-sink
@@ -401,7 +401,7 @@ playback.
   muxers such as mp4mux. The new field is parsed from/to `GstVideoInfo` of course.
 
 - video decoder and video encoder base classes try harder to proxy
-  interlacing-related fields in caps properly.
+  interlacing, colorimetry and chroma-site related fields in caps properly.
 
 - The buffer stored in the `PROTECTION` events is now left unchanged. This is a
   change of behaviour since 1.8, especially for the mssdemux element which used to
@@ -425,7 +425,7 @@ playback.
 - more robust handling of input caps changes in videoaggregator-based elements
   such as `compositor`.
 
-- Lots of adaptive streaming-related fixes across the board. Also:
+- Lots of adaptive streaming-related fixes across the board (DASH, MSS, HLS). Also:
 
   - `mssdemux`, the Microsoft Smooth Streaming demuxer, has seen various
     fixes for live streams, duration reporting and seeking.
@@ -447,7 +447,9 @@ playback.
 ### OpenGL integration
 
 - As usual the GStreamer OpenGL integration library has seen numerous
-  fixes and performance improvements all over the place.
+  fixes and performance improvements all over the place, and is hopefully
+  ready now to become API stable and be moved to gst-plugins-base during the
+  1.14 release cycle.
 
 - The GStreamer OpenGL integration layer has also gained support for the
   Vivante EGL FB windowing system, which improves performance on platforms
@@ -495,7 +497,8 @@ playback.
 
 ## GStreamer RTSP server
 
-- The RTSP server now also supports Digest authentication.
+- The RTSP server now also supports Digest authentication in addition to Basic
+  authentication.
 
 - The `GstRTSPClient` class has gained a `pre-*-request` signal and virtual
   method for each client request type, emitted in the beginning of each rtsp
@@ -550,7 +553,7 @@ playback.
 
 - Allow building with msvc
 
-- Added a UNIX man for `ges-launch`
+- Added a UNIX manpage for `ges-launch`
 
 - API changes:
   - Added ges_deinit (allowing the leak tracer to work properly)
@@ -561,8 +564,8 @@ playback.
 
 - Port `gst-validate-launcher` to python 3
 
-- `gst-validate-launcher` now checks if blacklisted bugs have been fixed
-  on bugzilla and errors out if it is the case
+- `gst-validate-launcher` now checks if blacklisted bugs have been fixed on
+  bugzilla and errors out if it is the case
 
 - Allow building with msvc
 
@@ -572,10 +575,13 @@ playback.
 
 - Make the http server multithreaded
 
+- New testsuite for running various test scenarios on the DASH-IF test vectors
+
 ## Build and Dependencies
 
 - Meson build files are now disted in tarballs, for jhbuild and so distro
-  packagers can start using it.
+  packagers can start using it. Note that the Meson-based build system is not
+  100% feature-equivalent with the autotools-based one yet.
 
 - Some plugin filenames have been changed to match the plugin names: for example
   the file name of the `encoding` plugin in gst-plugins-base containing the
@@ -602,16 +608,19 @@ playback.
 - `gst-omx` and `gstreamer-vaapi` modules can now also be built using the
   Meson build system.
 
+- The `qtkitvideosrc` element for macOS was removed. The API is deprecated
+  since 10.9 and it wasn't shipped in the binaries since a few releases.
+
 ## Platform-specific improvements
 
 ### Android
 
-- androidmedia: add support for VP9 video decoding/encoding and
-  Opus audio decoding (where supported)
+- androidmedia: add support for VP9 video decoding/encoding and Opus audio
+  decoding (where supported)
 
 ### OS/X and iOS
 
-- `avfvideosrc`, which represents an iphone camera or, on mac, a screencapture
+- `avfvideosrc`, which represents an iPhone camera or, on a Mac, a screencapture
   session, so far allowed you to select an input device by device index only.
   New API adds the ability to select the position (front or back facing) and
   device-type (wide angle, telephoto, etc.). Furthermore, you can now also
@@ -623,14 +632,47 @@ playback.
 
 ## Contributors
 
-- FILL ME
+Aleix Conchillo Flaque, Alejandro G. Castro, Aleksandr Slobodeniuk, Alexandru
+Băluț, Alex Ashley, Andre McCurdy, Andrew, Anton Eliasson, Antonio Ospite,
+Arnaud Vrac, Arun Raghavan, Aurélien Zanelli, Axel Menzel, Benjamin Otte,
+Branko Subasic, Brendan Shanks, Carl Karsten, Carlos Rafael Giani, ChangBok
+Chae, Chris Bass, Christian Schaller, christophecvr, Claudio Saavedra,
+Corentin Noël, Dag Gullberg, Daniel Garbanzo, Daniel Shahaf, David Evans,
+David Schleef, David Warman, Dominique Leuenberger, Dongil Park, Douglas
+Bagnall, Edgard Lima, Edward Hervey, Emeric Grange, Enrico Jorns, Enrique
+Ocaña González, Evan Nemerson, Fabian Orccon, Fabien Dessenne, Fabrice Bellet,
+Florent Thiéry, Florian Zwoch, Francisco Velazquez, Frédéric Dalleau, Garima
+Gaur, Gaurav Gupta, George Kiagiadakis, Georg Lippitsch, Göran Jönsson, Graham
+Leggett, Guillaume Desmottes, Gurkirpal Singh, Haihua Hu, Hanno Boeck, Havard
+Graff, Heekyoung Seo, hoonhee.lee, Hyunjun Ko, Imre Eörs, Iñaki García
+Etxebarria, Jagadish, Jagyum Koo, Jan Alexander Steffens (heftig), Jan
+Schmidt, Jean-Christophe Trotin, Jochen Henneberg, Jonas Holmberg, Joris
+Valette, Josep Torra, Juan Pablo Ugarte, Julien Isorce, Jürgen Sachs, Koop
+Mast, Kseniia Vasilchuk, Lars Wendler, leigh123linux@googlemail.com, Luis de
+Bethencourt, Lyon Wang, Marcin Kolny, Marinus Schraal, Mark Nauwelaerts,
+Mathieu Duponchelle, Matthew Waters, Matt Staples, Michael Dutka, Michael
+Olbrich, Michael Smith, Michael Tretter, Miguel París Díaz, namanyadav12, Neha
+Arora, Nick Kallen, Nicola Murino, Nicolas Dechesne, Nicolas Dufresne, Nicolas
+Huet, Nirbheek Chauhan, Ole André Vadla Ravnås, Olivier Crête, Patricia
+Muscalu, Peter Korsgaard, Peter Seiderer, Petr Kulhavy, Philippe Normand,
+Philippe Renon, Philipp Zabel, Rahul Bedarkar, Reynaldo H. Verdejo Pinochet,
+Ricardo Ribalda Delgado, Rico Tzschichholz, Руслан Ижбулатов, Samuel Maroy,
+Santiago Carot-Nemesio, Scott D Phillips, Sean DuBois, Sebastian Dröge, Sergey
+Borovkov, Seungha Yang, shakin chou, Song Bing, Søren Juul, Sreerenj
+Balachandran, Stefan Kost, Stefan Sauer, Stepan Salenikovich, Stian Selnes,
+Stuart Weaver, suhas2go, Thiago Santos, Thibault Saunier, Thomas Bluemel,
+Thomas Petazzoni, Tim-Philipp Müller, Ting-Wei Lan, Tobias Mueller, Todor
+Tomov, Tomasz Zajac, Ulf Olsson, Ursula Maplehurst, Víctor Manuel Jáquez Leal,
+Victor Toso, Vincent Penquerc'h, Vineeth TM, Vinod Kesti, Vitor Massaru Iha,
+Vivia Nikolaidou, WeiChungChang, William Manley, Wim Taymans, Wojciech
+Przybyl, Wonchul Lee, Xavier Claessens, Yasushi SHOJI
 
 ... and many others who have contributed bug reports, translations, sent
 suggestions or helped testing.
 
 ## Bugs fixed in 1.12
 
-More than [~600 bugs][bugs-fixed-in-1.12] have been fixed during
+More than [635 bugs][bugs-fixed-in-1.12] have been fixed during
 the development of 1.12.
 
 This list does not include issues that have been cherry-picked into the
@@ -640,7 +682,7 @@ stable 1.10 branch and fixed there as well, all fixes that ended up in the
 This list also does not include issues that have been fixed without a bug
 report in bugzilla, so the actual number of fixes is much higher.
 
-[bugs-fixed-in-1.12]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=164074&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.10.1&target_milestone=1.10.2&target_milestone=1.10.3&target_milestone=1.10.4&target_milestone=1.11.1&target_milestone=1.11.2&target_milestone=1.11.3&target_milestone=1.11.4&target_milestone=1.11.90&target_milestone=1.11.91&target_milestone=1.12.0
+[bugs-fixed-in-1.12]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=213265&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.10.1&target_milestone=1.10.2&target_milestone=1.10.3&target_milestone=1.10.4&target_milestone=1.11.1&target_milestone=1.11.2&target_milestone=1.11.3&target_milestone=1.11.4&target_milestone=1.11.90&target_milestone=1.11.91&target_milestone=1.12.0
 
 ## Stable 1.12 branch
 
@@ -652,7 +694,7 @@ is a stable branch.
 
 ### 1.12.0
 
-1.12.0 was released on TBD May 2017.
+1.12.0 was released on 4th May 2017.
 
 ## Known Issues
 
