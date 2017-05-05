@@ -607,7 +607,7 @@ New API has been added to:
 - Some plugin filenames have been changed to match the plugin names: for example
   the file name of the `encoding` plugin in gst-plugins-base containing the
   `encodebin` element was `libgstencodebin.so` and has been changed to
-  `libgstencodebin.so`. This affects only a handful of plugins across modules.
+  `libgstencoding.so`. This affects only a handful of plugins across modules.
 
   **Developers who install GStreamer from source and just do `make install`**
   **after updating the source code, without doing `make uninstall` first, will**
