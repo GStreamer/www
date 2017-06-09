@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+<title>GStreamer Conference 2017</title>
+
+<body>
+
+<style>
+li {
+  padding: 0px 0px 10px;
+}
+</style>
+
+<table>
+<tr><td>
+
+<h1>GStreamer Conference 2017</h1>
+
+  <h2>21-22 October 2017 · Prague, Czech Republic</h2>
+
+<!-- FIXME: picture
+  <p>
+  <table>
+  <tr>
+    <td>
+      <div class="crop-dusseldorf">
+      <img src="Medienhafen_Duesseldorf_Nacht-cropped.jpg"
+           alt="Dusseldorf at night (media harbour)"
+           height="252"
+      />
+      </div>
+    </td>
+  </tr>
+  </table>
+  </p>
+-->
+
+  <p>
+  The <b>8<sup><small>th</small></sup> GStreamer Conference</b> will take place
+  on Saturday and Sunday <b>21-22 October 2017</b> at node5 in
+  <b>Prague, Czech Republic</b>.
+  </p>
+  <p>
+  This will be just before the <a href="http://events.linuxfoundation.org/events/embedded-linux-conference-europe">Embedded Linux Conference Europe (ELCE)</a>,
+  but not officially co-hosted with it and at a different venue in Prague.
+  </p>
+
+<!--
+  <p>
+  Talks will be recorded by <a href="http://www.ubicast.eu/">Ubicast</a> and
+  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2016">GStreamer Conference 2016 videos</a>
+  </p>
+  <p>
+  Slides for some of the talks and the lightning talks can be found in the
+  <a href="&site;/data/events/gstreamer-conference/2016/">GStreamer Conference 2016 slides</a>
+  folder.
+  </p>
+-->
+<!--
+  <h2>Schedule</h2>
+  <p>
+  <a href="schedule.html">Click here for the conference schedule</a>.
+  </p>
+-->
+  <h2>Details</h2>
+  <p>
+  The GStreamer Conference is a conference for developers, decision-makers,
+  community members, industry partners, and anyone else interested in the
+  GStreamer multimedia framework or Open Source and cross-platform multimedia.
+  </p>
+
+  <h2>Call for Papers</h2>
+  <p>
+  The call for papers is not open yet, but will be announced here and on
+  the <a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>.
+  You can also <a href="https://twitter.com/GStreamer">follow @GStreamer on Twitter</a>.
+  </p>
+<!--
+  <p>
+  The call for papers is now open and talk proposals can be submitted.
+  </p>
+  <p>
+  <b>The deadline for talk proposals is Sunday 7 August 2016.</b>
+  </p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk
+  (please allow at least 5 minutes for questions at the end as well).
+  </p>
+-->
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+  <p>
+  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
+  or 45 minutes. There will only be a small number of 45-minute slots, so
+  please consider whether you could also make do with 30 minutes before asking
+  for a 45-minute slot.
+<!--
+  </p>
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are.
+  </p>
+  <p>
+  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference @t lists.freedesktop.org</a>.
+  </p>
+-->
+
+  <h2>Showcase or Lightning Talks</h2>
+  <p>
+    There will again be opportunities for short lightning talks for those who
+    do not wish to present a full talk, but just want to showcase something
+    they're working on, or present a problem or challenge they are facing or
+    have solved, and that they think might be interesting for others to hear
+    about.
+  </p>
+  <p>
+    Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
+  </p>
+  <p>
+    Simply send a quick mail to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- -->@<!-- -->lists.freedesktop.org</a> above to reserve your slot (subject to availability).
+  </p>
+  <p>
+    There is no deadline for Lightning Talk submissions, slots will be
+    allocated on a first-come first-serve basis.
+  </p>
+
+  <h2>Social Event</h2>
+  <p>
+    There will again be a social event for registered attendees on Saturday
+    evening. Details to be confirmed at a later date.
+  </p>
+
+  <h2>Schedule and speakers list</h2>
+  <p>
+    A schedule and speaker list is not yet available, and the call for papers
+    is not yet open. You can have a look at <a href="../2016/schedule.html">last year's schedule</a>
+    to get an idea of the range of topics and speakers.
+    <!--  <a href="schedule.html">Click here for the full schedule</a> -->
+  </p>
+<!--
+  <p>
+    We have an exciting range of topics and speakers lined up for you again this year:
+    <ul>
+    <li><a href="&site;/conference/2016/talks-and-speakers.html#video-encoding-benchmarks">An overview of Video Encoding Benchmarks with GStreamer</a><br /><small><i>Florent Thiéry, UbiCast</i></small></li>
+  </ul>
+-->
+  </p>
+  <p>
+    <b>Lightning Talks:</b>
+    <small> (submitted so far)</small>
+    <ul>
+<!--
+    <li>Yet Another Update about Video4Linux2 in GStreamer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>FFV1 and Matroska as a new standard for video archiving <small><br /><i>Georg Lippitsch, ToolsOnAir</i></small></li>
+    <li>Writing Software Synthesizers for GStreamer <small><br /><i>Stefan Sauer, Google</i></small></li>
+    <li>Making GStreamer on Android Easier <small><br /><i>Arun Raghavan</i></small></li>
+    <li>IP Streaming Performance Issues with GStreamer on an Embedded Platform - and some Solutions <small><br /><i>David Plowman, BrightSign Digital</i></small></li>
+    <li>Measuring video-capture latency with the Raspberry Pi and satellites <small><br /><i>Will Manley, stb-tester.com</i></small></li>
+    <li>Smooth playback of adaptive video streams on Raspberry Pi with gst-mmal <small><br /><i>John Sadler, YouView TV</i></small></li>
+    <li>GstValidate: A good friend for GStreamer debugging <small><br /><i>Thibault Saunier, Samsung OSG</i></small></li>
+    <li>GObject bindings for libva <small><br /><i>Scott D Phillips, Intel</i></small></li>
+    <li>How I ported Kurento Media Server to Windows <small><br /><i>Kyrylo Polezhaiev</i></small></li>
+    <li>Code review in Chromium project + quick update on the Media Process based GStreamer backend <small><br /><i>Julien Isorce, Samsung</i></small></li>
+    <li>GstSeamCrop: A seam crop real-time video retargeting <small><br /><i>Francisco Javier Velazquez</i></small></li>
+    <li>PyGObject &amp; GIL - the death by thousand cuts <small><br /><i>Mikhail Fludkov, Pexip</i></small></li>
+-->
+    <li>...</li>
+    <li><i>Submit <u>your</u> lightning talk now!</i></li>
+    </ul>
+  </p>
+<!--
+  <p>
+    The full <a href="schedule.html">conference schedule is now available</a>.
+    We hope you will be as excited about this years
+    schedule as we are. In addition to of course many in-depth GStreamer talks
+    we also have presentations on some of the most important core Linux
+    multimedia technologies like OpenGL as well as the new kid on the block, Vulkan.
+  </p>
+-->
+  <h2>Who should attend?</h2>
+  <p>
+    Anyone interested in open source cross-platform multimedia is encouraged
+    to join us at the GStreamer Conference 2017!
+  </p>
+  <p>
+    Whether you are a hobbyist or a student interested in the field of
+    multimedia, or working for a company using or looking to use GStreamer
+    in their products, this is the perfect event for you to network at and
+    to learn more about the latest technological breakthroughs in and around
+    GStreamer. The talks will target both developers and managers.
+  </p>
+
+  <h2>Registration</h2>
+  <p>
+  Registration will open at a later date.
+  </p>
+<!--
+  <p>
+  Registration is now open and will stay open until the conference.
+  </p>
+-->
+<!--
+  <p>
+  <b><a href="https://ti.to/gstreamer-conference-2016/gstreamer-conference-2016">Sign up for the GStreamer Conference here</a></b>
+  </p>
+-->
+  <p>
+  There will be separate registration options for both professionals and for students and hobbyists:
+  </p>
+  <p>
+    <div style="margin-left:5%">
+    <table width="60%" cellpadding="5">
+      <tr><td>Professional (Early Bird)</td><td>200 EUR (ca. 225 USD) incl. lunch (early bird, until 15 Sept)</td></tr>
+      <tr><td>Professional (Regular)</td><td>300 EUR (ca. 335 USD) incl. lunch (regular)</td></tr>
+      <tr><td>Student/hobbyist</td><td>50 EUR (ca. 55 USD) incl. lunch</td></tr>
+    </table>
+    </div>
+  </p>
+  <p>
+    The registration fee includes lunch at the venue on both conference days
+    as well as access to the social event on Saturday evening.
+  </p>
+  <p>
+    For those uncertain about whether to register as a professional or hobbyist,
+    the general rule is that if your company pays for you or sponsors you, you
+    are a professional, and if you personally pay you are a student or hobbyist.
+    If in doubt drop us a mail or just register as hobbyist. The important
+    thing is that you'll make it to the conference!
+  </p>
+<!--
+  <h2>Call for Papers</h2>
+  <p>
+  The call for papers is now closed and talk proposals can no longer be
+  submitted. Anyone who has submitted a talk proposal should have received
+  an e-mail letting them know whether their proposal has been accepted.
+  </p>
+  <p>
+  Lightning talks may still be proposed.
+  </p>
+-->
+
+  <h2>Concurrent conferences</h2>
+  <p>
+    There are a few other events taking place alongside or just before the
+    GStreamer Conference on October 21-22 this year, so if you are making
+    your way to Prague you might want to consider combining the GStreamer
+    Conference with some of the other events.
+  </p>
+  <p>
+  <table>
+    <tr><td><a href="http://events.linuxfoundation.org/events/embedded-linux-conference-europe">Embedded Linux Conference Europe (ELCE)</a></td><td>October 23-25, 2017</td></tr>
+    <tr><td><a href="http://events.linuxfoundation.org/events/archive/2017/kvm-forum">KVM Forum</a></td><td>October 25-27, 2017</td></tr>
+  </table>
+  </p>
+
+  <h2>GStreamer hackfest</h2>
+  <p>
+    There are plans to have a hackfest just before or after the conference in
+    Prague. Dates and venue are yet to be confirmed. If you are interested in
+    attending the hackfest you may want to hold off on booking travel and
+    accommodation yet.
+<!--
+    Please add yourself to the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2016">wiki page</a>
+    if you plan on attending the hackfest, so we have an idea of the number of
+    people to expect. Also see the
+    <a href="https://lists.freedesktop.org/archives/gstreamer-announce/2016-August/000395.html">announcement mail</a>
+    here. Mail Sebastian or pop onto the #gstreamer IRC channel if you don't
+    have editing permissions for the wiki.
+-->
+  </p>
+
+  <h2>Sponsorship Opportunities</h2>
+  <p>
+  The GStreamer Conference 2017 is only possible thanks to the financial support
+  from our sponsors. The 2017 sponsorship brochure will be available soon. In
+  the mean time feel free to get in touch with <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>
+  to register your interest.
+<!--
+  For this year's sponsorship opportunities please
+  refer to the <a href="&site;/conference/2016/gstreamer-conference-sponsor-brief-2016.pdf">sponsor brief (PDF)</a>
+  or get in touch with <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>.
+-->
+  </p>
+
+  <h2>City</h2>
+  <p>
+  This year's conference will take place in
+  <a href="http://en.wikipedia.org/wiki/Prague">Prague</a>, the capital of the
+  Czech Republic and its biggest city.
+  </p>
+<!--
+  <p>
+  <i>Getting there</i>
+  </p><p>
+  Berlin has two airports: Berlin Tegel (TXL) and Berlin-Schönefeld (SXF) which
+  both provide regional and international connections.
+  </p>
+-->
+  <h2>Venue</h2>
+  <p>
+  The conference will take place at<br/>
+  <b><a href="http://node5.cz/#lets-talk">node5</a></b><br/>
+  Radlická 50<br/>
+  Prague 5<br/>
+  Czech Republic<br/>
+  </p>
+  <p>
+  The venue is in the city centre close to the Anděl transport hub.
+  </p>
+
+  <h2>Hotels</h2>
+  <p>
+  There is no official conference hotel. A list of hotels will be provided
+  at a later date.
+  </p>
+  <p>
+  For those who are planning to also attend the Embedded Linux Conference Europe,
+  the Hilton Prague where ELCE takes place is within 20 minutes door-to-door
+  from the GStreamer Conference venue node5 (7 minutes by metro using line B
+  from Florenc to Anděl).
+  </p>
+<!--
+  <p>
+  The following is just a small selection of hotels which may or may not be
+  suitable. Berlin is a major city and tourist destination and as such has
+  many hotels and hostels in all price categories. The below is merely a small
+  selection, you can find more using the usual booking engines such as
+  booking.com, lastminute.com or airbnb.com. As always, it is advisable to book
+  your accommodation earlier rather than later.
+  </p>
+  <p>
+  Many hotels in the city centre (Mitte) will be within walking distance
+  (up to 30mins) of the conference venue, or just a short taxi ride away.
+  There is also a public transport in form of busses, trams,
+  S-Bahn (overground metro) and U-Bahn (underground metro).
+  Our venue, the Betahaus, is right next to the <i>U Moritzplatz</i> underground
+  stop which is on the U8 Line and M29 bus route.
+  </p>
+  <p>
+  The following hotels are located within half an hour of the betahaus and
+  had at least a couple of rooms left at the time of writing, but there are
+  many other hotels in the city which may be even better located or provide
+  better value:
+  <ul>
+    <li><a href="http://www.motel-one.com/de/hotels/berlin/hotel-berlin-mitte/">Hotel Motel One (Berlin Mitte)</a> - 3 mins walk from betahaus</li>
+    <li><a href="http://www.nh-hotels.de/hotel/nh-berlin-kreuzberg">Hotel NH (Berlin Kreuzberg)</a> - ca. 10 mins / 800m on foot from betahaus</li>
+    <li><a href="http://vj-hotels.com/">Hotel Vier Jahreszeiten (Berlin City) Kreuzberg</a> - ca. 15mins / 1.1km on foot, 9mins by bus</li>
+    <li><a href="http://www.booking.com/hotel/de/berlinanglehot.html">Angleterre Hotel</a>, Friedrichstrasse, ca. 25mins on foot, 11 mins by bus (M29 from U Kochstr./Checkpoint Charlie to Moritzplatz)</li>
+    <li><a href="http://www.novotel.com/en/hotel-3278-novotel-berlin-mitte/index.shtml">Hotel Novotel Mitte</a> - ca. 15 mins walk from betahaus (just as long by public transport)</li>
+    <li>For those on a budget airbnb.de may have some suitable accommodation choices, and there are also some hostels nearby, e.g. <a href="http://baxpax.de">baxpax Kreuzberg Hostel</a>, <a href="http://www.comebackpackers.com/en/">comebackpackers</a>, A&amp;O</li>
+  </ul>
+  </p>
+  <p>
+  There are also many hotels in the (very central) Alexanderplatz area which
+  are just a short U-Bahn (underground metro) ride away from the venue
+  (it's 7 mins from <i>U Alexanderplatz</i> to <i>U Moritzplatz</i>), e.g.:
+  <ul>
+    <li><a href="http://www.parkinn-berlin.de">Park Inn by Radisson</a></li>
+    <li><a href="http://hotelindigoberlin.com">Hotel INDIGO</a></li>
+    <li><a href="http://www.ibis.com/en/hotel-5513-ibis-budget-berlin-alexanderplatz/index.shtml">ibis budget (Mollstraße)</a></li>
+    <li><i>.. and many others</i></li>
+  </ul>
+  </p>
+  <p>
+  Those also attending the Embedded Linux Conference at the Maritim Hotel Berlin
+  may wish to stay there and take the M29 bus from <i>Gedänkstätte deutscher Widerstand</i>
+  to <i>Moritzplatz</i> (17 mins, every 10 mins), which is just a few steps
+  aways from the betahaus (GStreamer Conference venue).
+  </p>
+  <p>
+  If you find any other places that might be worth mentioning here, please send
+  us a mail.
+  </p>
+-->
+
+  <h2>Contact</h2>
+  <p>
+  If you have any questions about the GStreamer Conference or are considering
+  <!--<a href="&site;/conference/2016/gstreamer-conference-sponsor-brief-2016.pdf">-->becoming a sponsor<!--</a>-->,
+  please contact <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>.
+  </p>
+
+  <h2>Conference News and Updates</h2>
+<!--
+  <p>
+    <i>2016-October-06</i>: the <a href="&site;/conference/2016/schedule.html">full conference schedule</a> is now available as well
+  </p>
+  <p>
+    <i>2016-October-05</i>: Talk abstracts and speaker bios published
+  </p>
+-->
+<!--
+  <p>
+    <i>2016-August-05</i>: The GStreamer project is delighted to welcome back <b><a href="http://www.google.com">Google</a></b> as Silver sponsor
+  </p>
+-->
+<!--
+  <p>
+    <i>2016-October-04</i>: The social event on Monday 10 October in the evening
+    is now confirmed to be at <a href="http://zaza-bar.de/zaza-bar/index_en.html"><b>ZaZa Bar and Lounge</b></a>
+    from 19.00-late. Food and drink will be provided, including vegetarian options.
+    Make sure to bring your badge.
+  </p>
+  <p>
+    <i>2016-September-21</i>: A big welcome back to <a href="http://fluendo.com">Fluendo</a> who are sponsoring at Gold level this year.
+  </p>
+  <p>
+    <i>2016-September-18</i>: We're delighted to welcome back <b><a href="http://www.igalia.com/">Igalia</a></b> as a Silver sponsor this year.
+  </p>
+  <p>
+    <i>2016-September-05</i>: The GStreamer project is pleased to see <b><a href="http://pexip.com/">Pexip</a></b> return as Silver sponsor this year.
+  </p>
+  <p>
+    <i>2016-September-05</i>: We're excited to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference for the first time this year, at Gold level.
+  </p>
+  <p>
+    <i>2016-September-05</i>: The GStreamer project is thrilled to welcome back <b><a href="http://www.collabora.com">Collabora</a></b> as a Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2016-September-05</i>: We're happy to have <b><a href="http://www.kinvolk.io">Kinvolk</a></b> on board this year as local partner handling the ticketing.
+  </p>
+  <p>
+    <i>2016-September-05</i>: <b><a href="http://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="http://gstconf.ubicast.tv">record talks and lightning talks</a>
+  </p>
+  <p>
+    <i>2016-August-30</i>: Registration is now open
+  </p>
+  <p>
+    <i>2016-August-28</i>: List of talks and speakers available
+  </p>
+  <p>
+    <i>2016-August-28</i>: Added list of hotels
+  </p>
+  <p>
+    <i>2016-August-28</i>: <a href="&site;/conference/2016/gstreamer-conference-sponsor-brief-2016.pdf">Sponsorship brief</a> available
+  </p>
+  <p>
+    <i>2016-August-26</i>: Speakers have been notified about their talk proposal
+  </p>
+  <p>
+    <i>2016-June-16</i>: Talk submission deadline is Sunday 7 August 2016
+  </p>
+  <p>
+    <i>2016-June-16</i>: Call for Papers
+  </p>
+-->
+  <p>
+    <i>2017-June-06</i>: Date and venue confirmed.
+  </p>
+
+  <h1>Past GStreamer Conferences</h1>
+  <ul>
+    <li><a href="../2016/index.html">10-11 October 2016 · betahaus · Berlin, Germany</a></li>    
+    <li><a href="../2015/index.html">8-9 October 2015 · The Convention Centre Dublin · Dublin, Ireland</a></li>
+    <li><a href="../2015/index.html">8-9 October 2015 · The Convention Centre Dublin · Dublin, Ireland</a></li>
+    <li><a href="../2014/index.html">16-17 October 2014 · Congress Centre Düsseldorf · Düsseldorf, Germany</a></li>
+    <li><a href="../2013/index.html">22-23 October 2013 · Edinburgh International Conference Centre · Edinburgh, Scotland, UK</a></li>
+    <li><a href="../2012/index.html">27-28 August 2012 · Sheraton San Diego Hotel &amp; Marina · San Diego, USA</a></li>
+    <li><a href="../2011/index.html">24-25 October 2011 · Clarion Congress Hotel · Prague, Czech Republic</a></li>
+    <li><a href="../2010/index.html">26 October 2010 · University Arms Hotel · Cambridge, UK</a></li>
+  </ul>
+
+</td>
+<!--
+<td valign="top" style="padding:0px 50px">
+  <h1>Sponsors</h1>
+
+  <h2>Platinum Sponsor</h2>
+
+  <p style="padding:20px 0px">--><!-- height="101" width="193" -->
+<!--
+    <a href="http://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
+  </p>
+  <br />
+
+  <h2>Gold Sponsors</h2>
+
+  <p style="padding:10px 0px">
+    <a href="http://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" width="275" /></a>
+  </p>
+  <p style="padding:10px 0px">
+    <a href="http://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="74" width="320" /></a>
+  </p>
+  <p style="padding:10px 0px">
+    <a href="http://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
+  </p>
+-->
+<!--
+  <p>
+    <a href="http://www.google.com"><img src="sponsor_google_538x190.png" alt="Google" height="75" width="225" /></a>
+  </p>
+-->
+<!--
+  <br />
+
+  <h2>Silver Sponsors</h2>
+
+  <p style="padding:10px 0px">
+    <a href="http://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" height="75" width="75" /></a>
+
+    <span style="padding:0px 20px">
+    <a href="http://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="65" width="182" /></a>
+    </span>
+  </p>
+  <br />
+
+  <h2>Special Media Partner</h2>
+  <p style="padding:10px 0px">
+    <a href="http://www.ubicast.eu/"><img src="sponsor_ubicast_640x195.png" alt="UbiCast" height="75" width="246" /></a>
+  </p>
+  <br />
+
+  <h2>Local Event Partner</h2>
+  <p style="padding:10px 0px">
+    <a href="http://kinvolk.io"><img src="sponsor_kinvolk_394x394.png" alt="Kinvolk" height="99" width="99" /></a>
+  </p>
+  <br />
+-->
+<!--
+  <h2>Press Partners</h2>
+  <p style="padding:10px 0px">
+    <a href="http://lwn.net"><img src="lwn-logo-gstconf2016.png" alt="LWN" height="99" width="300" /></a>
+  </p>
+-->
+<!--
+  <p>
+    <small>
+    Interested in <a href="&site;/conference/2016/gstreamer-conference-sponsor-brief-2016.pdf">becoming a sponsor</a> ?
+    </small>
+  </p>
+</td>
+-->
+
+</tr>
+</table>
+
+</body>
+</page>
