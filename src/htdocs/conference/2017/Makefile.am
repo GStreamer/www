@@ -1,12 +1,8 @@
 #talks-and-speakers.html schedule.html
 built_pages = index.html
 
-#ccd.jpg
-#lwn.png
-
-#	lwn-logo-gstconf2015.png
-#	sponsor_google_538x190.png
-images =
+images = \
+	banner-prague.jpg
 #	sponsor_ubicast_640x195.png \
 #	sponsor_centricular_753x125.png \
 #	sponsor_collabora_02_rgb_965x504.png \
@@ -14,7 +10,7 @@ images =
 #        sponsor_fluendo_320x74.png \
 #	sponsor_igalia_2015_2019x720.png \
 #	sponsor_pexip.png \
-#        sponsor_kinvolk_394x394.png
+#	sponsor_google_538x190.png
 
 #	gstreamer-conference-sponsor-brief-2016.pdf
 documents = 
