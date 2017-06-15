@@ -8861,6 +8861,23 @@ or download tarballs for
   </item>
 
     <item>
+      <date>2017-05-01 16:00</date>
+        <title>GStreamer 1.12.0 release candidate 2 (1.11.91, binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.12.0 release candidate 2 of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.11.91/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.11.91/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.11.91/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.11.91/">Windows</a>.
+        </p>
+        </content>
+    </item>
+
+    <item>
       <date>2017-05-04 16:00</date>
         <title>GStreamer 1.12.0 stable release</title>
         <content>
@@ -8906,6 +8923,23 @@ or download tarballs for
         </p>
         </content>
   </item>
+
+    <item>
+      <date>2017-05-06 12:30</date>
+        <title>GStreamer 1.12.0 stable release (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.12.0 stable release of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.12.0/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.12.0/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.12.0/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.12.0/">Windows</a>.
+        </p>
+        </content>
+    </item>
 
 </news>
 
