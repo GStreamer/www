@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gstreamer-vaapi</module>
+  <module-fancy>A set of VA-API based elements for GStreamer</module-fancy>
+  <name></name>
+  <version>1.10.5</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce the fifth bugfix release in the stable
+1.10 release series of your favourite cross-platform multimedia framework!
+</p>
+<p>
+This release only contains bugfixes and it is safe to update from 1.10.x.
+</p>
+<p>
+See <a href="&site;/releases/1.10/#1.10.5">&site;/releases/1.10/</a> for the full release notes.
+</p>
+  </intro>
+    <contributors>
+	<person>Hyunjun Ko</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Scott D Phillips</person>
+	<person>Sreerenj Balachandran</person>
+	<person>Thomas Petazzoni</person>
+	<person>Tim-Philipp Müller</person>
+	<person>Víctor Manuel Jáquez Leal</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>778749</id>
+      <summary>Using vaapih265enc without h265parse causes assert</summary>
+    </bug>
+    <bug>
+      <id>779101</id>
+      <summary>configure: AC_CHECK_HEADER Macro is failing</summary>
+    </bug>
+    <bug>
+      <id>779953</id>
+      <summary>Fails to build with uClibc C library</summary>
+    </bug>
+    <bug>
+      <id>779954</id>
+      <summary>Fix &quot; Reporting bugs &quot; section in README</summary>
+    </bug>
+    <bug>
+      <id>780363</id>
+      <summary>Backport meson build definitions to the 1.10 branch</summary>
+    </bug>
+    <bug>
+      <id>780947</id>
+      <summary>encoder: vp9: doesn't compile with gcc 7</summary>
+    </bug>
+  </bugs>
+</release>
