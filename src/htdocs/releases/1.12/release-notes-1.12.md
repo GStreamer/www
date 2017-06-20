@@ -1,6 +1,8 @@
 # GStreamer 1.12 Release Notes
 
 GStreamer 1.12.0 was originally released on 4th May 2017.
+The latest bug-fix release in the 1.12 series is [1.12.1](#1.12.1) and was
+released on 20 June 2017.
 
 The GStreamer team is proud to announce a new major feature release in the
 stable 1.x API series of your favourite cross-platform multimedia framework!
@@ -11,7 +13,7 @@ improvements.
 See [https://gstreamer.freedesktop.org/releases/1.12/][latest] for the latest
 version of this document.
 
-*Last updated: Thursday 4 May 2017, 11:00 UTC [(log)][gitlog]*
+*Last updated: Tuesday 20 June 2017, 07:30 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.12/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.12/release-notes-1.12.md
@@ -716,6 +718,38 @@ is a stable branch.
 ### 1.12.0
 
 1.12.0 was released on 4th May 2017.
+
+<a name="1.12.1"></a>
+
+### 1.12.1
+
+The first 1.10 bug-fix release (1.12.1) was released on 20 June 2017.
+This release only contains bugfixes and it should be safe to update from 1.12.x.
+
+#### Major bugfixes in 1.12.1
+
+ - Various fixes for crashes, assertions, deadlocks and memory leaks
+ - Fix for regression when seeking to the end of ASF files
+ - Fix for regression in (raw)videoparse that caused it to omit video metadata
+ - Fix for regression in discoverer that made it show more streams than
+   actually available
+ - Numerous bugfixes to the adaptive demuxer base class and the DASH demuxer
+ - Various playbin3/urisourcebin related bugfixes
+ - Vivante DirectVIV (imx6) texture uploader works with single-plane (e.g.
+   RGB) video formats now
+ - Intel Media SDK encoder now outputs valid PTS and keyframe flags
+ - OpenJPEG2000 plugin can be loaded again on MacOS and correctly displays
+   8 bit RGB images now
+ - Fixes to DirectSound source/sink for high CPU usage and wrong
+   latency/buffer size calculations
+ - gst-libav was updated to ffmpeg n3.3.2
+ - ... and many, many more!
+
+For a full list of bugfixes see [Bugzilla][buglist-1.12.1]. Note that this is
+not the full list of changes. For the full list of changes please refer to the
+GIT logs or ChangeLogs of the particular modules.
+
+[buglist-1.12.1]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=225693&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.12.1
 
 ## Known Issues
 
