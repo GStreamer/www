@@ -81,44 +81,42 @@ li {
   </p>
 
   <h2>Call for Papers</h2>
+<!--
   <p>
   The call for papers is not open yet, but will be announced here and on
   the <a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>.
   You can also <a href="https://twitter.com/GStreamer">follow @GStreamer on Twitter</a>.
   </p>
-<!--
+-->
   <p>
   The call for papers is now open and talk proposals can be submitted.
   </p>
   <p>
-  <b>The deadline for talk proposals is Sunday 7 August 2016.</b>
+  <b>The deadline for talk proposals is Sunday 13 August 2017, 23:59 UTC</b>
   </p>
   <p>
   The initial submission needs to be only a couple of sentences or paragraphs
   describing the talk you want to give and the desired length of your talk
   (please allow at least 5 minutes for questions at the end as well).
   </p>
--->
   <p>
   Talks can be on almost anything multimedia related, ranging from talks about
   applications to challenges in the lower levels in the stack or hardware.
   </p>
   <p>
   Talk slots will have one of the following durations: 20 minutes, 30 minutes,
-  or 45 minutes. There will only be a small number of 45-minute slots, so
-  please consider whether you could also make do with 30 minutes before asking
-  for a 45-minute slot.
-<!--
+  or 45 minutes, including questions. We will only have a small number of
+  45-minute slots available, so please consider whether you could also make do
+  with 30 minutes before asking for a 45-minute slot.
   </p>
   <p>
   We want to hear from you, what you are working on, what you are using
   GStreamer for, what difficulties you have encountered and how you solved them,
-  what your plans are.
+  what your plans are, what you like, what you dislike, how to improve things.
   </p>
   <p>
-  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference @t lists.freedesktop.org</a>.
+  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- --><i>&#64;</i><!-- -->lists.freedesktop.org</a>.
   </p>
--->
 
   <h2>Showcase or Lightning Talks</h2>
   <p>
@@ -132,7 +130,7 @@ li {
     Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
   </p>
   <p>
-    Simply send a quick mail to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- -->@<!-- -->lists.freedesktop.org</a> above to reserve your slot (subject to availability).
+    Simply send a quick mail to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- --><i>&#64;</i><!-- -->lists.freedesktop.org</a> above to reserve your slot (subject to availability).
   </p>
   <p>
     There is no deadline for Lightning Talk submissions, slots will be
@@ -158,8 +156,8 @@ li {
     <ul>
     <li><a href="&site;/conference/2016/talks-and-speakers.html#video-encoding-benchmarks">An overview of Video Encoding Benchmarks with GStreamer</a><br /><small><i>Florent Thiéry, UbiCast</i></small></li>
   </ul>
--->
   </p>
+-->
   <p>
     <b>Lightning Talks:</b>
     <small> (submitted so far)</small>
@@ -452,13 +450,16 @@ li {
   <p>
     <i>2016-August-26</i>: Speakers have been notified about their talk proposal
   </p>
-  <p>
-    <i>2016-June-16</i>: Talk submission deadline is Sunday 7 August 2016
-  </p>
-  <p>
-    <i>2016-June-16</i>: Call for Papers
-  </p>
 -->
+  <p>
+    <i>2017-July-10</i>: Talk submission deadline is Sunday 13 August 2017, 23:59 UTC
+  </p>
+  <p>
+    <i>2017-July-10</i>: Call for Papers
+  </p>
+  <p>
+    <i>2017-June-14</i>: Venue announced: node5
+  </p>
   <p>
     <i>2017-June-14</i>: Initial announcement.
   </p>
