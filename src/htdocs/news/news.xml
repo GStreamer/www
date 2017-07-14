@@ -9016,7 +9016,7 @@ available for Windows 32/64-bit, iOS and Mac OS X and Android.
         <content>
 <p>
 The GStreamer team is pleased to announce the first bugfix release in the
-stable 1.10 release series of your favourite cross-platform multimedia framework!
+stable 1.12 release series of your favourite cross-platform multimedia framework!
 </p>
 
 <p>
@@ -9063,6 +9063,23 @@ or download tarballs for
         </content>
   </item>
 
+    <item>
+      <date>2017-06-22 13:15</date>
+        <title>GStreamer 1.12.1 stable release (binaries)</title>
+        <content>
+<p>
+Pre-built binary images of the 1.12.1 stable release of GStreamer are now
+available for Windows 32/64-bit, iOS and Mac OS X and Android.
+</p><p>
+        The builds are available for download from:
+        <a href="&site;/data/pkg/android/1.12.1/">Android</a>,
+	<a href="&site;/data/pkg/ios/1.12.1/">iOS</a>,
+	<a href="&site;/data/pkg/osx/1.12.1/">Mac OS X</a> and
+        <a href="&site;/data/pkg/windows/1.12.1/">Windows</a>.
+        </p>
+        </content>
+    </item>
+
   <item>
       <date>2017-07-10 14:00</date>
         <title>GStreamer Conference 2017 - Call for Papers</title>
@@ -9099,6 +9116,59 @@ The deadline for talk submissions is Sunday 13 August 2017, 23:59 UTC.
         </p>
         <p>
 We hope to see you in Prague!
+        </p>
+        </content>
+  </item>
+
+    <item>
+      <date>2017-07-14 11:00</date>
+        <title>GStreamer 1.12.2 stable release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the second bugfix release in the
+stable 1.12 release series of your favourite cross-platform multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it should be safe to update from
+1.12.x.
+</p>
+
+<p>
+See <a href="&site;/releases/1.12/#1.12.2">&site;/releases/1.12/</a>
+for the full release notes.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        <p>
+Check out the release notes for
+<a href="&site;/releases/gstreamer/1.12.2.html">GStreamer core</a>,
+<a href="&site;/releases/gst-plugins-base/1.12.2.html">gst-plugins-base</a>,
+<a href="&site;/releases/gst-plugins-good/1.12.2.html">gst-plugins-good</a>,
+<a href="&site;/releases/gst-plugins-ugly/1.12.2.html">gst-plugins-ugly</a>,
+<a href="&site;/releases/gst-plugins-bad/1.12.2.html">gst-plugins-bad</a>,
+<a href="&site;/releases/gst-libav/1.12.2.html">gst-libav</a>,
+<a href="&site;/releases/gst-rtsp-server/1.12.2.html">gst-rtsp-server</a>,
+<a href="&site;/releases/gst-python/1.12.2.html">gst-python</a>,
+<a href="&site;/releases/gst-editing-services/1.12.2.html">gst-editing-services</a>,
+<a href="&site;/releases/gst-validate/1.12.2.html">gst-validate</a>,
+<a href="&site;/releases/gstreamer-vaapi/1.12.2.html">gstreamer-vaapi</a>, or
+<a href="&site;/releases/gst-omx/1.12.2.html">gst-omx</a>,
+or download tarballs for
+<a href="&site;/src/gstreamer/gstreamer-1.12.2.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.12.2.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.12.2.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.12.2.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.12.2.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.12.2.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.12.2.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.12.2.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.12.2.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-validate/gst-validate-1.12.2.tar.xz">gst-validate</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.12.2.tar.xz">gstreamer-vaapi</a>, or
+<a href="&site;/src/gst-omx/gst-omx-1.12.2.tar.xz">gst-omx</a>.
         </p>
         </content>
   </item>
