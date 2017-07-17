@@ -9189,5 +9189,28 @@ available for Windows 32/64-bit, iOS and Mac OS X and Android.
         </p>
         </content>
     </item>
+
+  <item>
+      <date>2017-07-16 17:00</date>
+        <title>Orc 0.4.27 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another maintenance bug-fix release
+of liborc, the Optimized Inner Loop Runtime Compiler. Main changes since the
+previous release:
+        </p>
+        <p>
+          <ul>
+            <li>sse: preserve non volatile sse registers, needed for MSVC</li>
+            <li>x86: don't hard-code register size to zero in orc_x86_emit_*() functions</li>
+            <li>Fix incorrect asm generation on 64-bit Windows when building with MSVC</li>
+            <li>Support build using the Meson build system</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.27.tar.xz">orc-0.4.27</a>.
+        </p>
+        </content>
+  </item>
 </news>
 
