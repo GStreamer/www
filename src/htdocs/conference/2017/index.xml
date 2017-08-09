@@ -285,14 +285,17 @@ li {
   <h2>Sponsorship Opportunities</h2>
   <p>
   The GStreamer Conference 2017 is only possible thanks to the financial support
-  from our sponsors. The 2017 sponsorship brochure will be available soon. In
+  from our sponsors.
+
+<!--
+  The 2017 sponsorship brochure will be available soon. In
   the mean time feel free to get in touch with <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>
   to register your interest.
-<!--
-  For this year's sponsorship opportunities please
-  refer to the <a href="&site;/conference/2016/gstreamer-conference-sponsor-brief-2016.pdf">sponsor brief (PDF)</a>
-  or get in touch with <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>.
 -->
+
+  For this year's sponsorship opportunities please refer to
+  the <a href="&site;/conference/2017/gstreamer-conference-sponsor-brief-2017.pdf">sponsor brief (PDF)</a>
+  or get in touch with <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>.
   </p>
 
   <h2>City</h2>
@@ -389,7 +392,7 @@ li {
   <h2>Contact</h2>
   <p>
   If you have any questions about the GStreamer Conference or are considering
-  <!--<a href="&site;/conference/2016/gstreamer-conference-sponsor-brief-2016.pdf">-->becoming a sponsor<!--</a>-->,
+  <a href="&site;/conference/2017/gstreamer-conference-sponsor-brief-2017.pdf">becoming a sponsor</a>
   please contact <a href="mailto:t.i.m@zen.co.uk">Tim-Philipp Müller</a>.
   </p>
 
@@ -444,13 +447,13 @@ li {
   <p>
     <i>2016-August-28</i>: Added list of hotels
   </p>
-  <p>
-    <i>2016-August-28</i>: <a href="&site;/conference/2016/gstreamer-conference-sponsor-brief-2016.pdf">Sponsorship brief</a> available
-  </p>
-  <p>
     <i>2016-August-26</i>: Speakers have been notified about their talk proposal
   </p>
 -->
+  <p>
+    <i>2017-August-10</i>: <a href="&site;/conference/2017/gstreamer-conference-sponsor-brief-2017.pdf">Sponsorship brief</a> available
+  </p>
+  <p>
   <p>
     <i>2017-July-10</i>: Talk submission deadline is Sunday 13 August 2017, 23:59 UTC
   </p>
@@ -476,10 +479,10 @@ li {
   </ul>
 
 </td>
-<!--
 <td valign="top" style="padding:0px 50px">
   <h1>Sponsors</h1>
 
+<!--
   <h2>Platinum Sponsor</h2>
 
   <p style="padding:20px 0px">--><!-- height="101" width="193" -->
@@ -537,14 +540,12 @@ li {
     <a href="http://lwn.net"><img src="lwn-logo-gstconf2016.png" alt="LWN" height="99" width="300" /></a>
   </p>
 -->
-<!--
   <p>
     <small>
-    Interested in <a href="&site;/conference/2016/gstreamer-conference-sponsor-brief-2016.pdf">becoming a sponsor</a> ?
+    Interested in <a href="&site;/conference/2017/gstreamer-conference-sponsor-brief-2017.pdf">becoming a sponsor</a> ?
     </small>
   </p>
 </td>
--->
 
 </tr>
 </table>

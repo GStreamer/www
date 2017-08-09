@@ -12,10 +12,9 @@ images = \
 #	sponsor_pexip.png \
 #	sponsor_google_538x190.png
 
-#	gstreamer-conference-sponsor-brief-2016.pdf
-documents = 
+documents = gstreamer-conference-sponsor-brief-2017.pdf
 
-#gstreamer-conference-sponsor-brief-2016.pdf:
-#	cp $(top_srcdir)/copy/documents/gstreamer-conference-sponsor-brief-2016.pdf gstreamer-conference-sponsor-brief-2016.pdf
+gstreamer-conference-sponsor-brief-2017.pdf:
+	cp $(top_srcdir)/copy/documents/gstreamer-conference-sponsor-brief-2017.pdf gstreamer-conference-sponsor-brief-2017.pdf
 
 include $(top_srcdir)/html.make
