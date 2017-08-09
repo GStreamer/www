@@ -18,7 +18,7 @@ li {
 </style>
 
 <table>
-<tr><td>
+<tr><td width="70%">
 
 <h1>GStreamer Conference 2017</h1>
 
@@ -31,7 +31,7 @@ li {
       <div class="crop-prague">
       <img src="banner-prague.jpg"
            alt="Prague, View from Prague Petřín Lookout Tower (by Thomas Depenbusch), CC-BY-2.0"
-           height="252"
+           width="100%"
       />
       </div>
     </td>
