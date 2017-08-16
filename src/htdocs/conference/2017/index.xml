@@ -418,12 +418,6 @@ li {
     Make sure to bring your badge.
   </p>
   <p>
-    <i>2016-September-21</i>: A big welcome back to <a href="http://fluendo.com">Fluendo</a> who are sponsoring at Gold level this year.
-  </p>
-  <p>
-    <i>2016-September-18</i>: We're delighted to welcome back <b><a href="http://www.igalia.com/">Igalia</a></b> as a Silver sponsor this year.
-  </p>
-  <p>
     <i>2016-September-05</i>: The GStreamer project is thrilled to welcome back <b><a href="http://www.collabora.com">Collabora</a></b> as a Platinum sponsor this year!
   </p>
   <p>
@@ -441,6 +435,12 @@ li {
     <i>2016-August-26</i>: Speakers have been notified about their talk proposal
   </p>
 -->
+  <p>
+    <i>2017-August-16</i>: The GStreamer project welcomes back <a href="http://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
+  </p>
+  <p>
+    <i>2017-August-16</i>: We're delighted to have <b><a href="http://www.igalia.com/">Igalia</a></b> as a Gold sponsor this year!
+  </p>
   <p>
     <i>2017-August-15</i>: Talk submission deadline has been extended to Sunday 27 August 2017, 23:59 UTC
   </p>
@@ -499,12 +499,18 @@ li {
     <a href="http://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" height="125" width="125" /></a>
   </p>
   <p style="padding:10px 0px">
-    <a href="http://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" width="275" /></a>
+    <a href="http://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
   </p>
-<!--
+
   <p style="padding:10px 0px">
-    <a href="http://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="74" width="320" /></a>
+    <a href="http://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="75" /></a>
   </p>
+
+  <p style="padding:10px 0px">
+    <a href="http://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="75" /></a>
+  </p>
+
+<!--
   <p style="padding:10px 0px">
     <a href="http://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
   </p>
