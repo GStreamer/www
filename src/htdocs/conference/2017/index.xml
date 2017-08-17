@@ -418,9 +418,6 @@ li {
     Make sure to bring your badge.
   </p>
   <p>
-    <i>2016-September-05</i>: The GStreamer project is thrilled to welcome back <b><a href="http://www.collabora.com">Collabora</a></b> as a Platinum sponsor this year!
-  </p>
-  <p>
     <i>2016-September-05</i>: We're happy to have <b><a href="http://www.kinvolk.io">Kinvolk</a></b> on board this year as local partner handling the ticketing.
   </p>
   <p>
@@ -435,6 +432,9 @@ li {
     <i>2016-August-26</i>: Speakers have been notified about their talk proposal
   </p>
 -->
+  <p>
+    <i>2017-August-17</i>: The GStreamer project is thrilled to have <b><a href="http://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
+  </p>
   <p>
     <i>2017-August-16</i>: The GStreamer project welcomes back <a href="http://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
   </p>
@@ -484,15 +484,13 @@ li {
 <td valign="top" style="padding:0px 50px">
   <h1>Sponsors</h1>
 
-<!--
   <h2>Platinum Sponsor</h2>
 
-  <p style="padding:20px 0px">--><!-- height="101" width="193" -->
-<!--
+  <p style="padding:20px 0px"><!-- height="101" width="193" -->
     <a href="http://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
   </p>
   <br />
--->
+
   <h2>Gold Sponsors</h2>
 
   <p style="padding:10px 0px">
