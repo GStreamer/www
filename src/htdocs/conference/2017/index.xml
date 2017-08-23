@@ -268,18 +268,17 @@ li {
 
   <h2>GStreamer hackfest</h2>
   <p>
-    There are plans to have a hackfest just before or after the conference in
-    Prague. Dates and venue are yet to be confirmed. If you are interested in
-    attending the hackfest you may want to hold off on booking travel and
-    accommodation yet.
-<!--
-    Please add yourself to the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2016">wiki page</a>
+    There will be a hackfest just before the conference, on Thursday and Friday
+    19-20 October 2017. The hackfest will be at the same venue as the conference:
+    <a href="http://node5.cz/">Node5</a>.
+  </p>
+  <p>
+    Please add yourself to the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2017">wiki page</a>
     if you plan on attending the hackfest, so we have an idea of the number of
-    people to expect. Also see the
+    people to expect. <!-- Also see the
     <a href="https://lists.freedesktop.org/archives/gstreamer-announce/2016-August/000395.html">announcement mail</a>
-    here. Mail Sebastian or pop onto the #gstreamer IRC channel if you don't
-    have editing permissions for the wiki.
--->
+    here. --> Mail Tim or Sebastian or pop onto the #gstreamer IRC channel if you
+    don't have editing permissions for the wiki.
   </p>
 
   <h2>Sponsorship Opportunities</h2>
@@ -432,6 +431,9 @@ li {
     <i>2016-August-26</i>: Speakers have been notified about their talk proposal
   </p>
 -->
+  <p>
+    <i>2017-August-23</i>: There will be a hackfest/hackathon on Thursday and Friday 19-20 October 2017, just before the conference, and at the same venue as the conference (node5).
+  </p>
   <p>
     <i>2017-August-17</i>: The GStreamer project is thrilled to have <b><a href="http://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
   </p>
