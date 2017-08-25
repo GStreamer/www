@@ -150,20 +150,49 @@ li {
     to get an idea of the range of topics and speakers.
     <!--  <a href="schedule.html">Click here for the full schedule</a> -->
   </p>
-<!--
+
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
     <ul>
-    <li><a href="&site;/conference/2016/talks-and-speakers.html#video-encoding-benchmarks">An overview of Video Encoding Benchmarks with GStreamer</a><br /><small><i>Florent Thiéry, UbiCast</i></small></li>
+    <li>GStreamer WebRTC<br /><small><i>Matthew Waters, Centricular</i></small></li>
+    <li>Implementing Zero-Copy pipelines in GStreamer<br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>Enabling Cross-Platform Development on macOS and Windows with Meson<br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
+    <li>Network Music Performance: A case study using GStreamer<br /><small><i>Kostas Tsioutas, Ionian University Corfu</i></small></li>
+    <li>Oxidising GStreamer: Rust out your multimedia!<br /><small><i>Sebastian Dröge, Centricular</i></small></li>
+    <li>Aligning audio and video streams' start and end<br /><small><i>Vivia Nikolaidou, ToolsOnAir</i></small></li>
+    <li>Photobooth: An exemplary multi-disciplinary project<br /><small><i>Andreas Frisch</i></small></li>
+    <li>GStreamer in the world of Android Camera3 cameras<br /><small><i>Olivier Crête, Collabora</i></small></li>
+    <li>Audio Mixing with the new audiomixer element<br /><small><i>Stefan Sauer, Google</i></small></li>
+    <li>GStreamer State of the Union<br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
+    <li>The GStreamer-VAAPI report<br /><small><i>Víctor M. Jáquez L., Igalia</i></small></li>
+    <li>gst-mfx: Full-Featured, High Performance and Cross-Platform GStreamer Plugins Using Intel Media SDK<br /><small><i>Ishmael Sameen; Xavier Hallade, Intel</i></small></li>
+    <li>VA-API rust-binding<br /><small><i>Hyunjun Ko, Igalia</i></small></li>
+    <li>GStreamer Daemon - building a media server in under 30 minutes<br /><small><i>tbd, RidgeRun</i></small></li>
+    <li>Preparing GStreamer for high packet-rate video streaming<br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
+    <li>GstShark profiling: a real-life example<br /><small><i>tbd, RidgeRun</i></small></li>
+    <li>PipeWire<br /><small><i>Wim Taymans, RedHat</i></small></li>
+    <li>Media Source Extensions on WebKit using GStreamer<br /><small><i>Enrique Ocaña González, Igalia</i></small></li>
+    <li>icamerasrc: a multi-pad source element<br /><small><i>Xi Cao, Intel</i></small></li>
+    <li>GStreamer is in the air<br /><small><i>Jan Schmidt, Centricular</i></small></li>
+    <li>Of GStreamer, containers, QA and fuzzing<br /><small><i>Edward Hervey, Centricular</i></small></li>
+    <li><i>Next-gen royalty-free video codec</i><br /><small><i>tbd</i></small></li>
+    <li>... and more (we still have a few free slots and are still accepting proposals!)<br /><small><i></i></small></li>
+<!--
+    <li><br /><small><i></i></small></li>
+    <li><br /><small><i></i></small></li>
+    <li><br /><small><i></i></small></li>
+    <li><br /><small><i></i></small></li>
+-->
   </ul>
   </p>
--->
+
   <p>
     <b>Lightning Talks:</b>
     <small> (submitted so far)</small>
     <ul>
+    <li>A big year for Video4Linux2 support in GStreamer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>Playbin3/decodebin3 status update <small><br /><i>Edward Hervey, Centricular</i></small></li>
 <!--
-    <li>Yet Another Update about Video4Linux2 in GStreamer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
     <li>FFV1 and Matroska as a new standard for video archiving <small><br /><i>Georg Lippitsch, ToolsOnAir</i></small></li>
     <li>Writing Software Synthesizers for GStreamer <small><br /><i>Stefan Sauer, Google</i></small></li>
     <li>Making GStreamer on Android Easier <small><br /><i>Arun Raghavan</i></small></li>
@@ -177,7 +206,7 @@ li {
     <li>GstSeamCrop: A seam crop real-time video retargeting <small><br /><i>Francisco Javier Velazquez</i></small></li>
     <li>PyGObject &amp; GIL - the death by thousand cuts <small><br /><i>Mikhail Fludkov, Pexip</i></small></li>
 -->
-    <li>...</li>
+    <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
   </p>
@@ -423,14 +452,14 @@ li {
     <i>2016-August-30</i>: Registration is now open
   </p>
   <p>
-    <i>2016-August-28</i>: List of talks and speakers available
+    <i>2016-August-28</i>: Added list of hotels
+-->
+  <p>
+    <i>2017-August-26</i>: Initial list of talks and speakers available
   </p>
   <p>
-    <i>2016-August-28</i>: Added list of hotels
+    <i>2017-August-25</i>: Speakers have been notified about their talk proposal
   </p>
-    <i>2016-August-26</i>: Speakers have been notified about their talk proposal
-  </p>
--->
   <p>
     <i>2017-August-23</i>: There will be a hackfest/hackathon on Thursday and Friday 19-20 October 2017, just before the conference, and at the same venue as the conference (node5).
   </p>
