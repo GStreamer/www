@@ -238,24 +238,17 @@ li {
 
   <h2>Registration</h2>
   <p>
-  Registration will open very soon.
-  </p>
-<!--
-  <p>
   Registration is now open and will stay open until the conference.
   </p>
--->
-<!--
   <p>
-  <b><a href="https://ti.to/gstreamer-conference-2016/gstreamer-conference-2016">Sign up for the GStreamer Conference here</a></b>
+  <b><a href="https://ti.to/node5/gstreamer-conference-2017">Sign up for the GStreamer Conference here</a></b>
   </p>
--->
   <p>
   There will be separate registration options for both professionals and for students and hobbyists:
   </p>
   <p>
     <div style="margin-left:5%">
-    <table width="60%" cellpadding="5">
+    <table width="80%" cellpadding="5">
       <tr><td>Professional (Early Bird)</td><td>200 EUR (ca. 235 USD) incl. lunch (early bird, until 15 Sept)</td></tr>
       <tr><td>Professional (Regular)</td><td>300 EUR (ca. 350 USD) incl. lunch (regular)</td></tr>
       <tr><td>Student/hobbyist</td><td>25 EUR (ca. 30 USD) incl. lunch</td></tr>
@@ -453,11 +446,11 @@ li {
     <i>2016-September-05</i>: We're happy to have <b><a href="http://www.kinvolk.io">Kinvolk</a></b> on board this year as local partner handling the ticketing.
   </p>
   <p>
-    <i>2016-August-30</i>: Registration is now open
-  </p>
-  <p>
     <i>2016-August-28</i>: Added list of hotels
 -->
+  <p>
+    <i>2016-August-26</i>: Registration is now open. Early-bird professional tickets are available until 15 September.
+  </p>
   <p>
     <i>2017-August-26</i>: Initial list of talks and speakers available
   </p>
