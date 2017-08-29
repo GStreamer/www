@@ -9212,5 +9212,36 @@ Direct tarball download: <a href="&site;/src/orc/orc-0.4.27.tar.xz">orc-0.4.27</
         </p>
         </content>
   </item>
+
+  <item>
+      <date>2017-08-29 12:00</date>
+        <title>GStreamer Conference 2017: Registration now open</title>
+        <content>
+        <p><i>About the GStreamer Conference</i></p>
+        <p>
+The GStreamer Conference 2017 will take place on 21-22 October 2017 in
+Prague (Czech Republic), just before the Embedded Linux Conference Europe.
+        </p>
+        <p>
+It is a conference for developers, contributors, decision-makers, students,
+hobbyists, and anyone else interested in the GStreamer multimedia framework
+or open source multimedia technologies.
+        </p>
+
+        <p><i>Registration now open</i></p>
+        <p>
+You can now register for the GStreamer Conference 2017 via the
+<a href="&site;/conference/2017/">conference website</a>.
+        </p>
+        <p>
+        Early-bird registration for professionals is available until
+        15<super>th</super> September.
+        </p>
+        <p>
+        We hope to see you there!
+        </p>
+        </content>
+  </item>
+
 </news>
 
