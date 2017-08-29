@@ -171,9 +171,9 @@ li {
     <li>The GStreamer-VAAPI report<br /><small><i>Víctor M. Jáquez L., Igalia</i></small></li>
     <li>gst-mfx: Full-Featured, High Performance and Cross-Platform GStreamer Plugins Using Intel Media SDK<br /><small><i>Ishmael Sameen; Xavier Hallade, Intel</i></small></li>
     <li>VA-API rust-binding<br /><small><i>Hyunjun Ko, Igalia</i></small></li>
-    <li>GStreamer Daemon - building a media server in under 30 minutes<br /><small><i>tbd, RidgeRun</i></small></li>
+    <li>GStreamer Daemon - building a media server in under 30 minutes<br /><small><i>David Soto, RidgeRun</i></small></li>
     <li>Preparing GStreamer for high packet-rate video streaming<br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
-    <li>GstShark profiling: a real-life example<br /><small><i>tbd, RidgeRun</i></small></li>
+    <li>GstShark profiling: a real-life example<br /><small><i>Michael Gruner, RidgeRun</i></small></li>
     <li>PipeWire<br /><small><i>Wim Taymans, RedHat</i></small></li>
     <li>Media Source Extensions on WebKit using GStreamer<br /><small><i>Enrique Ocaña González, Igalia</i></small></li>
     <li>icamerasrc: a multi-pad source element<br /><small><i>Xi Cao, Intel</i></small></li>
@@ -197,21 +197,9 @@ li {
     <small> (submitted so far)</small>
     <ul>
     <li>A big year for Video4Linux2 support in GStreamer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>GstGPGPU - GstCUDA and GstOpenCL <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
     <li>Playbin3/decodebin3 status update <small><br /><i>Edward Hervey, Centricular</i></small></li>
-<!--
-    <li>FFV1 and Matroska as a new standard for video archiving <small><br /><i>Georg Lippitsch, ToolsOnAir</i></small></li>
-    <li>Writing Software Synthesizers for GStreamer <small><br /><i>Stefan Sauer, Google</i></small></li>
-    <li>Making GStreamer on Android Easier <small><br /><i>Arun Raghavan</i></small></li>
-    <li>IP Streaming Performance Issues with GStreamer on an Embedded Platform - and some Solutions <small><br /><i>David Plowman, BrightSign Digital</i></small></li>
-    <li>Measuring video-capture latency with the Raspberry Pi and satellites <small><br /><i>Will Manley, stb-tester.com</i></small></li>
-    <li>Smooth playback of adaptive video streams on Raspberry Pi with gst-mmal <small><br /><i>John Sadler, YouView TV</i></small></li>
-    <li>GstValidate: A good friend for GStreamer debugging <small><br /><i>Thibault Saunier, Samsung OSG</i></small></li>
-    <li>GObject bindings for libva <small><br /><i>Scott D Phillips, Intel</i></small></li>
-    <li>How I ported Kurento Media Server to Windows <small><br /><i>Kyrylo Polezhaiev</i></small></li>
-    <li>Code review in Chromium project + quick update on the Media Process based GStreamer backend <small><br /><i>Julien Isorce, Samsung</i></small></li>
-    <li>GstSeamCrop: A seam crop real-time video retargeting <small><br /><i>Francisco Javier Velazquez</i></small></li>
-    <li>PyGObject &amp; GIL - the death by thousand cuts <small><br /><i>Mikhail Fludkov, Pexip</i></small></li>
--->
+    <li>GStreamer and OpenCV using a GstOpenCV element <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
