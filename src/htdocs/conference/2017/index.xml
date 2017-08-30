@@ -92,7 +92,7 @@ li {
   The call for papers is now open and talk proposals can still be submitted.
   </p>
   <p>
-  <b>The deadline for talk proposals is Sunday 27 August 2017, 23:59 UTC</b>
+  We still accept submissions subject to slot availability.
   </p>
   <p>
   The initial submission needs to be only a couple of sentences or paragraphs
@@ -182,6 +182,8 @@ li {
     <li><i>AOMedia AV1, NetVC, Daala – quest for the next-gen royalty-free video codec"</i><br /><small><i>tbd</i></small></li>
     <li>Efficient Video Processing on Embedded GPU<br /><small><i>tbd, Zurich University of Applied Sciences</i></small></li>
     <li>Synchronised Playback Made Easy<br /><small><i>Arun Raghavan</i></small></li>
+    <li>Moar Better Tests<br /><small><i>tbd, Pexip</i></small></li>
+    <li>So you think you can FEC?<br /><small><i>tbd, Pexip</i></small></li>
     <li>... and more (we still have a few free slots and are still accepting proposals!)<br /><small><i></i></small></li>
 <!--
     <li><br /><small><i></i></small></li>
@@ -200,6 +202,7 @@ li {
     <li>GstGPGPU - GstCUDA and GstOpenCL <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
     <li>Playbin3/decodebin3 status update <small><br /><i>Edward Hervey, Centricular</i></small></li>
     <li>GStreamer and OpenCV using a GstOpenCV element <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
+    <li>RTP Bundle Support <small><br /><i>tbd, Pexip</i></small></li>
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
