@@ -182,8 +182,8 @@ li {
     <li><i>AOMedia AV1, NetVC, Daala – quest for the next-gen royalty-free video codec"</i><br /><small><i>tbd</i></small></li>
     <li>Efficient Video Processing on Embedded GPU<br /><small><i>tbd, Zurich University of Applied Sciences</i></small></li>
     <li>Synchronised Playback Made Easy<br /><small><i>Arun Raghavan</i></small></li>
-    <li>Moar Better Tests<br /><small><i>tbd, Pexip</i></small></li>
-    <li>So you think you can FEC?<br /><small><i>tbd, Pexip</i></small></li>
+    <li>Moar Better Tests<br /><small><i>Håvard Graff, Pexip</i></small></li>
+    <li>So you think you can FEC?<br /><small><i>Mikhail Fludkov &amp; Erlend Graff, Pexip</i></small></li>
     <li>... and more (we still have a few free slots and are still accepting proposals!)<br /><small><i></i></small></li>
 <!--
     <li><br /><small><i></i></small></li>
@@ -202,7 +202,9 @@ li {
     <li>GstGPGPU - GstCUDA and GstOpenCL <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
     <li>Playbin3/decodebin3 status update <small><br /><i>Edward Hervey, Centricular</i></small></li>
     <li>GStreamer and OpenCV using a GstOpenCV element <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
-    <li>RTP Bundle Support <small><br /><i>tbd, Pexip</i></small></li>
+    <li>RTP Bundle Support <small><br /><i>Håvard Graff, Pexip</i></small></li>
+    <li>ipcpipeline - Split a pipeline into multiple processes <small><br /><i>George Kiagiadakis, Collabora</i></small></li>
+    <li>GstPriQueue<sup><a href="https://github.com/pexip/gstreamer/commit/b466a7d0d930b359bccd05109d3a54824edbf867">1</a></sup> <small><br /><i>Erlend Graff, Pexip</i></small></li>
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
