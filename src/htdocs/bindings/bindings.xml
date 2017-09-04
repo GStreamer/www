@@ -55,6 +55,22 @@ For 0.10, Gian Mario Tagliaretti has written some documents for using GStreamer 
   </binding>
 
   <binding>
+    <id>rust</id>
+    <name>Rust</name>
+    <status>
+See <a href="https://crates.io/crates/gstreamer">crates.io</a>.
+    </status>
+    <body>
+    </body>
+    <contacts>
+      <person>
+        <realname>Sebastian Dröge</realname>
+        <email>sebastian (at) centricular dot com</email>
+      </person>
+    </contacts>
+  </binding>
+
+  <binding>
     <id>dotnet</id>
     <name>.NET</name>
     <status>The bindings are still under development. See the <a href="&site;/modules/gstreamer-sharp.html">gstreamer-sharp</a> module.</status>
@@ -243,5 +259,4 @@ The Ruby bindings are released as part of
     <a href="http://www.vala-project.org/">Vala</a>.</p>
     </body>
   </binding>
-
 </bindings>
