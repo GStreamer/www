@@ -71,6 +71,28 @@ See <a href="https://crates.io/crates/gstreamer">crates.io</a>.
   </binding>
 
   <binding>
+    <id>dlang</id>
+    <name>D</name>
+    <status>
+      Released as part of the <a href="https://gtkd.org">GtkD</a> project.
+    </status>
+    <body>
+      <h2>About</h2>
+      <p>
+        The GtkD project provides GStreamer bindings for the D Programming Language.
+      </p>
+      <h2>Links</h2>
+      <p>
+        <ul>
+          <li><a href="https://github.com/gtkd-developers/GtkD">GtkD git repository</a></li>
+          <li><a href="https://gtkd.org/download.html">Release tarballs</a></li>
+        </ul>
+      </p>
+    </body>
+    </contacts>
+  </binding>
+
+  <binding>
     <id>dotnet</id>
     <name>.NET</name>
     <status>The bindings are still under development. See the <a href="&site;/modules/gstreamer-sharp.html">gstreamer-sharp</a> module.</status>
