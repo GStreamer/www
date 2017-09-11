@@ -325,14 +325,19 @@ li {
   <a href="http://en.wikipedia.org/wiki/Prague">Prague</a>, the capital of the
   Czech Republic and its biggest city.
   </p>
-<!--
+
   <p>
   <i>Getting there</i>
   </p><p>
-  Berlin has two airports: Berlin Tegel (TXL) and Berlin-Schönefeld (SXF) which
-  both provide regional and international connections.
+  <b>By air:</b> <i>Prague Václav Havel airport</i> (PRG) provides regional
+  and international connections.
   </p>
--->
+  <p>
+  <b>By train:</b> <i>Praha hl.n. (Praha hlavní nádraží)</i> is Prague's
+  central station. <i>Praha-Smíchov</i> station is close to the venue/node5,
+  and international trains will often stop there as well.
+  </p>
+
   <h2>Venue</h2>
   <p>
   The conference will take place at<br/>
@@ -347,8 +352,8 @@ li {
 
   <h2>Hotels</h2>
   <p>
-  There is no official conference hotel. A list of hotels will be provided
-  at a later date.
+  There is no official conference hotel, but we have prepared a small list of
+  hotels for your convenience.
   </p>
   <p>
   For those who are planning to also attend the Embedded Linux Conference Europe,
@@ -356,59 +361,48 @@ li {
   from the GStreamer Conference venue node5 (7 minutes by metro using line B
   from Florenc to Anděl).
   </p>
-<!--
   <p>
   The following is just a small selection of hotels which may or may not be
-  suitable. Berlin is a major city and tourist destination and as such has
+  suitable. Prague is a major city and tourist destination and as such has
   many hotels and hostels in all price categories. The below is merely a small
   selection, you can find more using the usual booking engines such as
   booking.com, lastminute.com or airbnb.com. As always, it is advisable to book
   your accommodation earlier rather than later.
   </p>
   <p>
-  Many hotels in the city centre (Mitte) will be within walking distance
-  (up to 30mins) of the conference venue, or just a short taxi ride away.
-  There is also a public transport in form of busses, trams,
-  S-Bahn (overground metro) and U-Bahn (underground metro).
-  Our venue, the Betahaus, is right next to the <i>U Moritzplatz</i> underground
-  stop which is on the U8 Line and M29 bus route.
+  The conference venue (<a href="http://node5.cz/">node5</a>) is in the
+  district <i>Praha 5</i> not far from the transport hub and B line metro stop
+  <i>Anděl</i>. It should therefore be fairly easy reach by public transport or
+  taxi from all areas of the city and especially the city centre.
+  There is public transport in form of busses, trams and an underground metro.
   </p>
   <p>
-  The following hotels are located within half an hour of the betahaus and
-  had at least a couple of rooms left at the time of writing, but there are
-  many other hotels in the city which may be even better located or provide
-  better value:
+  The following hotels are located near the venue (node5) and the Anděl
+  transport hub, and had at least a couple of rooms left at the time of
+  writing, but there are many other hotels in the city which may be better
+  located or provide better value:
   <ul>
-    <li><a href="http://www.motel-one.com/de/hotels/berlin/hotel-berlin-mitte/">Hotel Motel One (Berlin Mitte)</a> - 3 mins walk from betahaus</li>
-    <li><a href="http://www.nh-hotels.de/hotel/nh-berlin-kreuzberg">Hotel NH (Berlin Kreuzberg)</a> - ca. 10 mins / 800m on foot from betahaus</li>
-    <li><a href="http://vj-hotels.com/">Hotel Vier Jahreszeiten (Berlin City) Kreuzberg</a> - ca. 15mins / 1.1km on foot, 9mins by bus</li>
-    <li><a href="http://www.booking.com/hotel/de/berlinanglehot.html">Angleterre Hotel</a>, Friedrichstrasse, ca. 25mins on foot, 11 mins by bus (M29 from U Kochstr./Checkpoint Charlie to Moritzplatz)</li>
-    <li><a href="http://www.novotel.com/en/hotel-3278-novotel-berlin-mitte/index.shtml">Hotel Novotel Mitte</a> - ca. 15 mins walk from betahaus (just as long by public transport)</li>
-    <li>For those on a budget airbnb.de may have some suitable accommodation choices, and there are also some hostels nearby, e.g. <a href="http://baxpax.de">baxpax Kreuzberg Hostel</a>, <a href="http://www.comebackpackers.com/en/">comebackpackers</a>, A&amp;O</li>
+    <li><a href="https://www.barcelo.com/en-gb/hotels/czech-republic/prague/occidental-praha-five/">Hotel Occidental Praha 5</a> - right next to venue/node5 (~1 minute walk)</li>
+    <li><a href="http://www.hotelandel.cz/">Hotel Andel</a> - right next to venue/node5 (~1 minute walk)</li>
+    <li><a href="http://www.akcent-hotel.cz/en/contact-location/">Akcent Hotel</a> - ca. 4 minute walk from venue/node5</li>
+    <li><a href="http://www.ibis.com/gb/hotel-5211-ibis-praha-mala-strana/index.shtml">Hotel Ibis Praha Mala Strana</a> - near Anděl transport hub, ca. 8 minutes walk to venue/node5</li>
+    <li><a href="http://www.mamaisonriverside.com/">Mamaison Hotel Riverside Prague</a> - 5-star hotel on the Praha 5 side of the river, ca. 19 minute walk to venue/node5</li>
   </ul>
   </p>
   <p>
-  There are also many hotels in the (very central) Alexanderplatz area which
-  are just a short U-Bahn (underground metro) ride away from the venue
-  (it's 7 mins from <i>U Alexanderplatz</i> to <i>U Moritzplatz</i>), e.g.:
-  <ul>
-    <li><a href="http://www.parkinn-berlin.de">Park Inn by Radisson</a></li>
-    <li><a href="http://hotelindigoberlin.com">Hotel INDIGO</a></li>
-    <li><a href="http://www.ibis.com/en/hotel-5513-ibis-budget-berlin-alexanderplatz/index.shtml">ibis budget (Mollstraße)</a></li>
-    <li><i>.. and many others</i></li>
-  </ul>
-  </p>
-  <p>
-  Those also attending the Embedded Linux Conference at the Maritim Hotel Berlin
-  may wish to stay there and take the M29 bus from <i>Gedänkstätte deutscher Widerstand</i>
-  to <i>Moritzplatz</i> (17 mins, every 10 mins), which is just a few steps
-  aways from the betahaus (GStreamer Conference venue).
+  There are also many hotels on the other side of the river in the city centre
+  / Old Town which are not far from a Line B metro stop or one of the tram lines
+  that pass through Anděl.
   </p>
   <p>
   If you find any other places that might be worth mentioning here, please send
   us a mail.
   </p>
--->
+
+  <h2>Invitation Letter</h2>
+  <p>
+  If you need an invitiation letter for visa purposes, please get in touch.
+  </p>
 
   <h2>Contact</h2>
   <p>
@@ -441,9 +435,10 @@ li {
   <p>
     <i>2016-September-05</i>: We're happy to have <b><a href="http://www.kinvolk.io">Kinvolk</a></b> on board this year as local partner handling the ticketing.
   </p>
-  <p>
-    <i>2016-August-28</i>: Added list of hotels
 -->
+  <p>
+    <i>2017-September-11</i>: Added list of hotels
+  </p>
   <p>
     <i>2017-August-26</i>: Registration is now open. Early-bird professional tickets are available until 15 September.
   </p>
