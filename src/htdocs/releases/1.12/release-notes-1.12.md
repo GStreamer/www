@@ -783,7 +783,7 @@ GIT logs or ChangeLogs of the particular modules.
 
 ### 1.12.3
 
-The second 1.12 bug-fix release (1.12.3) was released on 14 July 2017.
+The second 1.12 bug-fix release (1.12.3) was released on 18 September 2017.
 This release only contains bugfixes and it should be safe to update from 1.12.x.
 
 #### Major bugfixes in 1.12.3
