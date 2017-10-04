@@ -206,6 +206,7 @@ li {
     <li>RTP Bundle Support <small><br /><i>Håvard Graff, Pexip</i></small></li>
     <li>ipcpipeline - Split a pipeline into multiple processes <small><br /><i>George Kiagiadakis, Collabora</i></small></li>
     <li>GstPriQueue<sup><a href="https://github.com/pexip/gstreamer/commit/b466a7d0d930b359bccd05109d3a54824edbf867">1</a></sup> <small><br /><i>Erlend Graff, Pexip</i></small></li>
+    <li>DAMPAT: Dynamic Adaptation of Multimedia Presentations in Application Mobility <small><br /><i>Francisco Velázquez, University of Oslo</i></small></li>
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
