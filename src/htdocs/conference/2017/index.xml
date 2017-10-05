@@ -185,6 +185,7 @@ li {
     <li>Moar Better Tests<br /><small><i>Håvard Graff, Pexip</i></small></li>
     <li>So you think you can FEC?<br /><small><i>Mikhail Fludkov &amp; Erlend Graff, Pexip</i></small></li>
     <li>Linux Explicit DMA Fences in GStreamer<br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>Video over the Data Distribution Service (DDS) using GStreamer<br /><small><i>Stefan Kimmer, S2E Software, Systems and Control</i></small></li>
     <li>... and more (we still have a few free slots and are still accepting proposals!)<br /><small><i></i></small></li>
 <!--
     <li><br /><small><i></i></small></li>
@@ -207,6 +208,7 @@ li {
     <li>ipcpipeline - Split a pipeline into multiple processes <small><br /><i>George Kiagiadakis, Collabora</i></small></li>
     <li>GstPriQueue<sup><a href="https://github.com/pexip/gstreamer/commit/b466a7d0d930b359bccd05109d3a54824edbf867">1</a></sup> <small><br /><i>Erlend Graff, Pexip</i></small></li>
     <li>DAMPAT: Dynamic Adaptation of Multimedia Presentations in Application Mobility <small><br /><i>Francisco Velázquez, University of Oslo</i></small></li>
+    <li>gst-debugger is still a thing! <small><br /><i>Marcin Kolny, Amazon</i></small></li>
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
