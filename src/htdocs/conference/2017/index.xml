@@ -209,6 +209,9 @@ li {
     <li>GstPriQueue<sup><a href="https://github.com/pexip/gstreamer/commit/b466a7d0d930b359bccd05109d3a54824edbf867">1</a></sup> <small><br /><i>Erlend Graff, Pexip</i></small></li>
     <li>DAMPAT: Dynamic Adaptation of Multimedia Presentations in Application Mobility <small><br /><i>Francisco Velázquez, University of Oslo</i></small></li>
     <li>gst-debugger is still a thing! <small><br /><i>Marcin Kolny, Amazon</i></small></li>
+    <li>GStreamer-sharp: the revival of our .net bindings <small><br /><i>Thibault Saunier, Samsung</i></small></li>
+    <li>GStreamer support for RTSP protocol version 2.0 (the first implementation ever!) <small><br /><i>Thibault Saunier, Samsung</i></small></li>
+    <li>Pitivi 1.0 finally on sight! <small><br /><i>Thibault Saunier, Samsung</i></small></li>
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
