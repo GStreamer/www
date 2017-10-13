@@ -176,7 +176,7 @@ li {
     <li>GstShark profiling: a real-life example<br /><small><i>Michael Gruner, RidgeRun</i></small></li>
     <li>PipeWire<br /><small><i>Wim Taymans, RedHat</i></small></li>
     <li>Media Source Extensions on WebKit using GStreamer<br /><small><i>Enrique Ocaña González, Igalia</i></small></li>
-    <li>icamerasrc: a multi-pad source element<br /><small><i>Xi Cao, Intel</i></small></li>
+    <li><del>icamerasrc: a multi-pad source element<br /><small><i>Xi Cao, Intel</i></small></del></li>
     <li>GStreamer is in the air<br /><small><i>Jan Schmidt, Centricular</i></small></li>
     <li>Of GStreamer, containers, QA and fuzzing<br /><small><i>Edward Hervey, Centricular</i></small></li>
     <li><i>AOMedia AV1, NetVC, Daala – quest for the next-gen royalty-free video codec"</i><br /><small><i>tbd</i></small></li>
@@ -212,6 +212,7 @@ li {
     <li>GStreamer-sharp: the revival of our .net bindings <small><br /><i>Thibault Saunier, Samsung</i></small></li>
     <li>GStreamer support for RTSP protocol version 2.0 (the first implementation ever!) <small><br /><i>Thibault Saunier, Samsung</i></small></li>
     <li>Pitivi 1.0 finally on sight! <small><br /><i>Thibault Saunier, Samsung</i></small></li>
+    <li>Using GStreamer for UAV Computer Vision Applications in Consumer and Commercial Spaces <small><br /><i>Braden Scothern and Matt Stoker, Teal Drones</i></small></li>
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
