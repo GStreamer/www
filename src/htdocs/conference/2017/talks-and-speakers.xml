@@ -789,12 +789,16 @@ joined Igalia.
 </td></tr>
 
 <tr valign="top"><td>
-<a name="aomedia" id="aomedia"></a>
+<a name="av1" id="av1"></a>
 <p><b>
-AOMedia AV1, NetVC, Daala – quest for the next-gen royalty-free video codec. Thomas Daede, Mozilla
+AV1: The Quest is Nearly Complete. Thomas Daede, Mozilla
 </b></p>
 <p>
-(No abstract).
+AV1 has gained many features over the past year, and the end is finally
+in sight! This talk will cover the progress that has been made over the
+last year on this royalty-free video codec. It will also cover the
+remaining work to be done in preparing to deploy this new format across
+the web.
 </p>
 <p><i>
 Thomas Daede is a Video Codec Engineer at Mozilla.
