@@ -1,0 +1,470 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+    %site-entities;
+    ]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer Conference 2017 Schedule</title>
+<body lang="en-US" dir="LTR">
+
+<h1>GStreamer Conference 2017 Schedule</h1>
+<h2>Prague, Czech Republic, 21-22 October 2017</h2>
+<p><a href="&site;/conference">Back to conference main page</a></p>
+<p><a href="#friday">Schedule for Friday 20 October 2017</a></p>
+<p><a href="#saturday">Schedule for Saturday 21 October 2017</a></p>
+<p><a href="#sunday">Schedule for Sunday 22 October 2017</a></p>
+
+<!-- ARRIVAL DAY -->
+
+<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0">
+
+	<tr name="friday" id="friday">
+		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
+			<p align="center"><font color="white">Friday 20th of October 2017 (Arrival Day)</font></p>
+		</td>
+	</tr>
+
+	<tr valign="center" bgcolor="#F0F0F0">
+		<td><p>19.30-<br />late</p></td>
+		<td colspan="2">
+		<p align="center"><b><font size="+2">Social Event: Welcome drinks, food and pre-registration</font></b></p>
+
+  <p align="center">
+    <font size="+2">at the <a href="http://www.praguebeermuseum.cz/en/"><b><large>Prague Beer Museum</large></b></a></font><br/>
+    (<a href="https://goo.gl/maps/rSdx5pmhGd72">Smetanovo Nabrezi location</a>, near the Charles Bridge)
+  </p>
+  <p align="center">
+    This is a cash-only pub, credit cards are not accepted.
+  </p>
+  <p align="center">Food and drinks will be available for purchase:</p>
+  <p align="center"><a href="http://www.praguebeermuseum.cz/en/content?page=submenu&amp;XUBPAGEHL=2&amp;XUBPAGE=99">Food menu</a></p>
+  <p align="center"><a href="http://www.praguebeermuseum.cz/en/content?page=submenu&amp;XUBPAGEHL=2&amp;XUBPAGE=98">Drinks menu</a></p>
+  <p align="center">
+    We need to achieve a minimum spend, so if there's anything on the food menu
+    that appeals to you, we'd be grateful if you decided to have dinner there
+    as well.
+  </p>
+  <p align="center">
+    Please order at the table (not at the bar), so that all spending
+    is counted towards us.
+  </p>
+  <p align="center">
+    We have room reserved upstairs. There will be service at the tables.
+  </p>
+		</td>
+		<td><p>19.30-<br />late</p></td>
+	</tr>
+
+	<tr valign="top" style="border:none">
+		<td style="border:none"></td>
+		<td style="border:none" colspan="2"></td>
+		<td style="border:none"></td>
+	</tr>
+</table>
+
+<!-- DAY 1 -->
+
+<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0">
+
+	<tr name="saturday" id="saturday">
+		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
+			<p align="center"><font color="white">Saturday 21st of October 2017</font></p>
+		</td>
+	</tr>
+	<tr valign="top" bgcolor="#b0c4de">
+		<td width="5%"><p></p></td>
+		<td width="45%"><p align="center">Room 1</p></td>
+		<td width="45%"><p align="center">Room 2</p></td>
+		<td width="5%"><p></p></td>
+	</tr>
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>08.30</p></td>
+		<td colspan="2"><p align="center"><b>Registration</b></p></td>
+		<td><p>08.30</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p>09.00-<br />09.05</p></td>
+		<td colspan="2"><p align="center"><i>Opening and welcome to the 2017 GStreamer Conference</i><br /></p>
+		<p align="center"><small>Room 1</small></p>
+                </td>
+		<td><p>09.00-<br />09.05</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>09.10-<br />09.50</p></td>
+		<td colspan="2">
+		<!-- <p align="center"><i>Keynote</i></p> -->
+        <p align="center"><a href="&site;/conference/2017/talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a><br />Tim-Philipp Müller (__tim), Centricular</p>
+		<p align="center"><small>Room 1</small></p>
+		</td>
+		<td><p>09.10-<br />09.50</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>09.50-<br />10.00</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>09.50-<br />10.00</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>10.00-<br />10.30</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#zero-copy-pipelines">Implementing Zero-Copy pipelines in GStreamer</a><br />Nicolas Dufresne (ndufresne), Collabora</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#audiomixer">Audio Mixing with the new audiomixer element</a><br />Stefan Sauer (ensonic), Google</p>
+		</td>
+		<td><p>10.00-<br />10.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>10.30-<br />10.40</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>10.30-<br />10.40</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>10.40-<br />11.10</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#synchronised-playback">Synchronised Playback Made Easy</a><br />Arun Raghavan (FordPrefect)</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#fec">So you think you can FEC?</a><br />Erlend Graff &amp; Mikhail Fludkov, Pexip</p>
+		</td>
+		<td><p>10.40-<br />11.10</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>11.10-<br />11.40</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>11.10-<br />11.40</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>11.40-<br />12.20</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#gstreamer-webrtc">GStreamer WebRTC</a><br />Matthew Waters (ystreet00), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#aligning-audio-video">Aligning audio and video streams' start and end</a><br />Vivia Nikolaidou (vivia), ToolsOnAir</p>
+		</td>
+		<td><p>11.40-<br />12.00</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>12.20-<br />12.40</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>12.20-<br />12.40</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>12.40-<br />13.10</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#meson-macos-windows">Enabling Cross-Platform Development on macOS and Windows with Meson</a><br />Nirbheek Chauhan (nirbheek), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#photobooth">Photobooth: An exemplary multi-disciplinary project</a><br />Andreas Frisch (fraxinas), make.tv</p>
+		</td>
+		<td><p>12.40-<br />13.10</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>13.10-<br />14.10</p></td>
+		<td colspan="2"><p align="center"><b>Lunch Break</b></p></td>
+		<td><p>13.10-<br />14.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.10-<br />14.40</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#gst-mfx">GST-MFX: Full-Featured, High Performance and Cross-Platform GStreamer Plugins Using Intel Media SDK</a><br />Ishmael Sameen; Xavier Hallade, Intel</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#android-camera3">GStreamer in the world of Android Camera3 cameras</a><br />Olivier Crête (ocrete), Collabora</p>
+		</td>
+		<td><p>14.10-<br />14.40</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>14.40-<br />14.50</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>14.40-<br />14.50</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.50-<br />15.10</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#network-music">Network Music Performance: A case study using GStreamer</a><br />Kostas Tsioutas, Ionian University Corfu</p>
+		</td>
+		<td rowspan="2">
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#gstreamer-daemon">GStreamer Daemon - building a media server in under 30 minutes</a><br />David Soto, RidgeRun</p>
+		</td>
+		<td rowspan="2"><p>14.50-<br />15.35</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p>15.20-<br />15.40</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#video-over-dds">Video over the Data Distribution Service (DDS) using GStreamer</a><br />Stefan Kimmer, S2E Software, Systems and Control</p>
+		</td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>15.40-<br />16.10</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>15.40-<br />16.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.10-<br />16.50</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#pipewire">Pipewire</a><br />Wim Taymans (wtay), RedHat</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#mse-on-webkit">Media Source Extensions on WebKit using GStreamer</a><br />Enrique Ocaña González (eocanha), Igalia</p>
+		</td>
+		<td><p>16.10-<br />16.50</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>16.50-<br />17.00</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>16.50-<br />17.00</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>17.00-<br />18.30</p></td>
+		<td colspan="2"><p align="center"><i><a href="&site;/conference/2017/talks-and-speakers.html#lightning-talks">Lightning Talks</a></i><br /></p>
+		<p align="center"><small>Room 1</small></p>
+                </td>
+		<td><p>17.00-<br />18.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>18.30</p></td>
+		<td colspan="2">
+		<p align="center"><b>End of Day</b></p>
+		</td>
+		<td><p>18.30</p></td>
+	</tr>
+
+	<tr valign="center" bgcolor="#E0E0E0">
+		<td><p>19.30-<br />late</p></td>
+		<td colspan="2">
+		<p align="center"><b><font size="+2">Social Event: Drinks and Food</font></b></p>
+		<p align="center"><font size="+2">at the <a href="https://www.laloca.cz/en/contact"><b>La Loca Music Bar and Lounge</b></a></font></p>
+                <p align="center">at Odborů 278/4, Prague 2, near tram stop <i>Myslíkova</i> (<a href="https://goo.gl/maps/sHY4Wv14vzA2">map</a>)</p>
+		<p align="center">Both drinks and food will be provided, incl. vegetarian options (thanks to our sponsors!)</p>
+		<p align="center">Please don't forget to bring your badge.</p>
+		</td>
+		<td><p>19.30-<br />late</p></td>
+	</tr>
+
+	<tr valign="top" style="border:none">
+		<td style="border:none"></td>
+		<td style="border:none" colspan="2"></td>
+		<td style="border:none"></td>
+	</tr>
+</table>
+
+<br />
+<br />
+<br />
+
+<!-- DAY 2 -->
+
+<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0" name="sunday" id="sunday">
+	<tr>
+		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
+			<p align="center"><font color="white">Sunday 22nd of October 2017</font></p>
+		</td>
+	</tr>
+	<tr valign="top" bgcolor="#b0c4de">
+		<td width="5%"><p></p></td>
+		<td width="45%"><p align="center">Room 1</p></td>
+		<td width="45%"><p align="center">Arena</p></td>
+		<td width="5%"><p></p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>09.00-<br />10.00</p></td>
+		<td colspan="2"><p align="center"><b>Sleep in</b><br /><small>(note that we start later on Sunday, at 10am)</small></p></td>
+		<td><p>09.00-<br />10.00</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p><b>10.00</b>-<br />10.45</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#gst-shark-profiling">GstShark profiling: a real-life example</a><br />Michael Gruner, RidgeRun</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#moar-tests">Moar Better Tests</a><br />Håvard Graff (hgr), Pexip</p>
+		</td>
+		<td><p><b>10.00</b>-<br />10.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>10.45-<br />11.00</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>10.45-<br />11.00</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>11.00-<br />11.20</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#gst-vaapi">The GStreamer-VAAPI report</a><br />Víctor M. Jáquez L. (ceyusa), Igalia</p>
+		</td>
+		<td>
+                <!-- free -->
+		</td>
+		<td><p>11.00-<br />11.20</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>11.20-<br />11.50</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>11.20-<br />11.50</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>11.50-<br />12.30</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#rust">Oxidising GStreamer: Rust out your multimedia!</a><br />Sebastian Dröge (slomo), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof1">BoF / workshop #1</a></p>
+		</td>
+		<td><p>11.50-<br />12.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>12.30-<br />12.40</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>12.30-<br />12.40</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>12.40-<br />13.10</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#dma-fences">Linux Explicit DMA Fences in GStreamer</a><br />Nicolas Dufresne (ndufresne), Collabora</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#high-packet-rate-video">Preparing GStreamer for high packet-rate video streaming</a><br />Tim-Philipp Müller (__tim), Centricular</p>
+		</td>
+		<td><p>12.40-<br />13.10</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>13.10-<br />14.10</p></td>
+		<td colspan="2"><p align="center"><b>Lunch Break</b></p></td>
+		<td><p>13.10-<br />14.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.10-<br />14.40</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#efficient-video-on-embedded-gpu">Efficient Video Processing on Embedded GPU</a><br />Kammacher Tobias, Zurich University of Applied Sciences</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#vaapi-rust">VA-API rust-binding</a><br />Hyunjun Ko (zzoon), Igalia</p>
+		</td>
+		<td><p>14.10-<br />14.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>14.40-<br />14.50</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>14.40-<br />14.50</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.50-<br />15.40</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#aomedia">AOMedia AV1, NetVC, Daala – quest for the next-gen royalty-free video codec</a><br />Thomas Daede, Mozilla</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof2">BoF / workshop #2</a></p>
+		</td>
+		<td><p>14.50-<br />15.40</p></td>
+	</tr>
+
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>15.40-<br />16.10</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>15.40-<br />16.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.10-<br />16.50</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#in-the-air">GStreamer is in the air</a><br />Jan Schmidt (thaytan), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof3">BoF / workshop #3</a></p>
+		</td>
+		<td><p>16.10-<br />16.50</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>16.50-<br />17.10</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>16.50-<br />17.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>17.10-<br />17.50</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#containers-qa-fuzzing">Of GStreamer, containers, QA and fuzzing</a><br />Edward Hervery (bilboed), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof4">BoF / workshop #4</a></p>
+		</td>
+		<td><p>17.10-<br />17.50</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>17.55</p></td>
+		<td colspan="2"><p align="center"><i>Closing Session</i></p></td>
+		<td><p>17.55</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>18.00</p></td>
+		<td colspan="2">
+		<p align="center"><b>End of Conference <!-- - join us for drinks afterwards if you like FIXME --></b></p>
+		</td>
+		<td><p>18.00</p></td>
+	</tr>
+
+</table>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</body>
+</page>

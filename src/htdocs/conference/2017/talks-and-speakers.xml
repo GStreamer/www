@@ -1,0 +1,909 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+    %site-entities;
+    ]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer Conference 2017 Program</title>
+
+<body lang="en-US" dir="LTR">
+
+<h1>GStreamer Conference 2017 - speaker biographies and talk abstracts</h1>
+<h2>Prague, Czech Republic, 21-22 October 2017</h2>
+<p><a href="&site;/conference">Back to conference main page</a></p>
+<p><a href="schedule.html">Back to conference timetable</a></p>
+
+<table width="100%" border="0" bordercolor="#C0C0C0" cellpadding="20" cellspacing="2">
+
+<tr valign="top"><td>
+<a name="state-of-the-union" id="state-of-the-union"></a>
+<p><b>
+GStreamer State of the Union. Tim-Philipp Müller (__tim), Centricular
+</b></p>
+<p>
+This talk will take a bird's eye look at what's been happening in and around
+GStreamer in the last twelve months and look forward at what's next in the
+pipeline.
+</p>
+<p><i>
+Tim Müller is a GStreamer core developer and maintainer, and backseat release
+manager. He works for Centricular Ltd, an Open Source consultancy with a
+focus on GStreamer, cross-platform multimedia and graphics, and embedded
+systems. Tim lives in Bristol, UK.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="zero-copy-pipelines" id="zero-copy-pipelines"></a>
+<p><b>
+Implementing Zero-Copy pipelines in GStreamer. Nicolas Dufresne (ndufresne), Collabora
+</b></p>
+<p>
+With the wide variety of hardware and their various restrictions,
+implementing zero-copy in GStreamer can be difficult. In this talk, I
+would like revisit the mechanisms in place to help implement such
+pipeline and explain how this is being used in various context. I will
+also try to explain some of the well known and recently found traps
+that can lead to difficult to debug issues. This talk is addressed to
+plugin developers interested in enabling zero-copy while keeping
+GStreamer flexibility.
+</p>
+<p><i>
+Nicolas Dufresne is a Principal Multimedia Engineer at Collabora. Based
+in Montréal, he was initially a generalist developer with background in
+STB development. Nicolas started in 2011 contributing to GStreamer
+Multimedia Framework adding infrastructure and primitives to support
+accelerated upload of buffers to GL textures. Today, Nicolas is
+implicated in both GStreamer and Linux Media communities to help create
+a solid support for CODEC on Linux.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="audiomixer" id="audiomixer"></a>
+<p><b>
+Audio Mixing with the new audiomixer element. Stefan Sauer (ensonic), Google
+</b></p>
+<p>
+For a long time adder has been the only audio mixing solution in GStreamer.
+3 years ago the work on the new aggregator based elements started. This talk
+will describe the feature-space for audio mixing and report on recent
+improvements. I will compare the audioixer with the traditional adder to
+explain how both approach differ.
+</p>
+<p><i>
+Stefan is a software engineer working for Google on build infrastructure tools.
+In the past he was working for Nokia on the multimedia stack used on their
+maemo/meego internet tablets and phones. In his free time his is contributing
+to GStreamer, other GNOME projects (e.g. gtk-doc) and working on his music
+editor buzztrax. He has a PhD in Human Computer Interaction from the Technical
+University of Dresden/Germany. Stefan now lives in Munich/Germany with his wife
+and his two kids.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="synchronised-playback" id="synchronised-playback"></a>
+<p><b>
+Synchronised Playback Made Easy. Arun Raghavan (FordPrefect)
+</b></p>
+<p>
+Over the last few years, GStreamer has seen several improvements to
+achieve fairly tight synchronised playback across devices on a network.
+</p><p>
+Despite this, using this in applications requires a fair amount of
+knowledge of GStreamer itself, which is not ideal. The gst-sync-server
+library aims to address this gap, making it easy to write applications
+such as video walls, multi-room audio, and more.
+</p><p>
+In this talk, I'll cover the motivation for this library, some of the
+design choices that make it extensible, and some comments on what else
+we need to make writing these apps extremely easy.
+</p>
+<p><i>
+Arun is a maintainer of the PulseAudio audio server and a GStreamer
+contributor. He enjoys working in the lower layers of the system stack,
+long walks on the beach, and thinking about the impact of modern
+type-safe languages on software development.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="fec" id="fec"></a>
+<p><b>
+So you think you can FEC? Erlend Graff &amp; Mikhail Fludkov, Pexip
+</b></p>
+<p>
+Forward error correction (FEC) is a seemingly simple idea when the sender
+adds redundant data during transmission for the receiver to be able to recover
+from packet loss.
+</p><p>
+This talk covers challenges faced when implementing FEC for RTP media
+in the GStreamer eco system; ranging from an architectural discussion on how to
+implement support for standards such as ULPFEC and Flux FEC (used in WebRTC) and
+integrate it with GstRtpBin, down to interesting aspects of the Reed Solomon
+algorithm (used in Skype).
+</p>
+<p><i>
+Mikhail Fludkov is originally from a small Siberian town, Bratsk. He graduated
+from Saint-Petersburg State Polytechnic University with a masters degree in
+computer science. Worked on H.264 &amp; H.265 codecs in Vanguard Software Solutions,
+in Saint Petersburg. 3 years ago moved to Oslo after joining Pexip where got
+acquainted with GStreamer framework for the first time. Worked on GStreamer
+elements supporting various standards for Forward Error Correction and on
+network resilience in general. Participated in porting Pexip media stack from
+GStreamer 0.10 to GStreamer 1.x. In his free time bakes sourdough bread and
+plays computer games.
+</i></p>
+<p><i>
+Erlend Graff is a software engineer with an MSc degree in computer science from
+the University of Tromsø, Norway. He currently works for Pexip, where he's been
+having fun with various video conferencing related technologies for more than
+two years.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="gstreamer-webrtc" id="gstreamer-webrtc"></a>
+<p><b>
+GStreamer WebRTC. Matthew Waters (ystreet00), Centricular
+</b></p>
+<p>
+WebRTC. Your web browser supports it (or soon will). Let's use GStreamer
+to stream with web browsers!
+</p><p>
+A look into the concepts of WebRTC, the current ecosystem, and a
+showcase of a new native implementation for transporting media adhering
+to the WebRTC specifications covering a wide variety of use cases from
+peer-to-peer streaming, gateways, and streaming servers.
+</p>
+<p><i>
+Matthew Waters is the principal maintainer of the OpenGL integration with
+GStreamer from the start of GStreamer 1.x and has integrated GStreamer's
+OpenGL library with many other decoding, encoding and rendering technologies.
+He's also played around extensively with Vulkan, a new high-performance,
+cross-platform 3D graphics API. Lately he's been working on a new WebRTC stack
+for GStreamer.
+</i></p>
+<p><i>
+Matthew is a Multimedia and Graphics developer for Centricular Ltd, an Open
+Source consultancy focusing on GStreamer, embedded systems and cross-platform
+multimedia and graphics. 
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="aligning-audio-video" id="aligning-audio-video"></a>
+<p><b>
+Aligning audio and video streams' start and end. Vivia Nikolaidou (vivia), ToolsOnAir
+</b></p>
+<p>
+Sometimes, even though we get audio and video from sources of dubious 
+quality, they must be configured to start and end at exactly the same 
+time. This is extremely non-trivial in the GStreamer architecture, where 
+they run in completely different threads (instead of, say, packaging 
+audio together with video), and requires several tricky tweaks in 
+several parts of the pipeline. In my talk, I'd like to illustrate how 
+this is done in the ToolsOnAir media engine.
+</p>
+<p><i>
+Paraskevi Nikolaidou (also known as Vivia) is currently working as a GStreamer
+developer. She has been active in the Open Source community and has
+participated in various Free and Open Source projects since 2004 when she
+joined the Agent Academy project. Vivia has obtained her PhD in Electrical
+and Computer Engineering from the Aristotle University of Thessaloniki in 2011,
+where she worked on multi-agent systems as well as data mining methods in
+supply chain management. Her open source contributions range from SCCORI Agent
+which was part of her PhD studies, to her contributions to the GStreamer
+multimedia framework, passing by her involvement with the aMSN project during
+her spare time. She lives in Thessaloniki, Greece, where she is currently
+working remotely for ToolsOnAir, a company based in Austria that works with
+broadcast production software, working on their GStreamer-based platform. She
+likes ducks, green tea, learning foreign languages and playing the flute.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="meson-macos-windows" id="meson-macos-windows"></a>
+<p><b>
+Enabling Cross-Platform Development on macOS and Windows with Meson. Nirbheek Chauhan (nirbheek), Centricular
+</b></p>
+<p>
+Historically, GStreamer has relied on the Cerbero build system for
+continuous integration as well as binary releases for various
+platforms, and is the only supported way to build GStreamer on Windows
+and macOS.
+</p><p>
+However:
+<ol>
+<li>Autotools (and hence Cerbero) can only build with MinGW on Windows
+and almost everyone seems to want to build with Visual Studio.</li>
+<li>Doing GStreamer development with Cerbero is a terrible hack, and
+the method itself is undocumented.</li>
+</ol>
+</p><p>
+This means we have a very high barrier to entry for Windows and macOS
+developers, and as a result our platform-specific elements have lagged
+behind our Linux-specific and platform-agnostic ones.
+</p><p>
+In this talk, I will talk about how having Meson support in GStreamer
+allows Cerbero to build it with the MSVC toolchain on Windows and how
+Meson's subproject feature is being used in a new cross-platform
+gst-uninstalled implementation to empower macOS and Windows
+developers.
+</p><p>
+I will also talk about the work we're doing to let Windows developers
+build GStreamer and hack on it from inside Visual Studio.
+</p>
+<p><i>
+Nirbheek Chauhan writes software and hacks on GStreamer for a living and for
+fun. In recent times and despite his best efforts, he accidentally became a
+build system expert and continues to contribute to the Meson build system as
+a core contributor. When not fixing broken builds, he works on interesting
+WebRTC applications using GStreamer and complains about how slow Rust
+adoption is.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="photobooth" id="photobooth"></a>
+<p><b>
+Photobooth: An exemplary multi-disciplinary project. Andreas Frisch (fraxinas), make.tv
+</b></p>
+<p>
+A Photobooth is an automatic unit that takes photos with a DSLR camera, shows 
+a preview on a touchscreen and allows users to print them. The Schaffenburg 
+Hackerspace designed and built such a machine from scratch.
+</p><p>
+In this presentation, I will talk about our motivation for starting such a big 
+hobbyist project. Covered topics include:
+<ul>
+<li>evaluation + selection of the used hardware and software components</li>
+<li>building the wooden case and 3d-printing parts</li>
+<li>using Arduino for effect lighting</li>
+<li>setting up the camera and external flash</li>
+<li>focus on the gstreamer- / gtk-based software</li>
+<li>demonstration</li>
+<li>problems and prospects</li>
+</ul>
+</p>
+<p><i>
+Andreas aka "Fraxinas" in the FOSS world, graduated from the University of
+Applied Sciences in Aschaffenburg with a degree in electrical engineering and
+information technology. Formerly employed by Dream Multimedia, the company
+which released the first Linux-based STB called "Dreambox", he now works for
+SMT make.tv, with their Live Video Cloud. Specialized in Embedded Linux,
+GStreamer programming and streaming. Founding member of Aschaffenburg's
+Repair Café and monthly television appearance as the "Repairfox" in Germany's
+ARD Buffet. Passionately tinkering in the Schaffenburg Hacker/Makerspace.
+LGBT Youth activist, musician and Japanese learner.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="gst-mfx" id="gst-mfx"></a>
+<p><b>
+GST-MFX: Full-Featured, High Performance and Cross-Platform GStreamer Plugins Using Intel Media SDK. Ishmael Sameen; Xavier Hallade, Intel
+</b></p>
+<p>
+This talk presents GST-MFX, a set of GStreamer plugins that uses
+Intel Media SDK (MSDK) to perform high performance decode, encode, video
+post-processing (VPP) and rendering for both Windows and Linux platforms.
+</p><p> 
+GST-MFX addresses a key segment of application developers who wish to develop
+media-based cross-platform applications for both Windows and Linux while
+getting the very best performance from utilizing MSDK, which in itself is a
+sophisticated, proprietary media API that is highly-optimized for Intel's
+platforms starting from 3rd generation Intel Core processors. MSDK is also
+very well-supported and has comprehensive documentation on its capabilities
+all the way down to low-level codec performance finetuning.
+</p><p> 
+We first intend to talk about the motivation of this work, and then the very
+promising value it brings to the table to the GStreamer ecosystem. We then
+discuss some of best features that GST-MFX has, and compare it to existing
+alternative GST-MSDK implementations, as well as GST-VAAPI.
+</p><p> 
+Finally, we will briefly summarize the architecture and implementation
+details which allowed us to achieve the current state of GST-MFX, and where
+it stands in terms of production-level software. You can check out the latest
+ongoing development of GST-MFX from here:
+</p><p>
+<ul>
+<li>https://github.com/01org/gstreamer-media-SDK/tree/topic_linux_and_window</li>
+<li>https://github.com/ishmael1985/gstreamer-media-SDK</li>
+<li>https://github.com/ph0b/gstreamer-media-SDK</li>
+</ul>
+</p>
+<p><i>
+Ishmael Sameen is a former Intel software developer and currently a
+PhD research student at University Paris XIII, whose main interests lie in
+doing cool stuff and applying real-world solutions in the area of image and
+video processing. He has worked (and is still working with a few) with various
+technologies such as nVidia CUDA, Altera FPGAs, FFMPEG, QT, Intel Media SDK,
+etc., but only recently touched GStreamer two years ago for a customer
+requirement (after trying to unsuccessfully convince them to use FFMPEG).
+Since then, he enjoys working with the GStreamer framework and learning from
+their codebase, even after having left Intel to pursue his research interests
+in neural networks for computer vision.
+</i></p>
+<p><i>
+Xavier Hallade is an Application Engineer at Intel, focused on improving
+3rd party applications performance and features for upcoming PC platforms.
+He’s been helping customers integrate video hardware acceleration in their
+Windows applications several times over the past year, and decided to scale
+this work by contributing to the GStreamer framework.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="android-camera3" id="android-camera3"></a>
+<p><b>
+GStreamer in the world of Android Camera3 cameras. Olivier Crête (ocrete), Collabora
+</b></p>
+<p>
+New SoCs include camera modules that comply with the Android Camera3
+API, this includes multiple features that are not currently well
+handled by GStreamer. I will propose a roadmap that can allow us to
+support those.
+</p>
+<p><i>
+Olivier Crête has been involved in free software since 2000. He has been
+involved in GNOME since 2003 and in Gentoo from 2003 to 2012. He currently
+works for Collabora, where he leads the multimedia team. He's been an active
+GStreamer developer since 2007, first working on VoIP and video calls, but
+lately he's been working on all kinds of multimedia projects. 
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="network-music" id="network-music"></a>
+<p><b>
+Network Music Performance: A case study using GStreamer. Kostas Tsioutas, Ionian University Corfu
+</b></p>
+<p>
+Network Music Performance is happening when two or more musicians
+perform their music using their internet connection and stream their
+audio through the network as everyone of them is placed in his own
+residence. We implemented such experiments using Gstreamer open framework
+over the University Campus Network and we measured audio delay using
+varius compression codecs.
+</p>
+<p><i>
+Konstantinos Tsioutas is a PhD Candidate at the Audio and Visual Arts
+Department of Ionian University. His thesis concerns the QoS of Network
+Music Performance Service and audio compression delay issues.  He holds a
+master's degree in the field of telecommunications and networking and a
+master's degree in the field of audio design and composition. 
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="gstreamer-daemon" id="gstreamer-daemon"></a>
+<p><b>
+GStreamer Daemon - building a media server in under 30 minutes. David Soto, RidgeRun
+</b></p>
+<p>
+GStreamer is modular, extensible and flexible - but not easy to properly use
+the GStreamer API. GStreamer provides all the necessary capabilities to build
+a fully functional production quality multimedia server, but getting it right
+requires good framework understanding, GLib/GObject handling and in most cases
+good debugging skills. A bad dynamic pipeline handling can result in unexpected
+behaviours or even complete pipeline stalls. GStreamer Daemon is an OpenSource
+project by Ridgerun that encapsulates GStreamer complexity in a standalone
+process, exposing a simple high-level API for real-time multimedia handling. 
+</p><p>
+Pipelines can be created in a fashion similar to gst-launch. decoupling the
+streamer media logic from the application logic, allows you to focus on what
+makes your product unique.
+</p><p>
+This talks demonstrates a fully functional media server being created in under
+30 minutes using GStreamer Deamon. The server will be built in a
+NVIDIA Tegra X1 embedded platform using the built-in HW accelerated codecs.
+The media server state will be modified at runtime, along with different
+streams being safetly activated/deactivated, without the need of transcoding
+nor interrupting the rest of the streams. Camera capture, video recording,
+taking snapshots, network streaming and playback trick-play are easy using
+GStreamer Daemon.
+</p>
+<p><i>
+David Soto is the Engineering Manager at RidgeRun and a senior embedded
+software engineer working on Linux and GStreamer since 2010. David has a
+master degree in digital signal processing and loves looking for efficient
+ways to get embedded systems running multimedia, computer vision and machine
+learning algorithms for broadcasting, security, consumer and medical products. 
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="video-over-dds" id="video-over-dds"></a>
+<p><b>
+Video over the Data Distribution Service (DDS) using GStreamer. Stefan Kimmer, S2E Software, Systems and Control
+</b></p>
+<p>
+The Data Distribution Service is an emerging middleware that is used more and
+more in industry. An advantage is that for example multiple receivers can
+subscribe to one sender letting the middleware take care of the data
+distribution. The communication can be configured in so called Quality
+of Service settings to allow the adaption of the system to the network
+structure to where the application is deployed without recompiling. It is
+for example also possible to have multiple senders of video where one these
+is the preferred publisher and others are redundant and take over in case
+the preferred one fails. Multiple implementations of the DDS standard
+from various vendors exists thereunder also community editions that
+are open source.
+</p><p>
+We developed a demonstration application that showcases the usage of
+GStreamer with DDS in a cross-platform fashion. This allows the development
+and deployment of the application for Windows and embedded Linux from 
+host-system. As such a redundant pair of camera devices can distribute
+the video of a wireless network to multiple receivers using different
+operating systems.
+</p><p>
+More infos: <a href="http://www.s2e-systems.com/our-projects/videooverdds/">http://www.s2e-systems.com/our-projects/videooverdds/</a>.
+</p>
+<p><i>
+Stefan was working with the European Space Agency (ESA) where he used GStreamer
+to develop the transport of video from earth to space. Meanwhile he founded his
+own company S2E Software, Systems and Control together with a colleague also
+from ESA.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="pipewire" id="pipewire"></a>
+<p><b>
+PipeWire. Wim Taymans (wtay), RedHat
+</b></p>
+<p>
+PipeWire is a multimedia API that makes it easier to build distributed
+multimedia pipelines. It was originally built to provide shared access to
+cameras but it can also be used to build a variety of multimedia services
+such as a sound server.
+</p><p>
+PipeWire is built on top of a new low-level plugin API (SPA for Simple Plugin
+API) that is designed to be simple end suitable for hard real-time processing.
+</p><p>
+In this presentation I want to talk about the design ideas, the current status
+and the future plans for PipeWire. I will also give a small demo.
+</p>
+<p><i>
+Wim Taymans has a computer science degree from the Katholieke Universiteit
+Leuven, Belgium. He co-founded the GStreamer multimedia framework in 1999.
+Wim Taymans is a Principal Software Engineer at Red Hat, responsible for
+various multimedia packages and is currently working on PipeWire.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="mse-on-webkit" id="mse-on-webkit"></a>
+<p><b>
+Media Source Extensions on WebKit using GStreamer. Enrique Ocaña González (eocanha), Igalia
+</b></p>
+<p>
+The Media Source Extensions HTML5 specification allows JavaScript to generate 
+media streams for playback and lets the web page have more control on complex 
+use cases such as adaptive streaming.
+</p><p>
+This talk starts with a brief introduction about the motivation and basic 
+usage of MSE. Next we will show a design overview of the WebKit implementation 
+of the spec. Then we'll go through the iterative evolution of the GStreamer 
+platform-specific parts, as well as its implementation quirks and challenges 
+faced during the development. The talk continues with a demo, some clues about 
+the future work and a final round of questions.
+</p>
+<p><i>
+Enrique is a Software Engineer at Igalia with experience in multimedia, open 
+source web engines and embedded devices. He has several contributions to the 
+WebKit and GStreamer projects and has been working for 3 years on topics 
+related multimedia in GStreamer-based WebKit ports, with a special focus on 
+Media Source Extensions.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="lightning-talks" id="lightning-talks"></a>
+<p><b>
+Lightning Talks
+</b></p>
+<p>
+Lightning talks are short talks by different speakers about a range
+of different issues. We have the following talks scheduled so far
+(in no particular order):
+    <ul style="line-height:2.0;">
+    <li>A big year for Video4Linux2 support in GStreamer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>GstGPGPU - GstCUDA and GstOpenCL <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
+    <li>Playbin3/decodebin3 status update <small><br /><i>Edward Hervey, Centricular</i></small></li>
+    <li>GStreamer and OpenCV using a GstOpenCV element <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
+    <li>RTP Bundle Support <small><br /><i>Håvard Graff, Pexip</i></small></li>
+    <li>ipcpipeline - Split a pipeline into multiple processes <small><br /><i>George Kiagiadakis, Collabora</i></small></li>
+    <li>GstPriQueue<sup><a href="https://github.com/pexip/gstreamer/commit/b466a7d0d930b359bccd05109d3a54824edbf867">1</a></sup> <small><br /><i>Erlend Graff, Pexip</i></small></li>
+    <li>DAMPAT: Dynamic Adaptation of Multimedia Presentations in Application Mobility <small><br /><i>Francisco Velázquez, University of Oslo</i></small></li>
+    <li>gst-debugger is still a thing! <small><br /><i>Marcin Kolny, Amazon</i></small></li>
+    <li>GStreamer-sharp: the revival of our .net bindings <small><br /><i>Thibault Saunier, Samsung</i></small></li>
+    <li>GStreamer support for RTSP protocol version 2.0 (the first implementation ever!) <small><br /><i>Thibault Saunier, Samsung</i></small></li>
+    <li>Pitivi 1.0 finally on sight! <small><br /><i>Thibault Saunier, Samsung</i></small></li>
+    <li>Using GStreamer for UAV Computer Vision Applications in Consumer and Commercial Spaces <small><br /><i>Braden Scothern and Matt Stoker, Teal Drones</i></small></li>
+    <li>Alternative RTMP implementation<br /><small><i>Jan Alexander Steffens, make.tv</i></small></li>
+    <li>...</li>
+    <li><i>Your talk here?</i></li>
+    </ul>
+</p>
+<p>
+<b>Lightning talk speakers</b>, please export your slides into a PDF file and
+either send it to Tim by e-mail (you will receive an e-mail from him about your
+lightning talk before the event) or have it ready on a usb stick before the
+start of the lightning talks on Saturday. The idea is that everyone uses the
+same laptop so that we don't waste time hooking up laptops to the projector
+and configuring them. There is no particular order or schedule for the talks.
+When a speaker is called up, we will also mention who is up next. Every speaker
+has up to ca. 5 minutes for their talk. There will be a countdown timer
+running. It's not possible to go over time, you'll have to finish up so that
+everyone has an opportunity to present their talk. If you don't want to use up
+the full 5 minutes, that's fine as well. 
+</p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="gst-shark-profiling" id="gst-shark-profiling"></a>
+<p><b>
+GstShark profiling: a real-life example. Michael Gruner, RidgeRun
+</b></p>
+<p>
+GstShark is a profiling and benchmarking tool for GStreamer pipelines. GstShark
+is an ongoing OpenSource project by RidgeRun which serves as a front-end for
+the GstTrace subsystem.  GstShark presents raw traces as higher level data
+such as scheduling and processing time, bitrate, framerate, CPU usage and
+much more. This data is saved in a standard low-footprint format designed for
+efficient tracing.  The captured data can be plotted and visualized using the
+tools included in the project, as well as third party tools. GstShark is the
+result of years of experience tuning and optimizing GStreamer pipelines
+in resource-limited systems and is key tool RidgeRun engineers use to dispel
+the myth that GStreamer is slower that an inflexible custom created
+streaming media application.
+</p><p>
+In this session GstShark will be used to optimize a low-performance WebRTC
+streaming pipeline in an NVidia Tegra embedded platform. It will be shown
+how the different measurements can be used to identify processing bottlenecks,
+sources of latency and general scheduling problems. By using comprehensive
+data plots, the pipeline internals are exposed, revealing information before
+hidden and allowing you to tune pipelines in a more informed, deterministic
+way. 
+</p>
+<p><i>
+Michael Grüner is the Tech Leader at RidgeRun, a GNU/Linux based embedded
+software development company. GStreamer and multimedia have been his main
+areas of focus. Michael has a masters degree in Digital Signal Processing
+and, among other interests, likes OpenGL, CUDA, OpenCL. Michael is always
+looking for ways to implement efficient, real-time DSP algorithms using
+GStreamer on embedded platforms.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="moar-tests" id="moar-tests"></a>
+<p><b>
+Moar Better Tests. Håvard Graff (hgr), Pexip
+</b></p>
+<p>
+"<i>The quality of testing in a codebase is directly proportional to the quality of its functionality</i>" - Albert Einstein.
+</p><p>
+This talk will discuss how to write short, concise tests for complex scenarios
+while maintaining readability. We will show concrete examples of how to use
+GstHarness efficiently in different situations, testing a src/sink, a
+muxer/demuxer, an encoder/decoder etc, and how to further harness harnesses
+to create even better test infrastructure.
+</p>
+<p><i>
+Håvard Graff has worked with GStreamer professionally for 9 years in Tandberg,
+Cisco and now Pexip. Developing video conferencing systems like Movi, Jabber
+Video and Pexip Infinity using GStreamer as the backbone. Was instrumental
+in premiering GStreamer in the AppStore. Still pretends to be a musician
+with programming as a hobby.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="gst-vaapi" id="gst-vaapi"></a>
+<p><b>
+The GStreamer-VAAPI report. Víctor M. Jáquez L. (ceyusa), Igalia
+</b></p>
+<p>
+GStreamer-VAAPI is a set of GStreamer elements (vaapisink, vaapipostroc, and a
+set of encoders and decoders) using the VA-API software stack that aims for
+hardware accelerated video processing.
+</p><p>
+The purpose of this talks is to show the progress done along this last year
+and discuss with the community the following tasks.
+</p>
+<p><i>
+Víctor started to work in GStreamer in 2006, on an initial implementation
+of GStreamer elements wrapping OMX components. Later on, he moved to other
+related projects such as the WebKit, Ekiga, etcetera. He later returned
+to the GStreamer arena, helping with gstreamer-vaapi.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="rust" id="rust"></a>
+<p><b>
+Oxidising GStreamer: Rust out your multimedia! Sebastian Dröge (slomo), Centricular
+</b></p>
+<p>
+As a continuation of my talk last year, this year I will give an update
+of what happened with Rust support for GStreamer based applications and
+plugins.
+</p><p>
+Now is the right time to get started with writing your GStreamer code
+in Rust instead of C/C++ or even Python/C# for improved safety &amp;
+productivity and hopefully fun writing the code, while still having the
+high performance and low overhead usually only known from C/C++ and
+being able to run your code on small embedded devices.
+</p><p>
+While learning a new language might not seem worthwhile and there are
+just too many languages anyway, I will show you why you should care and
+why the language seems like the perfect fit for multimedia related
+applications and many other embedded use cases. And how you can get
+started, including some short code examples.
+</p>
+<p><i>
+Sebastian Dröge is a Free Software developer and one of the GStreamer
+maintainers and core developers. He has been involved with the project
+since more than 10 years now. He also contributes to various other
+Free Software projects, like Debian, GNOME and WebKit. While finishing
+his master's degree in computer sciences at the University of Paderborn
+in Germany, he started working as a contractor for GStreamer and related
+technologies. Sebastian is one of the founders of Centricular, a company
+providing consultancy services, where he's working from his new home in
+Greece on improving GStreamer and the Free Software ecosystem in general.
+</i></p>
+<p><i>
+Apart from multimedia related topics, Sebastian has an interest in digital
+signal processing, programming languages, machine learning, network protocols
+and distributed systems. 
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="dma-fences" id="dma-fences"></a>
+<p><b>
+Linux Explicit DMA Fences in GStreamer. Nicolas Dufresne (ndufresne), Collabora
+</b></p>
+<p>
+This talk will cover the use of the explicit DMA Fence in multimedia
+pipelines and how these fences can be used to improve smoothness and
+reduce latency in your streaming application. We will also outline how
+we plan to integrate these new kernel object in GStreamer framework.
+</p>
+<p><i>
+Nicolas Dufresne is a Principal Multimedia Engineer at Collabora. Based
+in Montréal, he was initially a generalist developer with background in
+STB development. Nicolas started in 2011 contributing to GStreamer
+Multimedia Framework adding infrastructure and primitives to support
+accelerated upload of buffers to GL textures. Today, Nicolas is
+implicated in both GStreamer and Linux Media communities to help create
+a solid support for CODEC on Linux.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="high-packet-rate-video" id="high-packet-rate-video"></a>
+<p><b>
+Preparing GStreamer for high packet-rate video streaming. Tim-Philipp Müller (__tim), Centricular
+</b></p>
+<p>
+As the broadcast and film industry moves towards IP-based
+workflows such as SDI-over-IP, with ever-increasing video
+resolutions, frame rates and pixel depths, data rates in
+the tens of Gbps and packet rates in the hundreds of
+thousands if not millions are no longer inconceivable,
+but rather inevitable.
+</p><p>
+Similarly, the emergence of RTP-based WebRTC as de-facto
+standard for live streaming to web browsers means streaming
+media at high bitrates to hundreds or thousands of clients
+will be increasingly common or in demand.
+</p><p>
+This poses challenges pretty much everywhere in the
+multimedia pipeline, from capture to processing to
+sending.
+</p><p>
+This talk will look at the demands of processing
+media streams with a very high packet rate in
+GStreamer and will propose some solutions.
+</p>
+<p><i>
+Tim is a GStreamer core developer and maintainer, and backseat release
+manager. He works for Centricular Ltd, an Open Source consultancy with a focus
+on GStreamer, cross-platform multimedia and graphics, and embedded systems.
+Tim lives in Bristol, UK.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="efficient-video-on-embedded-gpu" id="efficient-video-on-embedded-gpu"></a>
+<p><b>
+Efficient Video Processing on Embedded GPU. Kammacher Tobias, Zurich University of Applied Sciences
+</b></p>
+<p>
+Learn how to develop and test a 4K video processing and streaming
+application on the NVIDIA Jetson TX1/TX2 embedded platform with
+GStreamer. To achieve real-time video processing, the diverse processing
+resources of this high-performance embedded architecture need to be
+employed optimally.
+</p><p>
+The heterogeneous system architecture allows capturing, processing, and
+streaming of video with a single chip. The main challenges lie in the
+optimal utilization of the different hardware resources of the Jetson TX1
+(CPU, GPU, dedicated hardware blocks) and in the extensive software stack
+(from Linux drivers to GStreamer application).
+</p><p>
+We'll discuss variants, identify bottlenecks, and show the interaction
+between hardware and software. Simple capturing and displaying video from
+the built-in camera can be achieved using out-of-the-box methods. However,
+for capturing 4K from HDMI we had to dig into the documentation, rewrite the
+drivers for the Video capture system, write a driver for an external HDMI to
+CSI converter and figure out efficient zero-copy methods. GPU-based
+enhancements were developed and integrated for real-time video processing
+tasks (scaling and video mixing).
+</p><p>
+Blog post about the drivers: <a href="https://blog.zhaw.ch/high-performance/2016/06/01/open-source-driver-for-hdmi2csi-module-released/​">https://blog.zhaw.ch/high-performance/2016/06/01/open-source-driver-for-hdmi2csi-module-released/​</a>
+</p>
+<p><i>
+Tobias Kammacher has worked for the last three years in the High Performance
+Multimedia and Data Acquisition Research Group in the Institute of Embedded
+Systems at Zurich University of Applied Sciences. He and his colleagues carry
+out research projects with industry partners, focused on implementing signal
+and video processing applications on SoC, FPGA, and mixed architectures.
+Tobias received his B.S. in electrical engineering and M.S. in engineering.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="vaapi-rust" id="vaapi-rust"></a>
+<p><b>
+VA-API rust-binding. Hyunjun Ko (zzoon), Igalia
+</b></p>
+<p>
+GStreamer VA-API has been supporting to use H/W accelleration when 
+you're enjoying video playback, streaming and even transcoding on Linux.
+This project has been developed actively and still keep improving its 
+features/performance/stability.
+</p><p>
+In this talk I will give an overview of the current status of VA-API 
+Binding to Rust, my experience with Rust so far, what problems I 
+encountered and what is already possible today.
+</p><p>
+In the end, we're going to talk about how to integrate into 
+gst-plugins-rs with showing demo of vaapisink plugin written by Rust as 
+an example.
+</p>
+<p><i>
+Hyunjun started to work on GStreamer in 2013.
+He had been working on implementation of Wi-Fi Display using GStreamer 
+and now he's a regular contributor of GStreamer VA-API project since he 
+joined Igalia.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="aomedia" id="aomedia"></a>
+<p><b>
+AOMedia AV1, NetVC, Daala – quest for the next-gen royalty-free video codec. Thomas Daede, Mozilla
+</b></p>
+<p>
+(No abstract).
+</p>
+<p><i>
+Thomas Daede is a Video Codec Engineer at Mozilla.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="in-the-air" id="in-the-air"></a>
+<p><b>
+GStreamer is in the air. Jan Schmidt (thaytan), Centricular
+</b></p>
+<p>
+It's everywhere you look around. At least, everywhere
+I look around - I may be atypical.
+</p><p>
+In 2013, I gave a presentation titled "My GStreamer-Enabled Home".
+Since the conference is re-visiting the past this year in Prague,
+I thought I would too. So this year, I'm talking about a bunch
+of best ways I've used or seen people using GStreamer.
+</p><p>
+Come along and see how GStreamer is in the air, in
+every sight and every sound (*) (**)
+</p><p>
+* Apologies to John Paul Young.
+</p><p>
+** GStreamer may not actually be in every sight and every sound (yet).
+</p>
+<p><i>
+Jan Schmidt has been a GStreamer developer and maintainer since 2002. He is
+responsible for GStreamer's DVD support, and primary author of the Aurena
+home-area media player. He lives in Albury, Australia and keeps sheep,
+chickens, ducks and more fruit trees than is sensible. In 2013 he co-founded
+Centricular - a consulting company for Open Source multimedia and graphics
+development.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="containers-qa-fuzzing" id="containers-qa-fuzzing"></a>
+<p><b>
+Of GStreamer, containers, QA and fuzzing. Edward Hervery (bilboed), Centricular
+</b></p>
+<p>
+While some would say that containers are just "yet-another" linux
+system, the way they are used and the opportunities involved provide
+interesting challenges for the GStreamer project.
+</p><p>
+In this talk, we will go over how the re-usability, reproducibility
+and fast startup time of containers help the GStreamer project. In a
+first step we will look at the maintainer/contributor side of things,
+with the Continuous Integration setup and providing high(er) Quality
+Assurance. This will essentially see how one can automate as much as
+possible with containers to provide easier/faster testing environment
+and regression detection.
+</p><p>
+In a second step we will go over what is needed to make the most out
+of containers, such as providing the smallest container possible for
+GStreamer-based projects. This will dable into static builds, re-using
+3rd party libraries and the pitfalls encountered along the way. One of
+the example we will go over is how to integrate into the google
+<a href="https://github.com/google/oss-fuzz">oss-fuzz</a> project.
+</p>
+<p><i>
+Edward Hervey has been contributing to the GStreamer project for the
+past 14 years, from core components to high-level projects such as the
+pitivi video editor. Currently a Senior Engineer at Centricular, he has
+helped numerous clients in current and past companies to make the most
+out of GStreamer in various areas. He is currently in charge of
+Continuous Integration and overseeing QA infrastructure for the
+GStreamer project.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="bof1" id="bof1"></a>
+<a name="bof2" id="bof2"></a>
+<a name="bof3" id="bof3"></a>
+<a name="bof4" id="bof4"></a>
+<p><b>
+BoFs / workshops
+</b></p>
+<p>
+These are opportunities for interested people to suggest or organise
+working groups or get-togethers for a particular topic.
+</p>
+</td></tr>
+
+<tr valign="top"><td>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</td></tr>
+
+</table>
+
+</body>
+</page>
