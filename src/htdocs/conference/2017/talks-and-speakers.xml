@@ -839,7 +839,7 @@ development.
 <tr valign="top"><td>
 <a name="containers-qa-fuzzing" id="containers-qa-fuzzing"></a>
 <p><b>
-Of GStreamer, containers, QA and fuzzing. Edward Hervery (bilboed), Centricular
+Of GStreamer, containers, QA and fuzzing. Edward Hervey (bilboed), Centricular
 </b></p>
 <p>
 While some would say that containers are just "yet-another" linux
