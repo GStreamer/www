@@ -464,7 +464,7 @@ cameras but it can also be used to build a variety of multimedia services
 such as a sound server.
 </p><p>
 PipeWire is built on top of a new low-level plugin API (SPA for Simple Plugin
-API) that is designed to be simple end suitable for hard real-time processing.
+API) that is designed to be simple and suitable for hard real-time processing.
 </p><p>
 In this presentation I want to talk about the design ideas, the current status
 and the future plans for PipeWire. I will also give a small demo.
@@ -856,7 +856,7 @@ and regression detection.
 </p><p>
 In a second step we will go over what is needed to make the most out
 of containers, such as providing the smallest container possible for
-GStreamer-based projects. This will dable into static builds, re-using
+GStreamer-based projects. This will dabble into static builds, re-using
 3rd party libraries and the pitfalls encountered along the way. One of
 the example we will go over is how to integrate into the google
 <a href="https://github.com/google/oss-fuzz">oss-fuzz</a> project.
