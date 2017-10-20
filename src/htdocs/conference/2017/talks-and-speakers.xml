@@ -528,6 +528,7 @@ of different issues. We have the following talks scheduled so far
     <li>Using GStreamer for UAV Computer Vision Applications in Consumer and Commercial Spaces <small><br /><i>Braden Scothern and Matt Stoker, Teal Drones</i></small></li>
     <li>Alternative RTMP implementation<br /><small><i>Jan Alexander Steffens, make.tv</i></small></li>
     <li>A source element for Android Camera 2 NDK API<br /><small><i>Justin Kim, Collabora</i></small></li>
+    <li>GStreamer DVR for deploying mpeg-dash format<br /><small><i>채창복 (Changbok Chea), LGE</i></small></li>
     <li>...</li>
     <li><i>Your talk here?</i></li>
     </ul>
