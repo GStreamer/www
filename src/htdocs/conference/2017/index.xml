@@ -268,6 +268,7 @@ li {
     <li>Pitivi 1.0 finally on sight! <small><br /><i>Thibault Saunier, Samsung</i></small></li>
     <li>Using GStreamer for UAV Computer Vision Applications in Consumer and Commercial Spaces <small><br /><i>Braden Scothern and Matt Stoker, Teal Drones</i></small></li>
     <li>Alternative RTMP implementation<br /><small><i>Jan Alexander Steffens, make.tv</i></small></li>
+    <li>A source element for Android Camera 2 NDK API<br /><small><i>Justin Kim, Collabora</i></small></li>
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
