@@ -824,9 +824,9 @@ development version leading up to the stable 1.14 release. The development
 of 1.13/1.14 will happen in the git master branch.
 
 The plan for the 1.14 development cycle is yet to be confirmed, but it is
-expected that feature freeze will be around October 2017
+expected that feature freeze will be around early December 2017
 followed by several 1.13 pre-releases and the new 1.14 stable release
-in October.
+in late December or some time in January.
 
 1.14 will be backwards-compatible to the stable 1.12, 1.10, 1.8, 1.6, 1.4,
 1.2 and 1.0 release series.
