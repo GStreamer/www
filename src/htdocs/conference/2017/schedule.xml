@@ -80,7 +80,7 @@
 		<p><a href="&site;/conference/2017/talks-and-speakers.html#rust">Oxidising GStreamer: Rust out your multimedia!</a><br />Sebastian Dröge (slomo), Centricular</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof1">BoF / workshop #1</a></p>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof1">BoF / workshop #1: Tracer development</a></p>
 		</td>
 		<td><p>11.50-<br />12.30</p></td>
 	</tr>
@@ -135,7 +135,7 @@
 		<p><a href="&site;/conference/2017/talks-and-speakers.html#av1">AV1: The Quest is Nearly Complete</a><br />Thomas Daede, Mozilla</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof2">BoF / workshop #2</a></p>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof2">BoF / workshop #2: osx videosink issues in 1.12.2 and later; iOS + macOS build system in general and contributing.</a></p>
 		</td>
 		<td><p>14.50-<br />15.40</p></td>
 	</tr>
@@ -153,7 +153,7 @@
 		<p><a href="&site;/conference/2017/talks-and-speakers.html#in-the-air">GStreamer is in the air</a><br />Jan Schmidt (thaytan), Centricular</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof3">BoF / workshop #3</a></p>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof3">BoF / workshop #3: GStreamer Unit Test writing (GstHarness)</a></p>
 		</td>
 		<td><p>16.10-<br />16.50</p></td>
 	</tr>
@@ -172,7 +172,7 @@
 		<p><a href="&site;/conference/2017/talks-and-speakers.html#containers-qa-fuzzing">Of GStreamer, containers, QA and fuzzing</a><br />Edward Hervey (bilboed), Centricular</p>
 		</td>
 		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof4">BoF / workshop #4</a></p>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof4">BoF / workshop #4: GStreamer + Rust Q &amp; A</a></p>
 		</td>
 		<td><p>17.10-<br />17.50</p></td>
 	</tr>
