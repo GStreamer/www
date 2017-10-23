@@ -17,185 +17,6 @@
 <p><a href="#saturday">Schedule for Saturday 21 October 2017</a></p>
 <p><a href="#sunday">Schedule for Sunday 22 October 2017</a></p>
 
-<!-- DAY 2 -->
-
-<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0" name="sunday" id="sunday">
-	<tr>
-		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
-			<p align="center"><font color="white">Sunday 22nd of October 2017</font></p>
-		</td>
-	</tr>
-	<tr valign="top" bgcolor="#b0c4de">
-		<td width="5%"><p></p></td>
-		<td width="45%"><p align="center">Room 1</p></td>
-		<td width="45%"><p align="center">Arena</p></td>
-		<td width="5%"><p></p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>09.00-<br />10.00</p></td>
-		<td colspan="2"><p align="center"><b>Sleep in</b><br /><small>(note that we start later on Sunday, at 10am)</small></p></td>
-		<td><p>09.00-<br />10.00</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p><b>10.00</b>-<br />10.45</p></td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#gst-shark-profiling">GstShark profiling: a real-life example</a><br />Michael Gruner, RidgeRun</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#moar-tests">Moar Better Tests</a><br />Håvard Graff (hgr), Pexip</p>
-		</td>
-		<td><p><b>10.00</b>-<br />10.30</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#F0F0F0">
-		<td><p>10.45-<br />11.00</p></td>
-		<td colspan="2">
-		<p align="center"><small><i>mini break</i></small></p>
-		</td>
-		<td><p>10.45-<br />11.00</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>11.00-<br />11.20</p></td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#gst-vaapi">The GStreamer-VAAPI report</a><br />Víctor M. Jáquez L. (ceyusa), Igalia</p>
-		</td>
-		<td>
-                <!-- free -->
-		</td>
-		<td><p>11.00-<br />11.20</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>11.20-<br />11.50</p></td>
-		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
-		<td><p>11.20-<br />11.50</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>11.50-<br />12.30</p></td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#rust">Oxidising GStreamer: Rust out your multimedia!</a><br />Sebastian Dröge (slomo), Centricular</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof1">BoF / workshop #1: Tracer development</a></p>
-		</td>
-		<td><p>11.50-<br />12.30</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#F0F0F0">
-		<td><p>12.30-<br />12.40</p></td>
-		<td colspan="2">
-		<p align="center"><small><i>mini break</i></small></p>
-		</td>
-		<td><p>12.30-<br />12.40</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>12.40-<br />13.10</p></td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#dma-fences">Linux Explicit DMA Fences in GStreamer</a><br />Nicolas Dufresne (ndufresne), Collabora</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#high-packet-rate-video">Preparing GStreamer for high packet-rate video streaming</a><br />Tim-Philipp Müller (__tim), Centricular</p>
-		</td>
-		<td><p>12.40-<br />13.10</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>13.10-<br />14.10</p></td>
-		<td colspan="2"><p align="center"><b>Lunch Break</b></p></td>
-		<td><p>13.10-<br />14.10</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>14.10-<br />14.40</p></td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#efficient-video-on-embedded-gpu">Efficient Video Processing on Embedded GPU</a><br />Kammacher Tobias, Zurich University of Applied Sciences</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#vaapi-rust">VA-API rust-binding</a><br />Hyunjun Ko (zzoon), Igalia</p>
-		</td>
-		<td><p>14.10-<br />14.30</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#F0F0F0">
-		<td><p>14.40-<br />14.50</p></td>
-		<td colspan="2">
-		<p align="center"><small><i>mini break</i></small></p>
-		</td>
-		<td><p>14.40-<br />14.50</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>14.50-<br />15.40</p></td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#av1">AV1: The Quest is Nearly Complete</a><br />Thomas Daede, Mozilla</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof2">BoF / workshop #2: osx videosink issues in 1.12.2 and later; iOS + macOS build system in general and contributing.</a></p>
-		</td>
-		<td><p>14.50-<br />15.40</p></td>
-	</tr>
-
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>15.40-<br />16.10</p></td>
-		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
-		<td><p>15.40-<br />16.10</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>16.10-<br />16.50</p></td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#in-the-air">GStreamer is in the air</a><br />Jan Schmidt (thaytan), Centricular</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof3">BoF / workshop #3: GStreamer Unit Test writing (GstHarness)</a></p>
-		</td>
-		<td><p>16.10-<br />16.50</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#F0F0F0">
-		<td><p>16.50-<br />17.10</p></td>
-		<td colspan="2">
-		<p align="center"><small><i>mini break</i></small></p>
-		</td>
-		<td><p>16.50-<br />17.10</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>17.10-<br />17.50</p></td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#containers-qa-fuzzing">Of GStreamer, containers, QA and fuzzing</a><br />Edward Hervey (bilboed), Centricular</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof4">BoF / workshop #4: GStreamer + Rust Q &amp; A</a></p>
-		</td>
-		<td><p>17.10-<br />17.50</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>17.55</p></td>
-		<td colspan="2"><p align="center"><i>Closing Session</i></p></td>
-		<td><p>17.55</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>18.00</p></td>
-		<td colspan="2">
-		<p align="center"><b>End of Conference <!-- - join us for drinks afterwards if you like FIXME --></b></p>
-		</td>
-		<td><p>18.00</p></td>
-	</tr>
-
-</table>
-
-<br />
-<br />
-
 <!-- ARRIVAL DAY -->
 
 <table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0">
@@ -466,6 +287,185 @@
 </table>
 
 <br />
+<br />
+<br />
+
+<!-- DAY 2 -->
+
+<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0" name="sunday" id="sunday">
+	<tr>
+		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
+			<p align="center"><font color="white">Sunday 22nd of October 2017</font></p>
+		</td>
+	</tr>
+	<tr valign="top" bgcolor="#b0c4de">
+		<td width="5%"><p></p></td>
+		<td width="45%"><p align="center">Room 1</p></td>
+		<td width="45%"><p align="center">Arena</p></td>
+		<td width="5%"><p></p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>09.00-<br />10.00</p></td>
+		<td colspan="2"><p align="center"><b>Sleep in</b><br /><small>(note that we start later on Sunday, at 10am)</small></p></td>
+		<td><p>09.00-<br />10.00</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p><b>10.00</b>-<br />10.45</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#gst-shark-profiling">GstShark profiling: a real-life example</a><br />Michael Gruner, RidgeRun</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#moar-tests">Moar Better Tests</a><br />Håvard Graff (hgr), Pexip</p>
+		</td>
+		<td><p><b>10.00</b>-<br />10.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>10.45-<br />11.00</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>10.45-<br />11.00</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>11.00-<br />11.20</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#gst-vaapi">The GStreamer-VAAPI report</a><br />Víctor M. Jáquez L. (ceyusa), Igalia</p>
+		</td>
+		<td>
+                <!-- free -->
+		</td>
+		<td><p>11.00-<br />11.20</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>11.20-<br />11.50</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>11.20-<br />11.50</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>11.50-<br />12.30</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#rust">Oxidising GStreamer: Rust out your multimedia!</a><br />Sebastian Dröge (slomo), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof1">BoF / workshop #1: Tracer development</a></p>
+		</td>
+		<td><p>11.50-<br />12.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>12.30-<br />12.40</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>12.30-<br />12.40</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>12.40-<br />13.10</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#dma-fences">Linux Explicit DMA Fences in GStreamer</a><br />Nicolas Dufresne (ndufresne), Collabora</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#high-packet-rate-video">Preparing GStreamer for high packet-rate video streaming</a><br />Tim-Philipp Müller (__tim), Centricular</p>
+		</td>
+		<td><p>12.40-<br />13.10</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>13.10-<br />14.10</p></td>
+		<td colspan="2"><p align="center"><b>Lunch Break</b></p></td>
+		<td><p>13.10-<br />14.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.10-<br />14.40</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#efficient-video-on-embedded-gpu">Efficient Video Processing on Embedded GPU</a><br />Kammacher Tobias, Zurich University of Applied Sciences</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#vaapi-rust">VA-API rust-binding</a><br />Hyunjun Ko (zzoon), Igalia</p>
+		</td>
+		<td><p>14.10-<br />14.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>14.40-<br />14.50</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>14.40-<br />14.50</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.50-<br />15.40</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#av1">AV1: The Quest is Nearly Complete</a><br />Thomas Daede, Mozilla</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof2">BoF / workshop #2: osx videosink issues in 1.12.2 and later; iOS + macOS build system in general and contributing.</a></p>
+		</td>
+		<td><p>14.50-<br />15.40</p></td>
+	</tr>
+
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>15.40-<br />16.10</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>15.40-<br />16.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.10-<br />16.50</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#in-the-air">GStreamer is in the air</a><br />Jan Schmidt (thaytan), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof3">BoF / workshop #3: GStreamer Unit Test writing (GstHarness)</a></p>
+		</td>
+		<td><p>16.10-<br />16.50</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>16.50-<br />17.10</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>16.50-<br />17.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>17.10-<br />17.50</p></td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#containers-qa-fuzzing">Of GStreamer, containers, QA and fuzzing</a><br />Edward Hervey (bilboed), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2017/talks-and-speakers.html#bof4">BoF / workshop #4: GStreamer + Rust Q &amp; A</a></p>
+		</td>
+		<td><p>17.10-<br />17.50</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>17.55</p></td>
+		<td colspan="2"><p align="center"><i>Closing Session</i></p></td>
+		<td><p>17.55</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>18.00</p></td>
+		<td colspan="2">
+		<p align="center"><b>End of Conference <!-- - join us for drinks afterwards if you like FIXME --></b></p>
+		</td>
+		<td><p>18.00</p></td>
+	</tr>
+
+</table>
+
 <br />
 <br />
 
