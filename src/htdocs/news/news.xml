@@ -9296,5 +9296,26 @@ or download tarballs for
         </content>
   </item>
 
+  <item>
+      <date>2017-11-20 17:00</date>
+        <title>Orc 0.4.28 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another maintenance bug-fix release
+of liborc, the Optimized Inner Loop Runtime Compiler. Main changes since the
+previous release:
+        </p>
+        <p>
+          <ul>
+            <li>Numerous undefined behaviour fixes</li>
+            <li>Ability to disable tests</li>
+            <li>Fix meson dist behaviour</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.28.tar.xz">orc-0.4.28</a>.
+        </p>
+        </content>
+  </item>
 </news>
 
