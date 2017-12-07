@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml [ <!ENTITY % site-entities SYSTEM "../../entities.site"> %site-entities; ]>
+<?xml-stylesheet href="../releases.xsl" type="text/xsl"?>
+<release>
+  <module>gst-plugins-bad</module>
+  <module-fancy>GStreamer Bad Plugins</module-fancy>
+  <name></name>
+  <version>1.12.4</version>
+
+  <intro>
+<p>
+The GStreamer team is proud to announce the fourth bugfix release in the stable
+1.12 release series of your favourite cross-platform multimedia framework!
+</p>
+<p>
+This release only contains bugfixes and it is safe to update from 1.12.x. For a
+full list of bugfixes see <a href="https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;classification=Platform&amp;limit=0&amp;list_id=270310&amp;order=bug_id&amp;product=GStreamer&amp;query_format=advanced&amp;resolution=FIXED&amp;target_milestone=1.12.4">Bugzilla</a>.
+</p>
+<p>
+See <a href="&site;/releases/1.12/">&site;/releases/1.12/</a> for the full release notes.
+</p>
+<p>
+<i>"That an accusation?"</i>
+</p>
+<p>
+No perfectly groomed moustache or any amount of fine clothing is going to
+cover up the truth - these plugins are Bad with a capital B.
+They look fine on the outside, and might even appear to get the job done, but
+at the end of the day they're a black sheep. Without a golden-haired angel
+to watch over them, they'll probably land in an unmarked grave at the final
+showdown.
+</p>
+<p>
+Don't bug us about their quality - exercise your Free Software rights,
+patch up the offender and send us the patch on the fastest steed you can
+steal from the Confederates. Because you see, in this world, there's two
+kinds of people, my friend: those with loaded guns and those who dig.
+You dig.
+</p>
+<p>
+This module contains a set of plugins that aren't up to par compared to the
+rest.  They might be close to being good quality, but they're missing something
+- be it a good code review, some documentation, a set of tests, a real live
+maintainer, or some actual wide use.  If the blanks are filled in they might be
+upgraded to become part of either gst-plugins-good or gst-plugins-ugly,
+depending on the other factors.
+If the plugins break, you can't complain - instead, you can fix the
+problem and send us a patch, or bribe someone into fixing them for you.
+New contributors can start here for things to work on.
+</p>
+<p>
+Other modules containing plugins are:
+
+<dl>
+<dt>gst-plugins-base</dt>
+<dd>contains a basic set of well-supported plugins</dd>
+<dt>gst-plugins-good</dt>
+<dd>contains a set of well-supported plugins under our preferred license</dd>
+<dt>gst-plugins-ugly</dt>
+<dd>contains a set of well-supported plugins, but might pose problems for
+    distributors</dd>
+<dt>gst-libav</dt>
+<dd>contains a set of codecs plugins based on libav (formerly gst-ffmpeg)</dd>
+</dl>
+
+</p>
+  </intro>
+    <contributors>
+	<person>Chris Bass</person>
+	<person>Edward Hervey</person>
+	<person>Jan Alexander Steffens (heftig)</person>
+	<person>Jun Xie</person>
+	<person>Mathieu Duponchelle</person>
+	<person>Matthew Waters</person>
+	<person>Ponnam Srinivas</person>
+	<person>Sebastian Dröge</person>
+	<person>Shinya Saito</person>
+	<person>Thiago Santos</person>
+	<person>Ursula Maplehurst</person>
+	<person>Vivia Nikolaidou</person>
+  </contributors>
+
+  <bugs>
+    <bug>
+      <id>784593</id>
+      <summary>aggregator: Invalidate pad's tail position ...</summary>
+    </bug>
+    <bug>
+      <id>787293</id>
+      <summary>glimagesink: met segment fault when exit app on wayland</summary>
+    </bug>
+    <bug>
+      <id>787942</id>
+      <summary>ttmlparse: Doesn't implement default showBackground behaviour</summary>
+    </bug>
+    <bug>
+      <id>789999</id>
+      <summary>hlsdemux: Fix memory leak caused by double buffer map</summary>
+    </bug>
+    <bug>
+      <id>790042</id>
+      <summary>waylandsink:  memory leak of shm allocator</summary>
+    </bug>
+    <bug>
+      <id>790812</id>
+      <summary>dashdemux: Segmentation fault coredump issue with xlink external AdaptationSet</summary>
+    </bug>
+    <bug>
+      <id>791258</id>
+      <summary>amcvideoenc: when flushing, better handle IllegalStateException received from getOutputBuffer</summary>
+    </bug>
+  </bugs>
+</release>
