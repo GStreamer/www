@@ -810,6 +810,8 @@ GIT logs or ChangeLogs of the particular modules.
 
 [buglist-1.12.3]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=248880&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.12.3
 
+<a name="1.12.4"></a>
+
 ### 1.12.4
 
 The fourth 1.12 bug-fix release (1.12.4) was released on 7 December 2017.
