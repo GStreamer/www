@@ -8,6 +8,7 @@ built_pages = gstreamer010.html
 all-local:	releases.rss10.xml releases.rss20.xml releases.ics
 
 SUBDIRS = \
+	1.14 \
 	1.12 \
 	1.10 \
 	1.8 \
