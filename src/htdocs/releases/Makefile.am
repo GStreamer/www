@@ -1,4 +1,4 @@
-built_pages = gstreamer010.html
+built_pages = gstreamer010.html index.html
 
 %.xml: $(top_srcdir)/copy/releases/$@
 	cp $(top_srcdir)/copy/releases/$@ $@
@@ -6,6 +6,12 @@ built_pages = gstreamer010.html
 	cp $(top_srcdir)/copy/releases/$@ $@
 
 all-local:	releases.rss10.xml releases.rss20.xml releases.ics
+
+index.html: releases.html index.xml $(fullstyle) $(entities) $(page_style) $(pics)
+	xsltproc $(srcdir)/index.xml -o $@ --path "$(builddir)"
+
+releases.html: releases.md
+	markdown $(srcdir)/releases.md > $(builddir)/releases.html
 
 SUBDIRS = \
 	1.14 \
