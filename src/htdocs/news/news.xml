@@ -9411,6 +9411,12 @@ Full release notes will be provided in the near future, highlighting all the
 new features, bugfixes, performance optimizations and other important changes.
 </p>
 <p>
+Packagers: please note that quite a few plugins and libraries have moved
+between modules, so please take extra care and make sure inter-module
+version dependencies are such that users can only upgrade all modules in
+one go, instead of seeing a mix of 1.13 and 1.12 on their system.
+</p>
+<p>
 Binaries for Android, iOS, Mac OS X and Windows will be provided shortly.
 </p>
 <p>
