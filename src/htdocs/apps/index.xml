@@ -220,6 +220,9 @@ is a Linux-based HTPC (Home Theatre PC) application. It transforms a PC into a s
 <p><a href="videowhale.html">Video-Whale</a> is an implementation of a Gstreamer-based video-wall. Making a video wall with GStreamer is easy, this article with pictures from Zeeshan Ali shows you how.
 </p>
 
+<h2>gstreamill</h2>
+<p><a href="http://github.com/zhangping/gstreamill">gstreamill</a> is a real time encoder with hls output and more.</p>
+
 <h1>Application ideas</h1>
 <p>
 Just about anything you can think to do with media is possible with
