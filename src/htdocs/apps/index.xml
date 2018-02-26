@@ -135,6 +135,9 @@ sports video analysis tool based on Mono, Gtk+ and GStreamer.</p>
 <h2>OpenBroadcaster</h2>
 <p><a href="https://openbroadcaster.pro">OpenBroadcaster</a> is a platform and suite of tools for broadcasters in Radio and TV with both community and commercial support. <a href="http://support.openbroadcaster.pro/">Community Support</a></p>
 
+<h2>Parlatype</h2>
+<p><a href="http://gkarsay.github.io/parlatype/">Parlatype</a> is an audio player for manual speech transcription, written for the GNOME desktop.</p>
+
 <h2>Parole</h2>
 <p><a href="http://docs.xfce.org/apps/parole/start">Parole</a> is a video player made
 to integrate well with the XFCE desktop.</p>
