@@ -99,23 +99,16 @@ wiki page.
 </p>
 -->
 
-<!--
-<H1>Buildbots</H1>
+<H1>Continuous integration: Build bots and validation</H1>
 
 <p>
-<i>Build bots are currently out of action</i>
-Commits to Git are verified by our build cluster. This does automated checkouts on a series of slaves and runs the build there.
-If a commit breaks a build it is announced in the <a href="irc://irc.freenode.net/gstreamer">gstreamer developer channel</a> and on this websites:
-<a href="http://build.SOMEWHERE.OVER.THE.RAINBOW:8010/">GStreamer buildbot</a>.
+Commits to Git are verified by our build cluster. This does automated checkouts
+on a series of slaves and runs the build there, as well as an extensive media
+validation test suite. If a commit breaks a build it is announced in
+the <a href="irc://irc.freenode.net/gstreamer"><tt>#gstreamer</tt> IRC channel</a>
+and on the <a href="https://ci.gstreamer.net/">GStreamer Continuous Integration</a>
+website.
 </p>
--->
-
-<!-- <H1>Automated media tests</H1> -->
-<!-- <p> -->
-<!-- We regularly run mediafile tests with GStreamer to see how we are progressing -->
-<!-- on filetype support and catch any regressions. You find the results of these -->
-<!-- <a href="http://core.fluendo.com/gst-media-test/">GStreamer media test here</a>. -->
-<!-- </p> -->
 
 <H1>Language Bindings</H1>
                                                                                 
