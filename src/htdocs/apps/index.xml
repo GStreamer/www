@@ -110,6 +110,9 @@ suite of gstreamer elements and applications for gravitational wave data analysi
 <h2>Landell</h2>
 <p><a href="http://landell.holoscopio.com/">Landell</a> is an audio and video streaming server.</p>
 
+<h2>Lcdgrilo</h2>
+<p><a href="http://www.flyn.org/projects/lcdgrilo/">Lcdgrilo</a> is a Grilo-based media player for use on a Raspberry Pi with a PiFace Control and Display (CAD).</p>
+
 <h2>Listen</h2>
 <p><a href="http://listengnome.free.fr/">Listen</a> is a GNOME music player written in Python.</p>
 
