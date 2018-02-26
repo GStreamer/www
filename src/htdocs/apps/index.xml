@@ -129,6 +129,9 @@ sports video analysis tool based on Mono, Gtk+ and GStreamer.</p>
 <h2>Movi</h2>
 <p><a href="http://www.tandberg.com/products/pc-video-conferencing.jsp">TANDBERG Movi</a> is a professional video conferencing system, supporting HD video and Echo Cancellation.</p>
 
+<h2>MPFC</h2>
+<p><a href="https://github.com/sgsoftware/mpfc">MPFC</a> is a music player for the console.</p>
+
 <h2>Muine</h2>
 <p><a href="http://muine.gooeylinux.org/">Muine</a> is a music player for GNOME using the Mono framework.</p>
 
