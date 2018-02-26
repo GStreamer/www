@@ -36,9 +36,9 @@ generated from both the annotations and the audiovisual documents.</p>
 <p><a href="http://www.transcoder.org/">Arista Transcoder</a> is an easy to
 use transcoder application.</p>
 
-<h2>Audition</h2>
-<p><a href="http://www.rillion.net/audition/index.html">Audition</a>
-Audition is an ncurses-based audio player for the console.</p>
+<h2>Auditive</h2>
+<p><a href="http://www.rillion.net/auditive/">Auditive </a>
+A GStreamer player for the console.</p>
 
 <h2>Banshee</h2>
 <p><a href="http://banshee-project.org/Main_Page">Banshee</a> is a music player for GNOME using Mono</p>
@@ -61,20 +61,14 @@ to read media metadata and perform real-time transcoding of audio formats</p>
 <p><a href="http://eina.sourceforge.net/">Eina</a> is a traditional audio player with a GTK2 interface.</p>
 
 <h2>Empathy</h2>
-<p><a href="https://live.gnome.org/Empathy">Empathy</a> is a messaging client with
+<p><a href="https://wiki.gnome.org/action/show/Apps/Empathy/">Empathy</a> is a messaging client with
  VoIP and Video conferencing support.</p>
 
 <h2>Flumotion</h2>
-<p><a href="http://www.fluendo.com">Flumotion</a> is a distributed streaming media server.</p>
-
-<h2>Freemix</h2>
-<p><a href="http://freemix.forja.rediris.es/">Fremix</a> is a live video performance application.</p>
+<p><a href="http://www.flumotion.net/">Flumotion</a> is a distributed streaming media server.</p>
 
 <h2>Gamp</h2>
 <p><a href="http://gamp.sourceforge.net/">Gamp</a> is a GNOME based media player.</p>
-
-<h2>Geekcast</h2>
-<p><a href="http://home.gna.org/geekast/">Geekast</a> is a GNOME P2P streaming client writen in Ruby.</p>
 
 <h2>GEntrans</h2>
 <p><a href="http://gentrans.sourceforge.net/">GEntrans</a> provides various GStreamer
@@ -82,7 +76,7 @@ filter elements ported from other sources as well a gst-python based command-lin
 transcoding application and a plain but very configurable media player.</p>
 
 <h2>Gnash</h2>
-<p><a href="http://gnashdev.org/">Gnash</a> is the GNU Flash movie player, which can be run standalone on the desktop or an embedded device, as well as as a plugin for several browsers.</p>
+<p><a href="https://www.gnu.org/software/gnash/">Gnash</a> is the GNU Flash movie player, which can be run standalone on the desktop or an embedded device, as well as as a plugin for several browsers.</p>
 
 <h2>GNOME DVB Daemon</h2>
 <p><a href="https://live.gnome.org/DVBDaemon">DVBDaemon</a> is a daemon that lets you watch 
@@ -103,19 +97,15 @@ use with upnp media servers</p>
 <p><a href="https://www.lsc-group.phys.uwm.edu/daswg/projects/gstlal.html">GstLAL</a> is a
 suite of gstreamer elements and applications for gravitational wave data analysis.</p>
 
-<h2>Istanbul</h2>
-<p><a href="http://live.gnome.org/Istanbul">Istanbul</a> is a screen recorder
-</p>
-
 <h2>Jokosher</h2>
-<p><a href="http://www.jokosher.org/">Jokosher</a> is a multitrack music editor
+<p><a href="https://launchpad.net/jokosher">Jokosher</a> is a multitrack music editor
 </p>
 
 <h2>JuK</h2>
-<p><a href="http://developer.kde.org/~wheeler/juk.html">JuK</a> is an audio jukebox for KDE.</p>
+<p><a href="https://juk.kde.org/">JuK</a> is an audio jukebox for KDE.</p>
 
 <h2>Kaffeine</h2>
-<p><a href="http://kaffeine.sourceforge.net/">Kaffeine</a> is a KDE based media player.</p>
+<p><a href="https://www.kde.org/applications/multimedia/kaffeine/">Kaffeine</a> is a KDE based media player.</p>
 
 <h2>Landell</h2>
 <p><a href="http://landell.holoscopio.com/">Landell</a> is an audio and video streaming server.</p>
@@ -124,7 +114,7 @@ suite of gstreamer elements and applications for gravitational wave data analysi
 <p><a href="http://listengnome.free.fr/">Listen</a> is a GNOME music player written in Python.</p>
 
 <h2>LongoMatch</h2>
-<p><a href="http://www.ylatuya.es">LongoMatch</a> is a cross-platform
+<p><a href="https://longomatch.com">LongoMatch</a> is a cross-platform
 sports video analysis tool based on Mono, Gtk+ and GStreamer.</p>
 
 <h2>Marlin</h2>
@@ -133,9 +123,6 @@ sports video analysis tool based on Mono, Gtk+ and GStreamer.</p>
 <h2>Minirok</h2>
 <p><a href="http://chistera.yi.org/~adeodato/code/minirok/">Minirok</a> is a small music player for KDE/Qt.</p>
 
-<h2>Monkey Bubble</h2>
-<p><a href="http://home.gna.org/monkeybubble/">Monkey Bubble</a> a fun and cool game for GNOME using GStreamer to play some funky music and sweet sound effects.</p>
-
 <h2>Movi</h2>
 <p><a href="http://www.tandberg.com/products/pc-video-conferencing.jsp">TANDBERG Movi</a> is a professional video conferencing system, supporting HD video and Echo Cancellation.</p>
 
@@ -143,17 +130,13 @@ sports video analysis tool based on Mono, Gtk+ and GStreamer.</p>
 <p><a href="http://muine.gooeylinux.org/">Muine</a> is a music player for GNOME using the Mono framework.</p>
 
 <h2>OggConvert</h2>
-<p><a href="http://oggconvert.tristanb.net">OggConvert</a> is a tool for converting video to Ogg,Theora,Dirac and Vorbis formats.</p>
+<p><a href="https://launchpad.net/oggconvert">OggConvert</a> is a tool for converting video to Ogg,Theora,Dirac and Vorbis formats.</p>
 
 <h2>OpenBroadcaster</h2>
 <p><a href="https://openbroadcaster.pro">OpenBroadcaster</a> is a platform and suite of tools for broadcasters in Radio and TV with both community and commercial support. <a href="http://support.openbroadcaster.pro/">Community Support</a></p>
 
-<h2>Pakt</h2>
-<p><a href="http://subsignal.org/pakt/">Pakt</a> is a XML abstraction for GObjects used 
-with GStreamer to monitor and change elements parameters and pipeline structures.</p>
-
 <h2>Parole</h2>
-<p><a href="http://goodies.xfce.org/projects/applications/parole">Parole</a> is a video player made
+<p><a href="http://docs.xfce.org/apps/parole/start">Parole</a> is a video player made
 to integrate well with the XFCE desktop.</p>
 
 <h2>Pitivi</h2>
@@ -172,7 +155,7 @@ is a Non-Linear video editor utilizing the power of GStreamer and the Gnonlin no
 </p>
 
 <h2>Rygel</h2>
-<p><a href="https://live.gnome.org/Rygel">Rygel</a> is a DLNA streaming server and renderer.</p>
+<p><a href="https://wiki.gnome.org/action/show/Projects/Rygel">Rygel</a> is a DLNA streaming server and renderer.</p>
 
 <h2>Scenic</h2>
 <p><a href="http://scenic.sat.qc.ca/">Scenic</a> is a web-based telepresence application for venues and live performance. It is part of the PropulseART  project. Scenic's features include remote operation, multi-channel audio and serial transmission.</p>
