@@ -9439,5 +9439,55 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+    <item>
+      <date>2018-03-03 23:00</date>
+        <title>GStreamer 1.13.90 pre-release (1.14 rc1)</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the first release candidate for the
+upcoming stable 1.14 release series.
+</p>
+<p>
+The 1.14 release series adds new features on top of the current stable 1.12
+series and is part of the API and ABI-stable 1.x release series of the
+GStreamer multimedia framework.
+</p>
+<p>
+The 1.13.90 pre-release is for testing and development purposes in the lead-up
+to the stable 1.14 series which is now feature frozen and scheduled for release
+soon.
+</p>
+<p>
+Full release notes will be provided in the near future, highlighting all the
+new features, bugfixes, performance optimizations and other important changes.
+</p>
+<p>
+Packagers: please note that quite a few plugins and libraries have moved
+between modules, so please take extra care and make sure inter-module
+version dependencies are such that users can only upgrade all modules in
+one go, instead of seeing a mix of 1.13 and 1.12 on their system.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided shortly.
+</p>
+<p>
+Release tarballs can be downloaded directly here:
+<ul>
+  <li><a href="&site;/src/gstreamer/gstreamer-1.13.90.tar.xz">gstreamer-1.13.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-base/gst-plugins-base-1.13.90.tar.xz">gst-plugins-base-1.13.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-good/gst-plugins-good-1.13.90.tar.xz">gst-plugins-good-1.13.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.13.90.tar.xz">gst-plugins-ugly-1.13.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.13.90.tar.xz">gst-plugins-bad-1.13.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-libav/gst-libav-1.13.90.tar.xz">gst-libav-1.13.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.13.90.tar.xz">gst-rtsp-server-1.13.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-python/gst-python-1.13.90.tar.xz">gst-python-1.13.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.13.90.tar.xz">gst-editing-services-1.13.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-validate/gst-validate-1.13.90.tar.xz">gst-validate-1.13.90.tar.xz</a>,</li>
+  <li><a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.13.90.tar.xz">gstreamer-vaapi-1.13.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-omx/gst-omx-1.13.90.tar.xz">gst-omx-1.13.90.tar.xz</a></li>
+</ul>
+        </p>
+        </content>
+  </item>
 </news>
 
