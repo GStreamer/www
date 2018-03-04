@@ -1,15 +1,15 @@
 # GStreamer 1.14 Release Notes
 
 GStreamer 1.14.0 has not been released yet. It is scheduled for release
-in late February / early March 2018.
+in early March 2018.
 
 There are unstable pre-releases available for testing and development purposes.
-The latest pre-release is version 1.13.1 and was released on 15 February 2018.
+The latest pre-release is version 1.13.90 (rc1) and was released on 03 March 2018.
 
 See [https://gstreamer.freedesktop.org/releases/1.14/][latest] for the latest
 version of this document.
 
-*Last updated: Thursday 15 February 2018, 16:30 UTC [(log)][gitlog]*
+*Last updated: Saturday 03 March 2018, 16:30 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.14/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.14/release-notes-1.14.md
@@ -113,7 +113,53 @@ improvements.
 
 ## Contributors
 
-- this section will be filled in shortly
+Aaron Boxer, Adrián Pardini, Adrien SCH, Akinobu Mita, Alban Bedel,
+Alessandro Decina, Alex Ashley, Alicia Boya García, Alistair Buxton,
+Alvaro Margulis, Anders Jonsson, Andreas Frisch, Andrejs Vasiljevs,
+Andrew Bott, Antoine Jacoutot, Antonio Ospite, Antoni Silvestre,
+Anton Obzhirov, Anuj Jaiswal, Arjen Veenhuizen, Arnaud Bonatti, Arun Raghavan,
+Ashish Kumar, Aurélien Zanelli, Ayaka, Branislav Katreniak, Branko Subasic,
+Brion Vibber, Carlos Rafael Giani, Cassandra Rommel, Chris Bass,
+Chris Paulson-Ellis, Christoph Reiter, Claudio Saavedra, Clemens Lang,
+Cyril Lashkevich, Daniel van Vugt, Dave Craig, Dave Johnstone, David Evans,
+David Schleef, Deepak Srivastava, Dimitrios Katsaros, Dmitry Zhadinets,
+Dongil Park, Dustin Spicuzza, Eduard Sinelnikov, Edward Hervey, Enrico Jorns,
+Eunhae Choi, Ezequiel Garcia, fengalin, Filippo Argiolas, Florent Thiéry,
+Florian Zwoch, Francisco Velazquez, François Laignel, fvanzile,
+George Kiagiadakis, Georg Lippitsch, Graham Leggett, Guillaume Desmottes,
+Gurkirpal Singh, Gwang Yoon Hwang, Gwenole Beauchesne, Haakon Sporsheim,
+Haihua Hu, Håvard Graff, Heekyoung Seo, Heinrich Fink, Holger Kaelberer,
+Hoonhee Lee, Hosang Lee, Hyunjun Ko, Ian Jamison, James Stevenson,
+Jan Alexander Steffens (heftig), Jan Schmidt, Jason Lin, Jens Georg,
+Jeremy Hiatt, Jérôme Laheurte, Jimmy Ohn, Jochen Henneberg, John Ludwig,
+John Nikolaides, Jonathan Karlsson, Josep Torra, Juan Navarro,
+Juan Pablo Ugarte, Julien Isorce, Jun Xie, Jussi Kukkonen, Justin Kim,
+Lasse Laursen, Lubosz Sarnecki, Luc Deschenaux, Luis de Bethencourt,
+Marcin Lewandowski, Mario Alfredo Carrillo Arevalo, Mark Nauwelaerts,
+Martin Kelly, Matej Knopp, Mathieu Duponchelle, Matteo Valdina,
+Matt Fischer, Matthew Waters, Matthieu Bouron, Matthieu Crapet, Matt Staples,
+Michael Catanzaro, Michael Olbrich, Michael Shigorin, Michael Tretter,
+Michał Dębski, Michał Górny, Michele Dionisio, Miguel París, Mikhail Fludkov,
+Munez, Nael Ouedraogo, Neos3452, Nicholas Panayis, Nick Kallen, Nicola Murino,
+Nicolas Dechesne, Nicolas Dufresne, Nirbheek Chauhan, Ognyan Tonchev,
+Ole André Vadla Ravnås, Oleksij Rempel, Olivier Crête, Omar Akkila,
+Orestis Floros, Patricia Muscalu, Patrick Radizi, Paul Kim, Per-Erik Brodin,
+Peter Seiderer, Philip Craig, Philippe Normand, Philippe Renon, Philipp Zabel,
+Pierre Pouzol, Piotr Drąg, Ponnam Srinivas, Pratheesh Gangadhar, Raimo Järvi,
+Ramprakash Jelari, Ravi Kiran K N, Reynaldo H. Verdejo Pinochet,
+Rico Tzschichholz, Robert Rosengren, Roland Peffer, Руслан Ижбулатов,
+Sam Hurst, Sam Thursfield, Sangkyu Park, Sanjay NM, Satya Prakash Gupta,
+Scott D Phillips, Sean DuBois, Sebastian Cote, Sebastian Dröge,
+Sebastian Rasmussen, Sejun Park, Sergey Borovkov, Seungha Yang, Shakin Chou,
+Shinya Saito, Simon Himmelbauer, Sky Juan, Song Bing, Sreerenj Balachandran,
+Stefan Kost, Stefan Popa, Stefan Sauer, Stian Selnes, Thiago Santos,
+Thibault Saunier, Thijs Vermeir, Tim Allen, Tim-Philipp Müller, Ting-Wei Lan,
+Tomas Rataj, Tom Bailey, Tonu Jaansoo, U. Artie Eoff, Umang Jain,
+Ursula Maplehurst, VaL Doroshchuk, Vasilis Liaskovitis,
+Víctor Manuel Jáquez Leal, vijay, Vincent Penquerc'h, Vineeth T M,
+Vivia Nikolaidou, Wang Xin-yu (王昕宇), Wei Feng, Wim Taymans, Wonchul Lee,
+Xabier Rodriguez Calvar, Xavier Claessens, XuGuangxin, Yasushi SHOJI,
+Yi A Wang, Youness Alaoui,
 
 ... and many others who have contributed bug reports, translations, sent
 suggestions or helped testing.
@@ -144,7 +190,7 @@ which is a stable branch.
 
 ### 1.14.0
 
-1.14.0 is scheduled to be released in late February / early March 2018.
+1.14.0 is scheduled to be released in early March 2018.
 
 ## Known Issues
 
