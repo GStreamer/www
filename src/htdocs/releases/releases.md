@@ -1,13 +1,13 @@
 # GStreamer Releases
 
 - **Latest stable release:** [1.12.4][latest-stable]
-- **Latest development release:** [1.13.1][latest-devel]
+- **Latest development release:** [1.13.90][latest-devel]
 
 [latest-stable]: https://gstreamer.freedesktop.org/releases/1.12/#1.12.4
 [latest-devel]: https://gstreamer.freedesktop.org/releases/1.14/
 
 The next stable major feature release is GStreamer 1.14.0, which is scheduled
-for release in late February / early March 2018.
+for release in early March 2018.
 
 ### Older releases
 
