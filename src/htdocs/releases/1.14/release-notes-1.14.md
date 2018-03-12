@@ -1016,7 +1016,7 @@ suggestions or helped testing.
 
 ## Bugs fixed in 1.14
 
-More than [704 bugs][bugs-fixed-in-1.14] have been fixed during
+More than [800 bugs][bugs-fixed-in-1.14] have been fixed during
 the development of 1.14.
 
 This list does not include issues that have been cherry-picked into the
