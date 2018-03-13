@@ -4,7 +4,7 @@ GStreamer 1.14.0 has not been released yet. It is scheduled for release
 in early March 2018.
 
 There are unstable pre-releases available for testing and development purposes.
-The latest pre-release is version 1.13.91 (rc2) and was released on 12 March 2018.
+The latest pre-release is version 1.13.91 (rc2) and was released on 13 March 2018.
 
 See [https://gstreamer.freedesktop.org/releases/1.14/][latest] for the latest
 version of this document.
@@ -356,8 +356,8 @@ GStreamer Conference in Prague.
   packet loss. Further work is still needed in payloaders to make use of these.
 
 - `rtpbin` now has an option for increasing timestamp offsets gradually:
-  Instant large changes to the internal `ts_offset` may cause timestamps to
-  move backwards and also cause visible glitches in media playback. The new
+  Sudden large changes to the internal `ts_offset` may cause timestamps to
+  move backwards and may also cause visible glitches in media playback. The new
   `"max-ts-offset-adjustment"` and `"max-ts-offset"` properties let the
   application control the rate to apply changes to `ts_offset`. There have
   also been some `EOS`/`BYE` handling improvements in `rtpbin`.
@@ -416,9 +416,9 @@ GStreamer Conference in Prague.
   streaming if one of the inputs stops producing data.
 
 - `jpegenc` has gained a `"snapshot"` property just like `pngenc` to make it
-  easier to just output a single encoded frame.
+  easier to output just a single encoded frame.
 
-- `jpegdec` will now handle interlaced MJPEG streams properly and also handle
+- `jpegdec` will now handle interlaced MJPEG streams properly and also handles
   frames without an End of Image marker better.
 
 - v4l2: There are now video encoders for VP8, VP9, MPEG4, and H263. The v4l2
@@ -433,7 +433,7 @@ GStreamer Conference in Prague.
   variable `GST_V4L2_USE_LIBV4L2=1`.
 
 - `rtspsrc` now has support for RTSP protocol version 2.0 as well as ONVIF audio
-  backchannels (see below for more details). It also sports a new [`"accept-certificate"`]
+  backchannels (see below for more details). It also sports a new `"accept-certificate"`
   signal for "manually" checking a TLS certificate for validity. It now also
   prints RTSP/SDP messages to the gstreamer debug log instead of stdout.
 
@@ -451,15 +451,15 @@ GStreamer Conference in Prague.
   Adobe Premiere and FinalCut Pro to import the files while they are still
   being written to. This only works with constant framerate I-frame only
   streams, and for now only support for ProRes video and raw audio is
-  implemented but adding new codecs is just a matter of defining appropriate
-  maximum frame sizes.
+  implemented. Adding support for additional codecs is just a matter of
+  defining appropriate maximum frame sizes though.
 
 - `qtmux` also supports writing of svmi atoms with stereoscopic video
   information now. Trak timescales can be configured on a per-stream basis
   using the `"trak-timescale"` property on the sink pads. Various new formats
   can be muxed: MPEG layer 1 and 2, AC3 and Opus, as well as PNG and VP9.
 
-- `souphttpsrc` now does connection sharing by default, shares its `SoupSession`
+- `souphttpsrc` now does connection sharing by default: it shares its `SoupSession`
   with other elements in the same pipeline via a `GstContext` if possible
   (session-wide settings are all the defaults). This allows for connection
   reuse, cookie sharing, etc. Applications can also force a context to use.
@@ -482,7 +482,7 @@ GStreamer Conference in Prague.
   handle this just fine, but that's often more luck than by design. In any
   case, it's not right, so we disallow it now.
 
-- `matroskamux` had Table of Content (TOC) support now (chapters etc.) and
+- `matroskamux` has Table of Content (TOC) support now (chapters etc.) and
   `matroskademux` TOC support has been improved. `matroskademux` has also
    seen seeking improvements searching for the right cluster and position.
 
@@ -686,7 +686,7 @@ might not work properly in all scenarios, e.g. where the OpenGL driver does not
 properly support multiple sharing contexts in different threads; on Linux
 Nouveau is known to be broken in this respect, whilst NVIDIA's proprietary
 drivers and most other drivers generally work fine, and the experience with
-Intel's driver seems to be fixed; some proprietary embedded Linux drivers
+Intel's driver seems to be mixed; some proprietary embedded Linux drivers
 don't work; macOS works).
 
 [gtksink]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-gtksink.html
@@ -697,7 +697,7 @@ don't work; macOS works).
 [`GstPhysMemoryAllocator`][physmemallocator] is a marker interface for
 allocators with physical address backed memory.
 
-[physmemallocator]: {FIXME}
+[physmemallocator]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-GstPhysMemoryAllocator.html
 
 ### Plugin removals
 
@@ -803,7 +803,7 @@ allocators with physical address backed memory.
   if delay > packet-spacing, so by setting `"allow-reordering"` to `FALSE` you
   guarantee that the packets are in order, while at the same time introducing
   delay/jitter to them. By using the new `"delay-distribution"` property the
-  use can control how the delay applied to delayed packets is distributed: This
+  user can control how the delay applied to delayed packets is distributed: This
   is either the uniform distribution (as before) or the normal distribution;
   in addition there is also the gamma distribution which simulates the delay
   on wifi networks better.
@@ -821,14 +821,13 @@ allocators with physical address backed memory.
 
 - `gst-discoverer-1.0` can now analyse live streams such as `rtsp://` URIs
 
-[element-add-template-with-gtype]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstElement.html#gst-element-class-add-static-pad-template-with-gtype
-[pad-template]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstPadTemplate.html#gst-pad-template-new-from-static-pad-template-with-gtype
-
 ## GStreamer RTSP server
 
 - Initial support for [RTSP protocol version 2.0][rtsp2-lightning-talk] was
   added, which is to the best of our knowledge the first RTSP 2.0
   implementation ever!
+
+[rtsp2-lightning-talk]: https://gstconf.ubicast.tv/videos/lightning-talks/#start=2240&autoplay&timeline
 
 - ONVIF audio backchannel support. This is an extension [specified][onvif-spec]
   by ONVIF that allows RTSP clients (e.g. a control room operator) to send audio
