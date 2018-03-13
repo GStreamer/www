@@ -81,8 +81,8 @@ Interactive Connectivity Establishment (ICE) to figure out the best way to
 communicate with other peers, punch holes into firewalls, and traverse NATs.
 
 The implementation is not complete, but all the basics are there, and the
-code sticks fairly close to the [PeerConnection API][peerconnection-api], so
-where functionality is missing it should be fairly obvious where it needs to
+code sticks fairly close to the [PeerConnection API][peerconnection-api].
+Where functionality is missing it should be fairly obvious where it needs to
 go.
 
 For more details, background and example code, check out Nirbheek's blog post
@@ -117,7 +117,9 @@ GStreamer Conference in Prague.
   handles the muxing to MPEG-TS internally. It also leverages `splitmuxsink`
   internally to do the splitting. This allows more control over the chunk
   splitting and sizing process and relies less on the co-operation of an
-  upstream muxer which might not exist if the stream is already muxed.
+  upstream muxer. Different to the old `hlssink` it also works with
+  pre-encoded streams and does not require close interaction with an upstream
+  encoder element.
 
 - [`audiolatency`][audiolatency] is a new element for measuring audio latency
   end-to-end and is useful to measure roundtrip latency including both the
