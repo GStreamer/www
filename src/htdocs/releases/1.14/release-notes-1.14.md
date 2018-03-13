@@ -294,6 +294,15 @@ GStreamer Conference in Prague.
 [videooverlay]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/GstVideoOverlay.html
 [videooverlay-install-props]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/GstVideoOverlay.html#gst-video-overlay-install-properties
 
+- A new base class, [`GstNonstreamAudioDecoder`][nonstream-audio] for
+  non-stream audio decoders was added to gst-plugins-bad. This base-class is
+  meant to be used for audio decoders that require the whole stream to be
+  loaded first before decoding can start. Examples of this are module formats
+  (MOD/S3M/XM/IT/etc), C64 SID tunes, video console music files (GYM/VGM/etc),
+  MIDI files and others. The new `openmptdec` element is based on this.
+
+[nonstream-audio]: https://cgit.freedesktop.org/gstreamer/gst-plugins-bad/tree/gst-libs/gst/audio
+
 - Full list of API new in 1.14:
   - [GStreamer core API new in 1.14](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/ix03.html)
   - [GStreamer base library API new in 1.14](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/ix03.html)
