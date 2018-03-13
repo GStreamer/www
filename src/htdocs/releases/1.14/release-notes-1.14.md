@@ -57,6 +57,8 @@ improvements.
 - `ipcpipeline`: new plugin that allows splitting a pipeline across
   multiple processes
 
+- Major `gobject-introspection` annotation improvements for large parts of the library API
+
 [av1]: https://en.wikipedia.org/wiki/AV1
 [srt]: https://www.srtalliance.org/#about_srt
 
@@ -724,7 +726,17 @@ allocators with physical address backed memory.
   cases (hat tip to the oss-fuzz project).
 
 - floating reference handling was inconsistent and has been cleaned up across
-  the board, including annotations. This primarily affects language bindings.
+  the board, including annotations. This solves various long-standing memory
+  leaks in language bindings, which e.g. often caused elements and pads to be
+  leaked.
+
+- major `gobject-introspection` annotation improvements for large parts of the
+  library API, including nullability of return types and function parameters,
+  correct types (e.g. strings vs. filenames), ownership transfer, array length
+  parameters, etc. This allows to use bigger parts of the GStreamer API to be
+  safely used from dynamic language bindings (e.g. Python, Javascript) and
+  allows static bindings (e.g. C#, Rust, Vala) to autogenerate more API
+  bindings without manual intervention.
 
 [gstvideo]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gstreamer-video.html
 
