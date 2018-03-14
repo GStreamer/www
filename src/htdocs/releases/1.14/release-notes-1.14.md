@@ -193,6 +193,9 @@ GStreamer Conference in Prague.
   element, which is useful for testing HTTP protocol version 2.0 amongst
   other things.
 
+- The [`msdk`][msdk] plugin has gained a MPEG-2 video decoder(msdkmpeg2dec),
+  VP8 decoder(msdkvp8dec) and a VC1/WMV decoder(msdkvc1dec)
+
 [srt-in-gstreamer-blog]: https://www.collabora.com/news-and-blog/blog/2018/02/16/srt-in-gstreamer/
 [hlssink2]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/gst-plugins-bad-plugins-hlssink2.html
 [audiolatency]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/gst-plugins-bad-plugins-audiolatency.html
@@ -205,6 +208,7 @@ GStreamer Conference in Prague.
 [openmpt]: https://lib.openmpt.org
 [curl]: https://curl.haxx.se/
 [curlhttpsrc]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/gst-plugins-bad-plugins-curlhttpsrc.html
+[msdk]: https://github.com/Intel-Media-SDK/MediaSDK
 
 ### Noteworthy new API
 
@@ -553,7 +557,13 @@ GStreamer Conference in Prague.
 
 - work continued on the `msdk` plugin for Intel's Media SDK which enables
   hardware-accelerated video encoding and decoding on Intel graphics hardware
-  on Windows or Linux. More tuning options were added, and more pixel formats
+  on Windows or Linux. Added the video memory, buffer pool, and context/session
+  sharing support which helps to improve the performance and resource utilization.
+  Rendernode support is in place which helps to avoid the constraint of having
+  a running graphics server as DRM-Master. Encoders are exposing a number rate control
+  algorithms now. More encoder tuning options like trellis-quantiztion (h264),
+  slice size control (h264), B-pyramid prediction(h264), MB-level bitrate control,
+  frame partitioning and adaptive I/B frame insertion were added, and more pixel formats
   and video codecs are supported now. The encoder now also handles
   force-key-unit events and can insert frame-packing SEIs for side-by-side
   and top-bottom stereoscopic 3D video.
