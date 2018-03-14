@@ -61,8 +61,13 @@ improvements.
 
 - GStreamer C# bindings have been revived and seen many updates and fixes
 
+- The [externally][gstreamer-rs] maintained GStreamer Rust bindings had many
+  usability improvements and cover most of the API now. Coinciding with the
+  1.14 release, a new release with the 1.14 API additions is happening.
+
 [av1]: https://en.wikipedia.org/wiki/AV1
 [srt]: https://www.srtalliance.org/#about_srt
+[gstreamer-rs]: https://github.com/sdroege/gstreamer-rs
 
 ## Major new features and changes
 
