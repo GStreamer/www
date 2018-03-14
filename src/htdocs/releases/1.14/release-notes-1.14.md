@@ -59,6 +59,8 @@ improvements.
 
 - Major `gobject-introspection` annotation improvements for large parts of the library API
 
+- GStreamer C# bindings have been revived and seen many updates and fixes
+
 [av1]: https://en.wikipedia.org/wiki/AV1
 [srt]: https://www.srtalliance.org/#about_srt
 
