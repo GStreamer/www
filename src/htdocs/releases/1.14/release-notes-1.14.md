@@ -884,10 +884,6 @@ allocators with physical address backed memory.
 
 - this section will be filled in shortly {FIXME!}
 
-## GStreamer Editing Services and NLE
-
-- this section will be filled in shortly {FIXME!}
-
 ## GStreamer validate
 
 - this section will be filled in shortly {FIXME!}
@@ -1094,7 +1090,7 @@ development version leading up to the stable 1.16 release. The development
 of 1.15/1.16 will happen in the git master branch.
 
 The plan for the 1.16 development cycle is yet to be confirmed, but it is
-expected that feature freeze will be around August 2017 followed by several
+expected that feature freeze will be around August 2018 followed by several
 1.15 pre-releases and the new 1.16 stable release in September.
 
 1.16 will be backwards-compatible to the stable 1.14, 1.12, 1.10, 1.8, 1.6,
@@ -1103,6 +1099,6 @@ expected that feature freeze will be around August 2017 followed by several
 - - -
 
 *These release notes have been prepared by Tim-Philipp Müller with*
-*contributions from Sebastian Dröge.*
+*contributions from Sebastian Dröge and Sreerenj Balachandran.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
