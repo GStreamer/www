@@ -884,9 +884,51 @@ allocators with physical address backed memory.
 
 - this section will be filled in shortly {FIXME!}
 
+## GStreamer Editing Services and NLE
+
+- Handle crossfade in complex scenarios by using the new `compositorpad::crossfade-ratio`
+  property
+
+- Add API allowing to stop using proxies for clips in the timeline
+
+- Allow management of none square pixel aspect ratios by allowing application to deal
+  with them in the way they want
+
+- Misc fixes around the timeline editing API
+
 ## GStreamer validate
 
-- this section will be filled in shortly {FIXME!}
+- Handle running scenarios on live pipelines (in the "content sense", not the GStreamer one)
+
+- Implement RTSP support with a basic server based on gst-rtsp-server, and add RTSP
+  1.0 and 2.0 integration tests
+
+- Implement a plugin that allows users to implement configurable tests. It currently
+  can check if a particular element is added a configurable number of time in the
+  pipeline. In the future that plugin should allow us to implement specific tests of
+  any kind in a descriptive way
+
+- Add a `verbosity` configuration which behaves in a similare way as the `gst-launch-1.0`
+  `verbose` flags allowing the informations to be outputed on any running pipeline when
+  enabling GstValidate.
+
+- Misc optimization in the launcher, making the tests run much faster.
+
+## GStreamer C# bindings
+
+- Port to the [meson](http://mesonbuild.com) build system, autotools support has been
+  removed
+
+- Use a new [GlibSharp](https://github.com/GLibSharp/GtkSharp) version, set as a meson
+  subproject
+
+- Update wrapped API to GStreamer 1.14
+
+- Removed the need for "glue" code
+
+- Provide a [nuget](https://www.nuget.org/packages/GstSharp/)
+
+- Misc API fixes
 
 ## GStreamer Python Bindings
 
