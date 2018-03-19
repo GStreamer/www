@@ -1,15 +1,17 @@
 # GStreamer 1.14 Release Notes
 
-GStreamer 1.14.0 has not been released yet. It is scheduled for release
-in early March 2018.
+The GStreamer team is proud to announce a new major feature release in the
+stable 1.x API series of your favourite cross-platform multimedia framework!
 
-There are unstable pre-releases available for testing and development purposes.
-The latest pre-release is version 1.13.91 (rc2) and was released on 13 March 2018.
+As always, this release is again packed with new features, bug fixes and other
+improvements.
+
+GStreamer 1.14.0 was released on 19 March 2018.
 
 See [https://gstreamer.freedesktop.org/releases/1.14/][latest] for the latest
 version of this document.
 
-*Last updated: Monday 12 March 2018, 18:00 UTC [(log)][gitlog]*
+*Last updated: Monday 19 March 2018, 12:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.14/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.14/release-notes-1.14.md
@@ -998,10 +1000,6 @@ allocators with physical address backed memory.
 
 - Misc API fixes
 
-## GStreamer Python Bindings
-
-- this section will be filled in shortly {FIXME!}
-
 ## Build and Dependencies
 
 - the new WebRTC support in gst-plugins-bad depends on the GStreamer elements
@@ -1183,7 +1181,16 @@ which is a stable branch.
 
 ### 1.14.0
 
-1.14.0 is scheduled to be released in early March 2018.
+1.14.0 was released on 19 March 2018.
+
+<a name="1.14.1"></a>
+
+### 1.14.1
+
+The first 1.14 bug-fix release (1.14.1) is scheduled to be released around
+the end of March or beginning of April.
+
+This release only contains bugfixes and it should be safe to update from 1.14.0.
 
 ## Known Issues
 
@@ -1209,6 +1216,7 @@ expected that feature freeze will be around August 2018 followed by several
 - - -
 
 *These release notes have been prepared by Tim-Philipp Müller with*
-*contributions from Sebastian Dröge and Sreerenj Balachandran.*
+*contributions from Sebastian Dröge, Sreerenj Balachandran, Thibault Saunier*
+*and Víctor Manuel Jáquez Leal.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*

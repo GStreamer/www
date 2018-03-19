@@ -9543,5 +9543,70 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+    <item>
+      <date>2018-03-19 20:00</date>
+        <title>GStreamer 1.14.0 new major stable release</title>
+        <content>
+<p>
+The GStreamer team is proud to announce a new major feature release of
+your favourite cross-platform multimedia framework!
+</p>
+<p>
+The 1.14 release series adds new features on top of the previous 1.12 series
+and is part of the API and ABI-stable 1.x release series of the GStreamer
+multimedia framework.
+</p>
+<p>
+  <b>Highlights:</b>
+  <ul>
+  <li>WebRTC support: real-time audio/video streaming to and from web browsers</li>
+  <li>Experimental support for the next-gen royalty-free AV1 video codec</li>
+  <li>Video4Linux: encoding support, stable element names and faster device probing</li>
+  <li>Support for the Secure Reliable Transport (SRT) video streaming protocol</li>
+  <li>RTP Forward Error Correction (FEC) support (ULPFEC)</li>
+  <li>RTSP 2.0 support in <tt>rtspsrc</tt> and gst-rtsp-server</li>
+  <li>ONVIF audio backchannel support in gst-rtsp-server and <tt>rtspsrc</tt></li>
+  <li><tt>playbin3</tt> gapless playback and pre-buffering support</li>
+  <li><tt>tee</tt>, our stream splitter/duplication element, now does allocation query
+     aggregation which is important for efficient data handling and zero-copy</li>
+  <li>QuickTime muxer has a new prefill recording mode that allows file import
+      in Adobe Premiere and FinalCut Pro while the file is still being written.</li>
+  <li><tt>rtpjitterbuffer</tt> fast-start mode and timestamp offset adjustment smoothing</li>
+  <li><tt>souphttpsrc</tt> connection sharing, which allows for connection reuse, cookie sharing, etc.</li>
+  <li><tt>nvdec</tt>: new plugin for hardware-accelerated video decoding using the NVIDIA NVDEC API</li>
+  <li>Adaptive DASH trick play support</li>
+  <li><tt>ipcpipeline</tt>: new plugin that allows splitting a pipeline across
+      multiple processes</li>
+  <li>Major <tt>gobject-introspection</tt> annotation improvements for large parts of the library API</li>
+  <li>GStreamer C# bindings have been revived and seen many updates and fixes</li>
+  <li>The externally-maintained GStreamer Rust bindings have many
+      usability improvements and cover most of the API now</li>
+  </ul>
+</p>
+<p>
+Full release notes can be found <a href="&site;/releases/1.14/">here</a>.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+        <p>
+You can download release tarballs directly here: 
+<a href="&site;/src/gstreamer/gstreamer-1.14.0.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.14.0.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.14.0.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.14.0.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.14.0.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.14.0.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.14.0.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.14.0.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.14.0.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-validate/gst-validate-1.14.0.tar.xz">gst-validate</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.14.0.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.14.0.tar.xz">gstreamer-sharp</a>, or
+<a href="&site;/src/gst-omx/gst-omx-1.14.0.tar.xz">gst-omx</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
 
