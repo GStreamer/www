@@ -882,7 +882,75 @@ allocators with physical address backed memory.
 
 ## GStreamer VAAPI
 
-- this section will be filled in shortly {FIXME!}
+- Improve DMABuf's usage, both upstream and dowstream, and
+  ``memory:DMABuf`` caps feature is also negotiated when the
+  dmabuf-based buffer cannot be mapped onto user-space.
+
+- VA initialization was fixed when it is used in headless systems.
+
+- VA display sharing, through ``GstContext``, among the pipeline, has
+  been improved, adding the possibility to the application share its
+  VA display (external display) via ``gst.vaapi.app.Display`` context.
+
+- VA display cache was removed.
+
+- libva's log messages are now redirected into the GStreamer log handler.
+
+- Decoders improved their upstream re-negotiation by avoiding to
+  re-instantiate the internal decoder if stream caps are compatible
+  with the previous one.
+
+- When downstream doesn't support ``GstVideoMeta`` and the decoded
+  frames don't have standard strides, they are copied onto system
+  memory-based buffers.
+
+- H.264 decoder has a ``low-latency`` property, for live streams which
+  doesn't conform the H.264 specification but still it is required to
+  push the frames to downstream as soon as possible.
+
+- As part of the Google Summer of Code 2017 the H.264 decoder drops
+  MVC and SVC frames when ``base-only`` property is enabled.
+
+- Added support for libva-2.0 (VA-API 1.0).
+
+- H.264 and H.265 encoders handle Region-Of-Interest metas by adding a
+  ``delta-qp`` for every rectangle within the frame specified by those
+  metas.
+
+- Encoders for H.264 and H.265 set the media profile by the downstream
+  caps.
+
+- H.264 encoder inserts an AU delimiter for each encoded frame when
+  ``aud`` property is enabled (it is only available for certain
+  drivers and platforms).
+
+- H.264 encoder supports for P and B hierarchical prediction modes.
+
+- All encoders handles a ``quality-level`` property, which is a number
+  from 1 to 8, where a lower number means higher quality, but slower
+  processing, and vice-versa.
+
+- VP8 and VP9 encoders support constant bit-rate mode (CBR).
+
+- VP8, VP9 and H.265 encoders support variable bit-rate mode (VBR).
+
+- Resurrected ``GstGLUploadTextureMeta`` handling for EGL backends.
+
+- H.265 encoder can configure its number of reference frames via the
+  ``refs`` property.
+
+- Add H.264 encoder ``mbbrc`` property, which controls the macro-block
+  bitrate as auto, on or off.
+
+- Add H.264 encoder ``temporal-levels`` property, to select the number
+  of temporal levels to be included.
+
+- Add to H.264 and H.265 encoders the properties ``qp-ip`` and
+  ``qp-ib``, to handle the QP (quality parameter) difference between
+  the I and P frames, and the I and B frames, respectively.
+
+- ``vaapisink`` was demoted to marginal rank on Wayland because COGL
+  cannot display YUV surfaces.
 
 ## GStreamer Editing Services and NLE
 
