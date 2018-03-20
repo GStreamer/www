@@ -706,7 +706,7 @@ properly support multiple sharing contexts in different threads; on Linux
 Nouveau is known to be broken in this respect, whilst NVIDIA's proprietary
 drivers and most other drivers generally work fine, and the experience with
 Intel's driver seems to be mixed; some proprietary embedded Linux drivers
-don't work; macOS works).
+don't work; macOS works.
 
 [gtksink]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-gtksink.html
 [gtkglsink]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good-plugins/html/gst-plugins-good-plugins-gtkglsink.html
