@@ -65,11 +65,13 @@ improvements.
 
 - The [externally][gstreamer-rs] maintained GStreamer Rust bindings had many
   usability improvements and cover most of the API now. Coinciding with the
-  1.14 release, a new release with the 1.14 API additions is happening.
+  1.14 release, a [new release][gstreamer-rs-0-11] with the 1.14 API additions
+  is happening.
 
 [av1]: https://en.wikipedia.org/wiki/AV1
 [srt]: https://www.srtalliance.org/#about_srt
 [gstreamer-rs]: https://github.com/sdroege/gstreamer-rs
+[gstreamer-rs-0-11]: https://coaxion.net/blog/2018/03/gstreamer-rust-bindings-0-11-plugin-writing-infrastructure-0-2-release/
 
 ## Major new features and changes
 
