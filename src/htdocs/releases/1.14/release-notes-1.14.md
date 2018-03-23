@@ -512,6 +512,9 @@ GStreamer Conference in Prague.
   passing through data (e.g. because target-timecode and end-timecode
   respectively have been reached).
 
+- 'alsamidisrc' element has been broken for many many years and has now been
+  repaired allowing live capture from your MIDI HW.
+
 [avwait]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/gst-plugins-bad-plugins-avwait.html
 
 - `h265parse` and `h265parse` will try harder to make upstream output the same
