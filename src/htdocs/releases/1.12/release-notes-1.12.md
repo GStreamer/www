@@ -877,6 +877,7 @@ and users should upgrade at their earliest convenience.
  - libav: some build issues fixes
  - rtsp-server: Place netaddress meta on packets received via TCP. Fixes keep-alive via RTCP in TCP interleaved mode.
  - rtsp-server: gi annotation fixes
+ - gst-libav: internal ffmpeg copy was updated to ffmpeg 3.3.6
  - Various fixes for memory leaks, deadlocks and crashes in all modules
  - ... and many, many more!
 
