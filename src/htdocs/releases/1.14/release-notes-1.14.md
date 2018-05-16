@@ -1,17 +1,14 @@
 # GStreamer 1.14 Release Notes
 
-The GStreamer team is proud to announce a new major feature release in the
-stable 1.x API series of your favourite cross-platform multimedia framework!
+GStreamer 1.14.0 was originally released on 19 March 2018.
 
-As always, this release is again packed with new features, bug fixes and other
-improvements.
-
-GStreamer 1.14.0 was released on 19 March 2018.
+The latest bug-fix release in the 1.14 series is [1.14.1](#1.14.1) and was
+released on 17 May 2018.
 
 See [https://gstreamer.freedesktop.org/releases/1.14/][latest] for the latest
 version of this document.
 
-*Last updated: Monday 19 March 2018, 12:00 UTC [(log)][gitlog]*
+*Last updated: Thursday 17 May 2018, 12:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.14/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.14/release-notes-1.14.md
@@ -804,7 +801,7 @@ allocators with physical address backed memory.
 [add-ring-buffer-logger]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html#gst-debug-add-ring-buffer-logger
 
 - ['fakevideosink][fakevideosink] is a null sink for video data that advertises
-  video-specific metas ane behaves like a video sink. See above for more details.
+  video-specific metas and behaves like a video sink. See above for more details.
 
 - `gst_util_dump_buffer()` prints the content of a buffer to stdout.
 
@@ -959,6 +956,10 @@ allocators with physical address backed memory.
 - ``vaapisink`` was demoted to marginal rank on Wayland because COGL
   cannot display YUV surfaces.
 
+More details in Víctor's blog post [*GStreamer VA-API 1.14: what’s new?*][gst-vaapi-blog].
+
+[gst-vaapi-blog]: https://blogs.igalia.com/vjaquez/2018/03/27/gstreamer-va-api-1-14-whats-new/
+
 ## GStreamer Editing Services and NLE
 
 - Handle crossfade in complex scenarios by using the new `compositorpad::crossfade-ratio`
@@ -1067,7 +1068,7 @@ candidates is advised to upgrade those two modules at the same time.
 
 ### macOS and iOS
 
-- this section will be filled in shortly {FIXME!}
+- no major changes in macOS and iOS support, only bugfixes
 
 ### Windows
 
@@ -1098,6 +1099,8 @@ candidates is advised to upgrade those two modules at the same time.
      compared to shared mode where WASAPI's engine period is 10ms. This can
      be activated via the `"exclusive"` property.
 
+   - Also see Nirbheek's blog post [*Low Latency Audio on Windows with GStreamer*][wasapi-blog].
+
 - There are now `GstDeviceProvider` implementations for the `wasapi` and
   `directsound` plugins, so it's now possible to discover both audio sources
   and audio sinks on Windows via the [`GstDeviceMonitor` API][devicemonitor]
@@ -1108,6 +1111,7 @@ candidates is advised to upgrade those two modules at the same time.
 
 [devicemonitor]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstDeviceMonitor.html
 [wasapi-plugin]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/gst-plugins-bad-plugins-plugin-wasapi.html
+[wasapi-blog]: http://blog.nirbheek.in/2018/03/low-latency-audio-on-windows-with.html
 
 ## Contributors
 
@@ -1192,10 +1196,97 @@ which is a stable branch.
 
 ### 1.14.1
 
-The first 1.14 bug-fix release (1.14.1) is scheduled to be released around
-the end of March or beginning of April.
+The first 1.14 bug-fix release (1.14.1) was released on 17 May 2018.
 
 This release only contains bugfixes and it should be safe to update from 1.14.0.
+
+#### Noteworthy bugfixes in 1.14.1
+
+ - GstPad: Fix race condition causing the same probe to be called multiple times
+ - Fix occasional deadlocks on windows when outputting debug logging
+ - Fix debug levels being applied in the wrong order
+ - GIR annotation fixes for bindings
+ - audiomixer, audioaggregator: fix some negotiation issues
+ - gst-play-1.0: fix leaving stdin in non-blocking mode after exit
+ - flvmux: wait for caps on all input pads before writing header even if source is live
+ - flvmux: don't wake up the muxer unless there is data, fixes busy looping if there's no input data
+ - flvmux: fix major leak of input buffers
+ - rtspsrc, rtsp-server: revert to RTSP RFC handling of sendonly/recvonly attributes
+ - rtpvrawpay: fix payloading with very large mtu sizes where everything fits into a single RTP packet
+ - v4l2: Fix hard-coded enabled v4l2 probe on Linux/ARM
+ - v4l2: Disable DMABuf for emulated formats when using libv4l2
+ - v4l2: Always set colorimetry in `S_FMT`
+ - asfdemux: Set stream-format field for H264 streams and handle H.264 in bytestream format
+ - x265enc: Fix tagging of keyframes on output buffers
+ - ladspa: Fix critical during plugin load on Windows
+ - decklink: Fix COM initialisation on Windows
+ - h264parse: fix re-use across pipeline stop/restart
+ - mpegtsmux: fix force-keyframe event handling and PCR/PMT changes that would confuse some players with generated HLS streams
+ - adaptivedemux: Support period change in live playlist
+ - rfbsrc: Fix support for applevncserver and support NULL pool in decide_allocation
+ - jpegparse: Fix APP1 marker segment parsing
+ - h265parse: Make caps writable before modifying them, fixes criticals
+ - fakevideosink: request an extra buffer if enable-last-sample is enabled
+ - wasapisrc: Don't provide a clock based on WASAPI's clock
+ - wasapi: Only use audioclient3 when low-latency, as it might otherwise glitch with slow CPUs or VMs
+ - wasapi: Don't derive device period from latency time, should make it more robust against glitches
+ - audiolatency: Fix wave detection in buffers and avoid bogus pts values while starting
+ - msdk: fix plugin load on implementations with only HW support
+ - msdk: dec: set framerate to the driver only if provided, not in 0/1 case
+ - msdk: Don't set extended coding options for JPEG encode
+ - rtponviftimestamp: fix state change function init/reset causing races/crashes on shutdown
+ - decklink: fix initialization failure in windows binary
+ - ladspa: Fix critical warnings during plugin load on Windows and fix dependencies in meson build
+ - gl: fix cross-compilation error with viv-fb
+ - qmlglsink: make work with eglfs_kms
+ - rtspclientsink: Don't deadlock in preroll on early close
+ - rtspclientsink: Fix client ports for the RTCP backchannel
+ - rtsp-server: Fix session timeout when streaming data to client over TCP
+ - vaapiencode: h264: find best profile in those available, fixing negotiation errors
+ - vaapi: remove custom GstGL context handling, use GstGL instead. Fixes GL Context sharing with WebkitGtk on wayland
+ - gst-editing-services: various fixes
+ - gst-python: bump pygobject req to 3.8; fix GstPad.set_query_function(); dist autogen.sh and configure.ac in tarball
+ - g-i: pick up GstVideo-1.0.gir from local build directory in GstGL build
+ - g-i: update constant values for bindings
+ - avoid duplicate symbols in plugins across modules in static builds
+ - ... and many, many more!
+
+#### Cerbero build tool and packaging changes in 1.14.1
+
+Toolchain updates on iOS and Android necessitated a fairly large number of
+changes in our cerbero build tool used to create our binary packages for the
+various platforms we support:
+
+ - Add support for Ubuntu 18.04 in cerbero
+ - Fix generation of fat shared libraries on macOS
+ - gnutls: also rename assembly functions on macos/ios to fix link errors
+ - gnutls: fix assembly symbol names for windows x86
+ - openssl: fix linking on android/armv7
+ - openssl: fix linker issue with Android NDK's r16 binutils
+ - ffmpeg: disable asm for android x86 to fix issues when linking with apps
+ - x264: disable asm for android x86 to fix issues when linking with apps
+ - gnutls: rename private symbols for armv8, x86 to not conflict with openssl
+ - mpg123: disable assembly on android/x86 to fix linker problems with relocations
+ - Check built version while loading recipe and rebuild if needed
+ - Fix packaging of libgcc_s_sjlj which was missing in Windows packages
+ - Make not-found in library search fatal so we don't accidentally ship broken packages
+ - ship the proxy plugin which was new in 1.14
+ - Fix git commands accidentally pulling in locally built libraries and failing
+
+For a full list of bugfixes see [Bugzilla][buglist-1.14.1]. Note that this is
+not the full list of changes. For the full list of changes please refer to the
+GIT logs or ChangeLogs of the particular modules.
+
+[buglist-1.14.1]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=270310&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.14.1
+
+<a name="1.14.2"></a>
+
+### 1.14.2
+
+The second 1.14 bug-fix release (1.14.2) is scheduled to be released around
+mid-June 2018.
+
+This release only contains bugfixes and it should be safe to update from 1.14.x.
 
 ## Known Issues
 
@@ -1204,6 +1295,10 @@ This release only contains bugfixes and it should be safe to update from 1.14.0.
   packages due to a [build system issue][bug-770264].
 
 [bug-770264]: https://bugzilla.gnome.org/show_bug.cgi?id=770264
+
+- The `gst-libav` module currently won't build against the newly-released
+  ffmpeg 4.0 (as in F28). Use the internal ffmpeg copy instead, if you
+  build using autotools.
 
 ## Schedule for 1.16
 
