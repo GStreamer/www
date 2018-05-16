@@ -4,6 +4,9 @@ GStreamer 1.12.0 was originally released on 4th May 2017.
 The latest bug-fix release in the 1.12 series is [1.12.5](#1.12.5) and was
 released on 28 March 2018.
 
+1.12.5 will be the last release in the 1.12 release series which has now
+been superseded by the [1.14 release series][1.14].
+
 See [https://gstreamer.freedesktop.org/releases/1.12/][latest] for the latest
 version of this document.
 
@@ -11,6 +14,7 @@ version of this document.
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.12/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.12/release-notes-1.12.md
+[1.14]: https://gstreamer.freedesktop.org/releases/1.14/
 
 ## Introduction
 
