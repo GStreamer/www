@@ -1273,6 +1273,23 @@ various platforms we support:
  - ship the proxy plugin which was new in 1.14
  - Fix git commands accidentally pulling in locally built libraries and failing
 
+#### Contributors to 1.14.1
+
+Antonio Ospite, Aurélien Zanelli, Brendan Shanks, Carlos Rafael Giani,
+Edward Hervey, Emilio Pozuelo Monfort, Enrique Ocaña González, Garima Gaur,
+Georg Lippitsch, Guillaume Desmottes, Havard Graff, Hoonhee Lee, Hyunjun Ko,
+James Stevenson, Jan Alexander Steffens (heftig), Jan Schmidt, Joakim Johansson,
+Jun Xie, Kai Kang, Kirill Marinushkin, Mark Nauwelaerts, Matej Knopp,
+Mathieu Duponchelle, Matthew Waters, Matthias Fend, Michael Olbrich,
+Mikhail Fludkov, Nicolas Dufresne, Nirbheek Chauhan, Olivier Crête, Omar Akkila,
+Patrik Nilsson, Philippe Normand, Pierre Labastie, Sebastian Dröge, Seungha Yang,
+Sreerenj Balachandran, Stian Selnes, Takeshi Sato, Thibault Saunier,
+Tim-Philipp Müller, U. Artie Eoff, Víctor Manuel Jáquez Leal, Vivia Nikolaidou,
+Whoopie, Xabier Rodriguez Calvar, Xavier Claessens, Zeeshan Ali, and
+countless others.
+
+#### List of bugs fixed in 1.14.1
+
 For a full list of bugfixes see [Bugzilla][buglist-1.14.1]. Note that this is
 not the full list of changes. For the full list of changes please refer to the
 GIT logs or ChangeLogs of the particular modules.
