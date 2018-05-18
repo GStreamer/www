@@ -1314,8 +1314,8 @@ This release only contains bugfixes and it should be safe to update from 1.14.x.
 [bug-770264]: https://bugzilla.gnome.org/show_bug.cgi?id=770264
 
 - The `gst-libav` module currently won't build against the newly-released
-  ffmpeg 4.0 (as in F28). Use the internal ffmpeg copy instead, if you
-  build using autotools.
+  ffmpeg 4.0 (as in RPM Fusion for Fedora 28). Use the internal ffmpeg copy
+  instead, if you build using autotools.
 
 ## Schedule for 1.16
 
