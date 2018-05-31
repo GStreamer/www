@@ -27,30 +27,11 @@ For 0.10, Gian Mario Tagliaretti has written some documents for using GStreamer 
   <binding>
     <id>perl</id>
     <name>Perl</name>
-    <status>Released as part of the <a
-      href="http://gtk2-perl.sourceforge.net">gtk2-perl</a> project.
+    <status>Released, See the CPAN module <ahref="https://metacpan.org/pod/GStreamer1">GStreamer1</a>.
     </status>
     <body>
-    <p>See the <a href="http://gtk2-perl.sourceforge.net">gtk2-perl</a> project
-    page for more information. Releases can be had directly from <a
-    href="http://sourceforge.net/project/showfiles.php?group_id=64773&amp;package_id=150831">the
-    sourceforge download page</a>.
-    </p>
-    <p>
-      <ul>
-        <lh>Documentation:</lh>
-        <li>
-          <a href="http://gtk2-perl.sourceforge.net/doc/pod/GStreamer.html">
-          GStreamer - Perl interface overview
-          </a>
-        </li>
-        <li>
-          <a href="http://gtk2-perl.sourceforge.net/doc/pod/GStreamer/index.html">
-          Automatically generated GStreamer Perl API documentation
-          </a>
-        </li>
-      </ul>
-    </p>
+    <p>See the <a href="https://metacpan.org/pod/GStreamer1">CPAN GStreamer1</a> page
+    for more details.
     </body>
   </binding>
 
