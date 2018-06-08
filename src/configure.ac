@@ -18,6 +18,7 @@ htdocs/conference/2014/Makefile
 htdocs/conference/2015/Makefile
 htdocs/conference/2016/Makefile
 htdocs/conference/2017/Makefile
+htdocs/conference/2018/Makefile
 htdocs/dev/Makefile
 htdocs/download/Makefile
 htdocs/features/Makefile

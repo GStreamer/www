@@ -1,6 +1,6 @@
 Options +FollowSymLinks
 
-Redirect /conference/index.html /conference/2017/
+Redirect /conference/index.html /conference/2018/
 Redirect /conference/2014/gstreamer-sponsor.pdf /conference/2014/gstreamer-conference-sponsor-brief-2014.pdf
 Redirect /conference/2015/speakers.html /conference/2015/talks-and-speakers.html
 

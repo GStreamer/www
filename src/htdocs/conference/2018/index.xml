@@ -1,0 +1,663 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+<title>GStreamer Conference 2018</title>
+
+<body>
+
+<style>
+li {
+  padding: 0px 0px 10px;
+}
+</style>
+
+<table>
+<tr><td width="70%">
+
+<h1>GStreamer Conference 2018</h1>
+
+  <h2>25-26 October 2018 · Edinburgh, Scotland, UK</h2>
+
+<p>
+
+<style>
+.crop-hillview{
+    float:left;
+    margin:.5em 10px .5em 0;
+    overflow:hidden; /* this is important */
+    position:relative; /* this is important too */
+    border:1px solid #ccc;
+    width:280px;
+    height:210px;
+    }
+.crop-hillview img{
+    position:absolute;
+    top:-42px;
+    right:-56px;
+    }
+</style>
+
+<table>
+<tr>
+  <td>
+    <div class="crop-hillview">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/9/91/Edinburgh._View_from_Calton_Hill.jpg"
+         alt="Edinburgh View from Calton Hill"
+         width="336"
+         height="252"
+    />
+    </div>
+  </td>
+</tr>
+</table>
+</p>
+
+  <br/>
+
+  <p>
+  The <b>9<sup><small>th</small></sup> GStreamer Conference</b> will take place
+  on Thursday and Friday <b>25-26 October 2018</b> at Summerhall in
+  <b>Edinburgh, Scotland, UK</b>.
+  </p>
+  <p>
+  This is just after the <a href="http://events.linuxfoundation.org/events/embedded-linux-conference-europe">Embedded Linux Conference Europe (ELCE)</a>,
+  but not officially co-hosted with it and at a different venue in Edinburgh.
+  </p>
+
+<!--
+  <p>
+  Talks will be recorded by <a href="http://www.ubicast.eu/">Ubicast</a> and
+  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2016">GStreamer Conference 2016 videos</a>
+  </p>
+  <p>
+  Slides for some of the talks and the lightning talks can be found in the
+  <a href="&site;/data/events/gstreamer-conference/2016/">GStreamer Conference 2016 slides</a>
+  folder.
+  </p>
+-->
+<!--
+  <h2>Schedule</h2>
+  <p>
+  <a href="schedule.html">Click here for the conference schedule</a>.
+  </p>
+-->
+  <h2>Details</h2>
+  <p>
+  The GStreamer Conference is a conference for developers, decision-makers,
+  community members, industry partners, and anyone else interested in the
+  GStreamer multimedia framework or Open Source and cross-platform multimedia.
+  </p>
+
+  <h2>Call for Papers</h2>
+  <p>
+  The call for papers is not open yet, but will be announced here and on
+  the <a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>.
+  You can also <a href="https://twitter.com/GStreamer">follow @GStreamer on Twitter</a>.
+  </p>
+<!--
+  <p>
+  The call for papers is now open and talk proposals can still be submitted.
+  </p>
+  <p>
+  We still accept submissions subject to slot availability.
+  </p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk
+  (please allow at least 5 minutes for questions at the end as well).
+  </p>
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+  <p>
+  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
+  or 45 minutes, including questions. We will only have a small number of
+  45-minute slots available, so please consider whether you could also make do
+  with 30 minutes before asking for a 45-minute slot.
+  </p>
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things.
+  </p>
+  <p>
+  Please send all proposals to FIXME
+  </p>
+-->
+
+  <h2>Showcase or Lightning Talks</h2>
+  <p>
+    There will again be opportunities for short lightning talks for those who
+    do not wish to present a full talk, but just want to showcase something
+    they're working on, or present a problem or challenge they are facing or
+    have solved, and that they think might be interesting for others to hear
+    about.
+  </p>
+<!--
+  <p>
+    Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
+  </p>
+  <p>
+    Simply send a quick mail to FIXME above to reserve your slot (subject to availability).
+  </p>
+  <p>
+    There is no deadline for Lightning Talk submissions, slots will be
+    allocated on a first-come first-serve basis.
+  </p>
+-->
+
+  <h2>Social Events</h2>
+  <p>
+    There will be a social event for registered attendees on Thursday evening.
+  </p>
+
+<!--
+  <h3>Friday: Welcome drinks, food and pre-registration at the Prague Beer Museum</h3>
+  <p>
+    Join us for some drinks and food at the <a href="http://www.praguebeermuseum.cz/en/"><b>Prague Beer Museum</b></a>
+    (<a href="https://goo.gl/maps/rSdx5pmhGd72">Smetanovo Nabrezi location</a>, near the Charles Bridge / Karlův most)! This is
+    a cash-only pub, so credit cards are not accepted (they seem to accept cash in CZK, EUR and USD though). Food and drinks will be
+    available for purchase. (<a href="http://www.praguebeermuseum.cz/en/content?page=submenu&amp;XUBPAGEHL=2&amp;XUBPAGE=99">Food menu</a>,
+    <a href="http://www.praguebeermuseum.cz/en/content?page=submenu&amp;XUBPAGEHL=2&amp;XUBPAGE=98">Drinks menu</a>).
+  </p>
+  <p>
+    We need to achieve a minimum spend, so if there's anything on the food menu
+    that appeals to you, we'd be grateful if you decided to have dinner there
+    as well. Please order at the table (not at the bar), so that all spending
+    is counted towards us.
+  </p>
+  <p>
+    We have room reserved upstairs (technically from 8pm, but should be okay to show up a bit earlier). There will be service at the tables.
+  </p>
+  <p>
+    Getting there: From Node5, it's a 35-minute walk (2.9km), 9-minute taxi
+    ride, or 20-25 minutes by public transport (including walking). Either
+    walk to Andel and catch a tram or B-line metro from there, or catch tram 15
+    from <i>Na Knížecí</i> which is just around the corner from Node5 and head
+    north to stop <i>Malostranské náměstí</i> and stroll across the Charles
+    Bridge.
+  </p>
+  <p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.0676096856705!2d14.411800750830249!3d50.08502102140876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94ea75b51be7%3A0x2d7ae400e7b1700!2sPrague+Beer+Museum!5e0!3m2!1sen!2suk!4v1508271551289" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
+  </p>
+
+  <h3>Saturday: Food and drinks at La Loca Music Bar and Lounge</h3>
+  <p>
+    Our main social event will be on Saturday at <a href="https://www.laloca.cz/en/home"><b>La Loca Music Bar and Lounge</b></a>
+    from ca. 19.30 until late. Food and drinks will be provided (thanks to our sponsors!),
+    including vegetarian options.
+  </p>
+  <p>
+    Get there by public transport:
+    The easiest way to get there from Node5 is to jump onto Tram 5 at stop
+    <i>Na Knížecí</i> which is just around the corner from Node5, and go
+    4 stops to <i>Myslíkova</i>. La Loca Music Bar is just around the corner
+    from there (<a href="https://goo.gl/maps/Uc12udep93C2">Odborů 278/4, Prague 2</a>).
+    It should be in the same building as "Mosaic House".
+  </p>
+  <p>
+    There will also be a cloakroom where you can leave your jackets/bags
+    (although neither we nor the bar will take responsibility for any lost or
+    damaged items of course).
+  </p>
+  <p>
+    Please don't forget to bring your badge.
+  </p>
+  <p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.467555590172!2d14.415923950829997!3d50.077532421945584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94f3de598d9d%3A0xac14b5dbc8b5939c!2sLa+Loca+MUSIC+BAR+%26+LOUNGE!5e0!3m2!1sen!2suk!4v1508276652986" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
+  </p>
+-->
+
+  <h2>Schedule and speakers list</h2>
+  <p>
+    A detailed schedule is not yet available, and the call for papers
+    is not yet open. You can have a look at <a href="../2017/schedule.html">last year's schedule</a>
+    to get an idea of the range of topics and speakers.
+<!--
+    <a href="schedule.html">Click here for the full schedule</a>
+-->
+  </p>
+<!--
+  <p>
+    We have an exciting range of topics and speakers lined up for you again this year:
+    <ul>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#gstreamer-webrtc">GStreamer WebRTC</a><br /><small><i>Matthew Waters, Centricular</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#zero-copy-pipelines">Implementing Zero-Copy pipelines in GStreamer</a><br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li><del><a href="&site;/conference/2017/talks-and-speakers.html#meson-macos-windows">Enabling Cross-Platform Development on macOS and Windows with Meson</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></del></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#network-music">Network Music Performance: A case study using GStreamer</a><br /><small><i>Kostas Tsioutas, Ionian University Corfu</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#rust">Oxidising GStreamer: Rust out your multimedia!</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#aligning-audio-video">Aligning audio and video streams' start and end</a><br /><small><i>Vivia Nikolaidou, ToolsOnAir</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#photobooth">Photobooth: An exemplary multi-disciplinary project</a><br /><small><i>Andreas Frisch</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#android-camera3">GStreamer in the world of Android Camera3 cameras</a><br /><small><i>Olivier Crête, Collabora</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#audiomixer">Audio Mixing with the new audiomixer element</a><br /><small><i>Stefan Sauer, Google</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#gst-vaapi">The GStreamer-VAAPI report</a><br /><small><i>Víctor M. Jáquez L., Igalia</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#gst-mfx">gst-mfx: Full-Featured, High Performance and Cross-Platform GStreamer Plugins Using Intel Media SDK</a><br /><small><i>Ishmael Sameen; Xavier Hallade, Intel</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#vaapi-rust">VA-API rust-binding</a><br /><small><i>Hyunjun Ko, Igalia</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#gstreamer-daemon">GStreamer Daemon - building a media server in under 30 minutes</a><br /><small><i>David Soto, RidgeRun</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#high-packet-rate-video">Preparing GStreamer for high packet-rate video streaming</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#gst-shark-profiling">GstShark profiling: a real-life example</a><br /><small><i>Michael Gruner, RidgeRun</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#pipewire">PipeWire</a><br /><small><i>Wim Taymans, RedHat</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#mse-on-webkit">Media Source Extensions on WebKit using GStreamer</a><br /><small><i>Enrique Ocaña González, Igalia</i></small></li>
+    <li><del>icamerasrc: a multi-pad source element<br /><small><i>Xi Cao, Intel</i></small></del></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#in-the-air">GStreamer is in the air</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#containers-qa-fuzzing">Of GStreamer, containers, QA and fuzzing</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#av1">AV1: The Quest is Nearly Complete</a><br /><small><i>Thomas Daede, Mozilla</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#efficient-video-on-embedded-gpu">Efficient Video Processing on Embedded GPU</a><br /><small><i>Tobias Kammacher, Zurich University of Applied Sciences</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#synchronised-playback">Synchronised Playback Made Easy</a><br /><small><i>Arun Raghavan</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#moar-tests">Moar Better Tests</a><br /><small><i>Håvard Graff, Pexip</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#fec">So you think you can FEC?</a><br /><small><i>Mikhail Fludkov &amp; Erlend Graff, Pexip</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#dma-fences">Linux Explicit DMA Fences in GStreamer</a><br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li><a href="&site;/conference/2017/talks-and-speakers.html#video-over-dds">Video over the Data Distribution Service (DDS) using GStreamer</a><br /><small><i>Stefan Kimmer, S2E Software, Systems and Control</i></small></li>
+    <li>... and more (we still have a few free slots and are still accepting proposals!)<br /><small><i></i></small></li>
+  </ul>
+  </p>
+
+  <p>
+    <b>Lightning Talks:</b>
+    <ul>
+    <li>A big year for Video4Linux2 support in GStreamer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>GstGPGPU - GstCUDA and GstOpenCL <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
+    <li>Playbin3/decodebin3 status update <small><br /><i>Edward Hervey, Centricular</i></small></li>
+    <li>GStreamer and OpenCV using a GstOpenCV element <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
+    <li>RTP Bundle Support <small><br /><i>Håvard Graff, Pexip</i></small></li>
+    <li>ipcpipeline - Split a pipeline into multiple processes <small><br /><i>George Kiagiadakis, Collabora</i></small></li>
+    <li>GstPriQueue<sup><a href="https://github.com/pexip/gstreamer/commit/b466a7d0d930b359bccd05109d3a54824edbf867">1</a></sup> <small><br /><i>Erlend Graff, Pexip</i></small></li>
+    <li>DAMPAT: Dynamic Adaptation of Multimedia Presentations in Application Mobility <small><br /><i>Francisco Velázquez, University of Oslo</i></small></li>
+    <li>gst-debugger is still a thing! <small><br /><i>Marcin Kolny, Amazon</i></small></li>
+    <li>GStreamer-sharp: the revival of our .net bindings <small><br /><i>Thibault Saunier, Samsung</i></small></li>
+    <li>GStreamer support for RTSP protocol version 2.0 (the first implementation ever!) <small><br /><i>Thibault Saunier, Samsung</i></small></li>
+    <li>Pitivi 1.0 finally on sight! <small><br /><i>Thibault Saunier, Samsung</i></small></li>
+    <li>Using GStreamer for UAV Computer Vision Applications in Consumer and Commercial Spaces <small><br /><i>Braden Scothern and Matt Stoker, Teal Drones</i></small></li>
+    <li>Alternative RTMP implementation<br /><small><i>Jan Alexander Steffens, make.tv</i></small></li>
+    <li>A source element for Android Camera 2 NDK API<br /><small><i>Justin Kim, Collabora</i></small></li>
+    <li>GStreamer DVR for deploying mpeg-dash format<br /><small><i>채창복 (Changbok Chea), LGE</i></small></li>
+    <li>GStreamer debugging device for computer vision<br /><small><i>Hermann Stamm-Wilbrandt</i></small></li>
+    </ul>
+  </p>
+-->
+<!--
+  <p>
+    The full <a href="schedule.html">conference schedule is now available</a>.
+    We hope you will be as excited about this years
+    schedule as we are. In addition to of course many in-depth GStreamer talks
+    we also have presentations on some of the most important core Linux
+    multimedia technologies like OpenGL as well as the new kid on the block, Vulkan.
+  </p>
+-->
+  <h2>Who should attend?</h2>
+  <p>
+    Anyone interested in open source cross-platform multimedia is encouraged
+    to join us at the GStreamer Conference 2018!
+  </p>
+  <p>
+    Whether you are a hobbyist or a student interested in the field of
+    multimedia, or working for a company using or looking to use GStreamer
+    in their products, this is the perfect event for you to network at and
+    to learn more about the latest technological breakthroughs in and around
+    GStreamer. The talks will target both developers and managers.
+  </p>
+
+  <h2>Registration</h2>
+  <p>
+  Registration is not open yet, but will be announced here and on
+  the <a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>.
+  You can also <a href="https://twitter.com/GStreamer">follow @GStreamer on Twitter</a>.
+  </p>
+<!--
+  <p>
+  Registration is now open and will stay open until the conference.
+  </p>
+  <p>
+  <b><a href="https://ti.to/node5/gstreamer-conference-2017">Sign up for the GStreamer Conference here</a></b>
+  </p>
+-->
+  <p>
+  There will be separate registration options for both professionals and for students and hobbyists. The following prices are indicative and may still change before registration opens:
+  </p>
+  <p>
+    <div style="margin-left:5%">
+    <table width="80%" cellpadding="5">
+      <tr><td>Professional (Early Bird)</td><td>200 EUR (ca. 235 USD, 175 GBP) incl. lunch (early bird, until 15 Sept)</td></tr>
+      <tr><td>Professional (Regular)</td><td>300 EUR (ca. 350 USD, 265 GBP) incl. lunch (regular)</td></tr>
+      <tr><td>Student/Hobbyist/Community</td><td>25 EUR (ca. 30 USD) incl. lunch and social event</td></tr>
+    </table>
+    </div>
+  </p>
+  <p>
+    The registration fee includes lunch at the venue on both conference days
+    as well as access to the social event on Thursday evening.
+  </p>
+<!--
+  <p>
+    Ticket prices include 20% UK VAT as applicable.
+  </p>
+-->
+  <p>
+    For those uncertain about whether to register as a professional or hobbyist,
+    the general rule is that if your company pays for you or sponsors you, you
+    are a professional, and if you personally pay you are a student or hobbyist.
+    If in doubt drop us a mail or just register as hobbyist. The important
+    thing is that you'll make it to the conference!
+  </p>
+<!--
+  <h2>Call for Papers</h2>
+  <p>
+  The call for papers is now closed and talk proposals can no longer be
+  submitted. Anyone who has submitted a talk proposal should have received
+  an e-mail letting them know whether their proposal has been accepted.
+  </p>
+  <p>
+  Lightning talks may still be proposed.
+  </p>
+-->
+
+  <h2>Concurrent conferences</h2>
+  <p>
+    There are a few other events taking place alongside or just before the
+    GStreamer Conference on October 25-26 this year, so if you are making
+    your way to Edinburgh you might want to consider combining the GStreamer
+    Conference with some of the other events.
+  </p>
+  <p>
+  <table>
+    <tr><td><a href="https://events.linuxfoundation.org/events/elc-openiot-europe-2018/">Embedded Linux Conference Europe (ELCE) + OpenIoT Summit</a></td><td>22-24 October 2018</td></tr>
+  </table>
+  </p>
+
+  <h2>GStreamer hackfest</h2>
+  <p>
+    There will be a hackfest just after the conference, on Saturday and Sunday
+    27-28 October 2018 (possibly at another venue, to be determined).
+  </p>
+<!--
+  <p>
+    Please add yourself to the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2017">wiki page</a>
+    if you plan on attending the hackfest, so we have an idea of the number of
+    people to expect. Mail Tim or Sebastian or pop onto the #gstreamer IRC channel if you
+    don't have editing permissions for the wiki.
+  </p>
+-->
+
+  <h2>Sponsorship Opportunities</h2>
+  <p>
+  The GStreamer Conference 2018 is only possible thanks to the generous
+  financial support from our sponsors.
+
+  For this year's sponsorship opportunities please refer to
+  the <a href="&site;/conference/2018/gstreamer-conference-sponsor-brief-2018.pdf">sponsor brief (PDF)</a>
+  or get in touch with <a href="mailto:tim@gstreamer-foundation.org">Tim-Philipp Müller</a>.
+  </p>
+
+  <h2>City</h2>
+  <p>
+  This year's conference will take place in
+  <a href="http://en.wikipedia.org/wiki/Edinburgh">Edinburgh</a>, the capital
+  of Scotland.
+  </p>
+<!--
+  <p>
+  <i>Getting there</i>
+  </p><p>
+  <b>By air:</b> <i>Prague Václav Havel airport</i> (PRG) provides regional
+  and international connections.
+  </p>
+  <p>
+  <b>By train:</b> <i>Praha hl.n. (Praha hlavní nádraží)</i> is Prague's
+  central station. <i>Praha-Smíchov</i> station is close to the venue/Node5,
+  and international trains will often stop there as well.
+  </p>
+-->
+
+  <h2>Venue</h2>
+  <p>
+  The conference will take place at<br/>
+  <b><a href="https://www.summerhall.co.uk/about/location/">Summerhall</a></b><br/>
+  1 Summerhall<br/>
+  Edinburgh, EH9 1PL<br/>
+  Scotland, UK<br/>
+  </p>
+  <p>
+  The venue is in the university district and within walking distance from
+  Edinburgh Waverley station.
+  </p>
+  <p>
+  <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-3.184589445590973%2C55.93930291387254%2C-3.180906772613526%2C55.94068644028729&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/55.93999/-3.18275">View Larger Map</a></small>
+  </p>
+  <br/>
+  <p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.5505118750725!2d-3.1844506487556727!3d55.93982978050862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c781e4eb45a5%3A0xe70e80791c72a03d!2sSummerhall!5e0!3m2!1sen!2suk!4v1528713491022" width="600" height="450" frameborder="0" style="border:0" allowfullscreen="true"></iframe>
+  </p>
+
+  <h2>Hotels</h2>
+  <p>
+  There is no official conference hotel. <!-- but we have prepared a small list of
+  hotels for your convenience.-->
+  We will provide a list of hotel suggestions at a later date.
+  </p>
+<!--
+  <p>
+  For those who are planning to also attend the Embedded Linux Conference Europe,
+  the Hilton Prague where ELCE takes place is within 20 minutes door-to-door
+  from the GStreamer Conference venue Node5 (7 minutes by metro using line B
+  from Florenc to Anděl).
+  </p>
+  <p>
+  The following is just a small selection of hotels which may or may not be
+  suitable. Prague is a major city and tourist destination and as such has
+  many hotels and hostels in all price categories. The below is merely a small
+  selection, you can find more using the usual booking engines such as
+  booking.com, lastminute.com or airbnb.com. As always, it is advisable to book
+  your accommodation earlier rather than later.
+  </p>
+  <p>
+  The conference venue (<a href="http://node5.cz/">Node5</a>) is in the
+  district <i>Praha 5</i> not far from the transport hub and B line metro stop
+  <i>Anděl</i>. It should therefore be fairly easy reach by public transport or
+  taxi from all areas of the city and especially the city centre.
+  There is public transport in form of busses, trams and an underground metro.
+  </p>
+  <p>
+  The following hotels are located near the venue (Node5) and the Anděl
+  transport hub, and had at least a couple of rooms left at the time of
+  writing, but there are many other hotels in the city which may be better
+  located or provide better value:
+  <ul>
+    <li><a href="https://www.barcelo.com/en-gb/hotels/czech-republic/prague/occidental-praha-five/">Hotel Occidental Praha 5</a> - right next to venue/Node5 (~1 minute walk)</li>
+    <li><a href="http://www.hotelandel.cz/">Hotel Andel</a> - right next to venue/Node5 (~1 minute walk)</li>
+    <li><a href="http://www.akcent-hotel.cz/en/contact-location/">Akcent Hotel</a> - ca. 4 minute walk from venue/Node5</li>
+    <li><a href="http://www.ibis.com/gb/hotel-5211-ibis-praha-mala-strana/index.shtml">Hotel Ibis Praha Mala Strana</a> - near Anděl transport hub, ca. 8 minutes walk to venue/Node5</li>
+    <li><a href="http://www.mamaisonriverside.com/">Mamaison Hotel Riverside Prague</a> - 5-star hotel on the Praha 5 side of the river, ca. 19 minute walk to venue/Node5</li>
+  </ul>
+  </p>
+  <p>
+  There are also many hotels on the other side of the river in the city centre
+  / Old Town which are not far from a Line B metro stop or one of the tram lines
+  that pass through Anděl.
+  </p>
+  <p>
+  If you find any other places that might be worth mentioning here, please send
+  us a mail.
+  </p>
+-->
+
+  <h2>Invitation Letter</h2>
+  <p>
+  If you need an invitiation letter for visa purposes, please get in touch.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+  If you have any questions about the GStreamer Conference or are considering
+  <a href="&site;/conference/2018/gstreamer-conference-sponsor-brief-2018.pdf">becoming a sponsor</a>
+  please contact <a href="mailto:tim@gstreamer-foundation.org">Tim-Philipp Müller</a>.
+  </p>
+
+  <h2>Conference News and Updates</h2>
+<!--
+  <p>
+    <i>2017-October-17</i>: the <a href="&site;/conference/2017/schedule.html">full conference schedule</a> is now available as well
+  </p>
+  <p>
+    <i>2017-October-17</i>: Talk abstracts and speaker bios published
+  </p>
+  <p>
+    <i>2017-October-13</i>: There will be <u>two</u> social events, one on
+    Friday 20 October in the evening at the <a href="http://www.praguebeermuseum.cz/en/"><b>Prague Beer Museum</b></a>
+    (Smetanovo Nabrezi location, near the Charles Bridge / Karlův most). This is
+    a cash-only pub, so credit cards are not accepted (they seem to accept cash in CZK, EUR and USD though).
+    Food and drinks will be available for purchase.
+    Secondly, the main social event will be on Saturday
+    at <a href="https://www.laloca.cz/en/home"><b>La Loca Music Bar and Lounge</b></a>
+    from 19.30-late. Food and drinks will be provided (thanks to our sponsors!),
+    including vegetarian options. Make sure to bring your conference badge.
+  </p>
+  <p>
+    <i>2017-September-11</i>: Added list of hotels
+  </p>
+  <p>
+    <i>2017-August-26</i>: Registration is now open. Early-bird professional tickets are available until 15 September.
+  </p>
+  <p>
+    <i>2017-August-26</i>: Initial list of talks and speakers available
+  </p>
+  <p>
+    <i>2017-August-25</i>: Speakers have been notified about their talk proposal
+  </p>
+  <p>
+    <i>2017-August-23</i>: There will be a hackfest/hackathon on Thursday and Friday 19-20 October 2017, just before the conference, and at the same venue as the conference (Node5).
+  </p>
+  <p>
+    <i>2017-August-17</i>: The GStreamer project is thrilled to have <b><a href="http://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2017-August-16</i>: The GStreamer project welcomes back <a href="http://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
+  </p>
+  <p>
+    <i>2017-August-16</i>: We're delighted to have <b><a href="http://www.igalia.com/">Igalia</a></b> as a Gold sponsor this year!
+  </p>
+  <p>
+    <i>2017-August-15</i>: Talk submission deadline has been extended to Sunday 27 August 2017, 23:59 UTC
+  </p>
+  <p>
+    <i>2017-August-15</i>: We're chuffed to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference again at Gold level this year.
+  </p>
+  <p>
+    <i>2017-August-15</i>: The GStreamer project is excited to see <b><a href="http://pexip.com/">Pexip</a></b> return as Gold sponsor this year.
+  </p>
+  <p>
+    <i>2017-August-14</i>: <b><a href="http://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="http://gstconf.ubicast.tv">record talks and lightning talks</a>
+  </p>
+  <p>
+    <i>2017-August-10</i>: <a href="&site;/conference/2018/gstreamer-conference-sponsor-brief-2018.pdf">Sponsorship brief</a> available
+  </p>
+  <p>
+    <i>2017-July-10</i>: Talk submission deadline is Sunday 13 August 2017, 23:59 UTC (now extended, see above)
+  </p>
+  <p>
+    <i>2017-July-10</i>: Call for Papers
+  </p>
+-->
+  <p>
+    <i>2018-June-11</i>: Venue announced: Summerhall
+  </p>
+  <p>
+    <i>2018-June-11</i>: Initial announcement.
+  </p>
+
+  <h1>Past GStreamer Conferences</h1>
+  <ul>
+    <li><a href="../2017/index.html">21-22 October 2017 · Node5 · Prague, Czech Republic</a></li>
+    <li><a href="../2016/index.html">10-11 October 2016 · betahaus · Berlin, Germany</a></li>    
+    <li><a href="../2015/index.html">8-9 October 2015 · The Convention Centre Dublin · Dublin, Ireland</a></li>
+    <li><a href="../2014/index.html">16-17 October 2014 · Congress Centre Düsseldorf · Düsseldorf, Germany</a></li>
+    <li><a href="../2013/index.html">22-23 October 2013 · Edinburgh International Conference Centre · Edinburgh, Scotland, UK</a></li>
+    <li><a href="../2012/index.html">27-28 August 2012 · Sheraton San Diego Hotel &amp; Marina · San Diego, USA</a></li>
+    <li><a href="../2011/index.html">24-25 October 2011 · Clarion Congress Hotel · Prague, Czech Republic</a></li>
+    <li><a href="../2010/index.html">26 October 2010 · University Arms Hotel · Cambridge, UK</a></li>
+  </ul>
+
+</td>
+<td valign="top" style="padding:0px 50px">
+  <h1>Sponsors</h1>
+<!--
+  <h2>Platinum Sponsor</h2>
+
+  <p style="padding:20px 0px">
+    <a href="http://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
+  </p>
+  <br />
+
+  <h2>Gold Sponsors</h2>
+
+  <p style="padding:10px 0px">
+    <a href="http://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" height="125" width="125" /></a>
+  </p>
+  <p style="padding:10px 0px">
+    <a href="http://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
+  </p>
+
+  <p style="padding:10px 0px">
+    <a href="http://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="75" /></a>
+  </p>
+
+  <p style="padding:10px 0px">
+    <a href="http://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="75" /></a>
+  </p>
+
+  <p style="padding:10px 0px">
+    <a href="http://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
+  </p>
+  <br />
+-->
+<!--
+  <h2>Silver Sponsors</h2>
+
+  <p style="padding:10px 0px">
+    <a href="http://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" height="75" width="75" /></a>
+
+    <span style="padding:0px 20px">
+    <a href="http://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="65" width="182" /></a>
+    </span>
+  </p>
+  <br />
+-->
+<!--
+  <h2>Special Media Partner</h2>
+  <p style="padding:10px 0px">
+    <a href="http://www.ubicast.eu/"><img src="sponsor_ubicast_640x195.png" alt="UbiCast" height="75" width="246" /></a>
+  </p>
+  <br />
+-->
+<!--
+  <h2>Local Event Partner</h2>
+  <p style="padding:10px 0px">
+    <a href="https://xyz.com"><img src="xyz.png" alt="Xyz" height="60" /></a>
+  </p>
+  <br />
+-->
+<!--
+  <h2>Press Partners</h2>
+  <p style="padding:10px 0px">
+    <a href="http://lwn.net"><img src="lwn-logo-gstconf2016.png" alt="LWN" height="99" width="300" /></a>
+  </p>
+-->
+  <p>
+    <small>
+    Interested in <a href="&site;/conference/2018/gstreamer-conference-sponsor-brief-2018.pdf">becoming a sponsor</a> ?
+    </small>
+  </p>
+</td>
+
+</tr>
+</table>
+
+</body>
+</page>
