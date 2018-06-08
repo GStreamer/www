@@ -27,11 +27,11 @@ For 0.10, Gian Mario Tagliaretti has written some documents for using GStreamer 
   <binding>
     <id>perl</id>
     <name>Perl</name>
-    <status>Released, See the CPAN module <ahref="https://metacpan.org/pod/GStreamer1">GStreamer1</a>.
+    <status>Released, See the CPAN module <a href="https://metacpan.org/pod/GStreamer1">GStreamer1</a>.
     </status>
     <body>
     <p>See the <a href="https://metacpan.org/pod/GStreamer1">CPAN GStreamer1</a> page
-    for more details.
+    for more details.</p>
     </body>
   </binding>
 
