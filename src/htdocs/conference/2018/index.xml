@@ -541,9 +541,6 @@ li {
     <i>2017-August-16</i>: The GStreamer project welcomes back <a href="http://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
   </p>
   <p>
-    <i>2017-August-16</i>: We're delighted to have <b><a href="http://www.igalia.com/">Igalia</a></b> as a Gold sponsor this year!
-  </p>
-  <p>
     <i>2017-August-15</i>: Talk submission deadline has been extended to Sunday 27 August 2017, 23:59 UTC
   </p>
   <p>
@@ -556,15 +553,18 @@ li {
     <i>2017-August-14</i>: <b><a href="http://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="http://gstconf.ubicast.tv">record talks and lightning talks</a>
   </p>
   <p>
-    <i>2017-August-10</i>: <a href="&site;/conference/2018/gstreamer-conference-sponsor-brief-2018.pdf">Sponsorship brief</a> available
-  </p>
-  <p>
     <i>2017-July-10</i>: Talk submission deadline is Sunday 13 August 2017, 23:59 UTC (now extended, see above)
   </p>
   <p>
     <i>2017-July-10</i>: Call for Papers
   </p>
 -->
+  <p>
+    <i>2018-July-13</i>: We're excited to see <b><a href="http://www.igalia.com/">Igalia</a></b> return as a Gold sponsor this year!
+  </p>
+  <p>
+    <i>2018-June-12</i>: <a href="&site;/conference/2018/gstreamer-conference-sponsor-brief-2018.pdf">Sponsorship brief</a> available
+  </p>
   <p>
     <i>2018-June-11</i>: Venue announced: Summerhall
   </p>
@@ -594,20 +594,20 @@ li {
     <a href="http://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
   </p>
   <br />
-
+<!-->
   <h2>Gold Sponsors</h2>
-
+<!--
   <p style="padding:10px 0px">
     <a href="http://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" height="125" width="125" /></a>
   </p>
   <p style="padding:10px 0px">
     <a href="http://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
   </p>
-
+-->
   <p style="padding:10px 0px">
     <a href="http://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="75" /></a>
   </p>
-
+<!--
   <p style="padding:10px 0px">
     <a href="http://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="75" /></a>
   </p>
