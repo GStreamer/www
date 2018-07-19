@@ -1300,10 +1300,75 @@ GIT logs or ChangeLogs of the particular modules.
 
 ### 1.14.2
 
-The second 1.14 bug-fix release (1.14.2) is scheduled to be released around
-mid-June 2018.
+The second 1.14 bug-fix release (1.14.2) was released on 20 July 2018.
 
 This release only contains bugfixes and it should be safe to update from 1.14.x.
+
+#### Noteworthy bugfixes in 1.14.2
+
+ - asfdemux: Only send flush-stop event for flushing seeks
+ - glcolorbalance: Support OES textures for input/passthrough, avoids possibly-unnecessary extra texture copy on Android in the default GL path inside glimagesink.
+ - parsebin: Don't try to continue autoplugging a parser if we got raw caps
+ - audiobasesrc: Round down segsize to an integer number of samples
+ - scaletempo: Mark as Audio in classification
+ - souphttpsrc: thread-safety fixes
+ - v4l2bufferpool: Validate that capture buffers were queued, to detect when buffer importation was refused by the driver.
+ - v4l2bufferpool: Only return eos for M2M devices not v4l2src when buggy driver sends empty buffer
+ - v4l2allocator: Fix userptr importation
+ - v4l2src: Try to avoid TRY_FMT when camera is streaming, some drivers don't like it
+ - v4l2videoenc: Only renegotiate with upstream, fixes use in GstRtspServer pipeline
+ - v4l2: many other fixes
+ - pitch: fix latency reporting, and various other things
+ - dvb: fix wrong (GPL) license headers in camconditionalaccess code
+ - webrtc: Fix transportsendbin to fix spurious shut-down failures in webrtcbin if DTLS negotiation hasn't completed yet.
+ - webrtc: Don't deadlock on blocked pads on shutdown
+ - webrtcbin: copy sticky events on our ghostpads so users can use `gst_pad_get_current_caps()` to determine what to do with newly-added pads.
+ - webrtcbin: fix rtpstorage configuration on 32-bit systems
+ - webrtcbin: implement support for FEC and RTX
+ - gstplayer: Fix duration-changed CRITICAL warning if duration did not actually change
+ - gstplayer: Avoid trying to join the player thread from itself
+ - codecparsers: mpeg2 parsing fixes for zero-sized packets
+ - wasapisink: fix a rounding error when calculating the buffer frame count
+ - wasapisink: fix missing unlock in case IAudioClient_Start fails
+ - wasapi: fix potential crash with MinGW
+ - rtsp-server: fix race during udpsrc setup, avoiding pushing data on unlinked udpsrc pad
+ - rtsp-server: fix waiting for multiple streams in rtspclientsink
+ - gst-editing-services: group: Fix handling clips that are added to a layer
+ - gst-editing-services: python binding fixes
+ - gst-validate launcher: Allow retrieving coredumps from within flatpak
+ - gst-validate launcher: Fix the --forever switch which was not stopping on error
+ - vaapi: h264 encoder negotiation fixes
+ - vaapi: fix issues with native EGL display
+ - more GIR annotations fixes, especially for arrays
+ - gstreamer-sharp bindings were updated for g-i annotation fixes in other modules
+ - fuzzing fixes
+ - memory leak fixes
+ - build fixes:
+   - build fixes for MSVC compiler
+   - meson: Fix detection of glib-mkenums under MSYS2 plus other meson buil fixes
+   - Fix static build symbol redefinition errors (xvimage, gst-libav)
+   - qmlgl: build fixes for conflicting declaration of type GLsync for non-android
+   - gl: build fixes for missing EGLuint64KHR typedef
+ - ... and many more!
+
+#### Contributors to 1.14.2
+
+Alessandro Decina,  Antoine Jacoutot,  Brendan Shanks,  Carlos Rafael Giani,
+Christoph Reiter, Edward Hervey, Göran Jönsson, Guillaume Desmottes,  Hyunjun Ko,
+Iñigo Huguet, Jan Schmidt, Johan Bjäreholt, Louis-Francis Ratté-Boulianne,
+Lyon Wang, Marian Mihailescu, Mark Nauwelaerts, Mathieu Duponchelle, Matthew Waters,
+Michael Tretter, Nicolas Dufresne, Nirbheek Chauhan, Philipp Zabel, Roland Jon,
+Sebastian Dröge, Seungha Yang, Sreerenj Balachandran, Suhas Nayak, Thibault Saunier,
+Tim-Philipp Müller, Víctor Manuel Jáquez Leal, Vivia Nikolaidou, wangzq, and
+many others. Thank you all.
+
+#### List of bugs fixed in 1.14.2
+
+For a full list of bugfixes see [Bugzilla][buglist-1.14.2]. Note that this is
+not the full list of changes. For the full list of changes please refer to the
+GIT logs or ChangeLogs of the particular modules.
+
+[buglist-1.14.2]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=270310&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.14.2
 
 ## Known Issues
 
@@ -1313,9 +1378,12 @@ This release only contains bugfixes and it should be safe to update from 1.14.x.
 
 [bug-770264]: https://bugzilla.gnome.org/show_bug.cgi?id=770264
 
-- The `gst-libav` module currently won't build against the newly-released
-  ffmpeg 4.0 (as in RPM Fusion for Fedora 28). Use the internal ffmpeg copy
-  instead, if you build using autotools.
+- The `gst-libav` module in 1.14 will only build against older ffmpeg 3.x
+  versions and won't build against the newly-released ffmpeg 4.0 (as in
+  RPM Fusion for Fedora 28) due to API changes. Use the internal ffmpeg copy
+  instead if you build using autotools. This is fixed in git master / upcoming
+  1.16, but won't be backported to the 1.14 branch as it is rather intrusive
+  and difficult to support both old and new APIs at the same time.
 
 ## Schedule for 1.16
 
