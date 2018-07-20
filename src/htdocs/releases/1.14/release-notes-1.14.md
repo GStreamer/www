@@ -1370,6 +1370,15 @@ GIT logs or ChangeLogs of the particular modules.
 
 [buglist-1.14.2]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=270310&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.14.2
 
+<a name="1.14.3"></a>
+
+### 1.14.3
+
+The third 1.14 bug-fix release (1.14.3) is scheduled to be released
+in August 2018.
+
+This release only contains bugfixes and it should be safe to update from 1.14.x.
+
 ## Known Issues
 
 - The `webrtcdsp` element (which is unrelated to the newly-landed GStreamer
