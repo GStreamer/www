@@ -105,15 +105,35 @@ improvements.
 
 - this section will be filled in in due course
 
-## Platform-specific improvements
+## Platform-specific changes and improvements
 
 ### Android
 
 - this section will be filled in in due course
 
+- The way that GIO modules are named has changed due to upstream GLib natively
+  adding support for loading static GIO modules. This means that any GStreamer
+  application using gnutls for SSL/TLS on the Android or iOS platforms (or any
+  other setup using static libraries) will fail to link looking for the
+  `g_io_module_gnutls_load_static()` function. The new function name is now
+  `g_io_gnutls_load(gpointer data)`. data can be NULL for a static library.
+  Look at [this commit][gio-gnutls-static-link-example] for the necessary
+  change in the examples.
+
 ### macOS and iOS
 
 - this section will be filled in in due course
+
+- The way that GIO modules are named has changed due to upstream GLib natively
+  adding support for loading static GIO modules. This means that any GStreamer
+  application using gnutls for SSL/TLS on the Android or iOS platforms (or any
+  other setup using static libraries) will fail to link looking for the
+  `g_io_module_gnutls_load_static()` function. The new function name is now
+  `g_io_gnutls_load(gpointer data)`. data can be NULL for a static library.
+  Look at [this commit][gio-gnutls-static-link-example] for the necessary
+  change in the examples.
+
+[gio-gnutls-static-link-example]: insert gst-examples/tutorial commit (FIXME)
 
 ### Windows
 
@@ -152,7 +172,7 @@ which is a stable branch.
 
 ### 1.16.0
 
-1.16.0 is scheduled to be released around September 2018.
+1.16.0 is scheduled to be released around September/October 2018.
 
 ## Known Issues
 
@@ -163,17 +183,17 @@ which is a stable branch.
 
 ## Schedule for 1.18
 
-Our next major feature release will be 1.16, and 1.15 will be the unstable
-development version leading up to the stable 1.16 release. The development
-of 1.15/1.16 will happen in the git master branch.
+Our next major feature release will be 1.18, and 1.17 will be the unstable
+development version leading up to the stable 1.18 release. The development
+of 1.17/1.18 will happen in the git master branch.
 
-The plan for the 1.16 development cycle is yet to be confirmed, but it is
-expected that feature freeze will be around August 2017
-followed by several 1.15 pre-releases and the new 1.16 stable release
-in September.
+The plan for the 1.18 development cycle is yet to be confirmed, but it is
+expected that feature freeze will be around February 2019
+followed by several 1.17 pre-releases and the new 1.18 stable release
+in March/April.
 
-1.16 will be backwards-compatible to the stable 1.14, 1.12, 1.10, 1.8, 1.6, 1.4,
-1.2 and 1.0 release series.
+1.18 will be backwards-compatible to the stable 1.16, 1.14, 1.12, 1.10, 1.8,
+1.6, 1.4, 1.2 and 1.0 release series.
 
 - - -
 
