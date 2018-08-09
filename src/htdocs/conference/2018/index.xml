@@ -96,16 +96,14 @@ li {
 
   <h2>Call for Papers</h2>
   <p>
-  The call for papers is not open yet, but will be announced here and on
-  the <a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>.
-  You can also <a href="https://twitter.com/GStreamer">follow @GStreamer on Twitter</a>.
-  </p>
-<!--
-  <p>
-  The call for papers is now open and talk proposals can still be submitted.
+  The call for papers is now open and talk proposals can be submitted.
   </p>
   <p>
-  We still accept submissions subject to slot availability.
+  Talks will be accepted and announced in batches subject to slot availability,
+  so we recommend you send your proposal as early as possible!
+  </p>
+  <p>
+  <b>The preliminary deadline for talk proposals is 31 August 2018.</b>
   </p>
   <p>
   The initial submission needs to be only a couple of sentences or paragraphs
@@ -120,17 +118,18 @@ li {
   Talk slots will have one of the following durations: 20 minutes, 30 minutes,
   or 45 minutes, including questions. We will only have a small number of
   45-minute slots available, so please consider whether you could also make do
-  with 30 minutes before asking for a 45-minute slot.
+  with 30 minutes before asking for a 45-minute slot, or let us know if both
+  are an option.
   </p>
   <p>
   We want to hear from you, what you are working on, what you are using
   GStreamer for, what difficulties you have encountered and how you solved them,
-  what your plans are, what you like, what you dislike, how to improve things.
+  what your plans are, what you like, what you dislike, how to improve things!
   </p>
   <p>
-  Please send all proposals to FIXME
+  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- --><i>&#64;</i><!-- -->lists.freedesktop.org</a>.
+  You do not need to subscribe to the list, and you should receive a confirmation that your proposal has been received within a couple of days.
   </p>
--->
 
   <h2>Showcase or Lightning Talks</h2>
   <p>
@@ -140,18 +139,15 @@ li {
     have solved, and that they think might be interesting for others to hear
     about.
   </p>
-<!--
   <p>
     Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
   </p>
   <p>
-    Simply send a quick mail to FIXME above to reserve your slot (subject to availability).
-  </p>
+    Simply send a quick mail to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- --><i>&#64;</i><!-- -->lists.freedesktop.org</a> above to reserve your slot (subject to availability).  </p>
   <p>
     There is no deadline for Lightning Talk submissions, slots will be
     allocated on a first-come first-serve basis.
   </p>
--->
 
   <h2>Social Events</h2>
   <p>
@@ -552,13 +548,13 @@ li {
   <p>
     <i>2017-August-14</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record talks and lightning talks</a>
   </p>
-  <p>
-    <i>2017-July-10</i>: Talk submission deadline is Sunday 13 August 2017, 23:59 UTC (now extended, see above)
-  </p>
-  <p>
-    <i>2017-July-10</i>: Call for Papers
-  </p>
 -->
+  <p>
+    <i>2018-August-09</i>: Talk submission deadline is Friday 31 August 2018, 23:59 UTC.
+  </p>
+  <p>
+    <i>2018-August-09</i>: Call for Papers
+  </p>
   <p>
     <i>2018-July-13</i>: We're excited to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as a Gold sponsor this year!
   </p>
