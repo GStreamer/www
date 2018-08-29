@@ -220,10 +220,11 @@ li {
     <a href="schedule.html">Click here for the full schedule</a>
 -->
   </p>
-<!--
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
     <ul>
+    <li><i>Coming Soon!</i></li>
+<!--
     <li><a href="&site;/conference/2017/talks-and-speakers.html#gstreamer-webrtc">GStreamer WebRTC</a><br /><small><i>Matthew Waters, Centricular</i></small></li>
     <li><a href="&site;/conference/2017/talks-and-speakers.html#zero-copy-pipelines">Implementing Zero-Copy pipelines in GStreamer</a><br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
     <li><del><a href="&site;/conference/2017/talks-and-speakers.html#meson-macos-windows">Enabling Cross-Platform Development on macOS and Windows with Meson</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></del></li>
@@ -253,32 +254,20 @@ li {
     <li><a href="&site;/conference/2017/talks-and-speakers.html#dma-fences">Linux Explicit DMA Fences in GStreamer</a><br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
     <li><a href="&site;/conference/2017/talks-and-speakers.html#video-over-dds">Video over the Data Distribution Service (DDS) using GStreamer</a><br /><small><i>Stefan Kimmer, S2E Software, Systems and Control</i></small></li>
     <li>... and more (we still have a few free slots and are still accepting proposals!)<br /><small><i></i></small></li>
+-->
   </ul>
   </p>
 
   <p>
     <b>Lightning Talks:</b>
+    <small> (submitted so far)</small>
     <ul>
-    <li>A big year for Video4Linux2 support in GStreamer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li>GstGPGPU - GstCUDA and GstOpenCL <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
-    <li>Playbin3/decodebin3 status update <small><br /><i>Edward Hervey, Centricular</i></small></li>
-    <li>GStreamer and OpenCV using a GstOpenCV element <small><br /><i>Angel Phillips, RidgeRun</i></small></li>
-    <li>RTP Bundle Support <small><br /><i>Håvard Graff, Pexip</i></small></li>
-    <li>ipcpipeline - Split a pipeline into multiple processes <small><br /><i>George Kiagiadakis, Collabora</i></small></li>
-    <li>GstPriQueue<sup><a href="https://github.com/pexip/gstreamer/commit/b466a7d0d930b359bccd05109d3a54824edbf867">1</a></sup> <small><br /><i>Erlend Graff, Pexip</i></small></li>
-    <li>DAMPAT: Dynamic Adaptation of Multimedia Presentations in Application Mobility <small><br /><i>Francisco Velázquez, University of Oslo</i></small></li>
-    <li>gst-debugger is still a thing! <small><br /><i>Marcin Kolny, Amazon</i></small></li>
-    <li>GStreamer-sharp: the revival of our .net bindings <small><br /><i>Thibault Saunier, Samsung</i></small></li>
-    <li>GStreamer support for RTSP protocol version 2.0 (the first implementation ever!) <small><br /><i>Thibault Saunier, Samsung</i></small></li>
-    <li>Pitivi 1.0 finally on sight! <small><br /><i>Thibault Saunier, Samsung</i></small></li>
-    <li>Using GStreamer for UAV Computer Vision Applications in Consumer and Commercial Spaces <small><br /><i>Braden Scothern and Matt Stoker, Teal Drones</i></small></li>
-    <li>Alternative RTMP implementation<br /><small><i>Jan Alexander Steffens, make.tv</i></small></li>
-    <li>A source element for Android Camera 2 NDK API<br /><small><i>Justin Kim, Collabora</i></small></li>
-    <li>GStreamer DVR for deploying mpeg-dash format<br /><small><i>채창복 (Changbok Chea), LGE</i></small></li>
-    <li>GStreamer debugging device for computer vision<br /><small><i>Hermann Stamm-Wilbrandt</i></small></li>
+    <li>gst-mfx, gst-msdk and the Intel Media SDK: an update <i>(provisional title)</i> <small><br /><i>Haihao Xiang, Intel</i></small></li>
+    <li>Improved flexibility and stability in GStreamer V4L2 support <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>...and many more</li>
+    <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
   </p>
--->
 <!--
   <p>
     The full <a href="schedule.html">conference schedule is now available</a>.
@@ -545,10 +534,10 @@ li {
   <p>
     <i>2017-August-15</i>: The GStreamer project is excited to see <b><a href="https://pexip.com/">Pexip</a></b> return as Gold sponsor this year.
   </p>
-  <p>
-    <i>2017-August-14</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record talks and lightning talks</a>
-  </p>
 -->
+  <p>
+    <i>2017-August-17</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record talks and lightning talks</a>
+  </p>
   <p>
     <i>2018-August-09</i>: Talk submission deadline is Friday 31 August 2018, 23:59 UTC.
   </p>
@@ -625,20 +614,11 @@ li {
   </p>
   <br />
 -->
-<!--
   <h2>Special Media Partner</h2>
   <p style="padding:10px 0px">
     <a href="https://www.ubicast.eu/"><img src="sponsor_ubicast_640x195.png" alt="UbiCast" height="75" width="246" /></a>
   </p>
   <br />
--->
-<!--
-  <h2>Local Event Partner</h2>
-  <p style="padding:10px 0px">
-    <a href="https://xyz.com"><img src="xyz.png" alt="Xyz" height="60" /></a>
-  </p>
-  <br />
--->
 <!--
   <h2>Press Partners</h2>
   <p style="padding:10px 0px">
