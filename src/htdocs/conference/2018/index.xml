@@ -94,6 +94,38 @@ li {
   GStreamer multimedia framework or Open Source and cross-platform multimedia.
   </p>
 
+  <h2>Registration</h2>
+  <p>
+  Registration is now open and will stay open until the conference.
+  </p>
+  <p>
+  <b><a href="https://ti.to/gstreamer/gstreamer-conference-2018">Sign up for the GStreamer Conference here</a></b>
+  </p>
+  <p>
+  There will be separate registration options for both professionals and for students and hobbyists:
+  </p>
+  <p>
+    <div style="margin-left:5%">
+    <table width="80%" cellpadding="5">
+      <tr><td><b>Professional (Early Bird)</b></td><td><b>200 EUR</b> (ca. 235 USD, 175 GBP) (early bird, limited and available only until 18 Sept)</td></tr>
+      <tr><td><b>Professional (Regular)</b></td><td><b>300 EUR</b> (ca. 350 USD, 265 GBP) (regular)</td></tr>
+      <tr><td><b>Professional (Supporter)</b></td><td><b>300+N EUR</b> (donation)</td></tr>
+      <tr><td><b>Student/Hobbyist/Community</b></td><td><b>Voluntary donation</b></td></tr>
+    </table>
+    </div>
+  </p>
+  <p>
+    All tickets include lunch at the venue on both conference days
+    as well as access to the social event on Thursday evening.
+  </p>
+  <p>
+    For those uncertain about whether to register as a professional or hobbyist,
+    the general rule is that if your company pays for you or sponsors you, you
+    are a professional, and if you personally pay you are a student or hobbyist.
+    If in doubt drop us a mail or just register as hobbyist. The important
+    thing is that you'll make it to the conference!
+  </p>
+
   <h2>Call for Papers</h2>
   <p>
   The call for papers is now open and talk proposals can be submitted.
@@ -290,48 +322,6 @@ li {
     GStreamer. The talks will target both developers and managers.
   </p>
 
-  <h2>Registration</h2>
-  <p>
-  Registration is not open yet, but will be announced here and on
-  the <a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>.
-  You can also <a href="https://twitter.com/GStreamer">follow @GStreamer on Twitter</a>.
-  </p>
-<!--
-  <p>
-  Registration is now open and will stay open until the conference.
-  </p>
-  <p>
-  <b><a href="https://ti.to/node5/gstreamer-conference-2017">Sign up for the GStreamer Conference here</a></b>
-  </p>
--->
-  <p>
-  There will be separate registration options for both professionals and for students and hobbyists. The following prices are indicative and may still change before registration opens:
-  </p>
-  <p>
-    <div style="margin-left:5%">
-    <table width="80%" cellpadding="5">
-      <tr><td>Professional (Early Bird)</td><td>200 EUR (ca. 235 USD, 175 GBP) incl. lunch (early bird, until 15 Sept)</td></tr>
-      <tr><td>Professional (Regular)</td><td>300 EUR (ca. 350 USD, 265 GBP) incl. lunch (regular)</td></tr>
-      <tr><td>Student/Hobbyist/Community</td><td>25 EUR (ca. 30 USD) incl. lunch and social event</td></tr>
-    </table>
-    </div>
-  </p>
-  <p>
-    The registration fee includes lunch at the venue on both conference days
-    as well as access to the social event on Thursday evening.
-  </p>
-<!--
-  <p>
-    Ticket prices include 20% UK VAT as applicable.
-  </p>
--->
-  <p>
-    For those uncertain about whether to register as a professional or hobbyist,
-    the general rule is that if your company pays for you or sponsors you, you
-    are a professional, and if you personally pay you are a student or hobbyist.
-    If in doubt drop us a mail or just register as hobbyist. The important
-    thing is that you'll make it to the conference!
-  </p>
 <!--
   <h2>Call for Papers</h2>
   <p>
@@ -508,13 +498,7 @@ li {
     <i>2017-September-11</i>: Added list of hotels
   </p>
   <p>
-    <i>2017-August-26</i>: Registration is now open. Early-bird professional tickets are available until 15 September.
-  </p>
-  <p>
     <i>2017-August-26</i>: Initial list of talks and speakers available
-  </p>
-  <p>
-    <i>2017-August-25</i>: Speakers have been notified about their talk proposal
   </p>
   <p>
     <i>2017-August-23</i>: There will be a hackfest/hackathon on Thursday and Friday 19-20 October 2017, just before the conference, and at the same venue as the conference (Node5).
@@ -536,7 +520,13 @@ li {
   </p>
 -->
   <p>
-    <i>2017-August-17</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record talks and lightning talks</a>
+    <i>2018-September-04</i>: Registration is now <a href="https://ti.to/gstreamer/gstreamer-conference-2018">open</a>. Early-bird professional tickets are available until 18 September.
+  </p>
+  <p>
+    <i>2018-September-04</i>: Speakers have been notified about their talk proposal
+  </p>
+  <p>
+    <i>2018-August-17</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record talks and lightning talks</a>
   </p>
   <p>
     <i>2018-August-09</i>: Talk submission deadline is Friday 31 August 2018, 23:59 UTC.
