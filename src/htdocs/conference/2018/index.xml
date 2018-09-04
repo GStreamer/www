@@ -509,9 +509,6 @@ li {
     <i>2017-August-23</i>: There will be a hackfest/hackathon on Thursday and Friday 19-20 October 2017, just before the conference, and at the same venue as the conference (Node5).
   </p>
   <p>
-    <i>2017-August-17</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
-  </p>
-  <p>
     <i>2017-August-15</i>: Talk submission deadline has been extended to Sunday 27 August 2017, 23:59 UTC
   </p>
   <p>
@@ -521,6 +518,9 @@ li {
     <i>2017-August-15</i>: The GStreamer project is excited to see <b><a href="https://pexip.com/">Pexip</a></b> return as Gold sponsor this year.
   </p>
 -->
+  <p>
+    <i>2018-September-04</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
+  </p>
   <p>
     <i>2018-September-04</i>: The GStreamer project welcomes back <a href="https://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
   </p>
@@ -567,14 +567,12 @@ li {
 </td>
 <td valign="top" style="padding:0px 50px">
   <h1>Sponsors</h1>
-<!--
   <h2>Platinum Sponsor</h2>
 
   <p style="padding:20px 0px">
     <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
   </p>
   <br />
-<!-->
   <h2>Gold Sponsors</h2>
 <!--
   <p style="padding:10px 0px">
