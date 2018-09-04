@@ -70,17 +70,16 @@ li {
   but not officially co-hosted with it and at a different venue in Edinburgh.
   </p>
 
-<!--
   <p>
-  Talks will be recorded by <a href="https://www.ubicast.eu/">Ubicast</a> and
+  Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a>.<!-- and
   are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2016">GStreamer Conference 2016 videos</a>
   </p>
   <p>
   Slides for some of the talks and the lightning talks can be found in the
   <a href="&site;/data/events/gstreamer-conference/2016/">GStreamer Conference 2016 slides</a>
   folder.
-  </p>
 -->
+  </p>
 <!--
   <h2>Schedule</h2>
   <p>
@@ -90,8 +89,8 @@ li {
   <h2>Details</h2>
   <p>
   The GStreamer Conference is a conference for developers, decision-makers,
-  community members, industry partners, and anyone else interested in the
-  GStreamer multimedia framework or Open Source and cross-platform multimedia.
+  community members, industry partners, students and anyone else interested in
+  the GStreamer multimedia framework or Open Source and cross-platform multimedia.
   </p>
 
   <h2>Registration</h2>
@@ -296,6 +295,12 @@ li {
     <ul>
     <li>gst-mfx, gst-msdk and the Intel Media SDK: an update <i>(provisional title)</i> <small><br /><i>Haihao Xiang, Intel</i></small></li>
     <li>Improved flexibility and stability in GStreamer V4L2 support <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>GstQTOverlay <small><br /><i>tbd, RidgeRun</i></small></li>
+    <li>Documenting GStreamer <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
+    <li>GstCUDA <small><br /><i>tbd, RidgeRun</i></small></li>
+    <li>GstWebRTCBin in the real world <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
+    <li>Closed Captions in GStreamer <small><br /><i>Edward Hervey, Centricular</i></small></li>
+    <!--<li> <small><br /><i></i></small></li>-->
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
