@@ -242,49 +242,39 @@ li {
 -->
 
   <h2>Schedule and speakers list</h2>
-  <p>
-    A detailed schedule is not yet available, and the call for papers
-    is not yet open. You can have a look at <a href="../2017/schedule.html">last year's schedule</a>
-    to get an idea of the range of topics and speakers.
 <!--
+  <p>
     <a href="schedule.html">Click here for the full schedule</a>
--->
   </p>
+-->
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
     <ul>
-    <li><i>Coming Soon!</i></li>
-<!--
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#gstreamer-webrtc">GStreamer WebRTC</a><br /><small><i>Matthew Waters, Centricular</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#zero-copy-pipelines">Implementing Zero-Copy pipelines in GStreamer</a><br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li><del><a href="&site;/conference/2017/talks-and-speakers.html#meson-macos-windows">Enabling Cross-Platform Development on macOS and Windows with Meson</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></del></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#network-music">Network Music Performance: A case study using GStreamer</a><br /><small><i>Kostas Tsioutas, Ionian University Corfu</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#rust">Oxidising GStreamer: Rust out your multimedia!</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#aligning-audio-video">Aligning audio and video streams' start and end</a><br /><small><i>Vivia Nikolaidou, ToolsOnAir</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#photobooth">Photobooth: An exemplary multi-disciplinary project</a><br /><small><i>Andreas Frisch</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#android-camera3">GStreamer in the world of Android Camera3 cameras</a><br /><small><i>Olivier Crête, Collabora</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#audiomixer">Audio Mixing with the new audiomixer element</a><br /><small><i>Stefan Sauer, Google</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#gst-vaapi">The GStreamer-VAAPI report</a><br /><small><i>Víctor M. Jáquez L., Igalia</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#gst-mfx">gst-mfx: Full-Featured, High Performance and Cross-Platform GStreamer Plugins Using Intel Media SDK</a><br /><small><i>Ishmael Sameen; Xavier Hallade, Intel</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#vaapi-rust">VA-API rust-binding</a><br /><small><i>Hyunjun Ko, Igalia</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#gstreamer-daemon">GStreamer Daemon - building a media server in under 30 minutes</a><br /><small><i>David Soto, RidgeRun</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#high-packet-rate-video">Preparing GStreamer for high packet-rate video streaming</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#gst-shark-profiling">GstShark profiling: a real-life example</a><br /><small><i>Michael Gruner, RidgeRun</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#pipewire">PipeWire</a><br /><small><i>Wim Taymans, RedHat</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#mse-on-webkit">Media Source Extensions on WebKit using GStreamer</a><br /><small><i>Enrique Ocaña González, Igalia</i></small></li>
-    <li><del>icamerasrc: a multi-pad source element<br /><small><i>Xi Cao, Intel</i></small></del></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#in-the-air">GStreamer is in the air</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#containers-qa-fuzzing">Of GStreamer, containers, QA and fuzzing</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#av1">AV1: The Quest is Nearly Complete</a><br /><small><i>Thomas Daede, Mozilla</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#efficient-video-on-embedded-gpu">Efficient Video Processing on Embedded GPU</a><br /><small><i>Tobias Kammacher, Zurich University of Applied Sciences</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#synchronised-playback">Synchronised Playback Made Easy</a><br /><small><i>Arun Raghavan</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#moar-tests">Moar Better Tests</a><br /><small><i>Håvard Graff, Pexip</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#fec">So you think you can FEC?</a><br /><small><i>Mikhail Fludkov &amp; Erlend Graff, Pexip</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#dma-fences">Linux Explicit DMA Fences in GStreamer</a><br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li><a href="&site;/conference/2017/talks-and-speakers.html#video-over-dds">Video over the Data Distribution Service (DDS) using GStreamer</a><br /><small><i>Stefan Kimmer, S2E Software, Systems and Control</i></small></li>
-    <li>... and more (we still have a few free slots and are still accepting proposals!)<br /><small><i></i></small></li>
--->
+    <li><a href="talks-and-speakers.html#nvidia-deepstream-sdk">Introduction to DeepStreamSDK</a><br /><small><i>Tushar Khinvasara, Nvidia</i></small></li>
+    <li><a href="talks-and-speakers.html#video4linux-codecs">Discovering Video4Linux CODECs</a><br /><small><i>Nicolas Dufresne &amp; Ezequiel Garcia, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#cerbero">Taming the three-headed monster</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#nnstreamer-neural-networks-as-filters">NNStreamer: Neural Networks as GStreamer Filters</a><br /><small><i>MyungJoo Ham, Samsung</i></small></li>
+    <li><a href="talks-and-speakers.html#gstreamer-and-rust">What's new with GStreamer &amp; Rust</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#d3dx-video-game-streaming-on-windows">D3Dx Video Game Streaming on Windows</a><br /><small><i>Florian Nierhaus, Bebo</i></small></li>
+    <li><a href="talks-and-speakers.html#profiling-hawktracer">Profiling GStreamer applications with HawkTracer and tracing subsystem</a><br /><small><i>Marcin Kolny, Amazon</i></small></li>
+    <li><a href="talks-and-speakers.html#ci-for-embedded">GStreamer CI for embedded platforms</a><br /><small><i>Olivier Crête, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#webkitgtk-and-wpe">Multimedia support in WebKitGTK and WPE, current status and plans</a><br /><small><i>Philippe Normand, Igalia</i></small></li>
+    <li><a href="talks-and-speakers.html#servo-webaudio-rust">Using GStreamer for Servo's WebAudio implementation in Rust</a><br /><small><i>Manish Goregaokar, Mozilla</i></small></li>
+    <li><a href="talks-and-speakers.html#praxis-live-java-bindings">PraxisLIVE, PraxisCORE and the Java bindings for GStreamer</a><br /><small><i>Neil C Smith</i></small></li>
+    <li><a href="talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#cloud-based-live-video-handling">GStreamer for cloud-based live video handling</a><br /><small><i>Matthew Clark, BBC</i></small></li>
+    <li><a href="talks-and-speakers.html#streams-and-collections">Streams and collections: we're not done yet!</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#non-interleaved-audio">Non-interleaved audio in GStreamer</a><br /><small><i>George Kiagiadakis, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#trust-but-verify">Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone)</a><br /><small><i>Michał Budzyński &amp; Marcin Kidzinski, Samsung</i></small></li>
+    <li><a href="talks-and-speakers.html#thread-sharing">When adding more threads adds more problems - Thread-sharing between elements in GStreamer</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#gst-inference">GstInference: A GStreamer Deep Learning Framework</a><br /><small><i>Jose Manuel Jimenez, RidgeRun</i></small></li>
+    <li><a href="talks-and-speakers.html#deep-neural-networks">Bringing Deep Neural Networks to GStreamer</a><br /><small><i>Stian Selnes, Pexip</i></small></li>
+    <li><a href="talks-and-speakers.html#android-camera-source-2">Android camera source 2 - a continuation story</a><br /><small><i>Justin Kim, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#post-mortem-debugging">Post Mortem GStreamer Debugging with Gdb and Python</a><br /><small><i>Michael Olbrich, Pengutronix</i></small></li>
+    <li><a href="talks-and-speakers.html#asio">In which the protagonist explores why ASIO is still alive</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#microsoft-teams-connector">Microsoft Teams Connector</a><br /><small><i>Håvard Graff, Pexip</i></small></li>
+    <li><a href="talks-and-speakers.html#closed-captions-in-gstreamer">Closed Captions in GStreamer</a><br /><small><i>Edward Hervery, Centricular</i></small></li>
+    <li>... and more (we still have one or two free slots and are still accepting proposals!)<br /><small><i></i></small></li>
   </ul>
   </p>
 
@@ -298,7 +288,6 @@ li {
     <li>Documenting GStreamer <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
     <li>GstCUDA <small><br /><i>Jose Jimenez-Chavarria, RidgeRun</i></small></li>
     <li>GstWebRTCBin in the real world <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
-    <li>Closed Captions in GStreamer <small><br /><i>Edward Hervey, Centricular</i></small></li>
     <li>Servo and GStreamer <small><br /><i>Víctor Jáquez, Igalia</i></small></li>
     <li>Interoperability between GStreamer and DirectShow <small><br /><i>Stéphane Cerveau, Fluendo</i></small></li>
     <li>Interoperability between GStreamer and FFMPEG <small><br /><i>Marek Olejnik, Fluendo</i></small></li>

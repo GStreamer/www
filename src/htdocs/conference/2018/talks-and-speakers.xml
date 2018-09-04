@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+    %site-entities;
+    ]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer Conference 2018 Program</title>
+
+<body lang="en-GB" dir="LTR">
+
+<h1>GStreamer Conference 2018 - speaker biographies and talk abstracts</h1>
+<h2>Edinburgh, Scotland, 25-26 October 2018</h2>
+<p><a href="&site;/conference/2018/">Back to conference main page</a></p>
+<p><a href="schedule.html">Back to conference timetable</a></p>
+
+<table width="100%" border="0" bordercolor="#C0C0C0" cellpadding="20" cellspacing="2">
+
+<tr valign="top"><td>
+<a name="state-of-the-union" id="state-of-the-union"></a>
+<p><b>
+GStreamer State of the Union. Tim-Philipp Müller (__tim), Centricular
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+<!--
+<p>
+This talk will take a bird's eye look at what's been happening in and around
+GStreamer in the last twelve months and look forward at what's next in the
+pipeline.
+</p>
+<p><i>
+Tim Müller is a GStreamer core developer and maintainer, and backseat release
+manager. He works for Centricular Ltd, an Open Source consultancy with a
+focus on GStreamer, cross-platform multimedia and graphics, and embedded
+systems. Tim lives in Bristol, UK.
+</i></p>
+-->
+</td></tr>
+
+<tr valign="top"><td>
+<a name="nvidia-deepstream-sdk" id="nvidia-deepstream-sdk"></a>
+<p><b>
+Introduction to DeepStreamSDK. Tushar Khinvasara, Nvidia
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="video4linux-codecs" id="video4linux-codecs"></a>
+<p><b>
+Discovering Video4Linux CODECs. Nicolas Dufresne (ndufresne) &amp; Ezequiel Garcia, Collabora
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="cerbero" id="cerbero"></a>
+<p><b>
+Taming the three-headed monster. Nirbheek Chauhan (nirbheek), Centricular
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="nnstreamer-neural-networks-as-filters" id="nnstreamer-neural-networks-as-filters"></a>
+<p><b>
+NNStreamer: Neural Networks as GStreamer Filters. MyungJoo Ham (함명주), Samsung
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="gstreamer-and-rust" id="gstreamer-and-rust"></a>
+<p><b>
+What's new with GStreamer &amp; Rust. Sebastian Dröge (slomo), Centricular
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="d3dx-video-game-streaming-on-windows" id="d3dx-video-game-streaming-on-windows"></a>
+<p><b>
+D3Dx Video Game Streaming on Windows. Florian Nierhaus, Bebo
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="profiling-hawktracer" id="profiling-hawktracer"></a>
+<p><b>
+Profiling GStreamer applications with HawkTracer and tracing subsystem. Marcin Kolny, Amazon
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="ci-for-embedded" id="ci-for-embedded"></a>
+<p><b>
+GStreamer CI for embedded platforms. Olivier Crête (ocrete), Collabora
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="webkitgtk-and-wpe" id="webkitgtk-and-wpe"></a>
+<p><b>
+Multimedia support in WebKitGTK and WPE, current status and plans. Philippe Normand (philn), Igalia
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="servo-webaudio-rust" id="servo-webaudio-rust"></a>
+<p><b>
+Using GStreamer for Servo's WebAudio implementation in Rust. Manish Goregaokar, Mozilla
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="praxis-live-java-bindings" id="praxis-live-java-bindings"></a>
+<p><b>
+PraxisLIVE, PraxisCORE and the Java bindings for GStreamer. Neil C Smith
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="cloud-based-live-video-handling" id="cloud-based-live-video-handling"></a>
+<p><b>
+GStreamer for cloud-based live video handling. Matthew Clark, BBC
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="streams-and-collections" id="streams-and-collections"></a>
+<p><b>
+Streams and collections: we're not done yet! Edward Hervey (bilboed), Centricular
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="non-interleaved-audio" id="non-interleaved-audio"></a>
+<p><b>
+Non-interleaved audio in GStreamer. George Kiagiadakis (gkiagia), Collabora
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="trust-but-verify" id="trust-but-verify"></a>
+<p><b>
+Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone). Michał Budzyński &amp; Marcin Kidzinski, Samsung
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="thread-sharing" id="thread-sharing"></a>
+<p><b>
+When adding more threads adds more problems - Thread-sharing between elements in GStreamer. Sebastian Dröge, Centricular
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="gst-inference" id="gst-inference"></a>
+<p><b>
+GstInference: A GStreamer Deep Learning Framework. Jose Manuel Jimenez, RidgeRun
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="deep-neural-networks" id="deep-neural-networks"></a>
+<p><b>
+Bringing Deep Neural Networks to GStreamer. Stian Selnes, Pexip
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="android-camera-source-2" id="android-camera-source-2"></a>
+<p><b>
+Android camera source 2 - a continuation story. Justin Kim, Collabora
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="post-mortem-debugging" id="post-mortem-debugging"></a>
+<p><b>
+Post Mortem GStreamer Debugging with Gdb and Python. Michael Olbrich, Pengutronix
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="asio" id="asio"></a>
+<p><b>
+In which the protagonist explores why ASIO is still alive. Nirbheek Chauhan (nirbheek), Centricular
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="microsoft-teams-connector" id="microsoft-teams-connector"></a>
+<p><b>
+Microsoft Teams Connector. Håvard Graff, Pexip
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="closed-captions-in-gstreamer" id="closed-captions-in-gstreamer"></a>
+<p><b>
+Closed Captions in GStreamer. Edward Hervery, Centricular
+</b></p>
+<p><i>Talk abstracts and speaker biographies will be available soon.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="lightning-talks" id="lightning-talks"></a>
+<p><b>
+Lightning Talks
+</b></p>
+<p>
+Lightning talks are short talks by different speakers about a range
+of different issues. We have the following talks scheduled so far
+(in no particular order):
+    <ul style="line-height:2.0;">
+    <li>gst-mfx, gst-msdk and the Intel Media SDK: an update <i>(provisional title)</i> <small><br /><i>Haihao Xiang, Intel</i></small></li>
+    <li>Improved flexibility and stability in GStreamer V4L2 support <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>GstQTOverlay <small><br /><i>Carlos Aguero, RidgeRun</i></small></li>
+    <li>Documenting GStreamer <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
+    <li>GstCUDA <small><br /><i>Jose Jimenez-Chavarria, RidgeRun</i></small></li>
+    <li>GstWebRTCBin in the real world <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
+    <li>Servo and GStreamer <small><br /><i>Víctor Jáquez, Igalia</i></small></li>
+    <li>Interoperability between GStreamer and DirectShow <small><br /><i>Stéphane Cerveau, Fluendo</i></small></li>
+    <li>Interoperability between GStreamer and FFMPEG <small><br /><i>Marek Olejnik, Fluendo</i></small></li>
+    <li>Encrypted Media Extensions with GStreamer in WebKit <small><br /><i>Xabier Rodríguez Calvar, Igalia</i></small></li>
+    <li>DataChannels in GstWebRTC <small><br /><i>Matthew Waters, Centricular</i></small></li>
+    <li>...and many more</li>
+    <li><i>Submit <u>your</u> lightning talk now!</i></li>
+    </ul>
+</p>
+<p>
+<b>Lightning talk speakers</b>, please export your slides into a PDF file and
+either send it to Tim by e-mail (you will receive an e-mail from him about your
+lightning talk before the event) or have it ready on a usb stick before the
+start of the lightning talks on Thursday. The idea is that everyone uses the
+same laptop so that we don't waste time hooking up laptops to the projector
+and configuring them. There is no particular order or schedule for the talks.
+When a speaker is called up, we will also mention who is up next. Every speaker
+has up to ca. 5 minutes for their talk. There will be a countdown timer
+running. It's not possible to go over time, you'll have to finish up so that
+everyone has an opportunity to present their talk. If you don't want to use up
+the full 5 minutes, that's fine as well.
+</p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="bof1" id="bof1"></a>
+<a name="bof2" id="bof2"></a>
+<a name="bof3" id="bof3"></a>
+<a name="bof4" id="bof4"></a>
+<p><b>
+BoFs / workshops
+</b></p>
+<p>
+These are opportunities for interested people to suggest or organise
+working groups or get-togethers for a particular topic.
+</p>
+</td></tr>
+
+<tr valign="top"><td>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</td></tr>
+
+</table>
+
+</body>
+</page>
