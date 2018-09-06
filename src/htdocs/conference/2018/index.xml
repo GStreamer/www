@@ -299,6 +299,9 @@ li {
     <li>GstCUDA <small><br /><i>tbd, RidgeRun</i></small></li>
     <li>GstWebRTCBin in the real world <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
     <li>Closed Captions in GStreamer <small><br /><i>Edward Hervey, Centricular</i></small></li>
+    <li>Servo and GStreamer <small><br /><i>Víctor Jáquez, Igalia</i></small></li>
+    <li>Interoperability between GStreamer and DirectShow <small><br /><i>Stéphane Cerveau, Fluendo</i></small></li>
+    <li>Interoperability between GStreamer and FFMPEG <small><br /><i>Marek Olejnik, Fluendo</i></small></li>
     <!--<li> <small><br /><i></i></small></li>-->
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
