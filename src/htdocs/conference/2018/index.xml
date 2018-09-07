@@ -302,6 +302,7 @@ li {
     <li>Servo and GStreamer <small><br /><i>Víctor Jáquez, Igalia</i></small></li>
     <li>Interoperability between GStreamer and DirectShow <small><br /><i>Stéphane Cerveau, Fluendo</i></small></li>
     <li>Interoperability between GStreamer and FFMPEG <small><br /><i>Marek Olejnik, Fluendo</i></small></li>
+    <li>Encrypted Media Extensions with GStreamer in WebKit <small><br /><i>Xabier Rodríguez Calvar, Igalia</i></small></li>
     <!--<li> <small><br /><i></i></small></li>-->
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
