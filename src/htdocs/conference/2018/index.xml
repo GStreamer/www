@@ -512,12 +512,12 @@ li {
     <i>2017-August-23</i>: There will be a hackfest/hackathon on Thursday and Friday 19-20 October 2017, just before the conference, and at the same venue as the conference (Node5).
   </p>
   <p>
-    <i>2017-August-15</i>: We're chuffed to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference again at Gold level this year.
-  </p>
-  <p>
     <i>2017-August-15</i>: The GStreamer project is excited to see <b><a href="https://pexip.com/">Pexip</a></b> return as Gold sponsor this year.
   </p>
 -->
+  <p>
+    <i>2018-September-10</i>: We're chuffed to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference again at Gold level this year.
+  </p>
   <p>
     <i>2018-September-04</i>: Talk submission deadline for second round slots has been extended to 15 September 2018.
   </p>
@@ -581,15 +581,15 @@ li {
   <p style="padding:10px 0px">
     <a href="https://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" height="125" width="125" /></a>
   </p>
-  <p style="padding:10px 0px">
-    <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
-  </p>
 -->
   <p style="padding:10px 0px">
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="75" /></a>
   </p>
   <p style="padding:10px 0px">
     <a href="https://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="75" /></a>
+  </p>
+  <p style="padding:10px 0px">
+    <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
   </p>
 <!--
   <p style="padding:10px 0px">
