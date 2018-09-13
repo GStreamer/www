@@ -7,6 +7,7 @@ images = \
 	sponsor_fluendo_320x74.png \
 	sponsor_igalia_2015_2019x720.png \
 	sponsor_pexip.png \
+	sponsor_zeiss.png \
 	sponsor_ubicast_640x195.png \
 	sponsor_centricular_753x125.png
 #	sponsor_google_538x190.png

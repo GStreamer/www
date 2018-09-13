@@ -517,6 +517,9 @@ li {
   </p>
 -->
   <p>
+    <i>2018-September-12</i>: The GStreamer project is excited to see <b><a href="https://zeiss.com/">Zeiss</a></b> sponsor the conference for the very first time this year, as Silver sponsor!
+  </p>
+  <p>
     <i>2018-September-10</i>: We're chuffed to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference again at Gold level this year.
   </p>
   <p>
@@ -596,20 +599,21 @@ li {
   <p style="padding:10px 0px">
     <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
   </p>
-  <br />
 -->
-<!--
+  <br />
   <h2>Silver Sponsors</h2>
 
-  <p style="padding:10px 0px">
-    <a href="https://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" height="75" width="75" /></a>
+  <p style="padding:0px 0px">
+    <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
 
+<!--
     <span style="padding:0px 20px">
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="65" width="182" /></a>
     </span>
+-->
   </p>
   <br />
--->
+
   <h2>Special Media Partner</h2>
   <p style="padding:10px 0px">
     <a href="https://www.ubicast.eu/"><img src="sponsor_ubicast_640x195.png" alt="UbiCast" height="75" width="246" /></a>
