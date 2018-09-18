@@ -294,9 +294,9 @@ li {
     <ul>
     <li>gst-mfx, gst-msdk and the Intel Media SDK: an update <i>(provisional title)</i> <small><br /><i>Haihao Xiang, Intel</i></small></li>
     <li>Improved flexibility and stability in GStreamer V4L2 support <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li>GstQTOverlay <small><br /><i>tbd, RidgeRun</i></small></li>
+    <li>GstQTOverlay <small><br /><i>Carlos Aguero, RidgeRun</i></small></li>
     <li>Documenting GStreamer <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
-    <li>GstCUDA <small><br /><i>tbd, RidgeRun</i></small></li>
+    <li>GstCUDA <small><br /><i>Jose Jimenez-Chavarria, RidgeRun</i></small></li>
     <li>GstWebRTCBin in the real world <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
     <li>Closed Captions in GStreamer <small><br /><i>Edward Hervey, Centricular</i></small></li>
     <li>Servo and GStreamer <small><br /><i>Víctor Jáquez, Igalia</i></small></li>
