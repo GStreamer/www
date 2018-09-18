@@ -422,55 +422,54 @@ li {
 
   <h2>Hotels</h2>
   <p>
-  There is no official conference hotel. <!-- but we have prepared a small list of
-  hotels for your convenience.-->
-  We will provide a list of hotel suggestions at a later date.
-  </p>
-<!--
-  <p>
-  For those who are planning to also attend the Embedded Linux Conference Europe,
-  the Hilton Prague where ELCE takes place is within 20 minutes door-to-door
-  from the GStreamer Conference venue Node5 (7 minutes by metro using line B
-  from Florenc to Anděl).
+  There is no official conference hotel, but we have prepared a small list of
+  possible hotels for your convenience. If you are also attending ELCE which
+  is at a different venue then other hotels may be better suited.
   </p>
   <p>
   The following is just a small selection of hotels which may or may not be
-  suitable. Prague is a major city and tourist destination and as such has
+  suitable. Edinburgh is a major city and tourist destination and as such has
   many hotels and hostels in all price categories. The below is merely a small
   selection, you can find more using the usual booking engines such as
   booking.com, lastminute.com or airbnb.com. As always, it is advisable to book
   your accommodation earlier rather than later.
   </p>
   <p>
-  The conference venue (<a href="https://node5.cz/">Node5</a>) is in the
-  district <i>Praha 5</i> not far from the transport hub and B line metro stop
-  <i>Anděl</i>. It should therefore be fairly easy reach by public transport or
-  taxi from all areas of the city and especially the city centre.
-  There is public transport in form of busses, trams and an underground metro.
+  The GStreamer conference venue (<a href="https://www.summerhall.co.uk/about/location/">Summerhall</a>)
+  is located east of The Meadows near Edinburgh's historic city centre. It
+  should be easy to reach by taxi or public transport from all directions.
+  There are a number of smaller hotels, hostels, and bed and breakfast places
+  in the area around the venue, but we won't list those here since they usually
+  only have a very limited number of rooms available.
   </p>
   <p>
-  The following hotels are located near the venue (Node5) and the Anděl
-  transport hub, and had at least a couple of rooms left at the time of
+  The following hotels had at least a couple of rooms left at the time of
   writing, but there are many other hotels in the city which may be better
   located or provide better value:
   <ul>
-    <li><a href="https://www.barcelo.com/en-gb/hotels/czech-republic/prague/occidental-praha-five/">Hotel Occidental Praha 5</a> - right next to venue/Node5 (~1 minute walk)</li>
-    <li><a href="https://www.hotelandel.cz/">Hotel Andel</a> - right next to venue/Node5 (~1 minute walk)</li>
-    <li><a href="https://www.akcent-hotel.cz/en/contact-location/">Akcent Hotel</a> - ca. 4 minute walk from venue/Node5</li>
-    <li><a href="https://www.ibis.com/gb/hotel-5211-ibis-praha-mala-strana/index.shtml">Hotel Ibis Praha Mala Strana</a> - near Anděl transport hub, ca. 8 minutes walk to venue/Node5</li>
-    <li><a href="https://www.mamaisonriverside.com/">Mamaison Hotel Riverside Prague</a> - 5-star hotel on the Praha 5 side of the river, ca. 19 minute walk to venue/Node5</li>
+    <li><a href="https://www.accorhotels.com/gb/hotel-8484-ibis-edinburgh-centre-south-bridge-royal-mile/index.shtml">Ibis Edinburgh Centre South Bridge</a> - ca. 14 minutes walk to venue, 6 minutes by bus (every 3 mins)</li>
+    <li><a href="https://thrumshotel.com/">The Thrums</a> - a bit south of the venue (so further from city centre), ca. 8 minute walk to venue, 5 mins by bus, 3 mins by taxi/uber</li>
+    <li><a href="https://www.jurysinns.com/hotels/edinburgh/">Jurys Inn</a> - ca. 20 minutes walk to venue, 14 mins by bus, 6 mins by taxi/uber</li>
+    <li><a href="https://www.accorhotels.com/gb/hotel-2039-ibis-edinburgh-centre-royal-mile-hunter-square-new-rooms/index.shtml">Ibis Edinburgh Centre Royal Mile</a> - 15min walk to venue, 10 mins by bus, 6 mins by taxi/uber.</li>
+    <li><a href="https://staycentral.co.uk/">Stay Central Hotel</a> - ca. 15 minute walk to venue, or 13 by bus, 6 mins by taxi/uber</li>
+    <li><a href="https://cityroomz.com/">cityroomz Edinburgh</a> - ca. 30 minute walk or 20 mins by bus from venue, but close to EICC (for ELCE) and CodeBase (for the GStreamer hackfest)</li>
+    <li><a href="https://www.marriott.com/hotels/travel/ediri-residence-inn-edinburgh/">Residence Inn by Marriott Edinburgh</a> - 4-star hotel, 10-minute walk to venue</li>
+    <li><a href="https://www.travelodge.co.uk/hotels/205/Edinburgh-Central-hotel/">Travelodge</a> - 2-star hotel, "budget" lodging, ~15-minute walk to venue</li>
+    <li><a href="https://www.accorhotels.com/gb/hotel-3271-novotel-edinburgh-centre/index.shtml">Novotel Edinburgh City Centre</a> - between venue and EICC/CodeBase, ca. 15 minute walk to venue, 16 mins by bus, 6 mins by taxi/uber</li>
+   <li><a href="https://www.leonardohotels.co.uk/hotels/edinburgh/edinburgh-royal">Leonardo Hotel Edinburgh Haymarket</a> - close to EICC (for ELCE), 30mins walk to venue, 21 mins by bus, 9 mins by taxi/uber</li>
+   <li><a href="https://hamptoninn3.hilton.com/en/hotels/united-kingdom/hampton-by-hilton-edinburgh-west-end-EDIFBHX/index.html">Hampton by Hilton Edinburgh West End</a> - closer to EICC (for ELCE), 29 mins walk to GStreamer conf venue, 9 mins by taxi/uber.</li>
   </ul>
   </p>
   <p>
-  There are also many hotels on the other side of the river in the city centre
-  / Old Town which are not far from a Line B metro stop or one of the tram lines
-  that pass through Anděl.
+  In general, any hotel in the Old Town area should be fine, or even New Town
+  north of Waverley station. You may have to walk a bit though or take a taxi.
+  Public transport connections should also be good and frequent from all parts
+  of the city centre.
   </p>
   <p>
   If you find any other places that might be worth mentioning here, please send
   us a mail.
   </p>
--->
 
   <h2>Invitation Letter</h2>
   <p>
