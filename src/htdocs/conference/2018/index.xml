@@ -124,42 +124,76 @@ li {
     If in doubt drop us a mail or just register as hobbyist. The important
     thing is that you'll make it to the conference!
   </p>
+  <p>
+  <b><a href="https://ti.to/gstreamer/gstreamer-conference-2018">Sign up for the GStreamer Conference here</a></b>
+  </p>
 
-  <h2>Call for Papers</h2>
+  <h2>Schedule and speakers list</h2>
+<!--
   <p>
-  The first batch of talks and speakers will be announced very soon.
+    <a href="schedule.html">Click here for the full schedule</a>
   </p>
+-->
   <p>
-  We still have a few slots available, so talk proposals can still be submitted.
+    We have an exciting range of topics and speakers lined up for you again this year:
+    <ul>
+    <li><a href="talks-and-speakers.html#nvidia-deepstream-sdk">Introduction to DeepStreamSDK</a><br /><small><i>Tushar Khinvasara, Nvidia</i></small></li>
+    <li><a href="talks-and-speakers.html#video4linux-codecs">Discovering Video4Linux CODECs</a><br /><small><i>Nicolas Dufresne &amp; Ezequiel Garcia, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#cerbero">Taming the three-headed monster</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#nnstreamer-neural-networks-as-filters">NNStreamer: Neural Networks as GStreamer Filters</a><br /><small><i>MyungJoo Ham, Samsung</i></small></li>
+    <li><a href="talks-and-speakers.html#gstreamer-and-rust">What's new with GStreamer &amp; Rust</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#d3dx-video-game-streaming-on-windows">D3Dx Video Game Streaming on Windows</a><br /><small><i>Florian Nierhaus, Bebo</i></small></li>
+    <li><a href="talks-and-speakers.html#profiling-hawktracer">Profiling GStreamer applications with HawkTracer and tracing subsystem</a><br /><small><i>Marcin Kolny, Amazon</i></small></li>
+    <li><a href="talks-and-speakers.html#ci-for-embedded">GStreamer CI for embedded platforms</a><br /><small><i>Olivier Crête, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#webkitgtk-and-wpe">Multimedia support in WebKitGTK and WPE, current status and plans</a><br /><small><i>Philippe Normand, Igalia</i></small></li>
+    <li><a href="talks-and-speakers.html#servo-webaudio-rust">Using GStreamer for Servo's WebAudio implementation in Rust</a><br /><small><i>Manish Goregaokar, Mozilla</i></small></li>
+    <li><a href="talks-and-speakers.html#praxis-live-java-bindings">PraxisLIVE, PraxisCORE and the Java bindings for GStreamer</a><br /><small><i>Neil C Smith</i></small></li>
+    <li><a href="talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#cloud-based-live-video-handling">GStreamer for cloud-based live video handling</a><br /><small><i>Matthew Clark, BBC</i></small></li>
+    <li><a href="talks-and-speakers.html#streams-and-collections">Streams and collections: we're not done yet!</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#non-interleaved-audio">Non-interleaved audio in GStreamer</a><br /><small><i>George Kiagiadakis, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#trust-but-verify">Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone)</a><br /><small><i>Michał Budzyński &amp; Marcin Kidzinski, Samsung</i></small></li>
+    <li><a href="talks-and-speakers.html#thread-sharing">When adding more threads adds more problems - Thread-sharing between elements in GStreamer</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#gst-inference">GstInference: A GStreamer Deep Learning Framework</a><br /><small><i>Jose Manuel Jimenez, RidgeRun</i></small></li>
+    <li><a href="talks-and-speakers.html#deep-neural-networks">Bringing Deep Neural Networks to GStreamer</a><br /><small><i>Stian Selnes, Pexip</i></small></li>
+    <li><a href="talks-and-speakers.html#android-camera-source-2">Android camera source 2 - a continuation story</a><br /><small><i>Justin Kim, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#post-mortem-debugging">Post Mortem GStreamer Debugging with Gdb and Python</a><br /><small><i>Michael Olbrich, Pengutronix</i></small></li>
+    <li><a href="talks-and-speakers.html#asio">In which the protagonist explores why ASIO is still alive</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#microsoft-teams-connector">Microsoft Teams Connector</a><br /><small><i>Håvard Graff, Pexip</i></small></li>
+    <li><a href="talks-and-speakers.html#closed-captions-in-gstreamer">Closed Captions in GStreamer</a><br /><small><i>Edward Hervery, Centricular</i></small></li>
+    <li>... and more (we still have one or two free slots and are still accepting proposals!)<br /><small><i></i></small></li>
+  </ul>
   </p>
+
   <p>
-  <b>The extended deadline for talk proposals is 15 September 2018.</b>
+    <b>Lightning Talks:</b>
+    <small> (submitted so far)</small>
+    <ul>
+    <li>gst-mfx, gst-msdk and the Intel Media SDK: an update <i>(provisional title)</i> <small><br /><i>Haihao Xiang, Intel</i></small></li>
+    <li>Improved flexibility and stability in GStreamer V4L2 support <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>GstQTOverlay <small><br /><i>Carlos Aguero, RidgeRun</i></small></li>
+    <li>Documenting GStreamer <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
+    <li>GstCUDA <small><br /><i>Jose Jimenez-Chavarria, RidgeRun</i></small></li>
+    <li>GstWebRTCBin in the real world <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
+    <li>Servo and GStreamer <small><br /><i>Víctor Jáquez, Igalia</i></small></li>
+    <li>Interoperability between GStreamer and DirectShow <small><br /><i>Stéphane Cerveau, Fluendo</i></small></li>
+    <li>Interoperability between GStreamer and FFMPEG <small><br /><i>Marek Olejnik, Fluendo</i></small></li>
+    <li>Encrypted Media Extensions with GStreamer in WebKit <small><br /><i>Xabier Rodríguez Calvar, Igalia</i></small></li>
+    <li>DataChannels in GstWebRTC <small><br /><i>Matthew Waters, Centricular</i></small></li>
+    <!--<li> <small><br /><i></i></small></li>-->
+    <li>...and many more</li>
+    <li><i>Submit <u>your</u> lightning talk now!</i></li>
+    </ul>
   </p>
+<!--
   <p>
-  The initial submission needs to be only a couple of sentences or paragraphs
-  describing the talk you want to give and the desired length of your talk
-  (please allow at least 5 minutes for questions at the end as well).
+    The full <a href="schedule.html">conference schedule is now available</a>.
+    We hope you will be as excited about this years
+    schedule as we are. In addition to of course many in-depth GStreamer talks
+    we also have presentations on some of the most important core Linux
+    multimedia technologies like OpenGL as well as the new kid on the block, Vulkan.
   </p>
-  <p>
-  Talks can be on almost anything multimedia related, ranging from talks about
-  applications to challenges in the lower levels in the stack or hardware.
-  </p>
-  <p>
-  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
-  or 45 minutes, including questions. We will only have a small number of
-  45-minute slots available, so please consider whether you could also make do
-  with 30 minutes before asking for a 45-minute slot, or let us know if both
-  are an option.
-  </p>
-  <p>
-  We want to hear from you, what you are working on, what you are using
-  GStreamer for, what difficulties you have encountered and how you solved them,
-  what your plans are, what you like, what you dislike, how to improve things!
-  </p>
-  <p>
-  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- --><i>&#64;</i><!-- -->lists.freedesktop.org</a>.
-  You do not need to subscribe to the list, and you should receive a confirmation that your proposal has been received within a couple of days.
-  </p>
+-->
 
   <h2>Showcase or Lightning Talks</h2>
   <p>
@@ -241,72 +275,6 @@ li {
   </p>
 -->
 
-  <h2>Schedule and speakers list</h2>
-<!--
-  <p>
-    <a href="schedule.html">Click here for the full schedule</a>
-  </p>
--->
-  <p>
-    We have an exciting range of topics and speakers lined up for you again this year:
-    <ul>
-    <li><a href="talks-and-speakers.html#nvidia-deepstream-sdk">Introduction to DeepStreamSDK</a><br /><small><i>Tushar Khinvasara, Nvidia</i></small></li>
-    <li><a href="talks-and-speakers.html#video4linux-codecs">Discovering Video4Linux CODECs</a><br /><small><i>Nicolas Dufresne &amp; Ezequiel Garcia, Collabora</i></small></li>
-    <li><a href="talks-and-speakers.html#cerbero">Taming the three-headed monster</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#nnstreamer-neural-networks-as-filters">NNStreamer: Neural Networks as GStreamer Filters</a><br /><small><i>MyungJoo Ham, Samsung</i></small></li>
-    <li><a href="talks-and-speakers.html#gstreamer-and-rust">What's new with GStreamer &amp; Rust</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#d3dx-video-game-streaming-on-windows">D3Dx Video Game Streaming on Windows</a><br /><small><i>Florian Nierhaus, Bebo</i></small></li>
-    <li><a href="talks-and-speakers.html#profiling-hawktracer">Profiling GStreamer applications with HawkTracer and tracing subsystem</a><br /><small><i>Marcin Kolny, Amazon</i></small></li>
-    <li><a href="talks-and-speakers.html#ci-for-embedded">GStreamer CI for embedded platforms</a><br /><small><i>Olivier Crête, Collabora</i></small></li>
-    <li><a href="talks-and-speakers.html#webkitgtk-and-wpe">Multimedia support in WebKitGTK and WPE, current status and plans</a><br /><small><i>Philippe Normand, Igalia</i></small></li>
-    <li><a href="talks-and-speakers.html#servo-webaudio-rust">Using GStreamer for Servo's WebAudio implementation in Rust</a><br /><small><i>Manish Goregaokar, Mozilla</i></small></li>
-    <li><a href="talks-and-speakers.html#praxis-live-java-bindings">PraxisLIVE, PraxisCORE and the Java bindings for GStreamer</a><br /><small><i>Neil C Smith</i></small></li>
-    <li><a href="talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#cloud-based-live-video-handling">GStreamer for cloud-based live video handling</a><br /><small><i>Matthew Clark, BBC</i></small></li>
-    <li><a href="talks-and-speakers.html#streams-and-collections">Streams and collections: we're not done yet!</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#non-interleaved-audio">Non-interleaved audio in GStreamer</a><br /><small><i>George Kiagiadakis, Collabora</i></small></li>
-    <li><a href="talks-and-speakers.html#trust-but-verify">Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone)</a><br /><small><i>Michał Budzyński &amp; Marcin Kidzinski, Samsung</i></small></li>
-    <li><a href="talks-and-speakers.html#thread-sharing">When adding more threads adds more problems - Thread-sharing between elements in GStreamer</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#gst-inference">GstInference: A GStreamer Deep Learning Framework</a><br /><small><i>Jose Manuel Jimenez, RidgeRun</i></small></li>
-    <li><a href="talks-and-speakers.html#deep-neural-networks">Bringing Deep Neural Networks to GStreamer</a><br /><small><i>Stian Selnes, Pexip</i></small></li>
-    <li><a href="talks-and-speakers.html#android-camera-source-2">Android camera source 2 - a continuation story</a><br /><small><i>Justin Kim, Collabora</i></small></li>
-    <li><a href="talks-and-speakers.html#post-mortem-debugging">Post Mortem GStreamer Debugging with Gdb and Python</a><br /><small><i>Michael Olbrich, Pengutronix</i></small></li>
-    <li><a href="talks-and-speakers.html#asio">In which the protagonist explores why ASIO is still alive</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#microsoft-teams-connector">Microsoft Teams Connector</a><br /><small><i>Håvard Graff, Pexip</i></small></li>
-    <li><a href="talks-and-speakers.html#closed-captions-in-gstreamer">Closed Captions in GStreamer</a><br /><small><i>Edward Hervery, Centricular</i></small></li>
-    <li>... and more (we still have one or two free slots and are still accepting proposals!)<br /><small><i></i></small></li>
-  </ul>
-  </p>
-
-  <p>
-    <b>Lightning Talks:</b>
-    <small> (submitted so far)</small>
-    <ul>
-    <li>gst-mfx, gst-msdk and the Intel Media SDK: an update <i>(provisional title)</i> <small><br /><i>Haihao Xiang, Intel</i></small></li>
-    <li>Improved flexibility and stability in GStreamer V4L2 support <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li>GstQTOverlay <small><br /><i>Carlos Aguero, RidgeRun</i></small></li>
-    <li>Documenting GStreamer <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
-    <li>GstCUDA <small><br /><i>Jose Jimenez-Chavarria, RidgeRun</i></small></li>
-    <li>GstWebRTCBin in the real world <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
-    <li>Servo and GStreamer <small><br /><i>Víctor Jáquez, Igalia</i></small></li>
-    <li>Interoperability between GStreamer and DirectShow <small><br /><i>Stéphane Cerveau, Fluendo</i></small></li>
-    <li>Interoperability between GStreamer and FFMPEG <small><br /><i>Marek Olejnik, Fluendo</i></small></li>
-    <li>Encrypted Media Extensions with GStreamer in WebKit <small><br /><i>Xabier Rodríguez Calvar, Igalia</i></small></li>
-    <li>DataChannels in GstWebRTC <small><br /><i>Matthew Waters, Centricular</i></small></li>
-    <!--<li> <small><br /><i></i></small></li>-->
-    <li>...and many more</li>
-    <li><i>Submit <u>your</u> lightning talk now!</i></li>
-    </ul>
-  </p>
-<!--
-  <p>
-    The full <a href="schedule.html">conference schedule is now available</a>.
-    We hope you will be as excited about this years
-    schedule as we are. In addition to of course many in-depth GStreamer talks
-    we also have presentations on some of the most important core Linux
-    multimedia technologies like OpenGL as well as the new kid on the block, Vulkan.
-  </p>
--->
   <h2>Who should attend?</h2>
   <p>
     Anyone interested in open source cross-platform multimedia is encouraged
@@ -474,6 +442,39 @@ li {
   If you have any questions about the GStreamer Conference or are considering
   <a href="&site;/conference/2018/gstreamer-conference-sponsor-brief-2018.pdf">becoming a sponsor</a>
   please contact <a href="mailto:tim@gstreamer-foundation.org">Tim-Philipp Müller</a>.
+  </p>
+
+  <h2>Call for Papers</h2>
+  <p>
+  The first batch of talks and speakers will be announced very soon.
+  </p>
+  <p>
+  We still have a few slots available, so talk proposals can still be submitted.
+  </p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk
+  (please allow at least 5 minutes for questions at the end as well).
+  </p>
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+  <p>
+  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
+  or 45 minutes, including questions. We will only have a small number of
+  45-minute slots available, so please consider whether you could also make do
+  with 30 minutes before asking for a 45-minute slot, or let us know if both
+  are an option.
+  </p>
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+  <p>
+  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- --><i>&#64;</i><!-- -->lists.freedesktop.org</a>.
+  You do not need to subscribe to the list, and you should receive a confirmation that your proposal has been received within a couple of days.
   </p>
 
   <h2>Conference News and Updates</h2>
