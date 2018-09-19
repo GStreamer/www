@@ -161,6 +161,7 @@ li {
     <li><a href="talks-and-speakers.html#asio">In which the protagonist explores why ASIO is still alive</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
     <li><a href="talks-and-speakers.html#microsoft-teams-connector">Microsoft Teams Connector</a><br /><small><i>Håvard Graff, Pexip</i></small></li>
     <li><a href="talks-and-speakers.html#closed-captions-in-gstreamer">Closed Captions in GStreamer</a><br /><small><i>Edward Hervery, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#video-editing">Video Editing with GStreamer, status update and plans for the future</a><br /><small><i>Thibault Saunier, Igalia</i></small></li>
     <li>... and more (we still have one or two free slots and are still accepting proposals!)<br /><small><i></i></small></li>
   </ul>
   </p>
