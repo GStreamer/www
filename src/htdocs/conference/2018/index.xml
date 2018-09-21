@@ -497,10 +497,10 @@ li {
     from 19.30-late. Food and drinks will be provided (thanks to our sponsors!),
     including vegetarian options. Make sure to bring your conference badge.
   </p>
-  <p>
-    <i>2017-August-15</i>: The GStreamer project is excited to see <b><a href="https://pexip.com/">Pexip</a></b> return as Gold sponsor this year.
-  </p>
 -->
+  <p>
+    <i>2018-September-21</i>: The GStreamer project is very delighted to have <b><a href="https://pexip.com/">Pexip</a></b> as Platinum sponsor this year!
+  </p>
   <p>
     <i>2018-September-19</i>: Initial list of talks and speakers available
   </p>
@@ -573,13 +573,11 @@ li {
   <p style="padding:20px 0px">
     <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
   </p>
+  <p style="padding:20px 0px">
+    <a href="https://www.pexip.com"><img src="sponsor_pexip_new.png" alt="Pexip" width="220" /></a>
+  </p>
   <br />
   <h2>Gold Sponsors</h2>
-<!--
-  <p style="padding:10px 0px">
-    <a href="https://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" height="125" width="125" /></a>
-  </p>
--->
   <p style="padding:10px 0px">
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="75" /></a>
   </p>
