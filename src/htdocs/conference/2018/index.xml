@@ -181,6 +181,7 @@ li {
     <li>Interoperability between GStreamer and FFMPEG <small><br /><i>Marek Olejnik, Fluendo</i></small></li>
     <li>Encrypted Media Extensions with GStreamer in WebKit <small><br /><i>Xabier Rodríguez Calvar, Igalia</i></small></li>
     <li>DataChannels in GstWebRTC <small><br /><i>Matthew Waters, Centricular</i></small></li>
+    <li>Me TV – a journey from C and Xine to Rust and GStreamer, via D <small><br /><i>Russel Winder</i></small></li>
     <!--<li> <small><br /><i></i></small></li>-->
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
