@@ -149,7 +149,7 @@ li {
     <li><a href="talks-and-speakers.html#servo-webaudio-rust">Using GStreamer for Servo's WebAudio implementation in Rust</a><br /><small><i>Manish Goregaokar, Mozilla</i></small></li>
     <li><a href="talks-and-speakers.html#praxis-live-java-bindings">PraxisLIVE, PraxisCORE and the Java bindings for GStreamer</a><br /><small><i>Neil C Smith</i></small></li>
     <li><a href="talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#cloud-based-live-video-handling">GStreamer for cloud-based live video handling</a><br /><small><i>Matthew Clark, BBC</i></small></li>
+    <li><a href="talks-and-speakers.html#cloud-based-live-video-handling">GStreamer for cloud-based live video handling</a><br /><small><i>Matthew Clark &amp; Luke Moscrop, BBC</i></small></li>
     <li><a href="talks-and-speakers.html#streams-and-collections">Streams and collections: we're not done yet!</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
     <li><a href="talks-and-speakers.html#non-interleaved-audio">Non-interleaved audio in GStreamer</a><br /><small><i>George Kiagiadakis, Collabora</i></small></li>
     <li><a href="talks-and-speakers.html#trust-but-verify">Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone)</a><br /><small><i>Michał Budzyński &amp; Marcin Kidzinski, Samsung</i></small></li>
