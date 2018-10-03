@@ -206,22 +206,6 @@ for GStreamer.
   </module>
 
   <module>
-    <id>orc</id>
-    <blurb>Orc runtime compiler</blurb>
-    <title>Library of Optimized Inner Loops Runtime Compiler</title>
-    <description>
-Library and set of tools for compiling and executing SIMD assembly
-language-like programs that operate on arrays of data.
-    </description>
-    <maintainer>GStreamer Team</maintainer>
-    <versions>
-      <stable>&orc-version-stable;</stable>
-      <devel>&orc-version-devel;</devel>
-    </versions>
-    <status>active</status>
-  </module>
-
-  <module>
     <id>cerbero</id>
     <blurb>Cerbero build system for Windows, OS/X, Android and iOS</blurb>
     <title>Cerbero cross-platform build system</title>
@@ -233,6 +217,22 @@ create binary packages for Windows, Android, OS/X and iOS
     <versions>
       <stable>&gst-version-stable;</stable>
       <devel>&gst-version-devel;</devel>
+    </versions>
+    <status>active</status>
+  </module>
+
+  <module>
+    <id>orc</id>
+    <blurb>Orc runtime compiler</blurb>
+    <title>Library of Optimized Inner Loops Runtime Compiler</title>
+    <description>
+Library and set of tools for compiling and executing SIMD assembly
+language-like programs that operate on arrays of data.
+    </description>
+    <maintainer>GStreamer Team</maintainer>
+    <versions>
+      <stable>&orc-version-stable;</stable>
+      <devel>&orc-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
