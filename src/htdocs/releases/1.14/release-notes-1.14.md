@@ -2,8 +2,8 @@
 
 GStreamer 1.14.0 was originally released on 19 March 2018.
 
-The latest bug-fix release in the 1.14 series is [1.14.3](#1.14.3) and was
-released on 16 September 2018.
+The latest bug-fix release in the 1.14 series is [1.14.4](#1.14.4) and was
+released on 2 October 2018.
 
 See [https://gstreamer.freedesktop.org/releases/1.14/][latest] for the latest
 version of this document.
