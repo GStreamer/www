@@ -9,7 +9,7 @@
 <!ENTITY gst-libav-version-stable "1.14.4">
 <!ENTITY gst-openmax-version-stable "obsolete">
 <!ENTITY gst-python-version-stable "1.14.4">
-<!ENTITY gstreamer-sharp-version-stable "git master">
+<!ENTITY gstreamer-sharp-version-stable "1.14.4">
 <!ENTITY gst-plugins-gl-version-stable "obsolete">
 <!ENTITY gst-rtsp-server-version-stable "1.14.4">
 <!ENTITY gst-streaming-server-version-stable "git master">
