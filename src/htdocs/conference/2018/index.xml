@@ -216,9 +216,6 @@ li {
   </p>
 
   <h2>Social Events</h2>
-  <p>
-    There will be a social event for registered attendees on Thursday evening.
-  </p>
 
 <!--
   <h3>Friday: Welcome drinks, food and pre-registration at the Prague Beer Museum</h3>
@@ -249,33 +246,50 @@ li {
   <p>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.0676096856705!2d14.411800750830249!3d50.08502102140876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94ea75b51be7%3A0x2d7ae400e7b1700!2sPrague+Beer+Museum!5e0!3m2!1sen!2suk!4v1508271551289" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
   </p>
-
-  <h3>Saturday: Food and drinks at La Loca Music Bar and Lounge</h3>
-  <p>
-    Our main social event will be on Saturday at <a href="https://www.laloca.cz/en/home"><b>La Loca Music Bar and Lounge</b></a>
-    from ca. 19.30 until late. Food and drinks will be provided (thanks to our sponsors!),
-    including vegetarian options.
-  </p>
-  <p>
-    Get there by public transport:
-    The easiest way to get there from Node5 is to jump onto Tram 5 at stop
-    <i>Na Knížecí</i> which is just around the corner from Node5, and go
-    4 stops to <i>Myslíkova</i>. La Loca Music Bar is just around the corner
-    from there (<a href="https://goo.gl/maps/Uc12udep93C2">Odborů 278/4, Prague 2</a>).
-    It should be in the same building as "Mosaic House".
-  </p>
-  <p>
-    There will also be a cloakroom where you can leave your jackets/bags
-    (although neither we nor the bar will take responsibility for any lost or
-    damaged items of course).
-  </p>
-  <p>
-    Please don't forget to bring your badge.
-  </p>
-  <p>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.467555590172!2d14.415923950829997!3d50.077532421945584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94f3de598d9d%3A0xac14b5dbc8b5939c!2sLa+Loca+MUSIC+BAR+%26+LOUNGE!5e0!3m2!1sen!2suk!4v1508276652986" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
-  </p>
 -->
+  <h3>Thursday: Food and drinks at Lebowskis Bar</h3>
+  <p>
+    Our main social event will be on Thursday at <a href="http://www.lebowskis.co.uk/edinburgh/our-location.php"><b>Lebowskis Bar</b></a>
+    from ca. 19.30 until late. Food and drinks will be provided (thanks to our sponsors!),
+    including some vegetarian/vegan options.
+  </p>
+  <p>
+  Lebowskis Bar is located on 18 Morrison Street in the West End near the
+  international conference center.
+  </p>
+  <p>
+    How to get there from Summerhall:
+    <ul>
+      <li>on foot: it's a fairly straight-forward 20-minute walk along the
+          main road (A700) through the Meadows, ca. 1 mile.</li>
+      <li>by public transport: there should be busses every couple of minutes
+          from Bernard Terrace which is just around the corner from Summerhall
+          (on the road going north towards Waverley station). The easiest might
+          be the number 2 which runs every 10 minutes and takes 17 minutes.
+          The airport bus (300) is also an option but might have different
+          pricing compared to local busses. The 30 takes a slightly longer
+          route so it's probably worth just waiting for the next number 2 then.</li>
+      <li>by taxi/uber: should be a 5-10 minutes ride depending on traffic, perhaps £5-10 or so</li>
+      <li>by bike: should be less than 10 minutes by bike if you're feeling
+          ambitious. There are <a href="https://edinburghcyclehire.com/stations">Just Eat Cycles</a>
+          stations at Summerhall (Meadows East, Melville Terrace) and Riego
+          Street at junction with East Fountainbridge which should take you
+          most of the distance. Requires the app and prior registration though.</li>
+    </ul>
+  </p>
+  <p>
+    Please don't forget to bring your badge. (If you'd like to bring a +1
+    please get in touch, we may be able to arrange that.)
+  </p>
+  <p>
+    This will be a private event at least until 23.30, but there won't be a
+    cloakroom where you can leave your jackets/bags and neither we nor the bar
+    will take responsibility for any lost or damaged items, so you may want to
+    drop off your gear at the hotel before you head there.
+  </p>
+  <p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4468.153875696689!2d-3.2112178!3d55.9480384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a479cd5bad%3A0xae6a8d6903e7242e!2sLebowskis!5e0!3m2!1sen!2suk!4v1538652252829" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
+  </p>
 
   <h2>Who should attend?</h2>
   <p>
@@ -493,12 +507,14 @@ li {
     (Smetanovo Nabrezi location, near the Charles Bridge / Karlův most). This is
     a cash-only pub, so credit cards are not accepted (they seem to accept cash in CZK, EUR and USD though).
     Food and drinks will be available for purchase.
-    Secondly, the main social event will be on Saturday
-    at <a href="https://www.laloca.cz/en/home"><b>La Loca Music Bar and Lounge</b></a>
-    from 19.30-late. Food and drinks will be provided (thanks to our sponsors!),
-    including vegetarian options. Make sure to bring your conference badge.
   </p>
 -->
+  <p>
+    <i>2018-October-04</i>: There will be a social event again on Thursday
+    evening from ca. 19.30h onwards at <a href="http://www.lebowskis.co.uk/edinburgh/our-location.php"><b>Lebowskis Bar</b></a>
+    at 18 Morrisson Street. Food and drinks will be provided (thanks to our sponsors!),
+    including vegetarian options. Make sure to bring your conference badge.
+  </p>
   <p>
     <i>2018-September-21</i>: The GStreamer project is very delighted to have <b><a href="https://pexip.com/">Pexip</a></b> as Platinum sponsor this year!
   </p>
