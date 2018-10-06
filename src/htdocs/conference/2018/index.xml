@@ -156,7 +156,7 @@ li {
     <li><a href="talks-and-speakers.html#thread-sharing">When adding more threads adds more problems - Thread-sharing between elements in GStreamer</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
     <li><a href="talks-and-speakers.html#gst-inference">GstInference: A GStreamer Deep Learning Framework</a><br /><small><i>Jose Manuel Jimenez, RidgeRun</i></small></li>
     <li><a href="talks-and-speakers.html#deep-neural-networks">Bringing Deep Neural Networks to GStreamer</a><br /><small><i>Stian Selnes, Pexip</i></small></li>
-    <li><a href="talks-and-speakers.html#android-camera-source-2">Android camera source 2 - a continuation story</a><br /><small><i>Justin Kim, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#android-camera-source-2">Android camera source 2 - a continuation story</a><br /><small><i>Justin Kim (김정석), SK Telecom</i></small></li>
     <li><a href="talks-and-speakers.html#post-mortem-debugging">Post Mortem GStreamer Debugging with Gdb and Python</a><br /><small><i>Michael Olbrich, Pengutronix</i></small></li>
     <li><a href="talks-and-speakers.html#asio">In which the protagonist explores why ASIO is still alive</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
     <li><a href="talks-and-speakers.html#microsoft-teams-connector">Microsoft Teams Connector</a><br /><small><i>Håvard Graff, Pexip</i></small></li>
@@ -499,9 +499,6 @@ li {
     <i>2017-October-17</i>: the <a href="&site;/conference/2017/schedule.html">full conference schedule</a> is now available as well
   </p>
   <p>
-    <i>2017-October-17</i>: Talk abstracts and speaker bios published
-  </p>
-  <p>
     <i>2017-October-13</i>: There will be <u>two</u> social events, one on
     Friday 20 October in the evening at the <a href="https://www.praguebeermuseum.cz/en/"><b>Prague Beer Museum</b></a>
     (Smetanovo Nabrezi location, near the Charles Bridge / Karlův most). This is
@@ -509,6 +506,9 @@ li {
     Food and drinks will be available for purchase.
   </p>
 -->
+  <p>
+    <i>2018-October-06</i>: Talk abstracts and speaker bios published
+  </p>
   <p>
     <i>2018-October-04</i>: There will be a social event again on Thursday
     evening from ca. 19.30h onwards at <a href="http://www.lebowskis.co.uk/edinburgh/our-location.php"><b>Lebowskis Bar</b></a>
