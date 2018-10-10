@@ -723,6 +723,24 @@ Video Editing Stack as well as the Pitivi video editor.
 </td></tr>
 
 <tr valign="top"><td>
+<a name="pipewire" id="pipewire"></a>
+<p><b>
+PipeWire wants to be your audio server too. Wim Taymans (wtay), RedHat
+</b></p>
+<p>
+In the last year, a solid plan has emerged to bring pro-audio and desktop
+audio together in PipeWire. In this talk I want to present the plans
+and give an overview of the work that has been done.
+</p>
+<p><i>
+Wim Taymans has a computer science degree from the Katholieke Universiteit
+Leuven, Belgium. He co-founded the GStreamer multimedia framework in 1999.
+Wim Taymans is a Principal Software Engineer at Red Hat, responsible for
+various multimedia packages and is currently working on PipeWire.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
 <a name="lightning-talks" id="lightning-talks"></a>
 <p><b>
 Lightning Talks
