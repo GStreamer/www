@@ -80,12 +80,10 @@ li {
   folder.
 -->
   </p>
-<!--
   <h2>Schedule</h2>
   <p>
   <a href="schedule.html">Click here for the conference schedule</a>.
   </p>
--->
   <h2>Details</h2>
   <p>
   The GStreamer Conference is a conference for developers, decision-makers,
@@ -129,11 +127,9 @@ li {
   </p>
 
   <h2>Schedule and speakers list</h2>
-<!--
   <p>
     <a href="schedule.html">Click here for the full schedule</a>
   </p>
--->
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
     <ul>
@@ -160,7 +156,7 @@ li {
     <li><a href="talks-and-speakers.html#post-mortem-debugging">Post Mortem GStreamer Debugging with Gdb and Python</a><br /><small><i>Michael Olbrich, Pengutronix</i></small></li>
     <li><a href="talks-and-speakers.html#asio">In which the protagonist explores why ASIO is still alive</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
     <li><a href="talks-and-speakers.html#microsoft-teams-connector">Microsoft Teams Connector</a><br /><small><i>Håvard Graff, Pexip</i></small></li>
-    <li><a href="talks-and-speakers.html#closed-captions-in-gstreamer">Closed Captions in GStreamer</a><br /><small><i>Edward Hervery, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#closed-captions-in-gstreamer">Closed Captions in GStreamer</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
     <li><a href="talks-and-speakers.html#video-editing">Video Editing with GStreamer, status update and plans for the future</a><br /><small><i>Thibault Saunier, Igalia</i></small></li>
     <li><a href="talks-and-speakers.html#pipewire">PipeWire wants to be your audio server too</a><br /><small><i>Wim Taymans, RedHat</i></small></li>
     <li>... and more (we still have one or two free slots and are still accepting proposals!)<br /><small><i></i></small></li>
@@ -183,20 +179,11 @@ li {
     <li>Encrypted Media Extensions with GStreamer in WebKit <small><br /><i>Xabier Rodríguez Calvar, Igalia</i></small></li>
     <li>DataChannels in GstWebRTC <small><br /><i>Matthew Waters, Centricular</i></small></li>
     <li>Me TV – a journey from C and Xine to Rust and GStreamer, via D <small><br /><i>Russel Winder</i></small></li>
-    <li>LG webOS Open Source Edition on the RaspberryPi <small><br /><i>Jimmy Ohn (온용진), LG electronics</i></small></li>
+    <li>LG webOS Open Source Edition on the RaspberryPi <small><br /><i>Jimmy Ohn (온용진), LG Electronics</i></small></li>
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
   </p>
-<!--
-  <p>
-    The full <a href="schedule.html">conference schedule is now available</a>.
-    We hope you will be as excited about this years
-    schedule as we are. In addition to of course many in-depth GStreamer talks
-    we also have presentations on some of the most important core Linux
-    multimedia technologies like OpenGL as well as the new kid on the block, Vulkan.
-  </p>
--->
 
   <h2>Showcase or Lightning Talks</h2>
   <p>
@@ -495,18 +482,9 @@ li {
   </p>
 
   <h2>Conference News and Updates</h2>
-<!--
   <p>
-    <i>2017-October-17</i>: the <a href="&site;/conference/2017/schedule.html">full conference schedule</a> is now available as well
+    <i>2018-October-22</i>: the <a href="&site;/conference/2018/schedule.html">full conference schedule</a> is now available as well
   </p>
-  <p>
-    <i>2017-October-13</i>: There will be <u>two</u> social events, one on
-    Friday 20 October in the evening at the <a href="https://www.praguebeermuseum.cz/en/"><b>Prague Beer Museum</b></a>
-    (Smetanovo Nabrezi location, near the Charles Bridge / Karlův most). This is
-    a cash-only pub, so credit cards are not accepted (they seem to accept cash in CZK, EUR and USD though).
-    Food and drinks will be available for purchase.
-  </p>
--->
   <p>
     <i>2018-October-06</i>: Talk abstracts and speaker bios published
   </p>

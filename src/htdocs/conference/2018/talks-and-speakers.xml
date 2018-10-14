@@ -671,7 +671,7 @@ opportunity.
 <tr valign="top"><td>
 <a name="closed-captions-in-gstreamer" id="closed-captions-in-gstreamer"></a>
 <p><b>
-Closed Captions in GStreamer. Edward Hervery, Centricular
+Closed Captions in GStreamer. Edward Hervey, Centricular
 </b></p>
 <p>
 While Gstreamer does have support for multiple subtitle formats,
@@ -762,7 +762,7 @@ of different issues. We have the following talks scheduled so far
     <li>Encrypted Media Extensions with GStreamer in WebKit <small><br /><i>Xabier Rodríguez Calvar, Igalia</i></small></li>
     <li>DataChannels in GstWebRTC <small><br /><i>Matthew Waters, Centricular</i></small></li>
     <li>Me TV – a journey from C and Xine to Rust and GStreamer, via D <small><br /><i>Russel Winder</i></small></li>
-    <li>LG webOS Open Source Edition on the RaspberryPi <small><br /><i>Jimmy Ohn (온용진), LG electronics</i></small></li>
+    <li>LG webOS Open Source Edition on the RaspberryPi <small><br /><i>Jimmy Ohn (온용진), LG Electronics</i></small></li>
     <li>...and many more</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>

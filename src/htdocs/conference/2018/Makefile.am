@@ -1,5 +1,4 @@
-#schedule.html
-built_pages = index.html talks-and-speakers.html
+built_pages = index.html talks-and-speakers.html schedule.html
 
 images = \
 	sponsor_collabora_02_rgb_965x504.png \
