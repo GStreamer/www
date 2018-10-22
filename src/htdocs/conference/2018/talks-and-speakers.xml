@@ -37,310 +37,6 @@ systems. Tim lives in Bristol, UK.
 </td></tr>
 
 <tr valign="top"><td>
-<a name="nvidia-deepstream-sdk" id="nvidia-deepstream-sdk"></a>
-<p><b>
-Introduction to DeepStreamSDK. Tushar Khinvasara, Nvidia
-</b></p>
-<p>
-For more information about the DeepStreamSDK see:
-<ul>
- <li>Intro - https://developer.nvidia.com/deepstream-sdk</li>
- <li>Details - https://devblogs.nvidia.com/accelerate-video-analytics-deepstream-2</li>
-</ul>
-</p>
-<p><i>
-Tushar is working as technical architect at Nvidia Pune center for Video
-Analytics Development with DeepStream. He has total 15+yrs of SW development
-experience in embedded system and has extensively worked on various multimedia
-frameworks from NXP semiconductor's, Symbian and Android.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="video4linux-codecs" id="video4linux-codecs"></a>
-<p><b>
-Discovering Video4Linux CODECs. Nicolas Dufresne (ndufresne) &amp; Ezequiel Garcia, Collabora
-</b></p>
-<p>
-As Video4Linux gain support for stateful and stateless CODECs, it is
-important to have an elegant mechanism to enumerate available CODECs
-and register GStreamer elements.
-</p><p>
-This talk will be presented by Ezequiel Garcia and Nicolas Dufresne.
-Ezequiel will present the Linux Kernel Video4Linux media controller and
-CODEC APIs and how we can improve the dynamic enumeration of CODEC
-capabilities. Nicolas will explain how GStreamer Video4linux plugin can
-leverage these APIs to dynamically expose these CODECs as GStreamer
-elements.
-</p>
-<p><i>
-Nicolas Dufresne is a Principal Multimedia Engineer at Collabora. Based
-in Montréal, he was initially a generalist developer with background in
-STB development. Nicolas started in 2011 contributing to GStreamer
-Multimedia Framework adding infrastructure and primitives to support
-accelerated upload of buffers to GL textures. Today, Nicolas is
-implicated in both GStreamer and Linux Media communities to help create
-a solid support for CODEC on Linux.
-</i></p>
-<p><i>
-Ezequiel is a software engineer. With 15 years of experience, Ezequiel
-has been an active Linux Kernel contributor since 2012, and maintains
-two Video4linux drivers. From 2015 to 2018, Ezequiel worked for a cloud
-video surveillance company, working on GStreamer-based applications. In
-2018, he joined Collabora as a Senior Core Engineer, where he currently
-works on Video4Linux CODECs.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="cerbero" id="cerbero"></a>
-<p><b>
-Taming the three-headed monster. Nirbheek Chauhan (nirbheek), Centricular
-</b></p>
-<p>
-Cerbero is the build tool used by the GStreamer project to provide a
-standard way to build binaries for all supported platforms: macOS,
-iOS, Android, Linux, and Windows. The tool has been instrumental in
-ensuring cross-platform support for GStreamer, but few understand the
-arcane mysteries that embody its very essence.
-</p><p>
-In this talk I shall begin with a brief description of the structure
-of Cerbero, followed by some of the many improvements that have been
-made to Cerbero over the past year; particularly the port to Meson and
-MSVC/Windows and the move to Python 3.
-</p>
-<p><i>
-Nirbheek Chauhan writes software and hacks on GStreamer for a living and for
-fun. In recent times and despite his best efforts, he accidentally became a
-build system expert and continues to contribute to the Meson build system as
-a core contributor. When not fixing broken builds, he works on interesting
-WebRTC applications using GStreamer and complains about how slow Rust
-adoption is.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="nnstreamer-neural-networks-as-filters" id="nnstreamer-neural-networks-as-filters"></a>
-<p><b>
-NNStreamer: Neural Networks as GStreamer Filters. MyungJoo Ham (함명주), Samsung
-</b></p>
-<p>
-In the recent decade, we have witnessed widespread of deep neural networks and
-their applications. With the evolution of consumer electronics, the range of
-applicable devices for such deep neural networks is expanding as well to
-personal, mobile, or even wearable devices. The new challenge of such systems
-is to efficiently manage data streams between sensors (cameras, mics, radars,
-lidars, and so on), media filters, neural network models and their post
-processors, and applications. In order to tackle the challenge with less effort
-and more effect, we propose to implement general neural network supporting
-filters for Gstreamer, which is actively developed and tested at
-https://github.com/nnsuite/nnstreamer
-</p><p>
-With NNStreamer, neural network developers may easily configure streams with
-various sensors and models and execute the streams with high efficiency.
-Besides, media stream developers can now use deep neural networks as yet
-another media filters with much less efforts.
-</p>
-<p><i>
-MyungJoo Ham, Ph.D., has been working in Samsung Electronics as a software
-developer after receiving the Ph.D. degree from University of Illinois in 2009.
-Recently, he has been developing development environment and software platform
-for on-device AI projects varying from autonomous driving systems to consumer
-electronics in AI Center of Samsung. Before joining AI Center, he had worked
-mostly on Tizen as an architect and lead developer with responsibilities on
-Linux kernel, system frameworks, base libraries, .NET runtime, and so on.
-He has been a maintainer of a couple of Linux kernel subsystems and contributor
-of a few other open source projects.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="gstreamer-and-rust" id="gstreamer-and-rust"></a>
-<p><b>
-What's new with GStreamer &amp; Rust. Sebastian Dröge (slomo), Centricular
-</b></p>
-<p>
-Since last year's presentation about the existence of Rust bindings for
-GStreamer a lot has happened. Bigger parts of the GStreamer API is
-covered by the bindings now, many parts of the bindings API were
-refactored to be easier to use and there were of course also changes to
-the infrastructure for writing GStreamer plugins in Rust.
-</p><p>
-An overview of the most important changes since last year will be given
-in this presentation, as well as a (very short!) overview of how
-GStreamer can be used from Rust and why you should consider that for
-your next project.
-</p>
-<p><i>
-Sebastian Dröge (slomo) is a Free Software developer and one of the GStreamer
-maintainers and core developers. He has been involved with the project since
-more than 10 years now. He also contributes to various other Free Software
-projects, like Debian, Rust, GNOME and WebKit. While finishing his master's
-degree in computer sciences at the University of Paderborn in Germany, he
-started working as a contractor for GStreamer and related technologies.
-Sebastian is one of the founders of Centricular, a company providing
-consultancy services, where he's working from his new home in Greece on
-improving GStreamer and the Free Software ecosystem in general.
-</i></p><p><i>
-Apart from multimedia related topics, Sebastian has an interest in digital
-signal processing, programming languages, machine learning, network protocols
-and distributed systems.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="d3dx-video-game-streaming-on-windows" id="d3dx-video-game-streaming-on-windows"></a>
-<p><b>
-D3Dx Video Game Streaming on Windows. Florian Nierhaus, Bebo
-</b></p>
-<p>
-How to be successful with GStreamer on windows. A reflection on 10 months of
-building a high performance D3Dx Video Game Streaming pipeline and overview of
-the D3D11/12 GStreamer infrastructure we built, as well as our GStreamer
-plugins for Chromium Embedded (CEF) and NW.js.
-</p>
-<p><i>
-Florian Nierhaus is Director of Engineering and co-founder at Bebo. He loves
-engineering challenges and building real-time multimedia applications for fun
-and profit.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="profiling-hawktracer" id="profiling-hawktracer"></a>
-<p><b>
-Profiling GStreamer applications with HawkTracer and tracing subsystem. Marcin Kolny, Amazon
-</b></p>
-<p>
-HawkTracer is lightweight and low-overhead profiler that allows to define
-custom trace events and provides infrastructure to create post-run and live
-data analyzers. In this talk, I'd like to demonstrate how can GStreamer
-applications be profiled and tuned in real time using HawkTracer, GStreamer
-Tracing subsystem and gst-debugger. I'll explain base concepts of HawkTracer,
-how to extend the profiler and how to integrate it to existing applications
-and GStreamer plugins(e.g. gst-shark tracing plugins) to get live profiling
-data.
-</p>
-<p><i>
-Marcin is a software development engineer at Amazon. He spends his free time
-on contributing to several open source projects. For a few years he's been
-also a member of GNOME Foundation, where he maintains gstreamermm library and
-gst-debugger application, and contributes to a few other (mostly C++ related)
-projects.
-</i></p>
-<p><i>
-Marcin's started using GStreamer framework couple of years ago in his previous
-job, where he was responsible for delivering video library for UAV system.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="ci-for-embedded" id="ci-for-embedded"></a>
-<p><b>
-GStreamer CI for embedded platforms. Olivier Crête (ocrete), Collabora
-</b></p>
-<p>
-Many people at this conference use GStreamer on embedded systems, yet
-our Continuous Integration (CI) only runs on Intel based systems.
-Earlier, this year we tried to tackle this. We created a prototype CI
-that builds GStreamer for the Raspberry Pi platform, and then, using
-Collabora's LAVA infrastructure, runs gst-validate on the actual board.
-</p><p>
-During this talk, I will describe the approach we've chosen, why we
-chose it, how it works, and our plan to bring this to GStreamer's
-infrastructure once the move to GitLab is complete.
-</p>
-<p><i>
-Olivier Crête has been involved in free software since 2000. He has been
-involved in GNOME since 2003 and in Gentoo from 2003 to 2012. He currently
-works for Collabora, where he leads the multimedia team. He's been an active
-GStreamer developer since 2007, first working on VoIP and video calls, but
-lately he's been working on all kinds of multimedia projects.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="webkitgtk-and-wpe" id="webkitgtk-and-wpe"></a>
-<p><b>
-Multimedia support in WebKitGTK and WPE, current status and plans. Philippe Normand (philn), Igalia
-</b></p>
-<p>
-This talk is about multimedia support in the WPE and GTK+ WebKit ports.
-I will give a status update about the HTML5 features currently supported
-by our GStreamer backend, such as WebRTC, MSE, MediaCapabilities support.
-The talk would also include a brief case study about using WPE and its Cog
-browser on IMX6 platforms.
-</p>
-<p><i>
-Philippe Normand is a software engineer working for Igalia. His
-expertize spans between GStreamer and WebKit, where he has been
-improving the multimedia backends required for the HTML5 Living
-Standard.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="servo-webaudio-rust" id="servo-webaudio-rust"></a>
-<p><b>
-Using GStreamer for Servo's WebAudio implementation in Rust. Manish Goregaokar, Mozilla
-</b></p>
-<p>
-Servo, the experimental browser engine written in Rust, is adding WebAudio
-support. We decided to use gstreamer-rs for handling decoding and playback,
-and plan to use gst-player for &lt;audio&gt;, &lt;video&gt;, and WebRTC.
-We found it to be very easy to use from Rust.
-</p><p>
-This talk is about our experiences with gstreamer-rs, as well as the design
-of servo-media and how this all comes together to create a clean WebAudio
-interface.
-</p>
-<p><i>
-Manish Goregaokar is a Research Engineer at Mozilla working on the experimental
-Servo browser engine. He's also active in the Rust community, and cares a lot
-about making programming more accessible to others.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="praxis-live-java-bindings" id="praxis-live-java-bindings"></a>
-<p><b>
-PraxisLIVE, PraxisCORE and the Java bindings for GStreamer. Neil C Smith
-</b></p>
-<p>
-PraxisLIVE is a hybrid-visual FLOSS IDE and actor-based runtime for
-live programming, with a particular emphasis on live creative coding.
-The recently released PraxisCORE is a modular JVM runtime for
-cyberphysical programming, supporting real-time coding of real-time
-systems. It is the heart of PraxisLIVE. With a distributed
-forest-of-actors architecture, runtime code changes and comprehensive
-introspection, PraxisCORE brings aspects of Erlang, Smalltalk and
-Extempore into the Java world ... a powerful platform for media
-processing, data visualisation, sensors, robotics, IoT, and lots more!
-</p><p>
-A key aspect of PraxisLIVE has always been its support for developing
-projects mixing live and pre-recorded video with OpenGL for media
-artists and VJs, and the use of GStreamer actually predates inclusion
-of Processing for live graphics.  In late-2015, after a number of
-stalled attempts by the Processing project to create new Java bindings
-for GStreamer 1.x, I took on the task of forking and maintaining the
-existing 0.10 bindings to work with GStreamer 1.x for use in
-PraxisLIVE.  Since then, various other people and projects have made
-use of and contributed to them.
-</p><p>
-This talk and demo will cover the current state of the GStreamer 1.x
-Java bindings, and showcase their use with PraxisLIVE.
-</p>
-<p><i>
-Neil C Smith is an Artist &amp; Technologist from Oxford, UK. An artist
-working with code, he builds interactive spaces &amp; projections, and
-improvised &amp; live-coded performances. A technologist with a creative
-edge, he is lead developer of PraxisLIVE, maintains various Java media
-libraries including the bindings for GStreamer, and is an Apache
-NetBeans committer.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
 <a name="cloud-based-live-video-handling" id="cloud-based-live-video-handling"></a>
 <p><b>
 GStreamer for cloud-based live video handling. Matthew Clark &amp; Luke Moscrop, BBC
@@ -375,94 +71,29 @@ broadcasters. He is also based at the BBC’s Media City offices in Salford,
 Greater Manchester.
 </i></p>
 
-</td></tr>
-
 <tr valign="top"><td>
-<a name="streams-and-collections" id="streams-and-collections"></a>
+<a name="deep-neural-networks" id="deep-neural-networks"></a>
 <p><b>
-Streams and collections: we're not done yet! Edward Hervey (bilboed), Centricular
+Bringing Deep Neural Networks to GStreamer. Stian Selnes, Pexip
 </b></p>
 <p>
-Decodebin3 and playbin3 brought a more efficient handling of playback
-use-cases by explicitly listing available streams, allowing fast
-stream-switching (by not decoding all streams), and a leaner codebase.
-The core feature for allowing this was the addition to GStreamer of
-collections of GstStream (i.e. explicit listing of streams).
-</p><p>
- This talk will go over proposed additions to the streams API to go
-the extra mile and allow use-cases that weren't possible before or
-weren't efficient:
-<ul>
-  <li>stream-selection by any element (as opposed to just
-      decodebin3). This will allow elements such as adaptive demuxers to
-      only download the streams really required (as opposed to all
-      streams).</li>
-  <li>reliably notify elements that a given stream won't be used at all
-      downstream (to reduce resource usage even more)</li>
-  <li>know as early as possible when elements are ready to receive
-      processing instructions, such as seek events or stream-selection,
-      instead of waiting for pre-rolling.</li>
-  <li>handle scalable streams (where the base and enhancement layers are
-      separate) such as SHVC, Dolby Vision, wavpack, and more.</li>
-</ul>
+Over the last decade, there’s been a tremendous progress in deep learning. The
+field has shifted from a niche reserved only to researchers, to a mainstream
+technology that I’ve observed being discussed at a family tea party
+(seriously). There’s now a jungle of frameworks that enable a layman to train
+complex models and make accurate predictions about almost anything. If you’re
+able to navigate this jungle, you will be able to make useful applications and
+impressive demos with relatively little effort. And it just got even easier!
+Last year, OpenCV released a DNN module to run trained models. So what’s more
+natural than to make use of this and bring the power of deep neural networks
+to GStreamer?!
 </p>
 <p><i>
-Edward Hervey has been contributing to the GStreamer project for the
-past 14 years, from core components to high-level projects such as the
-pitivi video editor. Currently a Senior Engineer at Centricular, he has
-helped numerous clients in current and past companies to make the most
-out of GStreamer in various areas. He is currently in charge of
-Continuous Integration and overseeing QA infrastructure for the
-GStreamer project.
+Stian Selnes is a software engineer developing video conferencing systems at
+Pexip. He's been working with GStreamer, video codecs and other types of signal
+processing for 11 years. In an effort to be hip and trendy he's now dipping his
+toes into neural networks and deep learning.
 </i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="non-interleaved-audio" id="non-interleaved-audio"></a>
-<p><b>
-Non-interleaved audio in GStreamer. George Kiagiadakis (gkiagia), Collabora
-</b></p>
-<p>
-Earlier this year I was working on enabling support for non-interleaved audio
-buffers in GStreamer. In this talk, first, I will shortly explain what
-non-interleaved audio means and I will show some of the challenges I faced
-while implementing support for it. Afterwards, I will go through the new
-API I introduced for handling audio buffers, in order to support non-interleaved
-as well as interleaved audio seamlessly, explaining why it should be adopted for
-writing new elements that handle audio.
-</p>
-<p><i>
-George Kiagiadakis is a computer science graduate from the University of
-Crete and a free software contributor since 2008. He got involved with
-GStreamer in 2009 with a Summer of Code project in KDE, from which
-QtGStreamer later emerged. Since 2010, he is working at Collabora where
-he is assisting customers with the integration of GStreamer in their
-products and researching new features.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="trust-but-verify" id="trust-but-verify"></a>
-<p><b>
-Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone). Michał Budzyński &amp; Marcin Kidzinski, Samsung
-</b></p>
-<p>
-As digital appliances become more sophisticated, quality of multimedia content
-presented to the user can be affected by problems nearly anywhere along the
-stack from transmission to presentation. What is worse, the problems might
-surface only in exotic multi-device setups, specific network conditions or
-user interaction patterns.
-</p><p>
-In this talk we will go into details of our black box verification approach
-based on GStreamer. How do we achieve robust and mostly setup independent
-regression testing. What types of defects can be addressed and how are user
-interaction patterns modelled. Finally we will talk about our plans for future
-improvements, Q&amp;A session and hopefully some discussion on other available
-solutions or ways to improve presented one.
-</p>
-<p><i>
-Michał Budzyński and Marcin Kidzinski are multimedia Engineers at
-Samsung R&amp;D Institute Poland.</i></p>
 </td></tr>
 
 <tr valign="top"><td>
@@ -517,154 +148,59 @@ and distributed systems.
 </td></tr>
 
 <tr valign="top"><td>
-<a name="gst-inference" id="gst-inference"></a>
+<a name="praxis-live-java-bindings" id="praxis-live-java-bindings"></a>
 <p><b>
-GstInference: A GStreamer Deep Learning Framework. Jose Manuel Jimenez, RidgeRun
+PraxisLIVE, PraxisCORE and the Java bindings for GStreamer. Neil C Smith
 </b></p>
 <p>
-Deep Learning has revolutionized classic computer vision techniques to enable
-even more intelligent and autonomous systems. Multimedia frameworks, such as
-GStreamer, are a basic complement of automatic recognition and classification
-systems.
+PraxisLIVE is a hybrid-visual FLOSS IDE and actor-based runtime for
+live programming, with a particular emphasis on live creative coding.
+The recently released PraxisCORE is a modular JVM runtime for
+cyberphysical programming, supporting real-time coding of real-time
+systems. It is the heart of PraxisLIVE. With a distributed
+forest-of-actors architecture, runtime code changes and comprehensive
+introspection, PraxisCORE brings aspects of Erlang, Smalltalk and
+Extempore into the Java world ... a powerful platform for media
+processing, data visualisation, sensors, robotics, IoT, and lots more!
 </p><p>
-On this talk you will hear about a suggested design for GstInference, a
-GStreamer framework that allows easy integration of deep learning networks
-into your existing pipeline. Leverage GStreamer's flexibility and scalability
-with your existing models and achieve high performance inference. Use your
-pre-trained model from the most popular machine learning frameworks
-(Keras, Tensorflow, Caffe) to infer and execute them in a variety of platforms
-(x86, iMX8, TX1/TX2).
+A key aspect of PraxisLIVE has always been its support for developing
+projects mixing live and pre-recorded video with OpenGL for media
+artists and VJs, and the use of GStreamer actually predates inclusion
+of Processing for live graphics.  In late-2015, after a number of
+stalled attempts by the Processing project to create new Java bindings
+for GStreamer 1.x, I took on the task of forking and maintaining the
+existing 0.10 bindings to work with GStreamer 1.x for use in
+PraxisLIVE.  Since then, various other people and projects have made
+use of and contributed to them.
 </p><p>
-Link in your tracking, recognition and classification networks into your
-existing pipeline and achieve real-time deep learning inference.
+This talk and demo will cover the current state of the GStreamer 1.x
+Java bindings, and showcase their use with PraxisLIVE.
 </p>
 <p><i>
-Jose Jimenez-Chavarria is a senior embedded software engineer at Ridgerun
-working on GNU/Linux and GStreamer based solutions since 2013. Jose has a
-master degree on computer science specialized on machine learning, his
-graduation work consisted on deep learning techniques applied in nematode
-segmentation for microscopy images. He's currently interested on computer
-vision, AI, image processing, multimedia streaming technologies and machine
-learning applications on embedded systems.
+Neil C Smith is an Artist &amp; Technologist from Oxford, UK. An artist
+working with code, he builds interactive spaces &amp; projections, and
+improvised &amp; live-coded performances. A technologist with a creative
+edge, he is lead developer of PraxisLIVE, maintains various Java media
+libraries including the bindings for GStreamer, and is an Apache
+NetBeans committer.
 </i></p>
 </td></tr>
 
 <tr valign="top"><td>
-<a name="deep-neural-networks" id="deep-neural-networks"></a>
+<a name="d3dx-video-game-streaming-on-windows" id="d3dx-video-game-streaming-on-windows"></a>
 <p><b>
-Bringing Deep Neural Networks to GStreamer. Stian Selnes, Pexip
+D3Dx Video Game Streaming on Windows. Florian Nierhaus, Bebo
 </b></p>
 <p>
-Over the last decade, there’s been a tremendous progress in deep learning. The
-field has shifted from a niche reserved only to researchers, to a mainstream
-technology that I’ve observed being discussed at a family tea party
-(seriously). There’s now a jungle of frameworks that enable a layman to train
-complex models and make accurate predictions about almost anything. If you’re
-able to navigate this jungle, you will be able to make useful applications and
-impressive demos with relatively little effort. And it just got even easier!
-Last year, OpenCV released a DNN module to run trained models. So what’s more
-natural than to make use of this and bring the power of deep neural networks
-to GStreamer?!
+How to be successful with GStreamer on windows. A reflection on 10 months of
+building a high performance D3Dx Video Game Streaming pipeline and overview of
+the D3D11/12 GStreamer infrastructure we built, as well as our GStreamer
+plugins for Chromium Embedded (CEF) and NW.js.
 </p>
 <p><i>
-Stian Selnes is a software engineer developing video conferencing systems at
-Pexip. He's been working with GStreamer, video codecs and other types of signal
-processing for 11 years. In an effort to be hip and trendy he's now dipping his
-toes into neural networks and deep learning.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="android-camera-source-2" id="android-camera-source-2"></a>
-<p><b>
-Android camera source 2 - a continuation story. Justin Kim (김정석), SK Telecom
-</b></p>
-<p>
-Although Android announced NDK API for Camera HAL3 a few years ago, GStreamer
-doesn't have a correspondent element to use the API yet. In the meantime, I
-have tried to make it, but it is still an on-going project. Thus, in this talk,
-I'd like to share what I have done and what I should do more to land this
-element correctly.
-</p>
-<p><i>
-Justin Kim has been contributing to GStreamer since 2012. He is an open source
-project enthusiast and recently joined ICT R&amp;D Center, SK Telecom in Korea
-to spread the open source habits.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="post-mortem-debugging" id="post-mortem-debugging"></a>
-<p><b>
-Post Mortem GStreamer Debugging with Gdb and Python. Michael Olbrich, Pengutronix
-</b></p>
-<p>
-There are a lot of tools available to simplify debugging GStreamer
-applications at runtime. Unfortunately, the situation is quite different,
-once an application crashes. While gdb can be used to access all the data
-structures, interpreting the data can be difficult and time consuming.
-</p><p>
-This talk shows how the gdb Python API to simplify debugging GStreamer
-applications. It will show how Python can be used to determine the overall
-state of the pipeline and display the GStreamer object and related data
-structures in a more readable format.
-</p>
-<p><i>
-Michael Olbrich is an open-source developer with a focus on platform
-integration on embedded Linux. He works as a full-time Linux developer for
-Pengutronix. His job is to provide a smooth Linux experience on embedded
-devices from init systems to graphics and multimedia frameworks. He is the
-main maintainer for PTXdist, an embedded Linux distribution.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="asio" id="asio"></a>
-<p><b>
-In which the protagonist explores why ASIO is still alive. Nirbheek Chauhan (nirbheek), Centricular
-</b></p>
-<p>
-A̸̡S҉̵̧̛̀I̵̸̢͞O͏͞҉ is an audio API often used on Windows. It stands
-for Audio Stream Input/Output, which is technical jargon meant to lull
-you into a false sense of security. To make you believe in the High
-Quality of your Low-Latency Professional Audio Equipment and Software.
-</p><p>
-These are lies. One wishes the house was made of cards, because at
-least then one could see through it. Nay, this is a House of Leaves
-that leaves one imagining what Lovecraftian nightmare saw fit to
-create the circumstances at Steinberg GmbH that led to such an elegant
-heap of bitrot and backwards compatibility that Windows itself would
-turn away at the sight.
-</p>
-<p><i>
-Nirbheek Chauhan writes software and hacks on GStreamer for a living and for
-fun. In recent times and despite his best efforts, he accidentally became a
-build system expert and continues to contribute to the Meson build system as
-a core contributor. When not fixing broken builds, he works on interesting
-WebRTC applications using GStreamer and complains about how slow Rust
-adoption is.
-</i></p>
-</td></tr>
-
-<tr valign="top"><td>
-<a name="microsoft-teams-connector" id="microsoft-teams-connector"></a>
-<p><b>
-Microsoft Teams Connector. Håvard Graff, Pexip
-</b></p>
-<p>
-In the fall of 2017 Pexip got bestowed the honor of creating a way for
-traditional video-conferencing endpoints to join a Microsoft Teams meeting.
-This meant porting much of our existing codebase from Linux to Windows, and
-being able to interact with our GStreamer-based mediastack using C#.
-This is a story about Windows, Meson, .NET, GstApp, Azure, AVX512, Consultants,
-PDD (Panic Driven Development), GIR-files and perfect video-streams.
-</p>
-<p><i>
-Håvard Graff has been working professionally with GStreamer since 2007,
-for Tandberg, Cisco and now Pexip, creating video-conferencing products.
-The desire for quality has made him an obsessional crusader for more and
-better testing, and he will try to spring GstHarness on you at any given
-opportunity.
+Florian Nierhaus is Director of Engineering and co-founder at Bebo. He loves
+engineering challenges and building real-time multimedia applications for fun
+and profit.
 </i></p>
 </td></tr>
 
@@ -723,6 +259,56 @@ Video Editing Stack as well as the Pitivi video editor.
 </td></tr>
 
 <tr valign="top"><td>
+<a name="post-mortem-debugging" id="post-mortem-debugging"></a>
+<p><b>
+Post Mortem GStreamer Debugging with Gdb and Python. Michael Olbrich, Pengutronix
+</b></p>
+<p>
+There are a lot of tools available to simplify debugging GStreamer
+applications at runtime. Unfortunately, the situation is quite different,
+once an application crashes. While gdb can be used to access all the data
+structures, interpreting the data can be difficult and time consuming.
+</p><p>
+This talk shows how the gdb Python API to simplify debugging GStreamer
+applications. It will show how Python can be used to determine the overall
+state of the pipeline and display the GStreamer object and related data
+structures in a more readable format.
+</p>
+<p><i>
+Michael Olbrich is an open-source developer with a focus on platform
+integration on embedded Linux. He works as a full-time Linux developer for
+Pengutronix. His job is to provide a smooth Linux experience on embedded
+devices from init systems to graphics and multimedia frameworks. He is the
+main maintainer for PTXdist, an embedded Linux distribution.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="ci-for-embedded" id="ci-for-embedded"></a>
+<p><b>
+GStreamer CI for embedded platforms. Olivier Crête (ocrete), Collabora
+</b></p>
+<p>
+Many people at this conference use GStreamer on embedded systems, yet
+our Continuous Integration (CI) only runs on Intel based systems.
+Earlier, this year we tried to tackle this. We created a prototype CI
+that builds GStreamer for the Raspberry Pi platform, and then, using
+Collabora's LAVA infrastructure, runs gst-validate on the actual board.
+</p><p>
+During this talk, I will describe the approach we've chosen, why we
+chose it, how it works, and our plan to bring this to GStreamer's
+infrastructure once the move to GitLab is complete.
+</p>
+<p><i>
+Olivier Crête has been involved in free software since 2000. He has been
+involved in GNOME since 2003 and in Gentoo from 2003 to 2012. He currently
+works for Collabora, where he leads the multimedia team. He's been an active
+GStreamer developer since 2007, first working on VoIP and video calls, but
+lately he's been working on all kinds of multimedia projects.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
 <a name="pipewire" id="pipewire"></a>
 <p><b>
 PipeWire wants to be your audio server too. Wim Taymans (wtay), RedHat
@@ -737,6 +323,97 @@ Wim Taymans has a computer science degree from the Katholieke Universiteit
 Leuven, Belgium. He co-founded the GStreamer multimedia framework in 1999.
 Wim Taymans is a Principal Software Engineer at Red Hat, responsible for
 various multimedia packages and is currently working on PipeWire.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="nvidia-deepstream-sdk" id="nvidia-deepstream-sdk"></a>
+<p><b>
+Introduction to DeepStreamSDK. Tushar Khinvasara, Nvidia
+</b></p>
+<p>
+For more information about the DeepStreamSDK see:
+<ul>
+ <li>Intro - https://developer.nvidia.com/deepstream-sdk</li>
+ <li>Details - https://devblogs.nvidia.com/accelerate-video-analytics-deepstream-2</li>
+</ul>
+</p>
+<p><i>
+Tushar is working as technical architect at Nvidia Pune center for Video
+Analytics Development with DeepStream. He has total 15+yrs of SW development
+experience in embedded system and has extensively worked on various multimedia
+frameworks from NXP semiconductor's, Symbian and Android.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="webkitgtk-and-wpe" id="webkitgtk-and-wpe"></a>
+<p><b>
+Multimedia support in WebKitGTK and WPE, current status and plans. Philippe Normand (philn), Igalia
+</b></p>
+<p>
+This talk is about multimedia support in the WPE and GTK+ WebKit ports.
+I will give a status update about the HTML5 features currently supported
+by our GStreamer backend, such as WebRTC, MSE, MediaCapabilities support.
+The talk would also include a brief case study about using WPE and its Cog
+browser on IMX6 platforms.
+</p>
+<p><i>
+Philippe Normand is a software engineer working for Igalia. His
+expertize spans between GStreamer and WebKit, where he has been
+improving the multimedia backends required for the HTML5 Living
+Standard.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="cerbero" id="cerbero"></a>
+<p><b>
+Taming the three-headed monster. Nirbheek Chauhan (nirbheek), Centricular
+</b></p>
+<p>
+Cerbero is the build tool used by the GStreamer project to provide a
+standard way to build binaries for all supported platforms: macOS,
+iOS, Android, Linux, and Windows. The tool has been instrumental in
+ensuring cross-platform support for GStreamer, but few understand the
+arcane mysteries that embody its very essence.
+</p><p>
+In this talk I shall begin with a brief description of the structure
+of Cerbero, followed by some of the many improvements that have been
+made to Cerbero over the past year; particularly the port to Meson and
+MSVC/Windows and the move to Python 3.
+</p>
+<p><i>
+Nirbheek Chauhan writes software and hacks on GStreamer for a living and for
+fun. In recent times and despite his best efforts, he accidentally became a
+build system expert and continues to contribute to the Meson build system as
+a core contributor. When not fixing broken builds, he works on interesting
+WebRTC applications using GStreamer and complains about how slow Rust
+adoption is.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="non-interleaved-audio" id="non-interleaved-audio"></a>
+<p><b>
+Non-interleaved audio in GStreamer. George Kiagiadakis (gkiagia), Collabora
+</b></p>
+<p>
+Earlier this year I was working on enabling support for non-interleaved audio
+buffers in GStreamer. In this talk, first, I will shortly explain what
+non-interleaved audio means and I will show some of the challenges I faced
+while implementing support for it. Afterwards, I will go through the new
+API I introduced for handling audio buffers, in order to support non-interleaved
+as well as interleaved audio seamlessly, explaining why it should be adopted for
+writing new elements that handle audio.
+</p>
+<p><i>
+George Kiagiadakis is a computer science graduate from the University of
+Crete and a free software contributor since 2008. He got involved with
+GStreamer in 2009 with a Summer of Code project in KDE, from which
+QtGStreamer later emerged. Since 2010, he is working at Collabora where
+he is assisting customers with the integration of GStreamer in their
+products and researching new features.
 </i></p>
 </td></tr>
 
@@ -783,6 +460,327 @@ the full 5 minutes, that's fine as well.
 </td></tr>
 
 <tr valign="top"><td>
+<a name="nnstreamer-neural-networks-as-filters" id="nnstreamer-neural-networks-as-filters"></a>
+<p><b>
+NNStreamer: Neural Networks as GStreamer Filters. MyungJoo Ham (함명주), Samsung
+</b></p>
+<p>
+In the recent decade, we have witnessed widespread of deep neural networks and
+their applications. With the evolution of consumer electronics, the range of
+applicable devices for such deep neural networks is expanding as well to
+personal, mobile, or even wearable devices. The new challenge of such systems
+is to efficiently manage data streams between sensors (cameras, mics, radars,
+lidars, and so on), media filters, neural network models and their post
+processors, and applications. In order to tackle the challenge with less effort
+and more effect, we propose to implement general neural network supporting
+filters for Gstreamer, which is actively developed and tested at
+https://github.com/nnsuite/nnstreamer
+</p><p>
+With NNStreamer, neural network developers may easily configure streams with
+various sensors and models and execute the streams with high efficiency.
+Besides, media stream developers can now use deep neural networks as yet
+another media filters with much less efforts.
+</p>
+<p><i>
+MyungJoo Ham, Ph.D., has been working in Samsung Electronics as a software
+developer after receiving the Ph.D. degree from University of Illinois in 2009.
+Recently, he has been developing development environment and software platform
+for on-device AI projects varying from autonomous driving systems to consumer
+electronics in AI Center of Samsung. Before joining AI Center, he had worked
+mostly on Tizen as an architect and lead developer with responsibilities on
+Linux kernel, system frameworks, base libraries, .NET runtime, and so on.
+He has been a maintainer of a couple of Linux kernel subsystems and contributor
+of a few other open source projects.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="streams-and-collections" id="streams-and-collections"></a>
+<p><b>
+Streams and collections: we're not done yet! Edward Hervey (bilboed), Centricular
+</b></p>
+<p>
+Decodebin3 and playbin3 brought a more efficient handling of playback
+use-cases by explicitly listing available streams, allowing fast
+stream-switching (by not decoding all streams), and a leaner codebase.
+The core feature for allowing this was the addition to GStreamer of
+collections of GstStream (i.e. explicit listing of streams).
+</p><p>
+ This talk will go over proposed additions to the streams API to go
+the extra mile and allow use-cases that weren't possible before or
+weren't efficient:
+<ul>
+  <li>stream-selection by any element (as opposed to just
+      decodebin3). This will allow elements such as adaptive demuxers to
+      only download the streams really required (as opposed to all
+      streams).</li>
+  <li>reliably notify elements that a given stream won't be used at all
+      downstream (to reduce resource usage even more)</li>
+  <li>know as early as possible when elements are ready to receive
+      processing instructions, such as seek events or stream-selection,
+      instead of waiting for pre-rolling.</li>
+  <li>handle scalable streams (where the base and enhancement layers are
+      separate) such as SHVC, Dolby Vision, wavpack, and more.</li>
+</ul>
+</p>
+<p><i>
+Edward Hervey has been contributing to the GStreamer project for the
+past 14 years, from core components to high-level projects such as the
+pitivi video editor. Currently a Senior Engineer at Centricular, he has
+helped numerous clients in current and past companies to make the most
+out of GStreamer in various areas. He is currently in charge of
+Continuous Integration and overseeing QA infrastructure for the
+GStreamer project.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="profiling-hawktracer" id="profiling-hawktracer"></a>
+<p><b>
+Profiling GStreamer applications with HawkTracer and tracing subsystem. Marcin Kolny, Amazon
+</b></p>
+<p>
+HawkTracer is lightweight and low-overhead profiler that allows to define
+custom trace events and provides infrastructure to create post-run and live
+data analyzers. In this talk, I'd like to demonstrate how can GStreamer
+applications be profiled and tuned in real time using HawkTracer, GStreamer
+Tracing subsystem and gst-debugger. I'll explain base concepts of HawkTracer,
+how to extend the profiler and how to integrate it to existing applications
+and GStreamer plugins(e.g. gst-shark tracing plugins) to get live profiling
+data.
+</p>
+<p><i>
+Marcin is a software development engineer at Amazon. He spends his free time
+on contributing to several open source projects. For a few years he's been
+also a member of GNOME Foundation, where he maintains gstreamermm library and
+gst-debugger application, and contributes to a few other (mostly C++ related)
+projects.
+</i></p>
+<p><i>
+Marcin's started using GStreamer framework couple of years ago in his previous
+job, where he was responsible for delivering video library for UAV system.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="asio" id="asio"></a>
+<p><b>
+In which the protagonist explores why ASIO is still alive. Nirbheek Chauhan (nirbheek), Centricular
+</b></p>
+<p>
+A̸̡S҉̵̧̛̀I̵̸̢͞O͏͞҉ is an audio API often used on Windows. It stands
+for Audio Stream Input/Output, which is technical jargon meant to lull
+you into a false sense of security. To make you believe in the High
+Quality of your Low-Latency Professional Audio Equipment and Software.
+</p><p>
+These are lies. One wishes the house was made of cards, because at
+least then one could see through it. Nay, this is a House of Leaves
+that leaves one imagining what Lovecraftian nightmare saw fit to
+create the circumstances at Steinberg GmbH that led to such an elegant
+heap of bitrot and backwards compatibility that Windows itself would
+turn away at the sight.
+</p>
+<p><i>
+Nirbheek Chauhan writes software and hacks on GStreamer for a living and for
+fun. In recent times and despite his best efforts, he accidentally became a
+build system expert and continues to contribute to the Meson build system as
+a core contributor. When not fixing broken builds, he works on interesting
+WebRTC applications using GStreamer and complains about how slow Rust
+adoption is.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="trust-but-verify" id="trust-but-verify"></a>
+<p><b>
+Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone). Michał Budzyński &amp; Marcin Kidzinski, Samsung
+</b></p>
+<p>
+As digital appliances become more sophisticated, quality of multimedia content
+presented to the user can be affected by problems nearly anywhere along the
+stack from transmission to presentation. What is worse, the problems might
+surface only in exotic multi-device setups, specific network conditions or
+user interaction patterns.
+</p><p>
+In this talk we will go into details of our black box verification approach
+based on GStreamer. How do we achieve robust and mostly setup independent
+regression testing. What types of defects can be addressed and how are user
+interaction patterns modelled. Finally we will talk about our plans for future
+improvements, Q&amp;A session and hopefully some discussion on other available
+solutions or ways to improve presented one.
+</p>
+<p><i>
+Michał Budzyński and Marcin Kidzinski are multimedia Engineers at
+Samsung R&amp;D Institute Poland.</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="android-camera-source-2" id="android-camera-source-2"></a>
+<p><b>
+Android camera source 2 - a continuation story. Justin Kim (김정석), SK Telecom
+</b></p>
+<p>
+Although Android announced NDK API for Camera HAL3 a few years ago, GStreamer
+doesn't have a correspondent element to use the API yet. In the meantime, I
+have tried to make it, but it is still an on-going project. Thus, in this talk,
+I'd like to share what I have done and what I should do more to land this
+element correctly.
+</p>
+<p><i>
+Justin Kim has been contributing to GStreamer since 2012. He is an open source
+project enthusiast and recently joined ICT R&amp;D Center, SK Telecom in Korea
+to spread the open source habits.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="microsoft-teams-connector" id="microsoft-teams-connector"></a>
+<p><b>
+Microsoft Teams Connector. Håvard Graff, Pexip
+</b></p>
+<p>
+In the fall of 2017 Pexip got bestowed the honor of creating a way for
+traditional video-conferencing endpoints to join a Microsoft Teams meeting.
+This meant porting much of our existing codebase from Linux to Windows, and
+being able to interact with our GStreamer-based mediastack using C#.
+This is a story about Windows, Meson, .NET, GstApp, Azure, AVX512, Consultants,
+PDD (Panic Driven Development), GIR-files and perfect video-streams.
+</p>
+<p><i>
+Håvard Graff has been working professionally with GStreamer since 2007,
+for Tandberg, Cisco and now Pexip, creating video-conferencing products.
+The desire for quality has made him an obsessional crusader for more and
+better testing, and he will try to spring GstHarness on you at any given
+opportunity.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="gst-inference" id="gst-inference"></a>
+<p><b>
+GstInference: A GStreamer Deep Learning Framework. Jose Manuel Jimenez, RidgeRun
+</b></p>
+<p>
+Deep Learning has revolutionized classic computer vision techniques to enable
+even more intelligent and autonomous systems. Multimedia frameworks, such as
+GStreamer, are a basic complement of automatic recognition and classification
+systems.
+</p><p>
+On this talk you will hear about a suggested design for GstInference, a
+GStreamer framework that allows easy integration of deep learning networks
+into your existing pipeline. Leverage GStreamer's flexibility and scalability
+with your existing models and achieve high performance inference. Use your
+pre-trained model from the most popular machine learning frameworks
+(Keras, Tensorflow, Caffe) to infer and execute them in a variety of platforms
+(x86, iMX8, TX1/TX2).
+</p><p>
+Link in your tracking, recognition and classification networks into your
+existing pipeline and achieve real-time deep learning inference.
+</p>
+<p><i>
+Jose Jimenez-Chavarria is a senior embedded software engineer at Ridgerun
+working on GNU/Linux and GStreamer based solutions since 2013. Jose has a
+master degree on computer science specialized on machine learning, his
+graduation work consisted on deep learning techniques applied in nematode
+segmentation for microscopy images. He's currently interested on computer
+vision, AI, image processing, multimedia streaming technologies and machine
+learning applications on embedded systems.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="video4linux-codecs" id="video4linux-codecs"></a>
+<p><b>
+Discovering Video4Linux CODECs. Nicolas Dufresne (ndufresne) &amp; Ezequiel Garcia, Collabora
+</b></p>
+<p>
+As Video4Linux gain support for stateful and stateless CODECs, it is
+important to have an elegant mechanism to enumerate available CODECs
+and register GStreamer elements.
+</p><p>
+This talk will be presented by Ezequiel Garcia and Nicolas Dufresne.
+Ezequiel will present the Linux Kernel Video4Linux media controller and
+CODEC APIs and how we can improve the dynamic enumeration of CODEC
+capabilities. Nicolas will explain how GStreamer Video4linux plugin can
+leverage these APIs to dynamically expose these CODECs as GStreamer
+elements.
+</p>
+<p><i>
+Nicolas Dufresne is a Principal Multimedia Engineer at Collabora. Based
+in Montréal, he was initially a generalist developer with background in
+STB development. Nicolas started in 2011 contributing to GStreamer
+Multimedia Framework adding infrastructure and primitives to support
+accelerated upload of buffers to GL textures. Today, Nicolas is
+implicated in both GStreamer and Linux Media communities to help create
+a solid support for CODEC on Linux.
+</i></p>
+<p><i>
+Ezequiel is a software engineer. With 15 years of experience, Ezequiel
+has been an active Linux Kernel contributor since 2012, and maintains
+two Video4linux drivers. From 2015 to 2018, Ezequiel worked for a cloud
+video surveillance company, working on GStreamer-based applications. In
+2018, he joined Collabora as a Senior Core Engineer, where he currently
+works on Video4Linux CODECs.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="gstreamer-and-rust" id="gstreamer-and-rust"></a>
+<p><b>
+What's new with GStreamer &amp; Rust. Sebastian Dröge (slomo), Centricular
+</b></p>
+<p>
+Since last year's presentation about the existence of Rust bindings for
+GStreamer a lot has happened. Bigger parts of the GStreamer API is
+covered by the bindings now, many parts of the bindings API were
+refactored to be easier to use and there were of course also changes to
+the infrastructure for writing GStreamer plugins in Rust.
+</p><p>
+An overview of the most important changes since last year will be given
+in this presentation, as well as a (very short!) overview of how
+GStreamer can be used from Rust and why you should consider that for
+your next project.
+</p>
+<p><i>
+Sebastian Dröge (slomo) is a Free Software developer and one of the GStreamer
+maintainers and core developers. He has been involved with the project since
+more than 10 years now. He also contributes to various other Free Software
+projects, like Debian, Rust, GNOME and WebKit. While finishing his master's
+degree in computer sciences at the University of Paderborn in Germany, he
+started working as a contractor for GStreamer and related technologies.
+Sebastian is one of the founders of Centricular, a company providing
+consultancy services, where he's working from his new home in Greece on
+improving GStreamer and the Free Software ecosystem in general.
+</i></p><p><i>
+Apart from multimedia related topics, Sebastian has an interest in digital
+signal processing, programming languages, machine learning, network protocols
+and distributed systems.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
+<a name="servo-webaudio-rust" id="servo-webaudio-rust"></a>
+<p><b>
+Using GStreamer for Servo's WebAudio implementation in Rust. Manish Goregaokar, Mozilla
+</b></p>
+<p>
+Servo, the experimental browser engine written in Rust, is adding WebAudio
+support. We decided to use gstreamer-rs for handling decoding and playback,
+and plan to use gst-player for &lt;audio&gt;, &lt;video&gt;, and WebRTC.
+We found it to be very easy to use from Rust.
+</p><p>
+This talk is about our experiences with gstreamer-rs, as well as the design
+of servo-media and how this all comes together to create a clean WebAudio
+interface.
+</p>
+<p><i>
+Manish Goregaokar is a Research Engineer at Mozilla working on the experimental
+Servo browser engine. He's also active in the Rust community, and cares a lot
+about making programming more accessible to others.
+</i></p>
+</td></tr>
+
+<tr valign="top"><td>
 <a name="bof1" id="bof1"></a>
 <a name="bof2" id="bof2"></a>
 <a name="bof3" id="bof3"></a>
@@ -792,7 +790,9 @@ BoFs / workshops
 </b></p>
 <p>
 These are opportunities for interested people to suggest or organise
-working groups or get-togethers for a particular topic.
+working groups or get-togethers for a particular topic. If you have an
+idea and would like to claim a slot, please enter your BoF onto the sheet
+at the registration table.
 </p>
 </td></tr>
 
@@ -815,6 +815,7 @@ working groups or get-togethers for a particular topic.
 <br />
 <br />
 <br />
+</td></tr>
 </td></tr>
 
 </table>
