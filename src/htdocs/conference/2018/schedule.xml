@@ -19,43 +19,6 @@
 <p><a href="#thursday">Schedule for Thursday 25 October 2018</a></p>
 <p><a href="#friday">Schedule for Friday 26 October 2018</a></p>
 
-<!-- ARRIVAL DAY -->
-
-<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0">
-	<tr name="wednesday" id="wednesday">
-		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
-			<p align="center"><font color="white">Wednesday 24th of October 2018 (Arrival Day)</font></p>
-		</td>
-	</tr>
-	<tr valign="center" bgcolor="#F0F0F0">
-		<td><p>19.30-<br />late</p></td>
-		<td colspan="2">
-		<p align="center"><b><font size="+2">Social Event: drinks and/or food - informal pre-conference meet-up on Wednesday evening</font></b></p>
-
-  <p align="center">
-    <font size="+2">at <a href="https://www.brewdog.com/bars/uk/lothian-road"><b><large>BrewDog Lothian Road</large></b></a></font><br/>
-  </p>
-  <p align="center"><b>Meet up on arrival day and say hi!</b></p>
-  <p align="center"><a href="https://www.brewdog.com/files/1537543178LOTHIANROADFOOD.pdf">Food</a> and drinks will be available for purchase. Credit cards should be accepted.</p>
-  <p align="center">
-    We have a semi-private section reserved for us upstairs on the right ("The Garage").
-  </p>
-  <p align="center">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.109807749272!2d-3.2087470493646566!3d55.94746868051066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a28f1c4d61%3A0x8cea87d80d07a49e!2sBrewDog+Lothian+Road!5e0!3m2!1sen!2suk!4v1540206441438" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
-  </p>
-		</td>
-		<td><p>19.30-<br />late</p></td>
-	</tr>
-
-	<tr valign="top" style="border:none">
-		<td style="border:none"></td>
-		<td style="border:none" colspan="2"></td>
-		<td style="border:none"></td>
-	</tr>
-</table>
-<br />
-<br />
-
 <!-- DAY 1 -->
 
 <table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0">
@@ -431,6 +394,43 @@
 		</td>
 		<td><p>17.30</p></td>
 	</tr>
+
+<!-- ARRIVAL DAY -->
+
+<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0">
+	<tr name="wednesday" id="wednesday">
+		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
+			<p align="center"><font color="white">Wednesday 24th of October 2018 (Arrival Day)</font></p>
+		</td>
+	</tr>
+	<tr valign="center" bgcolor="#F0F0F0">
+		<td><p>19.30-<br />late</p></td>
+		<td colspan="2">
+		<p align="center"><b><font size="+2">Social Event: drinks and/or food - informal pre-conference meet-up on Wednesday evening</font></b></p>
+
+  <p align="center">
+    <font size="+2">at <a href="https://www.brewdog.com/bars/uk/lothian-road"><b><large>BrewDog Lothian Road</large></b></a></font><br/>
+  </p>
+  <p align="center"><b>Meet up on arrival day and say hi!</b></p>
+  <p align="center"><a href="https://www.brewdog.com/files/1537543178LOTHIANROADFOOD.pdf">Food</a> and drinks will be available for purchase. Credit cards should be accepted.</p>
+  <p align="center">
+    We have a semi-private section reserved for us upstairs on the right ("The Garage").
+  </p>
+  <p align="center">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.109807749272!2d-3.2087470493646566!3d55.94746868051066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a28f1c4d61%3A0x8cea87d80d07a49e!2sBrewDog+Lothian+Road!5e0!3m2!1sen!2suk!4v1540206441438" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
+  </p>
+		</td>
+		<td><p>19.30-<br />late</p></td>
+	</tr>
+
+	<tr valign="top" style="border:none">
+		<td style="border:none"></td>
+		<td style="border:none" colspan="2"></td>
+		<td style="border:none"></td>
+	</tr>
+</table>
+<br />
+<br />
 
 </table>
 
