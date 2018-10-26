@@ -19,6 +19,167 @@
 <p><a href="#thursday">Schedule for Thursday 25 October 2018</a></p>
 <p><a href="#friday">Schedule for Friday 26 October 2018</a></p>
 
+<!-- DAY 2 -->
+
+<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0" name="friday" id="friday">
+	<tr>
+		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
+			<p align="center"><font color="white">Friday 26th of October 2018</font></p>
+		</td>
+	</tr>
+	<tr valign="top" bgcolor="#b0c4de">
+		<td width="5%"><p></p></td>
+		<td width="45%"><p align="center">Main Hall</p></td>
+		<td width="45%"><p align="center">Anatomy Lecture Theatre</p></td>
+		<td width="5%"><p></p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>09.00-<br />10.30</p></td>
+		<td colspan="2"><p align="center"><b>Sleep in</b><br /><small>(note that we start later on Friday, at 10.30am!)</small></p></td>
+		<td><p>09.00-<br />10.30</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p><b>10.30</b>-<br />11.15</p></td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#nnstreamer-neural-networks-as-filters">NNStreamer: Neural Networks as GStreamer Filters</a><br />MyungJoo Ham, Samsung</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#bof1">BoF / workshop #1: tbd</a><br /></p>
+		</td>
+		<td><p><b>10.30</b>-<br />11.15</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>11.15-<br />11.30</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>11.15-<br />11.30</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>11.30-<br />12.15</p></td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#streams-and-collections">Streams and collections: we're not done yet!</a><br />Edward Hervey (bilboed), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#bof2">BoF / workshop #2: tbd</a><br /></p>
+		</td>
+		<td><p>11.30-<br />12.15</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>12.15-<br />12.30</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>12.15-<br />12.30</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>12.30-<br />13.00</p></td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#profiling-hawktracer">Profiling GStreamer applications with HawkTracer and tracing subsystem</a><br />Marcin Kolny, Amazon</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#asio">In which the protagonist explores why ASIO is still alive</a><br />Nirbheek Chauhan, Centricular</p>
+		</td>
+		<td><p>12.30-<br />12.50</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>13.00-<br />14.00</p></td>
+		<td colspan="2"><p align="center"><b>Lunch Break</b></p></td>
+		<td><p>13.00-<br />14.00</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.00-<br />14.40</p></td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#trust-but-verify">Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone)</a><br />Michał Budzyński &amp; Marcin Kidzinski, Samsung</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#android-camera-source-2">Android camera source 2 - a continuation story</a><br />Justin Kim (김정석), SK Telecom</p>
+		</td>
+		<td><p>14.00-<br />14.20</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>14.40-<br />15.10</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>14.40-<br />15.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>15.10-<br />15.55</p></td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#microsoft-teams-connector">Microsoft Teams Connector</a><br />Håvard Graff (hgr), Pexip</p>
+
+		</td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#gst-inference">GstInference: A GStreamer Deep Learning Framework</a><br />Jose Manuel Jimenez, RidgeRun</p>
+		</td>
+		<td><p>15.10-<br />15.40</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>15.55-<br />16.10</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>15.55-<br />16.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.10-<br />16.40</p></td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#video4linux-codecs">Discovering Video4Linux CODECs</a><br />Nicolas Dufresne (ndufresne) &amp; Ezequiel Garcia, Collabora</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#gstreamer-and-rust">What's new with GStreamer &amp; Rust</a><br />Sebastian Dröge (slomo), Centricular</p>
+		</td>
+		<td><p>16.10-<br />16.40</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>16.40-<br />16.50</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>16.40-<br />16.50</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.50-<br />17.20</p></td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#servo-webaudio-rust">Using GStreamer for Servo's WebAudio implementation in Rust</a><br />Manish Goregaokar, Mozilla</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2018/talks-and-speakers.html#servo-webaudio-rust">Experiences with GStreamer/WebRTC</a><br />Marc Leeman, Barco</p>
+		</td>
+		<td><p>16.50-<br />17.20</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>17.25</p></td>
+		<td colspan="2"><p align="center"><i>Closing Session</i></p></td>
+		<td><p>17.25</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>17.30</p></td>
+		<td colspan="2">
+		<p align="center"><b>End of Conference</b></p>
+		</td>
+		<td><p>17.30</p></td>
+	</tr>
+</table>
+
+<br />
+<br />
+<br />
+<br />
+
 <!-- DAY 1 -->
 
 <table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0">
@@ -239,161 +400,7 @@
 <br />
 <br />
 <br />
-
-<!-- DAY 2 -->
-
-<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0" name="friday" id="friday">
-	<tr>
-		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
-			<p align="center"><font color="white">Friday 26th of October 2018</font></p>
-		</td>
-	</tr>
-	<tr valign="top" bgcolor="#b0c4de">
-		<td width="5%"><p></p></td>
-		<td width="45%"><p align="center">Main Hall</p></td>
-		<td width="45%"><p align="center">Anatomy Lecture Theatre</p></td>
-		<td width="5%"><p></p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>09.00-<br />10.30</p></td>
-		<td colspan="2"><p align="center"><b>Sleep in</b><br /><small>(note that we start later on Friday, at 10.30am!)</small></p></td>
-		<td><p>09.00-<br />10.30</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p><b>10.30</b>-<br />11.15</p></td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#nnstreamer-neural-networks-as-filters">NNStreamer: Neural Networks as GStreamer Filters</a><br />MyungJoo Ham, Samsung</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#bof1">BoF / workshop #1: tbd</a><br /></p>
-		</td>
-		<td><p><b>10.30</b>-<br />11.15</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>11.15-<br />11.30</p></td>
-		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
-		<td><p>11.15-<br />11.30</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>11.30-<br />12.15</p></td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#streams-and-collections">Streams and collections: we're not done yet!</a><br />Edward Hervey (bilboed), Centricular</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#bof2">BoF / workshop #2: tbd</a><br /></p>
-		</td>
-		<td><p>11.30-<br />12.15</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#F0F0F0">
-		<td><p>12.15-<br />12.30</p></td>
-		<td colspan="2">
-		<p align="center"><small><i>mini break</i></small></p>
-		</td>
-		<td><p>12.15-<br />12.30</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>12.30-<br />13.00</p></td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#profiling-hawktracer">Profiling GStreamer applications with HawkTracer and tracing subsystem</a><br />Marcin Kolny, Amazon</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#asio">In which the protagonist explores why ASIO is still alive</a><br />Nirbheek Chauhan, Centricular</p>
-		</td>
-		<td><p>12.30-<br />12.50</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>13.00-<br />14.00</p></td>
-		<td colspan="2"><p align="center"><b>Lunch Break</b></p></td>
-		<td><p>13.00-<br />14.00</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>14.00-<br />14.40</p></td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#trust-but-verify">Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone)</a><br />Michał Budzyński &amp; Marcin Kidzinski, Samsung</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#android-camera-source-2">Android camera source 2 - a continuation story</a><br />Justin Kim (김정석), SK Telecom</p>
-		</td>
-		<td><p>14.00-<br />14.20</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>14.40-<br />15.10</p></td>
-		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
-		<td><p>14.40-<br />15.10</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>15.10-<br />15.55</p></td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#microsoft-teams-connector">Microsoft Teams Connector</a><br />Håvard Graff (hgr), Pexip</p>
-
-		</td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#gst-inference">GstInference: A GStreamer Deep Learning Framework</a><br />Jose Manuel Jimenez, RidgeRun</p>
-		</td>
-		<td><p>15.10-<br />15.40</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#F0F0F0">
-		<td><p>15.55-<br />16.10</p></td>
-		<td colspan="2">
-		<p align="center"><small><i>mini break</i></small></p>
-		</td>
-		<td><p>15.55-<br />16.10</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>16.10-<br />16.40</p></td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#video4linux-codecs">Discovering Video4Linux CODECs</a><br />Nicolas Dufresne (ndufresne) &amp; Ezequiel Garcia, Collabora</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#gstreamer-and-rust">What's new with GStreamer &amp; Rust</a><br />Sebastian Dröge (slomo), Centricular</p>
-		</td>
-		<td><p>16.10-<br />16.40</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#F0F0F0">
-		<td><p>16.40-<br />16.50</p></td>
-		<td colspan="2">
-		<p align="center"><small><i>mini break</i></small></p>
-		</td>
-		<td><p>16.40-<br />16.50</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>16.50-<br />17.20</p></td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#servo-webaudio-rust">Using GStreamer for Servo's WebAudio implementation in Rust</a><br />Manish Goregaokar, Mozilla</p>
-		</td>
-		<td>
-		<p><a href="&site;/conference/2018/talks-and-speakers.html#servo-webaudio-rust">Experiences with GStreamer/WebRTC</a><br />Marc Leeman, Barco</p>
-		</td>
-		<td><p>16.50-<br />17.20</p></td>
-	</tr>
-
-	<tr valign="top">
-		<td><p>17.25</p></td>
-		<td colspan="2"><p align="center"><i>Closing Session</i></p></td>
-		<td><p>17.25</p></td>
-	</tr>
-
-	<tr valign="top" bgcolor="#E0E0E0">
-		<td><p>17.30</p></td>
-		<td colspan="2">
-		<p align="center"><b>End of Conference</b></p>
-		</td>
-		<td><p>17.30</p></td>
-	</tr>
+<br />
 
 <!-- ARRIVAL DAY -->
 
@@ -429,13 +436,6 @@
 		<td style="border:none"></td>
 	</tr>
 </table>
-<br />
-<br />
-
-</table>
-
-<br />
-<br />
 
 <br />
 <br />
