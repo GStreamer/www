@@ -14,6 +14,7 @@
     <item href="" />
 
     <item class="gstnavside-g" href="/security/">Security Center</item>
+    <item class="gstnavside-g" href="https://gitlab.freedesktop.org/gstreamer/">GitLab</item>
     <item class="gstnavside-g" href="/dev/">Developers</item>
     <item class="gstnavside-g" href="/documentation/">Documentation</item>
     <item class="gstnavside-g" href="/lists/">Mailing Lists</item>
