@@ -30,7 +30,7 @@
 <!ENTITY gst-plugins-gl-version-devel "git master">
 <!ENTITY gst-rtsp-server-version-devel "git master">
 <!ENTITY gst-streaming-server-version-devel "git master">
-<!ENTITY qt-gstreamer-version-devel "git master">
+<!ENTITY qt-gstreamer-version-devel "N/A">
 <!ENTITY gst-android-version-devel "git master">
 <!ENTITY gst-omx-version-devel "git master">
 <!ENTITY gst-vaapi-version-devel "git master">
@@ -49,6 +49,6 @@
 <!ENTITY orc-version-devel "git master">
 
 <!ENTITY gst-bug-report "http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">
-<!ENTITY gst-repo-http "http://cgit.freedesktop.org/gstreamer/">
+<!ENTITY gst-repo-http "https://gitlab.freedesktop.org/gstreamer/">
 <!ENTITY realsite "https://gstreamer.freedesktop.org">
 <!ENTITY nbsp "&#x00A0;">

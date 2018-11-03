@@ -55,7 +55,7 @@ Here's a quick overview of all of our modules :
     <xsl:choose>
       <xsl:when test="versions/stable/text() = string('git master')">
         <xsl:call-template name="hyperlink">
-          <xsl:with-param name="href">http://cgit.freedesktop.org/gstreamer/<xsl:value-of select="id" />/</xsl:with-param>
+          <xsl:with-param name="href">http://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="id" />/</xsl:with-param>
           <xsl:with-param name="text">git master</xsl:with-param>
         </xsl:call-template>
       </xsl:when>
