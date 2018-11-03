@@ -112,7 +112,8 @@ open
   <form name="f" action="https://gitlab.freedesktop.org/groups/gstreamer/-/issues" method="get">
     <input type="hidden" name="scope" value="all" />
     <input type="hidden" name="state" value="opened" />
-    <input id="show" type="submit" value="search" />
+    <input type="text" name="search" id="search" />
+    <input id="show" type="submit" value="Search" />
   </form>
 </p>
 
