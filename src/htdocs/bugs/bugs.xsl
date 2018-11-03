@@ -21,7 +21,7 @@
 
   <xsl:element name="a">
     <xsl:attribute name="href">
-https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value-of select="$component" /><![CDATA[&]]>target_milestone=<xsl:value-of select="$milestone" /></xsl:attribute>
+https://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="component" />/issues/?scope=all&amp;state=all&amp;milestone_title=<xsl:value-of select="$milestone" /></xsl:attribute>
     <xsl:value-of select="$milestone" />
   </xsl:element>
 </xsl:template>
@@ -42,9 +42,9 @@ https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:valu
   <td>
     <xsl:element name="a">
       <xsl:attribute name="href">
-https://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer&amp;component=<xsl:value-of select="component" />
+https://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="component" />/issues/new
       </xsl:attribute>
-create bug
+create issue
     </xsl:element>
   </td>
 <!-- </tr> -->
@@ -55,7 +55,7 @@ create bug
   <td>
     <xsl:element name="a">
       <xsl:attribute name="href">
-https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value-of select="component" />&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;bug_severity=blocker&amp;form_name=query
+https://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="component" />/issues?scope=all&amp;state=opened&amp;label_name[]=Blocker
       </xsl:attribute>
 blockers
     </xsl:element>
@@ -68,8 +68,7 @@ blockers
   <td>
     <xsl:element name="a">
       <xsl:attribute name="href">
-https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=<xsl:value-of select="component" />&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query
-      </xsl:attribute>
+https://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="component" />/issues?scope=all&amp;state=opened</xsl:attribute>
 open
     </xsl:element>
   </td>
@@ -112,43 +111,29 @@ open
    }
   </script>
   -->
-  <form name="f" action="https://bugzilla.gnome.org/buglist.cgi" method="get">
-    <input type="hidden" name="query_format" value="advanced" />
-    <input type="hidden" name="product" value="GStreamer" />
-    <input type="hidden" name="bug_status" value="UNCONFIRMED" />
-    <input type="hidden" name="bug_status" value="NEW" />
-    <input type="hidden" name="bug_status" value="ASSIGNED" />
-    <input type="hidden" name="bug_status" value="REOPENED" />
-    <input type="hidden" name="bug_status" value="NEEDINFO" />
-    <input type="hidden" name="long_desc_type" value="allwordssubstr" />
-    <input type="hidden" name="long_desc" value="" id="long_desc" />
-    <input type="hidden" name="short_desc_type" value="allwordssubstr" />
-    <input type="text" name="short_desc" id="short_desc" />
-    <input id="show" type="submit" value="Search" />
+  <form name="f" action="https://gitlab.freedesktop.org/groups/gstreamer/-/issues" method="get">
+    <input type="hidden" name="scope" value="all" />
+    <input type="hidden" name="state" value="opened" />
+    <input id="show" type="submit" value="search" />
   </form>
 </p>
 
 <h1>Bug Lists</h1>
 <table border="0" cellspacing="10" cellpadding="2">
 <tr><td>
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query">All unresolved bugs</a>
+<a href="https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&amp;state=opened">All unresolved issues</a>
 </td></tr>
 <tr><td>
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;component=don%27t%20know&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;form_name=query">All unresolved bugs not assigned to a component</a>
+<a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-project/issues?scope=all&amp;state=opened">All unresolved issues not assigned to a component</a>
 </td></tr>
 <tr><td>
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;bug_status=RESOLVED&amp;resolution=FIXED&amp;resolution=VERIFIED&amp;target_milestone=HEAD&amp;target_milestone=HEART&amp;target_milestone=1.0.x&amp;target_milestone=1.1.x&amp;target_milestone=1.2.x&amp;target_milestone=1.3.x&amp;target_milestone=1.4.x&amp;target_milestone=2.x&amp;form_name=query">Fixed bugs which need to be reassigned to the right milestone</a>
+<a href="https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&amp;state=closed&amp;milestone_title=No+Milestone">Fixed issues which need to be reassigned to the right milestone</a>
 </td></tr>
 <tr><td>
-All bugs changed within the last
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;chfieldfrom=24h">24 hours</a>,
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;chfieldfrom=48h">48 hours</a>,
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;chfieldfrom=72h">72 hours</a>,
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;chfieldfrom=7d">1 week</a>,
-<a href="https://bugzilla.gnome.org/buglist.cgi?product=GStreamer&amp;chfieldfrom=14d">2 weeks</a>
+<a href="https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&amp;sort=updated_desc&amp;state=all">All issues sorted by last update</a>,
 </td></tr>
 <tr><td>
-<a href="https://bugzilla.gnome.org/browse.cgi?product=GStreamer">GStreamer bugzilla overview</a>
+<a href="https://gitlab.freedesktop.org/gstreamer">GStreamer gitlab overview</a>
 </td></tr>
 </table>
 

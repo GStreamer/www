@@ -7,7 +7,7 @@
 
 <buglists>
   <module id="gstreamer">
-    <component>gstreamer+%28core%29</component>
+    <component>gstreamer</component>
   </module>
 
   <module id="gst-plugins-base">
@@ -49,7 +49,7 @@
  </module>
 
   <module id="documentation">
-    <component>documentation</component>
+    <component>gst-docs</component>
   </module>
 
 </buglists>
