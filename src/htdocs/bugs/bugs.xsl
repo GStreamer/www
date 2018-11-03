@@ -42,8 +42,7 @@ https://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="component" />/iss
   <td>
     <xsl:element name="a">
       <xsl:attribute name="href">
-https://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="component" />/issues/new
-      </xsl:attribute>
+https://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="component" />/issues/new</xsl:attribute>
 create issue
     </xsl:element>
   </td>
@@ -55,8 +54,7 @@ create issue
   <td>
     <xsl:element name="a">
       <xsl:attribute name="href">
-https://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="component" />/issues?scope=all&amp;state=opened&amp;label_name[]=Blocker
-      </xsl:attribute>
+https://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="component" />/issues?scope=all&amp;state=opened&amp;label_name[]=Blocker</xsl:attribute>
 blockers
     </xsl:element>
   </td>
