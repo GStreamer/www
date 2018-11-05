@@ -18,7 +18,7 @@
     <item class="gstnavside-g" href="/dev/">Developers</item>
     <item class="gstnavside-g" href="/documentation/">Documentation</item>
     <item class="gstnavside-g" href="/lists/">Mailing Lists</item>
-    <item class="gstnavside-g" href="http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">File a Bug</item>
+    <item class="gstnavside-g" href="/documentation/contribute/index.html">File a Bug</item>
     <item class="gstnavside-g" href="/bugs/">Bug Lists</item>
     <!--item class="gstnavside-g" href="/modules/">Modules</item-->
     <!--item class="gstnavside-g" href="/bindings/">Bindings</item-->
