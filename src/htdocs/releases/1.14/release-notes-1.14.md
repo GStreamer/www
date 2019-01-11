@@ -1478,6 +1478,13 @@ GIT logs or ChangeLogs of the particular modules.
 
 [buglist-1.14.4]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=270310&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.14.4
 
+<a name="1.14.5"></a>
+
+### 1.14.5
+
+It is expected that there will be a fifth 1.14 bug-fix release (1.14.5) in
+the second half of January 2019.
+
 ## Known Issues
 
 - The `webrtcdsp` element (which is unrelated to the newly-landed GStreamer
@@ -1499,9 +1506,10 @@ Our next major feature release will be 1.16, and 1.15 will be the unstable
 development version leading up to the stable 1.16 release. The development
 of 1.15/1.16 will happen in the git master branch.
 
-The plan for the 1.16 development cycle is yet to be confirmed, but it is
-expected that feature freeze will be around September 2018 followed by several
-1.15 pre-releases and the new 1.16 stable release in October.
+The (updated) plan for the 1.16 development cycle is for a first
+1.15.1 development pre-release in early January 2019, followed by
+further 1.15.x pre-releases and then the stable 1.16.0 release in
+late January / early February 2019.
 
 1.16 will be backwards-compatible to the stable 1.14, 1.12, 1.10, 1.8, 1.6,
 1.4, 1.2 and 1.0 release series.
