@@ -442,6 +442,7 @@ duplicate type registration warnings when upgrading, check that you don't have
 a stale gstopenglmixers plugin lying about somewhere.
 
 [videoaggregator]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/GstVideoAggregator.html
+[aggregator]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer-libs/html/GstAggregator.html
 [compositor]: https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-plugins/html/gst-plugins-base-plugins-compositor.html
 
 ### Plugin removals
@@ -496,7 +497,7 @@ The following plugins have been removed from `gst-plugins-bad`:
   `gst_clear_buffer_list()`, `gst_clear_buffer()`, `gst_clear_mini_object()`,
   `gst_clear_object()`
 
-- miniobject: new API `gst_mini_object_add_parent()` and gst_mini_object_remove_parent()`
+- miniobject: new API `gst_mini_object_add_parent()` and `gst_mini_object_remove_parent()`
   to set parent pointers on mini objects to ensure correct writability: Every
   container of miniobjects now needs to store itself as parent in the child
   object, and remove itself again later. A mini object is then only writable if
@@ -665,9 +666,10 @@ optimisations that haven't been mentioned in other contexts yet:
 
 - `gst-inspect-1.0` has coloured output now and will automatically use a pager
   if the output does not fit on a page. This only works in a unix environment
-  and if the output is not piped. If you don't like the colours you can disable
-  them by setting the `GST_INSPECT_NO_COLORS=1` environment variable or
-  passing the `--no-colors` command line option.
+  and if the output is not piped, and on Windows 10 build 16257 or newer.
+  If you don't like the colours you can disable them by setting the
+  `GST_INSPECT_NO_COLORS=1` environment variable or passing the `--no-color`
+  command line option.
 
 ## GStreamer RTSP server
 
@@ -943,9 +945,60 @@ Elements included are:
 
 [usrsctp]: https://github.com/sctplab/usrsctp
 
+### Cerbero
+
+Cerbero is a meta build system used to build GStreamer plus dependencies on
+platforms where dependencies are not readily available, such as Windows,
+Android, iOS and macOS.
+
+Cerbero has seen a number of improvements:
+
+- Cerbero has been ported to Python 3 and requires Python 3.5 or newer now
+
+- Source tarballs are now protected by checksums in the recipes to guard
+  against download errors and malicious takeover of projects or websites.
+
+- There is now a new `fetch-bootstrap` command which downloads sources required
+  for bootstrapping, with an optional `--build-tools-only` argument to match
+  the `bootstrap --build-tools-only` command.
+
+- The `bootstrap`, `build`, `package` and `bundle-source` commands gained a new
+  `--offline` switch that ensures that only sources from the cache are used and
+  never downloaded via the network. This is useful in combination with the `fetch`
+  and `fetch-bootstrap` commands that acquire sources ahead of time before any
+  build steps are executed. This allows more control over the sources used and
+  when sources are updated, and is particularly useful for build environments
+  that don't have network access.
+
+- `bootstrap --assume-yes` will automatically say 'yes' to any interactive
+  prompts during the bootstrap stage, such as those from `apt-get` or `yum`.
+
+- `bootstrap --system-only` will only bootstrap the system without build tools.
+
+- Manifest support: The build manifest can be used in continuous integration (CI)
+  systems to fixate the Git revision of certain projects so that all builds of a
+  pipeline are on the same reference. This is used in GStreamer's gitlab CI for
+  example. It can also be used in order to re-produce a specific build. To set
+  a manifest, you can set `manifest = 'my_manifest.xml'` in your configuration
+  file, or use the `--manifest` command line option. The command line option
+  will take precendence over anything specific in the configuration file.
+
+- The new `build-deps` command can be used to build only the dependencies of
+  a recipe, without the recipe itself.
+
+- variants can now be set on the command line via the `-v` option as a
+  comma-separated list. This overrides any variants set in any configuration
+  files.
+
+- A new `-t` / `--timestamp` command line switch makes commands print timestamps
+
 ## Platform-specific changes and improvements
 
 ### Android
+
+- toolchain: update compiler to clang and NDKr18. NDK r18 removed the armv5
+  target and only has android platforms that target at least armv7 so the
+  armv5 target is not useful anymore.
 
 - The way that GIO modules are named has changed due to upstream GLib natively
   adding support for loading static GIO modules. This means that any GStreamer
@@ -956,9 +1009,11 @@ Elements included are:
   Look at [this commit][gio-gnutls-static-link-example] for the necessary
   change in the examples.
 
+- various build issues on Android have been fixed.
+
 ### macOS and iOS
 
-- macOS binaries should be fully relocatable now
+- various build issues on iOS have been fixed.
 
 - The way that GIO modules are named has changed due to upstream GLib natively
   adding support for loading static GIO modules. This means that any GStreamer
