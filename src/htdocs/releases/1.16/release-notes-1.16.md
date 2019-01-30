@@ -708,6 +708,28 @@ optimisations that haven't been mentioned in other contexts yet:
 
 - this section will be filled in in due course
 
+## GStreamer OMX
+
+- Add support of NV16 format to video encoders input.
+
+- Video decoders now handle the `ALLOCATION` query to tell upstream about the
+  number of buffers they require. Video encoders will also use this query to
+  adjust their number of allocated buffers preventing starvation when
+  using dynamic buffer mode.
+
+- The `OMX_PERFORMANCE` debug category has been renamed to `OMX_API_TRACE`
+  and can now be used to track a widder variety of interactions between OMX
+  and GStreamer.
+
+- Video encoders will now detect frame rate only changes and will inform
+  OMX about it rather than doing a full format reset.
+
+- Various Zynq UltraScale+ specific improvements:
+  - Video encoders are now able to import dmabuf from upstream.
+  - Support for HEVC range extension profiles and more AVC profiles.
+  - We can now request video encoders to generate an IDR using the force
+    key unit event.
+
 ## GStreamer Editing Services and NLE
 
 - this section will be filled in in due course
