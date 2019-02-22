@@ -10089,4 +10089,43 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+    <item>
+      <date>2019-02-22 15:00</date>
+        <title>GStreamer Rust bindings 0.13.0 release</title>
+        <content>
+<p>
+  A new version of the GStreamer Rust bindings, 0.13.0, was released.
+</p>
+<p>
+  This new release is the first to include direct support for
+  implementing GStreamer elements and other types in Rust. Previously
+  this was provided via a different crate.<br/>
+  In addition to this, the new release features many API improvements,
+  cleanups, newly added bindings and bugfixes.
+</p>
+<p>
+  As usual this release follows the latest <a href="https://gtk-rs.org/blog/2019/02/21/new-release.html">gtk-rs</a>
+  release, and a new version of GStreamer plugins written in Rust was also released.
+</p>
+<p>
+  Details can be found in the release notes for <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/blob/490004d9c55d06a3b545ebc15c13a80893937bb9/gstreamer/CHANGELOG.md#0130-2019-02-22">gstreamer-rs</a>
+  and <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs-sys/blob/e274b5495bb1698cd9fe48de40ab5f9f2b0e1faa/gstreamer-sys/CHANGELOG.md#070-2019-02-22">gstreamer-rs-sys</a>.
+</p>
+<p>
+  The code and documentation for the bindings is available on the freedesktop.org GitLab
+    <ul>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust Bindings</a> (<a href="https://slomo.pages.freedesktop.org/rustdocs/gstreamer/gstreamer/">documentation</a>)</li>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust Plugins</a> (<a href="https://slomo.pages.freedesktop.org/rustdocs/gstreamer-sys/gstreamer_sys/">documentation</a>)</li>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs-sys">GStreamer Rust FFI Bindings</a></li>
+    </ul>
+  as well as on <a href="https://crates.io">crates.io</a>.
+</p>
+<p>
+  If you find any bugs, missing features or other issues please report them in
+  <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/issues/new">GitLab</a>.
+</p>
+        </content>
+  </item>
+
+
 </news>
