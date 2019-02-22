@@ -10115,8 +10115,8 @@ Release tarballs can be downloaded directly here:
   The code and documentation for the bindings is available on the freedesktop.org GitLab
     <ul>
       <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust Bindings</a> (<a href="https://slomo.pages.freedesktop.org/rustdocs/gstreamer/gstreamer/">documentation</a>)</li>
-      <li><a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust Plugins</a> (<a href="https://slomo.pages.freedesktop.org/rustdocs/gstreamer-sys/gstreamer_sys/">documentation</a>)</li>
-      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs-sys">GStreamer Rust FFI Bindings</a></li>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust Plugins</a></li>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs-sys">GStreamer Rust FFI Bindings</a> (<a href="https://slomo.pages.freedesktop.org/rustdocs/gstreamer-sys/gstreamer_sys/">documentation</a>)</li>
     </ul>
   as well as on <a href="https://crates.io">crates.io</a>.
 </p>
