@@ -1,7 +1,7 @@
 # GStreamer 1.16 Release Notes
 
 GStreamer 1.16 has not been released yet. It is scheduled for release
-in January/February 2019.
+in March 2019.
 
 1.15.x is the unstable development version that is being developed
 in the git master branch and which will eventually result in 1.16.
@@ -12,7 +12,7 @@ in the git master branch and which will eventually result in 1.16.
 See [https://gstreamer.freedesktop.org/releases/1.16/][latest] for the latest
 version of this document.
 
-*Last updated: Monday 25 January 2019, 15:00 UTC [(log)][gitlog]*
+*Last updated: Wednesday 27 January 2019, 00:30 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.16/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.16/release-notes-1.16.md
@@ -1024,11 +1024,20 @@ Cerbero has seen a number of improvements:
 - The new `build-deps` command can be used to build only the dependencies of
   a recipe, without the recipe itself.
 
+- new `--list-variants` command to list available variants
+
 - variants can now be set on the command line via the `-v` option as a
   comma-separated list. This overrides any variants set in any configuration
   files.
 
+- new `qt5`, `intelmsdk` and `nvidia` variants for enabling Qt5 and
+  hardware codec support. See the [Enabling Optional Features with Variants][cerbero-variants]
+  section in the Cerbero documentation for more details how to enable and use
+  these variants.
+
 - A new `-t` / `--timestamp` command line switch makes commands print timestamps
+
+[cerbero-variants]: https://gitlab.freedesktop.org/gstreamer/cerbero#enabling-optional-features-with-variants
 
 ## Platform-specific changes and improvements
 
@@ -1052,6 +1061,9 @@ Cerbero has seen a number of improvements:
 ### macOS and iOS
 
 - various build issues on iOS have been fixed.
+
+- the minimum required iOS version is now 9.0. The difference in adoption
+  between 8.0 and 9.0 is 0.1% and the bump to 9.0 fixes some build issues.
 
 - The way that GIO modules are named has changed due to upstream GLib natively
   adding support for loading static GIO modules. This means that any GStreamer
@@ -1157,7 +1169,7 @@ which is a stable branch.
 
 ### 1.16.0
 
-1.16.0 is scheduled to be released around January/February 2019.
+1.16.0 is scheduled to be released in March 2019.
 
 ## Known Issues
 
@@ -1189,6 +1201,6 @@ in August/September.
 - - -
 
 *These release notes have been prepared by Tim-Philipp Müller with*
-*contributions from Sebastian Dröge.*
+*contributions from Sebastian Dröge and Guillaume Desmottes.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
