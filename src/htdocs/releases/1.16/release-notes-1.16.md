@@ -606,6 +606,15 @@ optimisations that haven't been mentioned in other contexts yet:
    feature, we need an additional uploader that can import DMABUF FDs and also
    directly pass the pixel format, relying on the GPU to do the conversion.
 
+- The OpenGL library no longer restores the OpenGL viewport.  This is a
+  performance optimization to not require performing multiple expensive
+  `glGet*()` function calls per frame.  This affects any application or plugin
+  use of the following functions and objects:
+  - `glcolorconvert` library object (not the element)
+  - `glviewconvert` library object (not the element)
+  - `gst_gl_framebuffer_draw_to_texture()`
+  - custom `GstGLWindow` implementations
+
 ## Tracing framework and debugging improvements
 
 - There is now a **gdb pretty printer for various GStreamer types**:
@@ -1201,6 +1210,6 @@ in August/September.
 - - -
 
 *These release notes have been prepared by Tim-Philipp Müller with*
-*contributions from Sebastian Dröge and Guillaume Desmottes.*
+*contributions from Sebastian Dröge, Guillaume Desmottes and Matthew Waters.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
