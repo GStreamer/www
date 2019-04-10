@@ -1,7 +1,7 @@
 # GStreamer 1.16 Release Notes
 
 GStreamer 1.16 has not been released yet. It is scheduled for release
-in March 2019.
+in April 2019.
 
 1.15.x is the unstable development version that is being developed
 in the git master branch and which will eventually result in 1.16.
@@ -12,7 +12,7 @@ in the git master branch and which will eventually result in 1.16.
 See [https://gstreamer.freedesktop.org/releases/1.16/][latest] for the latest
 version of this document.
 
-*Last updated: Wednesday 27 January 2019, 00:30 UTC [(log)][gitlog]*
+*Last updated: Wednesday 10 April 2019, 00:50 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.16/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.16/release-notes-1.16.md
@@ -1109,45 +1109,49 @@ Cerbero has seen a number of improvements:
 
 ## Contributors
 
-Aleix Conchillo Flaqué, Alessandro Decina, Alexandru Băluț, Alex Ashley,
-Alexey Chernov, Alicia Boya García, Amit Pandya, Andoni Morales Alastruey,
-Andreas Frisch, Andre McCurdy, Andy Green, Anthony Violo, Antoine Jacoutot,
-Antonio Ospite, Arun Raghavan, Aurelien Jarno, Aurélien Zanelli, ayaka,
-Bananahemic, Bastian Köcher, Branko Subasic, Brendan Shanks, Carlos Rafael Giani, 
-Christoph Reiter, Corentin Noël, Daeseok Youn, Daniel Drake, Daniel Klamt, 
-Dardo D Kleiner, David Ing, David Svensson Fors, Devarsh Thakkar,
-Dimitrios Katsaros, Edward Hervey, Emilio Pozuelo Monfort, Enrique Ocaña González, 
-Ezequiel Garcia, Fabien Dessenne, Fabrizio Gennari, Florent Thiéry, 
-Francisco Velazquez, Freyr666, Garima Gaur, Gary Bisson, George Kiagiadakis, 
-Georg Lippitsch, Georg Ottinger, Geunsik Lim, Göran Jönsson, Guillaume Desmottes, 
-H1Gdev, Haihao Xiang, Haihua Hu, Harshad Khedkar, Havard Graff, He Junyan, 
-Hoonhee Lee, Hosang Lee, Hyunjun Ko, Ingo Randolf, Iñigo Huguet, James Stevenson, 
-Jan Alexander Steffens, Jan Schmidt, Jerome Laheurte, Jimmy Ohn, Joakim Johansson,
-Jochen Henneberg, Johan Bjäreholt, John-Mark Bell, John Nikolaides,
-Jonathan Karlsson, Jonny Lamb, Jordan Petridis, Josep Torra, Joshua M. Doe, 
-Jos van Egmond, Juan Navarro, Jun Xie, Junyan He, Justin Kim, Kai Kang,
-Kim Tae Soo, Kirill Marinushkin, Kyrylo Polezhaiev, Lars Petter Endresen, 
-Linus Svensson, Louis-Francis Ratté-Boulianne, Luis de Bethencourt, 
-Luz Paz, Lyon Wang, Maciej Wolny, Marc-André Lureau, Marc Leeman, 
+Aaron Boxer, Aleix Conchillo Flaqué, Alessandro Decina, Alexandru Băluț,
+Alex Ashley, Alexey Chernov, Alicia Boya García, Amit Pandya,
+Andoni Morales Alastruey, Andreas Frisch, Andre McCurdy, Andy Green,
+Anthony Violo, Antoine Jacoutot, Antonio Ospite, Arun Raghavan, Aurelien Jarno,
+Aurélien Zanelli, ayaka, Bananahemic, Bastian Köcher, Branko Subasic,
+Brendan Shanks, Carlos Rafael Giani,  Charlie Turner, Christoph Reiter,
+Corentin Noël, Daeseok Youn, Damian Vicino, Dan Kegel, Daniel Drake,
+Daniel Klamt,  Danilo Spinella, Dardo D Kleiner, David Ing, David Svensson Fors,
+Devarsh Thakkar, Dimitrios Katsaros, Edward Hervey, Emilio Pozuelo Monfort,
+Enrique Ocaña González, Erlend Eriksen, Ezequiel Garcia, Fabien Dessenne,
+Fabrizio Gennari, Florent Thiéry, Francisco Velazquez, Freyr666, Garima Gaur,
+Gary Bisson, George Kiagiadakis, Georg Lippitsch, Georg Ottinger, Geunsik Lim,
+Göran Jönsson, Guillaume Desmottes, H1Gdev, Haihao Xiang, Haihua Hu,
+Harshad Khedkar, Havard Graff, He Junyan, Hoonhee Lee, Hosang Lee, Hyunjun Ko,
+Ilya Smelykh, Ingo Randolf, Iñigo Huguet, Jakub Adam, James Stevenson,
+Jan Alexander Steffens, Jan Schmidt, Jerome Laheurte, Jimmy Ohn,
+Joakim Johansson, Jochen Henneberg, Johan Bjäreholt, John-Mark Bell,
+John Bassett, John Nikolaides, Jonathan Karlsson, Jonny Lamb, Jordan Petridis,
+Josep Torra, Joshua M. Doe, Jos van Egmond, Juan Navarro, Julian Bouzas,
+Jun Xie, Junyan He, Justin Kim, Kai Kang, Kim Tae Soo, Kirill Marinushkin,
+Kyrylo Polezhaiev, Lars Petter Endresen, Linus Svensson,
+Louis-Francis Ratté-Boulianne, Lucas Stach, Luis de Bethencourt, Luz Paz,
+Lyon Wang, Maciej Wolny, Marc-André Lureau, Marc Leeman, Marco Trevisan (Treviño),
 Marcos Kintschner, Marian Mihailescu, Marinus Schraal, Mark Nauwelaerts, 
 Marouen Ghodhbane, Martin Kelly, Matej Knopp, Mathieu Duponchelle,
 Matteo Valdina, Matthew Waters, Matthias Fend, memeka, Michael Drake, 
 Michael Gruner, Michael Olbrich, Michael Tretter, Miguel Paris, Mike Wey, 
 Mikhail Fludkov, Naveen Cherukuri, Nicola Murino, Nicolas Dufresne,
 Niels De Graef, Nirbheek Chauhan, Norbert Wesp, Ognyan Tonchev, Olivier Crête, 
-Omar Akkila, Patricia Muscalu, Patrick Radizi, Patrik Nilsson, Paul Kocialkowski, 
-Per Forlin, Peter Körner, Peter Seiderer, Petr Kulhavy, Philippe Normand, 
-Philippe Renon, Philipp Zabel, Pierre Labastie, Roland Jon, Roman Sivriver, 
-Rosen Penev, Russel Winder, Sam Gigliotti, Sean-Der, Sebastian Dröge, 
-Seungha Yang, Sjoerd Simons, Snir Sheriber, Song Bing, Soon, Thean Siew, 
+Omar Akkila, Pat DeSantis, Patricia Muscalu, Patrick Radizi, Patrik Nilsson,
+Paul Kocialkowski, Per Forlin, Peter Körner, Peter Seiderer, Petr Kulhavy,
+Philippe Normand, Philippe Renon, Philipp Zabel, Pierre Labastie, Piotr Drąg,
+Roland Jon, Roman Sivriver, Roman Shpuntov, Rosen Penev, Russel Winder,
+Sam Gigliotti, Santiago Carot-Nemesio, Sean-Der, Sebastian Dröge, Seungha Yang,
+Shi Yan, Sjoerd Simons, Snir Sheriber, Song Bing, Soon, Thean Siew, 
 Sreerenj Balachandran, Stefan Ringel, Stephane Cerveau, Stian Selnes, 
 Suhas Nayak, Takeshi Sato, Thiago Santos, Thibault Saunier, Thomas Bluemel, 
-Tianhao Liu, Tim-Philipp Müller, Tomasz Andrzejak, Tomislav Tustonić, 
-U. Artie Eoff, Ulf Olsson, Varunkumar Allagadapa, Víctor Guzmán, 
-Víctor Manuel Jáquez Leal, Vincenzo Bono, Vineeth T M, Vivia Nikolaidou,
-Wang Fei, wangzq, Whoopie, Wim Taymans, Wind Yuan, Wonchul Lee, 
-Xabier Rodriguez Calvar, Xavier Claessens, Haihao Xiang, Yacine Bandou, 
-Yeongjin Jeong, Yuji Kuwabara, Zeeshan Ali,
+Tianhao Liu, Tim-Philipp Müller, Tobias Ronge, Tomasz Andrzejak,
+Tomislav Tustonić, U. Artie Eoff, Ulf Olsson, Varunkumar Allagadapa,
+Víctor Guzmán, Víctor Manuel Jáquez Leal, Vincenzo Bono, Vineeth T M,
+Vivia Nikolaidou, Wang Fei, wangzq, Whoopie, Wim Taymans, Wind Yuan,
+Wonchul Lee, Xabier Rodriguez Calvar, Xavier Claessens, Haihao Xiang,
+Yacine Bandou, Yeongjin Jeong, Yuji Kuwabara, Zeeshan Ali,
 
 ... and many others who have contributed bug reports, translations, sent
 suggestions or helped testing.
@@ -1178,7 +1182,7 @@ which is a stable branch.
 
 ### 1.16.0
 
-1.16.0 is scheduled to be released in March 2019.
+1.16.0 is scheduled to be released in April 2019.
 
 ## Known Issues
 
