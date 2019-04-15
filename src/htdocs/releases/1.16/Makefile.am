@@ -1,6 +1,6 @@
 built_pages = index.html
 
-pics =
+pics = gdb-gst-print.png
 
 index.html: release-notes-1.16.html index.xml $(fullstyle) $(entities) $(page_style) $(pics)
 	for pic in $(pics); do cp $(srcdir)/$$pic $(builddir)/$$pic; done

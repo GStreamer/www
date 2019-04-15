@@ -10180,4 +10180,77 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+    <item>
+      <date>2019-04-11 08:00</date>
+        <title>GStreamer 1.15.90 pre-release (1.16.0 release candidate 1)</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the first release candidate for the
+upcoming stable 1.16.0 release.
+</p>
+<p>
+Check out the <a href="https://gstreamer.freedesktop.org/releases/1.16/">draft release notes</a>
+highlighting all the new features, bugfixes, performance optimizations and other important changes.
+</p>
+<p>
+Packagers: please note that quite a few plugins and libraries have moved
+between modules since 1.14, so please take extra care and make sure inter-module
+version dependencies are such that users can only upgrade all modules in one go,
+instead of seeing a mix of 1.15 and 1.14 on their system.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided shortly.
+</p>
+<p>
+Release tarballs can be downloaded directly here:
+<ul>
+  <li><a href="&site;/src/gstreamer/gstreamer-1.15.90.tar.xz">gstreamer-1.15.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-base/gst-plugins-base-1.15.90.tar.xz">gst-plugins-base-1.15.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-good/gst-plugins-good-1.15.90.tar.xz">gst-plugins-good-1.15.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.15.90.tar.xz">gst-plugins-ugly-1.15.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.15.90.tar.xz">gst-plugins-bad-1.15.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-libav/gst-libav-1.15.90.tar.xz">gst-libav-1.15.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.15.90.tar.xz">gst-rtsp-server-1.15.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.15.90.tar.xz">gst-editing-services-1.15.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-validate/gst-validate-1.15.90.tar.xz">gst-validate-1.15.90.tar.xz</a>,</li>
+  <li><a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.15.90.tar.xz">gstreamer-vaapi-1.15.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-omx/gst-omx-1.15.90.tar.xz">gst-omx-1.15.90.tar.xz</a></li>
+  <li><a href="&site;/src/gst-python/gst-python-1.15.90.tar.xz">gst-python-1.15.90.tar.xz</a></li>
+  <li><a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.15.90.tar.xz">gstreamer-sharp-1.15.90.tar.xz</a></li>
+</ul>
+</p>
+<p>
+Known errata: <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/merge_requests/130">possible crash on 32-bit systems when creating seek events</a>
+</p>
+        </content>
+  </item>
+
+  <item>
+      <date>2019-04-15 12:00</date>
+        <title>Orc 0.4.29 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another maintenance bug-fix release
+of liborc, the Optimized Inner Loop Runtime Compiler. Main changes since the
+previous release:
+        </p>
+        <p>
+          <ul>
+            <li>PowerPC: Support ELFv2 ABI (A. Wilcox) and ppc64le</li>
+            <li>Mips backend: only enable if the DSPr2 ASE is present</li>
+            <li>Windows and MSVC build fixes</li>
+            <li>orccpu-arm: Allow 'cpuinfo' fallback on non-android</li>
+            <li>pkg-config file for orc-test library</li>
+            <li>orcc: add --decorator command line argument to add function decorators in header files</li>
+            <li>meson: Make orcc detectable from other subprojects</li>
+            <li>meson: add options to disable tests, docs, benchmarks, examples, tools, etc.</li>
+            <li>meson: misc. other fixes</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.29.tar.xz">orc-0.4.29</a>.
+        </p>
+        </content>
+  </item>
+
 </news>

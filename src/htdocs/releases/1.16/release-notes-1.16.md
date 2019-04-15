@@ -633,51 +633,7 @@ optimisations that haven't been mentioned in other contexts yet:
   - `gst-print` produces high-level information about a GStreamer object. This
     is currently limited to pads for GstElements and events for the pads. The
     output may look like this:
-
-    ```
-            (gdb) gst-print pad.object.parent
-            GstMatroskaDemux (matroskademux0) {
-                SinkPad (sink, pull) {
-                }
-                SrcPad (video_0, push) {
-                  events:
-                    stream-start:
-                      stream-id: 0463ccb080d00b8689bf569a435c4ff84f9ff753545318ae2328ea0763fd0bec/001:1274058367
-                    caps: video/x-theora
-                      width: 1920
-                      height: 800
-                      pixel-aspect-ratio: 1/1
-                      framerate: 24/1
-                      streamheader: < 0x5555557c7d30 [GstBuffer], 0x5555557c7e40 [GstBuffer], 0x7fffe00141d0 [GstBuffer] >
-                    segment: time
-                      rate: 1
-                    tag: global
-                      container-format: Matroska
-                }
-                SrcPad (audio_0, push) {
-                  events:
-                    stream-start:
-                      stream-id: 0463ccb080d00b8689bf569a435c4ff84f9ff753545318ae2328ea0763fd0bec/002:1551204875
-                    caps: audio/mpeg
-                      mpegversion: 4
-                      framed: true
-                      stream-format: raw
-                      codec_data: 0x7fffe0014500 [GstBuffer]
-                      level: 2
-                      base-profile: lc
-                      profile: lc
-                      channels: 2
-                      rate: 44100
-                    segment: time
-                      rate: 1
-                    tag: global
-                      container-format: Matroska
-                    tag: stream
-                      audio-codec: MPEG-4 AAC audio
-                      language-code: en
-                }
-            }
-    ```
+    <br/><img src="gdb-gst-print.png" alt="gst-print example" style="width:80%;"/>
 
 - `gst_structure_to_string()` now serialises the actual value of pointers when
   serialising `GstStructure`s instead of claiming they're `NULL`. This makes
