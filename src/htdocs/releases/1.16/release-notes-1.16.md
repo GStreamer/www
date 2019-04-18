@@ -1,18 +1,11 @@
 # GStreamer 1.16 Release Notes
 
-GStreamer 1.16 has not been released yet. It is scheduled for release
-in April 2019.
-
-1.15.x is the unstable development version that is being developed
-in the git master branch and which will eventually result in 1.16.
-
-1.16 will be backwards-compatible to the stable 1.14, 1.12, 1.10, 1.8, 1.6,
-1.4, 1.2 and 1.0 release series.
+GStreamer 1.16.0 was originally released on 19 April 2019.
 
 See [https://gstreamer.freedesktop.org/releases/1.16/][latest] for the latest
 version of this document.
 
-*Last updated: Wednesday 18 April 2019, 15:00 UTC [(log)][gitlog]*
+*Last updated: Friday 19 April 2019, 00:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.16/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.16/release-notes-1.16.md
@@ -1278,7 +1271,7 @@ which is a stable branch.
 
 ### 1.16.0
 
-1.16.0 is scheduled to be released in April 2019.
+1.16.0 was released on 19 April 2019.
 
 ## Known Issues
 
@@ -1300,9 +1293,8 @@ development version leading up to the stable 1.18 release. The development
 of 1.17/1.18 will happen in the git master branch.
 
 The plan for the 1.18 development cycle is yet to be confirmed, but it is
-expected that feature freeze will be around July 2019
-followed by several 1.17 pre-releases and the new 1.18 stable release
-in August/September.
+possible that the next cycle will be a short one in which case feature freeze
+would be perhaps around August 2019 with a new 1.18 stable release in September.
 
 1.18 will be backwards-compatible to the stable 1.16, 1.14, 1.12, 1.10, 1.8,
 1.6, 1.4, 1.2 and 1.0 release series.
@@ -1310,6 +1302,7 @@ in August/September.
 - - -
 
 *These release notes have been prepared by Tim-Philipp Müller with*
-*contributions from Sebastian Dröge, Guillaume Desmottes and Matthew Waters.*
+*contributions from Sebastian Dröge, Guillaume Desmottes, Matthew Waters, *
+*Thibault Saunier, and  Víctor Manuel Jáquez Leal.*
 
 *License: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)*
