@@ -3,62 +3,19 @@
 [
   <!ENTITY % site-entities SYSTEM "../entities.site">
   %site-entities;
+  <!ENTITY % w3centities-f PUBLIC "-//W3C//ENTITIES Combined Set//EN//XML"
+    "http://www.w3.org/2003/entities/2007/w3centities-f.ent">
+  %w3centities-f;
+  <!ENTITY download SYSTEM "download.html">
 ]>
 
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
-  <title>GStreamer: Download</title>
-  <body>
+<title>Download GStreamer</title>
 
-<h2>Download GStreamer</h2>
+<body>
 
-<p>
-In general, you should find packages that were specifically made for your
-distribution.  Do not compile from source yourself unless you are certain
-you have to or want to.  Do not compile from Git unless you really need
-some specific feature that is not released yet, or want to help out developing
-GStreamer.
-</p>
+&download;
 
-<DL>
-  <DT>Linux</DT>
-  <DD>Most, if not all, Linux distributions provide packages of GStreamer.
-  You should find these in your distribution's package repository.
-  <BR/>
-  Note that some distributions split the GStreamer plugins up further than the
-  upstream sources. Additionally, some distributions do not include the
-  gst-plugins-bad, gst-plugins-ugly, and gst-libav packages in their main
-  repository, for legal reasons.
-  </DD>
-
-  <DT>OpenBSD</DT>
-  <DD>Packages for various architectures are available, see the <A href="http://openports.se/multimedia/gstreamer1">OpenBSD ports</A> page.</DD>
-
-  <DT>Windows</DT>
-  <DD>MSI installers for Windows can be found <a href="&site;/data/pkg/windows/">here</a>.
-      They are provided and maintained by the GStreamer project.</DD>
-
-  <DT>Mac OS X</DT>
-  <DD>A .framework for Mac OS X can be found <a href="&site;/data/pkg/osx/">here</a>.
-      It is provided and maintained by the GStreamer project.</DD>
-
-  <DT>Android</DT>
-  <DD>Binaries for GStreamer on Android that integrate into the Android NDK can be found <a href="&site;/data/pkg/android/">here</a>.
-      They are provided and maintained by the GStreamer project.</DD>
-
-  <DT>iOS</DT>
-  <DD>Binaries for GStreamer on iOS that integrate into XCode can be found <a href="&site;/data/pkg/ios/">here</a>.
-      They are provided and maintained by the GStreamer project.</DD>
-
-  <DT>Symbian</DT>
-  <DD>The sources of the initial port of GStreamer are available for <a href="&site;/src/symbian/gstreamer_source.zip">download</a>.
-    <BR/>
-    Releated binary packages are also <a href="&site;/pkg/symbian/gstreamer_binaries.zip">available</a>.
-  </DD>
-
-  <DT>Source</DT>
-  <DD>Check our <A href="&site;/modules/">modules</A> page, or
-    go straight to our <A href="&site;/src/">source download directory</A>.</DD>
-</DL>
-  </body>
+</body>
 </page>
