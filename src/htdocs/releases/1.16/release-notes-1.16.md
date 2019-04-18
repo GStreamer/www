@@ -708,7 +708,36 @@ optimisations that haven't been mentioned in other contexts yet:
 
 ## GStreamer VAAPI
 
-- this section will be filled in in due course
+- Support Wayland's display for context sharing, so the application
+  can pass its own `wl_display` in order to be used for the VAAPI
+  display creation.
+
+- A lot of work to support new Intel hardware using
+  [media-driver](https://github.com/intel/media-driver) as VA backend.
+
+- For non-x86 devices, VAAPI display can instantiate, through DRM,
+  with no PCI bus. This enables the usage of
+  [libva-v4l2-request](https://github.com/bootlin/libva-v4l2-request)
+  driver.
+
+- Added support for XDG-shell protocol as wl_shell replacement which
+  is currently deprecated. This change add as dependency
+  `wayland-protocol`.
+
+- `GstVaapiFilter`, `GstVaapiWindow`, and `GstVaapiDecoder` classes
+  now inherit from GstObject, gaining all the GStreamer's
+  instrumentation support.
+
+- The metadata now specifies the plugin as `Hardware` class.
+
+- H264 decoder is more stable with problematic streams.
+
+- In H265 decoder added support for profiles `main-422-10`
+  (`P010_10LE`), `main-444` (`AYUV`) and `main-444-10` (`Y410`)
+
+- JPEG decoder handles dynamic resolution changes.
+
+- More specification adherence in H264 and H265 encoders.
 
 ## GStreamer OMX
 
