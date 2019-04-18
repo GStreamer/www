@@ -67,6 +67,9 @@ other improvements.
 - The GStreamer [Rust bindings][gst-rs] and [Rust plugins module][gst-plugins-rs]
   are now officially part of upstream GStreamer.
 
+- The GStreamer Editing Services gained a `gesdemux` element that allows
+  directly playing back serialized edit list with `playbin` or `(uri)decodebin`
+
 - Many performance improvements
 
 [meson]: https://mesonbuild.com
@@ -293,7 +296,7 @@ MacCaption (MCC) file parser and encoder.
   to distribute the globally-set `"buffer-size"` budget in bytes to the various
   queues. `urisourcebin` also gained `"low-watermark"` and `"high-watermark"`
   properties which will be proxied to the internal queues, as well as a
-  read-only `"statistics"` property which allows querying of the 
+  read-only `"statistics"` property which allows querying of the
   minimum/maximum/average byte and time levels of the queues inside the
   `urisourcebin` in question.
 
@@ -731,11 +734,101 @@ optimisations that haven't been mentioned in other contexts yet:
 
 ## GStreamer Editing Services and NLE
 
-- this section will be filled in in due course
+- Added a `gesdemux` element, it is an auto pluggable element that allows
+  decoding edit list like files supported by GES
+
+- Added `gessrc` which wraps a `GESTimeline` as a standard source
+  element (implementing the `ges` protocol handler)
+
+- Added basic support for `videorate::rate` property potentially allowing
+  changing playback speed
+
+- Layer priority is now fully automatic and they should be moved with the new
+  `ges_timeline_move_layer` method, `ges_layer_set_priority` is now deprecated.
+
+- Added a `ges_timeline_element_get_layer_priority` so we can simply get all
+  information about `GESTimelineElement` position in the timeline
+
+- `GESVideoSource` now auto orientates the images if it is defined in a meta
+  (overridable).
+
+- Added some PyGObject overrides to make the API more pythonic
+
+- The threading model has been made more explicit with safe guard to make sure
+  not thread safe APIs are not used from the wrong threads. It is also now
+  possible to properly handle in what thread the API should be used.
+
+- Optimized `GESClip` and `GESTrackElement` creation
+
+- Added a way to compile out the old, unused and deprecated `GESPitiviFormatter`
+
+- Re implemented the timeline editing API making it faster and making the code much more
+  maintainable
+
+- Simplified usage of `nlecomposition` outside GES by removing quirks in it API
+  usage and removing the need to treat it specially from an application
+  perspective.
+
+- `ges-launch-1.0`:
+
+  - Added support to add titles to the timeline
+  - Enhance the `help` auto generating it from the code
+
+- Deprecate `ges_timeline_load_from_uri` as loading the timeline should be done
+  through a project now
+
+- **Many** leaks have been plugged and the unit testsuite is now "leak free"
 
 ## GStreamer validate
 
-- this section will be filled in in due course
+- Added an action type to verify the checksum of the sink `last-sample`
+
+- Added an `include` keyword to validate scenarios
+
+- Added the notion of `variable` in scenarios, with the `set-vars` keyword
+
+- Started adding support for "performance" like tests by allowing to define the
+  number of dropped buffers or the minimum buffer frequency on a specific pad
+
+- Added a `validateflow` plugin which allows defining the data flow to be seen
+  on a particular pad and verifying that following runs match the expectations
+
+- Added support for `appsrc` based test definition so we can instrument
+  the data pushed into the pipeline from scenarios
+
+- Added a `mockdecryptor` allowing adding tests with on encrypted files, the element
+  will potentially be instrumented with a validate scenario
+
+- `gst-validate-launcher`:
+
+  - Cleaned up output
+
+  - Changed the default for "muting" tests as user doesn't expect hundreds of
+    windows to show up when running the testsuite
+
+  - Fixed the outputted xunit files to be compatible with GitLab
+
+  - Added support to run tests on media files in push mode (using `pushfile://`)
+
+  - Added support for running inside `gst-build`
+
+  - Added support for running ssim tests on rendered files
+
+  - Added a way to simply define tests on pipelines through a simple `.json`
+    file
+
+  - Added a `python` app to easily run python testsuite reusing all the launcher
+    features
+
+  - Added `flatpak` knowledge so we can print backtrace even when running from
+    within flatpak
+
+  - Added a way to automatically generated "known issues" suppressions lines
+
+  - Added a way to rerun tests to check if they are flaky and added a way to
+    tolerate tests known to be flaky
+
+  - Add a way to output html log files
 
 ## GStreamer Python Bindings
 
