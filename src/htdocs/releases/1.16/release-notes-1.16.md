@@ -12,7 +12,7 @@ in the git master branch and which will eventually result in 1.16.
 See [https://gstreamer.freedesktop.org/releases/1.16/][latest] for the latest
 version of this document.
 
-*Last updated: Wednesday 10 April 2019, 00:50 UTC [(log)][gitlog]*
+*Last updated: Wednesday 18 April 2019, 15:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.16/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.16/release-notes-1.16.md
@@ -208,7 +208,7 @@ new infrastructure and provides the following elements:
  - `ccconverter`: a closed caption converter that can convert between different
    formats
 
- - `line21decoder`: extract line21 closed captions from SD video streams
+ - `line21encoder`, `line21decoder`: inject/extract line21 closed captions to/from SD video streams
 
  - `cc708overlay`: decodes CEA 608/708 captions and overlays them on video
 
@@ -216,7 +216,10 @@ Additionally, the following elements have also gained Closed Caption support:
 
  - `qtdemux` and `qtmux` support CEA 608/708 Closed Caption tracks
 
- - `mpegvideoparse` extracts Closed Captions from MPEG-2 video streams
+ - `mpegvideoparse`, `h264parse` extracts Closed Captions from MPEG-2/H.264 video streams
+
+ - `avviddec`, `avvidenc`, `x264enc` got support for extracting/injecting
+   Closed Captions
 
  - `decklinkvideosink` can output closed captions and `decklinkvideosrc` can
     extract closed captions
@@ -259,7 +262,7 @@ MacCaption (MCC) file parser and encoder.
   is useful for testing elements such as `playbin3` or `uridecodebin3` etc.
 
 - New closed caption elements: `cccombiner`, `ccextractor`, `ccconverter`,
-  `line21decoder` and `cc708overlay` (see above)
+  `line21encoder`, `line21decoder` and `cc708overlay` (see above)
 
 - `wpesrc`: new source element acting as a Web Browser based on WebKit WPE
 
@@ -383,6 +386,9 @@ MacCaption (MCC) file parser and encoder.
 - `srtpdec`, `srtpenc`: add support for MKIs which allow multiple keys
   to be used with a single SRTP stream
 
+- `srtpdec`, `srtpenc`: add support for AES-GCM and also add support for it in
+  `gst-rtsp-server` and `rtspsrc`.
+
 - The `srt` Secure Reliable Transport plugin has integrated server and client
   elements `srt{client,server}{src,sink}` into one (`srtsrc` and `srtsink`),
   since SRT connection mode can be changed by uri parameters.
@@ -412,7 +418,24 @@ MacCaption (MCC) file parser and encoder.
   default. `"plane-properties"` and `"connector-properties"` can be used to
   pass custom properties to the DRM.
 
-- `waylandsink` has a `"fullscreen"` property now.
+- `waylandsink` has a `"fullscreen"` property now and supports the XDG-Shell
+  protocol.
+
+- `decklinkvideosink`, `decklinkvideosrc` support selecting between half/full
+  duplex
+
+- The `vulkan` plugin gained support for macOS and iOS via [`MoltenVK`][moltenvk]
+  in addition to the existing support for X11 and Wayland
+
+- `imagefreeze` has a new `num-buffers` property to limit the number of
+  buffers that are produced and to send an EOS event afterwards
+
+- `webrtcbin` has a new, introspectable `get-transceiver` signal in addition
+  to the old `get-transceivers` signal that couldn't be used from bindings
+
+- Support for per-element latency information was added to the latency tracer
+
+[moltenvk]: https://github.com/KhronosGroup/MoltenVK
 
 ### Plugin and library moves
 
@@ -542,6 +565,17 @@ The following plugins have been removed from `gst-plugins-bad`:
   compiled with `GST_DISABLE_GLIB_CHECKS`.
 
 - `gst_audio_buffer_truncate()` convenience function to truncate a raw audio buffer
+
+- `GstDiscoverer` has support for caching the results of discovery in the
+  default cache directory. This can be enabled with the `use-cache` property
+  and is disabled by default.
+
+- `GstMeta` that are attached to `GstBuffer`s are now always stored in the
+  order in which they were added.
+
+- Additional support for signalling ONVIF specific features were added: the
+  `SEEK` event can store a `trickmode-interval` now and support for the
+  `Rate-Control` and `Frames` RTSP headers was added to the RTSP library.
 
 ## Miscellaneous performance and memory optimisations
 
