@@ -48,6 +48,11 @@ you will want to install both packages. The target SDK version is macOS 10.10.
   - [1.16.0 runtime installer](/data/pkg/osx/1.16.0/gstreamer-1.0-1.16.0-x86_64.pkg)
   - [1.16.0 development installer](/data/pkg/osx/1.16.0/gstreamer-1.0-devel-1.16.0-x86_64.pkg)
 
+GStreamer is also available on [Homebrew](https://brew.sh/), and you should be
+able to use that. However, please note that some plugins are not shipped by
+Homebrew, and you should avoid mixing Homebrew and the official installers on
+the same system.
+
 [Older 1.x binary releases](/data/pkg/osx) are also available.
 
 ### Android
@@ -94,3 +99,8 @@ page](/modules/), or go straight to our [source download directory](/src/).
 Generally, you should not need to build from source yourself unless you need
 features that are only available in a newer version of GStreamer than is
 provided by your distribution or in the last stable release.
+
+For doing GStreamer development, we recommend using the [gst-build
+project](https://gitlab.freedesktop.org/gstreamer/gst-build/#gst-build) which
+will aggregate all the GStreamer modules using [Meson's subproject
+feature](https://mesonbuild.com/Subprojects.html).
