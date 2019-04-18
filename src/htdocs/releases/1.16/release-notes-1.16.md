@@ -1268,22 +1268,6 @@ Yacine Bandou, Yeongjin Jeong, Yuji Kuwabara, Zeeshan Ali,
 ... and many others who have contributed bug reports, translations, sent
 suggestions or helped testing.
 
-## Bugs fixed in 1.16
-
-- this section will be filled in in due course
-
-More than [XXX bugs][bugs-fixed-in-1.16] have been fixed during
-the development of 1.16.
-
-This list does not include issues that have been cherry-picked into the
-stable 1.16 branch and fixed there as well, all fixes that ended up in the
-1.16 branch are also included in 1.16.
-
-This list also does not include issues that have been fixed without a bug
-report in bugzilla, so the actual number of fixes is much higher.
-
-[bugs-fixed-in-1.16]: https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&classification=Platform&limit=0&list_id=213265&order=bug_id&product=GStreamer&query_format=advanced&resolution=FIXED&target_milestone=1.14.1&target_milestone=1.14.2&target_milestone=1.12.3&target_milestone=1.14.4&target_milestone=1.15.1&target_milestone=1.15.2&target_milestone=1.15.3&target_milestone=1.15.4&target_milestone=1.15.90&target_milestone=1.15.91&target_milestone=1.16.0
-
 ## Stable 1.16 branch
 
 After the 1.16.0 release there will be several 1.16.x bug-fix releases which
