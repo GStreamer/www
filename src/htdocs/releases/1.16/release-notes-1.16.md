@@ -1149,9 +1149,16 @@ Cerbero has seen a number of improvements:
   section in the Cerbero documentation for more details how to enable and use
   these variants.
 
+- When building on Windows, Cerbero can now build GStreamer recipes and core
+  dependencies such as glib with Visual Studio. This is controlled by the
+  `visualstudio` variant. Visual Studio 2015, 2017, and 2019 are supported.
+  Currently, only 64-bit x86 is supported due to a [known bug][x86-vs-def]
+  which will be fixed for the next release.
+
 - A new `-t` / `--timestamp` command line switch makes commands print timestamps
 
 [cerbero-variants]: https://gitlab.freedesktop.org/gstreamer/cerbero#enabling-optional-features-with-variants
+[x86-vs-def]: https://gitlab.freedesktop.org/gstreamer/cerbero/issues/124
 
 ## Platform-specific changes and improvements
 
