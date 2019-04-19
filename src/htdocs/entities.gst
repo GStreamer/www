@@ -1,25 +1,25 @@
-<!ENTITY gst-branch-stable "1.14">
-<!ENTITY gst-version-stable "1.14.4">
-<!ENTITY gst-plugins-base-version-stable "1.14.4">
-<!ENTITY gst-plugins-good-version-stable "1.14.4">
-<!ENTITY gst-plugins-ugly-version-stable "1.14.4">
-<!ENTITY gst-plugins-bad-version-stable "1.14.4">
+<!ENTITY gst-branch-stable "1.16">
+<!ENTITY gst-version-stable "1.16.0">
+<!ENTITY gst-plugins-base-version-stable "1.16.0">
+<!ENTITY gst-plugins-good-version-stable "1.16.0">
+<!ENTITY gst-plugins-ugly-version-stable "1.16.0">
+<!ENTITY gst-plugins-bad-version-stable "1.16.0">
 
 <!ENTITY gst-ffmpeg-version-stable "obsolete">
-<!ENTITY gst-libav-version-stable "1.14.4">
+<!ENTITY gst-libav-version-stable "1.16.0">
 <!ENTITY gst-openmax-version-stable "obsolete">
-<!ENTITY gst-python-version-stable "1.14.4">
-<!ENTITY gstreamer-sharp-version-stable "1.14.4">
+<!ENTITY gst-python-version-stable "1.16.0">
+<!ENTITY gstreamer-sharp-version-stable "1.16.0">
 <!ENTITY gst-plugins-gl-version-stable "obsolete">
-<!ENTITY gst-rtsp-server-version-stable "1.14.4">
+<!ENTITY gst-rtsp-server-version-stable "1.16.0">
 <!ENTITY gst-streaming-server-version-stable "git master">
 <!ENTITY gnonlin-version-stable "obsolete">
-<!ENTITY gst-editing-services-version-stable "1.14.4">
+<!ENTITY gst-editing-services-version-stable "1.16.0">
 <!ENTITY qt-gstreamer-version-stable "1.2.0">
 <!ENTITY gst-android-version-stable "obsolete">
-<!ENTITY gst-omx-version-stable "1.14.4">
-<!ENTITY gst-vaapi-version-stable "1.14.4">
-<!ENTITY gst-validate-stable "1.14.4">
+<!ENTITY gst-omx-version-stable "1.16.0">
+<!ENTITY gst-vaapi-version-stable "1.16.0">
+<!ENTITY gst-validate-stable "1.16.0">
 
 <!ENTITY gst-branch-devel "git master">
 <!ENTITY gst-version-devel "git master">
@@ -45,7 +45,7 @@
 <!ENTITY gst-openmax-version-devel "git master">
 <!ENTITY gstreamer-sharp-version-devel "git master">
 
-<!ENTITY orc-version-stable "0.4.29">
+<!ENTITY orc-version-stable "0.4.30">
 <!ENTITY orc-version-devel "git master">
 
 <!ENTITY gst-bug-report "http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">

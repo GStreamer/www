@@ -10253,4 +10253,94 @@ Direct tarball download: <a href="&site;/src/orc/orc-0.4.29.tar.xz">orc-0.4.29</
         </content>
   </item>
 
+    <item>
+      <date>2019-04-19 11:00</date>
+        <title>GStreamer 1.16.0 new major stable release</title>
+        <content>
+<p>
+The GStreamer team is excited to announce a new major feature release of
+your favourite cross-platform multimedia framework!
+</p>
+<p>
+The 1.16 release series adds new features on top of the previous 1.14 series
+and is part of the API and ABI-stable 1.x release series of the GStreamer
+multimedia framework.
+</p>
+<p>
+  <b>Highlights:</b>
+  <ul>
+
+  <li>GStreamer WebRTC stack gained support for data channels
+  for peer-to-peer communication based on SCTP, BUNDLE support, as well as
+  support for multiple TURN servers.</li>
+
+  <li>AV1 video codec support for Matroska and QuickTime/MP4 containers and more
+  configuration options and supported input formats for the AOMedia AV1 encoder</li>
+
+  <li>Support for Closed Captions and other Ancillary Data in video</li>
+
+  <li>Support for planar (non-interleaved) raw audio</li>
+
+  <li><tt>GstVideoAggregator</tt>, <tt>compositor</tt> and
+      OpenGL mixer elements are now in -base</li>
+
+  <li>New alternate fields interlace mode where each buffer carries a single field</li>
+
+  <li>WebM and Matroska ContentEncryption support in the Matroska demuxer</li>
+
+  <li>new WebKit WPE-based web browser source element</li>
+
+  <li>Video4Linux: HEVC encoding and decoding, JPEG encoding, and improved dmabuf import/export</li>
+
+  <li>Hardware-accelerated Nvidia video decoder gained support for VP8/VP9 decoding,
+  whilst the encoder gained support for H.265/HEVC encoding.</li>
+
+  <li>Many improvements to the Intel Media SDK based hardware-accelerated video
+  decoder and encoder plugin (msdk): dmabuf import/export for zero-copy
+  integration with other components; VP9 decoding; 10-bit HEVC encoding; video
+  post-processing (vpp) support including deinterlacing; and the video decoder
+  now handles dynamic resolution changes.</li>
+
+  <li>The ASS/SSA subtitle overlay renderer can now handle multiple subtitles
+  that overlap in time and will show them on screen simultaneously</li>
+
+  <li>The Meson build is now feature-complete (with the exception of plugin docs)
+  and it is now the recommended build system on all platforms. The Autotools build is
+  scheduled to be removed in the next cycle.</li>
+
+  <li>The GStreamer Rust bindings and Rust plugins module
+  are now officially part of upstream GStreamer.</li>
+
+  <li>The GStreamer Editing Services gained a <tt>gesdemux</tt> element that allows
+      directly playing back serialized edit list with <tt>playbin</tt> or
+      <tt>(uri)decodebin</tt></li>
+
+  <li>Many performance improvements</li>
+  </ul>
+</p>
+<p>
+Full release notes can be found <a href="&site;/releases/1.16/">here</a>.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in the next days.
+</p>
+        <p>
+You can download release tarballs directly here: 
+<a href="&site;/src/gstreamer/gstreamer-1.16.0.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.16.0.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.16.0.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.16.0.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.16.0.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.16.0.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.16.0.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.16.0.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.16.0.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-validate/gst-validate-1.16.0.tar.xz">gst-validate</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.16.0.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.16.0.tar.xz">gstreamer-sharp</a>, or
+<a href="&site;/src/gst-omx/gst-omx-1.16.0.tar.xz">gst-omx</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
