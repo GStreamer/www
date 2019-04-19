@@ -11,6 +11,11 @@ Each binary release also has a SHA256 checksum (`.sha256sum`) file and a PGP
 signature file (`.asc`) in the same directory as each release file that you can
 use to verify the chain of trust from the GStreamer project to your machine.
 
+**<span style="color:red">Note: the 1.16.0 binaries are not ready yet, so the
+links below won't work. Apologies for the inconvience, they should hopefully
+be available tomorrow. In the meantime you can grab the 1.15.90 rc1 binaries
+from <a href="https://gstreamer.freedesktop.org/pkg/">here</a>.</span>**
+
 ### Windows
 
 Binary releases in the form of MSI installers are available. The installers are
