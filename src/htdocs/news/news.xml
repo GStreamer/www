@@ -10343,4 +10343,50 @@ You can download release tarballs directly here:
         </content>
   </item>
 
+    <item>
+      <date>2019-05-31 23:00</date>
+        <title>GStreamer 1.14.5 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix
+release in the old stable 1.14 release series of your favourite cross-platform
+multimedia framework.
+</p>
+
+<p>
+This release only contains bugfixes and it should be safe to update from 1.14.x.
+</p>
+
+<p>
+The 1.14 series has now been superseded by the new stable 1.16 series, and we
+recommend you upgrade at your earliest convenience.
+</p>
+
+<p>
+See <a href="&site;/releases/1.14/#1.14.5">&site;/releases/1.14/</a>
+for the details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be made available soon.
+</p>
+        <p>
+Download tarballs directly here:
+<a href="&site;/src/gstreamer/gstreamer-1.14.5.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.14.5.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.14.5.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.14.5.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.14.5.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.14.5.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.14.5.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.14.5.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gstreamer-editing-services-1.14.5.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-validate/gst-validate-1.14.5.tar.xz">gst-validate</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.14.5.tar.xz">gstreamer-sharp</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.14.5.tar.xz">gstreamer-vaapi</a>, or
+<a href="&site;/src/gst-omx/gst-omx-1.14.5.tar.xz">gst-omx</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
