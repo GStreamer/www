@@ -1,0 +1,651 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+<title>GStreamer Conference 2019</title>
+
+<body>
+
+<style>
+li {
+  padding: 0px 0px 10px;
+}
+</style>
+
+<table>
+<tr><td width="70%">
+
+<h1>GStreamer Conference 2019</h1>
+
+  <h2>31 October - 1 November 2019 · Lyon, France</h2>
+
+<p>
+
+<!--
+<style>
+.crop-photo{
+    float:left;
+    margin:.5em 10px .5em 0;
+    overflow:hidden; /* this is important */
+    position:relative; /* this is important too */
+    border:1px solid #ccc;
+    width:280px;
+    height:210px;
+    }
+.crop-photo img{
+    position:absolute;
+    top:-42px;
+    right:-56px;
+    }
+</style>
+-->
+
+<table>
+<tr>
+  <td>
+    <!-- <div class="crop-photo"> -->
+    <img src="lyon_banner_800.jpg"
+         alt="Lyon, Photo by Tanguy Domenge"
+         height="300"
+    />
+    <!-- </div> -->
+    <sup><small><i>Photo "Lyon" Copyright 2017 by <a href="https://www.flickr.com/photos/148302424@N05/37643822316/">Tanguy Domenge</a>, License: <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY-2.0</a></i></small></sup>
+  </td>
+</tr>
+</table>
+</p>
+
+  <br/>
+
+  <p>
+  The <b>10<sup><small>th</small></sup> GStreamer Conference</b> will take place
+  on Thursday and Friday <b>31 October - 1 November 2019</b> at L'Embarcadère
+  in <b>Lyon, France</b>.
+  </p>
+  <p>
+  This is just after the <a href="https://events.linuxfoundation.org/events/embedded-linux-conference-europe-2019/">Embedded Linux Conference Europe (ELCE)</a>,
+  but not officially co-hosted with it and at a different venue in Lyon.
+  </p>
+
+<!--
+  <p>
+  Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> and
+  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2016">GStreamer Conference 2016 videos</a>
+  </p>
+  <p>
+  Slides for some of the talks and the lightning talks can be found in the
+  <a href="&site;/data/events/gstreamer-conference/2016/">GStreamer Conference 2016 slides</a>
+  folder.
+  </p>
+-->
+<!--
+  <h2>Schedule</h2>
+  <p>
+  <a href="schedule.html">Click here for the conference schedule</a>.
+  </p>
+-->
+  <h2>Details</h2>
+  <p>
+  The GStreamer Conference is a conference for developers, community members,
+  decision-makers, industry partners, researchers, students and anyone else
+  interested in the GStreamer multimedia framework or Open Source and
+  cross-platform multimedia.
+  </p>
+
+  <h2>Who should attend?</h2>
+  <p>
+    Anyone interested in open source cross-platform multimedia is encouraged
+    to join us at the GStreamer Conference 2019!
+  </p>
+  <p>
+    Whether you are a hobbyist, app developer, researcher or student interested
+    in the field of multimedia, or working for a company that is using or looking
+    to use GStreamer in their products, this is the perfect event for you to network
+    at and to learn more about the latest technological developments and project news,
+    and to meet developers as well as the wider community.
+  </p>
+
+<!--
+  <h2>Call for Papers</h2>
+  <p>
+  The call for papers is now closed and talk proposals can no longer be
+  submitted. Anyone who has submitted a talk proposal should have received
+  an e-mail letting them know whether their proposal has been accepted.
+  </p>
+  <p>
+  Lightning talks may still be proposed.
+  </p>
+-->
+
+  <h2>Call for Papers</h2>
+  <p>
+  The call for papers is not open yet, but will be announced here and on
+  the <a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>.
+  You can also <a href="https://twitter.com/GStreamer">follow @GStreamer on Twitter</a> for updates.
+  </p>
+
+  <h2>Registration</h2>
+  <p>
+  Registration is expected to open later in June. Please stay tuned for updates.
+  </p>
+<!--
+  <p>
+  <b><a href="https://ti.to/gstreamer/gstreamer-conference-2018">Sign up for the GStreamer Conference here</a></b>
+  </p>
+-->
+  <p>
+  There will be separate registration options for both professionals and for students and hobbyists:
+  </p>
+  <p>
+    <div style="margin-left:5%">
+    <table width="80%" cellpadding="5">
+      <tr><td><b>Professional (Early Bird)</b></td><td><b>220 EUR</b> (ca. 250 USD) (limited in number and available only until 31 July)</td></tr>
+      <tr><td><b>Professional (Regular)</b></td><td><b>330 EUR</b> (ca. 375 USD) (regular)</td></tr>
+      <tr><td><b>Professional (Supporter)</b></td><td><b>500+ EUR</b> (ca. 565 USD) (for those who want to give a little bit extra to the GStreamer project)</td></tr>
+      <tr><td><b>Student/Hobbyist/Community</b></td><td><b>Voluntary donation</b></td></tr>
+    </table>
+    </div>
+  </p>
+  <p>
+    All tickets include lunch at the venue on both conference days
+    as well as access to the social event on Thursday evening.
+  </p>
+  <p>
+    For those uncertain about whether to register as a professional or hobbyist,
+    the general rule is that if your company pays for you or sponsors you, you
+    are a professional, and if you personally pay you are a student or hobbyist.
+    If in doubt drop us a mail or just register as hobbyist. The important
+    thing is that you'll make it to the conference!
+  </p>
+  <p>
+    Registration is not open yet. It is expected to open in late June.
+  </p>
+<!--
+  <p>
+  <b><a href="https://ti.to/gstreamer/gstreamer-conference-2018">Sign up for the GStreamer Conference here</a></b>
+  </p>
+-->
+<!--
+  <h2>Schedule and speakers list</h2>
+  <p>
+    <a href="schedule.html">Click here for the full schedule</a>
+  </p>
+  <p>
+    We have an exciting range of topics and speakers lined up for you again this year:
+    <ul>
+    <li><a href="talks-and-speakers.html#nvidia-deepstream-sdk">Introduction to DeepStreamSDK</a><br /><small><i>Tushar Khinvasara, Nvidia</i></small></li>
+    <li><a href="talks-and-speakers.html#video4linux-codecs">Discovering Video4Linux CODECs</a><br /><small><i>Nicolas Dufresne &amp; Ezequiel Garcia, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#cerbero">Taming the three-headed monster</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#nnstreamer-neural-networks-as-filters">NNStreamer: Neural Networks as GStreamer Filters</a><br /><small><i>MyungJoo Ham, Samsung</i></small></li>
+    <li><a href="talks-and-speakers.html#gstreamer-and-rust">What's new with GStreamer &amp; Rust</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#d3dx-video-game-streaming-on-windows">D3Dx Video Game Streaming on Windows</a><br /><small><i>Florian Nierhaus, Bebo</i></small></li>
+    <li><a href="talks-and-speakers.html#profiling-hawktracer">Profiling GStreamer applications with HawkTracer and tracing subsystem</a><br /><small><i>Marcin Kolny, Amazon</i></small></li>
+    <li><a href="talks-and-speakers.html#ci-for-embedded">GStreamer CI for embedded platforms</a><br /><small><i>Olivier Crête, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#webkitgtk-and-wpe">Multimedia support in WebKitGTK and WPE, current status and plans</a><br /><small><i>Philippe Normand, Igalia</i></small></li>
+    <li><a href="talks-and-speakers.html#servo-webaudio-rust">Using GStreamer for Servo's WebAudio implementation in Rust</a><br /><small><i>Manish Goregaokar, Mozilla</i></small></li>
+    <li><a href="talks-and-speakers.html#praxis-live-java-bindings">PraxisLIVE, PraxisCORE and the Java bindings for GStreamer</a><br /><small><i>Neil C Smith</i></small></li>
+    <li><a href="talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#cloud-based-live-video-handling">GStreamer for cloud-based live video handling</a><br /><small><i>Matthew Clark &amp; Luke Moscrop, BBC</i></small></li>
+    <li><a href="talks-and-speakers.html#streams-and-collections">Streams and collections: we're not done yet!</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#non-interleaved-audio">Non-interleaved audio in GStreamer</a><br /><small><i>George Kiagiadakis, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#trust-but-verify">Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone)</a><br /><small><i>Michał Budzyński &amp; Marcin Kidzinski, Samsung</i></small></li>
+    <li><a href="talks-and-speakers.html#thread-sharing">When adding more threads adds more problems - Thread-sharing between elements in GStreamer</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#gst-inference">GstInference: A GStreamer Deep Learning Framework</a><br /><small><i>Jose Manuel Jimenez, RidgeRun</i></small></li>
+    <li><a href="talks-and-speakers.html#deep-neural-networks">Bringing Deep Neural Networks to GStreamer</a><br /><small><i>Stian Selnes, Pexip</i></small></li>
+    <li><a href="talks-and-speakers.html#android-camera-source-2">Android camera source 2 - a continuation story</a><br /><small><i>Justin Kim (김정석), SK Telecom</i></small></li>
+    <li><a href="talks-and-speakers.html#post-mortem-debugging">Post Mortem GStreamer Debugging with Gdb and Python</a><br /><small><i>Michael Olbrich, Pengutronix</i></small></li>
+    <li><a href="talks-and-speakers.html#asio">In which the protagonist explores why ASIO is still alive</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#microsoft-teams-connector">Microsoft Teams Connector</a><br /><small><i>Håvard Graff, Pexip</i></small></li>
+    <li><a href="talks-and-speakers.html#closed-captions-in-gstreamer">Closed Captions in GStreamer</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#video-editing">Video Editing with GStreamer, status update and plans for the future</a><br /><small><i>Thibault Saunier, Igalia</i></small></li>
+    <li><a href="talks-and-speakers.html#pipewire">PipeWire wants to be your audio server too</a><br /><small><i>Wim Taymans, RedHat</i></small></li>
+    <li>... and more (we still have one or two free slots and are still accepting proposals!)<br /><small><i></i></small></li>
+  </ul>
+  </p>
+
+  <p>
+    <b>Lightning Talks:</b>
+    <small> (submitted so far)</small>
+    <ul>
+    <li>gst-mfx, gst-msdk and the Intel Media SDK: an update <i>(provisional title)</i> <small><br /><i>Haihao Xiang, Intel</i></small></li>
+    <li>Improved flexibility and stability in GStreamer V4L2 support <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>GstQTOverlay <small><br /><i>Carlos Aguero, RidgeRun</i></small></li>
+    <li>Documenting GStreamer <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
+    <li>GstCUDA <small><br /><i>Jose Jimenez-Chavarria, RidgeRun</i></small></li>
+    <li>GstWebRTCBin in the real world <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
+    <li>Servo and GStreamer <small><br /><i>Víctor Jáquez, Igalia</i></small></li>
+    <li>Interoperability between GStreamer and DirectShow <small><br /><i>Stéphane Cerveau, Fluendo</i></small></li>
+    <li>Interoperability between GStreamer and FFMPEG <small><br /><i>Marek Olejnik, Fluendo</i></small></li>
+    <li>Encrypted Media Extensions with GStreamer in WebKit <small><br /><i>Xabier Rodríguez Calvar, Igalia</i></small></li>
+    <li>DataChannels in GstWebRTC <small><br /><i>Matthew Waters, Centricular</i></small></li>
+    <li>Me TV – a journey from C and Xine to Rust and GStreamer, via D <small><br /><i>Russel Winder</i></small></li>
+    <li>GStreamer pipeline on webOS OSE <small><br /><i>Jimmy Ohn (온용진), LG Electronics</i></small></li>
+    <li>...and many more</li>
+    <li><i>Submit <u>your</u> lightning talk now!</i></li>
+    </ul>
+  </p>
+-->
+  <h2>Showcase or Lightning Talks</h2>
+  <p>
+    There will again be opportunities for short lightning talks for those who
+    do not wish to present a full talk, but just want to showcase something
+    they're working on, or present a problem or challenge they are facing or
+    have solved, and that they think might be interesting for others to hear
+    about.
+  </p>
+  <p>
+    Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
+  </p>
+  <p>
+    Simply send a quick mail to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- --><i>&#64;</i><!-- -->lists.freedesktop.org</a> above to reserve your slot (subject to availability).  </p>
+  <p>
+    There is no deadline for Lightning Talk submissions, slots will be
+    allocated on a first-come first-serve basis.
+  </p>
+
+  <h2>Social Events</h2>
+
+  <h3>Wednesday: Welcome drinks and/or food (venue to be determined)</h3>
+  <p>
+    Join us for some drinks and/or food at <i>tbd</i>. Details to be confirmed
+    at a later time. <!-- <a href="https://www.brewdog.com/bars/uk/lothian-road"><b>BrewDog Lothian Road</b></a>! -->
+  </p>
+<!--
+  <p>
+    Food and drinks will be available for purchase, credit cards should be accepted.
+  </p>
+  <p>
+    We have a semi-private section reserved for us upstairs on the right ("The Garage").
+  </p>
+  <p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.109807749272!2d-3.2087470493646566!3d55.94746868051066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a28f1c4d61%3A0x8cea87d80d07a49e!2sBrewDog+Lothian+Road!5e0!3m2!1sen!2suk!4v1540206441438" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
+  </p>
+-->
+
+  <h3>Thursday: Social Event with Food and Drinks (venue to be determined)</h3>
+  <p>
+    We plan on having a social event again on Thursday, details to be confirmed
+    at a later time.
+  </p>
+<!--
+  <p>
+    Our main social event will be on Thursday at <a href="http://www.lebowskis.co.uk/edinburgh/our-location.php"><b>Lebowskis Bar</b></a>
+    from ca. 19.30 until late. Food and drinks will be provided (thanks to our sponsors!),
+    including some vegetarian/vegan options.
+  </p>
+  <p>
+  Lebowskis Bar is located on 18 Morrison Street in the West End near the
+  international conference center.
+  </p>
+  <p>
+    How to get there from Summerhall:
+    <ul>
+      <li>on foot: it's a fairly straight-forward 20-minute walk along the
+          main road (A700) through the Meadows, ca. 1 mile.</li>
+      <li>by public transport: there should be busses every couple of minutes
+          from Bernard Terrace which is just around the corner from Summerhall
+          (on the road going north towards Waverley station). The easiest might
+          be the number 2 which runs every 10 minutes and takes 17 minutes.
+          The airport bus (300) is also an option but might have different
+          pricing compared to local busses. The 30 takes a slightly longer
+          route so it's probably worth just waiting for the next number 2 then.</li>
+      <li>by taxi/uber: should be a 5-10 minutes ride depending on traffic, perhaps £5-10 or so</li>
+      <li>by bike: should be less than 10 minutes by bike if you're feeling
+          ambitious. There are <a href="https://edinburghcyclehire.com/stations">Just Eat Cycles</a>
+          stations at Summerhall (Meadows East, Melville Terrace) and Riego
+          Street at junction with East Fountainbridge which should take you
+          most of the distance. Requires the app and prior registration though.</li>
+    </ul>
+  </p>
+  <p>
+    Please don't forget to bring your badge. (If you'd like to bring a +1
+    please get in touch, we may be able to arrange that.)
+  </p>
+  <p>
+    This will be a private event at least until 23.30, but there won't be a
+    cloakroom where you can leave your jackets/bags and neither we nor the bar
+    will take responsibility for any lost or damaged items, so you may want to
+    drop off your gear at the hotel before you head there.
+  </p>
+  <p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4468.153875696689!2d-3.2112178!3d55.9480384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a479cd5bad%3A0xae6a8d6903e7242e!2sLebowskis!5e0!3m2!1sen!2suk!4v1538652252829" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
+  </p>
+-->
+
+  <h2>Concurrent conferences</h2>
+  <p>
+    There are a few other events taking place alongside or just before the
+    GStreamer Conference on 31 October / 1 November this year, so if you are
+    making your way to Lyon you might want to consider combining the GStreamer
+    Conference with some of the other events.
+  </p>
+  <p>
+  <table>
+    <tr><td><a href="https://events.linuxfoundation.org/events/embedded-linux-conference-europe-2019/">Embedded Linux Conference Europe (ELCE)</a></td><td>28-30 October 2019</td></tr>
+  </table>
+  </p>
+
+  <h2>GStreamer hackfest</h2>
+  <p>
+    There will be a hackfest just after the conference, on Saturday and Sunday
+    2-3 November 2019. Venue to be confirmed at a later time.
+  </p>
+<!--
+  <p>
+    Please add yourself to the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2017">wiki page</a>
+    if you plan on attending the hackfest, so we have an idea of the number of
+    people to expect. Mail Tim or Sebastian or pop onto the #gstreamer IRC channel if you
+    don't have editing permissions for the wiki.
+  </p>
+-->
+
+  <h2>Sponsorship Opportunities</h2>
+  <p>
+  The GStreamer Conference 2019 is only possible thanks to the generous
+  financial support from our sponsors.
+
+  For this year's sponsorship opportunities please refer to
+  the <a href="&site;/conference/2019/gstreamer-conference-sponsor-brief-2019.pdf">sponsor brief (PDF)</a>
+  or get in touch with <a href="mailto:tim@gstreamer-foundation.org">Tim-Philipp Müller</a>.
+  </p>
+
+  <h2>City</h2>
+  <p>
+  This year's conference will take place in
+  <a href="https://en.wikipedia.org/wiki/Lyon">Lyon</a>, France's second city.
+  </p>
+<!--
+  <p>
+  <i>Getting there</i>
+  </p><p>
+  <b>By air:</b> <i>Prague Václav Havel airport</i> (PRG) provides regional
+  and international connections.
+  </p>
+  <p>
+  <b>By train:</b> <i>Praha hl.n. (Praha hlavní nádraží)</i> is Prague's
+  central station. <i>Praha-Smíchov</i> station is close to the venue/Node5,
+  and international trains will often stop there as well.
+  </p>
+-->
+
+  <h2>Venue</h2>
+  <p>
+  The conference will take place at<br/>
+  <b><a href="https://www.embarcadere-lyon.com/contact/">L'Embarcadère</a></b><br/>
+  13 bis Quai Rambaud<br/>
+  69002 Lyon<br/>
+  France<br/>
+  </p>
+<!--
+  <p>
+  The venue is in the university district and within walking distance from
+  Edinburgh Waverley station.
+  </p>
+  <p>
+  <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-3.184589445590973%2C55.93930291387254%2C-3.180906772613526%2C55.94068644028729&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/55.93999/-3.18275">View Larger Map</a></small>
+  </p>
+  <br/>
+  <p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.5505118750725!2d-3.1844506487556727!3d55.93982978050862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c781e4eb45a5%3A0xe70e80791c72a03d!2sSummerhall!5e0!3m2!1sen!2suk!4v1528713491022" width="600" height="450" frameborder="0" style="border:0" allowfullscreen="true"></iframe>
+  </p>
+-->
+
+  <h2>Hotels</h2>
+  <p>
+  There is no official conference hotel, but we will prepare a list of
+  possible hotels for your convenience at a later time.
+  </p>
+<!--
+  <p>
+  There is no official conference hotel, but we have prepared a small list of
+  possible hotels for your convenience. If you are also attending ELCE which
+  is at a different venue then other hotels may be better suited.
+  </p>
+  <p>
+  The following is just a small selection of hotels which may or may not be
+  suitable. Edinburgh is a major city and tourist destination and as such has
+  many hotels and hostels in all price categories. The below is merely a small
+  selection, you can find more using the usual booking engines such as
+  booking.com, lastminute.com or airbnb.com. As always, it is advisable to book
+  your accommodation earlier rather than later.
+  </p>
+  <p>
+  The GStreamer conference venue (<a href="https://www.summerhall.co.uk/about/location/">Summerhall</a>)
+  is located east of The Meadows near Edinburgh's historic city centre. It
+  should be easy to reach by taxi or public transport from all directions.
+  There are a number of smaller hotels, hostels, and bed and breakfast places
+  in the area around the venue, but we won't list those here since they usually
+  only have a very limited number of rooms available.
+  </p>
+  <p>
+  The following hotels had at least a couple of rooms left at the time of
+  writing, but there are many other hotels in the city which may be better
+  located or provide better value:
+  <ul>
+    <li><a href="https://www.accorhotels.com/gb/hotel-8484-ibis-edinburgh-centre-south-bridge-royal-mile/index.shtml">Ibis Edinburgh Centre South Bridge</a> - ca. 14 minutes walk to venue, 6 minutes by bus (every 3 mins)</li>
+    <li><a href="https://thrumshotel.com/">The Thrums</a> - a bit south of the venue (so further from city centre), ca. 8 minute walk to venue, 5 mins by bus, 3 mins by taxi/uber</li>
+    <li><a href="https://www.jurysinns.com/hotels/edinburgh/">Jurys Inn</a> - ca. 20 minutes walk to venue, 14 mins by bus, 6 mins by taxi/uber</li>
+    <li><a href="https://www.accorhotels.com/gb/hotel-2039-ibis-edinburgh-centre-royal-mile-hunter-square-new-rooms/index.shtml">Ibis Edinburgh Centre Royal Mile</a> - 15min walk to venue, 10 mins by bus, 6 mins by taxi/uber.</li>
+    <li><a href="https://staycentral.co.uk/">Stay Central Hotel</a> - ca. 15 minute walk to venue, or 13 by bus, 6 mins by taxi/uber</li>
+    <li><a href="https://cityroomz.com/">cityroomz Edinburgh</a> - ca. 30 minute walk or 20 mins by bus from venue, but close to EICC (for ELCE) and CodeBase (for the GStreamer hackfest)</li>
+    <li><a href="https://www.marriott.com/hotels/travel/ediri-residence-inn-edinburgh/">Residence Inn by Marriott Edinburgh</a> - 4-star hotel, 10-minute walk to venue</li>
+    <li><a href="https://www.travelodge.co.uk/hotels/205/Edinburgh-Central-hotel/">Travelodge</a> - 2-star hotel, "budget" lodging, ~15-minute walk to venue</li>
+    <li><a href="https://www.accorhotels.com/gb/hotel-3271-novotel-edinburgh-centre/index.shtml">Novotel Edinburgh City Centre</a> - between venue and EICC/CodeBase, ca. 15 minute walk to venue, 16 mins by bus, 6 mins by taxi/uber</li>
+   <li><a href="https://www.leonardohotels.co.uk/hotels/edinburgh/edinburgh-royal">Leonardo Hotel Edinburgh Haymarket</a> - close to EICC (for ELCE), 30mins walk to venue, 21 mins by bus, 9 mins by taxi/uber</li>
+   <li><a href="https://hamptoninn3.hilton.com/en/hotels/united-kingdom/hampton-by-hilton-edinburgh-west-end-EDIFBHX/index.html">Hampton by Hilton Edinburgh West End</a> - closer to EICC (for ELCE), 29 mins walk to GStreamer conf venue, 9 mins by taxi/uber.</li>
+  </ul>
+  </p>
+  <p>
+  In general, any hotel in the Old Town area should be fine, or even New Town
+  north of Waverley station. You may have to walk a bit though or take a taxi.
+  Public transport connections should also be good and frequent from all parts
+  of the city centre.
+  </p>
+  <p>
+  For those attending ELCE, <a href="https://events.linuxfoundation.org/events/elc-openiot-europe-2018/attend/venue-travel/">hotel recommendations for ELCE can</a> also be found
+  on the <a href="https://events.linuxfoundation.org/events/elc-openiot-europe-2018/attend/venue-travel/">ELCE website</a>.
+  </p>
+  <p>
+  If you find any other places that might be worth mentioning here, please send
+  us a mail.
+  </p>
+-->
+
+  <h2>Invitation Letter</h2>
+  <p>
+  If you need an invitiation letter for visa purposes, please get in touch.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+  If you have any questions about the GStreamer Conference or are considering
+  <a href="&site;/conference/2019/gstreamer-conference-sponsor-brief-2019.pdf">becoming a sponsor</a>
+  please contact <a href="mailto:tim@gstreamer-foundation.org">Tim-Philipp Müller</a>.
+  </p>
+<!--
+  <h2>Call for Papers</h2>
+  <p>
+  The first batch of talks and speakers will be announced very soon.
+  </p>
+  <p>
+  We still have a few slots available, so talk proposals can still be submitted.
+  </p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk
+  (please allow at least 5 minutes for questions at the end as well).
+  </p>
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+  <p>
+  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
+  or 45 minutes, including questions. We will only have a small number of
+  45-minute slots available, so please consider whether you could also make do
+  with 30 minutes before asking for a 45-minute slot, or let us know if both
+  are an option.
+  </p>
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+  <p>
+  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-x- -x-><i>&#64;</i><!-x- -x->lists.freedesktop.org</a>.
+  You do not need to subscribe to the list, and you should receive a confirmation that your proposal has been received within a couple of days.
+  </p>
+-->
+
+  <h2>Conference News and Updates</h2>
+<!--
+  <p>
+    <i>2018-October-22</i>: There will again be an informal pre-conference meet-up social event on the evening before the conference.
+    Come to <a href="https://www.brewdog.com/bars/uk/lothian-road"><b>BrewDog Lothian Road</b></a> on Wednesday 24 October 2018 from 19.30h onwards and say hi!
+    Food and drinks will be available for purchase, and credit cards should be accepted.
+  </p>
+  <p>
+    <i>2018-October-22</i>: the <a href="&site;/conference/2018/schedule.html">full conference schedule</a> is now available as well
+  </p>
+  <p>
+    <i>2018-October-06</i>: Talk abstracts and speaker bios published
+  </p>
+  <p>
+    <i>2018-October-04</i>: There will be a social event again on Thursday
+    evening from ca. 19.30h onwards at <a href="http://www.lebowskis.co.uk/edinburgh/our-location.php"><b>Lebowskis Bar</b></a>
+    at 18 Morrisson Street. Food and drinks will be provided (thanks to our sponsors!),
+    including vegetarian options. Make sure to bring your conference badge.
+  </p>
+  <p>
+    <i>2018-September-21</i>: The GStreamer project is very delighted to have <b><a href="https://pexip.com/">Pexip</a></b> as Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2018-September-19</i>: Initial list of talks and speakers available
+  </p>
+  <p>
+    <i>2018-September-19</i>: Reminder that there will also be a hackfest/hackathon on Saturday/Sunday 27-28 October 2018, just after the conference, but at another venue as the conference, namely CodeBase.
+  </p>
+  <p>
+    <i>2018-September-18</i>: Added list of hotels
+  </p>
+  <p>
+    <i>2018-September-12</i>: The GStreamer project is excited to see <b><a href="https://zeiss.com/">Zeiss</a></b> sponsor the conference for the very first time this year, as Silver sponsor!
+  </p>
+  <p>
+    <i>2018-September-10</i>: We're chuffed to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference again at Gold level this year.
+  </p>
+  <p>
+    <i>2018-September-04</i>: Talk submission deadline for second round slots has been extended to 15 September 2018.
+  </p>
+  <p>
+    <i>2018-September-04</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2018-September-04</i>: The GStreamer project welcomes back <a href="https://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
+  </p>
+  <p>
+    <i>2018-September-04</i>: Registration is now <a href="https://ti.to/gstreamer/gstreamer-conference-2018">open</a>. Early-bird professional tickets are available until 18 September.
+  </p>
+  <p>
+    <i>2018-September-04</i>: Speakers have been notified about their talk proposal
+  </p>
+  <p>
+    <i>2018-August-17</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record talks and lightning talks</a>
+  </p>
+  <p>
+    <i>2018-August-09</i>: Talk submission deadline is Friday 31 August 2018, 23:59 UTC.
+  </p>
+  <p>
+    <i>2018-August-09</i>: Call for Papers
+  </p>
+  <p>
+    <i>2018-July-13</i>: We're excited to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as a Gold sponsor this year!
+  </p>
+-->
+  <p>
+    <i>2019-June-07</i>: <a href="&site;/conference/2019/gstreamer-conference-sponsor-brief-2019.pdf">Sponsorship brief</a> available
+  </p>
+  <p>
+    <i>2019-June-07</i>: Venue announced: <a href="https://www.embarcadere-lyon.com/">L'Embarcadère</a>
+  </p>
+  <p>
+    <i>2019-May-31</i>: Initial announcement.
+  </p>
+
+  <h1>Past GStreamer Conferences</h1>
+  <ul>
+    <li><a href="../2018/index.html">25-26 October 2018 · Summerhall · Edinburgh, Scotland, UK</a></li>
+    <li><a href="../2017/index.html">21-22 October 2017 · Node5 · Prague, Czech Republic</a></li>
+    <li><a href="../2016/index.html">10-11 October 2016 · betahaus · Berlin, Germany</a></li>
+    <li><a href="../2015/index.html">8-9 October 2015 · The Convention Centre Dublin · Dublin, Ireland</a></li>
+    <li><a href="../2014/index.html">16-17 October 2014 · Congress Centre Düsseldorf · Düsseldorf, Germany</a></li>
+    <li><a href="../2013/index.html">22-23 October 2013 · Edinburgh International Conference Centre · Edinburgh, Scotland, UK</a></li>
+    <li><a href="../2012/index.html">27-28 August 2012 · Sheraton San Diego Hotel &amp; Marina · San Diego, USA</a></li>
+    <li><a href="../2011/index.html">24-25 October 2011 · Clarion Congress Hotel · Prague, Czech Republic</a></li>
+    <li><a href="../2010/index.html">26 October 2010 · University Arms Hotel · Cambridge, UK</a></li>
+  </ul>
+
+</td>
+<td valign="top" style="padding:0px 50px">
+  <h1>Sponsors</h1>
+<!--
+  <h2>Platinum Sponsor</h2>
+
+  <p style="padding:20px 0px">
+    <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
+  </p>
+  <p style="padding:20px 0px">
+    <a href="https://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" width="175" /></a>
+  </p>
+  <br />
+  <h2>Gold Sponsors</h2>
+  <p style="padding:10px 0px">
+    <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="75" /></a>
+  </p>
+  <p style="padding:10px 0px">
+    <a href="https://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="75" /></a>
+  </p>
+  <p style="padding:10px 0px">
+    <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
+  </p>
+  <p style="padding:10px 0px">
+    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
+  </p>
+  <br />
+  <h2>Silver Sponsors</h2>
+
+  <p style="padding:0px 0px">
+    <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
+
+  </p>
+  <br />
+
+  <h2>Special Media Partner</h2>
+  <p style="padding:10px 0px">
+    <a href="https://www.ubicast.eu/"><img src="sponsor_ubicast_640x195.png" alt="UbiCast" height="75" width="246" /></a>
+  </p>
+  <br />
+-->
+<!--
+  <h2>Press Partners</h2>
+  <p style="padding:10px 0px">
+    <a href="https://lwn.net"><img src="lwn-logo-gstconf2016.png" alt="LWN" height="99" width="300" /></a>
+  </p>
+-->
+  <p>
+    <small>
+    Interested in <a href="&site;/conference/2019/gstreamer-conference-sponsor-brief-2019.pdf">becoming a sponsor</a> ?
+    </small>
+  </p>
+</td>
+
+</tr>
+</table>
+
+</body>
+</page>
