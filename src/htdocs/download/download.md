@@ -27,7 +27,8 @@ install both packages.
 Starting with the 1.16 release, MSVC 64-bit binaries are also available.
 Please note that the library names in MSVC are different from MinGW. If you're
 upgrading from a previous version of GStreamer and want a hassle-free upgrade,
-you should continue to use the MinGW installers listed above.
+you should continue to use the MinGW installers listed above. Also note that
+these builds currently don't work with the gst-sharp .NET bindings.
 
 * MSVC 64-bit (VS 2017)
   - [1.16.0 runtime installer](/data/pkg/windows/1.16.0/gstreamer-1.0-msvc-x86_64-1.16.0.msi)
