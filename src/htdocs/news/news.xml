@@ -10389,4 +10389,50 @@ Download tarballs directly here:
         </content>
   </item>
 
+  <item>
+      <date>2019-06-12 14:00</date>
+        <title>GStreamer Conference 2019 announced to take place in Lyon, France</title>
+        <content>
+<p>
+The GStreamer project is happy to announce that this year's GStreamer
+Conference will take place on Thursday-Friday 31 October - 1 November 2019 in
+Lyon, France.
+</p>
+<p>
+You can find more details about the conference on the
+<a href="https://gstreamer.freedesktop.org/conference/2019/">GStreamer
+Conference 2019 web site</a>.
+</p>
+<p>
+A call for papers will be sent out in due course. Registration will open at a
+later time. We will announce those and any further updates on the
+<a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>,
+the <a href="https://gstreamer.freedesktop.org/news/">website</a>,
+and <a href="https://twitter.com/GStreamer">on Twitter</a>.
+</p>
+<p>
+Talk slots will be available in varying durations from 20 minutes up to
+45 minutes. Whatever you're doing or planning to do with GStreamer,
+we'd like to hear from you!
+</p>
+<p>
+We also plan to have sessions with short lightning talks / demos /
+showcase talks for those who just want to show what they've been
+working on or do a mini-talk instead of a full-length talk. Lightning
+talk slots will be allocated on a first-come-first-serve basis, so make
+sure to reserve your slot if you plan on giving a lightning talk.
+</p>
+<p>
+There will also be a social event again on Thursday evening.
+</p>
+<p>
+There are also plans to have a hackfest the weekend right after the conference
+on 2-3 November 2019.
+</p>
+<p>
+We hope to see you in Lyon, and please spread the word!
+</p>
+        </content>
+  </item>
+
 </news>
