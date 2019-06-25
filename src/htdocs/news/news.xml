@@ -10435,4 +10435,44 @@ We hope to see you in Lyon, and please spread the word!
         </content>
   </item>
 
+    <item>
+      <date>2019-06-24 20:00</date>
+        <title>GStreamer Rust bindings 0.14.0 release</title>
+        <content>
+<p>
+  A new version of the GStreamer Rust bindings, 0.14.0, was released.
+</p>
+<p>
+  Apart from updating to GStreamer 1.16, this release is mostly focussed on
+  adding more bindings for various APIs and general API cleanup and bugfixes.<br/>
+  The most notable API additions in this release are bindings for gst::Memory and
+  gst::Allocator as well as bindings for gst_base::BaseParse and gst_video::VideoDecoder
+  and VideoEncoder. The latter also come with support for implementing subclasses and
+  the gst-plugins-rs module contains an video decoder and parser (for CDG), and a
+  video encoder (for AV1) based on this.
+</p>
+<p>
+  As usual this release follows the latest <a href="https://gtk-rs.org/blog/2019/06/22/new-release.html">gtk-rs</a>
+  release, and a new version of the GStreamer plugins written in Rust was also released.
+</p>
+<p>
+  Details can be found in the release notes for <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/blob/28a24a4fc06b45a713f159d17cd4e8526ae3eae2/gstreamer-sdp/CHANGELOG.md#0140-2019-06-24">gstreamer-rs</a>
+  and <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs-sys/blob/3dc291d51abf1401622382b7e51a80424cd0f86e/gstreamer-sys/CHANGELOG.md#080-2019-06-24">gstreamer-rs-sys</a>.
+</p>
+<p>
+  The code and documentation for the bindings is available on the freedesktop.org GitLab
+    <ul>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust Bindings</a> (<a href="https://slomo.pages.freedesktop.org/rustdocs/gstreamer/gstreamer/">documentation</a>)</li>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust Plugins</a></li>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs-sys">GStreamer Rust FFI Bindings</a> (<a href="https://slomo.pages.freedesktop.org/rustdocs/gstreamer-sys/gstreamer_sys/">documentation</a>)</li>
+    </ul>
+  as well as on <a href="https://crates.io">crates.io</a>.
+</p>
+<p>
+  If you find any bugs, missing features or other issues please report them in
+  <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/issues/new">GitLab</a>.
+</p>
+        </content>
+  </item>
+
 </news>
