@@ -68,10 +68,49 @@ the same system.
 Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
-The `armv7` and `x86` binaries target Jelly Bean (API v16), while the `arm64`
-and `x86_64` binaries target Lollipop (API v21).
-
 * Android Universal [1.16.0 tarball](/data/pkg/android/1.16.0/gstreamer-1.0-android-universal-1.16.0.tar.xz)
+
+The Android NDKs used by the stable releases are:
+
+<table style='border-collapse: collapse;'>
+ <tr style='background-color: #f2f2f2;'>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>GStreamer version</th>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>NDK Version</th>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.14.x</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>r16</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.16.x</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="https://developer.android.com/ndk/downloads/older_releases.html#ndk-18b-downloads">r18b</a></td>
+ </tr>
+</table>
+
+The Android APIs targetted by the GStreamer 1.16.x stable release(s) are:
+
+<table style='border-collapse: collapse;'>
+ <tr style='background-color: #f2f2f2;'>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>Architecture</th>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>API Targeted</th>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>armv7</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v16 (Jelly Bean)</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>x86</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v16 (Jelly Bean)</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>arm64</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>x86_64</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
+ </tr>
+</table>
 
 [Older 1.x binary releases](/data/pkg/android) are also available.
 
