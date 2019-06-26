@@ -3,8 +3,8 @@
 If you're on Linux or a BSD variant, you can install GStreamer using your
 package manager.
 
-For other platforms, specifically [Windows](#Windows), [macOS](#macOS),
-[Android](#Android), and [iOS](#iOS_and_tvOS), we provide binary releases in
+For other platforms, specifically [Windows](#windows), [macOS](#macos),
+[Android](#android), and [iOS](#ios-and-tvos), we provide binary releases in
 the form of official installers or tarballs maintained by the GStreamer
 project.
 
@@ -12,6 +12,7 @@ Each binary release also has a SHA256 checksum (`.sha256sum`) file and a PGP
 signature file (`.asc`) in the same directory as each release file that you can
 use to verify the chain of trust from the GStreamer project to your machine.
 
+<a name="windows"></a>
 ### Windows
 
 Binary releases in the form of MSI installers are available. The installers are
@@ -48,6 +49,7 @@ is available for integration into your own WiX-based app installer.
 
 [Older 1.x binary releases](/data/pkg/windows) are also available.
 
+<a name="toolchain-compatibility-notes"></a>
 #### Toolchain Compatibility Notes
 
 On Windows, you can use a number of different toolchains and versions thereof,
@@ -144,6 +146,7 @@ This is the toolchain compatibility matrix with the stable releases:
 
 **NONE** means fully unsupported, and *will* lead to crashes.
 
+<a name="macos"></a>
 ### macOS
 
 Binary releases in the form of `.framework` installers are available. The
@@ -161,6 +164,7 @@ the same system.
 
 [Older 1.x binary releases](/data/pkg/osx) are also available.
 
+<a name="android"></a>
 ### Android
 
 Binary releases are available with each in the form of a single "universal"
@@ -212,6 +216,7 @@ The Android APIs targeted by the GStreamer 1.16.x stable release(s) are:
 
 [Older 1.x binary releases](/data/pkg/android) are also available.
 
+<a name="ios-and-tvos"></a>
 ### iOS and tvOS
 
 Binary releases that integrate into XCode are available in the form of a single
@@ -222,6 +227,7 @@ and the target SDK version is iOS 9.0.
 
 [Older 1.x binary releases](/data/pkg/ios) are also available.
 
+<a name="linux-and-bsds"></a>
 ### Linux and BSDs
 
 All Linux distributions and many BSD variants provide packages of GStreamer.
@@ -232,6 +238,7 @@ upstream sources. Additionally, some distributions do not include some plugins
 from the gst-plugins-bad package, or omit the gst-plugins-ugly and gst-libav
 packages entirely in their main repository for legal reasons.
 
+<a name="sources"></a>
 ### Sources
 
 For building the aforementioned binary releases, you need to use the [Cerbero
