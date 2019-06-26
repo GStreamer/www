@@ -27,7 +27,8 @@ install both packages.
 
 Starting with the 1.16 release, MSVC 64-bit binaries are also available. If
 you're upgrading from a previous version of GStreamer and want a hassle-free
-upgrade, you should continue to use the MinGW installers listed above.
+upgrade, you should continue to use the MinGW installers listed above. Also see
+the [toolchain compatibility notes](#toolchain-compatibility-notes) below.
 
 NOTE: The library names in MSVC are different from MinGW; specifically the DLLs
 are of the form `foo.dll` instead of `libfoo.dll`.
@@ -35,7 +36,8 @@ are of the form `foo.dll` instead of `libfoo.dll`.
 NOTE: The MSVC binaries currently don't work with the gst-sharp .NET bindings.
 
 NOTE: Some of the plugins shipped with the MSVC binaries link to non-gstreamer
-libraries built with MinGW because they are built with Autotools.
+libraries built with MinGW because they are built with Autotools. [See below](#toolchain-compatibility-notes)
+for what this means for your application.
 
 * MSVC 64-bit (VS 2017)
   - [1.16.0 runtime installer](/data/pkg/windows/1.16.0/gstreamer-1.0-msvc-x86_64-1.16.0.msi)
@@ -45,6 +47,102 @@ For each of the above listed targets, [a zip file with `.msm` modules](/data/pkg
 is available for integration into your own WiX-based app installer.
 
 [Older 1.x binary releases](/data/pkg/windows) are also available.
+
+#### Toolchain Compatibility Notes
+
+On Windows, you can use a number of different toolchains and versions thereof,
+and it is not always obvious how these can be mixed and matched with the
+binaries provided above by GStreamer.
+
+The first step is ensuring that you're using the correct architecture. You
+should not try to mix 32-bit code built with any toolchain with 64-bit code
+built with any toolchain.
+
+Next, understand that since GStreamer is written mostly in C, all APIs exported
+by GStreamer libraries and plugins use C ABIs. Even plugins written in other
+languages such as Rust, C++, C#, Python, etc, are loaded using the C ABI.
+
+This means you can consume the GStreamer binaries from any toolchain that uses
+the same C ABI. Using the same [CRT (C Runtime)](https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features)
+is better, but it's not always a requirement. Here's the matrix outlining the
+CRT used for each GStreamer version:
+
+<table style='border-collapse: collapse;'>
+ <tr style='background-color: #f2f2f2;'>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>GStreamer version</th>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>MinGW</th>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>MSVC</th>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.14.x</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>msvcrt.dll</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>N/A</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.16.x</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>msvcrt.dll</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>ucrtbase.dll</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.17.x (development)</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>ucrtbase.dll</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>ucrtbase.dll</td>
+ </tr>
+</table>
+
+This is the toolchain compatibility matrix with the stable releases:
+
+<table style='border-collapse: collapse;'>
+ <tr style='background-color: #f2f2f2;'>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>App Toolchain</th>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.14 MinGW</th>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.16 MinGW</th>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.16 MSVC</th>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>Visual Studio 2015 and newer</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>Visual Studio 2013 and older</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="http://mingw.org">MinGW</a></td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="https://mingw-w64.org">MinGW-w64</a></td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="https://www.msys2.org">MSYS2 MinGW-w64</a></td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="http://cygwin.com">Cygwin</a></td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>NONE</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>NONE</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>NONE</td>
+ </tr>
+</table>
+
+**FULL** means full C compatibility, including debugging symbols.
+
+**PARTIAL** means mixing the two should be fine as long as you are careful while
+[passing memory across CRT boundaries](https://docs.microsoft.com/en-us/cpp/c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries).
+
+**NONE** means fully unsupported, and *will* lead to crashes.
 
 ### macOS
 
@@ -87,7 +185,7 @@ The Android NDKs used by the stable releases are:
  </tr>
 </table>
 
-The Android APIs targetted by the GStreamer 1.16.x stable release(s) are:
+The Android APIs targeted by the GStreamer 1.16.x stable release(s) are:
 
 <table style='border-collapse: collapse;'>
  <tr style='background-color: #f2f2f2;'>
