@@ -68,23 +68,10 @@ the same system.
 Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
+The `armv7` and `x86` binaries target Jelly Bean (API v16), while the `arm64`
+and `x86_64` binaries target Lollipop (API v21).
+
 * Android Universal [1.16.0 tarball](/data/pkg/android/1.16.0/gstreamer-1.0-android-universal-1.16.0.tar.xz)
-
-The Android NDKs used by the stable releases are:
-
-GStreamer version | NDK Version
-------------------|------------
-1.14.x            | r16
-1.16.x            | [r18b](https://developer.android.com/ndk/downloads/older_releases.html#ndk-18b-downloads)
-
-The Android APIs targetted by the GStreamer 1.16.x stable release(s) are:
-
-Architecture | API targeted
--------------|-------------
-armv7        | v16 (Jelly Bean)
-x86          | v16 (Jelly Bean)
-arm64        | v21 (Lollipop)
-x86_64       | v21 (Lollipop)
 
 [Older 1.x binary releases](/data/pkg/android) are also available.
 
