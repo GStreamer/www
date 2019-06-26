@@ -3,10 +3,9 @@
 If you're on Linux or a BSD variant, you can install GStreamer using your
 package manager.
 
-For other platforms, specifically [Windows](#Windows), [macOS](#macOS),
-[Android](#Android), and [iOS](#iOS_and_tvOS), we provide binary releases in
-the form of official installers or tarballs maintained by the GStreamer
-project.
+For other platforms, specifically macOS, Windows, Android, and iOS, we provide
+binary releases in the form of official installers or tarballs maintained by
+the GStreamer project.
 
 Each binary release also has a SHA256 checksum (`.sha256sum`) file and a PGP
 signature file (`.asc`) in the same directory as each release file that you can
