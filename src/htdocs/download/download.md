@@ -25,11 +25,17 @@ install both packages.
   - [1.16.0 runtime installer](/data/pkg/windows/1.16.0/gstreamer-1.0-mingw-x86-1.16.0.msi)
   - [1.16.0 development installer](/data/pkg/windows/1.16.0/gstreamer-1.0-devel-mingw-x86-1.16.0.msi)
 
-Starting with the 1.16 release, MSVC 64-bit binaries are also available.
-Please note that the library names in MSVC are different from MinGW. If you're
-upgrading from a previous version of GStreamer and want a hassle-free upgrade,
-you should continue to use the MinGW installers listed above. Also note that
-these builds currently don't work with the gst-sharp .NET bindings.
+Starting with the 1.16 release, MSVC 64-bit binaries are also available. If
+you're upgrading from a previous version of GStreamer and want a hassle-free
+upgrade, you should continue to use the MinGW installers listed above.
+
+NOTE: The library names in MSVC are different from MinGW; specifically the DLLs
+are of the form `foo.dll` instead of `libfoo.dll`.
+
+NOTE: The MSVC binaries currently don't work with the gst-sharp .NET bindings.
+
+NOTE: Some of the plugins shipped with the MSVC binaries link to non-gstreamer
+libraries built with MinGW because they are built with Autotools.
 
 * MSVC 64-bit (VS 2017)
   - [1.16.0 runtime installer](/data/pkg/windows/1.16.0/gstreamer-1.0-msvc-x86_64-1.16.0.msi)
