@@ -563,10 +563,10 @@ li {
   <p>
     <i>2018-August-09</i>: Call for Papers
   </p>
-  <p>
-    <i>2018-July-13</i>: We're excited to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as a Gold sponsor this year!
-  </p>
 -->
+  <p>
+    <i>2018-July-22</i>: We're excited to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as a Gold sponsor this year!
+  </p>
   <p>
     <i>2019-June-07</i>: <a href="&site;/conference/2019/gstreamer-conference-sponsor-brief-2019.pdf">Sponsorship brief</a> available
   </p>
@@ -603,10 +603,12 @@ li {
     <a href="https://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" width="175" /></a>
   </p>
   <br />
+-->
   <h2>Gold Sponsors</h2>
   <p style="padding:10px 0px">
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="75" /></a>
   </p>
+<!--
   <p style="padding:10px 0px">
     <a href="https://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="75" /></a>
   </p>
