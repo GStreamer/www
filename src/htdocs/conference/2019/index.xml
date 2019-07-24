@@ -543,9 +543,6 @@ li {
     <i>2018-September-04</i>: Talk submission deadline for second round slots has been extended to 15 September 2018.
   </p>
   <p>
-    <i>2018-September-04</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
-  </p>
-  <p>
     <i>2018-September-04</i>: The GStreamer project welcomes back <a href="https://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
   </p>
   <p>
@@ -565,7 +562,10 @@ li {
   </p>
 -->
   <p>
-    <i>2018-July-22</i>: We're excited to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as a Gold sponsor this year!
+    <i>2019-July-24</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2019-July-22</i>: We're excited to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as a Gold sponsor this year!
   </p>
   <p>
     <i>2019-June-07</i>: <a href="&site;/conference/2019/gstreamer-conference-sponsor-brief-2019.pdf">Sponsorship brief</a> available
@@ -593,17 +593,17 @@ li {
 </td>
 <td valign="top" style="padding:0px 50px">
   <h1>Sponsors</h1>
-<!--
   <h2>Platinum Sponsor</h2>
 
   <p style="padding:20px 0px">
     <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
   </p>
+<!--
   <p style="padding:20px 0px">
     <a href="https://www.pexip.com"><img src="sponsor_pexip.png" alt="Pexip" width="175" /></a>
   </p>
-  <br />
 -->
+  <br />
   <h2>Gold Sponsors</h2>
   <p style="padding:10px 0px">
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="75" /></a>
