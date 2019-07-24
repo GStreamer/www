@@ -144,7 +144,7 @@ li {
   <p>
     <div style="margin-left:5%">
     <table width="80%" cellpadding="5">
-      <tr><td><b>Professional (Early Bird)</b></td><td><b>220 EUR</b> (ca. 250 USD) (limited in number and available only until 31 July)</td></tr>
+      <tr><td><b>Professional (Early Bird)</b></td><td><b>220 EUR</b> (ca. 250 USD) (limited in number and available only until tbd)</td></tr> <!-- FIXME -->
       <tr><td><b>Professional (Regular)</b></td><td><b>330 EUR</b> (ca. 375 USD) (regular)</td></tr>
       <tr><td><b>Professional (Supporter)</b></td><td><b>500+ EUR</b> (ca. 565 USD) (for those who want to give a little bit extra to the GStreamer project)</td></tr>
       <tr><td><b>Student/Hobbyist/Community</b></td><td><b>Voluntary donation</b></td></tr>
