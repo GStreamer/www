@@ -1258,3 +1258,4 @@ RedirectMatch 301 "/gstreamer-editing-services/html/GESBaseXmlFormatter.html" "/
 RedirectMatch 301 "/gstreamer-editing-services/html/GESVideoUriSource.html" "/documentation/gst-editing-services/gesvideourisource.html"
 RedirectMatch 301 "/gstreamer-editing-services/html/GESUriClip.html" "/documentation/gst-editing-services/gesuriclip.html"
 RedirectMatch 301 "/gstreamer-editing-services/html/GESBaseEffectClip.html" "/documentation/gst-editing-services/gesbaseeffectclip.html"
+RedirectMatch 301 "/gstreamer-editing-services/html/ch01.html" "/documentation/gst-editing-services/"
