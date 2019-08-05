@@ -131,7 +131,7 @@ li {
 
   <h2>Registration</h2>
   <p>
-  Registration is expected to open later in June. Please stay tuned for updates.
+  Registration is expected to open in August. Please stay tuned for updates.
   </p>
 <!--
   <p>
@@ -163,7 +163,7 @@ li {
     thing is that you'll make it to the conference!
   </p>
   <p>
-    Registration is not open yet. It is expected to open in late June.
+    Registration is not open yet. It is expected to open in August.
   </p>
 <!--
   <p>
@@ -534,9 +534,6 @@ li {
     <i>2018-September-18</i>: Added list of hotels
   </p>
   <p>
-    <i>2018-September-12</i>: The GStreamer project is excited to see <b><a href="https://zeiss.com/">Zeiss</a></b> sponsor the conference for the very first time this year, as Silver sponsor!
-  </p>
-  <p>
     <i>2018-September-10</i>: We're chuffed to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference again at Gold level this year.
   </p>
   <p>
@@ -561,6 +558,9 @@ li {
     <i>2018-August-09</i>: Call for Papers
   </p>
 -->
+  <p>
+    <i>2019-August-05</i>: The GStreamer project is excited to see <b><a href="https://zeiss.com/">Zeiss</a></b> sponsor the conference as Silver sponsor again this year!
+  </p>
   <p>
     <i>2019-July-24</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
   </p>
@@ -618,6 +618,7 @@ li {
   <p style="padding:10px 0px">
     <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
   </p>
+-->
   <br />
   <h2>Silver Sponsors</h2>
 
@@ -625,6 +626,7 @@ li {
     <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
 
   </p>
+<!--
   <br />
 
   <h2>Special Media Partner</h2>
