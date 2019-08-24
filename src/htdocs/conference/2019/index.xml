@@ -123,15 +123,45 @@ li {
 -->
 
   <h2>Call for Papers</h2>
+<!--
   <p>
-  The call for papers is not open yet, but will be announced here and on
-  the <a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>.
-  You can also <a href="https://twitter.com/GStreamer">follow @GStreamer on Twitter</a> for updates.
+  The first batch of talks and speakers will be announced very soon.
+  </p>
+  <p>
+  We still have a few slots available, so talk proposals can still be submitted.
+  </p>
+-->
+  <p><b>
+  The call for papers is now open for talk proposals and lightning talks.
+  Please submit your talk now!
+  </b></p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk
+  (please allow at least 5 minutes for questions at the end as well).
+  </p>
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+  <p>
+  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
+  or 45 minutes, including questions. If you need more time than that we might
+  be able to accommodate that as well, please get in touch to discuss details.
+  </p>
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+  <p>
+  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- --><i>&#64;</i><!-- -->lists.freedesktop.org</a>.
+  You do not need to subscribe to the list, and you should receive a confirmation that your proposal has been received within a couple of days.
   </p>
 
   <h2>Registration</h2>
   <p>
-  Registration is expected to open in August. Please stay tuned for updates.
+  Registration is expected to open in late August. Please stay tuned for updates.
   </p>
 <!--
   <p>
@@ -467,40 +497,6 @@ li {
   <a href="&site;/conference/2019/gstreamer-conference-sponsor-brief-2019.pdf">becoming a sponsor</a>
   please contact <a href="mailto:tim@gstreamer-foundation.org">Tim-Philipp Müller</a>.
   </p>
-<!--
-  <h2>Call for Papers</h2>
-  <p>
-  The first batch of talks and speakers will be announced very soon.
-  </p>
-  <p>
-  We still have a few slots available, so talk proposals can still be submitted.
-  </p>
-  <p>
-  The initial submission needs to be only a couple of sentences or paragraphs
-  describing the talk you want to give and the desired length of your talk
-  (please allow at least 5 minutes for questions at the end as well).
-  </p>
-  <p>
-  Talks can be on almost anything multimedia related, ranging from talks about
-  applications to challenges in the lower levels in the stack or hardware.
-  </p>
-  <p>
-  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
-  or 45 minutes, including questions. We will only have a small number of
-  45-minute slots available, so please consider whether you could also make do
-  with 30 minutes before asking for a 45-minute slot, or let us know if both
-  are an option.
-  </p>
-  <p>
-  We want to hear from you, what you are working on, what you are using
-  GStreamer for, what difficulties you have encountered and how you solved them,
-  what your plans are, what you like, what you dislike, how to improve things!
-  </p>
-  <p>
-  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-x- -x-><i>&#64;</i><!-x- -x->lists.freedesktop.org</a>.
-  You do not need to subscribe to the list, and you should receive a confirmation that your proposal has been received within a couple of days.
-  </p>
--->
 
   <h2>Conference News and Updates</h2>
 <!--
@@ -551,10 +547,10 @@ li {
   <p>
     <i>2018-August-09</i>: Talk submission deadline is Friday 31 August 2018, 23:59 UTC.
   </p>
-  <p>
-    <i>2018-August-09</i>: Call for Papers
-  </p>
 -->
+  <p>
+    <i>2019-August-24</i>: Call for Papers is now open, please submit your talk proposals now!
+  </p>
   <p>
     <i>2019-August-24</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record talks and lightning talks</a>
   </p>
