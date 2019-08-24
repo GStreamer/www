@@ -75,11 +75,11 @@ li {
 <!--
   <p>
   Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> and
-  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2016">GStreamer Conference 2016 videos</a>
+  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2019">GStreamer Conference 2019 videos</a>
   </p>
   <p>
   Slides for some of the talks and the lightning talks can be found in the
-  <a href="&site;/data/events/gstreamer-conference/2016/">GStreamer Conference 2016 slides</a>
+  <a href="&site;/data/events/gstreamer-conference/2019/">GStreamer Conference 2019 slides</a>
   folder.
   </p>
 -->
@@ -549,15 +549,15 @@ li {
     <i>2018-September-04</i>: Speakers have been notified about their talk proposal
   </p>
   <p>
-    <i>2018-August-17</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record talks and lightning talks</a>
-  </p>
-  <p>
     <i>2018-August-09</i>: Talk submission deadline is Friday 31 August 2018, 23:59 UTC.
   </p>
   <p>
     <i>2018-August-09</i>: Call for Papers
   </p>
 -->
+  <p>
+    <i>2019-August-24</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record talks and lightning talks</a>
+  </p>
   <p>
     <i>2019-August-05</i>: The GStreamer project is excited to see <b><a href="https://zeiss.com/">Zeiss</a></b> sponsor the conference as Silver sponsor again this year!
   </p>
@@ -626,7 +626,6 @@ li {
     <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
 
   </p>
-<!--
   <br />
 
   <h2>Special Media Partner</h2>
@@ -634,7 +633,7 @@ li {
     <a href="https://www.ubicast.eu/"><img src="sponsor_ubicast_640x195.png" alt="UbiCast" height="75" width="246" /></a>
   </p>
   <br />
--->
+
 <!--
   <h2>Press Partners</h2>
   <p style="padding:10px 0px">
