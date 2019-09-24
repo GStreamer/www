@@ -1307,7 +1307,8 @@ from 1.16.0.
  - decklinkaudiosink: Drop late buffers
  - openh264enc: Fix compilation with openh264 v2.0
  - wasapisrc: fix segtotal value being always 2
- - Fix issues on Android Q
+ - android: Fix gnutls issue causing a FORTIFY crash on Android Q
+ - windows: Fix two crashes due to cross-CRT free when using MSVC
 
 #### gstreamer core
 
