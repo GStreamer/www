@@ -198,14 +198,17 @@ li {
   You do not need to subscribe to the list, and you should receive a confirmation that your proposal has been received within a couple of days.
   </p>
 
-<!--
   <h2>Schedule and speakers list</h2>
+<!--
   <p>
     <a href="schedule.html">Click here for the full schedule</a>
   </p>
+-->
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
     <ul>
+    <li><i>Coming soon...</i></li>
+<!--
     <li><a href="talks-and-speakers.html#nvidia-deepstream-sdk">Introduction to DeepStreamSDK</a><br /><small><i>Tushar Khinvasara, Nvidia</i></small></li>
     <li><a href="talks-and-speakers.html#video4linux-codecs">Discovering Video4Linux CODECs</a><br /><small><i>Nicolas Dufresne &amp; Ezequiel Garcia, Collabora</i></small></li>
     <li><a href="talks-and-speakers.html#cerbero">Taming the three-headed monster</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
@@ -233,6 +236,7 @@ li {
     <li><a href="talks-and-speakers.html#video-editing">Video Editing with GStreamer, status update and plans for the future</a><br /><small><i>Thibault Saunier, Igalia</i></small></li>
     <li><a href="talks-and-speakers.html#pipewire">PipeWire wants to be your audio server too</a><br /><small><i>Wim Taymans, RedHat</i></small></li>
     <li>... and more (we still have one or two free slots and are still accepting proposals!)<br /><small><i></i></small></li>
+-->
   </ul>
   </p>
 
@@ -240,24 +244,19 @@ li {
     <b>Lightning Talks:</b>
     <small> (submitted so far)</small>
     <ul>
-    <li>gst-mfx, gst-msdk and the Intel Media SDK: an update <i>(provisional title)</i> <small><br /><i>Haihao Xiang, Intel</i></small></li>
-    <li>Improved flexibility and stability in GStreamer V4L2 support <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li>GstQTOverlay <small><br /><i>Carlos Aguero, RidgeRun</i></small></li>
-    <li>Documenting GStreamer <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
-    <li>GstCUDA <small><br /><i>Jose Jimenez-Chavarria, RidgeRun</i></small></li>
-    <li>GstWebRTCBin in the real world <small><br /><i>Mathieu Duponchelle, Centricular</i></small></li>
-    <li>Servo and GStreamer <small><br /><i>Víctor Jáquez, Igalia</i></small></li>
-    <li>Interoperability between GStreamer and DirectShow <small><br /><i>Stéphane Cerveau, Fluendo</i></small></li>
-    <li>Interoperability between GStreamer and FFMPEG <small><br /><i>Marek Olejnik, Fluendo</i></small></li>
-    <li>Encrypted Media Extensions with GStreamer in WebKit <small><br /><i>Xabier Rodríguez Calvar, Igalia</i></small></li>
-    <li>DataChannels in GstWebRTC <small><br /><i>Matthew Waters, Centricular</i></small></li>
-    <li>Me TV – a journey from C and Xine to Rust and GStreamer, via D <small><br /><i>Russel Winder</i></small></li>
-    <li>GStreamer pipeline on webOS OSE <small><br /><i>Jimmy Ohn (온용진), LG Electronics</i></small></li>
-    <li>...and many more</li>
+    <li>Raising the Importance of the V4L2 plugin and Challenges <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>WebKit-powered HTML overlays in your pipeline with GstWPE <small><br /><i>Philippe Normand, Igalia</i></small></li>
+    <li>Detect a metal can using GStreamer/OpenFoodFacts <small><br /><i>Stéphane Cerveau, Collabora</i></small></li>
+    <li>A new GStreamer RTSP Server <small><br /><i>Sebastian Dröge, Centricular</i></small></li>
+    <li>A brand new documentation infrastructure for the GStreamer framework <small><br /><i>Thibault Saunier, Igalia</i></small></li>
+    <li>An Improved Latency Tracer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>Using Bots to Improve the Gitlab Workflow <small><br /><i>Jordan Petridis, Centricular</i></small></li>
+    <li>GNOME Radio <small><br /><i>Ole Aamot, GNOME</i></li></small>
+    <li>SCTE-35 support in GStreamer <small><br /><i>Edward Hervey, Centricular</i></small></li>
+    <li>...and more to come</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
   </p>
--->
   <h2>Showcase or Lightning Talks</h2>
   <p>
     There will again be opportunities for short lightning talks for those who
