@@ -250,6 +250,7 @@ li {
     <li>Detect a metal can using GStreamer/OpenFoodFacts <small><br /><i>Stéphane Cerveau, Collabora</i></small></li>
     <li>A new GStreamer RTSP Server <small><br /><i>Sebastian Dröge, Centricular</i></small></li>
     <li>A brand new documentation infrastructure for the GStreamer framework <small><br /><i>Thibault Saunier, Igalia</i></small></li>
+    <li>GStreamer on Windows: Everything New <small><br /><i>Nirbheek Chauhan, Centricular</i></small></li>
     <li>An Improved Latency Tracer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
     <li>Using Bots to Improve the Gitlab Workflow <small><br /><i>Jordan Petridis, Centricular</i></small></li>
     <li>GNOME Radio <small><br /><i>Ole Aamot, GNOME</i></small></li>
