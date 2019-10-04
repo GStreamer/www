@@ -146,7 +146,6 @@ li {
   <b><a href="https://ti.to/gstreamer-conference-tickets/gstreamer-conference-2019">Sign up for the GStreamer Conference here</a></b>
   </p>
 
-<!--
   <h2>Call for Papers</h2>
   <p>
   The call for papers is now closed and talk proposals can no longer be
@@ -156,17 +155,18 @@ li {
   <p>
   Lightning talks may still be proposed.
   </p>
--->
+  <p>
+  The list of talks and speakers will be announced very soon.
+  </p>
 
-  <h2>Call for Papers</h2>
 <!--
+  <h2>Call for Papers</h2>
   <p>
   The first batch of talks and speakers will be announced very soon.
   </p>
   <p>
   We still have a few slots available, so talk proposals can still be submitted.
   </p>
--->
   <p><b>
   The call for papers is now open for talk proposals and lightning talks.
   Please submit your talk now!
@@ -194,9 +194,10 @@ li {
   what your plans are, what you like, what you dislike, how to improve things!
   </p>
   <p>
-  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-- --><i>&#64;</i><!-- -->lists.freedesktop.org</a>.
+  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-x- -x-><i>&#64;</i><!-x- -x->lists.freedesktop.org</a>.
   You do not need to subscribe to the list, and you should receive a confirmation that your proposal has been received within a couple of days.
   </p>
+-->
 
   <h2>Schedule and speakers list</h2>
 <!--
@@ -251,7 +252,7 @@ li {
     <li>A brand new documentation infrastructure for the GStreamer framework <small><br /><i>Thibault Saunier, Igalia</i></small></li>
     <li>An Improved Latency Tracer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
     <li>Using Bots to Improve the Gitlab Workflow <small><br /><i>Jordan Petridis, Centricular</i></small></li>
-    <li>GNOME Radio <small><br /><i>Ole Aamot, GNOME</i></li></small>
+    <li>GNOME Radio <small><br /><i>Ole Aamot, GNOME</i></small></li>
     <li>SCTE-35 support in GStreamer <small><br /><i>Edward Hervey, Centricular</i></small></li>
     <li>...and more to come</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
@@ -547,13 +548,13 @@ li {
   <p>
     <i>2018-September-04</i>: The GStreamer project welcomes back <a href="https://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
   </p>
-  <p>
-    <i>2018-September-04</i>: Speakers have been notified about their talk proposal
-  </p>
-  <p>
-    <i>2018-August-09</i>: Talk submission deadline is Friday 31 August 2018, 23:59 UTC.
-  </p>
 -->
+  <p>
+    <i>2019-October-04</i>: Speakers have been notified about their talk proposal
+  </p>
+  <p>
+    <i>2019-September-30</i>: The talk of paper is now closed.
+  </p>
   <p>
     <i>2019-September-18</i>: Talk submission deadline for second round slots has been extended to 30 September 2019.
   </p>
