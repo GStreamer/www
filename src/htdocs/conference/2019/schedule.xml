@@ -1,0 +1,463 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+    %site-entities;
+    ]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+  <title>GStreamer Conference 2019 Schedule</title>
+<body lang="en-US" dir="LTR">
+
+<h1>GStreamer Conference 2019 - Schedule</h1>
+<h2>Lyon, France, 31 October - 1 November 2019</h2>
+<p><a href="&site;/conference/2019/">Back to conference main page</a></p>
+<!--
+<p><a href="#wednesday">Schedule for Wednesday 30 October 2019 (arrival day)</a></p>
+-->
+<p><a href="#thursday">Schedule for Thursday 31 October 2019</a></p>
+<p><a href="#friday">Schedule for Friday 1 November 2019</a></p>
+
+<!-- ARRIVAL DAY -->
+
+<!-- FIXME -->
+<!--
+<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0">
+	<tr name="wednesday" id="wednesday">
+		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
+			<p align="center"><font color="white">Wednesday 30 October 2019 (Arrival Day)</font></p>
+		</td>
+	</tr>
+	<tr valign="center" bgcolor="#F0F0F0">
+		<td><p>19.30-<br />late</p></td>
+		<td colspan="2">
+		<p align="center"><b><font size="+2">Social Event: drinks and/or food - informal pre-conference meet-up on Wednesday evening</font></b></p>
+
+  <p align="center">
+    <font size="+2">at <a href="https://www.brewdog.com/bars/uk/lothian-road"><b><large>BrewDog Lothian Road</large></b></a></font><br/>
+  </p>
+  <p align="center"><b>Meet up on arrival day and say hi!</b></p>
+  <p align="center"><a href="https://www.brewdog.com/files/1537543178LOTHIANROADFOOD.pdf">Food</a> and drinks will be available for purchase. Credit cards should be accepted.</p>
+  <p align="center">
+    We have a semi-private section reserved for us upstairs on the right ("The Garage").
+  </p>
+  <p align="center">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.109807749272!2d-3.2087470493646566!3d55.94746868051066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a28f1c4d61%3A0x8cea87d80d07a49e!2sBrewDog+Lothian+Road!5e0!3m2!1sen!2suk!4v1540206441438" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
+  </p>
+		</td>
+		<td><p>19.30-<br />late</p></td>
+	</tr>
+
+	<tr valign="top" style="border:none">
+		<td style="border:none"></td>
+		<td style="border:none" colspan="2"></td>
+		<td style="border:none"></td>
+	</tr>
+</table>
+-->
+
+<!-- DAY 1 -->
+
+<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0">
+
+	<tr name="thursday" id="thursday">
+		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
+			<p align="center"><font color="white">Thursday 31 October 2019</font></p>
+		</td>
+	</tr>
+	<tr valign="top" bgcolor="#b0c4de">
+		<td width="5%"><p></p></td>
+		<td width="45%"><p align="center">Espace Red</p></td>
+		<td width="45%"><p align="center">Espace Yellow</p></td>
+		<td width="5%"><p></p></td>
+	</tr>
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>08.00</p></td>
+		<td colspan="2"><p align="center"><b>Registration</b></p></td>
+		<td><p>09.00</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p>09.00-<br />09.05</p></td>
+		<td colspan="2"><p align="center"><i>Opening and welcome to the 2019 GStreamer Conference</i><br /></p>
+		<p align="center"><small>Espace Red</small></p>
+                </td>
+		<td><p>09.00-<br />09.05</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>09.00-<br />18.30</p></td> <!-- FIXME -->
+		<td colspan="2">
+		<p align="center"><small><i>Detailed talk schedule will be announced soon</i></small></p>
+		</td>
+		<td><p>09.00-<br />18.30</p></td> <!-- FIXME -->
+	</tr>
+
+<!--
+	<tr valign="top">
+		<td><p>09.40-<br />10.20</p></td>
+		<td colspan="2">
+        <p align="center"><a href="&site;/conference/2019/talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a><br />Tim-Philipp Müller (__tim), Centricular</p>
+		<p align="center"><small>Espace Red</small></p>
+		</td>
+		<td><p>09.40-<br />10.20</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>10.20-<br />10.30</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>10.20-<br />10.30</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>10.30-<br />11.00</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#cloud-based-live-video-handling">GStreamer for cloud-based live video handling</a><br />Matthew Clark &amp; Luke Moscrop, BBC</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#deep-neural-networks">Bringing Deep Neural Networks to GStreamer</a><br />Stian Selnes, Pexip</p>
+		</td>
+		<td><p>10.30-<br />11.00</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>11.00-<br />11.30</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>11.00-<br />11.30</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>11.30-<br />12.15</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#thread-sharing">When adding more threads adds more problems - Thread-sharing between elements in GStreamer</a><br />Sebastian Dröge (slomo), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#praxis-live-java-bindings">PraxisLIVE, PraxisCORE and the Java bindings for GStreamer</a><br />Neil C Smith</p>
+		</td>
+		<td><p>11.30-<br />12.00</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>12.15-<br />12.30</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>12.15-<br />12.30</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>12.30-<br />13.00</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#d3dx-video-game-streaming-on-windows">D3Dx Video Game Streaming on Windows</a><br />Florian Nierhaus, Bebo</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#closed-captions-in-gstreamer">Closed Captions in GStreamer</a><br />Edward Hervey (bilboed), Centricular</p>
+		</td>
+		<td><p>12.30-<br />12.50</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>13.00-<br />14.00</p></td>
+		<td colspan="2"><p align="center"><b>Lunch Break</b></p></td>
+		<td><p>13.00-<br />14.00</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.00-<br />14.30</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#video-editing">Video Editing with GStreamer, status update and plans for the future</a><br />Thibault Saunier (thiblahute), Igalia</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#post-mortem-debugging">Post Mortem GStreamer Debugging with Gdb and Python</a><br />Michael Olbrich, Pengutronix</p>
+		</td>
+		<td><p>14.00-<br />14.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>14.30-<br />14.40</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>14.30-<br />14.40</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.40-<br />15.10</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#ci-for-embedded">GStreamer CI for embedded platforms</a><br />Olivier Crête (ocrete), Collabora</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#pipewire">Pipewire wants to be your audio server too</a><br />Wim Taymans (wtay), RedHat</p>
+		</td>
+		<td><p>14.40-<br />15.10</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>15.10-<br />15.40</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>15.10-<br />15.40</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>15.40-<br />16.10</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#nvidia-deepstream-sdk">Introduction to DeepStreamSDK</a><br />Tushar Khinvasara, Nvidia</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#webkitgtk-and-wpe">Multimedia support in WebKitGTK and WPE, current status and plans</a><br />Philippe Normand (philn), Igalia</p>
+		</td>
+		<td><p>15.40-<br />16.10</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>16.10-<br />16.20</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>16.10-<br />16.20</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.20-<br />16.50</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#cerbero">Taming the three-headed monster</a><br />Nirbheek Chauhan (nirbheek), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#non-interleaved-audio">Non-interleaved audio in GStreamer</a><br />George Kiagiadakis (gkiagia), Collabora</p>
+		</td>
+		<td><p>16.20-<br />16.50</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>16.50-<br />17.00</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>16.50-<br />17.00</p></td>
+	</tr>
+-->
+	<tr valign="top">
+		<td><p>17.00-<br />18.30</p></td>
+		<td colspan="2"><p align="center"><i><a href="&site;/conference/2019/talks-and-speakers.html#lightning-talks">Lightning Talks</a></i><br /></p>
+		<p align="center"><small>Espace Red</small></p>
+                </td>
+		<td><p>17.00-<br />18.30</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>18.30</p></td>
+		<td colspan="2">
+		<p align="center"><b>End of Day</b></p>
+		</td>
+		<td><p>18.30</p></td>
+	</tr>
+
+	<tr valign="center" bgcolor="#E0E0E0">
+		<td><p>19.30-<br />late</p></td>
+		<td colspan="2">
+		<p align="center"><b><font size="+2">Social Event: Drinks and Food</font></b></p>
+		<p align="center"><font size="+2">at <a href=""><b>to be confirmed</b></a></font></p> <!-- FIXME -->
+<!--
+                <p align="center">at 18 Morrison Street in the West End not far from the international conference center. (<a href="https://goo.gl/maps/qrp52U4cHDG2">map</a>)</p>
+		<p align="center">Both drinks and food will be provided, incl. vegetarian options (thanks to our sponsors!)</p>
+		<p align="center">Please don't forget to bring your badge. If you would like to bring a +1 please let us know when picking up your badge in the morning.</p>
+-->
+		<p align="center">
+                  This will be a private event at least until 23.30, but there won't be a
+                  cloakroom where you can leave your jackets/bags and neither we<br/> nor the bar
+                  will take responsibility for any lost or damaged items, so you may want to
+                  drop off your gear at the hotel before you head there.
+                </p>
+<!--		<p align="center">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4468.153875696689!2d-3.2112178!3d55.9480384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a479cd5bad%3A0xae6a8d6903e7242e!2sLebowskis!5e0!3m2!1sen!2suk!4v1538652252829" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
+                </p>
+-->
+		</td>
+		<td><p>19.30-<br />late</p></td>
+	</tr>
+
+	<tr valign="top" style="border:none">
+		<td style="border:none"></td>
+		<td style="border:none" colspan="2"></td>
+		<td style="border:none"></td>
+	</tr>
+</table>
+
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<!-- DAY 2 -->
+
+<table width="100%" border="1" bordercolor="#333333" cellpadding="8" cellspacing="0" name="friday" id="friday">
+	<tr>
+		<td colspan="4" width="100%" valign="TOP" bgcolor="#4682b4">
+			<p align="center"><font color="white">Friday 1 November 2019</font></p>
+		</td>
+	</tr>
+	<tr valign="top" bgcolor="#b0c4de">
+		<td width="5%"><p></p></td>
+		<td width="45%"><p align="center">Espace Red</p></td>
+		<td width="45%"><p align="center">Espace Yellow</p></td>
+		<td width="5%"><p></p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>09.00-<br />10.00</p></td>
+		<td colspan="2"><p align="center"><b>Sleep in</b><br /><small>(note that we start later on Friday, at 10.00am!)</small></p></td>
+		<td><p>09.00-<br />10.00</p></td>
+	</tr>
+<!--
+	<tr valign="top">
+		<td><p><b>10.30</b>-<br />11.15</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#nnstreamer-neural-networks-as-filters">NNStreamer: Neural Networks as GStreamer Filters</a><br />MyungJoo Ham, Samsung</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#bof1">BoF / workshop #1: tbd</a><br /></p>
+		</td>
+		<td><p><b>10.30</b>-<br />11.15</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>11.15-<br />11.30</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>11.15-<br />11.30</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>11.30-<br />12.15</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#streams-and-collections">Streams and collections: we're not done yet!</a><br />Edward Hervey (bilboed), Centricular</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#bof2">BoF / workshop #2: tbd</a><br /></p>
+		</td>
+		<td><p>11.30-<br />12.15</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>12.15-<br />12.30</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>12.15-<br />12.30</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>12.30-<br />13.00</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#profiling-hawktracer">Profiling GStreamer applications with HawkTracer and tracing subsystem</a><br />Marcin Kolny, Amazon</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#asio">In which the protagonist explores why ASIO is still alive</a><br />Nirbheek Chauhan, Centricular</p>
+		</td>
+		<td><p>12.30-<br />12.50</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>13.00-<br />14.00</p></td>
+		<td colspan="2"><p align="center"><b>Lunch Break</b></p></td>
+		<td><p>13.00-<br />14.00</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>14.00-<br />14.40</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#trust-but-verify">Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone)</a><br />Michał Budzyński &amp; Marcin Kidzinski, Samsung</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#android-camera-source-2">Android camera source 2 - a continuation story</a><br />Justin Kim (김정석), SK Telecom</p>
+		</td>
+		<td><p>14.00-<br />14.20</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>14.40-<br />15.10</p></td>
+		<td colspan="2"><p align="center"><b>Coffee Break</b></p></td>
+		<td><p>14.40-<br />15.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>15.10-<br />15.55</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#microsoft-teams-connector">Microsoft Teams Connector</a><br />Håvard Graff (hgr), Pexip</p>
+
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#gst-inference">GstInference: A GStreamer Deep Learning Framework</a><br />Jose Manuel Jimenez, RidgeRun</p>
+		</td>
+		<td><p>15.10-<br />15.40</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>15.55-<br />16.10</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>15.55-<br />16.10</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.10-<br />16.40</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#video4linux-codecs">Discovering Video4Linux CODECs</a><br />Nicolas Dufresne (ndufresne) &amp; Ezequiel Garcia, Collabora</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#gstreamer-and-rust">What's new with GStreamer &amp; Rust</a><br />Sebastian Dröge (slomo), Centricular</p>
+		</td>
+		<td><p>16.10-<br />16.40</p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#F0F0F0">
+		<td><p>16.40-<br />16.50</p></td>
+		<td colspan="2">
+		<p align="center"><small><i>mini break</i></small></p>
+		</td>
+		<td><p>16.40-<br />16.50</p></td>
+	</tr>
+
+	<tr valign="top">
+		<td><p>16.50-<br />17.20</p></td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#servo-webaudio-rust">Using GStreamer for Servo's WebAudio implementation in Rust</a><br />Manish Goregaokar, Mozilla</p>
+		</td>
+		<td>
+		<p><a href="&site;/conference/2019/talks-and-speakers.html#servo-webaudio-rust">Experiences with GStreamer/WebRTC</a><br />Marc Leeman, Barco</p>
+		</td>
+		<td><p>16.50-<br />17.20</p></td>
+	</tr>
+-->
+	<tr valign="top">
+		<td><p><!--17.25 FIXME --></p></td>
+		<td colspan="2"><p align="center"><i>Closing Session</i></p></td>
+		<td><p><!--17.25 FIXME --></p></td>
+	</tr>
+
+	<tr valign="top" bgcolor="#E0E0E0">
+		<td><p>ca. 17.30-18.00</p></td>
+		<td colspan="2">
+		<p align="center"><b>End of Conference</b></p>
+		</td>
+		<td><p>ca. 17.30-18.00</p></td>
+	</tr>
+</table>
+
+<br />
+<br />
+<br />
+<br />
+
+
+</body>
+</page>

@@ -1,5 +1,4 @@
-#talks-and-speakers.html schedule.html
-built_pages = index.html
+built_pages = index.html talks-and-speakers.html schedule.html
 
 images = lyon_banner_800.jpg \
 	sponsor_igalia_2015_2019x720.png \
