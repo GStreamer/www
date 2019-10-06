@@ -544,10 +544,10 @@ li {
   <p>
     <i>2018-September-10</i>: We're chuffed to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference again at Gold level this year.
   </p>
-  <p>
-    <i>2018-September-04</i>: The GStreamer project welcomes back <a href="https://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
-  </p>
 -->
+  <p>
+    <i>2019-October-06</i>: The GStreamer project welcomes back <a href="https://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
+  </p>
   <p>
     <i>2019-October-05</i>: The GStreamer project is chuffed to have <b><a href="https://pexip.com/">Pexip</a></b> return as Platinum sponsor this year!
   </p>
@@ -615,23 +615,30 @@ li {
   <p style="padding:20px 0px">
     <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" width="250" /></a>
   </p>
+
   <br />
+
   <h2>Gold Sponsors</h2>
   <p style="padding:10px 0px">
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="75" /></a>
   </p>
-<!--
+
   <p style="padding:10px 0px">
-    <a href="https://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="75" /></a>
+    <a href="https://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="70" /></a>
   </p>
-  <p style="padding:10px 0px">
-    <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
-  </p>
+
   <p style="padding:10px 0px">
     <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
   </p>
+
+<!--
+  <p style="padding:10px 0px">
+    <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
+  </p>
 -->
+
   <br />
+
   <h2>Silver Sponsors</h2>
 
   <p style="padding:0px 0px">
