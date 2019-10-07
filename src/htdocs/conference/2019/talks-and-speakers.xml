@@ -21,7 +21,7 @@
 <tr valign="top"><td>
 <a name="gst-transcoder" id="gst-transcoder"></a>
 <p><b>
-GstTranscoder: A High Level API to Quickly Implement Transcoding Capapabilities in your Applications. Thibault Saunier (thiblahute), Igalia
+GstTranscoder: A High Level API to Quickly Implement Transcoding Capabilities in your Applications. Thibault Saunier (thiblahute), Igalia
 </b></p>
 <p>
 A new library and a set of elements have been developed for the pitivi video editing application, after a few years it has finally been merged into gst-plugins-bad. It also includes a command line application that aims at being flexible and provide the same kind of features as the ffmpeg command line interface. This talk will explain where we are with this new API, what its goal is and what comes next.
@@ -473,10 +473,23 @@ Ederson de Souza is a software engineer at Intel. Wrote the video support for Li
 GStreamer and the Faster Than Light (FTL) Streaming Protocol. Francisco Velázquez (francisv), Make.tv
 </b></p>
 <p>
-This talk will ...  <!-- FIXME -->
+FTL is a streaming protocol that allows sub-second latency streaming of
+video and audio to mixer.com. FTL stands for Faster Than Light
+streaming protocol and is part of the Mixer video game live streaming
+platform owned by Microsoft. We have implemented the ftlsink
+GStreamer plugin to stream to the Mixer streaming service. The plugin is
+implemented using the SDK of Mixer and it works out-of-the-box when
+using it in GStreamer pipelines to stream H.264 video and Opus audio
+formats. Results from our evaluation show that the plugin performs as
+efficient as using the client included in the SDK.
 </p>
 <p><i>
-Bio coming soon. <!-- FIXME -->
+Francisco Velázquez works as Video Engineer for Make.TV. He started to
+get involved in the GStreamer community in 2015 while researching
+state-of-the-art multimedia frameworks as part of his PhD. He obtained
+his PhD from the University of Oslo in 2019, where GStreamer is the
+research base for the implementation of autonomous self-adaptive
+multimedia processing in ubiquitous computing environments.
 </i></p>
 </td></tr>
 
@@ -790,7 +803,7 @@ to support a multiple stream (audio/video) MPD generator, dashsink.
 <p><i>
 Stéphane Cerveau is a Senior Software Engineer who joined Collabora 6 months
 ago, bringing with him 15 years of experience in the multimedia embedded
-ecosystem including TV/STB/GStreamer/HBBTV/DLNA.
+ecosystem including STB, HBBTV, DLNA and of course GStreamer.
 </i></p>
 </td></tr>
 
