@@ -53,7 +53,7 @@ GStreamer Bug Extermination Techniques. Vivia Nikolaidou (vivia), Make.tv
 This talk will show how to debug common issues in GStreamer. It will explain the first steps in debugging some issues that tend to appear frequently when using GStreamer, such as deadlocks, races, memory corruptions, memory leaks, negotiation failures, pipelines getting stuck because of inadequate queuing, etc.
 </p>
 <p><i>
-Bio coming soon. <!-- FIXME -->
+Paraskevi Nikolaidou (also known as Vivia) is currently working as a GStreamer developer. She has been active in the Open Source community and has participated in various Free and Open Source projects since 2004 when she joined the Agent Academy project. Vivia obtained her PhD in Electrical and Computer Engineering from the Aristotle University of Thessaloniki in 2011, where she worked on multi-agent systems as well as data mining methods in supply chain management. Her open source contributions range from SCCORI Agent which was part of her PhD studies, to her contributions to the GStreamer multimedia framework, passing by her involvement with the aMSN project during her spare time. She lives in Thessaloniki, Greece, where she is currently employed remotely at Make.TV, working on their GStreamer-based platform for live video acquisition and management on the cloud. She likes ducks, green tea, learning foreign languages, and playing the flute.
 </i></p>
 </td></tr>
 
@@ -99,7 +99,11 @@ playback use cases without extensive coding. Topics covered include:
 </ul>
 </p>
 <p><i>
-Bio coming soon. <!-- FIXME -->
+Alicia Boya is a software engineer working in Spain. Starting early
+with a generalistic background, nowadays she works at Igalia as part of
+the Multimedia Team where she is dedicating most of her work to the
+MediaSource Extensions implementation of WebKit for the GStreamer-
+based ports (WPE and WebKitGTK).
 </i></p>
 </td></tr>
 
@@ -784,7 +788,9 @@ value to be supported by GStreamer and then talk about my work performed
 to support a multiple stream (audio/video) MPD generator, dashsink.
 </p>
 <p><i>
-Bio coming soon. <!-- FIXME -->
+Stéphane Cerveau is a Senior Software Engineer who joined Collabora 6 months
+ago, bringing with him 15 years of experience in the multimedia embedded
+ecosystem including TV/STB/GStreamer/HBBTV/DLNA.
 </i></p>
 </td></tr>
 
