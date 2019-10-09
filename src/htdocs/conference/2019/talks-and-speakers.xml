@@ -399,10 +399,20 @@ We will explain how you can customize and extend it to your needs to automate
 the lifecycle of a project: from an SDK to a desktop application.
 </p>
 <p><i>
-Bio coming soon. <!-- FIXME -->
+Andoni is a telecommunications engineer with experience in Open Source and
+commercial projects around multimedia technologies and cross-platform
+applications. Andoni founded LongoMatch, a multi-platform video analysis
+software for sports based on GStreamer and has been a GStreamer contributor
+since 2009.
 </i></p>
 <p><i>
-Bio coming soon. <!-- FIXME -->
+Pablo Marcos is a Telecommunications Engineer who has developed mainly in
+C and C++. From mobile networks to Linux kernel drivers, passing through
+cross-platform desktop applications. He is passionate about Open Source and
+video game development and enjoys sane and fast build systems that help
+decrease iteration times to the bare minimum. Advocates to design simple
+solutions and enjoys scratching his head to squeeze all the performance he
+can. He believes Rust is the future of systems programming and supports it.
 </i></p>
 </td></tr>
 
