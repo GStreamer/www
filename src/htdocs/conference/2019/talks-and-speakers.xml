@@ -569,17 +569,42 @@ Guillaume has been working for more than 10 years at Collabora and been involved
 GStreamer Video Analytics: Optimizing inference across HW targets. Neelay Shah, Neena Maldikar, Mikhail Nikolsky &amp; Ilya Belyakov, Intel
 </b></p>
 <p>
-Intel has recently open sourced a set of video analytics plugins based on the
-OpenVINO inference engine. These plugins provide an easy way to add neural net
-based analytics (object detection, classification, identification, etc.) to
-GStreamer pipelines in a way that is optimized across different HW types
-(CPU, GPU, VPU, FPGA). In this talk we will describe how the plugins are
+Intel has recently open sourced a set of
+<a href="https://github.com/opencv/gst-video-analytics">video analytics plugins</a>
+based on the OpenVINO inference engine. These plugins provide an easy way to
+add neural net based analytics (object detection, classification, identification,
+etc.) to GStreamer pipelines in a way that is optimized across different HW
+types (CPU, GPU, VPU, FPGA). In this talk we will describe how the plugins are
 designed and how to use and customize them in applications. We are excited to
 demonstrate these new capabilities as well as solicit feedback from the
 community on the future roadmap.
 </p>
 <p><i>
-Bios coming soon. <!-- FIXME -->
+Neelay Shah is a software architect at Intel developing video analytics
+applications using GStreamer for use cases in smart cities, retail and
+broadcasting. Graduating from the University of Illinois at Urbana Champaign
+in 2006 with a master’s degree in computer science, he has worked at Intel
+for over 10 years on various projects including UPnP, context sensing and
+most recently visual computing.
+</i></p>
+<p><i>
+Neena Maldikar is the product owner for GStreamer Video Analytics. She has a
+master’s degree in Computer Science from Portland State University. She has
+been working at Intel for the past 6 years. Before joining the Video Analytics
+team, she worked on bringing contextual awareness to PC platforms through new
+libraries, applications and the integration of new sensors.
+</i></p>
+<p><i>
+Mikhail Nikolskii is the lead architect and developer of GStreamer Video
+Analytics. He has worked at Intel for over 15 years on various Intel software
+products. Mikhail has a master’s degree in Computer Science from Moscow State
+University</i></p>
+<p><i>
+Ilya Belyakov is the engineering manager for GStreamer Video Analytics. He
+graduated from the State University of Nizhni Novgorod with a degree in computer
+science. He has worked at Intel for the past 7 years on various technologies
+including Intel(R) RealSense(TM) and advanced labeling tools to train autonomous
+driving algorithms.
 </i></p>
 </td></tr>
 
