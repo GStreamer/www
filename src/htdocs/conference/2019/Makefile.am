@@ -7,9 +7,8 @@ images = lyon_banner_800.jpg \
 	sponsor_ubicast_640x195.png \
 	sponsor_fluendo_320x74.png \
 	sponsor_centricular_753x125.png \
-	sponsor_zeiss.png
-#	sponsor_facebook_960x263.png
-#	sponsor_google_538x190.png
+	sponsor_zeiss.png \
+	sponsor_facebook_960x263.png
 
 documents = gstreamer-conference-sponsor-brief-2019.pdf
 

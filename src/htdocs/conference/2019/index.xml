@@ -538,10 +538,10 @@ li {
   <p>
     <i>2018-September-19</i>: Reminder that there will also be a hackfest/hackathon on Saturday/Sunday 27-28 October 2018, just after the conference, but at another venue as the conference, namely CodeBase.
   </p>
-  <p>
-    <i>2018-September-10</i>: We're chuffed to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference again at Gold level this year.
-  </p>
 -->
+  <p>
+    <i>2019-October-09</i>: We're pleased to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference at Silver level this year.
+  </p>
   <p>
     <i>2019-October-06</i>: The GStreamer project welcomes back <a href="https://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
   </p>
@@ -628,20 +628,18 @@ li {
     <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
   </p>
 
-<!--
-  <p style="padding:10px 0px">
-    <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
-  </p>
--->
-
   <br />
 
   <h2>Silver Sponsors</h2>
 
   <p style="padding:0px 0px">
     <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
-
   </p>
+
+  <p style="padding:10px 0px">
+    <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
+  </p>
+
   <br />
 
   <h2>Special Media Partner</h2>
