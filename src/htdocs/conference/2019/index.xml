@@ -83,12 +83,10 @@ li {
   folder.
   </p>
 -->
-<!--
   <h2>Schedule</h2>
   <p>
   <a href="schedule.html">Click here for the conference schedule</a>.
   </p>
--->
   <h2>Details</h2>
   <p>
   The GStreamer Conference is a conference for developers, community members,
@@ -148,7 +146,7 @@ li {
 
   <h2>Schedule and speakers list</h2>
   <p>
-    <a href="schedule.html">Click here for the outline schedule</a>. A detailed schedule will be made available soon.
+    <a href="schedule.html">Click here for the conference schedule</a>.
   </p>
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
@@ -519,9 +517,6 @@ li {
     Food and drinks will be available for purchase, and credit cards should be accepted.
   </p>
   <p>
-    <i>2018-October-22</i>: the <a href="&site;/conference/2018/schedule.html">full conference schedule</a> is now available as well
-  </p>
-  <p>
     <i>2018-October-04</i>: There will be a social event again on Thursday
     evening from ca. 19.30h onwards at <a href="http://www.lebowskis.co.uk/edinburgh/our-location.php"><b>Lebowskis Bar</b></a>
     at 18 Morrisson Street. Food and drinks will be provided (thanks to our sponsors!),
@@ -531,6 +526,9 @@ li {
     <i>2018-September-19</i>: Reminder that there will also be a hackfest/hackathon on Saturday/Sunday 27-28 October 2018, just after the conference, but at another venue as the conference, namely CodeBase.
   </p>
 -->
+  <p>
+    <i>2019-October-13</i>: the <a href="schedule.html">full conference schedule</a> is now available as well
+  </p>
   <p>
     <i>2019-October-10</i>: An indicative <a href="schedule.html">outline schedule</a> has been added. The detailed schedule will be made available soon.
   </p>
