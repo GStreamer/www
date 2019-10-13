@@ -532,10 +532,12 @@ is currently working on PipeWire.
 GStreamer and Multi-project Continuous Integration Pipelines. Jordan Petridis (alatiera), Centricular
 </b></p>
 <p>
-This talk will ...  <!-- FIXME -->
+High level overview of the new Gitlab CI setup for GStreamer, the contribution
+workflow and how to keep your CI pipelines green.
 </p>
 <p><i>
-Bio coming soon. <!-- FIXME -->
+Jordan is a QA and Multimedia engineer at Centricular, part of the GNOME
+release team and can't stop talking about Rust and Flatpak.
 </i></p>
 </td></tr>
 
@@ -652,11 +654,8 @@ known as Windows Runtime, which deprecates almost all Win32 API.
 </p>
 <p><i>
 Nirbheek Chauhan writes software and hacks on GStreamer for a living and for
-fun. In recent times and despite his best efforts, he accidentally became a
-build system expert and continues to contribute to the Meson build system as
-a core contributor. When not fixing broken builds, he works on interesting
-WebRTC applications using GStreamer and complains about how slow Rust adoption
-is.
+fun. His other software-side inclinations include GNOME, the Meson build system,
+and diversification (go say hi and ask him what he means by that!)
 </i></p>
 </td></tr>
 
