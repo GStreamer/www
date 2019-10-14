@@ -54,7 +54,9 @@ well as `rgbd` caps interface and our proprietary depth compression - developed
 using the GStreamer Rust bindings.
 </p>
 <p><i>
-Bio coming soon. <!-- FIXME -->
+Raphael is tech lead for Aivero, where he and his colleagues are building
+services for scaling depth video in industrial robotics applications. He is a
+fan of GStreamer on Rust and the conan package manager.
 </i></p>
 </td></tr>
 
