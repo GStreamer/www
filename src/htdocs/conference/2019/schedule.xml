@@ -540,7 +540,7 @@
 	</tr>
 	<tr valign="top" bgcolor="#b0c4de">
 		<td width="5%"><p></p></td>
-		<td width="90%" colspan="2"><p align="center">Hackfest venue (to be determined)</p></td>
+		<td width="90%" colspan="2"><p align="center"><b>Hackfest venue: Epitech</b></p></td>
 		<td width="5%"><p></p></td>
 	</tr>
 
@@ -551,7 +551,11 @@
                   Informal get-together of GStreamer developers, contributors and community members.
                   Work on whatever you like. Discuss things with people. Drink coffee.
                 </small>
-                </p></td>
+                </p>
+  <p align="center">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11137.387516086112!2d4.835078459961906!3d45.744191403831636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea653d095dab%3A0x28b80942c48a228c!2sEPITECH!5e0!3m2!1sen!2suk!4v1571233093302!5m2!1sen!2suk" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="1"></iframe>
+  </p>
+</td>
 		<td><p>10.00-<br />18.00</p></td>
 	</tr>
 </table>

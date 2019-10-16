@@ -358,16 +358,23 @@ li {
   <h2>GStreamer hackfest</h2>
   <p>
     There will be a hackfest just after the conference, on Saturday and Sunday
-    2-3 November 2019. Venue to be confirmed at a later time.
+    2-3 November 2019. The hackfest will take place at Epitech, Lyon.
   </p>
-<!--
   <p>
-    Please add yourself to the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2017">wiki page</a>
-    if you plan on attending the hackfest, so we have an idea of the number of
+    Please add yourself to the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2019">wiki page</a>
+    if you plan on attending the hackfest, so we have a rough idea of the number of
     people to expect. Mail Tim or Sebastian or pop onto the #gstreamer IRC channel if you
     don't have editing permissions for the wiki.
   </p>
--->
+  <p>
+    Everyone is welcome to attend, whether you added yourself to the list or
+    not, so if you're around just pop in and say hello.
+  </p>
+  <p>
+    GStreamer hackfests are fairly informal, people mostly just sit around,
+    drink coffee, discuss things, ask questions, and hack on whatever they
+    feel like.
+  </p>
 
   <h2>Sponsorship Opportunities</h2>
   <p>
@@ -524,10 +531,10 @@ li {
     at 18 Morrisson Street. Food and drinks will be provided (thanks to our sponsors!),
     including vegetarian options. Make sure to bring your conference badge.
   </p>
-  <p>
-    <i>2018-September-19</i>: Reminder that there will also be a hackfest/hackathon on Saturday/Sunday 27-28 October 2018, just after the conference, but at another venue as the conference, namely CodeBase.
-  </p>
 -->
+  <p>
+    <i>2019-October-16</i>: Reminder that there will also be a hackfest/hackathon on Saturday/Sunday 2-3 November 2019, just after the conference, but at another venue as the conference, namely <a href="https://goo.gl/maps/R2Jyofi2fdq6xErg9">Epitech</a>.
+  </p>
   <p>
     <i>2019-October-13</i>: the <a href="schedule.html">full conference schedule</a> is now available as well
   </p>
