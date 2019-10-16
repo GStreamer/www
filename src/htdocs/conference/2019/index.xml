@@ -205,8 +205,8 @@ li {
     <li>GNOME Radio <small><br /><i>Ole Aamot, GNOME</i></small></li>
     <li>SCTE-35 support in GStreamer <small><br /><i>Edward Hervey, Centricular</i></small></li>
     <li>Closed captions, AFD, BAR <small><br /><i>Aaron Boxer, Collabora</i></small></li>
-    <li><b>Applying a new streaming protocol to an old version of GStreamer</b> <br /><i>서희경님 Heekyoung (Lina) Seo, SK Telekom</i></li>
-    <li><b>Embracing CI for GStreamer codec acceleration on Intel platform</b> <br /><i>Haihao Xiang, Intel</i></li>
+    <li>Applying a new streaming protocol to an old version of GStreamer <small><br /><i>서희경님 Heekyoung (Lina) Seo, SK Telekom</i></small></li>
+    <li>Embracing CI for GStreamer codec acceleration on Intel platform <small><br /><i>Haihao Xiang, Intel</i></small></li>
     <li>...and more to come</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
