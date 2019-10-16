@@ -459,6 +459,8 @@ of different issues. We have the following talks scheduled so far
     <li><b>GNOME Radio</b> <br /><i>Ole Aamot, GNOME</i></li>
     <li><b>SCTE-35 support in GStreamer</b> <br /><i>Edward Hervey, Centricular</i></li>
     <li><b>Closed captions, AFD, BAR</b> <br /><i>Aaron Boxer, Collabora</i></li>
+    <li><b>Applying a new streaming protocol to an old version of GStreamer</b> <br /><i>서희경님 Heekyoung (Lina) Seo, SK Telekom</i></li>
+    <li><b>Embracing CI for GStreamer codec acceleration on Intel platform</b> <br /><i>Haihao Xiang, Intel</i></li>
     <li>...and more to come</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
