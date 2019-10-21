@@ -460,7 +460,7 @@
 		<p><a href="talks-and-speakers.html#google-twcc">Google Transport-wide Congestion Control</a><br /><i>Håvard Graff, Pexip</i></p>
 		</td>
 		<td>
-		<p><a href="talks-and-speakers.html#avb-support">Audio/Video Bridging (AVB) support on GStreamer</a><br /><i>Andre Guedes &amp; Ederson Desouza, Intel</i></p>
+		<p><a href="talks-and-speakers.html#avb-support">Audio/Video Bridging (AVB) support in GStreamer</a><br /><i>Andre Guedes, Intel</i></p>
 		</td>
 		<td><p>15.40-<br />16.20</p></td>
 	</tr>

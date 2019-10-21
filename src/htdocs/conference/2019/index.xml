@@ -171,7 +171,7 @@ li {
     <li><a href="talks-and-speakers.html#cerbero-products">Extending Cerbero to Build and Package Products based on GStreamer</a><br /><small><i>Pablo Marcos &amp; Andoni Morales, Fluendo</i></small></li>
     <li><a href="talks-and-speakers.html#rtp-jitterbuffer-timers">Revisiting RTP Jitter Buffer Timers</a><br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
     <li><a href="talks-and-speakers.html#instant-rate-change">Changing Playback Rate Instantly</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#avb-support">Audio/Video Bridging (AVB) support on GStreamer</a><br /><small><i>Andre Guedes &amp; Ederson Desouza, Intel</i></small></li>
+    <li><a href="talks-and-speakers.html#avb-support">Audio/Video Bridging (AVB) support in GStreamer</a><br /><small><i>Andre Guedes, Intel</i></small></li>
     <li><a href="talks-and-speakers.html#ftl-streaming-protocol">GStreamer and the Faster Than Light (FTL) Streaming Protocol</a><br /><small><i>Francisco Velázquez, Make.tv</i></small></li>
     <li><a href="talks-and-speakers.html#twenty-years-of-gstreamer">20 Years of GStreamer</a><br /><small><i>Wim Taymans</i></small></li>
     <li><a href="talks-and-speakers.html#multi-project-ci-pipelines">GStreamer and Multi-project Continuous Integration Pipelines</a><br /><small><i>Jordan Petridis, Centricular</i></small></li>

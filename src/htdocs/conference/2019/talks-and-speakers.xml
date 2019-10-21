@@ -803,7 +803,7 @@ and he will try to spring GstHarness on you at any given opportunity.
 <tr valign="top"><td>
 <a name="avb-support" id="avb-support"></a>
 <p><b>
-Audio/Video Bridging (AVB) support on GStreamer. Andre Guedes &amp; Ederson Desouza, Intel
+Audio/Video Bridging (AVB) support in GStreamer. Andre Guedes, Intel
 </b></p>
 <p>
 Audio/Video Bridging (AVB) is a set of IEEE technologies that enable time-sensitive Audio/Video applications on top of Local Area Networks (LANs). AVB provides time synchronization, bounded transmission latency and application interoperability. These features can actually be leveraged by non-AV systems so IEEE rebranded AVB as Time-Sensitive Networking (TSN).
@@ -813,9 +813,6 @@ For the past few years, several TSN building-blocks have been developed in Linux
 </p>
 <p><i>
 Andre Guedes is a software engineer at Intel. He has been working on multiple kernel and user-space features in order to enable TSN in Linux upstream ecosystem. Andre is the author of the GStreamer AVTP plugin.
-</i></p>
-<p><i>
-Ederson de Souza is a software engineer at Intel. Wrote the video support for Libavtp and GStreamer AVTP plugin.
 </i></p>
 </td></tr>
 
