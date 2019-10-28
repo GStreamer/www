@@ -462,6 +462,7 @@ of different issues. We have the following talks scheduled so far
     <li><b>Applying a new streaming protocol to an old version of GStreamer</b> <br /><i>서희경님 Heekyoung (Lina) Seo, SK Telekom</i></li>
     <li><b>Embracing CI for GStreamer codec acceleration on Intel platform</b> <br /><i>Haihao Xiang, Intel</i></li>
     <li><b>More Windows supports, Direct3D11, DXVA2, and Media Foundation with GStreamer</b> <br /><i>양승하 Seung Ha Yang, Naver Corp</i></li>
+    <li><b>Utilizing the Conan package manager for development and deployment</b> <br /><i>Niclas Moeslund Overby, Aivero</i></li>
     <li>...and more to come</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
