@@ -461,6 +461,7 @@ of different issues. We have the following talks scheduled so far
     <li><b>Closed captions, AFD, BAR</b> <br /><i>Aaron Boxer, Collabora</i></li>
     <li><b>Applying a new streaming protocol to an old version of GStreamer</b> <br /><i>서희경님 Heekyoung (Lina) Seo, SK Telekom</i></li>
     <li><b>Embracing CI for GStreamer codec acceleration on Intel platform</b> <br /><i>Haihao Xiang, Intel</i></li>
+    <li><b>More Windows supports, Direct3D11, DXVA2, and Media Foundation with GStreamer</b> <br /><i>양승하 Seung Ha Yang, Naver Corp</i></li>
     <li>...and more to come</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
@@ -768,7 +769,7 @@ spread the open source habits.
 <tr valign="top"><td>
 <a name="dashsink" id="dashsink"></a>
 <p><b>
-Dashsink plugin to complete the GStreamer offering. Stéphane Cerveau, Collabora
+Dashsink plugin to complete the GStreamer offering. Stéphane Cerveau (dabrain34), Collabora
 </b></p>
 <p>
 In this talk, I'd like to introduce first to DASH technology and its
