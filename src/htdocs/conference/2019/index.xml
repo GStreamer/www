@@ -209,6 +209,7 @@ li {
     <li>Embracing CI for GStreamer codec acceleration on Intel platform <small><br /><i>Haihao Xiang, Intel</i></small></li>
     <li>More Windows supports, Direct3D11, DXVA2, and Media Foundation with GStreamer <small><br /><i>양승하 Seung Ha Yang, Naver Corp</i></small></li>
     <li>Utilizing the Conan package manager for development and deployment <small><br /><i>Niclas Moeslund Overby, Aivero</i></small></li>
+    <li>GStreamer on the Magic Leap One <small><br /><i>Olivier Crête, Collabora</i></small></li>
     <li>...and more to come</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
