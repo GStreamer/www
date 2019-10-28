@@ -8,7 +8,7 @@ built_pages = gstreamer010.html index.html
 all-local:	releases.rss10.xml releases.rss20.xml releases.ics
 
 index.html: releases.html index.xml $(fullstyle) $(entities) $(page_style) $(pics)
-	xsltproc $(srcdir)/index.xml -o $@ --path "$(builddir)"
+	xsltproc @XSLTPROC_ARGS@ $(srcdir)/index.xml -o $@ --path "$(builddir)"
 
 releases.html: releases.md
 	markdown $(srcdir)/releases.md > $(builddir)/releases.html

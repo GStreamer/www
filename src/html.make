@@ -38,7 +38,7 @@ $(entities):
 #       rule, since it's a pattern-dependant variable
 #
 %.html: %.xml $($*_sources) $(fullstyle) $(entities) $(page_style)
-	xsltproc $(fullsources) -o $@
+	xsltproc @XSLTPROC_ARGS@ $(fullsources) -o $@
 
 %.html-debug: 
 	echo xml: $@

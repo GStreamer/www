@@ -5,7 +5,7 @@ modules_xsl = bindings.xsl
 modules_pages = csharp.html python.html perl.html index.html
 
 $(modules_pages): $(xml) $(modules_xsl) $(top_srcdir)/htdocs/page.xsl
-	xsltproc $(srcdir)/$(modules_xsl) $(srcdir)/$(xml)
+	xsltproc @XSLTPROC_ARGS@ $(srcdir)/$(modules_xsl) $(srcdir)/$(xml)
 
 built_pages = $(modules_pages)
 

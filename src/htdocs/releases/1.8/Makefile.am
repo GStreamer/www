@@ -4,7 +4,7 @@ pics =
 
 index.html: release-notes-1.8.html index.xml $(fullstyle) $(entities) $(page_style) $(pics)
 	for pic in $(pics); do cp $(srcdir)/$$pic $(builddir)/$$pic; done
-	xsltproc $(srcdir)/index.xml -o $@ --path "$(builddir)"
+	xsltproc @XSLTPROC_ARGS@ $(srcdir)/index.xml -o $@ --path "$(builddir)"
 
 release-notes-1.8.html: release-notes-1.8.md
 	markdown $(srcdir)/release-notes-1.8.md > $(builddir)/release-notes-1.8.html

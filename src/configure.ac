@@ -2,6 +2,8 @@ dnl on commits of this file autogen.sh will be rerun online
 AC_INIT([gstreamer-www], [0.0])
 AM_INIT_AUTOMAKE
 
+AC_SUBST(XSLTPROC_ARGS, [-nonet])
+
 AC_CONFIG_FILES([
 Makefile
 htdocs/Makefile
