@@ -203,26 +203,27 @@ li {
 
   <p>
     <b>Lightning Talks:</b>
-    <small> (submitted so far)</small>
     <ul>
-    <li>Raising the Importance of the V4L2 plugin and Challenges <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li>WebKit-powered HTML overlays in your pipeline with GstWPE <small><br /><i>Philippe Normand, Igalia</i></small></li>
-    <li>Detect a metal can using GStreamer/OpenFoodFacts <small><br /><i>Stéphane Cerveau, Collabora</i></small></li>
-    <li>A new GStreamer RTSP Server <small><br /><i>Sebastian Dröge, Centricular</i></small></li>
-    <li>A brand new documentation infrastructure for the GStreamer framework <small><br /><i>Thibault Saunier, Igalia</i></small></li>
-    <li>GStreamer on Windows: Everything New <small><br /><i>Nirbheek Chauhan, Centricular</i></small></li>
-    <li>An Improved Latency Tracer <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li>Using Bots to Improve the Gitlab Workflow <small><br /><i>Jordan Petridis, Centricular</i></small></li>
-    <li>GNOME Radio <small><br /><i>Ole Aamot, GNOME</i></small></li>
-    <li>SCTE-35 support in GStreamer <small><br /><i>Edward Hervey, Centricular</i></small></li>
-    <li>Closed captions, AFD, BAR <small><br /><i>Aaron Boxer, Collabora</i></small></li>
-    <li>Applying a new streaming protocol to an old version of GStreamer <small><br /><i>서희경님 Heekyoung (Lina) Seo, SK Telekom</i></small></li>
-    <li>Embracing CI for GStreamer codec acceleration on Intel platform <small><br /><i>Haihao Xiang, Intel</i></small></li>
-    <li>More Windows supports, Direct3D11, DXVA2, and Media Foundation with GStreamer <small><br /><i>양승하 Seung Ha Yang, Naver Corp</i></small></li>
-    <li>Utilizing the Conan package manager for development and deployment <small><br /><i>Niclas Moeslund Overby, Aivero</i></small></li>
-    <li>GStreamer on the Magic Leap One <small><br /><i>Olivier Crête, Collabora</i></small></li>
+    <li>Raising the Importance of the V4L2 plugin and Challenges <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=361">(video)</a> <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>WebKit-powered HTML overlays in your pipeline with GstWPE <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=521">(video)</a> <small><br /><i>Philippe Normand, Igalia</i></small></li>
+    <li>Detect a metal can using GStreamer/OpenFoodFacts <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=791">(video)</a> <small><br /><i>Stéphane Cerveau, Collabora</i></small></li>
+    <li>A new GStreamer RTSP Server  <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=1121">(video)</a><small><br /><i>Sebastian Dröge, Centricular</i></small></li>
+    <li>A brand new documentation infrastructure for the GStreamer framework <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=1352">(video)</a> <small><br /><i>Thibault Saunier, Igalia</i></small></li>
+    <li>GStreamer on Windows: Everything New <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=1602">(video)</a> <small><br /><i>Nirbheek Chauhan, Centricular</i></small></li>
+    <li>An Improved Latency Tracer <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=1922">(video)</a> <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+<!--    <li>Using Bots to Improve the Gitlab Workflow <small><br /><i>Jordan Petridis, Centricular</i></small></li> -->
+<!--    <li>GNOME Radio <small><br /><i>Ole Aamot, GNOME</i></small></li> -->
+    <li>SCTE-35 support in GStreamer <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=2237">(video)</a> <small><br /><i>Edward Hervey, Centricular</i></small></li>
+    <li>Closed captions, AFD, BAR <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=2513">(video)</a> <small><br /><i>Aaron Boxer, Collabora</i></small></li>
+    <li>Applying a new streaming protocol to an old version of GStreamer <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=2815">(video)</a> <small><br /><i>서희경님 Heekyoung (Lina) Seo, SK Telekom</i></small></li>
+    <li>Embracing CI for GStreamer codec acceleration on Intel platform <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=3091">(video)</a> <small><br /><i>Haihao Xiang, Intel</i></small></li>
+    <li>More Windows supports, Direct3D11, DXVA2, and Media Foundation with GStreamer <a href="https://gstconf.ubicast.tv/videos/lightning-talks_93212/">(video)</a> <small><br /><i>양승하 Seung Ha Yang, Naver Corp</i></small></li>
+    <li>Utilizing the Conan package manager for development and deployment <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=3408">(video)</a> <small><br /><i>Niclas Moeslund Overby, Aivero</i></small></li>
+    <li>GStreamer on the Magic Leap One <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=3665">(video)</a> <small><br /><i>Olivier Crête, Collabora</i></small></li>
+<!--
     <li>...and more to come</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
+-->
     </ul>
   </p>
   <h2>Showcase or Lightning Talks</h2>
@@ -516,6 +517,9 @@ li {
   </p>
 
   <h2>Conference News and Updates</h2>
+  <p>
+    <i>2019-November-04</i>: Videos are now available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2019">https://gstconf.ubicast.tv/channels/#gstreamer-conference-2019</a> thanks to UbiCast!
+  </p>
   <p>
     <i>2019-October-30</i>: There will again be an informal pre-conference meet-up social event on the evening before the conference.
     Come to <a href="https://goo.gl/maps/4yVBD8Hj79AbzQVC9"><b>Ninkasi Guillotière</b></a> (2 Place Antonin Jutard, 69003 Lyon) on Wednesday 30 October 2019 from 19.00h onwards and say hi!
