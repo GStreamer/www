@@ -63,13 +63,18 @@ li {
   <br/>
 
   <p>
-  The <b>10<sup><small>th</small></sup> GStreamer Conference</b> will take place
+  The <b>10<sup><small>th</small></sup> GStreamer Conference</b> took place
   on Thursday and Friday <b>31 October - 1 November 2019</b> at L'Embarcadère
   in <b>Lyon, France</b>.
   </p>
   <p>
-  This is just after the <a href="https://events.linuxfoundation.org/events/embedded-linux-conference-europe-2019/">Embedded Linux Conference Europe (ELCE)</a>,
+  This was just after the <a href="https://events.linuxfoundation.org/events/embedded-linux-conference-europe-2019/">Embedded Linux Conference Europe (ELCE)</a>,
   but not officially co-hosted with it and at a different venue in Lyon.
+  </p>
+
+  <p>
+  <b>This years conference is over, but all the talks can be viewed online at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2019">
+  gstconf.ubicast.tv</a> thanks to our recording partner <a href="https://www.ubicast.tv">Ubicast</a>.</b>
   </p>
 
 <!--
@@ -110,6 +115,10 @@ li {
 
   <h2>Registration</h2>
   <p>
+  Registration is now closed.
+  </p>
+<!--
+  <p>
   Registration is now open and will stay open until the conference.
   </p>
   <p>
@@ -143,6 +152,7 @@ li {
   <p>
   <b><a href="https://ti.to/gstreamer-conference-tickets/gstreamer-conference-2019">Sign up for the GStreamer Conference here</a></b>
   </p>
+-->
 
   <h2>Schedule and speakers list</h2>
   <p>
@@ -151,42 +161,43 @@ li {
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
     <ul>
-    <li><a href="talks-and-speakers.html#gst-transcoder">GstTranscoder: A High Level API to Quickly Implement Transcoding Capabilities in your Applications</a><br /><small><i>Thibault Saunier, Igalia</i></small></li>
-    <li><a href="talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#dashsink">Dashsink plugin to complete the GStreamer offering</a><br /><small><i>Stéphane Cerveau, Collabora</i></small></li>
-    <li><a href="talks-and-speakers.html#bug-extermination-techniques">GStreamer Bug Extermination Techniques</a><br /><small><i>Vivia Nikolaidou, Make.tv</i></small></li>
-    <li><a href="talks-and-speakers.html#gstreamer-and-rust">GStreamer &amp; Rust: An Update</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#validate-flow">Introduction to Validateflow</a><br /><small><i>Alicia Boya García, Igalia</i></small></li>
-    <li><a href="talks-and-speakers.html#hardware-enablement-story">Enabling a Different Piece of Hardware, a Story</a><br /><small><i>Guillaume Desmottes, Collabora</i></small></li>
-    <li><a href="talks-and-speakers.html#hdr">HDR: Seeing the World As It Is</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#jpeg2000">The Rise and Fall and Rise of JPEG2000</a><br /><small><i>Aaron Boxer, Collabora</i></small></li>
-    <li><a href="talks-and-speakers.html#home-automation">Home Automation with GStreamer</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#video-editing-professional-use-cases">Video Editing: Targeting Professional Post Production Use cases</a><br /><small><i>Thibault Saunier, Igalia</i></small></li>
-    <li><a href="talks-and-speakers.html#vr-tracking-openhmd">Room Scale VR Tracking with OpenHMD</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#libcamera">The First Stable libcamera Release: A Call for Public API Review</a><br /><small><i>Jacopo Mondi &amp; Laurent Pinchart</i></small></li>
-    <li><a href="talks-and-speakers.html#pipewire-update">PipeWire</a><br /><small><i>Wim Taymans, RedHat</i></small></li>
-    <li><a href="talks-and-speakers.html#pulseaudio-compress-offload">GStreamer, PulseAudio and Compress Offload</a><br /><small><i>Arun Raghavan, nilenso systems</i></small></li>
-    <li><a href="talks-and-speakers.html#onvif-trickmodes">Implementing a Trickmode Player with ONVIF, RTSP and GStreamer</a><br /><small><i>Mathieu Duponchelle, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#crowdsourced-news">Building a Crowdsourced News Service with GStreamer</a><br /><small><i>Paul Calleja, GlobalM &amp; Mart Raudsepp, LeioTech</i></small></li>
-    <li><a href="talks-and-speakers.html#cerbero-products">Extending Cerbero to Build and Package Products based on GStreamer</a><br /><small><i>Pablo Marcos &amp; Andoni Morales, Fluendo</i></small></li>
-    <li><a href="talks-and-speakers.html#rtp-jitterbuffer-timers">Revisiting RTP Jitter Buffer Timers</a><br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li><a href="talks-and-speakers.html#instant-rate-change">Changing Playback Rate Instantly</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#avb-support">Audio/Video Bridging (AVB) support in GStreamer</a><br /><small><i>Andre Guedes, Intel</i></small></li>
-    <li><a href="talks-and-speakers.html#ftl-streaming-protocol">GStreamer and the Faster Than Light (FTL) Streaming Protocol</a><br /><small><i>Francisco Velázquez, Make.tv</i></small></li>
-    <li><a href="talks-and-speakers.html#twenty-years-of-gstreamer">20 Years of GStreamer</a><br /><small><i>Wim Taymans</i></small></li>
-    <li><a href="talks-and-speakers.html#multi-project-ci-pipelines">GStreamer and Multi-project Continuous Integration Pipelines</a><br /><small><i>Jordan Petridis, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#karapulse-karaoke">Karapulse - Writing a Karaoke Application in Rust</a><br /><small><i>Guillaume Desmottes, Collabora</i></small></li>
-    <li><a href="talks-and-speakers.html#video-analytics">GStreamer Video Analytics: Optimizing inference across HW targets</a><br /><small><i>Neelay Shah, Neena Maldikar, Mikhail Nikolsky &amp; Ilya Belyakov, Intel</i></small></li>
-    <li><a href="talks-and-speakers.html#pipewire-automotive-industry">PipeWire in the Automotive Industry</a><br /><small><i>George Kiagiadakis, Collabora</i></small></li>
-    <li><a href="talks-and-speakers.html#windows-uwp-firefox-hololens">GStreamer, Windows UWP, and Firefox on the HoloLens 2</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#3d-cameras">3D Cameras in GStreamer: RGB-D Camera Support and Depth Video Compression</a><br /><small><i>Raphael Dürscheid, Aivero</i></small></li>
-    <li><a href="talks-and-speakers.html#broadcast-compliant-mpegts">TV Broadcast compliant MPEG-TS</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
-    <li><a href="talks-and-speakers.html#srt-in-surveillance-systems">Low Latency in Video Surveillance System with SRT</a><br /><small><i>Justin Kim, SK Telekom</i></small></li>
-    <li><a href="talks-and-speakers.html#av1-codec">AV1 Overview: Codec and Ecosystem</a><br /><small><i>Luca Barbato, Luminem SRLs &amp; VideoLan</i></small></li>
-    <li><a href="talks-and-speakers.html#nvidia-hwaccel-plugin">NVCodec plugin improvements</a><br /><small><i>양승하 Seung Ha Yang, Naver Corp</i></small></li>
-    <li><a href="talks-and-speakers.html#which-streaming-proto">Which Network Streaming Protocol Should I Pick?</a><br /><small><i>Olivier Crête, Collabora</i></small></li>
-    <li><a href="talks-and-speakers.html#google-twcc">Google Transport-wide Congestion Control</a><br /><small><i>Håvard Graff, Pexip</i></small></li>
-    <li><a href="talks-and-speakers.html#gstreamer-vulkan">GStreamer Vulkan</a><br /><small><i>Matthew Waters, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#gst-transcoder">GstTranscoder: A High Level API to Quickly Implement Transcoding Capabilities in your Applications</a> <a href="https://gstconf.ubicast.tv/videos/gsttranscoder-a-high-level-api-to-quickly-implement-transcoding-capabilities-in-your-applications/">(video)</a><br /><small><i>Thibault Saunier, Igalia</i></small></li>
+    <li><a href="talks-and-speakers.html#state-of-the-union">GStreamer State of the Union</a> <a href="https://gstconf.ubicast.tv/videos/gstreamer-state-of-the-union_81677/">(video)</a><br /><small><i>Tim-Philipp Müller, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#dashsink">Dashsink plugin to complete the GStreamer offering</a> <a href="https://gstconf.ubicast.tv/videos/dashsink-plugin-to-complete-the-gstreamer-offering/">(video)</a><br /><small><i>Stéphane Cerveau, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#bug-extermination-techniques">GStreamer Bug Extermination Techniques</a> <a href="https://gstconf.ubicast.tv/videos/gstreamer-bug-extermination-techniques/">(video)</a><br /><small><i>Vivia Nikolaidou, Make.tv</i></small></li>
+    <li><a href="talks-and-speakers.html#gstreamer-and-rust">GStreamer &amp; Rust: An Update</a> <a href="https://gstconf.ubicast.tv/videos/gstreamer-rust-an-update/">(video)</a><br /><small><i>Sebastian Dröge, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#validate-flow">Introduction to Validateflow</a> <a href="https://gstconf.ubicast.tv/videos/introduction-to-validateflow/">(video)</a><br /><small><i>Alicia Boya García, Igalia</i></small></li>
+    <li><a href="talks-and-speakers.html#hardware-enablement-story">Enabling a Different Piece of Hardware, a Story</a> <a href="https://gstconf.ubicast.tv/videos/enabling-a-different-piece-of-hardware-a-story/">(video)</a><br /><small><i>Guillaume Desmottes, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#hdr">HDR: Seeing the World As It Is</a> <a href="https://gstconf.ubicast.tv/videos/hdr-seeing-the-world-as-it-is/">(video)</a><br /><small><i>Edward Hervey, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#jpeg2000">The Rise and Fall and Rise of JPEG2000</a> <a href="https://gstconf.ubicast.tv/videos/the-rise-and-fall-and-rise-of-jpeg2000/">(video)</a><br /><small><i>Aaron Boxer, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#home-automation">Home Automation with GStreamer</a> <a href="https://gstconf.ubicast.tv/videos/home-automation-with-gstreamer/">(video)</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#video-editing-professional-use-cases">Video Editing: Targeting Professional Post Production Use cases</a> <a href="https://gstconf.ubicast.tv/videos/video-editing-targeting-professional-post-production-use-cases/">(video)</a><br /><small><i>Thibault Saunier, Igalia</i></small></li>
+    <li><a href="talks-and-speakers.html#vr-tracking-openhmd">Room Scale VR Tracking with OpenHMD</a> <a href="https://gstconf.ubicast.tv/videos/room-scale-vr-tracking-with-openhmd/">(video)</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#libcamera">The First Stable libcamera Release: A Call for Public API Review</a> <a href="https://gstconf.ubicast.tv/videos/the-first-stable-libcamera-release-a-call-for-public-api-review/">(video)</a><br /><small><i>Jacopo Mondi &amp; Laurent Pinchart</i></small></li>
+    <li><a href="talks-and-speakers.html#pipewire-update">PipeWire</a> <a href="https://gstconf.ubicast.tv/videos/pipewire_27214/">(video)</a><br /><small><i>Wim Taymans, RedHat</i></small></li>
+    <li><a href="talks-and-speakers.html#pulseaudio-compress-offload">GStreamer, PulseAudio and Compress Offload</a> <a href="https://gstconf.ubicast.tv/videos/gstreamer-pulseaudio-and-compress-offload/">(video)</a><br /><small><i>Arun Raghavan, nilenso systems</i></small></li>
+    <li><a href="talks-and-speakers.html#onvif-trickmodes">Implementing a Trickmode Player with ONVIF, RTSP and GStreamer</a> <a href="https://gstconf.ubicast.tv/videos/implementing-a-trickmode-player-with-onvif-rtsp-and-gstreamer/">(video)</a><br /><small><i>Mathieu Duponchelle, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#crowdsourced-news">Building a Crowdsourced News Service with GStreamer</a> <a href="https://gstconf.ubicast.tv/videos/building-a-crowdsourced-news-service-with-gstreamer/">(video)</a><br /><small><i>Paul Calleja, GlobalM &amp; Mart Raudsepp, LeioTech</i></small></li>
+    <li><a href="talks-and-speakers.html#cerbero-products">Extending Cerbero to Build and Package Products based on GStreamer</a> <a href="https://gstconf.ubicast.tv/videos/extending-cerbero-to-build-and-package-products-based-on-gstreamer/">(video)</a><br /><small><i>Pablo Marcos &amp; Andoni Morales, Fluendo</i></small></li>
+    <li><a href="talks-and-speakers.html#rtp-jitterbuffer-timers">Revisiting RTP Jitter Buffer Timers</a> <a href="https://gstconf.ubicast.tv/videos/revisiting-rtp-jitter-buffer-timers/">(video)</a><br /><small><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#instant-rate-change">Changing Playback Rate Instantly</a> <a href="https://gstconf.ubicast.tv/videos/changing-playback-rate-instantly/">(video)</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#avb-support">Audio/Video Bridging (AVB) support in GStreamer</a> <a href="https://gstconf.ubicast.tv/videos/audiovideo-bridging-avb-support-in-gstreamer/">(video)</a><br /><small><i>Andre Guedes, Intel</i></small></li>
+    <li><a href="talks-and-speakers.html#ftl-streaming-protocol">GStreamer and the Faster Than Light (FTL) Streaming Protocol</a> <a href="https://gstconf.ubicast.tv/videos/gstreamer-and-the-faster-than-light-ftl-streaming-protocol/">(video)</a><br /><small><i>Francisco Velázquez, Make.tv</i></small></li>
+    <li><a href="talks-and-speakers.html#twenty-years-of-gstreamer">20 Years of GStreamer</a> <a href="https://gstconf.ubicast.tv/videos/20-years-of-gstreamer_78528/">(video)</a><br /><small><i>Wim Taymans</i></small></li>
+    <li><a href="talks-and-speakers.html#multi-project-ci-pipelines">GStreamer and Multi-project Continuous Integration Pipelines</a> <a href="https://gstconf.ubicast.tv/videos/gstreamer-and-multi-project-continuous-integration-pipelines/">(video)</a><br /><small><i>Jordan Petridis, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#karapulse-karaoke">Karapulse - Writing a Karaoke Application in Rust</a> <a href="https://gstconf.ubicast.tv/videos/karapulse-writing-a-karaoke-application-in-rust/">(video)</a><br /><small><i>Guillaume Desmottes, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#video-analytics">GStreamer Video Analytics: Optimizing inference across HW targets</a> <a href="https://gstconf.ubicast.tv/videos/gstreamer-video-analytics-optimizing-inference-across-hw-targets-neelay-shah-neena-maldikar-mikhail-nikolsky-ilya-belyakov-intel/">(video)</a><br /><small><i>Neelay Shah &amp; Neena Maldikar, Intel</i></small></li>
+    <li><a href="talks-and-speakers.html#pipewire-automotive-industry">PipeWire in the Automotive Industry</a> <a href="https://gstconf.ubicast.tv/videos/pipewire-in-the-automotive-industry/">(video)</a><br /><small><i>George Kiagiadakis, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#windows-uwp-firefox-hololens">GStreamer, Windows UWP, and Firefox on the HoloLens 2</a> <a href="https://gstconf.ubicast.tv/videos/gstreamer-windows-uwp-and-firefox-on-the-hololens-2/">(video)</a><br /><small><i>Nirbheek Chauhan, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#3d-cameras">3D Cameras in GStreamer: RGB-D Camera Support and Depth Video Compression</a> <a href="https://gstconf.ubicast.tv/videos/3d-cameras-in-gstreamer-rgb-d-camera-support-and-depth-video-compression/">(video)</a><br /><small><i>Raphael Dürscheid, Aivero</i></small></li>
+    <li><a href="talks-and-speakers.html#broadcast-compliant-mpegts">TV Broadcast compliant MPEG-TS</a> <a href="https://gstconf.ubicast.tv/videos/tv-broadcast-compliant-mpeg-ts/">(video)</a><br /><small><i>Jan Schmidt, Centricular</i></small></li>
+    <li><a href="talks-and-speakers.html#srt-in-surveillance-systems">Low Latency in Video Surveillance System with SRT</a> <a href="https://gstconf.ubicast.tv/videos/low-latency-in-video-surveillance-system-with-srt/">(video)</a><br /><small><i>Justin Kim, SK Telekom</i></small></li>
+    <li><a href="talks-and-speakers.html#av1-codec">AV1 Overview: Codec and Ecosystem</a> <a href="https://gstconf.ubicast.tv/videos/av1-overview-codec-and-ecosystem/">(video)</a><br /><small><i>Luca Barbato, Luminem SRLs &amp; VideoLan</i></small></li>
+    <li><a href="talks-and-speakers.html#nvidia-hwaccel-plugin">NVCodec plugin improvements</a> <a href="https://gstconf.ubicast.tv/videos/nvcodec-plugin-improvements/">(video)</a><br /><small><i>양승하 Seung Ha Yang, Naver Corp</i></small></li>
+    <li><a href="talks-and-speakers.html#which-streaming-proto">Which Network Streaming Protocol Should I Pick?</a> <a href="https://gstconf.ubicast.tv/videos/which-network-streaming-protocol-should-i-pick/">(video)</a><br /><small><i>Olivier Crête, Collabora</i></small></li>
+    <li><a href="talks-and-speakers.html#google-twcc">Google Transport-wide Congestion Control</a> <a href="https://gstconf.ubicast.tv/videos/google-transport-wide-congestion-control/">(video)</a><br /><small><i>Håvard Graff, Pexip</i></small></li>
+    <li><a href="talks-and-speakers.html#gstreamer-vulkan">GStreamer Vulkan</a> <a href="https://gstconf.ubicast.tv/videos/gstreamer-vulkan/">(video)</a><br /><small><i>Matthew Waters, Centricular</i></small></li>
+    <li>Closing Session <a href="https://gstconf.ubicast.tv/videos/closing-session_94876/">(video)</a></li>
   </ul>
   </p>
 
