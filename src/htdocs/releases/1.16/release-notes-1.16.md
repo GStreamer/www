@@ -2,13 +2,13 @@
 
 GStreamer 1.16.0 was originally released on 19 April 2019.
 
-The latest bug-fix release in the 1.16 series is [1.16.1](#1.16.1) and was
-released on 23 September 2019.
+The latest bug-fix release in the 1.16 series is [1.16.2](#1.16.2) and was
+released on 3 December 2019.
 
 See [https://gstreamer.freedesktop.org/releases/1.16/][latest] for the latest
 version of this document.
 
-*Last updated: Sunday 22 September 2019, 21:00 UTC [(log)][gitlog]*
+*Last updated: Tuesday 03 December 2019, 08:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.16/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.16/release-notes-1.16.md
@@ -1584,6 +1584,173 @@ suggestions or helped testing. Thank you all!
 - [List of Merge Requests applied in 1.16](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.16.1)
 - [List of Issues fixed in 1.16.1](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.16.1)
 
+<a name="1.16.2"></a>
+
+### 1.16.2
+
+The second 1.16 bug-fix release (1.16.2) was released on 03 December 2019.
+
+This release only contains bugfixes and it *should* be safe to update
+from 1.16.1.
+
+#### Highlighted bugfixes in 1.16.2
+
+ - Interlaced video scaling fixes
+ - CineForm video support in AVI
+ - audioresample: avoid glitches due to rounding errors after changing rate
+ - Command line tool output printing improvements on Windows
+ - various performance improvements, memory leak fixes and security fixes
+ - VP9 decoding fixes
+ - avfvideosrc: Explicitly request video permission on macOS 10.14+
+ - wasapi: bug fixes and stability improvements
+ - webrtc-audio-processing: fix segmentation fault on 32-bit windows
+ - tsdemux: improved handling of certain discontinuities
+ - vaapi h265 decoder: wait for I-frame before trying to decode
+
+#### gstreamer
+
+ - gst-launch: Fix ugly stdout on Windows
+ - tee: Make sure to actually deactivate pads that are released
+ - bin: Drop `need-context` messages without source instead of crashing
+ - gst: Don't pass miniobjects to `GST_DEBUG_OBJECT()` and similar macros
+ - tracers: Don't leak temporary GstStructure
+
+#### gst-plugins-base
+
+ - xvimagepool: Update size, stride, and offset with allocated XvImage
+ - video-converter: Fix RGB-XYZ-RGB conversion
+ - audiorate: Update next_offset on rate change
+ - audioringbuffer: Reset reorder flag before check
+ - audio-buffer: Don't fail to map buffers with zero samples
+ - videorate: Fix `max-duplication-time` handling
+ - gl/gbm: ensure we call the resize callback before attempting to draw
+ - video-converter: Various fixes for interlaced scaling
+ - gstrtspconnection: messages_bytes not decreased
+ - check: Don't use real audio devices for tests
+ - riff: add CineForm mapping
+ - glfilters: Don't use static variables for storing per-element state
+ - glupload: Add VideoMetas and GLSyncMeta to the raw uploaded buffers
+ - streamsynchronizer: avoid pad release race during logging.
+ - gst-play: Use gst_print* to avoid broken stdout string on Windows
+
+#### gst-plugins-good
+
+ - vp9dec: Fix broken 4:4:4 8bits decoding
+ - rtpsession: add locking for clear-pt-map
+ - rtpL16depay: don't crash if data is not modulo channels*width
+ - wavparse: Fix push mode ignoring audio with a size smaller than segment buffer
+ - wavparse: Fix push mode ignoring last audio payload chunk
+ - aacparse: fix wrong offset of the channel number in adts header
+ - jpegdec: Fix incorrect logic in EOI tag detection
+ - videocrop: Also update the coordinate when in-place
+ - jpegdec: don't overwrite the last valid line
+ - vpx: Error out if enabled and no features found
+ - v4l2videodec: ensure pool exists before orphaning it
+ - v4l2videoenc: fix type conversion errors
+ - v4l2bufferpool: Queue number of allocated buffers to capture
+ - v4l2object: fix mpegversion number typo
+ - v4l2object: Work around bad TRY_FMT colorimetry implementations
+
+#### gst-plugins-bad
+
+ - avfvideosrc: Explicitly request video permission on macOS 10.14+
+ - wasapi: Various fixes and a workaround for a specific driver bug
+ - wasapi: Move to CoInitializeEx for COM initialization
+ - wasapi: Fix runtime/build warnings
+ - waylandsink: Commit the parent after creating subsurface
+ - msdkdec: fix surface leak in msdkdec_handle_frame
+ - tsmux: Fix copying of buffer region
+ - tsdemux: Handle continuity mismatch in more cases
+ - tsdemux: Always issue a DTS even when it's equal to PTS
+ - openexr: Fix build with OpenEXR 2.4 (and also OpenEXR 2.2 on Ubuntu 18.04)
+ - ccextractor: Always forward all sticky events to the caption pad
+ - pnmdec: Return early on ::finish() if we have no actual data to parse
+ - ass: avoid infinite unref loop with bad data
+ - fluidsynth: add sf3 to soundfont search path
+ - webrtcdsp/webrtcechoprobe segmentation fault on windows (1.16.0 x86)
+
+#### gst-libav
+
+ - avvidenc: Fix error propagation
+ - avdemux: Fix segmentation fault if long_name is NULL
+ - avviddec: Fix huge leak caused by circular reference
+ - avviddec: Enforce allocate new AVFrame per input frame
+ - avdec_mpeg2video (and probably more): Huge memory leak in git master
+
+#### gst-rtsp-server
+
+ - rtsp-media: Use lock in gst_rtsp_media_is_receive_only
+ - rtsp-client: RTP Info when completed_sender
+ - rtsp-client: fix location uri-format by getting uri directly from context instead
+
+#### gstreamer-vaapi
+
+ - meson build: halt configuration if no renderer API
+ - libs: decoder: h265: skip all pictures prior the first I-frame
+ - libs: window: x11: Avoid usage of deprecated API
+
+#### gst-editing-services
+
+ - Initialize debug categories before usage
+
+#### gst-build
+
+ - gst-env: Use locally built GStreamer utility programs
+
+#### Cerbero build tool and packaging changes in 1.16.2
+
+##### General
+
+ - openssl: Update to 1.1.1d
+ - Updated ffmpeg, expat, flac, freetype, croco, ogg, xml2, mpg123, openjpeg, opus, pixman, speex, tiff recipes
+ - Fix setting of git credentials in local source repos
+
+##### Windows
+
+ - webrtc-audio-processing: fix segmentation fault on 32-bit windows
+   with webrtcdsp/webrtcechoprobe elemens
+ - vpx plugin has no features when built with Visual Studio 2019
+ - libvpx: Add support for Visual Studio 2019
+ - mingw-runtime.recipe: Correctly package pkg-config in the MSI
+ - GIO doesn't load any modules on Windows with MSVC, which breaks TLS support since glib-networking's giognutls module isn't loaded
+ - Make the instructions for running Cerbero the same on all platforms
+
+##### macOS + iOS
+
+ - Add support for macOS 10.15 Catalina
+ - Updates for Xcode 11
+ - macos/ios: expose objc++ compilers in env variables
+ - srt.recipe: Fix crash in constructor on iOS
+ - osx-framework.recipe: Dynamically generate the list of libraries and ship pkg-config
+ - macos: add -mmacosx-version-min for framework
+ - gstreamer-1.0-osx-framework.recipe contains an outdated hard-coded list of libraries
+ - We need to ship pkg-config with macOS
+
+##### Linux
+
+ - Fix `filesprovider.find_shlib_regex` when a `lib_suffix` is used in the
+   cerbero config file
+
+#### Contributors to 1.16.2
+
+Adam Nilsson, Amr Mahdi, Angus Ao, Charlie Turner, Edward Hervey,
+Fabian Greffrath, Fuwei Tang, Havard Graff, Hu Qian, James Cowgill,
+Jan Alexander Steffens (heftig), Jeffy Chen, Jeremy Lempereur,
+Joakim Johansson,  Jochen Henneberg, Julien Isorce, Kevin Joly,
+Kristofer Bjorkstrom, Kyrylo Polezhaiev, Matthew Waters, Michael Olbrich,
+Muhammet Ilendemli, Nicolas Dufresne, Nirbheek Chauhan, Pablo Marcos Oltra,
+Roman Shpuntov, Ruben Gonzalez, Scott Kanowitz, Sebastian Dröge, Seungha Yang,
+Thibault Saunier,  Tim-Philipp Müller, Víctor Manuel Jáquez Leal,
+Vivia Nikolaidou,
+
+... and many others who have contributed bug reports, translations, sent
+suggestions or helped testing. Thank you all!
+
+#### List of merge requests and issues fixed in 1.16.2
+
+- [List of Merge Requests applied in 1.16](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.16.2)
+- [List of Issues fixed in 1.16.2](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.16.2)
+
 ## Known Issues
 
 - possibly breaking/incompatible changes to properties of wrapped FFmpeg
@@ -1604,9 +1771,8 @@ development version leading up to the stable 1.18 release. The development
 of 1.17/1.18 will happen in the git master branch.
 
 The plan for the 1.18 development cycle is yet to be confirmed, but it is now
-expected that feature freeze will take place shortly after the GStreamer
-conference/hackfest in early November 2019, with the first 1.18 stable release
-ready in late November or early December.
+expected that feature freeze will take place in December 2019, with the first
+1.18 stable release ready in late January or February.
 
 1.18 will be backwards-compatible to the stable 1.16, 1.14, 1.12, 1.10, 1.8,
 1.6, 1.4, 1.2 and 1.0 release series.
