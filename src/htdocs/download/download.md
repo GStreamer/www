@@ -20,11 +20,11 @@ split into runtime and development packages. For development, you will want to
 install both packages.
 
 * MinGW 64-bit
-  - [1.16.1 runtime installer](/data/pkg/windows/1.16.1/gstreamer-1.0-mingw-x86_64-1.16.1.msi)
-  - [1.16.1 development installer](/data/pkg/windows/1.16.1/gstreamer-1.0-devel-mingw-x86_64-1.16.1.msi)
+  - [1.16.2 runtime installer](/data/pkg/windows/1.16.2/gstreamer-1.0-mingw-x86_64-1.16.2.msi)
+  - [1.16.2 development installer](/data/pkg/windows/1.16.2/gstreamer-1.0-devel-mingw-x86_64-1.16.2.msi)
 * MinGW 32-bit
-  - [1.16.1 runtime installer](/data/pkg/windows/1.16.1/gstreamer-1.0-mingw-x86-1.16.1.msi)
-  - [1.16.1 development installer](/data/pkg/windows/1.16.1/gstreamer-1.0-devel-mingw-x86-1.16.1.msi)
+  - [1.16.2 runtime installer](/data/pkg/windows/1.16.2/gstreamer-1.0-mingw-x86-1.16.2.msi)
+  - [1.16.2 development installer](/data/pkg/windows/1.16.2/gstreamer-1.0-devel-mingw-x86-1.16.2.msi)
 
 Starting with the 1.16 release, MSVC 64-bit binaries are also available. If
 you're upgrading from a previous version of GStreamer and want a hassle-free
@@ -40,11 +40,11 @@ NOTE: Some of the plugins shipped with the MSVC binaries link to non-gstreamer
 libraries built with MinGW because they are built with Autotools. [See below](#toolchain-compatibility-notes)
 for what this means for your application.
 
-* MSVC 64-bit (VS 2017)
-  - [1.16.1 runtime installer](/data/pkg/windows/1.16.1/gstreamer-1.0-msvc-x86_64-1.16.1.msi)
-  - [1.16.1 development installer](/data/pkg/windows/1.16.1/gstreamer-1.0-devel-msvc-x86_64-1.16.1.msi)
+* MSVC 64-bit (VS 2019)
+  - [1.16.2 runtime installer](/data/pkg/windows/1.16.2/gstreamer-1.0-msvc-x86_64-1.16.2.msi)
+  - [1.16.2 development installer](/data/pkg/windows/1.16.2/gstreamer-1.0-devel-msvc-x86_64-1.16.2.msi)
 
-For each of the above listed targets, [a zip file with `.msm` modules](/data/pkg/windows/1.16.1/)
+For each of the above listed targets, [a zip file with `.msm` modules](/data/pkg/windows/1.16.2/)
 is available for integration into your own WiX-based app installer.
 
 [Older 1.x binary releases](/data/pkg/windows) are also available.
@@ -154,8 +154,8 @@ installers are split into runtime and development packages. For development,
 you will want to install both packages. The target SDK version is macOS 10.10.
 
 * macOS 64-bit
-  - [1.16.1 runtime installer](/data/pkg/osx/1.16.1/gstreamer-1.0-1.16.1-x86_64.pkg)
-  - [1.16.1 development installer](/data/pkg/osx/1.16.1/gstreamer-1.0-devel-1.16.1-x86_64.pkg)
+  - [1.16.2 runtime installer](/data/pkg/osx/1.16.2/gstreamer-1.0-1.16.2-x86_64.pkg)
+  - [1.16.2 development installer](/data/pkg/osx/1.16.2/gstreamer-1.0-devel-1.16.2-x86_64.pkg)
 
 GStreamer is also available on [Homebrew](https://brew.sh/), and you should be
 able to use that. However, please note that some plugins are not shipped by
@@ -170,7 +170,7 @@ the same system.
 Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
-* Android Universal [1.16.1 tarball](/data/pkg/android/1.16.1/gstreamer-1.0-android-universal-1.16.1.tar.xz)
+* Android Universal [1.16.2 tarball](/data/pkg/android/1.16.2/gstreamer-1.0-android-universal-1.16.2.tar.xz)
 
 The Android NDKs used by the stable releases are:
 
@@ -223,7 +223,7 @@ Binary releases that integrate into XCode are available in the form of a single
 "universal" package with fat library frameworks. Bitcode support is built-in
 and the target SDK version is iOS 9.0.
 
-* iOS Universal [1.16.1 framework](/data/pkg/ios/1.16.1/gstreamer-1.0-devel-1.16.1-ios-universal.pkg)
+* iOS Universal [1.16.2 framework](/data/pkg/ios/1.16.2/gstreamer-1.0-devel-1.16.2-ios-universal.pkg)
 
 [Older 1.x binary releases](/data/pkg/ios) are also available.
 
