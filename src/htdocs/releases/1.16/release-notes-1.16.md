@@ -1597,7 +1597,7 @@ from 1.16.1.
 
  - Interlaced video scaling fixes
  - CineForm video support in AVI
- - audioresample: avoid glitches due to rounding errors after changing rate
+ - audiorate: avoid glitches due to rounding errors after changing rate
  - Command line tool output printing improvements on Windows
  - various performance improvements, memory leak fixes and security fixes
  - VP9 decoding fixes
