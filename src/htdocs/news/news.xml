@@ -10727,4 +10727,48 @@ Download tarballs directly here:
         </content>
   </item>
 
+    <item>
+      <date>2019-12-18 17:00</date>
+        <title>GStreamer Rust bindings 0.15.0 release</title>
+        <content>
+<p>
+  A new version of the GStreamer Rust bindings, 0.15.0, was released.
+</p>
+<p>
+  As usual this release follows the latest <a href="https://gtk-rs.org/blog/2019/12/15/new-release.html">gtk-rs</a>
+  release, and a new version of the GStreamer plugins written in Rust was also released.
+</p>
+<p>
+  This new version features a lot of newly bound API for creating subclasses
+  of various GStreamer types: GstPreset, GstTagSetter, GstClock,
+  GstSystemClock, GstAudioSink, GstAudioSrc, GstDevice, GstDeviceProvider,
+  GstAudioDecoder and GstAudioEncoder.
+</p>
+<p>
+  In addition to that, a lot of bugfixes and further API improvements have
+  happened over the last few months that should make development of
+  GStreamer applications or plugins in Rust as convenient as possible.
+</p>
+<p>
+  A new release of the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust plugins</a> will follow in the next days.
+</p>
+<p>
+  Details can be found in the release notes for <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/blob/d26ffc2c219ca821aefbc9eababcc7ceb11ec83f/gstreamer/CHANGELOG.md#0150-2019-12-18">gstreamer-rs</a>
+  and <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs-sys/blob/0002f2e5310960c564398f7e31e3ee02f7383b0c/gstreamer-sys/CHANGELOG.md#081-2019-12-16">gstreamer-rs-sys</a>.
+</p>
+<p>
+  The code and documentation for the bindings is available on the freedesktop.org GitLab
+    <ul>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust Bindings</a> (<a href="https://slomo.pages.freedesktop.org/rustdocs/gstreamer/gstreamer/">documentation</a>)</li>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs-sys">GStreamer Rust FFI Bindings</a> (<a href="https://slomo.pages.freedesktop.org/rustdocs/gstreamer-sys/gstreamer_sys/">documentation</a>)</li>
+    </ul>
+  as well as on <a href="https://crates.io">crates.io</a>.
+</p>
+<p>
+  If you find any bugs, missing features or other issues please report them in
+  <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/issues/new">GitLab</a>.
+</p>
+        </content>
+  </item>
+
 </news>
