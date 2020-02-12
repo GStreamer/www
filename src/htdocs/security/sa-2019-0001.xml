@@ -24,7 +24,7 @@
     </reference>
     <reference>
     <title> CVE Database Entries </title>
-    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9928">CVE-2016-9445</a>  </content>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9928">CVE-2019-9928</a>  </content>
     </reference>
     <reference><title>GStreamer 1.16.0 release</title> <content><a href="https://gstreamer.freedesktop.org/releases/1.16/">Release Notes</a> 
             <a href="https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.16.0.tar.xz">GStreamer Plugins Base 1.16.0</a></content></reference>
