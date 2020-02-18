@@ -133,12 +133,11 @@
     <!-- add a contact address -->
     <tr>
       <td align="right">
-        <!--i>If there are any problems on this page, please contact thomas (at) apestaart (dot) org</i-->
         <i>
           Report <a>
             <xsl:attribute name="href">
-http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer&amp;component=www&amp;short_desc=
-<xsl:copy-of select="$title" />
+https://gitlab.freedesktop.org/gstreamer/www/issues/new?issue[title]=
+Issue%20with%20page%20%22<xsl:copy-of select="$title" />%22
             </xsl:attribute>
             a problem</a> on this page.
         </i>
