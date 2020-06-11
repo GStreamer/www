@@ -207,3 +207,4 @@ RedirectMatch 410 ^/wiki/
 
 # Other old pages
 Redirect 301 /bindings/android.html /documentation/installing/for-android-development.html
+Redirect 301 /documentation/licensing.html /documentation/frequently-asked-questions/licensing.html
