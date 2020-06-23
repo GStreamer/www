@@ -10786,7 +10786,7 @@ of the GStreamer multimedia framework.
 </p>
 <p>
 The unstable 1.17 release series is for testing and development purposes in
-the lead-up to the stable 1.16 series which is scheduled for release in a
+the lead-up to the stable 1.18 series which is scheduled for release in a
 few weeks time. Any newly-added API can still change until that point, although
 it is rare for that to happen.
 </p>
