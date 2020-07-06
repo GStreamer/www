@@ -10849,4 +10849,55 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer">Gitlab</a>.
         </content>
   </item>
 
+    <item>
+      <date>2020-07-06 114:00</date>
+        <title>GStreamer Rust bindings 0.16.0 release</title>
+        <content>
+<p>
+  A new version of the GStreamer Rust bindings, 0.16.0, was released.
+</p>
+<p>
+  As usual this release follows the latest <a href="https://gtk-rs.org/blog/2020/07/04/new-release.html">gtk-rs</a>
+  release.
+</p>
+<p>
+  This is the first version that includes optional support for new GStreamer
+  1.18 APIs. As GStreamer 1.18 was not released yet, these new APIs might
+  still change. The minimum supported version of the bindings is still
+  GStreamer 1.8 and the targetted GStreamer API version can be selected by
+  applications via feature flags.
+</p>
+<p>
+  Apart from this, new version features mostly features API cleanup and the
+  addition of a
+  few missing APIs. The focus of this release was to make usage of GStreamer
+  from Rust as convenient and complete as possible.
+</p>
+<p>
+  The new release also brings a lot of bugfixes, most of which were
+  already part of the 0.15.x bugfix releases.
+</p>
+<p>
+  A new release of the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust plugins</a> will follow in the next days.
+</p>
+<p>
+  Details can be found in the release notes for <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/-/blob/f40821ba662e6ba29ddb72915ea30ee4191da3ea/gstreamer/CHANGELOG.md#0160-2020-07-06">gstreamer-rs</a>
+  and <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs-sys/-/blob/92a1771db0bcfa8a8d17824b757432c97b9f9b32/gstreamer-sys/CHANGELOG.md#090-2020-07-05">gstreamer-rs-sys</a>.
+</p>
+<p>
+  The code and documentation for the bindings is available on the freedesktop.org GitLab
+    <ul>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust Bindings</a> (<a href="https://gstreamer.pages.freedesktop.org/gstreamer-rs/gstreamer/">documentation</a>)</li>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs-sys">GStreamer Rust FFI Bindings</a> (<a href="https://gstreamer.pages.freedesktop.org/gstreamer-rs/gstreamer_sys/">documentation</a>)</li>
+    </ul>
+  as well as on <a href="https://crates.io">crates.io</a>.
+</p>
+<p>
+  If you find any bugs, notice any missing features or other issues please
+  report them in
+  <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/issues/new">GitLab</a>.
+</p>
+        </content>
+  </item>
+
 </news>
