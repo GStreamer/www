@@ -22,28 +22,28 @@
 <!ENTITY gst-validate-stable "1.16.2">
 
 <!ENTITY gst-branch-devel "git master">
-<!ENTITY gst-version-devel "1.17.1">
-<!ENTITY gst-plugins-base-version-devel "1.17.1">
-<!ENTITY gst-plugins-good-version-devel "1.17.1">
-<!ENTITY gst-plugins-ugly-version-devel "1.17.1">
-<!ENTITY gst-plugins-bad-version-devel "1.17.1">
+<!ENTITY gst-version-devel "1.17.2">
+<!ENTITY gst-plugins-base-version-devel "1.17.2">
+<!ENTITY gst-plugins-good-version-devel "1.17.2">
+<!ENTITY gst-plugins-ugly-version-devel "1.17.2">
+<!ENTITY gst-plugins-bad-version-devel "1.17.2">
 <!ENTITY gst-plugins-gl-version-devel "git master">
-<!ENTITY gst-rtsp-server-version-devel "1.17.1">
+<!ENTITY gst-rtsp-server-version-devel "1.17.2">
 <!ENTITY gst-streaming-server-version-devel "git master">
 <!ENTITY qt-gstreamer-version-devel "N/A">
 <!ENTITY gst-android-version-devel "git master">
-<!ENTITY gst-omx-version-devel "1.17.1">
-<!ENTITY gst-vaapi-version-devel "1.17.1">
+<!ENTITY gst-omx-version-devel "1.17.2">
+<!ENTITY gst-vaapi-version-devel "1.17.2">
 
 <!ENTITY gst-validate-devel "git master">
-<!ENTITY gst-python-version-devel "1.17.1">
+<!ENTITY gst-python-version-devel "1.17.2">
 <!ENTITY gnonlin-version-devel "git master">
-<!ENTITY gst-editing-services-version-devel "1.17.1">
+<!ENTITY gst-editing-services-version-devel "1.17.2">
 
 <!ENTITY gst-ffmpeg-version-devel "git master">
-<!ENTITY gst-libav-version-devel "1.17.1">
+<!ENTITY gst-libav-version-devel "1.17.2">
 <!ENTITY gst-openmax-version-devel "git master">
-<!ENTITY gstreamer-sharp-version-devel "1.17.1">
+<!ENTITY gstreamer-sharp-version-devel "1.17.2">
 
 <!ENTITY orc-version-stable "0.4.31">
 <!ENTITY orc-version-devel "git master">
