@@ -208,3 +208,6 @@ RedirectMatch 410 ^/wiki/
 # Other old pages
 Redirect 301 /bindings/android.html /documentation/installing/for-android-development.html
 Redirect 301 /documentation/licensing.html /documentation/frequently-asked-questions/licensing.html
+Redirect 301 /documentation/rtp.html /documentation/additional/rtp.html
+Redirect 301 /documentation/splitup.html /documentation/additional/splitup.html
+RedirectMatch 301 ^/documentation/design/(.*.html)$ /documentation/additional/design/$1
