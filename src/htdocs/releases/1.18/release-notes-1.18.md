@@ -1,6 +1,6 @@
 # GStreamer 1.18 Release Notes
 
-GStreamer 1.18.0 was originally released on 7 September 2020.
+GStreamer 1.18.0 was originally released on 8 September 2020.
 
 <!--
 The latest bug-fix release in the 1.18 series is [1.18.1](#1.16.1) and was released on ... 2020.
@@ -8,7 +8,7 @@ The latest bug-fix release in the 1.18 series is [1.18.1](#1.16.1) and was relea
 
 See [https://gstreamer.freedesktop.org/releases/1.18/][latest] for the latest version of this document.
 
-*Last updated: Monday 7 September 2020, 10:30 UTC [(log)][gitlog]*
+*Last updated: Monday 7 September 2020, 23:30 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.18/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/master/src/htdocs/releases/1.18/release-notes-1.18.md
@@ -1308,7 +1308,7 @@ which will be a stable branch.
 
 ### 1.18.0
 
-1.18.0 was released on 7 September 2020.
+1.18.0 was released on 8 September 2020.
 
 ## Schedule for 1.20
 

@@ -11062,4 +11062,105 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer">Gitlab</a>.
         </content>
   </item>
 
+    <item>
+      <date>2020-09-08 00:30</date>
+        <title>GStreamer 1.18.0 new major stable release</title>
+        <content>
+<p>
+The GStreamer team is excited to announce a new major feature release of
+your favourite cross-platform multimedia framework!
+</p>
+<p>
+As always, this release is again packed with new features, bug fixes and other improvements.
+</p>
+<p>
+The 1.18 release series adds new features on top of the previous 1.16 series
+and is part of the API and ABI-stable 1.x release series of the GStreamer
+multimedia framework.
+</p>
+<p>
+  <b>Highlights:</b>
+  <ul>
+
+  <li><tt>GstTranscoder</tt>: new high level API for applications to transcode media files from one format to another</li>
+
+  <li>High Dynamic Range (HDR) video information representation and signalling enhancements</li>
+
+  <li>Instant playback rate change support</li>
+
+  <li>Active Format Description (AFD) and Bar Data support</li>
+ 
+  <li>ONVIF trick modes support in both GStreamer RTSP server and client</li>
+
+  <li>Hardware-accelerated video decoding on Windows via DXVA2 / Direct3D11</li>
+
+  <li>Microsoft Media Foundation plugin for video capture and hardware-accelerated video encoding on Windows</li>
+
+  <li><tt>qmlgloverlay</tt>: New overlay element that renders a <tt>QtQuick</tt> scene over the top of an input video stream</li>
+
+  <li>New <tt>imagesequencesrc</tt> element to easily create a video stream from a sequence of jpeg or png images</li>
+
+  <li><tt>dashsink</tt>: Add new sink to produce DASH content</li>
+
+  <li><tt>dvbsubenc</tt>: DVB Subtitle encoder element</li>
+
+  <li>TV broadcast compliant MPEG-TS muxing with constant bitrate muxing and SCTE-35 support</li>
+
+  <li><tt>rtmp2</tt>: new RTMP client source and sink element implementation</li>
+
+  <li><tt>svthevcenc</tt>: new [SVT-HEVC](https://github.com/OpenVisualCloud/SVT-HEVC)-based H.265 video encoder</li>
+
+  <li><tt>vaapioverlay</tt> compositor element using VA-API</li>
+
+  <li><tt>rtpmanager</tt> support for Google's Transport-Wide Congestion Control (twcc) RTP extension</li>
+
+  <li><tt>splitmuxsink</tt> and <tt>splitmuxsrc</tt> gained support for auxiliary video streams</li>
+
+  <li><tt>webrtcbin</tt> now contains some initial support for renegotiation involving stream addition and removal</li>
+
+  <li>New RTP source and sink elements to set up RTP streaming via <tt>rtp://</tt> URIs</li>
+
+  <li>New Audio Video Transport Protocol (AVTP) plugin for Time-Sensitive Applications</li>
+
+  <li>Support for the Video Services Forum's Reliable Internet Stream Transport (RIST) TR-06-1 Simple Profile</li>
+
+  <li>Universal Windows Platform (UWP) support</li>
+
+  <li><tt>rpicamsrc</tt> element for capturing from the Raspberry Pi camera</li>
+
+  <li>RTSP Server TCP interleaved backpressure handling improvements as well as support for Scale/Speed headers</li>
+
+  <li>GStreamer Editing Services gained support for nested timelines, per-clip speed rate control and the [OpenTimelineIO](https://opentimelineio.readthedocs.io) format.</li>
+
+  <li>Autotools build system has been removed in favour of Meson</li>
+
+  <li>Many performance improvements</li>
+  </ul>
+</p>
+<p>
+Full release notes can be found <a href="&site;/releases/1.18/">here</a>.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in due course.
+</p>
+        <p>
+You can download release tarballs directly here: 
+<a href="&site;/src/gstreamer/gstreamer-1.18.0.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.18.0.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.18.0.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.18.0.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.18.0.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.18.0.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.18.0.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.18.0.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gst-editing-services-1.18.0.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-devtools/gst-devtools-1.18.0.tar.xz">gst-devtools</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.18.0.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.18.0.tar.xz">gstreamer-sharp</a>,
+<a href="&site;/src/gst-omx/gst-omx-1.18.0.tar.xz">gst-omx</a>, or
+<a href="&site;/src/gstreamer-docs/gstreamer-docs-1.18.0.tar.xz">gstreamer-docs</a>.
+        </p>
+        </content>
+  </item>
+
 </news>

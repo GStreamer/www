@@ -1,16 +1,16 @@
 # GStreamer Releases
 
-- **Latest stable release:** [1.16.2][latest-stable]
-- **Latest development release:** [1.17.90 (1.18 rc1)][latest-devel]
+- **Latest stable release:** [1.18.0][latest-stable]
+- **Latest development release:** [git master][latest-devel]
 
-[latest-stable]: https://gstreamer.freedesktop.org/releases/1.16/#1.16.2
-[latest-devel]: https://lists.freedesktop.org/archives/gstreamer-announce/2020-August/000504.html
-<!-- https://gitlab.freedesktop.org/gstreamer/ -->
+[latest-stable]: https://gstreamer.freedesktop.org/releases/1.18/
+[latest-devel]: https://gitlab.freedesktop.org/gstreamer/
 
 ### Older releases
 
 These releases are all part of the API and ABI stable GStreamer 1.x series:
 
+- [GStreamer 1.16 release series](https://gstreamer.freedesktop.org/releases/1.16/)
 - [GStreamer 1.14 release series](https://gstreamer.freedesktop.org/releases/1.14/)
 - [GStreamer 1.12 release series](https://gstreamer.freedesktop.org/releases/1.12/)
 - [GStreamer 1.10 release series](https://gstreamer.freedesktop.org/releases/1.10/)
