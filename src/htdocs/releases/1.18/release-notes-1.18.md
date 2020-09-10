@@ -29,7 +29,7 @@ As always, this release is again packed with many new features, bug fixes and ot
 
 - Active Format Description (AFD) and Bar Data support
  
-- ONVIF trick modes support in both GStreamer RTSP server and client
+- RTSP server and client implementations gained ONVIF trick modes support
 
 - Hardware-accelerated video decoding on Windows via DXVA2 / Direct3D11
 
@@ -37,35 +37,35 @@ As always, this release is again packed with many new features, bug fixes and ot
 
 - `qmlgloverlay`: New overlay element that renders a `QtQuick` scene over the top of an input video stream
 
-- New `imagesequencesrc` element to easily create a video stream from a sequence of jpeg or png images
+- `imagesequencesrc`: New element to easily create a video stream from a sequence of jpeg or png images
 
-- `dashsink`: Add new sink to produce DASH content
+- `dashsink`: New sink to produce DASH content
 
-- `dvbsubenc`: DVB Subtitle encoder element
+- `dvbsubenc`: New DVB Subtitle encoder element
 
-- TV broadcast compliant MPEG-TS muxing with constant bitrate muxing and SCTE-35 support
+- MPEG-TS muxing now also supports TV broadcast compliant muxing with constant bitrate muxing and SCTE-35 support
 
-- `rtmp2`: new RTMP client source and sink element implementation
+- `rtmp2`: New RTMP client source and sink element from-scratch implementation
 
-- `svthevcenc`: new [SVT-HEVC](https://github.com/OpenVisualCloud/SVT-HEVC)-based H.265 video encoder
+- `svthevcenc`: New [SVT-HEVC](https://github.com/OpenVisualCloud/SVT-HEVC)-based H.265 video encoder
 
-- `vaapioverlay` compositor element using VA-API
+- `vaapioverlay`: New compositor element using VA-API
 
-- `rtpmanager` support for Google's Transport-Wide Congestion Control (twcc) RTP extension
+- `rtpmanager` gained support for Google's Transport-Wide Congestion Control (twcc) RTP extension
 
 - `splitmuxsink` and `splitmuxsrc` gained support for auxiliary video streams
 
 - `webrtcbin` now contains some initial support for renegotiation involving stream addition and removal
 
-- New RTP source and sink elements to easily set up RTP streaming via `rtp://` URIs
+- RTP support was enhanced with new RTP source and sink elements to easily set up RTP streaming via `rtp://` URIs
 
-- New Audio Video Transport Protocol (AVTP) plugin for Time-Sensitive Applications
+- `avtp`: New Audio Video Transport Protocol (AVTP) plugin for Time-Sensitive Applications
 
 - Support for the Video Services Forum's Reliable Internet Stream Transport (RIST) TR-06-1 Simple Profile
 
 - Universal Windows Platform (UWP) support
 
-- `rpicamsrc` element for capturing from the Raspberry Pi camera
+- `rpicamsrc`: New element for capturing from the Raspberry Pi camera
 
 - RTSP Server TCP interleaved backpressure handling improvements as well as support for Scale/Speed headers
 
