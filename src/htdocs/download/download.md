@@ -38,7 +38,8 @@ below which may affect you based on what toolchain your app will be built with.
 NOTE: The library names in MSVC are different from MinGW; specifically the DLLs
 are of the form `foo.dll` instead of `libfoo.dll`.
 
-NOTE: GStreamer-sharp .NET bindings require the MSVC binaries now.
+NOTE: [GstSharp .NET bindings](https://www.nuget.org/packages/GstSharp/)
+require the MSVC binaries starting with 1.18.
 
 NOTE: Some of the plugins shipped with the MSVC binaries link to non-gstreamer
 libraries built with MinGW because they are built with Autotools. [See below](#toolchain-compatibility-notes)
