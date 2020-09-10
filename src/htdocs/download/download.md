@@ -19,35 +19,50 @@ Binary releases in the form of MSI installers are available. The installers are
 split into runtime and development packages. For development, you will want to
 install both packages.
 
+* MSVC 64-bit (VS 2019, Release CRT)
+  - [1.18.0 runtime installer](/data/pkg/windows/1.18.0/msvc/gstreamer-1.0-msvc-x86_64-1.18.0.msi)
+  - [1.18.0 development installer](/data/pkg/windows/1.18.0/msvc/gstreamer-1.0-devel-msvc-x86_64-1.18.0.msi)
+* MSVC 32-bit (VS 2019, Release CRT)
+  - [1.18.0 runtime installer](/data/pkg/windows/1.18.0/msvc/gstreamer-1.0-msvc-x86-1.18.0.msi)
+  - [1.18.0 development installer](/data/pkg/windows/1.18.0/msvc/gstreamer-1.0-devel-msvc-x86-1.18.0.msi)
 * MinGW 64-bit
-  - [1.16.2 runtime installer](/data/pkg/windows/1.16.2/gstreamer-1.0-mingw-x86_64-1.16.2.msi)
-  - [1.16.2 development installer](/data/pkg/windows/1.16.2/gstreamer-1.0-devel-mingw-x86_64-1.16.2.msi)
+  - [1.18.0 runtime installer](/data/pkg/windows/1.18.0/mingw/gstreamer-1.0-mingw-x86_64-1.18.0.msi)
+  - [1.18.0 development installer](/data/pkg/windows/1.18.0/mingw/gstreamer-1.0-devel-mingw-x86_64-1.18.0.msi)
 * MinGW 32-bit
-  - [1.16.2 runtime installer](/data/pkg/windows/1.16.2/gstreamer-1.0-mingw-x86-1.16.2.msi)
-  - [1.16.2 development installer](/data/pkg/windows/1.16.2/gstreamer-1.0-devel-mingw-x86-1.16.2.msi)
+  - [1.18.0 runtime installer](/data/pkg/windows/1.18.0/mingw/gstreamer-1.0-mingw-x86-1.18.0.msi)
+  - [1.18.0 development installer](/data/pkg/windows/1.18.0/mingw/gstreamer-1.0-devel-mingw-x86-1.18.0.msi)
 
-Starting with the 1.16 release, MSVC 64-bit binaries are also available. If
-you're upgrading from a previous version of GStreamer and want a hassle-free
-upgrade, you should continue to use the MinGW installers listed above. Also see
-the [toolchain compatibility notes](#toolchain-compatibility-notes) below.
+For each of the above listed targets, [a zip file with `.msm` modules](/data/pkg/windows/1.18.0/)
+is available for integration into your own WiX-based app installer.
+
+If you are not sure which to pick between MSVC and MinGW, just pick MSVC.
+However, do see the [toolchain compatibility notes](#toolchain-compatibility-notes)
+below which may affect you based on what toolchain your app will be built with.
 
 NOTE: The library names in MSVC are different from MinGW; specifically the DLLs
 are of the form `foo.dll` instead of `libfoo.dll`.
 
-NOTE: The MSVC binaries currently don't work with the gst-sharp .NET bindings.
+NOTE: GStreamer-sharp .NET bindings require the MSVC binaries now.
 
 NOTE: Some of the plugins shipped with the MSVC binaries link to non-gstreamer
 libraries built with MinGW because they are built with Autotools. [See below](#toolchain-compatibility-notes)
 for what this means for your application.
 
-* MSVC 64-bit (VS 2019)
-  - [1.16.2 runtime installer](/data/pkg/windows/1.16.2/gstreamer-1.0-msvc-x86_64-1.16.2.msi)
-  - [1.16.2 development installer](/data/pkg/windows/1.16.2/gstreamer-1.0-devel-msvc-x86_64-1.16.2.msi)
-
-For each of the above listed targets, [a zip file with `.msm` modules](/data/pkg/windows/1.16.2/)
-is available for integration into your own WiX-based app installer.
-
 [Older 1.x binary releases](/data/pkg/windows) are also available.
+
+<a name="uwp"></a>
+#### Universal Windows Platform
+
+Binary releases built to target the Universal Windows Platform (UWP). Used for
+shipping apps on the Windows Store, such as for an XBox, HoloLens 2, etc.
+
+* UWP Universal (ARM64, X86, X86_64) (VS 2019, Release CRT)
+  - [1.18.0 runtime + development tarball](/data/pkg/windows/1.18.0/msvc/gstreamer-1.0-uwp-universal-1.18.0.tar.xz)
+* UWP Universal (ARM64, X86, X86_64) (VS 2019, Debug CRT)
+  - [1.18.0 runtime + development tarball](/data/pkg/windows/1.18.0/msvc/gstreamer-1.0-uwp+debug-universal-1.18.0.tar.xz)
+
+UWP apps cannot use plugins that use dependencies built with MinGW because of
+forbidden APIs. Hence, these plugins are omitted from the binaries.
 
 <a name="toolchain-compatibility-notes"></a>
 #### Toolchain Compatibility Notes
@@ -86,7 +101,7 @@ CRT used for each GStreamer version:
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>ucrtbase.dll</td>
  </tr>
  <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.17.x (development)</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.18.x</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>ucrtbase.dll</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>ucrtbase.dll</td>
  </tr>
@@ -97,42 +112,49 @@ This is the toolchain compatibility matrix with the stable releases:
 <table style='border-collapse: collapse;'>
  <tr style='background-color: #f2f2f2;'>
   <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>App Toolchain</th>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.14 MinGW</th>
   <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.16 MinGW</th>
   <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.16 MSVC</th>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.18 MinGW</th>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.18 MSVC</th>
  </tr>
  <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>Visual Studio 2015 and newer</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>Visual Studio 2015 and newer (ucrtbase.dll)</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
  </tr>
  <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>Visual Studio 2013 and older</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>Visual Studio 2013 and older (msvcrt.dll)</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="http://mingw.org">MinGW</a></td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="https://mingw-w64.org">MinGW-w64</a></td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
  </tr>
  <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="https://www.msys2.org">MSYS2 MinGW-w64</a></td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="http://mingw.org">MinGW</a> (msvcrt.dll)</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="https://mingw-w64.org">MinGW-w64</a> (msvcrt.dll)</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+ </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="https://www.msys2.org">MSYS2 MinGW-w64</a> (msvcrt.dll)</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
  </tr>
  <tr>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="http://cygwin.com">Cygwin</a></td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>NONE</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>NONE</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>NONE</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>NONE</td>
@@ -149,11 +171,14 @@ This is the toolchain compatibility matrix with the stable releases:
 <a name="macos"></a>
 ### macOS
 
-Binary releases in the form of `.framework` installers are available. The
+Binary releases in the form of `.pkg` framework installers are available. The
 installers are split into runtime and development packages. For development,
-you will want to install both packages. The target SDK version is macOS 10.10.
+you will want to install both packages.
 
-* macOS 64-bit
+* macOS 64-bit (target: macOS 10.11)
+  - [1.18.0 runtime installer](/data/pkg/osx/1.18.0/gstreamer-1.0-1.18.0-x86_64.pkg)
+  - [1.18.0 development installer](/data/pkg/osx/1.18.0/gstreamer-1.0-devel-1.18.0-x86_64.pkg)
+* macOS 64-bit (target: macOS 10.10)
   - [1.16.2 runtime installer](/data/pkg/osx/1.16.2/gstreamer-1.0-1.16.2-x86_64.pkg)
   - [1.16.2 development installer](/data/pkg/osx/1.16.2/gstreamer-1.0-devel-1.16.2-x86_64.pkg)
 
@@ -170,6 +195,7 @@ the same system.
 Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
+* Android Universal [1.18.0 tarball](/data/pkg/android/1.18.0/gstreamer-1.0-android-universal-1.18.0.tar.xz)
 * Android Universal [1.16.2 tarball](/data/pkg/android/1.16.2/gstreamer-1.0-android-universal-1.16.2.tar.xz)
 
 The Android NDKs used by the stable releases are:
@@ -180,16 +206,16 @@ The Android NDKs used by the stable releases are:
   <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>NDK Version</th>
  </tr>
  <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.14.x</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>r16</td>
- </tr>
- <tr>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.16.x</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="https://developer.android.com/ndk/downloads/older_releases.html#ndk-18b-downloads">r18b</a></td>
  </tr>
+ <tr>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.18.x</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="https://developer.android.com/ndk/downloads/older_releases.html#ndk-18b-downloads">r21</a></td>
+ </tr>
 </table>
 
-The Android APIs targeted by the GStreamer 1.16.x stable release(s) are:
+The Android APIs targeted by the GStreamer 1.16.x and 1.18.x stable release(s) are:
 
 <table style='border-collapse: collapse;'>
  <tr style='background-color: #f2f2f2;'>
@@ -217,13 +243,14 @@ The Android APIs targeted by the GStreamer 1.16.x stable release(s) are:
 [Older 1.x binary releases](/data/pkg/android) are also available.
 
 <a name="ios-and-tvos"></a>
-### iOS and tvOS
+### iOS
 
 Binary releases that integrate into XCode are available in the form of a single
 "universal" package with fat library frameworks. Bitcode support is built-in
-and the target SDK version is iOS 9.0.
+and the target SDK version for 1.16.x was iOS 9.0, and for 1.18.x is 11.0.
 
-* iOS Universal [1.16.2 framework](/data/pkg/ios/1.16.2/gstreamer-1.0-devel-1.16.2-ios-universal.pkg)
+* iOS Universal [1.18.0 framework](/data/pkg/ios/1.18.0/gstreamer-1.0-devel-1.18.0-ios-universal.pkg) (ARM64, X86_64)
+* iOS Universal [1.16.2 framework](/data/pkg/ios/1.16.2/gstreamer-1.0-devel-1.16.2-ios-universal.pkg) (ARM64, X86_64, X86)
 
 [Older 1.x binary releases](/data/pkg/ios) are also available.
 
