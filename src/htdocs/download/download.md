@@ -8,10 +8,6 @@ For other platforms, specifically [Windows](#windows), [macOS](#macos),
 the form of official installers or tarballs maintained by the GStreamer
 project.
 
-Each binary release also has a SHA256 checksum (`.sha256sum`) file and a PGP
-signature file (`.asc`) in the same directory as each release file that you can
-use to verify the chain of trust from the GStreamer project to your machine.
-
 <a name="windows"></a>
 ### Windows
 
