@@ -54,9 +54,9 @@ Binary releases built to target the Universal Windows Platform (UWP). Used for
 shipping apps on the Windows Store, such as for an XBox, HoloLens 2, etc.
 
 * UWP Universal (ARM64, X86, X86_64) (VS 2019, Release CRT)
-  - [1.18.0 runtime + development tarball](/data/pkg/windows/1.18.0/msvc/gstreamer-1.0-uwp-universal-1.18.0.tar.xz)
+  - [1.18.0 runtime + development tarball](/data/pkg/windows/1.18.0/uwp/gstreamer-1.0-uwp-universal-1.18.0.tar.xz)
 * UWP Universal (ARM64, X86, X86_64) (VS 2019, Debug CRT)
-  - [1.18.0 runtime + development tarball](/data/pkg/windows/1.18.0/msvc/gstreamer-1.0-uwp+debug-universal-1.18.0.tar.xz)
+  - [1.18.0 runtime + development tarball](/data/pkg/windows/1.18.0/uwp/gstreamer-1.0-uwp+debug-universal-1.18.0.tar.xz)
 
 UWP apps cannot use plugins that use dependencies built with MinGW because of
 forbidden APIs. Hence, these plugins are omitted from the binaries.
