@@ -2,16 +2,20 @@
 
 GStreamer 1.16.0 was originally released on 19 April 2019.
 
-The latest bug-fix release in the 1.16 series is [1.16.2](#1.16.2) and was
-released on 3 December 2019.
+The latest bug-fix release in the 1.16 series is [1.16.3](#1.16.3) and was
+released on 21 October 2020.
+
+1.16.3 will likely be the last release in the 1.16 release series which has
+now been superseded by the [1.18 release series][1.18].
 
 See [https://gstreamer.freedesktop.org/releases/1.16/][latest] for the latest
 version of this document.
 
-*Last updated: Tuesday 03 December 2019, 08:00 UTC [(log)][gitlog]*
+*Last updated: Tuesday 20 October 2020, 00:30 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.16/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.16/release-notes-1.16.md
+[1.18]: https://gstreamer.freedesktop.org/releases/1.18/
 
 ## Introduction
 
@@ -1751,6 +1755,287 @@ suggestions or helped testing. Thank you all!
 - [List of Merge Requests applied in 1.16](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.16.2)
 - [List of Issues fixed in 1.16.2](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.16.2)
 
+<a name="1.16.3"></a>
+
+### 1.16.3
+
+The third (and likely last) 1.16 bug-fix release (1.16.3) was released
+on 21 October 2020.
+
+This release only contains bugfixes and it *should* be safe to update
+from 1.16.2.
+
+#### Highlighted bugfixes in 1.16.3
+
+- important security fixes
+- bug fixes, memory leak fixes and various stability and reliability improvements
+
+#### gstreamer
+
+ - delay creation of threadpools
+ - bin: Fix `deep-element-removed` log message
+ - buffer: fix meta sequence number fallback on rpi
+ - bufferlist: foreach: always remove as parent if buffer is changed
+ - bus: Make setting/replacing/clearing the sync handler thread-safe
+ - elementfactory: Fix missing features in case a feature moves to another filename
+ - element: When removing a ghost pad also unset its target
+ - meta: intern registered impl string
+ - registry: Use a toolchain-specific registry file on Windows
+ - systemclock: Invalid internal time calculation causes non-increasing clock time on Windows
+ - value: don't write to `const char *`
+ - value: Fix segfault comparing empty GValueArrays
+ - Revert floating enforcing
+ - aggregator: fix iteration direction in skip_buffers
+ - sparsefile: fix possible crash when seeking
+ - baseparse: cache fix
+ - baseparse: fix memory leak when subclass skips whole input buffer
+ - baseparse: Set the private duration before posting a duration-changed message
+ - basetransform: allow not passthrough if generate_output is implemented
+ - identity: Fix a minor leak using meta_str
+ - queue: protect against lost wakeups for iterm_del condition
+ - queue2: Avoid races when posting buffering messages
+ - queue2: Fix missing/dropped buffering messages at startup
+ - identity: Unblock condition variable on FLUSH_START
+ - check: Use `g_thread_yield()` instead of `g_usleep(1)`
+ - tests: use cpu_family for arch checks
+ - gst-launch: Follow up to missing `s/g_print/gst_print/g`
+ - gst-inspect: Add define guard for `g_log_writer_supports_color()`
+ - gst-launch: go back down to `GST_STATE_NULL` in one step.
+ - device-monitor: list hidden providers before listing devices
+
+#### gst-plugins-base
+
+ - audioaggregator: Check all downstream allowed caps structures if they support the upstream rate
+ - audioaggregator: Fix negotiation with downstream if there is no peer yet
+ - audioencoder: fix segment event leak
+ - discoverer: Fix caps handling in `pad-added` signal handler
+ - discoverer: Start discovering next URI from right thread
+ - fft: Update our kiss fft version, fixes thread-safety and concurrency issues and misc other things
+ - gl: numerous memory fixes (use-after-free, leaks, missing NULL-ify)
+ - gl/display/egl: ensure debug category is initialized
+ - gstglwindow_x11: fix resize
+ - pbutils: Add latest H.264 level values
+ - rtpbuffer: fix header extension length validation
+ - video: Fix NV12_64Z32 number of component
+ - video-format: RGB16/15 are not 16 bit per component but only 5.333 and 5
+ - video: fix top/bottom field flags
+ - videodecoder: don't copy interlace-mode from reference state
+ - appsrc/appsink: Make setting/replacing callbacks thread-safe
+ - compositor: Fix checkerboard filling for BGRx/RGBx and UYVY/YUY2/YVYU
+ - decodebin3: only force streams-selected seqnum after a select-streams
+ - glupload: Fix fallback from direct dmabuf to dmabuf upload method
+ - glvideomixer: perform `_get_highest_precision()` on the GL thread
+ - libvisual: use `gst_element_class_set_metadata()` when passing dynamic strings
+ - oggstream: Workaround for broken PAR in VP8 BOS
+ - subparse: accept WebVTT timestamps without an hour component
+ - playbin: Handle error message with redirection indication
+ - textrender: Fix AYUV output.
+ - typefind: Consider MPEG-PS PSM to be a PES type
+ - uridecodebin3: default to non-0 buffer-size and buffer-duration, otherwise it could potentially cause big memory allocations over time
+ - videoaggregator: Don't configure NULL chroma-site/colorimetry
+ - videorate/videoscale/audioresample: Ensure that the caps returned from...
+ - build: Replace bashisms in configure for Wayland and GLES3
+
+#### gst-plugins-good
+
+ - deinterlace: on-the-fly renegotiation
+ - flacenc: Pass audio info from set_format() to query_total_samples() explicitly
+ - flacparse: fix broken reordering of flac metadata
+ - jack: Use jack_free(3) to release ports
+ - jpegdec: check buffer size before dereferencing
+ - pulse: fix discovery of newly added devices
+ - qtdemux fuzzing fixes
+ - qtdemux: Add 'mp3 ' fourcc that VLC seems to produce now
+ - qtdemux: Specify REDIRECT information in error message
+ - rtpbin: fix shutdown crash in rtpbin
+ - rtpsession: rename RTCP thread
+ - rtpvp8pay, rtpvp9pay: fix caps leak in set_caps()
+ - rtpjpegdepay: outputs framed jpeg
+ - rtpjitterbuffer: Properly free internal packets queue in finalize()
+ - rtspsrc: Don't return TRUE for unhandled query
+ - rtspsrc: Avoid stack overflow recursing waiting for response
+ - rtspsrc: Use the correct type for storing the max-rtcp-rtp-time-diff property
+ - rtspsrc: Error out when failling to receive message response
+ - rtspsrc: Fix for segmentation fault when handling set/get_parameter requests
+ - speex: Fix crash on Windows caused by cross-CRT issue
+ - speexdec: Crash when stopping the pipeline
+ - splitmuxsrc: Properly stop the loop if no part reader is present
+ - use gst_element_class_set_metadata when passing dynamic strings
+ - v4l2videodec: Increase internal bitstream pool size
+ - v4l2: fix crash when handling unsupported video format
+ - videocrop: allow properties to be animated by GstController
+ - videomixer: Don't leak peer caps
+ - vp8enc/vp8enc: set 1 for the default value of VP8E_SET_STATIC_THRESHOLD
+ - wavenc: Fix writing of the channel mask with >2 channels
+
+#### gst-plugins-bad
+
+ - amcvideodec: fix sync meta copying not taking a reference
+ - audiobuffersplit: Perform discont tracking on running time
+ - audiobuffersplit: Specify in the template caps that only interleaved audio is supported
+ - audiobuffersplit: Unset DISCONT flag if not discontinuous
+ - autoconvert: Fix lock-less exchange or free condition
+ - autoconvert: fix compiler warnings with g_atomic on recent GLib versions
+ - avfvideosrc: element requests camera permissions even with capture-screen property is true
+ - codecparsers: h264parser: guard against ref_pic_markings overflow
+ - dtlsconnection: Avoid segmentation fault when no srtp capabilities are negotiated
+ - dtls/connection: fix EOF handling with openssl 1.1.1e
+ - fdkaacdec: add support for mpegversion=2
+ - hls: Check nettle version to ensure AES128 support
+ - ipcpipeline: Rework compiler checks
+ - interlace: Increment phase_index before checking if we're at the end of the phase
+ - lv2: Make it build with -fno-common
+ - h264parser: Do not allocate too large size of memory for registered user data SEI
+ - ladspa: fix unbounded integer properties
+ - modplug: avoid division by zero
+ - msdkdec: Fix GstMsdkContext leak
+ - msdkenc: fix leaks on windows
+ - musepackdec: Don't fail all queries if no sample rate is known yet
+ - openslessink: Allow openslessink to handle 48kHz streams.
+ - opencv: allow compilation against 4.2.x
+ - proxysink: event_function needs to handle the event when it is disconnecetd from proxysrc
+ - vulkan: Drop use of VK_RESULT_BEGIN_RANGE
+ - wasapi: added missing lock release in case of error in gst_wasapi_xxx_reset
+ - wasapi: Fix possible deadlock while downwards state change
+ - waylandsink: Clear window when pipeline is stopped
+ - webrtc: Support non-trickle ICE candidates in the SDP
+ - webrtc: Unmap all non-binary buffers received via the datachannel
+ - meson: build with neon 0.31
+
+#### gst-plugins-ugly
+
+ - x264enc: corrected em_data value in CEA-708 CC SEI message
+
+#### gst-libav
+
+ - avaudenc/avvidenc: Reopen encoding session if it's required
+ - avauddec/audenc/videnc: Don't return GST_FLOW_EOS when draining
+ - avauddec/avviddec: Avoid dropping non-OK flow return
+ - avviddec: Limit default number of decoder threads
+ - avauddec: fix buffer leak when send packet failed
+ - Ensure drain even if codec has not delay capabilities
+
+#### gst-rtsp-server
+
+ - rtsp-stream: explicitly set caps on udpsrc elements
+ - rtsp-stream: use mcast_udpsink[0] last-sample if available for rtpinfo
+ - rtspclientsink: Set async-handling=false for the internal bins
+ - rtsp-auth: Fix NULL pointer dereference when handling an invalid basic Authorization header
+ - rtsp-latency-bin: replace `G_TYPE_INSTANCE_GET_PRIVATE` as it's been deprecated
+ - rtsp-auth: fix default token leak
+
+#### gstreamer-vaapi
+
+ - display: drm: use g_strcmp0 to be null safe
+ - vaapipluginutil: Use `GST_VAAPI_DISPLAY_TYPE_DRM` for Mesa3D GBM
+ - vaapivideobufferpool: force video meta if sizes are different
+ - Fix negotiate lock
+ - decoder: h265: parser state after update dependent slice
+ - h265enc: Set `VA_PICTURE_HEVC_INVALID` flag for invalid picture
+ - vaapivideobufferpool: Log messages in proper category.
+ - vaapih264enc: fix log message
+ - display: fix a resource leak in X11 pixmap format.
+ - decoder: h264, h265: `fix g_return_val_if_fail()` missuse
+ - utils: guard the VAEntrypointFEI symbol
+ - h265dec: remove limitation of get iq matrix
+ - videopool: fix undocumented behavior and counting
+ - Remove last negotiated video info if caps are the same
+ - encoder: increase bitrate prop max value
+ - misc backports into 1.16
+
+#### gstreamer-sharp
+
+ - Bind `gst_buffer_new_wrapped()` manually
+ - Declare `GstVideoOverlayComposition`/`Rectangle` as opaque type and subclasses of `Gst.MiniObject`
+ - Fix `gst_promise_new_with_change_func`
+
+#### gst-python
+
+ - Add exampleTransform.py from the master branch, modified to work on 1.16
+ - Fix build with Python 3.8 by also checking for python-3.X-embed.pc
+
+#### gst-editing-services
+
+ - ges-launch fixes: enhance error message when no clip duration is set, avoid setting invalid clip duration
+
+#### gst-integration-testsuites
+
+ - Yesterday.flac.media_info: Update for changed flacparse behavior
+ - flow-expectations: Rename colon to short dash
+
+#### gst-build
+
+ - subprojects: ffmpeg: bump to 4.1.5
+ - git-update: Use --force when checking out manifest
+ - gst-env: Use meson-uninstalled pkgconfig files if available
+ - Fixate wrap versions in 1.16
+ - Update android cross file
+ - Use gstreamer mirror as primary source for win-nasm and win-flex-bison
+ - fetch wrap patches from github
+ - env: preprend gst-build/prefix/etc/xdg to `XDG_CONFIG_DIRS`
+ - Backport various gst uninstalled bug fixes into 1.16
+ - gst-env: Automatically set the prompt for zsh too
+ - gst-env: Don't put helper binaries in PATH
+ - fish: ignore SIGINT and set prompt correctly
+
+#### Cerbero build tool and packaging changes in 1.16.3
+
+ - meson: Ensure large file support for MinGW build
+ - ci: Temporarily change remote and branch for ci template
+ - cerbero: Run download tool outside of the build env
+ - cache: Re-implememt cache on top of our external storage
+ - cerbero: Ship plugin .pc files for all modules
+ - cerbero: Define a custom user agent while downloading
+ - Fix for fetching tags using git
+ - Fix gettext download error and improve download failure exception usability
+ - cerbero: Disable debian packaging for now
+ - Fix misc windows bugs, and explicitly enable GL sub-options
+ - Prepend `$CERBERO_PREFIX/lib` path in `LD_LIBRARY_PATH`
+ - meson.recipe: Ignore programs in the WindowsApps directory
+ - meson.recipe: Write out DLL/EXE checksums with MSVC
+ - gst-plugins-bad: We can build ipcpipeline on Windows
+ - Fix Python 3.8 compat on Windows
+ - Fix malformed gendef output on x86
+ - utils: fix python 3.8 compatibility on linux
+ - Use the new artifact server for 1.16 too
+ - GnuTLS: patch to handle certificate chain expiration
+ - fontconfig: `Fix EXC_BAD_ACCESS` crash on iOS ARM64
+ - glib: fix `G_GNUC_INTERNAL` on macOS/iOS
+ - gnutls: Update to 3.5.19
+ - nettle: add `-std=c99` to CFLAGS
+ - openh264: fix recipe for text relocation issues on Android >= 5.0 x86 builds
+ - openssl: Don't build/package for native linux
+ - x264: Use relative paths in pkgconfig file
+ - Backport various commits into 1.16 for the 1.16.3 release
+ - FreeType: update to 2.10.4 to fix security vulnerability
+
+#### Contributors to 1.16.3
+
+Alexander Lapajne, Alicia Boya García, Andrew Wesie, Camilo Celis Guzman,
+Carlos Rafael Giani, Chris Lord, Chris Mayo, Christoph Reiter,
+Daniel Molkentin, David Bender, Debarshi Ray, dhilshad, Dimitrios Katsaros,
+Dmitry Shusharin, Edward Hervey, François Laignel, Guillaume Desmottes,
+Guillermo Rodríguez, Haihao Xiang, Havard Graff, He Junyan,
+Jan Alexander Steffens (heftig), Jan Schmidt, Jennifer Berringer,
+Jérôme Laheurte, Jonas Holmberg, Jonathan Matthew, Jordan Petridis,
+Jose Quaresma, Julien Isorce, Justin Chadwell, Levente Révész, Matej Knopp,
+Mathieu Duponchelle, Matthew Read, Matthew Waters, Matus Gajdos,
+Michael Olbrich, Miguel Paris, Nicola Murino, Nicolas Dufresne,
+Nicolas Pernas Maradei, Nirbheek Chauhan, okuoku, Olivier Crête,
+Ondřej Hruška, Philippe Normand, Roman Shpuntov, Sebastian Dröge,
+Seungha Yang, Silvio Lazzeretti, Stéphane Cerveau, Stian Selnes,
+Thibault Saunier, Tim-Philipp Müller, U. Artie Eoff,
+Víctor Manuel Jáquez Leal, Wangfei, Wang Zhanjun, Will Miller,
+worldofpeace, Xu Guangxin, Yeongjin Jeong, Zebediah Figura,
+
+... and many others who have contributed bug reports, translations, sent
+suggestions or helped testing. Thank you all!
+
+#### List of merge requests and issues fixed in 1.16.3
+
+- [List of Merge Requests applied in 1.16.3](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.16.3)
+- [List of Issues fixed in 1.16.3](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.16.3)
+
 ## Known Issues
 
 - possibly breaking/incompatible changes to properties of wrapped FFmpeg
@@ -1766,16 +2051,7 @@ suggestions or helped testing. Thank you all!
 
 ## Schedule for 1.18
 
-Our next major feature release will be 1.18, and 1.17 will be the unstable
-development version leading up to the stable 1.18 release. The development
-of 1.17/1.18 will happen in the git master branch.
-
-The plan for the 1.18 development cycle is yet to be confirmed, but it is now
-expected that feature freeze will take place in December 2019, with the first
-1.18 stable release ready in late January or February.
-
-1.18 will be backwards-compatible to the stable 1.16, 1.14, 1.12, 1.10, 1.8,
-1.6, 1.4, 1.2 and 1.0 release series.
+GStreamer 1.18.0 was released on 8 September 2020: [GStreamer 1.18 release notes][1.18]
 
 - - -
 
