@@ -11,7 +11,7 @@ now been superseded by the [1.18 release series][1.18].
 See [https://gstreamer.freedesktop.org/releases/1.16/][latest] for the latest
 version of this document.
 
-*Last updated: Tuesday 20 October 2020, 00:30 UTC [(log)][gitlog]*
+*Last updated: Monday 26 October 2020, 22:05 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.16/
 [gitlog]: https://cgit.freedesktop.org/gstreamer/www/log/src/htdocs/releases/1.16/release-notes-1.16.md
@@ -2008,6 +2008,7 @@ from 1.16.2.
  - x264: Use relative paths in pkgconfig file
  - Backport various commits into 1.16 for the 1.16.3 release
  - FreeType: update to 2.10.4 to fix security vulnerability
+ - Visual Studio 32-bit x86 binaries are now also available
 
 #### Contributors to 1.16.3
 
