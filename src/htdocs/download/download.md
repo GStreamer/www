@@ -176,8 +176,8 @@ you will want to install both packages.
   - [1.18.0 runtime installer](/data/pkg/osx/1.18.0/gstreamer-1.0-1.18.0-x86_64.pkg)
   - [1.18.0 development installer](/data/pkg/osx/1.18.0/gstreamer-1.0-devel-1.18.0-x86_64.pkg)
 * macOS 64-bit (target: macOS 10.10)
-  - [1.16.2 runtime installer](/data/pkg/osx/1.16.2/gstreamer-1.0-1.16.2-x86_64.pkg)
-  - [1.16.2 development installer](/data/pkg/osx/1.16.2/gstreamer-1.0-devel-1.16.2-x86_64.pkg)
+  - [1.16.3 runtime installer](/data/pkg/osx/1.16.3/gstreamer-1.0-1.16.3-x86_64.pkg)
+  - [1.16.3 development installer](/data/pkg/osx/1.16.3/gstreamer-1.0-devel-1.16.3-x86_64.pkg)
 
 GStreamer is also available on [Homebrew](https://brew.sh/), and you should be
 able to use that. However, please note that some plugins are not shipped by
@@ -193,7 +193,7 @@ Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
 * Android Universal [1.18.0 tarball](/data/pkg/android/1.18.0/gstreamer-1.0-android-universal-1.18.0.tar.xz)
-* Android Universal [1.16.2 tarball](/data/pkg/android/1.16.2/gstreamer-1.0-android-universal-1.16.2.tar.xz)
+* Android Universal [1.16.3 tarball](/data/pkg/android/1.16.3/gstreamer-1.0-android-universal-1.16.3.tar.xz)
 
 The Android NDKs used by the stable releases are:
 
@@ -247,7 +247,7 @@ Binary releases that integrate into XCode are available in the form of a single
 and the target SDK version for 1.16.x was iOS 9.0, and for 1.18.x is 11.0.
 
 * iOS Universal [1.18.0 framework](/data/pkg/ios/1.18.0/gstreamer-1.0-devel-1.18.0-ios-universal.pkg) (ARM64, X86_64)
-* iOS Universal [1.16.2 framework](/data/pkg/ios/1.16.2/gstreamer-1.0-devel-1.16.2-ios-universal.pkg) (ARM64, X86_64, X86)
+* iOS Universal [1.16.3 framework](/data/pkg/ios/1.16.3/gstreamer-1.0-devel-1.16.3-ios-universal.pkg) (ARM64, X86_64, X86)
 
 [Older 1.x binary releases](/data/pkg/ios) are also available.
 
