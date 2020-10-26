@@ -2,13 +2,11 @@
 
 GStreamer 1.18.0 was originally released on 8 September 2020.
 
-<!--
-The latest bug-fix release in the 1.18 series is [1.18.1](#1.16.1) and was released on ... 2020.
--->
+The latest bug-fix release in the 1.18 series is [1.18.1](#1.18.1) and was released on 26 October 2020.
 
 See [https://gstreamer.freedesktop.org/releases/1.18/][latest] for the latest version of this document.
 
-*Last updated: Monday 7 September 2020, 23:30 UTC [(log)][gitlog]*
+*Last updated: Monday 26 October 2020, 11:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.18/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/master/src/htdocs/releases/1.18/release-notes-1.18.md
@@ -1309,6 +1307,201 @@ which will be a stable branch.
 ### 1.18.0
 
 1.18.0 was released on 8 September 2020.
+
+<a name="1.18.1"></a>
+
+### 1.18.1
+
+The first 1.18 bug-fix release (1.18.1) was released on 26 October 2020.
+
+This release only contains bugfixes and it *should* be safe to update
+from 1.18.0.
+
+#### Highlighted bugfixes in 1.18.1
+
+- important security fixes
+- bug fixes and memory leak fixes
+- various stability and reliability improvements
+
+#### gstreamer
+
+ - aggregator: make peek() has() pop() drop() buffer API threadsafe
+ - gstvalue: don't write to const char *
+ - meson: Disallow DbgHelp for UWP build
+ - info: Fix build on Windows ARM64 device
+ - build: use cpu_family for arch checks
+ - basetransform: Fix in/outbuf confusion of `_default_transform_meta`
+ - Fix documentation
+ - info: Load DbgHelp.dll using `g_module_open()`
+ - padtemplate: mark documentation caps as may be leaked
+ - gstmeta: intern registered impl string
+ - aggregator: Hold `SRC_LOCK` while unblocking via `SRC_BROADCAST()`
+ - ptp_helper_post_install.sh: deal with none
+ - skip `elements/leak.c` if tracer is not available
+ - aggregator: Wake up source pad in PAUSED<->PLAYING transitions
+ - input-selector: Wake up blocking pads when releasing them
+ - ptp: Also handle gnu/kfreebsd
+
+#### gst-plugins-base
+
+ - theoradec: Set telemetry options only if they are nonzero
+ - glslstage: delete shader on finalize of stage
+ - urisourcebin: Fix crash caused by use after free
+ - decodebin3: Store stream-start event on output pad before exposing it
+ - Add some missing nullable annotations
+ - typefind/xdgmime: Validate mimetypes to be valid GstStructure names before using them
+ - uridecodebin3: Forward upstream events to decodebin3 directly
+ - video-converter: Add fast paths from v210 to I420/YV12, Y42B, UYVY and YUY2
+ - videoaggregator: Limit accepted caps by template caps
+ - gstrtpbuffer: fix header extension length validation
+ - decodebin3: only force streams-selected seqnum after a `select-streams`
+ - videodecoder: don't copy interlace-mode from reference state
+ - enable abi checks
+ - multihandlesink: Don't pass NULL caps to gst_caps_is_equal
+ - audio: video: Fix in/outbuf confusion of transform_meta
+ - meson: Always wrap "prefix" option with `join_paths()` to make Windows happy
+ - videoaggregator: ensure `peek_next_sample()` uses the correct caps
+ - meson: Actually build gstgl without implicit include dirs
+ - videoaggregator: Don't require any pads to be configured for negotiating source pad caps
+ - gst-libs: gl: Fix documentation typo and clarify `gl_memory_texsubimage`
+ - audioaggregator: Reset offset if the output rate is renegotiated
+ - video-anc: Implement transform functions for AFD/Bar metas
+ - appsrc: Wake up the `create()` function on caps changes
+ - rtpbasepayload: do not forget delayed segment when forwarding gaps
+
+#### gst-plugins-good
+
+ - v4l2object: Only offer inactive pools and if needed
+ - vpx: Fix the check to unfixed/unknown framerate to set bitrate
+ - qmlglsink: fix crash when created/destroyed in quick succession
+ - rtputils: Count metas with an empty tag list for copying/keeping
+ - rtpbin: Remove the rtpjitterbuffer with the stream
+ - rtph26*depay: drop FU's without a corresponding start bit
+ - imagefreeze: Response caps query from srcpad
+ - rtpmp4gdepay: Allow lower-case "aac-hbr" instead of correct "AAC-hbr"
+ - rtspsrc: Fix push-backchannel-buffer parameter mismatch
+ - jpegdec: check buffer size before dereferencing
+ - flvmux: Move stream skipping to `GstAggregatorPadClass.skip_buffer`
+ - v4l2object: plug memory leak
+ - splitmuxsink: fix sink pad release while PLAYING
+
+#### gst-plugins-bad
+
+ - codecparsers: h264parser: guard against `ref_pic_markings` overflow
+ - v4l2codecs: Various fixes
+ - h265parse: Don't enable passthrough by default
+ - srt: Fix "Fix timestamping"
+ - srt: Fixes for 1.4.2
+ - dtlsconnection: Ignore OpenSSL system call errors
+ - h265parse: set `interlace-mode=interleaved` on interlaced content
+ - Replace GPL v2 with LGPL v2 in COPYING file
+ - srt: Consume the error from gst_srt_object_write
+ - srt: Check socket state before retrieving payload size
+ - x265enc: fix deadlock on reconfig
+ - webrtc: Require gstreamer-sdp in the pkg-config file
+ - srtsrc: Fix timestamping
+ - mfvideosrc: Use only the first video stream per device
+ - srtobject: typecast `SRTO_LINGER` to linger
+ - decklink: Correctly order the different dependent mode tables
+ - wasapisrc: Make sure that wasapisrc produces data in loopback mode
+ - wpesrc: fix some caps leaks using the non-GL output
+ - smoothstreaming: clear live adapter on seek
+ - vtdec/vulkan: use Shared storage mode for IOSurface textures
+ - wpe: Move webview load waiting to WPEView
+ - wpe: Use proper callback for TLS errors signal handling
+ - kmssink: Do not source using padded width/height
+ - avtp: avtpaafdepay: fix crash when building caps
+ - opencv: set opencv_dep when option is disabled to fix the build
+ - line21encoder: miscellaneous enhancements
+ - Hls youtube issues with urisourcebin/queue2
+ - rtmp2: Replace stats queue with stats lock
+ - rtmp2sink: support EOS event for graceful connection shutdown
+ - mpegtsmux: Make handling of sinkpads thread-safe
+ - hlssink2: Actually release splitmuxsink's pads
+ - mpegtsmux: Don't create streams with reserved PID
+
+#### gst-plugins-ugly
+
+ - no changes
+
+#### gst-libav
+
+ - avaudenc/avvidenc: Reopen encoding session if it's required
+ - avauddec/audenc/videnc: Don't return `GST_FLOW_EOS` when draining
+ - avauddec/avviddec: Avoid dropping non-`OK` flow return
+ - avcodecmap: Enable 24 bit WMA Lossless decoding
+
+#### gst-rtsp-server
+
+ - rtsp-stream: collect rtp info when blocking
+ - rtsp-media: set a 0 storage size for TCP receivers
+ - rtsp-stream: preroll on gap events
+ - rtsp-media: do not unblock on unsuspend
+
+#### gstreamer-vaapi
+
+ - decoder: don't reply src caps query with allowed if pad is fixed
+ - plugins: decode: fix a DMA caps typo in `ensure_allowed_srcpad_caps`
+
+#### gstreamer-sharp
+
+ - Add bindings for some missing 1.18 API
+
+#### gst-omx
+
+ - omxvideodec: support `interlace-mode=interleaved` input
+
+#### gst-python
+
+ - no changes
+
+#### gst-editing-services
+
+ - ges: Do not recreate auto-transitions when changing clip assets
+ - ges: Fix a copy/paste mistake in meson file
+
+#### gst-integration-testsuites
+
+ - medias: Update for `h265parse` passthrough behavior change
+ - update `validate.test.h265parse.alternate` test
+
+#### gst-build
+
+ - windows: Detect Strawberry Perl and error out early
+ - {pygobject,pycairo}.wrap: point to stable refs
+
+#### Cerbero build tool and packaging changes in 1.18.1
+
+ - Add macOS Big Sur support
+ - gst-plugins-bad: Ship `rtpmanagerbad` plugin
+ - gstreamer-1.0: Don't enable DbgHelp for UWP build
+ - pango: fix font corruption on windows
+ - cairo: use thread local storage to grant one windows HDC per thread
+ - small fixes for Xcode 12
+ - cerbero: Re-add alsa-devel to bootstrap on Linux
+ - FreeType: update to 2.10.4 to fix security vulnerability
+
+#### Contributors to 1.18.1
+
+Aaron Boxer, Adam Williamson, Andrew Wesie, Arun Raghavan,
+Bastien Reboulet, Brent Gardner, Edward Hervey, François Laignel,
+Guillaume Desmottes, Havard Graff, He Junyan, Hosang Lee, Jacek Tomaszewski,
+Jakub Adam, Jan Alexander Steffens (heftig), Jan Schmidt, Jérôme Laheurte,
+Jordan Petridis, Marc Leeman, Marian Cichy, Marijn Suijten,
+Mathieu Duponchelle, Matthew Waters, Michael Tretter, Nazar Mokrynskyi,
+Nicolas Dufresne, Niklas Hambüchen, Nirbheek Chauhan, Olivier Crête,
+Philippe Normand, raghavendra, Ricky Tang, Sebastian Dröge, Seungha Yang,
+sohwan.park, Stéphane Cerveau, Thibault Saunier, Tim-Philipp Müller,
+Tom Schoonjans, Víctor Manuel Jáquez Leal, Will Miller, Xavier Claessens,
+Xℹ Ruoyao, Zebediah Figura,
+
+... and many others who have contributed bug reports, translations, sent
+suggestions or helped testing. Thank you all!
+
+#### List of merge requests and issues fixed in 1.18.1
+
+- [List of Merge Requests applied in 1.18.1](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.18.1)
+- [List of Issues fixed in 1.18.1](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.18.1)
 
 ## Schedule for 1.20
 

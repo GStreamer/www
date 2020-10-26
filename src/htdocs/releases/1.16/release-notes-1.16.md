@@ -1802,6 +1802,7 @@ from 1.16.2.
  - gst-inspect: Add define guard for `g_log_writer_supports_color()`
  - gst-launch: go back down to `GST_STATE_NULL` in one step.
  - device-monitor: list hidden providers before listing devices
+ - autotools build fixes for GNU make 4.3
 
 #### gst-plugins-base
 
