@@ -193,7 +193,7 @@ Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
 * Android Universal [1.18.2 tarball](/data/pkg/android/1.18.2/gstreamer-1.0-android-universal-1.18.2.tar.xz)
-* Android Universal [1.16.3 tarball](/data/pkg/android/1.16.3/gstreamer-1.0-android-universal-1.16.3.tar.xz)
+* Android Universal [1.16.3 tarball](/data/pkg/android/1.16.3/gstreamer-1.0-android-universal-1.16.3.tar.bz2)
 
 The Android NDKs used by the stable releases are:
 
