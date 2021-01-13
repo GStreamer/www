@@ -11319,4 +11319,61 @@ Download tarballs directly here:
         </content>
   </item>
 
+    <item>
+      <date>2021-01-13 23:00</date>
+        <title>GStreamer 1.18.3 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release in the
+stable 1.18 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it should be safe to update from
+1.18.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+  <li>Fix ogg playback regression for ogg files that also have ID3 or APE tags</li>
+  <li>compositor: fix artefacts and invalid memory access when blending subsampled formats</li>
+  <li>exported mini object ref/unref/copy functions for use in bindings such as gstreamer-sharp</li>
+  <li>Add support for Apple silicon (M1) to cerbero package builder</li>
+  <li>Ship RIST plugin in binary packages</li>
+  <li>various stability, performance and reliability improvements</li>
+  <li>memory leak fixes</li>
+  <li>build fixes</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.18/#1.18.3">GStreamer 1.18.3 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        <p>
+Download tarballs directly here:
+<a href="&site;/src/gstreamer/gstreamer-1.18.3.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.18.3.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.18.3.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.18.3.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.18.3.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.18.3.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.18.3.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.18.3.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gst-editing-services-1.18.3.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-devtools/gst-devtools-1.18.3.tar.xz">gst-devtools</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.18.3.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.18.3.tar.xz">gstreamer-sharp</a>,
+<a href="&site;/src/gst-omx/gst-omx-1.18.3.tar.xz">gst-omx</a>, or
+<a href="&site;/src/gstreamer-docs/gstreamer-docs-1.18.3.tar.xz">gstreamer-docs</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
