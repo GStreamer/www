@@ -143,9 +143,14 @@ or would like to help out.
        <b>The QtGStreamer C++ bindings are very out of date and unmaintained.</b>
     </p>
     <p>
-       For integration with the Qt toolkit there is the <tt>qmlglsink</tt>
-       element in gst-plugins-bad (soon to be moved to gst-plugins-base or -good)
-       which is a video sink that renders to a QQuickItem in a QML application.
+       For integration with the Qt toolkit there is the
+       <a href="https://gstreamer.freedesktop.org/documentation/qmlgl/">qmlgl plugin</a>
+       in gst-plugins-good which provides the following elements:
+       <ul>
+       <li><tt>qmlglsink</tt>: a video sink that renders to a QQuickItem in a QML application</li>
+       <li><tt>qmlglsrc</tt>:  A video src that captures a window from a QML view</li>
+       <li><tt>qmlgloverlay</tt>:  afilter that renders a QML scene onto a video stream</li>
+       </ul>
     </p>
     <h2>Features</h2>
     <p>
