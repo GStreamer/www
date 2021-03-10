@@ -16,7 +16,7 @@
 <details>The VMNC decoder in gst-plugins-bad contains an integer overflow vulnerability,
     and a failure to initialise output memory</details>
 <impact>If successful, a malicious third party could trigger either a crash in an application
-    decoding a VMNC video stream, or an arbitratry code execution with the privileges of the target user.
+    decoding a VMNC video stream, or an arbitrary code execution with the privileges of the target user.
     The failure to initialise output memory may result in an information leak.
 </impact>
 <mitigation>Exploitation requires the user to access a VMNC stream or file.</mitigation>

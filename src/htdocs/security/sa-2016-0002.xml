@@ -17,7 +17,7 @@
 
 <details>The decoder for the FLC/FLI/FLX animation video formats in gst-plugins-good contains various out-of-bounds writes and reads and fails to initialise output frame memory</details>
 <impact>If successful, a malicious third party could trigger either a crash in an application
-  decoding a FLC/FLI/FLX video stream, or an arbitratry code execution with the privileges of the target user.
+  decoding a FLC/FLI/FLX video stream, or an arbitrary code execution with the privileges of the target user.
   The failure to initialise output memory may result in an information leak.</impact>
 <mitigation>Exploitation requires the user to access a FLC/FLI/FLX stream or file.</mitigation>
 <workarounds>The user should refrain from opening files from untrusted third parties or accessing untrusted remote sites, or
