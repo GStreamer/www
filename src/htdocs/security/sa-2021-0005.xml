@@ -1,0 +1,36 @@
+<?xml-stylesheet href="advisory-detail.xsl" type="text/xsl"?>
+<!DOCTYPE xsl:stylesheet
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+<advisory>
+<id>2021-0005</id>
+<!-- <alternate-name>CVE-2021-XXXX</alternate-name> -->
+<date>2021-03-15 16:00</date>
+<summary>Stack overflow in gst_ffmpeg_channel_layout_to_gst()</summary>
+<affected-versions>GStreamer gst-libav 1.x &lt;= 1.18.3</affected-versions>
+
+<details>GStreamer before 1.18.4 might cause stack corruptions with streams that have more than 64 audio channels</details>
+<impact>It might be possible for a malicious third party to trigger a crash in the application.</impact>
+<mitigation></mitigation>
+<workarounds></workarounds>
+<solution></solution>
+<solution>The gst-libav 1.18.4 release addresses the issue. People using older branches of GStreamer should apply the patch and recompile.</solution>
+<references>
+    <reference>
+        <title>The GStreamer project</title>
+        <content> <a href="https://gstreamer.freedesktop.org">https://gstreamer.freedesktop.org</a></content>
+    </reference>
+<!--
+    <reference>
+    <title> CVE Database Entries </title>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-XXXX">CVE-2021-XXXX</a>  </content>
+    </reference>
+-->
+    <reference><title>GStreamer 1.18.4 release</title> <content><a href="https://gstreamer.freedesktop.org/releases/1.18/#1.18.4">Release Notes</a> 
+            <a href="https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.18.4.tar.xz">GStreamer plugin for the FFmpeg libav* libraries 1.18.4</a></content></reference>
+
+    <reference><title>Patches</title> <content><a href="https://gitlab.freedesktop.org/gstreamer/gst-libav/-/commit/a339f8f9641382b92b43e6d146bdc5d87a9704f8?merge_request_iid=121">Patch 1</a></content></reference>
+</references>
+</advisory>
