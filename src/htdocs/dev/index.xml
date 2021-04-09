@@ -86,15 +86,14 @@ wiki page.
 <H1>Continuous integration: Build bots and validation</H1>
 
 <p>
-Commits to Git are verified by our build cluster. This does automated checkouts
-on a series of slaves and runs the build there, as well as an extensive media
-validation test suite. If a commit breaks a build it is announced in
-the <a href="irc://irc.freenode.net/gstreamer"><tt>#gstreamer</tt> IRC channel</a>
-and on the <a href="https://ci.gstreamer.net/">GStreamer Continuous Integration</a>
-website.
+Git branches and merge requests are verified by our GitLab CI setup.
 </p>
-
-<p>This will eventually be merged to use GitLab-CI in a near future</p>
+<p>
+By default the full build and test suite will only be run once a merge request
+is assigned to be merged, but it's also possible to trigger it manually by
+pressing the 'Play' button on the pipeline or manifest job for a branch or
+merge request.
+</p>
 
 <H1>Language Bindings</H1>
                                                                                 
