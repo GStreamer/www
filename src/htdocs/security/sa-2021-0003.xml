@@ -6,7 +6,7 @@
 ]>
 <advisory>
 <id>2021-0003</id>
-<!-- <alternate-name>CVE-2021-XXXX</alternate-name> -->
+<alternate-name>CVE-2021-3498</alternate-name>
 <date>2021-03-15 16:00</date>
 <summary>Heap corruption in matroska demuxing</summary>
 <affected-versions>GStreamer gst-plugins-good 1.x &lt;= 1.18.3</affected-versions>
@@ -22,12 +22,10 @@
         <title>The GStreamer project</title>
         <content> <a href="https://gstreamer.freedesktop.org">https://gstreamer.freedesktop.org</a></content>
     </reference>
-<!--
     <reference>
     <title> CVE Database Entries </title>
-    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-XXXX">CVE-2021-XXXX</a>  </content>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3498">CVE-2021-3498</a>  </content>
     </reference>
--->
     <reference><title>GStreamer 1.18.4 release</title> <content><a href="https://gstreamer.freedesktop.org/releases/1.18/#1.18.4">Release Notes</a> 
             <a href="https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.18.4.tar.xz">GStreamer Plugins Good 1.18.4</a></content></reference>
 
