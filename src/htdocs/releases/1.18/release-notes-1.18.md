@@ -1223,7 +1223,11 @@ Note: UWP binary packages are tarballs, not MSI installers.
 
 ## Known Issues
 
-- None in particular
+- GStreamer 1.18 versions <= 1.18.4 may fail to build on Linux with the
+  upcoming/latest Meson release 0.58 due to [an issue](https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/-/merge_requests/1125)
+  with the include directories. Either apply the patch or build with an older
+  Meson version (<= 0.57) until there is a GStreamer 1.18.5 release that includes
+  the fix.
 
 ## Contributors
 
