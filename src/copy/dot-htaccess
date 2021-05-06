@@ -9,6 +9,10 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^(www\.)?gstreamer\.(net|com)$ [NC]
 RewriteRule .* http://gstreamer.freedesktop.org%{REQUEST_URI} [R=301,L]
 
+# Old API + plugins reference (TODO: add more)
+RedirectMatch 301 ^/data/doc/gstreamer/.*/gst-plugins-gl-plugins/ /documentation/opengl/
+RedirectMatch 301 ^/data/doc/gstreamer/.*/gst-plugins-gl-libs/ /documentation/gl/
+
 # Application Development Manual
 RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/ch04s02.html$ /documentation/application-development/
 RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/chapter-autoplugging.html /documentation/application-development/advanced/autoplugging.html
