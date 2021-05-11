@@ -87,8 +87,9 @@ See <a href="https://crates.io/crates/gstreamer">crates.io</a>.
     <status>Released. See the <a href="http://ftp.gnome.org/pub/gnome/sources/gstreamermm/">gstreamermm</a> GNOME module.</status>
 <body>
 <p>
-The GStreamer API C++ bindings are actively developed and based on
-<a href="http://www.gtkmm.org">gtkmm</a>, using the same lifecycle mechanism.
+The GStreamer API C++ bindings are based on <a href="http://www.gtkmm.org">gtkmm</a>.
+They are currently not actively developed and won't compile with the latest GStreamer
+and glibmm versions.
 </p>
 <p>
 The latest version can be downloaded from the
