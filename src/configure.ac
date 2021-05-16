@@ -38,6 +38,7 @@ htdocs/releases/1.12/Makefile
 htdocs/releases/1.14/Makefile
 htdocs/releases/1.16/Makefile
 htdocs/releases/1.18/Makefile
+htdocs/releases/1.20/Makefile
 htdocs/releases/gst-editing-services/Makefile
 htdocs/releases/gst-editor/Makefile
 htdocs/releases/gst-ffmpeg/Makefile

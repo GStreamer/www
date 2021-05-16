@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+  %site-entities;
+  <!ENTITY % w3centities-f PUBLIC "-//W3C//ENTITIES Combined Set//EN//XML"
+    "http://www.w3.org/2003/entities/2007/w3centities-f.ent">
+  %w3centities-f;
+  <!ENTITY release-notes SYSTEM "release-notes-1.20.html">
+]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+<title>GStreamer 1.20 release notes</title>
+
+<body>
+
+&release-notes;
+
+</body>
+</page>
