@@ -6,7 +6,7 @@
 ]>
 <advisory>
 <id>2021-0001</id>
-<!-- <alternate-name>CVE-2021-XXXX</alternate-name> -->
+<alternate-name>CVE-2021-3522</alternate-name>
 <date>2021-03-15 16:00</date>
 <summary>Out-of-bounds read in ID3v2 tag parsing</summary>
 <affected-versions>GStreamer gst-plugins-base 1.x &lt;= 1.18.3, 0.10.36</affected-versions>
