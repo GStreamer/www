@@ -207,7 +207,7 @@ For help and support, please subscribe to and send questions to the
 gstreamer-devel mailing list (see below for details).
 </p>
 <p>
-There is also a #gstreamer IRC channel on the Freenode IRC network.
+Find us on IRC at #gstreamer.
 </p>
 
 <h2>Developers</h2>

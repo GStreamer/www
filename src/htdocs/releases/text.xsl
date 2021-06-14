@@ -173,7 +173,7 @@ Please submit patches via bugzilla as well.
 For help and support, please subscribe to and send questions to the
 gstreamer-devel mailing list (see below for details).
 
-There is also a #gstreamer IRC channel on the Freenode IRC network.
+Find us on IRC at #gstreamer.
 
 ==== Developers ====
 
