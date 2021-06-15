@@ -11499,5 +11499,24 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer">Gitlab</a>.
 </p>
         </content>
   </item>
+  <item>
+    <date>2021-06-15 08:30</date>
+    <title>IRC Channel has moved from Freenode to OFTC</title>
+    <content>
+      <p>
+        Due to the widely reported issues at the Freenode IRC network, the
+        official GStreamer discussion IRC channel has moved to #gstreamer on
+        the OFTC IRC network alongside other Freedesktop projects.
+      </p>
+        You can connect to it with your existing <a href="irc://irc.oftc.net/gstreamer">IRC client</a>,
+        or using <a href="https://matrix.to/#_oftc_%23gstreamer:matrix.org">Matrix</a> which
+        has a browser client and native apps for all platforms.
+      </p>
+      <p>
+        For more information, please see
+        <a href="https://lists.freedesktop.org/archives/gstreamer-devel/2021-June/078449.html">the mailing list announcement</a>.
+      </p>
+    </content>
+  </item>
 
 </news>
