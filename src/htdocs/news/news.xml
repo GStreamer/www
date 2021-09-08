@@ -11570,4 +11570,79 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer">Gitlab</a>.
         </content>
   </item>
 
+    <item>
+      <date>2021-09-08 23:30</date>
+        <title>GStreamer 1.18.5 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release in the
+stable 1.18 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and <a href="&site;/security/">important security fixes</a>,
+and it should be safe to update from 1.18.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+  <li>basesink: fix reverse frame stepping</li>
+  <li>downloadbuffer/sparsefile: several fixes for win32</li>
+  <li>systemclock: Update monotonic reference time when re-scheduling, fixes high CPU usage with gnome-music when pausing playback</li>
+  <li>audioaggregator: fix glitches when resyncing on discont</li>
+  <li>compositor: Fix NV12 blend operation</li>
+  <li>rtspconnection: Add IPv6 support for tunneled mode</li>
+  <li>avidemux: fix playback of some H.264-in-AVI streams</li>
+  <li>jpegdec: Fix crash when interlaced field height is not DCT block size aligned</li>
+  <li>qmlglsink: Keep old buffers around a bit longer if they were bound by QML</li>
+  <li>qml: qtitem: don't potentially leak a large number of buffers</li>
+  <li>rtpjpegpay: fix image corruption when compiled with MSVC on Windows</li>
+  <li>rtspsrc: seeking improvements</li>
+  <li>rtpjitterbuffer: Avoid generation of invalid timestamps</li>
+  <li>rtspsrc: Fix behaviour of select-streams, new-manager, request-rtcp-key and before-send signals with GLib >= 2.62</li>
+  <li>multiudpsink: Fix broken SO_SNDBUF get/set on Windows</li>
+  <li>openh264enc: fix broken sps/pps header generation and some minor leaks</li>
+  <li>mpeg2enc: fix interlace-mode detection and unbound memory usage if encoder can't keep up</li>
+  <li>mfvideosrc: Fix for negative MF stride and for negotiation when interlace-mode is specified</li>
+  <li>tsdemux: fix seek-with-stop regression and decoding errors after seeking with dvdlpcmdec</li>
+  <li>rtsp-server: seek handling improvements</li>
+  <li>gst-libav: fix build (and other issues) with ffmpeg 4.4</li>
+  <li>cerbero: spandsp: Fix build error with Visual Studio 2019</li>
+  <li>win32 packages: Fix hang in GLib when `G_SLICE` environment variable is set</li>
+  <li>various stability, performance and reliability improvements</li>
+  <li>memory leak fixes</li>
+  <li>build fixes</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.18/#1.18.5">GStreamer 1.18.5 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        <p>
+Download tarballs directly here:
+<a href="&site;/src/gstreamer/gstreamer-1.18.5.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.18.5.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.18.5.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.18.5.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.18.5.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.18.5.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.18.5.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.18.5.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gst-editing-services-1.18.5.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-devtools/gst-devtools-1.18.5.tar.xz">gst-devtools</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.18.5.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.18.5.tar.xz">gstreamer-sharp</a>,
+<a href="&site;/src/gst-omx/gst-omx-1.18.5.tar.xz">gst-omx</a>, or
+<a href="&site;/src/gstreamer-docs/gstreamer-docs-1.18.5.tar.xz">gstreamer-docs</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
