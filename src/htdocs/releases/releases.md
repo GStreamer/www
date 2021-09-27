@@ -1,11 +1,11 @@
 # GStreamer Releases
 
 - **Latest stable release:** [1.18.5][latest-stable]
-- **Latest development release:** [1.19.1][1.19.1], [git master][latest-devel]
+- **Latest development release:** [1.19.2][1.19.2], [git main][latest-devel]
 
 [latest-stable]: https://gstreamer.freedesktop.org/releases/1.18/#1.18.5
 [latest-devel]: https://gitlab.freedesktop.org/gstreamer/
-[1.19.1]: https://lists.freedesktop.org/archives/gstreamer-devel/2021-June/078348.html
+[1.19.2]: https://lists.freedesktop.org/archives/gstreamer-devel/2021-September/079019.html
 
 ### Older releases
 
