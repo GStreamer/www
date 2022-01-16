@@ -11834,9 +11834,6 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer">Gitlab</a>.
   already part of the 0.17.x bugfix releases.
 </p>
 <p>
-  A new release of the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust plugins</a> will follow in the next days.
-</p>
-<p>
   Details can be found in the release notes for <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/-/blob/0.18.0/gstreamer/CHANGELOG.md#0180-2022-01-16">gstreamer-rs</a>.
 </p>
 <p>
