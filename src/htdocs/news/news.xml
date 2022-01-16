@@ -11805,4 +11805,53 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer">Gitlab</a>.
         </content>
   </item>
 
+    <item>
+      <date>2022-01-16 11:00</date>
+        <title>GStreamer Rust bindings 0.18.0 release</title>
+        <content>
+<p>
+  A new version of the <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust bindings</a>, 0.18.0, was released.
+  Together with the bindings, also a new version of the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust plugins</a> was released.
+</p>
+<p>
+  As usual this release follows the latest gtk-rs release and the corresponding API changes.
+</p>
+<p>
+  This release includes optional support for the latest new GStreamer
+  1.20 APIs. As GStreamer 1.20 was not released yet, these new APIs might
+  still change. The minimum supported version of the bindings is still
+  GStreamer 1.8 and the targetted GStreamer API version can be selected by
+  applications via feature flags.
+</p>
+<p>
+  Apart from this, the new version features a lot of API cleanup and
+  improvements, and the addition of a few missing bindings. As
+  usual, the focus of this release was to make usage of GStreamer from Rust as
+  convenient and complete as possible.
+</p>
+<p>
+  The new release also brings a lot of bugfixes, most of which were
+  already part of the 0.17.x bugfix releases.
+</p>
+<p>
+  A new release of the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust plugins</a> will follow in the next days.
+</p>
+<p>
+  Details can be found in the release notes for <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/-/blob/0.18.0/gstreamer/CHANGELOG.md#0180-2022-01-16">gstreamer-rs</a>.
+</p>
+<p>
+  The code and documentation for the bindings is available on the freedesktop.org GitLab
+    <ul>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust Bindings</a> (<a href="https://gstreamer.pages.freedesktop.org/gstreamer-rs/stable/0.18/docs/">documentation</a>)</li>
+    </ul>
+  as well as on <a href="https://crates.io">crates.io</a>.
+</p>
+<p>
+  If you find any bugs, notice any missing features or other issues please
+  report them in
+  <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/issues/new">GitLab</a>.
+</p>
+        </content>
+  </item>
+
 </news>
