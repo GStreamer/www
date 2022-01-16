@@ -11814,7 +11814,7 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer">Gitlab</a>.
   Together with the bindings, also a new version of the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust plugins</a> was released.
 </p>
 <p>
-  As usual this release follows the latest gtk-rs release and the corresponding API changes.
+  As usual this release follows the latest <a href="https://gtk-rs.org/blog/2022/01/16/new-release.html">gtk-rs 0.15 release</a> and the corresponding API changes.
 </p>
 <p>
   This release includes optional support for the latest new GStreamer
