@@ -4,8 +4,14 @@
 - **Latest development release:** [1.19.3][1.19.3], [git main][latest-devel]
 
 [latest-stable]: https://gstreamer.freedesktop.org/releases/1.18/#1.18.5
-[latest-devel]: https://gitlab.freedesktop.org/gstreamer/
+[latest-devel]: https://gitlab.freedesktop.org/gstreamer/gstreamer/
 [1.19.3]: https://lists.freedesktop.org/archives/gstreamer-devel/2021-November/079212.html
+
+### Current release
+
+The current API and ABI stable GStreamer 1.x series is:
+
+- [GStreamer 1.18 release series](https://gstreamer.freedesktop.org/releases/1.18/)
 
 ### Older releases
 
