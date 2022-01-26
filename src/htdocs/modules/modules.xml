@@ -38,8 +38,8 @@ A wide range of video and audio decoders, encoders, and filters are included.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>&gst-plugins-base-version-stable;</stable>
-      <devel>&gst-plugins-base-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -55,8 +55,8 @@ plug-in code, LGPL or LGPL-compatible for the supporting library).
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>&gst-plugins-good-version-stable;</stable>
-      <devel>&gst-plugins-good-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -73,8 +73,8 @@ code might be widely known to present patent problems.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>&gst-plugins-ugly-version-stable;</stable>
-      <devel>&gst-plugins-ugly-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -91,8 +91,8 @@ real live maintainer, or some actual wide use.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>&gst-plugins-bad-version-stable;</stable>
-      <devel>&gst-plugins-bad-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -107,8 +107,8 @@ the Libav library code.  It contains many popular decoders and encoders.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>&gst-libav-version-stable;</stable>
-      <devel>&gst-libav-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -122,8 +122,8 @@ GStreamer python overrides for the gobject-introspection-based pygst bindings.
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>&gst-python-version-stable;</stable>
-      <devel>&gst-python-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -137,8 +137,8 @@ Library for creating audio/video editors.
     </description>
     <maintainer>Thibault Saunier</maintainer>
     <versions>
-      <stable>&gst-editing-services-version-stable;</stable>
-      <devel>&gst-editing-services-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -152,8 +152,8 @@ RTSP server library based on GStreamer
     </description>
     <maintainer>GStreamer Team</maintainer>
     <versions>
-      <stable>&gst-rtsp-server-version-stable;</stable>
-      <devel>&gst-rtsp-server-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -167,8 +167,8 @@ RTSP server library based on GStreamer
     </description>
     <maintainer>Stephan Sundermann, Sebastian Dröge</maintainer>
     <versions>
-      <stable>&gstreamer-sharp-version-stable;</stable>
-      <devel>&gstreamer-sharp-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -183,8 +183,8 @@ Replaces gst-openmax.
     </description>
     <maintainer>Sebastian Dröge</maintainer>
     <versions>
-      <stable>&gst-omx-version-stable;</stable>
-      <devel>&gst-omx-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -199,8 +199,8 @@ for GStreamer.
     </description>
     <maintainer>Sreerenj Balachandran, Víctor M. Jáquez L., GStreamer Team</maintainer>
     <versions>
-      <stable>&gst-vaapi-version-stable;</stable>
-      <devel>&gst-vaapi-version-devel;</devel>
+      <stable>&gst-version-stable;</stable>
+      <devel>&gst-version-devel;</devel>
     </versions>
     <status>active</status>
   </module>
@@ -251,25 +251,10 @@ language-like programs that operate on arrays of data.
     </description>
     <maintainer></maintainer>
     <versions>
-      <stable>&qt-gstreamer-version-stable;</stable>
-      <devel>&qt-gstreamer-version-devel;</devel>
+      <stable>N/A</stable>
+      <devel>N/A</devel>
     </versions>
-    <status>not actively maintained</status>
-  </module>
-
-  <module>
-    <id>gst-streaming-server</id>
-    <blurb>Streaming server</blurb>
-    <title>GStreamer Streaming Server</title>
-    <description>
-Streaming server based on GStreamer
-    </description>
-    <maintainer></maintainer>
-    <versions>
-      <stable>&gst-streaming-server-version-stable;</stable>
-      <devel>&gst-streaming-server-version-devel;</devel>
-    </versions>
-    <status>not actively maintained</status>
+    <status>abandoned</status>
   </module>
 
   <module>
@@ -281,12 +266,12 @@ GNonLin contains a set of plug-ins for GStreamer to ease the
 creation of multimedia editors, or any other application where a
 timeline-oriented use of GStreamer makes sense.
     </description>
-    <maintainer>GStreamer Team</maintainer>
+    <maintainer></maintainer>
     <versions>
-      <stable>&gnonlin-version-stable;</stable>
-      <devel>git master</devel>
+      <stable>obsolete</stable>
+      <devel>obsolete</devel>
     </versions>
-    <status>deprecated (replacement by gnl in gst-editing-services)</status>
+    <status>deprecated (replaced by gnl in gst-editing-services)</status>
   </module>
 
 </modules>
