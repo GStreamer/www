@@ -45,6 +45,7 @@ As always, this release is again packed with many new features, bug fixes and ot
 - Improved support for custom minimal GStreamer builds
 - Support build against FFmpeg 5.0
 - Linux Stateless CODEC support gained MPEG2 and VP9
+- Windows Direct3D11/DXVA decoder gained AV1 and MPEG2 support
 - Lots of new plugins, features, performance improvements and bug fixes
 
 ## Major new features and changes
