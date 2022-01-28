@@ -439,7 +439,7 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
 
 - **rtspsrc**: now supports IPv6 also for tunneled mode (RTSP-over-HTTP); new `"ignore-x-server-reply"` property to ignore the `x-server-ip-address` server header reply in case of HTTP tunneling, as it is often broken.
 
-- **souphttpsrc**: Runtime compatibility support for libsoup2 and libsoup3. libsoup3 is the latest major version of libsoup, but libsoup2 and libsoup3 can't co-exist in the same process because there is no namespacing or versioning for GObject types. As a result, it would be awkward if the GStreamer souphttpsrc plugin linked to a specific version of libsoup, because it would only work with applications that use the same version of libsoup. To make this work, the soup plugin now tries to determine the libsoup version used by the application (and its other dependencies) at runtime on systems where GStreamer is linked dynamically. libsoup3 support is still considered somewhat experimental at this point.
+- **souphttpsrc**: Runtime compatibility support for libsoup2 and libsoup3. libsoup3 is the latest major version of libsoup, but libsoup2 and libsoup3 can't co-exist in the same process because there is no namespacing or versioning for GObject types. As a result, it would be awkward if the GStreamer souphttpsrc plugin linked to a specific version of libsoup, because it would only work with applications that use the same version of libsoup. To make this work, the soup plugin now tries to determine the libsoup version used by the application (and its other dependencies) at runtime on systems where GStreamer is linked dynamically. libsoup3 support is still considered somewhat experimental at this point. **Distro packagers** please take note of the souphttpsrc plugin dependency changes mentioned in the build and dependencies section below.
 
 - **srtsrc**, **srtsink**: add signals for the application to accept/reject incoming connections
 
@@ -823,6 +823,8 @@ This library only handles section parsing and such, see above for changes to the
 - The GLib requirement has been bumped to GLib 2.56 or newer (from March 2018).
 
 - The `wpe` plugin now requires wpe >= 2.28 and wpebackend-fdo >= 1.8
+
+- The `souphttpsrc` plugin is no longer linked against libsoup but instead tries to pick up either libsoup2 or libsoup3 dynamically at runtime. **Distro packagers** please ensure to add a dependency on one of the libsoup runtimes to the gst-plugins-good package so that there is actually a libsoup for the plugin to find!
 
 ### Explicit opt-in required for build of certain plugins with (A)GPL dependencies
 
