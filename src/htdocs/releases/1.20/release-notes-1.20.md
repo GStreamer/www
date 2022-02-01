@@ -1,6 +1,6 @@
 # GStreamer 1.20 Release Notes
 
-GStreamer 1.20 has not been released yet. It is scheduled for release in late January / early February 2022.
+GStreamer 1.20 has not been released yet. It is scheduled for release in early February 2022.
 
 1.19.x is the unstable development version that is being developed in the git main branch and which will eventually result in 1.20, and 1.19.90 is the first release candidate in that series (1.20rc1).
 
@@ -28,24 +28,24 @@ As always, this release is again packed with many new features, bug fixes and ot
 - Compositor: multi-threaded video conversion and mixing
 - RTP header extensions: unified support in RTP depayloader and payloader base classes
 - SMPTE 2022-1 2-D Forward Error Correction support
-- Smart encoding (passthrough) support for VP8, VP9, H.265 in encodebin and transcodebin
+- Smart encoding (pass through) support for VP8, VP9, H.265 in encodebin and transcodebin
 - Runtime compatibility support for libsoup2 and libsoup3 (libsoup3 support experimental)
 - Video decoder subframe support
 - Video decoder automatic packet-loss, data corruption, and keyframe request handling for RTP / WebRTC / RTSP
-- MP4 and Matroska muxers now support profile/level/resolution changes for H264/H265 input streams (i.e. codec data changing on the fly)
-- MP4 muxing mode that initially creates a fragmented mp4 which is converted to a regular mp4 on EOS
+- mp4 and Matroska muxers now support profile/level/resolution changes for H.264/H.265 input streams (i.e. codec data changing on the fly)
+- mp4 muxing mode that initially creates a fragmented mp4 which is converted to a regular mp4 on EOS
 - Audio support for the WebKit Port for Embedded (WPE) web page source element
 - CUDA based video color space convert and rescale elements and upload/download elements
 - NVIDIA `memory:NVMM` support for OpenGL `glupload` and `gldownload` elements
 - Many WebRTC improvements
-- The new VA-API plugin implemention fleshed out with more decoders and new postproc elements
+- The new VA-API plugin implementation fleshed out with more decoders and new postproc elements
 - AppSink API to retrieve events in addition to buffers and buffer lists
 - AppSrc gained more configuration options for the internal queue (leakiness, limits in buffers and time, getters to read current levels)
 - Updated Rust bindings and many new Rust plugins
 - Improved support for custom minimal GStreamer builds
 - Support build against FFmpeg 5.0
-- Linux Stateless CODEC support gained MPEG2 and VP9
-- Windows Direct3D11/DXVA decoder gained AV1 and MPEG2 support
+- Linux Stateless CODEC support gained MPEG-2 and VP9
+- Windows Direct3D11/DXVA decoder gained AV1 and MPEG-2 support
 - Lots of new plugins, features, performance improvements and bug fixes
 
 ## Major new features and changes
@@ -58,7 +58,7 @@ As always, this release is again packed with many new features, bug fixes and ot
 
 The GStreamer multimedia framework is a set of libraries and plugins split into a number of distinct modules which are released independently and which have so far been developed in separate git repositories in freedesktop.org GitLab.
 
-In addition to these separate git repositories there was a gst-build module that would use the Meson build systems's subproject feature to download each individual module and then build everything in one go. It would also provide an uninstalled development environment that made it easy to work on GStreamer and use or test versions other than the system-installed GStreamer version.
+In addition to these separate git repositories there was a gst-build module that would use the Meson build system's subproject feature to download each individual module and then build everything in one go. It would also provide an uninstalled development environment that made it easy to work on GStreamer and use or test versions other than the system-installed GStreamer version.
 
 All of these modules have now (as of 28 September 2021) been merged into a single git repository ("Mono repository" or "monorepo") which should simplify development workflows and continuous integration, especially where changes need to be made to multiple modules at once.
 
@@ -73,7 +73,7 @@ Modules will continue to be released as separate tarballs.
 For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
 
 [git-repo]: https://gitlab.freedesktop.org/gstreamer/gstreamer/
-[monoepo-faq]: https://gstreamer.freedesktop.org/documentation/frequently-asked-questions/mono-repository.html
+[monorepo-faq]: https://gstreamer.freedesktop.org/documentation/frequently-asked-questions/mono-repository.html
 
 #### GstPlay: new high-level playback library replacing GstPlayer
 
@@ -95,7 +95,7 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
 - The new `codecalpha` plugin contains various bits of infrastructure to support autoplugging and debugging:
     - `codecalphademux` splits out the alpha stream from the metas on the regular VP8/VP9 buffers
     - `alphacombine` takes two decoded raw video streams (one alpha, one the regular video) and combines it into a video stream with alpha
-    - `vp8alphadecodebin` + `vp9alphadecodebin` are wrapper bins that use the regular `vp8dec` and `vp9dec` software decoders to decode regular and alpha streams and combine them again. To decodebin these look like regular decoders which ju
+    - `vp8alphadecodebin` + `vp9alphadecodebin` are wrapper bins that use the regular `vp8dec` and `vp9dec` software decoders to decode regular and alpha streams and combine them again. To decodebin these look like regular decoders.
     - The V4L2 CODEC plugin has stateless VP8/VP9 decoders that can decode both alpha and non-alpha stream with a single decoder instance
 
 - A new `AV12` video format was added which is basically NV12 with an alpha plane, which is more convenient for many hardware-accelerated decoders.
@@ -144,7 +144,7 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
 
   `gst_app_sink_pull_object()` and `gst_app_sink_try_pull_object()` can be used to pull out either an event or a new sample carrying a buffer or buffer list, whatever is next in the queue.
 
-  `EOS` events will be filtered and will not be returned. EOS handling can be done the ususal way, same as with `_pull_sample()`.
+  `EOS` events will be filtered and will not be returned. EOS handling can be done the usual way, same as with `_pull_sample()`.
 
 - **appsrc**: allow configuration of internal queue limits in time and buffers and add leaky mode.
 
@@ -155,11 +155,12 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
   And as if that wasn't enough the internal queue can also be configured as leaky using the new `"leaky-type"` property. That way when the queue is full the application thread won't be blocked when it tries to push in more data, but instead either the new buffer will be dropped or the oldest data in the queue will be dropped.
 
 #### Better string serialization of nested GstCaps and GstStructures
+
 - New string serialisation format for structs and caps that can handle nested structs and caps properly by using brackets to delimit nested items (e.g. `some-struct, some-field=[nested-struct, nested=true]`). Unlike the default format the new variant can also support more than one level of nesting. For backwards-compatibility reasons the old format is still output by default when serialising caps and structs using the existing API. The new functions `gst_caps_serialize()` and `gst_structure_serialize()` can be used to output strings in the new format.
 
 #### Convenience API for custom GstMetas
 
-- New convenience API to register and create custom GstMetas: `gst_meta_register_custom()` and `gst_buffer_add_custom_meta()`. Such custom meta is backed by a `GstStructure` and does not require that users of the API expose their `GstMeta` implementation as public API for other components to make use of it. In addition, it provides a simpler interface by ignoring the impl vs. api distinction that the regular API exposes. This new API is meant to be the meta counterpart to custom events and messages, and to be more convenient than the lower-level API when the absolute best performance isn't a requirement. The reason it's less performant than a "proper" meta is that a proper meta is just a C struct in the end whereas this goes through the `GstStructure` API which has a bit more overhead, which for most scenarios is negligible however. This new API is useful for experimentation or proprietary metas, but also has some limitations: it can only be used if there's a single producer of these metas; it's not allowed to register the same custom meta multiple times or from multiple places.
+- New convenience API to register and create custom GstMetas: `gst_meta_register_custom()` and `gst_buffer_add_custom_meta()`. Such custom meta is backed by a `GstStructure` and does not require that users of the API expose their `GstMeta` implementation as public API for other components to make use of it. In addition, it provides a simpler interface by ignoring the impl vs. api distinction that the regular API exposes. This new API is meant to be the meta counterpart to custom events and messages, and to be more convenient than the lower-level API when the absolute best performance isn't a requirement. The reason it's less performant than a "proper" meta is that a proper meta is just a C struct in the end whereas this goes through the `GstStructure` API which has a bit more overhead, which for most scenarios is negligible however. This new API is useful for experimentation or proprietary metas, but also has some limitations: it can only be used if there's a single producer of these metas; registering the same custom meta multiple times or from multiple places is not allowed.
 
 #### Additional Element Properties on Encoding Profiles
 
@@ -203,13 +204,13 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
 
 - Element registration and registration of other plugin features inside plugin init functions has been improved in order to facilitate minimal custom GStreamer builds.
 
-- A number of new macros have been added to declare and create per-element and per-pluginfeature register functions in all plugins, and then call those from the per-plugin plugin_init functions:
+- A number of new macros have been added to declare and create per-element and per-plugin feature register functions in all plugins, and then call those from the per-plugin plugin_init functions:
     - `GST_ELEMENT_REGISTER_DEFINE`, `GST_DEVICE_PROVIDER_REGISTER_DEFINE`, `GST_DYNAMIC_TYPE_REGISTER_DEFINE`, `GST_TYPE_FIND_REGISTER_DEFINE` for the actual registration call with GStreamer
     - `GST_ELEMENT_REGISTER`, `GST_DEVICE_PROVIDER_REGISTER`, `GST_DYNAMIC_TYPE_REGISTER`, `GST_PLUGIN_STATIC_REGISTER`, `GST_TYPE_FIND_REGISTER` to call the registration function defined by the `REGISTER_DEFINE` macro
     - `GST_ELEMENT_REGISTER_DECLARE`, `GST_DEVICE_PROVIDER_REGISTER_DECLARE`, `GST_DYNAMIC_TYPE_REGISTER_DECLARE`, `GST_TYPE_FIND_REGISTER_DECLARE` to declare the registration function defined by the `REGISTER_DEFINE` macro
     - and various variants for advanced use cases.
 
-- This means that applications can call the per-element and per-pluginfeature registration functions for only the elements they need instead of registering plugins as a whole with all kinds of elements that may not be required (e.g. encoder and decoder instead of just decoder). In case of static linking all unused functions and their dependencies would be removed in this case by the linker, which helps minimise binary size for custom builds.
+- This means that applications can call the per-element and per-plugin feature registration functions for only the elements they need instead of registering plugins as a whole with all kinds of elements that may not be required (e.g. encoder and decoder instead of just decoder). In case of static linking all unused functions and their dependencies would be removed in this case by the linker, which helps minimise binary size for custom builds.
 
 - `gst_init()` will automatically call a `gst_init_static_plugins()` function if one exists.
 
@@ -238,7 +239,7 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
 
 - **openaptx**: aptX and aptX-HD codecs using libopenaptx (v0.2.0)
 
-- **qroverlay**, **debugqroverlay**: new elements that allows overlaying data on top of video in form of a QR code
+- **qroverlay**, **debugqroverlay**: new elements that allow overlaying data on top of video in the form of a QR code
 
 - **cvtracker**: new OpenCV-based tracker element
 
@@ -253,7 +254,7 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
     - **vadeinterlace**: : VA-API deinterlace filter
     - **vapostproc**: : VA-API postproc filter (color conversion, resizing, cropping, color balance, video rotation, skin tone enhancement, denoise, sharpen)
 
-  See Víctor's blog post ["GstVA in GStreamer 1.20"](https://blogs.igalia.com/vjaquez/2021/12/08/gstva-in-gstreamer-1-20/) for more details and what's coming up next. 
+  See Víctor's blog post ["GstVA in GStreamer 1.20"](https://blogs.igalia.com/vjaquez/2021/12/08/gstva-in-gstreamer-1-20/) for more details and what's coming up next.
 
 - **vaapiav1dec**: new AV1 decoder element (in gstreamer-vaapi)
 
@@ -276,9 +277,9 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
     - **awstranscribeparse**: Parses AWS audio transcripts into timed text buffers
     - **ccdetect**: Detects if valid closed captions are present in a closed captions stream
     - **cea608tojson**: Converts CEA-608 Closed Captions to a JSON representation
-    - **cmafmux**: CMAF fragmented MP4 muxer
-    - **dashmp4mux**: DASH fragmented MP4 muxer
-    - **isofmp4mux**: ISO fragmented MP4 muxer
+    - **cmafmux**: CMAF fragmented mp4 muxer
+    - **dashmp4mux**: DASH fragmented mp4 muxer
+    - **isofmp4mux**: ISO fragmented mp4 muxer
     - **ebur128level**: EBU R128 Loudness Level Measurement
     - **ffv1dec**: FFV1 video decoder
     - **gtk4paintablesink**: GTK4 video sink, which provides a `GdkPaintable` that can be rendered in various widgets
@@ -305,11 +306,10 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
     - **vp9alphadecodebin**: A bin to handle software decoding of VP9 with alpha
 
 - New hardware accelerated elements for Linux:
-    - **v4l2slmpeg2dec**: Support for Linux Stateless MPEG2 decoders
+    - **v4l2slmpeg2dec**: Support for Linux Stateless MPEG-2 decoders
     - **v4l2slvp9dec**: Support for Linux Stateless VP9 decoders
     - **v4l2slvp8alphadecodebin**: Support HW accelerated VP8 with alpha layer decoding
     - **v4l2slvp9alphadecodebin**: Support HW accelerated VP9 with alpha layer decoding
-
 
 [aesdec]: https://gstreamer.freedesktop.org/documentation/aes/aesdec.html
 [aesenc]: https://gstreamer.freedesktop.org/documentation/aes/aesenc.html
@@ -329,9 +329,9 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
 
 - **audiomixer**, **compositor**: improved handling of new inputs added at runtime. New API was added to the `GstAggregator` base class to allow subclasses to opt into an aggregation mode where inactive pads are ignored when processing input buffers (`gst_aggregator_set_ignore_inactive_pads()`, `gst_aggregator_pad_is_inactive()`). An "inactive pad" in this context is a pad which, in live mode, hasn't yet received a first buffer, but has been waited on at least once. What would happen usually in this case is that the aggregator would wait for data on this pad every time, up to the maximum configured latency. This would inadvertently push mixer elements in live mode to the configured latency envelope and delay processing when new inputs are added at runtime until these inputs have actually produced data. This is usually undesirable. With this new API, new inputs can be added (requested) and configured and they won't delay the data processing. Applications can opt into this new behaviour by setting the `"ignore-inactive-pads"` property on `compositor`, `audiomixer` or other `GstAudioAggregator`-based elements.
 
-- **cccombiner**: implement "scheduling" of captions. So far `cccombiner`'s behaviour was essentially that of a funnel: it strictly looked at input timestamps to associate together video and caption buffers. Now it will try to smoothly schedule caption buffers in order to have exactly one per output video buffer. This might involve rewriting input captions, for example when the input is CDP then sequence counters are rewritten, time codes are dropped and potentially re-injected if the input video frame had a time code meta. This can also lead to the input drifting from synchronization, when there isn't enough padding in the input stream to catch up. In that case the element will start dropping old caption buffers once the number of buffers in its internal queue reaches a certain limit (configurable via the `"max-scheduled"` property). The new original funnel-like behaviour can be restored by setting the `"scheduling"` property to FALSE.
+- **cccombiner**: implement "scheduling" of captions. So far `cccombiner`'s behaviour was essentially that of a funnel: it strictly looked at input timestamps to associate together video and caption buffers. Now it will try to smoothly schedule caption buffers in order to have exactly one per output video buffer. This might involve rewriting input captions, for example when the input is CDP then sequence counters are rewritten, time codes are dropped and potentially re-injected if the input video frame had a time code meta. This can also lead to the input drifting from synchronisation, when there isn't enough padding in the input stream to catch up. In that case the element will start dropping old caption buffers once the number of buffers in its internal queue reaches a certain limit (configurable via the `"max-scheduled"` property). The new original funnel-like behaviour can be restored by setting the `"scheduling"` property to FALSE.
 
-- **ccconverter**: new `"cdp-mode"` property to specify which sections to include in CDP packets (timecode, CC data, service info). Various software, including ffmpeg's Decklink support, fails parsing CDP packets that contain anything but CC data in the CDP packets.
+- **ccconverter**: new `"cdp-mode"` property to specify which sections to include in CDP packets (timecode, CC data, service info). Various software, including FFmpeg's Decklink support, fails parsing CDP packets that contain anything but CC data in the CDP packets.
 
 - **clocksync**: new `"sync-to-first"` property for automatic timestamp offset setup: if set clocksync will set up the `"ts-offset"` value based on the first buffer and the pipeline's running time when the first buffer arrived. The newly configured `"ts-offset"` in this case would be the value that allows outputting the first buffer without waiting on the clock. This is useful for example to feed a non-live input into an already-running pipeline.
 
@@ -342,7 +342,7 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
     - improved handling of new inputs at runtime via `"ignore-inactive-pads"`property (see above for details)
     - allow output format with alpha even if none of the inputs have alpha (also `glvideomixer` and other `GstVideoAggregator` subclasses)
 
-- **dashsink**: add h265 codec support and signals for allowing custom playlist/fragment output
+- **dashsink**: add H.265 codec support and signals for allowing custom playlist/fragment output
 
 - **decodebin3**:
     - improved decoder selection, especially for hardware decoders
@@ -357,7 +357,7 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
 
 - **encodebin**:
     - add "smart encoding" support for H.265, VP8 and VP9 (i.e. only re-encode where needed and otherwise pass through encoded video as-is).
-    - H264/H265 smart encoding improvements: respect user-specified stream-format, but if not specified default to avc3/hvc1 with in-band SPS/PPS/VPS signalling for more flexibility.
+    - H.264/H.265 smart encoding improvements: respect user-specified stream-format, but if not specified default to avc3/hvc1 with in-band SPS/PPS/VPS signalling for more flexibility.
     - new **encodebin2** element with dynamic/sometimes source pads in order to support the option of doing the muxing outside of `encodebin`, e.g. in combination with `splitmuxsink`.
     - add APIs to set element properties on encoding profiles (see below)
 
@@ -391,18 +391,18 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
 
 - **matroskademux**, **matroskamux**: Add support for [ffv1](https://en.wikipedia.org/wiki/FFV1), a lossless intra-frame video coding format.
 
-- **matroskamux**: accept in-band SPS/PPS/VPS for H264 and H265 (i.e. `stream-format` `avc3` and `hev1`) which allows on-the-fly profile/level/resolution changes.
+- **matroskamux**: accept in-band SPS/PPS/VPS for H.264 and H.265 (i.e. `stream-format` `avc3` and `hev1`) which allows on-the-fly profile/level/resolution changes.
 
 - **matroskamux**: new `"cluster-timestamp-offset"` property, useful for use cases where the container timestamps should map to some absolute wall clock time, for example.
 
 - **rtpsrc**: add `"caps"` property to allow explicit setting of the caps where needed
 
-- **mpegts**: support SCTE-35 passthrough via new `"send-scte35-events"` property on MPEG-TS demuxer `tsdemux`. When enabled, SCTE 35 sections (eg ad placement opportunities) are forwarded as events donwstream where they can be picked up again by `mpegtsmux`. This required a semantic change in the SCTE-35 section API: timestamps are now in running time instead of muxer pts.
+- **mpegts**: support SCTE-35 pass-through via new `"send-scte35-events"` property on MPEG-TS demuxer `tsdemux`. When enabled, SCTE 35 sections (e.g. ad placement opportunities) are forwarded as events downstream where they can be picked up again by `mpegtsmux`. This required a semantic change in the SCTE-35 section API: timestamps are now in running time instead of muxer pts.
 
 - **tsdemux**: Handle PCR-less MPEG-TS streams; more robust timestamp handling in certain corner cases and for poorly muxed streams.
 
 - **mpegtsmux**:
-    - More conformance improvements to make MPEG-TS analyzers happy:
+    - More conformance improvements to make MPEG-TS analysers happy:
         - PCR timing accuracy: Improvements to the way mpegtsmux outputs PCR observations in CBR mode, so that a PCR observation is always inserted when needed, so that we never miss the configured pcr-interval, as that triggers various MPEG-TS analyser errors.
         - Improved PCR/SI scheduling
     - Don't write PCR until PAT/PMT are output to make sure streams start cleanly with a PAT/PMT.
@@ -411,7 +411,7 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
 - **mp4mux**:
     - new `"first-moov-then-finalise"` mode for fragmented output where the output will start with a self-contained `moov` atom for the first fragment, and then produce regular fragments. Then at the end when the file is finalised, the initial `moov` is invalidated and a new `moov` is written covering the entire file. This way the file is a "fragmented mp4" file while it is still being written out, and remains playable at all times, but at the end it is turned into a regular mp4 file (with former fragment headers remaining as unused junk data in the file).
     - support H.264 `avc3` and H.265 `hvc1` stream formats as input where the codec data is signalled in-band inside the bitstream instead of caps/file headers.
-    - support profile/level/resolution changes for H264/H265 input streams (i.e. codec data changing on the fly). Each `codec_data` is put into its own SampleTableEntry inside the stsd, unless the input is in `avc3` stream format in which case it's written in-band an not in the headers.
+    - support profile/level/resolution changes for H.264/H.265 input streams (i.e. codec data changing on the fly). Each `codec_data` is put into its own SampleTableEntry inside the stsd, unless the input is in `avc3` stream format in which case it's written in-band and not in the headers.
 
 - **multifilesink**: new `""min-keyframe-distance""` property to make minimum distance between keyframes in `next-file=key-frame` mode configurable instead of hard-coding it to 10 seconds.
 
@@ -532,7 +532,7 @@ The following elements or plugins have been removed:
 
 - New API to create elements and set properties at construction time, which is not only convenient, but also allows GStreamer elements to have construct-only properties: `gst_element_factory_make_full()`, `gst_element_factory_make_valist()`, `gst_element_factory_make_with_properties()`, `gst_element_factory_create_full()`, `gst_element_factory_create_valist()`, `gst_element_factory_create_with_properties()`.
 
-- **[GstSharedTaskPool][shared-taskpool]**: new "shared" task pool subclass with slightly different default behaviour than the existing `GstTaskPool` which would create unlimited number of threads for new tasks. The shared taskpool creates up to N threads (default: 1) and then distributes pending tasks to those threads round-robin style, and blocks if no thread is available. It is possible to join tasks. This can be used by plugins to implement simple multi-threaded processing and is used for the new multi-threaded video conversion and compositing done in GstVideoAggregator, videoconverter and compositor.
+- **[GstSharedTaskPool][shared-taskpool]**: new "shared" task pool subclass with slightly different default behaviour than the existing `GstTaskPool` which would create unlimited number of threads for new tasks. The shared task pool creates up to N threads (default: 1) and then distributes pending tasks to those threads round-robin style, and blocks if no thread is available. It is possible to join tasks. This can be used by plugins to implement simple multi-threaded processing and is used for the new multi-threaded video conversion and compositing done in GstVideoAggregator, videoconverter and compositor.
 
 [shared-taskpool]: https://gstreamer.freedesktop.org/documentation/gstreamer/gsttaskpool.html?gi-language=c#GstSharedTaskPool
 
@@ -546,13 +546,13 @@ The following elements or plugins have been removed:
 
 - `gst_pb_utils_get_file_extension_from_caps()` returns a possible file extension for given caps.
 
-- `gst_codec_utils_h264_get_profile_flags_level()`: Parses profile, flags, and level from H264 AvcC `codec_data`. The format of H264 AVCC extradata/sequence_header is documented in the ITU-T H.264 specification section 7.3.2.1.1 as well as in ISO/IEC 14496-15 section 5.3.3.1.2.
+- `gst_codec_utils_h264_get_profile_flags_level()`: Parses profile, flags, and level from H.264 AvcC `codec_data`. The format of H.264 AVCC extradata/sequence_header is documented in the ITU-T H.264 specification section 7.3.2.1.1 as well as in ISO/IEC 14496-15 section 5.3.3.1.2.
 
-- `gst_codec_utils_caps_get_mime_codec()` to convert caps to a RFC 6381 compatible MIME codec string codec. Useful for providing the `codecs` field inside the `Content-Type` HTTP header for containerized formats, such as mp4 or matroska.
+- `gst_codec_utils_caps_get_mime_codec()` to convert caps to a RFC 6381 compatible MIME codec string codec. Useful for providing the `codecs` field inside the `Content-Type` HTTP header for container formats, such as mp4 or Matroska.
 
 ## GStreamer OpenGL integration library and plugins
 
-- **glcolorconvert**: added suppport for converting the video formats `A420`, `AV12`, `BGR`, `BGRA`, `RGBP` and `BGRP`.
+- **glcolorconvert**: added support for converting the video formats `A420`, `AV12`, `BGR`, `BGRA`, `RGBP` and `BGRP`.
 
 - Added support to `GstGLBuffer` for persistent buffer mappings where a Pixel Buffer Object (PBO) can be mapped by both the CPU and the GPU.  This removes a `memcpy()` when uploading textures or vertices particularly when software decoders (e.g. libav) are direct rendering into our memory.  Improves transfer performance significantly.  Requires OpenGL 4.4, `GL_ARB_buffer_storage` or `GL_EXT_buffer_storage`
 
@@ -634,11 +634,11 @@ This library only handles section parsing and such, see above for changes to the
 ### GstCodecs and Video Parsers
 
 - Support for render delays to improve throughput across all CODECs (used with NVDEC and V4L2).
-- lots of improvements to parsers and the codec parsing decoder base classes (H264, H265, VP8, VP9, AV1, MPEG-2) used for various hardware-accelerate decoder APIs. 
+- lots of improvements to parsers and the codec parsing decoder base classes (H.264, H.265, VP8, VP9, AV1, MPEG-2) used for various hardware-accelerated decoder APIs. 
 
 ### Bindings support
 
-- `gst_allocation_params_new()` allocates a `GstAllocationParams` struct on the heap. This should only be used by bindings (and freed via `gst_allocation_params_free()` then). In C code you would allocate this on the stack and only init it in place.
+- `gst_allocation_params_new()` allocates a `GstAllocationParams` struct on the heap. This should only be used by bindings (and freed via `gst_allocation_params_free()` afterwards). In C code you would allocate this on the stack and only init it in place.
 
 - `gst_debug_log_literal()` can be used to log a string to the debug log without going through any printf format expansion and associated overhead. This is mostly useful for bindings such as the Rust bindings which may have done their own formatting already .
 
@@ -687,13 +687,13 @@ This library only handles section parsing and such, see above for changes to the
 
 - `GstNetClientClock` will signal lost sync in case the remote time resets (e.g. because device power cycles), by emitting the "synced" signal with synced=FALSE parameter, so applications can take action.
 
-- `gst_value_deserialize_with_pspec()` allows deserialization with a hint for what the target GType should be. This allows for example passing arrays of flags through the command line or `gst_util_set_object_arg()`, eg: `foo="<bar,bar+baz>"`.
+- `gst_value_deserialize_with_pspec()` allows deserialisation with a hint for what the target GType should be. This allows for example passing arrays of flags through the command line or `gst_util_set_object_arg()`, eg: `foo="<bar,bar+baz>"`.
 
-- It's now allowed to create an empty `GstVideoOverlayComposition` without any rectangles by passing a `NULL` rectangle to `gst_video_overlay_composition_new()`. This is useful for bindings and simplifies application code in some places.
+- It's now possible to create an empty `GstVideoOverlayComposition` without any rectangles by passing a `NULL` rectangle to `gst_video_overlay_composition_new()`. This is useful for bindings and simplifies application code in some places.
 
 ## Tracing framework, debugging and testing improvements
 
-- New [`factories`][factories-tracer] tracer to list loaded elements (and other plugin features). This can be useful to collect a list of elements needed for an application, which then in turn can be used to create a tailored minimal GStreamer build that contains just the elements needed and nothing else.
+- New [`factories`][factories-tracer] tracer to list loaded elements (and other plugin features). This can be useful to collect a list of elements needed for an application, which in turn can be used to create a tailored minimal GStreamer build that contains just the elements needed and nothing else.
 - New `plugin-feature-loaded` tracing hook for use by tracers like the new `factories` tracer
 
 [factories-tracer]: https://gstreamer.freedesktop.org/documentation/coretracers/factories.html?gi-language=c#factories-page
@@ -735,7 +735,7 @@ This library only handles section parsing and such, see above for changes to the
 
 ## GStreamer RTSP server
 
-- `GstRTSPMediaFactory` gained API to disable RTCP (`gst_rtsp_media_factory_set_enable_rtcp()`, `"enable-rtcp"` property). Previously RTCP was always allowed for all RTSP medias. With this change it is possible to disable RTCP completely, no matter if the client wants to do RTCP or not.
+- `GstRTSPMediaFactory` gained API to disable RTCP (`gst_rtsp_media_factory_set_enable_rtcp()`, `"enable-rtcp"` property). Previously RTCP was always allowed for all RTSP medias. With this change it is possible to disable RTCP completely, irrespective of whether the client wants to do RTCP or not.
 
 - Make a mount point of `/` work correctly. While not allowed by the RTSP 2 spec, the RTSP 1 spec is silent on this and it is used in the wild. It is now possible to use `/` as a mount path in gst-rtsp-server, e.g. `rtsp://example.com/` would work with this now. Note that query/fragment parts of the URI are not necessarily correctly handled, and behaviour will differ between various client/server implementations; so use it if you must but don't bug us if it doesn't work with third party clients as you'd hoped.
 
@@ -751,11 +751,11 @@ This library only handles section parsing and such, see above for changes to the
 
 - new AV1 decoder element (`vaapiav1dec`)
 
-- H264 decoder: handle stereoscopic 3D video with frame packing arrangement SEI messages
+- H.264 decoder: handle stereoscopic 3D video with frame packing arrangement SEI messages
 
-- H265 encoder: added Screen Content Coding extensions support
+- H.265 encoder: added Screen Content Coding extensions support
 
-- H265 decoder: gained `MAIN_444_12` profile support (decoded to `Y412_LE`), and 4:2:2 12-bits support (decoded to `Y212_LE`)
+- H.265 decoder: gained `MAIN_444_12` profile support (decoded to `Y412_LE`), and 4:2:2 12-bits support (decoded to `Y212_LE`)
 
 - vaapipostproc: gained BT2020 color standard support
 
@@ -807,7 +807,7 @@ This library only handles section parsing and such, see above for changes to the
 ## GStreamer C# Bindings
 
 - Fix `GstDebugGraphDetails` enum
-- Updated to latests GtkSharp
+- Updated to latest GtkSharp
 - Updated to include GStreamer 1.20 API
 
 ## GStreamer Rust Bindings and Rust Plugins
@@ -818,7 +818,7 @@ This library only handles section parsing and such, see above for changes to the
 
 ## Build and Dependencies
 
-- Meson 0.59 or newer is required to build GStreamer now.
+- Meson 0.59 or newer is now required to build GStreamer.
 
 - The GLib requirement has been bumped to GLib 2.56 or newer (from March 2018).
 
@@ -901,7 +901,7 @@ Cerbero is a meta build system used to build GStreamer plus dependencies on plat
 
 - **d3d11screencapturesrc**: new desktop capture element, including `GstDeviceProvider` implementation to enumerate/select target monitors for capture.
 
-- Direct3D11/DXVA decoder now supports AV1 and MPEG2 codecs (**d3d11av1dec**, **d3d11mpeg2dec**)
+- Direct3D11/DXVA decoder now supports AV1 and MPEG-2 codecs (**d3d11av1dec**, **d3d11mpeg2dec**)
 
 - VP9 decoding got more reliable and stable thanks to a newly written codec parser
 
