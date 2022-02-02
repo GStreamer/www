@@ -11959,4 +11959,77 @@ Download tarballs directly here:
         </content>
   </item>
 
+    <item>
+      <date>2022-02-03 12:00</date>
+        <title>GStreamer 1.20.0 new major stable release</title>
+        <content>
+<p>
+The GStreamer team is excited to announce a new major feature release of
+your favourite cross-platform multimedia framework!
+</p>
+<p>
+As always, this release is again packed with new features, bug fixes and many other improvements.
+</p>
+<p>
+The 1.20 release series adds new features on top of the previous 1.18 series
+and is part of the API and ABI-stable 1.x release series of the GStreamer
+multimedia framework.
+</p>
+<p>
+  <b>Highlights:</b>
+  <ul>
+  <li>Development in GitLab was <a href="https://gstreamer.freedesktop.org/documentation/frequently-asked-questions/mono-repository.html">switched</a> to a single git repository containing all the modules</li>
+  <li>GstPlay: new high-level playback library, replaces GstPlayer</li>
+  <li>WebM Alpha decoding support</li>
+  <li>Encoding profiles can now be tweaked with additional application-specified element properties</li>
+  <li>Compositor: multi-threaded video conversion and mixing</li>
+  <li>RTP header extensions: unified support in RTP depayloader and payloader base classes</li>
+  <li>SMPTE 2022-1 2-D Forward Error Correction support</li>
+  <li>Smart encoding (pass through) support for VP8, VP9, H.265 in <tt>encodebin</tt> and <tt>transcodebin</tt></li>
+  <li>Runtime compatibility support for libsoup2 and libsoup3 (libsoup3 support experimental)</li>
+  <li>Video decoder subframe support</li>
+  <li>Video decoder automatic packet-loss, data corruption, and keyframe request handling for RTP / WebRTC / RTSP</li>
+  <li>mp4 and Matroska muxers now support profile/level/resolution changes for H.264/H.265 input streams (i.e. codec data changing on the fly)</li>
+  <li>mp4 muxing mode that initially creates a fragmented mp4 which is converted to a regular mp4 on EOS</li>
+  <li>Audio support for the WebKit Port for Embedded (WPE) web page source element</li>
+  <li>CUDA based video color space convert and rescale elements and upload/download elements</li>
+  <li>NVIDIA <tt>memory:NVMM</tt> support for OpenGL <tt>glupload</tt> and <tt>gldownload</tt> elements</li>
+  <li>Many WebRTC improvements</li>
+  <li>The new VA-API plugin implementation fleshed out with more decoders and new postproc elements</li>
+  <li>AppSink API to retrieve events in addition to buffers and buffer lists</li>
+  <li>AppSrc gained more configuration options for the internal queue (leakiness, limits in buffers and time, getters to read current levels)</li>
+  <li>Updated Rust bindings and many new Rust plugins</li>
+  <li>Improved support for custom minimal GStreamer builds</li>
+  <li>Support build against FFmpeg 5.0</li>
+  <li>Linux Stateless CODEC support gained MPEG-2 and VP9</li>
+  <li>Windows Direct3D11/DXVA decoder gained AV1 and MPEG-2 support</li>
+  <li>Lots of new plugins, features, performance improvements and bug fixes</li>
+  </ul>
+</p>
+<p>
+For more details check out the <a href="&site;/releases/1.20/">GStreamer 1.20 release notes</a>.
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be provided in due course.
+</p>
+        <p>
+You can download release tarballs directly here:
+<a href="&site;/src/gstreamer/gstreamer-1.20.0.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.20.0.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.20.0.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.20.0.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.20.0.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.20.0.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.20.0.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.20.0.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gst-editing-services-1.20.0.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-devtools/gst-devtools-1.20.0.tar.xz">gst-devtools</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.20.0.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.20.0.tar.xz">gstreamer-sharp</a>,
+<a href="&site;/src/gst-omx/gst-omx-1.20.0.tar.xz">gst-omx</a>, or
+<a href="&site;/src/gstreamer-docs/gstreamer-docs-1.20.0.tar.xz">gstreamer-docs</a>.
+        </p>
+        </content>
+  </item>
+
 </news>

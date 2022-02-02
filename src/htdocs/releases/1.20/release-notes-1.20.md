@@ -1,14 +1,10 @@
 # GStreamer 1.20 Release Notes
 
-GStreamer 1.20 has not been released yet. It is scheduled for release in early February 2022.
-
-1.19.x is the unstable development version that is being developed in the git main branch and which will eventually result in 1.20, and 1.19.90 is the first release candidate in that series (1.20rc1).
-
-1.20 will be backwards-compatible to the stable 1.18, 1.16, 1.14, 1.12, 1.10, 1.8, 1.6, 1.4, 1.2 and 1.0 release series.
+GStreamer 1.20.0 was released on 3 February 2022.
 
 See [https://gstreamer.freedesktop.org/releases/1.20/][latest] for the latest version of this document.
 
-*Last updated: Wednesday 26 January 2022, 01:00 UTC [(log)][gitlog]*
+*Last updated: Wednesday 2 February 2022, 23:30 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.20/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/master/src/htdocs/releases/1.20/release-notes-1.20.md
@@ -853,8 +849,12 @@ Cerbero is a meta build system used to build GStreamer plus dependencies on plat
 
 - XCode 12 support
 - macOS OS release support is now future-proof, similar to iOS
-- macOS Apple Silicon (ARM64) cross-compile support has been added
-- macOS Apple Silicon (ARM64) native support is currently experimental
+- macOS Apple Silicon (ARM64) cross-compile support has been added,
+  including Universal binaries. There is a [known bug][apple-silicon-bug] regarding this
+  on ARM64.
+- Running Cerbero itself on macOS Apple Silicon (ARM64) is currently experimental and is known to have bugs
+
+[apple-silicon-bug]: https://gitlab.freedesktop.org/gstreamer/cerbero/-/issues/361
 
 #### Windows specific Cerbero improvements
 
@@ -888,6 +888,10 @@ Cerbero is a meta build system used to build GStreamer plus dependencies on plat
 ### macOS and iOS
 
 - **applemedia**: add ProRes support to **vtenc** and **vtdec**
+
+- The `GStreamer.framework` location is now relocatable and is not required to be `/Library/Frameworks/`
+
+- Cerbero now supports cross-compiling to macOS running on Apple Silicon (ARM64), and Universal binaries are now available that can be used on both X86_64 and ARM64 macOS.
 
 ### Windows
 
@@ -1034,14 +1038,16 @@ sent suggestions or helped testing.
 After the 1.20.0 release there will be several 1.20.x bug-fix releases which
 will contain bug fixes which have been deemed suitable for a stable branch,
 but no new features or intrusive changes will be added to a bug-fix release
-usually. The 1.20.x bug-fix releases will be made from the git 1.20 branch,
+usually. The 1.20.x bug-fix releases will be made from the [git 1.20 branch][1.20-branch],
 which will be a stable branch.
+
+[1.20-branch]: https://gitlab.freedesktop.org/gstreamer/gstreamer/-/commits/1.20/
 
 <a name="1.20.0"></a>
 
 ### 1.20.0
 
-1.20.0 is scheduled to be released around early February 2022.
+1.20.0 was released on 3 February 2022.
 
 ## Schedule for 1.22
 
