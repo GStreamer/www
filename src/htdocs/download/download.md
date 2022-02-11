@@ -170,13 +170,13 @@ This is the toolchain compatibility matrix with the stable releases:
 
 Binary releases in the form of `.pkg` framework installers are available. The
 installers are split into runtime and development packages. For development,
-you will want to install both packages. The target SDK version for 1.18 and
+you will want to install _both_ packages. The target SDK version for 1.18 and
 1.20 is macOS 10.11.
 
-* macOS Universal (X86_64 &amp; ARM64) 1.20 release
-  - [1.20.0 runtime installer](/data/pkg/osx/1.20.0/gstreamer-1.0-1.20.0-universal.pkg)
-  - [1.20.0 development installer](/data/pkg/osx/1.20.0/gstreamer-1.0-devel-1.20.0-universal.pkg)
-* macOS X86_64 1.18 release
+* **macOS Universal (X86_64 &amp; ARM64) 1.20 release (current stable version)**
+  - **[1.20.0 runtime installer](/data/pkg/osx/1.20.0/gstreamer-1.0-1.20.0-universal.pkg)**
+  - **[1.20.0 development installer](/data/pkg/osx/1.20.0/gstreamer-1.0-devel-1.20.0-universal.pkg)**
+* macOS X86_64 1.18 release (old stable version)
   - [1.18.6 runtime installer](/data/pkg/osx/1.18.6/gstreamer-1.0-1.18.6-x86_64.pkg)
   - [1.18.6 development installer](/data/pkg/osx/1.18.6/gstreamer-1.0-devel-1.18.6-x86_64.pkg)
 
@@ -193,8 +193,8 @@ the same system.
 Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
-* Android Universal [1.20.0 tarball](/data/pkg/android/1.20.0/gstreamer-1.0-android-universal-1.20.0.tar.xz)
-* Android Universal [1.18.6 tarball](/data/pkg/android/1.18.6/gstreamer-1.0-android-universal-1.18.6.tar.xz)
+* **Android Universal [1.20.0 tarball](/data/pkg/android/1.20.0/gstreamer-1.0-android-universal-1.20.0.tar.xz) (current stable version)**
+* Android Universal [1.18.6 tarball](/data/pkg/android/1.18.6/gstreamer-1.0-android-universal-1.18.6.tar.xz) (old stable version)
 
 The Android NDKs used by the stable releases are:
 
@@ -252,8 +252,8 @@ Binary releases that integrate into XCode are available in the form of a single
 and the target SDK version for 1.16.x was iOS 9.0, and for both 1.18.x and
 1.20.x is iOS 11.0.
 
-* iOS Universal [1.20.0 framework](/data/pkg/ios/1.20.0/gstreamer-1.0-devel-1.20.0-ios-universal.pkg) (ARM64, X86_64)
-* iOS Universal [1.18.6 framework](/data/pkg/ios/1.18.6/gstreamer-1.0-devel-1.18.6-ios-universal.pkg) (ARM64, X86_64)
+* **iOS Universal [1.20.0 framework](/data/pkg/ios/1.20.0/gstreamer-1.0-devel-1.20.0-ios-universal.pkg) (ARM64, X86_64) (current stable version)**
+* iOS Universal [1.18.6 framework](/data/pkg/ios/1.18.6/gstreamer-1.0-devel-1.18.6-ios-universal.pkg) (ARM64, X86_64) (old stable version)
 
 [Older 1.x binary releases](/data/pkg/ios) are also available.
 
