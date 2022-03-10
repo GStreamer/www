@@ -21,34 +21,18 @@ HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-devel">Subscribe</
 | <A
 HREF="http://lists.freedesktop.org/archives/gstreamer-devel/">Archives</A></I>
 
-<p>Where general discussions occur. Ask here if you have problems with GStreamer.
-Please submit patches and report bugs in bugzilla and not on this list.
+<p>Any and all discussions about GStreamer, GStreamer integration,
+application development with GStreamer and plugin development with
+GStreamer. Ask here if you have problems with GStreamer. Please submit
+patches and bug reports in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a>
+and not on the mailing list.
 </p>
 
 <LI><B>gstreamer-commits</B>:</LI>
 <I><A
 HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-commits">Subscribe</A>
-| <A
-HREF="http://lists.freedesktop.org/archives/gstreamer-commits/">Archives</A></I>
-
+</I>
 <p>git commit notifications</p>
-
-<LI><B>gstreamer-bugs</B>:</LI>
-<I><A
-HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-bugs">Subscribe</A>
-| <A
-HREF="http://lists.freedesktop.org/archives/gstreamer-bugs/">Archives</A></I>
-<p>Bugzilla activity. Please report bugs in bugzilla and not on this list.</p>
-
-<!--
-<LI><B>gstreamer-daily</B>:</LI>
-<I><A
-HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-daily">Subscribe</A>
-| <A
-HREF="http://sourceforge.net/mailarchive/forum.php?forum_name=gstreamer-daily">Archives</A></I>
-
-<p>Daily mailings (irc logs, build failures, etc.).</p>
--->
 
 <LI><B>gstreamer-openmax</B>:</LI>
 <I><A
@@ -71,6 +55,11 @@ HREF="http://lists.freedesktop.org/mailman/listinfo/gstreamer-embedded">Subscrib
 | <A
 HREF="http://lists.freedesktop.org/archives/gstreamer-embedded/">Archives</A></I>
 <p>Discussion of building, optimising, developing and using GStreamer on embedded devices.</p>
+
+<LI><B>gstreamer-bugs</B>:</LI>
+<I>Defunct</I>
+<p>This mailing list is no longer in use. You can subscribe to notification about issues
+and merge requests in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a>).</p>
 
 </UL>
 
