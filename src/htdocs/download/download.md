@@ -282,7 +282,7 @@ Generally, you should not need to build from source yourself unless you need
 features that are only available in a newer version of GStreamer than is
 provided by your distribution or in the last stable release.
 
-For doing GStreamer development, we recommend using the [gst-build
-project](https://gitlab.freedesktop.org/gstreamer/gst-build/#gst-build) which
-will aggregate all the GStreamer modules using [Meson's subproject
+For doing GStreamer development, we recommend using the [GStreamer monorepo
+build from Git](https://gitlab.freedesktop.org/gstreamer/gstreamer/#getting-started)
+which will build all the main GStreamer modules in one go using [Meson's subproject
 feature](https://mesonbuild.com/Subprojects.html).
