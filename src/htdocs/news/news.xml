@@ -12174,4 +12174,68 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+    <item>
+      <date>2022-06-15 23:00</date>
+        <title>GStreamer 1.20.3 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the third bug fix release in the
+stable 1.20 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains important security fixes. It should be safe to update from 1.20.x
+and we recommend you upgrade at your earliest convenience.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+  <li>Security fixes in Matroska, MP4 and AVI demuxers</li>
+  <li>Fix scrambled video playback with hardware-accelerated VA-API decoders on certain Intel hardware</li>
+  <li>playbin3/decodebin3 regression fix for unhandled streams</li>
+  <li>Fragmented MP4 playback fixes</li>
+  <li>Android H.265 encoder mapping</li>
+  <li>Playback of MXF files produced by older FFmpeg versions</li>
+  <li>Fix rtmp2sink crashes on 32-bit platforms</li>
+  <li>WebRTC improvements</li>
+  <li>D3D11 video decoder and screen recorder fixes</li>
+  <li>Performance improvements</li>
+  <li>Support for building against OpenCV 4.6 and other build fixes</li>
+  <li>Miscellaneous bug fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.20/#1.20.3">GStreamer 1.20.3 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, macOS and Windows will be available shortly.
+</p>
+
+<p>
+Release tarballs can be downloaded directly here:
+<ul>
+<a href="&site;/src/gstreamer/gstreamer-1.20.3.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.20.3.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.20.3.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.20.3.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.20.3.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.20.3.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.20.3.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.20.3.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gst-editing-services-1.20.3.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-devtools/gst-devtools-1.20.3.tar.xz">gst-devtools</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.20.3.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.20.3.tar.xz">gstreamer-sharp</a>,
+<a href="&site;/src/gst-omx/gst-omx-1.20.3.tar.xz">gst-omx</a>, or
+<a href="&site;/src/gstreamer-docs/gstreamer-docs-1.20.3.tar.xz">gstreamer-docs</a>.
+</ul>
+</p>
+        </content>
+  </item>
+
 </news>

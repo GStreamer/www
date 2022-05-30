@@ -1,9 +1,9 @@
 # GStreamer Releases
 
-- **Latest stable release:** [1.20.2][latest-stable]
+- **Latest stable release:** [1.20.3][latest-stable]
 - **Latest development release:** [git `main`][latest-devel]
 
-[latest-stable]: https://gstreamer.freedesktop.org/releases/1.20/#1.20.2
+[latest-stable]: https://gstreamer.freedesktop.org/releases/1.20/#1.20.3
 [latest-devel]: https://gitlab.freedesktop.org/gstreamer/gstreamer/
 
 ### Current release
