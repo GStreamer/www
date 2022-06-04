@@ -9,6 +9,10 @@ ALERTS = \
 	sa-2021-0003.xml \
 	sa-2021-0004.xml \
 	sa-2021-0005.xml \
+	sa-2022-0001.xml \
+	sa-2022-0002.xml \
+	sa-2022-0003.xml \
+	sa-2022-0004.xml \
 	$(NULL)
 
 security_pages = $(patsubst %.xml,%.html,$(ALERTS))
