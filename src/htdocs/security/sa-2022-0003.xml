@@ -6,7 +6,7 @@
 ]>
 <advisory>
 <id>2022-0003</id>
-<alternate-name>CVE-2022-XXXX (CVE requested)</alternate-name> <!-- FIXME: still waiting for a CVE to be assigned -->
+<alternate-name>CVE-2022-2122</alternate-name>
 <date>2022-06-15 23:00</date>
 <summary>Potential heap overwrite in mp4 demuxing using zlib decompression</summary>
 <affected-versions>GStreamer gst-plugins-good 1.x &lt; 1.20.3, 0.10.x</affected-versions>
@@ -22,12 +22,10 @@
         <title>The GStreamer project</title>
         <content> <a href="https://gstreamer.freedesktop.org">https://gstreamer.freedesktop.org</a></content>
     </reference>
-<!-- FIXME
     <reference>
     <title> CVE Database Entries </title>
-    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-XXXX">CVE-2022-XXXX</a>  </content>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2122">CVE-2022-2122</a>  </content>
     </reference>
--->
     <reference>
         <title>GStreamer 1.20.3 release</title>
         <content>
