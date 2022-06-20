@@ -6,7 +6,7 @@ The latest bug-fix release in the 1.20 series is [1.20.3](#1.20.3) and was relea
 
 See [https://gstreamer.freedesktop.org/releases/1.20/][latest] for the latest version of this document.
 
-*Last updated: Monday 15 June 2022, 17:00 UTC [(log)][gitlog]*
+*Last updated: Monday 21 June 2022, 00:20 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.20/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/master/src/htdocs/releases/1.20/release-notes-1.20.md
@@ -389,7 +389,7 @@ For more details, please see the [GStreamer mono repository FAQ][monorepo-faq].
 
 - **matroskademux**, **matroskamux**: Add support for [ffv1](https://en.wikipedia.org/wiki/FFV1), a lossless intra-frame video coding format.
 
-- **matroskamux**: accept in-band SPS/PPS/VPS for H.264 and H.265 (i.e. `stream-format` `avc3` and `hev1`) which allows on-the-fly profile/level/resolution changes.
+- **matroskamux**: accept in-band SPS/PPS/VPS for H.264 and H.265 (i.e. `stream-format` `avc3` and `hev1`) which allows on-the-fly profile/level changes, and from 1.20.4 onwards also resolution changes.
 
 - **matroskamux**: new `"cluster-timestamp-offset"` property, useful for use cases where the container timestamps should map to some absolute wall clock time, for example.
 
