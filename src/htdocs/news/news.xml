@@ -12366,4 +12366,54 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+    <item>
+      <date>2022-10-24 18:00</date>
+      <title>GStreamer Rust bindings 0.19 / Rust Plugins 0.9 release</title>
+      <content>
+<p>
+  Version 0.19 of the <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust bindings</a> was released.
+  Together with the bindings, also version 0.9 of the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust plugins</a> was released.
+</p>
+<p>
+  As usual this release follows the latest <a href="https://gtk-rs.org/blog/2022/10/18/new-release.html">gtk-rs 0.16 release</a> and the corresponding API changes.
+</p>
+<p>
+  This release includes optional support for the latest new GStreamer
+  1.22 APIs. As GStreamer 1.22 was not released yet, these new APIs might
+  still change. The minimum supported version of the bindings was updated to
+  GStreamer 1.14 and the targetted GStreamer API version can be selected by
+  applications/plugins via feature flags.
+</p>
+<p>
+  Apart from this, the new version features a lot of API cleanup and
+  improvements, and the addition of a few missing bindings. Like in the past,
+  the focus of this release was to make usage of GStreamer from Rust as
+  convenient and complete as possible.
+</p>
+<p>
+  The new release also brings a lot of bugfixes, most of which were
+  already part of the 0.18.x bugfix releases.
+</p>
+<p>
+  Details can be found in the release notes for <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/-/blob/main/gstreamer/CHANGELOG.md#0190-2022-10-22">gstreamer-rs</a>.
+</p>
+<p>
+  The code and documentation for the bindings is available on the freedesktop.org GitLab
+    <ul>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust Bindings</a> (<a href="https://gstreamer.pages.freedesktop.org/gstreamer-rs/stable/0.19/docs/">documentation</a>)</li>
+    </ul>
+  as well as on <a href="https://crates.io">crates.io</a>.
+</p>
+<p>
+  The new 0.9 version of the GStreamer Rust plugins features many improvements to the existing plugins as well as many new plugins.
+  The full list of available plugins can be seen in the repository's <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/blob/0.9/README.md">README.md</a>.
+</p>
+<p>
+  If you find any bugs, notice any missing features or other issues please
+  report them in GitLab for the <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/issues/new">bindings</a>
+  or the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/issues/new">plugins</a>.
+</p>
+        </content>
+    </item>
+
 </news>
