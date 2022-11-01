@@ -2,8 +2,8 @@
 <!ENTITY gst-version-stable "1.20.4">
 <!ENTITY gst-version-devel "git main">
 
-<!ENTITY orc-version-stable "0.4.32">
-<!ENTITY orc-version-devel "git master">
+<!ENTITY orc-version-stable "0.4.33">
+<!ENTITY orc-version-devel "git main">
 
 <!ENTITY gst-bug-report "http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">
 <!ENTITY gst-repo-http "https://gitlab.freedesktop.org/gstreamer/">

@@ -12416,4 +12416,28 @@ Release tarballs can be downloaded directly here:
         </content>
     </item>
 
+  <item>
+      <date>2022-10-31 23:00</date>
+        <title>Orc 0.4.33 release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>Add support for aarch64 (64-bit ARM) architecture</li>
+            <li>Various improvements and fixes for aarch32 (32-bit ARM)</li>
+            <li>Enable only SSE and MMX backends for Windows for now</li>
+            <li>Add support for macOS Hardened Runtime</li>
+            <li>Various build fixes and bug fixes</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.33.tar.xz">orc-0.4.33</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
