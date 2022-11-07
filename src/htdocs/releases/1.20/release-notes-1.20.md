@@ -6,7 +6,7 @@ The latest bug-fix release in the 1.20 series is [1.20.4](#1.20.4) and was relea
 
 See [https://gstreamer.freedesktop.org/releases/1.20/][latest] for the latest version of this document.
 
-*Last updated: Wednesday 12 October 2022, 15:00 UTC [(log)][gitlog]*
+*Last updated: Wednesday 7 November 2022, 17:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.20/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/master/src/htdocs/releases/1.20/release-notes-1.20.md
@@ -958,6 +958,12 @@ Cerbero is a meta build system used to build GStreamer plus dependencies on plat
 [gitlab-g-p-47]: https://gitlab.freedesktop.org/gstreamer/gst-python/-/issues/47
 
 ## Known Issues
+
+- GStreamer may fail to build the hotdoc documentation with the Meson 0.64.0
+  release owing to a Meson bug. This should only affect systems where `hotdoc`
+  is installed, and will be fixed in Meson 0.64.1 by [this Meson PR](https://github.com/mesonbuild/meson/pull/10982)
+  in combination with [this GStreamer MR](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/3352).
+  In the meantime, users can pass `-Ddoc=disabled`or downgrade to an older Meson version (< 0.64.0).
 
 - nothing in particular at this point (but also see possibly breaking changes section above)
 
