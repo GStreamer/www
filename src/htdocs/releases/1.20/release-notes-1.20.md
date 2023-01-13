@@ -9,7 +9,7 @@ See [https://gstreamer.freedesktop.org/releases/1.20/][latest] for the latest ve
 *Last updated: Monday 19 December 2022, 19:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.20/
-[gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/master/src/htdocs/releases/1.20/release-notes-1.20.md
+[gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.20/release-notes-1.20.md
 
 ## Introduction
 
