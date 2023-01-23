@@ -12712,4 +12712,77 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">Gitlab</a
         </content>
   </item>
 
+  <item>
+      <date>2023-01-23 22:00</date>
+        <title>GStreamer 1.22.0 new major stable release</title>
+        <content>
+<p>
+The GStreamer team is excited to announce a new major feature release of
+your favourite cross-platform multimedia framework!
+</p>
+<p>
+As always, this release is again packed with new features, bug fixes and many other improvements.
+</p>
+<p>
+The 1.22 release series adds new features on top of the previous 1.20 series
+and is part of the API and ABI-stable 1.x release series of the GStreamer
+multimedia framework.
+</p>
+<p>
+  <b>Highlights:</b>
+  <ul>
+  <li>AV1 video codec support improvements</li>
+  <li>New HLS, DASH and Microsoft Smooth Streaming adaptive streaming clients</li>
+  <li>Qt6 support for rendering video inside a QML scene</li>
+  <li>Minimal builds optimised for binary size, including only the individual elements needed</li>
+  <li>Playbin3, Decodebin3, UriDecodebin3, Parsebin enhancements and stabilisation</li>
+  <li>WebRTC simulcast support and support for Google Congestion Control</li>
+  <li>WebRTC-based media server ingestion/egress (WHIP/WHEP) support</li>
+  <li>New easy to use batteries-included WebRTC sender plugin</li>
+  <li>Easy RTP sender timestamp reconstruction for RTP and RTSP</li>
+  <li>ONVIF timed metadata support</li>
+  <li>New fragmented MP4 muxer and non-fragmented MP4 muxer</li>
+  <li>New plugins for Amazon AWS storage and audio transcription services</li>
+  <li>New gtk4paintablesink and gtkwaylandsink renderers</li>
+  <li>New videocolorscale element that can convert and scale in one go for better performance</li>
+  <li>High bit-depth video improvements</li>
+  <li>Touchscreen event support in navigation API</li>
+  <li>Rust plugins now shipped in macOS and Windows/MSVC binary packages</li>
+  <li>H.264/H.265 timestamp correction elements for PTS/DTS reconstruction before muxers</li>
+  <li>Improved design for DMA buffer sharing and modifier handling for hardware-accelerated video decoders/encoders/filters and capturing/rendering on Linux</li>
+  <li>Video4Linux2 hardware accelerated decoder improvements</li>
+  <li>CUDA integration and Direct3D11 integration and plugin improvements</li>
+  <li>New H.264 / AVC, H.265 / HEVC and AV1 hardware-accelerated video encoders for AMD GPUs using the Advanced Media Framework (AMF) SDK</li>
+  <li>applemedia: H.265 / HEVC video encoding + decoding support</li>
+  <li>androidmedia: H.265 / HEVC video encoding support</li>
+  <li>New "force-live" property for audiomixer, compositor, glvideomixer, d3d11compositor etc.</li>
+  <li>Lots of new plugins, features, performance improvements and bug fixes</li>
+  </ul>
+</p>
+<p>
+For more details check out the <a href="&site;/releases/1.22/">GStreamer 1.22 release notes</a>.
+</p>
+<p>
+Binaries for Android, iOS, macOS and Windows will be provided in due course.
+</p>
+        <p>
+You can download release tarballs directly here:
+<a href="&site;/src/gstreamer/gstreamer-1.22.0.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.22.0.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.22.0.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.22.0.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.22.0.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.22.0.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.22.0.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.22.0.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gst-editing-services-1.22.0.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-devtools/gst-devtools-1.22.0.tar.xz">gst-devtools</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.22.0.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.22.0.tar.xz">gstreamer-sharp</a>,
+<a href="&site;/src/gst-omx/gst-omx-1.22.0.tar.xz">gst-omx</a>, or
+<a href="&site;/src/gstreamer-docs/gstreamer-docs-1.22.0.tar.xz">gstreamer-docs</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
