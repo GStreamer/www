@@ -533,7 +533,7 @@ The GStreamer Rust bindings are released separately with a different release cad
 
 ### New MP4 muxer + Fragmented MP4 muxer
 
-- **fmp4mux**: New fragmented MP4/ISOBMFF/CMAF muxer for generating e.g. DASH/HLS media fragments.
+- **isofmp4mux**: New fragmented MP4/ISOBMFF/CMAF muxer for generating e.g. DASH/HLS media fragments.
 - **isomp4mux**: New non-fragmented, normal MP4 muxer.
 
 Both plugins provides elements that replace the existing `qtmux`/`mp4mux` element from `gst-plugins-good`. While not feature-equivalent yet, the new codebase and using separate elements for the fragment and non-fragmented case allows for easier extensability in the future.
