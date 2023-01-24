@@ -194,7 +194,7 @@ The "new" playback elements introduced in 1.18 (`playbin3` and its various compo
     - If compatible, decoders will be re-used, providing lower latency/cpu/memory than by switching states.
     - This is enabled by setting the `instant-uri` property to `true`, setting the URI to switch to immediately, and then disabling the `instant-uri` property again afterwards.
 
-- **playbin3**, **decodebin3**, **uridecodebin3**, **parsebin**, and **urisrc** are **no longer experimental**
+- **playbin3**, **decodebin3**, **uridecodebin3**, **parsebin**, and **urisourcebin** are **no longer experimental**
     - They were originally marked as 'technology preview' but have since seen extensive usage in production settings, so are considered ready for general use now.
 
 ### Fraunhofer AAC audio encoder HE-AAC and AAC-LD profile support
