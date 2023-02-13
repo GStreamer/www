@@ -12785,4 +12785,62 @@ You can download release tarballs directly here:
         </content>
   </item>
 
+    <item>
+      <date>2023-02-13 10:00</date>
+      <title>GStreamer Rust bindings 0.20 / Rust Plugins 0.10 release</title>
+      <content>
+<p>
+  Version 0.20 of the <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust bindings</a> was released.
+  Together with the bindings, also version 0.10 of the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust plugins</a> was released.
+</p>
+<p>
+  As usual this release follows the latest <a href="https://gtk-rs.org/blog/2023/02/10/new-release.html">gtk-rs 0.17 release</a> and the corresponding API changes.
+</p>
+<p>
+  This release features relatively few changes and mostly contains the
+  addition of some convenience APIs, the addition of bindings for some minor
+  APIs and various optimizations.
+</p>
+<p>
+  As part of the optimizations there will be a lot fewer temporary allocations
+  with the new version (especially for NUL-terminated strings), and improved
+  code generation which does not only improve performance but also reduces the
+  size of the resulting binaries considerably. Various GStreamer plugins saw
+  size reductions of 15-20%.
+</p>
+<p>
+  The new release also brings a lot of bugfixes, most of which were
+  already part of the 0.19.x bugfix releases.
+</p>
+<p>
+  Details can be found in the release notes for <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/-/blob/main/gstreamer/CHANGELOG.md#0200-2023-02-10">gstreamer-rs</a>.
+</p>
+<p>
+  The code and documentation for the bindings is available on the freedesktop.org GitLab
+    <ul>
+      <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust Bindings</a> (<a href="https://gstreamer.pages.freedesktop.org/gstreamer-rs/stable/0.20/docs/">documentation</a>)</li>
+    </ul>
+  as well as on <a href="https://crates.io">crates.io</a>.
+</p>
+<p>
+  The new 0.10 version of the GStreamer Rust plugins features many
+  improvements to the existing plugins as well as a few new plugins. A
+  majority of the changes were already backported to the 0.9 release series
+  and its bugfix releases, which is part of GStreamer 1.22.
+</p>
+<p>
+  A full list of available plugins can be seen in the repository's <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/blob/0.10/README.md">README.md</a>.
+</p>
+<p>
+  Details for this release can be found in the release notes for <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/blob/main/CHANGELOG.md#0100-2023-02-10">gst-plugins-rs</a>.
+</p>
+<p>
+  If you find any bugs, notice any missing features or other issues please
+  report them in GitLab for the <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/issues/new">bindings</a>
+  or the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/issues/new">plugins</a>.
+</p>
+        </content>
+    </item>
+
+
 </news>
