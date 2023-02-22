@@ -12842,5 +12842,80 @@ You can download release tarballs directly here:
         </content>
     </item>
 
+    <item>
+      <date>2023-02-23 23:50</date>
+        <title>GStreamer 1.20.6 old-stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release in the
+now old-stable 1.20 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bug fixes. It should be safe to update from 1.20.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+  <li>audio: channel-mix: allow up to 64 channels instead of up to 63 channels</li>
+  <li>AOM AV1 encoder timestamp handling improvements</li>
+  <li>AV1 video codec caps handling improvements in aom plugin, isomp4 and matroska muxers/demuxers</li>
+  <li>avvidenc: fix bitrate control and timestamps off FFmpeg-based video encoders</li>
+  <li>h264parse: fix missing timestamps on outputs when splitting a frame</li>
+  <li>rtspsrc: more workarounds for servers with broken control uri handling</li>
+  <li>playbin3: fix issue with UDP streams, making sure there's enough buffering</li>
+  <li>qmlglsrc: Fix deadlock when stopping and some other fixes</li>
+  <li>qtmux: fix default timescale unit for N/1001 framerates</li>
+  <li>v4l2h264dec: Fix Raspberry Pi4 will not play video in application</li>
+  <li>vtdec: Fix non-deterministic frame output after seeks</li>
+  <li>wasapi2src: Fix loopback capture on Windows 10 Anniversary Update</li>
+  <li>macOS, iOS: Fix Xcode 14 ABI breakage with older Xcode</li>
+  <li>cerbero: Fix some regressions for CentOS in the 1.20 branch</li>
+  <li>cerbero: Fix setuptools site.py breakage in Python 3.11</li>
+  <li>Fix gst-libav build against FFmpeg from git</li>
+  <li>gobject-introspection annotation fixes for bindings</li>
+  <li>Miscellaneous bug fixes, memory leak fixes, and other stability and reliability improvements</li>
+  <li>Performance improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.20/#1.20.6">GStreamer 1.20.6 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, macOS and Windows will be available shortly.
+</p>
+
+<p>
+Release tarballs can be downloaded directly here:
+<ul>
+<a href="&site;/src/gstreamer/gstreamer-1.20.6.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.20.6.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.20.6.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.20.6.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.20.6.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.20.6.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.20.6.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.20.6.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gst-editing-services-1.20.6.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-devtools/gst-devtools-1.20.6.tar.xz">gst-devtools</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.20.6.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.20.6.tar.xz">gstreamer-sharp</a>,
+<a href="&site;/src/gst-omx/gst-omx-1.20.6.tar.xz">gst-omx</a>, or
+<a href="&site;/src/gstreamer-docs/gstreamer-docs-1.20.6.tar.xz">gstreamer-docs</a>.
+</ul>
+</p>
+
+<p>
+The GStreamer 1.20 series has now been superseded by the new stable
+<a href="https://gstreamer.freedesktop.org/releases/1.22/">GStreamer 1.22 series</a>
+and we recommend you upgrade at your earliest convenience.
+</p>
+        </content>
+  </item>
 
 </news>
