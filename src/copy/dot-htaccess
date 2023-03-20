@@ -6,12 +6,21 @@ Redirect /conference/2015/speakers.html /conference/2015/talks-and-speakers.html
 
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} ^(www\.)?gstreamer\.(net|com)$ [NC]
+RewriteCond %{HTTP_HOST} ^(www\.|docs.)?gstreamer\.(net|com)$ [NC]
 RewriteRule .* http://gstreamer.freedesktop.org%{REQUEST_URI} [R=301,L]
 
 # Old API + plugins reference (TODO: add more)
 RedirectMatch 301 ^/data/doc/gstreamer/.*/gst-plugins-gl-plugins/ /documentation/opengl/
 RedirectMatch 301 ^/data/doc/gstreamer/.*/gst-plugins-gl-libs/ /documentation/gl/
+
+# Old gtk-doc based plugin docs
+RedirectMatch 301 ^/data/doc/gstreamer/.*/gst.*-plugins/.*$ /documentation/plugins_doc.html
+
+# Old gtk-doc based library docs
+RedirectMatch 301 ^/data/doc/gstreamer/.*/gst.*-libs/.*$ /documentation/libs.html
+RedirectMatch 301 ^/data/doc/gstreamer/.*/gstreamer/.*$ /documentation/libs.html
+RedirectMatch 301 ^/data/doc/gstreamer/.*/gst-rtsp-server/.*$ /documentation/gst-rtsp-server/
+RedirectMatch 301 ^/data/doc/gstreamer/.*/gstreamer-editing-services/.*$ /documentation/gst-editing-services/
 
 # Application Development Manual
 RedirectMatch 301 ^/data/doc/gstreamer/.*/manual/html/ch04s02.html$ /documentation/application-development/
@@ -203,6 +212,9 @@ RedirectMatch 301 ^/data/doc/gstreamer/.*/pwg/html/section-tagging-write.html$ /
 RedirectMatch 301 ^/data/doc/gstreamer/.*/pwg/html/section-throttle.html$ /documentation/plugin-development/advanced/qos.html#throttling
 RedirectMatch 301 ^/data/doc/gstreamer/.*/pwg/html/section-types-definitions.html$ /documentation/plugin-development/advanced/media-types.html#list-of-defined-types
 RedirectMatch 301 ^/data/doc/gstreamer/.*/pwg/html/section-types-typefind.html$ /documentation/plugin-development/advanced/media-types.html#typefind-functions-and-autoplugging
+
+# Catch-all for any remaining old doc pages which didn't get handled above
+RedirectMatch 301 ^/data/doc/gstreamer/.*$ /documentation/
 
 # Old wiki
 RedirectMatch 301 ^/wiki/SubmittingPatches$ /documentation/contribute/index.html#how-to-submit-patches
