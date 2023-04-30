@@ -1,0 +1,607 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+<title>GStreamer Conference 2023</title>
+
+<body>
+
+<style>
+li {
+  padding: 0px 0px 10px;
+}
+</style>
+
+<table>
+<tr><td width="60%">
+
+<h1>GStreamer Conference 2023</h1>
+
+  <h2>25-26 September 2023 · A Coruña, Spain</h2>
+
+<p>
+
+<!--
+<style>
+.crop-photo{
+    float:left;
+    margin:.5em 10px .5em 0;
+    overflow:hidden; /* this is important */
+    position:relative; /* this is important too */
+    border:1px solid #ccc;
+    width:280px;
+    height:210px;
+    }
+.crop-photo img{
+    position:absolute;
+    top:-42px;
+    right:-56px;
+    }
+</style>
+-->
+
+<table>
+<tr>
+  <td>
+    <!-- <div class="crop-photo"> -->
+    <img src="acoruna_banner_800.jpg"
+         alt="A Coruña"
+         height="300"
+    />
+  </td>
+</tr>
+</table>
+</p>
+
+  <br/>
+
+  <p>
+  We're back! <!-- FIXME: suitable GIF -->
+  </p>
+
+  <p>
+  We're thrilled to announce that the <b>11<sup><small>th</small></sup>
+  GStreamer Conference</b> will place on Monday and Tuesday <b>25-26 September 2023</b>
+  at the <a href="https://www.palexco.com">Palexco Convention Centre</a> in
+  <b>A Coruña, Spain</b>, followed by a hackfest.
+  </p>
+
+<!--
+  <p>
+  Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> and
+  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2019">GStreamer Conference 2019 videos</a>
+  </p>
+  <p>
+  Slides for some of the talks and the lightning talks can be found in the
+  <a href="&site;/data/events/gstreamer-conference/2019/">GStreamer Conference 2019 slides</a>
+  folder.
+  </p>
+-->
+<!--
+  <h2>Schedule</h2>
+  <p>
+  <a href="schedule.html">Click here for the conference schedule</a>.
+  </p>
+-->
+  <h2>Details</h2>
+  <p>
+  The GStreamer Conference is a conference for developers, community members,
+  decision-makers, industry partners, researchers, students and anyone else
+  interested in the GStreamer multimedia framework or Open Source and
+  cross-platform multimedia.
+  </p>
+
+  <h2>Who should attend?</h2>
+  <p>
+    Anyone interested in open source cross-platform multimedia is encouraged
+    to join us at the GStreamer Conference 2023!
+  </p>
+  <p>
+    Whether you are a hobbyist, app developer, researcher or student interested
+    in the field of multimedia, or working for a company that is using or looking
+    to use GStreamer in their products, this is the perfect event for you to network
+    at and to learn more about the latest technological developments and project news,
+    and to meet developers as well as the wider community.
+  </p>
+
+
+  <h2>Registration</h2>
+  <p>
+  Registration is expected to open in late June or early July. <!-- FIXME --> Please stay tuned for updates.
+  </p>
+
+  <!--
+  <p>
+  <b><a href="FIXME">Sign up for the GStreamer Conference here</a></b>
+  </p>
+  -->
+
+  <p>
+  There will be separate registration options for both professionals and for students and hobbyists:
+  </p>
+  <p>
+    <div style="margin-left:5%">
+    <table width="80%" cellpadding="5">
+      <tr><td><b>Professional (Early Bird)</b></td><td><b>250 EUR</b> (ca. 280 USD)</td></tr>
+      <tr><td><b>Professional (Regular)</b></td><td><b>350 EUR</b> (ca. 390 USD)</td></tr>
+      <tr><td><b>Professional (Supporter)</b></td><td><b>500 EUR (ca. 555 USD)</b></td></tr>
+      <tr><td><b>Student/Hobbyist</b></td><td><b>Free or voluntary donation</b></td></tr>
+    </table>
+    </div>
+  </p>
+  <p>
+    All tickets include lunch at the venue on both conference days
+    as well as access to the social event on Monday evening.
+  </p>
+  <p>
+    For those uncertain about whether to register as a professional or hobbyist,
+    the general rule is that if your company pays for you or sponsors you, you
+    are a professional, and if you personally pay you are a student or hobbyist.
+    If in doubt drop us a mail or just register as hobbyist. The important
+    thing is that you'll make it to the conference!
+  </p>
+  <!--
+  <p>
+  <b><a href="FIXME">Sign up for the GStreamer Conference 2023 here</a></b>
+  </p>
+  -->
+
+  <h2>Call for Papers</h2>
+  <p>
+  The call for papers is not open yet, but will be announced here and on
+  the <a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>.
+  You can also <a href="https://twitter.com/GStreamer">follow @GStreamer on Twitter</a> or
+  <a href="https://fosstodon.org/@GStreamer">follow @GStreamer on Mastadon</a> for updates.
+  </p>
+
+<!--
+  <h2>Call for Papers</h2>
+  <p><b>
+  The call for papers is now open for talk proposals and lightning talks.
+  Please submit your talk now!
+  </b></p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk
+  (please allow at least 5 minutes for questions at the end as well).
+  </p>
+  <p>
+  <b>The talk submission deadline has been extended and is 30 September 2019 for second round slots!</b>
+  </p>
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+  <p>
+  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
+  or 45 minutes, including questions. If you need more time than that we might
+  be able to accommodate that as well, please get in touch to discuss details.
+  </p>
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+  <p>
+  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-x- -x-><i>&#64;</i><!-x- -x->lists.freedesktop.org</a>.
+  You do not need to subscribe to the list, and you should receive a confirmation that your proposal has been received within a couple of days.
+  </p>
+-->
+
+<!--
+  <h2>Call for Papers</h2>
+  <p>
+  The call for papers is now closed and talk proposals can no longer be
+  submitted. Anyone who has submitted a talk proposal should have received
+  an e-mail letting them know whether their proposal has been accepted.
+  </p>
+  <p>
+  Lightning talks may still be proposed.
+  </p>
+-->
+
+  <h2>Schedule and speakers list</h2>
+  <p>
+  The schedule and speakers list will be available later in the year once the
+  call for papers has closed and talks have been selected.
+  </p>
+  <p>
+  To get an idea what kind of topics and speakers to expect have a look at
+  the schedule of previous conferences: <!-- FIXME: word cloud based on topics/abstracts -->
+    <ul>
+      <li><a href="https://gstreamer.freedesktop.org/conference/2019/talks-and-speakers.html">GStreamer Conference 2019 - talks and speakers</a></li>
+      <li><a href="https://gstreamer.freedesktop.org/conference/2018/talks-and-speakers.html">GStreamer Conference 2018 - talks and speakers</a></li>
+      <li><a href="https://gstreamer.freedesktop.org/conference/2017/talks-and-speakers.html">GStreamer Conference 2017 - talks and speakers</a></li>
+    </ul> 
+  </p>
+<!--
+  <p>
+    <a href="schedule.html">Click here for the conference schedule</a>.
+  </p>
+  <p>
+    We have an exciting range of topics and speakers lined up for you again this year:
+    <ul>
+    <li><a href="talks-and-speakers.html#gstreamer-vulkan">GStreamer Vulkan</a> <a href="https://gstconf.ubicast.tv/videos/gstreamer-vulkan/">(video)</a><br /><small><i>Matthew Waters, Centricular</i></small></li>
+    <li>Closing Session <a href="https://gstconf.ubicast.tv/videos/closing-session_94876/">(video)</a></li>
+  </ul>
+  </p>
+-->
+<!--
+  <p>
+    <b>Lightning Talks:</b>
+    <ul>
+    <li>Raising the Importance of the V4L2 plugin and Challenges <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=361">(video)</a> <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>...and more to come</li>
+    <li><i>Submit <u>your</u> lightning talk now!</i></li>
+    </ul>
+  </p>
+-->
+  <h2>Showcase or Lightning Talks</h2>
+  <p>
+    There will again be opportunities for short lightning talks for those who
+    do not wish to present a full talk, but just want to showcase something
+    they're working on, or present a problem or challenge they are facing or
+    have solved, and that they think might be interesting for others to hear
+    about.
+  </p>
+  <p>
+    Lightning talk proposals can be submitted once the Call for Papers opens,
+    up to the day of the conference.
+  </p>
+  <!--
+  <p>
+    Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
+  </p>
+  <p>
+    Simply send a quick mail to <a href="FIXME</a> above to reserve your slot (subject to availability).  </p>
+  <p>
+    There is no deadline for Lightning Talk submissions, slots will be
+    allocated on a first-come first-serve basis.
+  </p>
+  -->
+
+  <h2>Social Events</h2>
+
+  <h3>Sunday: Welcome drinks and/or food (venue to be determined)</h3>
+  <p>
+    Join us for some drinks and/or food at <i>tbd</i>. Details to be confirmed
+    at a later time.
+  </p>
+<!--
+  <p>
+    Food and drinks will be available for purchase, credit cards should be accepted.
+  </p>
+  <p>
+    We have a semi-private section reserved for us upstairs on the right ("The Garage").
+  </p>
+  <p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.109807749272!2d-3.2087470493646566!3d55.94746868051066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a28f1c4d61%3A0x8cea87d80d07a49e!2sBrewDogLothianRoad!5e0!3m2!1sen!2suk!4v1540206441438" width="400" height="300" frameborder="0" style="border:0" allowfullscreen="1"></iframe>
+  </p>
+-->
+
+  <h3>Monday: Social Event with Food and Drinks (venue to be determined)</h3>
+  <p>
+    We plan on having a social event again on the first day of the conference.
+    Details to be confirmed at a later time.
+  </p>
+<!--
+  <h3>Thursday: Social Event with Food and Drinks at Ninkasi Saint-Paul</h3>
+  <p>
+    Our main social event will be on Thursday at <a href="https://www.ninkasi.fr/lieux/ninkasi-saint-paul/"><b>Ninkasi Saint-Paul</b></a>
+    from ca. 19.00-19.30 until late. Food and drinks will be provided (thanks to our sponsors!),
+    including some vegetarian/vegan options.
+  </p>
+  <p>
+  Ninkasi Saint Paul is located on <i>5 Rue Octavio Mey</i> at the northern end
+  of Lyon's historic Old Town district.
+  </p>
+  <p>
+  Note that there are multiple Ninkasi in Lyon, we'll be at the Saint Paul one.
+  </p>
+  <p>
+    How to get there from L'Embarcadère:
+    <ul>
+      <li>on foot: should be a nice walk, 30-35 minutes</li>
+      <li>by public transport: best to check Google Maps. Metro from Perrache to Hôtel de Ville - Louis Pradel (4 stops north) might save you some walking.</li>
+      <li>by Lime scooter: faster than on foot, probably!</li>
+      <li>by taxi/uber: should be a ca. 10 minute ride depending on traffic, perhaps 7-15 EUR or so</li>
+    </ul>
+  </p>
+  <p>
+    Please don't forget to bring your badge. (If you'd like to bring a +1
+    please get in touch, we may be able to arrange that.)
+  </p>
+  <p>
+    We will have two private areas at the venue - upstairs and downstairs, but
+    part of the venue around the bar will be open to the public. There won't be
+    a cloakroom where you can leave your jackets/bags and neither we nor the bar
+    will take responsibility for any lost or damaged items, so you may want to
+    drop off your gear at the hotel before you head there.
+  </p>
+  <p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11133.746351480799!2d4.824974105373568!3d45.762439990062454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2db883c8ef1625!2sNinkasi%20SAINT%20PAUL!5e0!3m2!1sen!2suk!4v1571700684610!5m2!1sen!2suk" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="1"></iframe>
+  </p>
+-->
+
+  <h2>GStreamer hackfest</h2>
+  <p>
+    There will be a hackfest just after the conference, on Wednesday and Thursday
+    27-28 September 2023, and perhaps a half day on Friday as well (tbd).
+    The hackfest venue will be announced at a later time.
+  </p>
+  <!--
+  <p>
+    Please add yourself to the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2019">wiki page</a>
+    if you plan on attending the hackfest, so we have a rough idea of the number of
+    people to expect. Mail Tim or Sebastian or pop onto the #gstreamer IRC channel if you
+    don't have editing permissions for the wiki.
+  </p>
+  -->
+  <p>
+    GStreamer hackfests are fairly informal affairs, people mostly just sit
+    around, drink coffee, discuss things, ask questions, and hack on whatever
+    they feel like. Everyone with an interest in GStreamer is welcome to attend
+    the hackfest.
+  </p>
+
+  <h2>Sponsorship Opportunities</h2>
+  <p>
+  The GStreamer Conference 2023 is only possible thanks to the generous
+  financial support from our sponsors.
+  </p>
+  <p>
+  A Sponsorship Brief detailing this year's sponsorship opportunities is being
+  prepared and will be available shortly.
+  </p>
+<!--
+  <p>
+  For this year's sponsorship opportunities please refer to
+  the <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">sponsor brief (PDF)</a>
+  or <a href="mailto:sponsors@gstreamer-foundation.org">get in touch</a>.
+  </p>
+-->
+  <p>
+  Sponsorship proceeds are not only used to put on the conference, but also support our extensive CI infrastructure.
+  </p>
+
+  <h2>City</h2>
+  <p>
+  This year's conference will take place in
+  <a href="https://en.wikipedia.org/wiki/A_Coru%C3%B1a">A Coruña</a>, Galicia, Spain.
+  </p>
+
+  <p>
+  <i>Getting there</i>
+  </p><p>
+  <b>By air:</b> There are frequent flight connections to/from Madrid and Barcelona. There are also direct flights from London Gatwick a couple of times a week.
+  </p>
+  <p>
+  <b>By train:</b> Trains from Madrid-Chamartin station take about 4-5 hours. There are 2-3 direct trains a day, and more frequent connections with a change in Ourense-Empalme.
+  </p>
+
+  <h2>Venue</h2>
+  <p>
+  The conference will take place at<br/>
+  <b><a href="https://www.palexco.com/">Palexco Convention Centre</a></b><br/>
+  Muelle de Transatlánticos<br/>
+  15003 A Coruña<br/>
+  Spain<br/>
+  </p>
+<!--
+  <p>
+  The venue is in the university district and within walking distance from
+  Edinburgh Waverley station.
+  </p>
+  <p>
+  <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-3.184589445590973%2C55.93930291387254%2C-3.180906772613526%2C55.94068644028729&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/55.93999/-3.18275">View Larger Map</a></small>
+  </p>
+  <br/>
+  <p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.5505118750725!2d-3.1844506487556727!3d55.93982978050862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c781e4eb45a5%3A0xe70e80791c72a03d!2sSummerhall!5e0!3m2!1sen!2suk!4v1528713491022" width="600" height="450" frameborder="0" style="border:0" allowfullscreen="true"></iframe>
+  </p>
+-->
+
+  <h2>Hotels</h2>
+  <p>
+  There is no official conference hotel, but we will prepare a list of
+  possible hotels for your convenience at a later date.
+  </p>
+<!--
+  <p>
+  The following hotels had at least a couple of rooms left at the time of
+  writing, but there are many other hotels in the city which may be better
+  located or provide better value:
+  <ul>
+    <li><a href="http://www.hotel-lyon-charlemagne.fr/">Hôtel Charlemagne ★★★★</a> - ca. 7 minutes walk to venue, prices start at 85 euros</li>
+    <li><a href="http://www.hotel-lyon-axotelperrache.fr/">Hôtel Axotel Lyon Perrache ★★★</a> - ca. 9 minutes walk to venue, prices start at 65 euros</li>
+    <li><a href="http://www.mercure.com/fr/hotel-1292-hotel-mercure-lyon-centre-chateau-perrache/index.shtml">Hôtel Mercure Château Perrache ★★★★</a> - ca. 9 minutes walk to venue, prices start at 95 euros</li>
+    <li><a href="http://www.ibis.com/fr/hotel-9659-ibis-styles-lyon-confluence/index.shtml">Hôtel Ibis Budget ★★ and Ibis Style ★★★</a> - ca. 12 minutes walk to venue, prices start at 50 euros</li>
+    <li><a href="https://www.hotel-des-savoies.fr/">Hôtel des Savoies ★★★</a> - ca. 15 minutes walk to venue, prices start at 55 euros</li>
+    <li><a href="http://www.qualitysuiteslyonconfluence.com/">Quality Suites Lyon Confluence ★★★★</a> - ca. 7 minutes walk to venue, prices start at 85 euros</li>
+    <li><a href="http://www.hoteldesrempartslyon.com/">Hôtel des Remparts Lyon Perrache ★★★</a> - ca. 7 minutes walk to venue, prices start at 69 euros</li>
+    <li><a href="https://www.mihotel.fr/concept">Mi Hôtel ★★★★</a>Different locations relatively close to the venue, starting at 150 euros</li>
+    <li><a href="http://www.mobhotel.com/lyon">Mob Hôtel Lyon Confluence ★★★</a> - ca. 20 minutes walk to venue, prices start at 99 euros</li>
+    <li><a href="http://www.novotel.com/fr/hotel-7325-novotel-lyon-confluence/index.shtml">Hôtel Novotel Lyon Confluence ★★★★</a> - ca. 10 minutes walk to venue, prices start at 95 euros</li>
+  </ul>
+  </p>
+-->
+
+  <h2>Invitation Letter</h2>
+  <p>
+  If you need an invitation letter for visa application purposes, please
+  <a href="mailto:conference-invitations@gstreamer-foundation.org">get in touch</a>.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+  If you have any questions about the GStreamer Conference or are considering
+<!-- FIXME: sponsorship brief
+  <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">becoming a sponsor</a>
+-->
+  becoming a sponsor
+  please <a href="mailto:conference@gstreamer-foundation.org">get in touch</a>.
+  </p>
+
+  <h2>Conference News and Updates</h2>
+<!--
+  <p>
+    <i>2019-November-04</i>: Videos are now available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2019">https://gstconf.ubicast.tv/channels/#gstreamer-conference-2019</a> thanks to UbiCast!
+  </p>
+  <p>
+    <i>2019-October-30</i>: There will again be an informal pre-conference meet-up social event on the evening before the conference.
+    Come to <a href="https://goo.gl/maps/4yVBD8Hj79AbzQVC9"><b>Ninkasi Guillotière</b></a> (2 Place Antonin Jutard, 69003 Lyon) on Wednesday 30 October 2019 from 19.00h onwards and say hi!
+    Food and drinks will be available for purchase, and credit cards should be accepted.
+  </p>
+  <p>
+    <i>2019-October-21</i>: There will be a social event again on Thursday
+    evening from ca. 19.00-19.30h onwards at <a href="https://www.ninkasi.fr/lieux/ninkasi-saint-paul/"><b>Ninkasi Saint-Paul</b></a>
+    at 5 Rue Octavio Mey. Food and drinks will be provided (thanks to our sponsors!),
+    including vegetarian options. Make sure to bring your conference badge.
+  </p>
+  <p>
+    <i>2019-October-16</i>: Reminder that there will also be a hackfest/hackathon on Saturday/Sunday 2-3 November 2019, just after the conference, but at another venue as the conference, namely <a href="https://goo.gl/maps/R2Jyofi2fdq6xErg9">Epitech</a>.
+  </p>
+  <p>
+    <i>2019-October-13</i>: the <a href="schedule.html">full conference schedule</a> is now available as well
+  </p>
+  <p>
+    <i>2019-October-10</i>: An indicative <a href="schedule.html">outline schedule</a> has been added. The detailed schedule will be made available soon.
+  </p>
+
+  <p>
+    <i>2019-October-09</i>: We're pleased to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference at Silver level this year.
+  </p>
+  <p>
+    <i>2019-October-06</i>: The GStreamer project welcomes back <a href="https://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
+  </p>
+  <p>
+    <i>2019-October-05</i>: The GStreamer project is chuffed to have <b><a href="https://pexip.com/">Pexip</a></b> return as Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2019-October-04</i>: Speakers have been notified about their talk proposal
+  </p>
+  <p>
+    <i>2019-September-30</i>: The call for papers is now closed.
+  </p>
+  <p>
+    <i>2019-September-18</i>: Talk submission deadline for second round slots has been extended to 30 September 2019.
+  </p>
+  <p>
+    <i>2019-September-09</i>: Registration is now <a href="https://ti.to/gstreamer-conference-tickets/gstreamer-conference-2019">open</a>. Early-bird professional tickets are available until 29 September 2019.
+  </p>
+  <p>
+    <i>2019-September-05</i>: Added list of hotels
+  </p>
+  <p>
+    <i>2019-August-24</i>: Call for Papers is now open, please submit your talk proposals now!
+  </p>
+  <p>
+    <i>2019-August-24</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record talks and lightning talks</a>
+  </p>
+  <p>
+    <i>2019-August-05</i>: The GStreamer project is excited to see <b><a href="https://zeiss.com/">Zeiss</a></b> sponsor the conference as Silver sponsor again this year!
+  </p>
+  <p>
+    <i>2019-July-24</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2019-July-22</i>: We're excited to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as a Gold sponsor this year!
+  </p>
+-->
+  <!-- FIXME: sponsorship brief
+  <p>
+    <i>2023-May-XX</i>: <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">Sponsorship brief</a> available
+  </p>
+  -->
+  <p>
+    <i>2023-May-02</i>: Venue announced: <a href="https://www.palexco.com/">Palexco Convention Centre</a>, A Coruña, Spain. <!-- FIXME -->
+  </p>
+  <p>
+    <i>2023-May-02</i>: Initial announcement. <!-- FIXME -->
+  </p>
+
+  <h1>Past GStreamer Conferences</h1>
+  <ul>
+    <li><a href="../2019/index.html">31 October - 1 November 2019 · L'Embarcadère · Lyon, France</a></li>
+    <li><a href="../2018/index.html">25-26 October 2018 · Summerhall · Edinburgh, Scotland, UK</a></li>
+    <li><a href="../2017/index.html">21-22 October 2017 · Node5 · Prague, Czech Republic</a></li>
+    <li><a href="../2016/index.html">10-11 October 2016 · betahaus · Berlin, Germany</a></li>
+    <li><a href="../2015/index.html">8-9 October 2015 · The Convention Centre Dublin · Dublin, Ireland</a></li>
+    <li><a href="../2014/index.html">16-17 October 2014 · Congress Centre Düsseldorf · Düsseldorf, Germany</a></li>
+    <li><a href="../2013/index.html">22-23 October 2013 · Edinburgh International Conference Centre · Edinburgh, Scotland, UK</a></li>
+    <li><a href="../2012/index.html">27-28 August 2012 · Sheraton San Diego Hotel &amp; Marina · San Diego, USA</a></li>
+    <li><a href="../2011/index.html">24-25 October 2011 · Clarion Congress Hotel · Prague, Czech Republic</a></li>
+    <li><a href="../2010/index.html">26 October 2010 · University Arms Hotel · Cambridge, UK</a></li>
+  </ul>
+
+</td>
+<td valign="top" style="padding:0px 50px">
+  <h1>Sponsors</h1>
+  <h2>Platinum Sponsor</h2>
+<!--
+  <p style="padding:20px 0px">
+    <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
+  </p>
+  <p style="padding:20px 0px">
+    <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" width="250" /></a>
+  </p>
+-->
+  <br />
+
+  <h2>Gold Sponsors</h2>
+<!--
+  <p style="padding:10px 0px">
+    <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="75" /></a>
+  </p>
+
+  <p style="padding:10px 0px">
+    <a href="https://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="70" /></a>
+  </p>
+
+  <p style="padding:10px 0px">
+    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
+  </p>
+-->
+  <br />
+
+  <h2>Silver Sponsors</h2>
+<!--
+  <p style="padding:0px 0px">
+    <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
+  </p>
+
+  <p style="padding:10px 0px">
+    <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
+  </p>
+-->
+  <br />
+<!--
+  <h2>Special Media Partner</h2>
+  <p style="padding:10px 0px">
+    <a href="https://www.ubicast.eu/"><img src="sponsor_ubicast_640x195.png" alt="UbiCast" height="75" width="246" /></a>
+  </p>
+  <br />
+-->
+<!--
+  <h2>Press Partners</h2>
+  <p style="padding:10px 0px">
+    <a href="https://lwn.net"><img src="lwn-logo-gstconf2016.png" alt="LWN" height="99" width="300" /></a>
+  </p>
+-->
+  <p>
+    <small>
+    Interested in <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">becoming a sponsor</a> ?
+    </small>
+  </p>
+</td>
+
+</tr>
+</table>
+
+</body>
+</page>
