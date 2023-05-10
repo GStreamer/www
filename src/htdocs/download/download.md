@@ -196,7 +196,7 @@ tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 * **Android Universal [1.22.2 tarball](/data/pkg/android/1.22.2/gstreamer-1.0-android-universal-1.22.2.tar.xz) (current stable version)**
 * Android Universal [1.20.6 tarball](/data/pkg/android/1.20.6/gstreamer-1.0-android-universal-1.20.6.tar.xz) (old stable version)
 
-The Android NDKs used by the stable releases are:
+The Android NDKs used by our stable releases are:
 
 <table style='border-collapse: collapse;'>
  <tr style='background-color: #f2f2f2;'>
@@ -221,27 +221,32 @@ The Android NDKs used by the stable releases are:
  </tr>
 </table>
 
-The Android APIs targeted by the GStreamer 1.16.x, 1.18.x, 1.20.x stable release(s) are:
+The Android APIs targeted by our stable release(s) are:
 
 <table style='border-collapse: collapse;'>
  <tr style='background-color: #f2f2f2;'>
   <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>Architecture</th>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>API Targeted</th>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>API Targeted<br/><small>GStreamer &lt;= 1.20</small></th>
+  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>API Targeted<br/><small>GStreamer &gt;= 1.22</small></th>
  </tr>
  <tr>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>armv7</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v16 (Jelly Bean)</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
  </tr>
  <tr>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>x86</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v16 (Jelly Bean)</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
  </tr>
  <tr>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>arm64</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
  </tr>
  <tr>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>x86_64</td>
+  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
   <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
  </tr>
 </table>
