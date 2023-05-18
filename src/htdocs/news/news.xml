@@ -13064,4 +13064,70 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+  <item>
+      <date>2023-05-19 10:00</date>
+        <title>GStreamer 1.22.3 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the second bug fix release
+in the stable 1.22 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it should be safe to update from
+1.22.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+  <li>avdec: fix occasional video decoder deadlock on seeking with FFmpeg 6.0</li>
+  <li>decodebin3: fix regression handling input streams without CAPS or TIME segment such as e.g. <tt>udpsrc</tt> or <tt>pushfilesrc</tt></li>
+  <li>bluez: a2dpsink: fix Bluetooth SIG Certification test failures</li>
+  <li>osxvideosink: fix deadlock upon closing output window</li>
+  <li>qtdemux: fix edit list handling regression and AV1 codec box parsing</li>
+  <li>qtmux: fix extraction of CEA608 closed caption data from S334-1A packets</li>
+  <li>rtspsrc: Fix handling of <tt>*</tt> control path</li>
+  <li>splitmux: timestamp handling improvements</li>
+  <li>v4l2videodec: Rework dynamic resolution change handling (needed for IMX6 mainline codec)</li>
+  <li>videoflip: fix regression with automatically rotating video based on tags</li>
+  <li>d3d11: many d3d11videosink and d3d11compositor fixes</li>
+  <li>webrtc, rtp: numerous data race fixes and stability fixes</li>
+  <li>cerbero: Add support for RHEL9 and Rocky Linux; build timecodestamper plugin with libltc support</li>
+  <li>various bug fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.22/#1.22.3">GStreamer 1.22.3 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+
+<p>
+Release tarballs can be downloaded directly here:
+<ul>
+<a href="&site;/src/gstreamer/gstreamer-1.22.3.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.22.3.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.22.3.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.22.3.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.22.3.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.22.3.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.22.3.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.22.3.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gst-editing-services-1.22.3.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-devtools/gst-devtools-1.22.3.tar.xz">gst-devtools</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.22.3.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.22.3.tar.xz">gstreamer-sharp</a>,
+<a href="&site;/src/gst-omx/gst-omx-1.22.3.tar.xz">gst-omx</a>, or
+<a href="&site;/src/gstreamer-docs/gstreamer-docs-1.22.3.tar.xz">gstreamer-docs</a>.
+</ul>
+</p>
+        </content>
+  </item>
+
 </news>
