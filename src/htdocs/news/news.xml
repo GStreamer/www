@@ -11610,7 +11610,7 @@ and it should be safe to update from 1.18.x.
   <li>rtsp-server: seek handling improvements</li>
   <li>gst-libav: fix build (and other issues) with ffmpeg 4.4</li>
   <li>cerbero: spandsp: Fix build error with Visual Studio 2019</li>
-  <li>win32 packages: Fix hang in GLib when `G_SLICE` environment variable is set</li>
+  <li>win32 packages: Fix hang in GLib when <tt>G_SLICE</tt> environment variable is set</li>
   <li>various stability, performance and reliability improvements</li>
   <li>memory leak fixes</li>
   <li>build fixes</li>
@@ -12066,7 +12066,7 @@ This release only contains bugfixes and it should be safe to update from
   <li>nvdecoder: Various fixes for 4:4:4 and high-bitdepth decoding</li>
   <li>Support build against libfreeaptx in openaptx plugin</li>
   <li>webrtc: Various fixes to the webrtc-sendrecv python example</li>
-  <li>macOS: support a relocatable `GStreamer.framework` on macOS</li>
+  <li>macOS: support a relocatable <tt>GStreamer.framework</tt> on macOS</li>
   <li>macOS: fix applemedia plugin failing to load on ARM64 macOS</li>
   <li>windows: ship wavpack library</li>
   <li>gst-python: Fix build with Python 3.11</li>
@@ -13023,7 +13023,7 @@ This release only contains bugfixes and it should be safe to update from
   <li>typefinding: fix regression not detecting application/dash+xml in some corner cases</li>
   <li>osxvideosink: fix broken aspect ratio and frame drawing region</li>
   <li>decodebin3, parsebin: Improve elementary stream handling when decoders are not present and fix hang when removing a failing stream</li>
-  <li>urisourcebin: Propagate sticky events from parsebin, so that the `STREAM_START` event with the `GstStream` info is always available when pads get exposed</li>
+  <li>urisourcebin: Propagate sticky events from parsebin, so that the <tt>STREAM_START</tt> event with the <tt>GstStream</tt> info is always available when pads get exposed</li>
   <li>v4l2: Add support for YVU420M format; mark JPEG content as parsed</li>
   <li>h264decoder, h265decoder: DPB bumping process and latency reporting fixes</li>
   <li>Opus: Fix reading of extended channel config in MPEG-TS and fix missing sample rate when remuxing from RTP to Matroska</li>
