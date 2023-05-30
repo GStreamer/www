@@ -13130,4 +13130,31 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+  <item>
+      <date>2023-05-30 01:00</date>
+        <title>Orc 0.4.34 release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>Thread-safety improvements around orc codemem allocation/freeing</li>
+            <li>Add orc_parse_code() with more detailed error reporting</li>
+            <li>Implement Orc function lazy initialization correctly via atomic operations</li>
+            <li>orc program parser fixes and improvements</li>
+            <li>build fixes and compiler warning fixes</li>
+            <li>coverity and clang scan-build static code analysis fixes</li>
+            <li>meson: Do not always generate static library for test library</li>
+            <li>ci improvements</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.34.tar.xz">orc-0.4.34</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
