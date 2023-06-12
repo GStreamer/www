@@ -18,7 +18,8 @@
   <h2>Security Contacts</h2>
   <p>
      Security notifications or problems should be reported in <a href="https://gitlab.freedesktop.org/gstreamer">GitLab</a>
-     by filing an <u>issue</u> and marking it as <i>confidential</i> before submitting it.
+     by <u><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/new?issue[confidential]=true">filing an issue</a></u>
+     and marking it as <i>confidential</i> before submitting it (if you follow the link on the left the confidential checkbox should already be ticked).
   </p>
   <p>
      If you have patches, please attach them to the confidential issue and not via a merge requests, as merge requests are always public immediately.
