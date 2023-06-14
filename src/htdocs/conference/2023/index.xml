@@ -26,7 +26,6 @@ li {
 
 <p>
 
-<!--
 <style>
 .crop-photo{
     float:left;
@@ -34,25 +33,26 @@ li {
     overflow:hidden; /* this is important */
     position:relative; /* this is important too */
     border:1px solid #ccc;
-    width:280px;
-    height:210px;
+    width:964px;
+    height:310px;
     }
 .crop-photo img{
     position:absolute;
-    top:-42px;
-    right:-56px;
+    top:-0px;
+    right:-0px;
+    left:-550px;
     }
 </style>
--->
 
 <table>
 <tr>
   <td>
-    <!-- <div class="crop-photo"> -->
+    <div class="crop-photo">
     <img src="acoruna_banner.jpg"
          alt="A Coruña"
          height="300"
     />
+    </div>
   </td>
 </tr>
 </table>
