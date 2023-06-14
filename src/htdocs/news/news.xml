@@ -13157,4 +13157,61 @@ Direct tarball download: <a href="&site;/src/orc/orc-0.4.34.tar.xz">orc-0.4.34</
         </content>
   </item>
 
+  <item>
+      <date>2023-06-14 18:00</date>
+        <title>GStreamer Conference 2023 announced to take place 25-26 Sept 2023 in A Coruña, Spain</title>
+        <content>
+<p>
+The GStreamer project is happy to announce that this year's GStreamer
+Conference will take place on Monday-Tuesday 25-26 September 2023
+in A Coruña, Spain, followed by a hackfest.
+</p>
+<p>
+You can find more details about the conference on the
+<a href="https://gstreamer.freedesktop.org/conference/2023/">GStreamer
+Conference 2023 web site</a>.
+</p>
+<p>
+A call for papers will be sent out in due course.
+</p>
+<p>
+Registration will open at a later time, in late June / early July.
+</p>
+<p>
+We will announce those and any further updates on the
+<a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>,
+the <a href="https://gstreamer.freedesktop.org/news/">website</a>,
+<a href="https://twitter.com/GStreamer">on Twitter</a>.
+and <a href="https://fosstodon.org/@GStreamer">on Mastodon</a>.
+</p>
+<p>
+Talk slots will be available in varying durations from 20 minutes up to
+45 minutes. Whatever you're doing or planning to do with GStreamer,
+we'd like to hear from you!
+</p>
+<p>
+We also plan to have sessions with short lightning talks / demos /
+showcase talks for those who just want to show what they've been
+working on or do a mini-talk instead of a full-length talk. Lightning
+talk slots will be allocated on a first-come-first-serve basis, so make
+sure to reserve your slot if you plan on giving a lightning talk.
+</p>
+<p>
+Our main social event will be on Monday evening, and there'll also be a welcome drinks/snacks get-together on Sunday evening.
+</p>
+<p>
+A GStreamer hackfest will take place right after the conference, on 27-29 September 2023.
+</p>
+<p>
+Interested in sponsoring? A Sponsorship Brief is being prepared and will be available shortly.
+</p>
+<p>
+We hope to see you in A Coruña!
+</p>
+<p>
+Please spread the word!
+</p>
+        </content>
+  </item>
+
 </news>
