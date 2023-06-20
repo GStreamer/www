@@ -7,7 +7,7 @@
 <advisory>
 <id>2023-0001</id>
 <alternate-name>ZDI-CAN-20775</alternate-name>
-<date>2023-06-18 20:00</date>
+<date>2023-06-20 18:00</date>
 <summary>Integer overflow leading to heap overwrite in FLAC image tag handling</summary>
 <affected-versions>GStreamer gst-plugins-good 1.x &lt; 1.22.4, 0.10.x</affected-versions>
 

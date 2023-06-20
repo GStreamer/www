@@ -7,7 +7,7 @@
 <advisory>
 <id>2023-0002</id>
 <alternate-name>ZDI-CAN-20968</alternate-name>
-<date>2023-06-19 20:00</date>
+<date>2023-06-20 18:00</date>
 <summary>Heap overwrite in subtitle parsing</summary>
 <affected-versions>GStreamer gst-plugins-base 1.x &lt; 1.22.4, 0.10.x</affected-versions>
 
