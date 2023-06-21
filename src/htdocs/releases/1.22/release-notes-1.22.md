@@ -1369,7 +1369,7 @@ to update from 1.22.x.
 
 #### Highlighted bugfixes in 1.22.4
 
- - [Security fixes](gstreamer.freedesktop.org/security/) for flacparse, dvdspu, and subparse
+ - [Security fixes](https://gstreamer.freedesktop.org/security/) for flacparse, dvdspu, and subparse
  - d3d11videosink: Fix error on pause and play
  - decklink: Correctly handle SDK strings on macOS and free strings after usage on Linux
  - filesink: Fix buffered mode writing of buffer lists and buffers with multiple memories
