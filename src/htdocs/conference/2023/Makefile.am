@@ -13,11 +13,9 @@ images = acoruna_banner.jpg
 #	sponsor_zeiss.png
 #	sponsor_facebook_960x263.png
 
-# FIXME: add sponsor brief
-# gstreamer-conference-sponsor-brief-2023.pdf
-documents =
+documents = gstreamer-conference-sponsor-brief-2023.pdf
 
-#gstreamer-conference-sponsor-brief-2023.pdf:
-#	cp $(top_srcdir)/copy/documents/gstreamer-conference-sponsor-brief-2023.pdf gstreamer-conference-sponsor-brief-2023.pdf
+gstreamer-conference-sponsor-brief-2023.pdf:
+	cp $(top_srcdir)/copy/documents/gstreamer-conference-sponsor-brief-2023.pdf gstreamer-conference-sponsor-brief-2023.pdf
 
 include $(top_srcdir)/html.make

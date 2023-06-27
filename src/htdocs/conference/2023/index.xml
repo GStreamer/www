@@ -355,18 +355,12 @@ li {
   financial support from our sponsors.
   </p>
   <p>
-  A Sponsorship Brief detailing this year's sponsorship opportunities is being
-  prepared and will be available shortly.
-  </p>
-<!--
-  <p>
   For this year's sponsorship opportunities please refer to
   the <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">sponsor brief (PDF)</a>
   or <a href="mailto:sponsors@gstreamer-foundation.org">get in touch</a>.
   </p>
--->
   <p>
-  Sponsorship proceeds are not only used to put on the conference, but also support our extensive CI infrastructure.
+  Sponsorship proceeds are not only used to put on the conference and hackfests, but also support our extensive CI infrastructure.
   </p>
 
   <h2>City</h2>
@@ -440,10 +434,7 @@ li {
   <h2>Contact</h2>
   <p>
   If you have any questions about the GStreamer Conference or are considering
-<!-- FIXME: sponsorship brief
   <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">becoming a sponsor</a>
--->
-  becoming a sponsor
   please <a href="mailto:conference@gstreamer-foundation.org">get in touch</a>.
   </p>
 
@@ -513,11 +504,9 @@ li {
     <i>2019-July-22</i>: We're excited to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as a Gold sponsor this year!
   </p>
 -->
-  <!-- FIXME: sponsorship brief
   <p>
-    <i>2023-May-XX</i>: <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">Sponsorship brief</a> available
+    <i>2023-Jun-27</i>: <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">Sponsorship brief</a> available
   </p>
-  -->
   <p>
     <i>2023-Jun-14</i>: Venue announced: <a href="https://www.palexco.com/">Palexco Convention Centre</a>, A Coruña, Spain.
   </p>
