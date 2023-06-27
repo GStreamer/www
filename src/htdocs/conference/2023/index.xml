@@ -413,6 +413,30 @@ li {
   <a href="mailto:conference-invitations@gstreamer-foundation.org">get in touch</a>.
   </p>
 
+  <h2>Notes</h2>
+  <p>
+  <ul>
+    <li><strong>Usual timetables</strong>. Lunch time: 13:00 - 15:30. Dinner
+    time: 20:30 - 22:30. Note that you won't be able to find a restaurant open
+    for lunch at 12:00 or for dinner at 18:00, neither at 19:00; thus you might
+    want to start your day a bit "later" than usual. Main reason behind this is
+    that A Coruña is in the same timezone as central Europe, and <a
+    href="https://www.timeanddate.com/sun/spain/la-coruna">sunrise and sunset
+    times</a> are somehow shifted with regard to common standards in other parts
+    of the world.</li>
+    <li><strong>Language</strong>. The official languages in A Coruña are
+    Galician and Spanish. Not everybody is able to understand or speak English
+    (in the bus, taxi, hotel, etc). The GStreamer Conference is run in
+    English.</li>
+    <li><strong>Climate</strong>. A Coruña has a climate heavily moderated by
+    the Atlantic Ocean. Average temperatures are around 10ºC (51ºF) in winter
+    and 19ºC (66ºF) during summer. (See more info at <a
+    href="https://en.wikipedia.org/wiki/A_Coru%C3%B1a#Climate">Wikipedia</a>).</li>
+    <li><strong>Tourism</strong>. <a
+    href="http://www.turismocoruna.com/">Tourism A Coruña website</a>.</li>
+  </ul>
+  </p>
+
   <h2>Contact</h2>
   <p>
   If you have any questions about the GStreamer Conference or are considering
