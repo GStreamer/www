@@ -557,6 +557,9 @@ li {
   </p>
 -->
   <p>
+    <i>2023-July-05</i>: We're thrilled to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as sponsor at Platinum level this year!
+  </p>
+  <p>
     <i>2023-June-28</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record and live stream talks and lightning talks</a>
   </p>
   <p>
@@ -587,6 +590,9 @@ li {
 <td valign="top" style="padding:0px 50px">
   <h1>Sponsors</h1>
   <h2>Platinum Sponsor</h2>
+  <p style="padding:20px 0px">
+    <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="90" /></a>
+  </p>
 <!--
   <p style="padding:20px 0px">
     <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
@@ -599,10 +605,6 @@ li {
 
   <h2>Gold Sponsors</h2>
 <!--
-  <p style="padding:10px 0px">
-    <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="75" /></a>
-  </p>
-
   <p style="padding:10px 0px">
     <a href="https://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="70" /></a>
   </p>
