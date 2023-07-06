@@ -7,6 +7,7 @@
 <advisory>
 <id>2023-0001</id>
 <alternate-name>ZDI-CAN-20775</alternate-name>
+<alternate-name>CVE-2023-37327</alternate-name>
 <date>2023-06-20 18:00</date>
 <summary>Integer overflow leading to heap overwrite in FLAC image tag handling</summary>
 <affected-versions>GStreamer gst-plugins-good 1.x &lt; 1.22.4, 0.10.x</affected-versions>
@@ -22,12 +23,10 @@
         <title>The GStreamer project</title>
         <content> <a href="https://gstreamer.freedesktop.org">https://gstreamer.freedesktop.org</a></content>
     </reference>
-<!--
     <reference>
-    <title>CVE Database Entries (FIXME)</title>
-    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-FIXME">CVE-2023-FIXME</a>  </content>
+    <title>CVE Database Entries</title>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-37327">CVE-2023-37327</a>  </content>
     </reference>
--->
     <reference>
         <title>GStreamer 1.22.4 release</title>
         <content>

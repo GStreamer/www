@@ -7,6 +7,7 @@
 <advisory>
 <id>2023-0002</id>
 <alternate-name>ZDI-CAN-20968</alternate-name>
+<alternate-name>CVE-2023-37328</alternate-name>
 <date>2023-06-20 18:00</date>
 <summary>Heap overwrite in subtitle parsing</summary>
 <affected-versions>GStreamer gst-plugins-base 1.x &lt; 1.22.4, 0.10.x</affected-versions>
@@ -22,12 +23,10 @@
         <title>The GStreamer project</title>
         <content> <a href="https://gstreamer.freedesktop.org">https://gstreamer.freedesktop.org</a></content>
     </reference>
-    <!--
     <reference>
-    <title>CVE Database Entries (FIXME)</title>
-    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-FIXME">CVE-2023-FIXME</a>  </content>
+    <title>CVE Database Entries</title>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-37328">CVE-2023-37328</a>  </content>
     </reference>
-    -->
     <reference>
         <title>GStreamer 1.22.4 release</title>
         <content>
