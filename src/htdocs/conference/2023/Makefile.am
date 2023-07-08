@@ -3,6 +3,7 @@ built_pages = index.html
 
 # image from https://indico.freedesktop.org/event/4/images/68-orzan-corunha-low.jpg
 images = acoruna_banner.jpg \
+  sponsor_axis.png \
   sponsor_igalia_2015_2019x720.png \
   sponsor_ubicast_640x195.png
 

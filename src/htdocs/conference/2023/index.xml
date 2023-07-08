@@ -544,9 +544,6 @@ li {
     <i>2019-September-09</i>: Registration is now <a href="https://ti.to/gstreamer-conference-tickets/gstreamer-conference-2019">open</a>. Early-bird professional tickets are available until 29 September 2019.
   </p>
   <p>
-    <i>2019-September-05</i>: Added list of hotels
-  </p>
-  <p>
     <i>2019-August-24</i>: Call for Papers is now open, please submit your talk proposals now!
   </p>
   <p>
@@ -557,6 +554,9 @@ li {
   </p>
 -->
   <p>
+    <i>2023-Jul-07</i>: The GStreamer project is excited to have <b><a href="https://axis.com">Axis Communications</a></b> sponsor the conference for the first time this year, at Gold level!
+  </p>
+  <p>
     <i>2023-Jul-07</i>: An updated <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">Sponsorship brief PDF</a> has been uploaded to fix rendering issues on Apple devices.
   </p>
   <p>
@@ -564,6 +564,9 @@ li {
   </p>
   <p>
     <i>2023-June-28</i>: <b><a href="https://www.ubicast.eu">UbiCast</a></b> is welcomed back as special media partner who will again <a href="https://gstconf.ubicast.tv">record and live stream talks and lightning talks</a>
+  </p>
+  <p>
+    <i>2023-Jun-27</i>: Added list of hotels and transport options.
   </p>
   <p>
     <i>2023-Jun-27</i>: <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">Sponsorship brief</a> available
@@ -607,6 +610,9 @@ li {
   <br />
 
   <h2>Gold Sponsors</h2>
+  <p style="padding:10px 0px">
+    <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" height="90" /></a>
+  </p>
 <!--
   <p style="padding:10px 0px">
     <a href="https://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="70" /></a>
