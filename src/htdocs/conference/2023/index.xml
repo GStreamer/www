@@ -152,15 +152,6 @@ li {
   -->
 
   <h2>Call for Papers</h2>
-  <p>
-  The call for papers is not open yet, but will be announced here and on
-  the <a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>.
-  You can also <a href="https://twitter.com/GStreamer">follow @GStreamer on Twitter</a> or
-  <a href="https://fosstodon.org/@GStreamer">follow @GStreamer on Mastodon</a> for updates.
-  </p>
-
-<!--
-  <h2>Call for Papers</h2>
   <p><b>
   The call for papers is now open for talk proposals and lightning talks.
   Please submit your talk now!
@@ -171,8 +162,18 @@ li {
   (please allow at least 5 minutes for questions at the end as well).
   </p>
   <p>
+  You will still be able to edit and refine your talk proposal after the
+  initial submission, so no need to hold off until the last minute to get
+  it perfect.
+  </p>
+  <p>
+  <b>The talk submission deadline is 20 August 2023!</b>
+  </p>
+<!--
+  <p>
   <b>The talk submission deadline has been extended and is 30 September 2019 for second round slots!</b>
   </p>
+-->
   <p>
   Talks can be on almost anything multimedia related, ranging from talks about
   applications to challenges in the lower levels in the stack or hardware.
@@ -188,10 +189,11 @@ li {
   what your plans are, what you like, what you dislike, how to improve things!
   </p>
   <p>
-  Please send all proposals to <a href="mailto:gstreamer-conference@lists.freedesktop.org">gstreamer-conference<!-x- -x-><i>&#64;</i><!-x- -x->lists.freedesktop.org</a>.
-  You do not need to subscribe to the list, and you should receive a confirmation that your proposal has been received within a couple of days.
+  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/5/">GStreamer Conference 2023 Paper Submission Portal</a>.
   </p>
--->
+  <p>
+  You can log in using your existing freedesktop.org GitLab account if you have one or register a new account with the system.
+  </p>
 
 <!--
   <h2>Call for Papers</h2>
@@ -544,9 +546,6 @@ li {
     <i>2019-September-09</i>: Registration is now <a href="https://ti.to/gstreamer-conference-tickets/gstreamer-conference-2019">open</a>. Early-bird professional tickets are available until 29 September 2019.
   </p>
   <p>
-    <i>2019-August-24</i>: Call for Papers is now open, please submit your talk proposals now!
-  </p>
-  <p>
     <i>2019-August-05</i>: The GStreamer project is excited to see <b><a href="https://zeiss.com/">Zeiss</a></b> sponsor the conference as Silver sponsor again this year!
   </p>
   <p>
@@ -554,10 +553,13 @@ li {
   </p>
 -->
   <p>
-    <i>2023-Jul-07</i>: The GStreamer project is excited to have <b><a href="https://axis.com">Axis Communications</a></b> sponsor the conference for the first time this year, at Gold level!
+    <i>2023-July-10</i>: The Call for Papers is now open, please submit your talk proposals now!
   </p>
   <p>
-    <i>2023-Jul-07</i>: An updated <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">Sponsorship brief PDF</a> has been uploaded to fix rendering issues on Apple devices.
+    <i>2023-July-07</i>: The GStreamer project is excited to have <b><a href="https://axis.com">Axis Communications</a></b> sponsor the conference for the first time this year, at Gold level!
+  </p>
+  <p>
+    <i>2023-July-07</i>: An updated <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">Sponsorship brief PDF</a> has been uploaded to fix rendering issues on Apple devices.
   </p>
   <p>
     <i>2023-July-05</i>: We're thrilled to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as sponsor at Platinum level this year!

@@ -13286,4 +13286,70 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+  <item>
+      <date>2023-07-10 22:00</date>
+        <title>GStreamer Conference 2023 - Call for Papers is open!</title>
+        <content>
+<p>
+The GStreamer project is thrilled to announce that this year's GStreamer
+Conference will take place on Monday-Tuesday 25-26 September 2023
+in A Coruña, Spain, followed by a hackfest.
+</p>
+<p>
+You can find more details about the conference on the
+<a href="https://gstreamer.freedesktop.org/conference/2023/">GStreamer
+Conference 2023 web site</a>.
+</p>
+  <p><b>
+  The call for papers is now open for talk proposals and lightning talks.
+  Please submit your talk now!
+  </b></p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk
+  (please allow at least 5 minutes for questions at the end as well).
+  </p>
+  <p>
+  You will still be able to edit and refine your talk proposal after the
+  initial submission, so no need to hold off until the last minute to get
+  it perfect.
+  </p>
+  <p>
+  <b>The talk submission deadline is 20 August 2023!</b>
+  </p>
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+  <p>
+  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
+  or 45 minutes, including questions. If you need more time than that we might
+  be able to accommodate that as well, please get in touch to discuss details.
+  </p>
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+  <p>
+  Please submit all proposals through the <b><a href="https://indico.freedesktop.org/event/5/">GStreamer Conference 2023 Paper Submission Portal</a></b>.
+  </p>
+  <p>
+  You can log in using your existing freedesktop.org GitLab account if you have one or register a new account with the system.
+  </p>
+
+  <p>
+  Considering becoming a sponsor? Please check out our
+  <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">sponsor brief</a>
+  or <a href="mailto:sponsors@gstreamer-foundation.org">get in touch</a>.
+  </p>
+  <p>
+  We hope to see you in A Coruña!
+  </p>
+  <p>
+  Please spread the word!
+  </p>
+        </content>
+  </item>
+
 </news>
