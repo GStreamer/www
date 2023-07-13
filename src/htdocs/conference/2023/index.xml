@@ -546,12 +546,12 @@ li {
     <i>2019-September-09</i>: Registration is now <a href="https://ti.to/gstreamer-conference-tickets/gstreamer-conference-2019">open</a>. Early-bird professional tickets are available until 29 September 2019.
   </p>
   <p>
-    <i>2019-August-05</i>: The GStreamer project is excited to see <b><a href="https://zeiss.com/">Zeiss</a></b> sponsor the conference as Silver sponsor again this year!
-  </p>
-  <p>
     <i>2019-July-24</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
   </p>
 -->
+  <p>
+    <i>2023-July-13</i>: The GStreamer project is excited to see <b><a href="https://zeiss.com/">Zeiss</a></b> sponsor the conference as Silver sponsor again this year!
+  </p>
   <p>
     <i>2023-July-10</i>: The Call for Papers is now open, please submit your talk proposals now!
   </p>
@@ -627,11 +627,11 @@ li {
   <br />
 
   <h2>Silver Sponsors</h2>
-<!--
   <p style="padding:0px 0px">
     <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
   </p>
 
+<!--
   <p style="padding:10px 0px">
     <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
   </p>
