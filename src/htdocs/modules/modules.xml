@@ -174,22 +174,6 @@ RTSP server library based on GStreamer
   </module>
 
   <module>
-    <id>gst-omx</id>
-    <blurb>OpenMax plugins</blurb>
-    <title>GStreamer OpenMax plugins</title>
-    <description>
-OpenMax-based decoder and encoder elements for GStreamer.
-Replaces gst-openmax.
-    </description>
-    <maintainer>Sebastian Dröge</maintainer>
-    <versions>
-      <stable>&gst-version-stable;</stable>
-      <devel>&gst-version-devel;</devel>
-    </versions>
-    <status>active</status>
-  </module>
-
-  <module>
     <id>gstreamer-vaapi</id>
     <blurb>VA-API integration</blurb>
     <title>GStreamer VA-API integration</title>
@@ -273,5 +257,22 @@ timeline-oriented use of GStreamer makes sense.
     </versions>
     <status>deprecated (replaced by gnl in gst-editing-services)</status>
   </module>
+
+  <module>
+    <id>gst-omx</id>
+    <blurb>OpenMax plugins</blurb>
+    <title>GStreamer OpenMax plugins</title>
+    <description>
+OpenMax-based decoder and encoder elements for GStreamer.
+Replacement for gst-openmax.
+    </description>
+    <maintainer>Sebastian Dröge</maintainer>
+    <versions>
+      <stable>obsolete</stable>
+      <devel>obsolete</devel>
+    </versions>
+    <status>obsolete (no longer used or useful, use Video4Linux2-based decoders and encoders instead)</status>
+  </module>
+
 
 </modules>
