@@ -6,6 +6,8 @@
 ]>
 <wrapper xmlns:xi="http://www.w3.org/2001/XInclude">
     <alerts>
+    <xi:include href="sa-2023-0005.xml" parse="xml" />
+    <xi:include href="sa-2023-0004.xml" parse="xml" />
     <xi:include href="sa-2023-0003.xml" parse="xml" />
     <xi:include href="sa-2023-0002.xml" parse="xml" />
     <xi:include href="sa-2023-0001.xml" parse="xml" />
