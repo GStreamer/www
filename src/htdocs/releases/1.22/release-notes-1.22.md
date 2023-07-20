@@ -2,11 +2,11 @@
 
 GStreamer 1.22.0 was originally released on 23 January 2023.
 
-The latest bug-fix release in the stable 1.22 series is [1.22.4](#1.22.4) and was released on 20 June 2023.
+The latest bug-fix release in the stable 1.22 series is [1.22.5](#1.22.5) and was released on 20 July 2023.
 
 See [https://gstreamer.freedesktop.org/releases/1.22/][latest] for the latest version of this document.
 
-*Last updated: Tuesday 20 June 2023, 16:30 UTC [(log)][gitlog]*
+*Last updated: Thursday 20 July 2023, 12:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.22/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.22/release-notes-1.22.md
@@ -1520,6 +1520,167 @@ suggestions or helped testing. Thank you all!
 
 - [List of Merge Requests applied in 1.22.4](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.22.4)
 - [List of Issues fixed in 1.22.4](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.22.4)
+
+<a id="1.22.5"></a>
+
+### 1.22.5
+
+The fifth 1.22 bug-fix release (1.22.5) was released on 20 July 2023.
+
+This release only contains bugfixes and security fixes and it *should* be safe
+to update from 1.22.x.
+
+#### Highlighted bugfixes in 1.22.5
+
+ - [Security fixes](https://gstreamer.freedesktop.org/security/) for the RealMedia demuxer
+ - vaapi decoders, postproc: Disable DMAbuf from caps negotiation to fix garbled video in some cases
+ - decodebin3, playbin3, parsebin fixes, especially for stream reconfiguration
+ - hlsdemux2: fix early seeking; don't pass referer when updating playlists; webvtt fixes
+ - gtk: Fix critical caused by pointer movement when stream is getting ready
+ - qt6: Set sampler filtering method, fixes bad quality with qml6glsink and gstqt6d3d11
+ - v4l2src: handle resolution change when buffers are copied
+ - videoflip: update orientation tag in auto mode
+ - video timecode: Add support for framerates lower than 1fps and accept 119.88 (120/1.001) fps
+ - webrtcsink: fixes for x264enc and NVIDIA encoders
+ - cerbero: Pull ninja from system if possible, avoid spurious bootstrap of cmake
+ - packages: Recipe updates for ffmpeg, libsoup, orc
+ - various bug fixes, memory leak fixes, and other stability and reliability improvements
+
+#### gstreamer
+
+ - [taglist, plugins: fix compiler warnings with GLib >= 2.76](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5015)
+ - [tracerutils: allow casting parameter types](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4941)
+ - [inputselector: fix playing variable is never set](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4988)
+
+#### gst-plugins-base
+
+ - [appsink: add missing make_writable call](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5013)
+ - [audioaggregator: Do not post message before being constructed](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4984)
+ - [decodebin3: Prevent a critical warning when reassigning output slots](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5069)
+ - [decodebin3: Fix slot input linking when the associated stream has changed](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5067)
+ - [decodebin3: Remove spurious input locking during parsebin reconfiguration](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5025)
+ - [urisourcebin: Set source element to READY before querying it](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5058)
+ - [gl/viv-fb: meson build updates](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4959)
+ - [plugins: fix compiler warnings with GLib >= 2.76](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5015)
+ - [subtitleoverlay: fix mutex error if sink caps is not video](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4972)
+ - [video: timecode: Add support for framerates lower than 1fps](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5074)
+ - [video: accept timecode of 119.88 (120/1.001) FPS](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5061)
+ - [video: cannot attach time code meta when frame rate is 119.88 (120000/1001)](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/2797)
+ - [videodecoder: fix copying buffer metas](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5054)
+
+#### gst-plugins-good
+
+ - [adaptivedemux2: Fix early seeking](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4922)
+ - [hlsdemux2: Ensure processed webvtt ends with empty new line](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4970)
+ - [hlsdemux2: Don't set a referer when updating playlists](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5057)
+ - [matroska: demux: Strip signal byte when encrypted](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5014)
+ - [rtspsrc: Fix crash when `is-live=false`](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4971)
+ - [gtk: Fix critical caused by pointer movement when stream is getting ready](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5051)
+ - [qt6: Set sampler filtering method, fixes bad quality with qml6glsink and gstqt6d3d11](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5016)
+ - [qtdemux: opus: set entry as sampled](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4908)
+ - [v4l2src: handle resolution change when buffers are copied](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4985)
+ - [v4l2videodec: Fix handling of initial gaps](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4996)
+ - [v4l2videodec: correctly register v4l2mpeg2dec](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4992)
+ - [v4l2videoenc: replace custom QUERY_CAPS handling with getcaps callback](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5036)
+ - [videoflip: update orientation tag in auto mode](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4796)
+ - [videoflip: fix critical when tag list is not writable](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4990)
+
+#### gst-plugins-bad
+
+ - [d3d11bufferpool: Fix heavy CPU usage in case of fixed-size pool](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4943)
+ - [jpegparser: jpegdecoder: Don't pollute bus and comply with spec](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5053)
+ - [plugins: fix compiler warnings with GLib >= 2.76](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5015)
+ - [webrtcbin: Prevent critical warning when creating an additional data channel](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5012)
+ - [webrtcstats: Properly report IceCandidate type](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4957)
+
+#### gst-plugins-ugly
+
+ - [rmdemux: add some integer overflow checks](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5073)
+
+### gst-plugins-rs
+
+ - [fallbackswitch: Change the threshold for trailing buffers](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1198)
+ - [fallbackswitch: Fix pad health calculation and notifies](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1198)
+ - [fmp4mux: Fix draining in chunk mode if keyframes are too late](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1277)
+ - [livesync: Wait for the end timestamp of the previous buffer before looking at queue](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1250)
+ - [livesync: Improve EOS handling](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1251)
+ - [togglerecord: Clip segment before calculating timestamp/duration](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1265)
+ - [togglerecord: Error out if main stream buffer has no valid running time](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1264)
+ - [webrtcsink: fix pipeline when input caps contain max-framerate](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1276)
+ - [webrtcsink: Configure only 4 threads for x264enc](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1275)
+ - [webrtcsink: Translate force-keyunit events to force-IDR action signal for NVIDIA encoders](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1274)
+ - [webrtcsink: Set config-interval=-1 and aggregate-mode=zero-latency on `rtph264pay` and `rtph265pay`](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1272)
+ - [webrtcsink: Set VP8/VP9 payloader based on payloader element factory name](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1272)
+ - [webrtcink: Use correct property types for nvvideoconvert](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1256)
+ - [webrtc/signalling: fix race condition in message ordering](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1236)
+ - [videofx: Minimize dependencies of the image crate](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1260)
+
+#### gst-libav
+
+ - No changes
+
+#### gst-rtsp-server
+
+ - No changes
+
+#### gstreamer-vaapi
+
+ - [vaapidecode,vaapipostproc: Disable DMAbuf from caps negotiation.](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5029)
+
+#### gstreamer-sharp
+
+ - No changes
+
+#### gst-omx
+
+ - No changes
+
+#### gst-python
+
+ - No changes
+ 
+#### gst-editing-services
+
+ - [ges: some fixes for 32-bit systems](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5055)
+ - [ges, nle: Avoid setting state or sending query when constructing objects](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4984)
+
+#### gst-validate + gst-integration-testsuites
+
+ - No changes
+
+### gst-examples
+
+ - No changes
+
+#### Development build environment
+
+ - No changes
+
+#### Cerbero build tool and packaging changes in 1.22.5
+
+ - [Pull ninja from system if possible, avoid spurious bootstrap of cmake](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1213)
+ - [ffmpeg: update to 5.0.3](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1219)
+ - [libsoup: update to 2.74.3](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1210)
+ - [orc: update to 0.4.34](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1220)
+
+#### Contributors to 1.22.5
+
+Andoni Morales Alastruey, Bastien Nocera, Carlos Rafael Giani,
+David Craven, Doug Nazar, Edward Hervey, François Laignel,
+Guillaume Desmottes, He Junyan, Hou Qi, Jan Alexander Steffens (heftig),
+Jan Schmidt, Maksym Khomenko, Mathieu Duponchelle, Matthew Waters,
+Michael Olbrich, Michael Tretter, Nicolas Dufresne, Nirbheek Chauhan,
+Philippe Normand, Ruslan Khamidullin, Sebastian Dröge, Seungha Yang,
+Théo Maillart, Thibault Saunier, Tim-Philipp Müller,
+Víctor Manuel Jáquez Leal, Vivia Nikolaidou, Yatin Maan,
+
+... and many others who have contributed bug reports, translations, sent
+suggestions or helped testing. Thank you all!
+
+#### List of merge requests and issues fixed in 1.22.5
+
+- [List of Merge Requests applied in 1.22.5](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.22.5)
+- [List of Issues fixed in 1.22.5](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.22.5)
 
 ## Schedule for 1.24
 
