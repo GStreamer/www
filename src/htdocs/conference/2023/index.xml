@@ -580,10 +580,13 @@ li {
   <p>
     <i>2019-September-09</i>: Registration is now <a href="https://ti.to/gstreamer-conference-tickets/gstreamer-conference-2019">open</a>. Early-bird professional tickets are available until 29 September 2019.
   </p>
-  <p>
-    <i>2019-July-24</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
-  </p>
 -->
+  <p>
+    <i>2023-July-20</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2023-July-18</i>: Added some COVID-19 guidelines and what to expect, also more info about the rooms and conference facilities.
+  </p>
   <p>
     <i>2023-July-13</i>: The GStreamer project is excited to see <b><a href="https://zeiss.com/">Zeiss</a></b> sponsor the conference as Silver sponsor again this year!
   </p>
@@ -636,10 +639,10 @@ li {
   <p style="padding:20px 0px">
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="90" /></a>
   </p>
-<!--
   <p style="padding:20px 0px">
     <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
   </p>
+<!--
   <p style="padding:20px 0px">
     <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" width="250" /></a>
   </p>
