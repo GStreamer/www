@@ -10,14 +10,14 @@
 <alternate-name>CVE-2023-37329</alternate-name>
 <date>2023-06-20 18:00</date>
 <summary>Heap overwrite in PGS subtitle overlay decoder</summary>
-<affected-versions>GStreamer gst-plugins-good 1.x &lt; 1.22.4, 0.10.x</affected-versions>
+<affected-versions>GStreamer gst-plugins-bad 1.x &lt; 1.22.4, 1.x &lt; 1.20.7, 0.10.x</affected-versions>
 
-<details>Heap-based buffer overflow in the PGS blu-ray subtitle decoder when handling certain files in GStreamer versions before 1.22.4.</details>
+<details>Heap-based buffer overflow in the PGS blu-ray subtitle decoder when handling certain files in GStreamer versions before 1.22.4 / 1.20.7.</details>
 <impact>It is possible for a malicious third party to trigger a crash in the application, and possibly also effect code execution through heap manipulation.</impact>
 <mitigation></mitigation>
 <workarounds></workarounds>
 <solution></solution>
-<solution>The gst-plugins-bad 1.22.4 release addresses the issue. People using older branches of GStreamer should apply the patch and recompile.</solution>
+<solution>The gst-plugins-bad 1.22.4 / 1.20.7 releases address the issue. People using older branches of GStreamer should apply the patch and recompile.</solution>
 <references>
     <reference>
         <title>The GStreamer project</title>
@@ -32,6 +32,13 @@
         <content>
           <a href="https://gstreamer.freedesktop.org/releases/1.22/#1.22.4">Release Notes</a>
           <a href="https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.22.4.tar.xz">GStreamer Plugins Bad 1.22.4</a>
+        </content>
+    </reference>
+    <reference>
+        <title>GStreamer 1.20.7 release</title>
+        <content>
+          <a href="https://gstreamer.freedesktop.org/releases/1.20/#1.20.7">Release Notes</a>
+          <a href="https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.20.7.tar.xz">GStreamer Plugins Bad 1.20.7</a>
         </content>
     </reference>
 
