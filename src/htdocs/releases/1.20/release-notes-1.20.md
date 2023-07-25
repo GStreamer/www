@@ -2,13 +2,13 @@
 
 GStreamer 1.20.0 was originally released on 3 February 2022.
 
-The latest bug-fix release in the now old-stable 1.20 series is [1.20.6](#1.20.6) and was released on 23 February 2023.
+The latest bug-fix release in the now old-stable 1.20 series is [1.20.7](#1.20.7) and was released on 26 July 2023.
 
 See [https://gstreamer.freedesktop.org/releases/1.20/][latest] for the latest version of this document.
 
 The GStreamer 1.20 stable series has since been superseded by the GStreamer 1.22 stable release series.
 
-*Last updated: Thursday 23 February 2023, 00:30 UTC [(log)][gitlog]*
+*Last updated: Wednesday 26 July 2023, 10:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.20/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.20/release-notes-1.20.md
@@ -2231,6 +2231,128 @@ suggestions or helped testing. Thank you all!
 
  - [List of Merge Requests applied in 1.20.6](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.20.6)
  - [List of Issues fixed in 1.20.6](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.20.6)
+
+<a name="1.20.7"></a>
+
+### 1.20.7
+
+The seventh 1.20 bug-fix release (1.20.7) was released on 26 July 2023.
+
+This release only contains bugfixes and it should be safe to upgrade from 1.20.x.
+
+#### Highlighted bugfixes in 1.20.7
+
+ - [Security fixes](https://gstreamer.freedesktop.org/security/) for flacparse, dvdspu, and subparse, and the RealMedia demuxer
+ - h265parse: Fix framerate handling
+ - filesink: Fix buffered mode writing of buffer lists and buffers with multiple memories
+ - asfmux, rtpbin_buffer_list test: fix possible unaligned write/read on 32-bit ARM
+ - ptp clock: Work around bug in ptpd in default configuration
+ - qtdemux: fix reverse playback regression with edit lists
+ - rtspsrc: various control path handling server compatibility improvements
+ - avviddec: fix potential deadlock on seeking with FFmpeg 6.x
+ - cerbero: Fix pango crash on 32bit Windows; move libass into non-GPL codecs
+ - Miscellaneous bug fixes, memory leak fixes, and other stability and reliability improvements
+
+#### gstreamer
+
+ - [ptp: Correctly parse clock ID from the commandline parameters in the helper](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4838)
+ - [ptp: Work around bug in ptpd in default configuration](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4834)
+
+##### Core Elements
+
+ - [filesink: Fix buffered mode writing of buffer lists and buffers with multiple memories](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4854)
+
+#### gst-plugins-base
+
+ - [audiotestsrc: Initialize all samples in wave=ticks mode](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4564)
+ - [glimagesink: Fix render rect assertion](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4303)
+ - [subparse: Look for the closing `>` of a tag after the opening `<`](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4900)
+ - [urisourcebin: Don't try to plug a typefinder on dynamic sources](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4074)
+ - [video-blend: Fix linking error with C++](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4830)
+ - [tests: allocators: Fix fdmem test with recent GLib](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4829)
+
+#### gst-plugins-good
+
+ - [flacparse: Avoid integer overflow in available data check for image tags](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4901)
+ - [imagesequencesrc: Properly set default location](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4431)
+ - [qtdemux: Fix av1C parsing](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4434)
+ - [qtdemux: dropping frames, incorrectly interpreting edit list (regression from 1.16)](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4833)
+ - [qtdemux: Revert "fix conditions for end of segment in reverse playback" to fix edit list regression](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4833)
+ - [qtmux: Fix extraction of CEA608 data from S334-1A packets](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4832)
+ - [rtpjpegdepay: fix logic error when checking if an EOI is present](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4271)
+ - [rtspsrc: Skip PTs with caps incompatible to the global caps](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4568)
+ - [rtspsrc: Fix handling of `*` control path](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4566)
+ - [rtspsrc: Consider "451: Parameter Not Understood" when handling broken control urls](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4173)
+
+#### gst-plugins-bad
+
+ - [asfmux, rtpbin_buffer_list test: fix possible unaligned write/read on 32-bit ARM](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4856)
+ - [cea708overlay: fix HCR interpretation](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4174)
+ - [dvdspu: Make sure enough data is allocated for the available data](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4902)
+ - [h265parse: Fix framerate handling](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4884)
+ - [ksvideo, dshow: Fix reference leaks device providers](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4270)
+ - [tsdemux: Set number of channels to 2 for dual mono Opus](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4565)
+
+#### gst-plugins-ugly
+
+ - [rmdemux: add some integer overflow checks](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5077)
+
+#### gst-libav
+
+ - [avviddec: Temporarily unlock stream lock while flushing buffers, fixes potential deadlock on seeking with FFmpeg 6.x](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4831)
+ - [avauddec/avviddec: Free packet side data after usage](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4079)
+
+#### gst-rtsp-server
+
+ - [rtsp-server: media: fix potential deadlock when EOS is sent while paused or prerolling](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/4569)
+
+#### gstreamer-vaapi
+
+ - No changes
+
+#### gstreamer-sharp
+
+ - No changes
+
+#### gst-omx
+
+ - No changes
+
+#### gst-python
+
+ - No changes
+
+#### gst-editing-services
+
+ - No changes
+
+#### gst-examples:
+
+ - No changes
+
+#### Development build environment + gst-full build
+
+ - No major changes
+
+#### Cerbero build tool and packaging changes in 1.20.7
+
+ - [pango: Fix crash on Windows 32bit build](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1186)
+ - [glib: Ship Windows process spawning helpers](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1185)
+
+#### Contributors to 1.20.7
+
+Adrien De Coninck, Edward Hervey, Enrique Ocaña González,
+Jan Alexander Steffens (heftig), Mathieu Duponchelle, Matt Feury,
+Matthew Waters, Mengkejiergeli Ba, Nicolas Dufresne, Nirbheek Chauhan,
+Sebastian Dröge, Seungha Yang, Tim-Philipp Müller,
+
+... and many others who have contributed bug reports, translations, sent
+suggestions or helped testing. Thank you all!
+
+#### List of merge requests and issues fixed in 1.20.7
+
+ - [List of Merge Requests applied in 1.20.7](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.20.7)
+ - [List of Issues fixed in 1.20.7](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.20.7)
 
 ## Schedule for 1.22
 
