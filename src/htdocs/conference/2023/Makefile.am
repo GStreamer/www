@@ -6,6 +6,7 @@ images = acoruna_banner.jpg \
   acoruna-barlovento-area.jpg \
   acoruna-barlovento-map.jpg \
   sponsor_axis.png \
+	sponsor_centricular_753x125.png \
   sponsor_collabora_02_rgb_965x504.png \
   sponsor_igalia_2015_2019x720.png \
   sponsor_ubicast_640x195.png \
@@ -13,7 +14,6 @@ images = acoruna_banner.jpg \
 
 #	sponsor_pexip_2019_965x261.png
 #	sponsor_fluendo_320x74.png
-#	sponsor_centricular_753x125.png
 #	sponsor_facebook_960x263.png
 
 documents = gstreamer-conference-sponsor-brief-2023.pdf

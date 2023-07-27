@@ -580,6 +580,9 @@ li {
   </p>
 -->
   <p>
+    <i>2023-July-27</i>: The GStreamer project welcomes back <a href="https://centricular.com">Centricular</a> as Gold level sponsor this year.
+  </p>
+  <p>
     <i>2023-July-20</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
   </p>
   <p>
@@ -651,13 +654,13 @@ li {
   <p style="padding:10px 0px">
     <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" height="90" /></a>
   </p>
+
+  <p style="padding:20px 0px">
+    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
+  </p>
 <!--
   <p style="padding:10px 0px">
     <a href="https://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="70" /></a>
-  </p>
-
-  <p style="padding:10px 0px">
-    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
   </p>
 -->
   <br />
