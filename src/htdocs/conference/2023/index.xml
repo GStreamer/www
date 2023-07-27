@@ -562,9 +562,6 @@ li {
     <i>2019-October-09</i>: We're pleased to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference at Silver level this year.
   </p>
   <p>
-    <i>2019-October-06</i>: The GStreamer project welcomes back <a href="https://fluendo.com">Fluendo</a> who are sponsoring again at Gold level this year.
-  </p>
-  <p>
     <i>2019-October-05</i>: The GStreamer project is chuffed to have <b><a href="https://pexip.com/">Pexip</a></b> return as Platinum sponsor this year!
   </p>
   <p>
@@ -581,7 +578,10 @@ li {
   </p>
 -->
   <p>
-    <i>2023-July-27</i>: The GStreamer project welcomes back <a href="https://centricular.com">Centricular</a> as Gold level sponsor this year.
+    <i>2023-July-27</i>: The GStreamer project is excited to see <b><a href="https://fluendo.com">Fluendo</a></b> sponsor the event as Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2023-July-27</i>: The GStreamer project welcomes back <b><a href="https://centricular.com">Centricular</a></b> as Gold level sponsor this year.
   </p>
   <p>
     <i>2023-July-20</i>: The GStreamer project is thrilled to have <b><a href="https://www.collabora.com">Collabora</a></b> back as a Platinum sponsor this year!
@@ -644,6 +644,9 @@ li {
   <p style="padding:20px 0px">
     <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504.png" alt="Collabora" height="126" width="241" /></a>
   </p>
+  <p style="padding:20px 0px">
+    <a href="https://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="70" /></a>
+  </p>
 <!--
   <p style="padding:20px 0px">
     <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" width="250" /></a>
@@ -659,11 +662,6 @@ li {
   <p style="padding:20px 0px">
     <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
   </p>
-<!--
-  <p style="padding:10px 0px">
-    <a href="https://fluendo.com"><img src="sponsor_fluendo_320x74.png" alt="Fluendo" height="70" /></a>
-  </p>
--->
   <br />
 
   <h2>Silver Sponsors</h2>
