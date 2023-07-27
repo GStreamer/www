@@ -525,7 +525,51 @@ li {
   </ul>
   </p>
 
-  <h2>Contact</h2>
+  <h2>Code of Conduct and Anti-Harrassment Policy</h2>
+  <h3>Policy</h3>
+  <p>
+  The GStreamer project and the conference organisers are dedicated to
+  providing a harassment-free conference experience for everyone.
+  We do not tolerate harassment of conference participants in any form.
+  </p>
+  <p>
+  Harassment includes, but is not limited to, offensive verbal comments,
+  sexual images in public spaces, deliberate intimidation, stalking, following,
+  harassing photography or recording, sustained disruption of talks or other
+  events, inappropriate physical contact, and unwelcome sexual attention.
+  Participants asked to stop any harassing behaviour are expected to comply
+  immediately. We expect participants to follow these rules at all conference
+  venues, hackfest venues, and conference-related social events.
+  </p>
+  <p>
+  If a participant engages in harassing behavior, the conference organisers
+  and/or their delegates may take any action they deem appropriate, including
+  warning the offender or expulsion from the conference. If you are being
+  harassed, notice that someone else is being harassed, or have any other
+  concerns, please contact a conference organiser or member of the
+  code of conduct committee below immediately.
+  </p>
+  <h3>Reporting Breaches</h3>
+  <p>
+  Breaches of the code of conduct should be reported by contacting one of the
+  following people:
+  <ul>
+  <li>details and contact details to be provided at a later point</li> <!-- FIXME -->
+  </ul>
+  </p>
+  <p>
+  See <a href="https://www.x.org/wiki/XorgFoundation/Policies/HarassmentDetails/">here</a>
+  for implementation details and guidelines.
+  </p>
+  <p>
+  This anti-harassment policy is based on the
+  <a href="https://indico.freedesktop.org/event/4/page/26-code-of-conduct">XDC 2023 code of conduct</a>
+  which in turn is based on the example policy from the
+  <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">Geek Feminism wiki</a>,
+  created by the <a href="http://adainitiative.org/">Ada Initiative</a> and other volunteers.
+  </p>
+
+  <h2>GStreamer Conference Contact</h2>
   <p>
   If you have any questions about the GStreamer Conference or are considering
   <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">becoming a sponsor</a>
@@ -577,6 +621,9 @@ li {
     <i>2019-September-09</i>: Registration is now <a href="https://ti.to/gstreamer-conference-tickets/gstreamer-conference-2019">open</a>. Early-bird professional tickets are available until 29 September 2019.
   </p>
 -->
+  <p>
+    <i>2023-July-28</i>: Added a Code of Conduct and Anti-Harassment Policy.
+  </p>
   <p>
     <i>2023-July-27</i>: The GStreamer project is excited to see <b><a href="https://fluendo.com">Fluendo</a></b> sponsor the event as Platinum sponsor this year!
   </p>
