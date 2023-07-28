@@ -54,9 +54,9 @@ Binary releases built to target the Universal Windows Platform (UWP). Used for
 shipping apps on the Windows Store, such as for an XBox, HoloLens 2, etc.
 
 * UWP Universal (ARM64, X86, X86_64) (VS 2019, Release CRT) (old stable)
-  - [1.20.6 runtime + development tarball](/data/pkg/windows/1.20.6/uwp/gstreamer-1.0-uwp-universal-1.20.6.tar.xz)
+  - [1.20.7 runtime + development tarball](/data/pkg/windows/1.20.7/uwp/gstreamer-1.0-uwp-universal-1.20.7.tar.xz)
 * UWP Universal (ARM64, X86, X86_64) (VS 2019, Debug CRT) (old stable)
-  - [1.20.6 runtime + development tarball](/data/pkg/windows/1.20.6/uwp/gstreamer-1.0-uwp+debug-universal-1.20.6.tar.xz)
+  - [1.20.7 runtime + development tarball](/data/pkg/windows/1.20.7/uwp/gstreamer-1.0-uwp+debug-universal-1.20.7.tar.xz)
 
 UWP apps cannot use plugins that use dependencies built with MinGW because of
 forbidden APIs. Hence, these plugins are omitted from the binaries.
@@ -177,8 +177,8 @@ you will want to install _both_ packages. The target SDK version for 1.20 and
   - **[1.22.5 runtime installer](/data/pkg/osx/1.22.5/gstreamer-1.0-1.22.5-universal.pkg)**
   - **[1.22.5 development installer](/data/pkg/osx/1.22.5/gstreamer-1.0-devel-1.22.5-universal.pkg)**
 * **macOS Universal (X86_64 &amp; ARM64) 1.20 release (old stable version)**
-  - **[1.20.6 runtime installer](/data/pkg/osx/1.20.6/gstreamer-1.0-1.20.6-universal.pkg)**
-  - **[1.20.6 development installer](/data/pkg/osx/1.20.6/gstreamer-1.0-devel-1.20.6-universal.pkg)**
+  - **[1.20.7 runtime installer](/data/pkg/osx/1.20.7/gstreamer-1.0-1.20.7-universal.pkg)**
+  - **[1.20.7 development installer](/data/pkg/osx/1.20.7/gstreamer-1.0-devel-1.20.7-universal.pkg)**
 
 GStreamer is also available on [Homebrew](https://brew.sh/), and you should be
 able to use that. However, please note that some plugins are not shipped by
@@ -194,7 +194,7 @@ Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
 * **Android Universal [1.22.5 tarball](/data/pkg/android/1.22.5/gstreamer-1.0-android-universal-1.22.5.tar.xz) (current stable version)**
-* Android Universal [1.20.6 tarball](/data/pkg/android/1.20.6/gstreamer-1.0-android-universal-1.20.6.tar.xz) (old stable version)
+* Android Universal [1.20.7 tarball](/data/pkg/android/1.20.7/gstreamer-1.0-android-universal-1.20.7.tar.xz) (old stable version)
 
 The Android NDKs used by our stable releases are:
 
@@ -262,7 +262,7 @@ and the target SDK version for 1.16.x was iOS 9.0, and for 1.18.x, 1.20.x and
 1.22.x is iOS 11.0.
 
 * **iOS Universal [1.22.5 framework](/data/pkg/ios/1.22.5/gstreamer-1.0-devel-1.22.5-ios-universal.pkg) (ARM64, X86_64) (current stable version)**
-* iOS Universal [1.20.6 framework](/data/pkg/ios/1.20.6/gstreamer-1.0-devel-1.20.6-ios-universal.pkg) (ARM64, X86_64) (old stable version)
+* iOS Universal [1.20.7 framework](/data/pkg/ios/1.20.7/gstreamer-1.0-devel-1.20.7-ios-universal.pkg) (ARM64, X86_64) (old stable version)
 
 [Older 1.x binary releases](/data/pkg/ios) are also available.
 
