@@ -84,12 +84,17 @@
 
   <!-- this is the top table with our logo -->
   <table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+  <td width="50%">
+  <!-- gstreamer logo left -->
+  <table border="0" width="50%" cellpadding="0" cellspacing="0">
     <tr>
       <td bgcolor="#FFFFFF">
         <a href="&site;/"><div class="crop-header"><img src="&site;/images/header-logo-top.png"
            height="53" width="351" alt="GStreamer" border="0" /></div></a>
       </td>
-      <td align="right" bgcolor="#000000"></td>
+      <td align="right" bgcolor="#000000">
+      </td>
     </tr>
     <tr>
       <td colspan="2">
@@ -101,6 +106,29 @@
         <img src="&site;/images/header-osmf.png" height="14" width="527" alt="open source multimedia framework" />
       </td>
     </tr>
+  </table>
+  </td>
+  <!-- conf banner right -->
+  <td width="50%">
+  <table border="0" cellpadding="20" cellspacing="0">
+    <tr>
+      <td align="left" bgcolor="#ffffff">
+        <!--
+        <a href="&site;/conference/2023/"><img src="&site;/images/2023-conf-website-banner-a-coruna-270p.png"
+           alt="GStreamer Conference 2023 Banner" height="90" border="0" /></a> --> <!-- width="351" -->
+        <br />
+        <a href="&site;/conference/2023/">
+          <div style="font-size: 1.6em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>GStreamer Conference 2023</b></div>
+        </a>
+        <br />
+        <div style="font-size: 1.2em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>25-26 September 2023 · A Coruña, Spain</b></div>
+        <br />
+        <div style="font-size: 1.0em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>Call for Papers is open · Registration opening soon · Join us!</b></div>
+      </td>
+    </tr>
+  </table>
+  </td>
+  </tr>
   </table>
 
   <!-- this is the page table start, where we put menu and content -->
