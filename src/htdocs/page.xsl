@@ -47,8 +47,26 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
     <link rel="stylesheet" type="text/css"
           href="&site;/gstreamer.css" title="default" />
-    <link rel="icon" type="image/png" href="&site;/images/favicon.png" />
-    <link rel="shortcut icon" href="&site;/images/favicon.png" />
+
+    <!-- generic -->
+    <link rel="icon" type="image/png" href="&site;/images/favicon-16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="&site;/images/favicon-32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="&site;/images/favicon-57.png" sizes="57x57"/>
+    <link rel="icon" type="image/png" href="&site;/images/favicon-64.png" sizes="64x64"/>
+    <link rel="icon" type="image/png" href="&site;/images/favicon-76.png" sizes="76x76"/>
+    <link rel="icon" type="image/png" href="&site;/images/favicon-96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="&site;/images/favicon-128.png" sizes="128x128"/>
+    <link rel="icon" type="image/png" href="&site;/images/favicon-192.png" sizes="192x192"/>
+    <link rel="icon" type="image/png" href="&site;/images/favicon-228.png" sizes="228x228"/>
+
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="196x196" href="&site;/images/favicon-196.png"/>
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="&site;/images/favicon-120.png" sizes="120x120"/>
+    <link rel="apple-touch-icon" href="&site;/images/favicon-152.png" sizes="152x152"/>
+    <link rel="apple-touch-icon" href="&site;/images/favicon-180.png" sizes="180x180"/>
+
     <link rel="alternate" type="application/rss+xml" title="GStreamer Project News" href="&site;/news/rss-1.0.xml" />
     <title><xsl:copy-of select="$title" /></title>
     <script type="text/javascript">
