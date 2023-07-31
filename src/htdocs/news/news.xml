@@ -13484,4 +13484,68 @@ and we recommend you upgrade at your earliest convenience.
         </content>
   </item>
 
+  <item>
+      <date>2023-07-31 17:00</date>
+        <title>GStreamer Conference 2023: Registration now open</title>
+        <content>
+        <p><b><i>About the GStreamer Conference</i></b></p>
+        <p>
+        The GStreamer Conference 2023 will take place on 25-26 September 2023 in A Coruña, Spain.
+        </p>
+        <p>
+        It is a conference for developers, community members, decision-makers,
+        industry partners, researchers, students and anyone else interested
+        in the GStreamer multimedia framework or Open Source and cross-platform
+        multimedia.
+        </p>
+        <p>
+        There will also be a hackfest just after the conference.
+        </p>
+
+        <p><b><i>Registration now open</i></b></p>
+        <p>
+        You can now register for the <a href="&site;/conference/2023/">GStreamer Conference 2023</a>
+        on the <a href="&site;/conference/2023/">conference website</a>.
+        </p>
+        <p>
+        A reduced early-bird registration fee for professionals is available
+        until August 20<super>th</super>, so hurry!
+        </p>
+        <p>
+        Speakers will receive free registration, so if you intend to submit
+        a talk you may want to hold off with registration for now.
+        </p>
+        <p>
+        We hope to see you there!
+        </p>
+        <p><b><i>Call for Papers is open</i></b></p>
+        <p>
+        The call for papers is now open for talk proposals and lightning talks.
+        Please submit your talk now!
+        </p>
+        <p>
+        Talks can be on almost anything multimedia related, ranging from talks about
+        applications to challenges in the lower levels in the stack or hardware.
+        </p>
+        <p>
+        We want to hear from you, what you are working on, what you are using
+        GStreamer for, what difficulties you have encountered and how you solved them,
+        what your plans are, what you like, what you dislike, how to improve things!
+        </p>
+        <p>
+        Please submit all proposals through the <b><a href="https://indico.freedesktop.org/event/5/">GStreamer Conference 2023 Paper Submission Portal</a></b>.
+        </p>
+        <p><b><i>Sponsors</i></b></p>
+        <p>
+        Many thanks to our Platinum sponsors <a href="https://igalia.com">Igalia</a>,
+        <a href="https://collabora.com">Collabora</a> and
+        <a href="https://fluendo.com">Fluendo</a>, our Gold sponsors
+        <a href="https://axis.com">Axis Communications</a> and
+        <a href="https://centricular.com">Centricular</a>,
+        and our Silver sponsor <a href="https://zeiss.com">Zeiss</a>
+        for sponsoring the conference this year!
+        </p>
+    </content>
+  </item>
+
 </news>

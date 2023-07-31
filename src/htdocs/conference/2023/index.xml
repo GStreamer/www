@@ -111,15 +111,15 @@ li {
 
 
   <h2>Registration</h2>
-  <p>
-  <b>Registration is not open yet and expected to open around 1 August 2023.</b> <!-- FIXME --> Please stay tuned for updates.
-  </p>
-
   <!--
   <p>
-  <b><a href="FIXME">Sign up for the GStreamer Conference here</a></b>
+  <b>Registration is not open yet and expected to open around 1 August 2023.</b> Please stay tuned for updates.
   </p>
   -->
+
+  <p>
+  <b><a href="https://gstreamer2023.serglo.es/">Sign up for the GStreamer Conference 2023 here</a></b>
+  </p>
 
   <p>
   There will be separate registration options for both professionals and for students and hobbyists:
@@ -129,7 +129,7 @@ li {
     <table width="80%" cellpadding="5">
       <tr><td><b>Professional (Early Bird)</b></td><td><b>250 EUR</b> (ca. 280 USD)</td></tr>
       <tr><td><b>Professional (Regular)</b></td><td><b>350 EUR</b> (ca. 390 USD)</td></tr>
-      <tr><td><b>Professional (Supporter)</b></td><td><b>500 EUR (ca. 555 USD)</b></td></tr>
+      <tr><td><b>Professional (Supporter)</b></td><td><b>500 EUR</b> (ca. 555 USD)</td></tr>
       <tr><td><b>Speakers (for non-lightning talks)</b></td><td><b>Free</b></td></tr>
       <tr><td><b>Student/Hobbyist</b></td><td><b>Free or voluntary donation</b></td></tr>
     </table>
@@ -146,11 +146,10 @@ li {
     If in doubt drop us a mail or just register as hobbyist. The important
     thing is that you'll make it to the conference!
   </p>
-  <!--
+
   <p>
-  <b><a href="FIXME">Sign up for the GStreamer Conference 2023 here</a></b>
+  <b><a href="https://gstreamer2023.serglo.es/">Sign up for the GStreamer Conference 2023 here</a></b>
   </p>
-  -->
 
   <h2>Call for Papers</h2>
   <p><b>
@@ -617,10 +616,10 @@ li {
   <p>
     <i>2019-September-18</i>: Talk submission deadline for second round slots has been extended to 30 September 2019.
   </p>
-  <p>
-    <i>2019-September-09</i>: Registration is now <a href="https://ti.to/gstreamer-conference-tickets/gstreamer-conference-2019">open</a>. Early-bird professional tickets are available until 29 September 2019.
-  </p>
 -->
+  <p>
+    <i>2023-July-31</i>: Registration is now <a href="https://gstreamer2023.serglo.es/">open</a>. Early-bird professional tickets are available until 20 August 2023.
+  </p>
   <p>
     <i>2023-July-28</i>: Added a Code of Conduct and Anti-Harassment Policy.
   </p>
