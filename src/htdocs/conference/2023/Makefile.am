@@ -10,7 +10,7 @@ images = acoruna_banner.jpg \
   sponsor_collabora_02_rgb_965x504.png \
 	sponsor_fluendo_320x74.png \
   sponsor_igalia_2015_2019x720.png \
-  sponsor_ubicast_640x195.png \
+  sponsor_ubicast_1059x292.png \
   sponsor_zeiss.png
 
 #	sponsor_pexip_2019_965x261.png
