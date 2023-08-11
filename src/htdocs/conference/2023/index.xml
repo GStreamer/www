@@ -618,7 +618,10 @@ li {
   </p>
 -->
   <p>
-    <i>2023-August-09</i>: The GStreamer project is thrilled to see <b><a href="https://laerdal.com">Laerdal</a></b> sponsor the conference for the first time this year, at Silver level!
+    <i>2023-August-11</i>: We're very pleased to welcome <b><a href="https://ridgerun.com">RidgeRun</a></b> as first-time sponsor, at Silver level!
+  </p>
+  <p>
+    <i>2023-August-11</i>: The GStreamer project is thrilled to see <b><a href="https://laerdal.com">Laerdal</a></b> sponsor the conference for the first time this year, at Silver level!
   </p>
   <p>
     <i>2023-July-31</i>: Registration is now <a href="https://gstreamer2023.serglo.es/">open</a>. Early-bird professional tickets are available until 20 August 2023.
@@ -709,16 +712,20 @@ li {
   </p>
 
   <p style="padding:20px 0px">
-    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="50" width="305" /></a>
+    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="65" /></a>
   </p>
   <br />
 
   <h2>Silver Sponsors</h2>
-  <p style="padding:0px 0px">
+  <p style="padding:0px 0px; height: 170px">
     <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
   </p>
 
   <p style="padding:0px 0px">
+    <a href="https://ridgerun.com"><img src="sponsor_ridgerun.png" alt="RidgeRun" height="130" /></a>
+  </p>
+
+  <p style="padding:20px 0px">
     <a href="https://laerdal.com"><img src="sponsor_laerdal.png" alt="Laerdal" height="130" /></a>
   </p>
 

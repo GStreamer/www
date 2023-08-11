@@ -11,6 +11,7 @@ images = acoruna_banner.jpg \
 	sponsor_fluendo_320x74.png \
   sponsor_igalia_2015_2019x720.png \
   sponsor_laerdal.png \
+  sponsor_ridgerun.png \
   sponsor_ubicast_1059x292.png \
   sponsor_zeiss.png
 
