@@ -618,6 +618,9 @@ li {
   </p>
 -->
   <p>
+    <i>2023-August-14</i>: The GStreamer project is chuffed to see <b><a href="https://asymptotic.io">asymptotic</a></b> join us as sponsor this year, at Silver level!
+  </p>
+  <p>
     <i>2023-August-11</i>: We're very pleased to welcome <b><a href="https://ridgerun.com">RidgeRun</a></b> as first-time sponsor, at Silver level!
   </p>
   <p>
@@ -727,6 +730,10 @@ li {
 
   <p style="padding:20px 0px">
     <a href="https://laerdal.com"><img src="sponsor_laerdal.png" alt="Laerdal" height="130" /></a>
+  </p>
+
+  <p style="padding:0px 0px">
+    <a href="https://asymptotic.io"><img src="sponsor_asymptotic.png" alt="asymptotic" height="80" /></a>
   </p>
 
 <!--

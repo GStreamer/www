@@ -5,6 +5,7 @@ built_pages = index.html
 images = acoruna_banner.jpg \
   acoruna-barlovento-area.jpg \
   acoruna-barlovento-map.jpg \
+  sponsor_asymptotic.png \
   sponsor_axis.png \
 	sponsor_centricular_753x125.png \
   sponsor_collabora_02_rgb_965x504.png \
