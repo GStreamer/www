@@ -152,6 +152,7 @@ li {
   </p>
 
   <h2>Call for Papers</h2>
+<!--
   <p><b>
   The call for papers is now open for talk proposals and lightning talks.
   Please submit your talk now!
@@ -169,11 +170,13 @@ li {
   <p>
   <b>The talk submission deadline is 20 August 2023!</b>
   </p>
+-->
 <!--
   <p>
   <b>The talk submission deadline has been extended and is 30 September 2019 for second round slots!</b>
   </p>
 -->
+<!--
   <p>
   Talks can be on almost anything multimedia related, ranging from talks about
   applications to challenges in the lower levels in the stack or hardware.
@@ -194,23 +197,22 @@ li {
   <p>
   You can log in using your existing freedesktop.org GitLab account if you have one or register a new account with the system.
   </p>
-
-<!--
-  <h2>Call for Papers</h2>
-  <p>
-  The call for papers is now closed and talk proposals can no longer be
-  submitted. Anyone who has submitted a talk proposal should have received
-  an e-mail letting them know whether their proposal has been accepted.
-  </p>
-  <p>
-  Lightning talks may still be proposed.
-  </p>
 -->
+  <p>
+  The call for papers is now closed.
+  </p>
+  <p>
+  Anyone who has submitted a talk proposal should receive an e-mail letting
+  them know whether their proposal has been accepted in the coming days.
+  Thank you to everyone who submitted a proposal.
+  </p>
+  <p>
+  Lightning talks may still be proposed, see below for more details.
+  </p>
 
   <h2>Schedule and speakers list</h2>
   <p>
-  The schedule and speakers list will be available later in the year once the
-  call for papers has closed and talks have been selected.
+  The schedule and speakers list will be available shortly, stay tuned for updates.
   </p>
   <p>
   To get an idea what kind of topics and speakers to expect have a look at
@@ -610,8 +612,13 @@ li {
   <p>
     <i>2019-October-04</i>: Speakers have been notified about their talk proposal
   </p>
+-->
   <p>
-    <i>2019-September-30</i>: The call for papers is now closed.
+    <i>2023-August-22</i>: The call for papers is now closed, but lightning talks may still be submitted. Speakers will be notified shortly. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics this year, stay tuned for updates.
+  </p>
+<!--
+  <p>
+    <i>2019-September-18</i>: Talk submission deadline for second round slots has been extended to 30 September 2019.
   </p>
   <p>
     <i>2019-September-18</i>: Talk submission deadline for second round slots has been extended to 30 September 2019.
@@ -624,7 +631,7 @@ li {
     <i>2023-August-11</i>: We're very pleased to welcome <b><a href="https://ridgerun.com">RidgeRun</a></b> as first-time sponsor, at Silver level!
   </p>
   <p>
-    <i>2023-August-11</i>: The GStreamer project is thrilled to see <b><a href="https://laerdal.com">Laerdal</a></b> sponsor the conference for the first time this year, at Silver level!
+    <i>2023-August-11</i>: The GStreamer project is thrilled to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference for the first time this year, at Silver level!
   </p>
   <p>
     <i>2023-July-31</i>: Registration is now <a href="https://gstreamer2023.serglo.es/">open</a>. Early-bird professional tickets are available until 20 August 2023.

@@ -141,7 +141,7 @@
         <br />
         <div style="font-size: 1.2em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>25-26 September 2023 · A Coruña, Spain</b></div>
         <br />
-        <div style="font-size: 1.0em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>Call for Papers is open · Registration is now open! · Join us!</b></div>
+        <div style="font-size: 1.0em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>Registration is open · Lightning Talks can still be submitted · Join us!</b></div>
       </td>
     </tr>
   </table>
