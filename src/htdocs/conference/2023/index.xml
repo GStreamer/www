@@ -235,16 +235,23 @@ li {
   </ul>
   </p>
 -->
-<!--
   <p>
     <b>Lightning Talks:</b>
     <ul>
-    <li>Raising the Importance of the V4L2 plugin and Challenges <a href="https://gstconf.ubicast.tv/permalink/v125d173da4d6ffimx2s/#start=361">(video)</a> <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>Update of Four Years of V4L2 Support <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
+    <li>WebCodecs in WebKit, with GStreamer! <small><br /><i>Philippe Normand, Igalia</i></small></li>
+    <li>GStreamer Daemon Project Update <small><br /><i>Carlos Rodriguez, RidgeRun</i></small></li>
+    <li>Playing around with Artistic Style Transfer with GStreamer + NNStreamer <small><br /><i>Hosang Lee, LG Electronics</i></small></li>
+    <li>libcamerasrc: Sensor Configuration and Enumeration <small><br /><i>Umang Jain, IdeasOnBoard</i></small></li>
+    <li>3 milliseconds from Diaphragm to Diaphragm <small><br /><i>Nirbheek Chauhan, Centricular</i></small></li>
+<!--
+    <li>GStreamer plugin in Rust on webOS OSE <small><br /><i>Seungwook Cha, LG Electronics</i></small></li>
+-->
     <li>...and more to come</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
   </p>
--->
+
   <h2>Showcase or Lightning Talks</h2>
   <p>
     There will again be opportunities for short lightning talks for those who
