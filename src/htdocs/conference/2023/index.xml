@@ -240,7 +240,7 @@ li {
     <ul>
     <li>Update of Four Years of V4L2 Support <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
     <li>WebCodecs in WebKit, with GStreamer! <small><br /><i>Philippe Normand, Igalia</i></small></li>
-    <li>GStreamer Daemon Project Update <small><br /><i>Carlos Rodriguez, RidgeRun</i></small></li>
+    <li>GStreamer Daemon Project Update <small><br /><i>Miguel Taylor-Lopez, RidgeRun</i></small></li>
     <li>Playing around with Artistic Style Transfer with GStreamer + NNStreamer <small><br /><i>Hosang Lee, LG Electronics</i></small></li>
     <li>libcamerasrc: Sensor Configuration and Enumeration <small><br /><i>Umang Jain, IdeasOnBoard</i></small></li>
     <li>3 milliseconds from Diaphragm to Diaphragm <small><br /><i>Nirbheek Chauhan, Centricular</i></small></li>
