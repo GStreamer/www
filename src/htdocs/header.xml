@@ -27,5 +27,5 @@
 
     <item class="gstnavside-b" href="/artwork/">Artwork</item>
     <item class="gstnavside-b" href="http://twitter.com/gstreamer">@gstreamer on Twitter</item>
-    <item class="gstnavside-b" rel="me" href="https://fosstodon.org/@GStreamer">@gstreamer on Mastodon</item>
+    <item class="gstnavside-b" rel="me" href="https://floss.social/@GStreamer">@gstreamer on Mastodon</item>
   </menu>
