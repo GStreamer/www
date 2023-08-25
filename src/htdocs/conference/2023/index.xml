@@ -591,6 +591,7 @@ li {
     <li>Playing around with Artistic Style Transfer with GStreamer + NNStreamer <small><br /><i>Hosang Lee, LG Electronics</i></small></li>
     <li>libcamerasrc: Sensor Configuration and Enumeration <small><br /><i>Umang Jain, IdeasOnBoard</i></small></li>
     <li>3 milliseconds from Diaphragm to Diaphragm <small><br /><i>Nirbheek Chauhan, Centricular</i></small></li>
+    <li>GstPipelineStudio version 0.3.0 is out!<small><br /><i>Stéphane Cerveau, Igalia</i></small></li>
 <!--
     <li>GStreamer plugin in Rust on webOS OSE <small><br /><i>Seungwook Cha, LG Electronics</i></small></li>
 -->
