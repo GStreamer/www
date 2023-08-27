@@ -151,65 +151,6 @@ li {
   <b><a href="https://gstreamer2023.serglo.es/">Sign up for the GStreamer Conference 2023 here</a></b>
   </p>
 
-  <h2>Call for Papers</h2>
-<!--
-  <p><b>
-  The call for papers is now open for talk proposals and lightning talks.
-  Please submit your talk now!
-  </b></p>
-  <p>
-  The initial submission needs to be only a couple of sentences or paragraphs
-  describing the talk you want to give and the desired length of your talk
-  (please allow at least 5 minutes for questions at the end as well).
-  </p>
-  <p>
-  You will still be able to edit and refine your talk proposal after the
-  initial submission, so no need to hold off until the last minute to get
-  it perfect.
-  </p>
-  <p>
-  <b>The talk submission deadline is 20 August 2023!</b>
-  </p>
--->
-<!--
-  <p>
-  <b>The talk submission deadline has been extended and is 30 September 2019 for second round slots!</b>
-  </p>
--->
-<!--
-  <p>
-  Talks can be on almost anything multimedia related, ranging from talks about
-  applications to challenges in the lower levels in the stack or hardware.
-  </p>
-  <p>
-  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
-  or 45 minutes, including questions. If you need more time than that we might
-  be able to accommodate that as well, please get in touch to discuss details.
-  </p>
-  <p>
-  We want to hear from you, what you are working on, what you are using
-  GStreamer for, what difficulties you have encountered and how you solved them,
-  what your plans are, what you like, what you dislike, how to improve things!
-  </p>
-  <p>
-  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/5/">GStreamer Conference 2023 Paper Submission Portal</a>.
-  </p>
-  <p>
-  You can log in using your existing freedesktop.org GitLab account if you have one or register a new account with the system.
-  </p>
--->
-  <p>
-  The call for papers is now closed.
-  </p>
-  <p>
-  Anyone who has submitted a talk proposal should receive an e-mail letting
-  them know whether their proposal has been accepted in the coming days.
-  Thank you to everyone who submitted a proposal.
-  </p>
-  <p>
-  Lightning talks may still be proposed, see below for more details.
-  </p>
-
   <h2>Schedule and speakers list</h2>
 <!--
   <p>
@@ -620,6 +561,65 @@ li {
   <p>
     There is no deadline for Lightning Talk submissions, slots will be
     allocated on a first-come first-serve basis.
+  </p>
+
+  <h2>Call for Papers</h2>
+<!--
+  <p><b>
+  The call for papers is now open for talk proposals and lightning talks.
+  Please submit your talk now!
+  </b></p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk
+  (please allow at least 5 minutes for questions at the end as well).
+  </p>
+  <p>
+  You will still be able to edit and refine your talk proposal after the
+  initial submission, so no need to hold off until the last minute to get
+  it perfect.
+  </p>
+  <p>
+  <b>The talk submission deadline is 20 August 2023!</b>
+  </p>
+-->
+<!--
+  <p>
+  <b>The talk submission deadline has been extended and is 30 September 2019 for second round slots!</b>
+  </p>
+-->
+<!--
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+  <p>
+  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
+  or 45 minutes, including questions. If you need more time than that we might
+  be able to accommodate that as well, please get in touch to discuss details.
+  </p>
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+  <p>
+  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/5/">GStreamer Conference 2023 Paper Submission Portal</a>.
+  </p>
+  <p>
+  You can log in using your existing freedesktop.org GitLab account if you have one or register a new account with the system.
+  </p>
+-->
+  <p>
+  The call for papers is now closed.
+  </p>
+  <p>
+  Anyone who has submitted a talk proposal should receive an e-mail letting
+  them know whether their proposal has been accepted in the coming days.
+  Thank you to everyone who submitted a proposal.
+  </p>
+  <p>
+  Lightning talks may still be proposed, see below for more details.
   </p>
 
   <h2>Social Events</h2>
