@@ -533,6 +533,7 @@ li {
     <li>libcamerasrc: Sensor Configuration and Enumeration <small><br /><i>Umang Jain, IdeasOnBoard</i></small></li>
     <li>3 milliseconds from Diaphragm to Diaphragm <small><br /><i>Nirbheek Chauhan, Centricular</i></small></li>
     <li>GstPipelineStudio version 0.3.0 is out!<small><br /><i>Stéphane Cerveau, Igalia</i></small></li>
+    <li>Streamway: From multistreaming to Browser based live stream studio &amp; beyond<small><br /><i>Ramjivan Jangid, Streamway</i></small></li>
 <!--
     <li>GStreamer plugin in Rust on webOS OSE <small><br /><i>Seungwook Cha, LG Electronics</i></small></li>
 -->
