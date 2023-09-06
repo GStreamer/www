@@ -962,10 +962,10 @@ li {
   <p>
     <i>2019-October-09</i>: We're pleased to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference at Silver level this year.
   </p>
-  <p>
-    <i>2019-October-05</i>: The GStreamer project is chuffed to have <b><a href="https://pexip.com/">Pexip</a></b> return as Platinum sponsor this year!
-  </p>
 -->
+  <p>
+    <i>2023-September-06</i>: The GStreamer project is excited to have <b><a href="https://pexip.com/">Pexip</a></b> return again as Platinum sponsor this year!
+  </p>
   <p>
     <i>2023-August-28</i>: The initial list of talks and speakers is now available. Abstracts and speaker biographies will be made available later.
   </p>
@@ -1068,11 +1068,9 @@ li {
   <p style="padding:20px 0px">
     <a href="https://fluendo.com"><img src="sponsor_fluendo_1060x200.png" alt="Fluendo" height="70" /></a>
   </p>
-<!--
   <p style="padding:20px 0px">
-    <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" width="250" /></a>
+    <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" height="88" /></a>
   </p>
--->
   <br />
 
   <h2>Gold Sponsors</h2>

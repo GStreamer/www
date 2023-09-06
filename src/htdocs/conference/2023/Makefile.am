@@ -12,11 +12,11 @@ images = acoruna_banner.jpg \
   sponsor_fluendo_1060x200.png \
   sponsor_igalia_2015_2019x720.png \
   sponsor_laerdal.png \
+  sponsor_pexip_2019_965x261.png \
   sponsor_ridgerun.png \
   sponsor_ubicast_1059x292.png \
   sponsor_zeiss.png
 
-#	sponsor_pexip_2019_965x261.png
 #	sponsor_facebook_960x263.png
 
 documents = gstreamer-conference-sponsor-brief-2023.pdf
