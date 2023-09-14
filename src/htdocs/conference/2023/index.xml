@@ -898,7 +898,7 @@ li {
   venues, hackfest venues, and conference-related social events.
   </p>
   <p>
-  If a participant engages in harassing behavior, the conference organisers
+  If a participant engages in harassing behaviour, the conference organisers
   and/or their delegates may take any action they deem appropriate, including
   warning the offender or expulsion from the conference. If you are being
   harassed, notice that someone else is being harassed, or have any other
@@ -907,10 +907,15 @@ li {
   </p>
   <h3>Reporting Breaches</h3>
   <p>
-  Breaches of the code of conduct should be reported by contacting one of the
-  following people:
+  Breaches of the code of conduct should be reported either by e-mail via
+  <a href="mailto:code-of-conduct@gstreamer.org">code-of-conduct@gstreamer.org</a>,
+  or by contacting one of the following people:
   <ul>
-  <li>details and contact details to be provided at a later point</li> <!-- FIXME -->
+  <li>Alicia Boya García (alicia)</li>
+  <li>Andoni Morales Alastruey (ylatuya)</li>
+  <li>Nirbheek Chauhan (nirbheek)</li>
+  <li>Tim Müller (__tim)</li>
+  <li>Xabier Rodriguez Calvar (calvaris)</li>
   </ul>
   </p>
   <p>
