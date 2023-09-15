@@ -6,7 +6,7 @@ Redirect /conference/2015/speakers.html /conference/2015/talks-and-speakers.html
 
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} ^(www\.|docs\.)?gstreamer\.(net|com)$ [NC]
+RewriteCond %{HTTP_HOST} ^(www\.|docs\.)?gstreamer\.(net|com|org)$ [NC]
 RewriteRule .* http://gstreamer.freedesktop.org%{REQUEST_URI} [R=301,L]
 
 # Old API + plugins reference (TODO: add more)
