@@ -526,16 +526,46 @@ li {
   <p>
     <b>Lightning Talks:</b>
     <ul>
-    <li>Update of Four Years of V4L2 Support <small><br /><i>Nicolas Dufresne, Collabora</i></small></li>
-    <li>WebCodecs in WebKit, with GStreamer! <small><br /><i>Philippe Normand, Igalia</i></small></li>
-    <li>GStreamer Daemon Project Update <small><br /><i>Miguel Taylor-Lopez, RidgeRun</i></small></li>
-    <li>Playing around with Artistic Style Transfer with GStreamer + NNStreamer <small><br /><i>Hosang Lee, LG Electronics</i></small></li>
-    <li>libcamerasrc: Sensor Configuration and Enumeration <small><br /><i>Umang Jain, IdeasOnBoard</i></small></li>
-    <li>3 milliseconds from Diaphragm to Diaphragm <small><br /><i>Nirbheek Chauhan, Centricular</i></small></li>
-    <li>GstPipelineStudio version 0.3.0 is out!<small><br /><i>Stéphane Cerveau, Igalia</i></small></li>
-    <li>Streamway: From multistreaming to Browser based live stream studio &amp; beyond<small><br /><i>Ramjivan Jangid, Streamway</i></small></li>
-    <li>Exploring the Future of Fun: 5G, Interactive Entertainment, and GStreamer Magic<small><br /><i>Ramjivan Jangid, Streamway</i></small></li>
-    <li>GStreamer plugin in Rust on webOS OSE <small><br /><i>Seungwook Cha, LG Electronics</i></small></li>
+    <li>
+      <a href="https://indico.freedesktop.org/event/5/contributions/218/">Update of Four Years of V4L2 Support</a>
+      <small><br /><i>Nicolas Dufresne, Collabora</i></small>
+    </li>
+    <li>
+      <a href="https://indico.freedesktop.org/event/5/contributions/170/">WebCodecs in WebKit, with GStreamer!</a>
+      <small><br /><i>Philippe Normand, Igalia</i></small>
+    </li>
+    <li>
+      <a href="https://indico.freedesktop.org/event/5/contributions/172/">GStreamer Daemon Project Update</a>
+      <small><br /><i>Miguel Taylor-Lopez, RidgeRun</i></small>
+    </li>
+    <li>
+      <a href="https://indico.freedesktop.org/event/5/contributions/173/">Playing around with Artistic Style Transfer with GStreamer + NNStreamer</a>
+      <small><br /><i>Hosang Lee, LG Electronics</i></small>
+    </li>
+    <li>
+      <a href="https://indico.freedesktop.org/event/5/contributions/219/">libcamerasrc: Sensor Configuration and Enumeration</a>
+      <small><br /><i>Umang Jain, IdeasOnBoard</i></small
+    ></li>
+    <li>
+      <a href="https://indico.freedesktop.org/event/5/contributions/220/">3 milliseconds from Diaphragm to Diaphragm</a>
+      <small><br /><i>Nirbheek Chauhan, Centricular</i></small>
+    </li>
+    <li>
+      <a href="https://indico.freedesktop.org/event/5/contributions/265/">GstPipelineStudio version 0.3.0 is out!</a>
+      <small><br /><i>Stéphane Cerveau, Igalia</i></small>
+    </li>
+    <li>
+      <a href="https://indico.freedesktop.org/event/5/contributions/266/">Streamway: From multistreaming to Browser based live stream studio &amp; beyond</a>
+      <small><br /><i>Ramjivan Jangid, Streamway</i></small>
+    </li>
+    <li>
+      <a href="https://indico.freedesktop.org/event/5/contributions/267/">Exploring the Future of Fun: 5G, Interactive Entertainment, and GStreamer Magic</a>
+      <small><br /><i>Ramjivan Jangid, Streamway</i></small>
+    </li>
+    <li>
+      <a href="https://indico.freedesktop.org/event/5/contributions/171/">GStreamer plugin in Rust on webOS OSE</a>
+      <small><br /><i>Seungwook Cha, LG Electronics</i></small>
+    </li>
     <li>...and more to come</li>
     <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
