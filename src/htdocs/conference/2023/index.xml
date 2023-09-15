@@ -688,17 +688,25 @@ li {
   <h2>GStreamer hackfest</h2>
   <p>
     There will be a hackfest just after the conference, on Wednesday and Thursday
-    27-28 September 2023, and perhaps a half day on Friday as well (tbd).
-    The hackfest venue will be announced at a later time.
+    27-28 September 2023.
   </p>
-  <!--
   <p>
-    Please add yourself to the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2019">wiki page</a>
+    The hackfest venue will be Igalia's office at Bugallal Marchesi, 22, 1º, 15008 A Coruña, Galicia:
+    <ul>
+    <li><a href="http://www.openstreetmap.org/?mlat=43.34620&amp;mlon=-8.40943#map=18/43.34620/-8.40943&amp;layers=N">OpenStreetMap page</a></li>
+    <li><a href="https://maps.app.goo.gl/QThuFD6hgQUdQ5aD6">Google Maps page</a></li>
+    </ul>
+  </p>
+  <p>
+    It will start in the morning from 10.00 onwards. For more information
+    please see the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2023">wiki page</a>.
+  </p>
+  <p>
+    Please add yourself to the <a href="https://wiki.gnome.org/Hackfests/GstAutumnHackfest2023">wiki page</a>
     if you plan on attending the hackfest, so we have a rough idea of the number of
-    people to expect. Mail Tim or Sebastian or pop onto the #gstreamer IRC channel if you
+    people to expect. Pop onto the #gstreamer IRC channel on OFTC if you
     don't have editing permissions for the wiki.
   </p>
-  -->
   <p>
     GStreamer hackfests are fairly informal affairs, people mostly just sit
     around, drink coffee, discuss things, ask questions, and hack on whatever
@@ -967,6 +975,9 @@ li {
     <i>2019-October-09</i>: We're pleased to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference at Silver level this year.
   </p>
 -->
+  <p>
+    <i>2023-September-15</i>: Hackfest venue details have been added.
+  </p>
   <p>
     <i>2023-September-06</i>: The GStreamer project is excited to have <b><a href="https://pexip.com/">Pexip</a></b> return again as Platinum sponsor this year!
   </p>
