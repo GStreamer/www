@@ -82,12 +82,12 @@ li {
   folder.
   </p>
 -->
-<!--
+
   <h2>Schedule</h2>
   <p>
-  <a href="schedule.html">Click here for the conference schedule</a>.
+  <a href="https://indico.freedesktop.org/event/5/timetable/?layout=room#all.detailed">Click here for the conference schedule</a>.
   </p>
--->
+
   <h2>Details</h2>
   <p>
   The GStreamer Conference is a conference for developers, community members,
@@ -984,17 +984,13 @@ li {
   <p>
     <i>2019-October-16</i>: Reminder that there will also be a hackfest/hackathon on Saturday/Sunday 2-3 November 2019, just after the conference, but at another venue as the conference, namely <a href="https://goo.gl/maps/R2Jyofi2fdq6xErg9">Epitech</a>.
   </p>
-  <p>
-    <i>2019-October-13</i>: the <a href="schedule.html">full conference schedule</a> is now available as well
-  </p>
-  <p>
-    <i>2019-October-10</i>: An indicative <a href="schedule.html">outline schedule</a> has been added. The detailed schedule will be made available soon.
-  </p>
-
-  <p>
-    <i>2019-October-09</i>: We're pleased to have <b><a href="https://www.facebook.com">Facebook</a></b> sponsor the conference at Silver level this year.
-  </p>
 -->
+  <p>
+    <i>2023-September-16</i>: The (preliminary) <a href="https://indico.freedesktop.org/event/5/timetable/?layout=room#all.detailed">full conference schedule</a> is now available as well
+  </p>
+  <p>
+    <i>2023-September-16</i>: Talk abstracts and speaker biographies have been published.
+  </p>
   <p>
     <i>2023-September-15</i>: Social events venue details have been added: Sunday Welcome Drinks/Food at Breen's Tavern and Monday evening Dinner/Drinks at Tira do Playa.
   </p>
@@ -1131,7 +1127,7 @@ li {
   </p>
 
   <p style="padding:20px 0px">
-    <a href="https://laerdal.com"><img src="sponsor_laerdal.png" alt="Laerdal" height="130" /></a>
+    <a href="https://laerdal.com"><img src="sponsor_laerdal.png" alt="Laerdal Labs" height="130" /></a>
   </p>
 
   <p style="padding:0px 0px">
