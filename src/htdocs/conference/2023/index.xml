@@ -554,6 +554,7 @@ li {
       <a href="https://indico.freedesktop.org/event/5/contributions/265/">GstPipelineStudio version 0.3.0 is out!</a>
       <small><br /><i>Stéphane Cerveau, Igalia</i></small>
     </li>
+<!--
     <li>
       <a href="https://indico.freedesktop.org/event/5/contributions/266/">Streamway: From multistreaming to Browser based live stream studio &amp; beyond</a>
       <small><br /><i>Ramjivan Jangid, Streamway</i></small>
@@ -562,6 +563,7 @@ li {
       <a href="https://indico.freedesktop.org/event/5/contributions/267/">Exploring the Future of Fun: 5G, Interactive Entertainment, and GStreamer Magic</a>
       <small><br /><i>Ramjivan Jangid, Streamway</i></small>
     </li>
+-->
     <li>
       <a href="https://indico.freedesktop.org/event/5/contributions/171/">GStreamer plugin in Rust on webOS OSE</a>
       <small><br /><i>Seungwook Cha, LG Electronics</i></small>
