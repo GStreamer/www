@@ -11,4 +11,6 @@ status-rss-1.0.xml: $(srcdir)/status.xml $(srcdir)/status2rss-1.0.xsl
 
 index_style = index.xsl
 
+images = discourse.png
+
 include $(top_srcdir)/html.make
