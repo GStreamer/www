@@ -1,4 +1,4 @@
-SUBDIRS = apps bindings bugs dev download images \
+SUBDIRS = apps bindings dev download images \
 	lists modules news releases conference \
 	features projects \
 	planet artwork security
