@@ -18,6 +18,7 @@
     <item class="gstnavside-g" href="/dev/">Developers</item>
     <item class="gstnavside-g" href="/documentation/">Documentation</item>
     <item class="gstnavside-g" href="/lists/">Mailing Lists</item>
+    <item class="gstnavside-g" href="https://discourse.gstreamer.org">Forum</item>
     <item class="gstnavside-g" href="/documentation/contribute/index.html">File a Bug</item>
     <!--item class="gstnavside-g" href="/modules/">Modules</item-->
     <!--item class="gstnavside-g" href="/bindings/">Bindings</item-->
