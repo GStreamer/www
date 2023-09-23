@@ -14086,7 +14086,7 @@ Anybody is welcome to join and discuss, ask questions, reply, etc...
 We look forward to seeing you all there.
 </p>
 <p style="padding:10px 10px">
-  <a href="https://discourse.gstreamer.org"><img src="%site;/news/discourse.png" alt="Discourse forum screenshot" width="80%" /></a>
+  <a href="https://discourse.gstreamer.org"><img src="&site;/news/discourse.png" alt="Discourse forum screenshot" width="80%" /></a>
 </p>
 </content>
 </item>
