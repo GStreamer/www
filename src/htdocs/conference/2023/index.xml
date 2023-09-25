@@ -88,6 +88,14 @@ li {
   <a href="https://indico.freedesktop.org/event/5/timetable/?layout=room#all.detailed">Click here for the conference schedule</a>.
   </p>
 
+  <h2>Live Streams</h2>
+  <p>
+  <ul>
+  <li><a href="https://gstconf.ubicast.tv/lives/room-1/">Room 1</a></li>
+  <li><a href="https://gstconf.ubicast.tv/lives/room-2/">Room 2</a></li>
+  </ul>
+  </p>
+
   <h2>Details</h2>
   <p>
   The GStreamer Conference is a conference for developers, community members,
