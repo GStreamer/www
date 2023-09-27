@@ -10,7 +10,6 @@ htdocs/Makefile
 htdocs/artwork/Makefile
 htdocs/apps/Makefile
 htdocs/bindings/Makefile
-htdocs/bugs/Makefile
 htdocs/conference/Makefile
 htdocs/conference/2010/Makefile
 htdocs/conference/2011/Makefile
