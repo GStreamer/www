@@ -14154,4 +14154,75 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+  <item>
+    <date>2023-12-12 09:30
+    </date>
+    <title>New GStreamer Matrix chat space
+    </title>
+    <content>
+	  <p>Hello everyone,
+	  </p>
+	  <p>As part of the ongoing effort to provide better tooling and services for the GStreamer community at wide, there is now a
+	  <a href="https://matrix.org/" target="_blank" rel="noopener">Matrix
+	  </a> instance for GStreamer available at
+	  <a href="https://matrix.to/#/#community:gstreamer.org" target="_blank" rel="noopener">https://matrix.to/#/#community:gstreamer.org
+	  </a> . You can join using a
+	  <a href="https://matrix.org/ecosystem/clients/" target="_blank" rel="noopener">matrix client
+	  </a> and a matrix account (the GStreamer instance does not provide account creation).
+	  </p>
+	  <p>The decision comes after discussions that took place during the gstreamer conference/hackfest and discussions here :
+	  <a href="https://discourse.gstreamer.org/t/a-replacement-for-irc/151" target="_blank" rel="noopener">https://discourse.gstreamer.org/t/a-replacement-for-irc/151
+	  </a> . But the summary is that Matrix provides a modern chat system with features people expect in this day and age, while not being a closed silo.
+	  </p>
+	  <p>There are already some rooms up:
+	  </p>
+	  <ul >
+	    <li>
+	      <a href="https://matrix.to/#/#gstreamer:gstreamer.org" target="_blank" rel="noopener">General Discussion
+	      </a> The main discussion channel
+	    </li>
+	    <li>
+	      <a href="https://matrix.to/#/#newcomers:gstreamer.org" target="_blank" rel="noopener">GStreamer newcomers
+	      </a> for those new to GStreamer
+	    </li>
+	    <li>
+	      <a href="https://matrix.to/#/#releases:gstreamer.org" target="_blank" rel="noopener">GStreamer Releases
+	      </a> for preparing releases
+	    </li>
+	    <li>
+	      <a href="https://matrix.to/#/#rust:gstreamer.org" target="_blank" rel="noopener">Rust 🦀 GStreamer
+	      </a> for the crustaceous multimedians
+	    </li>
+	    <li>
+	      <a href="https://matrix.to/#/#python:gstreamer.org" target="_blank" rel="noopener">Python 🐍 GStreamer
+	      </a> for the pythonistas
+	    </li>
+	    <li>
+	      <a href="https://matrix.to/#/#sysadmin:gstreamer.org" target="_blank" rel="noopener">Sysadmin and service support
+	      </a> for discussions and questions on the services behind
+	      <a href="http://gstreamer.org" target="_blank" rel="noopener">gstreamer.org
+	      </a> (matrix, discourse, mail, …)
+	    </li>
+	    <li>And more rooms will be made available on a as-needed basis
+	    </li>
+	  </ul>
+	  <p>Note that a client with support for spaces and threads is recommended (but not mandatory).
+	  </p>
+	  <p>In terms of the OFTC IRC channel, it will remain bridged to matrix (2/3 users in
+	  <code>#gstreamer
+	  </code> on IRC are already accessing it via Matrix), but we recommend switching over to using the above matrix rooms since:
+	  </p>
+	  <ul>
+	    <li>They provide the full matrix experience (history, threads, search, emojis, calls,…)
+	    </li>
+	    <li>They offer more rooms than the (single) IRC room
+	    </li>
+	    <li>Using the IRC bridge requires you to handle IRC commands if you wish to join/speak there (NickServ)
+	    </li>
+	    <li>The IRC bridge isn’t maintained by the GStreamer community and we cannot guarantee it will always be around/up.
+	    </li>
+	  </ul>
+        </content>
+  </item>
+
 </news>
