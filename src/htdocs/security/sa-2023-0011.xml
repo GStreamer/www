@@ -1,0 +1,47 @@
+<?xml-stylesheet href="advisory-detail.xsl" type="text/xsl"?>
+<!DOCTYPE xsl:stylesheet
+[
+  <!ENTITY % site-entities SYSTEM "../entities.site">
+  %site-entities;
+]>
+<advisory>
+<id>2023-0011</id>
+<alternate-name>ZDI-CAN-22300</alternate-name>
+<!-- <alternate-name>tbd</alternate-name> -->
+<date>2023-12-18 14:00</date>
+<summary>AV1 codec parser buffer overflow</summary>
+<affected-versions>GStreamer gst-plugins-bad &lt; 1.22.8</affected-versions>
+
+<details>Heap-based buffer overflow in the AV1 codec parser when handling certain malformed streams before GStreamer 1.22.8</details>
+<impact>It is possible for a malicious third party to trigger a crash in the application, and possibly also effect code execution through heap manipulation.</impact>
+<mitigation></mitigation>
+<workarounds></workarounds>
+<solution></solution>
+<solution>The gst-plugins-bad 1.22.8 releases address the issue. People using older branches of GStreamer should apply the patch and recompile.</solution>
+<references>
+    <reference>
+        <title>The GStreamer project</title>
+        <content> <a href="https://gstreamer.freedesktop.org">https://gstreamer.freedesktop.org</a></content>
+    </reference>
+
+<!--
+    <reference>
+    <title>CVE Database Entries</title>
+    <content> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44429">CVE-2023-44429</a>  </content>
+    </reference>
+-->
+    <reference>
+        <title>GStreamer 1.22.8 release</title>
+        <content>
+          <a href="https://gstreamer.freedesktop.org/releases/1.22/#1.22.8">Release Notes</a>
+          <a href="https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.22.8.tar.xz">GStreamer Plugins Bad 1.22.8</a>
+        </content>
+    </reference>
+    <reference>
+        <title>Patches</title>
+        <content>
+          <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5823.patch">Patch</a>
+        </content>
+    </reference>
+</references>
+</advisory>
