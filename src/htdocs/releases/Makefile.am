@@ -1,4 +1,4 @@
-built_pages = gstreamer010.html index.html
+built_pages = index.html
 
 %.xml: $(top_srcdir)/copy/releases/$@
 	cp $(top_srcdir)/copy/releases/$@ $@
