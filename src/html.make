@@ -64,19 +64,12 @@ $(top_builddir)/htdocs/gstreamer.css: $(top_srcdir)/copy/gstreamer.css
 #gstreamer.css: $(top_srcdir)/copy/gstreamer.css
 #	cp $< $@
 
-# copy .htaccess preserving hierarchy
-# set htaccess in htdocs/ Makefile.am to get these in
-%/.htaccess: $(top_srcdir)/copy/$@
-	cp $</$@ $@
-
-
 # create new variables to use in automake targets so automake
 # doesn't complain when these variables are emtpy
 am_pages = $(if $(built_pages), $(built_pages), )
 am_images = $(if $(images), $(images), )
 am_documents = $(if $(documents), $(documents), )
 am_css = $(if $(css), $(css), )
-am_htaccess = $(if $(htaccess), $(htaccess), )
 
-noinst_DATA = $(am_pages) $(am_images) $(am_css) $(am_htaccess) $(am_documents)
+noinst_DATA = $(am_pages) $(am_images) $(am_css) $(am_documents)
 CLEANFILES = $(noinst_DATA)

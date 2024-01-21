@@ -7,13 +7,6 @@ built_pages = index.html
 index_style = index.xsl
 css = gstreamer.css
 
-htaccess = \
-	releases/gstreamer/.htaccess \
-	releases/gst-player/.htaccess \
-	releases/gst-plugins/.htaccess \
-	releases/gst-ffmpeg/.htaccess
-
-
 index.html: $(srcdir)/news/news.xml
 
 media pkg src:

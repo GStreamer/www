@@ -40,13 +40,6 @@
       <tr>
         <td>News feeds: <a href="news/rss-1.0.xml">[RSS 1.0]</a></td>
       </tr>
-      <tr>
-        <td>Release feeds:
-          <a href="releases/releases.rss10.xml">[RSS 1.0]</a> 
-          <a href="releases/releases.rss20.xml">[RSS 2.0]</a> 
-          <a href="releases/releases.ics">[iCal]</a> 
-        </td>
-      </tr>
     </table>
   </xsl:template>
 </xsl:stylesheet>

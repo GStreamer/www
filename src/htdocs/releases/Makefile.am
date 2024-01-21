@@ -1,12 +1,5 @@
 built_pages = index.html
 
-%.xml: $(top_srcdir)/copy/releases/$@
-	cp $(top_srcdir)/copy/releases/$@ $@
-%.ics: $(top_srcdir)/copy/releases/$@
-	cp $(top_srcdir)/copy/releases/$@ $@
-
-all-local:	releases.rss10.xml releases.rss20.xml releases.ics
-
 index.html: releases.html index.xml $(fullstyle) $(entities) $(page_style) $(pics)
 	xsltproc @XSLTPROC_ARGS@ $(srcdir)/index.xml -o $@ --path "$(builddir)"
 
