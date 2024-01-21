@@ -2,7 +2,7 @@
 <!ENTITY gst-version-stable "1.22.8">
 <!ENTITY gst-version-devel "git main">
 
-<!ENTITY orc-version-stable "0.4.34">
+<!ENTITY orc-version-stable "0.4.35">
 <!ENTITY orc-version-devel "git main">
 
 <!ENTITY gst-bug-report "http://bugzilla.gnome.org/enter_bug.cgi?product=GStreamer">

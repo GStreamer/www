@@ -14289,4 +14289,34 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+  <item>
+      <date>2024-01-23 16:00</date>
+        <title>Orc 0.4.35 release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler, which is used for SIMD acceleration
+in GStreamer plugins such as audioconvert, audiomixer, compositor, videoscale,
+and videoconvert, to name just a few.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>Add support for AVX / AVX2</li>
+            <li>SSE backend improvements</li>
+            <li>New `orf` and `andf` opcodes for bitwise AND and OR for single precision floats</li>
+            <li>Add support for `convwf`, int16 to float conversion</li>
+            <li>Allow backend/target selection through ORC_TARGET environment variable</li>
+            <li>orconce: Use Win32 once implementation with MSVC for better performance</li>
+            <li>orcc: add --binary option to output raw machine code for functions</li>
+            <li>orcprofile: Implement Windows high-resolution timestamp for MSVC to allow benchmarking on MSVC builds</li>
+            <li>Documentation improvements</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.35.tar.xz">orc-0.4.35</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
