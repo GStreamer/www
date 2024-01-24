@@ -2187,6 +2187,127 @@ suggestions or helped testing. Thank you all!
 - [List of Merge Requests applied in 1.22.8](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.22.8)
 - [List of Issues fixed in 1.22.8](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.22.8)
 
+<a id="1.22.9"></a>
+
+### 1.22.9
+
+The ninth 1.22 bug-fix release (1.22.9) was released on 24 January 2024.
+
+This release only contains bugfixes and security fixes and it *should* be safe
+to update from 1.22.x.
+
+#### Highlighted bugfixes in 1.22.9
+
+ - More [Security fixes](https://gstreamer.freedesktop.org/security/) for the AV1 video codec parser
+ - va: fixes for Mesa Gallium drivers in Mesa versions older than v23.2
+ - v4l2src: Consider framerate during caps selection
+ - v4l2codec: decoder fixes
+ - rtspsrc: multicast fixes
+ - camerabin viewfinder fixes
+ - various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements
+
+#### gstreamer
+
+ - [aggregator: fix use-after-free in queries processing](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5958)
+ - [multiqueue: Ignore queue fullness for most events](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5954)
+
+#### gst-plugins-base
+
+ - [audiobasesink: Don't wait on gap events](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5953)
+ - [audioconvert: change gst_audio_convert_get_unit_size() log levels](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5832)
+ - [glcolorconvert: Correct transform_caps direction](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5947)
+ - [gloverlay: Apply updated overlay coordinates correctly](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5909)
+ - [videorate: keep pool if max_buffers is unlimited](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5957)
+
+#### gst-plugins-good
+
+ - [rtpsession: Only warn once if configured latency needs to be known but isn't yet](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5874)
+ - [rtphdrext-clientaudiolevel: Fix level value being written by the extension](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5894)
+ - [rtspsrc: set multicast-iface on udpsinks and fix RTCP sink TTL](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5967)
+ - [v4l2object: clear old fds when initializing poll during opening v4l2 device](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5840)
+ - [v4l2src: Consider framerate during caps selection](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5956)
+ - [vpxdec: Use appropriate domain and code for decoding errors](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5918)
+
+#### gst-plugins-bad
+
+ - [av1parser: Fix potential stack overflow during tile list parsing](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5971)
+ - [camerabin: Correctly relink viewfinderbin_queue](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5842)
+ - [GstPlay: Fix error details parsing](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5831)
+ - [h264decoder: Handle malformed avc/avc3 packets](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5934)
+ - [h264decoder: h265decoder: Align with wraparound fix](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5850)
+ - [vp8decoder: vp9decoder: av1decoder: mpeg2decoder: Fix multiplication wraparound](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5850)
+ - [vah264enc/vah264dec issues after recent upgrade to 1.22.8 from 1.22.7](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/3195)
+ - [va: fixes for Mesa Gallium drivers in Mesa versions older than v23.2](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5778)
+ - [vp9parse: Fix critical warning during caps negotiation](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5976)
+
+#### gst-plugins-ugly
+
+ - No changes
+
+### gst-plugins-rs
+
+ - No changes
+
+#### gst-libav
+
+ - No changes
+
+#### gst-rtsp-server
+
+ - No changes
+
+#### gstreamer-vaapi
+
+ - No changes
+
+#### gstreamer-sharp
+
+ - No changes
+
+#### gst-omx
+
+ - No changes
+
+#### gst-python
+
+ - No changes
+
+#### gst-editing-services
+
+ - No changes
+
+#### gst-validate + gst-integration-testsuites
+
+ - No changes
+
+### gst-examples
+
+ - No changes
+
+#### Development build environment
+
+ - No changes
+
+#### Cerbero build tool and packaging changes in 1.22.9
+
+ - No changes
+
+#### Contributors to 1.22.9
+
+Alexander Slobodeniuk, Chao Guo, Damian Hobson-Garcia, Dan Searles,
+Guillaume Desmottes, Jan Schmidt, Marek Vasut, Mengkejiergeli Ba,
+Michael Tretter, Philippe Normand, Robert Mader, Sanchayan Maity,
+Sebastian Dröge, Seungha Yang, Tim-Philipp Müller,
+Víctor Manuel Jáquez Leal, Xavier Claessens,
+
+... and many others who have contributed bug reports, translations, sent
+suggestions or helped testing. Thank you all!
+
+#### List of merge requests and issues fixed in 1.22.9
+
+- [List of Merge Requests applied in 1.22.9](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.22.9)
+- [List of Issues fixed in 1.22.9](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.22.9)
+
 ## Schedule for 1.24
 
 Our next major feature release will be 1.24, and 1.23 will be the unstable
@@ -2194,7 +2315,7 @@ development version leading up to the stable 1.24 release. The development
 of 1.23/1.24 will happen in the git `main` branch of the GStreamer mono
 repository.
 
-The plan for the 1.24 development cycle is yet to be confirmed.
+The target for an initial 1.24 release is February 2024.
 
 1.24 will be backwards-compatible to the stable 1.22, 1.20, 1.18, 1.16, 1.14, 1.12, 1.10, 1.8, 1.6, 1.4, 1.2 and 1.0 release series.
 
