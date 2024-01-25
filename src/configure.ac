@@ -40,6 +40,7 @@ htdocs/releases/1.16/Makefile
 htdocs/releases/1.18/Makefile
 htdocs/releases/1.20/Makefile
 htdocs/releases/1.22/Makefile
+htdocs/releases/1.24/Makefile
 htdocs/projects/Makefile
 htdocs/security/Makefile
 ])

@@ -7,6 +7,7 @@ releases.html: releases.md
 	markdown $(srcdir)/releases.md > $(builddir)/releases.html
 
 SUBDIRS = \
+	1.24 \
 	1.22 \
 	1.20 \
 	1.18 \
