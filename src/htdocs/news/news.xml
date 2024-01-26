@@ -14378,4 +14378,31 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+  <item>
+      <date>2024-01-26 18:00</date>
+        <title>Orc 0.4.36 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler, which is used for SIMD acceleration
+in GStreamer plugins such as audioconvert, audiomixer, compositor, videoscale,
+and videoconvert, to name just a few.
+        </p>
+        <p>
+This is a bug-fix release that fixes a regression introduced by the
+recent 0.4.35 release, fixing a crash on machines that only support AVX
+but not AVX2.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>Only use AVX / AVX2 instructions on CPUs that support both AVX and AVX2</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.36.tar.xz">orc-0.4.36</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
