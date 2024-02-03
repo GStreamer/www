@@ -267,4 +267,18 @@ The Ruby bindings are released as part of
     <a href="http://www.vala-project.org/">Vala</a>.</p>
     </body>
   </binding>
+
+  <binding>
+    <id>golang</id>
+    <name>Go</name>
+    <status>
+      Released as part of the <a href="https://github.com/go-gst">go-gst</a> project.
+    </status>
+    <body>
+      <p>
+        See the <a href="https://github.com/go-gst/go-gst">go-gst</a> project
+        page for more information.
+      </p>
+    </body>
+  </binding>
 </bindings>
