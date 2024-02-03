@@ -13,6 +13,7 @@
     <id>gstreamer</id>
     <title>GStreamer</title>
     <blurb>core library and elements</blurb>
+    <repo-path>gstreamer/-/tree/main/subprojects/gstreamer</repo-path>
     <description>
 GStreamer is the core library.  It contains the headers, core library files,
 and core elements.
@@ -29,6 +30,7 @@ and core elements.
     <id>gst-plugins-base</id>
     <title>GStreamer Base Plug-ins</title>
     <blurb>an essential exemplary set of elements</blurb>
+    <repo-path>gstreamer/-/tree/main/subprojects/gst-plugins-base</repo-path>
     <description>
 GStreamer Base Plug-ins is a well-groomed and well-maintained collection of
 GStreamer plug-ins and elements, spanning the range of possible types of
@@ -48,6 +50,7 @@ A wide range of video and audio decoders, encoders, and filters are included.
     <id>gst-plugins-good</id>
     <title>GStreamer Good Plug-ins</title>
     <blurb>a set of good-quality plug-ins under our preferred license, LGPL</blurb>
+    <repo-path>gstreamer/-/tree/main/subprojects/gst-plugins-good</repo-path>
     <description>
 GStreamer Good Plug-ins is a set of plug-ins that we consider to have good
 quality code, correct functionality, our preferred license (LGPL for the
@@ -65,6 +68,7 @@ plug-in code, LGPL or LGPL-compatible for the supporting library).
     <id>gst-plugins-ugly</id>
     <title>GStreamer Ugly Plug-ins</title>
     <blurb>a set of good-quality plug-ins that might pose distribution problems</blurb>
+    <repo-path>gstreamer/-/tree/main/subprojects/gst-plugins-ugly</repo-path>
     <description>
 GStreamer Ugly Plug-ins is a set of plug-ins that have good quality and correct
 functionality, but distributing them might pose problems.  The license on
@@ -83,6 +87,7 @@ code might be widely known to present patent problems.
     <id>gst-plugins-bad</id>
     <title>GStreamer Bad Plug-ins</title>
     <blurb>a set of plug-ins that need more quality, testing or documentation</blurb>
+    <repo-path>gstreamer/-/tree/main/subprojects/gst-plugins-bad</repo-path>
     <description>
 GStreamer Bad Plug-ins is a set of plug-ins that aren't up to par compared to
 the rest.  They might be close to being good quality, but they're missing
@@ -101,6 +106,7 @@ real live maintainer, or some actual wide use.
     <id>gst-libav</id>
     <title>GStreamer Libav plug-in</title>
     <blurb>Libav-based plug-in containing many decoders and encoders</blurb>
+    <repo-path>gstreamer/-/tree/main/subprojects/gst-libav</repo-path>
     <description>
 GStreamer Libav plug-in contains one plugin with a set of elements using
 the Libav library code.  It contains many popular decoders and encoders.
@@ -117,6 +123,7 @@ the Libav library code.  It contains many popular decoders and encoders.
     <id>gst-python</id>
     <blurb>python bindings</blurb>
     <title>GStreamer Python Bindings Supplement</title>
+    <repo-path>gstreamer/-/tree/main/subprojects/gst-python</repo-path>
     <description>
 GStreamer python overrides for the gobject-introspection-based pygst bindings.
     </description>
@@ -132,6 +139,7 @@ GStreamer python overrides for the gobject-introspection-based pygst bindings.
     <id>gst-editing-services</id>
     <blurb>Editing Services</blurb>
     <title>GStreamer Editing Services</title>
+    <repo-path>gstreamer/-/tree/main/subprojects/gst-editing-services</repo-path>
     <description>
 Library for creating audio/video editors.
     </description>
@@ -147,6 +155,7 @@ Library for creating audio/video editors.
     <id>gst-rtsp-server</id>
     <blurb>RTSP server</blurb>
     <title>GStreamer RTSP Server</title>
+    <repo-path>gstreamer/-/tree/main/subprojects/gst-rtsp-server</repo-path>
     <description>
 RTSP server library based on GStreamer
     </description>
@@ -162,6 +171,7 @@ RTSP server library based on GStreamer
     <id>gstreamer-sharp</id>
     <blurb>C#/.NET bindings</blurb>
     <title>GStreamer C# Bindings</title>
+    <repo-path>gstreamer/-/tree/main/subprojects/gstreamer-sharp</repo-path>
     <description>
       GStreamer C# bindings.
     </description>
@@ -177,6 +187,7 @@ RTSP server library based on GStreamer
     <id>gstreamer-vaapi</id>
     <blurb>VA-API integration</blurb>
     <title>GStreamer VA-API integration</title>
+    <repo-path>gstreamer/-/tree/main/subprojects/gstreamer-vaapi</repo-path>
     <description>
 VA-API-based decoder, encoder, postprocessing and video sink elements
 for GStreamer.
@@ -193,6 +204,7 @@ for GStreamer.
     <id>cerbero</id>
     <blurb>Cerbero build system for Windows, OS/X, Android and iOS</blurb>
     <title>Cerbero cross-platform build system</title>
+    <repo-path>cerbero</repo-path>
     <description>
 Build system to build GStreamer and all dependencies from source and
 create binary packages for Windows, Android, OS/X and iOS
@@ -209,6 +221,7 @@ create binary packages for Windows, Android, OS/X and iOS
     <id>orc</id>
     <blurb>Orc runtime compiler</blurb>
     <title>Library of Optimized Inner Loops Runtime Compiler</title>
+    <repo-path>orc</repo-path>
     <description>
 Library and set of tools for compiling and executing SIMD assembly
 language-like programs that operate on arrays of data.
@@ -233,7 +246,6 @@ language-like programs that operate on arrays of data.
     More information can be found on the <a href="&site;/wiki/QtGStreamer">QtGStreamer 
     wiki page</a>
     </description>
-    <maintainer></maintainer>
     <versions>
       <stable>N/A</stable>
       <devel>N/A</devel>
@@ -250,7 +262,6 @@ GNonLin contains a set of plug-ins for GStreamer to ease the
 creation of multimedia editors, or any other application where a
 timeline-oriented use of GStreamer makes sense.
     </description>
-    <maintainer></maintainer>
     <versions>
       <stable>obsolete</stable>
       <devel>obsolete</devel>
@@ -262,6 +273,7 @@ timeline-oriented use of GStreamer makes sense.
     <id>gst-omx</id>
     <blurb>OpenMax plugins</blurb>
     <title>GStreamer OpenMax plugins</title>
+    <repo-path>gst-omx</repo-path>
     <description>
 OpenMax-based decoder and encoder elements for GStreamer.
 Replacement for gst-openmax.

@@ -51,12 +51,12 @@ Here's a quick overview of all of our modules :
   </td>
   <td><xsl:value-of select="blurb" /></td>
   <td>
-    <!-- add link to cgit if it says 'git master'; no link if it says 'N/A' -->
+    <!-- add link to gitlab if it says 'git main'; no link if it says 'N/A' -->
     <xsl:choose>
-      <xsl:when test="versions/stable/text() = string('git master')">
+      <xsl:when test="versions/stable/text() = string('git main')">
         <xsl:call-template name="hyperlink">
-          <xsl:with-param name="href">http://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="id" />/</xsl:with-param>
-          <xsl:with-param name="text">git master</xsl:with-param>
+          <xsl:with-param name="href">http://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="repo-path" />/</xsl:with-param>
+          <xsl:with-param name="text">git main</xsl:with-param>
         </xsl:call-template>
       </xsl:when>
       <xsl:otherwise>
@@ -107,12 +107,12 @@ Here's a quick overview of all of our modules :
     </xsl:choose>
   </td>
   <td>
-    <!-- add link to cgit if it says 'git master'; no link if it says 'N/A' -->
+    <!-- add link to gitlab if it says 'git main'; no link if it says 'N/A' -->
     <xsl:choose>
-      <xsl:when test="versions/devel/text() = string('git master')">
+      <xsl:when test="versions/devel/text() = string('git main')">
         <xsl:call-template name="hyperlink">
-          <xsl:with-param name="href">http://cgit.freedesktop.org/gstreamer/<xsl:value-of select="id" />/</xsl:with-param>
-          <xsl:with-param name="text">git master</xsl:with-param>
+          <xsl:with-param name="href">http://gitlab.freedesktop.org/gstreamer/<xsl:value-of select="repo-path" />/</xsl:with-param>
+          <xsl:with-param name="text">git main</xsl:with-param>
         </xsl:call-template>
       </xsl:when>
       <xsl:otherwise>
@@ -123,13 +123,21 @@ Here's a quick overview of all of our modules :
           </xsl:when>
           <xsl:otherwise>
 
-            <xsl:call-template name="hyperlink">
-              <xsl:with-param name="href">
-                &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/devel" />.html</xsl:with-param>
-              <xsl:with-param name="text">
-                <xsl:value-of select="versions/devel" />
-              </xsl:with-param>
-            </xsl:call-template>
+            <xsl:choose>
+              <xsl:when test="versions/stable/text() = string('obsolete')">
+                obsolete
+              </xsl:when>
+              <xsl:otherwise>
+
+                <xsl:call-template name="hyperlink">
+                  <xsl:with-param name="href">
+                    &site;/releases/<xsl:value-of select="id" />/<xsl:value-of select="versions/devel" />.html</xsl:with-param>
+                  <xsl:with-param name="text">
+                    <xsl:value-of select="versions/devel" />
+                  </xsl:with-param>
+                </xsl:call-template>
+              </xsl:otherwise>
+            </xsl:choose>
 
            </xsl:otherwise>
         </xsl:choose>
@@ -169,16 +177,28 @@ Here's a quick overview of all of our modules :
 
 <tr>
   <td>Maintainer</td>
-  <td><xsl:value-of select="maintainer" /></td>
+  <td>
+    <xsl:choose>
+      <xsl:when test="not(maintainer)">N/A</xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="maintainer" />
+      </xsl:otherwise>
+    </xsl:choose>
+  </td>
 </tr>
 
 <tr>
   <td>browse Git</td>
   <td>
-    <xsl:call-template name="hyperlink">
-      <xsl:with-param name="href">&gst-repo-http;<xsl:value-of select="id" />
-      </xsl:with-param>
-    </xsl:call-template>
+    <xsl:choose>
+      <xsl:when test="not(repo-path)">N/A</xsl:when>
+      <xsl:otherwise>
+        <xsl:call-template name="hyperlink">
+          <xsl:with-param name="href">&gst-repo-http;<xsl:value-of select="repo-path" />
+          </xsl:with-param>
+        </xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
   </td>
 </tr>
 <tr>
