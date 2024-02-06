@@ -14405,4 +14405,34 @@ Direct tarball download: <a href="&site;/src/orc/orc-0.4.36.tar.xz">orc-0.4.36</
         </content>
   </item>
 
+  <item>
+      <date>2024-02-06 17:30</date>
+        <title>Orc 0.4.37 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler, which is used for SIMD acceleration
+in GStreamer plugins such as audioconvert, audiomixer, compositor, videoscale,
+and videoconvert, to name just a few.
+        </p>
+        <p>
+This is a bug-fix release that fixes some recent regressions, but also
+properly enables liborc on Apple arm64 devices.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>Apple arm64 enablement</li>
+            <li>macOS/iOS fixes</li>
+            <li>orcc regression fix, would default to "sse" backend</li>
+            <li>MMX backend fixes</li>
+            <li>orc testsuite fixes</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.37.tar.xz">orc-0.4.37</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
