@@ -2,11 +2,11 @@
 
 GStreamer 1.22.0 was originally released on 23 January 2023.
 
-The latest bug-fix release in the stable 1.22 series is [1.22.9](#1.22.9) and was released on 24 January 2024.
+The latest bug-fix release in the stable 1.22 series is [1.22.10](#1.22.10) and was released on 13 February 2024.
 
 See [https://gstreamer.freedesktop.org/releases/1.22/][latest] for the latest version of this document.
 
-*Last updated: Wednesday 24 January 2024, 12:00 UTC [(log)][gitlog]*
+*Last updated: Tuesday 13 January 2024, 11:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.22/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.22/release-notes-1.22.md
@@ -2307,6 +2307,144 @@ suggestions or helped testing. Thank you all!
 
 - [List of Merge Requests applied in 1.22.9](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.22.9)
 - [List of Issues fixed in 1.22.9](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.22.9)
+
+<a id="1.22.10"></a>
+
+### 1.22.10
+
+The tenth 1.22 bug-fix release (1.22.10) was released on 13 February 2024.
+
+This release only contains bugfixes and security fixes and it *should* be safe
+to update from 1.22.x.
+
+#### Highlighted bugfixes in 1.22.10
+
+ - gst-python: fix bindings overrides for Python >= 3.12
+ - glcolorconvert: fix wrong RGB to YUV matrix with bt709
+ - glvideoflip: fix "method" property setting at construction time
+ - gtk4paintablesink: Always draw a black background behind the video frame, and other fixes
+ - pad: keep segment event seqnums the same when applying a pad offset
+ - basesink: Preroll on out of segment buffers when not dropping them
+ - Prefer FFmpeg musepack decoder/demuxer, fixing musepack playback in decodebin3/playbin3
+ - livesync: add support for image formats such as JPEG or PNG
+ - sdpdemux: Add SDP message (aka session) attributes to the caps too
+ - textwrap: add support for gaps
+ - macos: Fix gst_macos_main() terminating whole process, and set activation policy
+ - webrtcbin: Improve SDP intersection for Opus
+ - various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements
+
+#### gstreamer
+
+ - [pad: Copy over seqnum when creating a new segment event for applying pad offset](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6067)
+ - [basesink: Preroll on out of segment buffers when not dropping them](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6045)
+ - [macos: Fix gst_macos_main() terminating whole process before returning a value](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6051)
+ - [macos: Set activation policy in gst_macos_main()](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6103)
+
+#### gst-plugins-base
+
+ - [glcolorconvert: fix wrong RGB to YUV matrix with bt709](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6046)
+ - [glvideoflip: fix setting of method property at construction time](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6010)
+ - [glvideoflip: "method"` property is broken if set during element construction](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/3245)
+ - [macos: Set activation policy in glimagesink](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6103)
+ - [videoaggregator: fix bufferpool leak](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6047)
+
+#### gst-plugins-good
+
+ - [taglib: Set cpp_std to c++17 to fix compilation with TagLib >= 2.0](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6097)
+ - [macos: Set activation policy in osxvideosink](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6103)
+
+#### gst-plugins-bad
+
+ - [neon: Allow building against neon 0.33.x](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6049)
+ - [sdpdemux: Add SDP message (aka session) attributes to the caps too](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6086)
+ - [srtpenc: Fix potential leak](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6048)
+ - [webrtcbin: Improve SDP intersection for Opus](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5999)
+ - [wpe: Rename WPEView to WPEThreadedView to avoid clash with newer wpe version](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6096)
+
+#### gst-plugins-ugly
+
+ - No changes
+
+### gst-plugins-rs
+
+ - [gtk4: Fix segfault running `gst-inspect -a` when GTK4 and GTK3 is installed](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [gtk4: Always draw a black background behind the video frame](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [livesync: add support for image formats](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [livesync: properly format jitter in debug logs](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [textwrap: add support for gaps](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [webrtc: only use close() to close websockets](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [webrtc: signallers: attempt to close the ws when an error occurs](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [webrtc/signalling: Fix potential hang and FD leak](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [webrtc/signalling: We get the address when accepting](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [meson: Fix build on Windows with MSVC](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [meson: pkg-config is required at build time](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [meson: Add nasm to PATH if meson can find it](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [meson: allow building plugins with GTK 4 examples](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+ - [Update GStreamer bindings in Cargo.lock](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1456)
+
+#### gst-libav
+
+ - [Prefer using FFmpeg musepack decoder/demuxer](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6085)
+
+#### gst-rtsp-server
+
+ - No changes
+
+#### gstreamer-vaapi
+
+ - No changes
+
+#### gstreamer-sharp
+
+ - No changes
+
+#### gst-omx
+
+ - No changes
+
+#### gst-python
+
+ - [Some Python 3.12 fixes](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6044)
+ - [python: Port from deprecated imp to importlib](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6050)
+
+#### gst-editing-services
+
+ - No changes
+
+#### gst-validate + gst-integration-testsuites
+
+ - No changes
+
+### gst-examples
+
+ - No changes
+
+#### Development build environment
+
+ - No changes
+
+#### Cerbero build tool and packaging changes in 1.22.10
+
+ - [gst-plugins-bad: build soundtouch plugin on MSVC](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1355)
+ - [cerbero: Fix GNU tar --checkpoint compatibility with macOS](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1348)
+ - [cerbero: Fix bootstrap venv error after upgrading Python](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1347)
+ - [gst-plugins-good: build taglib plugin on MSVC](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1334)
+
+#### Contributors to 1.22.10
+
+Alexander Slobodeniuk, Christian Curtis Veng, Edward Hervey, François Laignel,
+Guillaume Desmottes, Heiko Becker, Jan Schmidt, Jonas Kvinge, Jordan Petridis,
+L. E. Segovia, Lukas Geiger, Marvin Schmidt, Mathieu Duponchelle,
+Michael Tretter, Nirbheek Chauhan, Philippe Normand, Piotr Brzeziński,
+Ruben Gonzalez, Sebastian Dröge, Thibault Saunier, Tim-Philipp Müller,
+
+... and many others who have contributed bug reports, translations, sent
+suggestions or helped testing. Thank you all!
+
+#### List of merge requests and issues fixed in 1.22.10
+
+- [List of Merge Requests applied in 1.22.10](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.22.10)
+- [List of Issues fixed in 1.22.10](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.22.10)
 
 ## Schedule for 1.24
 
