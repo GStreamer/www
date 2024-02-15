@@ -2,7 +2,7 @@
 
 GStreamer 1.24 has not been released yet. It is scheduled for release ASAP.
 
-GStreamer 1.23.1 is the current API unstable development snapshot that is being
+GStreamer 1.23.2 is the current API unstable development snapshot that is being
 developed in the git `main` branch which will eventually become the upcoming
 GStreamer 1.24 stable release.
 
@@ -56,7 +56,7 @@ As always, this release is again packed with many new features, bug fixes and ot
 
 - This section will be completed in due course
 
-- liborc 0.4.35 (latest: 0.4.36) adds support for AVX/AVX2 and contains improvements for the SSE backend.
+- liborc 0.4.35 (latest: 0.4.37) adds support for AVX/AVX2 and contains improvements for the SSE backend.
 
 - as always there have been plenty of performance, latency and memory optimisations all over the place.
 
