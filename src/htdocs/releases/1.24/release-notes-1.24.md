@@ -2,21 +2,17 @@
 
 GStreamer 1.24 has not been released yet. It is scheduled for release ASAP.
 
-GStreamer 1.23.2 is the current API unstable development snapshot that is being
-developed in the git `main` branch which will eventually become the upcoming
-GStreamer 1.24 stable release.
+GStreamer 1.23.90 is the first release candidate (rc1) for 1.24.
 
 1.24 will be backwards-compatible to the stable 1.22, 1.20, 1.18, 1.16, 1.14,
 1.12, 1.10, 1.8, 1.6,, 1.4, 1.2 and 1.0 release series.
 
-<!--
 See [https://gstreamer.freedesktop.org/releases/1.24/][latest] for the latest version of this document.
 
-*Last updated: Thursday 25 January 2024, 19:00 UTC [(log)][gitlog]*
+*Last updated: Friday 23 February 2024, 13:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.24/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.24/release-notes-1.24.md
--->
 
 ## Introduction
 
