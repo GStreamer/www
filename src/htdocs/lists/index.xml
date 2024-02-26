@@ -3,7 +3,21 @@
 <page>
   <title>GStreamer: Mailing Lists</title>
   <body>
-<h2>Mailing Lists</h2>
+    <h2>Mailing Lists</h2>
+
+    <p>
+      <b>NOTE:</b> The mailing lists are being phased out and most of the
+      discussions now happen on the <a
+      href="https://discourse.gstreamer.org/">GStreamer Discourse</a>
+      instance. Users who prefer to use e-mail can configure their Discourse
+      accounts to behave like a mailing-list, more information <a
+      href="https://discourse.gstreamer.org/t/using-discourse-via-email/109/2">here</a>.
+    </p>
+
+    <p>Announcements, including new releases, will be posted on the <a
+    href="https://discourse.gstreamer.org/c/news/5">News and Announcements
+    Discourse category</a>. Users can subscribe to that category.</p>
+
 <p>There are currently eight mailing lists for GStreamer:</p>
 
 <UL>
