@@ -14668,4 +14668,32 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a
         </content>
   </item>
 
+  <item>
+      <date>2024-02-27 16:30</date>
+        <title>Orc 0.4.38 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler, which is used for SIMD acceleration
+in GStreamer plugins such as audioconvert, audiomixer, compositor, videoscale,
+and videoconvert, to name just a few.
+        </p>
+        <p>
+This is a minor bug-fix release which fixes an issue on x86 architectures
+with hardened Linux kernels.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>x86: account for XSAVE when checking for AVX support, fixing usage on hardened linux kernels where AVX support has been disabled</li>
+            <li>neon: Use the real intrinsics for divf and sqrtf</li>
+            <li>orc.m4 for autotools is no longer shipped. If anyone still uses it they can copy it into their source tree</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.38.tar.xz">orc-0.4.38.tar.xz</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
