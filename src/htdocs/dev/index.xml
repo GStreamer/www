@@ -29,9 +29,11 @@ the manual and the slides to get a general overview and to get you started.</p>
 
 <!-- FIXME: dotplan back in action or not ? -->
 
-<p>The developers tend to live in IRC on <a href="http://www.oftc.net/">OFTC</a>, in
-<a href="irc://irc.oftc.net/gstreamer">#gstreamer</a>. <!-- Sketching ideas and making plans can be done on the
-<a href="&site;/wiki">gstreamer wiki</a>. -->
+<p>The developers tend to live on Matrix in 
+<a href="https://matrix.to/#/#gstreamer:gstreamer.org"><code>#gstreamer:gstreamer.org</code></a>
+and the other chat rooms of the 
+<a href="https://matrix.to/#/#community:gstreamer.org"><code>#community:gstreamer.org</code>GStreamer space</a>. 
+<!-- Sketching ideas and making plans can be done on the <a href="&site;/wiki">gstreamer wiki</a>. -->
 </p>
                                                                                 
 <H1>Git access</H1>
