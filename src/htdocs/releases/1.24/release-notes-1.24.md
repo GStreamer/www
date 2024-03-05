@@ -9,6 +9,7 @@ See [https://gstreamer.freedesktop.org/releases/1.24/][latest] for the latest ve
 [latest]: https://gstreamer.freedesktop.org/releases/1.24/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.24/release-notes-1.24.md
 
+<a id="introduction"></a>
 ## Introduction
 
 The GStreamer team is proud to announce a new major feature release in the
@@ -16,6 +17,7 @@ stable 1.x API series of your favourite cross-platform multimedia framework!
 
 As always, this release is again packed with many new features, bug fixes and other improvements.
 
+<a id="highlights"></a>
 ## Highlights
 
 - New [Discourse forum][discourse] and [Matrix chat space][matrix]
@@ -54,8 +56,10 @@ As always, this release is again packed with many new features, bug fixes and ot
 - Rust plugins now shipped in packages for all major platforms including Android and iOS
 - Lots of new plugins, features, performance improvements and bug fixes
 
+<a id="major-changes"></a>
 ## Major new features and changes
 
+<a id="community"></a>
 ### Discourse forum and Matrix chat space
 
 - The new [Discourse forum][discourse] and [Matrix chat space][matrix] are
@@ -72,6 +76,7 @@ As always, this release is again packed with many new features, bug fixes and ot
 [discourse-email]: https://discourse.gstreamer.org/t/using-discourse-via-email/109
 [matrix]: https://discourse.gstreamer.org/t/new-gstreamer-matrix-chat-space/675
 
+<a id="playbin3"></a>
 ### Playbin3, decodebin3 now stable and default
 
 - After a year of stability, testing and more improvements, `playbin3`, and its
@@ -99,6 +104,7 @@ Improvements in this cycle:
   confusion between subtitle "decoders" (which decode the format to text
   and "parsers" (which only do timing detection and optional seeking).
 
+<a id="gst-meta"></a>
 ### GstMeta serialization/deserialization and other GstMeta improvements
 
 - **GstMeta serialization/deserialization** allows metas to be transmitted or
@@ -116,6 +122,7 @@ Improvements in this cycle:
 - Add `gst_meta_info_new()` and `gst_meta_info_register()` to
   **register a GstMeta in two steps** for easier extensibility.
 
+<a id="unixfd"></a>
 ### New unixfd plugin for efficient 1:N inter-process communication on Linux
 
 - **unixfdsink** and **unixfdsrc** are elements that, inspired by
@@ -126,6 +133,7 @@ Improvements in this cycle:
   allows for example `videotestsrc` to write directly into memory that can be
   transfered to other processes without copying.
 
+<a id="smpte-meta"></a>
 ### New GstMeta for SMPTE ST-291M HANC/VANC Ancillary Data
 
 - Previously only various specific `GstMeta` for ancillary data were
@@ -141,6 +149,7 @@ Improvements in this cycle:
 
 [anc-meta]: https://gstreamer.freedesktop.org/documentation/video/gstvideoanc.html#GstAncillaryMeta
 
+<a id="dsd-audio"></a>
 ### DSD audio support
 
 - [DSD audio][dsd-audio] is a non-PCM raw audio format representation and the
@@ -155,6 +164,7 @@ Improvements in this cycle:
 [dsd-format]: https://gstreamer.freedesktop.org/documentation/audio/gstdsdformat.html#GstDsdFormat
 [dsd-info]: https://gstreamer.freedesktop.org/documentation/audio/gstdsd.html#GstDsdInfo
 
+<a id="analytics-ml"></a>
 ### Analytics and Machine Learning
 
 - A new library, [GstAnalytics][analytics], has been added. It defines a
@@ -186,6 +196,7 @@ Improvements in this cycle:
 [analytics]: https://gstreamer.freedesktop.org/documentation/analytics/
 [analytics-relation-meta]: https://gstreamer.freedesktop.org/documentation/analytics/gstanalyticsmeta.html#GstAnalyticsMtdImpl
 
+<a id="qt"></a>
 ### Qt5 + Qt6 QML integration improvements
 
 - The Qt5 **qmlglsink**, **qmlgloverlay**, **qmlglmixer** received support
@@ -199,6 +210,7 @@ Improvements in this cycle:
 - **qml6d3d11sink** is a new **Direct3D11 Qt6 QML sink** for Windows as
   an alternative to the existing qml6glsink.
 
+<a id="drm-dmabuf"></a>
 ### DRM Modifier Support for dmabufs on Linux
 
 The [Linux dmabuf subsystem][kernel-dmabuf] provides buffer sharing across
@@ -247,6 +259,7 @@ New API has been added for easy handling of these new caps:
 
 [video-info-dma-drm]: https://gstreamer.freedesktop.org/documentation/video/video-info-dma-drm.html#GstVideoInfoDmaDrm
 
+<a id="opengl"></a>
 ### OpenGL integration enhancements
 
 - When using EGL, if both OpenGL ES and OpenGL are available, OpenGL ES is preferred
@@ -291,6 +304,7 @@ New API has been added for easy handling of these new caps:
   to be always outstanding allowing for reducing the potential synchronisation delay
   when reusing OpenGL memory backed buffers.
 
+<a id="vulkan"></a>
 ### Vulkan integration enhancements
 
 - Add support for the Vulkan H.264 and H.265 decoders.
@@ -305,6 +319,7 @@ New API has been added for easy handling of these new caps:
   visible debug window.  Required as the previous `wl_shell` interface is
   being removed from compositors.
 
+<a id="cuda-nvcodec"></a>
 ### CUDA / NVCODEC integration and feature additions
 
 - New **cudaipcsrc** and **cudaipcsink** elements for zero-copy CUDA memory
@@ -333,6 +348,7 @@ New API has been added for easy handling of these new caps:
 [gst-cuda-memory-sync]: https://gstreamer.freedesktop.org/documentation/cuda/gst-libs/gst/cuda/gstcudamemory.html?gi-language=c#gst_cuda_memory_sync
 [gst-cuda-memory-get-stream]: https://gstreamer.freedesktop.org/documentation/cuda/gst-libs/gst/cuda/gstcudamemory.html?gi-language=c#gst_cuda_memory_get_stream
 
+<a id="rtp"></a>
 ### RTP stack improvements
 
 - New **rtppassthroughpay** element which just passes RTP packets through
@@ -396,6 +412,7 @@ New API has been added for easy handling of these new caps:
      `rtpj2kdepay`, `rtph263pdepay`, `rtph263depay`, `rtph261depay`.
      `rtpgstdepay`.
 
+<a id="webrtc"></a>
 ### WebRTC improvements
 
 - Add support for **ICE consent freshness** (RFC 7675).
@@ -410,6 +427,7 @@ New API has been added for easy handling of these new caps:
   `webrtcsrc` and `webrtcsink` elements as well as specific elements for different
   WebRTC signalling protocols. See the Rust plugins section below for more details.
 
+<a id="adaptivedemux"></a>
 ### Adaptive Streaming improvements and Low-Latency HLS (LL-HLS) support
 
 - **hlsdemux2** now supports Low-Latency HLS (LL-HLS)
@@ -442,6 +460,7 @@ New API has been added for easy handling of these new caps:
   instead. They are automatically picked up when using `urisourcebin`, `uridecodebin3`
   or `playbin3`.
 
+<a id="w3c-mse"></a>
 ### W3C Media Source Extensions library
 
 - A new GStreamer library ([mse][gst-mse]) implementing the
@@ -455,6 +474,7 @@ New API has been added for easy handling of these new caps:
 
 [gst-mse]: https://gstreamer.freedesktop.org/documentation/mselib/index.html
 
+<a id="closed-captions"></a>
 ### Closed Caption handling improvements
 
 - **ccconverter** supports converting between the two CEA-608 fields.
@@ -464,6 +484,7 @@ New API has been added for easy handling of these new caps:
 - Various improvements and feature additions in the Rust-based closed caption
   elements. Check out the Rust plugins section below for more details.
 
+<a id="ptp"></a>
 ### Precision Time Protocol (PTP) clock improvements
 
 - Many fixes and compatibility/interoperability improvements.
@@ -489,6 +510,7 @@ New API has been added for easy handling of these new caps:
   configuration and initialization of the GStreamer PTP subsystem, including
   TTL configuration.
 
+<a id="bayer"></a>
 ### Bayer 10/12/14/16-bit depth support
 
 - **bayer2rgb** and **rgb2bayer** now support bayer with 10/12/14/16 bit depths
@@ -497,6 +519,7 @@ New API has been added for easy handling of these new caps:
 
 - **imagefreeze** gained bayer support as well
 
+<a id="mpeg-ts"></a>
 ### MPEG-TS improvements
 
 - **mpegtsdemux** gained support for
@@ -511,6 +534,7 @@ New API has been added for easy handling of these new caps:
   - allows writing **arbitrary Opus channel mapping families and up to 255 channels**
   - separate handling of DVB and ATSC AC3 descriptors
 
+<a id="new-plugins"></a>
 ## New elements and plugins
 
 - **analyticsoverlay** visualises object-detection metas on a video stream.
@@ -547,6 +571,7 @@ New API has been added for easy handling of these new caps:
 
 - New **uvcsink** element for exporting streams as UVC camera
 
+<a id="new-element-features"></a>
 ## New element features and additions
 
 - **alphacombine** supports `I420_10LE` now for 10-bit WebM/alpha support.
@@ -731,10 +756,12 @@ New API has been added for easy handling of these new caps:
 
 - **y4mdec** now parses extended headers to support high bit depth video.
 
+<a id="plugin-library-moves"></a>
 ## Plugin and library moves
 
 - The **AMR-NB** and **AMR-WB** plugins have been moved from -bad to -good.
 
+<a id="plugin-element-removals"></a>
 ## Plugin and element removals
 
 - The entire **gst-omx** package and plugin has been retired.
@@ -745,6 +772,7 @@ New API has been added for easy handling of these new caps:
  
 - The **kate subtitle plugin** has been removed.
 
+<a id="new-api"></a>
 ## Miscellaneous API additions
 
 ### GStreamer Core
@@ -847,6 +875,7 @@ formats for passthrough purposes:
 
 - Tiled 10-bit NV12 format `NV12_10LE40_4L4` (Verisilicon Hantro)
 
+<a id="optimisations"></a>
 ## Miscellaneous performance, latency and memory optimisations
 
 - liborc 0.4.35 (latest: 0.4.38) adds support for AVX/AVX2 and contains
@@ -871,6 +900,7 @@ formats for passthrough purposes:
 
 -->
 
+<a id="tracing"></a>
 ## Tracing framework and debugging improvements
 
 - The **gst-stats** tool can now be passed a custom regular expression
@@ -895,6 +925,7 @@ formats for passthrough purposes:
   which is reasonably light weight and still provides an idea about how
   smooth the rendering is.
 
+<a id="tools"></a>
 ## Tools
 
 - **gst-launch-1.0** gained a new `--prog-name` command line option to set
@@ -904,6 +935,7 @@ formats for passthrough purposes:
 - **gst-play-1.0** now defaults to using `playbin3`, but can still be made to
   use the old `playbin` by passing the `--use-playbin2` command line argument.
 
+<a id="ffmpeg"></a>
 ## GStreamer FFmpeg wrapper
 
 - New **avvideocompare** element to compare two incoming video buffers
@@ -924,6 +956,7 @@ formats for passthrough purposes:
 
 - Note: see Known Issues section below for known issues with FFmpeg 6.0
 
+<a id="rtsp"></a>
 ## GStreamer RTSP server
 
 - New "ensure-keyunit-on-start" property: While the suspend modes NONE
@@ -938,6 +971,7 @@ formats for passthrough purposes:
 
 - rtspclientsink: apply "port-range" property for RTCP port selection as well
 
+<a id="vaapi"></a>
 ## GStreamer VA-API support
 
 ### GstVA
@@ -979,6 +1013,7 @@ formats for passthrough purposes:
   Users who rely on gstreamer-vaapi are encouraged to migrate and
   test the `va` elements at the earliest opportunity.
 
+<a id="v4l2"></a>
 ## GStreamer Video4Linux2 support
 
 - **New `uvcsink` element**, based on v4l2sink allow streaming your pipeline
@@ -992,6 +1027,7 @@ formats for passthrough purposes:
 
 - Stateless decoders now tested using Virtual driver (visl), making it possible to run the tests in the cloud based CI
 
+<a id="omx"></a>
 ## GStreamer OMX
 
 - The gst-omx module has been removed. The OpenMAX standard is long dead and
@@ -1004,6 +1040,7 @@ formats for passthrough purposes:
   forks and it is recommended that they maintain it while planning their
   move to the Video4Linux API.
 
+<a id="ges"></a>
 ## GStreamer Editing Services and NLE
 
 - Implement a `gesvideoscale` effect which gives user the ability to chooses where
@@ -1043,6 +1080,7 @@ formats for passthrough purposes:
   to user as adding them at the beginning of the chain while the syntax is `+effect`
   felt wrong
 
+<a id="validate"></a>
 ## GStreamer validate
 
 - In action types, add a way to avoid checking property value after setting it,
@@ -1074,6 +1112,7 @@ formats for passthrough purposes:
 
 - Fixed compatibility with Python 3.12.
 
+<a id="python"></a>
 ## GStreamer Python Bindings
 
 gst-python is an extension of the regular GStreamer Python bindings based on
@@ -1093,6 +1132,7 @@ GStreamer's fundamental GLib types such as `Gst.Fraction`, `Gst.IntRange` etc.
 
 - Fix libpython dlopen on macOS
 
+<a id="csharp"></a>
 ## GStreamer C# Bindings
 
 - The GStreamer C# bindings have been updated to a more recent
@@ -1103,6 +1143,7 @@ GStreamer's fundamental GLib types such as `Gst.Fraction`, `Gst.IntRange` etc.
 
 - GstRtspServer bindings have been added, plus an RTSP server example
 
+<a id="rust"></a>
 ## GStreamer Rust Bindings and Rust Plugins
 
 The GStreamer Rust bindings and plugins are released separately with a different release
@@ -1116,6 +1157,7 @@ has also seen lots of activity with many new elements and plugins. The GStreamer
 Rust plugins can be used from any programming language. To applications
 they look just like a plugin written in C or C++.
 
+<a id="rust-webrtc"></a>
 ### WebRTC
 
 - New element `webrtcsrc` that can act as a recvonly WebRTC client. Just like the opposite direction, `webrtcsink`, this can support various different WebRTC signalling protocols. Some are included with the plugin and provide their own element factory for easier usage but it is also possible for applications to provide new signalling protocol implementations.
@@ -1146,6 +1188,7 @@ they look just like a plugin written in C or C++.
 
 ... and various other smaller improvements!
 
+<a id="rust-rtsp"></a>
 ### RTSP
 
 - **New `rtspsrc2` element**. Only a subset of RTSP features are implemented so far:
@@ -1160,6 +1203,7 @@ they look just like a plugin written in C or C++.
 
 [rtspsrc2-readme]: https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/blob/main/net/rtsp/README.md?ref_type=heads
 
+<a id="rust-gtk4"></a>
 ### GTK4
 
 - Support for **rendering GL textures** on X11/EGL, X11/GLX, Wayland, macOS, and WGL/EGL on Windows.
@@ -1174,6 +1218,7 @@ they look just like a plugin written in C or C++.
 
 - Various bugfixes, including support for the new GTK 4.14 GL renderer. The plugin needs to be built with at least the `gtk_v4_10` feature to work with the new GTK 4.14 GL renderer, and will work best if built with the `gtk_v4_14` feature.
 
+<a id="rust-closed-caption"></a>
 ### Closed Caption
 
 - Add `cea608tocea708` element for **upconverting CEA-608 captions to their CEA-708 representation**.
@@ -1184,6 +1229,7 @@ they look just like a plugin written in C or C++.
 
 - `awstranscriber` is using the new HTTP/2-based API now instead of the WebSocket-based one.
 
+<a id="rust-other-elements"></a>
 ### Other new elements
 
 - New `awss3putobjectsink` that works similar to `awss3sink` but with a different upload strategy.
@@ -1196,6 +1242,7 @@ they look just like a plugin written in C or C++.
 
 - New `isomp4mux` **non-fragmented MP4 muxer** element.
 
+<a id="rust-other-improvements"></a>
 ### Other improvements
 
 - audiornnoise
@@ -1222,12 +1269,14 @@ For a full list of changes in the Rust plugins see the
 
 [rs-changelog]: https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/blob/main/CHANGELOG.md
 
+<a id="rust-cerbero"></a>
 ## Cerbero Rust support
 
 - As of GStreamer 1.24, the GStreamer Rust plugins are shipped as part of
   our binary packages on all major platforms. This includes Android and iOS
   now in addition to macOS and Windows/MSVC.
 
+<a id="build-and-deps"></a>
 ## Build and Dependencies
 
 - Meson >= 1.1 is now required for all modules
@@ -1295,6 +1344,7 @@ For a full list of changes in the Rust plugins see the
 
 - gst-env.py: Output a setting for the prompt with `--only-environment`
 
+<a id="cerbero"></a>
 ### Cerbero
 
 Cerbero is a meta build system used to build GStreamer plus dependencies
@@ -1372,8 +1422,10 @@ Android, iOS, and macOS.
 - `tremor` and `ivorbisdec` plugins are no longer shipped on Android
 - `openh264` plugin no longer enables ASM optimizations on Android x86 due to relocation errors
 
+<a id="platform-specific"></a>
 ## Platform-specific changes and improvements
 
+<a id="android"></a>
 ### Android
 
 - Add NDK implementation of Android MediaCodec. This reduces the amount of
@@ -1381,6 +1433,7 @@ Android, iOS, and macOS.
 
 - Add support for AV1 to the `androidmedia` video encoder and decoder.
 
+<a id="apple"></a>
 ### Apple macOS and iOS
 
 - osxaudio: **audio clock improvements** (interpolate based on system time)
@@ -1392,6 +1445,7 @@ Android, iOS, and macOS.
   outside them and there would be no way to bring them to front again. This
   change also allows osxvideosink to receive navigation events correctly.
 
+<a id="windows"></a>
 ### Windows
 
 - New **DirectWrite text rendering plugin** with **dwriteclockoverlay**,
@@ -1441,17 +1495,20 @@ Android, iOS, and macOS.
 
 <!--
 
+<a id="linux"></a>
 ### Linux
 
 - Many improvements which are described in other sections.
 
 -->
 
+<a id="docs"></a>
 ## Documentation improvements
 
 - hotdoc has been updated to the latest version, and the theme has also
   been updated, which should fix various usability issues.
 
+<a id="breaking-changes"></a>
 ## Possibly Breaking Changes
 
 - `gst_plugin_feature_check_version()` has been updated to fix unexpected
@@ -1478,6 +1535,7 @@ Android, iOS, and macOS.
   and `nvvp9sldec` were renamed to `nvh264dec`, `nvh265dec`, `nvvp8dec` and
   `nvvp9dec`, respectively.
 
+<a id="known-issues"></a>
 ## Known Issues
 
 - There are known issues with FFmpeg version 6.0.0 due to opaque passing
@@ -1485,6 +1543,7 @@ Android, iOS, and macOS.
   may affect other decoders as well. Versions before 6.0.0, and 6.0.1 or higher
   are not affected.
 
+<a id="statistics"></a>
 ## Statistics
 
 - 4643 commits
@@ -1498,6 +1557,7 @@ Android, iOS, and macOS.
 - 209842 lines deleted
 - 259791 lines added (net)
 
+<a id="contributors"></a>
 ## Contributors
 
 Aaron Boxer, Aaron Huang, Acky Xu, adixonn, Adrian Fiergolski,
