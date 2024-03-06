@@ -759,7 +759,7 @@ New API has been added for easy handling of these new caps:
 <a id="plugin-library-moves"></a>
 ## Plugin and library moves
 
-- The **AMR-NB** and **AMR-WB** plugins have been moved from -bad to -good.
+- The **AMR-NB** and **AMR-WB** plugins have been moved from -ugly to -good.
 
 <a id="plugin-element-removals"></a>
 ## Plugin and element removals
