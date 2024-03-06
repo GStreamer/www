@@ -1,0 +1,98 @@
+include:
+  - project: 'freedesktop/ci-templates'
+    ref: "9568e38927f9e9c48d4f586f84a071c3a4bdcd39"
+    file: '/templates/debian.yml'
+
+stages:
+  - 'preparation'
+  - 'build'
+  #- 'integrate'
+
+variables:
+  GIT_DEPTH: 1
+
+  # Branch to track for modules that have no ref specified in the manifest
+  GST_UPSTREAM_BRANCH: 'main'
+
+  FDO_UPSTREAM_REPO: 'gstreamer/www'
+
+  WWW_AMD64_SUFFIX: 'amd64/www'
+
+  WWW_TAG: '2024-03-12.0'
+
+workflow:
+  # https://docs.gitlab.com/ee/ci/yaml/index.html#switch-between-branch-pipelines-and-merge-request-pipelines
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      variables:
+        GIT_FETCH_EXTRA_FLAGS: '--no-tags'
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      variables:
+        GIT_FETCH_EXTRA_FLAGS: '--no-tags'
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"
+      when: never
+    - if: '$CI_COMMIT_TAG'
+    - if: '$CI_COMMIT_BRANCH'
+      variables:
+        GIT_FETCH_EXTRA_FLAGS: '--no-tags'
+
+#
+# Global CI policy
+#
+# This can be used to configure global behaviour our our jobs.
+#
+default:
+  retry:
+    max: 2
+    when:
+      - 'runner_system_failure'
+      - 'stuck_or_timeout_failure'
+      - 'scheduler_failure'
+      - 'api_failure'
+  interruptible: true
+
+.www image:
+  tags: [ 'placeholder-job' ]
+  variables:
+    FDO_DISTRIBUTION_VERSION: 'bookworm'
+    FDO_REPO_SUFFIX: "$WWW_AMD64_SUFFIX"
+    FDO_DISTRIBUTION_TAG: "$WWW_TAG-$GST_UPSTREAM_BRANCH"
+    FDO_DISTRIBUTION_PACKAGES: 'automake autoconf make markdown xsltproc w3c-sgml-lib ca-certificates'
+    #FDO_DISTRIBUTION_EXEC: 'ci/docker/prepare.sh'
+
+www amd64 docker:
+  extends:
+    - '.www image'
+    - '.fdo.container-build@debian'
+  stage: 'preparation'
+
+.website:
+  extends:
+    - '.www image'
+    - '.fdo.suffixed-image@debian'
+  stage: 'build'
+  needs:
+    - job: 'www amd64 docker'
+      artifacts: false
+  script:
+    - cd src/htdocs
+    - ln -s ./entities.site.fdo ./entities.site
+    - cd ../..
+    - ./src/autogen.sh
+    - make
+  rules:
+    - if: '$CI_PROJECT_NAMESPACE != "gstreamer" || $CI_COMMIT_BRANCH != $GST_UPSTREAM_BRANCH'
+      when: 'always'
+
+# This job is run in the user's namespace to validate the website build.
+#
+# Note that I'm not making this a pages job on purpose right now because
+# gitlab pages will be indexed by Google and I'm not sure if we can prevent
+# it or can place a robots.txt in the top-level of the user's pages.
+#
+build website:
+  extends:
+    - '.website'
+  stage: 'build'
+  needs:
+    - "www amd64 docker"
