@@ -502,7 +502,7 @@ New API has been added for easy handling of these new caps:
   C version various error paths are handled more correctly and a couple
   of memory leaks are fixed. Otherwise it should work identically.
   The minimum required Rust version for compiling this is 1.48, i.e. the
-  version currently in Debian stable. On Windows, Rust 1.54 is needed at least.
+  version currently in Debian oldstable. On Windows, Rust 1.54 is needed at least.
 
 - New `ptp-helper` Meson build option so PTP support can be disabled or required.
 
@@ -1300,7 +1300,7 @@ For a full list of changes in the Rust plugins see the
 
 - The `ptp-helper` for Precision Time Protocol (PTP) support in GStreamer core
   has been rewritten in Rust, and the minimum required Rust version for building
-  this is 1.48, i.e. the version currently in Debian stable. On Windows, at least
+  this is 1.48, i.e. the version currently in Debian oldstable. On Windows, at least
   Rust 1.54 is needed. There is a new `ptp-helper` Meson feature option that can
   be used to make sure everything needed for PTP support is available (if set to
   `ptp-helper=enabled`). `cargo` is not required for building.
