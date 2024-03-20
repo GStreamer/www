@@ -177,8 +177,8 @@ you will want to install _both_ packages. The target SDK version for 1.20 and
   - **[1.24.0 runtime installer](/data/pkg/osx/1.24.0/gstreamer-1.0-1.24.0-universal.pkg)**
   - **[1.24.0 development installer](/data/pkg/osx/1.24.0/gstreamer-1.0-devel-1.24.0-universal.pkg)**
 * **macOS Universal (X86_64 &amp; ARM64) 1.22 release (old stable version)**
-  - **[1.22.10 runtime installer](/data/pkg/osx/1.22.10/gstreamer-1.0-1.22.10-universal.pkg)**
-  - **[1.22.10 development installer](/data/pkg/osx/1.22.10/gstreamer-1.0-devel-1.22.10-universal.pkg)**
+  - **[1.22.11 runtime installer](/data/pkg/osx/1.22.11/gstreamer-1.0-1.22.11-universal.pkg)**
+  - **[1.22.11 development installer](/data/pkg/osx/1.22.11/gstreamer-1.0-devel-1.22.11-universal.pkg)**
 
 GStreamer is also available on [Homebrew](https://brew.sh/), and you should be
 able to use that. However, please note that some plugins are not shipped by
@@ -194,7 +194,7 @@ Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
 * **Android Universal [1.24.0 tarball](/data/pkg/android/1.24.0/gstreamer-1.0-android-universal-1.24.0.tar.xz) (current stable version)**
-* Android Universal [1.20.7 tarball](/data/pkg/android/1.20.7/gstreamer-1.0-android-universal-1.20.7.tar.xz) (old stable version)
+* Android Universal [1.22.11 tarball](/data/pkg/android/1.22.11/gstreamer-1.0-android-universal-1.22.11.tar.xz) (old stable version)
 
 The Android NDKs used by our stable releases are:
 
@@ -266,7 +266,7 @@ and the target SDK version for 1.16.x was iOS 9.0, for 1.18.x, 1.20.x and
 1.22.x it was iOS 11.0, and for 1.24.x it is iOS 12.0.
 
 * **iOS Universal [1.24.0 framework](/data/pkg/ios/1.24.0/gstreamer-1.0-devel-1.24.0-ios-universal.pkg) (ARM64, X86_64) (current stable version)**
-* iOS Universal [1.22.10 framework](/data/pkg/ios/1.22.10/gstreamer-1.0-devel-1.22.10-ios-universal.pkg) (ARM64, X86_64) (old stable version)
+* iOS Universal [1.22.11 framework](/data/pkg/ios/1.22.11/gstreamer-1.0-devel-1.22.11-ios-universal.pkg) (ARM64, X86_64) (old stable version)
 
 [Older 1.x binary releases](/data/pkg/ios) are also available.
 
