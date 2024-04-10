@@ -16,7 +16,7 @@
     <tr>
       <td bgcolor="#FFFFFF" valign="top">
         <!-- table inside the graphics for menu items -->
-        <table border="0" cellpadding="2" cellspacing="0">
+        <table border="0" cellpadding="1" cellspacing="0">
           <tr><td colspan="2"><img src="&site;/images/1x1.gif" alt="" border="0" width="2" height="2" /></td></tr>
           <xsl:for-each select="item">
           <tr>
@@ -31,18 +31,20 @@
                   </xsl:attribute>
                   <xsl:choose>
                     <xsl:when test="substring(@href, 1, 7) = 'http://'">
-                      <b><a href="{@href}">
+                      <a href="{@href}">
                         <xsl:attribute name="class">
                           <xsl:value-of select="@class" />
                         </xsl:attribute>
-                        <xsl:value-of select="." /></a></b>
+                        <xsl:value-of select="." />
+                      </a>
                     </xsl:when>
                     <xsl:otherwise>
-                      <b><a href="&site;{@href}" class="gstnavside">
+                      <a href="&site;{@href}" class="gstnavside">
                         <xsl:attribute name="class">
                           <xsl:value-of select="@class" />
                         </xsl:attribute>
-                       <xsl:value-of select="." /></a></b>
+                        <xsl:value-of select="." />
+                      </a>
                     </xsl:otherwise>
                   </xsl:choose>
                 </td>
@@ -50,7 +52,7 @@
             </xsl:choose>
             <td><img src="&site;/images/1x1.gif" border="0" width="2" height="2" alt="" /></td>
           </tr>
-          <tr><td colspan="3"><img src="&site;/images/1x1.gif" border="0" width="2" height="2" alt="" /></td></tr>
+          <tr><td colspan="3"><img src="&site;/images/1x1.gif" border="0" width="2" height="1" alt="" /></td></tr>
           </xsl:for-each>
         </table>
       </td>
