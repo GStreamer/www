@@ -1,6 +1,18 @@
 <?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY security SYSTEM "security.html">
+]>
+
+<?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
-  <title>GStreamer Security Center</title>
-  <body>
-  </body>
+<title>GStreamer Security Center</title>
+
+<body>
+
+<div class="markdown">
+&security;
+</div>
+
+</body>
 </page>

@@ -110,9 +110,35 @@ a.gstnavside-b:hover {
   text-align: right;
 }
 
-                                                                               
 .task {
   min-width: 100%;
   padding-bottom: 12pt;
 }
 
+/* Markdown-based pages only */
+.markdown table {
+  border-collapse: collapse;
+}
+
+.markdown td, .markdown th {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+.markdown th {
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #ccc;
+  font-weight: bold;
+}
+
+/* A hacky way to get 'vertical' tables (first column = header).
+ * See security advisory pages for an example. */
+.markdown .vertical-table td:first-child {
+  background-color: #f2f2f2;
+  border-right: 2px solid #ccc;
+  font-weight: bold;
+}
+
+.markdown .vertical-table thead {
+  display: none;
+}
