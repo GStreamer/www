@@ -19,7 +19,7 @@
           <xsl:text>:00Z</xsl:text>
         </xsl:variable>
         <tr>
-          <td valign="top"><h3 id="{$w3cdtf}"><xsl:value-of select="title"/></h3></td>
+          <td valign="top"><h1 id="{$w3cdtf}"><xsl:value-of select="title"/></h1></td>
           <td valign="top" align="right"><xsl:value-of select="date"/></td>
         </tr>
         <tr><td colspan="2"><xsl:copy-of select="content"/><br /></td></tr>
