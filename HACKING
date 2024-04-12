@@ -1,7 +1,7 @@
 To hack on the GStreamer website, here's what to do:
 
-0) Install the markdown tool (the original John Gruber markdown.pl script as an
-   executable named "markdown", available on Debian via the markdown package)
+0) Install the cmark-gfm tool (via your package manager or from
+   https://github.com/github/cmark-gfm) for markdown support
 1) Check out the www module
 2) src/autogen.sh
 3) create src/htdocs/entities.site by symlinking the applicable entities file

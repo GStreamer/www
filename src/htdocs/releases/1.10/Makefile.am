@@ -7,6 +7,6 @@ index.html: release-notes-1.10.html index.xml $(fullstyle) $(entities) $(page_st
 	xsltproc @XSLTPROC_ARGS@ $(srcdir)/index.xml -o $@ --path "$(builddir)"
 
 release-notes-1.10.html: release-notes-1.10.md
-	markdown $(srcdir)/release-notes-1.10.md > $(builddir)/release-notes-1.10.html
+	cmark-gfm @CMARK_ARGS@ $(srcdir)/release-notes-1.10.md > $(builddir)/release-notes-1.10.html
 
 include $(top_srcdir)/html.make

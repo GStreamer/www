@@ -18,7 +18,7 @@ variables:
 
   WWW_AMD64_SUFFIX: 'amd64/www'
 
-  WWW_TAG: '2024-03-12.0'
+  WWW_TAG: '2024-04-12.0'
 
 workflow:
   # https://docs.gitlab.com/ee/ci/yaml/index.html#switch-between-branch-pipelines-and-merge-request-pipelines
@@ -57,7 +57,7 @@ default:
     FDO_DISTRIBUTION_VERSION: 'bookworm'
     FDO_REPO_SUFFIX: "$WWW_AMD64_SUFFIX"
     FDO_DISTRIBUTION_TAG: "$WWW_TAG-$GST_UPSTREAM_BRANCH"
-    FDO_DISTRIBUTION_PACKAGES: 'automake autoconf make markdown xsltproc w3c-sgml-lib ca-certificates'
+    FDO_DISTRIBUTION_PACKAGES: 'automake autoconf make cmark-gfm xsltproc w3c-sgml-lib ca-certificates'
     #FDO_DISTRIBUTION_EXEC: 'ci/docker/prepare.sh'
 
 www amd64 docker:

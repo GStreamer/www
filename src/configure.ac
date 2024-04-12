@@ -4,6 +4,9 @@ AM_INIT_AUTOMAKE
 
 AC_SUBST(XSLTPROC_ARGS, [-nonet])
 
+# Enable raw HTML and the tables extension for markdown
+AC_SUBST(CMARK_ARGS, ["--unsafe -e table"])
+
 AC_CONFIG_FILES([
 Makefile
 htdocs/Makefile

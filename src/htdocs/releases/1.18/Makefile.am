@@ -4,7 +4,7 @@ built_pages = index.html
 pics =
 
 release-notes-1.18.html: release-notes-1.18.md
-	markdown $(srcdir)/release-notes-1.18.md > $(builddir)/release-notes-1.18.html
+	cmark-gfm @CMARK_ARGS@ $(srcdir)/release-notes-1.18.md > $(builddir)/release-notes-1.18.html
 
 index.html: release-notes-1.18.html index.xml $(fullstyle) $(entities) $(page_style) $(pics)
 	for pic in $(pics); do cp $(srcdir)/$$pic $(builddir)/$$pic; done

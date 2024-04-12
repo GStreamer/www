@@ -4,7 +4,7 @@ index.html: releases.html index.xml $(fullstyle) $(entities) $(page_style) $(pic
 	xsltproc @XSLTPROC_ARGS@ $(srcdir)/index.xml -o $@ --path "$(builddir)"
 
 releases.html: releases.md
-	markdown $(srcdir)/releases.md > $(builddir)/releases.html
+	cmark-gfm @CMARK_ARGS@ $(srcdir)/releases.md > $(builddir)/releases.html
 
 SUBDIRS = \
 	1.24 \
