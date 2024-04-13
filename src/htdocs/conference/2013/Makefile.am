@@ -8,10 +8,10 @@ images = \
 	sponsor_150x50_google.png      \
 	lwn.png
 
-#documents = \
-#	gstreamer-sponsor.pdf
+documents = \
+  gstreamer-sponsor.pdf
 
-#gstreamer-sponsor.pdf:
-#	cp $(top_srcdir)/copy/documents/gstreamer-sponsor-2012.pdf gstreamer-sponsor.pdf
+gstreamer-sponsor.pdf:
+	cp $(top_srcdir)/copy/documents/gstreamer-sponsor-2013.pdf gstreamer-sponsor.pdf
 
 include $(top_srcdir)/html.make
