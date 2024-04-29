@@ -2,13 +2,13 @@
 
 GStreamer 1.22.0 was originally released on 23 January 2023.
 
-The latest bug-fix release in the now old-stable 1.22 series is [1.22.11](#1.22.11) and was released on 19 March 2024.
+The latest bug-fix release in the now old-stable 1.22 series is [1.22.12](#1.22.12) and was released on 29 April 2024.
 
 See [https://gstreamer.freedesktop.org/releases/1.22/][latest] for the latest version of this document.
 
 The GStreamer 1.22 stable series has since been superseded by the [GStreamer 1.24 stable release series][gstreamer-1.24].
 
-*Last updated: Tuesday 19 March 2024, 21:00 UTC [(log)][gitlog]*
+*Last updated: Monday 29 April 2024, 20:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.22/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.22/release-notes-1.22.md
@@ -2588,6 +2588,132 @@ suggestions or helped testing. Thank you all!
 
 - [List of Merge Requests applied in 1.22.11](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.22.11)
 - [List of Issues fixed in 1.22.11](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.22.11)
+
+<a id="1.22.12"></a>
+
+### 1.22.12
+
+The twelfth 1.22 bug-fix release (1.22.12) was released on 29 April 2024.
+
+This release only contains bugfixes and security fixes and it *should* be safe
+to update from 1.22.x.
+
+The GStreamer 1.22 stable series has since been superseded by the
+[GStreamer 1.24 stable release series][gstreamer-1.24].
+
+#### Highlighted bugfixes in 1.22.12
+
+ - EXIF image tag parsing [security fixes][security]
+ - glimagesink, gl/macos: race and reference count fixes
+ - GstPlay, dvbsubenc, alphadecodebin, d3dvideosink fixes
+ - rtpjitterbuffer extended timestamp handling fixes
+ - v4l2: fix regression with tiled formats
+ - ximagesink: fix regression on RPi/aarch64
+ - Thread-safety fixes
+ - Python bindings fixes
+ - cerbero build fixes with clang 15 on latest macOS/iOS
+ - various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements
+
+[security]: https://gstreamer.freedesktop.org/security/
+
+#### gstreamer
+
+ - [basesrc: Clear submitted buffer lists consistently with buffers](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6462)
+ - [inputselector: fix possible clock leak on shutdown](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6458)
+ - [ptpclock: fix double free of domain data during deinit](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6459)
+ - [gst-inspect-1.0: fix --exists for plugins with versions other than GStreamer's version, like the Rust plugins](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6415)
+
+#### gst-plugins-base
+
+ - [EXIF image tag parsing security fixes](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6767) 
+ - [glimagesink, gl/macos: a couple of race/reference count fixes](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6566)
+ - [typefinding: Handle WavPack block sizes > 131072](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6564)
+ - [v4l2: fix error in calculating padding bottom for tile format](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6565)
+ - [ximagesink: initialize mask for XISelectEvents](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6655)
+
+#### gst-plugins-good
+
+ - [pulsedeviceprovider: Add compare_device_type_name function and missing lock](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6640)
+ - [qtdemux: fix wrong full_range offset when parsing colr box](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6641)
+ - [rtpjitterbuffer: Use an extended RTP timestamp for the clock-base](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6639)
+ - [soup: fix thread name](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6738)
+ - [tests: rtpred: fix out-of-bound writes in unit test](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6479)
+ - [v4l2: silence valgrind warning](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6760)
+
+#### gst-plugins-bad
+
+ - [alphadecodebin: Explicitly pass 64 bit integers as such through varargs](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6470)
+ - [d3d11videosink: disconnect signals before releasing the window](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6493)
+ - [dvbsubenc: fixed some memory leaks and a crash](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6673)
+ - [GstPlay: Update `video_snapshot` to support playbin3](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6563)
+
+#### gst-plugins-ugly
+
+ - No changes
+
+### gst-plugins-rs
+
+ - No changes
+
+#### gst-libav
+
+ - No changes
+
+#### gst-rtsp-server
+
+ - No changes
+
+#### gstreamer-vaapi
+
+ - No changes
+
+#### gstreamer-sharp
+
+ - No changes
+
+#### gst-omx
+
+ - No changes
+
+#### gst-python
+
+- [Don't link to python for the gi overrides module](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6642)
+
+#### gst-editing-services
+
+ - No changes
+
+#### gst-devtools, gst-validate + gst-integration-testsuites
+
+ - [debug-viewer: Fix plugin loading machinery](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6677)
+
+### gst-examples
+
+ - No changes
+
+#### Development build environment
+
+ - No changes
+
+#### Cerbero build tool and packaging changes in 1.22.12
+
+ - [glib: disable error for int-conversion introduced by default with clang 15](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1409)
+ - [cerbero: Fix shutil.rmtree hack to passthrough unknown kwargs](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1402)
+
+#### Contributors to 1.22.12
+
+Alexander Slobodeniuk, Arnaud Vrac, Elliot Chen, eri, F. Duncanh, Jan Schmidt,
+Jimmy Ohn, Matthew Waters, Nicolas Dufresne, Nirbheek Chauhan, Philippe Normand,
+Qian Hu (胡骞), Sebastian Dröge, Taruntej Kanakamalla, Thomas Goodwin,
+Tim Blechmann, Tim-Philipp Müller,
+
+... and many others who have contributed bug reports, translations, sent
+suggestions or helped testing. Thank you all!
+
+#### List of merge requests and issues fixed in 1.22.12
+
+- [List of Merge Requests applied in 1.22.12](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.22.12)
+- [List of Issues fixed in 1.22.12](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.22.12)
 
 ## Schedule for 1.24
 
