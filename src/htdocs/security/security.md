@@ -15,7 +15,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 | --- | ------- | :----: | --- |
 | **GStreamer-SA-2024-0002**<br/>ZDI-CAN-23896 | Integer overflow in EXIF metadata parser leading to potential heap overwrite | 2024-04-29 20:00 | [Details](sa-2024-0002.html) |
 | **GStreamer-SA-2024-0001**<br/>ZDI-CAN-22873<br/>CVE-2024-0444  | AV1 codec parser potential buffer overflow during tile list parsing | 2024-01-24 20:00 | [Details](sa-2024-0001.html) |
-| **GStreamer-SA-2023-0011**<br/>ZDI-CAN-22300 | AV1 codec parser buffer overflow | 2023-12-18 14:00 | [Details](sa-2023-0011.html) |
+| **GStreamer-SA-2023-0011**<br/>ZDI-CAN-22300<br/>CVE-2023-50186 | AV1 codec parser buffer overflow | 2023-12-18 14:00 | [Details](sa-2023-0011.html) |
 | **GStreamer-SA-2023-0010**<br/>ZDI-CAN-22299<br/>CVE-2023-44446 | MXF demuxer use-after-free | 2023-11-13 12:00 | [Details](sa-2023-0010.html) |
 | **GStreamer-SA-2023-0009**<br/>ZDI-CAN-22226<br/>CVE-2023-44429 | AV1 codec parser buffer overflow | 2023-11-13 12:00 | [Details](sa-2023-0009.html) |
 | **GStreamer-SA-2023-0008**<br/>ZDI-CAN-21768<br/>CVE-2023-40476 | Integer overflow in H.265 video parser leading to stack overwrite | 2023-09-20 20:00 | [Details](sa-2023-0008.html) |
