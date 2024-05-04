@@ -1,0 +1,496 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+<title>GStreamer Conference 2024</title>
+
+<body>
+
+<style>
+li {
+  padding: 0px 0px 10px;
+}
+</style>
+
+<table>
+<tr><td width="60%">
+
+<h1>GStreamer Conference 2024</h1>
+
+  <h2>7-10 October 2024 · Montréal, Québec, Canada</h2>
+
+<p>
+
+<style>
+.crop-photo{
+    float:left;
+    margin:.5em 10px .5em 0;
+    overflow:hidden; /* this is important */
+    position:relative; /* this is important too */
+    border:1px solid #ccc;
+    }
+</style>
+
+<table>
+<tr>
+  <td>
+    <div class="crop-photo">
+    <img src="montreal_banner.jpg"
+         alt="Montréal"
+         height="300"
+    />
+    </div>
+  </td>
+</tr>
+</table>
+</p>
+
+  <br/>
+
+  <p>
+    We're thrilled to announce that the <b>12th GStreamer Conference</b> will take place on Monday and Tuesday <b>7-8 October 2024</b> at the Concordia University Conference Centre in <b>Montréal, Canada</b>. The conference will be followed by a 2-day hackfest on Wednesday and Thursday <b>9-10 October 2024</b>.
+  </p>
+
+<!--
+  <p>
+  Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> and
+  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2019">GStreamer Conference 2019 videos</a>
+  </p>
+  <p>
+  Slides for some of the talks and the lightning talks can be found in the
+  <a href="&site;/data/events/gstreamer-conference/2019/">GStreamer Conference 2019 slides</a>
+  folder.
+  </p>
+-->
+
+<!--
+  <h2>Schedule</h2>
+  <p>
+  <a href="https://indico.freedesktop.org/event/5/timetable/?layout=room#all.detailed">Click here for the conference schedule</a>.
+  </p>
+
+  <h2>Live Streams</h2>
+  <p>
+  <ul>
+  <li><a href="https://gstconf.ubicast.tv/lives/room-1/">Room 1</a></li>
+  <li><a href="https://gstconf.ubicast.tv/lives/room-2/">Room 2</a></li>
+  </ul>
+  </p>
+-->
+  <h2>Details</h2>
+  <p>
+  The GStreamer Conference is a conference for developers, community members,
+  decision-makers, industry partners, researchers, students and anyone else
+  interested in the GStreamer multimedia framework or Open Source and
+  cross-platform multimedia.
+  </p>
+
+  <h2>Who should attend?</h2>
+  <p>
+    Anyone interested in open source cross-platform multimedia is encouraged
+    to join us at the GStreamer Conference 2024!
+  </p>
+  <p>
+    Whether you are a hobbyist, app developer, researcher or student interested
+    in the field of multimedia, or working for a company that is using or looking
+    to use GStreamer in their products, this is the perfect event for you to network
+    at and to learn more about the latest technological developments and project news,
+    and to meet developers as well as the wider community.
+  </p>
+
+
+  <h2>Registration</h2>
+  
+  <p>Registration will be opening soon, stay tuned!</p>
+
+  <!--
+  <p>
+  There will be separate registration options for both professionals and for students and hobbyists:
+  </p>
+  <p>
+    <div style="margin-left:5%">
+    <table width="80%" cellpadding="5">
+      <tr><td><b>Professional (Early Bird)</b></td><td><b>250 EUR</b> (ca. 280 USD)</td></tr>
+      <tr><td><b>Professional (Regular)</b></td><td><b>350 EUR</b> (ca. 390 USD)</td></tr>
+      <tr><td><b>Professional (Supporter)</b></td><td><b>500 EUR</b> (ca. 555 USD)</td></tr>
+      <tr><td><b>Speakers (for non-lightning talks)</b></td><td><b>Free</b></td></tr>
+      <tr><td><b>Student/Hobbyist</b></td><td><b>Free or voluntary donation</b></td></tr>
+    </table>
+    </div>
+  </p>
+  <p>
+    All tickets include lunch at the venue on both conference days
+    as well as access to the social event on Monday evening.
+  </p>
+  <p>
+    For those uncertain about whether to register as a professional or hobbyist,
+    the general rule is that if your company pays for you or sponsors you, you
+    are a professional, and if you personally pay you are a student or hobbyist.
+    If in doubt drop us a mail or just register as hobbyist. The important
+    thing is that you'll make it to the conference!
+  </p>
+
+  <p>
+  <b><a href="https://gstreamer2023.serglo.es/">Sign up for the GStreamer Conference 2023 here</a></b>
+  </p>
+
+  <h2>Schedule and speakers list</h2>
+  <p>
+    <a href="schedule.html">Click here for the conference schedule</a>.
+  </p>
+-->
+
+  <h2>Showcase or Lightning Talks</h2>
+  <p>
+    There will again be opportunities for short lightning talks for those who
+    do not wish to present a full talk, but just want to showcase something
+    they're working on, or present a problem or challenge they are facing or
+    have solved, and that they think might be interesting for others to hear
+    about.
+  </p>
+  <!--
+  <p>
+    Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
+  </p>
+  <p>
+    Please submit all lightning talks through the <a href="https://indico.freedesktop.org/event/5/">GStreamer Conference 2023 Talk Submission Portal</a>.
+  </p>
+  <p>
+    You can log in using your existing freedesktop.org GitLab account if you have one or register a new account with the system.
+  </p>
+  <p>
+    There is no deadline for Lightning Talk submissions, slots will be
+    allocated on a first-come first-serve basis.
+  </p>
+-->
+  <h2>Call for Papers</h2>
+
+  <p>Call for Proposals will be opening soon, stay tuned!</p>
+  
+<!--
+  <p><b>
+  The call for papers is now open for talk proposals and lightning talks.
+  Please submit your talk now!
+  </b></p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk
+  (please allow at least 5 minutes for questions at the end as well).
+  </p>
+  <p>
+  You will still be able to edit and refine your talk proposal after the
+  initial submission, so no need to hold off until the last minute to get
+  it perfect.
+  </p>
+  <p>
+  <b>The talk submission deadline is 20 August 2023!</b>
+  </p>
+-->
+<!--
+  <p>
+  <b>The talk submission deadline has been extended and is 30 September 2019 for second round slots!</b>
+  </p>
+-->
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+<!--
+  <p>
+  Talk slots will have one of the following durations: 20 minutes, 30 minutes,
+  or 45 minutes, including questions. If you need more time than that we might
+  be able to accommodate that as well, please get in touch to discuss details.
+  </p>
+-->
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+<!--
+  <p>
+  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/5/">GStreamer Conference 2023 Paper Submission Portal</a>.
+  </p>
+  <p>
+  You can log in using your existing freedesktop.org GitLab account if you have one or register a new account with the system.
+  </p>
+  <p>
+  The call for papers is now closed.
+  </p>
+  <p>
+  Anyone who has submitted a talk proposal should receive an e-mail letting
+  them know whether their proposal has been accepted in the coming days.
+  Thank you to everyone who submitted a proposal.
+  </p>
+  <p>
+  Lightning talks may still be proposed, see below for more details.
+  </p>
+-->
+
+<!--
+  <h2>Social Events</h2>
+
+-->
+  <h2>GStreamer hackfest</h2>
+  <p>
+    There will be a hackfest just after the conference, on Wednesday and Thursday
+    9-10 October 2024.
+  </p>
+  <p>
+    <b>New this year</b>: The GStreamer Conference and Hackfest will be co-located with <a href="https://indico.freedesktop.org/event/6/">XDC 2024</a>, in the same location as the conference Concordia University Conference Centre.
+  </p>
+
+  <h2>Sponsorship Opportunities</h2>
+  <p>
+  The GStreamer Conference 2024 is only possible thanks to the generous
+  financial support from our sponsors.
+  </p>
+  <!--
+  <p>
+  For this year's sponsorship opportunities please refer to
+  the <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">sponsor brief (PDF)</a>
+  or <a href="mailto:sponsors@gstreamer-foundation.org">get in touch</a>.
+  </p>
+  <p>
+  Sponsorship proceeds are not only used to put on the conference and hackfests, but also support our extensive CI infrastructure.
+  </p>
+-->
+  <h2>City</h2>
+  <p>
+  This year's conference will take place in
+  <a href="https://en.wikipedia.org/wiki/Montréal">Montréal</a>, Québec, Canada.
+  </p>
+
+<!--
+  <p>
+  <i>Getting there</i>
+  </p>
+  <p>
+  <b>By air to Montréal-Trudeau International Airport</b>
+  </p>
+-->
+  <h2>Venue</h2>
+  <p>
+  The conference will take place at: <br/>
+  <a href="https://www.concordia.ca/hospitality/hospitality-venues/concordia-conference-centre.html">Concordia University Conference Centre</a><br/>
+  John Molson School of Business<br/>
+  450 rue Guy<br/>
+  Montréal, Québec<br/>
+  Canada, H3H 0A1<br/>
+  </p>
+  <p>
+    <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-73.58084142208101%2C45.494273703073645%2C-73.57730090618135%2C45.49592259358127&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/45.49510/-73.57907">View Larger Map</a></small>
+  </p>
+
+<!--
+  <p>
+  The conference will be placed in the 2nd floor of the building, in the
+  Barlovento area. Our layout will consist in three areas: One big hall of 170
+  m<sup>2</sup>, another hall of 120 m<sup>2</sup> and one hacking area of 60
+  m<sup>2</sup>.<br/><a href="acoruna-barlovento-area.jpg"><img
+  src="acoruna-barlovento-area.jpg" alt="Palexco Barlovento one hall"
+  height="300"/></a> <a href="acoruna-barlovento-map.jpg"><img
+  src="acoruna-barlovento-map.jpg" alt="Palexco Barlovento map"
+  height="300"/></a>
+  </p>
+
+  <h2>Hotels</h2>
+  <p>
+  There is no official conference hotel, but this is list of possible hotels,
+  for your convenience, near to the venue:
+  <ul>
+    <li><a href="https://www.eurostarshotels.co.uk/eurostars-atlantico.html">Hotel Atlántico</a> (Budget. 2 min walking)</li>
+    <li><a href="https://www.hilton.com/en/hotels/lcgacdi-doubletree-a-coruna/">Hotel Double Tree by Hilton</a> (First class. 8 min walking)</li>
+    <li><a href="https://www.nh-hotels.com/hotel/nh-collection-a-coruna-finisterre">Hotel Finisterre</a> (First class. 10 min walking)</li>
+    <li><a href="https://www.melia.com/en/hotels/spain/a-coruna/melia-maria-pita/index.htm">Hotel Meliá María Pita</a> (Budget. 12 min walking)</li>
+    <li><a href="https://www.riazorhotel.com/en/">Hotel Riazor</a> (Budget. 12 min walking)</li>
+  </ul>
+  </p>
+
+  <h2>Invitation Letter</h2>
+  <p>
+  If you need an invitation letter for visa application purposes, please
+  <a href="mailto:conference-invitations@gstreamer-foundation.org">get in touch</a>.
+  </p>
+
+  <h2>Notes</h2>
+  <p>
+  <ul>
+    <li><strong>Usual timetables</strong>. Lunch time: 13:00 - 15:30. Dinner
+    time: 20:30 - 22:30. Note that you won't be able to find a restaurant open
+    for lunch at 12:00 or for dinner at 18:00, neither at 19:00; thus you might
+    want to start your day a bit "later" than usual. Main reason behind this is
+    that A Coruña is in the same timezone as central Europe, and <a
+    href="https://www.timeanddate.com/sun/spain/la-coruna">sunrise and sunset
+    times</a> are somehow shifted with regard to common standards in other parts
+    of the world.</li>
+    <li><strong>Language</strong>. The official languages in A Coruña are
+    Galician and Spanish. Not everybody is able to understand or speak English
+    (in the bus, taxi, hotel, etc). The GStreamer Conference is run in
+    English.</li>
+    <li><strong>Climate</strong>. A Coruña has a climate heavily moderated by
+    the Atlantic Ocean. Average temperatures are around 10ºC (51ºF) in winter
+    and 19ºC (66ºF) during summer. (See more info at <a
+    href="https://en.wikipedia.org/wiki/A_Coru%C3%B1a#Climate">Wikipedia</a>).</li>
+    <li><strong>Tourism</strong>. <a
+    href="http://www.turismocoruna.com/">Tourism A Coruña website</a>.</li>
+  </ul>
+  </p>
+-->
+
+  <h2>Code of Conduct and Anti-Harrassment Policy</h2>
+  <h3>Policy</h3>
+  <p>
+  The GStreamer project and the conference organisers are dedicated to
+  providing a harassment-free conference experience for everyone.
+  We do not tolerate harassment of conference participants in any form.
+  </p>
+  <p>
+  Harassment includes, but is not limited to, offensive verbal comments,
+  sexual images in public spaces, deliberate intimidation, stalking, following,
+  harassing photography or recording, sustained disruption of talks or other
+  events, inappropriate physical contact, and unwelcome sexual attention.
+  Participants asked to stop any harassing behaviour are expected to comply
+  immediately. We expect participants to follow these rules at all conference
+  venues, hackfest venues, and conference-related social events.
+  </p>
+  <p>
+  If a participant engages in harassing behaviour, the conference organisers
+  and/or their delegates may take any action they deem appropriate, including
+  warning the offender or expulsion from the conference. If you are being
+  harassed, notice that someone else is being harassed, or have any other
+  concerns, please contact a conference organiser or member of the
+  code of conduct committee below immediately.
+  </p>
+  <h3>Reporting Breaches</h3>
+  <p>
+  Breaches of the code of conduct should be reported either by e-mail via
+  <a href="mailto:code-of-conduct@gstreamer.org">code-of-conduct@gstreamer.org</a>,
+  or by contacting one of the following people:
+  <ul>
+  <li>Mark Filion (mfilion)</li>
+  <li>Olivier Crête (ocrete)</li>
+  <li>Alicia Boya García (alicia)</li>
+  <li>Andoni Morales Alastruey (ylatuya)</li>
+  <li>Nirbheek Chauhan (nirbheek)</li>
+  <li>Tim Müller (__tim)</li>
+  <li>Xabier Rodriguez Calvar (calvaris)</li>
+  </ul>
+  </p>
+  <p>
+  See <a href="https://www.x.org/wiki/XorgFoundation/Policies/HarassmentDetails/">here</a>
+  for implementation details and guidelines.
+  </p>
+  <p>
+  This anti-harassment policy is based on the
+  <a href="https://indico.freedesktop.org/event/4/page/26-code-of-conduct">XDC 2024 code of conduct</a>
+  which in turn is based on the example policy from the
+  <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">Geek Feminism wiki</a>,
+  created by the <a href="http://adainitiative.org/">Ada Initiative</a> and other volunteers.
+  </p>
+
+  <h2>GStreamer Conference Contact</h2>
+  <p>
+  If you have any questions about the GStreamer Conference <!-- or are considering
+  <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">becoming a sponsor</a> -->
+  please <a href="mailto:conference@gstreamer-foundation.org">get in touch</a>.
+  </p>
+
+  <h2>Conference News and Updates</h2>
+  <p>
+    <i>2024-May-08</i>: Initial announcement.
+  </p>
+
+  <h1>Past GStreamer Conferences</h1>
+  <ul>
+    <li><a href="../2023/index.html">25-26 September 2023 · Palexco Convention Centre · A Coruña, Spain</a></li>
+    <li><a href="../2019/index.html">31 October - 1 November 2019 · L'Embarcadère · Lyon, France</a></li>
+    <li><a href="../2018/index.html">25-26 October 2018 · Summerhall · Edinburgh, Scotland, UK</a></li>
+    <li><a href="../2017/index.html">21-22 October 2017 · Node5 · Prague, Czech Republic</a></li>
+    <li><a href="../2016/index.html">10-11 October 2016 · betahaus · Berlin, Germany</a></li>
+    <li><a href="../2015/index.html">8-9 October 2015 · The Convention Centre Dublin · Dublin, Ireland</a></li>
+    <li><a href="../2014/index.html">16-17 October 2014 · Congress Centre Düsseldorf · Düsseldorf, Germany</a></li>
+    <li><a href="../2013/index.html">22-23 October 2013 · Edinburgh International Conference Centre · Edinburgh, Scotland, UK</a></li>
+    <li><a href="../2012/index.html">27-28 August 2012 · Sheraton San Diego Hotel &amp; Marina · San Diego, USA</a></li>
+    <li><a href="../2011/index.html">24-25 October 2011 · Clarion Congress Hotel · Prague, Czech Republic</a></li>
+    <li><a href="../2010/index.html">26 October 2010 · University Arms Hotel · Cambridge, UK</a></li>
+  </ul>
+
+</td>
+<td valign="top" style="padding:0px 50px">
+  <!--
+  <h1>Sponsors</h1>
+  <h2>Platinum Sponsor</h2>
+  <p style="padding:20px 0px">
+    <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504_2023.png" alt="Collabora" height="160" /></a>
+  </p>
+  <p style="padding:20px 0px">
+    <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="90" /></a>
+  </p>
+  <p style="padding:20px 0px">
+    <a href="https://fluendo.com"><img src="sponsor_fluendo_1060x200.png" alt="Fluendo" height="70" /></a>
+  </p>
+  <p style="padding:20px 0px">
+    <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" height="88" /></a>
+  </p>
+  <br />
+
+  <h2>Gold Sponsors</h2>
+  <p style="padding:10px 0px">
+    <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" height="90" /></a>
+  </p>
+
+  <p style="padding:20px 0px">
+    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="65" /></a>
+  </p>
+  <br />
+
+  <h2>Silver Sponsors</h2>
+  <p style="padding:0px 0px; height: 170px">
+    <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
+  </p>
+
+  <p style="padding:0px 0px">
+    <a href="https://ridgerun.com"><img src="sponsor_ridgerun.png" alt="RidgeRun" height="130" /></a>
+  </p>
+
+  <p style="padding:20px 0px">
+    <a href="https://laerdal.com"><img src="sponsor_laerdal.png" alt="Laerdal Labs" height="130" /></a>
+  </p>
+
+  <p style="padding:0px 0px">
+    <a href="https://asymptotic.io"><img src="sponsor_asymptotic.png" alt="asymptotic" height="80" /></a>
+  </p>
+
+  <p style="padding:10px 0px">
+    <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
+  </p>
+  <br />
+  <h2>Special Media Partner</h2>
+  <p style="padding:10px 0px">
+    <a href="https://www.ubicast.eu/"><img src="sponsor_ubicast_1059x292.png" alt="UbiCast" height="75" /></a>
+  </p>
+  <br />
+  <h2>Press Partners</h2>
+  <p style="padding:10px 0px">
+    <a href="https://lwn.net"><img src="lwn-logo-gstconf2016.png" alt="LWN" height="99" width="300" /></a>
+  </p>
+
+  <p>
+    <small>
+    Interested in <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">becoming a sponsor</a> ?
+    </small>
+  </p>
+  -->
+</td>
+
+</tr>
+</table>
+
+</body>
+</page>

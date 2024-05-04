@@ -15101,4 +15101,61 @@ Release tarballs can be downloaded directly here:
         </content>
   </item>
 
+    <item>
+      <date>2024-05-06 18:00</date>
+        <title>GStreamer Conference 2024 announced to take place 7-10 October 2024 in Montréal, Canada</title>
+        <content>
+<p>
+The GStreamer project is thrilled to announce that this year's GStreamer
+Conference will take place on Monday-Tuesday 7-8 October 2024
+in Montréal, Québec, Canada, followed by a hackfest.
+</p>
+<p>
+You can find more details about the conference on the
+<a href="https://gstreamer.freedesktop.org/conference/2024/">GStreamer
+Conference 2024 web site</a>.
+</p>
+<p>
+A call for papers will be sent out in due course.
+</p>
+<p>
+Registration will open at a later time, in late June / early July.
+</p>
+<p>
+We will announce those and any further updates on the
+<a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>,
+the <a href="https://gstreamer.freedesktop.org/news/">website</a>,
+<a href="https://twitter.com/GStreamer">on Twitter</a>.
+and <a href="https://floss.social/@GStreamer">on Mastodon</a>.
+</p>
+<p>
+Talk slots will be available in varying durations from 20 minutes up to
+45 minutes. Whatever you're doing or planning to do with GStreamer,
+we'd like to hear from you!
+</p>
+<p>
+We also plan to have sessions with short lightning talks / demos /
+showcase talks for those who just want to show what they've been
+working on or do a mini-talk instead of a full-length talk. Lightning
+talk slots will be allocated on a first-come-first-serve basis, so make
+sure to reserve your slot if you plan on giving a lightning talk.
+</p>
+<!--
+<p>
+Our main social event will be on Monday evening, and there'll also be a welcome drinks/snacks get-together on Sunday evening.
+</p>
+-->
+<p>
+A GStreamer hackfest will take place right after the conference, on 9-10 October 2024.
+</p>
+<p>
+We hope to see you in Montréal!
+</p>
+<p>
+Please spread the word!
+</p>
+        </content>
+  </item>
+
+
 </news>
