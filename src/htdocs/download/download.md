@@ -3,13 +3,48 @@
 If you're on Linux or a BSD variant, you can install GStreamer using your
 package manager.
 
-For other platforms, specifically [Windows](#windows), [macOS](#macos),
-[Android](#android), and [iOS](#ios-and-tvos), we provide binary releases in
+For other platforms listed below, we provide binary releases in
 the form of official installers or tarballs maintained by the GStreamer
-project.
+project. 
 
-<a name="windows"></a>
-### Windows
+Choose your platform below for more information.
+
+<div class="dl-content">
+<div class="dl-tablist" role="tablist">
+  <button class="dl-tab dl-tab-r" id="tab-sources" aria-selected="true" aria-controls="panel-sources" role="tab">Sources</button>
+  <button class="dl-tab dl-tab-g" id="tab-windows" aria-selected="false" aria-controls="panel-windows" role="tab">Windows</button>
+  <button class="dl-tab dl-tab-g" id="tab-macos" aria-selected="false" aria-controls="panel-macos" role="tab">macOS</button>
+  <button class="dl-tab dl-tab-g" id="tab-linux" aria-selected="false" aria-controls="panel-linux" role="tab">Linux</button>
+  <button class="dl-tab dl-tab-b" id="tab-android" aria-selected="false" aria-controls="panel-android" role="tab">Android</button>
+  <button class="dl-tab dl-tab-b" id="tab-ios" aria-selected="false" aria-controls="panel-ios" role="tab">iOS</button>
+</div>
+
+<!-- SOURCES -->
+<div class="dl-panel" id="panel-sources" role="tabpanel" tabindex="0" aria-labelledby="tab-sources">
+<!-- 
+  Please note the empty line between the <div> and its content.
+  This is needed for Markdown to be parsed inside HTML blocks. 
+-->
+
+For building the aforementioned binary releases, you need to use the [Cerbero
+build aggregator](https://gitlab.freedesktop.org/gstreamer/cerbero/#description)
+maintained by the GStreamer project which supports Linux, macOS, and Windows.
+
+For downloading each GStreamer module individually, check our [modules
+page](/modules/), or go straight to our [source download directory](/src/).
+
+Generally, you should not need to build from source yourself unless you need
+features that are only available in a newer version of GStreamer than is
+provided by your distribution or in the last stable release.
+
+For doing GStreamer development, we recommend using the [GStreamer monorepo
+build from Git](https://gitlab.freedesktop.org/gstreamer/gstreamer/#getting-started)
+which will build all the main GStreamer modules in one go using [Meson's subproject
+feature](https://mesonbuild.com/Subprojects.html).
+</div>
+
+<!-- WINDOWS -->
+<div class="dl-panel" id="panel-windows" role="tabpanel" tabindex="0" aria-labelledby="tab-windows" hidden="">
 
 Binary releases in the form of MSI installers are available. The installers are
 split into runtime and development packages. For development, you will want to
@@ -47,7 +82,6 @@ for what this means for your application.
 
 [Older 1.x binary releases](/data/pkg/windows) are also available.
 
-<a name="uwp"></a>
 #### Universal Windows Platform
 
 Binary releases built to target the Universal Windows Platform (UWP). Used for
@@ -81,82 +115,22 @@ the same C ABI. Using the same [CRT (C Runtime)](https://docs.microsoft.com/en-u
 is better, but it's not always a requirement. Here's the matrix outlining the
 CRT used for each GStreamer version:
 
-<table style='border-collapse: collapse;'>
- <tr style='background-color: #f2f2f2;'>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>GStreamer version</th>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>MinGW</th>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>MSVC</th>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.18+</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>ucrtbase.dll</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>ucrtbase.dll</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.16</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>msvcrt.dll</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>ucrtbase.dll</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.14</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>msvcrt.dll</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>N/A</td>
- </tr>
-</table>
+| GStreamer version | MinGW        | MSVC         |
+| ----------------- | ------------ | ------------ |
+| 1.18+             | ucrtbase.dll | ucrtbase.dll |
+| 1.16              | msvcrt.dll   | ucrtbase.dll |
+| 1.14              | msvcrt.dll   | N/A          |
 
 This is the toolchain compatibility matrix with the stable releases:
 
-<table style='border-collapse: collapse;'>
- <tr style='background-color: #f2f2f2;'>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>App Toolchain</th>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.16 MinGW</th>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.16 MSVC</th>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.18+ MinGW</th>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>1.18+ MSVC</th>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>Visual Studio 2015 and newer (ucrtbase.dll)</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>Visual Studio 2013 and older (msvcrt.dll)</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="http://mingw.org">MinGW</a> (msvcrt.dll)</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="https://mingw-w64.org">MinGW-w64</a> (msvcrt.dll)</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="https://www.msys2.org">MSYS2 MinGW-w64</a> (msvcrt.dll)</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>FULL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>PARTIAL</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'><a href="http://cygwin.com">Cygwin</a></td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>NONE</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>NONE</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>NONE</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>NONE</td>
- </tr>
-</table>
+| App Toolchain                                         | 1.16 MinGW | 1.16 MSVC | 1.18+ MinGW | 1.18+ MSVC |
+| ----------------------------------------------------- | ---------- | --------- | ----------- | ---------- |
+| Visual Studio 2015 and newer (ucrtbase.dll)           | PARTIAL    | FULL      | FULL        | FULL       |
+| Visual Studio 2013 and older (msvcrt.dll)             | PARTIAL    | PARTIAL   | PARTIAL     | PARTIAL    |
+| [MinGW](http://mingw.org) (msvcrt.dll)                | FULL       | PARTIAL   | PARTIAL     | PARTIAL    |
+| [MinGW-w64](https://mingw-w64.org) (msvcrt.dll)       | FULL       | PARTIAL   | PARTIAL     | PARTIAL    |
+| [MSYS2 MinGW-w64](https://www.msys2.org) (msvcrt.dll) | FULL       | PARTIAL   | PARTIAL     | PARTIAL    |
+| [Cygwin](http://cygwin.com)                           | NONE       | NONE      | NONE        | NONE       |
 
 **FULL** means full C compatibility, including debugging symbols.
 
@@ -164,9 +138,10 @@ This is the toolchain compatibility matrix with the stable releases:
 [passing memory across CRT boundaries](https://docs.microsoft.com/en-us/cpp/c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries).
 
 **NONE** means fully unsupported, and *will* lead to crashes.
+</div>
 
-<a name="macos"></a>
-### macOS
+<!-- MACOS -->
+<div class="dl-panel" id="panel-macos" role="tabpanel" tabindex="0" aria-labelledby="tab-macos" hidden="">
 
 Binary releases in the form of `.pkg` framework installers are available. The
 installers are split into runtime and development packages. For development,
@@ -176,9 +151,9 @@ you will want to install _both_ packages. The target SDK version for 1.20 and
 * **macOS Universal (X86_64 &amp; ARM64) 1.24 release (current stable version)**
   - **[1.24.3 runtime installer](/data/pkg/osx/1.24.3/gstreamer-1.0-1.24.3-universal.pkg)**
   - **[1.24.3 development installer](/data/pkg/osx/1.24.3/gstreamer-1.0-devel-1.24.3-universal.pkg)**
-* **macOS Universal (X86_64 &amp; ARM64) 1.22 release (old stable version)**
-  - **[1.22.12 runtime installer](/data/pkg/osx/1.22.12/gstreamer-1.0-1.22.12-universal.pkg)**
-  - **[1.22.12 development installer](/data/pkg/osx/1.22.12/gstreamer-1.0-devel-1.22.12-universal.pkg)**
+* macOS Universal (X86_64 &amp; ARM64) 1.22 release (old stable version)
+  - [1.22.12 runtime installer](/data/pkg/osx/1.22.12/gstreamer-1.0-1.22.12-universal.pkg)
+  - [1.22.12 development installer](/data/pkg/osx/1.22.12/gstreamer-1.0-devel-1.22.12-universal.pkg)
 
 GStreamer is also available on [Homebrew](https://brew.sh/), and you should be
 able to use that. However, please note that some plugins are not shipped by
@@ -186,9 +161,22 @@ Homebrew, and you should avoid mixing Homebrew and the official installers on
 the same system.
 
 [Older 1.x binary releases](/data/pkg/osx) are also available.
+</div>
 
-<a name="android"></a>
-### Android
+<!-- LINUX -->
+<div class="dl-panel" id="panel-linux" role="tabpanel" tabindex="0" aria-labelledby="tab-linux" hidden="">
+
+All Linux distributions and many BSD variants provide packages of GStreamer.
+You will find these in your distribution's package repository.
+
+Note that some distributions split the GStreamer plugins up further than the
+upstream sources. Additionally, some distributions do not include some plugins
+from the gst-plugins-bad package, or omit the gst-plugins-ugly and gst-libav
+packages entirely in their main repository for legal reasons.
+</div>
+
+<!-- ANDROID -->
+<div class="dl-panel" id="panel-android" role="tabpanel" tabindex="0" aria-labelledby="tab-android" hidden="">
 
 Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
@@ -198,67 +186,28 @@ tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
 The Android NDKs used by our stable releases are:
 
-<table style='border-collapse: collapse;'>
- <tr style='background-color: #f2f2f2;'>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>GStreamer version</th>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>NDK Version</th>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.24.x</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>r25c</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.22.x</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>r21</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.20.x</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>r21</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.18.x</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>r21</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>1.16.x</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>r18b</td>
- </tr>
-</table>
+| GStreamer version | NDK Version |
+| ----------------- | ----------- |
+| 1.24.x            | r25c        |
+| 1.22.x            | r21         |
+| 1.20.x            | r21         |
+| 1.18.x            | r21         |
+| 1.16.x            | r18b        |
 
 The Android APIs targeted by our stable release(s) are:
 
-<table style='border-collapse: collapse;'>
- <tr style='background-color: #f2f2f2;'>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>Architecture</th>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>API Targeted<br/><small>GStreamer &lt;= 1.20</small></th>
-  <th style='border-width: 1px 1px 2px 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px; font-weight: 400;'>API Targeted<br/><small>GStreamer &gt;= 1.22</small></th>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>armv7</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v16 (Jelly Bean)</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>x86</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v16 (Jelly Bean)</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>arm64</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
- </tr>
- <tr>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>x86_64</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
-  <td style='border-width: 1px; border-color: #ccc; border-style: solid; padding: 10px 16px 10px 16px;'>v21 (Lollipop)</td>
- </tr>
-</table>
+| Architecture | API Targeted<br/><small>(GStreamer <= 1.20)</small> | API Targeted<br/><small>(GStreamer >= 1.22)</small> |
+| ------------ | -------------------------------------------------- | -------------------------------------------------- |
+| armv7        | v16 (Jelly Bean)                                   | v21 (Lollipop)                                    |
+| x86          | v16 (Jelly Bean)                                   | v21 (Lollipop)                                    |
+| arm64        | v21 (Lollipop)                                     | v21 (Lollipop)                                    |
+| x86_64       | v21 (Lollipop)                                     | v21 (Lollipop)                                    |
 
 [Older 1.x binary releases](/data/pkg/android) are also available.
+</div>
 
-<a name="ios-and-tvos"></a>
-### iOS
+<!-- iOS -->
+<div class="dl-panel" id="panel-ios" role="tabpanel" tabindex="0" aria-labelledby="tab-ios" hidden="">
 
 Binary releases that integrate into XCode are available in the form of a single
 "universal" package with fat library frameworks. Bitcode support is built-in
@@ -269,33 +218,4 @@ and the target SDK version for 1.16.x was iOS 9.0, for 1.18.x, 1.20.x and
 * iOS Universal [1.22.12 framework](/data/pkg/ios/1.22.12/gstreamer-1.0-devel-1.22.12-ios-universal.pkg) (ARM64, X86_64) (old stable version)
 
 [Older 1.x binary releases](/data/pkg/ios) are also available.
-
-<a name="linux-and-bsds"></a>
-### Linux and BSDs
-
-All Linux distributions and many BSD variants provide packages of GStreamer.
-You will find these in your distribution's package repository.
-
-Note that some distributions split the GStreamer plugins up further than the
-upstream sources. Additionally, some distributions do not include some plugins
-from the gst-plugins-bad package, or omit the gst-plugins-ugly and gst-libav
-packages entirely in their main repository for legal reasons.
-
-<a name="sources"></a>
-### Sources
-
-For building the aforementioned binary releases, you need to use the [Cerbero
-build aggregator](https://gitlab.freedesktop.org/gstreamer/cerbero/#description)
-maintained by the GStreamer project which supports Linux, macOS, and Windows.
-
-For downloading each GStreamer module individually, check our [modules
-page](/modules/), or go straight to our [source download directory](/src/).
-
-Generally, you should not need to build from source yourself unless you need
-features that are only available in a newer version of GStreamer than is
-provided by your distribution or in the last stable release.
-
-For doing GStreamer development, we recommend using the [GStreamer monorepo
-build from Git](https://gitlab.freedesktop.org/gstreamer/gstreamer/#getting-started)
-which will build all the main GStreamer modules in one go using [Meson's subproject
-feature](https://mesonbuild.com/Subprojects.html).
+</div></div>

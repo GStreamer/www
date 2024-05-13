@@ -7,15 +7,21 @@
     "http://www.w3.org/2003/entities/2007/w3centities-f.ent">
   %w3centities-f;
   <!ENTITY download SYSTEM "download.html">
+  <!ENTITY tabs-js SYSTEM "tabs.js">
 ]>
 
 <?xml-stylesheet href="../page.xsl" type="text/xsl"?>
 <page>
 <title>Download GStreamer</title>
-
 <body>
 
+<div class="markdown">
 &download;
+</div>
+
+<script type="text/javascript">
+&tabs-js;
+</script>
 
 </body>
 </page>

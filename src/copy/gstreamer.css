@@ -17,8 +17,7 @@ h1 { font-size:1.6em; }
 h2 { font-size: 1.2em; }
 h3 { font-size: 1em; }
 
-a:link { color: #0000FF; text-decoration: none; }
-a:visited { color: #6666CC; text-decoration: none; }
+a:link, a:visited { color: #0000FF; text-decoration: none; }
 a:hover { color: #FF3333; text-decoration: underline; }
 
 td.gstnavside-r:hover { border-left-color: #FFAAAA; }
@@ -141,4 +140,109 @@ a.gstnavside-b:hover {
 
 .markdown .vertical-table thead {
   display: none;
+}
+
+/* Download page - tabs */
+.dl-content {
+  width: 100%;
+  margin-top: 20px;
+  /* More or less how much the Windows section needs.
+   * Prevents the tabs from jumping around when changing sections in a narrow window. */
+  min-width: 575px;
+}
+
+.dl-tablist {
+  width: 100%;
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.dl-tab {
+  position: relative;
+  background: rgb(239, 239, 239);
+  border: 1px solid rgb(180, 180, 180);
+  color: #000;
+  padding: 1.3em 0.5em;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: all 0.15s linear;
+  flex: 1;
+}
+
+.dl-tab::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.15s linear;
+  border-bottom: 3px solid lightgray;
+}
+
+.dl-tab:focus-visible::after, .dl-tab:hover::after {
+  border-bottom-width: 3px;
+}
+
+.dl-tab[aria-selected="true"]::after {
+  border-bottom-width: 3px;
+}
+
+.dl-tab:first-child {
+  border-top-left-radius: 5px;
+}
+
+.dl-tab:last-child {
+  border-top-right-radius: 5px;
+}
+
+/* Prevents double borders between tabs */
+.dl-tab + .dl-tab {
+  margin-left: -1px;
+}
+
+.dl-tab:hover, .dl-tab:focus-visible {
+  cursor: pointer;
+  background: rgb(233, 233, 233);
+}
+
+.dl-tab:active {
+  background: rgb(225, 225, 225);
+}
+
+.dl-tab-r:hover::after, .dl-tab-r:focus-visible::after {
+  border-bottom-color: #CCAAAA;
+}
+
+.dl-tab-r[aria-selected="true"]::after {
+  border-bottom-color: #b14c4c;
+}
+
+.dl-tab-g:hover::after, .dl-tab-g:focus-visible::after {
+  border-bottom-color: #AACCAA;
+}
+
+.dl-tab-g[aria-selected="true"]::after {
+  border-bottom-color: #389738;
+}
+
+.dl-tab-b:hover::after, .dl-tab-b:focus-visible::after {
+  border-bottom-color: #AAAACC;
+}
+
+.dl-tab-b[aria-selected="true"]::after {
+  border-bottom-color: rgb(86, 86, 226);
+}
+
+.dl-panel {
+  padding: 5px 20px;
+  border: 1px solid lightgray;
+  border-top: 0px;
+  border-radius: 0 0px 5px 5px;
+}
+
+/* Make sure the dl page contents don't jump around
+ * because of scrollbar (dis)appearing when switching tabs. */
+body:has(.dl-panel) {
+  overflow-y: scroll;
 }
