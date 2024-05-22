@@ -241,8 +241,12 @@ a.gstnavside-b:hover {
   border-radius: 0 0px 5px 5px;
 }
 
+.dl-panel a {
+  vertical-align: text-top;
+}
+
 /* Make sure the dl page contents don't jump around
  * because of scrollbar (dis)appearing when switching tabs. */
 body:has(.dl-panel) {
-  overflow-y: scroll;
+  overflow-y: scroll; 
 }

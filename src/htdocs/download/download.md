@@ -155,10 +155,12 @@ you will want to install _both_ packages. The target SDK version for 1.20 and
   - [1.22.12 runtime installer](/data/pkg/osx/1.22.12/gstreamer-1.0-1.22.12-universal.pkg)
   - [1.22.12 development installer](/data/pkg/osx/1.22.12/gstreamer-1.0-devel-1.22.12-universal.pkg)
 
-GStreamer is also available on [Homebrew](https://brew.sh/), and you should be
+GStreamer is also available as a 
+[![Homebrew package](https://repology.org/badge/version-for-repo/homebrew/gstreamer.svg)](https://formulae.brew.sh/formula/gstreamer), and you should be
 able to use that. However, please note that some plugins are not shipped by
 Homebrew, and you should avoid mixing Homebrew and the official installers on
 the same system.
+
 
 [Older 1.x binary releases](/data/pkg/osx) are also available.
 </div>
@@ -169,10 +171,18 @@ the same system.
 All Linux distributions and many BSD variants provide packages of GStreamer.
 You will find these in your distribution's package repository.
 
+[![Arch package](https://repology.org/badge/version-for-repo/arch/gstreamer.svg?header=Arch)](https://repology.org/project/gstreamer/versions)
+[![Debian 13 package](https://repology.org/badge/version-for-repo/debian_13/gstreamer.svg?header=Debian)](https://repology.org/project/gstreamer/versions)
+[![Fedora 40 package](https://repology.org/badge/version-for-repo/fedora_40/gstreamer.svg?header=Fedora)](https://repology.org/project/gstreamer/versions)
+[![Manjaro Stable package](https://repology.org/badge/version-for-repo/manjaro_stable/gstreamer.svg?header=Manjaro)](https://repology.org/project/gstreamer/versions)
+[![openSUSE Leap 15.6 package](https://repology.org/badge/version-for-repo/opensuse_leap_15_6/gstreamer.svg?header=openSUSE)](https://repology.org/project/gstreamer/versions)
+[![Ubuntu 24.04 package](https://repology.org/badge/version-for-repo/ubuntu_24_04/gstreamer.svg?header=Ubuntu)](https://repology.org/project/gstreamer/versions)
+
 Note that some distributions split the GStreamer plugins up further than the
 upstream sources. Additionally, some distributions do not include some plugins
 from the gst-plugins-bad package, or omit the gst-plugins-ugly and gst-libav
 packages entirely in their main repository for legal reasons.
+
 </div>
 
 <!-- ANDROID -->
