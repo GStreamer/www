@@ -4,7 +4,34 @@
 window.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll('[role="tab"]');
   tabs.forEach((tab) => tab.addEventListener("click", changeTab));
+
+  // Catch URLs pointing to a specific tab
+  handleHashUrl();
+  window.addEventListener('hashchange', handleHashUrl);
 });
+
+function figureOutDefaultTab() {
+  const userAgent = navigator.userAgent;
+
+  // Android UA also has "Linux" in it, so check for Android first
+  if (userAgent.includes("Android")) return "#android";
+  if (userAgent.includes("iPhone") || userAgent.includes("iPad")) return "#ios";
+
+  if (userAgent.includes("Windows")) return "#windows";
+  if (userAgent.includes("Mac")) return "#macos";
+  if (userAgent.includes("Linux")) return "#linux";
+
+  return "#sources";
+}
+
+function handleHashUrl() {
+  let hash = window.location.hash;
+  if (!hash) hash = figureOutDefaultTab();
+
+  const tabName = hash.replace("#", "tab-");
+  const tab = document.querySelector(`[id="${tabName}"]`);
+  if (tab) tab.click();
+}
 
 function changeTab(event) {
   const newTab = event.target;
@@ -24,4 +51,9 @@ function changeTab(event) {
   grandparent.parentNode
     .querySelector(`#${newTab.getAttribute("aria-controls")}`)
     .removeAttribute("hidden");
+
+  const newHash = newTab.getAttribute("id").replace("tab-", "#");
+  if (window.location.hash !== newHash) {
+    window.location.hash = newHash;
+  }
 }
