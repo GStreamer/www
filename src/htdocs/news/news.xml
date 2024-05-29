@@ -15157,5 +15157,48 @@ Please spread the word!
         </content>
   </item>
 
+  <item>
+      <date>2024-05-29 14:00</date>
+        <title>GStreamer 1.24.4 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.24 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and security fixes and it should be safe
+to update from 1.24.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>audioconvert: support more than 64 audio channels</li>
+    <li>avvidec: fix dropped frames when doing multi-threaded decoding of I-frame codecs such as DV Video</li>
+    <li>mpegtsmux: Correctly time out in live pipelines, esp. for sparse streams like KLV and DVB subtitles</li>
+    <li>vtdec deadlock fixes on shutdown and format/resolution changes (as might happen with e.g. HLS/DASH)</li>
+    <li>fmp4mux, isomp4mux: Add support for adding AV1 header OBUs into the MP4 headers, and add language from tags</li>
+    <li>gtk4paintablesink improvements: fullscreen mode and gst-play-1.0 support</li>
+    <li>webrtcsink: add support for insecure TLS and imrpove error handling and VP9 handling</li>
+    <li>vah264enc, vah265enc: timestamp handling fixes; generate IDR frames on force-keyunit-requests, not I frames</li>
+    <li>v4l2codecs: decoder: Reorder caps to prefer `DMA_DRM` ones, fixes issues with playbin3</li>
+    <li>Visualizer plugins fixes</li>
+    <li>Avoid using private APIs on iOS</li>
+    <li>various bug fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.24/#1.24.4">GStreamer 1.24.4 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
 
 </news>
