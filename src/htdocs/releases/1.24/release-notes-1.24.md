@@ -2175,7 +2175,7 @@ from 1.24.x.
  - vtdec deadlock fixes on shutdown and format/resolution changes (as might happen with e.g. HLS/DASH)
  - fmp4mux, isomp4mux: Add support for adding AV1 header OBUs into the MP4 headers, and add language from tags
  - gtk4paintablesink improvements: fullscreen mode and gst-play-1.0 support
- - webrtcsink: add support for insecure TLS and imrpove error handling and VP9 handling
+ - webrtcsink: add support for insecure TLS and improve error handling and VP9 handling
  - v4l2codecs: decoder: Reorder caps to prefer `DMA_DRM` ones, fixes issues with playbin3
  - vah264enc, vah265enc: timestamp handling fixes; generate IDR frames on force-keyunit-requests, not I frames 
  - Visualizer plugins fixes
