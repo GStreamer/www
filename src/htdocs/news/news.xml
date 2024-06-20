@@ -15201,4 +15201,49 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+  <item>
+      <date>2024-06-20 14:00</date>
+        <title>GStreamer 1.24.5 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.24 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and security fixes and it should be safe
+to update from 1.24.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>webrtcsink: Support for AV1 via nvav1enc, av1enc or rav1enc encoders</li>
+    <li>AV1 RTP payloader/depayloader fixes to work correctly with Chrome and Pion WebRTC</li>
+    <li>av1parse, av1dec error handling/robustness improvements</li>
+    <li>av1enc: Handle force-keyunit events properly for WebRTC</li>
+    <li>decodebin3: selection and collection handling improvements</li>
+    <li>hlsdemux2: Various fixes for discontinuities, variant switching, playlist updates</li>
+    <li>qml6glsink: fix RGB format support</li>
+    <li>rtspsrc: more control URL handling fixes</li>
+    <li>v4l2src: Interpret V4L2 report of sync loss as video signal loss</li>
+    <li>d3d12 encoder, memory and videosink fixes</li>
+    <li>vtdec: more robust error handling, fix regression</li>
+    <li>ndi: support for NDI SDK v6</li>
+    <li>Various bug fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.24/#1.24.5">GStreamer 1.24.5 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>
