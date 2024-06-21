@@ -6,7 +6,7 @@ The latest bug-fix release in the stable 1.24 series is [1.24.5](#1.24.5) and wa
 
 See [https://gstreamer.freedesktop.org/releases/1.24/][latest] for the latest version of this document.
 
-*Last updated: Thursday 20 June 2024, 14:00 UTC [(log)][gitlog]*
+*Last updated: Thursday 21 June 2024, 15:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.24/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.24/release-notes-1.24.md
@@ -2439,13 +2439,13 @@ from 1.24.x.
 
 #### Cerbero build tool and packaging changes in 1.24.5
 
- - No changes
+ - [osxrelocator: Fix RPATHs in deeply nested libraries](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1491)
 
 #### Contributors to 1.24.5
 
 Angelo Verlain, Chris Del Guercio, Corentin Damman, Edward Hervey,
 Francisco Javier Velázquez-García, He Junyan, Jakub Adam, Jakub Vaněk,
-Khem Raj, Martin Nordholts, Mathieu Duponchelle, Nirbheek Chauhan,
+Khem Raj, L. E. Segovia, Martin Nordholts, Mathieu Duponchelle, Nirbheek Chauhan,
 Piotr Brzeziński, Samuel Thibault, Sebastian Dröge, Sergey Krivohatskiy,
 Seungha Yang, Tim-Philipp Müller, Zach van Rijn,
 
