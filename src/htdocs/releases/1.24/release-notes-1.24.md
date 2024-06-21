@@ -6,7 +6,7 @@ The latest bug-fix release in the stable 1.24 series is [1.24.5](#1.24.5) and wa
 
 See [https://gstreamer.freedesktop.org/releases/1.24/][latest] for the latest version of this document.
 
-*Last updated: Thursday 21 June 2024, 15:00 UTC [(log)][gitlog]*
+*Last updated: Friday 21 June 2024, 15:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.24/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.24/release-notes-1.24.md
