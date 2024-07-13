@@ -250,16 +250,15 @@ li {
   The GStreamer Conference 2024 is only possible thanks to the generous
   financial support from our sponsors.
   </p>
-  <!--
   <p>
   For this year's sponsorship opportunities please refer to
-  the <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">sponsor brief (PDF)</a>
+  the <a href="&site;/conference/2024/gstreamer-conference-sponsor-brief-2024.pdf">sponsor brief (PDF)</a>
   or <a href="mailto:sponsors@gstreamer-foundation.org">get in touch</a>.
   </p>
   <p>
   Sponsorship proceeds are not only used to put on the conference and hackfests, but also support our extensive CI infrastructure.
   </p>
--->
+
   <h2>City</h2>
   <p>
   This year's conference will take place in
@@ -396,12 +395,18 @@ li {
 
   <h2>GStreamer Conference Contact</h2>
   <p>
-  If you have any questions about the GStreamer Conference <!-- or are considering
-  <a href="&site;/conference/2023/gstreamer-conference-sponsor-brief-2023.pdf">becoming a sponsor</a> -->
+  If you have any questions about the GStreamer Conference or are considering
+  <a href="&site;/conference/2024/gstreamer-conference-sponsor-brief-2024.pdf">becoming a sponsor</a>
   please <a href="mailto:conference@gstreamer-foundation.org">get in touch</a>.
   </p>
 
   <h2>Conference News and Updates</h2>
+  <p>
+    <i>2024-Jul-13</i>: <a href="&site;/conference/2024/gstreamer-conference-sponsor-brief-2024.pdf">Sponsorship brief</a> available
+  </p>
+  <p>
+    <i>2024-May-08</i>: Venue announced: <a href="https://www.concordia.ca/hospitality/hospitality-venues/concordia-conference-centre.html">Concordia University Conference Centre</a>, Montréal, Québec, Canada.
+  </p>
   <p>
     <i>2024-May-08</i>: Initial announcement.
   </p>
