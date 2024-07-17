@@ -15246,4 +15246,54 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+<item>
+  <date>2024-07-17 13:00</date>
+  <title>GStreamer Rust bindings 0.23 / Rust Plugins 0.13 release</title>
+  <content>
+      <p>
+      </p>
+        Version 0.23 of the <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust bindings</a> was released,
+        together with version 0.13 of the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs">GStreamer Rust plugins</a>.
+      <p>
+        As usual this release follows the latest <a href="https://gtk-rs.org/blog/2024/07/17/new-release.html">gtk-rs 0.20 release</a> and the corresponding API changes.
+      </p>
+      <p>
+        This release features relatively few changes and mostly contains the
+        addition of some convenience APIs, the addition of bindings for some minor
+        APIs, addition of bindings for new GStreamer 1.26 APIs, and various optimizations.
+      </p>
+      <p>
+        The new release also brings a lot of bugfixes, most of which were
+        already part of the bugfix releases of the previous release series.
+      </p>
+      <p>
+        Details can be found in the release notes for <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/-/blob/main/gstreamer/CHANGELOG.md#0230---2024-07-11">gstreamer-rs</a>.
+      </p>
+      <p>
+        The code and documentation for the bindings is available on the freedesktop.org GitLab
+          <ul>
+            <li><a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs">GStreamer Rust Bindings</a> (<a href="https://gstreamer.pages.freedesktop.org/gstreamer-rs/stable/0.23/docs/gstreamer">documentation</a>)</li>
+          </ul>
+        as well as on <a href="https://crates.io">crates.io</a>.
+      </p>
+      <p>
+        The new 0.13 version of the GStreamer Rust plugins features many
+        improvements to the existing plugins as well as various new plugins. A
+        majority of the changes were already backported to the 0.12 release series
+        and its bugfix releases, which is part of the GStreamer 1.24 binaries.
+      </p>
+      <p>
+        A full list of available plugins can be seen in the repository's <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/blob/0.13/README.md">README.md</a>.
+      </p>
+      <p>
+          Details for this release can be found in the release notes for <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/blob/main/CHANGELOG.md#0130---2024-07-16">gst-plugins-rs</a>.
+      </p>
+      <p>
+        If you find any bugs, notice any missing features or other issues please
+        report them in GitLab for the <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/issues/new">bindings</a>
+        or the <a href="https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/issues/new">plugins</a>.
+      </p>
+    </content>
+</item>
+
 </news>
