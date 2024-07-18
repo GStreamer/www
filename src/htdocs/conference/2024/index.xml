@@ -310,13 +310,13 @@ li {
     <li><a href="https://www.riazorhotel.com/en/">Hotel Riazor</a> (Budget. 12 min walking)</li>
   </ul>
   </p>
-
+-->
   <h2>Invitation Letter</h2>
   <p>
   If you need an invitation letter for visa application purposes, please
   <a href="mailto:conference-invitations@gstreamer-foundation.org">get in touch</a>.
   </p>
-
+<!--
   <h2>Notes</h2>
   <p>
   <ul>
@@ -402,7 +402,10 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
-    <i>2024-Jul-13</i>: <a href="&site;/conference/2024/gstreamer-conference-sponsor-brief-2024.pdf">Sponsorship brief</a> available
+    <i>2024-Jul-18</i>: Visa invitation letter section added
+  </p>
+  <p>
+    <i>2024-Jul-18</i>: <a href="&site;/conference/2024/gstreamer-conference-sponsor-brief-2024.pdf">Sponsorship brief</a> available
   </p>
   <p>
     <i>2024-May-08</i>: Venue announced: <a href="https://www.concordia.ca/hospitality/hospitality-venues/concordia-conference-centre.html">Concordia University Conference Centre</a>, Montréal, Québec, Canada.
