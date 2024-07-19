@@ -13,6 +13,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2024-0003**<br/>JVN#02030803 / JPCERT#92912620<br/>CVE-2024-40897 | Orc compiler stack-based buffer overflow | 2024-07-19 12:30 | [Details](sa-2024-0003.html) |
 | **GStreamer-SA-2024-0002**<br/>ZDI-CAN-23896<br/>CVE-2024-4453  | Integer overflow in EXIF metadata parser leading to potential heap overwrite | 2024-04-29 20:00 | [Details](sa-2024-0002.html) |
 | **GStreamer-SA-2024-0001**<br/>ZDI-CAN-22873<br/>CVE-2024-0444  | AV1 codec parser potential buffer overflow during tile list parsing | 2024-01-24 20:00 | [Details](sa-2024-0001.html) |
 | **GStreamer-SA-2023-0011**<br/>ZDI-CAN-22300<br/>CVE-2023-50186 | AV1 codec parser buffer overflow | 2023-12-18 14:00 | [Details](sa-2023-0011.html) |

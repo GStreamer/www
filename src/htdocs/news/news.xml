@@ -15296,4 +15296,43 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
     </content>
 </item>
 
+
+  <item>
+      <date>2024-07-19 12:30</date>
+        <title>Orc 0.4.39 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler, which is used for SIMD acceleration
+in GStreamer plugins such as audioconvert, audiomixer, compositor, videoscale,
+and videoconvert, to name just a few.
+        </p>
+        <p>
+This is a minor bug-fix release, and also includes a security fix.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>Security: Fix error message printing buffer overflow leading to possible code execution in orcc with specific input files (CVE-2024-40897). This only affects developers and CI environments using orcc, not users of liborc.</li>
+            <li>div255w: fix off-by-one error in the implementations</li>
+            <li>x86: only run AVX detection if xgetbv is available</li>
+            <li>x86: fix AVX detection by implementing the check recommended by Intel</li>
+            <li>Only enable JIT compilation on Apple arm64 if running on macOS, fixes crashes on iOS</li>
+            <li>Fix potential crash in emulation mode if logging is enabled</li>
+            <li>Handle undefined TARGET_OS_OSX correctly</li>
+            <li>orconce: Fix typo in GCC __sync-based implementation</li>
+            <li>orconce: Fix usage of __STDC_NO_ATOMICS__</li>
+            <li>Fix build with MSVC 17.10 + C11</li>
+            <li>Support stack unwinding on Windows</li>
+            <li>Major opcode and instruction set code clean-ups and refactoring</li>
+            <li>Refactor allocation and chunk initialization of code regions</li>
+            <li>Fall back to emulation on Linux if JIT support is not available, e.g. because of SELinux sandboxing or noexec mounting)</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.39.tar.xz">orc-0.4.39.tar.xz</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
