@@ -1,7 +1,9 @@
 # talks-and-speakers.html schedule.html
 built_pages = index.html
 
-images = montreal_banner.jpg 
+images = \
+  sponsor_igalia_2015_2019x720.png \
+  montreal_banner.jpg
 
 documents = gstreamer-conference-sponsor-brief-2024.pdf
 
