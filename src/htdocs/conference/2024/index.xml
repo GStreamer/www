@@ -402,6 +402,9 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
+    <i>2024-July-24</i>: The GStreamer project is delighted to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference again at Silver level this year!
+  </p>
+  <p>
     <i>2024-July-19</i>: The GStreamer project welcomes back <b><a href="https://centricular.com">Centricular</a></b> as Gold level sponsor this year.
   </p>
   <p>
@@ -474,6 +477,10 @@ li {
 
   <h2>Silver Sponsors</h2>
 
+  <p style="padding:20px 0px">
+    <a href="https://laerdal.com"><img src="sponsor_laerdal.png" alt="Laerdal Labs" height="130" /></a>
+  </p>
+
 <!--
   <p style="padding:0px 0px; height: 170px">
     <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
@@ -481,10 +488,6 @@ li {
 
   <p style="padding:0px 0px">
     <a href="https://ridgerun.com"><img src="sponsor_ridgerun.png" alt="RidgeRun" height="130" /></a>
-  </p>
-
-  <p style="padding:20px 0px">
-    <a href="https://laerdal.com"><img src="sponsor_laerdal.png" alt="Laerdal Labs" height="130" /></a>
   </p>
 
   <p style="padding:0px 0px">
