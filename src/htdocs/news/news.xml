@@ -15335,4 +15335,53 @@ Direct tarball download: <a href="&site;/src/orc/orc-0.4.39.tar.xz">orc-0.4.39.t
         </content>
   </item>
 
+  <item>
+      <date>2024-07-29 18:00</date>
+        <title>GStreamer 1.24.6 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.24 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and security fixes and it should be safe
+to update from 1.24.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Fix compatibility with FFmpeg 7.0</li>
+    <li>qmlglsink: Fix failure to display content on recent Android devices</li>
+    <li>adaptivedemux: Fix handling of closed caption streams</li>
+    <li>cuda: Fix runtime compiler loading with old CUDA tookit</li>
+    <li>decodebin3 stream selection handling fixes</li>
+    <li>d3d11compositor, d3d12compositor: Fix transparent background mode with YUV output</li>
+    <li>d3d12converter: Make gamma remap work as intended</li>
+    <li>h264decoder: Update output frame duration for interlaced video when second field frame is discarded</li>
+    <li>macOS audio device provider now listens to audio devices being added/removed at runtime</li>
+    <li>Rust plugins: audioloudnorm, s3hlssink, gtk4paintablesink, livesync and webrtcsink fixes</li>
+    <li>videoaggregator: preserve features in non-alpha caps for subclasses with non-system memory sink caps</li>
+    <li>vtenc: Fix redistribute latency spam</li>
+    <li>v4l2: fixes for complex video formats</li>
+    <li>va: Fix strides when importing DMABUFs, dmabuf handle leaks, and blocklist unmaintained Intel i965 driver for encoding</li>
+    <li>waylandsink: Fix surface cropping for rotated streams</li>
+    <li>webrtcdsp: Enable multi_channel processing to fix handling of stereo streams</li>
+    <li>Various bug fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.24/#1.24.6">GStreamer 1.24.6 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>
