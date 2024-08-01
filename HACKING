@@ -6,7 +6,8 @@ To hack on the GStreamer website, here's what to do:
 2) src/autogen.sh
 3) create src/htdocs/entities.site by symlinking the applicable entities file
    (entities.site.xxx found in htdocs)
-	* entities.site.gnl is for building/running the site locally
+	* entities.site.gnl is for building/running the site locally, you will
+	  need to edit the file to correct to local path of your git checkout.
 	* entities.site.fdo is for gstreamer freedesktop setup
    (e.g.: cd src/htdocs; ln -s ./entities.site.fdo ./entities.site; cd ../..)
 4) mkdir data
