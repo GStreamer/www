@@ -15384,4 +15384,48 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+  <item>
+      <date>2024-08-01 14:00</date>
+        <title>GStreamer Conference 2024: Call for Presentations is open - submit your talk proposal now!</title>
+        <content>
+        <p><b><i>About the GStreamer Conference</i></b></p>
+        <p>
+        The GStreamer Conference 2024 GStreamer Conference will take place
+        on Monday-Tuesday 7-8 October 2024 in Montréal, Québec, Canada.
+        </p>
+        <p>
+        It is a conference for developers, community members, decision-makers,
+        industry partners, researchers, students and anyone else interested
+        in the GStreamer multimedia framework or Open Source and cross-platform
+        multimedia.
+        </p>
+        <p>
+        There will also be a hackfest just after the conference.
+        </p>
+        <p>
+        You can find more details about the conference on the
+        <a href="https://gstreamer.freedesktop.org/conference/2024/">GStreamer
+        Conference 2024 web site</a>.
+        </p>
+
+        <p><b><i>Call for Presentations is open</i></b></p>
+        <p>
+        The call for presentations is now open for talk proposals and lightning talks.
+        Please submit your talk now!
+        </p>
+        <p>
+        Talks can be on almost anything multimedia related, ranging from talks about
+        applications to challenges in the lower levels in the stack or hardware.
+        </p>
+        <p>
+        We want to hear from you, what you are working on, what you are using
+        GStreamer for, what difficulties you have encountered and how you solved them,
+        what your plans are, what you like, what you dislike, how to improve things!
+        </p>
+        <p>
+        Please submit all proposals through the <b><a href="https://indico.freedesktop.org/event/9/">GStreamer Conference 2024 Talk Submission Portal</a></b>.
+        </p>
+    </content>
+  </item>
+
 </news>
