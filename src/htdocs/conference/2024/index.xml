@@ -17,7 +17,7 @@ li {
 }
 </style>
 
-<table>
+<table class="conference">
 <tr><td width="60%">
 
 <h1>GStreamer Conference 2024</h1>
@@ -43,6 +43,7 @@ li {
     <img src="montreal_banner.jpg"
          alt="Montréal"
          height="300"
+         width="100%"
     />
     </div>
   </td>
@@ -451,43 +452,41 @@ li {
   </ul>
 
 </td>
-<td valign="top" style="padding:0px 50px">
+<td valign="top" style="padding:0 0 0 2em" width="15%">
   <h1>Sponsors</h1>
   <h2>Platinum Sponsor</h2>
 
-  <p style="padding:20px 0px">
-    <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504_2023.png" alt="Collabora" height="160" /></a>
+  <p style="padding:0.5em 0">
+    <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_965x504_2023.png" alt="Collabora" width="85%"/></a>
   </p>
 
-  <p style="padding:20px 0px">
-    <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" height="90" /></a>
+  <p style="padding:0.5em 0">
+    <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" width="85%" /></a>
   </p>
 
 <!--
-  <p style="padding:20px 0px">
+  <p style="padding:0.5em 0">
     <a href="https://fluendo.com"><img src="sponsor_fluendo_1060x200.png" alt="Fluendo" height="70" /></a>
   </p>
-  <p style="padding:20px 0px">
+  <p style="padding:0.5em 0">
     <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" height="88" /></a>
   </p>
 -->
-  <br />
-  <h2>Gold Sponsors</h2>
+  <h2 style="padding:1em 0 0 0">Gold Sponsors</h2>
 
-  <p style="padding:20px 0px">
-    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" height="65" /></a>
+  <p style="padding:0.5em 0">
+    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" width="105%" /></a>
   </p>
 <!--
   <p style="padding:10px 0px">
     <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" height="90" /></a>
   </p>
 -->
-  <br />
 
-  <h2>Silver Sponsors</h2>
+  <h2 style="padding:1em 0 0 0">Silver Sponsors</h2>
 
-  <p style="padding:20px 0px">
-    <a href="https://laerdal.com"><img src="sponsor_laerdal.png" alt="Laerdal Labs" height="130" /></a>
+  <p style="padding:0.5em 0">
+    <a href="https://laerdal.com"><img src="sponsor_laerdal.png" alt="Laerdal Labs" width="90%" /></a>
   </p>
 
 <!--
@@ -507,13 +506,11 @@ li {
     <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
   </p>
   -->
-  <br />
 <!--
   <h2>Special Media Partner</h2>
   <p style="padding:10px 0px">
     <a href="https://www.ubicast.eu/"><img src="sponsor_ubicast_1059x292.png" alt="UbiCast" height="75" /></a>
   </p>
-  <br />
   <h2>Press Partners</h2>
   <p style="padding:10px 0px">
     <a href="https://lwn.net"><img src="lwn-logo-gstconf2016.png" alt="LWN" height="99" width="300" /></a>
@@ -521,7 +518,7 @@ li {
 -->
   <p>
     <small>
-    Interested in <a href="&site;/conference/2024/gstreamer-conference-sponsor-brief-2024.pdf">becoming a sponsor</a> ?
+    Interested in <a href="&site;/conference/2024/gstreamer-conference-sponsor-brief-2024.pdf">becoming a sponsor</a>?
     </small>
   </p>
 </td>

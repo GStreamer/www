@@ -20,6 +20,11 @@ h3 { font-size: 1em; }
 a:link, a:visited { color: #0000FF; text-decoration: none; }
 a:hover { color: #FF3333; text-decoration: underline; }
 
+table.conference {
+  table-layout: fixed;
+  width: 100%;
+}
+
 td.gstnavside-r:hover { border-left-color: #FFAAAA; }
 td.gstnavside-g:hover { border-left-color: #AAFFAA; }
 td.gstnavside-b:hover { border-left-color: #AAAAFF; }
