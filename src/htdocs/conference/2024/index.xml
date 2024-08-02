@@ -409,6 +409,9 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
+    <i>2024-August-02</i>: We're pleased to have <b><a href="https://asymptotic.io">Asymptotic</a></b> sponsor the conference again at Silver level this year!
+  </p>
+  <p>
     <i>2024-August-01</i>: The Call for Presentations is now open, please submit your talk proposals now!
   </p>
   <p>
@@ -497,11 +500,13 @@ li {
   <p style="padding:0px 0px">
     <a href="https://ridgerun.com"><img src="sponsor_ridgerun.png" alt="RidgeRun" height="130" /></a>
   </p>
+  -->
 
-  <p style="padding:0px 0px">
-    <a href="https://asymptotic.io"><img src="sponsor_asymptotic.png" alt="asymptotic" height="80" /></a>
+  <p style="padding:0.5em 0">
+    <a href="https://asymptotic.io"><img src="sponsor_asymptotic_2024.png" alt="asymptotic" width="100%" /></a>
   </p>
 
+<!--
   <p style="padding:10px 0px">
     <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
   </p>
