@@ -3,9 +3,9 @@ built_pages = index.html
 
 images = \
   sponsor_centricular_753x125.png \
-  sponsor_collabora_02_rgb_965x504_2023.png \
+  sponsor_collabora_02_rgb_2024.png \
   sponsor_igalia_2015_2019x720.png \
-  sponsor_laerdal.png \
+  sponsor_laerdal_2024.png \
   montreal_banner.jpg
 
 documents = gstreamer-conference-sponsor-brief-2024.pdf
