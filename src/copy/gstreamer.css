@@ -69,6 +69,24 @@ a.gstnavside-b:hover {
   color: #353598;
   border-color: #353598ad;
 }
+td.gstconf-sponsorlogo {
+  padding: 0 0 0 2em;
+}
+
+p.gstconf-sponsorlogo {
+  padding: 0.75em;
+  margin: 1.25em 0 0 0;
+  min-width: 8rem;
+  border-color: grey;
+  border-style: solid;
+  border-width: 0.05em;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+p.gstconf-sponsorlogo:hover {
+  border-color: slateblue;
+}
 
 .right { text-align: right; }
 

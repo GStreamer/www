@@ -461,34 +461,34 @@ li {
   </ul>
 
 </td>
-<td valign="top" style="padding:0 0 0 2em" width="15%">
+<td valign="top" class="gstconf-sponsorlogo" width="15%">
   <h1>Sponsors</h1>
   <h2>Platinum Sponsor</h2>
 
-  <p style="padding:0.5em 0">
+  <p class="gstconf-sponsorlogo">
     <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_2024.png" alt="Collabora" width="85%"/></a>
   </p>
 
-  <p style="padding:0.5em 0">
+  <p class="gstconf-sponsorlogo">
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" width="85%" /></a>
   </p>
 
-  <p style="padding:0.5em 0">
+  <p class="gstconf-sponsorlogo">
     <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" width="85%" /></a>
   </p>
 
 <!--
-  <p style="padding:0.5em 0">
+  <p class="gstconf-sponsorlogo">
     <a href="https://fluendo.com"><img src="sponsor_fluendo_1060x200.png" alt="Fluendo" height="70" /></a>
   </p>
 -->
   <h2 style="padding:1em 0 0 0">Gold Sponsors</h2>
 
-  <p style="padding:0.5em 0">
-    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" width="105%" /></a>
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" width="100%" /></a>
   </p>
-  <p style="padding:0.5em 0">
-    <a href="https://sat.qc.ca/"><img src="sponsor_sat_2025_2630x644.png" alt="Société des arts technologiques" width="105%" /></a>
+  <p class="gstconf-sponsorlogo">
+    <a href="https://sat.qc.ca/"><img src="sponsor_sat_2025_2630x644.png" alt="Société des arts technologiques" width="100%" /></a>
   </p>
 
 <!--
@@ -499,7 +499,7 @@ li {
 
   <h2 style="padding:1em 0 0 0">Silver Sponsors</h2>
 
-  <p style="padding:0.5em 0">
+  <p class="gstconf-sponsorlogo">
     <a href="https://laerdal.com"><img src="sponsor_laerdal_2024.png" alt="Laerdal Labs" width="90%" /></a>
   </p>
 
@@ -513,7 +513,7 @@ li {
   </p>
   -->
 
-  <p style="padding:0.5em 0">
+  <p class="gstconf-sponsorlogo">
     <a href="https://asymptotic.io"><img src="sponsor_asymptotic_2024.png" alt="asymptotic" width="100%" /></a>
   </p>
 
