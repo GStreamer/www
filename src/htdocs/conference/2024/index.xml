@@ -409,6 +409,9 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
+    <i>2024-August-15</i>: We're excited to see <b><a href="https://pexip.com/">Pexip</a></b> return again as Platinum sponsor this year!
+  </p>
+  <p>
     <i>2024-August-08</i>: The GStreamer project welcomes <b><a href="https://sat.qc.ca/">la SAT</a></b> (Société des Arts Technologiques) as new Gold level sponsor this year!
   </p>
   <p>
@@ -470,12 +473,13 @@ li {
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" width="85%" /></a>
   </p>
 
+  <p style="padding:0.5em 0">
+    <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" width="85%" /></a>
+  </p>
+
 <!--
   <p style="padding:0.5em 0">
     <a href="https://fluendo.com"><img src="sponsor_fluendo_1060x200.png" alt="Fluendo" height="70" /></a>
-  </p>
-  <p style="padding:0.5em 0">
-    <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" height="88" /></a>
   </p>
 -->
   <h2 style="padding:1em 0 0 0">Gold Sponsors</h2>
