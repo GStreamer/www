@@ -409,6 +409,9 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
+    <i>2024-August-20</i>: The GStreamer project is happy to see <b><a href="https://axis.com">Axis Communications</a></b> sponsor the conference again at Gold level this year!
+  </p>
+  <p>
     <i>2024-August-15</i>: We're excited to see <b><a href="https://pexip.com/">Pexip</a></b> return again as Platinum sponsor this year!
   </p>
   <p>
@@ -491,11 +494,9 @@ li {
     <a href="https://sat.qc.ca/"><img src="sponsor_sat_2025_2630x644.png" alt="Société des arts technologiques" width="100%" /></a>
   </p>
 
-<!--
-  <p style="padding:10px 0px">
-    <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" height="90" /></a>
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" width="100%" /></a>
   </p>
--->
 
   <h2 style="padding:1em 0 0 0">Silver Sponsors</h2>
 
