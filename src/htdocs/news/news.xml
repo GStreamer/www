@@ -15428,4 +15428,46 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
     </content>
   </item>
 
+  <item>
+      <date>2024-08-21 14:00</date>
+        <title>GStreamer 1.24.7 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.24 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it should be safe
+to update from 1.24.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Fix APE and Musepack audio file and GIF playback with FFmpeg 7.0</li>
+    <li>playbin3: Fix potential deadlock with multiple playbin3s with glimagesink used in parallel</li>
+    <li>qt6: various qmlgl6src and qmlgl6sink fixes and improvements</li>
+    <li>rtspsrc: expose property to force usage of non-compliant setup URLs for RTSP servers where the automatic fallback doesn't work</li>
+    <li>urisourcebin: gapless playback and program switching fixes</li>
+    <li>v4l2: various fixes</li>
+    <li>va: Fix potential deadlock with multiple va elements used in parallel</li>
+    <li>meson: option to disable gst-full for static-library build configurations that do not need this</li>
+    <li>cerbero: libvpx updated to 1.14.1; map 2022Server to Windows11; disable rust variant on Linux if binutils is too old</li>
+    <li>Various bug fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.24/#1.24.7">GStreamer 1.24.7 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>

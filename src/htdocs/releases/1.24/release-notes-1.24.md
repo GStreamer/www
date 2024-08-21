@@ -2,11 +2,11 @@
 
 GStreamer 1.24.0 was originally released on 4 March 2024.
 
-The latest bug-fix release in the stable 1.24 series is [1.24.6](#1.24.6) and was released on 29 July 2024.
+The latest bug-fix release in the stable 1.24 series is [1.24.6](#1.24.6) and was released on 21 August 2024.
 
 See [https://gstreamer.freedesktop.org/releases/1.24/][latest] for the latest version of this document.
 
-*Last updated: Monday 29 July 2024, 14:30 UTC [(log)][gitlog]*
+*Last updated: Tuesday 20 August 2024, 20:30 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.24/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.24/release-notes-1.24.md
@@ -2623,6 +2623,136 @@ suggestions or helped testing. Thank you all!
 
 - [List of Merge Requests applied in 1.24.6](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.24.6)
 - [List of Issues fixed in 1.24.6](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.24.6)
+
+<a id="1.24.7"></a>
+
+### 1.24.7
+
+The seventh 1.24 bug-fix release (1.24.7) was released on 21 August 2024.
+
+This release only contains bugfixes and it *should* be safe to update
+from 1.24.x.
+
+#### Highlighted bugfixes in 1.24.7
+
+ - Fix APE and Musepack audio file and GIF playback with FFmpeg 7.0
+ - playbin3: Fix potential deadlock with multiple playbin3s with glimagesink used in parallel
+ - qt6: various qmlgl6src and qmlgl6sink fixes and improvements
+ - rtspsrc: expose property to force usage of non-compliant setup URLs for RTSP servers where the automatic fallback doesn't work
+ - urisourcebin: gapless playback and program switching fixes
+ - v4l2: various fixes
+ - va: Fix potential deadlock with multiple va elements used in parallel
+ - meson: option to disable gst-full for static-library build configurations that do not need this
+ - cerbero: libvpx updated to 1.14.1; map 2022Server to Windows11; disable rust variant on Linux if binutils is too old
+ - Various bug fixes, memory leak fixes, and other stability and reliability improvements
+
+#### gstreamer
+
+ - [bin: Don't keep the object lock while setting a GstContext when handling NEED_CONTEXT](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7310)
+ - [core: Log pad name, not just the pointer](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7336)
+
+#### gst-plugins-base
+
+ - [pbutils: descriptions: use subsampling factor to get YUV subsampling](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7359)
+ - [rtspconnection: Handle invalid argument properly](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7309)
+ - [urisourcebin: Actually drop EOS on old-school pad switch](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7376)
+ - [urisourcebin: Don't hold lock when emitting about-to-finish](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7373)
+ - [gst-launch deadlock with two playbin3s](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/3707)
+ - [xvimagesink: Fix crash in pool on error](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7292)
+
+#### gst-plugins-good
+
+ - [qmlgl6src: Fix crash when use-default-fbo is not set](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7344)
+ - [qt6glwindow: Fallback to GL_RGB on CopyTexImage2D error, fixing usage with eglfs backend](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7345)
+ - [qt6glwindow: Only use GL_READ_FRAMEBUFFER when we do blits](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7295)
+ - [qt6: glwindow: Don't leak previously rendered buffer](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7289)
+ - [rtspsrc: expose property for forcing usage of non-compliant URLs](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7346)
+ - [v4l2object: fix ARIB_STD_B67 colorimetry unmatch issue](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7369)
+ - [v4l2: Fix colorimetry mismatch for encoded format with RGB color-matrix](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7284)
+
+#### gst-plugins-bad
+
+ - [aom: av1enc: restrict allowed input width and height](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7328)
+ - [h264parse: bypass check for length_size_minus_one](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7358)
+ - [h265parse: Reject FD received before SPS](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7296)
+ - [msdk: replace strcmp with g_strcmp0](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7349)
+ - [msdkvc1dec crashes (segfault)](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/3721)
+ - [rsvgoverlay: add debug category](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7281)
+ - [va: don't use GST_ELEMENT_WARNING in set_context() vmethod to fix potential deadlock](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7379)
+ - [va: deadlock when playing two videos at once](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/3706)
+ - [webrtc: Add missing G_BEGIN/END_DECLS in header for C++](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7313)
+ - [wpe: initialize threading.ready before reading it](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7385)
+
+#### gst-plugins-ugly
+
+ - No changes
+
+#### GStreamer Rust plugins
+
+ - [gtk4: Move the dmabuf cfg to the correct bracket level](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1686)
+
+#### gst-libav
+
+ - [avdemux: Fix deadlock with FFmpeg 7.x when serialized events are received from upstream while opening, such as e.g. APE files with tags](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7367)
+ - [libav: return EOF when stream is out of data](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7299)
+ - [avdemux: Never return 0 from read function, which would lead to infinite loops](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7391)
+
+#### gst-rtsp-server
+
+ - No changes
+
+#### gstreamer-vaapi
+
+- [vaapi: Fix sps_max_dec_pic_buffering_minus1 value in h265 decoder](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7298)
+
+#### gstreamer-sharp
+
+ - No changes
+
+#### gst-omx
+
+ - No changes
+
+#### gst-python
+
+ - No changes
+
+#### gst-editing-services
+
+ - [nlecomposition: Don't leak QoS events](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7280)
+
+#### gst-devtools, gst-validate + gst-integration-testsuites
+
+ - [validate: Fix copying of action name](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7334)
+
+### gst-examples
+
+ - No changes
+
+#### Development build environment
+
+ - [Add a meson option to disable gst-full for static-library build configurations that do not need this](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7343)
+
+#### Cerbero build tool and packaging changes in 1.24.7
+
+ - [Disable rust variant on Linux if binutils is too old](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1546)
+ - [Added 2022Server to the Windows platform distro map as Windows11](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1541)
+ - [libvpx: Update to 1.14.1](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1543)
+
+#### Contributors to 1.24.7
+
+David Rosca, Edward Hervey, Guillaume Desmottes, Hou Qi, Jan Schmidt,
+Jesper Jensen, Jordan Petridis, Jordan Yelloz, L. E. Segovia, Lyra McMillan,
+Mathieu Duponchelle, Max Romanov, Nicolas Dufresne, Nirbheek Chauhan,
+Qian Hu (胡骞), Sebastian Dröge, Tim-Philipp Müller, Víctor Manuel Jáquez Leal,
+
+... and many others who have contributed bug reports, translations, sent
+suggestions or helped testing. Thank you all!
+
+#### List of merge requests and issues fixed in 1.24.7
+
+- [List of Merge Requests applied in 1.24.7](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.24.7)
+- [List of Issues fixed in 1.24.7](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.24.7)
 
 ## Schedule for 1.26
 
