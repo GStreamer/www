@@ -200,27 +200,27 @@ li {
 
   <h2>Registration</h2>
   
-  <p>Registration will be opening soon, stay tuned!</p>
+  <p>Registration will be opening really soon, stay tuned! (Updated: 28 August 2024)</p>
 
-  <!--
   <p>
   There will be separate registration options for both professionals and for students and hobbyists:
   </p>
   <p>
     <div style="margin-left:5%">
     <table width="80%" cellpadding="5">
-      <tr><td><b>Professional (Early Bird)</b></td><td><b>250 EUR</b> (ca. 280 USD)</td></tr>
-      <tr><td><b>Professional (Regular)</b></td><td><b>350 EUR</b> (ca. 390 USD)</td></tr>
-      <tr><td><b>Professional (Supporter)</b></td><td><b>500 EUR</b> (ca. 555 USD)</td></tr>
+      <tr><td><b>Professional (Regular)</b></td><td><b>375 CAD</b> (ca. 250 EUR / 280 USD) <b>+ ca. 15% taxes</b></td></tr>
+      <tr><td><b>Professional (Supporter)</b></td><td><b>750 CAD</b> (ca. 500 EUR / 560 USD) <b>+ ca. 15% taxes</b></td></tr>
       <tr><td><b>Speakers (for non-lightning talks)</b></td><td><b>Free</b></td></tr>
       <tr><td><b>Student/Hobbyist</b></td><td><b>Free or voluntary donation</b></td></tr>
     </table>
     </div>
   </p>
+<!--
   <p>
     All tickets include lunch at the venue on both conference days
     as well as access to the social event on Monday evening.
   </p>
+-->
   <p>
     For those uncertain about whether to register as a professional or hobbyist,
     the general rule is that if your company pays for you or sponsors you, you
@@ -228,11 +228,12 @@ li {
     If in doubt drop us a mail or just register as hobbyist. The important
     thing is that you'll make it to the conference!
   </p>
-
+<!--
   <p>
   <b><a href="https://gstreamer2023.serglo.es/">Sign up for the GStreamer Conference 2023 here</a></b>
   </p>
-
+-->
+<!--
   <h2>Schedule and speakers list</h2>
   <p>
     <a href="schedule.html">Click here for the conference schedule</a>.
@@ -408,6 +409,9 @@ li {
   </p>
 
   <h2>Conference News and Updates</h2>
+  <p>
+    <i>2024-August-29</i>: Ticket prices have been added, expect registration to open shortly!
+  </p>
   <p>
     <i>2024-August-21</i>: We're thrilled to welcome <b><a href="https://cablecast.tv">Cablecast</a></b> as first-time sponsor this year, at Silver level!
   </p>
