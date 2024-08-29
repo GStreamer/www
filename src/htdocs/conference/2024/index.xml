@@ -410,6 +410,9 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
+    <i>2024-August-30</i>: The GStreamer project is excited to have <b><a href="https://www.geniussports.com">Genius Sports</a></b> sponsor for the first time, at Gold level!
+  </p>
+  <p>
     <i>2024-August-29</i>: Ticket prices have been added, expect registration to open shortly!
   </p>
   <p>
@@ -503,6 +506,10 @@ li {
 
   <p class="gstconf-sponsorlogo">
     <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" width="100%" /></a>
+  </p>
+
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.geniussports.com/"><img src="sponsor_genius_sports.png" alt="Genius Sports" width="100%" /></a>
   </p>
 
   <h2 style="padding:1em 0 0 0">Silver Sponsors</h2>
