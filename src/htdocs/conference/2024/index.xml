@@ -105,7 +105,7 @@ li {
   </p>
 
   <h2>Call for Presentations</h2>
-  
+<!--
   <p><b>
   The call for presentations is now open for talk proposals and lightning talks.
   </b></p>
@@ -127,11 +127,13 @@ li {
   <p>
   <b>The talk submission deadline is Monday, 2 September 2024 23:59h!</b>
   </p>
+-->
 <!--
   <p>
   <b>The talk submission deadline has been extended and is 30 September 2019 for second round slots!</b>
   </p>
 -->
+<!--
   <p>
   Lightning talks can be submitted until the day of the conference.
   </p>
@@ -162,7 +164,8 @@ li {
   <p>
   You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system.
   </p>
-<!--
+-->
+
   <p>
   The call for presentations is now closed.
   </p>
@@ -172,9 +175,13 @@ li {
   Thank you to everyone who submitted a proposal.
   </p>
   <p>
+  If you had problems submitting your talk at the last minute via Indico,
+  please <a href="mailto:conference@gstreamer-foundation.org">get in touch</a>
+  as soon as possible and we'll see what we can do.
+  </p>
+  <p>
   Lightning talks may still be proposed, see below for more details.
   </p>
--->
 
   <h2>Showcase or Lightning Talks</h2>
   <p>
@@ -192,6 +199,7 @@ li {
   </p>
   <p>
     You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system.
+    If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
   </p>
   <p>
     There is no deadline for Lightning Talk submissions, slots will be
@@ -409,6 +417,9 @@ li {
   </p>
 
   <h2>Conference News and Updates</h2>
+  <p>
+    <i>2024-September-03</i>: The call for presentations is now closed, but lightning talks may still be submitted. Speakers will be notified shortly. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics this year, stay tuned for updates. If you had problems submitting your talk at the last minute via Indico, please <a href="mailto:conference@gstreamer-foundation.org">get in touch</a> and we'll see what we can do.
+  </p>
   <p>
     <i>2024-September-03</i>: We're very pleased to see <b><a href="https://fluendo.com">Fluendo</a></b> return as sponsor this year, at Silver level!
   </p>
