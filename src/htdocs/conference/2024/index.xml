@@ -104,6 +104,8 @@ li {
     and to meet developers as well as the wider community.
   </p>
 
+  <a id="registration"></a>
+
   <h2>Registration</h2>
   
   <p><b>Registration is now open!</b></p>
@@ -163,6 +165,8 @@ li {
   </p>
 -->
 
+  <a id="lightning-talks"></a>
+
   <h2>Showcase or Lightning Talks</h2>
   <p>
     There will again be opportunities for short lightning talks for those who
@@ -190,6 +194,8 @@ li {
   <h2>Social Events</h2>
 
 -->
+  <a id="hackfest"></a>
+
   <h2>GStreamer hackfest</h2>
   <p>
     There will be a hackfest just after the conference, on Wednesday and Thursday
@@ -198,6 +204,8 @@ li {
   <p>
     <b>New this year</b>: The GStreamer Conference and Hackfest will be co-located with <a href="https://indico.freedesktop.org/event/6/">XDC 2024</a>, in the same location as the conference Concordia University Conference Centre.
   </p>
+
+  <a id="sponsoring"></a>
 
   <h2>Sponsorship Opportunities</h2>
   <p>
@@ -227,6 +235,8 @@ li {
   <b>By air to Montréal-Trudeau International Airport</b>
   </p>
 -->
+  <a id="venue"></a>
+
   <h2>Venue</h2>
   <p>
   The conference will take place at: <br/>
@@ -265,6 +275,9 @@ li {
   </ul>
   </p>
 -->
+
+  <a id="visa-invitation-letters"></a>
+
   <h2>Invitation Letter</h2>
   <p>
   If you need an invitation letter for visa application purposes, please
@@ -295,6 +308,8 @@ li {
   </ul>
   </p>
 -->
+
+  <a id="cfp"></a>
 
   <h2>Call for Presentations</h2>
 <!--
@@ -375,6 +390,8 @@ li {
   Lightning talks may still be proposed, see above for more details.
   </p>
 
+  <a id="coc"></a>
+
   <h2>Code of Conduct and Anti-Harrassment Policy</h2>
   <h3>Policy</h3>
   <p>
@@ -426,12 +443,16 @@ li {
   created by the <a href="http://adainitiative.org/">Ada Initiative</a> and other volunteers.
   </p>
 
+  <a id="contact"></a>
+
   <h2>GStreamer Conference Contact</h2>
   <p>
   If you have any questions about the GStreamer Conference or are considering
   <a href="&site;/conference/2024/gstreamer-conference-sponsor-brief-2024.pdf">becoming a sponsor</a>
   please <a href="mailto:conference@gstreamer-foundation.org">get in touch</a>.
   </p>
+
+  <a id="news"></a>
 
   <h2>Conference News and Updates</h2>
   <p>
