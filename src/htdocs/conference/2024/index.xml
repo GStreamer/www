@@ -208,39 +208,56 @@ li {
 
   <h2>Registration</h2>
   
-  <p>Registration will be opening really soon, stay tuned! (Updated: 28 August 2024)</p>
+  <p><b>Registration is now open!</b></p>
 
   <p>
-  There will be separate registration options for both professionals and for students and hobbyists:
+    <b><a href="https://www.eventbrite.com/e/gstreamer-conference-2024-tickets-1007720307567">Sign up for the GStreamer Conference 2024 here</a></b>
+  </p>
+
+  <p>
+  There are separate registration options for professionals, speakers and for students and hobbyists:
   </p>
   <p>
     <div style="margin-left:5%">
     <table width="80%" cellpadding="5">
-      <tr><td><b>Professional (Regular)</b></td><td><b>375 CAD</b> (ca. 250 EUR / 280 USD) <b>+ ca. 15% taxes</b></td></tr>
-      <tr><td><b>Professional (Supporter)</b></td><td><b>750 CAD</b> (ca. 500 EUR / 560 USD) <b>+ ca. 15% taxes</b></td></tr>
-      <tr><td><b>Speakers (for non-lightning talks)</b></td><td><b>Free</b></td></tr>
+      <tr><td><b>Professional (Regular)</b></td><td><b>375 CAD</b> (ca. 250 EUR / 280 USD) <b>+ ca. 17.5% in fees + taxes (variable)</b></td></tr>
+      <tr><td><b>Professional (Supporter)</b></td><td><b>750 CAD</b> (ca. 500 EUR / 560 USD) <b>+ ca. 17.5% in fees + taxes (variable)</b></td></tr>
+      <tr><td><b>Speakers (for non-lightning talks)</b></td><td><b>Free</b> (instructions will be sent by e-mail)</td></tr>
       <tr><td><b>Student/Hobbyist</b></td><td><b>Free or voluntary donation</b></td></tr>
     </table>
     </div>
   </p>
-<!--
+
   <p>
-    All tickets include lunch at the venue on both conference days
-    as well as access to the social event on Monday evening.
+    All tickets include <!-- lunch at the venue on both conference days
+    as well as --> access to the social event on Monday evening.
   </p>
--->
+
   <p>
     For those uncertain about whether to register as a professional or hobbyist,
-    the general rule is that if your company pays for you or sponsors you, you
+    the general rule is that if your company pays for your travel or sponsors you, you
     are a professional, and if you personally pay you are a student or hobbyist.
     If in doubt drop us a mail or just register as hobbyist. The important
     thing is that you'll make it to the conference!
   </p>
-<!--
+
   <p>
-  <b><a href="https://gstreamer2023.serglo.es/">Sign up for the GStreamer Conference 2023 here</a></b>
+    <b>Speakers:</b> You will receive free registration! Details will be sent
+    out by e-mail along with the talk acceptance notifications or shortly
+    thereafter. Not that we will complain if you decide to buy a ticket of
+    course.
   </p>
--->
+
+  <p>
+    <b>Note for Quebec entities:</b> Please make sure to enter your QST number
+    on the order form to avoid being charged sales tax, as Eventbrite won't be
+    able to issue a proper tax receipt for any sales tax charged later.
+  </p>
+
+  <p>
+    <b><a href="https://www.eventbrite.com/e/gstreamer-conference-2024-tickets-1007720307567">Sign up for the GStreamer Conference 2024 here</a></b>
+  </p>
+
 <!--
   <h2>Schedule and speakers list</h2>
   <p>
@@ -417,6 +434,9 @@ li {
   </p>
 
   <h2>Conference News and Updates</h2>
+  <p>
+    <i>2024-September-05</i>: Registration is now open! Sign up for the GStreamer Conference 2024 <a href="https://www.eventbrite.com/e/gstreamer-conference-2024-tickets-1007720307567">here</a>. Speakers should wait for e-mail instructions.
+  </p>
   <p>
     <i>2024-September-03</i>: The call for presentations is now closed, but lightning talks may still be submitted. Speakers will be notified shortly. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics this year, stay tuned for updates. If you had problems submitting your talk at the last minute via Indico, please <a href="mailto:conference@gstreamer-foundation.org">get in touch</a> and we'll see what we can do.
   </p>
