@@ -104,108 +104,6 @@ li {
     and to meet developers as well as the wider community.
   </p>
 
-  <h2>Call for Presentations</h2>
-<!--
-  <p><b>
-  The call for presentations is now open for talk proposals and lightning talks.
-  </b></p>
-  <p><b>
-  Please submit your talk now!
-  </b></p>
-  <p>
-  The initial submission needs to be only a couple of sentences or paragraphs
-  describing the talk you want to give and the desired length of your talk.
-  </p>
-  <p>
-  Please allow at least 5 minutes for questions at the end as well.
-  </p>
-  <p>
-  You will still be able to edit and refine your talk proposal after the
-  initial submission, so there's no need to hold off until the last minute to
-  get it perfect.
-  </p>
-  <p>
-  <b>The talk submission deadline is Monday, 2 September 2024 23:59h!</b>
-  </p>
--->
-<!--
-  <p>
-  <b>The talk submission deadline has been extended and is 30 September 2019 for second round slots!</b>
-  </p>
--->
-<!--
-  <p>
-  Lightning talks can be submitted until the day of the conference.
-  </p>
-  <p>
-  Talks can be on almost anything multimedia related, ranging from talks about
-  applications to challenges in the lower levels in the stack or hardware.
-  </p>
-
-  <p>
-  You can request a slot for one of the following durations:
-
-    <li>5 minutes (Lightning Talks)</li>
-    <li>20 minutes</li>
-    <li>30 minutes</li>
-    <li>40 minutes</li>
-
-  including questions.
-  </p>
-
-  <p>
-  We want to hear from you, what you are working on, what you are using
-  GStreamer for, what difficulties you have encountered and how you solved them,
-  what your plans are, what you like, what you dislike, how to improve things!
-  </p>
-  <p>
-  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/9/">GStreamer Conference 2024 Talk Submission Portal</a>.
-  </p>
-  <p>
-  You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system.
-  </p>
--->
-
-  <p>
-  The call for presentations is now closed.
-  </p>
-  <p>
-  Anyone who has submitted a talk proposal should receive an e-mail letting
-  them know whether their proposal has been accepted in the coming days.
-  Thank you to everyone who submitted a proposal.
-  </p>
-  <p>
-  If you had problems submitting your talk at the last minute via Indico,
-  please <a href="mailto:conference@gstreamer-foundation.org">get in touch</a>
-  as soon as possible and we'll see what we can do.
-  </p>
-  <p>
-  Lightning talks may still be proposed, see below for more details.
-  </p>
-
-  <h2>Showcase or Lightning Talks</h2>
-  <p>
-    There will again be opportunities for short lightning talks for those who
-    do not wish to present a full talk, but just want to showcase something
-    they're working on, or present a problem or challenge they are facing or
-    have solved, and that they think might be interesting for others to hear
-    about.
-  </p>
-  <p>
-    Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
-  </p>
-  <p>
-    Please submit all lightning talks through the <a href="https://indico.freedesktop.org/event/9/">GStreamer Conference 2024 Talk Submission Portal</a>.
-  </p>
-  <p>
-    You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system.
-    If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
-  </p>
-  <p>
-    There is no deadline for Lightning Talk submissions, slots will be
-    allocated on a first-come first-serve basis.
-  </p>
-
   <h2>Registration</h2>
   
   <p><b>Registration is now open!</b></p>
@@ -264,6 +162,29 @@ li {
     <a href="schedule.html">Click here for the conference schedule</a>.
   </p>
 -->
+
+  <h2>Showcase or Lightning Talks</h2>
+  <p>
+    There will again be opportunities for short lightning talks for those who
+    do not wish to present a full talk, but just want to showcase something
+    they're working on, or present a problem or challenge they are facing or
+    have solved, and that they think might be interesting for others to hear
+    about.
+  </p>
+  <p>
+    Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
+  </p>
+  <p>
+    Please submit all lightning talks through the <a href="https://indico.freedesktop.org/event/9/">GStreamer Conference 2024 Talk Submission Portal</a>.
+  </p>
+  <p>
+    You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system.
+    If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
+  </p>
+  <p>
+    There is no deadline for Lightning Talk submissions, slots will be
+    allocated on a first-come first-serve basis.
+  </p>
 
 <!--
   <h2>Social Events</h2>
@@ -374,6 +295,85 @@ li {
   </ul>
   </p>
 -->
+
+  <h2>Call for Presentations</h2>
+<!--
+  <p><b>
+  The call for presentations is now open for talk proposals and lightning talks.
+  </b></p>
+  <p><b>
+  Please submit your talk now!
+  </b></p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk.
+  </p>
+  <p>
+  Please allow at least 5 minutes for questions at the end as well.
+  </p>
+  <p>
+  You will still be able to edit and refine your talk proposal after the
+  initial submission, so there's no need to hold off until the last minute to
+  get it perfect.
+  </p>
+  <p>
+  <b>The talk submission deadline is Monday, 2 September 2024 23:59h!</b>
+  </p>
+-->
+<!--
+  <p>
+  <b>The talk submission deadline has been extended and is 30 September 2019 for second round slots!</b>
+  </p>
+-->
+<!--
+  <p>
+  Lightning talks can be submitted until the day of the conference.
+  </p>
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+
+  <p>
+  You can request a slot for one of the following durations:
+
+    <li>5 minutes (Lightning Talks)</li>
+    <li>20 minutes</li>
+    <li>30 minutes</li>
+    <li>40 minutes</li>
+
+  including questions.
+  </p>
+
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+  <p>
+  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/9/">GStreamer Conference 2024 Talk Submission Portal</a>.
+  </p>
+  <p>
+  You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system.
+  </p>
+-->
+
+  <p>
+  The call for presentations is now closed.
+  </p>
+  <p>
+  Anyone who has submitted a talk proposal should receive an e-mail letting
+  them know whether their proposal has been accepted in the coming days.
+  Thank you to everyone who submitted a proposal.
+  </p>
+  <p>
+  If you had problems submitting your talk at the last minute via Indico,
+  please <a href="mailto:conference@gstreamer-foundation.org">get in touch</a>
+  as soon as possible and we'll see what we can do.
+  </p>
+  <p>
+  Lightning talks may still be proposed, see above for more details.
+  </p>
 
   <h2>Code of Conduct and Anti-Harrassment Policy</h2>
   <h3>Policy</h3>
