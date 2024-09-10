@@ -158,12 +158,157 @@ li {
     <b><a href="https://www.eventbrite.com/e/gstreamer-conference-2024-tickets-1007720307567">Sign up for the GStreamer Conference 2024 here</a></b>
   </p>
 
-<!--
   <h2>Schedule and speakers list</h2>
+
+<!--
   <p>
     <a href="schedule.html">Click here for the conference schedule</a>.
   </p>
 -->
+
+  <p>
+    We have an exciting range of topics and speakers lined up for you again this year!
+  </p>
+
+  <p>
+    The full list of talks and speakers will be made available in due course
+    once talk proposals have been processed and speakers have been notified.
+  </p>
+
+  <p>
+    <b>Lightning Talks:</b>
+    <ul>
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/322/"> -->
+            GQuark in GStreamer structures — What nonsense!
+            <!-- </a> -->
+            <br />
+            <small><i>Sebastian Dröge, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/330/"> -->
+            Integration testing video with Test Containers by example
+            <!-- </a> -->
+            <br />
+            <small><i>Johannes Nel, Genius Sports</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/317/"> -->
+            Silhouette, the ML/PipeWire-powered virtual camera device app
+            <!-- </a> -->
+            <br />
+            <small><i>George Kiagiadakis, Collabora</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/329/"> -->
+            Last year's updates in Fluster
+            <!-- </a> -->
+            <br />
+            <small><i>Rubén Gonzalez, Fluendo</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/326/"> -->
+            A new GStreamer plugin to leverage the skia 2D drawing library
+            <!-- </a> -->
+            <br />
+            <small><i>Thibault Saunier, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/321/"> -->
+            New RTP payloaders &amp; depayloaders in Rust
+            <!-- </a> -->
+            <br />
+            <small><i>Sebastian Dröge, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/318/"> -->
+            How easy it is to write a video sink plugin
+            <!-- </a> -->
+            <br />
+            <small><i>ramyak mehra, Dyte</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/316/"> -->
+            Closed Captions: Additional Things GStreamer Can Do
+            <!-- </a> -->
+            <br />
+            <small><i>Matthew Waters, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/320/"> -->
+            Is an H264 encoder base class for hardware accelerated API possible?
+            <!-- </a> -->
+            <br />
+            <small><i>Victor Manuel Jáquez Leal, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/315/"> -->
+            Effects of a GStreamer version upgrade on Yocto-based application
+            <!-- </a> -->
+            <br />
+            <small><i>Michael Yackavage, IPS</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/319/"> -->
+            GstVA updates
+            <!-- </a> -->
+            <br />
+            <small><i>Victor Manuel Jáquez Leal, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/324/"> -->
+            GStreamer plugin updates on webOS as a platform
+            <!-- </a> -->
+            <br />
+            <small><i>Seungwook Cha, LG Electronics</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/327/"> -->
+            An update on GStreamer validate
+            <!-- </a> -->
+            <br />
+            <small><i>Thibault Saunier, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/328/"> -->
+            Fluendo and Cerbero, testing challenges
+            <!-- </a> -->
+            <br />
+            <small><i>Jorge Zapata, Fluendo</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/325/"> -->
+            Yet another V4L2 update
+            <!-- </a> -->
+            <br />
+            <small><i>Nicolas Dufresne, Collabora</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/323/"> -->
+            A new Windows web browser source plugin - webview2
+            <!-- </a> -->
+            <br />
+            <small><i>Seungha Yang, Centricular</i></small>
+            </li>
+            <li>...and more to come</li>
+            <li><i>Submit <u>your</u> lightning talk now!</i></li>
+    </ul>
+  </p>
 
   <a id="lightning-talks"></a>
 
@@ -455,6 +600,9 @@ li {
   <a id="news"></a>
 
   <h2>Conference News and Updates</h2>
+  <p>
+    <i>2024-September-10</i>: An initial list of lightning talks has been published. The full list of talks and speakers will be available in due course once proposals have been reviewed and speakers been notified.
+  </p>
   <p>
     <i>2024-September-05</i>: Registration is now open! Sign up for the GStreamer Conference 2024 <a href="https://www.eventbrite.com/e/gstreamer-conference-2024-tickets-1007720307567">here</a>. Speakers should wait for e-mail instructions.
   </p>
