@@ -15470,4 +15470,42 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+  <item>
+      <date>2024-09-13 01:00</date>
+        <title>Orc 0.4.40 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler, which is used for SIMD acceleration
+in GStreamer plugins such as audioconvert, audiomixer, compositor, videoscale,
+and videoconvert, to name just a few.
+        </p>
+        <p>
+This is a bug-fix release, with some minor follow-ups to the security fixes of the previous release.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>Security: Minor follow-up fixes for CVE-2024-40897</li>
+            <li>Fix include header use from C++</li>
+            <li>orccodemem: Assorted memory mapping fixes</li>
+            <li>powerpc: fix div255w which still used the inexact substitution</li>
+            <li>powerpc: Disable VSX and ISA 2.07 for Apple targets</li>
+            <li>powerpc: Allow detection of ppc64 in Mac OS</li>
+            <li>x86: work around old GCC versions (pre 9.0) having broken xgetbv implementationsv</li>
+            <li>x86: consider MSYS2/Cygwin as Windows for ABI purposes only</li>
+            <li>x86: handle unnatural and misaligned array pointers</li>
+            <li>x86: Fix non-C11 typedefs</li>
+            <li>x86: try fixing AVX detection again by adding check for XSAVE</li>
+            <li>Some compatibility fixes for Musl</li>
+            <li>meson: Fix detecting XSAVE on older AppleClangv</li>
+            <li>Check return values of malloc() and realloc()</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.40.tar.xz">orc-0.4.40.tar.xz</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
