@@ -305,6 +305,15 @@ li {
             <br />
             <small><i>Seungha Yang, Centricular</i></small>
             </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/9/contributions/376/"> -->
+            Seeking Perfection: Challenges and Solution attempts in Implementing HLS Stream Seeking with RTP Synchronization Using GStreamer
+            <!-- </a> -->
+            <br />
+            <small><i>Tokunbo Quaye, IPS</i></small>
+            </li>
+
             <li>...and more to come</li>
             <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
