@@ -15508,4 +15508,49 @@ Direct tarball download: <a href="&site;/src/orc/orc-0.4.40.tar.xz">orc-0.4.40.t
         </content>
   </item>
 
+  <item>
+      <date>2024-09-19 12:00</date>
+        <title>GStreamer 1.24.8 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.24 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it should be safe
+to update from 1.24.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>decodebin3: collection handling fixes</li>
+    <li>encodebin: Fix pad removal (and smart rendering in gst-editing-services)</li>
+    <li>glimagesink: Fix cannot resize viewport when video size changed in caps</li>
+    <li>matroskamux, webmmux: fix firefox compatibility issue with Opus audio streams</li>
+    <li>mpegtsmux: Wait for data on all pads before deciding on a best pad unless timing out</li>
+    <li>splitmuxsink: Override LATENCY query to pretend to downstream that we're not live</li>
+    <li>video: QoS event handling improvements</li>
+    <li>voamrwbenc: fix list of bitrates</li>
+    <li>vtenc: Restart encoding session when certain errors are detected</li>
+    <li>wayland: Fix ABI break in WL context type name</li>
+    <li>webrtcbin: Prevent crash when attempting to set answer on invalid SDP</li>
+    <li>cerbero: ship vp8/vp9 software encoders again, which went missing in 1.24.7; ship transcode plugin</li>
+    <li>Various bug fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.24/#1.24.8">GStreamer 1.24.8 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>
