@@ -2791,8 +2791,6 @@ from 1.24.x.
  - [decodebin3: Fix collection identity check](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7402)
  - [encodebin: Fix pad removal](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7523)
  - [glimagesink: Fix cannot resize viewport when video size changed in caps](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7450)
- - [v4l2bufferpool: actually queue back the empty buffer flagged LAST](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7485)
- - [v4l2videoenc: unref buffer pool after usage properly](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7478)
  - [video: Don't overshoot QoS earliest time by a factor of 2](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7518)
  - [meson: gst-play: link to libm](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7501)
 
@@ -2802,6 +2800,8 @@ from 1.24.x.
  - [matroskamux: Include end padding in the block duration for Opus streams, fixing firefox compatibility](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7517)
  - [osxaudio: Avoid dangling pointer on shutdown](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7451)
  - [splitmuxsink: Override LATENCY query to pretend to downstream that we're not live](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7515)
+ - [v4l2bufferpool: actually queue back the empty buffer flagged LAST](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7485)
+ - [v4l2videoenc: unref buffer pool after usage properly](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7478)
  - [v4l2: encoder: Add dynamic framerate support](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/7545)
 
 #### gst-plugins-bad
