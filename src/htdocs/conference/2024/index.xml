@@ -69,12 +69,12 @@ li {
   </p>
 -->
 
-<!--
   <h2>Schedule</h2>
   <p>
-  <a href="https://indico.freedesktop.org/event/5/timetable/?layout=room#all.detailed">Click here for the conference schedule</a>.
+  <a href="https://indico.freedesktop.org/event/9/timetable/?layout=room#all.detailed">Click here for the conference schedule</a>.
   </p>
 
+<!--
   <h2>Live Streams</h2>
   <p>
   <ul>
@@ -316,7 +316,7 @@ li {
             <br />
             <small><i>Xavier Claessens, Netflix</i></small>
             </li>
-
+<!--
             <li>
             <a href="https://indico.freedesktop.org/event/9/contributions/362/">
             Interactive GLSL Shaders for 360° Video in Python
@@ -324,7 +324,7 @@ li {
             <br />
             <small><i>Yu You, Nokia</i></small>
             </li>
-
+-->
             <li>
             <a href="https://indico.freedesktop.org/event/9/contributions/340/">
             GStreamer Meets GPAC: Enhancing GStreamer's Capabilities through GPAC Integration
@@ -978,6 +978,9 @@ li {
   <a id="news"></a>
 
   <h2>Conference News and Updates</h2>
+  <p>
+    <i>2024-September-30</i>: The conference schedule has now been published.
+  </p>
   <p>
     <i>2024-September-19</i>: The full list of talks and speakers has been published. If anything looks off or needs changing, please send us an e-mail or ping us on Matrix, thanks!
   </p>
