@@ -781,32 +781,6 @@ li {
     <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-73.58084142208101%2C45.494273703073645%2C-73.57730090618135%2C45.49592259358127&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/45.49510/-73.57907">View Larger Map</a></small>
   </p>
 
-<!--
-  <p>
-  The conference will be placed in the 2nd floor of the building, in the
-  Barlovento area. Our layout will consist in three areas: One big hall of 170
-  m<sup>2</sup>, another hall of 120 m<sup>2</sup> and one hacking area of 60
-  m<sup>2</sup>.<br/><a href="acoruna-barlovento-area.jpg"><img
-  src="acoruna-barlovento-area.jpg" alt="Palexco Barlovento one hall"
-  height="300"/></a> <a href="acoruna-barlovento-map.jpg"><img
-  src="acoruna-barlovento-map.jpg" alt="Palexco Barlovento map"
-  height="300"/></a>
-  </p>
-
-  <h2>Hotels</h2>
-  <p>
-  There is no official conference hotel, but this is list of possible hotels,
-  for your convenience, near to the venue:
-  <ul>
-    <li><a href="https://www.eurostarshotels.co.uk/eurostars-atlantico.html">Hotel Atlántico</a> (Budget. 2 min walking)</li>
-    <li><a href="https://www.hilton.com/en/hotels/lcgacdi-doubletree-a-coruna/">Hotel Double Tree by Hilton</a> (First class. 8 min walking)</li>
-    <li><a href="https://www.nh-hotels.com/hotel/nh-collection-a-coruna-finisterre">Hotel Finisterre</a> (First class. 10 min walking)</li>
-    <li><a href="https://www.melia.com/en/hotels/spain/a-coruna/melia-maria-pita/index.htm">Hotel Meliá María Pita</a> (Budget. 12 min walking)</li>
-    <li><a href="https://www.riazorhotel.com/en/">Hotel Riazor</a> (Budget. 12 min walking)</li>
-  </ul>
-  </p>
--->
-
   <a id="visa-invitation-letters"></a>
 
   <h2>Invitation Letter</h2>
@@ -814,31 +788,6 @@ li {
   If you need an invitation letter for visa application purposes, please
   <a href="mailto:conference-invitations@gstreamer-foundation.org">get in touch</a>.
   </p>
-<!--
-  <h2>Notes</h2>
-  <p>
-  <ul>
-    <li><strong>Usual timetables</strong>. Lunch time: 13:00 - 15:30. Dinner
-    time: 20:30 - 22:30. Note that you won't be able to find a restaurant open
-    for lunch at 12:00 or for dinner at 18:00, neither at 19:00; thus you might
-    want to start your day a bit "later" than usual. Main reason behind this is
-    that A Coruña is in the same timezone as central Europe, and <a
-    href="https://www.timeanddate.com/sun/spain/la-coruna">sunrise and sunset
-    times</a> are somehow shifted with regard to common standards in other parts
-    of the world.</li>
-    <li><strong>Language</strong>. The official languages in A Coruña are
-    Galician and Spanish. Not everybody is able to understand or speak English
-    (in the bus, taxi, hotel, etc). The GStreamer Conference is run in
-    English.</li>
-    <li><strong>Climate</strong>. A Coruña has a climate heavily moderated by
-    the Atlantic Ocean. Average temperatures are around 10ºC (51ºF) in winter
-    and 19ºC (66ºF) during summer. (See more info at <a
-    href="https://en.wikipedia.org/wiki/A_Coru%C3%B1a#Climate">Wikipedia</a>).</li>
-    <li><strong>Tourism</strong>. <a
-    href="http://www.turismocoruna.com/">Tourism A Coruña website</a>.</li>
-  </ul>
-  </p>
--->
 
   <a id="cfp"></a>
 
