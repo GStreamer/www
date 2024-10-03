@@ -69,12 +69,16 @@ li {
   </p>
 -->
 
+  <a id="schedule"></a>
+
   <h2>Schedule</h2>
   <p>
   <a href="https://indico.freedesktop.org/event/9/timetable/?layout=room#all.detailed">Click here for the conference schedule</a>.
   </p>
 
 <!--
+  <a id="live"></a>
+
   <h2>Live Streams</h2>
   <p>
   <ul>
@@ -721,10 +725,6 @@ li {
     allocated on a first-come first-serve basis.
   </p>
 
-<!--
-  <h2>Social Events</h2>
-
--->
   <a id="hackfest"></a>
 
   <h2>GStreamer hackfest</h2>
@@ -870,7 +870,11 @@ li {
   Lightning talks may still be proposed, see above for more details.
   </p>
 
+  <a id="social-events"></a>
+
   <h2>Social Events</h2>
+
+  <a id="sunday-social"></a>
 
   <h3>Sunday: Welcome drinks and/or food at McKibbin's</h3>
 
@@ -889,6 +893,8 @@ li {
   <p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.6565391210274!2d-73.57980892227627!3d45.49686073125672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a6a72a57653%3A0x378f332555590f1f!2zTWNLaWJiaW7igJlz!5e0!3m2!1sen!2sca!4v1727903258301!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </p>
+
+  <a id="monday-social"></a>
 
   <h3>Monday: Social Event with Food and Drinks at Les 3 Brasseurs - Saint-Paul</h3>
 
@@ -909,6 +915,8 @@ li {
   <p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5592.32866706023!2d-73.55567012227604!3d45.506770430595175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a56577e5497%3A0x80033050a5c3516c!2s3%20Brasseurs%20Saint-Paul!5e0!3m2!1sen!2sca!4v1727903391366!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </p>
+
+  <a id="tuesday-social"></a>
 
   <h3>Tuesday: Networking events with the Montreal Digital arts community</h3>
 
