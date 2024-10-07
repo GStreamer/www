@@ -718,6 +718,14 @@ li {
             <small><i>Olivier Crête, Collabora</i></small>
             </li>
 
+            <li>
+            <a href="https://indico.freedesktop.org/event/9/contributions/390/">
+            Is it easy to write a video sink plugin?
+            </a>
+            <br />
+            <small><i>Nikhil Krishna Renganathan Suresh, Detect Technologies</i></small>
+            </li>
+
             <li>...and more to come</li>
             <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
