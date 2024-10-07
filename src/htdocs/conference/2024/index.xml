@@ -76,17 +76,16 @@ li {
   <a href="https://indico.freedesktop.org/event/9/timetable/?layout=room#all.detailed">Click here for the conference schedule</a>.
   </p>
 
-<!--
   <a id="live"></a>
 
   <h2>Live Streams</h2>
   <p>
   <ul>
-  <li><a href="https://gstconf.ubicast.tv/lives/room-1/">Room 1</a></li>
-  <li><a href="https://gstconf.ubicast.tv/lives/room-2/">Room 2</a></li>
+  <li><a href="https://www.youtube.com/watch?v=KLUL1D53VQI">Day 1, Room 1</a></li>
+  <li><a href="https://www.youtube.com/watch?v=DH64D_6gc80/">Day 1, Room 2</a></li>
   </ul>
   </p>
--->
+
   <h2>Details</h2>
   <p>
   The GStreamer Conference is a conference for developers, community members,
@@ -1021,6 +1020,9 @@ li {
   <a id="news"></a>
 
   <h2>Conference News and Updates</h2>
+  <p>
+    <i>2024-October-07</i>: Links to the <a href="#live">Live streams</a> have been added.
+  </p>
   <p>
     <i>2024-October-03</i>: Published the details of the social events.
   </p>
