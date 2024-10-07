@@ -710,6 +710,14 @@ li {
             <small><i>Sebastian Benitez, Genius Sports</i></small>
             </li>
 
+            <li>
+            <a href="https://indico.freedesktop.org/event/9/contributions/389/">
+            An alternative to tee for simple cases
+            </a>
+            <br />
+            <small><i>Olivier Crête, Collabora</i></small>
+            </li>
+
             <li>...and more to come</li>
             <li><i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
