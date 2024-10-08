@@ -81,8 +81,14 @@ li {
   <h2>Live Streams</h2>
   <p>
   <ul>
-  <li><a href="https://www.youtube.com/watch?v=KLUL1D53VQI">Day 1, Room 1</a></li>
-  <li><a href="https://www.youtube.com/watch?v=DH64D_6gc80/">Day 1, Room 2</a></li>
+  <li><a href="https://www.youtube.com/live/W4Pjtg0DfIo"><b>Room 1, Day 2, Tue 8 Oct 2024</b></a></li>
+  <li><a href="https://www.youtube.com/live/jt6KyV757Dk"><b>Room 2, Day 2, Tue 8 Oct 2024</b></a></li>
+  </ul>
+  </p>
+  <p>
+  <ul>
+  <li><a href="https://www.youtube.com/watch?v=KLUL1D53VQI">Room 1, Day 1, Mon 7 Oct 2024</a></li>
+  <li><a href="https://www.youtube.com/watch?v=DH64D_6gc80/">Room 2, Day 1, Mon 7 Oct 2024</a></li>
   </ul>
   </p>
 
@@ -1041,7 +1047,10 @@ li {
 
   <h2>Conference News and Updates</h2>
   <p>
-    <i>2024-October-07</i>: Links to the <a href="#live">Live streams</a> have been added.
+    <i>2024-October-08</i>: Links to the <a href="#live">Live streams for Day 2</a> have been added.
+  </p>
+  <p>
+    <i>2024-October-07</i>: Links to the <a href="#live">Live streams for Day 1</a> have been added.
   </p>
   <p>
     <i>2024-October-03</i>: Published the details of the social events.
