@@ -16109,4 +16109,56 @@ We hope to see you all in Montréal! Don't forget to <a href="https://gstreamer.
   </content>
  </item>
 
+  <item>
+      <date>2024-10-30 23:30</date>
+        <title>GStreamer 1.24.9 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.24 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and a <a href="&site;/security/sa-2024-0004.html">security fix</a>
+and it should be safe to update from 1.24.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>gst-rtsp-server <a href="&site;/security/sa-2024-0004.html">security fix</a></li>
+    <li>GstAggregator start time selection and latency query fixes for force-live mode</li>
+    <li>audioconvert: fix dynamic handling of mix matrix, and accept custom upstream event for setting one</li>
+    <li>encodebin: fix parser selection for encoders that support multiple codecs</li>
+    <li>flvmux improvments for pipelines where timestamps don't start at 0</li>
+    <li>glcontext: egl: Unrestrict the support base DRM formats</li>
+    <li>kms: Add IMX-DCSS auto-detection in sink and fix stride with planar formats in allocator</li>
+    <li>macOS main application event loop fixes</li>
+    <li>mpegtsdemux: Handle PTS/DTS wraparound with ignore-pcr=true</li>
+    <li>playbin3, decodebin3, parsebin, urisourcebin: fix races, and improve stability and stream-collection handling</li>
+    <li>rtpmanager: fix early RTCP SR generation for sparse streams like metadata</li>
+    <li>qml6glsrc: Reduce capture delay</li>
+    <li>qtdemux: fix parsing of rotation matrix with 180 degree rotation</li>
+    <li>rtpav1depay: added wait-for-keyframe and request-keyframe properties</li>
+    <li>srt: make work with newer libsrt versions and don't re-connect on authentication failure</li>
+    <li>v4l2 fixes and improvement</li>
+    <li>webrtcsink, webrtcbin and whepsrc fixes</li>
+    <li>cerbero: fix Python 3.13 compatibility, g-i with newer setuptools, bootstrap on Arch Linux; iOS build fixes</li>
+    <li>Ship qroverlay plugin in binary packages</li>
+    <li>Various bug fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.24/#1.24.9">GStreamer 1.24.9 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>
