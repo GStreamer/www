@@ -96,6 +96,13 @@ li {
   </ul>
   </p>
 
+  <h2>Recorded talks</h2>
+  <p>
+  Talks have been recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> and
+  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2023">GStreamer Conference 2023 videos</a>
+  </p>
+
+
   <h2>Details</h2>
   <p>
   The GStreamer Conference is a conference for developers, community members,
@@ -980,25 +987,9 @@ li {
   </p>
 
   <h2>Conference News and Updates</h2>
-<!--
   <p>
-    <i>2019-November-04</i>: Videos are now available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2019">https://gstconf.ubicast.tv/channels/#gstreamer-conference-2019</a> thanks to UbiCast!
+    <i>2023-November-04</i>: Videos are now available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2013">https://gstconf.ubicast.tv/channels/#gstreamer-conference-2013</a> thanks to UbiCast!
   </p>
-  <p>
-    <i>2019-October-30</i>: There will again be an informal pre-conference meet-up social event on the evening before the conference.
-    Come to <a href="https://goo.gl/maps/4yVBD8Hj79AbzQVC9"><b>Ninkasi Guillotière</b></a> (2 Place Antonin Jutard, 69003 Lyon) on Wednesday 30 October 2019 from 19.00h onwards and say hi!
-    Food and drinks will be available for purchase, and credit cards should be accepted.
-  </p>
-  <p>
-    <i>2019-October-21</i>: There will be a social event again on Thursday
-    evening from ca. 19.00-19.30h onwards at <a href="https://www.ninkasi.fr/lieux/ninkasi-saint-paul/"><b>Ninkasi Saint-Paul</b></a>
-    at 5 Rue Octavio Mey. Food and drinks will be provided (thanks to our sponsors!),
-    including vegetarian options. Make sure to bring your conference badge.
-  </p>
-  <p>
-    <i>2019-October-16</i>: Reminder that there will also be a hackfest/hackathon on Saturday/Sunday 2-3 November 2019, just after the conference, but at another venue as the conference, namely <a href="https://goo.gl/maps/R2Jyofi2fdq6xErg9">Epitech</a>.
-  </p>
--->
   <p>
     <i>2023-September-16</i>: The (preliminary) <a href="https://indico.freedesktop.org/event/5/timetable/?layout=room#all.detailed">full conference schedule</a> is now available as well
   </p>

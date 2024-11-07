@@ -92,6 +92,12 @@ li {
   </ul>
   </p>
 
+  <h2>Recorded talks</h2>
+  <p>
+  Talks have been recorded and
+  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2024">GStreamer Conference 2024 videos</a>
+  </p>
+
   <h2>Details</h2>
   <p>
   The GStreamer Conference is a conference for developers, community members,
@@ -893,6 +899,7 @@ li {
   <p>
   The call for presentations is now closed.
   </p>
+<!--
   <p>
   Anyone who has submitted a talk proposal should receive an e-mail letting
   them know whether their proposal has been accepted in the coming days.
@@ -906,6 +913,7 @@ li {
   <p>
   Lightning talks may still be proposed, see above for more details.
   </p>
+  -->
 
   <a id="social-events"></a>
 
@@ -1046,6 +1054,9 @@ li {
   <a id="news"></a>
 
   <h2>Conference News and Updates</h2>
+  <p>
+    <i>2024-November-07</i>: <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2024">Link to the Videos have been added</a>. Thank you all for coming!
+  </p>
   <p>
     <i>2024-October-08</i>: Links to the <a href="#live">Live streams for Day 2</a> have been added.
   </p>
