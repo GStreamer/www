@@ -16161,4 +16161,61 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+  <item>
+      <date>2024-12-03 23:30</date>
+        <title>GStreamer 1.24.10 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.24 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and <a href="&site;/security/">security fixes</a>.
+</p>
+<p>
+It should be safe to update from 1.24.x, and we would recommend you update at
+your earliest convenience.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>More than <a href="https://gstreamer.freedesktop.org/security/">40 security fixes</a>
+        across a wide range of elements following an audit by the GitHub Security Lab, including
+        the MP4, Matroska, Ogg and WAV demuxers, subtitle parsers, image decoders, audio
+        decoders and the id3v2 tag parser</li>
+    <li>avviddec: Fix regression that could trigger assertions about width/height mismatches</li>
+    <li>appsink and appsrc fixes</li>
+    <li>closed caption handling fixes</li>
+    <li>decodebin3 and urisourcebin fixes</li>
+    <li>glupload: dmabuf: Fix emulated tiled import</li>
+    <li>level: fix LevelMeta values outside of the stated range</li>
+    <li>mpegtsmux, flvmux: fix potential busy looping with high cpu usage in live mode</li>
+    <li>pipeline dot file graph generation improvements</li>
+    <li>qt(6): fix criticals with multiple qml(6)gl{src,sink}</li>
+    <li>rtspsrc: Optionally timestamp RTP packets with their receive times in TCP/HTTP mode to enable clock drift handling</li>
+    <li>splitmuxsrc: reduce number of file descriptors used</li>
+    <li>systemclock: locking order fixes</li>
+    <li>v4l2: fix possible v4l2videodec deadlock on shutdown; 8-bit bayer format fixes</li>
+    <li>x265: Fix build with libx265 version >= 4.1 after masteringDisplayColorVolume API change</li>
+    <li>macOS: fix rendering artifacts in retina displays, plus ptp clock fixes</li>
+    <li>cargo: Default to thin lto for the release profile (for faster builds with lower memory requirements)</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+    <li>Translation updates</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.24/#1.24.10">GStreamer 1.24.10 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>
