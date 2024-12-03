@@ -13,6 +13,32 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2024-0030**<br/>GHSL-2024-280<br/>CVE-2024-47834 | Use-after-free in Matroska demuxer | 2024-12-03 23:30 | [Details](sa-2024-0030.html) |
+| **GStreamer-SA-2024-0029**<br/>GHSL-2024-263<br/>CVE-2024-47835 | NULL-pointer dereference in LRC subtitle parser | 2024-12-03 23:30 | [Details](sa-2024-0029.html) |
+| **GStreamer-SA-2024-0028**<br/>GHSL-2024-262<br/>CVE-2024-47774 | Integer overflow in AVI subtitle parser that leads to out-of-bounds reads | 2024-12-03 23:30 | [Details](sa-2024-0028.html) |
+| **GStreamer-SA-2024-0027**<br/>GHSL-2024-261, GHSL-2024-260, GHSL-2024-259, GHSL-2024-258<br/>CVE-2024-47778, CVE-2024-47777, CVE-2024-47776, CVE-2024-47775 | Various out-of-bounds reads in WAV parser | 2024-12-03 23:30 | [Details](sa-2024-0027.html) |
+| **GStreamer-SA-2024-0026**<br/>GHSL-2024-117<br/>CVE-2024-47615 | Out-of-bounds write in Ogg demuxer | 2024-12-03 23:30 | [Details](sa-2024-0026.html) |
+| **GStreamer-SA-2024-0025**<br/>GHSL-2024-118<br/>CVE-2024-47613 | NULL-pointer dereference in gdk-pixbuf decoder | 2024-12-03 23:30 | [Details](sa-2024-0025.html) |
+| **GStreamer-SA-2024-0024**<br/>GHSL-2024-116<br/>CVE-2024-47607 | Stack buffer-overflow in Opus decoder | 2024-12-03 23:30 | [Details](sa-2024-0024.html) |
+| **GStreamer-SA-2024-0023**<br/>GHSL-2024-228<br/>CVE-2024-47541 | Out-of-bounds write in SSA subtitle parser | 2024-12-03 23:30 | [Details](sa-2024-0023.html) |
+| **GStreamer-SA-2024-0022**<br/>GHSL-2024-115<br/>CVE-2024-47538 | Stack buffer-overflow in Vorbis decoder | 2024-12-03 23:30 | [Details](sa-2024-0022.html) |
+| **GStreamer-SA-2024-0021**<br/>GHSL-2024-251<br/>CVE-2024-47603 | NULL-pointer dereference in Matroska/WebM demuxer | 2024-12-03 23:30 | [Details](sa-2024-0021.html) |
+| **GStreamer-SA-2024-0020**<br/>GHSL-2024-249<br/>CVE-2024-47601 | NULL-pointer dereference in Matroska/WebM demuxer | 2024-12-03 23:30 | [Details](sa-2024-0020.html) |
+| **GStreamer-SA-2024-0019**<br/>GHSL-2024-250<br/>CVE-2024-47602 | NULL-pointer dereferences and out-of-bounds reads in Matroska/WebM demuxer | 2024-12-03 23:30 | [Details](sa-2024-0019.html) |
+| **GStreamer-SA-2024-0018**<br/>GHSL-2024-248<br/>CVE-2024-47600 | Out-of-bounds read in gst-discoverer-1.0 commandline tool | 2024-12-03 23:30 | [Details](sa-2024-0018.html) |
+| **GStreamer-SA-2024-0017**<br/>GHSL-2024-197<br/>CVE-2024-47540 | Usage of uninitialized stack memory in Matroska/WebM demuxer | 2024-12-03 23:30 | [Details](sa-2024-0017.html) |
+| **GStreamer-SA-2024-0016**<br/>GHSL-2024-247<br/>CVE-2024-47599 | Insufficient error handling in JPEG decoder that can lead to NULL-pointer dereferences | 2024-12-03 23:30 | [Details](sa-2024-0016.html) |
+| **GStreamer-SA-2024-0015**<br/>GHSL-2024-244<br/>CVE-2024-47596 | Integer underflow in MP4/MOV demuxer that can lead to out-of-bounds reads | 2024-12-03 23:30 | [Details](sa-2024-0015.html) |
+| **GStreamer-SA-2024-0014**<br/>GHSL-2024-166<br/>CVE-2024-47606 | Integer overflows in MP4/MOV demuxer and memory allocator that can lead to out-of-bounds writes | 2024-12-03 23:30 | [Details](sa-2024-0014.html) |
+| **GStreamer-SA-2024-0013**<br/>GHSL-2024-243<br/>CVE-2024-47546 | Integer underflow in MP4/MOV demuxer that can lead to out-of-bounds reads | 2024-12-03 23:30 | [Details](sa-2024-0013.html) |
+| **GStreamer-SA-2024-0012**<br/>GHSL-2024-245<br/>CVE-2024-47597 | Out-of-bounds reads in MP4/MOV demuxer sample table parser | 2024-12-03 23:30 | [Details](sa-2024-0012.html) |
+| **GStreamer-SA-2024-0011**<br/>GHSL-2024-238, GHSL-2024-239, GHSL-2024-240<br/>CVE-2024-47544 | NULL-pointer dereferences in MP4/MOV demuxer CENC handling  | 2024-12-03 23:30 | [Details](sa-2024-0011.html) |
+| **GStreamer-SA-2024-0010**<br/>GHSL-2024-242<br/>CVE-2024-47545 | Integer overflow in MP4/MOV demuxer that can result in out-of-bounds read | 2024-12-03 23:30 | [Details](sa-2024-0010.html) |
+| **GStreamer-SA-2024-0009**<br/>GHSL-2024-236<br/>CVE-2024-47543 | MP4/MOV demuxer out-of-bounds read | 2024-12-03 23:30 | [Details](sa-2024-0009.html) |
+| **GStreamer-SA-2024-0008**<br/>GHSL-2024-235<br/>CVE-2024-47542 | ID3v2 parser out-of-bounds read and NULL-pointer dereference | 2024-12-03 23:30 | [Details](sa-2024-0008.html) |
+| **GStreamer-SA-2024-0007**<br/>GHSL-2024-195<br/>CVE-2024-47539 | MP4/MOV Closed Caption handling out-of-bounds write | 2024-12-03 23:30 | [Details](sa-2024-0007.html) |
+| **GStreamer-SA-2024-0006**<br/>GHSL-2024-246<br/>CVE-2024-47598 | MP4/MOV sample table parser out-of-bounds read | 2024-12-03 23:30 | [Details](sa-2024-0006.html) |
+| **GStreamer-SA-2024-0005**<br/>GHSL-2024-094, GHSL-2024-237, GHSL-2024-241<br/>CVE-2024-47537 | Integer overflow in MP4/MOV sample table parser leading to out-of-bounds writes | 2024-12-03 23:30 | [Details](sa-2024-0005.html) |
 | **GStreamer-SA-2024-0004**<br/>CVE-2024-44331 | RTSP server: Potential Denial-of-Service (DoS) with specially crafted client requests | 2024-10-29 18:00 | [Details](sa-2024-0004.html) |
 | **GStreamer-SA-2024-0003**<br/>JVN#02030803 / JPCERT#92912620<br/>CVE-2024-40897 | Orc compiler stack-based buffer overflow | 2024-07-19 12:30 | [Details](sa-2024-0003.html) |
 | **GStreamer-SA-2024-0002**<br/>ZDI-CAN-23896<br/>CVE-2024-4453  | Integer overflow in EXIF metadata parser leading to potential heap overwrite | 2024-04-29 20:00 | [Details](sa-2024-0002.html) |
