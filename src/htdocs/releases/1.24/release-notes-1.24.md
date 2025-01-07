@@ -2,11 +2,11 @@
 
 GStreamer 1.24.0 was originally released on 4 March 2024.
 
-The latest bug-fix release in the stable 1.24 series is [1.24.10](#1.24.10) and was released on 03 December 2024.
+The latest bug-fix release in the stable 1.24 series is [1.24.10](#1.24.10) and was released on 06 January 2025.
 
 See [https://gstreamer.freedesktop.org/releases/1.24/][latest] for the latest version of this document.
 
-*Last updated: Tuesday 03 December 2024, 14:00 UTC [(log)][gitlog]*
+*Last updated: Tuesday 06 January 2025, 19:30 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.24/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.24/release-notes-1.24.md
@@ -3265,6 +3265,140 @@ suggestions or helped testing. Thank you all!
 
 - [List of Merge Requests applied in 1.24.10](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.24.10)
 - [List of Issues fixed in 1.24.10](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.24.10)
+
+<a id="1.24.11"></a>
+
+### 1.24.11
+
+The eleventh 1.24 bug-fix release (1.24.11) was released on 06 January 2025.
+
+This release only contains bugfixes and it *should* be safe to update from
+1.24.x.
+
+#### Highlighted bugfixes in 1.24.11
+
+ - playback: Fix SSA/ASS subtitles with embedded fonts
+ - decklink: add missing video modes and fix 8K video modes
+ - matroskamux: spec compliance fixes for audio-only files
+ - onnx: disable onnxruntime telemetry
+ - qtdemux: Fix base offset update when doing segment seeks
+ - srtpdec: Fix a use-after-free issue
+ - (uri)decodebin3: Fix stream change scenarios, possible deadlock on shutdown
+ - video: fix missing alpha flag in AV12 format description
+ - avcodecmap: Add some more channel position mappings
+ - cerbero bootstrap fixes for Windows 11
+ - Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements
+
+#### gstreamer
+
+ - No changes
+
+#### gst-plugins-base
+
+ - [appsrc: Decrease log level for item drop](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8151)
+ - [gl: raise WARNING instead of ERROR when no connector is connected](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8139)
+ - [decodebin3: Free main input even if it is not part of the list of inputs](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8232)
+ - [urisourcebin: Avoid deadlock on shutdown](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8187)
+ - [urisourcebin: Only rewrite stream-start event once](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8144)
+ - [urisourcebin/(uri)decodebin3: Fix stream change scenarios](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8119)
+ - [urisourcebin: Reference counting leak](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/4088)
+ - [playbin3: leak detected with A/V playback and window closed](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/4042)
+ - [videodecoder: Gracefully handle missing data without prior input segment](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8206)
+ - [videodecoder: set decode only flag by decode only buffer](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8148)
+ - [video: fix AV12 format lacking the GST_VIDEO_FORMAT_FLAG_ALPHA flag.](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8084)
+ - [Fix SSA/ASS subtitles with embedded fonts](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/4097)
+
+#### gst-plugins-good
+
+ - [matroskamux: Fix audio-only stream conditions and consider audio buffers as keyframes when writing out simpleblocks](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8246)
+ - [qtdemux: fix accumulated base offset in segment seeks](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8244)
+ - [rtppassthroughpay: ensure buffer is writable before mapping writable](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8137)
+ - [rtpsession: Fix twcc stats structure leak](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8115)
+ - [v4l2: object: Add P010 format](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8197)
+ - [v4l2videodec: release decode only frame in input list](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8247)
+
+#### gst-plugins-bad
+
+ - [decklink: add missing video modes, fix 8K video modes](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8122)
+ - [onnx: disable onnxruntime telemetry](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8106)
+ - [srtpdec: fix build when libsrtp1 is being used](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8207)
+ - [srtpdec: Fix a use-after-free buffer issue](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8201)
+ - [va: display: Optimize out some property indirection](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8181)
+ - [vp9parse/av1parse: Add video codec tag to the tag list](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8186)
+ - [webrtc: Simplify fmtp handling in codec stats](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8130)
+ - [webrtcbin: Fix potential deadlock on bin elements cleanup](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8165)
+ - [zxing: Replace deprecated DecodeHints with ReaderOptions](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8085)
+ - [meson: Also disable drm on GNU/Hurd](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8228)
+
+#### gst-plugins-ugly
+
+ - No changes
+
+#### GStreamer Rust plugins
+
+ - No changes
+
+#### gst-libav
+
+ - [avcodecmap: Add some more channel position mappings](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8175)
+
+#### gst-rtsp-server
+
+ - No changes
+
+#### gstreamer-vaapi
+
+ - [meson: Re-added required: lines accidentally removed](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8243)
+
+#### gstreamer-sharp
+
+ - No changes
+
+#### gst-omx
+
+ - No changes
+
+#### gst-python
+
+ - No changes
+
+#### gst-editing-services
+
+ - [ges: Fix some reference counting and error handling](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8161)
+ - [ges-meta-container: Fix the GET_INTERFACE macro](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8150)
+
+#### gst-devtools, gst-validate + gst-integration-testsuites
+
+ - No changes
+
+### gst-examples
+
+ - No changes
+
+#### Development build environment
+
+ - No changes
+
+#### Cerbero build tool and packaging changes in 1.24.11
+
+ - [Fix bootstrap on Windows 11: Install WMIC when missing](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1665)
+
+#### Contributors to 1.24.11
+
+Armin Begovic, Benjamin Gräf, Cheung Yik Pang, Christian Meissl,
+Daniel Morin, Dean Zhang (张安迪), Edward Hervey, Emil Ljungdahl,
+Francisco Javier Velázquez-García, Guillaume Desmottes,
+Jan Alexander Steffens (heftig), L. E. Segovia, Matthew Waters, Max Romanov,
+Nicolas Dufresne, Philippe Normand, Robert Mader, Samuel Thibault,
+Sebastian Dröge, Stéphane Cerveau, Thibault Saunier, Tim-Philipp Müller,
+
+... and many others who have contributed bug reports, translations, sent
+suggestions or helped testing. Thank you all!
+
+#### List of merge requests and issues fixed in 1.24.11
+
+- [List of Merge Requests applied in 1.24.11](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.24.11)
+- [List of Issues fixed in 1.24.11](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.24.11)
 
 ## Schedule for 1.26
 

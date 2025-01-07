@@ -16218,4 +16218,47 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+  <item>
+      <date>2025-01-06 23:30</date>
+        <title>GStreamer 1.24.11 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.24 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it should be safe to update from 1.24.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>playback: Fix SSA/ASS subtitles with embedded fonts</li>
+    <li>decklink: add missing video modes and fix 8K video modes</li>
+    <li>matroskamux: spec compliance fixes for audio-only files</li>
+    <li>onnx: disable onnxruntime telemetry</li>
+    <li>qtdemux: Fix base offset update when doing segment seeks</li>
+    <li>srtpdec: Fix a use-after-free issue</li>
+    <li>(uri)decodebin3: Fix stream change scenarios, possible deadlock on shutdown</li>
+    <li>video: fix missing alpha flag in AV12 format description</li>
+    <li>avcodecmap: Add some more channel position mappings</li>
+    <li>cerbero bootstrap fixes for Windows 11</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.24/#1.24.11">GStreamer 1.24.11 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
+
 </news>
