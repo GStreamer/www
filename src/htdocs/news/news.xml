@@ -16260,5 +16260,65 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+    <item>
+      <date>2025-01-14 17:00</date>
+        <title>GStreamer 1.25.1 unstable development release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the first development release in
+the unstable 1.25 release series.
+</p>
+<p>
+The unstable 1.25 release series is for testing and development purposes in
+the lead-up to the stable 1.26 series which is scheduled for release ASAP.
+Any newly-added API can still change until that point.
+</p>
+<!--
+<p>
+Full release notes will be provided in the near future, highlighting all the
+new features, bugfixes, performance optimizations and other important changes.
+</p>
+-->
+<p>
+This development release is primarily for developers and early adopters.
+</p>
+<p>
+The plan is to get 1.26 out of the door as quickly as possible.
+</p>
+<!--
+<p>
+Packagers: please note that plugins may have moved between modules, so please
+take extra care and make sure inter-module version dependencies are such that
+users can only upgrade all modules in one go, instead of seeing a mix of 1.25
+and 1.24 on their system.
+</p>
+-->
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be made available shortly
+at the <a href="https://gstreamer.freedesktop.org/pkg/">usual location</a>.
+</p>
+<p>
+Release tarballs can be downloaded directly here:
+<ul>
+  <li><a href="&site;/src/gstreamer/gstreamer-1.25.1.tar.xz">gstreamer-1.25.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-base/gst-plugins-base-1.25.1.tar.xz">gst-plugins-base-1.25.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-good/gst-plugins-good-1.25.1.tar.xz">gst-plugins-good-1.25.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.25.1.tar.xz">gst-plugins-ugly-1.25.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.25.1.tar.xz">gst-plugins-bad-1.25.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-libav/gst-libav-1.25.1.tar.xz">gst-libav-1.25.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.25.1.tar.xz">gst-rtsp-server-1.25.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-python/gst-python-1.25.1.tar.xz">gst-python-1.25.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-editing-services/gst-editing-services-1.25.1.tar.xz">gst-editing-services-1.25.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-devtools/gst-devtools-1.25.1.tar.xz">gst-devtools-1.25.1.tar.xz</a>,</li>
+  <li><a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.25.1.tar.xz">gstreamer-vaapi-1.25.1.tar.xz</a></li>
+  <li><a href="&site;/src/gstreamer-docs/gstreamer-docs-1.25.1.tar.xz">gstreamer-docs-1.25.1.tar.xz</a></li>
+</ul>
+</p>
+<p>
+As always, please give it a spin and let us know of any issues you run into by filing an
+issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a>.
+</p>
+        </content>
+  </item>
 
 </news>

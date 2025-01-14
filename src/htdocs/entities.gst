@@ -1,6 +1,6 @@
 <!ENTITY gst-branch-stable "1.24">
 <!ENTITY gst-version-stable "1.24.11">
-<!ENTITY gst-version-devel "git main">
+<!ENTITY gst-version-devel "1.25.1">
 
 <!ENTITY orc-version-stable "0.4.40">
 <!ENTITY orc-version-devel "git main">
