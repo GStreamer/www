@@ -1546,8 +1546,8 @@ Android, iOS, and macOS.
   may affect other decoders as well. Versions before 6.0.0, and 6.0.1 or higher
   are not affected.
 
-- gst-libav currently doesn't build against the latest FFmpeg 7.0 release.
-  This is being worked on and tracked in [this "libav: Fix compatibility with ffmpeg 7" Merge Request][ffmpeg-7-0-compat-mr].
+- gst-libav < 1.24.6 didn't build against the latest FFmpeg 7.0 release.
+  This has been worked on and tracked in [this "libav: Fix compatibility with ffmpeg 7" Merge Request][ffmpeg-7-0-compat-mr].
 
 [ffmpeg-7-0-compat-mr]: https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6505
 
