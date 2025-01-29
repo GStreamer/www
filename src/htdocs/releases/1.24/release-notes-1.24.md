@@ -3400,6 +3400,154 @@ suggestions or helped testing. Thank you all!
 - [List of Merge Requests applied in 1.24.11](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.24.11)
 - [List of Issues fixed in 1.24.11](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.24.11)
 
+<a id="1.24.12"></a>
+
+### 1.24.12
+
+The twelfth 1.24 bug-fix release (1.24.12) was released on 29 January 2025.
+
+This release only contains bugfixes and it *should* be safe to update from
+1.24.x.
+
+#### Highlighted bugfixes in 1.24.12
+
+ - d3d12: Fix shaders failing to compile with newer dxc versions
+ - decklinkvideosink: Fix handling of caps framerate in auto mode; also a decklinkaudiosink fix
+ - devicemonitor: Fix potential crash macOS when a device is unplugged
+ - gst-libav: Fix crash in audio encoders like avenc_ac3 if input data has insufficient alignment
+ - gst-libav: Fix build against FFmpeg 4.2 as in Ubuntu 20.04
+ - gst-editing-services: Fix Python library name fetching on Windows
+ - netclientclock: Don't store failed internal clocks in the cache, so applications can re-try later
+ - oggdemux: Seeking and duration handling fixes
+ - osxaudiosrc: Fixes for failing init/no output on recent iOS versions
+ - qtdemux: Use mvhd transform matrix and support for flipping
+ - rtpvp9pay: Fix profile parsing
+ - splitmuxsrc: Fix use with decodebin3 which would occasionally fail with an assertion when seeking
+ - tsdemux: Fix backwards PTS wraparound detection with ignore-pcr=true
+ - video-overlay-composition: Declare the video/size/orientation tags for the meta and implement scale transformations
+ - vtdec: Fix seeks occasionally hanging on macOS due to a race condition when draining
+ - webrtc: Fix duplicate payload types with RTX and multiple video codecs
+ - win32-pluginloader: Make sure not to create any windows when inspecting plugins
+ - wpe: Various fixes for re-negotiation, latency reporting, progress messages on startup
+ - x264enc: Add missing data to AvcDecoderConfigurationRecord in codec_data for high profile variants
+ - cerbero: Support using ccache with cmake if enabled
+ - Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements
+
+#### gstreamer
+
+ - [device: Fix racy nullptr deref on macOS when a device is unplugged](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8323)
+ - [iterator: Added error handling to filtered iterators](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8370)
+ - [netclientclock: Don't ever store failed internal clocks in the cache](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8364)
+ - [netclock-replay: use gst_c_args when building, fixing build failure on Solaris](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8264)
+ - [pluginloader-win32: create no window](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8357)
+ - [pluginloader-win32: fix use after free in find_helper_bin_location](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8356)
+ - [sparsefile: ensure error is set when read_buffer() returns 0](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8331)
+ - [basetransform: fix incorrect logging inside gst_base_transform_query_caps](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8289)
+
+#### gst-plugins-base
+
+ - [oggdemux: fixes seeking in some cases by not overwriting a valid duration with CLOCK_TIME_NONE](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8368)
+ - [video-overlay-composition: Declare the video/size/orientation tags for the meta & implement scale transformation](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8344)
+ - [Various fixes found from adding extra warning flags](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8293)
+
+#### gst-plugins-good
+
+ - [osxaudiosrc: Fixes for failing init/no output on recent iOS versions](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8263)
+ - [qtdemux: Use mvhd transform matrix and support for flipping](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8276)
+ - [qtmux: fix critical warnings on negotiation error](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8377)
+ - [rtpvp9pay: fix profile parsing](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8283)
+ - [splitmuxsrc: Ensure only a single stream-start event is pushed](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8284)
+ - [splitmuxsrc: decodebin3 Fails with assertion in mq_slot_handle_stream_start when seeking](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/4146)
+ - [Various fixes found from adding extra warning flags](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8293)
+
+#### gst-plugins-bad
+
+ - [decklinkvideosink: Fix handling of caps framerate in auto mode](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8306)
+ - [decklinkaudiosink: Don't crash if started without corresponding video sink](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8291)
+ - [d3d12: Fix shaders failing to compile with newer dxc versions](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8274)
+ - [tsdemux: Fix backwards PTS wraparound detection with ignore-pcr=true](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8332)
+ - [vtdec: fix seeks hangs due to a race condition draining](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8361)
+ - [vtdec: seeks freeze the pipeline](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/4179)
+ - [wayland: Print table split when DMABuf format changes](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8277)
+ - [webrtc: fix duplicate payload types with RTX and multiple video codecs](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8294)
+ - [wpevideosrc: Clear cached SHM buffers after caps re-negotiation](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8266)
+ - [wpe: Report latency and start-up progress messages](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8265)
+ - [wpe: remove glFlush() when filling buffer](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8355)
+ - [Fix build with gtk3 but not wayland](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8260)
+ - [Various fixes found from adding extra warning flags](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8293)
+
+#### gst-plugins-ugly
+
+ - [x264enc: add missing data to AvcDecoderConfigurationRecord, and switch to GstByteWriter](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8360)
+
+#### GStreamer Rust plugins
+
+ - No changes
+
+#### gst-libav
+
+ - [avaudenc: fix crash in avenc_ac3 if input buffers are insufficiently aligned](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8322)
+ - [avcodecmap: Only use new channel positions when compiling against new enough ffmpeg](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8301)
+ - [gst-libav: 1.24.11: Fails to build with minimum supported ffmpeg version](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/4163)
+
+#### gst-rtsp-server
+
+ - No changes
+
+#### gstreamer-vaapi
+
+ - No changes
+
+#### gstreamer-sharp
+
+ - No changes
+
+#### gst-omx
+
+ - No changes
+
+#### gst-python
+
+ - No changes
+
+#### gst-editing-services
+
+ - [ges: Fix Python library name fetching on Windows](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8278)
+
+#### gst-devtools, gst-validate + gst-integration-testsuites
+
+ - No changes
+
+### gst-examples
+
+ - No changes
+
+#### Development build environment
+
+ - No changes
+
+#### Cerbero build tool and packaging changes in 1.24.12
+
+ - [cmake: Support using ccache if enabled](https://gitlab.freedesktop.org/gstreamer/cerbero/-/merge_requests/1698)
+
+#### Contributors to 1.24.12
+
+Adrian Perez de Castro, Alan Coopersmith, Alexander Slobodeniuk,
+Andoni Morales Alastruey, Andrew Yooeun Chun, Brad Hards, Carlos Bentzen,
+Colin Kinloch, Edward Hervey, François Laignel, Guillaume Desmottes,
+Jochen Henneberg, Jordan Yelloz, L. E. Segovia, Monty C, Nirbheek Chauhan,
+Philippe Normand, Piotr Brzeziński, Rares Branici, Samuel Thibault,
+Sebastian Dröge, Silvio Lazzeretti, Tim-Philipp Müller, Tomas Granath,
+Will Miller,
+
+... and many others who have contributed bug reports, translations, sent
+suggestions or helped testing. Thank you all!
+
+#### List of merge requests and issues fixed in 1.24.12
+
+- [List of Merge Requests applied in 1.24.12](https://gitlab.freedesktop.org/groups/gstreamer/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&milestone_title=1.24.12)
+- [List of Issues fixed in 1.24.12](https://gitlab.freedesktop.org/groups/gstreamer/-/issues?scope=all&utf8=%E2%9C%93&state=closed&milestone_title=1.24.12)
+
 ## Schedule for 1.26
 
 Our next major feature release will be 1.26, and 1.25 will be the unstable

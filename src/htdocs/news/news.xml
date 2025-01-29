@@ -16321,4 +16321,56 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a
         </content>
   </item>
 
+  <item>
+      <date>2025-01-29 23:30</date>
+        <title>GStreamer 1.24.12 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.24 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and it should be safe to update from 1.24.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>d3d12: Fix shaders failing to compile with newer dxc versions</li>
+    <li>decklinkvideosink: Fix handling of caps framerate in auto mode; also a decklinkaudiosink fix</li>
+    <li>devicemonitor: Fix potential crash macOS when a device is unplugged</li>
+    <li>gst-libav: Fix crash in audio encoders like avenc_ac3 if input data has insufficient alignment</li>
+    <li>gst-libav: Fix build against FFmpeg 4.2 as in Ubuntu 20.04</li>
+    <li>gst-editing-services: Fix Python library name fetching on Windows</li>
+    <li>netclientclock: Don't store failed internal clocks in the cache, so applications can re-try later</li>
+    <li>oggdemux: Seeking and duration fixes</li>
+    <li>osxaudiosrc: Fixes for failing init/no output on recent iOS versions</li>
+    <li>qtdemux: Use mvhd transform matrix and support for flipping</li>
+    <li>rtpvp9pay: Fix profile parsing</li>
+    <li>splitmuxsrc: Fix use with decodebin3 which would occasionally fail with an assertion when seeking</li>
+    <li>tsdemux: Fix backwards PTS wraparound detection with ignore-pcr=true</li>
+    <li>video-overlay-composition: Declare the video/size/orientation tags for the meta and implement scale transformations</li>
+    <li>vtdec: Fix seeks occasionally hanging on macOS due to a race condition when draining</li>
+    <li>webrtc: Fix duplicate payload types with RTX and multiple video codecs</li>
+    <li>win32-pluginloader: Make sure not to create any windows when inspecting plugins</li>
+    <li>wpe: Various fixes for re-negotiation, latency reporting, progress messages on startup</li>
+    <li>x264enc: Add missing data to AvcDecoderConfigurationRecord in codec_data for high profile variants</li>
+    <li>cerbero: Support using ccache with cmake if enabled</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.24/#1.24.12">GStreamer 1.24.12 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>
