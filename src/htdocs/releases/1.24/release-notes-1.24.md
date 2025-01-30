@@ -2,11 +2,11 @@
 
 GStreamer 1.24.0 was originally released on 4 March 2024.
 
-The latest bug-fix release in the stable 1.24 series is [1.24.10](#1.24.10) and was released on 06 January 2025.
+The latest bug-fix release in the stable 1.24 series is [1.24.12](#1.24.12) and was released on 29 January 2025.
 
 See [https://gstreamer.freedesktop.org/releases/1.24/][latest] for the latest version of this document.
 
-*Last updated: Tuesday 06 January 2025, 19:30 UTC [(log)][gitlog]*
+*Last updated: Wednesday 29 January 2025, 20:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.24/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.24/release-notes-1.24.md
