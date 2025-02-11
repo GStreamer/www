@@ -25,7 +25,8 @@
     <item href="" />
 
     <item class="gstnavside-b" href="/artwork/">Artwork</item>
-    <item class="gstnavside-b" href="http://twitter.com/gstreamer">@gstreamer on Twitter</item>
-    <item class="gstnavside-b" rel="me" href="https://floss.social/@GStreamer">@gstreamer on Mastodon</item>
-    <item class="gstnavside-b" href="https://matrix.to/#/#gstreamer:gstreamer.org">#gstreamer on Matrix</item>
+    <item class="gstnavside-b" href="https://bsky.app/profile/gstreamer.org">Follow us on Bluesky</item>
+    <item class="gstnavside-b" rel="me" href="https://floss.social/@GStreamer">Follow us on Mastodon</item>
+    <item class="gstnavside-b" href="https://twitter.com/gstreamer">Follow us on Twitter</item>
+    <item class="gstnavside-b" href="https://matrix.to/#/#gstreamer:gstreamer.org">Chat with us on Matrix</item>
   </menu>
