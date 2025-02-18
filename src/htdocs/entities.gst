@@ -2,7 +2,7 @@
 <!ENTITY gst-version-stable "1.24.12">
 <!ENTITY gst-version-devel "1.25.50">
 
-<!ENTITY orc-version-stable "0.4.40">
+<!ENTITY orc-version-stable "0.4.41">
 <!ENTITY orc-version-devel "git main">
 
 <!ENTITY gst-repo-http "https://gitlab.freedesktop.org/gstreamer/">

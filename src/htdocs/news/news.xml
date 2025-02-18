@@ -16435,4 +16435,39 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a
         </content>
   </item>
 
+  <item>
+      <date>2025-02-18 00:30</date>
+        <title>Orc 0.4.41 bug-fix release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler, which is used for SIMD acceleration
+in GStreamer plugins such as audioconvert, audiomixer, compositor, videoscale,
+and videoconvert, to name just a few.
+        </p>
+        <p>
+This is a bug-fix release.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>orccodemem: Don't modify the process umask, which caused race conditions with other threads</li>
+            <li>Require glibc >= 2.07</li>
+            <li>x86: various SSE and MMX fixes</li>
+            <li>avx: Fix sqrtps encoding causing an illegal instruction crash</li>
+            <li>Hide internal symbols from ABI and do not install internal headers</li>
+            <li>Rename backend to target, including `orc-backend` meson option and `ORC_BACKEND` environment variable</li>
+            <li>Testsuite, tools: Disambiguate OrcProgram naming conventions</li>
+            <li>Build: Fix `_clear_cache` call for Clang and error out on implicit function declarations</li>
+            <li>opcodes: Use MIN instead of CLAMP for known unsigned values to fix compiler warnings</li>
+            <li>ci improvements: Upload the generated .S and .bin and include Windows artifacts</li>
+            <li>Spelling fix in debug log message</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.41.tar.xz">orc-0.4.41.tar.xz</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
