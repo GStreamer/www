@@ -70,6 +70,16 @@ If you are not sure which to pick between MSVC and MinGW, just pick MSVC.
 However, do see the [toolchain compatibility notes](#toolchain-compatibility-notes)
 below which may affect you based on what toolchain your app will be built with.
 
+Starting with 1.26, the default installation directory has been changed from
+`ROOT:\gstreamer` (where `ROOT` matches the MSI folder's drive)
+to within the Program Files directory corresponding to the chosen architecture
+e.g. `C:\Program Files (x86)\gstreamer` for the 32-bit package.
+
+NOTE for MSI packagers: Starting with 1.26, the installers are compiled with
+WiX 5.0. As part of the port, the property for setting the installation
+directory is now `INSTALLDIR`, and it requires a full path to
+the desired directory, e.g. `C:\gstreamer` instead of just `C:\`.
+
 NOTE: The library names in MSVC are different from MinGW; specifically the DLLs
 are of the form `foo.dll` instead of `libfoo.dll`.
 
