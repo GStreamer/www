@@ -16524,4 +16524,94 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a
         </content>
   </item>
 
+  <item>
+      <date>2025-03-11 23:30</date>
+        <title>GStreamer 1.26.0 new major stable release</title>
+        <content>
+<p>
+The GStreamer team is excited to announce a new major feature release of
+your favourite cross-platform multimedia framework!
+</p>
+<p>
+As always, this release is again packed with new features, bug fixes and many other improvements.
+</p>
+<p>
+The 1.26 release series adds new features on top of the previous 1.24 series
+and is part of the API and ABI-stable 1.x release series of the GStreamer
+multimedia framework.
+</p>
+<p>
+  <b>Highlights:</b>
+  <ul>
+  <li>H.266 Versatile Video Coding (VVC) codec support</li>
+  <li>Low Complexity Enhancement Video Coding (LCEVC) support</li>
+  <li>Closed captions: H.264/H.265 extractor/inserter, cea708overlay, cea708mux, tttocea708 and more</li>
+  <li>New hlscmafsink, hlssink3, and hlsmultivariantsink; HLS/DASH client and dashsink improvements</li>
+  <li>New AWS and Speechmatics transcription, translation and TTS services elements, plus translationbin</li>
+  <li>Splitmux lazy loading and dynamic fragment addition support</li>
+  <li>Matroska: H.266 video and rotation tag support, defined latency muxing</li>
+  <li>MPEG-TS: support for H.266, JPEG XS, AV1, VP9 codecs and SMPTE ST-2038 and ID3 meta; mpegtslivesrc</li>
+  <li>ISO MP4: support for H.266, Hap, Lagarith lossless codecs; raw video support; rotation tags</li>
+  <li>SMPTE 2038 ancillary data streams support</li>
+  <li>JPEG XS image codec support</li>
+  <li>Analytics: New TensorMeta; N-to-N relationships; Mtd to carry segmentation masks</li>
+  <li>ONVIF metadata extractor and conversion to/from relation metas</li>
+  <li>New originalbuffer element that can restore buffers again after transformation steps for analytics</li>
+  <li>Improved Python bindings for analytics API</li>
+  <li>Lots of Vulkan integration and Vulkan Video decoder/encoder improvements</li>
+  <li>OpenGL integration improvements, esp. in glcolorconvert, gldownload, glupload</li>
+  <li>Qt5/Qt6 QML GL sinks now support direct DMABuf import from hardware decoders</li>
+  <li>CUDA: New compositor, Jetson NVMM memory support, stream-ordered allocator</li>
+  <li>NVCODEC AV1 video encoder element, and nvdsdewarp</li>
+  <li>New Direct3D12 integration support library</li>
+  <li>New d3d12swapchainsink and d3d12deinterlace elements and D3D12 sink/source for zero-copy IPC</li>
+  <li>Decklink HDR support (PQ + HLG) and frame scheduling enhancements</li>
+  <li>AJA capture source clock handling and signal loss recovery improvements</li>
+  <li>RTP and RTSP: New rtpbin sync modes, client-side MIKEY support in rtspsrc</li>
+  <li>New Rust rtpbin2, rtprecv, rtpsend, and many new Rust RTP payloaders and depayloaders</li>
+  <li>webrtcbin support for basic rollbacks and other improvements</li>
+  <li>webrtcsink: support for more encoders, SDP munging, and a built-in web/signalling server</li>
+  <li>webrtcsrc/sink: support for uncompressed audio/video and NTP &amp; PTP clock signalling and synchronization</li>
+  <li>rtmp2: server authentication improvements incl. Limelight CDN (llnw) authentication</li>
+  <li>New Microsoft WebView2 based web browser source element</li>
+  <li>The GTK3 plugin has gained support for OpenGL/WGL on Windows</li>
+  <li>Many GTK4 paintable sink improvements</li>
+  <li>GstPlay: id-based stream selection and message API improvements</li>
+  <li>Real-time pipeline visualization in a browser using a new dots tracer and viewer</li>
+  <li>New tracers for tracking memory usage, pad push timings, and buffer flow as pcap files</li>
+  <li>VA hardware-acclerated H.266/VVC decoder, VP8 and JPEG encoders, VP9/VP8 alpha decodebins</li>
+  <li>Video4Linux2 elements support DMA_DRM caps negotiation now</li>
+  <li>V4L2 stateless decoders implement inter-frame resolution changes for AV1 and VP9</li>
+  <li>Editing services: support for reverse playback and audio channel reordering</li>
+  <li>New QUIC-based elements for working with raw QUIC streams, RTP-over-QUIC (RoQ) and WebTransport</li>
+  <li>Apple AAC audio encoder and multi-channel support for the Apple audio decoders</li>
+  <li>cerbero: Python bindings and introspection support; improved Windows installer based on WiX5</li>
+  <li>Lots of new plugins, features, performance improvements and bug fixes</li>
+  </ul>
+</p>
+<p>
+For more details check out the <a href="&site;/releases/1.26/">GStreamer 1.26 release notes</a>.
+</p>
+<p>
+Binaries for Android, iOS, macOS and Windows will be provided in due course.
+</p>
+        <p>
+You can download release tarballs directly here:
+<a href="&site;/src/gstreamer/gstreamer-1.26.0.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.26.0.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.26.0.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.26.0.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.26.0.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.26.0.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.26.0.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.26.0.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gst-editing-services-1.26.0.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-devtools/gst-devtools-1.26.0.tar.xz">gst-devtools</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.26.0.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.26.0.tar.xz">gstreamer-sharp</a>,
+<a href="&site;/src/gstreamer-docs/gstreamer-docs-1.26.0.tar.xz">gstreamer-docs</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
