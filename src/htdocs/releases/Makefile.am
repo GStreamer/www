@@ -7,6 +7,7 @@ releases.html: releases.md
 	cmark-gfm @CMARK_ARGS@ $(srcdir)/releases.md > $(builddir)/releases.html
 
 SUBDIRS = \
+	1.26 \
 	1.24 \
 	1.22 \
 	1.20 \
