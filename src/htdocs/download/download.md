@@ -51,19 +51,19 @@ split into runtime and development packages. For development, you will want to
 install both packages.
 
 * MSVC 64-bit (VS 2019, Release CRT)
-  - [1.24.12 runtime installer](/data/pkg/windows/1.24.12/msvc/gstreamer-1.0-msvc-x86_64-1.24.12.msi)
-  - [1.24.12 development installer](/data/pkg/windows/1.24.12/msvc/gstreamer-1.0-devel-msvc-x86_64-1.24.12.msi)
+  - [1.26.0 runtime installer](/data/pkg/windows/1.26.0/msvc/gstreamer-1.0-msvc-x86_64-1.26.0.msi)
+  - [1.26.0 development installer](/data/pkg/windows/1.26.0/msvc/gstreamer-1.0-devel-msvc-x86_64-1.26.0.msi)
 * MSVC 32-bit (VS 2019, Release CRT)
-  - [1.24.12 runtime installer](/data/pkg/windows/1.24.12/msvc/gstreamer-1.0-msvc-x86-1.24.12.msi)
-  - [1.24.12 development installer](/data/pkg/windows/1.24.12/msvc/gstreamer-1.0-devel-msvc-x86-1.24.12.msi)
+  - [1.26.0 runtime installer](/data/pkg/windows/1.26.0/msvc/gstreamer-1.0-msvc-x86-1.26.0.msi)
+  - [1.26.0 development installer](/data/pkg/windows/1.26.0/msvc/gstreamer-1.0-devel-msvc-x86-1.26.0.msi)
 * MinGW 64-bit
-  - [1.24.12 runtime installer](/data/pkg/windows/1.24.12/mingw/gstreamer-1.0-mingw-x86_64-1.24.12.msi)
-  - [1.24.12 development installer](/data/pkg/windows/1.24.12/mingw/gstreamer-1.0-devel-mingw-x86_64-1.24.12.msi)
+  - [1.26.0 runtime installer](/data/pkg/windows/1.26.0/mingw/gstreamer-1.0-mingw-x86_64-1.26.0.msi)
+  - [1.26.0 development installer](/data/pkg/windows/1.26.0/mingw/gstreamer-1.0-devel-mingw-x86_64-1.26.0.msi)
 * MinGW 32-bit
-  - [1.24.12 runtime installer](/data/pkg/windows/1.24.12/mingw/gstreamer-1.0-mingw-x86-1.24.12.msi)
-  - [1.24.12 development installer](/data/pkg/windows/1.24.12/mingw/gstreamer-1.0-devel-mingw-x86-1.24.12.msi)
+  - [1.26.0 runtime installer](/data/pkg/windows/1.26.0/mingw/gstreamer-1.0-mingw-x86-1.26.0.msi)
+  - [1.26.0 development installer](/data/pkg/windows/1.26.0/mingw/gstreamer-1.0-devel-mingw-x86-1.26.0.msi)
 
-For each of the above listed targets, [a zip file with `.msm` modules](/data/pkg/windows/1.24.12/)
+For each of the above listed targets, [a zip file with `.msm` modules](/data/pkg/windows/1.26.0/)
 is available for integration into your own WiX-based app installer.
 
 If you are not sure which to pick between MSVC and MinGW, just pick MSVC.
@@ -97,9 +97,9 @@ for what this means for your application.
 Binary releases built to target the Universal Windows Platform (UWP). Used for
 shipping apps on the Windows Store, such as for an XBox, HoloLens 2, etc.
 
-* UWP Universal (ARM64, X86, X86_64) (VS 2019, Release CRT) (old old stable)
+* UWP Universal (ARM64, X86, X86_64) (VS 2019, Release CRT) (old old old stable)
   - [1.20.7 runtime + development tarball](/data/pkg/windows/1.20.7/uwp/gstreamer-1.0-uwp-universal-1.20.7.tar.xz)
-* UWP Universal (ARM64, X86, X86_64) (VS 2019, Debug CRT) (old old stable)
+* UWP Universal (ARM64, X86, X86_64) (VS 2019, Debug CRT) (old old old stable)
   - [1.20.7 runtime + development tarball](/data/pkg/windows/1.20.7/uwp/gstreamer-1.0-uwp+debug-universal-1.20.7.tar.xz)
 
 UWP apps cannot use plugins that use dependencies built with MinGW because of
@@ -157,13 +157,14 @@ Binary releases in the form of `.pkg` framework installers are available. The
 installers are split into runtime and development packages. For development,
 you will want to install _both_ packages. The target SDK version for 1.20 and
 1.22 was macOS 10.11, and for 1.24 it is macOS 10.13 (High Sierra).
+<!-- FIXME: and for 1.26? -->
 
 * **macOS Universal (X86_64 &amp; ARM64) 1.24 release (current stable version)**
-  - **[1.24.12 runtime installer](/data/pkg/osx/1.24.12/gstreamer-1.0-1.24.12-universal.pkg)**
-  - **[1.24.12 development installer](/data/pkg/osx/1.24.12/gstreamer-1.0-devel-1.24.12-universal.pkg)**
-* macOS Universal (X86_64 &amp; ARM64) 1.22 release (old stable version)
-  - [1.22.12 runtime installer](/data/pkg/osx/1.22.12/gstreamer-1.0-1.22.12-universal.pkg)
-  - [1.22.12 development installer](/data/pkg/osx/1.22.12/gstreamer-1.0-devel-1.22.12-universal.pkg)
+  - **[1.26.0 runtime installer](/data/pkg/osx/1.26.0/gstreamer-1.0-1.26.0-universal.pkg)**
+  - **[1.26.0 development installer](/data/pkg/osx/1.26.0/gstreamer-1.0-devel-1.26.0-universal.pkg)**
+*macOS Universal (X86_64 &amp; ARM64) 1.24 release (old stable version)
+  - [1.24.12 runtime installer](/data/pkg/osx/1.24.12/gstreamer-1.0-1.24.12-universal.pkg)
+  - [1.24.12 development installer](/data/pkg/osx/1.24.12/gstreamer-1.0-devel-1.24.12-universal.pkg)
 
 GStreamer is also available as a 
 [![Homebrew package](https://repology.org/badge/version-for-repo/homebrew/gstreamer.svg)](https://formulae.brew.sh/formula/gstreamer), and you should be
@@ -201,13 +202,14 @@ packages entirely in their main repository for legal reasons.
 Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
-* **Android Universal [1.24.12 tarball](/data/pkg/android/1.24.12/gstreamer-1.0-android-universal-1.24.12.tar.xz) (current stable version)**
-* Android Universal [1.22.12 tarball](/data/pkg/android/1.22.12/gstreamer-1.0-android-universal-1.22.12.tar.xz) (old stable version)
+* **Android Universal [1.26.0 tarball](/data/pkg/android/1.26.0/gstreamer-1.0-android-universal-1.26.0.tar.xz) (current stable version)**
+* Android Universal [1.24.12 tarball](/data/pkg/android/1.24.12/gstreamer-1.0-android-universal-1.24.12.tar.xz) (old stable version)
 
 The Android NDKs used by our stable releases are:
 
 | GStreamer version | NDK Version |
 | ----------------- | ----------- |
+| 1.26.x            | r25c        |
 | 1.24.x            | r25c        |
 | 1.22.x            | r21         |
 | 1.20.x            | r21         |
@@ -234,8 +236,8 @@ Binary releases that integrate into XCode are available in the form of a single
 and the target SDK version for 1.16.x was iOS 9.0, for 1.18.x, 1.20.x and
 1.22.x it was iOS 11.0, and for 1.24.x it is iOS 12.0.
 
-* **iOS Universal [1.24.12 framework](/data/pkg/ios/1.24.12/gstreamer-1.0-devel-1.24.12-ios-universal.pkg) (ARM64, X86_64) (current stable version)**
-* iOS Universal [1.22.12 framework](/data/pkg/ios/1.22.12/gstreamer-1.0-devel-1.22.12-ios-universal.pkg) (ARM64, X86_64) (old stable version)
+* **iOS Universal [1.26.0 framework](/data/pkg/ios/1.26.0/gstreamer-1.0-devel-1.26.0-ios-universal.pkg) (ARM64, X86_64) (current stable version)**
+* iOS Universal [1.24.12 framework](/data/pkg/ios/1.24.12/gstreamer-1.0-devel-1.24.12-ios-universal.pkg) (ARM64, X86_64) (old stable version)
 
 [Older 1.x binary releases](/data/pkg/ios) are also available.
 </div></div>
