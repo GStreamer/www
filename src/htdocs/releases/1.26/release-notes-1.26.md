@@ -1578,13 +1578,20 @@ Android, iOS, and macOS.
   which may require linking to libatomic on some systems, but this is not
   done automatically yet, [see issue #4177](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/4177).
 
-<!--
 <a id="statistics"></a>
 ## Statistics
 
-- FIXME
+- 4496 commits
+- 2203 Merge requests merged
+- 794 Issues closed
+- 215+ Contributors
 
--->
+- ~33% of all commits and Merge Requests were in Rust modules/code
+
+- 4950 files changed
+- 515252 lines added
+- 201503 lines deleted
+- 313749 lines added (net)
 
 <a id="contributors"></a>
 
