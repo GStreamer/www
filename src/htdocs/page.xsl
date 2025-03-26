@@ -126,6 +126,26 @@
     </tr>
   </table>
   </td>
+  <!-- hackfest banner right -->
+  <td width="50%">
+  <table border="0" cellpadding="20" cellspacing="0">
+    <tr>
+      <td align="left" bgcolor="#ffffff">
+        <!--
+        <a href="&site;/conference/2023/"><img src="&site;/images/2023-conf-website-banner-a-coruna-270p.png"
+           alt="GStreamer Conference 2023 Banner" height="90" border="0" /></a> --> <!-- width="351" -->
+        <br />
+        <a href="https://discourse.gstreamer.org/t/gstreamer-spring-hackfest-2025-on-16-18-may-2025-in-nice-france/4366">
+          <div style="font-size: 1.6em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>GStreamer Spring Hackfest 2025</b></div>
+        </a>
+        <br />
+        <div style="font-size: 1.2em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>16-18 May 2025 · Nice, France</b></div>
+        <br />
+        <div style="font-size: 1.0em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>Join us!</b></div>
+      </td>
+    </tr>
+  </table>
+  </td>
   </tr>
   </table>
 

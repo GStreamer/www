@@ -16614,4 +16614,31 @@ You can download release tarballs directly here:
         </content>
   </item>
 
+    <item>
+      <date>2025-03-26 13:00</date>
+        <title>GStreamer Spring Hackfest on 16-18 May 2025 in Nice, France</title>
+        <content>
+<p>
+The GStreamer project is thrilled to announce that there will be a
+spring hackfest on Friday-Sunday 16-18 May 2025
+in Nice, France.
+</p>
+<p>
+For more details and latest updates check out the
+<a href="https://discourse.gstreamer.org/t/gstreamer-spring-hackfest-2025-on-16-18-may-2025-in-nice-france/4366">announcement on Discourse</a>.
+</p>
+<p>
+We will announce any further updates on Discourse, but you can also follow us
+<a href="https://bsky.app/profile/gstreamer.org">on Bluesky</a>
+and on <a href="https://floss.social/@GStreamer">on Mastodon</a>.
+</p>
+<p>
+We hope to see you in Nice!
+</p>
+<p>
+Please spread the word!
+</p>
+        </content>
+  </item>
+
 </news>
