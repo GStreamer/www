@@ -52,7 +52,7 @@ default:
   interruptible: true
 
 .www image:
-  tags: [ 'placeholder-job' ]
+  tags: [ 'kvm' ]
   variables:
     FDO_DISTRIBUTION_VERSION: 'bookworm'
     FDO_REPO_SUFFIX: "$WWW_AMD64_SUFFIX"
