@@ -54,6 +54,7 @@ ALERTS = \
 	sa-2024-0028.md \
 	sa-2024-0029.md \
 	sa-2024-0030.md \
+	sa-2025-0001.md \
 	$(NULL)
 
 security_pages = $(patsubst %.md,%.html,$(ALERTS))

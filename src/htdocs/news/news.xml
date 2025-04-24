@@ -16641,4 +16641,61 @@ Please spread the word!
         </content>
   </item>
 
+  <item>
+      <date>2025-04-24 23:30</date>
+        <title>GStreamer 1.26.1 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.26 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes and security fixes, and it should be safe to update from 1.26.0.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>awstranslate and speechmatics plugin improvements</li>
+    <li>decodebin3 fixes and urisourcebin/playbin3 stability improvements</li>
+    <li>Closed captions: CEA-708 generation and muxing fixes, and H.264/H.265 caption extractor fixes</li>
+    <li>dav1d AV1 decoder: RGB support, plus colorimetry, renegotiation and buffer pool handling fixes</li>
+    <li>Fix regression when rendering VP9 with alpha</li>
+    <li>H.265 decoder base class and caption inserter SPS/PPS handling fixes</li>
+    <li>hlssink3 and hlsmultivariantsink feature enhancements</li>
+    <li>Matroska v4 support in muxer, seeking fixes in demuxer</li>
+    <li>macOS: framerate guessing for cameras or capture devices where the OS reports silly framerates</li>
+    <li>MP4 demuxer uncompressed video handling improvements and sample table handling fixes</li>
+    <li>oggdemux: seeking improvements in streaming mode</li>
+    <li>unixfdsrc: fix gst_memory_resize warnings</li>
+    <li>Plugin loader fixes, especially for Windows</li>
+    <li>QML6 GL source renegotiation fixes</li>
+    <li>RTP and RTSP stability fixes</li>
+    <li>Thread-safety improvements for the Media Source Extension (MSE) library</li>
+    <li>v4l2videodec: fix A/V sync issues after decoding errors</li>
+    <li>Various improvements and fixes for the fragmented and non-fragmented MP4 muxers</li>
+    <li>Video encoder base class segment and buffer timestamp handling fixes</li>
+    <li>Video time code support for 119.88 fps and drop-frames-related conversion fixes</li>
+    <li>WebRTC: Retransmission entry creation fixes and better audio level header extension compatibility</li>
+    <li>YUV4MPEG encoder improvments</li>
+    <li>dots-viewer: make work locally without network access</li>
+    <li>gst-python: fix compatibility with PyGObject &gt;= 3.52.0</li>
+    <li>Cerbero: recipe updates, compatibility fixes for Python &lt; 3.10; Windows Android cross-build improvements</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.26/#1.26.1">GStreamer 1.26.1 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>

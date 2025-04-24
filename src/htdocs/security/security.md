@@ -13,6 +13,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2025-0001**<br/>ZDI-CAN-26596<br/>CVE-2025-3887  | Stack buffer-overflow in H.265 codec parser during slice header parsing | 2025-04-24 18:00 | [Details](sa-2025-0001.html) |
 | **GStreamer-SA-2024-0030**<br/>GHSL-2024-280<br/>CVE-2024-47834 | Use-after-free in Matroska demuxer | 2024-12-03 23:30 | [Details](sa-2024-0030.html) |
 | **GStreamer-SA-2024-0029**<br/>GHSL-2024-263<br/>CVE-2024-47835 | NULL-pointer dereference in LRC subtitle parser | 2024-12-03 23:30 | [Details](sa-2024-0029.html) |
 | **GStreamer-SA-2024-0028**<br/>GHSL-2024-262<br/>CVE-2024-47774 | Integer overflow in AVI subtitle parser that leads to out-of-bounds reads | 2024-12-03 23:30 | [Details](sa-2024-0028.html) |
