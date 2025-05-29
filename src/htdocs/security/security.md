@@ -13,6 +13,11 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2025-0006**<br/>CVE-2025-47806 | Stack buffer overflow in SubRip subtitle parser | 2025-05-29 23:55 | [Details](sa-2025-0006.html) |
+| **GStreamer-SA-2025-0005**<br/>CVE-2025-47183 | Out-of-bounds read in MOV/MP4 demuxer II | 2025-05-29 23:55 | [Details](sa-2025-0005.html) |
+| **GStreamer-SA-2025-0004**<br/>CVE-2025-47219 | Out-of-bounds read in MOV/MP4 demuxer I | 2025-05-29 23:55 | [Details](sa-2025-0004.html) |
+| **GStreamer-SA-2025-0003**<br/>CVE-2025-47808 | NULL-pointer dereference in TMPlayer subtitle parser | 2025-05-29 23:55 | [Details](sa-2025-0003.html) |
+| **GStreamer-SA-2025-0002**<br/>CVE-2025-47807 | NULL-pointer dereference in SubRip subtitle parser | 2025-05-29 23:55 | [Details](sa-2025-0002.html) |
 | **GStreamer-SA-2025-0001**<br/>ZDI-CAN-26596<br/>CVE-2025-3887  | Stack buffer-overflow in H.265 codec parser during slice header parsing | 2025-04-24 18:00 | [Details](sa-2025-0001.html) |
 | **GStreamer-SA-2024-0030**<br/>GHSL-2024-280<br/>CVE-2024-47834 | Use-after-free in Matroska demuxer | 2024-12-03 23:30 | [Details](sa-2024-0030.html) |
 | **GStreamer-SA-2024-0029**<br/>GHSL-2024-263<br/>CVE-2024-47835 | NULL-pointer dereference in LRC subtitle parser | 2024-12-03 23:30 | [Details](sa-2024-0029.html) |
