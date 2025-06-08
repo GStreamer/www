@@ -1867,12 +1867,12 @@ to update from 1.26.0.
  - [devtools: dots-viewer: Bundle js dependencies using webpack](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8847)
  - [devtools: dots-viewer: Update dependencies and make windows dependencies conditional](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8631)
 
-### gst-examples
+#### gst-examples
 
  - [examples: Update Rust dependencies](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8633)
  - [examples: webrtc: rust: Move from async-std to tokio](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8703)
 
-### gstreamer-docs
+#### gstreamer-docs
 
  - [Update docs](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8778)
 
@@ -2118,13 +2118,13 @@ again now.
  - [validate: baseclasses: Reset Test timeouts between iterations](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/9091)
  - [validate: scenario: Fix race condition when ignoring EOS](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/9098)
 
-### gst-examples
+#### gst-examples
 
  - [Fix new warnings on Fedora 42, various meson warnings, and other small meson build/wrap fixes](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8919)
  - [webrtc examples: Fix running against self-signed certs](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/9034)
  - [webrtc/signalling: fix compatibility with python 3.13](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/9000)
 
-### gstreamer-docs
+#### gstreamer-docs
 
  - No changes
 
