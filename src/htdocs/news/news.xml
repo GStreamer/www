@@ -16698,6 +16698,8 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+<!-- =========================== 1.26.2 ================================= -->
+
   <item>
       <date>2025-05-29 23:55</date>
         <title>GStreamer 1.26.2 stable bug fix release</title>
@@ -16743,6 +16745,64 @@ and it should be safe to update from 1.26.x.
 
 <p>
 See the <a href="&site;/releases/1.26/#1.26.2">GStreamer 1.26.2 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
+<!-- =========================== 1.24.13 ================================ -->
+
+  <item>
+      <date>2025-06-11 16:00</date>
+        <title>GStreamer 1.24.13 old-stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new old stable 1.24 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes as well as a number of
+<a href="&site;/security/">security fixes</a> and important playback fixes,
+and it <i>should</i> be safe to update from 1.24.x.
+</p>
+
+<p>
+Please note that the 1.24 old-stable series is no longer actively maintained
+and has been superseded by the GStreamer 1.26 stable series now.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Various <a href="&site;/security/">security fixes</a> and playback fixes</li>
+    <li>MP4 demuxer atom parsing improvements and security fixes</li>
+    <li>H.265 decoder base class and caption inserter SPS/PPS handling fixes</li>
+    <li>Subtitle parser security fixes</li>
+    <li>Subtitle rendering and seeking fixes</li>
+    <li>Closed caption fixes</li>
+    <li>Matroska rotation tag support and v4 muxing support</li>
+    <li>Ogg seeking improvements in streaming mode</li>
+    <li>Windows plugin loading fixes</li>
+    <li>MIDI parser improvements for tempo changes</li>
+    <li>Video time code support for 119.88 fps and drop-frames-related conversion fixes</li>
+    <li>GStreamer editing services fixes for sources with non-1:1 aspect ratios</li>
+    <li>RTP session handling and RTSP server fixes</li>
+    <li>Thread-safety improvements for the Media Source Extension (MSE) library</li>
+    <li>macOS video capture improvements for external devices</li>
+    <li>Python bindings: Fix compatibility with PyGObject >= 3.52.0</li>
+    <li>cerbero: bootstrapping fixes on Windows, improved support for RHEL, and openh264 recipe update</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.24/#1.24.13">GStreamer 1.24.13 release notes</a>
 for more details.
 </p>
 
