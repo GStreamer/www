@@ -1,7 +1,7 @@
 SUBDIRS = apps bindings dev download images \
 	lists modules news releases conference \
 	features projects \
-	planet artwork security
+	artwork security
 
 built_pages = index.html
 index_style = index.xsl

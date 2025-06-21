@@ -33,7 +33,6 @@ htdocs/images/Makefile
 htdocs/lists/Makefile
 htdocs/modules/Makefile
 htdocs/news/Makefile
-htdocs/planet/Makefile
 htdocs/releases/Makefile
 htdocs/releases/1.6/Makefile
 htdocs/releases/1.8/Makefile
