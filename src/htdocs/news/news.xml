@@ -16812,4 +16812,62 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+<!-- =========================== 1.26.3 ================================= -->
+
+  <item>
+      <date>2025-06-26 23:55</date>
+        <title>GStreamer 1.26.3 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.26 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes as well as a number of
+<a href="&site;/security/">security fixes</a> and important playback fixes,
+and it should be safe to update from 1.26.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Various <a href="&site;/security/">security fixes</a> and playback fixes</li>
+    <li>Security fix for the H.266 video parser</li>
+    <li>Fix regression for WAV files with acid chunks</li>
+    <li>Fix high memory consumption caused by a text handling regression in uridecodebin3 and playbin3</li>
+    <li>Fix panic on late GOP in fragmented MP4 muxer</li>
+    <li>Closed caption conversion, rendering and muxing improvements</li>
+    <li>Decklink video sink preroll frame rendering and clock drift handling fixes</li>
+    <li>MPEG-TS demuxing and muxing fixes</li>
+    <li>MP4 muxer fixes for creating very large files with faststart support</li>
+    <li>New thread-sharing 1:N inter source and sink elements, and a ts-rtpdtmfsrc</li>
+    <li>New speech synthesis element around ElevenLabs API</li>
+    <li>RTP H.265 depayloader fixes and improvements, as well as TWCC and GCC congestion control fixes</li>
+    <li>Seeking improvements in DASH client for streams with gaps</li>
+    <li>WebRTC sink and source fixes and enhancements, including to LiveKit and WHIP signallers</li>
+    <li>The macOS osxvideosink now posts navigation messages</li>
+    <li>QtQML6GL video sink input event handling improvements</li>
+    <li>Overhaul detection of hardware-accelerated video codecs on Android</li>
+    <li>Video4Linux capture source fixes and support for BT.2100 PQ and 1:4:5:3 colorimetry</li>
+    <li>Vulkan buffer upload and memory handling regression fixes</li>
+    <li>Python bindings: fix various regressions introduced in 1.26.2</li>
+    <li>cerbero: fix text relocation issues on 32-bit Android and fix broken VisualStudio VC templates</li>
+    <li>packages: ship pbtypes plugin and update openssl to 3.5.0 LTS</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.26/#1.26.3">GStreamer 1.26.3 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>
