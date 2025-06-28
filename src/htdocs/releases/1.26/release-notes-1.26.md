@@ -2,11 +2,11 @@
 
 GStreamer 1.26.0 was originally released on 11 March 2025.
 
-The latest bug-fix release in the stable 1.26 series is [1.26.2](#1.26.2) and was released on 29 May 2025.
+The latest bug-fix release in the stable 1.26 series is [1.26.3](#1.26.3) and was released on 26 June 2025.
 
 See [https://gstreamer.freedesktop.org/releases/1.26/][latest] for the latest version of this document.
 
-*Last updated: Thursday 29 May 2025, 20:00 UTC [(log)][gitlog]*
+*Last updated: Thursday 26 June 2025, 18:00 UTC [(log)][gitlog]*
 
 [latest]: https://gstreamer.freedesktop.org/releases/1.26/
 [gitlog]: https://gitlab.freedesktop.org/gstreamer/www/commits/main/src/htdocs/releases/1.26/release-notes-1.26.md
