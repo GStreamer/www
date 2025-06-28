@@ -2331,11 +2331,11 @@ bindings for regressions introduced in 1.26.2.
  - [validate: More memory leaks](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/9262)
  - [validate: Valgrind fixes](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/9154)
 
-### gst-examples
+#### gst-examples
 
  - No changes
 
-### gstreamer-docs
+#### gstreamer-docs
 
  - No changes
 
