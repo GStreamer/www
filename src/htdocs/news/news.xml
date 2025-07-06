@@ -16870,4 +16870,75 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+    <item>
+      <date>2025-07-08 23:30</date>
+        <title>GStreamer 1.27.1 unstable development release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the first development release in
+the API/ABI-unstable 1.27 release series.
+</p>
+<p>
+The API/ABI-unstable 1.27 release series is for testing and development purposes
+in the lead-up to the stable 1.28 series which is scheduled for release in late
+2025. Any newly-added API can still change until that point.
+</p>
+<p>
+This development release is primarily for developers and early adopters, and
+distros should probably not package it.
+</p>
+<p>
+  <b>Highlighted changes:</b>
+  <ul>
+    <li>Add AMD HIP plugin</li>
+    <li>Add Vulkan H.264 encoder and add 10-bit support to Vulkan H.265 decoder</li>
+    <li>Add LiteRT inference element</li>
+    <li>Aggregator: expose current-level-* properties on sink pads</li>
+    <li>Analytics: add general classifier tensor-decoder, facedetector, and more convenience API</li>
+    <li>alsa: Support enumerating virtual PCM sinks</li>
+    <li>d3d12: Add d3d12remap element</li>
+    <li>Wayland: Add basic colorimetrie support</li>
+    <li>Webkit: New wpe2 plugin making use of the "WPE Platform API"</li>
+    <li>MPEG-TS demuxer: Add property to disable skew corrections</li>
+    <li>qml6gloverlay: support directly passing a QQuickItem for QML the render tree</li>
+    <li>unifxfdsink: Add a property to allow copying to make sink usable with more upstream elements</li>
+    <li>videorate: Revive "new-pref" property for better control in case of caps changes</li>
+    <li>wasapi2: Port to IMMDevice based device selection</li>
+    <li>GstReferenceTimestampMeta can carry additional per-timestamp information now</li>
+    <li>Added GstLogContext API that allows to fix log spam in several components</li>
+    <li>New tracer hook to track when buffers are queued/dequeued in buffer pools</li>
+    <li>gst-inspect-1.0: Prints type info for caps fields now</li>
+    <li>Pipeline graph dot files now contain information about active tracers</li>
+    <li>Python bindings: add Gst.Float wrapper, Gst.ValueArray.append_value(), analytics API improvements</li>
+    <li>cerbero packages: ship vvdec and curl plugins; ship wasapi2 on MingW builds</li>
+    <li>Countless bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be made available shortly
+at the <a href="https://gstreamer.freedesktop.org/pkg/">usual location</a>.
+</p>
+<p>
+Release tarballs can be downloaded directly here:
+<ul>
+  <li><a href="&site;/src/gstreamer/gstreamer-1.27.1.tar.xz">gstreamer-1.27.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-base/gst-plugins-base-1.27.1.tar.xz">gst-plugins-base-1.27.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-good/gst-plugins-good-1.27.1.tar.xz">gst-plugins-good-1.27.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.27.1.tar.xz">gst-plugins-ugly-1.27.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.27.1.tar.xz">gst-plugins-bad-1.27.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-libav/gst-libav-1.27.1.tar.xz">gst-libav-1.27.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.27.1.tar.xz">gst-rtsp-server-1.27.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-python/gst-python-1.27.1.tar.xz">gst-python-1.27.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-editing-services/gst-editing-services-1.27.1.tar.xz">gst-editing-services-1.27.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-devtools/gst-devtools-1.27.1.tar.xz">gst-devtools-1.27.1.tar.xz</a>,</li>
+  <li><a href="&site;/src/gstreamer-docs/gstreamer-docs-1.27.1.tar.xz">gstreamer-docs-1.27.1.tar.xz</a></li>
+</ul>
+</p>
+<p>
+As always, please give it a spin and let us know of any issues you run into by filing an
+issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a>.
+</p>
+        </content>
+  </item>
+
 </news>
