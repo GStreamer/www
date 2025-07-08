@@ -42,6 +42,7 @@ The 1.27.x release series is for testing and development purposes, and distros s
  - Python bindings: add Gst.Float wrapper, Gst.ValueArray.append_value(), analytics API improvements
  - cerbero packages: ship vvdec and curl plugins; ship wasapi2 on MingW builds
  - Removed the gstreamer-vaapi module which has now been superseded by the va plugin
+ - Countless bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements
 
 #### gstreamer
 
