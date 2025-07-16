@@ -16941,4 +16941,53 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a
         </content>
   </item>
 
+<!-- =========================== 1.26.4 ================================= -->
+
+  <item>
+      <date>2025-07-16 19:00</date>
+        <title>GStreamer 1.26.4 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.26 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes as well,
+and it should be safe to update from 1.26.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>adaptivedemux2: Fixed reverse playback</li>
+    <li>d3d12screencapture: Add support for monitor add/remove in device provider</li>
+    <li>rtmp2src: various fixes to make it play back AWS medialive streams</li>
+    <li>rtph265pay: add profile-id, tier-flag, and level-id to output rtp caps</li>
+    <li>vp9parse: Fix handling of spatial SVC decoding</li>
+    <li>vtenc: Fix negotiation failure with `profile=main-422-10`</li>
+    <li>gtk4paintablesink: Add YCbCr memory texture formats and other improvements</li>
+    <li>livekit: add room-timeout</li>
+    <li>mp4mux: add TAI timestamp muxing support</li>
+    <li>rtpbin2: fix various race conditions, plus other bug fixes and performance improvements</li>
+    <li>threadshare: add a `ts-rtpdtmfsrc` element, implement run-time input switching in `ts-intersrc`</li>
+    <li>webrtcsink: fix deadlock on error setting remote description and other fixes</li>
+    <li>cerbero: WiX installer: fix missing props files in the MSI packages</li>
+    <li>smaller macOS/iOS package sizes</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.26/#1.26.4">GStreamer 1.26.4 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+ 
 </news>
