@@ -17,10 +17,9 @@ images = london_banner.jpg
 #  sponsor_sat_2025_2630x644.png \
 #  $(NULL)
 
-documents =
-#documents = gstreamer-conference-sponsor-brief-2024.pdf
+documents = gstreamer-conference-sponsor-brief-2025.pdf
 
-#gstreamer-conference-sponsor-brief-2025.pdf:
-#	cp $(top_srcdir)/copy/documents/gstreamer-conference-sponsor-brief-2025.pdf gstreamer-conference-sponsor-brief-2025.pdf
+gstreamer-conference-sponsor-brief-2025.pdf:
+	cp $(top_srcdir)/copy/documents/gstreamer-conference-sponsor-brief-2025.pdf gstreamer-conference-sponsor-brief-2025.pdf
 
 include $(top_srcdir)/html.make
