@@ -16989,5 +16989,56 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
 </p>
         </content>
   </item>
- 
+
+<!-- =========================== 1.26.5 ================================= -->
+
+  <item>
+      <date>2025-08-07 23:00</date>
+        <title>GStreamer 1.26.5 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.26 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes, and it should be safe to update from 1.26.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>audioconvert: Fix caps negotiation regression when using a mix matrix</li>
+    <li>aws: Add support for brevity in awstranslate and add option to partition speakers in the transcription output of awstranscriber2</li>
+    <li>speechmatics speech-to-text: Expose mask-profanities property</li>
+    <li>cea708mux: Add support for discarding select services on each input</li>
+    <li>cea608overlay, cea708overlay: Accept GPU memory buffers if downstream supports the overlay composition meta</li>
+    <li>d3d12screencapture source element and device provider fixes</li>
+    <li>decodebin3: Don't error on an incoming ONVIF metadata stream</li>
+    <li>uridecodebin3: Fix potential crash when adding URIs to messages, e.g. if no decoder is available</li>
+    <li>v4l2: Fix memory leak for dynamic resolution change</li>
+    <li>VA encoder fixes</li>
+    <li>videorate, imagefreeze: Add support for JPEG XS</li>
+    <li>Vulkan integration fixes</li>
+    <li>wasapi2 audio device monitor improvements</li>
+    <li>webrtc: Add WHEP client signaller and add whepclientsrc element on top of webrtcsrc using that</li>
+    <li>threadshare: Many improvements and fixes to the generic threadshare and RTP threadshare elements</li>
+    <li>rtpbin2 improvements and fixes</li>
+    <li>gst-device-monitor-1.0 command line tool improvements</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.26/#1.26.5">GStreamer 1.26.5 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>
