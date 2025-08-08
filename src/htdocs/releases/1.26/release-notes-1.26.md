@@ -2568,9 +2568,9 @@ and it *should* be safe to update from 1.26.x.
 #### Highlighted bugfixes in 1.26.5
 
  - audioconvert: Fix caps negotiation regression when using a mix matrix
- - aws: Add support for brevity in awstranslate and add option to partition speakers in the transcription output of awstranscriber2
- - speechmatics speech-to-text: Expose mask-profanities property
- - cea708mux: Add support for discarding select services on each input
+ - <del>aws: Add support for brevity in awstranslate and add option to partition speakers in the transcription output of awstranscriber2</del>
+ - <del>speechmatics speech-to-text: Expose mask-profanities property</del>
+ - <del>cea708mux: Add support for discarding select services on each input</del>
  - cea608overlay, cea708overlay: Accept GPU memory buffers if downstream supports the overlay composition meta
  - d3d12screencapture source element and device provider fixes
  - decodebin3: Don't error on an incoming ONVIF metadata stream
@@ -2580,7 +2580,7 @@ and it *should* be safe to update from 1.26.x.
  - videorate, imagefreeze: Add support for JPEG XS
  - Vulkan integration fixes
  - wasapi2 audio device monitor improvements
- - webrtc: Add WHEP client signaller and add whepclientsrc element on top of webrtcsrc using that
+ - <del>webrtc: Add WHEP client signaller and add whepclientsrc element on top of webrtcsrc using that</del>
  - threadshare: Many improvements and fixes to the generic threadshare and RTP threadshare elements
  - rtpbin2 improvements and fixes
  - gst-device-monitor-1.0 command line tool improvements
@@ -2629,34 +2629,36 @@ and it *should* be safe to update from 1.26.x.
 
 #### GStreamer Rust plugins
 
- - [awstranscriber2,awstranslate: Handle multiple stream-start event](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2404)
- - [awstranslate: expose property for turning brevity on](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2406)
- - [awstranscriber2: add property for setting show_speaker_labels](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2240)
- - [cea708mux: expose "discarded-services" property on sink pads](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2389)
- - [ceaX08overlay: support ANY caps features, allowing e.g. memory:GLMemory if downstream supports the overlay composition meta](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2390)
- - [hlsmultivariantsink: Fix master playlist version](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2415)
- - [rtprecv: Drop state lock before chaining RTCP packets from the RTP chain function](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2381)
- - [rtpbin2: Add examples](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2360)
- - [rtpmp4apay2: fix payload size prefix](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2391)
- - [rtp: threadshare: fix some property ranges](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2382)
- - [mpegtslivesrc: Remove leftover debug message](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2412)
- - [speechmatics: expose mask-profanities property](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2344)
- - [ts-audiotestsrc fixes](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2392)
- - [threadshare: fix flush for ts-queue ts-proxy & ts-intersrc](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2400)
- - [threadshare: fix regression in ts-proxysrc](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2405)
- - [threadshare: improvements to some elements](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2387)
- - [threadshare: udp: avoid getifaddrs in android](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1918)
- - [threadshare: Enable windows `Win32_Networking` feature](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2420)
- - [threadshare: queue & proxy: fix race condition stopping](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2428)
- - [threadshare: Also enable windows `Win32_Networking_WinSock` feature](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2431)
- - [tracers: pipeline-snapshot: reduce WebSocket connection log level](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2433)
- - [tracers: queue-levels: add support for threadshare DataQueue related elements](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2399)
- - [tracers: Update to etherparse 0.19](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2414)
- - [transcriberbin: Fix handling of upstream latency query](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2398)
- - [webrtc: android example: fix media handling initialization sequence](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2216)
- - [webrtcsink: Move videorate before videoconvert and videoscale to avoid processing frames that would be dropped](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2402)
- - [whep: add WHEP client signaller](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1545)
- - [Fix various new clippy 1.89 warnings](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2436)
+ - **Note: This list has been updated**, since it originally accidentally included some Merge Requests that only landed in the `main` branch, not in the `0.14` branch that ships with our GStreamer 1.26.5 packages.
+
+ - [awstranscriber2, awstranslate: Handle multiple stream-start event](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2426)
+ - <del>[awstranslate: expose property for turning brevity on](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2406))</del>
+ - <del>[awstranscriber2: add property for setting show_speaker_labels](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2240))</del>
+ - <del>[cea708mux: expose "discarded-services" property on sink pads](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2389))</del>
+ - [ceaX08overlay: support ANY caps features, allowing e.g. memory:GLMemory if downstream supports the overlay composition meta](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2396)
+ - [hlsmultivariantsink: Fix master playlist version](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2417)
+ - [rtprecv: Drop state lock before chaining RTCP packets from the RTP chain function](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2384)
+ - [Add rtpbin2 examples](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2386)
+ - [rtpmp4apay2: fix payload size prefix](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2394)
+ - [rtp: threadshare: fix some property ranges](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2421)
+ - [mpegtslivesrc: Remove leftover debug message](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2413)
+ - <del>[speechmatics: expose mask-profanities property](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2344))</del>
+ - [ts-audiotestsrc fixes](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2424)
+ - [threadshare: fix flush for ts-queue ts-proxy & ts-intersrc](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2403)
+ - [threadshare: fix regression in ts-proxysrc](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2407)
+ - [threadshare: improvements to some elements](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2422)
+ - <del>[threadshare: udp: avoid getifaddrs in android](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1918))</del>
+ - [threadshare: Enable windows `Win32_Networking` feature](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2429)
+ - [threadshare: queue & proxy: fix race condition stopping](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2430)
+ - [threadshare: Also enable windows `Win32_Networking_WinSock` feature](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2432)
+ - [tracers: pipeline-snapshot: reduce WebSocket connection log level](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2434)
+ - [tracers: queue-levels: add support for threadshare DataQueue related elements](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2401)
+ - [tracers: Update to etherparse 0.19](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2416)
+ - [transcriberbin: Fix handling of upstream latency query](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2423)
+ - <del>[webrtc: android example: fix media handling initialization sequence](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2216))</del>
+ - [webrtcsink: Move videorate before videoconvert and videoscale to avoid processing frames that would be dropped](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2425)
+ - <del>[whep: add WHEP client signaller](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/1545)</del>
+ - [Fix various new clippy 1.89 warnings](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/merge_requests/2437)
 
 #### gst-libav
 
