@@ -608,9 +608,6 @@ h2 {
     <i>2025-July-24</i>: The GStreamer project is delighted to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference again at Silver level this year!
   </p>
   <p>
-    <i>2025-July-19</i>: The GStreamer project welcomes back <b><a href="https://centricular.com">Centricular</a></b> as Gold level sponsor this year.
-  </p>
-  <p>
     <i>2025-July-19</i>: We're thrilled to see <b><a href="https://www.igalia.com/">Igalia</a></b> return Platinum level sponsor this year!
   </p>
   <p>
@@ -620,6 +617,9 @@ h2 {
     <i>2025-May-08</i>: Venue announced: <a href="https://www.concordia.ca/hospitality/hospitality-venues/concordia-conference-centre.html">Concordia University Conference Centre</a>, Montréal, Québec, Canada.
   </p>
 -->
+  <p>
+    <i>2025-August-15</i>: The GStreamer project welcomes back <b><a href="https://centricular.com">Centricular</a></b> as sponsor, at Platinum level this year!
+  </p>
   <p>
     <i>2025-August-04</i>: Sponsorship brief available
   </p>
@@ -655,7 +655,9 @@ h2 {
   <h1>Sponsors</h1>
   <h2>Platinum Sponsors</h2>
 
-  <p>tbd</p>
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" width="100%" /></a>
+  </p>
 
 <!--
   <p class="gstconf-sponsorlogo">
@@ -676,9 +678,6 @@ h2 {
   <p>tbd</p>
 
 <!--
-  <p class="gstconf-sponsorlogo">
-    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" width="100%" /></a>
-  </p>
   <p class="gstconf-sponsorlogo">
     <a href="https://sat.qc.ca/"><img src="sponsor_sat_2025_2630x644.png" alt="Société des arts technologiques" width="100%" /></a>
   </p>
