@@ -611,12 +611,12 @@ h2 {
     <i>2025-July-19</i>: We're thrilled to see <b><a href="https://www.igalia.com/">Igalia</a></b> return Platinum level sponsor this year!
   </p>
   <p>
-    <i>2025-July-19</i>: The GStreamer project is excited to see <b><a href="https://www.collabora.com">Collabora</a></b> return as a Platinum sponsor this year!
-  </p>
-  <p>
     <i>2025-May-08</i>: Venue announced: <a href="https://www.concordia.ca/hospitality/hospitality-venues/concordia-conference-centre.html">Concordia University Conference Centre</a>, Montréal, Québec, Canada.
   </p>
 -->
+  <p>
+    <i>2025-August-15</i>: We're excited to see <b><a href="https://www.collabora.com">Collabora</a></b> return as a Platinum sponsor this year!
+  </p>
   <p>
     <i>2025-August-15</i>: The GStreamer project welcomes back <b><a href="https://centricular.com">Centricular</a></b> as sponsor, at Platinum level this year!
   </p>
@@ -659,11 +659,11 @@ h2 {
     <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" width="100%" /></a>
   </p>
 
-<!--
   <p class="gstconf-sponsorlogo">
-    <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_2025.png" alt="Collabora" width="85%"/></a>
+    <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_2024.png" alt="Collabora" width="85%"/></a>
   </p>
 
+<!--
   <p class="gstconf-sponsorlogo">
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" width="85%" /></a>
   </p>

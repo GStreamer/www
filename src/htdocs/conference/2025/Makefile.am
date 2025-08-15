@@ -3,12 +3,12 @@ built_pages = index.html
 
 images = london_banner.jpg \
   sponsor_centricular_753x125.png \
+  sponsor_collabora_02_rgb_2024.png \
   $(NULL)
 
 #  sponsor_asymptotic_2024.png \
 #  sponsor_axis.png \
 #  sponsor_cablecast.png \
-#  sponsor_collabora_02_rgb_2024.png \
 #  sponsor_fluendo_1060x200.png \
 #  sponsor_genius_sports.png \
 #  sponsor_igalia_2015_2019x720.png \
