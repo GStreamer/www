@@ -608,12 +608,12 @@ h2 {
     <i>2025-July-24</i>: The GStreamer project is delighted to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference again at Silver level this year!
   </p>
   <p>
-    <i>2025-July-19</i>: We're thrilled to see <b><a href="https://www.igalia.com/">Igalia</a></b> return Platinum level sponsor this year!
-  </p>
-  <p>
     <i>2025-May-08</i>: Venue announced: <a href="https://www.concordia.ca/hospitality/hospitality-venues/concordia-conference-centre.html">Concordia University Conference Centre</a>, Montréal, Québec, Canada.
   </p>
 -->
+  <p>
+    <i>2025-August-15</i>: The GStreamer project is thrilled to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as Platinum level sponsor this year!
+  </p>
   <p>
     <i>2025-August-15</i>: We're excited to see <b><a href="https://www.collabora.com">Collabora</a></b> return as a Platinum sponsor this year!
   </p>
@@ -663,11 +663,11 @@ h2 {
     <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_2024.png" alt="Collabora" width="85%"/></a>
   </p>
 
-<!--
   <p class="gstconf-sponsorlogo">
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" width="85%" /></a>
   </p>
 
+<!--
   <p class="gstconf-sponsorlogo">
     <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" width="85%" /></a>
   </p>
