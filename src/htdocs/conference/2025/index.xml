@@ -612,6 +612,9 @@ h2 {
   </p>
 -->
   <p>
+    <i>2025-August-15</i>: We're delighted to welcome <b><a href="https://www.mediascribe.ai">MediaScribe</a></b> as Silver level sponsor this year!
+  </p>
+  <p>
     <i>2025-August-15</i>: The GStreamer project is thrilled to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as Platinum level sponsor this year!
   </p>
   <p>
@@ -693,7 +696,9 @@ h2 {
 
   <h2 style="padding:1em 0 0 0">Silver Sponsors</h2>
 
-  <p>tbd</p>
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.mediascribe.ai"><img src="sponsor_mediascribe.svg" alt="MediaScribe" width="100%" /></a>
+  </p>
 
 <!--
 
@@ -711,10 +716,6 @@ h2 {
 
   <p class="gstconf-sponsorlogo">
     <a href="https://asymptotic.io"><img src="sponsor_asymptotic_2025.png" alt="asymptotic" width="100%" /></a>
-  </p>
-
-  <p class="gstconf-sponsorlogo">
-    <a href="https://cablecast.tv"><img src="sponsor_cablecast.png" alt="Cablecast" width="100%" /></a>
   </p>
 
   <p class="gstconf-sponsorlogo">

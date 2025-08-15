@@ -5,6 +5,7 @@ images = london_banner.jpg \
   sponsor_centricular_753x125.png \
   sponsor_collabora_02_rgb_2024.png \
   sponsor_igalia_2015_2019x720.png \
+  sponsor_mediascribe.svg \
   $(NULL)
 
 #  sponsor_asymptotic_2024.png \
