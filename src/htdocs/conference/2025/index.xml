@@ -676,7 +676,7 @@ h2 {
 
   <h2 style="padding:1em 0 0 0">Gold Sponsors</h2>
 
-  <p>tbd</p>
+  <p><small>tbd</small></p>
 
 <!--
   <p class="gstconf-sponsorlogo">
@@ -737,13 +737,12 @@ h2 {
   </p>
 -->
 
-<!--
   <p>
     <small>
     Interested in <a href="&site;/conference/2025/gstreamer-conference-sponsor-brief-2025.pdf">becoming a sponsor</a>?
     </small>
   </p>
--->
+
 </td>
 
 </tr>
