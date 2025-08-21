@@ -26,7 +26,7 @@ h2 {
 
 <h1>GStreamer Conference 2025</h1>
 
-  <h2>23-24 | 27-28 October 2025 · London, UK</h2>
+  <h2>23-24 October 2025 · London, UK</h2>
 
 <p>
 
@@ -60,14 +60,13 @@ h2 {
 
   <p>
     We're thrilled to announce that the <b>13th GStreamer Conference</b> is
-    planned (but <b><u>not</u></b> confirmed yet!) to take place on <b>Thursday and Friday 23-24 October 2025</b>
+    now confirmed to take place on <b>Thursday and Friday 23-24 October 2025</b>
     in <b>London, UK</b>.
   </p>
   <p>
-    If those dates turn out to not be possible for some reason, Monday/Tuesday 27-28 October 2025 will be our fallback.
-  </p>
-  <p>
-    There will also a multi-day <b>GStreamer hackfest</b> before or after the conference (including the weekend of the <b>25-26 October 2025</b>).
+    There will also a multi-day <b>GStreamer hackfest</b> after the conference,
+    on the weekend of the <b>25-26 October 2025</b>, and possibly also on
+    Monday <b>27 October 2025</b> (to be confirmed).
   </p>
   <p>
     In addition, the <b>Foundations of Open Media Standards and Software (FOMS) Workshop 2025</b>
@@ -75,18 +74,6 @@ h2 {
     <a href="https://2025.demuxed.com/"><b>Demuxed 2025</b></a>, the conference
     for video devs! Also in London, of course.
   </p>
-
-<!--
-  <p>
-  Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> and
-  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2019">GStreamer Conference 2019 videos</a>
-  </p>
-  <p>
-  Slides for some of the talks and the lightning talks can be found in the
-  <a href="&site;/data/events/gstreamer-conference/2019/">GStreamer Conference 2019 slides</a>
-  folder.
-  </p>
--->
 
 <!--
   <a id="schedule"></a>
@@ -209,6 +196,10 @@ h2 {
   Check out <a href="&site;/conference/2024/index.html#talks-and-speakers">last year's schedule</a> to get an idea about the kind of speakers and topics to expect.
   </p>
 
+  <p>
+  Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a>.
+  </p>
+
 <!--
   <p>
     <a href="schedule.html">Click here for the conference schedule</a>.
@@ -279,8 +270,9 @@ h2 {
 
   <h2>GStreamer hackfest</h2>
   <p>
-    There will again be a multi-day hackfest before or after the conference,
-    including the weekend of <b>25-26 October 2025</b>.
+    There will again be a multi-day hackfest after the conference,
+    on the weekend of <b>25-26 October 2025</b>, and possibly also on
+    Monday <b>27 October 2025</b> (to be confirmed).
   </p>
 
   <a id="sponsoring"></a>
@@ -320,22 +312,16 @@ h2 {
   <h2>Venue</h2>
   
   <p>
-  The conference venue will be confirmed at a later date.
-  </p>
-
-<!--
-  <p>
   The conference will take place at: <br/>
-  <a href="https://www.concordia.ca/hospitality/hospitality-venues/concordia-conference-centre.html">Concordia University Conference Centre</a><br/>
-  John Molson School of Business<br/>
-  1450 rue Guy<br/>
-  Montréal, Québec<br/>
-  Canada, H3H 0A1<br/>
+  <a href="https://www.barbican.org.uk/">The Barbican Centre</a><br/>
+  Level 4<br/>
+  Silk Street<br/>
+  London, EC2Y 8DS<br/>
+  United Kingdom<br/>
   </p>
   <p>
-    <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-73.58084142208101%2C45.494273703073645%2C-73.57730090618135%2C45.49592259358127&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/45.49510/-73.57907">View Larger Map</a></small>
+    <iframe allowfullscreen="" width="600" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6260195259492!2d-0.09545704841114099!3d51.520076779537185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b56fb64b275%3A0xc756e26675d21f40!2sBarbican+Centre!5e0!3m2!1sen!2suk!4v1501233400694" style="border: 1px solid black"></iframe>
   </p>
--->
 
   <a id="visa-invitation-letters"></a>
 
@@ -604,10 +590,16 @@ h2 {
   <p>
     <i>2025-July-24</i>: The GStreamer project is delighted to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference again at Silver level this year!
   </p>
-  <p>
-    <i>2025-May-08</i>: Venue announced: <a href="https://www.concordia.ca/hospitality/hospitality-venues/concordia-conference-centre.html">Concordia University Conference Centre</a>, Montréal, Québec, Canada.
-  </p>
 -->
+  <p>
+    <i>2025-August-21</i>: Venue announced: <a href="https://www.barbican.org.uk/your-visit/general-info/map-directions">The Barbican Centre</a>, Silk St, London, EC2Y 8DS, Level 4.
+  </p>
+  <p>
+    <i>2025-August-21</i>: Dates confirmed: The conference will take place on Thursday and Friday 23-24 October 2025, followed by a hackfest.
+  </p>
+  <p>
+    <i>2025-August-20</i>: Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> this year.
+  </p>
   <p>
     <i>2025-August-19</i>: We're excited to see <b><a href="https://pexip.com/">Pexip</a></b> return again as Platinum sponsor this year!
   </p>
@@ -726,11 +718,13 @@ h2 {
     <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
   </p>
   -->
-<!--
+
   <h2>Special Media Partner</h2>
-  <p style="padding:10px 0px">
-    <a href="https://www.ubicast.eu/"><img src="sponsor_ubicast_1059x292.png" alt="UbiCast" height="75" /></a>
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.ubicast.eu/"><img src="sponsor_ubicast_1059x292.png" alt="UbiCast" width="100%" /></a>
   </p>
+
+<!--
   <h2>Press Partners</h2>
   <p style="padding:10px 0px">
     <a href="https://lwn.net"><img src="lwn-logo-gstconf2016.png" alt="LWN" height="99" width="300" /></a>
