@@ -576,9 +576,6 @@ h2 {
     <i>2025-August-21</i>: We're thrilled to welcome <b><a href="https://cablecast.tv">Cablecast</a></b> as first-time sponsor this year, at Silver level!
   </p>
   <p>
-    <i>2025-August-20</i>: The GStreamer project is happy to see <b><a href="https://axis.com">Axis Communications</a></b> sponsor the conference again at Gold level this year!
-  </p>
-  <p>
     <i>2025-August-08</i>: The GStreamer project welcomes <b><a href="https://sat.qc.ca/">la SAT</a></b> (Société des Arts Technologiques) as new Gold level sponsor this year!
   </p>
   <p>
@@ -591,6 +588,9 @@ h2 {
     <i>2025-July-24</i>: The GStreamer project is delighted to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference again at Silver level this year!
   </p>
 -->
+  <p>
+    <i>2025-August-25</i>: The GStreamer project is happy to see <b><a href="https://axis.com">Axis Communications</a></b> sponsor the conference again at Gold level this year!
+  </p>
   <p>
     <i>2025-August-21</i>: Venue announced: <a href="https://www.barbican.org.uk/your-visit/general-info/map-directions">The Barbican Centre</a>, Silk St, London, EC2Y 8DS, Level 4.
   </p>
@@ -668,15 +668,13 @@ h2 {
 
   <h2 style="padding:1em 0 0 0">Gold Sponsors</h2>
 
-  <p><small>tbd</small></p>
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" width="100%" /></a>
+  </p>
 
 <!--
   <p class="gstconf-sponsorlogo">
     <a href="https://sat.qc.ca/"><img src="sponsor_sat_2025_2630x644.png" alt="Société des arts technologiques" width="100%" /></a>
-  </p>
-
-  <p class="gstconf-sponsorlogo">
-    <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" width="100%" /></a>
   </p>
 
   <p class="gstconf-sponsorlogo">
