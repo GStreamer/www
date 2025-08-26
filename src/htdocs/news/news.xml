@@ -17041,4 +17041,63 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+<!-- =========================== conf 2025 ================================= -->
+
+    <item>
+      <date>2025-08-26 18:00</date>
+        <title>GStreamer Conference 2025 announced to take place 23-24 October 2025 in London, UK</title>
+        <content>
+<p>
+The GStreamer project is thrilled to announce that this year's <b>GStreamer
+Conference</b> is now confirmed to take place on Thursday and Friday <b>23-24 October 2025</b>
+in <b>London, UK</b>, followed by a 2-3 day hackfests.
+</p>
+<p>
+You can find more details about the conference on the
+<a href="https://gstreamer.freedesktop.org/conference/2025/">GStreamer
+Conference 2025 web site</a>.
+</p>
+<p>
+A <b>Call for Presentations</b> will be sent out shortly.
+</p>
+<p>
+<b>Registration</b> is expected to open soon as well.
+</p>
+<p>
+We will announce those and any further updates on the
+<a href="https://lists.freedesktop.org/mailman/listinfo/gstreamer-announce">gstreamer-announce mailing list</a>,
+the <a href="https://gstreamer.freedesktop.org/conference/2025/">conference website</a>,
+<a href="https://bsky.app/profile/gstreamer.org">on Bluesky</a>,
+<a href="https://floss.social/@GStreamer">on Mastodon</a>, and on our
+<a href="https://discourse.gstreamer.org">Discourse forum</a>.
+</p>
+<p>
+Talk slots will be available in varying durations from 20 minutes up to
+45 minutes. Whatever you're doing or planning to do with GStreamer,
+we'd like to hear from you!
+</p>
+<p>
+We also plan to have sessions with short lightning talks / demos /
+showcase talks for those who just want to show what they've been
+working on or do a mini-talk instead of a full-length talk. Lightning
+talk slots will be allocated on a first-come-first-serve basis, so make
+sure to reserve your slot if you plan on giving a lightning talk.
+</p>
+<!--
+<p>
+Our main social event will be on Thursday evening, and there'll also be a welcome drinks/snacks get-together on Wednesday evening.
+</p>
+-->
+<p>
+A GStreamer <b>hackfest</b> will take place right after the conference.
+</p>
+<p>
+We hope to see you in London!
+</p>
+<p>
+Please spread the word!
+</p>
+        </content>
+  </item>
+
 </news>
