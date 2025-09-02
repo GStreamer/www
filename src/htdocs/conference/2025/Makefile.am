@@ -9,6 +9,7 @@ images = london_banner.jpg \
   sponsor_mediascribe.svg \
   sponsor_pexip_2019_965x261.png \
   sponsor_ubicast_1059x292.png \
+  sponsor_veo.png \
   $(NULL)
 
 #  sponsor_cablecast.png \

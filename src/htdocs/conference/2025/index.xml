@@ -589,6 +589,9 @@ h2 {
   </p>
 -->
   <p>
+    <i>2025-September-02</i>: We're thrilled to welcome <b><a href="https://www.veo.co">Veo</a></b> as first-time sponsor this year, at Silver level!
+  </p>
+  <p>
     <i>2025-August-25</i>: The GStreamer project is happy to see <b><a href="https://axis.com">Axis Communications</a></b> sponsor the conference again at Gold level this year!
   </p>
   <p>
@@ -686,6 +689,10 @@ h2 {
 
   <p class="gstconf-sponsorlogo">
     <a href="https://www.mediascribe.ai"><img src="sponsor_mediascribe.svg" alt="MediaScribe" width="100%" /></a>
+  </p>
+
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.veo.co"><img src="sponsor_veo.png" alt="Veo" width="100%" /></a>
   </p>
 
 <!--
