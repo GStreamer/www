@@ -564,9 +564,6 @@ h2 {
     <i>2025-September-03</i>: The call for presentations is now closed, but lightning talks may still be submitted. Speakers will be notified shortly. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics this year, stay tuned for updates. If you had problems submitting your talk at the last minute via Indico, please <a href="mailto:conference-2025@gstreamer.org">get in touch</a> and we'll see what we can do.
   </p>
   <p>
-    <i>2025-September-03</i>: We're very pleased to see <b><a href="https://fluendo.com">Fluendo</a></b> return as sponsor this year, at Silver level!
-  </p>
-  <p>
     <i>2025-August-30</i>: The GStreamer project is excited to have <b><a href="https://www.geniussports.com">Genius Sports</a></b> sponsor for the first time, at Gold level!
   </p>
   <p>
@@ -588,6 +585,9 @@ h2 {
     <i>2025-July-24</i>: The GStreamer project is delighted to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference again at Silver level this year!
   </p>
 -->
+  <p>
+    <i>2025-September-08</i>: The GStreamer project is excited to see <b><a href="https://fluendo.com">Fluendo</a></b> sponsor at Gold level this year!
+  </p>
   <p>
     <i>2025-September-02</i>: We're thrilled to welcome <b><a href="https://www.veo.co">Veo</a></b> as first-time sponsor this year, at Silver level!
   </p>
@@ -675,6 +675,10 @@ h2 {
     <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" width="100%" /></a>
   </p>
 
+  <p class="gstconf-sponsorlogo">
+    <a href="https://fluendo.com"><img src="sponsor_fluendo_1060x200.png" alt="Fluendo" width="100%" /></a>
+  </p>
+
 <!--
   <p class="gstconf-sponsorlogo">
     <a href="https://sat.qc.ca/"><img src="sponsor_sat_2025_2630x644.png" alt="Société des arts technologiques" width="100%" /></a>
@@ -711,10 +715,6 @@ h2 {
 
   <p class="gstconf-sponsorlogo">
     <a href="https://asymptotic.io"><img src="sponsor_asymptotic_2025.png" alt="asymptotic" width="100%" /></a>
-  </p>
-
-  <p class="gstconf-sponsorlogo">
-    <a href="https://fluendo.com"><img src="sponsor_fluendo_1060x200.png" alt="Fluendo" width="100%" /></a>
   </p>
 -->
 

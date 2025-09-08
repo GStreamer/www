@@ -5,6 +5,7 @@ images = london_banner.jpg \
   sponsor_axis.png \
   sponsor_centricular_753x125.png \
   sponsor_collabora_02_rgb_2024.png \
+  sponsor_fluendo_1060x200.png \
   sponsor_igalia_2015_2019x720.png \
   sponsor_mediascribe.svg \
   sponsor_pexip_2019_965x261.png \
@@ -12,8 +13,6 @@ images = london_banner.jpg \
   sponsor_veo.png \
   $(NULL)
 
-#  sponsor_cablecast.png \
-#  sponsor_fluendo_1060x200.png \
 #  sponsor_genius_sports.png \
 #  sponsor_laerdal_2024.png \
 #  sponsor_sat_2025_2630x644.png
