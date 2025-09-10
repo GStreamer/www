@@ -132,7 +132,7 @@ h2 {
   <h2>Registration</h2>
 
   <p>
-    Registration is not open yet.
+    Registration is not open yet, but should hopefully be available very soon.
   </p>
 
 <!--
@@ -149,8 +149,9 @@ h2 {
   <p>
     <div style="margin-left:5%">
     <table width="80%" cellpadding="5">
-      <tr><td><b>Professional (Regular)</b></td><td><b>to be determined</b> <!-- (ca. 250 EUR / 280 USD) --> <b>+ ca. 20% VAT + fees</b></td></tr>
-      <tr><td><b>Professional (Supporter)</b></td><td><b>to be determined</b> <!-- (ca. 250 EUR / 280 USD) --> <b>+ ca. 20% VAT + fees</b></td></tr>
+      <tr><td><b>Professional (Early Bird)</b></td><td><b>£260</b> (ca. 300 EUR / 350 USD) <b>for both days, incl. 20% VAT</b></td></tr>
+      <tr><td><b>Professional (Regular)</b></td><td><b>£300</b> (ca. 350 EUR / 405 USD) <b>for both days, incl. 20% VAT</b></td></tr>
+      <tr><td><b>Professional (Corporate)</b></td><td><b>£600</b>  (ca. 695 EUR / 810 USD) <b>for both days, incl. 20% VAT</b></td></tr>
       <tr><td><b>Speakers (for non-lightning talks)</b></td><td><b>Free</b> (instructions will be sent by e-mail)</td></tr>
       <tr><td><b>Student/Hobbyist</b></td><td><b>Free or voluntary donation</b></td></tr>
     </table>
@@ -158,8 +159,14 @@ h2 {
   </p>
 
   <p>
+    <b>
     All tickets include lunch at the venue on both conference days
     as well as access to the evening social event.
+    </b>
+  </p>
+
+  <p>
+    Different tickets have different <b>refund policies</b>: All tickets are transferable or fully refundable in case of visa issues or if entry was denied at the border. Early Bird tickets are transferable, but not refundable. Regular Professional tickets are fully refundable until 22 September, and 50% refundable until 8 October, and non-refundable therafter. Corporate Professional tickets are fully refundable until 8 October, 80% refundable until 22 October, and non-refundable therafter.
   </p>
 
   <p>
@@ -567,9 +574,6 @@ h2 {
     <i>2025-August-30</i>: The GStreamer project is excited to have <b><a href="https://www.geniussports.com">Genius Sports</a></b> sponsor for the first time, at Gold level!
   </p>
   <p>
-    <i>2025-August-29</i>: Ticket prices have been added, expect registration to open shortly!
-  </p>
-  <p>
     <i>2025-August-21</i>: We're thrilled to welcome <b><a href="https://cablecast.tv">Cablecast</a></b> as first-time sponsor this year, at Silver level!
   </p>
   <p>
@@ -585,6 +589,9 @@ h2 {
     <i>2025-July-24</i>: The GStreamer project is delighted to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference again at Silver level this year!
   </p>
 -->
+  <p>
+    <i>2025-September-10</i>: Ticket prices have been added, registration should hopefully also open in the near future.
+  </p>
   <p>
     <i>2025-September-08</i>: The GStreamer project is excited to see <b><a href="https://fluendo.com">Fluendo</a></b> sponsor at Gold level this year!
   </p>
