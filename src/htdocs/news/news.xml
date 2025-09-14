@@ -17187,4 +17187,56 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a
         </content>
   </item>
 
+<!-- =========================== 1.26.6 ================================= -->
+
+  <item>
+      <date>2025-09-14 13:00</date>
+        <title>GStreamer 1.26.6 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.26 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes, and it should be safe to update from 1.26.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>analytics GstTensorMeta handling changes (see release notes)</li>
+    <li>closed caption combiner and transcriberbin stability fixes</li>
+    <li>decklinkvideosrc: fix unrecoverable state after failing to start streaming because device is busy</li>
+    <li>decodebin3 tag handling improvements</li>
+    <li>fallbacksrc: Fix sources only being restarted once, as well as some deadlocks and race conditions on shutdown</li>
+    <li>gtk4paintablesink: Try importing dmabufs withouth DMA_DRM caps</li>
+    <li>hlsdemux2: Fix parsing of byterange and init map directives</li>
+    <li>rtpmp4gdepay2: allow only constantduration with neither constantsize nor sizelength set</li>
+    <li>spotifysrc: update to librespot 0.7 to make work after recent Spotify changes</li>
+    <li>threadshare: new blocking adapter element for use in front of block elements such as sinks that sync to the clock</li>
+    <li>threadshare: various other threadshare element fixes and improvements</li>
+    <li>v4l2: Add support for WVC1 and WMV3</li>
+    <li>videorate: possible performance improvements when operating in drop-only mode</li>
+    <li>GstBaseParse fixes</li>
+    <li>Vulkan video decoder fixes</li>
+    <li>Fix gst-device-monitor-1.0 tool device-path regression on Windows</li>
+    <li>Python bindings: Handle buffer PTS, DTS, duration, offset, and offset-end as unsigned long long (regression fix)</li>
+    <li>Cerbero: Reduce recipe parallelism in various cases and dump cerbero and recipe versions into datadir during packaging</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.26/#1.26.6">GStreamer 1.26.6 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>
