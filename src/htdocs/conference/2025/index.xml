@@ -131,20 +131,14 @@ h2 {
 
   <h2>Registration</h2>
 
-  <p>
-    Registration is not open yet, but should hopefully be available very soon.
-  </p>
-
-<!--
   <p><b>Registration is now open!</b></p>
 
   <p>
-    <b><a href="https://www.eventbrite.com/e/gstreamer-conference-2025-tickets-1007720307567">Sign up for the GStreamer Conference 2025 here</a></b>
+    <b><a href="https://ti.to/gstreamer/gstreamer-conference-2025">Sign up for the GStreamer Conference 2025 here!</a></b>
   </p>
--->
 
   <p>
-  There will be separate registration options for professionals, speakers and for students and hobbyists:
+  There are separate registration options for professionals, speakers and for students and hobbyists:
   </p>
   <p>
     <div style="margin-left:5%">
@@ -181,14 +175,13 @@ h2 {
     <b>Speakers:</b> You will receive free registration! Details will be sent
     out by e-mail along with the talk acceptance notifications or shortly
     thereafter. Not that we will complain if you decide to buy a ticket of
-    course.
+    course. So if you intend to submit a (non-lightning) talk you may want to
+    hold off with purchasing a ticket for now.
   </p>
 
-<!--
   <p>
-    <b><a href="https://www.eventbrite.com/e/gstreamer-conference-2025-tickets-1007720307567">Sign up for the GStreamer Conference 2025 here</a></b>
+    <b><a href="https://ti.to/gstreamer/gstreamer-conference-2025">Sign up for the GStreamer Conference 2025 here</a></b>
   </p>
--->
 
   <a id="cfp"></a>
 
@@ -565,9 +558,6 @@ h2 {
     <i>2025-September-10</i>: An initial list of lightning talks has been published. The full list of talks and speakers will be available in due course once proposals have been reviewed and speakers been notified.
   </p>
   <p>
-    <i>2025-September-05</i>: Registration is now open! Sign up for the GStreamer Conference 2025 <a href="https://www.eventbrite.com/e/gstreamer-conference-2025-tickets-1007720307567">here</a>. Speakers should wait for e-mail instructions.
-  </p>
-  <p>
     <i>2025-September-03</i>: The call for presentations is now closed, but lightning talks may still be submitted. Speakers will be notified shortly. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics this year, stay tuned for updates. If you had problems submitting your talk at the last minute via Indico, please <a href="mailto:conference-2025@gstreamer.org">get in touch</a> and we'll see what we can do.
   </p>
   <p>
@@ -589,6 +579,9 @@ h2 {
     <i>2025-July-24</i>: The GStreamer project is delighted to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference again at Silver level this year!
   </p>
 -->
+  <p>
+    <i>2025-September-20</i>: Registration is now open! Sign up for the GStreamer Conference 2025 <a href="https://ti.to/gstreamer/gstreamer-conference-2025">here</a>. If you intend to submit a (non-lightning) talk, you may want to wait for the Call for Presentations to open, since speakers will receive free tickets.
+  </p>
   <p>
     <i>2025-September-10</i>: Ticket prices have been added, registration should hopefully also open in the near future.
   </p>
