@@ -384,17 +384,32 @@ h2 {
   <h2>City</h2>
   <p>
   This year's conference will take place in
-  <a href="https://en.wikipedia.org/wiki/London">London</a>, United Kingdom.
+  <b><a href="https://en.wikipedia.org/wiki/London">London</a>, United Kingdom</b>.
   </p>
 
-<!--
   <p>
   <i>Getting there</i>
   </p>
   <p>
-  <b>By air to Montréal-Trudeau International Airport</b>
+  <b>By train</b>
+  You can travel directly by train to London St Pancras from Paris, Brussels,
+  Lille, and Amsterdam. King's Cross / St Pancras station is only a couple of
+  minutes by tube from the Barbican Centre.
   </p>
--->
+  <p>
+  <b>By air</b>
+  London Heathrow (LHR) and London Gatwick (LGW) are the main international
+  airports, but for short-haul flights London Stansted (STN), London Luton (LTN),
+  London City (LCY) or even London Southend (SEN) airports may also be options.
+  </p>
+  <p>
+  <b>Electronic Travel Authorisation (ETA)</b>
+  Many visitors, including most international visitors traveling without a visa,
+  including most EU, EEA, Swiss US, Canadian, and Australian citizens, will
+  need an <a href="https://www.gov.uk/eta">Electronic Travel Authorisation (ETA)</a>,
+  which is a digital permission to travel that costs £16 and is valid for two years.
+  </p>
+
   <a id="venue"></a>
 
   <h2>Venue</h2>
@@ -579,6 +594,9 @@ h2 {
     <i>2025-July-24</i>: The GStreamer project is delighted to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference again at Silver level this year!
   </p>
 -->
+  <p>
+    <i>2025-September-21</i>: Added a note that an <a href="https://www.gov.uk/eta">Electronic Travel Authorisation (ETA)</a> is required for most international visitors traveling without a visa, including most EU, EEA, Swiss US, Canadian, Australian citizens.
+  </p>
   <p>
     <i>2025-September-20</i>: Registration is now open! Sign up for the GStreamer Conference 2025 <a href="https://ti.to/gstreamer/gstreamer-conference-2025">here</a>. If you intend to submit a (non-lightning) talk, you may want to wait for the Call for Presentations to open, since speakers will receive free tickets.
   </p>
