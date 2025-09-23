@@ -187,12 +187,8 @@ h2 {
 
   <h2>Call for Presentations</h2>
 
-  <p>
-    The Call for Presentations will open RealSoonNow™. Please watch this space for updates.
-  </p>
-<!--
   <p><b>
-  The call for presentations is now open for talk proposals and lightning talks.
+  The call for presentations is now <a href="https://indico.freedesktop.org/event/11/abstracts/">open</a> for talk proposals and lightning talks.
   </b></p>
   <p><b>
   Please submit your talk now!
@@ -210,15 +206,9 @@ h2 {
   get it perfect.
   </p>
   <p>
-  <b>The talk submission deadline is Monday, 2 September 2025 23:59h!</b>
+   <b>Talks will be reviewed and slots allocated on a rolling basis, so make sure to submit your proposal sooner rather than later!</b>
   </p>
--->
-<!--
-  <p>
-  <b>The talk submission deadline has been extended and is 30 September 2019 for second round slots!</b>
-  </p>
--->
-<!--
+
   <p>
   Lightning talks can be submitted until the day of the conference.
   </p>
@@ -234,6 +224,7 @@ h2 {
     <li>20 minutes</li>
     <li>30 minutes</li>
     <li>40 minutes</li>
+    <li>45 minutes</li>
 
   including questions.
   </p>
@@ -244,12 +235,12 @@ h2 {
   what your plans are, what you like, what you dislike, how to improve things!
   </p>
   <p>
-  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/9/">GStreamer Conference 2025 Talk Submission Portal</a>.
+  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/11/abstracts/">GStreamer Conference 2025 Talk Submission Portal</a>.
   </p>
   <p>
-  You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system.
+  You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system. If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
   </p>
--->
+
 <!--
   <p>
   The call for presentations is now closed.
@@ -327,6 +318,7 @@ h2 {
             <li>i>Submit <u>your</u> lightning talk now!</i></li>
     </ul>
   </p>
+-->
 
   <a id="lightning-talks"></a>
 
@@ -342,7 +334,7 @@ h2 {
     Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
   </p>
   <p>
-    Please submit all lightning talks through the <a href="https://indico.freedesktop.org/event/9/">GStreamer Conference 2025 Talk Submission Portal</a>.
+    <b>Please submit all lightning talks through the <a href="https://indico.freedesktop.org/event/11/abstracts/">GStreamer Conference 2025 Talk Submission Portal</a></b>.
   </p>
   <p>
     You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system.
@@ -352,7 +344,6 @@ h2 {
     There is no deadline for Lightning Talk submissions, slots will be
     allocated on a first-come first-serve basis.
   </p>
--->
 
   <a id="hackfest"></a>
 
@@ -588,12 +579,12 @@ h2 {
     <i>2025-August-02</i>: We're pleased to have <b><a href="https://asymptotic.io">Asymptotic</a></b> sponsor the conference again at Silver level this year!
   </p>
   <p>
-    <i>2025-August-01</i>: The Call for Presentations is now open, please submit your talk proposals now!
-  </p>
-  <p>
     <i>2025-July-24</i>: The GStreamer project is delighted to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference again at Silver level this year!
   </p>
 -->
+  <p>
+    <i>2025-September-23</i>: The Call for Presentations is now finally open, please <a href="https://indico.freedesktop.org/event/11/abstracts/">submit</a> your talk proposals and lightning talks now!
+  </p>
   <p>
     <i>2025-September-21</i>: Added a note that an <a href="https://www.gov.uk/eta">Electronic Travel Authorisation (ETA)</a> is required for most international visitors traveling without a visa, including most EU, EEA, Swiss US, Canadian, Australian citizens.
   </p>
