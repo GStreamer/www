@@ -302,23 +302,29 @@ h2 {
   </p>
 -->
 
-<!--
   <p>
     <b>Lightning Talks:</b>
     <ul>
             <li>
-            <a href="https://indico.freedesktop.org/event/9/contributions/322/">
-            GQuark in GStreamer structures — What nonsense!
-            </a>
+            <!-- <a href="https://indico.freedesktop.org/event/11/contributions/458/"> -->
+            Showing the Invisible - Performance Analysis with Tracers
+            <!-- </a> -->
             <br />
-            <small><i>Sebastian Dröge, Centricular</i></small>
+            <small><i>François Laignel, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/11/contributions/459/"> -->
+            Video Frame Scheduler Plugin for Improving WebRTC Playback Quality
+            <!-- </a> -->
+            <br />
+            <small><i>Haejung Hwang, LG Electronics</i></small>
             </li>
 
             <li>...and more to come</li>
-            <li>i>Submit <u>your</u> lightning talk now!</i></li>
+            <li><i>Submit <u>your</u> lightning talk <a href="https://indico.freedesktop.org/event/11/abstracts/">now</a>!</i></li>
     </ul>
   </p>
--->
 
   <a id="lightning-talks"></a>
 
