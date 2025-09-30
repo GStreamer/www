@@ -321,6 +321,38 @@ h2 {
             <small><i>Haejung Hwang, LG Electronics</i></small>
             </li>
 
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/11/contributions/478/"> -->
+            Audio source separation using snakes, crabs and torches
+            <!-- </a> -->
+            <br />
+            <small><i>Sebastian Dröge, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/11/contributions/482/"> -->
+            soothe: a proposal for encoder testing
+            <!-- </a> -->
+            <br />
+            <small><i>Victor Manuel Jáquez Leal, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/11/contributions/479/"> -->
+            burn: a little case study on using GstAnalytics from Rust
+            <!-- </a> -->
+            <br />
+            <small><i>Sebastian Dröge, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/11/contributions/483/"> -->
+            GstVA and GStreamer-VAAPI updates
+            <!-- </a> -->
+            <br />
+            <small><i>Victor Manuel Jáquez Leal, Igalia</i></small>
+            </li>
+
             <li>...and more to come</li>
             <li><i>Submit <u>your</u> lightning talk <a href="https://indico.freedesktop.org/event/11/abstracts/">now</a>!</i></li>
     </ul>
