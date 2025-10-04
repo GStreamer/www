@@ -310,7 +310,7 @@ h2 {
     <ul>
             <li>
             <!-- <a href="https://indico.freedesktop.org/event/11/contributions/458/"> -->
-            Showing the Invisible - Performance Analysis with Tracers
+            Showing the invisible: Analysing buffer flow with tracers
             <!-- </a> -->
             <br />
             <small><i>François Laignel, Centricular</i></small>
@@ -370,6 +370,14 @@ h2 {
             <!-- </a> -->
             <br />
             <small><i>Axel Tobieson, Spiideo</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/11/contributions/503/"> -->
+            Fast and dirty: vibe coding use case plugging the NVIDIA kernel into GStreamer streams
+            <!-- </a> -->
+            <br />
+            <small><i>Jesus Luque, Mediapro</i></small>
             </li>
 
             <li>...and more to come</li>
