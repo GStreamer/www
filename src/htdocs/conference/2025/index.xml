@@ -388,6 +388,13 @@ h2 {
             <small><i>Nicolas Dufresne, Collabora</i></small>
             </li>
 
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/11/contributions/511/"> -->
+            pexLGPL bundle
+            <!-- </a> -->
+            <br />
+            <small><i>Tulio Beloqui, Pexip</i></small>
+            </li>
 
             <li>...and more to come</li>
             <li><i>Submit <u>your</u> lightning talk <a href="https://indico.freedesktop.org/event/11/abstracts/">now</a>!</i></li>
