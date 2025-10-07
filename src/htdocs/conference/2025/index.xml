@@ -204,8 +204,10 @@ h2 {
 
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
+    <br/>
+    <br/>
+    <b>Talks:</b>
     <ul>
-
             <li>
             <a href="https://indico.freedesktop.org/event/11/contributions/460/">
             GStreamer State of the Union
