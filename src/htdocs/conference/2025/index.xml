@@ -146,7 +146,7 @@ h2 {
       <tr><td><p style="color:darkgray;"><b>Professional (Early Bird) (Sold Out)</b></p></td><td><p style="color:darkgray;"><b>£260</b> (ca. 300 EUR / 350 USD) <b>for both days, incl. 20% VAT</b></p></td></tr>
       <tr><td><b>Professional (Regular)</b></td><td><b>£300</b> (ca. 350 EUR / 405 USD) <b>for both days, incl. 20% VAT</b></td></tr>
       <tr><td><b>Professional (Corporate)</b></td><td><b>£600</b>  (ca. 695 EUR / 810 USD) <b>for both days, incl. 20% VAT</b></td></tr>
-      <tr><td><b>Speakers (for non-lightning talks)</b></td><td><b>Free</b> (instructions will be sent by e-mail)</td></tr>
+      <tr><td><b>Speakers (for non-lightning talks)</b></td><td><b>Free</b> (instructions have been sent by e-mail)</td></tr>
       <tr><td><b>Student/Hobbyist</b></td><td><b>Free or voluntary donation</b></td></tr>
     </table>
     </div>
@@ -172,103 +172,20 @@ h2 {
   </p>
 
   <p>
-    <b>Speakers:</b> You will receive free registration! Details will be sent
-    out by e-mail along with the talk acceptance notifications or shortly
-    thereafter. Not that we will complain if you decide to buy a ticket of
-    course. So if you intend to submit a (non-lightning) talk you may want to
-    hold off with purchasing a ticket for now.
+    <b>Speakers:</b> You will receive free registration! Details have been sent
+    out by e-mail along with the talk acceptance notifications. Not that we will
+    complain if you decide to buy a ticket of course.
   </p>
 
   <p>
     <b><a href="https://ti.to/gstreamer/gstreamer-conference-2025">Sign up for the GStreamer Conference 2025 here</a></b>
   </p>
 
-  <a id="cfp"></a>
-
-  <h2>Call for Presentations</h2>
-
-  <p><b>
-  The call for presentations is now <a href="https://indico.freedesktop.org/event/11/abstracts/">open</a> for talk proposals and lightning talks.
-  </b></p>
-  <p><b>
-  Please submit your talk now!
-  </b></p>
-  <p>
-  The initial submission needs to be only a couple of sentences or paragraphs
-  describing the talk you want to give and the desired length of your talk.
-  </p>
-  <p>
-  Please allow at least 5 minutes for questions at the end as well.
-  </p>
-  <p>
-  You will still be able to edit and refine your talk proposal after the
-  initial submission, so there's no need to hold off until the last minute to
-  get it perfect.
-  </p>
-  <p>
-   <b>Talks will be reviewed and slots allocated on a rolling basis, so make sure to submit your proposal sooner rather than later!</b>
-  </p>
-  <p><b>
-  The submission deadline for talk proposals is 05 October 2025, 23:50h!
-  </b></p>
-
-  <p>
-  Lightning talks can be submitted until the day of the conference.
-  </p>
-  <p>
-  Talks can be on almost anything multimedia related, ranging from talks about
-  applications to challenges in the lower levels in the stack or hardware.
-  </p>
-
-  <p>
-  You can request a slot for one of the following durations:
-
-    <li>5 minutes (Lightning Talks)</li>
-    <li>20 minutes</li>
-    <li>30 minutes</li>
-    <li>40 minutes</li>
-    <li>45 minutes</li>
-
-  including questions.
-  </p>
-
-  <p>
-  We want to hear from you, what you are working on, what you are using
-  GStreamer for, what difficulties you have encountered and how you solved them,
-  what your plans are, what you like, what you dislike, how to improve things!
-  </p>
-  <p>
-  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/11/abstracts/">GStreamer Conference 2025 Talk Submission Portal</a>.
-  </p>
-  <p>
-  You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system. If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
-  </p>
-
-<!--
-  <p>
-  The call for presentations is now closed.
-  </p>
--->
-<!--
-  <p>
-  Anyone who has submitted a talk proposal should receive an e-mail letting
-  them know whether their proposal has been accepted in the coming days.
-  Thank you to everyone who submitted a proposal.
-  </p>
-  <p>
-  If you had problems submitting your talk at the last minute via Indico,
-  please <a href="mailto:conference-2025@gstreamer.org">get in touch</a>
-  as soon as possible and we'll see what we can do.
-  </p>
-  <p>
-  Lightning talks may still be proposed, see above for more details.
-  </p>
-  -->
-
   <a id="talks-and-speakers"></a>
 
   <h2>Schedule and speakers list</h2>
 
+<!--
   <p>
   This will be published at a later date once the inital Call for Presentations
   round has closed.
@@ -277,10 +194,7 @@ h2 {
   <p>
   Check out <a href="&site;/conference/2024/index.html#talks-and-speakers">last year's schedule</a> to get an idea about the kind of speakers and topics to expect.
   </p>
-
-  <p>
-  Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a>.
-  </p>
+-->
 
 <!--
   <p>
@@ -702,6 +616,10 @@ h2 {
     </ul>
   </p>
 
+  <p>
+  Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a>.
+  </p>
+
   <a id="lightning-talks"></a>
 
   <h2>Showcase or Lightning Talks</h2>
@@ -877,6 +795,81 @@ h2 {
 
 -->
 
+  <a id="cfp"></a>
+
+  <h2>Call for Presentations</h2>
+<!--
+  <p><b>
+  The call for presentations is now <a href="https://indico.freedesktop.org/event/11/abstracts/">open</a> for talk proposals and lightning talks.
+  </b></p>
+  <p><b>
+  Please submit your talk now!
+  </b></p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk.
+  </p>
+  <p>
+  Please allow at least 5 minutes for questions at the end as well.
+  </p>
+  <p>
+  You will still be able to edit and refine your talk proposal after the
+  initial submission, so there's no need to hold off until the last minute to
+  get it perfect.
+  </p>
+  <p>
+   <b>Talks will be reviewed and slots allocated on a rolling basis, so make sure to submit your proposal sooner rather than later!</b>
+  </p>
+  <p><b>
+  The submission deadline for talk proposals is 05 October 2025, 23:50h!
+  </b></p>
+
+  <p>
+  Lightning talks can be submitted until the day of the conference.
+  </p>
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+
+  <p>
+  You can request a slot for one of the following durations:
+
+    <li>5 minutes (Lightning Talks)</li>
+    <li>20 minutes</li>
+    <li>30 minutes</li>
+    <li>40 minutes</li>
+    <li>45 minutes</li>
+
+  including questions.
+  </p>
+
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+  <p>
+  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/11/abstracts/">GStreamer Conference 2025 Talk Submission Portal</a>.
+  </p>
+  <p>
+  You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system. If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
+  </p>
+-->
+  <p>
+  The call for presentations is now closed.
+  </p>
+
+  <p>
+  Anyone who has submitted a talk proposal should have received an e-mail
+  letting them know whether their proposal has been accepted already.
+  Thank you to everyone who submitted a proposal.
+  </p>
+
+  <p>
+  Lightning talks may still be proposed, see above for more details.
+  </p>
+
   <a id="coc"></a>
 
   <h2>Code of Conduct and Anti-Harrassment Policy</h2>
@@ -959,31 +952,13 @@ h2 {
   <p>
     <i>2025-September-30</i>: The conference schedule has now been published.
   </p>
-  <p>
-    <i>2025-September-19</i>: The full list of talks and speakers has been published. If anything looks off or needs changing, please send us an e-mail or ping us on Matrix, thanks!
-  </p>
-  <p>
-    <i>2025-September-10</i>: An initial list of lightning talks has been published. The full list of talks and speakers will be available in due course once proposals have been reviewed and speakers been notified.
-  </p>
-  <p>
-    <i>2025-September-03</i>: The call for presentations is now closed, but lightning talks may still be submitted. Speakers will be notified shortly. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics this year, stay tuned for updates. If you had problems submitting your talk at the last minute via Indico, please <a href="mailto:conference-2025@gstreamer.org">get in touch</a> and we'll see what we can do.
-  </p>
-  <p>
-    <i>2025-August-30</i>: The GStreamer project is excited to have <b><a href="https://www.geniussports.com">Genius Sports</a></b> sponsor for the first time, at Gold level!
-  </p>
-  <p>
-    <i>2025-August-21</i>: We're thrilled to welcome <b><a href="https://cablecast.tv">Cablecast</a></b> as first-time sponsor this year, at Silver level!
-  </p>
-  <p>
-    <i>2025-August-08</i>: The GStreamer project welcomes <b><a href="https://sat.qc.ca/">la SAT</a></b> (Société des Arts Technologiques) as new Gold level sponsor this year!
-  </p>
-  <p>
-    <i>2025-August-02</i>: We're pleased to have <b><a href="https://asymptotic.io">Asymptotic</a></b> sponsor the conference again at Silver level this year!
-  </p>
-  <p>
-    <i>2025-July-24</i>: The GStreamer project is delighted to see <b><a href="https://laerdal.com">Laerdal Labs</a></b> sponsor the conference again at Silver level this year!
-  </p>
 -->
+  <p>
+    <i>2025-October-07</i>: The full list of talks and speakers has been published. If anything looks off or needs changing, please send us an e-mail or ping us on Matrix, thanks!
+  </p>
+  <p>
+    <i>2025-October-06</i>: The Call for Presentations is now closed, but lightning talks may still be submitted. All speakers should have received their acceptance e-mails by now. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics again this year.
+  </p>
   <p>
     <i>2025-October-01</i>: Call for Presentations submission deadline is 5 October 2025, 23:59h
   </p>
