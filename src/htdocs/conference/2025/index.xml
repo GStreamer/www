@@ -594,7 +594,7 @@ h2 {
             Fast and dirty: vibe coding use case plugging the NVIDIA kernel into GStreamer streams
             </a>
             <br />
-            <small><i>Jesus Luque, Mediapro</i></small>
+            <small><i>Jesús Luque, Mediapro</i></small>
             </li>
 
             <li>
@@ -611,6 +611,14 @@ h2 {
             </a>
             <br />
             <small><i>Tulio Beloqui, Pexip</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/516/">
+             Reading v4l2 data from MR813 devices in a way that doesn't suck
+            </a>
+            <br />
+            <small><i>Vivia Nikolaidou</i></small>
             </li>
 
             <li>...and more to come</li>
