@@ -615,10 +615,26 @@ h2 {
 
             <li>
             <a href="https://indico.freedesktop.org/event/11/contributions/516/">
-             Reading v4l2 data from MR813 devices in a way that doesn't suck
+            Reading v4l2 data from MR813 devices in a way that doesn't suck
             </a>
             <br />
             <small><i>Vivia Nikolaidou</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/517/">
+            Rewriting CoreAudio-based elements on macOS
+            </a>
+            <br />
+            <small><i>Piotr Brzeziński, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/518/">
+            fallbacksrc, now with more streams
+            </a>
+            <br />
+            <small><i>Piotr Brzeziński, Centricular</i></small>
             </li>
 
             <li>...and more to come</li>
