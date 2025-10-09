@@ -637,6 +637,14 @@ h2 {
             <small><i>Piotr Brzeziński, Centricular</i></small>
             </li>
 
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/519/">
+            State of MPEG-TS in GStreamer
+            </a>
+            <br />
+            <small><i>Edward Hervey, Centricular</i></small>
+            </li>
+
             <li>...and more to come</li>
             <li><i>Submit <u>your</u> lightning talk <a href="https://indico.freedesktop.org/event/11/abstracts/">now</a>!</i></li>
     </ul>
