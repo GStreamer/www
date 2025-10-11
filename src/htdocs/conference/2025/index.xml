@@ -788,14 +788,16 @@ h2 {
   (you should get an initial response within a day).
   </p>
 
-<!--
   <a id="social-events"></a>
 
   <h2>Social Events</h2>
 
-  <a id="sunday-social"></a>
+  <a id="wednesday-social"></a>
 
-  <h3>Sunday: Welcome drinks and/or food at McKibbin's</h3>
+  <h3>Wednesday: Welcome drinks and/or food</h3>
+
+  <p>Details to be confirmed.</p>
+<!--
 
   <p>
     Join us for some drinks and/or food at McKibbin's, an Irish Pub
@@ -812,30 +814,39 @@ h2 {
   <p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.6565391210274!2d-73.57980892227627!3d45.49686073125672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a6a72a57653%3A0x378f332555590f1f!2zTWNLaWJiaW7igJlz!5e0!3m2!1sen!2sca!4v1727903258301!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </p>
+-->
 
-  <a id="monday-social"></a>
+  <a id="thursday-social"></a>
 
-  <h3>Monday: Social Event with Food and Drinks at Les 3 Brasseurs - Saint-Paul</h3>
+  <h3>Thursday: Social Event with Food and Drinks at BrewDog Chancery Lane</h3>
 
    <p>
-     Our main social event will be on Monday at Les 3 Brasseurs on
-     Saint-Paul in Old Montréal from 19:30 until
-     late.
+     Our main social event will be on Thursday at BrewDog Chancery Lane,
+     from 19.00 onwards until late (11pm).
    </p>
    <p>
-     Food and drinks will be provided (many thanks to our
-     sponsors!), including vegetarian and vegan options.
+     Food and drinks will be provided (many thanks to our sponsors!),
+     including vegetarian and vegan options.
    </p>
 
    <p>
-     The venue can be reached by metro or walking.
+     Note that we have been allocated a section of the venue, but the other
+     parts of the venue will be open to the public and owing to the layout of
+     the place the bar will be shared.
+   </p>
+
+   <p>
+     If you are lucky enough to look younger than 25, please make sure to
+     bring some ID with you to prove that you are at least 18 years old.
+   </p>
+
+   <p>
+    If anyone is younger than 18 years, please <a href="mailto:conference-2025@gstreamer.org">get in touch</a>.
    </p>
 
   <p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5592.32866706023!2d-73.55567012227604!3d45.506770430595175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a56577e5497%3A0x80033050a5c3516c!2s3%20Brasseurs%20Saint-Paul!5e0!3m2!1sen!2sca!4v1727903391366!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.806828205919!2d-0.11136308778463287!3d51.516759871697815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b4ce24e53cf%3A0xa1957a671d593fa4!2sBrewDog%20Chancery%20Lane!5e0!3m2!1sen!2suk!4v1760176140637!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </p>
-
--->
 
   <a id="cfp"></a>
 
@@ -989,12 +1000,12 @@ h2 {
     <i>2025-October-07</i>: Links to the <a href="#live">Live streams for Day 1</a> have been added.
   </p>
   <p>
-    <i>2025-October-03</i>: Published the details of the social events.
-  </p>
-  <p>
     <i>2025-September-30</i>: The conference schedule has now been published.
   </p>
 -->
+  <p>
+    <i>2025-October-11</i>: Thursday evening social event details added.
+  </p>
   <p>
     <i>2025-October-07</i>: The full list of talks and speakers has been published. If anything looks off or needs changing, please send us an e-mail or ping us on Matrix, thanks!
   </p>
