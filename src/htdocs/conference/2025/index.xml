@@ -77,13 +77,6 @@ h2 {
   </p>
 
 <!--
-  <a id="schedule"></a>
-
-  <h2>Schedule</h2>
-  <p>
-  <a href="https://indico.freedesktop.org/event/9/timetable/?layout=room#all.detailed">Click here for the conference schedule</a>.
-  </p>
-
   <a id="live"></a>
 
   <h2>Live Streams</h2>
@@ -126,6 +119,13 @@ h2 {
     to use GStreamer in their products, this is the perfect event for you to network
     at and to learn more about the latest technological developments and project news,
     and to meet developers as well as the wider community.
+  </p>
+
+  <a id="schedule"></a>
+
+  <h2>Schedule</h2>
+  <p>
+    <a href="https://indico.freedesktop.org/event/11/timetable/?layout=room#all.detailed">Click here for the conference schedule</a>.
   </p>
 
   <a id="registration"></a>
@@ -190,22 +190,9 @@ h2 {
 
   <h2>Schedule and speakers list</h2>
 
-<!--
   <p>
-  This will be published at a later date once the inital Call for Presentations
-  round has closed.
+    <a href="https://indico.freedesktop.org/event/11/timetable/?layout=room#all.detailed">Click here for the conference schedule</a>.
   </p>
-
-  <p>
-  Check out <a href="&site;/conference/2024/index.html#talks-and-speakers">last year's schedule</a> to get an idea about the kind of speakers and topics to expect.
-  </p>
--->
-
-<!--
-  <p>
-    <a href="schedule.html">Click here for the conference schedule</a>.
-  </p>
--->
 
   <p>
     We have an exciting range of topics and speakers lined up for you again this year:
@@ -1017,10 +1004,10 @@ h2 {
   <p>
     <i>2025-October-07</i>: Links to the <a href="#live">Live streams for Day 1</a> have been added.
   </p>
-  <p>
-    <i>2025-September-30</i>: The conference schedule has now been published.
-  </p>
 -->
+  <p>
+    <i>2025-October-13</i>: The <a href="https://indico.freedesktop.org/event/11/timetable/#20251023.detailed">conference schedule</a> has now been published.
+  </p>
   <p>
     <i>2025-October-13</i>: Hackfest venue is Amazon LHR16 - Many thanks to Amazon for hosting us! People <u>must</u> <a href="https://ti.to/gstreamer/gstreamer-conference-2025-hackfest-london">register</a> for the hackfest by 21 October 2025 noon UK time!
   </p>
