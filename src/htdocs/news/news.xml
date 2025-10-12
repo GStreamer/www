@@ -17239,4 +17239,500 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+<!-- ======================= Conf 2025 schedule ========================== -->
+
+  <item>
+    <date>2025-10-13 10:00</date>
+    <title>GStreamer Conference 2025: Full Schedule, Talk Abstracts and Speakers Biographies now available</title>
+    <content>
+    <p>
+The GStreamer Conference team is pleased to announce that the
+<a href="https://indico.freedesktop.org/event/11/timetable/#20251023.detailed">
+full conference schedule
+</a>
+including talk abstracts and speaker biographies is now available for
+this year's lineup of talks and speakers, covering again an exciting range of
+topics!
+    </p>
+    <p>
+The <b>GStreamer Conference 2025</b> will take place on <b>23-24 October 2025
+in London, UK</b>, followed by a hackfest.
+    </p>
+    <p>
+Details about the conference, hackfest and how to register can be found on the
+<a href="&site;/conference/2025/">conference website</a>.
+    </p>
+    <p>
+    <b>This year's topics and speakers:</b>
+    <ul>
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/460/">
+            GStreamer State of the Union
+            </a>
+            <br />
+            <small><i>Tim-Philipp Müller, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/494/">
+            Region-Based Compression in GStreamer
+            </a>
+            <br />
+            <small><i>Axel Tobieson, Spiideo</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/515/">
+            Rusty Pipes and Oxidized Wires
+            </a>
+            <br />
+            <small><i>Arun Raghavan, Valve Corporation</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/514/">
+            The Quest for Low-Latency Desktop Audio
+            </a>
+            <br />
+            <small><i>Nirbheek Chauhan, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/473/">
+            Rebuilding Our Video Server Engine on GStreamer
+            </a>
+            <br />
+            <small><i>Ray Tiley, Tightrope Media Systems</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/469/">
+            Enabling I-frame playlists with HLS CMAF
+            </a>
+            <br />
+            <small><i>Sanchayan Maity, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/502/">
+            From Streams to Insights: Advancing GstAnalytics
+            </a>
+            <br />
+            <small><i>Daniel Morin, Collabora</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/501/">
+            Brief history of GStreamer adoption at Twilio
+            </a>
+            <br />
+            <small><i>Jeff Foster and Andrey Kovalenko, Twilio</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/468/">
+            Threadshare, a plugin collection to increase scalability
+            </a>
+            <br />
+            <small><i>François Laignel, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/513/">
+            Costly Speech: an introduction
+            </a>
+            <br />
+            <small><i>Mathieu Duponchelle, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/464/">
+            GstWebRTC in WebKit, current status &amp; plans
+            </a>
+            <br />
+            <small><i>Philippe Normand, Igalia</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/462/">
+            Lessons Learned - Transforming Our Video Management System with GStreamer
+            </a>
+            <br />
+            <small><i>Bumi̇n Kaan Aydin, HAVELSAN</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/498/">
+            VVC/H.266 Alpha Channel support in GStreamer
+            </a>
+            <br />
+            <small><i>Andoni Morales Alastruey, Fluendo</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/486/">
+            librice: the TURNing point
+            </a>
+            <br />
+            <small><i>Matthew Waters, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/509/">
+            Virtual Hardware: Emulating a Video4linux Hardware Decoder
+            </a>
+            <br />
+            <small><i>Jan Schmidt, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/476/">
+            A Global Crisis => Global Leadership - WildCamera
+            </a>
+            <br />
+            <small><i>Will Robertson</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/496/">
+            Tools to profile a video encoder
+            </a>
+            <br />
+            <small><i>Diego Nieto Munoz, Fluendo</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/477/">
+            A new era for GStreamer C++ bindings
+            </a>
+            <br />
+            <small><i>Sebastian Dröge, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/510/">
+            Auxiliary Stream Wrangling in playbin3
+            </a>
+            <br />
+            <small><i>Jan Schmidt, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/467/">
+            VVC/H.266 in GStreamer
+            </a>
+            <br />
+            <small><i>Carlos Bentzen, Igalia</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/480/">
+            GStreamer in the Medical Simulation Environment
+            </a>
+            <br />
+            <small><i>Thomas Goodwin and Jeff Wilson, Laerdal Labs</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/465/">
+            What’s New in GStreamer D3D12
+            </a>
+            <br />
+            <small><i>Seungha Yang, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/497/">
+            Fluster news
+            </a>
+            <br />
+            <small><i>Rubén Gonzalez, Fluendo</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/508/">
+            dcSCTP in GStreamer
+            </a>
+            <br />
+            <small><i>Tulio Beloqui, Pexip</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/500/">
+            The road to Enhanced FLV and RTMP in GStreamer
+            </a>
+            <br />
+            <small><i>Taruntej Kanakamalla, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/461/">
+            Improving WebRTC datachannel performance
+            </a>
+            <br />
+            <small><i>Emil Ljungdahl, Axis Communications</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/466/">
+            Cutting audio latency with bidirectional WebRTC
+            </a>
+            <br />
+            <small><i>Albert Sjölund, Axis Communications</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/506/">
+            GStreamer in VR devices manufacturing
+            </a>
+            <br />
+            <small><i>Ivan Loskutov, Meta</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/474/">
+            GStreamer for audio distribution at Sveriges Radio
+            </a>
+            <br />
+            <small><i>Karl Johannes Jondell and Christofer Bustad, Sveriges Radio</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/512/">
+            GStreamer at Scale: Recent Lessons from Real-World Video Conferencing
+            </a>
+            <br />
+            <small><i>Håvard Graff, Pexip</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/495/">
+            Gst.wasm season 3
+            </a>
+            <br />
+            <small><i>Jorge Zapata and Fabián Orccón, Fluendo</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/472/">
+            Time Remapping and GES: Implementation Details and Latest Updates
+            </a>
+            <br />
+            <small><i>Thibault Saunier, Igalia</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/463/">
+            PipeWire’s pipeline operation vs GStreamer’s explained
+            </a>
+            <br />
+            <small><i>George Kiagiadakis, Collabora</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/507/">
+            Why Keep a Thread Running? Meet GstBaseIdleSrc
+            </a>
+            <br />
+            <small><i>Camilo Celis Guzman, Pexip</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/489/">
+            Bringing AMD HIP into GStreamer
+            </a>
+            <br />
+            <small><i>Max Campbell, Veo Technologies; Seungha Yang, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/481/">
+            WirePlumber, present challenges and future directions
+            </a>
+            <br />
+            <small><i>Julian Bouzas, Collabora</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/499/">
+            Hardware-Accelerated Live Broadcasting of Uncompressed ST 2110 Streams with GStreamer leveraging NVIDIA GPUs and NICs
+            </a>
+            <br />
+            <small><i>Johan Jino, Nvidia</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/505/">
+            The Art of Debugging GStreamer Software
+            </a>
+            <br />
+            <small><i>Nicolas Dufresne, Collabora</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/475/">
+            Making GStreamer Go!
+            </a>
+            <br />
+            <small><i>Wilhelm Bartel</i></small>
+            </li>    </ul>
+  </p>
+  <p>
+    <b>Lightning Talks:</b>
+    <ul>
+            <li><p>
+            <a href="https://indico.freedesktop.org/event/11/contributions/458/">
+            Showing the invisible: Analysing buffer flow with tracers
+            </a>
+            <br />
+            <small><i>François Laignel, Centricular</i></small>
+            </p></li>
+
+            <li><p>
+            <a href="https://indico.freedesktop.org/event/11/contributions/459/">
+            Video Frame Scheduler Plugin for Improving WebRTC Playback Quality
+            </a>
+            <br />
+            <small><i>Haejung Hwang, LG Electronics</i></small>
+            </p></li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/478/">
+            Audio source separation using snakes, crabs and torches
+            </a>
+            <br />
+            <small><i>Sebastian Dröge, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/482/">
+            soothe: a proposal for encoder testing
+            </a>
+            <br />
+            <small><i>Victor Manuel Jáquez Leal, Igalia</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/479/">
+            burn: a little case study on using GstAnalytics from Rust
+            </a>
+            <br />
+            <small><i>Sebastian Dröge, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/483/">
+            GstVA and GStreamer-VAAPI updates
+            </a>
+            <br />
+            <small><i>Victor Manuel Jáquez Leal, Igalia</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/490/">
+            Vulkan Video: pipeline update
+            </a>
+            <br />
+            <small><i>Stéphane Cerveau, Igalia</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/491/">
+            Fallback Streaming for RTSP Server
+            </a>
+            <br />
+            <small><i>Axel Tobieson, Spiideo</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/503/">
+            Fast and dirty: vibe coding use case plugging the NVIDIA kernel into GStreamer streams
+            </a>
+            <br />
+            <small><i>Jesús Luque, Mediapro</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/504/">
+            What's up with Video4Linux support
+            </a>
+            <br />
+            <small><i>Nicolas Dufresne, Collabora</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/511/">
+            pexLGPL bundle
+            </a>
+            <br />
+            <small><i>Tulio Beloqui, Pexip</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/516/">
+            Reading v4l2 data from MR813 devices in a way that doesn't suck
+            </a>
+            <br />
+            <small><i>Vivia Nikolaidou</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/517/">
+            Rewriting CoreAudio-based elements on macOS
+            </a>
+            <br />
+            <small><i>Piotr Brzeziński, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/518/">
+            fallbacksrc, now with more streams
+            </a>
+            <br />
+            <small><i>Piotr Brzeziński, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/519/">
+            State of MPEG-TS in GStreamer
+            </a>
+            <br />
+            <small><i>Edward Hervey, Centricular</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/520/">
+            Full GPU driven AI workloads with GStreamer and Raven
+            </a>
+            <br />
+            <small><i>Andoni Morales Alastruey, Fluendo</i></small>
+            </li>
+
+            <li>...and more to come</li>
+            <li><i>Submit <u>your</u> lightning talk now!</i></li>
+    </ul>
+  </p>
+  <p>
+Many thanks to our amazing sponsors ‒ Platinum sponsors
+<a href="https://centricular.com/">Centricular</a>,
+<a href="https://www.collabora.com">Collabora</a>,
+<a href="https://igalia.com">Igalia</a>, and
+<a href="https://www.pexip.com">Pexip</a>,
+Gold sponsors
+<a href="https://www.axis.com">Axis Communications</a> and
+<a href="https://fluendo.com">Fluendo</a>,
+and Silver sponsors
+<a href="https://www.mediascribe.ai/">MediaScribe</a> and
+<a href="https://veo.co/">Veo</a>,
+without whom the conference would not be possible in this form.
+  </p>
+  <p>
+We hope to see you all in London soon! Don't forget to <a href="https://gstreamer.freedesktop.org/conference/2025/#registration">register</a> as soon as possible if you're planning on joining us, so we can order enough food and drinks!
+  </p>
+  <p>
+There's also a <a href="https://gstreamer.freedesktop.org/conference/2025/#hackfest">hackfest</a> after the conference. If you're planning on joining us for the hackfest you <u>must</u> <a href="https://ti.to/gstreamer/gstreamer-conference-2025-hackfest-london">register</a> separately for that, by 21 October 2025 at the latest.
+  </p>
+  </content>
+ </item>
+
 </news>
