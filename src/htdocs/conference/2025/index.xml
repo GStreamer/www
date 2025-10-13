@@ -66,7 +66,8 @@ h2 {
   <p>
     There will also be a multi-day <b>GStreamer hackfest</b> after the conference,
     on the weekend of the <b>25-26 October 2025</b>, and possibly also on
-    Monday <b>27 October 2025</b> (to be confirmed).
+    Monday <b>27 October 2025</b> (to be confirmed). People must register
+    separately for the hackfest.
   </p>
   <p>
     In addition, the <b>Foundations of Open Media Standards and Software (FOMS) Workshop 2025</b>
@@ -179,6 +180,10 @@ h2 {
 
   <p>
     <b><a href="https://ti.to/gstreamer/gstreamer-conference-2025">Sign up for the GStreamer Conference 2025 here</a></b>
+  </p>
+
+  <p>
+    <b>If you're attending the hackfest after the conference, you must <a href="https://ti.to/gstreamer/gstreamer-conference-2025-hackfest-london">register</a> for that separately by 21 October 2025 noon UK!</b>
   </p>
 
   <a id="talks-and-speakers"></a>
@@ -687,15 +692,6 @@ h2 {
     allocated on a first-come first-serve basis.
   </p>
 
-  <a id="hackfest"></a>
-
-  <h2>GStreamer hackfest</h2>
-  <p>
-    There will again be a multi-day hackfest after the conference,
-    on the weekend of <b>25-26 October 2025</b>, and possibly also on
-    Monday <b>27 October 2025</b> (to be confirmed).
-  </p>
-
   <a id="sponsoring"></a>
 
   <h2>Sponsorship Opportunities</h2>
@@ -844,8 +840,30 @@ h2 {
     If anyone is younger than 18 years, please <a href="mailto:conference-2025@gstreamer.org">get in touch</a>.
    </p>
 
+  <a id="hackfest"></a>
+
+  <h2>GStreamer hackfest</h2>
   <p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.806828205919!2d-0.11136308778463287!3d51.516759871697815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b4ce24e53cf%3A0xa1957a671d593fa4!2sBrewDog%20Chancery%20Lane!5e0!3m2!1sen!2suk!4v1760176140637!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    There will again be a multi-day hackfest after the conference,
+    on the weekend of <b>25-26 October 2025</b>, and possibly also on
+    Monday <b>27 October 2025</b> (to be confirmed, subject to venue
+    availability).
+  </p>
+  <p>
+    <b>Important: You <u>must</u> register for the hackfest in advance, by 21 October 2025 noon UK time!</b>
+  </p>
+  <p>
+    <b><a href="https://ti.to/gstreamer/gstreamer-conference-2025-hackfest-london">Sign up now for the GStreamer hackfest!</a></b>
+  </p>
+  <p>
+  The hackfest will take place at: <br/>
+  <b>Amazon LHR1</b><br/>
+  1 Principal Pl<br/>
+  London, EC2A 2FA<br/>
+  United Kingdom<br/>
+  </p>
+  <p>
+    <iframe allowfullscreen="" width="600" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.526504116444!2d-0.08181788836585473!3d51.521902309527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761deeef1c261f%3A0x2a90345bd1640882!2sAmazon%20Corporate%20Office%20LHR16!5e0!3m2!1sen!2suk!4v1760357078126!5m2!1sen!2suk" style="border: 1px solid black"></iframe>
   </p>
 
   <a id="cfp"></a>
@@ -1003,6 +1021,9 @@ h2 {
     <i>2025-September-30</i>: The conference schedule has now been published.
   </p>
 -->
+  <p>
+    <i>2025-October-13</i>: Hackfest venue is Amazon LHR16 - Many thanks to Amazon for hosting us! People <u>must</u> <a href="https://ti.to/gstreamer/gstreamer-conference-2025-hackfest-london">register</a> for the hackfest by 21 October 2025 noon UK time!
+  </p>
   <p>
     <i>2025-October-11</i>: Thursday evening social event details added.
   </p>
