@@ -17735,4 +17735,56 @@ There's also a <a href="https://gstreamer.freedesktop.org/conference/2025/#hackf
   </content>
  </item>
 
+<!-- =========================== 1.26.7 ================================= -->
+
+  <item>
+      <date>2025-10-14 18:30</date>
+        <title>GStreamer 1.26.7 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.26 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes, and it should be safe to update from 1.26.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>cea608overlay: improve handling of non-system memory</li>
+    <li>cuda: Fix runtime kernel compile with CUDA 13.0</li>
+    <li>d3d12: Fix crop meta support in converter and passthrough handling in deinterlacer</li>
+    <li>fallbacksrc: source handling improvements; no-more-pads signal for streams-unaware parents</li>
+    <li>inter: add properties to fine tune the inner elements</li>
+    <li>qtdemux: surround sound channel layout handling fixes and performance improvements for GoPro videos</li>
+    <li>rtp: Add linear audio (L8, L16, L24) RTP payloaders / depayloaders</li>
+    <li>rtspsrc: Send RTSP keepalives in TCP/interleaved modes</li>
+    <li>rtpamrpay2: frame quality indicator flag related fixes</li>
+    <li>rtpbasepay2: reuse last PTS when possible, to work around problems with NVIDIA Jetson AV1 encoder</li>
+    <li>mpegtsmux, tsdemux: Opus audio handling fixes</li>
+    <li>threadshare: latency related improvements and many other fixes</li>
+    <li>matroskamux, tsmux, flvmux, cea608mux: Best pad determination fixes at EOS</li>
+    <li>unixfd: support buffers with a big payload</li>
+    <li>videorate unknown buffer duration assertion failure with variable framerates</li>
+    <li>editing services: Make GESTimeline respect `SELECT_ELEMENT_TRACK` signal discard decision; memory leak fixes</li>
+    <li>gobject-introspection annotation fixes</li>
+    <li>cerbero: Update meson to 1.9.0 to enable Xcode 26 compatibility</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.26/#1.26.7">GStreamer 1.26.7 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
+</p>
+        </content>
+  </item>
+
 </news>

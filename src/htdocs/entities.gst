@@ -1,5 +1,5 @@
 <!ENTITY gst-branch-stable "1.26">
-<!ENTITY gst-version-stable "1.26.6">
+<!ENTITY gst-version-stable "1.26.7">
 <!ENTITY gst-version-devel "1.27.2">
 
 <!ENTITY orc-version-stable "0.4.41">
