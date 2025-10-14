@@ -2954,7 +2954,8 @@ and it *should* be safe to update from 1.26.x.
  - rtpamrpay2: frame quality indicator flag related fixes
  - rtpbasepay2: reuse last PTS when possible, to work around problems with NVIDIA Jetson AV1 encoder
  - mpegtsmux, tsdemux: Opus audio handling fixes
- - threadshare: latency related improvements and many other fixes - matroskamux, tsmux, flvmux, cea608mux: Best pad determination fixes at EOS
+ - threadshare: latency related improvements and many other fixes
+ - matroskamux, tsmux, flvmux, cea608mux: Best pad determination fixes at EOS
  - unixfd: support buffers with a big payload
  - videorate unknown buffer duration assertion failure with variable framerates
  - editing services: Make GESTimeline respect `SELECT_ELEMENT_TRACK` signal discard decision; memory leak fixes
