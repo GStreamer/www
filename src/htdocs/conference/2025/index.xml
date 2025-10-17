@@ -777,27 +777,25 @@ h2 {
 
   <a id="wednesday-social"></a>
 
-  <h3>Wednesday: Welcome drinks and/or food</h3>
-
-  <p>Details to be confirmed.</p>
-<!--
+  <h3>Wednesday: Welcome drinks and/or food at The Angel EC1</h3>
 
   <p>
-    Join us for some drinks and/or food at McKibbin's, an Irish Pub
+    Join us for some drinks and/or food at The Angel pub!
   </p>
   <p>
-    We'll be there from 19:00 onwards. Food and drinks will be
-    available for purchase, credit cards are accepted. There are
-    vegetarian and vegan options.
+    We're booked in from 19:30 onwards. Food and drinks will be
+    available for purchase, credit cards are accepted.
   </p>
   <p>
-    We have a reserved space for the GStreamer Conference on the second floor.
+    There are vegetarian and vegan options on <a href="https://www.theangelcityroad.co.uk/menus/mainmenu">the menu</a>.
+  </p>
+  <p>
+    We have reserved a space upstairs (Shoreditch Lounge and Snug).
   </p>
 
   <p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.6565391210274!2d-73.57980892227627!3d45.49686073125672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a6a72a57653%3A0x378f332555590f1f!2zTWNLaWJiaW7igJlz!5e0!3m2!1sen!2sca!4v1727903258301!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3755217170005!2d-0.08996448778417336!3d51.52467187169967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caf4f637f9f%3A0x2b2188b249474bf9!2sAngel%20London%20Ec1!5e0!3m2!1sen!2suk!4v1760717199156!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </p>
--->
 
   <a id="thursday-social"></a>
 
@@ -1006,13 +1004,16 @@ h2 {
   </p>
 -->
   <p>
+    <i>2025-October-17</i>: Wednesday evening social event details added (location: The Angel EC1, City Road)
+  </p>
+  <p>
     <i>2025-October-13</i>: The <a href="https://indico.freedesktop.org/event/11/timetable/#20251023.detailed">conference schedule</a> has now been published.
   </p>
   <p>
     <i>2025-October-13</i>: Hackfest venue is Amazon LHR16 - Many thanks to Amazon for hosting us! People <u>must</u> <a href="https://ti.to/gstreamer/gstreamer-conference-2025-hackfest-london">register</a> for the hackfest by 21 October 2025 noon UK time!
   </p>
   <p>
-    <i>2025-October-11</i>: Thursday evening social event details added.
+    <i>2025-October-11</i>: Thursday evening social event details added (location: BrewDog Chancery Lane)
   </p>
   <p>
     <i>2025-October-07</i>: The full list of talks and speakers has been published. If anything looks off or needs changing, please send us an e-mail or ping us on Matrix, thanks!
