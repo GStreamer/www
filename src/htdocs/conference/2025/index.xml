@@ -76,23 +76,24 @@ h2 {
     for video devs! Also in London, of course.
   </p>
 
-<!--
   <a id="live"></a>
 
   <h2>Live Streams</h2>
   <p>
   <ul>
-  <li><a href="https://www.youtube.com/live/W4Pjtg0DfIo"><b>Room 1, Day 2, Tue 8 Oct 2025</b></a></li>
-  <li><a href="https://www.youtube.com/live/jt6KyV757Dk"><b>Room 2, Day 2, Tue 8 Oct 2025</b></a></li>
+  <li><a href="https://gstconf.ubicast.tv/permalink/l126b0e9fc2c5ddo2x5g/"><b>Room 1 (Auditorium), Day 1, Thu 23 Oct 2025</b></a></li>
+  <li><a href="https://gstconf.ubicast.tv/permalink/l126b0e9fc31en6elgg8/"><b>Room 2 (Frobisher Rooms), Day 1, Thu 23 Oct 2025</b></a></li>
   </ul>
   </p>
+<!--
   <p>
   <ul>
   <li><a href="https://www.youtube.com/watch?v=KLUL1D53VQI">Room 1, Day 1, Mon 7 Oct 2025</a></li>
   <li><a href="https://www.youtube.com/watch?v=DH64D_6gc80/">Room 2, Day 1, Mon 7 Oct 2025</a></li>
   </ul>
   </p>
-
+-->
+<!--
   <h2>Recorded talks</h2>
   <p>
   Talks have been recorded and
@@ -996,13 +997,13 @@ h2 {
   <p>
     <i>2025-November-07</i>: <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2025">Link to the Videos have been added</a>. Thank you all for coming!
   </p>
-  <p>
+<p>
     <i>2025-October-08</i>: Links to the <a href="#live">Live streams for Day 2</a> have been added.
   </p>
-  <p>
-    <i>2025-October-07</i>: Links to the <a href="#live">Live streams for Day 1</a> have been added.
-  </p>
 -->
+  <p>
+    <i>2025-October-23</i>: Links to the <a href="#live">Live streams for Day 1</a> have been added.
+  </p>
   <p>
     <i>2025-October-17</i>: Wednesday evening social event details added (location: The Angel EC1, City Road)
   </p>
