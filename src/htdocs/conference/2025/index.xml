@@ -80,12 +80,15 @@ h2 {
 
   <h2>Live Streams</h2>
   <p>
+  Live streams are no longer available, as the event is over now.
+  </p>
+<!--
+  <p>
   <ul>
   <li><a href="https://gstconf.ubicast.tv/permalink/l126b0e9fc2c5ddo2x5g/"><b>Room 1 (Auditorium), Day 2, Fri 24 Oct 2025</b></a></li>
   <li><a href="https://gstconf.ubicast.tv/permalink/l126b0e9fc31en6elgg8/"><b>Room 2 (Frobisher Rooms), Day 2, Fri 24 Oct 2025</b></a></li>
   </ul>
   </p>
-<!--
   <p>
   <ul>
   <li><a href="https://www.youtube.com/watch?v=KLUL1D53VQI">Room 1, Day 1, Mon 7 Oct 2025</a></li>
@@ -93,13 +96,12 @@ h2 {
   </ul>
   </p>
 -->
-<!--
   <h2>Recorded talks</h2>
   <p>
-  Talks have been recorded and
-  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2025">GStreamer Conference 2025 videos</a>
+  Talks have been recorded by Ubicast and
+  will be made available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2025">GStreamer Conference 2025 videos</a>
+  soon.
   </p>
--->
 
   <h2>Details</h2>
   <p>
@@ -133,8 +135,8 @@ h2 {
 
   <h2>Registration</h2>
 
-  <p><b>Registration is now open!</b></p>
-
+  <p><b>Registration is closed now, since the event is over now.</b></p>
+<!--
   <p>
     <b><a href="https://ti.to/gstreamer/gstreamer-conference-2025">Sign up for the GStreamer Conference 2025 here!</a></b>
   </p>
@@ -186,6 +188,7 @@ h2 {
   <p>
     <b>If you're attending the hackfest after the conference, please <a href="https://ti.to/gstreamer/gstreamer-conference-2025-hackfest-london">register</a> for that separately!</b>
   </p>
+-->
 
   <a id="talks-and-speakers"></a>
 
@@ -196,7 +199,7 @@ h2 {
   </p>
 
   <p>
-    We have an exciting range of topics and speakers lined up for you again this year:
+    We had an exciting range of topics and speakers lined up for you again this year:
     <br/>
     <br/>
     <b>Talks:</b>
@@ -652,19 +655,20 @@ h2 {
   </p>
 
   <p>
-  Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a>.
+  Talks were recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> and will be made available for viewing soon.
   </p>
 
   <a id="lightning-talks"></a>
 
   <h2>Showcase or Lightning Talks</h2>
   <p>
-    There will again be opportunities for short lightning talks for those who
-    do not wish to present a full talk, but just want to showcase something
+    There were again opportunities for short lightning talks for those who
+    did not wish to present a full talk, but just wanted to showcase something
     they're working on, or present a problem or challenge they are facing or
     have solved, and that they think might be interesting for others to hear
     about.
   </p>
+<!--
   <p>
     Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
   </p>
@@ -679,6 +683,7 @@ h2 {
     There is no deadline for Lightning Talk submissions, slots will be
     allocated on a first-come first-serve basis.
   </p>
+-->
 
   <a id="sponsoring"></a>
 
@@ -922,10 +927,11 @@ h2 {
   letting them know whether their proposal has been accepted already.
   Thank you to everyone who submitted a proposal.
   </p>
-
+<!--
   <p>
   Lightning talks may still be proposed, see above for more details.
   </p>
+-->
 
   <a id="coc"></a>
 
@@ -997,10 +1003,13 @@ h2 {
   <p>
     <i>2025-November-07</i>: <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2025">Link to the Videos have been added</a>. Thank you all for coming!
   </p>
-<p>
-    <i>2025-October-08</i>: Links to the <a href="#live">Live streams for Day 2</a> have been added.
-  </p>
 -->
+  <p>
+    <i>2025-October-25</i>: The conference is over now. Thank to everyone who attended, as well as our speakers and our amazing sponsors! Talks have been recorded and will be made available for watching soon.
+  </p>
+  <p>
+    <i>2025-October-24</i>: Links to the <a href="#live">Live streams for Day 2</a> have been added.
+  </p>
   <p>
     <i>2025-October-23</i>: Links to the <a href="#live">Live streams for Day 1</a> have been added.
   </p>
