@@ -17787,4 +17787,54 @@ Binaries for Android, iOS, Mac OS X and Windows will be available shortly.
         </content>
   </item>
 
+<!-- =========================== 1.26.8 ================================= -->
+
+  <item>
+      <date>2025-11-10 17:30</date>
+        <title>GStreamer 1.26.8 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.26 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes, and it should be safe to update from 1.26.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Fix showtime video player showing washed-out colours for HDR videos when subtitles are active</li>
+    <li>core: performance improvements for elements with many source pads</li>
+    <li>aacparse: support streams which do not have frequent LOAS config</li>
+    <li>av1parse: Fix duplicated frames issue in frame splitting</li>
+    <li>fmp4mux: Fix EAC3 datarate calculation and substream writing</li>
+    <li>gtk4painablesink: fixes glitches with padded buffers such as for sub-sampled video formats with odd sizes</li>
+    <li>mpegtsmux: PUSI flag and ID3 tag handling fixes</li>
+    <li>rtpbaseaudiopay2: Fix marker bit handling for DISCONT and RESYNC buffer flags</li>
+    <li>rtpvp9pay: Fix parsing of show-existing-frame flag, fixes compatibility with vavp9lpenc</li>
+    <li>splitmuxsink: accept pads named 'sink_%u' on the muxer for fmp4 muxer support</li>
+    <li>webrtcsink: Correct lock ordering to prevent deadlock</li>
+    <li>gst-plugins-rs meson build gained an `auto_plugin_features` option and no longer requires all gstreamer libraries to be available</li>
+    <li>v4l2 device monitor fixes</li>
+    <li>x265enc: advertise latency based on encoder parameters instead of hard-coding it to 5 frames</li>
+    <li>cerbero package builder: Add Rust support for 32-bit Linux x86</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.26/#1.26.8">GStreamer 1.26.8 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/downloads/">Downloads page</a>.
+</p>
+        </content>
+  </item>
+
 </news>
