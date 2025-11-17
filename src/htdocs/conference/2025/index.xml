@@ -76,6 +76,14 @@ h2 {
     for video devs! Also in London, of course.
   </p>
 
+  <a id="recordings"></a>
+
+  <h2>Recorded talks</h2>
+  <p>
+  Talks have been recorded by Ubicast and
+  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2025">GStreamer Conference 2025 videos</a>.
+  </p>
+
   <a id="live"></a>
 
   <h2>Live Streams</h2>
@@ -96,12 +104,6 @@ h2 {
   </ul>
   </p>
 -->
-  <h2>Recorded talks</h2>
-  <p>
-  Talks have been recorded by Ubicast and
-  will be made available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2025">GStreamer Conference 2025 videos</a>
-  soon.
-  </p>
 
   <h2>Details</h2>
   <p>
@@ -999,11 +1001,9 @@ h2 {
   <a id="news"></a>
 
   <h2>Conference News and Updates</h2>
-<!--
   <p>
-    <i>2025-November-07</i>: <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2025">Link to the Videos have been added</a>. Thank you all for coming!
+    <i>2025-November-19</i>: Talk recordings are now available on the <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2025">GStreamer Conference 2025 channel on ubicast.tv</a>. Many thanks to Ubicast for recording the talks again!
   </p>
--->
   <p>
     <i>2025-October-25</i>: The conference is over now. Thank to everyone who attended, as well as our speakers and our amazing sponsors! Talks have been recorded and will be made available for watching soon.
   </p>

@@ -17837,4 +17837,22 @@ will be published on the <a href="&site;/downloads/">Downloads page</a>.
         </content>
   </item>
 
+<!-- ===== GStreamer Conference 2025 video recordings available =========== -->
+
+  <item>
+      <date>2025-11-19 12:00</date>
+        <title>GStreamer Conference 2025 Video Recordings</title>
+        <content>
+<p>
+We're pleased to announce that the video recordings for this year's
+GStreamer conference are now available on the
+<a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2025">GStreamer Conference 2025 channel on ubicast.tv</a>.
+</p>
+
+<p>
+Many thanks to <a href="https://www.ubicast.eu/">Ubicast</a> for recording the talks again!
+</p>
+        </content>
+  </item>
+
 </news>
