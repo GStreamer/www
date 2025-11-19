@@ -517,6 +517,15 @@ h2 {
             <br />
             <small><i>Wilhelm Bartel</i></small>
             </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/519/">
+            State of MPEG-TS in GStreamer
+            </a>
+            <br />
+            <small><i>Edward Hervey, Centricular</i></small>
+            </li>
+
     </ul>
   </p>
 
@@ -612,6 +621,14 @@ h2 {
             </li>
 
             <li>
+            <a href="https://indico.freedesktop.org/event/11/contributions/521/">
+            Video Reshaping with Skia
+            </a>
+            <br />
+            <small><i>Thibault Saunier, Igalia</i></small>
+            </li>
+
+            <li>
             <a href="https://indico.freedesktop.org/event/11/contributions/516/">
             Reading v4l2 data from MR813 devices in a way that doesn't suck
             </a>
@@ -627,6 +644,7 @@ h2 {
             <small><i>Piotr Brzeziński, Centricular</i></small>
             </li>
 
+<!--
             <li>
             <a href="https://indico.freedesktop.org/event/11/contributions/518/">
             fallbacksrc, now with more streams
@@ -634,21 +652,13 @@ h2 {
             <br />
             <small><i>Piotr Brzeziński, Centricular</i></small>
             </li>
-
+-->
             <li>
-            <a href="https://indico.freedesktop.org/event/11/contributions/519/">
-            State of MPEG-TS in GStreamer
+            <a href="https://indico.freedesktop.org/event/11/contributions/522/">
+            Animate Your Subtimelines in GES
             </a>
             <br />
-            <small><i>Edward Hervey, Centricular</i></small>
-            </li>
-
-            <li>
-            <a href="https://indico.freedesktop.org/event/11/contributions/520/">
-            Full GPU driven AI workloads with GStreamer and Raven
-            </a>
-            <br />
-            <small><i>Andoni Morales Alastruey, Fluendo</i></small>
+            <small><i>Thibault Saunier, Igalia</i></small>
             </li>
 
             <li>...and more to come</li>
