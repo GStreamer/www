@@ -17855,4 +17855,53 @@ Many thanks to <a href="https://www.ubicast.eu/">Ubicast</a> for recording the t
         </content>
   </item>
 
+<!-- =========================== 1.26.9 ================================= -->
+
+  <item>
+      <date>2025-12-01 18:00</date>
+        <title>GStreamer 1.26.9 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.26 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes, and it should be safe to update from 1.26.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>playback: playbin3 and decodebin3 stability fixes</li>
+    <li>Ancillary metadata handling fixes for AJA playout and Blackmagic Decklink capture cards</li>
+    <li>HLS and DASH adaptive streaming clients stability improvements</li>
+    <li>gst-play-1.0 will now print details of any missing plugins again</li>
+    <li>gtk4paintablesink: Add property to fine-tune reconfiguration behaviour on window-resize</li>
+    <li>macOS device monitoring: fix potential crash when probing for audio devices</li>
+    <li>macOS video decoder stability improvements</li>
+    <li>NDI source: fix audio corruption for non-interleaved audio with stride padding</li>
+    <li>Add SMPTE ST291-1 ancillary metadata RTP payloader and depayloader</li>
+    <li>Add ST-2038 metadata combiner and extractor</li>
+    <li>webrtcsink: support hardware-accelerated encoders from the `va` VA-API plugin</li>
+    <li>spotifysrc: fix the Spotify integration by using Spotify's extended metadata endpoint</li>
+    <li>Python bindings cross compilation fixes</li>
+    <li>cerbero: add Visual Studio 2026 support, fix building on drives other than C:\, and ship svtjpegxs plugin on Windows</li> 
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.26/#1.26.9">GStreamer 1.26.9 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/downloads/">Downloads page</a>.
+</p>
+        </content>
+  </item>
+
 </news>
