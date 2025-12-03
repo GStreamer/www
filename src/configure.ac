@@ -47,7 +47,6 @@ htdocs/releases/1.22/Makefile
 htdocs/releases/1.24/Makefile
 htdocs/releases/1.26/Makefile
 htdocs/releases/1.28/Makefile
-htdocs/projects/Makefile
 htdocs/security/Makefile
 ])
 AC_OUTPUT
