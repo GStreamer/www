@@ -17904,4 +17904,94 @@ will be published on the <a href="&site;/downloads/">Downloads page</a>.
         </content>
   </item>
 
+<!-- =========================== 1.27.50 ================================= -->
+
+    <item>
+      <date>2025-12-09 23:30</date>
+        <title>GStreamer 1.27.50 unstable development release (feature freeze)</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another development release in
+the API/ABI-unstable 1.27 release series.
+</p>
+<p>
+The API/ABI-unstable 1.27 release series is for testing and development purposes
+in the lead-up to the stable 1.28 series which is scheduled for release in late
+2025. Any newly-added API can still change until that point.
+</p>
+<p>
+The 1.27.50 release marks the beginning of our feature freeze in preparation of
+the upcoming 1.28 stable release.
+</p>
+<p>
+This development release is primarily for developers and early adopters, and
+distros should probably not package it.
+</p>
+<p>
+  <b>Highlighted changes:</b>
+  <ul>
+    <li>Vulkan Video AV1 decoder</li>
+    <li>webrtcsink: add renegotiation support, and support for va hardware encoders</li>
+    <li>New ST-2038 ancillary data combiner and extractor elements</li>
+    <li>applemedia: VP9 and AV1 hardware-accelerated video decoding support, and 10-bit HEVC encoding</li>
+    <li>fallbacksrc gained support for encoded streams</li>
+    <li>flv: enhanced rtmp H.265 video support, and support for multitrack audio</li>
+    <li>glupload: Implement udmabuf uploader to share buffers between software decoders/sources and GPUs, display engines (wayland), and other dma devices</li>
+    <li>video: Add crop, scale, rotate, flip, shear and more GstMeta transformation</li>
+    <li>New task pool GstContext to share a thread pool amongst elements for better resource management and performance, especially for video conversion and compositing</li>
+    <li>analytics: New tensordecodebin element to auto-plug compatible tensor decoders based on their caps and many other additions and improvements</li>
+    <li>New Deepgram speech-to-text transcription plugin</li>
+    <li>Speech synthesizers: expose new "compress" overflow mode that can speed up audio while preserving pitch</li>
+    <li>Support new Speechmatics speaker identification API</li>
+    <li>ElevenLabs voice cloning element</li>
+    <li>New Qt6 QML qml6 render source element</li>
+    <li>appsink, appsrc: new bindings-friendly "simple" callbacks API</li>
+    <li>New element to calculate perceptual video quality assessment scores using Netflix's VMAF framework</li>
+    <li>Add new metadata GstStream type and use in decodebin3 for KLV, ID3 PES and ST-2038 ancillary data</li>
+    <li>New MPEG-H audio decoding plugin plus MP4 demuxing support</li>
+    <li>The inter plugin wormhole sink and source elements gained new properties to fine tune the inner elements</li>
+    <li>hlscmafsink can generate I-frame only playlist now</li>
+    <li>New LCEVC H.266 encoder element</li>
+    <li>webrtc: add WHEP server signaller</li>
+    <li>Added "robust MPEG audio", raw audio (L8, L16, L24), and ancillary metadata RTP payloaders in Rust</li>
+    <li>The Windows IPC plugin gained support for passing generic data in addition to raw audio/video, and various properties</li>
+    <li>New D3D12 interlace and overlay compositor elements</li>
+    <li>GStreamer AMD HIP integration functionality is now available in a helper library</li>
+    <li>Blackmagic Decklink elements gained support for capturing and outputting all types of VANC via GstAncillaryMeta</li>
+    <li>Replaygain R128 gain tags support</li>
+    <li>aws: URI handler for S3 URIs; dropped registration of rusotos3src and rusotos3sink</li>
+    <li>quinn: Support sharing of QUIC/WebTransport connection/session</li>
+    <li>validate: New plugin with a check-last-frame-qrcode action</li>
+    <li>clocksync: new "rate" property and "resync" action signal</li>
+    <li>debug logging: Add convenience macros around GstLogContext for logging things only once</li>
+    <li>Countless bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be made available shortly
+at the <a href="https://gstreamer.freedesktop.org/pkg/">usual location</a>.
+</p>
+<p>
+Release tarballs can be downloaded directly here:
+<ul>
+  <li><a href="&site;/src/gstreamer/gstreamer-1.27.50.tar.xz">gstreamer-1.27.50.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-base/gst-plugins-base-1.27.50.tar.xz">gst-plugins-base-1.27.50.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-good/gst-plugins-good-1.27.50.tar.xz">gst-plugins-good-1.27.50.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.27.50.tar.xz">gst-plugins-ugly-1.27.50.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.27.50.tar.xz">gst-plugins-bad-1.27.50.tar.xz</a></li>
+  <li><a href="&site;/src/gst-libav/gst-libav-1.27.50.tar.xz">gst-libav-1.27.50.tar.xz</a></li>
+  <li><a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.27.50.tar.xz">gst-rtsp-server-1.27.50.tar.xz</a></li>
+  <li><a href="&site;/src/gst-python/gst-python-1.27.50.tar.xz">gst-python-1.27.50.tar.xz</a></li>
+  <li><a href="&site;/src/gst-editing-services/gst-editing-services-1.27.50.tar.xz">gst-editing-services-1.27.50.tar.xz</a></li>
+  <li><a href="&site;/src/gst-devtools/gst-devtools-1.27.50.tar.xz">gst-devtools-1.27.50.tar.xz</a>,</li>
+  <li><a href="&site;/src/gstreamer-docs/gstreamer-docs-1.27.50.tar.xz">gstreamer-docs-1.27.50.tar.xz</a></li>
+</ul>
+</p>
+<p>
+As always, please give it a spin and let us know of any issues you run into by filing an
+issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a>.
+</p>
+        </content>
+  </item>
+
 </news>
