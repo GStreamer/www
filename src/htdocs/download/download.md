@@ -159,10 +159,11 @@ you will want to install _both_ packages. The target SDK version for 1.20 and
 1.22 was macOS 10.11, and for 1.24 it is macOS 10.13 (High Sierra).
 <!-- FIXME: and for 1.26? -->
 
-* **macOS Universal (X86_64 &amp; ARM64) 1.24 release (current stable version)**
+* **macOS Universal (X86_64 &amp; ARM64) 1.26 release (current stable version)**
   - **[1.26.9 runtime installer](/data/pkg/osx/1.26.9/gstreamer-1.0-1.26.9-universal.pkg)**
   - **[1.26.9 development installer](/data/pkg/osx/1.26.9/gstreamer-1.0-devel-1.26.9-universal.pkg)**
-*macOS Universal (X86_64 &amp; ARM64) 1.24 release (old stable version)
+
+* macOS Universal (X86_64 &amp; ARM64) 1.24 release (old stable version)
   - [1.24.13 runtime installer](/data/pkg/osx/1.24.13/gstreamer-1.0-1.24.13-universal.pkg)
   - [1.24.13 development installer](/data/pkg/osx/1.24.13/gstreamer-1.0-devel-1.24.13-universal.pkg)
 
