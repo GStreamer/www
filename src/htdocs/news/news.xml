@@ -17994,4 +17994,52 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a
         </content>
   </item>
 
+<!-- =========================== 1.26.10 ================================= -->
+
+  <item>
+      <date>2025-12-25 18:00</date>
+        <title>GStreamer 1.26.10 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.26 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bugfixes, and it should be safe to update from 1.26.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>curlhttpsrc fixes and improvements</li>
+    <li>decklinkvideosink: Fix frame completion callbacks for firmware 14.3+</li>
+    <li>flac: Fix 6.1 and 7.1 channel layouts and support encoding and decoding of 32-bit audio</li>
+    <li>glimagesink: Fix handling of odd height buffers</li>
+    <li>matroskademux: make maximum allowed block size large enough to support 4k uncompressed video</li>
+    <li>mxf: Add support for custom Sony XDCAM video variant</li>
+    <li>opusenc: multichannel and surround sound handling improvements</li>
+    <li>playbin3: HLS/DASH stream selection handling improvements to fix disabling and re-enabling of audio/video streams with adaptivedemux2</li>
+    <li>qtmux: robust recording mode space left estimation fixes for streams that start with a timestamp offset</li>
+    <li>splitmuxsrc seeking improvements</li>
+    <li>Support FLAC audio in DASH manifests</li>
+    <li>Python bindings: fix regression where buffers were no longer writable in pad probe callbacks</li>
+    <li>cerbero: add python bindings for GstApp; Windows installer improvements</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.26/#1.26.10">GStreamer 1.26.10 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/downloads/">Downloads page</a>.
+</p>
+        </content>
+  </item>
+
 </news>
