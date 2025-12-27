@@ -13,6 +13,8 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2025-0009**<br/>CVE-2025-67326<br/>CVE-2025-67327 | Multiple out-of-bounds reads in MIDI parser | 2025-12-27 18:00 | [Details](sa-2025-0009.html) |
+| **GStreamer-SA-2025-0008**<br/>CVE-2025-67328<br/>CVE-2025-67329 | Multiple out-of-bounds reads in MIDI parser | 2025-12-27 18:00 | [Details](sa-2025-0008.html) |
 | **GStreamer-SA-2025-0007**<br/>ZDI-CAN-27381<br/>CVE-2025-6663 | Stack buffer overflow in H.266 video parser | 2025-06-26 23:55 | [Details](sa-2025-0007.html) |
 | **GStreamer-SA-2025-0006**<br/>CVE-2025-47806 | Stack buffer overflow in SubRip subtitle parser | 2025-05-29 23:55 | [Details](sa-2025-0006.html) |
 | **GStreamer-SA-2025-0005**<br/>CVE-2025-47183 | Out-of-bounds read in MOV/MP4 demuxer II | 2025-05-29 23:55 | [Details](sa-2025-0005.html) |
