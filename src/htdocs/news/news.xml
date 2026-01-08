@@ -18113,4 +18113,44 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a
         </content>
   </item>
 
+<!-- =========================== Orc 0.4.42 ================================= -->
+
+  <item>
+      <date>2026-01-08 12:00</date>
+        <title>Orc 0.4.42 release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler, which is used for SIMD acceleration
+in GStreamer plugins such as audioconvert, audiomixer, compositor, videoscale,
+and videoconvert, to name just a few.
+        </p>
+        <p>
+This release contains both bug fixes and new features.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>Initial 64-bit RISC-V support</li>
+            <li>Add 64-bit LoongArch support</li>
+            <li>Implement release and reuse of temporary registers for some targets</li>
+            <li>x86: Implement EVEX encoding and an opcode validation system</li>
+            <li>x86: Opcode refactor, improved constant handling and various other fixes</li>
+            <li>x86: add missing rounding operands for AVX and SSE</li>
+            <li>x86: Implement 64-bit single move constant load</li>
+            <li>includes: stop exporting the private compiler and OrcTarget definitions</li>
+            <li>Use hotdoc instead of gtk-doc to generate the documentation</li>
+            <li>ORC_DEBUG_FATAL environment variable allows abort on log messages of a certain level</li>
+            <li>Error message improvements and NEON backend clean-ups</li>
+            <li>Fix a few valgrind issues</li>
+            <li>Build: enable tools such as orcc and orc-bugreport by default</li>
+            <li>Various build fixes</li>
+        </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.42.tar.xz">orc-0.4.42.tar.xz</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
