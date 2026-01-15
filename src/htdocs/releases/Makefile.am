@@ -8,6 +8,7 @@ releases.html: releases.md
 
 SUBDIRS = \
 	1.28 \
+	1.27 \
 	1.26 \
 	1.24 \
 	1.22 \
