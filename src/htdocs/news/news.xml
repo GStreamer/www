@@ -18153,4 +18153,103 @@ Direct tarball download: <a href="&site;/src/orc/orc-0.4.42.tar.xz">orc-0.4.42.t
         </content>
   </item>
 
+<!-- =========================== 1.28.0 ================================= -->
+
+  <item>
+      <date>2026-01-27 17:00</date>
+        <title>GStreamer 1.28.0 new major stable release</title>
+        <content>
+<p>
+The GStreamer team is excited to announce a new major feature release of
+your favourite cross-platform multimedia framework!
+</p>
+<p>
+As always, this release is again packed with new features, bug fixes and many other improvements.
+</p>
+<p>
+The 1.28 release series adds new features on top of the previous 1.26 series
+and is part of the API and ABI-stable 1.x release series of the GStreamer
+multimedia framework.
+</p>
+<p>
+  <b>Highlights:</b>
+  <ul>
+  <li>AMD HIP plugin and integration helper library</li>
+  <li>Vulkan Video AV1 and VP9 decoding, H.264 encoding, and 10-bit support for H.265 decoder</li>
+  <li>waylandsink: Parse and set the HDR10 metadata and other color management improvements</li>
+  <li>Audio source separation element based on demucs in Rust</li>
+  <li>Analytics combiner and splitter elements plus batch meta to batch buffers from one or more streams</li>
+  <li>LiteRT inference element; move modelinfo to analytics lib; add script to help with modelinfo generation and upgrade</li>
+  <li>Add general classifier tensor-decoder, facedetector, and more analytics convenience API</li>
+  <li>New tensordecodebin element to auto-plug compatible tensor decoders based on their caps and many other additions and improvements</li>
+  <li>Add a burn-based YOLOX inference element and a YOLOX tensor decoder in Rust</li>
+  <li>applemedia: VideoToolbox VP9 and AV1 hardware-accelerated decoding support, and 10-bit HEVC encoding</li>
+  <li>Add new GIF decoder element in Rust with looping support</li>
+  <li>input-selector: implements a two-phase sinkpad switch now to avoid races when switching input pads</li>
+  <li>The inter wormhole sink and source elements gained a way to forward upstream events to the producer as well as new fine-tuning properties</li>
+  <li>webrtcsink: add renegotiation support and support for va hardware encoders</li>
+  <li>webrtc WHEP client and server signaller</li>
+  <li>New ST-2038 ancillary data combiner and extractor elements</li>
+  <li>fallbacksrc gained support for encoded streams</li>
+  <li>flv: enhanced rtmp H.265 video support, and support for multitrack audio</li>
+  <li>glupload: Implement udmabuf uploader to share buffers between software decoders/sources and GPUs, display engines (wayland), and other dma devices</li>
+  <li>video: Add crop, scale, rotate, flip, shear and more GstMeta transformation</li>
+  <li>New task pool GstContext to share a thread pool amongst elements for better resource management and performance, especially for video conversion and compositing</li>
+  <li>New Deepgram speech-to-text transcription plugin and many other translation and transcription improvements</li>
+  <li>Speech synthesizers: expose new "compress" overflow mode that can speed up audio while preserving pitch</li>
+  <li>ElevenLabs voice cloning element and support for Speechmatics speaker identification API</li>
+  <li>textaccumulate: new element for speech synthesis or translation preprocessing</li>
+  <li>New vmaf element to calculate perceptual video quality assessment scores using Netflix's VMAF framework</li>
+  <li>decodebin3: expose KLV, ID3 PES and ST-2038 ancillary data streams with new metadata GstStream type</li>
+  <li>New MPEG-H audio decoding plugin plus MP4 demuxing support</li>
+  <li>LCEVC: Add autoplugging decoding support for LCEVC H265 and H266 video streams and LCEVC H.265 and H.266 encoders</li>
+  <li>RTP "robust MPEG audio", raw audio (L8, L16, L24), and SMPTE ST291 ancillary metadata payloaders/depayloaders in Rust</li>
+  <li>Add a Rust-based icecastsink element with AAC support</li>
+  <li>The Windows IPC plugin gained support for passing generic data in addition to raw audio/video, and various properties</li>
+  <li>New D3D12 interlace and overlay compositor elements, plus many other D3D12 improvements</li>
+  <li>Blackmagic Decklink elements gained support for capturing and outputting all types of VANC via GstAncillaryMeta</li>
+  <li>GstLogContext API to reduce log spam in several components and `GST_DEBUG_ONCE` (etc) convenience macros to log things only once</li>
+  <li>hlssink3, hlscmafsink: Support the use of a single media file, plus I-frame only playlist support</li>
+  <li>Webkit: New wpe2 plugin making use of the "WPE Platform API"</li>
+  <li>MPEG-TS demuxer can now disable skew corrections</li>
+  <li>New Qt6 QML render source element</li>
+  <li>qml6gloverlay: support directly passing a QQuickItem for QML the render tree</li>
+  <li>unifxfdsink: Add a property to allow copying to make sink usable with more upstream elements</li>
+  <li>dots-viewer: Improve dot file generation and interactivity</li>
+  <li>Python bindings: more syntactic sugar, analytics API improvements and type annotations</li>
+  <li>cerbero: add support for Python wheel packaging, Windows ARM64, new iOS xcframework, Gtk4 on macOS and Windows, and more plugins</li>
+  <li>Smaller binary sizes of Rust plugins in Windows and Android binary packages</li>
+  <li>Peel: New C++ bindings for GStreamer</li>
+  <li>Lots of new plugins, features, performance improvements and bug fixes</li>
+  <li>Countless bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+<p>
+For more details check out the <a href="&site;/releases/1.28/">GStreamer 1.28 release notes</a>.
+</p>
+<p>
+Many thanks to everyone who contributed to this release!
+</p>
+<p>
+Binaries for Android, iOS, macOS and Windows will be provided in due course.
+</p>
+        <p>
+You can download release tarballs directly here:
+<a href="&site;/src/gstreamer/gstreamer-1.28.0.tar.xz">gstreamer</a>,
+<a href="&site;/src/gst-plugins-base/gst-plugins-base-1.28.0.tar.xz">gst-plugins-base</a>,
+<a href="&site;/src/gst-plugins-good/gst-plugins-good-1.28.0.tar.xz">gst-plugins-good</a>,
+<a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.28.0.tar.xz">gst-plugins-ugly</a>,
+<a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.28.0.tar.xz">gst-plugins-bad</a>,
+<a href="&site;/src/gst-libav/gst-libav-1.28.0.tar.xz">gst-libav</a>,
+<a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.28.0.tar.xz">gst-rtsp-server</a>,
+<a href="&site;/src/gst-python/gst-python-1.28.0.tar.xz">gst-python</a>,
+<a href="&site;/src/gst-editing-services/gst-editing-services-1.28.0.tar.xz">gst-editing-services</a>,
+<a href="&site;/src/gst-devtools/gst-devtools-1.28.0.tar.xz">gst-devtools</a>,
+<a href="&site;/src/gstreamer-vaapi/gstreamer-vaapi-1.28.0.tar.xz">gstreamer-vaapi</a>,
+<a href="&site;/src/gstreamer-sharp/gstreamer-sharp-1.28.0.tar.xz">gstreamer-sharp</a>,
+<a href="&site;/src/gstreamer-docs/gstreamer-docs-1.28.0.tar.xz">gstreamer-docs</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
