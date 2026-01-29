@@ -10,12 +10,13 @@
 
 The current API and ABI stable GStreamer 1.x series is:
 
-- [GStreamer 1.26 release series](https://gstreamer.freedesktop.org/releases/1.26/)
+- [GStreamer 1.28 release series](https://gstreamer.freedesktop.org/releases/1.28/)
 
 ### Older stable releases
 
 These releases are all part of the API and ABI stable GStreamer 1.x series:
 
+- [GStreamer 1.26 release series](https://gstreamer.freedesktop.org/releases/1.26/)
 - [GStreamer 1.24 release series](https://gstreamer.freedesktop.org/releases/1.24/)
 - [GStreamer 1.22 release series](https://gstreamer.freedesktop.org/releases/1.22/)
 - [GStreamer 1.20 release series](https://gstreamer.freedesktop.org/releases/1.20/)
