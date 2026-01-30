@@ -180,6 +180,10 @@ upstream sources. Additionally, some distributions do not include some plugins
 from the gst-plugins-bad package, or omit the gst-plugins-ugly and gst-libav
 packages entirely in their main repository for legal reasons.
 
+gst-plugins-rs is another large set of plugins that aren't packaged by some
+distros. Since these are in [a standalone repository](https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs),
+it is straightforward for developers to build them by hand with [`cargo-c`](https://github.com/lu-zero/cargo-c/).
+
 </div>
 
 <!-- ANDROID -->
