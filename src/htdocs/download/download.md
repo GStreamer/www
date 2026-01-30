@@ -72,15 +72,18 @@ development, you will want to install both packages.
 #### Universal Windows Platform
 
 Binary releases built to target the Universal Windows Platform (UWP). Used for
-shipping apps on the Windows Store, such as for an XBox, HoloLens 2, etc.
+shipping apps on the Windows Store, such as for an Xbox, HoloLens 2, etc.
 
-* UWP Universal (ARM64, X86, X86_64) (VS 2019, Release CRT) (old old old stable)
+* UWP Universal (ARM64, X86, X86_64) (VS 2019, Release CRT) (ancient stable)
   - [1.20.7 runtime + development tarball](/data/pkg/windows/1.20.7/uwp/gstreamer-1.0-uwp-universal-1.20.7.tar.xz)
-* UWP Universal (ARM64, X86, X86_64) (VS 2019, Debug CRT) (old old old stable)
+* UWP Universal (ARM64, X86, X86_64) (VS 2019, Debug CRT) (ancient stable)
   - [1.20.7 runtime + development tarball](/data/pkg/windows/1.20.7/uwp/gstreamer-1.0-uwp+debug-universal-1.20.7.tar.xz)
 
 UWP apps cannot use plugins that use dependencies built with MinGW because of
 forbidden APIs. Hence, these plugins are omitted from the binaries.
+
+UWP has been abandoned by Microsoft, and as such is no longer supported by the
+GStreamer project. This section will be removed in the future.
 
 <a name="toolchain-compatibility-notes"></a>
 #### Toolchain Compatibility Notes
