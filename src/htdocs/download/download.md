@@ -164,11 +164,16 @@ All Linux distributions and many BSD variants provide packages of GStreamer.
 You will find these in your distribution's package repository.
 
 [![Arch package](https://repology.org/badge/version-for-repo/arch/gstreamer.svg?header=Arch)](https://repology.org/project/gstreamer/versions)
-[![Debian 13 package](https://repology.org/badge/version-for-repo/debian_13/gstreamer.svg?header=Debian)](https://repology.org/project/gstreamer/versions)
-[![Fedora 40 package](https://repology.org/badge/version-for-repo/fedora_40/gstreamer.svg?header=Fedora)](https://repology.org/project/gstreamer/versions)
-[![Manjaro Stable package](https://repology.org/badge/version-for-repo/manjaro_stable/gstreamer.svg?header=Manjaro)](https://repology.org/project/gstreamer/versions)
-[![openSUSE Leap 15.6 package](https://repology.org/badge/version-for-repo/opensuse_leap_15_6/gstreamer.svg?header=openSUSE)](https://repology.org/project/gstreamer/versions)
-[![Ubuntu 24.04 package](https://repology.org/badge/version-for-repo/ubuntu_24_04/gstreamer.svg?header=Ubuntu)](https://repology.org/project/gstreamer/versions)
+[![Debian 14 package](https://repology.org/badge/version-for-repo/debian_14/gstreamer.svg?header=Debian 14)](https://repology.org/project/gstreamer/versions)
+[![Debian unstable package](https://repology.org/badge/version-for-repo/debian_unstable/gstreamer.svg?header=Debian Unstable)](https://repology.org/project/gstreamer/versions)
+[![Fedora 43 package](https://repology.org/badge/version-for-repo/fedora_43/gstreamer.svg?header=Fedora 43)](https://repology.org/project/gstreamer/versions)
+[![Fedora rawhide package](https://repology.org/badge/version-for-repo/fedora_rawhide/gstreamer.svg?header=Fedora Rawhide)](https://repology.org/project/gstreamer/versions)
+[![Manjaro stable package](https://repology.org/badge/version-for-repo/manjaro_stable/gstreamer.svg?header=Manjaro Stable)](https://repology.org/project/gstreamer/versions)
+[![Manjaro unstable package](https://repology.org/badge/version-for-repo/manjaro_unstable/gstreamer.svg?header=Manjaro Unstable)](https://repology.org/project/gstreamer/versions)
+[![openSUSE Leap 15.6 package](https://repology.org/badge/version-for-repo/opensuse_leap_15_6/gstreamer.svg?header=openSUSE 15.6)](https://repology.org/project/gstreamer/versions)
+[![openSUSE Tumbleweed package](https://repology.org/badge/version-for-repo/opensuse_tumbleweed/gstreamer.svg?header=openSUSE Tumbleweed)](https://repology.org/project/gstreamer/versions)
+[![Ubuntu 24.04 LTS package](https://repology.org/badge/version-for-repo/ubuntu_24_04/gstreamer.svg?header=Ubuntu LTS)](https://repology.org/project/gstreamer/versions)
+[![Ubuntu 26.04 package](https://repology.org/badge/version-for-repo/ubuntu_26_04/gstreamer.svg?header=Ubuntu 26.04)](https://repology.org/project/gstreamer/versions)
 
 Note that some distributions split the GStreamer plugins up further than the
 upstream sources. Additionally, some distributions do not include some plugins
