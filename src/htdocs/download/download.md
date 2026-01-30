@@ -27,8 +27,9 @@ Choose your platform below for more information.
 -->
 
 For building the aforementioned binary releases, you need to use the [Cerbero
-build aggregator](https://gitlab.freedesktop.org/gstreamer/cerbero/#description)
-maintained by the GStreamer project which supports Linux, macOS, and Windows.
+build aggregator](/documentation/installing/building-from-source-using-cerbero.html)
+maintained by the GStreamer project which supports building on Linux, macOS,
+and Windows.
 
 For downloading each GStreamer module individually, check our [modules
 page](/modules/), or go straight to our [source download directory](/src/).
@@ -38,7 +39,7 @@ features that are only available in a newer version of GStreamer than is
 provided by your distribution or in the last stable release.
 
 For doing GStreamer development, we recommend using the [GStreamer monorepo
-build from Git](https://gitlab.freedesktop.org/gstreamer/gstreamer/#getting-started)
+build from Git](/documentation/installing/building-from-source-using-meson.html)
 which will build all the main GStreamer modules in one go using [Meson's subproject
 feature](https://mesonbuild.com/Subprojects.html).
 </div>
