@@ -47,51 +47,27 @@ feature](https://mesonbuild.com/Subprojects.html).
 <!-- WINDOWS -->
 <div class="dl-panel" id="panel-windows" role="tabpanel" tabindex="0" aria-labelledby="tab-windows" hidden="">
 
-Binary releases in the form of MSI installers are available. The installers are
-split into runtime and development packages. For development, you will want to
-install both packages.
+Binary releases in the form of installers are available.
 
-* MSVC 64-bit (VS 2019, Release CRT)
-  - [1.26.10 runtime installer](/data/pkg/windows/1.26.10/msvc/gstreamer-1.0-msvc-x86_64-1.26.10.msi)
-  - [1.26.10 development installer](/data/pkg/windows/1.26.10/msvc/gstreamer-1.0-devel-msvc-x86_64-1.26.10.msi)
-* MSVC 32-bit (VS 2019, Release CRT)
-  - [1.26.10 runtime installer](/data/pkg/windows/1.26.10/msvc/gstreamer-1.0-msvc-x86-1.26.10.msi)
-  - [1.26.10 development installer](/data/pkg/windows/1.26.10/msvc/gstreamer-1.0-devel-msvc-x86-1.26.10.msi)
-* MinGW 64-bit
-  - [1.26.10 runtime installer](/data/pkg/windows/1.26.10/mingw/gstreamer-1.0-mingw-x86_64-1.26.10.msi)
-  - [1.26.10 development installer](/data/pkg/windows/1.26.10/mingw/gstreamer-1.0-devel-mingw-x86_64-1.26.10.msi)
-* MinGW 32-bit
-  - [1.26.10 runtime installer](/data/pkg/windows/1.26.10/mingw/gstreamer-1.0-mingw-x86-1.26.10.msi)
-  - [1.26.10 development installer](/data/pkg/windows/1.26.10/mingw/gstreamer-1.0-devel-mingw-x86-1.26.10.msi)
-
-For each of the above listed targets, [a zip file with `.msm` modules](/data/pkg/windows/1.26.10/)
-is available for integration into your own WiX-based app installer.
+* [MSVC x86_64 (VS 2022, Release CRT)](/data/pkg/windows/1.28.0/msvc/gstreamer-1.0-msvc-x86_64-1.28.0.exe)
+* [MSVC x86 (VS 2022, Release CRT)](/data/pkg/windows/1.28.0/msvc/gstreamer-1.0-msvc-x86-1.28.0.exe)
+* [MSVC arm64 (VS 2022, Release CRT)](/data/pkg/windows/1.28.0/msvc/gstreamer-1.0-msvc-arm64-1.28.0.exe)
+* [MinGW x86_64](/data/pkg/windows/1.28.0/mingw/gstreamer-1.0-mingw-x86_64-1.28.0.exe)
+* [MinGW x86](/data/pkg/windows/1.28.0/mingw/gstreamer-1.0-mingw-x86-1.28.0.exe)
 
 If you are not sure which to pick between MSVC and MinGW, just pick MSVC.
 However, do see the [toolchain compatibility notes](#toolchain-compatibility-notes)
 below which may affect you based on what toolchain your app will be built with.
 
-Starting with 1.26, the default installation directory has been changed from
-`ROOT:\gstreamer` (where `ROOT` matches the MSI folder's drive)
-to within the Program Files directory corresponding to the chosen architecture
-e.g. `C:\Program Files (x86)\gstreamer` for the 32-bit package.
-
-NOTE for MSI packagers: Starting with 1.26, the installers are compiled with
-WiX 5.0. As part of the port, the property for setting the installation
-directory is now `INSTALLDIR`, and it requires a full path to
-the desired directory, e.g. `C:\gstreamer` instead of just `C:\`.
-
-NOTE: The library names in MSVC are different from MinGW; specifically the DLLs
-are of the form `foo.dll` instead of `libfoo.dll`.
+NOTE: The libraries built with MSVC are named differently from MinGW;
+specifically the DLLs are of the form `foo.dll` instead of `libfoo.dll`.
 
 NOTE: [GstSharp .NET bindings](https://www.nuget.org/packages/GstSharp/)
 require the MSVC binaries starting with 1.18.
 
-NOTE: Some of the plugins shipped with the MSVC binaries link to non-gstreamer
-libraries built with MinGW because they are built with Autotools. [See below](#toolchain-compatibility-notes)
-for what this means for your application.
-
-[Older 1.x binary releases](/data/pkg/windows) are also available.
+[Older 1.x binary releases](/data/pkg/windows) are also available. Older
+installers are split into runtime and development packages, so for app
+development, you will want to install both packages.
 
 #### Universal Windows Platform
 
