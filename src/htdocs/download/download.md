@@ -47,7 +47,7 @@ feature](https://mesonbuild.com/Subprojects.html).
 <!-- WINDOWS -->
 <div class="dl-panel" id="panel-windows" role="tabpanel" tabindex="0" aria-labelledby="tab-windows" hidden="">
 
-Binary releases in the form of installers are available.
+The latest stable release is **1.28.0**. Installers are available for the following targets:
 
 * [MSVC x86_64 (VS 2022, Release CRT)](/data/pkg/windows/1.28.0/msvc/gstreamer-1.0-msvc-x86_64-1.28.0.exe)
 * [MSVC x86 (VS 2022, Release CRT)](/data/pkg/windows/1.28.0/msvc/gstreamer-1.0-msvc-x86-1.28.0.exe)
