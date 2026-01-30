@@ -213,13 +213,16 @@ The Android APIs targeted by our stable release(s) are:
 <!-- iOS -->
 <div class="dl-panel" id="panel-ios" role="tabpanel" tabindex="0" aria-labelledby="tab-ios" hidden="">
 
-Binary releases that integrate into XCode are available in the form of a single
-"universal" package with fat library frameworks. Bitcode support is built-in
-and the target SDK version for 1.16.x was iOS 9.0, for 1.18.x, 1.20.x and
-1.22.x it was iOS 11.0, and for 1.24.x it is iOS 12.0.
+Binary releases are available in two forms: a legacy framework, and an
+xcframework (1.28+). If you need to test using an iOS Simulator running on an
+Apple Silicon Mac, you need the xcframework. In all other cases, either release
+will work.
 
-* **iOS Universal [1.26.10 framework](/data/pkg/ios/1.26.10/gstreamer-1.0-devel-1.26.10-ios-universal.pkg) (ARM64, X86_64) (current stable version)**
-* iOS Universal [1.24.13 framework](/data/pkg/ios/1.24.13/gstreamer-1.0-devel-1.24.13-ios-universal.pkg) (ARM64, X86_64) (old stable version)
+* **iOS Universal [1.28.0 xcframework](/data/pkg/ios/1.28.0/gstreamer-1.28.0-xcframework.tar.xz) (iOS ARM64, iOS Simulator ARM64, iOS Simulator X86_64) (current stable version)**
+* **iOS Universal [1.28.0 legacy framework](/data/pkg/ios/1.28.0/gstreamer-1.0-devel-1.28.0-ios-universal.pkg) (iOS ARM64, iOS Simulator X86_64) (current stable version)**
+* iOS Universal [1.26.10 legacy framework](/data/pkg/ios/1.26.10/gstreamer-1.0-devel-1.26.10-ios-universal.pkg) (iOS ARM64, iOS Simulator X86_64) (old stable version)
+
+The legacy framework will be removed in a future GStreamer release.
 
 [Older 1.x binary releases](/data/pkg/ios) are also available.
 </div></div>
