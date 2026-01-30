@@ -183,13 +183,14 @@ packages entirely in their main repository for legal reasons.
 Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
-* **Android Universal [1.26.10 tarball](/data/pkg/android/1.26.10/gstreamer-1.0-android-universal-1.26.10.tar.xz) (current stable version)**
-* Android Universal [1.24.13 tarball](/data/pkg/android/1.24.13/gstreamer-1.0-android-universal-1.24.13.tar.xz) (old stable version)
+* **Android Universal [1.28.0 tarball](/data/pkg/android/1.28.0/gstreamer-1.0-android-universal-1.28.0.tar.xz) (current stable version)**
+* Android Universal [1.26.10 tarball](/data/pkg/android/1.26.10/gstreamer-1.0-android-universal-1.26.10.tar.xz) (old stable version)
 
 The Android NDKs used by our stable releases are:
 
 | GStreamer version | NDK Version |
 | ----------------- | ----------- |
+| 1.28.x            | r25c        |
 | 1.26.x            | r25c        |
 | 1.24.x            | r25c        |
 | 1.22.x            | r21         |
@@ -199,12 +200,12 @@ The Android NDKs used by our stable releases are:
 
 The Android APIs targeted by our stable release(s) are:
 
-| Architecture | API Targeted<br/><small>(GStreamer <= 1.20)</small> | API Targeted<br/><small>(GStreamer >= 1.22)</small> |
-| ------------ | -------------------------------------------------- | -------------------------------------------------- |
-| armv7        | v16 (Jelly Bean)                                   | v21 (Lollipop)                                    |
-| x86          | v16 (Jelly Bean)                                   | v21 (Lollipop)                                    |
-| arm64        | v21 (Lollipop)                                     | v21 (Lollipop)                                    |
-| x86_64       | v21 (Lollipop)                                     | v21 (Lollipop)                                    |
+| Architecture | API Targeted<br/><small>(GStreamer 1.22 - 1.26)</small> | API Targeted<br/><small>(GStreamer >= 1.28)</small> |
+| ------------ | --------------------------------------------------- | --------------------------------------------------- |
+| armv7        | v21 (Lollipop) | v24 (Nougat) |
+| x86          | v21 (Lollipop) | v24 (Nougat) |
+| arm64        | v21 (Lollipop) | v24 (Nougat) |
+| x86_64       | v21 (Lollipop) | v24 (Nougat) |
 
 [Older 1.x binary releases](/data/pkg/android) are also available.
 </div>
