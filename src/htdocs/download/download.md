@@ -134,24 +134,24 @@ This is the toolchain compatibility matrix with the stable releases:
 <div class="dl-panel" id="panel-macos" role="tabpanel" tabindex="0" aria-labelledby="tab-macos" hidden="">
 
 Binary releases in the form of `.pkg` framework installers are available. The
-installers are split into runtime and development packages. For development,
-you will want to install _both_ packages. The target SDK version for 1.20 and
-1.22 was macOS 10.11, and for 1.24 it is macOS 10.13 (High Sierra).
-<!-- FIXME: and for 1.26? -->
+installers are split into runtime, development, and debug packages. For
+development, you will want to install both runtime and development packages.
+The oldest supported macOS is 10.13 (High Sierra).
 
-* **macOS Universal (X86_64 &amp; ARM64) 1.26 release (current stable version)**
-  - **[1.26.10 runtime installer](/data/pkg/osx/1.26.10/gstreamer-1.0-1.26.10-universal.pkg)**
-  - **[1.26.10 development installer](/data/pkg/osx/1.26.10/gstreamer-1.0-devel-1.26.10-universal.pkg)**
+* **macOS Universal (X86_64 &amp; ARM64) 1.28 release (current stable version)**
+  - **[1.28.0 runtime installer](/data/pkg/osx/1.28.0/gstreamer-1.0-1.28.0-universal.pkg)**
+  - **[1.28.0 development installer](/data/pkg/osx/1.28.0/gstreamer-1.0-devel-1.28.0-universal.pkg)**
+  - **[1.28.0 debug installer](/data/pkg/osx/1.28.0/gstreamer-1.0-debug-1.28.0-universal.pkg)**
 
-* macOS Universal (X86_64 &amp; ARM64) 1.24 release (old stable version)
-  - [1.24.13 runtime installer](/data/pkg/osx/1.24.13/gstreamer-1.0-1.24.13-universal.pkg)
-  - [1.24.13 development installer](/data/pkg/osx/1.24.13/gstreamer-1.0-devel-1.24.13-universal.pkg)
+* macOS Universal (X86_64 &amp; ARM64) 1.26 release (old stable version)
+  - [1.26.10 runtime installer](/data/pkg/osx/1.26.10/gstreamer-1.0-1.26.10-universal.pkg)
+  - [1.26.10 development installer](/data/pkg/osx/1.26.10/gstreamer-1.0-devel-1.26.10-universal.pkg)
 
-GStreamer is also available as a 
-[![Homebrew package](https://repology.org/badge/version-for-repo/homebrew/gstreamer.svg)](https://formulae.brew.sh/formula/gstreamer), and you should be
-able to use that. However, please note that some plugins are not shipped by
-Homebrew, and you should avoid mixing Homebrew and the official installers on
-the same system.
+GStreamer is also maintained by third-parties in the
+[![Homebrew package](https://repology.org/badge/version-for-repo/homebrew/gstreamer.svg)](https://formulae.brew.sh/formula/gstreamer).
+You should be able to use that, but please note that some plugins are not
+shipped by Homebrew, and you should avoid mixing Homebrew and the official
+installers on the same system.
 
 
 [Older 1.x binary releases](/data/pkg/osx) are also available.
