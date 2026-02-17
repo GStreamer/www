@@ -59,6 +59,12 @@ If you are not sure which to pick between MSVC and MinGW, just pick MSVC.
 However, do see the [toolchain compatibility notes](#toolchain-compatibility-notes)
 below which may affect you based on what toolchain your app will be built with.
 
+**Python wheels** are also available via PyPI, starting with 1.28.0. Simply run:
+
+```
+pip install gstreamer-bundle
+```
+
 NOTE: The libraries built with MSVC are named differently from MinGW;
 specifically the DLLs are of the form `foo.dll` instead of `libfoo.dll`.
 
@@ -146,6 +152,12 @@ The oldest supported macOS is 10.13 (High Sierra).
 * macOS Universal (X86_64 &amp; ARM64) 1.26 release (old stable version)
   - [1.26.10 runtime installer](/data/pkg/osx/1.26.10/gstreamer-1.0-1.26.10-universal.pkg)
   - [1.26.10 development installer](/data/pkg/osx/1.26.10/gstreamer-1.0-devel-1.26.10-universal.pkg)
+
+**Python wheels** are also available via PyPI, starting with 1.28.0. Simply run:
+
+```
+pip install gstreamer-bundle
+```
 
 GStreamer is also maintained by third-parties in the
 [![Homebrew package](https://repology.org/badge/version-for-repo/homebrew/gstreamer.svg)](https://formulae.brew.sh/formula/gstreamer).
