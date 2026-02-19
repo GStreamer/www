@@ -973,6 +973,8 @@ GStreamer's fundamental GLib types such as `Gst.Fraction`, `Gst.IntRange` etc.
   * `obj.make_writable()` makes any MiniObject writable.
   * Pad probe callbacks now has `info.writable_object()` and `info.set_object()`
     to modify objects inside the callback.
+- Breaking change: `Gst.ElementFactory.make` and `Gst.Bin.make_and_add` now
+  raise `Gst.MissingPluginError` exception when the element is not found.
 
 <a id="csharp"></a>
 ## GStreamer C# Bindings
@@ -1270,6 +1272,10 @@ Cerbero is a meta build system used to build GStreamer plus dependencies on plat
 
 - The thread ID reported in debug logs is no longer prefixed with a `0x` on Windows, Linux and
   FreeBSD platforms. This change can potentially break log parsers. GstDebugViewer was adapted accordingly.
+
+- Python bindings: `Gst.ElementFactory.make` and `Gst.Bin.make_and_add` now
+  raise `Gst.MissingPluginError` exception when the element is not found.
+
 
 <a id="known-issues"></a>
 ## Known Issues
