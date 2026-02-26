@@ -16,7 +16,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 | **GStreamer-SA-2026-0012**| H.265 video parser potential denial-of-service | 2026-02-25 23:59 | [Details](sa-2026-0012.html) |
 | **GStreamer-SA-2026-0011**<br/>CVE-2026-3084<br/>ZDI-CAN-28910 | Out-of-bounds write in H.266 video parser when parsing picture partitions | 2026-02-25 23:59 | [Details](sa-2026-0011.html) |
 | **GStreamer-SA-2026-0010**<br/>CVE-2026-3081<br/>ZDI-CAN-28839 | Stack buffer overflow in H.266 video parser when parsing pic_timing SEIs | 2026-02-25 23:59 | [Details](sa-2026-0010.html) |
-| **GStreamer-SA-2026-0009**<br/>CVE-2026-3086<br/>ZDI-CAN-28911 |  Out-of-bounds buffer write in H.266 video parser when parsing Adaptation Parameter Set| | 2026-02-25 23:59 | [Details](sa-2026-0009.html) |
+| **GStreamer-SA-2026-0009**<br/>CVE-2026-3086<br/>ZDI-CAN-28911 |  Out-of-bounds buffer write in H.266 video parser when parsing Adaptation Parameter Set | 2026-02-25 23:59 | [Details](sa-2026-0009.html) |
 | **GStreamer-SA-2026-0008**<br/>CVE-2026-3083, CVE-2026-3085<br/>ZDI-CAN-28851, ZDI-CAN-28850 | Multiple vulnerabilities in RTP QDM2 depayloader element | 2026-02-25 23:59 | [Details](sa-2026-0008.html) |
 | **GStreamer-SA-2026-0007**<br/>CVE-2026-2923<br/>ZDI-CAN-28838 | Out-of-bounds read and write in DVB Subtitle Decoder | 2026-02-25 23:59 | [Details](sa-2026-0007.html) |
 | **GStreamer-SA-2026-0006**<br/>CVE-2026-2920<br/>ZDI-CAN-28843 | Out-of-bounds write in ASF Demuxer | 2026-02-25 23:59 | [Details](sa-2026-0006.html) |
