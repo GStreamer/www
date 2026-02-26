@@ -18252,4 +18252,67 @@ You can download release tarballs directly here:
         </content>
   </item>
 
+
+<!-- =========================== 1.28.1 ================================= -->
+
+  <item>
+      <date>2026-02-26 02:00</date>
+        <title>GStreamer 1.28.1 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the first bug fix release
+in the new stable 1.28 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bug fixes as well as a number of
+<a href="&site;/security/">security fixes</a>. It should be safe to update
+from 1.28.0, and we recommend you do so at your earliest convenience.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Various <a href="&site;/security/">security fixes</a> and playback fixes</li>
+    <li>Add new whisper-based speech-to-text transcription element</li>
+    <li>Add new debugseimetainserter plugin for testing SEI meta insertion</li>
+    <li>Fix scaling and resizing with UIView on EAGL and Vulkan</li>
+    <li>Reverse playback and gap handling fixes in various components</li>
+    <li>avviddec: Handle field/order changes in mixed interlace mode</li>
+    <li>awstranscriber2: workaround for suspected Rust SDK regression</li>
+    <li>cudaupload, cudadownload: Fix CUDA/GL interop copy path</li>
+    <li>decodebin3: Fix switch to smaller collections and improve collection change on existing pad</li>
+    <li>devenv: Add a subproject for providing the LunarG MoltenVK SDK</li>
+    <li>livesync: fixes and reverse playback handling; ignore upstream latency when upstream is not live</li>
+    <li>objectdetectionoverlay: add support for rotated bounding boxes</li>
+    <li>qml6glsrc: Fix rendering of scene with clipped items</li>
+    <li>speechmatics: allow configuring audio events such as detecting applause, laughter and music</li>
+    <li>livekit webrtc: emit session-requested only for Producer role</li>
+    <li>tsdemux: Fix Continuity Counter handling and handle clock change/resets without skew correction</li>
+    <li>v4l2: Add support for AV1 stateful V4l2 decoder</li>
+    <li>vpxdec: Support downstream pools with alignment requirements</li>
+    <li>vtdec, vtenc: Lots of Apple VideoToolbox decoder and encoder fixes</li>
+    <li>applemedia build improvements, patches for tvOS support, tvos cross file </li>
+    <li>wavpack: Fix handling of format changes, extend parser with new features, handle non-S32 samples</li>
+    <li>webrtcsink: allow specifying custom headers to signalling server</li>
+    <li>webrtcsink: negotiate profile and level for input encoded in H.264</li>
+    <li>webrtcsrc: add request type pads and allow sending encoded data downstream</li>
+    <li>cerbero: wheel: Add a new `gstreamer_meta` package with fewer deps</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.28/#1.28.1">GStreamer 1.28.1 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/downloads/">Downloads page</a>.
+</p>
+        </content>
+  </item>
+
 </news>
