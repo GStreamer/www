@@ -16,7 +16,7 @@ Choose your platform below for more information.
   <button class="dl-tab dl-tab-g" id="tab-macos" aria-selected="false" aria-controls="panel-macos" role="tab">macOS</button>
   <button class="dl-tab dl-tab-g" id="tab-linux" aria-selected="false" aria-controls="panel-linux" role="tab">Linux</button>
   <button class="dl-tab dl-tab-b" id="tab-android" aria-selected="false" aria-controls="panel-android" role="tab">Android</button>
-  <button class="dl-tab dl-tab-b" id="tab-ios" aria-selected="false" aria-controls="panel-ios" role="tab">iOS</button>
+  <button class="dl-tab dl-tab-b" id="tab-ios" aria-selected="false" aria-controls="panel-ios" role="tab">iOS, tvOS</button>
 </div>
 
 <!-- SOURCES -->
@@ -47,13 +47,13 @@ feature](https://mesonbuild.com/Subprojects.html).
 <!-- WINDOWS -->
 <div class="dl-panel" id="panel-windows" role="tabpanel" tabindex="0" aria-labelledby="tab-windows" hidden="">
 
-The latest stable release is **1.28.0**. Installers are available for the following targets:
+The latest stable release is **1.28.1**. Installers are available for the following targets:
 
-* [MSVC x86_64 (VS 2022, Release CRT)](/data/pkg/windows/1.28.0/msvc/gstreamer-1.0-msvc-x86_64-1.28.0.exe)
-* [MSVC x86 (VS 2022, Release CRT)](/data/pkg/windows/1.28.0/msvc/gstreamer-1.0-msvc-x86-1.28.0.exe)
-* [MSVC arm64 (VS 2022, Release CRT)](/data/pkg/windows/1.28.0/msvc/gstreamer-1.0-msvc-arm64-1.28.0.exe)
-* [MinGW x86_64](/data/pkg/windows/1.28.0/mingw/gstreamer-1.0-mingw-x86_64-1.28.0.exe)
-* [MinGW x86](/data/pkg/windows/1.28.0/mingw/gstreamer-1.0-mingw-x86-1.28.0.exe)
+* [MSVC x86_64 (VS 2022, Release CRT)](/data/pkg/windows/1.28.1/msvc/gstreamer-1.0-msvc-x86_64-1.28.1.exe)
+* [MSVC x86 (VS 2022, Release CRT)](/data/pkg/windows/1.28.1/msvc/gstreamer-1.0-msvc-x86-1.28.1.exe)
+* [MSVC arm64 (VS 2022, Release CRT)](/data/pkg/windows/1.28.1/msvc/gstreamer-1.0-msvc-arm64-1.28.1.exe)
+* [MinGW x86_64](/data/pkg/windows/1.28.1/mingw/gstreamer-1.0-mingw-x86_64-1.28.1.exe)
+* [MinGW x86](/data/pkg/windows/1.28.1/mingw/gstreamer-1.0-mingw-x86-1.28.1.exe)
 
 If you are not sure which to pick between MSVC and MinGW, just pick MSVC.
 However, do see the [toolchain compatibility notes](#toolchain-compatibility-notes)
@@ -145,9 +145,9 @@ development, you will want to install both runtime and development packages.
 The oldest supported macOS is 10.13 (High Sierra).
 
 * **macOS Universal (X86_64 &amp; ARM64) 1.28 release (current stable version)**
-  - **[1.28.0 runtime installer](/data/pkg/osx/1.28.0/gstreamer-1.0-1.28.0-universal.pkg)**
-  - **[1.28.0 development installer](/data/pkg/osx/1.28.0/gstreamer-1.0-devel-1.28.0-universal.pkg)**
-  - **[1.28.0 debug installer](/data/pkg/osx/1.28.0/gstreamer-1.0-debug-1.28.0-universal.pkg)**
+  - **[1.28.1 runtime installer](/data/pkg/osx/1.28.1/gstreamer-1.0-1.28.1-universal.pkg)**
+  - **[1.28.1 development installer](/data/pkg/osx/1.28.1/gstreamer-1.0-devel-1.28.1-universal.pkg)**
+  - **[1.28.1 debug installer](/data/pkg/osx/1.28.1/gstreamer-1.0-debug-1.28.1-universal.pkg)**
 
 * macOS Universal (X86_64 &amp; ARM64) 1.26 release (old stable version)
   - [1.26.10 runtime installer](/data/pkg/osx/1.26.10/gstreamer-1.0-1.26.10-universal.pkg)
@@ -204,7 +204,7 @@ it is straightforward for developers to build them by hand with [`cargo-c`](http
 Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
-* **Android Universal [1.28.0 tarball](/data/pkg/android/1.28.0/gstreamer-1.0-android-universal-1.28.0.tar.xz) (current stable version)**
+* **Android Universal [1.28.1 tarball](/data/pkg/android/1.28.1/gstreamer-1.0-android-universal-1.28.1.tar.xz) (current stable version)**
 * Android Universal [1.26.10 tarball](/data/pkg/android/1.26.10/gstreamer-1.0-android-universal-1.26.10.tar.xz) (old stable version)
 
 The Android NDKs used by our stable releases are:
@@ -235,13 +235,14 @@ The Android APIs targeted by our stable release(s) are:
 <div class="dl-panel" id="panel-ios" role="tabpanel" tabindex="0" aria-labelledby="tab-ios" hidden="">
 
 Binary releases are available in two forms: a legacy framework, and an
-xcframework (1.28+). If you need to test using an iOS Simulator running on an
-Apple Silicon Mac, you need the xcframework. In all other cases, either release
-will work.
+xcframework (1.28+). The legacy framework only supports iOS and an iOS
+Simulator on an Intel Mac. The xcframework supports iOS and iOS Simulator (ARM64
+and X86_64). Starting with 1.28.1, it also supports tvOS, and tvOS Simulator
+(ARM64 and X86_64).
 
-* **iOS Universal [1.28.0 xcframework](/data/pkg/ios/1.28.0/gstreamer-1.28.0-xcframework.tar.xz) (iOS ARM64, iOS Simulator ARM64, iOS Simulator X86_64) (current stable version)**
-* **iOS Universal [1.28.0 legacy framework](/data/pkg/ios/1.28.0/gstreamer-1.0-devel-1.28.0-ios-universal.pkg) (iOS ARM64, iOS Simulator X86_64) (current stable version)**
-* iOS Universal [1.26.10 legacy framework](/data/pkg/ios/1.26.10/gstreamer-1.0-devel-1.26.10-ios-universal.pkg) (iOS ARM64, iOS Simulator X86_64) (old stable version)
+* **iOS &amp; tvOS [1.28.1 xcframework](/data/pkg/ios/1.28.1/gstreamer-1.28.1-xcframework.tar.xz) (current stable version)**
+* **iOS Universal [1.28.1 legacy framework](/data/pkg/ios/1.28.1/gstreamer-1.0-devel-1.28.1-ios-universal.pkg) (current stable version)**
+* iOS Universal [1.26.10 legacy framework](/data/pkg/ios/1.26.10/gstreamer-1.0-devel-1.26.10-ios-universal.pkg) (old stable version)
 
 The legacy framework will be removed in a future GStreamer release.
 
