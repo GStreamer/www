@@ -13,6 +13,18 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2026-0012**| H.265 video parser potential denial-of-service | 2026-02-25 23:59 | [Details](sa-2026-0012.html) |
+| **GStreamer-SA-2026-0011**<br/>CVE-2026-3084<br/>ZDI-CAN-28910 | Out-of-bounds write in H.266 video parser when parsing picture partitions | 2026-02-25 23:59 | [Details](sa-2026-0011.html) |
+| **GStreamer-SA-2026-0010**<br/>CVE-2026-3081<br/>ZDI-CAN-28839 | Stack buffer overflow in H.266 video parser when parsing pic_timing SEIs | 2026-02-25 23:59 | [Details](sa-2026-0010.html) |
+| **GStreamer-SA-2026-0009**<br/>CVE-2026-3086<br/>ZDI-CAN-28911 |  Out-of-bounds buffer write in H.266 video parser when parsing Adaptation Parameter Set| | 2026-02-25 23:59 | [Details](sa-2026-0009.html) |
+| **GStreamer-SA-2026-0008**<br/>CVE-2026-3083, CVE-2026-3085<br/>ZDI-CAN-28851, ZDI-CAN-28850 | XXXXXXXXXXXXXXXXXXXXXXX | 2026-02-25 23:59 | [Details](sa-2026-0008.html) |
+| **GStreamer-SA-2026-0007**<br/>CVE-2026-2923<br/>ZDI-CAN-28838 | Out-of-bounds read and write in DVB Subtitle Decoder | 2026-02-25 23:59 | [Details](sa-2026-0007.html) |
+| **GStreamer-SA-2026-0006**<br/>CVE-2026-2920<br/>ZDI-CAN-28843 | Out-of-bounds write in ASF Demuxer | 2026-02-25 23:59 | [Details](sa-2026-0006.html) |
+| **GStreamer-SA-2026-0005**<br/>CVE-2026-2922<br/>ZDI-CAN-28845 | Out-of-bounds write in RealMedia Demuxer | 2026-02-25 23:59 | [Details](sa-2026-0005.html) |
+| **GStreamer-SA-2026-0004**<br/>CVE-2026-2921<br/>ZDI-CAN-28854 | Integer overflow in RIFF parser | 2026-02-25 23:59 | [Details](sa-2026-0004.html) |
+| **GStreamer-SA-2026-0003**<br/>CVE-2026-3082<br/>ZDI-CAN-28840 | Heap-based Buffer Overflow on Huffman tables reading in JPEG parser | 2026-02-25 23:59 | [Details](sa-2026-0003.html) |
+| **GStreamer-SA-2026-0002**| Out-of-bounds read in MP4 demuxer | 2026-02-25 23:59 | [Details](sa-2026-0002.html) |
+| **GStreamer-SA-2026-0001**<br/>CVE-2026-1940 | Out-of-bounds read in WAV parser | 2026-02-25 23:59 | [Details](sa-2026-0001.html) |
 | **GStreamer-SA-2025-0009**<br/>CVE-2025-67326<br/>CVE-2025-67327 | Multiple out-of-bounds reads in MIDI parser | 2025-12-27 18:00 | [Details](sa-2025-0009.html) |
 | **GStreamer-SA-2025-0008**<br/>CVE-2025-67328<br/>CVE-2025-67329 | Multiple out-of-bounds reads in MIDI parser | 2025-12-27 18:00 | [Details](sa-2025-0008.html) |
 | **GStreamer-SA-2025-0007**<br/>ZDI-CAN-27381<br/>CVE-2025-6663 | Stack buffer overflow in H.266 video parser | 2025-06-26 23:55 | [Details](sa-2025-0007.html) |
