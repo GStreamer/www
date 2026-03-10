@@ -18315,4 +18315,61 @@ will be published on the <a href="&site;/downloads/">Downloads page</a>.
         </content>
   </item>
 
+<!-- =========================== 1.26.11 ================================= -->
+
+  <item>
+      <date>2026-03-10 17:00</date>
+        <title>GStreamer 1.26.11 old-stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the now old-stable 1.26 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+Please note that the 1.26 old-stable series is no longer actively maintained
+and has been superseded by the GStreamer 1.28 stable series now.
+</p>
+
+<p>
+This release only contains bugfixes, and it should be safe to update from 1.26.x.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Security fixes for the JPEG, H.265 and H.266 video parsers and the DVB subtitle overlay</li>
+    <li>Security fixes for the ASF, RealMedia and QuickTime/MP4 demuxers and RIFF library</li>
+    <li>Security fixes for the WAV audio parser and the RTP QDM2 depayloader</li>
+    <li>avviddec: Handle field/order changes in mixed interlace mode</li>
+    <li>awstranscriber2: workaround AWS SDK regression, plus transcriberbin latency reporting fixes</li>
+    <li>videodecoder: Handle recovery from temporary reordered output</li>
+    <li>Decodebin3 collection handling improvements</li>
+    <li>fmp4mux: fragment duration handling improvements for HLS</li>
+    <li>Gap event handling fixes in audio/video decoders and aggregator/muxers</li>
+    <li>GstPlay stream selection handling improvements</li>
+    <li>Input selector fixes</li>
+    <li>MPEG-TS demuxer continuity counter handling fixes</li>
+    <li>Reverse playback fixes for the MP4 demuxer</li>
+    <li>RTP, SRTP, RTCP and RTSP and Transport-Wide Congestion Control fixes</li>
+    <li>Webrtcsink: better handling of platform-specific NVIDIA encoder differences, plus other improvements</li>
+    <li>Apple macOS VideoToolbox decoder improvements</li>
+    <li>Python bindings: more type hinting</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.26/#1.26.11">GStreamer 1.26.11 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/downloads/">Downloads page</a>.
+</p>
+        </content>
+  </item>
+
 </news>
