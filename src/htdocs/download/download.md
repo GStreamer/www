@@ -150,8 +150,8 @@ The oldest supported macOS is 10.13 (High Sierra).
   - **[1.28.1 debug installer](/data/pkg/osx/1.28.1/gstreamer-1.0-debug-1.28.1-universal.pkg)**
 
 * macOS Universal (X86_64 &amp; ARM64) 1.26 release (old stable version)
-  - [1.26.10 runtime installer](/data/pkg/osx/1.26.10/gstreamer-1.0-1.26.10-universal.pkg)
-  - [1.26.10 development installer](/data/pkg/osx/1.26.10/gstreamer-1.0-devel-1.26.10-universal.pkg)
+  - [1.26.11 runtime installer](/data/pkg/osx/1.26.11/gstreamer-1.0-1.26.11-universal.pkg)
+  - [1.26.11 development installer](/data/pkg/osx/1.26.11/gstreamer-1.0-devel-1.26.11-universal.pkg)
 
 **Python wheels** are also available via PyPI, starting with 1.28.0. Simply run:
 
@@ -205,7 +205,7 @@ Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
 * **Android Universal [1.28.1 tarball](/data/pkg/android/1.28.1/gstreamer-1.0-android-universal-1.28.1.tar.xz) (current stable version)**
-* Android Universal [1.26.10 tarball](/data/pkg/android/1.26.10/gstreamer-1.0-android-universal-1.26.10.tar.xz) (old stable version)
+* Android Universal [1.26.11 tarball](/data/pkg/android/1.26.11/gstreamer-1.0-android-universal-1.26.11.tar.xz) (old stable version)
 
 The Android NDKs used by our stable releases are:
 
@@ -242,7 +242,7 @@ and X86_64). Starting with 1.28.1, it also supports tvOS, and tvOS Simulator
 
 * **iOS &amp; tvOS [1.28.1 xcframework](/data/pkg/ios/1.28.1/gstreamer-1.28.1-xcframework.tar.xz) (current stable version)**
 * **iOS Universal [1.28.1 legacy framework](/data/pkg/ios/1.28.1/gstreamer-1.0-devel-1.28.1-ios-universal.pkg) (current stable version)**
-* iOS Universal [1.26.10 legacy framework](/data/pkg/ios/1.26.10/gstreamer-1.0-devel-1.26.10-ios-universal.pkg) (old stable version)
+* iOS Universal [1.26.11 legacy framework](/data/pkg/ios/1.26.11/gstreamer-1.0-devel-1.26.11-ios-universal.pkg) (old stable version)
 
 The legacy framework will be removed in a future GStreamer release.
 
