@@ -18400,4 +18400,78 @@ Please spread the word!
         </content>
   </item>
 
+<!-- =========================== 1.29.1 ================================= -->
+
+    <item>
+      <date>2026-03-22 14:00</date>
+        <title>GStreamer 1.29.1 unstable development snapshot</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce the first development snapshot in
+the API/ABI-unstable 1.29 release series.
+</p>
+<p>
+The API/ABI-unstable 1.29 release series is for testing and development purposes
+in the lead-up to the stable 1.30 series which is scheduled for release in Q4
+2026. Any newly-added API can still change until that point.
+</p>
+<p>
+This development release is primarily for developers and early adopters, and
+distros should probably not package it.
+</p>
+<p>
+  <b>Highlighted changes:</b>
+  <ul>
+    <li>ac4parse: New basic AC-4 parser element, plus AC-4 typefinding</li>
+    <li>analytics: New GstAnalyticsMtd derivative to represent grouping of Mtd's and Keypoint</li>
+    <li>Parse HDR10+ metadata out of H.265 and AV1 bitstreams</li>
+    <li>Matroska demuxer: Can build a dynamic seek index now if needed</li>
+    <li>New h264seiinserter and h265seiinserter elements that support both closed captions and unregistered user data SEIs</li>
+    <li>Add HLS WebVTT sink element to the hlssink3 plugin</li>
+    <li>New plugin for general purpose compress/decompress</li>
+    <li>New udpsrc2 element with better performance for high bitrate streams</li>
+    <li>New VA-API overlay compositor</li>
+    <li>Opus audio support for F32 and S24_32 samples and 96kHz sample rate</li>
+    <li>Playbin3 subtitle switching fixes</li>
+    <li>Bump ranks of the new Rust RTP (de)payloaders to PRIMARY and default to mtu 1200 for payloaders</li>
+    <li>rtspsrc2 authentication support</li>
+    <li>GstPlay track selection notification improvements</li>
+    <li>QML6 GL Source now supports navigation events</li>
+    <li>QuickTime demuxer gained Bayer support</li>
+    <li>Splitmuxsink now includes the start and end timecodes in fragment-opened and closed messages</li>
+    <li>srtpdec gained a way to invalidate keys for a specific SSRC</li>
+    <li>The APE tag demuxer can extract cover art tags now</li>
+    <li>translationbin can control the textaccumulate latency now via a new property</li>
+    <li>Allow device providers rank override using GST_PLUGIN_FEATURE_RANK</li>
+    <li>cerbero gained support for Android on RISC-V64</li>
+    <li>Countless bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be made available shortly
+at the <a href="https://gstreamer.freedesktop.org/pkg/">usual location</a>.
+</p>
+<p>
+Release tarballs can be downloaded directly here:
+<ul>
+  <li><a href="&site;/src/gstreamer/gstreamer-1.29.1.tar.xz">gstreamer-1.29.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-base/gst-plugins-base-1.29.1.tar.xz">gst-plugins-base-1.29.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-good/gst-plugins-good-1.29.1.tar.xz">gst-plugins-good-1.29.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.29.1.tar.xz">gst-plugins-ugly-1.29.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.29.1.tar.xz">gst-plugins-bad-1.29.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-libav/gst-libav-1.29.1.tar.xz">gst-libav-1.29.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.29.1.tar.xz">gst-rtsp-server-1.29.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-python/gst-python-1.29.1.tar.xz">gst-python-1.29.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-editing-services/gst-editing-services-1.29.1.tar.xz">gst-editing-services-1.29.1.tar.xz</a></li>
+  <li><a href="&site;/src/gst-devtools/gst-devtools-1.29.1.tar.xz">gst-devtools-1.29.1.tar.xz</a>,</li>
+  <li><a href="&site;/src/gstreamer-docs/gstreamer-docs-1.29.1.tar.xz">gstreamer-docs-1.29.1.tar.xz</a></li>
+</ul>
+</p>
+<p>
+As always, please give it a spin and let us know of any issues you run into by filing an
+issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a>.
+</p>
+        </content>
+  </item>
+
 </news>
