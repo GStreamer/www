@@ -9,10 +9,23 @@ If you have patches, please attach them to the confidential issue and not via a 
 
 The GStreamer project encourages [responsible disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) of security issues.
 
+**Distributors** please note that this is not an exhaustive or comprehensive list of security-relevant issues affecting past releases, but merely a list of security issues filed as such by third parties. Fixes that may be security relevant are also landed as part of routine bug-fixing and development activity, and as such we encourage distributors to upgrade to our latest bug-fix releases whenever possible.
+
 ## Security Advisories
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2026-0023** | Denial of service in SRT/WebVTT parser  | 2026-04-07 23:59  | [Details](sa-2026-0023.html) |
+| **GStreamer-SA-2026-0022**<br/>CVE-2026-pending | Heap buffer overflow in Matroska demuxer  | 2026-04-07 23:59  | [Details](sa-2026-0022.html) |
+| **GStreamer-SA-2026-0021**<br/>CVE-2026-pending | Integer overflow in WAV parser cue handling | 2026-04-07 23:59  | [Details](sa-2026-0021.html) |
+| **GStreamer-SA-2026-0020** | Assertion failures in FLV demuxer on corrupted streams | 2026-04-07 23:59  | [Details](sa-2026-0020.html) |
+| **GStreamer-SA-2026-0019** | NULL-pointer dereferences in mDVDsub subtitle parser | 2026-04-07 23:59  | [Details](sa-2026-0019.html) |
+| **GStreamer-SA-2026-0018**<br/>CVE-2026-pending | MOV/MP4 demuxer audio channel parsing vulnerabilities | 2026-04-07 23:59  | [Details](sa-2026-0018.html) |
+| **GStreamer-SA-2026-0017** | Integer overflow in H.266/VVC parser leading to stack overflow | 2026-04-07 23:59  | [Details](sa-2026-0017.html) |
+| **GStreamer-SA-2026-0016**<br/>CVE-2026-5056<br/>ZDI-CAN-29392 | Integer overflows and out-of-bounds access in MOV/MP4 demuxer | 2026-04-07 23:59  | [Details](sa-2026-0016.html) |
+| **GStreamer-SA-2026-0015**<br/>CVE-2026-pending | Integer overflows in JPEG 2000 decimator   | 2026-04-07 23:59  | [Details](sa-2026-0015.html) |
+| **GStreamer-SA-2026-0014** | Integer overflow in AV1 LEB128 parser     | 2026-04-07 23:59  | [Details](sa-2026-0014.html) |
+| **GStreamer-SA-2026-0013** | H.264 video parser NULL pointer dereference when freeing SPS/MVC data | 2026-04-07 23:59 | [Details](sa-2026-0013.html) | 
 | **GStreamer-SA-2026-0012**| H.265 video parser potential denial-of-service | 2026-02-25 23:59 | [Details](sa-2026-0012.html) |
 | **GStreamer-SA-2026-0011**<br/>CVE-2026-3084<br/>ZDI-CAN-28910 | Out-of-bounds write in H.266 video parser when parsing picture partitions | 2026-02-25 23:59 | [Details](sa-2026-0011.html) |
 | **GStreamer-SA-2026-0010**<br/>CVE-2026-3081<br/>ZDI-CAN-28839 | Stack buffer overflow in H.266 video parser when parsing pic_timing SEIs | 2026-02-25 23:59 | [Details](sa-2026-0010.html) |
