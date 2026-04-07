@@ -18474,4 +18474,64 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a
         </content>
   </item>
 
+<!-- =========================== 1.28.2 ================================= -->
+
+  <item>
+      <date>2026-04-07 23:00</date>
+        <title>GStreamer 1.28.2 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.28 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bug fixes as well as a number of
+<a href="&site;/security/">security fixes</a>. It should be safe to update
+from 1.28.x, and we recommend you do so at your earliest convenience.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Various <a href="&site;/security/">security fixes</a> and playback fixes</li>
+    <li>audioencoder: allow change of channel configuration with avenc_aac</li>
+    <li>audioinvert: fix float format handling</li>
+    <li>h264parse, h265parse, baseparse: Preserve upstream buffer duration if possible</li>
+    <li>compositor: fix segfault with force-live=true and no sink pads (regression)</li>
+    <li>fallbacksrc: send select-streams event to collection source element directly</li>
+    <li>hlsdemux2: fix seekable range for live HLS streams</li>
+    <li>glupload: Fix linking glupload with restrictive caps filter</li>
+    <li>nvcodec: Add capability caching to speed up plugin initialization</li>
+    <li>RTP and RTCP packet handling fixes</li>
+    <li>RTSP server fixes for clean-up of timed out play requests</li>
+    <li>video-converter: fix I420/A420 BGRA/ARGB output on big-endian</li>
+    <li>qtdemux: fix invalid WebVTT timestamps, and other fixes</li>
+    <li>qmlgl6sink: Qt6GLVideoItem caps update handling fixes</li>
+    <li>threadshare udp sink and source fixes</li>
+    <li>transcriberbin and speechmatics text-to-speech fixes and improvements</li>
+    <li>videorate: Fix wrong caps in case of PTS going backward</li>
+    <li>vtdec: more Apple VideoToolbox decoder fixes</li>
+    <li>wavparse: Fix parsing of RF64 wave files</li>
+    <li>wasapi2sink: Ignore transient device errors from default device</li>
+    <li>waylandsink: various fixes and improvements</li>
+    <li>WebRTC DTLS robustness/stability improvements</li>
+    <li>Cerbero: Various inno Windows installer fixes and improvements; new 'gstreamer_bundle' wheels meta-package</li> 
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.28/#1.28.2">GStreamer 1.28.2 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/download/">Downloads page</a>.
+</p>
+        </content>
+  </item>
+
 </news>
