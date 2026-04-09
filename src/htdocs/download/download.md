@@ -47,13 +47,13 @@ feature](https://mesonbuild.com/Subprojects.html).
 <!-- WINDOWS -->
 <div class="dl-panel" id="panel-windows" role="tabpanel" tabindex="0" aria-labelledby="tab-windows" hidden="">
 
-The latest stable release is **1.28.1**. Installers are available for the following targets:
+The latest stable release is **1.28.2**. Installers are available for the following targets:
 
-* [MSVC x86_64 (VS 2022, Release CRT)](/data/pkg/windows/1.28.1/msvc/gstreamer-1.0-msvc-x86_64-1.28.1.exe)
-* [MSVC x86 (VS 2022, Release CRT)](/data/pkg/windows/1.28.1/msvc/gstreamer-1.0-msvc-x86-1.28.1.exe)
-* [MSVC arm64 (VS 2022, Release CRT)](/data/pkg/windows/1.28.1/msvc/gstreamer-1.0-msvc-arm64-1.28.1.exe)
-* [MinGW x86_64](/data/pkg/windows/1.28.1/mingw/gstreamer-1.0-mingw-x86_64-1.28.1.exe)
-* [MinGW x86](/data/pkg/windows/1.28.1/mingw/gstreamer-1.0-mingw-x86-1.28.1.exe)
+* [MSVC x86_64 (VS 2022, Release CRT)](/data/pkg/windows/1.28.2/msvc/gstreamer-1.0-msvc-x86_64-1.28.2.exe)
+* [MSVC x86 (VS 2022, Release CRT)](/data/pkg/windows/1.28.2/msvc/gstreamer-1.0-msvc-x86-1.28.2.exe)
+* [MSVC arm64 (VS 2022, Release CRT)](/data/pkg/windows/1.28.2/msvc/gstreamer-1.0-msvc-arm64-1.28.2.exe)
+* [MinGW x86_64](/data/pkg/windows/1.28.2/mingw/gstreamer-1.0-mingw-x86_64-1.28.2.exe)
+* [MinGW x86](/data/pkg/windows/1.28.2/mingw/gstreamer-1.0-mingw-x86-1.28.2.exe)
 
 If you are not sure which to pick between MSVC and MinGW, just pick MSVC.
 However, do see the [toolchain compatibility notes](#toolchain-compatibility-notes)
@@ -145,9 +145,9 @@ development, you will want to install both runtime and development packages.
 The oldest supported macOS is 10.13 (High Sierra).
 
 * **macOS Universal (X86_64 &amp; ARM64) 1.28 release (current stable version)**
-  - **[1.28.1 runtime installer](/data/pkg/osx/1.28.1/gstreamer-1.0-1.28.1-universal.pkg)**
-  - **[1.28.1 development installer](/data/pkg/osx/1.28.1/gstreamer-1.0-devel-1.28.1-universal.pkg)**
-  - **[1.28.1 debug installer](/data/pkg/osx/1.28.1/gstreamer-1.0-debug-1.28.1-universal.pkg)**
+  - **[1.28.2 runtime installer](/data/pkg/osx/1.28.2/gstreamer-1.0-1.28.2-universal.pkg)**
+  - **[1.28.2 development installer](/data/pkg/osx/1.28.2/gstreamer-1.0-devel-1.28.2-universal.pkg)**
+  - **[1.28.2 debug installer](/data/pkg/osx/1.28.2/gstreamer-1.0-debug-1.28.2-universal.pkg)**
 
 * macOS Universal (X86_64 &amp; ARM64) 1.26 release (old stable version)
   - [1.26.11 runtime installer](/data/pkg/osx/1.26.11/gstreamer-1.0-1.26.11-universal.pkg)
@@ -204,7 +204,7 @@ it is straightforward for developers to build them by hand with [`cargo-c`](http
 Binary releases are available with each in the form of a single "universal"
 tarball with `armv7`, `arm64`, `x86`, and `x86_64` architectures in subfolders.
 
-* **Android Universal [1.28.1 tarball](/data/pkg/android/1.28.1/gstreamer-1.0-android-universal-1.28.1.tar.xz) (current stable version)**
+* **Android Universal [1.28.2 tarball](/data/pkg/android/1.28.2/gstreamer-1.0-android-universal-1.28.2.tar.xz) (current stable version)**
 * Android Universal [1.26.11 tarball](/data/pkg/android/1.26.11/gstreamer-1.0-android-universal-1.26.11.tar.xz) (old stable version)
 
 The Android NDKs used by our stable releases are:
@@ -237,11 +237,11 @@ The Android APIs targeted by our stable release(s) are:
 Binary releases are available in two forms: a legacy framework, and an
 xcframework (1.28+). The legacy framework only supports iOS and an iOS
 Simulator on an Intel Mac. The xcframework supports iOS and iOS Simulator (ARM64
-and X86_64). Starting with 1.28.1, it also supports tvOS, and tvOS Simulator
+and X86_64). Starting with 1.28.2, it also supports tvOS, and tvOS Simulator
 (ARM64 and X86_64).
 
-* **iOS &amp; tvOS [1.28.1 xcframework](/data/pkg/ios/1.28.1/gstreamer-1.28.1-xcframework.tar.xz) (current stable version)**
-* **iOS Universal [1.28.1 legacy framework](/data/pkg/ios/1.28.1/gstreamer-1.0-devel-1.28.1-ios-universal.pkg) (current stable version)**
+* **iOS &amp; tvOS [1.28.2 xcframework](/data/pkg/ios/1.28.2/gstreamer-1.28.2-xcframework.tar.xz) (current stable version)**
+* **iOS Universal [1.28.2 legacy framework](/data/pkg/ios/1.28.2/gstreamer-1.0-devel-1.28.2-ios-universal.pkg) (current stable version)**
 * iOS Universal [1.26.11 legacy framework](/data/pkg/ios/1.26.11/gstreamer-1.0-devel-1.26.11-ios-universal.pkg) (old stable version)
 
 The legacy framework will be removed in a future GStreamer release.
