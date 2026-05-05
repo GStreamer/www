@@ -59,6 +59,23 @@ If you are not sure which to pick between MSVC and MinGW, just pick MSVC.
 However, do see the [toolchain compatibility notes](#toolchain-compatibility-notes)
 below which may affect you based on what toolchain your app will be built with.
 
+Starting with 1.28, the installers are built with Inno Setup 6, which now allows
+user-only as well as system-wide installs. The default installation directory is
+`%LOCALAPPDATA%\Programs\gstreamer\1.0\abi>_<arch>` for user-only installs,
+and `%ProgramFiles%\gstreamer\1.0\<abi>_<arch>` for system-wide installs.
+This can be changed from the installation wizard or from the command line (see
+below).
+
+The installers also accept optional command line parameters. These can be useful
+for unattended installations. Here's a short list of the most important ones:
+
+- `/DIR=path` sets the full path to the installation directory, e.g. `/DIR=z:/path/to/gst` will result in `gst-launch-1.0` being installed to `z:/path/to/gst/bin/gst-launch-1.0.exe`. This parameter allows slashes and backslashes for directory separator.
+- `/TYPE=debug` (or `devel`, `runtime`) sets the installation type to "Runtime, development headers and debug symbols", "Runtime and development headers", and "Only runtime", respectively.
+- `/ALLUSERS` and `/CURRENTUSER` set the installation to be performed for all users or just the current user, respectively.
+- `/SILENT` just displays the progress dialog; `/VERYSILENT` displays no dialogs at all except when an error occurs. They are usually coupled with `/NORESTART` to avoid unattended reboots.
+
+You can read more about them in the [Inno Setup Help](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline).
+
 **Python wheels** are also available via PyPI, starting with 1.28.0. Simply run:
 
 ```
