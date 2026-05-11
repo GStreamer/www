@@ -18534,4 +18534,56 @@ will be published on the <a href="&site;/download/">Downloads page</a>.
         </content>
   </item>
 
+<!-- =========================== 1.28.3 ================================= -->
+
+  <item>
+      <date>2026-05-11 23:00</date>
+        <title>GStreamer 1.28.3 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.28 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bug fixes as well as a number of
+<a href="&site;/security/">security fixes</a>. It should be safe to update
+from 1.28.x, and we recommend you do so at your earliest convenience.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Various <a href="&site;/security/">security fixes</a> and playback fixes</li>
+    <li>applemedia: vtdec stability, MoltenVK integration and planar video format handling fixes</li>
+    <li>audioresample: Fix regression on armv7hf</li>
+    <li>bpmdetect: Fixes for stereo and multi-channel modes</li>
+    <li>devicemonitor: wait for start thread to finish when listing devices so all the info is there for e.g. v4l2 provider</li>
+    <li>fallbacksrc: Add fallback-source and enable-dummy properties</li>
+    <li>nvidia: fix cudaconvert performance regression and nvdec device creation regression</li>
+    <li>opengl: add GBRA swizzle support, and fix glcolorconvert vertical flip issue on crop</li>
+    <li>rtspsrc: include user-agent property in HTTP tunnel requests and fix mikey regression</li>
+    <li>threadshare: add leaky mode to dataqueue-based elements</li>
+    <li>v4l2: fix negotiation error when trying to force stateful decoders to output dmabufs</li>
+    <li>webrtcsink: Add support imx8mp vpuenc_hevc hardware H.265 encoder</li>
+    <li>cerbero: Extend gst-plugins-rs melding to Darwin platforms for smaller binary sizes and static linking improvements</li>
+    <li>inno Windows installer fixes, including silent install mode via the command line</li>
+    <li>macOS: provide script to allow uninstalling the package; relocate absolute paths to Python.framework in wheels</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.28/#1.28.3">GStreamer 1.28.3 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/download/">Downloads page</a>.
+</p>
+        </content>
+  </item>
+
 </news>
