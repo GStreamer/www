@@ -26,7 +26,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 | **GStreamer-SA-2026-0021**<br/>CVE-2026-pending | Integer overflow in WAV parser cue handling | 2026-04-07 | [Details](sa-2026-0021.html) |
 | **GStreamer-SA-2026-0020** | Assertion failures in FLV demuxer on corrupted streams | 2026-04-07 | [Details](sa-2026-0020.html) |
 | **GStreamer-SA-2026-0019** | NULL-pointer dereferences in mDVDsub subtitle parser | 2026-04-07 | [Details](sa-2026-0019.html) |
-| **GStreamer-SA-2026-0018**<br/>CVE-2026-pending | MOV/MP4 demuxer audio channel parsing vulnerabilities | 2026-04-07 | [Details](sa-2026-0018.html) |
+| **GStreamer-SA-2026-0018**<br/>CVE-2026-46469, CVE-2026-46470, CVE-2026-46472 | MOV/MP4 demuxer audio channel parsing vulnerabilities | 2026-04-07 | [Details](sa-2026-0018.html) |
 | **GStreamer-SA-2026-0017** | Integer overflow in H.266/VVC parser leading to stack overflow | 2026-04-07 | [Details](sa-2026-0017.html) |
 | **GStreamer-SA-2026-0016**<br/>CVE-2026-5056<br/>ZDI-CAN-29392 | Integer overflows and out-of-bounds access in MOV/MP4 demuxer | 2026-04-07 | [Details](sa-2026-0016.html) |
 | **GStreamer-SA-2026-0015**<br/>CVE-2026-pending | Integer overflows in JPEG 2000 decimator | 2026-04-07 | [Details](sa-2026-0015.html) |
@@ -42,7 +42,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 | **GStreamer-SA-2026-0005**<br/>CVE-2026-2922<br/>ZDI-CAN-28845 | Out-of-bounds write in RealMedia Demuxer | 2026-02-25 | [Details](sa-2026-0005.html) |
 | **GStreamer-SA-2026-0004**<br/>CVE-2026-2921<br/>ZDI-CAN-28854 | Integer overflow in RIFF parser | 2026-02-25 | [Details](sa-2026-0004.html) |
 | **GStreamer-SA-2026-0003**<br/>CVE-2026-3082<br/>ZDI-CAN-28840 | Heap-based Buffer Overflow on Huffman tables reading in JPEG parser | 2026-02-25 | [Details](sa-2026-0003.html) |
-| **GStreamer-SA-2026-0002**| Out-of-bounds read in MP4 demuxer | 2026-02-25 | [Details](sa-2026-0002.html) |
+| **GStreamer-SA-2026-0002**<br/>CVE-2026-46471 | Out-of-bounds read in MP4 demuxer | 2026-02-25 | [Details](sa-2026-0002.html) |
 | **GStreamer-SA-2026-0001**<br/>CVE-2026-1940 | Out-of-bounds read in WAV parser | 2026-02-25 | [Details](sa-2026-0001.html) |
 | **GStreamer-SA-2025-0009**<br/>CVE-2025-67326<br/>CVE-2025-67327 | Multiple out-of-bounds reads in MIDI parser | 2025-12-27 | [Details](sa-2025-0009.html) |
 | **GStreamer-SA-2025-0008**<br/>CVE-2025-67328<br/>CVE-2025-67329 | Multiple out-of-bounds reads in MIDI parser | 2025-12-27 | [Details](sa-2025-0008.html) |
