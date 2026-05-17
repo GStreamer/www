@@ -22,8 +22,8 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 | **GStreamer-SA-2026-0025** | Insufficient validation in MOV/MP4 demuxer uncompressed video handling | 2026-05-11 | [Details](sa-2026-0025.html) |
 | **GStreamer-SA-2026-0024** | Out-of-bounds reads in MPEG PS PES header parsing | 2026-05-11 | [Details](sa-2026-0024.html) |
 | **GStreamer-SA-2026-0023** | Denial of service in SRT/WebVTT parser  | 2026-04-07 | [Details](sa-2026-0023.html) |
-| **GStreamer-SA-2026-0022**<br/>CVE-2026-pending | Heap buffer overflow in Matroska demuxer  | 2026-04-07 | [Details](sa-2026-0022.html) |
-| **GStreamer-SA-2026-0021**<br/>CVE-2026-pending | Integer overflow in WAV parser cue handling | 2026-04-07 | [Details](sa-2026-0021.html) |
+| **GStreamer-SA-2026-0022**<br/>CVE-2026-39043  | Heap buffer overflow in Matroska demuxer  | 2026-04-07 | [Details](sa-2026-0022.html) |
+| **GStreamer-SA-2026-0021**<br/>CVE-2026-39044 | Integer overflow in WAV parser cue handling | 2026-04-07 | [Details](sa-2026-0021.html) |
 | **GStreamer-SA-2026-0020** | Assertion failures in FLV demuxer on corrupted streams | 2026-04-07 | [Details](sa-2026-0020.html) |
 | **GStreamer-SA-2026-0019** | NULL-pointer dereferences in mDVDsub subtitle parser | 2026-04-07 | [Details](sa-2026-0019.html) |
 | **GStreamer-SA-2026-0018**<br/>CVE-2026-46469, CVE-2026-46470, CVE-2026-46472 | MOV/MP4 demuxer audio channel parsing vulnerabilities | 2026-04-07 | [Details](sa-2026-0018.html) |
