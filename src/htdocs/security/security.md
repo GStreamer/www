@@ -91,8 +91,8 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 | **GStreamer-SA-2023-0006**<br/>ZDI-CAN-21660<br/>CVE-2023-40474 | Integer overflow leading to heap overwrite in MXF file handling with uncompressed video | 2023-09-20 | [Details](sa-2023-0006.html) |
 | **GStreamer-SA-2023-0005**<br/>ZDI-CAN-21444 | Integer overflow leading to heap overwrite in RealMedia file handling | 2023-07-20 | [Details](sa-2023-0005.html) |
 | **GStreamer-SA-2023-0004**<br/>ZDI-CAN-21443 | Integer overflow leading to heap overwrite in RealMedia file handling | 2023-07-20 | [Details](sa-2023-0004.html) |
-| **GStreamer-SA-2023-0003**<br/>ZDI-CAN-20994<br/>CVE-2023-37329 | Heap overwrite in PGS subtitle overlay decoder | 2023-06-20 | [Details](sa-2023-0003.html) |
-| **GStreamer-SA-2023-0002**<br/>ZDI-CAN-20968<br/>CVE-2023-37328 | Heap overwrite in subtitle parsing | 2023-06-20 | [Details](sa-2023-0002.html) |
+| **GStreamer-SA-2023-0003**<br/>ZDI-CAN-20994<br/>CVE-2023-37328 | Heap overwrite in PGS subtitle overlay decoder | 2023-06-20 | [Details](sa-2023-0003.html) |
+| **GStreamer-SA-2023-0002**<br/>ZDI-CAN-20968<br/>CVE-2023-37329 | Heap overwrite in subtitle parsing | 2023-06-20 | [Details](sa-2023-0002.html) |
 | **GStreamer-SA-2023-0001**<br/>ZDI-CAN-20775<br/>CVE-2023-37327 | Integer overflow leading to heap overwrite in FLAC image tag handling | 2023-06-20 | [Details](sa-2023-0001.html) |
 | **GStreamer-SA-2022-0004**<br/>CVE-2022-1920 | Potential heap overwrite in gst\_matroska\_demux\_add\_wvpk\_header | 2022-06-15 | [Details](sa-2022-0004.html) |
 | **GStreamer-SA-2022-0003**<br/>CVE-2022-2122 | Potential heap overwrite in mp4 demuxing using zlib decompression | 2022-06-15 | [Details](sa-2022-0003.html) |
