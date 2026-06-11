@@ -15,6 +15,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2026-0041**<br/>CVE-2026-53702 | Out-of-bounds read in H.265 parser buffering period SEI message parsing | 2026-06-11 | [Details](sa-2026-0041.html) |
 | **GStreamer-SA-2026-0029** | Bounds check errors in MXF VANC packet handling | 2026-05-11 | [Details](sa-2026-0029.html) |
 | **GStreamer-SA-2026-0028** | Use-after-free in GStreamer core buffer value deserialization | 2026-05-11 | [Details](sa-2026-0028.html) |
 | **GStreamer-SA-2026-0027**<br/>CVE-2026-pending | Out-of-bounds read in MXF demuxer temporal offset check | 2026-05-11 | [Details](sa-2026-0027.html) |
