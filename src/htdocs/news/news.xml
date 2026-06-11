@@ -18586,4 +18586,59 @@ will be published on the <a href="&site;/download/">Downloads page</a>.
         </content>
   </item>
 
+<!-- =========================== 1.28.4 ================================= -->
+
+  <item>
+      <date>2026-06-12 14:00</date>
+        <title>GStreamer 1.28.4 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.28 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bug fixes as well as a number of
+<a href="&site;/security/">security fixes</a>. It should be safe to update
+from 1.28.x, and we recommend you do so at your earliest convenience.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Various <a href="&site;/security/">security fixes</a> and playback fixes</li>
+    <li>audioaggregator: fixes for conversion of in-progress buffers when input caps change</li>
+    <li>audioresample: more armv7 fixes</li>
+    <li>camerabin: Fix caps negotiation failure when starting video capture</li>
+    <li>Debug logging performance improvements</li>
+    <li>fmp4mux: Fix draining in chunk mode after partial GOPs were drained</li>
+    <li>gldownload: fix handling of directly imported dmabufs from glupload</li>
+    <li>matroskamux: Write ReferenceBlock for non-keyframe video in BlockGroups</li>
+    <li>rtp2: session: add "stats" property</li>
+    <li>rtspsrc2: handle parse errors with TCP interleaved more gracefully where the server just drops data</li>
+    <li>rtspsrc2: implement support for SRTP, authentication, HTTP tunnelling, keep alive, stream selection, TLS validation, latency configuration</li>
+    <li>st2038combiner: only forward video pad segment, fixing issues for cases where the ST2038 segment differs</li>
+    <li>Wavpack audio: Various channel and channel-mask related fixes</li>
+    <li>webrtc, sdp: set level in negotiated caps only if level asymmetry not allowed, fixing an H.264 negotiation regression with higher resolutions</li>
+    <li>androidmedia: add various new codec mime / profile mappings (WMV, VC1, AC3/EAC3/AC4, AAC, H265) and support decoding FLAC</li>
+    <li>d3d12decoder: Fix decoding on Qualcomm GPUs on ARM64 Windows</li>
+    <li>wasapi2src: fix hang when using loopback-target-pid (regression from 1.26)</li>
+    <li>cerbero: update to Rust 1.96, plus glib-networking OpenSSL backend fixes</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.28/#1.28.4">GStreamer 1.28.4 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/download/">Downloads page</a>.
+</p>
+        </content>
+  </item>
+
 </news>
