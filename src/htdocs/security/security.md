@@ -18,7 +18,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 | **GStreamer-SA-2026-0029** | Bounds check errors in MXF VANC packet handling | 2026-05-11 | [Details](sa-2026-0029.html) |
 | **GStreamer-SA-2026-0028** | Use-after-free in GStreamer core buffer value deserialization | 2026-05-11 | [Details](sa-2026-0028.html) |
 | **GStreamer-SA-2026-0027**<br/>CVE-2026-pending | Out-of-bounds read in MXF demuxer temporal offset check | 2026-05-11 | [Details](sa-2026-0027.html) |
-| **GStreamer-SA-2026-0026** | Out-of-bounds write in H.266/VVC parser when parsing PPS tile slices | 2026-05-11 | [Details](sa-2026-0026.html) |
+| **GStreamer-SA-2026-0026**<br/>CVE-2026-53701 | Out-of-bounds write in H.266/VVC parser when parsing PPS tile slices | 2026-05-11 | [Details](sa-2026-0026.html) |
 | **GStreamer-SA-2026-0025** | Insufficient validation in MOV/MP4 demuxer uncompressed video handling | 2026-05-11 | [Details](sa-2026-0025.html) |
 | **GStreamer-SA-2026-0024** | Out-of-bounds reads in MPEG PS PES header parsing | 2026-05-11 | [Details](sa-2026-0024.html) |
 | **GStreamer-SA-2026-0023** | Denial of service in SRT/WebVTT parser  | 2026-04-07 | [Details](sa-2026-0023.html) |
