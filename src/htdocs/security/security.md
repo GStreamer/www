@@ -15,7 +15,19 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
-| **GStreamer-SA-2026-0041**<br/>CVE-2026-53702 | Out-of-bounds read in H.265 parser buffering period SEI message parsing | 2026-06-11 | [Details](sa-2026-0041.html) |
+| **GStreamer-SA-2026-0042**<br/>CVE-2026-53703, CVE-2026-53704 | Out-of-bounds reads and integer overflows in RealMedia demuxer | 2026-06-12 | [Details](sa-2026-0042.html) |
+| **GStreamer-SA-2026-0041**<br/>CVE-2026-53702 | Out-of-bounds read in H.265 parser buffering period SEI message parsing | 2026-06-12 | [Details](sa-2026-0041.html) |
+| **GStreamer-SA-2026-0040**<br/>CVE-2026-52719 | Out-of-bounds read in VA JPEG decoder segment parsing | 2026-06-12 | [Details](sa-2026-0040.html) |
+| **GStreamer-SA-2026-0039**<br/>CVE-2026-52718 | Assertion in AV1 parser tile data parsing | 2026-06-12 | [Details](sa-2026-0039.html) |
+| **GStreamer-SA-2026-0038** | Memory leak and NULL pointer dereference in gst-libav demuxer | 2026-06-12 | [Details](sa-2026-0038.html) |
+| **GStreamer-SA-2026-0037**<br/>CVE-2026-52717 | Heap corruption in gst-libav AV protocol pipe | 2026-06-12 | [Details](sa-2026-0037.html) |
+| **GStreamer-SA-2026-0036** | Out-of-bounds read in SBC audio parser header parsing | 2026-06-12 | [Details](sa-2026-0036.html) |
+| **GStreamer-SA-2026-0035**<br/>CVE-2026-53705 | Integer overflow in WavPack decoder | 2026-06-12 | [Details](sa-2026-0035.html) |
+| **GStreamer-SA-2026-0034** | Division by zero in mDVDsub subtitle parser | 2026-06-12 | [Details](sa-2026-0034.html) |
+| **GStreamer-SA-2026-0033** | Out-of-bounds read and modification of const data in ID3v2 parser | 2026-06-12 | [Details](sa-2026-0033.html) |
+| **GStreamer-SA-2026-0032** | Out-of-bounds read and write in XMP tag parser | 2026-06-12 | [Details](sa-2026-0032.html) |
+| **GStreamer-SA-2026-0031**<br/>CVE-2026-XXXX | Integer overflow and truncation in MXF demuxer | 2026-06-12 | [Details](sa-2026-0031.html) |
+| **GStreamer-SA-2026-0030** | Missing bounds checks in RTCP SDES packet parsing | 2026-06-12 | [Details](sa-2026-0030.html) |
 | **GStreamer-SA-2026-0029** | Bounds check errors in MXF VANC packet handling | 2026-05-11 | [Details](sa-2026-0029.html) |
 | **GStreamer-SA-2026-0028** | Use-after-free in GStreamer core buffer value deserialization | 2026-05-11 | [Details](sa-2026-0028.html) |
 | **GStreamer-SA-2026-0027**<br/>CVE-2026-pending | Out-of-bounds read in MXF demuxer temporal offset check | 2026-05-11 | [Details](sa-2026-0027.html) |
