@@ -6,5 +6,5 @@ then
 fi
 
 echo "get: $@"
-rsync $@ -arv -e ssh --delete gstreamer.freedesktop.org:/srv/gstreamer.freedesktop.org/www/data .
-#rsync $@ -v -rlpt -e ssh --dry-run --delete freedesktop.org:/srv/gstreamer.freedesktop.org/www/data .
+rsync $@ -arv -e ssh --delete origin.gstreamer.freedesktop.org:/srv/gstreamer.freedesktop.org/www/data .
+#rsync $@ -v -rlpt -e ssh --dry-run --delete origin.freedesktop.org:/srv/gstreamer.freedesktop.org/www/data .
