@@ -243,7 +243,7 @@ Backported into 1.28:
  - [av1parse:  split the alignment and stream type logic](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/10868)
  - [av1parse: Misc fixes 2 typo](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/11001)
  - [av1parse, vp9parse: Remove segment clipping to let downstream handle frame boundaries](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/11081)
- - [baseparse, h264parse, h265parse: Preserve upstream buffer duration if possible](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/ - [baseparse, h264parse, h265parse: Preserve upstream buffer duration if possible](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/10672)
+ - [baseparse, h264parse, h265parse: Preserve upstream buffer duration if possible](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/10672)
  - [ccconverter: Reset counters on flush-stop](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/10842)
  - [cea608mux: fix overflow when calculating output PTS](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/10706)
  - [codecs: v4l2: Add short and long term ref sets support in v4l2 codecs -- stable ABI](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/10820)
