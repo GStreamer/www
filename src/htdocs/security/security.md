@@ -15,6 +15,10 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2026-0046**<br/>CVE-2026-52722 | Integer overflow in VMNC decoder cursor payload size calculation | 2026-06-16 | [Details](sa-2026-0046.html) |
+| **GStreamer-SA-2026-0045**<br/>CVE-2026-52721 | Out-of-bounds reads in PCAP parser due to missing bounds checks | 2026-06-16 | [Details](sa-2026-0045.html) |
+| **GStreamer-SA-2026-0044** | Reserved | tbd | tbd |
+| **GStreamer-SA-2026-0043**<br/>CVE-2026-52720 | Out-of-bounds read and write in RFB source | 2026-06-16 | [Details](sa-2026-0043.html) |
 | **GStreamer-SA-2026-0042**<br/>CVE-2026-53703, CVE-2026-53704 | Out-of-bounds reads and integer overflows in RealMedia demuxer | 2026-06-12 | [Details](sa-2026-0042.html) |
 | **GStreamer-SA-2026-0041**<br/>CVE-2026-53702 | Out-of-bounds read in H.265 parser buffering period SEI message parsing | 2026-06-12 | [Details](sa-2026-0041.html) |
 | **GStreamer-SA-2026-0040**<br/>CVE-2026-52719 | Out-of-bounds read in VA JPEG decoder segment parsing | 2026-06-12 | [Details](sa-2026-0040.html) |
