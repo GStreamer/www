@@ -23,7 +23,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 | **GStreamer-SA-2026-0041**<br/>CVE-2026-53702 | Out-of-bounds read in H.265 parser buffering period SEI message parsing | 2026-06-12 | [Details](sa-2026-0041.html) |
 | **GStreamer-SA-2026-0040**<br/>CVE-2026-52719 | Out-of-bounds read in VA JPEG decoder segment parsing | 2026-06-12 | [Details](sa-2026-0040.html) |
 | **GStreamer-SA-2026-0039**<br/>CVE-2026-52718 | Assertion in AV1 parser tile data parsing | 2026-06-12 | [Details](sa-2026-0039.html) |
-| **GStreamer-SA-2026-0038** | Memory leak and NULL pointer dereference in gst-libav demuxer | 2026-06-12 | [Details](sa-2026-0038.html) |
+| **GStreamer-SA-2026-0038**<br/>CVE-2026-12893 | Memory leak and NULL pointer dereference in gst-libav demuxer | 2026-06-12 | [Details](sa-2026-0038.html) |
 | **GStreamer-SA-2026-0037**<br/>CVE-2026-52717 | Heap corruption in gst-libav AV protocol pipe | 2026-06-12 | [Details](sa-2026-0037.html) |
 | **GStreamer-SA-2026-0036** | Out-of-bounds read in SBC audio parser header parsing | 2026-06-12 | [Details](sa-2026-0036.html) |
 | **GStreamer-SA-2026-0035**<br/>CVE-2026-53705 | Integer overflow in WavPack decoder | 2026-06-12 | [Details](sa-2026-0035.html) |
