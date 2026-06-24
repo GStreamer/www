@@ -15,6 +15,8 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2026-0048**<br/>CVE-2026-12891 | Out-of-bounds read in H.266 parser VUI aspect ratio parsing | 2026-06-24 | [Details](sa-2026-0048.html) |
+| **GStreamer-SA-2026-0047**<br/>CVE-2026-12892 | One-byte out-of-bounds read in H.264 NAL unit parser | 2026-06-24 | [Details](sa-2026-0047.html) |
 | **GStreamer-SA-2026-0046**<br/>CVE-2026-52722 | Integer overflow in VMNC decoder cursor payload size calculation | 2026-06-16 | [Details](sa-2026-0046.html) |
 | **GStreamer-SA-2026-0045**<br/>CVE-2026-52721 | Out-of-bounds reads in PCAP parser due to missing bounds checks | 2026-06-16 | [Details](sa-2026-0045.html) |
 | **GStreamer-SA-2026-0044** | Reserved | tbd | tbd |
