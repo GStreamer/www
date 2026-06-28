@@ -18641,4 +18641,88 @@ will be published on the <a href="&site;/download/">Downloads page</a>.
         </content>
   </item>
 
+<!-- =========================== 1.29.2 ================================= -->
+
+    <item>
+      <date>2026-06-29 01:00</date>
+        <title>GStreamer 1.29.2 unstable development snapshot</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another development snapshot in
+the API/ABI-unstable 1.29 release series.
+</p>
+<p>
+The API/ABI-unstable 1.29 release series is for testing and development purposes
+in the lead-up to the stable 1.30 series which is scheduled for release in Q4
+2026. Any newly-added API can still change until that point.
+</p>
+<p>
+This development release is primarily for developers and early adopters, and
+distros should probably not package it.
+</p>
+<p>
+  <b>Highlighted changes:</b>
+  <ul>
+    <li>webrtcbin2: New scalable WebRTC bin that uses fewer threads and native Rust DTLS, ICE and RTP session management implementations</li>
+    <li>rtspsrc2: implement support for SRTP, authentication, HTTP tunnelling, keep alive, stream selection, TLS validation, latency configuration</li>
+    <li>rtp2: New Rust RTP payloader and depayloader implementations for MPA audio, MPEG-2 video and raw video</li>
+    <li>Digitally Signed Content (DSC) support, initially for H.266 video</li>
+    <li>New D3D12-based element which performs color lookup operations using user-provided Adobe .cube LUT files</li>
+    <li>videoencoders: Support adaptive presets with resolution-dependent properties and implement in x264enc and nvh264enc</li>
+    <li>closedcaption: add h266seiinserter; add "do-timestamp" property to codecseiiinserter</li>
+    <li>flv: Add support for AV1 video</li>
+    <li>v4l2: add capture timestamps to buffers in v4l2src, and "bitrate" and "gop-size" properties to video encoders</li>
+    <li>applemedia: new iosurface helper library providing a memory:IOSurface abstraction</li>
+    <li>AMF: add super resolution hq-scaler component</li>
+    <li>New OpenGL glalphacombine element for RGBA inputs and Vulkan/OpenGL memory support for alphacombine</li>
+    <li>openjpeg: Add support for high bit depth formats</li>
+    <li>analytics: add semantic tag getter to GstAnalyticsMtd</li>
+    <li>tensordecoders: Add YOLO26 detection decoder</li>
+    <li>tfliteinference: support for external delegates, XNNPACK, and GRAY8 input</li>
+    <li>MP4: add support for losslessly-compressed video</li>
+    <li>matroskamux: add TrueHD audio and HDMV PGS subpicture support</li>
+    <li>playsink reconfiguration stability improvements</li>
+    <li>New agingradio and sofalizer audio effect elements</li>
+    <li>New image-rs based imagersoverlay element in Rust to replace gdkpixbufoverlay</li>
+    <li>webrtcsink: add v4l2h264enc (Raspberry Pi) encoder support and a signaller for Unreal Engine PixelStreaming</li>
+    <li>webrtcsink, webrtcsource: make custom signalling protocol extendable</li>
+    <li>Speech elements: implement support for non-synchronized output</li>
+    <li>d3d12: Add support for hardware-accelerated decoding of VP9 with alpha</li>
+    <li>androidmedia: New source element for Android assets</li>
+    <li>filesink: Add support for Windows file sharing mode to allow reading of file while it's being written to</li>
+    <li>tracing: custom spans and events API and new tracers that integrate with the Rust tracing ecosystem</li>
+    <li>editing-services: auto-plug raw video converters from the registry based on compositor memory family and prepare for multi-threaded usage</li>
+    <li>dots-viewer: General enhancement of the web app</li>
+    <li>New viuersink video sink that plays video in the terminal, replacing aasink and cacasink</li>
+    <li>cerbero: Added ccache support for MSVC</li>
+    <li>Countless bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+   </ul>
+</p>
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be made available shortly
+at the <a href="https://gstreamer.freedesktop.org/pkg/">usual location</a>.
+</p>
+<p>
+Release tarballs can be downloaded directly here:
+<ul>
+  <li><a href="&site;/src/gstreamer/gstreamer-1.29.2.tar.xz">gstreamer-1.29.2.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-base/gst-plugins-base-1.29.2.tar.xz">gst-plugins-base-1.29.2.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-good/gst-plugins-good-1.29.2.tar.xz">gst-plugins-good-1.29.2.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-ugly/gst-plugins-ugly-1.29.2.tar.xz">gst-plugins-ugly-1.29.2.tar.xz</a></li>
+  <li><a href="&site;/src/gst-plugins-bad/gst-plugins-bad-1.29.2.tar.xz">gst-plugins-bad-1.29.2.tar.xz</a></li>
+  <li><a href="&site;/src/gst-libav/gst-libav-1.29.2.tar.xz">gst-libav-1.29.2.tar.xz</a></li>
+  <li><a href="&site;/src/gst-rtsp-server/gst-rtsp-server-1.29.2.tar.xz">gst-rtsp-server-1.29.2.tar.xz</a></li>
+  <li><a href="&site;/src/gst-python/gst-python-1.29.2.tar.xz">gst-python-1.29.2.tar.xz</a></li>
+  <li><a href="&site;/src/gst-editing-services/gst-editing-services-1.29.2.tar.xz">gst-editing-services-1.29.2.tar.xz</a></li>
+  <li><a href="&site;/src/gst-devtools/gst-devtools-1.29.2.tar.xz">gst-devtools-1.29.2.tar.xz</a>,</li>
+  <li><a href="&site;/src/gstreamer-docs/gstreamer-docs-1.29.2.tar.xz">gstreamer-docs-1.29.2.tar.xz</a></li>
+</ul>
+</p>
+<p>
+As always, please give it a spin and let us know of any issues you run into by filing an
+issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a>.
+</p>
+        </content>
+  </item>
+
 </news>
