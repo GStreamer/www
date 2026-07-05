@@ -27,6 +27,7 @@ htdocs/conference/2019/Makefile
 htdocs/conference/2023/Makefile
 htdocs/conference/2024/Makefile
 htdocs/conference/2025/Makefile
+htdocs/conference/2026/Makefile
 htdocs/dev/Makefile
 htdocs/download/Makefile
 htdocs/features/Makefile

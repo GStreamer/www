@@ -1,0 +1,815 @@
+<?xml version="1.0"?>
+<!DOCTYPE xml
+[
+  <!ENTITY % site-entities SYSTEM "../../entities.site">
+  %site-entities;
+]>
+
+<?xml-stylesheet href="../../page.xsl" type="text/xsl"?>
+<page>
+<title>GStreamer Conference 2026</title>
+
+<body>
+
+<style>
+li {
+  padding: 0px 0px 10px;
+}
+
+h2 {
+  padding: 10px 0px 0px 0px;
+}
+</style>
+
+<table class="conference">
+<tr><td width="60%">
+
+<h1>GStreamer Conference 2026</h1>
+
+  <h2>10-11 October 2026 · Prague, Czech Republic</h2>
+
+<p>
+
+<style>
+.crop-photo{
+    float:left;
+    margin:.5em 10px .5em 0;
+    overflow:hidden; /* this is important */
+    position:relative; /* this is important too */
+    border:1px solid #ccc;
+    }
+</style>
+
+<table>
+<tr>
+  <td>
+    <div class="crop-photo">
+    <img src="banner-prague.jpg"
+         alt="Prague"
+         height="300"
+         width="100%"
+    />
+    </div>
+  </td>
+</tr>
+</table>
+
+</p>
+
+  <br/>
+
+  <p>
+    We're thrilled to announce that the <b>14th GStreamer Conference</b> is
+    now confirmed to take place on <b>Saturday and Sunday 10-11 October 2026</b>
+    in <b>Prague, Czech Republic</b>, followed by a <b>GStreamer hackfest</b>
+    on <b>Monday and Tuesday 12-13 October 2026</b>.
+  </p>
+  <p>
+    This is right after the <b><a href="https://events.linuxfoundation.org/embedded-linux-conference-europe/">Embedded Linux Conference Europe</a></b>.
+    and the weekend dates are designed to make it easier for ELCE attendees to
+    stay on for the GStreamer Conference.
+  </p>
+
+  <h2>Details</h2>
+  <p>
+  The GStreamer Conference is a conference for developers, community members,
+  decision-makers, industry partners, researchers, students and anyone else
+  interested in the GStreamer multimedia framework or Open Source and
+  cross-platform multimedia.
+  </p>
+
+  <h2>Who should attend?</h2>
+  <p>
+    Anyone interested in open source cross-platform multimedia is encouraged
+    to join us at the GStreamer Conference 2026!
+  </p>
+  <p>
+    Whether you are a hobbyist, app developer, researcher or student interested
+    in the field of multimedia, or working for a company that is using or looking
+    to use GStreamer in their products, this is the perfect event for you to network
+    at and to learn more about the latest technological developments and project news,
+    and to meet developers as well as the wider community.
+  </p>
+
+<!--
+  <a id="recordings"></a>
+
+  <h2>Recorded talks</h2>
+  <p>
+  Talks have been recorded by Ubicast and
+  are available at <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2026">GStreamer Conference 2026 videos</a>.
+  </p>
+-->
+
+<!--
+  <a id="live"></a>
+
+  <h2>Live Streams</h2>
+  <p>
+  Live streams are no longer available, as the event is over now.
+  </p>
+-->
+<!--
+  <p>
+  <ul>
+  <li><a href="https://gstconf.ubicast.tv/permalink/l126b0e9fc2c5ddo2x5g/"><b>Room 1 (Auditorium), Day 2, Fri 24 Oct 2026</b></a></li>
+  <li><a href="https://gstconf.ubicast.tv/permalink/l126b0e9fc31en6elgg8/"><b>Room 2 (Frobisher Rooms), Day 2, Fri 24 Oct 2026</b></a></li>
+  </ul>
+  </p>
+  <p>
+  <ul>
+  <li><a href="https://www.youtube.com/watch?v=KLUL1D53VQI">Room 1, Day 1, Mon 7 Oct 2026</a></li>
+  <li><a href="https://www.youtube.com/watch?v=DH64D_6gc80/">Room 2, Day 1, Mon 7 Oct 2026</a></li>
+  </ul>
+  </p>
+-->
+
+<!--
+  <a id="schedule"></a>
+
+  <h2>Schedule</h2>
+  <p>
+    <a href="https://indico.freedesktop.org/event/11/timetable/#20261023.detailed">Click here for the conference schedule</a>.
+  </p>
+-->
+
+  <a id="registration"></a>
+
+  <h2>Registration</h2>
+
+  <p>
+    Registration is not open yet, but is in the process of being set up.
+  </p>
+
+<!--
+  <p><b>Registration is now open!</b></p>
+
+  <p>
+    <b><a href="https://somewhere.abc"> Sign up for the GStreamer Conference 2026 here</a></b>
+  </p>
+-->
+
+  <p>
+  There will be separate registration options for professionals, speakers and for students and hobbyists:
+  </p>
+  <p>
+    <div style="margin-left:5%">
+    <table width="90%" cellpadding="5">
+      <tr><td><b>Professional (Early Bird)</b></td><td><b>ca. CZK 7250</b> (ca. 300 EUR / 350 USD) <b>for both days, incl. 12% VAT</b></td></tr>
+      <tr><td><b>Professional (Regular)</b></td><td><b>ca. CZK 8500</b> (ca. 350 EUR / 400 USD) <b>for both days, incl. 12% VAT</b></td></tr>
+      <tr><td><b>Professional (Corporate)</b></td><td><b>ca. CZK 17000</b> (ca. 700 EUR / 800 USD) <b>for both days, incl. 12% VAT</b></td></tr>
+      <tr><td><b>Speakers (for non-lightning talks)</b></td><td><b>Free</b> (instructions will be sent by e-mail)</td></tr>
+      <tr><td><b>Student/Hobbyist</b></td><td><b>Free or voluntary donation</b></td></tr>
+    </table>
+    </div>
+  </p>
+
+  <p>
+    <b>
+    All tickets include lunch at the venue on both conference days and the hackfest days,
+    as well as access to the evening social event.
+    </b>
+  </p>
+
+  <p>
+    Different tickets have different <b>refund policies</b>: All tickets are transferable or fully refundable in case of visa issues or if entry was denied at the border. Early Bird tickets are transferable, but not refundable. Regular Professional tickets are 50% refundable until 25 September, and non-refundable therafter. Corporate Professional tickets are fully refundable until 25 September, 80% refundable until 9 October, and non-refundable therafter.
+  </p>
+
+  <p>
+    For those uncertain about whether to register as a professional or hobbyist,
+    the general rule is that if your company pays for your travel or sponsors you, you
+    are a professional, and if you personally pay you are a student or hobbyist.
+    If in doubt drop us a mail or just register as hobbyist. The important
+    thing is that you'll make it to the conference!
+  </p>
+
+  <p>
+    <b>Speakers:</b> You will receive free registration! Details will be sent
+    out by e-mail along with the talk acceptance notifications. Not that we will
+    complain if you decide to buy a ticket of course.
+  </p>
+
+<!--
+  <p>
+    <b><a href="https://ti.to/gstreamer/gstreamer-conference-2026">Sign up for the GStreamer Conference 2026 here</a></b>
+  </p>
+-->
+
+<!--
+  <p>
+    <b>If you're attending the hackfest after the conference, please <a href="https://ti.to/gstreamer/gstreamer-conference-2026-hackfest-london">register</a> for that separately!</b>
+  </p>
+-->
+
+  <a id="talks-and-speakers"></a>
+
+  <h2>Schedule and speakers list</h2>
+
+  <p>
+  This will be published at a later date once the inital Call for Presentations
+  round has closed.
+  </p>
+
+  <p>
+  Check out <a href="&site;/conference/2025/index.html#talks-and-speakers">last year's schedule</a> to get an idea about the kind of speakers and topics to expect.
+  </p>
+
+<!--
+  <p>
+  Talks were recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> and will be made available for viewing soon.
+  </p>
+-->
+
+  <a id="lightning-talks"></a>
+
+  <h2>Showcase or Lightning Talks</h2>
+  <p>
+    There were again opportunities for short lightning talks for those who
+    did not wish to present a full talk, but just wanted to showcase something
+    they're working on, or present a problem or challenge they are facing or
+    have solved, and that they think might be interesting for others to hear
+    about.
+  </p>
+<!--
+  <p>
+    Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
+  </p>
+  <p>
+    <b>Please submit all lightning talks through the <a href="https://indico.freedesktop.org/event/11/abstracts/">GStreamer Conference 2026 Talk Submission Portal</a></b>.
+  </p>
+  <p>
+    You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system.
+    If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
+  </p>
+  <p>
+    There is no deadline for Lightning Talk submissions, slots will be
+    allocated on a first-come first-serve basis.
+  </p>
+-->
+
+  <a id="sponsoring"></a>
+
+  <h2>Sponsorship Opportunities</h2>
+  <p>
+  The GStreamer Conference 2026 is only possible thanks to the generous
+  financial support from our sponsors.
+  </p>
+  <p>
+  For this year's sponsorship opportunities please refer to
+  the <a href="&site;/conference/2026/gstreamer-conference-sponsor-brief-2026.pdf">sponsor brief (PDF)</a>
+  or <a href="mailto:sponsors-2026@gstreamer.org">get in touch</a>.
+  </p>
+
+  <p>
+  Sponsorship proceeds are not only used to put on the conference and hackfests,
+  but also support our ex(t)(p)ensive CI infrastructure.
+  </p>
+
+  <h2>City</h2>
+  <p>
+  This year's conference will take place in
+  <b><a href="https://en.wikipedia.org/wiki/Prague">Prague</a>, Czech Republic</b>.
+  </p>
+
+  <p>
+  <i>Getting there</i>
+  </p>
+  <p>
+  <b>By train</b>
+  You can travel directly by train to Prague from many cities, such as Berlin,
+  Budapest, Bratislava, Copenhagen, Dresden, Hamburg, Kraków, Linz, Munich,
+  Vienna, and Warsaw. Many more are just one change away.
+  </p>
+  <p>
+  <b>By air</b>
+  Prague is served by a single international airport:
+  Václav Havel Airport Prague (PRG), with <a href="https://www.prg.aero/en/route-map">direct flights</a>
+  to more than 160 destinations, and also easily reachable through all major European hubs.
+  </p>
+  <p>
+  <b>Entry requirements, Visas</b>
+  The Czech Republic is part of the European "Schengen area". Many international
+  visitors, including most EU, EEA, Swiss US, Canadian, Australian, Japanese and
+  South Korean citizens, will neither need a Visa nor prior travel authorization
+  to enter, only a valid passport. A European travel authorization scheme (<a href="https://travel-europe.europa.eu/etias">ETIAS</a>)
+  is planned for late 2026 / early 2027, but this is not in operation yet, and
+  no start date has been announced yet, so we think it is unlikely to come into
+  force before the conference.
+  </p>
+  <p>
+  See <a href="https://www.visitczechia.com/en-us/travel-info/entry-to-the-country">Visit Czechia - Entry to the Country</a>
+  for links to the list of countries whose citizens do need to apply for a Visa and which do not.
+  </p>
+
+  <a id="venue"></a>
+
+  <h2>Venue</h2>
+  
+  <p>
+  The conference will take place at: <br/>
+  <a href="https://impacthub.cz/en/praha/">ImpactHub Prague</a><br/>
+  Drtinova 557/10<br/>
+  150 00 Prague 5 - Smíchov<br/>
+  Czech Republic<br/>
+  </p>
+  <p>
+    <iframe allowfullscreen="" width="600" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.5220250077373!2d14.399700176558246!3d50.07651247152318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94fecc6f8d2d%3A0x2068c37eab9b5371!2sImpact%20Hub%20Praha%20D10!5e0!3m2!1sen!2suk!4v1784820161661!5m2!1sen!2suk" style="border: 1px solid black"></iframe>
+  </p>
+
+  <a id="hotels"></a>
+
+  <h2>Hotels</h2>
+
+  <p>
+  The venue is close to the city center and as such there are many hotels nearby. Public transport is also quite good, so accommodation options that are a few metro stops or trams stops away are not a problem at all. The venue is easily reachable via the metro and tram.
+  </p>
+
+  <p>
+  A list of possible hotels will be posted at a later today.
+  </p>
+  
+<!--
+  <p>
+  Travelodge, Premier Inn, and ibis are the major budget business hotel chains in the UK, but there should be plenty of other options in the area.
+  </p>
+
+  <p>
+  The <b>Travelodge London Central City Road</b> looks (comparatively) reasonably priced and is just up the road from the venue. There is also an <b>easyHotel London City Shoreditch</b> which may cater for those on a budget. The <b>Premier Inn London Farringdon (Smithfield) hotel</b> is also within easy walking distance. The <b>ibis London City Shoreditch</b> is a bit further away.
+  </p>
+
+  <p>
+  <b>Clayton Hotel London Wall</b> is a 4-star hotel nearby, and so is the <b>Malmaison London</b>, and no doubt many others.
+  </p>
+-->
+
+  <a id="visa-invitation-letters"></a>
+
+  <h2>Invitation Letter</h2>
+  <p>
+  If you need an invitation letter for visa application purposes, please
+  <a href="mailto:conference-invitations-2026@gstreamer.org">get in touch</a>
+  (you should usually get an initial response within a day).
+  </p>
+
+  <a id="social-events"></a>
+
+  <h2>Social Events</h2>
+
+  <a id="friday-social"></a>
+
+  <h3>Friday: Welcome drinks and/or food (planned)</h3>
+
+  <p>
+  Details to be confirmed.
+  </p>
+<!--
+  <p>
+    Join us for some drinks and/or food at The Angel pub!
+  </p>
+  <p>
+    We're booked in from 19:30 onwards. Food and drinks will be
+    available for purchase, credit cards are accepted.
+  </p>
+  <p>
+    There are vegetarian and vegan options on <a href="https://www.theangelcityroad.co.uk/menus/mainmenu">the menu</a>.
+  </p>
+  <p>
+    We have reserved a space upstairs (Shoreditch Lounge and Snug).
+  </p>
+
+  <p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3755217170005!2d-0.08996448778417336!3d51.52467187169967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caf4f637f9f%3A0x2b2188b249474bf9!2sAngel%20London%20Ec1!5e0!3m2!1sen!2suk!4v1760717199156!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </p>
+-->
+
+  <a id="saturday-social"></a>
+
+  <h3>Saturday: Social Event with Food and Drinks (planned)</h3>
+
+   <p>
+     Our main social event will be on Saturday evening. Details to be confirmed.
+   </p>
+
+<!--
+   <p>
+     Food and drinks will be provided (many thanks to our sponsors!),
+     including vegetarian and vegan options.
+   </p>
+
+   <p>
+     Note that we have been allocated a section of the venue, but the other
+     parts of the venue will be open to the public and owing to the layout of
+     the place the bar will be shared.
+   </p>
+
+   <p>
+     If you are lucky enough to look younger than 25, please make sure to
+     bring some ID with you to prove that you are at least 18 years old.
+   </p>
+
+   <p>
+    If anyone is younger than 18 years, please <a href="mailto:conference-2026@gstreamer.org">get in touch</a>.
+   </p>
+-->
+
+  <a id="hackfest"></a>
+
+  <h2>GStreamer hackfest</h2>
+  <p>
+    There will again be a hackfest after the conference, on Monday and Tuesday
+    <b>12-13 October 2026</b>, at the same venue (ImpactHub).
+  </p>
+
+<!--
+  <p>
+    <b>Important: Please register for the hackfest in advance!</b>
+  </p>
+  <p>
+    <b><a href="https://ti.to/gstreamer/gstreamer-conference-2026-hackfest-london">Sign up now for the GStreamer hackfest!</a></b>
+  </p>
+  <p>
+  The hackfest will take place at: <br/>
+  <b>Amazon LHR16</b><br/>
+  1 Principal Pl<br/>
+  London, EC2A 2FA<br/>
+  United Kingdom<br/>
+  </p>
+  <p>
+    <iframe allowfullscreen="" width="600" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.526504116444!2d-0.08181788836585473!3d51.521902309527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761deeef1c261f%3A0x2a90345bd1640882!2sAmazon%20Corporate%20Office%20LHR16!5e0!3m2!1sen!2suk!4v1760357078126!5m2!1sen!2suk" style="border: 1px solid black"></iframe>
+  </p>
+-->
+
+  <a id="cfp"></a>
+
+  <h2>Call for Presentations</h2>
+
+  <p>
+    The Call for Presentations is not open yet, but will be soon. Please watch this space for updates.
+  </p>
+
+<!--
+  <p><b>
+  The call for presentations is now <a href="https://indico.freedesktop.org/event/11/abstracts/">open</a> for talk proposals and lightning talks.
+  </b></p>
+  <p><b>
+  Please submit your talk now!
+  </b></p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk.
+  </p>
+  <p>
+  Please allow at least 5 minutes for questions at the end as well.
+  </p>
+  <p>
+  You will still be able to edit and refine your talk proposal after the
+  initial submission, so there's no need to hold off until the last minute to
+  get it perfect.
+  </p>
+  <p>
+   <b>Talks will be reviewed and slots allocated on a rolling basis, so make sure to submit your proposal sooner rather than later!</b>
+  </p>
+  <p><b>
+  The submission deadline for talk proposals is 05 October 2026, 23:50h!
+  </b></p>
+
+  <p>
+  Lightning talks can be submitted until the day of the conference.
+  </p>
+-->
+<!--
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+
+  <p>
+  You can request a slot for one of the following durations:
+
+    <li>5 minutes (Lightning Talks)</li>
+    <li>20 minutes</li>
+    <li>30 minutes</li>
+    <li>40 minutes</li>
+    <li>45 minutes</li>
+
+  including questions.
+  </p>
+
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+  <p>
+  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/11/abstracts/">GStreamer Conference 2026 Talk Submission Portal</a>.
+  </p>
+  <p>
+  You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system. If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
+  </p>
+-->
+<!--
+  <p>
+  Anyone who has submitted a talk proposal should have received an e-mail
+  letting them know whether their proposal has been accepted already.
+  Thank you to everyone who submitted a proposal.
+  </p>
+-->
+<!--
+  <p>
+  Lightning talks may still be proposed, see above for more details.
+  </p>
+-->
+
+  <a id="coc"></a>
+
+  <h2>Code of Conduct and Anti-Harrassment Policy</h2>
+  <h3>Policy</h3>
+  <p>
+  The GStreamer project and the conference organisers are dedicated to
+  providing a harassment-free conference experience for everyone.
+  We do not tolerate harassment of conference participants in any form.
+  </p>
+  <p>
+  Harassment includes, but is not limited to, offensive verbal comments,
+  sexual images in public spaces, deliberate intimidation, stalking, following,
+  harassing photography or recording, sustained disruption of talks or other
+  events, inappropriate physical contact, and unwelcome sexual attention.
+  Participants asked to stop any harassing behaviour are expected to comply
+  immediately. We expect participants to follow these rules at all conference
+  venues, hackfest venues, and conference-related social events.
+  </p>
+  <p>
+  If a participant engages in harassing behaviour, the conference organisers
+  and/or their delegates may take any action they deem appropriate, including
+  warning the offender or expulsion from the conference. If you are being
+  harassed, notice that someone else is being harassed, or have any other
+  concerns, please contact a conference organiser or member of the
+  code of conduct committee below immediately.
+  </p>
+  <h3>Reporting Breaches</h3>
+  <p>
+  Breaches of the code of conduct should be reported either by e-mail via
+  <a href="mailto:code-of-conduct@gstreamer.org">code-of-conduct@gstreamer.org</a>.
+  <!-- or by contacting one of the following people: -->
+<!--
+  <ul>
+  <li>Olivier Crête (ocrete)</li>
+  <li>Alicia Boya García (alicia)</li>
+  <li>Andoni Morales Alastruey (ylatuya)</li>
+  <li>Nirbheek Chauhan (nirbheek)</li>
+  <li>Tim Müller (__tim)</li>
+  <li>Xabier Rodriguez Calvar (calvaris)</li>
+  </ul>
+-->
+  </p>
+  <p>
+  See <a href="https://www.x.org/wiki/XorgFoundation/Policies/HarassmentDetails/">here</a>
+  for implementation details and guidelines.
+  </p>
+  <p>
+  This anti-harassment policy is based on the
+  <a href="https://indico.freedesktop.org/event/4/page/26-code-of-conduct">XDC 2024 code of conduct</a>
+  which in turn is based on the example policy from the
+  <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">Geek Feminism wiki</a>,
+  created by the <a href="http://adainitiative.org/">Ada Initiative</a> and other volunteers.
+  </p>
+
+  <a id="contact"></a>
+
+  <h2>GStreamer Conference Contact</h2>
+  <p>
+  If you have any questions about the GStreamer Conference or are considering
+  <a href="&site;/conference/2026/gstreamer-conference-sponsor-brief-2026.pdf">becoming a sponsor</a>
+  please <a href="mailto:conference-2026@gstreamer.org">get in touch</a>.
+  </p>
+
+  <a id="news"></a>
+
+  <h2>Conference News and Updates</h2>
+<!--
+  <p>
+    <i>2026-November-19</i>: Talk recordings are now available on the <a href="https://gstconf.ubicast.tv/channels/#gstreamer-conference-2026">GStreamer Conference 2026 channel on ubicast.tv</a>. Many thanks to Ubicast for recording the talks again!
+  </p>
+  <p>
+    <i>2026-October-25</i>: The conference is over now. Thank to everyone who attended, as well as our speakers and our amazing sponsors! Talks have been recorded and will be made available for watching soon.
+  </p>
+  <p>
+    <i>2026-October-24</i>: Links to the <a href="#live">Live streams for Day 2</a> have been added.
+  </p>
+  <p>
+    <i>2026-October-23</i>: Links to the <a href="#live">Live streams for Day 1</a> have been added.
+  </p>
+  <p>
+    <i>2026-October-17</i>: Wednesday evening social event details added (location: The Angel EC1, City Road)
+  </p>
+  <p>
+    <i>2026-October-13</i>: The <a href="https://indico.freedesktop.org/event/11/timetable/#20261023.detailed">conference schedule</a> has now been published.
+  </p>
+  <p>
+    <i>2026-October-13</i>: Hackfest venue is Amazon LHR16 - Many thanks to Amazon for hosting us! People should <a href="https://ti.to/gstreamer/gstreamer-conference-2026-hackfest-london">register</a> for the hackfest by 21 October 2026 noon UK time!
+  </p>
+  <p>
+    <i>2026-October-11</i>: Thursday evening social event details added (location: BrewDog Chancery Lane)
+  </p>
+  <p>
+    <i>2026-October-07</i>: The full list of talks and speakers has been published. If anything looks off or needs changing, please send us an e-mail or ping us on Matrix, thanks!
+  </p>
+  <p>
+    <i>2026-October-06</i>: The Call for Presentations is now closed, but lightning talks may still be submitted. All speakers should have received their acceptance e-mails by now. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics again this year.
+  </p>
+  <p>
+    <i>2026-October-01</i>: Call for Presentations submission deadline is 5 October 2026, 23:59h
+  </p>
+  <p>
+    <i>2026-September-29</i>: Added a couple of hotels.
+  </p>
+  <p>
+    <i>2026-September-23</i>: The Call for Presentations is now finally open, please <a href="https://indico.freedesktop.org/event/11/abstracts/">submit</a> your talk proposals and lightning talks now!
+  </p>
+  <p>
+    <i>2026-September-21</i>: Added a note that an <a href="https://www.gov.uk/eta">Electronic Travel Authorisation (ETA)</a> is required for most international visitors traveling without a visa, including most EU, EEA, Swiss US, Canadian, Australian citizens.
+  </p>
+  <p>
+    <i>2026-September-20</i>: Registration is now open! Sign up for the GStreamer Conference 2026 <a href="https://ti.to/gstreamer/gstreamer-conference-2026">here</a>. If you intend to submit a (non-lightning) talk, you may want to wait for the Call for Presentations to open, since speakers will receive free tickets.
+  </p>
+  <p>
+    <i>2026-September-10</i>: Ticket prices have been added, registration should hopefully also open in the near future.
+  </p>
+  <p>
+    <i>2026-September-08</i>: The GStreamer project is excited to see <b><a href="https://fluendo.com">Fluendo</a></b> sponsor at Gold level this year!
+  </p>
+  <p>
+    <i>2026-September-02</i>: We're thrilled to welcome <b><a href="https://www.veo.co">Veo</a></b> as first-time sponsor this year, at Silver level!
+  </p>
+  <p>
+    <i>2026-August-25</i>: The GStreamer project is happy to see <b><a href="https://axis.com">Axis Communications</a></b> sponsor the conference again at Gold level this year!
+  </p>
+  <p>
+    <i>2026-August-21</i>: Venue announced: <a href="https://www.barbican.org.uk/your-visit/general-info/map-directions">The Barbican Centre</a>, Silk St, London, EC2Y 8DS, Level 4.
+  </p>
+  <p>
+    <i>2026-August-21</i>: Dates confirmed: The conference will take place on Thursday and Friday 23-24 October 2026, followed by a hackfest.
+  </p>
+  <p>
+    <i>2026-August-20</i>: Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> this year.
+  </p>
+  <p>
+    <i>2026-August-19</i>: We're excited to see <b><a href="https://pexip.com/">Pexip</a></b> return again as Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2026-August-15</i>: We're delighted to welcome <b><a href="https://www.mediascribe.ai">MediaScribe</a></b> as Silver level sponsor this year!
+  </p>
+  <p>
+    <i>2026-August-15</i>: The GStreamer project is thrilled to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as Platinum level sponsor this year!
+  </p>
+  <p>
+    <i>2026-August-15</i>: We're excited to see <b><a href="https://www.collabora.com">Collabora</a></b> return as a Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2026-August-15</i>: The GStreamer project welcomes back <b><a href="https://centricular.com">Centricular</a></b> as sponsor, at Platinum level this year!
+  </p>
+-->
+  <p>
+    <i>2026-July-23</i>: Sponsorship brief available
+  </p>
+  <p>
+    <i>2026-July-23</i>: Visa invitation letter section added.
+  </p>
+  <p>
+    <i>2026-July-23</i>: Initial website.
+  </p>
+  <p>
+    <i>2026-July-03</i>: Dates and venue announced on Matrix Events channel.
+  </p>
+
+  <p>
+    <br/>
+  </p>
+
+  <h1>Past GStreamer Conferences</h1>
+  <ul>
+    <li><a href="../2025/index.html">23-24 October 2025 · London, UK</a></li>
+    <li><a href="../2024/index.html">7-10 October 2024 · Montréal, Québec, Canada</a></li>
+    <li><a href="../2023/index.html">25-26 September 2023 · Palexco Convention Centre · A Coruña, Spain</a></li>
+    <li><a href="../2019/index.html">31 October - 1 November 2019 · L'Embarcadère · Lyon, France</a></li>
+    <li><a href="../2018/index.html">25-26 October 2018 · Summerhall · Edinburgh, Scotland, UK</a></li>
+    <li><a href="../2017/index.html">21-22 October 2017 · Node5 · Prague, Czech Republic</a></li>
+    <li><a href="../2016/index.html">10-11 October 2016 · betahaus · Berlin, Germany</a></li>
+    <li><a href="../2015/index.html">8-9 October 2015 · The Convention Centre Dublin · Dublin, Ireland</a></li>
+    <li><a href="../2014/index.html">16-17 October 2014 · Congress Centre Düsseldorf · Düsseldorf, Germany</a></li>
+    <li><a href="../2013/index.html">22-23 October 2013 · Edinburgh International Conference Centre · Edinburgh, Scotland, UK</a></li>
+    <li><a href="../2012/index.html">27-28 August 2012 · Sheraton San Diego Hotel &amp; Marina · San Diego, USA</a></li>
+    <li><a href="../2011/index.html">24-25 October 2011 · Clarion Congress Hotel · Prague, Czech Republic</a></li>
+    <li><a href="../2010/index.html">26 October 2010 · University Arms Hotel · Cambridge, UK</a></li>
+  </ul>
+
+</td>
+<td valign="top" class="gstconf-sponsorlogo" width="15%">
+  <h1>Sponsors</h1>
+  <h2>Platinum Sponsors</h2>
+
+<!--
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" width="100%" /></a>
+  </p>
+
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_2024.png" alt="Collabora" width="85%"/></a>
+  </p>
+
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" width="85%" /></a>
+  </p>
+
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" width="85%" /></a>
+  </p>
+-->
+
+  <h2 style="padding:1em 0 0 0">Gold Sponsors</h2>
+
+<!--
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" width="100%" /></a>
+  </p>
+
+  <p class="gstconf-sponsorlogo">
+    <a href="https://fluendo.com"><img src="sponsor_fluendo_1060x200.png" alt="Fluendo" width="100%" /></a>
+  </p>
+-->
+
+<!--
+  <p class="gstconf-sponsorlogo">
+    <a href="https://sat.qc.ca/"><img src="sponsor_sat_2026_2630x644.png" alt="Société des arts technologiques" width="100%" /></a>
+  </p>
+
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.geniussports.com/"><img src="sponsor_genius_sports.png" alt="Genius Sports" width="100%" /></a>
+  </p>
+-->
+
+  <h2 style="padding:1em 0 0 0">Silver Sponsors</h2>
+
+<!--
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.mediascribe.ai"><img src="sponsor_mediascribe.svg" alt="MediaScribe" width="100%" /></a>
+  </p>
+
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.veo.co"><img src="sponsor_veo.png" alt="Veo" width="100%" /></a>
+  </p>
+
+-->
+
+<!--
+
+  <p class="gstconf-sponsorlogo">
+    <a href="https://laerdal.com"><img src="sponsor_laerdal_2026.png" alt="Laerdal Labs" width="90%" /></a>
+  </p>
+
+  <p style="padding:0px 0px; height: 170px">
+    <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
+  </p>
+
+  <p style="padding:0px 0px">
+    <a href="https://ridgerun.com"><img src="sponsor_ridgerun.png" alt="RidgeRun" height="130" /></a>
+  </p>
+
+  <p class="gstconf-sponsorlogo">
+    <a href="https://asymptotic.io"><img src="sponsor_asymptotic_2026.png" alt="asymptotic" width="100%" /></a>
+  </p>
+-->
+
+<!--
+  <p style="padding:10px 0px">
+    <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
+  </p>
+  -->
+
+<!--
+  <h2>Special Media Partner</h2>
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.ubicast.eu/"><img src="sponsor_ubicast_1059x292.png" alt="UbiCast" width="100%" /></a>
+  </p>
+-->
+
+<!--
+  <h2>Press Partners</h2>
+  <p style="padding:10px 0px">
+    <a href="https://lwn.net"><img src="lwn-logo-gstconf2016.png" alt="LWN" height="99" width="300" /></a>
+  </p>
+-->
+
+  <p>
+    <small>
+    Interested in <a href="&site;/conference/2026/gstreamer-conference-sponsor-brief-2026.pdf">becoming a sponsor</a>? <!-- FIXME -->
+    </small>
+  </p>
+
+</td>
+
+</tr>
+</table>
+
+</body>
+</page>
