@@ -18725,4 +18725,61 @@ issue in <a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/">GitLab</a
         </content>
   </item>
 
+<!-- =========================== 1.28.5 ================================= -->
+
+  <item>
+      <date>2026-07-08 23:50</date>
+        <title>GStreamer 1.28.5 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.28 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bug fixes as well as a number of
+<a href="&site;/security/">security fixes</a>. It should be safe to update
+from 1.28.x, and we recommend you do so at your earliest convenience.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Various <a href="&site;/security/">security fixes</a> and playback fixes</li>
+    <li>Fix subtitles cause green flickering with VA decoders on AMD GPUs</li>
+    <li>core: Fix sticky event raciness when pads are linked mid-push</li>
+    <li>appsrc: Uniformly handle EOS events being pushed</li>
+    <li>audio-resampler-neon fails to build for targets with neon but without thumb</li>
+    <li>avtp: Correct ptime generation from avtp timestamp</li>
+    <li>fmp4mux: Various fixes for splitting at fragment boundaries</li>
+    <li>gldownload: fix wrong DRM format negotiation causing R/B channel swap</li>
+    <li>gdkpixbufdec: Drop rank to NONE and handle resolution/format changes</li>
+    <li>gopbuffer: add support for H.266/VVC</li>
+    <li>h265decoder: Fix HEVC with alpha decoding</li>
+    <li>mp4mux: fix AC-3 template caps so muxer can accept input from ac3parse</li>
+    <li>mpegtsmux: Always assign PTS to output buffers in CBR mode</li>
+    <li>mpegtsmux: Output buffers with PCR-only bitrate-padding packets have wrong PTS</li>
+    <li>rtcpbuffer: Fix parsing of SR+SDES compound packets (regression from security fix)</li>
+    <li>rtspsrc2: Allow disabling SRTP/SRTCP encryption and SRTP authentication</li>
+    <li>tsdemux: Improve PTS rollover handling in ignore-pcr mode, fixing intermittent corruption with YouTube HLS streams</li>
+    <li>textaccumulate: output joined single buffer, add list as meta</li>
+    <li>threadshare: add ts-clocksync</li>
+    <li>webrtcsink: negotiation fixes and improvements</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.28/#1.28.5">GStreamer 1.28.5 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/download/">Downloads page</a>.
+</p>
+        </content>
+  </item>
+
 </news>
