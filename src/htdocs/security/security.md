@@ -15,11 +15,29 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2026-0065** | Integer overflow in Matroska LZO1X decompressor | 2026-07-08 | [Details](sa-2026-0065.html) |
+| **GStreamer-SA-2026-0064** | NULL pointer dereference in WAV parser during adtl chunk parsing in streaming mode | 2026-07-08 | [Details](sa-2026-0064.html) |
+| **GStreamer-SA-2026-0063**<br/>CVE-2026-59691 | Heap out-of-bounds write in RFB source when decoding framebuffer updates | 2026-07-08 | [Details](sa-2026-0063.html) |
+| **GStreamer-SA-2026-0062**<br/>CVE-2026-59692 | Stack buffer overflow in DTLS certificate verification | 2026-07-08 | [Details](sa-2026-0062.html) |
+| **GStreamer-SA-2026-0061**<br/>CVE-2026-14935 | Possible authentication bypass in WebRTC SDP fingerprint validation | 2026-07-08 | [Details](sa-2026-0061.html) |
+| **GStreamer-SA-2026-0060** | Stack-based out-of-bounds write in closed caption converter | 2026-07-08 | [Details](sa-2026-0060.html) |
+| **GStreamer-SA-2026-0059** | Out-of-bounds read in VP9 parser superframe index parsing | 2026-07-08 | [Details](sa-2026-0059.html) |
+| **GStreamer-SA-2026-0058**<br/>CVE-2026-2920 follow-up | Out-of-bounds read in ASF demuxer packet payload parsing | 2026-07-08 | [Details](sa-2026-0058.html) |
+| **GStreamer-SA-2026-0057** | Out-of-bounds read in RTP JPEG depayloader | 2026-07-08 | [Details](sa-2026-0057.html) |
+| **GStreamer-SA-2026-0056** | Heap-based buffer overflow in H.266 video parser slice header processing | 2026-07-08 | [Details](sa-2026-0056.html) |
+| **GStreamer-SA-2026-0055** | Out-of-bounds read in H.266/VVC parser PPS tile slice loop | 2026-07-08 | [Details](sa-2026-0055.html) |
+| **GStreamer-SA-2026-0054** | Heap buffer overflow in encoding-target loader on malformed UTF-8 input | 2026-07-08 | [Details](sa-2026-0054.html) |
+| **GStreamer-SA-2026-0053**<br/>ZDI-CAN-29584 | Stack and heap buffer overflow in Opus audio decoder | 2026-07-08 | [Details](sa-2026-0053.html) |
+| **GStreamer-SA-2026-0052**<br/>ZDI-CAN-29581 | Heap buffer overflow in GdkPixbuf image decoder due to dimension changes | 2026-07-08 | [Details](sa-2026-0052.html) |
+| **GStreamer-SA-2026-0051**<br/>ZDI-CAN-29787 | Out-of-bounds read in RTP SBC depayloader | 2026-07-08 | [Details](sa-2026-0051.html) |
+| **GStreamer-SA-2026-0050**<br/>ZDI-CAN-29510, ZDI-CAN-29608 | Heap buffer overflow in MOV/MP4 moov recovery tool | 2026-07-08 | [Details](sa-2026-0050.html) |
+| **GStreamer-SA-2026-0049** | Heap buffer overflow in MPEG-4 Video parser | 2026-07-08 | [Details](sa-2026-0049.html) |
+| **GStreamer-SA-2026-0044** | Out-of-bounds read in RTP CELT audio depayloader | 2026-07-08 | [Details](sa-2026-0044.html) |
 | **GStreamer-SA-2026-0048**<br/>CVE-2026-12891 | Out-of-bounds read in H.266 parser VUI aspect ratio parsing | 2026-06-24 | [Details](sa-2026-0048.html) |
 | **GStreamer-SA-2026-0047**<br/>CVE-2026-12892 | One-byte out-of-bounds read in H.264 NAL unit parser | 2026-06-24 | [Details](sa-2026-0047.html) |
 | **GStreamer-SA-2026-0046**<br/>CVE-2026-52722 | Integer overflow in VMNC decoder cursor payload size calculation | 2026-06-16 | [Details](sa-2026-0046.html) |
 | **GStreamer-SA-2026-0045**<br/>CVE-2026-52721 | Out-of-bounds reads in PCAP parser due to missing bounds checks | 2026-06-16 | [Details](sa-2026-0045.html) |
-| **GStreamer-SA-2026-0044** | Reserved | tbd | tbd |
+| **GStreamer-SA-2026-0044** | Out-of-bounds read in RTP CELT audio depayloader | 2026-07-08 | [Details](sa-2026-0044.html) |
 | **GStreamer-SA-2026-0043**<br/>CVE-2026-52720 | Out-of-bounds read and write in RFB source | 2026-06-16 | [Details](sa-2026-0043.html) |
 | **GStreamer-SA-2026-0042**<br/>CVE-2026-53703, CVE-2026-53704 | Out-of-bounds reads and integer overflows in RealMedia demuxer | 2026-06-12 | [Details](sa-2026-0042.html) |
 | **GStreamer-SA-2026-0041**<br/>CVE-2026-53702 | Out-of-bounds read in H.265 parser buffering period SEI message parsing | 2026-06-12 | [Details](sa-2026-0041.html) |
