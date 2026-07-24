@@ -214,11 +214,9 @@ h2 {
   Check out <a href="&site;/conference/2025/index.html#talks-and-speakers">last year's schedule</a> to get an idea about the kind of speakers and topics to expect.
   </p>
 
-<!--
   <p>
-  Talks were recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> and will be made available for viewing soon.
+  Talks will be recorded and livestreamed again by <a href="https://www.ubicast.eu/">Ubicast</a> and will be made available for viewing after the conference.
   </p>
--->
 
   <a id="lightning-talks"></a>
 
@@ -645,9 +643,6 @@ h2 {
     <i>2026-August-21</i>: Venue announced: <a href="https://www.barbican.org.uk/your-visit/general-info/map-directions">The Barbican Centre</a>, Silk St, London, EC2Y 8DS, Level 4.
   </p>
   <p>
-    <i>2026-August-20</i>: Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> this year.
-  </p>
-  <p>
     <i>2026-August-15</i>: We're excited to see <b><a href="https://www.collabora.com">Collabora</a></b> return as a Platinum sponsor this year!
   </p>
 -->
@@ -666,6 +661,9 @@ h2 {
   </p>
   <p>
     <i>2026-July-24</i>: The GStreamer project is thrilled to welcome back <b><a href="https://centricular.com">Centricular</a></b> as Platinum sponsor this year!
+  </p>
+  <p>
+    <i>2026-July-24</i>: Talks will be recorded and live streamed again by <a href="https://www.ubicast.eu/">Ubicast</a> this year.
   </p>
   <p>
     <i>2026-July-23</i>: Sponsorship brief available
@@ -784,12 +782,10 @@ h2 {
   </p>
   -->
 
-<!--
   <h2>Special Media Partner</h2>
   <p class="gstconf-sponsorlogo">
     <a href="https://www.ubicast.eu/"><img src="sponsor_ubicast_1059x292.png" alt="UbiCast" width="100%" /></a>
   </p>
--->
 
 <!--
   <h2>Press Partners</h2>
