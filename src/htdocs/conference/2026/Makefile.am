@@ -3,6 +3,7 @@ built_pages = index.html
 
 images = banner-prague.jpg \
   sponsor_centricular_753x125.png \
+  sponsor_pexip_2019_965x261.png \
   $(NULL)
 
 #  sponsor_axis.png \
@@ -10,7 +11,6 @@ images = banner-prague.jpg \
 #  sponsor_fluendo_1060x200.png \
 #  sponsor_igalia_2015_2019x720.png \
 #  sponsor_mediascribe.svg \
-#  sponsor_pexip_2019_965x261.png \
 #  sponsor_ubicast_1059x292.png \
 #  sponsor_veo.png \
 #  sponsor_genius_sports.png \

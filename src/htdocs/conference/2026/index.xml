@@ -654,9 +654,6 @@ h2 {
     <i>2026-August-20</i>: Talks will be recorded again by <a href="https://www.ubicast.eu/">Ubicast</a> this year.
   </p>
   <p>
-    <i>2026-August-19</i>: We're excited to see <b><a href="https://pexip.com/">Pexip</a></b> return again as Platinum sponsor this year!
-  </p>
-  <p>
     <i>2026-August-15</i>: We're delighted to welcome <b><a href="https://www.mediascribe.ai">MediaScribe</a></b> as Silver level sponsor this year!
   </p>
   <p>
@@ -666,6 +663,9 @@ h2 {
     <i>2026-August-15</i>: We're excited to see <b><a href="https://www.collabora.com">Collabora</a></b> return as a Platinum sponsor this year!
   </p>
 -->
+  <p>
+    <i>2026-July-28</i>: We're excited to see <b><a href="https://pexip.com/">Pexip</a></b> return again as Platinum sponsor this year!
+  </p>
   <p>
     <i>2026-July-24</i>: The GStreamer project is thrilled to welcome back <b><a href="https://centricular.com">Centricular</a></b> as Platinum sponsor this year!
   </p>
@@ -712,6 +712,10 @@ h2 {
     <a href="https://www.centricular.com"><img src="sponsor_centricular_753x125.png" alt="Centricular" width="100%" /></a>
   </p>
 
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" width="85%" /></a>
+  </p>
+
 <!--
   <p class="gstconf-sponsorlogo">
     <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_2024.png" alt="Collabora" width="85%"/></a>
@@ -719,10 +723,6 @@ h2 {
 
   <p class="gstconf-sponsorlogo">
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" width="85%" /></a>
-  </p>
-
-  <p class="gstconf-sponsorlogo">
-    <a href="https://www.pexip.com"><img src="sponsor_pexip_2019_965x261.png" alt="Pexip" width="85%" /></a>
   </p>
 -->
 
