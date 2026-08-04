@@ -18782,4 +18782,57 @@ will be published on the <a href="&site;/download/">Downloads page</a>.
         </content>
   </item>
 
+<!-- =========================== 1.28.6 ================================= -->
+
+  <item>
+      <date>2026-08-05 15:00</date>
+        <title>GStreamer 1.28.6 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.28 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bug fixes as well as a number of
+<a href="&site;/security/">security fixes</a>. It should be safe to update
+from 1.28.x, and we recommend you do so at your earliest convenience.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Various <a href="&site;/security/">security fixes</a> and playback fixes</li>
+    <li>playbin3, playbin: fix stalls after re-enabling previously disabled subtitles</li>
+    <li>Fix regression in core if a pad is re-linked while changed sticky events are being pushed</li>
+    <li>dtls/webrtc: fix some issues with OpenSSL 4.0.0</li>
+    <li>RTP retransmission bitrate estimation fixes</li>
+    <li>Fix RTP depayloading of SMPTE ST291 frames with multiple ANC packets</li>
+    <li>Add H.266 muxing support to the Rust (f)mp4 muxers</li>
+    <li>Better handling of input buffers without timestamps in Rust (f)mp4 muxers</li>
+    <li>webrtcsink H.264 level/profile negotiation fixes and support for nvv4l2h265enc encoder</li>
+    <li>SMPTE ST2038 ancillary metadata and closed caption combiner improvements</li>
+    <li>Fix SEI insertion into H.265/HEVC streams with alpha</li>
+    <li>Windows D3D11 WinRT screen capture element fixes</li>
+    <li>Improved coded buffer size handling for VA encoders</li>
+    <li>Textaccumulate: various tweaks how the element outputs text, plus better handling of French punctuation</li>
+    <li>hlssink3: improved handling of input buffers without timestamps</li>
+    <li>Fix build against FFmpeg 9.0</li>
+    <li>cerbero: fix Windows packages binary size increase regression; upgrade libsrt recipe to 1.5.6</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.28/#1.28.6">GStreamer 1.28.6 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/download/">Downloads page</a>.
+</p>
+        </content>
+  </item>
 </news>
