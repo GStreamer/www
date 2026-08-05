@@ -128,6 +128,17 @@ ALERTS = \
 	sa-2026-0063.md \
 	sa-2026-0064.md \
 	sa-2026-0065.md \
+	sa-2026-0066.md \
+	sa-2026-0067.md \
+	sa-2026-0068.md \
+	sa-2026-0069.md \
+	sa-2026-0070.md \
+	sa-2026-0071.md \
+	sa-2026-0072.md \
+	sa-2026-0073.md \
+	sa-2026-0075.md \
+	sa-2026-0076.md \
+	sa-2026-0077.md \
 	$(NULL)
 
 security_pages = $(patsubst %.md,%.html,$(ALERTS))

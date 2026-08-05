@@ -15,6 +15,18 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2026-0077** | Heap out-of-bounds write in IMA ADPCM audio decoder | 2026-08-05 | [Details](sa-2026-0077.html) |
+| **GStreamer-SA-2026-0076**<br/>CVE-2026-18649 | Unbounded memory growth in H.264/H.265 RTP depayloaders during fragmented NAL unit reassembly | 2026-08-05 | [Details](sa-2026-0076.html) |
+| **GStreamer-SA-2026-0075** | Integer overflow and underflow in ASF demuxer bounds checks | 2026-08-05 | [Details](sa-2026-0075.html) |
+| **GStreamer-SA-2026-0074** | Reserved | tbd | tbd |
+| **GStreamer-SA-2026-0073** | Out-of-bounds read in Matroska demuxer FLAC header parser | 2026-08-05 | [Details](sa-2026-0073.html) |
+| **GStreamer-SA-2026-0072** | Multiple out-of-bounds reads, out-of-bounds writes, and integer overflow vulnerabilities in the AVI demuxer | 2026-08-05 | [Details](sa-2026-0072.html) |
+| **GStreamer-SA-2026-0071** | Heap buffer overflow in DVD subpicture decoder | 2026-08-05 | [Details](sa-2026-0071.html) |
+| **GStreamer-SA-2026-0070** | Out-of bounds write in H.265/HEVC parser short-term RPS parsing | 2026-08-05 | [Details](sa-2026-0070.html) |
+| **GStreamer-SA-2026-0069** | Heap buffer overflow in FFmpeg demuxer wrapper | 2026-08-05 | [Details](sa-2026-0069.html) |
+| **GStreamer-SA-2026-0068** | Heap buffer overflow in QCELP RTP depayloader | 2026-08-05 | [Details](sa-2026-0068.html) |
+| **GStreamer-SA-2026-0067** | Heap buffer overflow and memory leak in JPEG 2000 decoder | 2026-08-05 | [Details](sa-2026-0067.html) |
+| **GStreamer-SA-2026-0066** | Integer overflow and out-of-bounds accesses in ASF-over-RTP depayloader | 2026-08-05 | [Details](sa-2026-0066.html) |
 | **GStreamer-SA-2026-0065** | Integer overflow in Matroska LZO1X decompressor | 2026-07-08 | [Details](sa-2026-0065.html) |
 | **GStreamer-SA-2026-0064** | NULL pointer dereference in WAV parser during adtl chunk parsing in streaming mode | 2026-07-08 | [Details](sa-2026-0064.html) |
 | **GStreamer-SA-2026-0063**<br/>CVE-2026-59691 | Heap out-of-bounds write in RFB source when decoding framebuffer updates | 2026-07-08 | [Details](sa-2026-0063.html) |
