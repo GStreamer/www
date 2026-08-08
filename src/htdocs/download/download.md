@@ -195,7 +195,7 @@ You will find these in your distribution's package repository.
 [![Arch package](https://repology.org/badge/version-for-repo/arch/gstreamer.svg?header=Arch)](https://repology.org/project/gstreamer/versions)
 [![Debian 14 package](https://repology.org/badge/version-for-repo/debian_14/gstreamer.svg?header=Debian%2014)](https://repology.org/project/gstreamer/versions)
 [![Debian unstable package](https://repology.org/badge/version-for-repo/debian_unstable/gstreamer.svg?header=Debian%20Unstable)](https://repology.org/project/gstreamer/versions)
-[![Fedora 43 package](https://repology.org/badge/version-for-repo/fedora_43/gstreamer.svg?header=Fedora%2043)](https://repology.org/project/gstreamer/versions)
+[![Fedora 44 package](https://repology.org/badge/version-for-repo/fedora_44/gstreamer.svg?header=Fedora%2044)](https://repology.org/project/gstreamer/versions)
 [![Fedora rawhide package](https://repology.org/badge/version-for-repo/fedora_rawhide/gstreamer.svg?header=Fedora%20Rawhide)](https://repology.org/project/gstreamer/versions)
 [![Manjaro stable package](https://repology.org/badge/version-for-repo/manjaro_stable/gstreamer.svg?header=Manjaro%20Stable)](https://repology.org/project/gstreamer/versions)
 [![Manjaro unstable package](https://repology.org/badge/version-for-repo/manjaro_unstable/gstreamer.svg?header=Manjaro%20Unstable)](https://repology.org/project/gstreamer/versions)
