@@ -15,9 +15,9 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
-| **GStreamer-SA-2026-0077** | Heap out-of-bounds write in IMA ADPCM audio decoder | 2026-08-05 | [Details](sa-2026-0077.html) |
+| **GStreamer-SA-2026-0077**<br/>CVE-2026-19387 | Heap out-of-bounds write in IMA ADPCM audio decoder | 2026-08-05 | [Details](sa-2026-0077.html) |
 | **GStreamer-SA-2026-0076**<br/>CVE-2026-18649 | Unbounded memory growth in H.264/H.265 RTP depayloaders during fragmented NAL unit reassembly | 2026-08-05 | [Details](sa-2026-0076.html) |
-| **GStreamer-SA-2026-0075** | Integer overflow and underflow in ASF demuxer bounds checks | 2026-08-05 | [Details](sa-2026-0075.html) |
+| **GStreamer-SA-2026-0075**<br/>CVE-2026-19389 | Integer overflow and underflow in ASF demuxer bounds checks | 2026-08-05 | [Details](sa-2026-0075.html) |
 | **GStreamer-SA-2026-0074** | Reserved | tbd | tbd |
 | **GStreamer-SA-2026-0073** | Out-of-bounds read in Matroska demuxer FLAC header parser | 2026-08-05 | [Details](sa-2026-0073.html) |
 | **GStreamer-SA-2026-0072** | Multiple out-of-bounds reads, out-of-bounds writes, and integer overflow vulnerabilities in the AVI demuxer | 2026-08-05 | [Details](sa-2026-0072.html) |
