@@ -126,6 +126,26 @@
     </tr>
   </table>
   </td>
+  <!-- conference 2026 banner right -->
+  <td width="35%">
+  <table border="0" cellpadding="20" cellspacing="0">
+    <tr>
+      <td align="left" bgcolor="#ffffff">
+        <!--
+        <a href="&site;/conference/2023/"><img src="&site;/images/2023-conf-website-banner-a-coruna-270p.png"
+           alt="GStreamer Conference 2023 Banner" height="90" border="0" /></a> --> <!-- width="351" -->
+        <br />
+        <a href="&site;/conference/2026/">
+          <div style="font-size: 1.6em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>GStreamer Conference 2026</b></div>
+        </a>
+        <br />
+        <div style="font-size: 1.2em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>10-11 October 2026 · Prague, Czech Republic</b></div>
+        <br />
+        <div style="font-size: 1.0em; font-family: 'Arial Narrow', 'Arial', sans-serif;"><b>Join us!</b></div>
+      </td>
+    </tr>
+  </table>
+  </td>
   </tr>
   </table>
 
