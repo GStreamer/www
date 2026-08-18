@@ -20,7 +20,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 | **GStreamer-SA-2026-0075**<br/>CVE-2026-19389 | Integer overflow and underflow in ASF demuxer bounds checks | 2026-08-05 | [Details](sa-2026-0075.html) |
 | **GStreamer-SA-2026-0074** | Reserved | tbd | tbd |
 | **GStreamer-SA-2026-0073** | Out-of-bounds read in Matroska demuxer FLAC header parser | 2026-08-05 | [Details](sa-2026-0073.html) |
-| **GStreamer-SA-2026-0072** | Multiple out-of-bounds reads, out-of-bounds writes, and integer overflow vulnerabilities in the AVI demuxer | 2026-08-05 | [Details](sa-2026-0072.html) |
+| **GStreamer-SA-2026-0072**<br/>CVE-2026-73433, CVE-2026-73434 | Multiple out-of-bounds reads, out-of-bounds writes, and integer overflow vulnerabilities in the AVI demuxer | 2026-08-05 | [Details](sa-2026-0072.html) |
 | **GStreamer-SA-2026-0071** | Heap buffer overflow in DVD subpicture decoder | 2026-08-05 | [Details](sa-2026-0071.html) |
 | **GStreamer-SA-2026-0070** | Out-of bounds write in H.265/HEVC parser short-term RPS parsing | 2026-08-05 | [Details](sa-2026-0070.html) |
 | **GStreamer-SA-2026-0069** | Heap buffer overflow in FFmpeg demuxer wrapper | 2026-08-05 | [Details](sa-2026-0069.html) |
