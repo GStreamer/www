@@ -18835,4 +18835,42 @@ will be published on the <a href="&site;/download/">Downloads page</a>.
 </p>
         </content>
   </item>
+
+<!-- =========================== Orc 0.4.43 ================================= -->
+
+  <item>
+      <date>2026-08-28 23:00</date>
+        <title>Orc 0.4.43 release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler, which is used for SIMD acceleration
+in GStreamer plugins such as audioconvert, audiomixer, compositor, videoscale,
+and videoconvert, to name just a few.
+        </p>
+        <p>
+This release contains both bug fixes and new features.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>Add AVX512 support</li>
+            <li>neon: add divluw rule (used in GStreamer's compositor, videomixer, gaudieffects and alpha-blending code paths)</li>
+            <li>neon: add mulslq, mululq rules, shlq, shrsq, shruq (used in GStreamer's audio processing element)</li>
+            <li>orccodemem: Invalidate code chunks when recycling for QEMU</li>
+            <li>orcprogram-c: Allow negative constants</li>
+            <li>arm, neon: Split ARM and NEON logic into 32-bit and 64-bit</li>
+            <li>RISC-V: many fixes and enhancements, including some new rules</li>
+            <li>LoongArch: various fixes and enhancements</li>
+            <li>OpenBSD/FreeBSD improvements</li>
+            <li>Miscellaneous fixes</li>
+            <li>ci fixes</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.43.tar.xz">orc-0.4.43.tar.xz</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
