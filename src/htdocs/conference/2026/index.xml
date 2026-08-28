@@ -639,14 +639,11 @@ h2 {
   <p>
     <i>2026-September-02</i>: We're thrilled to welcome <b><a href="https://www.veo.co">Veo</a></b> as first-time sponsor this year, at Silver level!
   </p>
-  <p>
-    <i>2026-August-21</i>: Venue announced: <a href="https://www.barbican.org.uk/your-visit/general-info/map-directions">The Barbican Centre</a>, Silk St, London, EC2Y 8DS, Level 4.
-  </p>
-  <p>
-    <i>2026-August-15</i>: We're excited to see <b><a href="https://www.collabora.com">Collabora</a></b> return as a Platinum sponsor this year!
-  </p>
 -->
 
+  <p>
+    <i>2026-August-28</i>: We thank <b><a href="https://www.collabora.com">Collabora</a></b> for returning as a Gold sponsor this year!
+  </p>
   <p>
     <i>2026-August-12</i>: The GStreamer project is thrilled to see <b><a href="https://www.igalia.com/">Igalia</a></b> return as Platinum level sponsor this year!
   </p>
@@ -716,16 +713,14 @@ h2 {
     <a href="https://www.igalia.com"><img src="sponsor_igalia_2015_2019x720.png" alt="Igalia" width="85%" /></a>
   </p>
 
-<!--
-  <p class="gstconf-sponsorlogo">
-    <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_2024.png" alt="Collabora" width="85%"/></a>
-  </p>
--->
-
   <h2 style="padding:1em 0 0 0">Gold Sponsors</h2>
 
   <p class="gstconf-sponsorlogo">
     <a href="https://www.axis.com"><img src="sponsor_axis.png" alt="Axis Communications" width="100%" /></a>
+  </p>
+
+  <p class="gstconf-sponsorlogo">
+    <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_2024.png" alt="Collabora" width="85%"/></a>
   </p>
 
 <!--
@@ -735,10 +730,6 @@ h2 {
 -->
 
 <!--
-  <p class="gstconf-sponsorlogo">
-    <a href="https://sat.qc.ca/"><img src="sponsor_sat_2026_2630x644.png" alt="Société des arts technologiques" width="100%" /></a>
-  </p>
-
   <p class="gstconf-sponsorlogo">
     <a href="https://www.geniussports.com/"><img src="sponsor_genius_sports.png" alt="Genius Sports" width="100%" /></a>
   </p>
@@ -755,32 +746,14 @@ h2 {
     <a href="https://www.veo.co"><img src="sponsor_veo.png" alt="Veo" width="100%" /></a>
   </p>
 
--->
-
-<!--
-
-  <p class="gstconf-sponsorlogo">
-    <a href="https://laerdal.com"><img src="sponsor_laerdal_2026.png" alt="Laerdal Labs" width="90%" /></a>
-  </p>
-
   <p style="padding:0px 0px; height: 170px">
     <a href="https://www.zeiss.com"><img src="sponsor_zeiss.png" alt="Zeiss" height="200" width="200" /></a>
   </p>
 
-  <p style="padding:0px 0px">
-    <a href="https://ridgerun.com"><img src="sponsor_ridgerun.png" alt="RidgeRun" height="130" /></a>
-  </p>
-
-  <p class="gstconf-sponsorlogo">
-    <a href="https://asymptotic.io"><img src="sponsor_asymptotic_2026.png" alt="asymptotic" width="100%" /></a>
-  </p>
--->
-
-<!--
   <p style="padding:10px 0px">
     <a href="https://facebook.com"><img src="sponsor_facebook_960x263.png" alt="Facebook" height="75" /></a>
   </p>
-  -->
+-->
 
   <h2>Special Media Partner</h2>
   <p class="gstconf-sponsorlogo">
