@@ -321,24 +321,35 @@ h2 {
   <p>
   The venue is close to the city center and as such there are many hotels nearby. Public transport is also quite good, so accommodation options that are a few metro stops or trams stops away are not a problem at all. The venue is easily reachable via the metro and tram.
   </p>
-
   <p>
-  A list of possible hotels will be posted at a later today.
+  The following is just a small selection of hotels which may or may not be
+  suitable. Prague is a major city and tourist destination and as such has
+  many hotels and hostels in all price categories. The below is merely a small
+  selection, you can find more using the usual booking engines such as
+  booking.com, lastminute.com or airbnb.com.
   </p>
-  
-<!--
   <p>
-  Travelodge, Premier Inn, and ibis are the major budget business hotel chains in the UK, but there should be plenty of other options in the area.
+  The conference venue (<a href="https://impacthub.cz/en/praha/">ImpactHub Prague</a>)
+  is in the district <i>Prague 5 - Smíchov</i> not far from the transport hub and
+  B line metro stop <i>Anděl</i>, and some closer tram stops too. It should
+  therefore be fairly easy reach by public transport or taxi from all areas of
+  the city and especially the city centre. There is public transport in form of
+  busses, trams and an underground metro.
   </p>
-
   <p>
-  The <b>Travelodge London Central City Road</b> looks (comparatively) reasonably priced and is just up the road from the venue. There is also an <b>easyHotel London City Shoreditch</b> which may cater for those on a budget. The <b>Premier Inn London Farringdon (Smithfield) hotel</b> is also within easy walking distance. The <b>ibis London City Shoreditch</b> is a bit further away.
+  The following hotels are located near the venue (ImpactHub) and the Anděl
+  transport hub, and had at least a couple of rooms left at the time of
+  writing, but there are many other hotels in the city which may be better
+  located or provide better value:
+  <ul>
+    <li><a href="https://all.accor.com/hotel/5211/index.en.shtml#origin=ibis">Hotel Ibis Praha Mala Strana</a> - modern 3-star hotel near Anděl transport hub, ca. 7-10 minutes walk to the venue / ImpactHub</li>
+    <li><a href="https://petr.mypraguehotels.com/en/">Hotel Petr Prague</a> - 3-star hotel just a few steps away from the venue / ImpactHub</li>
+    <li><a href="https://www.hotelumartinapraha.cz/">Martin Hotel Prague</a> - 4-star hotel right around the corner from the venue / ImpactHub</li>
+    <li><a href="https://kinsky-fountain.praguehotelsweb.com/en/">Hotel Kinsky Fountain</a> - 4-star hotel very close to the venue / ImpactHub</li>
+    <li><a href="https://arbes.mypraguehotels.com/en/">Arbes Hotel</a> - 3-star hotel near the venue / ImpactHub</li>
+    <li><a href="https://www.orea.cz/en/hotel-angelo">OREA Hotel Angelo</a> - modern 4-star hotel near Anděl transport hub, ca. 8-11 minutes walk to the venue / ImpactHub</li>
+  </ul>
   </p>
-
-  <p>
-  <b>Clayton Hotel London Wall</b> is a 4-star hotel nearby, and so is the <b>Malmaison London</b>, and no doubt many others.
-  </p>
--->
 
   <a id="visa-invitation-letters"></a>
 
@@ -619,9 +630,6 @@ h2 {
     <i>2026-October-01</i>: Call for Presentations submission deadline is 5 October 2026, 23:59h
   </p>
   <p>
-    <i>2026-September-29</i>: Added a couple of hotels.
-  </p>
-  <p>
     <i>2026-September-23</i>: The Call for Presentations is now finally open, please <a href="https://indico.freedesktop.org/event/11/abstracts/">submit</a> your talk proposals and lightning talks now!
   </p>
   <p>
@@ -641,6 +649,9 @@ h2 {
   </p>
 -->
 
+  <p>
+    <i>2026-August-30</i>: Added a couple of hotels.
+  </p>
   <p>
     <i>2026-August-28</i>: We thank <b><a href="https://www.collabora.com">Collabora</a></b> for returning as a Gold sponsor this year!
   </p>
