@@ -201,13 +201,93 @@ h2 {
   </p>
 -->
 
+  <a id="cfp"></a>
+
+  <h2>Call for Presentations</h2>
+
+  <p><b>
+  The call for presentations is now <a href="https://indico.freedesktop.org/event/14/abstracts/">open</a> for talk proposals and lightning talks.
+  </b></p>
+  <p><b>
+  Please submit your talk now!
+  </b></p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk.
+  </p>
+  <p>
+  Please allow at least 5 minutes for questions at the end as well.
+  </p>
+  <p>
+  You will still be able to edit and refine your talk proposal after the
+  initial submission, so there's no need to hold off until the last minute to
+  get it perfect.
+  </p>
+  <p>
+   <b>Talks will be reviewed and slots allocated on a rolling basis, so make sure to submit your proposal sooner rather than later!</b>
+  </p>
+  <p><b>
+  The submission deadline for talk proposals is 15 September 2026, 23:59h Prague time!
+  </b></p>
+
+  <p>
+  Lightning talks can be submitted until the day of the conference.
+  </p>
+
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+
+  <p>
+  You can request a slot for one of the following durations:
+
+    <li>5 minutes (Lightning Talks)</li>
+    <li>20 minutes</li>
+    <li>30 minutes</li>
+    <li>40 minutes</li>
+    <li>45 minutes</li>
+
+  including questions.
+  </p>
+
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+  <p>
+  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/14/abstracts/">GStreamer Conference 2026 Talk Submission Portal</a>.
+  </p>
+  <p>
+  You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system. If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
+  </p>
+
+<!--
+  <p>
+  Anyone who has submitted a talk proposal should have received an e-mail
+  letting them know whether their proposal has been accepted already.
+  Thank you to everyone who submitted a proposal.
+  </p>
+-->
+<!--
+  <p>
+  Lightning talks may still be proposed, see above for more details.
+  </p>
+-->
+
   <a id="talks-and-speakers"></a>
 
   <h2>Schedule and speakers list</h2>
 
   <p>
-  This will be published at a later date once the inital Call for Presentations
-  round has closed.
+  The full schedule will be published at a later date once the inital
+  Call for Presentations round has closed.
+  </p>
+
+  <p>
+  However, we will be reviewing talk and lightning talk proposals on a
+  rolling basis and will add them here as we go, so watch this space!
   </p>
 
   <p>
@@ -233,7 +313,7 @@ h2 {
     Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
   </p>
   <p>
-    <b>Please submit all lightning talks through the <a href="https://indico.freedesktop.org/event/11/abstracts/">GStreamer Conference 2026 Talk Submission Portal</a></b>.
+    <b>Please submit all lightning talks through the <a href="https://indico.freedesktop.org/event/14/abstracts/">GStreamer Conference 2026 Talk Submission Portal</a></b>.
   </p>
   <p>
     You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system.
@@ -445,87 +525,6 @@ h2 {
   </p>
   <p>
     <iframe allowfullscreen="" width="600" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.526504116444!2d-0.08181788836585473!3d51.521902309527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761deeef1c261f%3A0x2a90345bd1640882!2sAmazon%20Corporate%20Office%20LHR16!5e0!3m2!1sen!2suk!4v1760357078126!5m2!1sen!2suk" style="border: 1px solid black"></iframe>
-  </p>
--->
-
-  <a id="cfp"></a>
-
-  <h2>Call for Presentations</h2>
-
-  <p>
-    The Call for Presentations is not open yet, but will be soon. Please watch this space for updates.
-  </p>
-
-<!--
-  <p><b>
-  The call for presentations is now <a href="https://indico.freedesktop.org/event/11/abstracts/">open</a> for talk proposals and lightning talks.
-  </b></p>
-  <p><b>
-  Please submit your talk now!
-  </b></p>
-  <p>
-  The initial submission needs to be only a couple of sentences or paragraphs
-  describing the talk you want to give and the desired length of your talk.
-  </p>
-  <p>
-  Please allow at least 5 minutes for questions at the end as well.
-  </p>
-  <p>
-  You will still be able to edit and refine your talk proposal after the
-  initial submission, so there's no need to hold off until the last minute to
-  get it perfect.
-  </p>
-  <p>
-   <b>Talks will be reviewed and slots allocated on a rolling basis, so make sure to submit your proposal sooner rather than later!</b>
-  </p>
-  <p><b>
-  The submission deadline for talk proposals is 05 October 2026, 23:50h!
-  </b></p>
-
-  <p>
-  Lightning talks can be submitted until the day of the conference.
-  </p>
--->
-<!--
-  <p>
-  Talks can be on almost anything multimedia related, ranging from talks about
-  applications to challenges in the lower levels in the stack or hardware.
-  </p>
-
-  <p>
-  You can request a slot for one of the following durations:
-
-    <li>5 minutes (Lightning Talks)</li>
-    <li>20 minutes</li>
-    <li>30 minutes</li>
-    <li>40 minutes</li>
-    <li>45 minutes</li>
-
-  including questions.
-  </p>
-
-  <p>
-  We want to hear from you, what you are working on, what you are using
-  GStreamer for, what difficulties you have encountered and how you solved them,
-  what your plans are, what you like, what you dislike, how to improve things!
-  </p>
-  <p>
-  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/11/abstracts/">GStreamer Conference 2026 Talk Submission Portal</a>.
-  </p>
-  <p>
-  You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system. If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
-  </p>
--->
-<!--
-  <p>
-  Anyone who has submitted a talk proposal should have received an e-mail
-  letting them know whether their proposal has been accepted already.
-  Thank you to everyone who submitted a proposal.
-  </p>
--->
-<!--
-  <p>
-  Lightning talks may still be proposed, see above for more details.
   </p>
 -->
 
