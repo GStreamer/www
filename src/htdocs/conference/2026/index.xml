@@ -641,13 +641,13 @@ h2 {
     <i>2026-September-10</i>: Ticket prices have been added, registration should hopefully also open in the near future.
   </p>
   <p>
-    <i>2026-September-08</i>: The GStreamer project is excited to see <b><a href="https://fluendo.com">Fluendo</a></b> sponsor at Gold level this year!
-  </p>
-  <p>
     <i>2026-September-02</i>: We're thrilled to welcome <b><a href="https://www.veo.co">Veo</a></b> as first-time sponsor this year, at Silver level!
   </p>
 -->
 
+  <p>
+    <i>2026-September-02</i>: The GStreamer project is excited to see <b><a href="https://fluendo.com">Fluendo</a></b> return as Gold level sponsor this year!
+  </p>
   <p>
     <i>2026-August-30</i>: Added a couple of hotels.
   </p>
@@ -733,11 +733,9 @@ h2 {
     <a href="https://www.collabora.com"><img src="sponsor_collabora_02_rgb_2024.png" alt="Collabora" width="85%"/></a>
   </p>
 
-<!--
   <p class="gstconf-sponsorlogo">
     <a href="https://fluendo.com"><img src="sponsor_fluendo_1060x200.png" alt="Fluendo" width="100%" /></a>
   </p>
--->
 
 <!--
   <p class="gstconf-sponsorlogo">

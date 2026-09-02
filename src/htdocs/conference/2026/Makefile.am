@@ -9,9 +9,9 @@ images = banner-prague.jpg \
   sponsor_igalia_2015_2019x720.png \
   sponsor_ubicast_1059x292.png \
   sponsor_collabora_02_rgb_2024.png \
+  sponsor_fluendo_1060x200.png \
   $(NULL)
 
-#  sponsor_fluendo_1060x200.png \
 #  sponsor_veo.png \
 #  sponsor_genius_sports.png
 
