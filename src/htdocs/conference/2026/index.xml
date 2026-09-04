@@ -137,17 +137,11 @@ h2 {
 
   <h2>Registration</h2>
 
-  <p>
-    Registration is not open yet, but is in the process of being set up.
-  </p>
-
-<!--
   <p><b>Registration is now open!</b></p>
 
   <p>
-    <b><a href="https://somewhere.abc"> Sign up for the GStreamer Conference 2026 here</a></b>
+    <b><a href="https://goout.net/en/tickets/gstreamer-conference-2026/whjnb/">Sign up for the GStreamer Conference 2026 here!</a></b> (please see notes below)
   </p>
--->
 
   <p>
   There will be separate registration options for professionals, speakers and for students and hobbyists:
@@ -189,17 +183,13 @@ h2 {
     complain if you decide to buy a ticket of course.
   </p>
 
-<!--
   <p>
-    <b><a href="https://ti.to/gstreamer/gstreamer-conference-2026">Sign up for the GStreamer Conference 2026 here</a></b>
+    <b>Note:</b> The registration system only allows to collect details for one attendee per booking, so anyone wanting to register multiple tickets needs to do that in separate transactions. You can put 12345678 into the phone number field. We don't need the phone number, but it wasn't possible to remove the field from the form. Thanks!
   </p>
--->
 
-<!--
   <p>
-    <b>If you're attending the hackfest after the conference, please <a href="https://ti.to/gstreamer/gstreamer-conference-2026-hackfest-london">register</a> for that separately!</b>
+    <b><a href="https://goout.net/en/tickets/gstreamer-conference-2026/whjnb/"> Sign up for the GStreamer Conference 2026 here!</a></b>> (please see notes above)
   </p>
--->
 
   <a id="cfp"></a>
 
@@ -506,27 +496,11 @@ h2 {
   <h2>GStreamer hackfest</h2>
   <p>
     There will again be a hackfest after the conference, on Monday and Tuesday
-    <b>12-13 October 2026</b>, at the same venue (ImpactHub).
-  </p>
-
-<!--
-  <p>
-    <b>Important: Please register for the hackfest in advance!</b>
+    <b>12-13 October 2026</b>, at the same venue as the conference (ImpactHub).
   </p>
   <p>
-    <b><a href="https://ti.to/gstreamer/gstreamer-conference-2026-hackfest-london">Sign up now for the GStreamer hackfest!</a></b>
+    You do not need to register for the hackfest.
   </p>
-  <p>
-  The hackfest will take place at: <br/>
-  <b>Amazon LHR16</b><br/>
-  1 Principal Pl<br/>
-  London, EC2A 2FA<br/>
-  United Kingdom<br/>
-  </p>
-  <p>
-    <iframe allowfullscreen="" width="600" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.526504116444!2d-0.08181788836585473!3d51.521902309527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761deeef1c261f%3A0x2a90345bd1640882!2sAmazon%20Corporate%20Office%20LHR16!5e0!3m2!1sen!2suk!4v1760357078126!5m2!1sen!2suk" style="border: 1px solid black"></iframe>
-  </p>
--->
 
   <a id="coc"></a>
 
@@ -634,17 +608,11 @@ h2 {
   <p>
     <i>2026-September-21</i>: Added a note that an <a href="https://www.gov.uk/eta">Electronic Travel Authorisation (ETA)</a> is required for most international visitors traveling without a visa, including most EU, EEA, Swiss US, Canadian, Australian citizens.
   </p>
-  <p>
-    <i>2026-September-20</i>: Registration is now open! Sign up for the GStreamer Conference 2026 <a href="https://ti.to/gstreamer/gstreamer-conference-2026">here</a>. If you intend to submit a (non-lightning) talk, you may want to wait for the Call for Presentations to open, since speakers will receive free tickets.
-  </p>
-  <p>
-    <i>2026-September-10</i>: Ticket prices have been added, registration should hopefully also open in the near future.
-  </p>
-  <p>
-    <i>2026-September-02</i>: We're thrilled to welcome <b><a href="https://www.veo.co">Veo</a></b> as first-time sponsor this year, at Silver level!
-  </p>
 -->
 
+  <p>
+    <i>2026-September-04</i>: Registration is now open! Sign up for the GStreamer Conference 2026 <a href="#registration">here</a>. If you intend to submit a (non-lightning) talk, you may want to first submit your talk, as speakers will receive a discount code for free tickets.
+  </p>
   <p>
     <i>2026-September-02</i>: The GStreamer project is excited to see <b><a href="https://fluendo.com">Fluendo</a></b> return as Gold level sponsor this year!
   </p>
