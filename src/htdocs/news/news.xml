@@ -18996,4 +18996,56 @@ Direct tarball download: <a href="&site;/src/orc/orc-0.4.43.tar.xz">orc-0.4.43.t
     </content>
   </item>
 
+<!-- =========================== 1.28.7 ================================= -->
+
+  <item>
+      <date>2026-09-07 23:00</date>
+        <title>GStreamer 1.28.7 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.28 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bug fixes as well as a number of
+<a href="&site;/security/">security fixes</a>. It should be safe to update
+from 1.28.x, and we recommend you do so at your earliest convenience.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Various <a href="&site;/security/">security fixes</a> and playback fixes</li>
+    <li>appsrc EOS handling regression fix for applications pushing EOS into a blocked appsrc</li>
+    <li>glcolorconvert fixes for older OpenGL/GLSL versions</li>
+    <li>mxfdemux: Fix keyframe detection regression and possible artefacts after seeking</li>
+    <li>QML6 GL Overlay output texture lifetime handling fixes</li>
+    <li>opencv: Add support for building against OpenCV 5</li>
+    <li>hip: Add missing API version suffix in HIP support library filename and fix hipcc detection on Windows with HIP SDK 7.x</li>
+    <li>analytics: fix classes off-by-one in ssdtensordec leading to mislabelling of objects in the examples</li>
+    <li>isobmff: Fix min_display_mastering_luminance in mdcv box</li>
+    <li>rtpbin2: rtprecv: limit the number of remote sources being tracked</li>
+    <li>st2038anc: parity bit handling fixes for ST 291 ADF words</li>
+    <li>video converter and videoconvertscale fixes</li>
+    <li>mpegdemux: restore gap event sending in MPEG-PS demuxer</li>
+    <li>typefinding: fix typefinding regressions for ogg and text files</li>
+    <li>Fix x264enc high bit depth support in binary packages</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.28/#1.28.7">GStreamer 1.28.7 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/download/">Downloads page</a>.
+</p>
+        </content>
+  </item>
+
 </news>
