@@ -19048,4 +19048,34 @@ will be published on the <a href="&site;/download/">Downloads page</a>.
         </content>
   </item>
 
+<!-- =========================== Orc 0.4.44 ================================= -->
+
+  <item>
+      <date>2026-09-09 10:00</date>
+        <title>Orc 0.4.44 release</title>
+        <content>
+        <p>
+The GStreamer team is pleased to announce another release of liborc,
+the Optimized Inner Loop Runtime Compiler, which is used for SIMD acceleration
+in GStreamer plugins such as audioconvert, audiomixer, compositor, videoscale,
+and videoconvert, to name just a few.
+        </p>
+        <p>
+This release mostly contains bug fixes for some i386-related regressions.
+        </p>
+        <p>
+          <b>Highlights:</b>
+          <ul>
+            <li>Fix various i386-related regressions</li>
+            <li>avx512: Disable target on x86</li>
+            <li>avx512: Implement the missing memoff-reg moves</li>
+            <li>Fix Debian gcc miscompiling the backup float conversion functions</li>
+          </ul>
+        </p>
+        <p>
+Direct tarball download: <a href="&site;/src/orc/orc-0.4.44.tar.xz">orc-0.4.44.tar.xz</a>.
+        </p>
+        </content>
+  </item>
+
 </news>
