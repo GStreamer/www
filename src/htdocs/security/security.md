@@ -18,7 +18,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 | **GStreamer-SA-2026-0082**<br/>CVE-2026-85150 | NULL pointer dereference when parsing RTSP Authorization header | 2026-09-07 | [Details](sa-2026-0082.html) |
 | **GStreamer-SA-2026-0081** | Out-of-bounds read and write in FFmpeg audio encoder and decoder with excessive channel counts | 2026-09-07 | [Details](sa-2026-0081.html) |
 | **GStreamer-SA-2026-0080** | Credential leakage on cross-origin redirects in souphttpsrc HTTP source | 2026-09-07 | [Details](sa-2026-0080.html) |
-| **GStreamer-SA-2026-0079** | Integer overflow and out-of-bounds read in MOV/MP4 demuxer closed caption parser | 2026-09-07 | [Details](sa-2026-0079.html) |
+| **GStreamer-SA-2026-0079**<br/>CVE-2026-88914 | Integer overflow and out-of-bounds read in MOV/MP4 demuxer closed caption parser | 2026-09-07 | [Details](sa-2026-0079.html) |
 | **GStreamer-SA-2026-0074** | Unbounded source table growth in RTP session management leading to resource exhaustion | 2026-09-07 | [Details](sa-2026-0074.html) |
 | **GStreamer-SA-2026-0078** | Reserved | tbd | tbd |
 | **GStreamer-SA-2026-0077**<br/>CVE-2026-19387 | Heap out-of-bounds write in IMA ADPCM audio decoder | 2026-08-05 | [Details](sa-2026-0077.html) |
