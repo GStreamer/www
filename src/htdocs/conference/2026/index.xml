@@ -129,7 +129,7 @@ h2 {
 
   <h2>Schedule</h2>
   <p>
-    <a href="https://indico.freedesktop.org/event/11/timetable/#20261023.detailed">Click here for the conference schedule</a>.
+    <a href="https://indico.freedesktop.org/event/14/timetable/#20261023.detailed">Click here for the conference schedule</a>.
   </p>
 -->
 
@@ -184,7 +184,7 @@ h2 {
   </p>
 
   <p>
-    <b>Note:</b> The registration system only allows to collect details for one attendee per booking, so anyone wanting to register multiple tickets needs to do that in separate transactions. You can put 12345678 into the phone number field. We don't need the phone number, but it wasn't possible to remove the field from the form. Thanks!
+    <b>Note:</b> The registration system only allows to collect details for one attendee per booking, so anyone wanting to register multiple tickets needs to do that in separate transactions. You can put 12345678 into the phone number field. We don't need the phone number, but it wasn't possible to remove the field from the form. When you select the ticket type in the pop-down box, a second pop-down box will appear. Please ignore that second pop-down box, it won't allow you to select additional tickets but apparently could not be hidden from the form. Thanks!
   </p>
 
   <p>
@@ -196,7 +196,7 @@ h2 {
   <h2>Call for Presentations</h2>
 
   <p><b>
-  The call for presentations is now <a href="https://indico.freedesktop.org/event/14/abstracts/">open</a> for talk proposals and lightning talks.
+  The call for presentations is still <a href="https://indico.freedesktop.org/event/14/abstracts/">open</a> for both talk proposals and lightning talks.
   </b></p>
   <p><b>
   Please submit your talk now!
@@ -217,7 +217,7 @@ h2 {
    <b>Talks will be reviewed and slots allocated on a rolling basis, so make sure to submit your proposal sooner rather than later!</b>
   </p>
   <p><b>
-  The submission deadline for talk proposals is 15 September 2026, 23:59h Prague time!
+  The extended submission deadline for talk proposals is Monday 21 September 2026, 23:59h Prague time!
   </b></p>
 
   <p>
@@ -271,18 +271,334 @@ h2 {
   <h2>Schedule and speakers list</h2>
 
   <p>
-  The full schedule will be published at a later date once the inital
-  Call for Presentations round has closed.
+    We have an exciting range of topics and speakers lined up for you again this year (and more to come):
+    <ul>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            GStreamer State of the Union
+            <!-- </a> -->
+            <br />
+            <small><i>Tim-Philipp Müller, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Fulfilling a Childhood Dream: Video Streaming for Remotely Controlling a Train
+            <!-- </a> -->
+            <br />
+            <small><i>Rainhard Driessler &amp; Simon Himmelbauer, A&amp;R Tech</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            A new MPEG-TS demuxer in Rust
+            <!-- </a> -->
+            <br />
+            <small><i>Edward Hervey, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            That F#$%ing AI Talk - Debugging GStreamer With AI Tools
+            <!-- </a> -->
+            <br />
+            <small><i>Ray Tiley, Tightrope Media Systems</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            GstVA and GstVulkan updates
+            <!-- </a> -->
+            <br />
+            <small><i>Victor Manuel Jáquez Leal, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Building a Ringbuffer - Going in circles with V4L2 and PipeWire
+            <!-- </a> -->
+            <br />
+            <small><i>Simon Himmelbauer, A&amp;R Tech</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            GStreamer 20 years of fun
+            <!-- </a> -->
+            <br />
+            <small><i>Stéphane Cerveau, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Permissions, Isolation and Streams: Redesigning WirePlumber's Core
+            <!-- </a> -->
+            <br />
+            <small><i>Julian Bouzas, Collabora</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            GStreamer highlights in Servo
+            <!-- </a> -->
+            <br />
+            <small><i>Xabier Rodríguez Calvar, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Write once, run anywhere inference with GStreamer
+            <!-- </a> -->
+            <br />
+            <small><i>Sebastian Dröge, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Every Camera Is a Snowflake: Building a VMS That Works With Thousands of Device Models
+            <!-- </a> -->
+            <br />
+            <small><i>James Nickerson, IP Configure</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            The Quest for Python Analytics
+            <!-- </a> -->
+            <br />
+            <small><i>Aaron Boxer, Collabora</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            WebRTC in the Wild: It Works on My Network
+            <!-- </a> -->
+            <br />
+            <small><i>Jake Foytik, IP Configure</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Rock, paper, scissors
+            <!-- </a> -->
+            <br />
+            <small><i>Xabier Rodríguez Calvar, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Exploring GStreamer as a media backend for game engines
+            <!-- </a> -->
+            <br />
+            <small><i>Dominique Leroux</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Embedded Reality: GStreamer Versioning strategy on SoC Products
+            <!-- </a> -->
+            <br />
+            <small><i>Kye Yeon Ko, LGE</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            WebRTC take 2, a decade later
+            <!-- </a> -->
+            <br />
+            <small><i>Matthew Waters, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Gst-Audit: A graphical way to instrument your pipeline
+            <!-- </a> -->
+            <br />
+            <small><i>Jorge Zapata, Fluendo</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            A GStreamer-Based Performance Evaluation Tool for End-to-End Visual AI Pipelines
+            <!-- </a> -->
+            <br />
+            <small><i>Jan Gorecki, Intel</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            A new Media Source Extensions implementation in GStreamer for cross-platform apps
+            <!-- </a> -->
+            <br />
+            <small><i>Sebastian Dröge, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            GStreamer as a Foundation for Vision AI Edge Solutions
+            <!-- </a> -->
+            <br />
+            <small><i>Tomasz Janczak, Intel</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Local transcription and translation with GStreamer: whisper.cpp + llama.cpp
+            <!-- </a> -->
+            <br />
+            <small><i>Sebastian Dröge, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            How GStreamer is used in WebKit
+            <!-- </a> -->
+            <br />
+            <small><i>Enrique Ocaña González, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            librice: challenges with sans-io
+            <!-- </a> -->
+            <br />
+            <small><i>Matthew Waters, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Ingesting thousands of streams over SRT on the same endpoint
+            <!-- </a> -->
+            <br />
+            <small><i>Jonas Danielsson, Spiideo</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Multithreading in GStreamer: how do flushes work
+            <!-- </a> -->
+            <br />
+            <small><i>Alicia Boya García, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            GStreamer 2.x without breaking API ?
+            <!-- </a> -->
+            <br />
+            <small><i>Edward Hervey, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Outsourcing the boring work: setting up LLM agents for fixing bugs in legacy software
+            <!-- </a> -->
+            <br />
+            <small><i>Kim Schmider, A&amp;R Tech</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Real-time offshore crane teleoperations powered by GStreamer
+            <!-- </a> -->
+            <br />
+            <small><i>Adam Blonsky, Palfinger</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Dolby/AC-4: The plan to support the Dolby ecosystem in GStreamer
+            <!-- </a> -->
+            <br />
+            <small><i>Pablo García &amp; Maciej Sabiniok, Fluendo</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Color, tracing and WebAssembly: a year of GStreamer for video editing
+            <!-- </a> -->
+            <br />
+            <small><i>Thibault Saunier, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Fluster over the course of 2026
+            <!-- </a> -->
+            <br />
+            <small><i>Rubén Gonzalez, Fluendo</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            SIL 2 Video Streaming - Functional Safety from Lens to Glass
+            <!-- </a> -->
+            <br />
+            <small><i>Rainhard Driessler, A&amp;R Tech</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Secure Video Path Done the Right Way
+            <!-- </a> -->
+            <br />
+            <small><i>Nicolas Dufresne, Collabora</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Making GStreamer Feel Native in Zig
+            <!-- </a> -->
+            <br />
+            <small><i>Per Andersen, TV2</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Restream and GStreamer, a success story.
+            <!-- </a> -->
+            <br />
+            <small><i>Loïc Le Page, Igalia</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            When the robots came for our parsers: GStreamer security in the age of LLMs
+            <!-- </a> -->
+            <br />
+            <small><i>Sebastian Dröge, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Digitally Signed Content &amp; C2PA
+            <!-- </a> -->
+            <br />
+            <small><i>Diego Nieto Munoz, Fluendo</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Unifying GstAnalytics Metadata: Achieving Cross-Vendor Interoperability in Video Analytics
+            <!-- </a> -->
+            <br />
+            <small><i>Oskar Fiedot, Intel; Pep Cots, Milestone Systems; Daniel Morin, Collabora</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Whither GStreamer 2.0 ? - Overview, Presentations and Panel Discussion
+            <!-- </a> -->
+            <br />
+            <small><i>Various speakers, tbd</i></small>
+            </li>
+
+            <li>...and more to come</li>
+             <li><i>Submit <u>your</u> talk or lightning talk <a href="https://indico.freedesktop.org/event/14/abstracts/">now</a>!</i></li>
+    </ul>
   </p>
 
-  <p>
-  However, we will be reviewing talk and lightning talk proposals on a
-  rolling basis and will add them here as we go, so watch this space!
-  </p>
-
-  <p>
-  Check out <a href="&site;/conference/2025/index.html#talks-and-speakers">last year's schedule</a> to get an idea about the kind of speakers and topics to expect.
-  </p>
 
   <p>
   Talks will be recorded and livestreamed again by <a href="https://www.ubicast.eu/">Ubicast</a> and will be made available for viewing after the conference.
@@ -585,7 +901,7 @@ h2 {
     <i>2026-October-17</i>: Wednesday evening social event details added (location: The Angel EC1, City Road)
   </p>
   <p>
-    <i>2026-October-13</i>: The <a href="https://indico.freedesktop.org/event/11/timetable/#20261023.detailed">conference schedule</a> has now been published.
+    <i>2026-October-13</i>: The <a href="https://indico.freedesktop.org/event/14/timetable/#20261023.detailed">conference schedule</a> has now been published.
   </p>
   <p>
     <i>2026-October-13</i>: Hackfest venue is Amazon LHR16 - Many thanks to Amazon for hosting us! People should <a href="https://ti.to/gstreamer/gstreamer-conference-2026-hackfest-london">register</a> for the hackfest by 21 October 2026 noon UK time!
@@ -603,13 +919,19 @@ h2 {
     <i>2026-October-01</i>: Call for Presentations submission deadline is 5 October 2026, 23:59h
   </p>
   <p>
-    <i>2026-September-23</i>: The Call for Presentations is now finally open, please <a href="https://indico.freedesktop.org/event/11/abstracts/">submit</a> your talk proposals and lightning talks now!
+    <i>2026-September-23</i>: The Call for Presentations is now finally open, please <a href="https://indico.freedesktop.org/event/14/abstracts/">submit</a> your talk proposals and lightning talks now!
   </p>
   <p>
     <i>2026-September-21</i>: Added a note that an <a href="https://www.gov.uk/eta">Electronic Travel Authorisation (ETA)</a> is required for most international visitors traveling without a visa, including most EU, EEA, Swiss US, Canadian, Australian citizens.
   </p>
 -->
 
+  <p>
+    <i>2026-September-17</i>: The Call for Presentations has been extended until Monday 21st September, 23.59h Prague time (subject to slots being available)!
+  </p>
+  <p>
+    <i>2026-September-17</i>: Added initial list of talks (with more to come).
+  </p>
   <p>
     <i>2026-September-04</i>: Registration is now open! Sign up for the GStreamer Conference 2026 <a href="#registration">here</a>. If you intend to submit a (non-lightning) talk, you may want to first submit your talk, as speakers will receive a discount code for free tickets.
   </p>
