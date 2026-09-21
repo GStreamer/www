@@ -642,6 +642,22 @@ h2 {
             <small><i>Jan Schmidt, Centricular</i></small>
             </li>
 
+            <li>
+            <a href="https://indico.freedesktop.org/event/14/contributions/625/">
+            Let's solve our long standing issues: time for GStreamer 2.0 ?
+            </a>
+            <br />
+            <small><i>Thibault Saunier, Igalia</i></small>
+            </li>
+
+            <li>
+            <a href="https://indico.freedesktop.org/event/14/contributions/621/">
+            Let's renegotiate!
+            </a>
+            <br />
+            <small><i>Mathieu Duponchelle, Centricular</i></small>
+            </li>
+
             <li>...and more to come</li>
              <li><i>Submit <u>your</u> talk or lightning talk <a href="https://indico.freedesktop.org/event/14/abstracts/">now</a>!</i></li>
     </ul>
@@ -974,6 +990,9 @@ h2 {
   </p>
 -->
 
+  <p>
+    <i>2026-September-21</i>: Talk abstracts and speaker biographies are now public and linked from the list
+  </p>
   <p>
     <i>2026-September-21</i>: More talks and speakers added (with more to come).
   </p>
