@@ -275,369 +275,369 @@ h2 {
     <ul>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/579/">
             GStreamer State of the Union
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Tim-Philipp Müller, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/610/">
             Fulfilling a Childhood Dream: Video Streaming for Remotely Controlling a Train
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Rainhard Driessler &amp; Simon Himmelbauer, A&amp;R Tech</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/615/">
             A new MPEG-TS demuxer in Rust
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Edward Hervey, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/592/">
             That F#$%ing AI Talk - Debugging GStreamer With AI Tools
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Ray Tiley, Tightrope Media Systems</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/584/">
             GstVA and GstVulkan updates
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Victor Manuel Jáquez Leal, Igalia</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/609/">
             Building a Ringbuffer - Going in circles with V4L2 and PipeWire
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Simon Himmelbauer, A&amp;R Tech</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/582/">
             GStreamer 20 years of fun
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Stéphane Cerveau, Igalia</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/586">
             Permissions, Isolation and Streams: Redesigning WirePlumber's Core
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Julian Bouzas, Collabora</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/590/">
             GStreamer highlights in Servo
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Xabier Rodríguez Calvar, Igalia</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/603/">
             Write once, run anywhere inference with GStreamer
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Sebastian Dröge, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/598/">
             Every Camera Is a Snowflake: Building a VMS That Works With Thousands of Device Models
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>James Nickerson, IP Configure</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/611/">
             The Quest for Python Analytics
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Aaron Boxer, Collabora</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/594/">
             WebRTC in the Wild: It Works on My Network
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Jake Foytik, IP Configure</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/605/">
             Rock, paper, scissors
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Xabier Rodríguez Calvar, Igalia</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/617/">
             Exploring GStreamer as a media backend for game engines
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Dominique Leroux</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/589/">
             Embedded Reality: GStreamer Versioning strategy on SoC Products
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Kye Yeon Ko, LGE</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/596/">
             WebRTC take 2, a decade later
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Matthew Waters, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/591/">
             Gst-Audit: A graphical way to instrument your pipeline
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Jorge Zapata, Fluendo</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/616/">
             A GStreamer-Based Performance Evaluation Tool for End-to-End Visual AI Pipelines
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Jan Gorecki, Intel</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/600/">
             A new Media Source Extensions implementation in GStreamer for cross-platform apps
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Sebastian Dröge, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/597/">
             GStreamer as a Foundation for Vision AI Edge Solutions
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Tomasz Janczak, Intel</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/601/">
             Local transcription and translation with GStreamer: whisper.cpp + llama.cpp
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Sebastian Dröge, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/583/">
             How GStreamer is used in WebKit
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Enrique Ocaña González, Igalia</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/595/">
             librice: challenges with sans-io
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Matthew Waters, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/580/">
             Ingesting thousands of streams over SRT on the same endpoint
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Jonas Danielsson, Spiideo</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/585/">
             Multithreading in GStreamer: how do flushes work
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Alicia Boya García, Igalia</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/602/">
             GStreamer 2.x without breaking API ?
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Edward Hervey, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/606/">
             Outsourcing the boring work: setting up LLM agents for fixing bugs in legacy software
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Kim Schmider, A&amp;R Tech</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/581/">
             Real-time offshore crane teleoperations powered by GStreamer
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Adam Blonsky, Palfinger</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/608/">
             Dolby/AC-4: The plan to support the Dolby ecosystem in GStreamer
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Pablo García &amp; Maciej Sabiniok, Fluendo</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/604/">
             Color, tracing and WebAssembly: a year of GStreamer for video editing
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Thibault Saunier, Igalia</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/612/">
             Fluster over the course of 2026
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Rubén Gonzalez, Fluendo</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/613/">
             SIL 2 Video Streaming - Functional Safety from Lens to Glass
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Rainhard Driessler, A&amp;R Tech</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/614/">
             Secure Video Path Done the Right Way
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Nicolas Dufresne, Collabora</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/593/">
             Making GStreamer Feel Native in Zig
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Per Andersen, TV2</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/588/">
             Restream and GStreamer, a success story.
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Loïc Le Page, Igalia</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/599/">
             When the robots came for our parsers: GStreamer security in the age of LLMs
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Sebastian Dröge, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/607/">
             Digitally Signed Content &amp; C2PA
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Diego Nieto Munoz, Fluendo</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/587/">
             Unifying GstAnalytics Metadata: Achieving Cross-Vendor Interoperability in Video Analytics
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Oskar Fiedot, Intel; Pep Cots, Milestone Systems; Daniel Morin, Collabora</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/626/">
             Whither GStreamer 2.0 ? - Overview, Presentations and Panel Discussion
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Various speakers, tbd</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/618/">
             Whisper transcriber
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Mathieu Duponchelle, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/620/">
             GstVulkan in Production: Lessons from the Real World
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Anders Hellerup Madsen, Veo Technologies</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/619/">
             Per pipeline logs tracer
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Mathieu Duponchelle, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/622/">
             Latency is bad, isn't it?
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Jan Schmidt, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/624/">
             Why is MPEG-TS so hard?
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Jan Schmidt, Centricular</i></small>
             </li>
 
             <li>
-            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            <a href="https://indico.freedesktop.org/event/14/contributions/623/">
             GStreamer in and out of the box
-            <!-- </a> -->
+            </a>
             <br />
             <small><i>Jan Schmidt, Centricular</i></small>
             </li>
