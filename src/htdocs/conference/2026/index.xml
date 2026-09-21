@@ -188,7 +188,7 @@ h2 {
   </p>
 
   <p>
-    <b><a href="https://goout.net/en/tickets/gstreamer-conference-2026/whjnb/"> Sign up for the GStreamer Conference 2026 here!</a></b>> (please see notes above)
+    <b><a href="https://goout.net/en/tickets/gstreamer-conference-2026/whjnb/"> Sign up for the GStreamer Conference 2026 here!</a></b> (please see notes above)
   </p>
 
   <a id="cfp"></a>
@@ -616,6 +616,30 @@ h2 {
             <!-- </a> -->
             <br />
             <small><i>Mathieu Duponchelle, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Latency is bad, isn't it?
+            <!-- </a> -->
+            <br />
+            <small><i>Jan Schmidt, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            Why is MPEG-TS so hard?
+            <!-- </a> -->
+            <br />
+            <small><i>Jan Schmidt, Centricular</i></small>
+            </li>
+
+            <li>
+            <!-- <a href="https://indico.freedesktop.org/event/14/contributions/fixme/"> -->
+            GStreamer in and out of the box
+            <!-- </a> -->
+            <br />
+            <small><i>Jan Schmidt, Centricular</i></small>
             </li>
 
             <li>...and more to come</li>
