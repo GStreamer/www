@@ -658,6 +658,14 @@ h2 {
             <small><i>Mathieu Duponchelle, Centricular</i></small>
             </li>
 
+            <li>
+            <a href="https://indico.freedesktop.org/event/14/contributions/629/">
+            End-to-end video quality measurement on a lossy WebRTC/RTP path
+            </a>
+            <br />
+            <small><i>Anna Kim &amp; Misha Baranov, Pexip</i></small>
+            </li>
+
             <li>...and more to come</li>
              <li><i>Submit <u>your</u> talk or lightning talk <a href="https://indico.freedesktop.org/event/14/abstracts/">now</a>!</i></li>
     </ul>
@@ -968,28 +976,16 @@ h2 {
     <i>2026-October-13</i>: The <a href="https://indico.freedesktop.org/event/14/timetable/#20261023.detailed">conference schedule</a> has now been published.
   </p>
   <p>
-    <i>2026-October-13</i>: Hackfest venue is Amazon LHR16 - Many thanks to Amazon for hosting us! People should <a href="https://ti.to/gstreamer/gstreamer-conference-2026-hackfest-london">register</a> for the hackfest by 21 October 2026 noon UK time!
-  </p>
-  <p>
     <i>2026-October-11</i>: Thursday evening social event details added (location: BrewDog Chancery Lane)
-  </p>
-  <p>
-    <i>2026-October-07</i>: The full list of talks and speakers has been published. If anything looks off or needs changing, please send us an e-mail or ping us on Matrix, thanks!
   </p>
   <p>
     <i>2026-October-06</i>: The Call for Presentations is now closed, but lightning talks may still be submitted. All speakers should have received their acceptance e-mails by now. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics again this year.
   </p>
-  <p>
-    <i>2026-October-01</i>: Call for Presentations submission deadline is 5 October 2026, 23:59h
-  </p>
-  <p>
-    <i>2026-September-23</i>: The Call for Presentations is now finally open, please <a href="https://indico.freedesktop.org/event/14/abstracts/">submit</a> your talk proposals and lightning talks now!
-  </p>
-  <p>
-    <i>2026-September-21</i>: Added a note that an <a href="https://www.gov.uk/eta">Electronic Travel Authorisation (ETA)</a> is required for most international visitors traveling without a visa, including most EU, EEA, Swiss US, Canadian, Australian citizens.
-  </p>
 -->
 
+  <p>
+    <i>2026-September-23</i>: Another talk and speakers added (with more to come).
+  </p>
   <p>
     <i>2026-September-21</i>: Talk abstracts and speaker biographies are now public and linked from the list
   </p>
