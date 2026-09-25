@@ -191,87 +191,6 @@ h2 {
     <b><a href="https://goout.net/en/tickets/gstreamer-conference-2026/whjnb/"> Sign up for the GStreamer Conference 2026 here!</a></b> (please see notes above)
   </p>
 
-  <a id="cfp"></a>
-
-  <h2>Call for Presentations</h2>
-<!--
-  <p><b>
-  The call for presentations is still <a href="https://indico.freedesktop.org/event/14/abstracts/">open</a> for both talk proposals and lightning talks.
-  </b></p>
-  <p><b>
-  Please submit your talk now!
-  </b></p>
-  <p>
-  The initial submission needs to be only a couple of sentences or paragraphs
-  describing the talk you want to give and the desired length of your talk.
-  </p>
-  <p>
-  Please allow at least 5 minutes for questions at the end as well.
-  </p>
-  <p>
-  You will still be able to edit and refine your talk proposal after the
-  initial submission, so there's no need to hold off until the last minute to
-  get it perfect.
-  </p>
-  <p>
-   <b>Talks will be reviewed and slots allocated on a rolling basis, so make sure to submit your proposal sooner rather than later!</b>
-  </p>
-  <p><b>
-  The extended submission deadline for talk proposals is Monday 21 September 2026, 23:59h Prague time!
-  </b></p>
--->
-
-  <p><b>
-  The call for presentations is now closed, but you can still submit lightning talks.
-  </b></p>
-
-  <p>
-  Lightning talks are 5 minutes long, with no questions, and can be submitted until the day of the conference.
-  </p>
-
-  <p>
-  Talks can be on almost anything multimedia related, ranging from talks about
-  applications to challenges in the lower levels in the stack or hardware.
-  </p>
-<!--
-  <p>
-  You can request a slot for one of the following durations:
-
-    <li>5 minutes (Lightning Talks)</li>
-    <li>20 minutes</li>
-    <li>30 minutes</li>
-    <li>40 minutes</li>
-    <li>45 minutes</li>
-
-  including questions.
-  </p>
-
-  <p>
-  We want to hear from you, what you are working on, what you are using
-  GStreamer for, what difficulties you have encountered and how you solved them,
-  what your plans are, what you like, what you dislike, how to improve things!
-  </p>
--->
-  <p>
-  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/14/abstracts/">GStreamer Conference 2026 Talk Submission Portal</a>.
-  </p>
-  <p>
-  You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system. If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
-  </p>
-
-<!--
-  <p>
-  Anyone who has submitted a talk proposal should have received an e-mail
-  letting them know whether their proposal has been accepted already.
-  Thank you to everyone who submitted a proposal.
-  </p>
--->
-<!--
-  <p>
-  Lightning talks may still be proposed, see above for more details.
-  </p>
--->
-
   <a id="talks-and-speakers"></a>
 
   <h2>Schedule and speakers list</h2>
@@ -703,6 +622,7 @@ h2 {
   <p>
     Want to submit a ca. 5-minute mini-talk for our <i>lightning talk</i>/<i>showcase</i> event?
   </p>
+-->
   <p>
     <b>Please submit all lightning talks through the <a href="https://indico.freedesktop.org/event/14/abstracts/">GStreamer Conference 2026 Talk Submission Portal</a></b>.
   </p>
@@ -714,7 +634,89 @@ h2 {
     There is no deadline for Lightning Talk submissions, slots will be
     allocated on a first-come first-serve basis.
   </p>
+
+
+  <a id="cfp"></a>
+
+  <h2>Call for Presentations</h2>
+<!--
+  <p><b>
+  The call for presentations is still <a href="https://indico.freedesktop.org/event/14/abstracts/">open</a> for both talk proposals and lightning talks.
+  </b></p>
+  <p><b>
+  Please submit your talk now!
+  </b></p>
+  <p>
+  The initial submission needs to be only a couple of sentences or paragraphs
+  describing the talk you want to give and the desired length of your talk.
+  </p>
+  <p>
+  Please allow at least 5 minutes for questions at the end as well.
+  </p>
+  <p>
+  You will still be able to edit and refine your talk proposal after the
+  initial submission, so there's no need to hold off until the last minute to
+  get it perfect.
+  </p>
+  <p>
+   <b>Talks will be reviewed and slots allocated on a rolling basis, so make sure to submit your proposal sooner rather than later!</b>
+  </p>
+  <p><b>
+  The extended submission deadline for talk proposals is Monday 21 September 2026, 23:59h Prague time!
+  </b></p>
 -->
+
+  <p><b>
+  The call for presentations is now closed, but you can still submit lightning talks.
+  </b></p>
+
+  <p>
+  Lightning talks are 5 minutes long, with no questions, and can be submitted until the day of the conference.
+  </p>
+
+  <p>
+  Talks can be on almost anything multimedia related, ranging from talks about
+  applications to challenges in the lower levels in the stack or hardware.
+  </p>
+<!--
+  <p>
+  You can request a slot for one of the following durations:
+
+    <li>5 minutes (Lightning Talks)</li>
+    <li>20 minutes</li>
+    <li>30 minutes</li>
+    <li>40 minutes</li>
+    <li>45 minutes</li>
+
+  including questions.
+  </p>
+
+  <p>
+  We want to hear from you, what you are working on, what you are using
+  GStreamer for, what difficulties you have encountered and how you solved them,
+  what your plans are, what you like, what you dislike, how to improve things!
+  </p>
+-->
+  <p>
+  Please submit all proposals through the <a href="https://indico.freedesktop.org/event/14/abstracts/">GStreamer Conference 2026 Talk Submission Portal</a>.
+  </p>
+  <p>
+  You can log in using your existing freedesktop.org GitLab account if you have one, or register a new account with the system. If you have problems receiving your verification e-mail try a non-gmail.com address. Logging in via gitlab might also require a few tries.
+  </p>
+
+<!--
+  <p>
+  Anyone who has submitted a talk proposal should have received an e-mail
+  letting them know whether their proposal has been accepted already.
+  Thank you to everyone who submitted a proposal.
+  </p>
+-->
+<!--
+  <p>
+  Lightning talks may still be proposed, see above for more details.
+  </p>
+-->
+
 
   <a id="sponsoring"></a>
 
