@@ -194,7 +194,7 @@ h2 {
   <a id="cfp"></a>
 
   <h2>Call for Presentations</h2>
-
+<!--
   <p><b>
   The call for presentations is still <a href="https://indico.freedesktop.org/event/14/abstracts/">open</a> for both talk proposals and lightning talks.
   </b></p>
@@ -219,16 +219,21 @@ h2 {
   <p><b>
   The extended submission deadline for talk proposals is Monday 21 September 2026, 23:59h Prague time!
   </b></p>
+-->
+
+  <p><b>
+  The call for presentations is now closed, but you can still submit lightning talks.
+  </b></p>
 
   <p>
-  Lightning talks can be submitted until the day of the conference.
+  Lightning talks are 5 minutes long, with no questions, and can be submitted until the day of the conference.
   </p>
 
   <p>
   Talks can be on almost anything multimedia related, ranging from talks about
   applications to challenges in the lower levels in the stack or hardware.
   </p>
-
+<!--
   <p>
   You can request a slot for one of the following durations:
 
@@ -246,6 +251,7 @@ h2 {
   GStreamer for, what difficulties you have encountered and how you solved them,
   what your plans are, what you like, what you dislike, how to improve things!
   </p>
+-->
   <p>
   Please submit all proposals through the <a href="https://indico.freedesktop.org/event/14/abstracts/">GStreamer Conference 2026 Talk Submission Portal</a>.
   </p>
@@ -666,11 +672,18 @@ h2 {
             <small><i>Anna Kim &amp; Misha Baranov, Pexip</i></small>
             </li>
 
+            <li>
+            <a href="https://indico.freedesktop.org/event/14/contributions/631/">
+            Always-On Tracing: Using GStreamer's Tracing API as a Production Profiler
+            </a>
+            <br />
+            <small><i>Sergei Kovalev, Pexip</i></small>
+            </li>
+
             <li>...and more to come</li>
-             <li><i>Submit <u>your</u> talk or lightning talk <a href="https://indico.freedesktop.org/event/14/abstracts/">now</a>!</i></li>
+             <li><i>Submit <u>your</u> <!--talk or --> lightning talk <a href="https://indico.freedesktop.org/event/14/abstracts/">now</a>!</i></li>
     </ul>
   </p>
-
 
   <p>
   Talks will be recorded and livestreamed again by <a href="https://www.ubicast.eu/">Ubicast</a> and will be made available for viewing after the conference.
@@ -978,11 +991,11 @@ h2 {
   <p>
     <i>2026-October-11</i>: Thursday evening social event details added (location: BrewDog Chancery Lane)
   </p>
-  <p>
-    <i>2026-October-06</i>: The Call for Presentations is now closed, but lightning talks may still be submitted. All speakers should have received their acceptance e-mails by now. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics again this year.
-  </p>
 -->
 
+  <p>
+    <i>2026-September-26</i>: The Call for Presentations is now closed, but lightning talks may still be submitted. All speakers should have received their acceptance e-mails by now. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics again this year!
+  </p>
   <p>
     <i>2026-September-23</i>: Another talk and speakers added (with more to come).
   </p>
