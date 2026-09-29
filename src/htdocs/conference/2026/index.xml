@@ -124,14 +124,12 @@ h2 {
   </p>
 -->
 
-<!--
   <a id="schedule"></a>
 
   <h2>Schedule</h2>
   <p>
-    <a href="https://indico.freedesktop.org/event/14/timetable/#20261023.detailed">Click here for the conference schedule</a>.
+    <a href="https://indico.freedesktop.org/event/14/timetable/#20261010.detailed">Click here for the conference schedule</a>.
   </p>
--->
 
   <a id="registration"></a>
 
@@ -995,6 +993,9 @@ h2 {
   </p>
 -->
 
+  <p>
+    <i>2026-September-28</i>: The <a href="#schedule">schedule</a> has been published.
+  </p>
   <p>
     <i>2026-September-26</i>: The Call for Presentations is now closed, but lightning talks may still be submitted. All speakers should have received their acceptance e-mails by now. Thank you to everyone who has submitted a talk. We have a phenomenal range of topics again this year!
   </p>
