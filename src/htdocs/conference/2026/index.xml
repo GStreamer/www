@@ -1010,6 +1010,9 @@ h2 {
 -->
 
   <p>
+    <i>2026-October-02</i>: We're thrilled to welcome <b><a href="https://qualcomm.com">Qualcomm Incorporated</a></b> as first-time sponsor this year, at Gold level!
+  </p>
+  <p>
     <i>2026-October-01</i>: Added two more lightning talks.
   </p>
   <p>
@@ -1134,11 +1137,9 @@ h2 {
     <a href="https://fluendo.com"><img src="sponsor_fluendo_1060x200.png" alt="Fluendo" width="100%" /></a>
   </p>
 
-<!--
   <p class="gstconf-sponsorlogo">
-    <a href="https://www.geniussports.com/"><img src="sponsor_genius_sports.png" alt="Genius Sports" width="100%" /></a>
+    <a href="https://www.qualcomm.com/"><img src="sponsor_qualcomm.png" alt="Qualcomm" width="100%"/></a>
   </p>
--->
 
   <h2 style="padding:1em 0 0 0">Silver Sponsors</h2>
 
@@ -1182,6 +1183,10 @@ h2 {
 
 </tr>
 </table>
+
+<hr/>
+
+<p><small>Qualcomm is a trademark or registered trademark of Qualcomm Incorporated.</small></p>
 
 </body>
 </page>

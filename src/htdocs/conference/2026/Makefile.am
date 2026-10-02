@@ -10,6 +10,7 @@ images = banner-prague.jpg \
   sponsor_ubicast_1059x292.png \
   sponsor_collabora_02_rgb_2024.png \
   sponsor_fluendo_1060x200.png \
+  sponsor_qualcomm.png \
   $(NULL)
 
 #  sponsor_veo.png \
