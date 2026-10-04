@@ -880,22 +880,21 @@ h2 {
 
   <a id="saturday-social"></a>
 
-  <h3>Saturday: Social Event with Food and Drinks (planned)</h3>
+  <h3>Saturday: Social Event with Food and Drinks @ Lokalblok</h3>
 
    <p>
-     Our main social event will be on Saturday evening. Details to be confirmed.
+     Our main social event will be on Saturday at Lokalblok Smichov,
+     from 19.00 onwards until late (11pm).
    </p>
-
-<!--
    <p>
      Food and drinks will be provided (many thanks to our sponsors!),
      including vegetarian and vegan options.
    </p>
 
    <p>
-     Note that we have been allocated a section of the venue, but the other
-     parts of the venue will be open to the public and owing to the layout of
-     the place the bar will be shared.
+     Note that we have been allocated a section of the venue, but other
+     parts of the venue may be open to the public and owing to the layout of
+     the place the bar may be shared.
    </p>
 
    <p>
@@ -903,10 +902,9 @@ h2 {
      bring some ID with you to prove that you are at least 18 years old.
    </p>
 
-   <p>
-    If anyone is younger than 18 years, please <a href="mailto:conference-2026@gstreamer.org">get in touch</a>.
-   </p>
--->
+  <p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7075748845728!2d14.404975199999999!3d50.073037899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94f87b0eb009%3A0x78e6ce9d78d0015d!2sLOKAL%20BLOK!5e0!3m2!1sen!2suk!4v1791135962789!5m2!1sen!2suk" width="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </p>
 
   <a id="hackfest"></a>
 
@@ -1001,14 +999,11 @@ h2 {
   <p>
     <i>2026-October-17</i>: Wednesday evening social event details added (location: The Angel EC1, City Road)
   </p>
-  <p>
-    <i>2026-October-13</i>: The <a href="https://indico.freedesktop.org/event/14/timetable/#20261023.detailed">conference schedule</a> has now been published.
-  </p>
-  <p>
-    <i>2026-October-11</i>: Thursday evening social event details added (location: BrewDog Chancery Lane)
-  </p>
 -->
 
+  <p>
+    <i>2026-October-04</i>: Saturday evening social event details added (location: Lokalblok Smichov)
+  </p>
   <p>
     <i>2026-October-02</i>: We're thrilled to welcome <b><a href="https://qualcomm.com">Qualcomm Incorporated</a></b> as first-time sponsor this year, at Gold level!
   </p>
