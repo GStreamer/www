@@ -15,12 +15,23 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 
 | ID  | Summary | Date   |     |
 | --- | ------- | :----: | --- |
+| **GStreamer-SA-2026-0092** | Out-of-bounds read in SVG image decoder | 2026-10-08 | [Details](sa-2026-0092.html) |
+| **GStreamer-SA-2026-0091** | Out-of-bounds read in RTCP SDES privately defined entry handling | 2026-10-08 | [Details](sa-2026-0091.html) |
+| **GStreamer-SA-2026-0090** | Arbitrary element instantiation in GStreamer Editing Services project file loader | 2026-10-08 | [Details](sa-2026-0090.html) |
+| **GStreamer-SA-2026-0089** | Integer overflow and out-of-bounds read in Matroska demuxer Xiph codec data parser | 2026-10-08 | [Details](sa-2026-0089.html) |
+| **GStreamer-SA-2026-0088**<br/>ZDI-CAN-31143 | Heap out-of-bounds write in RTP L8/L16/L24 audio depayloaders | 2026-10-08 | [Details](sa-2026-0088.html) |
+| **GStreamer-SA-2026-0087** | Excessive memory allocation in the ASF demuxer | 2026-10-08 | [Details](sa-2026-0087.html) |
+| **GStreamer-SA-2026-0086** | Out-of-bounds read in H.265 RTP depayloader when processing short packets | 2026-10-08 | [Details](sa-2026-0086.html) |
+| **GStreamer-SA-2026-0085** | Stack-based out-of-bounds write in closed caption converter and combiner | 2026-10-08 | [Details](sa-2026-0085.html) |
+| **GStreamer-SA-2026-0084** | Out-of-bounds read in the RTSP KeyMgmt header parser | 2026-10-08 | [Details](sa-2026-0084.html) |
+| **GStreamer-SA-2026-0083**<br/>CVE-2026-86476 | Out-of-bounds read and write in GStreamer video meta deserialization | 2026-10-08 | [Details](sa-2026-0083.html) |
+| **GStreamer-SA-2026-0078** | Type confusion crash in GValue list comparison when parsing caps | 2026-10-08 | [Details](sa-2026-0078.html) |
 | **GStreamer-SA-2026-0082**<br/>CVE-2026-85150 | NULL pointer dereference when parsing RTSP Authorization header | 2026-09-07 | [Details](sa-2026-0082.html) |
 | **GStreamer-SA-2026-0081** | Out-of-bounds read and write in FFmpeg audio encoder and decoder with excessive channel counts | 2026-09-07 | [Details](sa-2026-0081.html) |
 | **GStreamer-SA-2026-0080** | Credential leakage on cross-origin redirects in souphttpsrc HTTP source | 2026-09-07 | [Details](sa-2026-0080.html) |
 | **GStreamer-SA-2026-0079**<br/>CVE-2026-88914 | Integer overflow and out-of-bounds read in MOV/MP4 demuxer closed caption parser | 2026-09-07 | [Details](sa-2026-0079.html) |
 | **GStreamer-SA-2026-0074** | Unbounded source table growth in RTP session management leading to resource exhaustion | 2026-09-07 | [Details](sa-2026-0074.html) |
-| **GStreamer-SA-2026-0078** | Reserved | tbd | tbd |
+| **GStreamer-SA-2026-0078** | Type confusion crash in GValue list comparison when parsing caps | 2026-10-08 | [Details](sa-2026-0078.html) |
 | **GStreamer-SA-2026-0077**<br/>CVE-2026-19387 | Heap out-of-bounds write in IMA ADPCM audio decoder | 2026-08-05 | [Details](sa-2026-0077.html) |
 | **GStreamer-SA-2026-0076**<br/>CVE-2026-18649 | Unbounded memory growth in H.264/H.265 RTP depayloaders during fragmented NAL unit reassembly | 2026-08-05 | [Details](sa-2026-0076.html) |
 | **GStreamer-SA-2026-0075**<br/>CVE-2026-19389 | Integer overflow and underflow in ASF demuxer bounds checks | 2026-08-05 | [Details](sa-2026-0075.html) |
