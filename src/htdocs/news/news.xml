@@ -19519,4 +19519,53 @@ There's also a <a href="https://gstreamer.freedesktop.org/conference/2026/#hackf
   </content>
  </item>
 
+<!-- =========================== 1.28.8 ================================= -->
+
+  <item>
+      <date>2026-10-08 18:00</date>
+        <title>GStreamer 1.28.8 stable bug fix release</title>
+        <content>
+<p>
+The GStreamer team is pleased to announce another bug fix release
+in the new stable 1.28 release series of your favourite cross-platform
+multimedia framework!
+</p>
+
+<p>
+This release only contains bug fixes as well as a number of
+<a href="&site;/security/">security fixes</a>. It should be safe to update
+from 1.28.x, and we recommend you do so at your earliest convenience.
+</p>
+
+<p>
+  <b>Highlighted bugfixes:</b>
+  <ul>
+    <li>Various <a href="&site;/security/">security fixes</a> and playback fixes</li>
+    <li>Fix adaptivedemux2 HLS and DASH playback regression</li>
+    <li>Fix FLAC audio seeking regression</li>
+    <li>Various RTP depayloader and RTSP client SDP handling fixes</li>
+    <li>MXF demuxer: Added support for reading AAF AIFF-AIFC audio</li>
+    <li>VA-API compositor: Fix alpha blending with Intel driver</li>
+    <li>Windows media audio/video seeking improvements</li>
+    <li>AMD AMF AV1 video encoder force-keyframe fixes</li>
+    <li>Fix endless drain in some FFmpeg wrapper audio encoders and support dual mono</li>
+    <li>hlssink3 improvements</li>
+    <li>ISOBMFF dash/iso/fmp4 muxer fixes for timestamp rollover in 2036</li>
+    <li>cerbero: Rework checksum verification to allow mirror retries</li>
+    <li>Various bug fixes, build fixes, memory leak fixes, and other stability and reliability improvements</li>
+  </ul>
+</p>
+
+<p>
+See the <a href="&site;/releases/1.28/#1.28.8">GStreamer 1.28.8 release notes</a>
+for more details.
+</p>
+
+<p>
+Binaries for Android, iOS, Mac OS X and Windows will be available shortly and
+will be published on the <a href="&site;/download/">Downloads page</a>.
+</p>
+        </content>
+  </item>
+
 </news>
