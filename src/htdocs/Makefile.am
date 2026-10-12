@@ -1,4 +1,4 @@
-SUBDIRS = apps bindings dev download images \
+SUBDIRS = bindings dev download images \
 	lists modules news releases conference \
 	features \
 	artwork security

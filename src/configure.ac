@@ -11,7 +11,6 @@ AC_CONFIG_FILES([
 Makefile
 htdocs/Makefile
 htdocs/artwork/Makefile
-htdocs/apps/Makefile
 htdocs/bindings/Makefile
 htdocs/conference/Makefile
 htdocs/conference/2010/Makefile
