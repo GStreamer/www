@@ -94,3 +94,28 @@ build website:
   stage: 'build'
   needs:
     - "www amd64 docker"
+
+# REMOVEME: preview of the new site on GitLab Pages, only in forks (never in
+# gstreamer/www).  Pages only publishes from the default branch.  The site is
+# built with relative links so it works under the Pages sub path, links to what
+# is not in the repository (tarballs, docs, ...) point to the live site, and
+# robots.txt asks search engines to stay away.
+pages:
+  extends:
+    - '.www image'
+    - '.fdo.suffixed-image@debian'
+  stage: 'build'
+  needs:
+    - job: 'www amd64 docker'
+      artifacts: false
+  script:
+    - python3 tools/fetch-activity.py
+    - HUGO_RELATIVEURLS=true hugo --destination public --baseURL "/" --gc
+    - sh tools/post-build.sh public
+    - python3 tools/pages-fix-links.py public https://gstreamer.freedesktop.org
+    - 'printf "User-agent: *\nDisallow: /\n" > public/robots.txt'
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_PROJECT_NAMESPACE != "gstreamer" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
