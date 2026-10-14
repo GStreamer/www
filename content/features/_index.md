@@ -3,59 +3,63 @@ title: "Features"
 ---
 ## Multiplatform
 
-GStreamer works on all major operating systems such as Linux, Android,
-Windows, Max OS X, iOS, as well as most BSDs, commercial Unixes, Solaris,
-and Symbian. It has been ported to a wide range of operating systems,
-processors and compilers. It runs on all major hardware architectures
-including x86, ARM, MIPS, SPARC and PowerPC, on 32-bit as well as 64-bit,
-and little endian or big endian.
+GStreamer runs on all major operating systems, including Linux, Android,
+Windows, macOS and iOS, as well as the BSDs. It supports all major hardware
+architectures, such as x86, ARM and RISC-V, on 32-bit as well as 64-bit
+systems. Binary installers are available for Android, iOS, macOS and Windows
+on the [download page](/download/).
 
-GStreamer can bridge to other multimedia frameworks in order to reuse existing
-components (e.g. codecs) and use platform input/output mechanisms:
+GStreamer makes use of the hardware acceleration and the native media APIs of
+each platform:
 
-* Linux/Unix: OpenMAX-IL (via gst-omx)
-* Windows: DirectShow
-* Mac OS X: QuickTime
+* Linux: VA-API, V4L2 (including stateless codecs), NVIDIA NVCODEC, Intel QSV, Vulkan, DMA-BUF, KMS/DRM and Wayland
+* Windows: Direct3D 11 and 12, Media Foundation, WASAPI, AMD AMF and NVIDIA NVCODEC
+* macOS and iOS: VideoToolbox, AVFoundation and Core Audio
+* Android: MediaCodec
 
 ## Comprehensive Core Library
 
 * Graph-based structure allows arbitrary pipeline construction
-* Based on [GLib 2.0 object model](http://developer.gnome.org/gobject/stable/) for object-oriented design and inheritance
-* Compact core library of less than 500KB, about 65 K lines of code
+* Based on the [GObject](https://docs.gtk.org/gobject/) object model for object-oriented design and inheritance
 * Multi-threaded pipelines are trivial and transparent to construct
-* Clean, simple and stable [API](/data/doc/gstreamer/head/gstreamer/html/) for both plugin and application developers
-* Extremely lightweight data passing means very high performance/low latency
-* Complete [debugging system](/data/doc/gstreamer/head/gstreamer/html/gstreamer-GstInfo.html) for both core and plugin/app developers
-* Clocking to ensure global inter-stream synchronization (a/v sync)
-* Quality of service (qos) to ensure best possible quality under high CPU load
+* Clean, simple and stable [API](/documentation/gstreamer/) for both plugin and application developers
+* Extremely lightweight data passing means very high performance and low latency
+* Buffers can wrap DMA-BUF and GPU memory, so video frames can stay on the hardware between elements
+* Complete [debugging system](/documentation/gstreamer/gstinfo.html) for both core and plugin/app developers, with tracers for latency, statistics and leaks
+* Clocking to ensure global inter-stream synchronization (a/v sync) and support for live pipelines with latency management
+* Quality of service (QoS) to ensure the best possible quality under high CPU load
 
 ## Intelligent Plugin Architecture
 
-* [Dynamically loaded](/data/doc/gstreamer/head/gstreamer/html/GstPlugin.html) plugins provide elements and media types, demand-loaded via a registry cache, similar to ld.so.cache
-* [Element interface](/data/doc/gstreamer/head/manual/html/chapter-elements.html) handles all known types of sources, filters and sinks
-* [Capabilities system](/data/doc/gstreamer/head/manual/html/section-caps.html) allows verification of element compatibility using MIME types and media-specific properties
-* Autoplugging uses capabilities system to complete complex paths automatically
-* Pipelines can be visualised by dumping them to a .dot file and creating a PNG image from that
+* [Dynamically loaded](/documentation/gstreamer/gstplugin.html) plugins provide elements and media types, demand-loaded via a registry cache
+* [Elements](/documentation/application-development/index.html) handle all known types of sources, filters and sinks
+* The [capabilities system](/documentation/gstreamer/gstcaps.html) allows verification of element compatibility using media types and media-specific properties
+* Autoplugging uses the capabilities system to complete complex paths automatically: playbin3 and decodebin3 build complete playback pipelines from a URI
+* Pipelines can be visualised by dumping them to a .dot file and creating an image from that
 * Resource friendly plugins don't waste memory
+* Plugins can be written in C, in Rust ([gst-plugins-rs](/modules/)) and in Python
 
 ## Broad Coverage of Multimedia Technologies
 
-GStreamers capabilities can be extended through new plugins. The features
-listed below are just a rough overview what is available using the
-GStreamers own plugins, not counting any 3rd party offerings.
+GStreamer's capabilities can be extended through new plugins. The features
+listed below are just a rough overview of what is available using the
+GStreamer project's own plugins, not counting any third-party offerings.
 
-* container formats: asf, avi, 3gp/mp4/mov, flv, mpeg-ps/ts, mkv/webm, mxf, ogg
-* streaming: http, mms, rtsp
-* codecs: FFmpeg, various codec libraries, 3rd party codec packs
+* container formats: MP4/MOV (including fragmented MP4), Matroska/WebM, MPEG-PS/TS, MXF and Ogg
+* streaming and real-time communication: WebRTC (including WHIP and WHEP), RTP, RTSP, HLS, DASH, SRT, RIST, RTMP and HTTP
+* codecs: H.264, H.265, H.266, VP8, VP9, AV1, JPEG XS, Opus, AAC, FLAC and many more, through hardware accelerated decoders and encoders, dedicated codec libraries and FFmpeg
 * metadata: native container formats with a common mapping between them
-* video: various colorspaces, support for progressive and interlaced video
+* video: various colorspaces, progressive and interlaced video, HDR, and OpenGL, Vulkan and Direct3D rendering
 * audio: integer and float audio in various bit depths and multichannel configurations
+* machine learning and video analytics: ONNX Runtime, TensorFlow Lite and OpenCV integration, with analytics metadata and tensor decoders for detection, classification and tracking
 
 ## Extensive Development Tools
 
-* gst-launch command-line tool for quick prototyping and testing, similar to ecasound
-* A lot of [documentation](/documentation/), including partially completed [manual](/data/doc/gstreamer/head/manual/html/index.html) and [plugin writer's guide](/data/doc/gstreamer/head/pwg/html/index.html)
+* gst-launch-1.0 command-line tool for quick prototyping and testing, gst-inspect-1.0 to explore the available elements, and gst-play-1.0 for playback
+* Tools to find and inspect devices, media files and pipelines: gst-device-monitor-1.0, gst-discoverer-1.0 and gst-stats-1.0
+* GstValidate and its launcher for testing pipelines and applications, and viewers for debug logs and pipeline graphs
+* A lot of [documentation](/documentation/), including [tutorials](/documentation/tutorials/index.html), the [application development manual](/documentation/application-development/index.html) and the [plugin writer's guide](/documentation/plugin-development/index.html)
 * Large selection of test programs and example code in each module
-* Access to GStreamer API with [various programming languages](/bindings/)
+* Access to GStreamer API with [various programming languages](/bindings/), such as Python, Rust, C++, C#, Java and Go
 
-GStreamer 1.x is our latest API series and has been stable since 2012.
+GStreamer 1.x has been API and ABI stable since 2012.
