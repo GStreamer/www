@@ -132,3 +132,25 @@ ul.plain li:last-child { border-bottom: 0; }
 
 .intro { max-width: 52rem; }
 .intro h2 { margin-top: 0; }
+
+/* Showcase page */
+.showcase-page .lead { font-size: 1.1rem; color: var(--muted); max-width: 46rem; margin-bottom: 2rem; }
+.showcase-page .lead p { margin: 0; }
+.showcase { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 1.25rem; }
+.product { display: flex; flex-direction: column; min-width: 0; background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; transition: border-color .15s, box-shadow .15s; }
+.product:hover { border-color: var(--muted); box-shadow: var(--shadow); }
+.product-logo { display: flex; align-items: center; justify-content: center; height: 104px; padding: 1rem 1.5rem; background: #f8f9fb; border-bottom: 1px solid var(--border); }
+.product-logo a { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: inherit; }
+.product-logo a:hover { text-decoration: none; color: inherit; }
+.product-logo a:focus-visible { outline: 2px solid var(--link); outline-offset: -4px; }
+.product-logo img { max-height: 44px; max-width: 72%; width: auto; height: auto; }
+.product-logo.wordmark { color: #1c1e22; font-size: 1.5rem; font-weight: 700; letter-spacing: -.01em; }
+.product-body { display: flex; flex-direction: column; gap: .5rem; flex: 1; padding: 1.1rem 1.25rem 1.25rem; }
+.product-body .eyebrow { font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.product-body h2 { margin: 0; padding: 0; border: 0; font-size: 1.15rem; }
+.product-body h2 a { color: var(--fg); }
+.product-body h2 a:hover { color: var(--link-hover); }
+.product-body p { margin: 0; }
+.product-body .product-links { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: auto; padding-top: .6rem; }
+.product-links a { font-size: .85rem; padding: .2rem .65rem; border: 1px solid var(--border); border-radius: 999px; color: var(--link); }
+.product-links a:hover { border-color: var(--link); text-decoration: none; }

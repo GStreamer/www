@@ -4,6 +4,7 @@
 primary:
   - {title: Home, url: /}
   - {title: Features, url: /features/}
+  - {title: Showcase, url: /showcase/}
   - {title: News, url: /news/}
   - {title: Annual Conference, url: /conference/, sub: conference}
   - {title: Planet (Blogs), url: /planet/}

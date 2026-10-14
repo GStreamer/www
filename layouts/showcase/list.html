@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="showcase-page">
+<h1>{{ .Title }}</h1>
+<div class="lead">{{ .Content }}</div>
+<ul class="showcase">
+{{ $mid := where (where .Pages "Params.last" "!=" true) "Params.first" "!=" true }}
+{{ $pages := (where .Pages "Params.first" true) | append $mid.ByTitle | append (where .Pages "Params.last" true) }}
+{{ range $pages }}{{ $p := . }}
+  <li class="product"{{ if .Params.first }} data-pin="first"{{ else if .Params.last }} data-pin="last"{{ end }}>
+    {{ $logo := cond (isset .Params "logo") (printf "<img src=\"%s\" alt=\"%s\" loading=\"lazy\">" .Params.logo $p.Title | safeHTML) ($p.Title | safeHTML) }}
+    <div class="product-logo{{ if not .Params.logo }} wordmark{{ end }}">{{ with .Params.site }}<a href="{{ . }}" aria-label="{{ $p.Title }} website">{{ $logo }}</a>{{ else }}{{ $logo }}{{ end }}</div>
+    <div class="product-body">
+      {{ with .Params.category }}<p class="eyebrow">{{ . }}</p>{{ end }}
+      <h2>{{ with .Params.site }}<a href="{{ . }}">{{ $p.Title }}</a>{{ else }}{{ $p.Title }}{{ end }}</h2>
+      {{ .Content }}
+      {{ with .Params.links }}<p class="product-links">{{ range . }}<a href="{{ .url }}">{{ .title }}</a>{{ end }}</p>{{ end }}
+    </div>
+  </li>
+{{ end }}
+</ul>
+{{ $js := resources.Get "js/showcase.js" | resources.Minify }}<script>{{ $js.Content | safeJS }}</script>
+</article>
+{{ end }}
