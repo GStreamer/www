@@ -1,0 +1,38 @@
+---
+title: "GStreamer Core and Plugins 1.3.3 development release"
+date: 2014-06-22T20:00:00Z
+---
+
+The GStreamer team is pleased to announce the third release of the unstable
+1.3 release series. The 1.3 release series is adding new features on top of
+the 1.0 and 1.2 series and is part of the API and ABI-stable 1.x release
+series of the GStreamer multimedia framework. The unstable 1.3 release series
+will lead to the stable 1.4 release series in the next weeks, and newly added
+API can still change until that point.
+
+This is hopefully the last 1.3 development release and will be followed by
+the first 1.4.0 release candidate (1.3.90) in 1-2 weeks. Which then hopefully
+is followed by 1.4.0 soonish in early July.
+
+Binaries for Android, iOS, Mac OS X and Windows will be provided separately
+during the unstable 1.3 release series.
+
+Check out the release notes for
+[GStreamer core](/releases/gstreamer/1.3.3.html),
+[gst-plugins-base](/releases/gst-plugins-base/1.3.3.html),
+[gst-plugins-good](/releases/gst-plugins-good/1.3.3.html),
+[gst-plugins-ugly](/releases/gst-plugins-ugly/1.3.3.html),
+[gst-plugins-bad](/releases/gst-plugins-bad/1.3.3.html),
+[gst-libav](/releases/gst-libav/1.3.3.html), or
+[gst-rtsp-server](/releases/gst-rtsp-server/1.3.3.html),
+or download tarballs for
+[gstreamer](/src/gstreamer/gstreamer-1.3.3.tar.xz),
+[gst-plugins-base](/src/gst-plugins-base/gst-plugins-base-1.3.3.tar.xz),
+[gst-plugins-good](/src/gst-plugins-good/gst-plugins-good-1.3.3.tar.xz),
+[gst-plugins-ugly](/src/gst-plugins-ugly/gst-plugins-ugly-1.3.3.tar.xz),
+[gst-plugins-bad](/src/gst-plugins-bad/gst-plugins-bad-1.3.3.tar.xz),
+[gst-libav](/src/gst-libav/gst-libav-1.3.3.tar.xz), or
+[gst-rtsp-server](/src/gst-rtsp-server/gst-rtsp-server-1.3.3.tar.xz), or
+
+Check the [release announcement mail](http://lists.freedesktop.org/archives/gstreamer-devel/2014-June/048534.html) for details
+and the release notes above for a list of changes.
