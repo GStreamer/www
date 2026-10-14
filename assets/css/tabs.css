@@ -1,0 +1,17 @@
+/* Download page OS tabs. Uses the site theme tokens. */
+.dl-content { width: 100%; margin-top: 20px; }
+.dl-tablist { display: none; width: 100%; flex-wrap: wrap; align-items: flex-end; gap: .2rem; border-bottom: 1px solid var(--border); }
+.dl-content.js .dl-tablist { display: flex; }
+.dl-tab { position: relative; background: none; border: 0; border-bottom: 3px solid transparent; margin-bottom: -1px;
+  color: var(--muted); padding: .6rem .9rem; font: inherit; font-weight: 600; cursor: pointer; }
+.dl-tab:hover, .dl-tab:focus-visible { color: var(--fg); background: var(--bg-alt); }
+.dl-tab[aria-selected="true"] { color: var(--fg); }
+.dl-tab-r:hover, .dl-tab-r:focus-visible, .dl-tab-r[aria-selected="true"] { border-bottom-color: var(--red); }
+.dl-tab-g:hover, .dl-tab-g:focus-visible, .dl-tab-g[aria-selected="true"] { border-bottom-color: var(--green); }
+.dl-tab-b:hover, .dl-tab-b:focus-visible, .dl-tab-b[aria-selected="true"] { border-bottom-color: var(--blue); }
+.dl-panel { padding: .5rem 0 1rem; overflow-x: auto; }
+.dl-content.js .dl-panel { padding-top: 1rem; }
+.dl-content.js .dl-panel-title { display: none; }
+.dl-panel[hidden] { display: none; }
+.dl-panel img { vertical-align: middle; }
+body:has(.dl-panel) { overflow-y: scroll; }

@@ -1,0 +1,21 @@
+# Main navigation. Add an entry here to add a menu item.
+# "sub: <section>" lists the years of that section under the item while the
+# visitor is inside it (the section pages need a "year" front matter key).
+primary:
+  - {title: Home, url: /}
+  - {title: Features, url: /features/}
+  - {title: News, url: /news/}
+  - {title: Annual Conference, url: /conference/, sub: conference}
+  - {title: Planet (Blogs), url: /planet/}
+  - {title: Download, url: /download/}
+developers:
+  - {title: Security Center, url: /security/}
+  - {title: GitLab, url: "https://gitlab.freedesktop.org/gstreamer/"}
+  - {title: Developers, url: /dev/}
+  - {title: Documentation, url: /documentation/}
+  - {title: File a Bug, url: /documentation/contribute/index.html}
+community:
+  - {title: Discourse, url: "https://discourse.gstreamer.org"}
+  - {title: Bluesky, url: "https://bsky.app/profile/gstreamer.org"}
+  - {title: Mastodon, url: "https://floss.social/@GStreamer", rel: me}
+  - {title: Matrix, url: "https://matrix.to/#/#gstreamer:gstreamer.org"}

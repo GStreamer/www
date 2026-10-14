@@ -1,0 +1,23 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{/* One row per advisory, generated from frontmatter. Newest first, ties by id. */}}
+{{ $pages := sort (sort (where .Pages "Params.id" "ne" nil) "Params.id" "desc") "Date" "desc" }}
+<div class="table-wrap">
+<table class="advisories">
+<thead>
+<tr><th>ID</th><th>Summary</th><th>Date</th><th></th></tr>
+</thead>
+<tbody>
+{{ range $pages }}
+<tr>
+<td>{{ range $i, $x := .Params.ids }}{{ if $i }}<br/>{{ end }}{{ if not $i }}<strong>{{ $x }}</strong>{{ else }}{{ $x }}{{ end }}{{ end }}</td>
+<td>{{ (or .Params.list_summary .Params.summary) | $.RenderString }}</td>
+<td>{{ .Date.Format "2006-01-02" }}</td>
+<td><a href="{{ .RelPermalink }}">Details</a></td>
+</tr>
+{{ end }}
+</tbody>
+</table>
+</div>
+{{ end }}

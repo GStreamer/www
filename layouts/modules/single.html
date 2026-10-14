@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article>
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<table>
+<tr><td>Maintainer</td><td>{{ with .Params.maintainers }}{{ delimit . ", " }}{{ else }}N/A{{ end }}</td></tr>
+<tr><td>browse Git</td><td>{{ with .Params.repo_path }}{{ $u := printf "https://gitlab.freedesktop.org/gstreamer/%s" . }}<a href="{{ $u }}">{{ $u }}</a>{{ else }}N/A{{ end }}</td></tr>
+<tr><td>Source download</td><td>{{ $u := printf "/src/%s" .File.ContentBaseName }}<a href="{{ $u }}">{{ $u }}</a></td></tr>
+</table>
+<p><a href="/modules/">All modules</a></p>
+</article>
+{{ end }}

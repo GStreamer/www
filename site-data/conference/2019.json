@@ -1,0 +1,811 @@
+{
+ "tables": [
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Thursday 31 October 2019</span></p>",
+       "colspan": 4,
+       "bg": "#4682b4"
+      }
+     ],
+     "id": "thursday"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p></p>"
+      },
+      {
+       "html": "<p align=\"center\">Espace Red</p>"
+      },
+      {
+       "html": "<p align=\"center\">Espace Yellow</p>"
+      },
+      {
+       "html": "<p></p>"
+      }
+     ],
+     "bg": "#b0c4de"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>08.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Registration</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>08.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.20-<br />09.25</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i>Opening and welcome to the 2019 GStreamer Conference</i><br /></p>\n\t\t<p align=\"center\"><small>Espace Red</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.20-<br />09.25</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.30-<br />10.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><a href=\"/conference/2019/talks-and-speakers.html#state-of-the-union\">GStreamer State of the Union</a><br />Tim-Philipp Müller, Centricular</p>\n\t\t<p align=\"center\"><small>Espace Red</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.30-<br />10.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.00-<br />10.10</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>10.00-<br />10.10</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.10-<br />10.40</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#3d-cameras\">3D Cameras in GStreamer: RGB-D Camera Support and Depth Video Compression</a><br /><i>Raphael Dürscheid, Aivero</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#validate-flow\">Introduction to Validateflow</a><br /><i>Alicia Boya García, Igalia</i></p>"
+      },
+      {
+       "html": "<p>10.10-<br />10.40</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.40-<br />11.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>10.40-<br />11.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.00-<br />11.40</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#video-analytics\">GStreamer Video Analytics: Optimizing inference across HW targets</a><br /><i>Neelay Shah, Neena Maldikar, Mikhail Nikolsky &amp; Ilya Belyakov, Intel</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#hdr\">HDR: Seeing the World As It Is</a><br /><i>Edward Hervey, Centricular</i></p>"
+      },
+      {
+       "html": "<p>11.00-<br />11.40</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.40-<br />11.50</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>11.40-<br />11.50</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.50-<br />12.20</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#broadcast-compliant-mpegts\">TV Broadcast compliant MPEG-TS</a><br /><i>Jan Schmidt, Centricular</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#karapulse-karaoke\">Karapulse - Writing a Karaoke Application in Rust</a><br /><i>Guillaume Desmottes, Collabora</i></p>"
+      },
+      {
+       "html": "<p>11.50-<br />12.20</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.20-<br />13.20</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>12.20-<br />13.20</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.20-<br />13.50</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#rtp-jitterbuffer-timers\">Revisiting RTP Jitter Buffer Timers</a><br /><i>Nicolas Dufresne, Collabora</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#pulseaudio-compress-offload\">GStreamer, PulseAudio and Compress Offload</a><br /><i>Arun Raghavan, nilenso systems</i></p>"
+      },
+      {
+       "html": "<p>13.20-<br />13.50</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.50-<br />14.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>13.50-<br />14.00</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.00-<br />14.40</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#crowdsourced-news\">Building a Crowdsourced News Service with GStreamer</a><br /><i>Paul Calleja, GlobalM &amp; Mart Raudsepp, LeioTech</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#onvif-trickmodes\">Implementing a Trickmode Player with ONVIF, RTSP and GStreamer</a><br /><i>Mathieu Duponchelle, Centricular</i></p>"
+      },
+      {
+       "html": "<p>14.00-<br />14.40</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.40-<br />15.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>14.40-<br />15.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.00-<br />15.40</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#pipewire-update\">PipeWire</a><br /><i>Wim Taymans, RedHat</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#vr-tracking-openhmd\">Room Scale VR Tracking with OpenHMD</a><br /><i>Jan Schmidt, Centricular</i></p>"
+      },
+      {
+       "html": "<p>15.00-<br />15.40</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.40-<br />15.50</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>15.40-<br />15.50</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.50-<br />16.20</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#nvidia-hwaccel-plugin\">NVCodec plugin improvements</a><br /><i>양승하 Seung Ha Yang, Naver Corp</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#libcamera\">The First Stable libcamera Release: A Call for Public API Review</a><br /><i>Jacopo Mondi &amp; Laurent Pinchart</i></p>"
+      },
+      {
+       "html": "<p>15.50-<br />16.20</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.20-<br />16.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>16.20-<br />16.30</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.30-<br />17.10</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#bug-extermination-techniques\">GStreamer Bug Extermination Techniques</a><br /><i>Vivia Nikolaidou, Make.tv</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#av1-codec\">AV1 Overview: Codec and Ecosystem</a><br /><i>Luca Barbato, Luminem SRLs &amp; VideoLan</i></p>"
+      },
+      {
+       "html": "<p>16.30-<br />17.10</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.10-<br />17.20</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>17.10-<br />17.20</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.20-<br />18.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i><a href=\"talks-and-speakers.html#lightning-talks\">Lightning Talks</a></i><br /></p>\n\t\t<p align=\"center\"><small>Espace Red</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>17.20-<br />18.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>18.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>End of Day</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>18.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>19.30-<br />late</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b><font size=\"+2\">Social Event: Drinks and Food</span></b></p>\n\t\t<p align=\"center\"><font size=\"+2\">at <a href=\"\"><b>Ninkasi Saint Paul</b></a></span></p>\n                <p align=\"center\">5 Rue Octavio Mey, at the northern end of Lyon's historic Old Town district. (<a href=\"https://goo.gl/maps/BtLj9xNKxgTA6VkA6\">map</a>)</p>\n\t\t<p align=\"center\">Both drinks and food will be provided, incl. vegetarian options (thanks to our sponsors!)</p>\n\t\t<p align=\"center\">Please don't forget to bring your badge. If you would like to bring a +1 please let us know when picking up your badge in the morning.</p>\n\t\t<p align=\"center\">\n                  We will have two private areas at the venue - upstairs and downstairs, but\n                  part of the venue around the bar will be open to the public. There won't be\n                  a cloakroom where you can leave your jackets/bags and neither we<br/> nor the bar\n                  will take responsibility for any lost or damaged items, so you may want to\n                  drop off your gear at the hotel before you head there.\n                </p>\n\t\t<p align=\"center\">\n                    <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11133.746351480799!2d4.824974105373568!3d45.762439990062454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2db883c8ef1625!2sNinkasi%20SAINT%20PAUL!5e0!3m2!1sen!2suk!4v1571700684610!5m2!1sen!2suk\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"1\"></iframe>\n                </p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>19.30-<br />late</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": ""
+      },
+      {
+       "html": "",
+       "colspan": 2
+      },
+      {
+       "html": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Friday 1 November 2019</span></p>",
+       "colspan": 4,
+       "bg": "#4682b4"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p></p>"
+      },
+      {
+       "html": "<p align=\"center\">Espace Red</p>"
+      },
+      {
+       "html": "<p align=\"center\">Espace Yellow</p>"
+      },
+      {
+       "html": "<p></p>"
+      }
+     ],
+     "bg": "#b0c4de"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.00-<br />10.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Sleep in</b><br /><small>(note that we start later on Friday, at 10.00am!)</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.00-<br />10.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p><b>10.00</b>-<br />10.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><a href=\"talks-and-speakers.html#twenty-years-of-gstreamer\">20 Years of GStreamer</a><br /><i>Wim Taymans</i></p>\n\t\t<p align=\"center\"><small>Espace Red</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p><b>10.00</b>-<br />10.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.30-<br />10.40</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>10.30-<br />10.40</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.40-<br />11.10</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#video-editing-professional-use-cases\">Video Editing: Targeting Professional Post Production Use cases</a><br /><i>Thibault Saunier, Igalia</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#instant-rate-change\">Changing Playback Rate Instantly</a><br /><i>Jan Schmidt, Centricular</i></p>"
+      },
+      {
+       "html": "<p>10.40-<br />11.10</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.10-<br />11.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>11.10-<br />11.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.30-<br />12.10</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#which-streaming-proto\">Which Network Streaming Protocol Should I Pick?</a><br /><i>Olivier Crête, Collabora</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#cerbero-products\">Extending Cerbero to Build and Package Products based on GStreamer</a><br /><i>Pablo Marcos &amp; Andoni Morales, Fluendo</i></p>"
+      },
+      {
+       "html": "<p>11.30-<br />12.10</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.10-<br />12.20</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>12.10-<br />12.20</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.20-<br />12.50</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#windows-uwp-firefox-hololens\">GStreamer, Windows UWP, and Firefox on the HoloLens 2</a><br /><i>Nirbheek Chauhan, Centricular</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#jpeg2000\">The Rise and Fall and Rise of JPEG2000</a><br /><i>Aaron Boxer, Collabora</i></p>"
+      },
+      {
+       "html": "<p>12.20-<br />12.50</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.50-<br />13.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>12.50-<br />13.00</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.00-<br />13.20</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#hardware-enablement-story\">Enabling a Different Piece of Hardware, a Story</a><br /><i>Guillaume Desmottes, Collabora</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#ftl-streaming-protocol\">GStreamer and the Faster Than Light (FTL) Streaming Protocol</a><br /><i>Francisco Velázquez, Make.tv</i></p>"
+      },
+      {
+       "html": "<p>13.00-<br />13.20</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.20-<br />14.20</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>13.20-<br />14.20</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.20-<br />14.50</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#gstreamer-vulkan\">GStreamer Vulkan</a><br /><i>Matthew Waters, Centricular</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#gstreamer-and-rust\">GStreamer &amp; Rust: An Update</a><br /><i>Sebastian Dröge, Centricular</i></p>"
+      },
+      {
+       "html": "<p>14.20-<br />14.50</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.50-<br />15.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>14.50-<br />15.00</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.00-<br />15.20</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#srt-in-surveillance-systems\">Low Latency in Video Surveillance System with SRT</a><br /><i>Justin Kim, SK Telekom</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#dashsink\">Dashsink plugin to complete the GStreamer offering</a><br /><i>Stéphane Cerveau, Collabora</i></p>"
+      },
+      {
+       "html": "<p>15.00-<br />15.20</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.20-<br />15.40</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>15.20-<br />15.40</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.40-<br />16.20</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#google-twcc\">Google Transport-wide Congestion Control</a><br /><i>Håvard Graff, Pexip</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#avb-support\">Audio/Video Bridging (AVB) support in GStreamer</a><br /><i>Andre Guedes, Intel</i></p>"
+      },
+      {
+       "html": "<p>15.40-<br />16.20</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.20-<br />16.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>16.20-<br />16.30</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.30-<br />16.50</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#gst-transcoder\">GstTranscoder: A High Level API to Quickly Implement Transcoding Capabilities in your Applications</a><br /><i>Thibault Saunier, Igalia</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#multi-project-ci-pipelines\">GStreamer and Multi-project Continuous Integration Pipelines</a><br /><i>Jordan Petridis, Centricular</i></p>"
+      },
+      {
+       "html": "<p>16.30-<br />16.50</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.50-<br />17.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>16.50-<br />17.00</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.00-<br />17.40</p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#home-automation\">Home Automation with GStreamer</a><br /><i>Jan Schmidt, Centricular</i></p>"
+      },
+      {
+       "html": "<p><a href=\"talks-and-speakers.html#pipewire-automotive-industry\">PipeWire in the Automotive Industry</a><br /><i>George Kiagiadakis, Collabora</i></p>"
+      },
+      {
+       "html": "<p>17.00-<br />17.40</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.45</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i>Closing Session</i></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>17.45</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.50</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>End of Conference</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>17.50</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    }
+   ],
+   "id": "friday"
+  },
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Saturday + Sunday 2-3 November 2019</span></p>",
+       "colspan": 4,
+       "bg": "#4682b4"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p></p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Hackfest venue: Epitech</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p></p>"
+      }
+     ],
+     "bg": "#b0c4de"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.00-<br />18.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>GStreamer Hackfest, everyone welcome!</b><br /><br />\n                <small>\n                  Informal get-together of GStreamer developers, contributors and community members.\n                  Work on whatever you like. Discuss things with people. Drink coffee.\n                </small>\n                </p>\n  <p align=\"center\">\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11137.387516086112!2d4.835078459961906!3d45.744191403831636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea653d095dab%3A0x28b80942c48a228c!2sEPITECH!5e0!3m2!1sen!2suk!4v1571233093302!5m2!1sen!2suk\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"1\"></iframe>\n  </p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>10.00-<br />18.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    }
+   ],
+   "id": "weekend"
+  }
+ ]
+}

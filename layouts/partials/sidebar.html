@@ -1,0 +1,18 @@
+{{ $cur := .RelPermalink }}
+<nav id="nav" class="sidebar" aria-label="Main">
+  {{ range $g := slice "primary" "developers" "community" }}
+    <div class="navgrp navgrp-{{ $g }}">
+    {{ range index site.Data.nav $g }}
+      {{ $inside := and (hasPrefix .url "/") (ne .url "/") (hasPrefix $cur .url) }}
+      <a href="{{ .url }}"{{ with .rel }} rel="{{ . }}"{{ end }}{{ if and $inside (not .sub) }} aria-current="page"{{ else if and $inside (eq $cur .url) }} aria-current="page"{{ end }}>{{ .title }}</a>
+      {{ with .sub }}{{ if $inside }}{{ with site.GetPage (printf "/%s" .) }}
+      <div class="navsub">
+        {{ range (.Sections.ByParam "year").Reverse }}<a href="{{ .RelPermalink }}"{{ if hasPrefix $cur .RelPermalink }} aria-current="page"{{ end }}>{{ .Params.year }}</a>
+        {{ end }}
+      </div>
+      {{ end }}{{ end }}{{ end }}
+    {{ end }}
+    </div>
+  {{ end }}
+  <div class="navgrp navgrp-theme"><button type="button" class="theme-toggle js-theme" title="Switch between system, light and dark theme">Theme: system</button></div>
+</nav>

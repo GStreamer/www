@@ -1,0 +1,16 @@
+{{- /* Ticker list of the latest commits from site-data/activity.json.
+       Usage: {{ partial "recent-commits.html" . }}
+       Optional: {{ partial "recent-commits.html" (dict "limit" 5) }} */ -}}
+{{- $limit := 8 -}}
+{{- if reflect.IsMap . }}{{ with .limit }}{{ $limit = . }}{{ end }}{{ end -}}
+{{- $commits := site.Data.activity.recent_commits -}}
+{{- if $commits }}
+<section class="recent-commits" aria-label="Recent commits">
+  <h3>Recent commits</h3>
+  <ul class="plain">
+    {{- range first $limit $commits }}
+    <li><a href="{{ .web_url }}">{{ .title }}</a><br><span class="meta">{{ .author }}{{ with .date }}, {{ dateFormat "2 Jan 2006" . }}{{ end }}{{ with .repo }} in {{ . }}{{ end }}</span></li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}

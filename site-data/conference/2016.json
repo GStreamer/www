@@ -1,0 +1,646 @@
+{
+ "tables": [
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Monday 10th of October 2016</span></p>",
+       "colspan": 4,
+       "bg": "#4682b4"
+      }
+     ],
+     "id": "monday"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p></p>"
+      },
+      {
+       "html": "<p align=\"center\">Innospace</p>"
+      },
+      {
+       "html": "<p align=\"center\">Arena</p>"
+      },
+      {
+       "html": "<p></p>"
+      }
+     ],
+     "bg": "#b0c4de"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>08.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Registration</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>08.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.00-<br />09.05</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i>Opening and welcome to the 2016 GStreamer Conference</i><br /></p>\n\t\t<p align=\"center\"><small>Innospace</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.00-<br />09.05</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.05-<br />09.45</p>"
+      },
+      {
+       "html": "<p align=\"center\"><a href=\"/conference/2016/talks-and-speakers.html#state-of-the-union\">GStreamer State of the Union</a><br />Tim-Philipp Müller (__tim), Centricular</p>\n\t\t<p align=\"center\"><small>Innospace</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.05-<br />09.45</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.45-<br />10.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.45-<br />10.00</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.00-<br />10.30</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#pexip-media-architecture\">The Pexip Media Architecture</a><br />Håvard Graff, Pexip</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#industrial-application-pipelines\">Industrial application pipelines with Gstreamer</a><br />Marianna S. Buschle, QTechnology</p>"
+      },
+      {
+       "html": "<p>10.00-<br />10.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.35-<br />10.55</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#tracing-memleaks\">Tracking Memory Leaks</a><br />Guillaume Desmottes, Collabora</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#gst-mm\">gstreamermm: C++ way of doing GStreamer-based applications</a><br />Marcin Kolny</p>"
+      },
+      {
+       "html": "<p>10.35-<br />10.55</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.55-<br />11.20</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>10.55-<br />11.20</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.20-<br />12.05</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#horrible-networks\">The wonderful world of horrible networks</a><br />Håvard Graff, Pexip</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#processing\">Processing: The new 1.0-based video library for desktop and RPi, with GoPro support (and much more!)</a><br />Andres Colubri and Gal Nissim, Processing Foundation</p>"
+      },
+      {
+       "html": "<p>11.20-<br />12.05</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.10-<br />12.30</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#gstreamer-vaapi\">GStreamer-VAAPI: where we are today</a><br />Víctor M. Jáquez L. (ceyusa), Igalia</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#vcabridge\">Using GStreamer for Video Analytics: VCA­Bridge</a><br />Julián Bouzas, VCA Technology</p>"
+      },
+      {
+       "html": "<p>12.10-<br />12.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.30-<br />13.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch Break: Lunch sponsored by Facebook</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>12.30-<br />13.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.30-<br />14.15</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#element-states\">GStreamer Element States: How do they work in detail?</a><br />Sebastian Dröge (slomo), Centricular</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#video-editing\">The State of GStreamer for Video Editing</a><br />Thibault Saunier (thiblahute), Samsung OSG</p>"
+      },
+      {
+       "html": "<p>13.30-<br />14.15</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.15-<br />14.40</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>14.15-<br />14.40</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.40-<br />15.10</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#dynamic-pipelines\">How to work with dynamic pipelines using GStreamer</a><br />Jose Antonio Santos Cadenas, Kurento</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#digital-television-support\">Digital television support: where we are at</a><br />Reynaldo H. Verdejo Pinochet (reynaldo), Samsung OSG</p>"
+      },
+      {
+       "html": "<p>14.40-<br />15.10</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.10-<br />15.40</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>15.10-<br />15.40</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.40-<br />16.10</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#race-conditions\">Debugging race conditions problems in GStreamer</a><br />Miguel París Díaz, Kurento</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#hls-alt-renditions\">HLS alternative renditions</a><br />Jan Schmidt (thaytan), Centricular</p>"
+      },
+      {
+       "html": "<p>15.40-<br />16.10</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.15-<br />16.45</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#vulkan-opengl-zerocopy\">Vulkan, OpenGL and/or Zerocopy</a><br />Matthew Waters (ystreet00), Centricular</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#dash-trickmodes\">Efficient Trick Modes in MPEG-DASH Adaptive Streaming with GStreamer</a><br />Wojciech Przybyl, Visla Systems</p>"
+      },
+      {
+       "html": "<p>16.15-<br />16.45</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.45-<br />17.05</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>16.45-<br />17.05</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.05-<br />18.15</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i><a href=\"/conference/2016/talks-and-speakers.html#lightning-talks\">Lightning Talks</a></i><br /></p>\n\t\t<p align=\"center\"><small>Innospace</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>17.05-<br />18.15</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>18.15</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>End of Day</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>18.15</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>19.00-<br />late</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Social Event: Drinks and Food</b></p>\n\t\t<p align=\"center\">at the <a href=\"http://zaza-bar.de/zaza-bar/index_en.html\"><b>ZaZa Bar and Lounge</b></a>,\n                  Kastanienallee 12, 10435 Berlin</p>\n                <p align=\"center\">in the Prenzlauer Berg area near underground/metro stop <i>Eberswalder Strasse</i> on the red U2 line (<a href=\"https://goo.gl/maps/5nQQ3pknoYz\">map</a>)</p>\n\t\t<p align=\"center\">Both drinks and food will be provided, incl. vegetarian options.</p>\n\t\t<p align=\"center\">Please don't forget to bring your badge.</p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>19.00-<br />late</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": ""
+      },
+      {
+       "html": "",
+       "colspan": 2
+      },
+      {
+       "html": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Tuesday 11th of October 2016</span></p>",
+       "colspan": 4,
+       "bg": "#4682b4"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p></p>"
+      },
+      {
+       "html": "<p align=\"center\">Innospace</p>"
+      },
+      {
+       "html": "<p align=\"center\">Arena</p>"
+      },
+      {
+       "html": "<p></p>"
+      }
+     ],
+     "bg": "#b0c4de"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.00-<br />10.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Sleep in</b><br /><small>(note that we start a bit later on Tuesday, at 10am)</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.00-<br />10.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p><b>10.00</b>-<br />10.30</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#time-and-sync-take-two\">Time and Synchronisation: take two!</a><br />Nicolas Dufresne (ndufresne), Collabora</p>"
+      },
+      {
+       "html": ""
+      },
+      {
+       "html": "<p><b>10.00</b>-<br />10.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.35-<br />11.05</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#video-encoding-benchmarks\">An overview of video encoding benchmarks with GStreamer</a><br />Florent Thiéry, UbiCast</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#corroded-pipelines-rust\">Corroded Pipelines, or how to write GStreamer elements in Rust for safety and fun</a><br />Sebastian Dröge (slomo), Centricular</p>"
+      },
+      {
+       "html": "<p>10.35-<br />11.05</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.05-<br />11.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>11.05-<br />11.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.30-<br />12.15</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#holographic\">Holographic Telecommunication in the Age of Free Software</a><br />Lubosz Sarnecki (lubosz), Collabora</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#intelligent-surveillance\">Intelligent Surveillance</a><br />Mandar Joshi</p>"
+      },
+      {
+       "html": "<p>11.30-<br />12.15</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.15-<br />12.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>12.15-<br />12.30</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.30-<br />13.15</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#essence-of-gstreamer\">Keep calm and refactor: About the essence of GStreamer</a><br />Wim Taymans (wtay), RedHat</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#playing-everything\">Playing Arbitrary Video Files with GStreamer</a><br />Michael Olbrich, Pengutronix</p>"
+      },
+      {
+       "html": "<p>12.30-<br />13.15</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.15-<br />14.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch Break: Lunch sponsored by Facebook</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>13.15-<br />14.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.30-<br />15.00</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#gst-in-broadcast-world\">GStreamer in the broadcast world: A general overview</a><br />Georg Lippitsch, ToolsOnAir</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#windows-dev-meson\">GStreamer development on Windows and faster builds on all platforms with the Meson build system</a><br />Nirbheek Chauhan (nirbheek), Centricular</p>"
+      },
+      {
+       "html": "<p>14.30-<br />15.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.00-<br />15.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>15.00-<br />15.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.30-<br />16.15</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#new-stream-api\">The new GstStream API, design and usage</a><br />Edward Hervey (bilboed), Centricular</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#profiling\">Profiling GStreamer pipelines</a><br />Kyrylo Polezhaiev</p>"
+      },
+      {
+       "html": "<p>15.30-<br />16.15</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.20-<br />16.40</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#comm-quality-assessment-testbed\">Multimedia Communication Quality Assessment Testbed</a><br />Jean-Charles Grégoire, Énergie Matériaux Télécommunications (EMT) Research Centre</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#smpte-timecodes\">SMPTE timecodes in GStreamer</a><br />Vivia Nikolaidou (vivia), ToolsOnAir</p>"
+      },
+      {
+       "html": "<p>16.20-<br />16.40</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.40-<br />17.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>16.40-<br />17.00</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.00-<br />17.20</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#3d-scanning\">3D Scanning</a><br />Jan Schmidt (thaytan), Centricular</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2016/talks-and-speakers.html#features-dectection-fpga\">Features detection plugins speed-up by ompSs@FPGA</a><br />Nicola Bettin, Vimar</p>"
+      },
+      {
+       "html": "<p>17.00-<br />17.20</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.20-<br />17.55</p>"
+      },
+      {
+       "html": "<p align=\"center\">\n\t\t<a href=\"/conference/2016/talks-and-speakers.html#gst-dev-show\">The GStreamer Developers Show</a><br />Hosted by Luis de Bethencourt, Samsung OSG</p>\n\t\t<p align=\"center\"><small>Innospace</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>17.20-<br />17.55</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.55</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i>Closing Session</i></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>17.55</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>18.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>End of Conference </b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>18.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    }
+   ],
+   "id": "tuesday"
+  }
+ ]
+}

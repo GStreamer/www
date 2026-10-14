@@ -1,0 +1,12 @@
+{{ define "main" }}
+<style>
+table.schedule { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+table.schedule td, table.schedule th { border: 1px solid #888; padding: .5rem; vertical-align: top; }
+table.schedule p { margin: .2rem 0; }
+</style>
+<article class="conference-page">
+<h1>{{ .Title }}</h1>
+<p><a href="{{ (.Parent).RelPermalink }}">Back to conference main page</a></p>
+{{ .Content }}
+</article>
+{{ end }}

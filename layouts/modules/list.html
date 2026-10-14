@@ -1,0 +1,6 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ $pages := where (where .Pages "Params.legacy" "ne" true) "Params.module" true }}
+{{ partial "modules-table.html" (dict "pages" $pages.ByWeight) }}
+{{ end }}

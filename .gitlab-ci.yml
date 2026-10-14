@@ -18,7 +18,7 @@ variables:
 
   WWW_AMD64_SUFFIX: 'amd64/www'
 
-  WWW_TAG: '2024-04-12.0'
+  WWW_TAG: '2026-10-15.0'
 
 workflow:
   # https://docs.gitlab.com/ee/ci/yaml/index.html#switch-between-branch-pipelines-and-merge-request-pipelines
@@ -57,8 +57,8 @@ default:
     FDO_DISTRIBUTION_VERSION: 'bookworm'
     FDO_REPO_SUFFIX: "$WWW_AMD64_SUFFIX"
     FDO_DISTRIBUTION_TAG: "$WWW_TAG-$GST_UPSTREAM_BRANCH"
-    FDO_DISTRIBUTION_PACKAGES: 'automake autoconf make cmark-gfm xsltproc w3c-sgml-lib ca-certificates'
-    #FDO_DISTRIBUTION_EXEC: 'ci/docker/prepare.sh'
+    FDO_DISTRIBUTION_PACKAGES: 'python3 curl git ca-certificates'
+    FDO_DISTRIBUTION_EXEC: 'bash ci/docker/prepare.sh'
 
 www amd64 docker:
   extends:
@@ -75,11 +75,9 @@ www amd64 docker:
     - job: 'www amd64 docker'
       artifacts: false
   script:
-    - cd src/htdocs
-    - ln -s ./entities.site.fdo ./entities.site
-    - cd ../..
-    - ./src/autogen.sh
-    - make
+    - python3 tools/lint-content.py
+    - hugo --destination public --minify --gc
+    - python3 tools/check-links.py --public public
   rules:
     - if: '$CI_PROJECT_NAMESPACE != "gstreamer" || $CI_COMMIT_BRANCH != $GST_UPSTREAM_BRANCH'
       when: 'always'

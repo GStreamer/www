@@ -1,0 +1,253 @@
+{
+ "tables": [
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Monday 24th of October 2011</span></p>",
+       "colspan": 3,
+       "bg": "lightblue"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>GStreamer talks \n\t\t\t</p>"
+      },
+      {
+       "html": "<p>Main Room</p>"
+      },
+      {
+       "html": "<p>Second Room</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.00</p>"
+      },
+      {
+       "html": "<p align=\"center\">Keynote - <a href=\"speakers.html#taymans\">GStreamer 1.0 - GStreamer maintainer Wim Taymans</a>, Collabora</p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#sauer\">High complexity GStreamer pipelines, Stefan Sauer</a>, Google</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#emont\">Time lapse and stabilizing a sequence of images - Guillame Emont</a>, Igalia</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#lundberg\">GStreamer, Webkit, HTML5 and Real-Time Communication - Jonas Lundberg</a>, Ericsson</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#torra\">Time shifting with GStreamer - Josep Torra</a>, Fluendo</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#quachio\">GStreamer and DASH - Emanuele Quacchio</a>, ST Microelectronics \n\t\t\t</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#alaoui\">GStreamer and Farstream - Communication the easy way, Youness Alaoui</a>, Collabora</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch</b></p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#lespiau\">The Media Explorer Media Center - Damien Lespiau</a>, Intel</p>"
+      },
+      {
+       "html": "<p>Case study - <a href=\"speakers.html#sparrell\">GStreamer at Oblong Industries - Carlton J. Sparrell</a>, Oblong Industries</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#luther\">WebM and VP8 - Latest developments - John Luther and Matt Frost</a>, Google</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#jaquez\">GStreamer and SysLink - Victor Jaquez</a>, Igalia</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\">16.00 End of Day</p>",
+       "colspan": 3
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Tuesday 25th of October 2011</span></p>",
+       "colspan": 3,
+       "bg": "lightblue"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>GStreamer talks \n\t\t\t</p>"
+      },
+      {
+       "html": "<p>Main Room</p>"
+      },
+      {
+       "html": "<p>Second Room</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.00</p>"
+      },
+      {
+       "html": "<p align=\"center\">Keynote - <a href=\"speakers.html#muller\">GStreamer Status Report - Tim-Philipp Müller</a>, Collabora</p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#montgomery\">Xiph.org plans and projects, Monty Montgomery</a>, Red Hat</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#frisch\">Blu-Ray Authoring, Andreas Frisch</a>, Dreambox</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#stichele\">An overview of the Flumotion Streaming Server - Thomas Vander Stichele</a>, Flumotion</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#schmidth\">GStreamer and Blu-ray playback - Jan Schmidt</a>, Oracle</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch</b></p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.00</p>"
+      },
+      {
+       "html": "<p>Case study - <a href=\"speakers.html#schleef\">Broadcast and Web Streaming with GStreamer, David Schleef</a>, Entropy Wave</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#soliverez\">GStreamer, Telepathy and Android the easy way, Alvaro Soliverez and Reynaldo Verdejo</a>, Collabora</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#droege\">A new OpenMax IL integration layer for GStreamer- Sebastian Dröge</a>,\n\t\t\tCollabora</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#leeman\">Displaying synchronised video - Marc Leeman</a>, Barco</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#swain\">Interlacing and telecine in GStreamer - Robert Swain</a>,  Collabora</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#raghavan\">Latest developments in Pulse Audio, Arun Raghavan</a>, Collabora</p>",
+       "rowspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.30</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#bethencourt\">The ease of writing a video player in GStreamer - Luis deBethencourt</a>, Collabora</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\">17.00 End of Day</p>",
+       "colspan": 3
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

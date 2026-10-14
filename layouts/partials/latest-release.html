@@ -1,0 +1,37 @@
+{{- /*
+  Computes the latest stable and latest devel release from the frontmatter of
+  content/releases/X.Y/_index.md (params: status, versions[]). Returns a dict:
+    .stable / .devel -> dict with version, date (time.Time), series, series_url, url (with #anchor)
+  Either key is absent when no series has that status. Usage:
+    {{ $r := partial "latest-release.html" . }}
+    {{ with $r.stable }}{{ .version }} {{ .date.Format "2 January 2006" }} {{ .url }}{{ end }}
+  Per series, the newest entry is versions[0] (the migration keeps them newest first);
+  we still pick the max by date to be robust against manual ordering.
+*/ -}}
+{{- $out := dict -}}
+{{- with site.GetPage "/releases" -}}
+  {{- range .Sections.ByWeight -}}
+    {{- $st := .Params.status -}}
+    {{- if or (eq $st "stable") (eq $st "devel") -}}
+      {{- $key := cond (eq $st "stable") "stable" "devel" -}}
+      {{- if not (isset $out $key) -}}
+        {{- $best := dict -}}
+        {{- range .Params.versions -}}
+          {{- $d := .date | time.AsTime -}}
+          {{- if or (not $best) (gt $d $best.date) -}}
+            {{- $best = dict "version" .version "date" $d -}}
+          {{- end -}}
+        {{- end -}}
+        {{- if $best -}}
+          {{- $out = merge $out (dict $key (dict
+                "version" $best.version
+                "date" $best.date
+                "series" .Params.series
+                "series_url" .RelPermalink
+                "url" (printf "%s#%s" .RelPermalink $best.version))) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

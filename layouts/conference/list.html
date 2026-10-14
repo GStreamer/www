@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{- $year := .Params.year -}}
+{{- $root := site.GetPage "/conference" -}}
+<style>
+.conference-page li { padding-bottom: .5rem; }
+.conference-page iframe { max-width: 100%; }
+.conference-page img { max-width: 100%; height: auto; }
+</style>
+<article class="conference-page">
+{{ if $year }}
+<div class="conf-layout{{ if .Params.sponsors }} has-sponsors{{ end }}">
+<div class="conf-main">
+<h1>{{ .Title }}{{ with .Params.status }} <span class="badge{{ if eq . "live" }} live{{ end }}">{{ . }}</span>{{ end }}</h1>
+{{ with .RegularPages }}<p class="meta">{{ range $i, $p := . }}{{ if $i }} | {{ end }}<a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>{{ end }}</p>{{ end }}
+{{ if eq .Params.status "live" }}{{ with .Params.streams }}<div class="banner"><strong>Live streams:</strong>{{ range . }} <a class="btn primary" href="{{ .url }}">{{ .name }}</a>{{ end }}</div>{{ else }}{{ with $.Params.stream_url }}<div class="banner"><a class="btn primary" href="{{ . }}">Watch the live stream</a></div>{{ end }}{{ end }}{{ end }}
+{{ .Content }}
+<h2>Past GStreamer Conferences</h2>
+<ul>
+{{ $self := . }}{{ range ($root.Sections.ByParam "year").Reverse }}{{ if ne .Params.year $year }}<li><a href="{{ .RelPermalink }}">{{ .Params.dates }} &middot; {{ .Params.location }}</a></li>{{ end }}{{ end }}
+</ul>
+</div>
+{{ with .Params.sponsors }}
+<aside class="sponsors" aria-label="Sponsors">
+<h2>Sponsors</h2>
+{{ $lvl := "-" }}
+{{ range . }}{{ if ne .level $lvl }}{{ $lvl = .level }}<h3>{{ .level }}</h3>{{ end }}
+<a href="{{ .url }}">{{ if .logo }}<img src="{{ .logo }}" alt="{{ .name }}" loading="lazy">{{ else }}{{ .name }}{{ end }}</a>
+{{ end }}
+{{ with $.Params.sponsors_note }}<p><small>{{ $.RenderString . }}</small></p>{{ end }}
+</aside>
+{{ end }}
+</div>
+{{ else }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ $years := (.Sections.ByParam "year").Reverse }}
+{{ with index $years 0 }}<p><strong><a href="{{ .RelPermalink }}">{{ .Params.dates }} &middot; {{ .Params.location }}</a></strong></p>{{ end }}
+<h2>Past GStreamer Conferences</h2>
+<ul>
+{{ range after 1 $years }}<li><a href="{{ .RelPermalink }}">{{ .Params.dates }} &middot; {{ .Params.location }}</a></li>{{ end }}
+</ul>
+{{ end }}
+</article>
+{{ end }}

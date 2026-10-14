@@ -1,0 +1,688 @@
+{
+ "tables": [
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Friday 26th of October 2018</span></p>",
+       "colspan": 4,
+       "bg": "#4682b4"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p></p>"
+      },
+      {
+       "html": "<p align=\"center\">Main Hall</p>"
+      },
+      {
+       "html": "<p align=\"center\">Anatomy Lecture Theatre</p>"
+      },
+      {
+       "html": "<p></p>"
+      }
+     ],
+     "bg": "#b0c4de"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.00-<br />10.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Sleep in</b><br /><small>(note that we start later on Friday, at 10.30am!)</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.00-<br />10.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p><b>10.30</b>-<br />11.15</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#nnstreamer-neural-networks-as-filters\">NNStreamer: Neural Networks as GStreamer Filters</a><br />MyungJoo Ham, Samsung</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#bof1\">BoF / workshop #1: tbd</a><br /></p>"
+      },
+      {
+       "html": "<p><b>10.30</b>-<br />11.15</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.15-<br />11.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>11.15-<br />11.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.30-<br />12.15</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#streams-and-collections\">Streams and collections: we're not done yet!</a><br />Edward Hervey (bilboed), Centricular</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#bof2\">BoF / workshop #2: tbd</a><br /></p>"
+      },
+      {
+       "html": "<p>11.30-<br />12.15</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.15-<br />12.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>12.15-<br />12.30</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.30-<br />13.00</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#profiling-hawktracer\">Profiling GStreamer applications with HawkTracer and tracing subsystem</a><br />Marcin Kolny, Amazon</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#asio\">In which the protagonist explores why ASIO is still alive</a><br />Nirbheek Chauhan, Centricular</p>"
+      },
+      {
+       "html": "<p>12.30-<br />12.50</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.00-<br />14.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>13.00-<br />14.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.00-<br />14.40</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#trust-but-verify\">Trust but verify. Our road to robust multimedia and graphics stack verification (aka Multimedia testing on the budget for everyone)</a><br />Michał Budzyński &amp; Marcin Kidzinski, Samsung</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#android-camera-source-2\">Android camera source 2 - a continuation story</a><br />Justin Kim (김정석), SK Telecom</p>"
+      },
+      {
+       "html": "<p>14.00-<br />14.20</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.40-<br />15.10</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>14.40-<br />15.10</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.10-<br />15.55</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#microsoft-teams-connector\">Microsoft Teams Connector</a><br />Håvard Graff (hgr), Pexip</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#gst-inference\">GstInference: A GStreamer Deep Learning Framework</a><br />Jose Manuel Jimenez, RidgeRun</p>"
+      },
+      {
+       "html": "<p>15.10-<br />15.40</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.55-<br />16.10</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>15.55-<br />16.10</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.10-<br />16.40</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#video4linux-codecs\">Discovering Video4Linux CODECs</a><br />Nicolas Dufresne (ndufresne) &amp; Ezequiel Garcia, Collabora</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#gstreamer-and-rust\">What's new with GStreamer &amp; Rust</a><br />Sebastian Dröge (slomo), Centricular</p>"
+      },
+      {
+       "html": "<p>16.10-<br />16.40</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.40-<br />16.50</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>16.40-<br />16.50</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.50-<br />17.20</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#servo-webaudio-rust\">Using GStreamer for Servo's WebAudio implementation in Rust</a><br />Manish Goregaokar, Mozilla</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#servo-webaudio-rust\">Experiences with GStreamer/WebRTC</a><br />Marc Leeman, Barco</p>"
+      },
+      {
+       "html": "<p>16.50-<br />17.20</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.25</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i>Closing Session</i></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>17.25</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>End of Conference</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>17.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    }
+   ],
+   "id": "friday"
+  },
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Thursday 25th of October 2018</span></p>",
+       "colspan": 4,
+       "bg": "#4682b4"
+      }
+     ],
+     "id": "thursday"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p></p>"
+      },
+      {
+       "html": "<p align=\"center\">Main Hall</p>"
+      },
+      {
+       "html": "<p align=\"center\">Anatomy Lecture Theatre</p>"
+      },
+      {
+       "html": "<p></p>"
+      }
+     ],
+     "bg": "#b0c4de"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Registration</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.30-<br />09.35</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i>Opening and welcome to the 2018 GStreamer Conference</i><br /></p>\n\t\t<p align=\"center\"><small>Main Hall</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.30-<br />09.35</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.40-<br />10.20</p>"
+      },
+      {
+       "html": "<p align=\"center\"><a href=\"/conference/2018/talks-and-speakers.html#state-of-the-union\">GStreamer State of the Union</a><br />Tim-Philipp Müller (__tim), Centricular</p>\n\t\t<p align=\"center\"><small>Main Hall</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.40-<br />10.20</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.20-<br />10.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>10.20-<br />10.30</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.30-<br />11.00</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#cloud-based-live-video-handling\">GStreamer for cloud-based live video handling</a><br />Matthew Clark &amp; Luke Moscrop, BBC</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#deep-neural-networks\">Bringing Deep Neural Networks to GStreamer</a><br />Stian Selnes, Pexip</p>"
+      },
+      {
+       "html": "<p>10.30-<br />11.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.00-<br />11.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>11.00-<br />11.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.30-<br />12.15</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#thread-sharing\">When adding more threads adds more problems - Thread-sharing between elements in GStreamer</a><br />Sebastian Dröge (slomo), Centricular</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#praxis-live-java-bindings\">PraxisLIVE, PraxisCORE and the Java bindings for GStreamer</a><br />Neil C Smith</p>"
+      },
+      {
+       "html": "<p>11.30-<br />12.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.15-<br />12.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>12.15-<br />12.30</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.30-<br />13.00</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#d3dx-video-game-streaming-on-windows\">D3Dx Video Game Streaming on Windows</a><br />Florian Nierhaus, Bebo</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#closed-captions-in-gstreamer\">Closed Captions in GStreamer</a><br />Edward Hervey (bilboed), Centricular</p>"
+      },
+      {
+       "html": "<p>12.30-<br />12.50</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.00-<br />14.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>13.00-<br />14.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.00-<br />14.30</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#video-editing\">Video Editing with GStreamer, status update and plans for the future</a><br />Thibault Saunier (thiblahute), Igalia</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#post-mortem-debugging\">Post Mortem GStreamer Debugging with Gdb and Python</a><br />Michael Olbrich, Pengutronix</p>"
+      },
+      {
+       "html": "<p>14.00-<br />14.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.30-<br />14.40</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>14.30-<br />14.40</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.40-<br />15.10</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#ci-for-embedded\">GStreamer CI for embedded platforms</a><br />Olivier Crête (ocrete), Collabora</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#pipewire\">Pipewire wants to be your audio server too</a><br />Wim Taymans (wtay), RedHat</p>"
+      },
+      {
+       "html": "<p>14.40-<br />15.10</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.10-<br />15.40</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>15.10-<br />15.40</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.40-<br />16.10</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#nvidia-deepstream-sdk\">Introduction to DeepStreamSDK</a><br />Tushar Khinvasara, Nvidia</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#webkitgtk-and-wpe\">Multimedia support in WebKitGTK and WPE, current status and plans</a><br />Philippe Normand (philn), Igalia</p>"
+      },
+      {
+       "html": "<p>15.40-<br />16.10</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.10-<br />16.20</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>16.10-<br />16.20</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.20-<br />16.50</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#cerbero\">Taming the three-headed monster</a><br />Nirbheek Chauhan (nirbheek), Centricular</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2018/talks-and-speakers.html#non-interleaved-audio\">Non-interleaved audio in GStreamer</a><br />George Kiagiadakis (gkiagia), Collabora</p>"
+      },
+      {
+       "html": "<p>16.20-<br />16.50</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.50-<br />17.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><small><i>mini break</i></small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>16.50-<br />17.00</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.00-<br />18.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i><a href=\"/conference/2018/talks-and-speakers.html#lightning-talks\">Lightning Talks</a></i><br /></p>\n\t\t<p align=\"center\"><small>Main Hall</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>17.00-<br />18.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>18.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>End of Day</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>18.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>19.30-<br />late</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b><font size=\"+2\">Social Event: Drinks and Food</span></b></p>\n\t\t<p align=\"center\"><font size=\"+2\">at <a href=\"http://www.lebowskis.co.uk/edinburgh/our-location.php\"><b>Lebowskis Bar</b></a></span></p>\n                <p align=\"center\">at 18 Morrison Street in the West End not far from the international conference center. (<a href=\"https://goo.gl/maps/qrp52U4cHDG2\">map</a>)</p>\n\t\t<p align=\"center\">Both drinks and food will be provided, incl. vegetarian options (thanks to our sponsors!)</p>\n\t\t<p align=\"center\">Please don't forget to bring your badge. If you would like to bring a +1 please let us know when picking up your badge in the morning.</p>\n\t\t<p align=\"center\">\n                  This will be a private event at least until 23.30, but there won't be a\n                  cloakroom where you can leave your jackets/bags and neither we<br/> nor the bar\n                  will take responsibility for any lost or damaged items, so you may want to\n                  drop off your gear at the hotel before you head there.\n                </p>\n\t\t<p align=\"center\">\n                  <iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4468.153875696689!2d-3.2112178!3d55.9480384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a479cd5bad%3A0xae6a8d6903e7242e!2sLebowskis!5e0!3m2!1sen!2suk!4v1538652252829\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen=\"1\"></iframe>\n                </p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>19.30-<br />late</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": ""
+      },
+      {
+       "html": "",
+       "colspan": 2
+      },
+      {
+       "html": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Wednesday 24th of October 2018 (Arrival Day)</span></p>",
+       "colspan": 4,
+       "bg": "#4682b4"
+      }
+     ],
+     "id": "wednesday"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>19.30-<br />late</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b><font size=\"+2\">Social Event: drinks and/or food - informal pre-conference meet-up on Wednesday evening</span></b></p>\n\n  <p align=\"center\">\n    <font size=\"+2\">at <a href=\"https://www.brewdog.com/bars/uk/lothian-road\"><b><large>BrewDog Lothian Road</large></b></a></span><br/>\n  </p>\n  <p align=\"center\"><b>Meet up on arrival day and say hi!</b></p>\n  <p align=\"center\"><a href=\"https://www.brewdog.com/files/1537543178LOTHIANROADFOOD.pdf\">Food</a> and drinks will be available for purchase. Credit cards should be accepted.</p>\n  <p align=\"center\">\n    We have a semi-private section reserved for us upstairs on the right (\"The Garage\").\n  </p>\n  <p align=\"center\">\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.109807749272!2d-3.2087470493646566!3d55.94746868051066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a28f1c4d61%3A0x8cea87d80d07a49e!2sBrewDog+Lothian+Road!5e0!3m2!1sen!2suk!4v1540206441438\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen=\"1\"></iframe>\n  </p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>19.30-<br />late</p>"
+      }
+     ],
+     "bg": "#F0F0F0"
+    },
+    {
+     "cells": [
+      {
+       "html": ""
+      },
+      {
+       "html": "",
+       "colspan": 2
+      },
+      {
+       "html": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

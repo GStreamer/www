@@ -1,0 +1,8 @@
+<div class="table-wrap">
+<table>
+<tr><th>language</th><th>status</th></tr>
+{{ range .pages -}}
+<tr><td><a href="{{ .RelPermalink }}">{{ .Params.name }}</a></td><td>{{ .Params.status | markdownify }}</td></tr>
+{{ end -}}
+</table>
+</div>

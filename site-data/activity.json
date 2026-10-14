@@ -1,0 +1,102 @@
+{
+  "mrs_merged_30d": 234,
+  "mrs_merged_12m": 3208,
+  "mrs_open": 1188,
+  "issues_updated_30d": 78,
+  "contributors": 290,
+  "tags": [
+    {
+      "name": "1.28.8",
+      "date": "2026-10-08T17:20:32.000+02:00"
+    },
+    {
+      "name": "1.28.7",
+      "date": "2026-09-07T20:11:13.000+01:00"
+    },
+    {
+      "name": "1.28.6",
+      "date": "2026-08-05T12:59:39.000+01:00"
+    },
+    {
+      "name": "1.28.5",
+      "date": "2026-07-08T23:42:39.000+02:00"
+    },
+    {
+      "name": "1.29.2",
+      "date": "2026-06-29T00:04:39.000+01:00"
+    },
+    {
+      "name": "1.28.4",
+      "date": "2026-06-12T13:19:43.000+01:00"
+    },
+    {
+      "name": "1.28.3",
+      "date": "2026-05-11T18:28:12.000+01:00"
+    },
+    {
+      "name": "1.28.2",
+      "date": "2026-04-07T20:02:23.000+01:00"
+    }
+  ],
+  "recent_commits": [
+    {
+      "title": "onnximporter-dml: Store memory in fence data instead of buffer",
+      "author": "Seungha Yang",
+      "repo": "gstreamer",
+      "date": "2026-10-16T07:55:04.000+00:00",
+      "web_url": "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/commit/b527c3f755c98d325594a4cd88aec33cc23dcfb4"
+    },
+    {
+      "title": "amfcodec: set rate_control(h265, av1) and gop_size (h265) property before Init() call",
+      "author": "Azat Nurgaliev",
+      "repo": "gstreamer",
+      "date": "2026-10-16T04:32:36.000+00:00",
+      "web_url": "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/commit/e826db0cd807ec52a7dfc7cf6ed07be4d316dc7a"
+    },
+    {
+      "title": "ci: Update image tags",
+      "author": "Sanchayan Maity",
+      "repo": "gstreamer-rs",
+      "date": "2026-10-15T15:43:19.000+05:30",
+      "web_url": "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs/-/commit/96dd27ccd94ad1dd7192bd6b0fa36241d60ce7bb"
+    },
+    {
+      "title": "ci: Require Vulkan on the macOS CI",
+      "author": "Sebastian Dr\u00f6ge",
+      "repo": "gstreamer",
+      "date": "2026-10-15T13:13:00.000+03:00",
+      "web_url": "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/commit/2f269c0acf0b1111f1f0ec64f5769037e64216c4"
+    },
+    {
+      "title": "v4l2codecs: Preserve color range when cropping H.265 output",
+      "author": "Nirbheek Chauhan",
+      "repo": "gstreamer",
+      "date": "2026-10-15T08:17:48.000+00:00",
+      "web_url": "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/commit/38dfe9db8d7fafe59836560ef3e4ebf45c99e20d"
+    },
+    {
+      "title": "videoconvertscale: Don't scale in the padding described by GstVideoMeta",
+      "author": "Nirbheek Chauhan",
+      "repo": "gstreamer",
+      "date": "2026-10-15T08:17:47.000+00:00",
+      "web_url": "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/commit/c03754bb1150bbcff3cd888ede6afa066d4b9f19"
+    },
+    {
+      "title": "ci: Run fluster tests on videoconvertscale changes",
+      "author": "Nirbheek Chauhan",
+      "repo": "gstreamer",
+      "date": "2026-10-15T08:17:47.000+00:00",
+      "web_url": "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/commit/889f6f6eba33274d18eb98b455a17b1c95b12317"
+    },
+    {
+      "title": "parsebin: Check exposed stream-starts are covered by a stream collection",
+      "author": "Edward Hervey",
+      "repo": "gstreamer",
+      "date": "2026-10-14T12:36:25.000+00:00",
+      "web_url": "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/commit/250a38f2a607f4bbcb06f58da90c52bab3880cf8"
+    }
+  ],
+  "fetchedAt": "2026-10-16T09:26:53Z",
+  "source": "gitlab.freedesktop.org API, projects gstreamer, gstreamer-rs, gst-plugins-rs",
+  "commits_30d": 318
+}

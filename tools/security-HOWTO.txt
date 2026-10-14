@@ -1,0 +1,45 @@
+Security advisories on the Hugo site (new workflow)
+
+1) Choose a new Security Advisory id: YYYY-nnnn (year, then nnnn incrementing
+   from 0001, zero padded to 4 digits).
+2) Run:  hugo new security/sa-YYYY-nnnn.md
+   This uses archetypes/security.md and pre-fills id, ids, cve and date.
+3) Fill in the frontmatter (summary, modules, affected_versions,
+   fixed_versions, ids, cve, patches, status) and the body.
+   The summary table at the top of each advisory page is generated from the
+   frontmatter by layouts/security/single.html; do not put one in the body.
+4) Nothing else to edit: the table on /security/ is generated from the
+   frontmatter of every content/security/sa-*.md (newest date first). The
+   legacy Makefile.am ALERTS list and security.md table no longer exist.
+   Optional frontmatter: list_summary (text shown in the table when it must
+   differ from summary), status: cve-pending for placeholder CVEs.
+   The date may omit the time (2024-04-10) or include it (2024-04-10T10:00:00).
+
+Legacy HOWTO (field guidance still applies to the body), verbatim:
+
+Filling out the advisory .md:
+
+* Fill out the various fields. Some details below, but generally copy
+  previous entries.
+* If needed, the summary, affected-versions,
+  details, impact,  mitigation, workarounds, solution and reference entries
+  can hold arbitrary HTML.
+* The date should be in YYYY-MM-DD HH:MM format
+* summary should be a 1 line summary of the issue
+* affected-versions should provide information about which gstreamer module and
+  version(s) contain the vulnerability.
+* details is a multiline more detailed summary of the type of vulnerability
+* impact should provide information about possible impacts - a leak, crash,
+  code execution, information exposure, etc
+* mitigation - factors which might reduce the severity or exposure to an exploit,
+  such as default settings, address randomisation, or lack of default installation
+  of the plugin.
+* workarounds should describe any configuration change which might limit exposure
+  to the vulnerability
+* solution describes which release(s) of which module(s) removes the vulnerability.
+* references is a list of links to relevant resources - e.g.
+  ### CVE Database Entries
+  [CVE-2023-40475](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-40475)
+  ### GStreamer 1.22.9 release
+  [Release Notes](/releases/1.22/#1.22.9)
+  [GStreamer Plugins Bad 1.22.9](/src/gst-plugins-bad/gst-plugins-bad-1.22.9.tar.xz)

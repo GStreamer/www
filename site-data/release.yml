@@ -1,0 +1,18 @@
+# Single source of truth for release versions used across the site.
+# To publish a new release, edit the values below; nothing else needs changing.
+
+# Latest stable source release (modules table).
+stable: "1.28.8"
+branch: "1.28"
+# Latest development release.
+devel: "1.29.2"
+devel_branch: "1.29"
+# Orc module.
+orc_stable: "0.4.44"
+orc_devel: "git main"
+
+# Binary installers on the download page (these can lag the source release).
+bin: "1.28.8"
+bin_branch: "1.28"
+old_bin: "1.26.11"
+old_bin_branch: "1.26"

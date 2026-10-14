@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{ $a := site.Data.activity }}
+{{ partial "conference-banner.html" . }}
+<section class="hero">
+  <h1>GStreamer</h1>
+  <p class="lead">{{ .Params.tagline | default "Open source multimedia framework" }}</p>
+  {{ $r := partial "latest-release.html" . }}<p>{{ with $r.stable }}<a class="badge live" href="{{ .url }}">Latest stable: {{ .version }} ({{ .date.Format "2 Jan 2006" }})</a>{{ end }} {{ with $r.devel }}<a class="badge" href="{{ .url }}">Development: {{ .version }}</a>{{ end }}</p>
+  <div class="cta"><a class="btn primary" href="/download/">Download</a><a class="btn" href="/documentation/">Documentation</a><a class="btn" href="/news/">News</a></div>
+</section>
+<section class="intro" aria-label="What is GStreamer?"><h2>What is GStreamer?</h2>{{ .Content }}</section>
+<section aria-label="Project activity">
+  <div class="stats">
+    <div class="stat"><div class="n">{{ $a.commits_30d }}</div><div class="l">commits in the last 30 days</div></div>
+    <div class="stat"><div class="n">{{ $a.mrs_merged_30d }}</div><div class="l">merge requests merged in 30 days</div></div>
+    <div class="stat"><div class="n">{{ $a.mrs_merged_12m }}</div><div class="l">merged in the last 12 months</div></div>
+    <div class="stat"><div class="n">{{ $a.contributors }}+</div><div class="l">contributors</div></div>
+  </div>
+  <p class="meta">Activity data from <a href="{{ site.Params.gitlab }}">GitLab</a>, snapshot of {{ dateFormat "2 Jan 2006" $a.fetchedAt }}.</p>
+</section>
+<div class="grid2">
+  <section class="card"><h3>Latest news</h3>
+    <ul class="plain">{{ range first 5 (where site.RegularPages "Section" "news").ByDate.Reverse }}<li><a href="/news/#{{ partial "news-anchor.html" . }}">{{ .Title }}</a><br><span class="meta">{{ .Date.Format "2 Jan 2006" }}</span></li>{{ end }}</ul>
+  </section>
+  <div class="card">{{ partial "recent-commits.html" (dict "limit" 6) }}</div>
+</div>
+{{ end }}

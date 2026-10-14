@@ -1,0 +1,22 @@
+{{- /* Banner for the most recent conference while it is upcoming or live.
+       Usage: {{ partial "conference-banner.html" . }}
+       Status is derived from date_start / date_end (end day inclusive) at build time;
+       rebuild the site daily so it flips on time. Hide with `banner: false` in the year's frontmatter. */ -}}
+{{- with site.GetPage "/conference" -}}
+{{- $years := (.Sections.ByParam "year").Reverse -}}
+{{- with index $years 0 -}}
+{{- if ne .Params.banner false -}}
+{{- $start := time.AsTime .Params.date_start -}}
+{{- $end := (time.AsTime .Params.date_end).AddDate 0 0 1 -}}
+{{- $status := "past" -}}
+{{- if lt now $start }}{{ $status = "upcoming" }}{{ else if lt now $end }}{{ $status = "live" }}{{ end -}}
+{{- if or (eq $status "upcoming") (eq $status "live") -}}
+<div class="banner conference-banner" role="note">
+  <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+  <span class="meta">{{ .Params.dates }} &middot; {{ .Params.location }}</span>
+  {{ if eq $status "live" }}<span class="badge live">live now</span>{{ with .Params.stream_url }} <a class="btn primary" href="{{ . }}">Watch the live stream</a>{{ end }}{{ else }}<a class="btn primary" href="{{ .RelPermalink }}">Join us</a>{{ end }}
+</div>
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}

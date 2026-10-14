@@ -1,0 +1,68 @@
+{{ define "main" }}
+{{- if .Params.series -}}
+{{/* ---- one release series ---- */}}
+<article>
+<h1>{{ .Title }}</h1>
+<p class="meta"><span class="badge">{{ with .Params.status }}{{ . }}{{ end }}</span>
+{{- with .Params.first_release }} first release {{ . | time.AsTime | time.Format "2 January 2006" }}{{ end }}
+{{- with .Params.last_release }}, latest {{ . | time.AsTime | time.Format "2 January 2006" }}{{ end }}</p>
+{{- $raw := .RawContent -}}
+{{- with .Params.versions }}
+<p class="meta">Releases:
+{{- range . }}
+{{- $v := .version }}
+{{- if or (in $raw (printf `{#%s}` $v)) (in $raw (printf `id="%s"` $v)) }} <a href="#{{ $v }}">{{ $v }}</a>{{ else }} {{ $v }}{{ end }}
+{{- end }}</p>
+{{- end }}
+{{ .Content }}
+</article>
+{{- else -}}
+{{/* ---- releases index ---- */}}
+{{- $r := partial "latest-release.html" . -}}
+<article>
+<h1>{{ .Title }}</h1>
+<ul>
+{{- with $r.stable }}
+<li><strong>Latest stable release:</strong> <a href="{{ .url }}">{{ .version }}</a> <span class="meta">{{ .date.Format "2 January 2006" }}</span></li>
+{{- end }}
+{{- with $r.devel }}
+<li><strong>Latest development snapshot release:</strong> <a href="{{ .url }}">{{ .version }}</a> <span class="meta">{{ .date.Format "2 January 2006" }}</span></li>
+{{- end }}
+</ul>
+
+{{- $series := .Sections.ByWeight }}
+<h3>Current stable release</h3>
+<p>The current API and ABI stable GStreamer 1.x series is:</p>
+<ul>
+{{- range where $series "Params.status" "stable" }}
+<li><a href="{{ .RelPermalink }}">GStreamer {{ .Params.series }} release series</a></li>
+{{- end }}
+</ul>
+
+<h3>Older stable releases</h3>
+<p>These releases are all part of the API and ABI stable GStreamer 1.x series:</p>
+<ul>
+{{- range $series }}{{ if in (slice "old-stable" "eol") .Params.status }}{{ if eq (mod (int (index (split .Params.series ".") 1)) 2) 0 }}
+<li><a href="{{ .RelPermalink }}">GStreamer {{ .Params.series }} release series</a>{{ if eq .Params.status "old-stable" }} <span class="badge">old-stable</span>{{ else }} <span class="badge">eol</span>{{ end }}</li>
+{{- end }}{{ end }}{{ end }}
+{{- range .Params.unlinked_series }}
+<li>GStreamer {{ . }} release series</li>
+{{- end }}
+</ul>
+
+{{- $dev := slice }}
+{{- range $series }}{{ if or (eq .Params.status "devel") (eq (mod (int (index (split .Params.series ".") 1)) 2) 1) }}{{ $dev = $dev | append . }}{{ end }}{{ end }}
+{{- if $dev }}
+<h3>Development series</h3>
+<p>API/ABI-unstable development snapshots leading up to the next stable series:</p>
+<ul>
+{{- range $dev }}
+<li><a href="{{ .RelPermalink }}">GStreamer {{ .Params.series }}.x development series</a> <span class="badge">{{ if eq .Params.status "devel" }}devel{{ else }}eol{{ end }}</span></li>
+{{- end }}
+</ul>
+{{- end }}
+
+{{ .Content }}
+</article>
+{{- end -}}
+{{ end }}

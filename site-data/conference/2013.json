@@ -1,0 +1,535 @@
+{
+ "tables": [
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Tuesday 22nd of October 2013</span></p>",
+       "colspan": 4,
+       "bg": "#4682b4"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p></p>"
+      },
+      {
+       "html": "<p align=\"center\">Kilsyth</p>"
+      },
+      {
+       "html": "<p align=\"center\">Harris</p>"
+      },
+      {
+       "html": "<p></p>"
+      }
+     ],
+     "bg": "#b0c4de"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>08.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Registration and Breakfast Buffet</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>08.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i>Opening and welcome to the 2013 GStreamer Conference</i><br />Christian Schaller (cschalle)</p>\n\t\t<p align=\"center\"><small>Kilsyth room</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i>Keynote</i></p>\n        <p align=\"center\"><a href=\"/conference/2013/speakers.html#muller-nextlevel\">Taking GStreamer to the Next Level</a><br />Tim-Philipp Müller (__tim), Centricular</p>\n\t\t<p align=\"center\"><small>Kilsyth room</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>10.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.45</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>10.45</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.00</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#rothlisberger-stb-testing\">Automated Set-top Box Testing with GStreamer</a><br />David Röthlisberger, YouView</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#kim-alt-playback\">Alternative playback solutions for Hardware Manufacturers</a><br />Jeongseok Kim, LG Electronics</p>"
+      },
+      {
+       "html": "<p>11.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.30</p>",
+       "rowspan": 2
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#schleef-gss\">Latest GStreamer Streaming Server features: Video on Demand, Smooth Streaming, and DRM</a><br />David Schleef (ds), Rdio</p>",
+       "rowspan": 2
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#picard-stb-player\">GStreamer-based Media Player for SetTopBox</a><br />Romain Picard, SoftAtHome</p>"
+      },
+      {
+       "html": "<p>11.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#moutte-flump\">FluMediaPlayer: Growing our user base through high level media player API</a><br />Julien Moutte (dolphy), Fluendo</p>"
+      },
+      {
+       "html": "<p>12.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>12.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.00</p>",
+       "rowspan": 2
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#droge-hw-integration\">The never-ending story: GStreamer and hardware integration</a><br />Sebastian Dröge (slomo), Centricular</p>",
+       "rowspan": 2
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#calvar-webkit\">WebKit and GStreamer</a><br />Xabier Rodríguez Calvar (calvaris), Igalia</p>"
+      },
+      {
+       "html": "<p>14.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#quessy-toonloop\">Application Showcase: Toonloop, the Live Stop Motion Editor</a><br />Alexandre Quessy (aalex), Perte de Signal</p>"
+      },
+      {
+       "html": "<p>14.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.00</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#waters-opengl\">GStreamer and OpenGL plugins in 1.0</a><br />Matthew Waters (ystreet00)</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#frisch-dreambox\">Case Study: GStreamer on the Dreambox</a><br />Andreas Frisch (fraxinas), Dream Property</p>"
+      },
+      {
+       "html": "<p>15.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.30</p>",
+       "rowspan": 2
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#taymans-rtsp\">Latest GStreamer RTSP Server features</a><br />Wim Taymans (wtay), Collabora</p>",
+       "rowspan": 2
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#vermeir-hevc\">Next Generation Video Coding with HEVC: Facts and Figures</a><br />Thijs Vermeir (lovebug356), Barco</p>"
+      },
+      {
+       "html": "<p>15.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#sauer-mediainfo\">Application Showcase: gst-media-info</a><br />Stefan Sauer (ensonic), Google</p>"
+      },
+      {
+       "html": "<p>16.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.15</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>16.15</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.00</p>",
+       "rowspan": 2
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#morales-android-ios\">GStreamer for Mobile Platforms: Android and iOS</a><br />Andoni Morales (ylatuya), Fluendo</p>",
+       "rowspan": 2
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#duponchelle-saunier-ges\">GES - The Open Source Swiss Army Knife of Multimedia Editing</a><br />Mathieu Duponchelle (Mathieu_Du) and Thibault Saunier (thiblahute)</p>"
+      },
+      {
+       "html": "<p>17.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#emont-cairosink\">Cairosink and GPU Buffer Sharing</a><br />Guillaume Emont (guijemont), Igalia</p>"
+      },
+      {
+       "html": "<p>17.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>18.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>End of Day</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>18.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>19.30-<br />23.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Social Event: Drinks and Food</b></p>\n\t\t<p align=\"center\">at <a href=\"http://www.lebowskis.co.uk/lebowskis-edinburgh.php\">Lebowskis Bar</a>, 18 Morrison St, EH3 8BJ (<a href=\"https://maps.google.co.uk/maps?saddr=EICC,+Morrison+Street,+Edinburgh&amp;daddr=Lebowskis+Bar+Edinburgh,+Morrison+Street,+Edinburgh&amp;hl=en&amp;sll=55.945788,-3.208146&amp;sspn=0.002229,0.005638&amp;geocode=FYerVQMdAgbP_yHxPxfF4v0ejilZHW-zo8eHSDHxPxfF4v0ejg%3BFa-qVQMdABPP_yEuJOcDaY1qrimtW815pMeHSDEuJOcDaY1qrg&amp;oq=lebows&amp;dirflg=w&amp;mra=ltm&amp;t=m&amp;z=18\">map</a>)</p>\n\t\t<p align=\"center\"><i>just a few metres down the road from the conference venue; both drinks and food will be provided, incl. vegetarian and vegan options.</i></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>19.30-<br />23.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": ""
+      },
+      {
+       "html": "",
+       "colspan": 2
+      },
+      {
+       "html": ""
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Wednesday 23rd of October 2013</span></p>",
+       "colspan": 4,
+       "bg": "#4682b4"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p></p>"
+      },
+      {
+       "html": "<p align=\"center\">Kilsyth</p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p></p>"
+      }
+     ],
+     "bg": "#b0c4de"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Breakfast Buffet</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>09.00</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i>Keynote</i></p>\n\t\t<p align=\"center\"><a href=\"/conference/2013/speakers.html#taymans-pitfalls\">Pitfalls and Best Practices for Using GStreamer to Build Products</a><br />Wim Taymans (wtay), Collabora</p>\n\t\t<p align=\"center\"><small>Kilsyth room</small></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>10.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.45</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>10.45</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.00</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#olbrich-embedded\">Multimedia on Embedded Linux - Pushing GStreamer to its Limits</a><br />Michael Olbrich, Pengutronix</p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>11.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.45</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#hervey-time\">Time and Synchronization for Dummies (yes, you!)</a><br />Edward Hervey (bilboed), Collabora</p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>11.45</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>12.30</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.00</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#leeman-drive-towards-software\">GStreamer and the Move From a Hardware Centric Product Design Towards a Software Centric Product Design</a><br />Marc Leeman (den_erpel), Barco</p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>14.00</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.45</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#schmidt-gst-enabled-home\">My GStreamer-Enabled Home</a><br />Jan Schmidt (thaytan), Centricular</p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>14.45</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.30</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#graff-testing\">Achieving Pexcellence - Challenges of Real Time Streaming Applications</a><br />Håvard Graff (hgr), Pexip</p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>15.30</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.15</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Coffee Break</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>16.15</p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.45</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#raghavan-pulseaudio\">Return of the PulseAudio Update</a><br />Arun Rhagavan (Ford_Prefect), Collabora</p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>16.45</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.15</p>"
+      },
+      {
+       "html": "<p><a href=\"/conference/2013/speakers.html#maxwell-free-codecs\">Opus and Daala: State of the Art Royalty-free Codecs</a><br />Greg Maxwell (gmaxwell), Mozilla</p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p>17.15</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>18.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><i>Closing Session</i></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p></p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p></p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>End of Day</b></p>",
+       "colspan": 2
+      },
+      {
+       "html": "<p></p>"
+      }
+     ],
+     "bg": "#E0E0E0"
+    }
+   ]
+  }
+ ]
+}

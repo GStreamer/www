@@ -1,0 +1,2 @@
+{{- /* Embeds an external page (e.g. a map): {{< iframe src="..." width="600" height="450" >}} */ -}}
+<iframe src="{{ .Get "src" | safeURL }}"{{ with .Get "width" }} width="{{ . }}"{{ end }}{{ with .Get "height" }} height="{{ . }}"{{ end }} loading="lazy" allowfullscreen></iframe>

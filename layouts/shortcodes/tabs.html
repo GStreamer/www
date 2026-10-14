@@ -1,0 +1,16 @@
+{{- /* Accessible OS tabs. Usage: {{< tabs >}}{{% tab id="windows" title="Windows" color="g" %}}markdown{{% /tab %}}{{< /tabs >}}
+   Without JavaScript all panels are shown one after the other. */ -}}
+{{- $inner := .Inner -}}
+{{- $tabs := .Store.Get "tabs" -}}
+{{- $css := resources.Get "css/tabs.css" | resources.Minify | resources.Fingerprint -}}
+{{- $js := resources.Get "js/tabs.js" | resources.Minify | resources.Fingerprint -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+<div class="dl-content">
+<div class="dl-tablist" role="tablist" aria-label="Platform">
+{{- range $i, $t := $tabs }}
+  <button class="dl-tab dl-tab-{{ $t.color }}" id="tab-{{ $t.id }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}" aria-controls="panel-{{ $t.id }}" role="tab" type="button">{{ $t.title }}</button>
+{{- end }}
+</div>
+{{ $inner }}
+</div>
+<script src="{{ $js.RelPermalink }}" defer></script>

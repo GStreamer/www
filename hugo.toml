@@ -1,0 +1,58 @@
+baseURL = "https://gstreamer.freedesktop.org/"
+title = "GStreamer"
+locale = "en"
+uglyURLs = true
+disableKinds = ["taxonomy", "term"]
+buildFuture = true
+
+[params]
+  description = "GStreamer: open source multimedia framework"
+  gitlab = "https://gitlab.freedesktop.org/gstreamer/gstreamer"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.goldmark.extensions]
+  typographer = false
+
+[outputs]
+  home = ["html"]
+  section = ["html"]
+
+[mediaTypes."application/rdf+xml"]
+  suffixes = ["xml"]
+
+[outputFormats.rss1]
+  mediaType = "application/rdf+xml"
+  baseName = "rss-1.0"
+  isPlainText = true
+  notAlternative = true
+
+# The repository keeps the layout of the legacy site: images, documents and
+# server files stay under src/.  Hugo's own folders are mounted explicitly.
+# (src/copy/dot-htaccess and api-htaccess cannot be renamed by a mount; see
+# tools/post-build.sh.)
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
+  [[module.mounts]]
+    source = "site-data"
+    target = "data"
+  [[module.mounts]]
+    source = "src/copy"
+    target = "static"
+    files = ["/images/**", "/documents/**", "/robots.txt"]
+  [[module.mounts]]
+    source = "src/htdocs"
+    target = "static"
+    files = ["/artwork/**", "/releases/**"]

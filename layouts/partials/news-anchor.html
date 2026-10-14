@@ -1,0 +1,2 @@
+{{- /* Legacy anchor id of a news item (#YYYY-MM-DDTHH:MM:00Z). Frontmatter `anchor` overrides for a few malformed legacy dates. */ -}}
+{{- with .Params.anchor }}{{ . }}{{ else }}{{ .Date.UTC.Format "2006-01-02T15:04:00Z" }}{{ end -}}

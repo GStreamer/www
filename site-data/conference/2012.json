@@ -1,0 +1,273 @@
+{
+ "tables": [
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Monday 27th of August 2012</span></p>",
+       "colspan": 3,
+       "bg": "lightblue"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>GStreamer talks \n\t\t\t</p>"
+      },
+      {
+       "html": "<p>Executive Center Foyer</p>"
+      },
+      {
+       "html": "<p>Executive Center 2</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.00</p>"
+      },
+      {
+       "html": "<p align=\"center\">Opening and welcome to the 2012 GStreamer Conference - Christian Schaller</p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.10</p>"
+      },
+      {
+       "html": "<p align=\"center\">Keynote - <a href=\"speakers.html#taymans\">GStreamer 1.0 - GStreamer maintainer Wim Taymans</a>, Collabora</p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#stadler\">Debugging GStreamer pipelines, Rene Stadler</a>, Collabora</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#verkuil\">A V4L status report, Hans Verkuil</a>, Cisco</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#burks\">GStreamer for advanced image capture and analysis - Stephen Burks</a>, U.S Army</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#jaquez\">Development of hardware-based Elements for GStreamer 1.0: A case study, Victor Jaquez</a>, Igalia</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch</b></p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.30</p>"
+      },
+      {
+       "html": "<p align=\"center\"><a href=\"speakers.html#morales\">The GStreamer SDK - Andoni Morales</a>, Fluendo</p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.30</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#hervey\">CPU, Memory, Latency: Profiling and Optimizing GStreamer - Edward Hervey</a>, Collabora</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#schleef\">GStreamer Streaming library - David Schleef</a>, Entropy Wave</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.30</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#verdejo\">Current status of the Android enablement - Reynaldo Verdejo</a>, Collabora</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#derose\">Improving GStreamer quality - Jason Gerard DeRose</a>, Novacut</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\">16.30 End of Day</p>",
+       "colspan": 3
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\"><span style=\"color:white\">Tuesday 28th of August 2012</span></p>",
+       "colspan": 3,
+       "bg": "lightblue"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>GStreamer talks \n\t\t\t</p>"
+      },
+      {
+       "html": "<p>Executive Center Foyer</p>"
+      },
+      {
+       "html": "<p>Executive Center 2</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.00</p>"
+      },
+      {
+       "html": "<p align=\"center\">Keynote - <a href=\"speakers.html#muller\">GStreamer Status Report - Tim-Philipp Müller</a>, Collabora</p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#cannon\">GStreamer for Large-Scale Scientific Signal Processing, Kipp Cannon</a>, CITA\n</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#clark\">\nGStreamer, dmabuf, and OMAP4+ Update - Rob Clark</a>, Texas Instruments</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#emont\">Playing in the sandbox - GStreamer security - Guillaume Emont</a>, Igalia</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#schmidth\">Home area entertainment systems, Jan Schmidt</a>, Oracle</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.00</p>"
+      },
+      {
+       "html": "<p align=\"center\"><b>Lunch</b></p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.30</p>"
+      },
+      {
+       "html": "<p>Case study - <a href=\"speakers.html#fortin\">Development with GES, Jeff Fortin</a>, Collabora</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#iwai\">ALSA project status update - Takashi Iwai,</a>Suse</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.30</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#droege\">GStreamer base classes – or how to\nmake your life easier - Sebastian Dröge</a>,\n\t\t\tCollabora</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#hoegsberg\">Wayland - Kristian Hoegsberg</a>, Intel</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.30</p>"
+      },
+      {
+       "html": "<p align=\"center\">Coffee break</p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.45</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#terriberry\">The Opus Audio Codec, Timothy B. Terriberry</a>,  Xiph.org</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#anholt\">OpenGL and Mesa development - Eric Anholt</a>, Intel </p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.45</p>"
+      },
+      {
+       "html": "<p align=\"center\">End of Day Panel discussion - <a href=\"speakers.html#bethencourt\"> Road to GStreamer Expertise - Luis de Bethencourt,  Jan Schmidt, \nSebastian Dröge, and Tim P. Müller</a></p>",
+       "colspan": 2
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\">18.45 End of Day</p>",
+       "colspan": 3
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

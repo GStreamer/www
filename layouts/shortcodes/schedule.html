@@ -1,0 +1,11 @@
+{{- /* Renders one schedule table from site-data/conference/<year>.json: {{< schedule year="2015" table="0" >}} */ -}}
+{{- $year := .Get "year" | string -}}
+{{- $idx := .Get "table" | int -}}
+{{- $t := index (index site.Data.conference $year).tables $idx -}}
+<div class="table-wrap"><table class="schedule"{{ with $t.id }} id="{{ . }}"{{ end }}>
+{{- range $t.rows }}
+<tr{{ with .id }} id="{{ . }}"{{ end }}{{ with .bg }} style="background:{{ . }};color:#111"{{ end }}>
+{{- range .cells }}<{{ if .th }}th{{ else }}td{{ end }}{{ with .colspan }} colspan="{{ . }}"{{ end }}{{ with .rowspan }} rowspan="{{ . }}"{{ end }}{{ with .bg }} style="background:{{ . }};color:#111"{{ end }}>{{ .html | safeHTML }}</{{ if .th }}th{{ else }}td{{ end }}>{{ end -}}
+</tr>
+{{- end }}
+</table></div>

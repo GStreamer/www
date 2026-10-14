@@ -1,0 +1,204 @@
+{
+ "tables": [
+  {
+   "rows": [
+    {
+     "cells": [
+      {
+       "html": "<p>GStreamer talks \n\t\t\t</p>"
+      },
+      {
+       "html": "<p>Main Room</p>"
+      },
+      {
+       "html": "<p>Darwin</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>09.00 \n\t\t\t</p>"
+      },
+      {
+       "html": "<p>Keynote - <a href=\"speakers.html#taymans\">\n\t\t\tGStreamer Current and future developments - Wim Taymans</a>, Collabora Multimedia \n\t\t\t</p>"
+      },
+      {
+       "html": "<p>\n\t\t\t</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>10.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#normand\">\n\t\t\tWebkit, HTML5 and GStreamer - Philippe Normand</a>, Igalia</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#smith\">\n\t\t\tCross platform development with GStreamer - Mike Smith</a>, Songbird</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>11.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#hervey\">\n\t\t\tChallenges of video editing in your pocket - Edward Hervey</a>,\n\t\t\tCollabora Multimedia</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#quacchio\">\n\t\t\tA GStreamer based framework for adaptive streaming\n\t\t\tapplications - Emanuele Quacchio</a>, ST Microelectronics</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>12.00 \n\t\t\t</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#clark\">GStreamer and OMAP4 - Rob Clark</a>, Texas Instruments \n\t\t\t</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#ali\">\n\t\t\tImplementing DLNA using GStreamer - Zeeshan Ali</a>, Nokia</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>13.00</p>"
+      },
+      {
+       "html": "<p><b>Lunch</b></p>"
+      },
+      {
+       "html": "<p><b>Lunch</b></p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>14.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#crete\">\n\t\t\tIntegrating VideoConferencing into Everyday Applications, Olivier Crete</a>, Collabora</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#schleef\">\n\t\t\tOptimizing multimedia with Orc - David Schleef</a>, Entropy Wave</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.00</p>"
+      },
+      {
+       "html": "<p>Case study - <a href=\"speakers.html#graff\">\n\t\t\tTandberg and GStreamer, Håvard Graff</a>, Tandberg</p>",
+       "rowspan": 2
+      },
+      {
+       "html": "<p><a href=\"speakers.html#fujii\">\n\t\t\tLandell - live streaming for the masses – Luciana Fujii</a>,Holoscopio</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>15.30</p>"
+      },
+      {
+       "html": "<p>Case study - <a href=\"speakers.html#merali\">\n\t\t\tFlumotion and GStreamer - Zaheer Merali</a></p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.00</p>"
+      },
+      {
+       "html": "<p><b>Afternoon Break</b></p>"
+      },
+      {
+       "html": "<p><b>Afternoon Break</b></p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>16.30</p>"
+      },
+      {
+       "html": "<p>Case study - <a href=\"speakers.html#holmberg\">\n\t\t\tGStreamer on Axis devices, Jonas Holmberg</a>, Axis</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#nechypurenko\">\n\t\t\tUsing ICE middleware with GStreamer to implement real-time\n\t\t\tQoS-aware video streaming for remote controlled vehicle, Andrey\n\t\t\tNechypurenko and Maksym Parkachov</a></p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.00 Lightning talks \n\t\t\t</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#bisson\">\n\t\t\t3D Stereoscopic and GStreamer, Martin Bisson</a></p>"
+      },
+      {
+       "html": "<p>Case Study - <a href=\"speakers.html#torra\">\n\t\t\tIntel SMD elements in GStreamer, Josep Torra</a>, Fluendo</p>",
+       "rowspan": 3
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>17.15</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#droge\">\n\t\t\tWebM and GStreamer, Sebastian Droge</a>, Collabora Multimedia</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p> 17.30</p>"
+      },
+      {
+       "html": "<p>Case study - <a href=\"speakers.html#thiery\">\n\t\t\tUsing gstreamer for building automated webcasting systems, Florent Thiery</a>, Ubicast.eu \n\t\t\t</p>"
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p>18.00</p>"
+      },
+      {
+       "html": "<p><a href=\"speakers.html#schmidt\">\n\t\t\tInteractivity in GStreamer pipelines, Jan Schmidt</a>, Oracle Corporation \n\t\t\t</p>"
+      },
+      {
+       "html": ""
+      }
+     ]
+    },
+    {
+     "cells": [
+      {
+       "html": "<p align=\"center\">19.00 End of Day</p>",
+       "colspan": 3
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

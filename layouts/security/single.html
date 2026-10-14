@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article>
+<h1>{{ .Title }}</h1>
+<style>
+.vertical-table table td:first-child { font-weight: 600; white-space: nowrap; padding-right: 1em; vertical-align: top; }
+.vertical-table table thead { display: none; }
+</style>
+{{/* Summary table generated from frontmatter. ids_label / table_ids override the ID cell when needed. */}}
+{{ $ids := or .Params.table_ids .Params.ids }}
+{{ $dateFmt := "2006-01-02 15:04" }}{{ if and (eq .Date.Hour 0) (eq .Date.Minute 0) }}{{ $dateFmt = "2006-01-02" }}{{ end }}
+<div class="vertical-table">
+<table>
+<tbody>
+<tr><td>Summary</td><td>{{ .Params.summary | $.RenderString (dict "display" "inline") }}</td></tr>
+<tr><td>Date</td><td>{{ .Date.Format $dateFmt }}</td></tr>
+<tr><td>Affected Versions</td><td>{{ .Params.affected_versions | $.RenderString (dict "display" "inline") }}</td></tr>
+<tr><td>{{ or .Params.ids_label "IDs" }}</td><td>{{ range $i, $x := $ids }}{{ if $i }}<br/>{{ end }}{{ $x }}{{ end }}</td></tr>
+</tbody>
+</table>
+</div>
+{{ .Content }}
+</article>
+{{ end }}

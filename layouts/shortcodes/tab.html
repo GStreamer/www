@@ -1,0 +1,7 @@
+{{- $id := .Get "id" -}}
+{{- .Parent.Store.Add "tabs" (slice (dict "id" $id "title" (.Get "title") "color" (.Get "color"))) -}}
+<div class="dl-panel" id="panel-{{ $id }}" role="tabpanel" tabindex="0" aria-labelledby="tab-{{ $id }}">
+<h3 class="dl-panel-title" id="{{ $id }}">{{ .Get "title" }}</h3>
+
+{{ .Inner }}
+</div>
