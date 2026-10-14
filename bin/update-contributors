@@ -1,10 +1,11 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- Mode: Python -*-
 # vi:si:et:sw=4:sts=4:ts=4
 
 """
 Extract contributors since the previous release from a ChangeLog
-and write into a release.xml file
+and write them into the "Contributors to X.Y.Z" section of the release
+notes page (content/releases/X.Y/_index.md)
 """
 
 # FIXME: automatically update the release.xml file
@@ -15,12 +16,12 @@ import re
 import codecs
 
 def main():
-    if len(sys.argv) < 3:
-        sys.stderr.write("Please specify a ChangeLog and release.xml file")
+    if len(sys.argv) < 4:
+        sys.stderr.write("Usage: update-contributors ChangeLog content/releases/X.Y/_index.md VERSION\n")
         sys.exit(1)
     changelog = sys.argv[1]
     release = sys.argv[2]
-
+    version = sys.argv[3]
     if not os.path.exists(changelog):
         sys.stderr.write("%s does not exist.\n" % changelog)
         sys.exit(1)
@@ -32,9 +33,9 @@ def main():
     if relmatcher.match(lines[0]):
         del lines[0]
 
-    datedmatcher = re.compile('^\d*-\d*-\d*\s(?:[0-9:]+ [+-]\d{4}\s)\s?(.*)\s*<.*>$')
-    bymatcher = re.compile(' by: ([^<]+)\s*.*$')
-    byaddyonlymatcher = re.compile(' by:[ ]*<([^>]*)')
+    datedmatcher = re.compile(r'^\d*-\d*-\d*\s(?:[0-9:]+ [+-]\d{4}\s)\s?(.*)\s*<.*>$')
+    bymatcher = re.compile(r' by: ([^<]+)\s*.*$')
+    byaddyonlymatcher = re.compile(r' by:[ ]*<([^>]*)')
     for line in lines:
         if relmatcher.match(line):
             break
@@ -48,21 +49,36 @@ def main():
                     names.append(name)
     names.sort()
 
-    # output
+    # wrap the comma separated names like the existing release notes
+    wrapped, cur = [], ""
+    for n in names:
+        piece = n + ","
+        if cur and len(cur) + 1 + len(piece) > 78:
+            wrapped.append(cur)
+            cur = piece
+        else:
+            cur = (cur + " " + piece) if cur else piece
+    if cur:
+        wrapped.append(cur)
+    contr = "\n".join(wrapped)
+
     doc = codecs.open(release, "r", encoding='utf-8').read()
-    list = []
-    for name in names:
-        list.append("\t<person>%s</person>" % name)
-    contr = "\n".join(list) + "\n"
-    matcher = re.compile('(.*)<contributors>.*</contributors>\s*(.*)',
-        re.DOTALL)
-    match = matcher.search(doc)
-    pre = match.expand('\\1') + "  <contributors>\n"
-    post = "  </contributors>\n\n" + match.expand('\\2')
+    header = "#### Contributors to %s\n\n" % version
+    start = doc.find(header)
+    if start < 0:
+        sys.stderr.write("No '%s' section in %s\n" % (header.strip(), release))
+        sys.exit(1)
+    start += len(header)
+    end = doc.find("\n... and many others", start)
+    if end < 0:
+        sys.stderr.write("No '... and many others' line after the contributors in %s\n" % release)
+        sys.exit(1)
 
     target = release + ".bak"
     os.rename(release, target)
     handle = codecs.open(release, "w", encoding='utf-8')
-    handle.write(pre + contr + post)
+    handle.write(doc[:start] + contr + "\n" + doc[end:])
     handle.close()
+    os.remove(target)
+
 main()

@@ -95,29 +95,19 @@ pushd $moduledir > /dev/null 2>&1
 git pull
 popd
 
-release=src/htdocs/releases/$module/$version
-template=src/htdocs/releases/$module/template.xml
-if test ! -e $template
-then
-  echo "No template $template !"
-  exit 1
-fi
-if test ! -s $release.xml
-then
-  echo "Creating $release.xml"
-  cp $template $release.xml
-  case $version in
-    *.0 ) sed -i -e 's/a new release/a new feature release/' $release.xml ;;
-    * ) sed -i -e 's/a new release/a new bug-fix release/' $release.xml ;;
-  esac
-fi
-echo "Updating $release.xml"
-perl -i -p -e "s@<version></version>@<version>$version</version>@" $release.xml
+# Website part: series page, release notes skeleton and news item.
+# The contributors are filled in from the ChangeLog below.
+echo "Scaffolding the release on the website"
 if test -n "$name"; then
-  perl -i -p -e "s@<name></name>@<name>$name</name>@" $release.xml
+  python3 tools/new-release.py "$version" --name "$name" || exit 1
+else
+  python3 tools/new-release.py "$version" || exit 1
 fi
+series=`echo $version | sed -e 's/\.[0-9]*$//'`
+release=content/releases/$series/_index.md
+git add content/releases/$series content/news
 
-# update Changelog
+# update changelog
 cd $moduledir
 echo "Regenerating ChangeLog in $PWD"
 # Check CHANGELOG_START tag exists
@@ -130,7 +120,7 @@ cd -
 
 pushd $moduledir > /dev/null 2>&1
 changelog=ChangeLog
-python2 common/gen-changelog.py > $changelog
+python3 common/gen-changelog.py > $changelog
 git add $changelog
 popd
 
@@ -140,30 +130,10 @@ if test ! -e $changelog
 then
   echo "No changelog $changelog found"
 else
-  bin/update-contributors $changelog $release.xml
+  bin/update-contributors $changelog $release $version
 fi
-echo "Updating bugs"
-if [ $module == "gst-validate" ]; then
-  product="gst-devtools"
-  sub_component="validate"
-else
-  product=$module
-  sub_component=""
-fi
-
-python2 bin/bugzilla $product $version GStreamer $release.xml $sub_component
-
-# update releases Makefile.am
-makefileam=src/htdocs/releases/$module/Makefile.am
-if grep "($version)" $makefileam > /dev/null 2>&1
-then
-  echo already changed $makefileam
-else
-  echo Updating $makefileam
-  perl -i.bak -p -e "s@(releases =)@\$1 $version@" $makefileam
-fi
-# Mark for committing
-git add $makefileam
+# Fixed bugs and merge requests are linked by milestone from the generated
+# release notes.
 
 # update configure.ac
 configureac=$moduledir/configure.ac
@@ -204,32 +174,36 @@ else
   popd
 fi
 
-echo "Now press Enter to edit the next .xml file and update the list of features and API changes"
+echo "Now press Enter to edit the release notes and update the list of features and API changes"
 read
 
-$EDITOR $release.xml || {
-  echo "Error editing $release.xml"
+$EDITOR $release || {
+  echo "Error editing $release"
   exit 1
 }
 
 # Mark for committing
-git add $release.xml
+git add $release
 
 
 echo "Building website"
-make
-
-# if the next line causes problems for you, you are not building the
-# web site as per the README/HACKING file with different src/build dir
-release=htdocs/releases/$module/$version
-echo "Copying RELEASE"
-cp $release $moduledir/RELEASE || {
-  echo "Error copying $release $moduledir/RELEASE."
-  echo "Maybe there was a problem creating $release , maybe because"
-  echo "there is a syntax error in $release.xml or some other problem"
-  echo "occured when rebuilding www/htdocs/releases/$module"
+hugo --quiet --destination public || {
+  echo "Building the website failed, check $release"
   exit 1
 }
+sh tools/post-build.sh public
+
+# The RELEASE file is the plain text version of the notes for this version.
+echo "Copying RELEASE"
+python3 - "$release" "$version" > $moduledir/RELEASE <<'PY' || exit 1
+import re, sys
+text = open(sys.argv[1], encoding="utf-8").read()
+v = re.escape(sys.argv[2])
+m = re.search(r'<a id="%s"></a>\n(.*?)(?=\n<a id="[0-9.]+"></a>|\Z)' % v, text, re.S)
+if not m:
+    sys.exit("no notes for %s in %s" % (sys.argv[2], sys.argv[1]))
+print(m.group(1).strip())
+PY
 
 # FIXME: we should be able to generate most of the NEWS entries automatically
 # just like we do for the RELEASE file.

@@ -1,16 +1,23 @@
 #!/bin/sh
 # this script is run on the fdo server, so no use running at home
-# it forcefully updates git, autogens, and makes
+# it pulls the git checkout and rebuilds the site with Hugo into the web root
+# (nothing is deleted: data/, pkg/, media/ ... are kept)
 
 cd /srv/gstreamer.freedesktop.org/www
 
 umask 0002
 chown -R :gstreamer * 2> /dev/null
 chmod -R g+w * 2> /dev/null
+# the activity numbers are refreshed below, never keep them as a local change
+git checkout -- site-data/activity.json
 git pull
 find . -type d -print0 | xargs -0 chmod g+ws 2> /dev/null
-src/autogen.sh
-make clean
-make
+python3 tools/fetch-activity.py
+rm -rf .build
+hugo --destination .build --minify || { rm -rf .build; exit 1; }
+sh tools/post-build.sh .build || { rm -rf .build; exit 1; }
+rsync -rlpt --exclude=/data --exclude=/src --exclude=/pkg --exclude=/media \
+  --exclude=/documentation --exclude=/planet .build/ ./
+rm -rf .build
 chown -R :gstreamer * 2> /dev/null
 chmod -R g+w * 2> /dev/null
