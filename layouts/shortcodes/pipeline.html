@@ -1,0 +1,44 @@
+{{- /* A real pipeline as a graph, drawn like gst-launch / gst-debug-dot output: green elements produce data, blue ones process it, red ones consume it. */ -}}
+<figure class="pipeline">
+<div class="pipeline-scroll">
+<svg class="wide" viewBox="0 0 834 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pipeline-title">
+<title id="pipeline-title">A pipeline that plays a WebM file: filesrc, matroskademux, then a video branch (dav1ddec, videoconvert, autovideosink) and an audio branch (opusdec, audioconvert, autoaudiosink)</title>
+<defs><marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" class="head"/></marker></defs>
+<g class="el src"><rect x="20" y="24" width="130" height="42" rx="5"/><text x="85.0" y="49.5" text-anchor="middle">filesrc</text></g>
+<g class="el fx"><rect x="186" y="24" width="130" height="42" rx="5"/><text x="251.0" y="49.5" text-anchor="middle">matroskademux</text></g>
+<g class="el fx"><rect x="352" y="24" width="130" height="42" rx="5"/><text x="417.0" y="49.5" text-anchor="middle">dav1ddec</text></g>
+<g class="el fx"><rect x="518" y="24" width="130" height="42" rx="5"/><text x="583.0" y="49.5" text-anchor="middle">videoconvert</text></g>
+<g class="el snk"><rect x="684" y="24" width="130" height="42" rx="5"/><text x="749.0" y="49.5" text-anchor="middle">autovideosink</text></g>
+<path class="link" d="M150 45.0H180" marker-end="url(#ah)"/>
+<path class="link" d="M316 45.0H346" marker-end="url(#ah)"/>
+<path class="link" d="M482 45.0H512" marker-end="url(#ah)"/>
+<path class="link" d="M648 45.0H678" marker-end="url(#ah)"/>
+<g class="el fx"><rect x="352" y="118" width="130" height="42" rx="5"/><text x="417.0" y="143.5" text-anchor="middle">opusdec</text></g>
+<g class="el fx"><rect x="518" y="118" width="130" height="42" rx="5"/><text x="583.0" y="143.5" text-anchor="middle">audioconvert</text></g>
+<g class="el snk"><rect x="684" y="118" width="130" height="42" rx="5"/><text x="749.0" y="143.5" text-anchor="middle">autoaudiosink</text></g>
+<path class="link" d="M482 139.0H512" marker-end="url(#ah)"/>
+<path class="link" d="M648 139.0H678" marker-end="url(#ah)"/>
+<path class="link" d="M251.0 66V139.0H346" marker-end="url(#ah)"/>
+</svg>
+<svg class="narrow" viewBox="0 0 330 316" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pipeline-title2">
+<title id="pipeline-title2">A pipeline that plays a WebM file: filesrc, matroskademux, then a video branch (dav1ddec, videoconvert, autovideosink) and an audio branch (opusdec, audioconvert, autoaudiosink)</title>
+<defs><marker id="ah2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" class="head"/></marker></defs>
+<g class="el src"><rect x="95.0" y="10" width="140" height="36" rx="5"/><text x="165.0" y="32.5" text-anchor="middle">filesrc</text></g>
+<g class="el fx"><rect x="95.0" y="70" width="140" height="36" rx="5"/><text x="165.0" y="92.5" text-anchor="middle">matroskademux</text></g>
+<path class="link" d="M165.0 46V64" marker-end="url(#ah2)"/>
+<g class="el fx"><rect x="10" y="150" width="140" height="36" rx="5"/><text x="80.0" y="172.5" text-anchor="middle">dav1ddec</text></g>
+<g class="el fx"><rect x="10" y="210" width="140" height="36" rx="5"/><text x="80.0" y="232.5" text-anchor="middle">videoconvert</text></g>
+<path class="link" d="M80.0 186V204" marker-end="url(#ah2)"/>
+<g class="el snk"><rect x="10" y="270" width="140" height="36" rx="5"/><text x="80.0" y="292.5" text-anchor="middle">autovideosink</text></g>
+<path class="link" d="M80.0 246V264" marker-end="url(#ah2)"/>
+<path class="link" d="M165.0 106V128.0H80.0V144" marker-end="url(#ah2)"/>
+<g class="el fx"><rect x="180" y="150" width="140" height="36" rx="5"/><text x="250.0" y="172.5" text-anchor="middle">opusdec</text></g>
+<g class="el fx"><rect x="180" y="210" width="140" height="36" rx="5"/><text x="250.0" y="232.5" text-anchor="middle">audioconvert</text></g>
+<path class="link" d="M250.0 186V204" marker-end="url(#ah2)"/>
+<g class="el snk"><rect x="180" y="270" width="140" height="36" rx="5"/><text x="250.0" y="292.5" text-anchor="middle">autoaudiosink</text></g>
+<path class="link" d="M250.0 246V264" marker-end="url(#ah2)"/>
+<path class="link" d="M165.0 106V128.0H250.0V144" marker-end="url(#ah2)"/>
+</svg>
+</div>
+<figcaption>Playing a WebM file (AV1 and Opus). Each element does one job: sources in green, filters in blue, sinks in red.</figcaption>
+</figure>
