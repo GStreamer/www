@@ -2,7 +2,7 @@
 title: "GStreamer C# Bindings"
 module: true
 legacy: false
-weight: 10
+weight: 12
 blurb: "C#/.NET bindings"
 repo_path: "gstreamer/-/tree/main/subprojects/gstreamer-sharp"
 maintainers: ["Stephan Sundermann", "Sebastian Dröge"]

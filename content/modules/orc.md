@@ -2,7 +2,7 @@
 title: "Library of Optimized Inner Loops Runtime Compiler"
 module: true
 legacy: false
-weight: 13
+weight: 18
 blurb: "Orc runtime compiler"
 repo_path: "orc"
 maintainers: ["GStreamer Team"]

@@ -2,8 +2,8 @@
 title: "Cerbero cross-platform build system"
 module: true
 legacy: false
-weight: 12
-blurb: "Cerbero build system for Windows, OS/X, Android and iOS"
+weight: 17
+blurb: "Cerbero build system for Windows, macOS, Android and iOS"
 repo_path: "cerbero"
 maintainers: ["GStreamer Team"]
 stable: "release"

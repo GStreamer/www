@@ -2,8 +2,8 @@
 title: "GStreamer Editing Services"
 module: true
 legacy: false
-weight: 8
-blurb: "Editing Services"
+weight: 9
+blurb: "editing services"
 repo_path: "gstreamer/-/tree/main/subprojects/gst-editing-services"
 maintainers: ["Thibault Saunier"]
 stable: "release"

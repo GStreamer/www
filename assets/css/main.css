@@ -156,3 +156,4 @@ ul.plain li:last-child { border-bottom: 0; }
 .product-links a:hover { border-color: var(--link); text-decoration: none; }
 .product-logo.icon img { height: 56px; max-height: none; max-width: 140px; }
 .showcase-page .lead p + p { margin-top: .6rem; }
+.product-logo.module-name { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 1.15rem; letter-spacing: 0; }

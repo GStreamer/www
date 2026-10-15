@@ -2,12 +2,12 @@
 title: "GStreamer Python Bindings Supplement"
 module: true
 legacy: false
-weight: 7
-blurb: "python bindings"
+weight: 10
+blurb: "Python support"
 repo_path: "gstreamer/-/tree/main/subprojects/gst-python"
 maintainers: ["GStreamer Team"]
 stable: "release"
 devel: "release"
 status: "active"
 ---
-GStreamer python overrides for the gobject-introspection-based pygst bindings.
+GStreamer Python overrides for the GObject introspection based bindings, used through PyGObject.

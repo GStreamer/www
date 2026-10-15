@@ -2,7 +2,7 @@
 title: "GStreamer Bad Plug-ins"
 module: true
 legacy: false
-weight: 5
+weight: 4
 blurb: "a set of plug-ins that need more quality, testing or documentation"
 repo_path: "gstreamer/-/tree/main/subprojects/gst-plugins-bad"
 maintainers: ["GStreamer Team"]

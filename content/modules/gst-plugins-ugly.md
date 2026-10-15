@@ -2,7 +2,7 @@
 title: "GStreamer Ugly Plug-ins"
 module: true
 legacy: false
-weight: 4
+weight: 5
 blurb: "a set of good-quality plug-ins that might pose distribution problems"
 repo_path: "gstreamer/-/tree/main/subprojects/gst-plugins-ugly"
 maintainers: ["GStreamer Team"]

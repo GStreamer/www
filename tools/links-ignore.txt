@@ -7,7 +7,7 @@
 /conference/2012/index.html -> /wiki/GStreamerConference2012
 /conference/2023/index.html -> acoruna-barlovento-area.jpg
 /conference/2023/index.html -> acoruna-barlovento-map.jpg
-/modules/qt-gstreamer.html -> /wiki/QtGStreamer
+/modules/legacy.html -> /wiki/QtGStreamer
 /news/index.html -> /apps/videowhale.html
 /news/index.html -> /conference/2014/sponsor_305x50_collabora_new.png
 /news/index.html -> /conference/2015/gstreamer-conference-sponsor-brief-2015.pdf

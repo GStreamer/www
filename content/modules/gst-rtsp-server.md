@@ -2,7 +2,7 @@
 title: "GStreamer RTSP Server"
 module: true
 legacy: false
-weight: 9
+weight: 8
 blurb: "RTSP server"
 repo_path: "gstreamer/-/tree/main/subprojects/gst-rtsp-server"
 maintainers: ["GStreamer Team"]

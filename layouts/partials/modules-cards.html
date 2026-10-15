@@ -1,0 +1,25 @@
+{{- /* Expects a dict: pages (module pages). Frontmatter per module: title, blurb, repo_path, maintainers, stable, devel, status, weight, legacy. */ -}}
+{{- $rel := site.Data.release -}}
+<ul class="showcase modules">
+{{ range .pages }}{{ $p := . }}{{ $name := .File.ContentBaseName }}
+  <li class="product" id="{{ $name }}">
+    <div class="product-logo wordmark module-name">{{ $name }}</div>
+    <div class="product-body">
+      {{ with .Params.blurb }}<p class="eyebrow">{{ . }}</p>{{ end }}
+      <h2>{{ .Title }}</h2>
+      {{ .Content }}
+      {{ if .Params.legacy }}{{ with .Params.status }}<p><em>{{ . }}</em></p>{{ end }}{{ end }}
+      <p class="product-links">
+      {{- $s := .Params.stable -}}
+      {{- if eq $s "release" }}<a href="/releases/{{ $rel.branch }}/#{{ $rel.stable }}">Stable {{ $rel.stable }}</a>
+      {{- else if eq $s "orc" }}<span>Stable {{ $rel.orc_stable }}</span>{{ end -}}
+      {{- $d := .Params.devel -}}
+      {{- if eq $d "release" }}<a href="/releases/{{ $rel.devel_branch }}/#{{ $rel.devel }}">Development {{ $rel.devel }}</a>{{ end -}}
+      {{- range .Params.docs }}<a href="{{ .url }}">{{ .title }}</a>{{ end -}}
+      {{- with .Params.repo_path }}<a href="https://gitlab.freedesktop.org/gstreamer/{{ . }}">Git</a>{{ end -}}
+      {{- if and (not .Params.legacy) (not .Params.no_source_download) (eq .Params.stable "release") }}<a href="/src/{{ $name }}/">Source tarballs</a>{{ end -}}
+      </p>
+    </div>
+  </li>
+{{ end }}
+</ul>
