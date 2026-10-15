@@ -154,3 +154,5 @@ ul.plain li:last-child { border-bottom: 0; }
 .product-body .product-links { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: auto; padding-top: .6rem; }
 .product-links a { font-size: .85rem; padding: .2rem .65rem; border: 1px solid var(--border); border-radius: 999px; color: var(--link); }
 .product-links a:hover { border-color: var(--link); text-decoration: none; }
+.product-logo.icon img { height: 56px; max-height: none; max-width: 140px; }
+.showcase-page .lead p + p { margin-top: .6rem; }

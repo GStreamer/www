@@ -1,0 +1,13 @@
+<ul class="showcase">
+{{ range .pages }}{{ $p := . }}
+  <li class="product">
+    {{ $img := cond (isset .Params "icon") (printf "<img src=\"%s\" alt=\"%s\" loading=\"lazy\">" .Params.icon $p.Params.name | safeHTML) ($p.Params.name | safeHTML) }}
+    <div class="product-logo icon">{{ with .Params.site }}<a href="{{ . }}" aria-label="{{ $p.Params.name }}">{{ $img }}</a>{{ else }}{{ $img }}{{ end }}</div>
+    <div class="product-body">
+      <h2>{{ with .Params.site }}<a href="{{ . }}">{{ $p.Params.name }}</a>{{ else }}{{ $p.Params.name }}{{ end }}</h2>
+      <p>{{ .Params.status | markdownify }}</p>
+      {{ with .Params.links }}<p class="product-links">{{ range . }}<a href="{{ .url }}">{{ .title }}</a>{{ end }}</p>{{ end }}
+    </div>
+  </li>
+{{ end }}
+</ul>

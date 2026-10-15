@@ -3,7 +3,8 @@ title: "Bindings for Ruby"
 binding: true
 legacy: true
 weight: 11
+icon: "/images/lang-ruby.svg"
 name: "Ruby"
-status: "The Ruby bindings are released as part of [Ruby-GNOME2](http://ruby-gnome2.sourceforge.jp/)."
-contacts: [{"name": "Laurent Sansonetti", "email": "laurent (at) datarescue.be"}]
+site: "https://ruby-gnome.github.io/"
+status: "The Ruby bindings are released as part of [Ruby-GNOME2](https://ruby-gnome.github.io/)."
 ---

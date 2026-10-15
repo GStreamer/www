@@ -1,5 +1,7 @@
 {{ define "main" }}
+<article class="showcase-page">
 <h1>{{ .Title }}</h1>
-{{ .Content }}
-{{ partial "bindings-table.html" (dict "pages" (where (where .Pages "Params.legacy" "ne" true) "Params.binding" true).ByWeight) }}
+<div class="lead">{{ .Content }}</div>
+{{ partial "bindings-cards.html" (dict "pages" (where (where .Pages "Params.legacy" "ne" true) "Params.binding" true).ByWeight) }}
+</article>
 {{ end }}
