@@ -95,6 +95,33 @@ build website:
   needs:
     - "www amd64 docker"
 
+#
+# This job runs in the gstreamer namespace on the main branch, after a merge
+# and from a scheduled pipeline (to refresh the activity data).  The produced
+# artifact is downloaded on the server to update the web page, like the
+# documentation.
+#
+website:
+  extends:
+    - '.www image'
+    - '.fdo.suffixed-image@debian'
+  stage: 'build'
+  needs:
+    - job: 'www amd64 docker'
+      artifacts: false
+  script:
+    - python3 tools/lint-content.py
+    - python3 tools/fetch-activity.py
+    - hugo --destination public --minify --gc
+    - sh tools/post-build.sh public
+    - python3 tools/check-links.py --public public
+  artifacts:
+    expire_in: '7 days'
+    paths:
+      - public
+  rules:
+    - if: '$CI_PROJECT_NAMESPACE == "gstreamer" && $CI_COMMIT_BRANCH == $GST_UPSTREAM_BRANCH'
+
 # REMOVEME: preview of the new site on GitLab Pages, only in forks (never in
 # gstreamer/www).  Pages only publishes from the default branch.  The site is
 # built with relative links so it works under the Pages sub path, links to what

@@ -35,16 +35,19 @@ python3 tools/fetch-activity.py               # refresh site-data/activity.json 
 
 ## Deploy
 
-CI (`.gitlab-ci.yml`) only validates the site: it lints the content, builds it
-with Hugo and checks the internal links (`build website`, in the user's
-namespace and in merge requests).
+CI (`.gitlab-ci.yml`) lints the content, builds the site with Hugo and checks
+the internal links (`build website`, in the user's namespace and in merge
+requests).
 
-The site is deployed as before, with `bin/www-update` (it runs
-`bin/www-update-complete` on the web server): `git pull`, build with Hugo into
-a temporary directory and `rsync` that over the web root. The rsync never uses
-`--delete` and skips `data`, `src`, `pkg`, `media`, `documentation` and
-`planet`, which are deployed separately. Hugo has to be installed on the server
-(see `HUGO_VERSION` in `ci/docker/prepare.sh`). To keep the activity numbers on
-the home page fresh, run `bin/www-update-complete` from a daily cron job.
+In the gstreamer namespace, the `website` job builds the site on the main
+branch, after each merge and from a daily scheduled pipeline (which also
+refreshes the activity numbers on the home page), and keeps it as an artifact.
+On the web server, `ci/freedesktop_www_importer.py` deploys the latest
+successful `website` job into `htdocs/`, like gstreamer's
+`ci/gitlab/freedesktop_doc_importer.py` does for the documentation. Run it
+from cron; it does nothing when that job was already deployed.
+`bin/www-update` runs it by hand. The rsync never uses `--delete` and skips
+`data`, `src`, `pkg`, `media`, `documentation` and `planet`, which are deployed
+separately. Hugo does not need to be installed on the server.
 
 To update content, see [CONTRIBUTING.md](CONTRIBUTING.md).
