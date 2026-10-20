@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $a := site.Data.activity }}
+{{ $a := site.Data.activity | default dict }}
 {{ partial "conference-banner.html" . }}
 <section class="hero">
   <h1>GStreamer</h1>
@@ -11,14 +11,14 @@
     <a class="tile tile-news" href="/news/"><b>news</b><span>Releases and project updates</span></a>
   </nav>
 </section>
-<section class="activity" aria-label="Project activity">
+<section class="activity" aria-label="Project activity" data-activity-src="{{ "activity.json" | relURL }}">
   <div class="stats">
-    <div class="stat"><div class="n">{{ $a.commits_30d }}</div><div class="l">commits in the last 30 days</div></div>
-    <div class="stat"><div class="n">{{ $a.mrs_merged_30d }}</div><div class="l">merge requests merged in 30 days</div></div>
-    <div class="stat"><div class="n">{{ $a.mrs_merged_12m }}</div><div class="l">merge requests merged in 12 months</div></div>
-    <div class="stat"><div class="n">{{ $a.contributors }}+</div><div class="l">contributors</div></div>
+    <div class="stat"><div class="n" data-activity="commits_total">{{ lang.FormatNumberCustom 0 ($a.commits_total | default 0) }}</div><div class="l">commits</div></div>
+    <div class="stat"><div class="n" data-activity="mrs_merged_30d">{{ $a.mrs_merged_30d | default 0 }}</div><div class="l">merge requests merged in 30 days</div></div>
+    <div class="stat"><div class="n" data-activity="mrs_merged_12m">{{ lang.FormatNumberCustom 0 ($a.mrs_merged_12m | default 0) }}</div><div class="l">merge requests merged in 12 months</div></div>
+    <div class="stat"><div class="n" data-activity="contributors">{{ $a.contributors | default 0 }}+</div><div class="l">contributors</div></div>
   </div>
-  <p class="meta">Activity data from <a href="{{ site.Params.gitlab }}">GitLab</a>, snapshot of {{ dateFormat "2 Jan 2006" $a.fetchedAt }}.</p>
+  <p class="meta">Activity data from <a href="{{ site.Params.gitlab }}">GitLab</a>, as of <span data-activity="date">{{ with $a.fetchedAt }}{{ dateFormat "2 Jan 2006" . }}{{ end }}</span>.</p>
 </section>
 <section class="intro" aria-label="What is GStreamer?"><h2>What is GStreamer?</h2>{{ .Content }}</section>
 <div class="grid2">
@@ -27,4 +27,5 @@
   </section>
   <div class="card">{{ partial "recent-commits.html" (dict "limit" 6) }}</div>
 </div>
+{{ $js := resources.Get "js/activity.js" | resources.Minify }}<script>{{ $js.Content | safeJS }}</script>
 {{ end }}

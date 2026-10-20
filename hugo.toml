@@ -48,6 +48,16 @@ buildFuture = true
   [[module.mounts]]
     source = "site-data"
     target = "data"
+  # activity.json, written by tools/fetch-activity.py: read by the templates and
+  # published as /activity.json
+  [[module.mounts]]
+    source = "build"
+    target = "data"
+    files = ["/activity.json"]
+  [[module.mounts]]
+    source = "build"
+    target = "static"
+    files = ["/activity.json"]
   [[module.mounts]]
     source = "src/copy"
     target = "static"

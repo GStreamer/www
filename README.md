@@ -8,7 +8,7 @@ Layout:
 - `content/`   Markdown pages with front matter (news, releases, security, conference, modules, ...)
 - `layouts/`   Hugo templates and partials
 - `assets/`    CSS and other processed assets
-- `site-data/` `nav.yml`, `release.yml`, `activity.json` (statistics, refreshed by `tools/fetch-activity.py`), conference schedules
+- `site-data/` `nav.yml`, `release.yml`, conference schedules
 - `src/`       images, documents and Apache config of the legacy site, mounted into the build by `hugo.toml`
 - `archetypes/` templates for `hugo new`
 - `tools/`     `fetch-activity.py`, `lint-content.py`, `check-links.py`, `new-release.py`
@@ -30,7 +30,7 @@ URLs are "ugly" (`/security/sa-2024-0001.html`) so that all legacy URLs keep wor
 python3 tools/lint-content.py                 # front matter of every content file
 hugo --destination public
 python3 tools/check-links.py --public public  # broken internal links and anchors
-python3 tools/fetch-activity.py               # refresh site-data/activity.json (optional, offline safe)
+python3 tools/fetch-activity.py               # write build/activity.json, the statistics of the home page (optional, offline safe)
 ```
 
 ## Deploy

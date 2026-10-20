@@ -92,9 +92,14 @@ existing entry.
 
 ## Site statistics
 
-`site-data/activity.json` is overwritten by `tools/fetch-activity.py` (run by CI on
-main and on schedule). It uses the public GitLab API, needs no token and
-falls back to the committed values if the API is unreachable or rate limited.
+`tools/fetch-activity.py` writes `build/activity.json` (run by CI
+before the build on main and on schedule). It uses the public GitLab API, needs no
+token and keeps the previous values if the API is unreachable or rate limited.
+Hugo renders it into the home page and publishes it as `/activity.json`.
+The cron job of the server (`bin/www-cron`) runs the same script every few hours
+into `htdocs/activity.json`, and on the home page `assets/js/activity.js`
+refreshes the numbers and the recent commits from that file, so the visitors
+never query GitLab.
 To show the latest commits somewhere in a layout, use
 `{{ partial "recent-commits.html" . }}`.
 

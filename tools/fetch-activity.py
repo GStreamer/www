@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Refresh site-data/activity.json from the public GitLab API (no token needed).
+"""Refresh build/activity.json from the public GitLab API (no token needed).
 
 Stdlib only. Never fails the build: every field falls back to the value
-already committed in site-data/activity.json when a request fails or is rate
+already in the output file when a request fails or is rate
 limited, and the script always exits 0 (unless --strict is given).
 
-Usage: tools/fetch-activity.py [--out site-data/activity.json] [--strict]
+Usage: tools/fetch-activity.py [--out build/activity.json] [--strict]
 """
 import argparse
 import datetime as dt
@@ -51,6 +51,18 @@ def get(path, project=MAIN, **params):
     raise Abort("rate limited")
 
 
+def graphql(query):
+    """Return the data of a GraphQL query. Raises on error."""
+    req = urllib.request.Request(f"{HOST}/api/graphql", data=json.dumps({"query": query}).encode(),
+                                 headers={"User-Agent": "gstreamer-www-activity/1.0",
+                                          "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+        res = json.load(r)
+    if res.get("errors") or not res.get("data"):
+        raise ValueError(f"GraphQL error: {res.get('errors')}")
+    return res["data"]
+
+
 def total(path, **params):
     """Sum of X-Total over all the projects."""
     n = 0
@@ -69,7 +81,7 @@ def iso(d):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="site-data/activity.json")
+    ap.add_argument("--out", default="build/activity.json")
     ap.add_argument("--strict", action="store_true", help="exit 1 if any field failed")
     args = ap.parse_args()
 
@@ -97,20 +109,14 @@ def main():
             print(f"warning: {key}: {e}; keeping previous value", file=sys.stderr)
 
 
-    def commits_30d():
-        # the commits endpoint has no X-Total: count by paging (max 50 pages)
-        n = 0
-        for project in PROJECTS:
-            for page in range(1, 51):
-                c, h = get("/repository/commits", project=project, since=d30, per_page=100, page=page)
-                n += len(c)
-                if not h.get("X-Next-Page"):
-                    break
-            else:
-                raise ValueError("too many commits to count")
-        return n
+    def commits_total():
+        # the REST API has no commit count, GraphQL does
+        q = "".join(f'p{project}: project(fullPath: "gstreamer/{name}") {{ repository {{ commitCount }} }}\n'
+                    for project, name in PROJECTS.items())
+        return sum(p["repository"]["commitCount"] for p in graphql("{" + q + "}").values())
 
-    field("commits_30d", commits_30d)
+    field("commits_total", commits_total)
+    data.pop("commits_30d", None)
     field("mrs_merged_30d", lambda: total("/merge_requests", state="merged", merged_after=d30))
     field("mrs_merged_12m", lambda: total("/merge_requests", state="merged", merged_after=d12m))
     field("mrs_open", lambda: total("/merge_requests", state="opened"))
@@ -150,7 +156,7 @@ def main():
     data.setdefault("recent_commits", [])
     data["fetchedAt"] = iso(now)
     if errors:
-        data["source"] = "gitlab.freedesktop.org API (partial, some fields from committed fallback)"
+        data["source"] = "gitlab.freedesktop.org API (partial, some fields kept from the previous values)"
     else:
         data["source"] = "gitlab.freedesktop.org API, projects " + ", ".join(PROJECTS.values())
 
