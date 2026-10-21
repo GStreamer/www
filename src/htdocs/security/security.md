@@ -7,6 +7,8 @@ and marking it as *confidential* before submitting it (if you follow the link on
 
 If you have patches, please attach them to the confidential issue and not via a merge requests, as merge requests are always public immediately.
 
+**Always** include proof-of-concepts, specially crafted files or bitstreams, or testcases with your reports as a proof that your findings are valid.
+
 The GStreamer project encourages [responsible disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) of security issues.
 
 **Distributors** please note that this is not an exhaustive or comprehensive list of security-relevant issues affecting past releases, but merely a list of security issues filed as such by third parties. Fixes that may be security relevant are also landed as part of routine bug-fixing and development activity, and as such we encourage distributors to upgrade to our latest bug-fix releases whenever possible.
