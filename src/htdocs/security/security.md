@@ -22,7 +22,7 @@ The GStreamer project encourages [responsible disclosure](https://en.wikipedia.o
 | **GStreamer-SA-2026-0090** | Arbitrary element instantiation in GStreamer Editing Services project file loader | 2026-10-08 | [Details](sa-2026-0090.html) |
 | **GStreamer-SA-2026-0089** | Integer overflow and out-of-bounds read in Matroska demuxer Xiph codec data parser | 2026-10-08 | [Details](sa-2026-0089.html) |
 | **GStreamer-SA-2026-0088**<br/>ZDI-CAN-31143 | Heap out-of-bounds write in RTP L8/L16/L24 audio depayloaders | 2026-10-08 | [Details](sa-2026-0088.html) |
-| **GStreamer-SA-2026-0087** | Excessive memory allocation in the ASF demuxer | 2026-10-08 | [Details](sa-2026-0087.html) |
+| **GStreamer-SA-2026-0087**<br/>CVE-2026-112214 | Excessive memory allocation in the ASF demuxer | 2026-10-08 | [Details](sa-2026-0087.html) |
 | **GStreamer-SA-2026-0086** | Out-of-bounds read in H.265 RTP depayloader when processing short packets | 2026-10-08 | [Details](sa-2026-0086.html) |
 | **GStreamer-SA-2026-0085** | Stack-based out-of-bounds write in closed caption converter and combiner | 2026-10-08 | [Details](sa-2026-0085.html) |
 | **GStreamer-SA-2026-0084** | Out-of-bounds read in the RTSP KeyMgmt header parser | 2026-10-08 | [Details](sa-2026-0084.html) |
