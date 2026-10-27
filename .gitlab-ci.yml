@@ -18,7 +18,7 @@ variables:
 
   WWW_AMD64_SUFFIX: 'amd64/www'
 
-  WWW_TAG: '2026-10-15.0'
+  WWW_TAG: '2026-10-27.0'
 
 workflow:
   # https://docs.gitlab.com/ee/ci/yaml/index.html#switch-between-branch-pipelines-and-merge-request-pipelines
@@ -57,7 +57,7 @@ default:
     FDO_DISTRIBUTION_VERSION: 'bookworm'
     FDO_REPO_SUFFIX: "$WWW_AMD64_SUFFIX"
     FDO_DISTRIBUTION_TAG: "$WWW_TAG-$GST_UPSTREAM_BRANCH"
-    FDO_DISTRIBUTION_PACKAGES: 'python3 curl git ca-certificates'
+    FDO_DISTRIBUTION_PACKAGES: 'python3 curl git ca-certificates rsync'
     FDO_DISTRIBUTION_EXEC: 'bash ci/docker/prepare.sh'
 
 www amd64 docker:
@@ -146,3 +146,18 @@ pages:
       - public
   rules:
     - if: '$CI_PROJECT_NAMESPACE != "gstreamer" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+
+# The script that deploys the site on the server is tested here, not there.
+deploy checks:
+  extends:
+    - '.www image'
+    - '.fdo.suffixed-image@debian'
+  stage: 'build'
+  needs:
+    - job: 'www amd64 docker'
+      artifacts: false
+  script:
+    - python3 -m unittest discover -s ci -p 'test_*.py'
+  rules:
+    - if: '$CI_PROJECT_NAMESPACE != "gstreamer" || $CI_COMMIT_BRANCH != $GST_UPSTREAM_BRANCH'
+      when: 'always'

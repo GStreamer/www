@@ -1,7 +1,7 @@
 #!/bin/sh
 # this script is run on the fdo server, so no use running at home
-# it deploys the site built by the latest "website" CI job on the main branch,
-# see ci/freedesktop_www_importer.py (also run from cron)
+# it deploys the site built by the latest "website" CI job on the main branch, the planet
+# and the activity numbers, see ci/www_cron.py (also run from cron)
 
 umask 0002
-exec python3 /srv/gstreamer.freedesktop.org/www/ci/freedesktop_www_importer.py
+exec /srv/gstreamer.freedesktop.org/www/ci/www_cron.py

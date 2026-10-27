@@ -42,12 +42,8 @@ requests).
 In the gstreamer namespace, the `website` job builds the site on the main
 branch, after each merge and from a daily scheduled pipeline (which also
 refreshes the activity numbers on the home page), and keeps it as an artifact.
-On the web server, `ci/freedesktop_www_importer.py` deploys the latest
-successful `website` job into `htdocs/`, like gstreamer's
-`ci/gitlab/freedesktop_doc_importer.py` does for the documentation. Run it
-from cron; it does nothing when that job was already deployed.
-`bin/www-update` runs it by hand. The rsync never uses `--delete` and skips
-`data`, `src`, `pkg`, `media`, `documentation` and `planet`, which are deployed
-separately. Hugo does not need to be installed on the server.
+The server runs `ci/www_cron.py` to deploy the artifacts of the CI jobs.
+Try it anywhere with `ci/www_cron.py --www /tmp/www --dry-run`, and test it with
+`python3 -m unittest discover -s ci -p 'test_*.py'`.
 
 To update content, see [CONTRIBUTING.md](CONTRIBUTING.md).
