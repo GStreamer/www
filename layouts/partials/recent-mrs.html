@@ -1,15 +1,15 @@
-{{- /* Ticker list of the latest commits from activity.json (written by
+{{- /* List of the latest merged merge requests from activity.json (written by
        tools/fetch-activity.py), refreshed on the home page by assets/js/activity.js.
-       Usage: {{ partial "recent-commits.html" . }}
-       Optional: {{ partial "recent-commits.html" (dict "limit" 5) }} */ -}}
+       Usage: {{ partial "recent-mrs.html" . }}
+       Optional: {{ partial "recent-mrs.html" (dict "limit" 5) }} */ -}}
 {{- $limit := 8 -}}
 {{- if reflect.IsMap . }}{{ with .limit }}{{ $limit = . }}{{ end }}{{ end -}}
-{{- $commits := (site.Data.activity | default dict).recent_commits -}}
-{{- if $commits }}
-<section class="recent-commits" aria-label="Recent commits">
-  <h3>Recent commits</h3>
+{{- $mrs := (site.Data.activity | default dict).recent_mrs -}}
+{{- if $mrs }}
+<section class="recent-mrs" aria-label="Recently merged">
+  <h3>Recently merged</h3>
   <ul class="plain" data-activity="recent" data-limit="{{ $limit }}">
-    {{- range first $limit $commits }}
+    {{- range first $limit $mrs }}
     <li><a href="{{ .web_url }}">{{ .title }}</a><br><span class="meta">{{ .author }}{{ with .date }}, {{ dateFormat "2 Jan 2006" . }}{{ end }}{{ with .repo }} in {{ . }}{{ end }}</span></li>
     {{- end }}
   </ul>

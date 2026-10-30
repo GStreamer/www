@@ -98,10 +98,10 @@ token and keeps the previous values if the API is unreachable or rate limited.
 Hugo renders it into the home page and publishes it as `/activity.json`.
 The cron job of the server (`ci/www_cron.py`) runs the same script every few hours
 into `htdocs/activity.json`, and on the home page `assets/js/activity.js`
-refreshes the numbers and the recent commits from that file, so the visitors
+refreshes the numbers and the recently merged merge requests from that file, so the visitors
 never query GitLab.
 To show the latest commits somewhere in a layout, use
-`{{ partial "recent-commits.html" . }}`.
+`{{ partial "recent-mrs.html" . }}`.
 
 ## Not deployed from this repository
 

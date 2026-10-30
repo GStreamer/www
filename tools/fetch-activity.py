@@ -145,15 +145,16 @@ def main():
     def recent():
         out = []
         for project, name in PROJECTS.items():
-            c, _ = get("/repository/commits", project=project, per_page=8)
-            out += [{"title": x["title"], "author": x["author_name"], "repo": name,
-                     "date": x["created_at"], "web_url": x["web_url"]} for x in c]
+            mrs, _ = get("/merge_requests", project=project, state="merged", target_branch="main",
+                         order_by="updated_at", sort="desc", per_page=20)
+            out += [{"title": x["title"], "author": x["author"]["name"], "repo": name,
+                     "date": x["merged_at"], "web_url": x["web_url"]} for x in mrs if x.get("merged_at")]
         out.sort(key=lambda x: dt.datetime.fromisoformat(x["date"]), reverse=True)
         return out[:8]
 
-    field("recent_commits", recent)
+    field("recent_mrs", recent)
 
-    data.setdefault("recent_commits", [])
+    data.setdefault("recent_mrs", [])
     data["fetchedAt"] = iso(now)
     if errors:
         data["source"] = "gitlab.freedesktop.org API (partial, some fields kept from the previous values)"

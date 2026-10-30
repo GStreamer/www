@@ -1,4 +1,4 @@
-// Refresh the activity numbers and the recent commits on the home page from
+// Refresh the activity numbers and the recently merged merge requests on the home page from
 // /activity.json, a file of this site that a cron job on the server rewrites
 // regularly (tools/fetch-activity.py), so the visitors never query GitLab. The
 // values rendered by the build stay when it is missing
@@ -24,7 +24,7 @@
     if (!list) return;
     var limit = parseInt(list.getAttribute('data-limit'), 10) || 8;
     list.textContent = '';
-    a.recent_commits.slice(0, limit).forEach(function (c) {
+    a.recent_mrs.slice(0, limit).forEach(function (c) {
       var li = document.createElement('li');
       var link = document.createElement('a');
       link.href = c.web_url;
@@ -42,7 +42,7 @@
   fetch(src.getAttribute('data-activity-src'), { cache: 'no-cache' })
     .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
     .then(function (a) {
-      if (a && a.recent_commits && a.fetchedAt) show(a);
+      if (a && a.recent_mrs && a.fetchedAt) show(a);
     })
     .catch(function () {});
 })();

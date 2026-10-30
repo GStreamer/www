@@ -25,7 +25,7 @@
   <section class="card"><h3>Latest news</h3>
     <ul class="plain">{{ range first 5 (where site.RegularPages "Section" "news").ByDate.Reverse }}<li><a href="/news/#{{ partial "news-anchor.html" . }}">{{ .Title }}</a><br><span class="meta">{{ .Date.Format "2 Jan 2006" }}</span></li>{{ end }}</ul>
   </section>
-  <div class="card">{{ partial "recent-commits.html" (dict "limit" 6) }}</div>
+  <div class="card">{{ partial "recent-mrs.html" (dict "limit" 6) }}</div>
 </div>
 {{ $js := resources.Get "js/activity.js" | resources.Minify }}<script>{{ $js.Content | safeJS }}</script>
 {{ end }}
