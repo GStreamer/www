@@ -1,17 +1,11 @@
 ---
 title: "GStreamer Conference 2026"
 year: 2026
-status: "live"
+status: "past"
 dates: "10-11 October 2026"
 date_start: 2026-10-10
 date_end: 2026-10-13
 location: "Prague, Czech Republic"
-stream_url: "https://gstconf.ubicast.tv/lives/gst-2026-live-room1/"
-streams:
-  - name: "Room 1"
-    url: "https://gstconf.ubicast.tv/lives/gst-2026-live-room1/"
-  - name: "Room 2"
-    url: "https://gstconf.ubicast.tv/lives/gst-2026-live-room2/"
 sponsors:
   - level: "Platinum Sponsors"
     name: "Centricular"
@@ -72,42 +66,13 @@ If open source, cross-platform multimedia interests you, the GStreamer Conferenc
 
 Whether you are a hobbyist, app developer, researcher or student, or you work for a company that uses GStreamer or plans to, this is the place to learn about the latest technical developments and project news, to meet the developers behind them, and to connect with the wider community.
 
-## Live Streams {#live}
-
-Live streams are here:
-
-- [**Room 1**](https://gstconf.ubicast.tv/lives/gst-2026-live-room1/)
-- [**Room 2**](https://gstconf.ubicast.tv/lives/gst-2026-live-room2/)
-
 ## Schedule
 
 [Click here for the conference schedule](https://indico.freedesktop.org/event/14/timetable/#20261010.detailed).
 
 ## Registration
 
-**Registration is now open!**
-
-**[Sign up for the GStreamer Conference 2026 here!](https://goout.net/en/tickets/gstreamer-conference-2026/whjnb/)** (please see notes below)
-
-There will be separate registration options for professionals, speakers and for students and hobbyists:
-
-**Professional (Early Bird) (Sold Out)**
-
-**CZK 7250** (ca. 300 EUR / 350 USD) **for both days, incl. VAT**
-
-**Professional (Regular)CZK 8500** (ca. 350 EUR / 400 USD) **for both days, incl. VAT** **Professional (Corporate)CZK 17000** (ca. 700 EUR / 800 USD) **for both days, incl. VAT** **Speakers (for non-lightning talks)Free** (instructions will be sent by e-mail) **Student/HobbyistFree or voluntary donation**
-
-**All tickets include lunch at the venue on both conference days and the hackfest days, as well as access to the evening social event.**
-
-Different tickets have different **refund policies**: All tickets are transferable or fully refundable in case of visa issues or if entry was denied at the border. Early Bird tickets are transferable, but not refundable. Regular Professional tickets are 50% refundable until 25 September, and non-refundable therafter. Corporate Professional tickets are fully refundable until 25 September, 80% refundable until 9 October, and non-refundable therafter.
-
-For those uncertain about whether to register as a professional or hobbyist, the general rule is that if your company pays for your travel or sponsors you, you are a professional, and if you personally pay you are a student or hobbyist. If in doubt drop us a mail or just register as hobbyist. The important thing is that you'll make it to the conference!
-
-**Speakers:** You will receive free registration! Details will be sent out by e-mail along with the talk acceptance notifications. Not that we will complain if you decide to buy a ticket of course.
-
-**Note:** The registration system only allows to collect details for one attendee per booking, so anyone wanting to register multiple tickets needs to do that in separate transactions. You can put 12345678 into the phone number field. We don't need the phone number, but it wasn't possible to remove the field from the form. When you select the ticket type in the pop-down box, a second pop-down box will appear. Please ignore that second pop-down box, it won't allow you to select additional tickets but apparently could not be hidden from the form. Thanks!
-
-**[Sign up for the GStreamer Conference 2026 here!](https://goout.net/en/tickets/gstreamer-conference-2026/whjnb/)** (please see notes above)
+**Registration is closed now, since the event is over now.**
 
 ## Schedule and speakers list {#talks-and-speakers}
 
