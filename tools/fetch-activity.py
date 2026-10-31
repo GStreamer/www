@@ -18,9 +18,9 @@ import urllib.parse
 import urllib.request
 
 HOST = os.environ.get("GITLAB_HOST", "https://gitlab.freedesktop.org")
-# The numbers cover the monorepo and the two Rust repositories, which are
-# developed separately: id -> short name.
-PROJECTS = {1357: "gstreamer", 1398: "gstreamer-rs", 1400: "gst-plugins-rs"}
+# The numbers cover the monorepo, the two Rust repositories and cerbero, which
+# are developed separately: id -> short name.
+PROJECTS = {1357: "gstreamer", 1398: "gstreamer-rs", 1400: "gst-plugins-rs", 1340: "cerbero"}
 MAIN = 1357  # the project whose tags are the releases
 TIMEOUT = 20
 MAX_RETRY_WAIT = 30  # never sleep longer than this on a 429
