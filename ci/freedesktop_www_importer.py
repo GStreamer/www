@@ -177,7 +177,7 @@ def update(target: Target, args: argparse.Namespace, gitlab: GitLab, tmp: Path) 
     tree = tmp / target.name
     with zipfile.ZipFile(archive) as z:
         z.extractall(tree)
-    deploy(target, tree, args.www / "htdocs", args.dry_run)
+    deploy(target, tree, args.htdocs, args.dry_run)
     if job_id and not args.dry_run:
         stamp.write_text(f"{job_id}\n")
     log.info("Done updating %s%s", target.name, " (dry run)" if args.dry_run else "")
@@ -218,6 +218,7 @@ def parse_args(argv: list[str] | None) -> argparse.Namespace:
         help=f"what to update, default all of: {', '.join(TARGETS)}",
     )
     p.add_argument("--www", type=Path, default=WWW, help=f"directory with htdocs/ and the stamps (default {WWW})")
+    p.add_argument("--htdocs", type=Path, help="web root to deploy into (default: htdocs/ of --www)")
     p.add_argument("--gitlab", default=GITLAB)
     p.add_argument(
         "--zip",
@@ -231,6 +232,7 @@ def parse_args(argv: list[str] | None) -> argparse.Namespace:
     p.add_argument("--dry-run", action="store_true", help="show what would change, change nothing")
     args = p.parse_args(argv)
     args.local = dict(args.zip)
+    args.htdocs = args.htdocs or args.www / "htdocs"
     return args
 
 

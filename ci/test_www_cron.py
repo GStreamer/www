@@ -30,7 +30,7 @@ class CronTest(unittest.TestCase):
     def test_the_three_steps_run_in_order(self):
         code, site = self.run_cron()
         self.assertEqual(code, 0)
-        site.assert_called_once_with(["--www", str(self.www)])
+        site.assert_called_once_with(["--www", str(self.www), "--htdocs", str(self.www / "htdocs")])
         planet, activity = self.commands
         self.assertTrue(planet[1].endswith("planet/planet-rs-download-latest.py"))
         self.assertEqual(planet[2:], ["--deploy-dir", f"{self.www / 'htdocs' / 'planet'}/"])
@@ -43,6 +43,16 @@ class CronTest(unittest.TestCase):
         out.write_text("previous")
         self.run_cron()
         self.assertEqual(out.read_text(), "previous")
+
+    def test_another_web_root_is_used_by_every_step(self):
+        new = self.www / "htdocs_new"
+        code, site = self.run_cron("--htdocs", str(new))
+        self.assertEqual(code, 0)
+        site.assert_called_once_with(["--www", str(self.www), "--htdocs", str(new)])
+        planet, activity = self.commands
+        self.assertEqual(planet[2:], ["--deploy-dir", f"{new / 'planet'}/"])
+        self.assertEqual(activity[2:], ["--out", str(new / "activity.json")])
+        self.assertFalse((self.www / "htdocs").exists())
 
     def test_a_failing_step_does_not_stop_the_next_ones(self):
         code, _ = self.run_cron(site=1)
@@ -64,7 +74,7 @@ class CronTest(unittest.TestCase):
     def test_a_dry_run_is_passed_on_and_creates_nothing_in_htdocs(self):
         code, site = self.run_cron("--dry-run")
         self.assertEqual(code, 0)
-        site.assert_called_once_with(["--www", str(self.www), "--dry-run"])
+        site.assert_called_once_with(["--www", str(self.www), "--htdocs", str(self.www / "htdocs"), "--dry-run"])
         planet, activity = self.commands
         self.assertIn("--dry-run", planet)
         # fetch-activity.py writes to a copy, not to htdocs

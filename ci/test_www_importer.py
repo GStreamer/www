@@ -93,6 +93,13 @@ class ImporterTest(unittest.TestCase):
         self.assertEqual(got["index.html"], "the brand new home page")
         self.assertEqual(got["documentation/index.html"], "the brand new documentation")
 
+    def test_another_web_root_gets_the_site_and_the_current_one_is_left_alone(self):
+        artifact(self.zips["website"], SITE)
+        new = self.www / "htdocs_new"
+        self.assertEqual(self.run_importer("--htdocs", str(new), "website"), 0)
+        self.assertEqual(tree(new)["index.html"], "the brand new home page")
+        self.assertEqual(tree(self.htdocs), SERVER)
+
     def test_a_dry_run_changes_nothing(self):
         artifact(self.zips["website"], SITE)
         artifact(self.zips["documentation"], DOCS)

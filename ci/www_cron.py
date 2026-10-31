@@ -9,8 +9,8 @@ It is run regularly, every few hours like the planet is built, and does three th
 - activity: htdocs/activity.json, which the home page reads (tools/fetch-activity.py).
 
 A step that fails does not stop the next ones, the exit status says if one did.
-Nothing is changed with --dry-run, and --www can point to another directory to
-try it anywhere.
+Nothing is changed with --dry-run, --www can point to another directory to try it
+anywhere, and --htdocs deploys into another web root (to prepare one and switch later).
 """
 from __future__ import annotations
 
@@ -38,23 +38,25 @@ def run(cmd: list[str]) -> int:
     return subprocess.run(cmd).returncode
 
 
-def site(www: Path, dry_run: bool) -> int:
-    return importer.main(["--www", str(www), *(["--dry-run"] if dry_run else [])])
+def site(args: argparse.Namespace) -> int:
+    return importer.main(
+        ["--www", str(args.www), "--htdocs", str(args.htdocs), *(["--dry-run"] if args.dry_run else [])]
+    )
 
 
-def planet(www: Path, dry_run: bool) -> int:
-    deploy = www / "htdocs" / "planet"
-    if not dry_run:
+def planet(args: argparse.Namespace) -> int:
+    deploy = args.htdocs / "planet"
+    if not args.dry_run:
         deploy.mkdir(parents=True, exist_ok=True)
     cmd = [sys.executable, str(ROOT / "planet" / "planet-rs-download-latest.py"), "--deploy-dir", f"{deploy}/"]
-    return run(cmd + (["--dry-run"] if dry_run else []))
+    return run(cmd + (["--dry-run"] if args.dry_run else []))
 
 
-def activity(www: Path, dry_run: bool) -> int:
+def activity(args: argparse.Namespace) -> int:
     """fetch-activity.py keeps the previous value of a field it cannot get."""
     fetch = [sys.executable, str(ROOT / "tools" / "fetch-activity.py"), "--out"]
-    out = www / "htdocs" / "activity.json"
-    if dry_run:
+    out = args.htdocs / "activity.json"
+    if args.dry_run:
         with tempfile.TemporaryDirectory() as tmp:
             copy = Path(tmp) / out.name
             if out.is_file():
@@ -64,7 +66,7 @@ def activity(www: Path, dry_run: bool) -> int:
     return run([*fetch, str(out)])
 
 
-STEPS: list[tuple[str, Callable[[Path, bool], int]]] = [("site", site), ("planet", planet), ("activity", activity)]
+STEPS: list[tuple[str, Callable[[argparse.Namespace], int]]] = [("site", site), ("planet", planet), ("activity", activity)]
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -75,8 +77,10 @@ def main(argv: list[str] | None = None) -> int:
         default=importer.WWW,
         help="directory with htdocs/ and the stamps",
     )
+    p.add_argument("--htdocs", type=Path, help="web root to deploy into (default: htdocs/ of --www)")
     p.add_argument("--dry-run", action="store_true", help="show what would change, change nothing")
     args = p.parse_args(argv)
+    args.htdocs = args.htdocs or args.www / "htdocs"
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     os.umask(0o002)
     args.www.mkdir(parents=True, exist_ok=True)
@@ -89,7 +93,7 @@ def main(argv: list[str] | None = None) -> int:
         for name, step in STEPS:
             log.info("=== %s (%s)", name, time.strftime("%F %T"))
             try:
-                status = step(args.www, args.dry_run)
+                status = step(args)
             except (importer.DeployError, OSError) as e:  # one step must not stop the others
                 log.error("%s: %s", name, e)
                 status = 1
