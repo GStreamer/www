@@ -40,7 +40,7 @@ status: published
 
 ### CVE Database Entries
 
-- [CVE-{{ substr .File.ContentBaseName 3 4 }}-XXXX](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-{{ substr .File.ContentBaseName 3 4 }}-XXXX)
+- [CVE-{{ substr .File.ContentBaseName 3 4 }}-XXXX](https://www.cve.org/CVERecord?id=CVE-{{ substr .File.ContentBaseName 3 4 }}-XXXX)
 
 ### GStreamer 1.XX.X release
 
