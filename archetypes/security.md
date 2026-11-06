@@ -19,6 +19,10 @@ patches: ["https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/X
 # execution...), Threat mitigation (factors reducing exposure), Workarounds
 # (config changes limiting exposure), Solution (releases fixing it), References.
 # published | cve-pending
+# While the CVE is pending: title keeps the marker inside its paren group
+# "(CVE-YYYY-NNNN pending)", the ids entry and the CVE Database Entries link
+# put it behind the CVE id: "CVE-YYYY-NNNN (pending)". Once assigned, drop
+# all pending markers and switch status to published.
 status: published
 ---
 
