@@ -13,6 +13,11 @@ This release only contains bug fixes as well as a number of
 [security fixes](/security/). It should be safe to update
 from 1.28.x, and we recommend you do so at your earliest convenience.
 
+This release also contains follow-up fixes for two security issues addressed
+in earlier releases: an incomplete fix for an out-of-bounds read in the MPEG-4
+video parser (GST-SA-2026-0049), and a use-after-free and race condition in
+the RTP session DoS protection (GST-SA-2026-0074).
+
 **Highlighted bugfixes:**
 
 - Various [security fixes](/security/) and playback fixes

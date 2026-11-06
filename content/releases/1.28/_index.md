@@ -3076,6 +3076,11 @@ earliest convenience.
 
 [security]: https://gstreamer.freedesktop.org/security/
 
+This release also contains follow-up fixes for two security issues addressed
+in earlier releases: an incomplete fix for an out-of-bounds read in the MPEG-4
+video parser (GST-SA-2026-0049), and a use-after-free and race condition in
+the RTP session DoS protection (GST-SA-2026-0074).
+
 #### Highlighted bugfixes in 1.28.9
 
  - Various [security fixes][security] and playback fixes
